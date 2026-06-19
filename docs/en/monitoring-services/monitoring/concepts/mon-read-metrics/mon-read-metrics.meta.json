@@ -1,9 +1,14 @@
 {
-    "title": "Functions and groupings of metrics",
-      "shortDescription": "Available functions and groupings for collected metrics",
-      "metaDescription": "Cloud Monitoring API for receiving metrics values: PromQL support for queries and metric aggregation, filtering by label, grouping, query examples",
-    "sectionTitle": "Functions and groupings of metrics",
-    "icon": "",
-    "weight": 3,
-    "uuid": "ee308a06-5eea-4d67-b01a-a1e1790e913e"
+  "title": "Functions and groupings of metrics",
+  "shortDescription": "Available functions and groupings for collected metrics",
+  "metaDescription": "Cloud Monitoring API for receiving metrics values: PromQL support for queries and metric aggregation, filtering by label, grouping, query examples",
+  "sectionTitle": "Functions and groupings of metrics",
+  "icon": "",
+  "weight": 3,
+  "uuid": "ee308a06-5eea-4d67-b01a-a1e1790e913e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

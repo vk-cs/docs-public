@@ -635,7 +635,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 
    {note:info}
 
-   Агент орнатылған ВМ атауы `ivkcs_agent_init` манифестіндегі `ivkcs_user_data` немесе `plans/<PLAN_NAME>/deployment/deploy.tf` ресурсында берілген.
+   Агент орнатылған ВМ атауы `plans/<PLAN_NAME>/deployment/deploy.tf` манифестіндегі `ivkcs_agent_init` немесе `ivkcs_user_data` ресурсында берілген.
 
    {/note}
 1. Журналдарды қарау үшін `journalctl -u sower` пәрменін орындаңыз.

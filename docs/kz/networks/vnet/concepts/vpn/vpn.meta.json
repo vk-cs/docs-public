@@ -1,8 +1,13 @@
 {
   "title": "VPN",
-  "shortDescription": "VK Cloud ішіндегі VPN пайдалану ерекшеліктері",
+  "shortDescription": "{var(cloud)} ішіндегі VPN пайдалану ерекшеліктері",
   "metaDescription": "VPN — басқа желілердің үстінен бір немесе бірнеше қорғалған желілік қосылымды қамтамасыз етуге мүмкіндік беретін технология. VK Cloud ішіндегі VPN функциялары мен міндеттері. VK Cloud ішіндегі VPN параметрлері",
   "sectionTitle": "VPN",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

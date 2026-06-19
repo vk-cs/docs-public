@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-тағы деректерді сақтау нұсқалары",
   "metaDescription": "VK Cloud-тағы деректерді сақтау нұсқалары",
   "sectionTitle": "Деректерді сақтау орны",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

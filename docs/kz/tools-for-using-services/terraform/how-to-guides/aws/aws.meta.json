@@ -1,8 +1,14 @@
 {
-  "title": "S3",
-  "shortDescription": "S3 сервисінің бакеттері мен объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "title": "{var(s3)}",
+  "shortDescription": "{var(s3)} сервисінің бакеттері мен объектілерін басқару үшін Terraform қалай пайдаланылады",
   "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. VK Object Storage сервисінің бакеттері мен объектілерін басқару үшін Terraform қалай пайдаланылады",
-  "sectionTitle": "S3",
+  "sectionTitle": "{var(s3)}",
   "icon": "",
-  "weight": 40
+  "weight": 40,
+  "build": {
+    "for": [
+      "public",
+      "s3"
+    ]
+  }
 }

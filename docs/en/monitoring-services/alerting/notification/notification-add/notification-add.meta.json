@@ -1,9 +1,14 @@
 {
-    "title": "Create a notification channel",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Create a notification channel",
-    "icon": "",
-    "weight": 2,
-    "uuid": "f168675d-52e4-420e-a6a5-1a46bfbf06ae"
+  "title": "Create a notification channel",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Create a notification channel",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f168675d-52e4-420e-a6a5-1a46bfbf06ae",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

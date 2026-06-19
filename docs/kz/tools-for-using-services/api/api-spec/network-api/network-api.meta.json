@@ -4,5 +4,10 @@
   "shortDescription": "Cloud Networks сервисінің OpenAPI спецификациялары",
   "sectionTitle": "Cloud Networks",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

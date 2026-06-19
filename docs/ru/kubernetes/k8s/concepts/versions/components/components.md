@@ -1,10 +1,12 @@
-Поддерживаемые версии компонентов и [аддонов](../../addons-and-settings/addons) зависят от версии кластера Kubernetes в Cloud Containers.
+# {heading(Версии компонентов Kubernetes)[id=k8s-components]}
 
-При [обновлении](../../update) кластера также обновляется часть компонентов. Если обновляемый вместе с кластером компонент был удален, он восстановится при обновлении кластера.
+Поддерживаемые версии компонентов и {linkto(../../addons-and-settings/addons#k8s-addons)[text=аддонов]} зависят от версии кластера Kubernetes в Cloud Containers.
 
-Аддоны не обновляются вместе с кластером. Если для аддона доступна новая версия, вы можете [обновить их самостоятельно](../../../instructions/addons/manage-addons#obnovlenie_versii_addona).
+При {linkto(../../update#k8s-update)[text=обновлении]} кластера также обновляется часть компонентов. Если обновляемый вместе с кластером компонент был удален, он восстановится при обновлении кластера.
 
-## Компоненты
+Аддоны не обновляются вместе с кластером. Если для аддона доступна новая версия, вы можете {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-update)[text=обновить их самостоятельно]}.
+
+## {heading(Компоненты)[id=k8s-components-supported-versions]}
 
 В таблице приведены поддерживаемые версии компонентов для различных версий кластеров Kubernetes.
 
@@ -122,9 +124,9 @@
 
 {/cut}
 
-## Аддоны
+## {heading(Аддоны)[id=k8s-components-addons]}
 
-Необходимые аддоны могут быть [установлены](../../../instructions/addons/manage-addons#ustanovka_addona) в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
+Необходимые аддоны могут быть {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-install)[text=установлены]} в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -163,7 +165,7 @@
 |0.43.0
 |0.43.0
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
@@ -244,14 +246,14 @@
 |[Capsule](https://github.com/projectcapsule/capsule)
 |0.4.6
 |0.4.6
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[cert-manager](https://github.com/cert-manager/cert-manager)
 |1.12.2/1.14.2
 |1.12.2
 |1.12.2
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Docker Registry](https://github.com/twuni/docker-registry.helm)
 |2.2.2
@@ -261,21 +263,21 @@
 
 |[Fluent Bit](https://github.com/fluent/fluent-bit)
 |0.43.0
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[GPU Operator](https://github.com/NVIDIA/gpu-operator)
 |24.9.0
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
 |4.7.1
@@ -287,25 +289,25 @@
 |1.19.3
 |1.16.4
 |1.16.4
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Istio Gateaway](https://github.com/istio/gateway-api)
 |1.19.3
 |1.16.4
 |1.16.4
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Jaeger](https://github.com/jaegertracing/jaeger)
 |0.71.4
 |0.71.4
 |0.71.4
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Kiali](https://github.com/kiali/kiali)
 |1.75.0
 |1.59.1
 |1.59.1
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
 |54.2.2
@@ -314,15 +316,15 @@
 |36.2.0
 
 |[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
-|![](/ru/assets/no.svg "inline")
-|![](/ru/assets/no.svg "inline")
-|![](/ru/assets/no.svg "inline")
-|![](/ru/assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 |===
 
 {/cut}
 
-В версиях аддона Kube Prometheus Stack с суффиксом `vk` встроено [прогнозирование потребления ресурсов кластера Kubernetes](../../../monitoring#forecast_consumption). Это доработка от VK Tech, недоступная в базовой версии аддона.
+В версиях аддона Kube Prometheus Stack с суффиксом `vk` встроено {linkto(../../../monitoring#k8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера Kubernetes]}. Это доработка от VK Tech, недоступная в базовой версии аддона.
 
-Чтобы использовать возможности прогнозирования, [обновите](../../../how-to-guides/update-monitoring-addon) аддон с базовой версии до версии от VK Tech.
+Чтобы использовать возможности прогнозирования, {linkto(../../../how-to-guides/update-monitoring-addon#k8s-update-monitoring-addon)[text=обновите]} аддон с базовой версии до версии от VK Tech.
 

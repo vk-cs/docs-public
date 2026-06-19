@@ -1,28 +1,28 @@
 {includetag(billing_onboarding)}
 ## Подготовительные шаги
 
-1. Изучите стоимость сервисов VK Cloud:
+1. Изучите стоимость сервисов {var(cloud)}:
 
    1. Ознакомьтесь с [прайс-листом](https://cloud.vk.com/pricelist/).
-   1. Изучите статьи об особенностях оплаты для нужных вам сервисов. Подобные статьи называются «Тарификация» и лежат в документации искомого сервиса. Например, [статья о тарификации](/ru/computing/iaas/tariffication) для сервиса Cloud Servers.
+   1. Изучите статьи об особенностях оплаты для нужных вам сервисов. Подобные статьи называются «Тарификация» и лежат в документации искомого сервиса. Например, {linkto(/ru/computing/iaas/tariffication#iaas-tariffication)[text=статья о тарификации]} для сервиса Cloud Servers.
    1. Воспользуйтесь [калькулятором](https://cloud.vk.com/pricing) для расчета стоимости нужной вам конфигурации.
 
-1. Ознакомьтесь со списком [отчетных документов](/ru/intro/billing/concepts/report), которые платформа предоставляет физическим и юридическим лицам.
+1. Ознакомьтесь со списком {linkto(/ru/intro/billing/concepts/report#billing-report)[text=отчетных документов]}, которые платформа предоставляет физическим и юридическим лицам.
 
 ## {counter(billing)}. Проверьте баланс проекта
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
 
    На странице отобразится баланс лицевого счета и бонусный баланс проекта.
 
-   Бонусный баланс отображает приветственные [бонусы](/ru/intro/billing/concepts/balance#bonuses), начисленные после [регистрации](/ru/intro/onboarding/account) нового аккаунта в VK Cloud.
+   Бонусный баланс отображает приветственные {linkto(/ru/intro/billing/concepts/balance#billing-balance-bonuses)[text=бонусы]}, начисленные после [регистрации](/ru/intro/onboarding/account) нового аккаунта в {var(cloud)}.
 
    {note:err}
    Приветственные бонусы, не потраченные на оплату сервисов, сгорают через 60 календарных дней после регистрации аккаунта.
    {/note}
 
-Подробнее о балансе — в статье [Управление балансом проекта](/ru/intro/billing/instructions/payment).
+Подробнее о балансе — в статье {linkto(/ru/intro/billing/instructions/payment#billing-payment)[text=Управление балансом проекта]}.
 
 ## {counter(billing)}. Зачислите на лицевой счет начальную сумму
 
@@ -31,18 +31,18 @@
 {/includetag}
 
    {includetag(not_billing_onboarding)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
    {/includetag}
    {includetag(billing_onboarding)}
 1. Нажмите кнопку **Пополнить баланс**.
-1. [Пополните](/ru/intro/billing/instructions/payment#balance_charge) лицевой счет проекта удобным для вас [способом](/ru/intro/billing/concepts/payment-methods).
+1. {linkto(/ru/intro/billing/instructions/payment#billing-payment-balance-charge)[text=Пополните]} лицевой счет проекта удобным для вас {linkto(/ru/intro/billing/concepts/payment-methods#billing-payment-methods)[text=способом]}.
 {/tab}
 
 {tab(Организациям и предпринимателям)}
 {/includetag}
    {includetag(not_billing_onboarding)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
    {/includetag}
    {includetag(billing_onboarding)}
@@ -60,7 +60,7 @@
 {/tab}
 {/tabs}
 
-Средства с лицевого счета списываются по мере использования платных ресурсов. Если проект уйдет в минус, он будет [заморожен](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
+Средства с лицевого счета списываются по мере использования платных ресурсов. Если проект уйдет в минус, он будет {linkto(/ru/tools-for-using-services/account/concepts/projects#projects-auto-freeze)[text=заморожен]}.
 {/includetag}
 
 {includetag(billing_onboarding)}
@@ -69,11 +69,11 @@
 
 {includetag(notifications)}
 
-Вы можете установить ежемесячное ограничение расходов для каждого из ваших проектов. Когда сумма расходов в текущем календарном месяце превысит заданное ограничение, VK Cloud отправит уведомление на почту владельца проекта.
+Вы можете установить ежемесячное ограничение расходов для каждого из ваших проектов. Когда сумма расходов в текущем календарном месяце превысит заданное ограничение, {var(cloud)} отправит уведомление на почту владельца проекта.
 
 Чтобы настроить для проекта ограничение расходов и отправку уведомлений:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Откройте страницу баланса проекта одним из способов:
 
    - Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
@@ -81,7 +81,7 @@
 
 1. На странице баланса перейдите на вкладку **Ограничения**.
 
-   Отобразится список всех проектов, в которых ваша [роль](/ru/access/iam/concepts/rolesandpermissions) — владелец или суперадминистратор.
+   Отобразится список всех проектов, в которых ваша {linkto(/ru/tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} — владелец или суперадминистратор.
 
 1. Нажмите на значок ![Настройки](/ru/assets/filter_icon.svg "inline") в строке нужного проекта.
 

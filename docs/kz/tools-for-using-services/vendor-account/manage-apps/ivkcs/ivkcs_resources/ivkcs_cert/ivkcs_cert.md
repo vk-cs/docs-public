@@ -70,7 +70,7 @@
 `renewal_hook_path` аргументінде көрсетілген скрипт сертификат әр жаңартылғаннан кейін орындалады:
 
 - егер бұл аргумент берілсе, `cert_files_owner` аргументінде көрсетілген пайдаланушы атынан;
-- егер `root` аргументі берілмесе, `cert_files_owner` пайдаланушысы атынан.
+- егер `cert_files_owner` аргументі берілмесе, `root` пайдаланушысы атынан.
 
 Nginx серверін қайта жүктеуге арналған скрипт мысалы:
 
@@ -139,7 +139,7 @@ resource "ivkcs_cert" "api_service" {
   renewal_hook_path = "/opt/service/scripts/restart.sh"
   cert_files_owner  = "service"
   cert_files_group  = "service"
-  
+
   timeouts {
     create = "45m"
   }
@@ -156,7 +156,7 @@ variable "domains" {
 
 resource "ivkcs_cert" "multi_certs" {
   for_each = toset(var.domains)
-  
+
   uuid              = var.instance_uuid
   domain            = each.value
   path_cert         = "/etc/ssl/${each.value}/"

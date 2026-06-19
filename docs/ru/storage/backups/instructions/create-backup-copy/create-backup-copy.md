@@ -1,105 +1,120 @@
-Помимо [автоматического резервного копирования](../create-backup-plan) в личном кабинете VK Cloud можно создавать резервные копии вручную:
+# {heading(Создание резервной копии вручную)[id=backup-copy-create]}
+
+Помимо {linkto(../create-backup-plan#backup-plan-create)[text=автоматического резервного копирования]} в личном кабинете {var(cloud)} можно создавать резервные копии вручную:
 
 - на странице сервиса Cloud Backup;
+  {ifdef(public)}
 - на странице инстанса: виртуальной машины, базы данных или аналитической базы данных;
 - в каталоге сервисов (только для виртуальных машин).
+  {/ifdef}
+  {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+- на странице инстанса: виртуальной машины или базы данных.
+  {/ifdef}
+  {ifdef(private-cert)}
+- на странице виртуальной машины.
+  {/ifdef}
 
 Используйте ручной режим для создания резервных копий перед операциями, связанными с риском утраты данных.
 
 {note:info}
-
-Резервные копии хранятся в объектном хранилище VK Object Storage с классом хранения Backup.
-
+Резервные копии хранятся в объектном хранилище {ifdef(public)}{var(s3)} в автоматически создаваемых бакетах с {linkto(../../../s3/concepts/about#s3-concepts-about)[text=классом хранения]} `BackupBucket`{/ifdef}{ifndef(public)}(или ином, в зависимости от настроек){/ifndef}.
 {/note}
 
-## Создание резервной копии через сервис Cloud Backup
+## {heading(Создание резервной копии через сервис Cloud Backup)[id=backup-copy-create-via-service]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Backup → Резервное копирование**.
 1. Перейдите на вкладку **Ручное**.
 1. Нажмите кнопку **Создать бэкап** или **Добавить**.
 1. В открывшемся окне укажите параметры резервной копии:
 
-   1. Выберите тип копируемого ресурса: `Виртуальная машина`, `База данных`, `Аналитическая база данных`.
+   1. Выберите тип копируемого ресурса: `Виртуальная машина`{ifndef(private-cert)}, `База данных`{/ifndef}{ifdef(public)}, `Аналитическая база данных`{/ifdef}.
    1. Выберите инстанс из списка доступных инстансов.
    1. (Опционально) Для виртуальной машины выберите диски, которые нужно сохранить в ее резервной копии. По умолчанию будут сохранены все диски, подключенные к ВМ.
 
-      {include(/ru/_includes/_backup_plan_create_change.md)[tags=restore]}
+      {include(../../../../_includes/_backup_plan_create_change.md)[tags=restore]}
 
    1. (Опционально) Добавьте комментарий.
+      {ifdef(public)}
    1. (Опционально) Для виртуальной машины установите блокировку резервной копии от удаления:
 
-      {include(/ru/_includes/_backup_plan_create_change.md)[tags=lock_manual_backup]}
-
+      {include(../../../../_includes/_backup_plan_create_change.md)[tags=lock_manual_backup]}
+      {/ifdef}
 1. Нажмите кнопку **Создать бэкап**.
 
 {/tab}
 
 {/tabs}
 
-## Создание резервной копии через страницу инстанса
+## {heading(Создание резервной копии через страницу инстанса)[id=backup-copy-create-via-instance]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Создайте резервную копию нужного объекта через страницу инстанса:
 
+   {ifndef(private-cert)}
    {tabs}
 
    {tab(Виртуальная машина)}
+   {/ifndef}
 
    1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной ВМ и выберите **Создать бэкап**.
+   1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужной ВМ и выберите **Создать бэкап**.
    1. (Опционально) Добавьте комментарий.
    1. (Опционально) Выберите подключенные к ВМ диски, которые нужно сохранить в ее резервной копии. По умолчанию будут сохранены все диски.
 
-      {include(/ru/_includes/_backup_plan_create_change.md)[tags=restore]}
-
+      {include(../../../../_includes/_backup_plan_create_change.md)[tags=restore]}
+      {ifdef(public)}
    1. (Опционально) Для виртуальной машины установите блокировку резервной копии от удаления:
 
-      {include(/ru/_includes/_backup_plan_create_change.md)[tags=lock_manual_backup]}
-
+      {include(../../../../_includes/_backup_plan_create_change.md)[tags=lock_manual_backup]}
+      {/ifdef}
    1. Нажмите кнопку **Создать бэкап**.
 
+   {ifndef(private-cert)}
    {/tab}
-
    {tab(База данных)}
 
    1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса БД и выберите **Создать бэкап**.
+   1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного инстанса БД и выберите **Создать бэкап**.
    1. (Опционально) Добавьте комментарий.
    1. Нажмите кнопку **Создать бэкап**.
 
    {/tab}
-
+   {/ifndef}
+   {ifdef(public)}
    {tab(Аналитическая база данных)}
 
    1. Перейдите в раздел **Аналитические базы данных → Инстансы АБД**.
-   1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса АБД и выберите **Создать бэкап**.
+   1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного инстанса АБД и выберите **Создать бэкап**.
    1. (Опционально) Добавьте комментарий.
    1. Нажмите кнопку **Создать бэкап**.
 
    {/tab}
-
+   {/ifdef}
+   {ifndef(private-cert)}
    {/tabs}
+   {/ifndef}
 
 {/tab}
 
 {/tabs}
 
-## Создание резервной копии виртуальной машины через каталог сервисов
+{ifdef(public)}
+## {heading(Создание резервной копии виртуальной машины через каталог сервисов)[id=backup-copy-create-via-catalog]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. На главной странице нажмите кнопку **Все возможности**.
 1. В разделе **Все решения → Облачные вычисления** нажмите соответствующую кнопку на карточке нужного сервиса.
 1. В открывшемся окне укажите параметры резервной копии:
@@ -112,3 +127,4 @@
 {/tab}
 
 {/tabs}
+{/ifdef}

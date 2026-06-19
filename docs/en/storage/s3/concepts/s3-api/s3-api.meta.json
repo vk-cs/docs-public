@@ -1,9 +1,23 @@
 {
-    "title": "VK Object Storage API",
-      "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
-      "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
-    "sectionTitle": "VK Object Storage API",
-    "icon": "",
-    "weight": 2,
-    "uuid": "cbb6aafe-ab11-47de-a5f2-9f2d2cee8cf4"
+  "title": "VK Object Storage API",
+  "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
+  "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
+  "sectionTitle": "VK Object Storage API",
+  "icon": "",
+  "weight": 2,
+  "uuid": "cbb6aafe-ab11-47de-a5f2-9f2d2cee8cf4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-тағы файлдық сақтау орны",
   "metaDescription": "VK Cloud-тағы файлдық сақтау орны",
   "sectionTitle": "Файлдық сақтау орны",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-тағы мониторинг",
+  "shortDescription": "Standalone-та метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform Standalone нұсқасындағы Redis сервисінің өрістетілген даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone-тағы мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": ""
+}

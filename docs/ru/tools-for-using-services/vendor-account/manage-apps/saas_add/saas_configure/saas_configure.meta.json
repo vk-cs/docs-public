@@ -4,5 +4,10 @@
   "metaDescription": "Конфигурация SaaS-приложения",
   "sectionTitle": "Конфигурация SaaS-приложения",
   "weight": 3,
-  "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab"
+  "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

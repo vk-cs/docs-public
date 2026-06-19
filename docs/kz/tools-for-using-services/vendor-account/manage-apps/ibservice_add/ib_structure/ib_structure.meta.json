@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервис пакетінің құрылымы",
   "sectionTitle": "Сервис пакетінің құрылымы",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

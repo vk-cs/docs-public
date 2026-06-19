@@ -4,5 +4,10 @@
   "metaDescription": "Нақты ішкі желіден Floating IP мекенжайы қосылмаса, не істеу керек",
   "sectionTitle": "Нақты ішкі желіде Floating IP мекенжайларын беру шектелген",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

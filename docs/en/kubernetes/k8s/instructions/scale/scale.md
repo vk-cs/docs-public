@@ -27,7 +27,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
    1. Select the VM category to filter the list of available configuration templates.
       
@@ -53,7 +53,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
 
    1. Determine a new virtual machine type to be used for the cluster master nodes:
 
@@ -135,7 +135,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
    1. Locate the necessary cluster and node group.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Change type of master virtual machine**.
    1. Select the VM category to filter the list of available configuration templates.
@@ -162,7 +162,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
 
    1. Define a new type of VM to be used for worker nodes in the cluster node group:
 
@@ -235,7 +235,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Scaling settings**.
    1. In the window that appears:
@@ -254,7 +254,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
 
    1. Change the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) data source in the Terraform configuration file:
 
@@ -315,7 +315,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en).
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Scaling settings**.
    1. In the dialog window:
@@ -334,7 +334,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-   1. [Make sure](../manage-cluster#start) that cluster needed is running.
+   1. [Make sure](../manage-cluster) that cluster needed is running.
 
    1. Change the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) data source in the Terraform configuration file:
 

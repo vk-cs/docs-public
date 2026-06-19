@@ -1,9 +1,14 @@
 {
-    "title": "Хранилище в кластере",
-      "shortDescription": "Интеграция кластеров Kubernetes с сервисами хранения VK Cloud",
-      "metaDescription": "Интеграция кластеров Kubernetes с сервисами хранения VK Cloud. Типы хранилищ, классы хранения, применение Cinder CSI, политики освобождения постоянных томов",
-    "sectionTitle": "Хранилище в кластере",
-    "icon": "",
-    "weight": 6,
-    "uuid": "b31e0f8f-471e-4d32-8a99-feaeef9e0343"
+  "title": "Хранилище в кластере",
+  "shortDescription": "Интеграция кластеров Kubernetes с сервисами хранения {var(cloud)}",
+  "metaDescription": "Интеграция кластеров Kubernetes с сервисами хранения VK Cloud. Типы хранилищ, классы хранения, применение Cinder CSI, политики освобождения постоянных томов",
+  "sectionTitle": "Хранилище в кластере",
+  "icon": "",
+  "weight": 6,
+  "uuid": "b31e0f8f-471e-4d32-8a99-feaeef9e0343",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

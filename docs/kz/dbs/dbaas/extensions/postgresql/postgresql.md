@@ -1,18 +1,20 @@
+# {heading(PostgreSQL кеңейтімдері)[id=dbaas-extensions-postgresql]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Осы бөлімде [PostgreSQL](../../types/postgresql) және [PostgresPro](../../types/postgrespro) үшін арнайы кеңейтімдер сипатталған. ДҚ инстансын мониторингтеуге арналған кеңейтімдер туралы [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) және [zabbix](../zabbix) бөлімдерінен оқыңыз.
+{linkto(../../concepts/types/postgresql#dbaas-concepts-postgresql)[text=PostgreSQL]} үшін арнайы кеңейтімдер сипатталған. ДБ инстансын мониторингтеу үшін кеңейтімдер туралы {linkto(../node-exporter#dbaas-node-exporter)[text=node_exporter]} және {linkto(../zabbix#dbaas-zabbix)[text=zabbix]} бөлімдерінен оқыңыз.
 
 {note:info}
 
-Орнатуға қолжетімді кеңейтімдер жиыны таңдалған PostgreSQL және PostgresPro нұсқасына, сондай-ақ PostgresPro редакциясына байланысты.
+Орнатуға қолжетімді кеңейтімдер жиынтығы таңдалған PostgreSQL нұсқасына байланысты.
 
 {/note}
 
-## Holistic.dev (holistic)
+## {heading(Holistic.dev (holistic))[id=dbaas-extensions-postgresql-holistic]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [Holistic.dev](https://holistic.dev/) — дерекқор ұйымдастырылуы туралы мәліметтерді алуға арналған статикалық талдағыш және құрал. Жиналған деректердің арқасында құрал дерекқор объектілері арасындағы (relations) қатынастардың тұтастығын автоматты түрде бақылайды және ықтимал мәселелерді анықтайды. Holistic.dev есептеріндегі ақпаратты әкімшілер дерекқорды оңтайландыру кезінде пайдаланады. Holistic.dev тек DML-сұраулар мен дерекқор схемасы туралы мәліметтерді жинайды, дерекқор конфигурациясы мен сұрауларды орындау жоспарлары талданбайды.
 
@@ -20,7 +22,7 @@
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `databases`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі. Міндетті параметр.
 - `api_key`: Holistic.dev API кілті. Міндетті параметр.
@@ -30,17 +32,17 @@
 
 {/tabs}
 
-## JsQuery
+## {heading(JsQuery)[id=dbaas-extensions-postgresql-jsquery]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 Кеңейтім [JsQuery](https://postgrespro.ru/products/extensions/jsquery) сұрау тілін ұсынады, ол PostgreSQL жүйесінің [jsonb](https://www.postgresql.org/docs/current/datatype-json.html) деректер түрін өңдеу мүмкіндіктерін кеңейтеді. Кеңейтім салынған объектілер мен массивтер бойынша іздеуді жеңілдетеді, индекстерді қолдайтын салыстыру операторларын пайдалануға мүмкіндік береді.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -54,21 +56,21 @@
 
 {/tabs}
 
-## pgBadger
+## {heading(pgBadger)[id=dbaas-extensions-postgresql-pgbadger]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [pgBadger](https://pgbadger.darold.net/) кеңейтімі PostgreSQL логтарын талдап, кейін SQL-сұраулар статистикасын, [Autovacuum](https://www.postgresql.org/docs/current/routine-vacuuming.html#AUTOVACUUM) функциясының жұмысын және басқа деректерді қамтитын есептер құруға мүмкіндік береді. Мүмкіндіктері туралы толығырақ [кеңейтім құжаттамасынан](https://pgbadger.darold.net/documentation.html#FEATURE) оқыңыз.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
-- `s3_bucket`: есептер сақталатын [VK Object Storage](/kz/storage/s3) бакетінің атауы. Міндетті параметр.
+- `s3_bucket`: есептер сақталатын [VK Object Storage](../../../../storage/s3) бакетінің атауы. Міндетті параметр.
 
-  Егер мұндай атаудағы бакет жоқ болса — [оны жасаңыз](/kz/storage/s3/instructions/buckets/create-bucket).
+  Егер мұндай атаудағы бакет жоқ болса — [оны жасаңыз](../../../../storage/s3/instructions/buckets/create-bucket).
 
   {note:warn}
 
@@ -76,7 +78,7 @@
 
   {/note}
 
-  Белгілі бір ДҚ инстансы бойынша есептер инстанс идентификаторына сәйкес келетін атаудағы директорияда сақталады. Идентификаторды [ДҚ инстансы туралы ақпаратты қарап](/kz/dbs/dbaas/instructions/manage-instance/postgresql#dk_danasy_turaly_akparat_alu) алуға болады.
+  Белгілі бір ДҚ инстансы бойынша есептер инстанс идентификаторына сәйкес келетін атаудағы директорияда сақталады. Идентификаторды {linkto(../../instructions/manage-instance/postgresql#dbaas-postgresql-get-info)[text=ДҚ инстансы туралы ақпаратты қарап]} алуға болады.
 
 - `period`: есептерді жасау аралығы (сағатпен).
 
@@ -96,17 +98,19 @@
 
 {/tabs}
 
-## PgBouncer
+## {heading(PgBouncer)[id=dbaas-extensions-postgresql-pgbouncer]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
-[PgBouncer](https://www.pgbouncer.org) теңгергіші ДҚ серверіне клиенттік қосылымдар пулын басқаратын прокси ретінде жұмыс істейді. Ол қосылымдарды қайта пайдаланып, серверге түсетін жүктемені азайтады және өнімділікті арттырады. Қолдау көрсетілетін үш режим: session, transaction, statement. Теңгергіш кеңейтімімен жұмыс туралы толығырақ [PostgreSQL-ге қосылу үшін TLS-протоколын пайдалану](/kz/dbs/dbaas/how-to-guides/tls-connect) бөлімінде берілген.
+[PgBouncer](https://www.pgbouncer.org) теңгергіші ДҚ серверіне клиенттік қосылымдар пулын басқаратын прокси ретінде жұмыс істейді. Ол қосылымдарды қайта пайдаланып, серверге түсетін жүктемені азайтады және өнімділікті арттырады.
+Қолдау көрсетілетін үш режим: session, transaction, statement.
+Теңгергіш кеңейтімімен жұмыс туралы толығырақ {linkto(../../how-to-guides/tls-connect#dbaas-tls-connect)[text=PostgreSQL-ге қосылу үшін TLS-протоколын пайдалану]} бөлімінде берілген.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `pool_mode`: қосылымдарды басқару режимі.
   Мүмкін мәндер:
@@ -120,17 +124,17 @@
 
 {/tabs}
 
-## pg_hint_plan
+## {heading(pg_hint_plan)[id=dbaas-extensions-postgresql-pghintplan]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 SQL-сұрау орындалған кезде PostgreSQL жоспарлағышы ең жақсы орындау жоспарын (execution plan) таңдауға тырысады. Таңдалған жоспар әрдайым оңтайлы бола бермейді, өйткені жоспарлағыш деректердің кейбір қасиеттерін, мысалы, бағандар арасындағы корреляцияларды ескермейді. [pg_hint_plan](https://github.com/ossc-db/pg_hint_plan) кеңейтімі PostgreSQL жоспарлағышына нұсқаулар (hints) беру арқылы сұрауды орындау жоспарларын түзетуге мүмкіндік береді. Нұсқаулар SQL-сұрауларға арнайы түрдегі комментарийлер немесе `hint_plan.hints` арнайы кестесіндегі жазбалар түрінде беріледі.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `enable_hint_table`: `hint_plan.hints` кестесіндегі нұсқауларды пайдалануға рұқсат етілетінін анықтайды.
 
@@ -177,11 +181,11 @@ SQL-сұрау орындалған кезде PostgreSQL жоспарлағыш
 
 {/tabs}
 
-## pg_partman
+## {heading(pg_partman)[id=dbaas-extensions-postgresql-pgpartman]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 pg_partman кеңейтімі кестелерді партициялауды (partitioning) кеңейтілген түрде басқаруға арналған. Партициялаудың екі түрі қолданылады: `pg_partman` триггерлері негізіндегі және PostgreSQL-ге ендірілген функционал негізіндегі native түрі. Толығырақ [кеңейтім құжаттамасында](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md).
 
@@ -191,7 +195,7 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -201,7 +205,7 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
   {/note}
 
-- `interval`: фондық процесс ([background worker](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#maintenance-functions), BGW) арқылы [run_maintenance()](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#background-worker) функциясын іске қосу аралығы (секундпен).
+- `interval`: фондық процесс ([background worker](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#background-worker), BGW) арқылы [run_maintenance()](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#maintenance-functions) функциясын іске қосу аралығы (секундпен).
 
   Әдепкі мәні: `3600` (бір сағат).
 
@@ -223,23 +227,23 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tabs}
 
-## pg_stat_kcache
+## {heading(pg_stat_kcache)[id=dbaas-extensions-postgresql-pgstatkcache]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [pg_stat_kcache](https://github.com/powa-team/pg_stat_kcache) кеңейтімі файлдық жүйе деңгейінде орындалған нақты оқу және жазу операциялары туралы статистиканы жинайды.
 
 {note:info}
 
-Бұл кеңейтімнің жұмыс істеуі үшін [pg_stat_statements](#pg_stat_statements) кеңейтімі қажет. Егер ол әлі орнатылмаған болса, орнату автоматты түрде орындалады.
+Бұл кеңейтімнің жұмыс істеуі үшін {linkto(#dbaas-extensions-postgresql-pgstatstatements)[text=pg_stat_statements]} кеңейтімі қажет. Егер ол әлі орнатылмаған болса, орнату автоматты түрде орындалады.
 
 {/note}
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -247,17 +251,17 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tabs}
 
-## pg_stat_statements
+## {heading(pg_stat_statements)[id=dbaas-extensions-postgresql-pgstatstatements]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) кеңейтімі PostgreSQL серверінің барлық SQL-өрнектерді (SQL statements) жоспарлау және орындау статистикасын бақылауға мүмкіндік береді.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -265,19 +269,19 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tabs}
 
-## PostGIS
+## {heading(PostGIS)[id=dbaas-extensions-postgresql-postgis]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [PostGIS](http://postgis.net/) кеңейтімі PostgreSQL жүйесіне географиялық объектілермен жұмыс істеу мүмкіндіктерін қосады. Кеңістіктік деректердің бірнеше типі іске асырылады, геодеректерді сақтау, индекстеу және өңдеу қолдау көрсетіледі.
 
-Кеңейтіммен жұмыс туралы толығырақ [PostgreSQL және PostgresPro жүйелерінде PostGIS кеңейтімін пайдалану](../../how-to-guides/using-postgis) бөлімінде берілген.
+Кеңейтіммен жұмыс істеу туралы толығырақ {linkto(../../how-to-guides/using-postgis#dbaas-using-postgis)[text=PostgreSQL жүйесінде PostGIS кеңейтімін пайдалану]} бөлімінде.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -302,17 +306,17 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tabs}
 
-## postgres_extensions
+## {heading(postgres_extensions)[id=dbaas-extensions-postgresql-postgresextensions]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 Қосымша баптауды қажет етпейтін танымал PostgreSQL кеңейтімдерінің жиыны. Орнату үшін бір немесе бірнеше кеңейтімді таңдай аласыз, олар **Кеңейтім параметрлері** қойындысында тізілген.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 - `databases`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 
@@ -335,7 +339,7 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
   | [dblink](https://www.postgresql.org/docs/current/contrib-dblink-function.html)          | Ағымдағы сессиядан қашықтағы (remote) PostgreSQL дерекқорына SQL-сұрау орындауға мүмкіндік береді |
   | [dict_int](https://www.postgresql.org/docs/current/dict-int.html)                       | Толықмәтіндік іздеуге арналған қосымша сөздік шаблонының мысалын ұсынады. Сөздік бүтін сандарды (таңбалы және таңбасыз) индекстеуге мүмкіндік береді. Соның арқасында бірегей сөздер тізімі шектен тыс ұлғаймайды және іздеу жылдамдығы артады |
   | [dict_xsyn](https://www.postgresql.org/docs/current/dict-xsyn.html)                     | Толықмәтіндік іздеуге арналған қосымша сөздік шаблонының мысалын ұсынады. Сөздік сөздерді синонимдер топтарына ауыстырады, бұл олардың синонимдері бойынша іздеуге мүмкіндік береді |
-  | [earthdistance](https://www.postgresql.org/docs/current/earthdistance.html)             | Жер бетіндегі нүктелер арасындағы қашықтықты екі тәсілмен есептеуге мүмкіндік береді: [кубтар бойынша](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.7) және [нүктелер бойынша](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.8).<br><br>Есептеулер кезінде Жер мінсіз сфера деп есептеледі. Егер бұл тым дөрекі жуықтау болса, [PostGIS](#postgis) кеңейтімін пайдаланыңыз.<br><br>**Тәуелділіктер:** `cube` кеңейтімі. Егер ол орнатылмаған болса, орнату автоматты түрде орындалады |
+  | [earthdistance](https://www.postgresql.org/docs/current/earthdistance.html)             | Жер бетіндегі нүктелер арасындағы қашықтықты екі тәсілмен есептеуге мүмкіндік береді: [кубтар бойынша](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.7) және [нүктелер бойынша](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.8).<br><br>Есептеулер кезінде Жер мінсіз сфера деп есептеледі. Егер бұл тым дөрекі жуықтау болса, {linkto(#dbaas-extensions-postgresql-postgis)[text=PostGIS]} кеңейтімін пайдаланыңыз.<br><br>**Тәуелділіктер:** `cube` кеңейтімі. Егер ол орнатылмаған болса, орнату автоматты түрде орындалады |
   | [fuzzystrmatch](https://www.postgresql.org/docs/current/fuzzystrmatch.html)             | Жолдардың ұқсастық деңгейін және жолдар арасындағы қашықтықты анықтауға арналған функцияларды ұсынады |
   | [hstore](https://www.postgresql.org/docs/current/hstore.html)                           | Бір мән ішінде кілт/мән жолдары жұптарын сақтау үшін `hstore` деректер типін іске асырады |
   | [intarray](https://www.postgresql.org/docs/current/intarray.html)                       | `NULL` мәндері жоқ бүтін сандар массивтерімен жұмыс істеуге арналған функциялар мен операторларды ұсынады |
@@ -360,17 +364,17 @@ PostgreSQL-де native партициялау үшін құпиясөз орна
 
 {/tabs}
 
-## TimescaleDB
+## {heading(TimescaleDB)[id=dbaas-extensions-postgresql-timescaledb]}
 
 {tabs}
 
-{tab(Описание расширения)}
+{tab(Кеңейтім сипаттамасы)}
 
 [TimescaleDB](https://docs.timescale.com/) кеңейтімі PostgreSQL жүйесіне уақыттық қатарлармен (time series) жұмыс істеуге арналған кеңейтілген мүмкіндіктерді қосады. Гиперкестелерде (hypertables) сақталатын уақыттық қатарлар деректерімен жұмыс істеу үшін PostgreSQL стандартты SQL синтаксисіне толық қолдау қамтамасыз етілген. Уақыттық қатарлар деректері бар гиперкестелерді уақыт және кеңістік бойынша автоматты түрде партициялау қолдау көрсетіледі.
 
 {/tab}
 
-{tab(Параметры расширения)}
+{tab(Кеңейтім параметрлері)}
 
 `database`: кеңейтім жұмыс істеуі тиіс дерекқорлар тізімі.
 

@@ -1,9 +1,14 @@
 {
-    "title": "Creating and configuring load balancers",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating and configuring load balancers",
-    "icon": "",
-    "weight": 4,
-    "uuid": "39e5018f-e040-49ad-af48-0adc3c4e20a2"
+  "title": "Creating and configuring load balancers",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating and configuring load balancers",
+  "icon": "",
+  "weight": 4,
+  "uuid": "39e5018f-e040-49ad-af48-0adc3c4e20a2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

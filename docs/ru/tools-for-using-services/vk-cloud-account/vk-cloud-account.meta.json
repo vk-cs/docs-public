@@ -1,9 +1,14 @@
 {
-  "title": "Аккаунт VK Cloud",
-  "shortDescription": "Аккаунт пользователя VK Cloud",
+  "title": "Аккаунт {var(cloud)}",
+  "shortDescription": "Аккаунт пользователя {var(cloud)}",
   "metaDescription": "Аккаунт VK Cloud представляет собой интерфейс для управления аккаунтом пользователя.",
-  "sectionTitle": "Аккаунт VK Cloud",
+  "sectionTitle": "Аккаунт {var(cloud)}",
   "icon": "",
   "weight": 1,
-  "uuid": "69065e26-1407-46e5-a3dc-678fb90fd2eb"
+  "uuid": "69065e26-1407-46e5-a3dc-678fb90fd2eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

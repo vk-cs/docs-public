@@ -1,9 +1,14 @@
 {
-    "title": "Защита инфраструктуры с помощью Check Point CloudGuard Network",
-      "shortDescription": "Развертывание сервиса Check Point CloudGuard Network в проекте",
-      "metaDescription": "Развертывание Check Point CloudGuard Network: настройка шлюзов и добавление сетевых интерфейсов",
-    "sectionTitle": "Защита инфраструктуры с помощью Check Point CloudGuard Network",
-    "icon": "",
-    "weight": 4,
-    "uuid": "e6f3f167-385c-49c8-9e80-e933a1cd7eb3"
+  "title": "Защита инфраструктуры с помощью Check Point CloudGuard Network",
+  "shortDescription": "Развертывание сервиса Check Point CloudGuard Network в проекте",
+  "metaDescription": "Развертывание Check Point CloudGuard Network: настройка шлюзов и добавление сетевых интерфейсов",
+  "sectionTitle": "Защита инфраструктуры с помощью Check Point CloudGuard Network",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e6f3f167-385c-49c8-9e80-e933a1cd7eb3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

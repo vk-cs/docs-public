@@ -5,5 +5,10 @@
   "sectionTitle": "Container Storage Interface для S3 (S3-CSI)",
   "icon": "",
   "weight": 4,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

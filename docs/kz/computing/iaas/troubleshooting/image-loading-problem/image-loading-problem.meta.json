@@ -4,5 +4,12 @@
   "metaDescription": "ВМ образын жүктеу кезінде туындайтын қателерді жою",
   "sectionTitle": "ВМ образын жүктеу мүмкін емес",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

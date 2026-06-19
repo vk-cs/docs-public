@@ -1,0 +1,17 @@
+{
+  "title": "Установка аддона на выделенную группу узлов",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, как установить аддон на выделенную группу узлов",
+  "sectionTitle": "Установка аддона на выделенную группу узлов",
+  "icon": "",
+  "weight": 15,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

@@ -3,5 +3,10 @@
   "shortDescription": "REST API арқылы сервистерге қол жеткізу үшін X-Subject-Token токенін қалай генерациялауға болады",
   "metaDescription": "REST API арқылы сервистерге қол жеткізу үшін X-Subject-Token токенін генерациялау.",
   "sectionTitle": "Keystone қатынау токенін алу",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

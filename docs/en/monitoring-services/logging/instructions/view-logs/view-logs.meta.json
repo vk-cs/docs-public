@@ -1,9 +1,14 @@
 {
-    "title": "Viewing logs",
-      "shortDescription": "How to view logs",
-      "metaDescription": "",
-    "sectionTitle": "Viewing logs",
-    "icon": "",
-    "weight": 4,
-    "uuid": "a5aad1eb-dd98-4aeb-9060-b92eda6fd99a"
+  "title": "Viewing logs",
+  "shortDescription": "How to view logs",
+  "metaDescription": "",
+  "sectionTitle": "Viewing logs",
+  "icon": "",
+  "weight": 4,
+  "uuid": "a5aad1eb-dd98-4aeb-9060-b92eda6fd99a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

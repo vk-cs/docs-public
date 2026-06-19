@@ -1,9 +1,14 @@
 {
-    "title": "Использование Curl",
-      "shortDescription": "Запрос на распознавание с использованием Curl",
-      "metaDescription": "1. Автономера: Запрос: curl -k -v",
-    "sectionTitle": "Использование Curl",
-    "icon": "",
-    "weight": 2,
-    "uuid": "a2945402-3a76-4671-b6e7-a32702b9e509"
+  "title": "Использование Curl",
+  "shortDescription": "Запрос на распознавание с использованием Curl",
+  "metaDescription": "1. Автономера: Запрос: curl -k -v",
+  "sectionTitle": "Использование Curl",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a2945402-3a76-4671-b6e7-a32702b9e509",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

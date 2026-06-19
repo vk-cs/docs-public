@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform ішіндегі Cloud Flink сервисі қандай мүмкіндіктер ұсынатынын біліңіз",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

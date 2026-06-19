@@ -4,5 +4,10 @@
   "metaDescription": "Загрузка SaaS-приложения в магазин",
   "sectionTitle": "Загрузка SaaS-приложения в магазин",
   "weight": 5,
-  "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13"
+  "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

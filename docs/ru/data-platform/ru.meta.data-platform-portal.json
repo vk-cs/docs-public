@@ -1,0 +1,125 @@
+{
+  "title": "VK Data Platform",
+  "decorator": "list",
+  "metaDescription": "VK Data Platform | Платформа данных: универсальная платформа для работы с большими объемами данных и машинным обучением от VK Cloud",
+  "uuid": "",
+  "variables": {
+    "marketplace": "магазин приложений Marketplace",
+    "revdate": "18.07.2024",
+    "cloud": [
+      {
+        "buildPoint": "public",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-cert",
+        "value": "Private Cloud от VK"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Private Cloud"
+      }
+    ],
+    "s3": [
+      {
+        "buildPoint": "public",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Object Storage"
+      }
+    ],
+    "data-p": [
+      {
+        "buildPoint": "public",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Data Platform"
+      }
+    ]
+  },
+  "build": {
+    "points": [
+      "data-p"
+    ]
+  }
+}

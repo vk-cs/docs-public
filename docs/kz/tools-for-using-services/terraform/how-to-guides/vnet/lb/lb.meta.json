@@ -4,5 +4,12 @@
   "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. Жүктеме теңгергіштерін басқару",
   "sectionTitle": "Жүктеме теңгергіштерін басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

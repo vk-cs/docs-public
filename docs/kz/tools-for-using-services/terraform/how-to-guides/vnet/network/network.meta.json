@@ -4,5 +4,12 @@
   "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. Желілерді жасау",
   "sectionTitle": "Желілерді жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

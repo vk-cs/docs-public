@@ -5,5 +5,10 @@
   "sectionTitle": "Anycast IP",
   "icon": "",
   "weight": 1,
-  "uuid": "d49bcfdd-f2be-47a9-97b9-202401a1c2b8"
+  "uuid": "d49bcfdd-f2be-47a9-97b9-202401a1c2b8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

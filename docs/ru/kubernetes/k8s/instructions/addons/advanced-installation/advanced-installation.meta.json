@@ -5,5 +5,14 @@
   "sectionTitle": "Установка и настройка аддонов",
   "icon": "",
   "weight": 2,
-  "uuid": "372e7a27-7565-48c6-98b0-79d3459602a9"
+  "uuid": "372e7a27-7565-48c6-98b0-79d3459602a9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

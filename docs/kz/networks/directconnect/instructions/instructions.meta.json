@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud Direct Connect қадамдық нұсқаулықтары: сервисте негізгі операцияларды орындауға арналған қысқаша нұсқаулықтар.",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

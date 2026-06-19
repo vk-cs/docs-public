@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud жүйесіндегі Cloud Network сервисінде негізгі операцияларды қалай орындауға болады. Виртуалды желілік инфрақұрылым нысандарын: желілерді, порттарды, маршруттауыштарды, қауіпсіздік топтарын, IP мекенжайларын басқару",
   "sectionTitle": "Қадамдық нұсқаулар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

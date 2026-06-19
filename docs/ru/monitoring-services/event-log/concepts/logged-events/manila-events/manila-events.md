@@ -1,4 +1,6 @@
-События, которые сервис [файловых хранилищ](/ru/computing/iaas/concepts/data-storage/file-share) передает в Cloud Audit:
+# {heading(События компонента Manila)[id=event-log-manila]}
+
+События, которые {linkto(../../../../../computing/iaas/concepts/data-storage/file-share#iaas-file-share)[text=сервис файловых хранилищ]} передает в Cloud Audit:
 
 [cols="1,4", options="header"]
 |===
@@ -10,7 +12,7 @@
 |POST
 |`/v2/shares/`
 
-[Создано](/ru/computing/iaas/instructions/fs-manage/fs-create) файловое хранилище
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-create#iaas-fs-create)[text=Создано]} файловое хранилище
 
 |POST
 |`/v2/shares/manage`
@@ -25,7 +27,7 @@
 |DELETE
 |`/v2/shares/{share_id}`
 
-[Удалено](/ru/computing/iaas/instructions/fs-manage/fs-operations#deleting_a_file_storage_and_its_network) файловое хранилище
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-delete)[text=Удалено]} файловое хранилище
 
 2+^|[Операции с метаданными файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#delete-share-metadata-item)
 
@@ -50,16 +52,16 @@
 |POST
 |`/v2/shares/{share_id}/action`
 
-* [Предоставлен](/ru/computing/iaas/instructions/fs-manage/fs-access-rules#adding_an_access_rule) доступ к файловому хранилищу.
-* [Отозван](/ru/computing/iaas/instructions/fs-manage/fs-access-rules#deleting_an_access_rule) доступ к файловому хранилищу.
-* [Изменен размер](/ru/computing/iaas/instructions/fs-manage/fs-operations#increasing_file_storage_size) файлового хранилища
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-access-rules#iaas-fs-access-rules-adding)[text=Предоставлен]} доступ к файловому хранилищу.
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-access-rules#iaas-fs-access-rules-deleting)[text=Отозван]} доступ к файловому хранилищу.
+* {linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-size)[text=Изменен размер]} файлового хранилища
 
 2+^|[Операции со снимками файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-snapshots)
 
 |POST
 |`/v2/snapshots`
 
-[Создан](/ru/computing/iaas/instructions/fs-manage/fs-snapshots#creating_a_snapshot) снимок файлового хранилища
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-snapshots#iaas-fs-snapshots-creating)[text=Создан]} снимок файлового хранилища
 
 |POST
 |`/v2/snapshots/manage`
@@ -79,7 +81,7 @@
 |DELETE
 |`/v2/snapshots/{snapshot_id}`
 
-[Удален](/ru/computing/iaas/instructions/fs-manage/fs-snapshots#deleting_a_snapshot) снимок файлового хранилища
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-snapshots#iaas-fs-snapshots-deleting)[text=Удален]} снимок файлового хранилища
 
 2+^|[Операции с метаданными снимков файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#snapshot-metadata-since-api-v2-73)
 
@@ -104,7 +106,7 @@
 |POST
 |`/v2/share-networks`
 
-[Создана](/ru/computing/iaas/instructions/fs-manage/fs-create) сеть файлового хранилища
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-create#iaas-fs-create)[text=Создана]} сеть файлового хранилища
 
 |POST
 |`/v2/share-networks/{share_network_id}/action`
@@ -122,7 +124,7 @@
 |DELETE
 |`/v2/share-networks/{share_network_id}`
 
-[Удалена](/ru/computing/iaas/instructions/fs-manage/fs-operations#deleting_a_file_storage_and_its_network) сеть файлового хранилища
+{linkto(../../../../../computing/iaas/instructions/fs-manage/fs-operations#iaas-fs-operations-delete)[text=Удалена]} сеть файлового хранилища
 
 2+^|[Управление подсетями в сетях файловых хранилищ](https://docs.openstack.org/api-ref/shared-file-system/index.html#share-network-subnets-since-api-v2-51)
 

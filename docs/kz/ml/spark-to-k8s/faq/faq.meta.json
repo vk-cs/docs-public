@@ -4,5 +4,10 @@
   "metaDescription": "Spark кластері туралы жиі қойылатын сұрақтарға жауаптар",
   "sectionTitle": "Сұрақтар мен жауаптар",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

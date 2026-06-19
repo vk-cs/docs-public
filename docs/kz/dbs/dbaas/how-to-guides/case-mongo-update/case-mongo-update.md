@@ -1,10 +1,12 @@
+# {heading(MongoDB репликациясы және Ubuntu жүйесінде жаңарту)[id=dbaas-case-mongo-update]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл мақалада Ubuntu 18.04 жүйесінде MongoDB-ді қалай репликациялау және жаңарту керектігін қарастырамыз.
 
 {note:info}
 
-Жабдық конфигурациясы туралы, сондай-ақ MongoDB-ді қалай орнату және баптау керектігі туралы [Ubuntu жүйесінде MongoDB орнату және баптау](../../instructions/create/create-single-replica) мақаласынан біле аласыз.
+Жабдық конфигурациясы туралы, сондай-ақ MongoDB-ді қалай орнату және баптау керектігі туралы {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=Ubuntu жүйесінде MongoDB орнату және баптау]} мақаласынан біле аласыз.
 
 {/note}
 
@@ -18,7 +20,7 @@
 
 {/note}
 
-## MongoDB ReplicaSet баптауы
+## {heading(MongoDB ReplicaSet баптауы)[id=dbaas-case-mongo-update-settings]}
 
 Replicaset  — бұл бірдей деректер жиынын қамтитын, ақаулардан қорғанысты және деректердің жоғары қолжетімділігін қамтамасыз ететін бірнеше сервер. MongoDB  Replicaset ішінде  жазу мен оқу үшін бір primary түйіні және primary түйінімен синхрондалған әрі жүктемені азайту үшін деректерді оқу мүмкіндігін беретін бір немесе бірнеше secondary түйіндері болады. Primary түйіні істен шыққан жағдайда, secondary түйіндерінің бірі автоматты түрде primary түйіні болып тағайындалады. Жаңа primary түйінін таңдауды жеделдету үшін деректерді қамтымайтын арбитр түйіні арналған. Сонымен қатар, Replicaset  артықшылықтарының бірі — кластердің жұмысын тоқтатпай жаңарту мүмкіндігі.
 
@@ -87,7 +89,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7.  `mongo2` серверінде авторизациядан өтіңіз, MongoDB репозиторийінің кілтін импорттаңыз, MongoDB репозиторийін қосыңыз және MongoDB-ді орнатыңыз (мұны қалай жасау керектігін [Ubuntu жүйесінде MongoDB орнату және баптау](../../instructions/create/create-single-replica) мақаласынан оқыңыз).
+7.  `mongo2` серверінде авторизациядан өтіңіз, MongoDB репозиторийінің кілтін импорттаңыз, MongoDB репозиторийін қосыңыз және MongoDB-ді орнатыңыз (мұны қалай жасау керектігін {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=Ubuntu жүйесінде MongoDB орнату және баптау]} мақаласынан оқыңыз).
 8.  Егер `/etc/hosts` файлын `mongo1` серверінде өзгерткен болсаңыз, ағымдағы серверде де соны қайталаңыз.
 9.  `mongo1` серверінен `/etc/mongod.conf` конфигурациялық файлын ағымдағы серверге көшіріңіз, файлда `PEMKeyFile:` кілтінің атауын `/etc/ssl/mongo1.pem` мәнінен `PEMKeyFile: /etc/ssl/mongo2.pem` мәніне ауыстырыңыз.
 10. Ағымдағы серверге `/etc/ssl/mongoCA.pem` кілтін көшіріңіз.
@@ -308,7 +310,7 @@ rs0:PRIMARY> rs.status()
 
 Нәтижесінде біз `primary` түйінін, `secondary` түйінін және `arbiter` түйінін алдық. `Repliset` синхрондалған және жұмысқа қабілетті күйде тұр.
 
-## MongoDB ReplicaSet жаңарту
+## {heading(MongoDB ReplicaSet жаңарту)[id=dbaas-case-mongo-update-update]}
 
 Жаңартуды 4.0 нұсқасынан 4.2 нұсқасына көшу мысалында қарастырайық. Ағымдағы деректер сызбасын жұмыс істемейтін күйге әкелуі мүмкін өзгерістерді түсіну үшін [құжатпен](https://docs.mongodb.com/manual/release-notes/4.2-upgrade-replica-set/) танысыңыз.
 
@@ -396,7 +398,6 @@ rs0:PRIMARY> rs.status()
     "date" : ISODate("2019-12-27T06:54:13.228Z"),
     "myState" : 1,
     "term" : NumberLong(6),
-
     "members" : [
         {
             "_id" : 0,
@@ -448,22 +449,22 @@ rs0:PRIMARY> rs.status()
         "name" : "mongo1.testdomain.com:27017",
         "health" : 1,
         "state" : 1,
-        "stateStr" : "PRIMARY"
-},
+        "stateStr" : "PRIMARY",
+    },
     {
         "_id" : 1,
         "name" : "mongo2.testdomain.com:27017",
         "health" : 1,
         "state" : 2,
-        "stateStr" : "SECONDARY"
-},
+        "stateStr" : "SECONDARY",
+    },
     {
         "_id" : 2,
         "name" : "mongoar.testdomain.com:27017",
         "health" : 1,
         "state" : 7,
-        "stateStr" : "ARBITER"
-}
+        "stateStr" : "ARBITER",
+    }
 }
 ```
 
@@ -507,7 +508,6 @@ rs0:SECONDARY> rs.status()
             "health" : 1,
             "state" : 2,
             "stateStr" : "SECONDARY",
-
         },
         {
             "_id" : 1,

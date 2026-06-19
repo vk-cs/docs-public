@@ -2,9 +2,10 @@ When connecting to the Docker registry, the following error occurs: `x509: certi
 
 The problem occurs if it is not possible to verify the authenticity of the digital certificate used to [connect to the Docker registry](/en/kubernetes/k8s/connect/docker-registry). For example, if the default connection uses a self-signed certificate created by the system.
 
+
 {note:info}
 
-When [creating](/en/kubernetes/k8s/instructions/create-cluster) a cluster, you can add addresses of trusted Docker registries to download and run container images without having to verify the authenticity of the digital certificate.
+When [creating](/en/kubernetes/k8s/instructions/create-cluster) a cluster, you can add addresses of trusted Docker registries to download and run container images without having to verify the authenticity of the digital certificate. 
 
 {/note}
 

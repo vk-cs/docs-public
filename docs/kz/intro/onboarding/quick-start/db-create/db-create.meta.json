@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Databases сервисінің мүмкіндіктерімен танысыңыз. PostgreSQL дерекқорының инстансын жасаңыз, TimescaleDB кеңейтімін орнатыңыз және жасалған БД инстансына қосылыңыз.",
   "sectionTitle": "Cloud Databases: алғашқы басқарылатын дерекқорды жасаңыз",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

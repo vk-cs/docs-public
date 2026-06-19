@@ -1,9 +1,14 @@
 {
-    "title": "Traffic restriction",
-      "shortDescription": "How to restrict network traffic with IP Source Guard and security groups",
-      "metaDescription": "",
-    "sectionTitle": "Traffic restriction",
-    "icon": "",
-    "weight": 4,
-    "uuid": "cb778b44-2c4c-46fe-b945-cf6fd5968fab"
+  "title": "Traffic restriction",
+  "shortDescription": "How to restrict network traffic with IP Source Guard and security groups",
+  "metaDescription": "",
+  "sectionTitle": "Traffic restriction",
+  "icon": "",
+  "weight": 4,
+  "uuid": "cb778b44-2c4c-46fe-b945-cf6fd5968fab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

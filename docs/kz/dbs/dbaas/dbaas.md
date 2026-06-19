@@ -1,3 +1,5 @@
+# {heading(Cloud Databases)[id=dbaas-dbaas]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Databases — бұлттық дерекқорлар (Database as a service). Сервис бұлтта MySQL, PostgreSQL, MongoDB, Redis,

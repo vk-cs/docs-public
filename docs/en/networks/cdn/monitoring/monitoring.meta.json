@@ -1,9 +1,14 @@
 {
-    "title": "Statistics",
-      "shortDescription": "How to get statistics about CDN resource traffic and available metrics",
-      "metaDescription": "How to get statistics about CDN resource traffic and available metrics",
-    "sectionTitle": "Statistics",
-    "icon": "",
-    "weight": 3,
-    "uuid": "d38ebc64-d6de-4e51-9583-6ad7fcc0cf68"
+  "title": "Statistics",
+  "shortDescription": "How to get statistics about CDN resource traffic and available metrics",
+  "metaDescription": "How to get statistics about CDN resource traffic and available metrics",
+  "sectionTitle": "Statistics",
+  "icon": "",
+  "weight": 3,
+  "uuid": "d38ebc64-d6de-4e51-9583-6ad7fcc0cf68",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

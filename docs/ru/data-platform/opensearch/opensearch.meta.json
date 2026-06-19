@@ -1,0 +1,14 @@
+{
+  "title": "OpenSearch",
+  "shortDescription": "Программный комплекс для создания поисковых систем и аналитических решений",
+  "metaDescription": "Сервис OpenSearch для создания поисковых систем и аналитических решений в инфраструктуре VK Data Platform",
+  "sectionTitle": "OpenSearch",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 17,
+  "uuid": ""
+}

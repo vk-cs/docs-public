@@ -1,4 +1,8 @@
+# {heading(Octavia компонентінің оқиғалары)[id=event-log-octavia]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
+
+{ifndef(private-pdf,private-pg-pdf)}[Жүктемені теңгеру сервисі](/kz/networks/balancing){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../networks/balancing#balancing)[text=жүктемені теңгеру сервисі]}{/ifdef} Cloud Audit-ке жіберетін оқиғалар.
 
 [cols="2,3", options="header"]
 |===

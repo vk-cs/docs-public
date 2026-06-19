@@ -1,3 +1,5 @@
+# {heading(API спецификациясы)[id=tools-api-spec]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Cloud платформасының жария API спецификациялары.
+{var(cloud)} платформасының жария API спецификациялары.

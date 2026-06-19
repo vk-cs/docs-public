@@ -1,9 +1,16 @@
 {
   "title": "Создание экземпляра сервиса",
   "shortDescription": "Как создать экземпляр Cloud Flink в нужной конфигурации",
-  "metaDescription": "Как создать экземпляр сервиса в нужной конфигурации.",
+  "metaDescription": "Узнайте как создать в нужной конфигурации экземпляр сервиса Cloud Flink в VK Data Platform.",
   "sectionTitle": "Создание экземпляра сервиса",
   "icon": "",
   "weight": 1,
-  "uuid": "2aab1fcc-4e26-4ede-a040-368f01d46cbc"
+  "uuid": "2aab1fcc-4e26-4ede-a040-368f01d46cbc",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

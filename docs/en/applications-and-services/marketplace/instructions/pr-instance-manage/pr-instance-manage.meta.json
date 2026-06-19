@@ -1,9 +1,14 @@
 {
-    "title": "Managing a service instance",
-      "shortDescription": "Managing connected service instances (SaaS and image-based)",
-      "metaDescription": "Marketplace VK Cloud: Operations for managing deployed SaaS and image-based service instances",
-    "sectionTitle": "Managing a service instance",
-    "icon": "",
-    "weight": 2,
-    "uuid": "e8c30e16-478b-4fde-9d38-36c580d4b841"
+  "title": "Managing a service instance",
+  "shortDescription": "Managing connected service instances (SaaS and image-based)",
+  "metaDescription": "Marketplace VK Cloud: Operations for managing deployed SaaS and image-based service instances",
+  "sectionTitle": "Managing a service instance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "e8c30e16-478b-4fde-9d38-36c580d4b841",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

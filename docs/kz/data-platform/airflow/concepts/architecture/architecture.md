@@ -1,27 +1,38 @@
+# {heading(Сервис архитектурасы)[id=airflow_architecture]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Airflow сервисі  [Cloud Containers](/kz/kubernetes) кластерлері негізінде жұмыс істейді және  келесі конфигурацияларда жайылтылуы мүмкін:
+Cloud Airflow сервисі {ifdef(public)} [Cloud Containers](/kz/kubernetes) кластерлері негізінде жұмыс істейді және {/ifdef} келесі конфигурацияларда жайылтылуы мүмкін:
 
-{include(/kz/_includes/_airflow.md)[tags=conf]}
+{include(../../../_includes/_airflow.md)[tags=conf]}
 
 Cloud Airflow жұмыс процестерін (workflow) бағытталған ациклді графтар (DAG — Directed Acyclic Graph) түрінде ұсынады. Графтар Python тіліндегі скрипттері бар DAG-файлдар болып табылады және DAG-файлдар қоймасында орналастырылады. Жұмыс процестерінің дұрыс орындалуы үшін DAG-файл атаулары бірегей болуы керек. DAG-файлдар қоймасы сервис архитектурасының орталық буыны болып табылады және барлық қалған компоненттердің өзара байланысын қамтамасыз етеді.
 
 Cloud Airflow сервисі архитектурасының компоненттері:
 
 - Веб-сервер (Web Server) — жұмыс процестерін басқаруға және визуализациялауға арналған веб-қолданба.
-- Метадеректер базасы (Metadata DB) — тапсырмалардың орындалу тарихын, тапсырмалардың өзін және жүйелік баптауларды сақтайтын қызметтік дерекқор, бұл жұмыс процестерінің келісімділігін қамтамасыз етеді. Cloud Airflow сервисінде  [PostgreSQL](/kz/dbs/dbaas/how-to-guides/tls-connect) дерекқоры пайдаланылады.
+- Метадеректер базасы (Metadata DB) — тапсырмалардың орындалу тарихын, тапсырмалардың өзін және жүйелік баптауларды сақтайтын қызметтік дерекқор, бұл жұмыс процестерінің келісімділігін қамтамасыз етеді. Cloud Airflow сервисінде {ifdef(public)} [PostgreSQL](/kz/dbs/dbaas/how-to-guides/tls-connect){/ifdef}{ifndef(public)} PostgreSQL {/ifndef} дерекқоры пайдаланылады.
 - Жоспарлағыш (Scheduler) — DAG-қа сәйкес тапсырмаларды іске қосуға жауап береді. Ол қандай тапсырмалар орындауға дайын екенін үнемі тексереді (әдепкі бойынша — әр минут сайын) және оларды көрсетілген Executor-ға тапсырмалар кезегі (Redis) арқылы орындауға жібереді.
 - Триггерер (Triggerer) — кейінге қалдырылған тапсырмаларды қайта жалғастыру үшін жоспарлағыштан сыртқы оқиғаларды күтетін архитектура компоненті.
 - Тапсырмалар кезегі (Redis) — жоспарлағыш пен орындаушылар арасындағы асинхронды алмасуға арналған кезек.
-- Орындаушы (Executor) — DAG-тен алынған тапсырмаларды  [worker-түйіндерде](/kz/kubernetes/k8s/concepts/architecture#cluster_topology) орындауға жауап береді. Орындаушы тапсырмаларды кезектен алып, олардың қайда және қалай іске қосылатынын анықтайды. Орындаушылардың әртүрлі түрлері болады. Cloud Airflow сервисінде CeleryExecutor типіндегі орындаушы, яғни Celery (Python) кітапханасына негізделген таратылған тапсырма орындаушысы қолданылады.
+- Орындаушы (Executor) — DAG-тен алынған тапсырмаларды {ifdef(public)} [worker-түйіндерде](/kz/kubernetes/k8s/concepts/architecture#cluster_topology){/ifdef}{ifndef(public)} worker-түйіндерде {/ifndef} орындауға жауап береді. Орындаушы тапсырмаларды кезектен алып, олардың қайда және қалай іске қосылатынын анықтайды. Орындаушылардың әртүрлі түрлері болады. Cloud Airflow сервисінде CeleryExecutor типіндегі орындаушы, яғни Celery (Python) кітапханасына негізделген таратылған тапсырма орындаушысы қолданылады.
 - DAG-файлдар қоймасы (DAG Directory) — жұмыс процестері сипатталған Python-файлдары бар каталог.
 - Сыртқы сервис (External Service) — тапсырмалар өзара әрекеттесетін сыртқы сервистер (мысалы, PostgreSQL, AWS S3, HTTP API).
 
+{ifndef(public)}
+Cloud Airflow компоненттерінің өзара әрекеттесу сызбасы {linkto(#airflow_schema)[text=%number суретте]} келтірілген.
 
-
+{caption(Сурет {counter(pic)[id=numb_airflow_schema]} — Cloud Airflow компоненттерінің өзара әрекеттесу сызбасы)[align=center;position=under;id=airflow_schema;number={const(numb_airflow_schema)}]}
 
 ![Airflow architecture](assets/AirFlow.png){params[noBorder=true]}
 
+{/caption}
+
+{/ifndef}
+
+{ifdef(public)}
+![Airflow architecture](assets/AirFlow.png){params[noBorder=true]}
+{/ifdef}
 
 Сервистің жұмыс істеуінің жалпы қағидаты:
 

@@ -1,26 +1,30 @@
+# {heading(LL NVMe дискілерін worker-түйіндерге қосу)[id=k8s-llnvme-disks]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[LL NVMe](/kz/computing/iaas/concepts/data-storage/disk-types#disk_types) (Low Latency NVMe) — [техникалық қолдау](/kz/contacts) арқылы сұрау бойынша жоғары өнімді конфигурацияларда VK Cloud платформасында қолжетімді [жылдам жауап беретін жергілікті дискілер](/kz/computing/iaas/concepts/data-storage/volume-sla#low_latency_nvme). VK Cloud платформасындағы барлық дискілердің ішінде олардың кідірісі ең аз: кепілдендірілген жауап беру уақыты 0,5 мс-тан аспайды. VK Cloud платформасындағы басқал дискілерден айырмашылығы, LL NVMe дискісі жергілікті болып табылады, яғни ол өзі қосылған ВМ орналасқан гипервизордың өзінде орналасады.
- 
-## {heading(Дайындық қадамдары)[id=prepare]}
+{linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=LL NVMe]} (Low Latency NVMe) — [техникалық қолдау](/kz/contacts) арқылы сұрау бойынша жоғары өнімді конфигурацияларда VK Cloud платформасында қолжетімді {linkto(../../../../computing/iaas/concepts/data-storage/volume-sla#iaas-volume-sla-llnvme)[text=жылдам жауап беретін жергілікті дискілер]}. VK Cloud платформасындағы барлық дискілердің ішінде олардың кідірісі ең аз: кепілдендірілген жауап беру уақыты 0,5 мс-тан аспайды. VK Cloud платформасындағы басқа дискілерден айырмашылығы, LL NVMe дискісі жергілікті болып табылады, яғни ол өзі қосылған ВМ орналасқан гипервизордың өзінде орналасады.
 
-1. Worker-түйіндерге LL NVMe дискісін қосуғал арналған конфигурацияғал қол жеткізу үшін [техникалық қолдауғал](/kz/contacts) хабарласыңыз. Бұл конфигурация мыналарды қамтиды:
-   
+## {heading(Дайындық қадамдары)[id=k8s-llnvme-disks-prepare]}
+
+1. Worker-түйіндерге LL NVMe дискісін қосуға арналған конфигурацияға қол жеткізу үшін [техникалық қолдауға](/kz/contacts) хабарласыңыз. Бұл конфигурация мыналарды қамтиды:
+
    - диск түрі: `ef-nvme`;
-   - осы диск түріне негізделген түйіндер тобына арналған [ВМ конфигурация қалыптауы](/kz/computing/iaas/concepts/vm/flavor).
-   
-    Келесі қадамдарғал өтпес бұрын осы конфигурацияғал қолжеткізуді күтіңіз.
-1. [Жасаңыз](../../instructions/create-cluster) кластерді, егер бұл әлі жасалмаса.
-1. VK Cloud жеке кабинетінде LL NVMe үшін конфигурацияғал негізделген ВМ-мен түйіндер тобын [қосыңыз](/kz/kubernetes/k8s/instructions/manage-node-group#add_group):
+   - осы диск түріне негізделген түйіндер тобына арналған {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=ВМ конфигурация қалыптауы]}.
+
+    Келесі қадамдарға өтпес бұрын осы конфигурацияға қолжеткізуді күтіңіз.
+
+{include(/kz/_includes/_create-test-cluster.md)}
+
+1. VK Cloud жеке кабинетінде LL NVMe үшін конфигурацияға негізделген ВМ-мен түйіндер тобын {linkto(../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=қосыңыз]}:
 
    - **Виртуалды машиналар санаты**: `ВМ с локальными дисками`.
    - **Node-түйіндерінің түрі**: Low Latency NVMe дискісіне арналған ВМ конфигурация қалыбы (`NVME` осындай қалып атауында болады).
    - Қалған баптауларды өзгертпей қалдырыңыз.
 
-1. [`kubectl` орнатып, баптаңыз](../../connect/kubectl), егер бұл әлі жасалмаса.
-1. [Кластерге](../../connect/kubectl#connect) `kubectl` көмегімен қосылыңыз.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=`kubectl` орнатып, баптаңыз]}, егер бұл әлі жасалмаса.
+1. {linkto(../../connect/kubectl#k8s-kubectl-connect)[text=Кластерге]} `kubectl` көмегімен қосылыңыз.
 
-## {heading(1. LL NVMe дискілері үшін сақтау класын (StorageClass) қосыңыз)[id=nvme_storageclass]}
+## {heading(1. LL NVMe дискілері үшін сақтау класын (StorageClass) қосыңыз)[id=k8s-llnvme-disks-nvme-storageclass]}
 
 1. `StorageClass` үшін, мысалы, `csi-ef-nvme.yaml` манифест файлын жасаңыз және оған келесі мазмұнды қосыңыз:
 
@@ -39,9 +43,9 @@
    ```
    Мұнда:
    - `type: ef-nvme` LL NVMe диск түрін сипаттайды. 
-   - `volumeBindingMode: WaitForFirstConsumer` [Persistent Volume Claim](/kz/kubernetes/k8s/reference/pvs-and-pvcs) (тұрақты томғал сұрау) жасау мен байланыстыруды [тұрақты томды](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) пайдаланатын pod жасалған сәтке дейін кейінге қалдыруғал мүмкіндік береді. Бұл Kubernetes pod түйінге жоспарланғаннан кейін диск жасауы үшін қажет.
+   - `volumeBindingMode: WaitForFirstConsumer` [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) пайдаланатын под жасалғанға дейін {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=тұрақты томды]} (persistent volume) құру мен байланыстыруды кейінге қалдыруға мүмкіндік береді. Бұл Kubernetes дискіні под түйінге жоспарланғаннан кейін жасауы үшін қажет.
 
-      Тұрақты томдарды байланыстыру баптаулары туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode).
+      Томдарды байланыстыру баптаулары туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode). 
    - `localToNode: "true"` дискілердің өздері байланыстырылатын ВМ-мен бір гипервизорларда орналасуын қамтамасыз етеді.
 
 1. Кластерде жасалған манифесті қолданыңыз:
@@ -50,19 +54,19 @@
    kubectl apply -f csi-ef-nvme.yaml
    ```
 
-## {heading(2. Қолданба жасаңыз)[id=nvme_app]}
+## {heading(2. Қолданба жасаңыз)[id=k8s-llnvme-disks-nvme-app]}
 
 LL NVMe дискілерін worker-түйіндерге қосу процесін зерттеу үшін `coffee` тестілік қолданбасын іске қосыңыз.
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
-1. [қосыңыз](/kz/kubernetes/k8s/instructions/manage-node-group#labels_taints) pod-тың LL NVMe дискілері бар түйіндерге орналасуын қамтамасыз ету үшін бұрын жасалған түйіндер тобына `disktype: ef-nvme` белгісін:
+1. Подтың LL NVMe дискілері бар түйіндерге орналасуын қамтамасыз ету үшін бұрын жасалған түйіндер тобына `disktype: ef-nvme` меткасын {linkto(../../instructions/manage-node-group#k8s-manage-node-group-labels-taints)[text=қосыңыз]}:
 
    - **Key**: `disktype`.
    - **Value**: `ef-nvme`.
    - Қалған баптауларды өзгертпей қалдырыңыз.
-   
+
    {note:warn}
-   Подты кейін басқал түйінге көшіру дискінің миграциясына және өнімділіктің уақытша төмендеуіне әкелуі мүмкін. Жұмыс жүктемелерін баптаған кезде тұрақты өнімділікті сақтау үшін LL NVMe дискілері бар подтарды түйіндер арасында көшіруден аулақ болуғал тырысыңыз.
+   Подты кейін басқа түйінге көшіру дискінің миграциясына және өнімділіктің уақытша төмендеуіне әкелуі мүмкін. Жұмыс жүктемелерін баптаған кезде тұрақты өнімділікті сақтау үшін LL NVMe дискілері бар подтарды түйіндер арасында көшіруден аулақ болуға тырысыңыз.
    {/note}
 
 1. Манифест файлын жасаңыз:
@@ -144,7 +148,7 @@ LL NVMe дискілерін worker-түйіндерге қосу процесі
      selector:
        app: coffee
    ```
-   
+
    {/cut}
 
 1. Манифест негізінде қажетті Kubernetes ресурстарын жасаңыз:
@@ -168,38 +172,31 @@ LL NVMe дискілерін worker-түйіндерге қосу процесі
       ```text
       NAME                                       ...   STATUS   CLAIM                    STORAGECLASS   ...
       ...                                        ...   ...      ...                      ...            ...
-      <идентификатор постоянного тома>           ...   Bound    example-app/coffee-pvc   csi-ef-nvme    ...
+      <тұрақты том идентификаторы>               ...   Bound    example-app/coffee-pvc   csi-ef-nvme    ...
       ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-llnvme-disks-delete]}
 
-1. Егер жасалған Kubernetes ресурстары сізге енді қажет болмаса, оларды жойыңыз:
+Жұмыс істеп тұрған кластер тарификацияланады және есептеу ресурстарын тұтынады. Егер LL NVMe дискілерінің жұмысын тексеру үшін жасалған Kubernetes ресурстары сізге енді қажет болмаса, оларды жойыңыз:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+1. Жасалған `example-app` namespace кеңістігін және онымен байланысты ресурстарды жойыңыз:
 
+   {tabs}
+   {tab(Linux/macOS)}
    ```console
    kubectl delete ns example-app
-
    ```
+   {/tab}
 
-   </tabpanel>
-   <tabpanel>
-
+   {tab(Windows)}
    ```console
    kubectl delete ns example-app; `
    ```
+   {/tab}
+   {/tabs}
 
-   </tabpanel>
-   </tabs>
+1. {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=Жасаған]} тұрақты томды жойыңыз.
 
-1. [Жойыңыз](/kz/kubernetes/k8s/concepts/storage#reclaim_policies) жасалған тұрақты томды.
-
-1. Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
-
-   - [тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#stop), кейінірек пайдалану үшін;
-   - [жойыңыз](../../instructions/manage-cluster#delete_cluster) оны біржола.
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

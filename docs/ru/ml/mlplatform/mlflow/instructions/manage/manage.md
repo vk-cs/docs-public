@@ -1,29 +1,31 @@
-Управление инстансом MLflow доступно через личный кабинет VK Cloud. Удалить инстанс можно также с помощью [библиотеки Cloud ML Platform](../../../mlplatform-lib/lib-reference).
+# {heading(Управление инстансом MLflow)[id=mlplatform-jupyterhub-instructions-manage]}
 
-## {heading(Изменение типа виртуальной машины)[id=change-vm-type]}
+Управление инстансом MLflow доступно через личный кабинет {var(cloud)}. Удалить инстанс можно также с помощью [библиотеки Cloud ML Platform](../../../mlplatform-lib/lib-reference).
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+## {heading(Изменение типа виртуальной машины)[id=mlplatform-jupyterhub-instructions-manage-change-vm-type]}
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Изменить тип виртуальной машины**.
 1. В открывшемся окне выберите [категорию](/ru/computing/iaas/concepts/vm/flavor) виртуальных машин, чтобы отфильтровать список конфигураций ВМ.
 1. В поле **Тип виртуальной машины** выберите предустановленную конфигурацию ВМ (CPU и RAM).
 1. Нажмите кнопку **Сохранить**.
 
-## {heading(Изменение размера диска)[id=change-disk-size]}
+## {heading(Изменение размера диска)[id=mlplatform-jupyterhub-instructions-manage-change-disk-size]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Изменить размер диска**.
 1. В открывшемся окне измените размер диска. Минимальное значение — 30 ГБ.
 1. Нажмите кнопку **Сохранить**.
 
-## {heading(Остановка и запуск инстанса)[id=pause]}
+## {heading(Остановка и запуск инстанса)[id=mlplatform-jupyterhub-instructions-manage-pause]}
 
 Это групповая операция: при необходимости можно остановить или запустить сразу несколько инстансов, выбрав их с помощью флажков.
 
 Чтобы остановить инстанс:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Остановите инстанс одним из способов:
 
@@ -33,7 +35,7 @@
 
 Чтобы запустить инстанс:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Запустите инстанс одним из способов:
 
@@ -41,7 +43,7 @@
     - Выберите инстанс с помощью флажка, затем нажмите кнопку **Запустить**.
 1. Подтвердите действие.
 
-## {heading(Перезагрузка инстанса)[id=reload]}
+## {heading(Перезагрузка инстанса)[id=mlplatform-jupyterhub-instructions-manage-reload]}
 
 {note:info}
 Перезагрузка предполагает корректное завершение работы операционной системы ВМ инстанса (graceful shutdown).
@@ -51,7 +53,7 @@
 
 Чтобы перезагрузить инстанс:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Перезагрузите инстанс одним из способов:
 
@@ -59,7 +61,7 @@
     - Выберите инстанс с помощью флажка, затем нажмите кнопку **Перезагрузить**.
 1. Подтвердите действие.
 
-## {heading(Принудительный перезапуск инстанса)[id=force-reload]}
+## {heading(Принудительный перезапуск инстанса)[id=mlplatform-jupyterhub-instructions-manage-force-reload]}
 
 Если инстанс не отвечает, используйте принудительный перезапуск.
 
@@ -71,28 +73,28 @@
 
 Чтобы принудительно перезапустить инстанс:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Перезапустить принудительно**.
 1. Подтвердите действие.
 
-## {heading(Копирование ссылки на инстанс)[id=copy-link]}
+## {heading(Копирование ссылки на инстанс)[id=mlplatform-jupyterhub-instructions-manage-copy-link]}
 
 Вы можете поделиться ссылкой на инстанс с другими пользователями. По этой ссылке пользователи смогут открыть консоль инстанса и работать с ним.
 
 Чтобы поделиться ссылкой на инстанс:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Копировать ссылку на MLflow**.
 
 Ссылка будет скопирована в буфер обмена, она соответствует DNS-имени инстанса.
 
-## {heading(Удаление инстанса)[id=delete]}
+## {heading(Удаление инстанса)[id=mlplatform-jupyterhub-instructions-manage-delete]}
 
 {note:info}
 
-Если инстанс MLflow связан с MLflow Deploy, сначала [удалите инстанс MLflow Deploy](../../../deploymlflow/instructions/manage#delete).
+Если инстанс MLflow связан с MLflow Deploy, сначала [удалите инстанс MLflow Deploy](../../../deploymlflow/instructions/manage#mlflowdeploy-instructions-manage-delete).
 
 {/note}
 
@@ -102,7 +104,7 @@
 
 Это групповая операция: при необходимости можно удалить сразу несколько инстансов, выбрав их с помощью флажков.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Удалите инстанс одним из способов:
 
@@ -114,7 +116,7 @@
 
 {tab(Библиотека Cloud ML Platform)}
 
-Используйте метод [delete_instance](../../../mlplatform-lib/lib-reference#delete_instance).
+Используйте метод [delete_instance](../../../mlplatform-lib/lib-reference#mllib-lib-reference-delete_instance).
 
 {/tab}
 

@@ -4,5 +4,10 @@
   "metaDescription": "CDN сервисінің OpenAPI спецификациясы",
   "sectionTitle": "CDN",
   "icon": "",
-  "weight": 12
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

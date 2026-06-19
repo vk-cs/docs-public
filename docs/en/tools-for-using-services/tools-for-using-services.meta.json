@@ -13,5 +13,10 @@
       "partialPath": "/en/tools-for-using-services/account/concepts/projects"
     }
   ],
-  "uuid": "7c7b6dac-087f-4a51-8ab5-403e35eff0d9"
+  "uuid": "7c7b6dac-087f-4a51-8ab5-403e35eff0d9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

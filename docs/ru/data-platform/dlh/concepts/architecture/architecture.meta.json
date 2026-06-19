@@ -5,5 +5,10 @@
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "1eca4e9d-acdf-4077-9611-b6fd41635d53"
+  "uuid": "1eca4e9d-acdf-4077-9611-b6fd41635d53",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

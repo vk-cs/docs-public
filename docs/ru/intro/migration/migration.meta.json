@@ -1,6 +1,6 @@
 {
-  "title": "Миграция в VK Cloud",
-  "shortDescription": "Как перенести образ виртуальной машины или целой инфраструктуры в облако VK Cloud",
+  "title": "Миграция в {var(cloud)}",
+  "shortDescription": "Как перенести образ виртуальной машины в облако {var(cloud)}",
   "metaDescription": "Как перенести образ виртуальной машины или целой инфраструктуры в облако VK Cloud",
   "sectionTitle": "Миграция",
   "icon": "",
@@ -9,5 +9,15 @@
   "additionalUuids": [
     "3bdcf670-1dfd-430c-96c4-916aec85ac3c",
     "08eb411e-bd11-4307-9597-35a3f71113a1"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "shortDescription": "Бұлтты ДБ сервисін пайдалану сценарийлері",
   "metaDescription": "Бұлтты ДБ сервисін пайдалану сценарийлері",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

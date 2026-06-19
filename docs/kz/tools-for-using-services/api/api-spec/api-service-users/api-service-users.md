@@ -1,3 +1,5 @@
+# {heading(Қызметтік тіркелгі жазбалары)[id=api-spec-service-users]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 REST API Service Users [қызметтік тіркелгі жазбаларын](/kz/tools-for-using-services/account/concepts/service-accounts) басқаруды қолдайды:
@@ -10,10 +12,10 @@ REST API Service Users [қызметтік тіркелгі жазбаларын
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
 1. Егер бұл әлі жасалмаса, [екі факторлы аутентификацияны қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on).
-1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#api_arkyly_kolzhetimdilikti_belsendiru).
+1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack сервисі** блогынан **Service Users** endpoint-ін табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.com/service-users/`. пайдаланыңыз.
+1. **OpenStack сервисі** блогынан **Service Users** endpoint-ін табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.com/service-users/` пайдаланыңыз.
 1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token). Сұрауларды жіберу кезінде токенді тақырыпта пайдаланыңыз.
 
 {/cut}

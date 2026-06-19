@@ -4,5 +4,19 @@
   "metaDescription": "Networks and content delivery VK Cloud",
   "weight": 2,
   "icon": "",
-  "uuid": "ce8bcaec-762e-4918-be3d-9aae01680240"
+  "uuid": "ce8bcaec-762e-4918-be3d-9aae01680240",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

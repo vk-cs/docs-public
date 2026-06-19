@@ -5,5 +5,19 @@
   "sectionTitle": "Logging",
   "icon": "",
   "weight": 6,
-  "uuid": "6d2d06e6-12e5-4d29-9ea5-bb1253b35e92"
+  "uuid": "6d2d06e6-12e5-4d29-9ea5-bb1253b35e92",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

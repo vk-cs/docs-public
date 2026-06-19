@@ -10,5 +10,19 @@
     "71f0a8a2-c02b-438a-aef7-42dc1dcdb159",
     "f384b391-b248-4a71-96d4-838fc20f9971",
     "3def6a30-aa64-481e-810c-8080ea3eae34"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

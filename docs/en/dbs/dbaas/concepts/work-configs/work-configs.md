@@ -32,7 +32,7 @@ When increasing the disk size or scaling vertically, the changes are applied to 
 
 An instance of this configuration cannot be started, restarted, or stopped.
 
-## {heading(Multizone cluster)[id=multi-az]}
+## {heading(Multizone cluster)[id=dbaas-work-configs-multi-az]}
 
 {note:info}
 

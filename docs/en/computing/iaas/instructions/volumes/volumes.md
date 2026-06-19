@@ -1,4 +1,4 @@
-The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#create_disk), later [connect](#mount_disk) to the necessary VMs. For created disks, the [resizing](#change_disk_size) and [changing](#change_disk_type) disk type operations are available. Disks can be [moved between projects](#move_disk_to_another_project) and virtual machines, [disconnect from VM](#disconnecting_disk_from_vm), [make bootable](#changing_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_disk).
+The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#create_disk), later [connect](#iaas-vm-manage-mount-disk) to the necessary VMs. For created disks, the [resizing](#change_disk_size) and [changing](#change_disk_type) disk type operations are available. Disks can be [moved between projects](#move_disk_to_another_project) and virtual machines, [disconnect from VM](#disconnecting_disk_from_vm), [make bootable](#changing_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_disk).
 
 ## {heading(Creating disk)[id=create_disk]}
 
@@ -6,7 +6,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
 {note:info}
 
-Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#mount_disk) section to know how to create a disk for a specific VM.
+Read the [Managing VM](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-mount-disk) section to know how to create a disk for a specific VM.
 
 {/note}
 

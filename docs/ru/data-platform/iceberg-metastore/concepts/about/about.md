@@ -1,3 +1,5 @@
+# {heading(О сервисе)[id=iceberg_info]}
+
 Cloud Iceberg Metastore — компонент системы управления метаданными для таблиц в формате Apache Iceberg. 
 
 Cloud Iceberg Metastore:
@@ -16,11 +18,11 @@ Cloud Iceberg Metastore:
 
 1. В качестве компонента при создании следующих типов хранилищ данных:
 
-   - Озеро данных ([Data Lakehouse](/ru/data-platform/dlh/concepts/about)). Сервис используется для организации и управления большими объемами структурированных и неструктурированных данных в хранилище S3.
+   - Озеро данных {ifdef(public)} ([Data Lakehouse](/ru/data-platform/dlh/concepts/about)){/ifdef}{ifndef(public)} Data Lakehouse {/ifndef}. Сервис используется для организации и управления большими объемами структурированных и неструктурированных данных в хранилище S3.
    - Аналитическое хранилище данных (Data Warehouse). Сервис выполняет аналитические запросы к структурированным данным с оптимизацией через компактирование (уплотнение) и партиционирование (partitioning).
    - Облачное хранилище. Сервис интегрируется с хранилищем S3 и сервисами VK Data Platform.
 
 1. Организация ETL-процессов. Сервис ускоряет процессы за счет поддержки schema evolution и транзакционности.
 
-Другие сервисы ([Cloud Spark](/ru/data-platform/spark/concepts/about), [Cloud Trino](/ru/data-platform/trino/concepts/about), [Cloud Flink](/ru/data-platform/flink/concepts/about) и др.) используют Cloud Iceberg Metastore для поиска и интерпретации таблиц Apache Iceberg.
+Другие сервисы ({linkto(../../../spark/concepts/about#spark_info)[text=Cloud Spark]}, {linkto(../../../trino/concepts/about#trino_info)[text=Cloud Trino]}{ifdef(public)}, {linkto(../../../flink/concepts/about#flink_info)[text=Cloud Flink]}{/ifdef} и др.) используют Cloud Iceberg Metastore для поиска и интерпретации таблиц Apache Iceberg.
 

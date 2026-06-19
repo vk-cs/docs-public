@@ -5,5 +5,10 @@
   "sectionTitle": "Information security",
   "icon": "",
   "weight": 4,
-  "uuid": "fbd4750d-5096-43c0-aae0-b34f47a3d69a"
+  "uuid": "fbd4750d-5096-43c0-aae0-b34f47a3d69a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

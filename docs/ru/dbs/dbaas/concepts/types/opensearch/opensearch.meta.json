@@ -1,9 +1,14 @@
 {
-    "title": "OpenSearch",
-      "shortDescription": "",
-      "metaDescription": "Cloud Databases в VK Cloud: пакет поиска и аналитики с открытым исходным кодом OpenSearch",
-    "sectionTitle": "OpenSearch",
-    "icon": "",
-    "weight": 4,
-    "uuid": "b32d30f6-1c7d-48d0-90a5-eabbc04b6c18"
+  "title": "OpenSearch",
+  "shortDescription": "",
+  "metaDescription": "Cloud Databases в VK Cloud: пакет поиска и аналитики с открытым исходным кодом OpenSearch",
+  "sectionTitle": "OpenSearch",
+  "icon": "",
+  "weight": 4,
+  "uuid": "b32d30f6-1c7d-48d0-90a5-eabbc04b6c18",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,14 @@
   "metaDescription": "Kubernetes",
   "weight": 6,
   "icon": "",
-  "uuid": "40be0877-dd27-49dd-a1b3-3466d3392779"
+  "uuid": "40be0877-dd27-49dd-a1b3-3466d3392779",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

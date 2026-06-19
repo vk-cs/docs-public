@@ -1,13 +1,15 @@
-[Cloud Trino](/ru/data-platform/trino/concepts/about) – это массивно-параллельный аналитический SQL-движок для обработки больших объемов данных из разных источников. Он позволяет:
+# {heading(Cloud Trino в архитектуре Data Lakehouse)[id=dlh_trino]}
+
+{linkto(../../../../trino/concepts/about#trino_info)[text=Cloud Trino]} – это массивно-параллельный аналитический SQL-движок для обработки больших объемов данных из разных источников. Он позволяет:
 
 - выполнять SQL-запросы на чтение параллельно из нескольких источников и хранилищ;
 - организовывать ETL- и ELT-пайплайны без использования специализированных сервисов в архитектуре DLH.
 
-Cloud Trino позволяет переносить аналитическую нагрузку из дорогих в обслуживании и трудно масштабируемых [корпоративных хранилищ](/ru/data-platform/dlh/concepts/compare/dwh) (например, на базе Greenplum) в более дешевые [озера данных](/ru/data-platform/dlh/concepts/compare/data-lake) и [DLH](/ru/data-platform/dlh/concepts/compare/dlh).
+Cloud Trino позволяет переносить аналитическую нагрузку из дорогих в обслуживании и трудно масштабируемых {linkto(../../compare/dwh#dlh_dwh)[text=корпоративных хранилищ]} (например, на базе Greenplum) в более дешевые {linkto(../../compare/data-lake#dlh_data-lake)[text=озера данных]} и {linkto(../../compare/dlh#dlh_dlh)[text=DLH]}.
 
-В [архитектуре Data Lakehouse](/ru/data-platform/dlh/concepts/architecture) компонент выполняет следующие функции:
+В {linkto(../../architecture#dlh_architecture)[text=архитектуре Data Lakehouse]} компонент выполняет следующие функции:
 
-- Запрос данных из источников по [PULL-модели](../../architecture#data_processing_models) (для простых сценариев).
+- Запрос данных из источников по {linkto(../../architecture#dlh_data_processing_models)[text=PULL-модели]} (для простых сценариев).
 - Выполнение через API Apache Iceberg операций чтения и записи данных в объектном S3-хранилище.
 - Балансировка входящего потока SQL-запросов от источников и потребителей в DLH.
 - Публикация информации об источниках и структуре данных DLH во внешнем каталоге метаданных для управления данными и отслеживания их происхождения.

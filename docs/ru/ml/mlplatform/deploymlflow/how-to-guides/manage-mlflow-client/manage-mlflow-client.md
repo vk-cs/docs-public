@@ -1,7 +1,8 @@
+# {heading(Развертывание ML-моделей с помощью MLflow Client)[id=mlflowdeploy-htg-manage-ml]}
 
-Управляйте инстансами MLflow Deploy с помощью MLflow Deployment Client — предустановленной python-библиотеки в JupyterHub от VK Cloud.
+Управляйте инстансами MLflow Deploy с помощью MLflow Deployment Client — предустановленной python-библиотеки в JupyterHub от {var(cloud)}.
 
-## Перед началом работы
+## {heading(Перед началом работы)[id=mlflowdeploy-htg-manage-ml-before-work]}
 
 1. [Создайте](../../../jupyterhub/instructions/create) инстанс JupyterHub.
 2. [Создайте](../../../mlflow/instructions/create) инстанс MLflow.
@@ -15,19 +16,19 @@
 
 {/note}
 
-## Подготовка ML-модели
+## {heading(Подготовка ML-модели)[id=mlflowdeploy-htg-manage-ml-prepare-mlmodel]}
 
 1. [Подключитесь](../../../jupyterhub/instructions/connect) к инстансу JupyterHub.
 2. Перейдите в директорию **tutorials**.
 
-   В состав JupyterHub от VK Cloud включены обучающие Jupyter-ноутбуки: `mlflow_demo.ipynb` и `mlflow_deploy_demo.ipynb`.
+   В состав JupyterHub от {var(cloud)} включены обучающие Jupyter-ноутбуки: `mlflow_demo.ipynb` и `mlflow_deploy_demo.ipynb`.
 
 3. Подготовьте тестовую ML-модель:
    1. Нажмите два раза на `mlflow_demo.ipynb`.
    2. В открывшемся окне нажмите на клетку с примером кода и выберите в меню **Run → Run Selected Cells**.
    3. Повторите операцию для всех клеток с кодом.
 
-## Управление инстансом
+## {heading(Управление инстансом)[id=mlflowdeploy-htg-manage-ml-instance-manage]}
 
 Чтобы пройти весь сценарий обучающего Jupyter-ноутбука:
 
@@ -37,7 +38,7 @@
 
 Разберем подробнее проводимые операции с развертыванием сервера и docker-контейнера.
 
-### Создание MlflowClient
+### {heading(Создание MlflowClient)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-client]}
 
 Создайте MlflowClient из Tracking модуля MLflow для получения URI ML-модели. URI понадобится далее для развертывания ML-модели. В примере приведено обращение к ML-модели по URI.
 
@@ -61,9 +62,9 @@ from mlflow.deployments import get_deploy_client
 client = get_deploy_client('vk-cloud-mlplatform')
 ```
 
-### Создание endpoint
+### {heading(Создание endpoint)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-endpoint]}
 
-`endpoint` в терминологии VK Cloud MLflow Deploy — это ВМ, сконфигурированная как сервер развертывания.
+`endpoint` в терминологии {var(cloud)} MLflow Deploy — это ВМ, сконфигурированная как сервер развертывания.
 
 ```python
 deploy_server_name = "deploy_server_one"
@@ -80,7 +81,7 @@ client.create_endpoint(name=deploy_server_name)
 - `mid — advanced 8-8` (8 ядер, 8 гигабайт RAM);
 - `high — advanced 16-16` (16 ядер, 16 гигабайт RAM).
 
-### Получение списка и статуса серверов
+### {heading(Получение списка и статуса серверов)[id=mlflowdeploy-htg-manage-ml-instance-manage-get-server-info]}
 
 Сервер развертывания готов для работы после смены статуса `CREATING` на `RUNNING`. Обычно подготовка сервера развертывания занимает около пяти-десяти минут.
 
@@ -94,9 +95,9 @@ client.list_endpoints()
 client.get_endpoint(deploy_server_name)
 ```
 
-### Создание deployment
+### {heading(Создание deployment)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-deployment]}
 
-`deployment` в терминологии VK Cloud MLflow Deploy — это запущенный docker-контейнер с ML-моделью на сервере развертывания.
+`deployment` в терминологии {var(cloud)} MLflow Deploy — это запущенный docker-контейнер с ML-моделью на сервере развертывания.
 
 ```python
 deployment_name="test_deployment"
@@ -105,7 +106,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 `port_out` можно не указывать, будет выбран первый свободный в диапазоне от `62000` до `65000`. Запуск ML-модели обычно занимает менее минуты.
 
-### Получение списка и статуса deployment
+### {heading(Получение списка и статуса deployment)[id=mlflowdeploy-htg-manage-ml-instance-manage-get-deployment-info]}
 
 1. Выведите список запущенных ML-моделей на сервере развертывания:
 
@@ -126,13 +127,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.predict(deploy_server_name, deployment_name, data)
    ```
 
-### Создание deployment, доступного по публичному DNS
+### {heading(Создание deployment, доступного по публичному DNS)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-dnsdeployment]}
 
 1. Задайте имя пользователя и пароль.
 
    {note:info}
 
-   Рекомендуется задавать реквизиты, отличные от учетных данных личного кабинета VK Cloud или параметров авторизации на инстансе JupyterHub.
+   Рекомендуется задавать реквизиты, отличные от учетных данных личного кабинета {var(cloud)} или параметров авторизации на инстансе JupyterHub.
 
    {/note}
 
@@ -170,7 +171,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.predict(deploy_server_name, auth_deployment_name, data)
    ```
 
-### Удаление deployment
+### {heading(Удаление deployment)[id=mlflowdeploy-htg-manage-ml-instance-manage-delete-deployment]}
 
 Удалите deployment с сервера развертывания, обращаясь по имени сервера и deployment:
 
@@ -178,13 +179,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 client.delete_deployment(deploy_server_name, deployment_name)
 ```
 
-### {heading(Удаление сервера развертывания)[id=delete_deploy_server]}
+### {heading(Удаление deployment)[id=mlflowdeploy-htg-manage-ml-instance-manage-delete_deploy_server]}
 
 ```python
 client.delete_endpoint(deploy_server_name)
 ```
 
-### Краткий список методов
+### {heading(Краткий список методов)[id=mlflowdeploy-htg-manage-ml-instance-manage-methods]}
 
 ```python
 from mlflow.deployments import get_deploy_client

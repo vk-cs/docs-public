@@ -4,5 +4,19 @@
   "metaDescription": "WordPress үшін доменді өзгерту және SSL сертификаттарын баптау",
   "sectionTitle": "WordPress сервисі үшін доменді өзгерту",
   "icon": "",
-  "weight": 16
+  "weight": 16,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

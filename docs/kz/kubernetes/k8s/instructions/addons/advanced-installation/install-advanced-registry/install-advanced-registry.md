@@ -1,10 +1,12 @@
+# {heading(Docker Registry)[id=k8s-install-advanced-registry]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Дайындық кезеңдері
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-registry-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
 
-1. Docker-образдарды сақтау үшін пайдаланылатын VK Object Storage бакетін [жасаңыз](/kz/storage/s3/instructions/buckets/create-bucket).
+1. Docker-образдарды сақтау үшін пайдаланылатын VK Object Storage бакетін [жасаңыз](../../../../../../storage/s3/instructions/buckets/create-bucket).
 
    Жасау кезінде мыналарды таңдаңыз:
 
@@ -16,9 +18,9 @@
 1. Осы бакетке қол жеткізу үшін кілт қосыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Жобаны таңдаңыз.
    1. **Объектілік сақтау → Бакеттер** бөліміне өтіңіз.
@@ -43,17 +45,19 @@
 
    Пәрмен шығысын (`<логин>:<зашифрованный пароль>` форматында) жазып алыңыз.
 
-1. [Floating IP-мекенжайын қосыңыз](/kz/networks/vnet/instructions/ip/floating-ip#add) немесе бұрыннан бар байланыстырылмаған Floating IP-мекенжайын [табыңыз](/kz/networks/vnet/instructions/ip/floating-ip#view).
+1. {linkto(../../../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add)[text=Floating IP-мекенжайын қосыңыз]} немесе бұрыннан бар байланыстырылмаған Floating IP-мекенжайын {linkto(../../../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-view)[text=табыңыз]}.
 
    Осы IP-мекенжайын жазып алыңыз. Ол Docker тізіліміне қол жеткізу үшін пайдаланылады.
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-registry-install]}
 
 {note:warn}
-Аддонды орнату кезінде ол үшін [стандартты жүктеме теңгергіші](/kz/networks/balancing/concepts/load-balancer#zhukteme_tengergishterinin_turleri) жасалады. Теңгергішті пайдалану [тарифтеледі](/kz/networks/vnet/tariffication).
+
+Аддонды орнату кезінде ол үшін {linkto(../../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме теңгергіші]} жасалады. Теңгергішті пайдалану {linkto(../../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
+
 {/note}
 
-Аддон үшін [орнатудың бірнеше нұсқасы](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді:
+Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді:
 
 - стандартты орнату;
 - бөлінген worker-түйіндерге орнату.
@@ -65,9 +69,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -80,7 +84,7 @@
       - қосымша атауын;
       - аддон орнатылатын аттар кеңістігінің атауын.
 
-   1. [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu) өңдеңіз.
+   1. {linkto(#k8s-install-advanced-registry-edit-code)[text=аддонды баптау кодын]} өңдеңіз.
 
       {note:warn}
 
@@ -93,17 +97,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Дұрыс берілмеген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -122,10 +126,10 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
-1. [Тізілімге қол жеткізу деректерін алыңыз](#tizilimge_kosylu).
+1. {linkto(#k8s-install-advanced-registry-connect)[text=Тізілімге қол жеткізу деректерін алыңыз]}.
 
 {/tab}
 
@@ -134,9 +138,9 @@
 1. Егер әлі жасалмаса, аддонды орнату үшін бөлінген worker-түйіндер тобын дайындаңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -144,9 +148,9 @@
 
    1. Кластерде аддондар орналастырылатын бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-      Егер мұндай топ жоқ болса — [оны қосыңыз](../../../manage-node-group#add_group).
+      Егер мұндай топ жоқ болса — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-   1. Егер әлі жасалмаса, осы түйіндер тобы үшін [мыналарды орнатыңыз](../../../manage-node-group#labels_taints):
+   1. Егер әлі жасалмаса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=мыналарды орнатыңыз]}:
 
       - **Белгі (label)**: `addonNodes` кілті, `dedicated` мәні.
       - **Шектеу (taint)**: `NoSchedule` әсері, `addonNodes` кілті, `dedicated` мәні.
@@ -158,9 +162,9 @@
 1. Аддонды орнатыңыз:
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -173,14 +177,14 @@
       - қосымша атауын;
       - аддон орнатылатын аттар кеңістігінің атауын;
 
-   1. [аддонды баптау кодын](#ornatu_kezinde_addondy_baptau_kodyn_ondeu) өңдеңіз.
+   1. {linkto(#k8s-install-advanced-registry-edit-code)[text=аддонды баптау кодын]} өңдеңіз.
 
    1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
       {tabs}
-      
+
       {tab(Ерекшеліктер)}
-            
+
       ```yaml
       tolerations:
         - key: "addonNodes"
@@ -192,9 +196,9 @@
       Бұл ерекшелікті `tolerations` өрісі үшін орнатыңыз.
 
       {/tab}
-      
+
       {tab(Түйін селекторлары)}
-      
+
       ```yaml
       nodeSelector:
         addonNodes: dedicated
@@ -203,7 +207,7 @@
       Бұл селекторды `nodeSelector` өрісі үшін орнатыңыз.
 
       {/tab}
-      
+
       {/tabs}
 
       {note:warn}
@@ -217,17 +221,17 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
-   1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+
+   1. Егер әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) ресурсын;
       - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) дереккөзін;
       - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) дереккөзін.
 
-      Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
+      Қажет болса, сілтемелер бойынша берілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз. Мысалы, `vkcs_kubernetes_addon` ресурсын өзгерту арқылы аддонды баптау кодын өңдей аласыз.
 
       {note:warn}
       Дұрыс берілмеген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
@@ -249,17 +253,17 @@
 
    {/tabs}
 
-1. [Тізілімге қол жеткізу деректерін алыңыз](#tizilimge_kosylu).
+1. {linkto(#k8s-install-advanced-registry-connect)[text=Тізілімге қол жеткізу деректерін алыңыз]}.
 
 {/tab}
 
 {/tabs}
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-registry-edit-code]}
 
 {note:info}
 
-- Аддонды баптау кодын өңдеу кезінде [бұрын алынған](#daiyndyk_kezenderi) мәліметтерді пайдаланыңыз.
+- Аддонды баптау кодын өңдеу кезінде {linkto(#k8s-install-advanced-registry-prepare)[text=бұрын алынған]} мәліметтерді пайдаланыңыз.
 - Өрістер сипаттамасымен бірге аддонды баптау кодының толық нұсқасы [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml) сайтында қолжетімді.
 
 {/note}
@@ -273,7 +277,7 @@
      htpasswd: "<логин>:<зашифрованный пароль>"
    ```
 
-1. Docker-образдарды сақтауғал арналған бакетке қол жеткізу деректемелерін:
+1. Docker-образдарды сақтауға арналған бакетке қол жеткізу деректемелерін:
 
    ```yaml
    secrets:
@@ -297,9 +301,9 @@
      loadBalancerIP: <выбранный Floating IP-адрес>
    ```
 
-Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
+Кодты өңдегеннен кейін {linkto(k8s-install-advanced-registry-install)[text=аддонды орнатуды жалғастырыңыз]}.
 
-## Тізілімге қосылу
+## {heading(Тізілімге қосылу)[id=k8s-install-advanced-registry-connect]}
 
 1. Аддонды орнату кезінде баптау кодында пайдаланылған деректерді жазып алыңыз:
 
@@ -307,4 +311,4 @@
    - Құпиясөз.
    - Тізілімнің IP-мекенжайы. Docker тізілімінің URL мекенжайы келесі түрде болады: `<IP-адрес>:5000`.
 
-1. [Docker тізіліміне қосылыңыз](../../../../connect/docker-registry).
+1. {linkto(../../../../connect/docker-registry#k8s-docker-registry)[text=Docker тізіліміне қосылыңыз]}.

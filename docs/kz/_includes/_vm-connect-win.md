@@ -16,13 +16,13 @@
 VK Cloud сіз өз доменіңізді делегирлей алатын [DNS-серверлерін](/kz/networks/dns/instructions/publicdns) ұсынады.
 {/note}
 
-Егер виртуалды машинаға RDP арқылы қосылу мүмкін болмаса немесе қолжетімсіз болса, [VNC-консольді](/kz/computing/iaas/instructions/vm/vm-console#vnc_konsoli) пайдаланыңыз.
+Егер виртуалды машинаға RDP арқылы қосылу мүмкін болмаса немесе қолжетімсіз болса, [VNC-консольді](/kz/computing/iaas/instructions/vm/vm-console#vnc_konsol) пайдаланыңыз.
 
 ## {counter(vm_win)}. Тіркелгі деректерін дайындаңыз
 
 1. [Әдепкі бойынша жасалған](/kz/computing/iaas/concepts/oper-system#default_account) ОЖ пайдаланушысының атын біліңіз.
 1. ОЖ-ге кіру үшін [құпиясөзді орнатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#password) және пайдаланушы аты мен құпиясөзді жазып алыңыз.
-1. Егер құпиясөз жоғалған болса, оны [қалпына келтіріңіз](/kz/computing/iaas/instructions/vm/vm-manage#password) немесе [қайта жаңғыртыңыз](/kz/computing/iaas/instructions/vm/vm-manage#kupiyasozdi_kalpyna_keltiru).
+1. Егер құпиясөз жоғалған болса, оны [қалпына келтіріңіз](/kz/computing/iaas/instructions/vm/vm-manage#password) немесе [қайта жаңғыртыңыз](/kz/computing/iaas/instructions/vm/vm-manage#vosstanovlenie_parolya).
 
 ## {counter(vm_win)}. ВМ-ге қосылыңыз
 

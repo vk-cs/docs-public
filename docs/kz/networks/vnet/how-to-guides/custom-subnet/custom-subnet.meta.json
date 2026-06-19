@@ -4,5 +4,15 @@
   "metaDescription": "DNS, DHCP, шлюзсіз және еркін маскасы бар ішкі желіні қалай құруға болады",
   "sectionTitle": "Пайдаланушы параметрлері бар ішкі желіні құру",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

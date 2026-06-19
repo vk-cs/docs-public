@@ -1,0 +1,17 @@
+{
+  "title": "Жекелік DNS",
+  "shortDescription": "Жекелік желілерде орналастырылған DNS аймақтарын басқару",
+  "metaDescription": "VK Cloud-тағы жекелік DNS — платформаның жоба желілерінде жұмыс істейтін DNS серверінің функционалдығы",
+  "sectionTitle": "Жекелік DNS",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  },
+  "uuid": ""
+}

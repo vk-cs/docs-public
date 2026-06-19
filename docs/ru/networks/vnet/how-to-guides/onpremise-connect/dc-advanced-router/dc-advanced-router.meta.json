@@ -1,9 +1,14 @@
 {
-  "title": "Подключение к VK Cloud через сеть Cloud Direct Connect",
-  "shortDescription": "Как организовать передачу данных между инфраструктурой On-premises и платформой VK Cloud, используя выделенное подключение и продвинутый маршрутизатор",
+  "title": "Подключение к {var(cloud)} через сеть Cloud Direct Connect",
+  "shortDescription": "Как организовать передачу данных между инфраструктурой On-premises и платформой {var(cloud)}, используя выделенное подключение и продвинутый маршрутизатор",
   "metaDescription": "Как организовать передачу данных между инфраструктурой On-premises и платформой VK Cloud, используя выделенное подключение и продвинутый маршрутизатор",
-  "sectionTitle": "Подключение к VK Cloud через сеть Cloud Direct Connect",
+  "sectionTitle": "Подключение к {var(cloud)} через сеть Cloud Direct Connect",
   "icon": "",
   "weight": 4,
-  "uuid": "00861a2b-ce87-4b92-9d67-f6552fbafcd3"
+  "uuid": "00861a2b-ce87-4b92-9d67-f6552fbafcd3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

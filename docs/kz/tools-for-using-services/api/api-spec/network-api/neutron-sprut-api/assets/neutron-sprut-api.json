@@ -6318,11 +6318,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "mtu": {
             "type": "integer",
@@ -6387,11 +6387,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "port_security_enabled": {
             "type": "boolean",
@@ -6577,11 +6577,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "port_security_enabled": {
             "type": "boolean",
@@ -6718,11 +6718,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           }
         }
       },
@@ -6872,11 +6872,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "created_at": {
             "type": "string",
@@ -6935,11 +6935,11 @@
         "properties": {
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "floating_network_id": {
             "type": "string",
@@ -7033,11 +7033,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "name": {
             "type": "string",
@@ -7276,11 +7276,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "network_id": {
             "type": "string",
@@ -7345,11 +7345,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "name": {
             "type": "string",
@@ -7458,11 +7458,11 @@
         "properties": {
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "name": {
             "type": "string",
@@ -7807,11 +7807,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "name": {
             "type": "string",
@@ -7841,11 +7841,11 @@
         "properties": {
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "name": {
             "type": "string",
@@ -7905,11 +7905,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "security_group_id": {
             "type": "string",
@@ -9331,12 +9331,12 @@
         "properties": {
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "example": "842e5331461347b491fbd0d584c4b523"
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
             "example": "842e5331461347b491fbd0d584c4b523"
           }
         }
@@ -9692,11 +9692,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "auth_algorithm": {
             "type": "string",
@@ -9791,11 +9791,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "auth_algorithm": {
             "type": "string",
@@ -9965,11 +9965,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "auth_algorithm": {
             "type": "string",
@@ -10074,11 +10074,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "auth_algorithm": {
             "type": "string",
@@ -10289,11 +10289,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "admin_state_up": {
             "type": "boolean",
@@ -10356,11 +10356,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "subnet_id": {
             "type": "string",
@@ -10439,11 +10439,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "created_at": {
             "type": "string",
@@ -10500,11 +10500,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           }
         }
       },
@@ -10638,11 +10638,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "created_at": {
             "type": "string",
@@ -10776,11 +10776,11 @@
           },
           "tenant_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "project_id": {
             "type": "string",
-            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта"
+            "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта"
           },
           "admin_state_up": {
             "type": "boolean",

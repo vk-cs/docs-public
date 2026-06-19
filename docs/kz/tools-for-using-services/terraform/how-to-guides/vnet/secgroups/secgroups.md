@@ -1,3 +1,5 @@
+# {heading(Қауіпсіздік топтарын жасау және баптау)[id=terraform-secgroups]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Мақалада Cloud Network сервисінде Terraform көмегімен қауіпсіздік топтарын жасау және баптау мысалдары келтірілген:
@@ -26,7 +28,7 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) желі мен қауіпсіздік топтарын жасауға жеткілікті ресурстар бар екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, [квоталарды ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, [квоталарды ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Егер бұл әлі жасалмаса, [Terraform-ды орнатып, провайдерді баптаңыз](../../../quick-start).
 
@@ -51,7 +53,7 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
   1. Топта 22-порт үшін TCP хаттамасы бойынша кіріс трафикке рұқсат беретін ереже жасалады.
   1. Ереже `network.tf` файлына қосылған портпен байланыстырылады.
 
-  {include(/kz/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
+  {include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
 
 {/tab}
 
@@ -62,7 +64,7 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
   1. `security_group` қауіпсіздік тобы жасалады.
   1. Топта барлық порттар үшін UDP хаттамасы бойынша кіріс трафикке рұқсат беретін ереже жасалады.
 
-  {include(/kz/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
+  {include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
 
 {/tab}
 
@@ -73,19 +75,19 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
   1. `security_group` қауіпсіздік тобы жасалады.
   1. Топта барлық кіріс трафикке рұқсат беретін ереже жасалады.
 
-  {include(/kz/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
+  {include(../../../../../_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
 
 {/tab}
 
 {tab(Алдын ала бапталған топтар)}
 
-Файлда жобаға [алдын ала бапталған қауіпсіздік топтарын](/kz/networks/vnet/concepts/traffic-limiting#secgroups) қосуға арналған конфигурация сипатталған.
+Файлда жобаға [алдын ала бапталған қауіпсіздік топтарын](/kz/networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups) қосуға арналған конфигурация сипатталған.
 
 {note:warn}
 Егер олар жобада бұрыннан бар болса, ережелерді өзгертпеңіз және алдын ала бапталған қауіпсіздік топтарын Terraform арқылы жасамаңыз.
 {/note}
 
-  {include(/kz/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
+  {include(../../../../../_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
 {/tab}
 
@@ -106,7 +108,7 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
 
   - `port_id = vkcs_networking_port.example.id`: порт идентификаторы `vkcs_networking_port` ресурсы жасалғаннан кейін алынады.
   - `port_id = data.vkcs_networking_port.example.id`: порт идентификаторы `vkcs_networking_port` дереккөзінен алынады.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: VK Cloud жеке кабинетінде немесе Openstack CLI арқылы алынған [порттар тізімінен](/kz/networks/vnet/instructions/ports#porttar_tizimin_zhne_olar_turaly_akparatty_karau) алынған идентификатор көрсетілген.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетінде немесе Openstack CLI арқылы алынған [порттар тізімінен](/kz/networks/vnet/instructions/ports#vnet-ports-view) алынған идентификатор көрсетілген.
 
   {/cut}
 
@@ -124,7 +126,7 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
 
   - `port_id = vkcs_networking_port.example.id`: қауіпсіздік тобының идентификаторы `vkcs_networking_secgroup` ресурсы жасалғаннан кейін алынады.
   - `port_id = data.vkcs_networking_port.example.id`: қауіпсіздік тобының идентификаторы `vkcs_networking_secgroup` дереккөзінен алынады.
-  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: VK Cloud жеке кабинетінде немесе Openstack CLI арқылы алынған [қауіпсіздік топтары тізімінен](/kz/networks/vnet/instructions/secgroups#view_secgroups) алынған идентификатор көрсетілген.
+  - `port_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетінде немесе Openstack CLI арқылы алынған [қауіпсіздік топтары тізімінен](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-view) алынған идентификатор көрсетілген.
 
   {/cut}
 
@@ -155,11 +157,11 @@ Terraform конфигурациясының `secgroup.tf` файлын жаса
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 4. Конфигурацияның қолданылғанын тексеріңіз
+## {heading({counter(tf-secgroups)}. Конфигурацияның қолданылғанын тексеріңіз)[id=terraform-secgroups-check]}
 
 Желі мен инфрақұрылымның сәтті жасалғанына көз жеткізіңіз:
 
-1. VK Cloud [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз. Қауіпсіздік тобы жасалғанына және мысалда қосылған барлық ережелерді қамтитынына көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-secgroups-delete]}

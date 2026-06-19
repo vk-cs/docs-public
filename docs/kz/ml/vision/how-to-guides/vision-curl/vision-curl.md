@@ -1,23 +1,13 @@
+# {heading(Curl пайдалану)[id=vision-htg-vision-curl]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Автокөлік нөмірлері
+## {heading(Автонөмірлер)[id=vision-htg-vision-curl-autonumbers]}
 
 Сұрау:
 
 ```console
-curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx"       \
-   -F file_0=@examples/car_number1.jpg                                                             \
-   -F file_1=@examples/x5.png                                                                      \
-   -F meta='{                                                                                      \
-                "mode":["car_number"],                                                             \
-                "images":[                                                                         \
-                   {                                                                               \
-                     "name":"file_1"                                                               \
-                   },                                                                              \
-                   {                                                                               \
-                      "name":"file_0"                                                              \
-                   }]                                                                              \
-             }' 
+curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx"          -F file_0=@examples/car_number1.jpg                                                                -F file_1=@examples/x5.png                                                                         -F meta='{                                                                                                      "mode":["car_number"],                                                                             "images":[                                                                                            {                                                                                                    "name":"file_1"                                                                                  },                                                                                                 {                                                                                                     "name":"file_0"                                                                                 }]                                                                                           }' 
 ```
 
 Жауап:
@@ -56,13 +46,13 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oaut
 }
 ```
 
-## Объектілер+сахналар
+## {heading(Объектілер+сахналар)[id=vision-htg-vision-curl-objects-scenes]}
 
 ```console
 curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/car_number1.jpg  -F file_1=@examples/x5.png  -F meta='{"mode":["object", "scene"],"images":[{"name":"file_1"}, {"name":"file_0"}]}'
 ```
 
-## Персоналар
+## {heading(Персоналар)[id=vision-htg-vision-curl-persons]}
 
 ```console
 curl -k -v "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/friends1.jpg  -F file_1=@examples/rachel-green.jpg -F meta='{"images":[{"name":"file_1"}, {"name":"file_0"}], "space":"1"}'

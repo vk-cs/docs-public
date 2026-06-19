@@ -4,5 +4,20 @@
   "metaDescription": "SDN Sprut-қа көшу туралы жиі қойылатын сұрақтарға жауаптар",
   "sectionTitle": "Сұрақтар мен жауаптар",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "uuid": "41aa5cdf-6e4a-4725-8139-0803dd89a2ed",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

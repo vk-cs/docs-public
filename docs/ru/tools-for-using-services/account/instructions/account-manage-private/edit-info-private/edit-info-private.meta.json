@@ -1,0 +1,18 @@
+{
+  "title": "Изменение профиля",
+  "shortDescription": "Изменение пароля и личных данных пользователя",
+  "metaDescription": "Как изменить пароль и данные в профиле пользователя аккаунта VK Private Cloud.",
+  "sectionTitle": "Изменение профиля",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

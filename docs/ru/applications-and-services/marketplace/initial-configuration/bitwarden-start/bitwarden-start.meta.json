@@ -5,5 +5,10 @@
   "sectionTitle": "Развертывание Bitwarden",
   "icon": "",
   "weight": 21,
-  "uuid": "6fa28981-bc4c-4520-ac34-1665e0fbffb5"
+  "uuid": "6fa28981-bc4c-4520-ac34-1665e0fbffb5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,14 @@
 {
-    "title": "HTTP/2 support",
-      "shortDescription": "Overview of HTTP/2 support features",
-      "metaDescription": "Overview of HTTP/2 support features.",
-    "sectionTitle": "HTTP/2 support",
-    "icon": "",
-    "weight": 1,
-    "uuid": "ad9ee911-e7f3-458c-8c33-92bec7646d70"
+  "title": "HTTP/2 support",
+  "shortDescription": "Overview of HTTP/2 support features",
+  "metaDescription": "Overview of HTTP/2 support features.",
+  "sectionTitle": "HTTP/2 support",
+  "icon": "",
+  "weight": 2,
+  "uuid": "ad9ee911-e7f3-458c-8c33-92bec7646d70",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

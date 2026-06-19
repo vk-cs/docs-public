@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Тұжырымдамалар)[id=desktops-concepts]}
 
-VK Cloud ішіндегі Cloud Desktop сервисінің жұмыс істеу қағидаттары мен құрылымының сипаттамасы.
+{ifdef(public)}
+{var(cloud)} ішіндегі Cloud Desktop сервисінің жұмыс істеу қағидаттары мен құрылымының сипаттамасы.
+{/ifdef}

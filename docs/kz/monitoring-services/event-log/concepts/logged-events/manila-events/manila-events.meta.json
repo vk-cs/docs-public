@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Audit-ке файлдық қоймалар сервисі жіберетін оқиғалар",
   "sectionTitle": "Manila компонентінің оқиғалары",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

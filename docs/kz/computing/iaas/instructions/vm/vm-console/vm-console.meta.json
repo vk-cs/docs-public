@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud – OpenStack Console, VNC-консоль, ВМ хабарламалар журналы, ВМ хабарламалар логтары",
   "sectionTitle": "ВМ диагностикасы",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Мониторинг және логтау",
+  "shortDescription": "Логтар мен қауіпсіздік оқиғаларын жинау",
+  "metaDescription": "Мониторинг және логтау",
+  "sectionTitle": "Мониторинг және логтау",
+  "weight": 18,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

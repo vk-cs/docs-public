@@ -1,9 +1,23 @@
 {
-    "title": "Managing worker node group",
-      "shortDescription": "How to manage Kubernetes worker node groups using management console or Terraform",
-      "metaDescription": "",
-    "sectionTitle": "Managing worker node group",
-    "icon": "",
-    "weight": 3,
-    "uuid": "a45f5d9a-12a5-43d3-a073-c604c1c90be2"
+  "title": "Managing worker node group",
+  "shortDescription": "How to manage Kubernetes worker node groups using management console or Terraform",
+  "metaDescription": "",
+  "sectionTitle": "Managing worker node group",
+  "icon": "",
+  "weight": 3,
+  "uuid": "a45f5d9a-12a5-43d3-a073-c604c1c90be2",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

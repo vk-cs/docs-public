@@ -1,3 +1,5 @@
+# {heading(Kubernetes кластерін жасаңыз және онда қолданбаны орналастырыңыз)[id=onboarding-kubernetes]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл нұсқаулық [Cloud Containers](/kz/kubernetes/k8s) сервисімен жұмысты бастауға және оның мүмкіндіктерімен танысуға көмектеседі.
@@ -13,4 +15,4 @@
     1. Орналастырылған қолданбаларға Ingress-контроллер арқылы қолжетімділік бересіз.
     1. Бұл қолданбалардың шынымен жұмыс істейтініне көз жеткізесіз.
 
-{include(/kz/_includes/_kubernetes.md)}
+{include(../../../../_includes/_kubernetes.md)}

@@ -1,9 +1,14 @@
 {
-    "title": "Создание инстанса MLflow",
-      "shortDescription": "Как создать новый инстанс MLflow",
-      "metaDescription": "Как создать новый инстанс MLflow",
-    "sectionTitle": "Создание инстанса MLflow",
-    "icon": "",
-    "weight": 1,
-    "uuid": "20fd6fcb-54fb-4216-8e53-f162a1840504"
+  "title": "Создание инстанса MLflow",
+  "shortDescription": "Как создать новый инстанс MLflow",
+  "metaDescription": "Как создать новый инстанс MLflow",
+  "sectionTitle": "Создание инстанса MLflow",
+  "icon": "",
+  "weight": 1,
+  "uuid": "20fd6fcb-54fb-4216-8e53-f162a1840504",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Using the catalog of all VK Cloud services to quickly search and navigate to the required service.",
   "sectionTitle": "Catalog of services",
   "weight": 3,
-  "uuid": "b5470d59-d6af-4ca0-bd78-c2b4775e0887"
+  "uuid": "b5470d59-d6af-4ca0-bd78-c2b4775e0887",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Connecting to JupyterHub",
-      "shortDescription": "How to connect to a JupyterHub instance",
-      "metaDescription": "Connecting to JupyterHub",
-    "sectionTitle": "Connecting to JupyterHub",
-    "icon": "",
-    "weight": 2,
-    "uuid": "edbad91d-ada5-4150-9493-f219828a4647"
+  "title": "Connecting to JupyterHub",
+  "shortDescription": "How to connect to a JupyterHub instance",
+  "metaDescription": "Connecting to JupyterHub",
+  "sectionTitle": "Connecting to JupyterHub",
+  "icon": "",
+  "weight": 2,
+  "uuid": "edbad91d-ada5-4150-9493-f219828a4647",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

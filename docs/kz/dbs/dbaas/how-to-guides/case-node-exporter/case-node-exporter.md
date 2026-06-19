@@ -1,3 +1,5 @@
+# {heading(Prometheus, Node exporter және Grafana көмегімен Redis мониторингі)[id=dbaas-case-node-exporter]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Prometheus](https://prometheus.io/) — процестерден (exporters) алынатын метрикаларды жинауға және сақтауға арналған сервер. Жиналған деректерді Prometheus веб-интерфейсі арқылы да, жеке визуализация құралдары арқылы да, мысалы, [Grafana](https://grafana.com/docs/grafana/latest/) арқылы қарауға болады.
@@ -10,11 +12,11 @@
 
 Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде өрістетіледі.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=dbaas-case-node-exporter-prepare]}
 
-1. [Виртуалды желі жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau), мысалы,
+1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Виртуалды желі жасаңыз]}, мысалы,
    `monitoring-net`.
-1. Prometheus сервері үшін [ВМ жасаңыз](/kz/computing/iaas/instructions/vm/vm-create):
+1. Prometheus сервері үшін {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=ВМ жасаңыз]}:
 
     - атауы: `Centos_8_5_Prometheus`;
     - операциялық жүйе: CentOS 8.4;
@@ -24,7 +26,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
    Жасалған инстанстың ішкі IP мекенжайы: `10.0.3.7`.
 
-1. [ДҚ инстансын жасаңыз](/kz/dbs/dbaas/instructions/create/create-single-replica):
+1. {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=ДҚ инстансын жасаңыз]}:
 
     - атауы: `Redis-5`;
     - ДҚБЖ: Redis 5;
@@ -33,13 +35,13 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
    Жасалған инстанстың ішкі IP мекенжайы: `10.0.3.13`.
 
-1. `monitoring-net` желісінде [Grafana 10 өрістетіңіз](/kz/applications-and-services/marketplace/initial-configuration/grafana-start).
+1. `monitoring-net` желісінде [Grafana 10 өрістетіңіз](../../../../applications-and-services/marketplace/initial-configuration/grafana-start).
 
-## 2. Prometheus орнатыңыз және баптаңыз
+## {heading(2. Prometheus орнатыңыз және баптаңыз)[id=dbaas-case-node-exporter-install-prometheus]}
 
 1. `Redis-5` ДҚ инстансы үшін **Node
-   exporter** кеңейтімін [орнатыңыз](/kz/dbs/dbaas/instructions/managing-extensions#keneytimdi_ornatu). Орнату кезінде `listen_port` = `9100` параметрін көрсетіңіз.
-1. `Centos_8_5_Prometheus` ВМ-не [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+   exporter** кеңейтімін {linkto(../../instructions/managing-extensions#dbaas-managing-extensions-install)[text=орнатыңыз]}. Орнату кезінде `listen_port` = `9100` параметрін көрсетіңіз.
+1. `Centos_8_5_Prometheus` ВМ-не {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=қосылыңыз]}.
 1. Prometheus-ті жүктеп алып, жүктелген архивті ашыңыз:
 
    ```console
@@ -121,7 +123,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
    Команда шығысында `active` күйі болуы керек.
 
-   {cut(Күтілетін шығару мысалы)}
+   {cut(Күтілетін шығыс мысалы)}
 
     ```console
     prometheus.service - Prometheus
@@ -158,16 +160,17 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
     - `http://87.239.239.239:9090/consoles/index.html.example` мекенжайы бойынша [үлгі графиктер жиындарын](https://prometheus.io/docs/visualization/consoles/) ашыңыз.
 
 1. (Опционалды) `Centos_8_5_Prometheus` ВМ-нен Floating
-   IP-мекенжайын [ажыратыңыз](/kz/networks/vnet/instructions/ip/floating-ip#disassociate).
+   IP-мекенжайын {linkto(
+   ../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate)[text=ажыратыңыз]}.
 
-## 3. Grafana жүйесінде деректерді визуализациялауды баптаңыз
+## {heading(3. Grafana жүйесінде деректерді визуализациялауды баптаңыз)[id=dbaas-case-node-exporter-grafana]}
 
 1. Grafana веб-интерфейсіне өтіңіз.
 1. Жаңа деректер көзін (data
    source) [қосыңыз](https://grafana.com/docs/grafana/v10.0/administration/data-source-management/): **Prometheus server URL** өрісінде `http://10.0.3.7:9090` көрсетіңіз.
 1. Алынатын деректерді визуализациялау үшін графиктер жиындарын [орнатыңыз](https://grafana.com/docs/grafana/v10.0/dashboards/build-dashboards/create-dashboard/), мысалы, дайын нұсқаны — [Node Exporter Full](https://grafana.com/grafana/dashboards/1860-node-exporter-full/) импорттау арқылы.
 
-## 4. (Опционалды) Сынақ жүктемесінен кейін мониторинг деректерін тексеріңіз
+## {heading(4. (Опционалды) Сынақ жүктемесінен кейін мониторинг деректерін тексеріңіз)[id=dbaas-case-node-exporter-check-data]}
 
 1. `Redis-5` ВМ-не өзіңізге ыңғайлы тәсілмен сынақ жүктемесін жасаңыз.
 
@@ -191,12 +194,13 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 
 1. Grafana графиктеріндегі көрсеткіштердің өзгергеніне көз жеткізіңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=dbaas-case-node-exporter-delete-resources]}
 
-Құрылған ресурстар тарифтелмейді және квоталарды жұмсайды. Егер олар енді қажет болмаса:
+Құрылған ресурстар тарификацияланады және квоталарды жұмсайды. Егер олар енді қажет болмаса:
 
-1. Өрістетілген виртуалды машиналарды [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-1. Grafana бар виртуалды машинаны [жойыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#servis_instansyn_zhoyu).
-1. `Centos_8_5_Prometheus` виртуалды машинасына тағайындалған Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
-1. Виртуалды IP мекенжайы тағайындалған портты [жойыңыз](/kz/networks/vnet/instructions/ports#portty_zhoyu).
-1. `monitoring-net` желісін [жойыңыз](/kz/networks/vnet/instructions/net#zhelini_zhoyu).
+1. Өрістетілген виртуалды машиналарды {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
+1. Grafana бар виртуалды машинаны [жойыңыз](../../../../applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-delete).
+1. `Centos_8_5_Prometheus` виртуалды машинасына тағайындалған Floating
+   IP-мекенжайын {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=жойыңыз]}.
+1. Виртуалды IP мекенжайы тағайындалған портты {linkto(../../../../networks/vnet/instructions/ports#vnet-ports-delete)[text=жойыңыз]}.
+1. `monitoring-net` желісін {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=жойыңыз]}.

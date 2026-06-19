@@ -3,5 +3,12 @@
   "shortDescription": "Сервис данасын жасау және дана мен оның компоненттерін басқару",
   "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse сервис даналарын қалай жасауға және басқаруға болатынын біліңіз",
   "sectionTitle": "Қадамдық нұсқаулар",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

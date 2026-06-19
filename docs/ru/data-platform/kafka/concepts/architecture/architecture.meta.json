@@ -1,9 +1,16 @@
 {
-    "title": "Архитектура сервиса",
-      "shortDescription": "Как устроен сервис Cloud Kafka на разных уровнях",
-      "metaDescription": "VK Cloud: архитектура сервиса Cloud Kafka на уровне чтения / записи сообщений и на уровне управления сервисом",
-    "sectionTitle": "Архитектура сервиса",
-    "icon": "",
-    "weight": 2,
-    "uuid": "4074869d-7781-4357-959a-9e44ae09f06b"
+  "title": "Архитектура сервиса",
+  "shortDescription": "Как устроен сервис Cloud Kafka на разных уровнях",
+  "metaDescription": "VK Data Platform: архитектура сервиса Cloud Kafka на уровне чтения / записи сообщений и на уровне управления сервисом",
+  "sectionTitle": "Архитектура сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "4074869d-7781-4357-959a-9e44ae09f06b",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

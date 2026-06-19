@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Дүкен үшін сервис сипаттамасын толтыру",
   "sectionTitle": "Дүкен үшін сервис сипаттамасын толтыру",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

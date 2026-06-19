@@ -1,124 +1,153 @@
+# {heading(Бакетке объектілерді қосу)[id=s3-instructions-upload-object]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Объект өлшеміне байланысты оны бакетке жүктеудің әртүрлі тәсілдері ұсынылады:
 
-- 1 ГБ-қа дейін — [стандартты жүктеу](#standard_upload) кез келген ыңғайлы тәсілмен: жеке кабинет, файл менеджерлері, CLI, SDK немесе API арқылы.
-- 1 ГБ-тан жоғары — CLI, SDK немесе API арқылы.
-- 32 ГБ-тан жоғары — тек [multipart жүктеу](#multipart_upload) CLI, SDK немесе API арқылы.
+- 1 ГБ-қа дейін — {linkto(#s3-instructions-upload-object-standard)[text=стандартты жүктеу]} кез келген ыңғайлы тәсілмен: жеке кабинет арқылы, файл менеджерлері, CLI, SDK немесе API арқылы.
+- 1 ГБ-тан жоғары — CLI, SDK немесе API.
+- 32 ГБ-тан жоғары — тек {linkto(#s3-instructions-upload-object-multipart)[text=құрамдас жүктеу]} CLI, SDK немесе API арқылы.
 
-Объект жүктелген кезде оған арнайы идентификатор — [объект кілті](../../../concepts/about#object_key) беріледі.
+Объект жүктелген кезде оған арнайы идентификатор — {linkto(../../../concepts/about#s3-concepts-about-object-key)[text=объект кілті]} тағайындалады.
 
 {note:err}
-
-Егер жүктелетін файлдың кілті бакеттегі объект кілтімен сәйкес келсе және бұл объект [қайта жазудан қорғалмаған](/kz/storage/s3/concepts/objects-lock) болса, VK Object Storage бар объектіні жаңасымен алмастырады.
-
+Егер жүктелетін файлдың кілті бакеттегі объект кілтімен сәйкес келсе және бұл объект {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=қайта жазудан қорғалмаған]} болса, {var(s3)} бар объектіні жаңасымен алмастырады.
 {/note}
 
-## {heading(Стандартты жүктеу)[id=standard_upload]}
+## {heading(Стандартты жүктеу)[id=s3-instructions-upload-object-standard]}
 
 {tabs}
 
-{tab(Жеке кабинет)}
+{tab(Жеке кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
-1. **Объектілік сақтау қоймасы** → **Бакеттер** бөліміне өтіңіз.
-1. Қажетті бакеттің атауын басыңыз немесе [жаңасын жасаңыз](../../buckets/create-bucket).
-1. (Опционалды) Объектіні сақтау үшін бума қосыңыз:
+{ifdef(public)}
 
-   1. **Жаңа бума** батырмасын басыңыз.
-   1. Буманың атауын енгізіңіз. Атауды таңдағанда [ұсыныстарды](../../../concepts/about#object_key_rules) ұстаныңыз, өйткені ол объект кілтінің бір бөлігіне айналады.
-   1. **Жасау** батырмасын басыңыз.
-   1. Жасалған бумаға өтіңіз.
-1. **Файл қосу** батырмасын басыңыз.
-1. Жүктелетін объектілер үшін қажетті [ACL баптауларын](../../../concepts/access/s3-acl#standard_acl) таңдаңыз.
-1. Бір немесе бірнеше файлды жүктеу үшін мына әрекеттердің бірін орындаңыз:
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. IAM Only жеке кабинетіне {linkto(../../iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+
+{/ifdef}
+
+1. **Объектілік қойма** → **Бакеттер** бөліміне өтіңіз.
+1. Қажетті бакет атауын басыңыз немесе {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=жаңасын]} жасаңыз.
+1. (Қосымша) Объектіні сақтау үшін қалта қосыңыз:
+
+   1. **Жаңа қалта** түймесін басыңыз.
+   1. Қалта атауын енгізіңіз. Қалта атауын таңдағанда {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=ұсынымдарды]} ұстаныңыз, өйткені ол объект кілтінің бір бөлігі болады.
+   1. **Жасау** түймесін басыңыз.
+   1. Жасалған қалтаға өтіңіз.
+
+1. **Файл қосу** түймесін басыңыз.
+1. Жүктелетін объектілер үшін қажетті {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=ACL баптауларын]} таңдаңыз.
+1. Бір немесе бірнеше файлды жүктеу үшін келесі әрекеттердің бірін орындаңыз:
 
    - Файлдарды жүктеу терезесіне сүйреп апарыңыз.
-   - **Файлдарды таңдау** батырмасын басып, файлдарды таңдаңыз.
+   - **Файлдарды таңдау** түймесін басып, файлдарды таңдаңыз.
 
-1. Файлдары бар буманы жүктеу үшін буманы жүктеу терезесіне сүйреп апарыңыз.
+1. Файлдары бар қалтаны жүктеу үшін қалтаны жүктеу терезесіне сүйреп апарыңыз.
 
-   Файлдардың жүктелу күйі экранның төменгі оң жақ бұрышында көрсетіледі, сол жерден жүктеу барысын қадағалауға немесе оны болдырмауға болады.
+   Файлдарды жүктеу күйі экранның төменгі оң жақ бұрышында көрсетіледі, сол жерде жүктеу барысын қадағалай аласыз немесе оны болдырмай аласыз.
 
 {/tab}
 
+{ifdef(s3,s3-pdf)}
+
+{tab(Файл менеджері)}
+
+{note:warn}
+Мұнда және әрі қарай біз «CloudBerry Explorer for Amazon S3» файл менеджерін қолданамыз. Егер сіз басқа файл менеджерін қолдансаңыз, интерфейс және оның элементтерінің атаулары осы нұсқаулықта қолданылғандардан өзгеше болуы мүмкін.
+{/note}
+
+Файл менеджеріңіздің сол жақ панелінде операциялық жүйеңіздің қалталарын ашыңыз. Файл менеджерінің оң жақ панелінде {var(s3)} ашып, қажетті бакетке өтіңіз.
+
+Файл менеджерінің сол жақ панелінде бакетке жүктеуді жоспарлап отырған файлды тауып, тінтуірмен оны оң жақ панельге сүйреп апарыңыз. Осылайша бакетте ОЖ-ңыздағы файлдың көшірмесі жасалады.
+
+Немесе файл менеджерінің сол жақ панеліндегі **Copy** немесе **Move** түймелерін пайдаланыңыз. Ол үшін қажетті файлды немесе файлдар тобын белгілеп, тиісті түймені басыңыз. «Copy» функциясы бакетте файлдың көшірмесін жасайды, «Move» функциясы файлды бакетке жылжытады.
+
+{/tab}
+
+{/ifdef}
+
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, [AWS CLI](../../../connect/s3-cli) орнатып, баптаңыз.
-
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
-
+1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
 1. Консольде команданы орындаңыз:
 
    ```console
    aws s3 cp <ПУТЬ> s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА>
-      --endpoint-url <URL_СЕРВИСА>
+      --endpoint-url <ENDPOINT_URL>
       --storage-class <КЛАСС_ХРАНЕНИЯ>
       --acl <НАСТРОЙКА_ACL>
    ```
 
    Мұнда:
 
-      - `<ПУТЬ>` — жергілікті файлға жол.
-      - `<ИМЯ_БАКЕТА>`  — объект жүктелетін бакет атауы.
-      - `<КЛЮЧ_ОБЪЕКТА>` — объектінің оған дейінгі жолды қоса алғандағы толық атауы. Атауларды таңдағанда [ұсыныстарды](../../../concepts/about#object_key_rules) ұстаныңыз.
-      - `<URL_СЕРВИСА>` — VK Object Storage сервисінің домені, ол аккаунттың [аймағына](../../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
+   - `<ПУТЬ>` — жергілікті файлға дейінгі жол.
+   - `<ИМЯ_БАКЕТА>` — объектіні жүктеу қажет бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса. Атауларды таңдағанда {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=ұсынымдарды]} ұстаныңыз.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
 
-         - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-         - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+   - (Қосымша) `<КЛАСС_ХРАНЕНИЯ>` — объектінің {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класын]} орнатады. Егер көрсетілмесе, сақтау класы бакеттен мұраға алынады. Қолжетімді мәндер:
 
-      - (Опционалды) `<КЛАСС_ХРАНЕНИЯ>` — объектінің [сақтау класын](../../../concepts/about#storage_class) орнатады. Егер көрсетілмесе, сақтау класы бакеттен мұраланады. Қолжетімді мәндер:
+     - `STANDARD` — Hotbox сақтау класына сәйкес келеді;
+     - `STANDARD_IA` — Icebox сақтау класына сәйкес келеді.
 
-         - `STANDARD` — Hotbox сақтау класына сәйкес келеді;
-         - `STANDARD_IA` — Icebox сақтау класына сәйкес келеді.
+   - (Қосымша) `<НАСТРОЙКА_ACL>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=ACL баптауларын]} орнатады. Қолжетімді мәндер:
 
-      - (Опционалды) `<НАСТРОЙКА_ACL>` — [ACL баптауын](../../../concepts/access/s3-acl#standard_acl) орнатады. Қолжетімді мәндер:
+     - `private` — баптау көрсетілмесе, әдепкі мән;
+     - `public-read`;
+     - `public-read-write`.
 
-         - `private` — егер баптау көрсетілмесе, әдепкі мән;
-         - `public-read`;
-         - `public-read-write`.
-
-{cut(Объектіні жасау командасының мысалы)}
+{cut(Объект жасау командасының мысалы)}
 
 Команда мысалы:
 
-   ```console
-   aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png
-      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
-      --storage-class STANDARD_IA
-      --acl public-read
-   ```
+```console
+aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png
+   --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   --storage-class STANDARD_IA
+   --acl public-read
+```
 
 Жауап мысалы:
 
-   ```console
-   upload: ../pictures/picture.png to s3://my-bucket/folder/my-picture.png
-   ```
+```console
+upload: ../pictures/picture.png to s3://my-bucket/folder/my-picture.png
+```
 {/cut}
 
-Объектілер мен файлдарды көшіру және жылжыту операцияларының толық сипаттамасы [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis) берілген.
+Объектілер мен файлдарды көшіру және жылжыту операцияларының толық сипаттамасы [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis) қолжетімді.
 
 {/tab}
 
 {tab(API)}
 
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
-
-1. [Біліңіз](https://kz.cloud.vk.com/app/project/endpoints) VK Object Storage сервисінің эндпоинтін.
-
-1. [Сұрау қолтаңбасын қалыптастырыңыз](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro) API-де аутентификация үшін.
-
-1. Объектіні бакетке жүктеу үшін [PutObject](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/object-api#upload) әдісін пайдаланыңыз.
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
+1. {var(s3)} сервисі үшін эндпоинтті [біліңіз](https://msk.cloud.vk.com/app/project/endpoints).
+   {ifdef(public)}
+1. API-де аутентификация үшін сұраудың {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=қолтаңбасын қалыптастырыңыз]}.
+   {/ifdef}
+1. Объектіні бакетке жүктеу үшін {linkto(../../../api/object#api-spec-s3-put-object)[text=PutObject]} әдісін пайдаланыңыз.
 
 {/tab}
 
 {tab(Golang SDK)}
 
-1. Егер әлі орнатылмаған болса, Go үшін [SDK](../../../connect/s3-sdk) орнатып, баптаңыз.
-
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
-
-2. Жобаңызға кодты қосыңыз:
+1. Егер Go үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
+1. Жобаңызға кодты қосыңыз:
 
    ```go
    package main
@@ -133,8 +162,8 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
-	   defaultRegion         = "us-east-1"
+	   vkCloudHotboxEndpoint = "https://hb.kz-ast.vkcloud-storage.ru"
+	   defaultRegion         = "kz-ast"
    )
 
    func main() {
@@ -180,92 +209,103 @@
 	   }
    }
    ```
-   `vkCloudHotboxEndpoint` айнымалысының мәні аккаунттың [аймағына](../../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
+   {ifdef(public)}  
+   `vkCloudHotboxEndpoint` және `defaultRegion` айнымалыларының мәндері аккаунттың [өңіріне](../../../../../tools-for-using-services/account/concepts/regions) сәйкес келуі керек:
 
-   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+   - `vkCloudHotboxEndpoint`:
 
-   `PutObject` командасы [aws-sdk-go кітапханасының ресми құжаттамасында](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject) толық сипатталған.
+      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — Мәскеу өңірі үшін;
+      - `kz-ast` — Қазақстан өңірі үшін.
+   {/ifdef}
+
+   `PutObject` командасы [aws-sdk-go кітапханасының ресми құжаттамасында](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject) егжей-тегжейлі сипатталған.
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Егер әлі орнатылмаған болса, Python үшін [SDK](../../../connect/s3-sdk) орнатып, баптаңыз.
-
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
-
+1. Егер Python үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
 1. Жобаңызға кодты қосыңыз:
 
-      ```python
-      import boto3
-      session = boto3.session.Session()
-      s3_client = session.client(
-         service_name = 's3',
-         endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru'
-         )
+   ```python
+   import boto3
+   session = boto3.session.Session()
+   s3_client = session.client(
+      service_name = 's3',
+      endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru'
+      )
 
-      test_bucket_name = 'boto3-test-bucket-name'
+   test_bucket_name = 'boto3-test-bucket-name'
 
-      #Загрузка данных из строки
-      s3_client.put_object(Body='TEST_TEXT_TEST_TEXT', Bucket=test_bucket_name, Key='test_file.txt')
+   #Загрузка данных из строки
+   s3_client.put_object(Body='TEST_TEXT_TEST_TEXT', Bucket=test_bucket_name, Key='test_file.txt')
 
-      #Загрузка локального файла
-      s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'copy_some_test_file.txt')
+   #Загрузка локального файла
+   s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'copy_some_test_file.txt')
 
-      #Загрузка локального файла в директорию внутри бакета
-      s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup_dir/copy_some_test_file.txt')
-      ```
+   #Загрузка локального файла в директорию внутри бакета
+   s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup_dir/copy_some_test_file.txt')
+   ```
+   {ifdef(public)}
+   `endpoint_url` айнымалысының мәні аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
 
-   `endpoint_url` айнымалысының мәні аккаунттың [аймағына](../../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
+   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+   {/ifdef}
 
-   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
-
-`put_object` және `upload_file` командалары boto3 кітапханасының [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) және [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file) әдістері жөніндегі ресми құжаттамада толық сипатталған.
+   `put_object` және `upload_file` командалары boto3 кітапханасының ресми құжаттамасында [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) және [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file) әдістері бойынша егжей-тегжейлі сипатталған.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Multipart жүктеу)[id=multipart_upload]}
+## {heading(Құрамдас жүктеу)[id=s3-instructions-upload-object-multipart]}
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, [AWS CLI](../../../connect/s3-cli) орнатып, баптаңыз. Шығыс пішімі ретінде JSON немесе YAML орнатыңыз, өйткені мәтіндік пішімдер multipart жүктеу командаларын орындау кезінде танылмайды.
-
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
-
-1. Бакетке жүктеу қажет файлды бөліктерге бөліңіз. Мысалы, Linux жүйелерінде мұны `split` командасының көмегімен жасауға болады.
-
-1. Multipart жүктеуді бастаңыз. Консольде команданы орындаңыз:
+1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз. Шығыс форматын JSON етіп орнатыңыз, өйткені мәтіндік форматтар құрамдас жүктеу командаларын орындау кезінде танылмайды.
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
+1. Бакетке жүктеу қажет файлды бөліктерге бөліңіз. Мысалы, Linux жүйелерінде мұны `split` командасы арқылы жасауға болады.
+1. Құрамдас жүктеуді инициализациялаңыз. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api create-multipart-upload
-      --bucket <ИМЯ_БАКЕТА>
-      --key <КЛЮЧ_ОБЪЕКТА>
-      --endpoint-url <URL_СЕРВИСА>
+   aws s3api create-multipart-upload \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --endpoint-url <ENDPOINT_URL>
    ```
 
    Мұнда:
 
-   - `<ИМЯ_БАКЕТА>` — объект жүктелетін бакет атауы.
-   - `<КЛЮЧ_ОБЪЕКТА>` — жасау үшін multipart жүктеу басталатын объектінің оған дейінгі жолды қоса алғандағы толық атауы. Атауларды таңдағанда [ұсыныстарды](../../../concepts/about#object_key_rules) ұстаныңыз.
-   - `<URL_СЕРВИСА>` — VK Object Storage сервисінің домені, ол аккаунттың [аймағына](../../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
+   - `<ИМЯ_БАКЕТА>` — объектіні жүктеу қажет бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — құрамдас жүктеу инициализацияланатын, жасалатын объектінің толық атауы, оған дейінгі жолды қоса. Атауларды таңдағанда {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=ұсынымдарды]} ұстаныңыз.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
 
-      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
 
-   Нәтижесінде жүктеу параметрлері бар жауап қайтарылады, оның ішінде multipart жүктеу идентификаторы — `UploadId` болады. Алынған идентификаторды сақтап қойыңыз, ол кейінгі командаларды орындау үшін қажет.
-
-   {cut(Multipart жүктеуді жасау командасының мысалы)}
+   {cut(Құрамдас жүктеуді жасау командасының мысалы)}
 
    Команда мысалы:
 
    ```console
-   aws s3api create-multipart-upload --bucket mybucket --key large.avi --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   aws s3api create-multipart-upload \
+      --bucket mybucket \
+      --key large.avi \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
    Жауап мысалы:
@@ -279,36 +319,36 @@
    ```
    {/cut}
 
-1. Файлдың бірінші бөлігін жүктеңіз. Консольді ашып, жүктелетін файл орналасқан директорияға өтіп, команданы орындаңыз:
+1. Файлдың бірінші бөлігін жүктеңіз. Консольді ашып, жүктеу үшін файл орналасқан директорияға өтіп, команданы орындаңыз:
 
    ```console
-   aws s3api upload-part
-      --bucket <ИМЯ_БАКЕТА>
-      --key <КЛЮЧ_ОБЪЕКТА>
-      --part-number <НОМЕР_ЧАСТИ>
-      --body <ИМЯ_ЧАСТИ>
-      --upload-id <ID_ЗАГРУЗКИ>
-      --endpoint-url <URL_СЕРВИСА>
+   aws s3api upload-part \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --part-number <НОМЕР_ЧАСТИ> \
+      --body <ИМЯ_ЧАСТИ> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
    ```
 
    Мұнда:
 
-   - `<НОМЕР_ЧАСТИ>` — бөліктер жиналатын реттіліктегі бөлік нөмірі. Бөліктерді жүктеу реті маңызды емес.
+   - `<НОМЕР_ЧАСТИ>` — бөліктің жиналатын реті бойынша нөмірі. Бөлікті жүктеу реті маңызды емес.
    - `<ID_ЗАГРУЗКИ>` — алдыңғы қадамда алынған жүктеу идентификаторы (`UploadId`).
 
-   Жүктеу сәтті аяқталса, жауапта жүктелген бөлікке арналған `ETag` қайтарылады. Алынған мәнді сақтап қойыңыз, ол объект жүктеуін аяқтау үшін қажет болады.
+   Сәтті жүктелген жағдайда жауапта жүктелген бөліктің `ETag` мәні қайтарылады. Алынған мәнді сақтаңыз, ол жүктеуді аяқтау үшін қажет болады.
 
    {cut(Файл бөлігін жүктеу командасының мысалы)}
 
    Команда мысалы:
 
    ```console
-   aws s3api upload-part
-      --bucket mybucket
-      --key large.avi
-      --part-number 1
-      --body large.avi.00.part
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+   aws s3api upload-part \
+      --bucket mybucket \
+      --key large.avi \
+      --part-number 1 \
+      --body large.avi.00.part \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -321,16 +361,16 @@
    ```
    {/cut}
 
-   Команданы файлдың әр бөлігі үшін орындаңыз.
+   Файлдың әр бөлігі үшін команданы орындаңыз.
 
 1. Файлдың барлық бөліктері жүктелгенін тексеріңіз. Ол үшін команданы орындаңыз:
 
    ```console
-   aws s3api list-parts
-      --bucket <ИМЯ_БАКЕТА>
-      --key <КЛЮЧ_ОБЪЕКТА>
-      --upload-id <ID_ЗАГРУЗКИ>
-      --endpoint-url <URL_СЕРВИСА>
+   aws s3api list-parts \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
    ```
 
    {cut(Команданы орындау мысалы)}
@@ -338,10 +378,10 @@
    Сұрау мысалы:
 
    ```console
-   aws s3api list-parts
-      --bucket mybucket
-      --key large.avi
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+   aws s3api list-parts \
+      --bucket mybucket \
+      --key large.avi \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -389,9 +429,9 @@
    ```
    {/cut}
 
-1. Ағымдағы директорияда JSON пішіміндегі файл жасап, онда файлдың әр бөлігі үшін `ETag` көрсетіңіз.
+1. Ағымдағы директорияда JSON форматындағы файл жасап, онда файлдың әр бөлігі үшін `ETag` мәнін көрсетіңіз.
 
-   {cut(JSON файл мазмұнының мысалы)}
+   {cut(JSON файлы мазмұнының мысалы)}
 
    ```json
    {
@@ -415,28 +455,28 @@
    ```
    {/cut}
 
-1. Multipart жүктеуді аяқтап, файл бөліктерін бір объектіге біріктіріңіз. Консольде команданы орындаңыз:
+1. Құрамдас жүктеуді аяқтап, файл бөліктерін объектіге біріктіріңіз. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api complete-multipart-upload
-      --multipart-upload file://<JSON-файл>
-      --bucket <ИМЯ_БАКЕТА>
-      --key <КЛЮЧ_ОБЪЕКТА>
-      --upload-id <ID_ЗАГРУЗКИ>
-      --endpoint-url <URL_СЕРВИСА>
+   aws s3api complete-multipart-upload \
+      --multipart-upload file://<JSON-файл> \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
    ```
 
-   Команда сәтті орындалса, жеке бөліктерден көрсетілген кілті бар объект жасалады.
+   Команда сәтті орындалған жағдайда, жеке бөліктерден көрсетілген кілті бар объект жасалады.
 
-   {cut(Multipart жүктеуді аяқтау командасының мысалы)}
+   {cut(Құрамдас жүктеуді аяқтау командасының мысалы)}
    Команда мысалы:
 
    ```console
-   aws s3api complete-multipart-upload
-      --multipart-upload file://fileparts.json
-      --bucket mybucket
-      --key large.avi
-      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH
+   aws s3api complete-multipart-upload \
+      --multipart-upload file://fileparts.json \
+      --bucket mybucket \
+      --key large.avi \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
@@ -452,31 +492,56 @@
    ```
    {/cut}
 
+1. Егер қандай да бір себеппен құрамдас жүктеуді болдырмау қажет болса, команданы орындаңыз:
+
+   ```console
+   aws s3api abort-multipart-upload \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — құрамдас жүктеу орындалған бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — құрамдас жүктеу инициализацияланған, жасалатын объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<ID_ЗАГРУЗКИ>` — құрамдас жүктеу жасалған кезде алынған жүктеу идентификаторы (`UploadId`).
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   Сәтті орындалған жағдайда команда жауап шығармайды, ал бұрын жүктелген файл бөліктерінің барлығы жойылады.
+
 {/tab}
 
 {tab(API)}
 
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
+1. Бакетке жүктеу қажет файлды бөліктерге бөліңіз. Мысалы, Linux жүйелерінде мұны `split` командасы арқылы жасауға болады.
+   {ifdef(public)}
+1. API-де аутентификация үшін сұраудың {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=эндпоинтін біліп, қолтаңбасын қалыптастырыңыз]}.
+   {/ifdef}
+1. {linkto(../../../api/multipart#api-spec-s3-create-multipart-upload)[text=CreateMultipartUpload]} сұрауы арқылы құрамдас жүктеуді инициализациялаңыз. Бұл кезеңде болашақ объектінің кілті жасалады және оның барлық пайдаланушы метадеректері қосылады. Жауапта келесі кезеңдер үшін қажет болатын `UploadId` жүктеу идентификаторы қайтарылады.
+1. Файлдың барлық бөліктерін бакетке жүктеңіз. Әр бөлікті жүктеу үшін {linkto(../../../api/multipart#api-spec-s3-upload-part)[text=UploadPart]} бөлек сұрауын жіберіңіз. Әр бөлік үшін нөмір көрсетіңіз. Нөмірлер қайталанбауы керек, әйтпесе соңғы жүктелген бөлік дәл сондай нөмірі бар алдыңғысын қайта жазады. {var(s3)} объектінің барлық бөліктерін олардың нөмірлері өсу ретімен жинайды.
 
-1. Бакетке жүктеу қажет файлды бөліктерге бөліңіз. Мысалы, Linux жүйелерінде мұны `split` командасының көмегімен жасауға болады.
+   Әр сұрауға жауапта жүктелген бөліктің `ETag` мәні қайтарылады. `ETag` мәнін және оған сәйкес бөлік нөмірін сақтаңыз.
 
-1. [Эндпоинтті біліп, сұрау қолтаңбасын қалыптастырыңыз](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro) API-де аутентификация үшін.
+1. Файлдың барлық бөліктері бакетке жүктелгенін тексеріңіз. Ол үшін {linkto(../../../api/multipart#api-spec-s3-list-parts)[text=ListParts]} сұрауын пайдаланыңыз.
 
-1. [CreateMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#initiate_multipart_upload) сұрауының көмегімен multipart жүктеуді бастаңыз. Бұл кезеңде болашақ объектінің кілті жасалып, оның барлық пайдаланушылық метадеректері қосылады. Жауапта жүктеу идентификаторы `UploadId` қайтарылады, ол multipart жүктеудің келесі кезеңдеріне қажет болады.
-
-1. Файлдың барлық бөліктерін бакетке жүктеңіз. Әр бөлікті жүктеу үшін [UploadPart](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#upload_part) бөлек сұрауын жіберіңіз. Әр бөлік үшін нөмірді көрсетіңіз. Нөмірлер қайталанбауы тиіс, әйтпесе соңғы жүктелген бөлік дәл сол нөмірі бар алдыңғысын қайта жазады. VK Object Storage объектінің барлық бөліктерін олардың нөмірлері өсу ретімен жинайды.
-
-   Әр сұрауға жауапта жүктелген бөліктің `ETag` мәні қайтарылады. `ETag` мәнін және оған сәйкес келетін бөлік нөмірін сақтап қойыңыз.
-
-1. Файлдың барлық бөліктері бакетке жүктелгенін тексеріңіз. Ол үшін [ListParts](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#list_parts) сұрауын пайдаланыңыз.
-
-1. [CompleteMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#complete_multipart_upload) сұрауының көмегімен жүктеуді аяқтап, объектіні жинаңыз.
+1. {linkto(../../../api/multipart#api-spec-s3-complete-multipart-upload)[text=CompleteMultipartUpload]} сұрауы арқылы жүктеуді аяқтап, объектіні жинаңыз.
 
 {/tab}
 
 {tab(Go SDK)}
 
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
 
 1. Жобаңызға кодты қосыңыз:
 
@@ -529,7 +594,7 @@
 
 {tab(Python SDK)}
 
-1. Егер әлі жасалмаған болса, [бакет жасаңыз](../../buckets/create-bucket).
+1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
 
 1. Жобаңызға кодты қосыңыз:
 

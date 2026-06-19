@@ -5,5 +5,15 @@
   "sectionTitle": "Лучшие практики по настройке резервного копирования",
   "icon": "",
   "weight": 5,
-  "uuid": "4419ca7a-62ec-4361-93c1-b4fcbe4cd07f"
+  "uuid": "4419ca7a-62ec-4361-93c1-b4fcbe4cd07f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

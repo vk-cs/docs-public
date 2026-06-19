@@ -4,5 +4,19 @@
   "metaDescription": "VictoriaMetrics VK Cloud: жобада сервисті өрістету",
   "sectionTitle": "VictoriaMetrics-ті өрістету",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

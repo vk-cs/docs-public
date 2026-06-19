@@ -1,3 +1,5 @@
+# {heading(MLflow Deploy)[id=mlflowdeploy]}
+
 MLflow Deploy — интегрированный с MLflow и JupyterHub сервис, позволяющий автоматически упаковывать ML-модели в Docker-контейнеры и делать их доступными по REST API.
 
 В разделе описаны принципы работы с сервисом MLflow Deploy, создание инстансов Mlflow Deploy и работа с ними.

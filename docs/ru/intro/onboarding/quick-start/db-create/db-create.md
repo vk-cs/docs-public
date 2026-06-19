@@ -4,13 +4,13 @@
 
 Начните работу с сервисом [Cloud Databases](/ru/dbs/dbaas/concepts/about) любым удобным способом:
 
-- Воспользуйтесь [инструкцией](#create_db_postgre) и создайте первую управляемую базу данных PostgreSQL, подключитесь к ней и выполните тестовые запросы.
-- Посмотрите [видео](#db_video), в которых будут созданы управляемые базы данных MySQL, PostgreSQL и ClickHouse в конфигурации Single.
+- Воспользуйтесь [инструкцией](#onboarding-db-create-postgre) и создайте первую управляемую базу данных PostgreSQL, подключитесь к ней и выполните тестовые запросы.
+- Посмотрите [видео](#onboarding-db-create-video), в которых будут созданы управляемые базы данных MySQL, PostgreSQL и ClickHouse в конфигурации Single.
 - Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/). В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
 
 {note:info}Инстанс БД потребляет вычислительные ресурсы и [тарифицируется](/ru/dbs/dbaas/tariffication).{/note}
 
-## {heading(Создайте управляемую БД PostgreSQL)[id=create_db_postgre]}
+## {heading(Создайте управляемую БД PostgreSQL)[id=onboarding-db-create-postgre]}
 
 Пройдя все шаги этой инструкции, вы:
 
@@ -26,9 +26,9 @@
 
 В качестве примера тестовых данных будет использован автоматически генерируемый набор данных, представляющий собой информацию от сенсоров интернета вещей (IoT): температуры и загрузки CPU. Подробнее про тестовый набор данных читайте в [документации Timescale](https://docs.timescale.com/tutorials/latest/simulate-iot-sensor-data/). Процедура генерации подобных наборов данных подробно [рассматривается в блоге Timescale](https://www.timescale.com/blog/how-to-create-lots-of-sample-time-series-data-with-postgresql-generate_series/).
 
-{include(/ru/_includes/_db-create.md)[tags=db_onboarding; level=+1]}
+{include(../../../../_includes/_db-create.md)[tags=db_onboarding; level=+1]}
 
-## {heading(Видеоинструкции)[id=db_video]}
+## {heading(Видеоинструкции)[id=onboarding-db-create-video]}
 
 {tabs}
 
@@ -58,13 +58,13 @@ ClickHouse используется преимущественно для ана
 
 {/tabs}
 
-## {heading(Обучающий курс)[id=courses_db]}
+## {heading(Обучающий курс)[id=onboarding-db-create-courses]}
 
 Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/).
 
 В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
 
-## Вопросы и ответы
+## {heading(Вопросы и ответы)[id=onboarding-db-create-faq]}
 
 {cut(Какие СУБД доступны в облаке?)}
 

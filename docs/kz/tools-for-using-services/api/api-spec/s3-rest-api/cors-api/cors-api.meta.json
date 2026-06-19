@@ -1,8 +1,14 @@
 {
   "title": "CORS",
-  "shortDescription": "",
-  "metaDescription": "VK Object Storage сервисі бакеттің CORS конфигурациясын басқаруға мүмкіндік береді. CORS конфигурациясын жүктеу үшін XML құжатын құру қажет. Тізім",
+  "shortDescription": "Бакеттерде кросс-домендік сұраулар (CORS) механизмінің конфигурациясын орнату, жою және қарау",
+  "metaDescription": "VK Object Storage бакеттерінде кросс-домендік сұраулар (CORS) механизмінің конфигурациясымен жұмыс істеуге арналған барлық қолжетімді әдістер: ағымдағы конфигурацияны алу (GetBucketCORS), конфигурацияны орнату (PutBucketCORS), конфигурацияны жою (DeleteBucketCORS)",
   "sectionTitle": "CORS",
   "icon": "",
-  "weight": 7
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

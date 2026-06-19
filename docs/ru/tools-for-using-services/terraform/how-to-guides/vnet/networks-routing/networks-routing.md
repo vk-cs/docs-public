@@ -1,3 +1,5 @@
+# {heading(Маршрутизация трафика между сетями)[id=terraform-networks-routing]}
+
 Далее приведен пример настройки маршрутизации между двумя сетями с помощью Terraform.
 
 Инфраструктура примера:
@@ -9,21 +11,20 @@
 - На маршрутизаторах настроены статические маршруты, ведущие к другой подсети через порт виртуальной машины.
 - Создано по виртуальной машине в каждой подсети. Виртуальная машина в публичной сети имеет Floating IP-адрес.
 
-  Эти машины используются для [проверки настройки маршрутизации между сетями](#5_proverte_rabotosposobnost_primera): успешный пинг между ними будет свидетельствовать о корректной настройке.
+  Эти машины используются для {linkto(#terraform-networks-routing-check[text=проверки настройки маршрутизации между сетями]}): успешный пинг между ними будет свидетельствовать о корректной настройке.
 
 ![Инфраструктура примера](assets/infrastructure-scheme.png){params[noBorder=true]}
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Перед началом работы
+## {heading(Перед началом работы)[id=terraform-networks-routing-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей и виртуальных машин. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. Убедитесь, что клиент OpenStack {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=установлен]}, и {linkto(../../../../cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
@@ -94,13 +95,13 @@
 
    {tab(availability_zone_name)}
 
-   Из документа, посвященного [зонам доступности](/ru/start/concepts/architecture#az).
+   Из документа, посвященного [зонам доступности](../../../../../start/concepts/architecture#architecture-az).
 
    {/tab}
 
    {/tabs}
 
-## 1. Создайте файлы с описанием базовой сетевой инфраструктуры
+## {heading({counter(tf-routing)}. Создайте файлы с описанием базовой сетевой инфраструктуры)[id=terraform-networks-routing-net-files]}
 
 1. Создайте файл конфигурации Terraform `common-public.tf`. В нем описываются:
 
@@ -163,7 +164,7 @@
    }
    ```
 
-## 2. Создайте файл с описанием инфраструктуры для виртуальной машины в роли маршрутизатора
+## {heading({counter(tf-routing)}. Создайте файл с описанием инфраструктуры для виртуальной машины в роли маршрутизатора)[id=terraform-networks-routing-infrastructure-file]}
 
 Создайте файл конфигурации Terraform `main.tf`. В нем описываются:
 
@@ -278,7 +279,7 @@ resource "vkcs_compute_floatingip_associate" "fip-router" {
 }
 ```
 
-## 3. Создайте файл с описанием тестовых виртуальных машин
+## {heading({counter(tf-routing)}. Создайте файл с описанием тестовых виртуальных машин)[id=terraform-networks-routing-vm-file]}
 
 Создайте файл конфигурации Terraform `test-vms.tf`. В нем описываются:
 
@@ -287,7 +288,7 @@ resource "vkcs_compute_floatingip_associate" "fip-router" {
   - `common-instance-public` в публичной подсети с Floating адресом. К такой виртуальной машине можно подключиться по SSH из интернета.
   - `common-instance-private` в приватной подсети. К такой виртуальной машине можно подключиться по SSH с другой виртуальной машины.
 
-  Эти виртуальные машины будут использоваться для [проверки работоспособности маршрутизации между двумя сетями](#5_proverte_rabotosposobnost_primera).
+  Эти виртуальные машины будут использоваться для {linkto(#terraform-networks-routing-check)[text=проверки работоспособности маршрутизации между двумя сетями]}.
 
 - Выводы ([output](https://developer.hashicorp.com/terraform/language/values/outputs)) Terraform с IP-адресами виртуальных машин.
 
@@ -379,7 +380,7 @@ output "common-instance-private-ip" {
 }
 ```
 
-## 4. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-routing)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-networks-routing-create]}
 
 1. Поместите созданные файлы конфигурации Terraform в одну директорию:
 
@@ -391,7 +392,6 @@ output "common-instance-private-ip" {
    - `test-vms.tf`.
 
 1. Перейдите в эту директорию.
-
 1. Выполните команду:
 
    ```console
@@ -414,11 +414,11 @@ output "common-instance-private-ip" {
    - `common-instance-public-ip`: IP-адрес виртуальной машины в публичной подсети.
    - `common-instance-public-floating-ip`: Floating IP-адрес виртуальной машины в публичной подсети.
 
-   Используйте эти IP-адреса при [проверке работоспособности примера](#5_proverte_rabotosposobnost_primera).
+   Используйте эти IP-адреса при {linkto(#terraform-networks-routing-check)[text=проверке работоспособности примера]}.
 
-## 5. Проверьте работоспособность примера
+## {heading({counter(tf-routing)}. Проверьте работоспособность примера)[id=terraform-networks-routing-check]}
 
-1. [Подключитесь по SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `common-instance-public`.
+1. {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь по SSH]} к виртуальной машине `common-instance-public`.
 
    Для подключения используйте:
 
@@ -445,12 +445,11 @@ output "common-instance-private-ip" {
    rtt min/avg/max/mdev = 0.875/1.139/1.815/0.391 ms
    ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-networks-routing-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 
 1. Перейдите в директорию с файлами конфигурации Terraform.
-
 1. Выполните команду:
 
    ```console

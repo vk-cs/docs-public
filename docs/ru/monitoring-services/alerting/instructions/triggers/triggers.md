@@ -1,4 +1,6 @@
-## {heading(Создание триггера)[id=triggers_add]}
+# {heading(Триггеры)[id=alerting-triggers]}
+
+## {heading(Создание триггера)[id=alerting-triggers-add]}
 
 Триггер определяет правило, которое применяется к значению метрики и условию уведомления.
 
@@ -6,7 +8,7 @@
 
 Чтобы создать триггер:
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Добавьте триггер одним из способов:
 
     - Через вкладку **Триггеры**:
@@ -30,27 +32,37 @@
 1. (Опционально) Укажите параметры нового канала уведомлений:
 
    - **Имя канала**: введите название для канала.
+   {ifdef(public)}
    - **Тип уведомлений**: выберите опцию `Email` или `SMS`.
+   {/ifdef}
    - **Получатель**: введите электронный адрес или телефон получателя уведомлений.
 
 1. Нажмите кнопку **Добавить канал**.
 1. Нажмите кнопку **Создать триггер**.
 
-## {heading(Редактирование триггера)[id=triggers_edit]}
+## {heading(Редактирование триггера)[id=alerting-triggers-edit]}
 
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Алертинг**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного триггера и выберите пункт **Изменить**.
+1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для нужного триггера и выберите пункт **Изменить**.
 1. Введите необходимые изменения.
 1. Нажмите кнопку **Сохранить**.
 
-## {heading(Запуск триггера)[id=triggers_start]}
+## {heading(Запуск триггера)[id=alerting-triggers-start]}
 
 Если триггер сработал более 100 раз в течение 24 часов, он автоматически отключается. Вы получите электронное письмо с рекомендациями.
 
-Наиболее распространенная причина частого срабатывания триггера — его неправильная настройка. Перед запуском триггера [проверьте](#triggers_add), что он настроен правильно.
+Наиболее распространенная причина частого срабатывания триггера — его неправильная настройка. Перед запуском триггера {linkto(#alerting-triggers-add)[text=проверьте]}, что он настроен правильно.
 
 Чтобы запустить триггер:
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Алертинг**.
-1. Нажмите ![more-icon](/ru/assets/more-icon.svg "inline") для нужного триггера, выберите пункт **Включить** и подтвердите действие.
+1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для нужного триггера, выберите пункт **Включить** и подтвердите действие.
+
+## {heading(Удаление триггера)[id=alerting-triggers-delete]}
+
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Мониторинг → Алертинг**.
+1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для нужного триггера и выберите пункт **Удалить**.
+1. Подтвердите удаление.

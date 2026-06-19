@@ -1,3 +1,5 @@
+# {heading(Сұрақтар мен жауаптар)[id=mlspark-faq]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {cut(master-түйін үшін қандай конфигурация пайдаланылады?)}
@@ -11,7 +13,7 @@ Master-түйін конфигурациясын кластердің жұмыс
 
 {cut(Кластерге kubectl немесе кітапхана арқылы қосылуға бола ма?)}
 
-Кластерге қосылу үшін VK Cloud жеке кабинетінде немесе Cloud ML Platform кітапханасында қолжетімділік токендерін пайдаланыңыз. Токендерді жасау процесі [Аутентификация және авторизация](/kz/ml/spark-to-k8s/ml-platform-library/authz) бөлімінде егжей-тегжейлі сипатталған.
+Кластерге қосылу үшін {var(cloud)} жеке кабинетінде немесе Cloud ML Platform кітапханасында қолжетімділік токендерін пайдаланыңыз. Токендерді жасау процесі {linkto(../ml-platform-library/authz#mlspark-library-authz)[text=Аутентификация және авторизация]} бөлімінде егжей-тегжейлі сипатталған.
 
 {note:err}
 
@@ -25,13 +27,13 @@ Spark кластеріне қосылу үшін kubectl қолданбаңыз 
 
 {cut(Spark History Server-ге қалай қол жеткізуге болады?)}
 
-[Нұсқаулықты](/kz/ml/spark-to-k8s/monitoring#spark_history_server_paydalanu) пайдаланыңыз.
+{linkto(../monitoring#mlspark-monitoring-spark-history-server)[text=нұсқаулықты]} пайдаланыңыз.
 
 {/cut}
 
 {cut(Бакетке қалай қол жеткізуге болады?)}
 
-Әдепкі бойынша Spark кластерінің кластермен бірге автоматты түрде жасалатын [VK Object Storage](/kz/ml/spark-to-k8s/instructions/buckets) бакетіне қолжетімділігі бар. Басқа бакеттерге қол жеткізу үшін [нұсқаулықты](/kz/storage/s3) пайдаланыңыз.
+Әдепкі бойынша Spark кластерінің кластермен бірге автоматты түрде жасалатын [VK Object Storage](/kz/storage/s3) бакетіне қолжетімділігі бар. Басқа бакеттерге қол жеткізу үшін {linkto(../instructions/buckets#mlspark-instructions-buckets)[text=нұсқаулықты]} пайдаланыңыз.
 
 {/cut}
 
@@ -40,9 +42,9 @@ Spark кластеріне қосылу үшін kubectl қолданбаңыз 
 Spark кластерлері әдепкі бойынша келесі сервистерге қосылған:
 
 - [Cloud Logging](/kz/monitoring-services/logging) — логтарды жинау және талдау.
-- [Cloud Alerting](/kz/monitoring-services/alerting) — VK Cloud сервистерінің негізгі метрикалары өзгерген кезде хабарламалар жіберу.
+- [Cloud Alerting](/kz/monitoring-services/alerting) — {var(cloud)} сервистерінің негізгі метрикалары өзгерген кезде хабарламалар жіберу.
 - [Cloud Monitoring](/kz/monitoring-services/monitoring) — метрикалардың кең жиынтығын пайдалана отырып, ресурстардың күйін бақылау.
 
-Толығырақ — [Кластер мониторингі](/kz/ml/spark-to-k8s/monitoring) мақаласында.
+Толығырақ — {linkto(../monitoring#mlspark-monitoring)[text=Кластер мониторингі]} мақаласында.
 
 {/cut}

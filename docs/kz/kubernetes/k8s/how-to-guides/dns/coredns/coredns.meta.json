@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Kubernetes кластері үшін СoreDNS ресурсын пайдаланып, домен мен IP мекенжайды кластердің DNS сервисіне қалай қосу керектігін біліңіз",
   "sectionTitle": "Статикалық DNS жазбаларын қосу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

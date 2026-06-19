@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud, Terraform, бөлінген worker-түйіндер және жылдам орнату үшін Kubernetes жүйесіне Vertical Pod Autoscaler (VPA) аддонын орнату бойынша қадамдық нұсқаулық",
   "sectionTitle": "Vertical Pod Autoscaler",
   "icon": "",
-  "weight": 13
+  "weight": 14,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

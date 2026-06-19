@@ -5,5 +5,10 @@
   "sectionTitle": "Setting up two-factor authentication",
   "icon": "",
   "weight": 3,
-  "uuid": "94010c9a-60e8-4f5b-b0fc-412917ce1f42"
+  "uuid": "94010c9a-60e8-4f5b-b0fc-412917ce1f42",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

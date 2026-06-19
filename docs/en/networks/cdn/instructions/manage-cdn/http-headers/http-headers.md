@@ -189,3 +189,60 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {/tab}
 
 {/tabs}
+
+## Configuring Allowed HTTP Methods
+
+The **Allowed HTTP Methods** option enables control over permitted HTTP request methods to a CDN resource. By default, the following methods are allowed: `GET`, `HEAD`, `OPTIONS`, `DELETE`. To enable `POST`, `PUT` and `PATCH` methods, contact [technical support](mailto:support@mcs.mail.ru).
+
+To configure the allowed methods:
+
+{tabs}
+
+{tab(Management console)}
+
+{include(/en/_includes/_open-cdn.md)}
+
+1. Go to the **HTTP-headers** tab.
+1. Enable the **Allowed HTTP Methods** tab.
+1. Select the methods that CDN resource has to process.
+1. Click **Save changes**.
+
+{/tab}
+
+{tab(API)}
+
+{include(/en/_includes/_api_cdn_create_change.md)}
+
+Specify the `allowedHttpMethods` parameter in the `options` block of a request body:
+
+- to enable the option specify `"enabled": true`; to disable — `"enabled": false`.
+- list methods that should be available in the `value` parameter.
+
+Example request:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "allowedHttpMethods": {
+            "enabled": true,
+            "value": [
+                "GET",
+                "HEAD"
+            ]
+        },
+    }
+}'
+```
+
+{/tab}
+
+{/tabs}
+
+If the origin server does not recognize the specified method, a response with the code 501 (Not Implemented) will be returned. If the origin server knows the method but it is not permitted on the CDN resource, a response with the code 405 (Method Not Allowed) will be returned.

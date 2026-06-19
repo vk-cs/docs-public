@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud платформасындағы Spark сервисі: үлкен деректерді өңдеуге арналған Apache Spark Operator және PaaS Kubernetes негізіндегі шешім",
   "sectionTitle": "VK Cloud платформасындағы Spark",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

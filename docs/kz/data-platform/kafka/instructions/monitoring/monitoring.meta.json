@@ -1,0 +1,14 @@
+{
+  "title": "Standalone ішіндегі мониторинг",
+  "shortDescription": "Standalone ішінде метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында Cloud Kafka сервисінің орналастырылған даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone ішіндегі мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": ""
+}

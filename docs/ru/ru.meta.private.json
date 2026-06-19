@@ -1,0 +1,249 @@
+{
+  "title": "Документация VK Private Cloud",
+  "decorator": "list",
+  "intro": [
+    {
+      "partialPath": "/ru/intro/whats-new",
+      "icon": "/ru/assets/start-icon.svg",
+      "iconMobile": "/ru/assets/start-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/ru/intro/prerequisites",
+      "icon": "/ru/assets/billing-icon.svg",
+      "iconMobile": "/ru/assets/billing-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/ru/intro/service-list-private",
+      "icon": "/ru/assets/secure-icon.svg",
+      "iconMobile": "/ru/assets/secure-icon-mobile.svg"
+    },
+    {
+      "partialPath": "/ru/intro/migration",
+      "icon": "/ru/assets/migration-icon.svg",
+      "iconMobile": "/ru/assets/migration-icon-mobile.svg"
+    }
+  ],
+  "variables": {
+    "marketplace": "магазин приложений Marketplace",
+    "revdate": "18.07.2024",
+    "cloud": [
+      {
+        "buildPoint": "public",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "private-cert",
+        "value": "Private Cloud от VK"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Cloud"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Private Cloud"
+      }
+    ],
+    "s3": [
+      {
+        "buildPoint": "public",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Object Storage"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Object Storage"
+      }
+    ],
+    "data-p": [
+      {
+        "buildPoint": "public",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "VK Data Platform"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Data Platform"
+      }
+    ]
+  },
+  "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
+  "additionalUuids": [
+    "4906539c-b007-4f6c-8bcd-2c0895d587e0",
+    "4489ae62-a069-4966-8403-f397772c599b",
+    "deec752b-1cf7-4bb3-8b23-85f5b99434a7",
+    "75f5fbd8-eb4e-41e4-a478-1bdad98be935",
+    "4fb3cc66-1ff1-4178-ad5a-5ca3767ac669",
+    "3d8f52ca-acc2-4504-9acc-3a0290d86b6b",
+    "4abf1896-b89a-49c3-b365-5836f3e2be94",
+    "3ce43d6e-3837-4dce-815a-2ff37df3863d",
+    "fa708c77-91d4-4109-92cd-8385603f21e5",
+    "08157caa-2c9a-46e5-9d3d-221fb59bac13",
+    "5640e791-be03-4d14-9108-8a93b0c19167",
+    "b3f92ce8-83ce-4647-82d9-6ce8d1356b12",
+    "4fdb11b9-1d08-4620-9efc-3c336cde72bd",
+    "eddabafb-d6da-41cf-ba84-7d2eef26fce4",
+    "363bae5d-381a-424e-a1bb-13888f1551fa",
+    "373f9549-5f01-4336-ad90-fc84abe3c57c",
+    "522e5146-d9e8-4c28-af24-f216c55589ff",
+    "5579a23a-ce6f-41b8-bec6-7be44300cfaa",
+    "7e79cc2e-1dbf-4c85-a93a-f46c116f4fd7",
+    "b0074a50-832f-4bee-b73b-6df8050d6bbc",
+    "bd6e56fe-39ae-4a96-942d-2873ba99de5b",
+    "0b36b60f-9164-4b22-a4f4-1902eca5f9d3",
+    "ca66bddc-8e2c-4da8-ba4b-ad6ce41d48d0",
+    "fdd06388-3245-49e0-83f4-88dd67cfd93a",
+    "1b76b772-e3eb-47b9-8aaf-4e37db62efa1",
+    "ed5a0ff4-1c5f-40cc-a06d-c62b8b09de90",
+    "d9b133f3-66f1-4f6e-85ae-ceaff8a71240",
+    "23760bb8-c25b-4434-9afd-d6dd650b6db0",
+    "43e3edfd-779c-4643-b426-49781edc5b10",
+    "2e9dfa94-27f0-4d2d-a631-0f425b81d159",
+    "250a476b-b501-45cd-869d-a62f396b10c2",
+    "2d760608-5a8d-46a9-bc37-823068730f60",
+    "ed103ff8-d0e7-4e0c-87ff-f93bb3b0757f",
+    "a0710c0e-d9d8-44aa-828b-9b9d4f4ded9d",
+    "c25bea49-1481-4d69-a5cc-f30a5ad0694d",
+    "f49d7929-f903-419c-b02b-bd0dbe20b517",
+    "2a88775f-497f-48a4-b0ae-d9c0996993b7",
+    "e4513e19-fd2c-45b2-a156-bff1e6cb84b1",
+    "1fd7953e-5ecc-4a8b-8397-7853ee141ea9",
+    "b051b795-cb3e-4655-881a-1875e9818881",
+    "1032b4e4-5562-4167-8e4a-6d585776fa58",
+    "de3b69b6-a130-45ab-a42b-a93138b6b037",
+    "c31f2efb-647a-4466-bf14-68655b76909a",
+    "d03d4075-d638-4c16-94de-ee4c1c5ccba7",
+    "8ad8f304-64f9-48b9-b1c3-ee6ba1e29420",
+    "2e3e7de3-f7e9-4b84-acdb-353d8524e40b",
+    "86545ab6-8c07-448c-a1db-678dca83e95c",
+    "aae7aa53-2eeb-447d-abf5-357930f62f8b",
+    "be0f09f6-3d92-4c28-a5f2-629cf896222f",
+    "d8c680ef-896d-4e65-b09f-eba38609288d",
+    "e7693df6-a052-433c-8dbc-4522e0896308",
+    "3bf5da2c-2108-406c-b286-751df9285851",
+    "8ac9438e-3ffc-4e2f-99cb-99db161d19df",
+    "0c6b81ff-ba00-49b6-89d2-7270d74e58ba",
+    "d8c267c5-f409-48ca-b2ad-b05de73abc89",
+    "d3280f05-7334-4c00-b4ff-f652fd7f4908",
+    "f3a09cea-8105-4284-b94a-398356ae7955",
+    "e31e6440-7c9c-4aa3-905a-d043a2435d24",
+    "07b7bfb5-4231-466e-af01-5ec6b2780bac",
+    "b0c03315-7390-4dfb-89dd-65535d94d7e5",
+    "05ab043b-1d48-48cd-9904-6417a1dc06b6",
+    "c1e6dd39-0405-45f3-ab9c-1f8a40f78bd6",
+    "d1e5a595-4f63-4660-b7c2-500738537394",
+    "11c59bf9-2ead-4879-89be-a181e86483ab",
+    "4d3218cb-e74e-490a-bf3b-0518f0814b05",
+    "35c3385f-e8fd-4dde-8cb7-1d5b5502754a",
+    "30b217f4-222f-4b10-998f-74d27cd23a81",
+    "1d2c976b-f518-4883-9b86-8392b6b84784",
+    "e011bfc0-9bd6-4288-a69f-63f85d509a2e",
+    "519e60bc-5700-420c-b503-1a9e97bc6da0",
+    "dd63f37f-d7df-4ac1-8536-956346f4ffc3",
+    "801d162d-ba66-4160-a23e-1666260e53c2",
+    "b0e2ac3f-5bd1-45cb-afae-e00bb9708598",
+    "a67cbff2-e496-4c83-ac8b-6b6fc580e8e4",
+    "115e810b-23d0-4500-8c39-688a3d684150",
+    "1b370b10-b82c-429c-b15d-ec920402087e",
+    "2948cc65-1eae-4a52-9aa0-63f4e0449f06",
+    "d1227978-7c37-46ae-a57e-2e5dd6d7abc0",
+    "010bf8bc-d94a-4098-8a9f-423f3c090eed",
+    "525e9258-365b-4dde-86f8-f63592c39f95",
+    "b0dd83ae-84b9-4a59-99df-174f0742fb0d",
+    "eb4ff2e4-c68f-4b21-b29a-46abb2b82f96",
+    "5563d153-c15a-4cdc-9332-062b9809d1c9",
+    "f91cca4d-c301-43ae-8540-ce1c3b83ded7",
+    "6df9959d-cb33-47fc-bd88-e19971b94639",
+    "8aba0752-fa8a-452d-bbe1-2f557c1b8d20",
+    "0bee6778-748b-4eb2-b289-8eb1cb91a39f",
+    "852b53c0-0b5d-4572-973d-503aa1e60f2b",
+    "128ba39c-bc2d-4ab8-836d-45056606d628",
+    "76b4e05e-ee69-477a-8101-fd57002699e3",
+    "ed32ac0f-ba6c-4335-bbf1-2db3980754c4",
+    "e16defbb-c7b8-4420-86c6-ee99b3979e1e",
+    "47b95287-0dcc-45a7-81a1-6d41a968e8a3",
+    "b7e71b3d-a741-49e0-a6c1-e3f4970a9176",
+    "b1130b22-231c-4815-acdd-74a04e51ea7e",
+    "15fc0e0a-3874-4263-92f2-d873df5c2709",
+    "c4bf3e33-4e10-4187-8394-2d059c3b806d",
+    "a86aa13f-2f9b-4cb5-95e9-a4a2f0baff59",
+    "0e345a99-7f38-4331-83d9-d94ee09f2c45",
+    "88990f49-0ef8-456a-8127-f0cb658e40bf"
+  ],
+  "metaDescription": "Документация VK Private Cloud.",
+  "build": {
+    "points": [
+      "private"
+    ]
+  }
+}

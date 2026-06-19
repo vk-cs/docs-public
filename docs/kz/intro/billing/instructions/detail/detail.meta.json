@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud: жобалардағы ресурстарды тұтыну және баланстың өзгеруі статистикасын қарау",
   "sectionTitle": "Шығындар детализациясы",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

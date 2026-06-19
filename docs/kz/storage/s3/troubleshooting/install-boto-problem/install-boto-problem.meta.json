@@ -4,5 +4,12 @@
   "metaDescription": "Python үшін SDK көмегімен файлды жүктеу жұмыс істемесе не істеу керек",
   "sectionTitle": "SDK көмегімен файлды жүктеу жұмыс істемейді",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

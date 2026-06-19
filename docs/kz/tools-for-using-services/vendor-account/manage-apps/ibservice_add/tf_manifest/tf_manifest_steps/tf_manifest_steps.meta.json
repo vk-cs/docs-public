@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Terraform манифесі",
   "sectionTitle": "Terraform манифесі",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

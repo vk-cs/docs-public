@@ -1,0 +1,14 @@
+{
+  "title": "Работа с экземпляром сервиса",
+  "shortDescription": "Как управлять экземпляром сервиса в проекте",
+  "metaDescription": "Узнайте как в VK Data Platform управлять экземплярами сервиса MLflow",
+  "sectionTitle": "Работа с экземпляром сервиса",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

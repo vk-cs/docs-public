@@ -1,9 +1,23 @@
 {
-    "title": "Kube Prometheus Stack",
-      "shortDescription": "",
-      "metaDescription": "Configuring and installing an add-on with monitoring tools",
-    "sectionTitle": "Kube Prometheus Stack",
-    "icon": "",
-    "weight": 12,
-    "uuid": "28fa4aa2-45fb-4d94-b6f2-aa1d1d556b4e"
+  "title": "Kube Prometheus Stack",
+  "shortDescription": "",
+  "metaDescription": "Configuring and installing an add-on with monitoring tools",
+  "sectionTitle": "Kube Prometheus Stack",
+  "icon": "",
+  "weight": 13,
+  "uuid": "28fa4aa2-45fb-4d94-b6f2-aa1d1d556b4e",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

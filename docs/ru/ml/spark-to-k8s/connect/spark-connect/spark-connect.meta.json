@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение к кластеру Spark через Spark Connect",
   "icon": "",
   "weight": 1,
-  "uuid": "3763f06d-112f-4ee3-9f7a-9f1f1b45bf93"
+  "uuid": "3763f06d-112f-4ee3-9f7a-9f1f1b45bf93",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

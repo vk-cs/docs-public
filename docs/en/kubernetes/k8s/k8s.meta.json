@@ -9,5 +9,19 @@
       "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/k8s/create"
     }
   ],
-  "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9"
+  "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

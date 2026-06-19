@@ -1,10 +1,12 @@
+# {heading(Распознавание полей документов)[id=vision-instructions-docs-recognition]}
+
 Данный метод позволяет распознать, например, поля паспорта на фото. Рассмотрим его использование подробнее ниже.
 
 HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/recognize`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-docs-recognition-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -15,9 +17,9 @@ ENDPOINT: `/api/v1/docs/recognize`
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение `oauth_provider` | Получение токена                                    |
-|  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| Провайдер | Значение `oauth_provider` | Получение токена                                                                    |
+|  -------- |  ------------------------ |-------------------------------------------------------------------------------------|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]} |
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -35,11 +37,11 @@ ENDPOINT: `/api/v1/docs/recognize`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-docs-recognition-request-examples]}
 
 ```curl
 curl -X 'POST' \
@@ -56,7 +58,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-docs-recognition-answer]}
 
 | Параметр | Тип | Значение |
 | --- | --- | ---|
@@ -78,7 +80,7 @@ curl -X 'POST' \
 | name | string | Имя файла для сопоставления файлов в запросе и ответе |
 | labels | `object` | Распознанные поля документа
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-docs-recognition-answer-example]}
 
 ```json
 {
@@ -138,9 +140,9 @@ curl -X 'POST' \
 }
 ```
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-docs-recognition-extra-examples]}
 
-### Поля на изображении не распознаны
+### {heading(Поля на изображении не распознаны)[id=vision-instructions-docs-recognition-extra-examples-fields-unrecognized]}
 
 Пример запроса:
 
@@ -178,7 +180,7 @@ curl -X 'POST' \
 }
 ```
 
-### Невалидное изображение
+### {heading(Невалидное изображение)[id=vision-instructions-docs-recognition-extra-examples-invalid-img]}
 
 Пример запроса:
 
@@ -208,7 +210,7 @@ curl -X 'POST' \
 }
 ```
 
-### Некорректный JSON (несовпадение имени в meta и изображении)
+### {heading(Некорректный JSON (несовпадение имени в meta и изображении))[id=vision-instructions-docs-recognition-extra-examples-invalid-json]}
 
 Пример запроса:
 

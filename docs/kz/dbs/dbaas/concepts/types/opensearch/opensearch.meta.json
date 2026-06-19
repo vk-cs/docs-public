@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Databases: ашық бастапқы коды бар OpenSearch іздеу және аналитика пакеті",
   "sectionTitle": "OpenSearch",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

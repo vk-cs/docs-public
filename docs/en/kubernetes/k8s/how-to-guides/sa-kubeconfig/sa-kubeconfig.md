@@ -4,7 +4,7 @@ This authentication process is inconvenient when working with automated tools th
 
 ## Preparatory steps
 
-1. [Create](../../instructions/create-cluster) the Cloud Containers cluster is the most up-to-date version.
+{include(/en/_includes/_create-test-cluster.md)}
 
    When creating a cluster, select the **Assign external IP** option. Select other cluster parameters at your discretion.
 
@@ -543,7 +543,9 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
 ## Delete unused resources
 
-1. If you no longer need the created Kubernetes resources, delete them:
+{include(/en/_includes/_remove-k8s-resources.md)} kubeconfig, delete them:
+
+1. Delete the `example-binding` resource, the `example-token` secret, and the `example-sa` service account:
 
    {tabs}
 
@@ -577,7 +579,4 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    {/tabs}
 
-1. A running Cloud Containers cluster is charged and consumes computing resources. If you don't need it anymore:
-
-   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../instructions/manage-cluster#delete_cluster) its forever.
+{include(/en/_includes/_delete-test-cluster-short.md)}

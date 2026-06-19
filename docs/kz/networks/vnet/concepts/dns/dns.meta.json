@@ -1,0 +1,14 @@
+{
+  "title": "DNS",
+  "shortDescription": "Жеке DNS",
+  "metaDescription": "Жеке DNS",
+  "sectionTitle": "DNS",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private"
+    ]
+  },
+  "uuid": ""
+}

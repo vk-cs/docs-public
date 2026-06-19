@@ -1,35 +1,37 @@
+# {heading(Рұқсат етілген репозиторийлерді баптау)[id=k8s-repositories]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Gatekeeper](../../../reference/gatekeeper) көмегімен образдарды жүктеу үшін тек рұқсат етілген репозиторийлерді пайдалануды талап ететін шектеуді орнатуғал болады. Мысалы, бұл шектеу компания саясаттары тек сенімді репозиторийлерден образ жүктеуді талап етсе, кластер операторлары тексерілмеген көзден сенімсіз қолданбаны кездейсоқ іске қоспауы үшін пайдалы болуы мүмкін.
+{linkto(../../../reference/gatekeeper#k8s-gatekeeper)[text=Gatekeeper]} көмегімен образдарды жүктеу үшін тек рұқсат етілген репозиторийлерді пайдалануды талап ететін шектеуді орнатуға болады. Мысалы, бұл шектеу компания саясаттары образдарды тек сенімді репозиторийлерден жүктеуді талап етсе, кластер операторлары тексерілмеген көзден сенімсіз қолданбаны кездейсоқ іске қоспауы үшін пайдалы болуы мүмкін.
 
 Gatekeeper жұмысын көрсету үшін мыналар жасалады:
 
 * Шектеу үлгісі және оған сәйкес келетін шектеу. Ол образдарды тек Docker Hub репозиторийінен жүктеуге рұқсат береді.
-* Шектеудің жұмысын тексеруге арналған бірнеше Kubernetes ресурстар.
+* Шектеудің жұмысын тексеруге арналған бірнеше Kubernetes ресурсы.
 
 {note:info}
 
-VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kubernetes кластерлерінде қажетті [қауіпсіздік саясатын](../../../instructions/manage-security#kauipsizdik_sayasatyn_kosu) жеке кабинет арқылы [жасауғал](../../../concepts/security-policies#allowed_repos) болады.
+VK Cloud Kubernetes кластерлерінің 1.23 және одан жоғары нұсқаларында қажетті {linkto(../../../concepts/security-policies#k8s-security-policies-allowed-repos)[text=қауіпсіздік саясатын]} жеке кабинет арқылы {linkto(../../../instructions/manage-security#k8s-manage-security-add-policy)[text=жасауға]} болады.
 
 Бұл жағдайда Gatekeeper ресурстарымен тікелей жұмыс істеу міндетті емес.
 
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-repositories-prepare]}
 
-1. Kubernetes кластерінің ең өзекті нұсқасын [жасаңыз](../../../instructions/create-cluster).
+{include(/kz/_includes/_create-test-cluster.md)}
 
    Кластер параметрлерін өз қалауыңыз бойынша таңдаңыз.
 
-1. `kubectl` көмегімен кластерге қосыла алатыныңызғал [көз жеткізіңіз](../../../connect/kubectl).
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=`kubectl` көмегімен кластерге қосыла алатыныңызға көз жеткізіңіз]}.
 
-## Репозиторийлерді тексеретін шектеуді жасаңыз
+## {heading(Репозиторийлерді тексеретін шектеуді жасаңыз)[id=k8s-repositories-create-constraint]}
 
 1. Шектеу үлгісін жасаңыз:
 
    1. Шектеу үлгісінің манифесін жасаңыз.
 
-      Пайдаланыңыз [Осы файлдың мазмұнын](https://github.com/open-policy-agent/gatekeeper-library/blob/master/library/general/allowedrepos/template.yaml). Бұл уже готовый шаблон `K8sAllowedRepos` из [Gatekeeper кітапханасындағы](https://github.com/open-policy-agent/gatekeeper-library), ол проверяет, что образы загружаются тек из доверенных репозиториев.
+      [Осы файлдың мазмұнын](https://github.com/open-policy-agent/gatekeeper-library/blob/master/library/general/allowedrepos/template.yaml) пайдаланыңыз. Бұл — образдардың тек сенімді репозиторийлерден жүктелетінін тексеретін [Gatekeeper кітапханасындағы](https://github.com/open-policy-agent/gatekeeper-library) дайын `K8sAllowedRepos` үлгісі.
 
    1. Үлгі манифесі негізінде шектеу үлгісін жасаңыз:
 
@@ -74,7 +76,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
    kubectl get constraints,constrainttemplates
    ```
 
-   Ұқсас алқпарат көрсетілуі керек:
+   Ұқсас ақпарат көрсетілуі керек:
 
    ```text
    NAME                                                          ENFORCEMENT-ACTION TOTAL-VIOLATIONS
@@ -121,7 +123,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
       kubectl get pod allowed-pod
       ```
 
-      Ұқсас алқпарат көрсетілуі керек:
+      Ұқсас ақпарат көрсетілуі керек:
 
       ```text
       NAME          READY   STATUS    RESTARTS   AGE
@@ -167,7 +169,7 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
       kubectl get pod disallowed-pod
       ```
 
-      Ұқсас алқпарат көрсетілуі керек:
+      Ұқсас ақпарат көрсетілуі керек:
 
       ```text
       Error from server (NotFound): pods "disallowed-pod" not found
@@ -177,7 +179,9 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
 
    {/tabs}
 
-## Қолданылмайтын ресурстарды жойыңыз
+## {heading(Қолданылмайтын ресурстарды жойыңыз)[id=k8s-repositories-delete]}
+
+Жұмыс істеп тұрған кластер тарифтеледі және есептеу ресурстарын тұтынады. Егер шектеудің жұмысын тексеру үшін жасалған Kubernetes ресурстары енді қажет болмаса, оларды жойыңыз:
 
 1. Жасалған `allowed-pod` pod-ын, шектеу үлгісін және шектеудің өзін жойыңыз:
 
@@ -206,7 +210,6 @@ VK Cloud-тағы 1.23 және одан жоғары нұсқадағы Kuberne
 
    {/tabs}
 
-1. Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
-
-   - оны кейінірек пайдалану үшін [тоқтатыңыз](../../../instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu);
-   - оны біржола [жойыңыз](../../../instructions/manage-cluster#delete_cluster).
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

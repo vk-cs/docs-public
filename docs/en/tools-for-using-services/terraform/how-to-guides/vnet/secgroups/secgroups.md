@@ -75,7 +75,7 @@ In the file, the following configuration is described:
 
 {tab(Preset groups)}
 
-The file describes the configuration for adding [preset security groups](/ru/networks/vnet/concepts/traffic-limiting#secgroups) to the project.
+The file describes the configuration for adding [preset security groups](/ru/networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups) to the project.
 
 {note:warn}
 

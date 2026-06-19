@@ -4,5 +4,20 @@
   "metaDescription": "Дерекқорларды SDN Sprut-қа қалай көшіруге болады",
   "sectionTitle": "Дерекқордың көші-қоны",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "uuid": "7f76578e-c8bc-40e1-bf08-c3fe0665c1e8",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

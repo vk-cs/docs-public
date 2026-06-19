@@ -1,9 +1,23 @@
 {
-    "title": "Using Terraform",
-      "shortDescription": "How to use Terraform when performing basic operations",
-      "metaDescription": "",
-    "sectionTitle": "Using Terraform",
-    "icon": "",
-    "weight": 1,
-    "uuid": "85f4300c-63a8-4e52-8dc6-58f02a0c0e83"
+  "title": "Using Terraform",
+  "shortDescription": "How to use Terraform when performing basic operations",
+  "metaDescription": "",
+  "sectionTitle": "Using Terraform",
+  "icon": "",
+  "weight": 1,
+  "uuid": "85f4300c-63a8-4e52-8dc6-58f02a0c0e83",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

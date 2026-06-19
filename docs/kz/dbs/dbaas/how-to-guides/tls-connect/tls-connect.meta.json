@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Databases: PostgreSQL-ге қосылу үшін TLS хаттамасын пайдалану.",
   "sectionTitle": "PostgreSQL-ге қосылу үшін TLS хаттамасын пайдалану",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

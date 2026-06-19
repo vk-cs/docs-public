@@ -3,5 +3,12 @@
   "shortDescription": "Spark сервисінің негізгі ұғымдары мен сипаттамалары",
   "metaDescription": "Spark сервисінің негізгі ұғымдары мен сипаттамалары",
   "sectionTitle": "Концепциялар",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

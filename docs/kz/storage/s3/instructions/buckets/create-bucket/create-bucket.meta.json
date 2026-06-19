@@ -1,8 +1,15 @@
 {
-  "title": "Бакет жасау",
-  "shortDescription": "VK Object Storage-де бакетті қалай жасауға болады",
-  "metaDescription": "VK Object Storage-де бакетті қалай жасауға болады",
-  "sectionTitle": "Бакет жасау",
+  "title": "Бакетті жасау",
+  "shortDescription": "VK Object Storage-та бакетті жеке кабинет, AWS CLI, SDK арқылы қалай жасауға болады",
+  "metaDescription": "VK Object Storage-та бакет жасау жөніндегі нұсқаулық: жеке кабинет, AWS CLI және SDK арқылы қандай параметрлерді көрсету керек, опционалды баптаулар, `s3api create-bucket` пәрмендерінің мысалдары мен SDK код мысалдары, сондай-ақ нәтиженi жауап мысалдарымен тексеру.",
+  "sectionTitle": "Бакетті жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

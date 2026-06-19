@@ -5,5 +5,10 @@
   "sectionTitle": "Қосымшалармен жұмыс істеу анықтамалықтары",
   "weight": 6,
   "isBeta": true,
-  "hidden": true
+  "hidden": true,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

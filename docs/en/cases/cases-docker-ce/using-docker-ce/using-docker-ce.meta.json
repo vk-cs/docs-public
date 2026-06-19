@@ -1,9 +1,23 @@
 {
-    "title": "Using Docker CE",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Using Docker CE",
-    "icon": "",
-    "weight": 2,
-    "uuid": "aa6c17ed-fc38-4ef6-b16a-5fd9d99388c2"
+  "title": "Using Docker CE",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Using Docker CE",
+  "icon": "",
+  "weight": 2,
+  "uuid": "aa6c17ed-fc38-4ef6-b16a-5fd9d99388c2",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

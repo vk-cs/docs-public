@@ -1,9 +1,14 @@
 {
-    "title": "Подключение сервиса",
-      "shortDescription": "Инструкция по подключению сервиса",
-      "metaDescription": "Инструкция по подключению сервиса",
-    "sectionTitle": "Подключение сервиса",
-    "icon": "",
-    "weight": 2,
-    "uuid": "6d49f9d5-6ed2-4951-947c-0d7c4cff668a"
+  "title": "Подключение сервиса",
+  "shortDescription": "Инструкция по подключению сервиса",
+  "metaDescription": "Инструкция по подключению сервиса",
+  "sectionTitle": "Подключение сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "6d49f9d5-6ed2-4951-947c-0d7c4cff668a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "title": "Введение",
+  "shortDescription": "",
+  "metaDescription": "Введение",
+  "sectionTitle": "Введение",
+  "weight": 5,
+  "build": {
+    "for": [
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": ""
+}

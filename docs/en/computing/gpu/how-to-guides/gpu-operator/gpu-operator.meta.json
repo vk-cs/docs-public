@@ -5,5 +5,10 @@
   "sectionTitle": "GPU resource management in Cloud Containers",
   "icon": "",
   "weight": 1,
-  "uuid": "14c119a9-2d45-488e-ad96-e19ee4d0e610"
+  "uuid": "14c119a9-2d45-488e-ad96-e19ee4d0e610",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

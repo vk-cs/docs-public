@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервис образын жасау",
   "sectionTitle": "Сервис образын жасау",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

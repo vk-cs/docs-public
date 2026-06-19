@@ -1979,13 +1979,11 @@
               "example": {
                 "turn_off_ng": {
                   "action": "turn_off_ng",
-                  "payload": {
-                  }
+                  "payload": {}
                 },
                 "turn_on_ng": {
                   "action": "turn_on_ng",
-                  "payload": {
-                  }
+                  "payload": {}
                 }
               }
             }
@@ -3514,8 +3512,7 @@
         ],
         "example": {
           "action": "invalidate_sa",
-          "payload": {
-          }
+          "payload": {}
         }
       },
       "updateAgent": {
@@ -4208,8 +4205,7 @@
         },
         "example": {
           "action": "turn_off_cluster",
-          "payload": {
-          }
+          "payload": {}
         }
       },
       "turnOnCluster": {
@@ -4224,8 +4220,7 @@
         },
         "example": {
           "action": "turn_on_cluster",
-          "payload": {
-          }
+          "payload": {}
         }
       },
       "turnOffNodeGroup": {
@@ -4240,8 +4235,7 @@
         },
         "example": {
           "action": "turn_off_ng",
-          "payload": {
-          }
+          "payload": {}
         }
       },
       "turnOnNodeGroup": {
@@ -4256,8 +4250,7 @@
         },
         "example": {
           "action": "turn_on_ng",
-          "payload": {
-          }
+          "payload": {}
         }
       },
       "ResizeMasters": {
@@ -5100,9 +5093,7 @@
       ]
     },
     {
-      "McsApiVersion": [
-
-      ]
+      "McsApiVersion": []
     }
   ]
 }

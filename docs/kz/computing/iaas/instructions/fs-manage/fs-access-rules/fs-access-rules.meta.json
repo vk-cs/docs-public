@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud файлдық қоймаларына қол жеткізу ережелерін басқару: деректерді оқу және жазу үшін IP мекенжайы немесе ішкі желі бойынша қол жеткізу ережелерін қосу, өзгерту және жою.",
   "sectionTitle": "Қол жеткізу ережелерін басқару",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

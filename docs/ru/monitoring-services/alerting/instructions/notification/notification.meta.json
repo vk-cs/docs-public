@@ -5,5 +5,14 @@
   "sectionTitle": "Каналы уведомлений",
   "icon": "",
   "weight": 0,
-  "uuid": "2508c52f-80ed-4c82-989d-819fe314696a"
+  "uuid": "2508c52f-80ed-4c82-989d-819fe314696a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

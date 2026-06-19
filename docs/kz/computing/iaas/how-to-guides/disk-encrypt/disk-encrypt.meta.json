@@ -4,5 +4,10 @@
   "shortDescription": "Linux үшін cryptsetup көмегімен виртуалды машина дискінің шифрлануын қалай баптауға болады",
   "metaDescription": "Сryptsetup көмегімен дискіні шифрлау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

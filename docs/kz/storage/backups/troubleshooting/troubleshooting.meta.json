@@ -4,5 +4,12 @@
   "metaDescription": "VK Cloud-тағы Cloud Backup сервисіндегі ақауларды қалай жоюға болады. Сақтық көшірмелеуге қатысты мәселелерді диагностикалау және жою тәсілдері",
   "sectionTitle": "Ақауларды жою",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

@@ -5,5 +5,14 @@
   "metaDescription": "Как развернуть виртуальные рабочие столы с GPU",
   "icon": "",
   "weight": 0,
-  "uuid": "f073142a-d037-4c17-9079-4e5bd01d7268"
+  "uuid": "f073142a-d037-4c17-9079-4e5bd01d7268",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

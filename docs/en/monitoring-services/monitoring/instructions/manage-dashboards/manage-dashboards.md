@@ -1,4 +1,4 @@
-## {heading(Creating a chart)[id=create-custom-chart]}
+## {heading(Creating a chart)[id=monitoring_create_custom_chart]}
 
 You can visualize resource metrics by creating a chart using the parameter constructor or direct queries in PromQL.
 
@@ -69,7 +69,7 @@ You can visualize resource metrics by creating a chart using the parameter const
 
     {/tabs}
 
-## {heading(Viewing, editing, and deleting charts)[id=manage-charts]}
+## {heading(Viewing, editing, and deleting charts)[id=monitoring_manage_charts]}
 
 You can change the chart settings, view charts in the detailed mode, or delete them.
 
@@ -88,7 +88,7 @@ You can change the chart settings, view charts in the detailed mode, or delete t
     * **Edit dashboard**: change the metrics, visualization type, or the chart name.
     * **Delete dashboard**: delete the chart.
 
-## {heading(Working with a dashboard)[id=organize_with_sections]}
+## {heading(Working with a dashboard)[id=monitoring_organize_with_sections]}
 
 Categories allow you to structure your dashboard by grouping charts into logical blocks.
 

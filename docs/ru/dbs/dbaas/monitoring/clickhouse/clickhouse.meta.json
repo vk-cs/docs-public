@@ -1,0 +1,17 @@
+{
+  "title": "Мониторинг ClickHouse",
+  "shortDescription": "Мониторинг развернутых инстансов ClickHouse",
+  "metaDescription": "Мониторинг состояния инстансов ClickHouse c предоставлением подробной информации о метриках отдельных хостов в VK Cloud. Описание доступных метрик, анализ и использование сведений мониторинга",
+  "sectionTitle": "Мониторинг ClickHouse",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

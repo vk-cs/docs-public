@@ -1,9 +1,23 @@
 {
-    "title": "Text recognition in photos",
-      "shortDescription": "Definition of text in an image taken on the street (scene_text) and handwritten text",
-      "metaDescription": "Definition of text in an image taken on the street (scene_text) and handwritten text.",
-    "sectionTitle": "Text recognition in photos",
-    "icon": "",
-    "weight": 6,
-    "uuid": "5dfd74b3-21f6-4c48-a9c5-8e34414613cc"
+  "title": "Text recognition in photos",
+  "shortDescription": "Definition of text in an image taken on the street (scene_text) and handwritten text",
+  "metaDescription": "Definition of text in an image taken on the street (scene_text) and handwritten text.",
+  "sectionTitle": "Text recognition in photos",
+  "icon": "",
+  "weight": 6,
+  "uuid": "5dfd74b3-21f6-4c48-a9c5-8e34414613cc",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

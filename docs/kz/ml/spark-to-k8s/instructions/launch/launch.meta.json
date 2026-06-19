@@ -4,5 +4,10 @@
   "metaDescription": "Spark VK Cloud: қолданбалар мен тапсырмаларды іске қосу.",
   "sectionTitle": "Spark кластерінде тапсырмаларды іске қосу",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

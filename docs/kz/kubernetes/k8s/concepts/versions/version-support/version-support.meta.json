@@ -1,8 +1,18 @@
 {
   "title": "Kubernetes нұсқаларын қолдау саясаты",
-  "shortDescription": "VK Cloud кластерлерінде Kubernetes-тің қандай нұсқалары қолдау көрсетіледі және қандай қалғидаттар бойынша",
-  "metaDescription": "Kubernetes,K8S,нұсқал,саясат,қолдау",
+  "shortDescription": "VK Cloud кластерлерінде Kubernetes-тің қандай нұсқалары қолдау көрсетіледі және қандай қағидаттар бойынша",
+  "metaDescription": "Kubernetes,K8S,нұсқа,саясат,қолдау",
   "sectionTitle": "Kubernetes нұсқаларын қолдау саясаты",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

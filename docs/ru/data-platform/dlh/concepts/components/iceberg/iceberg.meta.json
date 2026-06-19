@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Iceberg Metastore",
   "icon": "",
   "weight": 2,
-  "uuid": "4ad987ef-2fce-4136-989e-92c38b699c72"
+  "uuid": "4ad987ef-2fce-4136-989e-92c38b699c72",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Егер VK Cloud сервистерін енді пайдалануды жоспарламасаңыз, өзіңіздің есептік жазбаңызды жойыңыз. Онымен бірге сіз иесі болып табылатын барлық жобалар да жойылады.
+Егер {var(cloud)} сервистерін енді пайдалануды жоспарламасаңыз, өзіңіздің есептік жазбаңызды жойыңыз. Онымен бірге сіз иесі болып табылатын барлық жобалар да жойылады.
 
 {note:err}
 
@@ -8,7 +8,7 @@
 
 {/note}
 
-Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhobany_konservaciyalau) немесе [жою](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhobany_zhoyu) жеткілікті.
+Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#konservaciya_proekta) немесе [жою](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage) жеткілікті.
 
 Есептік жазбаны жою үшін:
 

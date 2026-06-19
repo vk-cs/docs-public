@@ -3,5 +3,15 @@
   "shortDescription": "diskimage-builder утилитасының көмегімен виртуалды машина образын қалай жасауға болады",
   "metaDescription": "diskimage-builder утилитасының көмегімен виртуалды машина образын қалай жасауға болады.",
   "sectionTitle": "diskimage-builder көмегімен образ жасау",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

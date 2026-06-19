@@ -1,4 +1,6 @@
-Для кластеров Kubernetes [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations) в сервисе Cloud Containers настроена политика аудита ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)). Она определяет, какие события [Kubernetes API](/ru/kubernetes/k8s/concepts/architecture#kubernetes-api-integration) в кластере и в каком объеме записываются в журнал аудита [Cloud Audit](/ru/monitoring-services/event-log/concepts/about) на платформе VK Cloud. Политика аудита настроена для всех кластеров, которые вы создаете в сервисе Cloud Containers, и изменить ее нельзя.
+# {heading(Политика аудита кластеров)[id=k8s-cluster-audit-policy]}
+
+Для кластеров Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=второго поколения]} в сервисе Cloud Containers настроена политика аудита ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)). Она определяет, какие события {linkto(../architecture#k8s-architecture-kubernetes-api-integration)[text=Kubernetes API]} в кластере и в каком объеме записываются в журнал аудита {linkto(../../../../monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} на платформе {var(cloud)}. Политика аудита настроена для всех кластеров, которые вы создаете в сервисе Cloud Containers, и изменить ее нельзя.
 
 Политика аудита помогает:
 
@@ -8,7 +10,7 @@
 
 Политика аудита определяет правила, через которые последовательно проходят все события в кластере. Если событие подходит под какое-то правило, то оно применяется. Попадет ли событие в журнал, зависит от установленного уровня аудита и дополнительных настроек.
 
-## {heading(Структура политики аудита)[id=policy-structure]}
+## {heading(Структура политики аудита)[id=k8s-cluster-audit-policy-structure]}
 
 Ниже представлен полный файл с настройками политики аудита кластеров Kubernetes второго поколения.
 
@@ -132,7 +134,7 @@ rules:
    - `verbs` — операции (`watch`, `create`, `update`, `patch`, `delete`) над пользователем или группой пользователей, которые, в зависимости от уровня, должны или не должны записываться в журнал аудита. Подробнее об этих операциях в [официальной документации Kubernetes](https://kubernetes.io/docs/reference/using-api/api-concepts/#api-verbs).
    - `resources` — ресурсы кластера, к которым применяется правило.
 
-## {heading(Какие события попадают в журнал аудита)[id=audited-events]}
+## {heading(Какие события попадают в журнал аудита)[id=k8s-cluster-audit-policy-events]}
 
 - Все запросы на изменение (`create`, `update`, `patch`, `delete`) на уровне `RequestResponse`:
 
@@ -143,7 +145,7 @@ rules:
 - Запросы на чтение информации (`get`, `list`, `watch`) на уровне `Metadata` для большинства ресурсов, не попавших под другие правила.
 - Все остальные запросы на изменение (`create`, `update`, `patch`, `delete`) на уровне `Request` для ресурсов, не попавших под другие правила.
 
-## {heading(Какие события исключаются из журнала аудита)[id=excluded-from-audit]}
+## {heading(Какие события исключаются из журнала аудита)[id=k8s-cluster-audit-policy-excluded-events]}
 
 - Запросы на наблюдение (`watch`) за ресурсами `endpoints`, `services`, `services/status` от системного пользователя `kube-proxy`.   
 - Запросы на получение информации (`get`) о ресурсах `nodes`, `nodes/status` от служб kubelet.

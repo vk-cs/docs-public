@@ -1,12 +1,14 @@
+# {heading(GPU Operator)[id=k8s-install-advanced-gpu-operator]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-gpu-operator-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
 
-## Аддонды орнату
+## {heading(Аддонды орнату)[id=k8s-install-advanced-gpu-operator-install]}
 
-[GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) аддондар GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек [бөлінген түйіндерге орнату](../../../../concepts/addons-and-settings/addons#addondardy_ornatu_erekshelikteri) қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
+{linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-gpu-operator)[text=GPU Operator]} аддоны GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=бөлінген түйіндерге орнату]} қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
 
 1. Егер бұл әлі жасалмаса, аддонды орнату үшін бөлінген worker-түйіндер тобын дайындаңыз:
 
@@ -21,13 +23,13 @@
 
    1. Кластерде аддондар орналастырылатын GPU бар бөлінген worker-түйіндер тобы бар екеніне көз жеткізіңіз.
 
-      Егер мұндай топ жоқ болса — [оны қосыңыз](../../../manage-node-group#add_group).
+      Егер мұндай топ жоқ болса — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=оны қосыңыз]}.
 
-   1. (Опционалды түрде) Егер GPU бар түйіндерде тек GPU ресурстарын талап ететін процестер ғана орындалуы тиіс болса, осы түйіндер тобы үшін [шектеуді (taint) орнатыңыз](../../../manage-node-group#labels_taints):
+   1. (Опционалды түрде) Егер GPU бар түйіндерде тек GPU ресурстарын талап ететін процестер ғана орындалуы тиіс болса, осы түйіндер тобы үшін {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=шектеуді (taint) орнатыңыз]}:
 
       - эффект `NoSchedule`;
       - ключ `nvidia.com`;
-      - мән `gpu`.
+      - значение `gpu`.
 
    {/tab}
 
@@ -54,7 +56,7 @@
          - таңдалған нұсқаны;
          - қолданба атауын;
          - аддон орнатылатын атаулар кеңістігінің атауын;
-         - [аддонды баптау коды](#ornatu_kezinde_addondy_baptau_kodyn_ondeu).
+         - {linkto(#k8s-install-advanced-gpu-operator-edit-code)[text=аддонды баптау коды]}.
 
             {note:warn}
 
@@ -70,14 +72,14 @@
    
    {tab(Terraform)}
    
-   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
-   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызғал мыналарды қосыңыз:
+   1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
+   1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
       - деректер көзі [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызғал бейімдеңіз.
+      Қажет болса, сілтемелерде келтірілген ресурстар мен дереккөздерді пайдалану мысалдарын өз міндетіңізге және Terraform конфигурацияңызға бейімдеңіз.
 
    1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
@@ -97,16 +99,16 @@
 
 1. (Опционалды түрде) [Аддонмен жұмыс істеу бойынша NVIDIA ресми құжаттамасымен танысыңыз](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html).
 
-## Орнату кезінде аддонды баптау кодын өңдеу
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-gpu-operator-edit-code]}
 
-Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes)-та қолжетімді.
+Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub]-та қолжетімді(https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes).
 
 {note:err}
 
 `"mcs.mail.ru/gpu-exists"` өрісін және оның `true` мәнін өшірмеңіз.
 
-Бұл өріс nfd-worker плагинін тек GPU бар түйіндерге орнатуғал жауап береді. Егер өріс пен мән өшірілсе, nfd-worker және онымен байланысты плагиндер кластердің барлық түйіндеріне орнатылады, бұл ресурстарды көбірек тұтынуғал әкеледі.
+Бұл өріс nfd-worker плагинін тек GPU бар түйіндерге орнатуға жауап береді. Егер өріс пен мән өшірілсе, nfd-worker және онымен байланысты плагиндер кластердің барлық түйіндеріне орнатылады, бұл ресурстарды көбірек тұтынуға әкеледі.
 
 {/note}
 
-Кодты өңдегеннен кейін [аддонды орнатуды жалғастырыңыз](#addondy_ornatu).
+Кодты өңдегеннен кейін {linkto(#k8s-install-advanced-gpu-operator-install)[text=аддонды орнатуды жалғастырыңыз]}.

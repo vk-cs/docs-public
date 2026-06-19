@@ -4,5 +4,10 @@
   "metaDescription": "Point-in-time recovery (PITR) механизмі PostgreSQL кестесінің деректерін үздіксіз резервтік көшіруді қамтамасыз етеді.",
   "sectionTitle": "Point-in-time recovery (PITR)",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,4 +1,6 @@
-События, которые [сервис балансировки нагрузки](/ru/networks/balancing) передает в Cloud Audit.
+# {heading(События компонента Octavia)[id=event-log-octavia]}
+
+События, которые {linkto(../../../../../networks/balancing#balancing)[text=сервис балансировки нагрузки]} передает в Cloud Audit.
 
 [cols="2,3", options="header"]
 |===

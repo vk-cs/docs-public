@@ -1,16 +1,18 @@
+# {heading(Резервное копирование по расписанию)[id=k8s-backup-schedule]}
+
 Используйте [Velero](https://velero.io/docs/main/), чтобы настраивать резервное копирование кластеров по заданному расписанию в формате [cron](https://crontab.guru/every-1-minute) и восстанавливать кластер на основании этого расписания.
 
 {note:info}
-Использование Velero для резервного копирования поддерживается только в кластерах [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Использование Velero для резервного копирования поддерживается только в кластерах {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-backup-schedule-prepare]}
 
-1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster) кластер Kubernetes актуальной версии, если это еще не сделано.
-1. [Убедитесь](/ru/kubernetes/k8s/connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
-1. [Установите и настройте](/ru/kubernetes/k8s/install-tools/velero) Velero, если это еще не сделано.
+{include(/ru/_includes/_create-test-cluster.md)}
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../../install-tools/velero#k8s-velero)[text=Установите и настройте]} Velero, если это еще не сделано.
 
-## 1. Создайте расписание резервного копирования
+## {heading(1. Создайте расписание резервного копирования)[id=k8s-backup-schedule-create-schedule]}
 
 Создайте расписание резервного копирования для нужного пространства имен:
 
@@ -58,7 +60,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
 Время жизни резервной копии по умолчанию — 720 часов. По истечении этого времени резервная копия будет удалена.
 {/note}
 
-## 2. Просмотрите созданное расписание
+## {heading(2. Просмотрите созданное расписание)[id=k8s-backup-schedule-view-schedule]}
 
 1. Убедитесь, что созданное расписание появилось в списке расписаний резервного копирования, доступных для выбранного пространства имен:
 
@@ -97,7 +99,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
    Paused:  false
    ```
 
-## 3. Выполните восстановление данных
+## {heading(3. Выполните восстановление данных)[id=k8s-backup-schedule-perform-backup]}
 
 Выполните восстановление из резервной копии, которая была создана по указанному расписанию.
 
@@ -105,7 +107,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
 velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-schedule <НАЗВАНИЕ_РАСПИСАНИЯ>
 ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-backup-schedule-delete]}
 
 Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если инструмент Velero и ресурсы Kubernetes, созданные для проверки резервного копирования с его помощью, вам больше не нужны, удалите их:
 
@@ -122,8 +124,10 @@ velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-sch
    velero uninstall
    ```
 
-1. [Удалите](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov) резервные копии из бакета, который использовался Velero.
+1. {linkto(/ru/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=Удалите]} резервные копии из бакета, который использовался Velero.
 
-   При необходимости также [удалите сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
+   При необходимости также {linkto(/ru/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=удалите сам бакет]}.
 
-1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+{ifdef(public)}
+{include(/ru/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

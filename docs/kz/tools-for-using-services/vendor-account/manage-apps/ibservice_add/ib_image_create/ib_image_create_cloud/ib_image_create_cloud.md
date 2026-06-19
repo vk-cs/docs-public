@@ -59,12 +59,9 @@
       # Удалить tmp-файлы
       $ sudo rm -rf /tmp/* /var/tmp/*
       # Очистить системные файлы
-      $ sudo truncate -s 0 /etc/machine-id /etc/resolv.conf /var/log/audit/audit.log /var/log/wtmp \
-      /var/log/lastlog /var/log/btmp /var/log/cron /var/log/maillog /var/log/messages /var/log/secure \
-      /var/log/spooler
+      $ sudo truncate -s 0 /etc/machine-id /etc/resolv.conf /var/log/audit/audit.log /var/log/wtmp       /var/log/lastlog /var/log/btmp /var/log/cron /var/log/maillog /var/log/messages /var/log/secure       /var/log/spooler
       # Удалить системные файлы
-      $ sudo rm -rf /etc/hostname /etc/machine-info /var/lib/systemd/credential.secret /var/lib/cloud /var/log/tuned \
-      /var/log/qemu-ga /var/log/anaconda /var/lib/systemd/random-seed
+      $ sudo rm -rf /etc/hostname /etc/machine-info /var/lib/systemd/credential.secret /var/lib/cloud /var/log/tuned       /var/log/qemu-ga /var/log/anaconda /var/lib/systemd/random-seed
       # Инициализировать диск, заполнить нулями
       $ sudo dd if=/dev/zero of=/zeroed_file bs=1M oflag=direct || sudo rm -f /zeroed_file
       # Очистить историю команд

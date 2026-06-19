@@ -1,42 +1,40 @@
-В кластерах Cloud Containers доступно [несколько версий](../../concepts/versions/components) аддона [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack_2926e986). Обновление этого аддона средствами VK Cloud недоступно, но можно обновить аддон вручную.
+# {heading(Обновление аддона Kube Prometheus Stack)[id=k8s-update-monitoring-addon]}
+
+В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, доступно {linkto(../../concepts/versions/components#k8s-components)[text=несколько версий]} аддона {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack]}. Обновление этого аддона средствами {var(cloud)} недоступно, но можно обновить аддон вручную.
 
 Для обновления аддона Kube Prometheus Stack с версии `36.2.0` на версию `54.2.2` необходимо удалить текущую версию аддона и затем установить новую версию. Поэтому процесс обновления включает в себя подготовку окружения текущей версии аддона, чтобы сохранить его и затем переиспользовать с новой версией аддона.
 
 {note:warn}
-
 Далее предполагается, что аддон установлен в пространство имен (например, `kube-prometheus-stack`), которое содержит только те ресурсы Kubernetes, которые относятся к аддону.
 
 Если в пространстве имен есть и другие ресурсы Kubernetes, скорректируйте команды и скрипт так, чтобы они не затрагивали не относящиеся к аддону ресурсы.
-
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-update-monitoring-addon-prepare]}
 
-1. Если у вас уже есть существующий кластер Cloud Containers с аддоном Kube Prometheus Stack, который нужно обновить, пропустите этот шаг.
+1. Если в сервисе Cloud Containers у вас уже есть существующий кластер Kubernetes с аддоном Kube Prometheus Stack, который нужно обновить, пропустите этот шаг.
 
    В противном случае создайте тестовый кластер, в котором будет выполняться обновление аддона:
 
-   1. [Создайте](../../instructions/create-cluster) кластер Cloud Containers версии `1.26.5`.
+   1. {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер Kubernetes версии `1.26.5`.
 
       При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
 
-   1. [Установите в кластер](../../instructions/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `36.2.0`.
+   1. {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=Установите в кластер]} аддон Kube Prometheus Stack версии `36.2.0`.
 
       Выполните **быструю установку** аддона (без редактирования кода настройки аддона).
 
-1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
-   Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета VK Cloud.
+   Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета {var(cloud)}.
 
-1. Проверьте, что аддон доступен и работает. Для этого [получите доступ к веб-интерфейсу Grafana](../../monitoring#connect_grafana).
+1. Проверьте, что аддон доступен и работает. Для этого {linkto(../../monitoring#k8s-monitoring-connect-grafana)[text=получите доступ к веб-интерфейсу Grafana]}.
 
    {note:warn}
-
    Запишите пароль для доступа к Grafana, даже если он хранится в виде секрета Kubernetes. В процессе обновления аддона пространство имен, где размещены аддон и секрет, будет удалено вместе со всем содержимым.
-
    {/note}
 
-1. [Установите](../../install-tools/helm) Helm версии 3.0.0 или выше, если утилита еще не установлена.
+1. {linkto(../../install-tools/helm#k8s-helm)[text=Установите]} Helm версии 3.0.0 или выше, если утилита еще не установлена.
 
    Выберите для установки версию Helm, которая [совместима](https://helm.sh/docs/topics/version_skew/) с кластером.
 
@@ -64,9 +62,9 @@
 
    {/tabs}
 
-## 1. Получите информацию, необходимую для обновления аддона
+## {heading(1. Получите информацию, необходимую для обновления аддона)[id=k8s-update-monitoring-addon-get-info]}
 
-1. [Перейдите в режим редактирования кода настройки аддона](../../instructions/addons/manage-addons).
+1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons)[text=Перейдите в режим редактирования кода настройки аддона]}.
 
    Не изменяйте код настройки аддона.
 
@@ -103,7 +101,7 @@
 
    {/tabs}
 
-1. Получите информацию о используемых аддоном [Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)](../../reference/pvs-and-pvcs). Они используются для хранения собираемых метрик, а также других данных, необходимых для работы аддона.
+1. Получите информацию о используемых аддоном {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)]}. Они используются для хранения собираемых метрик, а также других данных, необходимых для работы аддона.
 
    ```console
    kubectl -n $NAMESPACE get pvc
@@ -122,9 +120,9 @@
 
    {/cut}
 
-## 2. Подготовьте окружение аддона к обновлению
+## {heading(2. Подготовьте окружение аддона к обновлению)[id=k8s-update-monitoring-addon-prepare-env]}
 
-Тома для аддона по умолчанию создаются с применением [политики освобождения](../../reference/pvs-and-pvcs) `Retain`, если в код настройки аддона не было внесено изменений, связанных с классом хранения. Поэтому, если просто удалить аддон, то постоянные тома с данными будут удалены. Это приведет к потере накопленных за время работы аддона метрик, а также других данных, необходимых для работы аддона.
+Тома для аддона по умолчанию создаются с применением {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=политики освобождения]} `Retain`, если в код настройки аддона не было внесено изменений, связанных с классом хранения. Поэтому, если просто удалить аддон, то постоянные тома с данными будут удалены. Это приведет к потере накопленных за время работы аддона метрик, а также других данных, необходимых для работы аддона.
 
 Кроме того, следующие ресурсы Kubernetes, которые также используются аддоном, могут препятствовать установке новой версии аддона:
 
@@ -323,11 +321,9 @@
 1. Выполните скрипт.
 
    {note:warn}
-
    При выполнении скрипта с явно (параметр `-n`) или неявно заданным пространством имен `prometheus-monitoring` это пространство имен будет удалено.
 
    При выполнении скрипта для другого пространства имен оно удалено не будет.
-
    {/note}
 
    Выполните команду, указав нужные параметры. Если вас устраивает значение параметра по умолчанию, то параметр можно опустить.
@@ -398,14 +394,14 @@
    kubectl get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{.metadata.name}{"\n"}{end}'
    ```
 
-   Список PVs должен совпадать со списком PVs, [полученным ранее](#1_poluchite_informaciyu_neobhodimuyu_dlya_obnovleniya_addona).
+   Список PVs должен совпадать со списком PVs, {linkto(#k8s-update-monitoring-addon-get-info)[text=полученным ранее]}.
 
 1. Пропатчите эти PVs так, чтобы они использовали политику освобождения `Retain`. Это необходимо для того, чтобы эти тома не были удалены при удалении текущей версии аддона.
 
    Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка.
 
    ```console
-   kubectl patch pv <имя PV> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+   kubectl patch pv <ИМЯ_PV> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
    ```
 
 1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работает аддон, используют политику освобождения `Retain` и связаны с PVC (`Bound`):
@@ -437,14 +433,14 @@
    kubectl -n $NAMESPACE get pvc
    ```
 
-   Итоговый список может отличаться от [полученного ранее](#1_poluchite_informaciyu_neobhodimuyu_dlya_obnovleniya_addona): часть PVCs была удалена при удалении Helm-чарта.
+   Итоговый список может отличаться от {linkto(#k8s-update-monitoring-addon-get-info)[text=полученного ранее]}: часть PVCs была удалена при удалении Helm-чарта.
 
 1. Удалите PVCs, которые использовались аддоном. Это нужно, чтобы можно было отвязать PVs от PVCs и потом переиспользовать эти PVs с новой версией аддона.
 
    Эта команда удаляет отдельный PVC. Выполните ее для всех PVCs из списка.
 
    ```console
-   kubectl -n $NAMESPACE delete pvc <имя PVC>
+   kubectl -n $NAMESPACE delete pvc <ИМЯ_PVC>
    ```
 
 1. Пропатчите PVs, которые использовались аддоном, так, чтобы отвязать их от PVCs, которые были удалены. Эти постоянные тома станут доступны для связывания (статус PVs: `Available`) и будут переиспользованы новой версией аддона после ее установки.
@@ -452,7 +448,7 @@
    Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка, полученного ранее.
 
    ```console
-   kubectl patch pv <имя PV> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
+   kubectl patch pv <ИМЯ_PV> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
    ```
 
 1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работал аддон, используют политику освобождения `Retain` и доступны для связывания (`Available`):
@@ -483,7 +479,7 @@
    Эта команда удаляет отдельный CRD. Выполните ее для всех CRDs из списка, полученного ранее.
 
    ```console
-   kubectl delete crd <имя CRD>
+   kubectl delete crd <ИМЯ_CRD>
    ```
 
 1. Удалите пространство имен, в котором был установлен аддон.
@@ -496,16 +492,16 @@
 
 {/tabs}
 
-## 3. Обновите аддон на новую версию
+## {heading(3. Обновите аддон на новую версию)[id=k8s-update-monitoring-addon-update]}
 
-1. [Удалите текущую версию аддона](../../instructions/addons/manage-addons#udalenie_addona), пользуясь интерфейсами VK Cloud.
-1. [Установите в кластер](../../instructions/addons/advanced-installation/install-advanced-monitoring) аддон Kube Prometheus Stack версии `54.2.2`.
+1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-delete)[text=Удалите текущую версию аддона]}, пользуясь интерфейсами {var(cloud)}.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=Установите в кластер]} аддон Kube Prometheus Stack версии `54.2.2`.
 
    Выполните **стандартную установку** следующим образом:
 
    1. Задайте те же названия приложения и пространства имен, которые использовались при установке аддона предыдущей версии.
 
-   1. Изучите код настройки аддона предыдущей версии, [полученный ранее](#1_poluchite_informaciyu_neobhodimuyu_dlya_obnovleniya_addona). Найдите фрагменты кода, которые отвечают за настройку хранилища для следующих компонентов аддона:
+   1. Изучите код настройки аддона предыдущей версии, {linkto(#k8s-update-monitoring-addon-get-info)[text=полученный ранее]}. Найдите фрагменты кода, которые отвечают за настройку хранилища для следующих компонентов аддона:
 
       {tabs}
 
@@ -587,32 +583,29 @@
       Если вы указали пароль для доступа к Grafana в поле `grafana.adminPassword` при установке аддона предыдущей версии, указывать его повторно не нужно. Новая версия аддона будет использовать прежние PVs в качестве хранилища, поэтому пароль останется прежним. Установка новой версии аддона не поменяет пароль для доступа к Grafana, даже если оставить это поле пустым: будет сгенерирован секрет с паролем для Grafana, но он не будет использован.
 
       {note:warn}
-
       Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
-
       {/note}
 
    1. Установите аддон.
 
       Процесс установки может занять длительное время. Дождитесь его завершения.
 
-1. Получите информацию о используемых аддоном [Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)](../../reference/pvs-and-pvcs):
+1. Получите информацию о используемых аддоном {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)]}:
 
    ```console
    kubectl -n $NAMESPACE get pvc
    ```
 
-   Вывод команды должен быть аналогичен выводу команды, которая [выполнялась ранее](#1_poluchite_informaciyu_neobhodimuyu_dlya_obnovleniya_addona) для аддона предыдущей версии. Так, PVC `alertmanager...` должен быть связан с тем же PV, который использовался Alert Manager ранее. Для Prometheus и Grafana — аналогично.
+   Вывод команды должен быть аналогичен выводу команды, которая {linkto(#k8s-update-monitoring-addon-get-info)[text=выполнялась ранее]} для аддона предыдущей версии. Так, PVC `alertmanager...` должен быть связан с тем же PV, который использовался Alert Manager ранее. Для Prometheus и Grafana — аналогично.
 
-## 4. Проверьте работоспособность аддона после обновления
+## {heading(4. Проверьте работоспособность аддона после обновления)[id=k8s-update-monitoring-addon-check]}
 
-[Получите доступ к веб-интерфейсу Grafana](../../monitoring#connect_grafana). Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, [сбросьте его](../../instructions/addons/advanced-installation/install-advanced-monitoring#reset_grafana_password).
+{linkto(../../monitoring#k8s-monitoring-connect-grafana)[text=Получите доступ к веб-интерфейсу Grafana]}. Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring-reset-password)[text=сбросьте его]}.
 
 Успешное подключение к Grafana свидетельствует об успешном обновлении аддона.
 
-## Удалите неиспользуемые ресурсы
+{ifdef(public)}
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-update-monitoring-addon-delete]}
 
-Работающий кластер Cloud Containers тарифицируется и потребляет вычислительные ресурсы. Если вы создали кластер в тестовых целях и он вам больше не нужен:
-
-- [остановите](../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}
+{/ifdef}

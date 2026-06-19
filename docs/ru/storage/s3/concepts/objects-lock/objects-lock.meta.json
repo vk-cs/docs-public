@@ -1,9 +1,16 @@
 {
   "title": "Блокировка объектов (object lock)",
   "shortDescription": "Блокировка объектов от удаления и перезаписи",
-  "metaDescription": "Блокировка объектов от удаления и перезаписи в сервисе Object Storage. Временная блокировка (retention period): управляемый (GOVERNANCE) и строгий (COMPLIANCE) режимы. Бессрочная блокировка (legal hold). Связь между версионированием и блокировкой объектов.",
+  "metaDescription": "Блокировка объектов от удаления и перезаписи в сервисе VK Object Storage. Временная блокировка (retention period): управляемый (GOVERNANCE) и строгий (COMPLIANCE) режимы. Бессрочная блокировка (legal hold). Связь между версионированием и блокировкой объектов.",
   "sectionTitle": "Блокировка объектов (object lock)",
   "icon": "",
   "weight": 4,
-  "uuid": "8b8c5a2a-05ac-4978-8c65-e7bf14f7bd22"
+  "uuid": "8b8c5a2a-05ac-4978-8c65-e7bf14f7bd22",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

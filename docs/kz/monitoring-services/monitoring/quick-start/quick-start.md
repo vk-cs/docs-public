@@ -1,3 +1,5 @@
+# {heading(Жылдам бастау)[id=monitoring-quick-start]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жылдам бастау Cloud Monitoring сервисімен жұмысты бастауға және оның мүмкіндіктерімен виртуалды машина мысалында танысуға көмектеседі.
@@ -10,7 +12,7 @@
 - `cpu_usage_system` метрикасы мысалында мониторинг деректері бар жеке график жасайсыз.
 
 {note:warn}
-Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және [тарифтеледі](/kz/computing/iaas/tariffication).
+Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және {linkto(../../../computing/iaas/tariffication#iaas-tariffication)[text=тарифтеледі]}.
 {/note}
 
-{include(/kz/_includes/_monitoring.md)}
+{include(../../../_includes/_monitoring.md)}

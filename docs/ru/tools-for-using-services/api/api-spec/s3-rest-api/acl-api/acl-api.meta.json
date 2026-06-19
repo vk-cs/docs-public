@@ -1,9 +1,14 @@
 {
-    "title": "ACL",
-      "shortDescription": "",
-      "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL есть как у всего бакета, так и у каждого объекта",
-    "sectionTitle": "ACL",
-    "icon": "",
-    "weight": 4,
-    "uuid": "f45c4a9a-cad3-458e-87b2-4409b9190f14"
+  "title": "ACL",
+  "shortDescription": "Управение конфигурацией правил списков управления доступом (ACL) для бакетов и объектов",
+  "metaDescription": "Все доступные методы для работы со списками управления доступом (ACL) для бакетов и объектов VK Object Storage: установить ACL бакета (PutBucketACL) или объекта (PutObjectACL); получить ACL бакета (GetBucketACL) или объекта (GetObjectACL)",
+  "sectionTitle": "ACL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f45c4a9a-cad3-458e-87b2-4409b9190f14",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

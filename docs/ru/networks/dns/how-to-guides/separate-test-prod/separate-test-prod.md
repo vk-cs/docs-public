@@ -1,13 +1,15 @@
+# {heading(Разделение тестовой и production-сред)[id=dns-separate-test-prod]}
+
 С помощью настройки DNS можно разделить тестовую и production-среды, что повышает стабильность инфраструктуры и упрощает управление. Далее на примере будет показано, как выделить тестовую среду в отдельную подзону DNS:
 
 - Production-среда остается в основной DNS-зоне `example.com`.
-- Тестовая среда размещается в подзоне `test.example.com`, которая делегирована на DNS-серверы VK Cloud.
+- Тестовая среда размещается в подзоне `test.example.com`, которая делегирована на DNS-серверы {var(cloud)}.
 - Ресурсные записи каждой среды создаются и управляются только в своей зоне.
 
-## {heading(Подготовительные шаги)[id=prepare]}
+## {heading(Подготовительные шаги)[id=dns-separate-test-prod-prep]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) DNS-зону для production-среды, если она еще не создана.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add)[text=Создайте]} DNS-зону для production-среды, если она еще не создана.
 1. Установите утилиту `dig` на ваш компьютер для проверки настройки DNS:
 
    {tabs}
@@ -47,14 +49,12 @@
    {/tabs}
 
    {note:info}
-
    Вы можете использовать другие утилиты для проверки настроек DNS. Команды проверки при этом будут отличаться.
-
    {/note}
 
-## {heading(1. Создайте подзону)[id=create_subzone]}
+## {heading(1. Создайте подзону)[id=dns-separate-test-prod-subzone]}
 
-[Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) подзону для тестовой среды, указав параметры:
+{linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-subzone-add)[text=Создайте]} подзону для тестовой среды, указав параметры:
 
 - **Проект**: проект, в котором размещается DNS-зона production-среды.
 - **DNS-зона**: `test.example.com`.
@@ -62,13 +62,13 @@
 
 Остальные параметры оставьте по умолчанию или настройте по необходимости.
 
-## {heading(2. Делегируйте управление подзоной)[id=delegate_subzone]}
+## {heading(2. Делегируйте управление подзоной)[id=dns-separate-test-prod-delegate]}
 
-[Создайте](/ru/networks/dns/instructions/publicdns/records#add) в DNS-зоне `example.com` NS-записи, указав параметры:
+{linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=Создайте]} в DNS-зоне `example.com` NS-записи, указав параметры:
 
 - **Тип записи**: `NS`.
 - **Имя**: `test`.
-- **Значение**: адреса NS-серверов для зоны `example.com`, которые можно [посмотреть](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) в списке ресурсных записей.
+- **Значение**: адреса NS-серверов для зоны `example.com`, которые можно {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-list)[text=посмотреть]} в списке ресурсных записей.
   В этом примере: `ns1.mcs.mail.ru` — для первой записи, `ns2.mcs.mail.ru` — для второй записи.
 
 Пример ресурсных записей в DNS-зоне `example.com` после делегирования управления подзоной:
@@ -78,9 +78,9 @@ test   NS   ns1.mcs.mail.ru
 test   NS   ns2.mcs.mail.ru
 ```
 
-## {heading(3. Настройте DNS для тестовой среды)[id=test_env_settings]}
+## {heading(3. Настройте DNS для тестовой среды)[id=dns-separate-test-prod-test]}
 
-1. [Создайте](/ru/networks/dns/instructions/publicdns/records#add) A-запись в подзоне `test.example.com`, указав параметры:
+1. {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=Создайте]} A-запись в подзоне `test.example.com`, указав параметры:
 
    - **Тип записи**: `A`.
    - **Имя**: `app`.
@@ -94,7 +94,7 @@ test   NS   ns2.mcs.mail.ru
    - **Значение**: домен тестовых сервисов.
    - **ТТL**: оставьте по умолчанию или настройте по необходимости.
 
-1. (Опционально) Создайте в подзоне `test.example.com` [другие ресурсные записи](/ru/networks/dns/instructions/publicdns/records#dobavlenie_resursnyh_zapisey), которые понадобятся для работы в тестовой среде. Например, с помощью записей MX и TXT можно определить тестовые почтовые серверы и их настройки.
+1. (Опционально) Создайте в подзоне `test.example.com` {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=другие ресурсные записи]}, которые понадобятся для работы в тестовой среде. Например, с помощью записей MX и TXT можно определить тестовые почтовые серверы и их настройки.
 
 Пример ресурсных записей в подзоне `test.example.com` после настройки DNS для тестовой среды:
 
@@ -105,9 +105,9 @@ api   CNAME   app.test.example.com
 
 В примере указан частный IP-адрес. Если ваш сервер доступен из интернета, используйте публичный IP.
 
-## {heading(4. Настройте DNS для production-среды)[id=prod_env_settings]}
+## {heading(4. Настройте DNS для production-среды)[id=dns-separate-test-prod-prod]}
 
-1. [Создайте](/ru/networks/dns/instructions/publicdns/records#add) A-запись в DNS-зоне `example.com`, указав параметры:
+1. {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=Создайте]} A-запись в DNS-зоне `example.com`, указав параметры:
 
    - **Тип записи**: `A`.
    - **Имя**: `app`.
@@ -121,9 +121,9 @@ api   CNAME   app.test.example.com
    - **Значение**: домен production-сервисов.
    - **ТТL**: оставьте по умолчанию или настройте по необходимости.
 
-1. (Опционально) Создайте в DNS-зоне `example.com` [другие ресурсные записи](/ru/networks/dns/instructions/publicdns/records#dobavlenie_resursnyh_zapisey), которые понадобятся для работы в production-среде. Например, с помощью записей MX и TXT можно определить почтовые серверы и их настройки.
+1. (Опционально) Создайте в DNS-зоне `example.com` {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=другие ресурсные записи]}, которые понадобятся для работы в production-среде. Например, с помощью записей MX и TXT можно определить почтовые серверы и их настройки.
 
-1. [Удалите](/ru/networks/dns/instructions/publicdns/records#udalenie_resursnyh_zapisey) в зоне `example.com` ресурсные записи для тестовой среды, если они в ней есть.
+1. {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-delete)[text=Удалите]} в зоне `example.com` ресурсные записи для тестовой среды, если они в ней есть.
 
 Пример ресурсных записей в DNS-зоне `example.com` после настройки DNS для production-среды:
 
@@ -132,7 +132,7 @@ app   A   83.166.234.101
 api   CNAME   app.example.com
 ```
 
-## {heading(5. Проверьте настройки DNS)[id=check]}
+## {heading(5. Проверьте настройки DNS)[id=dns-separate-test-prod-check]}
 
 1. Проверьте разрешение имен для тестовой среды:
 
@@ -204,11 +204,11 @@ api   CNAME   app.example.com
 
    {/tabs}
 
-   В ответе вернутся адреса NS-серверов для зоны `example.com`, которые можно [посмотреть](/ru/networks/dns/instructions/publicdns/records#prosmotr_spiska_resursnyh_zapisey) в списке ресурсных записей. В этом примере: `ns1.mcs.mail.ru` и `ns2.mcs.mail.ru`.
+   В ответе вернутся адреса NS-серверов для зоны `example.com`, которые можно {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-list)[text=посмотреть]} в списке ресурсных записей. В этом примере: `ns1.mcs.mail.ru` и `ns2.mcs.mail.ru`.
 
-## {heading(Удалите неиспользуемые ресурсы)[id=delete]}
+## {heading(Удалите неиспользуемые ресурсы)[id=dns-separate-test-prod-delete]}
 
 Если добавленные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/networks/dns/instructions/publicdns/dns-zone#delete) подзону `test.example.com`.
-1. [Удалите](/ru/networks/dns/instructions/publicdns/records#udalenie_resursnyh_zapisey) ненужные NS-записи в DNS-зоне `example.com`.
+1. {linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-delete)[text=Удалите]} подзону `test.example.com`.
+1. {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-delete)[text=Удалите]} ненужные NS-записи в DNS-зоне `example.com`.

@@ -4,5 +4,14 @@
   "metaDescription": "Load Balancing VK Cloud жүктеме теңгерімдеушілері сервисі. Тұжырымдамалар, нұсқаулықтар, жүктеме теңгерімдеушілерімен байланысты мәселелерді диагностикалау және жою тәсілдері",
   "sectionTitle": "Load Balancing",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

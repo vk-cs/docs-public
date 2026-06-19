@@ -4,5 +4,10 @@
   "metaDescription": "Data Lakehouse архитектурасындағы Cloud Airflow компонентінің мақсаты мен функциялары",
   "sectionTitle": "Cloud Airflow",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

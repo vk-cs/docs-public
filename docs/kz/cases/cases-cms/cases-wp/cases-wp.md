@@ -7,7 +7,7 @@
 ## Дайындық қадамдары
 
 1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account).
-1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
+1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).
 1. [ВМ жасаңыз](/kz/computing/iaas/instructions/vm/vm-create):
 
    - атауы: `Almalinux_9_WP`;
@@ -28,7 +28,7 @@
 
    Мысалда жасалған инстанстың ішкі IP-мекенжайы: `10.0.0.7`.
 
-1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#add).
+1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add).
 
    {note:warn}
 
@@ -36,7 +36,7 @@
 
    {/note}
 
-1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#add):
+1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-zone-add):
 
    - жазба түрі: `A`;
    - атауы: мысалы, `site-wp.example.vk.cloud`;
@@ -120,9 +120,9 @@ WordPress CMS әкімші панелі ашылады.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Өрістетілген виртуалды ресурстар тарифтелмейді. Егер олар енді қажет болмаса:
+Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Almalinux_9_WP` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-- `MySQL-9341` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansyn_nemese_onyn_hosttaryn_zhoyu).
-- Қажет болса, `212.233.95.135` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
-- Жасалған `site-wp.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#resurstyk_zhazbalardy_zhoyu).
+- `Almalinux_9_WP` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `MySQL-9341` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
+- Қажет болса, `212.233.95.135` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
+- Жасалған `site-wp.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

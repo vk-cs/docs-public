@@ -27,7 +27,7 @@
    Если опция активна, пользователь сможет изменить ее значение.
 * Для постоплатной тарификации укажите значение `resource_usages`
 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |schema
 |
@@ -38,7 +38,7 @@
 * Настройки значения тарифной опции.
 
 Параметры секции приведены в разделе {linkto(#iboption_schema)[text=%text]}
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |billing
 |
@@ -48,7 +48,7 @@
 * Пользовательский шаг изменения для тарифной опции типа `integer`.
 
 Параметры секции приведены в разделе {linkto(#iboption_billing)[text=%text]}
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -84,19 +84,19 @@
 
 Если параметр не задан, то стандартное значение тарифной опции автоматически будет равно `0`
 |integer
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |cost
 |Определяет стоимость шага, на который можно изменить значение тарифной опции.
 
 Если изменение опции бесплатно, то укажите `0`. Параметры шага определяются в секции `unit`
 |float64, >= 0
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit
 |Определяет параметры шага изменения опции
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|Параметры секции `unit`
 
@@ -105,12 +105,12 @@
 
 Значение, указанное в этом параметре, тарифицируется в соответствии со стоимостью, заданной в параметре `billig.cost`
 |integer, > 0
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit.measurement
 |Определяет единицы измерения шага, заданного в параметре `unit.size`
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -126,7 +126,7 @@
 |
 Определяет стоимость опции
 |float64, >= 0
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -141,24 +141,24 @@
 |cost
 |Определяет стоимость единицы тарифной опции
 |float64, >= 0
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit
 |Определяет единицы измерения опции
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|Параметры секции `unit`
 
 |unit.size
 |Шаг тарификации опции. Значение должно быть `1`
 |integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit.measurement
 |Определяет единицы измерения опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -213,17 +213,17 @@
 |description
 |Имя тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |hint
 |Подсказка с описанием тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |type
 |Определяет тип тарифной опции. Укажите значение `integer`
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры, чтобы настроить подтип тарифной опции**
 
@@ -232,19 +232,19 @@
 |const
 |Определяет значение тарифной опции-константы
 |integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры для опции с выбором значения**
 
 |enum
 |Определяет список значений, среди которых пользователь сможет выбрать одно
 |Список, внутри списка — integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |default
 |Определяет значение тарифной опции по умолчанию
 |integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры для опции c шагом изменения 1**
 
@@ -253,24 +253,24 @@
 
 Если параметр не задан, то значение по умолчанию равно `0`
 |integer, >= 0 или `minimum`, &#8656; `maximum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |minimum
 |Определяет минимальное значение тарифной опции
 |integer, >= 0 и &#8656; `maximum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |maximum
 |Определяет максимальное значение тарифной опции
 |integer, > 0 и >= `minimum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |tag
 |Тег. Позволяет связать несколько опций между собой.
 
 Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in#IBoption_fill_in_volume)[text=%text]})
 |string
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 4+|**Параметры для опции c пользовательским шагом изменения. Шаг изменения настраивается в секции {linkto(#iboption_billing)[text=%text]}**
 
@@ -285,7 +285,7 @@
    ```
 
 |integer, >= 0 или `minimum`, &#8656; `maximum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |minimum
 |Определяет минимальное значение тарифной опции, рассчитанное относительно стандартного значения (стандартное значение задается в параметре `billing.base`) :
@@ -298,7 +298,7 @@
    ```
 
 |integer, >= 0 и &#8656; `maximum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |maximum
 |Определяет максимальное значение тарифной опции, рассчитанное относительно стандартного значения (стандартное значение задается в параметре `billing.base`):
@@ -311,7 +311,7 @@
    ```
 
 |integer, > 0 и >= `minimum`
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -330,17 +330,17 @@
 |description
 |Имя тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |hint
 |Подсказка с описанием тарифной опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |type
 |Определяет тип тарифной опции. Укажите значение `integer` или `number`
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -379,17 +379,17 @@
 |description
 |Имя тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |hint
 |Подсказка с описанием тарифной опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |type
 |Определяет тип тарифной опции. Укажите значение `string`
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры, чтобы настроить подтип тарифной опции**
 
@@ -398,41 +398,41 @@
 |const
 |Определяет значение тарифной опции-константы
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры для опции c вводом значения**
 
 |default
 |Определяет значение по умолчанию
 |string
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |pattern
 |Определяет шаблон, которому должно соответствовать значение тарифной опции
 |regex
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |minLength
 |Определяет минимальное количество символов для значения тарифной опции
 |integer, > 0 и &#8656; `maxLength`
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |maxLength
 |Определяет максимальное количество символов для значения тарифной опции
 |integer, > 0 и >= `minLength`
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 4+|**Параметры для опции с выбором значения из списка**
 
 |enum
 |Определяет список значений, среди которых пользователь сможет выбрать одно
 |Список, внутри списка — string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |default
 |Определяет значение по умолчанию
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -466,17 +466,17 @@
 |description
 |Имя тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |hint
 |Подсказка с описанием тарифной опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |type
 |Определяет тип тарифной опции. Укажите значение `boolean`
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры, чтобы настроить подтип тарифной опции**
 
@@ -485,7 +485,7 @@
 |const
 |Определяет значение тарифной опции-константы
 |boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметр для опции-переключателя**
 
@@ -498,7 +498,7 @@
 
 {/note}
 |boolean
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -519,19 +519,19 @@
 |description
 |Имя тарифной опции
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |hint
 |Подсказка с описанием тарифной опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |type
 |Совместно с секцией `datasource` определяет тарифную опцию как опцию, связанную с сущностями облачной платформы.
 
 Укажите значение `string`
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |default
 |Определяет значение по умолчанию.
@@ -552,22 +552,22 @@
 * `ceph-hdd` — диск типа HDD.
 * `high-iops` — диск типа High-IOPS SSD (SSD с повышенной производительностью)
 
-| ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |tag
 |Тег. Позволяет связать несколько опций между собой.
 
 Используется, чтобы описать диск (подробнее — в разделе {linkto(../ibopt_fill_in#IBoption_fill_in_volume)[text=%text]})
 |string
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |datasource
 |Секция, которая совместно с параметром `type` определяет тарифную опцию как опцию, связанную с сущностями облачной платформы.
 
 Секция описывает конкретный тип сущности облачной платформы
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|**Параметры секции `datasource`**
 
@@ -583,8 +583,8 @@
 * `volume_type` — тип диска.
 
 Пользователю будет отображаться список значений, соответствующий указанному типу с учетом фильтров (фильтры задаются в секции `datasource.filter`). Среди этих значений пользователю нужно будет выбрать одно
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |datasource.filter
 |Секция может быть задана только для типов `datasource`:
@@ -594,20 +594,20 @@
 * `volume_type`
 
 Определяет фильтры для типа ВМ, сети или диска
-| ![](/ru/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 4+|**Фильтры для типа ВМ `datasource.filter`**
 
 |datasource.filter.vcpus
 |Определяет фильтры для CPU ВМ
 |Приведен в таблице {linkto(#tab_CPU_RAM)[text=Ограничения по CPU и RAM для ВМ]}
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |datasource.filter.ram
 |Определяет фильтры для RAM ВМ
 |Приведен в таблице {linkto(#tab_CPU_RAM)[text=Ограничения по CPU и RAM для ВМ]}
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 4+|**Фильтры для сети `datasource.filter`**
 
@@ -620,7 +620,7 @@
 * `internal` — только внутренние сети.
 * `all` — все сети
 |Список
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |datasource.filter.shared
 |Определяет фильтры по совместному использованию сети.
@@ -632,7 +632,7 @@
 
 Значение по умолчанию: `false`
 |Список
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 4+|**Фильтры для типа диска `datasource.filter`**
 
@@ -646,7 +646,7 @@
 * `high_iops_disk` — диск типа High-IOPS SSD (SSD с повышенной производительностью)
 
 |Список
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |datasource.filter.name.enum
 |Определяет фильтры по имени диска.
@@ -658,7 +658,7 @@
 * `high-iops` — диск типа High-IOPS SSD (SSD с повышенной производительностью)
 
 |Список
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -677,11 +677,11 @@
 
 Для RAM значение указывается в МБ
 |integer, > 0 и &#8656;  `maximum`
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |maximum
 |Определяет максимальное значение для CPU или RAM — в зависимости от того, в какой секции этот параметр задан
 |integer, > 0 и >= `minimum`
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}

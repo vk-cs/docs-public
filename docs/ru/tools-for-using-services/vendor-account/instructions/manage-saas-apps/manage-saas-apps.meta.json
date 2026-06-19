@@ -1,0 +1,14 @@
+{
+  "title": "Управление SaaS-приложениями",
+  "shortDescription": "Как добавить SaaS-приложение в Marketplace или обновить его",
+  "metaDescription": "Руководство по добавлению SaaS-приложений в Marketplace и их обновлению для случая разработки SaaS-брокера на основе шаблона, полученного от облачной платформы VK Cloud.",
+  "sectionTitle": "Управление SaaS-приложениями",
+  "weight": 5,
+  "isBeta": true,
+  "uuid": "9d701d79-19f3-4865-aa8d-4dbc84d79887",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -5,5 +5,19 @@
   "sectionTitle": "Integration",
   "icon": "",
   "weight": 5,
-  "uuid": "fd51ec64-683b-47c6-9908-01b2bb11c144"
+  "uuid": "fd51ec64-683b-47c6-9908-01b2bb11c144",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

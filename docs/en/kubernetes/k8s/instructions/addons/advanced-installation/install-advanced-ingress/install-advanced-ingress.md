@@ -5,7 +5,7 @@
 ## {heading(Installing add-on)[id=installing_addon]}
 
 {note:warn}
-When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get [charged](/en/networks/vnet/tariffication) for using them.
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.

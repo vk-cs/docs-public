@@ -1,9 +1,14 @@
 {
-    "title": "Editing a notification channel",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Editing a notification channel",
-    "icon": "",
-    "weight": 2,
-    "uuid": "a433ebab-f86d-4b8c-bd72-5804ebb05ab3"
+  "title": "Editing a notification channel",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Editing a notification channel",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a433ebab-f86d-4b8c-bd72-5804ebb05ab3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

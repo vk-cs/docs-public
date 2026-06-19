@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Networks сервисі. Floating IP-адрестер мен Anycast IP-адрестер қалай тағайындалады және интернетке қол жеткізу қалай ұйымдастырылады",
   "sectionTitle": "Желілік адрестеу және интернетке қол жеткізу",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

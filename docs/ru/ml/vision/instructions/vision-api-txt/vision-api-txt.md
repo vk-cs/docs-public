@@ -1,10 +1,12 @@
+# {heading(Распознавание текста в документах)[id=vision-instructions-vision-api-txt]}
+
 Данный метод позволяет распознавать текст на изображении.
 
 HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/text/recognize`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-vision-api-txt-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -17,7 +19,7 @@ ENDPOINT: `/api/v1/text/recognize`
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -36,11 +38,11 @@ ENDPOINT: `/api/v1/text/recognize`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-vision-api-txt-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -57,7 +59,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-vision-api-txt-answer]}
 
 | Параметр | Тип    | Значение                                              |
 | ------------ | --------   | --------------------------------------------------------- |
@@ -98,7 +100,7 @@ curl -X 'POST' \
 | lang_prob   | float32   | Уверенность распознавания языка                           |
 | lang        | string    | Eng/rus/unknown. Unknown когда не содержит букв алфавита  |
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-vision-api-txt-answer-example]}
 
 ```json
 {
@@ -117,9 +119,9 @@ curl -X 'POST' \
 }
 ```
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-vision-api-txt-extra-examples]}
 
-### mode=detailed
+### {heading(mode=detailed)[id=vision-instructions-vision-api-txt-extra-examples-mode-detailed]}
 
 Пример запроса:
 
@@ -808,7 +810,7 @@ curl -X 'POST' \
 
 {/cut}
 
-### На изображении нет текста
+### {heading(На изображении нет текста)[id=vision-instructions-vision-api-txt-extra-examples-no-text]}
 
 Пример запроса:
 
@@ -846,7 +848,7 @@ curl -X 'POST' \
 }
 ```
 
-### Пустое изображение
+### {heading(Пустое изображение)[id=vision-instructions-vision-api-txt-extra-examples-empty-img]}
 
 Пример запроса:
 
@@ -877,7 +879,7 @@ curl -X 'POST' \
 }
 ```
 
-### Некорректный JSON
+### {heading(Некорректный JSON)[id=vision-instructions-vision-api-txt-extra-examples-invalid-json]}
 
 Пример запроса:
 

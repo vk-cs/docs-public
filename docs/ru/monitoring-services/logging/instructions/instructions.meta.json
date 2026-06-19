@@ -5,5 +5,14 @@
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 3,
-  "uuid": "1559fd11-9d02-48b8-9356-5e5bccdc69cc"
+  "uuid": "1559fd11-9d02-48b8-9356-5e5bccdc69cc",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

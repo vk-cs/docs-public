@@ -4,7 +4,20 @@
   "metaDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
   "sectionTitle": "Concepts",
   "icon": "",
-
   "weight": 2,
-  "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539"
+  "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

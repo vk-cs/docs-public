@@ -1,8 +1,13 @@
 {
-  "title": "Концепции",
+  "title": "Тұжырымдамалар",
   "shortDescription": "VK Cloud ішіндегі Data LakeHouse сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
   "metaDescription": "VK Cloud ішіндегі Data LakeHouse сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
-  "sectionTitle": "Концепции",
+  "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

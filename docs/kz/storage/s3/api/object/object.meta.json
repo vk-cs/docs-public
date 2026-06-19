@@ -1,0 +1,16 @@
+{
+  "title": "Object",
+  "shortDescription": "Объектіні жүктеу, көшіру, жою, объектінің бар-жоғын тексеру және оның мазмұнын жүктеп алу",
+  "metaDescription": "VK Object Storage жүйесінде объектілермен жұмыс істеуге арналған барлық қолжетімді әдістер: бакеттен объектіні жүктеп алу (GetObject), объектіні бакетке жүктеу (PutObject), объектіні көшіру (CopyObject), объект туралы ақпарат алу (HeadObject), объектіні жою (DeleteObject) немесе объектілер тобын жою (DeleteMultipleObjects)",
+  "sectionTitle": "Object",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

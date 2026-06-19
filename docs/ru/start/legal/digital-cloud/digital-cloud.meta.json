@@ -5,5 +5,10 @@
   "sectionTitle": "Правовые документы ООО «Цифровое Облако»",
   "icon": "",
   "weight": 1,
-  "uuid": "b2c50ffe-88b4-4b84-b937-d496aac45810"
+  "uuid": "b2c50ffe-88b4-4b84-b937-d496aac45810",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

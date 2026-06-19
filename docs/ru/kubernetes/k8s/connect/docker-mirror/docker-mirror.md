@@ -1,9 +1,9 @@
-{note:warn}
+# {heading(Настройка зеркала Docker)[id=k8s-docker-mirror]}
 
+{note:warn}
 Используйте сторонние зеркала Docker Hub с осторожностью. Владельцы зеркал могут подменять содержимое образа при загрузке.
 
-Команда VK Cloud работает над предоставлением официального зеркала hub.docker.com.
-
+Команда {var(cloud)} работает над предоставлением официального зеркала hub.docker.com.
 {/note}
 
 Чтобы настроить Docker Hub:
@@ -12,20 +12,20 @@
 
 {tab(Приватный реестр с аддоном Docker Registry)}
 
-  1. [Установите аддон](../../../k8s/instructions/addons/advanced-installation/install-advanced-registry) Docker Registry, если этого еще не сделано.
+  1. {linkto(../../../k8s/instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry)[text=Установите аддон]} Docker Registry, если этого еще не сделано.
   1. Скачайте нужный образ на локальный компьютер. Для этого выполните команду:
 
       ```console
-      docker pull mirror.gcr.io/<имя_образа>
+      docker pull mirror.gcr.io/<ИМЯ_ОБРАЗА>
       ```
   
-  1. [Загрузите](../../../k8s/quick-start#4_zagruzite_nuzhnye_obrazy_v_reestr_docker) скачанный образ в приватный репозиторий.
+  1. {linkto(../../../k8s/quick-start#k8s-quick-start-upload-to-registry)[text=Загрузите]} скачанный образ в приватный репозиторий.
 
   {/tab}
 
 {tab(Daemonset для Cloud Containers)}
 
-  Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере [с помощью kubectl](../kubectl) или в [личном кабинете](../../instructions/manage-resources):
+  Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере {linkto(../kubectl#k8s-kubectl)[text=с помощью kubectl]} или в {linkto(../../instructions/manage-resources#k8s-manage-resources)[text=личном кабинете]}:
 
   ```yaml
 

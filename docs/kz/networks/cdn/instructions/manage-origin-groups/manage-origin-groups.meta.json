@@ -4,5 +4,10 @@
   "metaDescription": "CDN-дегі дереккөз топтарымен типтік операциялар.",
   "sectionTitle": "Дереккөз топтарын басқару",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

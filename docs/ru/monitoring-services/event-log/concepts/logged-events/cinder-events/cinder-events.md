@@ -1,6 +1,8 @@
-События, которые [сервис управления дисками и их снимками](/ru/computing/iaas/instructions/volumes) передает в Cloud Audit.
+# {heading(События компонента Cinder)[id=event-log-cinder]}
 
-## События компонента Cinder v2
+События, которые {linkto(../../../../../computing/iaas/instructions/volumes#iaas-volumes)[text=сервис управления дисками и их снимками]} передает в Cloud Audit.
+
+## {heading(События компонента Cinder v2)[id=event-log-cinder-v2]}
 
 [cols="2,3", options="header"]
 |===
@@ -122,7 +124,7 @@
 |Выполнено действие с томом
 |===
 
-## События компонента Cinder v3
+## {heading(События компонента Cinder v3)[id=event-log-cinder-v3]}
 
 [cols="2,3", options="header"]
 |===

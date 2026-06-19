@@ -4,5 +4,20 @@
   "metaDescription": "Пайдалану сценарийлері: Docker CE қалай орнатуға және оны Docker контейнерлерін басқару үшін қалай пайдалануға болады",
   "sectionTitle": "Linux жүйесінде Docker CE орнату және пайдалану",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "uuid": "3e4426b6-5eda-4ab8-8930-75006c90b683",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

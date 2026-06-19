@@ -1,9 +1,14 @@
 {
-    "title": "Prefix access keys",
-      "shortDescription": "",
-      "metaDescription": "Общая информация Префиксные ключи (prefix access keys) позволяют создать пользователей, для которых доступ ограничен по определенному пути. Данные пользова",
-    "sectionTitle": "Prefix access keys",
-    "icon": "",
-    "weight": 8,
-    "uuid": "9120115e-616f-48ca-a282-12639a63a366"
+  "title": "Prefix access keys",
+  "shortDescription": "Создание пользователей с гибкими настройками доступа по префиксным ключам (prefix access keys)",
+  "metaDescription": "Все доступные методы для работы с префиксными ключами для доступа к VK Object Storage: создание пользователя с префиксными ключами для доступа (CreatePrefixKey), получить список префиксных пользователей (ListPrefixKeys), удалить префиксный ключ у пользователя (DeletePrefixKey)",
+  "sectionTitle": "Prefix access keys",
+  "icon": "",
+  "weight": 9,
+  "uuid": "9120115e-616f-48ca-a282-12639a63a366",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

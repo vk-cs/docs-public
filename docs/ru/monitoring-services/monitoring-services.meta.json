@@ -4,5 +4,15 @@
   "metaDescription": "Сервисы мониторинга VK Cloud",
   "weight": 10,
   "icon": "",
-  "uuid": "bdbdbc0a-d298-45de-9d91-f68f0c4c9b5b"
+  "uuid": "bdbdbc0a-d298-45de-9d91-f68f0c4c9b5b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }
+

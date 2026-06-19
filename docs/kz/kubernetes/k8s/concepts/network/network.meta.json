@@ -4,5 +4,15 @@
   "metaDescription": "Kubernetes кластерлерінің VK Cloud желілік сервистерімен интеграциясы. Kubernetes кластеріндегі желілік инфрақұрылым нысандары, жүктеме теңгергіштері, Ingress-контроллер",
   "sectionTitle": "Кластердегі желі",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

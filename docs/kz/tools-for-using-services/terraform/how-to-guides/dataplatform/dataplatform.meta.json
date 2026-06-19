@@ -1,8 +1,14 @@
 {
-  "title": "VK Data Platform",
-  "shortDescription": "VK Data Platform сервисінің объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "title": "{var(data-p)}",
+  "shortDescription": "{var(data-p)} сервисінің объектілерін басқару үшін Terraform қалай пайдаланылады",
   "metaDescription": "VK Data Platform сервистерінің даналарын басқару үшін Terraform қалай пайдаланылатынын біліңіз. Spark кластерін құру мысалымен танысыңыз.",
-  "sectionTitle": "VK Data Platform",
+  "sectionTitle": "{var(data-p)}",
   "icon": "",
-  "weight": 80
+  "weight": 80,
+  "build": {
+    "for": [
+      "public",
+      "data-p"
+    ]
+  }
 }

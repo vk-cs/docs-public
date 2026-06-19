@@ -1,3 +1,5 @@
+# {heading(Создание сетей)[id=terraform-network]}
+
 В статье приведены примеры создания облачных сетей в сервисе Cloud Network при помощи Terraform:
 
 - приватной сети;
@@ -24,15 +26,15 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=terraform-network-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-## 1. Создайте файл с описанием сети
+## {heading({counter(tf-network)}. Создайте файл с описанием сети)[id=terraform-network-net-file]}
 
 Создайте файл конфигурации Terraform `network.tf`. Содержание зависит от нужного типа сети:
 
@@ -42,12 +44,12 @@
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
-  1. Создается сеть `example-tf-net` в SDN `Sprut`.
-  1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, без подключения к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net).
-  1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
+1. Создается сеть `example-tf-net` в SDN `Sprut`.
+1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
+1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, без подключения к {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}.
+1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
 
-{include(/ru/_includes/_create_network_tf.md)[tags=net,router,shift=2]}
+{include(../../../../../_includes/_create_network_tf.md)[tags=net,router,shift=2]}
 
 {/tab}
 
@@ -55,12 +57,12 @@
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
-  1. Создается сеть `example-tf-net` в SDN `Sprut`.
-  1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net) в SDN `Sprut`.
-  1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
+1. Создается сеть `example-tf-net` в SDN `Sprut`.
+1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
+1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]} в SDN `Sprut`.
+1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
 
-{include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
+{include(../../../../../_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
 
 {/tab}
 
@@ -68,14 +70,14 @@
 
 В файле описана сетевая инфраструктура в следующей конфигурации:
 
-  1. Создается сеть `example-tf-net` в SDN `Sprut`.
-  1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
-  1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net) в SDN `Sprut`.
-  1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
-  1. Создается порт, которому присваивается IP-адрес `192.168.199.23`.
-  1. Порт связывается с Floating IP-адресом.
+1. Создается сеть `example-tf-net` в SDN `Sprut`.
+1. Создается подсеть `example-tf-subnet` в сети `example-tf-net`.
+1. Создается маршрутизатор `example-tf-router` в SDN `Sprut`, с подключением к {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]} в SDN `Sprut`.
+1. Связываются подсеть `example-tf-subnet` и маршрутизатор `example-tf-router`.
+1. Создается порт, которому присваивается IP-адрес `192.168.199.23`.
+1. Порт связывается с Floating IP-адресом.
 
-  {include(/ru/_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
+{include(../../../../../_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
 
 {/tab}
 
@@ -84,15 +86,13 @@
 Здесь:
 
 - `admin_state_up` — создание ресурса в статусе включен `true` или выключен `false`.
-
-- `external` — признак [внешней сети](/ru/networks/vnet/concepts/net-types#external_net): `true` или `false`.
-
+- `external` — признак {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}: `true` или `false`.
 - `external_network_id` — идентификатор внешней сети для доступа к интернету. Идентификатор можно указать в манифесте или получить из источника данных.
 
   {cut(Примеры)}
 
   - `external_network_id = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`.
-  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: указывается идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: указывается идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
@@ -107,19 +107,18 @@
 
   - `network_id = vkcs_networking_network.example.id`: подсеть будет размещена в новой сети, которая будет создана ресурсом `vkcs_networking_network`.
   - `network_id = data.vkcs_networking_network.example.id`: подсеть будет размещена в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`.
-  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: подсеть будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: подсеть будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-- `pool` — пул Floating IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/sdn) Sprut, `ext-net` для SDN Neutron.
-
+- `pool` — пул Floating IP-адресов: `internet` для {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]} Sprut, `ext-net` для SDN Neutron.
 - `port_id` — идентификатор порта, с которым будет связан Floating IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
   {cut(Примеры)}
 
   - `port_id = vkcs_networking_port.example.id`: идентификатор порта будет получен после создания ресурса `vkcs_networking_port`.
   - `port_id = data.vkcs_networking_port.example.id`: идентификатор порта будет получен из источника данных `vkcs_networking_port`.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из [списка портов](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указан идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/ports#vnet-ports-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
@@ -129,23 +128,22 @@
 
   - `router_id = vkcs_networking_subnet.example.id`: подсеть будет связана с новым маршрутизатором, который будет создан ресурсом `vkcs_networking_router`.
   - `router_id = data.vkcs_networking_subnet.example.id`: подсеть будет связана с существующим маршрутизатором, его идентификатор берется из источника данных `vkcs_networking_router`.
-  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: подсеть будет связана с существующим маршрутизатором. Указывается его идентификатор, полученный из [списка маршрутизаторов](/ru/networks/vnet/instructions/router#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: подсеть будет связана с существующим маршрутизатором. Указывается его идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/router#vnet-router-view)[text=списка маршрутизаторов]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-- `sdn` — [SDN](/ru/networks/vnet/concepts/sdn), в которой создается ресурс (сеть, подсеть, маршрутизатор и пр.). Доступные значения: `neutron`, `sprut`. Если SDN не указана, используется SDN по умолчанию. Узнать, какие SDN подключены для вашего проекта, можно в [настройках проекта](/ru/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
-
+- `sdn` — {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]}, в которой создается ресурс (сеть, подсеть, маршрутизатор и пр.). Доступные значения: `neutron`, `sprut`. Если SDN не указана, используется SDN по умолчанию. Узнать, какие SDN подключены для вашего проекта, можно в {linkto(../../../../account/instructions/project-settings/manage#project-sdn-view)[text=настройках проекта]}.
 - `subnet_id` — идентификатор подсети. Идентификатор можно указать в манифесте, получить из источника данных или после создания ресурса.
 
   {cut(Примеры)}
 
   - `subnet_id = vkcs_networking_subnet.example.id`: идентификатор подсети будет получен после ее создания ресурсом `vkcs_networking_subnet`.
   - `subnet_id = data.vkcs_networking_subnet.example.id`: идентификатор подсети берется из источника данных `vkcs_networking_subnet`.
-  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указывается идентификатор подсети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: указывается идентификатор подсети, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-## 2. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-network)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-network-create]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -169,14 +167,14 @@
 
 1. Дождитесь завершения операции.
 
-## 3. Проверьте применение конфигурации
+## {heading({counter(tf-network)}. Проверьте применение конфигурации)[id=terraform-network-check]}
 
 Убедитесь, что сеть и инфраструктура были успешно созданы:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**. Убедитесь, что сеть создана и содержит все добавленные в примере подсети, маршрутизаторы и порты.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-network-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

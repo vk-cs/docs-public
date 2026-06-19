@@ -5,5 +5,19 @@
   "sectionTitle": "Creating an instance of the service",
   "icon": "",
   "weight": 1,
-  "uuid": "05c26a5d-60a5-404e-bec0-004a9b0f0ce5"
+  "uuid": "05c26a5d-60a5-404e-bec0-004a9b0f0ce5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

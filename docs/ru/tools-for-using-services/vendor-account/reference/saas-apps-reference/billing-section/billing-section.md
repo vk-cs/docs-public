@@ -1,4 +1,4 @@
-Секция `billing` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) содержит следующую информацию:
+Секция `billing` в [JSON-файле конфигурации сервиса](../../../instructions/manage-saas-apps/saas-add#service_config) содержит следующую информацию:
 
 * Стоимость тарифного плана.
 * Длительность отчетного периода для тарификации.
@@ -121,7 +121,7 @@
 
 {note:warn}
 
-Если сбор метрик происходит по [pull-модели](../../../manage-apps/concepts/about#billing_pull), стоимость должна соответствовать значению `price`, [указанному в методе брокера](../../../manage-saas-apps/saas-add#saas_broker) для передачи отчета в Marketplace.
+Если сбор метрик происходит по [pull-модели](../../../manage-apps/concepts/about#billing_pull), стоимость должна соответствовать значению `price`, [указанному в методе брокера](../../../instructions/manage-saas-apps/saas-add) для передачи отчета в Marketplace.
 
 {/note}
 |float64, >= 0
@@ -147,7 +147,7 @@
 
 {note:info}
 
-Чтобы эффективно использовать [бонусы](../../../manage-saas-apps/saas-add#saas_test_marketplace), выдаваемые для тестирования и отладки сервиса в Marketplace, до публикации сервиса указывайте тестовую стоимость тарифного плана и его опций.
+Чтобы эффективно использовать [бонусы](../../../instructions/manage-saas-apps/saas-add#saas_test_marketplace), выдаваемые для тестирования и отладки сервиса в Marketplace, до публикации сервиса указывайте тестовую стоимость тарифного плана и его опций.
 
 {/note}
 

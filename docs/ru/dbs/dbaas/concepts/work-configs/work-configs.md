@@ -1,40 +1,72 @@
-На платформе VK Cloud доступны три типа конфигураций инстансов СУБД. Типа конфигурации определяет, какое количество инстансов БД будет создано и их архитектуру.
+# {heading(Конфигурации инстансов БД)[id=dbaas-work-configs]}
 
-Для любого типа конфигурации может быть создана реплика — дополнительный инстанс для [репликации](../../instructions/replication). Тип диска реплики и его размер может отличаться от мастера и задается отдельно.
+На платформе {var(cloud)} доступны три типа конфигураций инстансов СУБД. Тип конфигурации определяет, какое количество инстансов БД будет создано и их архитектуру.
+
+{ifdef(public)}
+Для любого типа конфигурации может быть создана реплика — дополнительный инстанс для {linkto(../../instructions/replication#dbaas-replication)[text=репликации]}. Тип диска реплики и его размер может отличаться от мастера и задается отдельно.
 
 Реплика может быть преобразована в мастер. В этом случае репликация прекратится, и инстанс превратится в независимый мастер-инстанс, доступный для чтения и записи. Новый мастер-инстанс будет содержать те же данные, что и реплика до конвертации в мастер.
 
 По умолчанию реплики и мастер размещаются в одном ЦОД. Чтобы перенести один из инстансов в другой ЦОД, обратитесь в [техническую поддержку](/ru/contacts).
+{/ifdef}
 
-## {heading(Single)[id=single]}
+{ifndef(public)}
+{ifdef(private-pdf, private-pg-pdf)}
+Варианты конфигураций БД приведены в {linkto(#tab_db_config_types)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_db_config_types]} — Типы конфигураций)[align=right;position=above;id=tab_db_config_types;number={const(numb_tab_db_config_types)}]}
+{/ifdef}
+[cols="1,2,2", options="header"]
+|===
+|Конфигурация
+|Описание
+|Использование
+
+|Single
+|Конфигурация содержит единичный инстанс СУБД без реплики
+|Используется для разработки и тестирования
+
+|Master-Replica
+|Конфигурация содержит два инстанса СУБД с репликацией в режиме Master-Replica (active-passive)
+|Используется для ускорения запросов на чтение и запись
+
+|Кластер
+|Кластер БД с синхронной репликацией данных в режиме Master-Master
+|Используется при наличии повышенных требований к надежности и отказоустойчивости системы
+|===
+{ifdef(private-pdf, private-pg-pdf)}
+{/caption}
+{/ifdef}
+{/ifndef}
+
+{ifdef(public)}
+## {heading(Single)[id=dbaas-work-configs-single]}
 
 Одна виртуальная машина с установленным сервером СУБД выбранного типа. В такой конфигурации инстанс можно останавливать, запускать и перезапускать.
 
-## {heading(Master-Replica)[id=master-replica]}
+## {heading(Master-Replica)[id=dbaas-work-configs-master-replica]}
 
 Две виртуальные машины с установленными серверами СУБД выбранного типа. Инстансы поддерживают синхронную репликацию в режиме `master-replica` (active-passive) и масштабируются отдельно.
 
 Инстанс в конфигурации Master-Replica можно останавливать, запускать и перезапускать.
 
-## {heading(Кластер)[id=cluster]}
+## {heading(Кластер)[id=dbaas-work-configs-cluster]}
 
 Группа виртуальных машин с установленными серверами СУБД выбранного типа, поддерживающие синхронную и асинхронную репликацию данных, с балансировщиком нагрузки. При недоступности мастер-инстанса сработает автоматическое переключение: одна из реплик конвертируется в мастер, а вместо нее будет создана еще одна реплика.
 
-Чтобы повысить отказоустойчивость кластера PostgreSQL, синхронные и асинхронные реплики можно распределять по другим зонам, выбрав [мультизональную конфигурацию](#multi-az). Для обеспечения высокой доступности кластера PostgreSQL используется служба [Patroni](https://patroni.readthedocs.io/en/latest/index.html).
+Чтобы повысить отказоустойчивость кластера PostgreSQL, синхронные и асинхронные реплики можно распределять по другим зонам, выбрав {linkto(#dbaas-work-configs-multi-az)[text=мультизональную конфигурацию]}. Для обеспечения высокой доступности кластера PostgreSQL используется служба [Patroni](https://patroni.readthedocs.io/en/latest/index.html).
 
 При увеличении размера диска или вертикальном масштабировании изменения применяются ко всем инстансам кластера.
 
 В этой конфигурации инстанс нельзя запустить, перезапустить или остановить.
 
-## {heading(Мультизональный кластер)[id=multi-az]}
+## {heading(Мультизональный кластер)[id=dbaas-work-configs-multi-az]}
 
 {note:info}
-
 Конфигурация мультизонального кластера доступна только для инстансов PostgreSQL версии 16.
-
 {/note}
 
-Отказоустойчивое решение, аналогичное конфигурации [Кластер](#cluster). Группа виртуальных машин с установленными серверами СУБД распределена между [зонами доступности](/ru/start/concepts/architecture#az).
+Отказоустойчивое решение, аналогичное конфигурации {linkto(#dbaas-work-configs-cluster)[text=Кластер]}. Группа виртуальных машин с установленными серверами СУБД распределена между {linkto(../../../../start/concepts/architecture#architecture-az)[text=зонами доступности]}.
 
 Такая конфигурация обеспечивает максимальную доступность и автоматическое восстановление даже при сбое всего ЦОД, что критично для высоконагруженных проектов и сохранности данных.
 
@@ -44,9 +76,15 @@
 - Если количество оставшихся узлов больше, чем количество вышедших из строя узлов, образуется большинство. Назначается новый master-узел, кластер продолжает работу.
 
 Нечетное количество узлов позволяет минимизировать вероятность возникновения ситуации, при которой большинство не образуется.
+{/ifdef}
 
-## {heading(Доступные конфигурации для типов СУБД)[id=available-configs]}
+## {heading(Доступные конфигурации для типов СУБД)[id=dbaas-work-configs-available-configs]}
 
+{ifdef(private-pdf, private-pg-pdf)}
+Конфигурации для БД приведены в {linkto(#tab-db-types)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb-tab-db-types]} — Доступные конфигурации для типов СУБД)[align=right;position=above;id=tab-db-types;number={const(numb-tab-db-types)}]}
+{/ifdef}
 [cols="1,1,1,1", options="header"]
 |===
 | Тип СУБД 
@@ -54,38 +92,67 @@
 | Master-Replica 
 | Кластер
 
+{ifdef(public)}
 | MySQL
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/check.svg "inline")
 
 | Tarantool
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/check.svg "inline")
+{/ifdef}
 
 | PostgreSQL
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/check.svg "inline") 
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/check.svg "inline") 
 
 | ClickHouse
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
+{ifdef(public)}
 | Redis
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/check.svg "inline")
+{/ifdef}
 
+{ifndef(public)}
+| Redis
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+{/ifndef}
+
+{ifdef(public)}
 | MongoDB
-| ![](/ru/assets/check.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/check.svg "inline")
 
 | OpenSearch
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/no.svg "inline") 
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/check.svg "inline")
+{/ifdef}
+
+{ifdef(private-pg, private-pg-pdf)}
+|Postgres Pro Standard
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+
+| Postgres Pro Enterprise
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+{/ifdef}
 |===
+
+{ifdef(private-pdf, private-pg-pdf)}
+{/caption}
+{/ifdef}

@@ -1,9 +1,14 @@
 {
-    "title": "Подключение к реестру Docker",
-      "shortDescription": "",
-      "metaDescription": "Как подключиться к реестру Docker с помощью аддона docker-registry для Kubernetes в VK Cloud. Инструкция по подключению и примеры использования Docker в кластере Kubernetes",
-    "sectionTitle": "Подключение к реестру Docker",
-    "icon": "",
-    "weight": 4,
-    "uuid": "565cffc7-68b7-47f1-83f8-92cc2764ae60"
+  "title": "Подключение к реестру Docker",
+  "shortDescription": "",
+  "metaDescription": "Как подключиться к реестру Docker с помощью аддона docker-registry для Kubernetes в VK Cloud. Инструкция по подключению и примеры использования Docker в кластере Kubernetes",
+  "sectionTitle": "Подключение к реестру Docker",
+  "icon": "",
+  "weight": 4,
+  "uuid": "565cffc7-68b7-47f1-83f8-92cc2764ae60",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

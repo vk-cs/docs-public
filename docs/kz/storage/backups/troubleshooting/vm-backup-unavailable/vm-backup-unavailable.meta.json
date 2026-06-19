@@ -4,5 +4,12 @@
   "metaDescription": "ВМ сақтық көшірмелеуінің дұрыс жұмысын қалай қалпына келтіруге болады",
   "sectionTitle": "ВМ сақтық көшірмесін жасау жұмыс істемейді",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

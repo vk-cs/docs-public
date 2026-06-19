@@ -1,3 +1,5 @@
+# {heading(Создание инстанса JupyterHub)[id=terraform-jupyterhub]}
+
 В статье приведены примеры создания инстанса JupyterHub при помощи Terraform.
 
 При создании инстанса используются:
@@ -9,17 +11,17 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Перед созданием инстанса
+## {heading(Перед созданием инстанса)[id=terraform-jupyterhub-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания инстанса. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.6.0 или выше. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
+1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.6.0 или выше. Если версия провайдера ниже, {linkto(../../../quick-start#terraform-quick-start-update)[text=обновите провайдер]}.
 
-## 1. Создайте файл с описанием инстанса JupyterHub
+## {heading({counter(tf-jupyterhub)}. Создайте файл с описанием инстанса JupyterHub)[id=terraform-jupyterhub-instance-file]}
 
 В примере ниже инстанс создается в следующей конфигурации:
 
@@ -75,7 +77,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
 
   {/cut}
 
@@ -85,11 +87,11 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
+## {heading({counter(tf-jupyterhub)}. (Опционально) Создайте файл с описанием источника данных для типа ВМ)[id=terraform-jupyterhub-vm-file]}
 
 Создайте файл конфигурации Terraform `flavor.tf` c описанием нужного типа ВМ:
 
@@ -101,7 +103,7 @@ data "vkcs_compute_flavor" "basic" {
 
 Указанный в файле тип ВМ будет использоваться для создания инстанса JupyterHub в вашем проекте Terraform.
 
-## 3. (Опционально) Создайте файл с описанием сетевой инфраструктуры для инстанса
+## {heading({counter(tf-jupyterhub)}. (Опционально) Создайте файл с описанием сетевой инфраструктуры для инстанса)[id=terraform-jupyterhub-net-file]}
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для инстанса:
 
@@ -158,7 +160,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 4. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-jupyterhub)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-jupyterhub-create]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -184,14 +186,14 @@ resource "vkcs_networking_router_interface" "app" {
 
 1. Дождитесь завершения операции.
 
-## 5. Проверьте применение конфигурации
+## {heading({counter(tf-jupyterhub)}. Проверьте применение конфигурации)[id=terraform-jupyterhub-check]}
 
 Убедитесь, что инстанс JupyterHub был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс JupyterHub создан и активен.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-jupyterhub-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

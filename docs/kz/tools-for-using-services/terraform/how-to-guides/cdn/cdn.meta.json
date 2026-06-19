@@ -4,5 +4,12 @@
   "metaDescription": "CDN сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
   "sectionTitle": "CDN",
   "icon": "",
-  "weight": 30
+  "weight": 30,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

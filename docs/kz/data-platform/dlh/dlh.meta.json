@@ -4,5 +4,10 @@
   "metaDescription": "«Деректер көлдері» мен корпоративтік деректер қоймасының элементтері бар деректерді сақтау және талдау тәсілі",
   "sectionTitle": "Data Lakehouse",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

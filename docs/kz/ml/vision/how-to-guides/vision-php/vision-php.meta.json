@@ -4,5 +4,10 @@
   "metaDescription": "Толық мысалды «Python тіліндегі интеграция мысалы» мақаласынан қараңыз. Бұл мақалада біз persons/recognize, persons/set және persons/delete сұрауларын орындаймыз. Ол ү",
   "sectionTitle": "PHP тіліндегі интеграция мысалы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

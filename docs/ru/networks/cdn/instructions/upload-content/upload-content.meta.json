@@ -5,5 +5,10 @@
     "sectionTitle": "Загрузка контента в CDN",
     "icon": "",
     "weight": 3,
-    "uuid": "2a95e84d-88b0-4166-8c46-b1ff2528edbb"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2a95e84d-88b0-4166-8c46-b1ff2528edbb"
 }

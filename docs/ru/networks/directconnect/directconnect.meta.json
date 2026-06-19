@@ -1,9 +1,14 @@
 {
   "title": "Cloud Direct Connect",
-  "shortDescription": "Выделенное подключение между локальной инфраструктурой и проектом в облаке VK Cloud",
+  "shortDescription": "Выделенное подключение между локальной инфраструктурой и проектом в облаке {var(cloud)}",
   "metaDescription": "Сервис Cloud Direct Connect. Выделенное подключение между локальной инфраструктурой и проектом в облаке VK Cloud. Концепции, подключение сервиса, пошаговые руководства",
   "sectionTitle": "Cloud Direct Connect",
   "icon": "",
   "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "f1155494-e8fe-4025-a485-14f3d850ee00"
 }

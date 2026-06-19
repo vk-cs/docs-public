@@ -4,5 +4,10 @@
   "shortDescription": "Cloud Servers сервисінің OpenAPI спецификациялары",
   "sectionTitle": "Cloud Servers",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

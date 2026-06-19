@@ -1,3 +1,5 @@
+# {heading(Основные команды Terraform)[id=tools-terraform-commands]}
+
 [Командная строка Terraform](https://www.terraform.io/cli/commands) — это команда `terraform`, которая принимает множество подкоманд.
 
 Основные используемые команды:

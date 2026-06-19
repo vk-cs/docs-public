@@ -1,8 +1,13 @@
 {
-  "title": "Тарифтеу",
+  "title": "Тарификация",
   "shortDescription": "Сервисті тарификациялау ерекшеліктері және құнын есептеу",
   "metaDescription": "Cloud ClickHouse: сервисті тарификациялау ерекшеліктері, құнын есептеу",
-  "sectionTitle": "Тарифтеу",
+  "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

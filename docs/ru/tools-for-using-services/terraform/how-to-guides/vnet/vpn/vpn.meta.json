@@ -1,9 +1,14 @@
 {
-    "title": "Создание VPN-соединения",
-      "shortDescription": "",
-      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Networks. Создание VPN-соединения",
-    "sectionTitle": "Создание VPN-соединения",
-    "icon": "",
-    "weight": 2,
-    "uuid": "24531a5f-a42b-4f14-a6d7-ebd154e71d02"
+  "title": "Создание VPN соединения",
+  "shortDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Networks. Создание VPN-соединения",
+  "sectionTitle": "Создание VPN соединения",
+  "icon": "",
+  "weight": 2,
+  "uuid": "24531a5f-a42b-4f14-a6d7-ebd154e71d02",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

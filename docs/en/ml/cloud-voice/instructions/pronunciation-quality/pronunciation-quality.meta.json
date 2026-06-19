@@ -1,9 +1,23 @@
 {
-    "title": "Improving the quality of pronunciation",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Improving the quality of pronunciation",
-    "icon": "",
-    "weight": 5,
-    "uuid": "fcc6c0b6-6369-4070-8490-627ffaa5c0cd"
+  "title": "Improving the quality of pronunciation",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Improving the quality of pronunciation",
+  "icon": "",
+  "weight": 5,
+  "uuid": "fcc6c0b6-6369-4070-8490-627ffaa5c0cd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

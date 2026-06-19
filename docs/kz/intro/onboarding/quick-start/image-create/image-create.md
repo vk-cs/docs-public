@@ -1,18 +1,20 @@
+# {heading(Виртуалды машинаның пайдаланушылық бейнесін жасаңыз)[id=onboarding-image-create]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл нұсқаулық сізді [Cloud Servers](/kz/computing/iaas) сервисінің мүмкіндіктерінің бірімен — виртуалды машинаның пайдаланушылық [бейнесін](/kz/computing/iaas/concepts/image-vm) жасаумен таныстырады. 
 
 Осы нұсқаулықтың барлық қадамдарынан өткеннен кейін, сіз қолданыстағы виртуалды машинаның дискісінен бейне жасайсыз.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=onboarding-image-create-prepare]}
 
-Виртуалды машинаны [жасаңыз](/kz/intro/onboarding/quick-start/create-vm#1_sozdayte_vm).
+{linkto(../../../../intro/onboarding/quick-start/create-vm#onboarding-create-vm)[text=Виртуалды машинаны]} жасаңыз.
 
-## {counter(image)}. Бейне жасаңыз
+## {heading({counter(image)}. Бейне жасаңыз)[id=onboarding-image-create-create]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/)
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
-1. Виртуалды машиналар тізімінде бейнесін жасау қажет ВМ үшін ![ ](/kz/assets/more-icon.svg "inline") түймесін басып, **Тоқтату** пәрменін таңдаңыз және әрекетті растаңыз. 
+1. Виртуалды машиналар тізімінде бейнесін жасау қажет ВМ үшін ![ ](../../../../assets/more-icon.svg "inline") түймесін басып, **Тоқтату** пәрменін таңдаңыз және әрекетті растаңыз. 
 1. **Бұлтты есептеулер → Бейнелер** бөліміне өтіңіз.
 1. **Құру** түймесін басыңыз.
 1. Бейне баптауларын орнатыңыз:
@@ -23,7 +25,6 @@
 
 1. **Бейне жасау** түймесін басыңыз.
 
+## {heading(Келесі не істеу керек?)[id=onboarding-image-create-next]}
 
-## Келесі не істеу керек?
-
-Алынған бейнені жаңа виртуалды машинаны [жасау](/kz/computing/iaas/instructions/vm/vm-create) үшін пайдаланыңыз.
+Алынған бейнені жаңа виртуалды машинаны {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасау]} үшін пайдаланыңыз.

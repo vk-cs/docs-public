@@ -5,5 +5,14 @@
   "sectionTitle": "Cloud Audit",
   "icon": "",
   "weight": 4,
-  "uuid": "a44f362e-812b-488f-8704-09181f19077f"
+  "uuid": "a44f362e-812b-488f-8704-09181f19077f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

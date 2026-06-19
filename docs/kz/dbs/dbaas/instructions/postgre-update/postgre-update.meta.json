@@ -4,5 +4,15 @@
   "metaDescription": "Single, Master-Replica, Кластер конфигурацияларындағы инстанстарда PostgreSQL нұсқасын жаңарту.",
   "sectionTitle": "PostgreSQL нұсқасын жаңарту",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

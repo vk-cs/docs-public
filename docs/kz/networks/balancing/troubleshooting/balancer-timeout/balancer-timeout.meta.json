@@ -4,5 +4,12 @@
   "metaDescription": "Егер теңгерімдеушіде тайм-ауттар іске қосылып, «504 Gateway Timeout» қатесі қайтарылса, не істеу керек. Теңгерімдеушінің тайм-ауттарын арттырыңыз",
   "sectionTitle": "Теңгерімдеуші 504 Gateway Timeout қатесін қайтарады",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg"
+    ]
+  }
 }

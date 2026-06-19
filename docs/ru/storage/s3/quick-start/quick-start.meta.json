@@ -1,9 +1,14 @@
 {
-    "title": "Быстрый старт",
-      "shortDescription": "Как начать работу с сервисом",
-      "metaDescription": "VK Object Storage: как начать работу с сервисом.",
-    "sectionTitle": "Быстрый старт",
-    "icon": "",
-    "weight": 1,
-    "uuid": "cbd9851b-2dca-4ce7-8e70-206329780b0e"
+  "title": "Быстрый старт",
+  "shortDescription": "Как начать работу с сервисом",
+  "metaDescription": "VK Object Storage: как начать работу с сервисом.",
+  "sectionTitle": "Быстрый старт",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cbd9851b-2dca-4ce7-8e70-206329780b0e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

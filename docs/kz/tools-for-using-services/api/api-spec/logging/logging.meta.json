@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 8,
-  "isBeta": true
+  "isBeta": true,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

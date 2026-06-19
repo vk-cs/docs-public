@@ -4,5 +4,20 @@
   "metaDescription": "docker-runtime және crio-runtime бар нодтардан Fluent Bit көмегімен логтар жинау",
   "sectionTitle": "docker-runtime және crio-runtime бар нодтардан Fluent Bit көмегімен логтар жинау",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "f0c8b67f-c0ce-4eed-9601-05fda772f53d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

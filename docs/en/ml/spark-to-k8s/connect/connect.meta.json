@@ -5,5 +5,19 @@
   "sectionTitle": "Connecting to Spark cluster",
   "icon": "",
   "weight": 1,
-  "uuid": "df4a0f01-a6f1-4b68-9853-8edb194116e5"
+  "uuid": "df4a0f01-a6f1-4b68-9853-8edb194116e5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

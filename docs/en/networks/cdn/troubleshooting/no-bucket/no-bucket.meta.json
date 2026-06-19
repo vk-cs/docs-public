@@ -1,0 +1,14 @@
+{
+  "title": "NoSuchBucket error",
+  "shortDescription": "What to do if a CDN with a VK Object Storage bucket as the content source, returns the NoSuchBucket error",
+  "metaDescription": "What to do if when configuring a CDN with a VK Object Storage bucket as the content source, the NoSuchBucket error is displayed: NoSuchBucket, the specified bucket does not exist",
+  "sectionTitle": "NoSuchBucket error",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

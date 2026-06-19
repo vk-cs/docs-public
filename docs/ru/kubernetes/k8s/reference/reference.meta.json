@@ -5,5 +5,14 @@
   "sectionTitle": "Справочник Kubernetes",
   "icon": "",
   "weight": 8,
-  "uuid": "1fd56110-a935-43d9-8c17-b6b62b77337c"
+  "uuid": "1fd56110-a935-43d9-8c17-b6b62b77337c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

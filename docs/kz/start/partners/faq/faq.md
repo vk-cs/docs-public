@@ -16,7 +16,7 @@ VK Cloud серіктесі болу үшін [нұсқаулықты](/kz/start
 
 {cut(VK Cloud ұсынатын White Label ынтымақтастық моделі туралы толығырақ қайдан біле аламын?)}
 
-Модель туралы жалпы ақпарат [құжаттамада](/kz/start/partners/cooperation-models#model_kalay_zhumys_isteydi_fb7fed6c) келтірілген, ал ынтымақтастықтың нақты егжей-тегжейлерін серіктестермен жұмыс жөніндегі менеджерден келесі тәсілдермен нақтылауға болады:
+Модель туралы жалпы ақпарат [құжаттамада](/kz/start/partners/cooperation-models#reward) келтірілген, ал ынтымақтастықтың нақты егжей-тегжейлерін серіктестермен жұмыс жөніндегі менеджерден келесі тәсілдермен нақтылауға болады:
 
 - серіктестікке өтінім жіберу немесе [сайттағы](https://cloud.vk.com/partner) **Кеңес алу** батырмасын пайдалану;
 - [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) поштасына жазу.
@@ -33,7 +33,7 @@ VK Cloud серіктесі болу үшін [нұсқаулықты](/kz/start
 
 Бұл таңдалған [ынтымақтастық моделіне](/kz/start/partners/cooperation-models) байланысты.
 
-[Серіктес](/kz/start/partners/cooperation-models#seriktes) VK Cloud өз клиенттері үшін қызметтердің кез келген құнын белгілей алады. Қажет болған жағдайда VK Cloud клиентіңіздің [жеке кабинетінде](/kz/tools-for-using-services/partner-platform/concepts/client-account) қызметтер бағасының көрсетілуін өшіре алады. Ол үшін [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) поштасына жазыңыз.
+[Серіктес](/kz/start/partners/cooperation-models#partner) VK Cloud өз клиенттері үшін қызметтердің кез келген құнын белгілей алады. Қажет болған жағдайда VK Cloud клиентіңіздің [жеке кабинетінде](/kz/tools-for-using-services/partner-platform/concepts/client-account) қызметтер бағасының көрсетілуін өшіре алады. Ол үшін [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) поштасына жазыңыз.
 
 VK Cloud қызметтерін [агенттің](/kz/start/partners/cooperation-models#agent) ұсынысы бойынша сатып алған клиенттер оларды VK Cloud [прайс-парағында](https://cloud.vk.com/pricelist) көрсетілген бағалармен сатып алады.
 
@@ -88,7 +88,7 @@ VK Cloud серіктестеріне екі бағыт бойынша {linkto(/
 
 VK Cloud платформасы сіздің клиенттеріңіздің төлемдерін қадағаламайды, сондықтан бұл қаражат клиент шотына автоматты түрде есептелмейді. Егер клиент жобасының балансына қаражат аударғыңыз келсе, [техникалық қолдауға](/kz/contacts) хабарласыңыз.
 
-Хатта толықтыру сомасын және клиент жобасының [PID](/kz/tools-for-using-services/partner-platform/instructions/client-management/client-information#klient_zhobalarynyn_tizimin_karau) көрсетіңіз, содан кейін қаражат есептеледі. Шотты тұрақты негізде де, сіз көрсететін кез келген сомаға біржолғы тәртіппен де толықтыруға болады.
+Хатта толықтыру сомасын және клиент жобасының [PID](/kz/tools-for-using-services/partner-platform/instructions/client-management/client-information#prosmotr_spiska_proektov_klienta) көрсетіңіз, содан кейін қаражат есептеледі. Шотты тұрақты негізде де, сіз көрсететін кез келген сомаға біржолғы тәртіппен де толықтыруға болады.
 
 {/cut}
 

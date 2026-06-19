@@ -5,5 +5,10 @@
     "sectionTitle": "Создание CDN-ресурса",
     "icon": "",
     "weight": 1,
-    "uuid": "751827b4-25bd-4813-a12f-342366db9fd4"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "751827b4-25bd-4813-a12f-342366db9fd4"
 }

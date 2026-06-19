@@ -1,3 +1,5 @@
+# {heading(Docker айнасын баптау)[id=k8s-docker-mirror]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:warn}
@@ -14,20 +16,20 @@ Docker Hub-ты баптау үшін:
 
 {tab(Docker Registry аддонымен бірге жеке реестр)}
 
-  1. Егер бұл әлі жасалмаса, Docker Registry [аддонын орнатыңыз](../../../k8s/instructions/addons/advanced-installation/install-advanced-registry).
+  1. Егер бұл әлі жасалмаса, Docker Registry {linkto(../../../k8s/instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry)[text=аддонын орнатыңыз]}.
   1. Қажетті образды жергілікті компьютерге жүктеп алыңыз. Ол үшін команданы орындаңыз:
 
       ```console
       docker pull mirror.gcr.io/<имя_образа>
       ```
-  
-  1. Жүктеп алынған образды жеке репозиторийге [жүктеңіз](../../../k8s/quick-start#k8s-quick-start-upload-to-registry).
+
+  1. Жүктеп алынған образды жеке репозиторийге {linkto(../../../k8s/quick-start#k8s-quick-start-upload-to-registry)[text=жүктеңіз]}.
 
   {/tab}
 
 {tab(Cloud Containers үшін Daemonset)}
 
-  Айна [CRI-O](https://cri-o.io/) конфигурациясында кластердің жұмысшы тораптарында пайдаланылады. Ол үшін келесі манифесті кластерде [`kubectl` көмегімен](../kubectl) немесе [жеке кабинетте](../../instructions/manage-resources) қолданыңыз:
+  Айна [CRI-O](https://cri-o.io/) конфигурациясында кластердің жұмысшы тораптарында пайдаланылады. Ол үшін келесі манифесті кластерде {linkto(../kubectl#k8s-kubectl)[text=`kubectl` көмегімен]} немесе {linkto(../../instructions/manage-resources#k8s-manage-resources)[text=жеке кабинетте]} қолданыңыз:
 
   ```yaml
 

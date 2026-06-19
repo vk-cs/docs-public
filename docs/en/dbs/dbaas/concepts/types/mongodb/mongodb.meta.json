@@ -1,9 +1,23 @@
 {
-    "title": "MongoDB",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "MongoDB",
-    "icon": "",
-    "weight": 2,
-    "uuid": "1326c92a-f43d-4624-9d89-39831d63ab68"
+  "title": "MongoDB",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "MongoDB",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1326c92a-f43d-4624-9d89-39831d63ab68",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

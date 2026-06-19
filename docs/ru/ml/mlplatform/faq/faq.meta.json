@@ -1,9 +1,14 @@
 {
-    "title": "Вопросы и ответы",
-      "shortDescription": "Ответы на самые частые вопросы о Cloud ML Platform",
-      "metaDescription": "Ответы на самые частые вопросы о сервисе Cloud ML Platform. Что делать при возникновении ошибок или недоступности сервиса",
-    "sectionTitle": "Вопросы и ответы",
-    "icon": "",
-    "weight": 10,
-    "uuid": "6cd60653-ce69-4dcf-a9c0-3cf302cc0126"
+  "title": "Вопросы и ответы",
+  "shortDescription": "Ответы на самые частые вопросы о Cloud ML Platform",
+  "metaDescription": "Ответы на самые частые вопросы о сервисе Cloud ML Platform. Что делать при возникновении ошибок или недоступности сервиса",
+  "sectionTitle": "Вопросы и ответы",
+  "icon": "",
+  "weight": 10,
+  "uuid": "6cd60653-ce69-4dcf-a9c0-3cf302cc0126",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

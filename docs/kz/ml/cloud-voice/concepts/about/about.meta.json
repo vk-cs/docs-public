@@ -4,5 +4,10 @@
   "metaDescription": "Сервисті пайдалануды бастау үшін Cloud Voice бетіне өтіңіз: https://cloud.vk.com/cloud-voice/ Cloud Voice — сөйлеуді тануға мүмкіндік беретін сервис",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

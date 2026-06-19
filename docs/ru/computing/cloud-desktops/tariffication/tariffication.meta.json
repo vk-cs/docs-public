@@ -1,9 +1,14 @@
 {
-    "title": "Тарификация",
-      "shortDescription": "Стоимость сервиса и особенности его тарификации",
-      "metaDescription": "Стоимость сервиса Cloud Desktop и особенности его тарификации.",
-    "sectionTitle": "Тарификация",
-    "icon": "",
-    "weight": 6,
-    "uuid": "576d22f6-4712-4f5d-ac9c-cce29fb1948c"
+  "title": "Тарификация",
+  "shortDescription": "Стоимость сервиса и особенности его тарификации",
+  "metaDescription": "Стоимость сервиса Cloud Desktop и особенности его тарификации.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 6,
+  "uuid": "576d22f6-4712-4f5d-ac9c-cce29fb1948c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

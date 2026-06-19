@@ -1,9 +1,19 @@
 {
-    "title": "Файлы конфигурации",
-      "shortDescription": "",
-      "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления платформой. Описание файлов конфигурации Terraform: файл конфигурации провайдера, файлы конфигурации ресурсов",
-    "sectionTitle": "Файлы конфигурации",
-    "icon": "",
-    "weight": 2,
-    "uuid": "fb725bb9-141d-45db-b926-03c141d11354"
+  "title": "Файлы конфигурации",
+  "shortDescription": "",
+  "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления платформой. Описание файлов конфигурации Terraform: файл конфигурации провайдера, файлы конфигурации ресурсов",
+  "sectionTitle": "Файлы конфигурации",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fb725bb9-141d-45db-b926-03c141d11354",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

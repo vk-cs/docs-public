@@ -1,3 +1,5 @@
+# {heading(Құпияны басқару)[id=sm-manage-secret]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
@@ -6,26 +8,26 @@
 
 {/note}
 
-## {heading(Құпиялар тізімін қарау)[id=list]}
+## {heading(Құпиялар тізімін қарау)[id=sm-manage-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз. Жобада жасалған барлық құпиялардың тізімі бар бет ашылады.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Құпия жасау)[id=create]}
+## {heading(Құпия жасау)[id=sm-manage-create]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері** → **Құпиялар менеджері** бөліміне өтіңіз.
 1. **Жасау** батырмасын басыңыз.
 1. **Атауы** өрісін толтырыңыз.
@@ -80,13 +82,13 @@
 
 {/tabs}
 
-## {heading(Метадеректерді қарау)[id=view-meta]}
+## {heading(Метадеректерді қарау)[id=sm-manage-view-meta]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпиялар тізімінде қажетті құпияның атауын басыңыз. **Жалпы ақпарат** қойындысында құпияның карточкасы ашылады.
 
@@ -94,21 +96,21 @@
 
 {/tabs}
 
-## {heading(Метадеректерді өңдеу)[id=edit-metadata]}
+## {heading(Метадеректерді өңдеу)[id=sm-manage-edit-metadata]}
 
-Тек құпияның метадеректерін өңдеуге болады. Құпия мазмұнын жаңарту үшін [жасаңыз](/kz/security/secret-manager/instructions/versions#create) жаңа нұсқаны.
+Тек құпияның метадеректерін өңдеуге болады. Құпия мазмұнын жаңарту үшін жаңа нұсқаны {linkto(../versions#sm-versions-create)[text=жасаңыз]}.
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Өңдеу терезесін келесі тәсілдердің бірімен ашыңыз.
 
     - Құпиялар тізімінен:
 
-        1. Құпиялар тізімінде қажетті құпия үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басыңыз.
+        1. Құпиялар тізімінде қажетті құпия үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басыңыз.
         1. **Өңдеу** тармағын таңдаңыз.
 
     - Құпия бетінде:
@@ -123,25 +125,25 @@
 
 {/tabs}
 
-## {heading(Құпияны жою)[id=delete]}
+## {heading(Құпияны жою)[id=sm-manage-delete]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпияны келесі тәсілдердің бірімен жойыңыз.
 
     - Құпиялар тізімінен:
 
-        1. Құпиялар тізімінде қажетті құпия үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басыңыз.
+        1. Құпиялар тізімінде қажетті құпия үшін ![ ](../../../../assets/more-icon.svg "inline") белгішесін басыңыз.
         1. **Жою** тармағын таңдап, әрекетті растаңыз.
 
     - Құпия бетінде:
 
         1. Құпиялар тізімінде қажетті құпияның атауын басыңыз.
-        1. Құпия бетінде ![ ](/kz/assets/more-icon.svg "inline") белгішесін басыңыз.
+        1. Құпия бетінде ![ ](../../../../assets/more-icon.svg "inline") белгішесін басыңыз.
         1. **Жою** тармағын таңдап, әрекетті растаңыз.
 
 {/tab}

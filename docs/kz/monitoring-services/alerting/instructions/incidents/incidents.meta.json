@@ -4,5 +4,14 @@
   "metaDescription": "Инцидент — триггерде берілген шартқа сәйкес келетін оқиғаны тіркеу. VK Cloud-тағы Cloud Alerting сервисінде инциденттерді қалай талдау және басқару керектігін біліңіз",
   "sectionTitle": "Инциденттер",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

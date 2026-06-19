@@ -1,9 +1,23 @@
 {
-    "title": "About service",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "About service",
-    "icon": "",
-    "weight": 1,
-    "uuid": "24d1bc66-ccad-4328-9a0c-838b402d43fa"
+  "title": "About service",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "About service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "24d1bc66-ccad-4328-9a0c-838b402d43fa",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,16 +1,18 @@
-{include(/ru/_includes/_project_create_header.md)}
+# {heading(Создание проекта)[id=vk-cloud-account-project-create]}
+
+{include(../../../../../_includes/_project_create_header.md)}
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-{include(/ru/_includes/_project_create_tab_account.md)}
+{include(../../../../../_includes/_project_create_tab_account.md)}
 
 {/tab}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_project_create_tab_lk.md)}
+{include(../../../../../_includes/_project_create_tab_lk.md)}
 
 {/tab}
 
@@ -18,11 +20,11 @@
 
 {note:info}
 
-Дальнейшая работа с проектом проводится в [личном кабинете VK Cloud](/ru/tools-for-using-services/account/instructions/project-settings/manage).
+Дальнейшая работа с проектом проводится в {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text=личном кабинете {var(cloud)}]}.
 
 {/note}
 
-## Что дальше?
+## {heading(Что дальше?)[id=vk-cloud-account-project-what-next]}
 
-- Узнайте подробнее об [управлении проектом](/ru/tools-for-using-services/account/instructions/project-settings/manage).
-- Ознакомьтесь с возможностями [настройки доступа](/ru/access/iam/instructions/access-manage) к проекту.
+- Узнайте подробнее об {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text=управлении проектом]}.
+- Ознакомьтесь с возможностями {linkto(../../../../account/instructions/project-settings/access-manage#tools-account-project-access-manage)[text=настройки доступа]} к проекту.

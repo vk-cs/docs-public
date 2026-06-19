@@ -1,9 +1,14 @@
 {
-    "title": "Creating a Spark cluster",
-      "shortDescription": "",
-      "metaDescription": "How to create a Spark cluster using Terraform",
-    "sectionTitle": "Creating a Spark cluster",
-    "icon": "",
-    "weight": 1,
-    "uuid": "b1e0aefd-1931-493b-833b-5a020029a12b"
+  "title": "Creating a Spark cluster",
+  "shortDescription": "",
+  "metaDescription": "How to create a Spark cluster using Terraform",
+  "sectionTitle": "Creating a Spark cluster",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b1e0aefd-1931-493b-833b-5a020029a12b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

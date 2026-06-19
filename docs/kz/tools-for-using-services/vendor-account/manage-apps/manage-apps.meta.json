@@ -3,5 +3,10 @@
   "shortDescription": "Marketplace-ке сервистерді қосу және жаңарту жөніндегі нұсқаулықтар",
   "metaDescription": "Marketplace-ке сервистерді қосу және жаңарту жөніндегі нұсқаулықтар",
   "sectionTitle": "Marketplace-ке сервистерді қосу жөніндегі нұсқаулық",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

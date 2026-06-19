@@ -5,5 +5,14 @@
   "sectionTitle": "Расширения и плагины",
   "icon": "",
   "weight": 8,
-  "uuid": "7b8e75b7-bb79-4b03-8b3a-9fd4e2e30948"
+  "uuid": "7b8e75b7-bb79-4b03-8b3a-9fd4e2e30948",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -2,5 +2,10 @@
   "title": "`Preview` секциясы",
   "shortDescription": "",
   "metaDescription": "`Preview` секциясы",
-  "sectionTitle": "`Preview` секциясы"
+  "sectionTitle": "`Preview` секциясы",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

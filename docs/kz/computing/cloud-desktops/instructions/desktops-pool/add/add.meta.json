@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Desktop сервисінде жұмыс үстелдерінің жаңа пулын құру.",
   "sectionTitle": "Пулды құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

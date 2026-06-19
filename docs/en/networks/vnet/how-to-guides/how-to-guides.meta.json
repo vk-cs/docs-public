@@ -5,5 +5,10 @@
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 4,
-  "uuid": "2ab69271-2a6a-4557-a5b8-bf7a5e1fd8a4"
+  "uuid": "2ab69271-2a6a-4557-a5b8-bf7a5e1fd8a4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

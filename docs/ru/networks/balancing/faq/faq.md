@@ -1,3 +1,5 @@
+# {heading(Вопросы и ответы)[id=balancing-faq]}
+
 {cut(Как получить логи балансировщика нагрузки?)}
 
 Чтобы получить логи балансировщика, обратитесь в [техническую поддержку](/ru/contacts).
@@ -8,17 +10,17 @@
 
 {cut(Что делать, если при создании балансировщика была указана неверная сеть?)}
 
-[Удалите](/ru/networks/balancing/instructions/manage-lb#udalenie_balansirovshchika_nagruzki) балансировщик и [добавьте](/ru/networks/balancing/instructions/manage-lb#dobavlenie_balansirovshchika_nagruzki) его снова. Указать сеть можно только при создании балансировщика, после этого изменить ее нельзя.
+{linkto(../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-delete)[text=Удалите]} балансировщик и {linkto(../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-add)[text=добавьте]} его снова. Указать сеть можно только при создании балансировщика, после этого изменить ее нельзя.
 
 {/cut}
 
-{cut(Какие методы балансировки используются в VK Cloud?)}
+{cut(Какие методы балансировки используются в {var(cloud)}?)}
 
-{include(/ru/_includes/_load_balancer.md)}
+{include(../../../_includes/_load_balancer.md)[tags=faq]}
 
 {/cut}
 
-{cut(Есть ли в VK Cloud метод балансировки, аналогичный методу IP-hash?)}
+{cut(Есть ли в {var(cloud)} метод балансировки, аналогичный методу IP-hash?)}
 
 Да, аналогичный метод балансировки — `SOURCE_IP`. В этом методе сервер, обрабатывающий запрос, выбирается произвольным образом, и закрепляется на сессию за конкретным IP-адресом клиента.
 
@@ -26,7 +28,7 @@
 
 {cut(Как установить тайм-ауты для балансировщика?)}
 
-Тайм-ауты для балансировщика устанавливаются при [добавлении правила балансировки](/ru/networks/balancing/instructions/manage-rules#add_balancer_rule) в личном кабинете или с помощью OpenStack CLI. Добавить правило балансировки также можно при создании балансировщика.
+Тайм-ауты для балансировщика устанавливаются при {linkto(../../../networks/balancing/instructions/manage-rules#balancing-manage-rules-add)[text=добавлении правила балансировки]} в личном кабинете или с помощью OpenStack CLI. Добавить правило балансировки также можно при создании балансировщика.
 
 {/cut}
 
@@ -41,7 +43,7 @@
 
 {cut(Как установить SSL-сертификат на балансировщик нагрузки?)}
 
-Чтобы установить SSL-сертификат на балансировщик, [создайте правило балансировки](/ru/networks/balancing/instructions/manage-rules#add_balancer_rule) c параметрами:
+Чтобы установить SSL-сертификат на балансировщик, {linkto(../../../networks/balancing/instructions/manage-rules#balancing-manage-rules-add)[text=создайте правило балансировки]} c параметрами:
 
 - **Протокол балансировки** — `HTTPS`.
 - **Сертификат** — загрузите новый SSL-сертификат или выберите загруженный ранее.

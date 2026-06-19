@@ -1,8 +1,18 @@
 {
   "title": "Kubernetes анықтамалығы",
   "shortDescription": "Kubernetes-тің негізгі ұғымдары мен объектілері, олармен өзара әрекеттесу мысалдары",
-  "metaDescription": "VK Cloud платформасындағы Cloud Containers сервисінің негізгі ұғымдары мен объектілері. Олардың жұмыс істеу қалғидаттары және олармен өзара әрекеттесу мысалдары",
+  "metaDescription": "VK Cloud платформасындағы Cloud Containers сервисінің негізгі ұғымдары мен объектілері. Олардың жұмыс істеу қағидаттары және олармен өзара әрекеттесу мысалдары",
   "sectionTitle": "Kubernetes анықтамалығы",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

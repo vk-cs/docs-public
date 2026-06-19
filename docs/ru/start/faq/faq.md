@@ -1,7 +1,8 @@
+# {heading(Вопросы и ответы)[id=start-faq]}
 
 {cut(Как обратиться в поддержку?)}
 
-Воспользуйтесь одним из каналов связи, указанных в [Условиях оказания поддержки](/ru/start/support/support-info).
+Воспользуйтесь одним из каналов связи, указанных в {linkto(../support/support-info#support-info)[text=Условиях оказания поддержки]}.
 
 {note:info}
 
@@ -15,7 +16,7 @@
 
 {cut(Как быстро отвечает поддержка?)}
 
-Информация о сроках ответа и предоставления решения находится в разделе [SLA](/ru/start/support/sla).
+Информация о сроках ответа и предоставления решения находится в разделе {linkto(../support/sla#support-sla)[text=SLA]}.
 
 {/cut}
 
@@ -31,15 +32,15 @@
 
 {/cut}
 
-{cut(Где размещаются дата-центры VK Cloud?)}
+{cut(Где размещаются дата-центры {var(cloud)}?)}
 
-[Список](/ru/start/concepts/architecture#az) дата-центров и зон доступности.
+{linkto(../concepts/architecture#architecture-az)[text=Список]} дата-центров и зон доступности.
 
 {/cut}
 
-{cut(Где можно посмотреть актуальные показатели SLA VK Cloud?)}
+{cut(Где можно посмотреть актуальные показатели SLA {var(cloud)}?)}
 
-[Соглашение об уровне обслуживания (SLA)](/ru/start/support/sla). Фактические показатели доступности и отчеты об инцидентах публикуются на странице статуса платформы.
+{linkto(../support/sla#support-sla)[text=Соглашение об уровне обслуживания (SLA)]}. Фактические показатели доступности и отчеты об инцидентах публикуются на странице статуса платформы.
 
 {/cut}
 
@@ -51,7 +52,13 @@
 
 {cut(Не могу зарегистрироваться с моим номером телефона)}
 
-Регистрация через личный кабинет VK Cloud возможна только для российских номеров, которые начинаются с +7.
+Регистрация через личный кабинет {var(cloud)} возможна только для российских номеров, которые начинаются с +7.
+
+{/cut}
+
+{cut(Как отвязать мой номер телефона от другого аккаунта?)}
+
+Самостоятельно отвязать номер телефона от аккаунта, к которому утерян доступ, невозможно. Обратитесь в [техническую поддержку](/ru/contacts).
 
 {/cut}
 
@@ -75,23 +82,23 @@
 
 {cut(Я зарегистрировался, но сервисы в личном кабинете все еще недоступны)}
 
-Сервисы становятся доступны после завершения всех этапов [регистрации](/ru/intro/onboarding/account/create-account). Проверьте, что [почта](/ru/intro/onboarding/account/create-account#confirm_email) и [телефон](/ru/intro/onboarding/account/create-account#confirm_phone) подтверждены.
+Сервисы становятся доступны после завершения всех этапов {linkto(../../intro/onboarding/account/create-account#onboarding-create-account)[text=регистрации]}. Проверьте, что {linkto(../../intro/onboarding/account/create-account#onboarding-create-account-confirm-email)[text=почта]} и {linkto(../../intro/onboarding/account/create-account#onboarding-create-account-confirm-phone)[text=телефон]} подтверждены.
 
 {/cut}
 
 {cut(Какие есть способы оплаты и как их подключить?)}
 
-Доступные [способы оплаты](/ru/intro/billing/concepts/payment-methods) зависят от региона и выбираются при [внесении средств](/ru/intro/billing/instructions/payment#balance_charge) на лицевой счет проекта. 
+Доступные {linkto(../../intro/billing/concepts/payment-methods#billing-payment-methods)[text=способы оплаты]} зависят от региона и выбираются при {linkto(../../intro/billing/instructions/payment#billing-payment-balance-charge)[text=внесении средств]} на лицевой счет проекта.
 
-Вы можете настроить [автоматическое пополнение](/ru/intro/billing/instructions/add-card#nastroit_avtopopolnenie) лицевого счета проекта с привязанной банковской карты.
+Вы можете настроить {linkto(../../intro/billing/instructions/add-card#billing-add-card-refill)[text=автоматическое пополнение]} лицевого счета проекта с привязанной банковской карты.
 
-Чтобы проводить оплату от юридического лица или индивидуального предпринимателя, [донастройте проект](/ru/intro/billing/instructions/corporate).
+Чтобы проводить оплату от юридического лица или индивидуального предпринимателя, {linkto(../../intro/billing/instructions/corporate#billing-corporate)[text=донастройте проект]}.
 
 {/cut}
 
 {cut(Как посмотреть историю платежей?)}
 
-Чтобы посмотреть все списания и поступления по проектам, перейдите на [страницу баланса](https://msk.cloud.vk.com/app/services/billing) в личном кабинете. Подробнее — в статье [Детализация расходов](/ru/intro/billing/instructions/detail).
+Чтобы посмотреть все списания и поступления по проектам, перейдите на [страницу баланса](https://msk.cloud.vk.com/app/services/billing) в личном кабинете. Подробнее — в статье {linkto(../../intro/billing/instructions/detail#billing-detail)[text=Детализация расходов]}.
 
 {/cut}
 
@@ -99,13 +106,13 @@
 
 Для физических лиц изменить тарифный план нельзя.
 
-Для юридических лиц и индивидуальных предпринимателей есть возможность [заключить индивидуальный договор](/ru/intro/billing/instructions/corporate#individual_contract) с VK Cloud, в рамках которого может быть предусмотрен индивидуальный тарифный план.
+Для юридических лиц и индивидуальных предпринимателей есть возможность {linkto(../../intro/billing/instructions/corporate#billing-corporate-individual_contract)[text=заключить индивидуальный договор]} с {var(cloud)}, в рамках которого может быть предусмотрен индивидуальный тарифный план.
 
 {/cut}
 
 {cut(Как включить двухфакторную аутентификацию?)}
 
-Воспользуйтесь инструкцией [Включение 2FA](/ru/access/iam/instructions/manage-2fa).
+Воспользуйтесь инструкцией {linkto(../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=Включение 2FA]}.
 
 {/cut}
 
@@ -117,25 +124,25 @@
 
 {cut(Что делать, если мой аккаунт скомпрометирован?)}
 
-Сразу попробуйте [изменить пароль](/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#smena_parolya). Если не получилось, обратитесь в [техническую поддержку](/ru/contacts), в заявке выберите тип услуги **VK Cloud** → **Сообщить о проблеме** → **Личный кабинет и учетная запись** → **Учетную запись взломали**.
+Сразу попробуйте {linkto(../../tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#account-manage-editinfo-password)[text=изменить пароль]}. Если не получилось, обратитесь в [техническую поддержку](/ru/contacts), в заявке выберите тип услуги **VK Cloud** → **Сообщить о проблеме** → **Личный кабинет и учетная запись** → **Учетную запись взломали**.
 
 {/cut}
 
 {cut(Как управлять ролями и правами доступа в проекте?)}
 
-Управляйте правами доступа через личный кабинет. Управление доступно только [ролям](/ru/access/iam/concepts/rolesandpermissions) владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье [Управление доступами](/ru/access/iam/instructions/access-manage).
+Управляйте правами доступа через личный кабинет. Управление доступно только {linkto(../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролям]} владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье {linkto(../../tools-for-using-services/account/instructions/project-settings/access-manage#tools-account-project-access-manage)[text=Управление доступами]}.
 
 {/cut}
 
 {cut(Я не получил бонусные баллы при регистрации)}
 
-Бонусные баллы начисляются при создании первого проекта в VK Cloud, для последующих проектов такая возможность отсутствует.
+Бонусные баллы начисляются при создании первого проекта в {var(cloud)}, для последующих проектов такая возможность отсутствует.
 
 {/cut}
 
 {cut(У меня не хватает квот)}
 
-[Запросите](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) увеличение квот в личном кабинете.
+{linkto(../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=Запросите]} увеличение квот в личном кабинете.
 
 {/cut}
 
@@ -168,26 +175,26 @@
 
 {/cut}
 
-{cut(Есть ли индивидуальная поддержка сервисов в VK Cloud?)}
+{cut(Есть ли индивидуальная поддержка сервисов в {var(cloud)}?)}
 
-В VK Cloud можно подключить сервис приоритетной поддержки (Professional Services) от экспертов VK Cloud. Чтобы воспользоваться этим сервисом, оставьте заявку [на сайте](https://cloud.vk.com/professional-services/).
+В {var(cloud)} можно подключить сервис приоритетной поддержки (Professional Services) от экспертов {var(cloud)}. Чтобы воспользоваться этим сервисом, оставьте заявку [на сайте](https://cloud.vk.com/professional-services/).
 
-Также ознакомьтесь с [полным перечнем услуг Professional Services](/ru/start/support/support-info#individualnaya_podderzhka).
+Также ознакомьтесь с {linkto(../support/support-info#support-info-individual)[text=полным перечнем услуг Professional Services]}.
 
 {/cut}
 
 {cut(У вас есть партнерская программа?)}
 
-Да. Подробнее о партнерской программе читайте в [документации](/ru/start/partners).
+Да. Подробнее о партнерской программе читайте в {linkto(../partners#start-partners)[text=документации]}.
 
 {/cut}
 
 {cut(Как получить доступ к API и использовать его?)}
 
-1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api).
-1. [Получите токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token).
-1. [Найдите эндпоинт API](/ru/tools-for-using-services/api/rest-api/endpoints) нужного сервиса.
-1. Выполните запрос. Доступные методы API, структуры запросов и ответов — в разделе [Спецификация API](https://cloud.vk.com/docs/ru/tools-for-using-services/api/api-spec).
+1. {linkto(../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=Активируйте доступ по API]}.
+1. {linkto(../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите токен доступа]}.
+1. {linkto(../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=Найдите эндпоинт API]} нужного сервиса.
+1. Выполните запрос. Доступные методы API, структуры запросов и ответов — в разделе {linkto(../../tools-for-using-services/api/api-spec#tools-api-spec)[text=Спецификация API]}.
 
 {/cut}
 
@@ -199,7 +206,7 @@
 
 {cut(Где найти актуальную публичную оферту и стандартный шаблон корпоративного договора?)}
 
-Актуальная оферта и другие юридические документы доступны на [официальном сайте VK Cloud](/ru/start/legal/digital-cloud). Если нужно заключение двустороннего договора, свяжитесь с [отделом продаж](https://cloud.vk.com/contacts/).
+Актуальная оферта и другие юридические документы доступны на [официальном сайте {var(cloud)}](../legal/digital-cloud). Если нужно заключение двустороннего договора, свяжитесь с [отделом продаж](https://cloud.vk.com/contacts/).
 
 {/cut}
 
@@ -216,13 +223,19 @@
 
 {cut(Можно ли настроить резервное копирование локальных серверов в облако?)}
 
-Для резервного копирования данных с вашего локального сервера в облако установите на него утилиту (например, Veeam Agent) и настройте отправку резервных копий в [объектное хранилище](/ru/storage/s3) по расписанию.
+Для резервного копирования данных с вашего локального сервера в облако установите на него утилиту (например, Veeam Agent) и настройте отправку резервных копий в {linkto(../../storage/s3#s3-main)[text=объектное хранилище]} по расписанию.
 
 {/cut}
 
 {cut(Есть ли услуга предоставления выделенных серверов?)}
 
-Да, VK Cloud предоставляет услуги аренды выделенных серверов (Bare Metal). Для консультации по этим решениям [обратитесь в отдел продаж](https://cloud.vk.com/contacts/).
+Да, {var(cloud)} предоставляет услуги аренды выделенных серверов (Bare Metal). Для консультации по этим решениям [обратитесь в отдел продаж](https://cloud.vk.com/contacts/).
+
+{/cut}
+
+{cut(Я заметил подозрительную активность, связанную с моими ресурсами. Что делать?)}
+
+Чтобы оставить жалобу на неправомерное использование ресурсов, включая сканирование сетей, атаки или незаконное проксирование, напишите на почту [abuse@cloud.vk.com](mailto:abuse@cloud.vk.com) или [обратитесь в техническую поддержку](/ru/contacts), выбрав тему заявки «Жалоба/Abuse».
 
 {/cut}
 

@@ -4,6 +4,11 @@
   "metaDescription": "Установка аддона Kgateway в Kubernetes: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
   "sectionTitle": "Kgateway",
   "icon": "",
-  "weight": 11,
-  "uuid": ""
+  "weight": 12,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

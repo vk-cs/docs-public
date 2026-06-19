@@ -4,5 +4,10 @@
   "metaDescription": "PFX-қосылымдарының параметрлерін баптау жөніндегі нұсқаулық",
   "sectionTitle": "ADB үшін қосылымдарды баптау",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

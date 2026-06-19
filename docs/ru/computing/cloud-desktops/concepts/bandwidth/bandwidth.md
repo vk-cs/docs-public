@@ -1,6 +1,10 @@
+# {heading(Пропускная способность сети для виртуальных рабочих столов)[id=desktops-bandwidth]}
+
 Загрузка канала связи при работе виртуальных рабочих столов зависит от протокола взаимодействия с рабочим столом и сценария использования.
 
-Сравнение данных по нагрузке на сеть при работе виртуальных рабочих столов по протоколам RemoteClick и RDP:
+Сравнение данных по нагрузке на сеть при работе виртуальных рабочих столов по протоколам RemoteClick и RDP{ifdef(public,private,private-pg)}:{/ifdef} {ifdef(private-pdf,private-pg-pdf,private-cert)}приведено в {linkto(#tab_bandwidth)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_bandwidth]} — Нагрузка на сеть)[align=right;position=above;id=tab_bandwidth;number={const(numb_tab_bandwidth)}]}{/ifdef}
 
 [cols="1,2,1,1,1,1"]
 |===
@@ -72,3 +76,5 @@
 | 7,5–8,5 Мбит/с
 
 |===
+{ifdef(private-pdf,private-pg-pdf,private-cert)}
+{/caption}{/ifdef}

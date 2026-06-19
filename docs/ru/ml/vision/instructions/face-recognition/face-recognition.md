@@ -1,3 +1,5 @@
+# {heading(Распознавание лиц)[id=vision-instructions-face-recognition]}
+
 HOST: `https://smarty.mail.ru`
 
 Для распознавания лиц используются четыре метода API:
@@ -9,11 +11,11 @@ HOST: `https://smarty.mail.ru`
 
 Рассмотрим каждый из них подробнее.
 
-## Set
+## {heading(Set)[id=vision-instructions-face-recognition-set]}
 
 Данный метод позволяет установить связь между заданной фотографией и конкретным **person_id**.
 
-### Запрос
+### {heading(Запрос)[id=vision-instructions-face-recognition-set-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -26,7 +28,7 @@ HOST: `https://smarty.mail.ru`
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -50,11 +52,11 @@ HOST: `https://smarty.mail.ru`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-### Пример запроса
+### {heading(Пример запроса)[id=vision-instructions-face-recognition-set-request-example]}
 
 ```curl
 curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs"      \
@@ -72,7 +74,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 }'
 ```
 
-### Ответ
+### {heading(Ответ)[id=vision-instructions-face-recognition-set-request-answer]}
 
 | Параметр | Тип      | Значение                                                |
 | -------- | -------- | ------------------------------------------------------- |
@@ -93,7 +95,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 | error    | string | Текстовое описание ошибки (optional)                  |
 | name     | string | Имя файла для сопоставления файлов в запросе и ответе |
 
-### Пример ответа
+### {heading(Пример ответа)[id=vision-instructions-face-recognition-set-request-answer-example]}
 
 ```json
 {
@@ -111,7 +113,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 }
 ```
 
-### Дополнительные примеры
+### {heading(Дополнительные примеры)[id=vision-instructions-face-recognition-set-request-extra-examples]}
 
 {cut(Ошибка валидации полей (несовпадение имен файлов с формой))}
 
@@ -267,11 +269,11 @@ curl -X 'POST' \
 
 {/cut}
 
-## Recognize
+## {heading(Recognize)[id=vision-instructions-face-recognition-recognize]}
 
 Данный метод позволяет распознать person по заданной фотографии. В случае, если совпадение не найдено, будет добавлен новый person.
 
-### Запрос
+### {heading(Запрос)[id=vision-instructions-face-recognition-recognize-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -284,7 +286,7 @@ curl -X 'POST' \
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -298,7 +300,7 @@ curl -X 'POST' \
 
 Каждый раз, когда распознается известная персона, происходит обновление векторного представления лица (embedding) для лучшего распознания этой персоны в будущем. Однако в некоторых случаях лучше отключать автообновление с помощью параметра `update_embedding`, например, когда заведомо известно, что фотографии плохого качества.
 
-Описание параметра `space` смотрите в разделе метода [Set](../../instructions/face-recognition#set).
+Описание параметра `space` смотрите в разделе метода [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set).
 
 Параметры `image_meta`:
 
@@ -310,11 +312,11 @@ curl -X 'POST' \
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-### Пример запроса
+### {heading(Пример запроса)[id=vision-instructions-face-recognition-recognize-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -333,7 +335,7 @@ curl -X 'POST' \
 }'
 ```
 
-### Ответ
+### {heading(Ответ)[id=vision-instructions-face-recognition-recognize-request-answer]}
 
 | Параметр | Тип      | Значение                                                 |
 | ---------| -------- | ---------------------------------------------------------|
@@ -418,7 +420,7 @@ curl -X 'POST' \
 }
 ```
 
-### Дополнительные примеры
+### {heading(Дополнительные примеры)[id=vision-instructions-face-recognition-recognize-request-extra-examples]}
 
 {cut(Лица на изображении нет в базе и create_new=true)}
 
@@ -659,11 +661,11 @@ curl -X 'POST' \
 
 {/cut}
 
-## Delete
+## {heading(Delete)[id=vision-instructions-face-recognition-delete]}
 
 Данный метод позволяет удалить связь между фотографией и `person_id`.
 
-### Запрос
+### {heading(Запрос)[id=vision-instructions-face-recognition-delete-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -676,7 +678,7 @@ curl -X 'POST' \
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -685,7 +687,7 @@ curl -X 'POST' \
 | space    | string       | числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty) |
 | images   | []image_meta | метаданные передаваемых изображений (required non-empty) |
 
-Описание параметра space смотрите в разделе метода [Set](../../instructions/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set).
 
 Параметры `image_meta`:
 
@@ -698,11 +700,11 @@ curl -X 'POST' \
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-### Пример запроса
+### {heading(Пример запроса)[id=vision-instructions-face-recognition-delete-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -720,7 +722,7 @@ curl -X 'POST' \
 }'
 ```
 
-### Ответ
+### {heading(Ответ)[id=vision-instructions-face-recognition-delete-answer]}
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
@@ -741,7 +743,7 @@ curl -X 'POST' \
 | error    | string | Текстовое описание ошибки (optional)                  |
 | name     | string | Имя файла для сопоставления файлов в запросе и ответе |
 
-### Пример ответа
+### {heading(Пример ответа)[id=vision-instructions-face-recognition-delete-answer-example]}
 
 ```json
 {
@@ -759,7 +761,7 @@ curl -X 'POST' \
 }
 ```
 
-### Дополнительные примеры
+### {heading(Дополнительные примеры)[id=vision-instructions-face-recognition-delete-answer-extra-examples]}
 
 {cut(Ошибка валидации JSON (нет person_id))}
 
@@ -795,11 +797,11 @@ curl -X 'POST' \
 
 {/cut}
 
-## Truncate
+## {heading(Truncate)[id=vision-instructions-face-recognition-truncate]}
 
 Данный метод позволяет полностью очистить space.
 
-### Запрос
+### {heading(Запрос)[id=vision-instructions-face-recognition-truncate-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -812,7 +814,7 @@ curl -X 'POST' \
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                   |
 |  -------- |  ------------------------ | -------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -820,11 +822,11 @@ curl -X 'POST' \
 | -------- | ------ | -------- |
 | space    | string | Числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty)|
 
-Описание параметра space смотрите в разделе метода [Set](../../instructions/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set).
 
 Данный запрос не требует передачи изображений.
 
-### Пример запроса
+### {heading(Пример запроса)[id=vision-instructions-face-recognition-truncate-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -836,14 +838,14 @@ curl -X 'POST' \
 }'
 ```
 
-### Ответ
+### {heading(Ответ)[id=vision-instructions-face-recognition-truncate-answer]}
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
 | status   | int      | `200` в случае успешного взаимодействия с серверами Vision |
 | body     | response | Тело ответа                                              |
 
-### Пример ответа
+### {heading(Пример ответа)[id=vision-instructions-face-recognition-truncate-answer-example]}
 
 ```json
 {
@@ -854,7 +856,7 @@ curl -X 'POST' \
 }
 ```
 
-### Дополнительные примеры
+### {heading(Дополнительные примеры)[id=vision-instructions-face-recognition-truncate-extra-examples]}
 
 {cut(Ошибка валидации JSON (нет поля space))}
 

@@ -1,9 +1,18 @@
 {
-    "title": "Redis",
-      "shortDescription": "",
-      "metaDescription": "Базы данных VK Cloud: управление инстансами Redis.",
-    "sectionTitle": "Redis",
-    "icon": "",
-    "weight": 5,
-    "uuid": "1d9427ef-74a5-49df-86dc-e61b95afd3fa"
+  "title": "Redis",
+  "shortDescription": "",
+  "metaDescription": "Базы данных VK Cloud: управление инстансами Redis.",
+  "sectionTitle": "Redis",
+  "icon": "",
+  "weight": 5,
+  "uuid": "1d9427ef-74a5-49df-86dc-e61b95afd3fa",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

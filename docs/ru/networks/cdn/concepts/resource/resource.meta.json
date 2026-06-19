@@ -5,5 +5,10 @@
   "sectionTitle": "CDN-ресурс",
   "icon": "",
   "weight": 1,
-  "uuid": ""
+  "uuid": "",
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

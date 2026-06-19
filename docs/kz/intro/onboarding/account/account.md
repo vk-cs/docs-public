@@ -1,0 +1,1 @@
+# {heading({var(cloud)} жүйесінде тіркеліңіз)[id=onboarding-account]}

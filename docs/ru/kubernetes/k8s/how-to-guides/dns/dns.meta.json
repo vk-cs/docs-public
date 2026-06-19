@@ -4,6 +4,11 @@
   "metaDescription": "Как настроить и управлять DNS-конфигурацией кластера Kubernetes в VK Cloud. Использование инструментов ExternalDNS, CoreDNS",
   "sectionTitle": "Настройки DNS для кластера",
   "icon": "",
-  "weight": 7,
-  "uuid": "386fb1c2-c9b0-45bf-8f00-5b800b39be0c"
+  "weight": 4,
+  "uuid": "386fb1c2-c9b0-45bf-8f00-5b800b39be0c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

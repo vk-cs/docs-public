@@ -1,3 +1,5 @@
+# {heading(Просмотр топологии)[id=vnet-topology]}
+
 Топология сети — это схема сетевой связности виртуальных машин. На ней видны следующие элементы, а также все связи между ними:
 
 - сети;
@@ -7,13 +9,19 @@
 
 Чтобы посмотреть топологию сети отдельного проекта:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-cert,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Топология сети**.
 
+{ifdef(private-cert,private-pdf,private-pg-pdf)}
+{caption(Рисунок {counter(pic)[id=numb_pic_view_topology]} — Страница топологии сети)[align=center;position=under;id=pic_vnet_view_topology;number={const(numb_pic_view_topology)}]}
+{/ifdef}
 ![](./assets/view-topology.png)
+{ifdef(private-cert,private-pdf,private-pg-pdf)}
+{/caption}
+{/ifdef}
 
-## Управление топологией
+## {heading(Управление топологией)[id=vnet-topology-manage]}
 
 Доступные операции с топологией сети:
 
@@ -26,12 +34,12 @@
   - **ID** — идентификатор элемента в системе.
   - **Тип** — тип выбранного элемента:
 
-    - network — сеть;
-    - subnet — подсеть;
-    - instance — инстанс;
-    - router — маршрутизатор;
-    - balancer — балансировщик нагрузки;
-    - port — порт.
+    - `network` — сеть;
+    - `subnet` — подсеть;
+    - `instance` — инстанс;
+    - `router` — маршрутизатор;
+    - `balancer` — балансировщик нагрузки;
+    - `port` — порт.
 
   - **Статус** — состояние выбранного элемента. Не отображается для подсети. <!-- todo заполнить возможные статусы-->
   - Дополнительные параметры в зависимости от типа элемента.

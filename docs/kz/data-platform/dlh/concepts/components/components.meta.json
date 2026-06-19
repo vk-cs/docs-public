@@ -1,8 +1,13 @@
 {
-  "title": "Компоненты",
+  "title": "Компоненттер",
   "shortDescription": "Data Lakehouse жүйесіндегі әр компоненттің мақсаты мен функциялары",
   "metaDescription": "Data Lakehouse жүйесіндегі әр компоненттің мақсаты мен функциялары",
-  "sectionTitle": "Компоненты",
+  "sectionTitle": "Компоненттер",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

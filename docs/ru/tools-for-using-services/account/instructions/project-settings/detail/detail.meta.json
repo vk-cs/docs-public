@@ -1,0 +1,18 @@
+{
+  "title": "Детализация расходов",
+  "shortDescription": "Статистика по потреблению ресурсов и изменению баланса",
+  "metaDescription": "VK Cloud: просмотр статистики потребления ресурсов и изменения баланса на проектах",
+  "sectionTitle": "Детализация расходов",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

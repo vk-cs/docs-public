@@ -1,8 +1,10 @@
+# {heading(ДҚ журналдарын алу)[id=dbaas-dbaas-logs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Cloud ДҚ инстанстары үшін журнал жүргізуді қолдайды:
 
-- PostgreSQL / PostgresPro;
+- PostgreSQL;
 - MySQL;
 - Redis;
 - MongoDB;
@@ -16,7 +18,7 @@ VK Cloud ДҚ инстанстары үшін журнал жүргізуді қ
 
 ДҚ журналдарын шығару үшін:
 
-1. [SSH арқылы ВМ-ге қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) `admin` тіркелгісінің атынан.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы ВМ-ге қосылыңыз]} `admin` тіркелгісінің атынан.
 
    {note:info}
 
@@ -28,7 +30,7 @@ VK Cloud ДҚ инстанстары үшін журнал жүргізуді қ
 
    {tabs}
 
-   {tab(PostgreSQL / PostgresPro)}
+   {tab(PostgreSQL)}
 
    ```console
    journalctl -u postgresql

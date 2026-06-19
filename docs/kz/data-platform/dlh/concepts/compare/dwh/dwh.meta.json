@@ -4,5 +4,10 @@
   "metaDescription": "Корпоративтік деректер қоймаларындағы Data WareHouse архитектурасы: артықшылықтары мен кемшіліктері",
   "sectionTitle": "Data Warehouse",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

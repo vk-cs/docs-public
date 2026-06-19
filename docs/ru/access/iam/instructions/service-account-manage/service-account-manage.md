@@ -1,12 +1,14 @@
-## {heading(Создание сервисной учетной записи)[id=create]}
+# {heading(Управление сервисными учетными записями)[id=tools-account-service-account-manage]}
+
+## {heading(Создание сервисной учетной записи)[id=service-account-create]}
 
 В проекте можно создать до 300 сервисных учетных записей (СУЗ).
 
 {tabs}
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts). Создание СУЗ доступно для ролей:
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}. Создание СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
@@ -38,13 +40,13 @@
 {/tab}
 {/tabs}
 
-## {heading(Просмотр списка сервисных учетных записей проекта)[id=view_list]}
+## {heading(Просмотр списка сервисных учетных записей проекта)[id=service-account-view-list]}
 
 {tabs}
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте, упорядоченный по названию.
@@ -54,7 +56,7 @@
 {/tab}
 {/tabs}
 
-## {heading(Просмотр карточки сервисной учетной записи)[id=view_card]}
+## {heading(Просмотр карточки сервисной учетной записи)[id=service-account-view-card]}
 
 {note:warn}
 Данные в карточке недоступны для редактирования.
@@ -63,8 +65,8 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
@@ -72,7 +74,7 @@
 1. Откройте карточку СУЗ одним из способов:
 
    - Нажмите на имя нужной СУЗ.
-   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Просмотр**.
+   - Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Просмотр**.
 
    В карточке СУЗ отобразятся:
 
@@ -85,31 +87,31 @@
 {/tab}
 {/tabs}
 
-## {heading(Скачивание OpenStack RC-файла для работы с API)[id=download_rc_file]}
+## {heading(Скачивание OpenStack RC-файла для работы с API)[id=service-account-download-rc-file]}
 
 {tabs}
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts).
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
 
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Скачать OpenStack RC файл**.
+1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Скачать OpenStack RC файл**.
 
    На ваше устройство будет скачан OpenStack RC-файл с именем вида `<НАЗВАНИЕ_СУЗ>-openrc.sh`. Это скрипт, который устанавливает значения для переменных окружения, необходимых для работы с API.
 
 {/tab}
 {/tabs}
 
-## {heading(Авторизация в OpenStack CLI с помощью сервисной учетной записи)[id=authorize]}
+## {heading(Авторизация в OpenStack CLI с помощью сервисной учетной записи)[id=service-account-authorize]}
 
 {tabs}
 {tab(OpenStack CLI)}
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack).
-1. Перейдите в директорию <ПУТЬ_К_ФАЙЛУ> с ранее [скачанным OpenStack RC-файлом](#download_rc_file):
+1. Убедитесь, что клиент OpenStack {linkto(../../../../cli/openstack-cli#openstack-install)[text=установлен]}.
+1. Перейдите в директорию `<ПУТЬ_К_ФАЙЛУ>` с ранее {linkto(#service-account-download-rc-file)[text=скачанным OpenStack RC-файлом]}:
 
    ```console
    cd <ПУТЬ_К_ФАЙЛУ>
@@ -123,7 +125,7 @@
 
    Здесь <ИМЯ_ФАЙЛА> — имя OpenStack RC-файла.
 
-1. Введите пароль, полученный при [создании СУЗ](#create).
+1. Введите пароль, полученный при {linkto(#service-account-create)[text=создании СУЗ]}.
 
    {note:warn}
    Уведомление о результате проверки пароля не выводится.
@@ -138,15 +140,15 @@
 {/tab}
 {/tabs}
 
-## {heading(Удаление сервисной учетной записи)[id=delete]}
+## {heading(Удаление сервисной учетной записи)[id=service-account-delete]}
 
 Это групповая операция: при необходимости можно удалить сразу несколько СУЗ, выбрав их с помощью флажков.
 
 {tabs}
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что ваша [роль в проекте](/ru/access/iam/concepts/rolesandpermissions) имеет [права на управление СУЗ](/ru/access/iam/concepts/service-accounts). Удаление СУЗ доступно для ролей:
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}. Удаление СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
@@ -158,9 +160,9 @@
 
 1. Удалите СУЗ одним из способов:
 
-   - Нажмите ![](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Удалить**.
+   - Нажмите ![](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Удалить**.
    - Выберите нужную СУЗ с помощью флажка и нажмите кнопку **Удалить**.
-   - Нажмите на имя нужной СУЗ, в карточке СУЗ нажмите ![](/ru/assets/more-icon.svg "inline") и выберите пункт **Удалить**.
+   - Нажмите на имя нужной СУЗ, в карточке СУЗ нажмите ![](../../../../../assets/more-icon.svg "inline") и выберите пункт **Удалить**.
 
 1. Подтвердите удаление.
 

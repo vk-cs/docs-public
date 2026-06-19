@@ -1,8 +1,15 @@
 {
   "title": "Тұжырымдамалар",
-  "shortDescription": "VK Cloud-тағы Kafka сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
-  "metaDescription": "VK Cloud-тағы Kafka сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
+  "shortDescription": "VK Data Platform жүйесіндегі Kafka сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
+  "metaDescription": "VK Data Platform жүйесіндегі Kafka сервисі қалай құрылған: функционалдық ерекшеліктері мен ішкі архитектурасы",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

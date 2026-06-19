@@ -3,5 +3,10 @@
   "sectionTitle": "Бұлттағы машиналық оқыту",
   "metaDescription": "Бұлттағы машиналық оқыту",
   "weight": 9,
-  "icon": ""
+  "icon": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

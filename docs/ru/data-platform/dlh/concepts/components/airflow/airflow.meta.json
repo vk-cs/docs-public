@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Airflow",
   "icon": "",
   "weight": 5,
-  "uuid": "9e4995e7-831e-4131-8430-90c790201087"
+  "uuid": "9e4995e7-831e-4131-8430-90c790201087",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

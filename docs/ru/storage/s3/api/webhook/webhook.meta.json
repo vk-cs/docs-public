@@ -1,0 +1,14 @@
+{
+  "title": "Webhooks",
+  "shortDescription": "Настройка уведомлений через отправку HTTP/HTTPS запросов по событиям в бакетах ",
+  "metaDescription": "Все доступные методы для работы с вебхуками (webhook) в бакетах VK Object Storage: включить уведомление о событии (PutBucketNotificationConfiguration), проверить текущую конфигурацию правил уведомления для бакета (GetBucketNotificationConfiguration)",
+  "sectionTitle": "Webhooks",
+  "icon": "",
+  "weight": 12,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

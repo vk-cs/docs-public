@@ -43,14 +43,14 @@ VK Tech өнім сертификаттарын [арнайы бетте](https:
 
    Тіркелген кезде барлық жаңа пайдаланушылар үшін жоба автоматты түрде жасалады. Бұл жобаны сертификаттау сынақтарын жүргізу үшін пайдалана аласыз немесе жаңасын [құрыңыз](/kz/tools-for-using-services/account/instructions/project-settings/create).
 
-1. Жобаның [PID](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_identifikatoryn_alu) идентификаторын алыңыз. Ол сізге сертификаттауға құжаттар пакетін жіберген кезде қажет болады.
+1. Жобаның [PID](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) идентификаторын алыңыз. Ол сізге сертификаттауға құжаттар пакетін жіберген кезде қажет болады.
 
 {/tab}
 
 {tab(Менде VK Cloud жеке кабинетім бар)}
 
 1. [Құрыңыз](/kz/tools-for-using-services/account/instructions/project-settings/create) жаңа жоба.
-1. Жобаның [PID](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_identifikatoryn_alu) идентификаторын алыңыз.
+1. Жобаның [PID](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) идентификаторын алыңыз.
 Ол сізге сертификаттауға құжаттар пакетін жіберген кезде қажет болады.
 
 {/tab}
@@ -158,4 +158,4 @@ VK Tech тестілеу кезінде жасалған сынақ хаттам
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Жұмыс істеп тұрған инфрақұрылым есептеу ресурстарын тұтынады және тарифтеледі. Егер сертификаттау сынақтарын жүргізу үшін жасалған жоба сізге енді қажет болмаса, оны [жойыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhobany_zhoyu).
+Жұмыс істеп тұрған инфрақұрылым есептеу ресурстарын тұтынады және тарифтеледі. Егер сертификаттау сынақтарын жүргізу үшін жасалған жоба сізге енді қажет болмаса, оны [жойыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-delete).

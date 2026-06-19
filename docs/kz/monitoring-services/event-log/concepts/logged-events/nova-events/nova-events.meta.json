@@ -4,5 +4,10 @@
   "metaDescription": "Есептеу ресурстарын басқару сервисі Cloud Audit-ке жіберетін оқиғалар",
   "sectionTitle": "Nova компонентінің оқиғалары",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

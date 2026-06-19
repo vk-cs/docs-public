@@ -10,5 +10,14 @@
     "3efa44d7-d538-479c-8efc-21c39218bbbf",
     "baf2e9c6-8f3f-411f-bf28-b24adc11832b",
     "e0363d87-f7d6-47cb-94bb-9de64a149c3b"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

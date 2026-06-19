@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Мақалада Terraform көмегімен S3 бакеттері мен объектілерін жасау және баптау мысалдары келтірілген.
+Мақалада Terraform көмегімен {var(s3)} бакеттері мен объектілерін жасау және баптау мысалдары келтірілген.
 
 Желілерді жасау кезінде келесі ресурстар (resource) пайдаланылады:
 
@@ -16,7 +16,7 @@
 
 1. Инстансты жасау жоспарланған [аймақ](/kz/tools-for-using-services/account/concepts/regions) үшін қолжетімді ресурстармен және [квоталармен](/kz/tools-for-using-services/account/concepts/quotasandlimits) танысыңыз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, квоталарды [арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Егер әлі орнатылмаған болса, [Terraform орнатыңыз](../../quick-start).
 1. Провайдерді баптаңыз:
@@ -49,7 +49,7 @@
 
        Мұнда:
 
-        - `<РЕГИОН>` — S3 сервисін орналастыру аймағы. Баптау аккаунттың [аймағына](../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
+        - `<РЕГИОН>` — {var(s3)} сервисін орналастыру аймағы. Баптау аккаунттың [аймағына](../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
 
             - `ru-msk` — Мәскеу аймағы;
             - `kz-ast` — Қазақстан аймағы.
@@ -108,7 +108,7 @@ resource "aws_s3_object" "object-two" {
         - 4-тен 63-ке дейін таңбадан тұрады;
         - әріптен немесе саннан басталып, солармен аяқталады;
         - тек кіші латын әріптерінен, сандардан және келесі таңбалардан тұрады: `.`, `-`;
-        - барлық аймақтардағы VK Cloud платформасы шегінде бірегей болады.
+        - барлық аймақтардағы {var(cloud)} платформасы шегінде бірегей болады.
 
       Бакет атауы оның ішіндегі объектілердің URL мекенжайларында болады, сондықтан атауда құпия ақпаратты қолданбаңыз.
 
@@ -117,16 +117,16 @@ resource "aws_s3_object" "object-two" {
         - IP мекенжайлар және соларға ұқсас пішімдер (мысалы, `192.168.5.4`), себебі бакет атауы мен сайттың IP мекенжайы шатастырылуы мүмкін.
         - басындағы `xn--`: одан кейінгінің бәрін браузер [паникод](https://ru.wikipedia.org/wiki/Punycode) ретінде қабылдайды.
 
-    {note:warn}
+      {note:warn}
       Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
-    {/note}
+      {/note}
 
-    - `bucket = aws_s3_bucket.example-bucket.bucket` — объектіні жасау кезінде бакетті жасайтын ресурс көрсетіледі. Бұл мысалда объект `example-bucket` ресурсы жасайтын `aws_s3_bucket` бакетіне орналастырылады.
+    - `bucket = aws_s3_bucket.example-bucket.bucket` — объектіні жасау кезінде бакетті жасайтын ресурс көрсетіледі. Бұл мысалда объект `aws_s3_bucket` ресурсы жасайтын `example-bucket` бакетіне орналастырылады.
 
 - (Опционалды) `force_destroy` — бұл параметр бакет ішінде объектілер болса да, оны жоюға рұқсат береді. Қолжетімді мәндер: `true` және `false`. Әдепкі мәні — `false`.
 - `key`— объект кілті. Объект бакетке жүктелгеннен кейінгі атауы.
 - `source` — бакетке жүктелетін файлға дейінгі құрылғыңыздағы жол.
-- `acl` — объект үшін [ACL баптаулары](/kz/storage/s3/concepts/access/s3-acl#standard_acl). Қолжетімді мәндер: `private`, `public-read`, `auth-read`.
+- `acl` — объект үшін [ACL баптаулары](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-pre-set). Қолжетімді мәндер: `private`, `public-read`, `auth-read`.
 - `etag` — объект нұсқасының идентификаторы. `filemd5("path/to/source")` көмегімен орнатылады. Бұл параметрді тек 16 МБ-тан кіші объектілер үшін пайдаланыңыз. 16 МБ-тан үлкен объектілер үшін `source_hash` пайдаланыңыз, себебі олар multipart құрауыш жүктеу әдісімен жүктеледі.
 - `source_hash` — объект нұсқасының идентификаторы. Бұл параметр `etag` параметріне ұқсас, бірақ объект өлшеміне шектеу жоқ. `filemd5("path/to/source")` көмегімен орнатылады.
 
@@ -168,7 +168,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
 
 {note:info}
 
-Басқа жобадағы S3 жеке [аккаунты](/kz/storage/s3/instructions/access-management/access-keys) үшін ACL көрсету мүмкін емес.
+Басқа жобадағы {var(s3)} жеке [аккаунты](/kz/storage/s3/instructions/access-management/access-keys) үшін ACL көрсету мүмкін емес.
 
 {/note}
 
@@ -218,9 +218,9 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 Мұнда:
 
 - `data "aws_canonical_user_id" "current" {}` — деректер көзі ағымдағы пайдаланушының канондық идентификаторын (Canonical User ID) алады.
-- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — бакетке қол жеткізу құқықтары берілетін пайдаланушының канондық идентификаторы (Canonical User ID). [Пайдаланушының канондық идентификаторын қалай білуге болады](/kz/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#user_id).
-- `email_address = "mcs1234567890"` — бакетке қол жеткізу құқықтары берілетін PID (жоба идентификаторы). [PID-ті қалай білуге болады](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_identifikatoryn_alu).
-- `permission` — [қол жеткізу құқықтарының түрі](/kz/storage/s3/concepts/access/s3-acl#permissons). Қолжетімді мәндер: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — бакетке қол жеткізу құқықтары берілетін пайдаланушының канондық идентификаторы (Canonical User ID). [Пайдаланушының канондық идентификаторын қалай білуге болады](/kz/tools-for-using-services/api/api-spec/s3-rest-api/acl-api).
+- `email_address = "mcs1234567890"` — бакетке қол жеткізу құқықтары берілетін PID (жоба идентификаторы). [PID-ті қалай білуге болады](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
+- `permission` — [қол жеткізу құқықтарының түрі](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissons). Қолжетімді мәндер: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Бакет үшін CORS ережелерін баптаңыз
 
@@ -283,7 +283,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 Бакет пен объектілердің сәтті жасалғанына, конфигурацияның бапталғанына көз жеткізіңіз:
 
-1. AWS CLI арқылы S3 жүйесіне [қосылыңыз](/kz/storage/s3/connect/s3-cli).
+1. AWS CLI арқылы {var(s3)} жүйесіне [қосылыңыз](/kz/storage/s3/connect/s3-cli).
 1. Бакет пен объектілердің жасалғанын тексеріңіз. Команданы орындаңыз:
 
    ```console
@@ -293,7 +293,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
    Мұнда:
 
     - `example-bucket` — Terraform арқылы жасалған бакет атауы.
-    - `endpoint-url` — S3 сервисінің домені, ол аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
+    - `endpoint-url` — {var(s3)} сервисінің домені, ол аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
 
         - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
         - `https://hb.kz-ast.bizmrg.com` — Қазақстан аймағының домені.

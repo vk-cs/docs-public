@@ -1,0 +1,17 @@
+{
+  "title": "Термины и сокращения",
+  "shortDescription": "",
+  "metaDescription": "Какие сокращения и термины используются в руководстве пользователя VK Private Cloud. Их расшифровка и определения для лучшего понимания Платформы.",
+  "sectionTitle": "Термины и сокращения",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": ""
+}

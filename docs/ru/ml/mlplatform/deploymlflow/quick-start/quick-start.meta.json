@@ -5,5 +5,10 @@
   "sectionTitle": "Быстрый старт",
   "icon": "",
   "weight": 1,
-  "uuid": "c9c37ee4-c998-46ef-ba96-decf1accccf6"
+  "uuid": "c9c37ee4-c998-46ef-ba96-decf1accccf6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

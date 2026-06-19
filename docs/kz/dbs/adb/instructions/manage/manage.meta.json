@@ -4,5 +4,10 @@
   "metaDescription": "Arenadata DB as a Service VK Cloud: өрістетілген кластерді басқару жөніндегі нұсқаулықтар",
   "sectionTitle": "Кластерді басқару",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

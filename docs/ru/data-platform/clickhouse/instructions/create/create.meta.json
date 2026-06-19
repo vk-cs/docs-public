@@ -1,9 +1,16 @@
 {
   "title": "Создание экземпляра сервиса",
   "shortDescription": "Как создать экземпляр Cloud ClickHouse в нужной конфигурации",
-  "metaDescription": "Как создать экземпляр сервиса в нужной конфигурации.",
+  "metaDescription": "Узнайте как в VK Data Platform создать экземпляр сервиса Cloud ClickHouse в нужной конфигурации",
   "sectionTitle": "Создание экземпляра сервиса",
   "icon": "",
   "weight": 1,
-  "uuid": "56b5a26b-1cac-4013-b6f8-8c108454a0cb"
+  "uuid": "56b5a26b-1cac-4013-b6f8-8c108454a0cb",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

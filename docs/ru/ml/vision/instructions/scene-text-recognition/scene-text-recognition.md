@@ -1,3 +1,5 @@
+# {heading(Распознавание текста на фотографиях)[id=vision-instructions-scene-text-recognition]}
+
 Данный метод позволяет распознавать:
 
 - текст на фотографиях, снятых на улице (scene_text);
@@ -7,7 +9,7 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/scene_text/recognize`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-scene-text-recognition-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -20,7 +22,7 @@ ENDPOINT: `/api/v1/scene_text/recognize`
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса:
 
@@ -62,11 +64,11 @@ ENDPOINT: `/api/v1/scene_text/recognize`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-scene-text-recognition-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -84,7 +86,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }"
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-scene-text-recognition-answer]}
 
 | Параметр      | Тип      | Описание                                                 |
 | ------------- | -------- | -------------------------------------------------------- |
@@ -115,7 +117,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 | coord         | [][]int64| ![](/ru/assets/check.svg "inline")             | Координаты слова — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
 | text          | string   | ![](/ru/assets/check.svg "inline")             | Распознанное слово ответа                                |
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-scene-text-recognition-answer-example]}
 
 ```json
 {
@@ -155,7 +157,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<в
 }
 ```
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-scene-text-recognition-extra-examples]}
 
 {cut(На изображении нет текста)}
 

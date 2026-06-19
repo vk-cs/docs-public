@@ -1,9 +1,18 @@
 {
-    "title": "Язык поисковых запросов",
-      "shortDescription": "Инструменты поиска",
-      "metaDescription": "Cloud Logging — сервис для работы с логами пользовательских приложений на ВМ и в облаке VK Cloud. Поиск и фильтрация записей в логах",
-    "sectionTitle": "Язык поисковых запросов",
-    "icon": "",
-    "weight": 5,
-    "uuid": "42f45fdc-d745-4537-bcdb-c348ae54046b"
+  "title": "Язык поисковых запросов",
+  "shortDescription": "Инструменты поиска",
+  "metaDescription": "Cloud Logging — сервис для работы с логами пользовательских приложений на ВМ и в облаке VK Cloud. Поиск и фильтрация записей в логах",
+  "sectionTitle": "Язык поисковых запросов",
+  "icon": "",
+  "weight": 5,
+  "uuid": "42f45fdc-d745-4537-bcdb-c348ae54046b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -1,2461 +1,1599 @@
+# {heading(Справочник разрешений)[id=iam-permissions-reference]}
+
 Разрешения используются для тонкой настройки доступа, когда предустановленных [ролей доступа](/ru/access/iam/concepts/roles-reference) недостаточно.
 
-Разрешение позволяет пользователю в определенном сервисе или компоненте выполнять конкретное действие:
+Разрешение представляет собой гранулярную роль, которая позволяет пользователю в определенном сервисе или наборе компонентов выполнять конкретное действие:
 
 - просматривать информацию о сервисе,
 - создавать и изменять компоненты и ресурсы,
 - удалять компоненты и ресурсы.
 
-## Платформенные компоненты
+## {heading(Платформенные компоненты)[id=iam-permissions-platform]}
 
 Управление основными компонентами VK Cloud, обеспечивающими работу [PaaS и IaaS-сервисов](/ru/start/concepts/architecture).
 
-### cdn_delete
+### {heading(cdn_delete)[id=cdn_delete]}
 
 Название в личном кабинете: `Удаление CDN`.
 
 Позволяет удалять конфигурации и прекращать работу узлов CDN.
 
-### cdn_modify
+### {heading(cdn_modify)[id=cdn_modify]}
 
 Название в личном кабинете: `Управление CDN`.
 
 Позволяет настраивать зоны доставки контента и параметры кеширования CDN.
 
-### cdn_view
+### {heading(cdn_view)[id=cdn_view]}
 
 Название в личном кабинете: `Просмотр CDN`.
 
 Позволяет просматривать настройки CDN и статистику проходящего трафика.
 
-### containers_delete
+### {heading(containers_delete)[id=containers_delete]}
 
 Название в личном кабинете: `Удаление контейнеров`.
 
 Предоставляет возможность удалять кластеры контейнеров и связанные с ними ресурсы.
 
-### containers_modify
+### {heading(containers_modify)[id=containers_modify]}
 
 Название в личном кабинете: `Управление контейнерами`.
 
 Позволяет создавать кластеры контейнеров и связанные с ними ресурсы.
 
-### containers_view
+### {heading(containers_view)[id=containers_view]}
 
 Название в личном кабинете: `Просмотр контейнеров`.
 
 Позволяет просматривать список кластеров контейнеров и детальной информации о них.
 
-### daas_delete
+### {heading(daas_delete)[id=daas_delete]}
 
 Название в личном кабинете: `Удаление рабочих столов (DaaS)`.
 
 Позволяет удалять инстансы виртуальных рабочих столов.
 
-### daas_modify
+### {heading(daas_modify)[id=daas_modify]}
 
 Название в личном кабинете: `Управление рабочими столами (DaaS)`.
 
 Позволяет создавать и администрировать виртуальные рабочие столы пользователей.
 
-### daas_view
+### {heading(daas_view)[id=daas_view]}
 
 Название в личном кабинете: `Просмотр рабочих столов (DaaS)`.
 
 Позволяет просматривать список виртуальных рабочих столов и информацию об их состоянии.
 
-### databases_delete
+### {heading(databases_delete)[id=databases_delete]}
 
 Название в личном кабинете: `Удаление баз данных`.
 
 Позволяет удалять базы данных и очищать хранилища данных.
 
-### databases_modify
+### {heading(databases_modify)[id=databases_modify]}
 
 Название в личном кабинете: `Управление базами данных`.
 
 Позволяет создавать базы и хранилища данных.
 
-### databases_view
+### {heading(databases_view)[id=databases_view]}
 
 Название в личном кабинете: `Просмотр баз данных`.
 
 Позволяет просматривать список доступных баз данных и их характеристики.
 
-### gpu_delete
+### {heading(gpu_delete)[id=gpu_delete]}
 
 Название в личном кабинете: `Удаление графических ускорителей (GPU)`.
 
 Позволяет освобождать и удалять ресурсы графических ускорителей.
 
-### gpu_modify
+### {heading(gpu_modify)[id=gpu_modify]}
 
 Название в личном кабинете: `Управление графическими ускорителями (GPU)`.
 
 Позволяет подключать графические ускорители и изменять их параметры.
 
-### gpu_view
+### {heading(gpu_view)[id=gpu_view]}
 
 Название в личном кабинете: `Просмотр графических ускорителей (GPU)`.
 
 Позволяет просматривать наличие и состояние ресурсов графических ускорителей.
 
-### grm_delete
+### {heading(grm_delete)[id=grm_delete]}
 
 Название в личном кабинете: `Удаление компонента GRM`.
 
 Позволяет удалять глобальные модели разрешений и сбрасывать настройки управления ролями.
 
-### grm_modify
+### {heading(grm_modify)[id=grm_modify]}
 
 Название в личном кабинете: `Управление компонентом GRM`.
 
 Позволяет настраивать глобальные модели разрешений и права доступа в них.
 
-### grm_view
+### {heading(grm_view)[id=grm_view]}
 
 Название в личном кабинете: `Просмотр компонента GRM`.
 
 Позволяет просматривать текущую структуру прав и ролей платформы.
 
-### hotbox_delete
+### {heading(hotbox_delete)[id=hotbox_delete]}
 
 Название в личном кабинете: `Удаление компонента Hotbox`.
 
 Позволяет удалять данные и очищать пространства в хранилище горячих данных Hotbox.
 
-### hotbox_modify
+### {heading(hotbox_modify)[id=hotbox_modify]}
 
 Название в личном кабинете: `Управление компонентом Hotbox`.
 
 Позволяет управлять настройками и объектами в хранилище горячих данных Hotbox.
 
-### hotbox_view
+### {heading(hotbox_view)[id=hotbox_view]}
 
 Название в личном кабинете: `Просмотр компонента Hotbox`.
 
 Позволяет просматривать содержимое и структуру хранилища горячих данных Hotbox.
 
-### Infra_delete
+### {heading(Infra_delete)[id=Infra_delete]}
 
 Название в личном кабинете: `Удаление инфраструктуры`.
 
 Позволяет безвозвратно удалять ресурсы и объекты инфраструктуры (компонент `infra`).
 
-### Infra_modify
+### {heading(Infra_modify)[id=Infra_modify]}
 
 Название в личном кабинете: `Управление инфраструктурой`.
 
 Позволяет изменять параметры ресурсов и объектов инфраструктуры (компонент `infra`).
 
-### Infra_view
+### {heading(Infra_view)[id=Infra_view]}
 
 Название в личном кабинете: `Просмотр инфраструктуры`.
 
 Позволяет просматривать текущее состояние ресурсов и объектов инфраструктуры (компонент `infra`).
 
-### marketplace_delete
+### {heading(marketplace_delete)[id=marketplace_delete]}
 
 Название в личном кабинете: `Удаление из магазина приложений (Marketplace)`.
 
 Позволяет удалять предложения и позиции из каталога магазина приложений.
 
-### marketplace_modify
+### {heading(marketplace_modify)[id=marketplace_modify]}
 
 Название в личном кабинете: `Управление магазином приложений (Marketplace)`.
 
 Позволяет добавлять позиции в магазин приложений и изменять параметры доступных сервисов в каталоге магазина.
 
-### marketplace_view
+### {heading(marketplace_view)[id=marketplace_view]}
 
 Название в личном кабинете: `Просмотр компонентов магазина приложений (Marketplace)`.
 
 Позволяет просматривать доступные услуги и приложения.
 
-### mlplatform_delete
+### {heading(mlplatform_delete)[id=mlplatform_delete]}
 
 Название в личном кабинете: `Удаление из ML-платформы`.
 
 Позволяет удалять модели из сервиса машинного обучения Cloud ML Platform.
 
-### mlplatform_modify
+### {heading(mlplatform_modify)[id=mlplatform_modify]}
 
 Название в личном кабинете: `Управление ML-платформой`.
 
 Позволяет настраивать среды обучения в сервисе машинного обучения Cloud ML Platform.
 
-### mlplatform_view
+### {heading(mlplatform_view)[id=mlplatform_view]}
 
 Название в личном кабинете: `Просмотр ML-платформы`.
 
 Позволяет просматривать состояние проектов в сервисе машинного обучения и результатов обучения моделей.
 
-### nord_delete
+### {heading(nord_delete)[id=nord_delete]}
 
 Название в личном кабинете: `Удаление компонента Nord`.
 
 Позволяет удалять объекты и настройки компонента Nord.
 
-### nord_modify
+### {heading(nord_modify)[id=nord_modify]}
 
 Название в личном кабинете: `Управление компонентом Nord`.
 
 Позволяет управлять расширенными функциями платформы в части развертывания ресурсов.
 
-### nord_view
+### {heading(nord_view)[id=nord_view]}
 
 Название в личном кабинете: `Просмотр компонента Nord`.
 
 Позволяет отслеживать состояние служб компонента Nord.
 
-### service_delete
+### {heading(service_delete)[id=service_delete]}
 
 Название в личном кабинете: `Удаление компонентов`.
 
 Позволяет отключать и удалять сервисные компоненты.
 
-### service_modify
+### {heading(service_modify)[id=service_modify]}
 
 Название в личном кабинете: `Управление компонентами`.
 
 Позволяет изменять настройки внутренних сервисных служб платформы.
 
-### service_view
+### {heading(service_view)[id=service_view]}
 
 Название в личном кабинете: `Просмотр компонентов`.
 
 Позволяет просматривать список всех служб и статусов их работоспособности.
 
-### sqs_delete
+### {heading(sqs_delete)[id=sqs_delete]}
 
 Название в личном кабинете: `Удаление очередей SQS`.
 
 Позволяет удалять очереди сообщений и очищать сообщения в них.
 
-### sqs_modify
+### {heading(sqs_modify)[id=sqs_modify]}
 
 Название в личном кабинете: `Управление очередями SQS`.
 
 Позволяет создавать и настраивать параметры очередей сообщений.
 
-### sqs_view
+### {heading(sqs_view)[id=sqs_view]}
 
 Название в личном кабинете: `Просмотр очередей SQS`.
 
 Позволяет просматривать количество и состояние сообщений в очередях сообщений.
 
-### vision_delete
+### {heading(vision_delete)[id=vision_delete]}
 
 Название в личном кабинете: `Удаление компонента компьютерного зрения (Vision)`.
 
 Позволяет останавливать сервисы и удалять данные компьютерного зрения.
 
-### vision_modify
+### {heading(vision_modify)[id=vision_modify]}
 
 Название в личном кабинете: `Управление компьютерным зрением (Vision)`.
 
 Позволяет настраивать параметры сервисов компьютерного зрения и запускать задачи обработки.
 
-### vision_view
+### {heading(vision_view)[id=vision_view]}
 
 Название в личном кабинете: `Просмотр компонента компьютерного зрения (Vision)`.
 
 Позволяет просматривать результаты аналитики и историю работы сервисов компьютерного зрения.
 
-### xaas_delete
+### {heading(xaas_delete)[id=xaas_delete]}
 
 Название в личном кабинете: `Удаление компонентов XaaS`.
 
 Позволяет удалять партнерские сервисы, предоставляемые как услуга.
 
-### xaas_modify
+### {heading(xaas_modify)[id=xaas_modify]}
 
 Название в личном кабинете: `Управление компонентами XaaS`.
 
 Позволяет конфигурировать параметры партнерских сервисов, предоставляемых как услуга.
 
-### xaas_view
+### {heading(xaas_view)[id=xaas_view]}
 
 Название в личном кабинете: `Просмотр компонентов XaaS`.
 
 Позволяет просматривать список и описание всех активных партнерских сервисов, предоставляемых как услуга.
 
-## Управление организацией и доступом
+## {heading(Управление организацией и доступом)[id=iam-permissions-organization-access]}
 
 Управление проектами, доменом, пользователями и их группами, партнерами, а также квотами и лимитами.
 
-### base_project_delete
+### {heading(base_project_delete)[id=base_project_delete]}
 
 Название в личном кабинете: `Удаление базового проекта`.
 
 Позволяет удалять из отображения в левой панели [личного кабинета](/ru/tools-for-using-services/account) структурные элементы проекта (разделы личного кабинета).
 
-### base_project_modify
+### {heading(base_project_modify)[id=base_project_modify]}
 
 Название в личном кабинете: `Управление базовым проектом`.
 
 Позволяет изменять конфигурацию структурных элементов проекта (разделов) в левой панели [личного кабинета](/ru/tools-for-using-services/account).
 
-### base_project_view
+### {heading(base_project_view)[id=base_project_view]}
 
 Название в личном кабинете: `Просмотр базового проекта`.
 
 Позволяет просматривать информацию о структурных элементах проекта. Используется для предоставления доступа к интерфейсу [личного кабинета](/ru/tools-for-using-services/account) и его разделам.
 
-### domain_delete
+### {heading(domain_delete)[id=domain_delete]}
 
 Название в личном кабинете: `Удаление домена`.
 
 Позволяет полностью удалять доменную структуру.
 
-### domain_groups_delete
+### {heading(domain_groups_delete)[id=domain_groups_delete]}
 
 Название в личном кабинете: `Удаление групп домена`.
 
 Позволяет удалять группы пользователей в домене.
 
-### domain_groups_modify
+### {heading(domain_groups_modify)[id=domain_groups_modify]}
 
 Название в личном кабинете: `Управление группами домена`.
 
 Позволяет создавать группы пользователей и управлять их составом на уровне домена.
 
-### domain_groups_view
+### {heading(domain_groups_view)[id=domain_groups_view]}
 
 Название в личном кабинете: `Просмотр групп домена`.
 
 Позволяет просматривать иерархию и состав групп в домене.
 
-### domain_modify
+### {heading(domain_modify)[id=domain_modify]}
 
 Название в личном кабинете: `Управление доменом`.
 
 Позволяет изменять глобальные настройки и параметры изоляции домена.
 
-### domain_users_delete
+### {heading(domain_users_delete)[id=domain_users_delete]}
 
 Название в личном кабинете: `Удаление пользователей домена`.
 
 Позволяет удалять учетные записи пользователей домена.
 
-### domain_users_modify
+### {heading(domain_users_modify)[id=domain_users_modify]}
 
 Название в личном кабинете: `Управление пользователями домена`.
 
 Позволяет создавать и изменять учетные записи пользователей в рамках домена.
 
-### domain_users_view
+### {heading(domain_users_view)[id=domain_users_view]}
 
 Название в личном кабинете: `Просмотр пользователей домена`.
 
 Позволяет просматривать список всех пользователей домена.
 
-### domain_view
+### {heading(domain_view)[id=domain_view]}
 
 Название в личном кабинете: `Просмотр домена`.
 
 Позволяет просматривать общие параметры и идентификаторов домена.
 
-### partners_delete
+### {heading(partners_delete)[id=partners_delete]}
 
 Название в личном кабинете: `Удаление партнеров`.
 
 Позволяет удалять записи из списка партнеров.
 
-### partners_modify
+### {heading(partners_modify)[id=partners_modify]}
 
 Название в личном кабинете: `Управление партнерами`.
 
 Позволяет регистрировать партнеров и изменять их данные.
 
-### partners_view
+### {heading(partners_view)[id=partners_view]}
 
 Название в личном кабинете: `Просмотр партнеров`.
 
 Позволяет просматривать список и условия сотрудничества партнеров.
 
-### project_delete
+### {heading(project_delete)[id=project_delete]}
 
 Название в личном кабинете: `Удаление проекта`.
 
 Позволяет полностью удалять [проект](/ru/tools-for-using-services/account/concepts/projects) со всеми вложенными ресурсами.
 
-### project_modify
+### {heading(project_modify)[id=project_modify]}
 
 Название в личном кабинете: `Управление проектом`.
 
 Позволяет изменять настройки [проекта](/ru/tools-for-using-services/account/concepts/projects).
 
-### projects_delete
+### {heading(projects_delete)[id=projects_delete]}
 
 Название в личном кабинете: `Удаление проектов`.
 
 Позволяет массово или выборочно удалять проекты из списка.
 
-### projects_modify
+### {heading(projects_modify)[id=projects_modify]}
 
 Название в личном кабинете: `Управление проектами`.
 
 Позволяет изменять список проектов и их глобальные настройки.
 
-### projects_quota_delete
+### {heading(projects_quota_delete)[id=projects_quota_delete]}
 
 Название в личном кабинете: `Удаление квот проектов`.
 
 Позволяет сбрасывать ограничения ресурсов для выбранных проектов.
 
-### projects_quota_modify
+### {heading(projects_quota_modify)[id=projects_quota_modify]}
 
 Название в личном кабинете: `Управление квотами проектов`.
 
 Позволяет массово изменять лимиты ресурсов для группы проектов.
 
-### projects_quota_view
+### {heading(projects_quota_view)[id=projects_quota_view]}
 
 Название в личном кабинете: `Просмотр квот проектов`.
 
 Позволяет просматривать квоты, лимиты и данные о потреблении ресурсов во всех проектах.
 
-### projects_view
+### {heading(projects_view)[id=projects_view]}
 
 Название в личном кабинете: `Просмотр проектов`.
 
 Позволяет просматривать список всех проектов в облаке.
 
-### project_view
+### {heading(project_view)[id=project_view]}
 
 Название в личном кабинете: `Просмотр проекта`.
 
 Позволяет просматривать детальную информацию о параметрах и статусе [проекта](/ru/tools-for-using-services/account/concepts/projects).
 
-### quota_delete
+### {heading(quota_delete)[id=quota_delete]}
 
 Название в личном кабинете: `Удаление квот`.
 
 Позволяет сбрасывать или удалять установленные в проекте ограничения ресурсов.
 
-### quota_modify
+### {heading(quota_modify)[id=quota_modify]}
 
 Название в личном кабинете: `Управление квотами`.
 
 Позволяет изменять квоты и лимиты потребления ресурсов для проекта.
 
-### quota_view
+### {heading(quota_view)[id=quota_view]}
 
 Название в личном кабинете: `Просмотр квот`.
 
 Позволяет просматривать текущие квоты и лимиты, а также объем потребляемых ресурсов.
 
-### users_delete
+### {heading(users_delete)[id=users_delete]}
 
 Название в личном кабинете: `Удаление пользователей`.
 
 Позволяет удалять пользователей с платформы.
 
-### users_modify
+### {heading(users_modify)[id=users_modify]}
 
 Название в личном кабинете: `Управление пользователями`.
 
 Позволяет создавать и редактировать данные учетных записей пользователей платформы.
 
-### users_view
+### {heading(users_view)[id=users_view]}
 
 Название в личном кабинете: `Просмотр пользователей`.
 
 Позволяет просматривать общий список пользователей платформы.
 
-## Контейнеры и оркестрация
+## {heading(Контейнеры и оркестрация)[id=iam-permissions-k8s]}
 
 Управление сервисом оркестрации на базе Kubernetes.
 
-### ics_agent_delete
+### {heading(ics_agent_delete)[id=ics_agent_delete]}
 
 Название в личном кабинете: `Удаление агента ICS`.
 
  Позволяет отключать и удалять агенты инвентаризации и сбора данных.
 
-### ics_agent_modify
+### {heading(ics_agent_modify)[id=ics_agent_modify]}
 
 Название в личном кабинете: `Управление агентом ICS`.
 
 Позволяет настраивать параметры работы агентов инвентаризации и сбора данных.
 
-### ics_agent_view
+### {heading(ics_agent_view)[id=ics_agent_view]}
 
 Название в личном кабинете: `Просмотр агента ICS`.
 
 Позволяет просматривать статусы и активности агентов ICS.
 
-### k8s_cluster_delete
+### {heading(k8s_cluster_delete)[id=k8s_cluster_delete]}
 
 Название в личном кабинете: `Удаление кластеров Kubernetes`.
 
 Позволяет полностью удалять кластеры Kubernetes.
 
-### k8s_cluster_management_delete
+### {heading(k8s_cluster_management_delete)[id=k8s_cluster_management_delete]}
 
 Название в личном кабинете: `Действие по удалению администрирования Kubernetes`.
 
 Позволяет отзывать административные полномочия в Kubernetes.
 
-### k8s_cluster_management_modify
+### {heading(k8s_cluster_management_modify)[id=k8s_cluster_management_modify]}
 
 Название в личном кабинете: `Администрирование кластеров Kubernetes`.
 
 Позволяет изменять настройки управления средами Kubernetes.
 
-### k8s_cluster_management_view
+### {heading(k8s_cluster_management_view)[id=k8s_cluster_management_view]}
 
 Название в личном кабинете: `Просмотр администрирования Kubernetes`.
 
 Позволяет просматривать настройки управления и прав в кластерах Kubernetes.
 
-### k8s_cluster_modify
+### {heading(k8s_cluster_modify)[id=k8s_cluster_modify]}
 
 Название в личном кабинете: `Управление кластерами Kubernetes`.
 
 Позволяет создавать кластеры Kubernetes.
 
-### k8s_cluster_view
+### {heading(k8s_cluster_view)[id=k8s_cluster_view]}
 
 Название в личном кабинете: `Просмотр кластеров Kubernetes`.
 
 Позволяет просматривать статусы и параметры всех кластеров Kubernetes.
 
-## Мониторинг, трассировка и администрирование
+## {heading(Мониторинг, трассировка и администрирование)[id=iam-permissions-monitor-trace]}
 
 Управление трассировкой, маршрутизацией и безопасностью пользователей.
 
-### router_without_internet_delete
+### {heading(router_without_internet_delete)[id=router_without_internet_delete]}
 
 Название в личном кабинете: `Удаление роутера без интернета`.
 
 Позволяет удалять маршрутизаторы в изолированных сетях.
 
-### router_without_internet_modify
+### {heading(router_without_internet_modify)[id=router_without_internet_modify]}
 
 Название в личном кабинете: `Управление роутером без интернета`.
 
 Позволяет настраивать маршрутизацию внутри изолированных сетей.
 
-### router_without_internet_view
+### {heading(router_without_internet_view)[id=router_without_internet_view]}
 
 Название в личном кабинете: `Просмотр роутера без интернета`.
 
 Позволяет просматривать параметры локальной маршрутизации в изолированных сетях.
 
-### tracing_trace_delete
+### {heading(tracing_trace_delete)[id=tracing_trace_delete]}
 
 Название в личном кабинете: `Удаление трассировок`.
 
 Позволяет удалять накопленные данные трассировки.
 
-### tracing_trace_modify
+### {heading(tracing_trace_modify)[id=tracing_trace_modify]}
 
 Название в личном кабинете: `Управление трассировкой`.
 
 Позволяет настраивать параметры и запускать процессы отладочной трассировки запросов.
 
-### tracing_trace_view
+### {heading(tracing_trace_view)[id=tracing_trace_view]}
 
 Название в личном кабинете: `Просмотр трассировок`.
 
 Позволяет просматривать информацию о путях прохождения запросов и мониторинг трассировок.
 
-### users_protect_delete
+### {heading(users_protect_delete)[id=users_protect_delete]}
 
 Название в личном кабинете: `Отключение защиты пользователей`.
 
 Позволяет снимать ограничения безопасности с пользователей.
 
-### users_protect_modify
+### {heading(users_protect_modify)[id=users_protect_modify]}
 
 Название в личном кабинете: `Управление защитой пользователей`.
 
 Позволяет настраивать политики безопасности и защиты пользователей.
 
-### users_protect_view
+### {heading(users_protect_view)[id=users_protect_view]}
 
 Название в личном кабинете: `Просмотр защиты пользователей`.
 
 Позволяет просматривать данные аудита для статусов безопасности пользователей.
 
-## Базовая инфраструктура
+## {heading(Базовая инфраструктура)[id=iam-permissions-basic-infrastructure]}
 
 Управление компонентами Openstack и другими инфраструктурными компонентами, которые обеспечивают работу платформы.
 
-### barbican_delete
+### {heading(barbican_delete)[id=barbican_delete]}
 
 Название в личном кабинете: `Удаление секретов (Barbican)`.
 
 Позволяет безвозвратно удалять секреты и ключи доступа.
 
-### barbican_modify
+### {heading(barbican_modify)[id=barbican_modify]}
 
 Название в личном кабинете: `Управление секретами (Barbican)`.
 
 Позволяет создавать и изменять криптографические ключи.
 
-### barbican_view
+### {heading(barbican_view)[id=barbican_view]}
 
 Название в личном кабинете: `Просмотр секретов (Barbican)`.
 
 Позволяет просматривать список и метаданные существующих секретов.
 
-### cinder_delete
+### {heading(cinder_delete)[id=cinder_delete]}
 
 Название в личном кабинете: `Удаление дисков (Cinder)`.
 
 Позволяет удалять диски и очищать блочные устройства.
 
-### cinder_modify
+### {heading(cinder_modify)[id=cinder_modify]}
 
 Название в личном кабинете: `Управление дисками (Cinder)`.
 
 Позволяет создавать диски и управлять ими.
 
-### cinder_view
+### {heading(cinder_view)[id=cinder_view]}
 
 Название в личном кабинете: `Просмотр дисков (Cinder)`.
 
 Позволяет просматривать список дисков и их характеристик.
 
-### cloudkitty_delete
+### {heading(cloudkitty_delete)[id=cloudkitty_delete]}
 
 Название в личном кабинете: `Удаление данных тарификации (Cloudkitty)`.
 
 Позволяет удалять записи о расчете стоимости.
 
-### cloudkitty_modify
+### {heading(cloudkitty_modify)[id=cloudkitty_modify]}
 
 Название в личном кабинете: `Управление тарификацией (Cloudkitty)`.
 
 Позволяет изменять правила расчета стоимости и тарифные планы.
 
-### cloudkitty_view
+### {heading(cloudkitty_view)[id=cloudkitty_view]}
 
 Название в личном кабинете: `Просмотр тарификации (Cloudkitty)`.
 
 Позволяет просматривать детализацию расходов и текущих тарифов.
 
-### freezer_delete
+### {heading(freezer_delete)[id=freezer_delete]}
 
 Название в личном кабинете: `Удаление резервных копий`.
 
 Позволяет удалять архивы и резервные копии данных.
 
-### freezer_modify
+### {heading(freezer_modify)[id=freezer_modify]}
 
 Название в личном кабинете: `Управление резервными копиями (Freezer)`.
 
 Позволяет настраивать расписания резервного копирования и управлять созданием резервных копий.
 
-### freezer_view
+### {heading(freezer_view)[id=freezer_view]}
 
 Название в личном кабинете: `Просмотр резервных копий`.
 
 Позволяет просматривать список доступных резервных копий и статусы их создания.
 
-### glance_delete
+### {heading(glance_delete)[id=glance_delete]}
 
 Название в личном кабинете: `Удаление образов`.
 
 Позволяет удалять шаблоны дисков и образы ОС.
 
-### glance_modify
+### {heading(glance_modify)[id=glance_modify]}
 
 Название в личном кабинете: `Управление образами (Glance)`.
 
 Позволяет загружать образы ОС.
 
-### glance_publish_delete
+### {heading(glance_publish_delete)[id=glance_publish_delete]}
 
 Название в личном кабинете: `Отмена публикации образов`.
 
 Позволяет удалять образы из списка опубликованных. Образ становится недоступен для пользователей.
 
-### glance_publish_modify
+### {heading(glance_publish_modify)[id=glance_publish_modify]}
 
 Название в личном кабинете: `Управление публикацией образов`.
 
 Позволяет изменять права доступа других пользователей к образам.
 
-### glance_publish_view
+### {heading(glance_publish_view)[id=glance_publish_view]}
 
 Название в личном кабинете: `Просмотр публикации образов`.
 
 Позволяет просматривать права доступа к общим образам систем.
 
-### glance_view
+### {heading(glance_view)[id=glance_view]}
 
 Название в личном кабинете: `Просмотр образов`.
 
 Позволяет просматривать каталог доступных образов ОС.
 
-### heat_delete
+### {heading(heat_delete)[id=heat_delete]}
 
 Название в личном кабинете: `Удаление шаблонов оркестрации (Heat)`.
 
 Позволяет удалять стеки ресурсов.
 
-### heat_modify
+### {heading(heat_modify)[id=heat_modify]}
 
 Название в личном кабинете: `Управление оркестрацией (Heat)`.
 
 Позволяет развертывать инфраструктуру по шаблонам и изменять параметры стеков ресурсов.
 
-### heat_view
+### {heading(heat_view)[id=heat_view]}
 
 Название в личном кабинете: `Просмотр оркестрации (Heat)`.
 
 Позволяет отслеживать статусы развертывания инфраструктуры.
 
-### keystone_delete
+### {heading(keystone_delete)[id=keystone_delete]}
 
 Название в личном кабинете: `Удаление из Keystone`.
 
 Позволяет удалять {linkto(/ru/access/iam/concepts/roles-reference/#organization_access_modify)[text=субъекты доступа и организационные единицы]}.
 
-### keystone_modify
+### {heading(keystone_modify)[id=keystone_modify]}
 
 Название в личном кабинете: `Управление идентификацией (Keystone)`.
 
 Позволяет управлять пользователями в проекте.
 
-### keystone_view
+### {heading(keystone_view)[id=keystone_view]}
 
 Название в личном кабинете: `Просмотр идентификации (Keystone)`.
 
 Позволяет просматривать данные аудита ролей в проекте.
 
-### magnum_delete
+### {heading(magnum_delete)[id=magnum_delete]}
 
 Название в личном кабинете: `Удаление кластеров Kubernetes (Magnum)`.
 
 Позволяет удалять среды контейнеризации Kubernetes на уровне инфраструктуры.
 
-### magnum_modify
+### {heading(magnum_modify)[id=magnum_modify]}
 
 Название в личном кабинете: `Управление кластерами Kubernetes (Magnum)`.
 
 Позволяет управлять сервисной инфраструктурой Kubernetes, создавать кластеры и изменять их конфигурацию.
 
-### magnum_view
+### {heading(magnum_view)[id=magnum_view]}
 
 Название в личном кабинете: `Просмотр кластеров Kubernetes (Magnum)`.
 
 Позволяет просматривать состояние кластеров Kubernetes в инфраструктуре.
 
-### manila_delete
+### {heading(manila_delete)[id=manila_delete]}
 
 Название в личном кабинете: `Удаление файловых хранилищ`.
 
 Позволяет удалять общие сетевые файловые хранилища.
 
-### manila_modify
+### {heading(manila_modify)[id=manila_modify]}
 
 Название в личном кабинете: `Управление файловыми хранилищами (Manila)`.
 
 Позволяет создавать и настраивать общие сетевые файловые хранилища.
 
-### manila_view
+### {heading(manila_view)[id=manila_view]}
 
 Название в личном кабинете: `Просмотр файловых хранилищ`.
 
 Позволяет просматривать список и параметры общих сетевых файловых хранилищ.
 
-### mcs_service_id_property_delete
+### {heading(mcs_service_id_property_delete)[id=mcs_service_id_property_delete]}
 
 Название в личном кабинете: `Удаление свойств ID компонента`.
 
 Позволяет очищать реестр идентификаторов служб платформы.
 
-### mcs_service_id_property_modify
+### {heading(mcs_service_id_property_modify)[id=mcs_service_id_property_modify]}
 
 Название в личном кабинете: `Управление свойствами ID компонента`.
 
 Позволяет редактировать метаданные и идентификаторы служб платформы.
 
-### mcs_service_id_property_view
+### {heading(mcs_service_id_property_view)[id=mcs_service_id_property_view]}
 
 Название в личном кабинете: `Просмотр свойств ID компонента`.
 
 Позволяет просматривать реестр и идентификаторы всех служб платформы.
 
-### murano_delete
+### {heading(murano_delete)[id=murano_delete]}
 
 Название в личном кабинете: `Удаление из каталога приложений (Murano)`.
 
 Позволяет удалять прикладное ПО из каталога сервисов.
 
-### murano_modify
+### {heading(murano_modify)[id=murano_modify]}
 
 Название в личном кабинете: `Управление каталогом приложений (Murano)`.
 
 Позволяет добавлять и настраивать прикладное ПО в каталоге сервисов.
 
-### murano_view
+### {heading(murano_view)[id=murano_view]}
 
 Название в личном кабинете: `Просмотр каталога приложений (Murano)`.
 
 Позволяет выбирать и просматривать готовые прикладные решения в каталоге сервисов.
 
-### network_delete
+### {heading(network_delete)[id=network_delete]}
 
 Название в личном кабинете: `Удаление сети (Общее)`.
 
 Позволяет полностью очищать сетевые объекты.
 
-### network_modify
+### {heading(network_modify)[id=network_modify]}
 
 Название в личном кабинете: `Управление сетью (Общее)`.
 
 Позволяет изменять общие параметры сетевой связности облака.
 
-### network_view
+### {heading(network_view)[id=network_view]}
 
 Название в личном кабинете: `Просмотр сети (Общее)`.
 
 Позволяет просматривать данные общего аудита сетевой инфраструктуры.
 
-### neutron_common_delete
+### {heading(neutron_common_delete)[id=neutron_common_delete]}
 
 Название в личном кабинете: `Удаление общих настроек сети`.
 
 Позволяет сбрасывать глобальные сетевые конфигурации.
 
-### neutron_common_modify
+### {heading(neutron_common_modify)[id=neutron_common_modify]}
 
 Название в личном кабинете: `Управление общими настройками сети`.
 
 Позволяет изменять общие параметры сетевой инфраструктуры.
 
-### neutron_common_view
+### {heading(neutron_common_view)[id=neutron_common_view]}
 
 Название в личном кабинете: `Просмотр общих настроек сети`.
 
 Позволяет просматривать общую сетевую модель облака.
 
-### neutron_delete
+### {heading(neutron_delete)[id=neutron_delete]}
 
 Название в личном кабинете: `Удаление сетей (Neutron)`.
 
 Позволяет удалять виртуальные сети из сетевой инфраструктуры.
 
-### neutron_modify
+### {heading(neutron_modify)[id=neutron_modify]}
 
 Название в личном кабинете: `Управление сетями (Neutron)`.
 
 Позволяет создавать виртуальные сети, настраивать сетевую топологию.
 
-### neutron_view
+### {heading(neutron_view)[id=neutron_view]}
 
 Название в личном кабинете: `Просмотр сетей (Neutron)`.
 
 Позволяет просматривать визуализацию и данные аудита сетевой инфраструктуры.
 
-### neutron_mtu_delete
+### {heading(neutron_mtu_delete)[id=neutron_mtu_delete]}
 
 Название в личном кабинете: `Удаление MTU (Neutron)`.
 
 Позволяет сбрасывать настройки производительности пакетов.
 
-### neutron_mtu_modify
+### {heading(neutron_mtu_modify)[id=neutron_mtu_modify]}
 
 Название в личном кабинете: `Управление MTU (Neutron)`.
 
 Позволяет изменять размер пакетов данных для оптимизации сети.
 
-### neutron_mtu_view
+### {heading(neutron_mtu_view)[id=neutron_mtu_view]}
 
 Название в личном кабинете: `Просмотр MTU (Neutron)`.
 
 Позволяет просматривать сетевые параметры производительности.
 
-### neutron_network_delete
+### {heading(neutron_network_delete)[id=neutron_network_delete]}
 
 Название в личном кабинете: `Удаление сетей (Neutron)`.
 
 Позволяет удалять отдельные виртуальные сети.
 
-### neutron_network_modify
+### {heading(neutron_network_modify)[id=neutron_network_modify]}
 
 Название в личном кабинете: `Управление сетями (Neutron)`.
 
 Позволяет изменять параметры виртуальных сетей и адресного пространства.
 
-### neutron_network_view
+### {heading(neutron_network_view)[id=neutron_network_view]}
 
 Название в личном кабинете: `Просмотр сетей (Neutron)`.
 
 Позволяет просматривать список и характеристики виртуальных сетей.
 
-### neutron_security_delete
+### {heading(neutron_security_delete)[id=neutron_security_delete]}
 
 Название в личном кабинете: `Удаление групп безопасности`.
 
 Позволяет удалять [группы безопасности](/ru/networks/vnet/concepts/traffic-limiting).
 
-### neutron_security_modify
+### {heading(neutron_security_modify)[id=neutron_security_modify]}
 
 Название в личном кабинете: `Управление группами безопасности`.
 
 Позволяет создавать и редактировать [правила фильтрации трафика](/ru/networks/vnet/concepts/traffic-limiting).
 
-### neutron_security_view
+### {heading(neutron_security_view)[id=neutron_security_view]}
 
 Название в личном кабинете: `Просмотр групп безопасности`.
 
 Позволяет просматривать [правила доступа и сетевые ограничения](/ru/networks/vnet/concepts/traffic-limiting).
 
-### nova_delete
+### {heading(nova_delete)[id=nova_delete]}
 
 Название в личном кабинете: `Удаление ВМ (Nova)`.
 
 Позволяет удалять инстансы ВМ.
 
-### nova_modify
+### {heading(nova_modify)[id=nova_modify]}
 
 Название в личном кабинете: `Управление ВМ (Nova)`.
 
 Позволяет управлять жизненным циклом [виртуальных машин](/ru/computing/iaas).
 
-### nova_view
+### {heading(nova_view)[id=nova_view]}
 
 Название в личном кабинете: `Просмотр ВМ (Nova)`.
 
 Позволяет просматривать список и состояние всех инстансов ВМ.
 
-### nova_flavor_extra_specs_delete
+### {heading(nova_flavor_extra_specs_delete)[id=nova_flavor_extra_specs_delete]}
 
 Название в личном кабинете: `Удаление доп. параметров Flavors`.
 
 Позволяет удалять расширенные настройки [шаблонов конфигурации](/ru/computing/iaas/concepts/vm/flavor) ВМ.
 
-### nova_flavor_extra_specs_modify
+### {heading(nova_flavor_extra_specs_modify)[id=nova_flavor_extra_specs_modify]}
 
 Название в личном кабинете: `Управление доп. параметрами Flavors`.
 
 Позволяет настраивать расширенные характеристики [шаблонов конфигурации](/ru/computing/iaas/concepts/vm/flavor) ВМ.
 
-### nova_flavor_extra_specs_view
+### {heading(nova_flavor_extra_specs_view)[id=nova_flavor_extra_specs_view]}
 
 Название в личном кабинете: `Просмотр доп. параметров Flavors`.
 
 Позволяет просматривать расширенные настройки [шаблонов конфигурации](/ru/computing/iaas/concepts/vm/flavor) ВМ.
 
-### nova_migration_delete
+### {heading(nova_migration_delete)[id=nova_migration_delete]}
 
 Название в личном кабинете: `Удаление миграции`.
 
 Позволяет принудительно останавливать процесс миграции ВМ.
 
-### nova_migration_modify
+### {heading(nova_migration_modify)[id=nova_migration_modify]}
 
 Название в личном кабинете: `Управление миграцией ВМ`.
 
 Позволяет инициировать перенос ВМ между хостами и управлять процессом переноса.
 
-### nova_migration_view
+### {heading(nova_migration_view)[id=nova_migration_view]}
 
 Название в личном кабинете: `Просмотр миграции ВМ`.
 
 Позволяет просматривать статусы и историю переноса ВМ.
 
-### nova_op_delete
+### {heading(nova_op_delete)[id=nova_op_delete]}
 
 Название в личном кабинете: `Удаление операций ВМ (Nova)`.
 
 Позволяет прерывать текущие операции над ВМ.
 
-### nova_op_modify
+### {heading(nova_op_modify)[id=nova_op_modify]}
 
 Название в личном кабинете: `Управление операциями ВМ (Nova)`.
 
 Позволяет управлять питанием и состоянием ВМ.
 
-### nova_op_view
+### {heading(nova_op_view)[id=nova_op_view]}
 
 Название в личном кабинете: `Просмотр операций ВМ (Nova)`.
 
 Позволяет просматривать историю всех выполненных операций над ВМ.
 
-### nova_vm_delete
+### {heading(nova_vm_delete)[id=nova_vm_delete]}
 
 Название в личном кабинете: `Удаление виртуальных машин`.
 
 Позволяет безвозвратно удалять ВМ.
 
-### nova_vm_modify
+### {heading(nova_vm_modify)[id=nova_vm_modify]}
 
 Название в личном кабинете: `Управление виртуальными машинами`.
 
 Позволяет изменять параметры конфигурации и оборудования ВМ.
 
-### nova_vm_view
+### {heading(nova_vm_view)[id=nova_vm_view]}
 
 Название в личном кабинете: `Просмотр виртуальных машин`.
 
 Позволяет отслеживать статусы ВМ и данные о работе ВМ.
 
-### octavia_delete
+### {heading(octavia_delete)[id=octavia_delete]}
 
 Название в личном кабинете: `Удаление балансировщиков (Octavia)`.
 
 Позволяет удалять [балансировщики нагрузки](/ru/networks/balancing).
 
-### octavia_modify
+### {heading(octavia_modify)[id=octavia_modify]}
 
 Название в личном кабинете: `Управление балансировщиками (Octavia)`.
 
 Позволяет создавать [балансировщики нагрузки](/ru/networks/balancing) и настраивать распределение трафика между инстансами.
 
-### octavia_view
+### {heading(octavia_view)[id=octavia_view]}
 
 Название в личном кабинете: `Просмотр балансировщиков (Octavia)`.
 
 Позволяет просматривать параметры [балансировщиков нагрузки](/ru/networks/balancing).
 
-### public_dns_delete
+### {heading(public_dns_delete)[id=public_dns_delete]}
 
 Название в личном кабинете: `Удаление Public DNS`.
 
 Позволяет удалять внешние [DNS-записи](/ru/networks/dns/instructions/publicdns/records).
 
-### public_dns_modify
+### {heading(public_dns_modify)[id=public_dns_modify]}
 
 Название в личном кабинете: `Управление Public DNS`.
 
 Позволяет управлять доменными зонами и [DNS-записями](/ru/networks/dns/instructions/publicdns/records) во внешних сетях.
 
-### public_dns_view
+### {heading(public_dns_view)[id=public_dns_view]}
 
 Название в личном кабинете: `Просмотр Public DNS`.
 
 Позволяет просматривать публичные доменные имена.
 
-### sdn_crossproject_port_delete
+### {heading(sdn_crossproject_port_delete)[id=sdn_crossproject_port_delete]}
 
 Название в личном кабинете: `Удаление межпроектных портов`.
 
 Позволяет разрывать сетевые связи между проектами.
 
-### sdn_crossproject_port_modify
+### {heading(sdn_crossproject_port_modify)[id=sdn_crossproject_port_modify]}
 
 Название в личном кабинете: `Управление межпроектными портами`.
 
 Позволяет настраивать сетевое взаимодействие между разными проектами.
 
-### sdn_crossproject_port_view
+### {heading(sdn_crossproject_port_view)[id=sdn_crossproject_port_view]}
 
 Название в личном кабинете: `Просмотр межпроектных портов`.
 
 Позволяет просматривать данные аудита для интеграции независимых инфраструктур проектов.
 
-### trove_datastore_delete
+### {heading(trove_datastore_delete)[id=trove_datastore_delete]}
 
 Название в личном кабинете: `Удаление типов данных (Trove)`.
 
 Позволяет ограничивать список доступных СУБД в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### trove_datastore_modify
+### {heading(trove_datastore_modify)[id=trove_datastore_modify]}
 
 Название в личном кабинете: `Управление типами данных (Trove)`.
 
 Позволяет управлять доступными версиями и типами СУБД в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### trove_datastore_view
+### {heading(trove_datastore_view)[id=trove_datastore_view]}
 
 Название в личном кабинете: `Просмотр типов данных (Trove)`.
 
 Позволяет просматривать поддерживаемые технологии баз данных в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### trove_delete
+### {heading(trove_delete)[id=trove_delete]}
 
 Название в личном кабинете: `Удаление СУБД (Trove)`.
 
 Позволяет удалять экземпляры СУБД в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### trove_modify
+### {heading(trove_modify)[id=trove_modify]}
 
 Название в личном кабинете: `Управление СУБД (Trove)`.
 
 Позволяет создавать и изменять экземпляры СУБД в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### trove_view
+### {heading(trove_view)[id=trove_view]}
 
 Название в личном кабинете: `Просмотр СУБД (Trove)`.
 
 Позволяет просматривать список и характеристики баз данных в сервисе [Cloud Databases](/ru/dbs/dbaas).
 
-### tuareg_delete
+### {heading(tuareg_delete)[id=tuareg_delete]}
 
 Название в личном кабинете: `Удаление компонента Tuareg`.
 
 Позволяет удалять скрипты, запущенные на ВМ.
 
-### tuareg_modify
+### {heading(tuareg_modify)[id=tuareg_modify]}
 
 Название в личном кабинете: `Управление компонентом Tuareg`.
 
 Позволяет управлять запуском скриптов на ВМ.
 
-### tuareg_view
+### {heading(tuareg_view)[id=tuareg_view]}
 
 Название в личном кабинете: `Просмотр компонента Tuareg`.
 
 Позволяет просматривать, какие скрипты запущены на ВМ.
 
-### vdi_tuareg_delete
+### {heading(vdi_tuareg_delete)[id=vdi_tuareg_delete]}
 
 Название в личном кабинете: `Удаление виртуального рабочего стола (Tuareg)`.
 
 Позволяет удалять сессии и ресурсы [удаленных рабочих столов](/ru/computing/cloud-desktops).
 
-### vdi_tuareg_modify
+### {heading(vdi_tuareg_modify)[id=vdi_tuareg_modify]}
 
 Название в личном кабинете: `Управление виртуальными рабочими столами (Tuareg)`.
 
 Позволяет настраивать [удаленные рабочие столы](/ru/computing/cloud-desktops) и управлять ими в рамках VDI-решения.
 
-### vdi_tuareg_view
+### {heading(vdi_tuareg_view)[id=vdi_tuareg_view]}
 
 Название в личном кабинете: `Просмотр виртуального рабочего стола (Tuareg)`.
 
 Позволяет отслеживать активность пользователей [удаленных рабочих столов](/ru/computing/cloud-desktops).
 
-## Data Platform Kafka
+## {heading(Data Platform Kafka)[id=iam-permissions-dp-kafka]}
 
 Управление сервисом [Cloud Kafka](/ru/data-platform/kafka) на VK Data Platform.
 
-### dp_kafka_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий инстанса Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_change]}
 
-Позволяет просматривать события в инстансе сервиса Cloud Kafka.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_create]}
 
-### dp_kafka_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_cruisecontrol]}
 
-Название в личном кабинете: `Управление масштабированием Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_delete]}
 
-Позволяет масштабировать инстанс сервиса Cloud Kafka вертикально или горизонтально. Разрешено любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_list]}
 
-### dp_kafka_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_maintenance]}
 
-Название в личном кабинете: `Создание инстанса Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_reboot]}
 
-Позволяет создавать инстансы сервиса Cloud Kafka.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_scaledisk]}
 
-### dp_kafka_instances_cruisecontrol
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_versionupdate]}
 
-Название в личном кабинете: `Управление настройками CruiseControl Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_instances_view]}
 
-Позволяет изменять настройки инструмента CruiseControl для управления высоконагруженными кластерами в сервисе Cloud Kafka.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_logs_view]}
 
-### dp_kafka_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_mirrormaker_create]}
 
-Название в личном кабинете: `Удаление инстанса Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_mirrormaker_delete]}
 
-Позволяет удалять инстансы сервиса Cloud Kafka.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_mirrormaker_list]}
 
-### dp_kafka_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка инстансов Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_settings_change]}
 
-Позволяет просматривать список инстансов сервиса Cloud Kafka.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_settings_list]}
 
-### dp_kafka_instances_maintenance
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_settings_viewhistory]}
 
-Название в личном кабинете: `Управление настройками обслуживания Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_users_create]}
 
-Позволяет изменять настройки обслуживания кластера Cloud Kafka: время резервного копирования, расписание операций и т.п.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_users_delete]}
 
-### dp_kafka_instances_reboot
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_users_list]}
 
-Название в личном кабинете: `Перезагрузка инстанса Kafka`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_kafka_users_update]}
 
-Позволяет перезагружать инстансы сервиса Cloud Kafka.
-
-### dp_kafka_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Kafka`.
-
-Позволяет увеличивать объем диска в инстансе сервисе Cloud Kafka.
-
-### dp_kafka_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Kafka`.
-
-Позволяет обновлять версию продукта Apache Kafka в инстансе сервиса Cloud Kafka.
-
-### dp_kafka_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Kafka`.
-
-Позволяет просматривать свойства инстансов сервиса Cloud Kafka.
-
-### dp_kafka_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Kafka`.
-
-Позволяет просматривать журналы событий инстанса сервиса Cloud Kafka.
-
-### dp_kafka_mirrormaker_create
-
-Название в личном кабинете: `Создать новое mirror подключение Kafka`.
-
-Позволяет создать новое mirror-подключение Kafka.
-
-### dp_kafka_mirrormaker_delete
-
-Название в личном кабинете: `Удалить mirror подключение Kafka`.
-
-Позволяет удалить mirror-подключение Kafka.
-
-### dp_kafka_mirrormaker_list
-
-Название в личном кабинете: `Список mirror подключений Kafka`.
-
-Позволяет получить список mirror-подключений Kafka.
-
-### dp_kafka_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Kafka`.
-
-Позволяет просматривать показатели мониторинга Kafka.
-
-### dp_kafka_settings_change
-
-Название в личном кабинете: `Управление настройками Kafka`.
-
-Позволяет редактировать и сбрасывать настройки Kafka.
-
-### dp_kafka_settings_list
-
-Название в личном кабинете: `Просмотр настроек Kafka`.
-
-Позволяет просматривать настройки продукта Kafka.
-
-### dp_kafka_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений Kafka`.
-
-Позволяет просматривать историю изменений настроек Kafka.
-
-### dp_kafka_users_create
-
-Название в личном кабинете: `Добавление пользователя Kafka`.
-
-Позволяет добавлять пользователей в сервис Cloud Kafka.
-
-### dp_kafka_users_delete
-
-Название в личном кабинете: `Удаление пользователя Kafka`.
-
-Позволяет удалять пользователей из сервиса Cloud Kafka.
-
-### dp_kafka_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей Kafka`.
-
-Позволяет просматривать список пользователей сервиса Cloud Kafka.
-
-### dp_kafka_users_update
-
-Название в личном кабинете: `Редактирование пользователя Kafka`.
-
-Позволяет изменять данные пользователя сервиса Cloud Kafka.
-
-## Data Platform ClickHouse
+## {heading(Data Platform ClickHouse)[id=iam-permissions-dp-clickhouse]}
 
 Управление сервисом [Cloud Clickhouse](/ru/data-platform/clickhouse) на VK Data Platform.
 
-### dp_clickhouse_backups_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_backups_create]}
 
-Название в личном кабинете: `Запуск резервного копирования ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_backups_download]}
 
-Позволяет запускать резервное копирование Cloud ClickHouse вручную.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_backups_list]}
 
-### dp_clickhouse_backups_download
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_backups_restore]}
 
-Название в личном кабинете: `Скачивание резервной копии ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_databases_create]}
 
-Позволяет скачивать резервную копию Cloud ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_databases_delete]}
 
-### dp_clickhouse_backups_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_databases_view]}
 
-Название в личном кабинете: `Просмотр списка резервных копий ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_extensions_install]}
 
-Позволяет просматривать список резервных копий Cloud ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_extensions_list]}
 
-### dp_clickhouse_backups_restore
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_extensions_uninstall]}
 
-Название в личном кабинете: `Восстановление из резервной копии ClickHouse в новый кластер`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_audit]}
 
-Позволяет восстанавливать БД ClickHouse из резервной копии в новый кластер.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_change]}
 
-### dp_clickhouse_databases_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_create]}
 
-Название в личном кабинете: `Создание новой БД ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_delete]}
 
-Позволяет создавать новую БД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_execsql]}
 
-### dp_clickhouse_databases_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_killquery]}
 
-Название в личном кабинете: `Удаление БД ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_list]}
 
-Позволяет удалять БД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_listqueries]}
 
-### dp_clickhouse_databases_view
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_maintenance]}
 
-Название в личном кабинете: `Просмотр списка БД ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_reboot]}
 
-Позволяет просматривать список БД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_scaledisk]}
 
-### dp_clickhouse_extensions_install
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_versionupdate]}
 
-Название в личном кабинете: `Установка расширения ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_instances_view]}
 
-Позволяет устанавливать расширения СУБД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_logs_view]}
 
-### dp_clickhouse_extensions_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка расширений ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_settings_change]}
 
-Позволяет просматривать список расширений СУБД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_settings_list]}
 
-### dp_clickhouse_extensions_uninstall
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_settings_viewhistory]}
 
-Название в личном кабинете: `Удаление расширения ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_users_create]}
 
-Позволяет удалять расширения СУБД ClickHouse.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_users_delete]}
 
-### dp_clickhouse_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_users_list]}
 
-Название в личном кабинете: `Просмотр событий по инстансу ClickHouse`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_clickhouse_users_update]}
 
-Позволяет просматривать события инстанса Cloud ClickHouse.
-
-### dp_clickhouse_instances_change
-
-Название в личном кабинете: `Управление масштабированием ClickHouse`.
-
-Позволяет масштабировать инстанс Cloud ClickHouse вертикально или горизонтально. Позволяет любое изменение количества CPU/RAM.
-
-### dp_clickhouse_instances_create
-
-Название в личном кабинете: `Создание инстанса ClickHouse`.
-
-Позволяет создавать инстансы Cloud ClickHouse.
-
-### dp_clickhouse_instances_delete
-
-Название в личном кабинете: `Удаление инстанса ClickHouse`.
-
-Позволяет удалять инстансы Cloud ClickHouse.
-
-### dp_clickhouse_instances_execsql
-
-Название в личном кабинете: `Выполнение SQL запросов к БД ClickHouse`.
-
-Позволяет выполнять SQL-запросы к БД ClickHouse. Для подключения используются имя пользователя БД и его пароль.
-
-### dp_clickhouse_instances_killquery
-
-Название в личном кабинете: `Снять запрос к БД ClickHouse`.
-
-Позволяет отменить запрос к БД ClickHouse.
-
-### dp_clickhouse_instances_list
-
-Название в личном кабинете: `Просмотр списка инстансов ClickHouse`.
-
-Позволяет просматривать список инстансов Cloud ClickHouse.
-
-### dp_clickhouse_instances_listqueries
-
-Название в личном кабинете: `Получение списка исполняемых запросов к БД ClickHouse`.
-
-Позволяет получать список исполняемых запросов к БД ClickHouse.
-
-### dp_clickhouse_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания ClickHouse`.
-
-Позволяет изменять настройки обслуживания инстанса Cloud ClickHouse: время резервного копирования, расписание операций и т.п.
-
-### dp_clickhouse_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса ClickHouse`.
-
-Позволяет перезагружать инстансы Cloud ClickHouse.
-
-### dp_clickhouse_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска ClickHouse`.
-
-Позволяет увеличивать размер диска в инстансе Cloud ClickHouse.
-
-### dp_clickhouse_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии ClickHouse`.
-
-Позволяет обновлять версию СУБД ClickHouse в инстансе.
-
-### dp_clickhouse_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса ClickHouse`.
-
-Позволяет просматривать свойства инстанса Cloud ClickHouse.
-
-### dp_clickhouse_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса ClickHouse`.
-
-Позволяет просматривать журналы событий инстанса Cloud ClickHouse.
-
-### dp_clickhouse_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга ClickHouse`.
-
-Позволяет просматривать показатели мониторинга Cloud ClickHouse.
-
-### dp_clickhouse_settings_change
-
-Название в личном кабинете: `Управление настройками ClickHouse`.
-
-Позволяет изменять настройки СУБД ClickHouse.
-
-### dp_clickhouse_settings_list
-
-Название в личном кабинете: `Просмотр настроек ClickHouse`.
-
-Позволяет просматривать настройки СУБД ClickHouse.
-
-### dp_clickhouse_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений ClickHouse`.
-
-Позволяет просматривать историю изменения настроек СУБД ClickHouse.
-
-### dp_clickhouse_users_create
-
-Название в личном кабинете: `Добавление пользователя ClickHouse`.
-
-Позволяет добавлять пользователей Cloud ClickHouse.
-
-### dp_clickhouse_users_delete
-
-Название в личном кабинете: `Удаление пользователя ClickHouse`.
-
-Позволяет удалять пользователей Cloud ClickHouse.
-
-### dp_clickhouse_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей ClickHouse`.
-
-Позволяет просматривать список пользователей Cloud ClickHouse.
-
-### dp_clickhouse_users_update
-
-Название в личном кабинете: `Редактирование пользователя ClickHouse`.
-
-Позволяет изменять данные пользователей Cloud ClickHouse.
-
-## Data Platform Redis
+## {heading(Data Platform Redis)[id=iam-permissions-dp-redis]}
 
 Управление БД Redis на VK Data Platform.
 
-### dp_redis_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий по инстансу Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_change]}
 
-Позволяет просматривать события инстанса Redis.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_create]}
 
-### dp_redis_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_delete]}
 
-Название в личном кабинете: `Управление масштабированием Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_list]}
 
-Позволяет масштабировать инстансы Redis вертикально или горизонтально. Разрешает любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_maintenance]}
 
-### dp_redis_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_reboot]}
 
-Название в личном кабинете: `Создание инстанса Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_scaledisk]}
 
-Позволяет создавать инстансы Redis.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_versionupdate]}
 
-### dp_redis_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_instances_view]}
 
-Название в личном кабинете: `Удаление инстанса Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_logs_view]}
 
-Позволяет удалять инстансы Redis.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_monitoring_view]}
 
-### dp_redis_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_settings_change]}
 
-Название в личном кабинете: `Просмотр списка инстансов Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_settings_list]}
 
-Позволяет просматривать список инстансов Redis.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_settings_viewhistory]}
 
-### dp_redis_instances_maintenance
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_users_create]}
 
-Название в личном кабинете: `Управление настройками обслуживания Redis`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_users_delete]}
 
-Позволяет изменять настройки обслуживания инстанса Redis: время резервного копирования, расписание операций и т.п.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_users_list]}
 
-### dp_redis_instances_reboot
+{include(/ru/_includes/_iam_dp.md)[tags=dp_redis_users_update]}
 
-Название в личном кабинете: `Перезагрузка инстанса Redis`.
-
-Позволяет перезагружать инстансы Redis.
-
-### dp_redis_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Redis`.
-
-Позволяет увеличивать размер дисков инстанса Redis.
-
-### dp_redis_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Redis`.
-
-Позволяет обновлять версию СУБД Redis в инстансе.
-
-### dp_redis_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Redis`.
-
-Позволяет просматривать свойства инстанса Redis.
-
-### dp_redis_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Redis`.
-
-Позволяет просматривать журналы событий инстансов Redis.
-
-### dp_redis_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Redis`.
-
-Позволяет просматривать показатели мониторинга Redis.
-
-### dp_redis_settings_change
-
-Название в личном кабинете: `Управление настройками Redis`.
-
-Позволяет изменять настройки СУБД Redis.
-
-### dp_redis_settings_list
-
-Название в личном кабинете: `Просмотр настроек Redis`.
-
-Позволяет просматривать настройки СУБД Redis.
-
-### dp_redis_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений Redis`.
-
-Позволяет просматривать историю изменения настроек СУБД Redis.
-
-### dp_redis_users_create
-
-Название в личном кабинете: `Добавление пользователя Redis`.
-
-Позволяет добавлять пользователей Redis.
-
-### dp_redis_users_delete
-
-Название в личном кабинете: `Удаление пользователя Redis`.
-
-Позволяет удалять пользователей Redis.
-
-### dp_redis_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей Redis`.
-
-Позволяет просматривать список пользователей Redis.
-
-### dp_redis_users_update
-
-Название в личном кабинете: `Редактирование пользователя Redis`.
-
-Позволяет изменять данные пользователей Redis.
-
-## Data Platform Airflow
+## {heading(Data Platform Airflow)[id=iam-permissions-dp-airflow]}
 
 Управление сервисом [Cloud Airflow](/ru/data-platform/airflow) на VK Data Platform.
 
-### dp_airflow_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий по инстансу Airflow`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_change]}
 
-Позволяет просматривать события инстанса Cloud Airflow.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_create]}
 
-### dp_airflow_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_delete]}
 
-Название в личном кабинете: `Управление масштабированием Airflow`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_list]}
 
-Позволяет масштабировать инстансы Cloud Airflow вертикально или горизонтально. Разрешает любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_maintenance]}
 
-### dp_airflow_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_reboot]}
 
-Название в личном кабинете: `Создание инстанса Airflow`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_scaledisk]}
 
-Позволяет создавать инстансы Cloud Airflow.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_ui]}
 
-### dp_airflow_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_versionupdate]}
 
-Название в личном кабинете: `Удаление инстанса AirFlow`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_instances_view]}
 
-Позволяет удалять инстансы Cloud Airflow.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_logs_view]}
 
-### dp_airflow_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_airflow_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка инстансов Airflow`.
-
-Позволяет просматривать список инстансов сервиса Cloud Airflow.
-
-### dp_airflow_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания Airflow`.
-
-Позволяет изменять настройки обслуживания инстансов Cloud Airflow: время резервного копирования, расписание операций и т.п.
-
-### dp_airflow_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса AirFlow`.
-
-Позволяет перезагружать инстансы Cloud Airflow.
-
-### dp_airflow_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Airflow`.
-
-Позволяет увеличивать размеры дисков инстанса Cloud Airflow.
-
-### dp_airflow_instances_ui
-
-Название в личном кабинете: `Доступ к UI Airflow`.
-
-Позволяет получить доступ к графическому интерфейсу Cloud Airflow.
-
-### dp_airflow_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Airflow`.
-
-Позволяет обновлять версию продукта Airflow.
-
-### dp_airflow_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Airflow`.
-
-Позволяет просматривать свойства инстансов сервиса Cloud Airflow.
-
-### dp_airflow_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Airflow`.
-
-Позволяет просматривать журналы событий инстансов Cloud Airflow.
-
-### dp_airflow_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Airflow`.
-
-Позволяет просматривать показатели мониторинга Cloud Airflow.
-
-## Data Platform Jatoba
+## {heading(Data Platform Jatoba)[id=iam-permissions-dp-jatoba]}
 
 Управление БД Jatoba на VK Data Platform.
 
-### dp_jatoba_backups_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_backups_create]}
 
-Название в личном кабинете: `Запуск резервного копирования БД Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_backups_download]}
 
-Позволяет запускать резервное копирование БД Jatoba вручную.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_backups_list]}
 
-### dp_jatoba_backups_download
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_backups_restore]}
 
-Название в личном кабинете: `Скачивание резервной копии Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_databases_create]}
 
-Позволяет скачивать резервные копии БД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_databases_delete]}
 
-### dp_jatoba_backups_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_databases_view]}
 
-Название в личном кабинете: `Просмотр списка резервных копий Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_extensions_install]}
 
-Позволяет просматривать список резервных копий БД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_extensions_list]}
 
-### dp_jatoba_backups_restore
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_extensions_uninstall]}
 
-Название в личном кабинете: `Восстановление из резервной копии Jatoba в новый кластер`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_audit]}
 
-Позволяет восстанавливать БД Jatoba из резервной копии в новый кластер.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_change]}
 
-### dp_jatoba_databases_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_create]}
 
-Название в личном кабинете: `Создание новой БД Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_delete]}
 
-Позволяет создавать БД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_execsql]}
 
-### dp_jatoba_databases_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_killquery]}
 
-Название в личном кабинете: `Удаление БД Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_list]}
 
-Позволяет удалять БД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_listqueries]}
 
-### dp_jatoba_databases_view
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_maintenance]}
 
-Название в личном кабинете: `Просмотр списка БД Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_reboot]}
 
-Позволяет просматривать список баз данных Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_scaledisk]}
 
-### dp_jatoba_extensions_install
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_versionupdate]}
 
-Название в личном кабинете: `Установка расширения Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_instances_view]}
 
-Позволяет устанавливать расширения СУБД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_logs_view]}
 
-### dp_jatoba_extensions_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка расширений Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_settings_change]}
 
-Позволяет просматривать список расширений СУБД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_settings_list]}
 
-### dp_jatoba_extensions_uninstall
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_settings_viewhistory]}
 
-Название в личном кабинете: `Удаление расширения Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_users_create]}
 
-Позволяет удалять расширения СУБД Jatoba.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_users_delete]}
 
-### dp_jatoba_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_users_list]}
 
-Название в личном кабинете: `Просмотр событий по инстансу Jatoba`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_jatoba_users_update]}
 
-Позволяет просматривать события инстанса Jatoba.
-
-### dp_jatoba_instances_change
-
-Название в личном кабинете: `Управление масштабированием Jatoba`.
-
-Позволяет управлять вертикальным и горизонтальным масштабированием Jatoba. Разрешает любое изменение количества CPU/RAM.
-
-### dp_jatoba_instances_create
-
-Название в личном кабинете: `Создание инстанса Jatoba`.
-
-Позволяет создавать инстансы Jatoba.
-
-### dp_jatoba_instances_delete
-
-Название в личном кабинете: `Удаление инстанса Jatoba`.
-
-Позволяет удалять инстансы Jatoba.
-
-### dp_jatoba_instances_execsql
-
-Название в личном кабинете: `Выполнение SQL-запросов к БД Jatoba`.
-
-Позволяет выполнять SQL-запросы к БД Jatoba. Для подключения используются имя пользователя БД и его пароль.
-
-### dp_jatoba_instances_killquery
-
-Название в личном кабинете: `Снять запрос к БД Jatoba`.
-
-Позволяет отменить запрос к БД Jatoba.
-
-### dp_jatoba_instances_list
-
-Название в личном кабинете: `Просмотр списка инстансов Jatoba`.
-
-Позволяет просматривать список инстансов Jatoba.
-
-### dp_jatoba_instances_listqueries
-
-Название в личном кабинете: `Получение списка исполняемых запросов к БД Jatoba`.
-
-Позволяет получить список исполняемых запросов к БД Jatoba.
-
-### dp_jatoba_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания Jatoba`.
-
-Позволяет изменять настройки обслуживания инстанса Jatoba: время резервного копирования, расписание операций и т.п.
-
-### dp_jatoba_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса Jatoba`.
-
-Позволяет перезагружать инстансы Jatoba.
-
-### dp_jatoba_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Jatoba`.
-
-Позволяет увеличивать диски инстанса Jatoba.
-
-### dp_jatoba_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Jatoba`.
-
-Позволяет обновлять версию СУБД Jatoba в инстансе.
-
-### dp_jatoba_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Jatoba`.
-
-Позволяет просматривать свойства инстансов Jatoba.
-
-### dp_jatoba_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Jatoba`.
-
-Позволяет просматривать журналы событий Jatoba.
-
-### dp_jatoba_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Jatoba`.
-
-Позволяет просматривать показатели мониторинга Jatoba.
-
-### dp_jatoba_settings_change
-
-Название в личном кабинете: `Управление настройками Jatoba`.
-
-Позволяет изменять настройки СУБД Jatoba.
-
-### dp_jatoba_settings_list
-
-Название в личном кабинете: `Просмотр настроек Jatoba`.
-
-Позволяет просматривать настройки СУБД Jatoba.
-
-### dp_jatoba_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений Jatoba`.
-
-Позволяет просматривать историю изменения настроек СУБД Jatoba.
-
-### dp_jatoba_users_create
-
-Название в личном кабинете: `Добавление пользователя Jatoba`.
-
-Позволяет добавлять пользователей Jatoba.
-
-### dp_jatoba_users_delete
-
-Название в личном кабинете: `Удаление пользователя Jatoba`.
-
-Позволяет удалять пользователей Jatoba.
-
-### dp_jatoba_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей Jatoba`.
-
-Позволяет просматривать список пользователей Jatoba.
-
-### dp_jatoba_users_update
-
-Название в личном кабинете: `Редактирование пользователя Jatoba`.
-
-Позволяет изменять данные пользователей Jatoba.
-
-## Data Platform NiFi
+## {heading(Data Platform NiFi)[id=iam-permissions-dp-nifi]}
 
 Управление компонентом NiFi на VK Data Platform.
 
-### dp_nifi_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий по инстансу NiFi`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_change]}
 
-Позволяет просматривать события инстанса NiFi.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_create]}
 
-### dp_nifi_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_delete]}
 
-Название в личном кабинете: `Управление масштабированием NiFi`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_list]}
 
-Позволяет управлять горизонтальным или вертикальным масштабированием инстансов NiFi. Разрешено любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_maintenance]}
 
-### dp_nifi_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_reboot]}
 
-Название в личном кабинете: `Создание инстанса NiFi`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_scaledisk]}
 
-Позволяет создавать инстансы NiFi.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_ui]}
 
-### dp_nifi_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_versionupdate]}
 
-Название в личном кабинете: `Удаление инстанса NiFi`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_instances_view]}
 
-Позволяет удалять инстансы NiFi.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_logs_view]}
 
-### dp_nifi_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_nifi_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка инстансов NiFi`.
-
-Позволяет просматривать список инстансов NiFi.
-
-### dp_nifi_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания NiFi`.
-
-Позволяет изменять настройки обслуживания инстанса NiFi: время резервного копирования, расписание операций и т.п.
-
-### dp_nifi_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса NiFi`.
-
-Позволяет перезагружать инстансы NiFi.
-
-### dp_nifi_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска NiFi`.
-
-Позволяет увеличивать размер диска инстанса NiFi.
-
-### dp_nifi_instances_ui
-
-Название в личном кабинете: `Доступ к UI NiFi`.
-
-Позволяет получить доступ к графическому интерфейсу NiFi.
-
-### dp_nifi_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии NiFi`.
-
-Позволяет обновлять версию продукта NiFi в инстансе.
-
-### dp_nifi_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса NiFi`.
-
-Позволяет просматривать свойства инстансов NiFi.
-
-### dp_nifi_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса NiFi`.
-
-Позволяет просматривать журналы событий NiFi.
-
-### dp_nifi_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга NiFi`.
-
-Позволяет просматривать показатели мониторинга NiFi.
-
-## Data Platform OpenSearch
+## {heading(Data Platform OpenSearch)[id=iam-permissions-dp-opensearch]}
 
 Управление системой поиска OpenSearch на VK Data Platform.
 
-### dp_opensearch_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий по инстансу OpenSearch`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_change]}
 
-Позволяет просматривать события по инстансу OpenSearch.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_create]}
 
-### dp_opensearch_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_delete]}
 
-Название в личном кабинете: `Управление масштабированием OpenSearch`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_list]}
 
-Позволяет управлять вертикальным или горизонтальным масштабированием инстанса OpenSearch. Разрешено любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_maintenance]}
 
-### dp_opensearch_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_reboot]}
 
-Название в личном кабинете: `Создание инстанса OpenSearch`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_scaledisk]}
 
-Позволяет создавать инстансы OpenSearch.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_versionupdate]}
 
-### dp_opensearch_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_instances_view]}
 
-Название в личном кабинете: `Удаление инстанса OpenSearch`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_logs_view]}
 
-Позволяет удалять инстансы OpenSearch.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_monitoring_view]}
 
-### dp_opensearch_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_settings_change]}
 
-Название в личном кабинете: `Просмотр списка инстансов OpenSearch`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_settings_list]}
 
-Позволяет просматривать список инстансов OpenSearch.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_opensearch_settings_viewhistory]}
 
-### dp_opensearch_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания OpenSearch`.
-
-Позволяет изменять настройки обслуживания инстанса OpenSearch: расписание резервного копирования, расписание операций и т.п.
-
-### dp_opensearch_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса OpenSearch`.
-
-Позволяет перезагружать инстансы OpenSearch.
-
-### dp_opensearch_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска OpenSearch`.
-
-Позволяет увеличивать объем дисков инстанса OpenSearch.
-
-### dp_opensearch_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии OpenSearch`.
-
-Позволяет обновлять версию продукта OpenSearch в инстансе.
-
-### dp_opensearch_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса OpenSearch`.
-
-Позволяет просматривать свойства инстансов OpenSearch.
-
-### dp_opensearch_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса OpenSearch`.
-
-Позволяет просматривать журналы событий OpenSearch.
-
-### dp_opensearch_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга OpenSearch`.
-
-Позволяет просматривать показатели мониторинга OpenSearch.
-
-### dp_opensearch_settings_change
-
-Название в личном кабинете: `Управление настройками OpenSearch`.
-
-Позволяет изменять настройки OpenSearch.
-
-### dp_opensearch_settings_list
-
-Название в личном кабинете: `Просмотр настроек OpenSearch`.
-
-Позволяет просматривать настройки OpenSearch.
-
-### dp_opensearch_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений OpenSearch`.
-
-Позволяет просматривать историю изменения настроек OpenSearch.
-
-## Data Platform PostgreSQL
+## {heading(Data Platform PostgreSQL)[id=iam-permissions-dp-postgresql]}
 
 Управление БД PostgreSQL на VK Data Platform.
 
-### dp_postgresql_backups_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_backups_create]}
 
-Название в личном кабинете: `Запуск резервного копирования PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_backups_download]}
 
-Позволяет запускать резервное копирование БД PostgreSQL вручную.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_backups_list]}
 
-### dp_postgresql_backups_download
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_backups_restore]}
 
-Название в личном кабинете: `Скачивание резервной копии PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_databases_create]}
 
-Позволяет скачивать резервную копию БД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_databases_delete]}
 
-### dp_postgresql_backups_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_databases_view]}
 
-Название в личном кабинете: `Просмотр списка резервных копий PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_extensions_install]}
 
-Позволяет просматривать список резервных копий БД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_extensions_list]}
 
-### dp_postgresql_backups_restore
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_extensions_uninstall]}
 
-Название в личном кабинете: `Восстановление из резервной копии PostgreSQL в новый кластер`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_audit]}
 
-Позволяет восстанавливать БД PostgreSQL из резервной копии PostgreSQL в новый кластер.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_change]}
 
-### dp_postgresql_databases_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_create]}
 
-Название в личном кабинете: `Создание новой БД PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_delete]}
 
-Позволяет создавать БД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_execsql]}
 
-### dp_postgresql_databases_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_killquery]}
 
-Название в личном кабинете: `Удаление БД PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_list]}
 
-Позволяет удалять БД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_listqueries]}
 
-### dp_postgresql_databases_view
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_maintenance]}
 
-Название в личном кабинете: `Просмотр списка БД PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_reboot]}
 
-Позволяет просматривать список баз данных PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_scaledisk]}
 
-### dp_postgresql_extensions_install
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_versionupdate]}
 
-Название в личном кабинете: `Установка расширения PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_instances_view]}
 
-Позволяет устанавливать расширения СУБД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_logs_view]}
 
-### dp_postgresql_extensions_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка расширений PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_settings_change]}
 
-Позволяет просматривать список расширений СУБД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_settings_list]}
 
-### dp_postgresql_extensions_uninstall
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_settings_viewhistory]}
 
-Название в личном кабинете: `Удаление расширения PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_users_create]}
 
-Позволяет удалять расширения СУБД PostgreSQL.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_users_delete]}
 
-### dp_postgresql_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_users_list]}
 
-Название в личном кабинете: `Просмотр событий по инстансу PostgreSQL`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_postgresql_users_update]}
 
-Позволяет просматривать события по инстансу PostgreSQL.
-
-### dp_postgresql_instances_change
-
-Название в личном кабинете: `Управление масштабированием PostgreSQL`.
-
-Позволяет управлять горизонтальным или вертикальным масштабированием инстанса PostgreSQL. Разрешено любое изменение количества CPU/RAM.
-
-### dp_postgresql_instances_create
-
-Название в личном кабинете: `Создание инстанса PostgreSQL`.
-
-Позволяет создавать инстансы PostgreSQL.
-
-### dp_postgresql_instances_delete
-
-Название в личном кабинете: `Удаление инстанса PostgreSQL`.
-
-Позволяет удалять инстансы PostgreSQL.
-
-### dp_postgresql_instances_execsql
-
-Название в личном кабинете: `Выполнение SQL-запросов к БД PostgreSQL`.
-
-Позволяет выполнять SQL-запросы к БД PostgreSQL. Для подключения используются имя пользователя БД и его пароль.
-
-### dp_postgresql_instances_killquery
-
-Название в личном кабинете: `Снять запрос к БД PostgreSQL`.
-
-Позволяет отменить запрос к БД PostgreSQL.
-
-### dp_postgresql_instances_list
-
-Название в личном кабинете: `Просмотр списка инстансов PostgreSQL`.
-
-Позволяет просматривать список инстансов PostgreSQL.
-
-### dp_postgresql_instances_listqueries
-
-Название в личном кабинете: `Получение списка исполняемых запросов к БД PostgreSQL`.
-
-Позволяет получать список исполняемых запросов к БД PostgreSQL по инстансу.
-
-### dp_postgresql_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания PostgreSQL`.
-
-Позволяет изменять настройки обслуживания инстанса PostgreSQL: время резервного копирования, расписание операций и т.п.
-
-### dp_postgresql_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса PostgreSQL`.
-
-Позволяет перезагружать инстансы PostgreSQL.
-
-### dp_postgresql_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска PostgreSQL`.
-
-Позволяет увеличивать объем диска в инстансе PostgreSQL.
-
-### dp_postgresql_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии PostgreSQL`.
-
-Позволяет обновлять версию СУБД PostgreSQL в инстансе.
-
-### dp_postgresql_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса PostgreSQL`.
-
-Позволяет просматривать свойства инстансов PostgreSQL.
-
-### dp_postgresql_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса PostgreSQL`.
-
-Позволяет просматривать журналы событий PostgreSQL.
-
-### dp_postgresql_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга PostgreSQL`.
-
-Позволяет просматривать показатели мониторинга PostgreSQL.
-
-### dp_postgresql_settings_change
-
-Название в личном кабинете: `Управление настройками PostgreSQL`.
-
-Позволяет изменять настройки СУБД PostgreSQL.
-
-### dp_postgresql_settings_list
-
-Название в личном кабинете: `Просмотр настроек PostgreSQL`.
-
-Позволяет просматривать настройки СУБД PostgreSQL.
-
-### dp_postgresql_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений PostgreSQL`.
-
-Позволяет просматривать историю изменения настроек СУБД PostgreSQL.
-
-### dp_postgresql_users_create
-
-Название в личном кабинете: `Добавление пользователя PostgreSQL`.
-
-Позволяет добавлять пользователей PostgreSQL.
-
-### dp_postgresql_users_delete
-
-Название в личном кабинете: `Удаление пользователя PostgreSQL`.
-
-Позволяет удалять пользователей PostgreSQL.
-
-### dp_postgresql_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей PostgreSQL`.
-
-Позволяет просматривать список пользователей PostgreSQL.
-
-### dp_postgresql_users_update
-
-Название в личном кабинете: `Редактирование пользователя PostgreSQL`.
-
-Позволяет изменять данные пользователей PostgreSQL.
-
-## Data Platform Spark
+## {heading(Data Platform Spark)[id=iam-permissions-dp-spark]}
 
 Управление сервисом [Spark на платформе VK Data Platform](/ru/data-platform/spark).
 
-### dp_spark_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_audit]}
 
-Название в личном кабинете: `Просмотр событий по инстансу Spark`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_change]}
 
-Позволяет просматривать события Spark в инстансе.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_create]}
 
-### dp_spark_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_delete]}
 
-Название в личном кабинете: `Управление масштабированием Spark`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_list]}
 
-Позволяет управлять горизонтальным и вертикальным масштабированием инстанса Spark. Разрешено любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_maintenance]}
 
-### dp_spark_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_reboot]}
 
-Название в личном кабинете: `Создание инстанса Spark`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_scaledisk]}
 
-Позволяет создавать инстансы Spark.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_ui]}
 
-### dp_spark_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_versionupdate]}
 
-Название в личном кабинете: `Удаление инстанса Spark`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_instances_view]}
 
-Позволяет удалять инстансы Spark.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_logs_view]}
 
-### dp_spark_instances_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_spark_monitoring_view]}
 
-Название в личном кабинете: `Просмотр списка инстансов Spark`.
-
-Позволяет просматривать список инстансов Spark.
-
-### dp_spark_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания Spark`.
-
-Позволяет изменять настройки обслуживания инстанса Spark: время резервного копирования, расписание операций и т.п.
-
-### dp_spark_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса Spark`.
-
-Позволяет перезагружать инстансы Spark.
-
-### dp_spark_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Spark`.
-
-Позволяет изменять объем дисков инстанса Spark.
-
-### dp_spark_instances_ui
-
-Название в личном кабинете: `Доступ к UI Spark`.
-
-Позволяет получить доступ к графическому интерфейсу Spark.
-
-### dp_spark_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Spark`.
-
-Позволяет обновлять версию продукта Spark в инстансе.
-
-### dp_spark_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Spark`.
-
-Позволяет просматривать свойства инстансов Spark.
-
-### dp_spark_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Spark`.
-
-Позволяет просматривать журналы событий Spark.
-
-### dp_spark_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Spark`.
-
-Позволяет просматривать показатели мониторинга Spark.
-
-## Data Platform Trino
+## {heading(Data Platform Trino)[id=iam-permissions-dp-trino]}
 
 Управление сервисом [Cloud Trino](/ru/data-platform/trino) на VK Data Platform.
 
-### dp_trino_extensions_install
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_install]}
 
-Название в личном кабинете: `Установка расширения Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_list]}
 
-Позволяет устанавливать расширения продукта Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_uninstall]}
 
-### dp_trino_extensions_list
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_audit]}
 
-Название в личном кабинете: `Просмотр списка расширений Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_change]}
 
-Позволяет просматривать список расширений продукта Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_create]}
 
-### dp_trino_extensions_uninstall
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_delete]}
 
-Название в личном кабинете: `Удаление расширения Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_execsql]}
 
-Позволяет удалять расширения продукта Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_list]}
 
-### dp_trino_instances_audit
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_maintenance]}
 
-Название в личном кабинете: `Просмотр событий по инстансу Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_reboot]}
 
-Позволяет просматривать события инстанса Cloud Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_scaledisk]}
 
-### dp_trino_instances_change
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_ui]}
 
-Название в личном кабинете: `Управление масштабированием Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_versionupdate]}
 
-Позволяет управлять вертикальным или горизонтальным масштабированием инстанса Cloud Trino. Разрешено любое изменение количества CPU/RAM.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_view]}
 
-### dp_trino_instances_create
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_logs_view]}
 
-Название в личном кабинете: `Создание инстанса Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_monitoring_view]}
 
-Позволяет создавать инстансы Cloud Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_change]}
 
-### dp_trino_instances_delete
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_list]}
 
-Название в личном кабинете: `Удаление инстанса Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_viewhistory]}
 
-Позволяет удалять инстансы Cloud Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_create]}
 
-### dp_trino_instances_execsql
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_delete]}
 
-Название в личном кабинете: `Выполнение SQL-запросов к БД Trino`.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_list]}
 
-Позволяет выполнять SQL-запросы к БД Trino. Для подключения используются имя пользователя БД и его пароль.
-
-### dp_trino_instances_list
-
-Название в личном кабинете: `Просмотр списка инстансов Trino`.
-
-Позволяет просматривать список инстансов Cloud Trino.
-
-### dp_trino_instances_maintenance
-
-Название в личном кабинете: `Управление настройками обслуживания Trino`.
-
-Позволяет изменять настройки обслуживания инстанса Cloud Trino: время резервного копирования, расписание операций и т.п.
-
-### dp_trino_instances_reboot
-
-Название в личном кабинете: `Перезагрузка инстанса Trino`.
-
-Позволяет перезагружать инстансы Cloud Trino.
-
-### dp_trino_instances_scaledisk
-
-Название в личном кабинете: `Увеличение диска Trino`.
-
-Позволяет увеличивать объем диска инстанса Cloud Trino.
-
-### dp_trino_instances_ui
-
-Название в личном кабинете: `Доступ к UI сервиса Trino`.
-
-Позволяет получить доступ к графическому интерфейсу Cloud Trino.
-
-### dp_trino_instances_versionupdate
-
-Название в личном кабинете: `Обновление версии Trino`.
-
-Позволяет обновлять версию продукта Trino в инстансе Cloud Trino.
-
-### dp_trino_instances_view
-
-Название в личном кабинете: `Просмотр свойства инстанса Trino`.
-
-Позволяет просматривать свойства инстансов Cloud Trino.
-
-### dp_trino_logs_view
-
-Название в личном кабинете: `Просмотр логов инстанса Trino`.
-
-Позволяет просматривать журналы событий Cloud Trino.
-
-### dp_trino_monitoring_view
-
-Название в личном кабинете: `Просмотр показателей мониторинга Trino`.
-
-Позволяет просматривать показатели мониторинга Cloud Trino.
-
-### dp_trino_settings_change
-
-Название в личном кабинете: `Управление настройками Trino`.
-
-Позволяет изменять настройки продукта Trino.
-
-### dp_trino_settings_list
-
-Название в личном кабинете: `Просмотр настроек Trino`.
-
-Позволяет просматривать настройки продукта Trino.
-
-### dp_trino_settings_viewhistory
-
-Название в личном кабинете: `Просмотр истории изменений Trino`.
-
-Позволяет просматривать историю изменения настроек продукта Trino.
-
-### dp_trino_users_create
-
-Название в личном кабинете: `Добавление пользователя Trino`.
-
-Позволяет добавлять пользователей Cloud Trino.
-
-### dp_trino_users_delete
-
-Название в личном кабинете: `Удаление пользователя Trino`.
-
-Позволяет удалять пользователей Cloud Trino.
-
-### dp_trino_users_list
-
-Название в личном кабинете: `Просмотр списка пользователей Trino`.
-
-Позволяет просматривать список пользователей Cloud Trino.
-
-### dp_trino_users_update
-
-Название в личном кабинете: `Редактирование пользователя Trino`.
-
-Позволяет изменять данные пользователей Cloud Trino.
+{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_update]}

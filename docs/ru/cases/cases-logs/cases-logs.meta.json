@@ -5,5 +5,19 @@
   "sectionTitle": "Логирование",
   "icon": "",
   "weight": 6,
-  "uuid": "cc2fa496-fc30-4b1b-9e1c-f1651ea152ce"
+  "uuid": "cc2fa496-fc30-4b1b-9e1c-f1651ea152ce",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

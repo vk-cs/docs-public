@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud CDN сервисі құрылғысының шолуы",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

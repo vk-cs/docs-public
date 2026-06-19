@@ -1,3 +1,5 @@
+# {heading(PostgreSQL)[id=dbaas-concepts-postgresql]}
+
 PostgreSQL — это объектно-реляционная СУБД с открытым исходным кодом. Она может хранить большие объемы данных, поддерживает множество типов данных и предоставляет возможность создания собственных типов.
 
 Основные преимущества PostgreSQL:
@@ -8,12 +10,16 @@ PostgreSQL — это объектно-реляционная СУБД с отк
 
 Подробнее в [официальной документации PostgreSQL](https://www.postgresql.org/docs/).
 
-Список версий PostgreSQL, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+Список версий PostgreSQL, которые поддерживаются в {var(cloud)}, доступен при {linkto(../../../instructions/create#dbaas-create)[text=создании]} инстанса этой базы данных.
 
-В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва для PostgreSQL версии 16 вы можете создать геораспределенные конфигурации с хостами в разных [зонах доступности](/ru/start/concepts/architecture#az), чтобы дополнительно повысить отказоустойчивость.
+{ifdef(public)}
+В {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва для PostgreSQL версии 16 вы можете создать геораспределенные конфигурации с хостами в разных {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зонах доступности]}, чтобы дополнительно повысить отказоустойчивость.
+{/ifdef}
 
-## Что дальше?
+{ifdef(public)}
+## {heading(Что дальше?)[id=dbaas-concepts-postgresql-whats-next]}
 
-- [Создайте](../../../instructions/create) инстанс базы данных.
-- [Подключитесь](../../../connect) к базе данных.
-- [Ознакомьтесь](../../extensions) с доступными расширениями баз данных.
+- {linkto(../../../instructions/create#dbaas-create)[text=Создайте]} инстанс базы данных.
+- {linkto(../../../connect#dbaas-connect)[text=Подключитесь]} к базе данных.
+- {linkto(../../extensions#dbaas-concepts-extensions)[text=Ознакомьтесь]} с доступными расширениями баз данных.
+{/ifdef}

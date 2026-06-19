@@ -1,0 +1,16 @@
+{
+  "title": "Управление БД",
+  "shortDescription": "",
+  "metaDescription": "Управление БД",
+  "sectionTitle": "Управление БД",
+  "weight": 4,
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,18 +1,20 @@
+# {heading(Работа с ConfigMaps)[id=mlspark-library-reference-configmaps]}
+
 Эти методы позволяют работать с [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/) (картами конфигурации) кластера Cloud Containers, который обеспечивает работу кластера Cloud Spark. Они используются для хранения конфигурационных данных: переменных окружения, аргументов командной строки или файлов конфигурации. Применение ConfigMap позволяет отделить настройку конфигурационных данных, зависящих от конкретной среды исполнения, от кода приложения. Это облегчает перенос ваших приложений Spark между средами исполнения кода.
 
 {note:warn}
 
-Класс ConfigMap не обеспечивает секретность и шифрование хранимых данных. Для работы с конфиденциальными данными используйте [методы работы с секретами](../secrets) или сторонние инструменты.
+Класс ConfigMap не обеспечивает секретность и шифрование хранимых данных. Для работы с конфиденциальными данными используйте {linkto(../secrets#mlspark-library-reference-secrets)[text=методы работы с секретами]} или сторонние инструменты.
 
 {/note}
 
-## create_configmap_from_yaml
+## {heading(create_configmap_from_yaml)[id=mlspark-library-reference-configmaps-create_configmap_from_yaml]}
 
 Создать ConfigMap в указанном пространстве имен на основе предоставленного манифеста. Манифест должен быть в формате YAML.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-configmaps-create_configmap_from_yaml-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -26,7 +28,7 @@
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`configmap_yaml_path`
 
@@ -43,7 +45,7 @@
 При отсутствии аргумента используется значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-configmaps-create_configmap_from_yaml-result]}
 
 Объект класса `K8sConfigmap` с информацией о созданном ConfigMap.
 
@@ -66,7 +68,7 @@
 |Имя пространства имен, в котором создан ConfigMap
 |===
 
-### Сигнатура метода, примеры манифестов и пример использования метода
+### {heading(Сигнатура метода, примеры манифестов и пример использования метода)[id=mlspark-library-reference-configmaps-create_configmap_from_yaml-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -149,12 +151,12 @@ data:
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
 ```python
@@ -184,15 +186,15 @@ namespace: default
 
 {/cut}
 
-## list_configmaps
+## {heading(list_configmaps)[id=mlspark-library-reference-configmaps-list_configmaps]}
 
 Получить список имен всех ConfigMap в указанном пространстве имен.
 
-Чтобы получить детальную информацию об отдельном ConfigMap из списка, используйте метод [get_configmap_detail](#get_configmap_detail).
+Чтобы получить детальную информацию об отдельном ConfigMap из списка, используйте метод [get_configmap_detail](#mlspark-library-reference-configmaps-get_configmap_detail).
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-configmaps-list_configmaps-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -206,7 +208,7 @@ namespace: default
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |`namespace`
 
 (необязательный)
@@ -216,11 +218,11 @@ namespace: default
 При отсутствии аргумента используется значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-configmaps-list_configmaps-result]}
 
 Объект класса `K8sObjectNamesList[str]`, который содержит список имен всех ConfigMap в указанном пространстве имен.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-configmaps-list_configmaps-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -239,12 +241,12 @@ list_configmaps(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -264,13 +266,13 @@ list_configmaps(cluster_id: str,
 
 {/cut}
 
-## get_configmap_detail
+## {heading(get_configmap_detail)[id=mlspark-library-reference-configmaps-get_configmap_detail]}
 
 Получить информацию о ConfigMap с указанным именем.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-configmaps-get_configmap_detail-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -284,14 +286,14 @@ list_configmaps(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |`configmap_name`
 
 (обязательный)
 |`str`
 |Имя ConfigMap.
 
-Список имен всех ConfigMap можно получить с помощью метода [list_configmaps](#list_configmaps)
+Список имен всех ConfigMap можно получить с помощью метода [list_configmaps](#mlspark-library-reference-configmaps-list_configmaps)
 |`namespace`
 
 (необязательный)
@@ -301,7 +303,7 @@ list_configmaps(cluster_id: str,
 При отсутствии аргумента используется значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-configmaps-get_configmap_detail-result]}
 
 Объект класса `K8sConfigmap` с информацией о ConfigMap с указанным именем.
 
@@ -324,7 +326,7 @@ list_configmaps(cluster_id: str,
 |Имя пространства имен, в котором находится ConfigMap
 |===
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-configmaps-get_configmap_detail-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -344,12 +346,12 @@ get_configmap_detail(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -370,13 +372,13 @@ get_configmap_detail(cluster_id: str,
 
 {/cut}
 
-## delete_configmap
+## {heading(delete_configmap)[id=mlspark-library-reference-configmaps-delete_configmap]}
 
 Удалить ConfigMap с указанным именем.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-configmaps-delete_configmap-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -390,14 +392,14 @@ get_configmap_detail(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |`configmap_name`
 
 (обязательный)
 |`str`
 |Имя ConfigMap.
 
-Список имен всех ConfigMap можно получить с помощью метода [list_configmaps](#list_configmaps)
+Список имен всех ConfigMap можно получить с помощью метода [list_configmaps](#mlspark-library-reference-configmaps-list_configmaps)
 |`namespace`
 
 (необязательный)
@@ -407,11 +409,11 @@ get_configmap_detail(cluster_id: str,
 При отсутствии аргумента используется значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-configmaps-delete_configmap-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-configmaps-delete_configmap-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -430,12 +432,12 @@ delete_configmap(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -450,6 +452,6 @@ delete_configmap(cluster_id: str,
       namespace='default')
    ```
 
-   ConfigMap с указанным именем будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_configmaps](#list_configmaps).
+   ConfigMap с указанным именем будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_configmaps](#mlspark-library-reference-configmaps-list_configmaps).
 
 {/cut}

@@ -1,9 +1,14 @@
 {
-    "title": "Creating a JupyterHub instance",
-      "shortDescription": "",
-      "metaDescription": "How to create a JupyterHub instance using Terraform",
-    "sectionTitle": "Creating a JupyterHub instance",
-    "icon": "",
-    "weight": 1,
-    "uuid": "e7464702-ab4e-4c53-9288-9e3a8b4ef4d7"
+  "title": "Creating a JupyterHub instance",
+  "shortDescription": "",
+  "metaDescription": "How to create a JupyterHub instance using Terraform",
+  "sectionTitle": "Creating a JupyterHub instance",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e7464702-ab4e-4c53-9288-9e3a8b4ef4d7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

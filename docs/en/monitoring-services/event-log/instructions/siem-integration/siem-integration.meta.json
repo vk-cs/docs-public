@@ -5,5 +5,10 @@
   "sectionTitle": "Managing SIEM connections",
   "icon": "",
   "weight": 1,
-  "uuid": "694a6a85-dea4-42a4-9f50-1e91909ba574"
+  "uuid": "694a6a85-dea4-42a4-9f50-1e91909ba574",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-та диск суреттерін жасау және пайдалану. Диск суретін жасау, суреттен дискіні немесе виртуалды машинаны қалпына келтіру және суреттерді жою.",
   "sectionTitle": "Суреттермен жұмыс істеу",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

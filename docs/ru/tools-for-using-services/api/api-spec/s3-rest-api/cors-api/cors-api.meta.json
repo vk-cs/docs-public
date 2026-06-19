@@ -1,9 +1,14 @@
 {
-    "title": "CORS",
-      "shortDescription": "",
-      "metaDescription": "Сервис VK Object Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
-    "sectionTitle": "CORS",
-    "icon": "",
-    "weight": 7,
-    "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91"
+  "title": "CORS",
+  "shortDescription": "Установка, удаление и просмотр конфигурации механизма кросс-доменных запросов (CORS) в бакетах",
+  "metaDescription": "Все доступные методы для работы с конфигурацией механизма кросс-доменных запросов (CORS) в бакетах VK Object Storage: получить текущую конфигурацию (GetBucketCORS), установить конфигурацию (PutBucketCORS), удалить конфигурацию (DeleteBucketCORS)",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 3,
+  "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

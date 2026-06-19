@@ -1,0 +1,14 @@
+{
+  "title": "Jatoba",
+  "shortDescription": "PostgreSQL ДҚБЖ-сының жаңғыртылған өзегіне негізделген қорғалған ДҚБЖ",
+  "metaDescription": "VK Data Platform инфрақұрылымында деректерді сақтау және басқаруға арналған Jatoba сервисі",
+  "sectionTitle": "Jatoba",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 17,
+  "uuid": ""
+}

@@ -4,5 +4,15 @@
   "metaDescription": "Сервис архитектурасының егжей-тегжейлері: қолданбалармен өзара әрекеттесу, интеграция ерекшеліктері",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

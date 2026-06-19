@@ -1,9 +1,14 @@
 {
-    "title": "Using an advanced router",
-      "shortDescription": "How to organize data transfer between the on premise infrastructure and the VK Cloud platform",
-      "metaDescription": "How to organize data transfer between the on premise infrastructure and the VK Cloud platform using a direct connection and an advanced router",
-    "sectionTitle": "Using an advanced router",
-    "icon": "",
-    "weight": 3,
-    "uuid": "447412e4-b9e7-40b9-b8ca-34a664f27f67"
+  "title": "Using an advanced router",
+  "shortDescription": "How to organize data transfer between the on premise infrastructure and the VK Cloud platform",
+  "metaDescription": "How to organize data transfer between the on premise infrastructure and the VK Cloud platform using a direct connection and an advanced router",
+  "sectionTitle": "Using an advanced router",
+  "icon": "",
+  "weight": 3,
+  "uuid": "447412e4-b9e7-40b9-b8ca-34a664f27f67",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

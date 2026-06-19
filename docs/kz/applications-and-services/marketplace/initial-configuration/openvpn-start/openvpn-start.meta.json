@@ -4,5 +4,19 @@
   "metaDescription": "VK Cloud ресурстарына қорғалған қолжетімділікке арналған сервисті қосу және баптау, пайдаланушыларды қосу және бұғаттау",
   "sectionTitle": "OpenVPN сервисін орнату және баптау",
   "icon": "",
-  "weight": 11
+  "weight": 11,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

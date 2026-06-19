@@ -3,5 +3,15 @@
   "shortDescription": "ClickHouse-та деректермен жұмысты оңтайландыруға арналған пайдалы тәжірибелер",
   "metaDescription": "VK Cloud платформасындағы Cloud ClickHouse-пен тиімді жұмыс істеуге арналған пайдалы ұсынымдар: баптау, сұрауларды оңтайландыру және ең жоғары өнімділік үшін деректерді басқару.",
   "sectionTitle": "ClickHouse-та деректермен жұмыс істеу бойынша ұсынымдар",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

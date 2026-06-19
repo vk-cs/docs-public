@@ -6,7 +6,7 @@ Using Velero for backups is supported only in [first-generation](/en/kubernetes/
 
 ## Preparatory steps
 
-1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster of the latest version, if not done so already.
+{include(/en/_includes/_create-test-cluster.md)}
 1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster via `kubectl`.
 1. [Install and configure](/en/kubernetes/k8s/install-tools/velero) Velero, if not done so already.
 

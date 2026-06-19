@@ -3,5 +3,10 @@
   "shortDescription": "Альт Linux өнімдерінің лицензиялары",
   "metaDescription": "Отандық Альт Linux компаниясының өнімдерін лицензиялау",
   "sectionTitle": "Альт Linux",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

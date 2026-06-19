@@ -1,13 +1,15 @@
-Вы можете разворачивать репозитории библиотек и артефактов, применяемые в модульной разработке, с помощью сервиса [Nexus 3](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info). Эта инструкция поможет развернуть сервис Nexus 3 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
+# {heading(Развертывание Nexus 3)[id=marketplace-nexus-3-start]}
 
-Используя сервис Nexus 3, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Sonatype](https://sonatype.ru/prices).
+Вы можете разворачивать репозитории библиотек и артефактов, применяемые в модульной разработке, с помощью сервиса [Nexus 3](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info). Эта инструкция поможет развернуть сервис Nexus 3 на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
+
+Используя сервис Nexus 3, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/vk/marketplace) и [Sonatype](https://sonatype.ru/prices).
 
 Чтобы развернуть сервис Nexus в проекте:
 
-1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../instructions/pr-instance-add) сервис Nexus 3:
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
+1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
+1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Разверните]} сервис Nexus 3:
 
    - Выберите ранее созданные сеть с доступом в интернет и подсеть. Внешний IP-адрес будет назначен автоматически.
    - Остальные параметры выберите на свое усмотрение.
@@ -20,7 +22,5 @@
 1. (Опционально) Пройдите чек-лист из [официальной документации](https://help.sonatype.com/repomanager3/installation-and-upgrades/post-install-checklist).
 
 {note:info}
-
 Для расширенной конфигурации сервиса используйте официальную инструкцию [Sonatype Nexus Repository 3](https://help.sonatype.com/repomanager3).
-
 {/note}

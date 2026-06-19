@@ -5,5 +5,10 @@
   "sectionTitle": "Сервис недоступен по IP-адресу",
   "icon": "",
   "weight": 27,
-  "uuid": "d7f2e010-936f-4bf2-8553-16b92e333c19"
+  "uuid": "d7f2e010-936f-4bf2-8553-16b92e333c19",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

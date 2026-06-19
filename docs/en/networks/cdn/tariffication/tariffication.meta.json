@@ -1,9 +1,14 @@
 {
-    "title": "Tariffication",
-      "shortDescription": "Service tariffication rules and cost calculation",
-      "metaDescription": "Service tariffication rules and cost calculation",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 4,
-    "uuid": "a7db4aff-180f-4e05-b1af-bd2aaa65feb8"
+  "title": "Tariffication",
+  "shortDescription": "Service tariffication rules and cost calculation",
+  "metaDescription": "Service tariffication rules and cost calculation",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "a7db4aff-180f-4e05-b1af-bd2aaa65feb8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

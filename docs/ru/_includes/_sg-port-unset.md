@@ -2,34 +2,30 @@
 
 {tab(OpenStack CLI)}
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
-1. [Получите имя или идентификатор](/ru/networks/vnet/instructions/ports#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
-1. [Получите имя или идентификатор](/ru/networks/vnet/instructions/secgroups#view_secgroups) нужной группы безопасности.
+1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
+1. {linkto(../../../../networks/vnet/instructions/ports#vnet-ports-view)[text=Получите имя или идентификатор]} нужного порта.
+1. {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=Получите имя или идентификатор]} нужной группы безопасности.
 1. Отвяжите от порта:
 
-    {tabs}
+   {tabs}
 
-    {tab(Одну группу безопасности)}
+   {tab(Одну группу безопасности)}
 
-    ```console
+   ```console
+   openstack port unset --security-group <ИМЯ_ИЛИ_ID_ГРУППЫ> <ИМЯ_ИЛИ_ID_ПОРТА>
+   ```
 
-    openstack port unset --security-group <ИМЯ_ИЛИ_ID_ГРУППЫ> <ИМЯ_ИЛИ_ID_ПОРТА>
+   {/tab}
 
-    ```
+   {tab(Все группы безопасности)}
 
-    {/tab}
+   ```console
+   openstack port set --no-security-group <ИМЯ_ИЛИ_ID_ПОРТА>
+   ```
 
-    {tab(Все группы безопасности)}
+   {/tab}
 
-    ```console
-
-    openstack port set --no-security-group <ИМЯ_ИЛИ_ID_ПОРТА>
-        
-    ```
-
-    {/tab}
-
-    {/tabs}
+   {/tabs}
 
 {/tab}
 

@@ -5,5 +5,14 @@
   "sectionTitle": "Пошаговые инструкции для администратора",
   "icon": "",
   "weight": 3,
-  "uuid": "66222ea9-fae4-4e7a-8027-e15c675dcdd7"
+  "uuid": "66222ea9-fae4-4e7a-8027-e15c675dcdd7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

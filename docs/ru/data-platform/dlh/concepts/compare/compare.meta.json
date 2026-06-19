@@ -5,5 +5,10 @@
   "sectionTitle": "Сравнение технологий",
   "icon": "",
   "weight": 3,
-  "uuid": "0045b05a-fb3a-4794-9afc-6820c85e799f"
+  "uuid": "0045b05a-fb3a-4794-9afc-6820c85e799f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

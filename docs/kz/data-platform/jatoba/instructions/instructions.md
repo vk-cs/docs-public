@@ -1,0 +1,1 @@
+# {heading(Қадамдық нұсқаулықтар)[id=jatoba_instructions]}

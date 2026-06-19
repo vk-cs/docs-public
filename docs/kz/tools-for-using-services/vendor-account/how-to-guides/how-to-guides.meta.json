@@ -4,5 +4,10 @@
   "shortDescription": "Қосымша сервистер мен интеграциялар, қолданбалар дүкені ұсынатын",
   "metaDescription": "Marketplace VK Cloud: қосымша сервистер мен интеграциялар",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

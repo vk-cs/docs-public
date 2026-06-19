@@ -1,4 +1,4 @@
-# {heading(ivkcs_dns ресурсы)[id=ivkcs_dns]}
+# {heading(Ресурс ivkcs_dns)[id=ivkcs_dns]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

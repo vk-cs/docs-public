@@ -5,5 +5,10 @@
   "sectionTitle": "Просмотр сделок",
   "icon": "",
   "weight": 2,
-  "uuid": "f5d42073-a5de-4ca1-a00c-af499561d2bf"
+  "uuid": "f5d42073-a5de-4ca1-a00c-af499561d2bf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

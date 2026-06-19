@@ -1,0 +1,18 @@
+{
+  "title": "Просмотр баланса проекта",
+  "shortDescription": "Как просматривать баланс проекта",
+  "metaDescription": "VK Cloud: как просматривать баланс проекта",
+  "sectionTitle": "Просмотр баланса проекта",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

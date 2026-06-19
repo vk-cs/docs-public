@@ -6,9 +6,9 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-1. VK Cloud аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
 1. **SSH кілттік жұптары** бөліміне өтіңіз.
 1. Қажетті кілттік жұптың атауын басыңыз. Ол туралы ақпарат көрсетіледі.
 
@@ -16,7 +16,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Команданы орындаңыз:
 
    ```console
@@ -37,9 +37,9 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-1. VK Cloud аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
 1. **SSH кілттік жұптары** бөліміне өтіңіз.
 1. **SSH кілтін қосу** түймесін басыңыз.
 1. Кілттің атауын енгізіп, **Кілтті жасау** түймесін басыңыз.
@@ -50,7 +50,7 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Команданы орындаңыз:
 
    ```console
@@ -67,9 +67,9 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
-1. VK Cloud аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
 1. **SSH кілттік жұптары** бөліміне өтіңіз.
 1. **SSH кілтін қосу** түймесін басыңыз.
 1. **Кілтті импорттау** түймесін басыңыз.
@@ -85,7 +85,7 @@
 {tab(OpenStack CLI)}
 
 1. Кілттік жұпты жергілікті түрде жасау үшін GitLab-тың [ресми құжаттамасын](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) пайдаланыңыз.
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Команданы орындаңыз:
 
    ```console
@@ -104,17 +104,17 @@
 
 {/note}
 
-SSH арқылы кілттік жұпты пайдаланып Linux виртуалды машинасына қол жеткізуді қалпына келтіру үшін [ВМ басқару](/kz/computing/iaas/instructions/vm/vm-manage#kilt_arkyly_vm_ge_kolzhetimdilikti_kalpyna_keltiru) мақаласындағы нұсқаулықты пайдаланыңыз.
+SSH арқылы кілттік жұпты пайдаланып Linux виртуалды машинасына қол жеткізуді қалпына келтіру үшін [ВМ басқару](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-recovery-access) мақаласындағы нұсқаулықты пайдаланыңыз.
 
 ## Кілттік жұпты жою
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
 Бұл топтық операция: қажет болса, бірнеше кілттік жұпты бірден жалаушалар арқылы таңдап жоюға болады.
 
-1. VK Cloud аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
 1. **SSH кілттік жұптары** бөліміне өтіңіз.
 1. Жойылатын нысан жолындағы ![Корзина](assets/trash-icon.svg "inline") белгішесін басыңыз.
 1. Жоюды растаңыз.
@@ -123,7 +123,7 @@ SSH арқылы кілттік жұпты пайдаланып Linux вирту
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Команданы орындаңыз:
 
    ```console

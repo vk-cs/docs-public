@@ -1,18 +1,20 @@
+# {heading(Кесте бойынша резервтік көшіру)[id=k8s-backup-schedule]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Velero](https://velero.io/docs/main/) құралын кластерлердің резервтік көшірмесін [cron](https://crontab.guru/every-1-minute) форматындағы берілген кесте бойынша баптау және кластерді осы кесте негізінде қалпына келтіру үшін пайдаланыңыз.
 
 {note:info}
-Резервтік көшіру үшін Velero пайдалану тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлерінде ғана қолдау көрсетіледі.
+Резервтік көшіру үшін Velero пайдалану тек {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде ғана қолдау көрсетіледі.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-backup-schedule-prepare]}
 
-1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster) Kubernetes кластерінің өзекті нұсқасын, егер бұл әлі жасалмаса.
-1. [Көз жеткізіңіз](/kz/kubernetes/k8s/connect/kubectl), `kubectl` көмегімен кластерге қосыла алатыныңызғал.
-1. [Орнатып, баптаңыз](/kz/kubernetes/k8s/install-tools/velero) Velero, егер бұл әлі жасалмаса.
+{include(/kz/_includes/_create-test-cluster.md)}
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Көз жеткізіңіз]}, `kubectl` көмегімен кластерге қосыла алатыныңызға.
+1. {linkto(../../../install-tools/velero#k8s-velero)[text=Орнатып, баптаңыз]} Velero, егер бұл әлі жасалмаса.
 
-## 1. Резервтік көшіру кестесін жасаңыз
+## {heading(1. Резервтік көшіру кестесін жасаңыз)[id=k8s-backup-schedule-create-schedule]}
 
 Қажетті аттар кеңістігі үшін резервтік көшіру кестесін жасаңыз:
 
@@ -29,7 +31,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
    --include-namespaces test_namespace1,test_namespace2,test_namespace3
    ```
 
-   Сондай-алқ, кестені баптау кезінде көрсетілген аттар кеңістігіне сәйкес келсе де, резервтік көшіруден жекелеген ресурстарды алып тастай аласыз. Осындай алып тастаудың мысалдары: 
+   Сондай-ақ, кестені баптау кезінде көрсетілген аттар кеңістігіне сәйкес келсе де, резервтік көшіруден жекелеген ресурстарды алып тастай аласыз. Осындай алып тастаудың мысалдары: 
 
    ```console
    --exclude-resources secrets
@@ -60,7 +62,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
 Әдепкі бойынша резервтік көшірменің өмір сүру уақыты — 720 сағат. Осы уақыт өткеннен кейін резервтік көшірме жойылады.
 {/note}
 
-## 2. Жасалған кестені қараңыз
+## {heading(2. Жасалған кестені қараңыз)[id=k8s-backup-schedule-view-schedule]}
 
 1. Жасалған кестенің таңдалған аттар кеңістігі үшін қолжетімді резервтік көшіру кестелерінің тізімінде пайда болғанына көз жеткізіңіз:
 
@@ -99,7 +101,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
    Paused:  false
    ```
 
-## 3. Деректерді қалпына келтіруді орындаңыз
+## {heading(3. Деректерді қалпына келтіруді орындаңыз)[id=k8s-backup-schedule-perform-backup]}
 
 Көрсетілген кесте бойынша жасалған резервтік көшірмеден қалпына келтіруді орындаңыз.
 
@@ -107,7 +109,7 @@ velero schedule create <НАЗВАНИЕ_РАСПИСАНИЯ> --schedule="0 7 *
 velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-schedule <НАЗВАНИЕ_РАСПИСАНИЯ>
 ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-backup-schedule-delete]}
 
 Жұмыс істеп тұрған кластер тарифтеледі және есептеу ресурстарын тұтынады. Егер Velero құралы мен оның көмегімен резервтік көшіруді тексеру үшін жасалған Kubernetes ресурстары енді қажет болмаса, оларды жойыңыз:
 
@@ -124,8 +126,10 @@ velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-sch
    velero uninstall
    ```
 
-1. [Жойыңыз](/kz/storage/s3/instructions/objects/manage-object#zhoyu_obektilerdin) Velero пайдаланған бакеттен резервтік көшірмелерді.
+1. {linkto(/kz/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=Жойыңыз]} Velero пайдаланған бакеттен резервтік көшірмелерді.
 
-   Қажет болса, сондай-алқ [бакеттің өзін де жойыңыз](/kz/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
+   Қажет болса, сондай-ақ {linkto(/kz/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=бакеттің өзін де жойыңыз]}.
 
-1. [Тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu) жасалған кластерді, кейінірек пайдалану үшін, немесе [жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster) оны біржола.
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

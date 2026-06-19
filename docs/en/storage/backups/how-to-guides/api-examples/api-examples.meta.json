@@ -1,9 +1,14 @@
 {
-    "title": "API usage examples",
-      "shortDescription": "Examples of Karboii API requests for creating a backup plan",
-      "metaDescription": "Examples of Karboii API requests for creating a backup plan.",
-    "sectionTitle": "API usage examples",
-    "icon": "",
-    "weight": 5,
-    "uuid": "208f930b-95fe-4793-9a28-7c8440895ce9"
+  "title": "API usage examples",
+  "shortDescription": "Examples of Karboii API requests for creating a backup plan",
+  "metaDescription": "Examples of Karboii API requests for creating a backup plan.",
+  "sectionTitle": "API usage examples",
+  "icon": "",
+  "weight": 5,
+  "uuid": "208f930b-95fe-4793-9a28-7c8440895ce9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_dns ресурсы",
   "sectionTitle": "ivkcs_dns ресурсы",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

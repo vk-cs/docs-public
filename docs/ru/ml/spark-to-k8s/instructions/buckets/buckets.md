@@ -1,10 +1,12 @@
+# {heading(Получение доступов в бакеты)[id=mlspark-instructions-buckets]}
+
 По умолчанию у кластера Spark есть доступ к бакету [VK Object Storage](/ru/storage/s3), который автоматически создается вместе с кластером.
 
 Чтобы предоставить кластеру доступ к другим бакетам:
 
-1. [Создайте аккаунт](/ru/storage/s3/instructions/access-management/access-keys) или [префиксные ключи доступа](/ru/storage/s3/instructions/access-management/bucket-keys) VK Object Storage в личном кабинете VK Cloud. Скопируйте и сохраните идентификатор ключа (**Access Key**) и секретный ключ (**Secret Key**).
-1. [Создайте](/ru/ml/spark-to-k8s/ml-platform-library/authz) токен доступа с ролью `Администратор`, если это еще не сделано.
-1. Создайте файл `s3_secret.yaml`. Вставьте следующий код в файл, указав полученные ключи доступа VK Object Storage:
+1. [Создайте аккаунт](/ru/storage/s3/instructions/access-management/access-keys) или [префиксные ключи доступа](/ru/storage/s3/instructions/access-management/bucket-keys) {var(s3)} в личном кабинете {var(cloud)}. Скопируйте и сохраните идентификатор ключа (**Access Key**) и секретный ключ (**Secret Key**).
+1. {linkto(../../ml-platform-library/authz#mlspark-library-authz)[text=Создайте]} токен доступа с ролью `Администратор`, если это еще не сделано.
+1. Создайте файл `s3_secret.yaml`. Вставьте следующий код в файл, указав полученные ключи доступа {var(s3)}:
 
      ```yaml
      apiVersion: v1
@@ -34,6 +36,6 @@
      Здесь:
 
      - `REFRESH_TOKEN`: токен доступа с ролью `Администратор`, созданный ранее.
-     - `CLUSTER_ID`: идентификатор кластера, которому нужно предоставить доступ к бакету VK Object Storage.
+     - `CLUSTER_ID`: идентификатор кластера, которому нужно предоставить доступ к бакету {var(s3)}.
 
-После выполнения скрипта кластер Spark будет иметь доступ к бакетам, которые доступны по ключам VK Object Storage.
+После выполнения скрипта кластер Spark будет иметь доступ к бакетам, которые доступны по ключам {var(s3)}.

@@ -13,56 +13,56 @@
 |`uuid`
 |UUID инстанса image-based приложения
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`domain`
 |FQDN домена, для которого будет выпущен сертификат
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |`path_cert`
 |Путь к директории, где будут сохранены файлы сертификата и ключа
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`renewal_hook_path`
 |Путь к bash-скрипту, который будет выполняться после каждого обновления сертификата
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`cert_files_owner`
 |Владелец файлов сертификата и ключа
 |string
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`cert_files_group`
 |Группа файлов сертификата и ключа
 |string
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.create`
 |Тайм-аут создания сертификата. По истечении тайм-аута процесс завершается с ошибкой
 |string
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.update`
 |Тайм-аут обновления сертификата. По истечении тайм-аута процесс завершается с ошибкой
 |string
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.update`
 |Тайм-аут удаления сертификата. Отсчитывается с момента, когда пользователь удалил свой инстанс приложения. По истечении тайм-аута процесс завершается с ошибкой
 |string
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 
 Скрипт, указанный в аргументе `renewal_hook_path`, выполняется после каждого обновления сертификата:

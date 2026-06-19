@@ -1,8 +1,18 @@
 {
   "title": "Gatekeeper орнату",
-  "shortDescription": "Gatekeeper контроллерін қалай орнатуғал болады",
-  "metaDescription": "Gatekeeper контроллерін қалай орнатуғал, жұмысқал қабілеттілігін тексеруге және жоюғал болатынын біліңіз. Kubernetes кластерінде Gatekeeper пайдалану мысалдары",
+  "shortDescription": "Gatekeeper контроллерін қалай орнатуға болады",
+  "metaDescription": "Gatekeeper контроллерін қалай орнатуға, жұмысқа қабілеттілігін тексеруге және жоюға болатынын біліңіз. Kubernetes кластерінде Gatekeeper пайдалану мысалдары",
   "sectionTitle": "Gatekeeper орнату",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

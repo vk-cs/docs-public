@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-та Kubernetes кластерін жаңарту рәсімі қалай ұйымдастырылған. Кластер жаңартылған кезде қолжетімсіз түйіндер пайызын есептеу",
   "sectionTitle": "Кластер нұсқасын жаңарту",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Резервные копии с защитой от удаления",
   "icon": "",
   "weight": 4,
-  "uuid": "c57288d5-8d1a-4aeb-ab55-84900bfd38db"
+  "uuid": "c57288d5-8d1a-4aeb-ab55-84900bfd38db",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

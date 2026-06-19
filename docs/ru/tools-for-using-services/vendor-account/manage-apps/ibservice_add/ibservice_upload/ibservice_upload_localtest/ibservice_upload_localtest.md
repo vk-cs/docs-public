@@ -14,7 +14,7 @@
 
 1. Установите Terraform локально:
 
-   1. Скачайте Terraform с [официального зеркала VK Cloud](https://hashicorp-releases.mcs.mail.ru/terraform).
+   1. Скачайте Terraform с [официального зеркала {var(cloud)}](https://hashicorp-releases.mcs.mail.ru/terraform).
    1. Распакуйте архив и в переменной среды `Path` укажите путь к распакованному файлу.
    1. Выполните команду `terraform -help`, чтобы убедиться в успешной установке Terraform.
 

@@ -1,9 +1,23 @@
 {
-    "title": "Working with persistent volumes",
-      "shortDescription": "How to use various types of persistent volumes in a cluster",
-      "metaDescription": "",
-    "sectionTitle": "Working with persistent volumes",
-    "icon": "",
-    "weight": 2,
-    "uuid": "8cbc1166-a1d4-4e2c-9d2c-cd01d38a0db6"
+  "title": "Working with persistent volumes",
+  "shortDescription": "How to use various types of persistent volumes in a cluster",
+  "metaDescription": "",
+  "sectionTitle": "Working with persistent volumes",
+  "icon": "",
+  "weight": 1,
+  "uuid": "8cbc1166-a1d4-4e2c-9d2c-cd01d38a0db6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

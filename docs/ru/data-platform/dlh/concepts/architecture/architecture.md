@@ -1,4 +1,6 @@
-[Data Lakehouse (DLH)](/ru/data-platform/dlh/concepts/about) собирает структурированные и неструктурированные данные из различных источников, обрабатывает их через [Cloud Spark](/ru/data-platform/dlh/concepts/components/spark) ([ETL](https://ru.wikipedia.org/wiki/ETL) или ELT) или [Cloud Trino](/ru/data-platform/dlh/concepts/components/trino) (SQL-запросы), хранит в [S3-хранилище](/ru/data-platform/dlh/concepts/components/s3) с каталогизацией в [Cloud Iceberg Metastore](/ru/data-platform/dlh/concepts/components/iceberg), управляет метаданными в DataHub и предоставляет данные для аналитики, BI и ML через Cloud Trino, Cloud Spark или [Cloud ClickHouse](/ru/data-platform/dlh/concepts/components/clickhouse).
+# {heading(Архитектура сервиса)[id=dlh_architecture]}
+
+{linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} собирает структурированные и неструктурированные данные из различных источников, обрабатывает их через {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} ([ETL](https://ru.wikipedia.org/wiki/ETL) или ELT) или {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} (SQL-запросы), хранит в {linkto(../components/s3#dlh_s3)[text=S3-хранилище]} с каталогизацией в {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]}, управляет метаданными в DataHub и предоставляет данные для аналитики, BI и ML через Cloud Trino, Cloud Spark или {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]}.
 
 ![](assets/arch_diagram.png){params[noBorder=true]}
 
@@ -6,24 +8,24 @@
  
 1. Полуструктурированные (JSON, XML, CSV) и неструктурированные (медиафайлы, документы) данные передаются в хранилище S3 в виде потоков или блоками.
 
-1. [Cloud Trino](/ru/data-platform/dlh/concepts/components/trino) и [Cloud Spark](/ru/data-platform/dlh/concepts/components/spark) используют API Iceberg Metastore для обмена данными с хранилищем S3.
+1. {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} и {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} используют API Iceberg Metastore для обмена данными с хранилищем S3.
 
-    В Cloud Trino процесс обработки запросов включает прием ([PULL-модель](#data_processing_models)) и оптимизацию SQL-запросов координатором (Coordinator), который затем распределяет их между рабочими узлами (Workers), обеспечивая функциональность, аналогичную традиционным СУБД.
+    В Cloud Trino процесс обработки запросов включает прием ([PULL-модель](#dlh_data_processing_models)) и оптимизацию SQL-запросов координатором (Coordinator), который затем распределяет их между рабочими узлами (Workers), обеспечивая функциональность, аналогичную традиционным СУБД.
 
     Cloud Spark применяется для выполнения сложных ETL- и ELT-процессов. Этот сервис поддерживает как пакетную, так и потоковую обработку данных:
 
-    - При [потоковой обработке](https://en.wikipedia.org/wiki/Stream_processing) (Streaming Processing) данные обрабатываются непрерывно, микропартиями (mini-batches) или событийно (event-by-event), в режиме реального времени. Потоковая обработка осуществляется по [PUSH-модели](#data_processing_models).
+    - При [потоковой обработке](https://en.wikipedia.org/wiki/Stream_processing) (Streaming Processing) данные обрабатываются непрерывно, микропартиями (mini-batches) или событийно (event-by-event), в режиме реального времени. Потоковая обработка осуществляется по [PUSH-модели](#dlh_data_processing_models).
 
-    - При [пакетной обработке](https://en.wikipedia.org/wiki/Batch_processing) (Batch Processing) данные накапливаются партиями (файлы, таблицы) и обрабатываются единовременно. Процесс извлечения запускается по расписанию или вручную ([PULL-модель](#data_processing_models)).
+    - При [пакетной обработке](https://en.wikipedia.org/wiki/Batch_processing) (Batch Processing) данные накапливаются партиями (файлы, таблицы) и обрабатываются единовременно. Процесс извлечения запускается по расписанию или вручную ([PULL-модель](#dlh_data_processing_models)).
 
-1. Cloud Iceberg Metastore каталогизирует объекты [хранилища S3](/ru/data-platform/dlh/concepts/components/s3) и предоставляет API для доступа к нему.
+1. Cloud Iceberg Metastore каталогизирует объекты {linkto(../components/s3#dlh_s3)[text=хранилища S3]} и предоставляет API для доступа к нему.
 
-    Хранение данных организовано с поддержкой [ACID](https://ru.wikipedia.org/wiki/ACID)-транзакций через сервис [Cloud Iceberg Metastore](/ru/data-platform/dlh/concepts/components/iceberg), который позволяет представить объекты хранилища S3 как таблицы БД. Использование хранилища S3 значительно снижает стоимость хранения.
+    Хранение данных организовано с поддержкой [ACID](https://ru.wikipedia.org/wiki/ACID)-транзакций через сервис {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]}, который позволяет представить объекты хранилища S3 как таблицы БД. Использование хранилища S3 значительно снижает стоимость хранения.
 
 1. Общий список объектов и правил их обработки публикуется в каталоге данных на базе DataHub (с поддержкой функционала Data Discovery, Data Quality, Metadata Management, Data Governance, Data Lineage) для управления доступом и отслеживания истории данных.
 1. Обработанные данные из Cloud Trino и Cloud Spark могут быть использованы в различных внешних аналитических системах: MLflow, Jupyter, ClickHouse. Эти системы позволяют проводить углубленный анализ данных, создавать детализированные визуализации и управлять жизненным циклом моделей машинного обучения.
 
-## {heading(Модели обработки данных)[id=data_processing_models]}
+## {heading(Модели обработки данных)[id=dlh_data_processing_models]}
 
 В зависимости от задачи данные могут обрабатываться следующими способами:
 
@@ -40,8 +42,8 @@
 | PUSH-модель
 
 | Сервис
-| [Cloud Airflow](/ru/data-platform/dlh/concepts/components/airflow), [Cloud Trino](/ru/data-platform/dlh/concepts/components/trino), [Cloud Spark](/ru/data-platform/dlh/concepts/components/spark) (пакетная обработка)
-| [Cloud Spark](/ru/data-platform/dlh/concepts/components/spark) (потоковая обработка, микробатчи)
+| {linkto(../components/airflow#dlh_airflow)[text=Cloud Airflow]}, {linkto(../components/trino#dlh_trino)[text=Cloud Trino]}, {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} (пакетная обработка)
+| {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} (потоковая обработка, микробатчи)
 
 | Поддержка источников
 | API, БД, файлы

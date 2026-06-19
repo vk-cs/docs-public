@@ -1,0 +1,14 @@
+{
+  "title": "Lakekeeper",
+  "shortDescription": "Каталог данных для Data Lakehouse на основе Apache Iceberg REST Catalog API",
+  "metaDescription": "Lakekeeper VK Data Platform — каталог данных для хранения и обслуживания метаданных объектов",
+  "sectionTitle": "Lakekeeper",
+  "weight": 10,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

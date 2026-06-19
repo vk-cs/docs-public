@@ -4,5 +4,15 @@
   "metaDescription": "Cloud Databases сервисінің мүмкіндіктері және оны пайдалану нұсқалары",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

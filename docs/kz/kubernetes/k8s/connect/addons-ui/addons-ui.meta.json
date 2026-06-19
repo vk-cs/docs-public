@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud контейнерлері: аддондардың веб-интерфейстеріне қосылу",
   "sectionTitle": "Аддондардың веб-интерфейстеріне қосылу",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

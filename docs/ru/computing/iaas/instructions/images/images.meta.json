@@ -5,5 +5,15 @@
   "sectionTitle": "Образы",
   "icon": "",
   "weight": 3,
-  "uuid": "ea60117d-56f5-4da1-b658-aead0b4759ec"
+  "uuid": "ea60117d-56f5-4da1-b658-aead0b4759ec",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

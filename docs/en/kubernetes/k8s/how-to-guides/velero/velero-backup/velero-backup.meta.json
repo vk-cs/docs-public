@@ -5,5 +5,10 @@
     "sectionTitle": "Performing backups manually",
     "icon": "",
     "weight": 1,
-    "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312"
+    "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312",
+    "build": {
+        "for": [
+            "public"
+        ]
+    }
 }

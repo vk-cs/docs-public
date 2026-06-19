@@ -1,4 +1,4 @@
-# {heading(full_description.md файлы)[id=ibservice_full_description]}
+# {heading(Файл full_description.md)[id=ibservice_full_description]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

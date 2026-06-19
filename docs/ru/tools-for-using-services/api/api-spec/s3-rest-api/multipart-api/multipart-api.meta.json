@@ -1,9 +1,14 @@
 {
-    "title": "Multipart",
-      "shortDescription": "",
-      "metaDescription": "Составная загрузка позволяет сохранять объекты в VK Object Storage по частям. Это может пригодиться при загрузке или копировании больших объектов",
-    "sectionTitle": "Multipart",
-    "icon": "",
-    "weight": 5,
-    "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6"
+  "title": "Multipart",
+  "shortDescription": "Загрузка файлов большого размера по частям с помощью составной загрузки",
+  "metaDescription": "Все доступные методы для составной загрузки объектов в VK Object Storage: инициализация загрузки (CreateMultipartUpload), загрузка частей объекта (UploadPart), завершение загрузки (CompleteMultipartUpload), прерывание загрузки (AbortMultipartUpload), получение списка загруженных частей (ListParts)",
+  "sectionTitle": "Multipart",
+  "icon": "",
+  "weight": 6,
+  "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Беттерді тану үшін API-дің төрт әдісі пайдаланылады: Set\nRecognize\nDelete\nTruncate Олардың әрқайсысын толығырақ қарастырайық. Set Бұл әдіс орнатуға мүмкіндік береді",
   "sectionTitle": "Беттерді тану",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

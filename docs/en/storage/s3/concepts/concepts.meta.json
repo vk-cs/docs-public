@@ -5,5 +5,19 @@
   "sectionTitle": "Concepts",
   "icon": "",
   "weight": 2,
-  "uuid": "d6a483e9-6d8c-42d5-88d4-fe7f26358f7c"
+  "uuid": "d6a483e9-6d8c-42d5-88d4-fe7f26358f7c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

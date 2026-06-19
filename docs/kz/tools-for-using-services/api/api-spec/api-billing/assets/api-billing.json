@@ -1,0 +1,137 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Биллинг сервисінің API",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Balance",
+      "description": "Жоба балансына қатысты операциялар"
+    }
+  ],
+  "paths": {
+    "/public/v1/projects/{pid}/balances/amount": {
+      "get": {
+        "tags": [
+          "Balance"
+        ],
+        "summary": "Жоба балансын білу",
+        "description": "VK Cloud жобасының барлық белсенді шоттарының балансы туралы ақпаратты оның <a href='https://cloud.vk.com/docs/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>идентификаторы</a> (PID) бойынша қайтарады.",
+        "operationId": "get_public_v1_projects_pid_balances_amount",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "Жобаның PID-і. Эндпоинтте көрсетіледі.",
+            "required": true,
+            "schema": {
+              "title": "Pid",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Сұраудың сәтті орындалуы",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBalanceAmountResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Жоба табылмады",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleErrorSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Валидация қатесі",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "publicAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TotalBalanceAmountResponse": {
+        "title": "TotalBalanceAmountResponse",
+        "description": "Жобадағы шоттар балансы туралы ақпарат",
+        "type": "object",
+        "required": ["base", "bonus"],
+        "properties": {
+          "base": {
+            "title": "Дербес шот",
+            "description": "Дербес шоттың балансы",
+            "type": "number"
+          },
+          "bonus": {
+            "title": "Бонустық шот",
+            "description": "Бонустық шоттың балансы",
+            "type": "number"
+          }
+        }
+      },
+      "SingleErrorSchema": {
+        "title": "SingleErrorSchema",
+        "type": "object",
+        "required": ["error"],
+        "properties": {
+          "error": {
+            "title": "Қате",
+            "description": "Қате мәтіні",
+            "type": "string"
+          }
+        }
+      },
+      "HTTPValidationError": {
+        "title": "ValidationError",
+        "type": "object",
+        "required": ["loc", "msg", "type"],
+        "properties": {
+          "loc": {
+            "title": "Қатенің орналасуы",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "msg": {
+            "title": "Қате мәтіні",
+            "type": "string"
+          },
+          "type": {
+            "title": "Қате түрі",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "publicAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

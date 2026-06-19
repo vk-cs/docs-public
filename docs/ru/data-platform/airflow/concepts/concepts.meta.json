@@ -1,9 +1,15 @@
 {
   "title": "Концепции",
-  "shortDescription": "Как устроен сервис Airflow в VK Cloud: функциональные особенности и внутренняя архитектура",
-  "metaDescription": "Как устроен сервис Airflow в VK Cloud: функциональные особенности и внутренняя архитектура",
+  "shortDescription": "Как устроен сервис Airflow в VK Data Platform: функциональные особенности и внутренняя архитектура",
+  "metaDescription": "Как устроен сервис Airflow в VK Data Platform: функциональные особенности и внутренняя архитектура",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
-  "uuid": "f37dff49-7a3d-4e4d-bf3a-9cacd224a2d7"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

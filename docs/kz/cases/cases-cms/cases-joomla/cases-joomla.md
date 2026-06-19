@@ -7,7 +7,7 @@
 ## Дайындық қадамдары
 
 1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account).
-1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#zhelini_zhasau).
+1. Интернетке қолжетімділігі бар және `10.0.0.0/24` ішкі желісі бар `network1` желісін [жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).
 1. [ВМ жасаңыз](/kz/computing/iaas/instructions/vm/vm-create):
 
    - атауы: `Almalinux_9_Joomla`;
@@ -28,7 +28,7 @@
 
    Мысалда жасалған инстанстың ішкі IP-мекенжайы: `10.0.0.7`.
 
-1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#add).
+1. DNS аймағын [жасаңыз](/kz/networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add).
 
    {note:warn}
 
@@ -36,7 +36,7 @@
 
    {/note}
 
-1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#add):
+1. Бөлінген аймақта жазба [жасаңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-zone-add):
 
    - жазба түрі: `A`;
    - атауы: мысалы, `site-joomla.example.vk.cloud`;
@@ -98,11 +98,11 @@
 1. **Тіркелгі параметрлері** қадамында CMS әкімшісінің тіркелгі деректерін көрсетіңіз.
 1. **Деректер қорының параметрлері** қадамында `MySQL-7313` ДҚ параметрлерін көрсетіңіз:
 
-   - **Дерекқор түрі**: **MySQL (PDO)**.
-   - **Хост атауы**: `10.0.0.7`.
-   - **Дерекқор пайдаланушысының аты**: `user`.
-   - **Дерекқор пайдаланушысының құпиясөзі**: `AN0r25e0ae4d626p`.
-   - **Дерекқор атауы**: `MySQL-7313`.
+   - **Тип базы данных**: **MySQL (PDO)**.
+   - **Имя хоста**: `10.0.0.7`.
+   - **Имя пользователя базы данных**: `user`.
+   - **Пароль пользователя базы данных**: `AN0r25e0ae4d626p`.
+   - **Имя базы данных**: `MySQL-7313`.
 
 1. (Қосымша) `/var/www/html/joomla/installation` директориясында файл жасаңыз немесе жойыңыз: файл атауы және оның орналасуы орнату шеберінің қалқымалы терезесінде көрсетіледі.
 
@@ -114,9 +114,9 @@
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Өрістетілген виртуалды ресурстар тарифтелмейді. Егер олар енді қажет болмаса:
+Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Almalinux_9_Joomla` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-- `MySQL-7313` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#bd_instansyn_nemese_onyn_hosttaryn_zhoyu).
-- Қажет болса, `87.239.105.44` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
-- Жасалған `site-joomla.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#resurstyk_zhazbalardy_zhoyu).
+- `Almalinux_9_Joomla` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `MySQL-7313` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
+- Қажет болса, `87.239.105.44` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
+- Жасалған `site-joomla.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Monitoring",
   "icon": "",
   "weight": 3,
-  "uuid": "254f7825-61b5-4f40-9ab7-810a2bb7afd9"
+  "uuid": "254f7825-61b5-4f40-9ab7-810a2bb7afd9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

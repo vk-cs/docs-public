@@ -5,5 +5,10 @@
   "sectionTitle": "DNS",
   "icon": "",
   "weight": 4,
-  "uuid": "ab0b7877-9e40-4406-b0f9-5adf0c57f577"
+  "uuid": "ab0b7877-9e40-4406-b0f9-5adf0c57f577",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

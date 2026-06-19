@@ -5,5 +5,10 @@
   "sectionTitle": "Cinder component events",
   "icon": "",
   "weight": 5,
-  "uuid": "90856031-d88a-45a2-8653-3fbc051fd396"
+  "uuid": "90856031-d88a-45a2-8653-3fbc051fd396",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

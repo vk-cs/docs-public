@@ -3,5 +3,19 @@
   "shortDescription": "Қолдаудың жұмыс істеу қағидалары, байланысу тәсілдері және VIP-клиенттерге арналған ақпарат",
   "metaDescription": "VK Cloud командасы VK Cloud сервистерін пайдаланатын клиенттерге техникалық қолдау көрсетеді",
   "sectionTitle": "Қолдау көрсету шарттары",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

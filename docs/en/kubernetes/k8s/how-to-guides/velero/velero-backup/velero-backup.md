@@ -6,7 +6,7 @@ Using Velero for backups is supported only in [first-generation](/en/kubernetes/
 
 ## Preparatory steps
 
-1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster of the latest version, if not done so already.
+{include(/en/_includes/_create-test-cluster.md)}
 
    Place one or more groups of worker nodes in the `ME1` availability zone. Specify the rest of the cluster parameters at your discretion.
 

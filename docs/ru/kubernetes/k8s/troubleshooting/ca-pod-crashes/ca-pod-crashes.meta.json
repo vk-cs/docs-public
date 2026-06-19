@@ -4,6 +4,11 @@
   "metaDescription": "Что делать, если у агента автоматического масштабирования под в статусе CrashLoopBackOff, из-за чего он не может пройти аутентификацию в OpenStack или API Kubernetes",
   "sectionTitle": "Агент автоматического масштабирования не может пройти аутентификацию в OpenStack или API Kubernetes",
   "icon": "",
-  "weight": 8,
-  "uuid": "f81eca31-f136-487d-905a-c3e644618f7c"
+  "weight": 9,
+  "uuid": "f81eca31-f136-487d-905a-c3e644618f7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

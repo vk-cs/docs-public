@@ -3,5 +3,15 @@
   "sectionTitle": "Дерекқорлар",
   "metaDescription": "VK Cloud дерекқорлары",
   "weight": 5,
-  "icon": ""
+  "icon": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

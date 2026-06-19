@@ -5,5 +5,10 @@
   "sectionTitle": "IAM service events",
   "icon": "",
   "weight": 1,
-  "uuid": "4d26a317-a41d-4c18-910b-c59c98467cb5"
+  "uuid": "4d26a317-a41d-4c18-910b-c59c98467cb5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

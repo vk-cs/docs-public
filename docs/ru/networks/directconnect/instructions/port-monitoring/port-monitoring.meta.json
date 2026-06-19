@@ -5,5 +5,10 @@
   "sectionTitle": "Просмотр состояния портов коммутаторов",
   "icon": "",
   "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "d0d4a459-b775-4e1d-bc6f-a08c2decae7f"
 }

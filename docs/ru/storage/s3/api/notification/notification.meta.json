@@ -1,0 +1,15 @@
+{
+  "title": "Notification",
+  "shortDescription": "Управление конфигурацией уведомлений для бакета",
+  "metaDescription": "Описание методов для получения (GetBucketNotificationConfiguration) и установки (PutBucketNotificationConfiguration) конфигурации уведомлений для бакета в VK Object Storage, а также описание доступных для отслеживание операций",
+  "sectionTitle": "Notification",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

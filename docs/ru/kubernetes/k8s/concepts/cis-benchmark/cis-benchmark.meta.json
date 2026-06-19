@@ -5,5 +5,10 @@
   "sectionTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
   "icon": "",
   "weight": 14,
-  "uuid": "04a4416c-ea3b-4262-bca2-ed4aa0c3d9eb"
+  "uuid": "04a4416c-ea3b-4262-bca2-ed4aa0c3d9eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

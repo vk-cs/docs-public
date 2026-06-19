@@ -1,0 +1,14 @@
+{
+  "title": "Мониторинг в Standalone",
+  "shortDescription": "Сбор и просмотр метрик в Standalone",
+  "metaDescription": "Узнайте, как просматривать метрики работы развернутых экземпляров сервисов в VK Data Platform версии Standalone",
+  "sectionTitle": "Мониторинг в Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

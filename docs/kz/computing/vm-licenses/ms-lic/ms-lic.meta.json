@@ -3,5 +3,10 @@
   "shortDescription": "Microsoft компаниясы өнімдерінің лицензиялары",
   "metaDescription": "VK Cloud виртуалды машиналарында пайдаланылатын Microsoft өнімдерін лицензиялау",
   "sectionTitle": "Microsoft",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

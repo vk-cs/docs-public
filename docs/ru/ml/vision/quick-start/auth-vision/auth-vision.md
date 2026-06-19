@@ -1,4 +1,6 @@
-Для авторизации в платформе VK Cloud используется токен доступа. Он передается в параметре каждого API-запроса.
+# {heading(Авторизация)[id=vision-quick-start-auth-vision]}
+
+Для авторизации в платформе {var(cloud)} используется токен доступа. Он передается в параметре каждого API-запроса.
 
 Есть два способа получения токена доступа:
 
@@ -11,9 +13,9 @@
 
 {/note}
 
-## Получение OAuth-токенов
+## {heading(Получение OAuth-токенов)[id=vision-quick-start-auth-vision-get-oauth-token]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 2. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects).
 3. Перейдите в раздел **AI API** → **Vision API**. Откроется страница с информацией, необходимой для получения токенов:
    - **OAuth endpoint**: адрес для запросов на получение OAuth-токенов;
@@ -42,7 +44,7 @@
 
 {/note}
 
-### Обновление токена доступа
+### {heading(Обновление токена доступа)[id=vision-quick-start-auth-vision-get-oauth-token-update]}
 
 Чтобы сгенерировать новый токен доступа с помощью токена обновления, выполните команду:
 
@@ -56,11 +58,11 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 }'
 ```
 
-Здесь `client_id` и `refresh_token` получены на этапе генерации [OAuth-токенов](../auth-vision#poluchenie_oauth_tokenov).
+Здесь `client_id` и `refresh_token` получены на этапе генерации {linkto(#vision-quick-start-auth-vision-get-oauth-token)[text=OAuth-токенов]}.
 
-## Получение  сервисного токена
+## {heading(Получение сервисного токена)[id=vision-quick-start-auth-vision-get-service-token]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 2. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects).
 3. Перейдите в раздел **AI API** → **Vision API**.
 4. Нажмите **Добавить сервисный токен**.

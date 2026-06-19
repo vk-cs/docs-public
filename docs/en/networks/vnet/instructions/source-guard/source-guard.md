@@ -6,7 +6,7 @@ Examples of IP Source Guard usage can be found in how-to guides for setting up a
 
 {note:warn}
 
-Use allowlists for IP addresses on ports with a self-referencing [security group](/ru/networks/vnet/concepts/traffic-limiting#secgroups) (e.g., `default` group) with caution. If you create an IP allowlist for a port with such a security group, traffic from listed IP addresses will be allowed on all network ports with the same group.
+Use allowlists for IP addresses on ports with a self-referencing [security group](/ru/networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups) (e.g., `default` group) with caution. If you create an IP allowlist for a port with such a security group, traffic from listed IP addresses will be allowed on all network ports with the same group.
 
 {cut(How does this work?)}
 
@@ -90,7 +90,7 @@ For detailed information about supported parameters, use one of the following co
 
 {tab(OpenStack CLI)}
 
-1. Ensure the OpenStack client is [installed](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) and [authenticate](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) in the project.
+1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
 2. Run one of the commands:
 

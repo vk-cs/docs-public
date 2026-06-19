@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Развертывание брокера на окружении",
   "sectionTitle": "Развертывание брокера на окружении",
-  "uuid": "93bf1d4b-a09e-4cbd-9a42-810813bfe2b4"
+  "uuid": "93bf1d4b-a09e-4cbd-9a42-810813bfe2b4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -10,5 +10,19 @@
       "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
     }
   ],
-  "uuid": "4716ff81-a26b-4976-9541-0c71e6be1767"
+  "uuid": "4716ff81-a26b-4976-9541-0c71e6be1767",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

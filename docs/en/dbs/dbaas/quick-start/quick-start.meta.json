@@ -1,9 +1,23 @@
 {
-    "title": "Quick start",
-      "shortDescription": "Getting started with the service",
-      "metaDescription": "VK Cloud cloud databases: getting started with the service.",
-    "sectionTitle": "Quick start",
-    "icon": "",
-    "weight": 1,
-    "uuid": "0a55d18e-5867-4570-990e-827062e43dd1"
+  "title": "Quick start",
+  "shortDescription": "Getting started with the service",
+  "metaDescription": "VK Cloud cloud databases: getting started with the service.",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "0a55d18e-5867-4570-990e-827062e43dd1",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

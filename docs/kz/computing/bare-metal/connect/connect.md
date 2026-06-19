@@ -1,0 +1,1 @@
+# {heading(Қосылу)[id=bare-metal-connect]}

@@ -1,0 +1,1 @@
+# {heading(Подключение к удаленной инфраструктуре)[id=vnet-onpremise-connect]}

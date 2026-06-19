@@ -4,5 +4,19 @@
   "metaDescription": "VK Cloud-тағы Cloud Iceberg Metastore: сервис данасын жасау, дананы және оның компоненттерін басқару",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

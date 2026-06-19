@@ -1,18 +1,20 @@
+# {heading(Развертывание Grafana)[id=marketplace-grafana-start]}
+
 Вы можете визуализировать данные мониторинга ресурсов с помощью сервиса [Grafana](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info).
 
-Инструкция поможет развернуть сервис Grafana 10 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
+Инструкция поможет развернуть сервис Grafana 10 на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 
-Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
+Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/vk/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
 
 Чтобы развернуть сервис Grafana в проекте:
 
-1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../instructions/pr-instance-add) сервис Grafana:
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
+1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть, если она не была создана ранее.
+1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Разверните]} сервис Grafana:
 
    - **Как будет размещена Grafana**: укажите `external` тип доступа к Grafana, чтобы иметь доступ к сервису через внешний IP-адрес.
-   - **Резервное копирование**: выберите вариант `no`, чтобы не сохранять данные в объектное хранилище [VK Object Storage](/ru/storage/s3). При варианте `yes` будут скопированы данные за последние 7 дней.
+   - **Резервное копирование**: выберите вариант `no`, чтобы не сохранять данные в объектное хранилище {linkto(../../../../storage/s3/concepts/about#s3-concepts-about)[text=VK Object Storage]}. При варианте `yes` будут скопированы данные за последние 7 дней.
    - **Сеть**: выберите ранее созданные сеть и подсеть.
 
    Остальные параметры укажите на свое усмотрение.
@@ -26,7 +28,5 @@
 1. (Опционально) Создайте дашборд согласно инструкции из [официальной документации](https://grafana.com/docs/grafana/v10.0/getting-started/build-first-dashboard).
 
 {note:info}
-
 Для расширенной конфигурации сервиса используйте официальную инструкцию [Grafana](https://grafana.com/docs/grafana/v10.0).
-
 {/note}

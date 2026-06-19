@@ -1,17 +1,19 @@
-[Vertical Pod Autoscaler](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#vpa) (VPA) — инструмент для автоматической настройки ресурсов (CPU и RAM) для контейнеров Kubernetes. Чтобы изучить его работу в полном объеме, используйте его с компонентом Updater в режиме `Recreate`. В этом режиме VPA:
+# {heading(Использование Vertical Pod Autoscaler)[id=k8s-vertical-pod-autoscaler]}
 
-1. Создаст рекомендации по [запросу ресурсов](/ru/kubernetes/k8s/reference/resource-limiting) для уже существующих подов.
+{linkto(../../concepts/addons-and-settings/addons#k8s-addons-vpa)[text=Vertical Pod Autoscaler]} (VPA) — инструмент для автоматической настройки ресурсов (CPU и RAM) для контейнеров Kubernetes. Чтобы изучить его работу в полном объеме, используйте его с компонентом Updater в режиме `Recreate`. В этом режиме VPA:
+
+1. Создаст рекомендации по {linkto(../../reference/resource-limiting#k8s-resource-limiting)[text=запросу ресурсов]} для уже существующих подов.
 1. Удалит эти поды и пересоздаст их с рекомендованными значениями.
 
-## {heading(Подготовительные шаги)[id=prepare]}
+## {heading(Подготовительные шаги)[id=k8s-vertical-pod-autoscaler-prepare]}
 
-1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
-1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
-1. [Установите аддон VPA](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-vpa), если это еще не сделано.
-1. (Опционально) [Установите аддон Kube Prometheus Stack](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring), если это еще не сделано. Вы сможете использовать его для просмотра дашбордов VPA.
+{include(/ru/_includes/_create-test-cluster.md)}
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-vpa#k8s-install-advanced-vpa)[text=Установите аддон VPA]}, если это еще не сделано.
+1. (Опционально) {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=Установите аддон Kube Prometheus Stack]}, если это еще не сделано. Вы сможете использовать его для просмотра дашбордов VPA.
 
-   Во время установки аддона [отредактируйте](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring#redaktirovanie_koda_nastroyki_addona_pri_ustanovke) его код, добавив метрики для конфигурации дашбордов VPA в компонент `kube-state-metrics`:
+   Во время установки аддона {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring-edit-code)[text=отредактируйте]} его код, добавив метрики для конфигурации дашбордов VPA в компонент `kube-state-metrics`:
 
    {cut(Метрики для конфигурации дашбордов VPA)}
    
@@ -152,7 +154,7 @@
    ```
    {/cut}
 
-## {heading(1. Создайте контроллер рабочей нагрузки Deployment)[id=create_deployment]}
+## {heading(1. Создайте контроллер рабочей нагрузки Deployment)[id=k8s-vertical-pod-autoscaler-create-deployment]}
 
 1. Создайте файл манифеста для контроллера [рабочей нагрузки](https://kubernetes.io/docs/concepts/workloads/) типа `Deployment` для приложения `nginx`: 
 
@@ -186,7 +188,7 @@
              cpu: 100m
              memory: 100Mi
    ```
-   Здесь в блоке `resources` для подов [запрашивается](/ru/kubernetes/k8s/reference/resource-limiting) 50 мебибайт RAM и 50m CPU и устанавливается ограничение в 100 мебибайт RAM и 100m CPU. 
+   Здесь в блоке `resources` для подов {linkto(../../reference/resource-limiting#k8s-resource-limiting)[text=запрашивается]} 50 мебибайт RAM и 50m CPU и устанавливается ограничение в 100 мебибайт RAM и 100m CPU. 
 
 1. Укажите для контроллера `Deployment` тип `LoadBalancer`:
 
@@ -207,7 +209,7 @@
    nginx    LoadBalancer     ...          100.70.146.28           ...
    ```
 
-## {heading(2. Создайте объект аддона VPA с компонентом Updater в режиме Recreate и запустите тестирование)[id=create_vpa]}
+## {heading(2. Создайте объект аддона VPA с компонентом Updater в режиме Recreate и запустите тестирование)[id=k8s-vertical-pod-autoscaler-create-vpa]}
 
 1. Создайте файл манифеста для аддона VPA с компонентом Updater в режиме работы `Recreate` (`updateMode: "Recreate"`):
 
@@ -241,7 +243,7 @@
    hey -z 300s -c 1000 http://100.70.146.28
    ```
    
-## {heading(3. Просмотрите результаты)[id=create_vpa]}
+## {heading(3. Просмотрите результаты)[id=k8s-vertical-pod-autoscaler-results]}
 
 1. Просмотрите рекомендации от VPA с помощью команды:
 
@@ -378,12 +380,9 @@
 
 1. (Опционально) Просмотрите результаты работы аддона в дашборде Grafana:
 
-   1. [Подключитесь](/ru/kubernetes/k8s/connect/addons-ui#web-ui) к веб-интерфейсу Grafana, входящему в состав аддона Kube Prometheus Stack. 
+   1. {linkto(../../connect/addons-ui#k8s-addons-ui-web-ui)[text=Подключитесь]} к веб-интерфейсу Grafana, входящему в состав аддона Kube Prometheus Stack. 
    1. Просмотрите дашборды в разделе **Home → Dashboards → General → VPA Recommendations**. 
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-vertical-pod-autoscaler-delete]}
 
-Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-- [остановите](/ru/kubernetes/k8s/instructions/manage-cluster#stop) его, чтобы воспользоваться им позже;
-- [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}

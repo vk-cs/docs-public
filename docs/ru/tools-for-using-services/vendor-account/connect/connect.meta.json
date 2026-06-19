@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение к кабинету поставщика",
   "icon": "",
   "weight": 2,
-  "uuid": "7a143ed5-d9df-4d37-827a-5966a45e0e15"
+  "uuid": "7a143ed5-d9df-4d37-827a-5966a45e0e15",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

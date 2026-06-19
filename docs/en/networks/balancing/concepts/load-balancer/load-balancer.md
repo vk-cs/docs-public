@@ -57,9 +57,7 @@ This balancer is created automatically to power services and is applied:
 - In [container service](/en/kubernetes/k8s) for each Kubernetes cluster to provide access to the Kubernetes API.
 - In [database service](/en/dbs/dbaas) for database instances in a cluster configuration to load-balance between instance nodes. This applies to instances:
   - MySQL;
-  - PostgreSQL;
-  - Postgres Pro Enterprise;
-  - Postgres Pro Enterprise 1C.
+  - PostgreSQL.
 
 {/tab}
 

@@ -3,6 +3,19 @@
   "decorator": "group-tiles",
   "hidden": true,
   "sectionTitle": "",
-  "metaTitle": "VK Cloud (On-Premise) | Документация VK Cloud",
-  "metaDescription": "Документация VK Cloud для поставки on-premise"
+  "metaDescription": "Документация VK Cloud для поставки on-premise",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

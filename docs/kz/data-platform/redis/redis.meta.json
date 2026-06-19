@@ -1,0 +1,14 @@
+{
+  "title": "Redis",
+  "shortDescription": "Деректерді кілт/мән жұптары түрінде сақтауға арналған NoSQL түріндегі СУБД",
+  "metaDescription": "VK Data Platform инфрақұрылымындағы жедел жадта деректерді кілт/мән жұптары түрінде сақтауға арналған Redis сервисі",
+  "sectionTitle": "Redis",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 14,
+  "uuid": ""
+}

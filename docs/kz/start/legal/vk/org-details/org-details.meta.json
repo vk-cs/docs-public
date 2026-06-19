@@ -1,10 +1,24 @@
 {
-  "title": "Деректемелер",
+  "title": "Реквизиты",
   "shortDescription": "",
-  "metaDescription": "Шарттар жасасу және шоттар ұсыну үшін деректемелер. ООО «ВК» туралы мәліметтер, банктік деректемелер және байланыс ақпараты.",
-  "sectionTitle": "Деректемелер",
+  "metaDescription": "Реквизиты для заключения договоров и выставления счетов Полное наименование\nОбщество с ограниченной ответственностью «ВК» ОГРН\n1027739850962 от 20.12.",
+  "sectionTitle": "Реквизиты",
   "icon": "",
   "disableGithub": true,
   "disableDateInformation": true,
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

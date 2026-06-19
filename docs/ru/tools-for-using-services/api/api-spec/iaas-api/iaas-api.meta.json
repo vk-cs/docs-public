@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Servers",
   "icon": "",
   "weight": 0,
-  "uuid": "a880238a-2c53-40e8-9a2c-eaada29cebae"
+  "uuid": "a880238a-2c53-40e8-9a2c-eaada29cebae",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

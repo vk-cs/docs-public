@@ -5,5 +5,12 @@
   "sectionTitle": "Не создается ВМ",
   "icon": "",
   "weight": 4,
-  "uuid": "483d6070-1a2e-4f96-affe-d47cbb60154a"
+  "uuid": "483d6070-1a2e-4f96-affe-d47cbb60154a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Logged events",
   "icon": "",
   "weight": 3,
-  "uuid": "7da44a97-b08f-4bce-a8bd-188806e6576c"
+  "uuid": "7da44a97-b08f-4bce-a8bd-188806e6576c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

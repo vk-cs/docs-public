@@ -5,5 +5,10 @@
   "sectionTitle": "Сделки и заявки",
   "icon": "",
   "weight": 4,
-  "uuid": "89d808be-ae52-4d17-b427-d03e9af32271"
+  "uuid": "89d808be-ae52-4d17-b427-d03e9af32271",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

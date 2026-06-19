@@ -1,9 +1,23 @@
 {
-    "title": "Connecting to Docker Registry",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Connecting to Docker Registry",
-    "icon": "",
-    "weight": 4,
-    "uuid": "816df8dd-1bcb-424d-bf87-f451d47d4a1d"
+  "title": "Connecting to Docker Registry",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Connecting to Docker Registry",
+  "icon": "",
+  "weight": 4,
+  "uuid": "816df8dd-1bcb-424d-bf87-f451d47d4a1d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

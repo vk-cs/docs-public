@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud платформасының Cloud Backup сервисі арқылы резервтік көшіруді баптаудың үздік тәжірибелері. Сындарлы және сындарлы емес деректерді резервтік көшіру бойынша ұсынымдар.",
   "sectionTitle": "Резервтік көшіруді баптаудың үздік тәжірибелері",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

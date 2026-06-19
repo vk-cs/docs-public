@@ -5,5 +5,12 @@
   "sectionTitle": "Не получается удалить группу безопасности",
   "icon": "",
   "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
   "uuid": "4f544efd-2c26-4c06-867d-e83c29b888af"
 }

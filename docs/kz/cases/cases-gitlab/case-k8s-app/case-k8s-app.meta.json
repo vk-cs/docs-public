@@ -4,5 +4,19 @@
   "metaDescription": "Бұл мақалада қосымшаны Kubernetes кластеріне автоматты түрде жайып орналастыруды қалай баптау керектігін қарастырамыз. Бұған дейін: Docker-ды орнатып, баптаңыз. Docker-ды орнатып, бапта",
   "sectionTitle": "Қосымшаны Kubernetes кластеріне автоматты түрде жайып орналастыруды баптау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

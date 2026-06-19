@@ -72,7 +72,7 @@
 
    const vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
 
-   const defaultRegion = "us-east-1"
+   const defaultRegion = "ru-msk"
 
    func main() {
 	   // Создание сессии
@@ -97,10 +97,17 @@
    }
    ```
 
-Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-- `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-- `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
 
 Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
 
@@ -217,7 +224,7 @@
 
    const (
 	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
-	   defaultRegion         = "us-east-1"
+	   defaultRegion         = "ru-msk"
    )
 
    func main() {
@@ -245,10 +252,17 @@
 
    ```
 
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
 
    Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
@@ -454,10 +468,17 @@
 	   fmt.Printf("%s", request.URL)
    }
    ```
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
 
 {/tab}
 
@@ -575,7 +596,7 @@
 
    const (
 	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
-	   defaultRegion         = "us-east-1"
+	   defaultRegion         = "ru-msk"
    )
 
    func main() {
@@ -604,10 +625,17 @@
    }
    ```
 
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
 
    Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
 
@@ -775,7 +803,7 @@
 
    const (
 	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
-	   defaultRegion = "us-east-1"
+	   defaultRegion = "ru-msk"
    )
 
    func main() {
@@ -821,10 +849,17 @@
    }
 
    ```
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
 
    Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
 

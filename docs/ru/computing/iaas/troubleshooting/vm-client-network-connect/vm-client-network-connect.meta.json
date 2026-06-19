@@ -5,5 +5,10 @@
   "sectionTitle": "ВМ не видит внешнюю сеть",
   "icon": "",
   "weight": 2,
-  "uuid": "218b27cb-65ec-4887-b005-102702730d7c"
+  "uuid": "218b27cb-65ec-4887-b005-102702730d7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "spark-submit скриптімен жұмыс істеу кезіндегі қате",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Spark сервисінде spark-submit скриптімен жұмыс істеу кезінде неге қате туындайтынын және оны қалай түзетуге болатынын біліңіз",
+  "sectionTitle": "spark-submit скриптімен жұмыс істеу кезіндегі қате",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

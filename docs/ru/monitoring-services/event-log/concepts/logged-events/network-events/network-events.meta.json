@@ -5,5 +5,10 @@
   "sectionTitle": "События компонентов Neutron и Sprut",
   "icon": "",
   "weight": 3,
-  "uuid": "842a898d-d8f7-4a75-8ffd-2f0d924bf3ea"
+  "uuid": "842a898d-d8f7-4a75-8ffd-2f0d924bf3ea",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

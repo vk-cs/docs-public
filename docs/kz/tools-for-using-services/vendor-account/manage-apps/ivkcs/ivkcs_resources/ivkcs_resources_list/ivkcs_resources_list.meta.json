@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Ресурстар тізімі",
   "sectionTitle": "Ресурстар тізімі",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

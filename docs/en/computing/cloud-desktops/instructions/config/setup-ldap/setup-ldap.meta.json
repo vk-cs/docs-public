@@ -1,9 +1,14 @@
 {
-    "title": "Setting up a user directory connection",
-      "shortDescription": "Configuring and testing an AD or LDAP user directory connection",
-      "metaDescription": "Configuring and testing an AD or LDAP user directory connection.",
-    "sectionTitle": "Setting up a user directory connection",
-    "icon": "",
-    "weight": 1,
-    "uuid": "34123a87-0485-4e92-9770-ced91f20719d"
+  "title": "Setting up a user directory connection",
+  "shortDescription": "Configuring and testing an AD or LDAP user directory connection",
+  "metaDescription": "Configuring and testing an AD or LDAP user directory connection.",
+  "sectionTitle": "Setting up a user directory connection",
+  "icon": "",
+  "weight": 1,
+  "uuid": "34123a87-0485-4e92-9770-ced91f20719d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

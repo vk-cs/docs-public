@@ -1,21 +1,23 @@
+# {heading(Создание VPN соединения)[id=terraform-vpn]}
+
 В статье приведен пример создания и настройки VPN-соединения при помощи Terraform.
 
 Пройдя шаги инструкции вы:
 
-1. [Создадите](#create-file) файл конфигурации.
-1. [Добавите](#add-net) ресурсы и источники данных для виртуальной сети.
-1. [Добавите](#add-vpn) ресурс для VPN-соединения.
-1. [Создадите](#create-connection) добавленные ресурсы.
+1. {linkto(#terraform-vpn-create-file)[text=Создадите]} файл конфигурации.
+1. {linkto(#terraform-vpn-add-net)[text=Добавите]} ресурсы и источники данных для виртуальной сети.
+1. {linkto(#terraform-vpn-add-vpn)[text=Добавите]} ресурс для VPN-соединения.
+1. {linkto(#terraform-vpn-create-connection)[text=Создадите]} добавленные ресурсы.
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
 ## Подготовительные шаги
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания сетей. В разных регионах могут действовать разные квоты.
+1. Проверьте {linkto(/ru/tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(/ru/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания сетей. В разных регионах могут действовать разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 1. Поместите файл с настройками провайдера в директорию, из которой вы будете работать с проектом, и из этой директории выполните команду:
 
     ```console
@@ -23,13 +25,13 @@
     ```
     Дождитесь завершения инициализации Terraform.
 
-## {heading({counter(vpn)}. Создайте файл конфигурации)[id=create-file]}
+## {heading({counter(terraform-vpn)}. Создайте файл конфигурации)[id=terraform-vpn-create-file]}
 
 В директории, из которой вы будете работать с проектом, создайте файл `vpn.tf`. В этом файле будет описана конфигурация создаваемого подключения.
 
-## {heading({counter(vpn)}. Добавьте виртуальную сеть)[id=add-net]}
+## {heading({counter(terraform-vpn)}. Добавьте виртуальную сеть)[id=terraform-vpn-add-net]}
 
-1. В зависимости от используемой [SDN](/ru/networks/vnet/concepts/sdn) скопируйте в файл `vpn.tf` содержимое одной из вкладок ниже.
+1. В зависимости от используемой {linkto(/ru/networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]} скопируйте в файл `vpn.tf` содержимое одной из вкладок ниже.
 
     {tabs}
 
@@ -131,9 +133,9 @@
 
 1. Отредактируйте значения настроек для вашего подключения.
 
-Подробнее о создании виртуальных сетей с помощью Terraform — в практическом руководстве [Создание сетей](/ru/tools-for-using-services/terraform/how-to-guides/vnet/network).
+Подробнее о создании виртуальных сетей с помощью Terraform — в практическом руководстве {linkto(/ru/tools-for-using-services/terraform/how-to-guides/vnet/network#terraform-network)[text=Создание сетей]}.
 
-## {heading({counter(vpn)}. Добавьте VPN-соединение)[id=add-vpn]}
+## {heading({counter(terraform-vpn)}. Добавьте VPN-соединение)[id=terraform-vpn-add-vpn]}
 
 1. Скопируйте в файл `vpn.tf` настройки VPN-соединения:
 
@@ -181,7 +183,7 @@
     Для добавления VPN-соединения используются следующие ресурсы:
 
     - [vkcs_vpnaas_service](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_service.md) — управляет сервисом VPN внутри VK Cloud. Включает в себя параметр `router_id` — ID маршрутизатора. Изменив значение этого параметра, вы создадите новый сервис. Если необходимо использовать существующий маршрутизатор, укажите его ID (`data.vkcs_networking_router.router.id` или `data.vkcs_dc_router.router.id`), используя источник данных.
-      
+
       {cut(Пример)}
 
       ```hcl
@@ -221,7 +223,7 @@
 
 1. Отредактируйте значения настроек для вашего подключения.
 
-## {heading({counter(vpn)}. Создайте VPN-соединение)[id=create-connection]}
+## {heading({counter(terraform-vpn)}. Создайте VPN-соединение)[id=terraform-vpn-create-connection]}
 
 1. Перейдите в директорию с файлом `vpn.tf`.
 1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
@@ -240,7 +242,7 @@
 
 1. Дождитесь завершения операции.  
 
-## {heading({counter(vpn)}. Проверьте применение конфигурации)[id=check]}
+## {heading({counter(terraform-vpn)}. Проверьте применение конфигурации)[id=terraform-vpn-check]}
 
 Убедитесь, что сеть и инфраструктура были успешно созданы:
 

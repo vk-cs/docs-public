@@ -1,13 +1,15 @@
+# {heading(Архитектура сервиса)[id=mlspark-concepts-architecture]}
+
 ![Архитектура сервиса](./assets/components_scheme.png)
 
 Сервис Cloud Spark включает в себя следующие компоненты:
 
-- [кластер Cloud Spark](#cluster_spark);
-- [виртуальная машина с Docker Registry](#vm_docker_registry);
-- [VK Object Storage](#object_storage);
-- [сервис Cloud ML Platform](#service_ml_platform).
+- [кластер Cloud Spark](#mlspark-concepts-architecture-cluster_spark);
+- [виртуальная машина с Docker Registry](#mlspark-concepts-architecture-vm_docker_registry);
+- [VK Object Storage](#mlspark-concepts-architecture-object_storage);
+- [сервис Cloud ML Platform](#mlspark-concepts-architecture-service_ml_platform).
 
-## {heading(Кластер Cloud Spark)[id=cluster_spark]}
+## {heading(Кластер Cloud Spark)[id=mlspark-concepts-architecture-cluster_spark]}
 
 Кластер Cloud Spark — это кластер K8s, развернутый на базе сервиса Cloud Containers. В состав кластера входят:
 
@@ -18,19 +20,19 @@
 - Authorization — сервис авторизации для Spark History Server.
 - API server — сервер, содержащий API для взаимодействия с компонентами Spark.
 
-## {heading(ВМ с Docker Registry)[id=vm_docker_registry]}
+## {heading(ВМ с Docker Registry)[id=mlspark-concepts-architecture-vm_docker_registry]}
 
 В [Docker Registry](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) хранится используемый по умолчанию Docker-образ контейнера, который включает библиотеки, зависимости и настройки для развертывания кластера Cloud Spark и запуска на нем пользовательских приложений.
 
 При необходимости пользователь может загрузить в Docker Registry собственные Docker-образы и затем использовать их в сервисе.
 
-## {heading(VK Object Storage)[id=object_storage]}
+## {heading(VK Object Storage)[id=mlspark-concepts-architecture-object_storage]}
 
-[VK Object Storage](/ru/storage/s3) — объектное хранилище платформы VK Cloud с поддержкой S3. При развертывании сервиса Cloud Spark автоматически создается [бакет](/ru/storage/s3/concepts/about#bucket), интегрированный с сервисом. Он используется по умолчанию для хранения логов для Spark History Server, для загрузки зависимостей, файлов с кодом пользовательских приложений и других артефактов, необходимых для выполнения заданий пользователя.
+[VK Object Storage](/ru/storage/s3) — объектное хранилище платформы {var(cloud)} с поддержкой S3. При развертывании сервиса Cloud Spark автоматически создается [бакет](/ru/storage/s3/concepts/about#s3-concepts-about-bucket), интегрированный с сервисом. Он используется по умолчанию для хранения логов для Spark History Server, для загрузки зависимостей, файлов с кодом пользовательских приложений и других артефактов, необходимых для выполнения заданий пользователя.
 
 К сервису Cloud Spark также можно подключить дополнительные бакеты.
 
-## {heading(Сервис Cloud ML Platform)[id=service_ml_platform]}
+## {heading(Сервис Cloud ML Platform)[id=mlspark-concepts-architecture-service_ml_platform]}
 
 Сервис Cloud ML Platform включает [встроенную Python-библиотеку](../../ml-platform-library), которая предоставляет методы для работы с кластером Cloud Spark. Использование библиотеки позволяет:
 

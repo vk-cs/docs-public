@@ -5,5 +5,10 @@
   "sectionTitle": "Redis",
   "icon": "",
   "weight": 5,
-  "uuid": "48bf7345-17dd-4246-b945-eeb2bbb70555"
+  "uuid": "48bf7345-17dd-4246-b945-eeb2bbb70555",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

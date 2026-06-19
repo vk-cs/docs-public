@@ -1,9 +1,14 @@
 {
-    "title": "Ports",
-      "shortDescription": "Basic operations with OpenStack ports",
-      "metaDescription": "",
-    "sectionTitle": "Ports",
-    "icon": "",
-    "weight": 2,
-    "uuid": "b372c224-4fe7-45ab-bd5d-20f0bc384c11"
+  "title": "Ports",
+  "shortDescription": "Basic operations with OpenStack ports",
+  "metaDescription": "",
+  "sectionTitle": "Ports",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b372c224-4fe7-45ab-bd5d-20f0bc384c11",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,9 +5,12 @@
 .npmrc
 .npm
 .gitkeep
+.pdf
+.fodt
 
 /public/_docs
 /docker
+/result
 
 node_modules
 package.json

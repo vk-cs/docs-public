@@ -1,0 +1,14 @@
+{
+  "title": "Redis",
+  "shortDescription": "СУБД NoSQL-типа для хранения данных в виде пар ключ/значение",
+  "metaDescription": "Сервис Redis для хранения данных в оперативной памяти в виде пар ключ/значение в инфраструктуре VK Data Platform",
+  "sectionTitle": "Redis",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 16,
+  "uuid": ""
+}

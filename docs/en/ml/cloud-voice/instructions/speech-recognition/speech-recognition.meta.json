@@ -1,9 +1,23 @@
 {
-    "title": "Speech recognition",
-      "shortDescription": "Methods for recognizing audio files and streaming audio",
-      "metaDescription": "",
-    "sectionTitle": "Speech recognition",
-    "icon": "",
-    "weight": 3,
-    "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c"
+  "title": "Speech recognition",
+  "shortDescription": "Methods for recognizing audio files and streaming audio",
+  "metaDescription": "",
+  "sectionTitle": "Speech recognition",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

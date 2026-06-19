@@ -4,5 +4,15 @@
   "metaDescription": "MySQL — бұл нақты уақыт режимінде құрылымдалған деректерге аналитикалық сұрауларды орындауға мүмкіндік беретін ашық кодты бағандық аналитикалық ДҚБЖ",
   "sectionTitle": "MySQL",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Управление ресурсами GPU в сервисе Cloud Containers",
   "icon": "",
   "weight": 1,
-  "uuid": "e84495fd-e3b6-4038-ab05-8f1f92bf7928"
+  "uuid": "e84495fd-e3b6-4038-ab05-8f1f92bf7928",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

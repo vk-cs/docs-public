@@ -1,29 +1,31 @@
+# {heading(Управление секретом)[id=sm-manage-secret]}
+
 {note:info}
 
 Для получения доступа к сервису обратитесь в [техническую поддержку](/ru/contacts).
 
 {/note}
 
-## {heading(Просмотр списка секретов)[id=list]}
+## {heading(Просмотр списка секретов)[id=sm-manage-view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**. Откроется страница со списком всех секретов, созданных в проекте.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Создание секрета)[id=create]}
+## {heading(Создание секрета)[id=sm-manage-create]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности** → **Менеджер секретов**.
 1. Нажмите кнопку **Создать**.
 1. Заполните поле **Название**.
@@ -78,13 +80,13 @@
 
 {/tabs}
 
-## {heading(Просмотр метаданных)[id=view-meta]}
+## {heading(Просмотр метаданных)[id=sm-manage-view-meta]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**.
 1. В списке секретов нажмите на имя нужного секрета. Откроется карточка секрета на вкладке **Общая информация**.
 
@@ -92,21 +94,21 @@
 
 {/tabs}
 
-## {heading(Редактирование метаданных)[id=edit-metadata]}
+## {heading(Редактирование метаданных)[id=sm-manage-edit-metadata]}
 
-Отредактировать можно только метаданные секрета. Чтобы обновить содержание секрета, [создайте](/ru/security/secret-manager/instructions/versions#create) новую версию.
+Отредактировать можно только метаданные секрета. Чтобы обновить содержание секрета, {linkto(../versions#sm-versions-create)[text=создайте]} новую версию.
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**.
 1. Откройте окно редактирования одним из способов.
 
     - Из списка секретов:
 
-        1. В списке секретов нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного секрета.
+        1. В списке секретов нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного секрета.
         1. Выберите пункт **Редактировать**.
 
     - На странице секрета:
@@ -121,25 +123,25 @@
 
 {/tabs}
 
-## {heading(Удаление секрета)[id=delete]}
+## {heading(Удаление секрета)[id=sm-manage-delete]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**.
 1. Удалите секрет одним из способов.
 
     - Из списка секретов:
 
-        1. В списке секретов нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного секрета.
+        1. В списке секретов нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного секрета.
         1. Выберите пункт **Удалить** и подтвердите действие.
 
     - На странице секрета:
 
         1. В списке секретов нажмите на имя нужного секрета.
-        1. На странице секрета нажмите ![ ](/ru/assets/more-icon.svg "inline").
+        1. На странице секрета нажмите ![ ](../../../../assets/more-icon.svg "inline").
         1. Выберите пункт **Удалить** и подтвердите действие.
 
 {/tab}

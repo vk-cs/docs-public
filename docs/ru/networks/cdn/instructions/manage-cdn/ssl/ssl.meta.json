@@ -5,5 +5,10 @@
     "sectionTitle": "Использование SSL-сертификата",
     "icon": "",
     "weight": 3,
-    "uuid": "7080314e-24bf-4277-ad21-7be0e3d7bb8b"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "7080314e-24bf-4277-ad21-7be0e3d7bb8b"
 }

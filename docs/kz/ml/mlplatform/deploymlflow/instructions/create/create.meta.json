@@ -4,5 +4,10 @@
   "metaDescription": "Жаңа MLflow Deploy инстансын қалай жасауға болады",
   "sectionTitle": "MLflow Deploy инстансын жасау",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,10 +1,15 @@
 {
   "title": "Cloud Flink",
   "shortDescription": "Потоковая обработка и передача данных из источников в целевые системы",
-  "metaDescription": "Сервис для создания и управления кластерами Apache Flink в инфраструктуре VK Cloud",
+  "metaDescription": "Сервис для создания и управления кластерами Apache Flink в инфраструктуре VK Data Platform",
   "sectionTitle": "Cloud Flink",
   "icon": "",
   "weight": 7,
   "isBeta": true,
-  "uuid": "ff5faa92-156a-4d08-8c73-398379942248"
+  "uuid": "ff5faa92-156a-4d08-8c73-398379942248",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Использование TLS-протокола для подключения к PostgreSQL",
   "icon": "",
   "weight": 6,
-  "uuid": "9799a1b4-4704-43c6-b031-cb7faf1393cc"
+  "uuid": "9799a1b4-4704-43c6-b031-cb7faf1393cc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

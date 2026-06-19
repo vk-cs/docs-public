@@ -1,8 +1,18 @@
 {
   "title": "kubectl көмегімен кластерге қосылу",
   "shortDescription": "",
-  "metaDescription": "kubectl утилитасы Kubernetes кластерін пәрмен жолынан басқару бойынша барлық операциялар спектрін орындауғал мүмкіндік береді. Kubernetes кластеріне kubectl утилитасының көмегімен қалай қосылуғал болады",
+  "metaDescription": "kubectl утилитасы Kubernetes кластерін пәрмен жолынан басқару бойынша барлық операциялар спектрін орындауға мүмкіндік береді. Kubernetes кластеріне kubectl утилитасының көмегімен қалай қосылуға болады",
   "sectionTitle": "kubectl көмегімен кластерге қосылу",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

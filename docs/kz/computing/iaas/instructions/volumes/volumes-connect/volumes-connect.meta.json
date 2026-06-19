@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud жүйесіндегі виртуалды машиналарға дискіні қосу және ажырату. ВМ-ге қосымша диск қосу және дискіні қауіпсіз ажырату.",
   "sectionTitle": "Дискіні қосу және ажырату",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -2,7 +2,7 @@
 
 ## 1. Preparatory steps
 
-1. [Create](../../instructions/create-cluster) a Kubernetes cluster of the most current version.
+{include(/en/_includes/_create-test-cluster.md)}
 
    When creating the cluster:
 
@@ -794,7 +794,9 @@ To connect an NFS PV using a static PVC:
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+{include(/en/_includes/_remove-k8s-resources.md)} persistent volumes, delete them:
+
+1. Delete the resources described in the manifests:
 
    {tabs}
 
@@ -827,13 +829,10 @@ To connect an NFS PV using a static PVC:
 
 1. Remove unused storage:
 
-   1. If the disk used by the `tea` application is no longer needed — delete it.
+   1. The disk used by the `tea` application.
 
-   1. If the NFS repository used by the `milkshake` application is no longer needed — delete it.
+   1. The NFS repository used by the `milkshake` application.
 
    All other Cinder stores created with dynamic PVCs will be deleted automatically.
 
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [stop](../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

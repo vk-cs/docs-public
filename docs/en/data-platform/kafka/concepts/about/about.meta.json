@@ -1,9 +1,23 @@
 {
-    "title": "About the service",
-      "shortDescription": "Information about the Cloud Kafka service",
-      "metaDescription": "Cloud Kafka in VK Cloud: information about the service",
-    "sectionTitle": "About the service",
-    "icon": "",
-    "weight": 1,
-    "uuid": "1d4b25a0-8344-42e2-9d40-50b52363da87"
+  "title": "About the service",
+  "shortDescription": "Information about the Cloud Kafka service",
+  "metaDescription": "Cloud Kafka in VK Cloud: information about the service",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "1d4b25a0-8344-42e2-9d40-50b52363da87",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

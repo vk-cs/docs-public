@@ -22,8 +22,8 @@
 
 {/note}
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `domain`
@@ -32,16 +32,16 @@
 
 Значение должно быть `xaas.msk.vkcs.cloud`
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `ip`
 |
 IP-адрес хоста
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 

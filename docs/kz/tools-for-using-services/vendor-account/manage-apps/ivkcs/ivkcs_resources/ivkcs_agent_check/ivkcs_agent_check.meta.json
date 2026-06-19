@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_agent_check ресурсы",
   "sectionTitle": "ivkcs_agent_check ресурсы",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

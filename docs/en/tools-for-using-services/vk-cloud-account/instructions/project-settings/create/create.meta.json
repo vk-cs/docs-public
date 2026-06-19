@@ -1,9 +1,14 @@
 {
-    "title": "Creating a project",
-      "shortDescription": "Creating a project on the VK Cloud platform",
-      "metaDescription": "Description of the procedure for creating a project on the VK Cloud platform.",
-    "sectionTitle": "Creating a project",
-    "icon": "",
-    "weight": 1,
-    "uuid": "d3d9ad57-45b1-4c74-a934-31e60222594d"
+  "title": "Creating a project",
+  "shortDescription": "Creating a project on the VK Cloud platform",
+  "metaDescription": "Description of the procedure for creating a project on the VK Cloud platform.",
+  "sectionTitle": "Creating a project",
+  "icon": "",
+  "weight": 1,
+  "uuid": "d3d9ad57-45b1-4c74-a934-31e60222594d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

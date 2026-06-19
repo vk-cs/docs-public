@@ -4,5 +4,15 @@
   "metaDescription": "ClickHouse сипаттамасы — бұл нақты уақыт режимінде құрылымдалған деректерге аналитикалық сұрауларды орындауға мүмкіндік беретін ашық кодты бағандық аналитикалық ДҚБЖ",
   "sectionTitle": "ClickHouse",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

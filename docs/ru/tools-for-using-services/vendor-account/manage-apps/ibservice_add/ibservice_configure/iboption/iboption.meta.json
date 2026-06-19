@@ -4,5 +4,10 @@
   "metaDescription": "YAML-файл тарифной опции",
   "sectionTitle": "YAML-файл тарифной опции",
   "weight": 4,
-  "uuid": "bf36c879-dec7-41c4-804b-fde6d631e6a9"
+  "uuid": "bf36c879-dec7-41c4-804b-fde6d631e6a9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

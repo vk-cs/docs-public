@@ -1,0 +1,15 @@
+{
+  "title": "Encryption",
+  "shortDescription": "Настройка бакета для шифрования загружаемых объектов",
+  "metaDescription": "Все доступные методы для работы с шифрованием в бакетах VK Object Storage: Установить шифрование бакета (PutBucketEncryption), проверить конфигурацию шифрования бакета (GetBucketEncryption), отключить шифрование бакета (DeleteBucketEncryption)",
+  "sectionTitle": "Encryption",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

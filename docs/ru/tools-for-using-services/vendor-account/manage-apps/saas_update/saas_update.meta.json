@@ -4,5 +4,10 @@
   "metaDescription": "Обновление SaaS-приложения",
   "sectionTitle": "Обновление SaaS-приложения",
   "weight": 7,
-  "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc"
+  "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

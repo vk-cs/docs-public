@@ -5,5 +5,10 @@
   "sectionTitle": "События компонента Nova",
   "icon": "",
   "weight": 5,
-  "uuid": "d5c8fc79-2ff1-4391-a023-1b8495fed81f"
+  "uuid": "d5c8fc79-2ff1-4391-a023-1b8495fed81f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-тағы Cloud Databases: сервисті пайдалануды қалай бастау керек.",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

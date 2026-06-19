@@ -5,5 +5,19 @@
   "sectionTitle": "CI/CD based on GitLab",
   "icon": "",
   "weight": 4,
-  "uuid": "aec35a08-a990-48b0-8bf4-e4f41a0b3bbd"
+  "uuid": "aec35a08-a990-48b0-8bf4-e4f41a0b3bbd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,6 +4,20 @@
   "metaDescription": "",
   "sectionTitle": "Using Ingress",
   "icon": "",
-  "weight": 1,
-  "uuid": "1bccdc14-a097-41da-873d-f612c1ba5df6"
+  "weight": 12,
+  "uuid": "1bccdc14-a097-41da-873d-f612c1ba5df6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

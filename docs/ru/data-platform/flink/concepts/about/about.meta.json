@@ -1,9 +1,16 @@
 {
   "title": "О сервисе",
   "shortDescription": "Возможности и применение сервиса Cloud Flink",
-  "metaDescription": "Возможности и применение сервиса Cloud Flink",
+  "metaDescription": "Узнайте какие возможности предлагает сервис в Cloud Flink в VK Data Platform",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,
-  "uuid": "9827faf9-1306-416d-9fd6-e0cbd51ba13e"
+  "uuid": "9827faf9-1306-416d-9fd6-e0cbd51ba13e",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

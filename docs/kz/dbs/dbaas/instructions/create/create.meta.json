@@ -4,5 +4,15 @@
   "metaDescription": "Cloud Databases VK Cloud: қолжетімді кез келген конфигурацияда — Single, Master-Replica, Кластер — ДҚ инстансын құру",
   "sectionTitle": "ДҚ инстансын құру",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

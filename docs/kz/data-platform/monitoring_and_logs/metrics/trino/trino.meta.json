@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Trino",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform ішіндегі Cloud Trino сервисінің әрбір өрістетілген данасы үшін кластер күйін, компоненттер арасындағы өзара әрекеттесуді, SQL-сұраулар мен тапсырмаларды орындау нәтижелерін, ресурстарды пайдалануды мониторингтеу мақсатында қандай Trino метрикалары жиналатынын біліңіз",
+  "sectionTitle": "Cloud Trino",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,9 +1,18 @@
 {
   "title": "Marketplace",
-  "shortDescription": "XaaS-сервисы для работы в облаке на базе ресурсов VK Cloud",
+  "shortDescription": "XaaS-сервисы для работы в облаке на базе ресурсов {var(cloud)}",
   "metaDescription": "Сервисы для работы в облаке на базе ресурсов VK Cloud",
   "sectionTitle": "Marketplace",
   "icon": "",
   "weight": 1,
-  "uuid": "e82d4cad-6126-4739-b4e0-a8e79ae2377f"
+  "uuid": "e82d4cad-6126-4739-b4e0-a8e79ae2377f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

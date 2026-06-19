@@ -1,9 +1,14 @@
 {
-    "title": "Используемые SDN",
-      "shortDescription": "Какие SDN доступны в VK Cloud, в чем их отличия",
-      "metaDescription": "Сервис Cloud Network в VK Cloud. Что такое SDN (Software Defined Network). Какие SDN доступны в VK Cloud, в чем их отличия",
-    "sectionTitle": "Используемые SDN",
-    "icon": "",
-    "weight": 2,
-    "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b"
+  "title": "Используемые SDN",
+  "shortDescription": "Какие SDN доступны в {var(cloud)}, в чем их отличия",
+  "metaDescription": "Сервис Cloud Network в VK Cloud. Что такое SDN (Software Defined Network). Какие SDN доступны в VK Cloud, в чем их отличия",
+  "sectionTitle": "Используемые SDN",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b"
 }

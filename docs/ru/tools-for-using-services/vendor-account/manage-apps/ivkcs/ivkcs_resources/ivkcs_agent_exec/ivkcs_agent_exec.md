@@ -15,28 +15,28 @@
 |
 Идентификатор развертывания сервиса
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `name`
 |
 Общее имя для скриптов, описанных в аргументе `step`
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `hosts`
 |
 Список имен хостов, где будет выполняться скрипт
 |list, элементы списка — string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `step`
 |
 Описывает скрипты, которые будут запускаться агентами на хостах. Определяет порядок выполнения скриптов
 |list, структура одного элемента приведена в таблице ниже
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -57,8 +57,8 @@
 Индекс скрипта, определяет порядок выполнения
 |
 integer
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |
 `type`
@@ -70,8 +70,8 @@ integer
 
 |
 string
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |
 `options`
@@ -79,8 +79,8 @@ string
 Параметры выполнения скрипта
 |
 set, аргументы списка — в {linkto(#tab_script_options)[text=таблице %number]}
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `content`
@@ -88,8 +88,8 @@ set, аргументы списка — в {linkto(#tab_script_options)[text=т
 Тело скрипта
 |
 string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 

@@ -1,9 +1,14 @@
 {
-    "title": "Управление дисками и их снимками",
-      "shortDescription": "",
-      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers. Управление дисками и их снимками",
-    "sectionTitle": "Управление дисками и их снимками",
-    "icon": "",
-    "weight": 4,
-    "uuid": "e5fdcaba-3bac-4091-9574-e9758aabc04e"
+  "title": "Управление дисками и их снимками",
+  "shortDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers. Управление дисками и их снимками",
+  "sectionTitle": "Управление дисками и их снимками",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e5fdcaba-3bac-4091-9574-e9758aabc04e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

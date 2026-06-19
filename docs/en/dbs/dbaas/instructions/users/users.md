@@ -49,7 +49,7 @@ When a user is added, the databases available to him are assigned. In these data
 
         | DBMS types | Banned usernames |
         |--|--|
-        | PostgreSQL<br>PostgresPro | `os_admin`, `root`, `postgres`, `replicator` |
+        | PostgreSQL | `os_admin`, `root`, `postgres`, `replicator` |
         | MySQL | `clusterrepuser` (prohibited only for cluster configuration), `os_admin`, `root` |
         | ClickHouse | `os_admin`, `root`, `default`, `replicator` |
         | MongoDB | `os_admin`, `root` |

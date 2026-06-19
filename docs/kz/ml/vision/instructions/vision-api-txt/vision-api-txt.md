@@ -1,3 +1,5 @@
+# {heading(Құжаттардағы мәтінді тану)[id=vision-instructions-vision-api-txt]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл әдіс кескіндегі мәтінді тануға мүмкіндік береді.
@@ -6,7 +8,7 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/text/recognize`
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-vision-api-txt-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
@@ -19,7 +21,7 @@ ENDPOINT: `/api/v1/text/recognize`
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                         |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаланы](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -38,11 +40,11 @@ ENDPOINT: `/api/v1/text/recognize`
 
 {note:warn}
 
-Әдіс үшін [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіс үшін {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
+## {heading(Сұрау үлгісі)[id=vision-instructions-vision-api-txt-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -59,7 +61,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-vision-api-txt-answer]}
 
 | Параметр | Тип    | Мәні                                                  |
 | ------------ | --------   | --------------------------------------------------------- |
@@ -100,7 +102,7 @@ curl -X 'POST' \
 | lang_prob   | float32   | Тілді тану сенімділігі                           |
 | lang        | string    | Eng/rus/unknown. Unknown әліпби әріптері болмаған кезде  |
 
-## Жауап үлгісі
+## {heading(Жауап үлгісі)[id=vision-instructions-vision-api-txt-answer-example]}
 
 ```json
 {
@@ -119,9 +121,9 @@ curl -X 'POST' \
 }
 ```
 
-## Қосымша мысалдар
+## {heading(Қосымша мысалдар)[id=vision-instructions-vision-api-txt-extra-examples]}
 
-### mode=detailed
+### {heading(mode=detailed)[id=vision-instructions-vision-api-txt-extra-examples-mode-detailed]}
 
 Сұрау үлгісі:
 
@@ -810,7 +812,7 @@ curl -X 'POST' \
 
 {/cut}
 
-### На изображении нет текста
+### {heading(Кескінде мәтін жоқ)[id=vision-instructions-vision-api-txt-extra-examples-no-text]}
 
 Сұрау үлгісі:
 
@@ -848,7 +850,7 @@ curl -X 'POST' \
 }
 ```
 
-### Бос кескін
+### {heading(Бос кескін)[id=vision-instructions-vision-api-txt-extra-examples-empty-img]}
 
 Сұрау үлгісі:
 
@@ -879,7 +881,7 @@ curl -X 'POST' \
 }
 ```
 
-### Некорректный JSON
+### {heading(Дұрыс емес JSON)[id=vision-instructions-vision-api-txt-extra-examples-invalid-json]}
 
 Сұрау үлгісі:
 

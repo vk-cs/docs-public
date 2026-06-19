@@ -1,9 +1,14 @@
 {
-    "title": "Creating CDN resource",
-      "shortDescription": "How to create a CDN resource in the CDN service or in the VK Object Storage bucket",
-      "metaDescription": "How to create a CDN resource in the CDN service or in the VK Object Storage bucket.",
-    "sectionTitle": "Creating CDN resource",
-    "icon": "",
-    "weight": 1,
-    "uuid": "2fe0e386-3d97-49fc-9c6f-acfdd1b86ddd"
+  "title": "Creating CDN resource",
+  "shortDescription": "How to create a CDN resource in the CDN service or in the VK Object Storage bucket",
+  "metaDescription": "How to create a CDN resource in the CDN service or in the VK Object Storage bucket.",
+  "sectionTitle": "Creating CDN resource",
+  "icon": "",
+  "weight": 1,
+  "uuid": "2fe0e386-3d97-49fc-9c6f-acfdd1b86ddd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

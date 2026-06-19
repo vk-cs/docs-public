@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Мақалада VK Cloud платформасында Terraform көмегімен Spark кластерін құру мысалы келтірілген.
+Мақалада {var(cloud)} платформасында Terraform көмегімен Spark кластерін құру мысалы келтірілген.
 
 Кластерді құру кезінде мыналар пайдаланылады:
 
@@ -16,11 +16,11 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) кластерді құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
-1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start#terraform_dy_zhanartu).
+1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
 
 ## 1. Кластер сипаттамасы бар файлды жасаңыз
 
@@ -81,7 +81,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
   - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
   - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
 
   {/cut}
 
@@ -101,11 +101,11 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: жаңа Docker тізілімі жасалады және ол кластер құрамына кірмейтін әрі бөлек тарифтелетін бөлінген K8S Docker Registry виртуалды машинасына орналастырылады. Идентификатор `vkcs_mlplatform_k8s_registry` ресурсы құрылғаннан кейін алынады. Ресурс төменде құрылады.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар K8S Docker Registry тізілімінің идентификаторы көрсетіледі. K8S Docker Registry инстансының идентификаторын білу үшін:
 
-    1. VK Cloud жеке кабинетіне [өтіңіз](https://cloud.vk.com/app).
-    1. Қажетті инстанс атауын басыңыз.
-    1. **ML Platform** → **Spark в k8s** бөліміне өтіңіз.
-    1. **Инстанстар** қойындысына өтіңіз.
+    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.com/app).
     1. Кластерді құру қажет жобаны таңдаңыз.
+    1. **ML Platform** → **Spark в k8s** бөліміне өтіңіз.
+    1. **Инстансы** қойындысына өтіңіз.
+    1. Қажетті инстанс атауын басыңыз.
 
   {/cut}
 
@@ -114,7 +114,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   {cut(Мысалдар)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымы сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
 
   {/cut}
 
@@ -162,7 +162,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
 
   {/cut}
 
@@ -171,7 +171,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
   {cut(Мысалдар)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымы сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
 
   {/cut}
 
@@ -275,7 +275,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Spark кластері сәтті құрылғанына көз жеткізіңіз:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.com/app/).
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. Spark кластері құрылғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

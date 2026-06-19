@@ -5,5 +5,11 @@
   "sectionTitle": "Cloud Airflow",
   "icon": "",
   "isBeta": true,
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

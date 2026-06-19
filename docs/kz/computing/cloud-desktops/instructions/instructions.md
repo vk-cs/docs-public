@@ -1,9 +1,9 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Әкімшіге арналған қадамдық нұсқаулықтар)[id=desktops-instructions]}
 
+{ifdef(public)}
 Cloud Desktop сервисін баптау, виртуалды жұмыс үстелдері мен жұмыс үстелдері пулдарын басқару жөніндегі нұсқаулықтар.
 
 {note:info}
-
 Жұмыс үстеліне қосылу және онымен жұмыс істеу жөніндегі нұсқаулықтар [басқа бөлімде](../user-instructions) келтірілген.
-
 {/note}
+{/ifdef}

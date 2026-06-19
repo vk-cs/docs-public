@@ -1,0 +1,14 @@
+{
+  "title": "Сервис данасын құру",
+  "shortDescription": "Қажетті конфигурацияда JupyterHub данасын қалай құруға болады",
+  "metaDescription": "VK Data Platform жүйесінде қажетті конфигурацияда JupyterHub сервис данасын қалай құруға болады",
+  "sectionTitle": "Сервис данасын құру",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

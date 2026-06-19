@@ -1,9 +1,16 @@
 {
   "title": "Подключение к хранилищу",
   "shortDescription": "Подключение к VK Object Storage с использованием AWS CLI, файловых менеджеров, SDK",
-  "metaDescription": "Подключение к VK Object Storage с использованием AWS CLI, файловых менеджеров, SDK.",
+  "metaDescription": "Подключение к VK Object Storage удобным способом: настройка и проверка доступа через AWS CLI, файловые менеджеры (Cyberduck, WinSCP, Диск‑О:, S3FS) и SDK (Python, Go и др.) — получение ключей, указание endpoint/region, примеры типовых операций.",
   "sectionTitle": "Подключение к хранилищу",
   "icon": "",
   "weight": 3,
-  "uuid": "b43a9538-c2a6-4df9-a384-ead71809cabb"
+  "uuid": "b43a9538-c2a6-4df9-a384-ead71809cabb",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

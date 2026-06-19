@@ -1,0 +1,15 @@
+{
+    "title": "Ошибка NoSuchBucket",
+      "shortDescription": "Что делать, если CDN, который в качестве источника контента использует бакет {var(s3)}, возвращает ошибку NoSuchBucket",
+      "metaDescription": "Что делать, если CDN, который в качестве источника контента использует бакет VK Object Storage, возвращает ошибку NoSuchBucket, the specified bucket does not exist",
+    "sectionTitle": "Ошибка NoSuchBucket",
+    "icon": "",
+    "weight": 1,
+    "uuid": "",
+    "build": {
+      "for": [
+        "public"
+      ]
+    }
+}
+

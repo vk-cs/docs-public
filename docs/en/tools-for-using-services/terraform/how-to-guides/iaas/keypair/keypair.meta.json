@@ -1,9 +1,14 @@
 {
-    "title": "Creating key pairs",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating key pairs",
-    "icon": "",
-    "weight": 3,
-    "uuid": "15fefef0-d0d1-40f0-aac4-f8dc8dc5619c"
+  "title": "Creating key pairs",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating key pairs",
+  "icon": "",
+  "weight": 3,
+  "uuid": "15fefef0-d0d1-40f0-aac4-f8dc8dc5619c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

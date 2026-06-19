@@ -5,5 +5,12 @@
   "sectionTitle": "Диск переходит в состояние read-only",
   "icon": "",
   "weight": 23,
-  "uuid": "c309c405-ed5f-4f99-94c3-f1d58c1eb1db"
+  "uuid": "c309c405-ed5f-4f99-94c3-f1d58c1eb1db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

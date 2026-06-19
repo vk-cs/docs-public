@@ -4,5 +4,10 @@
   "metaDescription": "JupyterHub инстансының веб-интерфейсіне қалай қосылуға болады",
   "sectionTitle": "JupyterHub-қа қосылу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

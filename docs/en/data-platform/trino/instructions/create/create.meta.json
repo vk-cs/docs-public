@@ -5,5 +5,19 @@
   "sectionTitle": "Service instance creation",
   "icon": "",
   "weight": 1,
-  "uuid": "b79bc402-44ba-4c8d-9fca-d074a17ac4a0"
+  "uuid": "b79bc402-44ba-4c8d-9fca-d074a17ac4a0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

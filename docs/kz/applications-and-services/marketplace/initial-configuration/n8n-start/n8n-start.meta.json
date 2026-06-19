@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: VK Cloud қолданбалар дүкенінен n8n жұмыс процестерін автоматтандыру платформасын өрістету қадамдары.",
   "sectionTitle": "n8n өрістету",
   "icon": "",
-  "weight": 20
+  "weight": 20,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

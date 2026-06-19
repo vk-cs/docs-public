@@ -4,5 +4,14 @@
   "shortDescription": "GPU-мен виртуалды жұмыс үстелдерін қалай өрістетуге болады",
   "metaDescription": "GPU-мен виртуалды жұмыс үстелдерін қалай өрістетуге болады",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "DBMS types",
   "icon": "",
   "weight": 2,
-  "uuid": "f126f0c3-f4a0-4599-991d-9c58229c266d"
+  "uuid": "f126f0c3-f4a0-4599-991d-9c58229c266d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

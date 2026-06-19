@@ -1,0 +1,14 @@
+{
+  "title": "Spark кластерін жасау",
+  "shortDescription": "Terraform көмегімен Spark кластерін қалай жасауға болады",
+  "metaDescription": "Data Platform ішінде Cloud Spark кластерін Terraform және VK Cloud ресурстары арқылы қалай жасау керектігін біліңіз. Конфигурация мысалдары бар қадамдық нұсқаулық",
+  "sectionTitle": "Spark кластерін жасау",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

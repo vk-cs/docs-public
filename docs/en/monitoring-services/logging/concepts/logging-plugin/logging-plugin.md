@@ -1,7 +1,7 @@
 Sending user application logs to the Cloud Logging service is enabled and configured via the `vkcloudlogs-fluent-bit-plugin` logging plugin.
 It works with the [Golang plugin](https://docs.fluentbit.io/manual/development/golang-output-plugins) interface provided by [Fluent Bit](https://docs.fluentbit.io/manual).
 
-## {heading(Plugin authorization parameters)[id=auth_parameters]}
+## {heading(Plugin authorization parameters)[id=logging_auth_parameters]}
 
 [cols="1,1,2,2", options="header"]
 |===
@@ -69,7 +69,7 @@ Accounts generated for the Cloud Logging service have only the right to record l
 
 {/note}
 
-## {heading(Plugin configuration parameters)[id=conf_parameters]}
+## {heading(Plugin configuration parameters)[id=logging_conf_parameters]}
 
 [cols="1,1,3", options="header"]
 |===

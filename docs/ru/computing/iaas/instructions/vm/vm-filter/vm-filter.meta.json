@@ -5,5 +5,14 @@
   "sectionTitle": "Поиск и фильтрация ВМ",
   "icon": "",
   "weight": 6,
-  "uuid": "f451638d-962b-4cb5-9346-f09cba33d80d"
+  "uuid": "f451638d-962b-4cb5-9346-f09cba33d80d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -1,8 +1,13 @@
 {
   "title": "API",
-  "shortDescription": "API арқылы VK Cloud сервистерін басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
+  "shortDescription": "API арқылы {var(cloud)} сервистерін басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
   "metaDescription": "VK Cloud сервистерін API арқылы басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
   "sectionTitle": "API",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

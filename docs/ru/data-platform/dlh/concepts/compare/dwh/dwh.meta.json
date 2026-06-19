@@ -5,5 +5,10 @@
   "sectionTitle": "Data Warehouse",
   "icon": "",
   "weight": 1,
-  "uuid": "71132b9a-6eb6-4408-96c9-96c02638eb53"
+  "uuid": "71132b9a-6eb6-4408-96c9-96c02638eb53",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

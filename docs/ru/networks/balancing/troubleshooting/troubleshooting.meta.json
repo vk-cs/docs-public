@@ -5,5 +5,12 @@
   "sectionTitle": "Устранение неполадок",
   "icon": "",
   "weight": 51,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
   "uuid": "bab4c617-57fa-4932-bdc1-7d3c4812c309"
 }

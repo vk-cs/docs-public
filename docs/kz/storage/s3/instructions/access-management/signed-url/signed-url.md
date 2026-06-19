@@ -1,31 +1,38 @@
+# {heading(Қолтаңбаланған URL құрастыру)[id=s3-instructions-signed-url]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[Қол қойылған URL](../../../concepts/access/signed-url) сыртқы пайдаланушыға объектіні жүктеп алуға уақыт бойынша шектелген қолжетімділік береді.
+{linkto(../../../concepts/access/signed-url#s3-concepts-signed-url)[text=Қолтаңбаланған URL]} үшінші тарап пайдаланушысына объектіні жүктеп алу үшін уақыт бойынша шектелген қолжетімділікті ұсынады.
 
-Қол қойылған URL жасау үшін:
+Қолтаңбаланған URL жасау үшін:
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, [AWS CLI](../../../connect/s3-cli) орнатып, баптаңыз.
-
+1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
 1. Консольде команданы орындаңыз:
 
    ```console
-   aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <URL_СЕРВИСА> --expires-in <СРОК_ДЕЙСТВИЯ>
+   aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url <ENDPOINT_URL> --expires-in <СРОК_ДЕЙСТВИЯ>
    ```
 
    Мұнда:
 
-    - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
-    - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса алғанда.
-    - `<URL_СЕРВИСА>` — VK Object Storage сервисінің домені, ол аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
-        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
-    - `<СРОК_ДЕЙСТВИЯ>` — қолжетімділіктің секундпен берілетін әрекет ету уақыты. Егер көрсетілмесе, сілтеме 3600 секунд бойы жарамды болады.
+   - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
-   {cut(Қол қойылған URL жасау командасының мысалы)}
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} жүйесінің сіздің инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+   - `<СРОК_ДЕЙСТВИЯ>` — қолжетімділіктің әрекет ету уақыты (секундпен). Егер көрсетілмесе, сілтеме 3600 секунд бойы жарамды болады.
+
+   {cut(Қолтаңбаланған URL қалыптастыру командасының мысалы)}
 
    Команда мысалы:
 
@@ -41,16 +48,32 @@
 
    {/cut}
 
-Қол қойылған URL қалыптастыру командасының қолжетімді параметрлерінің сипаттамасы [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) берілген.
+Қолтаңбаланған URL қалыптастыру командасы үшін қолжетімді параметрлердің сипаттамасы — [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html).
 
 {/tab}
 
+{ifdef(s3,s3-pdf)}
+
+{tab(Файл менеджері)}
+
+{note:warn}
+Мұнда және әрі қарай біз «CloudBerry Explorer for Amazon S3» файл менеджерін қолданамыз. Егер сіз басқа файл менеджерін қолдансаңыз, интерфейс және оның элементтерінің атаулары осы нұсқаулықта қолданылғандардан өзгеше болуы мүмкін.
+{/note}
+
+1. Бакеттен қажетті файлды таңдаңыз да, ол үшін тінтуірдің оң жақ батырмасымен контекстік мәзірді шақырыңыз.
+
+   Немесе қажетті файлды таңдап, файл менеджерінің құралдар тақтасындағы **Web URL** түймесін басыңыз.
+
+1. Одан кейін ашылған диалог терезесінде URL әрекет ету мерзімінің аяқталу уақытын орнатып, **Generate** түймесін басыңыз.
+
+{/tab}
+
+{/ifdef}
+
 {tab(Golang SDK)}
 
-1. Егер әлі орнатылмаған болса, Go үшін [SDK](../../../connect/s3-sdk) орнатып, баптаңыз.
-
-1. Егер бұл бұрын жасалмаған болса, VK Object Storage-ке арналған [қосылу деректерін](../../../connect/s3-sdk) орта айнымалыларына немесе конфигурация файлына қосыңыз.
-
+1. Егер әлі орнатылмаған болса, Go үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} орнатып, баптаңыз.
+1. Бұрын жасалмаған болса, {var(s3)} жүйесіне {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=қосылу деректемелерін]} орта айнымалыларына немесе конфигурациялық файлға қосыңыз.
 1. Жобаңызға кодты қосыңыз:
 
    ```go
@@ -99,27 +122,26 @@
 	   })
 
 	   if err != nil {
-		   log.Printf("Couldn't get a presigned request to get %v:%v. Error: %v
-",
+		   log.Printf("Couldn't get a presigned request to get %v:%v. Error: %v\n",
 			   bucketName, objectKey, err)
 	   }
 
 	   fmt.Printf("%s", request.URL)
    }
    ```
-   `vkCloudHotboxEndpoint` айнымалысының мәні аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
+   {ifdef(public)}
+   `vkCloudHotboxEndpoint` айнымалысының мәні аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
-    - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-    - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+   {/ifdef}
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Егер әлі орнатылмаған болса, Python үшін [SDK](../../../connect/s3-sdk) орнатып, баптаңыз.
-
-1. Егер бұл бұрын жасалмаған болса, VK Object Storage-ке арналған [қосылу деректерін](../../../connect/s3-sdk) орта айнымалыларына немесе конфигурация файлына қосыңыз.
-
+1. Егер әлі орнатылмаған болса, Python үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} орнатып, баптаңыз.
+1. Бұрын жасалмаған болса, {var(s3)} жүйесіне {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=қосылу деректемелерін]} орта айнымалыларына немесе конфигурациялық файлға қосыңыз.
 1. Жобаңызға кодты қосыңыз:
 
    ```python
@@ -153,11 +175,12 @@
    else:
       print("Error creating link")
    ```
+   {ifdef(public)}
+   `endpoint_url` айнымалысының мәні аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
-   `endpoint_url` айнымалысының мәні аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
-
-    - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-    - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+   {/ifdef}
 
 {/tab}
 

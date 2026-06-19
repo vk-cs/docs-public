@@ -1,9 +1,16 @@
 {
-    "title": "Создание бакета",
-      "shortDescription": "Как создать бакет VK Object Storage через личный кабинет VK Cloud, AWS CLI, SDK",
-      "metaDescription": "Как создать бакет VK Object Storage через личный кабинет VK Cloud, AWS CLI, SDK",
-    "sectionTitle": "Создание бакета",
-    "icon": "",
-    "weight": 1,
-    "uuid": "17c76fd6-b3ed-42fe-ae60-24ca95262918"
+  "title": "Создание бакета",
+  "shortDescription": "Как создать бакет VK Object Storage через личный кабинет, AWS CLI, SDK",
+  "metaDescription": "Инструкция по созданию бакета VK Object Storage через личный кабинет, AWS CLI и SDK: какие параметры нужно указать, опциональные настройки, примеры команд `s3api create-bucket` и примеры кода SDK, а также проверка результата с примерами ответа",
+  "sectionTitle": "Создание бакета",
+  "icon": "",
+  "weight": 1,
+  "uuid": "17c76fd6-b3ed-42fe-ae60-24ca95262918",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

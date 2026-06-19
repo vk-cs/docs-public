@@ -1,0 +1,1 @@
+# {heading(Концепции)[id=gpu-concepts]}

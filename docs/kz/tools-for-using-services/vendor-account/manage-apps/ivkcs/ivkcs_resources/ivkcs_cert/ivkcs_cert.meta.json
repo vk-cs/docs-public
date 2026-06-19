@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_cert ресурсы",
   "sectionTitle": "ivkcs_cert ресурсы",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

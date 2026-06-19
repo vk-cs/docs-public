@@ -1,9 +1,23 @@
 {
-    "title": "Using Curl",
-      "shortDescription": "Corl recognition request",
-      "metaDescription": "",
-    "sectionTitle": "Using Curl",
-    "icon": "",
-    "weight": 2,
-    "uuid": "b0993bdf-23a0-40e7-a16e-8f4b56ab6d48"
+  "title": "Using Curl",
+  "shortDescription": "Corl recognition request",
+  "metaDescription": "",
+  "sectionTitle": "Using Curl",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b0993bdf-23a0-40e7-a16e-8f4b56ab6d48",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

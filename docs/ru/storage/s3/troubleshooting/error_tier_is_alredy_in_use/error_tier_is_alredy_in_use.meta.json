@@ -5,5 +5,12 @@
   "sectionTitle": "Ошибка при интеграции с VK Object Storage",
   "icon": "",
   "weight": 4,
-  "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4"
+  "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

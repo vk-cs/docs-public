@@ -1,14 +1,16 @@
+# {heading(Kgateway)[id=k8s-install-advanced-kgateway]}
+
 {note:info}
-Этот аддон доступен только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Этот аддон доступен только для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-install-advanced-kgateway-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}
 
-## Установка аддона
+## {heading(Установка аддона)[id=k8s-install-advanced-kgateway-install]}
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
+Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}.
 
 {tabs}
 
@@ -20,7 +22,7 @@
 
    {tab(Личный кабинет)}
 
-    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
     1. Выберите проект, где находится нужный кластер.
     1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
     1. Нажмите на имя нужного кластера.
@@ -34,7 +36,7 @@
         - выбранную версию;
         - название приложения;
         - название пространства имен, куда будет установлен аддон;
-        - [код настройки аддона](#edit-code).
+        - {linkto(#k8s-install-advanced-kgateway-edit-code)[text=код настройки аддона]}.
 
           {note:warn}
           Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
@@ -49,7 +51,7 @@
    {/tabs}
 
 1. (Опционально) [Познакомьтесь с официальной документацией Kgateway](https://kgateway.dev/docs/).
-1. (Опционально) [Познакомьтесь с практическим руководством по работе с Kgateway](/ru/kubernetes/k8s/how-to-guides/kgateway).
+1. (Опционально) {linkto(/ru/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Познакомьтесь с практическим руководством по работе с Kgateway]}.
 
 {/tab}
 
@@ -61,16 +63,16 @@
 
    {tab(Личный кабинет)}
 
-    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
     1. Выберите проект, где находится нужный кластер.
     1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
     1. Найдите в списке нужный кластер.
 
     1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-       Если такой группы нет — [добавьте ее](/ru/kubernetes/k8s/instructions/manage-node-group#add_group).
+       Если такой группы нет — {linkto(../../../manage-node-group#k8s-manage-node-group-add-group)[text=добавьте ее]}.
 
-    1. [Задайте](/ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) для этой группы узлов, если это еще не сделано:
+    1. {linkto(../../../manage-node-group#k8s-manage-node-group-labels-taints)[text=Задайте]} для этой группы узлов, если это еще не сделано:
 
         - Метку (label): ключ `addonNodes`, значение `dedicated`.
         - Ограничение (taint): эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.
@@ -85,7 +87,7 @@
 
    {tab(Личный кабинет)}
 
-    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
     1. Выберите проект, где находится нужный кластер.
     1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
     1. Нажмите на имя нужного кластера.
@@ -99,7 +101,7 @@
         - выбранную версию;
         - название приложения;
         - название пространства имен, куда будет установлен аддон;
-        - [код настройки аддона](#edit-code).
+        - {linkto(#k8s-install-advanced-kgateway-edit-code)[text=код настройки аддона]}.
 
     1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -145,7 +147,7 @@
    {/tabs}
 
 1. (Опционально) [Познакомьтесь с официальной документацией Kgateway](https://kgateway.dev/docs/).
-1. (Опционально) [Познакомьтесь с практическим руководством по работе с Kgateway](/ru/kubernetes/k8s/how-to-guides/kgateway).
+1. (Опционально) {linkto(/ru/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Познакомьтесь с практическим руководством по работе с Kgateway]}.
 
 {/tab}
 
@@ -163,7 +165,7 @@
 
    {tab(Личный кабинет)}
 
-    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
     1. Выберите проект, где находится нужный кластер.
     1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
     1. Нажмите на имя нужного кластера.
@@ -187,13 +189,13 @@
    {/tabs}
 
 1. (Опционально) [Познакомьтесь с официальной документацией Kgateway](https://kgateway.dev/docs/).
-1. (Опционально) [Познакомьтесь с практическим руководством по работе с Kgateway](/ru/kubernetes/k8s/how-to-guides/kgateway).
+1. (Опционально) {linkto(/ru/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Познакомьтесь с практическим руководством по работе с Kgateway]}.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Редактирование кода настройки аддона при установке)[id=edit-code]}
+## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-advanced-kgateway-edit-code]}
 
 Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы.
 

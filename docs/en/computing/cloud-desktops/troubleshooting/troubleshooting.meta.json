@@ -5,5 +5,10 @@
   "sectionTitle": "Troubleshooting",
   "icon": "",
   "weight": 7,
-  "uuid": "d46d1fd7-5f0c-467e-80b1-99491d73f12a"
+  "uuid": "d46d1fd7-5f0c-467e-80b1-99491d73f12a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

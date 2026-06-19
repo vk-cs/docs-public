@@ -4,5 +4,19 @@
   "metaDescription": "Для решения обращений в VK Cloud используется многоуровневая модель технической поддержки",
   "sectionTitle": "Линии поддержки",
   "weight": 0,
-  "uuid": "79269c6e-1602-4e77-b246-c35099a418fd"
+  "uuid": "79269c6e-1602-4e77-b246-c35099a418fd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

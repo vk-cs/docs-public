@@ -3,5 +3,15 @@
   "shortDescription": "Жергілікті виртуалды машинаның көмегімен Linux ОС-ы бар ВМ образын қалай жасауға болады",
   "metaDescription": "Жергілікті виртуалды машинаның көмегімен Linux ОС-ы бар ВМ образын қалай жасауға болады.",
   "sectionTitle": "Жергілікті ВМ көмегімен образ жасау",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

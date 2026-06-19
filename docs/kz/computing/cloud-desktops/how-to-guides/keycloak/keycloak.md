@@ -1,10 +1,12 @@
+# {heading(Keycloak-пен интеграция)[id=desktops-keycloak]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Keycloak](https://www.keycloak.org/) — бұл сәйкестендіру және қолжетімділікті басқару жүйесі. Сіз Keycloak-ты Cloud Desktop сервисінде SAML куәлік жеткізушісі ретінде пайдалана аласыз.
 
 Төменде Keycloak-ты Cloud Desktop сервисімен жұмысқа қалай дайындау көрсетілген.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=desktops-keycloak-preparatory-steps]}
 
 1. [Ресми құжаттамадағы](https://www.keycloak.org/getting-started/getting-started-docker) нұсқауларға сәйкес Keycloak орнатыңыз.
 1. Keycloak әкімші консолінде авторизациялаңыз.
@@ -13,7 +15,7 @@
    1. Сол жақ бүйірлік мәзірде рилмдер тізімін ашып, **Create realm** түймесін басыңыз.
    1. **Realm name** өрісінде жаңа рилмнің атын беріп, **Create** түймесін басыңыз.
 
-## 1. LDAP-провайдерді қосып, баптаңыз
+## {heading(1. LDAP-провайдерді қосып, баптаңыз)[id=desktops-keycloak-ldap-add]}
 
 1. Бүйірлік мәзірде **User federation** бөліміне өтіңіз.
 1. **Add Ldap providers** түймесін басыңыз.
@@ -54,7 +56,7 @@
 1. **Advanced settings** блогында барлық параметр үшін `Off` мәнін таңдаңыз.
 1. Баптауларды сақтаңыз.
 
-## 2. Мапперлерді (mapper) баптаңыз
+## {heading(2. Мапперлерді (mapper) баптаңыз)[id=desktops-keycloak-mapper-settings]}
 
 1. **User federation** бөлімінде жасалған LDAP-провайдердің атауын басып, **Mappers** қойындысына өтіңіз.
 1. **Add mapper** түймесін басыңыз.
@@ -93,7 +95,7 @@
 1. **Action** тізімінен **Sync LDAP groups to Keycloak** тармағын таңдаңыз.
 1. Бүйірлік мәзірде **Groups** бөліміне өтіп, топтар жүктелгеніне және пайдаланушыларды қамтитынына көз жеткізіңіз.
 
-## 3. Keycloak үшін клиент жасаңыз
+## {heading(3. Keycloak үшін клиент жасаңыз)[id=desktops-keycloak-client-create]}
 
 1. Бүйірлік мәзірде **Clients** бөліміне өтіңіз.
 1. **Create client** түймесін басып, параметрлерді орнатыңыз:
@@ -107,7 +109,7 @@
 1. **Valid redirect URIs** параметрі үшін `*` мәнін көрсетіңіз, қалған өрістерді бос қалдырыңыз.
 1. Баптауларды сақтаңыз.
 
-## 4. Клиент үшін мапперлерді баптаңыз
+## {heading(4. Клиент үшін мапперлерді баптаңыз)[id=desktops-keycloak-mapper-client-settings]}
 
 1. Жасалған клиент бетінде **Keys** қойындысына өтіңіз.
 1. **Client signature required** параметрі үшін `Off` мәнін орнатыңыз.
@@ -136,11 +138,11 @@
 
 1. Баптауларды сақтаңыз.
 
-## 5. Keycloak баптауын аяқтаңыз
+## {heading(5. Keycloak баптауын аяқтаңыз)[id=desktops-keycloak-settings-end]}
 
 1. Бүйірлік мәзірде **Realm Settings** бөліміне өтіңіз.
 1. **Require SSL** параметрі үшін `None` мәнін орнатыңыз.
-1. **Endpoints** блогында **SAML 2.0 Identity Provider Metadata** сілтемесін көшіріңіз. [SAML сервисі арқылы екі факторлы аутентификацияны](../../instructions/config/setup-saml) баптау кезінде оны **URL метаданных** параметрінің мәні ретінде көрсету керек.
+1. **Endpoints** блогында **SAML 2.0 Identity Provider Metadata** сілтемесін көшіріңіз. {linkto(../../../../computing/cloud-desktops/instructions/config/setup-saml#desktops-setup-saml)[text=SAML сервисі арқылы екі факторлы аутентификацияны]} баптау кезінде оны **URL метаданных** параметрінің мәні ретінде көрсету керек.
 1. Бүйірлік мәзірде **User Federation** бөліміне өтіп, жасалған LDAP-провайдердің атын басыңыз.
 1. **Action** тізімінен **Sync all users** тармағын таңдаңыз.
 

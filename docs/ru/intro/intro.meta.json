@@ -4,5 +4,14 @@
   "metaDescription": "С чего начать",
   "weight": 0,
   "hidden": true,
-  "uuid": "2446627b-6605-4675-9d9f-a155f38f7126"
+  "uuid": "2446627b-6605-4675-9d9f-a155f38f7126",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

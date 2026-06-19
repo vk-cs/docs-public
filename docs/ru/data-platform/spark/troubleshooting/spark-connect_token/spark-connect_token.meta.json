@@ -1,0 +1,14 @@
+{
+  "title": "Не удается подключиться к Spark Connect без токена авторизации",
+  "shortDescription": "",
+  "metaDescription": "Узнайте как получить токен авторизации в формате Basic Auth для Spark Connect в сервисе Cloud Spark VK Data Platform",
+  "sectionTitle": "Не удается подключиться к Spark Connect без токена авторизации",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -166,7 +166,7 @@ By default, all images have the `private` status. To share an image with other p
 
    - **My Projects**: allows you to share the image with projects in which you are the owner.
 
-      If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
+      If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
 
    - **Other projects**: allows you to share the image with all other projects.
 

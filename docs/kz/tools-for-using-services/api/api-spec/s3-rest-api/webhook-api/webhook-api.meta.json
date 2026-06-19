@@ -1,8 +1,14 @@
 {
   "title": "Webhooks",
-  "shortDescription": "",
-  "metaDescription": "VK Object Storage үшін Webhooks — бұл API көмегімен бакет оқиғалары бойынша HTTP/S сұрауларын жіберуді баптау мүмкіндігі. Мысалы, мыналарды жасауға болады: өңдеуді және түрлендіруді баптау",
+  "shortDescription": "Бакеттердегі оқиғалар бойынша HTTP/HTTPS сұрауларын жіберу арқылы хабарландыруларды баптау",
+  "metaDescription": "VK Object Storage бакеттерінде вебхуктармен (webhook) жұмыс істеуге арналған барлық қолжетімді әдістер: оқиға туралы хабарландыруды қосу (PutBucketNotificationConfiguration), бакет үшін хабарландыру ережелерінің ағымдағы конфигурациясын тексеру (GetBucketNotificationConfiguration)",
   "sectionTitle": "Webhooks",
   "icon": "",
-  "weight": 9
+  "weight": 11,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

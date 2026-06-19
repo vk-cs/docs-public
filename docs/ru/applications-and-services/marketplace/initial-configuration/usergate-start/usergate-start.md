@@ -1,3 +1,5 @@
+# {heading(Защита инфраструктуры с помощью UserGate NGFW)[id=marketplace-usergate-start]}
+
 Вы можете настроить файервол нового поколения для защиты инфраструктуры от сетевых атак с помощью сервиса UserGate NGFW. Возможности сервиса:
 
 - защита от атак;
@@ -13,36 +15,32 @@
 
 {/cut}
 
-Данная инструкция поможет развернуть сервис UserGate NGFW на ВМ в VK Cloud, подключиться к консоли UserGate NGFW и добавить новую сеть через консоль сервиса.
+Данная инструкция поможет развернуть сервис UserGate NGFW на ВМ в {var(cloud)}, подключиться к консоли UserGate NGFW и добавить новую сеть через консоль сервиса.
 
-Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
+Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/vk/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
 
 {note:warn}
-
 UserGate NGFW предоставляется по модели BYOL (Bring Your Own Licence): самостоятельно приобретите [лицензию](https://www.usergate.com/ru/purchase) на использование сервиса.
-
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=marketplace-usergate-start-prepare-step]}
 
-1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
-1. [Разверните](../../instructions/pr-instance-add) сервис UserGate NGFW:
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
+1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
+1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Разверните]} сервис UserGate NGFW:
 
    - Выберите ранее созданные сеть с доступом в интернет и подсеть.
    - Остальные параметры выберите на свое усмотрение.
 
-   После завершения установки на почту придет одноразовая ссылка на логин и пароль. Запишите их. Сервис будет развернут по адресу вида `https://<внешний IP-адрес ВМ>:8001` (консоль UserGate).
+   После завершения установки на почту придет одноразовая ссылка на логин и пароль. Запишите их. Сервис будет развернут по адресу вида `https://<ВНЕШНИЙ_IP-АДРЕС_ВМ>:8001` (консоль UserGate).
 
 1. (Опционально) Настройте промежуточный сервер (jump host) для ВМ сервиса, чтобы повысить безопасность работы.
 
-## 1. Добавьте сеть в сервис
+## {heading(1. Добавьте сеть в сервис)[id=marketplace-usergate-start-add-check]}
 
 {note:info}
-
 По умолчанию UserGate NGFW создается с единственной сетью для подключения к MGMT-порту.
-
 {/note}
 
 1. Перейдите в консоль UserGate напрямую по IP виртуальной машины или через промежуточный сервер.
@@ -55,14 +53,14 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
    Откроется дашборд консоли UserGate.
 
 1. Перейдите в раздел **Настройки** → **Сеть** → **Интерфейсы**. Убедитесь, что в группе **Текущий узел** один сетевой адаптер (сеть, выбранная на этапе развертывания сервиса).
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
-1. Откройте страницу ВМ сервиса (обычно `<идентификатор>usergate`), нажав на ее имя в списке.
+1. Откройте страницу ВМ сервиса (обычно `<ID>usergate`), нажав на ее имя в списке.
 1. Перейдите на вкладку **Сети**.
-1. [Подключите](/ru/computing/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ.
-1. Перезагрузите ВМ [средствами VK Cloud](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect)[text=Подключите]} нужную сеть к ВМ.
+1. Перезагрузите ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=средствами {var(cloud)}]} или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
 
-## 2. Проверьте наличие добавленной сети
+## {heading(2. Проверьте наличие добавленной сети)[id=marketplace-usergate-start-check-net]}
 
 1. Перейдите в консоль UserGate напрямую по IP виртуальной машины или через промежуточный сервер.
 1. Перейдите в раздел **Настройки** → **Сеть** → **Интерфейсы**.
@@ -71,18 +69,16 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 Для расширенной конфигурации сервиса используйте официальную инструкцию [UserGate NGFW](https://docs.usergate.com/usergate-7x-11).
 
 {note:info}
-
 Рекомендации по работе с сервисом:
 
 - При настройке сетевого интерфейса используйте статическую адресацию: IP-адрес должен совпадать с адресом, назначенным для порта ВМ. Посмотреть адрес можно на странице ВМ на вкладке **Сети**.
-- Если вы подключаетесь к [внешней сети](/ru/networks/vnet/concepts/net-types#external_net), настройте вручную IP-адреса в консоли UserGate. Воспользуйтесь реквизитами сети из раздела **Виртуальные сети** → **Сети**.
-
+- Если вы подключаетесь к {linkto(../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}, настройте вручную IP-адреса в консоли UserGate. Воспользуйтесь реквизитами сети из раздела **Виртуальные сети** → **Сети**.
 {/note}
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=marketplace-usergate-start-delete]}
 
 Работающая инфраструктура сервиса потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [Удалите](../../instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса UserGate NGFW.
-- [Удалите](/ru/networks/vnet/instructions/net#udalenie_seti) сеть, используемую для сервиса.
-- [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, созданный во время развертывания сервиса.
+- {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-delete)[text=Удалите]} инстанс сервиса UserGate NGFW.
+- {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=Удалите]} сеть, используемую для сервиса.
+- {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Удалите]} Floating IP-адрес, созданный во время развертывания сервиса.

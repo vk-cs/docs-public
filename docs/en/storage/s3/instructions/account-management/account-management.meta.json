@@ -1,9 +1,23 @@
 {
-    "title": "Creating and managing an account",
-      "shortDescription": "",
-      "metaDescription": "Description Access to the resources of the object storage VK Cloud",
-    "sectionTitle": "Creating and managing an account",
-    "icon": "",
-    "weight": 1,
-    "uuid": "e0c725c3-a177-4def-9703-3c07123044f7"
+  "title": "Creating and managing an account",
+  "shortDescription": "",
+  "metaDescription": "Description Access to the resources of the object storage VK Cloud",
+  "sectionTitle": "Creating and managing an account",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e0c725c3-a177-4def-9703-3c07123044f7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

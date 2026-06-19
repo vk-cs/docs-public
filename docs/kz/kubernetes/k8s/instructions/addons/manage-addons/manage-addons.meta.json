@@ -1,8 +1,18 @@
 {
   "title": "Аддондарды басқару",
-  "shortDescription": "Kubernetes кластеріндегі аддондарды қалай қарауғал, орнатуғал және жоюғал болады",
-  "metaDescription": "Kubernetes кластеріндегі аддондарды қалай қарауғал, орнатуғал және жоюғал болады",
+  "shortDescription": "Kubernetes кластеріндегі аддондарды қалай қарауға, орнатуға және жоюға болады",
+  "metaDescription": "Kubernetes кластеріндегі аддондарды қалай қарауға, орнатуға және жоюға болады",
   "sectionTitle": "Аддондарды басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

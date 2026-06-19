@@ -1,9 +1,14 @@
 {
-    "title": "Floating IP addresses",
-      "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
-      "metaDescription": "",
-    "sectionTitle": "Floating IP addresses",
-    "icon": "",
-    "weight": 1,
-    "uuid": "4fd1aa43-3e2f-4d80-8541-996083376d4d"
+  "title": "Floating IP addresses",
+  "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
+  "metaDescription": "",
+  "sectionTitle": "Floating IP addresses",
+  "icon": "",
+  "weight": 1,
+  "uuid": "4fd1aa43-3e2f-4d80-8541-996083376d4d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

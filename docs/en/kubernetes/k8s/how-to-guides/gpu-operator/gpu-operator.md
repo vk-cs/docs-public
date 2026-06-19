@@ -1,4 +1,4 @@
-Cloud Containers allows you to create [GPU clusters](/en/kubernetes/k8s/concepts/flavors#gpu) for machine learning or big data processing.
+Cloud Containers allows you to create [GPU clusters](/en/kubernetes/k8s/concepts/flavors) for machine learning or big data processing.
 
 A GPU can be used in a cluster in the following ways:
 
@@ -11,7 +11,7 @@ This article shows how to create a cluster with a GPU node and test its operatio
 ## Before you start
 
 1. [Connect](/en/computing/gpu/connect) the Cloud GPU service if it is not connected yet.
-1. [Create a cluster](/en/kubernetes/k8s/instructions/create-cluster) with GPU if such a cluster has not been created yet. Specify the following parameters:
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a cluster with GPU if not done so already. Specify the following parameters:
 
    - Select a network with Internet access.
    - Leave the **Assign external IP** option enabled.
@@ -284,7 +284,4 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
 ## Delete unused resources
 
-A running Cloud Containers cluster is billed and consumes compute resources. If you no longer need it:
-
-- [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) it to use later.
-- [Delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster.md)}

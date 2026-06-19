@@ -1,10 +1,17 @@
 {
   "title": "Cloud Kafka",
   "shortDescription": "Распределенная потоковая платформа для передачи данных между приложениями",
-  "metaDescription": "Сервис для создания и управления кластерами Apache Kafka в инфраструктуре VK Cloud",
+  "metaDescription": "Сервис для создания и управления кластерами Apache Kafka в инфраструктуре VK Data Platform",
   "sectionTitle": "Cloud Kafka",
   "icon": "",
   "weight": 8,
   "isBeta": true,
-  "uuid": "1fe98b4c-147f-4af9-ab57-76a24debfbab"
+  "uuid": "1fe98b4c-147f-4af9-ab57-76a24debfbab",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

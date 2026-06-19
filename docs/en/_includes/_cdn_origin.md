@@ -8,10 +8,11 @@
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-       {cut(Examples)}
-       - `example.org`
-       - `images.example.com`
-       {/cut}
+   {cut(Examples)}
+
+   - `example.org`
+   - `images.example.com`
+   {/cut}
 
 1. Specify the type of origin in the **Source type** parameter. It can be active or reserve.
 
@@ -58,10 +59,11 @@
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-       {cut(Examples)}
-       - `example.org`
-       - `images.example.com`
-       {/cut}
+   {cut(Examples)}
+
+   - `example.org`
+   - `images.example.com`
+   {/cut}
 
 {/includetag}
 
@@ -74,10 +76,11 @@ In the **Content Source** parameter, specify the URL that CDN servers will acces
 - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
 - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
 
-    {cut(Examples)}
-    - `203.0.113.222:8080`
-    - `images.example.com`
-    {/cut}
+{cut(Examples)}
+
+- `203.0.113.222:8080`
+- `images.example.com`
+{/cut}
 
 {/includetag}
 

@@ -1,8 +1,18 @@
 {
   "title": "Тұрақты томдар және PVC",
   "shortDescription": "Тұрақты томдармен жұмыс істеу үшін әртүрлі типтегі Persistent Volume Claim-ді қалай пайдалану керек",
-  "metaDescription": "Kubernetes-те тұрақты томдармен жұмыс істеу үшін әртүрлі типтегі Persistent Volume Claim-ді қалай пайдалану керегін біліңіз. Томғал қол жеткізу режимдері. PV және PVC өмірлік циклі",
+  "metaDescription": "Kubernetes-те тұрақты томдармен жұмыс істеу үшін әртүрлі типтегі Persistent Volume Claim-ді қалай пайдалану керегін біліңіз. Томға қол жеткізу режимдері. PV және PVC өмірлік циклі",
   "sectionTitle": "Тұрақты томдар және PVC",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

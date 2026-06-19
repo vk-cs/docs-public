@@ -5,5 +5,15 @@
   "sectionTitle": "Замена root-диска ВМ",
   "icon": "",
   "weight": 7,
-  "uuid": "24ac6d98-1c40-4fd8-b30e-8e7e7c3495f3"
+  "uuid": "24ac6d98-1c40-4fd8-b30e-8e7e7c3495f3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

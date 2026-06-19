@@ -4,5 +4,19 @@
   "metaDescription": "Бөлімде VK Cloud құжаттамасында қолданылатын әртүрлі құрылымдық элементтер мен рәсімдеу ерекшеліктері келтірілген.",
   "sectionTitle": "Құжаттама порталы туралы",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

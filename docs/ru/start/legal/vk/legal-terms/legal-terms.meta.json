@@ -1,11 +1,16 @@
 {
-    "title": "Условия использования",
-      "shortDescription": "",
-      "metaDescription": "Условия использования платформы «VK Cloud»   Настоящий документ представляет собой соглашение (далее – «Соглашение»), регулирующее отношения межд",
-    "sectionTitle": "Условия использования",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 0,
-    "uuid": "9f04a5bf-ba6b-43c2-9c2c-a7443847fd10"
+  "title": "Условия использования",
+  "shortDescription": "",
+  "metaDescription": "Условия использования платформы «VK Cloud»   Настоящий документ представляет собой соглашение (далее – «Соглашение»), регулирующее отношения межд",
+  "sectionTitle": "Условия использования",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 0,
+  "uuid": "9f04a5bf-ba6b-43c2-9c2c-a7443847fd10",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

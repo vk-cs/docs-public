@@ -1,81 +1,104 @@
-VK Cloud позволяет использовать интерфейс командной строки для управления сервисами VK Object Storage и автоматизации их работы.
+# {heading(CLI)[id=s3-connect-cli]}
 
-## Подготовительные шаги
+{var(s3)} поддерживает управление сервисом через интерфейс командной строки.
 
-1. [Создайте аккаунт и ключ доступа](../../instructions/access-management/access-keys) к VK Object Storage в личном кабинете VK Cloud. Сохраните секретный ключ доступа (**Secret Key**).
+## {heading(Настройте подключение к {var(s3)})[id=s3-connect-cli-configure]}
 
-2. Установите нужные инструменты:
+1. {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=Создайте аккаунт и ключ доступа]} к {var(s3)} в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}. Сохраните секретный ключ доступа (**Secret Key**).
+1. Установите нужные инструменты:
 
-    - [AWS CLI](../../../../tools-for-using-services/cli/aws-cli);
-    - [s3cmd CLI](https://s3tools.org/download).
-
-## 1. Настройте подключение к VK Object Storage
+   - {ifdef(public)}[AWS CLI](../../../../tools-for-using-services/cli/aws-cli){/ifdef}{ifdef(s3,s3-pdf)}[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){/ifdef};
+   - [s3cmd CLI](https://s3tools.org/download).
 
 {tabs}
 
 {tab(AWS CLI)}
 
-  1. В консоли выполните команду:
+1. В консоли выполните команду:
 
-      ```console
-      aws configure
-      ```
+   ```console
+   aws configure
+   ```
 
-  1. Укажите идентификатор ключа доступа, полученный при создании аккаунта VK Object Storage.
-  1. Укажите секретный ключ доступа **Secret Key**, полученный при создании аккаунта VK Object Storage. Секретный ключ должен соответствовать тому идентификатору ключа, который вы указали в консоли.
-  1. Укажите регион размещения сервиса VK Object Storage по умолчанию. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+1. Укажите идентификатор ключа доступа, полученный при создании аккаунта {var(s3)}.
+1. Укажите секретный ключ доступа **Secret Key**, полученный при создании аккаунта {var(s3)}. Секретный ключ должен соответствовать тому идентификатору ключа, который вы указали в консоли.
+   {ifdef(s3,s3-pdf)}
+1. Укажите регион размещения сервиса {var(s3)}, указанный при установке сервиса. По умолчанию используется значение `ru-msk`.
+   {/ifdef}
+   {ifdef(public)}
+1. Укажите регион размещения сервиса {var(s3)}. Настройка должна соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `ru-msk` — регион Москва;
-      - `kz-ast` — регион Казахстан.
+   - `ru-msk` — регион Москва;
+   - `kz-ast` — регион Казахстан.
+   {/ifdef}
 
-  1. Укажите выходной формат по умолчанию. Эта настройка определяет, в каком виде AWS CLI отобразит результат выполнения команды. Доступные варианты:
+1. Укажите выходной формат по умолчанию. Эта настройка определяет, в каком виде AWS CLI отобразит результат выполнения команды. Доступные варианты:
 
-      - `json` — данные отображаются в формате JSON, значение по умолчанию;
-      - `yaml` — данные отображаются в формате YAML;
-      - `yaml-stream` — данные передаются в потоковом режиме и формируются в формате YAML;
-      - `текст` — строковые значения разделены табуляцией;
-      - `таблица` — строковые значения разделены `|`.
+   - `json` — данные отображаются в формате JSON, значение по умолчанию;
+   - `yaml` — данные отображаются в формате YAML;
+   - `yaml-stream` — данные передаются в потоковом режиме и формируются в формате YAML;
+   - `текст` — строковые значения разделены табуляцией;
+   - `таблица` — строковые значения разделены `|`.
 
-  AWS CLI хранит эту информацию в профиле (наборе настроек), названном `default` в credentials-файле. Информация из этого профиля используется, когда запускается команда без указания профиля.
+   AWS CLI хранит эту информацию в профиле (наборе настроек), названном `default` в credentials-файле. Информация из этого профиля используется, когда запускается команда без указания профиля.
 
 {/tab}
 
 {tab(s3cmd CLI)}
 
-  1. В консоли выполните команду:
+1. В консоли выполните команду:
 
-      ```console
-      s3cmd --configure
-      ```
+   ```console
+   s3cmd --configure
+   ```
 
-  1. Укажите идентификатор ключа доступа, полученный при создании аккаунта VK Object Storage.
-  1. Укажите секретный ключ доступа **Secret Key**, полученный при создании аккаунта VK Object Storage. Секретный ключ должен соответствовать тому идентификатору ключа, который вы указали в консоли.
-  1. Укажите регион размещения сервиса VK Object Storage по умолчанию. Настройка должна соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+1. Укажите идентификатор ключа доступа, полученный при создании аккаунта {var(s3)}.
+1. Укажите секретный ключ доступа **Secret Key**, полученный при создании аккаунта {var(s3)}. Секретный ключ должен соответствовать тому идентификатору ключа, который вы указали в консоли.
+   {ifdef(s3,s3-pdf)}
+1. Укажите регион размещения сервиса {var(s3)}, указанный при установке сервиса. По умолчанию используется значение `ru-msk`.
+   {/ifdef}
+   {ifdef(public)}
+1. Укажите регион размещения сервиса {var(s3)}. Настройка должна соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
-      - `ru-msk` — регион Москва;
-      - `kz-ast` — регион Казахстан.
+   - `ru-msk` — регион Москва;
+   - `kz-ast` — регион Казахстан.
+   {/ifdef}
 
-  1. Укажите **S3 Endpoint** — имя хоста для подключения:
+1. Укажите **S3 Endpoint** — имя хоста для подключения{ifdef(s3,s3-pdf)}, указанное при установке сервиса.{/ifdef}{ifdef(public)}:
 
-      - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+   - `hb.vkcloud-storage.ru` или `hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+   - `hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+   {/ifdef}
 
-  1. Добавьте шаблон имени хоста для доступа к бакету. В параметре **DNS-style bucket+hostname:port template for accessing a bucket** укажите значение:
+1. Добавьте шаблон имени хоста для доступа к бакету. В параметре **DNS-style bucket+hostname:port template for accessing a bucket** укажите значение:
 
-      - `%(bucket)s.hb.vkcloud-storage.ru` или `%(bucket)s.hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `%(bucket)s.hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+   {ifdef(s3,s3-pdf)}
+      
+   ```shell
+   %(bucket)s.<ДОМЕННОЕ_ИМЯ>`
+   ```
 
-  1. Остальные настройки оставьте по умолчанию.
+   Здесь `<ДОМЕННОЕ_ИМЯ>` — доменное имя, указанное при установке сервиса.
 
-  1. Если настройки введены корректно, появится сообщение `Success. Your access key and secret key worked fine :-)`. Сохраните настройки.
+   {/ifdef}
 
-  S3cmd CLI хранит собранную информацию в файле `~/.s3cfg`, его содержимое можно изменить вручную.
+   {ifdef(public)}
+
+   - `%(bucket)s.hb.vkcloud-storage.ru` или `%(bucket)s.hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+   - `%(bucket)s.hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   {/ifdef}
+
+1. Остальные настройки оставьте по умолчанию.
+1. Если настройки введены корректно, появится сообщение `Success. Your access key and secret key worked fine :-)`. Сохраните настройки.
+
+   S3cmd CLI хранит собранную информацию в файле `~/.s3cfg`, его содержимое можно изменить вручную.
 
 {/tab}
 
 {/tabs}
 
-## 2. Проверьте подключение к VK Object Storage
+## {heading(Проверьте подключение к {var(s3)})[id=s3-connect-cli-check]}
 
 Выполните команду для вывода списка бакетов:
 
@@ -83,28 +106,33 @@ VK Cloud позволяет использовать интерфейс кома
 
 {tab(AWS CLI)}
 
-  ```console
-  aws s3 ls --endpoint-url <URL_СЕРВИСА>
-  ```
+```console
+aws s3 ls --endpoint-url <ENDPOINT_URL>
+```
+
 Здесь:
 
-- `<URL_СЕРВИСА>` — должен соответствовать [региону](../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+  {ifdef(public)}
+- `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
   - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+  {/ifdef}
+  {ifdef(s3,s3-pdf)}
+- `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+  {/ifdef}
 
 {note:warn}
-
 По умолчанию AWS CLI настроен на работу с серверами Amazon, поэтому обязательно указывайте параметр `--endpoint-url` при выполнении любой команды.
-
 {/note}
 
 {/tab}
 
 {tab(s3cmd CLI)}
 
-  ```console
-  s3cmd ls
-  ```
+```console
+s3cmd ls
+```
 {/tab}
 
 {/tabs}
@@ -116,7 +144,7 @@ VK Cloud позволяет использовать интерфейс кома
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html);
 - [s3cmd CLI](https://s3tools.org/kb).
 
-## Примеры команд
+## {heading(Примеры команд)[id=s3-connect-cli-examples]}
 
 Создание бакета:
 
@@ -124,29 +152,31 @@ VK Cloud позволяет использовать интерфейс кома
 
 {tab(AWS CLI)}
 
-  ```console
-  aws s3 mb s3://<ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+aws s3 mb s3://<ИМЯ_БАКЕТА> --endpoint-url <ENDPOINT_URL>
+```
 
-  ```console
-  make_bucket: new-bucket-aws-cli
-  ```
+{cut(Пример результата выполнения команды)}
 
-  {/cut}
+```console
+make_bucket: new-bucket-aws-cli
+```
+
+{/cut}
 {/tab}
 
 {tab(s3cmd CLI)}
 
-  ```console
-  s3cmd mb s3://<ИМЯ_БАКЕТА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+s3cmd mb s3://<ИМЯ_БАКЕТА>
+```
 
-  ```console
-  Bucket 's3://my-bucket/' created
-  ```
-  {/cut}
+{cut(Пример результата выполнения команды)}
+
+```console
+Bucket 's3://my-bucket/' created
+```
+{/cut}
 
 {/tab}
 
@@ -158,29 +188,31 @@ VK Cloud позволяет использовать интерфейс кома
 
 {tab(AWS CLI)}
 
-  ```console
-  aws s3 cp <ПУТЬ_К_ЛОКАЛЬНОМУ_ФАЙЛУ> s3://<ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+aws s3 cp <ПУТЬ_К_ЛОКАЛЬНОМУ_ФАЙЛУ> s3://<ИМЯ_БАКЕТА> --endpoint-url <ENDPOINT_URL>
+```
 
-  ```console
-  upload: ..\Diagrams\example.svg to s3://new-bucket-aws-cli/example.svg
-  ```
-  {/cut}
+{cut(Пример результата выполнения команды)}
+
+```console
+upload: ..\Diagrams\example.svg to s3://new-bucket-aws-cli/example.svg
+```
+{/cut}
 
 {/tab}
 
 {tab(s3cmd CLI)}
 
-  ```console
-  s3cmd put <ПУТЬ_К_ЛОКАЛЬНОМУ_ФАЙЛУ> s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+s3cmd put <ПУТЬ_К_ЛОКАЛЬНОМУ_ФАЙЛУ> s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА>
+```
 
-  ```console
-  upload: 'local-file' -> 's3://my-bucket/new-object'
-  ```
-  {/cut}
+{cut(Пример результата выполнения команды)}
+
+```console
+upload: 'local-file' -> 's3://my-bucket/new-object'
+```
+{/cut}
 
 {/tab}
 
@@ -192,38 +224,40 @@ VK Cloud позволяет использовать интерфейс кома
 
 {tab(AWS CLI)}
 
-  ```console
-  aws s3 ls s3://<ИМЯ_БАКЕТА> --endpoint-url <URL_СЕРВИСА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+aws s3 ls s3://<ИМЯ_БАКЕТА> --endpoint-url <ENDPOINT_URL>
+```
 
-  ```console
-                                  PRE folder/
-        2023-09-27 11:45:05     421326 picture-1.jpg
-        2023-09-27 11:47:37       2713 picture-2.png
-        2023-09-27 11:48:37       2662 picture-3.png
-        2023-09-27 10:31:02      48314 picture-4.png
-        2023-09-27 11:48:56        361 delete-picture.png
-  ```
-  {/cut}
+{cut(Пример результата выполнения команды)}
+
+```console
+                               PRE folder/
+  2023-09-27 11:45:05     421326 picture-1.jpg
+  2023-09-27 11:47:37       2713 picture-2.png
+  2023-09-27 11:48:37       2662 picture-3.png
+  2023-09-27 10:31:02      48314 picture-4.png
+  2023-09-27 11:48:56        361 delete-picture.png
+```
+{/cut}
 
 {/tab}
 
 {tab(s3cmd CLI)}
 
-  ```console
-  s3cmd ls s3://<ИМЯ_БАКЕТА>
-  ```
-  {cut(Пример результата выполнения команды)}
+```console
+s3cmd ls s3://<ИМЯ_БАКЕТА>
+```
 
-  ```console
-      2023-10-06 05:37      2713   s3://my-bucket/picture-1.png
-      2023-10-06 05:36       361   s3://my-bucket/delete-picture.png
-      2023-10-06 05:38     56849   s3://my-bucket/icon.ico
-      2023-10-06 05:36     54970   s3://my-bucket/scheme.svg
-      2023-10-05 06:58    110207   s3://my-bucket/scheme-picture.png
-  ```
-  {/cut}
+{cut(Пример результата выполнения команды)}
+
+```console
+  2023-10-06 05:37      2713   s3://my-bucket/picture-1.png
+  2023-10-06 05:36       361   s3://my-bucket/delete-picture.png
+  2023-10-06 05:38     56849   s3://my-bucket/icon.ico
+  2023-10-06 05:36     54970   s3://my-bucket/scheme.svg
+  2023-10-05 06:58    110207   s3://my-bucket/scheme-picture.png
+```
+{/cut}
 
 {/tab}
 

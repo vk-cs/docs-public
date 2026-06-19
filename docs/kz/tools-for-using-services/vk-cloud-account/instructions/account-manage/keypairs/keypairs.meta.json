@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud платформасындағы SSH кілттерімен қолжетімді операциялар.",
   "sectionTitle": "Кілттік жұптарды басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

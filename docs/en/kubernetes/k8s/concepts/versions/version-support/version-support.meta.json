@@ -1,10 +1,26 @@
 {
-    "title": "Kubernetes version support policy",
-      "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
-      "metaDescription": "Kubernetes,K8S,version,policy,support",
-    "sectionTitle": "Kubernetes version support policy",
-    "icon": "",
-    "weight": 1,
-    "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca",
-    "additionalUuids": ["006ac7ba-9931-46bf-8b98-6951357dbf5f"]    
+  "title": "Kubernetes version support policy",
+  "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
+  "metaDescription": "Kubernetes,K8S,version,policy,support",
+  "sectionTitle": "Kubernetes version support policy",
+  "icon": "",
+  "weight": 1,
+  "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca",
+  "additionalUuids": [
+    "006ac7ba-9931-46bf-8b98-6951357dbf5f"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

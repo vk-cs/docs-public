@@ -1,6 +1,8 @@
+# {heading(AWS CLI)[id=tools-cli-aws]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-AWS пәрмен жолы интерфейсі (AWS CLI) VK Cloud сервистерімен консоль арқылы жұмыс істеуге мүмкіндік береді.
+AWS пәрмен жолы интерфейсі (AWS CLI) {var(cloud)} сервистерімен консоль арқылы жұмыс істеуге мүмкіндік береді.
 
 AWS CLI екі нұсқада қолжетімді:
 
@@ -9,20 +11,20 @@ AWS CLI екі нұсқада қолжетімді:
 
  {note:info}
 
-VK Object Storage сервисі AWS CLI келесі нұсқаларын қолдайды: 1.36.40 немесе төмен, 2.22.35 немесе төмен.
+{var(s3)} сервисі AWS CLI келесі нұсқаларын қолдайды: 1.36.40 немесе төмен, 2.22.35 немесе төмен.
 
 {/note}
 
 AWS CLI пәрмендер жиынтығы және қосымша баптаулар туралы толық ақпарат [әзірлеушінің сайтында](https://docs.aws.amazon.com/cli/index.html) қолжетімді.
 
-## 1. AWS клиентін орнатыңыз
+## {heading({counter(aws-cli)}. AWS клиентін орнатыңыз)[id=aws-install]}
 
 {tabs}
 
 {tab(Linux)}
 Талаптар:
 
-- CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 and Linux ARM жүйелерінің 64-биттік нұсқасы;
+- CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 және Linux ARM жүйелерінің 64-биттік нұсқасы;
 - жүктелген пакетті архивтен шығару мүмкіндігі: `unzip` пәрмені немесе соған ұқсас құрал;
 - `glibc`, `groff` және `less` пакеттері орнатылған және қолжетімді болуы керек.
 
@@ -84,7 +86,7 @@ Linux ARM үшін орындаңыз:
 
 {/tabs}
 
-## 2. AWS орнатылуын тексеріңіз
+## {heading({counter(aws-cli)}. AWS орнатылуын тексеріңіз)[id=aws-check]}
 
 Консольде пәрменді орындаңыз:
 

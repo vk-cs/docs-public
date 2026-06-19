@@ -1,0 +1,14 @@
+{
+  "title": "Конфигурация файлдары",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform-ды басқару үшін Terraform-провайдерін қалай пайдалану керек. Terraform конфигурация файлдарының сипаттамасы: провайдер конфигурация файлы, ресурс конфигурация файлдары",
+  "sectionTitle": "Конфигурация файлдары",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -5,5 +5,10 @@
   "sectionTitle": "Управление сервисом",
   "icon": "",
   "weight": 2,
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "849d8b84-ecc7-4c93-a8a6-737ac273798b"
 }

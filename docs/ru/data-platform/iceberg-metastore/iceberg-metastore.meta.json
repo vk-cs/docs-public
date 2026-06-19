@@ -1,9 +1,16 @@
 {
   "title": "Cloud Iceberg Metastore",
   "shortDescription": "Управление метаданными таблиц Apache Iceberg",
-  "metaDescription": "Сервис для управления метаданными таблиц Apache Iceberg в инфраструктуре VK Cloud",
+  "metaDescription": "Сервис для управления метаданными таблиц Apache Iceberg в VK Data Platform",
   "sectionTitle": "Cloud Iceberg Metastore",
   "icon": "",
   "weight": 6,
-  "uuid": "9a47ed73-ffca-445d-9686-51eee32b6b38"
+  "uuid": "9a47ed73-ffca-445d-9686-51eee32b6b38",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-# {heading(preview секциясы)[id=saas_preview]}
+# {heading(`preview` секциясы)[id=saas_preview]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

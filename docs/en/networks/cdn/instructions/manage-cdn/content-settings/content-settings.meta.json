@@ -1,9 +1,14 @@
 {
-    "title": "Content managing",
-      "shortDescription": "How to clear or preload a CDN resource cache, configure compression, optimize content delivery, configure response codes",
-      "metaDescription": "How to clear or preload a CDN resource cache, configure compression, optimize content delivery, configure response codes",
-    "sectionTitle": "Content managing",
-    "icon": "",
-    "weight": 6,
-    "uuid": "bffbf18f-cf65-4b64-817e-100caf56d1e2"
+  "title": "Content managing",
+  "shortDescription": "How to clear or preload a CDN resource cache, configure compression, optimize content delivery, configure response codes",
+  "metaDescription": "How to clear or preload a CDN resource cache, configure compression, optimize content delivery, configure response codes",
+  "sectionTitle": "Content managing",
+  "icon": "",
+  "weight": 6,
+  "uuid": "bffbf18f-cf65-4b64-817e-100caf56d1e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

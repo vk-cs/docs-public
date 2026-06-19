@@ -5,5 +5,10 @@
   "sectionTitle": "ВМ перестала передавать пакеты в клиентской сети VLAN",
   "icon": "",
   "weight": 12,
-  "uuid": "2a5bb3b3-467a-4aa1-8d46-37c75c412949"
+  "uuid": "2a5bb3b3-467a-4aa1-8d46-37c75c412949",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

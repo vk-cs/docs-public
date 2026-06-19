@@ -5,5 +5,12 @@
   "sectionTitle": "Ошибка CORS при загрузке файлов в бакет веб-приложением",
   "icon": "",
   "weight": 8,
-  "uuid": "ebf0aa2a-779c-4512-9c49-e1387412d423"
+  "uuid": "ebf0aa2a-779c-4512-9c49-e1387412d423",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

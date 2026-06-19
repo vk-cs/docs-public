@@ -5,5 +5,14 @@
   "sectionTitle": "Управление дашбордами и графиками",
   "icon": "",
   "weight": 5,
-  "uuid": "4cf9aa02-9049-4e35-a7f7-f0402fc20235"
+  "uuid": "4cf9aa02-9049-4e35-a7f7-f0402fc20235",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

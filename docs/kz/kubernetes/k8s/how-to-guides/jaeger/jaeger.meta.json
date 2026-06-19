@@ -5,5 +5,10 @@
   "sectionTitle": "Jaeger пайдалану",
   "icon": "",
   "weight": 12,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

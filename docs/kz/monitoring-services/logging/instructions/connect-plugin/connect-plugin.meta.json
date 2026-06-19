@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud жүйесіне логтар жіберу үшін vkcloudlogs-fluent-bit-plugin плагинін қалай орнатып, баптауға болады.",
   "sectionTitle": "Плагинді орнату",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

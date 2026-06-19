@@ -1,8 +1,10 @@
+# {heading(Быстрый старт)[id=mlflowdeploy-quickstart]}
+
 Быстрый старт поможет вам начать работу с сервисом MLflow Deploy и познакомиться с его возможностями.
 
 Пройдя все шаги быстрого старта, вы научитесь создавать инстанс MLflow Deploy и подключаться к нему.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=mlflowdeploy-quickstart-before]}
 
 {note:info}
 
@@ -10,7 +12,7 @@
 
 {/note}
 
-1. [Создайте](../../mlflow/quick-start#1_create_mlflow) инстанс MLflow, если это не было сделано ранее.
+1. [Создайте](../../mlflow/quick-start#mlp-mlflow-quickstart-1_create_mlflow) инстанс MLflow, если это не было сделано ранее.
 1. Сохраните:
 
     - имена инстанса MLflow и сети, к которой он подключен;
@@ -18,9 +20,9 @@
 
     Эти данные потребуются далее.
 
-## 1. Создайте инстанс MLflow Deploy
+## {heading(1. Создайте инстанс MLflow Deploy)[id=mlflowdeploy-quickstart-1_create-instance]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform**.
 1. Нажмите кнопку **Создать инстанс** в карточке **MLflow Deploy**.
 1. На шаге **Конфигурация** выберите инстанс MLflow, к которому будет подключен инстанс MLflow Deploy.
@@ -29,13 +31,13 @@
 1. Нажмите кнопку **Создать инстанс**.
 1. Дождитесь создания инстанса. Обычно это занимает 10–15 минут. Когда инстанс будет создан, откроется страница с его характеристиками.
 
-## 2. Подключитесь к инстансу
+## {heading(2. Подключитесь к инстансу)[id=mlflowdeploy-quickstart-2_connect-instance]}
 
 1. Нажмите на ссылку в столбце **DNS-имя** для созданного инстанса.
 1. Авторизуйтесь на инстансе MLflow Deploy, используя учетные данные администратора инстанса MLflow.
 
 Откроется рабочий стол инстанса MLflow Deploy.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=mlflowdeploy-quickstart-delete_unused]}
 
-Инстансы MLflow Deploy тарифицируются. Если инстанс вам больше не нужен, [удалите](../instructions/manage#delete) его.
+Инстансы MLflow Deploy тарифицируются. Если инстанс вам больше не нужен, [удалите](../instructions/manage#mlflowdeploy-instructions-manage-delete) его.

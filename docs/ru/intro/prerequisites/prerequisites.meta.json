@@ -1,0 +1,14 @@
+{
+  "title": "Настройка инструментов",
+  "shortDescription": "Как выполнить вход в личный кабинет, подключиться к OpenStack CLI или к API, установить Terraform",
+  "metaDescription": "Настройка инструментов",
+  "sectionTitle": "Настройка инструментов",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

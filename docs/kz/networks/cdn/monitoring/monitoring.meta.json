@@ -4,5 +4,10 @@
   "metaDescription": "CDN-ресурстар трафигі және қолжетімді метрикалар бойынша статистиканы алу",
   "sectionTitle": "Статистика",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

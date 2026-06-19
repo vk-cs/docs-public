@@ -4,5 +4,10 @@
   "metaDescription": "CDN VK Cloud: жеке кабинет арқылы CDN-ге контентті жүктеу.",
   "sectionTitle": "CDN-ге контентті жүктеу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

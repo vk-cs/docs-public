@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Әрекеттер реті",
   "sectionTitle": "Әрекеттер реті",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

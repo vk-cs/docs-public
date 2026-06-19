@@ -5,5 +5,10 @@
   "sectionTitle": "Kgateway",
   "icon": "",
   "weight": 11,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -114,7 +114,7 @@ To add shielding to the CDN resource configuration, get a list of available prec
 
 SSL certificates are used when delivering content via HTTPS. You can add your own SSL certificate, use a free [Let's Encrypt](https://letsencrypt.org/ru/) certificate, or not use an SSL certificate at all, in which case the content will be delivered via HTTP.
 
-If you plan to use a Let's Encrypt certificate or not use an SSL certificate at all, go to [adding a CDN resource](#cdn).
+If you plan to use a Let's Encrypt certificate or not use an SSL certificate at all, go to [adding a CDN resource]().
 
 1. Place your SSL certificate files with the public part `certificate.pem` and the private part `private-key.key` in the directory from which you will create the resources.
 1. Check that the files contain all the certificate lines.

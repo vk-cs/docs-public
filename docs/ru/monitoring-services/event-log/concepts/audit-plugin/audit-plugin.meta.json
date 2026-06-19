@@ -5,5 +5,10 @@
   "sectionTitle": "Плагин аудита слоя данных",
   "icon": "",
   "weight": 3,
-  "uuid": "21bb1d29-8d2a-41ec-9a80-18445b2975dc"
+  "uuid": "21bb1d29-8d2a-41ec-9a80-18445b2975dc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

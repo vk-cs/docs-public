@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервистік пакетті дүкенге жүктеу",
   "sectionTitle": "Сервистік пакетті дүкенге жүктеу",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

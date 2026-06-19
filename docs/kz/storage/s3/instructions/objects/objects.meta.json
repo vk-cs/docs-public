@@ -1,8 +1,15 @@
 {
   "title": "Объектілер",
-  "shortDescription": "VK Cloud объектілік сақтау қоймасындағы объектілермен операциялар",
-  "metaDescription": "VK Cloud объектілік сақтау қоймасындағы объектілермен операциялар",
+  "shortDescription": "VK Cloud объектілік қоймасындағы объектілермен операциялар",
+  "metaDescription": "VK Cloud объектілік қоймасындағы объектілермен операциялар.",
   "sectionTitle": "Объектілер",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud үшін Tarantool in-memory есептеу платформасының сипаттамасы.",
   "sectionTitle": "Tarantool",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

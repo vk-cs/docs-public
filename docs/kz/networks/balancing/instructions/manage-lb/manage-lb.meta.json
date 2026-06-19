@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud Load Balancing сервисінде негізгі операцияларды қалай орындау керек. Жүктеме теңгергіштерін қосу және жою, жария IP-мекенжайларын басқару",
   "sectionTitle": "Жүктеме теңгергіштерін басқару",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

@@ -1,6 +1,8 @@
-Чтобы запустить задание на [созданном](/ru/ml/spark-to-k8s/instructions/create) кластере Cloud Spark:
+# {heading(Запуск заданий в кластере Spark)[id=mlspark-instructions-launch]}
 
-1. [Авторизуйтесь](../../ml-platform-library/authz) в библиотеке Cloud ML Platform.
+Чтобы запустить задание на {linkto(../create#mlspark-instructions-create)[text=созданном]} кластере Cloud Spark:
+
+1. {linkto(../../ml-platform-library/authz#mlspark-library-authz)[text=Авторизуйтесь]} в библиотеке Cloud ML Platform.
 
     {cut(Пример скрипта Python)}
 
@@ -15,18 +17,18 @@
 
 1. Создайте манифест `job_manifest` с описанием задания одним из способов:
 
-    - Получите стандартный манифест с помощью метода [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest).
-    - Загрузите манифест из YAML-файла с помощью метода [get_manifest_from_yaml_file](../../ml-platform-library/library-reference/spark-jobs#get_manifest_from_yaml_file).
+    - Получите стандартный манифест с помощью метода [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_default_manifest).
+    - Загрузите манифест из YAML-файла с помощью метода {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file)[text=get_manifest_from_yaml_file]}.
 
 1. (Опционально) [Создайте](/ru/storage/s3/instructions/buckets/create-bucket) дополнительные бакеты для хранения файлов или зависимостей.
 
     {note:info}
 
-    По умолчанию кластер Cloud Spark имеет доступ к бакету, имя которого указано в параметре `s3_bucket_name`. Получить это имя можно с помощью метода [get_clusters](../../ml-platform-library/library-reference/clusters#get_clusters) или в разделе **ML Platform → Spark в k8s** личного кабинета VK Cloud на странице свойств кластера Cloud Spark.
+    По умолчанию кластер Cloud Spark имеет доступ к бакету, имя которого указано в параметре `s3_bucket_name`. Получить это имя можно с помощью метода {linkto(../../ml-platform-library/library-reference/clusters#mlspark-library-reference-clusters-get_clusters)[text=get_clusters]} или в разделе **ML Platform → Spark в k8s** личного кабинета {var(cloud)} на странице свойств кластера Cloud Spark.
 
     {/note}
 
-1. (Опционально) [Предоставьте](../../instructions/buckets) кластеру Cloud Spark доступ к дополнительно созданным бакетам.
+1. (Опционально) {linkto(../../instructions/buckets#mlspark-instructions-buckets)[text=Предоставьте]} кластеру Cloud Spark доступ к дополнительно созданным бакетам.
 1. (Опционально) [Загрузите](/ru/storage/s3/instructions/objects/upload-object) в бакеты файлы и зависимости, необходимые для выполнения задания Spark.
 
     {cut(Пример скрипта Python)}
@@ -90,9 +92,9 @@
 
       {/cut}
 
-    Больше примеров настройки манифеста приведено в описании метода [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info).
+    Больше примеров настройки манифеста приведено в описании метода {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-get_default_manifest-signature)[text=get_default_manifest-signature]}.
 
-1. Отправьте задание Spark в кластер с помощью метода [spark_submit_job](../../ml-platform-library/library-reference/spark-jobs#spark_submit_job). Чтобы указать путь к файлу с кодом приложения, используйте один из способов:
+1. Отправьте задание Spark в кластер с помощью метода {linkto(../../ml-platform-library/library-reference/spark-jobs#mlspark-library-reference-spark-jobs-spark_submit_job)[text=spark_submit_job]}. Чтобы указать путь к файлу с кодом приложения, используйте один из способов:
 
     {tabs}
     
@@ -172,6 +174,6 @@
 
 {note:info}
 
-Подробные примеры запуска заданий Spark приведены в разделах [Базовая работа с заданиями Spark](../../how-to-guides/submit-basic-job-pi) и [Продвинутая работа с заданиями Spark](../../how-to-guides/submit-advanced-job-clickhouse).
+Подробные примеры запуска заданий Spark приведены в разделах {linkto(../../how-to-guides/submit-basic-job-pi#mlspark-htg-basic)[text=Базовая работа с заданиями Spark]} и {linkto(../../how-to-guides/submit-advanced-job-clickhouse#mlspark-htg-advanced)[text=Продвинутая работа с заданиями Spark]}.
 
 {/note}

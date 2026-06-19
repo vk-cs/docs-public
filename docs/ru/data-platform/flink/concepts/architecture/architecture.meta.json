@@ -1,9 +1,16 @@
 {
   "title": "Архитектура сервиса",
   "shortDescription": "Как устроен сервис Cloud Flink",
-  "metaDescription": "Архитектура сервиса Cloud Flink в VK Cloud",
+  "metaDescription": "Узнайте как устроена архитектура сервиса Cloud Flink в VK Data Platform",
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "40743070-0dc1-4727-84e4-ef84c1ae416c"
+  "uuid": "40743070-0dc1-4727-84e4-ef84c1ae416c",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

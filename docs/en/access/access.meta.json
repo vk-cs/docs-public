@@ -4,6 +4,9 @@
   "metaDescription": "Access management, system login, identity federations, and role model",
   "hidden": true,
   "weight": 11,
+  "build": {
+    "for": ["public"]
+  },
   "icon": "",
   "uuid": "82d021c2-f21c-4917-89ba-6073e1cc1e88"
 }

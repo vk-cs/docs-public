@@ -4,5 +4,10 @@
   "metaDescription": "How to start",
   "weight": 0,
   "hidden": true,
-  "uuid": "49a792b1-ff95-4591-af64-55659ad3fa4c"
+  "uuid": "49a792b1-ff95-4591-af64-55659ad3fa4c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

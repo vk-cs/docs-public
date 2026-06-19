@@ -5,5 +5,10 @@
   "sectionTitle": "Не настроен интерфейс ВМ",
   "icon": "",
   "weight": 20,
-  "uuid": "560ea818-4693-4c0c-bf08-80cb15bc274d"
+  "uuid": "560ea818-4693-4c0c-bf08-80cb15bc274d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

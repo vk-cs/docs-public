@@ -1,3 +1,5 @@
+# {heading(18+ контентін тану)[id=vision-instructions-nsfw-recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл әдіс фотосуретте тыйым салынған контенттің (18+) бар-жоғын анықтауға мүмкіндік береді.
@@ -6,24 +8,24 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/adult/detect`
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-nsfw-recognition-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
-| Параметр       | Тип    | Міндетті | Мәні             |
+| Параметр       | Тип    | Обязательный | Значение             |
 | -------------- | ------ |--------------| -------------------- |
 | oauth_token    | string | ![](/kz/assets/check.svg "inline")           | OAuth2 қол жеткізу токені |
 | oauth_provider | string | ![](/kz/assets/check.svg "inline")           | OAuth2 провайдері     |
 
 {note:info}
 
-Қол жеткізу токенін алу, сондай-ақ қолдау көрсетілетін OAuth2 провайдерлері [Авторизация](../../quick-start/auth-vision) мақаласында келтірілген.
+Қол жеткізу токенін алу, сондай-ақ қолдау көрсетілетін OAuth2 провайдерлері {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=Авторизация]} мақаласында келтірілген.
 
 {/note}
 
 Сұрау параметрлері сұрау денесінде JSON форматында беріледі:
 
-| Параметр | Тип    | Міндетті                    | Мәні                                         |
+| Параметр | Тип    | Обязательный                    | Значение                                         |
 |----------| ------ |---------------------------------| ------------------------------------------------ |
 | file | string | ![](/kz/assets/check.svg "inline")  | Файлдар массиві. Файл атаулары әртүрлі болуы тиіс    |
 | meta | object | ![](/kz/assets/check.svg "inline")  | Сұрау денесі                                     |
@@ -32,18 +34,14 @@ ENDPOINT: `/api/v1/adult/detect`
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
+## {heading(Сұрау үлгісі)[id=vision-instructions-nsfw-recognition-request-example]}
 
 ```http
-curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&oauth_provider=mcs" \
- -H "Accept: application/json" \
- -H "Content-Type: multipart/form-data" \
- -F "file=@lena_color.png" \
- -F "meta={
+curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&oauth_provider=mcs"  -H "Accept: application/json"  -H "Content-Type: multipart/form-data"  -F "file=@lena_color.png"  -F "meta={
   "images": [
     {
       "name": "file"
@@ -52,15 +50,15 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 }"
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-nsfw-recognition-request-answer]}
 
-| Параметр      | Тип      | Мәні                                                 |
+| Параметр      | Тип      | Значение                                                 |
 | ------------- | -------- | -------------------------------------------------------- |
 | status        | int      | Орындалған операцияның күй коды                         |
 | body          | object   | Жауап денесі                                              |
 | objects       | array    | Әрбір файл үшін нәтижелер массиві                     |
 
-### status
+### {heading(status)[id=vision-instructions-nsfw-recognition-request-answer-status]}
 
 Мүмкін жауаптар:
 
@@ -69,14 +67,14 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 * `403` — қол жеткізуге тыйым салынған: қол жеткізу токенін жаңартыңыз немесе басқа провайдерді таңдаңыз.
 * `500` — сервердің ішкі қатесі.
 
-### objects
+### {heading(objects)[id=vision-instructions-nsfw-recognition-request-answer-objects]}
 
 [cols="1,1,1,2", options="header"]
 |===
 | Параметр
 | Тип
-| Міндетті
-| Мәні
+| Обязательный
+| Значение
 
 | status
 | int
@@ -103,7 +101,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 | Суретте 18+ контентінің жоқ екеніне сенімділік дәрежесі; мәні `[0;1]` аралығында
 |===
 
-## Жауап үлгісі
+## {heading(Жауап үлгісі)[id=vision-instructions-nsfw-recognition-request-answer-example]}
 
 ```json
 {

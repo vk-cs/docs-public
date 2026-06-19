@@ -5,5 +5,10 @@
   "sectionTitle": "Правовые документы ООО «ВК»",
   "icon": "",
   "weight": 2,
-  "uuid": "f11afe21-b7c3-42be-9bd1-ce8227332c7d"
+  "uuid": "f11afe21-b7c3-42be-9bd1-ce8227332c7d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

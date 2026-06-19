@@ -1,3 +1,4 @@
+# {heading(MongoDB)[id=dbaas-concepts-mongodb]}
 
 MongoDB — документоориентированная СУБД NoSQL-типа с открытым исходным кодом, написанная на языке С++. Эта СУБД хранит данные в виде коллекций документов, которые имеют формат, похожий на JSON. MongoDB эффективна, когда:
 
@@ -8,10 +9,10 @@ MongoDB может использоваться, например, для хра
 
 Подробнее в [официальной документации MongoDB](https://docs.mongodb.com/).
 
-Список версий MongoDB, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+Список версий MongoDB, которые поддерживаются в {var(cloud)}, доступен при {linkto(../../../instructions/create#dbaas-create)[text=создании]} инстанса этой базы данных.
 
-## Что дальше?
+## {heading(Что дальше?)[id=dbaas-mongodb-whats-next]}
 
-- [Создайте](../../../instructions/create) инстанс базы данных.
-- [Подключитесь](../../../connect) к базе данных.
-- [Ознакомьтесь](../../extensions) с доступными расширениями баз данных.
+- {linkto(../../../instructions/create#dbaas-create)[text=Создайте]} инстанс базы данных.
+- {linkto(../../../connect#dbaas-connect)[text=Подключитесь]} к базе данных.
+- {linkto(../../extensions#dbaas-concepts-extensions)[text=Ознакомьтесь]} с доступными расширениями баз данных.

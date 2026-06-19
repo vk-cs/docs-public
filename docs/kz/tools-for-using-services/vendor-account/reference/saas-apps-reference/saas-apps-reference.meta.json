@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Marketplace-ке SaaS-қосымшаларды қосу және оларды жаңарту бойынша анықтамалық ақпарат",
   "sectionTitle": "SaaS-қосымшалармен жұмыс істеу анықтамалығы",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

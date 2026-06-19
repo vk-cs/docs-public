@@ -14,7 +14,7 @@ Marketplace — VK Cloud ішкі жүйесі, ол клиенттерге әр
 
 {cut(SaaS және image-based сервистердің айырмашылығы неде?)}
 
-Сервистер архитектурасы мен тарификациясы бойынша ерекшеленеді, айырмашылықтардың толық тізімі [Сервис туралы](../concepts/about#servis_turleri) мақаласында берілген.
+Сервистер архитектурасы мен тарификациясы бойынша ерекшеленеді, айырмашылықтардың толық тізімі [Сервис туралы](../concepts/about#marketplace-about-types) мақаласында берілген.
 
 {/cut}
 
@@ -26,13 +26,13 @@ Marketplace — VK Cloud ішкі жүйесі, ол клиенттерге әр
 
 {cut(Егер сервис қосу кезінде іске қосылмаса не істеу керек?)}
 
-1. Сервисті орналастыру үшін жобада квоталар жеткілікті екенін [тексеріңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_kvotalaryn_karau). Ресурстарды босатыңыз немесе квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+1. Сервисті орналастыру үшін жобада квоталар жеткілікті екенін [тексеріңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta). Ресурстарды босатыңыз немесе квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 1. [Алдын ала төлем жүйесі](../tariffication) кезінде: жоба шотында қаражат жеткілікті екенін тексеріңіз.
-1. Сервис инстансын [жаңартыңыз](../instructions/pr-instance-manage#servis_instansyn_kayta_zhasau_nemese_kayta_zhanartu).
+1. Сервис инстансын [жаңартыңыз](../instructions/pr-instance-manage#pr-instance-manage-recreate).
 
 {/cut}
 
-{cut(SaaS және image-based сервистер қалай тарифтелмейді?)}
+{cut(SaaS және image-based сервистер қалай тарификацияланады?)}
 
 Тарификацияланатын ресурстар жиынтығы әртүрлі сервис түрлері үшін өзгеше, толығырақ [Тарификация](../tariffication) мақаласында.
 

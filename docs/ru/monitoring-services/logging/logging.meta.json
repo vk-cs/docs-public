@@ -5,11 +5,14 @@
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 1,
-  "isBeta": true,
-  "relativeSections": [
-    {
-      "partialPath": "/ru/tools-for-using-services/api/api-spec/logging"
-    }
-  ],
-  "uuid": "4271db39-4e48-4408-9f51-c69cfc6a4e8c"
+  "uuid": "4271db39-4e48-4408-9f51-c69cfc6a4e8c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -1,6 +1,8 @@
+# {heading(Триггерлер)[id=alerting-triggers]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Триггер құру)[id=triggers_add]}
+## {heading(Триггер құру)[id=alerting-triggers-add]}
 
 Триггер метрика мәніне және хабарландыру шартына қолданылатын ережені анықтайды.
 
@@ -8,7 +10,7 @@
 
 Триггер құру үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Триггерді мына тәсілдердің бірімен қосыңыз:
 
     - **Триггерлер** қойындысы арқылы:
@@ -38,21 +40,29 @@
 1. **Арнаны қосу** батырмасын басыңыз.
 1. **Триггер құру** батырмасын басыңыз.
 
-## {heading(Триггерді өңдеу)[id=triggers_edit]}
+## {heading(Триггерді өңдеу)[id=alerting-triggers-edit]}
 
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. Қажетті триггер үшін ![more-icon](../../../../assets/more-icon.svg "inline") белгішесін басып, **Өзгерту** тармағын таңдаңыз.
 1. Қажетті өзгерістерді енгізіңіз.
 1. **Сақтау** батырмасын басыңыз.
 
-## {heading(Триггерді іске қосу)[id=triggers_start]}
+## {heading(Триггерді іске қосу)[id=alerting-triggers-start]}
 
 Егер триггер 24 сағат ішінде 100 реттен көп іске қосылса, ол автоматты түрде өшіріледі. Сізге ұсынымдары бар электрондық хат жіберіледі.
 
-Триггердің жиі іске қосылуының ең кең таралған себебі — оның қате бапталуы. Триггерді іске қоспас бұрын, оның дұрыс бапталғанын [тексеріңіз](#triggers_add).
+Триггердің жиі іске қосылуының ең кең таралған себебі — оның қате бапталуы. Триггерді іске қоспас бұрын, оның дұрыс бапталғанын {linkto(#alerting-triggers-add)[text=тексеріңіз]}.
 
 Триггерді іске қосу үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. **Мониторинг → Алертинг** бөліміне өтіңіз.
+1. Қажетті триггер үшін ![more-icon](../../../../assets/more-icon.svg "inline") белгішесін басып, **Қосу** тармағын таңдап, әрекетті растаңыз.
+
+## {heading(Триггерді жою)[id=alerting-triggers-delete]}
+
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. Қажетті триггер үшін ![more-icon](../../../../assets/more-icon.svg "inline") белгішесін басып, **Жою** тармағын таңдаңыз.
+1. Жоюды растаңыз.

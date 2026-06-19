@@ -4,5 +4,15 @@
   "metaDescription": "Kubernetes-та Updater компоненті бар VPA аддонын Recreate режимінде пайдалану жөніндегі нұсқаулық. Дайындық, Deployment жасау, VPA баптау, тестілеу және нәтижелерді талдау. Манифесттер, kubectl командалары, метрикалар мен мониторинг бойынша ұсынымдар мысалдары",
   "sectionTitle": "Vertical Pod Autoscaler пайдалану",
   "icon": "",
-  "weight": 14
+  "weight": 14,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

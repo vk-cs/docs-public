@@ -1,6 +1,8 @@
+# {heading(Синтез речи)[id=cloud_voice-instructions-text_to_speech]}
+
 Функция синтеза речи позволяет озвучивать строки текста. Чтобы синтезировать речь, воспользуйтесь POST- или GET-запросом в `https://voice.mcs.mail.ru/tts`.
 
-## Запрос
+## {heading(Запрос)[id=cloud_voice-instructions-text_to_speech-request]}
 
 {tabs}
 
@@ -40,21 +42,21 @@ curl -L --request POST \
 
 Параметры запроса:
 
-| Параметр | Описание | Способ передачи | Допустимые значения |
-| --- | --- | --- | --- |
-| `model_name` | Название модели голоса | URL | katherine (или katherine-hifigan) — по умолчанию; maria (или maria-serious); pavel (или pavel-hifigan) |
-| `encoder` | Тип энкодера | URL | pcm — по умолчанию; mp3; opus |
-| `tempo` | Скорость речи | URL | от 0.75 до 1.75 |
-| `text` | Текст для озвучивания (GET-запрос)| URL | До 2000 символов в формате UTF-8 |
-| `<текст для озвучивания>` | Текст для озвучивания (POST-запрос) | Опция `data`| До 2000 символов в формате UTF-8 |
-| `<имя файла>` | Имя аудиофайла с расширением | Опция `output` | ![](/en/assets/no.svg "inline") |
-| `<токен доступа>`| Токен доступа для авторизации. Подробнее об авторизации в разделе [Получение токена доступа](../get-voice-token) | Опция `header`| ![](/en/assets/no.svg "inline") |
+| Параметр | Описание                                                                                                          | Способ передачи | Допустимые значения |
+| --- |-------------------------------------------------------------------------------------------------------------------| --- | --- |
+| `model_name` | Название модели голоса                                                                                            | URL | katherine (или katherine-hifigan) — по умолчанию; maria (или maria-serious); pavel (или pavel-hifigan) |
+| `encoder` | Тип энкодера                                                                                                      | URL | pcm — по умолчанию; mp3; opus |
+| `tempo` | Скорость речи                                                                                                     | URL | от 0.75 до 1.75 |
+| `text` | Текст для озвучивания (GET-запрос)                                                                                | URL | До 2000 символов в формате UTF-8 |
+| `<текст для озвучивания>` | Текст для озвучивания (POST-запрос)                                                                               | Опция `data`| До 2000 символов в формате UTF-8 |
+| `<имя файла>` | Имя аудиофайла с расширением                                                                                      | Опция `output` | ![](/en/assets/no.svg "inline") |
+| `<токен доступа>`| Токен доступа для авторизации. Подробнее об авторизации в разделе {linkto(../get-voice-token#cloud_voice-instructions-get_voice_token)[text=Получение токена доступа]} | Опция `header`| ![](/en/assets/no.svg "inline") |
 
-### Ограничения
+### {heading(Ограничения)[id=cloud_voice-instructions-text_to_speech-request-restriction]}
 
 Передаваемый в запросе текст должен быть в кодировке UTF-8 и содержать не больше 20000 символов.
 
-## Ответ
+## {heading(Ответ)[id=cloud_voice-instructions-text_to_speech-answer]}
 
 В ответе содержится аудиофайл выбранного формата. По умолчанию создается PCM-файл.
 
@@ -73,7 +75,7 @@ curl -L --request POST \
 ffmpeg -f s16be -ar 24k -ac 1 -i test_sound7.pcm test_sound7.wav
 ```
 
-## Коды ошибок
+## {heading(Коды ошибок)[id=cloud_voice-instructions-text_to_speech-error_codes]}
 
 | Код  | Статус | Описание                   |
 | ---- | ------ | -------------------------- |
@@ -83,8 +85,8 @@ ffmpeg -f s16be -ar 24k -ac 1 -i test_sound7.pcm test_sound7.wav
 
 ## Смотрите также
 
-[Описание сервиса Cloud Voice](../../concepts/about)
+{linkto(../../concepts/about#cloud_voice-concepts-about)[text=Описание сервиса Cloud Voice]}
 
-[Получение токена доступа](../get-voice-token)
+{linkto(../get-voice-token#cloud_voice-instructions-get_voice_token)[text=Получение токена доступа]}
 
-[Распознавание речи](../speech-recognition)
+{linkto(../speech-recognition#cloud_voice-instructions-speech_recognition)[text=Распознавание речи]}

@@ -4,5 +4,20 @@
   "metaDescription": "SDN Neutron-нан SDN Sprut-қа көшу себептері мен артықшылықтары. SDN Sprut-қа көшу қадамдарының сипаттамасы. Құралдар мен қолданылатын скрипттердің тізімі",
   "sectionTitle": "Миграция туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "abf7e470-032e-4360-8737-ffaef73a1d75",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

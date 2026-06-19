@@ -5,5 +5,19 @@
   "sectionTitle": "Extensions and plugins",
   "icon": "",
   "weight": 8,
-  "uuid": "804fedbb-615c-42d5-a06e-c7ffc4838d98"
+  "uuid": "804fedbb-615c-42d5-a06e-c7ffc4838d98",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

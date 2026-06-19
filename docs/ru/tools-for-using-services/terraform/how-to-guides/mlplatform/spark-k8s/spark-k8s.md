@@ -1,4 +1,6 @@
-В статье приведен пример создания кластера Spark на платформе VK Cloud при помощи Terraform.
+# {heading(Создание кластера Spark)[id=terraform-spark-k8s]}
+
+В статье приведен пример создания кластера Spark на платформе {var(cloud)} при помощи Terraform.
 
 При создании кластера используются:
 
@@ -10,17 +12,16 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Перед созданием кластера
+## {heading(Перед созданием кластера)[id=terraform-spark-k8s-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
+1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.7.0 или выше. Если версия провайдера ниже, {linkto(../../../quick-start#terraform-quick-start-update)[text=обновите провайдер]}.
 
-1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.7.0 или выше. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
-
-## 1. Создайте файл с описанием кластера
+## {heading({counter(tf-spark)}. Создайте файл с описанием кластера)[id=terraform-spark-k8s-cluster-file]}
 
 В примере ниже кластер создается в следующей конфигурации:
 
@@ -79,7 +80,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
   - `network_id = vkcs_networking_network.default.id`: кластер будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: кластер будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
@@ -88,7 +89,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
 
   {/cut}
 
@@ -99,7 +100,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: будет создан новый реестр Docker и размещен на выделенной виртуальной машине K8S Docker Registry, которая не входит в состав кластера и тарифицируется отдельно. Идентификатор будет получен после создания ресурса `vkcs_mlplatform_k8s_registry`. Ресурс будет сформирован далее.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего реестра K8S Docker Registry. Чтобы узнать идентификатор инстанса K8S Docker Registry:
   
-    1. [Перейдите](https://cloud.vk.com/app) в личный кабинет VK Cloud.
+    1. [Перейдите](https://cloud.vk.com/app) в личный кабинет {var(cloud)}.
     1. Выберите проект, где нужно создать кластер.
     1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
     1. Перейдите на вкладку **Инстансы**.
@@ -112,15 +113,14 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   {cut(Примеры)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
 - `spark_configuration` — перечень свойств (properties), отвечающих за [конфигурацию Spark](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
+- `environment_variables` — перечень {linkto(../../../../../ml/spark-to-k8s/instructions/create#mlspark-instructions-create)[text=переменных среды окружения для Spark]}.
 
-- `environment_variables` — перечень [переменных среды окружения для Spark](/ru/ml/spark-to-k8s/instructions/create).
-
-## 2. Создайте файл с описанием инстанса K8S Docker Registry
+## {heading({counter(tf-spark)}. Создайте файл с описанием инстанса K8S Docker Registry)[id=terraform-spark-k8s-instance-file]}
 
 Создайте файл конфигурации Terraform `registry.tf` c описанием инстанса K8S Docker Registry:
 
@@ -150,7 +150,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
   {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
 
   {/cut}
 
@@ -160,7 +160,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
@@ -169,11 +169,11 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
   {cut(Примеры)}
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор берется из источника данных `vkcs_networking_network`, который будет указан в описании сетевой инфраструктуры кластера.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: указывается идентификатор внешней сети, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-## 3. (Опционально) Создайте файл с описанием источника данных для типа ВМ
+## {heading({counter(tf-spark)}. (Опционально) Создайте файл с описанием источника данных для типа ВМ)[id=terraform-spark-k8s-vm-file]}
 
 Создайте файл конфигурации Terraform `flavor.tf` c описанием нужного типа ВМ:
 
@@ -185,7 +185,7 @@ data "vkcs_compute_flavor" "basic" {
 
 Указанный в файле тип ВМ будет использоваться для создания инстансов в вашем проекте Terraform.
 
-## 4. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера
+## {heading({counter(tf-spark)}. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера)[id=terraform-spark-k8s-infrastructure-file]}
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для кластера:
 
@@ -242,7 +242,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 5. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-spark)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-spark-k8s-create]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -269,14 +269,14 @@ resource "vkcs_networking_router_interface" "app" {
 
 1. Дождитесь завершения операции.
 
-## 6. Проверьте применение конфигурации
+## {heading({counter(tf-spark)}. Проверьте применение конфигурации)[id=terraform-spark-k8s-check]}
 
 Убедитесь, что кластер Spark был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что кластер Spark создан и активен.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-spark-k8s-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

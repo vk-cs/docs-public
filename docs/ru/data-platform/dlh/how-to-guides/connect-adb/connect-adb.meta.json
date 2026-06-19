@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение аналитической БД",
   "icon": "",
   "weight": 1,
-  "uuid": "5dd21c0a-7a97-47d0-945f-4d445911f6cd"
+  "uuid": "5dd21c0a-7a97-47d0-945f-4d445911f6cd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

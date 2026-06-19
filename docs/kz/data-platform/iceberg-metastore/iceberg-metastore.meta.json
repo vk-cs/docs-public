@@ -1,8 +1,15 @@
 {
   "title": "Cloud Iceberg Metastore",
   "shortDescription": "Apache Iceberg кестелерінің метадеректерін басқару",
-  "metaDescription": "VK Cloud инфрақұрылымындағы Apache Iceberg кестелерінің метадеректерін басқару сервисі",
+  "metaDescription": "VK Data Platform-тағы Apache Iceberg кестелерінің метадеректерін басқару сервисі",
   "sectionTitle": "Cloud Iceberg Metastore",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

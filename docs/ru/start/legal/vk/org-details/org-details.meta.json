@@ -1,11 +1,16 @@
 {
-    "title": "Реквизиты",
-      "shortDescription": "",
-      "metaDescription": "Реквизиты для заключения договоров и выставления счетов Полное наименование\nОбщество с ограниченной ответственностью «ВК» ОГРН\n1027739850962 от 20.12.",
-    "sectionTitle": "Реквизиты",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 6,
-    "uuid": "dbbaa492-f96a-4298-beae-0d44dc7a3a2e"
+  "title": "Реквизиты",
+  "shortDescription": "",
+  "metaDescription": "Реквизиты для заключения договоров и выставления счетов Полное наименование\nОбщество с ограниченной ответственностью «ВК» ОГРН\n1027739850962 от 20.12.",
+  "sectionTitle": "Реквизиты",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 6,
+  "uuid": "dbbaa492-f96a-4298-beae-0d44dc7a3a2e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Просмотр заявок",
   "icon": "",
   "weight": 1,
-  "uuid": "8c153cc3-4a1c-4662-94db-276e1700ea44"
+  "uuid": "8c153cc3-4a1c-4662-94db-276e1700ea44",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,11 +1,25 @@
 {
-    "title": "Updating the PostgreSQL version",
-      "shortDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations",
-      "metaDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations.",
-    "sectionTitle": "Updating the PostgreSQL version",
-    "icon": "",
-    "isBeta": true,
-    "hidden": true,
-    "weight": 3,
-    "uuid": "967cc6f8-302b-4da9-bdaa-9f0835ef264d"
+  "title": "Updating the PostgreSQL version",
+  "shortDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations",
+  "metaDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations.",
+  "sectionTitle": "Updating the PostgreSQL version",
+  "icon": "",
+  "isBeta": true,
+  "hidden": true,
+  "weight": 3,
+  "uuid": "967cc6f8-302b-4da9-bdaa-9f0835ef264d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

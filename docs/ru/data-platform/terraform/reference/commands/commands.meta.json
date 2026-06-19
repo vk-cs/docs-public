@@ -1,0 +1,14 @@
+{
+  "title": "Основные команды Terraform",
+  "shortDescription": "",
+  "metaDescription": "Как использовать Terraform-провайдер VK Cloud для управления VK Data Platform. Перечень основных используемых команд Terraform",
+  "sectionTitle": "Основные команды Terraform",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

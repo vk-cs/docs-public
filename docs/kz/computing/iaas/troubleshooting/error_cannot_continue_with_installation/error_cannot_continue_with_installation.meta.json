@@ -4,5 +4,12 @@
   "metaDescription": "ВМ жасау кезінде Cannot continue with installation, no valid storage devices detected хабарламасы пайда болады",
   "sectionTitle": "Cannot continue with installation қатесі",
   "icon": "",
-  "weight": 24
+  "weight": 24,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

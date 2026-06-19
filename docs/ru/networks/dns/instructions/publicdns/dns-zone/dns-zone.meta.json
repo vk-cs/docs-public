@@ -5,5 +5,10 @@
   "sectionTitle": "DNS-зоны",
   "icon": "",
   "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "7a599a5d-1d79-4e6d-93e8-181caae4476e"
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Деректерді көздерден Data LakeHouse-қа қалай жүктеуге болады",
   "sectionTitle": "Деректермен жұмыс",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

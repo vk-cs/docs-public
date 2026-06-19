@@ -1,9 +1,14 @@
 {
-    "title": "Мониторинг кластера",
-      "shortDescription": "Как отслеживать состояние кластера Spark",
-      "metaDescription": "Как отслеживать состояние кластера Spark",
-    "sectionTitle": "Мониторинг кластера",
-    "icon": "",
-    "weight": 6,
-    "uuid": " "
+  "title": "Мониторинг кластера",
+  "shortDescription": "Как отслеживать состояние кластера Spark",
+  "metaDescription": "Как отслеживать состояние кластера Spark",
+  "sectionTitle": "Мониторинг кластера",
+  "icon": "",
+  "weight": 6,
+  "uuid": " ",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,14 @@
 {
-    "title": "Creating a VPN connection",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating a VPN connection",
-    "icon": "",
-    "weight": 2,
-    "uuid": "f84c78b0-333d-403b-8998-8f5cd404ce9d"
+  "title": "Creating a VPN connection",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating a VPN connection",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f84c78b0-333d-403b-8998-8f5cd404ce9d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

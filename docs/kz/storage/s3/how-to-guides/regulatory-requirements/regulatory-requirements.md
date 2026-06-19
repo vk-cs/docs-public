@@ -1,55 +1,48 @@
+# {heading(Нормативтік талаптарға сәйкестік үшін қойманы баптау)[id=s3-regulatory-requirements]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Object Storage объектілерді [оларды жоюды немесе қайта жазуды бұғаттау](/kz/storage/s3/concepts/objects-lock) (Object Lock) арқылы қорғауға мүмкіндік береді. Объектілерді бұғаттауды нормативтік немесе заңнамалық талаптарға сәйкес белгіленген мерзім ішінде өзгермейтін түрде сақталуы және кейіннен жойылуы тиіс сыни деректер (мысалы, дербес деректер) үшін пайдаланыңыз. Бұл аудит пен заңдық маңыздылықты қамтамасыз етуге көмектеседі.
+{var(s3)} объектілерді {linkto(../../concepts/objects-lock#s3-concepts-object-lock)[text=олардың жойылуын немесе қайта жазылуын бұғаттау]} (Object Lock) арқылы қорғауға мүмкіндік береді. Объектілерді бұғаттауды сындарлы деректер үшін (мысалы, дербес деректер) пайдаланыңыз: нормативтік немесе заңнамалық талаптарға сәйкес оларды белгіленген мерзімдер ішінде өзгермейтін түрде сақтап, кейін жою қажет. Бұл аудит пен заңдық маңыздылықты қамтамасыз етуге көмектеседі.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=s3-regulatory-requirements-prepare]}
 
-AWS CLI [орнатылған және бапталғанына](/kz/storage/s3/connect/s3-cli) көз жеткізіңіз.
+AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған және бапталған]} екеніне көз жеткізіңіз.
 
-## 1. Бакетті дайындаңыз
+## {heading(1. Бакетті дайындаңыз)[id=s3-regulatory-requirements-bucket-create]}
 
-Бакетті келесі тәсілдердің бірімен дайындаңыз:
+1. Жаңа бакет жасаңыз:
 
-{tabs}
-{tab(Жаңа бакет үшін)}
+   {include(../../_includes/_s3-manage-bucket.md)[tags=create_bucket,create_bucket_guide]} 
 
-Объектілерді жоюдан бұғаттау мүмкіндігі бар жаңа бакет жасаңыз:
+1. {linkto(../../concepts/versioning#s3-concepts-versioning)[text=Нұсқалауды]} қосыңыз:
 
-   {include(/kz/_includes/_s3-manage-bucket.md)[tags=create_bucket_block]}
+   {include(../../_includes/_s3-manage-bucket.md)[tags=version_bucket]}
 
-{/tab}
-{tab(Бар бакет үшін)}
+1. {linkto(../../concepts/objects-lock#s3-concepts-object-lock)[text=Объектілерді бұғаттауды]} қосыңыз:
 
-Бакет объектілерін бұғаттауды конфигурациялаңыз:
+   {include(../../_includes/_s3-manage-object.md)[tags=object_config_block]}
 
-   {include(/kz/_includes/_s3-manage-object.md)[tags=object_config_block]}
+## {heading(2. Бакет үшін әдепкі сақтау саясатын баптаңыз)[id=s3-regulatory-requirements-policy-settings]}
 
-{/tab}
-{/tabs}
+Бакет үшін уақытша бұғаттауды {linkto(../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң режимде]} (`COMPLIANCE`) орнатып, деректерді сақтаудың нақты мерзімін көрсетіңіз:
 
-## 2. Бакет үшін әдепкі сақтау саясатын баптаңыз
-
-Бакет үшін [қатаң режимде](/kz/storage/s3/concepts/objects-lock#compliance-lock) (`COMPLIANCE`) уақытша бұғаттауды орнатып, деректерді сақтаудың нақты мерзімін көрсетіңіз:
-
-{include(/kz/_includes/_s3-manage-object.md)[tags=configuration_lock_object]}
+{include(../../_includes/_s3-manage-object.md)[tags=configuration_lock_object,configuration_lock_object_guide]}
 
 {note:err}
-
 `COMPLIANCE` режимі орнатылғаннан кейін оны әлсіретуге немесе өшіруге болмайды, бірақ деректерді сақтау мерзімін ұлғайтуға болады.
-
 {/note}
 
-## 3. (Опционалды) Объект үшін жеке сақтау мерзімін орнатыңыз
+## {heading(3. (Қосымша) Объект үшін жеке сақтау мерзімін орнатыңыз)[id=s3-regulatory-requirements-shelf-life]}
 
 Жеке сақтау мерзімі әртүрлі санаттарға жататын және сақтау мерзімі әртүрлі объектілер үшін орнатылуы мүмкін.
 
 Объектіні жүктеу кезінде бұғаттауды орнатыңыз:
 
-{include(/kz/_includes/_s3-manage-object.md)[tags=put_object]}
+{include(../../_includes/_s3-manage-object.md)[tags=put_object]}
 
-## 4. Бұғаттау күйін тексеріңіз
+## {heading(4. Бұғаттау күйін тексеріңіз)[id=s3-regulatory-requirements-status-block]}
 
-{include(/kz/_includes/_s3-manage-object.md)[tags=object_state]}
+{include(../../_includes/_s3-manage-object.md)[tags=object_state]}
 
 {cut(Команда шығысының мысалы)}
 
@@ -64,17 +57,17 @@ AWS CLI [орнатылған және бапталғанына](/kz/storage/s3/
 
 {/cut}
 
-## 5. (Опционалды) Мерзімсіз бұғаттауды орнатыңыз
+## {heading(5. (Қосымша) Мерзімсіз бұғаттауды орнатыңыз)[id=s3-regulatory-requirements-legal-hold-lock]}
 
-Деректерді белгісіз мерзімге сақтау туралы ресми сұрау алынған жағдайда [мерзімсіз бұғаттауды](/kz/storage/s3/concepts/objects-lock#legal-hold-lock) (legal hold) пайдаланыңыз. Оның басымдығы кез келген сақтау мерзімінен жоғары және ол анық түрде алынғанға дейін объектіні жоюға немесе өзгертуге мерзімсіз тыйым салады.
+Деректерді белгісіз мерзімге сақтау туралы ресми сұрау түскен кезде {linkto(../../concepts/objects-lock#s3-concepts-object-lock-legal-hold)[text=мерзімсіз бұғаттауды]} (legal hold) пайдаланыңыз. Ол кез келген сақтау мерзімдерінен басымдыққа ие және айқын түрде алынғанға дейін объектіні жоюға немесе өзгертуге мерзімсіз тыйым салады.
 
 1. Бұғаттауды орнатыңыз:
 
-   {include(/kz/_includes/_s3-manage-object.md)[tags=object_legal_hold]}
+   {include(../../_includes/_s3-manage-object.md)[tags=object_legal_hold]}
 
 1. Бұғаттау күйін тексеріңіз:
 
-   {include(/kz/_includes/_s3-manage-object.md)[tags=object_state_legal_hold]}
+   {include(../../_includes/_s3-manage-object.md)[tags=object_state_legal_hold]}
    
    {cut(Команда шығысының мысалы)}
    
@@ -89,7 +82,5 @@ AWS CLI [орнатылған және бапталғанына](/kz/storage/s3/
    {/cut}
 
 {note:warn}
-
-[Бұғаттауды алып тастау](/kz/storage/s3/instructions/objects/object-lock#object_legal_hold) тек тиісті құқықтар болған жағдайда ғана мүмкін және `Status=OFF` параметрі бар командамен орындалады.
-
+{linkto(../../instructions/objects/object-lock#s3-instructions-object-lock-legal-hold)[text=Бұғаттауды алып тастау]} тек тиісті құқықтар болған кезде ғана мүмкін және `Status=OFF` параметрі бар командамен орындалады.
 {/note}

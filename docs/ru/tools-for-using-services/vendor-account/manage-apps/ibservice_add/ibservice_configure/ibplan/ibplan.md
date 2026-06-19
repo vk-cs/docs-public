@@ -15,37 +15,37 @@
 | id
 | Идентификатор тарифного плана UUID4 (ID), сформированный с помощью генератора UUID4
 | string (UUID4)
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | revision
 | Ревизия тарифного плана. Сочетание ревизии и ID тарифного плана определяет его уникальность в сервисе. Остальные параметры описывают характеристики конкретной ревизии тарифного плана
 | string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | name
 | Техническое имя тарифного плана, которое не отображается в интерфейсе магазина. Должно быть указано латинскими буквами с использованием знака нижнего подчеркивания вместо пробелов
 | string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | description
 | Имя тарифного плана, которое отображается в интерфейсе магазина
 | string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | free
 | Определяет, бесплатный этот тарифный план или нет
 | boolean
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | billing
 | Определяет стоимость тарифного плана без учета платных тарифных опций (подробнее — в разделе {linkto(#plan_billing)[text=%text]})
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 | parameters_patch
 | Позволяет переопределить параметры тарифных опций для конкретного плана (подробнее — в разделе {linkto(#plan_options)[text=%text]})
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 | resource_usages
 | Содержит список постоплатных тарифных опций
@@ -89,7 +89,7 @@
 
 Если план бесплатный, укажите `0`. Стоимость задается в валюте страны, где развернут магазин
 |float
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |
 —
 
@@ -103,7 +103,7 @@
 * Если значение равно `false`, дата обновляется до даты изменения тарифного плана
 
 |boolean
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |
 `true`
 
@@ -119,7 +119,7 @@
 
 {/note}
 |string
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |
 `1 mons 0 days`
 |===

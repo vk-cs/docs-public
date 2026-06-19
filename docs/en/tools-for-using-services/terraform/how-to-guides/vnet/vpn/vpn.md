@@ -1,19 +1,23 @@
-After completing the steps in this guide, you will:
+# {heading(Creating a VPN connection)[id=terraform-vpn]}
 
-1. [Create](#create-file) a configuration file.
-1. [Add](#add-net) resources and data sources for a virtual network.
-1. [Add](#add-vpn) a resource for a VPN connection.
-1. [Create](#create-connection) the added resources.
+This article provides an example of creating and configuring a VPN connection using Terraform.
 
-For a full description of parameters, see the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+By following the steps in the guide, you will:
+
+1. {linkto(#terraform-vpn-create-file)[text=Create]} a configuration file.
+1. {linkto(#terraform-vpn-add-net)[text=Add]} resources and data sources for a virtual network.
+1. {linkto(#terraform-vpn-add-vpn)[text=Add]} a resource for the VPN connection.
+1. {linkto(#terraform-vpn-create-connection)[text=Create]} the added resources.
+
+For a complete description of the parameters, see the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
 ## Prerequisites
 
-1. Check the [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits). Make sure the selected [region](/en/tools-for-using-services/account/concepts/regions) has enough resources to create networks. Different regions may have different quotas.
+1. Check the [quotas](/ru/tools-for-using-services/account/concepts/quotasandlimits). Make sure that the selected [region](/ru/tools-for-using-services/account/concepts/regions) has enough resources to create networks. Different regions may have different quotas.
 
-   If necessary, [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quotas.
+   If necessary, [increase](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) the quotas.
 
-1. [Install Terraform and configure the provider](../../../quick-start) if you have not already done so.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Install Terraform and configure the provider]}, if you have not already done so.
 1. Place the provider settings file in the directory from which you will work with the project, and from that directory run the command:
 
     ```console
@@ -21,13 +25,13 @@ For a full description of parameters, see the [Terraform provider documentation]
     ```
     Wait for Terraform initialization to complete.
 
-## {heading({counter(vpn)}. Create a configuration file)[id=create-file]}
+## {heading({counter(terraform-vpn)}. Create a configuration file)[id=terraform-vpn-create-file]}
 
 In the directory from which you will work with the project, create the `vpn.tf` file. This file will describe the configuration of the connection being created.
 
-## {heading({counter(vpn)}. Add a virtual network)[id=add-net]}
+## {heading({counter(terraform-vpn)}. Add a virtual network)[id=terraform-vpn-add-net]}
 
-1. Depending on the [SDN](/ru/networks/vnet/concepts/sdn) you use, copy the contents of one of the tabs below into the `vpn.tf` file.
+1. Depending on the {linkto(/ru/networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]} you use, copy the contents of one of the tabs below into the `vpn.tf` file.
 
     {tabs}
 
@@ -61,7 +65,7 @@ In the directory from which you will work with the project, create the `vpn.tf` 
     }
     ```
 
-    To create the network, you will need the following objects:
+    To create the network, the following objects are required:
 
     - Resources (resource):
 
@@ -70,7 +74,7 @@ In the directory from which you will work with the project, create the `vpn.tf` 
       - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router.md) — a router that connects the private network to external networks.
       - [vkcs_networking_router_interface](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router_interface.md) — an interface that connects the router to the internal network.
 
-    - Data source (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — an external network for assigning a public IP address to the router, as well as allocating a Floating IP address to entities in the private network.
+    - Data source (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — an external network for the router to obtain a public IP address, as well as to allocate a Floating IP address to entities in the private network.
 
     {/tab}
 
@@ -112,7 +116,7 @@ In the directory from which you will work with the project, create the `vpn.tf` 
     }
     ```
 
-    To create the network, you will need the following objects:
+    To create the network, the following objects are required:
 
     - Resources (resource):
 
@@ -129,9 +133,9 @@ In the directory from which you will work with the project, create the `vpn.tf` 
 
 1. Edit the settings values for your connection.
 
-For more information about creating virtual networks using Terraform, see the hands-on guide [Creating networks](/en/tools-for-using-services/terraform/how-to-guides/vnet/network).
+For more details on creating virtual networks using Terraform, see the hands-on guide {linkto(/ru/tools-for-using-services/terraform/how-to-guides/vnet/network#terraform-network)[text=Creating networks]}.
 
-## {heading({counter(vpn)}. Add a VPN connection)[id=add-vpn]}
+## {heading({counter(terraform-vpn)}. Add a VPN connection)[id=terraform-vpn-add-vpn]}
 
 1. Copy the VPN connection settings into the `vpn.tf` file:
 
@@ -179,7 +183,7 @@ For more information about creating virtual networks using Terraform, see the ha
     The following resources are used to add a VPN connection:
 
     - [vkcs_vpnaas_service](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_service.md) — manages the VPN service within VK Cloud. Includes the `router_id` parameter — the router ID. By changing the value of this parameter, you will create a new service. If you need to use an existing router, specify its ID (`data.vkcs_networking_router.router.id` or `data.vkcs_dc_router.router.id`) using a data source.
-      
+
       {cut(Example)}
 
       ```hcl
@@ -196,9 +200,9 @@ For more information about creating virtual networks using Terraform, see the ha
     - [vkcs_vpnaas_endpoint_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_endpoint_group.md) — manages an endpoint group within VK Cloud. Includes the following parameters:
 
       - `type` — the type of endpoints in the group. Can be `subnet`, `cidr`, `network`, `router`, or `vlan`. By changing the value of this parameter, you will create a new group.
-      - `endpoints` — a list of endpoints of the same type included in the endpoint group. The type of list elements is determined by the `type` parameter. By changing the value of the `endpoints` parameter, you will create a new group.
+      - `endpoints` — a list of endpoints of the same type included in the endpoint group. The type of list items is determined by the `type` parameter. By changing the value of the `endpoints` parameter, you will create a new group.
 
-    - [vkcs_vpnaas_site_connection](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_site_connection.md) — manages the IPSec site connection resource within VK Cloud. Includes the following parameters:
+    - [vkcs_vpnaas_site_connection](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_site_connection.md) — manages an IPSec site connection resource within VK Cloud. Includes the following parameters:
 
       - `name` — the connection name. By changing the value of this parameter, you will change the name of an existing connection.
       - `ikepolicy_id` — the IKE policy ID. By changing the value of this parameter, you will create a new connection.
@@ -206,10 +210,10 @@ For more information about creating virtual networks using Terraform, see the ha
       - `vpnservice_id` — the VPN service ID. By changing the value of this parameter, you will create a new connection.
       - `psk` — the public key. Accepts any `string` values.
       - `peer_address` — the FQDN or public IP address (IPv4 or IPv6) of the peer gateway.
-      - `peer_id` — the peer router ID for authentication. Can be of types `<АДРЕС_IPv4>`, `<АДРЕС_IPv6>`, `<EMAIL>`, `<KEY_ID>`, `<FQDN>`. Typically, the value of this parameter matches the value of the `peer_address` parameter. By changing the value of this parameter, you will change the policy of an existing connection.
-      - `local_ep_group_id` — the endpoint group ID that includes the private subnets of the local connection. Requires specifying the `peer_ep_group_id` parameter if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service. By changing the value of this parameter, you will modify an existing connection.
-      - `peer_ep_group_id` — the endpoint group ID that includes the private CIDR addresses of the peer connection in the `<IP-АДРЕС>/<ПРЕФИКС>` format. Requires specifying the `local_ep_group_id` parameter if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service.
-      - `dpd` — a map of settings for the Dead Peer Detection (DPD) protocol. Includes the following resources:
+      - `peer_id` — the peer router ID for authentication. Can take values of the following types: `<АДРЕС_IPv4>`, `<АДРЕС_IPv6>`, `<EMAIL>`, `<KEY_ID>`, `<FQDN>`. Typically, the value of this parameter matches the value of the `peer_address` parameter. By changing the value of this parameter, you will change the policy of an existing connection.
+      - `local_ep_group_id` — the endpoint group ID that includes the private subnets of the local connection. Requires the `peer_ep_group_id` parameter to be specified if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service. By changing the value of this parameter, you will change an existing connection.
+      - `peer_ep_group_id` — the endpoint group ID that includes the private CIDR addresses of the peer connection in the `<IP-АДРЕС>/<ПРЕФИКС>` format. Requires the `local_ep_group_id` parameter to be specified if backward compatibility mode is not enabled, where `peer_cidrs` values are already provided together with the `subnet_id` value of the VPN service.
+      - `dpd` — a dictionary of settings for the Dead Peer Detection (DPD) protocol. Includes the following resources:
 
         - `action` — the DPD action. Possible values: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Default value: `hold`.
         - `timeout` — the DPD timeout in seconds. Accepts `positive integer` values that are greater than `interval`. Default value: `120`.
@@ -219,7 +223,7 @@ For more information about creating virtual networks using Terraform, see the ha
 
 1. Edit the settings values for your connection.
 
-## {heading({counter(vpn)}. Create a VPN connection)[id=create-connection]}
+## {heading({counter(terraform-vpn)}. Create a VPN connection)[id=terraform-vpn-create-connection]}
 
 1. Go to the directory containing the `vpn.tf` file.
 1. Make sure the configuration files are correct and contain the required changes:
@@ -238,7 +242,7 @@ For more information about creating virtual networks using Terraform, see the ha
 
 1. Wait for the operation to complete.  
 
-## {heading({counter(vpn)}. Verify configuration application)[id=check]}
+## {heading({counter(terraform-vpn)}. Verify that the configuration was applied)[id=terraform-vpn-check]}
 
 Make sure that the network and infrastructure were created successfully:
 

@@ -1,3 +1,4 @@
+# {heading(Организация виртуального IP-адреса)[id=vnet-vip-keepalived]}
 
 Если входящий трафик обрабатывается кластером из нескольких однотипных виртуальных машин, то для них можно создать виртуальный IP-адрес (Virtual IP, VIP). Такой адрес используется для организации отказоустойчивой обработки входящего трафика этими виртуальными машинами. Технология устроена так: VIP присваивается одной из виртуальных машин кластера, которая обрабатывает трафик с этого VIP. Клиенты, обращаясь по такому адресу, будут направлены на эту виртуальную машину. Если виртуальная машина выйдет из строя, то VIP перейдет другой виртуальной машине из кластера, и обработка трафика продолжится. Виртуальные машины отслеживают свое состояние и управляют назначением VIP с помощью протокола [VRRP](https://www.rfc-editor.org/rfc/rfc3768).
 
@@ -10,15 +11,16 @@
 
 ![Диаграмма для сценария](./assets/vip-keepalived.png){params[noBorder=true]}
 
-## 1. Подготовительные шаги
+## {heading(1. Подготовительные шаги)[id=vnet-vip-keepalived-prep]}
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 
 1. Выберите подсеть, в которой будут размещены виртуальные машины и виртуальный IP-адрес. Они должны размещаться в одной подсети.
 
-   Если нужной подсети нет, [создайте ее](../../instructions/net#sozdanie_podseti).
+   Если нужной подсети нет, {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=создайте ее]}.
 
    Запишите следующую информацию:
+
    - имя подсети;
    - имя сети, в которой находится подсеть.
 
@@ -33,7 +35,7 @@
    Чтобы создать такой порт, выполните команду в OpenStack CLI:
 
    ```console
-   openstack port create <имя порта> --network mynetwork --fixed-ip subnet=mysubnet,ip-address=192.168.0.254
+   openstack port create <ИМЯ_ПОРТА> --network mynetwork --fixed-ip subnet=mysubnet,ip-address=192.168.0.254
    ```
 
 1. Создайте виртуальные машины `kld-vm1`, `kld-vm-2` и `kld-jumphost-vm`.
@@ -90,7 +92,7 @@
    - **Сеть:** сеть и подсеть, выбранные ранее.
    - **DNS-имя:** `kld-jumphost-vm`.
    - **Настройки Firewall:** `default`, `ssh`.
-   - **Назначить внешний IP:** убедитесь, что опция выбрана. Внешний IP-адрес ([Floating IP](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)) необходим для подключения к виртуальной машине по SSH из интернета.
+   - **Назначить внешний IP:** убедитесь, что опция выбрана. Внешний IP-адрес ({linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP]}) необходим для подключения к виртуальной машине по SSH из интернета.
 
    Прочие параметры виртуальной машины выберите на свое усмотрение.
 
@@ -102,7 +104,7 @@
 
    1. Для виртуальной машины `kld-vm-1`:
 
-      1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+      1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} к виртуальной машине `kld-jumphost-vm` по SSH.
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команду:
 
@@ -124,7 +126,7 @@
       1. Выполните команду OpenStack CLI:
 
          ```console
-         openstack port list -c ID --server kld-vm-1 --fixed-ip ip-address=<IP-адрес сетевого интерфейса из предыдущего шага>
+         openstack port list -c ID --server kld-vm-1 --fixed-ip ip-address=<IP-АДРЕС_СЕТЕВОГО_ИНТЕРФЕЙСА_ИЗ_ПРЕДЫДУЩЕГО_ШАГА>
          ```
 
          Пример вывода:
@@ -143,31 +145,57 @@
 
 Запишите все полученные данные. Результат для приведенного примера:
 
-<!-- prettier-ignore -->
-| Объект                                                    | Значение                                  |
-| --------------------------------------------------------- | ----------------------------------------- |
-| **Для виртуальной машины kld-vm-1**                                                                   |
-| Имя сетевого интерфейса                                   | `ens3`                                    |
-| IP-адрес сетевого интерфейса                              | `192.168.0.11`                            |
-| Идентификатор порта OpenStack для сетевого интерфейса     | `e1bd636a-aaaa-bbbb-cccc-a673e7cbef83`    |
-| **Для виртуальной машины kld-vm-2**                                                                   |
-| Имя сетевого интерфейса                                   | `ens3`                                    |
-| IP-адрес сетевого интерфейса                              | `192.168.0.22`                            |
-| Идентификатор порта OpenStack для сетевого интерфейса     | `74268d00-xxxx-yyyy-zzzz-cf9f93536d5c`    |
-| **Прочее**                                                                                            |
-| Подсеть для виртуальных машин и виртуального IP-адреса    | `192.168.0.0/24`                          |
-| Имя подсети                                               | `mysubnet`                                |
-| Имя сети, в которой находится подсеть                     | `mynetwork`                               |  
-| Виртуальный IP-адрес                                      | `192.168.0.254/24`                        |
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+[cols="4,3", options="header"]
+|===
+|Объект 
+|Значение
 
-## 2. Установите и настройте keepalived
+2+|**Для виртуальной машины kld-vm-1**
+
+|Имя сетевого интерфейса
+|`ens3`
+
+|IP-адрес сетевого интерфейса
+|`192.168.0.11`
+
+|Идентификатор порта OpenStack для сетевого интерфейса
+|`e1bd636a-aaaa-bbbb-cccc-a673e7cbef83`
+
+2+|**Для виртуальной машины kld-vm-2**
+
+|Имя сетевого интерфейса
+|`ens3`
+
+|IP-адрес сетевого интерфейса
+|`192.168.0.22`
+
+|Идентификатор порта OpenStack для сетевого интерфейса
+|`74268d00-xxxx-yyyy-zzzz-cf9f93536d5c`
+
+2+|**Прочее**
+
+|Подсеть для виртуальных машин и виртуального IP-адреса
+|`192.168.0.0/24`
+
+|Имя подсети
+|`mysubnet`
+
+|Имя сети, в которой находится подсеть
+|`mynetwork`
+
+|Виртуальный IP-адрес
+|`192.168.0.254/24`
+|===
+<!-- prettier-ignore-end -->
+
+## {heading(2. Установите и настройте keepalived)[id=vnet-vip-keepalived-install-configure-keepalived]}
 
 1. Установите `keepalived`:
 
    1. Для виртуальной машины `kld-vm-1`:
 
-      1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+      1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} к виртуальной машине `kld-jumphost-vm` по SSH.
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команды:
 
@@ -206,7 +234,7 @@
         authentication
         {
           auth_type PASS
-          auth_pass <пароль для аутентификации>
+          auth_pass <ПАРОЛЬ_ДЛЯ_АУТЕНТИФИКАЦИИ>
         }
       
         virtual_ipaddress
@@ -241,7 +269,7 @@
         authentication
         {
           auth_type PASS
-          auth_pass <пароль для аутентификации>
+          auth_pass <ПАРОЛЬ_ДЛЯ_АУТЕНТИФИКАЦИИ>
         }
       
         virtual_ipaddress
@@ -302,9 +330,9 @@
 
    1. Выполните аналогичные действия на виртуальной машине `kld-vm-2`.
 
-## 3. Настройте IP Source Guard
+## {heading(3. Настройте IP Source Guard)[id=vnet-vip-keepalived-configure-ipsourceguard]}
 
-Установленный на виртуальных машинах `keepalived` должен иметь возможность отправлять трафик не только с IP-адресов `192.168.0.11` и `192.168.0.22`, но и с виртуального IP-адреса `192.168.0.254`. Поскольку на портах OpenStack в VK Cloud используется [механизм IP Source Guard](/ru/networks/vnet/concepts/traffic-limiting#source_guard), разрешите трафик с виртуального IP-адреса для портов виртуальных машин:
+Установленный на виртуальных машинах `keepalived` должен иметь возможность отправлять трафик не только с IP-адресов `192.168.0.11` и `192.168.0.22`, но и с виртуального IP-адреса `192.168.0.254`. Поскольку на портах OpenStack в {var(cloud)} используется {linkto(../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-source-guard)[text=механизм IP Source Guard]}, разрешите трафик с виртуального IP-адреса для портов виртуальных машин:
 
 1. Для `kld-vm-1`:
 
@@ -318,12 +346,12 @@
    openstack port set 74268d00-xxxx-yyyy-zzzz-cf9f93536d5c --allowed-address ip-address=192.168.0.254/24
    ```
 
-## 4. Проверьте работоспособность виртуального IP-адреса
+## {heading(4. Проверьте работоспособность виртуального IP-адреса)[id=vnet-vip-keepalived-check]}
 
 Откройте две сессии терминала:
 
 1. В первой сессии:
-   1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+   1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} к виртуальной машине `kld-jumphost-vm` по SSH.
    1. Запустите непрерывный пинг виртуального IP-адреса:
 
       ```console
@@ -371,11 +399,11 @@
              valid_lft forever preferred_lft forever
       ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=vnet-vip-keepalived-delete]}
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) виртуальные машины.
-1. [Удалите](../../instructions/ip/floating-ip#delete) Floating IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
-1. [Удалите](../../instructions/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
-1. Удалите [подсеть](../../instructions/net#udalenie_podseti) и [сеть](../../instructions/net#udalenie_seti), в которых были размещены виртуальные машины.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Удалите]} виртуальные машины.
+1. {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Удалите]} Floating IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
+1. {linkto(../../../../networks/vnet/instructions/ports#vnet-ports-delete)[text=Удалите]} порт, которому назначен виртуальный IP-адрес.
+1. Удалите {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-delete)[text=подсеть]} и {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=сеть]}, в которых были размещены виртуальные машины.

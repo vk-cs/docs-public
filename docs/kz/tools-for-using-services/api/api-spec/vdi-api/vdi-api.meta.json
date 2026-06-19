@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Desktop API бойынша анықтама",
   "sectionTitle": "Cloud Desktop",
   "icon": "",
-  "weight": 15
+  "weight": 15,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

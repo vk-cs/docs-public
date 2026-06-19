@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_agent_exec ресурсы",
   "sectionTitle": "ivkcs_agent_exec ресурсы",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

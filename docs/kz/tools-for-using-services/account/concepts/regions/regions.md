@@ -1,3 +1,5 @@
+# {heading(Аймақтар)[id=tools-account-concepts-regions]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Аймақ — [қолжетімділік аймақтарын](/kz/start/concepts/architecture#az) біріктіретін географиялық аумақ.
@@ -47,8 +49,8 @@ https://kz.cloud.vk.com
 
 - қолжетімді сервистер жиынтығы;
 - [квоталар](../quotasandlimits) жиынтығы;
-- [эндпоинттер VK Cloud API](/kz/tools-for-using-services/api/rest-api) мекенжайлары;
-- [openrc](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) және [Terraform](/kz/tools-for-using-services/terraform/quick-start) конфигурация файлдарындағы аймақ атауы.
+- [эндпоинттер {var(cloud)} API](/kz/tools-for-using-services/api/rest-api) мекенжайлары;
+- [openrc](/kz/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) және [Terraform](/kz/tools-for-using-services/terraform/quick-start) конфигурация файлдарындағы аймақ атауы.
 
 {note:warn}
 

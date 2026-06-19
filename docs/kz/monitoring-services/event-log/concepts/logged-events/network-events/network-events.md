@@ -1,6 +1,8 @@
+# {heading(Neutron және Sprut компоненттерінің оқиғалары)[id=event-log-network]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Audit-ке [виртуалды желілер сервисі](/kz/networks/vnet) жіберетін оқиғалар:
+{ifndef(private-pdf,private-pg-pdf)}[Виртуалды желілер сервисі](/kz/networks/vnet){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../networks/vnet#vnet)[text=виртуалды желілер сервисі]}{/ifdef} Cloud Audit-ке жіберетін оқиғалар:
 
 [cols="2,3", options="header"]
 |===
@@ -200,7 +202,7 @@ Cloud Audit-ке [виртуалды желілер сервисі](/kz/networks
 |Өткізу қабілетін шектеу құрылды
 
 |`create-floating-ip`
-Floating IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-and-inet#floating-ip)
+|{linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP мекенжайы]} құрылды
 
 |`update-floating-ip`
 |Floating IP мекенжайы жаңартылды
@@ -375,7 +377,7 @@ Floating IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-a
 
 <!-- direct_connect actions -->
 |`create-dc-router`
-кеңейтілген маршрутизатор[ құрылды](/kz/networks/vnet/concepts/router#advanced)
+|{linkto(../../../../../networks/vnet/concepts/router#vnet-router-advanced)[text=кеңейтілген маршрутизатор]} құрылды
 
 |`update-dc-router`
 |Кеңейтілген маршрутизатор жаңартылды
@@ -393,7 +395,7 @@ Floating IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-a
 |Кеңейтілген маршрутизатор интерфейсі жойылды
 
 |`create-dc-bgp`
-|[BGP ресурсы](/kz/networks/vnet/instructions/advanced-router/manage-bgp#bgp_marshrutizatordy_kosu) кеңейтілген маршрутизаторда құрылды
+|{linkto(../../../../../networks/vnet/instructions/advanced-router/manage-bgp#vnet-manage-bgp-add)[text=BGP ресурсы]} кеңейтілген маршрутизаторда құрылды
 
 |`update-dc-bgp`
 |Кеңейтілген маршрутизатордағы BGP ресурсы жаңартылды
@@ -402,7 +404,7 @@ Floating IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-a
 |Кеңейтілген маршрутизатордағы BGP ресурсы жойылды
 
 |`create-dc-static-route`
-Direct Connect желісі[ арқылы статикалық маршрут құрылды](/kz/networks/directconnect)
+|{ifndef(private-pdf,private-pg-pdf)}[Direct Connect желісі](/kz/networks/directconnect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../networks/directconnect#directconnect)[text=Direct Connect желісі]}{/ifdef} арқылы статикалық маршрут құрылды
 
 |`update-dc-static-route`
 |Direct Connect желісі арқылы статикалық маршрут жаңартылды
@@ -475,7 +477,7 @@ Direct Connect желісі[ арқылы статикалық маршрут қ
 
 <!--  anycastips-->
 |`create-anycastips`
-Anycast IP мекенжайы[ құрылды](/kz/networks/vnet/concepts/ips-and-inet#anycast-ip)
+|{linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-anycast-ip)[text=Anycast IP мекенжайы]} құрылды
 
 |`update-anycastips`
 |Anycast IP мекенжайы жаңартылды

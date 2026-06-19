@@ -1,13 +1,15 @@
+# {heading(Использование Jaeger)[id=k8s-jaeger]}
+
 Изучите работу аддона [Jaeger](https://www.jaegertracing.io/) в кластерах Kubernetes на примере использования [HotROD](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod) — официального демоприложения для Jaeger. HotROD состоит из нескольких микросервисов, с помощью которых вы сможете сгенерировать и просмотреть трассировки запросов в Jaeger через [OpenTelemetry SDK](https://opentelemetry.io/).
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-jaeger-prepare]}
 
-1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster) кластер Kubernetes актуальной версии, если это еще не сделано.
-1. [Установите и настройте](/ru/kubernetes/k8s/connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру при помощи `kubectl`.
-1. [Установите аддон Jaeger](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-jaeger), если это еще не сделано.
+{include(/ru/_includes/_create-test-cluster.md)}
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-jaeger#k8s-install-advanced-jaeger)[text=Установите аддон Jaeger]}, если это еще не сделано.
 
-## {counter(jaeger)}. Создайте приложение для HotROD
+## {heading({counter(jaeger)}. Создайте приложение для HotROD)[id=k8s-jaeger-app]}
 
 1. Создайте пространство имен `example-hotrod`, в котором будут расположены ресурсы тестового приложения `example-hotrod`:
 
@@ -76,7 +78,7 @@
 
 В результате работы этого манифеста будет запущен под с приложением `example-hotrod`, которое будет симулировать HTTP-запросы между сервисами, автоматически генерировать трассировки и отправлять их в Jaeger через OTLP.
 
-## {counter(jaeger)}. Сгенерируйте нагрузку и получите трассировки запросов
+## {heading({counter(jaeger)}. Сгенерируйте нагрузку и получите трассировки запросов)[id=k8s-jaeger-check]}
 
 1. Запустите веб-интерфейс приложения HotROD через `port-forward`:
 
@@ -113,7 +115,7 @@
    - спаны (spans);
    - ошибки и тайм-ауты.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-jaeger-delete]}
 
 Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы аддона Jaeger, вам больше не нужны, удалите их:
 
@@ -123,4 +125,6 @@
    kubectl delete ns example-hotrod
    ```
 
-1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+{ifdef(public)}
+{include(/ru/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

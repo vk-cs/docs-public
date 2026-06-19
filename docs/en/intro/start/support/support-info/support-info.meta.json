@@ -1,9 +1,14 @@
 {
-    "title": "Terms of support",
-      "shortDescription": "",
-      "metaDescription": "VK Cloud team provides technical support to customers using VK Cloud services. Methods of handling You can submit an appeal to technical support through the followin",
-    "sectionTitle": "Terms of support",
-    "icon": "",
-    "weight": 0,
-    "uuid": "fcaa4917-b306-492e-a39f-d208689fdfa5"
+  "title": "Terms of support",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud team provides technical support to customers using VK Cloud services. Methods of handling You can submit an appeal to technical support through the followin",
+  "sectionTitle": "Terms of support",
+  "icon": "",
+  "weight": 0,
+  "uuid": "fcaa4917-b306-492e-a39f-d208689fdfa5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

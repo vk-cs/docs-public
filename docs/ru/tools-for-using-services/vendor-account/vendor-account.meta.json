@@ -5,5 +5,10 @@
   "sectionTitle": "Кабинет поставщика",
   "icon": "",
   "weight": 3,
-  "uuid": "5a29e08c-8ab3-4a3a-960c-6b853089b80d"
+  "uuid": "5a29e08c-8ab3-4a3a-960c-6b853089b80d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

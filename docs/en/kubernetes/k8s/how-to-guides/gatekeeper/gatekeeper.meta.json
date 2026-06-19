@@ -5,5 +5,19 @@
   "sectionTitle": "Using Gatekeeper",
   "icon": "",
   "weight": 3,
-  "uuid": "4666e053-d67f-4abd-a039-d62b6204ea09"
+  "uuid": "4666e053-d67f-4abd-a039-d62b6204ea09",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

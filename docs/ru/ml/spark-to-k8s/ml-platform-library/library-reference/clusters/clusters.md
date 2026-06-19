@@ -1,22 +1,24 @@
+# {heading(Работа с кластерами Cloud Spark)[id=mlspark-library-reference-clusters]}
+
 Эти методы позволяют управлять доступными в проекте кластерами Cloud Spark.
 
-## get_clusters
+## {heading(get_clusters)[id=mlspark-library-reference-clusters-get_clusters]}
 
 Получить список всех доступных кластеров Cloud Spark.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-get_clusters-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-get_clusters-result]}
 
 Список объектов класса `K8sClusterInfo` с информацией о доступных кластерах Cloud Spark.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-get_clusters-sinature]}
 
 {cut(Сигнатура метода)}
 
@@ -34,12 +36,12 @@ get_clusters(**kwargs
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -55,13 +57,13 @@ get_clusters(**kwargs
 
 {/cut}
 
-## get_cluster_info
+## {heading(get_cluster_info)[id=mlspark-library-reference-clusters-get_cluster_info]}
 
 Получить подробную информацию о кластере Cloud Spark по его идентификатору.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-get_cluster_info-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -75,16 +77,16 @@ get_clusters(**kwargs
 |`str`
 |Идентификатор кластера Cloud Spark
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-get_cluster_info-result]}
 
 Объект класса `K8sClusterInfo` с информацией о кластере.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-get_cluster_info-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -102,12 +104,12 @@ get_cluster_info(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -126,13 +128,13 @@ get_cluster_info(cluster_id: str,
 
 {/cut}
 
-## set_cluster_delete_time
+## {heading(set_cluster_delete_time)[id=mlspark-library-reference-clusters-set_cluster_delete_time]}
 
 Установить время бездействия кластера, по истечении которого кластер будет автоматически удален.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-set_cluster_delete_time-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -146,7 +148,7 @@ get_cluster_info(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`minutes`
 
@@ -155,13 +157,13 @@ get_cluster_info(cluster_id: str,
 |Предельное время бездействия кластера в минутах
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-set_cluster_delete_time-result]}
 
 Объект класса `K8sClusterInfo`. В случае успеха поле `delete_after_inactive_min` объекта будет содержать заданное предельное время бездействия кластера.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-set_cluster_delete_time-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -179,12 +181,12 @@ set_cluster_delete_time(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -203,13 +205,13 @@ set_cluster_delete_time(cluster_id: str,
 
 {/cut}
 
-## remove_cluster_delete_time
+## {heading(remove_cluster_delete_time)[id=mlspark-library-reference-clusters-remove_cluster_delete_time]}
 
 Удалить предельное время бездействия кластера, по истечении которого кластер будет автоматически удален.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-remove_cluster_delete_time-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -223,16 +225,16 @@ set_cluster_delete_time(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-remove_cluster_delete_time-result]}
 
 Объект класса `K8sClusterInfo`. В случае успеха поле `delete_after_inactive_min` объекта будет содержать значение `None`.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-remove_cluster_delete_time-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -249,12 +251,12 @@ remove_cluster_delete_time(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -273,13 +275,13 @@ remove_cluster_delete_time(cluster_id: str,
 
 {/cut}
 
-## set_cluster_suspend_time
+## {heading(set_cluster_suspend_time)[id=mlspark-library-reference-clusters-set_cluster_suspend_time]}
 
 Установить время бездействия кластера, по истечении которого кластер будет автоматически остановлен.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-set_cluster_suspend_time-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -293,7 +295,7 @@ remove_cluster_delete_time(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`minutes`
 
@@ -302,13 +304,13 @@ remove_cluster_delete_time(cluster_id: str,
 |Предельное время бездействия кластера в минутах
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-set_cluster_suspend_time-result]}
 
 Объект класса `K8sClusterInfo`. В случае успеха поле `suspend_after_inactive_min` объекта будет содержать заданное предельное время бездействия кластера.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-set_cluster_suspend_time-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -326,12 +328,12 @@ set_cluster_suspend_time(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -351,13 +353,13 @@ set_cluster_suspend_time(cluster_id: str,
 
 {/cut}
 
-## remove_cluster_suspend_time
+## {heading(remove_cluster_suspend_time)[id=mlspark-library-reference-clusters-remove_cluster_suspend_time]}
 
 Удалить предельное время бездействия кластера, по истечении которого кластер будет автоматически остановлен.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-remove_cluster_suspend_time-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -371,16 +373,16 @@ set_cluster_suspend_time(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-remove_cluster_suspend_time-result]}
 
 Объект класса `K8sClusterInfo`. В случае успеха поле `suspend_after_inactive_min` объекта будет содержать значение `None`.
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-remove_cluster_suspend_time-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -398,12 +400,12 @@ remove_cluster_suspend_time(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -422,11 +424,11 @@ remove_cluster_suspend_time(cluster_id: str,
 
 {/cut}
 
-## stop
+## {heading(stop)[id=mlspark-library-reference-clusters-stop]}
 
 Завершить все текущие подключения к кластеру.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
 {note:info}
 
@@ -434,15 +436,15 @@ remove_cluster_suspend_time(cluster_id: str,
 
 {/note}
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-stop-arguments]}
 
 Аргументов нет.
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-stop-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-stop-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -457,12 +459,12 @@ stop()
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -476,11 +478,11 @@ stop()
 
 {/cut}
 
-## wake_up_cluster
+## {heading(wake_up_cluster)[id=mlspark-library-reference-clusters-wake_up_cluster]}
 
 Активировать кластер.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
 {note:warn}
 
@@ -488,7 +490,7 @@ stop()
 
 {/note}
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-clusters-wake_up_cluster-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -502,14 +504,14 @@ stop()
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-clusters-wake_up_cluster-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-clusters-wake_up_cluster-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -527,12 +529,12 @@ wake_up_cluster(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python

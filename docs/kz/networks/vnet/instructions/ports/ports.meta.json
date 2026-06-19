@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Networks сервисінде порттарды қалай баптауға болады. Портты қосу, қосу, өшіру, өңдеу, порт үшін IP Source Guard баптау",
   "sectionTitle": "Порттар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

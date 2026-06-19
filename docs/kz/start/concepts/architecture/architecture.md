@@ -51,7 +51,7 @@ VK Cloud келесі орналастыру модельдерін ұсынад
 | Сертификатталған VK Cloud өнімдерінің негізінде қажетті қауіпсіздік деңгейін өзіңіз баптайсыз
 |===
 
-## Бұлттық қызметтерді ұсыну модельдері
+## {heading(Бұлттық қызметтерді ұсыну модельдері)[id=architecture-delivery-models]}
 
 VK Cloud-та виртуализация, мониторинг, контейнерлер және деректерді сақтау сервистері орналастырылуы мүмкін. архитектура сервистердің төрт тобына негізделген:
 
@@ -66,8 +66,8 @@ VK Cloud-та виртуализация, мониторинг, контейне
     - [DNS](/kz/networks/dns) — VK Cloud платформасының сервистері үшін атауларды шешуді қамтамасыз ететін жария және жеке DNS-ті қолдайды.
     - [CDN](/kz/networks/cdn) — контентті серверлеріңізден пайдаланушыларға ең аз кідіріспен жеткізуді ұйымдастырады.
     - [Load Balancer](/kz/networks/balancing/concepts/load-balancer) — қолданбалардың істен шығуға төзімділігін және икемді ауқымдалуын қамтамасыз ете отырып, инфрақұрылымға түсетін жүктемені бөледі.
-    - [AntiDDoS](/kz/security/firewall-and-protection-ddos#antiddos) — DDoS-шабуылдарды бұғаттау үшін жобада орналастырылған VK Cloud ресурстарына келетін трафикті сүзгіден өткізеді.
-    - [WAF](/kz/security/firewall-and-protection-ddos#waf) (Web Application Firewall) — желілік шабуылдарды анықтау және бұғаттау үшін кіріс және шығыс трафикті сүзгілеу ережелерін баптайды.
+    - [AntiDDoS](/kz/security/firewall-and-protection-ddos#firewall-and-protection-ddos-antiddos) — DDoS-шабуылдарды бұғаттау үшін жобада орналастырылған VK Cloud ресурстарына келетін трафикті сүзгіден өткізеді.
+    - [WAF](/kz/security/firewall-and-protection-ddos#firewall-and-protection-ddos-waf) (Web Application Firewall) — желілік шабуылдарды анықтау және бұғаттау үшін кіріс және шығыс трафикті сүзгілеу ережелерін баптайды.
 
   {/cut}
 
@@ -76,7 +76,7 @@ VK Cloud-та виртуализация, мониторинг, контейне
   {cut(PaaS-сервистер тізімі)}
 
   - [Cloud Containers](/kz/kubernetes/k8s) — сервистер мен қолданбаларды іске қосуға болатын Kubernetes кластерлерін құруға және басқаруға мүмкіндік береді.
-  - [Cloud Databases](/kz/dbs/dbaas) — ауқымдалатын СУБД ұсынады: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Greenplum негізіндегі Arenadata DB.
+  - [Cloud Databases](/kz/dbs/dbaas) — ауқымдалатын СУБД ұсынады: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Greenplum негізіндегі Arenadata DB.
   - [Cloud Spark](/kz/ml/spark-to-k8s) — деректерді үлестірілген пакеттік және ағындық өңдеуді, Machine Learning-пен және аналитикамен жұмысты қамтамасыз етеді.
   - [Cloud ML Platform](/kz/ml/mlplatform) — ML-әзірлеудің толық цикліне арналған сервистерді қолдайды.
   - [Cloud Voice](/kz/ml/cloud-voice) — машиналық оқыту негізінде сөйлеуді тану және синтездеу үшін REST API ұсынады.
@@ -92,7 +92,7 @@ VK Cloud-та виртуализация, мониторинг, контейне
 
   {/cut}
 
-- **Software as a Service (SaaS)**. Интернет арқылы жазылым бойынша қолжетімді дайын БҚ. Инфрақұрылымды немесе платформаны басқаруды талап етпейді. VK Cloud-тағы SaaS-сервисінің мысалы — [1С:Готовое рабочее место](/kz/applications-and-services/1cgrm). Сервис [1С сервистерін](/kz/applications-and-services/1cgrm/about#description) орналастыру үшін ресурстар мен БҚ ұсынады.
+- **Software as a Service (SaaS)**. Интернет арқылы жазылым бойынша қолжетімді дайын БҚ. Инфрақұрылымды немесе платформаны басқаруды талап етпейді. VK Cloud-тағы SaaS-сервисінің мысалы — [1С:Готовое рабочее место](/kz/applications-and-services/1cgrm). Сервис [1С сервистерін](/kz/applications-and-services/1cgrm/about#1cgrm-description) орналастыру үшін ресурстар мен БҚ ұсынады.
 
 - **Common&Security-сервистері** пайдаланушылардың қауіпсіз жұмысын қамтамасыз етеді және VK Cloud ресурстарын пайдалану кезінде рөлдік модельді қолдайды.
 

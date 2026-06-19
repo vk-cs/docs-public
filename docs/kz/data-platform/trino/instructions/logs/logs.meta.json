@@ -1,0 +1,14 @@
+{
+  "title": "Standalone режиміндегі логтау",
+  "shortDescription": "Standalone режимінде сервис данасының логтарын қалай қарауға болады",
+  "metaDescription": "VK Data Platform платформасының Standalone нұсқасында жайылған Cloud Trino сервисі данасының жұмыс логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Standalone режиміндегі логтау",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

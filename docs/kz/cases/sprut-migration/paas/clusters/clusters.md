@@ -12,17 +12,17 @@
 
 1. [Бастапқысына ұқсас кластер жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster). Кластерге қосылған желіні таңдауға жауап беретін параметрде қажетті SDN Sprut-ты таңдаңыз.
 1. Velero сақтық көшіру құралының көмегімен [жүктемені көшіріңіз](/kz/kubernetes/k8s/how-to-guides/velero/velero-backup) (оның ішінде тұрақты томдарды).
-1. [Жаңа кластерге қосылуды баптаңыз](/kz/kubernetes/k8s/connect/kubectl#connect).
+1. [Жаңа кластерге қосылуды баптаңыз](/kz/kubernetes/k8s/connect/kubectl#k8s-kubectl-connect).
 1. (Опционалды) Sprut және Neutron желілерінің желілік байланысын баптаңыз:
 
-   Сервистердің қолжетімсіз болу уақытын қысқарту үшін, транзиттік желілер арқылы стандартты маршрутизаторларға қосылған кеңейтілген маршрутизатордың көмегімен бастапқы SDN Neutron мен жаңа SDN Sprut-ты біріктіріңіз. Егер сервистерді кезең-кезеңмен көшіріп жатсаңыз немесе көші-қон кезінде кластерді өшіре алмасаңыз, бұл тәсіл пайдалы болады.
+    Сервистердің қолжетімсіз болу уақытын қысқарту үшін, транзиттік желілер арқылы стандартты маршрутизаторларға қосылған кеңейтілген маршрутизатордың көмегімен бастапқы SDN Neutron мен жаңа SDN Sprut-ты біріктіріңіз. Егер сервистерді кезең-кезеңмен көшіріп жатсаңыз немесе көші-қон кезінде кластерді өшіре алмасаңыз, бұл тәсіл пайдалы болады.
 
     1. [Кеңейтілген маршрутизаторды қосыңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/advanced-router) бастапқы SDN Neutron мен жаңа SDN Sprut-тағы стандартты маршрутизаторлары бар транзиттік желілерге.
-    1. Neutron және Sprut желілері арасында [статикалық маршруттарды баптаңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/advanced-router#6_zheliler_arasyndagy_statikalyk_marshruttardy_baptanyz).
+    1. Neutron және Sprut желілері арасында [статикалық маршруттарды баптаңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/advanced-router#includes-advanced-router-static-routs).
 
 1. Жаңа кластердің жұмысқа қабілеттілігін тексеріңіз:
 
-    1. Кластерге [қосылуды тексеріңіз](/kz/kubernetes/k8s/connect/kubectl#check_connection).
+    1. Кластерге [қосылуды тексеріңіз](/kz/kubernetes/k8s/connect/kubectl#k8s-kubectl-check-connection).
     2. Жаңа кластерде орналастырылған қолданбаларыңыздың жұмыс істеп тұрғанына көз жеткізіңіз.
 
-1. [Бастапқы кластерді жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster), егер ол енді қажет болмаса.
+1. [Бастапқы кластерді жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete), егер ол енді қажет болмаса.

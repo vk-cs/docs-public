@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Networks сервисіндегі стандартты маршрутизаторларды қалай басқаруға болады. Стандартты маршрутизаторды қосу және өңдеу, интерфейстер мен статикалық маршруттарды басқару",
   "sectionTitle": "Стандартты маршрутизаторлар",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

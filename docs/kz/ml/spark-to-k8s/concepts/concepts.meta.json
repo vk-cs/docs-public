@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-тағы Cloud Spark-пен жұмыс істеу кезіндегі негізгі ұғымдардың сипаттамасы",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

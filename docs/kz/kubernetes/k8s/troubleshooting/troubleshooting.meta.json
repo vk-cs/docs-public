@@ -4,5 +4,15 @@
   "metaDescription": "Cloud Containers үшін типтік мәселелерді диагностикалау және шешу тәсілдері",
   "sectionTitle": "Ақауларды жою",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

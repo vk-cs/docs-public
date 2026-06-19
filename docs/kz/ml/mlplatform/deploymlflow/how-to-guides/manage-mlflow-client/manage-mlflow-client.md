@@ -1,8 +1,10 @@
+# {heading(MLflow Client көмегімен ML-модельдерді орналастыру)[id=mlflowdeploy-htg-manage-ml]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Cloud ұсынған JupyterHub-та алдын ала орнатылған python-кітапхана — MLflow Deployment Client көмегімен MLflow Deploy инстанстарын басқарыңыз.
+{var(cloud)} ұсынған JupyterHub-та алдын ала орнатылған python-кітапхана — MLflow Deployment Client көмегімен MLflow Deploy инстанстарын басқарыңыз.
 
-## Жұмысты бастамас бұрын
+## {heading(Жұмысты бастамас бұрын)[id=mlflowdeploy-htg-manage-ml-before-work]}
 
 1. [Құрыңыз](../../../jupyterhub/instructions/create) JupyterHub инстансын.
 2. [Құрыңыз](../../../mlflow/instructions/create) MLflow инстансын.
@@ -16,19 +18,19 @@ JupyterHub, MLflow және MLflow Deploy инстанстары бір желі
 
 {/note}
 
-## ML-модельді дайындау
+## {heading(ML-модельді дайындау)[id=mlflowdeploy-htg-manage-ml-prepare-mlmodel]}
 
 1. [Қосылыңыз](../../../jupyterhub/instructions/connect) JupyterHub инстансына.
 2. **tutorials** директориясына өтіңіз.
 
-   VK Cloud ұсынған JupyterHub құрамына оқытуға арналған Jupyter ноутбуктары кіреді: `mlflow_demo.ipynb` және `mlflow_deploy_demo.ipynb`.
+   {var(cloud)} ұсынған JupyterHub құрамына оқытуға арналған Jupyter ноутбуктары кіреді: `mlflow_demo.ipynb` және `mlflow_deploy_demo.ipynb`.
 
 3. Тестілік ML-модельді дайындаңыз:
    1. `mlflow_demo.ipynb` файлын екі рет басыңыз.
    2. Ашылған терезеде код мысалы бар ұяшықты басып, мәзірден **Run → Run Selected Cells** таңдаңыз.
    3. Код бар барлық ұяшықтар үшін әрекетті қайталаңыз.
 
-## Инстансты басқару
+## {heading(Инстансты басқару)[id=mlflowdeploy-htg-manage-ml-instance-manage]}
 
 Оқытуға арналған Jupyter ноутбугының бүкіл сценарийін орындау үшін:
 
@@ -38,7 +40,7 @@ JupyterHub, MLflow және MLflow Deploy инстанстары бір желі
 
 Орналастыру сервері мен docker-контейнерді орналастыру бойынша орындалатын операцияларды толығырақ қарастырайық.
 
-### MlflowClient жасау
+### {heading(MlflowClient жасау)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-client]}
 
 ML-модельдің URI-сын алу үшін MLflow-тың Tracking модулінен MlflowClient жасаңыз. URI кейін ML-модельді орналастыру үшін қажет болады. Мысалда URI бойынша ML-модельге жүгіну келтірілген.
 
@@ -62,9 +64,9 @@ from mlflow.deployments import get_deploy_client
 client = get_deploy_client('vk-cloud-mlplatform')
 ```
 
-### Endpoint жасау
+### {heading(endpoint жасау)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-endpoint]}
 
-`endpoint` VK Cloud MLflow Deploy терминологиясында — орналастыру сервері ретінде бапталған ВМ.
+`endpoint` {var(cloud)} MLflow Deploy терминологиясында — орналастыру сервері ретінде бапталған ВМ.
 
 ```python
 deploy_server_name = "deploy_server_one"
@@ -81,7 +83,7 @@ client.create_endpoint(name=deploy_server_name)
 - `mid — advanced 8-8` (8 ядро, 8 гигабайт RAM);
 - `high — advanced 16-16` (16 ядро, 16 гигабайт RAM).
 
-### Серверлер тізімін және мәртебесін алу
+### {heading(Серверлер тізімі мен күйін алу)[id=mlflowdeploy-htg-manage-ml-instance-manage-get-server-info]}
 
 Орналастыру сервері `CREATING` мәртебесі `RUNNING` мәртебесіне ауысқаннан кейін жұмысқа дайын болады. Әдетте орналастыру серверін дайындау шамамен бес-он минутты алады.
 
@@ -95,9 +97,9 @@ client.list_endpoints()
 client.get_endpoint(deploy_server_name)
 ```
 
-### Deployment жасау
+### {heading(deployment жасау)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-deployment]}
 
-`deployment` VK Cloud MLflow Deploy терминологиясында — орналастыру серверіндегі ML-модельі бар іске қосылған docker-контейнер.
+`deployment` {var(cloud)} MLflow Deploy терминологиясында — орналастыру серверіндегі ML-модельі бар іске қосылған docker-контейнер.
 
 ```python
 deployment_name="test_deployment"
@@ -106,7 +108,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 `port_out` параметрін көрсету міндетті емес, `62000`-нан `65000`-ға дейінгі ауқымнан бірінші бос порт таңдалады. ML-модельді іске қосу әдетте бір минуттан аз уақыт алады.
 
-### Deployment тізімін және мәртебесін алу
+### {heading(deployment тізімі мен күйін алу)[id=mlflowdeploy-htg-manage-ml-instance-manage-get-deployment-info]}
 
 1. Орналастыру серверіндегі іске қосылған ML-модельдердің тізімін шығарыңыз:
 
@@ -127,13 +129,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.predict(deploy_server_name, deployment_name, data)
    ```
 
-### Жария DNS бойынша қолжетімді deployment жасау
+### {heading(Публичті DNS арқылы қолжетімді deployment жасау)[id=mlflowdeploy-htg-manage-ml-instance-manage-create-dnsdeployment]}
 
 1. Пайдаланушы атын және құпиясөзді орнатыңыз.
 
    {note:info}
 
-   VK Cloud жеке кабинетінің есептік деректерінен немесе JupyterHub инстансындағы авторизация параметрлерінен өзгеше деректерді пайдалану ұсынылады.
+   {var(cloud)} жеке кабинетінің есептік деректерінен немесе JupyterHub инстансындағы авторизация параметрлерінен өзгеше деректерді пайдалану ұсынылады.
 
    {/note}
 
@@ -171,7 +173,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.predict(deploy_server_name, auth_deployment_name, data)
    ```
 
-### deployment жою
+### {heading(deployment жою)[id=mlflowdeploy-htg-manage-ml-instance-manage-delete-deployment]}
 
 Сервер атауы және deployment атауы бойынша жүгініп, орналастыру серверінен `deployment` жойыңыз:
 
@@ -179,13 +181,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 client.delete_deployment(deploy_server_name, deployment_name)
 ```
 
-### {heading(deployment жою)[id=delete_deploy_server]}
+### {heading(deployment жою)[id=mlflowdeploy-htg-manage-ml-instance-manage-delete_deploy_server]}
 
 ```python
 client.delete_endpoint(deploy_server_name)
 ```
 
-### Әдістердің қысқаша тізімі
+### {heading(Әдістердің қысқаша тізімі)[id=mlflowdeploy-htg-manage-ml-instance-manage-methods]}
 
 ```python
 from mlflow.deployments import get_deploy_client

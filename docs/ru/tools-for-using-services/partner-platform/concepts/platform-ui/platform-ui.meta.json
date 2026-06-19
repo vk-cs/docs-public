@@ -1,6 +1,6 @@
 {
   "title": "Личный кабинет партнера",
-  "shortDescription": "Пользовательский интерфейс платформы партнера VK Cloud",
+  "shortDescription": "Пользовательский интерфейс платформы партнера {var(cloud)}",
   "metaDescription": "Пользовательский интерфейс платформы партнера VK Cloud: что такое личный кабинет партнера VK Cloud.",
   "sectionTitle": "Личный кабинет партнера",
   "icon": "",
@@ -8,5 +8,10 @@
   "isBeta": false,
   "hidden": false,
   "weight": 0,
-  "uuid": "43460807-7c7a-434f-b082-bf7db1aa9ed6"
+  "uuid": "43460807-7c7a-434f-b082-bf7db1aa9ed6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

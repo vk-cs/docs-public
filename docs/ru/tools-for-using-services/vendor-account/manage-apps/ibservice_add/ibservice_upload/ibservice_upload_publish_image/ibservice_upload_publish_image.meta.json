@@ -4,5 +4,10 @@
   "metaDescription": "Публикация образа сервиса",
   "sectionTitle": "Публикация образа сервиса",
   "weight": 6,
-  "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417"
+  "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

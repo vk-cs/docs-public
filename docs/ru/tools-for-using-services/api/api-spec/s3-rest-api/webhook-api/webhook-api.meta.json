@@ -1,9 +1,14 @@
 {
-    "title": "Webhooks",
-      "shortDescription": "",
-      "metaDescription": "Вебхуки для VK Object Storage - это возможность настраивать отправку HTTP(S) запросов по событиям для бакета, используя API. Например, можно: настроить обработку и конвер",
-    "sectionTitle": "Webhooks",
-    "icon": "",
-    "weight": 9,
-    "uuid": "80c67385-b262-4835-a629-29e996b232e9"
+  "title": "Webhooks",
+  "shortDescription": "Настройка уведомлений через отправку HTTP/HTTPS запросов по событиям в бакетах",
+  "metaDescription": "Все доступные методы для работы с вебхуками (webhook) в бакетах VK Object Storage: включить уведомление о событии (PutBucketNotificationConfiguration), проверить текущую конфигурацию правил уведомления для бакета (GetBucketNotificationConfiguration)",
+  "sectionTitle": "Webhooks",
+  "icon": "",
+  "weight": 11,
+  "uuid": "80c67385-b262-4835-a629-29e996b232e9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

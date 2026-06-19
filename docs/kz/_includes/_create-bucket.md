@@ -72,7 +72,7 @@
    1. Команданы орындап, ACL жеке баптаулары бар объектіге қолжетімділікке арналған уақытша сілтемені жасаңыз:
 
       ```console
-      aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url https://hb.ru-kz.vkcloud-storage.ru
+      aws s3 presign s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА> --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       Мұнда:
@@ -87,7 +87,7 @@
       Онда команда мынадай болады:
 
       ```console
-      aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-kz.vkcloud-storage.ru
+      aws s3 presign s3://my-cloud-bucket/cat_image_private_acl.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
       {/cut}
@@ -97,7 +97,7 @@
       Сілтеме келесі түрде болады:
 
       ```https
-      https://hb.ru-kz.vkcloud-storage.ru/<ИМЯ_БАКЕТА>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
+      https://hb.ru-msk.vkcloud-storage.ru/<ИМЯ_БАКЕТА>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
       ```
 
       {note:info}
@@ -133,7 +133,7 @@
       Сілтеме келесі түрде болады:
 
       ```https
-      https://<ИМЯ_БАКЕТА>.hb.ru-kz.vkcloud-storage.ru/...
+      https://<ИМЯ_БАКЕТА>.hb.ru-msk.vkcloud-storage.ru/...
       ```
 
 ## {heading({counter(bucket)}. Объектіге қолжетімділікті тексеріңіз)[id=access_check]}
@@ -145,7 +145,7 @@
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=delete_unused]}
 
-Бакет және оған жүктелген объектілер [тарифтелмейді](/kz/storage/s3/tariffication). Егер олар енді қажет болмаса:
+Бакет және оған жүктелген объектілер [тарификацияланады](/kz/storage/s3/tariffication). Егер олар енді қажет болмаса:
 
 1. [Объектілерді жойыңыз](/kz/storage/s3/instructions/objects/manage-object#udalenie_obekta).
 1. [Бакетті жойыңыз](/kz/storage/s3/instructions/buckets/manage-bucket#bucket_delete).

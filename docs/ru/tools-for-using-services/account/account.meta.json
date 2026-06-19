@@ -1,10 +1,22 @@
 {
   "title": "Личный кабинет",
-  "shortDescription": "Личный кабинет пользователя VK Cloud",
+  "shortDescription": "Личный кабинет пользователя {var(cloud)}",
   "metaDescription": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud.",
   "sectionTitle": "Личный кабинет",
   "icon": "",
   "weight": 2,
-  "additionalUuids": ["ab1486af-0c0a-4aa3-b328-383da74395fc"],
-  "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4"
+  "additionalUuids": [
+    "ab1486af-0c0a-4aa3-b328-383da74395fc"
+  ],
+  "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

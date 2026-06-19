@@ -1,8 +1,10 @@
-Мониторинг для Arenadata DB — готовое решение для мониторинга баз данных Arenadata в инфраструктуре VK Cloud. Содержит набор предустановленных инструментов для сбора метрик, визуализации и своевременного оповещения о проблемах.
+# {heading(Установка и настройка сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start]}
+
+Мониторинг для Arenadata DB — готовое решение для мониторинга баз данных Arenadata в инфраструктуре {var(cloud)}. Содержит набор предустановленных инструментов для сбора метрик, визуализации и своевременного оповещения о проблемах.
 
 Пройдя все шаги этой инструкции, вы:
 
-1. Подключите в личном кабинете VK Cloud сервис Мониторинг для Arenadata DB.
+1. Подключите в личном кабинете {var(cloud)} сервис Мониторинг для Arenadata DB.
 
    При подключении автоматически будет создана виртуальная машина и на ней установлены:
 
@@ -17,12 +19,12 @@
 1. Установите и настроите cAdvisor — агент для сбора метрик контейнеров Docker.
 1. Подключитесь к сервису Grafana и посмотрите дашборды с данными, поступающими из Prometheus.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=marketplace-adb-monitoring-start-prepare-step]}
 
 1. Создайте Telegram-чат, в который будут отправляться оповещения от сервиса Мониторинг для Arenadata DB, сохраните идентификатор чата.
 1. Создайте Telegram-бот, который будет использоваться для отправки оповещений, сохраните токен бота.
-1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud, если это не сделано ранее.
-1. [Создайте](/ru/dbs/adb/quick-start/create-adb) инстанс Arenadata DB. Сохраните данные, указанные при создании инстанса:
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)}, если это не сделано ранее.
+1. {linkto(../../../../dbs/adb/quick-start/create-adb#adb-create-adb)[text=Создайте]} инстанс Arenadata DB. Сохраните данные, указанные при создании инстанса:
 
    - Имя кластера Arenadata DB. Оно же является именем инстанса.
    - Имя базы данных Arenadata.
@@ -39,11 +41,11 @@
 
    Эти данные понадобятся при подключении и настройке сервиса Мониторинг для Arenadata DB.
 
-## 1. Подключите сервис Мониторинг для Arenadata DB
+## {heading(1. Подключите сервис Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/instructions/net#redaktirovanie_podseti), где будет размещена ВМ сервиса Мониторинг для Arenadata DB, отключите опцию **Приватный DNS**.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
+1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ сервиса Мониторинг для Arenadata DB, отключите опцию **Приватный DNS**.
 1. Перейдите в раздел **Магазин приложений**, на странице раздела нажмите кнопку **Все решения**.
 1. На карточке сервиса **Мониторинг для Arenadata DB** нажмите кнопку **Подробнее**.
 1. На странице с описанием сервиса нажмите кнопку **Подключить**.
@@ -51,14 +53,14 @@
 
    1. Укажите параметры виртуальной машины, на которой будет развернут инстанс сервиса:
 
-      - **Зона доступности**: выберите [дата-центр](/ru/start/concepts/architecture#az), где будет запущена ВМ.
-      - **Тип виртуальной машины**: выберите предустановленную [конфигурацию ВМ](/ru/computing/iaas/concepts/vm/flavor).
+      - **Зона доступности**: выберите {linkto(../../../../start/concepts/architecture#architecture-az)[text=дата-центр]}, где будет запущена ВМ.
+      - **Тип виртуальной машины**: выберите предустановленную {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурацию ВМ]}.
       - **Сеть**: выберите сеть с доступом в интернет и подсеть, для которой отключена опция **Приватный DNS**.
 
    1. Укажите параметры системного диска и диска с данными:
 
       - **Размер диска**: укажите нужный размер диска ВМ в гигабайтах.
-      - **Тип диска**: выберите [один из типов диска](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) — `HDD`, `SSD` или `High-IOPS SSD`.
+      - **Тип диска**: выберите {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=один из типов диска]} — `HDD`, `SSD` или `High-IOPS SSD`.
 
 1. Нажмите кнопку **Следующий шаг**.
 1. Введите данные на странице **Параметры мониторинга**.
@@ -77,9 +79,9 @@
 1. Нажмите кнопку **Следующий шаг**.
 1. Ознакомьтесь с тарифными условиями и стоимостью инфраструктуры для развертывания сервиса и нажмите кнопку **Подключить тариф**.
 
-   После успешного развертывания на зарегистрированную в VK Cloud почту придут сообщения:
+   После успешного развертывания на зарегистрированную в {var(cloud)} почту придут сообщения:
 
-   - уведомление со ссылкой на инстанс сервиса в личном кабинете VK Cloud;
+   - уведомление со ссылкой на инстанс сервиса в личном кабинете {var(cloud)};
    - письмо с одноразовой ссылкой.
 
 1. Перейдите по одноразовой ссылке из письма и сохраните данные для доступа к сервису:
@@ -90,14 +92,12 @@
    - `sshKey` — приватный ключ для подключения ĸ ВМ по SSH.
 
    {note:info}
-
-   Если данные для доступа утрачены, [сгенерируйте](../../instructions/pr-instance-manage#update_access) новые.
-
+   Если данные для доступа утрачены, {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access)[text=сгенерируйте]} новые.
    {/note}
 
-## 2. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB
+## {heading(2. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect-service]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите на имя ВМ, начинающееся с `adb-monitoring-`.
 1. На странице ВМ скопируйте и сохраните внешний IP-адрес. Он понадобится для подключения к ВМ сервиса Мониторинг для Arenadata DB.
@@ -105,17 +105,13 @@
 1. Установите доступ к файлу `vkc_monitoring.pem` так, чтобы только владелец имел права на чтение и запись. Для этого выполните команду:
 
    ```console
-
    chmod 600 vkc_monitoring.pem
-
    ```
 
 1. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB, выполнив команду:
 
    ```console
-
    ssh -i <ПУТЬ_К_КЛЮЧУ>/vkc_monitoring.pem <ЛОГИН>@<IP-АДРЕС_ВМ>
-
    ```
 
    Здесь:
@@ -124,14 +120,12 @@
    - `<ЛОГИН>` — имя администратора ВМ, полученное в письме (`sshUser`).
    - `<IP-АДРЕС_ВМ>` — сохраненный ранее внешний IP-адрес ВМ сервиса Мониторинг для Arenadata DB.
 
-## 3. Подготовьте Arenadata DB для работы с сервисом Мониторинг для Arenadata DB
+## {heading(3. Подготовьте Arenadata DB для работы с сервисом Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-arenadata-db]}
 
 1. На ВМ сервиса Мониторинг для Arenadata DB подключитесь к базе данных Arenadata. Для этого выполните команду, подставив в нее ранее сохраненные данные:
 
    ```console
-
    psql -h <IP-АДРЕС_БД> -p <ПОРТ> -U <ЛОГИН> <ИМЯ_БД>
-
    ```
 
    Здесь:
@@ -146,7 +140,6 @@
    {cut(Скрипт инициализации базы данных)}
 
    ```console
-
    -- client database
    -- 1. create
    CREATE RESOURCE GROUP monitoring_group
@@ -223,7 +216,6 @@
    GRANT SELECT ON ALL tables IN SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
    GRANT EXECUTE ON ALL functions IN SCHEMA vkcloud_toolkit TO vkc_monitoring;
    GRANT SELECT ON session_state.session_level_memory_consumption TO vkc_monitoring;
-
    ```
 
    {/cut}
@@ -232,23 +224,19 @@
 1. Вставьте этот пароль в скрипт `/home/almalinux/init.sql` в строку:
 
    ```console
-
    CREATE USER vkc_monitoring WITH login password `<ПАРОЛЬ>` RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
-
    ```
 
 1. Сохраните изменения.
 1. Внутри терминала `psql` выполните скрипт инициализации базы данных:
 
    ```console
-
    \i /home/almalinux/init.sql
-
    ```
 
 1. Выйдите из терминала `psql` с помощью команды `\q`.
 
-## 4. Настройте сервис ADB Exporter
+## {heading(4. Настройте сервис ADB Exporter)[id=marketplace-adb-monitoring-start-adb-exporter]}
 
 Сервис ADB Exporter предназначен для экспорта метрик из баз данных Arenadata в Prometheus. Сервис формирует метрики на основе описаний в конфигурационном файле и автоматически обновляет их значения по заданному расписанию, выполняя SQL-запросы к базе данных.
 
@@ -257,15 +245,12 @@ ADB Exporter автоматически устанавливается и нас
 1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса ADB Exporter:
 
    ```console
-
    sudo nano /etc/adb_exporter/config.yml
-
    ```
 
 1. Добавьте в конфигурационный файл параметры подключения к базе данных Arenadata с помощью ранее созданного пользователя `vkc_monitoring`:
 
    ```txt
-
    datasource:
       dsn: "postgresql://vkc_monitoring:<ПАРОЛЬ>@<IP-АДРЕС_БД>:<ПОРТ>/<ИМЯ_БД>?sslmode=disable"
 
@@ -280,28 +265,22 @@ ADB Exporter автоматически устанавливается и нас
 1. Перезапустите ADB Exporter:
 
    ```console
-
    sudo systemctl restart adb_exporter
-
    ```
 
 1. Проверьте состояние ADB Exporter:
 
    ```console
-
    sudo systemctl status adb_exporter
-
    ```
 
    Если сервис успешно запущен и работает, ответ команды будет содержать строку:
 
    ```txt
-
    Active: active (running)
-
    ```
 
-## 5. Установите и настройте агент Node Exporter
+## {heading(5. Установите и настройте агент Node Exporter)[id=marketplace-adb-monitoring-start-node-exporter]}
 
 Агент Node Exporter собирает системные метрики серверов, включая использование процессора, памяти, дисков, файловых систем и сетевых интерфейсов. Без установки этого агента не будут работать некоторые дашборды Grafana и оповещения в Prometheus.
 
@@ -309,9 +288,7 @@ ADB Exporter автоматически устанавливается и нас
 1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса Prometheus:
 
    ```console
-
    sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-
    ```
 
 1. Добавьте в конфигурационный файл информацию об источниках метрик: IP-адреса узлов кластера (`targets`) и метки метрик (`labels`).
@@ -319,40 +296,32 @@ ADB Exporter автоматически устанавливается и нас
    Пример конфигурации Prometheus:
 
    ```yml
-
    - job_name: 'node_exporter'
      static_configs:
        - targets: ['localhost:9100']
          labels:
            instance: segment-1
            adb_cluster: staging
-
    ```
 1. Перезапустите Prometheus.
 
    ```console
-
    sudo systemctl restart prometheus
-
    ```
 
 1. Проверьте состояние Prometheus:
 
    ```console
-
    sudo systemctl status prometheus
-
    ```
 
    Если сервис успешно запущен и работает, ответ команды будет содержать строку:
 
    ```txt
-
    Active: active (running)
-
    ```
 
-## 6. Установите и настройте агент cAdvisor
+## {heading(6. Установите и настройте агент cAdvisor)[id=marketplace-adb-monitoring-start-cadvisor]}
 
 Агент cAdvisor собирает метрики работы контейнеров Docker, включая использование процессора, памяти, дискового ввода-вывода и сетевого трафика. Без установки этого агента не будут работать некоторые дашборды Grafana и оповещения в Prometheus.
 
@@ -360,9 +329,7 @@ ADB Exporter автоматически устанавливается и нас
 1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса Prometheus:
 
    ```console
-
    sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-
    ```
 
 1. Добавьте в конфигурационный файл информацию об источниках метрик: IP-адреса узлов кластера (`targets`) и метки метрик (`labels`).
@@ -370,47 +337,37 @@ ADB Exporter автоматически устанавливается и нас
    Пример конфигурации Prometheus:
 
    ```yml
-
    - job_name: 'docker_exporter'
      metrics_path: /metrics
      static_configs:
        - targets: ['localhost:8080']
          labels:
            instance: adcc-node-1
-
    ```
 1. Перезапустите Prometheus.
 
    ```console
-
    sudo systemctl restart prometheus
-
    ```
 
 1. Проверьте состояние Prometheus:
 
    ```console
-
    sudo systemctl status prometheus
-
    ```
 
    Если сервис успешно запущен и работает, ответ команды будет содержать строку:
 
    ```txt
-
    Active: active (running)
-
    ```
 
-## 7. Подключитесь к веб-интерфейсу Grafana
+## {heading(7. Подключитесь к веб-интерфейсу Grafana)[id=marketplace-adb-monitoring-start-connect-grafana]}
 
 1. Перейдите по сохраненной ранее ссылке `productURL` из письма. Откроется веб-интерфейс Grafana.
 1. Авторизуйтесь с помощью логина и пароля администратора Grafana, полученных в письме (`grafanaUser` и `grafanaPassword`).
 1. Просмотрите содержимое дашбордов с отображением метрик, собранных Prometheus.
 
    {note:info}
-
    Менять пароль при первом входе необязательно.
-
    {/note}

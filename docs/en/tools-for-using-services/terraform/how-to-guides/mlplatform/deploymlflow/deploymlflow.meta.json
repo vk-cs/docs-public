@@ -1,9 +1,14 @@
 {
-    "title": "Creating an MLflow Deploy instance",
-      "shortDescription": "",
-      "metaDescription": "How to create an MLflow Deploy instance using Terraform",
-    "sectionTitle": "Creating an MLflow Deploy instance",
-    "icon": "",
-    "weight": 3,
-    "uuid": "465263b5-7ca8-4be1-8897-e3e22f48ad32"
+  "title": "Creating an MLflow Deploy instance",
+  "shortDescription": "",
+  "metaDescription": "How to create an MLflow Deploy instance using Terraform",
+  "sectionTitle": "Creating an MLflow Deploy instance",
+  "icon": "",
+  "weight": 3,
+  "uuid": "465263b5-7ca8-4be1-8897-e3e22f48ad32",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

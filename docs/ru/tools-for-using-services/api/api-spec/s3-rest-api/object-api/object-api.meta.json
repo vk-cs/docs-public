@@ -1,9 +1,14 @@
 {
-    "title": "Object",
-      "shortDescription": "",
-      "metaDescription": "Операции с Объектами: Get - Скачать объект из бакета\nUpload - Загрузить объект в бакет\nCopy - Скопировать объект, находящийся в бакете\nHeadObject - Получит",
-    "sectionTitle": "Object",
-    "icon": "",
-    "weight": 3,
-    "uuid": "47eac79f-0fa5-44af-ab92-e95ee30c8faf"
+  "title": "Object",
+  "shortDescription": "Загрузка, копирование, удаление, проверка наличия объекта и скачивание его содержимого",
+  "metaDescription": "Все доступные методы для работы с объектами в VK Object Storage: скачать объект из бакета (GetObject), загрузить объект в бакет (PutObject), скопировать объект (CopyObject), получить информацию об объекте (HeadObject), удалить объект (DeleteObject) или группу объектов (DeleteMultipleObjects)",
+  "sectionTitle": "Object",
+  "icon": "",
+  "weight": 7,
+  "uuid": "47eac79f-0fa5-44af-ab92-e95ee30c8faf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

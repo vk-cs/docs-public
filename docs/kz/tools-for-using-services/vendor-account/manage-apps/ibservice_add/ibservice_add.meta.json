@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Дүкенге image-based қосымшаны қосу",
   "sectionTitle": "Дүкенге image-based қосымшаны қосу",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

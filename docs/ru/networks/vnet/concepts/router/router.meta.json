@@ -1,9 +1,19 @@
 {
-    "title": "Маршрутизаторы",
-      "shortDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
-      "metaDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
-    "sectionTitle": "Маршрутизаторы",
-    "icon": "",
-    "weight": 3,
-    "uuid": "152cc140-fdcd-4b06-8c37-05bf90f8fd21"
+  "title": "Маршрутизаторы",
+  "shortDescription": "Назначение, типы и особенности маршрутизаторов",
+  "metaDescription": "Назначение, типы и особенности маршрутизаторов в VK Cloud",
+  "sectionTitle": "Маршрутизаторы",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-cert",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "152cc140-fdcd-4b06-8c37-05bf90f8fd21"
 }

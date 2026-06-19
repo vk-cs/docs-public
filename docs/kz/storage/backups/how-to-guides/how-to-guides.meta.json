@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud платформасындағы Cloud Backup сервисін пайдалану мысалдары.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

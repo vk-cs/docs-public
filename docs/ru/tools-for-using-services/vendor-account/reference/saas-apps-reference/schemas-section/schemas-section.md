@@ -1,4 +1,4 @@
-Секция `schemas` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) описывает [тарифные опции](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) конкретного плана. Секция имеет следующую структуру:
+Секция `schemas` в [JSON-файле конфигурации сервиса](../../../instructions/manage-saas-apps/saas-add#service_config) описывает [тарифные опции](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) конкретного плана. Секция имеет следующую структуру:
 
 ```json
 "schemas": {
@@ -46,7 +46,7 @@
 
   * Секция `service_instance.create` описывает бесплатные и предоплатные тарифные опции, которые будут активными в мастере конфигурации тарифного плана при подключении сервиса.
   * Секция `service_instance.update` описывает бесплатные и предоплатные тарифные опции, которые будут активными в мастере конфигурации тарифного плана при обновлении тарифного плана сервиса.
-  * Секция `service_instance.resource_usages` описывает постоплатные тарифные опции. Все опции из этой секции должны быть [описаны в брокере](../../../manage-saas-apps/saas-add#saas_broker).
+  * Секция `service_instance.resource_usages` описывает постоплатные тарифные опции. Все опции из этой секции должны быть [описаны в брокере](../../../instructions/manage-saas-apps/saas-add).
 
 * Секция `service_binding` описывает создание сервисных привязок.
 
@@ -67,7 +67,7 @@
 
 Требование к именам опций:
 
-* Если сбор метрик SaaS-приложения происходит по [pull-модели](/ru/docs/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_pull), имя опции в JSON-файле должно совпадать co значением параметра `kind`, [указанным в методе брокера](../../../manage-saas-apps/saas-add#saas_broker) для передачи отчета в Marketplace.
+* Если сбор метрик SaaS-приложения происходит по [pull-модели](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_pull), имя опции в JSON-файле должно совпадать co значением параметра `kind`, [указанным в методе брокера](../../../instructions/manage-saas-apps/saas-add) для передачи отчета в Marketplace.
 * Если сбор метрик осуществляется по [push-модели](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push), имя опции в JSON-файле должно совпадать co значением параметра `param` в API-запросе на передачу метрик.
 
 ### Примеры описания разных типов опций в формате JSON

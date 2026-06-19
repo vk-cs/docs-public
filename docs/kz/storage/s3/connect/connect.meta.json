@@ -4,5 +4,12 @@
   "metaDescription": "VK Object Storage қоймасына ыңғайлы тәсілмен қосылу: AWS CLI, файлдық менеджерлер (Cyberduck, WinSCP, Диск‑О:, S3FS) және SDK (Python, Go және т.б.) арқылы қатынауды баптау және тексеру — кілттерді алу, endpoint/region көрсету, типтік операциялардың мысалдары.",
   "sectionTitle": "Қоймаға қосылу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

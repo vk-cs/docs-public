@@ -1,0 +1,14 @@
+{
+  "title": "JupyterHub",
+  "shortDescription": "Jupyter Notebook негізіндегі көппайдаланушылық ортаны құру құралы",
+  "metaDescription": "VK Data Platform инфрақұрылымында Jupyter Notebook негізіндегі көппайдаланушылық ортаны құруға арналған Cloud JupyterHub",
+  "sectionTitle": "JupyterHub",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 11,
+  "uuid": ""
+}

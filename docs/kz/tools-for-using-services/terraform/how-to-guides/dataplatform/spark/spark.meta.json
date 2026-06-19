@@ -4,5 +4,11 @@
   "metaDescription": "VK Data Platform платформасында Terraform көмегімен Spark сервисінің данасын құру. Spark кластерінің, желілік инфрақұрылымның және деректер көздерінің параметрлерінің сипаттамасы.",
   "sectionTitle": "Spark кластерін құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p"
+    ]
+  }
 }

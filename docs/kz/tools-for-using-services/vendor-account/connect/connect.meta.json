@@ -4,5 +4,10 @@
   "metaDescription": "Жеткізуші кабинетіне қосылу.",
   "sectionTitle": "Жеткізуші кабинетіне қосылу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

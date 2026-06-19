@@ -1,3 +1,5 @@
+# {heading(Топологияны қарау)[id=vnet-topology]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Желі топологиясы — виртуалды машиналардың желілік байланысының сызбасы. Онда келесі элементтер, сондай-ақ олардың арасындағы барлық байланыстар көрсетіледі:
@@ -9,13 +11,19 @@
 
 Жеке жобаның желі топологиясын қарау үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private_pg,private_cert,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Желі топологиясы**.
+1. **Виртуалды желілер** → **Желі топологиясы** бөліміне өтіңіз.
 
+{ifdef(private_cert,private_pdf,private_pg_pdf)}
+{caption(Сурет {counter(pic)[id=numb_pic_view_topology]} — Желі топологиясы беті)[align=center;position=under;id=pic_vnet_view_topology;number={const(numb_pic_view_topology)}]}
+{/ifdef}
 ![](./assets/view-topology.png)
+{ifdef(private_cert,private_pdf,private_pg_pdf)}
+{/caption}
+{/ifdef}
 
-## Топологияны басқару
+## {heading(Топологияны басқару)[id=vnet-topology-manage]}
 
 Желі топологиясымен қолжетімді операциялар:
 

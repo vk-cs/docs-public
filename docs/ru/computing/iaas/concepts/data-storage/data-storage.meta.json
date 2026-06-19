@@ -4,5 +4,15 @@
   "metaDescription": "Варианты хранения данных в VK Cloud",
   "sectionTitle": "Хранилище данных",
   "weight": 3,
-  "uuid": "60fe5ddc-1836-4c6f-a969-4b13d6e6536e"
+  "uuid": "60fe5ddc-1836-4c6f-a969-4b13d6e6536e",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

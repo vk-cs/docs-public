@@ -4,5 +4,10 @@
   "metaDescription": "Жеткізуші кабинеті сервисінің мүмкіндіктерінің сипаттамасы.",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

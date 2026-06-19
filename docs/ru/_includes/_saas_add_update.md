@@ -44,15 +44,15 @@
 
 Здесь:
 
-* `<ПАРАМЕТРЫ_СЕРВИСА>` — [параметры сервиса](../../reference/saas-apps-reference/saas-param).
+* `<ПАРАМЕТРЫ_СЕРВИСА>` — [параметры сервиса](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/saas-param).
 * Секции `preview` и `plans` вместе определяют вид [матрицы тарифных планов](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix). В матрице будут отображаться все тарифные планы, указанные в секции `plans`, и тарифные опции, указанные в секции `preview`.
-* Массив `parameters` секции `preview` содержит имена тарифных опций, может быть пустым. Эти имена используются только в конфигурационном JSON-файле. В интерфейсе магазина тарифные опции будут отображаться с именами, заданными в [секции schemas](../../reference/saas-apps-reference/schemas-section) параметром `description` этих опций.
+* Массив `parameters` секции `preview` содержит имена тарифных опций, может быть пустым. Эти имена используются только в конфигурационном JSON-файле. В интерфейсе магазина тарифные опции будут отображаться с именами, заданными в [секции schemas](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/schemas-section) параметром `description` этих опций.
 * Секция `plans` описывает тарифные планы и их опции и для каждого плана содержит следующие блоки:
 
-  * `<ПАРАМЕТРЫ_ПЛАНА>` — [параметры плана](../../reference/saas-apps-reference/saas-plan).
-  * [Секция display](../../reference/saas-apps-reference/display-section) описывает мастер конфигурации тарифного плана.
-  * [Секция billing](../../reference/saas-apps-reference/billing-section) содержит информацию о стоимости и способе тарификации плана и его опций.
-  * [Секция schemas](../../reference/saas-apps-reference/schemas-section) перечисляет тарифные опции плана.
+  * `<ПАРАМЕТРЫ_ПЛАНА>` — [параметры плана](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/saas-plan).
+  * [Секция display](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/display-section) описывает мастер конфигурации тарифного плана.
+  * [Секция billing](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/billing-section) содержит информацию о стоимости и способе тарификации плана и его опций.
+  * [Секция schemas](/ru/tools-for-using-services/vendor-account/reference/saas-apps-reference/schemas-section) перечисляет тарифные опции плана.
 
 {cut(Пример конфигурационного JSON-файла)}
 
@@ -308,6 +308,6 @@
    1. Перейдите на новый тарифный план.
 
 1. Проверьте основные пользовательские сценарии сервиса.
-1. [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса.
+1. [Удалите](/ru/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-delete) инстанс сервиса.
 
 {/includetag}

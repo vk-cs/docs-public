@@ -1,10 +1,24 @@
 {
-  "title": "Реквизиты",
+  "title": "Деректемелер",
   "shortDescription": "",
   "metaDescription": "Шарттар жасау және шоттар ұсыну үшін деректемелер Толық атауы\n«Цифровое облако» жауапкершілігі шектеулі қоғамы",
-  "sectionTitle": "Реквизиты",
+  "sectionTitle": "Деректемелер",
   "icon": "",
   "disableGithub": true,
   "disableDateInformation": true,
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

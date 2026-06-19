@@ -1,6 +1,10 @@
+# {heading(Оқиғалар журналымен жұмыс)[id=tools-account-actionslogs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Оқиғалар журналында VK Cloud компоненттері орындаған операциялар тарихы сақталады. Келесі компоненттердің әрекеттері сақталады (API сұраулары үшін форматта көрсетілген):
+<!--- #todo /kz/monitoring-services/event-log/instructions/view-event-log бетімен бірыңғай дереккөзге келтіру, бұл беттегі ақпарат әлдеқашан ескірген -->
+
+Оқиғалар журналында {var(cloud)} компоненттері орындаған операциялар тарихы сақталады. Келесі компоненттердің әрекеттері сақталады (API сұраулары үшін форматта көрсетілген):
 
 - `nova` — есептеу ресурстарының контроллері.
 - `cinder` — ВМ дискілерімен жұмыс.
@@ -13,13 +17,13 @@
 
 Журнал деректері инциденттерді ішкі талдау кезінде де, техникалық қолдауға жүгінгенде де пайдалы болуы мүмкін.
 
-## Оқиғалар журналын жүктеп алу
+## {heading(Оқиғалар журналын жүктеп алу)[id=account-actionslogs-download]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. VK Cloud [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app/).
 1. Бет тақырыбындағы пайдаланушы атына басыңыз.
 1. Ашылмалы тізімнен **Оқиғалар журналын** таңдаңыз.
 1. **Жүктеп алу** түймесін басыңыз.
@@ -30,13 +34,13 @@
 
 {/tabs}
 
-## Журнал жазбаларын қарау
+## {heading(Журнал жазбаларын қарау)[id=account-actionslogs-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. VK Cloud [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app/).
 1. Бет тақырыбындағы пайдаланушы атына басыңыз.
 1. Ашылмалы тізімнен **Оқиғалар журналын** таңдаңыз.
 1. (Қосымша) Уақыт аралығын көрсетіңіз:
@@ -60,7 +64,7 @@
    curl -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
    ```
 
-   Сұрауды құрастыру туралы толығырақ [Журналмен жұмыс істеу кезіндегі API сұрауларының мысалдары](#zhurnalmen_zhumys_isteu_kezindegi_api_suraularynyn_mysaldary) бөлімінде берілген.
+   Сұрауды құрастыру туралы толығырақ [Журналмен жұмыс істеу кезіндегі API сұрауларының мысалдары](#account-actionslogs-example) бөлімінде берілген.
 
    Сұрауда (header) қосымша параметрлерді көрсетуге болады:
 
@@ -89,7 +93,7 @@
 - `request_body` — сұрау денесі (бар болса).
 - `response_body` — жауап денесі (бар болса).
 
-## Журналмен жұмыс істеу кезіндегі API сұрауларының мысалдары
+## {heading(Журналмен жұмыс істеу кезіндегі API сұрауларының мысалдары)[id=account-actionslogs-example]}
 
 Жазбаларды консольге немесе файлға жолдарға бөліп шығару үшін сұрау мысалдарында [jq утилитасы](/kz/tools-for-using-services/api/rest-api/install-jq) пайдаланылады.
 
@@ -98,13 +102,7 @@
 Magnum компоненті журналының соңғы 2 жазбасын алу үшін сұрауды орындаңыз:
 
 ```console
-curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
-source=magnum&\
-limit=2&\
-from=&\
-to=" \
--H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
--H "Content-Type: application/json" | jq
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?source=magnum&limit=2&from=&to=" -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" -H "Content-Type: application/json" | jq
 ```
 
 Жауап мысалы:
@@ -131,9 +129,9 @@ to=" \
       "action": "unknown",
       "event_id": "00a5def3-XXXX-f0884f24798b",
       "method": "PATCH",
-      "request_body": "{\"delta\":-1}",
+      "request_body": "{"delta":-1}",
       "request_id": "req-f697a08b-XXXX-e59c66306dd1",
-      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
+      "response_body": "{"uuid": "31a092d7-XXXX"}",
       "source": "magnum",
       "success": "yes",
       "timestamp": "2023-11-20T09:08:18Z",
@@ -154,13 +152,7 @@ to=" \
 Берілген кезең үшін Nova компоненті журналының соңғы 2 жазбасын алу үшін сұрауды орындаңыз:
 
 ```console
-curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
-source=nova&\
-limit=2&\
-from=2023-10-15T10:00:00.000Z&\
-to=2023-11-15T16:43:00.477Z" \
--H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
--H "Content-Type: application/json" | jq
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?source=nova&limit=2&from=2023-10-15T10:00:00.000Z&to=2023-11-15T16:43:00.477Z" -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" -H "Content-Type: application/json" | jq
 ```
 
 Жауап мысалы:
@@ -172,9 +164,9 @@ to=2023-11-15T16:43:00.477Z" \
       "action": "create-vm",
       "event_id": "a2d05902-XXXX-60bce13de1f7",
       "method": "POST",
-      "request_body": "{\"server\":{\"name\":\"BY-CentOS_prometheus\",\"key_name\":\"ADH-clusterXXXX\",XXXX}}",
+      "request_body": "{"server":{"name":"BY-CentOS_prometheus","key_name":"ADH-clusterXXXX",XXXX}}",
       "request_id": "req-1d76a3f3-XXXX-b695d066e606",
-      "response_body": "{\"server\": {\"security_groups\": [{\"name\": \"71d90a92-XXXX\"}, {\"name\": \"XXXX-aecb77b43bec\"}], XXXX}}",
+      "response_body": "{"server": {"security_groups": [{"name": "71d90a92-XXXX"}, {"name": "XXXX-aecb77b43bec"}], XXXX}}",
       "source": "nova",
       "success": "yes",
       "timestamp": "2023-11-15T12:16:26Z",
@@ -187,7 +179,7 @@ to=2023-11-15T16:43:00.477Z" \
       "action": "vm-action",
       "event_id": "fc98d3d7-XXXX-c2c5fd8fe619",
       "method": "POST",
-      "request_body": "{\"addFloatingIp\":{\"address\":\"XXXX\"}}",
+      "request_body": "{"addFloatingIp":{"address":"XXXX"}}",
       "request_id": "req-f358678d-XXXX-311861a4ff77",
       "response_body": "",
       "source": "nova",
@@ -213,13 +205,7 @@ to=2023-11-15T16:43:00.477Z" \
 1. Қажетті кезең үшін журналдың соңғы 10 жазбасын `nova_part1.log` файлына шығаруды сұраңыз:
 
    ```console
-   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
-   source=nova&\
-   limit=10&\
-   from=2023-10-15T10:00:00.000Z&\
-   to=2023-11-15T16:43:00.477Z" \
-   -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-   -H "Content-Type: application/json" | jq > nova_part1.log
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?   source=nova&   limit=10&   from=2023-10-15T10:00:00.000Z&   to=2023-11-15T16:43:00.477Z"    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"    -H "Content-Type: application/json" | jq > nova_part1.log
    ```
 
 2. `nova_part1.log` файлынан `marker` параметрінің мәнін алыңыз:
@@ -237,14 +223,7 @@ to=2023-11-15T16:43:00.477Z" \
 3. `marker` параметрінің мәнін пайдаланып, уақыт бойынша одан ертерек 10 журнал жазбасын `nova_part2.log` файлына шығаруды сұраңыз:
 
    ```console
-   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
-   source=nova&\
-   marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&\
-   limit=10&\
-   from=2023-10-15T10:00:00.000Z&\
-   to=2023-11-15T16:43:00.477Z" \
-   -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" \
-   -H "Content-Type: application/json" | jq > nova_part2.log
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?   source=nova&   marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&   limit=10&   from=2023-10-15T10:00:00.000Z&   to=2023-11-15T16:43:00.477Z"    -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"    -H "Content-Type: application/json" | jq > nova_part2.log
    ```
 
 4. Қажетті кезең үшін барлық журнал жазбаларын алғанша, алдыңғы сұрауды қайталаңыз, онда тек файл атауын өзгертіңіз (мысалы: `nova_part3.log`, `nova_part4.log`, …).

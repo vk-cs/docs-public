@@ -1,9 +1,18 @@
 {
   "title": "Концепции",
-  "shortDescription": "Как устроен сервис баз данных VK Cloud",
+  "shortDescription": "Как устроен сервис баз данных {var(cloud)}",
   "metaDescription": "Cloud Databases в VK Cloud: подробное описание принципов функционирования и устройства сервиса.",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
-  "uuid": "dc696854-bf38-4ef3-878c-6933c932a4ea"
+  "uuid": "dc696854-bf38-4ef3-878c-6933c932a4ea",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -16,7 +16,7 @@
     sudo apt install fio
     ```
 
-1. VK Cloud ұсынған `fio.sh` скриптін өнімділікті тестілеу үшін іске қосыңыз, `<ФАЙЛ_АТАУЫ>` параметрінде тестілеу нәтижесін сақтағыңыз келетін файлды көрсетіңіз.
+1. VK Cloud ұсынған `fio.sh` скриптін өнімділікті тестілеу үшін іске қосыңыз, `<ИМЯ_ФАЙЛА>` параметрінде тестілеу нәтижесін сақтағыңыз келетін файлды көрсетіңіз.
 
     {cut(fio.sh)}
 
@@ -97,7 +97,7 @@
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Жасалған ресурстар тарифтелмейді. Егер олар енді қажет болмаса, оларды жойыңыз:
+Жасалған ресурстар тарификацияланады. Егер олар енді қажет болмаса, оларды жойыңыз:
 
-1. [Жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm) тестілік ВМ-ді.
-1. ВМ орналастырылған [ішкі желіні](/kz/networks/vnet/instructions/net#ishki_zhelini_zhoyu) және [желіні](/kz/networks/vnet/instructions/net#zhelini_zhoyu) жойыңыз.
+1. [Жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete) тестілік ВМ-ді.
+1. ВМ орналастырылған [ішкі желіні](/kz/networks/vnet/instructions/net#udalenie_podseti) және [желіні](/kz/networks/vnet/instructions/net#vnet-net-delete) жойыңыз.

@@ -5,5 +5,11 @@
   "sectionTitle": "Создание экземпляра сервиса",
   "icon": "",
   "weight": 1,
-  "uuid": "5f79f9e1-cc03-4742-a2e6-90b17fba7348"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

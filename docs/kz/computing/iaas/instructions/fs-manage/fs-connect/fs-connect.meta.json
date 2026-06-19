@@ -4,5 +4,15 @@
   "metaDescription": "Файлдық қойманы виртуалды машинаға қалай қосуға және ажыратуға болады: Windows және Linux үшін NFS және CIFS протоколдары бойынша дискілерді монтаждау және ажырату жөніндегі қадамдық нұсқаулық.",
   "sectionTitle": "Файлдық қойманы қосу және ажырату",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

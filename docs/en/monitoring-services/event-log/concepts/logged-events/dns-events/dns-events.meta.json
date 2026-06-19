@@ -5,5 +5,10 @@
   "sectionTitle": "Public DNS events",
   "icon": "",
   "weight": 0,
-  "uuid": "def67999-e77c-489c-84be-b1242d6d7fe5"
+  "uuid": "def67999-e77c-489c-84be-b1242d6d7fe5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

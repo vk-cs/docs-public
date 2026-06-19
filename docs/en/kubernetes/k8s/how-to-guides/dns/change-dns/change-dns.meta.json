@@ -5,5 +5,19 @@
   "sectionTitle": "Changing DNS server addresses in cluster network",
   "icon": "",
   "weight": 4,
-  "uuid": "4709507e-b1bc-4535-8e16-19443ab24c47"
+  "uuid": "4709507e-b1bc-4535-8e16-19443ab24c47",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

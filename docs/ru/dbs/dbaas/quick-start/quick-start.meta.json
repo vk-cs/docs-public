@@ -1,9 +1,14 @@
 {
-    "title": "Быстрый старт",
-      "shortDescription": "Как начать работу с сервисом",
-      "metaDescription": "Cloud Databases в VK Cloud: как начать работу с сервисом.",
-    "sectionTitle": "Быстрый старт",
-    "icon": "",
-    "weight": 1,
-    "uuid": "003c711b-b3e6-47ca-8d99-7163a35470a6"
+  "title": "Быстрый старт",
+  "shortDescription": "Как начать работу с сервисом",
+  "metaDescription": "Cloud Databases в VK Cloud: как начать работу с сервисом.",
+  "sectionTitle": "Быстрый старт",
+  "icon": "",
+  "weight": 1,
+  "uuid": "003c711b-b3e6-47ca-8d99-7163a35470a6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

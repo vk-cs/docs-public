@@ -5,5 +5,10 @@
   "sectionTitle": "PostgreSQL",
   "icon": "",
   "weight": 1,
-  "uuid": "722d28fc-0c89-4f82-93c3-6be2500b3e9e"
+  "uuid": "722d28fc-0c89-4f82-93c3-6be2500b3e9e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

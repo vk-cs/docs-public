@@ -1,9 +1,15 @@
 {
   "title": "Пошаговые инструкции",
   "shortDescription": "Создание экземпляра сервиса и управление его компонентами",
-  "metaDescription": "Cloud Airflow в VK Cloud: создание экземпляра сервиса, управление экземпляром и его компонентами",
+  "metaDescription": "Cloud Airflow в VK Data Platform: создание экземпляра сервиса, управление экземпляром и его компонентами",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 3,
-  "uuid": "b3ff2518-eb5f-48df-9d65-1fb1864fbbb0"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

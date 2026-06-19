@@ -732,14 +732,14 @@
           "200": {
             "$ref": "#/components/responses/ShareNetworksViewDetailResponse"
           },
-          "422": {
-            "description": "Некорректный запрос"
-          },
           "401": {
             "description": "Ошибка аутентификации"
           },
           "403": {
             "description": "Недостаточно прав"
+          },
+          "422": {
+            "description": "Некорректный запрос"
           }
         }
       }
@@ -1722,36 +1722,36 @@
             "description": "Порядковый номер элемента, с которого начинается список"
           },
           "sort_key": {
-              "type": "string",
-              "enum": [
-                "id",
-                "status",
-                "size",
-                "host",
-                "share_proto",
-                "export_location",
-                "availability_zone",
-                "user_id",
-                "project_id",
-                "created_at",
-                "updated_at",
-                "display_name",
-                "name",
-                "share_type_id",
-                "share_type",
-                "share_network_id",
-                "share_network",
-                "snapshot_id",
-                "snapshot"
-              ],
+            "type": "string",
+            "enum": [
+              "id",
+              "status",
+              "size",
+              "host",
+              "share_proto",
+              "export_location",
+              "availability_zone",
+              "user_id",
+              "project_id",
+              "created_at",
+              "updated_at",
+              "display_name",
+              "name",
+              "share_type_id",
+              "share_type",
+              "share_network_id",
+              "share_network",
+              "snapshot_id",
+              "snapshot"
+            ],
             "description": "Ключ для сортировки списка файловых хранилищ"
           },
           "sort_dir": {
-              "type": "string",
-              "enum": [
-                "asc",
-                "desc"
-              ],
+            "type": "string",
+            "enum": [
+              "asc",
+              "desc"
+            ],
             "description": "Направление сортировки списка файловых хранилищ"
           }
         }

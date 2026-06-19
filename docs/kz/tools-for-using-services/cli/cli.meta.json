@@ -1,7 +1,19 @@
 {
   "title": "CLI",
-  "shortDescription": "VK Cloud платформасының ресурстарын пәрмен жолы интерфейсі арқылы басқару",
+  "shortDescription": "{var(cloud)} платформасының ресурстарын пәрмен жолы интерфейсі арқылы басқару",
   "metaDescription": "VK Cloud платформасының ресурстарын пәрмен жолы интерфейсі арқылы басқару.",
   "sectionTitle": "CLI",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Gatekeeper",
-      "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
-      "metaDescription": "",
-    "sectionTitle": "Gatekeeper",
-    "icon": "",
-    "weight": 4,
-    "uuid": "e032a1cc-3c3a-473b-a696-3e0d779608ab"
+  "title": "Gatekeeper",
+  "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
+  "metaDescription": "",
+  "sectionTitle": "Gatekeeper",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e032a1cc-3c3a-473b-a696-3e0d779608ab",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

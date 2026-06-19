@@ -4,5 +4,11 @@
   "metaDescription": "Cloud AirFlow: жобадағы сервис данасының компоненттерін басқару",
   "sectionTitle": "Сервис данасымен жұмыс істеу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

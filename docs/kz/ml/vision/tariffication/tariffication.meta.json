@@ -4,5 +4,10 @@
   "metaDescription": "Сервис қызметтерін тарифтау.",
   "sectionTitle": "Тарифтау",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

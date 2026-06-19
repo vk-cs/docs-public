@@ -1,8 +1,18 @@
 {
   "title": "Lens көмегімен кластерге қосылу",
   "shortDescription": "",
-  "metaDescription": "Kubernetes кластеріне Lens көмегімен қалай қосылуғал болады",
+  "metaDescription": "Kubernetes кластеріне Lens көмегімен қалай қосылуға болады",
   "sectionTitle": "Lens көмегімен кластерге қосылу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

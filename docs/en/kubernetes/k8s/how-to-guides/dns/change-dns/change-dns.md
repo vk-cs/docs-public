@@ -23,7 +23,7 @@ To apply the changes:
 
 1. [Stop](../../../instructions/manage-cluster#stop) your cluster and wait for all nodes to completely shut down.
 
-1. [Start](../../../instructions/manage-cluster#start) the cluster again and wait for all nodes to initialize.
+1. [Start](../../../instructions/manage-cluster) the cluster again and wait for all nodes to initialize.
 
 {note:warn}
 
@@ -32,3 +32,7 @@ Rebooting causes temporary unavailability of services on the cluster. Stop and s
 {/note}
 
 When the cluster starts, all its nodes will receive updated DNS settings.
+
+## {heading(Delete unused resources)[id=delete]}
+
+{include(/en/_includes/_delete-test-cluster.md)}

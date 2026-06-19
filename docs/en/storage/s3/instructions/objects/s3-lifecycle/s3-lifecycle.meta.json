@@ -1,9 +1,23 @@
 {
-    "title": "Life cycle",
-      "shortDescription": "",
-      "metaDescription": "Description The VK Object Storage service allows you to use an automated mechanism for cleaning objects at specified intervals. Lifecycle configuration allows",
-    "sectionTitle": "Life cycle",
-    "icon": "",
-    "weight": 7,
-    "uuid": "7c515fbb-ba95-4593-99df-3425effedb49"
+  "title": "Life cycle",
+  "shortDescription": "",
+  "metaDescription": "Description The VK Object Storage service allows you to use an automated mechanism for cleaning objects at specified intervals. Lifecycle configuration allows",
+  "sectionTitle": "Life cycle",
+  "icon": "",
+  "weight": 7,
+  "uuid": "7c515fbb-ba95-4593-99df-3425effedb49",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

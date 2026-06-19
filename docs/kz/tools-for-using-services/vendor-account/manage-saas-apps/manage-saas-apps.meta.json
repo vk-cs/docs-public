@@ -5,5 +5,10 @@
   "sectionTitle": "SaaS-қосымшаларды басқару",
   "weight": 3,
   "isBeta": true,
-  "hidden": true
+  "hidden": true,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

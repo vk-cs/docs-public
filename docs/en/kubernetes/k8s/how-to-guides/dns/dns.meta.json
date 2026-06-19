@@ -4,6 +4,20 @@
   "metaDescription": "",
   "sectionTitle": "DNS settings for cluster",
   "icon": "",
-  "weight": 7,
-  "uuid": "d45ac3f7-de12-428c-97d4-45740d065a17"
+  "weight": 5,
+  "uuid": "d45ac3f7-de12-428c-97d4-45740d065a17",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

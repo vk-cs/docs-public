@@ -1,0 +1,15 @@
+{
+  "title": "IAM Only",
+  "shortDescription": "IAM Only жеке кабинетін пайдалану және баптау",
+  "metaDescription": "VK Object Storage үшін IAM Only жеке кабинетімен жұмыс істеудің қадамдық әрекеттері: кіру және аккаунтты басқару, жобаларды баптау.",
+  "sectionTitle": "IAM Only",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

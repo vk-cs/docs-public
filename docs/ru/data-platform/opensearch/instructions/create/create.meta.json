@@ -1,0 +1,14 @@
+{
+  "title": "Создание экземпляра сервиса",
+  "shortDescription": "Как создать экземпляр OpenSearch",
+  "metaDescription": "Узнайте как развернуть экземпляр системы поиска и аналитики OpenSearch в Data Platform",
+  "sectionTitle": "Создание экземпляра сервиса",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

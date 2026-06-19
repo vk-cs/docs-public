@@ -1,18 +1,20 @@
+# {heading(Работа со Spark Connect)[id=mlspark-library-reference-spark-connect]}
+
 Эти методы позволяют удаленно работать с кластером Cloud Spark через клиент Spark Connect.
 
 {note:warn}
 
-Прежде чем использовать эти методы, [подключитесь к кластеру Cloud Spark через Spark Connect](../../../connect/spark-connect).
+Прежде чем использовать эти методы, {linkto(../../../connect/spark-connect#mlspark-connect-spark-connect)[text=подключитесь к кластеру Cloud Spark через Spark Connect]}.
 
 {/note}
 
-## add_spark_connect_jars
+## {heading(add_spark_connect_jars)[id=mlspark-library-reference-spark-connect-add_spark_connect_jars]}
 
 Передать в кластер Cloud Spark пути к jar-файлам, пакетам Maven и альтернативным репозиториям через Spark Connect.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-connect-add_spark_connect_jars-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -26,7 +28,7 @@
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`jars`
 
@@ -47,11 +49,11 @@
 |Список путей к альтернативным репозиториям или значение `None`. Значение по умолчанию: `None`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-connect-add_spark_connect_jars-result]}
 
 Объект класса `K8sSparkConnectSettings`, который содержит информацию о настройках сервера Spark.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-connect-add_spark_connect_jars-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -72,16 +74,16 @@ add_spark_connect_jars(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
-1. [Создайте кластер Spark](../../../instructions/create), если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../../instructions/create#mlspark-instructions-create)[text=Создайте кластер Spark]}, если это еще не сделано.
 1. [Загрузите в бакет](/ru/storage/s3/instructions/objects/upload-object) кластера Cloud Spark jar-файлы, которые необходимо подключить через Spark Connect.
 1. Сохраните имя бакета. Далее в скрипте используется имя `spark-k8s-XXXX-bucket`.
-1. [Подключитесь к кластеру Cloud Spark через Spark Connect](../../../connect/spark-connect), если это еще не сделано.
+1. {linkto(../../../connect/spark-connect#mlspark-connect-spark-connect)[text=Подключитесь к кластеру Cloud Spark через Spark Connect]}, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python

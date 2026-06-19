@@ -1,12 +1,14 @@
+# {heading(Удаление CDN-ресурса)[id=cdn-delete-resource]}
+
 Вы можете удалить CDN-ресурс двумя способами:
 
-- [Через интерфейс сервиса CDN](#udalenie_cherez_interfeys_servisa_cdn).
+- {linkto(#cdn-delete-resource-cdn-interface)[text=Через интерфейс сервиса CDN]}.
 
-- [Через интерфейс бакета](#udalenie_cherez_interfeys_baketa) в сервисе [VK Object Storage](/ru/storage/s3).
+- {linkto(#cdn-delete-resource-bucket-interface)[text=Через интерфейс бакета]} в сервисе [VK Object Storage](/ru/storage/s3).
 
-  Этот способ применим, если CDN-ресурс [был создан через интерфейс бакета](../create-resource#sozdanie_cherez_interfeys_baketa).
+  Этот способ применим, если CDN-ресурс {linkto(../../../../networks/cdn/instructions/create-resource#cdn-create-resource-bucket-ui)[text=был создан через интерфейс бакета]}.
 
-## Удаление через интерфейс сервиса CDN
+## {heading(Удаление через интерфейс сервиса CDN)[id=cdn-delete-resource-cdn-interface]}
 
 {tabs}
 
@@ -16,13 +18,13 @@
 
 Для удаления CDN-ресурса:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный CDN-ресурс.
 1. Перейдите в раздел **CDN → CDN-ресурсы**.
 1. Выполните одно из действий для нужного CDN-ресурса:
 
    - Выберите с помощью флажка ресурс, затем нажмите кнопку **Удалить**.
-   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для ресурса и выберите пункт **Удалить**.
+   - Нажмите ![ ](../../../../assets/more-icon.svg "inline") для ресурса и выберите пункт **Удалить**.
 
 1. Подтвердите удаление.
 
@@ -30,13 +32,13 @@
 
 {/tabs}
 
-## Удаление через интерфейс бакета
+## {heading(Удаление через интерфейс бакета)[id=cdn-delete-resource-bucket-interface]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный бакет.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 1. Нажмите на имя нужного бакета.

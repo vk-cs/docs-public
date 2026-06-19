@@ -1,9 +1,14 @@
 {
-    "title": "About the service",
-      "shortDescription": "Features of the Cloud Alerting service",
-      "metaDescription": "",
-    "sectionTitle": "About the service",
-    "icon": "",
-    "weight": 0,
-    "uuid": "7b5ce2a1-69a7-4743-b404-eec9f0079bde"
+  "title": "About the service",
+  "shortDescription": "Features of the Cloud Alerting service",
+  "metaDescription": "",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 0,
+  "uuid": "7b5ce2a1-69a7-4743-b404-eec9f0079bde",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

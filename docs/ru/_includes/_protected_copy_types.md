@@ -1,3 +1,3 @@
 - ![ ](/ru/assets/protected-icon.svg "inline") — действующая блокировка.
 - ![ ](/ru/assets/protected-expiring-icon.svg "inline") — действующая блокировка, срок которой скоро истекает.
-- ![ ](/ru/assets/protected-expired-icon.svg "inline") — блокировка, срок которой истек. Копию можно [удалить](/ru/storage/backups/instructions/manage-backup-copy#delete).
+- ![ ](/ru/assets/protected-expired-icon.svg "inline") — блокировка, срок которой истек. Копию можно {linkto(/ru/storage/backups/instructions/manage-backup-copy#backup-copy-delete)[text=удалить]}.

@@ -4,5 +4,15 @@
   "metaDescription": "PostgreSQL сипаттамасы — бұл POSTGRES негізінде құрылған объектілік-реляциялық дерекқорларды басқару жүйесі (ОРДҚБЖ, ORDBMS). PostgreSQL — ашық бастапқы коды бар ДҚБЖ",
   "sectionTitle": "PostgreSQL",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

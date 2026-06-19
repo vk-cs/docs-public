@@ -1,0 +1,14 @@
+{
+  "title": "Не жаңалық",
+  "shortDescription": "VK Private Cloud 4.3 нұсқасы релизіндегі жаңалықтар, релиз күні: 2025 жылғы қараша",
+  "metaDescription": "VK Private Cloud жүйесіндегі жаңалықтар",
+  "sectionTitle": "Не жаңалық",
+  "weight": 0,
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": ""
+}

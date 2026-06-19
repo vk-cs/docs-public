@@ -1,3 +1,5 @@
+# {heading(Қауіпсіздік тобын жою мүмкін емес)[id=vnet-secgroups-delete-problem]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Қауіпсіздік тобын жою кезінде қате пайда болады:
@@ -11,16 +13,16 @@ Security Group f4ad1825-XXXX-XXXX-XXXX in use.
 
 Мәселе қауіпсіздік тобы пайдаланылып, порттарға байланып тұрған кезде туындайды.
 
-### Шешім
+### {heading(Шешім)[id=vnet-secgroups-delete-problem-resolve]}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz), көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
-1. Қосымша `neutron` [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz).
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Қосымша `neutron` пакеті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=орнатылғанына]} көз жеткізіңіз.
 1. Қауіпсіздік тобымен байланысты порт идентификаторларының тізімін алыңыз:
 
    ```console
    neutron port-list -c id -c name -c security_groups | grep <ID_ГРУППЫ_БЕЗОПАСНОСТИ> | awk '{print $2}'
    ```
-   Мұнда `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — [жою мүмкін болмаған қауіпсіздік тобының идентификаторы](/kz/networks/vnet/instructions/secgroups#view_secgroups).
+   Мұнда `<ID_ГРУППЫ_БЕЗОПАСНОСТИ>` — {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=жою мүмкін болмаған қауіпсіздік тобының идентификаторы]}.
 
 1. Қауіпсіздік тобын әрбір порттан ажыратыңыз:
 

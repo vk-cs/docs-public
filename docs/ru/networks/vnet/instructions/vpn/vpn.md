@@ -1,17 +1,19 @@
+# {heading(VPN)[id=vnet-vpn]}
+
 Вы можете управлять VPN-туннелями: просматривать, добавлять в проект и удалять их из проекта, а также редактировать и перезапускать туннели.
 
-Сервис VPN доступен в Neutron и Sprut [SDN](../../concepts/sdn). Доступные инструменты управления зависят от используемой SDN:
+Сервис VPN доступен в Neutron и Sprut {linkto(../../concepts/sdn#vnet-sdn)[text=SDN]}. Доступные инструменты управления зависят от используемой SDN:
 
 - Sprut SDN: интерфейс личного кабинета, API и Terraform.
-- Neutron SDN: интерфейс личного кабинета, API, [Terraform](/ru/tools-for-using-services/terraform/how-to-guides/vnet/vpn) и [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+- Neutron SDN: интерфейс личного кабинета, API, {linkto(../../../../tools-for-using-services/terraform/how-to-guides/vnet/vpn#terraform-vpn)[text=Terraform]} и {linkto(../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
 
-## Просмотр списка VPN-туннелей и информации о них
+## {heading(Просмотр списка VPN-туннелей и информации о них)[id=vnet-vpn-view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 
@@ -27,8 +29,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
-   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-neutronclient`.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Чтобы посмотреть список VPN-туннелей, выполните команду:
 
@@ -78,20 +80,20 @@
 
 {/tabs}
 
-## Добавление VPN-туннеля
+## {heading(Добавление VPN-туннеля)[id=vnet-vpn-add]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 1. Нажмите кнопку **Добавить VPN** или **Добавить**. Откроется мастер создания нового VPN-туннеля.
 1. Выберите SDN, в которой будет создан VPN:
 
-   - **SDN Neutron**: VPN можно подключить только к [стандартному маршрутизатору](../../concepts/router#standard) Sprut или Neutron.
-   - **SDN Sprut**: VPN можно подключить только к [продвинутому маршрутизатору](../../concepts/router#advanced).
+   - **SDN Neutron**: VPN можно подключить только к {linkto(../../concepts/router#vnet-router-standard)[text=стандартному маршрутизатору]} Sprut или Neutron.
+   - **SDN Sprut**: VPN можно подключить только к {linkto(../../concepts/router#vnet-router-advanced)[text=продвинутому маршрутизатору]}.
 
 1. Настройте IKE:
 
@@ -129,9 +131,7 @@
    1. **Маршрутизатор** — выберите маршрутизатор, подсети которого должны быть доступны через VPN-туннель. Доступные опции зависят от выбранной SDN, и среди них только те маршрутизаторы, которые подключены к внешней сети и имеют назначенный внешний IP-адрес.
 
    {note:warn}
-
    Для одного маршрутизатора рекомендуется создавать не более 500 соединений. При большем количестве соединений могут возникать ошибки.
-
    {/note}
 
    1. **Local Endpoint** — выберите локальную endpoint-группу из выпадающего списка. Если нужной группы нет, создайте новую:
@@ -181,7 +181,6 @@
         При необходимости сгенерируйте ключ, нажав соответствующую кнопку.
 
         {note:info}
-
         Допустимые символы:
 
         - заглавные и строчные буквы латинского алфавита;
@@ -189,30 +188,30 @@
         - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
         Ключ должен содержать хотя бы одну букву или цифру.
-
         {/note}
 
    1. (Опционально) укажите расширенные настройки:
 
       - **Идентификатор маршрутизатора пира для аутентификации (Peer ID)** — по умолчанию совпадает с адресом пира.
       - (Только для VPN в SDN Sprut) **Селектор потоков трафика**:
+
          - **Объединить** — не расщеплять трафик-селекторы, то есть оборачивать все адресные префиксы в один туннель передачи данных;
          - **Разделить** — расщеплять трафик-селекторы, то есть для каждой пары адресных префиксов создавать отдельный туннель передачи данных.
+
       - **Состояние инициатора** — поведение при установке IPsec-соединения:
 
-        - `bi-directional` (по умолчанию) — со стороны платформы VK Cloud будут производиться попытки установления соединения с удаленным пиром (remote peer).
+        - `bi-directional` (по умолчанию) — со стороны платформы {var(cloud)} будут производиться попытки установления соединения с удаленным пиром (remote peer).
         - `response-only` — платформа ожидает, что VPN-соединение будет инициировано удаленным пиром, и не пытается установить его самостоятельно.
 
       - Настройки обнаружения недоступности удаленного пира (Dead Peer Detection, DPD):
 
-        - **При обнаружении недоступности пира** — определяет поведение платформы VK Cloud, если удаленный пир недоступен:
+        - **При обнаружении недоступности пира** — определяет поведение платформы {var(cloud)}, если удаленный пир недоступен:
 
           - `hold` (по умолчанию) — при обнаружении недоступности IPsec-соединение разрывается. Соединение может быть переустановлено только удаленным пиром.
           - `clear` — при обнаружении недоступности IPsec-соединение разрывается. Соединение не будет переустановлено, даже если удаленный пир будет пытаться это сделать.
-          - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа VK Cloud будет пытаться переустановить соединение с удаленным пиром.
+          - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа {var(cloud)} будет пытаться переустановить соединение с удаленным пиром.
 
         - **Интервал обнаружения недоступности пира** — с каким интервалом (в секундах) отправлять проверочные DPD-сообщения.
-
         - **Время для обнаружения недоступности пира** — если по истечении этого тайм-аута (в секундах) не было получено ни одного проверочного DPD-сообщения от удаленного пира, то он признается недоступным (dead).
 
           По умолчанию значение этого параметра в четыре раза больше, чем  **Интервал обнаружения недоступности пира**.
@@ -225,8 +224,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
-   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-neutronclient`.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Настройте IKE:
 
@@ -331,7 +330,7 @@
       ```
 
       ```console
-      openstack router show <идентификатор маршрутизатора>
+      openstack router show <ID_МАРШРУТИЗАТОРА>
       ```
 
       Запишите идентификатор маршрутизатора, чьи подсети нужно сделать доступными через VPN-туннель.
@@ -346,7 +345,7 @@
             
       ```console
       openstack vpn service create <ИМЯ_VPN-СЕРВИСА> \
-        --router <ИДЕНТИФИКАТОР_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> \
+        --router <ID_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> \
         --enable
       ```
 
@@ -356,7 +355,7 @@
       
       ```console
       openstack vpn service create <ИМЯ_VPN-СЕРВИСА> `
-        --router <ИДЕНТИФИКАТОР_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> `
+        --router <ID_МАРШРУТИЗАТОРА_ПОЛУЧЕННЫЙ_НА_ПРЕДЫДУЩЕМ_ШАГЕ> `
         --enable
       ```
 
@@ -375,10 +374,11 @@
       ```
 
       ```console
-      openstack vpn endpoint group show <ИДЕНТИФИКАТОР_ГРУППЫ>
+      openstack vpn endpoint group show <ID_ГРУППЫ>
       ```
 
       Запишите:
+
       - Идентификатор группы, которая будет использоваться VPN-туннелем в качестве локальной endpoint-группы. Такая группа должна иметь тип `subnet`.
 
         Подсети, принадлежащие группе, должны быть подключены к маршрутизатору, который указывался на предыдущем шаге в настройках VPN-сервиса.
@@ -394,9 +394,9 @@
       ```console
       openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
         --type subnet \
-        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
+        --value <ID_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
         ...
-        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
+        --value <ID_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -406,9 +406,9 @@
       ```console
       openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
         --type subnet `
-        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_ _К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
+        --value <ID_ПОДСЕТИ,_ПОДКЛЮЧЕННОЙ_ _К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
         ...
-        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
+        --value <ID_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -460,12 +460,12 @@
      --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> \
      --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> \
      --peer-address "<АДРЕС_ПИРА_VPN>" \
-     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" \
-     --ikepolicy <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ> \
-     --ipsecpolicy <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ> \
-     --vpnservice <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> \
-     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
-     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-id "<ID_ПИРА_VPN>" \
+     --ikepolicy <ID_IKE-ПОЛИТИКИ> \
+     --ipsecpolicy <ID_IPSEC-ПОЛИТИКИ> \
+     --vpnservice <ID_VPN-СЕРВИСА> \
+     --local-endpoint-group <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-endpoint-group <ID_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
      --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
@@ -479,12 +479,12 @@
      --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> `
      --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> `
      --peer-address "<АДРЕС_ПИРА_VPN>" `
-     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" `
-     --ikepolicy <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ> `
-     --ipsecpolicy <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ> `
-     --vpnservice <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> `
-     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
-     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-id "<ID_ПИРА_VPN>" `
+     --ikepolicy <ID_IKE-ПОЛИТИКИ> `
+     --ipsecpolicy <ID_IPSEC-ПОЛИТИКИ> `
+     --vpnservice <ID_VPN-СЕРВИСА> `
+     --local-endpoint-group <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-endpoint-group <ID_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
      --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" `
      --enable
    ```
@@ -502,9 +502,7 @@
     Ключ должен содержать хотя бы одну букву или цифру.
 
     {note:warn}
-
     Некоторые спецсимволы, например `#`, `&` или `{`, могут интерпретироваться операционной системой. В этом случае ключ совместного использования будет некорректным и VPN-туннель не заработает, поэтому обязательно экранируйте ключ с помощью символов `""`.
-
     Пример:
 
     ```console
@@ -517,16 +515,16 @@
 
 {/tabs}
 
-## Редактирование VPN-туннеля
+## {heading(Редактирование VPN-туннеля)[id=vnet-vpn-edit]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Редактировать VPN**.
+1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Редактировать VPN**.
 1. При необходимости отредактируйте локальную или удаленную endpoint-группу:
 
    1. **Local Endpoint** — выберите локальную endpoint-группу из выпадающего списка. Если нужной группы нет, создайте новую:
@@ -575,7 +573,6 @@
         При необходимости сгенерируйте ключ, нажав соответствующую кнопку.
 
         {note:info}
-
         Допустимые символы:
 
         - заглавные и строчные буквы латинского алфавита;
@@ -583,27 +580,28 @@
         - спецсимволы `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
         Ключ должен содержать хотя бы одну букву или цифру.
-
         {/note}
 
    1. (Опционально) расширенные настройки:
 
       - **Идентификатор маршрутизатора пира для аутентификации (Peer ID)** — по умолчанию совпадает с адресом пира.
       - (Только для VPN в SDN Sprut) **Селектор потоков трафика**:
+
          - **Объединить** — не расщеплять трафик-селекторы, то есть оборачивать все адресные префиксы в один туннель передачи данных;
          - **Разделить** — расщеплять трафик-селекторы, то есть для каждой пары адресных префиксов создавать отдельный туннель передачи данных.
+
       - **Состояние инициатора** — поведение при установке IPsec-соединения:
 
-        - `bi-directional` (по умолчанию) — со стороны платформы VK Cloud будут производиться попытки установления соединения с удаленным пиром (remote peer).
+        - `bi-directional` (по умолчанию) — со стороны платформы {var(cloud)} будут производиться попытки установления соединения с удаленным пиром (remote peer).
         - `response-only` — платформа ожидает, что VPN-соединение будет инициировано удаленным пиром, и не пытается установить его самостоятельно.
 
       - Настройки обнаружения недоступности удаленного пира (Dead Peer Detection, DPD):
 
-        - **При обнаружении недоступности пира** — определяет поведение платформы VK Cloud, если удаленный пир недоступен:
+        - **При обнаружении недоступности пира** — определяет поведение платформы {var(cloud)}, если удаленный пир недоступен:
 
           - `hold` (по умолчанию) — при обнаружении недоступности IPsec-соединение разрывается. Соединение может быть переустановлено только удаленным пиром.
           - `clear` — при обнаружении недоступности IPsec-соединение разрывается. Соединение не будет переустановлено, даже если удаленный пир будет пытаться это сделать.
-          - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа VK Cloud будет пытаться переустановить соединение с удаленным пиром.
+          - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа {var(cloud)} будет пытаться переустановить соединение с удаленным пиром.
 
         - **Интервал обнаружения недоступности пира** — с каким интервалом (в секундах) отправлять проверочные DPD-сообщения.
 
@@ -619,11 +617,10 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
-   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-neutronclient`.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно отредактировать.
-
 1. (При необходимости) выберите другие endpoint-группы или создайте новые:
 
    1. Получите список endpoint-групп и посмотрите детальную информацию о них:
@@ -637,6 +634,7 @@
       ```
 
       Запишите:
+
       - Идентификатор группы, которая будет использоваться VPN-туннелем в качестве локальной endpoint-группы. Такая группа должна иметь тип `subnet`.
 
         Подсети, принадлежащие группе, должны быть подключены к маршрутизатору, который указывался на предыдущем шаге в настройках VPN-сервиса.
@@ -652,9 +650,9 @@
       ```console
       openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
         --type subnet \
-        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
+        --value <ID_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> \
         ...
-        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
+        --value <ID_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -664,9 +662,9 @@
       ```console
       openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
         --type subnet `
-        --value <ИДЕНТИФИКАТОР_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
+        --value <ID_ПОДСЕТИ_ПЛАТФОРМЫ_VK_CLOUD,_ПОДКЛЮЧЕННОЙ_К_МАРШРУТИЗАТОРУ,_КОТОРАЯ_ДОЛЖНА_БЫТЬ_ДОСТУПНА_ЧЕРЕЗ_VPN-ТУННЕЛЬ> `
         ...
-        --value <ИДЕНТИФИКАТОР_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
+        --value <ID_ДОПОЛНИТЕЛЬНОЙ_ПОДСЕТИ>
       ```
 
       {/tab}
@@ -714,14 +712,14 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn ipsec site connection set <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ> \
+   openstack vpn ipsec site connection set <ID_VPN-ТУННЕЛЯ> \
      --name <НОВОЕ_ИМЯ_VPN-ТУННЕЛЯ> \
      --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> \
      --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> \
      --peer-address "<АДРЕС_ПИРА_VPN>" \
-     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" \
-     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
-     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-id "<ID_ПИРА_VPN>" \
+     --local-endpoint-group <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
+     --peer-endpoint-group <ID_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
      --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
@@ -731,14 +729,14 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn ipsec site connection set <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ> `
+   openstack vpn ipsec site connection set <ID_VPN-ТУННЕЛЯ> `
      --name <НОВОЕ_ИМЯ_VPN-ТУННЕЛЯ> `
      --dpd action=<ДЕЙСТВИЕ_ПРИ_НЕДОСТУПНОСТИ_ПИРА>,interval=<ИНТЕРВАЛ_ПРОВЕРКИ>,timeout <ТАЙМ-АУТ_ПРОВЕРКИ> `
      --initiator <ПОВЕДЕНИЕ_ПРИ_УСТАНОВКЕ_IPSEC-СОЕДИНЕНИЯ:_BI-DIRECTIONAL_ИЛИ_RESPONSE-ONLY> `
      --peer-address "<АДРЕС_ПИРА_VPN>" `
-     --peer-id "<ИДЕНТИФИКАТОР_ПИРА_VPN>" `
-     --local-endpoint-group <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
-     --peer-endpoint-group <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-id "<ID_ПИРА_VPN>" `
+     --local-endpoint-group <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> `
+     --peer-endpoint-group <ID_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> `
      --psk "<КЛЮЧ_СОВМЕСТНОГО_ИСПОЛЬЗОВАНИЯ>" \
      --enable
    ```
@@ -756,9 +754,7 @@
     Ключ должен содержать хотя бы одну букву или цифру.
 
     {note:warn}
-
     Некоторые спецсимволы, например `#`, `&` или `{`, могут интерпретироваться операционной системой. В этом случае ключ совместного использования будет некорректным и VPN-туннель не заработает, поэтому обязательно экранируйте ключ с помощью символов `""`.
-
     Пример:
 
     ```console
@@ -770,22 +766,20 @@
 
 {/tabs}
 
-## Перезапуск VPN-туннеля
+## {heading(Перезапуск VPN-туннеля)[id=vnet-vpn-restart]}
 
 {note:info}
-
 Перезапуск VPN-туннеля доступен только для VPN в SDN Neutron. В SDN Sprut все изменения туннеля применяются автоматически, перезапуск не требуется.
-
 {/note}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Перезапустить VPN**.
+1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Перезапустить VPN**.
 1. Прочитайте предупреждение.
 1. Нажмите кнопку **Перезагрузить**.
 
@@ -795,11 +789,10 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
-   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-neutronclient`.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно перезапустить.
-
 1. Выполните команду:
 
    {tabs}
@@ -807,7 +800,7 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --disable && openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --enable
+   openstack vpn service set <ID_VPN-СЕРВИСА> --disable && openstack vpn service set <ID_VPN-СЕРВИСА> --enable
    ```
   
    {/tab}
@@ -815,7 +808,7 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --disable; openstack vpn service set <ИДЕНТИФИКАТОР_VPN-СЕРВИСА> --enable
+   openstack vpn service set <ID_VPN-СЕРВИСА> --disable; openstack vpn service set <ID_VPN-СЕРВИСА> --enable
    ```
 
    {/tab}
@@ -826,16 +819,16 @@
 
 {/tabs}
 
-## Удаление VPN-туннеля
+## {heading(Удаление VPN-туннеля)[id=vnet-vpn-delete]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Удалить VPN**.
+1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Удалить VPN**.
 1. Ознакомьтесь со списком удаляемых объектов.
 
    При удалении VPN-туннеля также будут удалены объекты, связанные с ним (если они не используются другими VPN-туннелями):
@@ -852,11 +845,10 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
-   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-neutronclient`.
+   1. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
 
 1. Посмотрите список VPN-туннелей и найдите идентификатор туннеля, который нужно удалить.
-
 1. Посмотрите подробную информацию о туннеле, который нужно удалить.
 
    Запишите следующие идентификаторы:
@@ -870,7 +862,7 @@
 1. Чтобы удалить только VPN-туннель, выполните команду:
 
    ```console
-   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>
+   openstack vpn ipsec site connection delete <ID_VPN-ТУННЕЛЯ>
    ```
 
 1. Чтобы удалить VPN-туннель и все связанные с ним объекты, выполните команду:
@@ -880,12 +872,12 @@
    {tab(Linux/macOS (bash, zsh))}
       
    ```console
-   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>
-   openstack vpn ike policy delete <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ>
-   openstack vpn ipsec policy delete <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ>
-   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>
-   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ>
-   openstack vpn service delete <ИДЕНТИФИКАТОР_VPN-СЕРВИСА,_КОТОРЫЙ ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ> 
+   openstack vpn ipsec site connection delete <ID_VPN-ТУННЕЛЯ>
+   openstack vpn ike policy delete <ID_IKE-ПОЛИТИКИ>
+   openstack vpn ipsec policy delete <ID_IPSEC-ПОЛИТИКИ>
+   openstack vpn endpoint group delete <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>
+   openstack vpn endpoint group delete <ID_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ>
+   openstack vpn service delete <ID_VPN-СЕРВИСА,_КОТОРЫЙ ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ> 
    
    ```
 
@@ -894,12 +886,12 @@
    {tab(Windows (PowerShell))}
    
    ```console
-   openstack vpn ipsec site connection delete <ИДЕНТИФИКАТОР_VPN-ТУННЕЛЯ>; `
-   openstack vpn ike policy delete <ИДЕНТИФИКАТОР_IKE-ПОЛИТИКИ>; `
-   openstack vpn ipsec policy delete <ИДЕНТИФИКАТОР_IPSEC-ПОЛИТИКИ>; `
-   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>; `
-   openstack vpn endpoint group delete <ИДЕНТИФИКАТОР_УДАЛЕННОЙ_(PEER)_ENDPOINT-ГРУППЫ>; `
-   openstack vpn service delete <ИДЕНТИФИКАТОР_VPN-СЕРВИСА,_КОТОРЫЙ_ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ>
+   openstack vpn ipsec site connection delete <ID_VPN-ТУННЕЛЯ>; `
+   openstack vpn ike policy delete <ID_IKE-ПОЛИТИКИ>; `
+   openstack vpn ipsec policy delete <ID_IPSEC-ПОЛИТИКИ>; `
+   openstack vpn endpoint group delete <ID_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ>; `
+   openstack vpn endpoint group delete <ID_УДАЛЕННОЙ_(PEER)_ENDPOINT-ГРУППЫ>; `
+   openstack vpn service delete <ID_VPN-СЕРВИСА,_КОТОРЫЙ_ОБСЛУЖИВАЕТ_ЭТОТ_VPN-ТУННЕЛЬ>
    ```
 
    {/tab}

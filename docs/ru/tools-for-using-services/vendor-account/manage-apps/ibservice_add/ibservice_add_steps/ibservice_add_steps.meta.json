@@ -4,5 +4,10 @@
   "metaDescription": "Порядок действий",
   "sectionTitle": "Порядок действий",
   "weight": 1,
-  "uuid": "3ba1aeb5-ffd7-46d4-a88d-2215890214ba"
+  "uuid": "3ba1aeb5-ffd7-46d4-a88d-2215890214ba",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

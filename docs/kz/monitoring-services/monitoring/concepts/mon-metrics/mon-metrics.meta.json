@@ -4,5 +4,14 @@
   "metaDescription": "Мақалада VK Cloud сервистерінде жиналып, көрсетілетін стандартты метрикалар сипатталады. Әдепкі бойынша стандартты мониторинг агенті келесі ақ",
   "sectionTitle": "Стандартты метрикалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "ДҚ репликасын қосу",
   "sectionTitle": "Репликациялар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

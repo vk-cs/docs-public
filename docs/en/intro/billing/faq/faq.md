@@ -208,7 +208,7 @@ To restore the services:
 1. Manually activate project resources:
 
    - [Virtual machines](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm)
-   - [Kubernetes containers](/en/kubernetes/k8s/instructions/manage-cluster#start)
+   - [Kubernetes containers](/en/kubernetes/k8s/instructions/manage-cluster)
    - [VM backup](/en/storage/backups/instructions/manage-backup-plan)
    - Other resources
 

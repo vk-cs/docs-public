@@ -1,9 +1,14 @@
 {
-    "title": "Caching",
-      "shortDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
-      "metaDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
-    "sectionTitle": "Caching",
-    "icon": "",
-    "weight": 4,
-    "uuid": "330016db-057b-4420-9a49-f1461e6634b1"
+  "title": "Caching",
+  "shortDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
+  "metaDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
+  "sectionTitle": "Caching",
+  "icon": "",
+  "weight": 4,
+  "uuid": "330016db-057b-4420-9a49-f1461e6634b1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

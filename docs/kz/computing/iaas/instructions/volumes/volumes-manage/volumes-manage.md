@@ -1,7 +1,8 @@
-## {heading(ВМ қайта жүктеу арқылы диск өлшемін ұлғайту)[id=change_disk_size]}
+# {heading(Дискілерді басқару)[id=iaas-volumes-manage]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
+## {heading(ВМ қайта жүктеу арқылы диск өлшемін ұлғайту)[id=iaas-volumes-manage-disk-size]}
 
 {note:warn}
 - Диск өлшемін кішірейтуге болмайды.
@@ -12,11 +13,10 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлтты есептеулер** → **Дискілер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дискілері:
 
      1. **Бұлтты есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
@@ -38,14 +38,13 @@
 
 1. Ашылған терезеде **Диск өлшемі** мәнін көрсетіңіз.
 1. **Сақтау** түймесін басыңыз.
-1. ВМ-ді [қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm).
+1. ВМ-ді [қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart).
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Дискілер тізімін шығарыңыз:
 
    ```console
@@ -53,37 +52,35 @@
    ```
 
 1. `Status` бағанындағы диск күйін тексеріңіз. Кеңейтудің сәтті орындалуына тек `available` немесе `in-use` күйіндегі дискілер үшін кепілдік беріледі.
-
 1. Диск идентификаторын көшіріңіз.
-
 1. Жаңа өлшемді гигабайтпен көрсетіп, дискіні ұлғайтыңыз.
 
    - Егер диск ВМ-ден ажыратылған болса (`Status`: `available`):
 
-       ```console
-          openstack volume set --size <РАЗМЕР> <ID_ДИСКА>
-       ```
+     ```console
+     openstack volume set --size <РАЗМЕР> <ID_ДИСКА>
+     ```
 
    - Егер диск ВМ-ге қосылған болса (`Status`: `in-use`):
 
-       ```console
-          cinder extend <ID_ДИСКА> <РАЗМЕР>
-       ```
+     ```console
+     cinder extend <ID_ДИСКА> <РАЗМЕР>
+     ```
 
-1. ВМ-ді [қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm).
+1. ВМ-ді [қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart).
 
 {/tab}
 
 {/tabs}
 
-## ВМ қайта жүктемей диск өлшемін ұлғайту
+## {heading(ВМ қайта жүктемей диск өлшемін ұлғайту)[id=iaas-volumes-manage-disk-size-not-restart]}
 
 {note:warn}
 - Диск өлшемін кішірейтуге болмайды.
 - High IOPS SSD және Low Latency NVMe түріндегі дискілерде snapshot болса, бұл дискілердің өлшемін ұлғайтуға болмайды.
 {/note}
 
-1. VK Cloud жеке кабинетінде немесе OpenStack CLI арқылы виртуалды диск өлшемін [ұлғайтыңыз](#change_disk_size), бірақ ВМ-ді қайта жүктемеңіз. Бұл диск өлшемін өзгертеді, бірақ ОС-тағы диск бөлімдерінің өлшемін өзгертпейді.
+1. {var(cloud)} жеке кабинетінде немесе OpenStack CLI арқылы виртуалды диск өлшемін [ұлғайтыңыз](#iaas-volumes-manage-disk-size), бірақ ВМ-ді қайта жүктемеңіз. Бұл диск өлшемін өзгертеді, бірақ ОС-тағы диск бөлімдерінің өлшемін өзгертпейді.
 1. ВМ операциялық жүйесінде диск бөлімдерінің өлшемін ұлғайтыңыз:
 
    {tabs}
@@ -102,40 +99,41 @@
    1. ВМ-ге [SSH](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) арқылы немесе [консоль](/kz/computing/iaas/instructions/vm/vm-console) арқылы қосылыңыз.
    1. ВМ-де қандай диск бөлімдері бар екенін және олардың қандай файлдық жүйелер екенін анықтаңыз. Ол үшін келесі команданы орындаңыз:
 
-        ```console
-        df -Th
-       ```
+      ```console
+      df -Th
+      ```
 
       Жауаптан өлшемін өзгерту қажет бөлімді тауып, **Type** бағанынан оның файлдық жүйесін қараңыз. Әдетте `/dev/vda1` өлшемін өзгерту қажет.
+
    1. Бөлімнің өлшемін ұлғайтыңыз.
 
       Команда мысалы:
 
-        ```console
-        growpart /dev/vda 1 # перед 1 нужен пробел
-        ```
+      ```console
+      growpart /dev/vda 1 # 1 алдында бос орын қажет
+      ```
 
    1. Файлдық жүйе өлшемін бөлім өлшеміне дейін ұлғайтыңыз. Каталогтың файлдық жүйесіне байланысты келесі команданы пайдаланыңыз:
 
-       {tabs}
+      {tabs}
 
-       {tab(Ext1, Ext2, Ext3, Ext4)}
+      {tab(Ext1, Ext2, Ext3, Ext4)}
 
-        ```console
-        sudo resize2fs /dev/vda1 # перед 1 не должно быть пробела
-        ```
+      ```console
+      sudo resize2fs /dev/vda1 # 1 алдында бос орын болмауы керек
+      ```
 
-       {/tab}
+      {/tab}
 
-       {tab(XFS)}
+      {tab(XFS)}
 
-        ```console
-        sudo xfs_growfs -d /dev/vda1
-        ```
+      ```console
+      sudo xfs_growfs -d /dev/vda1
+      ```
 
-       {/tab}
+      {/tab}
 
-       {/tabs}
+      {/tabs}
 
    1. `df -Th` командасының көмегімен бөлім өлшемі өзгергенін тексеріңіз.
 
@@ -143,14 +141,13 @@
 
 {/tabs}
 
-
-## {heading(Дискіні клондау)[id=clone_volume]}
+## {heading(Дискіні клондау)[id=iaas-volumes-manage-clone-volume]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлтты есептеулер** → **Дискілер** бөліміне өтіңіз.
@@ -180,8 +177,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. [Анықтаңыз](../../../concepts/data-storage/disk-types#disk_types):
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. [Анықтаңыз](../../../concepts/data-storage/disk-types):
 
    - қажетті диск түрін;
    - оның API-дегі атауын;
@@ -209,19 +206,18 @@
 
 {/tabs}
 
-## {heading(Диск түрін өзгерту)[id=change_disk_type]}
+## {heading(Диск түрін өзгерту)[id=iaas-volumes-manage-chance-disk-type]}
 
-Диск түрін Low Latency NVMe түріне өзгерту үшін [техникалық қолдауға хабарласыңыз](/kz/contacts) және [жоғары өнімді конфигурацияларға](../../../concepts/vm/cpu-generation) және дискілерге қолжетімділік сұраңыз. Қалған [диск түрлері](../../../concepts/data-storage/disk-types#disk_types) барлық конфигурацияларда әдепкі бойынша қолжетімді.
+Диск түрін Low Latency NVMe түріне өзгерту үшін [техникалық қолдауға хабарласыңыз](/kz/contacts) және [жоғары өнімді конфигурацияларға](../../../concepts/vm/cpu-generation) және дискілерге қолжетімділік сұраңыз. Қалған [диск түрлері](../../../concepts/data-storage/disk-types) барлық конфигурацияларда әдепкі бойынша қолжетімді.
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлтты есептеулер → Дискілер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дискілері:
 
      1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
@@ -242,9 +238,7 @@
      1. Диск параметрлері кестесінің үстінде **Диск түрін өзгерту** түймесін басыңыз.
 
    {note:info}
-
-   Егер **Диск түрін өзгерту** опциясы белсенді болмаса, дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#dismount_disk).
-
+   Егер **Диск түрін өзгерту** опциясы белсенді болмаса, дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
    {/note}
 
 1. Ашылған терезеде **Диск түрі** өрісін таңдап, **Растау** түймесін басыңыз.
@@ -253,10 +247,8 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
-1. Жаңа диск түрін [таңдаңыз](../../../concepts/data-storage/disk-types#disk_types) және оның API-дегі атауын анықтаңыз.
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Жаңа диск түрін [таңдаңыз](../../../concepts/data-storage/disk-types) және оның API-дегі атауын анықтаңыз.
 1. Қолжетімді диск түрлерінің тізімін қарап, API-дегі атауға сәйкес келетін түр ID-сін көшіріңіз.
 
    ```console
@@ -279,19 +271,18 @@
 
 {/tabs}
 
-## {heading(«Жүктелетін» атрибутын өзгерту)[id=changing_bootable_attribute]}
+## {heading(«Жүктелетін» атрибутын өзгерту)[id=iaas-volumes-manage-changing-bootable-attribute]}
 
-[Жүктелетін диск](/kz/computing/iaas/concepts/data-storage/disk-types#root_boot_disk) ВМ операциялық жүйесін іске қосу және оның жұмысы үшін қажетті компоненттер мен жүйелік файлдарды қамтуы керек.
+[Жүктелетін диск](/kz/computing/iaas/concepts/data-storage/disk-types#iaas-root-boot-disk) ВМ операциялық жүйесін іске қосу және оның жұмысы үшін қажетті компоненттер мен жүйелік файлдарды қамтуы керек.
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлтты есептеулер → Дискілер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дискілері:
 
      1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
@@ -317,21 +308,20 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Қажетті команданы орындаңыз.
 
    - Дискіні жүктелетін ету:
 
-       ```console
-       openstack volume set --bootable <ID_ДИСКА>
-       ```
+     ```console
+     openstack volume set --bootable <ID_ДИСКА>
+     ```
 
    - Дискіні жүктелмейтін ету:
 
-       ```console
-       openstack volume set --non-bootable <ID_ДИСКА>
-       ```
+     ```console
+     openstack volume set --non-bootable <ID_ДИСКА>
+     ```
 
 1. Нәтижені тексеріңіз:
 
@@ -343,25 +333,21 @@
 
 {/tabs}
 
-
-## {heading(Дискіні жою)[id=delete_volume]}
+## {heading(Дискіні жою)[id=iaas-volumes-manage-delete]}
 
 {note:err}
-
 Дискіні жою кезінде оның барлық snapshot-тары да жойылады.
-
 {/note}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. Дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#dismount_disk).
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. Дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлтты есептеулер → Дискілер** бөліміне өтіңіз.
-
    - Белгілі бір виртуалды машинаның дискілері:
 
      1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
@@ -392,17 +378,14 @@
 
 {tab(OpenStack CLI)}
 
-1. Дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#dismount_disk).
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-
-1. `openstack volume list` командасымен дискілер тізімін шығарып, оның күйін тексеріңіз: егер диск ВМ-ге қосылған болса (`Status`: `in-use`), оны [ажыратыңыз](../../../instructions/volumes/volumes-connect#dismount_disk).
-
+1. Дискіні ВМ-ден [ажыратыңыз](../../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. `openstack volume list` командасымен дискілер тізімін шығарып, оның күйін тексеріңіз: егер диск ВМ-ге қосылған болса (`Status`: `in-use`), оны [ажыратыңыз](../../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
 1. Диск ID-сін көшіріңіз.
-
 1. Дискіні жойыңыз.
 
    ```console
-      openstack volume delete <ID_ДИСКА>
+   openstack volume delete <ID_ДИСКА>
    ```
 
 {/tab}

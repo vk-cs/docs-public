@@ -1,9 +1,14 @@
 {
-    "title": "Tarantool",
-      "shortDescription": "",
-      "metaDescription": "Базы данных VK Cloud: управление инстансами Tarantool.",
-    "sectionTitle": "Tarantool",
-    "icon": "",
-    "weight": 6,
-    "uuid": "2548afac-d3de-4119-a9d5-802c819a8257"
+  "title": "Tarantool",
+  "shortDescription": "",
+  "metaDescription": "Базы данных VK Cloud: управление инстансами Tarantool.",
+  "sectionTitle": "Tarantool",
+  "icon": "",
+  "weight": 6,
+  "uuid": "2548afac-d3de-4119-a9d5-802c819a8257",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

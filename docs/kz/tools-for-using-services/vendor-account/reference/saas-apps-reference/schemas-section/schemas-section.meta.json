@@ -3,5 +3,10 @@
   "shortDescription": "SaaS-қосымшасын қосу шеберіндегі тарифтік жоспар опцияларының параметрлері",
   "metaDescription": "SaaS-қосымшасы конфигурациясының JSON-файлындағы schemas секциясы: Marketplace-те SaaS-қосымшасын қосу шеберіндегі тарифтік жоспар опцияларының параметрлері.",
   "sectionTitle": "Schemas секциясы",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

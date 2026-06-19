@@ -1,9 +1,14 @@
 {
-    "title": "Static routing",
-      "shortDescription": "Adding and deleting static routes of advanced router",
-      "metaDescription": "",
-    "sectionTitle": "Static routing",
-    "icon": "",
-    "weight": 3,
-    "uuid": "4ed59bfa-9e19-4a9e-a2c1-9e5e2ba76baf"
+  "title": "Static routing",
+  "shortDescription": "Adding and deleting static routes of advanced router",
+  "metaDescription": "",
+  "sectionTitle": "Static routing",
+  "icon": "",
+  "weight": 3,
+  "uuid": "4ed59bfa-9e19-4a9e-a2c1-9e5e2ba76baf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

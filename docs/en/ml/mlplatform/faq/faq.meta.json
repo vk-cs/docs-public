@@ -1,9 +1,23 @@
 {
-    "title": "FAQ",
-      "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
-      "metaDescription": "",
-    "sectionTitle": "FAQ",
-    "icon": "",
-    "weight": 5,
-    "uuid": "99c158d7-f53c-4aa0-9b2a-0db6848a5830"
+  "title": "FAQ",
+  "shortDescription": "Answers to the most frequently asked questions about Cloud ML Platform",
+  "metaDescription": "",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "99c158d7-f53c-4aa0-9b2a-0db6848a5830",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "title": "Управление ключевыми парами",
+  "shortDescription": "Доступные операции с SSH-ключами на платформе",
+  "metaDescription": "Доступные операции с SSH ключами на платформе VK Private Cloud.",
+  "sectionTitle": "Управление ключевыми парами",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

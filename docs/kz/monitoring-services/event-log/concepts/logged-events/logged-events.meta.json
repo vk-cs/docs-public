@@ -1,8 +1,13 @@
 {
   "title": "Тіркелетін оқиғалар",
-  "shortDescription": "VK Cloud сервистері Cloud Audit-ке жіберетін оқиғалар",
+  "shortDescription": "{var(cloud)} сервистері Cloud Audit-ке жіберетін оқиғалар",
   "metaDescription": "VK Cloud сервистері Cloud Audit-ке жіберетін оқиғалар: платформаның басқа сервистерінен VK Cloud аудит сервисіне қандай тіркелетін оқиғалар жіберілетіні.",
   "sectionTitle": "Тіркелетін оқиғалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

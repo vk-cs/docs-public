@@ -5,5 +5,10 @@
   "sectionTitle": "Kubernetes кластерін жасаңыз және онда қолданбаны орналастырыңыз",
   "icon": "",
   "hidden": true,
-  "weight": 8
+  "weight": 8,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

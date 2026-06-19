@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud-та жасалған жұмыс үстелдері пулын басқару.",
   "sectionTitle": "Жұмыс үстелдері пулымен жұмыс істеу",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

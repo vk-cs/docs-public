@@ -5,5 +5,19 @@
   "sectionTitle": "Monitoring DB instances",
   "icon": "",
   "weight": 6,
-  "uuid": "0df2d1b5-edd7-4422-a515-d8adde3a258f"
+  "uuid": "0df2d1b5-edd7-4422-a515-d8adde3a258f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

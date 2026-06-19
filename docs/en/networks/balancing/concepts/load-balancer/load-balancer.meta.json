@@ -1,9 +1,14 @@
 {
-    "title": "Load balancer",
-      "shortDescription": "How to distribute network traffic between servers",
-      "metaDescription": "",
-    "sectionTitle": "Load balancer",
-    "icon": "",
-    "weight": 5,
-    "uuid": "9d234375-730b-446b-b9c4-dc86bbf5f85e"
+  "title": "Load balancer",
+  "shortDescription": "How to distribute network traffic between servers",
+  "metaDescription": "",
+  "sectionTitle": "Load balancer",
+  "icon": "",
+  "weight": 5,
+  "uuid": "9d234375-730b-446b-b9c4-dc86bbf5f85e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

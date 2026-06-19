@@ -5,5 +5,10 @@
   "sectionTitle": "DNS-балансировка",
   "icon": "",
   "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "2e9874a5-575b-426d-bd3b-55630adbc75d"
 }

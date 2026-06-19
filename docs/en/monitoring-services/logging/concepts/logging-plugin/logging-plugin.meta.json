@@ -1,9 +1,14 @@
 {
-    "title": "Logging plugin",
-      "shortDescription": "Logging plugin authorization and configuration parameters",
-      "metaDescription": "",
-    "sectionTitle": "Logging plugin",
-    "icon": "",
-    "weight": 2,
-    "uuid": "7f6e4bac-73e6-4caf-b207-ce71c78012ab"
+  "title": "Logging plugin",
+  "shortDescription": "Logging plugin authorization and configuration parameters",
+  "metaDescription": "",
+  "sectionTitle": "Logging plugin",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7f6e4bac-73e6-4caf-b207-ce71c78012ab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

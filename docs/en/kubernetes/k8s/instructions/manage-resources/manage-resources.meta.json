@@ -1,9 +1,23 @@
 {
-    "title": "Managing cluster resources",
-      "shortDescription": "How to manage cluster's Kubernetes resources via management console",
-      "metaDescription": "VK Cloud containers: managing cluster's Kubernetes resources via management console.",
-    "sectionTitle": "Managing cluster resources",
-    "icon": "",
-    "weight": 4,
-    "uuid": "173f9e9b-77c4-4bbe-9cae-eda492c65380"
+  "title": "Managing cluster resources via the management console",
+  "shortDescription": "How to manage resources of a Kubernetes cluster via the management console",
+  "metaDescription": "Manage Kubernetes resources in VK Cloud via the web interface: create, view, change, and delete cluster resources without using kubectl and Kubernetes Dashboard",
+  "sectionTitle": "Managing cluster resources via the management console",
+  "icon": "",
+  "weight": 4,
+  "uuid": "173f9e9b-77c4-4bbe-9cae-eda492c65380",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Working with tokens",
-      "shortDescription": "How to create and manage various tokens",
-      "metaDescription": "How to create and manage various tokens",
-    "sectionTitle": "Working with tokens",
-    "icon": "",
-    "weight": 1,
-    "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4"
+  "title": "Working with tokens",
+  "shortDescription": "How to create and manage various tokens",
+  "metaDescription": "How to create and manage various tokens",
+  "sectionTitle": "Working with tokens",
+  "icon": "",
+  "weight": 1,
+  "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

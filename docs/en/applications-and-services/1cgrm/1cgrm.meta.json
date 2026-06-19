@@ -5,5 +5,10 @@
   "sectionTitle": "1C Ready Workplace",
   "icon": "",
   "weight": 2,
-  "uuid": "5e68fdc2-4428-407f-9e1a-6c247da70185"
+  "uuid": "5e68fdc2-4428-407f-9e1a-6c247da70185",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

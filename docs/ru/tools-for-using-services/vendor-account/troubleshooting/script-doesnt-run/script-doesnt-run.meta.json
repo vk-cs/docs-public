@@ -5,5 +5,10 @@
   "sectionTitle": "После обновления SSL-сертификата не выполняется скрипт",
   "icon": "",
   "weight": 2,
-  "uuid": "c706eed6-ed07-4d87-a0c1-49ac5ea56e56"
+  "uuid": "c706eed6-ed07-4d87-a0c1-49ac5ea56e56",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

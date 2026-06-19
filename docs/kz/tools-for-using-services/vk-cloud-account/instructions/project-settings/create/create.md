@@ -4,7 +4,7 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
 {include(/kz/_includes/_project_create_tab_account.md)}
 
@@ -20,7 +20,7 @@
 
 {note:info}
 
-Жобамен кейінгі жұмыс [VK Cloud жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) жүргізіледі.
+Жобамен кейінгі жұмыс [{var(cloud)} жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) жүргізіледі.
 
 {/note}
 

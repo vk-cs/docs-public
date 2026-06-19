@@ -1,9 +1,23 @@
 {
-    "title": "Tariffication",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 6,
-    "uuid": "5183fc57-8c72-43dc-bea0-a9d75537aa45"
+  "title": "Tariffication",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 6,
+  "uuid": "5183fc57-8c72-43dc-bea0-a9d75537aa45",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

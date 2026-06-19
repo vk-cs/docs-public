@@ -1,9 +1,14 @@
 {
   "title": "О сервисе",
-  "shortDescription": "Основные возможности сервиса DNS в VK Cloud",
+  "shortDescription": "Основные возможности сервиса DNS в {var(cloud)}",
   "metaDescription": "Основные возможности сервиса DNS в VK Cloud",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "dfc56be5-8515-4987-9143-a64c28ba7c20"
 }

@@ -1,3 +1,5 @@
+# {heading(Установка jq)[id=rest-api-jq]}
+
 Для фильтрации вывода данных в формате JSON используйте утилиту [jq](https://jqlang.github.io/jq/). Она применима для получаемых от платформы данных API и OpenStack.
 
 jq должна быть предварительно установлена в вашей системе.
@@ -103,7 +105,7 @@ jq должна быть предварительно установлена в 
 
 {/cut}
 
-## Установка
+## {heading(Установка)[id=rest-api-jq-install]}
 
 {tabs}
 
@@ -162,9 +164,9 @@ yum install jq -y
 
 {/tabs}
 
-## Пример использования
+## {heading(Пример использования)[id=rest-api-jq-example]}
 
-[Получить список](/ru/storage/backups/how-to-guides/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya) планов через Karboii API в отформатированном JSON.
+{linkto(../../../../storage/backups/how-to-guides/api-examples#backup-api-examples-get-plan)[text=Получить список]} планов через Karboii API в отформатированном JSON.
 
 Команда:
 
@@ -232,7 +234,5 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mc
 {/cut}
 
 {note:info}
-
 Подробная информация о синтаксисе и использовании утилиты в [официальной документации](https://jqlang.github.io/jq/manual/).
-
 {/note}

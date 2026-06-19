@@ -1,12 +1,13 @@
-Описаны расширения, специфичные для [PostgreSQL](../../types/postgresql) и [PostgresPro](../../types/postgrespro). О расширениях для мониторинга инстанса БД читайте в разделах [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) и [zabbix](../zabbix).
+# {heading(Расширения PostgreSQL)[id=dbaas-extensions-postgresql]}
+
+Описаны расширения, специфичные для {linkto(../../concepts/types/postgresql#dbaas-concepts-postgresql)[text=PostgreSQL]}. О расширениях для мониторинга инстанса БД читайте в разделах {linkto(../node-exporter#dbaas-node-exporter)[text=node_exporter]} и {linkto(../zabbix#dbaas-zabbix)[text=zabbix]}.
 
 {note:info}
-
-Набор доступных для установки расширений зависит от выбранной версии PostgreSQL и PostgresPro, а также от редакции PostgresPro.
-
+Набор доступных для установки расширений зависит от выбранной версии PostgreSQL.
 {/note}
 
-## Holistic.dev (holistic)
+{ifdef(public)}
+## {heading(Holistic.dev (holistic))[id=dbaas-extensions-postgresql-holistic]}
 
 {tabs}
 
@@ -27,8 +28,10 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## JsQuery
+{ifdef(public)}
+## {heading(JsQuery)[id=dbaas-extensions-postgresql-jsquery]}
 
 {tabs}
 
@@ -43,16 +46,16 @@
 `database`: список баз данных, в которых должно работать расширение.
 
 {note:info}
-
 Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
-
 {/note}
 
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## pgBadger
+{ifdef(public)}
+## {heading(pgBadger)[id=dbaas-extensions-postgresql-pgbadger]}
 
 {tabs}
 
@@ -64,17 +67,15 @@
 
 {tab(Параметры расширения)}
 
-- `s3_bucket`: имя бакета [VK Object Storage](/ru/storage/s3), где будут храниться отчеты. Обязательный параметр.
+- `s3_bucket`: имя бакета [VK Object Storage](../../../../storage/s3), где будут храниться отчеты. Обязательный параметр.
 
-  Если бакета с таким именем не существует — [создайте его](/ru/storage/s3/instructions/buckets/create-bucket).
+  Если бакета с таким именем не существует — [создайте его](../../../../storage/s3/instructions/buckets/create-bucket).
 
   {note:warn}
-
   Бакет должен иметь настройки ACL по умолчанию `public-read-write`.
-
   {/note}
 
-  Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/instructions/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
+  Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, {linkto(../../instructions/manage-instance/postgresql#dbaas-postgresql-get-info)[text=посмотрев информацию об инстансе БД]}.
 
 - `period`: интервал между созданием отчетов (в часах).
 
@@ -93,8 +94,10 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## PgBouncer 
+{ifdef(public)}
+## {heading(PgBouncer)[id=dbaas-extensions-postgresql-pgbouncer]}
 
 {tabs}
 
@@ -102,7 +105,7 @@
 
 Балансировщик [PgBouncer](https://www.pgbouncer.org) работает как прокси, управляя пулом клиентских подключений к серверу БД. Он переиспользует соединения, снижая нагрузку на сервер и повышая производительность. 
 Поддерживает три режима: сессионный (session), транзакционный (transaction), оперативный (statement).
-Подробнее о работе с расширением балансировщика в разделе [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect).
+Подробнее о работе с расширением балансировщика в разделе {linkto(../../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
 
 {/tab}
 
@@ -119,9 +122,11 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## pg_hint_plan
+## {heading(pg_hint_plan)[id=dbaas-extensions-postgresql-pghintplan]}
 
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
@@ -176,8 +181,53 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## pg_partman
+{ifndef(public)}
+Название модуля в личном кабинете: `pg_hint_plan`.
+
+Hint plan — управление планом выполнения запроса с помощью указаний, записываемых в комментариях особого вида. На {var(cloud)} поддерживается для СУБД PostgreSQL.
+
+{ifdef(private-pdf, private-pg-pdf)}
+Параметры расширения перечислены в {linkto(#tab_extension_hint_plan_params)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_extension_hint_plan_params]} — Параметры для расширения Hint plan)[align=right;position=above;id=tab_extension_hint_plan_params;number={const(numb_tab_extension_hint_plan_params)}]}
+{/ifdef}
+[cols="1,1,3", options="header"]
+|===
+|Параметр
+|Значение по умолчанию
+|Описание
+
+|`enable_hint_table`
+|`on`
+|Использование указаний из таблицы
+
+|`parse_messages`
+|`info`
+|Уровень сообщений, которые будут попадать в журнал
+
+|`debug_print`
+|`off`
+|Вывод и детализация отладочной информации
+
+|`message_level`
+|`info`
+|Уровень отладочных сообщений, которые будут попадать в журнал
+|===
+{ifdef(private-pdf, private-pg-pdf)}
+{/caption}
+{/ifdef}
+
+{note:warn}
+Если БД восстанавливается из резервной копии, установите повторно параметр базы данных `shared_preload_libraries` = `pg_hint_plan`.
+{/note}
+
+Подробная информация о расширении (его синтаксис, подзапросы, ошибки и прочее) приведена в [официальной документации](https://mcs.mail.ru/docs/ru/dbs/dbaas/db-extensions/hint-plan).
+{/ifndef}
+
+{ifdef(public)}
+## {heading(pg_partman)[id=dbaas-extensions-postgresql-pgpartman]}
 
 {tabs}
 
@@ -196,9 +246,7 @@
 - `database`: список баз данных, в которых должно работать расширение.
 
   {note:info}
-
   Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
-
   {/note}
 
 - `interval`: интервал (в секундах) между запуском функции [run_maintenance()](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#maintenance-functions) фоновым процессом ([background worker](https://github.com/pgpartman/pg_partman/blob/master/doc/pg_partman.md#background-worker), BGW).
@@ -222,9 +270,11 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## pg_stat_kcache
+## {heading(pg_stat_kcache)[id=dbaas-extensions-postgresql-pgstatkcache]}
 
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
@@ -232,9 +282,7 @@
 Расширение [pg_stat_kcache](https://github.com/powa-team/pg_stat_kcache) собирает статистику о реальных операциях чтения и записи, выполненных на уровне файловой системы.
 
 {note:info}
-
-Для работы этого расширения требуется расширение [pg_stat_statements](#pg_stat_statements). Если оно еще не установлено, то установка будет выполнена автоматически.
-
+Для работы этого расширения требуется расширение {linkto(#dbaas-extensions-postgresql-pgstatstatements)[text=pg_stat_statements]}. Если оно еще не установлено, то установка будет выполнена автоматически.
 {/note}
 
 {/tab}
@@ -246,9 +294,21 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## pg_stat_statements
+{ifndef(public)}
+Название модуля в личном кабинете: `pg_stat_kcache`.
 
+`pg_stat_kcache` — расширение, предоставляющее статистику о реальных чтениях и записях на уровне файловой системы.
+
+Подробная информация о расширении приведена в [официальной документации](https://github.com/powa-team/pg_stat_kcache) на GitHub.
+
+При установке расширения возможно добавить параметр `database` — имя базы данных, для которой будет установлено расширение.
+{/ifndef}
+
+## {heading(pg_stat_statements)[id=dbaas-extensions-postgresql-pgstatstatements]}
+
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
@@ -264,16 +324,26 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## PostGIS
+{ifndef(public)}
+Название модуля в личном кабинете: `pg_stat_statements`.
 
+Расширение [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) предоставляет возможность отслеживать статистику планирования и выполнения операторов SQL сервером PostgreSQL.
+
+При установке расширения возможно добавить параметр `database` — имя базы данных, для которой будет установлено расширение.
+{/ifndef}
+
+## {heading(PostGIS)[id=dbaas-extensions-postgresql-postgis]}
+
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
 
 Расширение [PostGIS](http://postgis.net/) добавляет в PostgreSQL возможности по работе с географическими объектами. Реализуется несколько типов пространственных данных, поддерживается хранение, индексирование и обработка геоданных.
 
-Подробнее о работе с расширением в разделе [Использование расширения PostGIS в PostgreSQL и PostgresPro](../../how-to-guides/using-postgis).
+Подробнее о работе с расширением в разделе {linkto(../../how-to-guides/using-postgis#dbaas-using-postgis)[text=Использование расширения PostGIS в PostgreSQL]}.
 
 {/tab}
 
@@ -301,9 +371,50 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## postgres_extensions
+{ifndef(public)}
+PostGIS — расширение PostgreSQL для работы с географическими объектами. Поддерживает несколько типов пространственных данных, обеспечивает хранение, индексирование и обработку геоданных.
 
+Подробная информация о расширении приведена в [официальной документации](https://postgis.net).
+
+Параметры расширения:
+
+* `database` — список баз данных, в которых будет работать расширение.
+* `extension_list` — список дополнительных расширений, которые нужно установить вместе с PostGIS {ifdef(private-pdf, private-pg-pdf)}
+  (подробнее — в {linkto(#tab_extension_postgis)[text=таблице %number]}){/ifdef}.
+
+{ifdef(private-pdf, private-pg-pdf)}
+{caption(Таблица {counter(table)[id=numb_tab_extension_postgis]} — Доступные для установки расширения)[align=right;position=above;id=tab_extension_postgis;number={const(numb_tab_extension_postgis)}]}
+{/ifdef}
+[cols="2,3", options="header"]
+|===
+|Название
+|Описание
+
+|`address_standardizer_data_us`
+|Нормализация адресов для США
+
+|`address_standardizer`
+|Нормализация адресов
+
+|`postgis_tiger_geocoder`
+|Геокодирование в формате TIGER
+
+|`postgis_topology`
+|Типы данных и функции для управления топологическими объектами
+
+|`pgrouting`
+|Геопространственная маршрутизация
+|===
+{ifdef(private-pdf, private-pg-pdf)}
+{/caption}
+{/ifdef}
+{/ifndef}
+
+## {heading(postgres_extensions)[id=dbaas-extensions-postgresql-postgresextensions]}
+
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
@@ -335,7 +446,7 @@
   | [dblink](https://www.postgresql.org/docs/current/contrib-dblink-function.html)          | Позволяет выполнить SQL-запрос к удаленной (remote) базе данных PostgreSQL из текущей сессии |
   | [dict_int](https://www.postgresql.org/docs/current/dict-int.html)                       | Предоставляет пример дополнительного шаблона словаря для полнотекстового поиска. Словарь позволяет индексировать целые числа (со знаком и без). Благодаря этому список уникальных слов не разрастается, а скорость поиска увеличивается |
   | [dict_xsyn](https://www.postgresql.org/docs/current/dict-xsyn.html)                     | Предоставляет пример дополнительного шаблона словаря для полнотекстового поиска. Словарь заменяет слова на группы синонимов, что позволяет искать слова по их синонимам |
-  | [earthdistance](https://www.postgresql.org/docs/current/earthdistance.html)             | Позволяет вычислять расстояния между точками на поверхности Земли двумя способами: [по кубам](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.7) и [по точкам](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.8).<br><br>При выполнении расчетов Земля считается идеальной сферой. Если это слишком грубое допущение, воспользуйтесь расширением [PostGIS](#postgis).<br><br>**Зависимости:** расширение `cube`. Если оно не установлено, то установка будет выполнена автоматически |
+  | [earthdistance](https://www.postgresql.org/docs/current/earthdistance.html)             | Позволяет вычислять расстояния между точками на поверхности Земли двумя способами: [по кубам](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.7) и [по точкам](https://postgrespro.ru/docs/postgresql/15/earthdistance#id-1.11.7.24.8).<br><br>При выполнении расчетов Земля считается идеальной сферой. Если это слишком грубое допущение, воспользуйтесь расширением {linkto(#dbaas-extensions-postgresql-postgis)[text=PostGIS]}.<br><br>**Зависимости:** расширение `cube`. Если оно не установлено, то установка будет выполнена автоматически |
   | [fuzzystrmatch](https://www.postgresql.org/docs/current/fuzzystrmatch.html)             | Предоставляет функции для определения уровня сходства строк и расстояния между строками |
   | [hstore](https://www.postgresql.org/docs/current/hstore.html)                           | Реализует тип данных `hstore` для хранения пар строк ключ/значение внутри одного значения |
   | [intarray](https://www.postgresql.org/docs/current/intarray.html)                       | Предоставляет функции и операторы для работы с массивами целых чисел, не содержащих `NULL` |
@@ -359,9 +470,24 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## TimescaleDB
+{ifndef(public)}
+Название модуля в личном кабинете: `postgres_extensions`.
 
+Набор расширений для PostgreSQL может существенно расширить функциональность БД как сервиса. Примеры: мониторинг, криптография, дополнительные типы данных и многое другое.
+
+Параметры расширения:
+
+* `database` — имя базы данных, для которой будет установлено расширение.
+* `extension_list` — список дополнений для установки. Выбранные дополнения перечисляются через запятую. Если оставить параметр пустым, будут установлены все доступные дополнения.
+
+Доступные для установки дополнения перечислены в [официальной документации](https://mcs.mail.ru/docs/dbs/dbaas/db-extensions/postgresql-optional-modules).
+{/ifndef}
+
+## {heading(TimescaleDB)[id=dbaas-extensions-postgresql-timescaledb]}
+
+{ifdef(public)}
 {tabs}
 
 {tab(Описание расширения)}
@@ -375,11 +501,30 @@
 `database`: список баз данных, в которых должно работать расширение.
 
 {note:info}
-
 Если расширение установлено, то из параметра `database` нельзя удалить уже внесенные в него базы данных, только добавить новые.
-
 {/note}
 
 {/tab}
 
 {/tabs}
+{/ifdef}
+
+{ifndef(public)}
+Название модуля в личном кабинете: `timescaledb`.
+
+TimescaleDB — расширение PostgreSQL для работы с временными рядами, реализованными в виде гипертаблиц (`create_hypertable`).
+
+Подробная информация о расширении приведена в [официальной документации](https://docs.timescale.com/api/latest/).
+
+При установке расширения возможно добавить параметр `database` — имя базы данных, для которой будет установлено расширение.
+{/ifndef}
+
+{ifndef(public)}
+## {heading(PostgreSQL Server Exporter)[id=dbaas-extensions-postgresql-exporter]}
+
+Название модуля в личном кабинете: `postgres_exporter`.
+
+PostgreSQL Server Exporter — утилита сбора метрик с экземпляров кластера СУБД PostgreSQL в формате, доступном Prometheus (подробнее — в [официальной документации](https://github.com/prometheus-community/postgres_exporter) на GitHub).
+
+Пример настройки мониторинга на основе Prometheus+Grafana+PostgreSQL Exporter приведен в [официальной документации](https://mcs.mail.ru/docs/ru/additionals/cases/cases-monitoring/case-psql-exporter) VK Cloud.
+{/ifndef}

@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Databases VK Cloud: бұлттағы реляциялық дерекқорлармен жұмыс істеуге арналған OpenSearch инстансын жайылту бойынша бейне-нұсқаулық",
   "sectionTitle": "OpenSearch",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

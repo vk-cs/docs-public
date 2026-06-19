@@ -4,5 +4,19 @@
   "metaDescription": "Storage",
   "weight": 3,
   "icon": "",
-  "uuid": "2692b947-0329-45c1-987f-2085adcda679"
+  "uuid": "2692b947-0329-45c1-987f-2085adcda679",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

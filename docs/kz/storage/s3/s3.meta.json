@@ -9,5 +9,12 @@
     {
       "partialPath": "/kz/tools-for-using-services/api/api-spec/s3-rest-api/intro"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

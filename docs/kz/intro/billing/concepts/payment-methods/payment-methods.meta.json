@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud: өңірге байланысты қолжетімді төлем тәсілдері",
   "sectionTitle": "Төлем тәсілдері",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

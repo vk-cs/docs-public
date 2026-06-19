@@ -4,5 +4,10 @@
   "metaDescription": "CDN VK Cloud: SSL-сертификаттарды жеке кабинет арқылы басқару",
   "sectionTitle": "SSL-сертификаттарды басқару",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Этапы загрузки сервиса",
   "sectionTitle": "Этапы загрузки сервиса",
-  "uuid": "b31d68ec-8acd-48a9-ad4c-4815af234ae6"
+  "uuid": "b31d68ec-8acd-48a9-ad4c-4815af234ae6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

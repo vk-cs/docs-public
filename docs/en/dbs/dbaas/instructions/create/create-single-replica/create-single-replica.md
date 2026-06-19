@@ -64,9 +64,7 @@
         The option is available for the following DBMS types:
 
         - MySQL,
-        - PostgreSQL,
-        - PostgresPro Enterprise,
-        - PostgresPro Enterprise 1C.
+        - PostgreSQL.
 
         The option works like this:
 
@@ -97,7 +95,7 @@
       
       {tab(Point-in-time recovery)}
       
-      This option is only available for PostgreSQL, Postgres Pro Enterprise and PostgresPro Enterprise 1C. This option allows you to perform Point-In-Time-Recovery backups (PITR).
+      This option is only available for PostgreSQL. This option allows you to perform Point-In-Time-Recovery backups (PITR).
 
       If the option is selected, set the backup options:
 
@@ -153,7 +151,7 @@
 
       The databases will be restored from the backup.
 
-      For PostreSQL, PostgresPro Enterprise and PostgresPro Enterprise 1C select **Backup type**:
+      For PostreSQL select **Backup type**:
 
       - **Point-in-time recovery:**
 

@@ -4,5 +4,19 @@
   "metaDescription": "VK Cloud-та Arenadata дерекқорларының мониторинг жүйесін қосу және баптау",
   "sectionTitle": "Arenadata DB үшін мониторинг сервисін орнату және баптау",
   "icon": "",
-  "weight": 19
+  "weight": 19,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

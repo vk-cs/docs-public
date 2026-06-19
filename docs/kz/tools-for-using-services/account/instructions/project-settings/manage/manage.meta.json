@@ -4,5 +4,14 @@
   "metaDescription": "Иесін ауыстыру, квоталарды ұлғайту, объектілерді тасымалдау және басқа операциялар.",
   "sectionTitle": "Жобаны басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

@@ -5,5 +5,19 @@
   "sectionTitle": "О тестировании",
   "icon": "",
   "weight": 1,
-  "uuid": "9cf59b91-198a-4e4a-b08d-a3088597f30f"
+  "uuid": "9cf59b91-198a-4e4a-b08d-a3088597f30f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

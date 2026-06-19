@@ -1,9 +1,23 @@
 {
-    "title": "Tariffication",
-      "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
-      "metaDescription": "How the service is charged, cost calculation.",
-    "sectionTitle": "Tariffication",
-    "icon": "",
-    "weight": 6,
-    "uuid": "d5b6de10-50dd-4960-bf14-1fc2746655a3"
+  "title": "Tariffication",
+  "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+  "metaDescription": "How the service is charged, cost calculation.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 6,
+  "uuid": "d5b6de10-50dd-4960-bf14-1fc2746655a3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

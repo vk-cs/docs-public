@@ -1,9 +1,23 @@
 {
-    "title": "Creating a custom kernel",
-      "shortDescription": "Description of the procedure for creating an individual kernel",
-      "metaDescription": "Creating a custom JupyterHub kernel",
-    "sectionTitle": "Creating a custom kernel",
-    "icon": "",
-    "weight": 0,
-    "uuid": "d94f380b-fa77-46d2-a403-fcad09759dd0"
+  "title": "Creating a custom kernel",
+  "shortDescription": "Description of the procedure for creating an individual kernel",
+  "metaDescription": "Creating a custom JupyterHub kernel",
+  "sectionTitle": "Creating a custom kernel",
+  "icon": "",
+  "weight": 0,
+  "uuid": "d94f380b-fa77-46d2-a403-fcad09759dd0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

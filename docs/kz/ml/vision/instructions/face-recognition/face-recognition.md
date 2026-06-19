@@ -1,3 +1,5 @@
+# {heading(Беттерді тану)[id=vision-instructions-face-recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 HOST: `https://smarty.mail.ru`
@@ -11,24 +13,24 @@ HOST: `https://smarty.mail.ru`
 
 Олардың әрқайсысын толығырақ қарастырайық.
 
-## Set
+## {heading(Set)[id=vision-instructions-face-recognition-set]}
 
 Бұл әдіс берілген фотосурет пен нақты **person_id** арасындағы байланысты орнатуға мүмкіндік береді.
 
-### Сұрау
+### {heading(Сұрау)[id=vision-instructions-face-recognition-set-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
 | Параметр       | Тип    | Мәні                                    |
 | -------------- | ------ | --------------------------------------- |
-| oauth_token    | string | OAuth2 access token (required non-empty)|
+| oauth_token    | string | OAuth2 access token (required non-empty)|
 | oauth_provider | string | OAuth2 провайдері (required non-empty)  |
 
 Қолдау көрсетілетін OAuth2 провайдерлері:
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                        |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаладан](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаладан]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -52,11 +54,11 @@ HOST: `https://smarty.mail.ru`
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-### Сұрау үлгісі
+### {heading(Сұрау мысалы)[id=vision-instructions-face-recognition-set-request-example]}
 
 ```curl
 curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_ТОКЕН>&oauth_provider=mcs"      \
@@ -74,7 +76,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 }'
 ```
 
-### Жауап
+### {heading(Жауап)[id=vision-instructions-face-recognition-set-request-answer]}
 
 | Параметр | Тип      | Мәні                                                |
 | -------- | -------- | ------------------------------------------------------- |
@@ -95,7 +97,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 | error    | string | Қатенің мәтіндік сипаттамасы (optional)                  |
 | name     | string | Сұрау мен жауаптағы файлдарды сәйкестендіруге арналған файл атауы |
 
-### Жауап үлгісі
+### {heading(Жауап мысалы)[id=vision-instructions-face-recognition-set-request-answer-example]}
 
 ```json
 {
@@ -113,7 +115,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ВАШ_Т
 }
 ```
 
-### Қосымша мысалдар
+### {heading(Қосымша мысалдар)[id=vision-instructions-face-recognition-set-request-extra-examples]}
 
 {cut(Өрістерді валидациялау қатесі (файл атауларының формаға сәйкес келмеуі))}
 
@@ -269,24 +271,24 @@ curl -X 'POST' \
 
 {/cut}
 
-## Recognize
+## {heading(Recognize)[id=vision-instructions-face-recognition-recognize]}
 
 Бұл әдіс берілген фотосурет бойынша person тануға мүмкіндік береді. Егер сәйкестік табылмаса, жаңа person қосылады.
 
-### Сұрау
+### {heading(Сұрау)[id=vision-instructions-face-recognition-recognize-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
 | Параметр       | Тип     | Мәні                                     |
 | -------------- | ------- | -------------------------------------------- |
-| oauth_token    | string  | OAuth2 access token (required non-empty)     |
+| oauth_token    | string  | OAuth2 access token (required non-empty)     |
 | oauth_provider | string  | OAuth2 провайдері (required non-empty)        |
 
 Қолдау көрсетілетін OAuth2 провайдерлері:
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                        |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаладан](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаладан]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -300,7 +302,7 @@ curl -X 'POST' \
 
 Белгілі персона танылған сайын, болашақта осы персонаны жақсырақ тану үшін беттің векторлық көрінісі (embedding) жаңартылады. Алайда кейбір жағдайларда `update_embedding` параметрі арқылы автожаңартуды өшірген дұрыс, мысалы фотосуреттердің сапасы нашар екені алдын ала белгілі болса.
 
-`space` параметрінің сипаттамасын [Set](../../instructions/face-recognition#set) әдісі бөлімінен қараңыз.
+`space` параметрінің сипаттамасын [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set) әдісі бөлімінен қараңыз.
 
 `image_meta` параметрлері:
 
@@ -312,11 +314,11 @@ curl -X 'POST' \
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-### Сұрау үлгісі
+### {heading(Сұрау мысалы)[id=vision-instructions-face-recognition-recognize-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -335,7 +337,7 @@ curl -X 'POST' \
 }'
 ```
 
-### Жауап
+### {heading(Жауап)[id=vision-instructions-face-recognition-recognize-request-answer]}
 
 | Параметр | Тип      | Мәні                                                 |
 | ---------| -------- | ---------------------------------------------------------|
@@ -420,7 +422,7 @@ curl -X 'POST' \
 }
 ```
 
-### Қосымша мысалдар
+### {heading(Қосымша мысалдар)[id=vision-instructions-face-recognition-recognize-request-extra-examples]}
 
 {cut(Кескіндегі бет дерекқорда жоқ және create_new=true)}
 
@@ -661,11 +663,11 @@ curl -X 'POST' \
 
 {/cut}
 
-## Delete
+## {heading(Delete)[id=vision-instructions-face-recognition-delete]}
 
 Бұл әдіс фотосурет пен `person_id` арасындағы байланысты жоюға мүмкіндік береді.
 
-### Сұрау
+### {heading(Сұрау)[id=vision-instructions-face-recognition-delete-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
@@ -678,7 +680,7 @@ curl -X 'POST' \
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                        |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаладан](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаладан]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -687,7 +689,7 @@ curl -X 'POST' \
 | space    | string       | Персоналар бойынша қиылыстарды болдырмау үшін пайдаланылатын сандық идентификатор (required non-empty) |
 | images   | []image_meta | Берілетін кескіндердің метадеректері (required non-empty) |
 
-space параметрінің сипаттамасын [Set](../../instructions/face-recognition#set) әдісі бөлімінен қараңыз.
+space параметрінің сипаттамасын [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set) әдісі бөлімінен қараңыз.
 
 `image_meta` параметрлері:
 
@@ -700,11 +702,11 @@ space параметрінің сипаттамасын [Set](../../instructions
 
 {note:warn}
 
-Әдіске [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіске {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-### Сұрау үлгісі
+### {heading(Сұрау мысалы)[id=vision-instructions-face-recognition-delete-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -722,7 +724,7 @@ curl -X 'POST' \
 }'
 ```
 
-### Жауап
+### {heading(Жауап)[id=vision-instructions-face-recognition-delete-answer]}
 
 | Параметр | Тип      | Мәні                                                 |
 | -------- | -------- | -------------------------------------------------------- |
@@ -743,7 +745,7 @@ curl -X 'POST' \
 | error    | string | Қатенің мәтіндік сипаттамасы (optional)                  |
 | name     | string | Сұрау мен жауаптағы файлдарды сәйкестендіруге арналған файл атауы |
 
-### Жауап үлгісі
+### {heading(Жауап мысалы)[id=vision-instructions-face-recognition-delete-answer-example]}
 
 ```json
 {
@@ -761,7 +763,7 @@ curl -X 'POST' \
 }
 ```
 
-### Қосымша мысалдар
+### {heading(Қосымша мысалдар)[id=vision-instructions-face-recognition-delete-answer-extra-examples]}
 
 {cut(JSON валидациясы қатесі (person_id жоқ))}
 
@@ -797,11 +799,11 @@ curl -X 'POST' \
 
 {/cut}
 
-## Truncate
+## {heading(Truncate)[id=vision-instructions-face-recognition-truncate]}
 
 Бұл әдіс space-ті толық тазалауға мүмкіндік береді.
 
-### Сұрау
+### {heading(Сұрау)[id=vision-instructions-face-recognition-truncate-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
@@ -814,7 +816,7 @@ curl -X 'POST' \
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                   |
 |  -------- |  ------------------------ | -------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаладан](../../quick-start/auth-vision) қараңыз|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаладан]} қараңыз|
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -822,11 +824,11 @@ curl -X 'POST' \
 | -------- | ------ | -------- |
 | space    | string | Персоналар бойынша қиылыстарды болдырмау үшін пайдаланылатын сандық идентификатор (required non-empty)|
 
-space параметрінің сипаттамасын [Set](../../instructions/face-recognition#set) әдісі бөлімінен қараңыз.
+space параметрінің сипаттамасын [Set](../../instructions/face-recognition#vision-instructions-face-recognition-set) әдісі бөлімінен қараңыз.
 
 Бұл сұрау кескіндерді жіберуді қажет етпейді.
 
-### Сұрау үлгісі
+### {heading(Сұрау мысалы)[id=vision-instructions-face-recognition-truncate-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -838,14 +840,14 @@ curl -X 'POST' \
 }'
 ```
 
-### Жауап
+### {heading(Жауап)[id=vision-instructions-face-recognition-truncate-answer]}
 
 | Параметр | Тип      | Мәні                                                 |
 | -------- | -------- | -------------------------------------------------------- |
 | status   | int      | Vision серверлерімен сәтті өзара әрекеттесу болған жағдайда `200` |
 | body     | response | Жауап денесі                                              |
 
-### Жауап үлгісі
+### {heading(Жауап мысалы)[id=vision-instructions-face-recognition-truncate-answer-example]}
 
 ```json
 {
@@ -856,7 +858,7 @@ curl -X 'POST' \
 }
 ```
 
-### Қосымша мысалдар
+### {heading(Қосымша мысалдар)[id=vision-instructions-face-recognition-truncate-extra-examples]}
 
 {cut(JSON валидациясы қатесі (`space` өрісі жоқ))}
 

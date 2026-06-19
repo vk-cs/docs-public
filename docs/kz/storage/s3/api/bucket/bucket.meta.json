@@ -1,0 +1,16 @@
+{
+  "title": "Bucket",
+  "shortDescription": "Бакетті жасау, жою, бакеттің бар-жоғын тексеру және оның мазмұнын тізімдеу",
+  "metaDescription": "VK Object Storage бакеттерімен жұмыс істеуге арналған барлық қолжетімді әдістер: жаңа бакет жасау (CreateBucket), бакеттерді тізімдеу (ListBuckets), бакеттің бар екенін тексеру (HeadBucket), бакет объектілерін тізімдеу (ListObjects), бакетті жою (DeleteBucket)",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

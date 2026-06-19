@@ -5,5 +5,10 @@
   "sectionTitle": "DR из Marketplace: защитите сервисы от сбоев и аварий",
   "icon": "",
   "weight": 6,
-  "uuid": "69692705-d342-4569-8644-3a6077619842"
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

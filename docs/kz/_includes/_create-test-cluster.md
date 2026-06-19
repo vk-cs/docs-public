@@ -1,0 +1,1 @@
+1. {linkto(/kz/kubernetes/k8s/instructions/create-cluster/create-webui#k8s-create-webui)[text=Жасаңыз]} Kubernetes кластерін өзекті нұсқада, егер бұл әлі жасалмаған болса.

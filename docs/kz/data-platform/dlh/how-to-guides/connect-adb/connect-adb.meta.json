@@ -4,5 +4,10 @@
   "metaDescription": "ClickHouse сервисі данасын қалай өрістетуге болады.",
   "sectionTitle": "Аналитикалық ДҚ-ны қосу",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

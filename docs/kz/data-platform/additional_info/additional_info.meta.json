@@ -1,0 +1,14 @@
+{
+  "title": "Қосымша ақпарат",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform-пен жұмыс туралы қосымша ақпарат",
+  "sectionTitle": "Қосымша ақпарат",
+  "weight": 20,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

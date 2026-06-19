@@ -5,5 +5,19 @@
   "sectionTitle": "Миграция кластеров",
   "icon": "",
   "weight": 5,
-  "uuid": "ea85d4d4-b628-45f7-8e9a-95d4100281ba"
+  "uuid": "ea85d4d4-b628-45f7-8e9a-95d4100281ba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

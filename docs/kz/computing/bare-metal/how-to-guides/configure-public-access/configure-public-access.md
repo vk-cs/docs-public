@@ -1,15 +1,17 @@
+# {heading(Жетілдірілген маршрутизатор арқылы жария қолжетімділікті баптау)[id=bare-metal-configure-public-access]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet/concepts/net-types#external_net) арқылы қолжетімділікті [жетілдірілген маршрутизаторлардың](/kz/networks/vnet/concepts/router#advanced) көмегімен баптауға болады.
+Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-types#external-net)[text=сыртқы желінің IP]} арқылы қолжетімділікті {linkto(../../../../networks/vnet/concepts/router#advanced)[text=жетілдірілген маршрутизаторлардың]} көмегімен баптауға болады.
 
-## {heading(Дайындық қадамдары)[id=preparatory-steps]}
+## {heading(Дайындық қадамдары)[id=bare-metal-router-preparatory-steps]}
 
-1. Егер сізде Bare Metal сервері болмаса, оны [тапсырыс беріңіз](/kz/computing/bare-metal/instructions/manage-service#order).
-1. Жетілдірілген маршрутизаторды [жасаңыз](/kz/networks/vnet/instructions/advanced-router/manage-advanced-routers#add).
+1. Егер сізде Bare Metal сервері болмаса, оны {linkto(../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=тапсырыс беріңіз]}.
+1. Жетілдірілген маршрутизаторды {linkto(../../../../networks/vnet/instructions/advanced-router/manage-advanced-routers#add)[text=жасаңыз]}.
 
-## {heading({counter(TOC)}. Сервер желісі туралы ақпарат алыңыз)[id=create-router]}
+## {heading({counter(TOC)}. Сервер желісі туралы ақпарат алыңыз)[id=bare-metal-router-get-info]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Бұлтты есептеулер** → **Bare Metal** бөліміне өтіңіз.
 1. Bare Metal серверлер тізімінен қажетті сервердің атауын басыңыз.
 1. **Желі** қойындысына өтіңіз.
@@ -21,9 +23,9 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    - CIDR: `10.0.0.0/24`;
    - IP мекенжайы: `10.0.0.2`.
 
-## {heading({counter(TOC)}. Жетілдірілген маршрутизаторды баптаңыз)[id=create-router]}
+## {heading({counter(TOC)}. Жетілдірілген маршрутизаторды баптаңыз)[id=bare-metal-router-settings]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
 1. **Виртуалды желілер** → **Маршрутизаторлар** бөліміне өтіңіз.
 1. Қажетті маршрутизатордың атауын басыңыз.
 1. **Интерфейстер** қойындысына өтіңіз.
@@ -41,7 +43,7 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
 
    1. **Интерфейс қосу** түймесін басыңыз.
    1. Интерфейс атауын енгізіңіз.
-   1. `internet` [сыртқы желісінен](/kz/networks/vnet/concepts/net-types#external_net) кез келген ішкі желіні таңдаңыз.
+   1. `internet` {linkto(../../../../networks/vnet/concepts/net-types#external-net)[text=сыртқы желісінен]} кез келген ішкі желіні таңдаңыз.
    1. **Қосу** түймесін басыңыз.
    1. Қосылған интерфейстің сыртқы IP мекенжайын жазып алыңыз.
 
@@ -57,13 +59,13 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    1. **Трансляциядан кейінгі IP** ретінде Bare Metal серверінің `10.0.0.2` ішкі IP мекенжайын көрсетіңіз.
    1. **Қосу** түймесін басыңыз.
 
-## {heading({counter(TOC)}. Құпиясөз арқылы қолжетімділікті баптаңыз)[id=create-router]}
+## {heading({counter(TOC)}. Құпиясөз арқылы қолжетімділікті баптаңыз)[id=bare-metal-router-assets]}
 
 Егер бұл әлі жасалмаса, құпиясөз арқылы қолжетімділікті баптаңыз:
 
-1. Bare Metal серверіне ішкі IP мекенжайы арқылы SSH көмегімен [қосылыңыз](/kz/computing/bare-metal/connect/connect-nix).
+1. Bare Metal серверіне ішкі IP мекенжайы арқылы SSH көмегімен {linkto(../../../../computing/bare-metal/connect/connect-nix#connect-nix)[text=қосылыңыз]}.
 
-   Бұл қадамды орындау үшін [виртуалды машина](/kz/computing/iaas/concepts/vm) түріндегі аралық хостты [Floating IP мекенжайымен](/kz/networks/vnet/concepts/ips-and-inet#floating-ip) жасау қажет болады.
+   Бұл қадамды орындау үшін {linkto(../../../../computing/iaas/concepts/vm#vm)[text=виртуалды машина]} түріндегі аралық хостты {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP мекенжайымен]} жасау қажет болады.
 
 1. Егер сіз `root` есептік жазбасын пайдалансаңыз, `sudo` тобымен жеке пайдаланушы жасаңыз:
 
@@ -72,8 +74,7 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    {tab(Ubuntu/Debian)}
 
    ```shell
-   sudo useradd -m <ИМЯ_ПОЛЬЗОВАТЕЛЯ> \
-   sudo usermod -aG sudo <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
+   sudo useradd -m <ИМЯ_ПОЛЬЗОВАТЕЛЯ>    sudo usermod -aG sudo <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
    ```
 
    {/tab}
@@ -81,8 +82,7 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    {tab(CentOS/RHEL/AlmaLinux)}
 
    ```shell
-   sudo useradd -m <ИМЯ_ПОЛЬЗОВАТЕЛЯ> \
-   sudo usermod -aG wheel <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
+   sudo useradd -m <ИМЯ_ПОЛЬЗОВАТЕЛЯ>    sudo usermod -aG wheel <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
    ```
 
    {/tab}
@@ -95,7 +95,7 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    sudo passwd <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
    ```
 
-   Мұнда `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — есептік жазбаңыздың атауы. Егер ОЖ VK Cloud образдарынан орнатылған болса, [әдепкі есептік жазба атауын](/kz/computing/iaas/concepts/oper-system#default_account) пайдалануға болады.
+   Мұнда `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — есептік жазбаңыздың атауы. Егер ОЖ {var(cloud)} образдарынан орнатылған болса, {linkto(../../../../computing/iaas/concepts/oper-system#default_account)[text=әдепкі есептік жазба атауын]} пайдалануға болады.
 
    {note:info}
 
@@ -109,9 +109,9 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
    quit
    ```
 
-## {heading({counter(TOC)}. ОЖ-де желіні баптаңыз)[id=create-router]}
+## {heading({counter(TOC)}. ОЖ-де желіні баптаңыз)[id=bare-metal-router-settings-os]}
 
-1. Серверге VNC консолі арқылы [қосылыңыз](/kz/computing/bare-metal/connect/console).
+1. Серверге VNC консолі арқылы {linkto(../../../../computing/bare-metal/connect/console#bare-metal-console)[text=қосылыңыз]}.
 1. Пайдаланушы атын енгізіп, ENTER пернесін басыңыз.
 1. Құпиясөзді енгізіңіз.
 
@@ -160,16 +160,16 @@ Bare Metal серверіне [сыртқы желінің IP](/kz/networks/vnet
 
    Өзгертілген маршрут сервер қайта жүктелгенге дейін сақталады. Қайта жүктегеннен кейін желі баптауын қайта орындау қажет болады.
 
-   Маршрут түсіп қалмауы үшін, бірінші қадамда алынған желі параметрлерін пайдаланып, ОЖ-дегі желі интерфейсінің конфигурациясын [баптаңыз](/kz/computing/iaas/how-to-guides/interface-settings-check). Шлюз ретінде ішкі интерфейске тағайындалған IP мекенжайын көрсетіңіз.
+   Маршрут түсіп қалмауы үшін, бірінші қадамда алынған желі параметрлерін пайдаланып, ОЖ-дегі желі интерфейсінің конфигурациясын {linkto(../../../../computing/iaas/how-to-guides/interface-settings-check#nterface-settings-check)[text=баптаңыз]}. Шлюз ретінде ішкі интерфейске тағайындалған IP мекенжайын көрсетіңіз.
 
    {/note}
 
-1. Серверге сыртқы мекенжай бойынша SSH арқылы [қосылыңыз](/kz/computing/bare-metal/connect/connect-nix).
+1. Серверге сыртқы мекенжай бойынша SSH арқылы {linkto(../../../../computing/bare-metal/connect/connect-nix#connect-nix)[text=қосылыңыз]}.
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=clean-up]}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=bare-metal-router-clean-up]}
 
 Жасалған ресурстар тарифке сәйкес есептеледі және есептеу ресурстарын тұтынады. Егер олар сізге енді қажет болмаса:
 
-- Кейінірек пайдалану үшін аралық хостты [тоқтатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) немесе оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
-- Bare Metal серверін жалға алудан [басы тартыңыз](/kz/computing/bare-metal/instructions/manage-service#delete).
-- Аралық хостқа тағайындалған [Floating IP мекенжайын жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete). Жобада бар Floating IP мекенжайлары қандай да бір сервиске байланыстырылмаса да тарифтеледі.
+- Кейінірек пайдалану үшін аралық хостты {linkto(../../../../computing/iaas/instructions/vm/vm-manage#start-stop-restart-vm)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#delete_vm)[text=жойыңыз]}.
+- Bare Metal серверін жалға алудан {linkto(../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-delete)[text=басы тартыңыз]}.
+- Аралық хостқа тағайындалған {linkto(../../../../networks/vnet/instructions/ip/floating-ip#delete)[text=Floating IP мекенжайын жойыңыз]}. Жобада бар Floating IP мекенжайлары қандай да бір сервиске байланыстырылмаса да тарифтеледі.

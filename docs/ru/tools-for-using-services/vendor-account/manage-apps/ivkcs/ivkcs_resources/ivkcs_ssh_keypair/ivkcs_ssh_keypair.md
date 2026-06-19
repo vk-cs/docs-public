@@ -23,9 +23,9 @@
 
 {/note}
 |integer
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |2048
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 

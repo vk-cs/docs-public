@@ -1,9 +1,23 @@
 {
-    "title": "Object",
-      "shortDescription": "",
-      "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
-    "sectionTitle": "Object",
-    "icon": "",
-    "weight": 2,
-    "uuid": "44c3a879-7fa3-4e76-9f59-145a2a30bdba"
+  "title": "Object",
+  "shortDescription": "",
+  "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
+  "sectionTitle": "Object",
+  "icon": "",
+  "weight": 2,
+  "uuid": "44c3a879-7fa3-4e76-9f59-145a2a30bdba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

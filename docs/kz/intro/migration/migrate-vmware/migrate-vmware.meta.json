@@ -1,8 +1,15 @@
 {
-  "title": "VMware ВМ-ді VK Cloud ішіне көшіру",
-  "sectionTitle": "VMware ВМ-ді VK Cloud ішіне көшіру",
-  "shortDescription": "VMware виртуалды машинасының образын VK Cloud ішіне қалай импорттауға болады",
+  "title": "VMware ВМ-ді {var(cloud)} ішіне көшіру",
+  "sectionTitle": "VMware ВМ-ді {var(cloud)} ішіне көшіру",
+  "shortDescription": "VMware виртуалды машинасының образын {var(cloud)} ішіне қалай импорттауға болады",
   "metaDescription": "VMware виртуалды машинасын VK Cloud ішіне көшіру",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

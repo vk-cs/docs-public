@@ -5,5 +5,10 @@
   "sectionTitle": "Secure token",
   "icon": "",
   "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "a1d0dc8d-2d5f-43e7-8e7f-4c2111e402f3"
 }

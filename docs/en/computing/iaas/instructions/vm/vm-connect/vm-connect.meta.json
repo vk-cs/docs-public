@@ -5,5 +5,10 @@
   "metaDescription": "How to connect to a VM.",
   "icon": "",
   "weight": 1,
-  "uuid": "960ad1a1-6a6a-4ba1-8c9b-dd82142f7e3c"
+  "uuid": "960ad1a1-6a6a-4ba1-8c9b-dd82142f7e3c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

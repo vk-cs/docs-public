@@ -1,9 +1,23 @@
 {
-    "title": "Creating an instance of the service",
-      "shortDescription": "How to create an instance of Cloud Kafka in the required configuration",
-      "metaDescription": "How to create an instance of the service in the required configuration.",
-    "sectionTitle": "Creating an instance of the service",
-    "icon": "",
-    "weight": 1,
-    "uuid": "a24b57ac-a14c-45be-a1bd-3fcc8ae11bba"
+  "title": "Creating an instance of the service",
+  "shortDescription": "How to create an instance of Cloud Kafka in the required configuration",
+  "metaDescription": "How to create an instance of the service in the required configuration.",
+  "sectionTitle": "Creating an instance of the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a24b57ac-a14c-45be-a1bd-3fcc8ae11bba",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

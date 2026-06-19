@@ -1,0 +1,1 @@
+# {heading(Хранилище)[id=storage]}

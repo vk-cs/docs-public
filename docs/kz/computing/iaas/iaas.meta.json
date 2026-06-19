@@ -9,5 +9,15 @@
     {
       "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/iaas/create"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

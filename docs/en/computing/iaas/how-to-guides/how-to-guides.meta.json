@@ -5,5 +5,10 @@
   "metaDescription": "How-to guides",
   "icon": "",
   "weight": 3,
-  "uuid": "6175fd4b-6782-459c-93c3-bb112638254a"
+  "uuid": "6175fd4b-6782-459c-93c3-bb112638254a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

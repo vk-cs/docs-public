@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-та файлдық сақтау орындарын басқару: тізім мен параметрлерді қарау, файлдық сақтау орнының өлшемін өзгерту, сақтау орнын және оның желісін жою.",
   "sectionTitle": "Файлдық сақтау орындарын басқару",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

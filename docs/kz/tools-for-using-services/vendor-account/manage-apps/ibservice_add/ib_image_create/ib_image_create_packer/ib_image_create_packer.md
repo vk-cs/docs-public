@@ -6,12 +6,12 @@ Packer көмегімен сервис образын жасау үшін:
 
 1. Packer орнатыңыз:
 
-   1. Packer-ді [ресми VK Cloud айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп алыңыз.
+   1. Packer-ді [ресми {var(cloud)} айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп алыңыз.
    1. Архивті ашып, `Path` орта айнымалысында ашылған файлға апаратын жолды көрсетіңіз.
    1. Packer сәтті орнатылғанына көз жеткізу үшін `packer` командасын орындаңыз.
 
    Егжей-тегжейлі нұсқаулық [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) берілген.
-1. OpenStack CLI-ді [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack CLI-ді [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Бұлтты платформалармен жұмыс істеуді қолдайтын ОС-тің базалық образын жүктеп алыңыз.
 
    ОС {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=сервис образына қойылатын талаптарға]} сәйкес келуі керек.
@@ -62,7 +62,7 @@ Packer көмегімен сервис образын жасау үшін:
 
       Жасалған образдың ID-і бұлтты платформаның ЖК-сінде көрсетіледі.
 
-   Егжей-тегжейлі нұсқаулық [Образды импорттау](/kz/computing/iaas/instructions/images/images-manage#obrazdy_importtau) бөлімінде берілген.
+   Егжей-тегжейлі нұсқаулық [Образды импорттау](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) бөлімінде берілген.
 1. packer-файлды конфигурациялаңыз:
 
    1. Қоршаған орта айнымалыларына желі ID-ін және базалық образ ID-ін жазыңыз:

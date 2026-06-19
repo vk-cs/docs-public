@@ -4,5 +4,14 @@
   "metaDescription": "Қатысушыларды қосу және жою, олардың рөлдерін қарау, жобада міндетті 2FA қосуды іске қосу.",
   "sectionTitle": "Қолжетімділікті басқару",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

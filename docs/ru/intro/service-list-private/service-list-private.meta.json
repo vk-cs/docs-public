@@ -1,0 +1,14 @@
+{
+  "title": "О сервисах {var(cloud)}",
+  "shortDescription": "Четыре группы сервисов, на которых базируется архитектура {var(cloud)}",
+  "metaDescription": "О сервисах VK Private Cloud",
+  "sectionTitle": "О сервисах {var(cloud)}",
+  "weight": 3,
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": ""
+}

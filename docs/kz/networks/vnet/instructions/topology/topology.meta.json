@@ -1,8 +1,18 @@
 {
   "title": "Топологияны қарау",
-  "shortDescription": "VK Cloud құралдарының көмегімен виртуалды желілер топологиясын қарау",
+  "shortDescription": "{var(cloud)} құралдарының көмегімен виртуалды желілер топологиясын қарау",
   "metaDescription": "Желі топологиясының сипаттамасы",
   "sectionTitle": "Топологияны қарау",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

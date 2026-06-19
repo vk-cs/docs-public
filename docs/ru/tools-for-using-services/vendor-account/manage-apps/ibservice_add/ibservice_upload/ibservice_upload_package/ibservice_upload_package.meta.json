@@ -4,5 +4,10 @@
   "metaDescription": "Загрузка сервисного пакета в магазин",
   "sectionTitle": "Загрузка сервисного пакета в магазин",
   "weight": 5,
-  "uuid": "b6e2619b-ea48-4fd1-88c1-778cf26e5522"
+  "uuid": "b6e2619b-ea48-4fd1-88c1-778cf26e5522",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

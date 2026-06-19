@@ -1,9 +1,23 @@
 {
-    "title": "Pods",
-      "shortDescription": "General information about pods in Kubernetes",
-      "metaDescription": "",
-    "sectionTitle": "Pods",
-    "icon": "",
-    "weight": 1,
-    "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65"
+  "title": "Pods",
+  "shortDescription": "General information about pods in Kubernetes",
+  "metaDescription": "",
+  "sectionTitle": "Pods",
+  "icon": "",
+  "weight": 1,
+  "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

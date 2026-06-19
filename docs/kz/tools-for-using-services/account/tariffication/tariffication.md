@@ -1,3 +1,5 @@
+# {heading(Тарификация)[id=tools-account-tariffication]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жеке кабинетті пайдалану тарификацияланбайды.

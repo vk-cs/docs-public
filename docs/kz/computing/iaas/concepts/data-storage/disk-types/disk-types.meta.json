@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-тағы блоктық сақтау дискілерінің түрлері",
   "metaDescription": "VK Cloud-тағы блоктық сақтау дискілерінің түрлері",
   "sectionTitle": "Блоктық сақтау дискілері",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

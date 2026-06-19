@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Networks сервисінде Anycast IP-адрестерін қалай баптауға болады. Anycast IP-адрестерін қосу, жою, байланыстыру және басқа операциялар",
   "sectionTitle": "Anycast IP-адрестер",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

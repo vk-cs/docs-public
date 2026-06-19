@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Audit-ке дискілерді және олардың снапшоттарын басқару сервисі жіберетін оқиғалар",
   "sectionTitle": "Cinder компонентінің оқиғалары",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

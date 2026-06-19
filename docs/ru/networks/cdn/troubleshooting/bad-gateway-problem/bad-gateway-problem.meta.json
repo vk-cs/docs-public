@@ -5,5 +5,9 @@
   "sectionTitle": "Ошибка 502 при обращении к ресурсу",
   "icon": "",
   "weight": 1,
-  "uuid": "415ffeb8-9524-4a24-b0fa-ad783ddabc3a"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

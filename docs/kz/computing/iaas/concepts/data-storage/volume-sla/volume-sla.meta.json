@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud платформасы дискілеріне арналған SLA. Дискілердің өнімділік сипаттамалары",
   "sectionTitle": "Блоктық сақтау дискілерінің өнімділігі",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

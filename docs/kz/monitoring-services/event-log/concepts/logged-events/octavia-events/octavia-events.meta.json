@@ -4,5 +4,10 @@
   "metaDescription": "Жүктемені теңгеру сервисі Cloud Audit-ке жіберетін оқиғалар",
   "sectionTitle": "Octavia компонентінің оқиғалары",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

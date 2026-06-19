@@ -1,4 +1,6 @@
-Магазин приложений расширяет возможности VK Cloud, предлагая сторонние сервисы для решения задач. Один из таких сервисов — [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info). С его помощью вы можете настроить Disaster Recovery (DR) — комплекс стратегий и процедур, направленных на восстановление работы приложений, данных и бизнес-процессов после сбоев, аварий в ЦОД или человеческих ошибок.
+# {heading(Hystax Acura DR из Marketplace: защитите сервисы от сбоев и аварий)[id=onboarding-disaster-recovery]}
+
+Магазин приложений расширяет возможности {var(cloud)}, предлагая сторонние сервисы для решения задач. Один из таких сервисов — [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info). С его помощью вы можете настроить Disaster Recovery (DR) — комплекс стратегий и процедур, направленных на восстановление работы приложений, данных и бизнес-процессов после сбоев, аварий в ЦОД или человеческих ошибок.
 
 Для настройки DR вы подключаете сервис, авторизуетесь в личном кабинете Hystax Acura и устанавливаете агенты на серверы, которые нужно реплицировать в резервную инфраструктуру. Данные на основной и резервной площадке регулярно синхронизируются.
 
@@ -6,36 +8,36 @@
 
 Начните работу с Hystax Acura Disaster Recovery любым удобным способом:
 
-- Воспользуйтесь [инструкцией](#guide), чтобы подключить сервис через Marketplace, проверить настройку DR и восстановление данных.
-- Посмотрите {linkto(#video)[text=видео]} о защите данных с помощью Disaster Recovery.
+- Воспользуйтесь [инструкцией](#onboarding-disaster-recovery-guide), чтобы подключить сервис через Marketplace, проверить настройку DR и восстановление данных.
+- Посмотрите {linkto(#onboarding-disaster-recovery-video)[text=видео]} о защите данных с помощью Disaster Recovery.
 
-## {heading(Настройте DR с помощью сервиса из Marketplace)[id=guide]}
+## {heading(Настройте DR с помощью сервиса из Marketplace)[id=onboarding-disaster-recovery-guide]}
 
 Пройдя все шаги этой инструкции, вы:
 
 1. [Реплицируете](#replication) данные виртуальной машины.
 1. [Создадите](#plan_create) план аварийного восстановления.
 1. [Запустите](#plan_start) план, чтобы подготовить резервную инфраструктуру.
-1. [Восстановите](#infrastructure_restore) ВМ в VK Cloud.
+1. [Восстановите](#infrastructure_restore) ВМ в {var(cloud)}.
 1. [Проверите](#vm_check) работоспособность восстановленной ВМ.
 
-{include(/ru/_includes/_disaster-recovery.md)[tags=dr_onboarding_1; level=+1]}
+{include(../../../../_includes/_disaster-recovery.md)[tags=dr_onboarding_1; level=+1]}
 
-### Подготовительные шаги
+### {heading(Подготовительные шаги)[id=onboarding-disaster-recovery-prepare]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 
-{include(/ru/_includes/_disaster-recovery.md)[tags=dr_onboarding_2; level=+1]}
+{include(../../../../_includes/_disaster-recovery.md)[tags=dr_onboarding_2; level=+1]}
 
-## {heading(Видеоинструкция)[id=video]}
+## {heading(Видеоинструкция)[id=onboarding-disaster-recovery-video]}
 
-В этом видео рассказано об особенностях Hystax Acura Disaster Recovery и о том, как настроить восстановление сервера в VK Cloud.
+В этом видео рассказано об особенностях Hystax Acura Disaster Recovery и о том, как настроить восстановление сервера в {var(cloud)}.
 
 {caption()[id=position=above;align=right;id=video_create_backup]}
 {video(https://vkvideo.ru/video_ext.php?oid=-164978780&id=456239704&hash=975afb49f1b7484a&hd=4)[type=vkvideo]}
 {/caption}
 
-## {heading(Вопросы и ответы)[id=faq]}
+## {heading(Вопросы и ответы)[id=onboarding-disaster-recovery-faq]}
 
 {cut(Зачем настраивать Disaster Recovery, если есть резервные копии?)}
 Если вы используете DR, сервисы готовы к запуску на резервной площадке сразу после сбоя. Достаточно включить виртуальные машины.
@@ -47,8 +49,8 @@
 Перенос поддерживается как с виртуальных, так и с физических платформ, включая основные корпоративные гипервизоры. Примеры: VMware vSphere, VMware ESXi, Microsoft Hyper‑V, KVM. При планировании обратитесь в [техническую поддержку](/ru/contacts), чтобы согласовать конкретный список.
 {/cut}
 
-{cut(Можно ли использовать VK Cloud как резервную площадку для восстановления данных?)}
-VK Cloud может быть как основной, так и резервной площадкой для ваших сервисов. Для максимальной надежности размещайте основную и резервную площадки в разных ЦОД или регионах.
+{cut(Можно ли использовать {var(cloud)} как резервную площадку для восстановления данных?)}
+{var(cloud)} может быть как основной, так и резервной площадкой для ваших сервисов. Для максимальной надежности размещайте основную и резервную площадки в разных ЦОД или регионах.
 {/cut}
 
 {cut(Как убедиться, что данные на резервной площадке восстановятся корректно?)}

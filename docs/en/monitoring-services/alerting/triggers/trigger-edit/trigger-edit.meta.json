@@ -1,9 +1,14 @@
 {
-    "title": "Editing trigger",
-      "shortDescription": "How to change trigger settings",
-      "metaDescription": "",
-    "sectionTitle": "Editing trigger",
-    "icon": "",
-    "weight": 2,
-    "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee"
+  "title": "Editing trigger",
+  "shortDescription": "How to change trigger settings",
+  "metaDescription": "",
+  "sectionTitle": "Editing trigger",
+  "icon": "",
+  "weight": 2,
+  "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

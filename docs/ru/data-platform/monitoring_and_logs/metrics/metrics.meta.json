@@ -1,0 +1,14 @@
+{
+  "title": "Справочник метрик",
+  "shortDescription": "Метрики сервисов VK Data Platform",
+  "metaDescription": "Узнайте какие метрики собираются для каждого развернутого экземпляра сервиса VK Data Platform",
+  "sectionTitle": "Справочник метрик",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -4,5 +4,10 @@
   "metaDescription": "Creating Linux and Windows virtual machines. Connecting to the VM via SSH and RDP. Resource and state management of virtual machines. Working with disks and images. Creating backups. Using file storage",
   "sectionTitle": "Step-by-step instructions",
   "weight": 2,
-  "uuid": "94e74c03-95cb-435c-9bb4-f401fdca4fce"
+  "uuid": "94e74c03-95cb-435c-9bb4-f401fdca4fce",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

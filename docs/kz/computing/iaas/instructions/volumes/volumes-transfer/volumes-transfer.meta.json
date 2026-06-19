@@ -4,5 +4,15 @@
   "metaDescription": "OpenStack CLI көмегімен VK Cloud-та дискіні жобалар арасында жылжыту. Ресурстарды бірлесіп пайдалану үшін дискіні басқа жобаға беру.",
   "sectionTitle": "Дискіні жобалар арасында жылжыту",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

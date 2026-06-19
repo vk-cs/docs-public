@@ -1,8 +1,18 @@
 {
   "title": "CLI",
-  "shortDescription": "Управление ресурсами платформы VK Cloud через интерфейс командной строки",
+  "shortDescription": "Управление ресурсами платформы {var(cloud)} через интерфейс командной строки",
   "metaDescription": "Управление ресурсами платформы VK Cloud через интерфейс командной строки.",
   "sectionTitle": "CLI",
   "weight": 5,
-  "uuid": "57650bba-27d0-435d-a40b-9b299f368d52"
+  "uuid": "57650bba-27d0-435d-a40b-9b299f368d52",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

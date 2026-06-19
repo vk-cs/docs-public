@@ -1,8 +1,15 @@
 {
-  "title": "Hyper-V ВМ-ді VK Cloud ішіне көшіру",
-  "sectionTitle": "Hyper-V ВМ-ді VK Cloud ішіне көшіру",
-  "shortDescription": "Hyper-V виртуалды машинасының образын VK Cloud ішіне қалай импорттауға болады",
+  "title": "Hyper-V ВМ-ді {var(cloud)} ішіне көшіру",
+  "sectionTitle": "Hyper-V ВМ-ді {var(cloud)} ішіне көшіру",
+  "shortDescription": "Hyper-V виртуалды машинасының образын {var(cloud)} ішіне қалай импорттауға болады",
   "metaDescription": "Hyper-V виртуалды машинасын VK Cloud ішіне көшіру",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

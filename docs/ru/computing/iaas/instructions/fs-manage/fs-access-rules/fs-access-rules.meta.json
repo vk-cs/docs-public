@@ -5,5 +5,14 @@
   "sectionTitle": "Управление правилами доступа",
   "icon": "",
   "weight": 5,
-  "uuid": "85b058fd-af26-4046-b046-aa67f72b67db"
+  "uuid": "85b058fd-af26-4046-b046-aa67f72b67db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

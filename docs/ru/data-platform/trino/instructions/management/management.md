@@ -1,83 +1,134 @@
-## {heading(Переименование экземпляра сервиса)[id=rename]}
+# {heading(Работа с экземпляром сервиса)[id=trino_management]}
+
+{ifndef(public)}
+{include(../../../_includes/_standalone.md)[tags=difference_management]}
+{/ifndef}
+
+## {heading(Просмотр информации об экземпляре)[id=trino_view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного экземпляра и выберите пункт **Редактировать**.
-1. В открывшемся окне укажите новое название экземпляра.
-1. Нажмите кнопку **Сохранить изменения**.
+{include(../../../_includes/_data_p.md)[tags=instance_view_info]}
 
 {/tab}
 
 {/tabs}
 
-## {heading(Просмотр параметров экземпляра сервиса)[id=view]}
+## {heading(Переименование экземпляра)[id=trino_rename]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_data_p.md)[tags=instance_edit_name]}
 
 {/tab}
 
 {/tabs}
 
-## {heading(Просмотр статуса компонентов)[id=status]}
+{ifndef(public)}
+## {heading(Изменение IP и портов)[id=trino_change-ip]}
+
+{note:warn}
+Только для Standalone и Standalone в составе {var(cloud)}.
+{/note}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
-
-1. На странице экземпляра перейдите на вкладку **Статус компонентов**.
+{include(../../../_includes/_standalone.md)[tags=change_ip]}
 
 {/tab}
 
 {/tabs}
 
-## {heading(Масштабирование экземпляра сервиса)[id=scaling]}
+{/ifndef}
+
+## {heading(Просмотр статуса компонентов)[id=trino_status]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
-
-1. На странице экземпляра перейдите на вкладку **Статус компонентов**.
-1. Нажмите кнопку **Масштабирование**.
-1. Измените параметры кластера:
-
-   - В блоке **Coordinator** измените количество CPU и RAM master-узла.
-   - В блоке **Worker** измените количество узлов и количество CPU и RAM для каждого worker-узла кластера.
-1. Нажмите кнопку **Сохранить изменения**.
+{include(../../../_includes/_data_p.md)[tags=instance_view_status]}
 
 {/tab}
 
 {/tabs}
 
-## {heading(Изменение пароля администратора)[id=change_password]}
+## {heading(Горизонтальное масштабирование экземпляра)[id=trino_horizontal_scaling]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_data_p.md)[tags=instance_horizontal_scaling]}
+
+{/tab}
+
+{/tabs}
+
+{ifndef(public)}
+## {heading(Вертикальное масштабирование экземпляра)[id=trino_vertical_scaling]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_vertical_scaling]}
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
+
+## {heading(Просмотр и редактирование настроек)[id=trino_edit_settings]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_edit_settings_new]}
+
+{/tab}
+
+{/tabs}
+
+## {heading(Просмотр учетной записи администратора)[id=trino_admin_view]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
+1. Нажмите на название экземпляра.
+1. Перейдите на вкладку **Учетные данные**.
+1. Ознакомьтесь с информацией.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Изменение пароля администратора)[id=trino_change_password]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Учетные данные**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной учетной записи и выберите пункт **Редактировать**.
+1. Нажмите **•••** для нужной учетной записи и выберите пункт **Редактировать**.
 1. В открывшемся окне укажите новый пароль администратора.
 
-   {include(/ru/_includes/_trino.md)[tags=password]}
+   {include(../../../_includes/_trino.md)[tags=password]}
 
    {note:info}
-
    Утерянный пароль невозможно восстановить, но можно поменять на новый.
-
    {/note}
 
    Чтобы сгенерировать новый пароль, нажмите кнопку **Сгенерировать**.
@@ -88,25 +139,23 @@
 
 {/tabs}
 
-## {heading(Создание учетной записи администратора)[id=add_admin]}
+## {heading(Создание учетной записи администратора)[id=trino_add_admin]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Учетные данные**.
 1. Нажмите кнопку **Добавить учетную запись**.
 1. В открывшемся окне задайте логин администратора для доступа к Cloud Trino.
 1. Придумайте или сгенерируйте пароль администратора.
 
-   {include(/ru/_includes/_trino.md)[tags=password]}
+   {include(../../../_includes/_trino.md)[tags=password]}
 
    {note:info}
-
-   Утерянный пароль невозможно восстановить, но можно [поменять](#change_password) на новый.
-
+   Утерянный пароль невозможно восстановить, но можно поменять на новый.
    {/note}
 
 1. Нажмите кнопку **Добавить**.
@@ -115,19 +164,19 @@
 
 {/tabs}
 
-## {heading(Добавление подключения)[id=add_connect]}
+## {heading(Добавление подключения)[id=trino_add_connect]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Подключения**.
 1. Нажмите кнопку **Добавить подключение**.
 1. На открывшейся странице измените тип подключения и задайте его параметры:
 
-   {include(/ru/_includes/_trino.md)[tags=connect]}
+   {include(../../../_includes/_trino.md)[tags=connect]}
 
 1. Нажмите кнопку **Сохранить изменения**.
 
@@ -135,13 +184,13 @@
 
 {/tabs}
 
-## {heading(Просмотр подключения)[id=view-connect]}
+## {heading(Просмотр подключения)[id=trino_view-connect]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Подключения**.
 1. Нажмите на имя нужного подключения.
@@ -151,29 +200,33 @@
 
 {/tabs}
 
-## {heading(Удаление подключения)[id=delete_connect]}
+## {heading(Удаление подключения)[id=trino_delete_connect]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Подключения**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной учетной записи и выберите пункт **Удалить**.
+1. Нажмите **•••** для нужной учетной записи и выберите пункт **Удалить**.
 1. Подтвердите удаление.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Изменение периода обслуживания)[id=maintenance]}
+## {heading(Управление доступом пользователей)[id=trino_management_rbac]}
+
+Подробнее в инструкции {linkto(../rbac#trino_rbac)[text=%text]}.
+
+## {heading(Изменение периода обслуживания)[id=trino_maintenance]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_trino.md)[tags=open]}
+{include(../../../_includes/_trino.md)[tags=open]}
 
 1. На странице экземпляра перейдите на вкладку **Обслуживание**.
 1. Выберите дни недели и время начала проведения технических работ. В это время на сервере могут выполняться технические работы, в том числе создание резервных копий — сервис будет недоступен.
@@ -202,18 +255,32 @@
 
 {/tabs}
 
-## {heading(Удаление экземпляра сервиса)[id=delete]}
-
-Это групповая операция: при необходимости можно удалить сразу несколько экземпляров сервиса, выбрав их с помощью флажков.
+## {heading(Просмотр истории изменений)[id=trino_changes_history]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного экземпляра и выберите пункт **Удалить**.
-1. Подтвердите удаление и дождитесь завершения операции. Удаление может занять длительное время.
+1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
+1. Нажмите на название экземпляра.
+1. Перейдите на нужную вкладку и нажмите справа на значок ![значок](../../../assets/icon-clock.svg "inline").
+1. Ознакомьтесь с историей изменений.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Удаление экземпляра сервиса)[id=trino_delete]}
+
+{ifdef(public)}
+Это групповая операция: при необходимости можно удалить сразу несколько экземпляров сервиса, выбрав их с помощью флажков.
+{/ifdef}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_delete]}
 
 {/tab}
 

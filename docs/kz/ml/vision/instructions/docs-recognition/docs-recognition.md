@@ -1,3 +1,5 @@
+# {heading(Құжат өрістерін тану)[id=vision-instructions-docs-recognition]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл әдіс, мысалы, фотодағы паспорт өрістерін тануға мүмкіндік береді. Төменде оның қолданылуын толығырақ қарастырамыз.
@@ -6,7 +8,7 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/recognize`
 
-## Сұрау
+## {heading(Сұрау)[id=vision-instructions-docs-recognition-request]}
 
 Авторизация деректері сұрау жолында беріледі:
 
@@ -18,8 +20,8 @@ ENDPOINT: `/api/v1/docs/recognize`
 Қолдау көрсетілетін OAuth2 провайдерлері:
 
 | Провайдер | `oauth_provider` мәні | Токенді алу                                                                    |
-|  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | [мақаланы](../../quick-start/auth-vision) қараңыз |
+|  -------- |  ------------------------ |-------------------------------------------------------------------------------------|
+| {var(cloud)}  | mcs                       | {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=мақаланы]} қараңыз |
 
 Сұрау параметрлері сұрау денесінде `name="meta"` арқылы JSON форматында беріледі:
 
@@ -37,19 +39,14 @@ ENDPOINT: `/api/v1/docs/recognize`
 
 {note:warn}
 
-Әдіс үшін [шектеулер](../../concepts/vision-limits#obrabotka_izobrazheniy) қолданылады.
+Әдіс үшін {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=шектеулер]} қолданылады.
 
 {/note}
 
-## Сұрау үлгісі
+## {heading(Сұрау мысалы)[id=vision-instructions-docs-recognition-request-examples]}
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@docs_recognize_ok.jpg;type=image/jpeg'   -F 'meta={
   "images": [
     {
       "name": "file"
@@ -58,7 +55,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Жауап
+## {heading(Жауап)[id=vision-instructions-docs-recognition-answer]}
 
 | Параметр | Түрі | Мәні |
 | --- | --- | ---|
@@ -80,7 +77,7 @@ curl -X 'POST' \
 | name | string | Сұрау мен жауаптағы файлдарды сәйкестендіруге арналған файл атауы |
 | labels | `object` | Танылған құжат өрістері
 
-## Жауап үлгісі
+## {heading(Жауап мысалы)[id=vision-instructions-docs-recognition-answer-example]}
 
 ```json
 {
@@ -140,19 +137,14 @@ curl -X 'POST' \
 }
 ```
 
-## Қосымша мысалдар
+## {heading(Қосымша мысалдар)[id=vision-instructions-docs-recognition-extra-examples]}
 
-### Поля на изображении не распознаны
+### {heading(Кескіндегі өрістер танылмады)[id=vision-instructions-docs-recognition-extra-examples-fields-unrecognized]}
 
 Сұрау мысалы:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@docs_recognize_not_doc.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@docs_recognize_not_doc.jpg;type=image/jpeg'   -F 'meta={
   "images": [
     {
       "name": "file"
@@ -180,17 +172,12 @@ curl -X 'POST' \
 }
 ```
 
-### Жарамсыз кескін
+### {heading(Жарамсыз кескін)[id=vision-instructions-docs-recognition-extra-examples-invalid-img]}
 
 Сұрау мысалы:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@empty.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@empty.jpg;type=image/jpeg'   -F 'meta={
   "images": [
     {
       "name": "file"
@@ -210,17 +197,12 @@ curl -X 'POST' \
 }
 ```
 
-### Некорректный JSON (несовпадение имени в meta и изображении)
+### {heading(Дұрыс емес JSON (meta және кескіндегі атаулар сәйкес келмейді))[id=vision-instructions-docs-recognition-extra-examples-invalid-json]}
 
 Сұрау мысалы:
 
 ```curl
-curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: multipart/form-data' \
-  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
-  -F 'meta={
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@persons_set_ok.jpg;type=image/jpeg'   -F 'meta={
   "images": [
     {
       "name": "file1"

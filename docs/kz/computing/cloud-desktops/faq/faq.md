@@ -1,15 +1,17 @@
+# {heading(Сұрақтар мен жауаптар)[id=iaas-faq]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {cut(Сервис жұмысында мен түзете алмайтын қате пайда болды. Қайда жүгінуге болады?)}
 
-VK Cloud [техникалық қолдау қызметіне](/kz/contacts) жүгініңіз.
+{var(cloud)} [техникалық қолдау қызметіне](/kz/contacts) жүгініңіз.
 
 {/cut}
 
 {cut(Сервис жұмысы бойынша техникалық қолдау қызметіне жүгінгенде қандай ақпарат беру керек?)}
 
 - Мәселенің туындаған нақты уақыты.
-- Мәселе туындаған [жеке кабинет](https://kz.cloud.vk.com/app) жобасының [идентификаторы](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_identifikatoryn_alu).
+- Мәселе туындаған [жеке кабинет](https://kz.cloud.vk.com/app) жобасының [идентификаторы](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
 - Егер жобада бірнешеуі болса, жұмыс үстелдері пулының атауы.
 - Егер мәселе нақты бір жұмыс үстелімен байланысты болса, жұмыс үстелінің атауы.
 - Сіз әрекеттерді орындауға тырысып жатқан пайдаланушы.

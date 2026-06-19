@@ -1,3 +1,5 @@
+# {heading(Создание инстанса MLflow)[id=terraform-mlflow]}
+
 В статье приведены примеры создания инстанса MLflow при помощи Terraform.
 
 При создании инстанса используются:
@@ -10,17 +12,17 @@
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Перед созданием инстанса
+## {heading(Перед созданием инстанса)[id=terraform-mlflow-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания инстанса. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
-1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.6.0 или выше. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
+1. Убедитесь, что в файле `vkcs_provider.tf` указана версия провайдера 0.6.0 или выше. Если версия провайдера ниже, {linkto(../../../quick-start#terraform-quick-start-update)[text=обновите провайдер]}.
 
-## 1. Создайте файл с описанием инстанса MLflow
+## {heading({counter(tf-mlflow)}. Создайте файл с описанием инстанса MLflow)[id=terraform-mlflow-instance-file]}
 
 В примере ниже инстанс создается в следующей конфигурации:
 
@@ -61,7 +63,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Примеры)}
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
 
   {/cut}
 
@@ -70,11 +72,11 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Примеры)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: будет создан новый инстанс JupyterHub, идентификатор инстанса будет получен после создания ресурса `vkcs_mlplatform_jupyterhub`. Ресурс будет сформирован далее.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете VK Cloud](https://cloud.vk.com/app).
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете {var(cloud)}](https://cloud.vk.com/app).
 
   {/cut}
 
-- `demo_mode` — демо-режим. Если `true`, все данные будут храниться на ВМ инстанса. Если `false`, для хранения данных будет подключен бакет VK Object Storage с базой данных DBaaS Postgres.
+- `demo_mode` — демо-режим. Если `true`, все данные будут храниться на ВМ инстанса. Если `false`, для хранения данных будет подключен бакет {var(s3)} с базой данных DBaaS Postgres.
 
 - `network_id` — идентификатор сети, в которой будет размещен инстанс. Инстанс может быть размещен в существующей сети или в новой. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
@@ -82,11 +84,11 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/instructions/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=списка сетей]} в личном кабинете {var(cloud)} или через Openstack CLI.
 
   {/cut}
 
-## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
+## {heading({counter(tf-mlflow)}. (Опционально) Создайте файл с описанием источника данных для типа ВМ)[id=terraform-mlflow-vm-file]}
 
 Создайте файл конфигурации Terraform `flavor.tf` c описанием нужного типа ВМ:
 
@@ -98,11 +100,11 @@ data "vkcs_compute_flavor" "basic" {
 
 Указанный в файле тип ВМ будет использоваться для создания инстанса MLflow в вашем проекте Terraform.
 
-## 3. (Опционально) Создайте файл с описанием связанного инстанса JupyterHub
+## {heading({counter(tf-mlflow)}. (Опционально) Создайте файл с описанием связанного инстанса JupyterHub)[id=terraform-mlflow-jupyterhub-file]}
 
-Создайте файл конфигурации Terraform `jh_instance.tf` c [описанием инстанса JupyterHub](../jupyterhub).
+Создайте файл конфигурации Terraform `jh_instance.tf` c {linkto(../jupyterhub#terraform-jupyterhub)[text=описанием инстанса JupyterHub]}.
 
-## 4. (Опционально) Создайте файл с описанием сетевой инфраструктуры для инстанса
+## {heading({counter(tf-mlflow)}. (Опционально) Создайте файл с описанием сетевой инфраструктуры для инстанса)[id=terraform-mlflow-net-file]}
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для инстанса:
 
@@ -159,7 +161,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 5. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-mlflow)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-mlflow-create]}
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -186,14 +188,14 @@ resource "vkcs_networking_router_interface" "app" {
 
 1. Дождитесь завершения операции.
 
-## 6. Проверьте применение конфигурации
+## {heading({counter(tf-mlflow)}. Проверьте применение конфигурации)[id=terraform-mlflow-check]}
 
 Убедитесь, что инстанс MLflow был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс MLflow создан и активен.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-mlflow-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

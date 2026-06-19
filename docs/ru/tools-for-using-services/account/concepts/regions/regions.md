@@ -1,13 +1,13 @@
-Регион — географическая область, объединяющая [зоны доступности](/ru/start/concepts/architecture#az).
+# {heading(Регионы)[id=tools-account-concepts-regions]}
 
-Регион назначается каждому [проекту](../projects) автоматически и зависит от URL сайта, на котором владелец проекта [зарегистрировал](/ru/intro/onboarding/account) свой аккаунт.
+Регион — географическая область, объединяющая {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоны доступности]}.
+
+Регион назначается каждому {linkto(../projects#tools-account-concepts-projects)[text=проекту]} автоматически и зависит от URL сайта, на котором владелец проекта {linkto(../../../../intro/onboarding/account#onboarding-account)[text=зарегистрировал]} свой аккаунт.
 
 Создавать объекты (например, виртуальные машины) можно только в зоне доступности региона, в котором был создан проект.
 
 {note:warn}
-
 Все регионы имеют единую базу пользователей. Невозможно зарегистрировать учетные записи с одной и той же почтой в разных регионах.
-
 {/note}
 
 Доступны следующие регионы:
@@ -44,12 +44,10 @@ https://kz.cloud.vk.com
 У проектов, созданных в разных регионах, различаются:
 
 - набор доступных сервисов;
-- набор [квот](../quotasandlimits);
-- адреса [эндпоинтов VK Cloud API](/ru/tools-for-using-services/api/rest-api);
-- имя региона в файлах конфигурации [openrc](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/tools-for-using-services/terraform/quick-start).
+- набор {linkto(../quotasandlimits#tools-account-concepts-quotasandlimits)[text=квот]};
+- адреса {linkto(../../../api/rest-api/endpoints#rest-api-endpoints)[text=эндпоинтов {var(cloud)} API]};
+- имя региона в файлах конфигурации {linkto(../../../cli/openstack-cli#openstack-authorize)[text=openrc]} и {linkto(../../../terraform/quick-start#terraform-quick-start)[text=Terraform]}.
 
 {note:warn}
-
-Объединить виртуальные сети проектов из разных регионов стандартными способами невозможно. Сетевую связность между такими проектами можно настроить при помощи [VPN-туннеля](/ru/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel).
-
+Объединить виртуальные сети проектов из разных регионов стандартными способами невозможно. Сетевую связность между такими проектами можно настроить при помощи {linkto(../../../../networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel#vnet-vpn-tunnel)[text=VPN-туннеля]}.
 {/note}

@@ -5,6 +5,12 @@
   "sectionTitle": "Cloud Airflow",
   "icon": "",
   "isBeta": true,
-  "weight": 5,
-  "uuid": "42c30ac2-68c5-4cee-bc1f-d6d1e35a5c8b"
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

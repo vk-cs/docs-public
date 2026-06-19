@@ -4,5 +4,15 @@
   "metaDescription": "Қажетті ВМ-ні атауы немесе қасиеттері бойынша қалай табуға болады",
   "sectionTitle": "ВМ іздеу және сүзгілеу",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,8 +1,10 @@
+# {heading(Серверді басқару)[id=bare-metal-manage-server]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Сервер туралы ақпарат алу)[id=get-info]}
+## {heading(Сервер туралы ақпарат алу)[id=bare-metal-server-get-info]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 1. **Бұлтты есептеулер → Bare Metal** бөліміне өтіңіз.
 1. Bare Metal серверлері тізімінде қажетті сервердің атауын басыңыз.
 1. Қажетті ақпараты бар қойындыны таңдаңыз:

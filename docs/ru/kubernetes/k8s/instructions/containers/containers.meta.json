@@ -1,0 +1,17 @@
+{
+  "title": "Типовые операции с контейнерами",
+  "shortDescription": "",
+  "metaDescription": "Типовые операции с контейнерами в Kubernetes. Узнайте, как управлять контейнерами кластера Kubernetes в личном кабинете или с помощью Terraform",
+  "sectionTitle": "Типовые операции с контейнерами",
+  "icon": "",
+  "weight": 12,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

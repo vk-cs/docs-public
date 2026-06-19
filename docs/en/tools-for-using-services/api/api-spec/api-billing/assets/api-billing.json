@@ -1,0 +1,146 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Billing service API",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Balance",
+      "description": "Operations with the project balance"
+    }
+  ],
+  "paths": {
+    "/public/v1/projects/{pid}/balances/amount": {
+      "get": {
+        "tags": [
+          "Balance",
+        ],
+        "summary": "Get the balance amount of a project",
+        "description": "Returns information about the balance of all active VK Cloud project accounts by its <a href='https://cloud.vk.com/docs/en/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#getting_project_id'>PID</a>.",
+        "operationId": "get_public_v1_projects_pid_balances_amount",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID. It is specified in the endpoint.",
+            "required": true,
+            "schema": {
+              "title": "Pid",
+              "type": "string"
+            }
+          },
+        ],
+        "responses": {
+          "200": {
+            "description": "Request completed successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBalanceAmountResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Project not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleErrorSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "publicAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TotalBalanceAmountResponse": {
+        "title": "TotalBalanceAmountResponse",
+        "description": "Information about the balance of accounts for the project",
+        "type": "object",
+        "required": [
+          "base",
+          "bonus"
+        ],
+        "properties": {
+          "base": {
+            "title": "Payment account",
+            "description": "Payment account balance",
+            "type": "number"
+          },
+          "bonus": {
+            "title": "Bonus account",
+            "description": "Bonus account balance",
+            "type": "number"
+          }
+        }
+      },
+      "SingleErrorSchema": {
+        "title": "SingleErrorSchema",
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "title": "Error",
+            "description": "Error text",
+            "type": "string"
+          }
+        }
+      },
+      "HTTPValidationError": {
+        "title": "ValidationError",
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "properties": {
+          "loc": {
+            "title": "Error location",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "msg": {
+            "title": "Error text",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error type",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "publicAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

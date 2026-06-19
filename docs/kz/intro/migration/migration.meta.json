@@ -1,8 +1,15 @@
 {
-  "title": "VK Cloud ішіне көшіру",
-  "shortDescription": "Виртуалды машина образын немесе тұтас инфрақұрылымды VK Cloud бұлтына қалай көшіруге болады",
+  "title": "{var(cloud)} ішіне көшіру",
+  "shortDescription": "Виртуалды машина образын {var(cloud)} бұлтына қалай көшіруге болады",
   "metaDescription": "Виртуалды машина образын немесе тұтас инфрақұрылымды VK Cloud бұлтына қалай көшіруге болады",
   "sectionTitle": "Көшіру",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

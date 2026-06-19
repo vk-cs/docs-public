@@ -1,24 +1,26 @@
+# {heading(Қолмен резервтік көшіру)[id=k8s-velero-backup]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Velero](https://velero.io/docs/main/) құралын кластер деректерінің резервтік көшірмелерін қолмен жасау және оларды қалпына келтіру үшін пайдаланыңыз.
 
 {note:info}
-Резервтік көшіру үшін Velero пайдалану тек [бірінші буын](/kz/kubernetes/k8s/concepts/cluster-generations) кластерлерінде ғана қолдау көрсетіледі.
+Резервтік көшіру үшін Velero пайдалану тек {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде ғана қолдау көрсетіледі.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-velero-backup-prepare]}
 
-1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster) Kubernetes кластерінің өзекті нұсқасын, егер бұл әлі жасалмаса.
+{include(/kz/_includes/_create-test-cluster.md)}
 
    `ME1` қолжетімділік аймағында бір немесе бірнеше worker-түйіндер тобын орналастырыңыз. Кластердің қалған параметрлерін өз қалауыңыз бойынша таңдаңыз.
 
-1. [Көз жеткізіңіз](/kz/kubernetes/k8s/connect/kubectl), `kubectl` көмегімен кластерге қосыла алатыныңызғал.
-1. [Орнатып, баптаңыз](/kz/kubernetes/k8s/install-tools/velero) Velero, егер бұл әлі жасалмаса.
-1. [Орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) OpenStack CLI, егер бұл әлі жасалмаса. Оның көмегімен бұлтта авторизациялана алатыныңызғал көз жеткізіңіз.
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Көз жеткізіңіз]}, `kubectl` көмегімен кластерге қосыла алатыныңызға.
+1. {linkto(../../../install-tools/velero#k8s-velero)[text=Орнатып, баптаңыз]} Velero, егер бұл әлі жасалмаса.
+1. {linkto(/kz/tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=Орнатыңыз]} OpenStack CLI, егер бұл әлі жасалмаса. Оның көмегімен бұлтта авторизациялана алатыныңызға көз жеткізіңіз.
 
-## 1. Қосымшаны жасаңыз
+## {heading(1. Қосымшаны жасаңыз)[id=k8s-velero-backup-create-app]}
 
-Резервтік көшірмені жасау және одан қалпына келтірумен танысу үшін `coffee` демо-қосымшасын жасаңыз. Бұл қосымшағал тұрақты том (persistent volume) қосылады.
+Резервтік көшірмені жасау және одан қалпына келтірумен танысу үшін `coffee` демо-қосымшасын жасаңыз. Бұл қосымшаға тұрақты том (persistent volume) қосылады.
 
 1. Манифест файлын жасаңыз:
 
@@ -145,7 +147,7 @@
           ...
       ```
 
-   1. Осындай ID-і бар диск туралы толық алқпаратты OpenStack CLI пайдаланып алыңыз:
+   1. Осындай ID-і бар диск туралы толық ақпаратты OpenStack CLI пайдаланып алыңыз:
 
       ```console
       openstack volume show <ID_ДИСКА> --fit-width
@@ -161,7 +163,7 @@
 
    `EXTERNAL-IP` бағанында теңгергішке тағайындалған жария IP-мекенжай пайда болуы керек.
 
-1. NGINX сұрауларғал жауап беретініне көз жеткізіңіз:
+1. NGINX сұрауларға жауап беретініне көз жеткізіңіз:
 
    ```console
    curl <ПУБЛИЧНЫЙ_IP_АДРЕС_БАЛАНСИРОВЩИКА>
@@ -173,7 +175,7 @@
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-## 2. Қосымшаның резервтік көшірмесін жасаңыз
+## {heading(2. Қосымшаның резервтік көшірмесін жасаңыз)[id=k8s-velero-backup-create]}
 
 1. Қосымшаның жұмысына қажетті ресурстар орналасқан `example-app` аттар кеңістігінің толық қолмен резервтік көшірмесін жасаңыз:
 
@@ -181,7 +183,7 @@
    velero backup create coffee-backup --include-namespaces example-app
    ```
 
-1. Резервтік көшірме туралы егжей-тегжейлі алқпаратты жүктеңіз:
+1. Резервтік көшірме туралы егжей-тегжейлі ақпаратты жүктеңіз:
 
    ```console
    velero backup describe coffee-backup
@@ -198,9 +200,9 @@
    ```console
    velero backup logs coffee-backup
    ```
-1. (Опционалды) [Баптаңыз](/kz/kubernetes/k8s/how-to-guides/velero/backup-schedule) резервтік көшірмелерді автоматты түрде жасау кестесін.
+1. (Опционалды) {linkto(../../../how-to-guides/velero/backup-schedule#k8s-backup-schedule)[text=Баптаңыз]} резервтік көшірмелерді автоматты түрде жасау кестесін.
 
-## 3. Қосымшаны резервтік көшірмеден қалпына келтіріңіз
+## {heading(3. Қосымшаны резервтік көшірмеден қалпына келтіріңіз)[id=k8s-velero-backup-restore]}
 
 1. Қосымшаның істен шығуын имитациялаңыз. Ол үшін қосымшаның жұмысына қажетті ресурстар орналасқан `example-app` аттар кеңістігін жойыңыз:
 
@@ -214,10 +216,10 @@
    velero restore create --from-backup coffee-backup
    ```
 
-   Команда деректерді резервтік көшіру орындалған сол кластерге қалпына келтіреді. Егер деректерді жаңал кластерге қалпына келтіру қажет болса:
+   Команда деректерді резервтік көшіру орындалған сол кластерге қалпына келтіреді. Егер деректерді жаңа кластерге қалпына келтіру қажет болса:
 
-   1. [Жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster) кластер.
-   1. [Орнатыңыз](/kz/kubernetes/k8s/install-tools/velero) Velero-ны кластерге.
+   1. {linkto(../../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Жасаңыз]} кластер.
+   1. {linkto(../../../install-tools/velero#k8s-velero)[text=Орнатыңыз Velero]} кластерге.
    1. Жоғарыда келтірілген команданы орындаңыз.
 
 1. Жүктеме теңгергішіне жария IP-мекенжай тағайындалғанша күтіңіз.
@@ -230,7 +232,7 @@
 
    `EXTERNAL-IP` бағанында теңгергішке тағайындалған жария IP-мекенжай пайда болуы керек.
 
-1. NGINX сұрауларғал жауап беретініне көз жеткізіңіз:
+1. NGINX сұрауларға жауап беретініне көз жеткізіңіз:
 
    ```console
    curl <ПУБЛИЧНЫЙ_IP_АДРЕС_БАЛАНСИРОВЩИКА>
@@ -242,11 +244,11 @@
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-velero-backup-delete]}
 
 Жұмыс істеп тұрған кластер тарифтеледі және есептеу ресурстарын тұтынады. Егер Velero құралы мен оның көмегімен резервтік көшіруді тексеру үшін жасалған Kubernetes ресурстары енді қажет болмаса, оларды жойыңыз:
 
-1. Жасалған `example-app` аттар кеңістігін және онымен байланысты ресурстарды, сондай-алқ жасалған резервтік көшірмені жойыңыз:
+1. Жасалған `example-app` аттар кеңістігін және онымен байланысты ресурстарды, сондай-ақ жасалған резервтік көшірмені жойыңыз:
 
    {tabs}
 
@@ -277,8 +279,10 @@
    velero uninstall
    ```
 
-1. [Жойыңыз](/kz/storage/s3/instructions/objects/manage-object#zhoyu_obektilerdin) Velero пайдаланған бакеттен резервтік көшірмелерді.
+1. {linkto(/kz/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=Жойыңыз]} Velero пайдаланған бакеттен резервтік көшірмелерді.
 
-   Қажет болса, сондай-алқ [бакеттің өзін де жойыңыз](/kz/storage/s3/instructions/buckets/manage-bucket#bucket_delete).
+   Қажет болса, сондай-ақ {linkto(/kz/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=бакеттің өзін де жойыңыз]}.
 
-1. [Тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu) жасалған кластерді, кейінірек пайдалану үшін, немесе [жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster) оны біржола.
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

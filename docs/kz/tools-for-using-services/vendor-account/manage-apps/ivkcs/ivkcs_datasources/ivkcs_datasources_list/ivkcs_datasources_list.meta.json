@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Деректер көздерінің тізімі",
   "sectionTitle": "Деректер көздерінің тізімі",
-  "weight": 1
+    "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

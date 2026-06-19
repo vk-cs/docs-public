@@ -5,5 +5,12 @@
   "sectionTitle": "Spark на платформе VK Data Platform",
   "icon": "",
   "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
   "uuid": "eeff3f8f-5a5b-4a4b-8bb3-63fd8844263a"
 }

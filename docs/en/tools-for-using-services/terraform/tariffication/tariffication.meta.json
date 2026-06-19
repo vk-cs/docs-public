@@ -1,9 +1,14 @@
 {
-    "title": "Billing",
-      "shortDescription": "The cost of the service and features of its billing",
-      "metaDescription": "",
-    "sectionTitle": "Billing",
-    "icon": "",
-    "weight": 2,
-    "uuid": "17ed1e7e-b603-4017-a78b-5f71577f8dee"
+  "title": "Billing",
+  "shortDescription": "The cost of the service and features of its billing",
+  "metaDescription": "",
+  "sectionTitle": "Billing",
+  "icon": "",
+  "weight": 2,
+  "uuid": "17ed1e7e-b603-4017-a78b-5f71577f8dee",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

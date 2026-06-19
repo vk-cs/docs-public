@@ -1,0 +1,14 @@
+{
+  "title": "Концепции",
+  "shortDescription": "Основные понятия и характеристики сервиса OpenSearch",
+  "metaDescription": "Узнайте об основных понятиях и характеристиках сервиса OpenSearch в VK Data Platform",
+  "sectionTitle": "Концепции",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

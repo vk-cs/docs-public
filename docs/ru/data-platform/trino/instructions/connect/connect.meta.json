@@ -1,0 +1,15 @@
+{
+  "title": "Подключение к экземпляру сервиса",
+  "shortDescription": "Как подключиться по TLS к экземпляру сервиса",
+  "metaDescription": "Узнайте, как подключиться по TLS к развернутому экземпляру сервиса Cloud Trino с помощью веб-интерфейса или клиента в VK Data Platform",
+  "sectionTitle": "Подключение к экземпляру сервиса",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

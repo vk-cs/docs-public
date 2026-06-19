@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Портты ауыстырғаннан кейін ВМ ішіндегі операциялық жүйе жаңа желілік интерфейсті көрмейді.
+Портты ауыстырғаннан кейін ВМ ішіндегі операциялық жүйе жаңа желілік интерфейсті көрмейді. 
 
 ### Шешім
 
@@ -9,4 +9,4 @@
    dhclient -v
    ```
 
-1. [Виртуалды машинаны қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) виртуалды машинаны.
+1. [Виртуалды машинаны қайта жүктеңіз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart).

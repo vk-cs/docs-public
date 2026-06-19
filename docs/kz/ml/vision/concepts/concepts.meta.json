@@ -4,5 +4,10 @@
   "metaDescription": "Vision VK Cloud тұжырымдамалары: сервис жұмысының қағидаттары мен құрылымы",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

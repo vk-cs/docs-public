@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud жобасындағы Data Lakehouse сервисімен жұмысты қалай бастауға болады",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

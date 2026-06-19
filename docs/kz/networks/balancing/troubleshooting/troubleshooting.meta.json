@@ -4,5 +4,12 @@
   "metaDescription": "Load Balancing VK Cloud жүктеме теңгерімдеушілері сервисі. Жүктеме теңгерімдеушілерімен байланысты мәселелерді диагностикалау және жою тәсілдері",
   "sectionTitle": "Ақауларды жою",
   "icon": "",
-  "weight": 51
+  "weight": 51,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg"
+    ]
+  }
 }

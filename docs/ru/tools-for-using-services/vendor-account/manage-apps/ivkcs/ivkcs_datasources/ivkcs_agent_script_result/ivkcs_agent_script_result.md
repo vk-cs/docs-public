@@ -15,28 +15,28 @@
 |
 Идентификатор развертывания сервиса
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `host`
 |
 Имя хоста, где был выполнен скрипт. Соответствует имени, указанному в аргументе `hosts` ресурса `ivkcs_agent_exec`
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `group`
 |
 Имя группы скриптов. Соответствует значению аргумента `name` ресурса `ivkcs_agent_exec`
 |string
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `index`
 |
 Индекс скрипта. Соответствует значению аргумента `step.index` ресурса `ivkcs_agent_exec`
 |integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 

@@ -1,9 +1,23 @@
 {
-    "title": "Local DNS cache configuration",
-      "shortDescription": "How to configure a local DNS cache on each cluster node to improve the speed and stability of DNS queries processing",
-      "metaDescription": "",
-    "sectionTitle": "Local DNS cache configuration",
-    "icon": "",
-    "weight": 2,
-    "uuid": "d79731dc-c029-4c6a-8137-b3ab9d10c99f"
+  "title": "Local DNS cache configuration",
+  "shortDescription": "How to configure a local DNS cache on each cluster node to improve the speed and stability of DNS queries processing",
+  "metaDescription": "",
+  "sectionTitle": "Local DNS cache configuration",
+  "icon": "",
+  "weight": 2,
+  "uuid": "d79731dc-c029-4c6a-8137-b3ab9d10c99f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

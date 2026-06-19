@@ -1,9 +1,14 @@
 {
-  "title": "VK Object Storage",
-  "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса VK Object Storage",
+  "title": "{var(s3)}",
+  "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса {var(s3)}",
   "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления бакетами и объектами сервиса VK Object Storage",
-  "sectionTitle": "VK Object Storage",
+  "sectionTitle": "{var(s3)}",
   "icon": "",
   "weight": 40,
-  "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1"
+  "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

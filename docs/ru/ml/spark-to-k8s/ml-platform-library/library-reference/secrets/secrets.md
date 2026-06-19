@@ -1,12 +1,14 @@
+# {heading(Работа с секретами)[id=mlspark-library-reference-secrets]}
+
 Эти методы позволяют работать с секретами кластера Cloud Containers, который обеспечивает работу кластера Cloud Spark. [Секреты Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/) позволяют организовать безопасное хранение и использование чувствительных данных, которые могут понадобиться во время выполнения задания Spark.
 
-## create_secret_from_yaml
+## {heading(create_secret_from_yaml)[id=mlspark-library-reference-secrets-create_secret_from_yaml]}
 
 Создать секрет в указанном пространстве имен на основе предоставленного манифеста. Манифест должен быть в формате YAML.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-secrets-create_secret_from_yaml-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -18,7 +20,7 @@
 
 (обязательный)
 |`str`
-|Идентификатор кластера Cloud Spark, в котором нужно создать секрет. Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+|Идентификатор кластера Cloud Spark, в котором нужно создать секрет. Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`secret_yaml_path`
 
@@ -35,7 +37,7 @@
 Если опустить этот аргумент при вызове метода, то будет использовано значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-secrets-create_secret_from_yaml-result]}
 
 Объект класса `K8sSecret` с информацией о созданном секрете.
 
@@ -62,7 +64,7 @@
 |Данные секрета в виде пар `ключ: значение`. Для безопасности данные не выводятся в открытом виде
 |===
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-secrets-create_secret_from_yaml-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -81,12 +83,12 @@ create_secret_from_yaml(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -105,15 +107,15 @@ create_secret_from_yaml(cluster_id: str,
 
 {/cut}
 
-## list_secrets
+## {heading(list_secrets)[id=mlspark-library-reference-secrets-list_secrets]}
 
 Получить список имен секретов в указанном пространстве имен.
 
-Чтобы получить детальную информацию об отдельном секрете из списка, используйте метод [get_secret_detail](#get_secret_detail).
+Чтобы получить детальную информацию об отдельном секрете из списка, используйте метод [get_secret_detail](#mlspark-library-reference-secrets-get_secret_detail).
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-secrets-list_secrets-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -127,7 +129,7 @@ create_secret_from_yaml(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark, для которого нужно получить список секретов.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`namespace`
 
@@ -138,11 +140,11 @@ create_secret_from_yaml(cluster_id: str,
 Если опустить этот аргумент при вызове метода, то будет использовано значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-secrets-list_secrets-result]}
 
 Объект класса `K8sObjectNamesList`, который содержит в себе список имен секретов.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-secrets-list_secrets-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -161,12 +163,12 @@ list_secrets(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -186,13 +188,13 @@ list_secrets(cluster_id: str,
 
 {/cut}
 
-## get_secret_detail
+## {heading(get_secret_detail)[id=mlspark-library-reference-secrets-get_secret_detail]}
 
 Получить подробную информацию о [секрете Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/) по его имени.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-secrets-get_secret_detail-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -206,7 +208,7 @@ list_secrets(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark, для которого нужно получить информацию о секрете.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`secret_name`
 
@@ -214,7 +216,7 @@ list_secrets(cluster_id: str,
 |`str`
 |Имя секрета, информацию о котором нужно получить.
 
-Список имен секретов можно получить с помощью метода [list_secrets](#list_secrets)
+Список имен секретов можно получить с помощью метода [list_secrets](#mlspark-library-reference-secrets-list_secrets)
 
 |`namespace`
 
@@ -225,7 +227,7 @@ list_secrets(cluster_id: str,
 Если опустить этот аргумент при вызове метода, то будет использовано значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-secrets-get_secret_detail-result]}
 
 Объект класса `K8sSecret` с информацией о секрете.
 
@@ -254,7 +256,7 @@ list_secrets(cluster_id: str,
 Для безопасности данные не выводятся в открытом виде
 |===
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-secrets-get_secret_detail-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -274,12 +276,12 @@ get_secret_detail(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -300,13 +302,13 @@ get_secret_detail(cluster_id: str,
 
 {/cut}
 
-## delete_secret
+## {heading(delete_secret)[id=mlspark-library-reference-secrets-delete_secret]}
 
 Удалить секрет по его имени.
 
-Необходимая роль токена: `Администратор`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-secrets-delete_secret-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -320,7 +322,7 @@ get_secret_detail(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark, для которого нужно получить информацию о секрете.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`secret_name`
 
@@ -328,7 +330,7 @@ get_secret_detail(cluster_id: str,
 |`str`
 |Имя секрета, который нужно удалить.
 
-Список имен секретов можно получить с помощью метода [list_secrets](#list_secrets)
+Список имен секретов можно получить с помощью метода [list_secrets](#mlspark-library-reference-secrets-list_secrets)
 
 |`namespace`
 
@@ -339,11 +341,11 @@ get_secret_detail(cluster_id: str,
 Если опустить этот аргумент при вызове метода, то будет использовано значение по умолчанию: `default`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-secrets-delete_secret-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-secrets-delete_secret-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -362,12 +364,12 @@ delete_secret(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -382,6 +384,6 @@ delete_secret(cluster_id: str,
         namespace='default')
    ```
 
-   Секрет будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_secrets](#list_secrets).
+   Секрет будет удален из кластера Cloud Spark. Это можно проверить с помощью метода [list_secrets](#mlspark-library-reference-secrets-list_secrets).
 
 {/cut}

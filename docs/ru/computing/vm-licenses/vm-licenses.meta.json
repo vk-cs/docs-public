@@ -5,5 +5,10 @@
   "sectionTitle": "Лицензии ВМ",
   "icon": "",
   "weight": 5,
-  "uuid": "e5ee7411-457f-479f-828c-b99058a96b72"
+  "uuid": "e5ee7411-457f-479f-828c-b99058a96b72",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

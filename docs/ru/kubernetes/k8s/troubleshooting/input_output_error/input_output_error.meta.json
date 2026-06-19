@@ -5,5 +5,10 @@
   "sectionTitle": "Ошибка input/output error в системных компонентах кластера",
   "icon": "",
   "weight": 4,
-  "uuid": "8e5c98bf-79d9-4182-8fb8-66de422f1601"
+  "uuid": "8e5c98bf-79d9-4182-8fb8-66de422f1601",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

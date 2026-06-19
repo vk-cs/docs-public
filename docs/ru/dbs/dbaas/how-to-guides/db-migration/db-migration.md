@@ -1,4 +1,6 @@
-VK Cloud поддерживает миграцию из внешних СУБД в сервис Cloud Databases с помощью инструментов дампа [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) и [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html).
+# {heading(Миграция из локальной PostgreSQL)[id=dbaas-db-migration]}
+
+{var(cloud)} поддерживает миграцию из внешних СУБД в сервис Cloud Databases с помощью инструментов дампа [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html) и [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html).
 
 Будет рассмотрена миграция данных из источника:
 
@@ -15,22 +17,20 @@ VK Cloud поддерживает миграцию из внешних СУБД 
     3 | c    |  3
   ```
 
-Приемником станет инстанс БД с [типом конфигурации](../../concepts/work-configs) Single, развернутый в проекте VK Cloud.
+Приемником станет инстанс БД с {linkto(../../concepts/work-configs#dbaas-work-configs)[text=типом конфигурации]} Single, развернутый в проекте {var(cloud)}.
 
 Все действия инструкции необходимо выполнить с локальной машины.
 
 {note:warn}
-
 При миграции у кластера-источника и кластера-приемника должны совпадать:
 
 - версия PostgreSQL;
-- установленные [расширения](../../extensions).
-
+- установленные {linkto(../../extensions#dbaas-extensions)[text=расширения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=dbaas-db-migration-prepare]}
 
-1. [Разверните](../../instructions/create/create-single-replica) в VK Cloud инстанс БД PostgreSQL:
+1. {linkto(../../instructions/create/create-single-replica#dbaas-create-single-replica)[text=Разверните]} в {var(cloud)} инстанс БД PostgreSQL:
 
    - версия СУБД: 13;
    - название инстанса БД: `PostgreSQL-7313`;
@@ -39,10 +39,10 @@ VK Cloud поддерживает миграцию из внешних СУБД 
    - имя пользователя: `user`;
    - пароль пользователя: `AN0r25e0ae4d626p!`.
 
-1. Проверьте, установлены ли [расширения](../../extensions) на локальной БД. Установите тот же набор расширений в развернутом инстансе.
+1. Проверьте, установлены ли {linkto(../../extensions#dbaas-extensions)[text=расширения]} на локальной БД. Установите тот же набор расширений в развернутом инстансе.
 1. Убедитесь, что версия `pg_restore` БД-источника совпадает с версией `pg_dump` БД-приемника.
 
-## 1. Создайте дамп БД-источника
+## {heading(1. Создайте дамп БД-источника)[id=dbaas-db-migration-create-dump]}
 
 1. Подключитесь к БД-источнику под пользователем `postgres`:
 
@@ -73,7 +73,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
    alter database "PostgreSQL-7313" set default_transaction_read_only=off;
    ```
 
-## 2. Восстановите данные из дампа в БД-приемник
+## {heading(2. Восстановите данные из дампа в БД-приемник)[id=dbaas-db-migration-restore]}
 
 1. (Опционально) Убедитесь, что в СУБД-приемнике создана БД `PostgreSQL-7313`:
 
@@ -118,7 +118,7 @@ VK Cloud поддерживает миграцию из внешних СУБД 
 
    {/cut}
 
-## 3. Проверьте загруженные данные в VK Cloud
+## {heading(3. Проверьте загруженные данные в {var(cloud)})[id=dbaas-db-migration-check-data]}
 
 1. Подключитесь к БД `PostgreSQL-7313` в инстансе-приемнике под пользователем `user`:
 
@@ -159,9 +159,9 @@ VK Cloud поддерживает миграцию из внешних СУБД 
    (3 rows)
    ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=dbaas-db-migration-delete-resources]}
 
-Развернутый инстанс БД [тарифицируется](../../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
+Развернутый инстанс БД {linkto(../../tariffication#dbaas-tariffication)[text=тарифицируется]} и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-- [Удалите](../../instructions/manage-instance/postgresql#uvelichenie_razmera_diska_s_dannymi) инстанс БД.
-- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, назначенный инстансу БД.
+- {linkto(../../instructions/manage-instance/postgresql#dbaas-postgresql-disk-delete)[text=Удалите]} инстанс БД.
+- При необходимости [удалите](../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адрес, назначенный инстансу БД.

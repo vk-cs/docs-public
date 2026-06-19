@@ -1,12 +1,22 @@
 {
-    "title": "Миграция ВМ VMware в VK Cloud",
-    "sectionTitle": "Миграция ВМ VMware в VK Cloud",
-        "shortDescription": "Как импортировать образ виртуальной машины VMware в VK Cloud",
-    "metaDescription": "Миграция виртуальной машины VMware в VK Cloud",
-    "icon": "",
-    "weight": 3,
-    "additionalUuids": [
-        "2170d564-d287-465f-a6db-f3047594534d"
-    ],
-    "uuid": "a19bfde3-915d-45fe-a2b6-8fb1089c40a4"
+  "title": "Миграция ВМ VMware в {var(cloud)}",
+  "sectionTitle": "Миграция ВМ VMware в {var(cloud)}",
+  "shortDescription": "Как импортировать образ виртуальной машины VMware в {var(cloud)}",
+  "metaDescription": "Миграция виртуальной машины VMware в VK Cloud",
+  "icon": "",
+  "weight": 3,
+  "additionalUuids": [
+    "2170d564-d287-465f-a6db-f3047594534d"
+  ],
+  "uuid": "a19bfde3-915d-45fe-a2b6-8fb1089c40a4",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

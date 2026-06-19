@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "settings.yaml файлы",
   "sectionTitle": "settings.yaml файлы",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

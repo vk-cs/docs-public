@@ -5,6 +5,9 @@
     "sectionTitle": "Configuring Identity Federation via AD",
     "icon": "",
     "weight": 1,
+    "build": {
+        "for": ["public"]
+    },
     "additionalUuids": [
         "d1c12c61-f441-4d38-b888-e4d615d88963"
     ],

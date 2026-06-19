@@ -1,6 +1,29 @@
-К БД развернутых в VK Cloud инстансов можно подключиться с помощью SDK.
+# {heading(Подключение к БД)[id=dbaas-connect]}
 
-## PostgreSQL
+К БД развернутых в {var(cloud)} инстансов можно подключиться с помощью SDK.
+
+{ifndef(public)}
+Чтобы получить информацию для подключения:
+
+1. {linkto(../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
+1. В списке инстансов БД откройте настройки нужной БД, нажав на ее имя:
+
+   * На вкладке **Информация** приведен внутренний и внешний IP-адрес.
+   * На вкладке **Пользователи** приведено название БД и имя ее пользователя.
+
+{note:info}
+Пароль пользователя БД задается при {linkto(../instructions/create#dbaas-create)[text=создании БД]}. Возможность восстановления пароля не предусмотрена.
+{/note}
+{/ifndef}
+
+{ifndef(private-pg, private-pg-pdf)}
+## {heading(PostgreSQL)[id=dbaas-connect-postgresql]}
+{/ifndef}
+
+{ifdef(private-pg, private-pg-pdf)}
+## {heading(PostgreSQL, Postgres Pro Standard, Postgres Pro Enterprise)[id=dbaas-connect-postgresql]}
+{/ifdef}
 
 {tabs}
 
@@ -10,17 +33,35 @@
 1. [Установите](https://www.php.net/manual/ru/book.pgsql.php) библиотеку `php-pgsql`.
 1. Подключитесь к базе данных с помощью функции `pg_connect()`:
 
+   {ifdef(public)}
    ```php
-   $conn = pg_connect("host=<IP-АДРЕС> dbname=<БД> user=<ИМЯ_ПОЛЬЗОВАТЕЛЯ> password=<ПАРОЛЬ> sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>");
+   $conn = pg_connect("host=<IP-АДРЕС> dbname=<БД> user=<ПОЛЬЗОВАТЕЛЬ> password=<ПАРОЛЬ> sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>");
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```php
+   $conn = pg_connect("host=<IP-АДРЕС> dbname=<БД> user=<ПОЛЬЗОВАТЕЛЬ> password=<ПАРОЛЬ>");
+   ```
+   {/ifndef}
 
    Здесь:
+   
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef}
 
 Подробнее о подключении к PostgreSQL в PHP читайте в [документации](https://www.php.net/manual/ru/book.pgsql.php).
 
@@ -32,19 +73,39 @@
 1. [Установите](https://www.psycopg.org/docs/install.html#quick-install) модуль `psycopg`.
 1. Подключитесь к базе данных с помощью функции `connect()`:
 
+   {ifdef(public)}
    ```python
    import psycopg2
 
-   conn = psycopg2.connect("host=<IP-АДРЕС> dbname=<БД> user=<ИМЯ_ПОЛЬЗОВАТЕЛЯ> password=<ПАРОЛЬ> sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>")
+   conn = psycopg2.connect("host=<IP-АДРЕС> dbname=<БД> user=<ПОЛЬЗОВАТЕЛЬ> password=<ПАРОЛЬ> sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>")
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```python
+   import psycopg2
+
+   conn = psycopg2.connect("host=<IP-АДРЕС> dbname=<БД> user=<ПОЛЬЗОВАТЕЛЬ> password=<ПАРОЛЬ>")
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
    - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef}
 
 {/tab}
 
@@ -54,19 +115,39 @@
 1. [Установите](https://www.rubydoc.info/gems/pg#how-to-install) библиотеку `pg`.
 1. Подключитесь к БД с помощью функции `PGconn.connect()`:
 
+   {ifdef(public)}
    ```ruby
    require "pg"
 
-   conn = PGconn.connect(:host => '<IP-АДРЕС>', :dbname => '<БД>', :user='<ИМЯ_ПОЛЬЗОВАТЕЛЯ>', :password => '<ПАРОЛЬ>', :sslmode => '<РЕЖИМ_ПОДКЛЮЧЕНИЯ>')
+   conn = PGconn.connect(:host => '<IP-АДРЕС>', :dbname => '<БД>', :user='<ПОЛЬЗОВАТЕЛЬ>', :password => '<ПАРОЛЬ>', :sslmode => '<РЕЖИМ_ПОДКЛЮЧЕНИЯ>')
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```ruby
+   require "postgres"
+
+   conn = PGconn.connect(:host => '<IP-АДРЕС>', :dbname => '<БД>', :user='<ПОЛЬЗОВАТЕЛЬ>', :password => '<ПАРОЛЬ>')
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef}
 
 {/tab}
 
@@ -76,19 +157,37 @@
 1. [Установите](http://jdbc.postgresql.org/download/) JDBC-драйвер для PostgreSQL.
 1. Подключитесь к базе данных с помощью функции `DriverManager.getConnection()`:
 
+   {ifdef(public)}
    ```java
    import java.sql.*;
 
-   Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>`", "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>", "<ПАРОЛЬ>");
+   Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>`", "<ПОЛЬЗОВАТЕЛЬ>", "<ПАРОЛЬ>");
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```java
+   Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-АДРЕС>/<БД>", "<ПОЛЬЗОВАТЕЛЬ>", "<ПАРОЛЬ>");
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   * `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef}
 
 {/tab}
 
@@ -98,18 +197,37 @@
 1. [Установите](https://node-postgres.com/) модули `node-postgres`.
 1. Подключитесь к базе данных с помощью функции `pg.Client()`:
 
+   {ifdef(public)}
    ```javascript
    var pg = require('pg');
-   var conn = new pg.Client("postgres://<ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>");
+   var conn = new pg.Client("postgres://<ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>");
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```js
+   var pg = require('pg');
+   var conn = new pg.Client("postgres://<ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>/<БД>");
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef}
 
 {/tab}
 
@@ -118,26 +236,60 @@
 1. [Установите](https://www.postgresql.org/ftp/odbc/versions/) драйвер ODBC.
 1. Подключитесь к базе данных:
 
+   {ifdef(public)}
    ```console
-   Driver={PostgreSQL UNICODE}; Server="<IP-АДРЕС>"; Port=5432; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>"; Sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>;
+   Driver={PostgreSQL UNICODE}; Server="<IP-АДРЕС>"; Port=5432; Database="<БД>"; Uid="<ПОЛЬЗОВАТЕЛЬ>"; Pwd="<ПАРОЛЬ>"; Sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>;
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```console
+   Driver={PostgreSQL UNICODE}; Server="<IP-АДРЕС>"; Port=5432; Database="<БД>"; Uid="<ПОЛЬЗОВАТЕЛЬ>"; Pwd="<ПАРОЛЬ>";
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
-   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` - параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье [Использование TLS-протокола для подключения к PostgreSQL](/ru/dbs/dbaas/how-to-guides/tls-connect). 
+
+   {ifdef(public)}
+   - `<РЕЖИМ_ПОДКЛЮЧЕНИЯ>` — параметр, определяющий режим подключения к БД. Для подключения с шифрованием трафика укажите значение `require`, для подключения без шифрования — `disable`. Подробнее в статье {linkto(../how-to-guides/tls-connect#dbaas-tls-connect)[text=Использование TLS-протокола для подключения к PostgreSQL]}.
+   {/ifdef} 
 
 {/tab}
 
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+psql -h <IP-АДРЕС> -p 5432 -d <БД> -U <ПОЛЬЗОВАТЕЛЬ> -W
+```
+
+Здесь:
+
+* `<IP-АДРЕС>` — внутренний IP-адрес.
+* `<БД>` — название БД.
+* `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
+
+{/tab}
+{/ifndef}
+
 {/tabs}
 
-## MySQL
+{ifdef(public)}
+## {heading(MySQL)[id=dbaas-connect-mysql]}
 
 {tabs}
-
 
 {tab(PHP)}
 
@@ -148,15 +300,15 @@
    ```php
    $conn = mysqli_init();
 
-   mysqli_real_connect($conn, "<IP-АДРЕС>", "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>", "<ПАРОЛЬ>", "<БД>", "<ПОРТ>");
+   mysqli_real_connect($conn, "<IP-АДРЕС>", "<ПОЛЬЗОВАТЕЛЬ>", "<ПАРОЛЬ>", "<БД>", "<ПОРТ>");
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 Подробнее о подключении к MySQL в PHP читайте в [документации](https://www.php.net/manual/ru/set.mysqlinfo.php).
@@ -172,15 +324,15 @@
    ```python
    import mysql.connector
 
-   conn = mysql.connector.connect(user="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>", password="<ПАРОЛЬ>", host="<IP-АДРЕС>", port=<ПОРТ>, database="<БД>")
+   conn = mysql.connector.connect(user="<ПОЛЬЗОВАТЕЛЬ>", password="<ПАРОЛЬ>", host="<IP-АДРЕС>", port=<ПОРТ>, database="<БД>")
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -194,15 +346,15 @@
    ```ruby
    require "mysql2"
 
-   conn = Mysql2::Client.new(username: "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>", password: "<ПАРОЛЬ>", database: "<БД>", host: "<IP-АДРЕС>", port: <ПОРТ>)
+   conn = Mysql2::Client.new(username: "<ПОЛЬЗОВАТЕЛЬ>", password: "<ПАРОЛЬ>", database: "<БД>", host: "<IP-АДРЕС>", port: <ПОРТ>)
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -216,15 +368,15 @@
    ```java
    import java.sql.*;
 
-   DriverManager.getConnection("jdbc:mysql://<IP-АДРЕС>:<ПОРТ>/<БД>", <ИМЯ_ПОЛЬЗОВАТЕЛЯ>, <ПАРОЛЬ>);
+   DriverManager.getConnection("jdbc:mysql://<IP-АДРЕС>:<ПОРТ>/<БД>", <ПОЛЬЗОВАТЕЛЬ>, <ПАРОЛЬ>);
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -239,7 +391,7 @@
    var mysql = require('mysql')
    var conn = mysql.createConnection({
        host: "<IP-АДРЕС>",
-       user: "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>",
+       user: "<ПОЛЬЗОВАТЕЛЬ>",
        password: "<ПАРОЛЬ>",
        database: "<БД>",
        port: <ПОРТ>
@@ -248,10 +400,10 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -262,27 +414,27 @@
 1. Подключитесь к базе данных:
 
    ```console
-   DRIVER={MySQL ODBC 5.3 UNICODE Driver}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>";
+   DRIVER={MySQL ODBC 5.3 UNICODE Driver}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ПОЛЬЗОВАТЕЛЬ>"; Pwd="<ПАРОЛЬ>";
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3306`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3306`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## Tarantool
+{ifdef(public)}
+## {heading(Tarantool)[id=dbaas-connect-tarantool]}
 
 {note:info}
-
 К БД Tarantool можно подключиться как гостевой пользователь.
-
 {/note}
 
 {tabs}
@@ -297,13 +449,13 @@
    require_once __DIR__ . '/vendor/autoload.php';
 
    use Tarantool\Client\Client;
-   $client = Client::fromDsn('tcp://<ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>');
+   $client = Client::fromDsn('tcp://<ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>');
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в PHP читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_php/).
@@ -319,14 +471,14 @@
    ```python
    import tarantool
 
-   connection = tarantool.connect("<IP-АДРЕС>", <ПОРТ>, user=<ИМЯ_ПОЛЬЗОВАТЕЛЯ>, password=<ПАРОЛЬ>)
+   connection = tarantool.connect("<IP-АДРЕС>", <ПОРТ>, user=<ПОЛЬЗОВАТЕЛЬ>, password=<ПАРОЛЬ>)
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `3301`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `3301`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в Python читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_python/).
@@ -342,14 +494,14 @@
    ```java
    TarantoolClient<TarantoolTuple, TarantoolResult<TarantoolTuple>> client = TarantoolClientFactory.createClient()
        .withAddress("<IP-АДРЕС>")
-       .withCredentials(container.getUsername("<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"), container.getPassword("<ПАРОЛЬ>"))
+       .withCredentials(container.getUsername("<ПОЛЬЗОВАТЕЛЬ>"), container.getPassword("<ПАРОЛЬ>"))
        .build();
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -360,13 +512,13 @@
 1. Подключитесь к базе данных:
 
    ```console
-   tarantoolctl connect <ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>
+   tarantoolctl connect <ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -383,7 +535,7 @@
    )
 
    opts := tarantool.Opts{
-       User: "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>",
+       User: "<ПОЛЬЗОВАТЕЛЬ>",
        Pass: "<ПАРОЛЬ>",
    }
    connection, err := tarantool.Connect("<IP-АДРЕС>", opts)
@@ -391,8 +543,8 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в Go читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_go/).
@@ -400,8 +552,9 @@
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## ClickHouse
+## {heading(ClickHouse)[id=dbaas-connect-clickhouse]}
 
 {tabs}
 
@@ -412,25 +565,49 @@
 1. [Установите](https://github.com/smi2/phpClickHouse) модуль `smi2/phpclickhouse`.
 1. Подключитесь к базе данных:
 
+   {ifdef(public)}
    ```php
    require_once __DIR__ . '/vendor/autoload.php';
 
    $config = [
        'host' => '<IP-АДРЕС>',
        'port' => '<ПОРТ>',
-       'username' => '<ИМЯ_ПОЛЬЗОВАТЕЛЯ>',
+       'username' => '<ПОЛЬЗОВАТЕЛЬ>',
        'password' => '<ПАРОЛЬ>'
    ];
    $db = new ClickHouseDB\Client($config);
    $db->database('<БД>');
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```php
+   composer require smi2/phpclickhouse
+
+   $config = [
+       'host' => '<IP-АДРЕС>',
+       'port' => '<ПОРТ>',
+       'username' => '<ПОЛЬЗОВАТЕЛЬ>',
+       'password' => '<ПАРОЛЬ>'
+   ];
+   $db = new ClickHouseDB\Client($config);
+   $db->database('<БД>');
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `8123`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `8123`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -444,14 +621,21 @@
    ```python
    from clickhouse_driver.connection import Connection
 
-   conn = Connection('<IP-АДРЕС>', port=8123, database='<БД>', user='<ИМЯ_ПОЛЬЗОВАТЕЛЯ>', password='<ПАРОЛЬ>')
+   conn = Connection('<IP-АДРЕС>', port=8123, database='<БД>', user='<ПОЛЬЗОВАТЕЛЬ>', password='<ПАРОЛЬ>')
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -462,17 +646,34 @@
 1. [Установите](https://github.com/shlima/click_house) драйвер `ClickHouse`.
 1. Подключитесь к базе данных с помощью класса `Connection`:
 
+   {ifdef(public)}
    ```ruby
    require "clickhouse"
 
-   conn = Clickhouse::Connection.new(:url => '<IP-АДРЕС>', :database => '<БД>', :username => '<ИМЯ_ПОЛЬЗОВАТЕЛЯ>', :password => '<ПАРОЛЬ>')
+   conn = Clickhouse::Connection.new(:url => '<IP-АДРЕС>', :database => '<БД>', :username => '<ПОЛЬЗОВАТЕЛЬ>', :password => '<ПАРОЛЬ>')
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   ```ruby
+   require "clickhouse"
+
+   conn = Clickhouse::Connection.new(:url => 'http://<IP-АДРЕС>:8123', :database => '<БД>', :username => '<ПОЛЬЗОВАТЕЛЬ>', :password => '<ПАРОЛЬ>')
+   ```
+   {/ifndef}
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -487,16 +688,23 @@
    import ru.yandex.clickhouse.ClickHouseDataSource;
    import ru.yandex.clickhouse.settings.ClickHouseProperties;
 
-   ClickHouseProperties properties = new ClickHouseProperties().withCredentials(<ИМЯ_ПОЛЬЗОВАТЕЛЯ>, <ПАРОЛЬ>);
-   ClickHouseDataSource ds = new ClickHouseDataSource(String.format("jdbc:clickhouse://%s:%s/%s", “<IP-АДРЕС>”, <ПОРТ>, <БД>), properties);
+   ClickHouseProperties properties = new ClickHouseProperties().withCredentials(<ПОЛЬЗОВАТЕЛЬ>, <ПАРОЛЬ>);
+   ClickHouseDataSource ds = new ClickHouseDataSource(String.format("jdbc:clickhouse://%s:%s/%s", "<IP-АДРЕС>", <ПОРТ>, "<БД>"), properties);
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `8123`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `8123`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -507,15 +715,15 @@
 1. [Установите](https://clickhouse.com/docs/en/integrations/language-clients/nodejs) модуль `ClickHouse JS`.
 1. Создайте объект подключения к БД:
 
-   ```javascript
+   ```js
    const { ClickHouse } = require('clickhouse');
 
    const clickhouse = new ClickHouse({
-    url: '<IP-АДРЕС>',
+    url: 'http://<IP-АДРЕС>',
     port: <ПОРТ>,
     database: '<БД>',
     basicAuth: {
-           username: '<ИМЯ_ПОЛЬЗОВАТЕЛЯ>',
+           username: '<ПОЛЬЗОВАТЕЛЬ>',
            password: '<ПАРОЛЬ>',
        }
    });
@@ -523,10 +731,17 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `8123`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `8123`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -537,22 +752,48 @@
 1. Подключитесь к базе данных:
 
    ```console
-   Driver={PATH_OF_CLICKHOUSE_ODBC_SO}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"; Pwd="<ПАРОЛЬ>";
+   Driver={<ПУТЬ>}; Server="<IP-АДРЕС>"; Port=<ПОРТ>; Database="<БД>"; Uid="<ПОЛЬЗОВАТЕЛЬ>"; Pwd="<ПАРОЛЬ>";
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ПОРТ>` — порт подключения, стандартный — `8123`;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<ПУТЬ>` — путь до ODBC-драйвера ClickHouse.
+
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
+   - `<БД>` — имя БД.
+   - `<ПОРТ>` — порт подключения, стандартный — `8123`.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
 
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+clickhouse-client --host <IP-АДРЕС> --database <БД> --port 9000 --user <ПОЛЬЗОВАТЕЛЬ> --ask-password
+```
+
+Здесь:
+
+* `<IP-АДРЕС>` — внутренний IP-адрес.
+* `<БД>` — название БД.
+* `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
+
+{/tab}
+{/ifndef}
+
 {/tabs}
 
-## MongoDB
+{ifdef(public)}
+## {heading(MongoDB)[id=dbaas-connect-mongodb]}
 
 {tabs}
 
@@ -563,14 +804,14 @@
 1. Подключитесь к базе данных:
 
    ```php
-   $manager = new MongoDB\Driver\Manager("mongodb://<IP-АДРЕС>/<БД>", array("username" => <ИМЯ_ПОЛЬЗОВАТЕЛЯ>, "password" => <ПАРОЛЬ>));
+   $manager = new MongoDB\Driver\Manager("mongodb://<IP-АДРЕС>/<БД>", array("username" => <ПОЛЬЗОВАТЕЛЬ>, "password" => <ПАРОЛЬ>));
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -584,15 +825,15 @@
    ```python
    from pymongo import MongoClient
 
-   client = MongoClient("mongodb://<ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>")
+   client = MongoClient("mongodb://<ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>")
 
    db = client[<БД>]
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -604,7 +845,7 @@
 1. Создайте подключение:
 
    ```java
-   MongoCredential credential = MongoCredential.createCredential(<ИМЯ_ПОЛЬЗОВАТЕЛЯ>, <БД>, <ПАРОЛЬ>.toCharArray());
+   MongoCredential credential = MongoCredential.createCredential(<ПОЛЬЗОВАТЕЛЬ>, <БД>, <ПАРОЛЬ>.toCharArray());
 
    MongoClient mongoClient = new MongoClient(new ServerAddress(“<IP-АДРЕС>”), Arrays.asList(credential));
 
@@ -613,9 +854,9 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
@@ -629,7 +870,7 @@
    ```javascript
    var MongoClient = require('mongodb').MongoClient;
 
-   MongoClient.connect("mongodb://<ИМЯ_ПОЛЬЗОВАТЕЛЯ>:<ПАРОЛЬ>@<IP-АДРЕС>/<БД>", function(err, db) {
+   MongoClient.connect("mongodb://<ПОЛЬЗОВАТЕЛЬ>:<ПАРОЛЬ>@<IP-АДРЕС>/<БД>", function(err, db) {
        if(!err) {
            console.log("You are connected!");
        };
@@ -639,16 +880,17 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   - `<БД>` — имя БД.
+   - `<ПОЛЬЗОВАТЕЛЬ>` — имя пользователя БД.
    - `<ПАРОЛЬ>` — пароль пользователя БД.
 
 {/tab}
 
 {/tabs}
+{/ifdef}
 
-## Redis
+## {heading(Redis)[id=dbaas-connect-redis]}
 
 {tabs}
 
@@ -658,6 +900,7 @@
 1. [Установите](https://github.com/predis/predis) `predis`.
 1. Подключитесь к базе данных:
 
+   {ifdef(public)}
    ```php
    require_once __DIR__ . '/vendor/autoload.php';
 
@@ -665,13 +908,25 @@
 
    $client = new Predis\Client('tcp://<IP-АДРЕС>');
    ```
+   {/ifdef}
 
-   Здесь:
+   {ifndef(public)}
+   ```php
+   require 'Predis/Autoloader.php';
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
-   - `<БД>` — имя БД;
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — имя пользователя БД;
-   - `<ПАРОЛЬ>` — пароль пользователя БД.
+   Predis\Autoloader::register();
+
+   $client = new Predis\Client('tcp://<IP-АДРЕС>:6379');
+   ```
+   {/ifndef}
+
+   {ifdef(public)}
+   Здесь — `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   Здесь `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
 
 {/tab}
 
@@ -682,16 +937,21 @@
 1. Подключитесь к базе данных с помощью функции `redis.Redis`:
 
    ```python
-
    import redis
 
    conn = redis.Redis(host='<IP-АДРЕС>', port=<ПОРТ>, db=0)
-
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
    - `<ПОРТ>` — порт подключения, стандартный — `6379`.
 
 Подробнее о подключении к Redis в Python читайте в [документации](https://redis.io/docs/clients/python/).
@@ -712,7 +972,14 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
    - `<ПОРТ>` — порт подключения, стандартный — `6379`.
 
 {/tab}
@@ -729,7 +996,13 @@
    Jedis jedis = new Jedis("<IP-АДРЕС>");
    ```
 
+   {ifdef(public)}
    Здесь `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   Здесь `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
 
 {/tab}
 
@@ -747,11 +1020,30 @@
 
    Здесь:
 
-   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД;
+   {ifdef(public)}
+   - `<IP-АДРЕС>` — внешний IP-адрес инстанса БД.
+   {/ifdef}
+
+   {ifndef(public)}
+   - `<IP-АДРЕС>` — внутренний IP-адрес.
+   {/ifndef}
+
    - `<ПОРТ>` — порт подключения, стандартный — `6379`.
 
 Подробнее о подключении к Redis в Node.js читайте в [документации](https://redis.io/docs/clients/nodejs/).
 
 {/tab}
+
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+redis-cli -h <IP-АДРЕС> -p 6379
+```
+
+Здесь `<IP-АДРЕС>` — внутренний IP-адрес.
+
+{/tab}
+{/ifndef}
 
 {/tabs}

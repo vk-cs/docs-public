@@ -47,7 +47,7 @@ Examples of search expressions:
    - **Prettify JSON**: enable improved visualization of logs in JSON format.
    - **Enable log details**: display an expandable area with detailed log content.
 
-1. In the **Service** field, specify the ID of the service whose logs you want to display on the dashboard. Use the service IDs pre-configured in the VK Cloud logging system or [your own IDs](../../concepts/logging-plugin#conf_parameters).
+1. In the **Service** field, specify the ID of the service whose logs you want to display on the dashboard. Use the service IDs pre-configured in the VK Cloud logging system or [your own IDs](../../concepts/logging-plugin#logging_conf_parameters).
 
     {tabs}
 
@@ -70,8 +70,8 @@ Examples of search expressions:
     {/tabs}
 
 1. Click the **Apply** button.
-1. (Optional) In the **Group** field, specify the log group identifier (`group_id`). Use the `group_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `group_id` is displayed in the logs of the required service on the dashboard being created.
-1. (Optional) In the **Stream** field, specify the log source identifier (`stream_id`). Use the `stream_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `stream_id` is displayed in the logs of the required service on the dashboard being created.
+1. (Optional) In the **Group** field, specify the log group identifier (`group_id`). Use the `group_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#logging_conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `group_id` is displayed in the logs of the required service on the dashboard being created.
+1. (Optional) In the **Stream** field, specify the log source identifier (`stream_id`). Use the `stream_id` value specified in the [logging plugin settings](../../concepts/logging-plugin#logging_conf_parameters) during its installation. If the **Unique Labels** option is enabled, the `stream_id` is displayed in the logs of the required service on the dashboard being created.
 1. Save the changes you made.
 
 {/tab}

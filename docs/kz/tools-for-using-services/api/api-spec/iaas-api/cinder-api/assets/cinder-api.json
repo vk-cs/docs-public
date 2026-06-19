@@ -1019,7 +1019,7 @@
         "schema": {
           "type": "string"
         },
-        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта",
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта",
         "required": true
       },
       "project_id_transfer_from": {
@@ -1028,7 +1028,7 @@
         "schema": {
           "type": "string"
         },
-        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта, из которого нужно переместить диск",
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, из которого нужно переместить диск",
         "required": true
       },
       "project_id_transfer_to": {
@@ -1037,7 +1037,7 @@
         "schema": {
           "type": "string"
         },
-        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#project_id_alu'>Project ID</a> для проекта, в который нужно переместить диск",
+        "description": "Значение параметра <a href='https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id'>Project ID</a> для проекта, в который нужно переместить диск",
         "required": true
       },
       "volume_id": {
@@ -1354,7 +1354,19 @@
           },
           "status": {
             "type": "string",
-            "enum": ["creating","available","attaching","in-use","deleting","error","error_deleting","backing-up","restoring-backup","error_restoring","error_extending"],
+            "enum": [
+              "creating",
+              "available",
+              "attaching",
+              "in-use",
+              "deleting",
+              "error",
+              "error_deleting",
+              "backing-up",
+              "restoring-backup",
+              "error_restoring",
+              "error_extending"
+            ],
             "description": "Статус диска"
           },
           "description": {

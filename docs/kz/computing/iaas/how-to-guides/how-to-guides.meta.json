@@ -4,5 +4,15 @@
   "shortDescription": "Бұлтта жұмыс істеу үшін виртуалды машинаны қосымша баптау және дайындау",
   "metaDescription": "Тәжірибелік нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

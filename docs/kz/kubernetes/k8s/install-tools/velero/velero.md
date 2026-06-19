@@ -1,17 +1,20 @@
+# {heading(Velero орнату)[id=k8s-velero]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
-Velero — Kubernetes кластері ресурстарының резервтік көшірмесін жасауғал және оларды қалпына келтіруге арналған клиент-серверлік утилита.
 
-## Орнату
+Velero — Kubernetes кластері ресурстарының резервтік көшірмесін жасауға және оларды қалпына келтіруге арналған клиент-серверлік утилита.
 
-1. Мыналарғал көз жеткізіңіз:
+## {heading(Орнату)[id=k8s-velero-install]}
+
+1. Мыналарға көз жеткізіңіз:
 
    - не worker-түйіндер топтарында кемінде 2 бос vCPU бар;
-   - не [автоматты масштабтау қосылған](../../instructions/scale#autoscale_worker_nodes).
+   - не {linkto(../../instructions/scale#k8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=автоматты масштабтау қосылған]}.
 
-1. [Көз жеткізіңіз](../../connect/kubectl#check_connection), кластерге `kubectl` көмегімен қосыла алатыныңызғал.
-1. Егер әлі орнатылмаған болса, OpenStack CLI [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli). Оның көмегімен бұлтта авторизациялана алатыныңызғал [көз жеткізіңіз](/kz/tools-for-using-services/cli/openstack-cli).
-1. [VK Object Storage](../../../../storage/s3/instructions/buckets/create-bucket) сервисінде резервтік көшірмелерді сақтау үшін [hotbox-бакет жасаңыз](../../../../storage/s3).
-1. [VK Object Storage](../../../../storage/s3/instructions/access-management/access-keys) сервисінде [аккаунт жасаңыз](../../../../storage/s3).
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Көз жеткізіңіз]}, кластерге `kubectl` көмегімен қосыла алатыныңызға.
+1. Егер әлі орнатылмаған болса, OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=орнатыңыз]}. Оның көмегімен бұлтта авторизациялана алатыныңызға {linkto(../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=көз жеткізіңіз]}.
+1. [VK Object Storage](../../../../storage/s3) сервисінде резервтік көшірмелерді сақтау үшін [hotbox-бакет жасаңыз](../../../../storage/s3/instructions/buckets/create-bucket).
+1. [VK Object Storage](../../../../storage/s3) сервисінде [аккаунт жасаңыз](../../../../storage/s3/instructions/access-management/access-keys).
 
    Шығарылған кілт идентификаторы мен құпияны `s3_creds` файлына сақтаңыз:
 
@@ -38,7 +41,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    ```console
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v1.13.1,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 \
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.13.1 \
    --provider aws \
    --bucket <ИМЯ_БАКЕТА_VELERO> \
    --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> \
@@ -55,7 +58,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    ```console
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v1.13.1,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.5 `
+     velero/velero-plugin-for-aws:v1.8.2,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.13.1 `
    --provider aws `
    --bucket <ИМЯ_БАКЕТА_VELERO> `
    --secret-file <ПУТЬ_К_ФАЙЛУ_S3_CREDS> `
@@ -122,7 +125,7 @@ Velero — Kubernetes кластері ресурстарының резервт
 
    {/tabs}
 
-   Ұқсас алқпарат шығуы керек:
+   Ұқсас ақпарат шығуы керек:
 
    ```yaml
    apiVersion: v1
@@ -144,7 +147,7 @@ Velero — Kubernetes кластері ресурстарының резервт
 1. Кластердегі Velero deployment-ын патчтаңыз. Бұл үшін қажет:
 
    - Velero-ның AWS және VK Cloud плагиндері тұтынатын ресурстарды шектеу;
-   - VK Cloud бұлтында авторизациялануғал арналған айнымалылары бар құпияны көрсету.
+   - VK Cloud бұлтында авторизациялануға арналған айнымалылары бар құпияны көрсету.
 
    1. Патч файлын жасаңыз:
 
@@ -194,7 +197,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero snapshot-location create default --provider openstack --config region=ru-msk
    ```
 
-## Жұмысқал қабілеттілігін тексеру
+## {heading(Жұмысқа қабілеттілігін тексеру)[id=k8s-velero-check]}
 
 1. Бапталған плагиндерді тексеру үшін команданы орындаңыз:
 
@@ -217,7 +220,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero backup-location get
    ```
 
-   Ұқсас алқпарат шығуы керек:
+   Ұқсас ақпарат шығуы керек:
 
    ```text
    NAME      PROVIDER   BUCKET/PREFIX   PHASE       LAST VALIDATED                  ACCESS MODE   DEFAULT
@@ -230,14 +233,14 @@ Velero — Kubernetes кластері ресурстарының резервт
    velero snapshot-location get
    ```
 
-   Ұқсас алқпарат шығуы керек:
+   Ұқсас ақпарат шығуы керек:
 
    ```text
    NAME      PROVIDER
    default   openstack
    ```
 
-## Жою
+## {heading(Жою)[id=k8s-velero-delete]}
 
 Команданы орындаңыз:
 

@@ -1,3 +1,5 @@
+# {heading(Рұқсаттар анықтамалығы)[id=iam-permissions-reference]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Алдын ала орнатылған [қол жеткізу рөлдері](/kz/access/iam/concepts/roles-reference) жеткіліксіз болған кезде, қол жеткізуді дәл баптау үшін рұқсаттар пайдаланылады.
@@ -8,2819 +10,2819 @@
 - компоненттер мен ресурстарды жасау және өзгерту,
 - компоненттер мен ресурстарды жою.
 
-## Платформалық компоненттер
+## {heading(Платформалық компоненттер)[id=iam-permissions-platform]}
 
 [PaaS және IaaS-сервистерінің](/kz/start/concepts/architecture) жұмысын қамтамасыз ететін VK Cloud негізгі компоненттерін басқару.
 
-### cdn_delete
+### {heading(cdn_delete)[id=cdn_delete]}
 
 Жеке кабинеттегі атауы: `CDN жою`.
 
 CDN конфигурацияларын жоюға және CDN тораптарының жұмысын тоқтатуға мүмкіндік береді.
 
-### cdn_modify
+### {heading(cdn_modify)[id=cdn_modify]}
 
 Жеке кабинеттегі атауы: `CDN басқару`.
 
 Контентті жеткізу аймақтарын және CDN кэштеу параметрлерін баптауға мүмкіндік береді.
 
-### cdn_view
+### {heading(cdn_view)[id=cdn_view]}
 
 Жеке кабинеттегі атауы: `CDN қарау`.
 
 CDN баптауларын және өтетін трафик статистикасын қарауға мүмкіндік береді.
 
-### containers_delete
+### {heading(containers_delete)[id=containers_delete]}
 
 Жеке кабинеттегі атауы: `Контейнерлерді жою`.
 
 Контейнерлер кластерлерін және оларға байланысты ресурстарды жоюға мүмкіндік береді.
 
-### containers_modify
+### {heading(containers_modify)[id=containers_modify]}
 
 Жеке кабинеттегі атауы: `Контейнерлерді басқару`.
 
 Контейнерлер кластерлерін және оларға байланысты ресурстарды жасауға мүмкіндік береді.
 
-### containers_view
+### {heading(containers_view)[id=containers_view]}
 
 Жеке кабинеттегі атауы: `Контейнерлерді қарау`.
 
 Контейнерлер кластерлерінің тізімін және олар туралы егжей-тегжейлі ақпаратты қарауға мүмкіндік береді.
 
-### daas_delete
+### {heading(daas_delete)[id=daas_delete]}
 
 Жеке кабинеттегі атауы: `Жұмыс үстелдерін жою (DaaS)`.
 
 Виртуалды жұмыс үстелдерінің инстанстарын жоюға мүмкіндік береді.
 
-### daas_modify
+### {heading(daas_modify)[id=daas_modify]}
 
 Жеке кабинеттегі атауы: `Жұмыс үстелдерін басқару (DaaS)`.
 
 Пайдаланушылардың виртуалды жұмыс үстелдерін жасауға және әкімшілендіруге мүмкіндік береді.
 
-### daas_view
+### {heading(daas_view)[id=daas_view]}
 
 Жеке кабинеттегі атауы: `Жұмыс үстелдерін қарау (DaaS)`.
 
 Виртуалды жұмыс үстелдерінің тізімін және олардың күйі туралы ақпаратты қарауға мүмкіндік береді.
 
-### databases_delete
+### {heading(databases_delete)[id=databases_delete]}
 
 Жеке кабинеттегі атауы: `Дерекқорларды жою`.
 
 Дерекқорларды жоюға және деректер қоймаларын тазартуға мүмкіндік береді.
 
-### databases_modify
+### {heading(databases_modify)[id=databases_modify]}
 
 Жеке кабинеттегі атауы: `Дерекқорларды басқару`.
 
 Дерекқорлар мен деректер қоймаларын жасауға мүмкіндік береді.
 
-### databases_view
+### {heading(databases_view)[id=databases_view]}
 
 Жеке кабинеттегі атауы: `Дерекқорларды қарау`.
 
 Қолжетімді дерекқорлардың тізімін және олардың сипаттамаларын қарауға мүмкіндік береді.
 
-### gpu_delete
+### {heading(gpu_delete)[id=gpu_delete]}
 
 Жеке кабинеттегі атауы: `Графикалық үдеткіштерді жою (GPU)`.
 
 Графикалық үдеткіштер ресурстарын босатуға және жоюға мүмкіндік береді.
 
-### gpu_modify
+### {heading(gpu_modify)[id=gpu_modify]}
 
 Жеке кабинеттегі атауы: `Графикалық үдеткіштерді басқару (GPU)`.
 
 Графикалық үдеткіштерді қосуға және олардың параметрлерін өзгертуге мүмкіндік береді.
 
-### gpu_view
+### {heading(gpu_view)[id=gpu_view]}
 
 Жеке кабинеттегі атауы: `Графикалық үдеткіштерді қарау (GPU)`.
 
 Графикалық үдеткіштер ресурстарының қолжетімділігі мен күйін қарауға мүмкіндік береді.
 
-### grm_delete
+### {heading(grm_delete)[id=grm_delete]}
 
 Жеке кабинеттегі атауы: `GRM компонентін жою`.
 
 Ғаламдық рұқсат модельдерін жоюға және рөлдерді басқару баптауларын қалпына келтіруге мүмкіндік береді.
 
-### grm_modify
+### {heading(grm_modify)[id=grm_modify]}
 
 Жеке кабинеттегі атауы: `GRM компонентін басқару`.
 
 Ғаламдық рұқсат модельдерін және олардағы қол жеткізу құқықтарын баптауға мүмкіндік береді.
 
-### grm_view
+### {heading(grm_view)[id=grm_view]}
 
 Жеке кабинеттегі атауы: `GRM компонентін қарау`.
 
 Платформаның құқықтары мен рөлдерінің ағымдағы құрылымын қарауға мүмкіндік береді.
 
-### hotbox_delete
+### {heading(hotbox_delete)[id=hotbox_delete]}
 
 Жеке кабинеттегі атауы: `Hotbox компонентін жою`.
 
 Hotbox жедел деректер қоймасындағы деректерді жоюға және кеңістіктерді тазартуға мүмкіндік береді.
 
-### hotbox_modify
+### {heading(hotbox_modify)[id=hotbox_modify]}
 
 Жеке кабинеттегі атауы: `Hotbox компонентін басқару`.
 
 Hotbox жедел деректер қоймасындағы баптаулар мен объектілерді басқаруға мүмкіндік береді.
 
-### hotbox_view
+### {heading(hotbox_view)[id=hotbox_view]}
 
 Жеке кабинеттегі атауы: `Hotbox компонентін қарау`.
 
 Hotbox жедел деректер қоймасының мазмұнын және құрылымын қарауға мүмкіндік береді.
 
-### Infra_delete
+### {heading(Infra_delete)[id=Infra_delete]}
 
 Жеке кабинеттегі атауы: `Инфрақұрылымды жою`.
 
 Инфрақұрылым ресурстары мен объектілерін (`infra` компоненті) қайтарымсыз жоюға мүмкіндік береді.
 
-### Infra_modify
+### {heading(Infra_modify)[id=Infra_modify]}
 
 Жеке кабинеттегі атауы: `Инфрақұрылымды басқару`.
 
 Инфрақұрылым ресурстары мен объектілерінің параметрлерін (`infra` компоненті) өзгертуге мүмкіндік береді.
 
-### Infra_view
+### {heading(Infra_view)[id=Infra_view]}
 
 Жеке кабинеттегі атауы: `Инфрақұрылымды қарау`.
 
 Инфрақұрылым ресурстары мен объектілерінің ағымдағы күйін (`infra` компоненті) қарауға мүмкіндік береді.
 
-### marketplace_delete
+### {heading(marketplace_delete)[id=marketplace_delete]}
 
 Жеке кабинеттегі атауы: `Қолданбалар дүкенінен жою (Marketplace)`.
 
 Қолданбалар дүкені каталогынан ұсыныстар мен позицияларды жоюға мүмкіндік береді.
 
-### marketplace_modify
+### {heading(marketplace_modify)[id=marketplace_modify]}
 
 Жеке кабинеттегі атауы: `Қолданбалар дүкенін басқару (Marketplace)`.
 
 Қолданбалар дүкеніне позициялар қосуға және дүкен каталогындағы қолжетімді сервистер параметрлерін өзгертуге мүмкіндік береді.
 
-### marketplace_view
+### {heading(marketplace_view)[id=marketplace_view]}
 
 Жеке кабинеттегі атауы: `Қолданбалар дүкені компоненттерін қарау (Marketplace)`.
 
 Қолжетімді қызметтер мен қолданбаларды қарауға мүмкіндік береді.
 
-### mlplatform_delete
+### {heading(mlplatform_delete)[id=mlplatform_delete]}
 
 Жеке кабинеттегі атауы: `ML-платформадан жою`.
 
 Cloud ML Platform машиналық оқыту сервисінен модельдерді жоюға мүмкіндік береді.
 
-### mlplatform_modify
+### {heading(mlplatform_modify)[id=mlplatform_modify]}
 
 Жеке кабинеттегі атауы: `ML-платформаны басқару`.
 
 Cloud ML Platform машиналық оқыту сервисіндегі оқыту орталарын баптауға мүмкіндік береді.
 
-### mlplatform_view
+### {heading(mlplatform_view)[id=mlplatform_view]}
 
 Жеке кабинеттегі атауы: `ML-платформаны қарау`.
 
 Машиналық оқыту сервисіндегі жобалардың күйін және модельдерді оқыту нәтижелерін қарауға мүмкіндік береді.
 
-### nord_delete
+### {heading(nord_delete)[id=nord_delete]}
 
 Жеке кабинеттегі атауы: `Nord компонентін жою`.
 
 Nord компонентінің объектілері мен баптауларын жоюға мүмкіндік береді.
 
-### nord_modify
+### {heading(nord_modify)[id=nord_modify]}
 
 Жеке кабинеттегі атауы: `Nord компонентін басқару`.
 
 Ресурстарды өрістету бөлігіндегі платформаның кеңейтілген функцияларын басқаруға мүмкіндік береді.
 
-### nord_view
+### {heading(nord_view)[id=nord_view]}
 
 Жеке кабинеттегі атауы: `Nord компонентін қарау`.
 
 Nord компоненті қызметтерінің күйін бақылауға мүмкіндік береді.
 
-### service_delete
+### {heading(service_delete)[id=service_delete]}
 
 Жеке кабинеттегі атауы: `Компоненттерді жою`.
 
 Сервистік компоненттерді өшіруге және жоюға мүмкіндік береді.
 
-### service_modify
+### {heading(service_modify)[id=service_modify]}
 
 Жеке кабинеттегі атауы: `Компоненттерді басқару`.
 
 Платформаның ішкі сервистік қызметтерінің баптауларын өзгертуге мүмкіндік береді.
 
-### service_view
+### {heading(service_view)[id=service_view]}
 
 Жеке кабинеттегі атауы: `Компоненттерді қарау`.
 
 Барлық қызметтердің тізімін және олардың жұмысқа қабілеттілік мәртебелерін қарауға мүмкіндік береді.
 
-### sqs_delete
+### {heading(sqs_delete)[id=sqs_delete]}
 
 Жеке кабинеттегі атауы: `SQS кезектерін жою`.
 
 Хабарламалар кезектерін жоюға және олардағы хабарламаларды тазартуға мүмкіндік береді.
 
-### sqs_modify
+### {heading(sqs_modify)[id=sqs_modify]}
 
 Жеке кабинеттегі атауы: `SQS кезектерін басқару`.
 
 Хабарламалар кезектерін жасауға және олардың параметрлерін баптауға мүмкіндік береді.
 
-### sqs_view
+### {heading(sqs_view)[id=sqs_view]}
 
 Жеке кабинеттегі атауы: `SQS кезектерін қарау`.
 
 Хабарламалар кезектеріндегі хабарламалардың саны мен күйін қарауға мүмкіндік береді.
 
-### vision_delete
+### {heading(vision_delete)[id=vision_delete]}
 
 Жеке кабинеттегі атауы: `Компьютерлік көру компонентін жою (Vision)`.
 
 Компьютерлік көру сервистерін тоқтатуға және деректерін жоюға мүмкіндік береді.
 
-### vision_modify
+### {heading(vision_modify)[id=vision_modify]}
 
 Жеке кабинеттегі атауы: `Компьютерлік көруді басқару (Vision)`.
 
 Компьютерлік көру сервистерінің параметрлерін баптауға және өңдеу тапсырмаларын іске қосуға мүмкіндік береді.
 
-### vision_view
+### {heading(vision_view)[id=vision_view]}
 
 Жеке кабинеттегі атауы: `Компьютерлік көру компонентін қарау (Vision)`.
 
 Компьютерлік көру сервистерінің аналитика нәтижелерін және жұмыс тарихын қарауға мүмкіндік береді.
 
-### xaas_delete
+### {heading(xaas_delete)[id=xaas_delete]}
 
 Жеке кабинеттегі атауы: `XaaS компоненттерін жою`.
 
 Қызмет ретінде ұсынылатын серіктестік сервистерді жоюға мүмкіндік береді.
 
-### xaas_modify
+### {heading(xaas_modify)[id=xaas_modify]}
 
 Жеке кабинеттегі атауы: `XaaS компоненттерін басқару`.
 
 Қызмет ретінде ұсынылатын серіктестік сервистер параметрлерін конфигурациялауға мүмкіндік береді.
 
-### xaas_view
+### {heading(xaas_view)[id=xaas_view]}
 
 Жеке кабинеттегі атауы: `XaaS компоненттерін қарау`.
 
 Қызмет ретінде ұсынылатын барлық белсенді серіктестік сервистердің тізімі мен сипаттамасын қарауға мүмкіндік береді.
 
-## Ұйымды және қол жеткізуді басқару
+## {heading(Ұйымды және қол жеткізуді басқару)[id=iam-permissions-organization-access]}
 
 Жобаларды, доменді, пайдаланушыларды және олардың топтарын, серіктестерді, сондай-ақ квоталар мен лимиттерді басқару.
 
-### base_project_delete
+### {heading(base_project_delete)[id=base_project_delete]}
 
 Жеке кабинеттегі атауы: `Базалық жобаны жою`.
 
 [Жеке кабинеттің](/kz/tools-for-using-services/account) сол жақ панеліндегі жобаның құрылымдық элементтерін (жеке кабинет бөлімдерін) көріністен жоюға мүмкіндік береді.
 
-### base_project_modify
+### {heading(base_project_modify)[id=base_project_modify]}
 
 Жеке кабинеттегі атауы: `Базалық жобаны басқару`.
 
 [Жеке кабинеттің](/kz/tools-for-using-services/account) сол жақ панеліндегі жобаның құрылымдық элементтерінің (бөлімдерінің) конфигурациясын өзгертуге мүмкіндік береді.
 
-### base_project_view
+### {heading(base_project_view)[id=base_project_view]}
 
 Жеке кабинеттегі атауы: `Базалық жобаны қарау`.
 
 Жобаның құрылымдық элементтері туралы ақпаратты қарауға мүмкіндік береді. [Жеке кабинет](/kz/tools-for-using-services/account) интерфейсіне және оның бөлімдеріне қол жеткізуді беру үшін қолданылады.
 
-### domain_delete
+### {heading(domain_delete)[id=domain_delete]}
 
 Жеке кабинеттегі атауы: `Доменді жою`.
 
 Домендік құрылымды толық жоюға мүмкіндік береді.
 
-### domain_groups_delete
+### {heading(domain_groups_delete)[id=domain_groups_delete]}
 
 Жеке кабинеттегі атауы: `Домен топтарын жою`.
 
 Домендегі пайдаланушылар топтарын жоюға мүмкіндік береді.
 
-### domain_groups_modify
+### {heading(domain_groups_modify)[id=domain_groups_modify]}
 
 Жеке кабинеттегі атауы: `Домен топтарын басқару`.
 
 Пайдаланушылар топтарын құруға және олардың құрамын домен деңгейінде басқаруға мүмкіндік береді.
 
-### domain_groups_view
+### {heading(domain_groups_view)[id=domain_groups_view]}
 
 Жеке кабинеттегі атауы: `Домен топтарын қарау`.
 
 Домендегі топтардың иерархиясы мен құрамын қарауға мүмкіндік береді.
 
-### domain_modify
+### {heading(domain_modify)[id=domain_modify]}
 
 Жеке кабинеттегі атауы: `Доменді басқару`.
 
 Доменнің жаһандық баптауларын және оқшаулау параметрлерін өзгертуге мүмкіндік береді.
 
-### domain_users_delete
+### {heading(domain_users_delete)[id=domain_users_delete]}
 
 Жеке кабинеттегі атауы: `Домен пайдаланушыларын жою`.
 
 Домен пайдаланушыларының есептік жазбаларын жоюға мүмкіндік береді.
 
-### domain_users_modify
+### {heading(domain_users_modify)[id=domain_users_modify]}
 
 Жеке кабинеттегі атауы: `Домен пайдаланушыларын басқару`.
 
 Домен шеңберіндегі пайдаланушылардың есептік жазбаларын құруға және өзгертуге мүмкіндік береді.
 
-### domain_users_view
+### {heading(domain_users_view)[id=domain_users_view]}
 
 Жеке кабинеттегі атауы: `Домен пайдаланушыларын қарау`.
 
 Доменнің барлық пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### domain_view
+### {heading(domain_view)[id=domain_view]}
 
 Жеке кабинеттегі атауы: `Доменді қарау`.
 
 Доменнің жалпы параметрлері мен идентификаторларын қарауға мүмкіндік береді.
 
-### partners_delete
+### {heading(partners_delete)[id=partners_delete]}
 
 Жеке кабинеттегі атауы: `Серіктестерді жою`.
 
 Серіктестер тізіміндегі жазбаларды жоюға мүмкіндік береді.
 
-### partners_modify
+### {heading(partners_modify)[id=partners_modify]}
 
 Жеке кабинеттегі атауы: `Серіктестерді басқару`.
 
 Серіктестерді тіркеуге және олардың деректерін өзгертуге мүмкіндік береді.
 
-### partners_view
+### {heading(partners_view)[id=partners_view]}
 
 Жеке кабинеттегі атауы: `Серіктестерді қарау`.
 
 Серіктестердің тізімін және ынтымақтастық шарттарын қарауға мүмкіндік береді.
 
-### project_delete
+### {heading(project_delete)[id=project_delete]}
 
 Жеке кабинеттегі атауы: `Жобаны жою`.
 
 Барлық ендірілген ресурстарымен бірге [жобаны](/kz/tools-for-using-services/account/concepts/projects) толық жоюға мүмкіндік береді.
 
-### project_modify
+### {heading(project_modify)[id=project_modify]}
 
 Жеке кабинеттегі атауы: `Жобаны басқару`.
 
 [Жобаның](/kz/tools-for-using-services/account/concepts/projects) баптауларын өзгертуге мүмкіндік береді.
 
-### projects_delete
+### {heading(projects_delete)[id=projects_delete]}
 
 Жеке кабинеттегі атауы: `Жобаларды жою`.
 
 Жобаларды тізімнен жаппай немесе таңдап жоюға мүмкіндік береді.
 
-### projects_modify
+### {heading(projects_modify)[id=projects_modify]}
 
 Жеке кабинеттегі атауы: `Жобаларды басқару`.
 
 Жобалар тізімін және олардың жаһандық баптауларын өзгертуге мүмкіндік береді.
 
-### projects_quota_delete
+### {heading(projects_quota_delete)[id=projects_quota_delete]}
 
 Жеке кабинеттегі атауы: `Жоба квоталарын жою`.
 
 Таңдалған жобалар үшін ресурстар шектеулерін қалпына келтіруге мүмкіндік береді.
 
-### projects_quota_modify
+### {heading(projects_quota_modify)[id=projects_quota_modify]}
 
 Жеке кабинеттегі атауы: `Жоба квоталарын басқару`.
 
 Жобалар тобы үшін ресурс лимиттерін жаппай өзгертуге мүмкіндік береді.
 
-### projects_quota_view
+### {heading(projects_quota_view)[id=projects_quota_view]}
 
 Жеке кабинеттегі атауы: `Жоба квоталарын қарау`.
 
 Барлық жобалардағы квоталарды, лимиттерді және ресурстарды тұтыну деректерін қарауға мүмкіндік береді.
 
-### projects_view
+### {heading(projects_view)[id=projects_view]}
 
 Жеке кабинеттегі атауы: `Жобаларды қарау`.
 
 Бұлттағы барлық жобалардың тізімін қарауға мүмкіндік береді.
 
-### project_view
+### {heading(project_view)[id=project_view]}
 
 Жеке кабинеттегі атауы: `Жобаны қарау`.
 
 [Жобаның](/kz/tools-for-using-services/account/concepts/projects) параметрлері мен мәртебесі туралы егжей-тегжейлі ақпаратты қарауға мүмкіндік береді.
 
-### quota_delete
+### {heading(quota_delete)[id=quota_delete]}
 
 Жеке кабинеттегі атауы: `Квоталарды жою`.
 
 Жобада орнатылған ресурс шектеулерін қалпына келтіруге немесе жоюға мүмкіндік береді.
 
-### quota_modify
+### {heading(quota_modify)[id=quota_modify]}
 
 Жеке кабинеттегі атауы: `Квоталарды басқару`.
 
 Жоба үшін ресурстарды тұтыну квоталары мен лимиттерін өзгертуге мүмкіндік береді.
 
-### quota_view
+### {heading(quota_view)[id=quota_view]}
 
 Жеке кабинеттегі атауы: `Квоталарды қарау`.
 
 Ағымдағы квоталар мен лимиттерді, сондай-ақ тұтынылатын ресурстар көлемін қарауға мүмкіндік береді.
 
-### users_delete
+### {heading(users_delete)[id=users_delete]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды жою`.
 
 Пайдаланушыларды платформадан жоюға мүмкіндік береді.
 
-### users_modify
+### {heading(users_modify)[id=users_modify]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды басқару`.
 
 Платформа пайдаланушыларының есептік жазба деректерін құруға және өңдеуге мүмкіндік береді.
 
-### users_view
+### {heading(users_view)[id=users_view]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды қарау`.
 
 Платформа пайдаланушыларының жалпы тізімін қарауға мүмкіндік береді.
 
-## Контейнерлер және оркестрация
+## {heading(Контейнерлер және оркестрация)[id=iam-permissions-k8s]}
 
 Kubernetes негізіндегі оркестрация сервисін басқару.
 
-### ics_agent_delete
+### {heading(ics_agent_delete)[id=ics_agent_delete]}
 
 Жеке кабинеттегі атауы: `ICS агентін жою`.
 
 Инвентаризациялау және деректер жинау агенттерін өшіруге және жоюға мүмкіндік береді.
 
-### ics_agent_modify
+### {heading(ics_agent_modify)[id=ics_agent_modify]}
 
 Жеке кабинеттегі атауы: `ICS агентін басқару`.
 
 Инвентаризациялау және деректер жинау агенттерінің жұмыс параметрлерін баптауға мүмкіндік береді.
 
-### ics_agent_view
+### {heading(ics_agent_view)[id=ics_agent_view]}
 
 Жеке кабинеттегі атауы: `ICS агентін қарау`.
 
 ICS агенттерінің мәртебелері мен белсенділігін қарауға мүмкіндік береді.
 
-### k8s_cluster_delete
+### {heading(k8s_cluster_delete)[id=k8s_cluster_delete]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін жою`.
 
 Kubernetes кластерлерін толық жоюға мүмкіндік береді.
 
-### k8s_cluster_management_delete
+### {heading(k8s_cluster_management_delete)[id=k8s_cluster_management_delete]}
 
 Жеке кабинеттегі атауы: `Kubernetes әкімшілендіруін жою әрекеті`.
 
 Kubernetes-тегі әкімшілік өкілеттіктерді қайтарып алуға мүмкіндік береді.
 
-### k8s_cluster_management_modify
+### {heading(k8s_cluster_management_modify)[id=k8s_cluster_management_modify]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін әкімшілендіру`.
 
 Kubernetes орталарының басқару баптауларын өзгертуге мүмкіндік береді.
 
-### k8s_cluster_management_view
+### {heading(k8s_cluster_management_view)[id=k8s_cluster_management_view]}
 
 Жеке кабинеттегі атауы: `Kubernetes әкімшілендіруін қарау`.
 
 Kubernetes кластерлеріндегі басқару және құқықтар баптауларын қарауға мүмкіндік береді.
 
-### k8s_cluster_modify
+### {heading(k8s_cluster_modify)[id=k8s_cluster_modify]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін басқару`.
 
 Kubernetes кластерлерін жасауға мүмкіндік береді.
 
-### k8s_cluster_view
+### {heading(k8s_cluster_view)[id=k8s_cluster_view]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін қарау`.
 
 Барлық Kubernetes кластерлерінің мәртебелері мен параметрлерін қарауға мүмкіндік береді.
 
-## Мониторинг, трассировка және әкімшілендіру
+## {heading(Мониторинг, трассировка және әкімшілендіру)[id=iam-permissions-monitor-trace]}
 
 Трассировканы, маршруттауды және пайдаланушылар қауіпсіздігін басқару.
 
-### router_without_internet_delete
+### {heading(router_without_internet_delete)[id=router_without_internet_delete]}
 
 Жеке кабинеттегі атауы: `Интернетсіз роутерді жою`.
 
 Оқшауланған желілердегі маршрутизаторларды жоюға мүмкіндік береді.
 
-### router_without_internet_modify
+### {heading(router_without_internet_modify)[id=router_without_internet_modify]}
 
 Жеке кабинеттегі атауы: `Интернетсіз роутерді басқару`.
 
 Оқшауланған желілер ішіндегі маршруттауды баптауға мүмкіндік береді.
 
-### router_without_internet_view
+### {heading(router_without_internet_view)[id=router_without_internet_view]}
 
 Жеке кабинеттегі атауы: `Интернетсіз роутерді қарау`.
 
 Оқшауланған желілердегі жергілікті маршруттау параметрлерін қарауға мүмкіндік береді.
 
-### tracing_trace_delete
+### {heading(tracing_trace_delete)[id=tracing_trace_delete]}
 
 Жеке кабинеттегі атауы: `Трассировкаларды жою`.
 
 Жиналған трассировка деректерін жоюға мүмкіндік береді.
 
-### tracing_trace_modify
+### {heading(tracing_trace_modify)[id=tracing_trace_modify]}
 
 Жеке кабинеттегі атауы: `Трассировканы басқару`.
 
 Параметрлерді баптауға және сұрауларды жөндеу трассировкасы процестерін іске қосуға мүмкіндік береді.
 
-### tracing_trace_view
+### {heading(tracing_trace_view)[id=tracing_trace_view]}
 
 Жеке кабинеттегі атауы: `Трассировкаларды қарау`.
 
 Сұраулардың өту жолдары туралы ақпаратты және трассировкалар мониторингін қарауға мүмкіндік береді.
 
-### users_protect_delete
+### {heading(users_protect_delete)[id=users_protect_delete]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды қорғауды өшіру`.
 
 Пайдаланушылардан қауіпсіздік шектеулерін алып тастауға мүмкіндік береді.
 
-### users_protect_modify
+### {heading(users_protect_modify)[id=users_protect_modify]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды қорғауды басқару`.
 
 Пайдаланушылардың қауіпсіздік және қорғаныс саясаттарын баптауға мүмкіндік береді.
 
-### users_protect_view
+### {heading(users_protect_view)[id=users_protect_view]}
 
 Жеке кабинеттегі атауы: `Пайдаланушыларды қорғауды қарау`.
 
 Пайдаланушылар қауіпсіздігі мәртебелері бойынша аудит деректерін қарауға мүмкіндік береді.
 
-## Базалық инфрақұрылым
+## {heading(Базалық инфрақұрылым)[id=iam-permissions-basic-infrastructure]}
 
 Платформаның жұмысын қамтамасыз ететін Openstack компоненттерін және басқа да инфрақұрылымдық компоненттерді басқару.
 
-### barbican_delete
+### {heading(barbican_delete)[id=barbican_delete]}
 
 Жеке кабинеттегі атауы: `Құпияларды жою (Barbican)`.
 
 Құпиялар мен қол жеткізу кілттерін қайтарымсыз жоюға мүмкіндік береді.
 
-### barbican_modify
+### {heading(barbican_modify)[id=barbican_modify]}
 
 Жеке кабинеттегі атауы: `Құпияларды басқару (Barbican)`.
 
 Криптографиялық кілттерді жасауға және өзгертуге мүмкіндік береді.
 
-### barbican_view
+### {heading(barbican_view)[id=barbican_view]}
 
 Жеке кабинеттегі атауы: `Құпияларды қарау (Barbican)`.
 
 Қолданыстағы құпиялардың тізімін және метадеректерін қарауға мүмкіндік береді.
 
-### cinder_delete
+### {heading(cinder_delete)[id=cinder_delete]}
 
 Жеке кабинеттегі атауы: `Дискілерді жою (Cinder)`.
 
 Дискілерді жоюға және блоктық құрылғыларды тазартуға мүмкіндік береді.
 
-### cinder_modify
+### {heading(cinder_modify)[id=cinder_modify]}
 
 Жеке кабинеттегі атауы: `Дискілерді басқару (Cinder)`.
 
 Дискілерді жасауға және оларды басқаруға мүмкіндік береді.
 
-### cinder_view
+### {heading(cinder_view)[id=cinder_view]}
 
 Жеке кабинеттегі атауы: `Дискілерді қарау (Cinder)`.
 
 Дискілердің тізімін және олардың сипаттамаларын қарауға мүмкіндік береді.
 
-### cloudkitty_delete
+### {heading(cloudkitty_delete)[id=cloudkitty_delete]}
 
 Жеке кабинеттегі атауы: `Тарификация деректерін жою (Cloudkitty)`.
 
 Құнды есептеу туралы жазбаларды жоюға мүмкіндік береді.
 
-### cloudkitty_modify
+### {heading(cloudkitty_modify)[id=cloudkitty_modify]}
 
 Жеке кабинеттегі атауы: `Тарификацияны басқару (Cloudkitty)`.
 
 Құнды есептеу ережелері мен тарифтік жоспарларды өзгертуге мүмкіндік береді.
 
-### cloudkitty_view
+### {heading(cloudkitty_view)[id=cloudkitty_view]}
 
 Жеке кабинеттегі атауы: `Тарификацияны қарау (Cloudkitty)`.
 
 Шығындар детализациясын және ағымдағы тарифтерді қарауға мүмкіндік береді.
 
-### freezer_delete
+### {heading(freezer_delete)[id=freezer_delete]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмелерді жою`.
 
 Мұрағаттар мен деректердің резервтік көшірмелерін жоюға мүмкіндік береді.
 
-### freezer_modify
+### {heading(freezer_modify)[id=freezer_modify]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмелерді басқару (Freezer)`.
 
 Резервтік көшіру кестелерін баптауға және резервтік көшірмелер жасауды басқаруға мүмкіндік береді.
 
-### freezer_view
+### {heading(freezer_view)[id=freezer_view]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмелерді қарау`.
 
 Қолжетімді резервтік көшірмелердің тізімін және олардың жасалу мәртебелерін қарауға мүмкіндік береді.
 
-### glance_delete
+### {heading(glance_delete)[id=glance_delete]}
 
 Жеке кабинеттегі атауы: `Бейнелерді жою`.
 
 Диск үлгілері мен ОС бейнелерін жоюға мүмкіндік береді.
 
-### glance_modify
+### {heading(glance_modify)[id=glance_modify]}
 
 Жеке кабинеттегі атауы: `Бейнелерді басқару (Glance)`.
 
 ОС бейнелерін жүктеуге мүмкіндік береді.
 
-### glance_publish_delete
+### {heading(glance_publish_delete)[id=glance_publish_delete]}
 
 Жеке кабинеттегі атауы: `Бейнелер жарияланымын болдырмау`.
 
 Бейнелерді жарияланғандар тізімінен жоюға мүмкіндік береді. Бейне пайдаланушылар үшін қолжетімсіз болады.
 
-### glance_publish_modify
+### {heading(glance_publish_modify)[id=glance_publish_modify]}
 
 Жеке кабинеттегі атауы: `Бейнелер жарияланымын басқару`.
 
 Басқа пайдаланушылардың бейнелерге қол жеткізу құқықтарын өзгертуге мүмкіндік береді.
 
-### glance_publish_view
+### {heading(glance_publish_view)[id=glance_publish_view]}
 
 Жеке кабинеттегі атауы: `Бейнелер жарияланымын қарау`.
 
 Жүйелердің ортақ бейнелеріне қол жеткізу құқықтарын қарауға мүмкіндік береді.
 
-### glance_view
+### {heading(glance_view)[id=glance_view]}
 
 Жеке кабинеттегі атауы: `Бейнелерді қарау`.
 
 Қолжетімді ОС бейнелерінің каталогын қарауға мүмкіндік береді.
 
-### heat_delete
+### {heading(heat_delete)[id=heat_delete]}
 
 Жеке кабинеттегі атауы: `Оркестрация үлгілерін жою (Heat)`.
 
 Ресурс стектерін жоюға мүмкіндік береді.
 
-### heat_modify
+### {heading(heat_modify)[id=heat_modify]}
 
 Жеке кабинеттегі атауы: `Оркестрацияны басқару (Heat)`.
 
 Үлгілер бойынша инфрақұрылымды өрістетуге және ресурс стектерінің параметрлерін өзгертуге мүмкіндік береді.
 
-### heat_view
+### {heading(heat_view)[id=heat_view]}
 
 Жеке кабинеттегі атауы: `Оркестрацияны қарау (Heat)`.
 
 Инфрақұрылымды өрістету мәртебелерін бақылауға мүмкіндік береді.
 
-### keystone_delete
+### {heading(keystone_delete)[id=keystone_delete]}
 
 Жеке кабинеттегі атауы: `Keystone ішінен жою`.
 
 {linkto(/kz/access/iam/concepts/roles-reference/#organization_access_modify)[text=қол жеткізу субъектілері мен ұйымдық бірліктерді]} жоюға мүмкіндік береді.
 
-### keystone_modify
+### {heading(keystone_modify)[id=keystone_modify]}
 
 Жеке кабинеттегі атауы: `Идентификацияны басқару (Keystone)`.
 
 Жобадағы пайдаланушыларды басқаруға мүмкіндік береді.
 
-### keystone_view
+### {heading(keystone_view)[id=keystone_view]}
 
 Жеке кабинеттегі атауы: `Идентификацияны қарау (Keystone)`.
 
 Жобадағы рөлдер аудиті деректерін қарауға мүмкіндік береді.
 
-### magnum_delete
+### {heading(magnum_delete)[id=magnum_delete]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін жою (Magnum)`.
 
 Инфрақұрылым деңгейіндегі Kubernetes контейнерлеу орталарын жоюға мүмкіндік береді.
 
-### magnum_modify
+### {heading(magnum_modify)[id=magnum_modify]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін басқару (Magnum)`.
 
 Kubernetes сервистік инфрақұрылымын басқаруға, кластерлерді жасауға және олардың конфигурациясын өзгертуге мүмкіндік береді.
 
-### magnum_view
+### {heading(magnum_view)[id=magnum_view]}
 
 Жеке кабинеттегі атауы: `Kubernetes кластерлерін қарау (Magnum)`.
 
 Инфрақұрылымдағы Kubernetes кластерлерінің күйін қарауға мүмкіндік береді.
 
-### manila_delete
+### {heading(manila_delete)[id=manila_delete]}
 
 Жеке кабинеттегі атауы: `Файл қоймаларын жою`.
 
 Ортақ желілік файл қоймаларын жоюға мүмкіндік береді.
 
-### manila_modify
+### {heading(manila_modify)[id=manila_modify]}
 
 Жеке кабинеттегі атауы: `Файл қоймаларын басқару (Manila)`.
 
 Ортақ желілік файл қоймаларын жасауға және баптауға мүмкіндік береді.
 
-### manila_view
+### {heading(manila_view)[id=manila_view]}
 
 Жеке кабинеттегі атауы: `Файл қоймаларын қарау`.
 
 Ортақ желілік файл қоймаларының тізімін және параметрлерін қарауға мүмкіндік береді.
 
-### mcs_service_id_property_delete
+### {heading(mcs_service_id_property_delete)[id=mcs_service_id_property_delete]}
 
 Жеке кабинеттегі атауы: `Компонент ID қасиеттерін жою`.
 
 Платформа қызметтері идентификаторларының тізілімін тазартуға мүмкіндік береді.
 
-### mcs_service_id_property_modify
+### {heading(mcs_service_id_property_modify)[id=mcs_service_id_property_modify]}
 
 Жеке кабинеттегі атауы: `Компонент ID қасиеттерін басқару`.
 
 Платформа қызметтерінің метадеректері мен идентификаторларын өңдеуге мүмкіндік береді.
 
-### mcs_service_id_property_view
+### {heading(mcs_service_id_property_view)[id=mcs_service_id_property_view]}
 
 Жеке кабинеттегі атауы: `Компонент ID қасиеттерін қарау`.
 
 Платформаның барлық қызметтерінің тізілімін және идентификаторларын қарауға мүмкіндік береді.
 
-### murano_delete
+### {heading(murano_delete)[id=murano_delete]}
 
 Жеке кабинеттегі атауы: `Қолданбалар каталогынан жою (Murano)`.
 
 Қызметтер каталогынан қолданбалы БҚ-ны жоюға мүмкіндік береді.
 
-### murano_modify
+### {heading(murano_modify)[id=murano_modify]}
 
 Жеке кабинеттегі атауы: `Қолданбалар каталогын басқару (Murano)`.
 
 Қызметтер каталогына қолданбалы БҚ қосуға және оны баптауға мүмкіндік береді.
 
-### murano_view
+### {heading(murano_view)[id=murano_view]}
 
 Жеке кабинеттегі атауы: `Қолданбалар каталогын қарау (Murano)`.
 
 Қызметтер каталогындағы дайын қолданбалы шешімдерді таңдауға және қарауға мүмкіндік береді.
 
-### network_delete
+### {heading(network_delete)[id=network_delete]}
 
 Жеке кабинеттегі атауы: `Желіні жою (Жалпы)`.
 
 Желілік объектілерді толық тазартуға мүмкіндік береді.
 
-### network_modify
+### {heading(network_modify)[id=network_modify]}
 
 Жеке кабинеттегі атауы: `Желіні басқару (Жалпы)`.
 
 Бұлттың желілік байланысының жалпы параметрлерін өзгертуге мүмкіндік береді.
 
-### network_view
+### {heading(network_view)[id=network_view]}
 
 Жеке кабинеттегі атауы: `Желіні қарау (Жалпы)`.
 
 Желілік инфрақұрылымның жалпы аудиті деректерін қарауға мүмкіндік береді.
 
-### neutron_common_delete
+### {heading(neutron_common_delete)[id=neutron_common_delete]}
 
 Жеке кабинеттегі атауы: `Желінің жалпы баптауларын жою`.
 
 Жаһандық желілік конфигурацияларды қалпына келтіруге мүмкіндік береді.
 
-### neutron_common_modify
+### {heading(neutron_common_modify)[id=neutron_common_modify]}
 
 Жеке кабинеттегі атауы: `Желінің жалпы баптауларын басқару`.
 
 Желілік инфрақұрылымның жалпы параметрлерін өзгертуге мүмкіндік береді.
 
-### neutron_common_view
+### {heading(neutron_common_view)[id=neutron_common_view]}
 
 Жеке кабинеттегі атауы: `Желінің жалпы баптауларын қарау`.
 
 Бұлттың жалпы желілік моделін қарауға мүмкіндік береді.
 
-### neutron_delete
+### {heading(neutron_delete)[id=neutron_delete]}
 
 Жеке кабинеттегі атауы: `Желілерді жою (Neutron)`.
 
 Желілік инфрақұрылымнан виртуалды желілерді жоюға мүмкіндік береді.
 
-### neutron_modify
+### {heading(neutron_modify)[id=neutron_modify]}
 
 Жеке кабинеттегі атауы: `Желілерді басқару (Neutron)`.
 
 Виртуалды желілерді жасауға және желілік топологияны баптауға мүмкіндік береді.
 
-### neutron_view
+### {heading(neutron_view)[id=neutron_view]}
 
 Жеке кабинеттегі атауы: `Желілерді қарау (Neutron)`.
 
 Желілік инфрақұрылым визуализациясын және аудит деректерін қарауға мүмкіндік береді.
 
-### neutron_mtu_delete
+### {heading(neutron_mtu_delete)[id=neutron_mtu_delete]}
 
 Жеке кабинеттегі атауы: `MTU жою (Neutron)`.
 
 Пакеттер өнімділігі баптауларын қалпына келтіруге мүмкіндік береді.
 
-### neutron_mtu_modify
+### {heading(neutron_mtu_modify)[id=neutron_mtu_modify]}
 
 Жеке кабинеттегі атауы: `MTU басқару (Neutron)`.
 
 Желіні оңтайландыру үшін деректер пакеттерінің өлшемін өзгертуге мүмкіндік береді.
 
-### neutron_mtu_view
+### {heading(neutron_mtu_view)[id=neutron_mtu_view]}
 
 Жеке кабинеттегі атауы: `MTU қарау (Neutron)`.
 
 Желінің өнімділік параметрлерін қарауға мүмкіндік береді.
 
-### neutron_network_delete
+### {heading(neutron_network_delete)[id=neutron_network_delete]}
 
 Жеке кабинеттегі атауы: `Желілерді жою (Neutron)`.
 
 Жеке виртуалды желілерді жоюға мүмкіндік береді.
 
-### neutron_network_modify
+### {heading(neutron_network_modify)[id=neutron_network_modify]}
 
 Жеке кабинеттегі атауы: `Желілерді басқару (Neutron)`.
 
 Виртуалды желілер мен адрестік кеңістіктің параметрлерін өзгертуге мүмкіндік береді.
 
-### neutron_network_view
+### {heading(neutron_network_view)[id=neutron_network_view]}
 
 Жеке кабинеттегі атауы: `Желілерді қарау (Neutron)`.
 
 Виртуалды желілердің тізімін және сипаттамаларын қарауға мүмкіндік береді.
 
-### neutron_security_delete
+### {heading(neutron_security_delete)[id=neutron_security_delete]}
 
 Жеке кабинеттегі атауы: `Қауіпсіздік топтарын жою`.
 
 [Қауіпсіздік топтарын](/kz/networks/vnet/concepts/traffic-limiting) жоюға мүмкіндік береді.
 
-### neutron_security_modify
+### {heading(neutron_security_modify)[id=neutron_security_modify]}
 
 Жеке кабинеттегі атауы: `Қауіпсіздік топтарын басқару`.
 
 [Трафикті сүзгілеу ережелерін](/kz/networks/vnet/concepts/traffic-limiting) жасауға және өңдеуге мүмкіндік береді.
 
-### neutron_security_view
+### {heading(neutron_security_view)[id=neutron_security_view]}
 
 Жеке кабинеттегі атауы: `Қауіпсіздік топтарын қарау`.
 
 [Қол жеткізу ережелері мен желілік шектеулерді](/kz/networks/vnet/concepts/traffic-limiting) қарауға мүмкіндік береді.
 
-### nova_delete
+### {heading(nova_delete)[id=nova_delete]}
 
 Жеке кабинеттегі атауы: `ВМ жою (Nova)`.
 
 ВМ инстанстарын жоюға мүмкіндік береді.
 
-### nova_modify
+### {heading(nova_modify)[id=nova_modify]}
 
 Жеке кабинеттегі атауы: `ВМ басқару (Nova)`.
 
 [Виртуалды машиналардың](/kz/computing/iaas) өмірлік циклін басқаруға мүмкіндік береді.
 
-### nova_view
+### {heading(nova_view)[id=nova_view]}
 
 Жеке кабинеттегі атауы: `ВМ қарау (Nova)`.
 
 Барлық ВМ инстанстарының тізімін және күйін қарауға мүмкіндік береді.
 
-### nova_flavor_extra_specs_delete
+### {heading(nova_flavor_extra_specs_delete)[id=nova_flavor_extra_specs_delete]}
 
 Жеке кабинеттегі атауы: `Flavors қосымша параметрлерін жою`.
 
 ВМ [конфигурация қалыптарының](/kz/computing/iaas/concepts/vm/flavor) кеңейтілген баптауларын жоюға мүмкіндік береді.
 
-### nova_flavor_extra_specs_modify
+### {heading(nova_flavor_extra_specs_modify)[id=nova_flavor_extra_specs_modify]}
 
 Жеке кабинеттегі атауы: `Flavors қосымша параметрлерін басқару`.
 
 ВМ [конфигурация қалыптарының](/kz/computing/iaas/concepts/vm/flavor) кеңейтілген сипаттамаларын баптауға мүмкіндік береді.
 
-### nova_flavor_extra_specs_view
+### {heading(nova_flavor_extra_specs_view)[id=nova_flavor_extra_specs_view]}
 
 Жеке кабинеттегі атауы: `Flavors қосымша параметрлерін қарау`.
 
 ВМ [конфигурация қалыптарының](/kz/computing/iaas/concepts/vm/flavor) кеңейтілген баптауларын қарауға мүмкіндік береді.
 
-### nova_migration_delete
+### {heading(nova_migration_delete)[id=nova_migration_delete]}
 
 Жеке кабинеттегі атауы: `Миграцияны жою`.
 
 ВМ миграциясы процесін мәжбүрлеп тоқтатуға мүмкіндік береді.
 
-### nova_migration_modify
+### {heading(nova_migration_modify)[id=nova_migration_modify]}
 
 Жеке кабинеттегі атауы: `ВМ миграциясын басқару`.
 
 ВМ-ді хосттар арасында тасымалдауды бастауға және тасымалдау процесін басқаруға мүмкіндік береді.
 
-### nova_migration_view
+### {heading(nova_migration_view)[id=nova_migration_view]}
 
 Жеке кабинеттегі атауы: `ВМ миграциясын қарау`.
 
 ВМ тасымалдау мәртебелері мен тарихын қарауға мүмкіндік береді.
 
-### nova_op_delete
+### {heading(nova_op_delete)[id=nova_op_delete]}
 
 Жеке кабинеттегі атауы: `ВМ операцияларын жою (Nova)`.
 
 ВМ үстіндегі ағымдағы операцияларды үзуге мүмкіндік береді.
 
-### nova_op_modify
+### {heading(nova_op_modify)[id=nova_op_modify]}
 
 Жеке кабинеттегі атауы: `ВМ операцияларын басқару (Nova)`.
 
 ВМ қуатын және күйін басқаруға мүмкіндік береді.
 
-### nova_op_view
+### {heading(nova_op_view)[id=nova_op_view]}
 
 Жеке кабинеттегі атауы: `ВМ операцияларын қарау (Nova)`.
 
 ВМ үстінде орындалған барлық операциялардың тарихын қарауға мүмкіндік береді.
 
-### nova_vm_delete
+### {heading(nova_vm_delete)[id=nova_vm_delete]}
 
 Жеке кабинеттегі атауы: `Виртуалды машиналарды жою`.
 
 ВМ-ді қайтарымсыз жоюға мүмкіндік береді.
 
-### nova_vm_modify
+### {heading(nova_vm_modify)[id=nova_vm_modify]}
 
 Жеке кабинеттегі атауы: `Виртуалды машиналарды басқару`.
 
 ВМ конфигурациясы мен жабдық параметрлерін өзгертуге мүмкіндік береді.
 
-### nova_vm_view
+### {heading(nova_vm_view)[id=nova_vm_view]}
 
 Жеке кабинеттегі атауы: `Виртуалды машиналарды қарау`.
 
 ВМ мәртебелерін және ВМ жұмысы туралы деректерді бақылауға мүмкіндік береді.
 
-### octavia_delete
+### {heading(octavia_delete)[id=octavia_delete]}
 
 Жеке кабинеттегі атауы: `Балансировщиктерді жою (Octavia)`.
 
 [Жүктеме балансировщиктерін](/kz/networks/balancing) жоюға мүмкіндік береді.
 
-### octavia_modify
+### {heading(octavia_modify)[id=octavia_modify]}
 
 Жеке кабинеттегі атауы: `Балансировщиктерді басқару (Octavia)`.
 
 [Жүктеме балансировщиктерін](/kz/networks/balancing) жасауға және инстанстар арасында трафикті бөлуді баптауға мүмкіндік береді.
 
-### octavia_view
+### {heading(octavia_view)[id=octavia_view]}
 
 Жеке кабинеттегі атауы: `Балансировщиктерді қарау (Octavia)`.
 
 [Жүктеме балансировщиктерінің](/kz/networks/balancing) параметрлерін қарауға мүмкіндік береді.
 
-### public_dns_delete
+### {heading(public_dns_delete)[id=public_dns_delete]}
 
 Жеке кабинеттегі атауы: `Public DNS жою`.
 
 Сыртқы [DNS-жазбаларды](/kz/networks/dns/instructions/publicdns/records) жоюға мүмкіндік береді.
 
-### public_dns_modify
+### {heading(public_dns_modify)[id=public_dns_modify]}
 
 Жеке кабинеттегі атауы: `Public DNS басқару`.
 
 Сыртқы желілердегі домен аймақтарын және [DNS-жазбаларды](/kz/networks/dns/instructions/publicdns/records) басқаруға мүмкіндік береді.
 
-### public_dns_view
+### {heading(public_dns_view)[id=public_dns_view]}
 
 Жеке кабинеттегі атауы: `Public DNS қарау`.
 
 Жария домендік атауларды қарауға мүмкіндік береді.
 
-### sdn_crossproject_port_delete
+### {heading(sdn_crossproject_port_delete)[id=sdn_crossproject_port_delete]}
 
 Жеке кабинеттегі атауы: `Жобалараралық порттарды жою`.
 
 Жобалар арасындағы желілік байланыстарды үзуге мүмкіндік береді.
 
-### sdn_crossproject_port_modify
+### {heading(sdn_crossproject_port_modify)[id=sdn_crossproject_port_modify]}
 
 Жеке кабинеттегі атауы: `Жобалараралық порттарды басқару`.
 
 Әртүрлі жобалар арасындағы желілік өзара әрекеттесуді баптауға мүмкіндік береді.
 
-### sdn_crossproject_port_view
+### {heading(sdn_crossproject_port_view)[id=sdn_crossproject_port_view]}
 
 Жеке кабинеттегі атауы: `Жобалараралық порттарды қарау`.
 
 Жобалардың тәуелсіз инфрақұрылымдарын интеграциялау үшін аудит деректерін қарауға мүмкіндік береді.
 
-### trove_datastore_delete
+### {heading(trove_datastore_delete)[id=trove_datastore_delete]}
 
 Жеке кабинеттегі атауы: `Деректер түрлерін жою (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі қолжетімді СУБД тізімін шектеуге мүмкіндік береді.
 
-### trove_datastore_modify
+### {heading(trove_datastore_modify)[id=trove_datastore_modify]}
 
 Жеке кабинеттегі атауы: `Деректер түрлерін басқару (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі қолжетімді СУБД нұсқалары мен түрлерін басқаруға мүмкіндік береді.
 
-### trove_datastore_view
+### {heading(trove_datastore_view)[id=trove_datastore_view]}
 
 Жеке кабинеттегі атауы: `Деректер түрлерін қарау (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі қолдау көрсетілетін дерекқор технологияларын қарауға мүмкіндік береді.
 
-### trove_delete
+### {heading(trove_delete)[id=trove_delete]}
 
 Жеке кабинеттегі атауы: `СУБД жою (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі СУБД даналарын жоюға мүмкіндік береді.
 
-### trove_modify
+### {heading(trove_modify)[id=trove_modify]}
 
 Жеке кабинеттегі атауы: `СУБД басқару (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі СУБД даналарын жасауға және өзгертуге мүмкіндік береді.
 
-### trove_view
+### {heading(trove_view)[id=trove_view]}
 
 Жеке кабинеттегі атауы: `СУБД қарау (Trove)`.
 
 [Cloud Databases](/kz/dbs/dbaas) сервисіндегі дерекқорлардың тізімін және сипаттамаларын қарауға мүмкіндік береді.
 
-### tuareg_delete
+### {heading(tuareg_delete)[id=tuareg_delete]}
 
 Жеке кабинеттегі атауы: `Tuareg компонентін жою`.
 
 ВМ-де іске қосылған скрипттерді жоюға мүмкіндік береді.
 
-### tuareg_modify
+### {heading(tuareg_modify)[id=tuareg_modify]}
 
 Жеке кабинеттегі атауы: `Tuareg компонентін басқару`.
 
 ВМ-де скрипттерді іске қосуды басқаруға мүмкіндік береді.
 
-### tuareg_view
+### {heading(tuareg_view)[id=tuareg_view]}
 
 Жеке кабинеттегі атауы: `Tuareg компонентін қарау`.
 
 ВМ-де қандай скрипттер іске қосылғанын қарауға мүмкіндік береді.
 
-### vdi_tuareg_delete
+### {heading(vdi_tuareg_delete)[id=vdi_tuareg_delete]}
 
 Жеке кабинеттегі атауы: `Виртуалды жұмыс үстелін жою (Tuareg)`.
 
 [Қашықтағы жұмыс үстелдерінің](/kz/computing/cloud-desktops) сессиялары мен ресурстарын жоюға мүмкіндік береді.
 
-### vdi_tuareg_modify
+### {heading(vdi_tuareg_modify)[id=vdi_tuareg_modify]}
 
 Жеке кабинеттегі атауы: `Виртуалды жұмыс үстелдерін басқару (Tuareg)`.
 
 VDI-шешімі аясында [қашықтағы жұмыс үстелдерін](/kz/computing/cloud-desktops) баптауға және оларды басқаруға мүмкіндік береді.
 
-### vdi_tuareg_view
+### {heading(vdi_tuareg_view)[id=vdi_tuareg_view]}
 
 Жеке кабинеттегі атауы: `Виртуалды жұмыс үстелін қарау (Tuareg)`.
 
 [Қашықтағы жұмыс үстелдері](/kz/computing/cloud-desktops) пайдаланушыларының белсенділігін бақылауға мүмкіндік береді.
 
-## Data Platform
+## {heading(Data Platform)[id=iam-permissions-data-platform]}
 
 VK Data Platform компоненттерін жалпы басқару.
 
-### dp_airflow_delete
+### {heading(dp_airflow_delete)[id=dp_airflow_delete]}
 
 Жеке кабинеттегі атауы: `Airflow компонентін жою`.
 
 Airflow компонентінің процестері мен ресурстарын жоюға мүмкіндік береді.
 
-### dp_airflow_modify
+### {heading(dp_airflow_modify)[id=dp_airflow_modify]}
 
 Жеке кабинеттегі атауы: `Airflow компонентін басқару`.
 
 Тапсырмаларды оркестрациялау жұмыс процестерін жасауға және баптауға мүмкіндік береді.
 
-### dp_airflow_view
+### {heading(dp_airflow_view)[id=dp_airflow_view]}
 
 Жеке кабинеттегі атауы: `Airflow компонентін қарау`.
 
 Airflow компонентіндегі тапсырмалардың орындалуын және осы компоненттің мәртебесін қарауға мүмкіндік береді.
 
-### dp_clickhouse_delete
+### {heading(dp_clickhouse_delete)[id=dp_clickhouse_delete]}
 
 Жеке кабинеттегі атауы: `ClickHouse компонентін жою`.
 
 ClickHouse дерекқорлары кластерлерін жоюға мүмкіндік береді.
 
-### dp_clickhouse_modify
+### {heading(dp_clickhouse_modify)[id=dp_clickhouse_modify]}
 
 Жеке кабинеттегі атауы: `ClickHouse компонентін басқару`.
 
 ClickHouse аналитикалық дерекқорларының кластерлерін өзгертуге мүмкіндік береді.
 
-### dp_clickhouse_view
+### {heading(dp_clickhouse_view)[id=dp_clickhouse_view]}
 
 Жеке кабинеттегі атауы: `ClickHouse компонентін қарау`.
 
 ClickHouse дерекқорларының күйі мен параметрлерін қарауға мүмкіндік береді.
 
-### dp_datahub_delete
+### {heading(dp_datahub_delete)[id=dp_datahub_delete]}
 
 Жеке кабинеттегі атауы: `DataHub компонентін жою`.
 
 DataHub ішіндегі жазбалар мен метадеректерді жоюға мүмкіндік береді.
 
-### dp_datahub_modify
+### {heading(dp_datahub_modify)[id=dp_datahub_modify]}
 
 Жеке кабинеттегі атауы: `DataHub компонентін басқару`.
 
 Метадеректер каталогын және деректер байланыстарын басқаруға мүмкіндік береді.
 
-### dp_datahub_view
+### {heading(dp_datahub_view)[id=dp_datahub_view]}
 
 Жеке кабинеттегі атауы: `DataHub компонентін қарау`.
 
 DataHub ішіндегі метадеректер жазбаларының тізілімін қарауға мүмкіндік береді.
 
-### dp_flink_delete
+### {heading(dp_flink_delete)[id=dp_flink_delete]}
 
 Жеке кабинеттегі атауы: `Flink компонентін жою`.
 
 [Cloud Flink](/kz/data-platform/flink/concepts/about) сервисінің есептеу ресурстарын тоқтатуға және жоюға мүмкіндік береді.
 
-### dp_flink_modify
+### {heading(dp_flink_modify)[id=dp_flink_modify]}
 
 Жеке кабинеттегі атауы: `Flink компонентін басқару`.
 
 [Cloud Flink](/kz/data-platform/flink/concepts/about) сервисінің көмегімен деректерді ағындық өңдеу тапсырмаларын баптауға мүмкіндік береді.
 
-### dp_flink_view
+### {heading(dp_flink_view)[id=dp_flink_view]}
 
 Жеке кабинеттегі атауы: `Flink компонентін қарау`.
 
 [Cloud Flink](/kz/data-platform/flink/concepts/about) сервисіндегі деректерді өңдеу ағындарын бақылауға мүмкіндік береді.
 
-### dp_greenplum_delete
+### {heading(dp_greenplum_delete)[id=dp_greenplum_delete]}
 
 Жеке кабинеттегі атауы: `Greenplum компонентін жою`.
 
 Жаппай параллельді деректер қоймалары кластерлерін жоюға және Greenplum компонентінің деректерін тазартуға мүмкіндік береді.
 
-### dp_greenplum_modify
+### {heading(dp_greenplum_modify)[id=dp_greenplum_modify]}
 
 Жеке кабинеттегі атауы: `Greenplum компонентін басқару`.
 
 Жаппай параллельді деректер қоймаларын баптауға және оларды басқаруға мүмкіндік береді.
 
-### dp_greenplum_view
+### {heading(dp_greenplum_view)[id=dp_greenplum_view]}
 
 Жеке кабинеттегі атауы: `Greenplum компонентін қарау`.
 
 Greenplum компоненті деректер қоймасының мәртебелері мен ресурстарын қарауға мүмкіндік береді.
 
-### dp_iceberg_metastore_delete
+### {heading(dp_iceberg_metastore_delete)[id=dp_iceberg_metastore_delete]}
 
 Жеке кабинеттегі атауы: `Iceberg Metastore жою`.
 
 [Cloud Iceberg Metastore](/kz/data-platform/iceberg-metastore/concepts/about) каталогтарын тазартуға және метадеректерін жоюға мүмкіндік береді.
 
-### dp_iceberg_metastore_modify
+### {heading(dp_iceberg_metastore_modify)[id=dp_iceberg_metastore_modify]}
 
 Жеке кабинеттегі атауы: `Iceberg Metastore басқару`.
 
 [Cloud Iceberg Metastore](/kz/data-platform/iceberg-metastore/concepts/about) сервисіндегі кестелер каталогтары мен метадеректерін басқаруға мүмкіндік береді.
 
-### dp_iceberg_metastore_view
+### {heading(dp_iceberg_metastore_view)[id=dp_iceberg_metastore_view]}
 
 Жеке кабинеттегі атауы: `Iceberg Metastore қарау`.
 
 [Cloud Iceberg Metastore](/kz/data-platform/iceberg-metastore/concepts/about) кестелерінің құрылымы мен метадеректерін қарауға мүмкіндік береді.
 
-### dp_jatoba_delete
+### {heading(dp_jatoba_delete)[id=dp_jatoba_delete]}
 
 Жеке кабинеттегі атауы: `Jatoba компонентін жою`.
 
 Jatoba БД даналары мен ресурстарын жоюға мүмкіндік береді.
 
-### dp_jatoba_modify
+### {heading(dp_jatoba_modify)[id=dp_jatoba_modify]}
 
 Жеке кабинеттегі атауы: `Jatoba компонентін басқару`.
 
 Jatoba негізіндегі қорғалған БД құруға және оларды басқаруға мүмкіндік береді.
 
-### dp_jatoba_view
+### {heading(dp_jatoba_view)[id=dp_jatoba_view]}
 
 Жеке кабинеттегі атауы: `Jatoba компонентін қарау`.
 
 Jatoba СУБД күйін қарауға мүмкіндік береді.
 
-### dp_jupyterhub_delete
+### {heading(dp_jupyterhub_delete)[id=dp_jupyterhub_delete]}
 
 Жеке кабинеттегі атауы: `JupyterHub компонентін жою`.
 
 JupyterHub серверлері мен жұмыс кеңістіктерін жоюға мүмкіндік береді.
 
-### dp_jupyterhub_modify
+### {heading(dp_jupyterhub_modify)[id=dp_jupyterhub_modify]}
 
 Жеке кабинеттегі атауы: `JupyterHub компонентін басқару`.
 
 Деректерді талдауға арналған интерактивті орталарды жасауға және баптауға мүмкіндік береді.
 
-### dp_jupyterhub_view
+### {heading(dp_jupyterhub_view)[id=dp_jupyterhub_view]}
 
 Жеке кабинеттегі атауы: `JupyterHub компонентін қарау`.
 
 JupyterHub ішіндегі белсенді әзірлеу орталарын қарауға мүмкіндік береді.
 
-### dp_kafka_delete
+### {heading(dp_kafka_delete)[id=dp_kafka_delete]}
 
 Жеке кабинеттегі атауы: `Kafka компонентін жою`.
 
 [Cloud Kafka](/kz/data-platform/kafka/concepts/about) сервисінің кластерлері мен топиктерін жоюға мүмкіндік береді.
 
-### dp_kafka_modify
+### {heading(dp_kafka_modify)[id=dp_kafka_modify]}
 
 Жеке кабинеттегі атауы: `Kafka компонентін басқару`.
 
 [Cloud Kafka](/kz/data-platform/kafka/concepts/about) сервисінде топиктер жасауға және хабарлама брокерлерінің параметрлерін баптауға мүмкіндік береді.
 
-### dp_kafka_view
+### {heading(dp_kafka_view)[id=dp_kafka_view]}
 
 Жеке кабинеттегі атауы: `Kafka компонентін қарау`.
 
 [Cloud Kafka](/kz/data-platform/kafka/concepts/about) сервисіндегі кезектер мен деректер ағындарының күйін бақылауға мүмкіндік береді.
 
-### dp_labelstudio_delete
+### {heading(dp_labelstudio_delete)[id=dp_labelstudio_delete]}
 
 Жеке кабинеттегі атауы: `LabelStudio компонентін жою`.
 
 Жобалар мен деректерді таңбалау нәтижелерін жоюға мүмкіндік береді.
 
-### dp_labelstudio_modify
+### {heading(dp_labelstudio_modify)[id=dp_labelstudio_modify]}
 
 Жеке кабинеттегі атауы: `LabelStudio компонентін басқару`.
 
 Жобаларды жасауға және деректерді таңбалау процесін басқаруға мүмкіндік береді.
 
-### dp_labelstudio_view
+### {heading(dp_labelstudio_view)[id=dp_labelstudio_view]}
 
 Жеке кабинеттегі атауы: `LabelStudio компонентін қарау`.
 
 Оқыту деректерін дайындау және таңбалау процестерін бақылауға мүмкіндік береді.
 
-### dp_mlflow_delete
+### {heading(dp_mlflow_delete)[id=dp_mlflow_delete]}
 
 Жеке кабинеттегі атауы: `MLflow компонентін жою`.
 
 Машиналық оқыту эксперименттері мен модель нұсқалары туралы деректерді жоюға мүмкіндік береді.
 
-### dp_mlflow_modify
+### {heading(dp_mlflow_modify)[id=dp_mlflow_modify]}
 
 Жеке кабинеттегі атауы: `MLflow компонентін басқару`.
 
 Модельдерді тіркеуге және машиналық оқыту эксперименттерінің өмірлік циклін басқаруға мүмкіндік береді.
 
-### dp_mlflow_view
+### {heading(dp_mlflow_view)[id=dp_mlflow_view]}
 
 Жеке кабинеттегі атауы: `MLflow компонентін қарау`.
 
 Эксперименттер метрикаларын және машиналық оқыту модельдерінің тізілімін қарауға мүмкіндік береді.
 
-### dp_nifi_delete
+### {heading(dp_nifi_delete)[id=dp_nifi_delete]}
 
 Жеке кабинеттегі атауы: `NiFi компонентін жою`.
 
 NiFi конвейерлерін тоқтатуға және ресурстарын жоюға мүмкіндік береді.
 
-### dp_nifi_modify
+### {heading(dp_nifi_modify)[id=dp_nifi_modify]}
 
 Жеке кабинеттегі атауы: `NiFi компонентін басқару`.
 
 Жүйелер арасындағы автоматтандырылған деректер ағындарын баптауға мүмкіндік береді.
 
-### dp_nifi_view
+### {heading(dp_nifi_view)[id=dp_nifi_view]}
 
 Жеке кабинеттегі атауы: `NiFi компонентін қарау`.
 
 NiFi ішіндегі деректер ағындарының визуализациясы мен мониторинг деректерін қарауға мүмкіндік береді.
 
-### dp_opensearch_delete
+### {heading(dp_opensearch_delete)[id=dp_opensearch_delete]}
 
 Жеке кабинеттегі атауы: `OpenSearch компонентін жою`.
 
 OpenSearch іздеу кластерлері мен индекстерін жоюға мүмкіндік береді.
 
-### dp_opensearch_modify
+### {heading(dp_opensearch_modify)[id=dp_opensearch_modify]}
 
 Жеке кабинеттегі атауы: `OpenSearch компонентін басқару`.
 
 Іздеу кластерлерін және деректерді индекстеу параметрлерін баптауға мүмкіндік береді.
 
-### dp_opensearch_view
+### {heading(dp_opensearch_view)[id=dp_opensearch_view]}
 
 Жеке кабинеттегі атауы: `OpenSearch компонентін қарау`.
 
 OpenSearch компонентінің аудит деректерін және күйін қарауға мүмкіндік береді.
 
-### dp_postgres_delete
+### {heading(dp_postgres_delete)[id=dp_postgres_delete]}
 
 Жеке кабинеттегі атауы: `PostgreSQL компонентін жою`.
 
 PostgreSQL БД даналарын жоюға және қоймаларын тазартуға мүмкіндік береді.
 
-### dp_postgres_modify
+### {heading(dp_postgres_modify)[id=dp_postgres_modify]}
 
 Жеке кабинеттегі атауы: `PostgreSQL компонентін басқару`.
 
 PostgreSQL реляциялық БД жасауға және өзгертуге мүмкіндік береді.
 
-### dp_postgres_view
+### {heading(dp_postgres_view)[id=dp_postgres_view]}
 
 Жеке кабинеттегі атауы: `PostgreSQL компонентін қарау`.
 
 PostgreSQL БД сипаттамалары мен мәртебелерін қарауға мүмкіндік береді.
 
-### dp_redis_delete
+### {heading(dp_redis_delete)[id=dp_redis_delete]}
 
 Жеке кабинеттегі атауы: `Redis компонентін жою`.
 
 Redis даналарын жоюға және кэшті тазартуға мүмкіндік береді.
 
-### dp_redis_modify
+### {heading(dp_redis_modify)[id=dp_redis_modify]}
 
 Жеке кабинеттегі атауы: `Redis компонентін басқару`.
 
 Жадтағы жоғары өнімді қоймалардың параметрлерін баптауға мүмкіндік береді.
 
-### dp_redis_view
+### {heading(dp_redis_view)[id=dp_redis_view]}
 
 Жеке кабинеттегі атауы: `Redis компонентін қарау`.
 
 Жадты пайдалануды және Redis күйін бақылауға мүмкіндік береді.
 
-### dp_spark_delete
+### {heading(dp_spark_delete)[id=dp_spark_delete]}
 
 Жеке кабинеттегі атауы: `Spark компонентін жою`.
 
 [VK Data Platform-тағы Spark](/kz/data-platform/spark) сервисінің есептеу сессияларын тоқтатуға және ресурстарын жоюға мүмкіндік береді.
 
-### dp_spark_modify
+### {heading(dp_spark_modify)[id=dp_spark_modify]}
 
 Жеке кабинеттегі атауы: `Spark компонентін басқару`.
 
 [VK Data Platform-тағы Spark](/kz/data-platform/spark) сервисінде ресурстарды конфигурациялауға және деректерді пакеттік өңдеу тапсырмаларын іске қосуға мүмкіндік береді.
 
-### dp_spark_view
+### {heading(dp_spark_view)[id=dp_spark_view]}
 
 Жеке кабинеттегі атауы: `Spark компонентін қарау`.
 
 [VK Data Platform-тағы Spark](/kz/data-platform/spark) сервисі тапсырмаларының орындалу тарихы мен мәртебелерін қарауға мүмкіндік береді.
 
-### dp_standalone_delete
+### {heading(dp_standalone_delete)[id=dp_standalone_delete]}
 
 Жеке кабинеттегі атауы: `Standalone компоненттерін жою`.
 
 Деректер платформасының оқшауланған сервистерінің даналарын жоюға мүмкіндік береді.
 
-### dp_standalone_modify
+### {heading(dp_standalone_modify)[id=dp_standalone_modify]}
 
 Жеке кабинеттегі атауы: `Standalone компоненттерін басқару`.
 
 Деректер платформасының оқшауланған сервистерінің параметрлерін баптауға мүмкіндік береді.
 
-### dp_standalone_view
+### {heading(dp_standalone_view)[id=dp_standalone_view]}
 
 Жеке кабинеттегі атауы: `Standalone компоненттерін қарау`.
 
 Деректер платформасының оқшауланған сервистерінің тізімін қарауға мүмкіндік береді.
 
-### dp_tarantool_cdc_delete
+### {heading(dp_tarantool_cdc_delete)[id=dp_tarantool_cdc_delete]}
 
 Жеке кабинеттегі атауы: `Tarantool CDC жою`.
 
 Tarantool CDC ішіндегі түсіру процестерін тоқтатуға және деректер ағындарын жоюға мүмкіндік береді.
 
-### dp_tarantool_cdc_modify
+### {heading(dp_tarantool_cdc_modify)[id=dp_tarantool_cdc_modify]}
 
 Жеке кабинеттегі атауы: `Tarantool CDC басқару`.
 
 Tarantool CDC көмегімен репликация үшін деректер өзгерістерін түсіру механизмдерін баптауға мүмкіндік береді.
 
-### dp_tarantool_cdc_view
+### {heading(dp_tarantool_cdc_view)[id=dp_tarantool_cdc_view]}
 
 Жеке кабинеттегі атауы: `Tarantool CDC қарау`.
 
 Tarantool CDC ішіндегі өзгертілген деректерді беру мәртебелерін бақылауға мүмкіндік береді.
 
-### dp_tarantool_db_delete
+### {heading(dp_tarantool_db_delete)[id=dp_tarantool_db_delete]}
 
 Жеке кабинеттегі атауы: `Tarantool DB жою`.
 
 Tarantool БД даналарын жоюға және деректерін тазартуға мүмкіндік береді.
 
-### dp_tarantool_db_modify
+### {heading(dp_tarantool_db_modify)[id=dp_tarantool_db_modify]}
 
 Жеке кабинеттегі атауы: `Tarantool DB басқару`.
 
 Tarantool компонентінің көмегімен жедел жадтағы дерекқорларды конфигурациялауға және басқаруға мүмкіндік береді.
 
-### dp_tarantool_db_view
+### {heading(dp_tarantool_db_view)[id=dp_tarantool_db_view]}
 
 Жеке кабинеттегі атауы: `Tarantool DB қарау`.
 
 Tarantool БД күйін және өнімділік параметрлерін қарауға мүмкіндік береді.
 
-### dp_trino_delete
+### {heading(dp_trino_delete)[id=dp_trino_delete]}
 
 Жеке кабинеттегі атауы: `Trino компонентін жою`.
 
 [Cloud Trino](/kz/data-platform/trino/concepts/about) сервисінің есептеу ресурстарын жоюға мүмкіндік береді.
 
-### dp_trino_modify
+### {heading(dp_trino_modify)[id=dp_trino_modify]}
 
 Жеке кабинеттегі атауы: `Trino компонентін басқару`.
 
 [Cloud Trino](/kz/data-platform/trino/concepts/about) сервисінде әртүрлі дереккөздерге таратылған SQL-сұрауларды баптауға мүмкіндік береді.
 
-### dp_trino_view
+### {heading(dp_trino_view)[id=dp_trino_view]}
 
 Жеке кабинеттегі атауы: `Trino компонентін қарау`.
 
 [Cloud Trino](/kz/data-platform/trino/concepts/about) сервисіндегі сұраулардың орындалуын және сервис мәртебелерін бақылауға мүмкіндік береді.
 
-## Data Platform Kafka
+## {heading(Data Platform Kafka)[id=iam-permissions-dp-kafka]}
 
 VK Data Platform жүйесіндегі [Cloud Kafka](/kz/data-platform/kafka) сервисін басқару.
 
-### dp_kafka_instances_audit
+### {heading(dp_kafka_instances_audit)[id=dp_kafka_instances_audit]}
 
 Жеке кабинеттегі атауы: `Kafka инстансы оқиғаларын қарау`.
 
 Cloud Kafka сервисі инстансындағы оқиғаларды қарауға мүмкіндік береді.
 
-### dp_kafka_instances_change
+### {heading(dp_kafka_instances_change)[id=dp_kafka_instances_change]}
 
 Жеке кабинеттегі атауы: `Kafka масштабтауын басқару`.
 
 Cloud Kafka сервисі инстансын тігінен немесе көлденеңінен масштабтауға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_kafka_instances_create
+### {heading(dp_kafka_instances_create)[id=dp_kafka_instances_create]}
 
 Жеке кабинеттегі атауы: `Kafka инстансын жасау`.
 
 Cloud Kafka сервисінің инстанстарын жасауға мүмкіндік береді.
 
-### dp_kafka_instances_cruisecontrol
+### {heading(dp_kafka_instances_cruisecontrol)[id=dp_kafka_instances_cruisecontrol]}
 
 Жеке кабинеттегі атауы: `CruiseControl Kafka баптауларын басқару`.
 
 Cloud Kafka сервисіндегі жоғары жүктемелі кластерлерді басқаруға арналған CruiseControl құралының баптауларын өзгертуге мүмкіндік береді.
 
-### dp_kafka_instances_delete
+### {heading(dp_kafka_instances_delete)[id=dp_kafka_instances_delete]}
 
 Жеке кабинеттегі атауы: `Kafka инстансын жою`.
 
 Cloud Kafka сервисінің инстанстарын жоюға мүмкіндік береді.
 
-### dp_kafka_instances_list
+### {heading(dp_kafka_instances_list)[id=dp_kafka_instances_list]}
 
 Жеке кабинеттегі атауы: `Kafka инстанстары тізімін қарау`.
 
 Cloud Kafka сервисі инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_kafka_instances_maintenance
+### {heading(dp_kafka_instances_maintenance)[id=dp_kafka_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Kafka қызмет көрсету баптауларын басқару`.
 
 Cloud Kafka кластеріне қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_kafka_instances_reboot
+### {heading(dp_kafka_instances_reboot)[id=dp_kafka_instances_reboot]}
 
 Жеке кабинеттегі атауы: `Kafka инстансын қайта жүктеу`.
 
 Cloud Kafka сервисінің инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_kafka_instances_scaledisk
+### {heading(dp_kafka_instances_scaledisk)[id=dp_kafka_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Kafka дискін ұлғайту`.
 
 Cloud Kafka сервисі инстансындағы диск көлемін ұлғайтуға мүмкіндік береді.
 
-### dp_kafka_instances_versionupdate
+### {heading(dp_kafka_instances_versionupdate)[id=dp_kafka_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Kafka нұсқасын жаңарту`.
 
 Cloud Kafka сервисі инстансындағы Apache Kafka өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_kafka_instances_view
+### {heading(dp_kafka_instances_view)[id=dp_kafka_instances_view]}
 
 Жеке кабинеттегі атауы: `Kafka инстансының қасиеттерін қарау`.
 
 Cloud Kafka сервисі инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_kafka_logs_view
+### {heading(dp_kafka_logs_view)[id=dp_kafka_logs_view]}
 
 Жеке кабинеттегі атауы: `Kafka инстансы логтарын қарау`.
 
 Cloud Kafka сервисі инстансының оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_kafka_mirrormaker_create
+### {heading(dp_kafka_mirrormaker_create)[id=dp_kafka_mirrormaker_create]}
 
 Жеке кабинеттегі атауы: `Жаңа Kafka mirror қосылымын жасау`.
 
 Жаңа Kafka mirror-қосылымын жасауға мүмкіндік береді.
 
-### dp_kafka_mirrormaker_delete
+### {heading(dp_kafka_mirrormaker_delete)[id=dp_kafka_mirrormaker_delete]}
 
 Жеке кабинеттегі атауы: `Kafka mirror қосылымын жою`.
 
 Kafka mirror-қосылымын жоюға мүмкіндік береді.
 
-### dp_kafka_mirrormaker_list
+### {heading(dp_kafka_mirrormaker_list)[id=dp_kafka_mirrormaker_list]}
 
 Жеке кабинеттегі атауы: `Kafka mirror қосылымдарының тізімі`.
 
 Kafka mirror-қосылымдарының тізімін алуға мүмкіндік береді.
 
-### dp_kafka_monitoring_view
+### {heading(dp_kafka_monitoring_view)[id=dp_kafka_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Kafka мониторингі көрсеткіштерін қарау`.
 
 Kafka мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_kafka_settings_change
+### {heading(dp_kafka_settings_change)[id=dp_kafka_settings_change]}
 
 Жеке кабинеттегі атауы: `Kafka баптауларын басқару`.
 
 Kafka баптауларын өңдеуге және қалпына келтіруге мүмкіндік береді.
 
-### dp_kafka_settings_list
+### {heading(dp_kafka_settings_list)[id=dp_kafka_settings_list]}
 
 Жеке кабинеттегі атауы: `Kafka баптауларын қарау`.
 
 Kafka өнімінің баптауларын қарауға мүмкіндік береді.
 
-### dp_kafka_settings_viewhistory
+### {heading(dp_kafka_settings_viewhistory)[id=dp_kafka_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `Kafka өзгерістер тарихын қарау`.
 
 Kafka баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_kafka_users_create
+### {heading(dp_kafka_users_create)[id=dp_kafka_users_create]}
 
 Жеке кабинеттегі атауы: `Kafka пайдаланушысын қосу`.
 
 Cloud Kafka сервисіне пайдаланушылар қосуға мүмкіндік береді.
 
-### dp_kafka_users_delete
+### {heading(dp_kafka_users_delete)[id=dp_kafka_users_delete]}
 
 Жеке кабинеттегі атауы: `Kafka пайдаланушысын жою`.
 
 Cloud Kafka сервисінен пайдаланушыларды жоюға мүмкіндік береді.
 
-### dp_kafka_users_list
+### {heading(dp_kafka_users_list)[id=dp_kafka_users_list]}
 
 Жеке кабинеттегі атауы: `Kafka пайдаланушылары тізімін қарау`.
 
 Cloud Kafka сервисі пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_kafka_users_update
+### {heading(dp_kafka_users_update)[id=dp_kafka_users_update]}
 
 Жеке кабинеттегі атауы: `Kafka пайдаланушысын өңдеу`.
 
 Cloud Kafka сервисі пайдаланушысының деректерін өзгертуге мүмкіндік береді.
 
-## Data Platform ClickHouse
+## {heading(Data Platform ClickHouse)[id=iam-permissions-dp-clickhouse]}
 
 VK Data Platform жүйесіндегі [Cloud Clickhouse](/kz/data-platform/clickhouse) сервисін басқару.
 
-### dp_clickhouse_backups_create
+### {heading(dp_clickhouse_backups_create)[id=dp_clickhouse_backups_create]}
 
 Жеке кабинеттегі атауы: `ClickHouse резервтік көшіруін іске қосу`.
 
 Cloud ClickHouse резервтік көшіруін қолмен іске қосуға мүмкіндік береді.
 
-### dp_clickhouse_backups_download
+### {heading(dp_clickhouse_backups_download)[id=dp_clickhouse_backups_download]}
 
 Жеке кабинеттегі атауы: `ClickHouse резервтік көшірмесін жүктеп алу`.
 
 Cloud ClickHouse резервтік көшірмесін жүктеп алуға мүмкіндік береді.
 
-### dp_clickhouse_backups_list
+### {heading(dp_clickhouse_backups_list)[id=dp_clickhouse_backups_list]}
 
 Жеке кабинеттегі атауы: `ClickHouse резервтік көшірмелері тізімін қарау`.
 
 Cloud ClickHouse резервтік көшірмелерінің тізімін қарауға мүмкіндік береді.
 
-### dp_clickhouse_backups_restore
+### {heading(dp_clickhouse_backups_restore)[id=dp_clickhouse_backups_restore]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмеден жаңа кластерге ClickHouse қалпына келтіру`.
 
 ClickHouse БД-ны резервтік көшірмеден жаңа кластерге қалпына келтіруге мүмкіндік береді.
 
-### dp_clickhouse_databases_create
+### {heading(dp_clickhouse_databases_create)[id=dp_clickhouse_databases_create]}
 
 Жеке кабинеттегі атауы: `Жаңа ClickHouse БД жасау`.
 
 Жаңа ClickHouse БД жасауға мүмкіндік береді.
 
-### dp_clickhouse_databases_delete
+### {heading(dp_clickhouse_databases_delete)[id=dp_clickhouse_databases_delete]}
 
 Жеке кабинеттегі атауы: `ClickHouse БД жою`.
 
 ClickHouse БД жоюға мүмкіндік береді.
 
-### dp_clickhouse_databases_view
+### {heading(dp_clickhouse_databases_view)[id=dp_clickhouse_databases_view]}
 
 Жеке кабинеттегі атауы: `ClickHouse БД тізімін қарау`.
 
 ClickHouse БД тізімін қарауға мүмкіндік береді.
 
-### dp_clickhouse_extensions_install
+### {heading(dp_clickhouse_extensions_install)[id=dp_clickhouse_extensions_install]}
 
 Жеке кабинеттегі атауы: `ClickHouse кеңейтімін орнату`.
 
 ClickHouse СУБД кеңейтімдерін орнатуға мүмкіндік береді.
 
-### dp_clickhouse_extensions_list
+### {heading(dp_clickhouse_extensions_list)[id=dp_clickhouse_extensions_list]}
 
 Жеке кабинеттегі атауы: `ClickHouse кеңейтімдері тізімін қарау`.
 
 ClickHouse СУБД кеңейтімдерінің тізімін қарауға мүмкіндік береді.
 
-### dp_clickhouse_extensions_uninstall
+### {heading(dp_clickhouse_extensions_uninstall)[id=dp_clickhouse_extensions_uninstall]}
 
 Жеке кабинеттегі атауы: `ClickHouse кеңейтімін жою`.
 
 ClickHouse СУБД кеңейтімдерін жоюға мүмкіндік береді.
 
-### dp_clickhouse_instances_audit
+### {heading(dp_clickhouse_instances_audit)[id=dp_clickhouse_instances_audit]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансы бойынша оқиғаларды қарау`.
 
 Cloud ClickHouse инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_clickhouse_instances_change
+### {heading(dp_clickhouse_instances_change)[id=dp_clickhouse_instances_change]}
 
 Жеке кабинеттегі атауы: `ClickHouse масштабтауын басқару`.
 
 Cloud ClickHouse инстансын тігінен немесе көлденеңінен масштабтауға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат береді.
 
-### dp_clickhouse_instances_create
+### {heading(dp_clickhouse_instances_create)[id=dp_clickhouse_instances_create]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансын жасау`.
 
 Cloud ClickHouse инстанстарын жасауға мүмкіндік береді.
 
-### dp_clickhouse_instances_delete
+### {heading(dp_clickhouse_instances_delete)[id=dp_clickhouse_instances_delete]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансын жою`.
 
 Cloud ClickHouse инстанстарын жоюға мүмкіндік береді.
 
-### dp_clickhouse_instances_execsql
+### {heading(dp_clickhouse_instances_execsql)[id=dp_clickhouse_instances_execsql]}
 
 Жеке кабинеттегі атауы: `ClickHouse БД-ға SQL сұрауларын орындау`.
 
 ClickHouse БД-ға SQL-сұрауларды орындауға мүмкіндік береді. Қосылу үшін БД пайдаланушысының аты мен оның құпиясөзі пайдаланылады.
 
-### dp_clickhouse_instances_killquery
+### {heading(dp_clickhouse_instances_killquery)[id=dp_clickhouse_instances_killquery]}
 
 Жеке кабинеттегі атауы: `ClickHouse БД-ға сұрауды тоқтату`.
 
 ClickHouse БД-ға сұрауды болдырмауға мүмкіндік береді.
 
-### dp_clickhouse_instances_list
+### {heading(dp_clickhouse_instances_list)[id=dp_clickhouse_instances_list]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстанстары тізімін қарау`.
 
 Cloud ClickHouse инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_clickhouse_instances_listqueries
+### {heading(dp_clickhouse_instances_listqueries)[id=dp_clickhouse_instances_listqueries]}
 
 Жеке кабинеттегі атауы: `ClickHouse БД-ға орындалып жатқан сұраулар тізімін алу`.
 
 ClickHouse БД-ға орындалып жатқан сұраулардың тізімін алуға мүмкіндік береді.
 
-### dp_clickhouse_instances_maintenance
+### {heading(dp_clickhouse_instances_maintenance)[id=dp_clickhouse_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `ClickHouse қызмет көрсету баптауларын басқару`.
 
 Cloud ClickHouse инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_clickhouse_instances_reboot
+### {heading(dp_clickhouse_instances_reboot)[id=dp_clickhouse_instances_reboot]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансын қайта жүктеу`.
 
 Cloud ClickHouse инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_clickhouse_instances_scaledisk
+### {heading(dp_clickhouse_instances_scaledisk)[id=dp_clickhouse_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `ClickHouse дискін ұлғайту`.
 
 Cloud ClickHouse инстансындағы диск өлшемін ұлғайтуға мүмкіндік береді.
 
-### dp_clickhouse_instances_versionupdate
+### {heading(dp_clickhouse_instances_versionupdate)[id=dp_clickhouse_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `ClickHouse нұсқасын жаңарту`.
 
 Инстанстағы ClickHouse СУБД нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_clickhouse_instances_view
+### {heading(dp_clickhouse_instances_view)[id=dp_clickhouse_instances_view]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансының қасиеттерін қарау`.
 
 Cloud ClickHouse инстансының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_clickhouse_logs_view
+### {heading(dp_clickhouse_logs_view)[id=dp_clickhouse_logs_view]}
 
 Жеке кабинеттегі атауы: `ClickHouse инстансы логтарын қарау`.
 
 Cloud ClickHouse инстансының оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_clickhouse_monitoring_view
+### {heading(dp_clickhouse_monitoring_view)[id=dp_clickhouse_monitoring_view]}
 
 Жеке кабинеттегі атауы: `ClickHouse мониторингі көрсеткіштерін қарау`.
 
 Cloud ClickHouse мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_clickhouse_settings_change
+### {heading(dp_clickhouse_settings_change)[id=dp_clickhouse_settings_change]}
 
 Жеке кабинеттегі атауы: `ClickHouse баптауларын басқару`.
 
 ClickHouse СУБД баптауларын өзгертуге мүмкіндік береді.
 
-### dp_clickhouse_settings_list
+### {heading(dp_clickhouse_settings_list)[id=dp_clickhouse_settings_list]}
 
 Жеке кабинеттегі атауы: `ClickHouse баптауларын қарау`.
 
 ClickHouse СУБД баптауларын қарауға мүмкіндік береді.
 
-### dp_clickhouse_settings_viewhistory
+### {heading(dp_clickhouse_settings_viewhistory)[id=dp_clickhouse_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `ClickHouse өзгерістер тарихын қарау`.
 
 ClickHouse СУБД баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_clickhouse_users_create
+### {heading(dp_clickhouse_users_create)[id=dp_clickhouse_users_create]}
 
 Жеке кабинеттегі атауы: `ClickHouse пайдаланушысын қосу`.
 
 Cloud ClickHouse пайдаланушыларын қосуға мүмкіндік береді.
 
-### dp_clickhouse_users_delete
+### {heading(dp_clickhouse_users_delete)[id=dp_clickhouse_users_delete]}
 
 Жеке кабинеттегі атауы: `ClickHouse пайдаланушысын жою`.
 
 Cloud ClickHouse пайдаланушыларын жоюға мүмкіндік береді.
 
-### dp_clickhouse_users_list
+### {heading(dp_clickhouse_users_list)[id=dp_clickhouse_users_list]}
 
 Жеке кабинеттегі атауы: `ClickHouse пайдаланушылары тізімін қарау`.
 
 Cloud ClickHouse пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_clickhouse_users_update
+### {heading(dp_clickhouse_users_update)[id=dp_clickhouse_users_update]}
 
 Жеке кабинеттегі атауы: `ClickHouse пайдаланушысын өңдеу`.
 
 Cloud ClickHouse пайдаланушыларының деректерін өзгертуге мүмкіндік береді.
 
-## Data Platform Redis
+## {heading(Data Platform Redis)[id=iam-permissions-dp-redis]}
 
 VK Data Platform жүйесіндегі Redis БД-ларын басқару.
 
-### dp_redis_instances_audit
+### {heading(dp_redis_instances_audit)[id=dp_redis_instances_audit]}
 
 Жеке кабинеттегі атауы: `Redis инстансы бойынша оқиғаларды қарау`.
 
 Redis инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_redis_instances_change
+### {heading(dp_redis_instances_change)[id=dp_redis_instances_change]}
 
 Жеке кабинеттегі атауы: `Redis масштабтауын басқару`.
 
 Redis инстанстарын тігінен немесе көлденеңінен масштабтауға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат береді.
 
-### dp_redis_instances_create
+### {heading(dp_redis_instances_create)[id=dp_redis_instances_create]}
 
 Жеке кабинеттегі атауы: `Redis инстансын жасау`.
 
 Redis инстанстарын жасауға мүмкіндік береді.
 
-### dp_redis_instances_delete
+### {heading(dp_redis_instances_delete)[id=dp_redis_instances_delete]}
 
 Жеке кабинеттегі атауы: `Redis инстансын жою`.
 
 Redis инстанстарын жоюға мүмкіндік береді.
 
-### dp_redis_instances_list
+### {heading(dp_redis_instances_list)[id=dp_redis_instances_list]}
 
 Жеке кабинеттегі атауы: `Redis инстанстары тізімін қарау`.
 
 Redis инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_redis_instances_maintenance
+### {heading(dp_redis_instances_maintenance)[id=dp_redis_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Redis қызмет көрсету баптауларын басқару`.
 
 Redis инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_redis_instances_reboot
+### {heading(dp_redis_instances_reboot)[id=dp_redis_instances_reboot]}
 
 Жеке кабинеттегі атауы: `Redis инстансын қайта жүктеу`.
 
 Redis инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_redis_instances_scaledisk
+### {heading(dp_redis_instances_scaledisk)[id=dp_redis_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Redis дискін ұлғайту`.
 
 Redis инстансы дискілерінің өлшемін ұлғайтуға мүмкіндік береді.
 
-### dp_redis_instances_versionupdate
+### {heading(dp_redis_instances_versionupdate)[id=dp_redis_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Redis нұсқасын жаңарту`.
 
 Инстанстағы Redis СУБД нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_redis_instances_view
+### {heading(dp_redis_instances_view)[id=dp_redis_instances_view]}
 
 Жеке кабинеттегі атауы: `Redis инстансының қасиеттерін қарау`.
 
 Redis инстансының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_redis_logs_view
+### {heading(dp_redis_logs_view)[id=dp_redis_logs_view]}
 
 Жеке кабинеттегі атауы: `Redis инстансы логтарын қарау`.
 
 Redis инстанстарының оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_redis_monitoring_view
+### {heading(dp_redis_monitoring_view)[id=dp_redis_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Redis мониторингі көрсеткіштерін қарау`.
 
 Redis мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_redis_settings_change
+### {heading(dp_redis_settings_change)[id=dp_redis_settings_change]}
 
 Жеке кабинеттегі атауы: `Redis баптауларын басқару`.
 
 Redis СУБД баптауларын өзгертуге мүмкіндік береді.
 
-### dp_redis_settings_list
+### {heading(dp_redis_settings_list)[id=dp_redis_settings_list]}
 
 Жеке кабинеттегі атауы: `Redis баптауларын қарау`.
 
 Redis СУБД баптауларын қарауға мүмкіндік береді.
 
-### dp_redis_settings_viewhistory
+### {heading(dp_redis_settings_viewhistory)[id=dp_redis_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `Redis өзгерістер тарихын қарау`.
 
 Redis СУБД баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_redis_users_create
+### {heading(dp_redis_users_create)[id=dp_redis_users_create]}
 
 Жеке кабинеттегі атауы: `Redis пайдаланушысын қосу`.
 
 Redis пайдаланушыларын қосуға мүмкіндік береді.
 
-### dp_redis_users_delete
+### {heading(dp_redis_users_delete)[id=dp_redis_users_delete]}
 
 Жеке кабинеттегі атауы: `Redis пайдаланушысын жою`.
 
 Redis пайдаланушыларын жоюға мүмкіндік береді.
 
-### dp_redis_users_list
+### {heading(dp_redis_users_list)[id=dp_redis_users_list]}
 
 Жеке кабинеттегі атауы: `Redis пайдаланушылары тізімін қарау`.
 
 Redis пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_redis_users_update
+### {heading(dp_redis_users_update)[id=dp_redis_users_update]}
 
 Жеке кабинеттегі атауы: `Redis пайдаланушысын өңдеу`.
 
 Redis пайдаланушыларының деректерін өзгертуге мүмкіндік береді.
 
-## Data Platform Airflow
+## {heading(Data Platform Airflow)[id=iam-permissions-dp-airflow]}
 
 VK Data Platform жүйесіндегі [Cloud Airflow](/kz/data-platform/airflow) сервисін басқару.
 
-### dp_airflow_instances_audit
+### {heading(dp_airflow_instances_audit)[id=dp_airflow_instances_audit]}
 
 Жеке кабинеттегі атауы: `Airflow инстансы бойынша оқиғаларды қарау`.
 
 Cloud Airflow инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_airflow_instances_change
+### {heading(dp_airflow_instances_change)[id=dp_airflow_instances_change]}
 
 Жеке кабинеттегі атауы: `Airflow масштабтауын басқару`.
 
 Cloud Airflow инстанстарын тігінен немесе көлденеңінен масштабтауға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат береді.
 
-### dp_airflow_instances_create
+### {heading(dp_airflow_instances_create)[id=dp_airflow_instances_create]}
 
 Жеке кабинеттегі атауы: `Airflow инстансын жасау`.
 
 Cloud Airflow инстанстарын жасауға мүмкіндік береді.
 
-### dp_airflow_instances_delete
+### {heading(dp_airflow_instances_delete)[id=dp_airflow_instances_delete]}
 
 Жеке кабинеттегі атауы: `AirFlow инстансын жою`.
 
 Cloud Airflow инстанстарын жоюға мүмкіндік береді.
 
-### dp_airflow_instances_list
+### {heading(dp_airflow_instances_list)[id=dp_airflow_instances_list]}
 
 Жеке кабинеттегі атауы: `Airflow инстанстары тізімін қарау`.
 
 Cloud Airflow сервисі инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_airflow_instances_maintenance
+### {heading(dp_airflow_instances_maintenance)[id=dp_airflow_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Airflow қызмет көрсету баптауларын басқару`.
 
 Cloud Airflow инстанстарына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_airflow_instances_reboot
+### {heading(dp_airflow_instances_reboot)[id=dp_airflow_instances_reboot]}
 
 Жеке кабинеттегі атауы: `AirFlow инстансын қайта жүктеу`.
 
 Cloud Airflow инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_airflow_instances_scaledisk
+### {heading(dp_airflow_instances_scaledisk)[id=dp_airflow_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Airflow дискін ұлғайту`.
 
 Cloud Airflow инстансы дискілерінің өлшемін ұлғайтуға мүмкіндік береді.
 
-### dp_airflow_instances_ui
+### {heading(dp_airflow_instances_ui)[id=dp_airflow_instances_ui]}
 
 Жеке кабинеттегі атауы: `Airflow UI-ге қол жеткізу`.
 
 Cloud Airflow графикалық интерфейсіне қол жеткізуге мүмкіндік береді.
 
-### dp_airflow_instances_versionupdate
+### {heading(dp_airflow_instances_versionupdate)[id=dp_airflow_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Airflow нұсқасын жаңарту`.
 
 Airflow өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_airflow_instances_view
+### {heading(dp_airflow_instances_view)[id=dp_airflow_instances_view]}
 
 Жеке кабинеттегі атауы: `Airflow инстансының қасиеттерін қарау`.
 
 Cloud Airflow сервисі инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_airflow_logs_view
+### {heading(dp_airflow_logs_view)[id=dp_airflow_logs_view]}
 
 Жеке кабинеттегі атауы: `Airflow инстансы логтарын қарау`.
 
 Cloud Airflow инстанстарының оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_airflow_monitoring_view
+### {heading(dp_airflow_monitoring_view)[id=dp_airflow_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Airflow мониторингі көрсеткіштерін қарау`.
 
 Cloud Airflow мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-## Data Platform Jatoba
+## {heading(Data Platform Jatoba)[id=iam-permissions-dp-jatoba]}
 
 VK Data Platform жүйесіндегі Jatoba БД-ларын басқару.
 
-### dp_jatoba_backups_create
+### {heading(dp_jatoba_backups_create)[id=dp_jatoba_backups_create]}
 
 Жеке кабинеттегі атауы: `Jatoba БД резервтік көшіруін іске қосу`.
 
 Jatoba БД резервтік көшіруін қолмен іске қосуға мүмкіндік береді.
 
-### dp_jatoba_backups_download
+### {heading(dp_jatoba_backups_download)[id=dp_jatoba_backups_download]}
 
 Жеке кабинеттегі атауы: `Jatoba резервтік көшірмесін жүктеп алу`.
 
 Jatoba БД резервтік көшірмелерін жүктеп алуға мүмкіндік береді.
 
-### dp_jatoba_backups_list
+### {heading(dp_jatoba_backups_list)[id=dp_jatoba_backups_list]}
 
 Жеке кабинеттегі атауы: `Jatoba резервтік көшірмелері тізімін қарау`.
 
 Jatoba БД резервтік көшірмелерінің тізімін қарауға мүмкіндік береді.
 
-### dp_jatoba_backups_restore
+### {heading(dp_jatoba_backups_restore)[id=dp_jatoba_backups_restore]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмеден жаңа кластерге Jatoba қалпына келтіру`.
 
 Jatoba БД-ны резервтік көшірмеден жаңа кластерге қалпына келтіруге мүмкіндік береді.
 
-### dp_jatoba_databases_create
+### {heading(dp_jatoba_databases_create)[id=dp_jatoba_databases_create]}
 
 Жеке кабинеттегі атауы: `Жаңа Jatoba БД жасау`.
 
 Jatoba БД жасауға мүмкіндік береді.
 
-### dp_jatoba_databases_delete
+### {heading(dp_jatoba_databases_delete)[id=dp_jatoba_databases_delete]}
 
 Жеке кабинеттегі атауы: `Jatoba БД жою`.
 
 Jatoba БД жоюға мүмкіндік береді.
 
-### dp_jatoba_databases_view
+### {heading(dp_jatoba_databases_view)[id=dp_jatoba_databases_view]}
 
 Жеке кабинеттегі атауы: `Jatoba БД тізімін қарау`.
 
 Jatoba дерекқорларының тізімін қарауға мүмкіндік береді.
 
-### dp_jatoba_extensions_install
+### {heading(dp_jatoba_extensions_install)[id=dp_jatoba_extensions_install]}
 
 Жеке кабинеттегі атауы: `Jatoba кеңейтімін орнату`.
 
 Jatoba СУБД кеңейтімдерін орнатуға мүмкіндік береді.
 
-### dp_jatoba_extensions_list
+### {heading(dp_jatoba_extensions_list)[id=dp_jatoba_extensions_list]}
 
 Жеке кабинеттегі атауы: `Jatoba кеңейтімдері тізімін қарау`.
 
 Jatoba СУБД кеңейтімдерінің тізімін қарауға мүмкіндік береді.
 
-### dp_jatoba_extensions_uninstall
+### {heading(dp_jatoba_extensions_uninstall)[id=dp_jatoba_extensions_uninstall]}
 
 Жеке кабинеттегі атауы: `Jatoba кеңейтімін жою`.
 
 Jatoba СУБД кеңейтімдерін жоюға мүмкіндік береді.
 
-### dp_jatoba_instances_audit
+### {heading(dp_jatoba_instances_audit)[id=dp_jatoba_instances_audit]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансы бойынша оқиғаларды қарау`.
 
 Jatoba инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_jatoba_instances_change
+### {heading(dp_jatoba_instances_change)[id=dp_jatoba_instances_change]}
 
 Жеке кабинеттегі атауы: `Jatoba масштабтауын басқару`.
 
 Jatoba-ны тігінен және көлденеңінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат береді.
 
-### dp_jatoba_instances_create
+### {heading(dp_jatoba_instances_create)[id=dp_jatoba_instances_create]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансын жасау`.
 
 Jatoba инстанстарын жасауға мүмкіндік береді.
 
-### dp_jatoba_instances_delete
+### {heading(dp_jatoba_instances_delete)[id=dp_jatoba_instances_delete]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансын жою`.
 
 Jatoba инстанстарын жоюға мүмкіндік береді.
 
-### dp_jatoba_instances_execsql
+### {heading(dp_jatoba_instances_execsql)[id=dp_jatoba_instances_execsql]}
 
 Жеке кабинеттегі атауы: `Jatoba БД-ға SQL-сұрауларды орындау`.
 
 Jatoba БД-ға SQL-сұрауларды орындауға мүмкіндік береді. Қосылу үшін БД пайдаланушысының аты мен оның құпиясөзі пайдаланылады.
 
-### dp_jatoba_instances_killquery
+### {heading(dp_jatoba_instances_killquery)[id=dp_jatoba_instances_killquery]}
 
 Жеке кабинеттегі атауы: `Jatoba БД-ға сұрауды тоқтату`.
 
 Jatoba БД-ға сұрауды болдырмауға мүмкіндік береді.
 
-### dp_jatoba_instances_list
+### {heading(dp_jatoba_instances_list)[id=dp_jatoba_instances_list]}
 
 Жеке кабинеттегі атауы: `Jatoba инстанстары тізімін қарау`.
 
 Jatoba инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_jatoba_instances_listqueries
+### {heading(dp_jatoba_instances_listqueries)[id=dp_jatoba_instances_listqueries]}
 
 Жеке кабинеттегі атауы: `Jatoba БД-ға орындалып жатқан сұраулар тізімін алу`.
 
 Jatoba БД-ға орындалып жатқан сұраулардың тізімін алуға мүмкіндік береді.
 
-### dp_jatoba_instances_maintenance
+### {heading(dp_jatoba_instances_maintenance)[id=dp_jatoba_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Jatoba қызмет көрсету баптауларын басқару`.
 
 Jatoba инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_jatoba_instances_reboot
+### {heading(dp_jatoba_instances_reboot)[id=dp_jatoba_instances_reboot]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансын қайта жүктеу`.
 
 Jatoba инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_jatoba_instances_scaledisk
+### {heading(dp_jatoba_instances_scaledisk)[id=dp_jatoba_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Jatoba дискін ұлғайту`.
 
 Jatoba инстансы дискілерін ұлғайтуға мүмкіндік береді.
 
-### dp_jatoba_instances_versionupdate
+### {heading(dp_jatoba_instances_versionupdate)[id=dp_jatoba_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Jatoba нұсқасын жаңарту`.
 
 Инстанстағы Jatoba СУБД нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_jatoba_instances_view
+### {heading(dp_jatoba_instances_view)[id=dp_jatoba_instances_view]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансының қасиеттерін қарау`.
 
 Jatoba инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_jatoba_logs_view
+### {heading(dp_jatoba_logs_view)[id=dp_jatoba_logs_view]}
 
 Жеке кабинеттегі атауы: `Jatoba инстансы логтарын қарау`.
 
 Jatoba оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_jatoba_monitoring_view
+### {heading(dp_jatoba_monitoring_view)[id=dp_jatoba_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Jatoba мониторингі көрсеткіштерін қарау`.
 
 Jatoba мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_jatoba_settings_change
+### {heading(dp_jatoba_settings_change)[id=dp_jatoba_settings_change]}
 
 Жеке кабинеттегі атауы: `Jatoba баптауларын басқару`.
 
 Jatoba СУБД баптауларын өзгертуге мүмкіндік береді.
 
-### dp_jatoba_settings_list
+### {heading(dp_jatoba_settings_list)[id=dp_jatoba_settings_list]}
 
 Жеке кабинеттегі атауы: `Jatoba баптауларын қарау`.
 
 Jatoba СУБД баптауларын қарауға мүмкіндік береді.
 
-### dp_jatoba_settings_viewhistory
+### {heading(dp_jatoba_settings_viewhistory)[id=dp_jatoba_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `Jatoba өзгерістер тарихын қарау`.
 
 Jatoba СУБД баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_jatoba_users_create
+### {heading(dp_jatoba_users_create)[id=dp_jatoba_users_create]}
 
 Жеке кабинеттегі атауы: `Jatoba пайдаланушысын қосу`.
 
 Jatoba пайдаланушыларын қосуға мүмкіндік береді.
 
-### dp_jatoba_users_delete
+### {heading(dp_jatoba_users_delete)[id=dp_jatoba_users_delete]}
 
 Жеке кабинеттегі атауы: `Jatoba пайдаланушысын жою`.
 
 Jatoba пайдаланушыларын жоюға мүмкіндік береді.
 
-### dp_jatoba_users_list
+### {heading(dp_jatoba_users_list)[id=dp_jatoba_users_list]}
 
 Жеке кабинеттегі атауы: `Jatoba пайдаланушылары тізімін қарау`.
 
 Jatoba пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_jatoba_users_update
+### {heading(dp_jatoba_users_update)[id=dp_jatoba_users_update]}
 
 Жеке кабинеттегі атауы: `Jatoba пайдаланушысын өңдеу`.
 
 Jatoba пайдаланушыларының деректерін өзгертуге мүмкіндік береді.
 
-## Data Platform NiFi
+## {heading(Data Platform NiFi)[id=iam-permissions-dp-nifi]}
 
 VK Data Platform жүйесіндегі NiFi компонентін басқару.
 
-### dp_nifi_instances_audit
+### {heading(dp_nifi_instances_audit)[id=dp_nifi_instances_audit]}
 
 Жеке кабинеттегі атауы: `NiFi инстансы бойынша оқиғаларды қарау`.
 
 NiFi инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_nifi_instances_change
+### {heading(dp_nifi_instances_change)[id=dp_nifi_instances_change]}
 
 Жеке кабинеттегі атауы: `NiFi масштабтауын басқару`.
 
 NiFi инстанстарын көлденеңінен немесе тігінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_nifi_instances_create
+### {heading(dp_nifi_instances_create)[id=dp_nifi_instances_create]}
 
 Жеке кабинеттегі атауы: `NiFi инстансын жасау`.
 
 NiFi инстанстарын жасауға мүмкіндік береді.
 
-### dp_nifi_instances_delete
+### {heading(dp_nifi_instances_delete)[id=dp_nifi_instances_delete]}
 
 Жеке кабинеттегі атауы: `NiFi инстансын жою`.
 
 NiFi инстанстарын жоюға мүмкіндік береді.
 
-### dp_nifi_instances_list
+### {heading(dp_nifi_instances_list)[id=dp_nifi_instances_list]}
 
 Жеке кабинеттегі атауы: `NiFi инстанстары тізімін қарау`.
 
 NiFi инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_nifi_instances_maintenance
+### {heading(dp_nifi_instances_maintenance)[id=dp_nifi_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `NiFi қызмет көрсету баптауларын басқару`.
 
 NiFi инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_nifi_instances_reboot
+### {heading(dp_nifi_instances_reboot)[id=dp_nifi_instances_reboot]}
 
 Жеке кабинеттегі атауы: `NiFi инстансын қайта жүктеу`.
 
 NiFi инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_nifi_instances_scaledisk
+### {heading(dp_nifi_instances_scaledisk)[id=dp_nifi_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `NiFi дискін ұлғайту`.
 
 NiFi инстансы дискісінің өлшемін ұлғайтуға мүмкіндік береді.
 
-### dp_nifi_instances_ui
+### {heading(dp_nifi_instances_ui)[id=dp_nifi_instances_ui]}
 
 Жеке кабинеттегі атауы: `NiFi UI-ге қол жеткізу`.
 
 NiFi графикалық интерфейсіне қол жеткізуге мүмкіндік береді.
 
-### dp_nifi_instances_versionupdate
+### {heading(dp_nifi_instances_versionupdate)[id=dp_nifi_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `NiFi нұсқасын жаңарту`.
 
 Инстанстағы NiFi өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_nifi_instances_view
+### {heading(dp_nifi_instances_view)[id=dp_nifi_instances_view]}
 
 Жеке кабинеттегі атауы: `NiFi инстансының қасиеттерін қарау`.
 
 NiFi инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_nifi_logs_view
+### {heading(dp_nifi_logs_view)[id=dp_nifi_logs_view]}
 
 Жеке кабинеттегі атауы: `NiFi инстансы логтарын қарау`.
 
 NiFi оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_nifi_monitoring_view
+### {heading(dp_nifi_monitoring_view)[id=dp_nifi_monitoring_view]}
 
 Жеке кабинеттегі атауы: `NiFi мониторингі көрсеткіштерін қарау`.
 
 NiFi мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-## Data Platform OpenSearch
+## {heading(Data Platform OpenSearch)[id=iam-permissions-dp-opensearch]}
 
 VK Data Platform жүйесіндегі OpenSearch іздеу жүйесін басқару.
 
-### dp_opensearch_instances_audit
+### {heading(dp_opensearch_instances_audit)[id=dp_opensearch_instances_audit]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансы бойынша оқиғаларды қарау`.
 
 OpenSearch инстансы бойынша оқиғаларды қарауға мүмкіндік береді.
 
-### dp_opensearch_instances_change
+### {heading(dp_opensearch_instances_change)[id=dp_opensearch_instances_change]}
 
 Жеке кабинеттегі атауы: `OpenSearch масштабтауын басқару`.
 
 OpenSearch инстансын тігінен немесе көлденеңінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_opensearch_instances_create
+### {heading(dp_opensearch_instances_create)[id=dp_opensearch_instances_create]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансын жасау`.
 
 OpenSearch инстанстарын жасауға мүмкіндік береді.
 
-### dp_opensearch_instances_delete
+### {heading(dp_opensearch_instances_delete)[id=dp_opensearch_instances_delete]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансын жою`.
 
 OpenSearch инстанстарын жоюға мүмкіндік береді.
 
-### dp_opensearch_instances_list
+### {heading(dp_opensearch_instances_list)[id=dp_opensearch_instances_list]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстанстары тізімін қарау`.
 
 OpenSearch инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_opensearch_instances_maintenance
+### {heading(dp_opensearch_instances_maintenance)[id=dp_opensearch_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `OpenSearch қызмет көрсету баптауларын басқару`.
 
 OpenSearch инстансына қызмет көрсету баптауларын: резервтік көшіру кестесін, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_opensearch_instances_reboot
+### {heading(dp_opensearch_instances_reboot)[id=dp_opensearch_instances_reboot]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансын қайта жүктеу`.
 
 OpenSearch инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_opensearch_instances_scaledisk
+### {heading(dp_opensearch_instances_scaledisk)[id=dp_opensearch_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `OpenSearch дискін ұлғайту`.
 
 OpenSearch инстансы дискілерінің көлемін ұлғайтуға мүмкіндік береді.
 
-### dp_opensearch_instances_versionupdate
+### {heading(dp_opensearch_instances_versionupdate)[id=dp_opensearch_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `OpenSearch нұсқасын жаңарту`.
 
 Инстанстағы OpenSearch өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_opensearch_instances_view
+### {heading(dp_opensearch_instances_view)[id=dp_opensearch_instances_view]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансының қасиеттерін қарау`.
 
 OpenSearch инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_opensearch_logs_view
+### {heading(dp_opensearch_logs_view)[id=dp_opensearch_logs_view]}
 
 Жеке кабинеттегі атауы: `OpenSearch инстансы логтарын қарау`.
 
 OpenSearch оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_opensearch_monitoring_view
+### {heading(dp_opensearch_monitoring_view)[id=dp_opensearch_monitoring_view]}
 
 Жеке кабинеттегі атауы: `OpenSearch мониторингі көрсеткіштерін қарау`.
 
 OpenSearch мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_opensearch_settings_change
+### {heading(dp_opensearch_settings_change)[id=dp_opensearch_settings_change]}
 
 Жеке кабинеттегі атауы: `OpenSearch баптауларын басқару`.
 
 OpenSearch баптауларын өзгертуге мүмкіндік береді.
 
-### dp_opensearch_settings_list
+### {heading(dp_opensearch_settings_list)[id=dp_opensearch_settings_list]}
 
 Жеке кабинеттегі атауы: `OpenSearch баптауларын қарау`.
 
 OpenSearch баптауларын қарауға мүмкіндік береді.
 
-### dp_opensearch_settings_viewhistory
+### {heading(dp_opensearch_settings_viewhistory)[id=dp_opensearch_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `OpenSearch өзгерістер тарихын қарау`.
 
 OpenSearch баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-## Data Platform PostgreSQL
+## {heading(Data Platform PostgreSQL)[id=iam-permissions-dp-postgresql]}
 
 VK Data Platform жүйесіндегі PostgreSQL БД-ларын басқару.
 
-### dp_postgresql_backups_create
+### {heading(dp_postgresql_backups_create)[id=dp_postgresql_backups_create]}
 
 Жеке кабинеттегі атауы: `PostgreSQL резервтік көшіруін іске қосу`.
 
 PostgreSQL БД резервтік көшіруін қолмен іске қосуға мүмкіндік береді.
 
-### dp_postgresql_backups_download
+### {heading(dp_postgresql_backups_download)[id=dp_postgresql_backups_download]}
 
 Жеке кабинеттегі атауы: `PostgreSQL резервтік көшірмесін жүктеп алу`.
 
 PostgreSQL БД резервтік көшірмесін жүктеп алуға мүмкіндік береді.
 
-### dp_postgresql_backups_list
+### {heading(dp_postgresql_backups_list)[id=dp_postgresql_backups_list]}
 
 Жеке кабинеттегі атауы: `PostgreSQL резервтік көшірмелері тізімін қарау`.
 
 PostgreSQL БД резервтік көшірмелерінің тізімін қарауға мүмкіндік береді.
 
-### dp_postgresql_backups_restore
+### {heading(dp_postgresql_backups_restore)[id=dp_postgresql_backups_restore]}
 
 Жеке кабинеттегі атауы: `Резервтік көшірмеден жаңа кластерге PostgreSQL қалпына келтіру`.
 
 PostgreSQL БД-ны PostgreSQL резервтік көшірмесінен жаңа кластерге қалпына келтіруге мүмкіндік береді.
 
-### dp_postgresql_databases_create
+### {heading(dp_postgresql_databases_create)[id=dp_postgresql_databases_create]}
 
 Жеке кабинеттегі атауы: `Жаңа PostgreSQL БД жасау`.
 
 PostgreSQL БД жасауға мүмкіндік береді.
 
-### dp_postgresql_databases_delete
+### {heading(dp_postgresql_databases_delete)[id=dp_postgresql_databases_delete]}
 
 Жеке кабинеттегі атауы: `PostgreSQL БД жою`.
 
 PostgreSQL БД жоюға мүмкіндік береді.
 
-### dp_postgresql_databases_view
+### {heading(dp_postgresql_databases_view)[id=dp_postgresql_databases_view]}
 
 Жеке кабинеттегі атауы: `PostgreSQL БД тізімін қарау`.
 
 PostgreSQL дерекқорларының тізімін қарауға мүмкіндік береді.
 
-### dp_postgresql_extensions_install
+### {heading(dp_postgresql_extensions_install)[id=dp_postgresql_extensions_install]}
 
 Жеке кабинеттегі атауы: `PostgreSQL кеңейтімін орнату`.
 
 PostgreSQL СУБД кеңейтімдерін орнатуға мүмкіндік береді.
 
-### dp_postgresql_extensions_list
+### {heading(dp_postgresql_extensions_list)[id=dp_postgresql_extensions_list]}
 
 Жеке кабинеттегі атауы: `PostgreSQL кеңейтімдері тізімін қарау`.
 
 PostgreSQL СУБД кеңейтімдерінің тізімін қарауға мүмкіндік береді.
 
-### dp_postgresql_extensions_uninstall
+### {heading(dp_postgresql_extensions_uninstall)[id=dp_postgresql_extensions_uninstall]}
 
 Жеке кабинеттегі атауы: `PostgreSQL кеңейтімін жою`.
 
 PostgreSQL СУБД кеңейтімдерін жоюға мүмкіндік береді.
 
-### dp_postgresql_instances_audit
+### {heading(dp_postgresql_instances_audit)[id=dp_postgresql_instances_audit]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансы бойынша оқиғаларды қарау`.
 
 PostgreSQL инстансы бойынша оқиғаларды қарауға мүмкіндік береді.
 
-### dp_postgresql_instances_change
+### {heading(dp_postgresql_instances_change)[id=dp_postgresql_instances_change]}
 
 Жеке кабинеттегі атауы: `PostgreSQL масштабтауын басқару`.
 
 PostgreSQL инстансын көлденеңінен немесе тігінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_postgresql_instances_create
+### {heading(dp_postgresql_instances_create)[id=dp_postgresql_instances_create]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансын жасау`.
 
 PostgreSQL инстанстарын жасауға мүмкіндік береді.
 
-### dp_postgresql_instances_delete
+### {heading(dp_postgresql_instances_delete)[id=dp_postgresql_instances_delete]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансын жою`.
 
 PostgreSQL инстанстарын жоюға мүмкіндік береді.
 
-### dp_postgresql_instances_execsql
+### {heading(dp_postgresql_instances_execsql)[id=dp_postgresql_instances_execsql]}
 
 Жеке кабинеттегі атауы: `PostgreSQL БД-ға SQL-сұрауларды орындау`.
 
 PostgreSQL БД-ға SQL-сұрауларды орындауға мүмкіндік береді. Қосылу үшін БД пайдаланушысының аты мен оның құпиясөзі пайдаланылады.
 
-### dp_postgresql_instances_killquery
+### {heading(dp_postgresql_instances_killquery)[id=dp_postgresql_instances_killquery]}
 
 Жеке кабинеттегі атауы: `PostgreSQL БД-ға сұрауды тоқтату`.
 
 PostgreSQL БД-ға сұрауды болдырмауға мүмкіндік береді.
 
-### dp_postgresql_instances_list
+### {heading(dp_postgresql_instances_list)[id=dp_postgresql_instances_list]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстанстары тізімін қарау`.
 
 PostgreSQL инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_postgresql_instances_listqueries
+### {heading(dp_postgresql_instances_listqueries)[id=dp_postgresql_instances_listqueries]}
 
 Жеке кабинеттегі атауы: `PostgreSQL БД-ға орындалып жатқан сұраулар тізімін алу`.
 
 Инстанс бойынша PostgreSQL БД-ға орындалып жатқан сұраулардың тізімін алуға мүмкіндік береді.
 
-### dp_postgresql_instances_maintenance
+### {heading(dp_postgresql_instances_maintenance)[id=dp_postgresql_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `PostgreSQL қызмет көрсету баптауларын басқару`.
 
 PostgreSQL инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_postgresql_instances_reboot
+### {heading(dp_postgresql_instances_reboot)[id=dp_postgresql_instances_reboot]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансын қайта жүктеу`.
 
 PostgreSQL инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_postgresql_instances_scaledisk
+### {heading(dp_postgresql_instances_scaledisk)[id=dp_postgresql_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `PostgreSQL дискін ұлғайту`.
 
 PostgreSQL инстансындағы диск көлемін ұлғайтуға мүмкіндік береді.
 
-### dp_postgresql_instances_versionupdate
+### {heading(dp_postgresql_instances_versionupdate)[id=dp_postgresql_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `PostgreSQL нұсқасын жаңарту`.
 
 Инстанстағы PostgreSQL СУБД нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_postgresql_instances_view
+### {heading(dp_postgresql_instances_view)[id=dp_postgresql_instances_view]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансының қасиеттерін қарау`.
 
 PostgreSQL инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_postgresql_logs_view
+### {heading(dp_postgresql_logs_view)[id=dp_postgresql_logs_view]}
 
 Жеке кабинеттегі атауы: `PostgreSQL инстансы логтарын қарау`.
 
 PostgreSQL оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_postgresql_monitoring_view
+### {heading(dp_postgresql_monitoring_view)[id=dp_postgresql_monitoring_view]}
 
 Жеке кабинеттегі атауы: `PostgreSQL мониторингі көрсеткіштерін қарау`.
 
 PostgreSQL мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_postgresql_settings_change
+### {heading(dp_postgresql_settings_change)[id=dp_postgresql_settings_change]}
 
 Жеке кабинеттегі атауы: `PostgreSQL баптауларын басқару`.
 
 PostgreSQL СУБД баптауларын өзгертуге мүмкіндік береді.
 
-### dp_postgresql_settings_list
+### {heading(dp_postgresql_settings_list)[id=dp_postgresql_settings_list]}
 
 Жеке кабинеттегі атауы: `PostgreSQL баптауларын қарау`.
 
 PostgreSQL СУБД баптауларын қарауға мүмкіндік береді.
 
-### dp_postgresql_settings_viewhistory
+### {heading(dp_postgresql_settings_viewhistory)[id=dp_postgresql_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `PostgreSQL өзгерістер тарихын қарау`.
 
 PostgreSQL СУБД баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_postgresql_users_create
+### {heading(dp_postgresql_users_create)[id=dp_postgresql_users_create]}
 
 Жеке кабинеттегі атауы: `PostgreSQL пайдаланушысын қосу`.
 
 PostgreSQL пайдаланушыларын қосуға мүмкіндік береді.
 
-### dp_postgresql_users_delete
+### {heading(dp_postgresql_users_delete)[id=dp_postgresql_users_delete]}
 
 Жеке кабинеттегі атауы: `PostgreSQL пайдаланушысын жою`.
 
 PostgreSQL пайдаланушыларын жоюға мүмкіндік береді.
 
-### dp_postgresql_users_list
+### {heading(dp_postgresql_users_list)[id=dp_postgresql_users_list]}
 
 Жеке кабинеттегі атауы: `PostgreSQL пайдаланушылары тізімін қарау`.
 
 PostgreSQL пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_postgresql_users_update
+### {heading(dp_postgresql_users_update)[id=dp_postgresql_users_update]}
 
 Жеке кабинеттегі атауы: `PostgreSQL пайдаланушысын өңдеу`.
 
 PostgreSQL пайдаланушыларының деректерін өзгертуге мүмкіндік береді.
 
-## Data Platform Spark
+## {heading(Data Platform Spark)[id=iam-permissions-dp-spark]}
 
 [VK Data Platform платформасындағы Spark](/kz/data-platform/spark) сервисін басқару.
 
-### dp_spark_instances_audit
+### {heading(dp_spark_instances_audit)[id=dp_spark_instances_audit]}
 
 Жеке кабинеттегі атауы: `Spark инстансы бойынша оқиғаларды қарау`.
 
 Инстанстағы Spark оқиғаларын қарауға мүмкіндік береді.
 
-### dp_spark_instances_change
+### {heading(dp_spark_instances_change)[id=dp_spark_instances_change]}
 
 Жеке кабинеттегі атауы: `Spark масштабтауын басқару`.
 
 Spark инстансын көлденеңінен және тігінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_spark_instances_create
+### {heading(dp_spark_instances_create)[id=dp_spark_instances_create]}
 
 Жеке кабинеттегі атауы: `Spark инстансын жасау`.
 
 Spark инстанстарын жасауға мүмкіндік береді.
 
-### dp_spark_instances_delete
+### {heading(dp_spark_instances_delete)[id=dp_spark_instances_delete]}
 
 Жеке кабинеттегі атауы: `Spark инстансын жою`.
 
 Spark инстанстарын жоюға мүмкіндік береді.
 
-### dp_spark_instances_list
+### {heading(dp_spark_instances_list)[id=dp_spark_instances_list]}
 
 Жеке кабинеттегі атауы: `Spark инстанстары тізімін қарау`.
 
 Spark инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_spark_instances_maintenance
+### {heading(dp_spark_instances_maintenance)[id=dp_spark_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Spark қызмет көрсету баптауларын басқару`.
 
 Spark инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_spark_instances_reboot
+### {heading(dp_spark_instances_reboot)[id=dp_spark_instances_reboot]}
 
 Жеке кабинеттегі атауы: `Spark инстансын қайта жүктеу`.
 
 Spark инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_spark_instances_scaledisk
+### {heading(dp_spark_instances_scaledisk)[id=dp_spark_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Spark дискін ұлғайту`.
 
 Spark инстансы дискілерінің көлемін өзгертуге мүмкіндік береді.
 
-### dp_spark_instances_ui
+### {heading(dp_spark_instances_ui)[id=dp_spark_instances_ui]}
 
 Жеке кабинеттегі атауы: `Spark UI-ге қол жеткізу`.
 
 Spark графикалық интерфейсіне қол жеткізуге мүмкіндік береді.
 
-### dp_spark_instances_versionupdate
+### {heading(dp_spark_instances_versionupdate)[id=dp_spark_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Spark нұсқасын жаңарту`.
 
 Инстанстағы Spark өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_spark_instances_view
+### {heading(dp_spark_instances_view)[id=dp_spark_instances_view]}
 
 Жеке кабинеттегі атауы: `Spark инстансының қасиеттерін қарау`.
 
 Spark инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_spark_logs_view
+### {heading(dp_spark_logs_view)[id=dp_spark_logs_view]}
 
 Жеке кабинеттегі атауы: `Spark инстансы логтарын қарау`.
 
 Spark оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_spark_monitoring_view
+### {heading(dp_spark_monitoring_view)[id=dp_spark_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Spark мониторингі көрсеткіштерін қарау`.
 
 Spark мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-## Data Platform Trino
+## {heading(Data Platform Trino)[id=iam-permissions-dp-trino]}
 
 VK Data Platform жүйесіндегі [Cloud Trino](/kz/data-platform/trino) сервисін басқару.
 
-### dp_trino_extensions_install
+### {heading(dp_trino_extensions_install)[id=dp_trino_extensions_install]}
 
 Жеке кабинеттегі атауы: `Trino кеңейтімін орнату`.
 
 Trino өнімінің кеңейтімдерін орнатуға мүмкіндік береді.
 
-### dp_trino_extensions_list
+### {heading(dp_trino_extensions_list)[id=dp_trino_extensions_list]}
 
 Жеке кабинеттегі атауы: `Trino кеңейтімдері тізімін қарау`.
 
 Trino өнімінің кеңейтімдері тізімін қарауға мүмкіндік береді.
 
-### dp_trino_extensions_uninstall
+### {heading(dp_trino_extensions_uninstall)[id=dp_trino_extensions_uninstall]}
 
 Жеке кабинеттегі атауы: `Trino кеңейтімін жою`.
 
 Trino өнімінің кеңейтімдерін жоюға мүмкіндік береді.
 
-### dp_trino_instances_audit
+### {heading(dp_trino_instances_audit)[id=dp_trino_instances_audit]}
 
 Жеке кабинеттегі атауы: `Trino инстансы бойынша оқиғаларды қарау`.
 
 Cloud Trino инстансы оқиғаларын қарауға мүмкіндік береді.
 
-### dp_trino_instances_change
+### {heading(dp_trino_instances_change)[id=dp_trino_instances_change]}
 
 Жеке кабинеттегі атауы: `Trino масштабтауын басқару`.
 
 Cloud Trino инстансын тігінен немесе көлденеңінен масштабтауды басқаруға мүмкіндік береді. CPU/RAM санының кез келген өзгерісіне рұқсат етіледі.
 
-### dp_trino_instances_create
+### {heading(dp_trino_instances_create)[id=dp_trino_instances_create]}
 
 Жеке кабинеттегі атауы: `Trino инстансын жасау`.
 
 Cloud Trino инстанстарын жасауға мүмкіндік береді.
 
-### dp_trino_instances_delete
+### {heading(dp_trino_instances_delete)[id=dp_trino_instances_delete]}
 
 Жеке кабинеттегі атауы: `Trino инстансын жою`.
 
 Cloud Trino инстанстарын жоюға мүмкіндік береді.
 
-### dp_trino_instances_execsql
+### {heading(dp_trino_instances_execsql)[id=dp_trino_instances_execsql]}
 
 Жеке кабинеттегі атауы: `Trino БД-ға SQL-сұрауларды орындау`.
 
 Trino БД-ға SQL-сұрауларды орындауға мүмкіндік береді. Қосылу үшін БД пайдаланушысының аты мен оның құпиясөзі пайдаланылады.
 
-### dp_trino_instances_list
+### {heading(dp_trino_instances_list)[id=dp_trino_instances_list]}
 
 Жеке кабинеттегі атауы: `Trino инстанстары тізімін қарау`.
 
 Cloud Trino инстанстарының тізімін қарауға мүмкіндік береді.
 
-### dp_trino_instances_maintenance
+### {heading(dp_trino_instances_maintenance)[id=dp_trino_instances_maintenance]}
 
 Жеке кабинеттегі атауы: `Trino қызмет көрсету баптауларын басқару`.
 
 Cloud Trino инстансына қызмет көрсету баптауларын: резервтік көшіру уақытын, операциялар кестесін және т.б. өзгертуге мүмкіндік береді.
 
-### dp_trino_instances_reboot
+### {heading(dp_trino_instances_reboot)[id=dp_trino_instances_reboot]}
 
 Жеке кабинеттегі атауы: `Trino инстансын қайта жүктеу`.
 
 Cloud Trino инстанстарын қайта жүктеуге мүмкіндік береді.
 
-### dp_trino_instances_scaledisk
+### {heading(dp_trino_instances_scaledisk)[id=dp_trino_instances_scaledisk]}
 
 Жеке кабинеттегі атауы: `Trino дискін ұлғайту`.
 
 Cloud Trino инстансы дискісінің көлемін ұлғайтуға мүмкіндік береді.
 
-### dp_trino_instances_ui
+### {heading(dp_trino_instances_ui)[id=dp_trino_instances_ui]}
 
 Жеке кабинеттегі атауы: `Trino сервисінің UI-ге қол жеткізу`.
 
 Cloud Trino графикалық интерфейсіне қол жеткізуге мүмкіндік береді.
 
-### dp_trino_instances_versionupdate
+### {heading(dp_trino_instances_versionupdate)[id=dp_trino_instances_versionupdate]}
 
 Жеке кабинеттегі атауы: `Trino нұсқасын жаңарту`.
 
 Cloud Trino инстансындағы Trino өнімінің нұсқасын жаңартуға мүмкіндік береді.
 
-### dp_trino_instances_view
+### {heading(dp_trino_instances_view)[id=dp_trino_instances_view]}
 
 Жеке кабинеттегі атауы: `Trino инстансының қасиеттерін қарау`.
 
 Cloud Trino инстанстарының қасиеттерін қарауға мүмкіндік береді.
 
-### dp_trino_logs_view
+### {heading(dp_trino_logs_view)[id=dp_trino_logs_view]}
 
 Жеке кабинеттегі атауы: `Trino инстансы логтарын қарау`.
 
 Cloud Trino оқиғалар журналдарын қарауға мүмкіндік береді.
 
-### dp_trino_monitoring_view
+### {heading(dp_trino_monitoring_view)[id=dp_trino_monitoring_view]}
 
 Жеке кабинеттегі атауы: `Trino мониторингі көрсеткіштерін қарау`.
 
 Cloud Trino мониторингі көрсеткіштерін қарауға мүмкіндік береді.
 
-### dp_trino_settings_change
+### {heading(dp_trino_settings_change)[id=dp_trino_settings_change]}
 
 Жеке кабинеттегі атауы: `Trino баптауларын басқару`.
 
 Trino өнімінің баптауларын өзгертуге мүмкіндік береді.
 
-### dp_trino_settings_list
+### {heading(dp_trino_settings_list)[id=dp_trino_settings_list]}
 
 Жеке кабинеттегі атауы: `Trino баптауларын қарау`.
 
 Trino өнімінің баптауларын қарауға мүмкіндік береді.
 
-### dp_trino_settings_viewhistory
+### {heading(dp_trino_settings_viewhistory)[id=dp_trino_settings_viewhistory]}
 
 Жеке кабинеттегі атауы: `Trino өзгерістер тарихын қарау`.
 
 Trino өнімінің баптаулары өзгерістерінің тарихын қарауға мүмкіндік береді.
 
-### dp_trino_users_create
+### {heading(dp_trino_users_create)[id=dp_trino_users_create]}
 
 Жеке кабинеттегі атауы: `Trino пайдаланушысын қосу`.
 
 Cloud Trino пайдаланушыларын қосуға мүмкіндік береді.
 
-### dp_trino_users_delete
+### {heading(dp_trino_users_delete)[id=dp_trino_users_delete]}
 
 Жеке кабинеттегі атауы: `Trino пайдаланушысын жою`.
 
 Cloud Trino пайдаланушыларын жоюға мүмкіндік береді.
 
-### dp_trino_users_list
+### {heading(dp_trino_users_list)[id=dp_trino_users_list]}
 
 Жеке кабинеттегі атауы: `Trino пайдаланушылары тізімін қарау`.
 
 Cloud Trino пайдаланушыларының тізімін қарауға мүмкіндік береді.
 
-### dp_trino_users_update
+### {heading(dp_trino_users_update)[id=dp_trino_users_update]}
 
 Жеке кабинеттегі атауы: `Trino пайдаланушысын өңдеу`.
 

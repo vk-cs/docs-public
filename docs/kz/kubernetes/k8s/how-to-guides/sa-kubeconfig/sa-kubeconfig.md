@@ -1,16 +1,18 @@
+# {heading(Service account үшін kubeconfig файлын жасау)[id=k8s-sa-kubeconfig]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers кластеріне [kubectl көмегімен қосылғанда](../../connect/kubectl) кластер конфигурациясының файлдар — [kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) пайдаланылады. Әдетте кластермен жұмыс істеу үшін бірыңғай кіру [технологиясына](../../concepts/access-management) пайдалануғал бапталған VK Cloud жеке кабинетінен алынған kubeconfig қолданылады. Сондықтан `kubectl` құралымен жұмыс істегенде пайдаланушының паролін мезгіл-мезгіл енгізу керек болады.
+Cloud Containers кластеріне {linkto(../../connect/kubectl#k8s-kubectl)[text=kubectl көмегімен қосылғанда]} кластер конфигурациясының файлы — [kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) пайдаланылады. Әдетте кластермен жұмыс істеу үшін бірыңғай кіру {linkto(../../concepts/access-management#k8s-access-management)[text=технологиясын]} пайдалануға бапталған VK Cloud жеке кабинетінен алынған kubeconfig қолданылады. Сондықтан `kubectl` құралымен жұмыс істегенде пайдаланушының паролін мезгіл-мезгіл енгізу керек болады.
 
-Мұндай аутентификация процесі кластерге қолжетімділік қажет автоматтандырылған құралдармен жұмыс істегенде ыңғайсыз. Олармен жұмыс істеу үшін service account арналған kubeconfig файлын пайдаланған ыңғайлырақ. Бұл kubeconfig пароль енгізбей-алқ, өмір сүру мерзімі шексіз токен арқылы аутентификациялануғал мүмкіндік береді.
+Мұндай аутентификация процесі кластерге қолжетімділік қажет автоматтандырылған құралдармен жұмыс істегенде ыңғайсыз. Олармен жұмыс істеу үшін service account арналған kubeconfig файлын пайдаланған ыңғайлырақ. Бұл kubeconfig пароль енгізбей-ақ, өмір сүру мерзімі шексіз токен арқылы аутентификациялануға мүмкіндік береді.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=k8s-sa-kubeconfig-prepare]}
 
-1. [Жасаңыз](../../instructions/create-cluster) ең өзекті нұсқадағы Cloud Containers кластерін.
+{include(/kz/_includes/_create-test-cluster.md)}
 
    Кластерді жасау кезінде **Сыртқы IP тағайындау** опциясын таңдаңыз. Кластердің қалған параметрлерін өз қалауыңызша таңдаңыз.
 
-1. [көз жеткізіңіз](../../connect/kubectl), `kubectl` көмегімен жасалған кластерге қосыла алатыныңызғал.
+1. `kubectl` көмегімен жасалған кластерге қосыла алатыныңызға {linkto(../../connect/kubectl#k8s-kubectl)[text=көз жеткізіңіз]}.
 
    Бұл кезде VK Cloud жеке кабинетінен жүктелген kubeconfig пайдаланылады.
 
@@ -23,7 +25,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    {note:info}
 
-   Kubeconfig файлдарыңызғал жол төмендегі мысалдан өзгеше болуы мүмкін.
+   Kubeconfig файлдарыңызға жол төмендегі мысалдан өзгеше болуы мүмкін.
 
    {/note}
 
@@ -51,7 +53,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    {/tabs}
 
-1. Кластерге қосылғаннан кейін қажетті Kubernetes ресурстарын жасауғал құқықтарыңыз бар екеніне көз жеткізіңіз:
+1. Кластерге қосылғаннан кейін қажетті Kubernetes ресурстарын жасауға құқықтарыңыз бар екеніне көз жеткізіңіз:
 
    ```console
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create serviceaccount
@@ -62,11 +64,11 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    Әр команда үшін `yes` жауабы шығуы керек.
 
-   Егер осы ресурстардың кез келгенін жасауғал құқық болмаса (`no` жауабы), кластерге қосылу орындалып жатқан VK Cloud пайдаланушысының [рөлін түзетіңіз](/kz/tools-for-using-services/account/instructions/project-settings/access-manage#katysushynyn_rolin_ozgertu).
+   Егер осы ресурстардың кез келгенін жасауға құқық болмаса (`no` жауабы), кластерге қосылу орындалып жатқан VK Cloud пайдаланушысының {linkto(../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-user-role-edit)[text=рөлін түзетіңіз]}.
 
-   Рөлдік модель және қолжетімді рөлдер туралы толығырақ [Қолжетімділікті басқару](../../concepts/access-management) бөлімінен оқыңыз.
+   Рөлдік модель және қолжетімді рөлдер туралы толығырақ {linkto(../../concepts/access-management#k8s-access-management)[text=Қолжетімділікті басқару]} бөлімінен оқыңыз.
 
-## 1. Service account жасаңыз және оны рөлмен байланыстырыңыз
+## {heading(1. Service account жасаңыз және оны рөлмен байланыстырыңыз)[id=k8s-sa-kubeconfig-create-sa]}
 
 1. `kube-system` аттар кеңістігінде `example-sa` service account-ын жасаңыз:
 
@@ -100,7 +102,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
    serviceaccount/example-sa created
    ```
 
-1. Service account-қал тағайындау қажет кластерлік рөлді таңдаңыз.
+1. Service account-қа тағайындау қажет кластерлік рөлді таңдаңыз.
 
    Барлық кластерлік рөлдердің тізімін егжей-тегжейлі сипаттамасымен алу үшін келесі команданы орындаңыз:
 
@@ -108,9 +110,9 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
    kubectl --kubeconfig $VKCLOUD_KUBECONFIG describe clusterroles
    ```
 
-   Рөлді таңдағанда кластермен жұмыс істеу қауіпсіздігін арттыру үшін [ең аз артықшылықтар қалғидатын](https://ru.wikipedia.org/wiki/Принцип_минимальных_привилегий) ұстаныңыз. Рөлдік модель туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
+   Рөлді таңдағанда кластермен жұмыс істеу қауіпсіздігін арттыру үшін [ең аз артықшылықтар қағидатын](https://ru.wikipedia.org/wiki/Принцип_минимальных_привилегий) ұстаныңыз. Рөлдік модель туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-   Төменде мысал ретінде `edit` рөлі тағайындалады. Ол жеке кабинеттегі `Оператор Kubernetes` рөліне [сәйкес келеді](../../concepts/access-management#zheke_kabinet_pen_kubernetes_rolderinin_ozara_baylanysy).
+   Төменде мысал ретінде `edit` рөлі тағайындалады. Ол жеке кабинеттегі `Оператор Kubernetes` рөліне {linkto(../../concepts/access-management#k8s-access-management-kubernetes-roles)[text=сәйкес келеді]}.
 
 1. Жасалған service account-ты таңдалған кластерлік рөлмен байланыстырыңыз. Ол үшін `example-binding` атауымен `ClusterRoleBinding` ресурсын жасаңыз.
 
@@ -149,7 +151,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
    clusterrolebinding.rbac.authorization.k8s.io/example-binding created
    ```
 
-## 2. Service account үшін токен алыңыз
+## {heading(2. Service account үшін токен алыңыз)[id=k8s-sa-kubeconfig-get-token]}
 
 1. Service account үшін токені бар `example-token` құпиясын жасаңыз:
 
@@ -189,7 +191,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
       secret/example-token created
       ```
 
-1. Жасалған secret-тен service account-қал токен тағайындалғанына көз жеткізіңіз:
+1. Жасалған secret-тен service account-қа токен тағайындалғанына көз жеткізіңіз:
 
    {tabs}
 
@@ -234,7 +236,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
 1. Токен мәнін алыңыз.
 
-   Secret токенді кодталған түрде сақтайды ([Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64) кодтау схемасы). Оны kubeconfig-те пайдалану үшін токенді декодтау қажет:
+   Secret токенді кодталған түрде сақтайды ([Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64) кодтау сызбасы). Оны kubeconfig ішінде пайдалану үшін токенді декодтау қажет:
 
    {tabs}
 
@@ -268,11 +270,11 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    {note:err}
 
-   Токеннің мәні — құпия алқпарат. Егер ол әшкереленсе, [токенді кері қайтарып алыңыз](#shkerelengen_tokendi_keri_kaytaryp_alynyz).
+   Токеннің мәні — құпия ақпарат. Егер ол әшкереленсе, {linkto(#k8s-sa-kubeconfig-revoke-token)[text=токенді кері қайтарып алыңыз]}.
 
    {/note}
 
-## 4. Service account үшін kubeconfig жасаңыз
+## {heading(4. Service account үшін kubeconfig жасаңыз)[id=k8s-sa-kubeconfig-create]}
 
 1. Бұл kubeconfig үшін негізді VK Cloud жеке кабинетінен жүктелген kubeconfig-ті көшіру арқылы жасаңыз.
 
@@ -288,33 +290,33 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    Kubeconfig мазмұны ықшамдалған түрде шығарылады: кейбір өрістердің мәндері түсіріліп қалады.
 
-   {cut(kubeconfig жеңілдетілген мысалы)}
+   {cut(Қарапайым kubeconfig мысалы)}
 
    <!-- prettier-ignore -->
    ```yaml
    apiVersion: v1
-   clusters: # Кластеры
-     - cluster: <информация о кластере>
-       name: <имя кластера>
-   contexts: # Контексты, в рамках которых идет работа с кластером
+   clusters: # Кластерлер
+     - cluster: <кластер туралы ақпарат>
+       name: <кластер атауы>
+   contexts: # Кластермен жұмыс жүргізілетін контексттер
      - context:
-         cluster: <имя кластера>
-         user: <имя пользователя>
-       name: <имя контекста>
-   current-context: <имя текущего контекста>
+         cluster: <кластер атауы>
+         user: <пайдаланушы аты>
+       name: <контекст атауы>
+   current-context: <ағымдағы контекст атауы>
    kind: Config
    preferences: {}
-   users: # Пользователи
-     - name: <имя пользователя>
+   users: # Пайдаланушылар
+     - name: <пайдаланушы аты>
        user:
-         token: <данные для аутентификации>
+         token: <аутентификация деректері>
    ```
 
    {/cut}
 
    Kubeconfig кластермен жұмыс істеуге қажетті барлық параметрлерді қамтиды:
 
-   - `clusters`: кластерлердің және оларғал қосылу деректерінің тізімі.
+   - `clusters`: кластерлердің және оларға қосылу деректерінің тізімі.
 
      Cloud Containers кластеріне арналған kubeconfig жалғыз кластер туралы жазбаны қамтиды.
 
@@ -368,7 +370,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG \
-           config delete-user <имя пользователя>
+           config delete-user <пайдаланушы аты>
 
          ```
 
@@ -378,7 +380,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
          ```console
          kubectl --kubeconfig $SA_KUBECONFIG `
-           config delete-user <имя пользователя>
+           config delete-user <пайдаланушы аты>
 
          ```
 
@@ -392,9 +394,9 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
          deleted user kubernetes-cluster-1234 from ...sa_kubeconfig.yaml
          ```
 
-   1. `example-sa` жаңал пайдаланушысын қосыңыз.
+   1. `example-sa` жаңа пайдаланушысын қосыңыз.
 
-      Бұл пайдаланушы бұрын жасалған service account-қал сәйкес келеді. Аутентификация үшін бұрын алынған токен пайдаланылады.
+      Бұл пайдаланушы бұрын жасалған service account-қа сәйкес келеді. Аутентификация үшін бұрын алынған токен пайдаланылады.
 
       {tabs}
 
@@ -402,7 +404,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG \
-        config set-credentials example-sa --token="<значение токена>"
+        config set-credentials example-sa --token="<токен мәні>"
 
       ```
 
@@ -412,7 +414,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
       ```console
       kubectl --kubeconfig $SA_KUBECONFIG `
-        config set-credentials example-sa --token="<значение токена>"
+        config set-credentials example-sa --token="<токен мәні>"
 
       ```
 
@@ -464,7 +466,7 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
    kubectl --kubeconfig $SA_KUBECONFIG config view
    ```
 
-   Бұл kubeconfig ішінде бұрын қосылған `example-sa` пайдаланушысынан басқал пайдаланушылар болмауы керек. Жалғыз контекст осы пайдаланушыны пайдалануы керек.
+   Бұл kubeconfig ішінде бұрын қосылған `example-sa` пайдаланушысынан басқа пайдаланушылар болмауы керек. Жалғыз контекст осы пайдаланушыны пайдалануы керек.
 
    {cut(Команда шығысының мысалы)}
 
@@ -492,11 +494,11 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    {/cut}
 
-## 5. Жасалған kubeconfig жұмысын тексеріңіз
+## {heading(5. Жасалған kubeconfig жұмысын тексеріңіз)[id=k8s-sa-kubeconfig-check]}
 
-Кластер және оның ресурстары туралы алқпарат алу үшін, мысалы, `kubectl` командаларын және бұрын жасалған service account үшін kubeconfig файлын пайдаланыңыз:
+Кластер және оның ресурстары туралы ақпарат алу үшін, мысалы, `kubectl` командаларын және бұрын жасалған service account үшін kubeconfig файлын пайдаланыңыз:
 
-1. Кластер туралы алқпарат алыңыз:
+1. Кластер туралы ақпарат алыңыз:
 
    ```console
    kubectl --kubeconfig $SA_KUBECONFIG cluster-info
@@ -526,17 +528,17 @@ Cloud Containers кластеріне [kubectl көмегімен қосылға
 
    {/cut}
 
-Егер командаларды орындау кезінде пароль сұралмаса, онда алынған kubeconfig-ті Cloud Containers кластеріне қол жеткізу үшін автоматтандырылған құралдармен бірге пайдалануғал болады.
+Егер командаларды орындау кезінде пароль сұралмаса, онда алынған kubeconfig-ті Cloud Containers кластеріне қол жеткізу үшін автоматтандырылған құралдармен бірге пайдалануға болады.
 
 {note:err}
 
-Kubeconfig файлын қорғау үшін қажетті шараларды қамтамасыз етіңіз. Онда құпия алқпарат бар: токен мәні ашық түрде сақталады.
+Kubeconfig файлын қорғау үшін қажетті шараларды қамтамасыз етіңіз. Онда құпия ақпарат бар: токен мәні ашық түрде сақталады.
 
-Kubeconfig әшкереленген жағдайда [токенді кері қайтарып алыңыз](#shkerelengen_tokendi_keri_kaytaryp_alynyz).
+Kubeconfig әшкереленген жағдайда {linkto(#k8s-sa-kubeconfig-revoke-token)[text=токенді кері қайтарып алыңыз]}.
 
 {/note}
 
-## Әшкереленген токенді кері қайтарып алыңыз
+## {heading(Әшкереленген токенді кері қайтарып алыңыз)[id=k8s-sa-kubeconfig-revoke-token]}
 
 Егер бұрын жасалған токен немесе оны қамтитын kubeconfig әшкереленсе, кластерге рұқсатсыз қолжетімділікті болдырмау үшін токенді кері қайтарып алыңыз.
 
@@ -546,7 +548,9 @@ Kubeconfig әшкереленген жағдайда [токенді кері қ
 kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
 ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-sa-kubeconfig-revoke-delete]}
+
+Жұмыс істеп тұрған кластер тарификацияланады және есептеу ресурстарын тұтынады. Егер kubeconfig жұмысын тексеру үшін жасалған Kubernetes ресурстары енді қажет болмаса, оларды жойыңыз:
 
 1. `example-binding` ресурсын, `example-token` secret-ін және `example-sa` service account-ын жойыңыз:
 
@@ -582,7 +586,6 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    {/tabs}
 
-1. Жұмыс істеп тұрған Cloud Containers кластеры тарифтелмейді және есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
-
-   - [тоқтатыңыз](../../instructions/manage-cluster#klasterdi_iske_kosu_nemese_toktatu), кейінірек пайдалану үшін;
-   - [жойыңыз](../../instructions/manage-cluster#delete_cluster) оны біржола.
+{ifdef(public)}
+{include(/kz/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

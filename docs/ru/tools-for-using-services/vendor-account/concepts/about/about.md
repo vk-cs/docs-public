@@ -1,6 +1,6 @@
-Поставщики решений — это компании и разработчики, предлагающие готовые программные продукты и сервисы для развертывания в облачной платформе VK Cloud.
+Поставщики решений — это компании и разработчики, предлагающие готовые программные продукты и сервисы для развертывания в {var(cloud)}.
 
-*Кабинет поставщика* VK Cloud — это отдельный инструмент для поставщиков сервисов из [магазина приложений](/ru/applications-and-services/marketplace/concepts/about), который позволяет:
+*Кабинет поставщика* {var(cloud)} — это отдельный инструмент для поставщиков сервисов из [магазина приложений](/ru/applications-and-services/marketplace/concepts/about), который позволяет:
 
 * добавлять новые сервисы;
 * обновлять существующие сервисы;
@@ -26,28 +26,28 @@
 | Суперадминистратор
 
 | Информационная панель
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Управление сервисами
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Управление пользователями
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Отчеты
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |===
 

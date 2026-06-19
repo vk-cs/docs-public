@@ -1,4 +1,4 @@
-There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Cloud Containers clusters. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
+There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Kubernetes clusters you create in the Cloud Containers service. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
 
 To upgrade the Kube Prometheus Stack add-on from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the add-on and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the add-on for saving and further re-using it with the new version.
 
@@ -12,11 +12,11 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 ## Before you start
 
-1. If you already have an existing Cloud Containers cluster with the Kube Prometheus Stack add-on that needs to be upgraded, skip this step.
+1. If you already have an existing Kubernetes cluster with the Kube Prometheus Stack add-on that needs to be upgraded in the Cloud Containers service, skip this step.
 
    Otherwise, create a test cluster where the add-on update will be performed:
 
-   1. [Create](../../instructions/create-cluster) a Cloud Containers cluster version `1.26.5`.
+   1. [Create](../../instructions/create-cluster) a Kubernetes cluster version `1.26.5`.
 
       When you create the cluster, select the **Assign external IP** option. Other cluster parameters can be set at your discretion.
 
@@ -612,7 +612,4 @@ A successful connection to Grafana indicates a successful add-on update.
 
 ## Delete unused resources
 
-A running Cloud Containers cluster is being charged and consumes computing resources. If you have created a cluster for testing purposes and no longer need it, do as follows:
-
-- [stop](../../instructions/manage-cluster) it, so you can use it later;
-- [delete](../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster.md)}

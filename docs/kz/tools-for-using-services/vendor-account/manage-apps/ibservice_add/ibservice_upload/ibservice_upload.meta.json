@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "image-based қолданбасын дүкенге жүктеу",
   "sectionTitle": "image-based қолданбасын дүкенге жүктеу",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

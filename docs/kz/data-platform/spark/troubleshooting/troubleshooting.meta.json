@@ -1,0 +1,14 @@
+{
+  "title": "Ақауларды жою",
+  "shortDescription": "Cloud Spark-пен жұмыс істеу барысында туындауы мүмкін ақаулардың сипаттамасы және оларды жою",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Spark-пен жұмыс істеу кезінде туындауы мүмкін ақауларды жою жолдары туралы біліңіз",
+  "sectionTitle": "Ақауларды жою",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

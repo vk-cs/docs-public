@@ -1,9 +1,23 @@
 {
-    "title": "Использование Docker CE",
-      "shortDescription": "",
-      "metaDescription": "Сценарии использования: как применять Docker CE после его установки",
-    "sectionTitle": "Использование Docker CE",
-    "icon": "",
-    "weight": 2,
-    "uuid": "3d812d3b-bdec-4034-8267-466a8fdde666"
+  "title": "Использование Docker CE",
+  "shortDescription": "",
+  "metaDescription": "Сценарии использования: как применять Docker CE после его установки",
+  "sectionTitle": "Использование Docker CE",
+  "icon": "",
+  "weight": 2,
+  "uuid": "3d812d3b-bdec-4034-8267-466a8fdde666",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

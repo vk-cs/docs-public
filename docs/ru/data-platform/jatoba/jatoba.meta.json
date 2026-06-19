@@ -1,0 +1,14 @@
+{
+  "title": "Jatoba",
+  "shortDescription": "Защищенная СУБД, основанная на модернизированном ядре СУБД PostgreSQL",
+  "metaDescription": "Сервис Jatoba для хранения и управления данными в инфраструктуре VK Data Platform",
+  "sectionTitle": "Jatoba",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 12,
+  "uuid": ""
+}

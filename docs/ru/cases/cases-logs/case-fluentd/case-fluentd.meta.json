@@ -1,9 +1,23 @@
 {
-    "title": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
-      "shortDescription": "",
-      "metaDescription": "Почему в Kubernetes необходимо специальное решение для логирования Писать логи в контейнеры неудобно, потому что: данные, генерируемые в контейнеризированн",
-    "sectionTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
-    "icon": "",
-    "weight": 2,
-    "uuid": "a5a42168-c69c-4835-93c3-97df526e24f5"
+  "title": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
+  "shortDescription": "",
+  "metaDescription": "Почему в Kubernetes необходимо специальное решение для логирования Писать логи в контейнеры неудобно, потому что: данные, генерируемые в контейнеризированн",
+  "sectionTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a5a42168-c69c-4835-93c3-97df526e24f5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

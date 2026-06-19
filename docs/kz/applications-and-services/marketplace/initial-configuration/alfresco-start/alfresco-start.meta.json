@@ -4,5 +4,19 @@
   "metaDescription": "Marketplace VK Cloud: корпоративтік контентті басқару және бизнес-процестерді автоматтандыру үшін Alfresco жүйесін өрістету қадамдары",
   "sectionTitle": "Alfresco өрістету",
   "icon": "",
-  "weight": 18
+  "weight": 18,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

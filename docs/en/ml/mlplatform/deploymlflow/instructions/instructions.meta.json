@@ -5,5 +5,19 @@
   "sectionTitle": "Working with MLflow Deploy instances",
   "icon": "",
   "weight": 1,
-  "uuid": "8716797e-4489-4ecd-9677-d2dfbc3067d8"
+  "uuid": "8716797e-4489-4ecd-9677-d2dfbc3067d8",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

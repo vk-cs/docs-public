@@ -5,5 +5,10 @@
   "sectionTitle": "Интеграции",
   "icon": "",
   "weight": 6,
-  "uuid": "df5b6a0d-0894-406e-8d91-9ecb41b170e5"
+  "uuid": "df5b6a0d-0894-406e-8d91-9ecb41b170e5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

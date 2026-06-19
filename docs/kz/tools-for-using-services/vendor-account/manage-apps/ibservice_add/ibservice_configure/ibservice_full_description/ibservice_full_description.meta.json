@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Файл full_description.md",
   "sectionTitle": "Файл full_description.md",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

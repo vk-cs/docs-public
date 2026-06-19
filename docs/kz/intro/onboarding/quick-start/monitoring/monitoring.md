@@ -1,3 +1,5 @@
+# {heading(Виртуалды машинаның метрикаларын мониторингтеу үшін график жасаңыз)[id=onboarding-monitoring]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Бұл нұсқаулық [Cloud Monitoring](/kz/monitoring-services/monitoring) сервисімен жұмысты бастауға және оның мүмкіндіктерімен виртуалды машина мысалында танысуға көмектеседі.
@@ -9,4 +11,4 @@
 - Жүйелік графиктердің бірін өз графиктеріңізге қосасыз.
 - `cpu_usage_system` метрикасы мысалында мониторинг деректері бар жеке график жасайсыз.
 
-{include(/kz/_includes/_monitoring.md)}
+{include(../../../../_includes/_monitoring.md)}

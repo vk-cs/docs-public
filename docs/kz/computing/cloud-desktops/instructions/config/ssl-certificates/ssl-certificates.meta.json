@@ -4,5 +4,14 @@
   "metaDescription": "Пайдаланушыларды браузер арқылы қашықтағы жұмыс үстелдеріне қорғалған түрде қосу үшін Cloud Desktop сервисінің бұлттық инфрақұрылымына өз SSL-сертификаттарыңызды қалай жүктеуге болады.",
   "sectionTitle": "SSL сертификаттарын баптау",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

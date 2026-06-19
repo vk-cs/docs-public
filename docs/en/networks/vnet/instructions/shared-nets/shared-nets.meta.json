@@ -1,9 +1,14 @@
 {
-    "title": "Shared networks",
-      "shortDescription": "How to give other projects access to the network, how to manage a shared network",
-      "metaDescription": "How to give other projects access to the network, how to manage a shared network",
-    "sectionTitle": "Shared networks",
-    "icon": "",
-    "weight": 1,
-    "uuid": "9ddacf7c-21f9-428d-8a74-95b72780cc64"
+  "title": "Shared networks",
+  "shortDescription": "How to give other projects access to the network, how to manage a shared network",
+  "metaDescription": "How to give other projects access to the network, how to manage a shared network",
+  "sectionTitle": "Shared networks",
+  "icon": "",
+  "weight": 1,
+  "uuid": "9ddacf7c-21f9-428d-8a74-95b72780cc64",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

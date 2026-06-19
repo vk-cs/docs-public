@@ -4,5 +4,15 @@
   "shortDescription": "Жасалған ВМ-ге қалай қосылуға болады",
   "metaDescription": "Жасалған виртуалды машиналарға қосылу тәсілдері мен құралдарының сипаттамасы.",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

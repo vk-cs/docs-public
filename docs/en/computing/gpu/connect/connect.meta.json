@@ -1,9 +1,14 @@
 {
-    "title": "Connecting the service",
-      "shortDescription": "Instructions for connecting the service",
-      "metaDescription": "Instructions for connecting the service",
-    "sectionTitle": "Connecting the service",
-    "icon": "",
-    "weight": 2,
-    "uuid": "1c885b81-01fb-4939-a28c-26f19383fb15"
+  "title": "Connecting the service",
+  "shortDescription": "Instructions for connecting the service",
+  "metaDescription": "Instructions for connecting the service",
+  "sectionTitle": "Connecting the service",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1c885b81-01fb-4939-a28c-26f19383fb15",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

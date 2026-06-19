@@ -1,9 +1,14 @@
 {
-    "title": "Viewing notifications",
-      "shortDescription": "Viewing information about technical updates of the platform",
-      "metaDescription": "Viewing information about technical updates of the platform.",
-    "sectionTitle": "Viewing notifications",
-    "icon": "",
-    "weight": 5,
-    "uuid": "c8bc0d3a-565e-4b5f-8557-37bd59e7fdbc"
+  "title": "Viewing notifications",
+  "shortDescription": "Viewing information about technical updates of the platform",
+  "metaDescription": "Viewing information about technical updates of the platform.",
+  "sectionTitle": "Viewing notifications",
+  "icon": "",
+  "weight": 5,
+  "uuid": "c8bc0d3a-565e-4b5f-8557-37bd59e7fdbc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

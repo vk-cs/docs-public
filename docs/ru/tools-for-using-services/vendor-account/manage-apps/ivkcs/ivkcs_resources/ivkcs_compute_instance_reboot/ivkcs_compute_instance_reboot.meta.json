@@ -4,5 +4,10 @@
   "metaDescription": "Ресурс ivkcs_compute_instance_reboot",
   "sectionTitle": "Ресурс ivkcs_compute_instance_reboot",
   "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

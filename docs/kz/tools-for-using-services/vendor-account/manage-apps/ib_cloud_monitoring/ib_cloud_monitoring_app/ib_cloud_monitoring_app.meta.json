@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Image-based қолданбаның метрикалары",
   "sectionTitle": "Image-based қолданбаның метрикалары",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

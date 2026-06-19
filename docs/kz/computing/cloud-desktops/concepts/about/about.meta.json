@@ -4,5 +4,14 @@
   "metaDescription": "Сервистің жұмыс істеу қағидаты мен мүмкіндіктері.",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

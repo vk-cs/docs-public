@@ -1,26 +1,28 @@
-## Просмотр данных мониторинга
+# {heading(Мониторинг PostgreSQL)[id=dbaas-monitoring-postgresql]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+## {heading(Просмотр данных мониторинга)[id=dbaas-monitoring-postgresql-monitoring-data]}
+
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите на имя узла инстанса БД.
 1. Перейдите на вкладку **Мониторинг**.
 
-Будет выведено несколько [счетчиков и графиков](#monitoring_metrics):
+Будет выведено несколько {linkto(#dbaas-monitoring-postgresql-metrics)[text=счетчиков и графиков]}:
 
 - Счетчики отражают текущее значение метрик.
 - Графики отражают динамику изменения значений метрик в рамках определенного временного периода.
 
 На счетчиках и графиках отображаются данные за указанный период. По умолчанию — 12 часов.
 
-## Добавление данных мониторинга БД в свои графики
+## {heading(Добавление данных мониторинга БД в свои графики)[id=dbaas-monitoring-postgresql-add-monitoring-data]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите на имя узла инстанса БД.
 1. Перейдите на вкладку **Мониторинг**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного счетчика или графика и выберите пункт **Добавить в мои графики**.
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного счетчика или графика и выберите пункт **Добавить в мои графики**.
 1. Выберите раздел, в котором будет отображаться счетчик или график, и нажмите **Добавить**.
 1. Убедитесь, что счетчик или график добавлен в раздел:
 
@@ -29,12 +31,21 @@
     1. Раскройте раздел, на который добавлен счетчик или график.
     1. Убедитесь, что в разделе есть добавленный счетчик или график.
 
-## {heading(Доступные метрики мониторинга)[id=monitoring_metrics]}
+{ifndef(private-pg, private-pg-pdf)}
+## {heading(Доступные метрики мониторинга)[id=dbaas-monitoring-postgresql-metrics]}
+{/ifndef}
 
-### Счетчики
+{ifdef(private-pg, private-pg-pdf)}
+## {heading(Доступные метрики мониторинга PostgreSQL, Postgres Pro Standard, Postgres Pro Enterprise)[id=dbaas-monitoring-postgresql-metrics]}
+{/ifdef}
 
-Метрики CPU
+### {heading(Счетчики)[id=dbaas-monitoring-postgresql-counters]}
 
+{ifndef(private-pdf,private-pg-pdf)}Метрики CPU{/ifndef}
+
+{ifdef(private-pdf,private-pg-pdf)}
+{caption(Таблица {counter(table)[id=numb_tab_postgresql-counters-cpu]} — Метрики CPU)[align=right;position=above;id=tab_postgresql-counters-cpu;number={const(numb_tab_postgresql-counters-cpu)}]}
+{/ifdef}
 [cols="1,3"]
 |===
 |**Current IOWait**
@@ -55,11 +66,17 @@
 |**Replication lag**
 |Время отставания реплики от источника репликации в секундах. Эта метрика показывается только при просмотре данных мониторинга узлов-реплик
 |===
+{ifdef(private-pdf,private-pg-pdf)}
+{/caption}
+{/ifdef}
 
-### Графики
+### {heading(Графики)[id=dbaas-monitoring-postgresql-graph]}
 
-Нагрузка на CPU
+{ifndef(private-pdf,private-pg-pdf)}Нагрузка на CPU{/ifndef}
 
+{ifdef(private-pdf,private-pg-pdf)}
+{caption(Таблица {counter(table)[id=numb_tab_clickhouse-graph-cpu]} — Нагрузка на CPU)[align=right;position=above;id=tab_clickhouse-graph-cpu;number={const(numb_tab_clickhouse-graph-cpu)}]}
+{/ifdef}
 [cols="1,3"]
 |===
 |**Database size**
@@ -74,9 +91,15 @@
 |**RAM Used**
 |Процент занятой памяти от общего количества памяти на узле
 |===
+{ifdef(private-pdf,private-pg-pdf)}
+{/caption}
+{/ifdef}
 
-Нагрузка на базу данных
+{ifndef(private-pdf,private-pg-pdf)}Нагрузка на базу данных{/ifndef}
 
+{ifdef(private-pdf,private-pg-pdf)}
+{caption(Таблица {counter(table)[id=numb_tab_clickhouse-graph-db]} — Нагрузка на базу данных)[align=right;position=above;id=tab_clickhouse-graph-db;number={const(numb_tab_clickhouse-graph-db)}]}
+{/ifdef}
 [cols="1,3"]
 |===
 |**Fetch Data (Select)**
@@ -94,9 +117,15 @@
 |**Deleted Data**
 |Интенсивность удаления данных из базы данных: количество строк, удаленное запросами `DELETE`, в секунду
 |===
+{ifdef(private-pdf,private-pg-pdf)}
+{/caption}
+{/ifdef}
 
-Нагрузка на дисковую подсистему
+{ifndef(private-pdf,private-pg-pdf)}Нагрузка на дисковую подсистему{/ifndef}
 
+{ifdef(private-pdf,private-pg-pdf)}
+{caption(Таблица {counter(table)[id=numb_tab_clickhouse-graph-disk]} — Нагрузка на дисковую подсистему)[align=right;position=above;id=tab_clickhouse-graph-disk;number={const(numb_tab_clickhouse-graph-disk)}]}
+{/ifdef}
 [cols="1,3"]
 |===
 |**Disk Read Time**
@@ -108,8 +137,12 @@
 |**Disk used**
 |Процент использованного дискового пространства от общего объема на узле. Отображаются столбчатые диаграммы заполненности некоторых разделов, например связанных с PostgreSQL и журналом транзакций WAL
 |===
+{ifdef(private-pdf,private-pg-pdf)}
+{/caption}
+{/ifdef}
 
-## Использование сведений мониторинга
+{ifdef(public)}
+## {heading(Использование сведений мониторинга)[id=dbaas-monitoring-postgresql-using-monitoring-data]}
 
 Высокие показатели утилизации CPU и оперативной памяти, нагрузки на дисковую подсистему, а также интенсивная или неравномерная нагрузка на базу данных свидетельствуют о высокой нагрузке на узлы или о неоптимальных индексах и запросах.
 
@@ -129,8 +162,9 @@
 
 Оптимизируйте использование ресурсов:
 
-- [Увеличите значение параметра](/ru/dbs/dbaas/instructions/db-config) `max_connections`.
+- {linkto(../../instructions/db-config#dbaas-db-config)[text=Увеличите значение параметра]} `max_connections`.
 - Оптимизируйте запросы так, чтобы не было длинных транзакций.
 - Используйте [PgBouncer](https://www.pgbouncer.org/) для уменьшения нагрузки на сервер и оптимизации использование ресурсов.
 
 При возникновении проблем, связанных с отставанием реплики, обратитесь к официальной документации [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) и [PostgreSQL](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION).
+{/ifdef}

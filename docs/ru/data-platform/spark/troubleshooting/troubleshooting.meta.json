@@ -1,0 +1,14 @@
+{
+  "title": "Устранение неполадок",
+  "shortDescription": "Описание и устранение неполадок, с которыми можно столкнуться в процессе работы с Cloud Spark",
+  "metaDescription": "Узнайте о том как устранить возможные неполадки при работе с Cloud Spark на VK Data Platform",
+  "sectionTitle": "Устранение неполадок",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

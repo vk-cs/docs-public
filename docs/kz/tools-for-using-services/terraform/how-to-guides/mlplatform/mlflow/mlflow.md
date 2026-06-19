@@ -16,11 +16,11 @@
 
 1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) инстансты құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 1. Бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
-1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start#terraform_dy_zhanartu).
+1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
 
 ## 1. MLflow инстансының сипаттамасы бар файлды жасаңыз
 
@@ -72,11 +72,11 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Мысалдар)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: жаңа JupyterHub инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_jupyterhub` ресурсы құрылғаннан кейін алынады. Ресурс төменде құрылады.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [VK Cloud жеке кабинетіндегі](https://cloud.vk.com/app) JupyterHub инстансы бетінде қолжетімді.
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетіндегі](https://cloud.vk.com/app) JupyterHub инстансы бетінде қолжетімді.
 
   {/cut}
 
-- `demo_mode` — демо-режим. Егер `true` болса, барлық деректер инстанстың ВМ-інде сақталады. Егер `false` болса, деректерді сақтау үшін DBaaS Postgres дерекқоры бар S3 бакеті қосылады.
+- `demo_mode` — демо-режим. Егер `true` болса, барлық деректер инстанстың ВМ-інде сақталады. Егер `false` болса, деректерді сақтау үшін DBaaS Postgres дерекқоры бар {var(s3)} бакеті қосылады.
 
 - `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстанс бар желіде немесе жаңа желіде орналастырылуы мүмкін. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
 
@@ -84,7 +84,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
 
   - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
   - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы VK Cloud жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) немесе Openstack CLI арқылы алынған.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
 
   {/cut}
 
@@ -192,7 +192,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow инстансы сәтті құрылғанына көз жеткізіңіз:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.com/app/).
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow инстансының құрылғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

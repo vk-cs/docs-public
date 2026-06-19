@@ -1,10 +1,12 @@
-В VK Cloud [действуют ограничения](/ru/tools-for-using-services/account/concepts/quotasandlimits) на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
+# {heading(Создание диска из образа ОС большого объема)[id=s3-load-large-image]}
+
+В {var(cloud)} {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=действуют ограничения]} на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
 
 ```txt
 HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1f06dce4-XXXX-444c-bcaa-896ed69023c1/file, Request Entity Too Large
 ```
 
-Далее рассмотрено создание диска из образа ОС размером более 500 ГБ через объектное хранилище VK Cloud.
+Далее рассмотрено создание диска из образа ОС размером более 500 ГБ через объектное хранилище {var(cloud)}.
 
 Будут использоваться:
 
@@ -14,10 +16,10 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
   - установлена утилита [gzip](https://www.gnu.org/software/gzip/manual/gzip.html);
   - имеется файл образа ОС `image.raw` размером не менее 500 ГБ.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=s3-load-large-image-prepare]}
 
-1. Создайте [аккаунт](../../instructions/access-management/access-keys) и [бакет](../../instructions/buckets/create-bucket) `uc_bucket`.
-1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
+1. Создайте {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунт]} и {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]} `uc_bucket`.
+1. Убедитесь, что у вас {linkto(../../connect/s3-cli#s3-connect-cli)[text=установлен и настроен]} AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
 
    ```txt
    [default]
@@ -31,11 +33,11 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
        addressing_style = path
    ```
 
-1. [Создайте](/ru/computing/iaas/instructions/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Создайте]} ВМ Ubuntu 22.04 в облаке {var(cloud)}.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/computing/iaas/instructions/volumes/volumes-create) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) его к ВМ.
+1. {linkto(../../../../computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=Создайте]} диск размером не менее 600 ГБ и {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=подключите]} его к ВМ.
 
-## 1. Загрузите образ из локальной машины в объектное хранилище
+## {heading(1. Загрузите образ из локальной машины в объектное хранилище)[id=s3-load-large-image-download]}
 
 1. На локальной машине выполните команду:
 
@@ -114,10 +116,9 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
 1. Дождитесь окончания загрузки в объектное хранилище. Вывод команды `aws s3api list-multipart-uploads` не должен содержать данных в блоке `Uploads`.
 
-## 2. Загрузите образ на диск VK Cloud
+## {heading(2. Загрузите образ на диск {var(cloud)})[id=s3-load-large-image-download-on-volume]}
 
-1. [Подключитесь к ВМ](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) с помощью SSH.
-
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь к ВМ]} с помощью SSH.
 1. Проверьте наличие подключенного диска с помощью команды `lsblk`.
 
    {cut(Пример вывода команды)}
@@ -137,16 +138,16 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. [Пометьте](/ru/computing/iaas/instructions/volumes/volumes-manage#changing_bootable_attribute) диск с помещенным на него образом ОС как загрузочный.
-1. [Замените root-диск](/ru/computing/iaas/instructions/vm/vm-root-replace) ВМ на диск с помещенным на него образом ОС.
-1. [Запустите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
+1. {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-changing-bootable-attribute)[text=Пометьте]} диск с помещенным на него образом ОС как загрузочный.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=Замените root-диск]} ВМ на диск с помещенным на него образом ОС.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Запустите]} ВМ. Убедитесь, что запуск прошел успешно.
 
-Вы также можете [отключить](/ru/computing/iaas/instructions/volumes/volumes-connect#mount_disk) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену root-диска](/ru/computing/iaas/instructions/vm/vm-root-replace) другой ВМ.  
+Вы также можете {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=отключить]} от текущей ВМ диск с помещенным на него образом ОС и использовать его как {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=замену root-диска]} другой ВМ.  
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=s3-load-large-image-delete]}
 
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ВМ.
-- [Удалите](../../instructions/buckets/manage-bucket#bucket_delete) бакет `uc_bucket`.
-- [Удалите](/ru/computing/iaas/instructions/volumes/volumes-manage#delete_volume) диск.
+- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Удалите]} или {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=остановите]} ВМ.
+- {linkto(../../instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=Удалите]} бакет `uc_bucket`.
+- {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=Удалите]} диск.

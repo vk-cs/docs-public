@@ -1,14 +1,16 @@
+# {heading(Linux ОС бар Bare Metal серверіне қосылу)[id=bare-metal-connect-nix]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 SSH — Linux ОС бар серверге қосылудың ең кең таралған және қауіпсіз тәсілі. Аутентификацияның екі негізгі тәсілі бар:
 
-- Құпиясөз арқылы: VK Cloud образдарында әдепкі бойынша қауіпсіздік мақсатында өшірілген.
-- SSH кілті арқылы: қосылудың ең қауіпсіз тәсілі. VK Cloud образдарында әдепкі бойынша пайдаланылады.
+- Құпиясөз арқылы: {var(cloud)} образдарында әдепкі бойынша қауіпсіздік мақсатында өшірілген.
+- SSH кілті арқылы: қосылудың ең қауіпсіз тәсілі. {var(cloud)} образдарында әдепкі бойынша пайдаланылады.
 
-## {heading(Дайындық қадамдары)[id=preparatory_steps]}
+## {heading(Дайындық қадамдары)[id=bare-metal-connect-server-preparatory-steps]}
 
-1. [ОС орнату](/kz/computing/bare-metal/instructions/os-setup) кезінде VK Cloud образдарынан жүктелетін `*.pem` жеке кілт файлы бар екеніне көз жеткізіңіз.
-1. Bare Metal сервері іске қосылғанына және ОС жүктелу процесі аяқталғанына, мысалы, [VNC-консоль](/kz/computing/bare-metal/connect/console) арқылы көз жеткізіңіз.
+1. {linkto(../../../../computing/bare-metal/instructions/os-setup#bare-metal-os-setup)[text=ОС орнату]} кезінде {var(cloud)} образдарынан жүктелетін `*.pem` жеке кілт файлы бар екеніне көз жеткізіңіз.
+1. Bare Metal сервері іске қосылғанына және ОС жүктелу процесі аяқталғанына, мысалы, {linkto(../../../../computing/bare-metal/connect/console#bare-metal-console)[text=VNC-консоль]} арқылы көз жеткізіңіз.
 1. Егер серверде желілік сүзгілеу құралдары (`ufw`, `nftables`, `iptables` және т.б.) пайдаланылса, SSH протоколы бойынша қолжетімділік үшін (`22` TCP порты) ереже қосыңыз.
 1. Bare Metal серверінде SSH қызметі іске қосылғанына және жұмыс істеп тұрғанына көз жеткізіңіз. Қызметтің күйін келесі команда арқылы тексеруге болады:
 
@@ -18,11 +20,11 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
 
 {note:warn}
 
-Егер виртуалды машинаға SSH арқылы қосылу мүмкін болмаса немесе қолжетімсіз болса, [VNC-консольді](/kz/computing/bare-metal/connect/console) пайдаланыңыз.
+Егер виртуалды машинаға SSH арқылы қосылу мүмкін болмаса немесе қолжетімсіз болса, {linkto(../../../../computing/bare-metal/connect/console#bare-metal-console)[text=VNC-консольді]} пайдаланыңыз.
 
 {/note}
 
-## {heading(Bare Metal серверіне қосылу)[id=connect]}
+## {heading(Bare Metal серверіне қосылу)[id=bare-metal-connect-server]}
 
 {tabs}
 
@@ -58,11 +60,10 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
    Мұнда:
 
    - `<ФАЙЛ_КЛЮЧА>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — [VK Cloud образдарында пайдаланылатын](/kz/computing/iaas/concepts/oper-system#default_account) әдепкі есептік жазба атауы.
+   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — {linkto(../../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылатын]} әдепкі есептік жазба атауы.
    - `<ВНЕШНИЙ_IP-АДРЕС_СЕРВЕРА>` — серверге сырттан қосылу үшін бапталған IP-мекенжай.
 
-   {include(/kz/_includes/_ssh-warning.md)[tags=new-host]}
-
+   {include(../../../../_includes/_ssh-warning.md)[tags=new-host]}
 
    {/tab}
 
@@ -70,18 +71,18 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
 
    Егер Bare Metal серверіңізде сыртқы IP-мекенжай болмаса, оған аралық сервер арқылы қосылыңыз:
    
-   1. Егер әлі бапталмаған болса, аралық серверді баптаңыз. Аралық сервер ретінде, мысалы, келесідей [виртуалды машина](/kz/computing/iaas/concepts/vm) бола алады:
+   1. Егер әлі бапталмаған болса, аралық серверді баптаңыз. Аралық сервер ретінде, мысалы, келесідей {linkto(../../../../computing/iaas/concepts/vm#vm)[text=виртуалды машина]} бола алады:
 
       - Bare Metal серверімен бір желіде орналасқан;
       - сыртқы IP-мекенжайы бар.
 
       Егер сізде осындай талаптарға сай келетін ВМ болмаса:
 
-      1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын [біліңіз](/kz/computing/bare-metal/instructions/manage-server#get-info).
-      1. Келесі параметрлері бар жаңа ВМ [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create) немесе бұрыннан барын [қосыңыз](/kz/computing/iaas/instructions/vm/vm-add-net):
+      1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын {linkto(../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-get-info)[text=біліңіз]}.
+      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
 
          - **Желі**: Bare Metal сервері қосылған сол желіні таңдаңыз.
-         - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге [Floating IP-мекенжай](/kz/networks/vnet/concepts/ips-and-inet#floating-ip) қосылады.
+         - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP-мекенжай]} қосылады.
 
       1. Аралық серверге сыртқы IP арқылы қосылу жұмыс істейтініне көз жеткізіңіз.
    
@@ -98,12 +99,11 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
       Мұнда:
 
       - `<ФАЙЛ_КЛЮЧА>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-      - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — [VK Cloud образдарында пайдаланылатын](/kz/computing/iaas/concepts/oper-system#default_account) әдепкі есептік жазба атауы. Аралық сервер үшін де, Bare Metal сервері үшін де оларда пайдаланылатын ОС образына сәйкес келетін пайдаланушы атын енгізу керек.
+      - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — {linkto(../../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылатын]} әдепкі есептік жазба атауы. Аралық сервер үшін де, Bare Metal сервері үшін де оларда пайдаланылатын ОС образына сәйкес келетін пайдаланушы атын енгізу керек.
       - `<IP-АДРЕС_ПРОМЕЖУТОЧНОГО_СЕРВЕРА>` — аралық сервердің сыртқы IP-мекенжайы.
       - `<ВНУТРЕННИЙ_IP-АДРЕС_СЕРВЕРА>` — Bare Metal серверіңіздің ішкі IP-мекенжайы.
 
-      {include(/kz/_includes/_ssh-warning.md)[tags=new-host]}
-
+      {include(../../../../_includes/_ssh-warning.md)[tags=new-host]}
 
    {/tab}
 
@@ -138,11 +138,10 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
    Мұнда:
 
    - `<ФАЙЛ_КЛЮЧА>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — [VK Cloud образдарында пайдаланылатын](/kz/computing/iaas/concepts/oper-system#default_account) әдепкі есептік жазба атауы.
+   - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — {linkto(../../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылатын]} әдепкі есептік жазба атауы.
    - `<ВНЕШНИЙ_IP-АДРЕС_СЕРВЕРА>` — серверге сырттан қосылу үшін бапталған IP-мекенжай.
 
-   {include(/kz/_includes/_ssh-warning.md)[tags=new-host]}
-
+   {include(../../../../_includes/_ssh-warning.md)[tags=new-host]}
 
    {/tab}
 
@@ -150,20 +149,20 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
 
    Егер Bare Metal серверіңізде сыртқы IP-мекенжай болмаса, оған аралық сервер арқылы қосылыңыз:
    
-   1. Егер әлі бапталмаған болса, аралық серверді баптаңыз. Аралық сервер ретінде, мысалы, келесідей [виртуалды машина](/kz/computing/iaas/concepts/vm) бола алады:
+   1. Егер әлі бапталмаған болса, аралық серверді баптаңыз. Аралық сервер ретінде, мысалы, келесідей {linkto(../../../../computing/iaas/concepts/vm#vm)[text=виртуалды машина]} бола алады:
       
       - Bare Metal серверімен бір желіде орналасқан;
       - сыртқы IP-мекенжайы бар.
 
       Егер сізде осындай талаптарға сай келетін ВМ болмаса:
 
-      1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын [біліңіз](/kz/computing/bare-metal/instructions/manage-server#get-info).
-      1. Келесі параметрлері бар жаңа ВМ [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create) немесе бұрыннан барын [қосыңыз](/kz/computing/iaas/instructions/vm/vm-add-net):
+      1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын {linkto(../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-get-info)[text=біліңіз]}.
+      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
 
          - **Желі**: Bare Metal сервері қосылған сол желіні таңдаңыз.
-         - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге [Floating IP-мекенжай](/kz/networks/vnet/concepts/ips-and-inet#floating-ip) қосылады.
+         - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP-мекенжай]} қосылады.
 
-      1. [Тексеріңіз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix#4_vm_ge_kosylynyz), аралық серверге сыртқы IP арқылы қосылу жұмыс істейді.
+      1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#4_podklyuchites_k_vm)[text=Тексеріңіз]}, аралық серверге сыртқы IP арқылы қосылу жұмыс істейді.
    
    1. Bare Metal серверіне қосылыңыз.
 
@@ -178,11 +177,11 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
       Мұнда:
 
       - `<ФАЙЛ_КЛЮЧА>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-      - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — [VK Cloud образдарында пайдаланылатын](/kz/computing/iaas/concepts/oper-system#default_account) әдепкі есептік жазба атауы. Аралық сервер үшін де, Bare Metal сервері үшін де оларда пайдаланылатын ОС образына сәйкес келетін пайдаланушы атын енгізу керек.
+      - `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — {linkto(../../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылатын]} әдепкі есептік жазба атауы. Аралық сервер үшін де, Bare Metal сервері үшін де оларда пайдаланылатын ОС образына сәйкес келетін пайдаланушы атын енгізу керек.
       - `<IP-АДРЕС_ПРОМЕЖУТОЧНОГО_СЕРВЕРА>` — аралық сервердің сыртқы IP-мекенжайы.
       - `<ВНУТРЕННИЙ_IP-АДРЕС_СЕРВЕРА>` — Bare Metal серверіңіздің ішкі IP-мекенжайы.
 
-      {include(/kz/_includes/_ssh-warning.md)[tags=new-host]}
+      {include(../../../../_includes/_ssh-warning.md)[tags=new-host]}
 
    {/tab}
 

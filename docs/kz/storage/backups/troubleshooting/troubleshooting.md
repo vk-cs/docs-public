@@ -1,3 +1,5 @@
+# {heading(Ақауларды жою)[id=backup-troubleshooting]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Сақтық көшірмелеуге қатысты типтік мәселелерді диагностикалау және шешу тәсілдері.

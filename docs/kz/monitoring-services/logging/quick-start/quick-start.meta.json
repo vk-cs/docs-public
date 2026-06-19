@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Logging — ВМ ішіндегі пайдаланушы қолданбаларының логтарымен және VK Cloud бұлтында жұмыс істеуге арналған сервис. Cloud Logging сервисін қалай пайдалануды бастауға болады",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

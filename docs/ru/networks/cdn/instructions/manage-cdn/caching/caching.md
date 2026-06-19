@@ -1,4 +1,6 @@
-## Настройка кеширования на CDN-ресурсах
+# {heading(Кеширование)[id=cdn-caching]}
+
+## {heading(Настройка кеширования на CDN-ресурсах)[id=cdn-caching-cdn-resource]}
 
 Настройка позволяет задать параметры хранения контента в кеше CDN-ресурса. Когда время заканчивается, CDN-ресурс проверяет файл на источнике:
 
@@ -11,7 +13,7 @@
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Кеширование**.
 1. Включите опцию **Кеширование на CDN**.
@@ -48,7 +50,7 @@
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `edge_cache_settings`.
 
@@ -86,7 +88,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Настройка кеширования в браузере
+## {heading(Настройка кеширования в браузере)[id=cdn-caching-browser]}
 
 Настройка позволяет задать параметры хранения контента в кеше браузеров конечных пользователей.
 
@@ -96,7 +98,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Кеширование**.
 1. Включите опцию **Кеширование в браузере**.
@@ -128,7 +130,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `browser_cache_settings`.
 
@@ -156,7 +158,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Игнорирование заголовка Set-Cookie при кешировании
+## {heading(Игнорирование заголовка Set-Cookie при кешировании)[id=cdn-caching-ignore-set-cookie]}
 
 Запросы к CDN-серверу на получение одного и того же файла могут содержать один путь до файла, но разные значения в HTTP-заголовке `Set-Cookie`. По умолчанию CDN-ресурс считает такие запросы разными и перенаправляет их на сервер-источник. Это снижает скорость передачи данных. Игнорирование заголовка `Set-Cookie` позволяет CDN-ресурсу использовать свой кеш, а не отправлять запрос на источник.
 
@@ -166,7 +168,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Кеширование**.
 1. Включите опцию **Игнорировать Set-Cookie**.
@@ -176,7 +178,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры `ignore_cookie`.
 
@@ -204,7 +206,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Игнорирование параметров запроса при кешировании
+## {heading(Игнорирование параметров запроса при кешировании)[id=cdn-caching-ignore-parameters]}
 
 Запросы к CDN-серверу на получение одного и того же файла могут содержать один путь до файла, но разные query-параметры. По умолчанию CDN-ресурс считает такие запросы разными и перенаправляет их на сервер-источник. Это снижает скорость передачи данных. Игнорирование всех или некоторых параметров позволяет CDN-ресурсу использовать свой кеш, а не отправлять запрос на источник.
 
@@ -214,7 +216,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(Личный кабинет)}
 
-{include(/ru/_includes/_open-cdn.md)}
+{include(../../../../../_includes/_open-cdn.md)}
 
 1. Перейдите на вкладку **Кеширование**.
 1. Включите опцию **Игнорировать параметры запроса**.
@@ -231,7 +233,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {tab(API)}
 
-{include(/ru/_includes/_api_cdn_create_change.md)}
+{include(../../../../../_includes/_api_cdn_create_change.md)}
 
 В теле запроса в блоке `options` пропишите параметры:
 

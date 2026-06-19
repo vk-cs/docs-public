@@ -2,7 +2,7 @@
 
 {note:info}
 
-Қосымша жоба баптаулары [VK Cloud жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) қолжетімді.
+Қосымша жоба баптаулары [{var(cloud)} жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) қолжетімді.
 
 {/note}
 
@@ -14,7 +14,7 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
 {include(/kz/_includes/_project_pid_tab_account.md)}
 
@@ -34,7 +34,7 @@
 
 {tabs}
 
-{tab(VK Cloud Аккаунт)}
+{tab({var(cloud)} Аккаунт)}
 
 {include(/kz/_includes/_project_rename_tab_account.md)}
 

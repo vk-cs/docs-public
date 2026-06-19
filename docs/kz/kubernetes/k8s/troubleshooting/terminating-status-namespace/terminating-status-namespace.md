@@ -1,39 +1,41 @@
+# {heading(Атау кеңістігін жою мүмкін болмай тұр)[id=k8s-terminating-status-namespace]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Атау кеңістігі жойылмайды және `terminating` күйінде қалады.
 
 Бұл жою процесі тұрып қалғанына немесе ресурстарды тазалау кезінде мәселелер туындағанына байланысты болуы мүмкін.
 
-### Шешім
+### {heading(Шешім)[id=k8s-terminating-status-namespace-solution]}
 
-1. [Кластерге қосылыңыз](../../connect/kubectl) `kubectl` көмегімен.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Кластерге қосылыңыз]} `kubectl` көмегімен.
 
 1. Атау кеңістігінің сипаттамасы бар JSON-файлды алыңыз.
-   
+
    `test.json` файлын алу пәрменінің мысалы:
-   
+
    ```console
    kubectl get ns <НАЗВАНИЕ_ПРОСТРАНСТВА_ИМЕН> -o json > test.json
    ```
 
 1. JSON-файлдағы `spec` блогының мазмұнын жойыңыз.
-   
+
    `spec` блогы мынадай болуы тиіс:
-   
+
    ```json
    "spec": { 
    }
    ```
 
 1. Прокси-серверді іске қосыңыз:
-   
+
    ```console
    kubectl proxy
    ```
 
 1. Атау кеңістігін API-сұрау немесе `kubectl replace` пәрмені арқылы жойыңыз.
-   
-   `test.json` файлдар арқылы жою мысалдары:
+
+   `test.json` файлы арқылы жою мысалдары:
 
    {tabs}
    {tab(API-сұрау)}
@@ -42,7 +44,7 @@
    ```
    {/tab}
    {tab(Команда kubectl replace)}
-   Бұл тәсіл жалпығал қолжетімді Kubernetes API пайдаланған жағдайда қолайлы.
+   Бұл тәсіл жалпыға қолжетімді Kubernetes API пайдаланған жағдайда қолайлы.
 
    ```console
    kubectl replace --raw "/api/v1/namespaces//finalize" -f test.json

@@ -1,9 +1,23 @@
 {
-    "title": "About service",
-      "shortDescription": "A brief description of the service's features and examples of tasks that can be solved with it.",
-      "metaDescription": "",
-    "sectionTitle": "About service",
-    "icon": "",
-    "weight": 1,
-    "uuid": "a03032dc-1ebe-4e75-a08b-37fd7d8daad7"
+  "title": "About service",
+  "shortDescription": "A brief description of the service's features and examples of tasks that can be solved with it.",
+  "metaDescription": "",
+  "sectionTitle": "About service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a03032dc-1ebe-4e75-a08b-37fd7d8daad7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

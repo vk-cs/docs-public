@@ -1,11 +1,11 @@
+# {heading(Не настроен интерфейс ВМ)[id=iaas-restored-vm-no-interface]}
+
 У ВМ, восстановленной из резервной копии, не настроены интерфейсы.
 
-### Решение
+### {heading(Решение)[id=iaas-restored-vm-no-interface-decision]}
 
-После восстановления из резервной копии [проверьте и при необходимости скорректируйте](/ru/computing/iaas/troubleshooting/linux-vm-network#1_proverte_nastroyki_setevogo_interfeysa) настройки интерфейсов в операционной системе ВМ. Настройки внутреннего и внешнего адресов ВМ должны соответствовать настройкам в [личном кабинете](https://msk.cloud.vk.com/app/).
+После восстановления из резервной копии {linkto(../../../../computing/iaas/troubleshooting/linux-vm-network#iaas-linux-vm-network-settings-check)[text=проверьте и при необходимости скорректируйте]} настройки интерфейсов в операционной системе ВМ. Настройки внутреннего и внешнего адресов ВМ должны соответствовать настройкам в [личном кабинете](https://msk.cloud.vk.com/app/).
 
 {note:info}
-
-Используйте [Floating IP-адреса](/ru/networks/vnet/concepts/ips-and-inet#floating-ip) для подключения всех ВМ, которые должны иметь внешний IP. Если ВМ будет удалена или ее нужно будет пересоздать, Floating IP-адрес останется в проекте и его можно будет назначить восстановленной ВМ.
-
+Используйте {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адреса]} для подключения всех ВМ, которые должны иметь внешний IP. Если ВМ будет удалена или ее нужно будет пересоздать, Floating IP-адрес останется в проекте и его можно будет назначить восстановленной ВМ.
 {/note}

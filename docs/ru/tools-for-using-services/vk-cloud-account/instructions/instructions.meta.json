@@ -1,9 +1,14 @@
 {
   "title": "Пошаговые инструкции",
-  "shortDescription": "Работа с аккаунтом VK Cloud",
+  "shortDescription": "Работа с аккаунтом {var(cloud)}",
   "metaDescription": "Работа с аккаунтом VK Cloud.",
   "sectionTitle": "Пошаговые инструкции",
   "icon": "",
   "weight": 1,
-  "uuid": "e1ed624b-9991-4828-9a63-4d752802afe7"
+  "uuid": "e1ed624b-9991-4828-9a63-4d752802afe7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,19 @@
 {
   "title": "Концепции",
-  "shortDescription": "Как устроены сетевые сервисы VK Cloud",
+  "shortDescription": "Как устроены сетевые сервисы {var(cloud)}",
   "metaDescription": "Cloud Networks управляет сетевым доступом виртуальных машин, позволяет добавлять к ним балансировщики нагрузки, объединять их в сети и подсети, настраивать маршрутизаторы и группы безопасности",
   "sectionTitle": "Концепции",
   "icon": "",
   "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-cert",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
   "uuid": "5aec52a4-ff32-4122-9e53-9e54235dd5d2"
 }

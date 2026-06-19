@@ -4,5 +4,10 @@
   "shortDescription": "image-based қолданбалардың пайдаланушыларынан автоматты түрде ақы алу үшін Marketplace-ке ресурс тұтыну метрикаларын қалай жіберуге болады",
   "metaDescription": "Marketplace VK Cloud: ресурстарды пайдалану метрикаларын жіберу",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

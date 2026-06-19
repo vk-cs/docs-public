@@ -5,5 +5,14 @@
   "sectionTitle": "Grafana қосу",
   "icon": "",
   "weight": 4,
-  "isBeta": true
+  "isBeta": true,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

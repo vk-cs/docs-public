@@ -63,7 +63,27 @@
     "10ef4ef1-44b7-4c44-84af-dafde2b9c7dc",
     "b0351979-6320-4893-bec8-c80fa253d828",
     "d4800688-e762-41e3-9150-33d763ddc529",
-    "be47b8cf-a531-4da4-99e8-13ff4bd14767"
+    "be47b8cf-a531-4da4-99e8-13ff4bd14767",
+    "72405ea3-c208-49eb-a10b-c7873e46e997",
+    "3776b604-2797-47d9-858d-bb703be06d24",
+    "6dff963b-ef6d-4689-bb2d-b8e22420520f",
+    "0c9e0938-c558-4b65-abe5-96a42431c83a",
+    "d6eff2ef-a454-4f4c-957c-f078576269cd",
+    "b17364d8-3143-4fa1-9b98-c8c377e55d03"
   ],
-  "uuid": "def25faf-5c88-41b1-987d-a1ba8d84cfdd"
+  "uuid": "def25faf-5c88-41b1-987d-a1ba8d84cfdd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

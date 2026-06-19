@@ -1,9 +1,14 @@
 {
-    "title": "Bucket",
-      "shortDescription": "",
-      "metaDescription": "Операции с Бакетами: Create - Создать бакет\nListBuckets - Получить список бакетов\nHeadBucket - Проверка наличия бакета и доступа к нему \nListObjects - Полу",
-    "sectionTitle": "Bucket",
-    "icon": "",
-    "weight": 2,
-    "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa"
+  "title": "Bucket",
+  "shortDescription": "Создание, удаление, проверка наличия бакета и листинг его содержимого",
+  "metaDescription": "Все доступные методы для работы с бакетами VK Object Storage: создание нового бакета (CreateBucket), листинг бакетов (ListBuckets), проверка существования бакета (HeadBucket), листинг объектов бакета (ListObjects), удаление бакета (DeleteBucket)",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 2,
+  "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Скрипттерді пайдалану",
   "sectionTitle": "Скрипттерді пайдалану",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

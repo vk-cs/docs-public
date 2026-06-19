@@ -5,5 +5,10 @@
   "sectionTitle": "ClickHouse",
   "icon": "",
   "weight": 6,
-  "uuid": "1d706c14-fdb4-4289-b9df-1dd5f6146cfb"
+  "uuid": "1d706c14-fdb4-4289-b9df-1dd5f6146cfb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

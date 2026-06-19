@@ -1,9 +1,14 @@
 {
-    "title": "Managing advanced routers",
-      "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
-      "metaDescription": "",
-    "sectionTitle": "Managing advanced routers",
-    "icon": "",
-    "weight": 1,
-    "uuid": "009acd1a-1ee4-43ed-b7d3-d4103833482a"
+  "title": "Managing advanced routers",
+  "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
+  "metaDescription": "",
+  "sectionTitle": "Managing advanced routers",
+  "icon": "",
+  "weight": 1,
+  "uuid": "009acd1a-1ee4-43ed-b7d3-d4103833482a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

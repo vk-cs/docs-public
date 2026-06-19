@@ -1,9 +1,14 @@
 {
-    "title": "Deleting CDN resource",
-      "shortDescription": "How to delete a CDN resource in the CDN service or from the VK Object Storage bucket",
-      "metaDescription": "How to delete a CDN resource in the CDN service or from the VK Object Storage bucket.",
-    "sectionTitle": "Deleting CDN resource",
-    "icon": "",
-    "weight": 6,
-    "uuid": "a69db7bb-9c2c-4518-98ee-5e85358a57e3"
+  "title": "Deleting CDN resource",
+  "shortDescription": "How to delete a CDN resource in the CDN service or from the VK Object Storage bucket",
+  "metaDescription": "How to delete a CDN resource in the CDN service or from the VK Object Storage bucket.",
+  "sectionTitle": "Deleting CDN resource",
+  "icon": "",
+  "weight": 6,
+  "uuid": "a69db7bb-9c2c-4518-98ee-5e85358a57e3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

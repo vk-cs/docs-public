@@ -4,15 +4,15 @@
 
 1. Установите Packer:
 
-   1. Скачайте Packer с [официального зеркала VK Cloud](https://hashicorp-releases.mcs.mail.ru/packer/).
+   1. Скачайте Packer с [официального зеркала {var(cloud)}](https://hashicorp-releases.mcs.mail.ru/packer/).
    1. Распакуйте архив и в переменной среды `Path` укажите путь к распакованному файлу.
    1. Выполните команду `packer`, чтобы убедиться в успешной установке Packer.
 
    Подробная инструкция приведена в [официальной документации Packer](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli).
-1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) OpenStack CLI и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) OpenStack CLI и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#openstack-authorize) в проекте.
 1. Скачайте базовый образ ОС, поддерживающий работу с облачными платформами.
 
-   ОС должна удовлетворять {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=требованиям к образу сервиса]}.
+   ОС должна удовлетворять [требованиям к образу сервиса](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based#image_based_req_image).
 
    На [официальном сайте OpenStack](https://docs.openstack.org/image-guide/obtain-images.html) размещены ссылки на образы некоторых ОС, поддерживающих работу с облачными платформами.
 
@@ -60,7 +60,7 @@
 
       ID созданного образа будет отображаться в ЛК облачной платформы.
 
-   Подробная инструкция приведена в разделе [Импорт образа](/ru/computing/iaas/instructions/images/images-manage#import_obraza).
+   Подробная инструкция приведена в разделе [Импорт образа](/ru/computing/iaas/instructions/images/images-manage#iaas-images-manage-import).
 1. Сконфигурируйте packer-файл:
 
    1. В переменные окружения запишите ID сети и ID базового образа:

@@ -5,5 +5,9 @@
   "sectionTitle": "ВМ зависла в статусе перезагрузки",
   "icon": "",
   "weight": 22,
-  "uuid": "0a4e75b6-f9d7-490b-b9de-57578c357af8"
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

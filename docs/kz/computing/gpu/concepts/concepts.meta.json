@@ -4,5 +4,14 @@
   "metaDescription": "Cloud GPU жұмыс істеу принциптері мен құрылымының сипаттамасы",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

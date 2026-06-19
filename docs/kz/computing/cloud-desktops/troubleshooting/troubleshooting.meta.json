@@ -4,5 +4,14 @@
   "metaDescription": "Виртуалды жұмыс үстелдеріндегі мәселелерді диагностикалау тәсілдері",
   "sectionTitle": "Ақауларды жою",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

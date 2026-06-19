@@ -1,4 +1,6 @@
-## Автономера
+# {heading(Использование Curl)[id=vision-htg-vision-curl]}
+
+## {heading(Автономера)[id=vision-htg-vision-curl-autonumbers]}
 
 Запрос:
 
@@ -54,13 +56,13 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oaut
 }
 ```
 
-## Объекты+сцены
+## {heading(Объекты+сцены)[id=vision-htg-vision-curl-objects-scenes]}
 
 ```console
 curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/car_number1.jpg  -F file_1=@examples/x5.png  -F meta='{"mode":["object", "scene"],"images":[{"name":"file_1"}, {"name":"file_0"}]}'
 ```
 
-## Персоны
+## {heading(Персоны)[id=vision-htg-vision-curl-persons]}
 
 ```console
 curl -k -v "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/friends1.jpg  -F file_1=@examples/rachel-green.jpg -F meta='{"images":[{"name":"file_1"}, {"name":"file_0"}], "space":"1"}'

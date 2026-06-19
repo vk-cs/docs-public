@@ -1,8 +1,13 @@
 {
   "title": "Тарифтеу",
   "shortDescription": "Сервисті тарифтеудің ерекшеліктері және құнын есептеу",
-  "metaDescription": "Cloud Containers сервисін тарифтеудің ерекшеліктері: «pay as you go» қалғидаты, CPU, RAM, дискілер, теңгергіштер және Floating IP бойынша master және worker түйіндерге арналған шығындар егжей-тегжейі",
+  "metaDescription": "Cloud Containers сервисін тарифтеудің ерекшеліктері: «pay as you go» қағидаты, CPU, RAM, дискілер, теңгергіштер және Floating IP бойынша master және worker түйіндерге арналған шығындар егжей-тегжейі",
   "sectionTitle": "Тарифтеу",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

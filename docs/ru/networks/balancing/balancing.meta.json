@@ -5,5 +5,15 @@
   "sectionTitle": "Load Balancing",
   "icon": "",
   "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
   "uuid": "94e7570d-d356-4d20-993b-035540173ee5"
 }

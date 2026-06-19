@@ -1,3 +1,5 @@
+# {heading(ИИ-консультант {var(cloud)})[id=support-tg-support-bot]}
+
 Поддержка VK Tech — это Telegram-бот, который позволяет управлять заявками в техническую поддержку. С помощью бота вы можете:
 
 - создавать новые заявки;
@@ -9,18 +11,18 @@
 
 Чтобы воспользоваться этими возможностями, зарегистрируйтесь в чат-боте.
 
-## Регистрация в чат-боте
+## {heading(Регистрация в чат-боте)[id=support-tg-support-bot-reg]}
 
 1. Перейдите на [портал технической поддержки VK Tech](https://support.mcs.mail.ru/).
 1. Авторизуйтесь с помощью логина и пароля, полученных при регистрации на портале.
 
-{include(/ru/_includes/_tg-support-bot.md)[tags=registration_tg_bot]}
+{include(../../../../_includes/_tg-support-bot.md)[tags=registration_tg_bot]}
 
-## Создание заявки в техническую поддержку
+## {heading(Создание заявки в техническую поддержку)[id=support-tg-support-bot-creat-request]}
 
-{include(/ru/_includes/_tg-support-bot.md)[tags=create_request_tg_bot]}
+{include(../../../../_includes/_tg-support-bot.md)[tags=create_request_tg_bot]}
 
-## Управление заявками
+## {heading(Управление заявками)[id=support-tg-support-bot-manage-request]}
 
 С помощью бота вы можете работать с заявками и взаимодействовать с технической поддержкой.
 
@@ -72,7 +74,7 @@
 
 {/tabs}
 
-## Использование чат-бота технической поддержки в группе в Telegram
+## {heading(Использование чат-бота технической поддержки в группе в Telegram)[id=support-tg-support-bot-use]}
 
 Вы можете добавить чат-бот в любую группу в Telegram. Это позволит быстро создавать заявки в техническую поддержку прямо из сообщений в группе.
 

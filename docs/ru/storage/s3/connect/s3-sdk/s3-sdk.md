@@ -1,4 +1,6 @@
-Чтобы подключиться к VK Object Storage с помощью SDK:
+# {heading(SDK)[id=s3-connect-sdk]}
+
+Чтобы подключиться к {var(s3)} с помощью SDK:
 
 1. Установите нужные инструменты или SDK:
 
@@ -12,7 +14,9 @@
    - [SDK для Go](https://docs.aws.amazon.com/sdk-for-go).
    - [Mobile SDK для iOS и Android](https://docs.amplify.aws).
 
-1. Создайте [аккаунт](/ru/storage/s3/instructions/access-management/access-keys) и [бакет](../../instructions/buckets/create-bucket), если этого не было сделано ранее. Сохраните реквизиты для подключения:
+1. Создайте {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=аккаунт]} и {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если этого не было сделано ранее. Сохраните реквизиты для подключения:
+
+   {ifdef(public)}
 
    {tabs}
 
@@ -36,11 +40,22 @@
 
    {/tabs}
 
-1. Настройте параметры подключения к VK Object Storage одним из способов:
+   {/ifdef}
+
+   {ifdef(s3,s3-pdf)}
+   
+   - Endpoint URL: ссылка с доменным именем, которое было указано при установке сервиса.
+   - Access Key ID: полученный при создании аккаунта идентификатор ключа доступа.
+   - Secret Key: полученный при создании аккаунта секретный ключ.
+   - Default region name: регион размещения сервиса {var(s3)}, указанный при установке сервиса. По умолчанию используется значение `ru-msk`.
+
+   {/ifdef}
+
+1. Настройте параметры подключения к {var(s3)} одним из способов:
 
    - Добавьте реквизиты в конфигурационный файл `~/.aws/credentials`.
 
-     Полный список список инструментов и SDK, которые поддерживают такой способ, приведен в [официальной документации AWS](https://docs.aws.amazon.com/sdkref/latest/guide/supported-sdks-tools.html).
+     Полный список инструментов и SDK, которые поддерживают такой способ, приведен в [официальной документации AWS](https://docs.aws.amazon.com/sdkref/latest/guide/supported-sdks-tools.html).
 
    - Укажите реквизиты в переменных окружения:
 
@@ -69,72 +84,70 @@
      {/tabs}
 
      {note:warn}
-
      Некоторые инструменты и SDK могут не считывать переменную `AWS_DEFAULT_REGION` и требуют указания региона другим способом — проверяйте документацию нужного инструмента.
-
      {/note}
 
    - Добавьте реквизиты непосредственно в исходный код.
 
-1. Подключитесь к VK Object Storage через установленный SDK.
+1. Подключитесь к {var(s3)} через установленный SDK.
 
-   В приведенных ниже примерах при успешном подключении выводится список бакетов хранилища для региона Москва.
+   В приведенных ниже примерах при успешном подключении выводится список бакетов хранилища{ifdef(public)} для региона Москва{/ifdef}.
 
    {cut(Пример на Python)}
 
-     Все параметры подключения к объектному хранилищу указаны в исходном коде.
+   Все параметры подключения к объектному хранилищу указаны в исходном коде.
 
-     ```python
-     import boto3
-     session = boto3.session.Session()
-     s3_client = session.client(
-         service_name = 's3',
-         endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru',
-         aws_access_key_id = '<YOUR_ACCESS_KEY>',
-         aws_secret_access_key = '<YOUR_SECRET_KEY>',
-         region_name='ru-msk'
-     )
+   ```python
+   import boto3
+   session = boto3.session.Session()
+   s3_client = session.client(
+       service_name = 's3',
+       endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru',
+       aws_access_key_id = '<YOUR_ACCESS_KEY>',
+       aws_secret_access_key = '<YOUR_SECRET_KEY>',
+       region_name='ru-msk'
+   )
 
-     response = s3_client.list_buckets()
+   response = s3_client.list_buckets()
 
-     for key in response['Buckets']:
-         print(key['Name'])
-     ```
+   for key in response['Buckets']:
+       print(key['Name'])
+   ```
 
    {/cut}
 
    {cut(Пример на Go)}
 
-     Идентификатор ключа аккаунта и секретный ключ добавлены в переменные среды окружения `AWS_ACCESS_KEY_ID` и `AWS_SECRET_ACCESS_KEY` соответственно. Остальные реквизиты для доступа к объектному хранилищу указаны в исходном коде.
+   Идентификатор ключа аккаунта и секретный ключ добавлены в переменные среды окружения `AWS_ACCESS_KEY_ID` и `AWS_SECRET_ACCESS_KEY` соответственно. Остальные реквизиты для доступа к объектному хранилищу указаны в исходном коде.
 
-     ```go
-     package main
+   ```go
+   package main
 
-     import (
-         "github.com/aws/aws-sdk-go/aws"
-         "github.com/aws/aws-sdk-go/aws/session"
-         "github.com/aws/aws-sdk-go/service/s3"
-         "log"
-     )
+   import (
+       "github.com/aws/aws-sdk-go/aws"
+       "github.com/aws/aws-sdk-go/aws/session"
+       "github.com/aws/aws-sdk-go/service/s3"
+       "log"
+   )
 
-     const (
-         vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
-         defaultRegion = "ru-msk"
-     )
+   const (
+       vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
+       defaultRegion = "ru-msk"
+   )
 
-     func main() {
-     	sess, _ := session.NewSession()
+   func main() {
+       sess, _ := session.NewSession()
 
-     	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
+       c := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
-     	if res, err := svc.ListBuckets(nil); err != nil {
-     		log.Fatalf("Unable to list buckets, %v", err)
-     	} else {
-     		for _, b := range res.Buckets {
-     			log.Printf("* %s created on %s \n", aws.StringValue(b.Name), aws.TimeValue(b.CreationDate))
-     		}
-     	}
-     }
-     ```
+       if res, err := svc.ListBuckets(nil); err != nil {
+     	   log.Fatalf("Unable to list buckets, %v", err)
+       } else {
+     	   for _, b := range res.Buckets {
+     		   log.Printf("* %s created on %s \n", aws.StringValue(b.Name), aws.TimeValue(b.CreationDate))
+     	   }
+   	   }
+   }
+   ```
 
    {/cut}

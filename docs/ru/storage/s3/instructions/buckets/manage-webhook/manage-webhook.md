@@ -1,75 +1,128 @@
-VK Object Storage позволяет настроить уведомления о добавлении или удалении объекта из бакета.
+# {heading(Управление вебхуками)[id=s3-instructions-manage-webhook]}
+
+{var(s3)} позволяет настроить уведомления о добавлении или удалении объекта из бакета.
 
 {note:info}
-
 Обычно уведомления доставляются за секунды, но иногда это может занять минуту или больше.
-
 {/note}
 
-## {heading(Добавление вебхука)[id=add_webhook]}
+## {heading(Добавление вебхука)[id=s3-instructions-manage-webhook-add]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-{include(/ru/_includes/_s3-open-bucket.md)}
+{ifdef(public)}
 
-1. Перейдите на вкладку **Webhooks** и нажмите кнопку ![plus-icon](/ru/assets/plus-icon.svg "inline") **Добавить**.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, где находится нужный бакет.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Перейдите в настройки бакета одним из способов:
+
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+   - Нажмите на имя нужного бакета, затем на странице бакета нажмите кнопку ![ ](../../../assets/settings-icon.svg "inline").
+
+1. Перейдите на вкладку **Webhooks** и нажмите кнопку ![plus-icon](../../../assets/plus-icon.svg "inline") **Добавить**.
 1. Укажите параметры вебхука:
 
    - **ID**: имя вебхука. Имя должно быть уникальным в рамках одного бакета.
    - **Event**: события, при которых должно отправляться уведомление:
 
-      - `ObjectCreated` — добавление объекта в бакет любым способом, включает в себя события `PutObject`, `PutObjectCopy` и `CompleteMultipartUpload`;
-      - `PutObject` — добавление объекта;
-      - `PutObjectCopy` — добавление копии объекта;
-      - `CompleteMultipartUpload` — добавление объекта составным методом;
-      - `ObjectRemoved` — удаление объекта любым способом, включает в себя событие `DeleteObject`;
-      - `DeleteObject` — удаление объекта.
+     - `ObjectCreated` — добавление объекта в бакет любым способом, включает в себя события `PutObject`, `PutObjectCopy` и `CompleteMultipartUpload`;
+     - `PutObject` — добавление объекта;
+     - `PutObjectCopy` — добавление копии объекта;
+     - `CompleteMultipartUpload` — добавление объекта составным методом;
+     - `ObjectRemoved` — удаление объекта любым способом, включает в себя событие `DeleteObject`;
+     - `DeleteObject` — удаление объекта.
 
    - **URL**: адрес сервера приема вебхуков. Например, `http://83.166.234.90/webhook`. Для приема вебхуков на сервере должны быть настроены порты `80` или `443`.
    - **Filter prefix**: фильтр, который позволяет генерировать вебхуки на события только с теми объектами, имя которых содержит указанный префикс. Например, если ввести значение `images`, то вебхуки будут отправляться при изменении объектов типа `bucket\images\picture.png`, `bucket\images\picture.svg`. В личном кабинете префикс отображается в виде директории.
    - **Filter suffix**: фильтр, который позволяет генерировать вебхуки на события только с теми объектами, имя которых содержит указанный суффикс. Например, если ввести значение `png`, то вебхуки будут отправляться при изменении файлов с расширением `.png`.
+
 1. Нажмите кнопку **Добавить hook**.
 
 {/tab}
 
 {/tabs}
 
-Вы можете подробно изучить механизм обмена вебхуками в VK Object Storage на [примере создания event-driven приложения](https://habr.com/ru/companies/vk/articles/510110).
+Вы можете подробно изучить механизм обмена вебхуками в {var(s3)} на [примере создания event-driven приложения](https://habr.com/ru/companies/vk/articles/510110).
 
-## Редактирование вебхука
+## {heading(Редактирование вебхука)[id=s3-instructions-manage-webhook-edit]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
-{include(/ru/_includes/_s3-open-bucket.md)}
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, где находится нужный бакет.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Перейдите в настройки бакета одним из способов:
+
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+   - Нажмите на имя нужного бакета, затем на странице бакета нажмите кнопку ![ ](../../../assets/settings-icon.svg "inline").
 
 1. Перейдите на вкладку **Webhooks**.
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![pencil-icon](/ru/assets/pencil-icon.svg "inline") **Редактировать hook**.
-1. Отредактируйте [параметры](#add_webhook) вебхука.
+1. Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![pencil-icon](../../../assets/pencil-icon.svg "inline") **Редактировать hook**.
+1. Отредактируйте {linkto(#s3-instructions-manage-webhook-add)[text=параметры]} вебхука.
 1. Нажмите кнопку **Сохранить изменения**.
 
 {/tab}
 
 {/tabs}
 
-## Удаление вебхука
+## {heading(Удаление вебхука)[id=s3-instructions-manage-webhook-delete]}
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
 
 Это групповая операция: при необходимости можно удалить несколько вебхуков, выбрав их с помощью флажков.
 
-{include(/ru/_includes/_s3-open-bucket.md)}
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, где находится нужный бакет.
+1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+1. Перейдите в настройки бакета одним из способов:
+
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+   - Нажмите на имя нужного бакета, затем на странице бакета нажмите кнопку ![ ](../../../assets/settings-icon.svg "inline").
 
 1. Перейдите на вкладку **Webhooks**.
 1. Удалите вебхук одним из способов:
 
-   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить hook**.
-   - Установите флажок для нужного вебхука и нажмите кнопку ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить**.
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![trash-icon](../../../assets/trash-icon.svg "inline") **Удалить hook**.
+   - Установите флажок для нужного вебхука и нажмите кнопку ![trash-icon](../../../assets/trash-icon.svg "inline") **Удалить**.
+
 1. Подтвердите удаление.
 
 {/tab}

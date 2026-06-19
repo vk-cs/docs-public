@@ -5,7 +5,7 @@
 ## 1. Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/instructions/net#vnet-net-add) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
 1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create):
 
    - имя: `Ubuntu_22_04_LAMP`;
@@ -30,7 +30,7 @@
 
    {/note}
 
-1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#add) DNS-зону.
+1. [Создайте](/ru/networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add) DNS-зону.
 
    {note:warn}
 
@@ -38,7 +38,7 @@
 
    {/note}
 
-1. [Создайте](/ru/networks/dns/instructions/publicdns/records#add) запись в выделенной зоне:
+1. [Создайте](/ru/networks/dns/instructions/publicdns/records#dns-records-add) запись в выделенной зоне:
 
    - тип записи: `A`;
    - имя: например, `site-lamp.example.vk.cloud`;
@@ -90,7 +90,7 @@
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `Ubuntu_22_04_LAMP`.
-- [Удалите](/ru/dbs/dbaas/instructions/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-5864`.
-- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес `211.243.95.137`.
-- [Удалите](/ru/networks/dns/instructions/publicdns/records#udalenie_resursnyh_zapisey) созданную DNS-запись `site-lamp.example.vk.cloud`.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) ВМ `Ubuntu_22_04_LAMP`.
+- [Удалите](/ru/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance) инстанс БД `MySQL-5864`.
+- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адрес `211.243.95.137`.
+- [Удалите](/ru/networks/dns/instructions/publicdns/records#dns-records-delete) созданную DNS-запись `site-lamp.example.vk.cloud`.

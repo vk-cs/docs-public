@@ -5,5 +5,19 @@
   "sectionTitle": "Создание экземпляра сервиса",
   "icon": "",
   "weight": 1,
-  "uuid": "b0af96f0-c2ea-46d7-b9e4-97cf0918d987"
+  "uuid": "b0af96f0-c2ea-46d7-b9e4-97cf0918d987",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

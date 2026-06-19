@@ -1,9 +1,14 @@
 {
   "title": "Информационная безопасность",
-  "shortDescription": "Решения VK Cloud по обеспечению безопасности использования платформы",
+  "shortDescription": "Решения {var(cloud)} по обеспечению безопасности использования платформы",
   "metaDescription": "Технические решения по повышению безопасности работы с VK Cloud",
   "sectionTitle": "Информационная безопасность",
   "icon": "",
   "weight": 4,
-  "uuid": "8fa680b7-9fa3-4ede-9729-ab6c9eb307ce"
+  "uuid": "8fa680b7-9fa3-4ede-9729-ab6c9eb307ce",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

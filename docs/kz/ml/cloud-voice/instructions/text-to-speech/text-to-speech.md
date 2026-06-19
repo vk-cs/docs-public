@@ -1,8 +1,10 @@
+# {heading(Сөйлеуді синтездеу)[id=cloud_voice-instructions-text_to_speech]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Мәтін жолдарын дыбыстау үшін сөйлеуді синтездеу функциясы қолданылады. Сөйлеуді синтездеу үшін `https://voice.mcs.mail.ru/tts` мекенжайына POST немесе GET сұрауын пайдаланыңыз.
 
-## Сұрау
+## {heading(Сұрау)[id=cloud_voice-instructions-text_to_speech-request]}
 
 {tabs}
 
@@ -43,20 +45,20 @@ curl -L --request POST \
 Сұрау параметрлері:
 
 | Параметр | Сипаттамасы                                                                                                       | Беру тәсілі | Рұқсат етілген мәндер |
-| --- | --- | --- | --- |
+| --- |-------------------------------------------------------------------------------------------------------------------| --- | --- |
 | `model_name` | Дауыс моделінің атауы                                                                                             | URL | katherine (немесе katherine-hifigan) — әдепкі бойынша; maria (немесе maria-serious); pavel (немесе pavel-hifigan) |
 | `encoder` | Энкодер түрі                                                                                                      | URL | pcm — әдепкі бойынша; mp3; opus |
 | `tempo` | Сөйлеу жылдамдығы                                                                                                 | URL | 0.75-тен 1.75-ке дейін |
 | `text` | Дыбыстауға арналған мәтін (GET сұрауы)                                                                            | URL | UTF-8 пішімінде 2000 таңбаға дейін |
 | `<текст для озвучивания>` | Дыбыстауға арналған мәтін (POST сұрауы)                                                                           | `data` опциясы| UTF-8 пішімінде 2000 таңбаға дейін |
 | `<имя файла>` | Кеңейтімі бар аудиофайл атауы                                                                                     | `output` опциясы | ![](/en/assets/no.svg "inline") |
-| `<токен доступа>`| Авторизацияға арналған қолжетімділік токені. Авторизация туралы толығырақ [Қолжетімділік токенін алу](../get-voice-token) бөлімінде көрсетілген | `header` опциясы| ![](/en/assets/no.svg "inline") |
+| `<токен доступа>`| Авторизацияға арналған қолжетімділік токені. Авторизация туралы толығырақ {linkto(../get-voice-token#cloud_voice-instructions-get_voice_token)[text=Қолжетімділік токенін алу]} бөлімінде көрсетілген | `header` опциясы| ![](/en/assets/no.svg "inline") |
 
-### Шектеулер
+### {heading(Шектеулер)[id=cloud_voice-instructions-text_to_speech-request-restriction]}
 
 Сұрауда берілетін мәтін UTF-8 кодтауында болуы және 20000 таңбадан аспауы керек.
 
-## Жауап
+## {heading(Жауап)[id=cloud_voice-instructions-text_to_speech-answer]}
 
 Жауапта таңдалған пішімдегі аудиофайл болады. Әдепкі бойынша PCM файлы жасалады.
 
@@ -75,7 +77,7 @@ PCM-ді WAV-қа түрлендіру мысалы:
 ffmpeg -f s16be -ar 24k -ac 1 -i test_sound7.pcm test_sound7.wav
 ```
 
-## Қате кодтары
+## {heading(Қате кодтары)[id=cloud_voice-instructions-text_to_speech-error_codes]}
 
 | Код  | Күйі  | Сипаттамасы                |
 | ---- | ------ | -------------------------- |
@@ -85,8 +87,8 @@ ffmpeg -f s16be -ar 24k -ac 1 -i test_sound7.pcm test_sound7.wav
 
 ## Сондай-ақ қараңыз
 
-[Cloud Voice сервисінің сипаттамасы](../../concepts/about)
+{linkto(../../concepts/about#cloud_voice-concepts-about)[text=Cloud Voice сервисінің сипаттамасы]}
 
-[Қолжетімділік токенін алу](../get-voice-token)
+{linkto(../get-voice-token#cloud_voice-instructions-get_voice_token)[text=Қолжетімділік токенін алу]}
 
-[Сөйлеуді тану](../speech-recognition)
+{linkto(../speech-recognition#cloud_voice-instructions-speech_recognition)[text=Сөйлеуді тану]}

@@ -14,7 +14,7 @@
 |
 `name`
 |
-Уникальное имя бакета VK Object Storage.
+Уникальное имя бакета {var(s3)}.
 
 {note:info}
 
@@ -22,8 +22,8 @@
 
 {/note}
 |string
-| ![](/ru/assets/check.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 

@@ -2,5 +2,10 @@
   "title": "Сервис параметрлері",
   "shortDescription": "",
   "metaDescription": "Сервис параметрлері",
-  "sectionTitle": "Сервис параметрлері"
+  "sectionTitle": "Сервис параметрлері",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

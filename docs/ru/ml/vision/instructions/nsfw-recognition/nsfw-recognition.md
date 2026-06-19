@@ -1,10 +1,12 @@
+# {heading(Распознавание контента 18+)[id=vision-instructions-nsfw-recognition]}
+
 Данный метод позволяет узнать, есть ли запрещенный контент (18+) на фотографии.
 
 HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/adult/detect`
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-nsfw-recognition-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -15,7 +17,7 @@ ENDPOINT: `/api/v1/adult/detect`
 
 {note:info}
 
-Получение токена доступа, а также поддерживаемые провайдеры OAuth2 приведены в статье [Авторизация](../../quick-start/auth-vision).
+Получение токена доступа, а также поддерживаемые провайдеры OAuth2 приведены в статье {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=Авторизация]}.
 
 {/note}
 
@@ -30,11 +32,11 @@ ENDPOINT: `/api/v1/adult/detect`
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-nsfw-recognition-request-example]}
 
 ```http
 curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&oauth_provider=mcs" \
@@ -50,7 +52,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 }"
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-nsfw-recognition-request-answer]}
 
 | Параметр      | Тип      | Значение                                                 |
 | ------------- | -------- | -------------------------------------------------------- |
@@ -58,7 +60,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 | body          | object   | Тело ответа                                              |
 | objects       | array    | Массив результатов для каждого файла                     |
 
-### status
+### {heading(status)[id=vision-instructions-nsfw-recognition-request-answer-status]}
 
 Возможные ответы:
 
@@ -67,7 +69,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 * `403` — доступ запрещен: обновите токен доступа или выберите другого провайдера.
 * `500` — внутренняя ошибка сервера.
 
-### objects
+### {heading(objects)[id=vision-instructions-nsfw-recognition-request-answer-objects]}
 
 [cols="1,1,1,2", options="header"]
 |===
@@ -101,7 +103,7 @@ curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&
 | Степень уверенности в том, что на картинке нет контента 18+; значение в отрезке `[0;1]`
 |===
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-nsfw-recognition-request-answer-example]}
 
 ```json
 {

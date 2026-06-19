@@ -1,9 +1,14 @@
 {
-    "title": "Создание сетей",
-      "shortDescription": "",
-      "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Networks. Создание сетей",
-    "sectionTitle": "Создание сетей",
-    "icon": "",
-    "weight": 1,
-    "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05"
+  "title": "Создание сетей",
+  "shortDescription": "",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Networks. Создание сетей",
+  "sectionTitle": "Создание сетей",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,15 @@
   "shortDescription": "VK Cloud-та серверлер топтарын жасау арқылы виртуалды ресурстарды орналастыруды басқару",
   "metaDescription": "VK Cloud-та серверлер топтарын жасау арқылы виртуалды ресурстарды орналастыруды басқару",
   "sectionTitle": "Серверлер топтары",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

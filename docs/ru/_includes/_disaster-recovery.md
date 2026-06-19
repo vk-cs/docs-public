@@ -226,8 +226,8 @@
 
 Работающие ВМ потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `Ubuntu-DR`.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) ВМ `Ubuntu-DR`.
 - Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес, если он был создан во время восстановления.
+- [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адрес, если он был создан во время восстановления.
 
 {/includetag}

@@ -1,10 +1,12 @@
+# {heading(Дашбордтар мен графиктерді басқару)[id=monitoring-manage-dashboards]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(График құру)[id=create-custom-chart]}
+## {heading(График құру)[id=monitoring-create-custom-chart]}
 
 Ресурс метрикаларын параметрлер конструкторының немесе PromQL тіліндегі тікелей сұраулардың көмегімен график құру арқылы визуализациялай аласыз. 
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **График құру** батырмасын басыңыз.
@@ -64,18 +66,18 @@
             * **Спидометр** — түсті аймақтары бар шкаладағы мән (жасыл, сары, қызыл).
             * **Бинарлық** — сұрау нәтижесі негізінде екі күйдің бірі (ақиқат, жалған).
 
-    1. **Сұрау мәтіні** өрісіне метрикаларға арналған сұрауды енгізіңіз. [PromQL тілінің синтаксисін](/kz/monitoring-services/monitoring/concepts/mon-read-metrics) пайдаланыңыз.
+    1. **Сұрау мәтіні** өрісіне метрикаларға арналған сұрауды енгізіңіз. {linkto(../../concepts/mon-read-metrics#monitoring-mon-read-metrics)[text=PromQL тілінің синтаксисін]} пайдаланыңыз.
     1. **Құру** батырмасын басыңыз.
 
     {/tab}
 
     {/tabs}
 
-## {heading(Графиктерді қарау, өңдеу және жою)[id=manage-charts]}
+## {heading(Графиктерді қарау, өңдеу және жою)[id=monitoring-manage-charts]}
 
 График баптауларын өзгертуге, оларды егжей-тегжейлі режимде қарауға немесе жоюға болады.
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті графигі бар бөлімді мына тәсілдердің бірімен ашыңыз:
@@ -91,13 +93,13 @@
     * **Графикті жою**: графикті жою.
 
 
-## {heading(Дашбордпен жұмыс)[id=organize-with-sections]}
+## {heading(Дашбордпен жұмыс)[id=monitoring-organize-with-sections]}
 
 Бөлімдер графиктерді логикалық блоктар бойынша топтастырып, дашбордты құрылымдауға мүмкіндік береді.
 
-### Бөлім құру
+### {heading(Бөлім құру)[id=monitoring-create-section]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **Бөлім құру** батырмасын басыңыз.
@@ -105,9 +107,9 @@
 
 Жаңа бөлім тізімде пайда болады. Енді оған графиктерді қоса аласыз.
 
-### Бөлімді баптау және жою
+### {heading(Бөлімді баптау және жою)[id=monitoring-manage-section]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті бөлімнің тақырыбындағы ![ ](../../../../assets/more-icon.svg "inline") белгішесін басыңыз.
@@ -121,13 +123,13 @@
        Бөлім жойылған кезде, оның ішіндегі барлық графиктер де жойылады.
        {/note}
 
-### Дашбордтағы графиктердің көрінуін басқару
+### {heading(Дашбордтағы графиктердің көрінуін басқару)[id=monitoring-manage-visible]}
 
 **Менің графиктерім** қойындысындағы бөлімнің алдын ала қарауынан графикті жасыра аласыз. Жасырылған график жалпы тізімде көрсетілмейді, бірақ бөлім ішінде қолжетімді болып қалады.
 
 Графикті жасыру үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті графигі бар бөлімді мына тәсілдердің бірімен ашыңыз:
@@ -140,7 +142,7 @@
 
 Графикті алдын ала қарауда көрсету үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **Бөлімге өту** батырмасын басып, қажетті графигі бар бөлімді ашыңыз.

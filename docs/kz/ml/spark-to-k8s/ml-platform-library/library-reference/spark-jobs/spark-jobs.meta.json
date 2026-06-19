@@ -4,5 +4,10 @@
   "metaDescription": "Spark тапсырмаларымен жұмыс істеуге арналған Cloud ML Platform кітапханасы әдістерінің тізімі.",
   "sectionTitle": "Spark тапсырмаларымен жұмыс істеу",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Шлюз S3 для «Кибер Бэкап Облачный»",
   "icon": "",
   "weight": 3,
-  "uuid": "c5ce4c86-efb5-4194-bd02-c3cf8ad8911e"
+  "uuid": "c5ce4c86-efb5-4194-bd02-c3cf8ad8911e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

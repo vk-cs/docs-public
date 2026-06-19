@@ -21,7 +21,7 @@
 
 Software Defined Network — это подход к управлению сетью, при котором уровень управления отделяется от уровня пересылки данных.
 
-Подробнее: [Что такое SDN](/ru/networks/vnet/concepts/sdn#sprut).
+Подробнее: [Что такое SDN](/ru/networks/vnet/concepts/sdn#vnet-sdn-sprut).
 
 {/cut}
 

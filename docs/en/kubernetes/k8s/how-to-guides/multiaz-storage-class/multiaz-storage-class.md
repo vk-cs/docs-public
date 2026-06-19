@@ -4,13 +4,13 @@ Use multi-zone [storage classes](/en/kubernetes/k8s/concepts/storage#pre_configu
 Multi-zone storage classes are only pre-configured for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 {/note}
 
-## {heading(Preparatory steps)[id=k8s-multiaz-storage-class-prepare]}
+## Preparatory steps
 
 1. [Create](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster of the latest version, if not done so already.
 1. [Install and configure](../../connect/kubectl) `kubectl`, if not done so already.
 1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
 
-## {heading(1. Add a multi-zone StorageClass for PV)[id=maz-storageclass]}
+## 1. Add a multi-zone StorageClass for PV
 
 1. Create a manifest file for `StorageClass`, for example `csi-ceph-hdd.yaml`, and add the following content to the file:
 
@@ -45,7 +45,7 @@ Multi-zone storage classes are only pre-configured for [second-generation](/en/k
    kubectl apply -f csi-ceph-hdd.yaml
    ```
 
-## {heading(2. Create an application)[id=k8s-multiaz-storage-class-app]}
+## 2. Create an application
 
 1. Create a manifest for the workload controller of the `StatefulSet` type for the `test-statefulset` namespace:
 
@@ -150,9 +150,9 @@ Multi-zone storage classes are only pre-configured for [second-generation](/en/k
       pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-1
       ```
 
-## {heading(Delete unused resources)[id=k8s-multiaz-storage-class-delete-resources]}
+## Delete unused resources
 
-A running cluster consumes computing resources and is charged accordingly. If you no longer need the Kubernetes resources you created to test multi-zone storage classes, delete them:
+{include(/en/_includes/_remove-k8s-resources.md)} multi-zone storage classes, delete them:
 
 1. Delete the created `test-statefulset` namespace and the resources associated with it:
 
@@ -172,4 +172,4 @@ A running cluster consumes computing resources and is charged accordingly. If yo
 
 1. [Delete](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the created PVs.
 
-1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#start_or_stop_cluster) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

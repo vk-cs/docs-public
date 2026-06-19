@@ -1,0 +1,14 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Methods for diagnosing and solving typical problems with CDN",
+  "metaDescription": "Methods for diagnosing and solving typical problems with VK Cloud content distributing networks: how to solve typical problems with CDN",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

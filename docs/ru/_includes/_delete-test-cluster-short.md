@@ -1,0 +1,1 @@
+1. {linkto(/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-stop)[text=Остановите]} созданный кластер, чтобы воспользоваться им позже, или {linkto(/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete)[text=удалите]} его навсегда.

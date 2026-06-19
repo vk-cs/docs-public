@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-тағы мониторинг",
+  "shortDescription": "Standalone-та метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform-ның Standalone нұсқасында жайылған сервис даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "sectionTitle": "Standalone-тағы мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

@@ -1,3 +1,5 @@
+# {heading(Жылдам бастау)[id=logging-quick-start]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 1. Сервисті қосыңыз: егер сервис бета-тестілеу кезеңінде болса, [техникалық қолдауға](/kz/contacts) сұрау жіберіңіз.
@@ -9,5 +11,5 @@
    curl https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
 
-1. [Генерациялаңыз](../instructions/generate-userdata) сервиске қосылу үшін есептік деректерді.
-1. [Орнатып, баптаңыз](../instructions/connect-plugin) `vkcloudlogs-fluent-bit-plugin` плагинін.
+1. {linkto(../instructions/generate-userdata#logging-generate-userdata)[text=Генерациялаңыз]} сервиске қосылу үшін есептік деректерді.
+1. {linkto(../instructions/connect-plugin#logging-connect-plugin)[text=Орнатып, баптаңыз]} `vkcloudlogs-fluent-bit-plugin` плагинін.

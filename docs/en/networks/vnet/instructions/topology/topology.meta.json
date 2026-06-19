@@ -1,9 +1,14 @@
 {
-    "title": "Viewing Topology",
-      "shortDescription": "Viewing the topology of virtual networks using VK Cloud tools",
-      "metaDescription": "Description of the network topology",
-    "sectionTitle": "Viewing Topology",
-    "icon": "",
-    "weight": 7,
-    "uuid": "e7fdb009-3ab6-411c-bbfb-0560125bcab0"
+  "title": "Viewing Topology",
+  "shortDescription": "Viewing the topology of virtual networks using VK Cloud tools",
+  "metaDescription": "Description of the network topology",
+  "sectionTitle": "Viewing Topology",
+  "icon": "",
+  "weight": 7,
+  "uuid": "e7fdb009-3ab6-411c-bbfb-0560125bcab0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

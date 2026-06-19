@@ -5,5 +5,10 @@
   "sectionTitle": "Подключение инструментов обработки данных",
   "icon": "",
   "weight": 2,
-  "uuid": "fa88db70-ad7c-4c73-8ae9-fc827d5b41de"
+  "uuid": "fa88db70-ad7c-4c73-8ae9-fc827d5b41de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

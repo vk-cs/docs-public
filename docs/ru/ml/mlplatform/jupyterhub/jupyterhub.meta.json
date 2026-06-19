@@ -15,5 +15,10 @@
       "title": "Работа с библиотекой Cloud ML Platform"
     }
   ],
-  "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"
+  "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

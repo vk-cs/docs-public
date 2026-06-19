@@ -198,7 +198,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
    1. Select configuration:
    
       - **Cluster** — for creating a standard cluster;
-      * **Multizone Cluster** — for creating a cluster with [multizone replication](../../../concepts/work-configs#multi-az).
+      * **Multizone Cluster** — for creating a cluster with [multizone replication](../../../concepts/work-configs#dbaas-work-configs-multi-az).
 
    1. Click the **Next step** button.
 
@@ -284,7 +284,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
           When creating a multizone cluster, the total number of nodes must be odd. The sum of all nodes is calculated as: `1 master node` + `the number of asynchronous replicas` + `the number of synchronous replicas`.
 
-          This is necessary for the proper execution of the data consistency algorithm of a [multizone cluster](/ru/dbs/dbaas/concepts/work-configs#multi-az).
+          This is necessary for the proper execution of the data consistency algorithm of a [multizone cluster](/en/dbs/dbaas/concepts/work-configs#dbaas-work-configs-multi-az).
 
           {/note}
 

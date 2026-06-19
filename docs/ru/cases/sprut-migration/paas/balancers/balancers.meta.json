@@ -5,5 +5,19 @@
   "sectionTitle": "Миграция балансировщиков",
   "icon": "",
   "weight": 2,
-  "uuid": "411336c3-5c8b-42c9-b90a-4d609ba9fe65"
+  "uuid": "411336c3-5c8b-42c9-b90a-4d609ba9fe65",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

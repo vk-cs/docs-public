@@ -1,16 +1,18 @@
-Используйте преднастроенные мультизональные [классы хранения](/ru/kubernetes/k8s/concepts/storage#storage_classes), чтобы Kubernetes при планировании пода динамически подготавливал для него [постоянный том (PV)](/ru/kubernetes/k8s/reference/pvs-and-pvcs), расположенный в той же зоне доступности, что и сам под. В Kubernetes за такое планирование пода отвечает механизм [Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/). Он помогает повысить отказоустойчивость и обеспечить высокую доступность (high availability) кластера за счет распределения рабочей нагрузки ([workload](https://kubernetes.io/docs/concepts/workloads/)) между разными [зонами доступности](/ru/start/concepts/architecture#az).
+# {heading(Использование мультизональных классов хранения)[id=k8s-multiaz-storage-class]}
+
+Используйте преднастроенные мультизональные {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=классы хранения]}, чтобы Kubernetes при планировании пода {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs-prepare)[text=динамически подготавливал]} для него {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=постоянный том (PV)]}, расположенный в той же зоне доступности, что и сам под. В Kubernetes за такое планирование пода отвечает механизм [Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/). Он помогает повысить отказоустойчивость и обеспечить высокую доступность (high availability) кластера за счет распределения рабочей нагрузки ([workload](https://kubernetes.io/docs/concepts/workloads/)) между разными {linkto(../../../../start/concepts/architecture#architecture-az)[text=зонами доступности]}.
 
 {note:info}
-Мультизональные классы хранения преднастроены только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Мультизональные классы хранения преднастроены только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-multiaz-storage-class-prepare]}
 
-1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) кластер Kubernetes актуальной версии, если это еще не сделано.
-1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
+1. {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 
-## 1. Добавьте мультизональный класс хранения (StorageClass) для PV
+## {heading(1. Добавьте мультизональный класс хранения (StorageClass) для PV)[id=maz-storageclass]}
 
 1. Создайте файл манифеста для `StorageClass`, например `csi-ceph-hdd.yaml`, и добавьте в него следующее содержимое:
 
@@ -27,7 +29,7 @@
    allowVolumeExpansion: true
    ```
    Здесь: 
-   - `type: ceph-hdd` описывает [тип диска](/ru/kubernetes/k8s/concepts/storage#storage_classes) для PV. 
+   - `type: ceph-hdd` описывает {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=тип диска]} для PV. 
    - `volumeBindingMode: WaitForFirstConsumer` откладывает создание и привязку PV до момента, когда будет создан первый под, использующий соответствующий PVC. Так этот под будет сначала запланирован на узел, и только после этого Kubernetes создаст для него PV той же зоне доступности, что и узел. Это позволит избежать ситуации, при которой под и PV окажутся в разных зонах доступности.
 
       Если после первого запуска вы попытаетесь перенести этот под в другую зону доступности, вы получите ошибку, содержащую похожий текст:
@@ -44,7 +46,7 @@
    kubectl apply -f csi-ceph-hdd.yaml
    ```
 
-## 2. Создайте приложение
+## {heading(2. Создайте приложение)[id=k8s-multiaz-storage-class-app]}
 
 1. Создайте файл манифеста для контроллера рабочей нагрузки типа `StatefulSet` для пространства имен `test-statefulset`:
 
@@ -149,7 +151,7 @@
       pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-1
       ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-multiaz-storage-class-delete-resources]}
 
 Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы мультизональных классов хранения, вам больше не нужны, удалите их:
 
@@ -169,6 +171,8 @@
    {/tab}
    {/tabs}
 
-1. [Удалите](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) созданные PV.
+1. {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=Удалите]} созданные PV.
 
-1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+{ifdef(public)}
+{include(/ru/_includes/_delete-test-cluster-short.md)}
+{/ifdef}

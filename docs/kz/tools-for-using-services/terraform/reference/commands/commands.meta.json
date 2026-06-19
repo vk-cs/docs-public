@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud платформасын басқару үшін Terraform-провайдерді қалай пайдалану керек. Terraform-дың негізгі қолданылатын командаларының тізімі",
   "sectionTitle": "Terraform-дың негізгі командалары",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,14 +1,16 @@
+# {heading(Образдардың метатегтері)[id=iaas-image-metadata]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Образда виртуалды машина мен қонақ операциялық жүйесінің конфигурациясына әсер ететін метатегтер болуы мүмкін. Метатегтер образды жасау немесе өңдеу кезінде беріледі.
 
-## Қолдау көрсетілетін образ метатегтері
+## {heading(Қолдау көрсетілетін образ метатегтері)[id=iaas-image-metadata-supported]}
 
 ВМ образдарының метатег түрлері:
 
 - `os_*`: қонақ операциялық жүйесінің (ОЖ) баптаулары;
 - `hw_*`: виртуалды машинаның баптаулары;
-- `mcs_*`: VK Cloud жеке кабинетінде сұрыптау үшін пайдаланылатын ВМ қасиеттері;
+- `mcs_*`: {var(cloud)} жеке кабинетінде сұрыптау үшін пайдаланылатын ВМ қасиеттері;
 - образбен жұмыс істеуге әсер ететін қалған метатегтер.
 
 | Атауы | Сипаттамасы | Әдепкі мәні |
@@ -19,12 +21,12 @@
 | `mcs_os_distro` | ВМ ішіндегі қонақ ОЖ дистрибутиві. Жеке кабинетте сұрыптау үшін пайдаланылады | |
 | `os_version` | Виртуалды машинаның ішіндегі қонақ ОЖ нұсқасы | |
 | `mcs_os_version` | ВМ ішіндегі қонақ ОЖ нұсқасы. Жеке кабинетте сұрыптау үшін пайдаланылады | |
-| `os_admin_user` | Қонақ ОЖ ішіндегі әкімші құқықтары бар пайдаланушы; құпиясөзді [жеке кабинет](../../vm/vm-manage#password) арқылы орнатуға болады | |
+| `os_admin_user` | Қонақ ОЖ ішіндегі әкімші құқықтары бар пайдаланушы; құпиясөзді [жеке кабинет](../../vm/vm-manage#iaas-vm-password) арқылы орнатуға болады | |
 | `os_require_quiesce` | Қосылған дискілердің снимоктарын түсіру алдында файлдық жүйені тоқтатуға жауап беретін белгі. Егер `yes` болса, онда файлдық жүйені тоқтату сәтсіз болған жағдайда снимоктарды жасау операциясы тоқтатылады | `no` |
 | `hw_qemu_guest_agent` | Қонақ ОЖ ішіндегі QEMU агентінің бар болу белгісі. Егер `True` болса, пайдаланушы құпиясөзін өзгерту және резервтік көшіру үшін файлдық жүйені тоқтату мүмкіндіктерін қолжетімді етеді | `False` |
 | `mcs_name` | Жеке кабинет пайдаланушысына көрсетілетін образ атауы | |
 
-### {heading(os_distro және os_version толтыру)[id=find_os_distro_and_os_version]}
+### {heading(os_distro және os_version толтыру)[id=iaas-image-metadata-find-param]}
 
 `os_distro` және `os_version` метатегтерінің мәндерін табу үшін, мысалы, еркін [libosinfo](https://libosinfo.org) БҚ-сын пайдаланыңыз:
 
@@ -37,9 +39,9 @@
 
 1. Мысалы, Ubuntu 24.XX сияқты сізді қызықтыратын ОЖ туралы деректерді libosinfo ішінен сұраңыз, ол үшін мына команданы орындаңыз:
 
-      ```console
-      osinfo-query os | grep -i ubuntu24
-      ```
+   ```console
+   osinfo-query os | grep -i ubuntu24
+   ```
 
    Команда шығысының мысалы:
 
@@ -48,15 +50,13 @@
    | ubuntu24.04 | Ubuntu 24.04 LTS | 24.04 | http://ubuntu.com/ubuntu/24.04 |
    | ubuntu24.10 | Ubuntu 24.10 | 24.10 | http://ubuntu.com/ubuntu/24.10 |
 
-    1. `Short ID` метатегін анықтау үшін `os_distro` мәнін, ал `Version` метатегі үшін `os_version` мәнін пайдаланыңыз.
+    1. `os_distro` метатегін анықтау үшін `Short ID` мәнін, ал `os_version` метатегі үшін `Version` мәнін пайдаланыңыз.
 
 {note:info}
-
 Егер libosinfo деректер базасының жергілікті көшірмесінде ОЖ-нің қажетті нұсқасы туралы мәліметтер табылмаса, көшірме ескірген болуы мүмкін. libosinfo-пен жұмыс істеуге арналған пакетті жаңартып көріңіз.
-
 {/note}
 
-## Метатегті орнату
+## {heading(Метатегті орнату)[id=iaas-image-metadata-install]}
 
 {tabs}
 
@@ -71,7 +71,7 @@
 1. Қажетті образ туралы толық ақпаратты алыңыз:
 
    ```console
-   openstack image show <ID образа>
+   openstack image show <ID_ОБРАЗА>
    ```
 
    Тағайындалған метатегтер `properties` жолында көрсетіледі.
@@ -79,7 +79,7 @@
 1. Метатегті орнатыңыз:
 
    ```console
-   openstack image set --property <имя метатега>=<значение> <ID образа>
+   openstack image set --property <ИМЯ_МЕТАТЕГА>=<ЗНАЧЕНИЕ> <ID_ОБРАЗА>
    ```
 
 {/tab}
@@ -90,39 +90,39 @@
 
 1. Windows ОЖ нұсқасын анықтаңыз:
 
-     ```shell
-     systeminfo
-     ```
+   ```shell
+   systeminfo
+   ```
 
-1. Жоғарыдағы кестеден `Short ID` метатегі үшін қажетті `os_distro` мәнін таңдаңыз.
+1. Жоғарыдағы кестеден `os_distro` метатегі үшін қажетті `Short ID` мәнін таңдаңыз.
 1. [Жасаңыз](../images-manage) образ.
 1. Метатегтерді орнатыңыз:
 
-     ```shell
-     openstack image set --property <имя метатега>=<значение> <ID образа>
-     ```
+   ```shell
+   openstack image set --property <ИМЯ_МЕТАТЕГА>=<ЗНАЧЕНИЕ> <ID_ОБРАЗА>
+   ```
 
    Мысал:
 
-     ```shell
-     openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property hw_vif_model="virtio" <ID образа>
-     ```
+   ```shell
+   openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property hw_vif_model="virtio" <ID_ОБРАЗА>
+   ```
 
 1. Образ туралы ақпаратты тексеріңіз:
 
-     ```console
-     openstack image show <ID образа>
-     ```
+   ```console
+   openstack image show <ID_ОБРАЗА>
+   ```
 
    Нәтиже мысалы:
 
-     ```shell
-     | properties | hw_vif_model=virtio, os_distro=win2k16, os_require_quiesce=yes, os_type=windows |
-     ```
+   ```shell
+   | properties | hw_vif_model=virtio, os_distro=win2k16, os_require_quiesce=yes, os_type=windows |
+   ```
 
 {/cut}
 
-## Метатегті жою
+## {heading(Метатегті жою)[id=iaas-image-metadata-delete]}
 
 {tabs}
 
@@ -137,7 +137,7 @@
 1. Қажетті образ туралы толық ақпаратты алыңыз:
 
    ```console
-   openstack image show <ID образа>
+   openstack image show <ID_ОБРАЗА>
    ```
 
    Тағайындалған метатегтер `properties` жолында көрсетіледі.
@@ -145,7 +145,7 @@
 1. Метатегті жойыңыз:
 
    ```console
-   openstack image unset --property <имя метатега> <ID образа>
+   openstack image unset --property <ИМЯ_МЕТАТЕГА> <ID_ОБРАЗА>
    ```
 
 {/tab}

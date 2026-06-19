@@ -4,5 +4,15 @@
   "shortDescription": "ВМ-ді қалай құруға және баптауға болады",
   "metaDescription": "Linux немесе Windows ОЖ негізіндегі виртуалды машинаны құру",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "title": "Развертывание приложений",
+  "shortDescription": "",
+  "metaDescription": "Практическое руководство по развертыванию приложений с помощью kubectl в сервисе Cloud Containers платформы VK Private Cloud",
+  "sectionTitle": "Развертывание приложений",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

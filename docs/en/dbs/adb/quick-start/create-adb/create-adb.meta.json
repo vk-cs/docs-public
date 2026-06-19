@@ -1,9 +1,23 @@
 {
-    "title": "Create",
-      "shortDescription": "Description of creating a DB Instance",
-      "metaDescription": "To create a database, go to the",
-    "sectionTitle": "Create",
-    "icon": "",
-    "weight": 0,
-    "uuid": "f74c1da7-47d8-4301-b952-9e8ad387a781"
+  "title": "Create",
+  "shortDescription": "Description of creating a DB Instance",
+  "metaDescription": "To create a database, go to the",
+  "sectionTitle": "Create",
+  "icon": "",
+  "weight": 0,
+  "uuid": "f74c1da7-47d8-4301-b952-9e8ad387a781",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

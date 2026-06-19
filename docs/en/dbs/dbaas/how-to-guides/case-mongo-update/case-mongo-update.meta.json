@@ -1,9 +1,23 @@
 {
-    "title": "MongoDB replication and update on Ubuntu",
-      "shortDescription": "How to replicate and update MongoDB on Ubuntu 18.04",
-      "metaDescription": "Creating replicas of the MongoDB DBMS, updating the version.",
-    "sectionTitle": "MongoDB replication and upgrade on Ubuntu",
-    "icon": "",
-    "weight": 3,
-    "uuid": "6cfa6eb4-dade-43d0-b0c3-45f06a770e65"
+  "title": "MongoDB replication and update on Ubuntu",
+  "shortDescription": "How to replicate and update MongoDB on Ubuntu 18.04",
+  "metaDescription": "Creating replicas of the MongoDB DBMS, updating the version.",
+  "sectionTitle": "MongoDB replication and upgrade on Ubuntu",
+  "icon": "",
+  "weight": 3,
+  "uuid": "6cfa6eb4-dade-43d0-b0c3-45f06a770e65",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

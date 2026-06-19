@@ -4,5 +4,12 @@
   "metaDescription": "VK Data Platform ішіндегі Cloud Flink: сервис данасын құру, дананы және оның компоненттерін басқару",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

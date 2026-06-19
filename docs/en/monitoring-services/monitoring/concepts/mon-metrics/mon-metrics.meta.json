@@ -1,9 +1,14 @@
 {
-    "title": "Standard metrics",
-      "shortDescription": "List of metrics collected by a standard monitoring agent",
-      "metaDescription": "Статья описывает стандартные метрики, которые собираются и отображаются в сервисах VK Cloud. По умолчанию стандартный агент мониторинга собирает следующую и",
-    "sectionTitle": "Standard metrics",
-    "icon": "",
-    "weight": 2,
-    "uuid": "2687400f-3cf7-4640-b1c0-813b974ca6f4"
+  "title": "Standard metrics",
+  "shortDescription": "List of metrics collected by a standard monitoring agent",
+  "metaDescription": "Статья описывает стандартные метрики, которые собираются и отображаются в сервисах VK Cloud. По умолчанию стандартный агент мониторинга собирает следующую и",
+  "sectionTitle": "Standard metrics",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2687400f-3cf7-4640-b1c0-813b974ca6f4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

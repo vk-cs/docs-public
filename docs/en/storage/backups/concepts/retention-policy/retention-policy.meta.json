@@ -5,5 +5,10 @@
   "sectionTitle": "Backup storage policies",
   "icon": "",
   "weight": 3,
-  "uuid": "6e811bb6-abe5-476c-8d30-ea12517d1061"
+  "uuid": "6e811bb6-abe5-476c-8d30-ea12517d1061",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

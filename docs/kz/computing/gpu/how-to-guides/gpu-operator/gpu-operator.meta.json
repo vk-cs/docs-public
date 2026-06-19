@@ -4,5 +4,10 @@
   "metaDescription": "GPU бар Kubernetes кластерін қалай құруға және GPU-ды MPS және MIG технологиялары арқылы бірнеше подқа бөлуге болады.",
   "sectionTitle": "Cloud Containers сервисінде GPU ресурстарын басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

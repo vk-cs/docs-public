@@ -1,1 +1,3 @@
-Взаимодействие с VK Cloud API выполняется через эндпоинты. В некоторых случаях для аутентификации потребуется токен.
+# {heading(Подключение через API)[id=tools-rest-api]}
+
+{include(../../../_includes/_prerequisites-api.md)[tags=api-intro]}

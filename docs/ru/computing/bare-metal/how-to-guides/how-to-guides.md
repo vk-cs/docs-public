@@ -1,0 +1,1 @@
+# {heading(Практические руководства)[id=bare-metal-how-to-guides]}

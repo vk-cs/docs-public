@@ -1,0 +1,14 @@
+{
+  "title": "Вход в личный кабинет",
+  "shortDescription": "Как получить доступ к личному кабинету {var(cloud)}",
+  "metaDescription": "Как получить доступ к личному кабинету VK Private Cloud",
+  "sectionTitle": "Вход в личный кабинет",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

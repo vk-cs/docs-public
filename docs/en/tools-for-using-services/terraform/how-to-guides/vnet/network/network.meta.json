@@ -1,9 +1,14 @@
 {
-    "title": "Creating nets and ports",
-      "shortDescription": "",
-      "metaDescription": "",
-    "sectionTitle": "Creating nets and ports",
-    "icon": "",
-    "weight": 1,
-    "uuid": "0705e6dd-fb0b-4bee-ac41-0da12b11f7ab"
+  "title": "Creating nets and ports",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Creating nets and ports",
+  "icon": "",
+  "weight": 1,
+  "uuid": "0705e6dd-fb0b-4bee-ac41-0da12b11f7ab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

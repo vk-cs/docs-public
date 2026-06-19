@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-та дискіні жеке кабинет және OpenStack CLI арқылы жасау. Дискінің түрін, өлшемін және қолжетімділік аймағын таңдау.",
   "sectionTitle": "Дискіні жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

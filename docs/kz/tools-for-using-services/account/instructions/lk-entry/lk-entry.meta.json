@@ -1,0 +1,17 @@
+{
+  "title": "Жеке кабинетке кіру",
+  "shortDescription": "{var(cloud)} жеке кабинетіне қалай қол жеткізуге болады",
+  "metaDescription": "VK Private Cloud жеке кабинетіне қалай қол жеткізуге болады",
+  "sectionTitle": "Жеке кабинетке кіру",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

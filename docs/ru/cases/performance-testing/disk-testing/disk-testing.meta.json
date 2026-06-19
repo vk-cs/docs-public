@@ -5,5 +5,19 @@
   "sectionTitle": "Как протестировать дисковую подсистему",
   "icon": "",
   "weight": 4,
-  "uuid": "b99c6125-0612-4b6f-85f0-229f82eec78f"
+  "uuid": "b99c6125-0612-4b6f-85f0-229f82eec78f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

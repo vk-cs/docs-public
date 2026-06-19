@@ -1,9 +1,14 @@
 {
-    "title": "Развертывание VictoriaMetrics",
-      "shortDescription": "Развертывание сервиса VictoriaMetrics в проекте на примере версии 1.93.8 для задач мониторинга данных",
-      "metaDescription": "VictoriaMetrics VK Cloud: развертывание сервиса в проекте",
-    "sectionTitle": "Развертывание VictoriaMetrics",
-    "icon": "",
-    "weight": 9,
-    "uuid": "d5e790d0-921a-48fc-a665-7ac2d1d78ebf"
+  "title": "Развертывание VictoriaMetrics",
+  "shortDescription": "Развертывание сервиса VictoriaMetrics в проекте на примере версии 1.93.8 для задач мониторинга данных",
+  "metaDescription": "VictoriaMetrics VK Cloud: развертывание сервиса в проекте",
+  "sectionTitle": "Развертывание VictoriaMetrics",
+  "icon": "",
+  "weight": 9,
+  "uuid": "d5e790d0-921a-48fc-a665-7ac2d1d78ebf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

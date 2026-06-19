@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Kubernetes кластерінің DNS конфигурациясын қалай баптау және басқару керек. ExternalDNS, CoreDNS құралдарын пайдалану",
   "sectionTitle": "Кластерге арналған DNS баптаулары",
   "icon": "",
-  "weight": 7
+  "weight": 4,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

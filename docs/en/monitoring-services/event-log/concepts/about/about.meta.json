@@ -5,5 +5,10 @@
   "sectionTitle": "About service",
   "icon": "",
   "weight": 1,
-  "uuid": "73eb1fa4-6718-4998-90f6-302d84b4c14b"
+  "uuid": "73eb1fa4-6718-4998-90f6-302d84b4c14b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

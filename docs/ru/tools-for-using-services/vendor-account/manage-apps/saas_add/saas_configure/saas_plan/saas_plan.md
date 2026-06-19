@@ -41,44 +41,44 @@
 |
 Идентификатор тарифного плана UUID4 (ID), сформированный с помощью генератора UUID4
 |string (UUID4)
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |revision
 |
 Ревизия тарифного плана. Сочетание ревизии и ID тарифного плана определяет его уникальность в сервисе. Остальные параметры описывают характеристики конкретной ревизии тарифного плана
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |name
 |
 Техническое имя тарифного плана, которое не отображается в интерфейсе магазина. Должно быть указано латинскими буквами с использованием знака нижнего подчеркивания вместо пробелов
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |description
 |
 Имя тарифного плана, которое отображается в интерфейсе магазина
 |string, до 255 символов
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |free
 |
 Определяет, бесплатный тарифный план или нет
 |boolean
-| ![](/ru/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |plan_updateable
 |Определяет, может ли пользователь переходить с одного тарифного плана на другой без удаления сервиса.
 
 Переопределяет значение, заданное в одноименном параметре сервиса
 |boolean
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |metadata
 |Определяет тестовые и открытые пространства имен магазина, в которых тарифный план будет доступен.
@@ -91,8 +91,8 @@
 
 Если пространства имен не заданы, то будут использованы значения, указанные в одноименном параметре сервиса (подробнее — в разделе {linkto(../saas_param#saas_param)[text=%text]})
 |map, ключи — string
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -171,14 +171,14 @@ string.
 Имя страницы — до 32 символов.
 
 Имя группы — до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |index
 |
 Порядковый номер страницы, группы на странице или тарифной опции в группе
 |
 integer
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
@@ -502,13 +502,13 @@ integer
 
 {/note}
 |float64, >= 0
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit
 |
 Определяет единицы измерения опции
-| ![](/en/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 4+|Параметры секции `unit`
 
@@ -516,13 +516,13 @@ integer
 |
 Шаг тарификации опции. Значение должно быть `1`
 |integer
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |unit.measurement
 |
 Определяет единицы измерения опции
 |string, до 255 символов
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 

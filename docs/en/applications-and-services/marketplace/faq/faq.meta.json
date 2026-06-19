@@ -1,9 +1,14 @@
 {
-    "title": "FAQ",
-      "shortDescription": "Answers to frequently asked questions about the Marketplace service",
-      "metaDescription": "Answers to frequently asked questions about the VK Cloud Marketplace service.",
-    "sectionTitle": "FAQ",
-    "icon": "",
-    "weight": 5,
-    "uuid": "a40ba425-ac76-4fad-a3ea-1afafa79d7a0"
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions about the Marketplace service",
+  "metaDescription": "Answers to frequently asked questions about the VK Cloud Marketplace service.",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "a40ba425-ac76-4fad-a3ea-1afafa79d7a0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

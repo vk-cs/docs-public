@@ -4,5 +4,10 @@
   "metaDescription": "Data Lakehouse архитектурасындағы Cloud Trino компонентінің мақсаты мен функциялары",
   "sectionTitle": "Cloud Trino",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

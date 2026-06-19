@@ -4,5 +4,19 @@
   "metaDescription": "Қосымшалар дүкеніндегі Кибер Бэкап Облачный: сервисті қосу, ВМ резервтік көшірмесін жасау және ВМ-ді көшірмеден қалпына келтіру",
   "sectionTitle": "Кибер Бэкап Облачный сервисін орнату және баптау",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

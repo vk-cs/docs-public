@@ -4,5 +4,10 @@
   "metaDescription": "CDN VK Cloud тұжырымдамалары: сервистің жұмыс істеу қағидаттары мен құрылғысы",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

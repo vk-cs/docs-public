@@ -1,4 +1,6 @@
-События, которые [сервис управления вычислительными ресурсами](/ru/computing/iaas/instructions/vm) передает в Cloud Audit.
+# {heading(События компонента Nova)[id=event-log-nova]}
+
+События, которые {linkto(../../../../../computing/iaas/instructions/vm#iaas-vm)[text=сервис управления вычислительными ресурсами]} передает в Cloud Audit.
 
 [cols="2,3", options="header"]
 |===
@@ -138,7 +140,7 @@
 |Удалено правило группы безопасности
 
 |`create-floating-ip`
-|Создан [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip)
+|Создан {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}
 
 |`delete-floating-ip`
 |Удален Floating IP-адрес

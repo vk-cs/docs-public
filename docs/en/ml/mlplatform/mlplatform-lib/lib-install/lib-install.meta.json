@@ -5,5 +5,19 @@
   "sectionTitle": "Installing the library",
   "icon": "",
   "weight": 1,
-  "uuid": "24a2f930-674a-4b7e-86b8-42863f08e980"
+  "uuid": "24a2f930-674a-4b7e-86b8-42863f08e980",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

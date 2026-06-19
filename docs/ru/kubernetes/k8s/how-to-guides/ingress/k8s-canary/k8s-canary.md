@@ -1,12 +1,14 @@
+# {heading(Настройка Canary Deployment Ingress)[id=k8s-k8s-canary]}
+
 Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем [Canary Deployment](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary) при помощи Nginx Ingress Annotations: выполнить сценарий Canary Deployment для echo-сервера и убедиться, что трафик распределяется в соответствии с конфигурационным файлом.
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-k8s-canary-prepare]}
 
-1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
-1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру с помощью kubectl.
+{include(/ru/_includes/_create-test-cluster.md)}
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Подключитесь]} к кластеру с помощью `kubectl`.
 1. Создайте тестовое приложение:
 
-   1. Создайте новое пространство имен (namespace) для проекта:
+   1. Создайте новое пространство имен для проекта:
 
       ```console
       kubectl create ns echo-production
@@ -18,7 +20,7 @@
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
    ```
 
-## 1. Создайте ресурс Ingress
+## {heading(1. Создайте ресурс Ingress)[id=k8s-k8s-canary-create-ingress]}
 
 1. Создайте файл манифеста `http-svc.ingress` со следующим содержимым:
 
@@ -51,7 +53,7 @@
 
    В результате будет создано приложение и сервер станет реагировать на все запросы от `echo.com`.
 
-## 2. Создайте копию развернутого приложения
+## {heading(2. Создайте копию развернутого приложения)[id=k8s-k8s-canary-create-copy-app]}
 
 1. Создайте Canary-версию пространства имен для приложения:
 
@@ -101,9 +103,9 @@
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
-## 3. Проверьте работоспособность распределения трафика
+## {heading(3. Проверьте работоспособность распределения трафика)[id=k8s-k8s-canary-check-traffic]}
 
-1. [Подключитесь к кластеру](../../../connect/k8s-dashboard) с помощью Kubernetes Dashboard.
+1. {linkto(../../../connect/k8s-dashboard#k8s-k8s-dashboard)[text=Подключитесь к кластеру]} с помощью Kubernetes Dashboard.
 1. Перейдите в раздел **Namespaces**.
 1. Переключите фильтр **Namespace** на `All`.
 1. В нижней части бокового меню выберите **Ingresses**.
@@ -118,7 +120,7 @@
    ```ruby
    counts = Hash.new(0)
    1000.times do
-     output = \`curl -s -H "Host: echo.com" http://<внешний_ip_адрес> | grep 'pod namespace'\`
+     output = \`curl -s -H "Host: echo.com" http://<ВНЕШНИЙ_IP-АДРЕС> | grep 'pod namespace'\`
      counts[output.strip.split.last] += 1
    end
    puts counts
@@ -136,9 +138,8 @@
 {"echo-production"=>896, "echo-canary"=>104}
 ```
 
-## Удалите неиспользуемые ресурсы
+{ifdef(public)}
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-k8s-canary-delete]}
 
-Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-- [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-- [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}
+{/ifdef}

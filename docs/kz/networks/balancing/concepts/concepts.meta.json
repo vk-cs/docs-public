@@ -4,5 +4,14 @@
   "metaDescription": "VK Cloud Load Balancing жүктеме теңгергіштері сервисі. Жұмыс істеу қағидаттары, түрлері және Load Balancing сервисінің негізгі мүмкіндіктері",
   "sectionTitle": "Концепциялар",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

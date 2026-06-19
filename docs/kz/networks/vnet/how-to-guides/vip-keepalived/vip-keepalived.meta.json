@@ -4,5 +4,10 @@
   "metaDescription": "keepalived және VRRP көмегімен VM үшін ақауға төзімді жоғары қолжетімді (HA) кластерлік виртуалды IP мекенжайы (VIP)",
   "sectionTitle": "Виртуалды IP мекенжайын ұйымдастыру",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Фотодағы беттерді танып көрейік: smarty.py файлын жүктеп алыңыз. python examples/python/smarty.py \\ -u",
   "sectionTitle": "Python тіліндегі интеграция мысалы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

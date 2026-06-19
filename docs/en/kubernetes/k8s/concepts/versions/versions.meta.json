@@ -5,5 +5,19 @@
   "sectionTitle": "About Kubernetes versions and components",
   "icon": "",
   "weight": 10,
-  "uuid": "872011f0-e0fc-42b7-a2bf-e0c0c4c6907a"
+  "uuid": "872011f0-e0fc-42b7-a2bf-e0c0c4c6907a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

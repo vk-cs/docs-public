@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Airflow",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, какие метрики Cloud Airflow в формате Prometheus собираются и отображаются на дашбордах для мониторинга экземпляров Cloud Airflow в VK Data Platform.",
+  "sectionTitle": "Cloud Airflow",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

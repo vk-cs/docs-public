@@ -62,7 +62,20 @@
     "6bea2b04-e475-42d8-8403-3e0ded301bfb",
     "f4e49cbc-8318-47bb-9238-3b91bc7f1bfc",
     "5bb8e5de-8489-402d-93d3-f6b663e3a5c6",
-    "3d7dea00-514a-46d4-88f0-942040eb4e84"
+    "3d7dea00-514a-46d4-88f0-942040eb4e84",
+    "58eb5560-944a-4887-8699-f1a7dfc08a28",
+    "24c99357-c2ba-4d22-a31f-1f3889ebad3e",
+    "b6f0e71a-500f-405c-b0f8-82bd4bea247b",
+    "cadcc512-65c4-4961-b739-44e0e9e6d280",
+    "c438457b-5924-4be0-9c39-cb0c1e3b0eab",
+    "9396f7cc-c9fa-43ee-bb76-cbe17316030d"
   ],
-  "uuid": "2a352fde-f1d8-408b-9dec-666d2dbd6503"
+  "uuid": "2a352fde-f1d8-408b-9dec-666d2dbd6503",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "metaDescription": "Cloud Containers сервисі: VK Cloud кластерлерінде компоненттер мен аддондардың қандай нұсқалары қолдау көрсетіледі",
   "sectionTitle": "Kubernetes компоненттерінің нұсқалары",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

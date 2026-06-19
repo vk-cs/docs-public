@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Kafka",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform ішіндегі Cloud Kafka сервисінің әрбір өрістетілген данасы үшін брокердің, Kafka координаторының, JVM және Kubernetes подының қандай метрикалары жиналатынын біліңіз",
+  "sectionTitle": "Cloud Kafka",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,11 +1,16 @@
 {
-    "title": "Соглашение об участии в исследовании (тестировании)",
-      "shortDescription": "",
-      "metaDescription": "Соглашение на участие в исследовании (тестировании) от VK Cloud",
-    "sectionTitle": "Соглашение об участии в исследовании (тестировании)",
-    "icon": "",
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 15,
-    "uuid": "7f4ecaa8-29b7-42c9-bc28-f82d6208259c"
+  "title": "Соглашение об участии в исследовании (тестировании)",
+  "shortDescription": "",
+  "metaDescription": "Соглашение на участие в исследовании (тестировании) от VK Cloud",
+  "sectionTitle": "Соглашение об участии в исследовании (тестировании)",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 15,
+  "uuid": "7f4ecaa8-29b7-42c9-bc28-f82d6208259c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

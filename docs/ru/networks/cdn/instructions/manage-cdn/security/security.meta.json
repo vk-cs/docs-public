@@ -5,5 +5,10 @@
     "sectionTitle": "Настройка доступа и параметров безопасности",
     "icon": "",
     "weight": 7,
-    "uuid": "2ff8e289-0930-4da1-b193-fc80d3704edc"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2ff8e289-0930-4da1-b193-fc80d3704edc"
 }

@@ -1,9 +1,16 @@
 {
   "title": "Cloud Kafka",
-  "shortDescription": "Қолданбалар арасында деректерді беруге арналған үлестірілген ағындық платформа",
-  "metaDescription": "VK Cloud инфрақұрылымында Apache Kafka кластерлерін жасауға және басқаруға арналған сервис",
+  "shortDescription": "Қосымшалар арасында деректерді беруге арналған таратылған ағындық платформа",
+  "metaDescription": "VK Data Platform инфрақұрылымында Apache Kafka кластерлерін жасауға және басқаруға арналған сервис",
   "sectionTitle": "Cloud Kafka",
   "icon": "",
   "weight": 8,
-  "isBeta": true
+  "isBeta": true,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

@@ -1,8 +1,13 @@
 {
-  "title": "Тарифтеу",
+  "title": "Тарификация",
   "shortDescription": "Сервис тарификациясының ерекшеліктері және құнын есептеу",
   "metaDescription": "VK Cloud-тағы Cloud Databases: сервис тарификациясының ерекшеліктері және құнын есептеу",
-  "sectionTitle": "Тарифтеу",
+  "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 7
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -8,7 +8,7 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    In the example below, the `example.com` zone is used.
 
-1. [Create](../../../instructions/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
+1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the latest version that has an external IP address and is accessible from the Internet.
 
    Select other cluster parameters at your discretion.
 
@@ -694,52 +694,52 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    Successful interaction with the application at this address indicates that ExternalDNS works correctly with the Ingress resource.
 
-## Remove unused resources
+## Delete unused resources
 
-1. If you no longer need the Kubernetes resources created for ExternalDNS validation, delete them:
+{include(/en/_includes/_remove-k8s-resources.md)} ExternalDNS, delete them:
 
-   1. Delete all resources associated with the `tea` application:
+1. Delete all resources associated with the `tea` application:
 
-      ```console
-      kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
-      ```
+   ```console
+   kubectl delete -f cafe-ingress.yaml -f coffee-service.yaml -f coffee-app.yaml
+   ```
 
-      It can take a long time to remove the load balancer associated with the service.
+   It might take a long time to delete the load balancer associated with the service.
 
-   1. Remove all resources associated with the `coffee` application:
+1. Delete all resources associated with the `coffee` application:
 
-      ```console
-      kubectl delete -f tea-service.yaml -f tea-app.yaml
-      ```
+   ```console
+   kubectl delete -f tea-service.yaml -f tea-app.yaml
+   ```
 
-   1. [Delete the Ingress NGINX add-on](../../../instructions/addons/manage-addons#removing_addon).
+1. [Delete the Ingress NGINX add-on](../../../instructions/addons/manage-addons#removing_addon).
 
-      It may take a long time to remove the add-on and its associated resources.
+   It might take a long time to delete the add-on and its associated resources.
 
-   1. [Delete the resource records](/en/networks/dns/publicdns#deleting_resource_records) created by ExternalDNS.
+1. [Delete the resource records](/en/networks/dns/publicdns#deleting_resource_records) created by ExternalDNS.
 
-      This must be done if you did not modify the `external-dns-vkcs-values.yaml` file when [installing ExternalDNS](#2_install_externaldns): in this case ExternalDNS uses the `upsert-only` policy and does not remove resource records from the DNS zone when removing Kubernetes resources. If you modified this file and selected the `sync` policy, then these records will be deleted automatically.
+   This must be done if you did not modify the `external-dns-vkcs-values.yaml` file when [installing ExternalDNS](#2_install_externaldns): in this case ExternalDNS uses the `upsert-only` policy and does not delete resource records from the DNS zone when removing Kubernetes resources. If you modified this file and selected the `sync` policy, then these records will be deleted automatically.
 
-      List of resource records:
+   List of resource records:
 
-      - A record `tea.example.com`.
-      - TXT records `externaldns-tea.example.com` and `externaldns-a-tea.example.com`.
-      - CNAME record `cafe.example.com`.
-      - TXT records `externaldns-cafe.example.com` and `externaldns-cname-cafe.example.com`.
+   - A record `tea.example.com`.
+   - TXT records `externaldns-tea.example.com` and `externaldns-a-tea.example.com`.
+   - CNAME record `cafe.example.com`.
+   - TXT records `externaldns-cafe.example.com` and `externaldns-cname-cafe.example.com`.
 
-1. If you no longer need ExternalDNS, delete it:
+1. Delete ExternalDNS:
 
-   1. Remove the Helm chart from ExternalDNS:
+   1. Delete the Helm chart from ExternalDNS:
 
       ```console
       helm -n external-dns uninstall external-dns-vkcs
       ```
 
-   1. Remove the `external-dns` namespace.
+   1. Delete the `external-dns` namespace.
 
       {note:warn}
 
-      The `vkcs-auth` secret, which contains the credentials to access the VK Cloud API, will also be removed.
+      The `vkcs-auth` secret, which contains the credentials to access the VK Cloud API, will also be deleted.
 
       {/note}
 
@@ -747,9 +747,6 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
       kubectl delete ns external-dns
       ```
 
-1. A running Cloud Containers cluster consumes compute resources and is charged. If you no longer need it:
-
-   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}
 
 1. [Delete](/en/networks/dns/publicdns#deleting_a_zone) the `example.com` DNS zone if you no longer need it.

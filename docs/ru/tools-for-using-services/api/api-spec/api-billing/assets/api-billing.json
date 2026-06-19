@@ -1,0 +1,146 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API сервиса Биллинг",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "Balance",
+      "description": "Операции с балансом проекта"
+    }
+  ],
+  "paths": {
+    "/public/v1/projects/{pid}/balances/amount": {
+      "get": {
+        "tags": [
+          "Balance",
+        ],
+        "summary": "Узнать баланс проекта",
+        "description": "Возвращает информацию о балансе всех активных счетов проекта VK Cloud по его <a href='https://cloud.vk.com/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>идентификатору</a> (PID).",
+        "operationId": "get_public_v1_projects_pid_balances_amount",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта. Указывается в эндпоинте.",
+            "required": true,
+            "schema": {
+              "title": "Pid",
+              "type": "string"
+            }
+          },
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TotalBalanceAmountResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Проект не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SingleErrorSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Ошибка валидации",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "publicAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TotalBalanceAmountResponse": {
+        "title": "TotalBalanceAmountResponse",
+        "description": "Информация о балансе счетов на проекте",
+        "type": "object",
+        "required": [
+          "base",
+          "bonus"
+        ],
+        "properties": {
+          "base": {
+            "title": "Лицевой счет",
+            "description": "Баланс лицевого счета",
+            "type": "number"
+          },
+          "bonus": {
+            "title": "Бонусный счет",
+            "description": "Баланс бонусного счета",
+            "type": "number"
+          }
+        }
+      },
+      "SingleErrorSchema": {
+        "title": "SingleErrorSchema",
+        "type": "object",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "title": "Ошибка",
+            "description": "Текст ошибки",
+            "type": "string"
+          }
+        }
+      },
+      "HTTPValidationError": {
+        "title": "ValidationError",
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "properties": {
+          "loc": {
+            "title": "Расположение ошибки",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "msg": {
+            "title": "Текст ошибки",
+            "type": "string"
+          },
+          "type": {
+            "title": "Тип ошибки",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "publicAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

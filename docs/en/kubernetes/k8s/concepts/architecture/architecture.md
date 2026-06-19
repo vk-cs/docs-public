@@ -17,7 +17,7 @@ A Kubernetes cluster in Cloud Containers consists of two types of nodes, master 
 
 - _Master nodes_ store cluster-wide state information and manage workload distribution across worker nodes. Users cannot manage cluster nodes, as they are managed by the VK Cloud platform.
 
-  When you [create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster in Cloud Containers, it automatically selects the minimum appropriate [configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for its master nodes. By default, it is a VM with an Intel Cascade Lake processor, 2 CPUs, and 6 GB RAM. The default [disk type](/en/kubernetes/k8s/concepts/storage#storage_types) for master nodes is a 20 GB High-IOPS SSD.
+  When you [create](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster in Cloud Containers, it automatically selects the minimum appropriate [configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for its master nodes. By default, it is a VM with an Intel Cascade Lake processor, 2 CPUs, and 6 GB RAM. The default [disk type](/en/kubernetes/k8s/concepts/storage#storage_types) for master nodes is a 20 GB High-IOPS SSD.
 
   [Automatic scaling](/en/kubernetes/k8s/concepts/scale#autoscaling) is enabled for all master nodes by default. When the workload of the cluster changes, the amount of the resources used by master nodes changes respectively.
 
@@ -65,7 +65,7 @@ The cluster runs containers via Kubernetes [Container Runtime Interface](https:/
 
 See [Available Kubernetes versions and version support policy](../versions) for details.
 
-## Integration with the Kubernetes API
+## {heading(Integration with the Kubernetes API)[id=kubernetes-api-integration]}
 
 All interaction with the cluster is through the [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 

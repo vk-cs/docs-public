@@ -5,5 +5,10 @@
   "sectionTitle": "Перемещение диска между проектами",
   "icon": "",
   "weight": 7,
-  "uuid": "75feca45-f780-4772-a7da-14c729709f17"
+  "uuid": "75feca45-f780-4772-a7da-14c729709f17",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

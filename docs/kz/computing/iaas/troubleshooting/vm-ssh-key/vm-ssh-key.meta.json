@@ -4,5 +4,12 @@
   "metaDescription": "Виртуалды машинаға SSH протоколы арқылы қол жеткізуге арналған жеке кілт жоғалса, не істеу керек",
   "sectionTitle": "Жеке кілт жоғалған",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

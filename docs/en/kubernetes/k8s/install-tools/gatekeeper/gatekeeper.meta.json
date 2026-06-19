@@ -1,9 +1,23 @@
 {
-    "title": "Installing Gatekeeper",
-      "shortDescription": "How to install a Gatekeeper controller",
-      "metaDescription": "",
-    "sectionTitle": "Installing Gatekeeper",
-    "icon": "",
-    "weight": 2,
-    "uuid": "090dd7f7-3f53-4058-90cb-b306e6b53c3c"
+  "title": "Installing Gatekeeper",
+  "shortDescription": "How to install a Gatekeeper controller",
+  "metaDescription": "",
+  "sectionTitle": "Installing Gatekeeper",
+  "icon": "",
+  "weight": 2,
+  "uuid": "090dd7f7-3f53-4058-90cb-b306e6b53c3c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

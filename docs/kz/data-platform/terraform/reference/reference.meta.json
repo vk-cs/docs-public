@@ -1,0 +1,14 @@
+{
+  "title": "Terraform анықтамалығы",
+  "shortDescription": "Негізгі Terraform командалары және манифест үлгілері",
+  "metaDescription": "Terraform анықтамалығы: негізгі Terraform командалары және манифест үлгілері",
+  "sectionTitle": "Terraform анықтамалығы",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

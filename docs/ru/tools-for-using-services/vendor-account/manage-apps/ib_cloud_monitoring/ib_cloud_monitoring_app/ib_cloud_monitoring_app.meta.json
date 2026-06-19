@@ -4,5 +4,10 @@
   "metaDescription": "Метрики image-based приложения",
   "sectionTitle": "Метрики image-based приложения",
   "weight": 3,
-  "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8"
+  "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

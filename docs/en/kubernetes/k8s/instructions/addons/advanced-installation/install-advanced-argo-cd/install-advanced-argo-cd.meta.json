@@ -5,5 +5,10 @@
   "sectionTitle": "Argo CD",
   "icon": "",
   "weight": 1,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

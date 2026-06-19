@@ -10,7 +10,7 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
 ## 1. Preparatory steps
 
-1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the most current version.
+{include(/en/_includes/_create-test-cluster.md)}
 
    When creating the cluster select the **Assign external IP** option.
 
@@ -18,7 +18,7 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
 1. [Make sure](../../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
+1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
 1. [Install](../../../install-tools/helm) Helm if the utility is not already installed.
 
@@ -383,7 +383,9 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 ## Delete unused resources
 
-1. If the Kubernetes resources you created are no longer needed, delete them.
+{include(/en/_includes/_remove-k8s-resources.md)} the Ingress controller, delete them:
+
+1. Delete the resources described in the manifests, the `example-nginx-ingress-http` app, as well as the `example-nginx-ingress-http` namespace and the resources associated with it:
 
    {note:info}
 
@@ -418,7 +420,4 @@ The following will demonstrate how to create an Ingress resource that works excl
 
    {/tabs}
 
-1. A running cluster consumes computing resources. If you no longer need it:
-
-   - [stop](../../../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-   - [delete](../../../instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

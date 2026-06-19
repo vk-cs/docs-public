@@ -1,0 +1,14 @@
+{
+  "title": "VK Data Platform мониторингі Private Cloud құрамында",
+  "shortDescription": "VK Data Platform үшін Private Cloud құрамында Cloud Monitoring сервисінің көмегімен метрикаларды жинау",
+  "metaDescription": "Private Cloud Monitoring құрамындағы Data Platform сервистері үшін data plane деңгейіндегі мониторингтің қалай орындалатынын біліңіз",
+  "sectionTitle": "VK Data Platform мониторингі Private Cloud құрамында",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": ""
+}

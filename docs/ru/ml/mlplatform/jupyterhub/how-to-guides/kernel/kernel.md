@@ -1,3 +1,5 @@
+# {heading(Создание индивидуального kernel)[id=mlplatform-jupyterhub-htg-kernel]}
+
 Для создания индивидуального kernel, в терминале JupyterHub необходимо выполнить следующие команды:
 
 1. Создайте virtual environment:

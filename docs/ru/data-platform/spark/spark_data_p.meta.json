@@ -1,0 +1,15 @@
+{
+  "title": "Cloud Spark",
+  "shortDescription": "Сервис на базе Apache Spark для распределенной обработки больших данных",
+  "metaDescription": "Работа с сервисом Cloud Spark на платформе VK Data Platform: параметры экземпляра сервиса, создание экземпляра и работа с ним, тарификация",
+  "sectionTitle": "Cloud Spark",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "eeff3f8f-5a5b-4a4b-8bb3-63fd8844263a"
+}

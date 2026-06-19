@@ -5,5 +5,19 @@
   "sectionTitle": "Add-ons and settings",
   "icon": "",
   "weight": 4,
-  "uuid": "c79491d9-6a34-4797-8396-67d0369308c6"
+  "uuid": "c79491d9-6a34-4797-8396-67d0369308c6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

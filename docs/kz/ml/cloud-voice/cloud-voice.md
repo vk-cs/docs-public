@@ -1,3 +1,5 @@
+# {heading(Cloud ML Platform)[id=cloud_voice]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:err}

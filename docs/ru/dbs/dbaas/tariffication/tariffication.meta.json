@@ -1,9 +1,14 @@
 {
-    "title": "Тарификация",
-      "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
-      "metaDescription": "Cloud Databases в VK Cloud: особенности тарификации сервиса и расчет стоимости",
-    "sectionTitle": "Тарификация",
-    "icon": "",
-    "weight": 7,
-    "uuid": "98fdfc99-2f59-4b30-befc-1adfdadf6ee1"
+  "title": "Тарификация",
+  "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
+  "metaDescription": "Cloud Databases в VK Cloud: особенности тарификации сервиса и расчет стоимости",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 7,
+  "uuid": "98fdfc99-2f59-4b30-befc-1adfdadf6ee1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "shortDescription": "RDP арқылы ВМ-ге қалай қосылуға болады",
   "metaDescription": "Windows ВМ-ге қосылу",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

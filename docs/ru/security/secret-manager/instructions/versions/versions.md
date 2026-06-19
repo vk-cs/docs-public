@@ -1,16 +1,18 @@
+# {heading(Управление версиями секрета)[id=sm-versions]}
+
 {note:info}
 
 Для получения доступа к сервису обратитесь в [техническую поддержку](/ru/contacts).
 
 {/note}
 
-## {heading(Создание новой версии секрета)[id=create]}
+## {heading(Создание новой версии секрета)[id=sm-versions-create]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**.
 1. В списке секретов нажмите на имя нужного секрета.
 1. Перейдите на вкладку **История версий**.
@@ -58,13 +60,13 @@
 
 {/tabs}
 
-## {heading(Просмотр версий секретов)[id=view]}
+## {heading(Просмотр версий секретов)[id=sm-versions-view]}
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Сервисы безопасности → Менеджер секретов**.
 1. В списке секретов нажмите на имя нужного секрета.
 1. Перейдите во вкладку **История версий**.
@@ -73,7 +75,7 @@
     - **Ключ** — уникальный идентификатор пары.
     - **Значение** — чувствительные данные. Может быть строкой в маскированном виде или файлом.
 
-        Чтобы расшифровать значение, нажмите на значок ![ ](/ru/assets/eye-icon.svg "inline").
+        Чтобы расшифровать значение, нажмите на значок ![ ](../../../../assets/eye-icon.svg "inline").
 
 {/tab}
 

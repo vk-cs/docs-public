@@ -1,6 +1,8 @@
+# {heading(Распознавание автомобильных номеров)[id=vision-instructions-plate-recognition]}
+
 Распознавание автомобильных номеров — частный случай использования метода `detect` — метод позволяет найти различные объекты на фотографии.
 
-## Запрос
+## {heading(Запрос)[id=vision-instructions-plate-recognition-request]}
 
 Авторизационные данные передаются в строке запроса:
 
@@ -13,8 +15,8 @@
 
 | Провайдер | Значение `oauth_provider` | Получение токена                                    |
 |  -------- |  ------------------------ | --------------------------------------------------- |
-| VK Cloud  | mcs                       | Смотрите в [статье](../../quick-start/auth-vision)|
-| VK Cloud  | mr                        | Смотрите в [статье](../../quick-start/auth-vision)|
+| {var(cloud)}  | mcs                       | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
+| {var(cloud)}  | mr                        | Смотрите в {linkto(../../quick-start/auth-vision#vision-quick-start-auth-vision)[text=статье]}|
 
 Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
@@ -49,11 +51,11 @@
 
 {note:warn}
 
-Для метода действуют [ограничения](../../concepts/vision-limits#obrabotka_izobrazheniy).
+Для метода действуют {linkto(../../concepts/vision-limits#vision-concepts-vision-limits-images)[text=ограничения]}.
 
 {/note}
 
-## Пример запроса
+## {heading(Пример запроса)[id=vision-instructions-plate-recognition-request-example]}
 
 ```curl
 curl -X 'POST' \
@@ -74,7 +76,7 @@ curl -X 'POST' \
 }'
 ```
 
-## Ответ
+## {heading(Ответ)[id=vision-instructions-plate-recognition-request-answer]}
 
 | Параметр     | Тип     | Значение                                                |
 | ------------ | ------- | ------------------------------------------------------- |
@@ -113,7 +115,7 @@ curl -X 'POST' \
 | coord          | Координаты найденного объекта (optional)                                  |
 | types_prob     | Массив вероятностей типов номерных знаков. на данный момент поддерживаются следующие типы: `rus` — все типы Российских номеров, `cis` — номера СНГ (кроме индивидуальных и военных украинских), `eu` — одноэтажные номера Европы (optional, only for car_number mode) |
 
-## Пример ответа
+## {heading(Пример ответа)[id=vision-instructions-plate-recognition-request-answer-example]}
 
 {cut(Ответ в формате JSON)}
 
@@ -187,9 +189,9 @@ curl -X 'POST' \
 
 {/cut}
 
-## Дополнительные примеры
+## {heading(Дополнительные примеры)[id=vision-instructions-plate-recognition-request-extra-example]}
 
-### Номера автомобиля нет на изображении
+### {heading(Номера автомобиля нет на изображении)[id=vision-instructions-plate-recognition-request-extra-example-no-plate]}
 
 Пример запроса:
 
@@ -229,7 +231,7 @@ curl -X 'POST' \
 }
 ```
 
-### Пустое изображение
+### {heading(Пустое изображение)[id=vision-instructions-plate-recognition-request-extra-example-empty-img]}
 
 Пример запроса:
 
@@ -263,7 +265,7 @@ curl -X 'POST' \
 }
 ```
 
-### Невалидный JSON (несовпадение имени файлов с формой)
+### {heading(Невалидный JSON (несовпадение имени файлов с формой))[id=vision-instructions-plate-recognition-request-extra-example-invalid-json]}
 
 Пример запроса:
 

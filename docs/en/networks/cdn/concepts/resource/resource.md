@@ -12,7 +12,7 @@ After the resource is created, you can also configure:
 - [caching](/en/networks/cdn/instructions/manage-cdn/caching);
 - [HTTP headers, HTTP request methods, and CORS](/en/networks/cdn/instructions/manage-cdn/http-headers);
 - [content management](/en/networks/cdn/instructions/manage-cdn/content-settings) — purging and prefilling the resource cache, HTTP response codes, content compression, and optimizing large file delivery;
-- [security settings](/en/networks/cdn/instructions/manage-cdn/security) — access policies based on countries, domains, and IP addresses, as well as the TLS protocol versions used;
+- [security settings](/en/networks/cdn/instructions/manage-cdn/security#tls-versions) — access policies based on countries, domains, and IP addresses, as well as the TLS protocol versions used;
 - content access restriction using [Secure token](/en/networks/cdn/concepts/secure-token) technology.
 
 ## Resource statuses

@@ -2,5 +2,10 @@
   "title": "Сервисті жүктеу кезеңдері",
   "shortDescription": "",
   "metaDescription": "Сервисті жүктеу кезеңдері",
-  "sectionTitle": "Сервисті жүктеу кезеңдері"
+  "sectionTitle": "Сервисті жүктеу кезеңдері",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

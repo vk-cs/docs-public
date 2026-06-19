@@ -5,5 +5,19 @@
   "sectionTitle": "Authentication and authorisation",
   "icon": "",
   "weight": 2,
-  "uuid": "f4a8cb27-fd39-4760-b717-c9dec0286855"
+  "uuid": "f4a8cb27-fd39-4760-b717-c9dec0286855",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

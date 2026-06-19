@@ -5,5 +5,12 @@
   "sectionTitle": "Проблемы в работе приложений",
   "icon": "",
   "weight": 22,
-  "uuid": "47c65534-acdd-4038-9672-02470fc4ddc7"
+  "uuid": "47c65534-acdd-4038-9672-02470fc4ddc7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

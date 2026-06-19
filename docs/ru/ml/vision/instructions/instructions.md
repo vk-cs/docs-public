@@ -1,1 +1,3 @@
+# {heading(Обработка изображений)[id=vision-instructions]}
+
 Методы и инструменты распознавания объектов, лиц, видео и других предметов при помощи Vision. OpenAPI-спецификация приведена в [справке API](/ru/tools-for-using-services/api/api-spec/vision-api).

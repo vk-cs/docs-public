@@ -5,5 +5,10 @@
   "sectionTitle": "Настройка сервисов магазина приложений",
   "icon": "",
   "weight": 2,
-  "uuid": "8e9665fc-7e79-44de-89a1-e97dc4dd361c"
+  "uuid": "8e9665fc-7e79-44de-89a1-e97dc4dd361c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

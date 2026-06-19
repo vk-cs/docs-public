@@ -1,22 +1,25 @@
+# {heading(Настройка мониторинга на существующей ВМ)[id=monitoring-mon-setup-current]}
+
 Чтобы настроить мониторинг на существующей виртуальной машине:
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте страницу ВМ, нажав на ее имя в общем списке.
 1. На вкладке **Общая информация** под основной информацией о ВМ перейдите на вкладку **Настройка мониторинга**.
 1. Скопируйте появившуюся команду.
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
+1. {ifdef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]}{/ifdef}{ifndef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Подключитесь]}{/ifndef} к виртуальной машине.
 1. На подключенной ВМ выполните скопированную ранее команду.
 
 Агент мониторинга будет установлен и станет запускаться каждый раз при старте ВМ.
 
+{ifdef(public)}
 Если вкладка **Настройка мониторинга** отсутствует:
 
-1. Убедитесь, что [включена](/ru/access/iam/instructions/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
-1. [Получите токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
-1. [Получите Project ID](/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id), специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
-1. [Получите ID виртуальной машины](/ru/computing/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
-1. [Подключитесь](/ru/computing/iaas/instructions/vm/vm-connect) к виртуальной машине.
+1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите токен доступа]} `X-Subject-Token`.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=Получите Project ID]}, специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-id-get)[text=Получите ID виртуальной машины]}.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]} к виртуальной машине.
 1. Выполните команду:
 
    {tabs}
@@ -92,7 +95,6 @@
 Метрики по этой виртуальной машине можно найти по метке `host` со значением `hostname` ВМ.
 
 {note:info}
-
 Чтобы настроить мониторинг для конкретного диска виртуальной машины, используйте фильтрацию по меткам, которые идентифицируют устройство.
-
 {/note}
+{/ifdef}

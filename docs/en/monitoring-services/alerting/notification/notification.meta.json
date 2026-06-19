@@ -5,5 +5,10 @@
   "sectionTitle": "Notification channels",
   "icon": "",
   "weight": 0,
-  "uuid": "9adb8868-387a-4d79-bec3-814c1fba9bd7"
+  "uuid": "9adb8868-387a-4d79-bec3-814c1fba9bd7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

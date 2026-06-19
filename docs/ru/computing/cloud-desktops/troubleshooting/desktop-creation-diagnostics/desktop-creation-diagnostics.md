@@ -1,48 +1,50 @@
+# {heading(Диагностика ошибок создания рабочего стола)[id=desktops-creation-diagnostics]}
+
 Причину ошибки при создании виртуального рабочего стола можно найти в логах сервиса Cloud Desktop или в журнале событий.
 
-## Диагностика с помощью логов
+## {heading(Диагностика с помощью логов)[id=desktops-diagnostics-logs]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Мониторинг → Логирование**.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Мониторинг** → **Логирование**.
 1. Если на экране не отображаются поля запроса и фильтров, нажмите кнопку **Поиск и фильтры**.
 1. Укажите параметры поиска:
 
-    - Поле запроса: введите значение `stream_id: "worker"`.
-    - **Статус**: выберите `Error`.
-    - **Продукт**: выберите `VDI`.
-    - Интервал времени: установите так, чтобы он покрывал момент возникновения ошибки.
+   - Поле запроса: введите значение `stream_id: "worker"`.
+   - **Статус**: выберите `Error`.
+   - **Продукт**: выберите `VDI`.
+   - Интервал времени: установите так, чтобы он покрывал момент возникновения ошибки.
 
 1. Нажмите кнопку **Найти**.
 1. В списке результатов поиска нажмите на строку с нужным событием.
 
-    Откроется окно с данными о событии. Описание ошибки содержится в поле **Сообщение**. Пример:
+   Откроется окно с данными о событии. Описание ошибки содержится в поле **Сообщение**. Пример:
 
-    ```json
-    Server error detected. Code: 500; Message: "Build of instance bcb5e979-XXXX-1d57281a282f aborted: Failed to allocate the network(s) with error No fixed IP addresses available for network: 070b51d8-XXXX-7a786c779c9e, not rescheduling."
-    ```
+   ```json
+   Server error detected. Code: 500; Message: "Build of instance bcb5e979-XXXX-1d57281a282f aborted: Failed to allocate the network(s) with error No fixed IP addresses available for network: 070b51d8-XXXX-7a786c779c9e, not rescheduling."
+   ```
 
-## Диагностика с помощью журнала событий
+## {heading(Диагностика с помощью журнала событий)[id=desktops-diagnostics-events]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Мониторинг → Журнал событий**.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. Перейдите в раздел **Мониторинг** → **Журнал событий**.
 1. Если на экране не отображаются поля запроса и фильтров, нажмите кнопку **Поиск и фильтры**.
 1. Укажите параметры поиска:
 
-    - Поле запроса: оставьте пустым.
-    - **Статус**: выберите `Error`.
-    - **Источник**: оставьте пустым.
-    - Интервал времени: установите так, чтобы он покрывал момент возникновения ошибки.
+   - Поле запроса: оставьте пустым.
+   - **Статус**: выберите `Error`.
+   - **Источник**: оставьте пустым.
+   - Интервал времени: установите так, чтобы он покрывал момент возникновения ошибки.
 
 1. Нажмите кнопку **Найти**.
 1. В списке результатов поиска нажмите на строку с нужным событием.
 
-    Откроется окно с данными о событии. Описание ошибки содержится в поле **Тело ответа**. Пример:
+   Откроется окно с данными о событии. Описание ошибки содержится в поле **Тело ответа**. Пример:
 
-    ```json
-    {
-      "badRequest":{
-        "message": "Volume is smaller than the minimum size specified in image metadata. Volume size is 13958643712 bytes, minimum size is 42949672960 bytes.", 
-        "code": 400
-      }
-    }
-    ```
+   ```json
+   {
+     "badRequest":{
+       "message": "Volume is smaller than the minimum size specified in image metadata. Volume size is 13958643712 bytes, minimum size is 42949672960 bytes.", 
+       "code": 400
+     }
+   }
+   ```

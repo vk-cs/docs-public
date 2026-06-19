@@ -1,8 +1,18 @@
 {
   "title": "Тұжырымдамалар",
-  "shortDescription": "VK Cloud желілік сервистері қалай құрылған",
+  "shortDescription": "{var(cloud)} желілік сервистері қалай құрылған",
   "metaDescription": "Cloud Networks виртуалды машиналардың желілік қолжетімділігін басқарады, оларға жүктеме теңгергіштерін қосуға, оларды желілер мен ішкі желілерге біріктіруге, маршрутизаторлар мен қауіпсіздік топтарын баптауға мүмкіндік береді",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pg",
+      "private_cert",
+      "private_pdf",
+      "private_pg_pdf"
+    ]
+  }
 }

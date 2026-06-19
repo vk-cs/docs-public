@@ -1,24 +1,28 @@
-[LL NVMe](/ru/computing/iaas/concepts/data-storage/disk-types#disk_types) (Low Latency NVMe) — [локальные диски с быстрым откликом](/ru/computing/iaas/concepts/data-storage/volume-sla#low_latency_nvme), которые доступны на платформе VK Cloud в высокопроизводительных конфигурациях по запросу через [техническую поддержку](/ru/contacts). Среди всех дисков на платформе VK Cloud они отличаются наименьшей задержкой: их гарантированное время отклика составляет не более 0,5 мс. В отличие от других дисков на платформе VK Cloud, диск LL NVMe является локальным, т.е. базируется на том же гипервизоре, что и ВМ, к которой он подключен.
+# {heading(Подключение дисков LL NVMe к worker-узлам)[id=k8s-llnvme-disks]}
+
+{linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=LL NVMe]} (Low Latency NVMe) — {linkto(../../../../computing/iaas/concepts/data-storage/volume-sla#iaas-volume-sla-llnvme)[text=локальные диски с быстрым откликом]}, которые доступны на платформе {var(cloud)} в высокопроизводительных конфигурациях по запросу через [техническую поддержку](/ru/contacts). Среди всех дисков на платформе {var(cloud)} они отличаются наименьшей задержкой: их гарантированное время отклика составляет не более 0,5 мс. В отличие от других дисков на платформе {var(cloud)}, диск LL NVMe является локальным, т.е. базируется на том же гипервизоре, что и ВМ, к которой он подключен.
  
-## {heading(Подготовительные шаги)[id=prepare]}
+## {heading(Подготовительные шаги)[id=k8s-llnvme-disks-prepare]}
 
 1. Обратитесь в [техническую поддержку](/ru/contacts), чтобы получить доступ к конфигурации для подключения диска LL NVMe к worker-узлам, которая включает в себя:
    
    - тип диска: `ef-nvme`;
-   - [шаблон конфигурации ВМ](/ru/computing/iaas/concepts/vm/flavor) для группы узлов на основе этого типа диска.
+   - {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации ВМ]} для группы узлов на основе этого типа диска.
    
     Дождитесь доступа к этой конфигурации, прежде чем переходить к следующим шагам.
-1. [Создайте](../../instructions/create-cluster) кластер, если это еще не сделано.
-1. В личном кабинете VK Cloud [добавьте](/ru/kubernetes/k8s/instructions/manage-node-group#add_group) группу узлов с ВМ на основе конфигурации для LL NVMe:
+
+{include(/ru/_includes/_create-test-cluster.md)}
+
+1. В личном кабинете {var(cloud)} {linkto(../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=добавьте]} группу узлов с ВМ на основе конфигурации для LL NVMe:
 
    - **Категория виртуальной машины**: `ВМ с локальными дисками`.
    - **Тип Node-узлов**: шаблон конфигурации ВМ для диска Low Latency NVMe (в названии такого шаблона будет `NVME`).
    - Другие настройки оставьте без изменений.
 
-1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#connect) к кластеру при помощи `kubectl`.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-connect)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 
-## {heading(1. Добавьте класс хранения (StorageClass) для дисков LL NVMe)[id=nvme_storageclass]}
+## {heading(1. Добавьте класс хранения (StorageClass) для дисков LL NVMe)[id=k8s-llnvme-disks-nvme-storageclass]}
 
 1. Создайте файл манифеста для `StorageClass`, например `csi-ef-nvme.yaml`, и добавьте в него следующее содержимое:
 
@@ -37,7 +41,7 @@
    ```
    Здесь:
    - `type: ef-nvme` описывает тип диска LL NVMe. 
-   - `volumeBindingMode: WaitForFirstConsumer` позволяет отложить создание и привязку [постоянного тома](/ru/kubernetes/k8s/reference/pvs-and-pvcs) (persistent volume) до момента, когда будет создан под, использующий [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction). Это нужно, чтобы Kubernetes создал диск после того, как под будет запланирован на узел.
+   - `volumeBindingMode: WaitForFirstConsumer` позволяет отложить создание и привязку {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=постоянного тома]} (persistent volume) до момента, когда будет создан под, использующий [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction). Это нужно, чтобы Kubernetes создал диск после того, как под будет запланирован на узел.
 
       Подробнее о настройках привязки томов в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode). 
    - `localToNode: "true"` обеспечивает размещение дисков на тех же гипервизорах, что и ВМ, к которым они будут привязаны.
@@ -48,12 +52,12 @@
    kubectl apply -f csi-ef-nvme.yaml
    ```
 
-## {heading(2. Создайте приложение)[id=nvme_app]}
+## {heading(2. Создайте приложение)[id=k8s-llnvme-disks-nvme-app]}
 
 Чтобы изучить процесс подключения дисков LL NVMe к worker-узлам, запустите тестовое приложение `coffee`.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. [Добавьте](/ru/kubernetes/k8s/instructions/manage-node-group#labels_taints) метку `disktype: ef-nvme` для ранее созданной группы узлов, чтобы обеспечить размещение пода на узлах с дисками LL NVMe:
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. {linkto(../../instructions/manage-node-group#k8s-manage-node-group-labels-taints)[text=Добавьте]} метку `disktype: ef-nvme` для ранее созданной группы узлов, чтобы обеспечить размещение пода на узлах с дисками LL NVMe:
 
    - **Key**: `disktype`.
    - **Value**: `ef-nvme`.
@@ -166,38 +170,29 @@
       ```text
       NAME                                       ...   STATUS   CLAIM                    STORAGECLASS   ...
       ...                                        ...   ...      ...                      ...            ...
-      <идентификатор постоянного тома>           ...   Bound    example-app/coffee-pvc   csi-ef-nvme    ...
+      <ID_ПОСТОЯННОГО_ТОМА>           ...   Bound    example-app/coffee-pvc   csi-ef-nvme    ...
       ```
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-llnvme-disks-delete]}
 
-1. Если созданные ресурсы Kubernetes вам больше не нужны, удалите их:
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы дисков LL NVMe, вам больше не нужны, удалите их:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
+1. Удалите созданное пространство имен `example-app` и связанные с ним ресурсы:
 
+   {tabs}
+   {tab(Linux/macOS)}
    ```console
    kubectl delete ns example-app
-
    ```
-
-   </tabpanel>
-   <tabpanel>
-
+   {/tab}
+   
+   {tab(Windows)}
    ```console
    kubectl delete ns example-app; `
    ```
+   {/tab}
+   {/tabs}
 
-   </tabpanel>
-   </tabs>
+1. {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=Удалите]} созданный постоянный том.
 
-1. [Удалите](/ru/kubernetes/k8s/concepts/storage#reclaim_policies) созданный постоянный том.
-
-1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-   - [остановите](/ru/kubernetes/k8s/instructions/manage-cluster#stop) его, чтобы воспользоваться им позже;
-   - [удалите](../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster-short.md)}

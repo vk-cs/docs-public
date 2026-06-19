@@ -4,5 +4,10 @@
   "metaDescription": "Arenadata DB (ADB) сипаттамасы – MPP (massively parallel processing, массивті-параллель есептеулер) тұжырымдамасын пайдаланатын үлестірілген ДҚБЖ және негізделген",
   "sectionTitle": "Қызмет туралы",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

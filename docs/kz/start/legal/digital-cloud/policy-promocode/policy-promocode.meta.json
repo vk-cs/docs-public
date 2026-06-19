@@ -2,9 +2,23 @@
   "title": "VK Cloud Платформасына қол жеткізу беру кезінде Промокодтарды пайдалану қағидалары",
   "shortDescription": "",
   "metaDescription": "Осы құжат «Цифровое Облако» ЖШҚ (бұдан әрі – «Компания», «Орындаушы») мен Сіздің (бұдан әрі – «Тапсырыс беруші») араңыздағы VK Cloud Платформасын пайдалануда Промокодтарды қолдану кезінде арнайы пайдалану шарттарын ұсынуға байланысты келісім болып табылады",
-  "sectionTitle": "Использование промокодов",
+  "sectionTitle": "Промокодтарды пайдалану",
   "icon": "",
   "disableGithub": true,
   "disableDateInformation": true,
-  "weight": 23
+  "weight": 23,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

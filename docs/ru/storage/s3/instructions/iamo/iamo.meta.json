@@ -1,0 +1,15 @@
+{
+  "title": "IAM Only",
+  "shortDescription": "Использование и настройка личного кабинета IAM Only",
+  "metaDescription": "Пошаговые действия при работе с личным кабинетом IAM Only для VK Object Storage: вход и управление аккаунтом, настройка проектов.",
+  "sectionTitle": "IAM Only",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

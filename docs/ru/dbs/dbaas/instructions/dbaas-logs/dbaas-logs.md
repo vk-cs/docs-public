@@ -1,32 +1,30 @@
-VK Cloud поддерживает логирование для инстансов БД:
+# {heading(Получение логов БД)[id=dbaas-dbaas-logs]}
 
-- PostgreSQL / PostgresPro;
+{var(cloud)} поддерживает логирование для инстансов БД:
+
+- PostgreSQL;
 - MySQL;
 - Redis;
 - MongoDB;
 - ClickHouse.
 
 {note:warn}
-
 Логи доступны только для инстансов БД, созданных после 1 декабря 2020 года.
-
 {/note}
 
 Чтобы вывести логи БД:
 
-1. [Подключитесь к ВМ](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH под учетной записью `admin`.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь к ВМ]} по SSH под учетной записью `admin`.
 
    {note:info}
-
    При кластерной конфигурации подключитесь к ВМ типа `Master`.
-
    {/note}
 
 1. Выполните команду отображения логов в зависимости от типа СУБД:
 
    {tabs}
 
-   {tab(PostgreSQL / PostgresPro)}
+   {tab(PostgreSQL)}
 
    ```console
    journalctl -u postgresql

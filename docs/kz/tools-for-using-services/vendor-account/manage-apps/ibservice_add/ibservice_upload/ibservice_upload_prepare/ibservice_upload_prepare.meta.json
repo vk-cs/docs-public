@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Дайындық операциялары",
   "sectionTitle": "Дайындық операциялары",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

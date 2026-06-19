@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Audit сервисі ақпараттық қауіпсіздік пен қауіпсіздік оқиғаларын басқару жүйесін (SIEM) VK Cloud платформасымен біріктіруге арналған",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

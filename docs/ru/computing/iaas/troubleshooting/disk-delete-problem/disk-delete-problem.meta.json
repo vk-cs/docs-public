@@ -5,5 +5,12 @@
   "sectionTitle": "Не получается удалить диск",
   "icon": "",
   "weight": 5,
-  "uuid": "ef1e47a2-2487-4d70-82bf-051a1e90bd62"
+  "uuid": "ef1e47a2-2487-4d70-82bf-051a1e90bd62",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

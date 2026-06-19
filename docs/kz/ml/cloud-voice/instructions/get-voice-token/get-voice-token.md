@@ -1,6 +1,8 @@
+# {heading(Қолжетімділік токенін алу)[id=cloud_voice-instructions-get_voice_token]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Токен түрлері
+## {heading(Токен түрлері)[id=cloud_voice-instructions-get_voice_token-types]}
 
 Токен мыналар үшін беріледі:
 
@@ -14,7 +16,7 @@
 
 2. **Сервистік токен** — артықшылығы төмен сценарий. Токен бір рет беріледі және уақыт бойынша шектеусіз жұмыс істей алады. Егер сервистік токен әшкереленсе, қаскүнем сервисті шектеусіз пайдалана алады, бұл үлкен шығындарға әкеледі. Дербес шоттағы қаражат таусылған кезде сервис тоқтатылады.
 
-## OAuth токені
+## {heading(OAuth токені)[id=cloud_voice-instructions-get_voice_token-oauth]}
 
 Токенді генерациялауға арналған сұрау мысалы:
 
@@ -83,7 +85,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 {/note}
 
-## Сервистік токен
+## {heading(Сервистік токен)[id=cloud_voice-instructions-get_voice_token-service]}
 
 Сервистік токенді алу үшін:
 
@@ -95,6 +97,6 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ### Сондай-ақ қараңыз
 
-[Сөйлеуді тану](../speech-recognition)
+{linkto(../speech-recognition#cloud_voice-instructions-speech_recognition)[text=Сөйлеуді тану]}
 
-[Сөйлеуді синтездеу](../text-to-speech)
+{linkto(../text-to-speech#cloud_voice-instructions-text_to_speech)[text=Сөйлеуді синтездеу]}

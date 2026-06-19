@@ -19,9 +19,7 @@
   },
   "security": [
     {
-      "keystone": [
-
-      ]
+      "keystone": []
     }
   ],
   "paths": {
@@ -288,14 +286,14 @@
           "204": {
             "description": "OK"
           },
-          "404": {
-            "description": "Provided plan ID is not found",
+          "400": {
+            "description": "error",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
           },
-          "400": {
-            "description": "error",
+          "404": {
+            "description": "Provided plan ID is not found",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -1190,9 +1188,7 @@
             "description": "OK"
           }
         },
-        "security": [
-
-        ]
+        "security": []
       }
     }
   },

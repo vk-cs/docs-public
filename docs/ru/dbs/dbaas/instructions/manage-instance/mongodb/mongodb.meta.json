@@ -1,9 +1,14 @@
 {
-    "title": "MongoDB",
-      "shortDescription": "",
-      "metaDescription": "Базы данных VK Cloud: управление инстансами MongoDB.",
-    "sectionTitle": "MongoDB",
-    "icon": "",
-    "weight": 2,
-    "uuid": "ff1062d9-2b17-4311-9dde-237a472673a1"
+  "title": "MongoDB",
+  "shortDescription": "",
+  "metaDescription": "Базы данных VK Cloud: управление инстансами MongoDB.",
+  "sectionTitle": "MongoDB",
+  "icon": "",
+  "weight": 2,
+  "uuid": "ff1062d9-2b17-4311-9dde-237a472673a1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

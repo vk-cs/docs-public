@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Тарифтік опцияның YAML-файлы",
   "sectionTitle": "Тарифтік опцияның YAML-файлы",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

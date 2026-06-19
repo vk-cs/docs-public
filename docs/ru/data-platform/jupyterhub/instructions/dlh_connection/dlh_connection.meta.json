@@ -1,0 +1,14 @@
+{
+  "title": "Работа в DLH",
+  "shortDescription": "Как настроить JupyterHub в DLH для работы с Cloud Iceberg Metastore и S3",
+  "metaDescription": "Узнайте, как настроить JupyterHub в DLH для работы с Cloud Iceberg Metastore и S3. Пошаговая инструкция по подключению, настройке и управлению данными с использованием Jupyter-ноутбуков",
+  "sectionTitle": "Работа в DLH",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

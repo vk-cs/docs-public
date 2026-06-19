@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Қызметті баптау)[id=desktops-config]}
 
+{ifdef(public)}
 Cloud Desktop сервисінің компоненттерін баптау.
+{/ifdef}

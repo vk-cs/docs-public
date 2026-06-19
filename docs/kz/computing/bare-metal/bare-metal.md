@@ -1,3 +1,3 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Bare Metal)[id=bare-metal]}
 
 Bare Metal — бұл ресурсты көп қажет ететін міндеттерге арналған бөлінген физикалық серверлер. Виртуализациясыз бөлек оқшауланған шешім.

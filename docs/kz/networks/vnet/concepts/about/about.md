@@ -1,26 +1,33 @@
+# {heading(Сервис туралы)[id=vnet-about]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Сервис таңдалған [жоба](../../../../tools-for-using-services/account/concepts/projects) және [аймақ](../../../../tools-for-using-services/account/concepts/regions) платформы VK Cloud:
+Сервис {ifdef(public)}таңдалған {/ifdef}{linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жоба]} {ifdef(public)}және {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймақ]}
+{/ifdef}{var(cloud)} шеңберінде желілік өзара әрекеттесуді қамтамасыз етеді:
 
 - Желілер мен ішкі желілерді құру. Ішкі желілер интернетте бағдарланбайтын жеке IP-адрестерді пайдаланады.
 
-- VK Cloud сервистерін желілер мен ішкі желілерге қосу.
+- {var(cloud)} сервистерін желілер мен ішкі желілерге қосу.
 
   Желіге жеке сервистің бөліктері де (мысалы, дерекқор кластерінің түйіндері), тұтас сервистер де қосылады (мысалы, дерекқор кластеры виртуалды машинамен өзара әрекеттесе алады).
 
-  Мысалы, құрылған желілер мен ішкі желілердің үстінде [DNS сервисі](../../../dns).
+  Мысалы, құрылған желілер мен ішкі желілердің үстінде {ifdef(public,private,private_pg)}[DNS сервисі](../../../dns){/ifdef}{ifdef(private_pdf,private_pg_pdf,private_cert)}{linkto(../../../../networks/dns#dns)[text=DNS сервисі]}{/ifdef} жұмыс істейді.
 
 - Желілер мен ішкі желілердің үстінде мыналарды баптау мүмкіндігі:
 
-  - [Маршрутизаторлар](../router) ішкі желілерді бір-бірімен байланыстыру үшін.
+  - {linkto(../../../../networks/vnet/concepts/router#vnet-router)[text=Маршрутизаторлар]} ішкі желілерді бір-бірімен байланыстыру үшін.
 
-    Олардың көмегімен тек VK Cloud ішкі желілерін ғана емес, VK Cloud ішкі желілерін қашықтағы алаңдағы ішкі желілермен де байланыстыруға болады.
+    Олардың көмегімен тек {var(cloud)} ішкі желілерін ғана емес, {var(cloud)} ішкі желілерін қашықтағы алаңдағы ішкі желілермен де байланыстыруға болады.
 
-  - [Жүктеме теңгергіштері](/kz/networks/balancing/concepts/load-balancer) VK Cloud сервистерінің бірнеше данасына кіріс трафигін тарату үшін.
-  - [Қауіпсіздік топтары](../traffic-limiting#secgroups) VK Cloud белгілі бір сервистеріне трафикті шектеу ережелерімен.
-  - [VPN](../vpn) VK Cloud ішкі желілерін клиенттік ішкі желілермен байланыстыру үшін.
+  - {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer)[text=Жүктеме теңгергіштері]} {var(cloud)} сервистерінің бірнеше данасына кіріс трафигін тарату үшін.
+{ifndef(private_cert)}
+  - {linkto(../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups)[text=Қауіпсіздік топтары]} {var(cloud)} белгілі бір сервистеріне трафикті шектеу ережелерімен.
+{/ifndef}
+{ifdef(public)}
+  - {linkto(../../../../networks/vnet/concepts/vpn#vnet-vpn)[text=VPN]} {var(cloud)} ішкі желілерін клиенттік ішкі желілермен байланыстыру үшін.
 
-## Әрі қарай не істеу керек
+## {heading(Әрі қарай не істеу керек)[id=vnet-about-next]}
 
-- [Сервистің SDN-імен танысыңыз](../sdn) сервиса.
-- [Желілік адрестеу және интернетке қол жеткізуді ұйымдастыру қағидаларымен танысыңыз](../ips-and-inet).
+- {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=Сервистің SDN-імен танысыңыз]}.
+- {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet)[text=Желілік адрестеу және интернетке қол жеткізуді ұйымдастыру қағидаларымен танысыңыз]}.
+{/ifdef}

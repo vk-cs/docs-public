@@ -4,5 +4,10 @@
   "metaDescription": "Егер 451 Unavailable For Legal Reasons қатесі пайда болса, не істеу керек",
   "sectionTitle": "S3 жүйесіне деректерді жүктеу кезіндегі 451 қатесі",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,9 +1,23 @@
 {
-    "title": "Example integration on Python",
-      "shortDescription": "Recognition of persons by adding a person to the database",
-      "metaDescription": "Let's try to recognize the faces in the photo: Download the Smarty.PY file.Python ExamPles/Python/Smarty.py \\ -u",
-    "sectionTitle": "Example integration on Python",
-    "icon": "",
-    "weight": 0,
-    "uuid": "f13ceab2-fc1b-4026-9ab2-132e123f6bcc"
+  "title": "Example integration on Python",
+  "shortDescription": "Recognition of persons by adding a person to the database",
+  "metaDescription": "Let's try to recognize the faces in the photo: Download the Smarty.PY file.Python ExamPles/Python/Smarty.py \\ -u",
+  "sectionTitle": "Example integration on Python",
+  "icon": "",
+  "weight": 0,
+  "uuid": "f13ceab2-fc1b-4026-9ab2-132e123f6bcc",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

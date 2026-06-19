@@ -1,9 +1,16 @@
 {
   "title": "Бакеты",
-    "shortDescription": "Операции с бакетами в объектном хранилище VK Cloud",
-    "metaDescription": "Инструкции по созданию, управлению и удалению бакетов в VK Object Storage на платформе VK Cloud. Примеры, описание параметров",
+  "shortDescription": "Операции с бакетами в объектном хранилище VK Cloud",
+  "metaDescription": "Инструкции по созданию, управлению и удалению бакетов в VK Object Storage на платформе VK Cloud. Примеры, описание параметров",
   "sectionTitle": "Бакеты",
   "icon": "",
   "weight": 2,
-  "uuid": "43b445f0-aea9-4af0-a502-7e73d32a4270"
+  "uuid": "43b445f0-aea9-4af0-a502-7e73d32a4270",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

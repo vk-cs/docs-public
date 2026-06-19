@@ -4,5 +4,10 @@
   "metaDescription": "Жаңа JupyterHub инстансын қалай жасауға болады",
   "sectionTitle": "JupyterHub инстансын жасау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

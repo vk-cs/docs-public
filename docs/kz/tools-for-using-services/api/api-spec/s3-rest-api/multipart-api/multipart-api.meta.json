@@ -1,8 +1,14 @@
 {
   "title": "Multipart",
-  "shortDescription": "",
-  "metaDescription": "Құрамдас жүктеу объектілерді VK Object Storage жүйесінде бөліктер бойынша сақтауға мүмкіндік береді. Бұл үлкен объектілерді жүктеу немесе көшіру кезінде пайдалы болуы мүмкін",
+  "shortDescription": "Құрамдас жүктеу арқылы үлкен көлемді файлдарды бөліктермен жүктеу",
+  "metaDescription": "VK Object Storage жүйесінде объектілерді құрамдас жүктеуге арналған барлық қолжетімді әдістер: жүктеуді инициализациялау (CreateMultipartUpload), объект бөліктерін жүктеу (UploadPart), жүктеуді аяқтау (CompleteMultipartUpload), жүктеуді үзу (AbortMultipartUpload), жүктелген бөліктер тізімін алу (ListParts)",
   "sectionTitle": "Multipart",
   "icon": "",
-  "weight": 5
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

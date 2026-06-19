@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-та логтау",
+  "shortDescription": "Standalone-та сервис данасының логтарын қалай қарауға болады",
+  "metaDescription": "VK Data Platform-тың Standalone нұсқасында өрістетілген Cloud ClickHouse сервис данасының жұмыс логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Standalone-та логтау",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

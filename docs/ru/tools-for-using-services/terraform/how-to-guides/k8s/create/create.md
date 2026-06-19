@@ -1,21 +1,22 @@
+# {heading(Создание кластера Kubernetes)[id=terraform-k8s-create]}
+
 Далее приведены примеры создания разных кластеров Kubernetes с помощью Terraform.
 Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/kubernetes/k8s/instructions/create-cluster/create-terraform).
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Перед созданием кластера
+## {heading(Перед созданием кластера)[id=terraform-k8s-create-prepare]}
 
-1. Проверьте [квоты](/ru/tools-for-using-services/account/concepts/quotasandlimits). Убедитесь, что в выбранном [регионе](/ru/tools-for-using-services/account/concepts/regions) достаточно ресурсов для создания кластера. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
 
-   При необходимости [увеличьте](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) квоты.
+   При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/instructions/helpers/terraform-howto) в сервисе Cloud Containers.
-
-1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+1. Ознакомьтесь с {linkto(../../../../../kubernetes/k8s/instructions/helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Cloud Containers.
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-## 1. Создайте файл с описанием сетевой инфраструктуры для кластера
+## {heading({counter(tf-k8s)}. Создайте файл с описанием сетевой инфраструктуры для кластера)[id=terraform-k8s-create-net-file]}
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для кластера:
 
@@ -48,13 +49,12 @@ resource "vkcs_networking_router_interface" "k8s" {
 }
 ```
 
-## 2. Создайте файл с описанием кластера Kubernetes
+## {heading({counter(tf-k8s)}. Создайте файл с описанием кластера Kubernetes)[id=terraform-k8s-create-cluster-file]}
 
 В примерах ниже кластеры создаются в следующей конфигурации:
 
 - Регион `Москва`, зона доступности `GZ1`.
 - Версия Kubernetes `1.31`.
-
 - Один master-узел `STD3-4-8`.
 - Два worker-узла `STD2-2-4`:
 
@@ -218,7 +218,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {tab(С установкой Docker Registry)}
 
-За установку [сервиса](/ru/kubernetes/k8s/concepts/addons-and-settings/addons) отвечает настройка `labels = { docker_registry_enabled }` ресурса `vkcs_kubernetes_cluster`.
+За установку {linkto(../../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons)[text=сервиса]} отвечает настройка `labels = { docker_registry_enabled }` ресурса `vkcs_kubernetes_cluster`.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -293,7 +293,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {/tabs}
 
-## 3. Создайте необходимые ресурсы с помощью Terraform
+## {heading({counter(tf-k8s)}. Создайте необходимые ресурсы с помощью Terraform)[id=terraform-k8s-create-resource]}
 
 1. Поместите файлы конфигурации Terraform `provider.tf`, `network.tf` и `main.tf` в одну директорию.
 1. Перейдите в эту директорию.
@@ -313,7 +313,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 1. Дождитесь завершения операции.
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=terraform-k8s-create-delete]}
 
 Если созданные с помощью Terraform ресурсы больше не нужны, удалите их:
 

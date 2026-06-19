@@ -1,9 +1,23 @@
 {
-    "title": "Kiali",
-      "shortDescription": "",
-      "metaDescription": "VK Cloud containers service: configuring and installing the Kiali add-on.",
-    "sectionTitle": "Kiali",
-    "icon": "",
-    "weight": 11,
-    "uuid": "ba0e9837-0664-4382-aa74-de8184aec77d"
+  "title": "Kiali",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud containers service: configuring and installing the Kiali add-on.",
+  "sectionTitle": "Kiali",
+  "icon": "",
+  "weight": 12,
+  "uuid": "ba0e9837-0664-4382-aa74-de8184aec77d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

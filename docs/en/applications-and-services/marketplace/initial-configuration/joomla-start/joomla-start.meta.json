@@ -5,5 +5,10 @@
   "sectionTitle": "Joomla deployment",
   "icon": "",
   "weight": 10,
-  "uuid": "6acde0fd-d1b7-49bb-81f4-fdf6187c169d"
+  "uuid": "6acde0fd-d1b7-49bb-81f4-fdf6187c169d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

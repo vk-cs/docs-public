@@ -4,5 +4,12 @@
   "metaDescription": "Егер виртуалды машина дискісі read-only күйіне өтсе, не істеу керек",
   "sectionTitle": "Диск read-only күйіне өтеді",
   "icon": "",
-  "weight": 23
+  "weight": 23,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

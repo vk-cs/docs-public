@@ -1,17 +1,18 @@
+# {heading(Docker-ге қосылу мүмкін емес)[id=k8s-docker-connect-problem]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Docker тізіліміне қосылған кезде `x509: certificate signed by unknown authority` қатесі пайда болады.
 
-Мәселе [Docker тізіліміне қосылу](/kz/kubernetes/k8s/connect/docker-registry) үшін пайдаланылатын цифрлық сертификаттың түпнұсқалығын тексеру мүмкін болмаған жағдайда туындайды. Мысалы, әдепкі бойынша қосылу үшін жүйе жасаған өздігінен қол қойылған сертификат пайдаланылады.
-
+Мәселе {linkto(../../connect/docker-registry#k8s-docker-registry)[text=Docker тізіліміне қосылу]} үшін пайдаланылатын цифрлық сертификаттың түпнұсқалығын тексеру мүмкін болмаған жағдайда туындайды. Мысалы, әдепкі бойынша қосылу үшін жүйе жасаған өздігінен қол қойылған сертификат пайдаланылады.
 
 {note:info}
 
-[Кластерді жасау](/kz/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) кезінде контейнер бейнелерін цифрлық сертификаттың түпнұсқалығын тексермей жүктеп алуғал және іске қосуғал болатын сенімді Docker тізілімдерінің мекенжайларын қоса аласыз.
+{linkto(/kz/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Кластерді жасау]} кезінде контейнер бейнелерін цифрлық сертификаттың түпнұсқалығын тексермей жүктеп алуға және іске қосуға болатын сенімді Docker тізілімдерінің мекенжайларын қоса аласыз.
 
 {/note}
 
-### Шешім
+### {heading(Шешім)[id=k8s-docker-connect-problem-solution]}
 
 1. Docker конфигурациясының `daemon.json` файлына Docker тізілімінің endpoint мекенжайы бар `insecure-registries` параметрін қосыңыз.
 
@@ -28,6 +29,6 @@ Docker тізіліміне қосылған кезде `x509: certificate signe
      ...
    }
    ```
-       
+
 1. Docker Engine жүйесін қайта жүктеңіз.
 1. Егер мәселе сақталса, [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз.

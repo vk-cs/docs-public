@@ -1,6 +1,8 @@
-Вы можете управлять ресурсами кластера Kubernetes в сервисе Cloud Containers через веб-интерфейс личного кабинета VK Cloud. Эта функциональность выступает альтернативой для выполнения тех же действий через `kubectl` и Kubernetes Dashboard. Примеры команд для создания, изменения и удаления ресурса через `kubectl` доступны в личном кабинете.
+# {heading(Управление ресурсами кластера в личном кабинете)[id=k8s-manage-resources]}
 
-## {heading(Просмотр информации о ресурсах)[id=view-resources]}
+Вы можете управлять ресурсами кластера Kubernetes в сервисе Cloud Containers через веб-интерфейс личного кабинета {var(cloud)}. Эта функциональность выступает альтернативой для выполнения тех же действий через `kubectl` и Kubernetes Dashboard. Примеры команд для создания, изменения и удаления ресурса через `kubectl` доступны в личном кабинете.
+
+## {heading(Просмотр информации о ресурсах)[id=k8s-manage-resources-view-resources]}
 
 {include(/ru/_includes/_open-cluster.md)}
 
@@ -8,7 +10,7 @@
 
 {include(/ru/_includes/_cluster-resources.md)}
 
-## {heading(Создание ресурса)[id=create-resources]}
+## {heading(Создание ресурса)[id=k8s-manage-resources-create-resources]}
 
 {include(/ru/_includes/_open-cluster.md)}
 
@@ -18,7 +20,7 @@
    
 Добавленный ресурс распознается автоматически и будет доступен в списке ресурсов в соответствующей категории. Например, если вы добавили манифест для PV, он будет доступен в категории **Хранилище** в блоке **Persistent Volumes**.
 
-## {heading(Скачивание манифеста ресурса)[id=download-yaml]}
+## {heading(Скачивание манифеста ресурса)[id=k8s-manage-resources-download-yaml]}
 
 {include(/ru/_includes/_open-cluster.md)}
 
@@ -26,9 +28,9 @@
 
 {include(/ru/_includes/_cluster-resources.md)}
 
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Скачать yaml**. Будет скачан YAML-файл манифеста ресурса.
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Скачать yaml**. Будет скачан YAML-файл манифеста ресурса.
 
-## {heading(Редактирование информации о ресурсе)[id=edit-resources]}
+## {heading(Редактирование информации о ресурсе)[id=k8s-manage-resources-edit-resources]}
 
 {note:warn}
 Изменение информации о ресурсах может привести к проблемам в работе кластера.
@@ -40,10 +42,10 @@
 
 {include(/ru/_includes/_cluster-resources.md)}
 
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Изменить**.
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Изменить**.
 1. В открывшемся окне внесите изменения в манифест ресурса и сохраните их.
 
-## {heading(Удаление ресурса)[id=delete-resources]}
+## {heading(Удаление ресурса)[id=k8s-manage-resources-delete-resources]}
 
 {note:warn}
 Удаление ресурса может привести к проблемам в работе кластера.
@@ -55,5 +57,5 @@
 
 {include(/ru/_includes/_cluster-resources.md)}
 
-1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Удалить**.
-1. Подтвердите удаление. 
+1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного ресурса и выберите пункт **Удалить**.
+1. Подтвердите удаление.

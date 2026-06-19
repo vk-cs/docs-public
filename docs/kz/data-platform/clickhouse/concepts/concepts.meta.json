@@ -3,5 +3,12 @@
   "shortDescription": "Cloud ClickHouse сервисінің негізгі тұжырымдамалары мен сипаттамалары",
   "metaDescription": "VK Data Platform жүйесіндегі Cloud ClickHouse сервисінің негізгі тұжырымдамалары мен сипаттамалары туралы біліңіз",
   "sectionTitle": "Тұжырымдамалар",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

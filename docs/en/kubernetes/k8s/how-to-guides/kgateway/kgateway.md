@@ -1,4 +1,4 @@
-Use the [Kgateway](/en/kubernetes/k8s/concepts/addons-and-settings/addons#kgateway) add-on to configure traffic routing in a Kubernetes cluster via the [Gateway API](https://gateway-api.sigs.k8s.io/) and send requests to the test application.
+Use the [Kgateway](../../concepts/addons-and-settings/addons#kgateway) addon to configure traffic routing in a Kubernetes cluster via the [Gateway API](https://gateway-api.sigs.k8s.io/) and send requests to the test application.
 
 {note:info}
 Kgateway is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
@@ -8,8 +8,8 @@ Kgateway is only available for [second-generation](/en/kubernetes/k8s/concepts/c
 
 1. [Create](../../instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster of the latest version, if not done so already.
 1. [Install and configure](/en/kubernetes/k8s/connect/kubectl#before_you_start) `kubectl`, if not done so already.
-1. [Connect](/en/kubernetes/k8s/connect/kubectl#check_connection) to the cluster via `kubectl`.
-1. [Install the Kgateway add-on](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-kgateway), if not done so already.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Install the Kgateway add-on](../../instructions/addons/advanced-installation/install-advanced-kgateway), if not done so already.
 
 ## {counter(kgateway)}. Create a test application
    
@@ -166,7 +166,7 @@ As a result of applying the manifest, HTTP requests will be sent to the `httpbin
 
 ## Delete unused resources
 
-A running cluster consumes computing resources and is charged accordingly. If you no longer need the Kubernetes resources you created to test the Kgateway add-on, delete them: 
+{include(/en/_includes/_remove-k8s-resources.md)} the Kgateway add-on, delete them: 
 
 1. Delete the `httpbin` namespace and the resources associated with it, including the load balancer and Floating IP address:
 
@@ -174,4 +174,4 @@ A running cluster consumes computing resources and is charged accordingly. If yo
    kubectl delete namespace httpbin
    ```
 
-1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#start_or_stop_cluster) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#delete_cluster) it permanently.
+{include(/en/_includes/_delete-test-cluster-short.md)}

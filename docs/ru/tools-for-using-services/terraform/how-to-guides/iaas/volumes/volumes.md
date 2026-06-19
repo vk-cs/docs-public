@@ -1,12 +1,12 @@
+# {heading(Управление дисками и их снимками)[id=terraform-volumes]}
+
 {note:warn}
-
-Убедитесь, что вы [установили и сконфигурировали Terraform](../../../quick-start).
-
+Убедитесь, что вы {linkto(../../../quick-start#terraform-quick-start)[text=установили и сконфигурировали Terraform]}.
 {/note}
 
 Полное описание параметров — в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Создание тома диска
+## {heading(Создание тома диска)[id=terraform-volumes-create]}
 
 Чтобы создать том, создайте файл `volume.tf`, где будет описана конфигурация создаваемого тома. Добавьте текст из примера ниже и исправьте значения настроек для вашего тома. В данном примере описывается создание тома диска размером 1 ГБ типа `ceph-ssd` в зоне доступности `GZ1`.
 
@@ -34,7 +34,7 @@ resource "vkcs_blockstorage_volume" "volume" {
 - `availability_zone`: (обязателен) название зоны доступности ЦОД, хранящих том.
 - `volume_type`: (обязателен) тип тома.
 
-### Применение изменений
+### {heading(Применение изменений)[id=terraform-volumes-apply]}
 
 Добавьте текст примера в файл `volume.tf` и выполните следующие команды:
 
@@ -45,7 +45,7 @@ terraform init
 terraform apply
 ```
 
-## Создание снимка состояния (snapshot)
+## {heading(Создание снимка состояния (snapshot))[id=terraform-volumes-snapshot-create]}
 
 Чтобы создать снимок состояния тома диска, создайте файл `snapshot.tf`, где будет описана конфигурация создаваемого снимка. Добавьте текст из примера ниже и исправьте значения настроек для вашей инфраструктуры. В данном примере описывается создание снимка состояния тома диска с ID ресурса `vkcs_blockstorage_volume.volume.id`.
 
@@ -69,7 +69,7 @@ resource "vkcs_blockstorage_snapshot" "snapshot" {
 - `description`: описание снимка состояния.
 - `metadata`: карта значений ключей для метаданных тома.
 
-### Применение изменений
+### {heading(Применение изменений)[id=terraform-volumes-snapshot-apply]}
 
 Добавьте текст примера в файл `snapshot.tf` и выполните следующие команды:
 

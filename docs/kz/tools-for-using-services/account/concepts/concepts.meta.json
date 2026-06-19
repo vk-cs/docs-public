@@ -1,8 +1,18 @@
 {
   "title": "Тұжырымдамалар",
-  "shortDescription": "VK Cloud платформасымен жұмыс істеу тұжырымдамалары",
+  "shortDescription": "{var(cloud)} платформасымен жұмыс істеу тұжырымдамалары",
   "metaDescription": "VK Cloud платформасымен жұмыс істеу тұжырымдамалары",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

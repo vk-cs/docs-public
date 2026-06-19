@@ -1,1 +1,3 @@
-Работа с [сервисом виртуальных сетей](/ru/networks/vnet) с использованием Terraform.
+# {heading(Виртуальные сети)[id=terraform-vnet]}
+
+Работа с {linkto(../../../../networks/vnet#vnet)[text=сервисом виртуальных сетей]} с использованием Terraform.

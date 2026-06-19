@@ -1,9 +1,14 @@
 {
   "title": "Спецификация API",
-  "shortDescription": "Спецификации публичных API платформы VK Cloud",
+  "shortDescription": "Спецификации публичных API платформы {var(cloud)}",
   "metaDescription": "Как работать с сервисами VK Cloud с помощью методов API. Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud",
   "sectionTitle": "Спецификация API",
   "icon": "",
   "weight": 2,
-  "uuid": "02837930-87d9-4b85-a81e-cc8dfc2fe013"
+  "uuid": "02837930-87d9-4b85-a81e-cc8dfc2fe013",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "shortDescription": "Инфрақұрылымға арналған нақтылау баптаулары",
   "metaDescription": "Образдардың метатегтері",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

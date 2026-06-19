@@ -1,0 +1,18 @@
+{
+  "title": "Управление аккаунтом {var(cloud)}",
+  "shortDescription": "Операции по управлению аккаунтом {var(cloud)}: просмотр и изменение данных профиля, ключевые пары SSH  и доступ к API",
+  "metaDescription": "Операции по управлению аккаунтом VK Private Cloud: просмотр и изменение данных профиля, ключевые пары SSH  и доступ к API.",
+  "sectionTitle": "Управление аккаунтом {var(cloud)}",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

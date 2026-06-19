@@ -5,5 +5,10 @@
   "sectionTitle": "Connecting to VK Object Storage without Internet",
   "icon": "",
   "weight": 4,
-  "uuid": "ca6534a2-5609-4d15-9a2b-618b193cdbc1"
+  "uuid": "ca6534a2-5609-4d15-9a2b-618b193cdbc1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

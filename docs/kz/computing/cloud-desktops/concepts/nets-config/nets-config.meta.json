@@ -4,5 +4,14 @@
   "metaDescription": "Сервиске арналған желілік конфигурация және желілерді баптау нұсқалары.",
   "sectionTitle": "Сервистің желілік конфигурациясы",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

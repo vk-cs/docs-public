@@ -4,5 +4,10 @@
   "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыруға және VK Cloud-пен жұмыс істеуге арналған өз құралдарыңызды әзірлеуге арналған жария API спецификациялары. Cloud Backup сервисінің OpenAPI спецификациясы",
   "sectionTitle": "Cloud Backup",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

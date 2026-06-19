@@ -1,26 +1,27 @@
+# {heading(Файлдық қойманы қосу және ажырату)[id=iaas-fs-connect]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Файлдық қоймаларды қосу және ажырату, деректерді жазу және оқу тек VK Cloud виртуалды машиналарында қолжетімді.
+Файлдық қоймаларды қосу және ажырату, деректерді жазу және оқу тек {var(cloud)} виртуалды машиналарында қолжетімді.
 
-## {heading(Файлдық қойманы қосу)[id=mount_file_storage]}
+## {heading(Файлдық қойманы қосу)[id=iaas-fs-connect-mount]}
 
-Файлдық қойманы қосу тәсілі виртуалды машинаның операциялық жүйесіне, [Windows](#mount_fs_windows) немесе [Linux](#mount_fs_linux), сондай-ақ қойманы жасау кезінде таңдалған протоколға байланысты.
+Файлдық қойманы қосу тәсілі виртуалды машинаның операциялық жүйесіне, [Windows](#mount-fs-windows) немесе [Linux](#iaas-fs-connect-mount-linux), сондай-ақ қойманы жасау кезінде таңдалған протоколға байланысты.
 
-### {heading(Windows)[id=mount_fs_windows]}
+### {heading(Windows)[id=iaas-fs-connect-mount-windows]}
 
 {tabs}
 
-{tab(NFS хаттамасы)}
+{tab(NFS протоколы)}
 
-Windows жүйесінде файлдық қойманы NFS хаттамасы арқылы Windows Server компоненті — NFS үшін клиент көмегімен қосуға болады.
+Windows жүйесінде файлдық қойманы NFS протоколы арқылы Windows Server компоненті — NFS үшін клиент көмегімен қосуға болады.
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
 1. NFS үшін клиентті Сервер диспетчері интерфейсінен немесе PowerShell көмегімен орнатыңыз:
 
-    {tabs}
+   {tabs}
     
-    {tab(Сервер диспетчері)}
+   {tab(Сервер диспетчері)}
         
    1. Сервер диспетчерін ашып, **Басқару** мәзірінен **Рөлдер мен компоненттерді қосу** тармағын таңдаңыз.
    1. **Орнату түрі** бөліміне өтіп, **Рөлдер мен компоненттерді орнату** опциясын таңдап, **Келесі** батырмасын басыңыз.
@@ -29,21 +30,21 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
    1. Барлық қажетті компоненттердің таңдалғанын тексеріп, **Орнату** батырмасын басыңыз.
    1. Орнатудың аяқталуын күтіп, серверді қайта жүктеңіз.
 
-    {/tab}
+   {/tab}
     
-    {tab(PowerShell)}
+   {tab(PowerShell)}
     
    1. NFS үшін клиентті және NFS басқару құралдарына арналған қызметтерді орнатыңыз:
 
-       ```console
-       Install-WindowsFeature NFS-Client, RSAT-NFS-Admin
-       ```
+      ```console
+      Install-WindowsFeature NFS-Client, RSAT-NFS-Admin
+      ```
 
    1. Орнатудың аяқталуын күтіп, серверді қайта жүктеңіз.
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
 1. Клиент баптауларын Сервер диспетчері арқылы өзгертіңіз:
 
@@ -53,21 +54,20 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
 
 1. Файлдық қойманы қосыңыз:
 
-    ```console
-    mount <ТОЧКА_ПОДКЛЮЧЕНИЯ> <БУКВА_ДИСКА>:
-    ```
+   ```console
+   mount <ТОЧКА_ПОДКЛЮЧЕНИЯ> <БУКВА_ДИСКА>:
+   ```
 
    Мұнда:
 
-   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#fayldyk_saktau_orny_turaly_akparatty_karau).
+   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#iaas-fs-operations-info-view).
    - `<БУКВА_ДИСКА>` — басқа дискілер қолданбайтын бас латын әрпі.
 
 {/tab}
 
-{tab(CIFS хаттамасы)}
+{tab(CIFS протоколы)}
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
 1. Файлдық қойманы қосыңыз:
 
    ```console
@@ -76,22 +76,21 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
    
    Мұнда:
    
-   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#fayldyk_saktau_orny_turaly_akparatty_karau).
+   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#iaas-fs-operations-info-view).
    - `<БУКВА_ДИСКА>` — басқа дискілер қолданбайтын бас латын әрпі.
 
 {/tab}
 
 {/tabs}
 
-### {heading(Linux)[id=mount_fs_linux]}
+### {heading(Linux)[id=iaas-fs-connect-mount-linux]}
 
 {tabs}
 
-{tab(NFS хаттамасы)}
+{tab(NFS протоколы)}
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-
-1. NFS хаттамасымен жұмыс істеуге арналған пакетті орнатыңыз:
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+1. NFS протоколымен жұмыс істеуге арналған пакетті орнатыңыз:
 
    {tabs}
    {tab(apt)}
@@ -122,16 +121,15 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
 
    Мұнда:
 
-   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#fayldyk_saktau_orny_turaly_akparatty_karau).
+   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#iaas-fs-operations-info-view).
    - `<ИМЯ_ДИРЕКТОРИИ>` — бұрын жасалған директорияның атауы.
 
 {/tab}
 
-{tab(CIFS хаттамасы)}
+{tab(CIFS протоколы)}
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-
-1. CIFS хаттамасымен жұмыс істеуге арналған пакетті орнатыңыз:
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+1. CIFS протоколымен жұмыс істеуге арналған пакетті орнатыңыз:
 
    {tabs}
    {tab(apt)}
@@ -150,27 +148,26 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
 
 1. Қойманы монтаждауға арналған директорияны жасаңыз:
 
-    ```console
-    mkdir <ИМЯ_ДИРЕКТОРИИ>
-    ```
+   ```console
+   mkdir <ИМЯ_ДИРЕКТОРИИ>
+   ```
 
 1. Файлдық қойманы қосыңыз:
 
-    ```console
-    sudo mount -o user=,password= -t cifs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
-    ```
+   ```console
+   sudo mount -o user=,password= -t cifs <ТОЧКА_ПОДКЛЮЧЕНИЯ> ./<ИМЯ_ДИРЕКТОРИИ>
+   ```
 
    Мұнда:
 
-   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#fayldyk_saktau_orny_turaly_akparatty_karau).
+   - `<ТОЧКА_ПОДКЛЮЧЕНИЯ>` — файлдық қойманың мекенжайы. Оны білу үшін файлдық қойма туралы ақпаратты [қараңыз](../fs-operations#iaas-fs-operations-info-view).
    - `<ИМЯ_ДИРЕКТОРИИ>` — бұрын жасалған директорияның атауы.
 
 {/tab}
 
 {/tabs}
 
-
-## {heading(Файлдық қойманы ажырату)[id=unmount_file_storage]}
+## {heading(Файлдық қойманы ажырату)[id=iaas-fs-connect-unmount]}
 
 Файлдық қойманы ажырату тәсілі виртуалды машинаның операциялық жүйесіне және қойманы жасау кезінде таңдалған протоколға байланысты.
 
@@ -178,20 +175,19 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
 
 {tab(Windows)}
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
 1. Файлдық қойманы мына команданы орындап ажыратыңыз:
 
    {tabs}
    
-   {tab(NFS хаттамасы)}
+   {tab(NFS протоколы)}
    
    ```console
    umount <БУКВА_ДИСКА>:
    ```
    
    {/tab}
-   {tab(CIFS хаттамасы)}
+   {tab(CIFS протоколы)}
    
    ```console
    net use <БУКВА_ДИСКА>: /delete
@@ -205,17 +201,16 @@ Windows жүйесінде файлдық қойманы NFS хаттамасы 
 
 {tab(Linux)}
 
-1. VK Cloud виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
+1. {var(cloud)} виртуалды машинасына [қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 1. Файлдық қойманы мына команданы орындап ажыратыңыз:
 
    {tabs}
    
    {tab(NFS/CIFS протоколдары)}
    
-      ```console
-      sudo umount <ТОЧКА_МОНТИРОВАНИЯ>
-      ```
+   ```console
+   sudo umount <ТОЧКА_МОНТИРОВАНИЯ>
+   ```
    Мұнда `<ТОЧКА_МОНТИРОВАНИЯ>` — файлдық қойма монтаждалған директория.
    {/tab}
    

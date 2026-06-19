@@ -1,9 +1,16 @@
 {
   "title": "Кросс-доменные запросы (CORS)",
   "shortDescription": "Управление кросс-доменными запросами к бакетам и объектам",
-  "metaDescription": "Управление кросс-доменными запросами к бакетам и объектам в VK Object Storage на платформе VK Cloud, параметры правил CORS, особенности выполнения CORS-запросов, preflight request.",
+  "metaDescription": "CORS VK Object Storage: что такое кросс‑доменные правила для браузерных запросов к бакету, как их задавать (через личный кабинет, S3 API/SDK или AWS CLI), какие параметры включает конфигурация (AllowedOrigins/Methods/Headers, ExposeHeaders, MaxAgeSeconds и др.) и как CORS работает на практике",
   "sectionTitle": "Кросс-доменные запросы (CORS)",
   "icon": "",
   "weight": 3,
-  "uuid": "38405507-7eaa-469d-a064-c74d471cb74b"
+  "uuid": "38405507-7eaa-469d-a064-c74d471cb74b",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

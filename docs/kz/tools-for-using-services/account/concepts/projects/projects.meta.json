@@ -1,8 +1,17 @@
 {
   "title": "Жобалар",
-  "shortDescription": "VK Cloud ішіндегі жоба деген не",
+  "shortDescription": "{var(cloud)} ішіндегі жоба деген не",
   "metaDescription": "VK Cloud ішіндегі жоба деген не.",
   "sectionTitle": "Жобалар",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

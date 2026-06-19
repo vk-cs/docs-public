@@ -1,13 +1,15 @@
+# {heading(Шектеулер)[id=vision-concepts-vision-limits]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Общие ограничения
+## {heading(Жалпы шектеулер)[id=vision-concepts-vision-limits-common]}
 
 Сервис әр аккаунт үшін мыналарды қолдайды:
 
 - Айына 100 000 000-нан астам транзакция.
 - 1 неймспейске дейін 75 000 тұлғадан тұратын база.
 
-## Обработка изображений
+## {heading(Кескіндерді өңдеу)[id=vision-concepts-vision-limits-images]}
 
 - Бір сұраудағы кескіндердің ең көп саны: 100.
 - Әр кескіннің ең үлкен өлшемі 15 МБ-тан аспауы керек.

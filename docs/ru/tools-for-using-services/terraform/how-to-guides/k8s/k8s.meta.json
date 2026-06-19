@@ -5,5 +5,10 @@
   "sectionTitle": "Cloud Containers",
   "icon": "",
   "weight": 60,
-  "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771"
+  "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

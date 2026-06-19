@@ -1,0 +1,14 @@
+{
+  "title": "Создание кластера Spark",
+  "shortDescription": "Как создать кластер Spark с помощью Terraform",
+  "metaDescription": "Узнайте, как создать кластер Cloud Spark в Data Platform с помощью Terraform и ресурсов VK Cloud. Пошаговая инструкция с примерами конфигурации",
+  "sectionTitle": "Создание кластера Spark",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

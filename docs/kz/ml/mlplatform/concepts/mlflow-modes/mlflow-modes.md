@@ -1,3 +1,5 @@
+# {heading(MLflow режимдері)[id=mlplatform-modes]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 MLflow-пен жұмыс істеу үшін сервисте жұмыс істеуге арналған алдын ала орнатылған баптаулары бар клиенттік сервер құрылады.
@@ -7,13 +9,13 @@ MLflow инстансы екі режимде жұмыс істей алады:
 - JupyterHub-пен бірге;
 - бөлек, Standalone режимінде.
 
-## {heading(JupyterHub-пен байланыс)[id=with_jh]}
+## {heading(JupyterHub-пен байланыс)[id=mlplatform-with_jh]}
 
 Бұл режимде MLflow клиенттік серверін байланыс үшін жасау кезінде бұрыннан жасалған JupyterHub сервері таңдалады. Бір JupyterHub инстансымен тек бір MLflow инстансын байланыстыруға болады.
 
 Егер MLflow JupyterHub инстансымен байланыста жұмыс істесе, онда [пайдаланушыларды жасау](../../jupyterhub/instructions) және аутентификация JupyterHub арқылы орындалады.
 
-## {heading(Standalone режимі)[id=standalone]}
+## {heading(Standalone режимі)[id=mlplatform-standalone]}
 
 MLflow Standalone — JupyterHub-қа байланыстырылмаған, оған MLflow орнатылған және базалық аутентификациясы бар жеке инстанс.
 
@@ -27,7 +29,7 @@ Standalone режимінің ерекшеліктері:
 
 Standalone режимінде инстанс әкімшісі [инстансты жасау](../../mlflow/instructions/create) кезінде қосылады, басқа пайдаланушыларға қол жеткізу үшін токендер пайдаланылады.
 
-## Standalone режимінде модельді орналастыру
+## {heading(Standalone режимінде модельді орналастыру)[id=mlplatform-standalone-deploying]}
 
 Клиенттік кітапхана орналастыру серверін жасау үшін, сондай-ақ модельдің өзін орналастыру үшін MLflow орта айнымалыларын пайдаланады. Орта айнымалыларында аутентификацияға арналған `mlflow uri`, `mlflow username`, `mlflow password` бар.
 

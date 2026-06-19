@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "SaaS-қосымшасына арналған брокер",
   "sectionTitle": "SaaS-қосымшасына арналған брокер",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

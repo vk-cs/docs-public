@@ -1,16 +1,18 @@
+# {heading(Добавление статических DNS-записей)[id=k8s-coredns]}
+
 Чтобы доменное имя постоянно разрешалось в заданный IP-адрес, необходимо добавить статическую DNS-запись в DNS-сервис кластера.
 
 В статье показан пример, как добавить домен и IP-адрес в DNS-сервис кластера, используя ресурс [СoreDNS](https://coredns.io/manual/toc/). 
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-coredns-prepare]}
 
-1. [Создайте](../../../instructions/create-cluster) кластер Kubernetes самой актуальной версии.
+{include(/ru/_includes/_create-test-cluster.md)}
 
    Параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
-## 1. Добавьте адрес хоста в ConfigMap ресурса CoreDNS
+## {heading(1. Добавьте адрес хоста в ConfigMap ресурса CoreDNS)[id=k8s-coredns-add-address]}
 
 1. Выполните команду:
 
@@ -52,7 +54,7 @@
 
    CoreDNS перезагрузит конфигурацию автоматически в течение 1-2 минут. Дождитесь применения изменений.
 
-## 2. Проверьте применение конфигурации
+## {heading(2. Проверьте применение конфигурации)[id=k8s-coredns-config-check]}
 
 1. Создайте временный под:
 
@@ -86,9 +88,8 @@
       kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
       ```
 
-## Удалите неиспользуемые ресурсы
+{ifdef(public)}
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-coredns-delete]}
 
-Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
-
-   - [остановите](../../../instructions/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster.md)}
+{/ifdef}

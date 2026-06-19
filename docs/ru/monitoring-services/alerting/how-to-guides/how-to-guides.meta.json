@@ -5,5 +5,12 @@
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,
-  "uuid": "37f235e5-9304-4068-a73e-a185cbbd56a5"
+  "uuid": "37f235e5-9304-4068-a73e-a185cbbd56a5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

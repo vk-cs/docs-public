@@ -2,9 +2,9 @@ You can create a CDN resource in two ways:
 
 - [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/origin-groups) or configure SSL certificates manually.
 
-- [Through the bucket interface](#creating_resource_via_bucket_interface) in the VK Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
+- [Through the bucket interface](#cdn-create-resource-bucket-ui) in the VK Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
 
-## Creating resource via CDN interface
+## {heading(Creating resource via CDN interface)[id=cdn-create-resource-cdn-ui]}
 
 {tabs}
 {tab(Management console)}
@@ -109,7 +109,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 {/tab}
 {/tabs}
 
-## Creating resource via bucket interface
+## {heading(Creating resource via bucket interface)[id=cdn-create-resource-bucket-ui]}
 
 {tabs}
 {tab(Management console)}
@@ -152,7 +152,7 @@ The creation of the origin group and CDN resource will start for the bucket. The
 {/tab}
 {/tabs}
 
-## Preparing the CDN resource for operation
+## {heading(Preparing the CDN resource for operation)[id=cdn-create-resource-prepare]}
 
 1. Create a CNAME record for the CDN resource. This will change the URL address. For example, if you are using a CDN resource to serve images for your website, create a CNAME record like `images.example.com` that points to a CDN resource like `cl-541e19d9.service.cdn.msk.vkcs.cloud`.
 

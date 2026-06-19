@@ -12,9 +12,9 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
-1. Go to **Cloud Networks → Networks**.
+1. Go to **Virtual networks** → **Networks**.
 
    A list of networks will be displayed.
 
@@ -72,9 +72,9 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the IP is located.
-1. Go to **Cloud Networks → Networks**.
+1. Go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
 1. Set the network name.
 1. Select SDN: `Sprut` (default) or `Neutron`. The choice is available for projects where both SDN types are enabled.
@@ -123,13 +123,13 @@ Once a network is created, it will appear in the list of networks.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
-1. Go to **Cloud Networks → Networks**.
-2. Click on the name of the cloud network.
-3. Go to **Network settings**.
-4. Make any changes you want.
-5. Click the **Save changes** button.
+1. Go to **Virtual networks** → **Networks**.
+1. Click on the name of the cloud network.
+1. Go to **Network settings**.
+1. Make any changes you want.
+1. Click the **Save changes** button.
 
 {/tab}
 
@@ -215,9 +215,9 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
-1. Go to **Cloud Networks → Networks**.
+1. Go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network.
 3. Click the **Add subnet** button.
 4. Specify the name of the subnet.
@@ -284,10 +284,10 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
-1. Go to **Cloud Networks → Networks**.
-2. Click on the name of the cloud network where the subnet is located.
+1. Go to **Virtual networks** → **Networks**.
+1. Click on the name of the cloud network where the subnet is located.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to change and select **Edit subnet**.
 4. Make the necessary changes.
 5. Click the **Save** button.
@@ -369,12 +369,12 @@ Once a subnet is deleted, it cannot be restored.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
-1. Go to **Cloud Networks → Networks**.
-2. Click on the name of the cloud network where the subnet is located.
-3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to delete and select **Delete Subnet**.
-5. In the window that opens, click the **Confirm** button.
+1. Go to **Virtual networks** → **Networks**.
+1. Click on the name of the cloud network where the subnet is located.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to delete and select **Delete Subnet**.
+1. In the window that opens, click the **Confirm** button.
 
 {/tab}
 

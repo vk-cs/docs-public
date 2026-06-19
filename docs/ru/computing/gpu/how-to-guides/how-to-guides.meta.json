@@ -5,5 +5,14 @@
   "metaDescription": "Сборник расширенных гайдов по использованию Cloud GPU от VK Cloud: подробные инструкции по настройке ОС, программного обеспечения и интеграции с другими сервисами VK Cloud.",
   "icon": "",
   "weight": 3,
-  "uuid": "57afc18d-55e0-457e-a1e1-e26faf4d41df"
+  "uuid": "57afc18d-55e0-457e-a1e1-e26faf4d41df",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

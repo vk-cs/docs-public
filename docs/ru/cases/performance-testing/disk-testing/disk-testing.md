@@ -97,5 +97,5 @@
 
 Созданные ресурсы тарифицируются. Если они вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) тестовую ВМ.
-1. Удалите [подсеть](/ru/networks/vnet/instructions/net#udalenie_podseti) и [сеть](/ru/networks/vnet/instructions/net#udalenie_seti), в которой была размещена ВМ.
+1. [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) тестовую ВМ.
+1. Удалите [подсеть](/ru/networks/vnet/instructions/net#udalenie_podseti) и [сеть](/ru/networks/vnet/instructions/net#vnet-net-delete), в которой была размещена ВМ.

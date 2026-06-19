@@ -25,11 +25,12 @@ To create VM:
      - **Type of virtual machine**: select the flavor VM configuration.
      - **Availability zone**: select the [availability zone](/en/computing/iaas/concepts/about#availability_zone) where the VM will be deployed.
      - **Number of machines in configuration**: specify the required number of VM.
+
 1. Fill in the fields in the **General Information** box:
 
      - **Name of virtual machine**: use only Latin letters, numbers, or special characters `-`, `_`, and `.`.
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
-     - **Configure scripts on VM startup**: enable this option to add a bash or [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) script that will be executed when the VM first starts.
+     - **Configure scripts on VM startup**: enable this option to add a bash or cloud-config script that will be executed when the VM first starts.
 
 1. Specify the disk parameters in the **Disk size and speed** box.
 
@@ -45,7 +46,6 @@ To create VM:
    - **Network**: select an existing network or create a new one. If a new network is created, additional fields will appear:
       
       - **SDN**: select a [virtual network management system](/en/networks/vnet/concepts/architecture#sdns_used). For new accounts, Sprut is used by default and changing this setting is not available.
-
 
          {note:info}
 
@@ -84,7 +84,6 @@ To create VM:
 
       {/note}
 
-
    - **Enable monitoring**: enable to install an agent to send metrics to the [monitoring service](/en/monitoring-services/monitoring/concepts).
 
 1. Configure the settings in the **Backup** box.
@@ -111,7 +110,7 @@ To create VM:
       - `Temporary protection`: protects copies from deletion and overwriting for a specified number of days. Two selectable modes are available:
 
          - `Compliance`: strict mode. Cannot be disabled or changed during the specified retention period.
-         - `Governance`: flexible mode with the ability to be disabled by the project administrator.
+         - `Governance`: flexible mode with the ability to be disabled by the project administrator. 
 
       - `Lifetime protection`: protects the backup from deletion until the protection is disabled.
 

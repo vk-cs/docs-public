@@ -4,5 +4,10 @@
   "metaDescription": "Data Lakehouse архитектурасындағы ClickHouse компонентінің мақсаты мен функциялары",
   "sectionTitle": "ClickHouse",
   "icon": "",
-  "weight": 6
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

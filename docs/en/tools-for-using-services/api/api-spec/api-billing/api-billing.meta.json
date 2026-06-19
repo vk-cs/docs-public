@@ -1,0 +1,14 @@
+{
+  "title": "Billing",
+  "shortDescription": "OpenAPI specification of the Billing service",
+  "metaDescription": "OpenAPI specification of the Billing service",
+  "sectionTitle": "Billing",
+  "icon": "",
+  "weight": 20,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -4,5 +4,11 @@
   "metaDescription": "Monitoring services",
   "weight": 9,
   "icon": "",
-  "uuid": "6a742fd3-859b-4c1d-b559-6c05b0d054b2"
+  "uuid": "6a742fd3-859b-4c1d-b559-6c05b0d054b2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }
+

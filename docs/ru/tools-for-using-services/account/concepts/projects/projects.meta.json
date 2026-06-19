@@ -1,12 +1,19 @@
 {
-    "title": "Проекты",
-      "shortDescription": "Что такое проект в VK Cloud",
-      "metaDescription": "Что такое проект в VK Cloud.",
-    "sectionTitle": "Проекты",
-    "icon": "",
-    "weight": 0,
-    "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
-    "additionalUuids": [
-        "fe46098d-ea5c-4fd9-a534-4942858cb4bc"
+  "title": "Проекты",
+  "shortDescription": "Что такое проект в {var(cloud)}",
+  "metaDescription": "Что такое проект в VK Cloud.",
+  "sectionTitle": "Проекты",
+  "icon": "",
+  "weight": 0,
+  "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
+  }
 }

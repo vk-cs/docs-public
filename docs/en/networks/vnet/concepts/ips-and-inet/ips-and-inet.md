@@ -29,11 +29,11 @@ For [virtual machine](/en/computing/iaas/concepts/about#virtual_machines) the In
 - Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
 - Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.
 
-  {note:warn}
-  All ranges of addresses that are used by services and sites listed by the Russian Ministry of Digital Development as accessible during mobile internet restrictions have been disabled to prevent their unauthorized and illegal use.
+   {note:warn}
+   All ranges of addresses that are used by services and sites listed by the Russian Ministry of Digital Development as accessible during mobile internet restrictions have been disabled to prevent their unauthorized and illegal use.
 
-  Any attempts to select, scan, or sort through such addresses will be automatically blocked.
-  {/note}
+   Any attempts to select, scan, or sort through such addresses will be automatically blocked.
+   {/note}
 
 ## {heading(Floating IP address)[id=floating-ip]}
 
@@ -47,7 +47,7 @@ Floating IP addresses are used for:
 
 - Flexible network reconfiguration — in environments with frequently changing requirements, floating IP addresses allow you to quickly redistribute resources without the need to change IP addressing and associated settings.
 
-The number of floating IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#networks_subnets_and_ip_addresses_f2e7d7e5).
+The number of floating IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#nets).
 
 If the floating IP addresses quota in your project is higher than 0, the maximum number of floating IP addresses not attached to virtual machines is 1.
 
@@ -102,6 +102,8 @@ An anycast IP address can be bound to the following IP addresses:
 Up to 8 IP addresses can be bound to a single anycast IP address, and all IP addresses must be of the same type.
 
 The number of anycast IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#other_parameters_2e315f40).
+
+If the anycast IP addresses quota in your project is higher than 0, the maximum number of anycast IP addresses not attached to virtual machines is 1.
 
 If the anycast IP addresses quota in your project is higher than 0, the maximum number of anycast IP addresses not attached to virtual machines is 1.
 

@@ -4,5 +4,15 @@
   "metaDescription": "Ubuntu 18.04 жүйесінде MongoDB-ді қалай репликациялау және жаңарту керек.",
   "sectionTitle": "MongoDB репликациясы және Ubuntu жүйесінде жаңарту",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

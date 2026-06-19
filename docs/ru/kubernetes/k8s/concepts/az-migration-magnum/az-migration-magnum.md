@@ -1,4 +1,6 @@
-Все кластеры [первого поколения](/ru/kubernetes/k8s/concepts/cluster-generations), которые использовали [зону доступности](/ru/start/concepts/architecture#az) `GZ1`, необходимо перенести на другую зону доступности (например `PA2`), так как `GZ1` выводится из эксплуатации.
+# {heading(Миграция кластеров первого поколения между зонами доступности)[id=k8s-az-migration]}
+
+Все кластеры {linkto(../cluster-generations#k8s-cluster-generations)[text=первого поколения]}, которые использовали {linkto(/ru/start/concepts/architecture#architecture-az)[text=зону доступности]} `GZ1`, необходимо перенести на другую зону доступности (например `PA2`), так как `GZ1` выводится из эксплуатации.
 
 Миграция кластера между зонами доступности происходит в три шага:
 
@@ -6,11 +8,11 @@
 
    {include(/ru/_includes/_az-migration-magnum.md)[tags=check]}
 
-1. Если рабочая нагрузка кластера зависит от зоны доступности, перенесите ее самостоятельно либо [до начала работ](/ru/kubernetes/k8s/how-to-guides/workload-migration/pre-migration) по миграции ресурсов кластера со стороны VK Cloud, либо [после](/ru/kubernetes/k8s/how-to-guides/workload-migration/post-migration).
+1. Если рабочая нагрузка кластера зависит от зоны доступности, перенесите ее самостоятельно либо {linkto(/ru/kubernetes/k8s/how-to-guides/workload-migration/pre-migration#k8s-pre-migration)[text=до начала работ]} по миграции ресурсов кластера со стороны {var(cloud)}, либо {linkto(/ru/kubernetes/k8s/how-to-guides/workload-migration/post-migration#k8s-post-migration)[text=после]}.
 
    Во время самостоятельного переноса рабочую нагрузку придется остановить.
 
-1. Дождитесь, пока сотрудники VK Cloud перенесут ресурсы кластера:
+1. Дождитесь, пока сотрудники {var(cloud)} перенесут ресурсы кластера:
 
    - master-узлы,
    - группы worker-узлов,
@@ -18,4 +20,4 @@
    - диски,
    - балансировщики нагрузки.
 
-   Кластер будет доступен на время работ, миграция происходит в формате live migration. Сотрудники VK Cloud сообщат вам на почту о начале и сроке проведения работ.
+   Кластер будет доступен на время работ, миграция происходит в формате live migration. Сотрудники {var(cloud)} сообщат вам на почту о начале и сроке проведения работ.

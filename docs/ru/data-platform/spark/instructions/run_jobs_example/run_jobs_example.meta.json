@@ -1,0 +1,14 @@
+{
+  "title": "Пример создания и запуска Spark-задачи",
+  "shortDescription": "Как создать и запустить базовую Spark-задачу c помощью Spark-клиента",
+  "metaDescription": "Узнайте как создать и запустить базовую Spark-задачу c помощью Spark-клиента в сервисе Cloud Spark от VK Data Platform",
+  "sectionTitle": "Пример создания и запуска Spark-задачи",
+  "weight": 5,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -11,7 +11,7 @@
 1. Сауалнамада мыналарды көрсетіңіз:
     - (Опционалды) **Өтінім тақырыбы**: мысалы, `Подключение флейвора Cloud GPU`.
     - **Аймақ**: ашылмалы тізімнен аймақты таңдаңыз.
-    - **Жоба PID**: [жобаның бірегей идентификаторын (PID)](/kz/tools-for-using-services/account/instructions/project-settings/manage#zhoba_identifikatoryn_alu) көрсетіңіз.
+    - **Жоба PID**: [жобаның бірегей идентификаторын (PID)](/kz/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) көрсетіңіз.
     - **Сипаттама**: қай [конфигурация шаблонын](/kz/computing/gpu/concepts/about#gpu_flavors) қосу қажет екенін, сондай-ақ [квоталарды](/kz/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta) ұлғайту қажет пе екенін көрсетіңіз.
         
         {cut(Сипаттама мәтінінің мысалы)}

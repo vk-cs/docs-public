@@ -4,5 +4,20 @@
   "metaDescription": "Machine learning in the Cloud",
   "weight": 8,
   "icon": "",
-  "uuid": "8f8f14f3-0ec0-4ea9-8e87-759d6e2a2e59"
+  "uuid": "8f8f14f3-0ec0-4ea9-8e87-759d6e2a2e59",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }
+

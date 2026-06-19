@@ -1,9 +1,23 @@
 {
-    "title": "Limits",
-      "shortDescription": "Important restrictions",
-      "metaDescription": "Service as a whole at the moment service",
-    "sectionTitle": "Limits",
-    "icon": "",
-    "weight": 4,
-    "uuid": "6992fbb0-e323-40dd-8798-2d3cf57c0a73"
+  "title": "Limits",
+  "shortDescription": "Important restrictions",
+  "metaDescription": "Service as a whole at the moment service",
+  "sectionTitle": "Limits",
+  "icon": "",
+  "weight": 4,
+  "uuid": "6992fbb0-e323-40dd-8798-2d3cf57c0a73",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

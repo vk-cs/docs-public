@@ -1,9 +1,14 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Краткая информация об Arenadata DB as a Service",
-      "metaDescription": "Описание Arenadata DB (ADB) – распределенная СУБД, использующая концепцию MPP (massively parallel processing, массивно-параллельные вычисления) и основанна",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 0,
-    "uuid": "37ca94b6-68e5-4726-ab1f-18a3782f0568"
+  "title": "О сервисе",
+  "shortDescription": "Краткая информация об Arenadata DB as a Service",
+  "metaDescription": "Описание Arenadata DB (ADB) – распределенная СУБД, использующая концепцию MPP (massively parallel processing, массивно-параллельные вычисления) и основанна",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 0,
+  "uuid": "37ca94b6-68e5-4726-ab1f-18a3782f0568",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

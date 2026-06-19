@@ -1,9 +1,15 @@
 {
   "title": "Архитектура сервиса",
   "shortDescription": "Как устроен сервис Cloud Airflow",
-  "metaDescription": "Архитектура сервиса Cloud Airflow в VK Cloud",
+  "metaDescription": "Архитектура сервиса Cloud Airflow в VK Data Platform",
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "0c246092-e6c8-47b6-a527-93766a17cd0d"
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

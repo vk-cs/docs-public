@@ -1,9 +1,14 @@
 {
-  "title": "Подключение к VK Cloud через два канала Cloud Direct Connect",
-  "shortDescription": "Как организовать передачу данных между On-premises инфраструктурой и платформой VK Cloud, используя два выделенных подключения, стандартный и продвинутый маршрутизаторы",
+  "title": "Подключение к {var(cloud)} через два канала Cloud Direct Connect",
+  "shortDescription": "Как организовать передачу данных между On-premises инфраструктурой и платформой {var(cloud)}, используя два выделенных подключения, стандартный и продвинутый маршрутизаторы",
   "metaDescription": "Как организовать передачу данных между On-premises инфраструктурой и платформой VK Cloud, используя два выделенных подключения, стандартный и продвинутый маршрутизаторы",
-  "sectionTitle": "Подключение к VK Cloud через два канала Cloud Direct Connect",
+  "sectionTitle": "Подключение к {var(cloud)} через два канала Cloud Direct Connect",
   "icon": "",
   "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
   "uuid": "a4eb0139-ebc6-4aec-b3b2-938c300542f0"
 }

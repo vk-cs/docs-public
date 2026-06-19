@@ -5,7 +5,7 @@
 ## Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/onboarding/account) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/instructions/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/instructions/net#vnet-net-add) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
 1. [Создайте](/ru/networks/vnet/instructions/secgroups) группу безопасности `gitlab` и добавьте в нее  разрешения на входящий трафик для портов:
 
    - `80` (HTTP),
@@ -280,5 +280,5 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#delete_vm) ВМ `OA-Ubuntu-docker`.
-- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#delete) Floating IP-адрес `185.185.185.185`.
+- [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) ВМ `OA-Ubuntu-docker`.
+- При необходимости [удалите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адрес `185.185.185.185`.

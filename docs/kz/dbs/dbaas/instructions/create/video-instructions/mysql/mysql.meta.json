@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Databases VK Cloud: бұлттағы реляциялық дерекқорлармен жұмыс істеуге арналған MySQL инстансын жайылту бойынша бейне-нұсқаулық",
   "sectionTitle": "MySQL",
   "icon": "",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

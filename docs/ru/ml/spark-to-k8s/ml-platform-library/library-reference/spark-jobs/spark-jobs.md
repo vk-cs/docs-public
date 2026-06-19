@@ -1,16 +1,18 @@
+# {heading(Работа с заданиями Spark)[id=mlspark-library-reference-spark-jobs]}
+
 Эти методы позволяют управлять выполнением заданий на кластере Cloud Spark:
 
 - создавать, запускать и удалять задания;
 - получать список текущих заданий кластера, логи заданий и подробную информацию о заданиях;
 - получать информацию о событиях кластера, в том числе, связанных с выполнением заданий.
 
-## get_default_manifest
+## {heading(get_default_manifest)[id=mlspark-library-reference-spark-jobs-get_default_manifest]}
 
 Получить пример стандартного манифеста типа SparkApplication с описанием задания для кластера Cloud Spark и при необходимости присвоить имя этому заданию.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-get_default_manifest-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -24,7 +26,7 @@
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |`job_name`
 
 (необязательный)
@@ -46,17 +48,17 @@
 client_manifest.job_name = '<новое имя задания>'
 ```
 
-Здесь `client_manifest` — манифест типа SparkApplication, полученный с помощью метода `get_default_manifest` или [get_manifest_from_yaml_file](#get_manifest_from_yaml_file).
+Здесь `client_manifest` — манифест типа SparkApplication, полученный с помощью метода `get_default_manifest` или [get_manifest_from_yaml_file](#mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file).
 
 {/cut}
 
 {/note}
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-get_default_manifest-result]}
 
 Объект класса `Manifest`, который содержит пример стандартного манифеста типа SparkApplication. Переданное в вызове метода значение аргумента `job_name` содержится в поле `metadata.name` манифеста.
 
-### {heading(Сигнатура метода и пример использования)[id=get_default_manifest_additional_info]}
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-get_default_manifest-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -75,12 +77,12 @@ get_default_manifest(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -107,7 +109,7 @@ get_default_manifest(cluster_id: str,
 
 {/cut}
 
-### Примеры настройки манифеста
+### {heading(Примеры настройки манифеста)[id=mlspark-library-reference-spark-jobs-get_default_manifest-examples]}
 
 {cut(Как указать основной исполняемый файл приложения для запуска на кластере Cloud Spark)}
 
@@ -257,13 +259,13 @@ client_manifest.set_restart_policy(
 
 Больше информации о параметрах настройки Spark в [официальной документации](https://spark.apache.org/docs/latest/configuration.html).
 
-## get_manifest_from_yaml_file
+## {heading(get_manifest_from_yaml_file)[id=mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file]}
 
 Получить манифест типа SparkApplication с описанием задания для кластера Cloud Spark из файла в формате YAML.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -278,11 +280,11 @@ client_manifest.set_restart_policy(
 |Путь к YAML-файлу
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file-result]}
 
 Объект класса `Manifest`.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -299,12 +301,12 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -323,13 +325,13 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 {/cut}
 
-## save_yaml
+## {heading(save_yaml)[id=mlspark-library-reference-spark-jobs-save_yaml]}
 
 Сохранить манифест в YAML-файл.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-save_yaml-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -344,11 +346,11 @@ get_manifest_from_yaml_file(yaml_file_path: str
 |Путь к файлу
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-save_yaml-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-save_yaml-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -364,12 +366,12 @@ save_yaml(file_path: str) -> None
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -393,13 +395,13 @@ save_yaml(file_path: str) -> None
 
 {/cut}
 
-## spark_submit_job
+## {heading(spark_submit_job)[id=mlspark-library-reference-spark-jobs-spark_submit_job]}
 
 Отправить задание в кластер Cloud Spark.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_submit_job-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -413,7 +415,7 @@ save_yaml(file_path: str) -> None
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`manifest`
 
@@ -421,7 +423,7 @@ save_yaml(file_path: str) -> None
 |`Manifest`
 |Объект класса `Manifest`, содержащий манифест типа SparkApplication с описанием задания.
 
-Объект можно получить с помощью метода [get_default_manifest](#get_default_manifest) или [get_manifest_from_yaml_file](#get_manifest_from_yaml_file)
+Объект можно получить с помощью метода [get_default_manifest](#mlspark-library-reference-spark-jobs-get_default_manifest) или [get_manifest_from_yaml_file](#mlspark-library-reference-spark-jobs-get_manifest_from_yaml_file)
 
 |`pycode_file_path`
 
@@ -432,13 +434,13 @@ save_yaml(file_path: str) -> None
 При отсутствии аргумента используется значение по умолчанию: `None`
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_submit_job-result]}
 
 Объект класса `K8sSparkJobInfo` с информацией о задании Spark.
 
 {include(/ru/_includes/_spark_job_info.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_submit_job-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -458,12 +460,12 @@ spark_submit_job(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Создайте файл `example.py` с Python-кодом задания Spark, если это еще не сделано.
 1. Выполните скрипт Python:
 
@@ -497,13 +499,13 @@ spark_submit_job(cluster_id: str,
 
 {/cut}
 
-## spark_jobs_list
+## {heading(spark_jobs_list)[id=mlspark-library-reference-spark-jobs-spark_jobs_list]}
 
 Получить список всех заданий кластера Cloud Spark.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_jobs_list-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -517,16 +519,16 @@ spark_submit_job(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_jobs_list-result]}
 
 Список объектов класса `K8sSparkJobInfo` с информацией о заданиях кластера Cloud Spark.
 
 {include(/ru/_includes/_spark_job_info.md)}
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_jobs_list-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -544,12 +546,12 @@ spark_jobs_list(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python
@@ -576,13 +578,13 @@ spark_jobs_list(cluster_id: str,
 
 {/cut}
 
-## spark_job_info
+## {heading(spark_job_info)[id=mlspark-library-reference-spark-jobs-spark_job_info]}
 
 Получить детальную информацию о задании Spark с указанным именем.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_job_info-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -596,7 +598,7 @@ spark_jobs_list(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`job_name`
 
@@ -604,14 +606,14 @@ spark_jobs_list(cluster_id: str,
 |`str`
 |Имя задания Spark.
 
-Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#spark_jobs_list)
+Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#mlspark-library-reference-spark-jobs-spark_jobs_list)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_job_info-result]}
 
 Объект класса `K8sSparkJobInfoDetail` с детальной информацией о задании Spark.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_job_info-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -630,12 +632,12 @@ spark_job_info(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Создайте файл `example.py` с Python-кодом задания Spark, если это еще не сделано.
 1. Выполните скрипт Python:
 
@@ -680,13 +682,13 @@ spark_job_info(cluster_id: str,
 
 {/cut}
 
-## spark_job_logs
+## {heading(spark_job_logs)[id=mlspark-library-reference-spark-jobs-spark_job_logs]}
 
 Получить логи задания Spark с указанным именем.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_job_logs-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -700,7 +702,7 @@ spark_job_info(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`job_name`
 
@@ -708,14 +710,14 @@ spark_job_info(cluster_id: str,
 |`str`
 |Имя задания Spark.
 
-Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#spark_jobs_list)
+Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#mlspark-library-reference-spark-jobs-spark_jobs_list)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_job_logs-result]}
 
 Объект класса `K8sSparkJobLogs` с логами задания Spark.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_job_logs-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -734,12 +736,12 @@ spark_job_logs(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Создайте файл `example.py` с Python-кодом задания Spark, если это еще не сделано.
 1. Выполните скрипт Python:
 
@@ -772,13 +774,13 @@ spark_job_logs(cluster_id: str,
 
 {/cut}
 
-## describe_spark_job
+## {heading(describe_spark_job)[id=mlspark-library-reference-spark-jobs-describe_spark_job]}
 
 Получить информацию о приложении типа SparkApplication, запущенном на кластере Cloud Spark для выполнения задания с указанным именем
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-describe_spark_job-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -792,7 +794,7 @@ spark_job_logs(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`job_name`
 
@@ -800,14 +802,14 @@ spark_job_logs(cluster_id: str,
 |`str`
 |Имя задания Spark.
 
-Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#spark_jobs_list)
+Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#mlspark-library-reference-spark-jobs-spark_jobs_list)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-describe_spark_job-result]}
 
 Объект класса `K8sSparkApplication` с подробной информацией о приложении типа SparkApplication, запущенном на кластере Cloud Spark для выполнения задания.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-describe_spark_job-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -826,12 +828,12 @@ describe_spark_job(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Создайте файл `example.py` с Python-кодом задания Spark, если это еще не сделано.
 1. Выполните скрипт Python:
 
@@ -889,13 +891,13 @@ describe_spark_job(cluster_id: str,
 
 {/cut}
 
-## spark_delete_job
+## {heading(spark_delete_job)[id=mlspark-library-reference-spark-jobs-spark_delete_job]}
 
 Удалить задание Spark с указанным именем.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_delete_job-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -909,7 +911,7 @@ describe_spark_job(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 
 |`job_name`
 
@@ -917,14 +919,14 @@ describe_spark_job(cluster_id: str,
 |`str`
 |Имя задания Spark.
 
-Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#spark_jobs_list)
+Имена заданий Spark можно получить с помощью метода [spark_jobs_list](#mlspark-library-reference-spark-jobs-spark_jobs_list)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_delete_job-result]}
 
 Возвращаемого значения нет.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_delete_job-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -943,12 +945,12 @@ spark_delete_job(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор`  или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор`  или `Пользователь`, если это еще не сделано.
 1. Создайте файл `example.py` с Python-кодом задания Spark, если это еще не сделано.
 1. Выполните скрипт Python:
 
@@ -976,17 +978,17 @@ spark_delete_job(cluster_id: str,
       job_name=JOB_NAME)
    ```
 
-   Задание Spark с именем `pi-spark-job-5` будет удалено. Это можно проверить с помощью метода [spark_jobs_list](#spark_jobs_list).
+   Задание Spark с именем `pi-spark-job-5` будет удалено. Это можно проверить с помощью метода [spark_jobs_list](#mlspark-library-reference-spark-jobs-spark_jobs_list).
 
 {/cut}
 
-## spark_events
+## {heading(spark_events)[id=mlspark-library-reference-spark-jobs-spark_events]}
 
 Получить список событий кластера Cloud Spark.
 
-Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+Необходимая роль токена: `Администратор` или `Пользователь`. {linkto(../../authz#mlspark-library-authz)[text=Подробнее о ролях токенов]}.
 
-### Аргументы метода
+### {heading(Аргументы метода)[id=mlspark-library-reference-spark-jobs-spark_events-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1000,14 +1002,14 @@ spark_delete_job(cluster_id: str,
 |`str`
 |Идентификатор кластера Cloud Spark.
 
-Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#get_clusters)
+Список кластеров Cloud Spark и их идентификаторов можно получить с помощью метода [get_clusters](../clusters#mlspark-library-reference-clusters-get_clusters)
 |===
 
-### Возвращаемое значение
+### {heading(Возвращаемое значение)[id=mlspark-library-reference-spark-jobs-spark_events-result]}
 
 Объект класса `K8sSparkEventsList` со списком событий кластера Cloud Spark.
 
-### Сигнатура метода и пример использования
+### {heading(Сигнатура метода и пример использования)[id=mlspark-library-reference-spark-jobs-spark_events-signature]}
 
 {cut(Сигнатура метода)}
 
@@ -1025,12 +1027,12 @@ spark_events(cluster_id: str,
 
 Для простоты значение токена доступа указано в примере скрипта Python.
 
-При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. {linkto(../../authz#mlspark-library-authz)[text=Подробнее про токены]}.
 
 {/note}
 
-1. [Установите библиотеку](../../install), если это еще не сделано.
-1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. {linkto(../../install#mlspark-library-install)[text=Установите библиотеку]}, если это еще не сделано.
+1. {linkto(../../authz#mlspark-library-authz)[text=Создайте токен доступа]} с ролью `Администратор` или `Пользователь`, если это еще не сделано.
 1. Выполните скрипт Python:
 
    ```python

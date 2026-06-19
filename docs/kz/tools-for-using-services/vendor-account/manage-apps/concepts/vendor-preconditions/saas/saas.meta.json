@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Талаптар API SaaS-қосымшаларына",
   "sectionTitle": "Талаптар API SaaS-қосымшаларына",
-  "weight": 3
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_agent_script_result деректер көзі",
   "sectionTitle": "ivkcs_agent_script_result деректер көзі",
-  "weight": 2
+    "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

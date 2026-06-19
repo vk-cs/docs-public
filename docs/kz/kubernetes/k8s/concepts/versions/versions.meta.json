@@ -1,8 +1,18 @@
 {
   "title": "Kubernetes нұсқалары мен компоненттері туралы",
   "shortDescription": "VK Cloud кластерлеріндегі Kubernetes-тің қолжетімді нұсқаларын қолдау саясаты, компоненттердің қолжетімді нұсқалары, нұсқалар өзгерістерінің тарихы",
-  "metaDescription": "Kubernetes,K8S,нұсқал,компоненттер,тарих,саясат,қолдау",
+  "metaDescription": "Kubernetes,K8S,нұсқа,компоненттер,тарих,саясат,қолдау",
   "sectionTitle": "Kubernetes нұсқалары мен компоненттері туралы",
   "icon": "",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

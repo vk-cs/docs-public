@@ -1,24 +1,26 @@
+# {heading(Балансировщик нагрузкисын теңшелетін конфигурация үлгісімен жасау)[id=balancing-private-flavor]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Cloud жүйесіндегі жүктеме балансировщиктері әдепкі бойынша стандартты конфигурация үлгісімен жасалады. Жоғары көлемдегі трафикпен жұмыс істеу үшін өнімдірек конфигурациясы бар жүктеме балансировщигін пайдаланыңыз.
+{var(cloud)} жүйесіндегі жүктеме балансировщиктері әдепкі бойынша стандартты конфигурация үлгісімен жасалады. Жоғары көлемдегі трафикпен жұмыс істеу үшін өнімдірек конфигурациясы бар жүктеме балансировщигін пайдаланыңыз.
 
-VK Cloud жүйесінде инфрақұрылымыңызға арнайы сіз үшін жасалған конфигурация үлгісі (_flavor_) бар жүктеме балансировщиктерін қоса аласыз. Бұл жоғары жүктеме кезінде инфрақұрылымның өнімділігін арттыруға мүмкіндік береді.
+{var(cloud)} жүйесінде инфрақұрылымыңызға арнайы сіз үшін жасалған конфигурация үлгісі (_flavor_) бар жүктеме балансировщиктерін қоса аласыз. Бұл жоғары жүктеме кезінде инфрақұрылымның өнімділігін арттыруға мүмкіндік береді.
 
-Өнімдірек конфигурация үлгісін техникалық мәліметтер келісілгеннен кейін VK Cloud мамандары жасайды.
+Өнімдірек конфигурация үлгісін техникалық мәліметтер келісілгеннен кейін {var(cloud)} мамандары жасайды.
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=balancing-private-flavor-prep]}
 
-1. Егер бұл әлі жасалмаса, жеке үлгіні жасау туралы сұраумен VK Cloud менеджеріне немесе пресейл-архитекторына хабарласыңыз. Келісуден кейін сіз өзіңіз үшін жасалған конфигурация үлгісі туралы ақпарат аласыз.
+1. Егер бұл әлі жасалмаса, жеке үлгіні жасау туралы сұраумен {var(cloud)} менеджеріне немесе пресейл-архитекторына хабарласыңыз. Келісуден кейін сіз өзіңіз үшін жасалған конфигурация үлгісі туралы ақпарат аласыз.
 1. Егер балансировщикті жасау немесе оның жұмысқа қабілеттілігін тексеру үшін OpenStack CLI пайдалануды жоспарласаңыз:
 
-    1. және `octavia` пакеттері бар OpenStack клиенті `neutron` [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz).
-    1. [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz) жобада.
-1. Егер әлі орнатылмаса [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md), утилитасын орнатыңыз.
-1. [алыңыз](/kz/tools-for-using-services/api/rest-api/endpoints) Осы мысалда: `https://public.infra.mail.ru:9876`.
-1. [алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token) API-ге қол жеткізу токені `X-Auth-Token`.
-1. [біліңіз](/kz/networks/vnet/instructions/net#zheliler_men_ishki_zheliler_tizimin_sonday_ak_olar_turaly_akparatty_karau) теңгерімдеуші жасағыңыз келетін желі мен ішкі желінің идентификаторларын.
+    1. `octavia` және `neutron` пакеттері бар OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз.
+    1. Жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Егер әлі орнатылмаса, [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md) утилитасын орнатыңыз.
+1. Octavia сервисінің эндпоинтін {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=алыңыз]}. Осы мысалда: `https://public.infra.mail.ru:9876`.
+1. API-ге қол жеткізуге арналған `X-Auth-Token` токенін {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
+1. Балансировщикті жасағыңыз келетін желі мен ішкі желінің идентификаторларын {linkto(../../../../networks/vnet/instructions/net#vnet-net-view)[text=біліңіз]}.
 
-## {heading(1. Үлгілер туралы ақпарат алыңыз)[id=get_info]}
+## {heading(1. Үлгілер туралы ақпарат алыңыз)[id=balancing-private-flavor-get-info]}
 
 {tabs}
 {tab(API)}
@@ -30,7 +32,7 @@ VK Cloud жүйесінде инфрақұрылымыңызға арнайы с
     ```
 
     Мұнда `<ТОКЕН>` — API-ге қол жеткізу токені.
-1. мәнін жазып алыңыз. Мысал `flavor_id`. Мысал: `8f94060c-8d5b-4472-9cfd-e8a2b909481d`.
+1. `flavor_id` мәнін жазып алыңыз. Мысал: `8f94060c-8d5b-4472-9cfd-e8a2b909481d`.
 
 {/tab}
 {tab(OpenStack CLI)}
@@ -55,7 +57,7 @@ VK Cloud жүйесінде инфрақұрылымыңызға арнайы с
 Мысал: `Octavia-2-2-HA` — 2 vCPU және 2 ГБ жедел жады, Active-Standby топологиясы (стандартты үлгі, әдепкі бойынша жасалады).
 {/cut}
 
-## 2. Балансировщикті жеке үлгімен жасаңыз
+## {heading(2. Балансировщикті жеке үлгімен жасаңыз)[id=balancing-private-flavor-add]}
 
 {tabs}
 {tab(API)}
@@ -68,17 +70,17 @@ curl -X POST -H "Content-Type: application/json" -H "X-Auth-Token: <ТОКЕН>"
 Мұнда толтыруға міндетті мәндер:
 
 - `<ТОКЕН>` — API-ге қол жеткізу токені.
-- `<ИДЕНТИФИКАТОР_ШАБЛОНА>` — VK Cloud жүйесінен немесе {linkto(#get_info)[text=өз бетіңізше]}.
+- `<ИДЕНТИФИКАТОР_ШАБЛОНА>` — {var(cloud)} жүйесінен немесе {linkto(#balancing-private-flavor-get-info)[text=өз бетіңізше]} алынған балансировщик конфигурациясы үлгісінің идентификаторы.
 - `<ИДЕНТИФИКАТОР_ПОДСЕТИ>` — балансировщикті орналастырғыңыз келетін ішкі желінің идентификаторы.
 - `<НАЗВАНИЕ_БАЛАНСИРОВЩИКА>` — жасалатын балансировщиктің еркін атауы.
 
 Қосымша мәндер міндетті емес түрде толтырылады:
 
 - `<ОПИСАНИЕ_БАЛАНСИРОВЩИКА>` — жасалатын балансировщиктің еркін сипаттамасы.
-- `<ИДЕНТИФИКАТОР_ПРОЕКТА>` — [идентификаторы](/kz/tools-for-using-services/api/rest-api/endpoints#project_id_alu) балансировщик жасағыңыз келетін OpenStack жобасының.
+- `<ИДЕНТИФИКАТОР_ПРОЕКТА>` — балансировщик жасағыңыз келетін OpenStack жобасының {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=идентификаторы]}.
 - `<VIP>` — балансировщикке тағайындалатын виртуалды IP-мекенжай.
 - `<ИДЕНТИФИКАТОР_QoS-ПОЛИТИКИ>` — балансировщикке тағайындағыңыз келетін QoS саясатының идентификаторы.
-- `<ЗОНА_ДОСТУПНОСТИ>` — балансировщикті орналастырғыңыз келетін [қолжетімділік аймағының](/kz/computing/iaas/concepts/avail-zone), атауы.
+- `<ЗОНА_ДОСТУПНОСТИ>` — балансировщикті орналастырғыңыз келетін {linkto(../../../../computing/iaas/concepts/avail-zone#iaas-avail-zone)[text=қолжетімділік аймағының]} атауы.
 - `<ТЕГ>` — балансировщикті белгілегіңіз келетін тег.
 
 {cut(Жауап мысалы)}
@@ -110,41 +112,38 @@ curl -X POST -H "Content-Type: application/json" -H "X-Auth-Token: <ТОКЕН>"
 ```
 {/cut}
 
-Балансировщик API туралы толығырақ — OpenStack-тің [ресми құжаттамасында](https://docs.openstack.org/api-ref/load-balancer/v2/) OpenStack.
+Балансировщик API туралы толығырақ — OpenStack-тің [ресми құжаттамасында](https://docs.openstack.org/api-ref/load-balancer/v2/).
 {/tab}
 
 {tab(OpenStack CLI)}
 Команданы орындаңыз:
 
 ```console
-openstack loadbalancer create \
-    --flavor <ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ШАБЛОНА> \
-    --vip-network-id <ИДЕНТИФИКАТОР_СЕТИ> \
-    --name <НАЗВАНИЕ_БАЛАНСИРОВЩИКА>
+openstack loadbalancer create     --flavor <ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ШАБЛОНА>     --vip-network-id <ИДЕНТИФИКАТОР_СЕТИ>     --name <НАЗВАНИЕ_БАЛАНСИРОВЩИКА>
 ```
 
 Мұнда:
 
-- `<ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ШАБЛОНА>` — VK Cloud жүйесінен немесе {linkto(#get_info)[text=өз бетіңізше]}.
+- `<ИМЯ_ИЛИ_ИДЕНТИФИКАТОР_ШАБЛОНА>` — {var(cloud)} жүйесінен немесе {linkto(#balancing-private-flavor-get-info)[text=өз бетіңізше]} алынған балансировщик конфигурациясы үлгісінің атауы немесе идентификаторы.
 - `<ИДЕНТИФИКАТОР_СЕТИ>` — балансировщикті орналастырғыңыз келетін желінің идентификаторы.
 - `<НАЗВАНИЕ_БАЛАНСИРОВЩИКА>` — жасалатын балансировщиктің еркін атауы.
 {/tab}
 {/tabs}
 
-## 3. Балансировщиктің жасалуын және параметрлерін тексеріңіз
+## {heading(3. Балансировщиктің жасалуын және параметрлерін тексеріңіз)[id=balancing-private-flavor-check]}
 
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [жеке кабинетіне](https://kz.cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} жүйесінің [жеке кабинетіне](https://kz.cloud.vk.com/app/) өтіңіз.
 1. Жобаны таңдаңыз.
-1. Бөлімге өтіңіз **Виртуалды желілер** → **Жүктеме балансировщиктері**.
+1. **Виртуалды желілер** → **Жүктеме балансировщиктері** бөліміне өтіңіз.
 
    Балансировщиктер тізімі көрсетіледі.
 
 1. Қажетті балансировщиктің атауын басыңыз.
 
-   Ол туралы толық ақпарат бар бет ашылады. Бұл бетте балансировщик параметрлерін [өңдеуге](/kz/networks/balancing/instructions/manage-lb#zhukteme_tengergishinin_atauyn_ondeu) де болады.
+   Ол туралы толық ақпарат бар бет ашылады. Бұл бетте балансировщик параметрлерін {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-edit)[text=өңдеуге]} де болады.
 
 {/tab}
 {tab(API)}
@@ -158,7 +157,7 @@ openstack loadbalancer create \
     Мұнда:
 
     - `<ТОКЕН>` — API-ге қол жеткізу токені.
-    - `<ИДЕНТИФИКАТОР_ПРОЕКТА>` — [идентификаторы](/kz/tools-for-using-services/api/rest-api/endpoints#project_id_alu) Міндетті емес түрде толтырылады.
+    - `<ИДЕНТИФИКАТОР_ПРОЕКТА>` — тізімін көргіңіз келетін OpenStack жобасының балансировщиктерінің {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=идентификаторы]}. Міндетті емес түрде толтырылады.
 
 1. Жасалған жүктеме балансировщигі туралы толық ақпарат алыңыз:
 
@@ -197,8 +196,8 @@ openstack loadbalancer create \
 {/tab}
 {/tabs}
 
-Балансировщик сәтті жасалғаннан кейін оны [басқара](/kz/networks/balancing/instructions/manage-lb) аласыз.
+Балансировщик сәтті жасалғаннан кейін оны {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb)[text=басқара]} аласыз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=balancing-private-flavor-delete]}
 
-Егер жасалған балансировщик енді қажет болмаса, оны, [жойыңыз](/kz/networks/balancing/instructions/manage-lb#zhukteme_tengergishin_zhoyu) его.
+Егер жасалған балансировщик енді қажет болмаса, оны {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-delete)[text=жойыңыз]}.

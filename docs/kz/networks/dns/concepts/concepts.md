@@ -1,1 +1,1 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Тұжырымдамалар)[id=dns-concepts]}

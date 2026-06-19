@@ -5,5 +5,10 @@
   "sectionTitle": "Виртуальные сети",
   "icon": "",
   "weight": 20,
-  "uuid": "9336a564-a734-4519-ad39-081dfb11589f"
+  "uuid": "9336a564-a734-4519-ad39-081dfb11589f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

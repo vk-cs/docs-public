@@ -4,5 +4,15 @@
   "metaDescription": "ДҚ инстансының пайдаланушыларын қалай қосуға, жоюға және олардың деректерге қолжетімділігін қалай шектеуге болады",
   "sectionTitle": "Пайдаланушыларды басқару",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

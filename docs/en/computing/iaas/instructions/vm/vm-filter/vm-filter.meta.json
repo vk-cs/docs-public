@@ -5,5 +5,10 @@
   "sectionTitle": "Searching and filtering VM",
   "icon": "",
   "weight": 6,
-  "uuid": "1d21aa0f-9108-410c-b2ed-27ae9906bd37"
+  "uuid": "1d21aa0f-9108-410c-b2ed-27ae9906bd37",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

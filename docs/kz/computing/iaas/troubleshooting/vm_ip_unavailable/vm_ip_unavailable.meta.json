@@ -4,5 +4,12 @@
   "metaDescription": "Виртуалды машинада орналастырылған қызметке IP мекенжайы бойынша қолжетімділік жоқ",
   "sectionTitle": "Қызмет IP мекенжайы бойынша қолжетімсіз",
   "icon": "",
-  "weight": 27
+  "weight": 27,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
 }

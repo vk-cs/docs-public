@@ -1,0 +1,18 @@
+{
+  "title": "Восстановление инстанса БД",
+  "shortDescription": "Восстановление инстанса БД из резервной копии",
+  "metaDescription": "Cloud Databases: восстановление инстанса базы данных из резервной копии в VK Cloud",
+  "sectionTitle": "Восстановление инстанса БД",
+  "icon": "",
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

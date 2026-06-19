@@ -2,5 +2,10 @@
   "title": "Сервисті жариялау",
   "shortDescription": "",
   "metaDescription": "Сервисті жариялау",
-  "sectionTitle": "Сервисті жариялау"
+  "sectionTitle": "Сервисті жариялау",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

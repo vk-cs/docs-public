@@ -1,0 +1,14 @@
+{
+  "title": "Концепции",
+  "shortDescription": "Основные понятия и характеристики сервиса Lakekeeper",
+  "metaDescription": "Концепции",
+  "sectionTitle": "Концепции",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

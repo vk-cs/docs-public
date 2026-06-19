@@ -3,5 +3,15 @@
   "shortDescription": "Cloud Servers сервисіне шолу. Жабдық сипаттамалары мен қолжетімді конфигурациялар. Дискілерге арналған SLA",
   "metaDescription": "Cloud Servers бұлттық есептеулер сервисіне шолу. Жабдық сипаттамалары мен қолжетімді конфигурациялар. Дискілерге арналған SLA",
   "sectionTitle": "Тұжырымдамалар",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

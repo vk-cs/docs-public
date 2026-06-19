@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Logging — ВМ ішіндегі пайдаланушы қолданбаларының логтарымен және VK Cloud бұлтында жұмыс істеуге арналған сервис. Логтардағы жазбаларды іздеу және сүзу",
   "sectionTitle": "Іздеу сұрауларының тілі",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

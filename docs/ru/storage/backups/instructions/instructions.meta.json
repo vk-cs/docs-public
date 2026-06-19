@@ -13,5 +13,15 @@
     "525de4ae-33be-4abd-9ed4-6054e6dada56",
     "15694677-ca2a-47ab-8bfb-464e76690e95",
     "66461ab8-763a-4442-bc7d-67d5160c07c5"
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -1,3 +1,5 @@
+# {heading(ВМ-ге желіні қосу)[id=iaas-vm-add-net]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Виртуалды машинаны желіге порт арқылы қосуға болады. Порт — ВМ-нің виртуалды желілік картасы, ол үшін келесі мәндер бапталады:
@@ -8,13 +10,13 @@
 
 Желілер мен порттар туралы толығырақ [Желілер мен ішкі желілерді басқару](/kz/networks/vnet/instructions/net) және [Порттарды басқару](/kz/networks/vnet/instructions/ports) бөлімдерінен қараңыз.
 
-## ВМ-ге желіні қосу
+## {heading(ВМ-ге желіні қосу)[id=iaas-vm-add-net-connect]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті ВМ-ні таңдап, **Желілер** қойындысына өтіңіз.
 1. **Қосылым қосу** түймесін басыңыз.
@@ -41,9 +43,9 @@
 
 {tab(OpenStack CLI)}
 
-OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 
-### Бар портқа қосылу
+### {heading(Бар портқа қосылу)[id=iaas-vm-net-connect]}
 
 1. Желіге қосу жоспарланған виртуалды машинаның идентификаторын алыңыз:
 
@@ -75,7 +77,7 @@ OpenStack клиенті [орнатылғанына](/kz/tools-for-using-servic
    openstack port list --server <ID_ВМ>
    ```
 
-### Жаңа порт құру
+### {heading(Жаңа порт құру)[id=iaas-vm-net-create-port]}
 
 1. Желілердің және олардың құрамындағы ішкі желілердің тізімін алыңыз:
 
@@ -105,13 +107,13 @@ OpenStack клиенті [орнатылғанына](/kz/tools-for-using-servic
 
     - Параметрлерді көрсете отырып:
 
-      ```console
-      openstack port create <ИМЯ_ПОРТА> \
-                            --network <ИМЯ_ИЛИ_ID_СЕТИ> \
-                            --mac-address <MAC-АДРЕС> \
-                            --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<IP-АДРЕС_ПОРТА> \
-                            --security-group <ID_ГРУППЫ_БЕЗОПАСНОСТИ>
-      ```
+     ```console
+     openstack port create <ИМЯ_ПОРТА> \
+                           --network <ИМЯ_ИЛИ_ID_СЕТИ> \
+                           --mac-address <MAC-АДРЕС> \
+                           --fixed-ip subnet=<ИМЯ_ИЛИ_ID_ПОДСЕТИ>,ip-address=<IP-АДРЕС_ПОРТА> \
+                           --security-group <ID_ГРУППЫ_БЕЗОПАСНОСТИ>
+     ```
 
       Қолдау көрсетілетін параметрлердің толық тізімін көру үшін команданы орындаңыз:
 
@@ -147,13 +149,13 @@ OpenStack клиенті [орнатылғанына](/kz/tools-for-using-servic
 
 {/tabs}
 
-## ВМ желісін жою
+## {heading(ВМ желісін жою)[id=iaas-vm-net-delete]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті ВМ-ні таңдап, **Желілер** қойындысына өтіңіз.
 1. Қажетті желі үшін төмендегілердің бірін орындаңыз:
@@ -169,7 +171,7 @@ OpenStack клиенті [орнатылғанына](/kz/tools-for-using-servic
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 1. Виртуалды машинаның ID мәнін алыңыз:
 
    ```console

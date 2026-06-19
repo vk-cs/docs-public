@@ -1,0 +1,13 @@
+{
+  "title": "Загрузка image-based приложения на Marketplace",
+  "shortDescription": "Компоненты системы загрузки image-based приложения на Marketplace и схема их взаимодействия",
+  "metaDescription": "Краткое описание компонентов платформы VK Cloud, участвующих в загрузке image-based приложения на Marketplace. Их функции в процессе загрузки и схема взаимодействия.",
+  "sectionTitle": "Загрузка image-based приложения на Marketplace",
+  "isBeta": true,
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

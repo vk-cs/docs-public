@@ -1,9 +1,14 @@
 {
-    "title": "Обновление аддона Kube Prometheus Stack",
-      "shortDescription": "Как вручную обновить аддон при большой разнице между его версиями",
-      "metaDescription": "Как вручную обновить аддон при большой разнице между его версиями.",
-    "sectionTitle": "Обновление аддона Kube Prometheus Stack",
-    "icon": "",
-    "weight": 9,
-    "uuid": "bc66dcb8-4ab3-44ea-bd27-619678cf95bd"
+  "title": "Обновление аддона Kube Prometheus Stack",
+  "shortDescription": "Как вручную обновить аддон при большой разнице между его версиями",
+  "metaDescription": "Как вручную обновить аддон при большой разнице между его версиями.",
+  "sectionTitle": "Обновление аддона Kube Prometheus Stack",
+  "icon": "",
+  "weight": 14,
+  "uuid": "bc66dcb8-4ab3-44ea-bd27-619678cf95bd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

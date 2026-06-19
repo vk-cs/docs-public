@@ -1,9 +1,18 @@
 {
-    "title": "Подключение к кластеру с помощью kubectl",
-      "shortDescription": "",
-      "metaDescription": "Утилита kubectl позволяет выполнять весь спектр операций по управлению кластером Kubernetes из командной строки. Как подключиться к кластеру Kubernetes с помощью утилиты kubectl",
-    "sectionTitle": "Подключение к кластеру с помощью kubectl",
-    "icon": "",
-    "weight": 1,
-    "uuid": "aadd5bbf-41b8-4b6f-b01f-6aec1d199e5f"
+  "title": "Подключение к кластеру с помощью kubectl",
+  "shortDescription": "",
+  "metaDescription": "Утилита kubectl позволяет выполнять весь спектр операций по управлению кластером Kubernetes из командной строки. Как подключиться к кластеру Kubernetes с помощью утилиты kubectl",
+  "sectionTitle": "Подключение к кластеру с помощью kubectl",
+  "icon": "",
+  "weight": 1,
+  "uuid": "aadd5bbf-41b8-4b6f-b01f-6aec1d199e5f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
 }

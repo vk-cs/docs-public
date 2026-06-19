@@ -1,9 +1,14 @@
 {
-    "title": "Lifecycle",
-      "shortDescription": "",
-      "metaDescription": "Все доступные методы для работы с жизненным циклом объектов: Get Bucket Lifecycle Configuration - Просмотр конфигурации жизненного цикла в бакете\nConfigure",
-    "sectionTitle": "Lifecycle",
-    "icon": "",
-    "weight": 6,
-    "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676"
+  "title": "Lifecycle",
+  "shortDescription": "Настройка правил жизненного цикла в бакете для удаления автоматического удаления устаревших объектов и их версий по тегам и префиксам",
+  "metaDescription": "Все доступные методы для работы с жизненным циклом объектов в VK Object Storage: посмотреть конфигурацию жизненного цикла (GetBucketLifecycleConfiguration), установить конфигурацию с правилами жизненного цикла (PutBucketLifecycle), удалить конфигурацию жизненного цикла (DeleteBucketLifecycle)",
+  "sectionTitle": "Lifecycle",
+  "icon": "",
+  "weight": 5,
+  "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

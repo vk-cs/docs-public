@@ -5,5 +5,10 @@
   "sectionTitle": "Управление сервером",
   "icon": "",
   "weight": 1,
-  "uuid": "368a1cf2-7e31-496e-bbe0-93d0d46a118d"
+  "uuid": "368a1cf2-7e31-496e-bbe0-93d0d46a118d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

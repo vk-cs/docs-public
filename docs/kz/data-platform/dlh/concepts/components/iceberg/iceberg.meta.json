@@ -4,5 +4,10 @@
   "metaDescription": "Data Lakehouse архитектурасындағы Cloud Iceberg Metastore компонентінің мақсаты мен функциялары",
   "sectionTitle": "Cloud Iceberg Metastore",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

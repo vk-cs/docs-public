@@ -1866,12 +1866,6 @@
     "locale": false
   },
   {
-    "source": "/en/additionals/account/account/delete",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/additionals/account/account/edit",
     "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo",
     "permanent": false,
@@ -2162,12 +2156,6 @@
   {
     "source": "/ru/additionals/account/account/adduser",
     "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/ru/additionals/account/account/delete",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -4524,12 +4512,6 @@
     "locale": false
   },
   {
-    "source": "/en/base/account/account/delete",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/base/account/logging/actionslogs",
     "destination": "/en/tools-for-using-services/account/instructions/actionslogs",
     "permanent": false,
@@ -4580,12 +4562,6 @@
   {
     "source": "/ru/base/account/concepts/tariffs",
     "destination": "/ru/tools-for-using-services/account/tariffication",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/ru/base/account/account/delete",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -16104,12 +16080,6 @@
     "locale": false
   },
   {
-    "source": "/en/base/account/use-cases/account-delete",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/base/account/use-cases/ideasportal",
     "destination": "/en/tools-for-using-services/account",
     "permanent": false,
@@ -18672,12 +18642,6 @@
     "locale": false
   },
   {
-    "source": "/ru/base/account/use-cases/account-delete",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/ru/base/account/use-cases/ideasportal",
     "destination": "/ru/tools-for-using-services/account",
     "permanent": false,
@@ -20940,12 +20904,6 @@
     "locale": false
   },
   {
-    "source": "/en/tools-for-using-services/account/use-cases/account-delete",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/tools-for-using-services/account/use-cases/ideasportal",
     "destination": "/en/tools-for-using-services/account",
     "permanent": false,
@@ -22016,12 +21974,6 @@
   {
     "source": "/ru/tools-for-using-services/account/use-cases/systemstate",
     "destination": "/ru/tools-for-using-services/account/how-to-guides/systemstate",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/ru/tools-for-using-services/account/use-cases/account-delete",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -24613,13 +24565,13 @@
   },
   {
     "source": "/ru/en",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "destination": "/en/access/iam/how-to-guides/federations/add-fim-for-ad",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ru",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "destination": "/ru/access/iam/how-to-guides/federations/add-fim-for-ad",
     "permanent": false,
     "locale": false
   },
@@ -26173,13 +26125,7 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "destination": "/ru/access/iam/how-to-guides/federations/add-fim-for-ad",
     "permanent": false,
     "locale": false
   },
@@ -26497,13 +26443,7 @@
   },
   {
     "source": "/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/tools-for-using-services/account/how-to-guides/account-delete",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "destination": "/en/access/iam/how-to-guides/federations/add-fim-for-ad",
     "permanent": false,
     "locale": false
   },

@@ -5,5 +5,19 @@
   "sectionTitle": "Locking objects with object lock",
   "icon": "",
   "weight": 4,
-  "uuid": "9b6abf28-3278-45f5-b94e-52d6832b955d"
+  "uuid": "9b6abf28-3278-45f5-b94e-52d6832b955d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

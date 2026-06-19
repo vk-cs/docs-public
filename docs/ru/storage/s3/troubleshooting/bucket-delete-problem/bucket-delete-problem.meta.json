@@ -5,5 +5,12 @@
   "sectionTitle": "Не получается удалить бакет",
   "icon": "",
   "weight": 1,
-  "uuid": "d9d03e2b-619b-42a3-906d-b0edaa7d5fdb"
+  "uuid": "d9d03e2b-619b-42a3-906d-b0edaa7d5fdb",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
 }

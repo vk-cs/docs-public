@@ -3,5 +3,13 @@
   "sectionTitle": "Kubernetes",
   "metaDescription": "Kubernetes",
   "weight": 6,
-  "icon": ""
+  "icon": "",
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private_pdf"
+    ]
+  }
 }
+

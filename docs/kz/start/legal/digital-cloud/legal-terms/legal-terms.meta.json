@@ -1,10 +1,24 @@
 {
   "title": "Пайдалану шарттары",
   "shortDescription": "",
-  "metaDescription": "«VK Cloud» платформасын пайдалану шарттары, 01.02.2025 ж. бастап",
+  "metaDescription": "«VK Cloud» платформасын пайдалану шарттары 01.02.2025 бастап",
   "sectionTitle": "Пайдалану шарттары",
   "icon": "",
   "disableGithub": true,
   "disableDateInformation": true,
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

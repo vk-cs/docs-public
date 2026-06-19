@@ -4,5 +4,15 @@
   "metaDescription": "VK Cloud-тағы Cloud Databases: қолжетімді PostgreSQL кеңейтімдері мен олардың параметрлерінің тізімі.",
   "sectionTitle": "PostgreSQL кеңейтімдері",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

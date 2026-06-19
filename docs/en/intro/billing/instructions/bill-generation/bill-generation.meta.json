@@ -1,9 +1,14 @@
 {
-    "title": "Formation of invoices for payment",
-      "shortDescription": "How to create an invoice for services for an individual and a legal entity",
-      "metaDescription": "VK Cloud: how to create an invoice for services for an individual and a legal entity",
-    "sectionTitle": "Formation of invoices for payment",
-    "icon": "",
-    "weight": 4,
-    "uuid": "8b6a00be-9b3a-4f74-93c1-83ca0390cafc"
+  "title": "Formation of invoices for payment",
+  "shortDescription": "How to create an invoice for services for an individual and a legal entity",
+  "metaDescription": "VK Cloud: how to create an invoice for services for an individual and a legal entity",
+  "sectionTitle": "Formation of invoices for payment",
+  "icon": "",
+  "weight": 4,
+  "uuid": "8b6a00be-9b3a-4f74-93c1-83ca0390cafc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

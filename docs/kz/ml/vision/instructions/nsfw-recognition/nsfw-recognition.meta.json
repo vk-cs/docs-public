@@ -4,5 +4,10 @@
   "metaDescription": "Әдіс фотосуретте NSFW (18+) контентінің бар-жоғын анықтауға мүмкіндік береді",
   "sectionTitle": "18+ контентін тану",
   "icon": "",
-  "weight": 8
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

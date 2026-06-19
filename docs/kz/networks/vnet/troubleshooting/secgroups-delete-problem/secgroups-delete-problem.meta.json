@@ -4,5 +4,11 @@
   "metaDescription": "Қауіпсіздік тобын жою кезінде қате туындаса не істеу керек",
   "sectionTitle": "Қауіпсіздік тобын жою мүмкін емес",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private"
+    ]
+  }
 }

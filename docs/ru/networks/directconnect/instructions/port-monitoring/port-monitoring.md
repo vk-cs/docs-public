@@ -1,10 +1,12 @@
+# {heading(Просмотр состояния портов коммутаторов)[id=directconnect-port-monitoring]}
+
 Вы можете получить параметры портов коммутаторов, через которые происходит подключение к сервису Cloud Direct Connect, в личном кабинете или с помощью запроса к API.
 
 {tabs}
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Direct Connect**.
 
@@ -24,9 +26,9 @@
 
 {tab(API)}
 
-1. [Активируйте](/ru/tools-for-using-services/api/rest-api/enable-api) доступ по API.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=Активируйте]} доступ по API.
 1. Установите утилиты [cURL](https://curl.se) и [jq](https://jqlang.org/), если они еще не установлены.
-1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`.
 1. Получите список всех соединений:
 
    ```console
@@ -37,9 +39,9 @@
 
 1. Запишите значение параметра `uuid` из полученного ответа.
 
-    {cut(Пример ответа)}
+   {cut(Пример ответа)}
 
-    ```json
+   ```json
 
     [
       {
@@ -73,25 +75,22 @@
       }
     ]
 
-    ```
+   ```
 
-    {/cut}
+   {/cut}
 
 1. Получите подробные данные о порте:
 
-    ```console
+   ```console
+   curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.com/junp/v1/connections/{connectionUuid}
+   ```
 
-    curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.com/junp/v1/connections/{connectionUuid}
+   Здесь `connectionUuid` — значение параметра `uuid`, полученное при запросе списка соединений.
 
-    ```
+   {cut(Пример ответа)}
 
-    Здесь `connectionUuid` — значение параметра `uuid`, полученное при запросе списка соединений.
-
-    {cut(Пример ответа)}
-
-    ```json
-
-    {
+   ```json
+   {
       "created_at": "2025-05-07T08:39:10.897867Z",
       "error_message": "string",
       "network_was_created": true,
@@ -130,27 +129,24 @@
         ]
       }
     }
+   ```
 
-    ```
+   Здесь:
 
-    Здесь:
+   - `link_status` — статус порта: `Up` или `Down`;
+   - `ingress_packets_rate` — скорость входящего трафика в пакетах в секунду;
+   - `ingress_bits_rate` — скорость входящего трафика в битах в секунду;
+   - `egress_packets_rate` — скорость исходящего трафика в пакетах в секунду;
+   - `egress_bits_rate` — скорость исходящего трафика в битах в секунду;
+   - `rx_power` — оптическая мощность входящего сигнала;
+   - `tx_power` — оптическая мощность исходящего сигнала.
 
-    - `link_status` — статус порта: `Up` или `Down`;
-    - `ingress_packets_rate` — скорость входящего трафика в пакетах в секунду;
-    - `ingress_bits_rate` — скорость входящего трафика в битах в секунду;
-    - `egress_packets_rate` — скорость исходящего трафика в пакетах в секунду;
-    - `egress_bits_rate` —  скорость исходящего трафика в битах в секунду;
-    - `rx_power` — оптическая мощность входящего сигнала;
-    - `tx_power` — оптическая мощность исходящего сигнала.
-
-    {/cut}
+   {/cut}
 
 {/tab}
 
 {/tabs}
 
 {note:info}
-
 Оптическая мощность может не отображаться, если коммутатор не поддерживает передачу этого параметра.
-
 {/note}

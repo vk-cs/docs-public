@@ -5,5 +5,10 @@
   "sectionTitle": "Установка SSL-сертификатов на инстансы сервисов",
   "icon": "",
   "weight": 2,
-  "uuid": "c12a3eca-4404-43ef-8f95-77c8679be0de"
+  "uuid": "c12a3eca-4404-43ef-8f95-77c8679be0de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

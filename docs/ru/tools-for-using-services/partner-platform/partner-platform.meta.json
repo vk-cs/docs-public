@@ -1,11 +1,16 @@
 {
-  "title": "Платформа партнера VK Cloud",
-  "shortDescription": "Управление клиентами партнера VK Cloud и их проектами",
+  "title": "Платформа партнера {var(cloud)}",
+  "shortDescription": "Управление клиентами партнера {var(cloud)} и их проектами",
   "metaDescription": "Как работать с инструментами партнерской платформы VK Cloud: работа в личном кабинете партнера VK Cloud и особенности личного кабинета клиента партнера",
-  "sectionTitle": "Платформа партнера VK Cloud",
+  "sectionTitle": "Платформа партнера {var(cloud)}",
   "icon": "",
   "isBeta": false,
   "hidden": false,
   "weight": 4,
-  "uuid": "1cc994ec-a0ba-4f98-ade8-c1831f7c6d33"
+  "uuid": "1cc994ec-a0ba-4f98-ade8-c1831f7c6d33",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

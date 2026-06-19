@@ -5,5 +5,10 @@
   "sectionTitle": "Image-based қолданбаларды басқару",
   "weight": 3,
   "hidden": true,
-  "isBeta": true
+  "isBeta": true,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

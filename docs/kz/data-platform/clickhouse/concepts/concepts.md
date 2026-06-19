@@ -1,3 +1,5 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud ClickHouse сервисінің негізгі ұғымдары мен сипаттамалары
+{ifndef(data-p-pdf)}
+Cloud ClickHouse сервисінің негізгі тұжырымдамалары мен сипаттамалары.
+{/ifndef}

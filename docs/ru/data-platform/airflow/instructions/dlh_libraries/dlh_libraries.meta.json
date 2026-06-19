@@ -1,0 +1,14 @@
+{
+  "title": "Библиотеки для работы в DLH",
+  "shortDescription": "Python-библиотеки для работы Cloud Airflow в Data Lakehouse",
+  "metaDescription": "Узнайте какие Python-библиотеки необходимо использовать для работы с Cloud Airflow в DLH (Data Lakehouse)",
+  "sectionTitle": "Библиотеки для работы в DLH",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

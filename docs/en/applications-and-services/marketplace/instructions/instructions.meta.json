@@ -5,5 +5,10 @@
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,
-  "uuid": "47775d45-6a89-4538-857c-e25620f9bc25"
+  "uuid": "47775d45-6a89-4538-857c-e25620f9bc25",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

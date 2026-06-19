@@ -4,5 +4,10 @@
   "metaDescription": "Arenadata DB – Greenplum негізіндегі басқарылатын сервис түріндегі қуатты таратылған талдамалық дерекқор. Бұл — сызықтық масштабталуы бар жаппай-параллельді СУБД.",
   "sectionTitle": "Arenadata DB as a Service",
   "icon": "",
-  "weight": 9
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

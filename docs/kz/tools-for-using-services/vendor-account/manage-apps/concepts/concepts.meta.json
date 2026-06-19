@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Marketplace қолданбалар дүкеніне қосылатын сервистердің жалпы сипаттамалары және оларға қойылатын талаптар",
   "sectionTitle": "Тұжырымдамалар",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-# {heading(ivkcs_ssh_keypair ресурсы)[id=ivkcs_ssh_keypair]}
+# {heading(Ресурс ivkcs_ssh_keypair)[id=ivkcs_ssh_keypair]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

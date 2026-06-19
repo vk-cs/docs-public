@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_user_data ресурсы",
   "sectionTitle": "ivkcs_user_data ресурсы",
-  "weight": 10
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

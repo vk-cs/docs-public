@@ -5,5 +5,10 @@
     "sectionTitle": "Включение и отключение CDN-ресурса",
     "icon": "",
     "weight": 1,
-    "uuid": "8d715e38-23af-4380-8f5c-58c1acae4520"
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "8d715e38-23af-4380-8f5c-58c1acae4520"
 }

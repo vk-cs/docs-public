@@ -4,5 +4,10 @@
   "metaDescription": "Data LakeHouse сервисінің архитектурасы",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

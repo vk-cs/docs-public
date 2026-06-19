@@ -5,5 +5,19 @@
   "sectionTitle": "Модели сотрудничества",
   "icon": "",
   "weight": 2,
-  "uuid": "a1ba38a4-ae78-4635-8fdd-b3fb9924f2dd"
+  "uuid": "a1ba38a4-ae78-4635-8fdd-b3fb9924f2dd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

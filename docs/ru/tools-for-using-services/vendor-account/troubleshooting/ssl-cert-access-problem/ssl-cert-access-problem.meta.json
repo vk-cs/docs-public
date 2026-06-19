@@ -5,5 +5,10 @@
   "sectionTitle": "Ошибка доступа при создании SSL-сертификата",
   "icon": "",
   "weight": 1,
-  "uuid": "2dc3c09a-bd76-4476-999b-b54bb998d6ff"
+  "uuid": "2dc3c09a-bd76-4476-999b-b54bb998d6ff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

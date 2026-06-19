@@ -1,0 +1,14 @@
+{
+  "title": "Құралдарды баптау",
+  "shortDescription": "Жеке кабинетке қалай кіруге, OpenStack CLI не API арқылы қалай қосылуға, Terraform-ды қалай орнатуға болады",
+  "metaDescription": "Құралдарды баптау",
+  "sectionTitle": "Құралдарды баптау",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

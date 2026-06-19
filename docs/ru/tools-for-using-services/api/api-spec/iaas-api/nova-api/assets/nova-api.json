@@ -2284,7 +2284,7 @@
           }
         }
       },
-      "getServerDetails":{
+      "getServerDetails": {
         "type": "object",
         "properties": {
           "server": {
@@ -2292,7 +2292,7 @@
           }
         }
       },
-      "getListServerDetails":{
+      "getListServerDetails": {
         "type": "object",
         "properties": {
           "servers": {
@@ -2425,7 +2425,7 @@
           },
           "rxtx_factor": {
             "type": "number",
-            "default": 1.0,
+            "default": 1,
             "description": "Коэффициент приема/передачи, который будет установлен на портах, если поддерживается расширение QOS"
           },
           "os-flavor-access:is_public": {

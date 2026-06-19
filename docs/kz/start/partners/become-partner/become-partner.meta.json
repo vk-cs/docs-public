@@ -5,5 +5,19 @@
   "sectionTitle": "Серіктес қалай болуға болады",
   "icon": "",
   "disableGithub": true,
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

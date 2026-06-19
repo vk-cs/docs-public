@@ -5,5 +5,14 @@
   "sectionTitle": "Режимы рабочего стола",
   "icon": "",
   "weight": 3,
-  "uuid": "9346fdba-7506-48c2-aaf5-3bc85d180874"
+  "uuid": "9346fdba-7506-48c2-aaf5-3bc85d180874",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

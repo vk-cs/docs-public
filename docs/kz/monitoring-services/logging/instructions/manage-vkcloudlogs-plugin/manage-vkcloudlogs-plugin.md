@@ -1,9 +1,11 @@
+# {heading(Логтау агентін басқару)[id=logging-manage-plugin]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Агентті қосу немесе өшіру
+## {heading(Агентті қосу немесе өшіру)[id=logging-plugin-on-off]}
 
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
-1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына [көз жеткізіңіз](../connect-plugin).
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
+1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына {linkto(../connect-plugin#logging-connect-plugin)[text=көз жеткізіңіз]}.
 
 - Агентті қосу үшін келесі команданы орындаңыз:
 
@@ -35,10 +37,10 @@
 
   {/tabs}
 
-## {heading(Қосымша мәтіндік файлдардан логтарды жинау үшін агентті баптау)[id=configure_agent]}
+## {heading(Қосымша мәтіндік файлдардан логтарды жинау үшін агентті баптау)[id=logging-configure-agent]}
 
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
-1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына [көз жеткізіңіз](../connect-plugin).
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
+1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына {linkto(../connect-plugin#logging-connect-plugin)[text=көз жеткізіңіз]}.
 1. `vkcloudlogs-fluent-bit.conf` файлын қажетті түрде түзетіңіз:
 
    - `[INPUT]` секциясында логтар көзі файлына апаратын жолды `Path` параметрінде және тегті `Tag` параметрінде көрсетіңіз;
@@ -85,9 +87,9 @@
 
    {/tabs}
 
-## Агент пен плагинді жою
+## {heading(Агент пен плагинді жою)[id=logging-plugin-delete]}
 
-1. [Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect) виртуалды машинаға.
+1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
 1. Келесі команданы орындаңыз:
 
    {tabs}

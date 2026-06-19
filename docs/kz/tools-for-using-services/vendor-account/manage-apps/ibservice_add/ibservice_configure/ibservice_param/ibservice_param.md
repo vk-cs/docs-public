@@ -1,4 +1,4 @@
-# {heading(service.yaml файлы)[id=ibservice_param]}
+# {heading(Файл service.yaml)[id=ibservice_param]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -145,7 +145,7 @@ plans:
 
 Тарифтік жоспарлар матрицасына арналған тарифтік опцияларды көрсету үшін (`parameters` директориясында сипатталған барлық мүмкін опциялар ішінен):
 
-1. Ішінде `preview` массиві бар `parameters` секциясын көрсетіңіз.
+1. Ішінде `parameters` массиві бар `preview` секциясын көрсетіңіз.
 1. Массив ішінде `<OPTION_NAME>` тарифтік опцияларының атауларын `name` кілттерінің көмегімен тізіп шығыңыз. Тарифтік опция атаулары `parameters/<OPTION_NAME>.yaml` YAML-файлдарының атауларына сәйкес болуы керек.
 
    Массив бос болуы мүмкін.
@@ -161,7 +161,7 @@ preview:
 ```
 {/caption}
 
-## {heading(service.yaml мысалы файлы)[id=ibexample_service]}
+## {heading(Файл service.yaml мысалы)[id=ibexample_service]}
 
 ```yaml
 id: 72b70199-1823-40c8-aa7e-f43a23ddf380

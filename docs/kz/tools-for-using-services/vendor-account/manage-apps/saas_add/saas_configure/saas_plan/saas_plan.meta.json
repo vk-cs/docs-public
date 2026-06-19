@@ -2,5 +2,10 @@
   "title": "`Plans` секциясы",
   "shortDescription": "",
   "metaDescription": "`Plans` секциясы",
-  "sectionTitle": "`Plans` секциясы"
+  "sectionTitle": "`Plans` секциясы",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

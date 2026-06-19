@@ -1,3 +1,5 @@
+# {heading(Практикалық нұсқаулықтар)[id=tools-account-how-to-guides]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-VK Cloud жеке кабинет сервисін пайдалану сценарийлері.
+{var(cloud)} жеке кабинет сервисін пайдалану сценарийлері.

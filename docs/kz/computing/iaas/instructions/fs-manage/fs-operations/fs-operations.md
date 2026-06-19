@@ -1,12 +1,14 @@
+# {heading(Файлдық сақтау орындарын басқару)[id=iaas-fs-operations]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## Файлдық сақтау орындарының тізімін қарау
+## {heading(Файлдық сақтау орындарының тізімін қарау)[id=iaas-fs-operations-list-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз. Файлдық сақтау орындарының тізімі көрсетіледі.
 
@@ -14,25 +16,25 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
-    ```console
-    openstack share list
-    ```
+   ```console
+   openstack share list
+   ```
 
 {/tab}
 
 {/tabs}
 
-## Файлдық сақтау орны туралы ақпаратты қарау
+## {heading(Файлдық сақтау орны туралы ақпаратты қарау)[id=iaas-fs-operations-info-view]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті файлдық сақтау орнының атауын басыңыз. Ол туралы ақпарат көрсетіледі.
@@ -41,13 +43,13 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
-    ```console
-    openstack share show <ХРАНИЛИЩЕ>
-    ```
+   ```console
+   openstack share show <ХРАНИЛИЩЕ>
+   ```
 
    Мұнда `<ХРАНИЛИЩЕ>` — файлдық сақтау орнының атауы немесе идентификаторы.
 
@@ -55,13 +57,13 @@
 
 {/tabs}
 
-## {heading(Файлдық сақтау орнының өлшемін ұлғайту)[id=increasing_file_storage_size]}
+## {heading(Файлдық сақтау орнының өлшемін ұлғайту)[id=iaas-fs-operations-size]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті сақтау орны үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Өлшемін өзгерту** тармағын таңдаңыз.
@@ -71,13 +73,13 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Келесі команданы орындаңыз:
 
-    ```console
-    openstack share extend <ХРАНИЛИЩЕ> <РАЗМЕР>
-    ```
+   ```console
+   openstack share extend <ХРАНИЛИЩЕ> <РАЗМЕР>
+   ```
 
    Мұнда:
 
@@ -89,20 +91,18 @@
 {/tabs}
 
 {note:info}
-
 Файлдық сақтау орнының өлшемін азайтуға болмайды.
-
 {/note}
 
-## {heading(Файлдық сақтау орнын және оның желісін жою)[id=deleting_a_file_storage_and_its_network]}
+## {heading(Файлдық сақтау орнын және оның желісін жою)[id=iaas-fs-operations-delete]}
 
-Файлдық сақтау орнын жою үшін алдымен оны виртуалды машиналарда [ажырату](/kz/computing/iaas/instructions/fs-manage/fs-connect#unmount_file_storage) және оның барлық снимоктарын [жою](../fs-snapshots#deleting_a_snapshot) қажет.
+Файлдық сақтау орнын жою үшін алдымен оны виртуалды машиналарда [ажырату](/kz/computing/iaas/instructions/fs-manage/fs-connect#unmount_file_storage) және оның барлық снимоктарын [жою](../fs-snapshots#iaas-fs-snapshots-deleting) қажет.
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті сақтау орны үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Жою** тармағын таңдаңыз.
@@ -114,21 +114,21 @@
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_openstack_klientin_ornatynyz) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#3_autentifikaciyadan_otiniz).
-1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#2_opcionaldy_kosymsha_paketterdi_ornatynyz) көз жеткізіңіз.
+1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Manila клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) көз жеткізіңіз.
 1. Файлдық сақтау орнын жою үшін келесі команданы орындаңыз:
 
-    ```console
-    openstack share delete <ХРАНИЛИЩЕ>
-    ```
+   ```console
+   openstack share delete <ХРАНИЛИЩЕ>
+   ```
 
    Мұнда `<ХРАНИЛИЩЕ>` — жойылуы қажет файлдық сақтау орнының атауы немесе идентификаторы.
 
 1. Файлдық сақтау орнының желісін жою үшін келесі команданы орындаңыз:
 
-    ```console
-    openstack share network delete <ID_СЕТИ>
-    ```
+   ```console
+   openstack share network delete <ID_СЕТИ>
+   ```
 
    Мұнда `<ID_СЕТИ>` — жойылуы қажет файлдық сақтау орны желісінің идентификаторы.
 

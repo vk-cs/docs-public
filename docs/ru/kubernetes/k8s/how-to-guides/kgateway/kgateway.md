@@ -1,17 +1,19 @@
-Используйте аддон [Kgateway](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#kgateway), чтобы настроить маршрутизацию трафика в кластере Kubernetes через [Gateway API](https://gateway-api.sigs.k8s.io/) и направить запросы к тестовому приложению.
+# {heading(Использование Kgateway)[id=k8s-kgateway]}
+
+Используйте аддон {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kgateway)[text=Kgateway]}, чтобы настроить маршрутизацию трафика в кластере Kubernetes через [Gateway API](https://gateway-api.sigs.k8s.io/) и направить запросы к тестовому приложению.
 
 {note:info}
-Kgateway доступен только для кластеров [второго поколения](/ru/kubernetes/k8s/concepts/cluster-generations).
+Kgateway доступен только для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
 {/note}
 
-## Подготовительные шаги
+## {heading(Подготовительные шаги)[id=k8s-kgateway-prepare]}
 
-1. [Создайте](/ru/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) кластер Kubernetes актуальной версии, если это еще не сделано.
-1. [Установите и настройте](../../connect/kubectl) `kubectl`, если это еще не сделано.
-1. [Подключитесь](../../connect/kubectl#check_connection) к кластеру при помощи `kubectl`.
-1. [Установите аддон Kgateway](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-kgateway), если это еще не сделано.
+1. {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
+1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-kgateway#k8s-install-advanced-kgateway)[text=Установите аддон Kgateway]}, если это еще не сделано.
 
-## {counter(kgateway)}. Создайте тестовое приложение
+## {heading({counter(kgateway)}. Создайте тестовое приложение)[id=k8s-kgateway-app]}
    
 1. Создайте файл манифеста `httpbin.yaml` для тестового приложения `httpbin`:
 
@@ -63,10 +65,10 @@ Kgateway доступен только для кластеров [второго
    
 В результате применения манифеста будет запущено тестовое приложение `httpbin` в виде `Deployment`, а также будет создан сервис для внутреннего доступа к этому приложению. Kgateway в дальнейшем будет принимать внешний HTTP-трафик, маршрутизировать его и перенаправлять в этот сервис.  
 
-## {counter(kgateway)}. Создайте объект Gateway
+## {heading({counter(kgateway)}. Создайте объект Gateway)[id=k8s-kgateway-gateway]}
 
 {note:warn}
-Для объекта Gateway будут созданы [стандартный балансировщик нагрузки](/ru/networks/balancing/concepts/load-balancer#tipy_balansirovshchikov_nagruzki) и [Floating IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#floating-ip). Их использование [тарифицируется](/ru/networks/vnet/tariffication).
+Для объекта Gateway будут созданы {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]} и {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}. Их использование {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 1. Создайте файл манифеста `my-gateway.yaml` для ресурса Gateway API [типа](https://gateway-api.sigs.k8s.io/reference/api-types/gateway/) `Gateway`:
@@ -91,9 +93,9 @@ Kgateway доступен только для кластеров [второго
    kubectl apply -f my-gateway.yaml
    ```
 
-В результате применения манифеста Kgateway создаст сервис типа `LoadBalancer`. VK Cloud автоматически создаст стандартный балансировщик нагрузки и назначит ему публичный Floating IP-адрес для приема трафика.
+В результате применения манифеста Kgateway создаст сервис типа `LoadBalancer`. {var(cloud)} автоматически создаст стандартный балансировщик нагрузки и назначит ему публичный Floating IP-адрес для приема трафика.
 
-## {counter(kgateway)}. Создайте объект HTTPRoute
+## {heading({counter(kgateway)}. Создайте объект HTTPRoute)[id=k8s-kgateway-route]}
 
 1. Создайте файл манифеста `my-route.yaml` для ресурса Gateway API [типа](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/) `HTTPRoute`, который описывает правило маршрутизации HTTP-трафика для Kgateway:
 
@@ -120,7 +122,7 @@ Kgateway доступен только для кластеров [второго
 
 В результате применения манифеста HTTP-запросы будут отправляться в сервис `httpbin`. 
 
-## {counter(kgateway)}. Проверьте работу Kgateway
+## {heading({counter(kgateway)}. Проверьте работу Kgateway)[id=k8s-kgateway-check]}
 
 1. Подождите несколько минут, пока балансировщик нагрузки получит внешний IP-адрес, и выполните команду, чтобы его узнать:
 
@@ -164,7 +166,7 @@ Kgateway доступен только для кластеров [второго
    ```
    {/cut}
 
-## Удалите неиспользуемые ресурсы
+## {heading(Удалите неиспользуемые ресурсы)[id=k8s-kgateway-delete]}
 
 Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы аддона Kgateway, вам больше не нужны, удалите их:
 
@@ -174,4 +176,4 @@ Kgateway доступен только для кластеров [второго
    kubectl delete namespace httpbin
    ```
 
-1. [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) созданный кластер, чтобы воспользоваться им позже, или [удалите](ru/kubernetes/k8s/instructions/manage-cluster#delete_cluster) его навсегда.
+{include(/ru/_includes/_delete-test-cluster-short.md)}

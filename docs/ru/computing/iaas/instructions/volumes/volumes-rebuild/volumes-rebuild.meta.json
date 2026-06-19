@@ -1,0 +1,18 @@
+{
+  "title": "Восстановление диска",
+  "sectionTitle": "Восстановление диска",
+  "shortDescription": "Как восстановить диск из резервной копии",
+  "metaDescription": "Cloud Servers: восстановление диска виртуальной машины из резервной копии в VK Cloud.",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

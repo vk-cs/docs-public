@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Voice тұжырымдамалары: сервистің жұмыс істеу және құрылу принциптері",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "Егер Terraform арқылы серверді жасау кезінде 403 Working with SDN=NEUTRON is not allowed қатесі пайда болса, не істеу керек",
   "sectionTitle": "Серверді жасау кезіндегі 403 қатесі",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

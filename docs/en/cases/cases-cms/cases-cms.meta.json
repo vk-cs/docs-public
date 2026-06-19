@@ -5,5 +5,19 @@
   "sectionTitle": "Installing CMS on Linux",
   "icon": "",
   "weight": 2,
-  "uuid": "1fa26c7c-e892-4c3a-b6f7-3d598933517c"
+  "uuid": "1fa26c7c-e892-4c3a-b6f7-3d598933517c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

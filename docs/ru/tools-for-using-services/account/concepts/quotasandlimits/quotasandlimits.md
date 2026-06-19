@@ -1,4 +1,6 @@
-## Квоты
+# {heading(Квоты и лимиты)[id=tools-account-concepts-quotasandlimits]}
+
+## {heading(Квоты)[id=quotasandlimits-quotas]}
 
 Квоты — это применяемые к проекту ограничения:
 
@@ -7,36 +9,38 @@
 
 Например, проверка доступных квот происходит при создании новой виртуальной машины. Если квоты позволяют создать еще одну виртуальную машину, и для ее создания достаточно ресурсов (vCPU, памяти и дискового пространства), виртуальная машина успешно создается.
 
-Квоты не делятся между несколькими проектами одного владельца и не наследуются одним проектом от другого. Список квот различается для разных [регионов](../regions).
+Квоты не делятся между несколькими проектами одного владельца и не наследуются одним проектом от другого.
+{ifdef(public)}
+Список квот различается для разных {linkto(../regions#tools-account-concepts-regions)[text=регионов]}.
 
 После активации сервисов проекту становятся доступны базовые квоты. Для них установлены значения по умолчанию, которые применяются для всех новых проектов региона.
 
-Квоты можно [посмотреть](../../instructions/project-settings/manage#prosmotr_kvot_proekta):
+Квоты можно {linkto(../../instructions/project-settings/manage#project-view-quotas)[text=посмотреть]}:
 
-- краткий список — [в личном кабинете](../../instructions/project-settings/manage#prosmotr_kvot_proekta);
+- краткий список — в личном кабинете;
 - расширенный список — через OpenStack CLI.
 
-Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — [квота на количество проектов](#obshchie_d4f726f4), которые может создать один пользователь.
+Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — {linkto(#quotasandlimits-general)[text=квота на количество проектов]}, которые может создать один пользователь.
 
-Квоты тесно связаны с [техническими лимитами](#kvoty_i_tehnicheskie_limity).
+Квоты тесно связаны с {linkto(#quotasandlimits-tech-limits)[text=техническими лимитами]}.
 
-## Квоты и технические лимиты
+## {heading(Квоты и технические лимиты)[id=quotasandlimits-tech-limits]}
 
-Технические лимиты — это ограничения, обусловленные особенностями архитектуры VK Cloud, которые невозможно превысить.
+Технические лимиты — это ограничения, обусловленные особенностями архитектуры {var(cloud)}, которые невозможно превысить.
 
-Другие лимиты не связаны с физическими ограничениями и базируются на эксплуатационных требованиях сервисов. Например, [сетевые ограничения](#nets) вводятся, чтобы гарантировать оптимальную производительность сетей и их стабильную работу.
+Другие лимиты не связаны с физическими ограничениями и базируются на эксплуатационных требованиях сервисов. Например, {linkto(#quotasandlimits-nets)[text=сетевые ограничения]} вводятся, чтобы гарантировать оптимальную производительность сетей и их стабильную работу.
 
 Для некоторых технических лимитов не существует соответствующих им квот.
 
-Квоты можно [увеличить](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) в пределах технических лимитов. По умолчанию увеличение квот согласуется технической поддержкой, но вы можете автоматически добавить до 30% от текущего значения квот при выполнении следующих обязательных условий:
+Квоты можно {linkto(../../instructions/project-settings/manage#project-increase-quota)[text=увеличить]} в пределах технических лимитов. По умолчанию увеличение квот согласуется технической поддержкой, но вы можете автоматически добавить до 30% от текущего значения квот при выполнении следующих обязательных условий:
 
-{include(/ru/_includes/_quotas.md)[tags=autoquota-conditions]}
+{include(../../../../_includes/_quotas.md)[tags=autoquota-conditions]}
 
 Нежесткие лимиты можно превысить — либо также через [техническую поддержку](/ru/contacts), либо самостоятельно. Однако превышение этих лимитов может негативно сказаться на стабильности работы.
 
 Далее приведен список квот и лимитов для региона Москва.
 
-### Общие
+### {heading(Общие)[id=quotasandlimits-general]}
 
 [cols="2,1,1,1,1", options="header"]
 |===
@@ -47,28 +51,27 @@
 | Жесткий
 
 | Количество проектов у пользователя
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 | 5 шт.
 | 100 шт.
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Количество администраторов в проекте
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 | 50 человек
 | 50 человек
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Количество пар SSH-ключей
 | `key-pairs` в CLI
 | 100 пар ключей
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
-### Виртуальные машины
+### {heading(Виртуальные машины)[id=quotasandlimits-vm]}
 
-#### Общее количество ВМ и vCPU
+#### {heading(Общее количество ВМ и vCPU)[id=quotasandlimits-vm-vcpu]}
 
 [cols="2,1,1,1,1,1", options="header"]
 |===
@@ -84,67 +87,63 @@
 |`instances`
 | 15 шт.
 | 1000 шт.
-| ![](/ru/assets/no.svg "inline") 
+| ![](../../../../assets/no.svg "inline") 
 
 | Количество vCPU в проекте
 | **vCPU**
 | `cores`
 | 48 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Общий объем оперативной памяти в проекте
 | **RAM**
 | `ram`
 | 73728 МБ
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
-Лимит на количество инстансов в проекте можно превысить, если [увеличить](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) соответствующую квоту.
+Лимит на количество инстансов в проекте можно превысить, если {linkto(../../instructions/project-settings/manage#project-increase-quota)[text=увеличить]} соответствующую квоту.
 
 {note:info}
-
 В личном кабинете может отображаться не более 1000 виртуальных машин.
-
 {/note}
 
-#### {heading(Лимиты без квот)[id=no_quotas_limits]}
+#### {heading(Лимиты без квот)[id=quotasandlimits-vm-no-quotas-limits]}
 
-[cols="3,1,1", options="header"]
+[cols="2,1,1", options="header"]
 |===
-|Параметр
-|Лимит
-|Жесткий
+| Параметр
+| Лимит
+| Жесткий
 
-|Количество vCPU у одного инстанса
-|32 шт.
-|![](/ru/assets/no.svg "inline")
+| Количество vCPU у одного инстанса
+| 32 шт.
+| ![](../../../../assets/no.svg "inline")
 
-|Количество High-Freq vCPU у одного инстанса
-|24 шт.
-|![](/ru/assets/no.svg "inline")
+| Количество High-Freq vCPU у одного инстанса
+| 24 шт.
+| ![](../../../../assets/no.svg "inline")
 
-|Количество GPU у одного инстанса
-|4 шт.
+| Количество GPU у одного инстанса
+| 4 шт.
 
-(8 шт. для [Tesla H200](/ru/computing/gpu/concepts/about#flavors))
-|![](/ru/assets/check.svg "inline")
+(8 шт. для [Tesla H200](/ru/computing/gpu/concepts/about#gpu-about-flavors))
+| ![](../../../../assets/check.svg "inline")
 
-|Объем RAM у одного инстанса
-|1024 ГБ
-|![](/ru/assets/no.svg "inline")
-
+| Объем RAM у одного инстанса   
+| 1024 ГБ
+| ![](../../../../assets/no.svg "inline")
 |===
 
 Лимиты на количество процессоров (vCPU и High-Freq vCPU) и оперативной памяти связаны с ограничениями стандартных гипервизоров. Если вам необходимо большее количество vCPU или High-Freq vCPU, обратитесь в [техническую поддержку](/ru/contacts) и закажите выделенный гипервизор с нужными характеристиками.
 
 Лимит GPU у одного инстанса связан с ограничением технологии KVM, которая не позволяет подключить к одной виртуальной машине большее количество видеокарт.
 
-### {heading(Cloud Containers (контейнеры Kubernetes))[id=k8s]}
+### {heading(Cloud Containers (контейнеры Kubernetes))[id=quotasandlimits-k8s]}
 
-#### Ресурсы контейнеров для одного проекта
+#### {heading(Ресурсы контейнеров для одного проекта)[id=quotasandlimits-k8s-one-project]}
 
 [cols="2,2,1,1", options="header"]
 |===
@@ -158,7 +157,7 @@
 | 2 шт.
 | не ограничено
 
-| Количество [узлов](/ru/kubernetes/k8s/concepts/architecture#cluster_topology)
+| Количество {linkto(../../../../kubernetes/k8s/concepts/architecture#k8s-architecture-topology)[text=узлов]}
 | **Kubernetes ноды**
 | 10 шт.
 | не ограничено
@@ -187,10 +186,9 @@
 | **Kubernetes размер дисков**
 | 200 ГБ
 | не ограничено
-
 |===
 
-#### Лимиты без квот
+#### {heading(Лимиты без квот)[id=quotasandlimits-k8s-no-quotas-limits]}
 
 Помимо указанных выше квот, использование сервиса Cloud Containers также ограничивается определенными техническими лимитами.
 
@@ -201,58 +199,58 @@
 |Жесткий
 |Длина имени кластера Kubernetes и группы узлов
 |24 символа
-|![](/ru/assets/check.svg "inline")
+|![](../../../../assets/check.svg "inline")
 
 |Количество узлов в группе
 |500 шт.
-|![](/ru/assets/check.svg "inline")
+|![](../../../../assets/check.svg "inline")
 
 |Количество master-узлов в кластере
 |1, 3 или 5 шт.
-|![](/ru/assets/check.svg "inline")
+|![](../../../../assets/check.svg "inline")
 
-|Количество узлов в одной [зоне доступности](/ru/start/concepts/architecture#az)
+|Количество узлов в одной {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]}
 |200 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Количество групп узлов в кластере
 |50 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
-|Количество [подов](/ru/kubernetes/k8s/reference/pods) у кластера
+|Количество {linkto(../../../../kubernetes/k8s/reference/pods#k8s-pods)[text=подов]} у кластера
 |50000 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Количество подов у узла
 |110 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Количество сервисов у кластера
 |5000 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Количество пространств имен у кластера
 |5000 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Количество объектов у кластера
 |100000 шт.
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Объем базы [etcd](https://etcd.io/)
 |6 ГБ
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Объем ресурсов одного типа
 |800 МБ
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 |===
 
-Нежесткие лимиты можно превысить без обращения в техническую поддержку. Рекомендации по этим и другим параметрам в [официальной документации Kubernetes](https://kubernetes.io/docs/setup/best-practices/cluster-large/). Лимит на количество узлов в группе узлов не обусловлен требованиями Kubernetes, ограничение вводится на уровне VK Cloud.
+Нежесткие лимиты можно превысить без обращения в техническую поддержку. Рекомендации по этим и другим параметрам в [официальной документации Kubernetes](https://kubernetes.io/docs/setup/best-practices/cluster-large/). Лимит на количество узлов в группе узлов не обусловлен требованиями Kubernetes, ограничение вводится на уровне {var(cloud)}.
 
-### {heading(Диски и образы)[id=images-volumes]}
+### {heading(Диски и образы)[id=quotasandlimits-images-volumes]}
 
-#### Объем дисков
+#### {heading(Объем дисков)[id=quotasandlimits-images-volumes-size]}
 
 [cols="3,2,2,1,1", options="header"]
 |===
@@ -280,25 +278,24 @@
 | 600 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/start/concepts/architecture#az) GZ1 (legacy)
+| Общий объем дисков High-IOPS SSD в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]} GZ1 (legacy)
 | **Размер High-IOPS SSD в зоне - (DP1)**
 | `gigabytes_dp1-high-iops`
 | 200 ГБ
 | не ограничено
 
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/start/concepts/architecture#az) MS1 (legacy)
+| Общий объем дисков High-IOPS SSD в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]} MS1 (legacy)
 | **Размер High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `gigabytes_ko1-high-iops`
 | 200 ГБ
 | не ограничено
-
 |===
 
 Общий объем дисков Low Latency NVMe не квотируется и не ограничивается лимитами.
 
-Квоты на общий объем дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общий объем дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы [запрашиваете](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
+Квоты на общий объем дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общий объем дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы {linkto(../../instructions/project-settings/manage#project-increase-quota)[text=запрашиваете]} увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 
-#### Количество дисков
+#### {heading(Количество дисков)[id=quotasandlimits-images-volumes-number]}
 
 [cols="3,2,2,1,1", options="header"]
 |===
@@ -326,25 +323,24 @@
 | 60 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/start/concepts/architecture#az) GZ1 (legacy)
+| Количество дисков High-IOPS SSD в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]} GZ1 (legacy)
 | **Диски High-IOPS SSD в зоне - (DP1)**
 | `volumes_dp1-high-iops`
 | 32 шт.
 | не ограничено
 
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/start/concepts/architecture#az) MS1 (legacy)
+| Количество дисков High-IOPS SSD в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]} MS1 (legacy)
 | **Диски High-IOPS SSD в зоне Москва (MS1) (MS1)**
 | `volumes_ko1-high-iops`
 | 32 шт.
 | не ограничено
-
 |===
 
 Количество дисков Low Latency NVMe не квотируется и не ограничивается лимитами.
 
-Квоты на общее количество дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общее количество дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы [запрашиваете](/ru/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
+Квоты на общее количество дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общее количество дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы {linkto(../../instructions/project-settings/manage#project-increase-quota)[text=запрашиваете]} увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 
-#### Лимиты без квот
+#### {heading(Лимиты без квот)[id=quotasandlimits-images-volumes-no-quotas-limits]}
 
 [cols="2,2,3,1", options="header"]
 |===
@@ -359,67 +355,66 @@
 26 шт., если конфигурационный диск отключен
 |Лимит связан с ограничениями шины PCI.
 
-Если при [создании виртуальной машины](/ru/computing/iaas/instructions/vm/vm-create) в личном кабинете включена опция **Использовать конфигурационный диск** или в OpenStack CLI задействован параметр `--use-config-drive`, то максимальное количество дисков — 25 штук. Используйте конфигурационный диск в сетях без [DHCP-сервера](/ru/networks/vnet/concepts/ips-and-inet#setevaya_adresaciya).
+Если при {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создании виртуальной машины]} в личном кабинете включена опция **Использовать конфигурационный диск** или в OpenStack CLI задействован параметр `--use-config-drive`, то максимальное количество дисков — 25 штук. Используйте конфигурационный диск в сетях без {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-network-addressing)[text=DHCP-сервера]}.
 
 Если опция **Использовать конфигурационный диск** отключена или параметр `--use-config-drive` не задействован, то максимальное количество дисков — 26 штук
-|![](/ru/assets/check.svg "inline")
+|![](../../../../assets/check.svg "inline")
 
 |Размер одного диска HDD
 |5 ТБ через личный кабинет
-(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
+(1 ТБ при установленных {linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 100 ТБ при помощи OpenStack CLI
-|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения.
+|В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения.
 
-[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts)
-|![](/ru/assets/check.svg "inline")
+{linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts)
+|![](../../../../assets/check.svg "inline")
 
 |Размер одного диска SSD
 |5 ТБ через личный кабинет
-(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
+(1 ТБ при установленных {linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 100 ТБ при помощи OpenStack CLI
-|В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения.
+|В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения.
 
-[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts)
-|![](/ru/assets/check.svg "inline")
+{linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts)
+|![](../../../../assets/check.svg "inline")
 
 |Размер одного диска High-IOPS SSD
 |2 ТБ через личный кабинет
-(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
+(1 ТБ при установленных {linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts).
 
-[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
+{linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
-В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
-|![](/ru/assets/no.svg "inline")
+В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
+|![](../../../../assets/no.svg "inline")
 
 |Размер одного диска High-IOPS HA SSD
 |2 ТБ через личный кабинет
-(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
+(1 ТБ при установленных {linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts).
 
-[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
+{linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
-В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
-|![](/ru/assets/no.svg "inline")
+В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
+|![](../../../../assets/no.svg "inline")
 
 |Размер одного диска Low Latency NVMe
 |2 ТБ через личный кабинет
-(1 ТБ при установленных [антифрод-ограничениях](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam)).
+(1 ТБ при установленных {linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Лимит (10 ТБ) можно превысить, обратившись в [техническую поддержку](/ru/contacts).
 
-[Антифрод-ограничения](/ru/intro/it-security/platform-security#otslezhivanie_i_protivodeystvie_atakam) можно снять через обращение в [техническую поддержку](/ru/contacts).
+{linkto(../../../../intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
-В некоторых сервисах VK Cloud на размер дисков могут быть установлены собственные ограничения
-
-|![](/ru/assets/no.svg "inline")
+В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
+|![](../../../../assets/no.svg "inline")
 
 |Размер одного образа
 |100 ГБ через личный кабинет.
@@ -427,21 +422,21 @@
  500 ГБ при помощи OpenStack CLI
 |Лимит является жестким для сервиса Glance.
 
-Если вам необходимо загрузить образ большего размера, воспользуйтесь [инструкцией](/ru/storage/s3/how-to-guides/load-large-image)
-|![](/ru/assets/no.svg "inline")
+Если вам необходимо загрузить образ большего размера, воспользуйтесь [инструкцией](../../../../storage/s3/how-to-guides/load-large-image)
+|![](../../../../assets/no.svg "inline")
 
 |Общий объем образов
 |2 ТБ
 |Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts)
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 
 |Общее количество снимков дисков
 |200 шт.
 |Лимит можно превысить, обратившись в [техническую поддержку](/ru/contacts)
-|![](/ru/assets/no.svg "inline")
+|![](../../../../assets/no.svg "inline")
 |===
 
-### Файловые хранилища
+### {heading(Файловые хранилища)[id=quotasandlimits-fs]}
 
 [cols="3,2,1,1,1", options="header"]
 |===
@@ -455,41 +450,40 @@
 | **Файловые хранилища NFS/CIFS**
 | 15 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Общий объем всех файловых хранилищ в проекте
 | **Размер файловых хранилищ NFS/CIFS**
 | 500 ГБ
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Общий объем снимков файловых хранилищ в проекте
 | **Размер снимков файловых хранилищ NFS/CIFS**
 | 500 ГБ
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество сетей файловых хранилищ
 | **Сети файловых хранилищ NFS/CIFS**
 | 5 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Размер одного файлового хранилища
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 | 50 ТБ
-| ![](/ru/assets/check.svg "inline")
-
+| ![](../../../../assets/check.svg "inline")
 |===
 
 Квота на количество сетей файловых хранилищ (**Сети файловых хранилищ NFS/CIFS**) является квотой для внутреннего использования.
 
-### {heading(Сети)[id=nets]}
+### {heading(Сети)[id=quotasandlimits-nets]}
 
 Лимиты в этом разделе обусловлены требованиями эксплуатации, они применяются для обеспечения стабильной работы сетей. Не рекомендуется запрашивать через [техническую поддержку](/ru/contacts) квоты, превышающие соответствующие лимиты.
 
-#### Сети, подсети и IP-адреса
+#### {heading(Сети, подсети и IP-адреса)[id=quotasandlimits-nets-subnets-ips]}
 
 {tabs}
 
@@ -509,21 +503,21 @@
 | `network`
 | 50 шт.
 | 50 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество подсетей в проекте
 | **Подсети Sprut**
 | `subnet`
 | 50 шт.
 | 50 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество Floating IP-адресов
 | **IP-адреса Sprut**
 | `floatingip`
 | 0 шт.
 | 50 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 |===
 
@@ -545,22 +539,21 @@
 | `network`
 | 15 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество подсетей в проекте
 | **Подсети Neutron**
 | `subnet`
 | 15 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество Floating IP-адресов
 | **IP-адреса Neutron**
 | `floatingip`
 | 6 шт.
 | 50 шт.
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
 {/tab}
@@ -569,7 +562,7 @@
 
 Даже если квота на общее количество подсетей в проекте была увеличена, не рекомендуется создавать более 20 подсетей в одной сети.
 
-#### Другие параметры
+#### {heading(Другие параметры)[id=quotasandlimits-nets-other]}
 
 {tabs}
 
@@ -589,50 +582,49 @@
 | `router`
 | 1 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество продвинутых маршрутизаторов
 | **Маршрутизаторы Sprut**
 | `dc_router`
 | 0 шт.
 | 3 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество групп безопасности в проекте
 | **Группы безопасности Sprut**
 | `security_group`
 | 50 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество правил безопасности в проекте
 | **Правила безопасности Sprut**
 | `security_group_rule`
 | 500 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество портов в проекте
 | **Порты Sprut**
 | `port`
 | 500 шт.
 | 500 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество портов с адресами во внешней сети в проекте
 | **Порты во внешней сети Sprut**
 | `external_port`
 | 0 шт.
 | 12 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество Anycast IP-адресов
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 | `anycastip`
 | 0 шт.
 | 50 шт.
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
 {/tab}
@@ -653,43 +645,42 @@
 | `router`
 | 12 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество продвинутых маршрутизаторов
 | **Маршрутизаторы Neutron**
 | `dc_router`
 | 3 шт.
 | 3 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество групп безопасности в проекте
 | **Группы безопасности Neutron**
 | `security_group`
 | 24 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество правил безопасности в проекте
 | **Правила безопасности Neutron**
 | `security_group_rule`
 | 200 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество портов в проекте
 | **Порты Neutron**
 | `port`
 | 300 шт.
 | 500 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество портов Neutron с адресами во внешней сети в проекте
 | **Порты во внешней сети Neutron**
 | `external_port`
 | 6 шт.
 | 6 шт.
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
 {/tab}
@@ -710,15 +701,14 @@
 | `load_balancers`
 | 12 шт.
 | 20 шт.
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Количество правил балансировки на один балансировщик
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 | 10 шт. через ЛК, 30 шт. через CLI
-| ![](/ru/assets/no.svg "inline")
-
+| ![](../../../../assets/no.svg "inline")
 |===
 
 {/tab}
@@ -729,68 +719,52 @@
 
 Квота **Балансировщики Neutron**, которая отображается в личном кабинете, не используется.
 
-### Cloud Backup
+### {heading(Cloud Backup)[id=quotasandlimits-backup]}
 
-| Параметр                                      | Квота из CLI | Базовая квота  | Лимит | Жесткий |
-|-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Количество резервных копий                    | `backup` | ![](/ru/assets/no.svg "inline") | не ограничено | ![](/ru/assets/no.svg "inline") |
-| Количество снимков                            | `snapshot` | 600 шт. | не ограничено | ![](/ru/assets/no.svg "inline") |
-| Размер одной резервной копии                  | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 320 ТБ        | ![](/ru/assets/no.svg "inline") |
-| Общий объем образов                           | ![](/ru/assets/no.svg "inline") | ![](/ru/assets/no.svg "inline") | 2 ТБ          | ![](/ru/assets/no.svg "inline") |
-
-Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе VK Object Storage, этот сервис используется для хранения резервных копий. Этот лимит можно увеличить, обратившись в [техническую поддержку](/ru/contacts).
-
-### {heading(VK Object Storage)[id=object_storage_limits]}
-
-Для сервиса VK Object Storage квоты не предусмотрены. Использование этих сервисов ограничивается только техническими лимитами.
-
-[cols="3,2,4,1", options="header"]
+[cols="2,1,1,1,1", options="header"]
 |===
 | Параметр
+| Квота из CLI
+| Базовая квота
 | Лимит
-| Комментарий
 | Жесткий
 
-| Количество аккаунтов
-| 25 шт.
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-
-| Количество бакетов
-| 100 шт.
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-
-| Количество объектов в бакете
+| Количество резервных копий
+| `backup`
+| ![](../../../../assets/no.svg "inline")
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
-| Размер одного файла
-| 32 ГБ, 320 ТБ
-| 32 ГБ для обычного файла, 320 ТБ для составной загрузки
-| ![](/ru/assets/check.svg "inline")
-
-| Размер одного бакета
+| Количество снимков
+| `snapshot`
+| 600 шт.
 | не ограничено
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
-| Рейт-лимит: обычные запросы
-| 1000 запросов/с
-| не ограничено, максимальное известное значение среди всех проектов: 9000 запросов/с
-| ![](/ru/assets/no.svg "inline")
+| Размер одной резервной копии
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| 320 ТБ
+| ![](../../../../assets/no.svg "inline")
 
-| Рейт-лимит: запросы на листинг
-| 250 запросов/с
-| не ограничено, максимальное известное значение среди всех проектов: 500 запросов/с
-| ![](/ru/assets/no.svg "inline")
-
-| Количество lifecycle-правил
-| 50 шт.
-| ![](/ru/assets/no.svg "inline")
-| ![](/ru/assets/check.svg "inline")
-
+| Общий объем образов
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| 2 ТБ
+| ![](../../../../assets/no.svg "inline")
 |===
 
+Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе {var(s3)}, этот сервис используется для хранения резервных копий. Этот лимит можно увеличить, обратившись в [техническую поддержку](/ru/contacts).
+
+### {heading({var(s3)})[id=quotasandlimits-s3]}
+
+Для сервиса {var(s3)} квоты не предусмотрены. Использование этих сервисов ограничивается только техническими лимитами.
+{/ifdef}
+
+{ifndef(private, private-pdf, private-pg, private-pg-pdf, private-cert)}
+{include(../../../../storage/s3/_includes/_s3_limits.md)}
+{/ifndef}
+
+{ifdef(public)}
 Рейт-лимиты можно увеличить, обратившись в [техническую поддержку](/ru/contacts).
+{/ifdef}

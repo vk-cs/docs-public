@@ -1,9 +1,14 @@
 {
-    "title": "Creating Kubernetes cluster",
-      "shortDescription": "",
-      "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
-    "sectionTitle": "Creating Kubernetes cluster",
-    "icon": "",
-    "weight": 1,
-    "uuid": "5c8c4163-6f78-4bab-ae4d-383dc6c00a47"
+  "title": "Creating Kubernetes cluster",
+  "shortDescription": "",
+  "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
+  "sectionTitle": "Creating Kubernetes cluster",
+  "icon": "",
+  "weight": 1,
+  "uuid": "5c8c4163-6f78-4bab-ae4d-383dc6c00a47",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

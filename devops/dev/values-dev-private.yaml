@@ -1,0 +1,40 @@
+components:
+  - name: private
+    image:
+      name: infra/front/tech-writers/docs-public/private
+    replicas: 1
+    ports:
+      - port: 3000
+        headlessOnly: true
+    probes:
+      startup:
+        path: private-cloud/api/healthz
+        port: 3000
+        initialDelaySeconds: 30
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 60
+      liveness:
+        path: private-cloud/api/healthz
+        port: 3000
+        initialDelaySeconds: 20
+        periodSeconds: 30
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+      readiness:
+        path: private-cloud/api/healthz
+        port: 3000
+        initialDelaySeconds: 20
+        periodSeconds: 15
+        timeoutSeconds: 5
+        failureThreshold: 3
+        successThreshold: 1
+    ingress:
+      className: "nginx-vk-docs-share"
+      rules:
+        - hostname: private-{{ .Release.Store.ingressHostname }}
+          paths:
+            - path: /private-cloud
+      tls:
+        - secretName: wildcard-tls-secret

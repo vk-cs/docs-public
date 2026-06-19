@@ -1,9 +1,23 @@
 {
-    "title": "Hosting static websites",
-      "shortDescription": "",
-      "metaDescription": "The VK Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used",
-    "sectionTitle": "Hosting static websites",
-    "icon": "",
-    "weight": 5,
-    "uuid": "3a85479b-d4d1-4d53-8cc3-326559bf4c2a"
+  "title": "Hosting static websites",
+  "shortDescription": "",
+  "metaDescription": "The VK Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used",
+  "sectionTitle": "Hosting static websites",
+  "icon": "",
+  "weight": 5,
+  "uuid": "3a85479b-d4d1-4d53-8cc3-326559bf4c2a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

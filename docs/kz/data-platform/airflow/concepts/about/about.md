@@ -1,3 +1,5 @@
+# {heading(Сервис туралы)[id=airflow_info]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Airflow — [Apache Airflow](https://airflow.apache.org/) платформасы мен Kubernetes кластерлері негізіндегі жұмыс процестерін (workflow) бағдарламалауға, жоспарлауға және мониторингтеуге арналған сервис.

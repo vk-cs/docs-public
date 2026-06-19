@@ -1,3 +1,5 @@
+# {heading(Ақауларды жою)[id=vnet-troubleshooting]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Виртуалды желілерге қатысты типтік мәселелерді диагностикалау және шешу тәсілдері.

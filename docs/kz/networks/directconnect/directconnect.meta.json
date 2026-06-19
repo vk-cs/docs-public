@@ -1,8 +1,13 @@
 {
   "title": "Cloud Direct Connect",
-  "shortDescription": "Жергілікті инфрақұрылым мен VK Cloud бұлтындағы жоба арасындағы бөлінген қосылым",
+  "shortDescription": "Жергілікті инфрақұрылым мен {var(cloud)} бұлтындағы жоба арасындағы бөлінген қосылым",
   "metaDescription": "Cloud Direct Connect сервисі. Жергілікті инфрақұрылым мен VK Cloud бұлтындағы жоба арасындағы бөлінген қосылым. Концепциялар, сервисті қосу, қадамдық нұсқаулықтар",
   "sectionTitle": "Cloud Direct Connect",
   "icon": "",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

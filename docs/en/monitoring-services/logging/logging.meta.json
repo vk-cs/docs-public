@@ -6,5 +6,10 @@
   "icon": "",
   "weight": 1,
   "isBeta": true,
-  "uuid": "1c03795e-ad55-4bbf-98d8-37c6c248d79d"
+  "uuid": "1c03795e-ad55-4bbf-98d8-37c6c248d79d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

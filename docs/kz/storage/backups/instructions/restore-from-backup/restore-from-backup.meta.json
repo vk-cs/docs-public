@@ -5,9 +5,14 @@
   "sectionTitle": "Резервтік көшірмеден қалпына келтіру",
   "icon": "",
   "weight": 4,
-  "additionalUuids": [
-    "71967928-a6fd-4441-90aa-f940815f9980",
-    "2682d77f-ebc9-4526-b4c8-7edb848fa0cb",
-    "1be35352-82d0-47f1-8865-1ef6c2c6cb6e"
-  ]
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

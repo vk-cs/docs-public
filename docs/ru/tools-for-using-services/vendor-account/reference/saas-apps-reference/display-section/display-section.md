@@ -1,4 +1,4 @@
-Секция `display` в [JSON-файле конфигурации сервиса](../../../manage-saas-apps/saas-add#service_config) описывает [мастер конфигурации тарифного плана](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard). Секция имеет следующую структуру:
+Секция `display` в [JSON-файле конфигурации сервиса](../../../instructions/manage-saas-apps/saas-add#service_config) описывает [мастер конфигурации тарифного плана](/ru/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_wizard). Секция имеет следующую структуру:
 
 ```json
 "display": {
@@ -64,14 +64,14 @@ string.
 Имя страницы — до 32 символов.
 
 Имя группы — до 255 символов
-| ![](/ru/assets/check.svg "inline")
+| ![](../../../../../assets/check.svg "inline")
 
 |`index`
 |
 Порядковый номер страницы, группы на странице или тарифной опции в группе
 |
 integer
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
 |===
 
 {cut(Пример секции display)}

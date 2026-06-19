@@ -14,7 +14,7 @@
 |Возможные конфигурации
 
 |FREQ высокочастотные агрегаты с процессором Intel(R) Xeon(R) Platinum 8380 CPU (Intel Ice Lake)
-|\~3,7 ГГц
+|\~3,4 ГГц
 |до 24 vCPU, до 256 ГБ RAM
 
 |HEAVY агрегаты для высоконагруженных сервисов с процессором Intel(R) Xeon(R) Platinum 8380 CPU (Intel Ice Lake)

@@ -5,5 +5,10 @@
   "sectionTitle": "События компонента Manila",
   "icon": "",
   "weight": 2,
-  "uuid": "35958e75-11bf-45e0-a4bf-2b34dff1ce89"
+  "uuid": "35958e75-11bf-45e0-a4bf-2b34dff1ce89",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

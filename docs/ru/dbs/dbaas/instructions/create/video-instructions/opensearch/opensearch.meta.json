@@ -5,5 +5,10 @@
   "sectionTitle": "OpenSearch",
   "icon": "",
   "weight": 6,
-  "uuid": "2a391c66-1850-4afc-90fb-55c5ca716b73"
+  "uuid": "2a391c66-1850-4afc-90fb-55c5ca716b73",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

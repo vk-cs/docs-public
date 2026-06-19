@@ -3,5 +3,10 @@
   "shortDescription": "",
   "metaDescription": "image-based қолданбасын архивке көшіру",
   "sectionTitle": "image-based қолданбасын архивке көшіру",
-  "weight": 5
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

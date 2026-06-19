@@ -1,9 +1,14 @@
 {
-    "title": "Regions",
-      "shortDescription": "What is a region, what regions exist in VK Cloud",
-      "metaDescription": "What is a region, what regions exist in VK Cloud.",
-    "sectionTitle": "Regions",
-    "icon": "",
-    "weight": 4,
-    "uuid": "b44fdaa7-397b-44a3-8bd1-0329d8e42b0f"
+  "title": "Regions",
+  "shortDescription": "What is a region, what regions exist in VK Cloud",
+  "metaDescription": "What is a region, what regions exist in VK Cloud.",
+  "sectionTitle": "Regions",
+  "icon": "",
+  "weight": 4,
+  "uuid": "b44fdaa7-397b-44a3-8bd1-0329d8e42b0f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

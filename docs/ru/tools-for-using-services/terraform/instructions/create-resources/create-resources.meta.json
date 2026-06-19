@@ -1,0 +1,18 @@
+{
+  "title": "Создание ресурсов",
+  "shortDescription": "Как создавать ресурсы с помощью Terraform",
+  "metaDescription": "Как создавать ресурсы с помощью Terraform-провайдера VK Cloud. Работа с Terraform: создание ресурсов и обновление провайдера.",
+  "sectionTitle": "Создание ресурсов",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

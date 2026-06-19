@@ -1,1 +1,0 @@
-Service to simplify work with VK Data Platform in the VK Cloud infrastructure. The service provides centralized management and grouping of data services through the VK Cloud management console interface. The service is free for all VK Data Platform users.

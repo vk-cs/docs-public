@@ -4,5 +4,15 @@
   "metaDescription": "Виртуальные машины: шаблоны конфигурации и варианты серверного оборудования",
   "sectionTitle": "Виртуальные машины",
   "weight": 1,
-  "uuid": "8dbb16a7-29b5-451b-8cdf-ee5dbdb098d3"
+  "uuid": "8dbb16a7-29b5-451b-8cdf-ee5dbdb098d3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

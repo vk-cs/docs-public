@@ -7,5 +7,10 @@
   "disableGithub": false,
   "isBeta": false,
   "hidden": false,
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

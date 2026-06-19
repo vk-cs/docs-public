@@ -13,5 +13,19 @@
     "dea1c3ab-20fd-41f4-9fc7-54897690c4ef",
     "81d09ea4-91d9-46ae-9380-b89bba2118bb"
   ],
-  "uuid": "eff2345a-478b-466e-bd7d-5e9be1d6cc0d"
+  "uuid": "eff2345a-478b-466e-bd7d-5e9be1d6cc0d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

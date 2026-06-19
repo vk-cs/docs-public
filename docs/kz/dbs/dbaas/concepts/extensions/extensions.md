@@ -1,3 +1,5 @@
+# {heading(Қолжетімді кеңейтімдер мен плагиндер)[id=dbaas-concepts-extensions]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Cloud бұрыннан өрістетілген ДҚ инстанстарына кеңейтімдер мен плагиндерді орнатуды қолдайды. Кеңейтімдер мен плагиндер — ДҚБЖ-ның базалық функционалдығын кеңейтуге, мысалы, метрикалар жинауды қосуға мүмкіндік беретін БҚ кешені.
@@ -14,103 +16,103 @@ VK Cloud бұрыннан өрістетілген ДҚ инстанстарын
 | MongoDB
 
 | Prometheus сервер үшін
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Серверлік метрикаларға арналған Prometheus (node_exporter)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Zabbix Agent (zabbix)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 | Postgres-ты оңтайландыру қызметі (holistic)
-| ![](/kz/assets/check.svg "inline") 
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline") 
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | PostgreSQL жоспарлаушысына арналған танымал Hints (pg_hint_plan)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Кеңейтімдер жиынтығы (postgres_extensions)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | SQL трафигін талдауға және графиктер құруға арналған құрал (pgbadger)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Уақыт қатарлары деректерін сақтауға арналған кеңейтім (timescaledb)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Кесте бөлімдерінің жиындарын жасауға және басқаруға арналған кеңейтім (pg_partman)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Жүйелік метрикалар бойынша статистика жинайтын кеңейтім (pg_stat_kcache)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | jsonb деректеріне сұраулар тілін қолдайтын кеңейтім (jsquery)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | Postgres-та географиялық нысандарды қолдау (postgis)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 | SQL операторларын орындау статистикасын қадағалау (pg_stat_statements)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/no.svg "inline")
 
 |===
 
-Кейбір кеңейтімдер мен плагиндер үшін міндетті параметрлер қосылуы тиіс — оларсыз орнату қате арқылы аяқталады. [Кеңейтімдер және олардың параметрлері туралы толығырақ](../../extensions).
+Кейбір кеңейтімдер мен плагиндер үшін міндетті параметрлер қосылуы тиіс — оларсыз орнату қате арқылы аяқталады. {linkto(../../extensions#dbaas-extensions)[text=Кеңейтімдер және олардың параметрлері туралы толығырақ]}.
 
 Бір ДҚ инстансына орнатылатын кеңейтімдер немесе плагиндер саны шектеулі және ДҚБЖ түріне байланысты.
 
-VK Cloud-та кеңейтімдер мен плагиндермен жұмыс істеу туралы толығырақ [Кеңейтімдерді басқару](../../instructions/managing-extensions) мақаласында.
+VK Cloud-та кеңейтімдер мен плагиндермен жұмыс істеу туралы толығырақ {linkto(../../instructions/managing-extensions#dbaas-managing-extensions)[text=Кеңейтімдерді басқару]} мақаласында.
 
 {note:info}
 

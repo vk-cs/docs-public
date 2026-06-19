@@ -1,8 +1,17 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "VK Cloud жүйесінде Terraform пайдалану мысалдары",
+  "shortDescription": "{var(cloud)} жүйесінде Terraform пайдалану мысалдары",
   "metaDescription": "VK Cloud жүйесінде Terraform пайдалану.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "s3",
+      "data-p"
+    ]
+  }
 }

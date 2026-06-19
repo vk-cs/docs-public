@@ -1,3 +1,5 @@
+# {heading(PostgreSQL)[id=dbaas-concepts-postgresql]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 PostgreSQL — бұл бастапқы коды ашық объектілік-реляциялық СУБД. Ол үлкен көлемдегі деректерді сақтай алады, көптеген деректер типтерін қолдайды және өз типтеріңізді жасау мүмкіндігін береді.
@@ -10,12 +12,12 @@ PostgreSQL-дің негізгі артықшылықтары:
 
 Толығырақ [PostgreSQL ресми құжаттамасында](https://www.postgresql.org/docs/).
 
-VK Cloud-та қолдау көрсетілетін PostgreSQL нұсқаларының тізімі осы деректер қоры инстансын [құру](../../../instructions/create) кезінде қолжетімді.
+VK Cloud-та қолдау көрсетілетін PostgreSQL нұсқаларының тізімі осы деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құру]} кезінде қолжетімді.
 
-[Москва өңірінде](/kz/tools-for-using-services/account/concepts/regions) PostgreSQL 16 нұсқасы үшін істен шығуға төзімділікті қосымша арттыру мақсатында әртүрлі [қолжетімділік аймақтарындағы](/kz/start/concepts/architecture#az) хосттармен географиялық үлестірілген конфигурацияларды жасай аласыз.
+{linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Москва өңірінде]} PostgreSQL 16 нұсқасы үшін істен шығуға төзімділікті қосымша арттыру мақсатында әртүрлі [қолжетімділік аймақтарындағы](../../../../../start/concepts/architecture#az) хосттармен географиялық үлестірілген конфигурацияларды жасай аласыз.
 
-## Әрі қарай не істеу керек?
+## {heading(Әрі қарай не істеу керек?)[id=dbaas-concepts-postgresql-whats-next]}
 
-- Деректер қоры инстансын [құрыңыз](../../../instructions/create).
-- Деректер қорына [қосылыңыз](../../../connect).
-- Қолжетімді деректер қоры кеңейтімдерімен [танысыңыз](../../extensions).
+- Деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құрыңыз]}.
+- Деректер қорына {linkto(../../../connect#dbaas-connect)[text=қосылыңыз]}.
+- Қолжетімді деректер қоры кеңейтімдерімен {linkto(../../extensions#dbaas-concepts-extensions)[text=танысыңыз]}.

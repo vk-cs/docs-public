@@ -5,5 +5,10 @@
   "sectionTitle": "Project management",
   "icon": "",
   "weight": 2,
-  "uuid": "959de343-03bf-48e3-86b6-f8c3aef85cc7"
+  "uuid": "959de343-03bf-48e3-86b6-f8c3aef85cc7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

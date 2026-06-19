@@ -1,9 +1,14 @@
 {
   "title": "Защита критических данных",
   "shortDescription": "Использование функции Object Lock для защиты объектов от удаления и перезаписи",
-  "metaDescription": "Использование функции Object Lock для защиты объектов от удаления и перезаписи: как заблокировать данные в VK Object Storage от изменения",
+  "metaDescription": "Object Lock в режиме COMPLIANCE для VK Object Storage: пошаговая настройка защиты критических данных от удаления и перезаписи (WORM) — включение Object Lock на бакете.",
   "sectionTitle": "Защита критических данных",
   "icon": "",
   "weight": 3,
-  "uuid": "894838b8-dc0f-400d-ba3f-203cd227e8d8"
+  "uuid": "894838b8-dc0f-400d-ba3f-203cd227e8d8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

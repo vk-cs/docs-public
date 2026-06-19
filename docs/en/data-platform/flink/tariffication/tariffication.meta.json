@@ -5,5 +5,19 @@
   "sectionTitle": "Tariffication",
   "icon": "",
   "weight": 4,
-  "uuid": "898e6b74-1044-4ffe-bb2e-67993640e5e3"
+  "uuid": "898e6b74-1044-4ffe-bb2e-67993640e5e3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

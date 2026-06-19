@@ -1,8 +1,18 @@
 {
   "title": "LL NVMe дискілерін worker-түйіндерге қосу",
-  "shortDescription": "Kubernetes кластерінің worker-түйіндеріне LL NVMe дискін қалай қосуғал болады",
+  "shortDescription": "Kubernetes кластерінің worker-түйіндеріне LL NVMe дискін қалай қосуға болады",
   "metaDescription": "LL NVMe (Low Latency NVMe) — жылдам жауап беретін жергілікті дискілер. VK Cloud-та Kubernetes кластерінің worker-түйіндеріне LL NVMe дискін қалай қосу керектігін біліңіз",
   "sectionTitle": "LL NVMe дискілерін worker-түйіндерге қосу",
   "icon": "",
-  "weight": 12
+  "weight": 7,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

@@ -4,5 +4,15 @@
   "shortDescription": "Образдарды жасау, импорттау және экспорттау",
   "metaDescription": "Образдарды басқару",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
 }

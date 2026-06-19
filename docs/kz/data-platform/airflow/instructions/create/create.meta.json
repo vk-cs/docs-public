@@ -4,5 +4,11 @@
   "metaDescription": "Сервис данасын қажетті конфигурацияда қалай құру керек.",
   "sectionTitle": "Сервис данасын құру",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
 }

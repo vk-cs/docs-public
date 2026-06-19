@@ -4,5 +4,14 @@
   "metaDescription": "Cloud Audit қауіпсіздік оқиғалары журналын қалай қарауға және талдауға болады. VK Cloud қауіпсіздік оқиғаларын іздеу, сүзгілеу және түсіндіру жөніндегі нұсқаулықтар",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }

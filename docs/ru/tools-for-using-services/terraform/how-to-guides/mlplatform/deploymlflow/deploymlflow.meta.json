@@ -1,9 +1,14 @@
 {
-    "title": "Создание инстанса MLflow Deploy",
-      "shortDescription": "",
-      "metaDescription": "Пример создания инстанса MLflow Deploy с использованием Terraform",
-    "sectionTitle": "Создание инстанса MLflow Deploy",
-    "icon": "",
-    "weight": 3,
-    "uuid": "881ae303-17ab-436c-b3f3-0319b85e791f"
+  "title": "Создание инстанса MLflow Deploy",
+  "shortDescription": "",
+  "metaDescription": "Пример создания инстанса MLflow Deploy с использованием Terraform",
+  "sectionTitle": "Создание инстанса MLflow Deploy",
+  "icon": "",
+  "weight": 3,
+  "uuid": "881ae303-17ab-436c-b3f3-0319b85e791f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

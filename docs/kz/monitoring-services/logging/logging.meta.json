@@ -10,5 +10,14 @@
     {
       "partialPath": "/kz/tools-for-using-services/api/api-spec/logging"
     }
-  ]
+  ],
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
 }
