@@ -103,5 +103,12 @@ export const config = {
                 'https://cloud.vk.com/docs/on-premises/security-gate/sitemap.xml',
             ],
         },
+        forTrainingPreparer: {
+            endpoint: 'https://hb.ru-msk.vkcloud-storage.ru',
+            bucket: 'vk-docs-public',
+            accessKey: process.env.DEV_4TRAINING_S3_ACCESS_KEY || '',
+            secretKey: process.env.DEV_4TRAINING_S3_SECRET_KEY || '',
+            assemblyName: 'public-docs',
+        },
     }
 };
