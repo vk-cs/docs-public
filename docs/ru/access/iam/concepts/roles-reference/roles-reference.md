@@ -571,45 +571,17 @@
 - создавать и редактировать виртуальные сети и подсети, маршрутизаторы;
 - добавлять в проект Floating IP.
 
-### {heading(mcs_k8s_admin)[id=mcs_k8s_admin]}
+### {heading(mcs_k8s_viewer)[id=mcs_k8s_viewer]}
 
-Название в личном кабинете: `Администратор Kubernetes`.
-
-Роль с максимально широким набором разрешений для работы с сервисом [Cloud Containers](/ru/kubernetes/k8s).
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer]}
 
 ### {heading(mcs_k8s_editor)[id=mcs_k8s_editor]}
 
-Название в личном кабинете: `Оператор Kubernetes`.
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor]}
 
-Роль с разрешениями для работы в сервисе [Cloud Containers](/ru/kubernetes/k8s).
+### {heading(mcs_k8s_admin)[id=mcs_k8s_admin]}
 
-Пользователь с этой ролью может:
-
-- Запустить кластер.
-- Остановить кластер.
-- Отобразить информацию о кластере и группах узлов.
-- Получить файл `kubeconfig`.
-- Получить секрет для доступа в Kubernetes Dashboard.
-- Обновить версию.
-- Изменить тип виртуальной машины.
-- Изменить размер диска Prometheus.
-- Добавить группу узлов.
-- Удалить группу узлов.
-- Изменить настройки масштабирования.
-- Изменить метки (labels) и ограничения (taints).
-- Установить и удалить аддон.
-
-### {heading(mcs_k8s_viewer)[id=mcs_k8s_viewer]}
-
-Название в личном кабинете: `Аудитор Kubernetes`.
-
-Роль с разрешениями на просмотр сервиса [Cloud Containers](/ru/kubernetes/k8s).
-
-Пользователь с этой ролью может:
-
-- Отобразить информацию о кластере, группах узлов.
-- Получить `kubeconfig`.
-- Получить секрет для доступа в `Kubernetes Dashboard`.
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin]}
 
 ### {heading(mcs_admin_vm)[id=mcs_admin_vm]}
 

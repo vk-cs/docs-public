@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте о различиях между кластерами первого и второго поколения в сервисе Cloud Containers на платформе VK Cloud: преимущества Managed Kubernetes, автоматизация, управление через сервисные проекты",
   "sectionTitle": "Поколения кластеров",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "uuid": "a843fe34-6793-4de0-968a-c6066ed2755c",
   "build": {
     "for": [
