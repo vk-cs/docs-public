@@ -8,9 +8,6 @@ variables:
   # pipeline parameters
   VKCS_D11N_VERSION: '5.5.2'
   VKCS_DEV_MATRIX_DEPLOY_MODE: auto
-  VKCS_STAGE_MATRIX_DEPLOY_MODE: auto
-  VKCS_PROD_MATRIX_DEPLOY_MODE: manual
-  VKCS_DEV_MASTER_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
   VKCS_FILEGEN_VERSION: "5.5.1"
@@ -39,6 +36,11 @@ variables:
         SATORI_API_URL_PROD: https://cloud.vk.com/search/api
         SATORI_API_URL_DEV: https://satori.devint.vkc.devmail.ru
         VKCS_K8S_DEV_INGRESS_PATH: /docs
+        VKCS_DEV_MASTER_MATRIX_DEPLOY_MODE: auto
+        VKCS_STAGE_MATRIX_DEPLOY_MODE: auto
+        VKCS_PROD_MATRIX_DEPLOY_MODE: manual
+        # BUILD_ARG_002: DEV_4TRAINING_S3_ACCESS_KEY
+        # BUILD_ARG_003: DEV_4TRAINING_S3_SECRET_KEY
       - DOCKERFILE_PATH: devops/private.Dockerfile
         IMAGE_NAME_SUFFIX: private
         VKCS_PREPARE_ENABLED: "false"
