@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Kubernetes Dashboard — барлық VK Cloud кластерлерінде қолжетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. Ол пайдаланушыларға кластердің өзін де, онда жұмыс істеп тұрған қолданбаларды да басқаруға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard — бұл Cloud Containers-Тегі барлық {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде қол жетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. Ол пайдаланушыларға кластердің өзін де, онда жұмыс істеп тұрған қолданбаларды да басқаруға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
 Kubernetes Dashboard-қа қосылу тәсілі кластердің IP мекенжайына байланысты:
 
@@ -10,6 +10,10 @@ Kubernetes Dashboard-қа қосылу тәсілі кластердің IP ме
 * Егер кластерге тек ішкі IP мекенжайы тағайындалса, тек VK Cloud ішіндегі хосттан — кластермен бір ішкі желіде орналасқан виртуалды машинадан қосылуға болады.
 
 Kubernetes Dashboard-қа қосылу үшін хостта браузер орнатылған болуы керек.
+
+{note:info}
+Kubernetes Dashboard тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін ғана қолжетімді.
+{/note}
 
 ## {heading(Дайындық қадамдары)[id=k8s-k8s-dashboard-before-work]}
 

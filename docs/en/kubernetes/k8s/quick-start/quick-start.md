@@ -126,7 +126,6 @@ Install the following tools on the host:
   {/note}
 
 - The `client-keystone-auth` utility. See [Connecting to cluster using kubectl](../connect/kubectl) for details.
-- The [kauthproxy](https://github.com/int128/kauthproxy/releases) utility. See [Connecting to the cluster with Kubernetes Dashboard](../connect/k8s-dashboard) for details.
 - The [curl](https://curl.se/download.html) utility.
 - [Docker Engine](https://docs.docker.com/engine/install/):
   - For Windows and macOS: Docker Desktop.
@@ -219,11 +218,7 @@ Install the following tools on the host:
 
 ## 2. Get access to cluster monitoring tools
 
-An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
-
-{tabs}
-
-{tab(Prometheus + Grafana)}
+An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled.
 
 1. In a separate terminal session, run the command:
 
@@ -245,30 +240,6 @@ An add-on with [monitoring tools](../monitoring) was installed in the cluster ba
    1. If a password change is requested, change it.
 
 1. Select **Dashboards → Browse** from the side menu of any pre-configured dashboard to get information about the cluster resources.
-
-{/tab}
-
-{tab(Kubernetes Dashboard)}
-
-1. In a separate terminal session, run the command:
-
-   ```console
-   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-   ```
-
-   {note:warn}
-
-   Do not close this session, or you will lose access to the Kubernetes Dashboard web interface.
-
-   {/note}
-
-1. Enter the user password from your VK Cloud account, if a password is requested.
-
-The browser will be opened and you will be redirected to the Kubernetes Dashboard web interface. Next, select any available category to view information about the cluster resources.
-
-{/tab}
-
-{/tabs}
 
 ## 3. Upload the necessary images to the Docker registry
 
@@ -635,8 +606,6 @@ To deploy the applications:
 
    - Grafana: open the **Kubernetes → Compute Resources → Persistent Volumes** dashboard.
 
-   - Kubernetes Dashboard: open the **Cluster → Persistent Volumes** dashboard.
-
    You will see information that 1GB persistent volumes, that have been created with Persistent Volume Claim for deployments `tea` and `coffee`, are present.
 
    {/tab}
@@ -653,23 +622,17 @@ To deploy the applications:
 
    - Grafana: open the **Kubernetes → Compute Resources → Namespace (Workloads)** dashboard.
 
-   - Kubernetes Dashboard: open the **Workloads → Deployments** dashboard.
-
    You will see that there is a deployment `coffee` of three pods, and a deployment `tea` of two pods.
 
    {/tab}
 
    {tab(Services)}
 
-   Use one of the ways:
-
-   - `kubectl`: run the command.
+   In `kubectl`, run the command: 
 
      ```console
      kubectl get svc
      ```
-
-   - Kubernetes Dashboard: open the **Service → Services** dashboard.
 
    You will see that there are two services `coffee-svc` and `tea-svc` of type `ClusterIP`.
 
