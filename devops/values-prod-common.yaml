@@ -7,9 +7,9 @@ envSecret:
   GITHUB_BOT_TOKEN: new-help-secret
 
 components:
-  - name: public
+  - name: common
     image:
-      name: infra/front/tech-writers/docs-public/public
+      name: infra/front/tech-writers/docs-public/common
     replicas: 2
     ports:
       - port: 3000

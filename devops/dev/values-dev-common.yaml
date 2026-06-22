@@ -1,16 +1,13 @@
 env:
-  SATORI_API_URL: https://mcstest.mail.ru/search/api
-
-envSecret:
-  MAILER_TOKEN: new-help-secret
-  VKTEAMS_ALERT_TOKEN: new-help-secret
-  GITHUB_BOT_TOKEN: new-help-secret
+  TARGET_ENV: "branch"
+  AI_SEARCH_TOKEN: '{{ requiredEnv "TEST_AI_SEARCH_TOKEN" }}'
+  SATORI_API_URL: https://satori.devint.vkc.devmail.ru
 
 components:
-  - name: public
+  - name: common
     image:
-      name: infra/front/tech-writers/docs-public/public
-    replicas: 2
+      name: infra/front/tech-writers/docs-public/common
+    replicas: 1
     ports:
       - port: 3000
         headlessOnly: true
@@ -25,7 +22,7 @@ components:
       liveness:
         path: docs/api/healthz
         port: 3000
-        initialDelaySeconds: 30
+        initialDelaySeconds: 20
         periodSeconds: 30
         timeoutSeconds: 5
         failureThreshold: 3
@@ -33,15 +30,15 @@ components:
       readiness:
         path: docs/api/healthz
         port: 3000
-        initialDelaySeconds: 30
-        periodSeconds: 30
+        initialDelaySeconds: 20
+        periodSeconds: 15
         timeoutSeconds: 5
         failureThreshold: 3
         successThreshold: 1
     ingress:
       className: "nginx-vk-docs-share"
       rules:
-        - hostname: public-portal.docs.stage.vktechinfra.devmail.ru
+        - hostname: {{ .Release.Store.ingressHostname }}
           paths:
             - path: /docs
       tls:
