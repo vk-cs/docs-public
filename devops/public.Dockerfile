@@ -16,4 +16,7 @@ RUN cp config/public.docs.config.mjs config/docs.config.mjs && \
 RUN cp config/all.preparer.config.mjs config/preparer.config.mjs && \
     rm config/all.preparer.config.mjs config/data-platform.preparer.config.mjs config/private.preparer.config.mjs config/s3.preparer.config.mjs
 
+RUN cp docs/ru/ru.meta.public.json docs/ru/ru.meta.json && \
+    rm docs/ru/ru.meta.public.json docs/ru/ru.meta.private.json
+
 RUN BUILD_POINTS=public npx preparer start prepare && npx portal build

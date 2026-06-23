@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-тағы VK Data Platform UI Console: сервис туралы ақпарат",
   "sectionTitle": "Сервис туралы",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

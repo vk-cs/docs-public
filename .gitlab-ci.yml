@@ -6,7 +6,7 @@ include:
 
 variables:
   # pipeline parameters
-  VKCS_D11N_VERSION: '5.5.2'
+  VKCS_D11N_VERSION: '5.5.4'
   VKCS_DEV_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
@@ -32,7 +32,7 @@ variables:
 .docker-images:
   parallel:
     matrix:
-      - DOCKERFILE_PATH: devops/common.Dockerfile
+      - DOCKERFILE_PATH: devops/public.Dockerfile
         IMAGE_NAME_SUFFIX: common
         VKCS_PREPARE_ENABLED: "true"
         VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"

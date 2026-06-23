@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud-тағы VK Data Platform UI Console: дата-сервис даналарының логикалық топтарын құру және басқару",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud жүйесіне Active Directory (AD FS) арқылы кіруді баптаңыз. Бұл нұсқаулық федерацияны жасауға, Claims Mapping-ті баптауға және AD топтарын VK Cloud-тағы рөлдермен сәйкестендіруге көмектеседі.",
   "sectionTitle": "Active Directory арқылы куәліктер федерациясын баптау",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

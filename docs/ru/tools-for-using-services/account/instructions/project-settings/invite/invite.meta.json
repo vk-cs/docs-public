@@ -5,5 +5,10 @@
   "sectionTitle": "Приглашение участника в проект",
   "icon": "",
   "weight": 0,
-  "uuid": "d18e3d46-e2cb-4291-9089-13bdf7a240dd"
+  "uuid": "d18e3d46-e2cb-4291-9089-13bdf7a240dd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }
