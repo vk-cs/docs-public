@@ -5,5 +5,10 @@
   "sectionTitle": "Не настроен маппинг ролей",
   "icon": "",
   "weight": 5,
-  "uuid": "e60a817b-138b-49b2-bbf3-64936085f59a"
+  "uuid": "e60a817b-138b-49b2-bbf3-64936085f59a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

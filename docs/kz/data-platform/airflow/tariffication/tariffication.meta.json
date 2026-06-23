@@ -4,5 +4,10 @@
   "metaDescription": "Cloud Airflow VK Data Platform: сервис тарификациясының ерекшеліктері, құнын есептеу",
   "sectionTitle": "Тарифтеу",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

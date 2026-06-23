@@ -21,7 +21,7 @@
 
 ## {heading({counter(keycloak-fim)}. Создайте федерацию удостоверений в {var(cloud)})[id=vk-cloud-account-keycloak-fim-create]}
 
-{include(../../../../_includes/_create-fim.md)[tags=keycloak]}
+{include(../../../../../_includes/_create-fim.md)[tags=keycloak]}
 
 ## {heading({counter(keycloak-fim)}. Настройте Keycloak)[id=vk-cloud-account-keycloak-fim-set]}
 

@@ -17,7 +17,7 @@
 
 ## {heading({counter(ad-fim)}. Создайте федерацию удостоверений в {var(cloud)})[id=vk-cloud-account-ad-fim-create]}
 
-{include(../../../../_includes/_create-fim.md)[tags=ad-fs]}
+{include(../../../../../_includes/_create-fim.md)[tags=ad-fs]}
 
 {note:info}
 

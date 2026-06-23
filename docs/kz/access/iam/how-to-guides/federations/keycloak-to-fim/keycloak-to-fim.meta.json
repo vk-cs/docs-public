@@ -4,5 +4,10 @@
   "metaDescription": "VK Cloud жүйесіне Keycloak арқылы кіруді баптаңыз. Бұл нұсқаулық mappers-ті (email, groups) баптауға және топтарды VK Cloud-тағы рөлдермен сәйкестендіруге көмектеседі.",
   "sectionTitle": "Keycloak арқылы куәліктер федерациясын баптау",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

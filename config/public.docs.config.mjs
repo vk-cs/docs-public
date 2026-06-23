@@ -219,4 +219,9 @@ export const config = {
             'LeftMenu.BackLink': 'Басты бетке',
         },
     },
+    build: {
+        defaultGroup: 'public',
+        overallGroup: 'public',
+        points: ['public'],
+    },
 };

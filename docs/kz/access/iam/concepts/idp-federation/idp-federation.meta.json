@@ -5,5 +5,10 @@
   "sectionTitle": "Куәліктер федерациясы",
   "icon": "",
   "weight": 5,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

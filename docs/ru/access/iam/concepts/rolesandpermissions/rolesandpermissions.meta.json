@@ -5,5 +5,10 @@
     "sectionTitle": "Ролевая модель управления доступом",
     "icon": "",
     "weight": 1,
-    "uuid": ""
+    "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

@@ -5,5 +5,10 @@
   "sectionTitle": "Настройка федерации удостоверений",
   "icon": "",
   "weight": 1,
-  "uuid": ""
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }
