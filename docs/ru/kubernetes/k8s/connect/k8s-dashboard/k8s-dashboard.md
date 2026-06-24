@@ -1,6 +1,6 @@
 # {heading(Подключение к кластеру с помощью Kubernetes Dashboard)[id=k8s-k8s-dashboard]}
 
-Kubernetes Dashboard — это универсальный веб-интерфейс для кластеров Kubernetes, который доступен во всех кластерах {var(cloud)}. Он позволяет пользователям управлять как самим кластером, так и работающими в нем приложениями. Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard — это универсальный веб-интерфейс для кластеров Kubernetes, который доступен во всех кластерах {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} в Cloud Containers. Он позволяет пользователям управлять как самим кластером, так и работающими в нем приложениями. Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
 {ifdef(public)}
 Способ подключения к Kubernetes Dashboard зависит от IP-адреса кластера:
@@ -9,6 +9,10 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 * Если кластеру назначен только внутренний IP-адрес, то можно подключиться только с хоста в {var(cloud)} — виртуальной машины, которая находится в той же подсети, что и кластер.
 
 Для подключения к Kubernetes Dashboard на хосте должен быть установлен браузер.
+
+{note:info}
+Kubernetes Dashboard доступен только в кластерах {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
+{/note}
 
 ## {heading(Подготовительные шаги)[id=k8s-k8s-dashboard-before-work]}
 

@@ -113,7 +113,6 @@
   {/note}
 
 - Утилиту `client-keystone-auth`. Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl).
-- Утилиту [kauthproxy](https://github.com/int128/kauthproxy/releases). Подробнее в разделе [Подключение к кластеру с помощью Kubernetes Dashboard](/ru/kubernetes/k8s/connect/k8s-dashboard).
 - Утилиту [curl](https://curl.se/download.html).
 - [Docker Engine](https://docs.docker.com/engine/install/):
    - Для Windows и macOS: Docker Desktop.
@@ -206,11 +205,7 @@
 
 ## {counter(kuber_level_1)}. Получите доступ к средствам мониторинга кластера
 
-В кластере был установлен аддон со [средствами мониторинга](/ru/kubernetes/k8s/monitoring) на базе Prometheus и Grafana. Также для всех кластеров Cloud Containers доступен [Kubernetes Dashboard](/ru/kubernetes/k8s/connect/k8s-dashboard), который позволяет не только управлять кластером, но и осуществлять его мониторинг.
-
-{tabs}
-
-{tab(Prometheus + Grafana)}
+В кластере был установлен аддон со [средствами мониторинга](/ru/kubernetes/k8s/monitoring) на базе Prometheus и Grafana. 
 
 1. В отдельной сессии терминала выполните команду:
 
@@ -230,28 +225,6 @@
    1. Если будет запрошена смена пароля, смените его.
 
 1. Выберите в боковом меню **Dashboards → Browse** любой преднастроенный дашборд для получения информации о ресурсах кластера.
-
-{/tab}
-
-{tab(Kubernetes Dashboard)}
-
-1. В отдельной сессии терминала выполните команду:
-
-   ```console
-   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-   ```
-
-   {note:warn}
-   Не закрывайте эту сессию, иначе доступ к веб-интерфейсу Kubernetes Dashboard пропадет.
-   {/note}
-
-1. Введите пароль пользователя от личного кабинета {var(cloud)}, если пароль будет запрошен.
-
-Откроется браузер, и вы будете направлены в веб-интерфейс Kubernetes Dashboard. Далее выберите для просмотра любую доступную категорию для получения информации о ресурсах кластера.
-
-{/tab}
-
-{/tabs}
 
 ## {heading({counter(kuber_level_1)}. Загрузите нужные образы в реестр Docker)[id=k8s-quick-start-upload-to-registry]}
 
@@ -614,8 +587,6 @@
 
    - Grafana: откройте дашборд **Kubernetes → Compute Resources → Persistent Volumes**.
 
-   - Kubernetes Dashboard: откройте дашборд **Cluster → Persistent Volumes**.
-
    Будет видна информация о том, что присутствуют постоянные тома объемом 1 ГБ, созданные при помощи Persistent Volume Claim для deployments `tea` и `coffee`.
 
    {/tab}
@@ -632,8 +603,6 @@
 
    - Grafana: откройте дашборд **Kubernetes → Compute Resources → Namespace (Workloads)**.
 
-   - Kubernetes Dashboard: откройте дашборд **Workloads → Deployments**.
-
    Будет видна информация о том, что есть deployment `coffee` из трех подов, и deployment `tea` из двух подов.
 
    {/tab}
@@ -642,13 +611,11 @@
 
    Воспользуйтесь одним из способов:
 
-   - `kubectl`: выполните команду.
+   В `kubectl` выполните команду:
 
      ```console
      kubectl get svc
      ```
-
-   - Kubernetes Dashboard: откройте дашборд **Service → Services**.
 
    Будет видна информация о том, что есть два сервиса `coffee-svc` и `tea-svc` типа `ClusterIP`.
 
