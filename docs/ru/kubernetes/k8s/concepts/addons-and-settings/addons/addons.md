@@ -150,7 +150,7 @@ S3-CSI основан на высокопроизводительной файл
 
 S3-CSI работает на уровне {linkto(/ru/storage/s3/concepts/about#s3-concepts-about-bucket)[text=бакетов]} объектного хранилища и может функционировать в двух режимах:
 
-- Динамическое создание бакетов (dynamic provisioning). При создании PersistentVolumeClaim (PVC) с указанным {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes)[text=классом хранения]} (StorageClass) аддон автоматически создает новый бакет в целевом S3-совместимом хранилище. После создания PVC этот бакет сразу готов к использованию как PV.
+- Динамическое создание бакетов (dynamic provisioning). При создании PVC (Persistent Volume Claim) с указанным {linkto(/ru/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes)[text=классом хранения]} (Storage Class) аддон автоматически создает новый бакет в целевом S3-совместимом хранилище. После создания PVC этот бакет сразу готов к использованию как PV.
 - Использование существующих бакетов (static provisioning). Вы можете использовать заранее созданный бакет в любом S3-совместимом хранилище. Для этого аддон создает PV с указанием имени существующего бакета, и затем PVC связывается с этим PV.
 
 S3-CSI может создавать бакеты в любом S3-совместимом хранилище, которое вы укажете при {linkto(/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-s3-csi#k8s-install-advanced-s3-csi-install)[text=установке]}.
