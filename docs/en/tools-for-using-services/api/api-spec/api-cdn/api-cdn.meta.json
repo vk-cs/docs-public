@@ -1,0 +1,14 @@
+{
+  "title": "CDN",
+  "shortDescription": "OpenAPI specification for the CDN service",
+  "metaDescription": "OpenAPI specification of the  CDN service: use Swagger descriptions and schemas or get OpenAPI specification in JSON format.",
+  "sectionTitle": "CDN",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
