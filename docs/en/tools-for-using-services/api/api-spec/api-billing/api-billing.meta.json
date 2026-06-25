@@ -1,7 +1,7 @@
 {
   "title": "Billing",
-  "shortDescription": "OpenAPI specification of the Billing service",
-  "metaDescription": "OpenAPI specification of the Billing service",
+  "shortDescription": "OpenAPI specification for the Billing service",
+  "metaDescription": "OpenAPI specification for the Billing service",
   "sectionTitle": "Billing",
   "icon": "",
   "weight": 20,

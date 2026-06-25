@@ -1,0 +1,2636 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP requests for CDN API",
+    "title": "CDN API",
+    "version": "1.0.0"
+  },
+  "host": "localhost",
+  "basePath": "/cdn/api/v1",
+  "tags": [
+    {
+      "name": "Account"
+    },
+    {
+      "name": "Origin Groups"
+    },
+    {
+      "name": "Resources"
+    },
+    {
+      "name": "Let's Encrypt Certificates"
+    },
+    {
+      "name": "SSL Certificates"
+    },
+    {
+      "name": "Tools"
+    },
+    {
+      "name": "Statistics"
+    }
+  ],
+  "paths": {
+    "/projects/{project_id}/clients/me": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Account"
+        ],
+        "summary": "Get account information",
+        "description": "Get the canonical domain name record (CNAME) of the current account",
+        "operationId": "accountMe",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns the canonical domain name (CNAME record) of the account",
+            "schema": {
+              "$ref": "#/definitions/account"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/originGroups": {
+      "get": {
+        "description": "Get information about origin groups in the project",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Origin Groups"
+        ],
+        "summary": "Get a list of origin groups",
+        "operationId": "getOriginGroups",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns a list of groups and origins",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/originGroupGet"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Origin Groups"
+        ],
+        "summary": "Create an origin group",
+        "description": "Add domains from which the CDN resource will fetch content",
+        "operationId": "createOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/originGroupPost"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful request. Returns the data array of the created group and its origins",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/originGroups/{originGroup_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Origin Groups"
+        ],
+        "summary": "Get an origin group",
+        "description": "Get information about an origin group by its ID",
+        "operationId": "getOriginGroupById",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Origin group ID",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns the data array of the created group and its origins",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "404": {
+            "description": "Group not found in this account"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Origin Groups"
+        ],
+        "summary": "Modify an origin group",
+        "description": "Edit an origin group by its ID",
+        "operationId": "editOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Origin group ID",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/originGroupPut"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. The origin group has been modified",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "Group not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Origin Groups"
+        ],
+        "summary": "Delete an origin group",
+        "description": "Delete an existing origin group by its ID",
+        "operationId": "deleteOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Origin group ID",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successful request. The origin group has been deleted"
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "Group not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources": {
+      "get": {
+        "description": "Get information about CDN resources in the project",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Resources"
+        ],
+        "summary": "Get a list of CDN resources",
+        "operationId": "getResources",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns a list of groups and origins",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/getResource"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Resources"
+        ],
+        "summary": "Create a CDN resource",
+        "operationId": "createResource",
+        "description": "Create a new CDN resource in the project",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "description": "CDN resource parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createResource"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns the full list of parameters of the created CDN resource",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "Project not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Resources"
+        ],
+        "summary": "Get a CDN resource",
+        "description": "Get information about a CDN resource by its ID",
+        "operationId": "getResourceById",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns the CDN resource data",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Resources"
+        ],
+        "summary": "Modify a CDN resource",
+        "description": "Edit a CDN resource by its ID",
+        "operationId": "editResource",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "CDN resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/changeResources"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. The CDN resource has been edited",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Resources"
+        ],
+        "summary": "Delete a CDN resource",
+        "description": "Delete a CDN resource by its ID",
+        "operationId": "deleteResource",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "CDN resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "CDN resource successfully deleted"
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/prefetch": {
+      "post": {
+        "description": "Pre-load files to the CDN resource before a user request. Recommended for files larger than 200 MB. No more than one request per minute can be executed",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Tools"
+        ],
+        "summary": "Prefetch cache",
+        "operationId": "SetPrefetch",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "ID of the CDN resource where content should be pre-loaded",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Paths to the files to be loaded, without specifying the domain",
+            "schema": {
+              "$ref": "#/definitions/resourcePrefetch"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful request. The files will be added to the waiting list. The execution time depends on the number of files and their size"
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "429": {
+            "description": "Too many requests"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/purge": {
+      "post": {
+        "description": "Purge cache from CDN resources to update CDN content. No more than one request per minute can be executed",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Tools"
+        ],
+        "summary": "Purge cache",
+        "operationId": "SetPurge",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "CDN resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Paths to the files to be deleted: <br> - `[]` — delete all files on the CDN resource. <br> - path template — delete specific files. Use the `*` operator to replace any number of characters in the path. <br> - file path without domain name — purge the cache of the selected file",
+            "schema": {
+              "$ref": "#/definitions/resourcePurge"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful request. The specified files will be deleted"
+          },
+          "400": {
+            "description": "Invalid request execution"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "429": {
+            "description": "Too many requests"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/ssl/le/issue": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Let's Encrypt"
+        ],
+        "summary": "Issue a Let's Encrypt certificate",
+        "description": "The request allows issuing a Let's Encrypt SSL certificate for a resource. The Let's Encrypt certificate will be issued for all CNAME records of the CDN resource. After applying the certificate to the resource, HTTPS will be enabled automatically. The certificate will be applied to all new CNAME records of the CDN resource and will be renewed automatically. To disable automatic certificate renewal, change the `ssl_automate` parameter",
+        "operationId": "ssl_le_issue",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "CDN resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful request. The certificate issuance process has started and may take up to 30 minutes"
+          },
+          "400": {
+            "description": "Invalid request parameters specified. Error options:<br/> - **Resource already has automated certificate** — the specified resource already has a certificate. Verify that the resource ID is correct. If a new certificate is needed, first revoke the current one, then repeat the request.<br/> - **Certificate issuing process have already being launched** — the certificate issuance process has started and may take up to 30 minutes. Wait for it to complete. <br/> - **We cannot issue a Let&#39;s Encrypt certificate for a resource with a wildcard cname** — the specified resource has an additional CNAME with a wildcard character. Only a custom certificate can be used for such a resource"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/ssl/le/revoke": {
+      "post": {
+        "summary": "Revoke a Let's Encrypt certificate",
+        "description": "Revoke and stop auto-renewal of a Let's Encrypt SSL certificate for a CDN resource",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Let's Encrypt"
+        ],
+        "operationId": "ssl_le_revoke",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "CDN resource ID",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "boolean",
+            "description": "Certificate deletion options: `true` — the certificate will be detached from all resources where it is used and deleted, `false` — the certificate will be detached only from the specified resource",
+            "name": "force",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The certificate will be revoked"
+          },
+          "400": {
+            "description": "Invalid request parameters specified. Error options:<br/> - **Resource doesn&#39;t have any certificates** — the specified resource has no certificates. Verify that the resource ID is correct.<br/> - **Resource doesn&#39;t support automatic renewal** — the specified resource has no Let’s Encrypt certificates. Verify that the resource ID is correct.<br/> - **Several resources [123, 124, 125] are linked to this certificate. Use the ?force=true query param to revoke certificate from several resources** — the certificate connected to the specified resource is also used by other resources. To revoke the certificate from all resources, specify the `?force=true` parameter"
+          },
+          "404": {
+            "description": "CDN resource not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/sslData": {
+      "get": {
+        "summary": "Get all SSL certificates",
+        "description": "Get information about all SSL certificates in the project",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL Certificates"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns a list of all certificates with information about them",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/getSSLAnswer"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Add SSL certificates",
+        "description": "Add an SSL certificate for delivering content via HTTPS protocol",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL Certificates"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "The request body must contain all certificate lines and private keys. Each certificate is written on a separate line. Use `\\n` to separate lines in the request body",
+            "schema": {
+              "$ref": "#/definitions/addSSL"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "SSL certificate successfully installed. The response will return information about the installed certificate",
+            "schema": {
+              "$ref": "#/definitions/getSSLAnswer"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/sslData/{ssl_id}": {
+      "delete": {
+        "summary": "Delete an SSL certificate",
+        "description": "Delete an SSL certificate by its ID",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL Certificates"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "SSL certificate ID",
+            "name": "ssl_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "SSL certificate successfully deleted"
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "SSL certificate not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Modify an SSL certificate",
+        "description": "Modify an SSL certificate by its ID",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL Certificates"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "SSL certificate ID",
+            "name": "ssl_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "The request body contains the parameters to be changed",
+            "schema": {
+              "$ref": "#/definitions/patchSSL"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "SSL certificate parameters have been successfully changed. The response will return a list of all current SSL certificate parameters",
+            "schema": {
+              "$ref": "#/definitions/getSSLAnswer"
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "SSL certificate not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/statistics/aggregate/stats": {
+      "get": {
+        "summary": "Get aggregated statistics (CDN)",
+        "description": "Get a CDN traffic report",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Statistics"
+        ],
+        "operationId": "GetAggregatedCDNStats",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Service name. Specify CDN in this parameter",
+            "name": "service",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Start date of the reporting period in ISO 8061/RFC 3339 format, UTC. It is preferable not to specify minutes and seconds. Examples: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "End date of the reporting period in ISO 8061/RFC 3339 format, UTC. It is preferable not to specify minutes and seconds. Examples: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "to",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "CDN resource ID. You can specify multiple IDs by listing them with `&`. Example: `resource=1&resource=2`",
+            "name": "resource",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Specifies the metric for which statistics should be obtained:<br> - **upstream_bytes** — traffic in bytes from the origin server to CDN servers or to the shield server;<br> - **sent_bytes** — traffic in bytes from the CDN server to clients;<br> - **shield_bytes** — traffic in bytes from the shield server to CDN servers;<br>- **total_bytes** — total data for the **shield_bytes**, **upstream_bytes**, and **sent_bytes** parameters;<br>- **requests** — number of requests to edge servers;<br> - **responses_2xx** — number of responses with 2xx codes;<br> - **responses_3xx** — number of responses with 3xx codes;<br> - **responses_4xx** — number of responses with 4xx codes;<br> - **responses_5xx** — number of responses with 5xx codes;<br> - **responses_hit** — number of responses with the `Cache: HIT` header;<br> - **responses_miss** — number of responses with the `Cache: MISS` header;<br> - **cache_hit_traffic_ratio** — share of non-cacheable traffic in the total volume: `1 - upstream_bytes / sent_bytes`;<br> - **95_percentile** — bandwidth indicator that cuts off 5% of bandwidth peaks;<br> - **min_bandwidth** — minimum bandwidth indicator;<br> - **max_bandwidth** — maximum bandwidth indicator",
+            "name": "metrics",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns data on the specified metrics",
+            "schema": {
+              "$ref": "#/definitions/getAggregatedCDNStatisticsResponse"
+            }
+          },
+          "204": {
+            "description": "No data for the specified period"
+          },
+          "400": {
+            "description": "Invalid request parameters specified"
+          },
+          "404": {
+            "description": "CDN server not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/statistics/series": {
+      "get": {
+        "description": "The request allows to obtain statistics for a CDN server for the last 90 days",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Statistics"
+        ],
+        "summary": "Get statistics for a CDN resource",
+        "operationId": "GetSeriesCDNStats",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Project ID in OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Service name. Available value — `CDN`",
+            "name": "service",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Start date of the reporting period in ISO 8061/RFC 3339 format, UTC. It is preferable not to specify minutes and seconds. Examples: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "End date of the reporting period in ISO 8061/RFC 3339 format, UTC. It is preferable not to specify minutes and seconds. Examples: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "to",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Time intervals by which data will be detailed. Available values: 1m, 5m, 15m, 1h, 1d",
+            "name": "granularity",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Specifies the metric for which statistics should be obtained:<br> - **upstream_bytes** — traffic in bytes from the origin server to CDN servers or to the shield server;<br> - **sent_bytes** — traffic in bytes from the CDN server to clients;<br> - **shield_bytes** — traffic in bytes from the shield server to CDN servers;<br>- **total_bytes** — total data for the **shield_bytes**, **upstream_bytes**, and **sent_bytes** parameters;<br> - **cdn_bytes** — total data for the **sent_bytes** and **shield_bytes** parameters;<br> - **requests_waf_passed** — number of requests passing through the Basic WAF option;<br> - **requests** — number of requests to edge servers;<br> - **responses_2xx** — number of responses with 2xx codes;<br> - **responses_3xx** — number of responses with 3xx codes;<br> - **responses_4xx** — number of responses with 4xx codes;<br> - **responses_5xx** — number of responses with 5xx codes;<br> - **response_types** — response statistics by content type;<br> - **responses_hit** — number of responses with the `Cache: HIT` header;<br> - **responses_miss** — number of responses with the `Cache: MISS` header;<br> - **cache_hit_traffic_ratio** — ratio of responses with the `Cache: HIT` header to the total number of requests: `responses_hit / requests`;<br> - **shield_traffic_ratio** — efficiency of Origin Shielding: how much more traffic passes through the shield server compared to a regular origin. Calculated using the formula: `(shield_bytes - upstream_bytes) / shield_bytes`;<br> - **image_processed** — number of images optimized through the image optimization service",
+            "name": "metrics",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Report data grouping (multiple values can be specified):<br> - **resource** — by resource ID;<br> - **region** — by CDN server region;<br> - **country** — by CDN server country;<br> - **vhost** — by resource CNAME",
+            "name": "group_by",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Countries for which statistics should be displayed. Uses the short name in English from the ISO 3166 standard",
+            "name": "countries",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Specifies the regions for which statistics should be displayed. Available values:<br> - **na** — North America; <br> - **eu** — Europe;<br> - **cis** — Commonwealth of Independent States (CIS);<br> - **asia** — Asia;<br> - **au** — Australia;<br> - **latam** — Latin America;<br> - **me** — Middle East;<br> - **africa** — Africa;<br> - **sa** — South America; <br> - **ru** — Russia.",
+            "name": "regions",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "collectionFormat": "multi",
+            "description": "CDN resource. To specify multiple resources, use `&`",
+            "name": "resource",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. Returns data on the specified metrics",
+            "schema": {
+              "$ref": "#/definitions/getSeriesCDNStatisticsResponse"
+            }
+          },
+          "204": {
+            "description": "No data for the specified period"
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "404": {
+            "description": "CDN server not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "account": {
+      "type": "object",
+      "required": [
+        "cname"
+      ],
+      "properties": {
+        "cname": {
+          "type": "string",
+          "example": "c1-531e19d9.gcdn.co"
+        }
+      }
+    },
+    "addSSL": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Unique name of the SSL certificate",
+          "type": "string"
+        },
+        "sslCertificate": {
+          "description": "Public part of the certificate",
+          "type": "string"
+        },
+        "sslPrivateKey": {
+          "description": "Private key of the SSL certificate",
+          "type": "string"
+        }
+      },
+      "example": {
+        "name": "New certificate",
+        "sslCertificate": "-----BEGIN CERTIFICATE-----\n<CERTIFICATE_1>\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\n<CERTIFICATE_2>\n-----END CERTIFICATE-----\n",
+        "sslPrivateKey": "-----BEGIN PRIVATE KEY-----\n<KEY_VALUE>\n-----END PRIVATE KEY-----\n"
+      }
+    },
+    "changeOrigin": {
+      "type": "object",
+      "required": [
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Indicator of using the origin as a backup: `true` — the origin will be used when one of the active origins becomes unavailable",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Origin availability: `true` — origin is available, `false` — origin is not available"
+        },
+        "source": {
+          "description": "IP address or domain name of the origin and port, if configured",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": true,
+        "enabled": true,
+        "source": "test12.example.com"
+      }
+    },
+    "changeResources": {
+      "type": "object",
+      "properties": {
+        "active": {
+          "description": "Resource activity: `true` — resource is active, `false` — resource is inactive",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "enabled": {
+          "description": "Resource availability: `true` — resource is available, `false` — resource is unavailable",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "logTarget": {
+          "description": "IP address or domain name and port (host:port) where logs will be sent in real time. To receive logs, configure your server to receive logs via syslog",
+          "type": "string"
+        },
+        "options": {
+          "$ref": "#/definitions/resourceOptions"
+        },
+        "origin": {
+          "description": "IP address or domain name of the origin and port, if configured. You can use either the 'origin' or 'originGroup' parameter in the request",
+          "type": "string"
+        },
+        "originGroup": {
+          "description": "ID or name of the origin group. You can use either the 'origin' or 'originGroup' parameter in the request",
+          "type": "string"
+        },
+        "originProtocol": {
+          "$ref": "#/definitions/originProtocolEnum"
+        },
+        "secondaryHostnames": {
+          "description": "List of additional CNAME records",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sslData": {
+          "description": "Specify the ID of the SSL certificate to be used for the CDN resource. The parameter will be filled in automatically if you issue a Let's Encrypt certificate. The parameter can only be used with `sslEnabled: true`",
+          "type": "integer",
+          "x-nullable": true
+        },
+        "sslEnabled": {
+          "description": "Indicator of using the HTTPS protocol: `true` — HTTPS protocol is used for content delivery, `false` — HTTPS protocol is not used for content delivery",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "ssl_automated": {
+          "description": "Indicator of automatic certificate renewal: `true` — Let's Encrypt SSL certificate is renewed automatically upon expiration, `false` — Let's Encrypt SSL certificate is not renewed upon expiration (content will not be delivered via HTTPS). The parameter can only be used with `sslEnabled: true`",
+          "type": "boolean",
+          "x-nullable": true
+        }
+      },
+      "example": {
+        "cname": "cdn.yoursite.com",
+        "logTarget": "1.2.3.4:1234",
+        "options": {
+          "allowedHttpMethods": {
+            "enabled": true,
+            "value": [
+              "GET",
+              "POST"
+            ]
+          },
+          "brotli_compression": {
+            "enabled": true,
+            "value": [
+              "text/html",
+              "text/plain"
+            ]
+          },
+          "browser_cache_settings": {
+            "enabled": true,
+            "value": "3600s"
+          },
+          "cache_http_headers": {
+            "enabled": false,
+            "value": [
+              "vary",
+              "content-length",
+              "last-modified",
+              "connection",
+              "accept-ranges",
+              "content-type",
+              "content-encoding",
+              "etag",
+              "cache-control",
+              "expires",
+              "keep-alive",
+              "server"
+            ]
+          },
+          "cors": {
+            "enabled": true,
+            "value": [
+              "yourdomain.com",
+              "yourdomain2.com"
+            ]
+          },
+          "country_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "GB",
+              "DE"
+            ],
+            "policy_type": "allow"
+          },
+          "disable_cache": {
+            "enabled": true,
+            "value": false
+          },
+          "disable_proxy_force_ranges": {
+            "enabled": true,
+            "value": true
+          },
+          "edge_cache_settings": {
+            "custom_values": {
+              "100": "43200s"
+            },
+            "enabled": true,
+            "value": "43200s"
+          },
+          "fetch_compressed": {
+            "enabled": true,
+            "value": false
+          },
+          "force_return": {
+            "body": "http://example.com/redirect_address",
+            "code": 301,
+            "enabled": true
+          },
+          "forward_host_header": {
+            "enabled": false,
+            "value": false
+          },
+          "gzipOn": {
+            "enabled": true,
+            "value": true
+          },
+          "host_header": {
+            "enabled": true,
+            "value": "host.com"
+          },
+          "ignoreQueryString": {
+            "enabled": true,
+            "value": false
+          },
+          "ignore_cookie": {
+            "enabled": true,
+            "value": true
+          },
+          "ip_address_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "192.168.1.100/32"
+            ],
+            "policy_type": "deny"
+          },
+          "proxy_cache_methods_set": {
+            "enabled": true,
+            "value": false
+          },
+          "query_params_blacklist": null,
+          "query_params_whitelist": null,
+          "redirect_http_to_https": {
+            "enabled": true,
+            "value": true
+          },
+          "redirect_https_to_http": {
+            "enabled": false,
+            "value": true
+          },
+          "referrer_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "google.com",
+              "*.yandex.ru"
+            ],
+            "policy_type": "deny"
+          },
+          "rewrite": {
+            "body": "/(.*) /additional_path/$1",
+            "enabled": true,
+            "flag": "break"
+          },
+          "secure_key": {
+            "enabled": true,
+            "key": "mysupersecretkey",
+            "type": 2
+          },
+          "slice": null,
+          "stale": {
+            "enabled": true,
+            "value": [
+              "http_404",
+              "http_500"
+            ]
+          },
+          "staticHeaders": {
+            "enabled": true,
+            "value": {
+              "One_Header": "Value_1",
+              "Two_Header": "Value_2"
+            }
+          },
+          "staticRequestHeaders": {
+            "enabled": true,
+            "value": {
+              "Header-One": "Value 1",
+              "Header-Two": "Value 2"
+            }
+          },
+          "user_agent_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "UserAgent Value"
+            ],
+            "policy_type": "allow"
+          }
+        },
+        "origin": "yoursite.com",
+        "originProtocol": "HTTPS",
+        "secondaryHostnames": [
+          "cdn1.yoursite.com",
+          "cdn2.yoursite.com"
+        ],
+        "sslData": 102,
+        "sslEnabled": true
+      }
+    },
+    "createOrigin": {
+      "type": "object",
+      "required": [
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Indicator of using the origin as a backup: `true` — the origin will be used when one of the active origins becomes unavailable",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Origin availability: `true` — origin is available, `false` — origin is not available"
+        },
+        "source": {
+          "description": "IP address or domain name of the origin and port, if configured",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": false,
+        "enabled": false,
+        "source": "test.example.com"
+      }
+    },
+    "createResource": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/changeResources"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cname": {
+              "description": "CNAME that will be used for content delivery via CDN",
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "example": {
+        "cname": "cdn.example.com",
+        "originGroup": 132,
+        "secondaryHostnames": [
+          "1.example.com",
+          "2.example.com"
+        ]
+      }
+    },
+    "getAggregatedCDNStatisticsResponse": {
+      "type": "object",
+      "properties": {
+        "metrics": {
+          "$ref": "#/definitions/metrics"
+        }
+      },
+      "example": {
+        "metrics": {
+          "95_percentile": 14324356,
+          "cache_hit_traffic_ratio": 0.9852247660029627,
+          "max_bandwidth": 22215199,
+          "min_bandwidth": 299608,
+          "requests": 64234595,
+          "responses_2xx": 62616980,
+          "responses_3xx": 1196666,
+          "responses_4xx": 420718,
+          "responses_5xx": 216,
+          "responses_hit": 21235829,
+          "responses_miss": 339566,
+          "sent_bytes": 16552226067556,
+          "total_bytes": 16796789080876,
+          "upstream_bytes": 244563013320
+        }
+      }
+    },
+    "getOrigin": {
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Indicator of using the origin as a backup: `true` — the origin will be used when one of the active origins becomes unavailable",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Origin availability: `true` — origin is available, `false` — origin is not available"
+        },
+        "id": {
+          "description": "Origin ID",
+          "type": "integer",
+          "format": "int64"
+        },
+        "source": {
+          "description": "IP address or domain name of the origin and port, if configured",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": false,
+        "enabled": false,
+        "id": 123,
+        "source": "test.example.com"
+      }
+    },
+    "getResource": {
+      "type": "object",
+      "required": [
+        "cname",
+        "created",
+        "id",
+        "originGroup_name",
+        "preset_applied",
+        "sslEnabled",
+        "status",
+        "vp_enabled"
+      ],
+      "properties": {
+        "active": {
+          "type": "boolean",
+          "description": "Resource activity: `true` — resource is active, `false` — resource is inactive",
+          "default": false
+        },
+        "client": {
+          "description": "Your control panel ID",
+          "type": "integer"
+        },
+        "cname": {
+          "description": "Alias used for content delivery via CDN",
+          "type": "string"
+        },
+        "companyName": {
+          "description": "Company name",
+          "type": "string"
+        },
+        "created": {
+          "description": "CDN resource creation date",
+          "type": "string"
+        },
+        "deleted": {
+          "description": "Resource deletion indicator: `true` — the resource has been deleted, `false` — the resource has not been deleted",
+          "type": "boolean",
+          "default": false
+        },
+        "enabled": {
+          "description": "Resource availability: `true` — resource is available, content is delivered, `false` — resource is not available, users receive a `403` response",
+          "type": "boolean",
+          "default": false
+        },
+        "id": {
+          "description": "CDN resource ID",
+          "type": "integer"
+        },
+        "options": {
+          "$ref": "#/definitions/resourceOptions"
+        },
+        "originGroup": {
+          "description": "Origin group ID",
+          "type": "integer"
+        },
+        "originGroup_name": {
+          "description": "Origin group name",
+          "type": "string"
+        },
+        "originProtocol": {
+          "$ref": "#/definitions/originProtocolEnum"
+        },
+        "preset_applied": {
+          "type": "boolean",
+          "description": "Indicator of using preset settings on the CDN resource: `true` — use preset settings, CDN resource options cannot be changed, `false` — do not use preset settings"
+        },
+        "proxy_ssl_enabled": {
+          "description": "SSL validation of the origin before establishing a connection: `true` — CDN checks the validity of the origin's SSL certificate before establishing a connection, `false` — CDN does not check the origin's SSL certificate",
+          "type": "boolean",
+          "default": false
+        },
+        "secondaryHostnames": {
+          "description": "List of additional CNAME records",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shielded": {
+          "description": "Indicator of origin shielding: `true` — origin shielding is enabled, `false` — origin shielding is not enabled",
+          "type": "boolean",
+          "default": false
+        },
+        "sslData": {
+          "type": "number",
+          "description": "Specify the ID of the SSL certificate to be used for the CDN resource. The parameter will be filled in automatically if you issue a Let's Encrypt certificate"
+        },
+        "sslEnabled": {
+          "description": "Indicator of using the HTTPS protocol: `true` — HTTPS protocol is used for content delivery, `false` — HTTPS protocol is not used for content delivery",
+          "type": "boolean"
+        },
+        "ssl_automated": {
+          "description": "Indicator of automatic certificate renewal: `true` — Let's Encrypt SSL certificate is renewed automatically upon expiration, `false` — Let's Encrypt SSL certificate is not renewed upon expiration (content will not be delivered via HTTPS). The parameter can only be used with `sslEnabled: true`",
+          "type": "boolean",
+          "default": false
+        },
+        "status": {
+          "description": "CDN resource status: `active` — resource is ready to use, `suspended` — resource is unavailable because the service is suspended, `processed` — resource is being processed and is not yet ready to use",
+          "type": "string",
+          "enum": [
+            "active",
+            "processed",
+            "suspended"
+          ]
+        },
+        "updated": {
+          "description": "Resource update date",
+          "type": "string"
+        },
+        "vp_enabled": {
+          "type": "boolean",
+          "description": "CDN resource integration status with the streaming platform: `true` — resource is configured for the streaming platform, changing resource settings may affect its operation; `false` — resource is not integrated with the streaming platform"
+        }
+      },
+      "example": {
+        "active": true,
+        "client": 170,
+        "cname": "cdn.site.com",
+        "companyName": "Your Company",
+        "created": "2017-06-10T10:30:04.954354Z",
+        "deleted": false,
+        "enabled": true,
+        "id": 220,
+        "options": {
+          "allowedHttpMethods": {
+            "enabled": false,
+            "value": [
+              "GET",
+              "POST",
+              "HEAD",
+              "OPTIONS"
+            ]
+          },
+          "edge_cache_settings": {
+            "enabled": true,
+            "value": true
+          },
+          "host_header": {
+            "enabled": true,
+            "value": "example.hb.ru-msk.vkcloud-storage.ru"
+          },
+          "ignoreQueryString": {
+            "enabled": true,
+            "value": true
+          },
+          "stale": {
+            "enabled": true,
+            "value": [
+              "error",
+              "updating"
+            ]
+          }
+        },
+        "originGroup": 80,
+        "originGroup_name": "example.hb.ru-msk.vkcloud-storage.ru",
+        "originProtocol": "MATCH",
+        "preset_applied": false,
+        "proxy_ssl_enabled": false,
+        "secondaryHostnames": [
+          "cdn1.yoursite.com",
+          "cdn2.yoursite.com"
+        ],
+        "shielded": false,
+        "sslEnabled": false,
+        "ssl_automated": false,
+        "status": "active",
+        "updated": "2023-11-20T08:15:19.867Z",
+        "vp_enabled": false
+      }
+    },
+    "getSSLAnswer": {
+      "type": "object",
+      "properties": {
+        "automated": {
+          "description": "Indicator of automatic certificate renewal: `true` — Let's Encrypt SSL certificate is renewed automatically upon expiration, `false` — Let's Encrypt SSL certificate is not renewed upon expiration (content will not be delivered via HTTPS). The parameter can only be used with `sslEnabled: true`",
+          "type": "boolean",
+          "default": false
+        },
+        "cert_issuer": {
+          "description": "Name of the certification authority issuing the SSL certificate",
+          "type": "string"
+        },
+        "cert_subject_cn": {
+          "description": "Domain protected by the SSL certificate",
+          "type": "string"
+        },
+        "deleted": {
+          "description": "Certificate deletion indicator: `true` — the certificate has been deleted and cannot be used for a CDN resource, `false` — the certificate is in use",
+          "type": "boolean",
+          "default": false
+        },
+        "hasRelatedResources": {
+          "description": "Certificate usage indicator: `true` — the certificate is used for CDN resources, `false` — the certificate is not in use",
+          "type": "boolean",
+          "default": false
+        },
+        "id": {
+          "description": "SSL certificate ID",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Certificate name",
+          "type": "string"
+        },
+        "validity_not_after": {
+          "description": "Date when the certificate will become untrusted",
+          "type": "string"
+        },
+        "validity_not_before": {
+          "description": "Date when the certificate will become valid",
+          "type": "string"
+        }
+      },
+      "example": {
+        "automated": false,
+        "cert_issuer": "Some certification center",
+        "cert_subjeck_cn": "mydomain.name",
+        "deleted": false,
+        "hasRelatedResources": true,
+        "name": "Some certificate",
+        "validity_not_after": "2017-08-21T11:02:00Z",
+        "validity_not_before": "2016-09-17T18:06:01Z"
+      }
+    },
+    "getSeriesCDNStatisticsResponse": {
+      "type": "object",
+      "properties": {
+        "1 (example)": {
+          "description": "ID of the resource for which data is presented in the statistics",
+          "type": "object"
+        },
+        "country": {
+          "type": "object"
+        },
+        "metrics": {
+          "$ref": "#/definitions/seriesMetrics"
+        },
+        "region": {
+          "description": "CDN server regions for which statistics are collected:<br> - **na** — North America; <br> - **eu** — Europe;<br> - **cis** — Commonwealth of Independent States (CIS);<br> - **asia** — Asia;<br> - **au** — Australia;<br> - **latam** — Latin America;<br> - **me** — Middle East;<br> - **africa** — Africa;<br> - **sa** — South America; <br> - **ru** — Russia",
+          "type": "object"
+        },
+        "resource": {
+          "description": "ID of the resource for which data is presented in the statistics",
+          "type": "object"
+        },
+        "vhost": {
+          "type": "object",
+          "description": "CNAME of the resource for which data is presented in the statistics"
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "95_percentile": {
+          "description": "Bandwidth indicator that cuts off 5% of bandwidth peaks",
+          "type": "integer"
+        },
+        "cache_hit_traffic_ratio": {
+          "description": "Share of non-cacheable traffic in the total volume: `1 - upstream_bytes / sent_bytes`",
+          "type": "integer"
+        },
+        "max_bandwidth": {
+          "description": "Maximum bandwidth indicator",
+          "type": "integer"
+        },
+        "min_bandwidth": {
+          "description": "Minimum bandwidth indicator",
+          "type": "integer"
+        },
+        "requests": {
+          "description": "Number of requests to edge servers",
+          "type": "integer"
+        },
+        "responses_2xx": {
+          "description": "Number of responses with 2xx codes",
+          "type": "integer"
+        },
+        "responses_3xx": {
+          "description": "Number of responses with 3xx codes",
+          "type": "integer"
+        },
+        "responses_4xx": {
+          "description": "Number of responses with 4xx codes",
+          "type": "integer"
+        },
+        "responses_5xx": {
+          "description": "Number of responses with 5xx codes",
+          "type": "integer"
+        },
+        "responses_hit": {
+          "description": "Number of responses with the `Cache: HIT` header",
+          "type": "integer"
+        },
+        "responses_miss": {
+          "description": "Number of responses with the `Cache: MISS` header",
+          "type": "integer"
+        },
+        "shield_bytes": {
+          "description": "Traffic in bytes from the shield server to CDN servers",
+          "type": "integer"
+        },
+        "sent_bytes": {
+          "description": "Traffic in bytes from the CDN server to clients",
+          "type": "integer"
+        },
+        "upstream_bytes": {
+          "description": "Traffic in bytes from the origin server to CDN servers or to the shield server",
+          "type": "integer"
+        },
+        "total_bytes": {
+          "description": "Total data for the `shield_bytes`, `upstream_bytes`, and `sent_bytes` parameters",
+          "type": "integer"
+        }
+      }
+    },
+    "originGroupGet": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "useNext",
+        "origin_ids",
+        "origins"
+      ],
+      "properties": {
+        "id": {
+          "description": "Origin group ID",
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "description": "Origin group name",
+          "type": "string"
+        },
+        "origin_ids": {
+          "description": "Array with data about all origins in the group, including their IDs",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/getOrigin"
+          }
+        },
+        "origins": {
+          "description": "Array with data about all origins in the group, without their IDs",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/createOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Use the next origin in case of an error: `true` — if this origin responds with `4XX` or `5XX` errors, the next one in the list will be used",
+          "type": "boolean"
+        }
+      },
+      "example": [
+        {
+          "id": 20,
+          "name": "YourOriginGroup",
+          "origin_ids": [
+            {
+              "backup": false,
+              "id": 5,
+              "source": "yourwebsite.com"
+            },
+            {
+              "backup": true,
+              "id": 6,
+              "source": "1.2.3.4:5500"
+            }
+          ],
+          "origins": [
+            {
+              "source": "yourwebsite.com"
+            },
+            {
+              "source": "1.2.3.4:5500"
+            }
+          ],
+          "useNext": true
+        }
+      ]
+    },
+    "originGroupPost": {
+      "type": "object",
+      "required": [
+        "name",
+        "useNext",
+        "origins"
+      ],
+      "properties": {
+        "name": {
+          "description": "Name of the origin group",
+          "type": "string"
+        },
+        "origins": {
+          "description": "Data of all IP addresses or domain names being added to the group",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/createOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Use the next origin in case of an error: `true` — if this origin responds with `4XX` or `5XX` errors, the next one in the list will be used",
+          "type": "boolean"
+        }
+      },
+      "example": {
+        "name": "YourOriginGroup2",
+        "origins": [
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "yourwebsite.com"
+          },
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "1.2.3.4:5501"
+          }
+        ],
+        "useNext": true
+      }
+    },
+    "originGroupPut": {
+      "type": "object",
+      "required": [
+        "name",
+        "useNext"
+      ],
+      "properties": {
+        "name": {
+          "description": "Name of the origin group",
+          "type": "string"
+        },
+        "origins": {
+          "description": "Data of all IP addresses or domain names being added to the group",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/changeOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Use the next origin in case of an error: `true` — if this origin responds with `4XX` or `5XX` errors, the next one in the list will be used",
+          "type": "boolean"
+        }
+      },
+      "example": {
+        "name": "group#2",
+        "origins": [
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "yourdomain.com"
+          }
+        ],
+        "useNext": false
+      }
+    },
+    "originProtocolEnum": {
+      "type": "string",
+      "description": "Protocol for communication with the origin",
+      "enum": [
+        "HTTP",
+        "HTTPS",
+        "MATCH"
+      ]
+    },
+    "patchSSL": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "New name of the SSL certificate. Must be unique",
+          "type": "string"
+        }
+      },
+      "example": {
+        "name": "New certificate name"
+      }
+    },
+    "resourceOptions": {
+      "type": "object",
+      "properties": {
+        "allowedHttpMethods": {
+          "type": "object",
+          "description": "HTTP methods available for the CDN resource",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "HTTP methods availability: `true` — HTTP methods are available for the resource, `false` — HTTP methods are not available for the resource"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "GET",
+                  "POST",
+                  "HEAD",
+                  "OPTIONS",
+                  "PUT",
+                  "PATCH",
+                  "DELETE"
+                ]
+              },
+              "description": "Available methods"
+            }
+          },
+          "x-nullable": true
+        },
+        "brotli_compression": {
+          "type": "object",
+          "description": "Using the Brotli compression algorithm",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — Brotli compression is used, `false` — not used"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "browser_cache_settings": {
+          "type": "object",
+          "description": "Browser caching settings",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "string",
+              "description": "File caching time, in seconds"
+            }
+          }
+        },
+        "cors": {
+          "type": "object",
+          "description": "Cross-origin resource sharing support",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "edge_cache_settings": {
+          "type": "object",
+          "description": "Caching settings on the CDN resource",
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "custom_values": {
+              "type": "object",
+              "description": "Caching time in seconds for specific response codes"
+            },
+            "default": {
+              "type": "string",
+              "description": "Caching time in seconds, controlled by the origin. Used for HTTP 200, 201, 204, 206, 301, 302, 303, 304, 307, 308 status codes if the origin server does not have caching HTTP headers. Responses with other codes will not be cached"
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "string",
+              "description": "File caching time, in seconds"
+            }
+          }
+        },
+        "fetch_compressed": {
+          "type": "object",
+          "description": "Compression at the origin. The option reduces bandwidth between the origin server and cache servers and increases content delivery speed by reducing file compression time on the CDN side. CDN will fetch already compressed content from the origin server, so the origin must support compression. In this case, users will receive compressed content",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "force_return": {
+          "type": "object",
+          "description": "Return an HTTP response code",
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "body": {
+              "type": "string",
+              "description": "URL or text of the response code"
+            },
+            "code": {
+              "type": "integer",
+              "description": "Response code (403, 301, 302, 303, etc.)"
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            }
+          },
+          "x-nullable": true
+        },
+        "forward_host_header": {
+          "description": "Adding request headers",
+          "type": "object",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "gzipOn": {
+          "type": "object",
+          "description": "Using the Gzip compression algorithm",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "host_header": {
+          "type": "object",
+          "description": "Adding response headers",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "x-nullable": true
+        },
+        "ignoreQueryString": {
+          "type": "object",
+          "description": "Ignore query parameters when caching files",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean",
+              "description": "Ignoring type: `true` — all query parameters are ignored, `false` — parameters specified in `query_params_blacklist` are ignored, or all parameters except those specified in `query_params_whitelist` are ignored"
+            }
+          },
+          "x-nullable": true
+        },
+        "ignore_cookie": {
+          "type": "object",
+          "description": "Ignore Set-Cookie",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "query_params_blacklist": {
+          "type": "object",
+          "description": "The option allows CDN to ignore the specified parameters and cache them as separate objects. The `ignoreQueryString`, `query_params_whitelist`, and `query_params_blacklist` options cannot be enabled simultaneously",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "array",
+              "description": "List of parameters to ignore",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "query_params_whitelist": {
+          "type": "object",
+          "description": "The option allows CDN to ignore all parameters except the specified ones and cache them as separate objects. The `ignoreQueryString`, `query_params_whitelist`, and `query_params_blacklist` options cannot be enabled simultaneously",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "array",
+              "description": "List of parameters that cannot be ignored",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "country_acl": {
+          "type": "object",
+          "description": "Allows protecting content from access from certain countries",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — option is enabled, `false` — option is not enabled"
+            },
+            "policy_type": {
+              "type": "string",
+              "description": "Policy type: `allow` — allow access to all countries except those specified in the `excepted_values` parameter; `deny` — deny access to all countries except those specified in the `excepted_values` parameter"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "List of countries in ISO 3166-1 alpha-2 format",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "referrer_acl": {
+          "type": "object",
+          "description": "Setting allows protecting content from being published on other sites",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — option is enabled, `false` — option is not enabled"
+            },
+            "policy_type": {
+              "type": "string",
+              "description": "Policy type: `allow` — allow access to all domains except those specified in the `excepted_values` parameter; `deny` — deny access to all domains except those specified in the `excepted_values` parameter"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "List of domains or domain masks without `http://` or `https://`",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "ip_address_acl": {
+          "type": "object",
+          "description": "Setting allows denying access to content for certain IP addresses",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — option is enabled, `false` — option is not enabled"
+            },
+            "policy_type": {
+              "type": "string",
+              "description": "Policy type: `allow` — allow access to IP addresses except those specified in the `excepted_values` parameter; `deny` — deny access to all IP addresses except those specified in the `excepted_values` parameter"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "List of IP addresses with subnet mask. The access policy works based on network addresses calculated from the specified IP addresses. If two or more IP addresses belong to the same network, it is sufficient to specify only one of these IP addresses",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "slice": {
+          "type": "object",
+          "description": "Optimization of large file delivery. The option accelerates caching of large files. The file will be requested and stored in cache in 10 MB parts",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "stale": {
+          "type": "object",
+          "description": "Always online: if the origin server is unavailable, outdated content will be delivered from cache",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "staticHeaders": {
+          "type": "object",
+          "description": "HTTP headers that the CDN server will add to the response to the client",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "staticRequestHeaders": {
+          "type": "object",
+          "description": "HTTP headers that CDN servers will add to requests to the origin server",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "websockets": {
+          "type": "object",
+          "description": "Setting allows WebSocket connections to the origin",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Usage indicator: `true` — used, `false` — not used"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        }
+      }
+    },
+    "resourcePrefetch": {
+      "type": "object",
+      "required": [
+        "paths"
+      ],
+      "properties": {
+        "paths": {
+          "description": "Paths to files that need to be pre-loaded on the CDN resource",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "example": {
+        "paths": [
+          "/test.jpg",
+          "test1.jpg"
+        ]
+      }
+    },
+    "resourcePurge": {
+      "type": "object",
+      "required": [
+        "paths"
+      ],
+      "properties": {
+        "paths": {
+          "description": "Path to files to be deleted",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "example": {
+        "paths": [
+          "/test.jpg",
+          "/static/*",
+          "*.png",
+          "*/images/*",
+          "*/pictures/*.jpg"
+        ]
+      }
+    },
+    "seriesMetrics": {
+      "description": "Details of the requested parameters. Each parameter has two values: the first is the UNIX timestamp when the statistics were obtained, and the second is the metric value",
+      "type": "object",
+      "properties": {
+        "cache_hit_requests_ratio": {
+          "description": "Volume of cacheable content delivered. Calculated using the formula: `responses_hit / requests`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "cache_hit_traffic_ratio": {
+          "description": "Share of non-cacheable traffic in the total volume. Calculated using the formula: `1 - upstream_bytes / sent_bytes`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "cdn_bytes": {
+          "description": "Sum of traffic from shield servers (`shield_bytes`) to CDN servers and from CDN servers to clients (`sent_bytes`)",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "image_processed": {
+          "description": "Number of images optimized through the image optimization service",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "requests": {
+          "description": "Number of requests to edge servers",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "requests_waf_passed": {
+          "description": "Number of requests passing through the Basic WAF option",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "response_types": {
+          "description": "Response statistics by content type",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_2xx": {
+          "description": "Number of responses with 2xx codes",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_3xx": {
+          "description": "Number of responses with 3xx codes",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_4xx": {
+          "description": "Number of responses with 4xx codes",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_5xx": {
+          "description": "Number of responses with 5xx codes",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_hit": {
+          "description": "Number of responses with the `Cache: HIT` header",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_miss": {
+          "description": "Number of responses with the `Cache: MISS` header",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "sent_bytes": {
+          "description": "Traffic in bytes from the CDN server to clients",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "shield_bytes": {
+          "description": "Traffic in bytes from the shield server to CDN servers",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "shield_traffic_ratio": {
+          "description": "Efficiency of Origin Shielding: how much more traffic passes through the shield server compared to a regular origin. Calculated using the formula: `(shield_bytes - upstream_bytes) / shield_bytes`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "total_bytes": {
+          "description": "Total data for the `shield_bytes`, `upstream_bytes`, and `sent_bytes` parameters",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "upstream_bytes": {
+          "description": "Traffic in bytes from the origin server to CDN servers or to the shield server",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
