@@ -1,0 +1,576 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.0",
+    "title": "kms-managed-api",
+    "description": "Сервис управления KMS\n"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8083",
+      "variables": {
+        "basePath": {
+          "default": "v1"
+        }
+      }
+    }
+  ],
+  "tags": [
+    {
+      "name": "S2S-API"
+    }
+  ],
+  "paths": {
+    "/secret/metadata/{path...}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/Path"
+        }
+      ],
+      "get": {
+        "summary": "Список секретов",
+        "description": "Список секретов\n",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Scan"
+          },
+          {
+            "$ref": "#/components/parameters/List"
+          }
+        ],
+        "operationId": "S2SApiSecretsListOrScan",
+        "tags": [
+          "S2S-API"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Перманентное удаление секрета",
+        "description": "Перманентное удаление секрета\n",
+        "operationId": "S2SApiSecretDeleteMetadata",
+        "tags": [
+          "S2S-API"
+        ],
+        "responses": {
+          "204": {
+            "description": "The resource was successfully deleted"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/secret/detailed-metadata/{path...}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/Path"
+        }
+      ],
+      "get": {
+        "summary": "Список секретов c детализацией или секрета с его версиями",
+        "description": "Список секретов c детализацией или секрета с его версиями\n",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Scan"
+          },
+          {
+            "$ref": "#/components/parameters/List"
+          }
+        ],
+        "operationId": "S2SApiSecretsListOrScanDetailed",
+        "tags": [
+          "S2S-API"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/secret/data/{path...}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/Path"
+        }
+      ],
+      "get": {
+        "summary": "Получение данных по версии секрета",
+        "description": "Данные по версии секрета\n",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Version"
+          }
+        ],
+        "operationId": "S2SApiSecretsGetVersionData",
+        "tags": [
+          "S2S-API"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создание секрета или версии",
+        "description": "Создание секрета или версии\n",
+        "operationId": "S2SApiSecretsCreateSecretVersion",
+        "tags": [
+          "S2S-API"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SecretCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/secret/metadata/delete-protection/{path...}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/Path"
+        }
+      ],
+      "get": {
+        "summary": "Получение флага защиты от удаления секрета",
+        "description": "Получение флага защиты от удаления секрета\n",
+        "operationId": "S2SApiSecretsGetDeletionProtection",
+        "tags": [
+          "S2S-API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Флаг защиты от удаления",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "delete_protection": {
+                      "type": "boolean",
+                      "x-omitempty": false
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      },
+      "put": {
+        "summary": "Установка флага защиты от удаления секрета",
+        "description": "Изменение флага защиты от удаления секрета\n",
+        "operationId": "S2SApiSecretsSetDeletionProtection",
+        "tags": [
+          "S2S-API"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "delete_protection"
+                ],
+                "properties": {
+                  "delete_protection": {
+                    "type": "boolean",
+                    "x-omitempty": false,
+                    "x-omitzero": false,
+                    "nullable": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Флаг защиты от удаления успешно изменен"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "XReqId": {
+        "name": "X-Req-Id",
+        "in": "header",
+        "description": "Id запроса пользователя",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "nullable": true
+        }
+      },
+      "XAuthToken": {
+        "name": "X-Auth-Token",
+        "in": "header",
+        "description": "Токен авторизации пользователя",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "List": {
+        "name": "list",
+        "in": "query",
+        "description": "запрос на операцию list, для этого запроса можно использовать метод LIST",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "Scan": {
+        "name": "scan",
+        "in": "query",
+        "description": "запрос на операцию scan, для этого запроса можно использовать метод SCAN",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "Version": {
+        "name": "version",
+        "in": "query",
+        "description": "номер версии, по умолчанию текущая версия секрета",
+        "schema": {
+          "$ref": "#/components/schemas/SecretVersionNumber"
+        }
+      },
+      "Path": {
+        "name": "path...",
+        "in": "path",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "SecretName": {
+        "name": "secret_name",
+        "in": "path",
+        "description": "Название секрета",
+        "schema": {
+          "type": "string"
+        }
+      }
+    },
+    "schemas": {
+      "SecretsListResponse": {
+        "type": "object",
+        "properties": {
+          "keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SecretsListDetailedResponse": {
+        "type": "object",
+        "properties": {
+          "keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "key_info": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SecretKeyInfo"
+            }
+          }
+        }
+      },
+      "SecretKeyInfo": {
+        "type": "object",
+        "properties": {
+          "versions": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SecretVersionInfo",
+              "x-omitempty": false,
+              "x-omitzero": false
+            }
+          },
+          "current_version": {
+            "$ref": "#/components/schemas/SecretVersionNumber",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "oldest_version": {
+            "$ref": "#/components/schemas/SecretVersionNumber",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "created_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "updated_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "max_versions": {
+            "$ref": "#/components/schemas/SecretVersionNumber"
+          },
+          "cas_required": {
+            "type": "boolean",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "delete_version_after": {
+            "type": "string",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "custom_metadata": {
+            "type": "object",
+            "additionalProperties": true,
+            "x-omitempty": false,
+            "x-omitzero": false
+          }
+        }
+      },
+      "SecretVersionInfo": {
+        "type": "object",
+        "properties": {
+          "created_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "deletion_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "destroyed": {
+            "type": "boolean",
+            "x-omitempty": false,
+            "x-omitzero": false
+          }
+        }
+      },
+      "SecretVersionDataResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/SecretVersionMetadata"
+          }
+        }
+      },
+      "SecretVersionMetadata": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "$ref": "#/components/schemas/SecretVersionNumber"
+          },
+          "created_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deletion_time": {
+            "x-omitempty": true,
+            "nullable": true,
+            "type": "string",
+            "format": "date-time"
+          },
+          "destroyed": {
+            "type": "boolean"
+          },
+          "custom_metadata": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "SecretCreateRequest": {
+        "type": "object",
+        "properties": {
+          "options": {
+            "type": "object",
+            "properties": {
+              "cas": {
+                "type": "integer"
+              }
+            }
+          },
+          "data": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "SecretCreateResponse": {
+        "type": "object",
+        "properties": {
+          "version": {
+            "$ref": "#/components/schemas/SecretVersionNumber",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "created_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "deletion_time": {
+            "type": "string",
+            "format": "date-time",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "destroyed": {
+            "type": "boolean",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "custom_metadata": {
+            "type": "object",
+            "additionalProperties": true,
+            "x-omitempty": false,
+            "x-omitzero": false
+          }
+        }
+      },
+      "DefaultError": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "DefaultResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/SecretsListResponse"
+              },
+              {
+                "$ref": "#/components/schemas/SecretsListDetailedResponse"
+              },
+              {
+                "$ref": "#/components/schemas/SecretVersionDataResponse"
+              },
+              {
+                "$ref": "#/components/schemas/SecretCreateResponse"
+              }
+            ]
+          },
+          "warnings": {
+            "description": "some warnings",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SecretVersionNumber": {
+        "x-omitempty": false,
+        "type": "integer",
+        "nullable": false,
+        "description": "номер версии"
+      }
+    },
+    "responses": {
+      "DefaultError": {
+        "description": "default error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/DefaultError"
+            }
+          }
+        }
+      },
+      "DefaultResponse": {
+        "description": "default response",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/DefaultResponse"
+            }
+          }
+        }
+      }
+    }
+  }
+}

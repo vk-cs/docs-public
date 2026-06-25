@@ -1,0 +1,14 @@
+{
+  "title": "Менеджер секретов",
+  "shortDescription": "OpenAPI-спецификация менеджер секретов",
+  "metaDescription": "Справка по менеджеру секретов API",
+  "sectionTitle": "Менеджер секретов",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

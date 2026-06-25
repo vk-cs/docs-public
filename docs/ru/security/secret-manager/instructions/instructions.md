@@ -1,1 +1,1 @@
-# {heading(Secret Manager)[id=sm-instructions]}
+# {heading(Менеджер секретов)[id=sm-instructions]}
