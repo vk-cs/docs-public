@@ -1,0 +1,14 @@
+{
+  "title": "Құпиялар менеджері",
+  "shortDescription": "Құпиялар менеджерінің OpenAPI-спецификациясы",
+  "metaDescription": "Құпиялар менеджері API бойынша анықтама",
+  "sectionTitle": "Құпиялар менеджері",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
