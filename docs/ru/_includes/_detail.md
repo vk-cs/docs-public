@@ -20,10 +20,9 @@
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(detail-all)}
-1. Откройте страницу баланса проекта одним из способов:
 
-   - Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
-   - Перейдите в раздел **Баланс**.
+{include(/ru/_includes/_balance_page.md)}
+
    {/includetag}
    {includetag(file-billing-detail)}
 1. Перейдите на вкладку **Детализация**.
@@ -56,10 +55,8 @@
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(detail-all)}
-1. Откройте страницу баланса проекта одним из способов:
 
-   - Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
-   - Перейдите в раздел **Баланс**.
+{include(/ru/_includes/_balance_page.md)}
 
 1. Перейдите на вкладку **Расходы на сервисы**.
 1. При необходимости установите фильтры на отображаемые записи:
@@ -86,10 +83,8 @@
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(detail-all)}
-1. Откройте страницу баланса проекта одним из способов:
 
-   - Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
-   - Перейдите в раздел **Баланс**.
+{include(/ru/_includes/_balance_page.md)}
 
    {/includetag}
    {includetag(file-billing-detail)}
