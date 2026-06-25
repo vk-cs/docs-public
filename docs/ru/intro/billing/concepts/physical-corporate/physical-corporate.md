@@ -38,7 +38,7 @@
 
 ### {heading(Постоплата)[id=billing-physical-corporate-postpay]}
 
-Пользователю раз в месяц выставляется счет за использование сервисов. Баланс лицевого счета проекта при такой схеме всегда отрицательный, но проект не {linkto(../../../../tools-for-using-services/account/concepts/projects#projects-auto-freeze)[text=замораживается]}.
+Пользователю раз в месяц выставляется счет за использование сервисов.
 
 {tabs}
 
@@ -52,7 +52,7 @@
 
 Работа по постоплате доступна, если заключить с {var(cloud)} {linkto(#billing-physical-corporate-agreement-type)[text=индивидуальный договор]}, в котором зафиксирована эта схема. По умолчанию юридические лица и ИП работают по предоплате.
 
-При работе по постоплате юридическому лицу и ИП в качестве {linkto(../report#billing-report-legal-entities)[text=отчетных документов]} предоставляются универсальный передаточный документ (УПД) и счет на оплату. Другие документы опциональны.
+При работе по постоплате юридическому лицу и ИП в качестве {linkto(../report#billing-report-legal-entities)[text=отчетных документов]} предоставляются универсальный передаточный документ (УПД) и счет на оплату. Другие документы опциональны. Вы можете {linkto(/ru/intro/billing/instructions/closing-docs#billing-closing-docs)[text=скачать]} отчетные документы в личном кабинете VK Cloud.
 
 {/tab}
 
@@ -121,9 +121,9 @@
 
 ## {heading(Дорегистрация юридических лиц)[id=billing-physical-corporate-legal-entities-registration-complete]}
 
-Под {linkto(../../instructions/corporate#billing-corporate)[text=закрывающие документы для юридических лиц]} понимается сохранение реквизитов юридического лица или ИП в настройках проекта в личном кабинете. Вручную указывать реквизиты не нужно, они заполняются автоматически после ввода ИНН.
+Под {linkto(../../instructions/corporate#billing-corporate)[text=закрывающими документами для юридических лиц]} понимается сохранение реквизитов юридического лица или ИП в настройках проекта в личном кабинете. Вручную указывать реквизиты не нужно, они заполняются автоматически после ввода ИНН.
 
-После дорегистрации те организации, которые работают по {linkto(#billing-physical-corporate-payment-scheme)[text=предоплате]}, могут выгружать {linkto(../../instructions/bill-generation#billing-bill-generation)[text=счета на оплату]} с полными реквизитами из личного кабинета. Организации, работающие по постоплате, получают счета на оплату от {var(cloud)} и не могут формировать их в ЛК самостоятельно.
+После дорегистрации те организации, которые работают по {linkto(#billing-physical-corporate-payment-scheme)[text=предоплате]}, могут выгружать {linkto(../../instructions/bill-generation#billing-bill-generation)[text=счета на оплату]} с полными реквизитами из личного кабинета. Организации, работающие по постоплате, получают счета на оплату от {var(cloud)} в конце отчетного периода, а также могут {linkto(../../instructions/closing-docs#billing-closing-docs)[text=скачивать]} их в личном кабинете {var(cloud)}.
 
 ## {heading(ЭДО)[id=billing-physical-corporate-edm]}
 
@@ -151,7 +151,7 @@
 
 {/tabs}
 
-## {heading(Различия для физических и юридических лиц: итоги)[id=billing-physical-corporate-differences]}
+## {heading(Различия для физических и юридических лиц)[id=billing-physical-corporate-differences]}
 
 [cols="1,2,2", options="header"]
 |===
