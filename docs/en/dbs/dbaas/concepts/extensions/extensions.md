@@ -32,13 +32,6 @@ Available extensions:
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/check.svg "inline")
 
-| Postgres optimization service (holistic)
-| ![](/en/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
-| ![](/en/assets/no.svg "inline")
-
 | Popular Hints for the PostgreSQL glider (pg_hint_plan)
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")

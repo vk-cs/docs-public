@@ -34,13 +34,6 @@
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/check.svg "inline")
 
-| Сервис для оптимизации Postgres (holistic)
-| ![](../../../../assets/check.svg "inline") 
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-
 | Популярные Hints для планера PostgreSQL (pg_hint_plan)
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/no.svg "inline")

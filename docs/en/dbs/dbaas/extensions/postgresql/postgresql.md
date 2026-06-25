@@ -6,28 +6,6 @@ Availability of the extensions depends on selected version of PostgreSQL.
 
 {/note}
 
-## Holistic.dev (holistic)
-
-{tabs}
-
-{tab(Extension description)}
-
-[Holistic.dev](https://holistic.dev/) is a static analyzer and tool for extracting information about database organization. Thanks to the collected data, the tool automatically monitors the integrity of relations between database objects and detects possible issues. Administrators use information from Holistic.dev reports to optimize the database. Holistic.dev only collects information about DML queries and database schema, database configuration and query execution plans are not analyzed.
-
-Read more in [official FAQ of the extension](https://holistic.dev/faq).
-
-{/tab}
-
-{tab(Extension parameters)}
-
-- `databases`: the list of databases in which the extension should operate. Required parameter.
-- `api_key`: the Holistic.dev API key. Required parameter.
-- `project_name`: the Holistic.dev project name. Required parameter.
-
-{/tab}
-
-{/tabs}
-
 ## JsQuery
 
 {tabs}
