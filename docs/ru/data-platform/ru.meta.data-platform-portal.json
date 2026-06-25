@@ -38,6 +38,10 @@
       {
         "buildPoint": "data-p",
         "value": "VK Private Cloud"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "VK Private Cloud"
       }
     ],
     "s3": [
