@@ -36,13 +36,6 @@ VK Cloud бұрыннан өрістетілген ДҚ инстанстарын
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/check.svg "inline")
 
-| Postgres-ты оңтайландыру қызметі (holistic)
-| ![](../../../../assets/check.svg "inline") 
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline")
-
 | PostgreSQL жоспарлаушысына арналған танымал Hints (pg_hint_plan)
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/no.svg "inline")
