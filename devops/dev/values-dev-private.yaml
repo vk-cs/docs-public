@@ -33,7 +33,7 @@ components:
     ingress:
       className: "nginx-vk-docs-share"
       rules:
-        - hostname: private-{{ .Release.Store.ingressHostname }}
+        - hostname: {{ .Release.Store.ingressHostname }}
           paths:
             - path: /private-cloud
       tls:
