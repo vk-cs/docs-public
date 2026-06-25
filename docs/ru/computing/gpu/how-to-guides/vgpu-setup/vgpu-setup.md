@@ -77,7 +77,7 @@
    {tab(wget)}
 
    ```shell
-   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_linux.run
    ```
 
    {/tab}
@@ -85,7 +85,7 @@
    {tab(curl)}
 
    ```shell
-   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_linux.run
    ```
 
    {/tab}
@@ -95,13 +95,13 @@
 1. Выдайте права на исполнение для скачанного файла:
 
    ```shell
-   chmod +x NVIDIA-Linux-x86_64-535.247.01-grid.run
+   chmod +x vgpu_driver_linux.run
    ```
 
 1. Запустите установку:
 
    ```shell
-   sudo ./NVIDIA-Linux-x86_64-535.247.01-grid.run
+   sudo ./vgpu_driver_linux.run
    ```
 
 1. Следуйте инструкциям установщика.
@@ -111,7 +111,7 @@
 
 {tab(Windows)}
 
-1. [Скачайте](https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/539.28_grid_win10_win11_server2019_server2022_dch_64bit_international.exe) драйвер NVIDIA® GRID.
+1. [Скачайте](https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_windows.exe) драйвер NVIDIA® GRID.
 1. Запустите файл и следуйте инструкциям установщика.
 1. Перезагрузите ВМ.
 
