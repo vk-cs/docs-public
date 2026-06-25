@@ -79,7 +79,7 @@
    {tab(wget)}
 
    ```shell
-   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   wget https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_linux.run
    ```
 
    {/tab}
@@ -87,7 +87,7 @@
    {tab(curl)}
 
    ```shell
-   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/NVIDIA-Linux-x86_64-535.247.01-grid.run
+   curl -O https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_linux.run
    ```
 
    {/tab}
@@ -97,13 +97,13 @@
 1. Жүктеп алынған файлға орындау құқықтарын беріңіз:
 
    ```shell
-   chmod +x NVIDIA-Linux-x86_64-535.247.01-grid.run
+   chmod +x vgpu_driver_linux.run
    ```
 
 1. Орнатуды іске қосыңыз:
 
    ```shell
-   sudo ./NVIDIA-Linux-x86_64-535.247.01-grid.run
+   sudo ./vgpu_driver_linux.run
    ```
 
 1. Орнатушының нұсқауларын орындаңыз.
@@ -113,7 +113,7 @@
 
 {tab(Windows)}
 
-1. NVIDIA® GRID драйверін [жүктеп алыңыз](https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/539.28_grid_win10_win11_server2019_server2022_dch_64bit_international.exe).
+1. NVIDIA® GRID драйверін [жүктеп алыңыз](https://hub.mcs.mail.ru/repository/gpu-drivers-raw/bin/nvidia/guest-drivers/latest/vgpu_driver_windows.exe).
 1. Файлды іске қосып, орнатушының нұсқауларын орындаңыз.
 1. ВМ-ді қайта жүктеңіз.
 
