@@ -1414,7 +1414,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. [Create](../../jupyterhub/instructions/create) the JupyterHub instance, if you have not already done it.
 1. [Create](../../mlflow/instructions/create) an MLflow instance, if you have not already done it.
 1. Create and train an ML model, if you have not already done it.
-1. [Create](../../deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
+1. [Create](/ru/ml/mlplatform/deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
 1. Run the Python script:
 
    ```python
@@ -1891,7 +1891,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. [Create](../../jupyterhub/instructions/create) the JupyterHub instance, if you have not already done it.
 1. [Create](../../mlflow/instructions/create) an MLflow instance, if you have not already done it.
 1. Create and train an ML model, if you have not already done it.
-1. [Create](../../deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
+1. [Create](/ru/ml/mlplatform/deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
 1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#create_deployment) method.
 1. Run the Python script:
 
@@ -2005,7 +2005,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. [Create](../../jupyterhub/instructions/create) the JupyterHub instance, if you have not already done it.
 1. [Create](../../mlflow/instructions/create) an MLflow instance, if you have not already done it.
 1. Create and train an ML model, if you have not already done it.
-1. [Create](../../deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
+1. [Create](/ru/ml/mlplatform/deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
 1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#create_deployment) method.
 1. Run the Python script:
 

@@ -193,4 +193,4 @@ Other examples of token usage:
 
 - [viewing logs](/en/monitoring-services/logging/instructions/view-logs) in the Cloud Logging service;
 <!-- @TODO change for EN version -->
-- [working](/ru/tools-for-using-services/api/api-dns "change-lang") with public DNS.
+- [working](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang") with public DNS.

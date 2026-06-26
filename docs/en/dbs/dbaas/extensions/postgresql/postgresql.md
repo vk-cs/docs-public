@@ -1,4 +1,4 @@
-Extensions specific to [PostgreSQL](../../types/postgresql) are described. Read about extensions for monitoring DB instances in [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) and [zabbix](../zabbix).
+Extensions specific to [PostgreSQL](../../concepts/types/postgresql) are described. Read about extensions for monitoring DB instances in [node_exporter](../node-exporter), [postgres_exporter](../node-exporter) and [zabbix](../zabbix).
 
 {note:info}
 

@@ -9,7 +9,7 @@ Joomla features:
 - Multilingual support.
 - API for integration with other systems.
 
-By using Joomla, you agree to the [Marketplace](/en/intro/start/legal/digital-cloud/marketplace) and [Joomla](https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt) licence agreements.
+By using Joomla, you agree to the [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [Joomla](https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt) licence agreements.
 
 To deploy Joomla service in the VK Cloud project:
 

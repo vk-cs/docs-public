@@ -191,7 +191,7 @@ If Kibana is running, the following will be displayed:
 By default, Elasticsearch and Kibana are fully accessible to everyone. Access can be restricted in one of the following ways:
 
 - Use Nginx as a reverse proxy with authorization and access control.
-- Use the built-in elasticsearch mechanism xpack.security (for details see [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/configuring-security.html) or [here](https ://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html)).
+- Use the built-in elasticsearch mechanism xpack.security (for details see [here](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/configuring-security.html) or [here](https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html)).
 
 Consider the most popular first method.
 

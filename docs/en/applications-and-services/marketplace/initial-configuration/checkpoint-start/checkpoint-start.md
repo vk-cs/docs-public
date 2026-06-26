@@ -25,7 +25,7 @@ By going through the steps of this instruction, you will:
 1. Configure the security policy.
 1. Familiarize yourself with the backup options.
 
-By using the Check Point CloudGuard Network service, you agree to license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
+By using the Check Point CloudGuard Network service, you agree to license agreements of [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
 {note:warn}
 

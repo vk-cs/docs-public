@@ -219,7 +219,7 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 - `data "aws_canonical_user_id" "current" {}` — источник данных получает канонический идентификатор (Canonical User ID) текущего пользователя.
 - `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — канонический идентификатор пользователя (Canonical User ID), которому выдаются права доступа к бакету. Чтобы узнать канонический идентификатор пользователя, {linkto(../../../../storage/s3/instructions/access-management/acl#s3-instructions-acl)[text=получите ACL]} бакета или объекта, к которому пользователь уже имеет права доступа.
 - `email_address = "mcs1234567890"` — PID (идентификатор проекта), которому выдаются права доступа к бакету. {linkto(../../../account/instructions/project-settings/manage#project-pid-view)[text=Как узнать PID]}.
-- `permission` — {linkto(../../../../storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissons)[text=тип прав доступа]}. Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `permission` — {linkto(../../../../storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissions)[text=тип прав доступа]}. Доступные значения: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## {heading(4. Настройте правила CORS для бакета)[id=terraform-aws-cors]}
 

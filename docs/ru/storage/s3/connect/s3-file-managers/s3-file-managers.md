@@ -28,7 +28,7 @@ CyberDuck позволяет подключаться к различным хр
 В результате успешного подключения доступные для аккаунта бакеты отобразятся в CyberDuck.
 
 {note:info}
-Создаваемые через Cyberduck бакеты и объекты по умолчанию имеют {linkto(../../concepts/about#s3-concepts-about-storage-class)[text=класс хранения]} и {linkto(../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=тип доступа]}, указанный в настройках Cyberduck.
+Создаваемые через Cyberduck бакеты и объекты по умолчанию имеют {linkto(../../concepts/about#s3-concepts-about-storage-class)[text=класс хранения]} и {linkto(../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=тип доступа]}, указанный в настройках Cyberduck.
 {/note}
 
 ## {heading(WinSCP)[id=s3-connect-file-managers-winscp]}

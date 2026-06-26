@@ -16,7 +16,7 @@ The following will be used:
 
 ## 1. Preparatory steps
 
-1. Create an [account](/en/storage/s3/access-management/s3-account) and a [bucket](/en/storage/s3/instructions/buckets/create-bucket) with the `uc_bucket` name.
+1. Create an [account](/en/storage/s3/instructions/account-management) and a [bucket](/en/storage/s3/instructions/buckets/create-bucket) with the `uc_bucket` name.
 1. Make sure you have the AWS CLI [installed and configured](/ru/tools-for-using-services/cli/aws-cli "change-lang"). Specify the credentials for connecting to the bucket in it (`Access key ID` and `Secret key`). Open the `~/.aws/config` configuration file and make changes to it:
 
    ```txt

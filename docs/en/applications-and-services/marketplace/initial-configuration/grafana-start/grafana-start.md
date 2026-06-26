@@ -2,7 +2,7 @@ You can visualize resource monitoring data using the [Grafana](https://msk.cloud
 
 This instruction will help you deploy the Grafana 10 service on a VM in VK Cloud, sign in to the service console and create a new user.
 
-By using the Grafana service, you agree to the license agreements of the services [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
+By using the Grafana service, you agree to the license agreements of the services [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
 
 To deploy the Grafana service in a project:
 

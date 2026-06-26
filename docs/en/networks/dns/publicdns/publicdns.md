@@ -31,7 +31,7 @@ To work with public DNS, configure [roles](/en/tools-for-using-services/account/
 
 {tab(API)}
 
-Use the method `GET /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the method `GET /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -72,7 +72,7 @@ DNS zone is a logical association of domain names of your resources, containing 
 
 {tab(API)}
 
-Use the method `POST /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the method `POST /v2/dns/` from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -100,7 +100,7 @@ For most providers, it is possible to delegate zone management independently. If
 
 {tab(API)}
 
-Use the method `PUT /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the method `PUT /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -149,7 +149,7 @@ This is a group operation: if necessary, you can delete several zones at once by
 
 {tab(API)}
 
-Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -279,7 +279,7 @@ To add a resource record:
 
 {tab(API)}
 
-Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -302,7 +302,7 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 
 {tab(API)}
 
-Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 
@@ -327,7 +327,7 @@ This is a group operation: if necessary, you can delete several records at once 
 
 {tab(API)}
 
-Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-dns "change-lang").
+Use the methods from the specification in [API documentation](/ru/tools-for-using-services/api/api-spec/network-api/api-dns "change-lang").
 
 {/tab}
 

@@ -1,6 +1,6 @@
 You can manage access to the cloud resources using the [OpenVPN](https://msk.cloud.vk.com/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info). This guide will help you deploy the OpenVPN service on a virtual machine (VM) in VK Cloud, access the service console, and create a new user.
 
-By using the OpenVPN service, you agree to the service agreements of [Marketplace](/ru/intro/start/legal/marketplace) and [OpenVPN](https://openvpn.net/legal).
+By using the OpenVPN service, you agree to the service agreements of [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [OpenVPN](https://openvpn.net/legal).
 
 To deploy the OpenVPN service in the project::
 

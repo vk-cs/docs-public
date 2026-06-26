@@ -15,7 +15,7 @@ To create a VM that has more than 24 CPUs, contact [technical support](mailto:su
 
 This instruction will help you deploy the UserGate NGFW service on a VM in VK Cloud, connect to the UserGate NGFW console and add a new network through the service console.
 
-By using the UserGate NGFW service, you agree to the license agreements of [Marketplace](/en/intro/start/legal/marketplace) and [UserGate](https://www.usergate.com/usergate-eula).
+By using the UserGate NGFW service, you agree to the license agreements of [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [UserGate](https://www.usergate.com/usergate-eula).
 
 {note:warn}
 

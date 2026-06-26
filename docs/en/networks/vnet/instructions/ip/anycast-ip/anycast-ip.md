@@ -1,4 +1,4 @@
-Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is available in the VK Cloud management console and via the [API](/ru/tools-for-using-services/api/api-spec/api-anycast "change-lang").
+Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is available in the VK Cloud management console and via the [API](/en/tools-for-using-services/api/api-spec/api-anycast).
 
 ## {heading(Adding an anycast IP address)[id=add]}
 

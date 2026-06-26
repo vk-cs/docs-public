@@ -12,7 +12,7 @@ If you configure a connection to the service network via Direct Connect, access 
 
 ## Before you start
 
-1. Contact [technical support]((mailto:support@mcs.mail.ru)) to add the service network to your project.
+1. Contact [technical support](/en/contacts) to add the service network to your project.
 
    Write down the network name and IP address. In this example, `s3-ephn` and `198.18.0.0/20`.
 
