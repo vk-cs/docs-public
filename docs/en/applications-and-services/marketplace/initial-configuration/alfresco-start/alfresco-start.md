@@ -10,7 +10,7 @@ Alfresco capabilities:
 - User, role, and access rights management.
 - Support for multi-channel access (web interface, mobile applications, file protocols).  
 
-By using Alfresco, you agree to the [Marketplace](/ru/intro/start/legal/digital-cloud/marketplace "change-lang") and [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE) license agreements.
+By using Alfresco, you agree to the [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE) license agreements.
 
 To deploy the Alfresco service in a VK Cloud project:
 

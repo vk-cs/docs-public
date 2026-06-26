@@ -89,7 +89,7 @@ You can create a CDN resource in two ways:
 {/tab}
 {tab(API)}
 
-To create a CDN resource, use the `POST /projects/{project_id}/resources/` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
+To create a CDN resource, use the `POST /projects/{project_id}/resources/` [method](/en/tools-for-using-services/api/api-spec/api-cdn).
 
 Request example:
 

@@ -1,6 +1,6 @@
 {includetag(acl_1)}
 
-ACL (Access Control List, список управления доступом) позволяет контролировать, каким пользователям какие разрешены операции в сервисе {var(s3)}. Каждый бакет и объект имеет свой ACL, в котором перечислены {linkto(#api-spec-s3-acl-permittees)[text=получатели прав доступа]} и предоставленные им {linkto(#api-spec-s3-acl-permissons)[text=разрешения]}.
+ACL (Access Control List, список управления доступом) позволяет контролировать, каким пользователям какие разрешены операции в сервисе {var(s3)}. Каждый бакет и объект имеет свой ACL, в котором перечислены {linkto(#api-spec-s3-acl-permittees)[text=получатели прав доступа]} и предоставленные им {linkto(#api-spec-s3-acl-permissions)[text=разрешения]}.
 
 Доступны следующие методы API для операций с ACL бакетов и объектов:
 
@@ -28,7 +28,7 @@ ACL (Access Control List, список управления доступом) п
     - `ID` — идентификатор {linkto(#api-spec-s3-acl-permittees)[text=получателя прав]}.
     - `Type` — тип получателя прав. Примеры: `CanonicalUser`, `Group`.
 
-  - `<Permission>` — указывает вид предоставляемого {linkto(#api-spec-s3-acl-permissons)[text=разрешения]}.
+  - `<Permission>` — указывает вид предоставляемого {linkto(#api-spec-s3-acl-permissions)[text=разрешения]}.
 
 Пример XML-структуры конфигурации ACL:
 
@@ -151,7 +151,7 @@ ACL (Access Control List, список управления доступом) п
 Открывая доступ неопределенному кругу лиц, вы теряете контроль над тем, кто совершает операции с вашими ресурсами. При этом, как владелец бакета, оплачивать все операции с бакетом будете вы.
 {/note}
 
-## {heading(Разрешения)[id=api-spec-s3-acl-permissons]}
+## {heading(Разрешения)[id=api-spec-s3-acl-permissions]}
 
 {/includetag}
 

@@ -2,7 +2,7 @@ You can collect, store and analyze metrics in the time series database using the
 
 The instructions will help you deploy the VictoriaMetrics service (using the example of version 1.93.9) on a VM in VK Cloud and configure the collection of metrics.
 
-By using VictoriaMetrics, you agree to the [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf) license agreements.
+By using VictoriaMetrics, you agree to the [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf) license agreements.
 
 To deploy the VictoriaMetrics service in a project:
 

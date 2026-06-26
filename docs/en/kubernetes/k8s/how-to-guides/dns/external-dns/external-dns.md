@@ -50,7 +50,7 @@ ExternalDNS will use this VK Cloud user's credentials to cooperate with the VK C
 
 Prepare the user and get all the necessary credentials:
 
-1. [Select](/tools-for-using-services/account/instructions/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/tools-for-using-services/account/instructions/project-settings/access-manage#inviting_a_new_member_to_the_project).
+1. [Select](/en/tools-for-using-services/account/instructions/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/tools-for-using-services/account/instructions/project-settings/access-manage#inviting_a_new_member_to_the_project).
 
    User Requirements:
 

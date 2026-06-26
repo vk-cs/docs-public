@@ -225,11 +225,11 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно установить ACL.
    - `<ВИД_РАЗРЕШЕНИЯ>` — могут быть следующими:
 
-     - `--grant-read` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `READ`.
-     - `--grant-write` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `WRITE`.
-     - `--grant-read-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `READ_ACP`.
-     - `--grant-write-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `WRITE_ACP`.
-     - `--grant-full-control` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `FULL_CONTROL`.
+     - `--grant-read` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
+     - `--grant-write` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
+     - `--grant-read-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
+     - `--grant-write-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
+     - `--grant-full-control` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
       
    - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для бакета.
      {ifdef(public)}
@@ -397,11 +397,11 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для которого нужно установить ACL, включая путь до него.
    - `<ВИД_РАЗРЕШЕНИЯ>` — могут быть следующими:
 
-     - `--grant-read` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `READ`.
-     - `--grant-write` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `WRITE`.
-     - `--grant-read-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `READ_ACP`.
-     - `--grant-write-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `WRITE_ACP`.
-     - `--grant-full-control` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=разрешение]} `FULL_CONTROL`.
+     - `--grant-read` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
+     - `--grant-write` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
+     - `--grant-read-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
+     - `--grant-write-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
+     - `--grant-full-control` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
 
    - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для объекта.
      {ifdef(public)}

@@ -124,7 +124,7 @@ Here:
 - (Optional) `force_destroy` — this parameter allows deleting the bucket, even if it contains objects. Available values ​​are `true` and `false`. Default is `false`.
 - `key` — the key of the object. The name of the object when it will be uploaded to the bucket.
 - `source` — the path on your device to the file to be uploaded to the bucket.
-- `acl` — [ACL settings](/ru/storage/s3/concepts/s3-acl#standard_acl "change-lang") for the object. Available values: `private`, `public-read`, `auth-read`.
+- `acl` — [ACL settings](/ru/storage/s3/concepts/access/s3-acl#s3-concepts-acl "change-lang") for the object. Available values: `private`, `public-read`, `auth-read`.
 - `source_hash` — object version identifier. The parameter is similar to `etag`, but without object size restrictions. Set using `filemd5("path/to/source")`.
 - `etag` — object version identifier. It is set with `filemd5("path/to/source")`. Use this parameter only for objects smaller than 16 MB. For objects larger than 16 MB, use `source_hash`, because they will be loaded via the multipart upload method.
 
@@ -219,7 +219,7 @@ Here:
 - `data "aws_canonical_user_id" "current" {}` — the data source gets the canonical identifier (Canonical User ID) of the current user.
 - `id = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — the canonical identifier of the user (Canonical User ID) that is granted access rights to the bucket. [How to find out the canonical identifier of the user](/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api#user-id "change-lang").
 - `email_address = "mcs1234567890"` — the PID (project identifier) ​​that is granted access rights to the bucket. [How to find out the PID](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
-- `permission` — [type of access rights](/ru/storage/s3/concepts/s3-acl#permissons "change-lang"). Available values: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `permission` — [type of access rights](/ru/storage/s3/concepts/access/s3-acl#permissions "change-lang"). Available values: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Set up CORS rules for the bucket
 

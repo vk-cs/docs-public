@@ -30,7 +30,7 @@ To clear a cache of a CDN resource:
 
 {tab(API)}
 
-Use the `POST /projects/{project_id}/resources/{resources_id}/purge` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
+Use the `POST /projects/{project_id}/resources/{resources_id}/purge` [method](/en/tools-for-using-services/api/api-spec/api-cdn).
 
 In the request body specify the following:
 
@@ -92,7 +92,7 @@ To preload a cache of a CDN resource:
 
 {tab(API)}
 
-Use the `POST /projects/{project_id}/resources/{resources_id}/prefetch` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
+Use the `POST /projects/{project_id}/resources/{resources_id}/prefetch` [method](/en/tools-for-using-services/api/api-spec/api-cdn).
 
 In the body of the request, specify paths to the files that need to be loaded, without the domain name.
 

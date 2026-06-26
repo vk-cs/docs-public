@@ -20,7 +20,7 @@ After completing all the steps of a instruction, you will:
 1. Create a backup infrastructure using a backup recovery plan.
 1. Restore the reserved infrastructure in VK Cloud.
 
-By using the Hystax Acura Disaster Recovery service, you agree to the license agreements of [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
+By using the Hystax Acura Disaster Recovery service, you agree to the license agreements of [Marketplace](/ru/start/legal/vk/marketplace "change-lang") and [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
 
 ## Preparatory steps
 

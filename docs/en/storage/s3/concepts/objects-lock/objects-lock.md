@@ -23,7 +23,7 @@ In both modes of the retention period:
 
 A managed `GOVERNANCE` lock is best suited for implementing internal data protection policies. It prevents developers or automated scripts from accidentally deleting critical files while allowing administrators to perform necessary data management operations.
 
-If the `GOVERNANCE` lock is used, a user with the `WRITE` [permissions](/ru/storage/s3/concepts/access/s3-acl#permissons "change-lang") can bypass it as follows:
+If the `GOVERNANCE` lock is used, a user with the `WRITE` [permissions](/ru/storage/s3/concepts/access/s3-acl#permissions "change-lang") can bypass it as follows:
 
 - Delete the object before its specified expiration date.
 - Reduce the locking period.
@@ -37,7 +37,7 @@ This mode is best suited for meeting strict regulatory or legislative requiremen
 
 ### {heading(Legal hold)[id=legal-hold-lock]}
 
-A legal hold has no expiration date, and it remains in place until you explicitly remove it. A user with the `WRITE` [permissions](/ru/storage/s3/concepts/access/s3-acl#permissons "change-lang") can apply this type of lock or remove it from an object at any time.
+A legal hold has no expiration date, and it remains in place until you explicitly remove it. A user with the `WRITE` [permissions](/ru/storage/s3/concepts/access/s3-acl#permissions "change-lang") can apply this type of lock or remove it from an object at any time.
 
 A legal hold is valid regardless of the retention period set for an object and takes precedence over it.
 

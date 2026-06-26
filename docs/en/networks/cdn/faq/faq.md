@@ -61,7 +61,7 @@ CDN servers have HTTP/2 enabled by default. If the origin servers do not support
 
 {cut(Can I deal with CDN via API?)}
 
-You can find endpoints for managing and monitoring CDN resources in the [API help](/ru/tools-for-using-services/api/api-cdn "change-lang") section.
+You can find endpoints for managing and monitoring CDN resources in the [API help](/en/tools-for-using-services/api/api-spec/api-cdn) section.
 
 {/cut}
 

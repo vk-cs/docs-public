@@ -8,7 +8,7 @@ All details on infrastructure deployment and software or creating a tenant (acco
 
 {note:warn}
 
-By using the services from the Marketplace, you agree to the [user Agreement](/ru/intro/start/legal/marketplace "change-lang").
+By using the services from the Marketplace, you agree to the [user Agreement](/ru/start/legal/vk/marketplace "change-lang").
 
 {/note}
 
