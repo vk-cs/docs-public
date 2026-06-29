@@ -12,7 +12,7 @@ Cloud Audit сервисі мыналарға көмектеседі:
 - инциденттерді жедел тергеуге.
 
 {ifdef(public)}
-Оқиғалар туралы жиналған ақпарат {var(cloud)} жеке кабинетінде тек [рөлдері](/kz/tools-for-using-services/account/concepts/rolesandpermissions) бар пайдаланушыларға қолжетімді:
+Оқиғалар туралы жиналған ақпарат {var(cloud)} жеке кабинетінде тек [рөлдері](/kz/access/iam/concepts/rolesandpermissions) бар пайдаланушыларға қолжетімді:
 
 - жоба иесі;
 - суперадминистратор;

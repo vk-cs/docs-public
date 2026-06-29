@@ -3,7 +3,7 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:info}
-Шығындар детализациясын қарап, дербес шотты {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөлі]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобада]} иесі, суперадминистратор немесе биллинг әкімшісі болып табылатын пайдаланушылар толықтыра алады.
+Шығындар детализациясын қарап, дербес шотты {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлі]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобада]} иесі, суперадминистратор немесе биллинг әкімшісі болып табылатын пайдаланушылар толықтыра алады.
 {/note}
 
 ## {heading(Балансты қарау)[id=billing-payment-balance-view]}

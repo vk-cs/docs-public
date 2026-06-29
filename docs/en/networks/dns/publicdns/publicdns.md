@@ -1,6 +1,6 @@
 ## Setting up a role model
 
-To work with public DNS, configure [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) for users of [management console](https://msk.cloud.vk.com/app/en/) VK Cloud:
+To work with public DNS, configure [roles](/en/access/iam/concepts/rolesandpermissions) for users of [management console](https://msk.cloud.vk.com/app/en/) VK Cloud:
 
 - Role for viewing DNS zones and resource records:
 

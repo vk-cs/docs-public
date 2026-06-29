@@ -1,4 +1,4 @@
-You can create your own [projects](/en/tools-for-using-services/account/concepts/projects) to VK Cloud. By creating a project, you become its [owner](/en/tools-for-using-services/account/concepts/rolesandpermissions).
+You can create your own [projects](/en/tools-for-using-services/account/concepts/projects) to VK Cloud. By creating a project, you become its [owner](/en/access/iam/concepts/rolesandpermissions).
 
 {note:info}
 

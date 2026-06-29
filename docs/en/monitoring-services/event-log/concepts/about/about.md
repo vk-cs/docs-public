@@ -7,7 +7,7 @@ The Cloud Audit service helps:
 - Analyze user actions with data and, on this basis, improve the system of access control to sensitive information.
 - Promptly investigate incidents.
 
-The collected information about events is available in the VK Cloud personal account only for users with [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions):
+The collected information about events is available in the VK Cloud personal account only for users with [roles](/en/access/iam/concepts/rolesandpermissions):
 
 - project owner
 - superadministrator

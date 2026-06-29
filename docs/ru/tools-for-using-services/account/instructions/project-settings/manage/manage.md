@@ -71,7 +71,7 @@
 {ifdef(public)}
 ## {heading(Смена владельца проекта)[id=project-owner-edit]}
 
-У проекта может быть только один владелец. После назначения владельцем другого пользователя вы поменяетесь с ним {linkto(../../../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролями]}.
+У проекта может быть только один владелец. После назначения владельцем другого пользователя вы поменяетесь с ним {linkto(../../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролями]}.
 
 {note:info}
 Смена владельца возможна при любом состоянии баланса проекта.
@@ -82,7 +82,7 @@
    1. При необходимости отвяжите от проекта карту оплаты, обратившись в [техническую поддержку](/ru/contacts).
    1. Убедитесь, что пользователь, которого вы хотите сделать владельцем:
 
-      - Добавлен в {linkto(../access-manage#tools-account-project-access-manage)[text=список участников]} и принял приглашение в проект.
+      - Добавлен в {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=список участников]} и принял приглашение в проект.
 
         В этом случае он отображается в списке со статусом активации **Да**.
 
@@ -99,7 +99,7 @@
    - {linkto(#project-pid-view)[text=идентификатор]} проекта (PID);
    - почту нового владельца.
 
-1. (Опционально) Проверьте смену ролей в {linkto(../access-manage#tools-account-project-access-manage)[text=списке участников]} проекта.
+1. (Опционально) Проверьте смену ролей в {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=списке участников]} проекта.
 
 {note:info}
 Новому владельцу может потребоваться {linkto(../../../../../intro/billing/instructions/add-card#billing-add-card-bind)[text=привязать карту оплаты]}, если у проекта нет привязанной карты, и {linkto(../../../../../intro/onboarding/account/create-account#onboarding-create-account-confirm-phone)[text=подтвердить номер телефона]}.
@@ -324,7 +324,7 @@
 {ifdef(public)}
 ## {heading(Увеличение квот проекта)[id=project-increase-quota]}
 
-Увеличение квот выполняется через специальную форму от имени пользователя с {linkto(../../../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролью]} владельца проекта:
+Увеличение квот выполняется через специальную форму от имени пользователя с {linkto(../../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролью]} владельца проекта:
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
 1. В шапке личного кабинета нажмите на имя проекта и выберите пункт **Управление квотами**.

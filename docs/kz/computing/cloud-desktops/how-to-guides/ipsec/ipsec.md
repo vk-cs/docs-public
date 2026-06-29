@@ -15,7 +15,7 @@
 
 ## {heading(Дайындық қадамдары)[id=desktops-ipsec-preparatory-steps]}
 
-1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu)[text=аутентификациядан өтіңіз]}.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
 1. LDAP ортасын жасаңыз:
 
@@ -453,7 +453,7 @@ VPN-туннель арқылы трафик дұрыс өтуі үшін iptabl
 
 Егер жасалған ресурстар сізге енді қажет болмаса, оларды жойыңыз:
 
-1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#delete_vm)[text=Виртуалды машиналарды жойыңыз]}.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машиналарды жойыңыз]}.
 1. {linkto(../../../../networks/vnet/instructions/vpn#udalenie_vpn_tunnelya)[text=VPN-ді жойыңыз]}.
 1. {linkto(../../../../networks/vnet/instructions/router#udalenie_marshrutizatora)[text=Маршрутизаторларды жойыңыз]}.
 1. ВМ орналасқан {linkto(../../../../networks/vnet/instructions/net#udalenie_podseti)[text=ішкі желіні]} және {linkto(../../../../networks/vnet/instructions/net#udalenie_seti)[text=желіні жойыңыз]}.

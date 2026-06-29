@@ -11,7 +11,7 @@
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
-   Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
+   Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
 
 {ifdef(public)}
 1. Выберите вкладку **Управляющий слой** или **Слой данных** для просмотра событий соответствующего слоя.
@@ -30,7 +30,7 @@
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
-   Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
+   Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
 
 1. Нажмите кнопку **Поиск и фильтры**.
 1. Задайте один или несколько критериев поиска событий в списке:
@@ -48,7 +48,7 @@
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 
-    Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
+    Отобразится список событий, разрешенных к просмотру для вашей {ifdef(public)}{linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]}{/ifdef}{ifndef(public)}роли{/ifndef} в проекте.
 
 1. (Опционально) {linkto(#event-log-filter)[text=Настройте]} содержание списка с помощью поискового запроса и фильтров.
 1. (Опционально) Отсортируйте список в порядке возрастания или убывания времени регистрации события. Используйте для этого значок сортировки в заголовке столбца **Дата события**.

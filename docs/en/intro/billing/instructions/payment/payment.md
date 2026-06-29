@@ -1,6 +1,6 @@
 {note:info}
 
-Viewing project expenses details and making payments is available to users whose [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the [project](/en/tools-for-using-services/account/concepts/projects) is Project owner, Superadministrator, or Billing administrator.
+Viewing project expenses details and making payments is available to users whose [role](/en/access/iam/concepts/rolesandpermissions) in the [project](/en/tools-for-using-services/account/concepts/projects) is Project owner, Superadministrator, or Billing administrator.
 
 {/note}
 
@@ -18,7 +18,7 @@ To see details and costs of services:
 
 {note:info}
 
-The [detailing](../detail) is available on all projects in which your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Detail** and **Expenses on services** tabs is filtered by the current project by default.
+The [detailing](../detail) is available on all projects in which your [role](/en/access/iam/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Detail** and **Expenses on services** tabs is filtered by the current project by default.
 
 {/note}
 
@@ -65,7 +65,7 @@ To set up an expenses limitation and notifications:
 
 1. On the balance page, go to the **Limitation** tab.
 
-   The tab displays a list of all projects in which your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) is Owner or Superadminitrator.
+   The tab displays a list of all projects in which your [role](/en/access/iam/concepts/rolesandpermissions) is Owner or Superadminitrator.
 
 1. Click on the ![Settings](assets/filter_icon.svg "inline") icon opposite to the project.
 

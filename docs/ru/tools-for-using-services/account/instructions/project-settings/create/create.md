@@ -27,5 +27,5 @@
 
    Подробнее о стоимости сервисов в {linkto(../../../tariffication#tools-account-tariffication)[text=статье о тарификации]}.
 
-1. {linkto(../access-manage#tools-account-project-access-manage)[text=Настройте]} доступы для проекта.
+1. {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=Настройте]} доступы для проекта.
 {/ifdef}

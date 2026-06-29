@@ -27,4 +27,4 @@
 ## {heading(Что дальше?)[id=vk-cloud-account-project-what-next]}
 
 - Узнайте подробнее об {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text=управлении проектом]}.
-- Ознакомьтесь с возможностями {linkto(../../../../account/instructions/project-settings/access-manage#tools-account-project-access-manage)[text=настройки доступа]} к проекту.
+- Ознакомьтесь с возможностями {linkto(../../../../../access/iam/instructions/access-manage#tools-account-iam-access-manage-manage)[text=настройки доступа]} к проекту.

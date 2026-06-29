@@ -1,6 +1,6 @@
 {
   "title": "Keycloak арқылы куәліктер федерациясын баптау",
-  "shortDescription": "VK Cloud жүйесінде Keycloak арқылы аутентификацияны қалай баптау керек",
+  "shortDescription": "{var(cloud)} жүйесінде Keycloak арқылы аутентификацияны қалай баптау керек",
   "metaDescription": "VK Cloud жүйесіне Keycloak арқылы кіруді баптаңыз. Бұл нұсқаулық mappers-ті (email, groups) баптауға және топтарды VK Cloud-тағы рөлдермен сәйкестендіруге көмектеседі.",
   "sectionTitle": "Keycloak арқылы куәліктер федерациясын баптау",
   "icon": "",

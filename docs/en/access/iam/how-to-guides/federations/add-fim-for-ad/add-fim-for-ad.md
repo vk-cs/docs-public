@@ -17,7 +17,7 @@ When changing your Active Directory domain, remove the existing federation and s
 
 ## 1. Create identity federation in VK Cloud
 
-Creating an Identity Federation in VK Cloud is available only to a Project owner [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) user.
+Creating an Identity Federation in VK Cloud is available only to a Project owner [role](/en/access/iam/concepts/rolesandpermissions) user.
 
 1. [Go to](https://cloud.vk.com/account/) VK Cloud Account.
 1. Go to the **Identity Federation** section.
@@ -65,7 +65,7 @@ The following credentials will appear on the **Federations** tab:
 
 ## 3. Configure role and group mapping in VK Cloud
 
-Configuring a relationship between AD FS groups and VK Cloud roles is available only for the following [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions): Project owner, Superadministrator, and User access administrator. Viewing the relationships is also available for the Project administrator and Viewer roles.
+Configuring a relationship between AD FS groups and VK Cloud roles is available only for the following [roles](/en/access/iam/concepts/rolesandpermissions): Project owner, Superadministrator, and User access administrator. Viewing the relationships is also available for the Project administrator and Viewer roles.
 
 1. [Go to](https://cloud.vk.com/account/) VK Cloud Account.
 1. Go to the **Manage access** section.
@@ -79,7 +79,7 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
       - **Permissions**:
          - Select **Project** to associate the group and roles within the same project. You can associate the same group with different roles in different projects, which allows you to differentiate the level of federated user access to projects.
          - Select **Domain** to associate the group and roles across all projects. The **Domain** permission is only available to the project owner and provides the federated user with the same access level to all projects owned by the owner.
-      - **Group roles**: select the [VK Cloud roles](/en/tools-for-using-services/account/concepts/rolesandpermissions), that correspond to your access matrix for the group being created.
+      - **Group roles**: select the [VK Cloud roles](/en/access/iam/concepts/rolesandpermissions), that correspond to your access matrix for the group being created.
 
    1. Click the **Add** button.
 
@@ -91,6 +91,6 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 
 {note:warn}
 
-Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/instructions/project-settings/access-manage#deleting_member) them from projects in the VK Cloud management console.
+Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/access/iam/instructions/access-manage#deleting_member) them from projects in the VK Cloud management console.
 
 {/note}

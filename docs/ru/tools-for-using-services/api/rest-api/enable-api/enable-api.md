@@ -4,7 +4,7 @@
 
 ## {heading(Активация доступа по API)[id=rest-api-enable-activate]}
 
-1. {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию.
 1. Нажмите на имя пользователя в шапке страницы и включите доступ по API одним из способов:
 
       {tabs}
@@ -28,6 +28,6 @@
 
 ## {heading(Деактивация доступа по API)[id=rest-api-enable-deactivate]}
 
-1. {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если она была отключена.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если она была отключена.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки аккаунта**.
 1. В разделе **Безопасность** отключите опцию **Доступ по API**.

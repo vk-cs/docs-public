@@ -4,7 +4,7 @@
 
 ## {heading(Настройка ролевой модели)[id=dns-records-role-model]}
 
-Для работы с публичным DNS настройте {linkto(../../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]} для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) {var(cloud)}:
+Для работы с публичным DNS настройте {linkto(../../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]} для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) {var(cloud)}:
 
 - Роль для просмотра DNS-зон и ресурсных записей:
 

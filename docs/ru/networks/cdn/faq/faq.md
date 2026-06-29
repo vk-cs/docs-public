@@ -81,7 +81,7 @@
 
 {cut(Почему у меня нет доступа к сервису CDN?)}
 
-Не все роли пользователей имеют доступ к CDN. Если вас пригласили в проект, проверьте доступ к сервису CDN для вашей {linkto(../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]}.
+Не все роли пользователей имеют доступ к CDN. Если вас пригласили в проект, проверьте доступ к сервису CDN для вашей {linkto(../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]}.
 
 Если для вашей роли есть разрешения для работы в CDN, но сервис недоступен, обратитесь в [техническую поддержку](/ru/contacts).
 

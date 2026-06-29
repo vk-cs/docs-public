@@ -101,7 +101,7 @@
 
 {cut(Применяется ли ролевая модель разграничения доступа (Role Based Access Control, RBAC)?)}
 
-Да, применяется. Подробнее в разделе {linkto(../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=Права и разрешения]}.
+Да, применяется. Подробнее в разделе {linkto(../../../../ru/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=Ролевая модель управления доступом]}.
 
 {/cut}
 

@@ -92,7 +92,7 @@
 
 {linkto(../concepts/balance#billing-balance)[text=Баланс]} мына екі шарт орындалғанда көрсетіледі:
 
-- Жобадағы сіздің {linkto(../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөліңіз]} — иесі, суперадминистратор немесе биллинг әкімшісі.
+- Жобадағы сіздің {linkto(../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөліңіз]} — иесі, суперадминистратор немесе биллинг әкімшісі.
 - {var(cloud)} жүйесінде {linkto(../../../intro/onboarding/account#onboarding-account)[text=тіркелу рәсімі]} аяқталған: телефон, пошта және төлем картасы байланыстырылған.
 
 {/cut}

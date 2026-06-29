@@ -5,11 +5,11 @@
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Управление доступами**.
 1. На странице управления доступами нажмите кнопку **Добавить участника**.
-1. Введите почту участника и выберите из списка [роль](/ru/access/iam/concepts/roles-reference) или [разрешение](/ru/access/iam/concepts/permissions-reference), которые вы хотите ему назначить.
+1. Введите почту участника и выберите из списка {linkto(/ru/access/iam/concepts/roles-reference#iam-roles-reference)[text=роль]} или {linkto(/ru/access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешение]}, которые вы хотите ему назначить.
 
    Роль суперадминистратора может назначить только владелец проекта. Роль администратора пользователей (IAM) может назначить только владелец проекта или суперадминистратор. Пригласить участника на роль владельца проекта нельзя. Если участнику назначено несколько ролей, их разрешения суммируются.
 
-   Позже вы можете [изменить](/ru/access/iam/instructions/access-manage#izmenenie_roli_uchastnika) назначенные участнику роли и разрешения.
+   Позже вы можете {linkto(../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=изменить]} назначенные участнику роли и разрешения.
 
 1. Нажмите кнопку **Добавить пользователя**.
 
@@ -19,7 +19,7 @@
 После {linkto(../../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
 
 {note:info}
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-delete-user)[text=удалите]} участника и пригласите его снова.
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
 {/note}
 {/includetag}
 
@@ -27,6 +27,8 @@
 После {linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
 
 {note:info}
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-delete-user)[text=удалите]} участника и пригласите его снова.
+
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
+
 {/note}
 {/includetag}

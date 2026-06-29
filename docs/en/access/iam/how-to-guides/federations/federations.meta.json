@@ -5,8 +5,10 @@
   "sectionTitle": "Configuring identity federation",
   "icon": "",
   "weight": 1,
-  "build": {
-    "for": ["public"]
-  },
-  "uuid": ""
+  "uuid": "",
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

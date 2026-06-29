@@ -79,7 +79,7 @@ Read about getting statistics in the [Statistics] section(/en/networks/cdn/monit
 
 {cut(Why do I not have access to the CDN service?)}
 
-Not all user roles have access to the CDN service. If you were invited to a project, check the access for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions).
+Not all user roles have access to the CDN service. If you were invited to a project, check the access for your [role](/en/access/iam/concepts/rolesandpermissions).
 
 If your role has permissions to work in the CDN service, but the service is unavailable, contact [technical support](mailto:support@mcs.mail.ru).
 

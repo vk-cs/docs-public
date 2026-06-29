@@ -14,7 +14,7 @@
 * Географиялық үлестірілген, істен шығуға төзімді қосымша инфрақұрылымында жүктемені теңгерімдеу.
 * Ресурстардың IP мекенжайлары өзгерген кезде жазбаларды автоматты түрде жаңарту (мысалы, жүктеме теңгергіштері үшін).
 
-Жария DNS-пен жұмыс істеу үшін [жеке кабинет](https://kz.cloud.vk.com/app/) пайдаланушыларына арналған {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөлдерді]} {var(cloud)} баптаңыз:
+Жария DNS-пен жұмыс істеу үшін [жеке кабинет](https://kz.cloud.vk.com/app/) пайдаланушыларына арналған {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлдерді]} {var(cloud)} баптаңыз:
 
 - DNS аймақтары мен ресурстық жазбаларды көру үшін — Бақылаушы.
 

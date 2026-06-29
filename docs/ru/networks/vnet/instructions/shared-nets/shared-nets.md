@@ -12,7 +12,7 @@
 
 {cut(Кто может делиться сетью с другими проектами?)}
 
-Поделиться сетью с другими проектами могут пользователи cо следующими {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролями]}:
+Поделиться сетью с другими проектами могут пользователи cо следующими {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=ролями]}:
 
 - владелец проекта;
 - суперадминистратор;

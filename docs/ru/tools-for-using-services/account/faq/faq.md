@@ -26,13 +26,13 @@
 
 {cut(Какие права есть у участников проекта?)}
 
-Ролевая модель участников проекта описана в статье {linkto(../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=Роли и права пользователей личного кабинета]}.
+Ролевая модель участников проекта описана в статье {linkto(/ru/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=Ролевая модель управления доступом]}.
 
 {/cut}
 
 {cut(Как добавить дополнительного участника в проект?)}
 
-Процедура описана в статье {linkto(../instructions/project-settings/access-manage#project-access-invite-user)[text=Управление доступами]}. При добавлении укажите роль, ориентируясь на {linkto(../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=матрицу ролей]}.
+Процедура описана в статье {linkto(../instructions/project-settings/invite#tools-account-project-invite)[text=Приглашение участника в проект]}. При добавлении укажите роль, ориентируясь на статью {linkto(/ru/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=Ролевая модель управления доступом]}.
 
 {/cut}
 

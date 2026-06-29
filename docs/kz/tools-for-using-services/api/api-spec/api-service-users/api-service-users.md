@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-REST API Service Users [қызметтік тіркелгі жазбаларын](/kz/tools-for-using-services/account/concepts/service-accounts) басқаруды қолдайды:
+REST API Service Users [қызметтік тіркелгі жазбаларын](/kz/access/iam/concepts/service-accounts) басқаруды қолдайды:
 
 - қызметтік тіркелгі жазбаларының тізімін қарау;
 - қызметтік тіркелгі жазбаларын қарау, жасау және жою;
@@ -11,8 +11,8 @@ REST API Service Users [қызметтік тіркелгі жазбаларын
 {cut(Endpoint алу, авторизация және аутентификация)}
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, [екі факторлы аутентификацияны қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on).
-1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
+1. Егер бұл әлі жасалмаса, [екі факторлы аутентификацияны қосыңыз](/kz/access/iam/instructions/manage-2fa).
+1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api).
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
 1. **OpenStack сервисі** блогынан **Service Users** endpoint-ін табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.com/service-users/` пайдаланыңыз.

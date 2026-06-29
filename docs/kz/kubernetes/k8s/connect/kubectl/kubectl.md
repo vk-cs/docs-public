@@ -231,7 +231,7 @@
 
        {include(/kz/_includes/_client-keystone-auth.md)}
 
-    1. Сізде Kubernetes кластерлерімен жұмыс істеу үшін {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=қажетті рөл]} бар екенін тексеріңіз. Егер мұндай рөл болмаса, жоба иесінен немесе суперәкімшіден оны сізге қосуды сұраңыз.
+    1. Сізде Kubernetes кластерлерімен жұмыс істеу үшін {linkto(../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=қажетті рөл]} бар екенін тексеріңіз. Егер мұндай рөл болмаса, жоба иесінен немесе суперәкімшіден оны сізге қосуды сұраңыз.
     1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=API арқылы қолжетімділікті белсендіріңіз]}.
 
 ## {heading(Кластерге қосылу)[id=k8s-kubectl-connect]}

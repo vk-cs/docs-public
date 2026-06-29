@@ -14,7 +14,7 @@ REST API {linkto(../../../../networks/cdn#cdn)[text=CDN]} поддерживае
 {cut(Получение эндпоинта, авторизация и аутентификация)}
 
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
-1. {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если это еще не сделано.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если это еще не сделано.
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Включите]} доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **Доступ по API**.

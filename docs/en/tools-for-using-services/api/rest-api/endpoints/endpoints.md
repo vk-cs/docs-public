@@ -4,7 +4,7 @@ To work with VK Cloud via the API [activate API access](../enable-api). Read mor
 
 ## Viewing the list of endpoints
 
-The list is available to all users, regardless of their [role](/en/tools-for-using-services/account/concepts/rolesandpermissions).
+The list is available to all users, regardless of their [role](/en/access/iam/concepts/rolesandpermissions).
 
 To see the list of endpoints for your region:
 
@@ -84,7 +84,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 {note:info}
 
-The Service Users (https://msk.cloud.vk.com/service-users/) endpoint is not displayed in the management console. This endpoint is used to manage [service accounts](/en/tools-for-using-services/account/concepts/service-accounts).
+The Service Users (https://msk.cloud.vk.com/service-users/) endpoint is not displayed in the management console. This endpoint is used to manage [service accounts](/en/access/iam/concepts//service-accounts).
 
 {/note}
 

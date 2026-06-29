@@ -13,7 +13,7 @@ Cloud Audit сервисі:
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
-   Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
+   Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
 
 1. Тиісті қабаттың оқиғаларын көру үшін **Басқарушы қабат** немесе **Деректер қабаты** қойындысын таңдаңыз.
 
@@ -30,7 +30,7 @@ Cloud Audit сервисі:
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
-   Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
+   Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
 
 1. **Іздеу және сүзгілер** түймесін басыңыз.
 1. Тізімдегі оқиғаларды іздеу үшін бір немесе бірнеше критерийді көрсетіңіз:
@@ -48,7 +48,7 @@ Cloud Audit сервисі:
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
-    Жобадағы сіздің [рөліңіз](/kz/tools-for-using-services/account/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
+    Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
 
 1. (Опционалды) Іздеу сұрауы мен сүзгілердің көмегімен тізім мазмұнын {linkto(#event-log-filter)[text=баптаңыз]}.
 1. (Опционалды) Оқиғаны тіркеу уақыты бойынша тізімді өсу не кему ретімен сұрыптаңыз. Ол үшін **Оқиға күні** бағанының тақырыбындағы сұрыптау белгішесін пайдаланыңыз.

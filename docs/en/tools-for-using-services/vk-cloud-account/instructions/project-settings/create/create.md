@@ -25,4 +25,4 @@ Further work with the project is carried out in [VK Cloud Management Console](/e
 ## What is next?
 
 - Learn more about [project management](/en/tools-for-using-services/account/instructions/project-settings/manage).
-- Get acquainted with the [access settings](/en/tools-for-using-services/account/instructions/project-settings/access-manage) features of the project.
+- Get acquainted with the [access settings](/en/access/iam/instructions/access-manage) features of the project.

@@ -46,7 +46,7 @@
 
 ## {heading(Что дальше?)[id=partner-platform-accept-whats-next]}
 
-После входа вы перейдете в автоматически созданный для вас проект с {linkto(../../../account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролью]} владельца проекта.
+После входа вы перейдете в автоматически созданный для вас проект с {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=ролью]} владельца проекта.
 
 {linkto(../../concepts/client-account#partner-platform-client-account)[text=Ознакомьтесь]} с возможностями личного кабинета клиента партнера.
 

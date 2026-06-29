@@ -10,7 +10,7 @@
 - оперативно расследовать инциденты.
 
 {ifdef(public)}
-Собранная информация о событиях доступна в личном кабинете {var(cloud)} только для пользователей с {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролями]}:
+Собранная информация о событиях доступна в личном кабинете {var(cloud)} только для пользователей с {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролями]}:
 
 - владелец проекта;
 - суперадминистратор;

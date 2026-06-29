@@ -25,13 +25,13 @@ The services become available after you have completed the [registration](/en/in
 
 {cut(What rights do the project participants have?)}
 
-The role model of the project participants is described in the article [Roles and permissions of Management console users](../concepts/rolesandpermissions).
+The role model of the project participants is described in the article [Roles and permissions of Management console users](/en/access/iam/concepts/rolesandpermissions).
 
 {/cut}
 
 {cut(How do I add an additional participant to the project?)}
 
-The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions).
+The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](/en/access/iam/concepts/rolesandpermissions).
 
 {/cut}
 

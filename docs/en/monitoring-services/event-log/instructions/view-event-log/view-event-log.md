@@ -9,7 +9,7 @@ The Cloud Audit service allows you the following:
 1. [Go](https://cloud.vk.com/app/en) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 
-   The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.
+   The list of events allowed to be viewed for your [role](/en/access/iam/concepts/rolesandpermissions) in the project will be displayed.
 
 1. (Optional) Sort the list in ascending or descending order of the event registration time. To do this, use the sort icon in the **Event Date** column header.
 1. (Optional) [Use](#event_log_filter) the search tools.
@@ -20,7 +20,7 @@ The Cloud Audit service allows you the following:
 1. [Go](https://cloud.vk.com/app/en) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 
-   The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.
+   The list of events allowed to be viewed for your [role](/en/access/iam/concepts/rolesandpermissions) in the project will be displayed.
 
 1. Click the **Search and filters** button.
 
@@ -39,7 +39,7 @@ The list will display events that meet the search parameters.
 1. [Go](https://cloud.vk.com/app/en) to your VK Cloud management console.
 1. Go to the **Monitoring → Event log** section.
 
-   The list of events allowed to be viewed for your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project will be displayed.
+   The list of events allowed to be viewed for your [role](/en/access/iam/concepts/rolesandpermissions) in the project will be displayed.
 
 1. (Optional) [Customize](#event_log_filter) the contents of the list using the search query and filters.
 1. (Optional) Sort the list in ascending or descending order of the event registration time. Use the sort icon in the **Event Date** column header to do this.

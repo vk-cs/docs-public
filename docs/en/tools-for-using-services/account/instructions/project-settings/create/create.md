@@ -25,4 +25,4 @@
 
    Learn more about the cost of services in the [article on pricing](../../../tariffication).
 
-1. [Configure](/en/tools-for-using-services/account/instructions/project-settings/access-manage) access to the project.
+1. [Configure](/en/access/iam/instructions/access-manage) access to the project.

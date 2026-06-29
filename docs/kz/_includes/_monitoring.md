@@ -62,4 +62,4 @@
 Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және [тарифтеледі](/kz/computing/iaas/tariffication). Егер ол енді қажет болмаса:
 
 - кейінірек пайдалану үшін оны [тоқтатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm);
-- оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
+- оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).

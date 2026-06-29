@@ -4,8 +4,10 @@
   "metaDescription": "Step-by-step instructions for managing access, roles, and permissions: creating a custom role, assigning a preset role, how to use the role builder.",
   "sectionTitle": "Step-by-step instructions",
   "weight": 2,
-  "build": {
-    "for": ["public"]
-  },
-  "uuid": "5de3d762-af6a-4119-a251-2fa562235c97"
+  "uuid": "5de3d762-af6a-4119-a251-2fa562235c97",
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

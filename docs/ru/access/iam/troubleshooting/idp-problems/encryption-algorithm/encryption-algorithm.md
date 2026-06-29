@@ -10,9 +10,10 @@ Forbidden: received invalid saml response: failed to decrypt EncryptedAssertion:
 
 1. На стороне IdP поменяйте алгоритм шифрования подписи на один из следующих:
 
-    * aes128-cbc,
-    * aes192-cbc,
-    * aes256-cbc,
-    * tripledes-cbc,
-    * aes128-gcm.
+   - aes128-cbc,
+   - aes192-cbc,
+   - aes256-cbc,
+   - tripledes-cbc,
+   - aes128-gcm.
+
 1. Если проблема сохраняется, обратитесь в [техническую поддержку](/ru/contacts).

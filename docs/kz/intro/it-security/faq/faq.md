@@ -103,7 +103,7 @@
 
 {cut(Қол жеткізуді рөлдік үлгі бойынша бөлу (Role Based Access Control, RBAC) қолданыла ма?)}
 
-Иә, қолданылады. Толығырақ {linkto(../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=Құқықтар мен рұқсаттар]} бөлімінде.
+Иә, қолданылады. Толығырақ {linkto(../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=Құқықтар мен рұқсаттар]} бөлімінде.
 
 {/cut}
 
@@ -115,7 +115,7 @@
 
 {cut(Аккаунт компрометацияланған жағдайда не істеу керек?)}
 
-Бірден {linkto(../../../tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#vk-cloud-account-manage-editinfo-password)[text=парольді өзгертуге]} тырысыңыз. Егер нәтиже болмаса, [техникалық қолдауға](/kz/contacts) жүгініңіз, өтінімде қызмет түрін **VK Cloud** → **Мәселе туралы хабарлау** → **Жеке кабинет және есептік жазба** → **Есептік жазба бұзылды** деп таңдаңыз.
+Бірден {linkto(/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#kupiyasozdi_ozgertu)[text=парольді өзгертуге]} тырысыңыз. Егер нәтиже болмаса, [техникалық қолдауға](/kz/contacts) жүгініңіз, өтінімде қызмет түрін **VK Cloud** → **Мәселе туралы хабарлау** → **Жеке кабинет және есептік жазба** → **Есептік жазба бұзылды** деп таңдаңыз.
 
 {/cut}
 

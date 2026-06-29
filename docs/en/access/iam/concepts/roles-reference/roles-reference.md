@@ -54,7 +54,7 @@ A user with this role can create and modify components responsible for billing a
 
     These are the basic components for working with the balance. They allow viewing current expenses, topping up the account, and viewing the overall financial history for a specific project or all account projects at once.
 
--   Managing payment instenments and documents: components `projects_billing_card`, `billing_bank_integration`, `billing_contracts`.
+-   Managing payment instruments and documents: components `projects_billing_card`, `billing_bank_integration`, `billing_contracts`.
 
     These components handle the technical and legal aspects of payment: linking bank cards, integrating with bank gateways for transactions, and managing legal contracts.
 
@@ -106,9 +106,9 @@ Component descriptions are provided for the `billing_modify` permission.
 
 Creating an organization and managing the organization.
 
-The role manages organizational stencture and security: allows creating projects and domains, managing user accounts, configuring their access rights, and setting cloud resource usage limits.
+The role manages organizational structure and security: allows creating projects and domains, managing user accounts, configuring their access rights, and setting cloud resource usage limits.
 
-A user with this role can create and modify components responsible for access management, rights, resources, and organizational stencture.
+A user with this role can create and modify components responsible for access management, rights, resources, and organizational structure.
 
 -   Access subjects:
 
