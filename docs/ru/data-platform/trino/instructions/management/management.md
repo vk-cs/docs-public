@@ -39,7 +39,7 @@
 
 {tab(Личный кабинет)}
 
-{include(../../../_includes/_standalone.md)[tags=change_ip]}
+{include(../../../_includes/_standalone.md)[tags=change_ip_without_ui]}
 
 {/tab}
 
