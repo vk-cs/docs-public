@@ -1,10 +1,10 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "VK Cloud IAM сервисін пайдалану сценарийлері",
-  "metaDescription": "VK Cloud IAM сервисін пайдалану сценарийлері",
+  "shortDescription": "{var(cloud)} Аккаунт сервисін пайдалану сценарийлері",
+  "metaDescription": "VK Cloud Аккаунт сервисін пайдалану сценарийлері",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 3,
+  "weight": 2,
   "build": {
     "for": [
       "public"

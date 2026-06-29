@@ -184,7 +184,7 @@
 {tab(Организациям и предпринимателям)}
 {include(../../../../_includes/_invite-user.md)[tags=create-account]}
 
-Вы можете подключить к {var(cloud)} вашего поставщика удостоверений (Identity Provider). Это позволит вашим сотрудникам заходить в {var(cloud)} без ввода логина и пароля, используя корпоративные аутентификационные данные. Такой режим называется федерация удостоверений. Доступна настройка федерации удостоверений через {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad#vk-cloud-account-ad-fim)[text=Active Directory]}, {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/keycloak-to-fim#vk-cloud-account-keycloak-fim)[text=Keycloak]} и {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/ms-entra-fim#vk-cloud-account-ms-entra-fim)[text=Microsoft Entra]}.
+Вы можете подключить к {var(cloud)} вашего поставщика удостоверений (Identity Provider). Это позволит вашим сотрудникам заходить в {var(cloud)} без ввода логина и пароля, используя корпоративные аутентификационные данные. Такой режим называется федерация удостоверений. Доступна настройка федерации удостоверений через {linkto(../../../../access/iam/how-to-guides/federations/add-fim-for-ad#iam-ad-fim)[text=Active Directory]}, {linkto(../../../../access/iam/how-to-guides/federations/keycloak-to-fim#iam-keycloak-fim)[text=Keycloak]} и {linkto(../../../../access/iam/how-to-guides/federations/ms-entra-fim#iam-ms-entra-fim)[text=Microsoft Entra]}.
 {/tab}
 {/tabs}
 

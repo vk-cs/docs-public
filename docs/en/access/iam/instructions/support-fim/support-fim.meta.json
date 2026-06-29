@@ -5,8 +5,10 @@
   "sectionTitle": "Setting Up single sign-on for the support portal",
   "icon": "",
   "weight": 3,
-  "build": {
-    "for": ["public"]
-  },
-  "uuid": "18741ac0-5558-4261-b5e2-d427b4ffe29b"
+  "uuid": "18741ac0-5558-4261-b5e2-d427b4ffe29b",
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

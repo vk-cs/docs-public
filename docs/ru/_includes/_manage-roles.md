@@ -18,11 +18,11 @@
 1. Перейдите в раздел **Управление доступами** на вкладку **Пользователи**.
    {/includetag}
    {includetag(file-manage-roles)}
-1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного участника проекта и выберите пункт **Редактировать**.
+1. Нажмите ![ ](../assets/more-icon.svg "inline") для нужного участника проекта и выберите пункт **Редактировать**.
 1. (Опционально) Выберите одну из {linkto(../../concepts/roles-reference#iam-roles-reference-basic)[text=базовых ролей]}:
    {/includetag}
    {includetag(file-access-manage)}
-1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужного участника проекта и выберите пункт **Редактировать**.
+1. Нажмите ![ ](../assets/more-icon.svg "inline") для нужного участника проекта и выберите пункт **Редактировать**.
 1. (Опционально) Выберите одну из {linkto(../../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовых ролей]}:
    {/includetag}
    {includetag(manage-roles-all)}

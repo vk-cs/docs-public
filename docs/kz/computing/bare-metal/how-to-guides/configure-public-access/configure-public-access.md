@@ -170,6 +170,6 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
 Жасалған ресурстар тарифке сәйкес есептеледі және есептеу ресурстарын тұтынады. Егер олар сізге енді қажет болмаса:
 
-- Кейінірек пайдалану үшін аралық хостты {linkto(../../../../computing/iaas/instructions/vm/vm-manage#start-stop-restart-vm)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#delete_vm)[text=жойыңыз]}.
+- Кейінірек пайдалану үшін аралық хостты {linkto(../../../../computing/iaas/instructions/vm/vm-manage#start-stop-restart-vm)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
 - Bare Metal серверін жалға алудан {linkto(../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-delete)[text=басы тартыңыз]}.
 - Аралық хостқа тағайындалған {linkto(../../../../networks/vnet/instructions/ip/floating-ip#delete)[text=Floating IP мекенжайын жойыңыз]}. Жобада бар Floating IP мекенжайлары қандай да бір сервиске байланыстырылмаса да тарифтеледі.

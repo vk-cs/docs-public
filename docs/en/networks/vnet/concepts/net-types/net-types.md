@@ -10,7 +10,7 @@ The standard network, its subnets and ports [can be managed](../../instructions)
 
 _Shared network_ also provides access to the subnets with the private IP addresses, but exists across several projects.
 
-To create a shared network, you have to create a standard network in one project and then share it with other projects. Only a user with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner (hereinafter referred to as _network owner_) has the ability to share a network.
+To create a shared network, you have to create a standard network in one project and then share it with other projects. Only a user with the [role](/en/access/iam/concepts/rolesandpermissions) of the project owner (hereinafter referred to as _network owner_) has the ability to share a network.
 
 A network owner can share the net with any project within one [SDN](../architecture#sdns_used):
 

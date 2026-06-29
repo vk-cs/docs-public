@@ -2,7 +2,7 @@
 Жобалар бойынша барлық есептен шығарулар мен түсімдер жоба {ifdef(public)}[баланс бетінде](https://kz.cloud.vk.com/app/services/billing){/ifdef}{ifndef(public)}баланс бетінде{/ifndef} {var(cloud)} жеке кабинетінде тіркеледі.
 
 {ifdef(public)}
-Шығыстарды егжей-тегжейлі көрсету жобаңыздағы {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөлі]} иесі, суперәкімші, жоба әкімшісі немесе биллинг әкімшісі болып табылатын пайдаланушыларға қолжетімді.
+Шығыстарды егжей-тегжейлі көрсету жобаңыздағы {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлі]} иесі, суперәкімші, жоба әкімшісі немесе биллинг әкімшісі болып табылатын пайдаланушыларға қолжетімді.
 
 {note:warn}
 {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} Мәскеу есептен шығарулар мен толықтыруларды егжей-тегжейлі көрсету Мәскеу уақытына (GMT+3), Қазақстан өңірінде Астана уақытына (GMT+6) байланыстырылған.

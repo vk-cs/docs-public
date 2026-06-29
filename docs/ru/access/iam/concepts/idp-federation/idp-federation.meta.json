@@ -4,7 +4,7 @@
   "metaDescription": "Федерация удостоверений в VK Cloud: единый вход и доступ к ресурсам VK Cloud с помощью федерации удостоверений в вашем IdP.",
   "sectionTitle": "Федерация удостоверений",
   "icon": "",
-  "weight": 5,
+  "weight": 4,
   "uuid": "",
   "build": {
     "for": [

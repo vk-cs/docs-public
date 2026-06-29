@@ -1,14 +1,14 @@
-# {heading(API пайдалану мысалдары)[id=vk-cloud-account-manage-2fa]}
+# {heading(API пайдалану мысалдары)[id=iam-manage-2fa]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {include(/kz/_includes/_2fa-settings.md)[tags=manage-2fa-intro]}
 
-## {heading(2FA қосу)[id=vk-cloud-account-manage-2fa-on]}
+## {heading(2FA қосу)[id=iam-manage-2fa-on]}
 
 {include(/kz/_includes/_2fa-settings.md)[tags=manage-2fa-on]}
 
-## {heading(2FA өшіру)[id=vk-cloud-account-manage-2fa-off]}
+## {heading(2FA өшіру)[id=iam-manage-2fa-off]}
 
 1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
 1. **Қауіпсіздік** бөліміне өтіңіз.

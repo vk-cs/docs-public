@@ -5,10 +5,5 @@
   "sectionTitle": "Сәйкестендіру федерациясын баптау",
   "icon": "",
   "weight": 1,
-  "uuid": "",
-  "build": {
-    "for": [
-      "public"
-    ]
-  }
+  "uuid": ""
 }

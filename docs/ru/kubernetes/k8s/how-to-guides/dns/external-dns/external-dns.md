@@ -52,14 +52,14 @@ ExternalDNS будет использовать реквизиты этого п
 
 Подготовьте пользователя и получите все необходимые реквизиты:
 
-1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-view-user)[text=Выберите]} существующего пользователя или {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-invite-user)[text=пригласите в проект]} нового пользователя.
+1. {linkto(../../../../../access/iam/instructions/access-manage#project-access-view-user)[text=Выберите]} существующего пользователя или {linkto(../../../../../access/iam/instructions/access-manage#project-access-invite-user)[text=пригласите в проект]} нового пользователя.
 
    Требования к пользователю:
 
    - Должен быть {linkto(../../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
-   - Должна быть {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-user-role-edit)[text=назначена]} одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
+   - Должна быть {linkto(../../../../../access/iam/instructions/access-manage#project-access-user-role-edit)[text=назначена]} одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
-     - Администратор сети (минимально необходимая {linkto(../../../../../tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-permissions)[text=роль]}).
+     - Администратор сети (минимально необходимая {linkto(../../../../../../en/access/iam/concepts/roles-reference#iam-roles-reference)[text=роль]}).
      - Администратор проекта.
      - Суперадминистратор.
      - Владелец проекта.

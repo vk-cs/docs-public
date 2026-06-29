@@ -6,7 +6,7 @@
   "icon": "",
   "weight": 0,
   "uuid": "a928f0c4-bcb2-4c32-8140-e0528b6a79c5",
-  "build": {
+    "build": {
     "for": [
       "public"
     ]

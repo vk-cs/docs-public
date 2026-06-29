@@ -7,5 +7,5 @@
 {include(/ru/_includes/_balance_page.md)}
 
 {note:info}
-{ifdef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef}{ifndef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifndef} доступна по всем проектам, в которых ваша {ifdef(public)}{linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]}{/ifdef}{ifndef(public)}роль{/ifndef} — владелец, суперадминистратор или администратор биллинга. На вкладках **Детализация** и **Расходы на сервисы** данные по умолчанию отфильтрованы по текущему проекту.
+{ifdef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef}{ifndef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifndef} доступна по всем проектам, в которых ваша {ifdef(public)}{linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль]}{/ifdef}{ifndef(public)}роль{/ifndef} — владелец, суперадминистратор или администратор биллинга. На вкладках **Детализация** и **Расходы на сервисы** данные по умолчанию отфильтрованы по текущему проекту.
 {/note}

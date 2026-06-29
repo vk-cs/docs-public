@@ -336,7 +336,7 @@ resource "vkcs_db_user" "db-user" {
 
 - {linkto(../../../../../dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-get-info)[text=Инстанс БД]}.
 - Внешний IP-адрес для инстанса — отображается на странице инстанса.
-- Расширение linkto(../../../../../dbs/dbaas/instructions/managing-extensions)[text=Prometheus Node exporter]}{ (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
+- Расширение linkto(../../../../../dbs/dbaas/instructions/managing-extensions#dbaas-managing-extensions)[text=Prometheus Node exporter]}{ (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
 - БД на инстансе (если была создана) — отображается на странице инстанса на вкладке **Список баз данных**.
 - {linkto(../../../../../dbs/dbaas/instructions/users#dbaas-users-list)[text=Пользователь БД]} (если был создан) — отображается на странице инстанса на вкладке **Пользователи**.
 

@@ -1,4 +1,4 @@
-Ошибка при создании проекта может возникать, если в аккаунте создано слишком много проектов. В рамках [базовых квот](/ru/tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-general) один пользователь может создать не более 5 проектов. 
+Ошибка при создании проекта может возникать, если в аккаунте создано слишком много проектов. В рамках [базовых квот](/ru/tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-general) один пользователь может создать не более 5 проектов.
 
 ### Решение
 

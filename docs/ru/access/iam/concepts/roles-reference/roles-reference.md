@@ -10,7 +10,7 @@
 
 ## {heading(Базовые роли)[id=iam-roles-reference-basic]}
 
-Базовые роли, кроме роли `mcs_owner`, используются для [настройки прав доступа](/ru/access/iam/instructions/manage-roles) в сочетании с [разрешениями](/ru/access/iam/concepts/permissions-reference).
+Базовые роли, кроме роли `mcs_owner`, используются для {linkto(../../instructions/access-manage#iam-access-manage-user-role-edit)[text=настройки прав доступа]} в сочетании с [разрешениями](/ru/access/iam/concepts/permissions-reference).
 
 ### {heading(mcs_owner)[id=mcs_owner]}
 
@@ -548,24 +548,6 @@
 {/cut}
 
 ## {heading(Специализированные роли)[id=iam-roles-reference-special]}
-
-### {heading(dataplatform_delete)[id=dataplatform_delete]}
-
-Название в личном кабинете: `Удаление Data Platform`.
-
-Позволяет полностью удалять все ресурсы и сервисы Data Platform.
-
-### {heading(dataplatform_modify)[id=dataplatform_modify]}
-
-Название в личном кабинете: `Управление Data Platform`.
-
-Позволяет управлять всеми сервисами и инфраструктурой Data Platform.
-
-### {heading(dataplatform_view)[id=dataplatform_view]}
-
-Название в личном кабинете: `Просмотр Data Platform`.
-
-Позволяет просматривать список и статусы всех компонентов Data Platform.
 
 ### {heading(mcs_admin_network)[id=mcs_admin_network]}
 

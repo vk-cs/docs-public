@@ -27,4 +27,4 @@
 ## Әрі қарай не істеу керек?
 
 - [Жобаны басқару](/kz/tools-for-using-services/account/instructions/project-settings/manage) туралы толығырақ біліңіз.
-- Жобаға [қолжетімділікті баптау](/kz/tools-for-using-services/account/instructions/project-settings/access-manage) мүмкіндіктерімен танысыңыз.
+- Жобаға [қолжетімділікті баптау](/kz/access/iam/instructions/access-manage) мүмкіндіктерімен танысыңыз.

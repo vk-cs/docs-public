@@ -2,7 +2,7 @@
 Все списания и поступления по проектам фиксируются в личном кабинете {var(cloud)} на {ifdef(public)}[странице баланса](https://msk.cloud.vk.com/app/services/billing){/ifdef}{ifndef(public)}странице баланса{/ifndef} проекта.
 
 {ifdef(public)}
-Детализация расходов доступна пользователям, чья {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} в проекте — владелец, суперадминистратор, администратор проекта или администратор биллинга.
+Детализация расходов доступна пользователям, чья {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль]} в проекте — владелец, суперадминистратор, администратор проекта или администратор биллинга.
 
 {note:warn}
 Детализация списаний и пополнений в {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва привязана к московскому времени (GMT+3), в регионе Казахстан — ко времени Астаны (GMT+6).

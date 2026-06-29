@@ -26,7 +26,7 @@ Marketplace — VK Cloud ішкі жүйесі, ол клиенттерге әр
 
 {cut(Егер сервис қосу кезінде іске қосылмаса не істеу керек?)}
 
-1. Сервисті орналастыру үшін жобада квоталар жеткілікті екенін [тексеріңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta). Ресурстарды босатыңыз немесе квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+1. Сервисті орналастыру үшін жобада квоталар жеткілікті екенін [тексеріңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas). Ресурстарды босатыңыз немесе квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 1. [Алдын ала төлем жүйесі](../tariffication) кезінде: жоба шотында қаражат жеткілікті екенін тексеріңіз.
 1. Сервис инстансын [жаңартыңыз](../instructions/pr-instance-manage#pr-instance-manage-recreate).
 

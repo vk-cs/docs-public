@@ -50,7 +50,7 @@
 
 ## Одан кейін не болады?
 
-Кіргеннен кейін сіз жоба иесінің [рөлімен](/kz/tools-for-using-services/account/concepts/rolesandpermissions) сіз үшін автоматты түрде құрылған жобаға өтесіз.
+Кіргеннен кейін сіз жоба иесінің [рөлімен](/kz/access/iam/concepts/rolesandpermissions) сіз үшін автоматты түрде құрылған жобаға өтесіз.
 
 Серіктес клиентінің жеке кабинетінің мүмкіндіктерімен [танысыңыз](/kz/tools-for-using-services/partner-platform/concepts/client-account).
 

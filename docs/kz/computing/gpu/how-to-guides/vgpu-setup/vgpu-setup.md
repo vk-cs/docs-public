@@ -13,7 +13,7 @@
 1. <!---{linkto(../../../../computing/iaas/concepts/image-vm#)[text=бейнені]}--> келесі тәсілдердің бірімен дайындаңыз:
 
    - Бұрыннан бар <!---{linkto(../../../../computing/iaas/concepts/vm#)[text=виртуалды машинадан]}--> {linkto(../../../../computing/iaas/instructions/images/images-manage#sozdanie_obraza)[text=жасаңыз]}.
-   - Бейне файлынан {linkto(../../../../computing/iaas/instructions/images/images-manage#import_obraza)[text=импорттаңыз]}.
+   - Бейне файлынан {linkto(../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импорттаңыз]}.
 
      [cloud-init](https://cloudinit.readthedocs.io/) (Linux) немесе [Cloudbase-Init](https://cloudbase.it/cloudbase-init/) (Windows) қолдауы бар [дайындалған бейнені](https://docs.openstack.org/image-guide/obtain-images.html) пайдалану ұсынылады. Бұл бұлттық платформаға қатысты ОЖ параметрлерін баптауды автоматтандыруға мүмкіндік береді.
 

@@ -8,7 +8,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}. Создание СУЗ доступно для ролей:
+1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}. Создание СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
@@ -46,7 +46,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
+1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте, упорядоченный по названию.
@@ -66,7 +66,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
+1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
@@ -74,7 +74,7 @@
 1. Откройте карточку СУЗ одним из способов:
 
    - Нажмите на имя нужной СУЗ.
-   - Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Просмотр**.
+   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Просмотр**.
 
    В карточке СУЗ отобразятся:
 
@@ -93,12 +93,12 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}.
+1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
    Отобразится список всех СУЗ в проекте.
 
-1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Скачать OpenStack RC файл**.
+1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Скачать OpenStack RC файл**.
 
    На ваше устройство будет скачан OpenStack RC-файл с именем вида `<НАЗВАНИЕ_СУЗ>-openrc.sh`. Это скрипт, который устанавливает значения для переменных окружения, необходимых для работы с API.
 
@@ -148,7 +148,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Убедитесь, что ваша {linkto(../../../concepts/rolesandpermissions#rolesandpermissions-general)[text=роль в проекте]} имеет {linkto(../../../concepts/service-accounts#tools-account-concepts-service-accounts)[text=права на управление СУЗ]}. Удаление СУЗ доступно для ролей:
+1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}. Удаление СУЗ доступно для ролей:
 
     - владелец проекта,
     - суперадминистратор,
@@ -160,9 +160,9 @@
 
 1. Удалите СУЗ одним из способов:
 
-   - Нажмите ![](../../../../../assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Удалить**.
+   - Нажмите ![](/ru/assets/more-icon.svg "inline") для нужной СУЗ и выберите пункт **Удалить**.
    - Выберите нужную СУЗ с помощью флажка и нажмите кнопку **Удалить**.
-   - Нажмите на имя нужной СУЗ, в карточке СУЗ нажмите ![](../../../../../assets/more-icon.svg "inline") и выберите пункт **Удалить**.
+   - Нажмите на имя нужной СУЗ, в карточке СУЗ нажмите ![](/ru/assets/more-icon.svg "inline") и выберите пункт **Удалить**.
 
 1. Подтвердите удаление.
 

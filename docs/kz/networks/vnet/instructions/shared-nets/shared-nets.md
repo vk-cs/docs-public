@@ -14,7 +14,7 @@
 
 {cut(Кім желіні басқа жобалармен бөлісе алады?)}
 
-Басқа жобалармен желіні келесі {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөлдері]} бар пайдаланушылар бөлісе алады:
+Басқа жобалармен желіні келесі {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлдері]} бар пайдаланушылар бөлісе алады:
 
 - жоба иесі;
 - суперәкімші;

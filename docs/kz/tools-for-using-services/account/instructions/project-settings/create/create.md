@@ -29,5 +29,5 @@
 
    Қызметтердің құны туралы толығырақ [тарификация туралы мақалада](../../../tariffication) қараңыз.
 
-1. Жобаға қолжетімділіктерді [баптаңыз](/kz/tools-for-using-services/account/instructions/project-settings/access-manage).
+1. Жобаға қолжетімділіктерді [баптаңыз](/kz/access/iam/instructions/access-manage).
 {/ifdef}

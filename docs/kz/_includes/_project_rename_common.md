@@ -2,6 +2,6 @@
 
 {note:info}
 
-Жоба атауын тек жоба иесінің [рөлі](/kz/tools-for-using-services/account/concepts/rolesandpermissions) бар пайдаланушылар немесе суперадминистратор өзгерте алады.
+Жоба атауын тек жоба иесінің [рөлі](/kz/access/iam/concepts/rolesandpermissions) бар пайдаланушылар немесе суперадминистратор өзгерте алады.
 
 {/note}

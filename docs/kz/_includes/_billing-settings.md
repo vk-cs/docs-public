@@ -81,7 +81,7 @@
 
 1. Баланс бетінде **Шектеулер** қойындысына өтіңіз.
 
-   Рөліңіз {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөл]} иесі немесе суперадминистратор болып табылатын барлық жобалардың тізімі көрсетіледі.
+   Рөліңіз {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөл]} иесі немесе суперадминистратор болып табылатын барлық жобалардың тізімі көрсетіледі.
 
 1. Қажетті жоба жолындағы ![Баптаулар](/kz/assets/filter_icon.svg "inline") белгішесін басыңыз.
 

@@ -1,4 +1,4 @@
-Use Service Users REST API to manage [service accounts](/en/tools-for-using-services/account/concepts/service-accounts):
+Use Service Users REST API to manage [service accounts](/en/access/iam/concepts//service-accounts):
 
 - view the list of service accounts
 - view, create, and delete service accounts

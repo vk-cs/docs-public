@@ -1,17 +1,17 @@
 {
-    "title": "Удаление учетной записи",
-      "shortDescription": "Удаление учетной записи пользователя",
-      "metaDescription": "Удаление учетной записи пользователя VK Cloud: как удалить аккаунт в VK Cloud.",
-    "sectionTitle": "Удаление учетной записи",
-    "icon": "",
-    "weight": 6,
+  "title": "Удаление учетной записи",
+  "shortDescription": "Удаление учетной записи пользователя",
+  "metaDescription": "Удаление учетной записи пользователя VK Cloud.",
+  "sectionTitle": "Удаление учетной записи",
+  "icon": "",
+  "weight": 6,
+  "additionalUuids": [
+    "b2af87a5-29a6-4a35-bb27-3ceb22d11532"
+  ],
+  "uuid": "3d563e56-4848-488f-af5d-9c42249b2628",
   "build": {
     "for": [
       "public"
     ]
-  },
-    "additionalUuids": [
-        "b2af87a5-29a6-4a35-bb27-3ceb22d11532"
-    ],
-    "uuid": "3d563e56-4848-488f-af5d-9c42249b2628"
+  }
 }

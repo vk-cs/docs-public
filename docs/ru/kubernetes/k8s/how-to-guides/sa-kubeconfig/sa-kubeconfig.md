@@ -60,7 +60,7 @@
 
    Для каждой из команд должен быть выведен ответ `yes`.
 
-   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../tools-for-using-services/account/instructions/project-settings/access-manage#project-access-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../access/iam/instructions/access-manage#project-access-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
 
    Подробнее о ролевой модели и доступных ролях читайте в разделе {linkto(../../concepts/access-management#k8s-access-management)[text=Управление доступом]}.
 

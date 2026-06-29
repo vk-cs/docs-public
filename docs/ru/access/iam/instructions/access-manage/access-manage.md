@@ -1,8 +1,8 @@
-# {heading(Управление доступами)[id=tools-account-project-access-manage]}
+# {heading(Управление доступами)[id=iam-access-manage]}
 
-Операции управления доступом доступны только следующим {linkto(../../../concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролям]} личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр участников проекта доступен также администратору проекта и наблюдателю.
+Операции управления доступом доступны только следующим {linkto(../../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролям]} личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр участников проекта доступен также администратору проекта и наблюдателю.
 
-## {heading(Просмотр участников проекта)[id=project-access-view-user]}
+## {heading(Просмотр участников проекта)[id=iam-access-manage-view-user]}
 
 {tabs}
 
@@ -18,7 +18,7 @@
 
 {/tabs}
 
-## {heading(Просмотр задействованных в проекте ролей)[id=project-access-view-role]}
+## {heading(Просмотр задействованных в проекте ролей)[id=iam-access-manage-view-role]}
 
 {tabs}
 
@@ -38,26 +38,26 @@
 
 {/tabs}
 
-## {heading(Включение в проекте обязательной 2FA)[id=project-access-2fa]}
+## {heading(Включение в проекте обязательной 2FA)[id=iam-access-manage-2fa]}
 
 Из соображений безопасности вы можете сделать двухфакторную аутентификацию (2FA) обязательной для участников проекта:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. {linkto(../../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=Включите]} 2FA для своего аккаунта, если она еще не включена.
+1. {linkto(../manage-2fa#iam-manage-2fa)[text=Включите]} 2FA для своего аккаунта, если она еще не включена.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Управление доступами**.
 1. На странице управления доступами включите опцию **Обязательная двухфакторная аутентификация**.
 
 Опцию можно включить и выключить на любом этапе жизни проекта.
 
-## {heading(Приглашение в проект нового участника)[id=project-access-invite-user]}
+## {heading(Приглашение в проект нового участника)[id=iam-access-manage-invite-user]}
 
 {include(../../../../_includes/_invite-user.md)[tags=access-manage]}
 
-## {heading(Изменение роли участника)[id=project-access-user-role-edit]}
+## {heading(Изменение роли участника)[id=iam-access-manage-user-role-edit]}
 
 {include(../../../../_includes/_manage-roles.md)[tags=manage-roles-all,file-access-manage]}
 
-## {heading(Удаление участника)[id=project-access-delete-user]}
+## {heading(Удаление участника)[id=iam-access-manage-delete-user]}
 
 Участник не может удалить:
 

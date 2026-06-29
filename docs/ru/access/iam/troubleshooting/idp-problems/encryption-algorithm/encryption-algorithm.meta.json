@@ -5,7 +5,7 @@
   "sectionTitle": "Неверный алгоритм шифрования",
   "icon": "",
   "weight": 6,
-  "uuid": "254b239b-f72d-45c5-803a-6d45e8636423",
+  "uuid": "",
   "build": {
     "for": [
       "public"

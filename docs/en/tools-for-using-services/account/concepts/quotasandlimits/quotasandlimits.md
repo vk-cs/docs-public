@@ -187,7 +187,7 @@ The GPU limit for a single instance is a limitation of KVM technology, which doe
 | 200 GB
 | not limited
 
-|===
+|=== 
 
 #### Limits without quotas
 

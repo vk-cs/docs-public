@@ -7,7 +7,7 @@
 ## {heading(Просмотр списка эндпоинтов)[id=rest-api-endpoints-list]}
 
 {ifdef(public)}
-Список доступен всем пользователям, вне зависимости от их {linkto(../../../account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]}.
+Список доступен всем пользователям, вне зависимости от их {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]}.
 {/ifdef}
 
 Чтобы увидеть список эндпоинтов{ifdef(public)} для вашего региона{/ifdef}:
@@ -107,7 +107,7 @@
 
 |Neutron
 |https://infra.mail.ru:9696
-|Управление всеми объектами [text=сетевой инфраструктуры]}{linkto(../../../../networks/vnet), кроме публичных DNS-зон и балансировщиков нагрузки
+|Управление всеми объектами [text=сетевой инфраструктуры]}{linkto(../../../../networks/vnet#vnet), кроме публичных DNS-зон и балансировщиков нагрузки
 
 |Octavia
 |https://public.infra.mail.ru:9876
@@ -211,7 +211,7 @@
 |===
 
 {note:info}
-В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять {linkto(../../../account/concepts/service-accounts#tools-account-concepts-service-accounts)[text=сервисными учетными записями]}.
+В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисными учетными записями]}.
 {/note}
 
 {/cut}

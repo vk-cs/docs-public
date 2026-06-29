@@ -112,7 +112,7 @@
 
 {cut(Как включить двухфакторную аутентификацию?)}
 
-Воспользуйтесь инструкцией {linkto(../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=Включение 2FA]}.
+Воспользуйтесь инструкцией {linkto(../../access/iam/instructions/manage-2fa#iam-manage-2fa)[text=Включение 2FA]}.
 
 {/cut}
 
@@ -130,7 +130,7 @@
 
 {cut(Как управлять ролями и правами доступа в проекте?)}
 
-Управляйте правами доступа через личный кабинет. Управление доступно только {linkto(../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=ролям]} владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье {linkto(../../tools-for-using-services/account/instructions/project-settings/access-manage#tools-account-project-access-manage)[text=Управление доступами]}.
+Управляйте правами доступа через личный кабинет. Управление доступно только {linkto(../../access/iam/concepts/rolesandpermissions#iam-roles-reference)[text=ролям]} владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье {linkto(../../access/iam/instructions/access-manage#iam-access-manage)[text=Управление доступами]}.
 
 {/cut}
 

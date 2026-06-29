@@ -52,7 +52,7 @@ DNS атауын баптаудың бірнеше тәсілі бар:
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu)[text=аутентификациядан өтіңіз]}.
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
 1. Команданы орындап, инстанс порттарының тізімін алыңыз:
 

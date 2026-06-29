@@ -5,10 +5,5 @@
   "sectionTitle": "Billing",
   "icon": "",
   "weight": 20,
-  "uuid": "",
-  "build": {
-    "for": [
-      "public"
-    ]
-  }
+  "uuid": ""
 }

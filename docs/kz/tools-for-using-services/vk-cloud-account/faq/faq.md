@@ -28,7 +28,7 @@
 
 {cut(Аккаунттағы құпиясөзді қалай қалпына келтіруге болады?)}
 
-Аккаунттың [құпиясөзін өзгертіңіз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo).
+Аккаунттың [құпиясөзін өзгертіңіз](/kz/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo#kupiyasozdi_ozgertu).
 
 Егер ағымдағы құпиясөзді есіңізде сақтамасаңыз, сәйкестендіру және қол жеткізуді қалпына келтіру үшін [техникалық қолдау қызметіне хабарласыңыз](https://cloud.vk.com/contacts/).
 

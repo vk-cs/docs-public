@@ -1,6 +1,6 @@
 All deductions and additions for projects are recorded in the VK Cloud management console on the project [balance page](https://msk.cloud.vk.com/app/en/services/billing).
 
-Expenses details are available to users with the [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
+Expenses details are available to users with the [roles](/en/access/iam/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
 
 {note:warn}
 

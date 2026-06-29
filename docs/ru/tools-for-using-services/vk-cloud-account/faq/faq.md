@@ -28,7 +28,7 @@
 
 {cut(Как сбросить пароль в аккаунте?)}
 
-{linkto(../instructions/account-manage/editinfo#vk-cloud-account-manage-editinfo-password)[text=Смените]} пароль от аккаунта.
+{linkto(../instructions/account-manage/editinfo#account-manage-editinfo-password)[text=Смените]} пароль от аккаунта.
 
 Если вы не помните текущий пароль, [обратитесь в техническую поддержку](https://cloud.vk.com/contacts/) для идентификации и восстановления доступа.
 
@@ -63,6 +63,6 @@
 - ID вашей федерации удостоверений;
 - список доверенных доменов вашей организации.
 
-Подробнее о настройке единого входа на портал технической поддержки читайте в {linkto(../../../access/iam/instructions/support-fim#vk-cloud-account-support-fim)[text=инструкции]}.
+Подробнее о настройке единого входа на портал технической поддержки читайте в {linkto(../../../access/iam/instructions/support-fim#iam-support-fim)[text=инструкции]}.
 
 {/cut}

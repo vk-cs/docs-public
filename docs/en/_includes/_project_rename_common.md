@@ -2,6 +2,6 @@ For projects created automatically — for example, when registering an account 
 
 {note:info}
 
-Only users with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner or superadministrator can change the project name.
+Only users with the [role](/en/access/iam/concepts/rolesandpermissions) of the project owner or superadministrator can change the project name.
 
 {/note}

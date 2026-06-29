@@ -1,7 +1,7 @@
 # {heading(Управление балансом проекта)[id=billing-payment]}
 
 {note:info}
-Просматривать детализацию расходов и пополнять лицевой счет могут пользователи, чья {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} в {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекте]} — владелец, суперадминистратор или администратор биллинга.
+Просматривать детализацию расходов и пополнять лицевой счет могут пользователи, чья {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=роль]} в {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекте]} — владелец, суперадминистратор или администратор биллинга.
 {/note}
 
 ## {heading(Просмотр баланса)[id=billing-payment-balance-view]}

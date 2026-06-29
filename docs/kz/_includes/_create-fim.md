@@ -1,4 +1,4 @@
-VK Cloud куәлік федерацияларын тек [рөлі](/kz/tools-for-using-services/account/concepts/rolesandpermissions) жоба иесі болып табылатын пайдаланушылар ғана жасай алады.
+VK Cloud куәлік федерацияларын тек [рөлі](/kz/access/iam/concepts/rolesandpermissions) жоба иесі болып табылатын пайдаланушылар ғана жасай алады.
 
 1. [Өтіңіз](https://cloud.vk.com/account) VK Cloud аккаунтына.
 1. **Куәлік федерациясы** бөліміне, **Федерациялар** қойындысына өтіңіз.

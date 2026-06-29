@@ -28,13 +28,13 @@
 
 {cut(Жоба қатысушыларының қандай құқықтары бар?)}
 
-Жоба қатысушыларының рөлдік моделі [Жеке кабинет пайдаланушыларының рөлдері мен құқықтары](../concepts/rolesandpermissions) мақаласында сипатталған.
+Жоба қатысушыларының рөлдік моделі [Рөлдік басқару қолжеткізу моделі](/kz/access/iam/concepts/rolesandpermissions) мақаласында сипатталған.
 
 {/cut}
 
 {cut(Жобаға қосымша қатысушыны қалай қосуға болады?)}
 
-Процедура [Қолжетімділіктерді басқару](../instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) мақаласында сипатталған. Қосқан кезде [рөлдер матрицасына](../concepts/rolesandpermissions) сүйеніп, рөлді көрсетіңіз.
+Процедура [Қолжетімділіктерді басқару](/kz/tools-for-using-services/account/instructions/project-settings/invite) мақаласында сипатталған. Қосқан кезде [Рөлдік басқару қолжеткізу моделі](/kz/access/iam/concepts/rolesandpermissions) сүйеніп, рөлді көрсетіңіз.
 
 {/cut}
 
@@ -62,7 +62,7 @@
 
 {cut({var(cloud)} есептік жазбасының иесін қалай ауыстыруға болады?)}
 
-[Жобаны басқару](../instructions/project-settings/manage#project-owner-edit) мақаласындағы нұсқаулықты пайдаланыңыз.
+[Жобаны басқару](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-owner-edit) мақаласындағы нұсқаулықты пайдаланыңыз.
 
 {/cut}
 
@@ -70,7 +70,7 @@
 
 [Техникалық қолдауға жүгініңіз](/kz/contacts), мыналарды көрсетіп:
 
-- [Жобаның PID идентификаторы](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view);
+- [Жобаның PID идентификаторы](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#zhoba_identifikatoryn_alu);
 - ағымдағы және жаңа иесінің ЖСН/БСН.
 {/cut}
 

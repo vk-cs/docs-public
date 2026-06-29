@@ -1,0 +1,17 @@
+{
+  "title": "Рөлдік басқару қолжеткізу моделі",
+  "shortDescription": "Жеке кабинеттегі рөлдік модель {var(cloud)}",
+  "metaDescription": "VK Cloud жеке кабинеттегі рөлдік модель.",
+  "sectionTitle": "Рөлдік басқару қолжеткізу моделі",
+  "icon": "",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

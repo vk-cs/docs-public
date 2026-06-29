@@ -136,5 +136,5 @@ Ubuntu образынан жасалған Linux негізіндегі вирт
 Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
 
 - оны кейінірек пайдалану үшін [тоқтатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm);
-- оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#delete_vm).
+- оны біржола [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
 {/includetag}

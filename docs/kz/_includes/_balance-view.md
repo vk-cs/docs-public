@@ -9,5 +9,5 @@
     - **Баланс** бөліміне өтіңіз.
 
 {note:info}
-{ifdef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef} рөліңіз {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=рөл]} иесі, суперадминистратор немесе биллинг әкімшісі болып табылатын барлық жобалар бойынша қолжетімді. **Детализация** және **Сервистерге шығындар** қойындыларында деректер әдепкі бойынша ағымдағы жоба бойынша сүзілген.
+{ifdef(public)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../detail#billing-detail)[text=Детализация]}{/ifdef} рөліңіз {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөл]} иесі, суперадминистратор немесе биллинг әкімшісі болып табылатын барлық жобалар бойынша қолжетімді. **Детализация** және **Сервистерге шығындар** қойындыларында деректер әдепкі бойынша ағымдағы жоба бойынша сүзілген.
 {/note}

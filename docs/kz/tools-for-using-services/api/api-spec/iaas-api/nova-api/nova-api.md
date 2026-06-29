@@ -5,7 +5,7 @@
 {cut(Эндпоинт пен аутентификация токенін алу)}
 
 1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
-1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on), егер бұл әлі жасалмаса, екі факторлы аутентификацияны.
+1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa), егер бұл әлі жасалмаса, екі факторлы аутентификацияны.
 1. [Қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate), егер бұл әлі жасалмаса, API арқылы қолжетімділікті.
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба параметрлері** бөлімін таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.

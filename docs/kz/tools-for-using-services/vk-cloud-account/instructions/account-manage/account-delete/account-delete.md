@@ -8,7 +8,7 @@
 
 {/note}
 
-Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#konservaciya_proekta) немесе [жою](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage) жеткілікті.
+Сервистерді пайдаланғаны үшін қаражаттың есептен шығарылуын тоқтату үшін есептік жазбаны жою міндетті емес. Ол үшін ресурстарды тұтынатын жобаларды [консервациялау](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-freeze) немесе [жою](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-delete) жеткілікті.
 
 Есептік жазбаны жою үшін:
 

@@ -4,7 +4,7 @@
 
 1. Enable the [Cloud Logging](/en/monitoring-services/logging) service for the project, if not done so already. To do this, [contact technical support](mailto:support@mcs.mail.ru).
 
-1. [Create](/en/tools-for-using-services/account/instructions/project-settings/service-account-manage) a service account with the rights to write logs to the Cloud Logging service. You can find such roles in the **Creating service users and names** column in the [Permissions in Cloud Logging](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_logging) section. The recommended role for this service account is `Kubernetes auditor`.
+1. [Create](/en/tools-for-using-services/account/instructions/project-settings/service-account-manage) a service account with the rights to write logs to the Cloud Logging service. You can find such roles in the **Creating service users and names** column in the [Permissions in Cloud Logging](/en/access/iam/concepts/rolesandpermissions#roles_logging) section. The recommended role for this service account is `Kubernetes auditor`.
 
    Use the login and password you receive after creating the service account when installing the add-on.  
 

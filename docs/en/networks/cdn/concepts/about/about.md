@@ -25,6 +25,6 @@ The CDN service helps:
 
 {note:info}
 
-Confirm your phone number to access the service. If your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) has access to the CDN service, but it is not displayed in your management console, confirm your phone number via [technical support](mailto:support@mcs.mail.ru).
+Confirm your phone number to access the service. If your [role](/en/access/iam/concepts/rolesandpermissions) has access to the CDN service, but it is not displayed in your management console, confirm your phone number via [technical support](mailto:support@mcs.mail.ru).
 
 {/note}

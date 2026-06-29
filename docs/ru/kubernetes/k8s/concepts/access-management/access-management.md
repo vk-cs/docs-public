@@ -10,7 +10,7 @@
 
 - Роли пользователя в личном кабинете влияют на:
 
-  - {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=Доступные операции с кластерами в личном кабинете]}.
+  - {linkto(../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=Доступные операции с кластерами в личном кабинете]}.
 
   - {linkto(#k8s-access-management-kubernetes-roles)[text=Доступные действия в кластере]}.
 

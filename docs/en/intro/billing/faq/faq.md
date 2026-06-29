@@ -50,7 +50,7 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 
 [Balance](../concepts/balance) is displayed, if two conditions are met:
 
-- Your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator, or billing administrator.
+- Your [role](/en/access/iam/concepts/rolesandpermissions) in the project is the owner, superadministrator, or billing administrator.
 - [Registration procedure](/en/intro/start/account-registration) is completed: phone, email, and card for payment are bound.
 
 {/cut}

@@ -79,7 +79,7 @@
 
 1. На странице баланса перейдите на вкладку **Ограничения**.
 
-   Отобразится список всех проектов, в которых ваша {linkto(/ru/tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} — владелец или суперадминистратор.
+   Отобразится список всех проектов, в которых ваша {linkto(../access/iam/concepts/roles-reference#iam-roles-reference)[text=роль]} — владелец или суперадминистратор.
 
 1. Нажмите на значок ![Настройки](/ru/assets/filter_icon.svg "inline") в строке нужного проекта.
 

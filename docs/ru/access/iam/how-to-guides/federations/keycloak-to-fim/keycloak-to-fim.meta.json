@@ -1,12 +1,12 @@
 {
   "title": "Настройка федерации удостоверений через Keycloak",
-  "shortDescription": "Как настроить аутентификацию в {var(cloud)} через Keycloak",
+  "shortDescription": "Как настроить аутентификацию в VK Cloud через Keycloak",
   "metaDescription": "Настройте вход в VK Cloud через Keycloak. Эта инструкция поможет создать федерацию, настроить mappers (email, groups) и сопоставить группы с ролями в VK Cloud.",
   "sectionTitle": "Настройка федерации удостоверений через Keycloak",
   "icon": "",
   "weight": 2,
   "uuid": "da82e55a-aa29-42d2-a6a8-1ed144a20a67",
-  "build": {
+   "build": {
     "for": [
       "public"
     ]

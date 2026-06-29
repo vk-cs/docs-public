@@ -12,7 +12,7 @@
 * Балансировка нагрузки в инфраструктуре отказоустойчивого географически распределенного приложения.
 * Автоматическое обновление записей при изменении IP-адресов ресурсов (например, балансировщиков нагрузки).
 
-Для работы с публичным DNS настройте {linkto(../../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роли]} для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) {var(cloud)}:
+Для работы с публичным DNS настройте {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роли]} для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) {var(cloud)}:
 
 - Для просмотра DNS-зон и ресурсных записей — Наблюдатель.
 

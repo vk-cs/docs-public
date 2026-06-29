@@ -44,7 +44,7 @@ The project name can be changed at any stage of the project life.
 
 ## Changing project owner
 
-A project can have only one owner. After appointing another user as the owner, you will switch with him [roles](../../../concepts/rolesandpermissions).
+A project can have only one owner. After appointing another user as the owner, you will switch with him [roles](/en/access/iam/concepts/rolesandpermissions).
 
 {note:info}
 
@@ -58,7 +58,7 @@ A change of ownership is possible in any state of the project balance.
 
     1. Make sure that the user you want to make the owner:
 
-        - Added to the [list of members](../access-manage) and accepted the invitation to the project.
+        - Added to the [list of members](/en/access/iam/instructions/access-manage) and accepted the invitation to the project.
 
             In this case, it is displayed in the list with the activation status **Yes**.
 
@@ -75,7 +75,7 @@ A change of ownership is possible in any state of the project balance.
     - [project](#getting_project_id) id (PID);
     - the new owner's email address.
 
-1. (Optional) Check the role change in the [list of project members](../access-manage).
+1. (Optional) Check the role change in the [list of project members](/en/access/iam/instructions/access-manage).
 
 {note:info}
 
@@ -288,7 +288,7 @@ To get an extended list of quotas for a project:
 
 ## {heading(Increasing project quotas)[id=increase-quota]}
 
-Increasing quotas must be performed on behalf of a user with the project owner [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) using a special web form in the management console:
+Increasing quotas must be performed on behalf of a user with the project owner [role](/en/access/iam/concepts/rolesandpermissions) using a special web form in the management console:
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud Management Console.
 1. Click on the user name in the header of the management console and select **Quotas management**.

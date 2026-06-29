@@ -90,7 +90,7 @@
 
 {linkto(../concepts/balance#billing-balance)[text=Баланс]} отображается, если выполнены два условия:
 
-- Ваша {linkto(../../../tools-for-using-services/account/concepts/rolesandpermissions#tools-account-concepts-rolesandpermissions)[text=роль]} в проекте — владелец, суперадминистратор или администратор биллинга.
+- Ваша {linkto(../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=роль]} в проекте — владелец, суперадминистратор или администратор биллинга.
 - Завершена {linkto(../../../intro/onboarding/account#onboarding-account)[text=процедура регистрации]} в {var(cloud)}: привязаны телефон, почта и карта для оплаты.
 
 {/cut}
