@@ -130,6 +130,7 @@
                            --volume <ID_ДИСКА> \
                            --network <ID_СЕТИ> \
                            --flavor <ID_ШАБЛОНА_КОНФИГУРАЦИИ> \
+                           --security-group <ГРУППА_БЕЗОПАСНОСТИ> \
                            --key-name <ИМЯ_КЛЮЧЕВОЙ_ПАРЫ> \
                            --availability-zone <ЗОНА_ДОСТУПНОСТИ>
    ```
