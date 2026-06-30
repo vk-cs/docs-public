@@ -1,0 +1,18 @@
+{
+  "title": "Установка, обновление и удаление Linux-драйвера GPU",
+  "shortDescription": "Как правильно установить, обновить или удалить драйвер GPU в ОС Linux",
+  "metaDescription": "Пошаговые инструкции по установке, обновлению и удалению драйверов NVIDIA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
+  "sectionTitle": "Установка, обновление и удаление Linux-драйвера GPU",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}
