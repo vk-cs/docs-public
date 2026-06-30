@@ -1,0 +1,18 @@
+{
+  "title": "Установка, обновление и удаление компонентов CUDA",
+  "sectionTitle": "Установка, обновление и удаление компонентов CUDA",
+  "shortDescription": "Как правильно установить, обновить или удалить компоненты CUDA в ОС Linux",
+  "metaDescription": "Пошаговые инструкции по установке, обновлению и удалению компоненты CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

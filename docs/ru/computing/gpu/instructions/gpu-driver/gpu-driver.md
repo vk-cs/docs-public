@@ -17,7 +17,7 @@
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]} к ВМ с GPU или {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создайте]} новую, если этого не было сделано ранее.
 1. Проверьте, установлен ли драйвер GPU:
 
-   ```bash
+   ```console
    /usr/bin/nvidia-smi --query-gpu=driver_version --format=csv,noheader| head -n1
    ```
 
@@ -31,13 +31,13 @@
 
    1. Определите версию дистрибутива:
 
-      ```bash
+      ```console
       cat /etc/os-release
       ```
 
    1. Загрузите и установите пакет `cuda-keyring_1.1-1_all.deb` из репозитория NVIDIA CUDA для соответствующей версии вашего дистрибутива:
 
-      ```bash
+      ```console
       wget https://developer.download.nvidia.com/compute/cuda/repos/<ДИСТРИБУТИВ><ВЕРСИЯ>/x86_64/cuda-keyring_1.1-1_all.deb && \
       sudo dpkg -i cuda-keyring_1.1-1_all.deb
       ```
@@ -51,13 +51,13 @@
 
    1. Обновите индексы пакетного менеджера:
 
-      ```bash
+      ```console
       sudo apt update
       ```
 
    1. Убедитесь, что для установки доступна нужная или более новая версия драйвера:
 
-      ```bash
+      ```console
       apt-cache policy cuda-drivers
       ```
 
@@ -65,7 +65,7 @@
 
    1. Установите драйвер:
 
-      ```bash
+      ```console
       sudo apt -y install cuda-drivers-<ВЕРСИЯ_ВЕТКИ>
       ```
 
@@ -73,46 +73,46 @@
 
    {/tab}
 
-   {tab(RHEL)}
+   {tab(Red Hat Enterprise Linux)}
 
-   1. Определите версию RHEL вашего дистрибутива:
+   1. Определите версию Red Hat Enterprise Linux вашего дистрибутива:
 
-      ```bash
+      ```console
       rpm -E %rhel
       ```
 
    1. Добавьте репозиторий NVIDIA CUDA в качестве источника:
 
-      ```bash
+      ```console
       sudo tee /etc/yum.repos.d/nvidia-cuda.repo >/dev/null <<EOF
-      [cuda-rhel<ВЕРСИЯ_RHEL>-x86_64]
-      name=NVIDIA CUDA Repository (rhel<ВЕРСИЯ_RHEL>/x86_64)
-      baseurl=https://developer.download.nvidia.com/compute/cuda/repos/rhel<ВЕРСИЯ_RHEL>/x86_64/
+      [cuda-rhel<ВЕРСИЯ>-x86_64]
+      name=NVIDIA CUDA Repository (rhel<ВЕРСИЯ>/x86_64)
+      baseurl=https://developer.download.nvidia.com/compute/cuda/repos/rhel<ВЕРСИЯ>/x86_64/
       enabled=1
       gpgcheck=1
       repo_gpgcheck=0
-      gpgkey=https://developer.download.nvidia.com/compute/cuda/repos/rhel<ВЕРСИЯ_RHEL>/x86_64/D42D0685.pub
+      gpgkey=https://developer.download.nvidia.com/compute/cuda/repos/rhel<ВЕРСИЯ>/x86_64/D42D0685.pub
       EOF
       ```
 
-      Здесь `<ВЕРСИЯ_RHEL>` — номер версии RHEL, на которой основан ваш дистрибутив.
+      Здесь `<ВЕРСИЯ>` — номер версии Red Hat Enterprise Linux, на которой основан ваш дистрибутив.
 
    1. Обновите кеш пакетного менеджера:
 
-      ```bash
+      ```console
       sudo dnf clean all
       sudo dnf makecache --refresh
       ```
 
    1. Убедитесь, что для установки доступна нужная или более новая версия драйвера:
 
-      ```bash
+      ```console
       dnf repoquery --show-duplicates --latest-limit=0 cuda-drivers
       ```
 
    1. Установите драйвер:
 
-      ```bash
+      ```console
       sudo dnf install '<ПАКЕТ_ДРАЙВЕРА>'
       ```
 
@@ -124,20 +124,20 @@
 
    1. Проверьте, что драйвер установлен:
 
-      ```bash
+      ```console
       nvidia-smi --query-gpu=driver_version --format=csv,noheader| head -n1
       ```
 
    1. Если при попытке выполнить команду появилась ошибка `command not found`, добавьте `nvidia-smi` в переменные окружения вручную:
 
-      ```bash
+      ```console
       echo 'export PATH="$PATH:/usr/bin"' | sudo tee /etc/profile.d/nvidia-smi-path.sh >/dev/null &&
       source /etc/profile.d/nvidia-smi-path.sh
       ```
 
    1. Повторно проверьте работоспособность `nvidia-smi`:
 
-      ```bash
+      ```console
       nvidia-smi --query-gpu=driver_version --format=csv,noheader| head -n1
       ```
 
@@ -148,7 +148,7 @@
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Подключитесь]} к ВМ с GPU.
 1. Определите версию установленного драйвера:
 
-   ```bash
+   ```console
    /usr/bin/nvidia-smi --query-gpu=driver_version --format=csv,noheader| head -n1
    ```
 
@@ -160,15 +160,15 @@
 
    {tab(Ubuntu/Debian)}
 
-   ```bash
+   ```console
    dpkg -S "$(command -v nvidia-smi)" 2>/dev/null
    ```
 
    {/tab}
 
-   {tab(RHEL)}
+   {tab(Red Hat Enterprise Linux)}
 
-   ```bash
+   ```console
    rpm -qf "$(command -v nvidia-smi)" 2>/dev/null
    ```
    {/tab}
@@ -185,7 +185,7 @@
 
    {tab(Ubuntu/Debian)}
 
-   ```bash
+   ```console
    apt-cache policy nvidia-driver-<ВЕРСИЯ_ВЕТКИ>
    ```
 
@@ -197,17 +197,17 @@
 
    {/tab}
 
-   {tab(RHEL)}
+   {tab(Red Hat Enterprise Linux)}
 
    1. Узнайте, какие пакеты сейчас установлены:
 
-      ```bash
+      ```console
       rpm -qa | grep -iE 'nvidia|akmod|kmod'
       ```
 
    1. Определите, из какого источника этот пакет установлен:
 
-      ```bash
+      ```console
       dnf repoquery --installed --info <ПАКЕТ>
       ```
 
@@ -215,11 +215,11 @@
 
    1. Проверьте, из какого источника будет установлено обновление:
 
-      ```bash
+      ```console
       sudo dnf install --assumeno cuda-drivers
       ```
 
-      Если при успешном выполнении команды в столбце `Repository` для пакета `cuda-drivers` указано значение, отличное от `cuda-rhel<ВЕРСИЯ_RHEL>-x86_64`, вместо обновления рекомендуется переустановить драйвер с переходом на репозиторий NVIDIA CUDA.
+      Если при успешном выполнении команды в столбце `Repository` для пакета `cuda-drivers` указано значение, отличное от `cuda-rhel<ВЕРСИЯ>-x86_64`, вместо обновления рекомендуется переустановить драйвер с переходом на репозиторий NVIDIA CUDA.
 
       Для переустановки сначала {linkto(#gpu-instructions-gpu-driver-uninstall)[text=удалите]} драйвер, затем {linkto(#gpu-instructions-gpu-driver-install)[text=установите]} его повторно.
 
@@ -233,7 +233,7 @@
 
    {tab(Ubuntu/Debian)}
 
-   ```bash
+   ```console
    sudo apt install --only-upgrade -y cuda-driver-<ВЕРСИЯ_ВЕТКИ>
       ```
 
@@ -241,9 +241,9 @@
 
    {/tab}
 
-   {tab(RHEL)}
+   {tab(Red Hat Enterprise Linux)}
 
-   ```bash
+   ```console
    sudo dnf upgrade -y <ПАКЕТ>
    ```
 
@@ -262,16 +262,16 @@
 
    {tab(Ubuntu/Debian)}
 
-   ```bash
+   ```console
    sudo apt purge cuda-drivers 'nvidia-driver-*' 'libnvidia-*' 'nvidia-utils-*' 'nvidia-dkms-*' 'nvidia-kernel-*'  'xserver-xorg-video-nvidia*' 'nvidia-settings'
    sudo apt autoremove --purge
    ```
 
    {/tab}
 
-   {tab(RHEL)}
+   {tab(Red Hat Enterprise Linux)}
 
-   ```bash
+   ```console
    sudo dnf remove 'nvidia-driver*' 'nvidia-kmod*' 'cuda-drivers*' 'akmod-nvidia*' 'kmod-nvidia*' 'xorg-x11-drv-nvidia*' 'nvidia-settings' 'nvidia-persistenced' 'nvidia-modprobe' 'nvidia-xconfig'
    sudo dnf autoremove
    ```
@@ -281,7 +281,7 @@
 
 1. Запустите `nvidia-uninstall` или `nvidia-installer --uninstall`. 
 
-   ```bash
+   ```console
    sudo /usr/bin/nvidia-uninstall 2>/dev/null || sudo /usr/bin/nvidia-installer --uninstall
    ```
 
