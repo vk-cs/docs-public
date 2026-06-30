@@ -1,0 +1,14 @@
+{
+  "title": "Istio в кластерах второго поколения",
+  "shortDescription": "",
+  "metaDescription": "Сервис Cloud Containers в VK Cloud: настройка и установка аддона Istio в кластерах второго поколения",
+  "sectionTitle": "Istio в кластерах второго поколения",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

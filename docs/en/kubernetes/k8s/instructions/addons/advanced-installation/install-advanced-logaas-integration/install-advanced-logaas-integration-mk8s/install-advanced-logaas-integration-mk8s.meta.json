@@ -4,20 +4,11 @@
   "metaDescription": "This section describes how to configure and install the Fluent Bit add-on for Cloud Logging (logaas-integration) in second-generation clusters in the Cloud Containers service",
   "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration) in second-generation clusters",
   "icon": "",
-  "weight": 6,
+  "weight": 2,
   "uuid": "8eb8085d-416c-43ef-8551-457e68e03640",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
   }
 }
