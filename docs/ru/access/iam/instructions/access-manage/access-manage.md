@@ -55,7 +55,7 @@
 
 ## {heading(Изменение роли участника)[id=iam-access-manage-user-role-edit]}
 
-{include(../../../../_includes/_manage-roles.md)[tags=manage-roles-all,file-access-manage]}
+{include(../../../../_includes/_manage-roles.md)}
 
 ## {heading(Удаление участника)[id=iam-access-manage-delete-user]}
 
