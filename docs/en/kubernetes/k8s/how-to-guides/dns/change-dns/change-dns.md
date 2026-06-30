@@ -2,20 +2,40 @@ This article shows an example of changing the IP addresses of DNS servers that a
 
 ## Before you start
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Install OpenStack CLI and complete authentication](/en/tools-for-using-services/cli/openstack-cli) if not done so already.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Containers** → **Kubernetes Clusters**.
-1. Click the name of the cluster that you want to change DNS settings. If there is no cluster you need, [create](../../../instructions/create-cluster) one.
+1. Click the name of the cluster that you want to change DNS settings.
 1. On the **General Information** tab, find out the name of the network and subnet where the cluster is located.
 1. Contact your DNS provider for the IP addresses of the DNS servers that should be used instead of those assigned to the cluster.
 
 ## 1. Change DNS server addresses in network settings
 
-1. In your management console, go to **Virtual networks** → **Networks**.
-1. Click the name of the network to which the cluster is connected.
-1. A list of subnets of the selected network will open. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet to which the cluster is connected and select **Edit subnet**.
-1. In the window that opens, disable the **Private DNS** option.
-1. Specify new IP addresses in the **DNS servers** box. If there are several addresses, specify each of them on a new line.
-1. Save the changes.
+1. Get the ID of the subnet you want to edit:
+
+   ```console
+   openstack subnet list
+   ```
+
+1. Reset all assigned IP addresses:
+
+   ```console
+   openstack subnet set --no-dns-nameservers <SUBNET_ID>
+   ```
+
+   Here, `<SUBNET_ID>` is the ID of the subnet you want to edit.
+
+1. Specify the new IP address:
+
+   ```console
+   openstack subnet set --dns-nameserver <DNS_ADDRESS> <SUBNET_ID>
+   ```
+
+   You can specify more than one IP address. In this case, repeat the `--dns-nameserver` parameter before each address. Following is a command example:
+
+   ```console
+   openstack subnet set --dns-nameserver <DNS_ADDRESS_1> --dns-nameserver <DNS_ADDRESS_2> --dns-nameserver <DNS_ADDRESS_3> <SUBNET_ID>
+   ```
 
 ## 2. Reboot the cluster
 
@@ -32,7 +52,3 @@ Rebooting causes temporary unavailability of services on the cluster. Stop and s
 {/note}
 
 When the cluster starts, all its nodes will receive updated DNS settings.
-
-## {heading(Delete unused resources)[id=delete]}
-
-{include(/en/_includes/_delete-test-cluster.md)}
