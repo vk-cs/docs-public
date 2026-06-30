@@ -280,6 +280,18 @@
 
 {/tabs}
 
+## {heading(Просмотр резервных копий)[id=clickhouse_backup_view]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_backup_view]}
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Создание резервной копии экземпляра)[id=clickhouse_backup]}
 
 {tabs}

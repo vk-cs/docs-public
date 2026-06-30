@@ -237,6 +237,18 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 {/tabs}
 
+## {heading(Просмотр резервных копий)[id=iceberg_backup_view]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_backup_view]}
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Создание резервной копии экземпляра)[id=iceberg_backup]}
 
 {tabs}
