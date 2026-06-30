@@ -1,0 +1,18 @@
+{
+  "title": "Подготовка GPU-окружения для Machine Learning (ML) и Data Science (DS)",
+  "sectionTitle": "Подготовка GPU-окружения для Machine Learning (ML) и Data Science (DS)",
+  "shortDescription": "Как настроить виртуальную машину для работы с инструментами машинного обучения PyTorch",
+  "metaDescription": "Пошаговая инструкция по настройке виртуальных машин с GPU для работы с инструментами машинного обучения PyTorch + LLM Llama-2-7B Fine-tuning с LoRA в conda-окружении",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

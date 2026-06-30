@@ -1,0 +1,18 @@
+{
+  "title": "Установка NVIDIA Container Toolkit",
+  "sectionTitle": "Установка NVIDIA Container Toolkit",
+  "shortDescription": "Как правильно в ОС Linux установить NVIDIA Container Toolkit и настроить его для работы с Docker",
+  "metaDescription": "Пошаговая инструкции по установке NVIDIA Container Toolkit на виртуальных машинах с GPU от VK Cloud под управлением ОС Linux.",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}
