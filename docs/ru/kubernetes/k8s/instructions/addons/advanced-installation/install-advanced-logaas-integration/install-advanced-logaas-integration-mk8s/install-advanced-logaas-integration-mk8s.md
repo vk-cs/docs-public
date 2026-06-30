@@ -4,7 +4,7 @@
 
 {include(/ru/_includes/_addon-prep.md)}
 
-1. Подключите сервис {linkto(../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+1. Подключите сервис {linkto(../../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
 1. {linkto(../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Cоздайте]} сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе {linkto(../../../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-logging)[text=Права в сервисе Cloud Logging]}. Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
 
@@ -12,7 +12,7 @@
 
 ## {heading(Установка аддона)[id=k8s-install-gen-2-advanced-logaas-integration-install]}
 
-Для аддона доступен только {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=стандартный вариант установки]} через личный кабинет {var(cloud)}.
+Для аддона доступен только {linkto(../../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=стандартный вариант установки]} через личный кабинет {var(cloud)}.
 
 Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
 
@@ -59,7 +59,7 @@
 
 {/tabs}
 
-1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 ## {heading(Редактирование кода настройки аддона при установке)[id=k8s-install-gen-2-advanced-logaas-integration-edit-code]}
 
@@ -139,7 +139,7 @@
 
    {cut(Подробнее про другие метаданные с дополнительной информацией о логах)}
 
-   Для записей в логах добавляются поля метаданных с дополнительной информацией о логируемом событии, что позволяет выполнять поиск в Cloud Logging в том числе по метаданным логов:
+   Для записей в логах добавляются поля метаданных с дополнительной информацией о логируемом событии, что позволяет выполнять поиск в Cloud Logging, в том числе по метаданным логов:
 
    - `node_name`: имя узла кластера, на котором располагается под или служба kubelet.
    - `severity`: уровень критичности логируемого события (severity level) в текстовом виде.

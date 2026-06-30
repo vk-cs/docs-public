@@ -1,0 +1,17 @@
+{
+  "title": "Istio",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, как установить и настроить аддон Istio в кластеры VK Private Cloud: разные типы установки, редактирование кода аддона",
+  "sectionTitle": "Istio",
+  "icon": "",
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

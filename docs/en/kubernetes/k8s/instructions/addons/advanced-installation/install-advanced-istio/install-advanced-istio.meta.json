@@ -1,23 +1,14 @@
 {
   "title": "Istio",
   "shortDescription": "",
-  "metaDescription": "VK Cloud containers service: configuring and installing the Istio add-on.",
+  "metaDescription": "VK Cloud containers service: configuring and installing the Istio add-on",
   "sectionTitle": "Istio",
   "icon": "",
   "weight": 9,
   "uuid": "ca36f6da-245d-4916-ab63-454216b11c22",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
   }
 }

@@ -193,7 +193,7 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
 
-The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the sections on [installing the add-on for first-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration) and [second-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2) clusters.
+The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the sections on installing the add-on for [first-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum) and [second-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s) clusters.
 
 {/tab}
 
@@ -289,31 +289,19 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 
 ### {heading(Istio)[id=istio]}
 
-{note:info}
-
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-
-{/note}
-
 {tabs}
 
 {tab(Description)}
 
-[Istio](https://istio.io/latest/) is a framework that implements the [service mesh](https://istio.io/latest/about/service-mesh/#what-is-a-service-mesh) concept, which allocates a separate layer for interaction between application services. Using Istio provides traffic management for services without changing the code of the services (sidecar containers are used). Istio benefits:
+{include(/en/_includes/_istio_descr.md)}
 
-- Expanded secure traffic transfer capabilities:
-
-  - Traffic policies can be configured.
-  - TLS can be used to communicate between services.
-
-- Expanded traffic monitoring capabilities.
-- Complex routing and balancing of traffic between services can be done.
+Installation of Istio is different for the [first-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio/install-advanced-istio-magnum) and [second-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio/install-advanced-istio-mk8s) clusters.
 
 {/tab}
 
 {tab(System requirements)}
 
-- **CPU**: 500m
+- **CPU**: 900m
 - **RAM**: 2Gi
 
 {/tab}

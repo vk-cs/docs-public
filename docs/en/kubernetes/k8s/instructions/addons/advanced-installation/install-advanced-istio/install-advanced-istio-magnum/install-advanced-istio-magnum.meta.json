@@ -1,0 +1,14 @@
+{
+  "title": "Istio in first-generation clusters",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud containers service: configuring and installing the Istio add-on in the first-generation clusters",
+  "sectionTitle": "Istio in the first-generation clusters",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
