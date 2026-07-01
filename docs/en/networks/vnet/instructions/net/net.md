@@ -218,15 +218,22 @@ All the network subnets and ports will be deleted along with the network.
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
-2. Click on the name of the cloud network.
-3. Click the **Add subnet** button.
-4. Specify the name of the subnet.
-5. Enter the IP address and gateway of the subnet.
-6. (Optional) DHCP is enabled by default. The addresses issued by the DHCP server will remain constant. Disabling DHCP will cause the IP addresses issued by the DHCP service to stop being served. This can cause virtual machines to become unavailable. If necessary, disable it.
-7. Specify a pool of DHCP IP addresses.
-8. (Optional) By default, **Private DNS** is enabled. If it is disabled, specify DNS servers.
-9. (Optional) Enable **Show Static route field** to specify static routes.
-10. Click the **Create** button.
+1. Click on the name of the cloud network.
+1. Click the **Add subnet** button.
+1. Specify the name of the subnet.
+1. Enter the IP address and gateway of the subnet.
+1. (Optional) DHCP is enabled by default. The addresses issued by the DHCP server will remain constant. Disabling DHCP will cause the IP addresses issued by the DHCP service to stop being served. This can cause virtual machines to become unavailable. If necessary, disable it.
+1. Specify a pool of DHCP IP addresses.
+1. (Optional) By default, **Private DNS** is enabled. If it is disabled, specify DNS servers.
+
+   {note:info}
+   After creating a subnet, you can change the [private DNS](../../../dns/private-dns) server addresses only by creating a new subnet.
+
+   You can {linkto(#vnet-net-subnet-edit)[text=edit]} the addresses of manually specified DNS servers using the OpenStack CLI.
+   {/note}
+
+1. (Optional) Enable **Show Static route field** to specify static routes.
+1. Click the **Create** button.
 
 {/tab}
 
@@ -313,6 +320,10 @@ All the network subnets and ports will be deleted along with the network.
       ```
 
       Below is an example of editing subnet by changing DHCP pool, DNS server and static route.
+
+      {note:warn}
+      Changing DNS settings may cause issues with PaaS services.
+      {/note}
 
    1. Run the command:
 
