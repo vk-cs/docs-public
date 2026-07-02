@@ -6,7 +6,7 @@ include:
 
 variables:
   # pipeline parameters
-  VKCS_D11N_VERSION: '5.5.4'
+  VKCS_D11N_VERSION: '5.5.5'
   VKCS_DEV_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
@@ -16,7 +16,6 @@ variables:
   SATORI_API_URL_DEV: https://satori.devint.vkc.devmail.ru
   # BUILD_ARG_002: DEV_4TRAINING_S3_ACCESS_KEY
   # BUILD_ARG_003: DEV_4TRAINING_S3_SECRET_KEY
-  VKCS_SYSBOX_BUILD: ""
 
 
 # Github sync variables
