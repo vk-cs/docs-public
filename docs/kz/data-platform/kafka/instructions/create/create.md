@@ -40,7 +40,7 @@
    1.  (Тек Standalone үшін, міндетті емес) Ішкі желіден сервис данасы үшін IP мекенжайын орнатыңыз. Ол үшін **IP-ді автоматты түрде тағайындау** опциясын өшіріңіз. Әдепкі бойынша IP мекенжайы данаға автоматты түрде тағайындалады.
    {/ifndef}
 
-   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Kafka данасын орналастыру үшін {ifdef(public)} [Cloud Containers](/kz/kubernetes/k8s){/ifdef} жүйесінің {ifdef(public)} [worker-торабы](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-торабы {/ifndef} қосылады.
+   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Kafka данасын орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s){/ifdef} жүйесінің {ifdef(public)} [worker-торабы](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-торабы {/ifndef} қосылады.
 
          Егер тізімде қажетті кластер болмаса:
 
@@ -49,7 +49,7 @@
       
             Егер тізімде қажетті желі болмаса, `Жасау` тармағын таңдаңыз.
       
-         1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
+         1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Managed Containers{/ifdef} кластерінің торабы орналастырылады.
             
    1. Опциялардың бірін таңдап, кластер тораптарының параметрлерін баптаңыз:
 

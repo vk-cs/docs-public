@@ -1,6 +1,6 @@
 {
   "title": "Access management",
-  "shortDescription": "How the Kubernetes Cloud Containers cluster access role model works",
+  "shortDescription": "How the Kubernetes cluster access role model works in the Managed Containers service",
   "metaDescription": "",
   "sectionTitle": "Access management",
   "icon": "",

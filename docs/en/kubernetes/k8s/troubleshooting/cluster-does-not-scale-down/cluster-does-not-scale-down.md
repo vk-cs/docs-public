@@ -105,7 +105,7 @@ For more details on disruptions and PDB, refer to the [official Kubernetes docum
    ``` 
    If they do, the grace period set for the node has not yet expired, so you do not need to do anything.
 
-   In Cloud Containers, the grace period is set to 5 minutes. If the node is empty for 5 minutes (all its pods are evicted), and no new pods appear, Cluster Autoscaler triggers the removal of this node.
+   In Managed Containers, the grace period is set to 5 minutes. If the node is empty for 5 minutes (all its pods are evicted), and no new pods appear, Cluster Autoscaler triggers the removal of this node.
 
 {/cut}
 

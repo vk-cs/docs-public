@@ -23,7 +23,7 @@
 
 {note:info}
 
-Cloud Containers ішінде RWX режиміндегі PVC-ге қол жеткізу іске асырылмаған. Әртүрлі түйіндердегі бірнеше подтан деректерге ортақ қолжеткізуді ұйымдастыру үшін бөлек виртуалды машинада {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=NFS-серверді]} өрістетіңіз.
+Managed Containers ішінде RWX режиміндегі PVC-ге қол жеткізу іске асырылмаған. Әртүрлі түйіндердегі бірнеше подтан деректерге ортақ қолжеткізуді ұйымдастыру үшін бөлек виртуалды машинада {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=NFS-серверді]} өрістетіңіз.
 
 {/note}
 
@@ -45,7 +45,7 @@ PV-ді PVC арқылы сұрауға болу үшін, оны мына тә�
 
 Динамикалық дайындау үшін екі шарттың орындалуы қажет:
 
-- Kubernetes кластерінде storage classes бапталған болуы тиіс. Cloud Containers кластерлерінде {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=алдын ала бапталған storage classes]} бар.
+- Kubernetes кластерінде storage classes бапталған болуы тиіс. Managed Containers кластерлерінде {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=алдын ала бапталған storage classes]} бар.
 
 - PVC үшін бұрыннан бар әрі сәйкес келетін PV табылмауы керек.
 
@@ -54,7 +54,7 @@ PV-ді PVC арқылы сұрауға болу үшін, оны мына тә�
 - PVC ішінде анық көрсетілген storage class;
 - егер storage class PVC ішінде анық көрсетілмесе, әдепкі бойынша storage class.
 
-Cloud Containers кластерлерінде әдепкі бойынша storage class {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=бапталмаған]}. Егер PVC ішінде storage class-ты анық көрсетуді жоспарламасаңыз, онда PVC жасамас бұрын [әдепкі бойынша storage class-ты қолмен таңдаңыз](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
+Managed Containers кластерлерінде әдепкі бойынша storage class {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=бапталмаған]}. Егер PVC ішінде storage class-ты анық көрсетуді жоспарламасаңыз, онда PVC жасамас бұрын [әдепкі бойынша storage class-ты қолмен таңдаңыз](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
 
 ### {heading(2. Байланыстыру)[id=k8s-pvs-and-pvcs-bound]}
 
@@ -119,11 +119,11 @@ PVC енді қажет болмай, жойылған кезде, осы PVC-м
 
   {/note}
 
-Cloud Containers кластерлерінде таңдалған сақтау түрі {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=қолжетімді босату саясаттарына]} әсер етеді.
+Managed Containers кластерлерінде таңдалған сақтау түрі {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=қолжетімді босату саясаттарына]} әсер етеді.
 
 ## {heading(Сондай-ақ қараңыз)[id=k8s-pvs-and-pvcs-see-also]}
 
-- {linkto(../../concepts/storage#k8s-storage)[text=Cloud Containers ішіндегі сақтау қалай ұйымдастырылған]}.
+- {linkto(../../concepts/storage#k8s-storage)[text=Managed Containers ішіндегі сақтау қалай ұйымдастырылған]}.
 - {linkto(../../concepts/storage#k8s-storage-storage-classes)[text=Алдын ала бапталған storage classes тізімі]}.
 - Әртүрлі PVC пайдаланылуын көрсететін {linkto(../../how-to-guides/storage#k8s-storage)[text=пайдалану сценарийі]}.
 - PVC және PV туралы толығырақ ақпараты бар [Kubernetes ресми құжаттамасы](https://kubernetes.io/docs/concepts/storage/persistent-volumes).

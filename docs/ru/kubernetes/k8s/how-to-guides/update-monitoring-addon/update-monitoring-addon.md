@@ -1,6 +1,6 @@
 # {heading(Обновление Kube Prometheus Stack)[id=k8s-update-monitoring-addon]}
 
-В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, доступно {linkto(../../concepts/versions/components#k8s-components)[text=несколько версий]} аддона {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack]}. Обновление этого аддона средствами {var(cloud)} недоступно, но можно обновить аддон вручную.
+В кластерах Kubernetes, которые вы создаете в сервисе Managed Containers, доступно {linkto(../../concepts/versions/components#k8s-components)[text=несколько версий]} аддона {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack]}. Обновление этого аддона средствами {var(cloud)} недоступно, но можно обновить аддон вручную.
 
 Для обновления аддона Kube Prometheus Stack с версии `36.2.0` на версию `54.2.2` необходимо удалить текущую версию аддона и затем установить новую версию. Поэтому процесс обновления включает в себя подготовку окружения текущей версии аддона, чтобы сохранить его и затем переиспользовать с новой версией аддона.
 
@@ -12,7 +12,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-update-monitoring-addon-prepare]}
 
-1. Если в сервисе Cloud Containers у вас уже есть существующий кластер Kubernetes с аддоном Kube Prometheus Stack, который нужно обновить, пропустите этот шаг.
+1. Если в сервисе Managed Containers у вас уже есть существующий кластер Kubernetes с аддоном Kube Prometheus Stack, который нужно обновить, пропустите этот шаг.
 
    В противном случае создайте тестовый кластер, в котором будет выполняться обновление аддона:
 

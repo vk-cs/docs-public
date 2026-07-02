@@ -42,7 +42,7 @@
    1.  (Тек Standalone үшін, міндетті емес) Ішкі желіден сервис данасына IP мекенжайын орнатыңыз. Ол үшін **IP автоматты түрде тағайындау** опциясын өшіріңіз. Әдепкі бойынша IP мекенжайы данаға автоматты түрде тағайындалады.
    {/ifndef}
 
-   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Cloud Containers](/kz/kubernetes/k8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
+   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -51,7 +51,7 @@
 
          Егер тізімде қажетті желі болмаса, **Жаңа желі жасау** тармағын таңдап, {ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn) {/ifdef} {ifndef(public)} SDN{/ifndef} және ішкі желі мекенжайын көрсетіңіз.
 
-      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
+      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Managed Containers{/ifdef} кластерінің торабы орналастырылады.
    1. Сервис данасы жайылатын тораптардың параметрлерін баптаңыз:
 
       {tabs}

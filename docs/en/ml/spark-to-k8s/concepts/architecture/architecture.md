@@ -9,7 +9,7 @@ The Cloud Spark service includes the following components:
 
 ## {heading(Cloud Spark cluster)[id=cluster_spark]}
 
-A Cloud Spark cluster is a K8s cluster deployed on the Cloud Containers service. The cluster consists of:
+A Cloud Spark cluster is a K8s cluster deployed on the Managed Containers service. The cluster consists of:
 
 - A master node running the Spark Driver process. This process breaks down a user application into *tasks* (units of execution) and distributes them across worker nodes for parallel execution.
 - Worker nodes, the number of which varies within given limits depending on the needs of the user application. When the user application starts, the Spark Executor process is launched on the worker nodes. It executes tasks coming from the Spark Driver process and returns the result back to Spark Driver.

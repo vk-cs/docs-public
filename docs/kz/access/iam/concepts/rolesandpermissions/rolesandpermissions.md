@@ -260,14 +260,14 @@
 | ![](../../../../assets/no.svg "inline")
 
 |Kubernetes әкімшісі, операторы, аудиторы
-| Cloud Containers сервисінің барлық оқиғалары және өзінің барлық әрекеттері
+| Managed Containers сервисінің барлық оқиғалары және өзінің барлық әрекеттері
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/no.svg "inline")
 |===
 
-## {heading(Cloud Containers сервисінің рөлдеріне арналған құқықтар)[id=rolesandpermissions-k8s]}
+## {heading(Managed Containers сервисінің рөлдеріне арналған құқықтар)[id=rolesandpermissions-k8s]}
 
-Жеке кабинетте {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers сервисімен]} жұмыс істеуге арналған мамандандырылған рөлдер қолжетімді:
+Жеке кабинетте {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Managed Containers сервисімен]} жұмыс істеуге арналған мамандандырылған рөлдер қолжетімді:
 
 - Kubernetes әкімшісі,
 - Kubernetes операторы,

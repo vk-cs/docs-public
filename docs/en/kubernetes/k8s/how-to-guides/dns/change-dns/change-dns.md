@@ -4,7 +4,7 @@ This article shows an example of changing the IP addresses of DNS servers that a
 
 1. [Install OpenStack CLI and complete authentication](/en/tools-for-using-services/cli/openstack-cli) if not done so already.
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Go to **Containers** → **Kubernetes Clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the cluster that you want to change DNS settings.
 1. On the **General Information** tab, find out the name of the network and subnet where the cluster is located.
 1. Contact your DNS provider for the IP addresses of the DNS servers that should be used instead of those assigned to the cluster.

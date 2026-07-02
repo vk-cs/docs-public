@@ -60,7 +60,7 @@
     {tab(Алдын ала бапталған идентификаторлар)}
 
     - `default` — өзіне байланыстырылған сервистері жоқ және тестілеу мен жөндеуге арналған идентификатор.
-    - `containers` — Cloud Containers.
+    - `containers` — Managed Containers.
     - `databases` — Cloud Databases.
     - `mlplatform` — Cloud ML Platform.
 

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Kubernetes Dashboard — бұл Cloud Containers-Тегі барлық {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде қол жетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. Ол пайдаланушыларға кластердің өзін де, онда жұмыс істеп тұрған қолданбаларды да басқаруға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard — бұл Managed Containers-Тегі барлық {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде қол жетімді Kubernetes кластерлеріне арналған әмбебап веб-интерфейс. Ол пайдаланушыларға кластердің өзін де, онда жұмыс істеп тұрған қолданбаларды да басқаруға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
 Kubernetes Dashboard-қа қосылу тәсілі кластердің IP мекенжайына байланысты:
 

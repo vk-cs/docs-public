@@ -109,4 +109,4 @@
 
 - {linkto(../../../connect#k8s-connect)[text=Настройте окружение]} на хосте, с которого планируется подключаться к кластеру.
 - {linkto(../../../how-to-guides#k8s-how-to-guides)[text=Познакомьтесь со сценариями использования]} кластера.
-- {linkto(../../../concepts#k8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Cloud Containers.
+- {linkto(../../../concepts#k8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Managed Containers.

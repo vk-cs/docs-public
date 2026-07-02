@@ -107,5 +107,5 @@ Kubernetes әкімшісінен бөлек, `admin` рөлінің артық�
 Рөл үшін қолжетімді ресурстар тізімін көру үшін кластерге қосылып, мына команданы орындаңыз:
 
 ```console
-kubectl describe clusterrole <роль в Kubernetes>
+kubectl describe clusterrole <КУБЕРНЕТТЕГІ_РӨЛІ>
 ```

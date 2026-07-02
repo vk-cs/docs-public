@@ -260,12 +260,12 @@ Some services have special sets of rights. Below are such sets of rights and how
 | ![](/en/assets/no.svg "inline")
 
 |Kubernetes administrator, auditor, operator
-| All the Cloud Containers service events and all his/her actions
+| All the Managed Containers service events and all his/her actions
 | ![](/en/assets/check.svg "inline")
 | ![](/en/assets/no.svg "inline")
 |===
 
-## {heading(Permissions in Cloud Containers)[id=roles_permissions_kubernetes]}
+## {heading(Permissions in Managed Containers)[id=roles_permissions_kubernetes]}
 
 The following user roles are intended for working with the [Сontainers service](/en/kubernetes/k8s):
 

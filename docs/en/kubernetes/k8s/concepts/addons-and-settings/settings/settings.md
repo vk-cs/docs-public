@@ -1,10 +1,10 @@
-The Cloud Containers clusters already have certain settings applied, listed below.
+Kubernetes clusters in the Managed Containers service already have certain settings applied as listed below.
 
 ## kube-proxy operation mode
 
-The Cloud Containers network proxy runs on each node, providing access to IP addresses of services and other Cloud Containers resources.
+The Managed Containers network proxy runs on each node, providing access to IP addresses of services and other Managed Containers resources.
 
-This proxy can work in [several modes](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#options), they are listed in the `--proxy-mode` setting description. In Cloud Containers clusters, the proxy works in `iptables` mode. This mode of operation affects:
+This proxy can work in [several modes](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#options), they are listed in the `--proxy-mode` setting description. In Kubernetes clusters in Managed Containers, the proxy works in the `iptables` mode. This mode of operation affects:
 
 - [the behavior of load balancers](../../../how-to-guides/load-balancer);
 - [on the behavior and settings of the local caching DNS server](../../../how-to-guides/dns/local-dns-cache).
@@ -13,7 +13,7 @@ This proxy can work in [several modes](https://kubernetes.io/docs/reference/comm
 
 When working with pods [it is recommended to specify](../../../reference/resource-limiting) in their configuration files `requests` and `limits` parameters for containers included in this pod.
 
-If these parameters are not specified, Cloud Containers clusters automatically apply the values for the corresponding containers:
+If these parameters are not specified, clusters automatically apply the values for the corresponding containers:
 
 - `requests`: 100m CPU and 64Mb allocated memory.
 - `limits`: 500m CPU and 512Mb allocated memory.
@@ -24,11 +24,11 @@ This prevents a container running incorrectly from exhausting all of the resourc
 
 {note:warn}
 
-Disabling or changing these templates and constraints can reduce the security of the Kubernetes Cloud Containers cluster. Any problems with the cluster that arise directly or indirectly due to disabling the settings below must be resolved by the customer themselves.
+Disabling or changing these templates and constraints can reduce the security of the Kubernetes cluster in Managed Containers. Any problems with the cluster that arise directly or indirectly due to disabling the settings below must be resolved by the customer themselves.
 
 {/note}
 
-Templates are available for clusters starting with Cloud Containers version 1.21. For older versions, [manually install Gatekeeper](../../../install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](../../architecture).
+Templates are available for clusters starting with Managed Containers version 1.21. For older versions, [manually install Gatekeeper](../../../install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](../../architecture).
 
 {tabs}
 

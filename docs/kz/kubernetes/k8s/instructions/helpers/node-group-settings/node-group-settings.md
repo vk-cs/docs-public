@@ -37,7 +37,7 @@
 
   - **Кластерді жаңарту кезінде қолжетімсіз түйіндер пайызы:** {linkto(../../../concepts/update#k8s-update)[text=кластерді жаңарту кезінде]} түйіндер тобынан шығаруға болатын түйіндердің пайыздық саны.
 
-      Бұл мәнді түйіндер тобын {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=құру сәтінде]} немесе кластерді {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=жаңарту]} басталғанға дейін орната аласыз. Жаңарту кезінде түйіндер қолжетімсіз болады, сондықтан Cloud Containers жүктемені жаңарту уақытына қайта бөле алатын {linkto(../../../concepts/update#k8s-update-unavailable-nodes)[text=түйіндер қорын]} қамтамасыз ету ұсынылады. Әйтпесе жаңартылатын түйіндерде орналасқан қолданбалар үшін қолжетімді ресурстар болмайды.
+      Бұл мәнді түйіндер тобын {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=құру сәтінде]} немесе кластерді {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=жаңарту]} басталғанға дейін орната аласыз. Жаңарту кезінде түйіндер қолжетімсіз болады, сондықтан Managed Containers жүктемені жаңарту уақытына қайта бөле алатын {linkto(../../../concepts/update#k8s-update-unavailable-nodes)[text=түйіндер қорын]} қамтамасыз ету ұсынылады. Әйтпесе жаңартылатын түйіндерде орналасқан қолданбалар үшін қолжетімді ресурстар болмайды.
 
   - Kubernetes параметрлері: белгілер (labels), шектеулер (taints) және ерекшеліктер (tolerations).
 

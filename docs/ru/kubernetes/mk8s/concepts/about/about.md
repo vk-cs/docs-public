@@ -2,7 +2,7 @@
 
 ## {heading(Для каких задач подходит сервис)[id=mk8s-about-purpose]}
 
-Сервис Cloud Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
+Сервис Managed Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
 
 - Хранение и обработка serverless-функций в контейнерах: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
@@ -48,7 +48,7 @@
 
 -  {linkto(../../how-to-guides/managed-velero/managed-velero-backup#mk8s-velero-backup-managed)[text=Резервное копирование]} кластеров Kubernetes с помощью аддона Velero.
 
-- Миграция других кластеров Kubernetes в Cloud Containers с помощью Velero.
+- Миграция других кластеров Kubernetes в Managed Containers с помощью Velero.
 
 - Набор {linkto(../addons-and-settings/addons#mk8s-addons)[text=подготовленных аддонов]}, которые можно выбрать при {linkto(../../instructions/create-cluster/create-terraform#mk8s-create-terraform)[text=создании кластера с помощью Terraform]} или {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons)[text=установить]} в уже существующий кластер, сэкономив время на их развертывании вручную.
 - Набор {linkto(../addons-and-settings/settings#mk8s-settings)[text=подготовленных настроек]}, которые помогут повысить стабильность и безопасность работы кластера.

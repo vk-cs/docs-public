@@ -10,7 +10,7 @@
 
 ## {heading(Желілік ішкі жүйелермен жұмыс (CNI))[id=k8s-network-cni]}
 
-Cloud Containers сервисінде кластер ішіндегі желіні ұйымдастыру үшін екі желілік ішкі жүйе (CNI, Container Network Interface) қолдау табады:
+Managed Containers сервисінде кластер ішіндегі желіні ұйымдастыру үшін екі желілік ішкі жүйе (CNI, Container Network Interface) қолдау табады:
 
 - [Calico](https://projectcalico.docs.tigera.io/about/about-calico) стандартты желілік хаттамалар мен iptables көмегімен L3 деңгейінде желілік маршруттауды жүзеге асырады. Calico жақсы масштабталады және орташа және ірі кластерлер үшін оңтайлы түрде қолайлы.
 - [Cilium](https://docs.cilium.io/en/stable/index.html) желілік саясаттар мен маршруттауды iptables-ті айналып өтіп, тікелей ОЖ ядросында жүзеге асыру үшін eBPF (Linux eXpress Data Path) пайдаланады. Cilium L3, L4 және L7 деңгейлерінде (мысалы, HTTP-тақырыптары бойынша) трафикті сүзуді қолдайды, сондай-ақ кеңейтілген мониторинг мүмкіндіктерін ұсынады (мысалы, кірістірілген Hubble құралы арқылы). Cilium жоғары жүктемелі және микросервистік архитектуралары бар өте үлкен кластерлер үшін оңтайлы түрде қолайлы.
@@ -76,6 +76,6 @@ Kubernetes кластерін жасау кезінде ол үшін бірне
 
 ## {heading(Сондай-ақ қараңыз)[id=k8s-network-see-also]}
 
-- {linkto(../about#k8s-about)[text=Cloud Containers сервисіне шолу]}.
-- {linkto(../architecture#k8s-architecture)[text=Cloud Containers сервисінің архитектурасы]}.
+- {linkto(../about#k8s-about)[text=Managed Containers сервисіне шолу]}.
+- {linkto(../architecture#k8s-architecture)[text=Managed Containers сервисінің архитектурасы]}.
 - {linkto(../storage#k8s-storage)[text=Кластердегі сақтау орны]}.

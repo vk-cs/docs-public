@@ -20,7 +20,7 @@
   - либо примонтировать этот PV в режиме RWX несколькими узлами кластера.
 
 {note:info}
-В Cloud Containers доступ к PVC в режиме RWX не реализован. Чтобы организовать общий доступ к данным из нескольких подов на разных узлах, разверните {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=NFS-сервер]} на отдельной виртуальной машине.
+В Managed Containers доступ к PVC в режиме RWX не реализован. Чтобы организовать общий доступ к данным из нескольких подов на разных узлах, разверните {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=NFS-сервер]} на отдельной виртуальной машине.
 {/note}
 
 ## {heading(Жизненный цикл PV и PVC)[id=mk8s-pvs-and-pvcs-life-cycle]}
@@ -41,7 +41,7 @@
 
 Для динамической подготовки необходимо выполнение двух условий:
 
-- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=преднастроенные классы хранения]}.
+- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Kubernetes в сервисе Managed Containers уже содержат {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=преднастроенные классы хранения]}.
 
 - Для PVC не должно быть найдено подходящих PV, которые уже существуют.
 
@@ -50,7 +50,7 @@
 - класс хранения, явно заданный в PVC;
 - класс хранения по умолчанию, если класс не задан в PVC явно.
 
-В кластерах Cloud Containers класс хранения по умолчанию {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=не настроен]}. Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
+В кластерах Kubernetes, которые вы создаете в сервисе Managed Containers, класс хранения по умолчанию {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=не настроен]}. Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
 
 ### {heading(2. Связывание)[id=mk8s-pvs-and-pvcs-bound]}
 
@@ -113,11 +113,11 @@
   В {var(cloud)}, благодаря {linkto(../../concepts/storage#mk8s-storage-csi)[text=интеграции с Cinder CSI]}, при удалении PV также будет удален связанный облачный диск {var(cloud)}.
   {/note}
 
-В кластерах Cloud Containers выбранный тип хранилища влияет на {linkto(../../concepts/storage#mk8s-storage-reclaim-policies)[text=доступные политики освобождения]}.
+В кластерах Kubernetes в сервисе Managed Containers выбранный тип хранилища влияет на {linkto(../../concepts/storage#mk8s-storage-reclaim-policies)[text=доступные политики освобождения]}.
 
 ## {heading(Смотрите также)[id=mk8s-pvs-and-pvcs-see-also]}
 
-- {linkto(../../concepts/storage#mk8s-storage)[text=Как устроено хранилище в Cloud Containers]}.
+- {linkto(../../concepts/storage#mk8s-storage)[text=Как устроено хранилище в Managed Containers]}.
 - {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=Список преднастроенных классов хранения]}.
 - {linkto(../../how-to-guides/storage#mk8s-storage)[text=Сценарий использования]}, демонстрирующий использование различных PVC.
 - [Официальную документацию Kubernetes](https://kubernetes.io/docs/concepts/storage/persistent-volumes) с более подробной информацией про PVC и PV.

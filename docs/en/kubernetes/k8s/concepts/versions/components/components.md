@@ -1,4 +1,4 @@
-The supported versions of components and [add-ons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
+The supported versions of components and [add-ons](../../addons-and-settings/addons) depend on the version of the Kubernetes cluster.
 
 When [updating a cluster](../../../instructions/update), some of its components are also updated. If you delete a component that is supposed to be updated with the cluster, it will be restored during the next cluster update.
 

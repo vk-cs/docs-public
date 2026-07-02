@@ -31,7 +31,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
       - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
       - **Disk size:** disk size for the node.
 
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
+   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host an instance of Cloud Kafka.
 
       If the required cluster is not in the list:
 
@@ -44,7 +44,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
          1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Enter the subnet address, for example, `10.0.1.0/24`.
 
-   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the Cloud Containers cluster node will be located.
+   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
    1. Click the **Next step** button.
 
 1. At the **Credentials** step:
@@ -92,7 +92,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. At the **Parameters** step:
 
    1. Specify the name and the description for the instance.
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
+   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host an instance of Cloud Kafka.
 
       If the required cluster is not in the list:
 
@@ -105,7 +105,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
          1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Set the subnet address, for example, `10.0.1.0/24`.
 
-   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the Cloud Containers cluster node will be located.
+   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
    1. Configure the cluster node settings by selecting one of the options:
 
       {tabs}

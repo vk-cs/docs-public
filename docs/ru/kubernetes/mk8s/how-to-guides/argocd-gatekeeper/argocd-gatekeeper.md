@@ -482,7 +482,7 @@ kubectl patch gitops gp \
 - `syncPolicy.automated.selfHeal: true`: Argo CD автоматически откатывает любые расхождения с Git (если правка все же прошла).
 - `prune: true`: удаляет объекты, убранные из Git (единый жизненный цикл).
 - Argo CD RBAC (`configs.rbac`): ограничьте, кто может совершать операции `sync`, `override` и `delete` в самом Argo CD.
-- {linkto(../../concepts/iam-access#mk8s-concepts-iam)[text=Управление доступом в Cloud Containers]}: в прикладных пространствах имен выдавайте пользователям роль `Аудитор Kubernetes`, а право на запись оставьте только автоматизации. Роли [назначаются](/ru/access/iam/instructions/access-manage#iam-access-manage-user-role-edit) через личный кабинет и связывания ролей в пределах пространства имен.
+- {linkto(../../concepts/iam-access#mk8s-concepts-iam)[text=Управление доступом в Managed Containers]}: в прикладных пространствах имен выдавайте пользователям роль `Аудитор Kubernetes`, а право на запись оставьте только автоматизации. Роли [назначаются](/ru/access/iam/instructions/access-manage#iam-access-manage-user-role-edit) через личный кабинет и связывания ролей в пределах пространства имен.
 
 Так, RBAC ограничивает круг лиц, Gatekeeper запрещает ручные манипуляции над помеченными объектами, а Argo CD восстанавливает состояние из Git.
 

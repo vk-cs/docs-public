@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Сіз Cloud Containers {linkto(../../concepts/scale#k8s-scale)[text=кластерін масштабтауды]} қолмен орындай аласыз немесе кластерді жұмыс жүктемелерінің ([workloads](https://kubernetes.io/docs/concepts/workloads/)) өзгеріп отыратын қажеттіліктеріне бейімдеу үшін автоматты масштабтауды баптай аласыз.
+Сіз Managed Containers {linkto(../../concepts/scale#k8s-scale)[text=кластерін масштабтауды]} қолмен орындай аласыз немесе кластерді жұмыс жүктемелерінің ([workloads](https://kubernetes.io/docs/concepts/workloads/)) өзгеріп отыратын қажеттіліктеріне бейімдеу үшін автоматты масштабтауды баптай аласыз.
 
 ## {heading(Тік масштабтау)[id=k8s-instructions-scale-vertical]}
 

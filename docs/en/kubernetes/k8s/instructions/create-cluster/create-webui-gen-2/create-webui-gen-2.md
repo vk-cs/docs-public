@@ -18,7 +18,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
    1. Select the [project](../../../../../tools-for-using-services/account/concepts/projects) to place the cluster in.
-   1. Go to **Containers** → **Kubernetes clusters**.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
    1. Select the **New generation** option and click the **Continue** button.
 

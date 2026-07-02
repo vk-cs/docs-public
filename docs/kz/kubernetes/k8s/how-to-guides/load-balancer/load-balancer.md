@@ -18,7 +18,7 @@
 
   - Репликаны кездейсоқ таңдау (әдепкі бойынша).
 
-    Теңгергіш осылай жұмыс істейді, себебі Cloud Containers кластерлеріндегі `kube-proxy` {linkto(../../concepts/addons-and-settings/settings#k8s-settings-kube-proxy-mode)[text=`iptables`]} режимінде жұмыс істейді.
+    Теңгергіш осылай жұмыс істейді, себебі Managed Containers кластерлеріндегі `kube-proxy` {linkto(../../concepts/addons-and-settings/settings#k8s-settings-kube-proxy-mode)[text=`iptables`]} режимінде жұмыс істейді.
     Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables).
 
   - Репликаны нақты IP мекенжайына бекіту.

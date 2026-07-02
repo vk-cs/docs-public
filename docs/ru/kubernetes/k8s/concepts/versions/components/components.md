@@ -1,6 +1,6 @@
 # {heading(Версии компонентов Kubernetes)[id=k8s-components]}
 
-Поддерживаемые версии компонентов и {linkto(../../addons-and-settings/addons#k8s-addons)[text=аддонов]} зависят от версии кластера Kubernetes в Cloud Containers.
+Поддерживаемые версии компонентов и {linkto(../../addons-and-settings/addons#k8s-addons)[text=аддонов]} зависят от версии кластера Kubernetes в Managed Containers.
 
 При {linkto(../../update#k8s-update)[text=обновлении]} кластера также обновляется часть компонентов. Если обновляемый вместе с кластером компонент был удален, он восстановится при обновлении кластера.
 

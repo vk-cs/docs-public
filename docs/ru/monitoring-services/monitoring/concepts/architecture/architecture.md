@@ -32,7 +32,7 @@
 |{var(s3)}
 |`mcs/cloudstorage`
 
-|Cloud Containers
+|Managed Containers
 |`mcs/containers`
 
 |Cloud Databases

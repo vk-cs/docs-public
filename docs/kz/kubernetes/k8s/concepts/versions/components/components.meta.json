@@ -1,7 +1,7 @@
 {
   "title": "Kubernetes компоненттерінің нұсқалары",
   "shortDescription": "VK Cloud кластерлерінде компоненттер мен аддондардың қандай нұсқалары қолдау көрсетіледі",
-  "metaDescription": "Cloud Containers сервисі: VK Cloud кластерлерінде компоненттер мен аддондардың қандай нұсқалары қолдау көрсетіледі",
+  "metaDescription": "Managed Containers сервисі: VK Cloud кластерлерінде компоненттер мен аддондардың қандай нұсқалары қолдау көрсетіледі",
   "sectionTitle": "Kubernetes компоненттерінің нұсқалары",
   "icon": "",
   "weight": 3,

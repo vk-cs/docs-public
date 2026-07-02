@@ -1,6 +1,6 @@
 # {heading(Работа с секретами)[id=mlspark-library-reference-secrets]}
 
-Эти методы позволяют работать с секретами кластера Cloud Containers, который обеспечивает работу кластера Cloud Spark. [Секреты Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/) позволяют организовать безопасное хранение и использование чувствительных данных, которые могут понадобиться во время выполнения задания Spark.
+Эти методы позволяют работать с секретами кластера Kubernetes в сервисе Managed Containers, который обеспечивает работу кластера Cloud Spark. [Секреты Kubernetes](https://kubernetes.io/docs/concepts/configuration/secret/) позволяют организовать безопасное хранение и использование чувствительных данных, которые могут понадобиться во время выполнения задания Spark.
 
 ## {heading(create_secret_from_yaml)[id=mlspark-library-reference-secrets-create_secret_from_yaml]}
 

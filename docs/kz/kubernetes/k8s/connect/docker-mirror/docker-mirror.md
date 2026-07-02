@@ -27,7 +27,7 @@ Docker Hub-ты баптау үшін:
 
   {/tab}
 
-{tab(Cloud Containers үшін Daemonset)}
+{tab(Managed Containers үшін Daemonset)}
 
   Айна [CRI-O](https://cri-o.io/) конфигурациясында кластердің жұмысшы тораптарында пайдаланылады. Ол үшін келесі манифесті кластерде {linkto(../kubectl#k8s-kubectl)[text=`kubectl` көмегімен]} немесе {linkto(../../instructions/manage-resources#k8s-manage-resources)[text=жеке кабинетте]} қолданыңыз:
 

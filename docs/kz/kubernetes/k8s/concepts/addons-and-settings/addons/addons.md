@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers кластерлері үшін әртүрлі аддондар (қосымша сервистер) қолжетімді. Оларды кез келген комбинацияда таңдап, не {linkto(../../../instructions/create-cluster/create-terraform#k8s-create-terraform)[text=Terraform көмегімен кластерді құру кезінде]}, не бұрыннан бар кластерге {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-install)[text=кейінірек]} орнатуға болады. Орнату процесі автоматтандырылған және пайдаланушының ең аз араласуын талап етеді.
+Managed Containers кластерлері үшін әртүрлі аддондар (қосымша сервистер) қолжетімді. Оларды кез келген комбинацияда таңдап, не {linkto(../../../instructions/create-cluster/create-terraform#k8s-create-terraform)[text=Terraform көмегімен кластерді құру кезінде]}, не бұрыннан бар кластерге {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-install)[text=кейінірек]} орнатуға болады. Орнату процесі автоматтандырылған және пайдаланушының ең аз араласуын талап етеді.
 
 ## {heading(Аддондарды орнату ерекшеліктері)[id=k8s-addons-install-features]}
 
@@ -237,7 +237,7 @@ S3-CSI сіз {linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installati
 
 {tab(Сипаттама)}
 
-[Fluent Bit](https://docs.fluentbit.io/manual) Cloud Containers кластерлерінде логтарды жинауды баптауға мүмкіндік береді, содан кейін оларды {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} сервисінде, мысалы, Elasticsearch немесе Loki плагиндерінің көмегімен талдауға болады. Бұл аддонның негізгі артықшылығы — пайдаланушы қажеттіліктеріне барынша икемді баптау мүмкіндігі.
+[Fluent Bit](https://docs.fluentbit.io/manual) Managed Containers кластерлерінде логтарды жинауды баптауға мүмкіндік береді, содан кейін оларды {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} сервисінде, мысалы, Elasticsearch немесе Loki плагиндерінің көмегімен талдауға болады. Бұл аддонның негізгі артықшылығы — пайдаланушы қажеттіліктеріне барынша икемді баптау мүмкіндігі.
 
 Логтардың көздері ретінде кластер тораптарында орналасқан [kubelet қызметтері](https://kubernetes.io/docs/concepts/overview/components/#kubelet) мен {linkto(../../../reference/pods#k8s-pods)[text=подтар]} (pods) қолданылады.
 
@@ -257,7 +257,7 @@ S3-CSI сіз {linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installati
 
 {tab(Сипаттама)}
 
-Lua тілінде жазылған [арнайы сүзгілермен](https://docs.fluentbit.io/manual/pipeline/filters/lua) бірге Fluent Bit Cloud Containers кластерінен логтарды {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} сервисіне жеткізуді ұйымдастыруға мүмкіндік береді, бұл осы логтарды әрі қарай талдау үшін қажет.
+Lua тілінде жазылған [арнайы сүзгілермен](https://docs.fluentbit.io/manual/pipeline/filters/lua) бірге Fluent Bit Managed Containers кластерінен логтарды {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} сервисіне жеткізуді ұйымдастыруға мүмкіндік береді, бұл осы логтарды әрі қарай талдау үшін қажет.
 
 Логтардың көздері ретінде кластер тораптарында орналасқан [kubelet қызметтері](https://kubernetes.io/docs/concepts/overview/components/#kubelet) мен {linkto(../../../reference/pods#k8s-pods)[text=подтар]} (pods) қолданылады. Аддонның қалай жұмыс істейтіні туралы толығырақ оның {linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum)[text=бірінші буын]} және {linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s)[text=екінші буын]} кластерлеріне арналған орнату бөлімдерінен оқыңыз.
 

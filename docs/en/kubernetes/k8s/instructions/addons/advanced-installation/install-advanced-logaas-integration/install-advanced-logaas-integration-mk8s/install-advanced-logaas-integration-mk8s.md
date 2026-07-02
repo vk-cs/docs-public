@@ -22,7 +22,7 @@ The add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/
 
     1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
     1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
-    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Click the name of the required cluster.
     1. Go to **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
@@ -94,7 +94,7 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
 
    {/cut}
 
-1. Adds additional metadata to the logs, which makes it easier to work with Cloud Containers cluster logs (for example, searching for the necessary logs in Cloud Logging). Special Fluent Bit filters are used for this, [written in Lua](https://docs.fluentbit.io/manual/pipeline/filters/lua). This metadata contains, among other things, the severity level of logged events.
+1. Adds additional metadata to the logs, which makes it easier to work with cluster logs (for example, searching for the necessary logs in Cloud Logging). Special Fluent Bit filters are used for this, [written in Lua](https://docs.fluentbit.io/manual/pipeline/filters/lua). This metadata contains, among other things, the severity level of logged events.
 
    {cut(Learn more about metadata for determining the source of logs)}
 

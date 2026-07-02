@@ -75,7 +75,7 @@
 
 **Арнайы шарттарды қолдану шектеулері:**
 
-* Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, VK Object Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
+* Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, VK Object Storage, Managed Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
     
     Өзге Сервистерді пайдалану үшін төлемді Пайдаланушы Прайс-парақта көрсетілген бағалар негізінде жалпы шарттармен жүзеге асырады.
     

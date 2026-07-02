@@ -53,7 +53,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 ## {heading((Опционалды) Шектеулер мен үлгілерді баптау)[id=k8s-gatekeeper-set-constraint]}
 
-Cloud Containers сервисіндегі Kubernetes кластерлерінде {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=әдепкі қауіпсіздік саясаттары]} әрекет етеді, олар кластерді бірнеше кең таралған осалдықтан базалық деңгейде қорғайды. 1.20 немесе одан төмен нұсқадағы кластерлерді қорғау үшін осы саясаттарға сәйкес келетін Gatekeeper шектеулері мен шектеу үлгілерін өзіңіз жасаңыз.
+Managed Containers сервисіндегі Kubernetes кластерлерінде {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=әдепкі қауіпсіздік саясаттары]} әрекет етеді, олар кластерді бірнеше кең таралған осалдықтан базалық деңгейде қорғайды. 1.20 немесе одан төмен нұсқадағы кластерлерді қорғау үшін осы саясаттарға сәйкес келетін Gatekeeper шектеулері мен шектеу үлгілерін өзіңіз жасаңыз.
 
 {tabs}
 

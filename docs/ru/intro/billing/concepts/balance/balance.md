@@ -58,7 +58,7 @@
 Параметры ВМ, которые созданы в сервисах:
 
 - Cloud Servers;
-- Cloud Containers (кластеры Kubernetes предыдущего поколения);
+- Managed Containers (кластеры Kubernetes предыдущего поколения);
 - Cloud Desktop (серверы и рабочие столы);
 - Arenadata DB as a Service;
 - ML Platform (сервисы JupyterHub, MLflow и MLflow Deploy);
@@ -87,7 +87,7 @@
 {cut(Параметры, доступные в отчете с 25.03.26)}
 Параметры сервисов:
 
-- Cloud Containers (кластеры Kubernetes нового поколения);
+- Managed Containers (кластеры Kubernetes нового поколения);
 - Cloud Spark на ML Platform;
 - [VK Data Platform](/ru/data-platform) (все сервисы).
 {/cut}

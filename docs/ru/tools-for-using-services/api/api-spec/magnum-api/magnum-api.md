@@ -1,4 +1,4 @@
-# {heading(Cloud Containers)[id=api-spec-magnum]}
+# {heading(Managed Containers)[id=api-spec-magnum]}
 
 {cut(Получение эндпоинта, авторизация и аутентификация)}
 

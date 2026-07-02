@@ -42,7 +42,7 @@
 Такой балансировщик создается пользователем и может использоваться для обеспечения отказоустойчивости и гибкого масштабирования приложений:
 
 - При работе с [сервисом Cloud Servers](/ru/computing/iaas) для распределения входящего трафика между виртуальными серверами.
-- При работе с [сервисом Cloud Containers](/ru/kubernetes/k8s), например при использовании [Ingress-контроллеров](/ru/kubernetes/k8s/how-to-guides/ingress) (в том числе {linkto(../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-ingress-controller-nginx)[text=предустановленного]}) или сервисов типа [Load Balancer](/ru/kubernetes/k8s/how-to-guides/load-balancer).
+- При работе с [сервисом Managed Containers](/ru/kubernetes/k8s), например при использовании [Ingress-контроллеров](/ru/kubernetes/k8s/how-to-guides/ingress) (в том числе {linkto(../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-ingress-controller-nginx)[text=предустановленного]}) или сервисов типа [Load Balancer](/ru/kubernetes/k8s/how-to-guides/load-balancer).
 
 {/tab}
 
@@ -50,7 +50,7 @@
 
 Такой балансировщик создается автоматически для обеспечения работы сервисов и применяется:
 
-- В [сервисе Cloud Containers](/ru/kubernetes/k8s) для каждого кластера Kubernetes, чтобы обеспечить доступ к Kubernetes API.
+- В [сервисе Managed Containers](/ru/kubernetes/k8s) для каждого кластера Kubernetes, чтобы обеспечить доступ к Kubernetes API.
 - В [сервисе Cloud Databases](/ru/dbs/dbaas) для инстансов БД в кластерной конфигурации для балансировки нагрузки между узлами инстансов. Это применимо для инстансов:
 
   - MySQL;

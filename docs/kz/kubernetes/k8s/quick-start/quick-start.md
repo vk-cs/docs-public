@@ -28,5 +28,5 @@
 ## {heading(Әрі қарай не істеу керек?)[id=k8s-quick-start-what-next]}
 
 - {linkto(../how-to-guides#k8s-how-to-guides)[text=Кластерді пайдалану сценарийлерімен танысыңыз]}.
-- {linkto(../concepts#k8s-concepts)[text=Cloud Containers сервисінің тұжырымдамаларымен танысыңыз]}.
+- {linkto(../concepts#k8s-concepts)[text=Managed Containers сервисінің тұжырымдамаларымен танысыңыз]}.
 - {linkto(../connect#k8s-connect)[text=Кластерге қосылу бойынша егжей-тегжейлі нұсқаулықтармен танысыңыз]}.

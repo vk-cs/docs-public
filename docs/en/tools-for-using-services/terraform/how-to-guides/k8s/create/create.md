@@ -6,7 +6,7 @@ The examples of creating different Kubernetes clusters using Terraform are provi
 
    [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project if necessary.
 
-1. Learn about the [features of using Terraform](/en/kubernetes/k8s/instructions/helpers/terraform-howto) with the Cloud Containers service.
+1. Learn about the [features of using Terraform](/en/kubernetes/k8s/instructions/helpers/terraform-howto) with the Managed Containers service.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

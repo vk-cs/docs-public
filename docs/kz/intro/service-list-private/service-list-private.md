@@ -20,7 +20,7 @@
 
   {cut(PaaS-сервистерінің тізімі)}
 
-    - {linkto(../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers]} — Kubernetes кластерлерін жасауға және басқаруға мүмкіндік береді, олардың ішінде сервистер мен қолданбаларды іске қосуға болады.
+    - {linkto(../../kubernetes/k8s#k8s-k8s)[text=Managed Containers]} — Kubernetes кластерлерін жасауға және басқаруға мүмкіндік береді, олардың ішінде сервистер мен қолданбаларды іске қосуға болады.
     - {linkto(../../dbs/dbaas#dbaas-dbaas)[text=Cloud Databases]} — масштабталатын СУБД ұсынады: MySQL, PostgreSQL,{ifdef(private-pg)} Postgres Pro,{/ifdef} ClickHouse, Redis.
     - {linkto(../../monitoring-services/alerting#alerting)[text=Cloud Alerting]} — {var(cloud)} сервистерінің негізгі метрикалары өзгергені туралы хабарландыруларды баптайды.
     - {linkto(../../monitoring-services/logging#logging)[text=Cloud Logging]} — {var(cloud)} ішіндегі сервистер логтарын агрегаттайды және талдайды.

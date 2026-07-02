@@ -19,7 +19,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 1. Examine [update procedure](../../concepts/update).
 1. Back up the cluster you plan to update, for example, using Velero.
 1. Deploy the new cluster from the backup which is identical to the one you plan to update. Update it and verify that all cluster data and applications remain available, and applications behave as expected.
-1. In the cluster you are planning to update, ensure there are [enough spare nodes available](/en/kubernetes/k8s/concepts/update#unavailable-nodes) for Cloud Containers to redirect the workload to. Otherwise, applications that run on the nodes that are being updated may not have enough resources.
+1. In the cluster you are planning to update, ensure there are [enough spare nodes available](/en/kubernetes/k8s/concepts/update#unavailable-nodes) for Managed Containers to redirect the workload to. Otherwise, applications that run on the nodes that are being updated may not have enough resources.
 1. [Set threshold](../manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
 
 ## 1. Perform update
@@ -30,7 +30,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Update version**.
 1. In the window that appears, select the required version.
 1. Review the version changelog.

@@ -1,6 +1,6 @@
 # {heading(Публичный IP для пода без балансировщика )[id=k8s-pip]}
 
-Это практическое руководство описывает, как назначит конкретному поду в кластере Kubernetes в сервисе Cloud Containers доступ по [Floating IP](/ru/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip) без создания балансировщика нагрузки и без балансировки трафика между репликами.
+Это практическое руководство описывает, как назначит конкретному поду в кластере Kubernetes в сервисе Managed Containers доступ по [Floating IP](/ru/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip) без создания балансировщика нагрузки и без балансировки трафика между репликами.
 
 Для каких сценариев это может быть полезно:
 

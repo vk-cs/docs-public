@@ -1,7 +1,7 @@
 # {heading(Управление аддонами)[id=k8s-manage-addons]}
 
 {ifdef(public)}
-{linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=Аддоны]} для кластеров Kubernetes сервиса Cloud Containers можно установить и при {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=создании кластера с помощью Terraform]}, и в уже существующий кластер. Установленные аддоны можно просматривать и удалять.
+{linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=Аддоны]} для кластеров Kubernetes сервиса Managed Containers можно установить и при {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=создании кластера с помощью Terraform]}, и в уже существующий кластер. Установленные аддоны можно просматривать и удалять.
 {/ifdef}
 
 {ifndef(public)}
@@ -26,7 +26,7 @@
 {/ifndef}
 1. Выберите проект, где находится нужный кластер.
 {ifdef(public)}
-1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 {/ifdef}
 {ifndef(public)}
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
@@ -83,7 +83,7 @@
 {/ifndef}
 1. Выберите проект, где находится нужный кластер.
 {ifdef(public)}
-1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 {/ifdef}
 {ifndef(public)}
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
@@ -145,7 +145,7 @@
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
-1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 1. Нажмите на имя нужного кластера.
 1. Перейдите на вкладку **Аддоны**.
 1. Нажмите ![](../../../../../assets/more-icon.svg "inline") для нужного аддона и выберите пункт **Редактировать**.
@@ -196,7 +196,7 @@
 
 1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
-1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 1. Нажмите на имя нужного кластера.
 1. Перейдите на вкладку **Аддоны**.
 1. Нажмите ![](../../../../../assets/more-icon.svg "inline") для нужного аддона и выберите пункт **Обновить**.
@@ -249,7 +249,7 @@
 {/ifndef}
 1. Выберите проект, где находится нужный кластер.
 {ifdef(public)}
-1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
+1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 {/ifdef}
 {ifndef(public)}
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.

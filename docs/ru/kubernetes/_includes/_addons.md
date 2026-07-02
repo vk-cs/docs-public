@@ -1,6 +1,6 @@
 {includetag(addons)}
 
-Для кластеров Cloud Containers доступны различные аддоны (дополнительные сервисы). Их можно выбрать в любой комбинации и установить либо при {linkto(../../../instructions/create-cluster/create-terraform#mk8s-create-terraform)[text=создании кластера с помощью Terraform]}, либо {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-install)[text=позднее]} в уже существующий кластер. Процесс установки автоматизирован и требует минимального вмешательства пользователя.
+Для кластеров Kubernetes, которые вы создаете в сервисе Managed Containers, доступны различные аддоны (дополнительные сервисы). Их можно выбрать в любой комбинации и установить либо при создании кластера с помощью Terraform, либо {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-install)[text=позднее]} в уже существующий кластер. Процесс установки автоматизирован и требует минимального вмешательства.
 
 {/includetag}
 
@@ -247,7 +247,7 @@ S3-CSI может создавать бакеты в любом S3-совмес�
 
 {tab(Описание)}
 
-[Fluent Bit](https://docs.fluentbit.io/manual) позволяет настраивать сбор логов в кластерах Cloud Containers, чтобы затем анализировать их в сервисе {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]}, например, с помощью плагинов Elasticsearch или Loki. Основное преимущество аддона — возможность более гибкой настройки под нужды пользователя.
+[Fluent Bit](https://docs.fluentbit.io/manual) позволяет настраивать сбор логов в кластерах Managed Containers, чтобы затем анализировать их в сервисе {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]}, например, с помощью плагинов Elasticsearch или Loki. Основное преимущество аддона — возможность более гибкой настройки под нужды пользователя.
 
 Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и {linkto(../../../reference/pods#mk8s-pods)[text=поды]} (pods), расположенные на узлах кластера.
 
@@ -271,7 +271,7 @@ S3-CSI может создавать бакеты в любом S3-совмес�
 
 {tab(Описание)}
 
-Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Cloud Containers в сервис {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} для их дальнейшего анализа.
+Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Kubernetes в сервисе Managed Containers в сервис {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} для их дальнейшего анализа.
 
 Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и {linkto(../../../reference/pods#k8s-pods)[text=поды]} (pods), расположенные на узлах кластера. Подробнее о том, как работает аддон, в разделе про его {linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=установку]}.
 
@@ -295,7 +295,7 @@ Fluent Bit в комбинации со [специальными фильтра
 
 {tab(Описание)}
 
-Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Cloud Containers в сервис {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} для их дальнейшего анализа.
+Fluent Bit в комбинации со [специальными фильтрами](https://docs.fluentbit.io/manual/pipeline/filters/lua), написанными на языке Lua, позволяет организовать доставку логов из кластера Kubernetes в сервисе Managed Containers в сервис {linkto(../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} для их дальнейшего анализа.
 
 Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и {linkto(../../../reference/pods#mk8s-pods)[text=поды]} (pods), расположенные на узлах кластера. Подробнее о том, как работает аддон, в разделе про его {linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-gen-2-advanced-logaas-integration)[text=установку]}.
 

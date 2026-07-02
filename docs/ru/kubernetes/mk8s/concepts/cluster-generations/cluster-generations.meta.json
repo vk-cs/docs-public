@@ -1,7 +1,7 @@
 {
   "title": "Поколения кластеров",
-  "shortDescription": "В чем разница между первым и вторым поколением кластеров Kubernetes в сервисе Cloud Containers",
-  "metaDescription": "Узнайте о различиях между кластерами первого и второго поколения в сервисе Cloud Containers на платформе VK Cloud: преимущества Managed Kubernetes, автоматизация, управление через сервисные проекты",
+  "shortDescription": "В чем разница между первым и вторым поколением кластеров Kubernetes в сервисе Managed Containers",
+  "metaDescription": "Узнайте о различиях между кластерами первого и второго поколения в сервисе Managed Containers на платформе VK Cloud: преимущества Managed Kubernetes, автоматизация, управление через сервисные проекты",
   "sectionTitle": "Поколения кластеров",
   "icon": "",
   "weight": 4,

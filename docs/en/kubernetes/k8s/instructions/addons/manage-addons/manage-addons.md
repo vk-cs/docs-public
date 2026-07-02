@@ -1,4 +1,4 @@
-[Add-ons](../../../concepts/addons-and-settings/addons) for Cloud Containers clusters, you can also install it when [creating a cluster using Terraform](../../create-cluster/create-terraform) and into an existing cluster. Installed add-ons can be viewed and deleted.
+In Managed Containers, you can install [add-ons](../../../concepts/addons-and-settings/addons) in Kubernetes clusters both when [creating a cluster using Terraform](../../create-cluster/create-terraform) and into an existing cluster. You can then view and delete installed add-ons.
 
 ## {heading(Viewing add-ons)[id=viewing_addons]}
 
@@ -10,7 +10,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 
@@ -51,7 +51,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 
@@ -104,7 +104,7 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Edit**.
@@ -152,7 +152,7 @@ To update some add-ons, you will first need to uninstall the previous version.
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Update**.
@@ -196,7 +196,7 @@ To remove the add-on:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 1. If you want to remove the External Secrets Operator addon, perform additional steps in advance:

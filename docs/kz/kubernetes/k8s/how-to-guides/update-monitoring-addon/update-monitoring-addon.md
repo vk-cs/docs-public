@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers сервисінде жасайтын Kubernetes кластерлерінде {linkto(../../concepts/versions/components#k8s-components)[text=Kube Prometheus Stack]} аддонының {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=бірнеше нұсқасы]} қолжетімді. Бұл аддонды VK Cloud құралдарымен жаңарту қолжетімсіз, бірақ аддонды қолмен жаңартуға болады.
+Managed Containers сервисінде жасайтын Kubernetes кластерлерінде {linkto(../../concepts/versions/components#k8s-components)[text=Kube Prometheus Stack]} аддонының {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=бірнеше нұсқасы]} қолжетімді. Бұл аддонды VK Cloud құралдарымен жаңарту қолжетімсіз, бірақ аддонды қолмен жаңартуға болады.
 
 Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұсқасына жаңарту үшін аддонның ағымдағы нұсқасын жойып, содан кейін жаңа нұсқасын орнату қажет. Сондықтан жаңарту процесі аддонның ағымдағы нұсқасының ортасын сақтап, кейін оны аддонның жаңа нұсқасымен қайта пайдалану үшін дайындауды қамтиды.
 
@@ -16,7 +16,7 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
 
 ## {heading(Дайындық қадамдары)[id=k8s-update-monitoring-addon-prepare]}
 
-1. Егер Cloud Containers сервисінде жаңарту қажет Kube Prometheus Stack аддоны бар бұрыннан бар Kubernetes кластері болса, бұл қадамды өткізіп жіберіңіз.
+1. Егер Managed Containers сервисінде жаңарту қажет Kube Prometheus Stack аддоны бар бұрыннан бар Kubernetes кластері болса, бұл қадамды өткізіп жіберіңіз.
 
    Әйтпесе, аддонды жаңарту орындалатын тестілік кластер жасаңыз:
 

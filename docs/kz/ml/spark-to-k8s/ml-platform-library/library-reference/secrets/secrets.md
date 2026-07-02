@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Бұл әдістер Cloud Spark кластерінің жұмысын қамтамасыз ететін Cloud Containers кластерінің құпиясөздерімен жұмыс істеуге мүмкіндік береді. [Kubernetes құпиясөздері](https://kubernetes.io/docs/concepts/configuration/secret/) Spark тапсырмасын орындау кезінде қажет болуы мүмкін сезімтал деректерді қауіпсіз сақтауды және пайдалануды ұйымдастыруға мүмкіндік береді.
+Бұл әдістер Cloud Spark кластерінің жұмысын қамтамасыз ететін Managed Containers кластерінің құпиясөздерімен жұмыс істеуге мүмкіндік береді. [Kubernetes құпиясөздері](https://kubernetes.io/docs/concepts/configuration/secret/) Spark тапсырмасын орындау кезінде қажет болуы мүмкін сезімтал деректерді қауіпсіз сақтауды және пайдалануды ұйымдастыруға мүмкіндік береді.
 
 ## {heading(create_secret_from_yaml)[id=mlspark-library-reference-secrets-create_secret_from_yaml]}
 

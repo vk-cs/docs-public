@@ -77,7 +77,7 @@ VK Cloud-та виртуализация, мониторинг, контейне
 
   {cut(PaaS-сервистер тізімі)}
 
-  - [Cloud Containers](/kz/kubernetes/k8s) — сервистер мен қолданбаларды іске қосуға болатын Kubernetes кластерлерін құруға және басқаруға мүмкіндік береді.
+  - [Managed Containers](/kz/kubernetes/k8s) — сервистер мен қолданбаларды іске қосуға болатын Kubernetes кластерлерін құруға және басқаруға мүмкіндік береді.
   - [Cloud Databases](/kz/dbs/dbaas) — ауқымдалатын СУБД ұсынады: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Greenplum негізіндегі Arenadata DB.
   - [Cloud Spark](/kz/ml/spark-to-k8s) — деректерді үлестірілген пакеттік және ағындық өңдеуді, Machine Learning-пен және аналитикамен жұмысты қамтамасыз етеді.
   - [Cloud ML Platform](/kz/ml/mlplatform) — ML-әзірлеудің толық цикліне арналған сервистерді қолдайды.

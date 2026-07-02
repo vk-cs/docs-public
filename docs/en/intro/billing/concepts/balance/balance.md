@@ -80,7 +80,7 @@ In VK Cloud, you can [download](/en/intro/billing/instructions/detail#download-r
 VM parameters that are created in the services::
 
 - Cloud Servers
-- Cloud Containers (Kubernetes clusters of the previous generation)
+- Managed Containers (Kubernetes clusters of the previous generation)
 - Cloud Desktop (servers and desktops)
 - Arenadata DB as a Service
 - ML Platform (services of JupyterHub, MLflow, and MLflow Deploy)
@@ -111,7 +111,7 @@ Other parameters:
 
 Parameters of the following services:
 
-- Cloud Containers (Kubernetes clusters of the new generation)
+- Managed Containers (Kubernetes clusters of the new generation)
 - Cloud Spark on ML Platform
 - [VK Data Platform](/ru/data-platform) (all services)
   {/cut}

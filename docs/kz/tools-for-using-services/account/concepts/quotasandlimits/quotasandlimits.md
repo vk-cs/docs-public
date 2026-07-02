@@ -146,7 +146,7 @@
 
 Бір инстанс үшін GPU лимиті KVM технологиясының шектеуімен байланысты, ол бір виртуалды машинаға көбірек видеокарта қосуды мүмкін етпейді.
 
-### {heading(Cloud Containers (Kubernetes контейнерлері))[id=quotasandlimits-k8s]}
+### {heading(Managed Containers (Kubernetes контейнерлері))[id=quotasandlimits-k8s]}
 
 #### {heading(Бір жобаға арналған контейнер ресурстары)[id=quotasandlimits-k8s-one-project]}
 
@@ -196,7 +196,7 @@
 
 #### {heading(Квотасыз лимиттер)[id=quotasandlimits-k8s-no-quotas-limits]}
 
-Жоғарыда көрсетілген квоталардан бөлек, Cloud Containers сервисін пайдалану да белгілі бір техникалық лимиттермен шектеледі. 
+Жоғарыда көрсетілген квоталардан бөлек, Managed Containers сервисін пайдалану да белгілі бір техникалық лимиттермен шектеледі. 
 
 [cols="3,1,1", options="header"]
 |===

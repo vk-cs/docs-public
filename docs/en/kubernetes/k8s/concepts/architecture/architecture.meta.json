@@ -1,6 +1,6 @@
 {
   "title": "Service architecture",
-  "shortDescription": "Cloud Containers cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
+  "shortDescription": "Cluster topologies and environment in the Managed Containers service, integration with Kubernetes API and VK Cloud platform.",
   "metaDescription": "A complete guide to the Kubernetes architecture in VK Cloud. Learn the main components, their purpose, and how a Kubernetes cluster works to effectively manage applications in containers. Learn the different types of nodes and clusters",
   "sectionTitle": "Service architecture",
   "icon": "",

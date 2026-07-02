@@ -1,4 +1,4 @@
-In the Cloud Containers service, you can move [persistent volumes (PVs)](/en/kubernetes/k8s/reference/pvs-and-pvcs) created for Kubernetes clusters between projects or delete them.
+In the Managed Containers service, you can move [persistent volumes (PVs)](/en/kubernetes/k8s/reference/pvs-and-pvcs) created for Kubernetes clusters between projects or delete them.
 
 You can only move or delete a PV if it is not connected to a node group. If it is, the node group to which it is connected is displayed for the PV in the **Attached to** column in the **Kubernetes clusters** → **PV disks** section.
 

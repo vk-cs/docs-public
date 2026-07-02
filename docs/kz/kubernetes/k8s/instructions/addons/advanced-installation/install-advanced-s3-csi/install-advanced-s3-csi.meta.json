@@ -1,7 +1,7 @@
 {
   "title": "Container Storage Interface (CSI) S3 үшін",
   "shortDescription": "",
-  "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: Container Storage Interface (CSI) S3 үшін аддонын баптау және орнату.",
+  "metaDescription": "VK Cloud-тағы Managed Containers сервисі: Container Storage Interface (CSI) S3 үшін аддонын баптау және орнату.",
   "sectionTitle": "Container Storage Interface (CSI) S3 үшін",
   "icon": "",
   "weight": 4,

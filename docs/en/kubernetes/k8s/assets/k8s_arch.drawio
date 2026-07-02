@@ -7,7 +7,7 @@
         <mxCell id="rqnI4KAKTY63puV0UFX5-1" value="Cloud Project" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#7C8A9A;strokeWidth=1;fontColor=#212121;fillColor=none;dashed=1;fontFamily=VK Sans Display;verticalAlign=top;spacing=10;fontStyle=1;arcSize=12;absoluteArcSize=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="1190" y="-1910" width="350" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="rqnI4KAKTY63puV0UFX5-2" value="&lt;font color=&quot;#212121&quot;&gt;Cloud Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;" vertex="1" parent="1">
+        <mxCell id="rqnI4KAKTY63puV0UFX5-2" value="&lt;font color=&quot;#212121&quot;&gt;Managed Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;" vertex="1" parent="1">
           <mxGeometry x="1300" y="-2030" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rqnI4KAKTY63puV0UFX5-3" value="&lt;font color=&quot;#212121&quot;&gt;Cloud Servers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#F6F7F9;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;" vertex="1" parent="1">

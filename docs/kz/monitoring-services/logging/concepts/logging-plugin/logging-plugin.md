@@ -90,7 +90,7 @@ Cloud Logging сервисі үшін генерацияланған аккау�
 | Логтау жүйесіндегі сервис идентификаторы:
 
 * `databases` — Cloud Databases сервисі.
-* `containers` — Cloud Containers сервисі.
+* `containers` — Managed Containers сервисі.
 
 Көрсетілмесе, `default` мәні беріледі.
 

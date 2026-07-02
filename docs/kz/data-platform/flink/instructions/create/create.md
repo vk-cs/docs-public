@@ -32,7 +32,7 @@
 1. **Параметрлер** қадамында:
 
    1. Дана үшін атау мен сипаттаманы орнатыңыз.
-   1. Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Flink данасын орналастыру үшін {ifdef(public)} [Cloud Containers](/kz/kubernetes/k8s){/ifdef} кластеріне {ifdef(public)} [worker-түйін](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйін {/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Flink данасын орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s){/ifdef} кластеріне {ifdef(public)} [worker-түйін](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйін {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -45,7 +45,7 @@
          1. Қажетті {ifndef(public)} SDN.{/ifndef}{ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn): `Neutron` немесе `Sprut` таңдаңыз.{/ifdef}
          1. Ішкі желі мекенжайын орнатыңыз, мысалы, `10.0.1.0/24`.
 
-      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда кластер түйіні{ifdef(public)}Cloud Containers{/ifdef} орналастырылады.
+      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда кластер түйіні{ifdef(public)}Managed Containers{/ifdef} орналастырылады.
    1. Сервис данасы өрістетілетін түйіндердің параметрлерін баптаңыз:
 
       {tabs}

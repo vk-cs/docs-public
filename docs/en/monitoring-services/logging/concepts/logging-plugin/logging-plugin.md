@@ -86,7 +86,7 @@ Accounts generated for the Cloud Logging service have only the right to record l
 | A service ID in the logging system:
 
 * `databases` — the Cloud Databases service
-* `containers` — the Cloud Containers service
+* `containers` — the Managed Containers service
 
 If not specified, the `default` value will be assigned.
 

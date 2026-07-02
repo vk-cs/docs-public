@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers машиналық оқытуды орындау немесе үлкен деректерді өңдеу үшін {linkto(/kz/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu)[text=GPU (графикалық процессорлары) бар кластерлерді]} жасауға мүмкіндік береді.
+Managed Containers машиналық оқытуды орындау немесе үлкен деректерді өңдеу үшін {linkto(/kz/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu)[text=GPU (графикалық процессорлары) бар кластерлерді]} жасауға мүмкіндік береді.
 
 GPU кластерде келесі тәсілдермен пайдаланылуы мүмкін:
 

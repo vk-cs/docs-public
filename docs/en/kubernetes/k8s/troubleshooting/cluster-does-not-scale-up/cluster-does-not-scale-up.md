@@ -51,7 +51,7 @@ For more details on resources, refer to the [Resource limiting](/en/kubernetes/k
    {tab(Management console)}
    1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
    1. Select the project where the required cluster is located.
-   1. Go to **Containers → Kubernetes clusters**.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Go to the required cluster and locate the affected node group.
    1. Click ![ ](/ru/assets/more-icon.svg "inline") for the node group, select **Scaling settings**, and activate the **Enable autoscaling** option.
    1. In the window that opens, compare the values of the **Maximum number of nodes** and **Number of nodes** parameters. If they are equal, the node group already has the maximum number of nodes.

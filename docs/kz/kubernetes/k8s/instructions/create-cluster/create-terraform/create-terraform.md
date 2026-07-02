@@ -20,7 +20,7 @@
 
    Қажет болса, квоталарды {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=ұлғайтыңыз]}.
 
-1. Cloud Containers сервисіндегі {linkto(../../helpers/terraform-howto#k8s-terraform-howto)[text=Terraform пайдалану ерекшеліктерімен]} танысыңыз.
+1. Managed Containers сервисіндегі {linkto(../../helpers/terraform-howto#k8s-terraform-howto)[text=Terraform пайдалану ерекшеліктерімен]} танысыңыз.
 
 1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../tools-for-using-services/terraform/quick-start).
 
@@ -263,4 +263,4 @@ Terraform көмегімен тек master-түйіндерден тұратын
 
 - Кластерге қосылу жоспарланып отырған хостта {linkto(../../../connect#k8s-connect)[text=ортаны баптаңыз]}.
 - Кластерді {linkto(../../../how-to-guides#k8s-how-to-guides)[text=пайдалану сценарийлерімен танысыңыз]}.
-- Cloud Containers сервисінің {linkto(../../../concepts#k8s-concepts)[text=тұжырымдамаларымен танысыңыз]}.
+- Managed Containers сервисінің {linkto(../../../concepts#k8s-concepts)[text=тұжырымдамаларымен танысыңыз]}.

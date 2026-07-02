@@ -75,7 +75,7 @@
 
   {cut(Список PaaS-сервисов)}
 
-  - {linkto(../../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers]} — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
+  - {linkto(../../../kubernetes/k8s#k8s-k8s)[text=Managed Containers]} — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
   - {linkto(../../../dbs/dbaas#dbaas-dbaas)[text=Cloud Databases]} — предоставляет масштабируемые СУБД: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB на базе Greenplum.
   - {linkto(../../../ml/spark-to-k8s#mlspark)[text=Cloud Spark]} — обладает распределенной пакетной и потоковой обработки данных, работы с Machine Learning и аналитикой.
   - {linkto(../../../ml/mlplatform#mlplatform)[text=Cloud ML Platform]} — поддерживает сервисы для полного цикла ML-разработки.

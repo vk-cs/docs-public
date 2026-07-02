@@ -1,1 +1,1 @@
-Methods for diagnosing and solving typical problems with Cloud Containers.
+Methods for diagnosing and solving typical problems with Managed Containers.

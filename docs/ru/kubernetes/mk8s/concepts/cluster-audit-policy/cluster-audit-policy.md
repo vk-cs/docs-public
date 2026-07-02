@@ -1,6 +1,6 @@
 # {heading(Политика аудита кластеров)[id=mk8s-cluster-audit-policy]}
 
-Для кластеров Kubernetes в сервисе Cloud Containers настроена политика аудита ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)). Она определяет, какие события {linkto(../architecture#mk8s-architecture-kubernetes-api-integration)[text=Kubernetes API]} в кластере и в каком объеме записываются в журнал аудита {linkto(../../../../monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} на платформе {var(cloud)}. Политика аудита настроена для всех кластеров, которые вы создаете в сервисе Cloud Containers, и изменить ее нельзя.
+Для кластеров Kubernetes в сервисе Managed Containers настроена политика аудита ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)). Она определяет, какие события {linkto(../architecture#mk8s-architecture-kubernetes-api-integration)[text=Kubernetes API]} в кластере и в каком объеме записываются в журнал аудита {linkto(../../../../monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} на платформе {var(cloud)}. Политика аудита настроена для всех кластеров, которые вы создаете в сервисе Managed Containers, и изменить ее нельзя.
 
 Политика аудита помогает:
 
