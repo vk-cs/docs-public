@@ -5,7 +5,7 @@
   "sectionTitle": "Capsule",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "271a4b0e-c915-40cf-95ef-cc126e53ae50"
 }

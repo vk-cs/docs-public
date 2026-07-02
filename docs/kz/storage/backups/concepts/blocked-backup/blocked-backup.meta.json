@@ -5,7 +5,7 @@
   "sectionTitle": "Жоюдан қорғалған резервтік көшірмелер",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "c956fb8e-3df4-40af-a30d-a07967c4a3e6"
 }

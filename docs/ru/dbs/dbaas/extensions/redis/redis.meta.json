@@ -5,7 +5,7 @@
   "sectionTitle": "Расширения Redis",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "5a169eac-b9f9-4059-80d5-3b54ab3e73cb",
   "build": {
     "for": [
       "private",

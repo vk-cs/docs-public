@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте об основных понятиях и характеристиках сервиса Redis в VK Data Platform",
   "sectionTitle": "Концепции",
   "weight": 0,
-  "uuid": "",
+  "uuid": "b481db36-eebf-4ba3-94c6-d9f18884ca35",
   "build": {
     "for": [
       "data-p",

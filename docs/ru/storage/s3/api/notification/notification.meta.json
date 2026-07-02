@@ -5,7 +5,7 @@
   "sectionTitle": "Notification",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "2301e9f4-f084-4f74-8949-1fd098024c9c",
   "build": {
     "for": [
       "s3",

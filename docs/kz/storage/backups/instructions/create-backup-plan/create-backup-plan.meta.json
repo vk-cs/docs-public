@@ -5,7 +5,7 @@
   "sectionTitle": "Резервтік көшіру жоспарын жасау",
   "icon": "",
   "weight": 0,
-      "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "0630929a-c565-4a70-8cf4-b24168c24bb9"
 }

@@ -5,9 +5,10 @@
   "sectionTitle": "Жиі қойылатын сұрақтар",
   "icon": "",
   "weight": 6,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "9d0adce1-a28e-4bb3-ab49-32b0f9446117"
 }

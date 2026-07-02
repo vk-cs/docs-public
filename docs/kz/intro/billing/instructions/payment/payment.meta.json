@@ -5,9 +5,10 @@
   "sectionTitle": "Жоба балансын басқару",
   "icon": "",
   "weight": 2,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "03d6213c-a0a5-46ca-908f-903306459a03"
 }

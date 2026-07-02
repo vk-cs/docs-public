@@ -5,7 +5,7 @@
   "sectionTitle": "IAM Only",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "49f629db-1b31-4426-bea4-7dbfff6df014",
   "build": {
     "for": [
       "s3",

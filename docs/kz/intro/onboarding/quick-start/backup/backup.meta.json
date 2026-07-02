@@ -5,7 +5,7 @@
   "sectionTitle": "Cloud Backup: резервтік көшіруді баптаңыз",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "17305abf-2caa-466e-9064-ceb4d00ac613",
   "build": {
     "for": [
       "public"

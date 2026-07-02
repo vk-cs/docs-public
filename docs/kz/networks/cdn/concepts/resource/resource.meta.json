@@ -5,7 +5,7 @@
   "sectionTitle": "CDN-ресурс",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "ac227272-7e4a-47ae-8114-35fcd0236d54",
   "build": {
     "for": [
       "public"

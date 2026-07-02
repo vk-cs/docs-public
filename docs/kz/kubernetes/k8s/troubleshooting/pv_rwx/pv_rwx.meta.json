@@ -5,7 +5,7 @@
   "sectionTitle": "RWX режимі жұмыс істемейді",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "e2d1abad-85b0-4d27-afb2-c01d14e55d36"
 }

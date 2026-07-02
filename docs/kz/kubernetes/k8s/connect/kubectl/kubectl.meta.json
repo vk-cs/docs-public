@@ -5,7 +5,7 @@
   "sectionTitle": "kubectl көмегімен кластерге қосылу",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "69998628-d9a6-48ea-b0f1-0988df5a72f2"
 }

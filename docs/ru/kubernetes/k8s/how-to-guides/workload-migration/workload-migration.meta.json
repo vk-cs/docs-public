@@ -5,7 +5,7 @@
   "sectionTitle": "Перенос рабочей нагрузки между зонами доступности",
   "icon": "",
   "weight": 20,
-  "uuid": "",
+  "uuid": "810b03d0-aa16-4aaa-bb86-0d1757398b8e",
   "build": {
     "for": [
       "public"

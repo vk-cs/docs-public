@@ -5,9 +5,10 @@
   "sectionTitle": "VK Object Storage: объектілік қоймада бакет жасаңыз және файлды жүктеңіз",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "1b453b5b-c032-4d04-80df-233c260b9e15"
 }

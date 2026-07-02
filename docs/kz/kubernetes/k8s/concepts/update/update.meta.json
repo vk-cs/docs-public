@@ -5,7 +5,7 @@
   "sectionTitle": "Кластер нұсқасын жаңарту",
   "icon": "",
   "weight": 9,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "893beab0-70e7-4909-963b-0c8ea312c8d1"
 }

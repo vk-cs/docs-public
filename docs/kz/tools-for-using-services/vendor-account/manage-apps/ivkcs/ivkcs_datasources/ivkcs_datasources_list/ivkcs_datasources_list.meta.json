@@ -3,10 +3,11 @@
   "shortDescription": "",
   "metaDescription": "Деректер көздерінің тізімі",
   "sectionTitle": "Деректер көздерінің тізімі",
-    "weight": 1,
+  "weight": 1,
   "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "36310cf5-ff38-4a66-8ef7-9b80cddf88b3"
 }

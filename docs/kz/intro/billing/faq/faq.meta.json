@@ -5,9 +5,10 @@
   "sectionTitle": "Сұрақтар мен жауаптар",
   "icon": "",
   "weight": 5,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "88fafb92-7f17-4dc0-ad5d-5bfe753c7c0a"
 }

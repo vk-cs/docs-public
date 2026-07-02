@@ -5,9 +5,10 @@
   "sectionTitle": "Cloud Servers: алғашқы виртуалды машинаны жасаңыз",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "ff810c6a-57c4-414a-9132-4b1bc712b175"
 }

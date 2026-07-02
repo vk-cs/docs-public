@@ -5,8 +5,8 @@
   "sectionTitle": "Identity federation",
   "icon": "",
   "weight": 5,
-  "uuid": "",
-    "build": {
+  "uuid": "b280ed50-7abd-4aea-9bfd-5a4d7d8c8602",
+  "build": {
     "for": [
       "public"
     ]

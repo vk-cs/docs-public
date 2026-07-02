@@ -1,7 +1,7 @@
 [
   {
     "source": "/ru/base/s3/s3-python/s3-python-bucket",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -55,7 +55,7 @@
   },
   {
     "source": "/en/base/k8s/k8s-backups",
-    "destination": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -205,7 +205,7 @@
   },
   {
     "source": "/ru/additionals/account/account/security/2farecovery/2fause",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -223,7 +223,7 @@
   },
   {
     "source": "/ru/additionals/start/user-account/project-roles-users",
-    "destination": "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/ru/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -571,7 +571,7 @@
   },
   {
     "source": "/ru/base/bigdata",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -901,7 +901,7 @@
   },
   {
     "source": "/en/additionals/account/account/security/2farecovery",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -919,13 +919,13 @@
   },
   {
     "source": "/en/additionals/start/mcs-security/2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/start/mcs-security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -955,7 +955,7 @@
   },
   {
     "source": "/en/additionals/start/user-account/project-roles-users",
-    "destination": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/en/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -1045,7 +1045,7 @@
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-multiqueue",
-    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -1171,7 +1171,7 @@
   },
   {
     "source": "/ru/additionals/start/mcs-security/2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1195,7 +1195,7 @@
   },
   {
     "source": "/ru/additionals/account/account/security/2farecovery",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1351,7 +1351,7 @@
   },
   {
     "source": "/ru/additionals/start/mcs-security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1369,7 +1369,7 @@
   },
   {
     "source": "/ru/additionals/start/user-account/project-roles-users",
-    "destination": "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/ru/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -1819,7 +1819,7 @@
   },
   {
     "source": "/ru/base/k8s/k8s-addons/k8s-backups",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -1861,7 +1861,7 @@
   },
   {
     "source": "/en/additionals/account/account/adduser",
-    "destination": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -1909,31 +1909,31 @@
   },
   {
     "source": "/en/additionals/account/account/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/account/security/2faoff",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/account/security/2faon",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/account/security/2fause",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/account/security/passwordsecurity",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1963,7 +1963,7 @@
   },
   {
     "source": "/en/additionals/account/concepts/rolesandpermissions",
-    "destination": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/en/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -2155,7 +2155,7 @@
   },
   {
     "source": "/ru/additionals/account/account/adduser",
-    "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -2203,31 +2203,31 @@
   },
   {
     "source": "/ru/additionals/account/account/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2faoff",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2faon",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2fause",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/passwordsecurity",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -2257,7 +2257,7 @@
   },
   {
     "source": "/ru/additionals/account/concepts/rolesandpermissions",
-    "destination": "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/ru/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -3283,7 +3283,7 @@
   },
   {
     "source": "/en/base/k8s/k8s-addons/k8s-backups",
-    "destination": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -4549,7 +4549,7 @@
   },
   {
     "source": "/ru/additionals/api/api-account/api-access",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -5071,13 +5071,13 @@
   },
   {
     "source": "/en/dbs/dbaas/dbaas-start/db-postgrespro",
-    "destination": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/dbaas-start/about-db-features",
-    "destination": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -5731,43 +5731,43 @@
   },
   {
     "source": "/en/base/account/account/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/project/api/api-access",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/account/security/2faon",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/account/security/2fause",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/account/security/2faoff",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/account/security/passwordsecurity",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/account/adduser",
-    "destination": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -5821,43 +5821,43 @@
   },
   {
     "source": "/ru/base/account/account/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/project/api/api-access",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2faoff",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2faon",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2fause",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/passwordsecurity",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/adduser",
-    "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -6241,7 +6241,7 @@
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/vm-multiqueue",
-    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -6295,7 +6295,7 @@
   },
   {
     "source": "/en/base/account/instructions/adduser",
-    "destination": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -6391,7 +6391,7 @@
   },
   {
     "source": "/ru/base/account/instructions/adduser",
-    "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -6871,7 +6871,7 @@
   },
   {
     "source": "/en/base/iaas/vm-scenarios/vm-multiqueue",
-    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -8731,37 +8731,37 @@
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -8893,37 +8893,37 @@
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/security",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -9073,7 +9073,7 @@
   },
   {
     "source": "/ru/base/s3/buckets/s3-domain",
-    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
+    "destination": "/ru/storage/s3/instructions/manage-static-site",
     "permanent": false,
     "locale": false
   },
@@ -9451,7 +9451,7 @@
   },
   {
     "source": "/ru/base/s3/buckets/s3-webhooks",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -9481,7 +9481,7 @@
   },
   {
     "source": "/ru/base/s3/objects/s3-lifecycle",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -11071,7 +11071,7 @@
   },
   {
     "source": "/en/docs/en/main/base/k8s/use-cases/velero-backup",
-    "destination": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -12031,13 +12031,13 @@
   },
   {
     "source": "/en/dbs/dbaas/types/postgrespro",
-    "destination": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/types/postgrespro",
-    "destination": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -14023,13 +14023,13 @@
   },
   {
     "source": "/ru/data-platform/kafka/instructions/groups-manage",
-    "destination": "/ru/data-platform/console/instructions/groups-manage",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-platform/kafka/instructions/groups-manage",
-    "destination": "/en/data-platform/console/instructions/groups-manage",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -15343,7 +15343,7 @@
   },
   {
     "source": "/en/base/k8s/use-cases/velero-backup",
-    "destination": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -15865,7 +15865,7 @@
   },
   {
     "source": "/en/base/account/concepts/rolesandpermissions",
-    "destination": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/en/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -15931,37 +15931,37 @@
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -16039,7 +16039,7 @@
   },
   {
     "source": "/en/base/account/instructions/project-settings/access-manage",
-    "destination": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -16705,13 +16705,13 @@
   },
   {
     "source": "/ru/additionals/special",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/bigdata",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -17311,7 +17311,7 @@
   },
   {
     "source": "/ru/base/s3/instructions/buckets/s3-webhooks",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -17365,7 +17365,7 @@
   },
   {
     "source": "/ru/base/s3/instructions/objects/s3-lifecycle",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -17419,37 +17419,37 @@
   },
   {
     "source": "/ru/base/s3/use-cases/s3-domain",
-    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
+    "destination": "/ru/storage/s3/instructions/manage-static-site",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-golang",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-golang/s3-golang-bucket",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-python",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-python/s3-python-bucket",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -17893,7 +17893,7 @@
   },
   {
     "source": "/ru/base/k8s/use-cases/velero-backup",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -18415,7 +18415,7 @@
   },
   {
     "source": "/ru/base/account/concepts/rolesandpermissions",
-    "destination": "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/ru/access/iam/concepts/rolesandpermissions",
     "permanent": false,
     "locale": false
   },
@@ -18487,37 +18487,37 @@
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -18595,7 +18595,7 @@
   },
   {
     "source": "/ru/base/account/instructions/project-settings/access-manage",
-    "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -20275,19 +20275,19 @@
   },
   {
     "source": "/en/data-processing/console/instructions",
-    "destination": "/en/data-platform/console/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/instructions/create-group",
-    "destination": "/en/data-platform/console/instructions/create-group",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/instructions/groups-manage",
-    "destination": "/en/data-platform/console/instructions/groups-manage",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -20827,37 +20827,37 @@
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -20911,7 +20911,7 @@
   },
   {
     "source": "/ru/additionals",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -21565,19 +21565,19 @@
   },
   {
     "source": "/ru/data-processing/console/instructions",
-    "destination": "/ru/data-platform/console/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/instructions/create-group",
-    "destination": "/ru/data-platform/console/instructions/create-group",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/instructions/groups-manage",
-    "destination": "/ru/data-platform/console/instructions/groups-manage",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -21775,7 +21775,7 @@
   },
   {
     "source": "/ru/vendors-products/marketplace/initial-configuration/1c-digilabs",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -21882,12 +21882,6 @@
     "locale": false
   },
   {
-    "source": "/ru/tools-for-using-services/account/instructions/account-manage",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/editinfo",
     "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo",
     "permanent": false,
@@ -21901,37 +21895,37 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -22723,7 +22717,7 @@
   },
   {
     "source": "/en/base/iaas/use-cases/vm-multiqueue",
-    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -22981,7 +22975,7 @@
   },
   {
     "source": "/ru/base/iaas/use-cases/vm-multiqueue",
-    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -22999,43 +22993,43 @@
   },
   {
     "source": "/ru/storage/s3/dev/s3-python",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/dev/s3-python/s3-python-bucket",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/dev/s3-golang/s3-golang-bucket",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/dev/s3-golang",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/dev",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/instructions/objects/s3-lifecycle",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/storage/s3/instructions/buckets/s3-webhooks",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -23275,7 +23269,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/use-cases/velero-backup",
-    "destination": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -23971,7 +23965,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/use-cases/velero-backup",
-    "destination": "/ru/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/velero/velero-backup",
     "permanent": false,
     "locale": false
   },
@@ -24553,7 +24547,7 @@
   },
   {
     "source": "/ru/storage/s3/use-cases/s3-domain",
-    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
+    "destination": "/ru/storage/s3/instructions/manage-static-site",
     "permanent": false,
     "locale": false
   },
@@ -25237,7 +25231,7 @@
   },
   {
     "source": "/en/base/iaas/how-to-guides/vm-multiqueue",
-    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -25765,7 +25759,7 @@
   },
   {
     "source": "/ru/base/iaas/how-to-guides/vm-multiqueue",
-    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -26059,37 +26053,37 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -26377,37 +26371,37 @@
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -26713,13 +26707,13 @@
   },
   {
     "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements",
-    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent",
-    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/ib_image_agent",
     "permanent": false,
     "locale": false
   },
@@ -26887,7 +26881,7 @@
   },
   {
     "source": "/ru/applications-and-services/marketplace/vendor/ibservice_update",
-    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-ib-apps/update-ib-app",
     "permanent": false,
     "locale": false
   },
@@ -26917,7 +26911,7 @@
   },
   {
     "source": "/ru/applications-and-services/marketplace/vendor/archive",
-    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/archive",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-ib-apps/ib-app-archive",
     "permanent": false,
     "locale": false
   },
@@ -29341,37 +29335,37 @@
   },
   {
     "source": "/ru/data-processing/console",
-    "destination": "/ru/data-platform/console",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/concepts",
-    "destination": "/ru/data-platform/console/concepts",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/concepts/about",
-    "destination": "/ru/data-platform/console/concepts/about",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/service-management",
-    "destination": "/ru/data-platform/console/instructions",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/service-management/create-group",
-    "destination": "/ru/data-platform/console/instructions/create-group",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/data-processing/console/service-management/groups-manage",
-    "destination": "/ru/data-platform/console/instructions/groups-manage",
+    "destination": "/ru/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -29749,43 +29743,43 @@
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -29899,7 +29893,7 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
-    "destination": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -31987,37 +31981,37 @@
   },
   {
     "source": "/en/data-processing/console",
-    "destination": "/en/data-platform/console",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/concepts",
-    "destination": "/en/data-platform/console/concepts",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/concepts/about",
-    "destination": "/en/data-platform/console/concepts/about",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/service-management",
-    "destination": "/en/data-platform/console/instructions",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/service-management/create-group",
-    "destination": "/en/data-platform/console/instructions/create-group",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/data-processing/console/service-management/groups-manage",
-    "destination": "/en/data-platform/console/instructions/groups-manage",
+    "destination": "/en/data-platform",
     "permanent": false,
     "locale": false
   },
@@ -32383,43 +32377,43 @@
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -32539,7 +32533,7 @@
   },
   {
     "source": "/en/tools-for-using-services/account/service-management/project-settings/access-manage",
-    "destination": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
     "permanent": false,
     "locale": false
   },
@@ -32695,7 +32689,7 @@
   },
   {
     "source": "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "destination": "/ru",
+    "destination": "/ru/security/secret-manager/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -33386,6 +33380,384 @@
   {
     "source": "/en/data-platform/bigdata/tariffication",
     "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/security/secret-manager/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/concepts/data-platform-roles",
+    "destination": "/ru/security/secret-manager/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/vnet/troubleshooting/port_unavailability",
+    "destination": "/ru/networks/vnet/troubleshooting/port-unavailability",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/how-to-guides/s3-domain",
+    "destination": "/ru/storage/s3/instructions/manage-static-site",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/intro/onboarding/quick-start/kubernetes",
+    "destination": "/ru/kubernetes/k8s/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/ru/kubernetes/k8s/how-to-guides/velero/velero-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console/instructions/create-group",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console/instructions/groups-manage",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console/concepts",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console/instructions",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/console/concepts/about",
+    "destination": "/ru/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/intro/onboarding/quick-start/monitoring",
+    "destination": "/ru/monitoring-services/monitoring/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/ru/access/iam/concepts/rolesandpermissions",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/concepts/service-accounts",
+    "destination": "/ru/access/iam/concepts/service-accounts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/ru/access/iam/instructions/access-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/instructions/project-settings/service-account-manage",
+    "destination": "/ru/access/iam/instructions/service-account-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/ru/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/instructions/support-fim",
+    "destination": "/ru/access/iam/instructions/support-fim",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides",
+    "destination": "/ru/access/iam/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/keycloak-to-fim",
+    "destination": "/ru/access/iam/how-to-guides/federations/keycloak-to-fim",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/ms-entra-fim",
+    "destination": "/ru/access/iam/how-to-guides/federations/ms-entra-fim",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "destination": "/ru/access/iam/how-to-guides/federations/update-fim-cert",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-ib-apps",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-ib-apps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_update",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-ib-apps/update-ib-app",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-apps/archive",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-ib-apps/ib-app-archive",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-saas-apps",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-saas-apps",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-saas-apps/saas-add",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-saas-apps/saas-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-saas-apps/saas-update",
+    "destination": "/ru/tools-for-using-services/vendor-account/instructions/manage-saas-apps/saas-update",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_agent",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/ib_image_agent",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements",
+    "destination": "/ru/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/how-to-guides",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/dbs/dbaas/concepts/types/postgrespro",
+    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2",
+    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/how-to-guides/velero-backup",
+    "destination": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console/instructions/groups-manage",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console/instructions/create-group",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console/instructions",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console/concepts",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/console/concepts/about",
+    "destination": "/en/data-platform",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "destination": "/en/access/iam/concepts/rolesandpermissions",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/concepts/service-accounts",
+    "destination": "/en/access/iam/concepts/service-accounts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/instructions/project-settings/access-manage",
+    "destination": "/en/access/iam/instructions/access-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/account/instructions/project-settings/service-account-manage",
+    "destination": "/en/access/iam/instructions/service-account-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/support-fim",
+    "destination": "/en/access/iam/instructions/support-fim",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/manage-2fa",
+    "destination": "/en/access/iam/instructions/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/update-fim-cert",
+    "destination": "/en/access/iam/how-to-guides/federations/update-fim-cert",
     "permanent": false,
     "locale": false
   }

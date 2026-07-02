@@ -5,7 +5,7 @@
   "metaDescription": "Cloud Servers: восстановление диска виртуальной машины из резервной копии в VK Cloud.",
   "icon": "",
   "weight": 10,
-  "uuid": "",
+  "uuid": "11c06ec1-e7bf-48f1-9f1e-b67861ccccd5",
   "build": {
     "for": [
       "public",

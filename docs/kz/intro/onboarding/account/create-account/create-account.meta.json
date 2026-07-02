@@ -5,9 +5,10 @@
   "sectionTitle": "Аккаунт пен алғашқы жобаны жасаңыз",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "7d16de7d-11be-4d98-8dca-6af177fdcdda"
 }

@@ -6,9 +6,10 @@
   "icon": "",
   "hidden": true,
   "weight": 7,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "211b1139-f817-419d-8d75-c252283a58e9"
 }

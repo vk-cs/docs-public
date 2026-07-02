@@ -5,7 +5,7 @@
   "sectionTitle": "Множественные очереди (Multiqueue)",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "62dcb9a4-8ea6-461c-bd2f-3fbc3a617fbd",
   "build": {
     "for": [
       "private",

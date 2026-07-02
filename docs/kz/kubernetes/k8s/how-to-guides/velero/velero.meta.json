@@ -5,7 +5,7 @@
   "sectionTitle": "Velero пайдалану",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "afbb5b66-bdaa-4c8d-9932-bfc092cf08a2",
   "build": {
     "for": [
       "public",

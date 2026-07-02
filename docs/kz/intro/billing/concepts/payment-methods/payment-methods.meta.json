@@ -5,9 +5,10 @@
   "sectionTitle": "Төлем тәсілдері",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "74c87f78-5741-49b2-8f8c-d9b1428608fd"
 }

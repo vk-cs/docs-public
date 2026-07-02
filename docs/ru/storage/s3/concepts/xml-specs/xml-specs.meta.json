@@ -5,7 +5,7 @@
   "sectionTitle": "Описание типов данных",
   "icon": "",
   "weight": 11,
-  "uuid": "",
+  "uuid": "604bde9b-92ca-4c90-acbb-f0382701d72b",
   "build": {
     "for": [
       "s3",

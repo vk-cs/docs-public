@@ -5,8 +5,8 @@
   "sectionTitle": "How-to guides",
   "icon": "",
   "weight": 3,
-  "uuid": "",
-    "build": {
+  "uuid": "741576f6-7f34-403c-a828-386fa9d9686d",
+  "build": {
     "for": [
       "public"
     ]

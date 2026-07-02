@@ -5,7 +5,7 @@
   "sectionTitle": "Jaeger пайдалану",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "47c2be11-a156-4666-81ec-932b5f1074b9",
   "build": {
     "for": [
       "public"

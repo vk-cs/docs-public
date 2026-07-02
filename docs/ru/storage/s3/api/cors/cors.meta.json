@@ -5,7 +5,7 @@
   "sectionTitle": "CORS",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "bc73cb11-f884-4e3f-95c9-00ba1e7b237b",
   "build": {
     "for": [
       "public",

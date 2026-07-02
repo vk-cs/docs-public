@@ -5,7 +5,7 @@
   "sectionTitle": "ACL",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "a197da85-7f14-4d0d-8ff0-661997b5d5b2",
   "build": {
     "for": [
       "public",

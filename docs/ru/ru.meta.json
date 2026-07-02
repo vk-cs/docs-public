@@ -59,10 +59,6 @@
       {
         "buildPoint": "data-p",
         "value": "VK Cloud"
-      },
-      {
-        "buildPoint": "data-p-pdf",
-        "value": "VK Private Cloud"
       }
     ],
     "s3": [
@@ -252,12 +248,7 @@
   "metaDescription": "Документация VK Cloud поможет вам с ответом на часто задаваемые вопросы. Здесь вы найдете практические руководства и пошаговые инструкции по работе с VK Cloud.",
   "build": {
     "points": [
-      "public",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3-pdf",
-      "data-p-pdf"
+      "public"
     ]
   }
 }

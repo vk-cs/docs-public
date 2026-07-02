@@ -5,7 +5,7 @@
   "sectionTitle": "worker-түйіндер тобын басқару",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "c0e54a5f-ecab-4937-bf26-05bbe1832d18"
 }

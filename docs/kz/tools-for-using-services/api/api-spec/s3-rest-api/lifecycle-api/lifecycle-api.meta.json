@@ -5,7 +5,7 @@
   "sectionTitle": "Lifecycle",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "e752be32-db97-4f19-969b-d73afab63693",
   "build": {
     "for": [
       "public"

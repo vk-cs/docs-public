@@ -5,9 +5,10 @@
   "sectionTitle": "Ақпараттық қауіпсіздік саясаты",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "c8e5db1d-9325-4b3c-b479-02cdc25b87ac"
 }

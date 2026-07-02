@@ -5,9 +5,10 @@
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "55c970b1-109f-4e56-a71f-55845c4bc68b"
 }

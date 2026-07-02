@@ -5,7 +5,7 @@
   "sectionTitle": "CDN",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "00f1b627-45e3-4cf3-b00f-9d570ab0fd5d",
   "build": {
     "for": [
       "public"

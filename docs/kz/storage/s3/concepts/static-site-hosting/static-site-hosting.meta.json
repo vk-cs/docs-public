@@ -5,7 +5,7 @@
   "sectionTitle": "Статикалық сайттарды хостингтеу",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "0a43997d-4c48-44c5-baab-31bf11a130f5",
   "build": {
     "for": [
       "public"

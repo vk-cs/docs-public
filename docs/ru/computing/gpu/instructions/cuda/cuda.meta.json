@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговые инструкции по установке, обновлению и удалению компоненты CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "0525396c-105c-4953-b8fb-7a7d450db2d3",
   "build": {
     "for": [
       "public",

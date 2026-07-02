@@ -5,7 +5,7 @@
   "sectionTitle": "Установка аддона на выделенную группу узлов",
   "icon": "",
   "weight": 15,
-  "uuid": "",
+  "uuid": "7292bfb9-8e8b-4af0-b4a1-621bef9fc535",
   "build": {
     "for": [
       "private",

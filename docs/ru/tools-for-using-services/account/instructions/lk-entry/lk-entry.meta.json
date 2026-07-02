@@ -4,7 +4,7 @@
   "metaDescription": "Как получить доступ к личному кабинету VK Private Cloud",
   "sectionTitle": "Вход в личный кабинет",
   "weight": 0,
-  "uuid": "",
+  "uuid": "7dc30fae-c1de-40c3-b79d-49ddcf2635d4",
   "build": {
     "for": [
       "private",

@@ -5,7 +5,7 @@
   "sectionTitle": "DR из Marketplace: защитите сервисы от сбоев и аварий",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "54d527a1-0b0d-4150-a978-95259eaff784",
   "build": {
     "for": [
       "public"

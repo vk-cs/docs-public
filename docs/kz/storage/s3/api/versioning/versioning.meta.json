@@ -5,7 +5,7 @@
   "sectionTitle": "Versioning",
   "icon": "",
   "weight": 11,
-  "uuid": "",
+  "uuid": "43db07e7-66e7-49f5-b5a2-1b367c2d892e",
   "build": {
     "for": [
       "s3",

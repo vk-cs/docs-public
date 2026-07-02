@@ -5,7 +5,7 @@
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "77ec32c9-f266-4a33-81d2-446f05486a41",
   "build": {
     "for": [
       "data-p",

@@ -5,7 +5,7 @@
   "sectionTitle": "Қызмет архитектурасы",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "a6860c93-a9be-4118-9811-16488f9fe3d9"
 }

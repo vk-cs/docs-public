@@ -5,7 +5,7 @@
   "sectionTitle": "Helm орнату",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "2d2410eb-90dc-409f-a529-0df697a87b8b"
 }

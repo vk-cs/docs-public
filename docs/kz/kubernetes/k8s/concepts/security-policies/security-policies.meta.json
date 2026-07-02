@@ -5,7 +5,7 @@
   "sectionTitle": "Қауіпсіздік саясаттары",
   "icon": "",
   "weight": 12,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "ce25d601-6fef-4b71-a66a-202c868a996f"
 }

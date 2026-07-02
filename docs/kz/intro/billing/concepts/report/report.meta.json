@@ -5,9 +5,10 @@
   "sectionTitle": "Есептік құжаттар",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "381b3e4a-6d6d-4aeb-ab08-ac32360572db"
 }

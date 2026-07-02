@@ -4,7 +4,7 @@
   "metaDescription": "Начните управлять VK Private Cloud с помощью API. Это пошаговое руководство поможет получить токен аутентификации и подключиться к API VK Private Cloud.",
   "sectionTitle": "Подключение через API",
   "weight": 1,
-  "uuid": "",
+  "uuid": "4e7c59c6-1657-4a3d-8ea2-93dd65ffe026",
   "build": {
     "for": [
       "private",

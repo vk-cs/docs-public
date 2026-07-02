@@ -5,7 +5,7 @@
   "sectionTitle": "Кластер баптаулары",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "82ddd0f4-914e-450b-9285-2192bfb51a7b"
 }

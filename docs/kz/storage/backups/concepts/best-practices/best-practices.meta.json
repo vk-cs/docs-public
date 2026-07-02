@@ -5,7 +5,7 @@
   "sectionTitle": "Резервтік көшіруді баптаудың үздік тәжірибелері",
   "icon": "",
   "weight": 5,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "21faf131-fe52-41d4-8e60-0772f3d80355"
 }

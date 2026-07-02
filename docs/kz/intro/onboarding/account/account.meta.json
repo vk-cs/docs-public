@@ -5,9 +5,10 @@
   "sectionTitle": "{var(cloud)} жүйесінде тіркеліңіз",
   "icon": "",
   "weight": 1,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "a25b6a7f-15cf-43e3-8a0d-ac5779caf1ac"
 }

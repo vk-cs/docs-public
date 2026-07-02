@@ -5,7 +5,7 @@
   "sectionTitle": "Резервтік көшірмені қолмен жасау",
   "icon": "",
   "weight": 2,
-      "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "f6375edb-8614-415c-a49f-385fa47dca15"
 }

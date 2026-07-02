@@ -5,10 +5,10 @@
   "sectionTitle": "Cluster audit policy",
   "icon": "",
   "weight": 13,
-  "uuid": "",
+  "uuid": "7826b337-2345-4d44-956e-c8f2a582fd1b",
   "build": {
     "for": [
       "public"
-      ]
+    ]
   }
 }

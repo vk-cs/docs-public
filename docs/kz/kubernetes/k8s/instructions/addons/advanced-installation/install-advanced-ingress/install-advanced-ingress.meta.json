@@ -5,7 +5,7 @@
   "sectionTitle": "Ingress NGINX",
   "icon": "",
   "weight": 8,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "e003a4f4-8001-4655-8d85-0318bf5ab035"
 }

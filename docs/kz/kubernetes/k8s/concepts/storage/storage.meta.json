@@ -5,7 +5,7 @@
   "sectionTitle": "Кластердегі сақтау қоймасы",
   "icon": "",
   "weight": 6,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "da8e3e94-95f2-43a9-af6e-7d978d56dde6"
 }

@@ -5,9 +5,10 @@
   "sectionTitle": "Жеке және заңды тұлғалардың биллингі",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "41f16d85-dd38-44b9-9d3f-8322e53e1879"
 }

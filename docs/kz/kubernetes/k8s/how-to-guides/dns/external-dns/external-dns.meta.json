@@ -5,7 +5,7 @@
   "sectionTitle": "ExternalDNS орнату және пайдалану",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "7878f5c3-cc54-4d74-b53d-0f1d48788f18"
 }

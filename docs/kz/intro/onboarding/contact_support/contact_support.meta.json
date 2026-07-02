@@ -5,9 +5,10 @@
   "sectionTitle": "Техникалық қолдауға жүгініңіз",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "4a1092e3-968c-4f6c-a3fe-cb69a932fdb5"
 }

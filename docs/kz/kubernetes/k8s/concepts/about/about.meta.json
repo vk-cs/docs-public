@@ -5,7 +5,7 @@
   "sectionTitle": "Қызмет туралы",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -13,5 +13,6 @@
       "private-pdf",
       "private-pg-pdf"
     ]
-  }
+  },
+  "uuid": "e8d73531-2380-4b22-a761-211d6e64663d"
 }

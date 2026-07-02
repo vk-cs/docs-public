@@ -4,7 +4,7 @@
   "metaDescription": "Начните управлять VK Cloud из командной строки. Это пошаговое руководство поможет установить OpenStack CLI на Windows, macOS, Linux и пройти аутентификацию.",
   "sectionTitle": "Подключение к OpenStack CLI",
   "weight": 1,
-  "uuid": "",
+  "uuid": "1a7bb3d0-6d0d-4b16-97dd-f749cad971f4",
   "build": {
     "for": [
       "private",

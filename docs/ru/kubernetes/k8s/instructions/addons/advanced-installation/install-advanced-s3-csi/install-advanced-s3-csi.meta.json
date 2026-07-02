@@ -5,7 +5,7 @@
   "sectionTitle": "Container Storage Interface для S3 (S3-CSI)",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "e5b3ce6e-2b25-4833-b063-2a2d4027793c",
   "build": {
     "for": [
       "public"

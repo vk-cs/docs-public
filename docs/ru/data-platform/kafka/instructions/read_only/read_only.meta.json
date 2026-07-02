@@ -1,5 +1,4 @@
 {
-
   "title": "Вывод экземпляра из режима только для чтения",
   "shortDescription": "Как вывести экземпляр Cloud Kafka из режима только для чтения",
   "metaDescription": "Узнайте как в VK Data Platform вывести экземпляр Cloud Kafka из режима только для чтения (read-only)",
@@ -12,5 +11,5 @@
     ]
   },
   "weight": 3,
-  "uuid": ""
+  "uuid": "4f63af21-4b5a-4c16-bc6d-fb297b23d91d"
 }

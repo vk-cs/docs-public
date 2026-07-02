@@ -5,7 +5,7 @@
   "sectionTitle": "Ingress пайдалану",
   "icon": "",
   "weight": 11,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "490163e2-8aad-4302-9d03-12a09419257e"
 }

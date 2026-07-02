@@ -5,9 +5,10 @@
   "sectionTitle": "Cloud Network: виртуалды желі жасаңыз және қауіпсіздік тобын баптаңыз",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "86f50615-eea8-4a30-beee-5ef50da0656d"
 }

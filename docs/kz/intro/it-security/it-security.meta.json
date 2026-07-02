@@ -5,9 +5,10 @@
   "sectionTitle": "Ақпараттық қауіпсіздік",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "e50d39c1-6c4c-4b26-b77e-8b78365e1504"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание приложений",
   "icon": "",
   "weight": 16,
-  "uuid": "",
+  "uuid": "f4ef6083-b6b0-4789-83da-6d6d22f783ab",
   "build": {
     "for": [
       "private",

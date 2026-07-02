@@ -5,7 +5,7 @@
   "sectionTitle": "Istio в кластерах второго поколения",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "da30e50e-56cf-4599-b12f-885263f0d240",
   "build": {
     "for": [
       "public"

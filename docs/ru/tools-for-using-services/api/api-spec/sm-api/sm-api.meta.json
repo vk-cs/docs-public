@@ -5,7 +5,7 @@
   "sectionTitle": "Менеджер секретов",
   "icon": "",
   "weight": 16,
-  "uuid": "",
+  "uuid": "cae638ac-1f03-4aa2-8626-c3a433b1811d",
   "build": {
     "for": [
       "public"

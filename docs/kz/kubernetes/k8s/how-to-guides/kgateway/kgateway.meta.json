@@ -5,7 +5,7 @@
   "sectionTitle": "Kgateway пайдалану",
   "icon": "",
   "weight": 13,
-  "uuid": "",
+  "uuid": "00535722-1c87-4dae-ab10-0e29fc7d6c0e",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Истекшая сессия",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "00d485fc-6da9-416b-b4a5-c942851cc3c3",
   "build": {
     "for": [
       "public"

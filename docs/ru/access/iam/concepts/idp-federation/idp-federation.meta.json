@@ -5,7 +5,7 @@
   "sectionTitle": "Федерация удостоверений",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "ed5ff92d-464e-46c1-8a1e-67389907a321",
   "build": {
     "for": [
       "public"

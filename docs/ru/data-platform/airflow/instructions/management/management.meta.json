@@ -5,7 +5,7 @@
   "sectionTitle": "Работа с экземпляром сервиса",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "c26ce2c9-1413-428a-8589-c58236797d87",
   "build": {
     "for": [
       "data-p",

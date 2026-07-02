@@ -5,7 +5,7 @@
   "sectionTitle": "Сеанс доступа и блокировка пользователя",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "c9a51da3-4e6f-4649-bbd0-0c38c8b15152",
   "build": {
     "for": [
       "private",

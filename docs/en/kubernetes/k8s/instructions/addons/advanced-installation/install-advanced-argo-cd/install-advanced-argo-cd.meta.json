@@ -5,7 +5,7 @@
   "sectionTitle": "Argo CD",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "1536c046-b44f-4893-a40f-d2f108da86fc",
   "build": {
     "for": [
       "public"

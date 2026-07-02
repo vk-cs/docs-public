@@ -5,7 +5,7 @@
   "sectionTitle": "Webhooks",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "beca86b9-1e37-49e8-98ae-4ab941bec7a3",
   "build": {
     "for": [
       "public"

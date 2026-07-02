@@ -5,9 +5,10 @@
   "sectionTitle": "Cloud Databases: алғашқы басқарылатын дерекқорды жасаңыз",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "dc5ea931-1872-44be-809d-9ac501849244"
 }

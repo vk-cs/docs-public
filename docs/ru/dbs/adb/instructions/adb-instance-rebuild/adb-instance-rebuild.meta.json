@@ -5,7 +5,7 @@
   "sectionTitle": "Восстановление инстанса ADB",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "372cfcd8-0860-4b7d-b500-d10c7fb87e96",
   "build": {
     "for": [
       "public",

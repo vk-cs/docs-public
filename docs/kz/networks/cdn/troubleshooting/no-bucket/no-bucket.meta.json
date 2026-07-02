@@ -1,14 +1,14 @@
 {
-    "title": "NoSuchBucket қатесі",
-      "shortDescription": "Егер контент көзі ретінде VK Object Storage бакетін пайдаланатын CDN NoSuchBucket қатесін қайтарса, не істеу керек",
-      "metaDescription": "Егер контент көзі ретінде VK Object Storage бакетін пайдаланатын CDN NoSuchBucket, the specified bucket does not exist қатесін қайтарса, не істеу керек",
-    "sectionTitle": "NoSuchBucket қатесі",
-    "icon": "",
-    "weight": 1,
-    "uuid": "",
-    "build": {
-      "for": [
-        "public"
-      ]
-    }
+  "title": "NoSuchBucket қатесі",
+  "shortDescription": "Егер контент көзі ретінде VK Object Storage бакетін пайдаланатын CDN NoSuchBucket қатесін қайтарса, не істеу керек",
+  "metaDescription": "Егер контент көзі ретінде VK Object Storage бакетін пайдаланатын CDN NoSuchBucket, the specified bucket does not exist қатесін қайтарса, не істеу керек",
+  "sectionTitle": "NoSuchBucket қатесі",
+  "icon": "",
+  "weight": 1,
+  "uuid": "28a30acb-46f5-4755-bb68-a70bd5355972",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }

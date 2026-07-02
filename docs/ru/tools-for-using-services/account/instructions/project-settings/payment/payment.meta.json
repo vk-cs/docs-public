@@ -5,7 +5,7 @@
   "sectionTitle": "Просмотр баланса проекта",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "3973ff36-d87e-45bc-9c76-8b4aaa084415",
   "build": {
     "for": [
       "private",

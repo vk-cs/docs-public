@@ -1,1 +1,27 @@
-{}
+{
+  "af045b12-cc39-4584-8702-f2057e9b0ab1": "/en",
+  "2c9e7e21-0415-407a-ac7d-967f004674d9": "/en",
+  "4310d344-c386-4c77-9acd-f38ea2af691e": "/en/dbs/dbaas/concepts/types/postgresql",
+  "06d2c38c-da96-41fb-b471-61ccb2c98ed0": "/en/dbs/dbaas/concepts/types/postgresql",
+  "8eb8085d-416c-43ef-8551-457e68e03640": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+  "9e12acd2-4d24-4b59-8eb4-73a642a19312": "/en/kubernetes/k8s/how-to-guides/velero/velero-backup",
+  "72405ea3-c208-49eb-a10b-c7873e46e997": "/en/data-platform",
+  "3776b604-2797-47d9-858d-bb703be06d24": "/en/data-platform",
+  "6dff963b-ef6d-4689-bb2d-b8e22420520f": "/en/data-platform",
+  "0c9e0938-c558-4b65-abe5-96a42431c83a": "/en/data-platform",
+  "d6eff2ef-a454-4f4c-957c-f078576269cd": "/en/data-platform",
+  "b17364d8-3143-4fa1-9b98-c8c377e55d03": "/en/data-platform",
+  "4b933b3a-93fe-4cef-af82-4a42434c9923": "/en/access/iam/concepts/rolesandpermissions",
+  "48cc031e-f067-4d96-872a-6b4396b11bc0": "/en/access/iam/concepts/service-accounts",
+  "82ae5d0c-1dbd-4198-9160-5f4189a4cb8e": "/en/access/iam/instructions/access-manage",
+  "3df885cf-9fd1-4c55-9dd3-7bcad0f14eab": "/en/access/iam/instructions/service-account-manage",
+  "18741ac0-5558-4261-b5e2-d427b4ffe29b": "/en/access/iam/instructions/support-fim",
+  "b37d5677-beeb-4cb4-b6e3-55551d47d8b6": "/en/access/iam/instructions/manage-2fa",
+  "f758c8e2-8fbc-4e94-ae08-208eee3e5b75": "/en/access/iam/instructions/manage-2fa",
+  "0e36e0a0-d522-453f-8a19-1154e955bac9": "/en/access/iam/instructions/manage-2fa",
+  "4d036613-3c16-4d12-9282-748355c85580": "/en/access/iam/instructions/manage-2fa",
+  "ec40cf29-145d-4b4b-a445-4e618e53d9f1": "/en/access/iam/instructions/manage-2fa",
+  "ca10584f-6492-44b3-87e9-ee6472d91440": "/en/access/iam/instructions/manage-2fa",
+  "9a35a60a-87f1-4967-a61c-fe704739f69b": "/en/access/iam/instructions/manage-2fa",
+  "238a631b-5b81-4b2a-9ee0-06eb30b39fcb": "/en/access/iam/how-to-guides/federations/update-fim-cert"
+}

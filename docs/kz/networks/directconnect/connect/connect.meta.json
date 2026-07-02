@@ -1,13 +1,14 @@
 {
-    "title": "Сервиске қосылу",
-      "shortDescription": "Direct Connect сервисін қалай қосуға болады",
-      "metaDescription": "Cloud Direct Connect — Cloud Direct Connect сервисін өздігінен немесе VK Cloud командасының көмегімен қосу үшін байланыс арнасын қалай ұйымдастыруға болады",
-    "sectionTitle": "Сервиске қосылу",
-    "icon": "",
-    "weight": 0,
-    "build": {
+  "title": "Сервиске қосылу",
+  "shortDescription": "Direct Connect сервисін қалай қосуға болады",
+  "metaDescription": "Cloud Direct Connect — Cloud Direct Connect сервисін өздігінен немесе VK Cloud командасының көмегімен қосу үшін байланыс арнасын қалай ұйымдастыруға болады",
+  "sectionTitle": "Сервиске қосылу",
+  "icon": "",
+  "weight": 0,
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "666892fb-9913-4b6d-838a-d07b503e8a9c"
 }

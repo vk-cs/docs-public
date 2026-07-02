@@ -5,9 +5,10 @@
   "sectionTitle": "Ену тестілерін өткізу саясаты",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "7f1ee6e3-7cd0-454b-8105-d3a0195e5f86"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Биллинг",
   "icon": "",
   "weight": 20,
-  "uuid": "",
+  "uuid": "4c0d4951-f578-4844-8285-4eb7042790ad",
   "build": {
     "for": [
       "public"

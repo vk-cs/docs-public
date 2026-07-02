@@ -5,9 +5,10 @@
   "sectionTitle": "Жылдам бастау",
   "icon": "",
   "weight": 1,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "f99fa13a-0ef4-4264-8a7e-f223405779c3"
 }

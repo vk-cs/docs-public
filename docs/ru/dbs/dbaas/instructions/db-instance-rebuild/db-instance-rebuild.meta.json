@@ -5,7 +5,7 @@
   "sectionTitle": "Восстановление инстанса БД",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "b2b4f895-eed2-4275-8d18-8343f7cb3193",
   "build": {
     "for": [
       "public",

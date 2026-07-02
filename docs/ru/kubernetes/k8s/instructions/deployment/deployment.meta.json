@@ -5,7 +5,7 @@
   "sectionTitle": "Работа с Deployment",
   "icon": "",
   "weight": 13,
-  "uuid": "",
+  "uuid": "1d647b85-4081-493e-97dc-3311bffa0c0a",
   "build": {
     "for": [
       "private",

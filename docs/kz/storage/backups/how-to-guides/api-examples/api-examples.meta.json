@@ -5,9 +5,10 @@
   "sectionTitle": "API пайдалану мысалдары",
   "icon": "",
   "weight": 5,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "3b383b20-58bb-4621-8382-da7da84554c3"
 }

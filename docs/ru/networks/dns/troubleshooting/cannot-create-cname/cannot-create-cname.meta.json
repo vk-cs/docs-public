@@ -5,7 +5,7 @@
   "sectionTitle": "Не удалось создать CNAME-запись для корневого домена",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "b855167f-b69d-4e83-906c-ddc5bc4f28e4",
   "build": {
     "for": [
       "public"

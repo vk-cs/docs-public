@@ -5,7 +5,7 @@
   "sectionTitle": "Kgateway",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "67f594c6-a75f-4585-b6e4-8c65fbb030e7",
   "build": {
     "for": [
       "public"

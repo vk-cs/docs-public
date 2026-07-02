@@ -5,7 +5,7 @@
   "sectionTitle": "Статикалық DNS жазбаларын қосу",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "d57c7054-06f7-4f99-8aee-4b5a59da9d9b"
 }

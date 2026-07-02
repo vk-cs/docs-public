@@ -5,9 +5,10 @@
   "sectionTitle": "{var(cloud)} сервистерінде жұмысты бастаңыз",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "52e2129a-c05f-419e-a6ae-58929fb3c1bc"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Encryption",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "9ad83721-4a57-443a-996a-bfca1c06d48a",
   "build": {
     "for": [
       "s3",

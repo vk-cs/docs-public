@@ -5,9 +5,10 @@
   "sectionTitle": "Шығындар детализациясы",
   "icon": "",
   "weight": 3,
-    "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "8b127198-4948-493f-8fb5-6e1219e562fe"
 }

@@ -5,9 +5,10 @@
   "sectionTitle": "Платформаның қауіпсіздігі",
   "icon": "",
   "weight": 1,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "6d09f4b6-a595-4200-9fe4-231c63ea2ddb"
 }

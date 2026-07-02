@@ -5,7 +5,7 @@
   "sectionTitle": "Сетевая модель Kubernetes",
   "icon": "",
   "weight": 16,
-  "uuid": "",
+  "uuid": "e2067d28-d768-4f5c-a2e4-ead8e8a504eb",
   "build": {
     "for": [
       "private",

@@ -5,7 +5,7 @@
   "sectionTitle": "Кластерге арналған DNS баптаулары",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "8e10f0ce-7d96-400f-87d2-22c52ae73e16"
 }

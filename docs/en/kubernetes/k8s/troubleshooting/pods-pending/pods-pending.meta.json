@@ -5,7 +5,7 @@
   "sectionTitle": "Pods are stuck in the Pending state",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "fce2f3af-a877-4cdb-adf8-6824ce2467f7",
   "build": {
     "for": [
       "public"

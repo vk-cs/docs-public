@@ -5,9 +5,10 @@
   "sectionTitle": "Жоба балансы",
   "icon": "",
   "weight": 1,
-      "build": {
+  "build": {
     "for": [
       "public"
     ]
-  }
+  },
+  "uuid": "562dbf94-a380-401e-bb3b-dae1a0b8be14"
 }

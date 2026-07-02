@@ -5,7 +5,7 @@
   "sectionTitle": "Мониторинг ClickHouse",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "fd807829-0188-45e0-8dfe-caabaaf4edf1",
   "build": {
     "for": [
       "private",

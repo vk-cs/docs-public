@@ -5,7 +5,7 @@
   "sectionTitle": "Fluent Bit",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "1e5bf178-281a-45ff-8c6b-340c8bd5e548"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Cert-manager",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "6ed0852b-48c5-4ce8-b895-6e1b1ef8e1c0"
 }

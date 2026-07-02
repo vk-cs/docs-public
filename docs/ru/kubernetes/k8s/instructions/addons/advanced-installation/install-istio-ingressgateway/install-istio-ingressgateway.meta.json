@@ -5,7 +5,7 @@
   "sectionTitle": "Istio-ingressgateway",
   "icon": "",
   "weight": 14,
-  "uuid": "",
+  "uuid": "af40e598-a5e1-4639-8638-e3fce79ed2d0",
   "build": {
     "for": [
       "private",

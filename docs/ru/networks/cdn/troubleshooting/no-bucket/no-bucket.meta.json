@@ -1,15 +1,14 @@
 {
-    "title": "Ошибка NoSuchBucket",
-      "shortDescription": "Что делать, если CDN, который в качестве источника контента использует бакет {var(s3)}, возвращает ошибку NoSuchBucket",
-      "metaDescription": "Что делать, если CDN, который в качестве источника контента использует бакет VK Object Storage, возвращает ошибку NoSuchBucket, the specified bucket does not exist",
-    "sectionTitle": "Ошибка NoSuchBucket",
-    "icon": "",
-    "weight": 1,
-    "uuid": "",
-    "build": {
-      "for": [
-        "public"
-      ]
-    }
+  "title": "Ошибка NoSuchBucket",
+  "shortDescription": "Что делать, если CDN, который в качестве источника контента использует бакет {var(s3)}, возвращает ошибку NoSuchBucket",
+  "metaDescription": "Что делать, если CDN, который в качестве источника контента использует бакет VK Object Storage, возвращает ошибку NoSuchBucket, the specified bucket does not exist",
+  "sectionTitle": "Ошибка NoSuchBucket",
+  "icon": "",
+  "weight": 1,
+  "uuid": "8458bcc7-8ed3-4610-8cb5-9088fb796cc8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
 }
-

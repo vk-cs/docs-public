@@ -5,7 +5,7 @@
   "sectionTitle": "Bucket",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "fa09b0df-7c3d-43ca-ad08-9376b69aa330",
   "build": {
     "for": [
       "public",

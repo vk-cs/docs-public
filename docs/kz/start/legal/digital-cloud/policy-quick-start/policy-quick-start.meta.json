@@ -7,7 +7,7 @@
   "disableGithub": true,
   "disableDateInformation": true,
   "weight": 100,
-  "uuid": "",
+  "uuid": "fbb0504c-4965-48ec-ad1c-ebdc5deb654f",
   "build": {
     "for": [
       "public"

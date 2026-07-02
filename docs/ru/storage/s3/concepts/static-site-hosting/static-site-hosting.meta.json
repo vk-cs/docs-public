@@ -5,7 +5,7 @@
   "sectionTitle": "Хостинг статических сайтов",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "4686a870-4b6e-49c0-a8b9-704cd6ea6ec3",
   "build": {
     "for": [
       "public",

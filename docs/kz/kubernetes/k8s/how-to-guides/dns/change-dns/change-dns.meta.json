@@ -5,7 +5,7 @@
   "sectionTitle": "Кластер желісіндегі DNS серверлері мекенжайларын өзгерту",
   "icon": "",
   "weight": 4,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "e808ee01-3603-45b5-8a53-4eac9b981471"
 }

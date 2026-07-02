@@ -5,7 +5,7 @@
   "sectionTitle": "Установка и инициализация Terraform",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "0c77dc91-ca4e-4a92-ae06-b1391034da0e",
   "build": {
     "for": [
       "private",

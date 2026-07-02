@@ -5,8 +5,8 @@
   "sectionTitle": "CDN resource",
   "icon": "",
   "weight": 1,
-  "uuid": "",
-    "build": {
+  "uuid": "44314b12-fa89-49de-9a2d-a0917af80fd5",
+  "build": {
     "for": [
       "public"
     ]

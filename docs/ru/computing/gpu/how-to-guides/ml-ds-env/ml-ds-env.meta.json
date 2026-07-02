@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговая инструкция по настройке виртуальных машин с GPU для работы с инструментами машинного обучения PyTorch + LLM Llama-2-7B Fine-tuning с LoRA в conda-окружении",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "8953bb28-bd88-4768-a3a4-22c8d2815928",
   "build": {
     "for": [
       "public",

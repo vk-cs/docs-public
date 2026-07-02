@@ -5,7 +5,7 @@
   "sectionTitle": "Ingress-контроллерін HTTP-балансировщикпен жайып орналастыру",
   "icon": "",
   "weight": 2,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
@@ -14,5 +14,6 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  }
+  },
+  "uuid": "e4e3916e-c37f-4c04-bb62-80ee9199db6d"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Обновление Terraform",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "a1f87c5d-21ce-477e-931d-ca754d18f419",
   "build": {
     "for": [
       "private",

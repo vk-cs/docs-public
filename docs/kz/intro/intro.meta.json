@@ -4,11 +4,12 @@
   "metaDescription": "Неден бастау керек",
   "weight": 0,
   "hidden": true,
-    "build": {
+  "build": {
     "for": [
       "public",
       "private",
       "private-pg"
     ]
-  }
+  },
+  "uuid": "25442d14-d4c7-455d-8f27-035864bb821f"
 }

@@ -5,7 +5,7 @@
   "sectionTitle": "Управление аккаунтом {var(cloud)}",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "82a14247-044e-44a2-bd1f-88cddfb42ccc",
   "build": {
     "for": [
       "private",

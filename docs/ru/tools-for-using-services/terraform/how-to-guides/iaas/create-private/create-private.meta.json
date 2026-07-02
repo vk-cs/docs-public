@@ -5,7 +5,7 @@
   "sectionTitle": "Создание ВМ",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "abe044aa-0c01-4de8-b8ce-74b995fa213b",
   "build": {
     "for": [
       "private",

@@ -5,7 +5,7 @@
   "sectionTitle": "Istio in the second-generation clusters",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "4a67885e-9b41-478c-acc4-de362132360a",
   "build": {
     "for": [
       "public"

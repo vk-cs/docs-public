@@ -5,7 +5,7 @@
   "sectionTitle": "Создание экземпляра сервиса",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "b6c46d01-6f7a-4b03-8fbd-88062288e2f3",
   "build": {
     "for": [
       "data-p",

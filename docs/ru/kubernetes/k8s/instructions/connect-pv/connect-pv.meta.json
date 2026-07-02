@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение постоянного хранилища",
   "icon": "",
   "weight": 14,
-  "uuid": "",
+  "uuid": "402cfa6c-de9c-4083-a3ed-c675e28243d9",
   "build": {
     "for": [
       "private",
