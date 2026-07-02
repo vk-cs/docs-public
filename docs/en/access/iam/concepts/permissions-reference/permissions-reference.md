@@ -486,36 +486,6 @@ Kubernetes cluster management.
 
 Allows creating Kubernetes clusters.
 
-### k8s_cluster_delete
-
-Kubernetes cluster deletion.
-
-Grants the right to completely delete Kubernetes clusters.
-
-### k8s_cluster_view
-
-Kubernetes cluster view.
-
-Provides access to view the status and parameters of all Kubernetes clusters.
-
-### k8s_cluster_management_modify
-
-Kubernetes cluster administration.
-
-Allows modifying deep management settings for Kubernetes environments.
-
-### k8s_cluster_management_delete
-
-Kubernetes administration deletion action.
-
-Grants the right to revoke administrative privileges in Kubernetes.
-
-### k8s_cluster_management_view
-
-K8s administration view.
-
-Provides access to view management settings and rights in Kubernetes clusters.
-
 ## Monitoring, Tracing, and Administration
 
 ### users_protect_modify

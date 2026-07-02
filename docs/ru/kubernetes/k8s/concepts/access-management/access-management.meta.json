@@ -1,10 +1,10 @@
 {
-  "title": "Управление доступом",
-  "shortDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes",
-  "metaDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes в VK Cloud. Описание процесса аутентификации. Взаимосвязь ролей личного кабинета и Kubernetes",
-  "sectionTitle": "Управление доступом",
+  "title": "Аутентификация в Kubernetes",
+  "shortDescription": "Как работает аутентификация в Kubernetes",
+  "metaDescription": "Технология единого входа для личного кабинета VK Cloud и кластеров Kubernetes. Узнайте, как работает аутентификация через keystone-auth и как создать kubeconfig для сервисного аккаунта",
+  "sectionTitle": "Аутентификация в Kubernetes",
   "icon": "",
-  "weight": 11,
+  "weight": 13,
   "uuid": "5b42a748-e928-400c-8bf0-e216f289e256",
   "build": {
     "for": [

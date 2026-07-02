@@ -490,42 +490,6 @@ Kubernetes негізіндегі оркестрация сервисін бас
 
 ICS агенттерінің мәртебелері мен белсенділігін қарауға мүмкіндік береді.
 
-### {heading(k8s_cluster_delete)[id=k8s_cluster_delete]}
-
-Жеке кабинеттегі атауы: `Kubernetes кластерлерін жою`.
-
-Kubernetes кластерлерін толық жоюға мүмкіндік береді.
-
-### {heading(k8s_cluster_management_delete)[id=k8s_cluster_management_delete]}
-
-Жеке кабинеттегі атауы: `Kubernetes әкімшілендіруін жою әрекеті`.
-
-Kubernetes-тегі әкімшілік өкілеттіктерді қайтарып алуға мүмкіндік береді.
-
-### {heading(k8s_cluster_management_modify)[id=k8s_cluster_management_modify]}
-
-Жеке кабинеттегі атауы: `Kubernetes кластерлерін әкімшілендіру`.
-
-Kubernetes орталарының басқару баптауларын өзгертуге мүмкіндік береді.
-
-### {heading(k8s_cluster_management_view)[id=k8s_cluster_management_view]}
-
-Жеке кабинеттегі атауы: `Kubernetes әкімшілендіруін қарау`.
-
-Kubernetes кластерлеріндегі басқару және құқықтар баптауларын қарауға мүмкіндік береді.
-
-### {heading(k8s_cluster_modify)[id=k8s_cluster_modify]}
-
-Жеке кабинеттегі атауы: `Kubernetes кластерлерін басқару`.
-
-Kubernetes кластерлерін жасауға мүмкіндік береді.
-
-### {heading(k8s_cluster_view)[id=k8s_cluster_view]}
-
-Жеке кабинеттегі атауы: `Kubernetes кластерлерін қарау`.
-
-Барлық Kubernetes кластерлерінің мәртебелері мен параметрлерін қарауға мүмкіндік береді.
-
 ## {heading(Мониторинг, трассировка және әкімшілендіру)[id=iam-permissions-monitor-trace]}
 
 Трассировканы, маршруттауды және пайдаланушылар қауіпсіздігін басқару.

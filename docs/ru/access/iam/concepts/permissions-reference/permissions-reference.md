@@ -488,42 +488,6 @@
 
 Позволяет просматривать статусы и активности агентов ICS.
 
-### {heading(k8s_cluster_delete)[id=k8s_cluster_delete]}
-
-Название в личном кабинете: `Удаление кластеров Kubernetes`.
-
-Позволяет полностью удалять кластеры Kubernetes.
-
-### {heading(k8s_cluster_management_delete)[id=k8s_cluster_management_delete]}
-
-Название в личном кабинете: `Действие по удалению администрирования Kubernetes`.
-
-Позволяет отзывать административные полномочия в Kubernetes.
-
-### {heading(k8s_cluster_management_modify)[id=k8s_cluster_management_modify]}
-
-Название в личном кабинете: `Администрирование кластеров Kubernetes`.
-
-Позволяет изменять настройки управления средами Kubernetes.
-
-### {heading(k8s_cluster_management_view)[id=k8s_cluster_management_view]}
-
-Название в личном кабинете: `Просмотр администрирования Kubernetes`.
-
-Позволяет просматривать настройки управления и прав в кластерах Kubernetes.
-
-### {heading(k8s_cluster_modify)[id=k8s_cluster_modify]}
-
-Название в личном кабинете: `Управление кластерами Kubernetes`.
-
-Позволяет создавать кластеры Kubernetes.
-
-### {heading(k8s_cluster_view)[id=k8s_cluster_view]}
-
-Название в личном кабинете: `Просмотр кластеров Kubernetes`.
-
-Позволяет просматривать статусы и параметры всех кластеров Kubernetes.
-
 ## {heading(Мониторинг, трассировка и администрирование)[id=iam-permissions-monitor-trace]}
 
 Управление трассировкой, маршрутизацией и безопасностью пользователей.

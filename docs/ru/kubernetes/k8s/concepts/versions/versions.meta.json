@@ -4,7 +4,7 @@
   "metaDescription": "Kubernetes,K8S,версия,компоненты,история,политика,поддержка",
   "sectionTitle": "О версиях и компонентах Kubernetes",
   "icon": "",
-  "weight": 10,
+  "weight": 11,
   "uuid": "fb66c4cd-8cb7-429e-a503-eb5d39e5c20e",
   "build": {
     "for": [
