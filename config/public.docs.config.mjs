@@ -76,34 +76,6 @@ export const config = {
     },
 
     header: {
-        relatedSites: {
-            ru: [
-                {
-                    title: 'On-Cloud',
-                    fullLink: 'https://cloud.vk.com/docs',
-                    selected: true,
-                    iconPartialPath: '/ru/assets/public-cloud-icon.svg',
-                },
-                {
-                    title: 'On-Premise',
-                    asPath: '/on-premises',
-                    iconPartialPath: '/ru/assets/private-cloud-icon.svg',
-                },
-            ],
-            en: [
-                {
-                    title: 'On-Cloud',
-                    fullLink: 'https://cloud.vk.com/docs',
-                    selected: true,
-                    iconPartialPath: '/ru/assets/public-cloud-icon.svg',
-                },
-                {
-                    title: 'On-Premise',
-                    asPath: '/on-premises',
-                    iconPartialPath: '/ru/assets/private-cloud-icon.svg',
-                },
-            ],
-        },
         supportMenu: {
             ru: [
                 {
