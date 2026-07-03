@@ -2,7 +2,7 @@
 
 {note:info}
 
-Для установки драйвера vGPU воспользуйтесь руководством {linkto(../vgpu-setup#vgpu-setup)[text=%text]}.
+Для установки драйвера vGPU воспользуйтесь руководством {linkto(../../how-to-guides/vgpu-setup#vgpu-setup)[text=%text]}.
 
 {/note}
 

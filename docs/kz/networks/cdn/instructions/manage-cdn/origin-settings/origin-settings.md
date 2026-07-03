@@ -262,7 +262,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 
 {note:warn}
 
-Опцияға өзгерістер енгізгеннен кейін {linkto(../../../../../networks/cdn/instructions/manage-cdn/caching/content-settings#cdn-content-settings-cache-clearing)[text=CDN-ресурс кэшін тазалау]} қажет.
+Опцияға өзгерістер енгізгеннен кейін {linkto(../../../../../networks/cdn/instructions/manage-cdn/content-settings#cdn-content-settings-cache-clearing)[text=CDN-ресурс кэшін тазалау]} қажет.
 
 {/note}
 

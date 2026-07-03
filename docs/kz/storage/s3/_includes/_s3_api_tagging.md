@@ -6,7 +6,7 @@
 
 ## {heading(PutObjectTagging)[id=api-spec-s3-put-object-tagging]}
 
-Бар объектіге {ifdef(public)}{linkto(../../../../../storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегтерді]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегтерді]}{/ifdef} қосады. Егер объектіде тегтер бар болса, олар көрсетілген жаңа тегтермен ауыстырылады. Тег — кілт/мән жұбы.
+Бар объектіге {ifdef(public)}{linkto(/kz/storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегтерді]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегтерді]}{/ifdef} қосады. Егер объектіде тегтер бар болса, олар көрсетілген жаңа тегтермен ауыстырылады. Тег — кілт/мән жұбы.
 
 Сұрау денесі:
 

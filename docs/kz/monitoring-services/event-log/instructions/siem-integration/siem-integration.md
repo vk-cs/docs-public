@@ -6,7 +6,7 @@ Cloud Audit сервисі бұлттық сервистеріңіз бен ви
 
 Сіз {var(cloud)} платформасына бірнеше SIEM жүйесін қоса аласыз, сондай-ақ бір SIEM жүйесіне бірнеше қосылымды баптай аласыз, мысалы, {var(cloud)} платформасынан деректерді әртүрлі форматтарда алу үшін. Алайда әр сәтте осы қосылымдардың тек біреуі ғана белсенді бола алады.
 
-Жеке кабинетте қосылымдардың {linkto(#event-log-edit-siem-connection)[text=параметрлерін]} және {linkto(#event-log-activate-siem-connection)[text=белсенділік күйін]} өзгерте аласыз, сондай-ақ қажетсіз қосылымдарды {linkto((#event-log-delete-siem-connection)[text=жоя]} аласыз.
+Жеке кабинетте қосылымдардың {linkto(#event-log-edit-siem-connection)[text=параметрлерін]} және {linkto(#event-log-activate-siem-connection)[text=белсенділік күйін]} өзгерте аласыз, сондай-ақ қажетсіз қосылымдарды {linkto(#event-log-delete-siem-connection)[text=жоя]} аласыз.
 
 ## {heading(SIEM-қосылымын құру)[id=event-log-create-siem-connections]}
 

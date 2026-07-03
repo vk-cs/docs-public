@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{var(s3)} бакеттегі объектілердің {linkto(../../../concepts/lifecycle#s3-concepts-lifecycle)[text=өмірлік циклін]} (lifecycle) баптауға мүмкіндік береді. Өмірлік цикл — бұл берілген ережелер бойынша бакеттен объектілерді автоматтандырылған түрде жою.
+{var(s3)} бакеттегі объектілердің {linkto(../../concepts/lifecycle#s3-concepts-lifecycle)[text=өмірлік циклін]} (lifecycle) баптауға мүмкіндік береді. Өмірлік цикл — бұл берілген ережелер бойынша бакеттен объектілерді автоматтандырылған түрде жою.
 
 ## {heading(Өмірлік цикл ережелері конфигурациясын қарау)[id=s3-instructions-manage-lifecycle-view]}
 
@@ -216,7 +216,7 @@
 {tab(AWS CLI)}
 
 1. Егер {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
-1. {linkto(../../../concepts/lifecycle#s3-concepts-lifecycle-config)[text=өмірлік цикл ережелері конфигурациясымен]} JSON форматындағы файлды дайындаңыз.
+1. {linkto(../../concepts/lifecycle#s3-concepts-lifecycle-config)[text=өмірлік цикл ережелері конфигурациясымен]} JSON форматындағы файлды дайындаңыз.
 1. Консольді ашып, команданы орындаңыз:
 
    ```console

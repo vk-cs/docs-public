@@ -4,10 +4,10 @@
 1. {var(cloud)} сервистерінің құнын зерттеңіз:
 
    1. [Прейскурантпен](https://cloud.vk.com/pricelist/) танысыңыз.
-   1. Қажет сервистер үшін төлем ерекшеліктері туралы мақалаларды оқыңыз. Мұндай мақалалар «Тарификация» деп аталады және тиісті сервистің құжаттамасында орналасады. Мысалы, Cloud Servers сервисі үшін {linkto(../../../../computing/iaas/tariffication#iaas-tariffication)[text=тарификация туралы мақала]}.
+   1. Қажет сервистер үшін төлем ерекшеліктері туралы мақалаларды оқыңыз. Мұндай мақалалар «Тарификация» деп аталады және тиісті сервистің құжаттамасында орналасады. Мысалы, Cloud Servers сервисі үшін {linkto(/kz/computing/iaas/tariffication#iaas-tariffication)[text=тарификация туралы мақала]}.
    1. Қажетті конфигурацияның құнын есептеу үшін [калькуляторды](https://cloud.vk.com/pricing) пайдаланыңыз.
 
-1. Платформа жеке және заңды тұлғаларға ұсынатын {linkto(../../../../intro/billing/concepts/report#billing-report)[text=есептік құжаттардың]} тізімімен танысыңыз.
+1. Платформа жеке және заңды тұлғаларға ұсынатын {linkto(/kz/intro/billing/concepts/report#billing-report)[text=есептік құжаттардың]} тізімімен танысыңыз.
 
 ## {counter(billing)}. Жоба балансын тексеріңіз
 
@@ -16,13 +16,13 @@
 
    Бетте дербес шоттың балансы мен жобаның бонустық балансы көрсетіледі.
 
-   Бонустық баланс {var(cloud)} жүйесінде жаңа аккаунтты [тіркегеннен](/kz/intro/onboarding/account) кейін есептелген құттықтау {linkto(../../../../intro/billing/concepts/balance#billing-balance-bonuses)[text=бонустарын]} көрсетеді.
+   Бонустық баланс {var(cloud)} жүйесінде жаңа аккаунтты [тіркегеннен](/kz/intro/onboarding/account) кейін есептелген құттықтау {linkto(/kz/intro/billing/concepts/balance#billing-balance-bonuses)[text=бонустарын]} көрсетеді.
 
    {note:err}
    Сервистерді төлеуге жұмсалмаған құттықтау бонустары аккаунт тіркелгеннен кейін 60 күнтізбелік күн өткен соң жойылады.
    {/note}
 
-Баланс туралы толығырақ — {linkto(../../../../intro/billing/instructions/payment#billing-payment)[text=Жоба балансын басқару]} мақаласында.
+Баланс туралы толығырақ — {linkto(/kz/intro/billing/instructions/payment#billing-payment)[text=Жоба балансын басқару]} мақаласында.
 
 ## {counter(billing)}. Дербес шотқа бастапқы соманы аударыңыз
 
@@ -36,7 +36,7 @@
    {/includetag}
    {includetag(billing_onboarding)}
 1. **Балансты толықтыру** түймесін басыңыз.
-1. {linkto(../../../../intro/billing/instructions/payment#billing-payment-balance-charge)[text=Жобаның дербес шотын толтырыңыз]} сізге ыңғайлы {linkto(../../../../intro/billing/concepts/payment-methods#billing-payment-methods)[text=тәсілмен]}.
+1. {linkto(/kz/intro/billing/instructions/payment#billing-payment-balance-charge)[text=Жобаның дербес шотын толтырыңыз]} сізге ыңғайлы {linkto(/kz/intro/billing/concepts/payment-methods#billing-payment-methods)[text=тәсілмен]}.
 {/tab}
 
 {tab(Ұйымдар мен кәсіпкерлерге)}
@@ -60,7 +60,7 @@
 {/tab}
 {/tabs}
 
-Дербес шоттағы қаражат ақылы ресурстар пайдаланылған сайын есептен шығарылады. Егер жоба теріс балансқа түссе, ол {linkto(../../../../tools-for-using-services/account/concepts/projects#projects-auto-freeze)[text=бұғатталады]}.
+Дербес шоттағы қаражат ақылы ресурстар пайдаланылған сайын есептен шығарылады. Егер жоба теріс балансқа түссе, ол {linkto(/kz/tools-for-using-services/account/concepts/projects#projects-auto-freeze)[text=бұғатталады]}.
 {/includetag}
 
 {includetag(billing_onboarding)}
@@ -81,7 +81,7 @@
 
 1. Баланс бетінде **Шектеулер** қойындысына өтіңіз.
 
-   Рөліңіз {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөл]} иесі немесе суперадминистратор болып табылатын барлық жобалардың тізімі көрсетіледі.
+   Рөліңіз {linkto(/kz/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөл]} иесі немесе суперадминистратор болып табылатын барлық жобалардың тізімі көрсетіледі.
 
 1. Қажетті жоба жолындағы ![Баптаулар](/kz/assets/filter_icon.svg "inline") белгішесін басыңыз.
 

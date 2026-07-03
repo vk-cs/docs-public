@@ -50,7 +50,7 @@ image-based қолданбалары үшін өзгерістер:
 
         * {linkto(../ibservice_add/tf_manifest/tf_manifest_image#tf_manifest_image)[text=%text]}.
         * {linkto(../ibservice_add/tf_manifest/tf_manifest_output#tf_manifest_output)[text=%text]}.
-        * {linkto(../tf_manifest_example#tf_manifest_example)[text=%text]}.
+        * {linkto(../ibservice_add/tf_manifest/tf_manifest_steps#tf_manifest_example)[text=%text]}.
 
     * Мониторинг — {linkto(../ibservice_add/tf_manifest/tf_manifest_monitoring#tf_manifest_monitoring)[text=%text]} бөлімі.
     * `ivkcs_compute_instance_reboot` ресурсының сипаттамасы — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_compute_instance_reboot#ivkcs_compute_instance_reboot)[text=%text]} бөлімі.

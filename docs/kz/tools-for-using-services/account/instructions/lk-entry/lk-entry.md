@@ -41,4 +41,4 @@
 1. (Опционалды) Әрі қарай жұмыс істеу үшін жеке кабинеттің жоғарғы жолағында {linkto(../project-settings/manage#tools-account-project-select)[text=жобаны таңдаңыз]}.
    {/ifdef}
 
-{var(cloud)} жеке кабинетімен жұмыс істегенде {linkto(./user-session#tools-account-user-session)[text=қол жеткізу сеансы мен пайдаланушыны бұғаттау]} ерекшеліктерін ескеріңіз.
+{var(cloud)} жеке кабинетімен жұмыс істегенде {linkto(../../concepts/user-session#tools-account-user-session)[text=қол жеткізу сеансы мен пайдаланушыны бұғаттау]} ерекшеліктерін ескеріңіз.

@@ -1,6 +1,6 @@
 # {heading(Сервисные учетные записи)[id=api-spec-service-users]}
 
-REST API Service Users поддерживает управление {linkto(../../../account/concepts/service-accounts#tools-account-concepts-service-accounts)[text=сервисными учетными записями]}:
+REST API Service Users поддерживает управление {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисными учетными записями]}:
 
 - просмотр списка сервисных учетных записей;
 - просмотр, создание и удаление сервисных учетных записей;

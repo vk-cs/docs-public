@@ -8,13 +8,13 @@
 
 С полным списком ролей и разрешений вы можете ознакомиться в справочниках:
 
-- {linkto(../access/iam/concepts/roles-reference#iam-roles-reference)[text=Справочник ролей]}.
-- {linkto(../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=Справочник разрешений]}.
+- {linkto(../roles-reference#iam-roles-reference)[text=Справочник ролей]}.
+- {linkto(../permissions-reference#iam-permissions-reference)[text=Справочник разрешений]}.
 
 У каждой роли и каждого разрешения есть:
 
 - название в личном кабинете, которое используется для назначения или удаления роли через графический интерфейс;
-- техническое название, которое используется для управления проектом и сервисами через {linkto(../../../api#tools-api)[text=API]} и {linkto(../../../terraform#tools-terraform)[text=Terraform]}.
+- техническое название, которое используется для управления проектом и сервисами через {linkto(../../../../tools-for-using-services/api#tools-api)[text=API]} и {linkto(../../../../tools-for-using-services/terraform#tools-terraform)[text=Terraform]}.
 
 {cut(Примеры)}
 
@@ -43,7 +43,7 @@
 
 Кроме пользователей, в проект также могут быть добавлены {linkto(../service-accounts#iam-concepts-service-accounts)[text=сервисные учетные записи]} (СУЗ), предназначенные для взаимодействия между программами и сервисами. Для СУЗ назначаются любые роли и разрешения, за исключением роли `Владелец проекта`.
 
-Список участников проекта и назначенных им ролей и разрешений можно {linkto(../access/iam/instructions/access-manage#iam-access-manage)[text=посмотреть]} на странице **Управление доступами** личного кабинета.
+Список участников проекта и назначенных им ролей и разрешений можно {linkto(../../instructions/access-manage#iam-access-manage)[text=посмотреть]} на странице **Управление доступами** личного кабинета.
 
 Для некоторых сервисов существуют особые наборы прав. Далее приведены такие наборы прав и то, как они соотносятся с  ролями VK Cloud.
 

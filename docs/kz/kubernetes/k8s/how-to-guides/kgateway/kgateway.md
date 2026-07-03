@@ -70,7 +70,7 @@ Kgateway тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-clus
 ## {heading({counter(kgateway)}. Gateway объектісін жасаңыз)[id=k8s-kgateway-gateway]}
 
 {note:warn}
-Gateway объектісі үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме теңгергіші]} және {linkto(/kz/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-мекенжайы]} жасалады. Оларды пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
+Gateway объектісі үшін {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме теңгергіші]} және {linkto(/kz/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-мекенжайы]} жасалады. Оларды пайдалану {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
 {/note}
 
 1. Gateway API [түріндегі](https://gateway-api.sigs.k8s.io/reference/api-types/gateway/) `Gateway` ресурсы үшін `my-gateway.yaml` манифест файлын жасаңыз:

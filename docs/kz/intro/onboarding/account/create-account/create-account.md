@@ -188,7 +188,7 @@
 {tab(Ұйымдар мен кәсіпкерлерге)}
 {include(../../../../_includes/_invite-user.md)}
 
-Сіз {var(cloud)}-қа өзіңіздің Identity Provider куәландыру жеткізушіңізді қоса аласыз. Бұл қызметкерлеріңізге корпоративтік аутентификациялық деректерді пайдаланып, логин мен құпиясөзді енгізбей-ақ {var(cloud)}-қа кіруге мүмкіндік береді. Мұндай режим куәландыру деректерінің федерациясы деп аталады. Куәландыру деректерінің федерациясын {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad#vk-cloud-account-ad-fim)[text=Active Directory]}, {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/keycloak-to-fim#vk-cloud-account-keycloak-fim)[text=Keycloak]} және {linkto(../../../../tools-for-using-services/vk-cloud-account/how-to-guides/ms-entra-fim#vk-cloud-account-ms-entra-fim)[text=Microsoft Entra]} арқылы баптауға болады.
+Сіз {var(cloud)}-қа өзіңіздің Identity Provider куәландыру жеткізушіңізді қоса аласыз. Бұл қызметкерлеріңізге корпоративтік аутентификациялық деректерді пайдаланып, логин мен құпиясөзді енгізбей-ақ {var(cloud)}-қа кіруге мүмкіндік береді. Мұндай режим куәландыру деректерінің федерациясы деп аталады. Куәландыру деректерінің федерациясын {linkto(../../../../access/iam/how-to-guides/federations/add-fim-for-ad#iam-ad-fim)[text=Active Directory]}, {linkto(../../../../access/iam/how-to-guides/federations/keycloak-to-fim#iam-keycloak-fim)[text=Keycloak]} және {linkto(../../../../access/iam/how-to-guides/federations/ms-entra-fim#iam-ms-entra-fim)[text=Microsoft Entra]} арқылы баптауға болады.
 {/tab}
 {/tabs}
 

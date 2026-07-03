@@ -19,7 +19,7 @@
 
 1. LDAP ортасын жасаңыз:
 
-   1. {var(cloud)} ішінде интернетке қолжетімді виртуалды желіні таңдаңыз немесе {linkto(../../../../networks/vnet/instructions/net#sozdanie_seti)[text=жасаңыз]}. Сыртқы желіге қосылған бар маршрутизаторды пайдаланыңыз немесе жаңасын {linkto(../../../../networks/vnet/instructions/router#dobavlenie_marshrutizatora)[text=жасаңыз]}.
+   1. {var(cloud)} ішінде интернетке қолжетімді виртуалды желіні таңдаңыз немесе {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}. Сыртқы желіге қосылған бар маршрутизаторды пайдаланыңыз немесе жаңасын {linkto(../../../../networks/vnet/instructions/router#dobavlenie_marshrutizatora)[text=жасаңыз]}.
 
       Келесі ақпаратты жазып алыңыз:
 
@@ -32,7 +32,7 @@
 
 1. VDI ортасын жасаңыз:
 
-   1. {var(cloud)} ішінде интернетке қолжетімді, транзиттік желі функциясын орындайтын виртуалды желіні таңдаңыз немесе {linkto(../../../../networks/vnet/instructions/net#sozdanie_seti)[text=жасаңыз]}. Сыртқы желіге қосылған бар маршрутизаторды пайдаланыңыз немесе жаңасын {linkto(../../../../networks/vnet/instructions/router#dobavlenie_marshrutizatora)[text=жасаңыз]}.
+   1. {var(cloud)} ішінде интернетке қолжетімді, транзиттік желі функциясын орындайтын виртуалды желіні таңдаңыз немесе {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}. Сыртқы желіге қосылған бар маршрутизаторды пайдаланыңыз немесе жаңасын {linkto(../../../../networks/vnet/instructions/router#dobavlenie_marshrutizatora)[text=жасаңыз]}.
 
       Келесі ақпаратты жазып алыңыз:
 
@@ -435,7 +435,7 @@ VPN-туннель арқылы трафик дұрыс өтуі үшін iptabl
 
 ## {heading(11. Жұмысқа қабілеттілікті тексеріңіз)[id=desktops-ipsec-functionality-check]}
 
-1. CIDR `10.55.4.0/22` және `vdi-router` маршрутизаторы бар виртуалды желіні {linkto(../../../../networks/vnet/instructions/net#sozdanie_seti)[text=жасаңыз]}. Бұл желі VDI желісін имитациялайды және желілік байланысты тексеру үшін қажет. VDI жайылған кезде мұндай желі автоматты түрде жасалады.
+1. CIDR `10.55.4.0/22` және `vdi-router` маршрутизаторы бар виртуалды желіні {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}. Бұл желі VDI желісін имитациялайды және желілік байланысты тексеру үшін қажет. VDI жайылған кезде мұндай желі автоматты түрде жасалады.
 1. `10.55.4.0/22` желісінде тестілік {linkto(../../../../computing/iaas/instructions/vm/vm-create)[text=виртуалды машина жасаңыз]} және оған SSH арқылы қосылыңыз.
 1. LDAP-серверге ping жіберіңіз:
 

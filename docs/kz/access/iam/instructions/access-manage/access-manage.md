@@ -1,4 +1,4 @@
-# {heading(Қолжетімділікті басқару)[id=tools-account-iam-access-manage-manage]}
+# {heading(Қолжетімділікті басқару)[id=iam-access-manage]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 

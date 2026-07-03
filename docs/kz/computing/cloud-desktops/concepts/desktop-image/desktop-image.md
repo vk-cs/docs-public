@@ -33,13 +33,13 @@
 - Cloud Desktop Client қолданбасының пайдаланушыларына қажет қолданбалар.
 
 {ifdef(public)}
-Образдан жасалған ВМ {linkto(../../../../computing/cloud-desktops/gpu/concepts/about#gpu-about)[text=графикалық үдеткіштердің]} (GPU) мүмкіндіктерін пайдалана алуы үшін образда мыналар болуы тиіс:
+Образдан жасалған ВМ {linkto(../../../gpu/concepts/about#gpu-about)[text=графикалық үдеткіштердің]} (GPU) мүмкіндіктерін пайдалана алуы үшін образда мыналар болуы тиіс:
 
 - GPU драйверлері орнатылған;
-- егер {linkto(../../../../computing/cloud-desktops/gpu/concepts/vgpu#vgpu-licensing)[text=виртуалды графикалық үдеткіштер]} (vGPU) пайдаланылса, лицензиялау токені бапталған.
+- егер {linkto(../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=виртуалды графикалық үдеткіштер]} (vGPU) пайдаланылса, лицензиялау токені бапталған.
 
-Толығырақ {linkto(../../../../computing/cloud-desktops/gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=vGPU бар ВМ баптау]} нұсқаулығында.
-{/ifdef}.
+Толығырақ {linkto(../../../gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=vGPU бар ВМ баптау]} нұсқаулығында.
+{/ifdef}
 
 ## {heading(Жеке образды дайындау бойынша ұсыныстар)[id=desktops-image-recommend]}
 

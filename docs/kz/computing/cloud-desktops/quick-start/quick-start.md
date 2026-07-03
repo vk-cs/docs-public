@@ -96,7 +96,7 @@
 
    Мысалда `99.166.240.100` IP-мекенжайы пайдаланылады.
 
-1. {linkto(../../../computing/cloud-desktops/instructions/desktops-pool/user-instructions#desktops-install-client)[text=Қашықтағы жұмыс үстелдеріне қол жеткізу клиентін жүктеп алып, орнатыңыз]}.
+1. {linkto(../../../computing/cloud-desktops/user-instructions#desktops-install-client)[text=Қашықтағы жұмыс үстелдеріне қол жеткізу клиентін жүктеп алып, орнатыңыз]}.
 1. Пулдарға қосылыңыз:
 
    1. Орнатылған клиентті ашыңыз.

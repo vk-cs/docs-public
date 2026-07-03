@@ -26,7 +26,7 @@
 
    - `<ИМЯ_БАКЕТА>` — жалпы көлемін көру қажет бакеттің атауы.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.

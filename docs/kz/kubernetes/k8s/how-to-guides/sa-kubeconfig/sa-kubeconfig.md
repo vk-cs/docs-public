@@ -64,7 +64,7 @@ Cloud Containers кластеріне {linkto(../../connect/kubectl#k8s-kubectl)
 
    Әр команда үшін `yes` жауабы шығуы керек.
 
-   Егер осы ресурстардың кез келгенін жасауға құқық болмаса (`no` жауабы), кластерге қосылу орындалып жатқан VK Cloud пайдаланушысының {linkto(../../../..access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=рөлін түзетіңіз]}.
+   Егер осы ресурстардың кез келгенін жасауға құқық болмаса (`no` жауабы), кластерге қосылу орындалып жатқан VK Cloud пайдаланушысының {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=рөлін түзетіңіз]}.
 
    Рөлдік модель және қолжетімді рөлдер туралы толығырақ {linkto(../../concepts/access-management#k8s-access-management)[text=Қолжетімділікті басқару]} бөлімінен оқыңыз.
 

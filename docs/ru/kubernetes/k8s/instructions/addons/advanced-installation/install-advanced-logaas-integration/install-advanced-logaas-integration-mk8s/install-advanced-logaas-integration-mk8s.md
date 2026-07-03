@@ -6,7 +6,7 @@
 
 1. Подключите сервис {linkto(../../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
-1. {linkto(../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Cоздайте]} сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе {linkto(../../../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-logging)[text=Права в сервисе Cloud Logging]}. Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
+1. {linkto(../../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Cоздайте]} сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в столбце **Создание сервисных пользователей и названий сервисов** в разделе {linkto(../../../../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-logging)[text=Права в сервисе Cloud Logging]}. Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
 
    Используйте логин и пароль для доступа к СУЗ, полученные после ее создания, при установке аддона.  
 
@@ -111,7 +111,7 @@
        my-cluster-node-0.kubelet.service
        ```
 
-     - Для {linkto(../../../../reference/pods#k8s-pods)[text=пода]} (pod): `<имя пространства имен (namespace)>.<имя>`.
+     - Для {linkto(../../../../../reference/pods#k8s-pods)[text=пода]} (pod): `<имя пространства имен (namespace)>.<имя>`.
 
        Сначала имя ищется в следующих метках (labels):
 

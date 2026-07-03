@@ -15,7 +15,7 @@
 - {linkto(../../instructions/service-account-manage#service-account-authorize)[text=настраивать]} окружение для доступа к API от имени СУЗ;
 - {linkto(../../instructions/service-account-manage#service-account-delete)[text=удалять]} СУЗ.
 
-Эти же действия можно выполнять {linkto(../../../api/api-spec/api-service-users#api-spec-service-users)[text=через API]}.
+Эти же действия можно выполнять {linkto(../../../../tools-for-using-services/api/api-spec/api-service-users#api-spec-service-users)[text=через API]}.
 
 Права на управление СУЗ в зависимости от роли в проекте:
 

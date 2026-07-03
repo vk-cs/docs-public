@@ -65,7 +65,7 @@ CDN серверлерінде әдепкі бойынша деректерді 
 
 {cut(CDN баптауға арналған API бар ма?)}
 
-Иә, CDN-ресурстардың жұмысын басқару және мониторингтеу үшін API әдістері {linkto(../../../../tools-for-using-services/api/api-spec/api-cdn#api-spec-cdn)[text=API анықтамасы]} бөлімінде орналастырылған.
+Иә, CDN-ресурстардың жұмысын басқару және мониторингтеу үшін API әдістері {linkto(../../../tools-for-using-services/api/api-spec/api-cdn#api-spec-cdn)[text=API анықтамасы]} бөлімінде орналастырылған.
 
 {/cut}
 
@@ -77,13 +77,13 @@ CDN серверлерінде әдепкі бойынша деректерді 
 
 {cut(CDN статистикасын көруге бола ма?)}
 
-Иә, болады. Қызмет бойынша статистиканы көру үшін {linkto(../../../../networks/cdn/monitoring#cdn-monitoring)[text=нұсқаулықты пайдаланыңыз]}.
+Иә, болады. Қызмет бойынша статистиканы көру үшін {linkto(../../../networks/cdn/monitoring#cdn-monitoring)[text=нұсқаулықты пайдаланыңыз]}.
 
 {/cut}
 
 {cut(Неліктен менде CDN сервисіне қолжетімділік жоқ?)}
 
-Пайдаланушы рөлдерінің барлығында CDN-ге қолжетімділік бола бермейді. Егер сізді жобаға шақырса, өзіңіздің {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөліңіз]} үшін CDN сервисіне қолжетімділікті тексеріңіз.
+Пайдаланушы рөлдерінің барлығында CDN-ге қолжетімділік бола бермейді. Егер сізді жобаға шақырса, өзіңіздің {linkto(../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөліңіз]} үшін CDN сервисіне қолжетімділікті тексеріңіз.
 
 Егер сіздің рөліңізде CDN-де жұмыс істеуге рұқсаттар болса, бірақ сервис қолжетімсіз болса, [техникалық қолдауға](/kz/contacts) хабарласыңыз.
 
@@ -94,7 +94,7 @@ CDN серверлерінде әдепкі бойынша деректерді 
 Иә. CDN қолжетімділігінде мәселелер туындаса, мыналарды тексеріңіз:
 
 1. Көздің қолжетімділігі. Көз жағынан {var(cloud)} CDN серверлерінің IP-мекенжайларына қолжетімділік шектелмегеніне көз жеткізіңіз. IP-мекенжайлардың өзекті тізімін [техникалық қолдаудан](/kz/contacts) сұратуға болады.
-1. `Host` HTTP-тақырыбы. {linkto(../../../../networks/cdn/instructions/manage-cdn/http-headers#cdn-http-headers)[text=CDN-ресурс баптауларында]} көздің дұрыс домендік атауы көрсетілгеніне көз жеткізіңіз.
+1. `Host` HTTP-тақырыбы. {linkto(../../../networks/cdn/instructions/manage-cdn/http-headers#cdn-http-headers)[text=CDN-ресурс баптауларында]} көздің дұрыс домендік атауы көрсетілгеніне көз жеткізіңіз.
 1. Егер аралық прокси-сервисті пайдалансаңыз, SSL баптаулары. Мысал: Cloudflare пайдаланған кезде онда SSL Full (Strict) режимін баптаңыз.
 {/cut}
 
@@ -107,7 +107,7 @@ CDN серверлерінде әдепкі бойынша деректерді 
 
 {var(cloud)} CDN стандартты `Cache-Control` және `Expires` HTTP-тақырыптарын ескереді. `s-maxage` директивасы `max-age`-ге қарағанда басымдыққа ие.
 
-Сондай-ақ кэштеу уақытын {linkto(../../../../networks/cdn/instructions/manage-cdn/caching#cdn-caching-cdn-resource)[text=CDN-ресурс баптауларында]} және {linkto(../../../../networks/cdn/instructions/manage-cdn/caching#cdn-caching-browser)[text=браузерге арналған баптауларда]} мәжбүрлі түрде орната аласыз.
+Сондай-ақ кэштеу уақытын {linkto(../../../networks/cdn/instructions/manage-cdn/caching#cdn-caching-cdn-resource)[text=CDN-ресурс баптауларында]} және {linkto(../../../networks/cdn/instructions/manage-cdn/caching#cdn-caching-browser)[text=браузерге арналған баптауларда]} мәжбүрлі түрде орната аласыз.
 {/cut}
 
 {cut(CDN-де WebSocket қолдауы бар ма?)}
@@ -145,6 +145,6 @@ CDN белсендіру кезіндегі ішкі қате платформа
 Иә. Ол үшін:
 
 1. Бакетті жеке етіңіз.
-1. CDN-де еркін HTTP-тақырыпты {linkto(../../../../networks/cdn/instructions/manage-cdn/http-headers#cdn-http-headers-add-request)[text=баптаңыз]}.
+1. CDN-де еркін HTTP-тақырыпты {linkto(../../../networks/cdn/instructions/manage-cdn/http-headers#cdn-http-headers-add-request)[text=баптаңыз]}.
 1. Көрсетілген мәні бар тақырып болған кезде ғана сұрауларға рұқсат беретін бакетке қол жеткізу саясатын баптаңыз.
 {/cut}

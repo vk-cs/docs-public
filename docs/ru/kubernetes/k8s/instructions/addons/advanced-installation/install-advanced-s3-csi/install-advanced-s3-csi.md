@@ -1,7 +1,7 @@
 # {heading(Container Storage Interface для S3 (S3-CSI))[id=k8s-install-advanced-s3-csi]}
 
 {note:info}
-Этот аддон доступен только для кластеров {linkto(../../cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
+Этот аддон доступен только для кластеров {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
 {/note}
 
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-s3-csi-prep]}

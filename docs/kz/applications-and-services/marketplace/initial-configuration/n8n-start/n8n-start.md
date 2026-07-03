@@ -10,11 +10,11 @@ n8n мүмкіндіктері:
 - Сыртқы сервистермен интеграция: REST API, вебхуктар, сондай-ақ Google Sheets, Slack, Telegram және т.б. сияқты танымал сервистерді қолдау.
 - Экспорт және импорт: бапталған процестерді инстанстар арасында ыңғайлы тасымалдау.
 
-n8n пайдалану арқылы сіз [Marketplace](/kz/intro/start/legal/marketplace) және [n8n Sustainable Use License](https://docs.n8n.io/sustainable-use-license) лицензиялық келісімдерімен келісесіз.
+n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [n8n Sustainable Use License](https://docs.n8n.io/sustainable-use-license) лицензиялық келісімдерімен келісесіз.
 
 ## 1. VK Cloud жобасында n8n сервисін өрістетіңіз
 
-1. [Тіркеліңіз](/kz/intro/start/account-registration) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
+1. [Тіркеліңіз](/kz/intro/onboarding/account/create-account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
 
 1. **Қолданбалар дүкені** бөліміне өтіп, бөлім бетінде **Барлық шешімдер** түймесін басыңыз.
 
