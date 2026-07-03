@@ -26,7 +26,7 @@
    1. Выберите конфигурацию экземпляра сервиса:
 
       {include(../../../_includes/_data_p.md)[tags=configuration]}
-
+      
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге **Параметры**:
@@ -67,7 +67,11 @@
       {/tab}
 
       {/tabs}
-
+         
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
+      
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге **Обслуживание**:
