@@ -15,7 +15,7 @@ aws s3api put-object-lock-configuration \
 
 - `<ИМЯ_БАКЕТА>` — бакет атауы.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -59,7 +59,7 @@ aws s3api put-object-lock-configuration \
 - `<СРОК_БЛОКИРОВКИ>` — объект жүктелген сәттен бастап күндермен (`Days`) немесе жылдармен (`Years`) бұғаттау мерзімі. `Days` және `Years` мәндерін бір уақытта көрсетуге болмайды. Мысал: `1825` күн (5 жыл).
 
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -88,7 +88,7 @@ aws s3api get-object-retention \
 - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
 - `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -116,7 +116,7 @@ aws s3api put-object-legal-hold \
 - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
 - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -143,7 +143,7 @@ aws s3api get-object-legal-hold \
 - `<ИМЯ_БАКЕТА>` — бакет атауы.
 - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -173,7 +173,7 @@ aws s3api get-object \
 - `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
 - `<ИМЯ_ФАЙЛА>` — жүктеп алынған файлға берілетін атау.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -205,7 +205,7 @@ aws s3api put-object \
 - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
 - `<СРОК_БЛОКИРОВКИ>` — [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) форматындағы бұғаттаудың аяқталу күні мен уақыты. Мысал: `2030-01-01T00:00:00.000Z`.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
@@ -229,7 +229,7 @@ aws s3api put-object \
 - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
 - `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -259,7 +259,7 @@ aws s3api put-object \
 - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
 - `<ПРЕФИКС>` — жою қажет объект кілттерінің барлығына ортақ префикс. Бос префикс көрсетілсе, бакеттегі барлық объектілер жойылады.
   {ifdef(public)}
-- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.

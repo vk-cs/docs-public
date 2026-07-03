@@ -14,7 +14,7 @@ Check your key and signing method`.
 
 ### {heading(Шешімі)[id=s3-signature-does-not-match-resolve]}
 
-1. Команданың `--endpoint-url` параметрінде сервис домені дұрыс көрсетілгеніне көз жеткізіңіз{ifdef(public)} және {var(s3)} аккаунтының {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келетініне көз жеткізіңіз:
+1. Команданың `--endpoint-url` параметрінде сервис домені дұрыс көрсетілгеніне көз жеткізіңіз{ifdef(public)} және {var(s3)} аккаунтының {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келетініне көз жеткізіңіз:
 
    - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
    - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені{/ifdef}.

@@ -51,7 +51,7 @@
 
      {/note}
 
-   - **Виртуалды машина санаты**: ВМ алдын ала орнатылған конфигурацияларының {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=санатын]} таңдаңыз.
+   - **Виртуалды машина санаты**: ВМ алдын ала орнатылған конфигурацияларының {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-concepts-vm-flavor)[text=санатын]} таңдаңыз.
 
    - **Master виртуалды машинасының түрі**: master-түйіндерге арналған {linkto(../../../concepts/flavors#k8s-flavors-vm-flavor)[text=виртуалды машина шаблоны]}.
 

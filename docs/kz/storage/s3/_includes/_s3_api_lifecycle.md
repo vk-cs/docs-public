@@ -5,7 +5,7 @@
 - {linkto(#api-spec-s3-put-bucket-lifecycle)[text=%text]} — өмірлік цикл ережелері бар конфигурацияны орнату.
 - {linkto(#api-spec-s3-delete-bucket-lifecycle)[text=%text]} — өмірлік цикл конфигурациясын жою.
 
-Өмірлік цикл ережелері бар конфигурация XML форматында беріледі. Ережеге түсетін объектілерді сүзгілеу үшін {ifdef(public)}{linkto(../../../../../storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегтер]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегтер]}{/ifdef} және {ifdef(public)}{linkto(../../../../../storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілті]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілті]}{/ifdef} қолданылады.
+Өмірлік цикл ережелері бар конфигурация XML форматында беріледі. Ережеге түсетін объектілерді сүзгілеу үшін {ifdef(public)}{linkto(/kz/storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегтер]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегтер]}{/ifdef} және {ifdef(public)}{linkto(/kz/storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілті]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілті]}{/ifdef} қолданылады.
 
 ## {heading(Өмірлік цикл конфигурациясының XML-құрылымы)[id=api-spec-s3-lifecycle-request-body]}
 
@@ -84,11 +84,11 @@
 
 |`Rule.Filter.And.Prefix`
 |xs\:string (string)
-|{ifdef(public)}{linkto(../../../../../storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef} префиксі.
+|{ifdef(public)}{linkto(/kz/storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef} префиксі.
 
 |`Rule.Filter.And.Tag`
 |repeating complex element
-|Объектінің {ifdef(public)}{linkto(../../../../../storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}.
+|Объектінің {ifdef(public)}{linkto(/kz/storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}.
 |===
 {ifdef(s3-pdf)}
 {/caption}
@@ -152,7 +152,7 @@
 
 |`Rule.Filter.Prefix`
 |xs\:string (string)
-|{ifdef(public)}{linkto(../../../../../storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef} префиксі.
+|{ifdef(public)}{linkto(/kz/storage/s3/concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/about#s3-concepts-about-object-key)[text=объект кілтінің]}{/ifdef} префиксі.
 |===
 {ifdef(s3-pdf)}
 {/caption}
@@ -218,7 +218,7 @@
 
 |`Rule.Filter.Tag`
 |complex element
-|Объектінің {ifdef(public)}{linkto(../../../../../storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}  .
+|Объектінің {ifdef(public)}{linkto(/kz/storage/s3/concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../concepts/features#s3-concepts-features-tagging)[text=тегі]}{/ifdef}  .
 |===
 {ifdef(s3-pdf)}
 {/caption}

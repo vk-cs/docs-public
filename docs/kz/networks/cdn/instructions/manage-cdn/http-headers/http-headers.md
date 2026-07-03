@@ -130,7 +130,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 
 ## {heading(CORS тақырыптарын қолдау)[id=cdn-http-headers-cors]}
 
-{linkto(../../../../../../storage/s3/concepts/access/s3-cors#s3-s3-cors)[text=Cross-Origin Resource Sharing (CORS)]} механизмі пайдаланушының браузері бастапқы доменнен өзгеше домендерде орналасқан ресурстарға қол жеткізу рұқсаттарын алуы үшін Access-Control-Allow-Origin жауап тақырыбын пайдаланады.
+{linkto(../../../../../storage/s3/concepts/access/s3-cors#s3-s3-cors)[text=Cross-Origin Resource Sharing (CORS)]} механизмі пайдаланушының браузері бастапқы доменнен өзгеше домендерде орналасқан ресурстарға қол жеткізу рұқсаттарын алуы үшін Access-Control-Allow-Origin жауап тақырыбын пайдаланады.
 
 Access-Control-Allow-Origin HTTP тақырыбын баптау үшін:
 

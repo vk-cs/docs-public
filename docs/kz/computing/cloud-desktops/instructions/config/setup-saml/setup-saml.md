@@ -11,7 +11,7 @@ Cloud Desktop сервисінің барлық жұмыс үстелдері ү
 
 Cloud Desktop ішінде SAML аутентификация сервисін пайдалану үшін дайындық әрекеттерін орындаңыз:
 
-1. <!---{linkto(../../../../../computing/cloud-desktops/instruction/config/setup-ldap)[text=Баптаңыз]}--> AD немесе LDAP пайдаланушылар каталогы қызметін.
+1. <!---{linkto(../../../../../computing/cloud-desktops/instructions/config/setup-ldap#desktops-setup-ldap)[text=Баптаңыз]}--> AD немесе LDAP пайдаланушылар каталогы қызметін.
 1. SAML идентификация провайдерін каталог қызметімен бір доменге қосыңыз.
 1. Cloud Desktop сервисімен интеграциялау үшін SAML идентификация провайдерін дайындаңыз. Баптау тәртібі таңдалған SAML-провайдерге байланысты.
 

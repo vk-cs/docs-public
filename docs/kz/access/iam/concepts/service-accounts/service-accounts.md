@@ -1,4 +1,4 @@
-# {heading(Жеке кабинет пайдаланушыларының рөлдері мен құқықтары)[id=tools-account-concepts-service-accounts]}
+# {heading(Жеке кабинет пайдаланушыларының рөлдері мен құқықтары)[id=iam-concepts-service-accounts]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -10,12 +10,12 @@
 
 Жобадағы рөліне байланысты пайдаланушы жеке кабинетте мыналарды орындай алады:
 
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-create)[text=құру]} СТЖ;
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-view-list)[text=көру]} жоба СТЖ тізімін;
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-view-card)[text=көру]} СТЖ карточкасын;
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-download-rc-file)[text=жүктеп алу]} өз құрылғысына API пайдалану үшін қажетті OpenStack RC-файлын;
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-authorize)[text=баптау]} СТЖ атынан API-ге қол жеткізу ортасын;
-- {linkto(../../instructions/project-settings/service-account-manage#service-account-delete)[text=жою]} СТЖ.
+- {linkto(../../instructions/service-account-manage#service-account-create)[text=құру]} СТЖ;
+- {linkto(../../instructions/service-account-manage#service-account-view-list)[text=көру]} жоба СТЖ тізімін;
+- {linkto(../../instructions/service-account-manage#service-account-view-card)[text=көру]} СТЖ карточкасын;
+- {linkto(../../instructions/service-account-manage#service-account-download-rc-file)[text=жүктеп алу]} өз құрылғысына API пайдалану үшін қажетті OpenStack RC-файлын;
+- {linkto(../../instructions/service-account-manage#service-account-authorize)[text=баптау]} СТЖ атынан API-ге қол жеткізу ортасын;
+- {linkto(../../instructions/service-account-manage#service-account-delete)[text=жою]} СТЖ.
 
 Осы әрекеттерді [API арқылы](/kz/tools-for-using-services/api/api-spec/api-service-users) да орындауға болады.
 

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{linkto(../../../concepts/ips-and-inet#vnet-ips-and-inet-anycast-ip)[text=Anycast IP-адрестерін]} басқару {var(cloud)} жеке кабинетінде және {linkto(../../../../tools-for-using-services/api/api-spec/network-api/neutron-sprut-api#api-spec-neutron-sprut)[text=API]} арқылы қолжетімді.
+{linkto(../../../concepts/ips-and-inet#vnet-ips-and-inet-anycast-ip)[text=Anycast IP-адрестерін]} басқару {var(cloud)} жеке кабинетінде және {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/neutron-sprut-api#api-spec-neutron-sprut)[text=API]} арқылы қолжетімді.
 
 ## {heading(Добавление Anycast IP-адреса)[id=vnet-anycast-ip-add]}
 

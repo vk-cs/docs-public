@@ -2,12 +2,12 @@
 Жобалар бойынша барлық есептен шығарулар мен түсімдер жоба {ifdef(public)}[баланс бетінде](https://kz.cloud.vk.com/app/services/billing){/ifdef}{ifndef(public)}баланс бетінде{/ifndef} {var(cloud)} жеке кабинетінде тіркеледі.
 
 {ifdef(public)}
-Шығыстарды егжей-тегжейлі көрсету жобаңыздағы {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлі]} иесі, суперәкімші, жоба әкімшісі немесе биллинг әкімшісі болып табылатын пайдаланушыларға қолжетімді.
+Шығыстарды егжей-тегжейлі көрсету жобаңыздағы {linkto(/kz/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлі]} иесі, суперәкімші, жоба әкімшісі немесе биллинг әкімшісі болып табылатын пайдаланушыларға қолжетімді.
 
 {note:warn}
-{linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} Мәскеу есептен шығарулар мен толықтыруларды егжей-тегжейлі көрсету Мәскеу уақытына (GMT+3), Қазақстан өңірінде Астана уақытына (GMT+6) байланыстырылған.
+{linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} Мәскеу есептен шығарулар мен толықтыруларды егжей-тегжейлі көрсету Мәскеу уақытына (GMT+3), Қазақстан өңірінде Астана уақытына (GMT+6) байланыстырылған.
 
-Дәл осы қағида {linkto(../../../..intro/billing/concepts/report#billing-report)[text=есептік құжаттарды қалыптастыру]} кезінде де қолданылады.
+Дәл осы қағида {linkto(/kz/intro/billing/concepts/report#billing-report)[text=есептік құжаттарды қалыптастыру]} кезінде де қолданылады.
 {/note}
 {/ifdef}
 
@@ -17,7 +17,7 @@
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
-1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
+1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(detail-all)}
 1. Жоба балансы бетін келесі тәсілдердің бірімен ашыңыз:
@@ -37,10 +37,10 @@
     - Қаражат қозғалысының түрін көрсетіңіз: есептен шығарулар немесе түсімдер.
 {/includetag}
 {includetag(file-billing-detail)}
-    - ![Сүзгі](../../../../assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
+    - ![Сүзгі](/kz/assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
 {/includetag}
 {includetag(file-account-detail)}
-    - ![Сүзгі](../../../../../assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
+    - ![Сүзгі](/kz/assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
 {/includetag}
 
 {includetag(detail-all)}
@@ -51,7 +51,7 @@
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
-1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
+1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(detail-all)}
 1. Жоба балансы бетін келесі тәсілдердің бірімен ашыңыз:
@@ -66,10 +66,10 @@
     - Қаражат қозғалысының түрін көрсетіңіз: есептен шығарулар немесе түсімдер.
 {/includetag}
 {includetag(file-billing-detail)}
-    - ![Сүзгі](../../../../assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
+    - ![Сүзгі](/kz/assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
 {/includetag}
 {includetag(file-account-detail)}
-    - ![Сүзгі](../../../../../assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
+    - ![Сүзгі](/kz/assets/filter_icon.svg "inline") белгішесін басып, тізімнен жобаларды таңдау арқылы көрсетілетін жобаларды баптаңыз.
 {/includetag}
 {includetag(detail-all)}
       Тізімде сіздің рөліңіз иесі немесе суперәкімші болып табылатын жобалар көрсетіледі. Әдепкі бойынша деректер ағымдағы жоба бойынша сүзгіден өткізіледі.
@@ -81,7 +81,7 @@
 1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
-1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
+1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(detail-all)}
 1. Жоба балансы бетін келесі тәсілдердің бірімен ашыңыз:
@@ -93,10 +93,10 @@
 1. **Егжей-тегжейлеу** қойындысына өтіңіз.
 {/includetag}
 {includetag(file-billing-detail)}
-1. ![Жүктеп алу](../../../../assets/download_icon.svg "inline") белгішесін басыңыз.
+1. ![Жүктеп алу](/kz/assets/download_icon.svg "inline") белгішесін басыңыз.
 {/includetag}
 {includetag(file-account-detail)}
-1. ![Жүктеп алу](../../../../../assets/download_icon.svg "inline") белгішесін басыңыз.
+1. ![Жүктеп алу](/kz/assets/download_icon.svg "inline") белгішесін басыңыз.
 {/includetag}
 {includetag(detail-all)}
 1. {ifdef(public)}Ашылған терезеде {linkto(/kz/intro/billing/concepts/balance#billing-details)[text=есепті]} таңдаңыз:

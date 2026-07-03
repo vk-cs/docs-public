@@ -9,17 +9,17 @@
 
    Роль суперадминистратора может назначить только владелец проекта. Роль администратора пользователей (IAM) может назначить только владелец проекта или суперадминистратор. Пригласить участника на роль владельца проекта нельзя. Если участнику назначено несколько ролей, их разрешения суммируются.
 
-   Позже вы можете {linkto(../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=изменить]} назначенные участнику роли и разрешения.
+   Позже вы можете {linkto(/ru/access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=изменить]} назначенные участнику роли и разрешения.
 
 1. Нажмите кнопку **Добавить пользователя**.
 
 На указанную почту будет выслано приглашение, оно действительно в течение 24 часов.
 
 {includetag(access-manage)}
-После {linkto(../../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
+После {linkto(/ru/tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
 
 {note:info}
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
 {/note}
 {/includetag}
 
@@ -28,7 +28,7 @@
 
 {note:info}
 
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(../access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
 
 {/note}
 {/includetag}

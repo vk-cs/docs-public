@@ -12,8 +12,8 @@ Cloud Desktop сервисінің желілік конфигурациясын
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
-1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#sozdanie_seti)[text=жасаңыз]}.
-1. Қажетті ішкі желінің атауын басыңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#sozdanie_podseti)[text=жасаңыз]}, {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескере отырып.
+1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}.
+1. Қажетті ішкі желінің атауын басыңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=жасаңыз]}, {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескере отырып.
 1. **Порттар** қойындысында {linkto(../../../../../networks/vnet/concepts/sdn#sdn)[text=SDN]} желісіне қарай порттардың IP-мекенжайларын көшіріп алыңыз:
 
    - `Neutron` үшін — DHCP-порттарының IP-мекенжайлары;

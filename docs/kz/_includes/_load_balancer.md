@@ -4,4 +4,4 @@
 * `ROUND_ROBIN` — барлық бэкендтер ретімен кезектесіп таңдалады.
 * `SOURCE_IP` — бэкенд ерікті түрде таңдалып, клиенттің нақты IP-мекенжайы үшін сессияға бекітіледі.
 
-Жүктемені теңгеру әдісі жеке кабинетте {linkto(../../../../networks/balancing/instructions/manage-rules#balancing-manage-rules)[text=теңгеру ережесін қосу]} кезінде таңдалады.
+Жүктемені теңгеру әдісі жеке кабинетте {linkto(/kz/networks/balancing/instructions/manage-rules#balancing-manage-rules)[text=теңгеру ережесін қосу]} кезінде таңдалады.

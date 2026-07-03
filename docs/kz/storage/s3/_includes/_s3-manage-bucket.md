@@ -21,7 +21,7 @@ aws s3api create-bucket \
     Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.     
 
 {ifdef(public)}
-- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -30,7 +30,7 @@ aws s3api create-bucket \
 - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
 {/ifdef}
 
-- `<КОД_РЕГИОНА>` — аккаунт өңірінің коды, мысалы `ru-msk`{ifdef(public)} Мәскеу өңірі үшін. Қолжетімді мәндер {linkto(../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=VK Object Storage сервисінің API сипаттамасында]}{/ifdef} берілген.{/ifdef(public)}{/ifdef}
+- `<КОД_РЕГИОНА>` — аккаунт өңірінің коды, мысалы `ru-msk`{ifdef(public)} Мәскеу өңірі үшін. Қолжетімді мәндер {linkto(/kz/tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=VK Object Storage сервисінің API сипаттамасында]}{/ifdef} берілген.{/ifdef(public)}{/ifdef}
 
 {/includetag}
 

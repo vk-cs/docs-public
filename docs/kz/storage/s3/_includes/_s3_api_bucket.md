@@ -10,7 +10,7 @@
 
 ## {heading(CreateBucket)[id=api-spec-s3-create-bucket]}
 
-`PUT` операциясы жаңа бакет жасайды. API арқылы бакет жасау үшін алдымен пайдаланушыны {ifdef(public)}{linkto(../../../../../storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=жасау]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=жасау]}{/ifdef} және қол жеткізу кілтін алу қажет. Анонимді сұраулар арқылы бакет жасау мүмкін емес. Бакет жасауға арналған сұраудың бастамашысы автоматты түрде оның иесі болады.
+`PUT` операциясы жаңа бакет жасайды. API арқылы бакет жасау үшін алдымен пайдаланушыны {ifdef(public)}{linkto(/kz/storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=жасау]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=жасау]}{/ifdef} және қол жеткізу кілтін алу қажет. Анонимді сұраулар арқылы бакет жасау мүмкін емес. Бакет жасауға арналған сұраудың бастамашысы автоматты түрде оның иесі болады.
 
 Бакет жасау операциясын қолданғанда бакетке белгілі бір құқықтар беру қажет жобаларды немесе топтарды көрсетуге, сондай-ақ сақтау класын көрсетуге болады: hotbox немесе icebox. Сұрау тақырыптары арқылы құқық берудің екі тәсілі бар:
 

@@ -7,7 +7,7 @@
 
     Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям Cloud Trino, настраивать отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} не нужно.
 
-- Отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-invite-user)[text=назначаются]} дополнительно, если входящих в {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базовую роль]} недостаточно.
+- Отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначаются]} дополнительно, если входящих в {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базовую роль]} недостаточно.
 
     {note:info}
 
@@ -21,7 +21,7 @@
 
 {note:info}
 
-Роли и разрешения могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-invite-user)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
+Роли и разрешения могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
 
 {/note}
 

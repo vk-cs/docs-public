@@ -8,7 +8,7 @@
 
 1. Жобада {linkto(../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} сервисін қосыңыз, егер бұл әлі жасалмаған болса. Ол үшін [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).
 
-1. {linkto(../../../../../../tools-for-using-services/account/instructions/project-settings/service-account-manage#service-account-create)[text=Құрыңыз]} Cloud Logging сервисіне логтарды жазу құқықтары бар сервистік есептік жазбаны (СЕЖ). Бұл құқықтар қолжетімді болатын рөлдер {linkto(../../../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-logging)[text=Cloud Logging сервисіндегі құқықтар]} бөліміндегі **Сервистік пайдаланушыларды және сервистер атауларын жасау** бағанында көрсетілген. Осы СЕЖ үшін ұсынылатын рөл — `Аудитор Kubernetes`.
+1. {linkto(../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Құрыңыз]} Cloud Logging сервисіне логтарды жазу құқықтары бар сервистік есептік жазбаны (СЕЖ). Бұл құқықтар қолжетімді болатын рөлдер {linkto(../../../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-logging)[text=Cloud Logging сервисіндегі құқықтар]} бөліміндегі **Сервистік пайдаланушыларды және сервистер атауларын жасау** бағанында көрсетілген. Осы СЕЖ үшін ұсынылатын рөл — `Аудитор Kubernetes`.
 
    Аддонды орнату кезінде СЕЖ-ге қол жеткізу үшін оның құрылғаннан кейін алынған логині мен паролін пайдаланыңыз.  
 

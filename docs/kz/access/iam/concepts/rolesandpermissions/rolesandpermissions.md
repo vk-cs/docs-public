@@ -8,13 +8,13 @@
 
 Рөлдер мен рұқсаттардың толық тізімімен анықтамалықтарда таныса аласыз:
 
-- {linkto(../access/iam/concepts/roles-reference#iam-roles-reference)[text=Рөлдер анықтамалығы]}.
-- {linkto(../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=Рұқсаттар анықтамалығы]}.
+- {linkto(/kz/access/iam/concepts/roles-reference#iam-roles-reference)[text=Рөлдер анықтамалығы]}.
+- {linkto(/kz/access/iam/concepts/permissions-reference#iam-permissions-reference)[text=Рұқсаттар анықтамалығы]}.
 
 Әрбір рөл мен рұқсатта мыналар бар:
 
 - жеке кабинеттегі атауы, ол графиктік интерфейс арқылы рөлді тағайындау немесе жою үшін қолданылады;
-- техникалық атауы, ол жобаны және сервистерді {linkto(../../../api#tools-api)[text=API]} және {linkto(../../../terraform#tools-terraform)[text=Terraform]} арқылы басқару үшін қолданылады.
+- техникалық атауы, ол жобаны және сервистерді {linkto(../../../../tools-for-using-services/api#tools-api)[text=API]} және {linkto(../../../../tools-for-using-services/terraform#tools-terraform)[text=Terraform]} арқылы басқару үшін қолданылады.
 
 {cut(Мысалдар)}
 
@@ -43,7 +43,7 @@
 
 Пайдаланушылардан басқа, жобаға бағдарламалар мен сервистер арасындағы өзара әрекеттесуге арналған {linkto(../service-accounts#iam-concepts-service-accounts)[text=сервистік есептік жазбалар]} (СЕЖ) да қосылуы мүмкін. СЕЖ үшін `Жоба иесі` рөлінен басқа кез келген рөлдер мен рұқсаттар тағайындалады.
 
-Жоба қатысушыларының тізімін және оларға тағайындалған рөлдер мен рұқсаттарды жеке кабинеттің **Қолжетімділікті басқару** бетінде {linkto(../access/iam/instructions/access-manage#iam-access-manage)[text=көруге]} болады.
+Жоба қатысушыларының тізімін және оларға тағайындалған рөлдер мен рұқсаттарды жеке кабинеттің **Қолжетімділікті басқару** бетінде {linkto(/kz/access/iam/instructions/access-manage#iam-access-manage)[text=көруге]} болады.
 
 Кейбір сервистер үшін ерекше құқық жиынтықтары бар. Төменде осындай құқық жиынтықтары және олардың VK Cloud рөлдерімен қалай байланысатыны келтірілген.
 
@@ -267,7 +267,7 @@
 
 ## {heading(Cloud Containers сервисінің рөлдеріне арналған құқықтар)[id=rolesandpermissions-k8s]}
 
-Жеке кабинетте {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers сервисімен}} жұмыс істеуге арналған мамандандырылған рөлдер қолжетімді:
+Жеке кабинетте {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers сервисімен]} жұмыс істеуге арналған мамандандырылған рөлдер қолжетімді:
 
 - Kubernetes әкімшісі,
 - Kubernetes операторы,

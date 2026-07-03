@@ -258,5 +258,5 @@
 
 Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады. Егер олар енді қажет болмаса:
 
-- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]} жасалған ВМ-дерді;
-- {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=жойыңыз]} `test-network` және `test-network-2` желілерін.
+- {linkto(/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]} жасалған ВМ-дерді;
+- {linkto(/kz/networks/vnet/instructions/net#vnet-net-delete)[text=жойыңыз]} `test-network` және `test-network-2` желілерін.

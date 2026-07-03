@@ -8,7 +8,7 @@
 
 ## {heading(Дайындық қадамдары)[id=desktops-pool-preparatory-steps]}
 
-1. {ifdef(public,private,private-pg)}[қызметке қосылу](../../config){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../computing/cloud-desktops/concepts#desktops-concepts)[text=қызметке қосылу]}{/ifdef} бапталғанына көз жеткізіңіз.
+1. {ifdef(public,private,private-pg)}[қызметке қосылу](../../config){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../../computing/cloud-desktops/concepts#desktops-concepts)[text=Қызметке қосылу]}{/ifdef} бапталғанына көз жеткізіңіз.
 1. Егер виртуалды машиналар пулын жасау үшін жеке образыңызды пайдаланғыңыз келсе, оның {linkto(../../../../../computing/cloud-desktops/concepts/desktop-image#desktops-image-custom-requirements)[text=талаптарға]} сәйкес келетініне көз жеткізіңіз.
 
    Образды кез келген ыңғайлы тәсілмен дайындауға болады, мысалы, {ifdef(public,private,private-pg)}[тәжірибелік нұсқаулықтардың](/kz/computing/iaas/how-to-guides){/ifdef}{ifdef(private-pdf,private-pg-pdf)}<!---{linkto(../../../../../computing/iaas/how-to-guides)[text=тәжірибелік нұсқаулықтардың]}-->{/ifdef} бірін пайдаланып.
@@ -21,8 +21,8 @@
 
    1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
    1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
-   1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../../networks/vnet/instructions/net#sozdanie_seti)[text=жасаңыз]}.
-   1. Қажетті ішкі желі үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Ішкі желіні өңдеу** тармағын таңдаңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../../networks/vnet/instructions/net#sozdanie_podseti)[text=жасаңыз]}, мұнда {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескеріңіз.
+   1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}.
+   1. Қажетті ішкі желі үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Ішкі желіні өңдеу** тармағын таңдаңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=жасаңыз]}, мұнда {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескеріңіз.
    1. **Приватный DNS** опциясын өшіріңіз.
    1. **DNS-серверлер** өрісінде тізімнің алғашқы орындарында DNS-серверлеріңіздің IP-мекенжайларын көрсетіңіз, әр мекенжай жаңа жолдан басталсын.
    1. Өзгерістерді сақтаңыз.
@@ -48,7 +48,7 @@
      - **Дараланған** — мұндай пулда әр жұмыс үстелі оған бірінші болып қосылған пайдаланушыға бекітіледі. Пайдаланушы бұл жұмыс үстелін оның өмірлік циклі аяқталғанға дейін иеленеді және оны өз міндеттерін шешуге бейімдей алады. Бұл пул түрі ең жиі қолданылады.
 
    - **Сипаттама**: пул сипаттамасы, 250 таңбаға дейін.
-   - **Желі**: тізімнен бұрын {linkto(#desktops-pool-preparatory-steps)[text=дайындалған желіні]} таңдаңыз. Бұл параметр қызметтің {linkto(../../../../../computing/cloud-desktops/instruction/config/setup-net#desktops-setup_net)[text=желілік баптауларында]} қолмен басқару режимі таңдалған жағдайда қолжетімді.
+   - **Желі**: тізімнен бұрын {linkto(#desktops-pool-preparatory-steps)[text=дайындалған желіні]} таңдаңыз. Бұл параметр қызметтің {linkto(../../../../../computing/cloud-desktops/instructions/config/setup-net#desktops-net-step_setup)[text=желілік баптауларында]} қолмен басқару режимі таңдалған жағдайда қолжетімді.
    - **Пайдаланушылар тобы**: AD немесе LDAP каталогының пайдаланушылар тобын көрсетіңіз. Осы топтағы пайдаланушыларға пулдан жұмыс үстелдері тағайындалады. Өріске қойылатын талаптар: 3-тен 100 таңбаға дейін, тек латын әріптері, `-`, `_`, `.` таңбалары және цифрлар рұқсат етіледі.
    - **OU**: AD немесе LDAP каталогындағы ұйымдық бөлімшені (organizational unit) көрсетіңіз. Мысалы, `OU=Workstations,DC=domain,DC=com`.
    - **Атау беру маскасы**: осы пулдағы жұмыс үстелдерінің атаулары басталатын префикс. Маскаға қойылатын талаптар: 3-тен 15 таңбаға дейін, тек кіші регистрдегі латын әріптері және соңындағы `-` таңбасы рұқсат етіледі.
@@ -71,7 +71,7 @@
 
 1. Пулдың жұмыс үстелдері жасалатын виртуалды машиналардың баптауларын орнатыңыз:
 
-   - **Виртуалды машина санаты**: тізімнен {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=санатты]} таңдаңыз. Санат **Инстанс түрі** өрісі үшін сүзгі болып табылады.
+   - **Виртуалды машина санаты**: тізімнен {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-concepts-vm-flavor)[text=санатты]} таңдаңыз. Санат **Инстанс түрі** өрісі үшін сүзгі болып табылады.
    - **Инстанс түрі**: жобада қолжетімді түрлер тізімінен ВМ түрін таңдаңыз.
    - **Диск өлшемі**: ГБ-мен диск өлшемін көрсетіңіз. Мәні ОЖ образының өлшемінен кіші болмауы керек.
    - **Диск түрі**: `HDD`, `SSD` немесе `High-IOPS SSD` мәндерінің бірін таңдаңыз.
@@ -86,7 +86,8 @@
      - `Windows Server 2022 Standard (en)`,
      - `Red OS 7.3 Стандарт (Cloud Desktop)`,
      - `Astra Linux SE 1.7 Орел (Cloud Desktop)`.
-     {/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+     {/ifdef}
+     {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
      - `Astra Linux SE 1.7 Орел (Cloud Desktop Astra)`,
      - `Red OS 7.3 Стандарт (Cloud Desktop RedOS)`,
      - `Windows Server 2022 Ru (Cloud Desktop Windows)`.
@@ -94,7 +95,9 @@
 
      {/cut}
 
-     {ifdef(public)}Егер сіз GPU бар конфигурация шаблондарын жобаға қосуға [өтінім берген болсаңыз](#desktops-pool-preparatory-steps), сәйкес образдар да таңдау үшін қолжетімді болады.{/ifdef}
+     {ifdef(public)}
+     Егер сіз GPU бар конфигурация шаблондарын жобаға қосуға [өтінім берген болсаңыз](#desktops-pool-preparatory-steps), сәйкес образдар да таңдау үшін қолжетімді болады.
+     {/ifdef}
 
      Қажет болса, **Жеке образыңызды жүктеу** батырмасын басып, бұрын дайындалған образды {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импорттау жөніндегі нұсқаулыққа]} сәйкес жүктеңіз.
 
@@ -121,5 +124,5 @@
 Пул сәтті құрылғаннан кейін құрылған пулдар тізімі ашылады.
 
 {note:warn}
-Егер пулдың виртуалды машиналарын жасау үшін Windows ОЖ бар образ таңдалса, соңғы пайдаланушылар виртуалды жұмыс үстелдеріне қосыла алуы үшін Active Directory домен контроллері үшін {linkto(../../../../../computing/cloud-desktops/group-policies#desktpo-group-policies)[text=топтық саясаттарды]} баптаңыз.
+Егер пулдың виртуалды машиналарын жасау үшін Windows ОЖ бар образ таңдалса, соңғы пайдаланушылар виртуалды жұмыс үстелдеріне қосыла алуы үшін Active Directory домен контроллері үшін {linkto(../../../../../computing/cloud-desktops/instructions/group-policies#desktops-group-policies)[text=топтық саясаттарды]} баптаңыз.
 {/note}

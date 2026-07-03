@@ -1,4 +1,4 @@
-{linkto(../../../../networks/vnet/concepts/router#vnet-router-advanced)[text=Кеңейтілген маршрутизатор]} жергілікті инфрақұрылымыңызда орналасқан желіні {var(cloud)} виртуалды желілерімен және ішкі желілерімен маршрутизатор ретінде бөлінген виртуалды машинаны пайдаланбай байланыстыруға мүмкіндік береді. Бұл [BGP](https://datatracker.ietf.org/doc/html/rfc1163) протоколы бойынша динамикалық маршруттау мүмкіндігінің арқасында деректер алмасуды жеңілдетеді.
+{linkto(/kz/networks/vnet/concepts/router#vnet-router-advanced)[text=Кеңейтілген маршрутизатор]} жергілікті инфрақұрылымыңызда орналасқан желіні {var(cloud)} виртуалды желілерімен және ішкі желілерімен маршрутизатор ретінде бөлінген виртуалды машинаны пайдаланбай байланыстыруға мүмкіндік береді. Бұл [BGP](https://datatracker.ietf.org/doc/html/rfc1163) протоколы бойынша динамикалық маршруттау мүмкіндігінің арқасында деректер алмасуды жеңілдетеді.
 
 Кеңейтілген маршрутизаторды баптауды көрсету үшін BGP-протоколы бойынша екі тәуелсіз желі байланыстырылатын болады:
 
@@ -7,7 +7,7 @@
 
 ## {heading(Дайындық қадамдары)[id=includes-advanced-router-prep]}
 
-1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. OpenStack клиенті {linkto(/kz/tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
 1. Жергілікті инфрақұрылымыңыздағы клиенттік желіні таңдаңыз:
 
@@ -32,7 +32,7 @@
    Мысал ретінде BGP-маршрутизатор функцияларын орындайтын Router OS 7.10 (MikroTik) виртуалды машинасы бар желі пайдаланылады.
    {/note}
 
-1. {var(cloud)} ішінде интернетке қолжетімділігі бар виртуалды желіні таңдаңыз немесе {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}. Сыртқы желіге қосылған бұрыннан бар маршрутизаторды пайдаланыңыз немесе {linkto(../../../../networks/vnet/instructions/router#vnet-router-add)[text=жаңасын жасаңыз]}.
+1. {var(cloud)} ішінде интернетке қолжетімділігі бар виртуалды желіні таңдаңыз немесе {linkto(/kz/networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}. Сыртқы желіге қосылған бұрыннан бар маршрутизаторды пайдаланыңыз немесе {linkto(/kz/networks/vnet/instructions/router#vnet-router-add)[text=жаңасын жасаңыз]}.
 
    Келесі ақпаратты жазып алыңыз:
 
@@ -40,7 +40,7 @@
    - ішкі желі орналасқан желінің атауы;
    - маршрутизатордың атауы.
 
-1. Таңдалған желіде {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=виртуалды машина жасаңыз]}. SSH арқылы қолжетімділікті қосыңыз және резервтік көшіруді өшіріңіз.
+1. Таңдалған желіде {linkto(/kz/computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=виртуалды машина жасаңыз]}. SSH арқылы қолжетімділікті қосыңыз және резервтік көшіруді өшіріңіз.
 
    ВМ IP-мекенжайын жазып алыңыз.
 
@@ -73,17 +73,17 @@
 |Виртуалды машина
 |`10.0.0.5`
 |`172.17.0.8`
-|![](../../../../assets/no.svg "inline")
+|![](/kz/assets/no.svg "inline")
 
 |BGP-маршрутизатор
 |`MikroTik`
-|![](../../../../assets/no.svg "inline")
-|![](../../../../assets/no.svg "inline")
+|![](/kz/assets/no.svg "inline")
+|![](/kz/assets/no.svg "inline")
 |===
 
 Желілерді алдын ала дайындау сызбасы келесідей көрінеді:
 
-![Желілерді алдын ала дайындау сызбасы](../../../../networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
+![Желілерді алдын ала дайындау сызбасы](/kz/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
 
 ## {heading(1. Кеңейтілген маршрутизаторды қосыңыз)[id=includes-advanced-router-add-router]}
 
@@ -336,12 +336,12 @@ IP-мекенжай пингке жауап беруі тиіс.
 
 Желілер мен олардың ішіндегі машиналар арасындағы құрылған өзара әрекеттесу сызбасы келесідей көрінеді:
 
-![Желілер арасындағы өзара әрекеттесу сызбасы](../../../../networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
+![Желілер арасындағы өзара әрекеттесу сызбасы](/kz/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=includes-advanced-router-delete]}
 
 Егер жасалған ресурстар сізге енді қажет болмаса, оларды жойыңыз:
 
-1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машинаны жойыңыз]}.
-1. {linkto(../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Маршрутизаторларды жойыңыз]}.
-1. ВМ орналастырылған {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желіні]} және {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=желіні]} жойыңыз.
+1. {linkto(/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машинаны жойыңыз]}.
+1. {linkto(/kz/networks/vnet/instructions/router#vnet-router-delete)[text=Маршрутизаторларды жойыңыз]}.
+1. ВМ орналастырылған {linkto(/kz/networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желіні]} және {linkto(/kz/networks/vnet/instructions/net#vnet-net-delete)[text=желіні]} жойыңыз.
