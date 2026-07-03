@@ -53,7 +53,7 @@
       1. Выберите [зону доступности](/ru/start/concepts/architecture#architecture-az), где будет размещен узел кластера Cloud Containers.
    {/ifdef}
    1. Настройте параметры узлов, на которых будет развернут экземпляр сервиса:
-
+      
       {tabs}
 
       {tab(Одиночный узел)}
@@ -79,6 +79,10 @@
       {/tab}
 
       {/tabs}
+
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
       
    1. Нажмите кнопку **Следующий шаг**.
 1. На шаге **Обслуживание**:

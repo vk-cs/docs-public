@@ -53,7 +53,7 @@
    {/ifdef}
             
    1. Настройте параметры узлов кластера, выбрав одну из опций:
-
+      
       {tabs}
       
       {tab(Базовая)}
@@ -90,6 +90,10 @@
       {/tab}
       
       {/tabs}
+
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
 
    1. Нажмите кнопку **Следующий шаг**.
 

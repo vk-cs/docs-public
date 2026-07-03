@@ -89,6 +89,11 @@
 
       {/tabs}
 
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
+   
+
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге **Учетные данные**:
