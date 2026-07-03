@@ -585,27 +585,12 @@
 
 ### {heading(mcs_admin_vm)[id=mcs_admin_vm]}
 
-Название в личном кабинете: `Администратор виртуальных машин`.
-
-Роль с разрешениями на выполнение основных операций в сервисе [Cloud Servers](/ru/computing/iaas).
+{include(/ru/_includes/_iam_iaas.md)[tags=mcs_admin_vm]}
 
 ### {heading(mcs_junior_admin_vm)[id=mcs_junior_admin_vm]}
 
-Название в личном кабинете: `Младший администратор ВМ`.
-
-Роль с теми же разрешениями, что и у роли `mcs_admin_vm`, за исключением разрешений на управление группами безопасности.
+{include(/ru/_includes/_iam_iaas.md)[tags=mcs_junior_admin_vm]}
 
 ### {heading(mcs_operator_vm)[id=mcs_operator_vm]}
 
-Название в личном кабинете: `Оператор ВМ`.
-
-Роль с разрешениями для работы на виртуальной машине, но без разрешений на управление ее настройками.
-
-Пользователь с этой ролью может:
-
-- Запустить или остановить ВМ.
-- Работать в ВМ через [VNC-консоль](/ru/computing/iaas/instructions/vm/vm-console).
-- Подключаться к ВМ через [SSH](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) или [RDP](/ru/computing/iaas/instructions/vm/vm-connect/vm-connect-win).
-- Просматривать конфигурацию и сетевые настройки ВМ.
-
-Оператор ВМ не может создавать резервные копии.
+{include(/ru/_includes/_iam_iaas.md)[tags=mcs_operator_vm]}
