@@ -1,0 +1,15 @@
+{
+  "title": "Репликация данных из внешних кластеров Kafka",
+  "shortDescription": "Настройка репликации данных из внешних кластеров Kafka с помощью компонента Mirror Maker",
+  "metaDescription": "Пошаговая инструкция по настройке репликации данных из внешних кластеров Kafka в текущий кластер Cloud Kafka VK Data Platform с помощью Mirror Maker",
+  "sectionTitle": "Репликация данных из внешних кластеров Kafka",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
