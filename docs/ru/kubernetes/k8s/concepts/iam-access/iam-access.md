@@ -8,7 +8,7 @@
 
   Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям во всех сервисах.
 
-- Отдельная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированная роль]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-invite-user)[text=назначается]} дополнительно, если прав, входящих в базовую роль, недостаточно. Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Cloud Containers не поддерживается.
+- Отдельная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированная роль]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначается]} дополнительно, если прав, входящих в базовую роль, недостаточно. Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Cloud Containers не поддерживается.
 
   {note:info}
   Доступы, предоставляемые вместе с базовой ролью, имеют приоритет над отдельными специализированными ролями.
@@ -19,7 +19,7 @@
 ## {heading(Специализированные роли)[id=k8s-concepts-iam-special-roles]}
 
 {note:info}
-Специализированные роли могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-invite-user)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
+Специализированные роли могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
 {/note}
 
 Для сервиса Cloud Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать дополнительно к {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовым ролям]} `Администратор пользователей (IAM)` или `Наблюдатель`. По умолчанию доступ к Cloud Containers у этих базовых ролей ограничен:
