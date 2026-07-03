@@ -1,32 +1,45 @@
+{includetag(create,create-from-disk)}
 1. Задайте параметры ВМ в блоке **Конфигурация**:
-
+   {/includetag}
    {ifdef(public)}
-    - **Операционная система**: выберите {linkto(../../../../../computing/iaas/concepts/oper-system#iaas-oper-system)[text=версию операционной системы]} или образ, который вы ранее {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=создали]} или {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировали]} в {var(cloud)}.
-    - **Категория виртуальной машины**: выберите {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
-    - **Тип виртуальной машины**: выберите предустановленную конфигурацию ВМ.
-
-      Для создания ВМ с графическим ускорителем нужен {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=шаблон конфигурации Cloud GPU]}. Если в списке нет необходимого шаблона, {linkto(../../../../../computing/gpu/connect#gpu-connect)[text=запросите]} его.
-
+   {includetag(create)}
+   - **Операционная система**: выберите {linkto(../../../../../computing/iaas/concepts/oper-system#iaas-oper-system)[text=версию операционной системы]} или образ, который вы ранее {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=создали]} или {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировали]} в {var(cloud)}.
+   {/includetag}
+   {includetag(create,create-from-disk)}
+   - **Категория виртуальной машины**: выберите {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
+   - **Тип виртуальной машины**: выберите предустановленную конфигурацию ВМ.
+     {/includetag}
+     {includetag(create)}
+     Для создания ВМ с графическим ускорителем нужен {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=шаблон конфигурации Cloud GPU]}. Если в списке нет необходимого шаблона, {linkto(../../../../../computing/gpu/connect#gpu-connect)[text=запросите]} его.
+     {/includetag}
    {/ifdef}
+
+   {includetag(create)}
    {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
-    - **Имя виртуальной машины**: используйте только латинские буквы, цифры или спецсимволы `-`, `_` и `.`.
-    - **Тип виртуальной машины**: выберите предустановленный {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации ВМ]}.
+   - **Имя виртуальной машины**: используйте только латинские буквы, цифры или спецсимволы `-`, `_` и `.`.
+   - **Тип виртуальной машины**: выберите предустановленный {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации ВМ]}.
 
-      {ifndef(private-cert)}
-      Если для работы требуются {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=шаблоны конфигурации ВМ с GPU или vGPU]}, обратитесь к администратору {var(cloud)} с просьбой добавить их в проект.
-      {/ifndef}
-      {/ifdef}
+     {ifndef(private-cert)}
+     Если для работы требуются {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=шаблоны конфигурации ВМ с GPU или vGPU]}, обратитесь к администратору {var(cloud)} с просьбой добавить их в проект.
+     {/ifndef}
+     {/ifdef}
 
-    - **Зона доступности**: выберите {ifndef(private-cert)}{linkto(../../../../../computing/iaas/concepts/avail-zone#iaas-avail-zone)[text=зону доступности]}{/ifndef}{ifdef(private-cert)}зону доступности{/ifdef}, где будет запущена ВМ.
-    - **Количество машин в конфигурации**: укажите нужное число ВМ.
-      {ifdef(public)}
+   - **Зона доступности**: выберите {ifndef(private-cert)}{linkto(../../../../../computing/iaas/concepts/avail-zone#iaas-avail-zone)[text=зону доступности]}{/ifndef}{ifdef(private-cert)}зону доступности{/ifdef}, где будет запущена ВМ.
+   - **Количество машин в конфигурации**: укажите нужное число ВМ.
+   {/includetag}
+   {includetag(create-from-disk)}
+   - **Зона доступности**: значение соответствует зоне доступности диска, из которого создается ВМ.
+   {/includetag}
+   {includetag(create,create-from-disk)}
+   {ifdef(public)}
 1. Заполните блок **Общая информация**:
 
-    - **Имя виртуальной машины**: используйте только латинские буквы, цифры или спецсимволы `-`, `_` и `.`.
-      {/ifdef}
-    - **Теги**: при необходимости {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags)[text=укажите тег]} для ВМ или создайте новый.
-    - **Настроить скрипты при запуске ВМ**: включите опцию, чтобы добавить bash-скрипт или [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) сценарий, который будет выполнен при первом запуске ВМ. {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}Введите код скрипта вручную или загрузите файл скрипта с расширением `.txt` или `.sh`.{/ifdef}
-
+   - **Имя виртуальной машины**: используйте только латинские буквы, цифры или спецсимволы `-`, `_` и `.`.
+     {/ifdef}
+   - **Теги**: при необходимости {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags)[text=укажите тег]} для ВМ или создайте новый.
+   - **Настроить скрипты при запуске ВМ**: включите опцию, чтобы добавить bash-скрипт или [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) сценарий, который будет выполнен при первом запуске ВМ. {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}Введите код скрипта вручную или загрузите файл скрипта с расширением `.txt` или `.sh`.{/ifdef}
+   {/includetag}
+   {includetag(create)}
    {ifdef(public)}
 1. Укажите параметры диска в блоке **Размер и скорость диска**.
    {/ifdef}
@@ -39,7 +52,8 @@
    {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
 1. Нажмите кнопку **Следующий шаг**.
    {/ifdef}
-
+   {/includetag}
+   {includetag(create,create-from-disk)}
 1. Задайте настройки сети в блоке {ifdef(public)}**Сеть и настройки firewall**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}**Настройка сети**{/ifdef}.
 
     - **Сеть**: выберите существующую сеть или создайте новую. При создании новой сети {ifdef(public)}появятся дополнительные поля:
@@ -114,3 +128,4 @@
 
 1. Нажмите кнопку {ifdef(public)}**Создать**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}**Создать инстанс**{/ifdef}.
 1. Дождитесь создания ВМ. Этот процесс может занять некоторое время. Когда создание будет завершено, откроется страница с характеристиками ВМ и инструкцией по подключению.
+{/includetag}
