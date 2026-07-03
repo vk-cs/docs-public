@@ -3,7 +3,7 @@
   "shortDescription": "Распределение виртуальных ресурсов по зонам доступности в VK Cloud",
   "metaDescription": "Распределение виртуальных ресурсов по зонам доступности в VK Cloud",
   "sectionTitle": "Зоны доступности",
-  "weight": 6,
+  "weight": 7,
   "uuid": "043d416d-4577-4b33-8aa2-c93ac4c5aa79",
   "build": {
     "for": [
