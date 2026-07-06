@@ -169,7 +169,7 @@
 
 {cut(Можно ли зарегистрироваться в {var(cloud)} без статуса индивидуального предпринимателя или юридического лица?)}
 
-Да, {linkto(../../intro/onboarding/account/create-account)[text=регистрация]} в {var(cloud)} возможна для физических лиц.
+Да, {linkto(../../intro/onboarding/account/create-account#onboarding-create-account)[text=регистрация]} в {var(cloud)} возможна для физических лиц.
 
 {/cut}
 
