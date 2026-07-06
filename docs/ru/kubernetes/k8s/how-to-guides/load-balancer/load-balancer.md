@@ -4,7 +4,7 @@
 Для всех сервисов Kubernetes типа «балансировщик нагрузки» (`spec.type: LoadBalancer`) платформа {var(cloud)} может автоматически создавать соответствующий TCP-балансировщик нагрузки с заданным поведением.
 
 {note:warn}
-При развертывании для каждого из сервисов будет создан {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
+При развертывании для каждого из сервисов будет создан {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
 Использование балансировщиков {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}

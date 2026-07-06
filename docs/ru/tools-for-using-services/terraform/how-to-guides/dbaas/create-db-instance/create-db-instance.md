@@ -25,7 +25,7 @@
 - Внешний IP-адрес: назначен.
 
 {note:warn}
-При создании инстансов БД MySQL или PostgreSQL в {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурации]} **Кластер** будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
+При создании инстансов БД MySQL или PostgreSQL в {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурации]} **Кластер** будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
 
 Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}

@@ -1,6 +1,6 @@
 # {heading(Балансировщик возвращает ошибку 504 Gateway Timeout)[id=balancing-balancer-timeout]}
 
-{ifdef(public)}Наблюдаются проблемы с балансировщиком нагрузки {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартного типа]}. {/ifdef}Балансировщик возвращает ошибку `504 Gateway Timeout`. 
+{ifdef(public)}Наблюдаются проблемы с балансировщиком нагрузки {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартного типа]}. {/ifdef}Балансировщик возвращает ошибку `504 Gateway Timeout`. 
 
 Проблема возникает при плохой связи, когда на балансировщике срабатывают тайм-ауты. Задержка в ответе на запрос, вызывающая ошибку, — примерно 60 секунд.
 

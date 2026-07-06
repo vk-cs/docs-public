@@ -1,7 +1,7 @@
 # {heading(Развертывание Ingress-контроллера с TCP-балансировщиком)[id=k8s-ingress-tcp]}
 
 {note:warn}
-При развертывании Ingress-контроллера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
+При развертывании Ingress-контроллера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
 Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}

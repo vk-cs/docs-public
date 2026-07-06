@@ -5,7 +5,7 @@
 Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. При выборе {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддона]} NGINX Ingress Controller для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. При выборе {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддона]} NGINX Ingress Controller для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
 Использование балансировщиков {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}

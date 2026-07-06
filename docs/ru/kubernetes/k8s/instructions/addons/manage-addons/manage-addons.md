@@ -127,7 +127,7 @@
 
 {ifdef(public)}
 {note:warn}
-При установке аддонов Docker Registry и Ingress NGINX для них будут созданы {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартные балансировщики нагрузки]}.
+При установке аддонов Docker Registry и Ingress NGINX для них будут созданы {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартные балансировщики нагрузки]}.
 
 Использование балансировщиков {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}

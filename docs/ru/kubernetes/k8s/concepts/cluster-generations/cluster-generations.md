@@ -20,7 +20,7 @@
 - виртуальные машины (ВМ);
 - диски ВМ;
 - {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=постоянные тома (PV)]};
-- {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисные балансировщики нагрузки]}, обеспечивающие доступ к Kubernetes API, и их IP-адреса.
+- {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисные балансировщики нагрузки]}, обеспечивающие доступ к Kubernetes API, и их IP-адреса.
 
 Порты, а также стандартные балансировщики нагрузки и их IP-адреса размещаются в пользовательских проектах. 
 

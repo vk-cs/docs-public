@@ -12,7 +12,7 @@
 ## {heading(Установка аддона)[id=k8s-install-advanced-ingress-install]}
 
 {note:warn}
-При установке аддона для него будет создан {linkto(../../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
+При установке аддона для него будет создан {linkto(../../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}.

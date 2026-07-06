@@ -405,7 +405,7 @@ ExternalDNS будет использовать реквизиты этого п
    - Указана обязательная аннотация `external-dns.alpha.kubernetes.io/hostname`: доменное имя, которое нужно использовать для сервиса.
    - Указана опциональная аннотация `external-dns.alpha.kubernetes.io/ttl`: TTL в секундах для ресурсной записи, которая будет создана ExternalDNS.
 
-   - Выбран тип сервиса `LoadBalancer`. Для такого сервиса будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}. Поскольку балансировщик по умолчанию создается с публичным IP-адресом, то связанное с сервисом приложение будет доступно из интернета.
+   - Выбран тип сервиса `LoadBalancer`. Для такого сервиса будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}. Поскольку балансировщик по умолчанию создается с публичным IP-адресом, то связанное с сервисом приложение будет доступно из интернета.
 
      {note:warn}
      Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.

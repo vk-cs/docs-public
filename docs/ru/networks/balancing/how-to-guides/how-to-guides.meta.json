@@ -5,7 +5,7 @@
   "sectionTitle": "Практические руководства",
   "hidden": true,
   "icon": "",
-  "weight": 100,
+  "weight": 3,
   "build": {
     "for": [
       "public"

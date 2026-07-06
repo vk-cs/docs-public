@@ -2473,7 +2473,7 @@
   },
   {
     "source": "/ru/networks/vnet/vnet-lb/about-lb",
-    "destination": "/ru/networks/balancing/concepts/load-balancer",
+    "destination": "/ru/networks/balancing/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -10657,7 +10657,7 @@
   },
   {
     "source": "/ru/additionals/special/1cgrm/1cgrm-about",
-    "destination": "/ru/applications-and-services/1cgrm/about",
+    "destination": "/ru/applications-and-services/1cgrm/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -19531,7 +19531,7 @@
   },
   {
     "source": "/ru/networks/vnet/concepts/load-balancer",
-    "destination": "/ru/networks/balancing/concepts/load-balancer",
+    "destination": "/ru/networks/balancing/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -21625,7 +21625,7 @@
   },
   {
     "source": "/ru/manage/alerting/alerting-about",
-    "destination": "/ru/monitoring-services/alerting/about",
+    "destination": "/ru/monitoring-services/alerting/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -21847,7 +21847,7 @@
   },
   {
     "source": "/ru/vendors-products/1cgrm/1cgrm-about",
-    "destination": "/ru/applications-and-services/1cgrm/about",
+    "destination": "/ru/applications-and-services/1cgrm/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -24828,8 +24828,8 @@
     "locale": false
   },
   {
-    "source": "/ru/manage/alerting/about",
-    "destination": "/ru/monitoring-services/alerting/about",
+    "source": "/ru/manage/alerting/concepts/about",
+    "destination": "/ru/monitoring-services/alerting/concepts/about",
     "permanent": false,
     "locale": false
   },

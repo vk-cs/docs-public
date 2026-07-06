@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/monitoring-services/alerting/about"
+                    "link": "/ru/monitoring-services/alerting/concepts/about"
                 },
                 {
                     "link": "/ru/monitoring-services/alerting/instructions/notification"
