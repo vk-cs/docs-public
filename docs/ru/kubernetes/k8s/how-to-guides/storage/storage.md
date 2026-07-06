@@ -18,7 +18,7 @@
 1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=Убедитесь]}, что аддон NGINX Ingress (`ingress-nginx`) {linkto(../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress)[text=установлен]} в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
 
     {note:warn}
-    При установке аддона для него будет создан {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
+    При установке аддона для него будет создан {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
 
     Использование балансировщика {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
     {/note}

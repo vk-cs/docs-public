@@ -4,7 +4,7 @@
   "metaDescription": "Ответы на часто задаваемые вопросы о балансировщиках нагрузки",
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
-  "weight": 52,
+  "weight": 6,
   "build": {
     "for": [
       "public"

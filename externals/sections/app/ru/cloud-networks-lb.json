@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/networks/balancing/concepts/load-balancer"
+                    "link": "/ru/networks/balancing/concepts/about"
                 },
                 {
                     "link": "/ru/networks/vnet/tariffication"

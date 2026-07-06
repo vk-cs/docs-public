@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Стоимость сервиса и особенности его тарификации",
+  "metaDescription": "Стоимость сервиса Cloud Monitoring и особенности его тарификации.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

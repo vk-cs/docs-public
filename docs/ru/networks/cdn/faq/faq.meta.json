@@ -4,7 +4,7 @@
       "metaDescription": "Ответы на часто задаваемые вопросы о сервисе CDN",
     "sectionTitle": "Вопросы и ответы",
     "icon": "",
-    "weight": 5,
+    "weight": 6,
     "build": {
     "for": [
       "public"

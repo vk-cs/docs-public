@@ -65,7 +65,7 @@
 
     - {linkto(../../../networks/dns#dns)[text=DNS]} — поддерживает публичный и приватный DNS, обеспечивающий разрешение имен для сервисов платформы {var(cloud)}.
     - {linkto(../../../networks/cdn#cdn)[text=CDN]} — организует передачу контента от ваших серверов к пользователям с минимальной задержкой.
-    - {linkto(../../../networks/balancing/concepts/load-balancer#balancing-load-balancer)[text=Load Balancer]} — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
+    - {linkto(../../../networks/balancing/concepts/about#balancing-load-balancer)[text=Load Balancer]} — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
     - {linkto(../../../security/firewall-and-protection-ddos#firewall-and-protection-ddos-antiddos)[text=AntiDDoS]} — фильтрует трафик, приходящий к развернутым в проекте ресурсам {var(cloud)} для блокирования DDoS-атак.
     - {linkto(../../../security/firewall-and-protection-ddos#firewall-and-protection-ddos-waf)[text=WAF]} (Web Application Firewall) — настраивает правила фильтрации входящего и исходящего трафика для обнаружения и блокирования сетевых атак.
 
@@ -92,7 +92,7 @@
 
   {/cut}
 
-- **Software as a Service (SaaS)**. Готовое ПО, доступное по подписке через интернет. Не требует управления инфраструктурой или платформой. Примером SaaS-сервиса в {var(cloud)} является {linkto(../../../applications-and-services/1cgrm#1cgrm)[text=1С:Готовое рабочее место]}. Сервис предоставляет ресурсы и ПО для развертывания {linkto(../../../applications-and-services/1cgrm/about#1cgrm-description)[text=сервисов 1С]}.
+- **Software as a Service (SaaS)**. Готовое ПО, доступное по подписке через интернет. Не требует управления инфраструктурой или платформой. Примером SaaS-сервиса в {var(cloud)} является {linkto(../../../applications-and-services/1cgrm#1cgrm)[text=1С:Готовое рабочее место]}. Сервис предоставляет ресурсы и ПО для развертывания {linkto(../../../applications-and-services/1cgrm/concepts/about#1cgrm-description)[text=сервисов 1С]}.
 
 - **Common&Security-сервисы** обеспечивают безопасную работу пользователей и поддерживают ролевую модель при использовании ресурсов {var(cloud)}.
 

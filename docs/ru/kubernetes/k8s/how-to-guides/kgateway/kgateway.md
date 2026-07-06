@@ -68,7 +68,7 @@ Kgateway доступен только для кластеров {linkto(/ru/kub
 ## {heading({counter(kgateway)}. Создайте объект Gateway)[id=k8s-kgateway-gateway]}
 
 {note:warn}
-Для объекта Gateway будут созданы {linkto(../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]} и {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}. Их использование {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
+Для объекта Gateway будут созданы {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]} и {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}. Их использование {linkto(../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 1. Создайте файл манифеста `my-gateway.yaml` для ресурса Gateway API [типа](https://gateway-api.sigs.k8s.io/reference/api-types/gateway/) `Gateway`:

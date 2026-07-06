@@ -17,7 +17,7 @@
   - Назначенный порту публичный IP-адрес, если порт подключен к сети `ext-net`.
   - Существующие публичные Floating IP-адреса (даже если они не назначены какому-либо порту).
 
-- {linkto(../../balancing/concepts/load-balancer#balancing-load-balancer-types)[text=Стандартные и сервисные]} балансировщики нагрузки.
+- {linkto(../../balancing/concepts/about#balancing-load-balancer-types)[text=Стандартные и сервисные]} балансировщики нагрузки.
 
 ## {heading(Не тарифицируется)[id=vnet-tariffication-not-charged]}
 

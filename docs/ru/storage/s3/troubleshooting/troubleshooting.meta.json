@@ -4,7 +4,7 @@
   "metaDescription": "Как устранять неполадки в сервисе VK Object Storage на платформе VK Cloud. Способы диагностики и устранения проблем с объектным хранилищем",
   "sectionTitle": "Устранение неполадок",
   "icon": "",
-  "weight": 9,
+  "weight": 8,
   "uuid": "9790c111-7f42-46ca-87b3-f259b2ad857a",
   "build": {
     "for": [

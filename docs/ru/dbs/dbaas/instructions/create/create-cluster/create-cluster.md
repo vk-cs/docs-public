@@ -182,7 +182,7 @@
 
 {ifdef(public)}
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
 
 Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифицируется]}.
 {/note}
@@ -540,7 +540,7 @@
 ## {heading(MySQL)[id=dbaas-create-cluster-mysql]}
 
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}.
 
 Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифицируется]}.
 {/note}

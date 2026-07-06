@@ -3,7 +3,7 @@
 Далее описывается создание кластера Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]} из личного кабинета. Для кластеров второго поколения включена интеграция с сервисом {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=мониторинга {var(cloud)}]}, отключить ее нельзя.
 
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 ## {heading(Перед созданием кластера)[id=k8s-create-webui-gen-2-prepare]}

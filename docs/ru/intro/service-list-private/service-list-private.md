@@ -10,7 +10,7 @@
   - {linkto(../../networks/vnet#vnet)[text=Cloud Networks]} — обеспечивает сетевое взаимодействие в рамках выбранного {linkto(../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекта]} с помощью технологии SDN (Software Defined Network). Функционирует на базе OpenStack Neutron. Включает в себя компоненты:
 
     - {linkto(../../networks/vnet/concepts/dns#vnet-dns)[text=DNS]} — поддерживает приватный DNS, обеспечивающий разрешение имен для сервисов {var(cloud)}.
-    - {linkto(../../networks/balancing/concepts/load-balancer#balancing-load-balancer)[text=Load Balancer]} — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
+    - {linkto(../../networks/balancing/concepts/about#balancing-load-balancer)[text=Load Balancer]} — распределяет нагрузку на инфраструктуру, обеспечивая отказоустойчивость и гибкое масштабирование приложений.
 
   {/cut}
 

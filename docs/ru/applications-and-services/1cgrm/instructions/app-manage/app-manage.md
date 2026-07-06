@@ -84,7 +84,7 @@
 
 После удаления приложения в {var(cloud)} все его данные будут удалены. Восстановить удаленное приложение невозможно.
 
-Чтобы получить {linkto(../../../../applications-and-services/1cgrm/about#1cgrm-backup)[text=резервные копии данных]}, обратитесь в {linkto(../../../../applications-and-services/1cgrm/about#1cgrm-support)[text=техническую поддержку]}.
+Чтобы получить {linkto(../../../../applications-and-services/1cgrm/concepts/about#1cgrm-backup)[text=резервные копии данных]}, обратитесь в {linkto(../../../../applications-and-services/1cgrm/concepts/about#1cgrm-support)[text=техническую поддержку]}.
 
 {note:err}
 После удаления приложения в {var(cloud)} резервные копии данных приложения 1С хранятся в течение 30 дней.

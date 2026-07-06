@@ -1757,7 +1757,7 @@ openstack loadbalancer member create
 - `--name <СЕРВЕР>` — название сервера.
 - `--disable-backup` — отключить резервное копирование для сервера (по умолчанию).
 - `--enable-backup` — включить резервное копирование для сервера.
-- `--weight <ВЕС>` — вес сервера (подробнее — в разделе {linkto(../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-instance-weight)[text=%text]}).
+- `--weight <ВЕС>` — вес сервера (подробнее — в разделе {linkto(../../../networks/balancing/concepts/about#balancing-load-balancer-instance-weight)[text=%text]}).
 - `--address <IP-АДРЕС>` — IP-адрес сервера, трафик которого будет обслуживаться балансировщиком нагрузки.
 - `--subnet-id <ПОДСЕТЬ>` — идентификатор подсети, из которой доступен сервер.
 - `--protocol-port <ПОРТ>` — номер порта, который будет прослушивать сервер.

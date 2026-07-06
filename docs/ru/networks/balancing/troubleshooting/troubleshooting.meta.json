@@ -4,7 +4,7 @@
   "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Способы диагностики и устранения проблем с балансировщиками нагрузки",
   "sectionTitle": "Устранение неполадок",
   "icon": "",
-  "weight": 51,
+  "weight": 5,
   "build": {
     "for": [
       "public",

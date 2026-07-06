@@ -5,7 +5,7 @@
 Также вы можете создать кластер первого поколения с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
 
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
 ## {heading(Перед созданием кластера)[id=k8s-create-webui-prepare]}

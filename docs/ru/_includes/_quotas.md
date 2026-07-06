@@ -23,7 +23,7 @@
 1. Выполняется одно из условий по количеству заказанных в проекте ресурсов:
 
    - [Виртуальные машины](/ru/computing/iaas/concepts/vm) — от 4 шт.
-   - [Балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer) — от 2 шт.
+   - [Балансировщики нагрузки](/ru/networks/balancing/concepts/about) — от 2 шт.
 
 1. Для проекта выделено менее 50 [Floating IP-адресов](/ru/networks/vnet/concepts/ips-and-inet#floating-ip).
 

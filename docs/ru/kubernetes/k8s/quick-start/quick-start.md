@@ -69,7 +69,7 @@
 ### {const(create_cluster)}.{counter(kuber_level_2)}. Установите аддоны в кластер
 
 {note:warn}
-При установке аддонов Docker Registry и Ingress NGINX для них будут созданы [стандартные балансировщики нагрузки](/ru/networks/balancing/concepts/load-balancer#balancing-load-balancer-types).
+При установке аддонов Docker Registry и Ingress NGINX для них будут созданы [стандартные балансировщики нагрузки](/ru/networks/balancing/concepts/about#balancing-load-balancer-types).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffication).
 {/note}
