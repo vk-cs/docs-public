@@ -5,5 +5,5 @@
 ### {heading(Решение)[id=traffic-gateway-problem-decision]}
 
 1. [Проверьте](/ru/networks/vnet/instructions/advanced-router/manage-bgp) настройки маршрутизации внутри ОС.
-1. [Убедитесь](/ru/networks/vnet/instructions/secgroups#view_secgroups), что в группе безопасности разрешен исходящий трафик.
+1. [Убедитесь](/ru/networks/vnet/instructions/secgroups#vnet-secgroups-view), что в группе безопасности разрешен исходящий трафик.
 1. Если проблема специфична для одной подсети, попробуйте пересоздать порт или подключить ВМ к другой сети для диагностики.

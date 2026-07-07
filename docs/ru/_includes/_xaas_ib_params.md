@@ -81,12 +81,12 @@
 | ![](/ru/assets/check.svg "inline")
 
 |`plans`
-|Содержит [имена тарифных планов](#service_plans) приложения
+|Содержит [имена тарифных планов](/ru/tools-for-using-services/vendor-account/reference/ib-apps-reference/ib-apps-param#ib-apps-param-service-plans) приложения
 |Массив
 | ![](/ru/assets/check.svg "inline")
 
 |`preview`
-|Содержит [имена тарифных опций](#service_options_for_matrix) для матрицы тарифных планов
+|Содержит [имена тарифных опций](/ru/tools-for-using-services/vendor-account/reference/ib-apps-reference/ib-apps-param#service_options_for_matrix) для матрицы тарифных планов
 |Массив
 | ![](/ru/assets/check.svg "inline")
 |===

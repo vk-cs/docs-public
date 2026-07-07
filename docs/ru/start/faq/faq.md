@@ -134,7 +134,7 @@
 
 {cut(Как управлять ролями и правами доступа в проекте?)}
 
-Управляйте правами доступа через личный кабинет. Управление доступно только {linkto(../../access/iam/concepts/rolesandpermissions#iam-roles-reference)[text=ролям]} владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье {linkto(../../access/iam/instructions/access-manage#iam-access-manage)[text=Управление доступами]}.
+Управляйте правами доступа через личный кабинет. Управление доступно только {linkto(../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролям]} владелец, суперадминистратор и администратор пользователей (IAM). Подробнее в статье {linkto(../../access/iam/instructions/access-manage#iam-access-manage)[text=Управление доступами]}.
 
 {/cut}
 

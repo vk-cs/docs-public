@@ -274,7 +274,7 @@
 
        {include(/ru/_includes/_client-keystone-auth.md)}
 
-    1. Проверьте, что у вас есть {linkto(../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-k8s)[text=необходимая роль]} для работы с кластерами Kubernetes. Если такой роли нет, попросите владельца или суперадминистратора проекта добавить ее вам.
+    1. Проверьте, что у вас есть {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=необходимая роль]} для работы с кластерами Kubernetes. Если такой роли нет, попросите владельца или суперадминистратора проекта добавить ее вам.
     1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=Активируйте]} доступ по API.
 {/ifdef}
 

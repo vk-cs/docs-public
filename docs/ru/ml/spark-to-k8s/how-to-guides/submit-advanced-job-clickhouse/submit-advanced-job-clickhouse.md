@@ -288,5 +288,5 @@ spark.stop()
 1. Удалите кластер Cloud Spark.
 1. Удалите реестр Docker для этого кластера.
 1. Удалите [объекты из бакета](/ru/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete) и [сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete), который использовался этим кластером.
-1. [Удалите токен доступа](../../ml-platform-library/authz#udalenie_tokena_dostupa).
+1. [Удалите токен доступа](../../ml-platform-library/authz#delete_token_management).
 1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#dbaas-clickhouse-delete-instance).

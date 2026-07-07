@@ -104,7 +104,7 @@
 Установите на хост следующие инструменты:
 
 - Браузер.
-- Утилиту `kubectl`. Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl#podgotovitelnye_shagi) и [официальной документации](https://kubernetes.io/docs/tasks/tools/#kubectl).
+- Утилиту `kubectl`. Подробнее в разделе [Подключение к кластеру с помощью kubectl](/ru/kubernetes/k8s/connect/kubectl#k8s-kubectl-before-work) и [официальной документации](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
   {note:warn}
   Загрузите версию `kubectl`, совпадающую с версией кластера, либо отличающуюся на одну минорную версию в любую сторону.
@@ -740,7 +740,7 @@ K8S Persistent Volume status: present
 
 Работающий кластер потребляет вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) кластер, чтобы воспользоваться им позже, или [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete) его навсегда.
+- [Остановите](/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-start-stop) кластер, чтобы воспользоваться им позже, или [удалите](/ru/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete) его навсегда.
 - [Удалите](/ru/networks/balancing/instructions/manage-lb#balancing-manage-lb-delete) балансировщики нагрузки.
 
 

@@ -102,7 +102,7 @@ URL документации сервиса
 
 |preview
 |
-Определяет тарифные опции для матрицы тарифных планов (подробнее — в разделе {linkto(#service_options_for_matrix)[text=%text]})
+Определяет тарифные опции для матрицы тарифных планов (подробнее — в разделе {linkto(#ibservice_param-service_options_for_matrix)[text=%text]})
 |Массив
 | ![](../../../../../../assets/check.svg "inline")
 |===
@@ -139,7 +139,7 @@ plans:
 ```
 {/caption}
 
-## {heading(Тарифные опции для матрицы тарифных планов)[id=service_options_for_matrix]}
+## {heading(Тарифные опции для матрицы тарифных планов)[id=ibservice_param-service_options_for_matrix]}
 
 Чтобы указать тарифные опции для матрицы тарифных планов (из всех возможных, описанных в директории `parameters`):
 

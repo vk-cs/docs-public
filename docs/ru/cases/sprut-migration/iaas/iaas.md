@@ -25,7 +25,7 @@
         sudo apt-get install -y jq
         ```
 
-    1. Установите [клиент OpenStack](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#openstack-authorize) в проекте.
+    1. Установите [клиент OpenStack](/ru/tools-for-using-services/cli/openstack-cli#openstack-install) и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#openstack-authorize) в проекте.
 
     1. Скопируйте репозиторий со скриптами для выполнения миграции:
 
@@ -391,5 +391,5 @@ Floating IP-адреса нельзя перенести в другую SDN. Е
 
 1. [Уберите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адреса из проекта.
 1. [Удалите](/ru/networks/vnet/instructions/secgroups#vnet-secgroups-delete) группы безопасности.
-1. Удалите [сети](/ru/networks/vnet/instructions/net#udalenie_seti) и [подсети](/ru/networks/vnet/instructions/net#vnet-net-subnet-delete).
+1. Удалите [сети](/ru/networks/vnet/instructions/net#vnet-net-delete) и [подсети](/ru/networks/vnet/instructions/net#vnet-net-subnet-delete).
 1. [Удалите](/ru/networks/vnet/instructions/router#vnet-router-delete) маршрутизаторы.

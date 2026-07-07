@@ -66,7 +66,7 @@
         * **SAML Attribute Name**: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`.
         * **SAML Attribute NameFormat**: `URI Reference`.
 
-## 3. Настройте связь групп и ролей в VK Cloud
+## {heading(3. Настройте связь групп и ролей в VK Cloud)[id=iam-keycloak-fim-groups-roles]}
 
 {note:info}
 
@@ -96,4 +96,4 @@
 1. [Создайте](https://www.keycloak.org/docs/latest/server_admin/index.html#proc-creating-user_server_administration_guide) пользователя в Keycloak и [добавьте](https://www.keycloak.org/docs/latest/server_admin/index.html#proc-managing-groups_server_administration_guide) его в нужную группу.
 1. Введите в строку браузера URL для входа федеративных пользователей. Вы будете перенаправлены на страницу аутентификации Keycloak.
 1. Введите аутентификационные данные пользователя. После успешной авторизации вы будете перенаправлены на главную страницу личного кабинета VK Cloud.
-1. Проверьте, что автоматически назначенная роль пользователя VK Cloud соответствует выбранной при [добавлении группы](#3_nastroyte_svyaz_grupp_i_roley_v_vk_cloud).
+1. Проверьте, что автоматически назначенная роль пользователя VK Cloud соответствует выбранной при [добавлении группы](#iam-keycloak-fim-groups-roles).

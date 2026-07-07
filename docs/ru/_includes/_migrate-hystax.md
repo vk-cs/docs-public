@@ -32,13 +32,13 @@
 
 {includetag(migrate-hystax)}
 1. {linkto(../../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
-1. {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Hystax Acura Migration.
 {/includetag}
 
 {includetag(migrate-hystax-mr)}
 1. {linkto(../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
-1. {linkto(../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
+1. {linkto(../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. {linkto(../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Hystax Acura Migration.
 {/includetag}
 

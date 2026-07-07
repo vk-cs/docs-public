@@ -44,7 +44,7 @@
    {ifdef(public)}
 1. Подготовьтесь к работе с OpenStack CLI:
 
-   1. {linkto(../../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию.
+   1. {linkto(../../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию.
    1. {linkto(../../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=Активируйте]} доступ по API для текущего пользователя.
    1. Убедитесь, что клиент OpenStack {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 

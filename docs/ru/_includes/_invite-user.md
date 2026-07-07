@@ -19,7 +19,7 @@
 После {linkto(/ru/tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=входа в проект]} нового участника его статус в колонке **Активирован** изменится на **Да**.
 
 {note:info}
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#iam-access-manage-delete-user)[text=удалите]} участника и пригласите его снова.
 {/note}
 {/includetag}
 
@@ -28,7 +28,7 @@
 
 {note:info}
 
-Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#tools-account-project-invitation)[text=удалите]} участника и пригласите его снова.
+Почта участника недоступна для редактирования, и на нее нельзя повторно отправить приглашение. Если вы указали неверную почту или срок действия приглашения истек, {linkto(/ru/access/iam/instructions/access-manage#iam-access-manage-delete-user)[text=удалите]} участника и пригласите его снова.
 
 {/note}
 {/includetag}

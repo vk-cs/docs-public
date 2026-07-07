@@ -7,7 +7,7 @@
 - [Terraform](/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow);
 - библиотека Cloud ML Platform, метод [create_mlflow](../../../mlplatform-lib/lib-reference#mllib-lib-reference-create_mlflow).
 
-Инстанс MLflow может работать в двух режимах: в [связке с JupyterHub](../../../concepts/mlflow-modes#with_jh) или отдельно, в [режиме Standalone](../../../concepts/mlflow-modes#mlplatform-standalone).
+Инстанс MLflow может работать в двух режимах: в [связке с JupyterHub](../../../concepts/mlflow-modes#mlplatform-with_jh) или отдельно, в [режиме Standalone](../../../concepts/mlflow-modes#mlplatform-standalone).
 
 Если вам нужен инстанс MLflow, работающий совместно с JupyterHub, и инстанс JupyterHub еще не создан, [создайте](../../../jupyterhub/instructions/create) его.
 
