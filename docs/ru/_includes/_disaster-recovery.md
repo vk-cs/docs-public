@@ -11,7 +11,7 @@
 
 {includetag(dr_onboarding_2)}
 1. [Настройте](/ru/access/iam/instructions/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
-1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create#create_vm), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
+1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create#iaas-vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. [Подключите](/ru/applications-and-services/marketplace/instructions/pr-instance-add) сервис Hystax Acura Disaster Recovery.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://dr.mcs-cloud.ru (личный кабинет Hystax Acura).

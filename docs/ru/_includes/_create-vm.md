@@ -135,6 +135,6 @@
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](/ru/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
+- [остановите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) ее, чтобы воспользоваться ею позже;
 - [удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) ее навсегда.
 {/includetag}

@@ -25,6 +25,6 @@
    - [Виртуальные машины](/ru/computing/iaas/concepts/vm) — от 4 шт.
    - [Балансировщики нагрузки](/ru/networks/balancing/concepts/about) — от 2 шт.
 
-1. Для проекта выделено менее 50 [Floating IP-адресов](/ru/networks/vnet/concepts/ips-and-inet#floating-ip).
+1. Для проекта выделено менее 50 [Floating IP-адресов](/ru/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip).
 
 {/includetag}

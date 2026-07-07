@@ -11,8 +11,8 @@
 1. В анкете укажите:
     - (Опционально) **Тема заявки**: например, `Подключение флейвора Cloud GPU`.
     - **Регион**: выберите регион из выпадающего списка.
-    - **PID проекта**: укажите [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
-    - **Описание**: укажите, какой [шаблон конфигурации](/ru/computing/gpu/concepts/about#gpu_flavors) нужно подключить, а также нужно ли увеличить [квоты](/ru/tools-for-using-services/account/instructions/project-settings/manage#prosmotr_kvot_proekta).
+    - **PID проекта**: укажите [уникальный идентификатор проекта (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
+    - **Описание**: укажите, какой [шаблон конфигурации](/ru/computing/gpu/concepts/about#gpu-about-flavors) нужно подключить, а также нужно ли увеличить [квоты](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas).
         
         {cut(Пример текста описания)}
 

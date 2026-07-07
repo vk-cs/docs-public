@@ -4,7 +4,7 @@
 
 Чтобы выполнить приведенные примеры:
 
-1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите токен доступа]} `X-Subject-Token`.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=Узнайте]} эндпоинт для сервиса Karboii.
 

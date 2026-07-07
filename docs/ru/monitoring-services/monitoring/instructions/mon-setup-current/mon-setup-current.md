@@ -15,7 +15,7 @@
 {ifdef(public)}
 Если вкладка **Настройка мониторинга** отсутствует:
 
-1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите токен доступа]} `X-Subject-Token`.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=Получите Project ID]}, специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-id-get)[text=Получите ID виртуальной машины]}.

@@ -7,7 +7,7 @@
 
     * **Категория виртуальной машины**: выберите категорию в зависимости от типа запрошенного ресурса, либо `Все актуальные типы виртуальных машин`.
     * **Тип виртуальной машины**: выберите в списке `STD-3 (Ice Lake) 4 vcpu, 16 Gb RAM`, либо тип, указанный при запросе ресурса.
-    * **Тип диска**: по умолчанию выбрано значение `SSD`. Для получения максимальных значений производительности выберите тип [High-IOPS](/ru/computing/iaas/concepts/data-storage/volume-sla#high_iops_ssd) или [Low Latency NVMe](/ru/computing/iaas/concepts/data-storage/volume-sla#low_latency_nvme).
+    * **Тип диска**: по умолчанию выбрано значение `SSD`. Для получения максимальных значений производительности выберите тип [High-IOPS](/ru/computing/iaas/concepts/data-storage/volume-sla#iaas-volume-sla-high-iops-ssd) или [Low Latency NVMe](/ru/computing/iaas/concepts/data-storage/volume-sla#iaas-volume-sla-llnvme).
 
        {note:info}
 
@@ -17,7 +17,7 @@
 
     * **Размер диска**: по умолчанию выбрано значение `256 ГБ`. Для получения максимальных значений производительности рекомендуется выбрать `1500 ГБ` при условии выбора в поле **Тип диска** значений `High-IOPS` или `Low Latency NVME`. Подробнее - в разделе о [производительности дисков](/ru/computing/iaas/concepts/data-storage/volume-sla).
     * **Операционная система**: выберите `Ubuntu 22.04 LTS`.
-    * На шаге **Конфигурация** в поле **Сеть** выберите существующую SDN [Sprut](/ru/networks/vnet/concepts/sdn#sprut) или создайте новую сеть с типом Sprut.
+    * На шаге **Конфигурация** в поле **Сеть** выберите существующую SDN [Sprut](/ru/networks/vnet/concepts/sdn#vnet-sdn-sprut) или создайте новую сеть с типом Sprut.
 
     Остальные параметры оставьте на ваше усмотрение.
 

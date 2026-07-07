@@ -27,6 +27,6 @@
 - {linkto(../manage#clickhouse_status)[text=Убедитесь]}, что экземпляр находится в статусе `Активно`.
 
 {ifdef(public)}
-- [Убедитесь](/ru/networks/vnet/instructions/secgroups#view_secgroups), что [группы безопасности](/ru/networks/vnet/instructions/secgroups), назначенные экземпляру, разрешают входящий трафик.
+- [Убедитесь](/ru/networks/vnet/instructions/secgroups#vnet-secgroups-view), что [группы безопасности](/ru/networks/vnet/instructions/secgroups), назначенные экземпляру, разрешают входящий трафик.
 - [Ознакомьтесь с логами](/ru/monitoring-services/logging/instructions/view-logs).
 {/ifdef}

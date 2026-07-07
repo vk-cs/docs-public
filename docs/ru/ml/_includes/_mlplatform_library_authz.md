@@ -256,7 +256,7 @@
 
 {/tabs}
 
-## Удаление токена доступа
+## {heading(Удаление токена доступа)[id=delete_token_management]}
 
 {tabs}
 

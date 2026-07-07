@@ -161,4 +161,4 @@ spark_job_info = mlp.spark_submit_job(CLUSTER_ID, spark_job_manifest, PY_FILE)
 
 1. Удалите кластер Spark.
 1. Удалите реестр Docker для этого кластера Spark.
-1. [Удалите токен доступа](../../ml-platform-library/authz#udalenie_tokena_dostupa).
+1. [Удалите токен доступа](../../ml-platform-library/authz#delete_token_management).

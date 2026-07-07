@@ -60,7 +60,7 @@
 
    Для каждой из команд должен быть выведен ответ `yes`.
 
-   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../access/iam/instructions/access-manage#project-access-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
 
    Подробнее о ролевой модели и доступных ролях читайте в разделе {linkto(../../concepts/access-management#k8s-access-management)[text=Управление доступом]}.
 
@@ -108,7 +108,7 @@
 
    При выборе роли следуйте [принципу наименьших привилегий](https://ru.wikipedia.org/wiki/Принцип_минимальных_привилегий), чтобы повысить безопасность при работе с кластером. Подробнее о ролевой модели читайте в [официальной документации Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-   В качестве примера далее будет назначена роль `edit`. Она {linkto(../../concepts/access-management#k8s-access-management-kubernetes-roles)[text=соответствует]} роли `Оператор Kubernetes` в личном кабинете.
+   В качестве примера далее будет назначена роль `edit`. Она {linkto(../../concepts/iam-access#k8s-concepts-iam-k8s-roles)[text=соответствует]} роли `Оператор Kubernetes` в личном кабинете.
 
 1. Свяжите созданный сервисный аккаунт с выбранной кластерной ролью. Для этого создайте ресурс `ClusterRoleBinding` с именем `example-binding`.
 
