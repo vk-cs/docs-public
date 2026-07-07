@@ -4,7 +4,7 @@
   "metaDescription": "Здесь описана настройка и установка аддона Fluent Bit.",
   "sectionTitle": "Fluent Bit",
   "icon": "",
-  "weight": 5,
+  "weight": 7,
   "uuid": "f2d4b435-dc7d-4dca-9889-3f15eb85ba37",
   "build": {
     "for": [

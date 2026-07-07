@@ -4,7 +4,7 @@
   "metaDescription": "Как вручную обновить аддон при большой разнице между его версиями.",
   "sectionTitle": "Обновление аддона Kube Prometheus Stack",
   "icon": "",
-  "weight": 14,
+  "weight": 15,
   "uuid": "bc66dcb8-4ab3-44ea-bd27-619678cf95bd",
   "build": {
     "for": [

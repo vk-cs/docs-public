@@ -4,7 +4,7 @@
   "metaDescription": "Инструкция по использованию аддона VPA с компонентом Updater в режиме Recreate в Kubernetes. Подготовка, создание Deployment, настройка VPA, тестирование и анализ результатов. Примеры манифестов, команд kubectl, рекомендации по метрикам и мониторингу",
   "sectionTitle": "Использование Vertical Pod Autoscaler",
   "icon": "",
-  "weight": 14,
+  "weight": 16,
   "uuid": "d8d9eaa5-0408-45f7-a590-9d0590739620",
   "build": {
     "for": [
