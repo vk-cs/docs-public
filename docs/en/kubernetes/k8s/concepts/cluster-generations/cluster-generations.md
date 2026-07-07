@@ -33,7 +33,7 @@ Any actions with ports will lead to unstable cluster operation.
 In service projects, second-generation clusters that you create are deployed in and managed by system clusters as follows:
 
 1. In a service project, master nodes are created for each second-generation cluster. A system cluster is launched on these master nodes.
-1. A second-generation cluster you create is installed in this system cluster. Your cluster has network connectivity with your project, so you can [interact](/en/kubernetes/k8s/instructions/manage-cluster) with it as usual. You cannot stop or restart second-generation clusters. 
+1. A second-generation cluster you create is installed in this system cluster. Your cluster has network connectivity with your project, so you can [interact](/en/kubernetes/k8s/instructions/manage-cluster) with it as usual.
 
 System components in second-generation clusters, including their master and worker nodes, are managed by VK Cloud. For more details, refer to [Service architecture](/en/kubernetes/k8s/concepts/architecture).
 

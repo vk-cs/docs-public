@@ -1,6 +1,6 @@
 # {heading(Перенос рабочей нагрузки до миграции ресурсов)[id=k8s-pre-migration]}
 
-Это руководство поможет вам заранее подготовиться к {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=миграции]} ресурсов кластера {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} между {linkto(/ru/start/concepts/architecture#architecture-az)[text=зонами доступности]}, которую проведут сотрудники {var(cloud)}. Вы выполните следующие шаги:
+Это руководство поможет вам заранее подготовиться к {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=миграции]} ресурсов кластера между {linkto(/ru/start/concepts/architecture#architecture-az)[text=зонами доступности]}, которую проведут сотрудники {var(cloud)}. Вы выполните следующие шаги:
 
 1. Определите, зависит ли ваша рабочая нагрузка (workload) от текущей зоны доступности.
 1. Создадите новую группу worker-узлов в зоне доступности, куда будет происходить миграция, и перенесете туда свою рабочую нагрузку.
@@ -12,7 +12,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-pre-migration-prepare]}
 
-1. Определите, какой кластер {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} необходимо перенести на новую зону доступности.
+1. Определите, какой кластер Kubernetes необходимо перенести на новую зону доступности.
 {include(/ru/_includes/_az-migration-magnum.md)[tags=prep]}
 
 ## {heading({counter(az)}. Определите зависимость рабочей нагрузки от зоны доступности)[id=k8s-pre-migration-check]}
