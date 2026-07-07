@@ -1,1 +1,3 @@
+# {heading(Миграция в SDN Sprut)[id=cases-sprut-migration]}
+
 В разделе описаны причины и преимущества миграции с SDN Neutron в SDN Sprut, приведены лучшие практики, типовые кейсы и способы миграции сервисов VK Cloud.
