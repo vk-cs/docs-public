@@ -64,7 +64,7 @@ SDN Sprut обеспечивает стабильную работу сетей 
 
 ## {heading(Neutron)[id=vnet-sdn-neutron]}
 
-_Neutron_ — SDN, которая является частью платформы OpenStack и интегрирована с другими ее компонентами (ВМ, хранилище, идентификация). SDN Neutron в {var(cloud)} выводится из эксплуатации и не подключается для новых проектов. Также SDN Neutron не используется в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]}.
+_Neutron_ — SDN, которая является частью платформы OpenStack и интегрирована с другими ее компонентами (ВМ, хранилище, идентификация). SDN Neutron в {var(cloud)} выводится из эксплуатации и не подключается для новых проектов. Также SDN Neutron не используется в {linkto(../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]} `PA2`.
 
 Особенности архитектуры SDN Neutron:
 

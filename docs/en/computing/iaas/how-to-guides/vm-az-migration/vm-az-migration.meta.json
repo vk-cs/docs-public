@@ -1,0 +1,13 @@
+{
+  "title": "Migrating a VM to another availability zone",
+  "shortDescription": "How to migrate a virtual machine to another availability zone",
+  "metaDescription": "Learn how to migrate a VK Cloud virtual machine to another availability zone: create disk snapshots, deploy a VM in the new zone, and synchronize Terraform.",
+  "sectionTitle": "Migrating a VM to another availability zone",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
