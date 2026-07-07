@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Особенности тарификации кабинета поставщика",
+  "metaDescription": "Особенности тарификации кабинета поставщика VK Cloud.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

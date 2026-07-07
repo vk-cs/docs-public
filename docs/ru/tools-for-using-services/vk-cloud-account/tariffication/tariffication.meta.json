@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Особенности тарификации аккаунта {var(cloud)}",
+  "metaDescription": "Особенности тарификации аккаунта VK Cloud.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
