@@ -1072,24 +1072,6 @@
 
 Позволяет просматривать, какие скрипты запущены на ВМ.
 
-### {heading(vdi_tuareg_delete)[id=vdi_tuareg_delete]}
-
-Название в личном кабинете: `Удаление виртуального рабочего стола (Tuareg)`.
-
-Позволяет удалять сессии и ресурсы [удаленных рабочих столов](/ru/computing/cloud-desktops).
-
-### {heading(vdi_tuareg_modify)[id=vdi_tuareg_modify]}
-
-Название в личном кабинете: `Управление виртуальными рабочими столами (Tuareg)`.
-
-Позволяет настраивать [удаленные рабочие столы](/ru/computing/cloud-desktops) и управлять ими в рамках VDI-решения.
-
-### {heading(vdi_tuareg_view)[id=vdi_tuareg_view]}
-
-Название в личном кабинете: `Просмотр виртуального рабочего стола (Tuareg)`.
-
-Позволяет отслеживать активность пользователей [удаленных рабочих столов](/ru/computing/cloud-desktops).
-
 ## {heading(Data Platform Kafka)[id=iam-permissions-dp-kafka]}
 
 Управление сервисом [Cloud Kafka](/ru/data-platform/kafka) на VK Data Platform.
