@@ -751,7 +751,7 @@ There are no quotas for the VK Object Storage service. The use of these services
 | Hard
 
 | Number of accounts
-| 25 pcs.
+| 50 pcs.
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/check.svg "inline")
 
