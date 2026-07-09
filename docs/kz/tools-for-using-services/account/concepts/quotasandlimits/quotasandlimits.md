@@ -755,7 +755,7 @@ Low Latency NVMe дисктерінің саны квоталанбайды жә
 | Қатаң
 
 | Аккаунттар саны
-| 25 дана
+| 50 дана
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/check.svg "inline")
 

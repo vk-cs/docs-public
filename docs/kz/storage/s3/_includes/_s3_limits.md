@@ -11,7 +11,7 @@
 |Қатаң
 
 |Аккаунттар саны
-|25 дана
+|50 дана
 |{ifdef(public)}![](../../../../assets/no.svg "inline"){/ifdef}{ifdef(s3,s3-pdf)}![](../../assets/no.svg "inline"){/ifdef}
 |{ifdef(public)}![](../../../../assets/check.svg "inline"){/ifdef}{ifdef(s3,s3-pdf)}![](../../assets/check.svg "inline"){/ifdef}
 
