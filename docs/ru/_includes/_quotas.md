@@ -28,3 +28,27 @@
 1. Для проекта выделено менее 50 [Floating IP-адресов](/ru/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip).
 
 {/includetag}
+
+{includetag(fastquota-conditions)}
+
+1. Выполняется условие суммарного пополнения баланса на определенную сумму. Для разных [регионов](/ru/tools-for-using-services/account/concepts/regions) условие отличается:
+
+   {tabs}
+
+   {tab(Москва)}
+
+   - Объем платежей по проекту превышает 5000 рублей.
+
+   {/tab}
+
+   {tab(Казахстан)}
+
+   - Объем платежей по проекту превышает 10000 тенге.
+
+   {/tab}
+
+   {/tabs}
+
+1. Проект находится на базовом уровне с минимальными квотами.
+
+{/includetag}
