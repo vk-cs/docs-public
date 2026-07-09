@@ -19,7 +19,7 @@
 
     С их помощью можно связать как только подсети {var(cloud)}, так и подсети {var(cloud)} с подсетями на удаленной площадке.
 
-  - {linkto(../../../../networks/balancing/concepts/about)[text=Балансировщики нагрузки]} для распределения входящего трафика по нескольким экземплярам сервисов {var(cloud)}.
+  - {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer)[text=Балансировщики нагрузки]} для распределения входящего трафика по нескольким экземплярам сервисов {var(cloud)}.
 {ifndef(private-cert)}
   - {linkto(../../../../networks/vnet/concepts/traffic-limiting#vnet-traffic-limiting-secgroups)[text=Группы безопасности]} с правилами для ограничения трафика к определенным сервисам {var(cloud)}.
 {/ifndef}

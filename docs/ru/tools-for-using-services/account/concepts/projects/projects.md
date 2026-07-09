@@ -10,7 +10,6 @@
 
 Каждый проект {var(cloud)} имеет отдельный {linkto(../../../../intro/billing/concepts/balance#billing-balance)[text=баланс]}, который можно пополнять при помощи привязанной к проекту {linkto(../../../../intro/billing/instructions/add-card#billing-add-card)[text=карты]} или других {linkto(../../../../intro/billing/concepts/payment-methods#billing-payment-methods)[text=способов оплаты]}.
 
-
 ## {heading(Автоматическая заморозка проекта)[id=projects-auto-freeze]}
 
 {note:info}

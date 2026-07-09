@@ -1,12 +1,10 @@
 # {heading(Тарификация)[id=billing-tariffication]}
 
-{note:info}
-12 января 2026 года начнет действовать новый прайс-лист. Подробности об изменениях будут в рассылке и [блоге {var(cloud)}](https://cloud.vk.com/blog/).
-{/note}
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Тарификация для сервисов производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до секунды.
+Цены представлены в [настройках проекта](https://msk.cloud.vk.com/app/project/prices) в соответствии с [прайс-листом](https://cloud.vk.com/pricelist) или актуальными условиями договора.
 
-Конфигурация и стоимость сервисов приведена в [прайс-листе](https://cloud.vk.com/pricelist). Для расчета общей стоимости сервиса можно воспользоваться [калькулятором](https://cloud.vk.com/en/pricing/).
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 Доступные операции:
 

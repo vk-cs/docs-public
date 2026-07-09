@@ -335,7 +335,7 @@ VNC-консоль доступна на странице виртуальной
 
 {cut(Как загрузить свой образ ОС?)}
 
-{var(cloud)} допускает создание виртуальных машин из ранее подготовленных и загруженных образов. Подготовка образа состоит из установки необходимого набора программных компонентов и драйверов для работы в сервисах облачных провайдеров, подробней в статьях {linkto(../../../intro/migration/migrate-hyperv)[text=Миграция ВМ Hyper-V в {var(cloud)}]} и {linkto(../../../intro/migration/migrate-vmware#migration-migrate-vmware#migration-migrate-vmware)[text=Миграция ВМ VMware в {var(cloud)}]}.
+{var(cloud)} допускает создание виртуальных машин из ранее подготовленных и загруженных образов. Подготовка образа состоит из установки необходимого набора программных компонентов и драйверов для работы в сервисах облачных провайдеров, подробней в статьях {linkto(../../../intro/migration/migrate-hyperv#migration-migrate-hyperv)[text=Миграция ВМ Hyper-V в {var(cloud)}]} и {linkto(../../../intro/migration/migrate-vmware#migration-migrate-vmware)[text=Миграция ВМ VMware в {var(cloud)}]}.
 
 {/cut}
 

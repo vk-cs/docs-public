@@ -4,11 +4,11 @@
 Сервис работает в BETA-режиме, поэтому плата взимается только за инфраструктурные ресурсы.
 {/note}
 
-Стоимость отдельных компонентов сервиса приведена в [прайс-листе](https://cloud.vk.com/pricelist). Для расчета общей стоимости сервиса воспользуйтесь [калькулятором](https://cloud.vk.com/pricing).
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до минуты.
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
 
-О том, как оплатить сервис, читайте в разделе [Биллинг](/ru/intro/billing).
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 ## Тарифицируется
 

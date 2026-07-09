@@ -1,6 +1,6 @@
 # {heading(Создание файлового хранилища)[id=iaas-fs-create]}
 
-В Cloud Servers можно создавать файловые хранилища через личный кабинет, OpenStack CLI{ifdef(public)} или API. Для создания файлового хранилища с помощью API воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/iaas-api/manila-api)[text=OpenAPI-спецификацией для управления файловыми хранилищами]}{/ifdef}.
+В Cloud Servers можно создавать файловые хранилища через личный кабинет, OpenStack CLI{ifdef(public)} или API. Для создания файлового хранилища с помощью API воспользуйтесь {linkto(../../../../../tools-for-using-services/api/api-spec/iaas-api/manila-api#api-spec-manila)[text=OpenAPI-спецификацией для управления файловыми хранилищами]}{/ifdef}.
 
 {tabs}
 
