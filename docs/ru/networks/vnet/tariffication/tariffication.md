@@ -2,9 +2,11 @@
 
 ## {heading(О тарификации)[id=vnet-tariffication-about]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до секунды.
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Стоимость сетевых сервисов приведена в [прайс-листе](https://cloud.vk.com/pricelist). Для расчета общей стоимости других сервисов платформы, которые используют сетевые сервисы, можно воспользоваться [калькулятором](https://cloud.vk.com/pricing). О том, как работают инструменты, связанные с оплатой сервисов платформы, читайте в разделе [Биллинг](../../../intro/billing).
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
+
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 ## {heading(Тарифицируется)[id=vnet-tariffication-charged]}
 

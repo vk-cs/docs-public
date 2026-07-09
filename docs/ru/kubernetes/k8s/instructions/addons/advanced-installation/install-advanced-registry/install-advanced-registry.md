@@ -291,7 +291,7 @@
      loadBalancerIP: <FLOATING_IP-АДРЕС>
    ```
 
-После редактирования кода {linkto(k8s-install-advanced-registry-install)[text=продолжите установку аддона]}.
+После редактирования кода {linkto(#k8s-install-advanced-registry-install)[text=продолжите установку аддона]}.
 
 ## {heading(Подключение к реестру)[id=k8s-install-advanced-registry-connect]}
 

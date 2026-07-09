@@ -1,8 +1,8 @@
 # {heading(Тарификация)[id=desktops-tariffication]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до секунды.
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Конфигурация и стоимость сервисов приведены в [прайс-листе](https://cloud.vk.com/pricelist). О том, как оплатить сервис, читайте в разделе {linkto(../../../intro/billing#billing)[text=Биллинг]}.
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
 
 ## {heading(Тарифицируется)[id=desktops-tariffication-view]}
 

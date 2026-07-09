@@ -2,9 +2,9 @@
 
 ## {heading(О тарификации)[id=cdn-tariffication-about]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы.
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Стоимость сервиса приведена в [прайс-листе](https://cloud.vk.com/pricelist). О том, как работают инструменты, связанные с оплатой сервисов {var(cloud)}, читайте в разделе [Биллинг](../../../intro/billing).
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
 
 ## {heading(Тарифицируется)[id=cdn-tariffication-charged]}
 

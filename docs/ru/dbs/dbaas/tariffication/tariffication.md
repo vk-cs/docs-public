@@ -1,8 +1,10 @@
 # {heading(Тарификация)[id=dbaas-tariffication]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до минуты.
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Цена сервисов приведена в [прайс-листе](https://cloud.vk.com/pricelist). Для расчета общей цены за сервисы можно воспользоваться [калькулятором](https://cloud.vk.com/pricing). О том, как работают инструменты, связанные с оплатой сервисов платформы, читайте в разделе [Биллинг](../../../intro/billing).
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
+
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 ## {heading(Тарифицируется)[id=dbaas-tariffication-yes]}
 

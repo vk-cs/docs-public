@@ -20,9 +20,9 @@
   
 Итоговая стоимость хранения резервной копии зависит от объема данных, частоты и выбранной стратегии резервного копирования. Чтобы снизить затраты на использование сервиса, воспользуйтесь {linkto(/ru/storage/backups/concepts/best-practices#backup-cost-manage)[text=лучшими практиками по настройке резервного копирования]}.
 
-Цены приведены в [прайс-листе](https://cloud.vk.com/pricelist). О том, как работают инструменты, связанные с оплатой сервисов {var(cloud)}, читайте в разделе {linkto(/ru/intro/billing#billing)[text=Биллинг]}. 
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
 
-Для расчета стоимости выбранной конфигурации сервисов воспользуйтесь [калькулятором](https://cloud.vk.com/pricing/).
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 ## {heading(Тарифицируется)[id=backup-tariffication-yes]}
 

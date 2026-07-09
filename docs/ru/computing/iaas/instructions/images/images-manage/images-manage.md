@@ -140,7 +140,7 @@
 {ifdef(public)}
 {tab(cURL)}
 
-1. {linkto(../../../../../tools-for-using-services/api/rest-api/case-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`.
+1. {linkto(../../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`.
 1. Получите `id` и `disk_format` нужного образа:
 
    ```console

@@ -2,11 +2,11 @@
 
 ## {heading(О тарификации)[id=s3-tariffication-about]}
 
-Стоимость отдельных компонентов сервиса приведена в [прайс-листе](https://cloud.vk.com/pricelist). Для расчета общей стоимости сервиса воспользуйтесь [калькулятором](https://cloud.vk.com/pricing).
+{include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Тарификация производится по принципу «pay as you go»: плата взимается только за потребляемые ресурсы с точностью до секунды.
+{include(/ru/_includes/_tariffication.md)[tags=prices]}
 
-О том, как оплатить сервис, читайте в разделе {linkto(../../../intro/billing#billing)[text=Биллинг]}.
+{include(/ru/_includes/_tariffication.md)[tags=calculator]}
 
 ## {heading(Тарифицируется)[id=s3-tariffication-list]}
 
