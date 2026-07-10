@@ -1,0 +1,13 @@
+{
+  "title": "Версия Spark",
+  "shortDescription": "Текущая версия и возможности Apache Spark в Cloud Spark",
+  "metaDescription": "Текущая версия Apache Spark в Cloud Spark VK Data Platform и доступные возможности: Spark Connect, Iceberg, S3, Sparkjobs",
+  "sectionTitle": "Версия Spark",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
