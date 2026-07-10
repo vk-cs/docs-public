@@ -3,7 +3,7 @@
   "shortDescription": "",
   "metaDescription": "Дополнительная информация о работе VK Data Platform",
   "sectionTitle": "Дополнительная информация",
-  "weight": 20,
+  "weight": 27,
   "build": {
     "for": [
       "data-p",
