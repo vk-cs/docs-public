@@ -1,0 +1,13 @@
+{
+  "title": "Istio бірінші буын кластерлерінде",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: Istio бірінші буын кластерлерінде аддонын баптау және орнату",
+  "sectionTitle": "Istio бірінші буын кластерлерінде",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Istio екінші буын кластерлерінде",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: Istio екінші буын кластерлерінде аддонын баптау және орнату",
+  "sectionTitle": "Istio екінші буын кластерлерінде",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
