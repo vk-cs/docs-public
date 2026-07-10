@@ -3,7 +3,7 @@
   "shortDescription": "Сбор логов и событий безопасности",
   "metaDescription": "Мониторинг и логирование",
   "sectionTitle": "Мониторинг и логирование",
-  "weight": 18,
+  "weight": 25,
   "build": {
     "for": [
       "data-p",

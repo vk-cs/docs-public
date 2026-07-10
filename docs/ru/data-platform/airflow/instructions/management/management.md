@@ -38,6 +38,23 @@
 
 {/tabs}
 
+{ifndef(public)}
+## {heading(Просмотр и замена TLS-сертификата)[id=airflow_certificate]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
+
+Подробнее о работе с сертификатами — в разделе {linkto(../../../certificates/manage#certificates_manage)[text=Сертификаты]}.
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
+
 ## {heading(Изменение IP и портов)[id=airflow_change_ip]}
 
 {note:warn}

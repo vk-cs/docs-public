@@ -3,7 +3,7 @@
   "shortDescription": "Использование Terraform-провайдера {var(data-p)} для управления платформой, быстрый старт и примеры манифестов",
   "metaDescription": "Terraform",
   "sectionTitle": "Terraform",
-  "weight": 19,
+  "weight": 26,
   "build": {
     "for": [
       "data-p",
