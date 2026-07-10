@@ -1,0 +1,14 @@
+{
+  "title": "Подключение к кластеру Spark из скриптов в Standalone",
+  "shortDescription": "Как создать сервисного пользователя и подключиться к кластеру Spark из скриптов в Standalone",
+  "metaDescription": "Пошаговая инструкция по созданию сервисных пользователей и подключению к кластеру Cloud Spark из скриптов в Standalone VK Data Platform",
+  "sectionTitle": "Подключение к кластеру Spark из скриптов в Standalone",
+  "weight": 8,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}
