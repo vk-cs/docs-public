@@ -1,3 +1,5 @@
+# {heading(Жылдам бастау)[id=terraform-qs]}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## Дайындық қадамдары

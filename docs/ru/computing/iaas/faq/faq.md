@@ -469,7 +469,7 @@ VNC-консоль доступна на странице виртуальной
 
 {cut(В какой зоне доступности создаются файловые хранилища?)}
 
-{linkto(../../../start/concepts/architecture#architecture-az)[text=Зона доступности]} хранилища зависит от {linkto(../../../tools-for-using-services/account/concepts/regions)[text=региона]} проекта:
+{linkto(../../../start/concepts/architecture#architecture-az)[text=Зона доступности]} хранилища зависит от {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]} проекта:
 
 - GZ1 для региона Москва;
 - QAZ для региона Казахстан.
