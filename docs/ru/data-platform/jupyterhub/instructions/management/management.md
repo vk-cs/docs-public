@@ -76,6 +76,10 @@
 
 ## {heading(Учетная запись администратора)[id=jupyterhub_admin]}
 
+{note:warn}
+Только для Standalone в составе {var(cloud)}.
+{/note}
+
 ### {heading(Просмотр учетной записи)[id=jupyterhub_admin_view]}
 
 {tabs}
