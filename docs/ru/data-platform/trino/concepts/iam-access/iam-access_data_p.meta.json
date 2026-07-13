@@ -1,0 +1,15 @@
+{
+  "title": "Управление доступом в VK Private Cloud",
+  "shortDescription": "Как в Cloud Trino с помощью подсистемы аутентификации и авторизации распределяются права доступа между участниками проекта, примеры ролевых моделей",
+  "metaDescription": "",
+  "sectionTitle": "Управление доступом в VK Private Cloud",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
