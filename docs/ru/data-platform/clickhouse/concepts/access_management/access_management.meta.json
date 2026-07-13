@@ -5,7 +5,7 @@
   "sectionTitle": "Управление доступом в VK Private Cloud",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "92b6b091-5a9f-4f50-9be1-b82379cfdda0",
   "build": {
     "for": [
       "data-p",
