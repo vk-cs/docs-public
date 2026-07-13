@@ -17,17 +17,12 @@ variables:
   # BUILD_ARG_002: DEV_4TRAINING_S3_ACCESS_KEY
   # BUILD_ARG_003: DEV_4TRAINING_S3_SECRET_KEY
 
-
-# Github sync variables
+  # Github sync variables
   VKCS_GITHUB_REPO: vk-cs/docs-public
   # must be defined in Project CI/CD
   # GITHUB_TOKEN: secret
   # GITLAB_TOKEN: secret
 
-
-  # NOTE: override variables to reuse ansible playbooks after changes in MCSAD-1045
-  HELM_CHART_NAME: new-help
-  VKCS_AWX_JOB_TEMPLATE_LABEL: ${HELM_CHART_NAME}-helm
 
 .docker-images:
   parallel:
