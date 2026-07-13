@@ -5,7 +5,7 @@
   "sectionTitle": "Просмотр цен на услуги в проекте",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "07124bb3-d0aa-4249-a5b2-7590563556e9",
   "build": {
     "for": [
       "public"

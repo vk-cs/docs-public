@@ -1,11 +1,11 @@
 {
-    "title": "О сервисе",
-      "shortDescription": "Описание распределения сетевого трафика между серверами с помощью балансировщиков нагрузки VK Cloud",
-      "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Принципы работы, типы и основные возможности сервиса Load Balancing",
-    "sectionTitle": "О сервисе",
-    "icon": "",
-    "weight": 1,
-    "build": {
+  "title": "О сервисе",
+  "shortDescription": "Описание распределения сетевого трафика между серверами с помощью балансировщиков нагрузки VK Cloud",
+  "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Принципы работы, типы и основные возможности сервиса Load Balancing",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "build": {
     "for": [
       "public",
       "private",
@@ -15,6 +15,8 @@
       "private-cert"
     ]
   },
-  "uuid": "",
-  "additionalUuids": ["9885dcd7-a968-4ae7-86d7-4291b8c7138d"]
+  "uuid": "361aaf6f-e676-4729-9e2d-e733ebe91fe5",
+  "additionalUuids": [
+    "9885dcd7-a968-4ae7-86d7-4291b8c7138d"
+  ]
 }

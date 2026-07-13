@@ -33760,5 +33760,29 @@
     "destination": "/en/access/iam/how-to-guides/federations/update-fim-cert",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/networks/balancing/concepts/load-balancer",
+    "destination": "/ru/networks/balancing/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/concepts/az-migration-magnum",
+    "destination": "/ru/kubernetes/k8s/concepts/az-migration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/monitoring-services/alerting/about",
+    "destination": "/ru/monitoring-services/alerting/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/1cgrm/about",
+    "destination": "/ru/applications-and-services/1cgrm/concepts/about",
+    "permanent": false,
+    "locale": false
   }
 ]

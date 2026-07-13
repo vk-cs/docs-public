@@ -5,7 +5,7 @@
   "sectionTitle": "Тарификация",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "88a5acf2-f3c8-4d5e-b262-70a0b1b1aaad",
   "build": {
     "for": [
       "public"
