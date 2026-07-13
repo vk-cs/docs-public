@@ -1,0 +1,14 @@
+{
+  "title": "Репликация логов в объектное хранилище с помощью Fluent Bit",
+  "shortDescription": "Как настроить сбор и агрегацию логов из распределенных систем с помощью Fluent Bit и направлять их в VK Cloud Object Storage",
+  "metaDescription": "Настройка агрегации логов с Fluent Bit в VK Cloud Object Storage: эффективный способ централизованного сбора, хранения и анализа данных из распределённых систем.",
+  "sectionTitle": "Репликация логов в объектное хранилище с помощью Fluent Bit",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

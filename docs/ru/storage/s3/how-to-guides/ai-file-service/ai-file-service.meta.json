@@ -1,0 +1,14 @@
+{
+  "title": "Создание файлового сервиса с Foundation Models и MCP",
+  "shortDescription": "Как создать файловый сервис, где VK Object Storage выступает основной системой хранения, а Foundation Models и MCP значительно ускоряют процессы разработки и деплоя",
+  "metaDescription": "Создание файлового сервиса с использованием VK Object Storage как основного хранилища и интеграцией Foundation Models и MCP для ускорения разработки и деплоя.",
+  "sectionTitle": "Создание файлового сервиса с Foundation Models и MCP",
+  "icon": "",
+  "weight": 11,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
