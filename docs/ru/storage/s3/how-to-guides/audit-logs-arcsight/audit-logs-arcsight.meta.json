@@ -5,7 +5,7 @@
   "sectionTitle": "Загрузка аудитных логов в SIEM ArcSight и поиск событий",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "5419ca4e-d10c-4304-b811-54afffaa356c",
   "build": {
     "for": [
       "public"

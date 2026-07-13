@@ -5,7 +5,7 @@
   "sectionTitle": "Репликация логов в объектное хранилище с помощью Fluent Bit",
   "icon": "",
   "weight": 10,
-  "uuid": "",
+  "uuid": "1f752b80-d9d6-4e5f-86cf-1a95e9f64e17",
   "build": {
     "for": [
       "public"

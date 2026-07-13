@@ -5,7 +5,7 @@
   "sectionTitle": "Резервное копирование данных в объектное хранилище с помощью rclone",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "d6d88ec5-b503-4286-a798-40cacaced227",
   "build": {
     "for": [
       "public"

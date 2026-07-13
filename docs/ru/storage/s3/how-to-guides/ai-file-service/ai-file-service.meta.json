@@ -5,7 +5,7 @@
   "sectionTitle": "Создание файлового сервиса с Foundation Models и MCP",
   "icon": "",
   "weight": 11,
-  "uuid": "",
+  "uuid": "61775f68-b69e-4b43-8da9-c986e813beb2",
   "build": {
     "for": [
       "public"

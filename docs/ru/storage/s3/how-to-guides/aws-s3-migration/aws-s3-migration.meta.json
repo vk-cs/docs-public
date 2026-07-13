@@ -5,7 +5,7 @@
   "sectionTitle": "Миграция данных из AWS S3 в объектное хранилище VK Cloud",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "8e6830d6-4cc6-4a13-87e8-02b0716bd5c3",
   "build": {
     "for": [
       "public"
