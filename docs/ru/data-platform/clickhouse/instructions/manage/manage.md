@@ -158,7 +158,7 @@
 
 {/tabs}
 
-### {heading(Включение и отключение расширений)[id=clickhouse_extensions]}
+## {heading(Включение и отключение расширений)[id=clickhouse_extensions]}
 
 {tabs}
 

@@ -117,6 +117,12 @@
 
 ## {heading(Просмотр учетной записи администратора)[id=trino_admin_view]}
 
+{ifndef(public)}
+{note:info}
+Только для Standalone в составе {var(cloud)}.
+{/note}
+{/ifndef}
+
 {tabs}
 
 {tab(Личный кабинет)}
@@ -131,6 +137,12 @@
 {/tabs}
 
 ## {heading(Изменение пароля администратора)[id=trino_change_password]}
+
+{ifndef(public)}
+{note:info}
+Только для Standalone в составе {var(cloud)}.
+{/note}
+{/ifndef}
 
 {tabs}
 
@@ -157,6 +169,12 @@
 {/tabs}
 
 ## {heading(Создание учетной записи администратора)[id=trino_add_admin]}
+
+{ifndef(public)}
+{note:info}
+Только для Standalone в составе {var(cloud)}.
+{/note}
+{/ifndef}
 
 {tabs}
 
