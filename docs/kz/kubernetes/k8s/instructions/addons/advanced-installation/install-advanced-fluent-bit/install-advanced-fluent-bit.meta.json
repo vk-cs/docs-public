@@ -4,15 +4,10 @@
   "metaDescription": "Мұнда Fluent Bit аддонын баптау және орнату сипатталған.",
   "sectionTitle": "Fluent Bit",
   "icon": "",
-  "weight": 6,
+  "weight": 7,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "1e5bf178-281a-45ff-8c6b-340c8bd5e548"

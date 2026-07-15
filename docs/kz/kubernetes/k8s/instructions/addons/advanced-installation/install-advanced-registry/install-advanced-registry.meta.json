@@ -4,15 +4,10 @@
   "metaDescription": "Docker тізілімі аддонын баптау және орнату.",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 3,
+  "weight": 5,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "10185023-cc46-4292-94f6-4aa7b1409377"

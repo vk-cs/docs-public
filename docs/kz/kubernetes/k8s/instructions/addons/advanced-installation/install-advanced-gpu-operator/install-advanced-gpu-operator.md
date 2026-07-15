@@ -101,7 +101,7 @@
 
 ## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-gpu-operator-edit-code]}
 
-Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub]-та қолжетімді(https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes).
+Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes)-та қолжетімді.
 
 {note:err}
 

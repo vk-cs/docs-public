@@ -131,6 +131,42 @@ The requirements of the individual add-on components:
 
 {/tabs}
 
+### {heading(Container Storage Interface (CSI) for S3)[id=s3]}
+
+{note:info}
+This add-on is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
+{tabs}
+
+{tab(Description)}
+
+[Container Storage Interface for S3 (S3-CSI)](https://github.com/yandex-cloud/k8s-csi-s3) is a [Container Storage Interface](https://kubernetes-csi.github.io/docs/) driver for Kubernetes that allows to mount S3-compatible object storages ([VK Object Storage](/en/storage/s3/concepts/about), AWS S3, MinIO, and others) as [PVs (persistent volumes)](/en/kubernetes/k8s/reference/pvs-and-pvcs).
+
+S3-CSI is based on a high-performance file system [GeeseFS](https://github.com/yandex-cloud/geesefs) powered by FUSE. The add-on is almost completely [POSIX-compatible](https://github.com/yandex-cloud/geesefs#posix-compatibility-matrix) and supports the following actions with objects:
+
+- read and write
+- block
+- rename and delete
+
+S3-CSI operates at the [bucket](/ru/storage/s3/concepts/about#s3-concepts-about-bucket "change-lang") level of the object storage and can function in two modes:
+
+- Dynamic provisioning of buckets. When creating a PVC (persistent volume claim) with a specified [storage class](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes), the add-on automatically creates a new bucket in the target S3-compatible storage. After creating a PVC, this bucket is immediately ready for use as a PV.
+- Static provisioning of existing buckets. You can use a pre-created bucket in any S3-compatible storage. To do this, the add-on creates a PV with the name of the existing bucket, and then the PVC is associated with this PV.
+
+S3-CSI can create buckets in any S3-compatible storage that you specify when [installing](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-s3-csi) the add-on.
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 50m
+- **RAM**: 200Mi
+
+{/tab}
+
+{/tabs}
+
 ### Docker Registry
 
 {note:warn}
@@ -229,7 +265,7 @@ The following options for using GPUs in a cluster are available:
 - The add-on distributes one GPU between several pods using the [MIG](../../flavors#gpu-sharing) strategy.
 - The add-on distributes one GPU between several pods using the [MPS](../../flavors#gpu-sharing) strategy.
 
-Addon components:
+add-on components:
 
 - NVIDIA GPU Operator for GPU management.
 - Service validators for CUDA (Compute Unified Device Architecture) validation after configuration changes.

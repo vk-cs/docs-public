@@ -4,15 +4,10 @@
   "metaDescription": "Ingress-контроллер аддонын баптау және орнату.",
   "sectionTitle": "Ingress NGINX",
   "icon": "",
-  "weight": 9,
+  "weight": 10,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "e003a4f4-8001-4655-8d85-0318bf5ab035"

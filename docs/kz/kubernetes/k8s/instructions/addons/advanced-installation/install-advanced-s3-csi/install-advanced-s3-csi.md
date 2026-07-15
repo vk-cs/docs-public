@@ -1,4 +1,4 @@
-# {heading(Kgateway)[id=k8s-install-advanced-kgateway]}
+# {heading(Container Storage Interface (CSI) S3 үшін)[id=k8s-install-advanced-s3-csi]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -6,13 +6,16 @@
 Бұл аддон тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін қолжетімді.
 {/note}
 
-## {heading(Дайындық қадамдары)[id=k8s-install-advanced-kgateway-prepare]}
+## {heading(Дайындық қадамдары)[id=k8s-install-advanced-s3-csi-prep]}
 
 {include(/kz/_includes/_addon-prep.md)}
+1. [Жасаңыз](/kz/storage/s3/instructions/access-management/access-keys) тіркелгі VK Cloud және құрылғыда кілт идентификаторын сақтаңыз (**Access Key ID**) және құпия кілт (**Secret Key**). Қосымшаны орнатқан кезде осы мәндерді қолданыңыз, сонда ол қажетті {var(s3)} жадына қол жеткізе алады.
 
-## {heading(Аддонды орнату)[id=k8s-install-advanced-kgateway-install]}
+   Егер сіз басқа S3 үйлесімді жадты пайдаланғыңыз келсе, провайдеріңізден оған ұқсас авторизация деректерін алыңыз.
 
-Аддон үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
+## {heading(Аддонды орнату)[id=k8s-install-advanced-s3-csi-install]}
+
+{linkto(/kz/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-s3)[text=S3-CSI]} аддоны үшін {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=орнатудың бірнеше нұсқасы]} қолжетімді.
 
 {tabs}
 
@@ -30,19 +33,11 @@
     1. Қажетті кластердің атауын басыңыз.
     1. **Аддондар** қойындысына өтіңіз.
     1. Егер кластерде орнатылған аддондар бұрыннан бар болса, **Аддон қосу** түймесін басыңыз.
-    1. `kgateway` аддонының картасындағы **Орнату** түймесін басыңыз.
+    1. `s3-csi` аддонының картасындағы **Орнату** түймесін басыңыз.
     1. Ашылмалы тізімнен аддонның қажетті нұсқасын таңдаңыз.
     1. **Аддонды орнату** түймесін басыңыз.
-    1. Қажет болса, келесілерді өңдеңіз:
 
-        - таңдалған нұсқаны;
-        - қолданба атауын;
-        - аддон орнатылатын атаулар кеңістігінің атауын;
-        - {linkto(#k8s-install-advanced-kgateway-edit-code)[text=аддонды баптау кодын]}.
-
-          {note:warn}
-          Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
-          {/note}
+    {include(/kz/_includes/_k8s_s3-csi-configure.md)}
 
     1. **Аддонды орнату** түймесін басыңыз.
 
@@ -52,8 +47,7 @@
 
    {/tabs}
 
-1. (Қосымша) [Kgateway ресми құжаттамасымен танысыңыз](https://kgateway.dev/docs/).
-1. (Қосымша) {linkto(/kz/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Kgateway-пен жұмыс істеу бойынша практикалық нұсқаулықпен танысыңыз]}.
+1. (Қосымша) [S3-CSI ресми құжаттамасымен танысыңыз](https://github.com/yandex-cloud/k8s-csi-s3/blob/master/README.md).
 
 {/tab}
 
@@ -95,15 +89,11 @@
     1. Қажетті кластердің атауын басыңыз.
     1. **Аддондар** қойындысына өтіңіз.
     1. Егер кластерде орнатылған аддондар бұрыннан бар болса, **Аддон қосу** түймесін басыңыз.
-    1. `kgateway` аддонының картасындағы **Орнату** түймесін басыңыз.
+    1. `s3-csi` аддонының картасындағы **Орнату** түймесін басыңыз.
     1. Ашылмалы тізімнен аддонның қажетті нұсқасын таңдаңыз.
     1. **Аддонды орнату** түймесін басыңыз.
-    1. Қажет болса, келесілерді өңдеңіз:
 
-        - таңдалған нұсқаны;
-        - қолданба атауын;
-        - аддон орнатылатын атаулар кеңістігінің атауын;
-        - {linkto(#k8s-install-advanced-kgateway-edit-code)[text=аддонды баптау кодын]}.
+   {include(/kz/_includes/_k8s_s3-csi-configure.md)}
 
     1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
@@ -136,10 +126,6 @@
 
        {/tabs}
 
-       {note:warn}
-       Қате берілген баптау коды орнату кезінде қателерге немесе аддонның жұмыс істемеуіне әкелуі мүмкін.
-       {/note}
-
     1. **Аддонды орнату** түймесін басыңыз.
 
        Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
@@ -148,8 +134,7 @@
 
    {/tabs}
 
-1. (Қосымша) [Kgateway ресми құжаттамасымен танысыңыз](https://kgateway.dev/docs/).
-1. (Қосымша) {linkto(/kz/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Kgateway-пен жұмыс істеу бойынша практикалық нұсқаулықпен танысыңыз]}.
+1. (Қосымша) [S3-CSI ресми құжаттамасымен танысыңыз](https://github.com/yandex-cloud/k8s-csi-s3/blob/master/README.md).
 
 {/tab}
 
@@ -173,7 +158,7 @@
     1. Қажетті кластердің атауын басыңыз.
     1. **Аддондар** қойындысына өтіңіз.
     1. Егер кластерде орнатылған аддондар бұрыннан бар болса, **Аддон қосу** түймесін басыңыз.
-    1. `kgateway` аддонының картасындағы **Орнату** түймесін басыңыз.
+    1. `s3-csi` аддонының картасындағы **Орнату** түймесін басыңыз.
     1. Ашылмалы тізімнен аддонның қажетті нұсқасын таңдаңыз.
     1. **Аддонды орнату** түймесін басыңыз.
     1. Қажет болса, келесілерді өңдеңіз:
@@ -190,17 +175,16 @@
 
    {/tabs}
 
-1. (Қосымша) [Kgateway ресми құжаттамасымен танысыңыз](https://kgateway.dev/docs/).
-1. (Қосымша) {linkto(/kz/kubernetes/k8s/how-to-guides/kgateway#k8s-kgateway)[text=Kgateway-пен жұмыс істеу бойынша практикалық нұсқаулықпен танысыңыз]}.
+1. (Қосымша) [S3-CSI ресми құжаттамасымен танысыңыз](https://github.com/yandex-cloud/k8s-csi-s3/blob/master/README.md).
 
 {/tab}
 
 {/tabs}
 
-## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-kgateway-edit-code]}
+## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-s3-csi-edit-code]}
 
 Аддон кодын өңдеу стандартты орнату және бөлінген worker-түйіндерге орнату үшін қолданылады.
 
-Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/kgateway-dev/kgateway/blob/v2.2.2/install/helm/kgateway/values.yaml) сайтында қолжетімді.
+Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/yandex-cloud/k8s-csi-s3/blob/master/deploy/helm/csi-s3/values.yaml) сайтында қолжетімді.
 
 Кодты өңдегеннен кейін аддонды орнатуды жалғастырыңыз.

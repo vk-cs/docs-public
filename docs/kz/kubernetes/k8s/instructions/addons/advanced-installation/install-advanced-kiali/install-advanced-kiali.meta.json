@@ -4,7 +4,7 @@
   "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: Kiali аддонын баптау және орнату.",
   "sectionTitle": "Kiali",
   "icon": "",
-  "weight": 13,
+  "weight": 14,
   "build": {
     "for": [
       "public"

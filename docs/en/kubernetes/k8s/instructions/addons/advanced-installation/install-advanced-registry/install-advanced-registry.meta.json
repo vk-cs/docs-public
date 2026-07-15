@@ -4,20 +4,11 @@
   "metaDescription": "Configuring and installing the Docker Registry add-on",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 3,
+  "weight": 5,
   "uuid": "c5ff4587-e97f-4ac5-9e6b-7e8c96181f30",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
   }
 }

@@ -4,15 +4,10 @@
   "metaDescription": "Мұнда GPU Operator аддонын баптау және орнату сипатталған.",
   "sectionTitle": "GPU Operator",
   "icon": "",
-  "weight": 8,
+  "weight": 9,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "c2e8a76c-209e-45dc-82dd-53f14ed3d9c3"
