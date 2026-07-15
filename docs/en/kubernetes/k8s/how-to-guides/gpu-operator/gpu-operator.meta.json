@@ -4,7 +4,7 @@
   "metaDescription": "Learn how to deploy a GPU-enabled cluster on the VK Cloud platform using GPU Operator: create a cluster with a GPU node, set up and test GPU functionality, allocate GPU resources between pods using MPS or MIG technologies, and switch between these GPU sharing modes. A comprehensive step-by-step guide for VK Cloud users.",
   "sectionTitle": "Using GPU Operator",
   "icon": "",
-  "weight": 11,
+  "weight": 13,
   "uuid": "db7b4e61-8525-456a-988b-3b98e864076e",
   "build": {
     "for": [

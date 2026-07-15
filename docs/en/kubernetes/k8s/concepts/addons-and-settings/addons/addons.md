@@ -1,4 +1,4 @@
-Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../instructions/create-cluster/create-terraform), or [later](../../../instructions/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../instructions/create-cluster/create-terraform), or [later](../../../instructions/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention. 
 
 ## {heading(Features of installing add-ons)[id=features_of_installing_addons]}
 
@@ -158,6 +158,16 @@ See [Connecting to the Docker registry](../../../connect/docker-registry) for de
 {/tab}
 
 {/tabs}
+
+### {heading(External Secrets Operator)[id=eso]}
+
+{note:info}
+This add-on is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
+{/note}
+
+[External Secrets Operator](https://external-secrets.io/v2.5.0/) allows you to securely manage Kubernetes [secrets](https://kubernetes.io/docs/concepts/configuration/secret/) that are stored outside the cluster in a cloud storage (for example, in the [VK Cloud Secret Manager](/ru/security/secret-manager/concepts/about#sm-about "change-lang"), AWS Secrets Manager, Azure Key Vault, etc).
+
+For the details on how to use the addon with the VK Cloud Secrets Manager, refer to [Using External Secrets Operator](/en/kubernetes/k8s/how-to-guides/external-secrets-operator).
 
 ### Fluent Bit
 

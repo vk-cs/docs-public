@@ -1,0 +1,14 @@
+{
+  "title": "External Secrets Operator",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: External Secrets Operator аддонын баптау және орнату.",
+  "sectionTitle": "External Secrets Operator",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,23 +1,14 @@
 {
-  "title": "Updating the Kube Prometheus Stack add-on",
+  "title": "Updating Kube Prometheus Stack",
   "shortDescription": "How to manually update an add-on with a large difference between its versions",
   "metaDescription": "How to manually update an add-on with a large difference between its versions.",
-  "sectionTitle": "Updating the Kube Prometheus Stack add-on",
+  "sectionTitle": "Updating Kube Prometheus Stack",
   "icon": "",
-  "weight": 14,
+  "weight": 17,
   "uuid": "e04cf47f-a0ca-4951-b5d5-411854e6d11d",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
   }
 }

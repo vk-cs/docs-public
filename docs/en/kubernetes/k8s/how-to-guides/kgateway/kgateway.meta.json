@@ -4,7 +4,7 @@
   "metaDescription": "How to set up the Kgateway addon in Cloud Containers: creating a Gateway and HttpRoute, routing traffic, and verifying the httpbin service",
   "sectionTitle": "Using Kgateway",
   "icon": "",
-  "weight": 13,
+  "weight": 16,
   "uuid": "f564b047-9ff7-4f7d-9b84-cb43a1b085a0",
   "build": {
     "for": [
