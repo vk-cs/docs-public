@@ -4,15 +4,10 @@
   "metaDescription": "VK Cloud-тағы Cloud Containers сервисі: Jaeger аддонын баптау және орнату.",
   "sectionTitle": "Jaeger",
   "icon": "",
-  "weight": 11,
+  "weight": 12,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "73d5bfb3-75d2-4b19-8281-327b953c3bd4"

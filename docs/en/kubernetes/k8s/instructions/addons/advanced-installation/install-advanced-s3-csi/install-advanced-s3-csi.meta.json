@@ -1,0 +1,14 @@
+{
+  "title": "Container Storage Interface for S3 (S3-CSI)",
+  "shortDescription": "",
+  "metaDescription": "Installing the Container Storage Interface for S3 (S3-CSI) add-on in Kubernetes: step-by-step instructions for VK Cloud, dedicated worker nodes and quick installation",
+  "sectionTitle": "Container Storage Interface for S3 (S3-CSI)",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

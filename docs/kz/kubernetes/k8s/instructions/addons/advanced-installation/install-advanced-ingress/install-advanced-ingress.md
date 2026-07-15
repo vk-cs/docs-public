@@ -323,7 +323,7 @@
 
 {note:info}
 - Аддон кодын өңдеу стандартты орнатуға және бөлінген worker-түйіндерге орнатуға қолданылады.
-- Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub]-та қолжетімді(https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
+- Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml)-та қолжетімді.
 {/note}
 
 ### {heading(Ingress-контроллер үшін теңгергіш түрін өзгерту)[id=k8s-install-advanced-ingress-change-balancer]}

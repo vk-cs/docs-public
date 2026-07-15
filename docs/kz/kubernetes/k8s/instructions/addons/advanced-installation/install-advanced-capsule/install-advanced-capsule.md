@@ -283,7 +283,7 @@
 
 Аддон кодын өңдеу стандартты орнатуға және бөлінген worker-түйіндерге орнатуға қолданылады.
 
-Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub]-та қолжетімді(https://github.com/projectcapsule/capsule/blob/main/charts/capsule/values.yaml).
+Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/projectcapsule/capsule/blob/main/charts/capsule/values.yaml)-та қолжетімді.
 
 {note:err}
 
