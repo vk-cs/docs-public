@@ -36,7 +36,7 @@ To create VM:
 
      - **Disk size**: specify the required VM disk size in gigabytes.
 
-         The maximum disk size is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152). To create a VM with a larger disk, use the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
+         The maximum disk size is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas). To create a VM with a larger disk, use the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
      - **Disk Type**: select one of the [disk types](../../../concepts/about#disks_types_b7c586e).
 
@@ -125,7 +125,7 @@ To create VM:
 
    1. [Enable](/en/access/iam/instructions/manage-2fa) two-factor authentication.
    2. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
-   3. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   3. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Collect the data:
 
@@ -190,7 +190,7 @@ To create VM:
 
    - `<DISK_SIZE>` — disk size in GB.
 
-      The maximum disk size is limited. For more information, see [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152).
+      The maximum disk size is limited. For more information, see [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas).
    
    - `<IMAGE_ID>` — the image ID obtained earlier.
 

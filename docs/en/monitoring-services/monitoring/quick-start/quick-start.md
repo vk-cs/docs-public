@@ -45,5 +45,5 @@
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) ее, чтобы воспользоваться ею позже;
+- [остановите](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) ее, чтобы воспользоваться ею позже;
 - [удалите](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) ее навсегда.

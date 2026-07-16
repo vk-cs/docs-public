@@ -588,6 +588,6 @@ IP мекенжайы пингке жауап беруі керек.
 
 Егер жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Виртуалды машинаны {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-delete)[text=жойыңыз]}.
+1. Виртуалды машинаны {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
 1. Маршрутизаторларды {linkto(../../../../networks/vnet/instructions/router#vner-router-delete)[text=жойыңыз]}.
 1. Транзиттік және виртуалды машиналарды орналастыруға арналған {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желілер мен]} {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=желілерді]} жойыңыз.

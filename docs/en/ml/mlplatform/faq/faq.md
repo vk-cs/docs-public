@@ -16,7 +16,7 @@ To restart the VM
 1. Go to the **Cloud Servers** -> **Virtual Machines** section.
 2. Click ![ ](/en/assets/more-icon.svg "inline") for the JupyterHub VM instance and select **Restart**.
 
-You can learn more about managing VM instances in ["Starting, Stopping, and Restarting a VM"](../../../computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm).
+You can learn more about managing VM instances in ["Starting, Stopping, and Restarting a VM"](../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart).
 
 {/cut}
 

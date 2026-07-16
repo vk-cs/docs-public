@@ -1,0 +1,14 @@
+{
+  "title": "Migration of platform services",
+  "shortDescription": "How to migrate load balancers, IPsec tunnels, file storages, Kubernetes clusters, and databases to SDN Sprut",
+  "metaDescription": "How to migrate load balancers, IPsec tunnels, file storages, Kubernetes clusters, and databases to SDN Sprut",
+  "sectionTitle": "Migration of platform services",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

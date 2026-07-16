@@ -1,6 +1,6 @@
 VK Cloud is a cloud platform that provides network access to computing resources (virtual machines, databases, storage and other services) on a "pay as you go" basis: the fee is charged only for the resources consumed.
 
-You rent virtual resources hosted in VK [data centers](../../../start/concepts/architecture#az) instead of maintaining your own physical servers. This minimises management costs and provides you with access to VK Cloud technical support.
+You rent virtual resources hosted in VK [data centers](#architecture-az) instead of maintaining your own physical servers. This minimises management costs and provides you with access to VK Cloud technical support.
 
 ## Deployment models
 
@@ -132,7 +132,7 @@ The status of the availability zones, services and infrastructure of VK Cloud ca
 
 {/note}
 
-### {heading(Availability zones)[id=az]}
+### {heading(Availability zones)[id=architecture-az]}
 
 Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located. In VK Cloud, the availability zone corresponds to a separate Tier III data center. VK Cloud provides availability zones:
 

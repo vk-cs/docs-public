@@ -330,6 +330,6 @@ IP мекенжайы пингке жауап беруі тиіс.
 
 Егер жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. {linkto(/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete)[text=Виртуалды машинаны жойыңыз]}.
+1. {linkto(/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машинаны жойыңыз]}.
 1. {linkto(/kz/networks/vnet/instructions/router#vnet-router-delete)[text=Маршрутизаторларды жойыңыз]}.
 1. ВМ орналастырылған {linkto(/kz/networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желіні]} және {linkto(/kz/networks/vnet/instructions/net#vnet-net-delete)[text=желіні]} жойыңыз.

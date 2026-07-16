@@ -79,7 +79,7 @@ The tabs below describe different scenarios for creating load balancers:
 
 {tab(Scenario 1)}
 
-1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/instructions/ip/floating-ip#adding_floating_ip_address_to_the_project).
+1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add).
 
    There should be no internal IP address attached to the IP address.
 

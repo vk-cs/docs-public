@@ -78,7 +78,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {/tabs}
 
-## Adding a VPN Tunnel
+## {heading(Adding a VPN Tunnel)[id=vnet-vpn-add]}
 
 {tabs}
 
@@ -828,7 +828,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 {/tabs}
 
-## Removing a VPN tunnel
+## {heading(Removing a VPN tunnel)[id=vnet-vpn-delete]}
 
 {tabs}
 

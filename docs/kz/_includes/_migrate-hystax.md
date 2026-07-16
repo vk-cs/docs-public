@@ -162,7 +162,7 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
 
    - `<ИМЯ_ВМ>` — VK Cloud ішінде виртуалды машинаға берілетін атау.
    - `flavor` — ВМ үшін [конфигурация шаблонының](/kz/computing/iaas/concepts/vm/flavor) атауы немесе ID-і. Атауды `openstack flavor list` командасы арқылы нақтылаңыз.
-   - `availability_zone` — ВМ орналастырылатын [қолжетімділік аймағының](/kz/start/concepts/architecture#az) атауы.
+   - `availability_zone` — ВМ орналастырылатын [қолжетімділік аймағының](/kz/start/concepts/architecture#architecture-az) атауы.
    - `security_groups` — `Ubuntu-MR` үшін [қауіпсіздік топтарының](/kz/networks/vnet/instructions/secgroups) атаулары немесе ID-лерінің тізімі.
    - `id` — алдыңғы қадамда Hystax жасаған виртуалды машинаның ішкі ID-і.
    - `custom_image_metadata` — ВМ үшін пайдаланушылық метадеректер:

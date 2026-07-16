@@ -21,7 +21,7 @@ A Kubernetes cluster in Cloud Containers consists of two types of nodes, master 
 
   [Automatic scaling](/en/kubernetes/k8s/concepts/scale#autoscaling) is enabled for all master nodes by default. When the workload of the cluster changes, the amount of the resources used by master nodes changes respectively.
 
-- _Worker nodes_ manage the [workload](https://kubernetes.io/docs/concepts/workloads/). Worker nodes can be organized into groups. It is best to place such groups in different [availability zones](/en/intro/start/concepts/architecture#az) to improve fault tolerance. Worker nodes are also managed by the VK Cloud platform, but have network connectivity with the users' projects.
+- _Worker nodes_ manage the [workload](https://kubernetes.io/docs/concepts/workloads/). Worker nodes can be organized into groups. It is best to place such groups in different [availability zones](/en/intro/start/concepts/architecture#architecture-az) to improve fault tolerance. Worker nodes are also managed by the VK Cloud platform, but have network connectivity with the users' projects.
 
 High availability of a cluster depends on its number of master nodes and their distribution across availability zones. Possible configurations are:
 

@@ -32,14 +32,14 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
    - **Cluster type**:
 
-     - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). High availability is provided at the zone level.
+     - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). High availability is provided at the zone level.
      - **Fault-tolerant**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or 5.
      
    - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for fault-tolerant clusters is automatically set to `3`, but you can change it to `5`.
 
       For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
 
-   - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
+   - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#architecture-az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
 
      {note:info}
 

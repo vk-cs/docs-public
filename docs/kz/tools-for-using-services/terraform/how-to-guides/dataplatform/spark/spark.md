@@ -155,7 +155,7 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
   {/cut}
 
-- `availability_zone` — кластер жасалатын [қолжетімділік аймағы](/kz/start/concepts/architecture#az).
+- `availability_zone` — кластер жасалатын [қолжетімділік аймағы](/kz/start/concepts/architecture#architecture-az).
 
 - `configs` — кластер конфигурациясының параметрлері:
 

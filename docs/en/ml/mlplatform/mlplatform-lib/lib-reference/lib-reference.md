@@ -321,7 +321,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (type `int`).
 - `volume_type`: [disс type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -631,7 +631,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (`int` type).
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -859,7 +859,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (`int` type).
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 

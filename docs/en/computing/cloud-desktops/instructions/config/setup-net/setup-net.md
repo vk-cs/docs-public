@@ -66,7 +66,7 @@ To use the manual setup mode, prepare a network to host the service infrastructu
 
       {/note}
 
-   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the Cloud Desktop service from the list.
+   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) of the Cloud Desktop service from the list.
 
      {note:info}
 

@@ -11,7 +11,7 @@ To show how to configure a secure connection with virtual desktops:
 
 ## Before you start
 
-1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Create an LDAP environment:
 
@@ -457,6 +457,6 @@ Scheme of the built interaction between networks and machines within networks:
 If you no longer need the created resources, delete them:
 
 1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machines.
-1. [Delete](/en/networks/vnet/instructions/vpn#removing_a_vpn_tunnel) the VPN tunnel.
-1. [Delete](/en/networks/vnet/instructions/router#removing_the_router) the routers.
-1. Delete the [subnet](/en/networks/vnet/instructions/net#deleting_subnet) and the [network](/en/networks/vnet/instructions/net#deleting_network) in which the VM is located.
+1. [Delete](/en/networks/vnet/instructions/vpn#vnet-vpn-delete) the VPN tunnel.
+1. [Delete](/en/networks/vnet/instructions/router#vnet-router-delete) the routers.
+1. Delete the [subnet](/en/networks/vnet/instructions/net#vnet-net-subnet-delete) and the [network](/en/networks/vnet/instructions/net#vnet-net-delete) in which the VM is located.

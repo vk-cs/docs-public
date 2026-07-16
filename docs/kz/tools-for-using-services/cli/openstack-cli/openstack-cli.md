@@ -346,7 +346,7 @@ OpenStack пәрмен жолы интерфейсі (OpenStack CLI) {var(cloud)
 
   {/cut}
 
-- [Қолжетімділік аймақтарының](/kz/start/concepts/architecture#az) тізімін шығару:
+- [Қолжетімділік аймақтарының](/kz/start/concepts/architecture#architecture-az) тізімін шығару:
 
    ```console
    openstack availability zone list

@@ -61,7 +61,7 @@ Anycast IP addresses work only in Sprut SDN.
 
 The anycast IP service enables building a fault-tolerant infrastructure with optimal routing.
 
-_Anycast_ is a routing method where a single IP address is assigned to multiple servers in different [availability zones](/en/intro/start/concepts/architecture#az). Traffic via the anycast IP address is automatically routed to the nearest or least loaded node based on BGP metrics.
+_Anycast_ is a routing method where a single IP address is assigned to multiple servers in different [availability zones](/en/intro/start/concepts/architecture#architecture-az). Traffic via the anycast IP address is automatically routed to the nearest or least loaded node based on BGP metrics.
 
 An anycast IP address performs the following tasks:
 

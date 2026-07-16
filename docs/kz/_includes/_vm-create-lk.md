@@ -57,7 +57,7 @@
       {ifdef(public)}
       Дискінің ең үлкен өлшемі {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-vm-no-quotas-limits)[text=шектелген]}. Үлкенірек дискімен ВМ жасау үшін {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} пайдаланыңыз.
       {/ifdef}
-    - **Дискінің түрі**: {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=дискінің түрін]} таңдаңыз.
+    - **Дискінің түрі**: {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-concepts-disk-types)[text=дискінің түрін]} таңдаңыз.
 
    {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
 1. **Келесі қадам** батырмасын басыңыз.

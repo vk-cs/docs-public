@@ -31,7 +31,7 @@
 
          If the desired network is not listed, select **Create new network** and specify [SDN](/en/networks/vnet/concepts/architecture#sdns_used) and the subnet address.
 
-      1. Select [availability zone](/en/intro/start/concepts/architecture#az) where the Cloud Containers cluster node will be located.
+      1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the Cloud Containers cluster node will be located.
    1. Configure the parameters of the nodes on which the service instance will be deployed:
 
       {tabs}

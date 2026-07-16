@@ -282,5 +282,5 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 
 Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар сізге енді қажет болмаса:
 
-- `OA-Ubuntu-docker` ВМ-ді [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `OA-Ubuntu-docker` ВМ-ді [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
 - Қажет болса, `185.185.185.185` Floating IP мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).

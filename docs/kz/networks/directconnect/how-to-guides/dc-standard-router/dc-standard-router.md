@@ -389,6 +389,6 @@ IP мекенжайы пингке жауап беруі тиіс.
 
 Егер жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-delete)[text=Виртуалды машинаны жойыңыз]}.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машинаны жойыңыз]}.
 1. {linkto(../../../../networks/vnet/instructions/router#vner-router-delete)[text=Маршрутизаторларды жойыңыз]}.
 1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желілерді]} және {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=желілерді]} жойыңыз: транзиттік желіні және виртуалды машиналарды орналастыруға арналған желіні.

@@ -1,0 +1,14 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Description of issues encountered during migration and their solutions",
+  "metaDescription": "Description of issues encountered during migration and their solutions",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 11,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

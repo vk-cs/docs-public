@@ -10,7 +10,7 @@ Events that the service of [file storages](/en/computing/iaas/concepts/about#fil
 |POST
 |`/v2/shares/`
 
-A file storage has been [created](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage)
+A file storage has been [created](/en/computing/iaas/instructions/fs-manage#fs-create)
 
 |POST
 |`/v2/shares/manage`
@@ -103,7 +103,7 @@ A metadata element with the given key has been deleted
 |POST
 |`/v2/share-networks`
 
-A file storage network has been [created](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage)
+A file storage network has been [created](/en/computing/iaas/instructions/fs-manage#fs-create)
 
 |POST
 |`/v2/share-networks/{share_network_id}/action`

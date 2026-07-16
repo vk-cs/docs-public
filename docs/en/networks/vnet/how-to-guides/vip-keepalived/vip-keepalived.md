@@ -375,6 +375,6 @@ Open two terminal sessions:
 If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) virtual machines.
-1. [Remove](../../instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
+1. [Remove](../../instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
 1. [Delete](../../instructions/ports#deleting_a_port) the port that has been assigned a virtual IP address.
-1. Delete the [subnet](../../instructions/net#deleting_subnet) and [network](../../instructions/net#deleting_network) where the virtual cars.
+1. Delete the [subnet](../../instructions/net#vnet-net-subnet-delete) and [network](../../instructions/net#vnet-net-delete) where the virtual cars.

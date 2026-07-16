@@ -1,0 +1,14 @@
+{
+  "title": "Cluster migration",
+  "shortDescription": "How to migrate Kubernetes clusters to SDN Sprut",
+  "metaDescription": "How to migrate Kubernetes clusters to SDN Sprut",
+  "sectionTitle": "Cluster migration",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

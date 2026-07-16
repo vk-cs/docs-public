@@ -109,7 +109,7 @@ No more than 1000 virtual machines can be displayed in the management console.
 
 {/note}
 
-#### Limits without quotas
+#### {heading(Limits without quotas)[id=limits_without_quotas]}
 
 [cols="3,1,1", options="header"]
 |===
@@ -211,7 +211,7 @@ Aside from the quotas listed above, Cloud Containers has specific technical limi
 |1, 3, 5 pcs.
 |![](/en/assets/check.svg "inline")
 
-|Number of nodes in an [availability zone](/en/intro/start/concepts/architecture#az)
+|Number of nodes in an [availability zone](/en/intro/start/concepts/architecture#architecture-az)
 |200 pcs.
 |![](/en/assets/no.svg "inline")
 
@@ -280,13 +280,13 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | 600 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
+| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#architecture-az) GZ1 (legacy)
 | **High-IOPS SSD size in the (DP1) area**
 | `gigabytes_dp1-high-iops`
 | 200 GB
 | not limited
 
-| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#az) MS1 (legacy)
+| Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#architecture-az) MS1 (legacy)
 | **High-IOPS SSD size in the Moscow (MS1) (MS1) area**
 | `gigabytes_ko1-high-iops`
 | 200 GB
@@ -325,13 +325,13 @@ Quotas for the total volume of disks in the project take into account all types 
 | 60 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) GZ1 (legacy)
+| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#architecture-az) GZ1 (legacy)
 | **High-IOPS SSD volumes in - (DP1) area**
 | `volumes_dp1-high-iops`
 | 32 pcs.
 | not limited
 
-| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#az) MS1 (legacy)
+| Number of High-IOPS SSD drives in [availability zone](/en/intro/start/concepts/architecture#architecture-az) MS1 (legacy)
 | **High-IOPS SSD volumes in Moscow (MS1) (MS1) area**
 | `volumes_ko1-high-iops`
 | 32 pcs.

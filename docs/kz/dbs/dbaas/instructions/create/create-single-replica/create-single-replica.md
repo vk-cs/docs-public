@@ -41,7 +41,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: БД инстансына арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: БД инстансына арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: БД инстансына арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 

@@ -98,7 +98,7 @@
 
    {tab(availability_zone_name)}
 
-   [Қолжетімділік аймақтарына](/kz/start/concepts/architecture#az) арналған құжаттан.
+   [Қолжетімділік аймақтарына](/kz/start/concepts/architecture#architecture-az) арналған құжаттан.
 
    {/tab}
 

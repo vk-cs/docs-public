@@ -1,0 +1,14 @@
+{
+  "title": "Database Migration",
+  "shortDescription": "How to migrate databases to SDN Sprut",
+  "metaDescription": "How to migrate databases to SDN Sprut",
+  "sectionTitle": "Database Migration",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -148,9 +148,9 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/instructions/vm
 2. Add the VirtIO HBA driver to the Windows boot.
 
    1. [Create a disk](/en/computing/iaas/instructions/volumes#create_disk) minimum size and [connect](/en/computing/iaas/instructions/volumes#mount_disk) it to VM.
-   2. [Run](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the virtual machine.
+   2. [Run](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the virtual machine.
    3. Run the VirtIO installer in `repair` mode.
-   4. [Stop](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the virtual machine.
+   4. [Stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the virtual machine.
 
 3. [Create a image](/en/computing/iaas/instructions/images/images-manage#creating_an_image) from the VM's boot disk.
 4. Change the disk bus type of the new image:

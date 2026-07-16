@@ -12,7 +12,7 @@ Cloud Databases қызметі бұлтта сізге қажет {linkto(../typ
 - резервтік көшіру;
 - деректер көлемі ұлғайған сайын дисктерді масштабтау.
 
-{linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Москва аймағында]} 16-нұсқадағы {linkto(../types/postgresql#dbaas-concepts-postgresql)[text=PostgreSQL]} үшін әртүрлі [қолжетімділік аймақтарында](../../../../start/concepts/architecture#az) хосттары бар географиялық үлестірілген конфигурацияларды жасап, істен шығуға төзімділікті қосымша арттыра аласыз.
+{linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Москва аймағында]} 16-нұсқадағы {linkto(../types/postgresql#dbaas-concepts-postgresql)[text=PostgreSQL]} үшін әртүрлі [қолжетімділік аймақтарында](../../../../start/concepts/architecture#architecture-az) хосттары бар географиялық үлестірілген конфигурацияларды жасап, істен шығуға төзімділікті қосымша арттыра аласыз.
 
 ДҚ инстансын өрістеткеннен кейін онда қажетті дерекқорларды жасау, оларды мазмұнмен толтыру, оларға өз қолданбаларыңызды қосу және қолжетімділіктерді баптау ғана қалады.
 

@@ -122,7 +122,7 @@ WordPress CMS әкімші панелі ашылады.
 
 Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Almalinux_9_WP` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `Almalinux_9_WP` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
 - `MySQL-9341` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
 - Қажет болса, `212.233.95.135` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
 - Жасалған `site-wp.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

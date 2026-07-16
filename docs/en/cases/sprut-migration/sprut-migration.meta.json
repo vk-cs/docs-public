@@ -1,0 +1,14 @@
+{
+  "title": "Migration to SDN Sprut",
+  "shortDescription": "How to migrate a project to SDN Sprut",
+  "metaDescription": "How to migrate a project to SDN Sprut",
+  "sectionTitle": "Migration to SDN Sprut",
+  "icon": "",
+  "weight": 13,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

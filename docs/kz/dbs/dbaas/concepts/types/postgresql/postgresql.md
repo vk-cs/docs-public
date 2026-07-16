@@ -14,7 +14,7 @@ PostgreSQL-дің негізгі артықшылықтары:
 
 VK Cloud-та қолдау көрсетілетін PostgreSQL нұсқаларының тізімі осы деректер қоры инстансын {linkto(../../../instructions/create#dbaas-create)[text=құру]} кезінде қолжетімді.
 
-{linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Москва өңірінде]} PostgreSQL 16 нұсқасы үшін істен шығуға төзімділікті қосымша арттыру мақсатында әртүрлі [қолжетімділік аймақтарындағы](../../../../../start/concepts/architecture#az) хосттармен географиялық үлестірілген конфигурацияларды жасай аласыз.
+{linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Москва өңірінде]} PostgreSQL 16 нұсқасы үшін істен шығуға төзімділікті қосымша арттыру мақсатында әртүрлі [қолжетімділік аймақтарындағы](../../../../../start/concepts/architecture#architecture-az) хосттармен географиялық үлестірілген конфигурацияларды жасай аласыз.
 
 ## {heading(Әрі қарай не істеу керек?)[id=dbaas-concepts-postgresql-whats-next]}
 

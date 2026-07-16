@@ -8,7 +8,7 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 
 {tab(Management console)}
 
-1. [Stop the VM](../../../instructions/vm/vm-manage#start_stop_restart_vm) that image you want to create.
+1. [Stop the VM](../../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) that image you want to create.
 1. Go to **Cloud Servers → Images**.
 1. Click the **Create** button.
 1. Specify the image settings:

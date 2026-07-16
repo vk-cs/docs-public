@@ -215,7 +215,7 @@
 |1, 3 немесе 5 дана
 |![](/kz/assets/check.svg "inline")
 
-|Бір [қолжетімділік аймағындағы](/kz/start/concepts/architecture#az) түйіндер саны
+|Бір [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) түйіндер саны
 |200 дана
 |![](/kz/assets/no.svg "inline")
 
@@ -284,13 +284,13 @@
 | 600 ГБ
 | шектелмеген
 
-| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#az) GZ1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
+| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) GZ1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
 | **Аймақтағы High-IOPS SSD өлшемі - (DP1)**
 | `gigabytes_dp1-high-iops`
 | 200 ГБ
 | шектелмеген
 
-| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#az) MS1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
+| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) MS1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
 | **Москва аймағындағы High-IOPS SSD өлшемі (MS1) (MS1)**
 | `gigabytes_ko1-high-iops`
 | 200 ГБ
@@ -330,13 +330,13 @@ Low Latency NVMe дисктерінің жалпы көлемі квоталан
 | 60 дана
 | шектелмеген
 
-| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#az) GZ1 (legacy) High-IOPS SSD дисктерінің саны
+| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) GZ1 (legacy) High-IOPS SSD дисктерінің саны
 | **Аймақтағы High-IOPS SSD дисктері - (DP1)**
 | `volumes_dp1-high-iops`
 | 32 дана
 | шектелмеген
 
-| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#az) MS1 (legacy) High-IOPS SSD дисктерінің саны
+| [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) MS1 (legacy) High-IOPS SSD дисктерінің саны
 | **Москва аймағындағы High-IOPS SSD дисктері (MS1) (MS1)**
 | `volumes_ko1-high-iops`
 | 32 дана

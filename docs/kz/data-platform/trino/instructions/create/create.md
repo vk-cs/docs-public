@@ -51,7 +51,7 @@
 
          Егер тізімде қажетті желі болмаса, **Жаңа желі жасау** тармағын таңдап, {ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn) {/ifdef} {ifndef(public)} SDN{/ifndef} және ішкі желі мекенжайын көрсетіңіз.
 
-      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
+      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
    1. Сервис данасы жайылатын тораптардың параметрлерін баптаңыз:
 
       {tabs}

@@ -128,5 +128,5 @@ Deployed virtual resources are charged. If you don't need them anymore:
 
 - [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Ubuntu_22_04_OpenCart` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-9341` instance.
-- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) `87.239.106.48` floating IP address.
+- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) `87.239.106.48` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-opencart.example.vk.cloud` DNS record.

@@ -10,7 +10,7 @@
 
    - **Disk size**: specify the disk size in gigabytes.
 
-       The maximum disk size is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas_24194152). To create a VM with a larger disk, use the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
+       The maximum disk size is [limited](/en/tools-for-using-services/account/concepts/quotasandlimits#limits_without_quotas). To create a VM with a larger disk, use the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
    - **Boot disk**: enable the option if you want to make the disk bootable.
 

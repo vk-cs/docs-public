@@ -1,0 +1,14 @@
+{
+  "title": "Load Balancer Migration",
+  "shortDescription": "How to migrate load balancers to SDN Sprut",
+  "metaDescription": "How to migrate load balancers to SDN Sprut",
+  "sectionTitle": "Load Balancer Migration",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

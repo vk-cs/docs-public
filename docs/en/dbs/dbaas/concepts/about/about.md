@@ -8,7 +8,7 @@ Managing cloud DBMSs does not require deep knowledge of administration. A DBMS i
 - backup;
 - scaling disks as data volumes grow.
 
-In the Moscow [region](/en/tools-for-using-services/account/concepts/regions), for [PostgreSQL](/en/dbs/dbaas/concepts/types/postgresql) 16, you can create geo-distributed configurations with hosts in different [availability zones](/en/intro/start/concepts/architecture#az) to further increase fault tolerance.
+In the Moscow [region](/en/tools-for-using-services/account/concepts/regions), for [PostgreSQL](/en/dbs/dbaas/concepts/types/postgresql) 16, you can create geo-distributed configurations with hosts in different [availability zones](/en/intro/start/concepts/architecture#architecture-az) to further increase fault tolerance.
 
 After deploying the DBMS instance, all that remains is to create the necessary databases on it, fill them with content, connect your applications to them, configure access.
 

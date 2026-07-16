@@ -1,4 +1,4 @@
-The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#3_complete_authentication).
+The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#openstack-authorize).
 
 ## Before you start
 
@@ -141,7 +141,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    {/note}
 
-## 3. Complete authentication
+## {heading(3. Complete authentication)[id=openstack-authorize]}
 
 1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Make sure that [two-factor authentication](/en/access/iam/instructions/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
@@ -323,7 +323,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    {/cut}
 
-- Get the list of [availability zones](/en/intro/start/concepts/architecture#az):
+- Get the list of [availability zones](/en/intro/start/concepts/architecture#architecture-az):
 
    ```console
    openstack availability zone list

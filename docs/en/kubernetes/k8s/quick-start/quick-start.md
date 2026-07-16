@@ -758,7 +758,7 @@ This result demonstrates that:
 A running cluster consumes computing resources. If you no longer need it:
 
 - [stop](../instructions/manage-cluster#start_or_stop_cluster) it to use it later;
-- [delete](../instructions/manage-cluster#delete_cluster) it permanently.
+- [delete](../instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.
 
 ## What's next?
 

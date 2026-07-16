@@ -381,4 +381,4 @@ Running service infrastructure consumes computing resources. If you no longer ne
 - [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#deleting_a_service_instance) the instance of the Check Point CloudGuard Network service.
 - [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) VMs created as a gateway and a management server.
 - Make sure that all disks are deleted along with the VMs.
-- [Delete](/en/networks/vnet/instructions/net#deleting_network) the network used for the service.
+- [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the network used for the service.

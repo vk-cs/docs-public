@@ -443,7 +443,7 @@ This example will create:
 
 To connect an NFS PV using a static PVC:
 
-1. [Create file storage](/en/computing/iaas/instructions/fs-manage#creating_a_file_storage).
+1. [Create file storage](/en/computing/iaas/instructions/fs-manage#fs-create).
 
    When creating it, specify:
 

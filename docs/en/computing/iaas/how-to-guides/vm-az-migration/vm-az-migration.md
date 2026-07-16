@@ -2,7 +2,7 @@
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-All virtual machines that use the {linkto(../../../../start/concepts/architecture#architecture-az)[text=availability zone]} `GZ1` must be migrated to another availability zone (for example, `PA2`), since `GZ1` is being decommissioned.
+All virtual machines that use the {linkto(../../../../intro/start/concepts/architecture#architecture-az)[text=availability zone]} `GZ1` must be migrated to another availability zone (for example, `PA2`), since `GZ1` is being decommissioned.
 
 {note:warn}
 The `PA2` availability zone uses only SDN Sprut. If your project uses SDN Neutron, first perform a {linkto(../../../../cases/sprut-migration#cases-sprut-migration)[text=migration to SDN Sprut]}.
@@ -24,13 +24,13 @@ This guide will help you migrate your virtual machines to a new availability zon
 
 ## {heading(1. Create VM disk snapshots)[id=iaas-vm-az-migration-vol-snapshot]}
 
-1. {linkto(../../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-create)[text=Create]} snapshots of the VM boot disk.
-1. (Optional) {linkto(../../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-create)[text=Create]} snapshots of the additional VM disks, if any.
+1. {linkto(../../../../computing/iaas/instructions/volumes#iaas-volumes-snapshots-create)[text=Create]} snapshots of the VM boot disk.
+1. (Optional) {linkto(../../../../computing/iaas/instructions/volumes#iaas-volumes-snapshots-create)[text=Create]} snapshots of the additional VM disks, if any.
 
 ## {heading(2. Create new disks from snapshots)[id=iaas-vm-az-migration-new-vol]}
 
-1. From the VM boot disk snapshot, {linkto(../../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-disk-create)[text=create]} a boot disk in the new availability zone.
-1. (Optional) From the additional VM disk snapshots, {linkto(../../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-disk-create)[text=create]} disks in the new availability zone.
+1. From the VM boot disk snapshot, [create](../../../../computing/iaas/instructions/volumes#iaas-volumes-snapshots-use) a boot disk in the new availability zone.
+1. (Optional) From the additional VM disk snapshots, [create](../../../../computing/iaas/instructions/volumes#iaas-volumes-snapshots-use) disks in the new availability zone.
 
 ## {heading(3. Create a VM from the new disk)[id=iaas-vm-az-migration-new-vm]}
 
@@ -46,7 +46,7 @@ The new virtual machine will have a new IP address.
 ## {heading(4. Start the VM and attach additional disks)[id=iaas-vm-az-migration-vm-start]}
 
 1. {linkto(../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Start]} the new virtual machine.
-1. (Optional) {linkto(../../instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=Attach]} additional disks to the virtual machine.
+1. (Optional) {linkto(../../instructions/volumes#mount_disk)[text=Attach]} additional disks to the virtual machine.
 
 ## {heading(5. (Optional) Synchronize Terraform State)[id=iaas-vm-az-migration-terraform]}
 
@@ -98,4 +98,4 @@ If you manage {var(cloud)} resources via Terraform, after migrating the VM, sync
 
 ## {heading(Delete unused resources)[id=iaas-vm-az-migration-delete]}
 
-A running virtual machine, its disks, and their snapshots are billed. If you no longer need the source VM, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=delete]} it. Its disks and their snapshots will be deleted along with it.
+A running virtual machine, its disks, and their snapshots are billed. If you no longer need the source VM, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#delete_vm)[text=delete]} it. Its disks and their snapshots will be deleted along with it.

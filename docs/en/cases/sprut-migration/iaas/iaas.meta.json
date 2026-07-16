@@ -1,0 +1,14 @@
+{
+  "title": "Network infrastructure migration",
+  "shortDescription": "How to migrate networks, routers, security groups, IPsec tunnels, and VMs to SDN Sprut",
+  "metaDescription": "How to migrate networks, routers, security groups, IPsec tunnels, and VMs to SDN Sprut",
+  "sectionTitle": "Network infrastructure migration",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

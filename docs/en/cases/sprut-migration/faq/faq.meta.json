@@ -1,0 +1,14 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about migration to SDN Sprut",
+  "metaDescription": "Answers to frequently asked questions about migration to SDN Sprut",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
