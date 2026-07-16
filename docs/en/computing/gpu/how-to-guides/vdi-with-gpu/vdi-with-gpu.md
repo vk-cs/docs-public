@@ -13,7 +13,7 @@ Deployment of virtual desktops with NVIDIA® Tesla® processors is described bel
 ## Preparatory steps
 
 1. [Connect](/en/computing/gpu/connect) the Cloud GPU service.
-1. Request quotas for a GPU-based VM flavor from [technical support](/en/contacts). The example uses the `GPU2-24-96-T4-1` flavor.
+1. Request quotas for a GPU-based VM flavor from [technical support](mailto:support@mcs.mail.ru). The example uses the `GPU2-24-96-T4-1` flavor.
 1. Create and configure the OpenLDAP user directory service as described in the [official OpenLDAP documentation](https://www.openldap.org/devel/admin/guide.htm#A%20Quick-Start%20Guide).
 1. Find out the details of the configured directory:
 

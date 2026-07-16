@@ -34,7 +34,7 @@
 
 {cut(VK Cloud деректер орталықтары қайда орналасқан?)}
 
-{linkto(/kz/start/concepts/architecture#az)[text=Тізім]} деректер орталықтары мен қолжетімділік аймақтарының.
+{linkto(/kz/start/concepts/architecture#architecture-az)[text=Тізім]} деректер орталықтары мен қолжетімділік аймақтарының.
 
 {/cut}
 

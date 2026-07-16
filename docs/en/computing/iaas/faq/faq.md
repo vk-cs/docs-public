@@ -136,7 +136,7 @@ Billing iteration occurs once an hour — during this time, the calculation of t
 
 {cut(Can I set a floating IP address for a VM?)}
 
-You can [assign an existing](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/instructions/ip/floating-ip#adding_floating_ip_address_to_the_project) address manually.
+You can [assign an existing](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) address manually.
 
 {note:warn}
 
@@ -386,8 +386,8 @@ The maximum amount of file storage is 50TB.
 
 {cut(In which availability zone are file storages created?)}
 
-Repositories are created in [availability zones](/en/intro/start/concepts/architecture#az) GZ1 (Moscow region) and QAZ (Kazakhstan region).
-[Availability zones](/en/intro/start/concepts/architecture#az) of repositories depend on the [region](/ru/tools-for-using-services/account/concepts/regions) of the project:
+Repositories are created in [availability zones](/en/intro/start/concepts/architecture#architecture-az) GZ1 (Moscow region) and QAZ (Kazakhstan region).
+[Availability zones](/en/intro/start/concepts/architecture#architecture-az) of repositories depend on the [region](/ru/tools-for-using-services/account/concepts/regions) of the project:
 
 - GZ1 for Moscow region;
 - QAZ for Kazakhstan region.
@@ -396,7 +396,7 @@ Repositories are created in [availability zones](/en/intro/start/concepts/archit
 
 {cut(Is it possible to configure simultaneous access from different VMs to the file storage?)}
 
-Yes, you can, for more information, see the article [File Storage management](../instructions/fs-manage#connecting_file_storage).
+Yes, you can, for more information, see the article [File Storage management](../instructions/fs-manage#fs-connect).
 
 {/cut}
 

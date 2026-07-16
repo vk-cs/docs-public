@@ -91,7 +91,7 @@ The payment invoice is not provided. Organizations that work on prepayment [form
 In addition to the documents specified in the contract, a billing report for the selected period is available in your management console. It contains details of resource consumption and is used to confirm the amounts in the accounting documents. For more details, refer to the [Downloading the report](../../instructions/detail#download-report) section.
 
 
-A reconciliation certificate with detailed mutual settlements is available upon request via [technical support](/en/contacts).
+A reconciliation certificate with detailed mutual settlements is available upon request via [technical support](mailto:support@mcs.mail.ru).
 
 ### {heading(Methods of obtaining accounting documents)[id=methods_of_obtaining_accounting_documents]}
 

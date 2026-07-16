@@ -96,7 +96,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
       {/note}
 
-    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) of the pool virtual machines from the list.
+    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) of the pool virtual machines from the list.
 
 1. (Optional) Click the **Add a security group** button and specify additional security groups for the VM. The primary security group named `vdi-desktop-<POOL_NAME>` is assigned to the pool automatically.
 1. Click the **Next step** button.

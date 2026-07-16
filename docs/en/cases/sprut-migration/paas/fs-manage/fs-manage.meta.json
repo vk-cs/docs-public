@@ -1,0 +1,14 @@
+{
+  "title": "File storage migration",
+  "shortDescription": "How to migrate file storages to SDN Sprut",
+  "metaDescription": "How to migrate file storages to SDN Sprut",
+  "sectionTitle": "File storage migration",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

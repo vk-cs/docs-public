@@ -1,0 +1,14 @@
+{
+  "title": "About migration",
+  "shortDescription": "Why and how to migrate projects to SDN Sprut, what advantages this SDN has",
+  "metaDescription": "Reasons and benefits of migrating from SDN Neutron to SDN Sprut. Description of SDN Sprut migration steps. List of tools and scripts used",
+  "sectionTitle": "About migration",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

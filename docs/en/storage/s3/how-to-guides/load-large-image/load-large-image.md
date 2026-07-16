@@ -138,7 +138,7 @@ The following will be used:
 
 1. [Mark](/en/computing/iaas/instructions/volumes#changing_bootable_attribute) the disk containing the OS image as bootable.
 1. [Replace the VM root disk](/en/computing/iaas/instructions/volumes#replacing_root_disk) with the disk containing the OS image.
-1. [Start](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM. Verify that the start has been successful.
+1. [Start](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the VM. Verify that the start has been successful.
 
 You can also [disconnect](/en/computing/iaas/instructions/volumes#mount_disk) the disk with the OS image placed on it from the current VM and use it as a [replacement for the root disk](/en/computing/iaas/instructions/volumes#replacing_root_disk) for another VM.
 
@@ -146,6 +146,6 @@ You can also [disconnect](/en/computing/iaas/instructions/volumes#mount_disk) th
 
 The created resources are charged and consume computing resources. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) the VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the VM.
 - [Delete](../../instructions/buckets/bucket#removing_a_bucket) the `uc_bucket` bucket.
 - [Delete](/en/computing/iaas/instructions/volumes#deleting_disk) the disk.

@@ -1,0 +1,14 @@
+{
+  "title": "DNS Migration",
+  "shortDescription": "Updating public DNS A-record",
+  "metaDescription": "How to update public DNS A-records when migrating to SDN Sprut",
+  "sectionTitle": "DNS Migration",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -98,7 +98,7 @@ This operation is described in detail in [Cluster node scaling](../scale). You c
 This operation is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 {/note}
 
-## Delete cluster
+## {heading(Delete cluster)[id=k8s-manage-cluster-delete]}
 
 {tabs}
 

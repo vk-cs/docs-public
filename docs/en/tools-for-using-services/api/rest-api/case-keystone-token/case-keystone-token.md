@@ -32,7 +32,7 @@ Get a token:
 
 {tab(OpenStack CLI)}
 
-1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Execute the command:
 
@@ -48,7 +48,7 @@ Get a token:
 
 1. Install the cURL [utility](https://github.com/curl/curl/blob/master/docs/INSTALL.md), if not already installed.
 
-1. [Authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project. The authentication procedure is the same for OpenStack client and for cURL utility.
+1. [Authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project. The authentication procedure is the same for OpenStack client and for cURL utility.
 
 1. Perform the command for your operating system:
 

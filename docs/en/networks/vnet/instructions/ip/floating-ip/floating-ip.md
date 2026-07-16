@@ -16,7 +16,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. Run the command:
 
@@ -28,7 +28,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 {/tabs}
 
-## Adding floating IP address to the project
+## {heading(Adding floating IP address to the project)[id=vnet-floating-ip-add]}
 
 {note:warn}
 
@@ -51,7 +51,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. Run the command:
 
@@ -80,7 +80,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address for which you want to edit the description.
 
@@ -109,7 +109,7 @@ A floating IP address is randomly assigned from a shared pool.
 
    Unbound IP addresses also contain a link to the binding in the adjacent column.
 
-   To bind a floating IP to another internal IP, first [unbind](#unbinding_floating_ip_address) it from the current one.
+   To bind a floating IP to another internal IP, first [unbind](#vnet-floating-ip-disassociate) it from the current one.
 
    {/note}
 
@@ -120,7 +120,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to bind to the port.
 1. Get the list of ports. Find in the list the port ID of the port to which you want to bind the floating IP address.
@@ -134,7 +134,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {/tabs}
 
-## Unbinding floating IP address
+## {heading(Unbinding floating IP address)[id=vnet-floating-ip-disassociate]}
 
 {tabs}
 
@@ -150,7 +150,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to unbind from the port.
 
@@ -164,7 +164,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {/tabs}
 
-## Removing floating IP address from the project
+## {heading(Removing floating IP address from the project)[id=vnet-floating-ip-delete]}
 
 {tabs}
 
@@ -180,7 +180,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to remove from the project.
 

@@ -116,5 +116,5 @@ Deployed virtual resources are charged. If you don't need them anymore:
 
 - [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Almalinux_9_Joomla` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-7313` instance.
-- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) `87.239.105.44` floating IP address.
+- If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) `87.239.105.44` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-joomla.example.vk.cloud` DNS record.

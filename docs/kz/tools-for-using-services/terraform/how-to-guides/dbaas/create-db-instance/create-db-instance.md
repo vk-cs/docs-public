@@ -19,7 +19,7 @@
 Төмендегі барлық мысалдарда ДҚ инстанстары келесі қасиеттермен жасалады:
 
 - [Аймақ](/kz/tools-for-using-services/account/concepts/regions): әдепкі бойынша (жоба аймағымен сәйкес келеді).
-- [Қолжетімділік аймағы](/kz/start/concepts/architecture#az): әдепкі бойынша (Мәскеу аймағы үшін — `GZ1`).
+- [Қолжетімділік аймағы](/kz/start/concepts/architecture#architecture-az): әдепкі бойынша (Мәскеу аймағы үшін — `GZ1`).
 - ДҚБЖ түрі мен нұсқасы: MySQL 8.0.
 - ДҚ инстансының [конфигурациясы](/kz/dbs/dbaas/concepts/work-configs): **Single**.
 - Сыртқы IP мекенжайы: тағайындалған.

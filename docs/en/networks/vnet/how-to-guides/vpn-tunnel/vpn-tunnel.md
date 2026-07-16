@@ -12,7 +12,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 ## Before you start
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Create](/en/networks/vnet/instructions/net#creating_network) networks.
 
@@ -344,7 +344,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) virtual machines.
-1. [Delete](../../instructions/vpn#removing_a_vpn_tunnel) VPN tunnel.
+1. [Delete](../../instructions/vpn#vnet-vpn-delete) VPN tunnel.
 1. [Delete](../../instructions/router#managing_static_routes) static routes defined on the side of the client network.
 
    {note:info}
@@ -353,6 +353,6 @@ If you no longer need the created resources, delete them:
 
    {/note}
 
-1. [Delete](../../instructions/router#removing_the_router) client and cloud network routers.
-1. Delete the client and cloud [subnets](../../instructions/net#deleting_subnet) and [networks](../../instructions/net#deleting_network).
-1. [Delete](../../instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.
+1. [Delete](../../instructions/router#vnet-router-delete) client and cloud network routers.
+1. Delete the client and cloud [subnets](../../instructions/net#vnet-net-subnet-delete) and [networks](../../instructions/net#vnet-net-delete).
+1. [Delete](../../instructions/ip/floating-ip#vnet-floating-ip-delete) floating IP addresses.

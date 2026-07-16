@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Аймақ — [қолжетімділік аймақтарын](/kz/start/concepts/architecture#az) біріктіретін географиялық аумақ.
+Аймақ — [қолжетімділік аймақтарын](/kz/start/concepts/architecture#architecture-az) біріктіретін географиялық аумақ.
 
 Аймақ әрбір [жобаға](../projects) автоматты түрде тағайындалады және жоба иесі өз аккаунтын [тіркеген](/kz/intro/onboarding/account) сайттың URL мекенжайына байланысты болады.
 

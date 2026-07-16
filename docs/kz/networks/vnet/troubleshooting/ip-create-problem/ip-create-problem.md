@@ -4,4 +4,4 @@
 
 ### Шешім
 
-Floating IP мекенжайын басқа [қолжетімділік аймағында](/kz/start/concepts/architecture#az) жасап көріңіз немесе квотаны не мекенжайлар пулын кеңейту үшін [техникалық қолдауға хабарласыңыз](https://cloud.vk.com/contacts/).
+Floating IP мекенжайын басқа [қолжетімділік аймағында](/kz/start/concepts/architecture#architecture-az) жасап көріңіз немесе квотаны не мекенжайлар пулын кеңейту үшін [техникалық қолдауға хабарласыңыз](https://cloud.vk.com/contacts/).

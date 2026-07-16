@@ -30,7 +30,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. To see a list of networks and their identifiers, run the command:
 
@@ -81,7 +81,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
     {note:info}
    
-    SDN Neutron in VK Cloud is being deprecated and cannot be enabled for new projects. Also, SDN Neutron is not used in the [availability zone](/en/intro/start/concepts/architecture#az) `PA2`.
+    SDN Neutron in VK Cloud is being deprecated and cannot be enabled for new projects. Also, SDN Neutron is not used in the [availability zone](/en/intro/start/concepts/architecture#architecture-az) `PA2`.
    
     {/note}
 
@@ -105,7 +105,7 @@ Once a network is created, it will appear in the list of networks.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. Run the command:
 
@@ -135,7 +135,7 @@ Once a network is created, it will appear in the list of networks.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network you want to edit.
 
@@ -177,7 +177,7 @@ Once a network is created, it will appear in the list of networks.
 
 {/tabs}
 
-## Deleting network
+## {heading(Deleting network)[id=vnet-net-delete]}
 
 {note:warn}
 
@@ -195,7 +195,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network you want to delete.
 
@@ -239,7 +239,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the network in which you want to create a subnet.
 
@@ -303,7 +303,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to edit.
 
@@ -367,7 +367,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {/tabs}
 
-## Deleting subnet
+## {heading(Deleting subnet)[id=vnet-net-subnet-delete]}
 
 {note:warn}
 
@@ -391,7 +391,7 @@ Once a subnet is deleted, it cannot be restored.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get ID](#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet you want to delete.
 

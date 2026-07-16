@@ -136,7 +136,7 @@
 
 Өрістетілген виртуалды ресурстар тарификацияланады. Егер олар енді қажет болмаса:
 
-- `Ubuntu_22_04_Bitrix` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- `Ubuntu_22_04_Bitrix` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
 - `MySQL-1111` ДҚ инстансын [жойыңыз](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-delete-instance).
 - Қажет болса, `87.239.105.191` Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).
 - Жасалған `site-bitrix.example.vk.cloud` DNS жазбасын [жойыңыз](/kz/networks/dns/instructions/publicdns/records#dns-records-delete).

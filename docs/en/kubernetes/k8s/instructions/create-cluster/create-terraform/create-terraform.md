@@ -117,7 +117,7 @@ Here:
 
 - `cluster_type` — cluster type:
 
-  - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). Fault tolerance is provided at the zone level.
+  - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). Fault tolerance is provided at the zone level.
   - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
 - `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture) section.

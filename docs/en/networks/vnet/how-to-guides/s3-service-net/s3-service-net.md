@@ -12,7 +12,7 @@ If you configure a connection to the service network via Direct Connect, access 
 
 ## Before you start
 
-1. Contact [technical support](/en/contacts) to add the service network to your project.
+1. Contact [technical support](mailto:support@mcs.mail.ru) to add the service network to your project.
 
    Write down the network name and IP address. In this example, `s3-ephn` and `198.18.0.0/20`.
 
@@ -156,4 +156,4 @@ The response should return a list of the VK Object Storage buckets.
 If you no longer need the created resources, delete them:
 
 1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machine.
-1. [Delete](/en/networks/vnet/instructions/net#deleting_network) the networks in which the VM was placed.
+1. [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the networks in which the VM was placed.

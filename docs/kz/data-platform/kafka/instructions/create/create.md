@@ -49,7 +49,7 @@
       
             Егер тізімде қажетті желі болмаса, `Жасау` тармағын таңдаңыз.
       
-         1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
+         1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Cloud Containers{/ifdef} кластерінің торабы орналастырылады.
             
    1. Опциялардың бірін таңдап, кластер тораптарының параметрлерін баптаңыз:
 

@@ -342,7 +342,7 @@ OpenStack пәрмен жолы интерфейсі (OpenStack CLI) VK Cloud п
 
   {/cut}
 
-- [Қолжетімділік аймақтарының](/kz/start/concepts/architecture#az) тізімін шығару:
+- [Қолжетімділік аймақтарының](/kz/start/concepts/architecture#architecture-az) тізімін шығару:
 
    ```console
    openstack availability zone list

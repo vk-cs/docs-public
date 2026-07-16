@@ -7,7 +7,7 @@ To show the configuration of an advanced router, two independent networks will b
 
 ## Before you start
 
-1. Make sure the OpenStack client is [installed](../../../../tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](../../../../tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Make sure the OpenStack client is [installed](../../../../tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Select a client network in your local infrastructure:
 
@@ -261,7 +261,7 @@ Both announcements must have green markers.
 
 {/cut}
 
-## 6. Configure static routes between networks
+## {heading(6. Configure static routes between networks)[id=includes-advanced-router-static-routs]}
 
 1. Configure a static route from the virtual network `vkcloud-net` to the client network `customer-net` via an advanced router:
 
@@ -308,5 +308,5 @@ The structured interaction between the networks and the VMs within networks look
 If you no longer need the created resources, delete them:
 
 1. [Delete](../../../../computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machine.
-1. [Delete](/en/networks/vnet/instructions/router#removing_the_router) routers.
-1. Delete the [subnet](/en/networks/vnet/instructions/net#deleting_network) and the [network](/en/networks/vnet/instructions/net#deleting_subnet).
+1. [Delete](/en/networks/vnet/instructions/router#vnet-router-delete) routers.
+1. Delete the [subnet](/en/networks/vnet/instructions/net#vnet-net-delete) and the [network](/en/networks/vnet/instructions/net#vnet-net-subnet-delete).

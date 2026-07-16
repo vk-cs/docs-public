@@ -96,7 +96,7 @@
 
    {note:info}
 
-   VK Cloud-тағы SDN Neutron пайдаланудан шығарылуда және жаңа жобалар үшін қосылмайды. Сондай-ақ SDN Neutron `PA2` [қолжетімділік аймағында](/kz/start/concepts/architecture#az) қолданылмайды.
+   VK Cloud-тағы SDN Neutron пайдаланудан шығарылуда және жаңа жобалар үшін қосылмайды. Сондай-ақ SDN Neutron `PA2` [қолжетімділік аймағында](/kz/start/concepts/architecture#architecture-az) қолданылмайды.
 
    {/note}
 

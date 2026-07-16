@@ -60,7 +60,7 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.
 1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
-1. Reboot the VM [using VK Cloud](/en/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
+1. Reboot the VM [using VK Cloud](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
 
 ## 2. Check for the added network
 
@@ -84,5 +84,5 @@ Recommendations for working with the service:
 The running service infrastructure consumes computing resources. If you no longer need it:
 
 - [Delete](../../instructions/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
-- [Delete](/en/networks/vnet/instructions/net#deleting_network) the network used for the service.
-- [Delete](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address created during service deployment.
+- [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the network used for the service.
+- [Delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address created during service deployment.

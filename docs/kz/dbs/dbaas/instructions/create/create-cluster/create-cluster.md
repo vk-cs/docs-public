@@ -68,7 +68,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -102,7 +102,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -120,7 +120,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -226,7 +226,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -283,7 +283,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Master қолжетімділік аймағы**: кластердің master-түйініне арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Master қолжетімділік аймағы**: кластердің master-түйініне арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Синхронды репликалар саны** және **Асинхронды репликалар саны**: басқа аймақтарға автоматты түрде
           таратылатын синхронды және асинхронды репликалар санын таңдаңыз.
@@ -457,7 +457,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -555,7 +555,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
         - **Диск түрі**: кластерге арналған {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]}.
 
@@ -742,7 +742,7 @@
 
           Жоғары өнімді CPU бар үлгілер [қолдау қызметіне сұрау арқылы](/kz/contacts) қолжетімді.
 
-        - **Қолжетімділік аймағы**: шард хосттарына арналған {linkto(../../../../../start/concepts/architecture#az)[text=қолжетімділік аймағы]}.
+        - **Қолжетімділік аймағы**: шард хосттарына арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
 
           {note:warn}
 

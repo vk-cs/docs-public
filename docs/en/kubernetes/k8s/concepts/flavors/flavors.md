@@ -116,7 +116,7 @@ To use GPU flavors on cluster nodes, [leave a request](https://cloud.vk.com/clou
 
 ### {heading(Features of creating a cluster with GPU)[id=gpu-features]}
 
-You can use a flavor with GPU for worker nodes only. The flavor with GPU must be in the same [availability zone](/en/intro/start/concepts/architecture#az) as the node that uses it.
+You can use a flavor with GPU for worker nodes only. The flavor with GPU must be in the same [availability zone](/en/intro/start/concepts/architecture#architecture-az) as the node that uses it.
 
 If you create or edit a cluster via Terraform or CLI, specify the availability zone for the node with GPU in which the GPU provided to you is located. Otherwise, the cluster will not be created or will not work correctly.
 

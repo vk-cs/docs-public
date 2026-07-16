@@ -22,7 +22,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {tab(OpenStack CLI)}
 
-1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. [Obtain the name or ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) of the desired port.
 
@@ -46,7 +46,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {tab(OpenStack CLI)}
 
-1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. [Obtain the name or ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) of the desired port.
 
@@ -68,7 +68,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {tab(OpenStack CLI)}
 
-1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. [Obtain the name or ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) of the desired port.
 
@@ -90,7 +90,7 @@ For detailed information about supported parameters, use one of the following co
 
 {tab(OpenStack CLI)}
 
-1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
+1. Ensure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 2. Run one of the commands:
 

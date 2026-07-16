@@ -29,7 +29,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 1. Set parameters of the router:
 
    - **Name**. You can use numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
-   - **Availability zone**: choose [an availability zone](/en/intro/start/concepts/architecture#az) you need.
+   - **Availability zone**: choose [an availability zone](/en/intro/start/concepts/architecture#architecture-az) you need.
    - **Description**: an optional field.
    - **SNAT**: enable the option if you need to convert private IP addresses into public ones for access from the project network to the Internet. When you [add the router interface](../manage-interfaces#adding_interfaces_of_advanced_router) directed to an external network, SNAT is enabled automatically.
 
@@ -118,4 +118,4 @@ To find out the detailed information about a VPN tunnel, click its name. The [VP
 
 ## Deleting an advanced router
 
-You can delete an advanced router in the same way as [a standard router](../../router#removing_the_router).
+You can delete an advanced router in the same way as [a standard router](../../router#vnet-router-delete).

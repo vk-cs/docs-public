@@ -62,7 +62,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -96,7 +96,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -114,7 +114,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -220,7 +220,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -274,7 +274,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone for Master**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone for Master**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -441,7 +441,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -538,7 +538,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru).
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
@@ -723,7 +723,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
         Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#az) for the shard hosts.
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the shard hosts.
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the shard hosts.
 

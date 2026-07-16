@@ -1,4 +1,4 @@
-A region is a geographical area that unites [availability zones](/en/intro/start/concepts/architecture#az). Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located.
+A region is a geographical area that unites [availability zones](/en/intro/start/concepts/architecture#architecture-az). Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located.
 
 The region is assigned to each [project](../projects) automatically and depends on the URL of the site where the project owner [registered](/en/intro/start/account-registration) account.
 
@@ -23,7 +23,7 @@ Projects created in different regions have different:
 - a set of available services;
 - set of [quotas](../quotasandlimits);
 - addresses of [VK Cloud API endpoints](/en/tools-for-using-services/api/rest-api);
-- the name of the region in the configuration files [openrc](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) and [Terraform](/en/tools-for-using-services/terraform/quick-start).
+- the name of the region in the configuration files [openrc](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) and [Terraform](/en/tools-for-using-services/terraform/quick-start).
 
 {note:warn}
 

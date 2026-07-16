@@ -381,6 +381,6 @@ Check Point CloudGuard Network сервисі инстанстарын VK Cloud 
 Сервистің жұмыс істеп тұрған инфрақұрылымы есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
 
 - Check Point CloudGuard Network сервисінің инстансын [жойыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-delete).
-- Шлюз және басқару сервері ретінде жасалған ВМ-дерді [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete).
+- Шлюз және басқару сервері ретінде жасалған ВМ-дерді [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
 - ВМ-дермен бірге барлық дискілердің жойылғанына көз жеткізіңіз.
 - Сервис үшін пайдаланылған [желіні жойыңыз](/kz/networks/vnet/instructions/net#vnet-net-delete).

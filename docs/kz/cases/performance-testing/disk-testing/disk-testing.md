@@ -99,5 +99,5 @@
 
 Жасалған ресурстар тарификацияланады. Егер олар енді қажет болмаса, оларды жойыңыз:
 
-1. [Жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-delete) тестілік ВМ-ді.
+1. [Жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) тестілік ВМ-ді.
 1. ВМ орналастырылған [ішкі желіні](/kz/networks/vnet/instructions/net#udalenie_podseti) және [желіні](/kz/networks/vnet/instructions/net#vnet-net-delete) жойыңыз.

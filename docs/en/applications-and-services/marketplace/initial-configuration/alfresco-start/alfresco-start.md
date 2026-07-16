@@ -34,7 +34,7 @@ To deploy the Alfresco service in a VK Cloud project:
     1. Specify the parameters of the VM on which the service instance will be deployed:
 
         - **Сеть**: select the network where the VM with the deployed service will be located. If you specified `external` deployment type, select a network with internet access and a subnet with the **Private DNS** option disabled.
-        - **Availability zone**: select the [data center](/en/intro/start/concepts/architecture#az) where the VM will run.
+        - **Availability zone**: select the [data center](/en/intro/start/concepts/architecture#architecture-az) where the VM will run.
         - **Type of virtual machine**: select a [VM preset configuration](/en/computing/iaas/concepts/about#flavors).
 
     1. Specify the parameters of the system disk and data disk:

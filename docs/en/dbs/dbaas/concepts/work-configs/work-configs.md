@@ -40,7 +40,7 @@ The multizone cluster configuration is only available for PostgreSQL version 16 
 
 {/note}
 
-A fault-tolerant solution similar to the [Cluster](#cluster) configuration, but a group of virtual machines with installed DBMS servers are deployed between [availability zones](/en/intro/start/concepts/architecture#az).
+A fault-tolerant solution similar to the [Cluster](#cluster) configuration, but a group of virtual machines with installed DBMS servers are deployed between [availability zones](/en/intro/start/concepts/architecture#architecture-az).
 
 This configuration provides maximum availability and automatic recovery even in the event of a data center failure, which is critical for high-load projects and data security.
 

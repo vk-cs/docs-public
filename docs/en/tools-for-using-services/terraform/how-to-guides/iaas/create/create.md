@@ -12,7 +12,7 @@ Two options for VM configuration will be considered: without additional settings
 
     Place the provider settings in the Terraform configuration file `provider.tf`.
 
-1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and then [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) with the project.
+1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and then [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) with the project.
 
 1. Create a Terraform configuration file `variables.tf` with variables:
 
@@ -82,7 +82,7 @@ Two options for VM configuration will be considered: without additional settings
 
    {tab(availability_zone_name)}
 
-   In the section about [availability zones](/en/intro/start/concepts/architecture#az).
+   In the section about [availability zones](/en/intro/start/concepts/architecture#architecture-az).
 
    {/tab}
 

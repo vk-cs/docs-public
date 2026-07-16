@@ -22,7 +22,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. To see a list of load balancers and their identifiers, run the command:
@@ -69,7 +69,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {/tabs}
 
-## Adding a load balancer
+## {heading(Adding a load balancer)[id=balancing-manage-lb-add]}
 
 {tabs}
 
@@ -92,7 +92,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
      {/note}
 
-   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#az) from the list. To optimize and speed up the
+   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) from the list. To optimize and speed up the
      balancer connection to VMs, place them in the same zone.
    - **DNS-name**: (Optional) DNS name for the balancer.
    - **Assign external IP**: if this option is selected, the balancer will be assigned a public IP address through which it will be accessible from the Internet. Otherwise the balancer will act as an internal load balancer. Such IP address can be [assigned later](#managing_public_ip_addresses).
@@ -109,12 +109,12 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet.
 
-1. Select the [availability zone](/en/intro/start/concepts/architecture#az) to place the balancer. To get the list of availability zones, run the command:
+1. Select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) to place the balancer. To get the list of availability zones, run the command:
 
    ```console
    openstack availability zone list
@@ -165,7 +165,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get ID](#viewing_a_list_of_load_balancers_and_information_about_them) of the necessary load balancer.
@@ -228,7 +228,7 @@ If the balancer network is connected to a router with Internet access, you can a
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get port ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
@@ -265,17 +265,17 @@ If the balancer network is connected to a router with Internet access, and a pub
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get port ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
-1. [Unlink floating IP address](/en/networks/vnet/instructions/ip/floating-ip#unbinding_floating_ip_address) from the port with this ID.
+1. [Unlink floating IP address](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate) from the port with this ID.
 
 {/tab}
 
 {/tabs}
 
-## Managing balancing rules
+## {heading(Managing balancing rules)[id=balancing-manage-rules]}
 
 {tabs}
 
@@ -379,7 +379,7 @@ openstack loadbalancer <command> --help
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. To create a balancing rule:
@@ -554,7 +554,7 @@ openstack loadbalancer <command> --help
 
 {/tabs}
 
-## Removing the load balancer
+## {heading(Removing the load balancer)[id=balancing-manage-lb-delete]}
 
 {tabs}
 
@@ -580,7 +580,7 @@ To remove a load balancer:
 
 1. Make sure that:
 
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    1. Install `python-octaviaclient` package in the OpenStack CLI client.
 
 1. [Get ID](#viewing_a_list_of_load_balancers_and_information_about_them) of the load balancer.

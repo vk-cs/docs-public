@@ -1,0 +1,14 @@
+{
+  "title": "Used SDN",
+  "shortDescription": "Which SDN are available in {var(cloud)}, what are their differences",
+  "metaDescription": "Cloud Network service in VK Cloud. What is SDN (Software Defined Network). Which SDN are available in VK Cloud, what are their differences",
+  "sectionTitle": "Used SDN",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b"
+}

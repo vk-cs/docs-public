@@ -153,7 +153,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    - Create a [search query](https://prometheus.io/docs/prometheus/2.45/querying/examples/) to view the data in tabular form.
    - Open the [template graph sets](https://prometheus.io/docs/visualization/consoles/) to `http://87.239.239.239:9090/consoles/index.html.example`.
 
-1. (Optional) [Unbind](/en/networks/vnet/instructions/ip/floating-ip#unbinding_floating_ip_address) floating address from VM `Centos_8_5_Prometheus`.
+1. (Optional) [Unbind](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate) floating address from VM `Centos_8_5_Prometheus`.
 
 ## 3. Set up data visualization in Grafana
 
@@ -191,6 +191,6 @@ The created resources are charged and quotas are spent. If you don't need them a
 
 1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) deployed virtual machines.
 1. [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#deleting_a_service_instance) a virtual machine with Grafana.
-1. [Remove](/en/networks/vnet/instructions/ip/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
+1. [Remove](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
 1. [Delete](/en/networks/vnet/instructions/ports#deleting_a_port) the port to which the virtual IP address is assigned.
-1. [Delete](/en/networks/vnet/instructions/net#deleting_network) a `monitoring-net` network.
+1. [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) a `monitoring-net` network.

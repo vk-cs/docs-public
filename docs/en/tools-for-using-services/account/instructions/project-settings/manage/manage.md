@@ -1,4 +1,4 @@
-## Getting project ID
+## {heading(Getting project ID)[id=getting_project_id]}
 
 {include(/en/_includes/_project_pid_common.md)}
 
@@ -122,7 +122,7 @@ By contacting [technical support](mailto:support@mcs.mail.ru), it is possible to
 - floating IP addresses;
 - addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_net).
 
-## Viewing project quotas
+## {heading(Viewing project quotas)[id=viewing_project_quotas]}
 
 {tabs}
 
@@ -142,7 +142,7 @@ An extended list of quotas for the project can be obtained through the OpenStack
 
 To get an extended list of quotas for a project:
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
     ```console
