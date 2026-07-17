@@ -10,8 +10,8 @@ export const config = {
         ],
         locales: ['ru', 'en', 'kz'],
         defaultLocale: 'ru',
-        logoLink: 'https://cloud.vk.com',
-        canonicalBaseUrl: 'https://cloud.vk.com/docs',
+        logoLink: 'https://cloud.vk.ru',
+        canonicalBaseUrl: 'https://cloud.vk.ru/docs',
     },
     trackers: [
         {
