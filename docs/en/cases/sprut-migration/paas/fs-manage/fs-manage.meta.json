@@ -5,7 +5,7 @@
   "sectionTitle": "File storage migration",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "9f0fe86d-8e56-4aa2-a038-6d4072d405c7",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Network infrastructure migration",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "b4c3fe4f-6a90-4615-a147-5b9cf9e9db95",
   "build": {
     "for": [
       "public"

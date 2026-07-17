@@ -5,7 +5,7 @@
   "sectionTitle": "Migration of platform services",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "c84b523b-41b9-49fa-bb80-1f72adeecb1e",
   "build": {
     "for": [
       "public"

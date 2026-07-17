@@ -5,7 +5,7 @@
   "sectionTitle": "DNS Migration",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "f3bcd3c7-808c-4898-accb-40f79ecea600",
   "build": {
     "for": [
       "public"

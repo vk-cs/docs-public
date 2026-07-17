@@ -5,7 +5,7 @@
   "sectionTitle": "Load Balancer Migration",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "299853d0-950d-441a-b203-086a21fb12d5",
   "build": {
     "for": [
       "public"

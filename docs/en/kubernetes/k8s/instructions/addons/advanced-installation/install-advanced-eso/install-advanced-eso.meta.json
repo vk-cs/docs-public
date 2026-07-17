@@ -5,7 +5,7 @@
   "sectionTitle": "External Secrets Operator",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "0684a2a3-2380-4158-a1a5-b2bdde601ce3",
   "build": {
     "for": [
       "public"

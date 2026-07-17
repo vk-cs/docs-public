@@ -5,7 +5,7 @@
   "sectionTitle": "Database Migration",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "cf7e7206-fbb6-4f1f-8409-aacdd49544cb",
   "build": {
     "for": [
       "public"

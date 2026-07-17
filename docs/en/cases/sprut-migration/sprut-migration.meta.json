@@ -5,7 +5,7 @@
   "sectionTitle": "Migration to SDN Sprut",
   "icon": "",
   "weight": 13,
-  "uuid": "",
+  "uuid": "966594ed-575a-4078-a503-ed5ffd6127b7",
   "build": {
     "for": [
       "public"
