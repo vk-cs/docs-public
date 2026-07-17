@@ -96,11 +96,11 @@ export const config = {
         sitemapPreparer: {
             useIndex: true,
             sitemaps: [
-                'https://cloud.vk.com/docs/sitemap.xml',
-                'https://cloud.vk.com/docs/on-premises/private-cloud/sitemap.xml',
-                'https://cloud.vk.com/docs/on-premises/dev-platform/sitemap.xml',
-                'https://cloud.vk.com/docs/on-premises/registry/sitemap.xml',
-                'https://cloud.vk.com/docs/on-premises/security-gate/sitemap.xml',
+                'https://cloud.vk.ru/docs/sitemap.xml',
+                'https://cloud.vk.ru/docs/on-premises/private-cloud/sitemap.xml',
+                'https://cloud.vk.ru/docs/on-premises/dev-platform/sitemap.xml',
+                'https://cloud.vk.ru/docs/on-premises/registry/sitemap.xml',
+                'https://cloud.vk.ru/docs/on-premises/security-gate/sitemap.xml',
             ],
         },
         forTrainingPreparer: {

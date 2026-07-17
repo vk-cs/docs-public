@@ -12,7 +12,7 @@ variables:
   VKCS_RELEASES_ENABLED: "true"
   VKCS_FILEGEN_VERSION: "5.5.1"
   SATORI_API_URL_STAGE: https://mcstest.mail.ru/search/api
-  SATORI_API_URL_PROD: https://cloud.vk.com/search/api
+  SATORI_API_URL_PROD: https://cloud.vk.ru/search/api
   SATORI_API_URL_DEV: https://satori.devint.vkc.devmail.ru
   # BUILD_ARG_002: DEV_4TRAINING_S3_ACCESS_KEY
   # BUILD_ARG_003: DEV_4TRAINING_S3_SECRET_KEY
@@ -31,7 +31,7 @@ variables:
         IMAGE_NAME_SUFFIX: common
         VKCS_PREPARE_ENABLED: "true"
         VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
-        VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.com"
+        VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.ru"
         VKCS_K8S_DEV_INGRESS_PATH: /docs
         VKCS_DEV_MASTER_MATRIX_DEPLOY_MODE: auto
         VKCS_STAGE_MATRIX_DEPLOY_MODE: auto
