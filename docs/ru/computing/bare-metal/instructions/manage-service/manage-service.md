@@ -11,7 +11,6 @@
 
    Цены на конфигурации серверов Bare Metal доступны в [прайс-листе](https://cloud.vk.com/pricelist/).
 
-1. Проверьте, что есть свободная {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квота]} на заказ сервера Bare Metal.
 1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=Создайте]} сеть с приватной подсетью, если этого не было сделано ранее.
 1. Перейдите в раздел **Облачные вычисления** → **Bare Metal**.
 1. Нажмите кнопку **Арендовать**.

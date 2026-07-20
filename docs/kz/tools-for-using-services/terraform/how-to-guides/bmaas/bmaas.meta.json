@@ -1,0 +1,15 @@
+{
+  "title": "Bare Metal",
+  "shortDescription": "Bare Metal сервисінің объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Bare Metal сервисінің объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "sectionTitle": "Bare Metal",
+  "icon": "",
+  "weight": 10,
+  "hidden": true,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

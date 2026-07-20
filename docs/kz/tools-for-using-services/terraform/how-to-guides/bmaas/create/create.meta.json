@@ -1,0 +1,14 @@
+{
+  "title": "Bare Metal серверін жасау",
+  "shortDescription": "",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Bare Metal сервисінің объектілерін басқару үшін Terraform-ды қалай пайдалану керек. Серверді жасау.",
+  "sectionTitle": "Bare Metal серверін жасау",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

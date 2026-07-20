@@ -1,0 +1,15 @@
+{
+  "title": "Bare Metal",
+  "shortDescription": "How to use Terraform to manage Bare Metal service objects",
+  "metaDescription": "Using the VK Cloud Terraform provider to manage the platform. How to use Terraform to manage Bare Metal service objects",
+  "sectionTitle": "Bare Metal",
+  "icon": "",
+  "weight": 10,
+  "hidden": true,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

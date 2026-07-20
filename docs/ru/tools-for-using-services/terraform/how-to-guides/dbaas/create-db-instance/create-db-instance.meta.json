@@ -1,6 +1,6 @@
 {
   "title": "Создание инстанса БД",
-  "shortDescription": "Как развернуть инстанс БД и пользователей для нее",
+  "shortDescription": "Как развернуть инстанс БД и добавить в нее пользователей",
   "metaDescription": "Cloud Databases: как создать инстанс БД с помощью Terraform в VK Cloud",
   "sectionTitle": "Создание инстанса БД",
   "icon": "",

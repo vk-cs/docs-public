@@ -4,7 +4,7 @@
   "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса Cloud Servers",
   "sectionTitle": "Cloud Servers",
   "icon": "",
-  "weight": 10,
+  "weight": 20,
   "uuid": "3cf2376e-bb9d-4961-bc9e-d7576069ddd6",
   "build": {
     "for": [

@@ -1,0 +1,14 @@
+{
+  "title": "Creating a Bare Metal server",
+  "shortDescription": "",
+  "metaDescription": "Using the VK Cloud Terraform provider to manage the platform. How to use Terraform to manage Bare Metal service objects. Creating a server.",
+  "sectionTitle": "Creating a Bare Metal server",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
