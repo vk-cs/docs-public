@@ -8,7 +8,7 @@
 
 ## {heading(Подготовительные шаги)[id=terraform-iaas-create-prepare]}
 
-1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания CDN-ресурса. Для разных регионов могут быть настроены разные квоты.
+1. Проверьте {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоты]}. Убедитесь, что в выбранном {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=регионе]} достаточно ресурсов для создания ВМ. Для разных регионов могут быть настроены разные квоты.
 
    При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 

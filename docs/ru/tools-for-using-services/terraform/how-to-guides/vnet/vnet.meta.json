@@ -4,7 +4,7 @@
   "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой. Как использовать Terraform для управления объектами сервиса виртуальных сетей Cloud Networks",
   "sectionTitle": "Виртуальные сети",
   "icon": "",
-  "weight": 20,
+  "weight": 30,
   "uuid": "9336a564-a734-4519-ad39-081dfb11589f",
   "build": {
     "for": [

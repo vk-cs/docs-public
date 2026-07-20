@@ -12,8 +12,6 @@
 1. Қалаған конфигурацияға тапсырыс беру үшін шотта жеткілікті қаражат бар екенін тексеріңіз.
 
    Bare Metal сервер конфигурацияларының бағалары [прайс-парақта](https://cloud.vk.com/pricelist/) қолжетімді.
-
-1. Bare Metal серверіне тапсырыс беру үшін бос {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits)[text=квота]} бар екенін тексеріңіз.
 1. Егер бұрын жасалмаса, жекеменшік ішкі желісі бар желіні {linkto(../../../../networks/vnet/instructions/net#sozdanie-podseti)[text=жасаңыз]}.
 1. **Бұлтты есептеулер** → **Bare Metal** бөліміне өтіңіз.
 1. **Жалға алу** батырмасын басыңыз.
