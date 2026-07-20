@@ -19,6 +19,7 @@
    При необходимости {linkto(../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
 1. {linkto(../../quick-start#terraform-quick-start)[text=Установите Terraform]}, если это еще не сделано.
+1. (Опционально) {linkto(../../../../storage/s3/instructions/access-management/bucket-policy#s3-instructions-bucket-policy-enable-and-disable)[text=Включите]} политики доступа, чтобы настраивать правила доступа через Terraform.
 1. Настройте провайдер:
 
    1. Создайте директорию, из которой будете работать с платформой, и перейдите в нее.
