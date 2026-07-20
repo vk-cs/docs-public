@@ -1,7 +1,7 @@
 # {heading(О сервисе)[id=vnet-about]}
 
 Сервис обеспечивает сетевое взаимодействие в рамках {ifdef(public)}выбранных {/ifdef}{linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекта]} {ifdef(public)}и {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]}
-{/ifdef}{var(cloud)}:
+{/ifdef} {var(cloud)}:
 
 - Создание сетей и подсетей. Подсети используют приватные IP-адреса, которые не маршрутизируются в интернете.
 
