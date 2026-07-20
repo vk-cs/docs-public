@@ -229,7 +229,7 @@ All the network subnets and ports will be deleted along with the network.
    {note:info}
    After creating a subnet, you can change the [private DNS](../../../dns/private-dns) server addresses only by creating a new subnet.
 
-   You can {linkto(#vnet-net-subnet-edit)[text=edit]} the addresses of manually specified DNS servers using the OpenStack CLI.
+   You can {linkto(#editing_subnet)[text=edit]} the addresses of manually specified DNS servers using the OpenStack CLI.
    {/note}
 
 1. (Optional) Enable **Show Static route field** to specify static routes.
