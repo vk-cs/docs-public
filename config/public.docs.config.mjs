@@ -157,7 +157,7 @@ export const config = {
         // Параметры обратной связи для дизлайка
         dislike: {
             templateId: 26083, // Шаблон письма для фидбэка из mailer.mail.ru
-            emails: ['public-docs@cloud.vk.com'], // Куда отправлять
+            emails: ['public-docs@cloud.vk.com', 'documentation@vkteam.ru'], // Куда отправлять
         },
     },
     paths: {
@@ -166,7 +166,7 @@ export const config = {
     },
     contentSecurityPolicy: {
         connectSrc: [
-            'https://cloud.vk.com',
+            'https://cloud.vk.ru',
             'https://mcstest.mail.ru',
             'https://satori.devint.vkc.devmail.ru',
         ],
