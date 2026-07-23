@@ -85,11 +85,6 @@
         {/ifdef}
 
       - **Настройки Firewall**: список групп безопасности для инстанса БД.
-
-        {ifdef(public)}
-        Добавьте в список группу безопасности `ssh`, чтобы получить возможность [подключаться к инстансу по SSH](../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-        {/ifdef}
-
       - **Создать реплику**: эта опция влияет на конфигурацию инстанса и определяет, будет ли добавлена реплика.
 
         {ifdef(public)}
@@ -110,12 +105,6 @@
         {note:info}
         Имя каждой реплики состоит из имени инстанса и суффикса с порядковым номером хоста (например, `my-instance-3`). Нумерация хостов инстанса начинается с `1`.
         {/note}
-
-      {ifdef(public)}
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам инстанса по SSH]}.
-      {/ifdef}
 
    1. Настройте резервное копирование. При необходимости параметры резервного копирования можно {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=задать]} или {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=изменить]} после создания инстанса БД.
 

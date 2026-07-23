@@ -18,7 +18,6 @@ Cloud Databases сервисімен [жұмысты](/kz/dbs/dbaas/concepts/abo
 
 1. Single конфигурациясындағы PostgreSQL БД [инстансын](#instance_create) жасайсыз.
 1. Жасалған БД инстансының [сыртқы IP-мекенжайын](#instance_ip) аласыз.
-1. (Қосымша) Жасалған БД инстансының [логтарын](#instance_logs) қарайсыз.
 1. БД инстансына [TimescaleDB](https://docs.timescale.com) [кеңейтімін](#install_timescaledb) орнатасыз.
 1. БД-ға [қосыласыз](#db_connect).
 1. БД-да [кестелер](#tables_create) жасайсыз.

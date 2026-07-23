@@ -181,16 +181,6 @@
       Қауіпсіздік топтарының қорытынды тізімі мынадай болуы тиіс: `default`, `ssh`.
 
     - **Создать реплику:** бұл опция таңдалмағанына көз жеткізіңіз.
-    - **Ключ для доступа по SSH:** `Создать новый ключ`.
-
-      {note:info}
-
-      Бұл опцияны таңдағанда компьютеріңізге жеке SSH кілті жүктеледі. Оны сақтап қойыңыз.
-
-      Бұл кілт инстансқа SSH арқылы қосылғанда, мысалы [инстанс логтарын қарау](#instance_logs) үшін қажет болады.
-
-      {/note}
-
     - **Резервное копирование:** `Отключено`.
 
 1. **Следующий шаг** батырмасын басыңыз.
@@ -223,64 +213,6 @@
 1. **Информация** қойындысына өтіңіз.
 
    Қажетті мекенжай **Внешний IP-адрес** параметрінде көрсетіледі.
-
-## {heading({counter(db)}. (Қосымша) БД инстансының логтарын қараңыз)[id=instance_logs]}
-
-1. [БД инстансын жасау](#instance_create) кезінде алынған жеке SSH кілтін пайдаланып, БД инстансына SSH арқылы қосылыңыз:
-
-   {tabs}
-
-   {tab(Linux/macOS)}
-
-   ```console
-   chmod 0600 <путь/к/ключу/ключ.pem>
-   ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
-
-   ```
-
-   {/tab}
-
-   {tab(Windows)}
-
-   ```console
-   ssh -i <путь/к/ключу/ключ.pem> admin@<внешний IP-адрес инстанса БД>
-   ```
-
-   {/tab}
-
-   {/tabs}
-
-1. Инстанс логтарын қараңыз:
-
-   ```console
-   journalctl -u postgresql
-   ```
-
-   {cut(Шығыс фрагментінің мысалы)}
-
-   ```text
-   -- Logs begin at Fri 2023-05-19 10:28:34 UTC, end at Mon 2023-05-22 06:08:42 UTC. --
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] LOG:  redirecting log output to logging collector process
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] HINT:  Future log output will appear in directory "log".
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Started PostgreSQL 14 database server.
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopping PostgreSQL 14 database server...
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: postgresql.service: Succeeded.
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopped PostgreSQL 14 database server.
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  starting PostgreSQL 14.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-16), 64-bit
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv6 address "::", port 5432
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.725 GMT [1978] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1980]: 2023-05-19 10:29:33.735 GMT [1980] LOG:  database system was shut down at 2023-05-19 10:29:18 GMT
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.828 GMT [1978] LOG:  database system is ready to accept connections
-
-   ...
-   ```
-
-   {/cut}
-
-   Келтірілген шығыс фрагменті бойынша PostgreSQL іске қосылғанын, жұмыс істеп тұрғанын және кіріс қосылымдарды қабылдауға дайын екенін қорытындылауға болады.
 
 ## {heading({counter(db)}. TimescaleDB кеңейтімін орнатыңыз)[id=install_timescaledb]}
 

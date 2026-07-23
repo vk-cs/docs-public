@@ -26,10 +26,8 @@
 
           Кластер түйіндерінің атаулары көрсетілген атаудан және жұрнақтан тұрады. Жұрнақ әртүрлі СУБД үшін әртүрлі болады.
 
+        - **Қолжетімділік аймағы**: кластерге арналған {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағы]}.
         - **Желі**: кластер орналастырылатын желі. Егер қажетті желі тізімде болмаса, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=оны құрыңыз]}.
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
 
     1. Резервтік көшіруді баптаңыз. Қажет болса, резервтік көшіру параметрлерін кластер жасалғаннан кейін {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=орнатуға]} немесе {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=өзгертуге]} болады.
 
@@ -260,14 +258,7 @@
           {/note}
 
         - **Firewall баптаулары**: кластерге арналған қауіпсіздік топтарының тізімі.
-
-          `ssh` қауіпсіздік тобын тізімге қосыңыз, сонда {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} мүмкіндігі пайда болады.
-
         - **Түйіндер саны**: кластердегі хосттар саны.
-
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
 
        {/tab}
 
@@ -329,12 +320,6 @@
           {/note}
 
         - **Firewall баптаулары**: кластерге арналған қауіпсіздік топтарының тізімі.
-
-          `ssh` қауіпсіздік тобын тізімге қосыңыз, сонда {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} мүмкіндігі пайда болады.
-
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
 
        {/tab}
 
@@ -477,13 +462,6 @@
           {/note}
 
         - **Firewall баптаулары**: кластерге арналған қауіпсіздік топтарының тізімі.
-
-          `ssh` қауіпсіздік тобын тізімге қосыңыз, сонда {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} мүмкіндігі пайда болады.
-
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
-
         - Егер кластерді VK Cloud платформасының құралдары арқылы мониторингтеу қажет болса, **Мониторингті қосу** опциясын таңдаңыз.
 
     1. **Келесі қадам** батырмасын басыңыз.
@@ -578,14 +556,7 @@
           {/note}
 
         - **Firewall баптаулары**: кластерге арналған қауіпсіздік топтарының тізімі.
-
-          `ssh` қауіпсіздік тобын тізімге қосыңыз, сонда {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} мүмкіндігі пайда болады.
-
         - **Түйіндер саны**: кластердегі хосттар саны.
-
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
 
     1. Резервтік көшіруді баптаңыз. Қажет болса, резервтік көшіру параметрлерін кластер жасалғаннан кейін {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=орнатуға]} немесе {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=өзгертуге]} болады.
 
@@ -692,10 +663,6 @@
           Floating IP мекенжайын пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифтеледі]}.
 
           {/note}
-
-        - **SSH арқылы қол жеткізуге арналған кілт**: бар кілтті таңдаңыз немесе жаңасын жасаңыз.
-
-          Кілт {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы кластер хосттарына қосылу]} үшін пайдаланылады.
 
     1. Резервтік көшіруді баптаңыз. Қажет болса, резервтік көшіру параметрлерін кластер жасалғаннан кейін {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=орнатуға]} немесе {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=өзгертуге]} болады.
 

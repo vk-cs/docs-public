@@ -56,9 +56,6 @@
         {/note}
 
       - **Firewall settings:** a list of security groups for the DB instance.
-
-        Add the `ssh` security group to the list to be able to [connect to DB instance via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
       - **Create replica:** this option affects the instance configuration and determines whether a replica will be added.
 
         The option is available for the following DBMS types:
@@ -76,10 +73,6 @@
         The name of each replica consists of the instance name and a suffix with the host sequence number (for example, `my-instance-3`). Instance hosts numbering starts with `1`.
 
         {/note}
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
