@@ -1,0 +1,15 @@
+{
+  "title": "Настройка приоритетов масштабирования групп узлов",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Настройка приоритетов масштабирования групп узлов",
+  "icon": "",
+  "weight": 60,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
