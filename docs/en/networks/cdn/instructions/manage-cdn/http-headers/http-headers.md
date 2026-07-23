@@ -192,7 +192,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ## Configuring Allowed HTTP Methods
 
-The **Allowed HTTP Methods** option enables control over permitted HTTP request methods to a CDN resource. By default, the following methods are allowed: `GET`, `HEAD`, `OPTIONS`, `DELETE`. To enable `POST`, `PUT` and `PATCH` methods, contact [technical support](mailto:support@mcs.mail.ru).
+The **Allowed HTTP Methods** option enables control over permitted HTTP request methods to a CDN resource. By default, the following methods are allowed: `GET`, `HEAD`. To enable `OPTIONS`, `DELETE`, `POST`, `PUT` and `PATCH` methods, contact [technical support](mailto:support@mcs.mail.ru).
 
 To configure the allowed methods:
 
