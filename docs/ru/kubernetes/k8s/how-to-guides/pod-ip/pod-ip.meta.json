@@ -1,0 +1,15 @@
+{
+  "title": "Публичный IP для пода без балансировщика",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Публичный IP для пода без балансировщика",
+  "icon": "",
+  "weight": 50,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

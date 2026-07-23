@@ -1,0 +1,15 @@
+{
+  "title": "Поддержка GitOps: маркировка объектов автоматизации и ограничение ручных изменений с помощью Argo CD и Gatekeeper",
+  "shortDescription": "Поддержка GitOps: маркировка объектов автоматизации и ограничение ручных изменений с помощью Argo CD и Gatekeeper",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Поддержка GitOps",
+  "icon": "",
+  "weight": 40,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
