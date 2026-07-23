@@ -30,11 +30,9 @@
       - **Имя кластера базы данных**: может содержать только латинские буквы, цифры и спецсимволы `-`, `_`.
 
         Имена узлов кластера будут состоять из указанного имени и суффикса. Суффикс будет различаться для разных СУБД.
-
+      
+      - **Зона доступности**: {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зона доступности]} для кластера.
       - **Сеть**: сеть, в которой будет размещаться кластер. Если нужной сети нет в списке, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=создайте ее]}.
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
 
    1. Настройте резервное копирование. При необходимости параметры резервного копирования можно {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=задать]} или {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=изменить]} после создания кластера.
 
@@ -280,19 +278,7 @@
         {/ifdef}
 
       - **Настройки Firewall**: список групп безопасности для кластера.
-
-        {ifdef(public)}
-        Добавьте в список группу безопасности `ssh`, чтобы получить возможность {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключаться к хостам кластера по SSH]}.
-        {/ifdef}
-
       - **Количество узлов**: количество хостов в кластере.
-
-      {ifdef(public)}
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
-      {/ifdef}
-
       {ifdef(public)}
       {/tab}
 
@@ -343,12 +329,6 @@
         {/note}
 
       - **Настройки Firewall**: список групп безопасности для кластера.
-
-        Добавьте в список группу безопасности `ssh`, чтобы получить возможность {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключаться к хостам кластера по SSH]}.
-
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
 
       {/tab}
 
@@ -498,13 +478,6 @@
         {/note}
 
       - **Настройки Firewall**: список групп безопасности для кластера.
-
-        Добавьте в список группу безопасности `ssh`, чтобы получить возможность {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключаться к хостам кластера по SSH]}.
-
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
-
       - Выберите опцию **Включить мониторинг**, если необходимо осуществлять мониторинг кластера с помощью инструментов платформы {var(cloud)}.
 
    1. Нажмите кнопку **Следующий шаг**.
@@ -593,14 +566,7 @@
         {/note}
 
       - **Настройки Firewall**: список групп безопасности для кластера.
-
-        Добавьте в список группу безопасности `ssh`, чтобы получить возможность {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключаться к хостам кластера по SSH]}.
-
       - **Количество узлов**: количество хостов в кластере.
-
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
 
    1. Настройте резервное копирование. При необходимости параметры резервного копирования можно {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=задать]} или {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=изменить]} после создания кластера.
 
@@ -724,12 +690,6 @@
         Использование Floating IP-адреса {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифицируется]}.
         {/note}
         {/ifdef}
-
-      {ifdef(public)}
-      - **Ключ для доступа по SSH**: выберите существующий ключ или создайте новый.
-
-        Ключ используется для {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=подключения к хостам кластера по SSH]}.
-      {/ifdef}
 
    1. Настройте резервное копирование. При необходимости параметры резервного копирования можно {linkto(../../../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=задать]} или {linkto(../../../../../storage/backups/instructions/manage-backup-plan#backup-plan-edit)[text=изменить]} после создания кластера.
 

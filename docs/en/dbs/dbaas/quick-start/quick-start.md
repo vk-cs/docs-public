@@ -4,7 +4,7 @@ After going through all the steps of the quick start, you will:
 
 1. Create a single host PostgreSQL DB instance.
 1. Install the [TimescaleDB](https://docs.timescale.com) extension to the instance.
-1. Learn how to connect to the instance for both [viewing logs](#3_optional_view_db_instance_logs) and [executing SQL queries](#5_connect_to_the_database).
+1. Learn how to connect to the instance for [executing SQL queries](#4_connect_to_the_database).
 1. Create test data and quieries for TimescaleDB to make sure that the extension operates correctly.
 
    An automatically generated test dataset will be used in this quick start. It comprises the information from the IoT sensors: temperature and CPU utilization.
@@ -199,21 +199,8 @@ The DB instance is charged and consumes computational resources. After completin
    - **Network:** `Create new network`.
    - **Subnet address:** `10.0.1.0/24`.
    - **Assign external IP:** make sure that this option is enabled.
-   - **Firewall Settings:** select `ssh` from the drop-down list.
-
-     The resulting list of the security groups should look like: `default`, `ssh`.
-
+   - **Firewall Settings:** make sure that only one option, `default`, is selected.
    - **Create replica:** make sure that this option is disabled.
-   - **SSH access key:** `Create a new key`.
-
-     {note:info}
-
-     With this option enabled, a private SSH key will be downloaded to your computer. Save it.
-
-     This key is required to connect to the instance via SSH, for example, for [viewing the logs](#3_optional_view_db_instance_logs).
-
-     {/note}
-
    - **Backup:** `Disabled`.
 
 1. Click the **Next step** button.
@@ -247,65 +234,7 @@ The DB instance is charged and consumes computational resources. After completin
 
    The necessary address will be listed in the **External IP address** parameter.
 
-## 3. (Optional) View DB instance logs
-
-1. Connect to DB instace via SSH. Use private SSH key, [obtained during the instance creation](#1_create_postgresql_db_instance):
-
-   {tabs}
-   
-   {tab(Linux/macOS)}
-      
-   ```console
-   chmod 0600 <path/to/the/key.pem>
-   ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
-
-   ```
-
-   {/tab}
-   
-   {tab(Windows)}
-   
-   ```console
-   ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
-   ```
-
-   {/tab}
-   
-   {/tabs}
-
-1. View DB instance logs:
-
-   ```console
-   journalctl -u postgresql
-   ```
-
-   {cut(Example output fragment)}
-
-   ```text
-   -- Logs begin at Fri 2023-05-19 10:28:34 UTC, end at Mon 2023-05-22 06:08:42 UTC. --
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] LOG:  redirecting log output to logging collector process
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal postmaster[1096]: 2023-05-19 10:28:41.800 UTC [1096] HINT:  Future log output will appear in directory "log".
-   May 19 10:28:41 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Started PostgreSQL 14 database server.
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopping PostgreSQL 14 database server...
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: postgresql.service: Succeeded.
-   May 19 10:29:18 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Stopped PostgreSQL 14 database server.
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal systemd[1]: Starting PostgreSQL 14 database server...
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  starting PostgreSQL 14.7 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-16), 64-bit
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv4 address "0.0.0.0", port 5432
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.720 GMT [1978] LOG:  listening on IPv6 address "::", port 5432
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.725 GMT [1978] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1980]: 2023-05-19 10:29:33.735 GMT [1980] LOG:  database system was shut down at 2023-05-19 10:29:18 GMT
-   May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.828 GMT [1978] LOG:  database system is ready to accept connections
-
-   ...
-   ```
-
-   {/cut}
-
-   It is possible to conclude from this output that PostgreSQL is up and running and ready to accept incoming connections.
-
-## 4. Install the TimescaleDB extension
+## 3. Install the TimescaleDB extension
 
 1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where the DB instance is located.
@@ -318,7 +247,7 @@ The DB instance is charged and consumes computational resources. After completin
 
     Wait until the installation of the extension is completed: its status should change from `Creating` to `Active`.
 
-## 5. Connect to the database
+## 4. Connect to the database
 
 Connect to the `tsdb1` database via the `psql` utility:
 
@@ -342,7 +271,7 @@ All further steps must be performed from the `psql` command line.
 
 {/note}
 
-## 6. Create necessary tables
+## 5. Create necessary tables
 
 1. Activate the TimescaleDB extension:
 
@@ -418,7 +347,7 @@ All further steps must be performed from the `psql` command line.
 
    {/cut}
 
-## 7. Fill in the tables with the data
+## 6. Fill in the tables with the data
 
 {note:info}
 
@@ -492,7 +421,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
 
    {/cut}
 
-## 8. Execute test queries
+## 7. Execute test queries
 
 {note:info}
 
@@ -566,7 +495,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
 
 Output of query results similar to the above ones indicates that PostgreSQL and TimescaleDB extension are working correctly.
 
-## 9. (Optional) Familiarize yourself with the DB instance monitoring data
+## 8. (Optional) Familiarize yourself with the DB instance monitoring data
 
 The monitoring service is enabled for PostgreSQL. Look through the gathered monitoring data:
 

@@ -16,7 +16,6 @@
 
 1. [Создадите](#instance_create) инстанс БД PostgreSQL в конфигурации Single.
 1. [Получите](#instance_ip) внешний IP-адрес созданного инстанса БД.
-1. (Опционально) [Посмотрите](#instance_logs) логи созданного инстанса БД.
 1. [Установите](#install_timescaledb) в инстанс БД расширение [TimescaleDB](https://docs.timescale.com).
 1. [Подключитесь](#db_connect) к БД.
 1. [Создадите](#tables_create) таблицы в БД.

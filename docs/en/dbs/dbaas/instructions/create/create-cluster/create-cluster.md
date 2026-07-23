@@ -22,10 +22,8 @@
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
+      - **Availability zone**: [availability zone](/en/intro/start/concepts/architecture#architecture-az) for the cluster.
       - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#creating_network).
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
@@ -251,14 +249,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
         {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
-
-        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
       - **Number of nodes:** the number of hosts in the cluster.
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
       {/tab}
 
@@ -315,12 +306,6 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
         {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
-
-        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
       {/tab}
 
@@ -462,13 +447,6 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
         {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
-
-        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
       - Select the option **Enable monitoring** if you need to monitor the cluster using the VK Cloud tools.
 
    1. Click the **Next step** button.
@@ -559,14 +537,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
         {/note}
 
       - **Firewall settings**: a list of security groups for the cluster.
-
-        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
-
       - **Number of nodes:** the number of hosts in the cluster.
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
@@ -673,10 +644,6 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
         The use of a floating IP address is [charged](/en/networks/vnet/tariffication).
 
         {/note}
-
-      - **SSH access key**: select an existing key or create a new one.
-
-        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set](/en/storage/backups/instructions/create-backup-plan) or [changed](/en/storage/backups/instructions/manage-backup-plan) after the cluster is created.
 
