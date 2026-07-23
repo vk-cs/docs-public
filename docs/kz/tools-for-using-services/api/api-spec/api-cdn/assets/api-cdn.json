@@ -1229,7 +1229,7 @@
             "enabled": true,
             "value": [
               "GET",
-              "POST"
+              "HEAD"
             ]
           },
           "brotli_compression": {
@@ -1637,9 +1637,7 @@
             "enabled": false,
             "value": [
               "GET",
-              "POST",
-              "HEAD",
-              "OPTIONS"
+              "HEAD"
             ]
           },
           "edge_cache_settings": {
@@ -2009,12 +2007,7 @@
                 "type": "string",
                 "enum": [
                   "GET",
-                  "POST",
-                  "HEAD",
-                  "OPTIONS",
-                  "PUT",
-                  "PATCH",
-                  "DELETE"
+                  "HEAD"
                 ]
               },
               "description": "Доступные методы"
