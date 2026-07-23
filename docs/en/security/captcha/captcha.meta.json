@@ -1,0 +1,20 @@
+{
+  "title": "VK Капча",
+  "shortDescription": "Service for user verification using captcha",
+  "metaDescription": "VK Капча — how to protect your application from bots using captcha. SDK for web, iOS and Android, multi-level verification, 11 languages.",
+  "sectionTitle": "VK Капча",
+  "hidden": true,
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/en/tools-for-using-services/api/api-spec/captcha-api"
+    }
+  ],
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Step-by-step VK Капча integration: backend, web and mobile applications",
+  "metaDescription": "How to integrate VK Капча — step-by-step instructions for connecting backend, web application, and iOS and Android mobile applications.",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

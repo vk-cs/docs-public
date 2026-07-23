@@ -1,0 +1,14 @@
+{
+  "title": "SDK Reference",
+  "shortDescription": "Description of VK Капча SDK methods for developing web resources and mobile applications",
+  "metaDescription": "VK Капча SDK methods reference — how to display, close the captcha and get a verification token for web applications, iOS, and Android.",
+  "sectionTitle": "SDK Reference",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

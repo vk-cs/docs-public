@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "How the VK Капча service works and its features",
+  "metaDescription": "How the VK Капча service works — operating principle, captcha types, trust level, difficulty escalation, and SDK references for integration.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

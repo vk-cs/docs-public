@@ -1,0 +1,14 @@
+{
+  "title": "Security",
+  "sectionTitle": "Security",
+  "metaDescription": "Security",
+  "hidden": true,
+  "weight": 4,
+  "icon": "",
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

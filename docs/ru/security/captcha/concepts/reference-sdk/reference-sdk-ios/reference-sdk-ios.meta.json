@@ -1,0 +1,14 @@
+{
+  "title": "Справочник SDK для iOS",
+  "shortDescription": "Описание методов VK Капча SDK для разработки iOS-приложений",
+  "metaDescription": "Как отобразить капчу в iOS-приложении — методы VK Капча SDK: getCaptchaViewController, closeCaptcha, конфигурация и обработка результатов.",
+  "sectionTitle": "Справочник SDK для iOS",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

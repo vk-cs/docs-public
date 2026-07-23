@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to the application backend",
+  "shortDescription": "Integrating VK Капча with your application backend",
+  "metaDescription": "How to connect your backend to VK Капча API — session creation, success-token validation, request parameters, and response handling.",
+  "sectionTitle": "Connecting to the application backend",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

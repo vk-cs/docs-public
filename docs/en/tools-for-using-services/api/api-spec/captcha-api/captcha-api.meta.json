@@ -1,0 +1,10 @@
+{
+    "title": "VK Капча",
+      "shortDescription": "OpenAPI specification of the VK Капча service",
+      "metaDescription": "VK Капча service API — full specification of the createSession and validate methods: request parameters, response formats, and examples.",
+    "sectionTitle": "VK Капча",
+    "hidden": true,
+    "icon": "",
+    "weight": 19,
+    "uuid": ""
+}

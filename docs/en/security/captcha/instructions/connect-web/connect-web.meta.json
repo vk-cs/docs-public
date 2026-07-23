@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a web application",
+  "shortDescription": "Integrating VK Капча with your web application frontend",
+  "metaDescription": "How to add captcha to a web application — connecting VK Капча SDK via npm, yarn, pnpm, or JS script, configuring the widget and handling the result.",
+  "sectionTitle": "Connecting to a web application",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

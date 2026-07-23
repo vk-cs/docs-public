@@ -1,0 +1,10 @@
+{
+    "title": "VK Капча",
+      "shortDescription": "OpenAPI-спецификация сервиса VK Капча",
+      "metaDescription": "API сервиса VK Капча — полная спецификация методов createSession и validate: параметры запросов, форматы ответов и примеры.",
+    "sectionTitle": "VK Капча",
+    "hidden": true,
+    "icon": "",
+    "weight": 19,
+    "uuid": ""
+}

@@ -1,0 +1,257 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API VK Капча",
+    "version": "5.188"
+  },
+  "servers": [
+    {
+      "url": "https://api.vk.ru/method"
+    }
+  ],
+  "security": [
+    {
+      "service_token_auth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "session",
+      "description": "CAPTCHA-сессия"
+    },
+    {
+      "name": "success-token",
+      "description": "Токен успешного прохождения капчи"
+    }
+  ],
+  "paths": {
+    "/captchaNotRobot.createSession": {
+      "get": {
+        "summary": "Создать CAPTCHA-сессию",
+        "operationId": "createSession",
+        "tags": [
+          "session"
+        ],
+        "parameters": [
+          {
+            "name": "Captcha-Test",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            },
+            "description": "Заголовок для тестирования сервиса VK Капча. При указании значения ``true``:\n\n- все попытки прохождения капчи считаются успешными;\n\n- запросы не тарифицируются"
+          },
+          {
+            "$ref": "#/components/parameters/v"
+          },
+          {
+            "$ref": "#/components/parameters/service_token"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Источник запроса. Текстовый идентификатор внутри вашего сервиса, который описывает причину выдачи капчи: действие пользователя или событие.\n\nИдентификаторы задаются вашим сервисом самостоятельно.\n\nФормат: строка на латинице без пробелов"
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Домен, на котором интегрирована капча.\n\nУказанное значение подставляется в CSP-заголовок"
+          },
+          {
+            "name": "client",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Идентификатор сессии пользователя на стороне сервиса"
+          },
+          {
+            "name": "captcha_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "checkbox",
+                "slider",
+                "sound"
+              ],
+              "default": "checkbox"
+            },
+            "description": "Тип создаваемой капчи. Возможные значения:\n\n``checkbox`` — флажок;\n\n``slider`` — ползунок;\n\n``sound`` — аудио"
+          },
+          {
+            "name": "session_token_ttl",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 600,
+              "minimum": 0,
+              "default": 300
+            },
+            "description": "Время жизни сессионного токена (в секундах)"
+          },
+          {
+            "name": "success_token_ttl",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 600,
+              "minimum": 0,
+              "default": 300
+            },
+            "description": "Время жизни токена успешного прохождения капчи (в секундах)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "link": {
+                      "type": "string",
+                      "description": "Ссылка, содержащая сессионный токен и метаданные:\n\n``domain`` — домен, на котором будет использована капча;\n\n``session_token`` — сессионный токен;\n\n``variant`` — вид отображения капчи (``block`` или ``popup``)"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "OK",
+                        "ERROR"
+                      ],
+                      "description": "Статус выполнения запроса. Возможные значения:\n\n``OK`` — сессия создана успешно;\n\n``ERROR`` — ошибка при создании сессии"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/captchaNotRobot.validate": {
+      "get": {
+        "summary": "Валидация токена успешного прохождения капчи",
+        "operationId": "validate",
+        "tags": [
+          "success-token"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/v"
+          },
+          {
+            "$ref": "#/components/parameters/service_token"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Источник запроса.\n\nУказывается значение, которое было передано в запросе на создание CAPTCHA-сессии.\n\nФормат: строка на латинице без пробелов"
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Домен, на котором интегрирована капча.\n\nУказывается значение, которое было передано в запросе на создание CAPTCHA-сессии"
+          },
+          {
+            "name": "client",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Идентификатор сессии пользователя на стороне сервиса.\n\nУказывается значение, которое было передано в запросе на создание CAPTCHA-сессии"
+          },
+          {
+            "name": "success_token",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Токен успешного прохождения капчи"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "OK",
+                        "ERROR",
+                        "ERROR_LIMIT",
+                        "ERROR_TOKEN_EXPIRED"
+                      ],
+                      "description": "Статус прохождения капчи. Возможные значения:\n\n``OK`` — токен валиден;\n\n``ERROR`` — токен невалиден;\n\n``ERROR_LIMIT`` — превышен лимит запросов;\n\n``ERROR_TOKEN_EXPIRED`` — истекло время жизни токена"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "service_token_auth": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "service_token"
+      }
+    },
+    "parameters": {
+      "v": {
+        "name": "v",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "number",
+          "enum": [
+            5.188
+          ]
+        },
+        "description": "Версия API"
+      },
+      "service_token": {
+        "name": "service_token",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "Токен доступа к API VK Капча"
+      }
+    }
+  }
+}

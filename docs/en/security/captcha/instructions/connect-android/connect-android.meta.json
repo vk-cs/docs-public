@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a mobile application on Android",
+  "shortDescription": "Integrating VK Капча with the frontend of your Android mobile application",
+  "metaDescription": "How to add captcha to a mobile application — step-by-step integration of VK Капча SDK for Android, configuration, and result processing.",
+  "sectionTitle": "Connecting to a mobile application on Android",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

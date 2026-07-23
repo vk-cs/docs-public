@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Brief description of VK Капча service capabilities, its operating principle and protection mechanisms used",
+  "metaDescription": "What is VK Капча — a bot protection service with multi-level verification: behavioral analysis, user digital signature, environment telemetry.",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
