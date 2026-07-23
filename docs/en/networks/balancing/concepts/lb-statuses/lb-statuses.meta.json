@@ -1,0 +1,14 @@
+{
+    "title": "Load Balancer Statuses",
+      "shortDescription": "Description of VK Cloud load balancer statuses",
+      "metaDescription": "VK Cloud Load Balancing service. Description of load balancer provisioning and operating statuses. Common and special operating statuses.",
+    "sectionTitle": "Load Balancer Statuses",
+    "icon": "",
+    "weight": 2,
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

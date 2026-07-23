@@ -1,0 +1,19 @@
+{
+    "title": "Статусы балансировщиков",
+      "shortDescription": "Описание статусов балансировщиков нагрузки VK Cloud",
+      "metaDescription": "Сервис балансировщиков нагрузки Load Balancing VK Cloud. Описание статусов развертывания и состояния балансировщиков. Основные и специальные статусы состояния.",
+    "sectionTitle": "Статусы балансировщиков",
+    "icon": "",
+    "weight": 2,
+    "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": ""
+}

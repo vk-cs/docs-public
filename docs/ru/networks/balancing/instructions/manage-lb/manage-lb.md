@@ -69,6 +69,41 @@
 
 {/tabs}
 
+## {heading(Просмотр статусов балансировщиков нагрузки)[id=balancing-manage-lb-statuses]}
+
+{tabs}
+
+{tab(Личный кабинет)}
+
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. Выберите проект.
+1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
+
+   Отобразится список балансировщиков со {linkto(../../concepts/lb-statuses#balancing-lb-statuses-provisioning)[text=статусами развертывания]} и {linkto(../../concepts/lb-statuses#balancing-lb-statuses-operating-common)[text=основными статусами состояния]}.
+
+{/tab}
+{tab(OpenStack CLI)}
+1. Убедитесь, что:
+
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]} вместе с {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=дополнительным пакетом]} `python-octaviaclient`.
+   2. Вы можете {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизоваться]} в OpenStack CLI.
+1. Получите список пулов балансировки с их идентификаторами:
+
+   ```console
+   openstack loadbalancer pool list
+   ```
+
+1. Скопируйте ID нужного пула.
+1. Получите информацию о нужном пуле балансировки:
+
+   ```console
+   openstack loadbalancer member list <ID_ПУЛА>
+   ```
+   {linkto(../../concepts/lb-statuses#balancing-lb-statuses-provisioning)[text=Cтатус развертывания]} находится в столбце `provisioning_status`, а {linkto(../../concepts/lb-statuses#balancing-lb-statuses-operating)[text=статус состояния]} — в столбце `operating_status`.
+
+{/tab}
+{/tabs}
+
 ## {heading(Добавление балансировщика нагрузки)[id=balancing-manage-lb-add]}
 
 {ifndef(public)}

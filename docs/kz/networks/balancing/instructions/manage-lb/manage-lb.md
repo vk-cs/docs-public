@@ -78,6 +78,41 @@
 
 {/tabs}
 
+## {heading(Жүктеме теңгергіштерінің күйлерін қарау)[id=balancing-manage-lb-statuses]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. Жобаны таңдаңыз.
+1. **Виртуалды желілер** → **Жүктеме теңгергіштері** бөліміне өтіңіз.
+
+   {linkto(../../concepts/lb-statuses#balancing-lb-statuses-provisioning)[text=Орналастыру күйлері]} және {linkto(../../concepts/lb-statuses#balancing-lb-statuses-operating-common)[text=негізгі жұмыс күйі статустары]} бар теңгергіштер тізімі көрсетіледі.
+
+{/tab}
+{tab(OpenStack CLI)}
+1. Мыналарға көз жеткізіңіз:
+
+   1. OpenStack CLI {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылған]} және {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install-package)[text=қосымша пакетпен]} `python-octaviaclient` бірге.
+   2. OpenStack CLI ішінде {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=авторизациядан өте аласыз]}.
+1. Теңгерімдеу пулдарының тізімін олардың идентификаторларымен бірге алыңыз:
+
+   ```console
+   openstack loadbalancer pool list
+   ```
+
+1. Қажетті пулдың ID мәнін көшіріңіз.
+1. Қажетті теңгерімдеу пулы туралы ақпаратты алыңыз:
+
+   ```console
+   openstack loadbalancer member list <ID_ПУЛА>
+   ```
+   {linkto(../../concepts/lb-statuses#balancing-lb-statuses-provisioning)[text=Орналастыру күйі]} `provisioning_status` бағанында, ал {linkto(../../concepts/lb-statuses#balancing-lb-statuses-operating)[text=жұмыс күйі статусы]} — `operating_status` бағанында орналасқан.
+
+{/tab}
+{/tabs}
+
 ## {heading(Жүктеме теңгергішін қосу)[id=balancing-manage-lb-add]}
 
 {ifndef(public)}
