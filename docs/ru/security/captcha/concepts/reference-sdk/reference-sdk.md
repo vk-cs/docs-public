@@ -1,0 +1,1 @@
+# {heading(Справочники SDK)[id=captcha-concepts-reference-sdk]}

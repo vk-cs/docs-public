@@ -1,0 +1,14 @@
+{
+  "title": "Getting a service token",
+  "shortDescription": "Getting a service_token for accessing VK Капча API",
+  "metaDescription": "How to get a service token for VK Капча — request to captcha@corp.vk.com, specifying domains for the CSP header and IP addresses for access restriction.",
+  "sectionTitle": "Getting a service token",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

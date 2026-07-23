@@ -1,0 +1,14 @@
+{
+  "title": "Справочник SDK для Android",
+  "shortDescription": "Описание методов VK Капча SDK для разработки Android-приложений",
+  "metaDescription": "Как отобразить капчу в Android-приложении — методы VK Капча SDK: openCaptcha, getToken, setLocale, обработка результатов.",
+  "sectionTitle": "Справочник SDK для Android",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

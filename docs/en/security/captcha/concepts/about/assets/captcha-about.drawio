@@ -1,0 +1,169 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram id="vXQyVAYpstf_i7DDC2gg" name="captcha-about">
+    <mxGraphModel dx="1811" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=VK Sans Display;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="430" as="sourcePoint" />
+            <mxPoint x="100" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-21" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;2. Action execution request&lt;/font&gt;" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;spacingRight=60;edgeStyle=orthogonalEdgeStyle;fontFamily=VK Sans Display;textOpacity=70;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;spacingLeft=16;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-24" target="pFyEsA0ql5Jt2C0f5bMH-31" edge="1">
+          <mxGeometry x="0.1181" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-380" y="220" />
+              <mxPoint x="-380" y="220" />
+            </Array>
+            <mxPoint x="652" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-22" value="6. Opening &lt;br&gt;captcha" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontFamily=VK Sans Display;fontSize=14;labelBackgroundColor=none;strokeWidth=2;endArrow=open;endFill=0;edgeStyle=orthogonalEdgeStyle;textOpacity=70;spacingTop=0;spacingBottom=16;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-24" target="pFyEsA0ql5Jt2C0f5bMH-27" edge="1">
+          <mxGeometry x="0.2778" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-580" y="330" />
+              <mxPoint x="-580" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-23" value="10. Repeat action request + token" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=top;fontSize=14;fontFamily=VK Sans Display;strokeWidth=2;endArrow=open;endFill=0;spacingLeft=-100;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;spacingTop=-2;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-24" target="pFyEsA0ql5Jt2C0f5bMH-31" edge="1">
+          <mxGeometry x="0.2119" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-550" y="130" />
+              <mxPoint x="-170" y="130" />
+            </Array>
+            <mxPoint x="184.5" y="310" as="sourcePoint" />
+            <mxPoint x="690.3900000000001" y="470.4799999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-24" value="Application frontend" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#E4E8FF;spacing=0;spacingTop=10;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;fontSize=14;fontColor=#252629;spacingLeft=12;spacingRight=12;perimeterSpacing=4;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="180" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-25" value="9. Token&amp;nbsp;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=2;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=middle;fontSize=14;fontFamily=VK Sans Display;edgeStyle=orthogonalEdgeStyle;textOpacity=70;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-27" target="pFyEsA0ql5Jt2C0f5bMH-24" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-550" y="330" />
+              <mxPoint x="-550" y="330" />
+            </Array>
+            <mxPoint x="-520" y="392.0000000000002" as="sourcePoint" />
+            <mxPoint x="-520" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-26" value="8. Passing &lt;br&gt;captcha" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=VK Sans Display;labelPosition=right;verticalLabelPosition=bottom;align=center;verticalAlign=middle;fontSize=14;strokeWidth=2;endArrow=none;endFill=0;spacingRight=0;spacingLeft=120;startArrow=open;startFill=0;spacingBottom=3;spacingTop=43;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;sourcePerimeterSpacing=4;targetPerimeterSpacing=26;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-27" target="pFyEsA0ql5Jt2C0f5bMH-36" edge="1">
+          <mxGeometry x="0.0763" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-780" y="390" />
+            </Array>
+            <mxPoint x="500" y="210" as="sourcePoint" />
+            <mxPoint x="364" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-27" value="VK Капча SDK" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#E4E8FF;spacing=0;spacingTop=10;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;fontSize=14;fontColor=#252629;spacingLeft=12;spacingRight=12;perimeterSpacing=4;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="340" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-28" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3. Captcha session creation&lt;/font&gt;" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;fontFamily=VK Sans Display;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;align=left;spacingLeft=7;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;curved=0;textOpacity=70;targetPerimeterSpacing=4;sourcePerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-31" target="pFyEsA0ql5Jt2C0f5bMH-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-50" y="220" />
+              <mxPoint x="-50" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;5. Response with captcha link&lt;/font&gt;" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=bottom;edgeStyle=orthogonalEdgeStyle;fontFamily=VK Sans Display;textOpacity=70;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-31" target="pFyEsA0ql5Jt2C0f5bMH-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-150" y="110" />
+              <mxPoint x="-580" y="110" />
+            </Array>
+            <mxPoint x="230" y="314" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-30" value="11. Token &lt;br&gt;validation" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=open;endFill=0;fontFamily=VK Sans Display;fontSize=14;labelPosition=right;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingLeft=3;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;targetPerimeterSpacing=4;sourcePerimeterSpacing=4;spacingTop=11;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-31" target="pFyEsA0ql5Jt2C0f5bMH-34" edge="1">
+          <mxGeometry x="-0.1515" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-170" y="330" />
+              <mxPoint x="-170" y="330" />
+            </Array>
+            <mxPoint x="752" y="470" as="sourcePoint" />
+            <mxPoint x="562" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-31" value="Application backend" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#E4E8FF;spacing=0;spacingTop=10;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;fontSize=14;fontColor=#252629;spacingLeft=12;spacingRight=12;perimeterSpacing=4;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="180" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-32" value="4. Captcha &lt;br&gt;link" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=VK Sans Display;fontSize=14;labelPosition=left;verticalLabelPosition=middle;align=left;verticalAlign=middle;strokeWidth=2;endArrow=open;endFill=0;spacingRight=3;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;startSize=6;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-34" target="pFyEsA0ql5Jt2C0f5bMH-31" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-150" y="330" />
+              <mxPoint x="-150" y="330" />
+            </Array>
+            <mxPoint x="636.0000000000002" y="630" as="sourcePoint" />
+            <mxPoint x="636.52" y="500.6399999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-33" value="12. Token validation &lt;br&gt;result" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;labelPosition=right;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontFamily=VK Sans Display;strokeColor=default;strokeWidth=2;endArrow=open;endFill=0;spacingLeft=9;spacingRight=6;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;targetPerimeterSpacing=4;sourcePerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-34" target="pFyEsA0ql5Jt2C0f5bMH-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-300" y="380" />
+              <mxPoint x="-300" y="250" />
+            </Array>
+            <mxPoint x="750" y="670" as="sourcePoint" />
+            <mxPoint x="750" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-34" value="VK Капча service" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#E4E8FF;spacing=0;spacingTop=10;spacingBottom=12;arcSize=12;absoluteArcSize=1;strokeWidth=2;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;fontSize=14;fontColor=#252629;spacingLeft=12;spacingRight=12;perimeterSpacing=4;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="340" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-35" value="14. Action execution &lt;br&gt;result" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fontFamily=VK Sans Display;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;curved=0;strokeWidth=2;endArrow=none;endFill=0;startArrow=open;startFill=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=4;labelBackgroundColor=none;textOpacity=70;spacingLeft=19;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-36" target="pFyEsA0ql5Jt2C0f5bMH-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-770" y="160" />
+              <mxPoint x="-610" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-36" value="User" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMCAyMCIgaGVpZ2h0PSIyMCIgd2lkdGg9IjIwIj4mI3hhOzxwYXRoIGZpbGw9IiMwMDc3RkYiIGQ9Ik0xMi41IDVDMTIuNSAzLjYxODU5IDExLjM4MTQgMi41IDEwIDIuNUM4LjYxODU5IDIuNSA3LjUgMy42MTg1OSA3LjUgNUM3LjUgNi4zODE0MSA4LjYxODU5IDcuNSAxMCA3LjVDMTEuMzgxNCA3LjUgMTIuNSA2LjM4MTQxIDEyLjUgNVpNMTQgNUMxNCA3LjIwOTg0IDEyLjIwOTggOSAxMCA5QzcuNzkwMTYgOSA2IDcuMjA5ODQgNiA1QzYgMi43OTAxNiA3Ljc5MDE2IDEgMTAgMUMxMi4yMDk4IDEgMTQgMi43OTAxNiAxNCA1Wk00IDE1LjVDNCAxNi4yMTUyIDQuMzU3NjUgMTYuNSA1IDE2LjVIMTVDMTUuNjQyMyAxNi41IDE2IDE2LjIxNTIgMTYgMTUuNUMxNiAxMy4xNjY2IDEzLjQzMzQgMTIgMTAgMTJDNi41NjY2MSAxMiA0IDEzLjE2NjYgNCAxNS41Wk0yLjUgMTUuNUMyLjUgMTIuMDE1MiA1LjgzMzM5IDEwLjUgMTAgMTAuNUMxNC4xNjY2IDEwLjUgMTcuNSAxMi4wMTUyIDE3LjUgMTUuNUMxNy41IDE3LjEyODMgMTYuNDA1MyAxOCAxNSAxOEg1QzMuNTk0NjcgMTggMi41IDE3LjEyODMgMi41IDE1LjVaIi8+JiN4YTs8L3N2Zz4=;fontFamily=VK Sans Display;fontColor=#252629;fontSize=14;perimeterSpacing=4;" parent="1" vertex="1">
+          <mxGeometry x="-790" y="200" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-37" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1. Action&lt;/font&gt;" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=2;textShadow=0;labelPosition=right;verticalLabelPosition=bottom;align=center;verticalAlign=bottom;labelBackgroundColor=none;fontColor=#252629;spacingBottom=3;spacingTop=36;spacingLeft=-4;edgeStyle=orthogonalEdgeStyle;fontFamily=VK Sans Display;textOpacity=70;sourcePerimeterSpacing=0;targetPerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-36" target="pFyEsA0ql5Jt2C0f5bMH-24" edge="1">
+          <mxGeometry x="-0.0133" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-660" y="220" />
+              <mxPoint x="-660" y="220" />
+            </Array>
+            <mxPoint x="110" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pFyEsA0ql5Jt2C0f5bMH-38" value="13. Request execution result" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=bottom;fontSize=14;fontFamily=VK Sans Display;strokeWidth=2;endArrow=none;endFill=0;startArrow=open;startFill=0;edgeStyle=orthogonalEdgeStyle;textOpacity=70;targetPerimeterSpacing=4;sourcePerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-24" target="pFyEsA0ql5Jt2C0f5bMH-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-360" y="190" />
+              <mxPoint x="-360" y="190" />
+            </Array>
+            <mxPoint x="169.2299999999999" y="309.9999999999999" as="sourcePoint" />
+            <mxPoint x="800.8" y="319.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YgzpF-Lvv7JmODvpDhBw-1" value="7. Showing captcha &lt;br&gt;to user" style="rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=VK Sans Display;labelPosition=right;verticalLabelPosition=top;align=left;verticalAlign=bottom;fontSize=14;strokeWidth=2;endArrow=none;endFill=0;spacingRight=0;spacingLeft=6;startArrow=open;startFill=0;spacingBottom=24;spacingTop=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;textOpacity=70;startSize=6;sourcePerimeterSpacing=26;targetPerimeterSpacing=4;" parent="1" source="pFyEsA0ql5Jt2C0f5bMH-36" target="pFyEsA0ql5Jt2C0f5bMH-27" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint x="-10" y="10" as="offset" />
+            <Array as="points">
+              <mxPoint x="-760" y="370" />
+            </Array>
+            <mxPoint x="-564" y="686" as="sourcePoint" />
+            <mxPoint x="-700" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

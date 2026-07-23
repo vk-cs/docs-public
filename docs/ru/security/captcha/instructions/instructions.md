@@ -1,0 +1,1 @@
+# {heading(Пошаговые инструкции)[id=captcha-instructions]}

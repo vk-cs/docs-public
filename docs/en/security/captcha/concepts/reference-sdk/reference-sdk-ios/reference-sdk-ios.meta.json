@@ -1,0 +1,14 @@
+{
+  "title": "SDK reference for iOS",
+  "shortDescription": "Description of VK Капча SDK methods for iOS app development",
+  "metaDescription": "How to display captcha in an iOS app — VK Капча SDK methods: getCaptchaViewController, closeCaptcha, configuration and result handling.",
+  "sectionTitle": "SDK reference for iOS",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

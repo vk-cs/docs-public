@@ -1,0 +1,14 @@
+{
+  "title": "SDK reference for Android",
+  "shortDescription": "Description of VK Капча SDK methods for Android app development",
+  "metaDescription": "How to display captcha in an Android app — VK Капча SDK methods: openCaptcha, getToken, setLocale, result handling.",
+  "sectionTitle": "SDK reference for Android",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

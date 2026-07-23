@@ -1,0 +1,20 @@
+{
+  "title": "VK Капча",
+  "shortDescription": "Сервис для верификации пользователей с помощью капчи",
+  "metaDescription": "VK Капча — как защитить приложение от ботов с помощью капчи. SDK для веба, iOS и Android, многоуровневая проверка, 11 языков.",
+  "sectionTitle": "VK Капча",
+  "hidden": true,
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/ru/tools-for-using-services/api/api-spec/captcha-api"
+    }
+  ],
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

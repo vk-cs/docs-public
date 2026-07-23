@@ -1,0 +1,14 @@
+{
+  "title": "SDK reference for web applications",
+  "shortDescription": "Description of VK Капча SDK methods for web resource development",
+  "metaDescription": "How to display captcha in a web application — VK Капча SDK methods: show(), close(), widget parameters and verification result handling.",
+  "sectionTitle": "SDK reference for web applications",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API VK Капча",
+    "version": "5.188"
+  },
+  "servers": [
+    {
+      "url": "https://api.vk.ru/method"
+    }
+  ],
+  "security": [
+    {
+      "service_token_auth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "session",
+      "description": "CAPTCHA session"
+    },
+    {
+      "name": "success-token",
+      "description": "Successful captcha completion token"
+    }
+  ],
+  "paths": {
+    "/captchaNotRobot.createSession": {
+      "get": {
+        "summary": "Create a CAPTCHA session",
+        "operationId": "createSession",
+        "tags": [
+          "session"
+        ],
+        "parameters": [
+          {
+            "name": "Captcha-Test",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            },
+            "description": "Header for testing the VK Капча service. When the value `true` is specified:\n\n- all captcha attempts are considered successful;\n\n- requests are not billed"
+          },
+          {
+            "$ref": "#/components/parameters/v"
+          },
+          {
+            "$ref": "#/components/parameters/service_token"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Request source. A text identifier within your service that describes the reason for issuing the captcha: a user action or event.\n\nIdentifiers are defined by your service.\n\nFormat: string in Latin characters without spaces"
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Domain where the captcha is integrated.\n\nThe specified value is inserted into the CSP header"
+          },
+          {
+            "name": "client",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "User session identifier on the service side"
+          },
+          {
+            "name": "captcha_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "checkbox",
+                "slider",
+                "sound"
+              ],
+              "default": "checkbox"
+            },
+            "description": "Captcha type to create. Possible values:\n\n``checkbox`` — checkbox;\n\n``slider`` — slider;\n\n``sound`` — audio"
+          },
+          {
+            "name": "session_token_ttl",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 600,
+              "minimum": 0,
+              "default": 300
+            },
+            "description": "Session token lifetime (in seconds)"
+          },
+          {
+            "name": "success_token_ttl",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 600,
+              "minimum": 0,
+              "default": 300
+            },
+            "description": "Successful captcha completion token lifetime (in seconds)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "link": {
+                      "type": "string",
+                      "description": "Link containing the session token and metadata:\n\n``domain`` — domain where the captcha will be used;\n\n``session_token`` — session token;\n\n``variant`` — captcha display type (``block`` or ``popup``)"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "OK",
+                        "ERROR"
+                      ],
+                      "description": "Request execution status. Possible values:\n\n``OK`` — session created successfully;\n\n``ERROR`` — error during session creation"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/captchaNotRobot.validate": {
+      "get": {
+        "summary": "Validation of the successful captcha completion token",
+        "operationId": "validate",
+        "tags": [
+          "success-token"
+        ],
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/v"
+          },
+          {
+            "$ref": "#/components/parameters/service_token"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Request source.\n\nSpecify the value that was passed in the CAPTCHA session creation request.\n\nFormat: string in Latin characters without spaces"
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Domain where the captcha is integrated.\n\nSpecify the value that was passed in the CAPTCHA session creation request"
+          },
+          {
+            "name": "client",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "User session identifier on the service side.\n\nSpecify the value that was passed in the CAPTCHA session creation request"
+          },
+          {
+            "name": "success_token",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Successful captcha completion token"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "OK",
+                        "ERROR",
+                        "ERROR_LIMIT",
+                        "ERROR_TOKEN_EXPIRED"
+                      ],
+                      "description": "Captcha completion status. Possible values:\n\n``OK`` — token is valid;\n\n``ERROR`` — token is invalid;\n\n``ERROR_LIMIT`` — request limit exceeded;\n\n``ERROR_TOKEN_EXPIRED`` — token lifetime expired"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "service_token_auth": {
+        "type": "apiKey",
+        "in": "query",
+        "name": "service_token"
+      }
+    },
+    "parameters": {
+      "v": {
+        "name": "v",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "number",
+          "enum": [
+            5.188
+          ]
+        },
+        "description": "API version"
+      },
+      "service_token": {
+        "name": "service_token",
+        "in": "query",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "VK Капча API access token"
+      }
+    }
+  }
+}
