@@ -3,9 +3,7 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {note:warn}
-
-Terraform арқылы кластермен кез келген операцияны орындамас бұрын {linkto(../helpers/terraform-howto#k8s-terraform-howto-features)[text=Terraform пайдалану]} бөліміндегі ақпаратпен танысыңыз.
-
+Cloud Containers қызметі арқылы {linkto(../../../../data-platform#data-platform-main)[text={var(data-p)}]}. Ол үшін жеке кабинеттің {var(data-p)} {var(cloud)} бөлімін пайдаланыңыз.
 {/note}
 
 ## {heading(Кластерді іске қосу немесе тоқтату)[id=k8s-manage-cluster-start-stop]}
@@ -73,11 +71,13 @@ Terraform арқылы кластермен кез келген операция
 Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
 {/note}
 
+{include(/kz/_includes/_pre_terraform.md)}
 1. Команданы орындаңыз:
 
    ```console
-   terraform state show vkcs_kubernetes_cluster.<имя ресурса кластера в файле конфигурации Terraform>
+   terraform state show vkcs_kubernetes_cluster.<РЕСУРС_АТАУЫ>
    ```
+   Мұнда `<РЕСУРС_АТАУЫ>` — Terraform конфигурация файлындағы кластер ресурсының атауы.
 
 1. Команда шығысында қолжетімді ақпаратты қараңыз.
 
@@ -97,10 +97,6 @@ Terraform арқылы басқару тек {linkto(../../concepts/cluster-gene
 ## {heading(master-түйіндер үшін виртуалды машина түрін өзгерту)[id=k8s-manage-cluster-change-master-type]}
 
 Бұл операция {linkto(../scale#k8s-instructions-scale)[text=Кластер түйіндерін масштабтау]} бөлімінде толық сипатталған. Оны тек кластер іске қосылған кезде орындауға болады.
-
-{note:info}
-Бұл операция тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-{/note}
 
 ## {heading(Кластерді жою)[id=k8s-manage-cluster-delete]}
 
