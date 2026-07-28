@@ -1,11 +1,10 @@
-The following describes how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster from your management console. We recommend [creating](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) second-generation clusters: they feature improved performance and stability. 
+The following describes how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster from your management console. You can also create a first-generation cluster [with Terraform](../create-terraform).
 
-You can also create a first-generation cluster [with Terraform](../create-terraform).
+Creating first-generation clusters from the management console is disabled for new users and is only available on request via [technical support](mailto:support@mcs.mail.ru). By default, only [second-generation](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) clusters are available: they feature improved performance and stability. 
+
 
 {note:warn}
-
 When installing a cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
-
 {/note}
 
 ## Before you create a cluster

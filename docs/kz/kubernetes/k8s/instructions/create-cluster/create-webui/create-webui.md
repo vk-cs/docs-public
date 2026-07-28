@@ -2,14 +2,12 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде жеке кабинеттен Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буындағы]} кластерін құру сипатталады. Екінші буындағы кластерлерді {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=құру]} ұсынылады: олар жоғары өнімділікпен және тұрақтылықпен ерекшеленеді.
+Төменде жеке кабинеттен Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буындағы]} кластерін құру сипатталады. Сондай-ақ бірінші буындағы кластерді {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]} көмегімен де құра аласыз.
 
-Сондай-ақ бірінші буындағы кластерді {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]} көмегімен де құра аласыз.
+Жеке кабинеттен бірінші буын кластерлерін құру жаңа пайдаланушылар үшін өшірілген және тек [техникалық қолдау](/kz/contacts) арқылы сұраныс бойынша қол жетімді. Әдепкі {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=қол жетімді]} тек екінші буын кластерлері: олар жақсартылған өнімділік пен тұрақтылыққа ие.
 
 {note:warn}
-
 Кластерді құру кезінде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгергіші]} құрылады. Теңгергішті пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
-
 {/note}
 
 ## {heading(Кластерді құру алдында)[id=k8s-create-webui-prepare]}
