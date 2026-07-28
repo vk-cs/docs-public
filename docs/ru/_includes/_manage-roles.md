@@ -18,7 +18,7 @@
 1. (Опционально) Выберите одну из {linkto(../../concepts/roles-reference#iam-roles-reference-basic)[text=базовых ролей]}:
    - `Суперадминистратор`,
    - `Администратор проекта`,
-   - `Администратор безопасности`,
+   - `Администратор пользователей (IAM)`,
    - `Наблюдатель`.
 1. Раскройте нужные группы {linkto(../../concepts/roles-reference#iam-roles-reference)[text=ролей]} и {linkto(../../concepts/permissions-reference#iam-permissions-reference)[text=разрешений]}, после этого:
    - отметьте флажками роли или разрешения, которые вы хотите выдать пользователю;
