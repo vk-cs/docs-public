@@ -139,7 +139,7 @@
 |Чтение, IOPS<br/>bs=4k,<br/>iodepth=32 
 |Чтение, МБ/с<br/>bs=1M,<br/>iodepth=16 
 |Запись, IOPS<br/>bs=4k,<br/>iodepth=32 
-|Запись, МБ/с<br/>bs=1M,<br/>iodepth=16 |
+|Запись, МБ/с<br/>bs=1M,<br/>iodepth=16
 
 |10
 |1000

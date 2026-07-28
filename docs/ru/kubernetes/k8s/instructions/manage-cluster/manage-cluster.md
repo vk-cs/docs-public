@@ -2,7 +2,7 @@
 
 {ifdef(public)}
 {note:warn}
-Перед выполнением любой операции с кластером из Terraform ознакомьтесь с информацией в разделе {linkto(../helpers/terraform-howto#k8s-terraform-howto-features)[text=Использование Terraform]}.
+Через сервис Cloud Containers нельзя управлять кластерами {linkto(../../../../data-platform#data-platform-main)[text={var(data-p)}]}. Для этого используйте раздел {var(data-p)} личного кабинета {var(cloud)}.
 {/note}
 {/ifdef}
 
@@ -80,14 +80,16 @@ Terraform позволяет получить только часть инфор
 {tab(Terraform)}
 
 {note:info}
-Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
+Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}. 
 {/note}
 
+{include(/ru/_includes/_pre_terraform.md)}   
 1. Выполните команду:
 
    ```console
-   terraform state show vkcs_kubernetes_cluster.<имя ресурса кластера в файле конфигурации Terraform>
+   terraform state show vkcs_kubernetes_cluster.<ИМЯ_РЕСУРСА>
    ```
+   Здесь `<ИМЯ_РЕСУРСА>` — имя ресурса кластера в файле конфигурации Terraform.
 
 1. Посмотрите доступную информацию в выводе команды.
 
@@ -108,12 +110,6 @@ Terraform позволяет получить только часть инфор
 ## {heading(Изменить тип виртуальной машины для master-узлов)[id=k8s-manage-cluster-change-master-type]}
 
 Эта операция подробно описана в разделе {linkto(../scale#k8s-instructions-scale)[text=Масштабирование узлов кластера]}. Ее можно выполнить, только когда кластер запущен.
-
-{ifdef(public)}
-{note:info}
-Эта операция доступна только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
-{/ifdef}
 
 ## {heading(Удалить кластер)[id=k8s-manage-cluster-delete]}
 

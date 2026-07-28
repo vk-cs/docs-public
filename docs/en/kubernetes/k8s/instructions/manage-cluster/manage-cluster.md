@@ -1,7 +1,5 @@
 {note:warn}
-
-Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
-
+You cannot manage [VK Data Platform](/en/data-platform) clusters via the Cloud Containers service. To do that, use the VK Data Platform section of the VK Cloud management console.
 {/note}
 
 ## Start or stop cluster
@@ -16,7 +14,7 @@ This is a group operation: if necessary, you can start several stopped clusters 
 
 To start a cluster:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -37,7 +35,7 @@ This is a group operation: if necessary, you can stop several started clusters a
 
 To stop a cluster:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -56,7 +54,7 @@ Different information is available for running and stopped clusters. Terraform a
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click on the name of the necessary cluster. A page with information will open.
@@ -69,11 +67,13 @@ Different information is available for running and stopped clusters. Terraform a
 Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
 {/note}
 
+{include(/en/_includes/_pre_terraform.md)}
 1. Run the command:
 
    ```console
-   terraform state show vkcs_kubernetes_cluster.<cluster resource name in the Terraform configuration file>
+   terraform state show vkcs_kubernetes_cluster.<RESOURCE_NAME>
    ```
+   Here, `<RESOURCE_NAME>` is the cluster resource name in the Terraform configuration file.
 
 1. Examine the available information in the output of the command.
 
@@ -94,10 +94,6 @@ The operations to get these props are described in detail in [Connecting](../../
 
 This operation is described in detail in [Cluster node scaling](../scale). You can only perform it when the cluster is running.
 
-{note:info}
-This operation is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
 ## {heading(Delete cluster)[id=k8s-manage-cluster-delete]}
 
 {tabs}
@@ -108,7 +104,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 
 To delete a cluster:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Perform one of the actions for the required cluster:
