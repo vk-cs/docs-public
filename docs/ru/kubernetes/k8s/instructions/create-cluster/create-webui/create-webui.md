@@ -1,8 +1,8 @@
 # {heading(Создание кластера первого поколения в личном кабинете)[id=k8s-create-webui]}
 
-Далее описывается создание кластера Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} из личного кабинета. Рекомендуется {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=создавать]} кластеры второго поколения: они отличаются улучшенной производительностью и стабильностью.
+Далее описывается создание кластера Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} из личного кабинета. Также вы можете создать кластер первого поколения с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
 
-Также вы можете создать кластер первого поколения с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
+Создание кластеров первого поколения из личного кабинета отключено для новых пользователей и доступно только по запросу через [техническую поддержку](/ru/contacts). По умолчанию {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=доступны]} только кластеры второго поколения: они отличаются улучшенной производительностью и стабильностью.
 
 {note:warn}
 При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
