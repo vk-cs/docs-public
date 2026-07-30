@@ -1,6 +1,6 @@
 Создавать федерации удостоверений VK Cloud могут только пользователи с {linkto(/ru/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=ролью]} владельца проекта.
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений** на вкладку **Федерации**.
 1. Нажмите кнопку **Создать**.
 1. Нажмите кнопку **Загрузить метаданные IdP**.
@@ -17,5 +17,5 @@
 
 На вкладке **Федерации** появятся данные федерации:
 
-- URL для входа федеративных пользователей в личный кабинет VK Cloud, например: `https://cloud.vk.com/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
+- URL для входа федеративных пользователей в личный кабинет VK Cloud, например: `https://cloud.vk.ru/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
 - ID федерации, например: `54f0267b-31f6-XXXX-XXX-2a24c5f436fb`.

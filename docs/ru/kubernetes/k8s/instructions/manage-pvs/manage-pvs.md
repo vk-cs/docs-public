@@ -14,7 +14,7 @@
 После переноса вернуть PV из вашего проекта в {linkto(../../concepts/cluster-generations#k8s-cluster-generations-service-projects)[text=сервисный]} нельзя.
 {/note}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер второго поколения.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Диски PV**.
 1. Переместите PV в свой проект одним из способов: 
@@ -28,7 +28,7 @@
 
 ## {heading(Удаление PV)[id=k8s-manage-pvs-delete]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер второго поколения.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Диски PV**.
 1. Выполните одно из действий:

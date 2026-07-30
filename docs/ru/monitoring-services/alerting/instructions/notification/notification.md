@@ -10,7 +10,7 @@
 
 Чтобы создать канал уведомлений:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Алертинг**.
 1. Перейдите на вкладку **Каналы уведомлений**.
 1. Нажмите кнопку **Добавить**.
@@ -26,7 +26,7 @@
 
 ## {heading(Редактирование канала уведомлений)[id=alerting-notification-edit]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Алертинг**.
 1. Перейдите на вкладку **Каналы уведомлений**.
 1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для нужного канала и выберите пункт **Изменить**.
@@ -39,7 +39,7 @@
 Перед удалением канала {linkto(../triggers#alerting-triggers-delete)[text=удалите]} все связанные с ним триггеры.
 {/note}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Алертинг**.
 1. Перейдите на вкладку **Каналы уведомлений**.
 1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для нужного канала и выберите пункт **Удалить**.

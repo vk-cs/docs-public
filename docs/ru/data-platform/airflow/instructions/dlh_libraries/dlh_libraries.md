@@ -39,7 +39,7 @@
 
 |mlplatform-client-on-prem
 |1.1.13
-|Библиотека {var(data-p)} на основе Cloud ML Platform, которая предоставляет методы для работы с кластером Cloud Spark. Подробнее в [официальной документации](https://cloud.vk.com/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference)
+|Библиотека {var(data-p)} на основе Cloud ML Platform, которая предоставляет методы для работы с кластером Cloud Spark. Подробнее в [официальной документации](https://cloud.vk.ru/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference)
 
 |polars
 |0.20.31

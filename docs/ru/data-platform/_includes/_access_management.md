@@ -1,6 +1,6 @@
 {includetag(dp_private_access_intro)}
 
-Чтобы разграничить права участников проекта или сервисных учетных записей, в {var(data-p)} в составе {var(cloud)} используется подсистема управления доступом. Управлять доступами можно через Портал самообслуживания. Подробнее — в документе Руководство администратора {var(cloud)} в разделе [Роли пользователей](https://cloud.vk.com/docs/on-premises/private-cloud/ru/4_3/admin-guide/users_and_access_control/users/users_and_roles).
+Чтобы разграничить права участников проекта или сервисных учетных записей, в {var(data-p)} в составе {var(cloud)} используется подсистема управления доступом. Управлять доступами можно через Портал самообслуживания. Подробнее — в документе Руководство администратора {var(cloud)} в разделе [Роли пользователей](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/users_and_access_control/users/users_and_roles).
 
 {/includetag}
 

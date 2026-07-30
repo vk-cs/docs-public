@@ -23,7 +23,7 @@
 
 Файл должен быть размещен во всех рабочих директориях Terraform.
 
-Файл доступен для {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=скачивания]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=скачивания]}{/ifndef} в личном кабинете, на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.com/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} на вкладке **Terraform**. Скачанный файл имеет имя `vkcs_provider.tf` и содержит данные одного провайдера (`vkcs`). После скачивания отредактируйте файл — укажите в параметре `password` пароль от вашей учетной записи.
+Файл доступен для {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=скачивания]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=скачивания]}{/ifndef} в личном кабинете, на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} на вкладке **Terraform**. Скачанный файл имеет имя `vkcs_provider.tf` и содержит данные одного провайдера (`vkcs`). После скачивания отредактируйте файл — укажите в параметре `password` пароль от вашей учетной записи.
 
 Пример содержимого файла:
 
@@ -60,7 +60,7 @@ provider "vkcs" {
 - `provider "vkcs" {}` — настройки аутентификации в проекте:
 
   - `password`: укажите пароль от вашей учетной записи;
-  - `username`, `project_id`, `region`: значения, указанные в скачанном через личный кабинет файле, валидны для работы с текущим проектом. Эти значения также указаны на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.com/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} на вкладке **Terraform**.
+  - `username`, `project_id`, `region`: значения, указанные в скачанном через личный кабинет файле, валидны для работы с текущим проектом. Эти значения также указаны на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} на вкладке **Terraform**.
 
 {ifdef(public)}
 Значения некоторых параметров зависят от {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=региона]}:
@@ -111,7 +111,7 @@ depends_on = [
 
 Этот файл необходим для запуска Terraform, он содержит адрес зеркала Terraform от {var(cloud)}. Файл должен иметь имя `terraform.rc` для Windows и `.terraformrc` для других ОС. Содержимое файла одинаково для всех проектов и регионов.
 
-Файл доступен для {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=скачивания]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=скачивания]}{/ifndef} на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.com/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} личного кабинета на вкладке **Terraform**. После скачивания вносить в файл какие-либо изменения не нужно.
+Файл доступен для {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=скачивания]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=скачивания]}{/ifndef} на странице {ifdef(public)}[Настройки проекта](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Настройки проекта**{/ifndef} личного кабинета на вкладке **Terraform**. После скачивания вносить в файл какие-либо изменения не нужно.
 
 Файл должен быть размещен:
 

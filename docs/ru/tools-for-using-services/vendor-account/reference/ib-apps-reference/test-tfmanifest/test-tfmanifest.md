@@ -19,7 +19,7 @@
 
 Здесь:
 
-* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`).
+* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`).
 * `<ИМЯ_МАНИФЕСТА>` — имя манифеста в системе развертывания
 
 |Тело запроса (`--data-binary`)
@@ -38,7 +38,7 @@
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>' \
 --data-binary "@deploy.tf"
 ```
@@ -48,7 +48,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>" ^
 --data-binary "@deploy.tf"
 ```
@@ -95,7 +95,7 @@ HTTP-коды ответа:
 
 Здесь:
 
-* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`).
+* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`).
 * `<ИМЯ_МАНИФЕСТА>` — имя манифеста в системе развертывания
 
 |`x-auth-token`
@@ -109,7 +109,7 @@ HTTP-коды ответа:
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>'
 ```
 
@@ -118,7 +118,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>"
 ```
 
@@ -165,7 +165,7 @@ HTTP-коды ответа:
 |Путь запроса
 |`https://<ХОСТ_VK_CLOUD>/marketplace/api/infra-api/api/v1-public/hoe/object`
 
-Здесь `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`)
+Здесь `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`)
 
 |`Content-Type`
 |`application/json`
@@ -189,7 +189,7 @@ HTTP-коды ответа:
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object \
 -H "Content-Type: application/json" \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>' \
 --data '{
@@ -209,7 +209,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object ^
 -H "Content-Type: application/json" ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>" ^
 --data "{\"uuid\": \"675f6f08-XXXX-f02311f795d7\", \"config\": \"test_1.0\", \"vars\": {\"sub_network\": \"a793470c-XXXX-67af6c178c8e\", \"image_uuid\": \"163ff752-XXXX-b0001e3e65d3\", \"volume_type\": \"ceph-ssd\", \"flavor_uuid\": \"6e61564f-XXXX-08df5fd84514\"}}"
@@ -262,7 +262,7 @@ HTTP-коды ответа:
 
 Здесь:
 
-* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`).
+* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`).
 * `<UUID_ОБЪЕКТА>` — идентификатор развертывания инстанса сервиса. Значение соответствует параметру `uuid` в запросе на [создание инстанса сервиса](#create_service_instance)
 
 |`x-auth-token`
@@ -276,7 +276,7 @@ HTTP-коды ответа:
 {tab(Linux (bash))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>'
 ```
 
@@ -285,7 +285,7 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>"
 ```
 
@@ -330,7 +330,7 @@ HTTP-коды ответа:
 
 Здесь:
 
-* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`).
+* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`).
 * `<UUID_ОБЪЕКТА>` — идентификатор развертывания инстанса сервиса. Значение соответствует параметру `uuid` в запросе на [создание инстанса сервиса](#create_service_instance)
 
 |`x-auth-token`
@@ -344,7 +344,7 @@ HTTP-коды ответа:
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>'
 ```
 
@@ -353,7 +353,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>"
 ```
 
@@ -443,7 +443,7 @@ HTTP-коды ответа:
 
 Здесь:
 
-* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.com`).
+* `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK Cloud (`https://cloud.vk.ru`).
 * `<UUID_ОБЪЕКТА>` — идентификатор развертывания инстанса сервиса. Значение соответствует параметру `uuid` в запросе на [создание инстанса сервиса](#create_service_instance)
 
 |`x-auth-token`
@@ -457,7 +457,7 @@ HTTP-коды ответа:
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <ТОКЕН_ДОСТУПА>'
 ```
 
@@ -466,7 +466,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <ТОКЕН_ДОСТУПА>"
 ```
 

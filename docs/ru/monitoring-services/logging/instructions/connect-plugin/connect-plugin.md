@@ -83,4 +83,4 @@
    ```
 
 1. Подождите несколько минут, чтобы накопились данные.
-1. Проверьте наличие логов в {ifdef(public)}[личном кабинете](https://msk.cloud.vk.com/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=личном кабинете]}{/ifndef} {var(cloud)} в разделе **Мониторинг** → **Логирование**.
+1. Проверьте наличие логов в {ifdef(public)}[личном кабинете](https://msk.cloud.vk.ru/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=личном кабинете]}{/ifndef} {var(cloud)} в разделе **Мониторинг** → **Логирование**.

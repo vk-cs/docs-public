@@ -41,7 +41,7 @@
 {includetag(instance_view_info)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -55,7 +55,7 @@
 {includetag(instance_edit_name)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -70,7 +70,7 @@
 {includetag(instance_view_status)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -86,7 +86,7 @@
 {includetag(instance_vertical_scaling)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -102,7 +102,7 @@
 {includetag(instance_horizontal_scaling)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -117,7 +117,7 @@
 {includetag(instance_vertical_disk_scaling)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -142,7 +142,7 @@
 <!-- Общие действия для паблика -->
 
 {includetag(public_select_project)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где нужно создать экземпляр сервиса.
 {/includetag}
 
@@ -151,7 +151,7 @@
 {includetag(instance_delete)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -165,7 +165,7 @@
 {includetag(instance_user_delete)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -181,7 +181,7 @@
 {includetag(instance_edit_settings)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -202,7 +202,7 @@
 {includetag(instance_edit_settings_new)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -228,7 +228,7 @@
 {includetag(instance_backup_create)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -246,7 +246,7 @@
 {includetag(instance_backup_view)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -265,7 +265,7 @@
 {includetag(instance_backup_recovery)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -280,7 +280,7 @@
 {includetag(instance_view_connect)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -296,7 +296,7 @@
 {includetag(instance_edit_components)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -312,7 +312,7 @@
 {includetag(instance_admin_edit)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -327,7 +327,7 @@
 {includetag(instance_admin_password)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -352,7 +352,7 @@
 {includetag(instance_disk_resize)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
@@ -379,7 +379,7 @@
 {includetag(instance_service)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -395,7 +395,7 @@
 {includetag(instance_service_no_backup)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -411,7 +411,7 @@
 {includetag(instance_user_access)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -443,7 +443,7 @@
 {includetag(instance_create_connect)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -471,7 +471,7 @@
 {includetag(instance_open)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -484,7 +484,7 @@
 {includetag(instance_tls_certificate)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.

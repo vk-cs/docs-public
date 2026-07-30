@@ -31,11 +31,11 @@
 
 |Виртуальные машины с GPU
 |ВМ с выделенным {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=графическим ускорителем]}
-|Отображаются при заказе соответствующих типов ВМ через сервис [Cloud GPU](https://cloud.vk.com/cloud-gpu/)
+|Отображаются при заказе соответствующих типов ВМ через сервис [Cloud GPU](https://cloud.vk.ru/cloud-gpu/)
 
 |Виртуальные машины с vGPU
 |ВМ с {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=графическим ускорителем]} на базе {linkto(../../../../../computing/gpu/concepts/vgpu#gpu-vgpu)[text=технологии vGPU]}
-|Отображаются при заказе соответствующих типов ВМ через сервис [Cloud GPU](https://cloud.vk.com/cloud-gpu/)
+|Отображаются при заказе соответствующих типов ВМ через сервис [Cloud GPU](https://cloud.vk.ru/cloud-gpu/)
 
 |ВМ с локальными дисками
 |ВМ с возможностью использования локальных дисков гипервизора

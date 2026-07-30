@@ -125,7 +125,7 @@
    openstack image list
    ```
 
-   В [личном кабинете](https://msk.cloud.vk.com/app/) {var(cloud)} список образов находится в разделе **Облачные вычисления → Образы**.
+   В [личном кабинете](https://msk.cloud.vk.ru/app/) {var(cloud)} список образов находится в разделе **Облачные вычисления → Образы**.
 
 ## {heading(5. Создайте виртуальную машину)[id=migration-migrate-vmware-create-vm]}
 

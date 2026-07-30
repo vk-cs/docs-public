@@ -34,7 +34,7 @@
 - Базовая часть скидки — 10%.
 - Скидка за регистрацию сделки — до 20%.
 
-Общая скидка может достигать до 30% от цены, указанной в [прайс-листе](https://cloud.vk.com/pricelist) {var(cloud)}.
+Общая скидка может достигать до 30% от цены, указанной в [прайс-листе](https://cloud.vk.ru/pricelist) {var(cloud)}.
 
 ## {heading(Агент)[id=partners-cooperation-models-agent]}
 

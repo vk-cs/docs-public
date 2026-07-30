@@ -14,7 +14,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где нужно создать экземпляр сервиса.
 {/ifdef}
 
@@ -37,7 +37,7 @@
 
       {ifndef(public)}
       - (Только для Standalone, опционально) **Автоматическое назначение IP**: отключите опцию, чтоб задать IP-адрес для экземпляра сервиса из подсети.
-      - (Только для Standalone в составе {var(cloud)}, опционально) Добавьте группу безопасности. Если нужной группы безопасности нет в списке, создайте ее по инструкции из **Руководства администратора {var(cloud)}** → **Сети** → [Настройка firewall](https://cloud.vk.com/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
+      - (Только для Standalone в составе {var(cloud)}, опционально) Добавьте группу безопасности. Если нужной группы безопасности нет в списке, создайте ее по инструкции из **Руководства администратора {var(cloud)}** → **Сети** → [Настройка firewall](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
       - (Пропустить для Standalone) Выберите кластер Kubernetes из выпадающего списка или создайте новый. В этот кластер будет добавлен worker-узел для размещения экземпляра Cloud Spark.
       {/ifndef}
       {ifdef(public)}

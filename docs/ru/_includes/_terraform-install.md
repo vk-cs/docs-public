@@ -2,7 +2,7 @@
 1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от {var(cloud)}.
    {/includetag}
    {includetag(prerequisites-terraform-install-prepare)}
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../prerequisites-lk-entry#prerequisites-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../prerequisites-lk-entry#prerequisites-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(tools-terraform-install-prepare)}
    {/includetag}

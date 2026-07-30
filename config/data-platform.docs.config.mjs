@@ -4,8 +4,8 @@ export const config = {
         copyright: '© %year% VK Data Platform',
         analytics: '(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(46889073,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});',
         scriptManager: 'https://vkcs-scripts.mrgcdn.ru/master/help.js',
-        canonicalBaseUrl: 'https://docs.tech.vk.com/data-platform',
-        logoLink: 'https://cloud.vk.com/data-platform',
+        canonicalBaseUrl: 'https://docs.tech.vk.ru/data-platform',
+        logoLink: 'https://cloud.vk.ru/data-platform',
         metaTags: [
             {
                 name: 'yandex-verification',
@@ -41,7 +41,7 @@ export const config = {
                 },
                 {
                     title: 'Сайт VK Data Platform',
-                    absoluteLink: 'https://cloud.vk.com/data-platform/',
+                    absoluteLink: 'https://cloud.vk.ru/data-platform/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
             ]

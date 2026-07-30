@@ -27,7 +27,7 @@
 
 - При {linkto(../../../../intro/onboarding/account#onboarding-account)[text=регистрации]} нового аккаунта в {var(cloud)}. Такие бонусы называются приветственными и начисляются однократно, сразу после активации сервисов в {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекте]}, который был создан при регистрации. Количество приветственных бонусов зависит от региона:
 
-  - Москва — 5000 бонусов (2000 бонусов — на оплату виртуальных серверов и их резервных копий, 3000 — на все остальные сервисы, кроме CDN, сторонних сервисов и лицензий, а также программных продуктов из [Магазина приложений](https://msk.cloud.vk.com/app/services/marketplace));
+  - Москва — 5000 бонусов (2000 бонусов — на оплату виртуальных серверов и их резервных копий, 3000 — на все остальные сервисы, кроме CDN, сторонних сервисов и лицензий, а также программных продуктов из [Магазина приложений](https://msk.cloud.vk.ru/app/services/marketplace));
   - Казахстан — 24000 бонусов на все сервисы, кроме CDN, сторонних сервисов и лицензий, а также программных продуктов из магазина приложений.
 
   {note:err}
@@ -63,7 +63,7 @@
 - Arenadata DB as a Service;
 - ML Platform (сервисы JupyterHub, MLflow и MLflow Deploy);
 - Cloud Databases;
-- [Marketplace](https://msk.cloud.vk.com/app/mcs1798875946/services/marketplace) (все сервисы).
+- [Marketplace](https://msk.cloud.vk.ru/app/mcs1798875946/services/marketplace) (все сервисы).
 
 {/cut}
 
@@ -92,5 +92,5 @@
 - [VK Data Platform](/ru/data-platform) (все сервисы).
 {/cut}
 
-Полный список параметров вы можете уточнить в [прайс-листе](https://cloud.vk.com/pricelist/).
+Полный список параметров вы можете уточнить в [прайс-листе](https://cloud.vk.ru/pricelist/).
 {/ifdef}

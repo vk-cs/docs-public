@@ -1,4 +1,4 @@
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт {var(cloud)}.
 1. Нажмите ![](../../../../../assets/more-icon.svg "inline") для нужного проекта и выберите пункт **Переименовать**.
 1. Задайте новое имя.
 

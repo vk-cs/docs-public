@@ -51,7 +51,7 @@
 
    {tabs}
    {tab(Личный кабинет)}
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Найдите нужный кластер и группу узлов в нем.
@@ -78,7 +78,7 @@
    {tabs}
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    
    {include(/ru/_includes/_project_quotas.md)[tags=cluster-does-not-scale-up]}
    

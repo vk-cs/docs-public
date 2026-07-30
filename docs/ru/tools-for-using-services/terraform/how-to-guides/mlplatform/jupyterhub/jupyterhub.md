@@ -190,7 +190,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Убедитесь, что инстанс JupyterHub был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс JupyterHub создан и активен.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=terraform-jupyterhub-delete]}

@@ -59,7 +59,7 @@ export const config = {
     search: {
         type: 'SATORI',
         satori: {
-            apiBaseUrl: 'https://cloud.vk.com/search/api',
+            apiBaseUrl: 'https://cloud.vk.ru/search/api',
             suppliers: ['vkcloud/docs'],
         },
         // assistant: {
@@ -68,7 +68,7 @@ export const config = {
         // },
     },
     helpmate: {
-        apiUrl: 'https://cloud.vk.com/helpmate/widget/api',
+        apiUrl: 'https://cloud.vk.ru/helpmate/widget/api',
         consumerAlias: 'd11n_cloud_public',
     },
     plugins: {
@@ -95,7 +95,7 @@ export const config = {
                 },
                 {
                     title: 'Сайт VK Cloud',
-                    absoluteLink: 'https://cloud.vk.com/',
+                    absoluteLink: 'https://cloud.vk.ru/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
             ],
@@ -112,7 +112,7 @@ export const config = {
                 },
                 {
                     title: 'VK Cloud web site',
-                    absoluteLink: 'https://cloud.vk.com/en/',
+                    absoluteLink: 'https://cloud.vk.ru/en/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
             ],
@@ -134,7 +134,7 @@ export const config = {
                 },
                 {
                     title: 'VK Cloud сайты',
-                    absoluteLink: 'https://cloud.vk.com/',
+                    absoluteLink: 'https://cloud.vk.ru/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
             ]

@@ -9,7 +9,7 @@
 ## {heading(Создание SIEM-подключения)[id=event-log-create-siem-connections]}
 
 1. Откройте порт вашей SIEM-системы на прием сообщений от {var(cloud)}. Подробнее о других необходимых настройках читайте в документации SIEM-системы.
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 1. Нажмите кнопку **Настройки** и перейдите на вкладку **SIEM**.
 1. Нажмите кнопку **Создать подключение**.
@@ -36,7 +36,7 @@
 
 ## {heading(Изменение настроек SIEM-подключения)[id=event-log-edit-siem-connection]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 1. Нажмите кнопку **Настройки** и перейдите на вкладку **SIEM**.
 1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного подключения и выберите пункт **Настроить**.
@@ -65,7 +65,7 @@
 
 ## {heading(Изменение статуса активности SIEM-подключения)[id=event-log-activate-siem-connection]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 1. Нажмите кнопку **Настройки** и перейдите на вкладку **SIEM**.
 
@@ -88,7 +88,7 @@
 
 Это групповая операция: при необходимости можно удалить несколько подключений, выбрав их с помощью флажков.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 1. Нажмите кнопку **Настройки** и перейдите на вкладку **SIEM**.
 1. Удалите SIEM-подключение одним из способов:

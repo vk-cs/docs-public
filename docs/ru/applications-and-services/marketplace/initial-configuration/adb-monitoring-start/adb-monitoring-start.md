@@ -43,7 +43,7 @@
 
 ## {heading(1. Подключите сервис Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
 1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ сервиса Мониторинг для Arenadata DB, отключите опцию **Приватный DNS**.
 1. Перейдите в раздел **Магазин приложений**, на странице раздела нажмите кнопку **Все решения**.
@@ -97,7 +97,7 @@
 
 ## {heading(2. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect-service]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите на имя ВМ, начинающееся с `adb-monitoring-`.
 1. На странице ВМ скопируйте и сохраните внешний IP-адрес. Он понадобится для подключения к ВМ сервиса Мониторинг для Arenadata DB.

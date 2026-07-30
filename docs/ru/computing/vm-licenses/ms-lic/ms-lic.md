@@ -1,6 +1,6 @@
 # {heading(Microsoft)[id=vm-licenses-microsoft]}
 
-Платформа {var(cloud)} позволяет создавать виртуальные машины с предустановленными лицензионными копиями операционных систем Microsoft Windows Server, а также использовать дополнительные программные продукты Microsoft — полный перечень доступен в [прайс-листе](https://cloud.vk.com/pricelist).
+Платформа {var(cloud)} позволяет создавать виртуальные машины с предустановленными лицензионными копиями операционных систем Microsoft Windows Server, а также использовать дополнительные программные продукты Microsoft — полный перечень доступен в [прайс-листе](https://cloud.vk.ru/pricelist).
 
 {note:warn}
 {var(cloud)} предоставляет ПО Microsoft по лицензионному соглашению Service Provider License Agreement (SPLA). В рамках этого соглашения ПО Microsoft можно эксплуатировать только на виртуальных машинах в облаке {var(cloud)}.
@@ -16,10 +16,10 @@
 
 Цену за месяц использования ПО можно узнать:
 
-- в [прайс-листе](https://cloud.vk.com/pricelist);
+- в [прайс-листе](https://cloud.vk.ru/pricelist);
 - при {linkto(../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создании]} виртуальной машины (ВМ);
-- в [настройках проекта](https://msk.cloud.vk.com/app/project/) на вкладке **Цены**.
-- в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.com/app/services/billing).
+- в [настройках проекта](https://msk.cloud.vk.ru/app/project/) на вкладке **Цены**.
+- в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.ru/app/services/billing).
 
 ## {heading(Требования к ВМ для автоматической активации лицензий)[id=vm-licenses-microsoft-requirements]}
 
@@ -34,7 +34,7 @@
 
 При создании ВМ с ОС Microsoft Windows автоматически разворачивается лицензионная копия ОС выбранной редакции. Лицензия будет активирована автоматически при включении ВМ, если соблюдены {linkto(#vm-licenses-microsoft-requirements)[text=требования к ВМ]}.
 
-Доступные редакции Microsoft Windows Server отображаются в раскрывающемся списке **Операционная система** при создании ВМ через [личный кабинет](https://msk.cloud.vk.com/app/services/infra/servers/add) {var(cloud)}.
+Доступные редакции Microsoft Windows Server отображаются в раскрывающемся списке **Операционная система** при создании ВМ через [личный кабинет](https://msk.cloud.vk.ru/app/services/infra/servers/add) {var(cloud)}.
 
 Каждые 2 vCPU виртуальной машины с ОС Windows требуют использования одной лицензии. Например, при создании ВМ с 5 vCPU понадобится 3 лицензии Windows Server. При изменении типа виртуальной машины количество лицензий будет изменено в соответствии с количеством виртуальных ядер измененной конфигурации.
 

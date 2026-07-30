@@ -7,7 +7,7 @@
 ## {heading(Подключение через веб-интерфейс)[id=trino_connect-ui]}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -65,7 +65,7 @@
 {ifndef(public)}
 ## {heading(Подключение в Standalone)[id=trino_connect-standalone]}
 
-В Standalone управление идентификацией и доступом выполняется через систему CIAM. Подробнее — в [официальной документации CIAM](https://docs.tech.vk.com/ciam).
+В Standalone управление идентификацией и доступом выполняется через систему CIAM. Подробнее — в [официальной документации CIAM](https://docs.tech.vk.ru/ciam).
 
 Для подключения к Cloud Trino из скрипта или CLI-клиента создайте учетную запись сервисного пользователя и получите CIAM-токен.
 

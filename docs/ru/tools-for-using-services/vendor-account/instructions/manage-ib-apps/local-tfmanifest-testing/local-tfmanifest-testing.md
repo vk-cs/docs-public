@@ -158,14 +158,14 @@
 
       provider "ivkcs" {
           # URL компонента Keystone платформы VK Cloud
-          auth_url = "https://cloud.vk.com/infra/identity/v3/"
+          auth_url = "https://cloud.vk.ru/infra/identity/v3/"
           user_domain_name = "users"
           username = "<ИМЯ_ПОЛЬЗОВАТЕЛЯ>"
           password = "<ПАРОЛЬ>"
           project_id = "<ИДЕНТИФИКАТОР_ПРОЕКТА>"
           region = "RegionOne"
           # URL сервиса Infra API
-          infra_url = "https://cloud.vk.com/marketplace/api/infra-api/api/v1/"
+          infra_url = "https://cloud.vk.ru/marketplace/api/infra-api/api/v1/"
       }
       ```
 

@@ -1,6 +1,6 @@
 Чтобы просмотреть логи инстанса сервиса:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Магазин приложений**.
 1. Откройте консоль разработчика и перейдите в ней на вкладку **Сеть** (**Network**).
 1. Используйте фильтры: нажмите кнопку **XHR/Fetch** и наберите `/marketplace` в строке для указания фильтра.
@@ -13,7 +13,7 @@
     {tab(Linux (bash))}
 
     ```console
-    curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
+    curl -X POST https://cloud.vk.ru/marketplace/api/um/v1/tokens/sid \
     --cookie 'sid=<SID>'
     ```
 
@@ -22,7 +22,7 @@
     {tab(Windows (cmd))}
 
     ```console
-    curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid ^
+    curl -X POST https://cloud.vk.ru/marketplace/api/um/v1/tokens/sid ^
     --cookie "sid=<SID>"
     ```
 
@@ -41,7 +41,7 @@
     {tab(Linux (bash))}
 
     ```console
-    curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
+    curl -v https://cloud.vk.ru/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
     -H 'Authorization: Bearer <JWT_TOKEN>'
     ```
 
@@ -50,7 +50,7 @@
     {tab(Windows (cmd))}
 
     ```console
-    curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
+    curl -v https://cloud.vk.ru/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
     -H "Authorization: Bearer <JWT_TOKEN>"
     ```
 

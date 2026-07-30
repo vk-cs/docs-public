@@ -26,7 +26,7 @@
 
 ## {heading(Тарифицируется)[id=backup-tariffication-yes]}
 
-- Снимки диска (snapshot) за каждый 1 ГБ дискового пространства. Цена одинакова для всех {linkto(/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=типов диска]} и приведена в [прайс-листе](https://cloud.vk.com/pricelist) в разделе **Виртуальные серверы**.
+- Снимки диска (snapshot) за каждый 1 ГБ дискового пространства. Цена одинакова для всех {linkto(/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=типов диска]} и приведена в [прайс-листе](https://cloud.vk.ru/pricelist) в разделе **Виртуальные серверы**.
 - Объем хранимых данных за каждый 1 ГБ по {linkto(/ru/storage/s3/tariffication#s3-tariffication)[text=тарифам]} {var(s3)} для класса хранения `BackupBucket`. 
 
 ## {heading(Не тарифицируется)[id=backup-tariffication-no]}

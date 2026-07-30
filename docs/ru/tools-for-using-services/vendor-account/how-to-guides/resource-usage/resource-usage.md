@@ -88,7 +88,7 @@
 Получите токен через запрос к Marketplace API:
 
 ```shell
-curl https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
+curl https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/auth/key \
 -H 'Authorization: Bearer <TOKEN>'
 ```
 
@@ -421,7 +421,7 @@ func main() {
 Для отладки процесса передачи метрик в {var(cloud)} выполните запрос к Marketplace API:
 
 ```shell
-curl -X POST https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics/decrypt \
+curl -X POST https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/metrics/decrypt \
 -H 'Authorization: Bearer <ТОКЕН>' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -463,7 +463,7 @@ curl -X POST https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/metric
 Выполните запрос к Marketplace API:
 
 ```shell
-curl -X POST https://msk.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics/push \
+curl -X POST https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/metrics/push \
 -H 'Authorization: Bearer <ТОКЕН>' \
 -H 'Content-Type: application/json' \
 --data-raw '{

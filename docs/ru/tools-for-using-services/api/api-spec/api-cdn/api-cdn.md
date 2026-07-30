@@ -13,18 +13,18 @@ REST API {linkto(../../../../networks/cdn#cdn)[text=CDN]} поддерживае
 
 {cut(Получение эндпоинта, авторизация и аутентификация)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если это еще не сделано.
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Включите]} доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **Доступ по API**.
 1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`. Используйте токен в заголовке при отправке запросов.
-1. Используйте эндпоинт `https://msk.cloud.vk.com/api/cdn/api/v1/` в строке запроса.
+1. Используйте эндпоинт `https://msk.cloud.vk.ru/api/cdn/api/v1/` в строке запроса.
 
 Пример запроса:
 
 ```curl
-curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547e5b222f/resources" \
+curl --location "https://msk.cloud.vk.ru/api/cdn/api/v1/projects/example4ef0547e5b222f/resources" \
 --header "X-Auth-Token: gAAAAABlcqk9GAzdp-XXXX"
 ```
 

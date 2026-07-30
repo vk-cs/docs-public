@@ -6,7 +6,7 @@
 {tab(Личный кабинет)}
 {/ifdef}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 {ifndef(public)}
 1. Убедитесь, что {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=квот]} достаточно для создания инстанса БД.
 {/ifndef}

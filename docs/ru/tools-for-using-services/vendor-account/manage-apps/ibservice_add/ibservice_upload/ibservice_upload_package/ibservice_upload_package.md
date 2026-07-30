@@ -70,7 +70,7 @@ Image-based брокер
    
    {tab(Кабинет поставщика)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. В разделе **Магазин приложений** нажмите кнопку **Перейти в кабинет поставщика**.
    1. На вкладке **Управление сервисами** нажмите кнопку **Добавить сервис**.
    1. Выберите zip-архив на своем устройстве для загрузки в систему.
@@ -87,7 +87,7 @@ Image-based брокер
    * Метод запроса: `POST`.
    * Путь запроса: `https://<CLOUD_HOST>/marketplace/api/infra-api/api/v1-public/product`
 
-      Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.com`.
+      Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.ru`.
    
    * Тело запроса: zip-архив.
    * `x-service-token`: `<SERVICE_TOKEN>` — сервисный ключ.
@@ -98,7 +98,7 @@ Image-based брокер
       {tab(Linux (bash))}
             
       ```console
-      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
+      curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/product \
       -H 'x-service-token: <SERVICE_TOKEN>' \
       -F "upload=@/home/VKservice.zip"
       ```
@@ -108,7 +108,7 @@ Image-based брокер
       {tab(Windows (cmd))}
       
       ```console
-      curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product ^
+      curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/product ^
       -H "x-service-token: <SERVICE_TOKEN>" ^
       -F "upload=@/home/VKservice.zip"
       ```
@@ -150,7 +150,7 @@ Image-based брокер
 
 {/note}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 1. Убедитесь, что мастер конфигурации каждого тарифного плана отображается корректно.
 1. Подключите сервис. Убедитесь, что развертывание инстанса сервиса выполнено успешно.
 
@@ -192,7 +192,7 @@ Image-based брокер
 
 ## {heading(Просмотр логов инстанса сервиса)[id=ibservice_upload_package_log]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Магазин приложений**.
 1. Откройте консоль и получите JWT-токен авторизации в магазине:
 
@@ -201,7 +201,7 @@ Image-based брокер
    {tab(Linux (bash))}
       
    ```console
-   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid \
+   curl -X POST https://cloud.vk.ru/marketplace/api/um/v1/tokens/sid \
    --cookie 'sid=<SID>'
    ```
 
@@ -210,7 +210,7 @@ Image-based брокер
    {tab(Windows (cmd))}
    
    ```console
-   curl -X POST https://cloud.vk.com/marketplace/api/um/v1/tokens/sid ^
+   curl -X POST https://cloud.vk.ru/marketplace/api/um/v1/tokens/sid ^
    --cookie "sid=<SID>"
    ```
 
@@ -228,7 +228,7 @@ Image-based брокер
    {tab(Linux (bash))}
       
    ```console
-   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
+   curl -v https://cloud.vk.ru/marketplace/api/notifications/api/v1/instance?uuid=<UUID> \
    -H 'Authorization: Bearer <JWT_TOKEN>'
    ```
 
@@ -237,7 +237,7 @@ Image-based брокер
    {tab(Windows (cmd))}
    
    ```console
-   curl -v https://cloud.vk.com/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
+   curl -v https://cloud.vk.ru/marketplace/api/notifications/api/v1/instance?uuid=<UUID> ^
    -H "Authorization: Bearer <JWT_TOKEN>"
    ```
 

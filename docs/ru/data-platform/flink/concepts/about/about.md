@@ -23,5 +23,5 @@ Cloud Flink — сервис для потоковой обработки и п�
 {ifdef(public)}
 Пользователь может управлять ресурсами Cloud Flink через личный кабинет VK Cloud, работа с кластерами Flink доступна через [Flink CLI](https://docs.kafka-ui.provectus.io/overview/readme).
 
-Для начала работы с сервисом Cloud Flink [оставьте заявку](https://cloud.vk.com/flink/) на подключение.
+Для начала работы с сервисом Cloud Flink [оставьте заявку](https://cloud.vk.ru/flink/) на подключение.
 {/ifdef}

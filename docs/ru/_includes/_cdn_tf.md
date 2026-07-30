@@ -5,14 +5,14 @@ resource "vkcs_cdn_origin_group" "origin_group" {
   name = "tfexample-origin-group"
   origins = [
     {
-      source = "origin1.vk.com"
+      source = "origin1.vk.ru"
     },
     {
-      source = "origin2.vk.com",
+      source = "origin2.vk.ru",
       backup = true
     },
     {
-      source = "origin3.vk.com",
+      source = "origin3.vk.ru",
       enabled = false
     }
   ]

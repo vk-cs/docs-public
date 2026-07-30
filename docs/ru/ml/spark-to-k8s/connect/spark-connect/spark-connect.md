@@ -4,7 +4,7 @@ Spark Connect позволяет удаленно подключиться к к
 
 ## {heading(Подготовительные шаги)[id=mlspark-connect-spark-connect-prerequirements]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. {linkto(../../instructions/create#mlspark-instructions-create)[text=Создайте]} кластер Spark, если это еще не сделано. Выберите **Тип виртуальной машины**, в котором не менее 6 CPU и 12 ГБ RAM.
 

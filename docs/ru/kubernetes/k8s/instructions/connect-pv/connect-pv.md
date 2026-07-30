@@ -51,7 +51,7 @@ kubectl get pvc | grep pvc-app
 
 ## {heading(Подключение NFS-хранилища с помощью Persistent Volume и Persistent Volume Claim)[id=k8s-connect-pv-connect-nfs]}
 
-Подключение NFS-хранилища с помощью Persistent Volume и Persistent Volume Claim приведено в [данной инструкции](https://cloud.vk.com/docs/kubernetes/k8s/use-cases/storage#podklyuchenie_faylovyh_hranilishch_c785fc).
+Подключение NFS-хранилища с помощью Persistent Volume и Persistent Volume Claim приведено в [данной инструкции](https://cloud.vk.ru/docs/kubernetes/k8s/use-cases/storage#podklyuchenie_faylovyh_hranilishch_c785fc).
 
 ## {heading(Динамическое выделение дисков с PVC)[id=k8s-connect-pv-dynamic]}
 

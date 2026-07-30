@@ -11,7 +11,7 @@
 В процессе тестирования потребуются:
 
 * Ключ для доступа к API. Ключ отображается в ЛК облачной платформы на странице настроек проекта (вкладка с информацией о доступе по API).
-* Доменное имя облачной платформы — `https://cloud.vk.com`.
+* Доменное имя облачной платформы — `https://cloud.vk.ru`.
 
 Чтобы протестировать манифест Terraform с системой развертывания:
 
@@ -77,7 +77,7 @@
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <AUTH_TOKEN>' \
 --data-binary "@deploy.tf"
 ```
@@ -87,7 +87,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <AUTH_TOKEN>" ^
 --data-binary "@deploy.tf"
 ```
@@ -162,7 +162,7 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes)[text=�
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -171,7 +171,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -259,7 +259,7 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_c
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object \
 -H "Content-Type: application/json" \
 -H 'x-auth-token: <AUTH_TOKEN>' \
 --data '{
@@ -279,7 +279,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object ^
 -H "Content-Type: application/json" ^
 -H "x-auth-token: <AUTH_TOKEN>" ^
 --data "{\"uuid\": \"675f6f08-XXXX-f02311f795d7\", \"config\": \"test_1.0\", \"vars\": {\"sub_network\": \"a793470c-XXXX-67af6c178c8e\", \"image_uuid\": \"163ff752-XXXX-b0001e3e65d3\", \"volume_type\": \"ceph-ssd\", \"flavor_uuid\": \"6e61564f-XXXX-08df5fd84514\"}}"
@@ -356,7 +356,7 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_c
 {tab(Linux (bash))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -365,7 +365,7 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -436,7 +436,7 @@ HTTP-коды ответа приведены в {linkto(#tab_http_codes_after_d
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -445,7 +445,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -563,7 +563,7 @@ HTTP-коды ответа  приведены в {linkto(#tab_http_codes_status
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -572,7 +572,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 

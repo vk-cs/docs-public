@@ -200,7 +200,7 @@ UserGate NGFW содержит все функции решений класса
 ```markdown
 # Техническая поддержка
 Услуга по технической поддержке UserGate NGFW приобретается вместе с лицензией на продукт. Поддержка осуществляется поставщиком на [Портале технической поддержки](https://support.usergate.com/ru) в соответствии с [Регламентом технической поддержки](https://support.usergate.com/ru/technical-support-regulations).
-По запросу [команда Professional Services](https://cloud.vk.com/professional-services/) {var(cloud)} осуществляет расширенную техническую поддержку UserGate NGFW.
+По запросу [команда Professional Services](https://cloud.vk.ru/professional-services/) {var(cloud)} осуществляет расширенную техническую поддержку UserGate NGFW.
 
 Команда {var(cloud)} осуществляет техническую поддержку по вопросам функционирования инфраструктуры {var(cloud)}. Информация об условиях оказания техподдержки и способах обращения находится на странице [Условия оказания поддержки](/ru/start/support/support-info).
 ```
@@ -221,7 +221,7 @@ UserGate NGFW содержит все функции решений класса
 ```markdown
 # Лицензионное соглашение
 Используя сервис UserGate NGFW, вы соглашаетесь с:
-- [Пользовательским соглашением магазина приложений](https://cloud.vk.com/docs/ru/start/legal/digital-cloud/marketplace).
+- [Пользовательским соглашением магазина приложений](https://cloud.vk.ru/docs/ru/start/legal/digital-cloud/marketplace).
 - [Лицензионным соглашением на использование UserGate NGFW](https://www.usergate.com/ru/usergate-eula).
 ```
 {/caption}

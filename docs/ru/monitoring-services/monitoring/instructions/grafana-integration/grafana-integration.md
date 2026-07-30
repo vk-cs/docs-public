@@ -6,7 +6,7 @@
 - в разделе **Мониторинг → Дашборды** личного кабинета, как описано в статье {linkto(../mon-setup-new#monitoring-mon-setup-new)[text=%text]};
 - с помощью сервиса Grafana.
 
-Чтобы использовать сервис Grafana, {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=разверните]} его из [Магазина приложений](https://msk.cloud.vk.com/app/services/marketplace) в вашем проекте.
+Чтобы использовать сервис Grafana, {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=разверните]} его из [Магазина приложений](https://msk.cloud.vk.ru/app/services/marketplace) в вашем проекте.
 
 При развертывании сервиса он будет автоматически интегрирован с Cloud Monitoring:
 

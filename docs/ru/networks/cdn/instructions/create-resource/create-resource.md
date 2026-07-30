@@ -12,7 +12,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Выберите проект, где нужно создать CDN-ресурс.
 1. Перейдите в раздел **CDN → CDN-ресурсы**.
 1. Нажмите кнопку **Создать ресурс**.
@@ -167,7 +167,7 @@
 Пример запроса:
 
 ```json
-curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources'\
+curl --location --request POST 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

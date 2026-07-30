@@ -72,7 +72,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Примеры)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: будет создан новый инстанс JupyterHub, идентификатор инстанса будет получен после создания ресурса `vkcs_mlplatform_jupyterhub`. Ресурс будет сформирован далее.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете {var(cloud)}](https://cloud.vk.com/app).
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете {var(cloud)}](https://cloud.vk.ru/app).
 
   {/cut}
 
@@ -192,7 +192,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Убедитесь, что инстанс MLflow был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс MLflow создан и активен.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=terraform-mlflow-delete]}

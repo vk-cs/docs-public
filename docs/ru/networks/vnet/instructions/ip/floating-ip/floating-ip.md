@@ -8,7 +8,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
@@ -40,7 +40,7 @@ Floating IP-адрес назначается из общего пула слу�
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
@@ -73,7 +73,7 @@ Floating IP-адрес назначается из общего пула слу�
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
@@ -103,7 +103,7 @@ Floating IP-адрес назначается из общего пула слу�
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
@@ -144,7 +144,7 @@ Floating IP-адрес назначается из общего пула слу�
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
@@ -173,7 +173,7 @@ Floating IP-адрес назначается из общего пула слу�
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}

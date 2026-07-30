@@ -16,7 +16,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API endpoints**.
 
@@ -129,7 +129,7 @@
 |Назначение
 
 |Trove
-|https://msk.cloud.vk.com/infra/database/v1.0/<project_id>
+|https://msk.cloud.vk.ru/infra/database/v1.0/<project_id>
 |Управление {linkto(../../../../dbs/dbaas#dbaas-dbaas)[text=базами данных]}
 
 |===
@@ -159,7 +159,7 @@
 |Назначение
 
 |Mlplatform
-|https://msk.cloud.vk.com/infra/mlplatform
+|https://msk.cloud.vk.ru/infra/mlplatform
 |Управление {linkto(../../../../ml/mlplatform#mlplatform)[text=Cloud ML Platform]}
 
 |===
@@ -211,7 +211,7 @@
 |===
 
 {note:info}
-В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.com/service-users/) — он позволяет управлять {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисными учетными записями]}.
+В личном кабинете не отражен эндпоинт Service Users (https://msk.cloud.vk.ru/service-users/) — он позволяет управлять {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисными учетными записями]}.
 {/note}
 
 {/cut}
@@ -228,7 +228,7 @@ Project ID не совпадает с {linkto(../../../account/instructions/proj
 
 Чтобы получить значение Project ID для проекта:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Откройте нужный проект, выбрав его из списка в шапке страницы личного кабинета.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Откройте вкладку **Доступ по API** или вкладку **Terraform**.

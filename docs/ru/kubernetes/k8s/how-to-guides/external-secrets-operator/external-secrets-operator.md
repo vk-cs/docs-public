@@ -49,7 +49,7 @@ External Secrets Operator доступен только для кластеро�
 
 ## {heading({counter(eso)}. Создайте SecretStore)[id=k8s-eso-store]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **Доступ по API** и скопируйте следующие значения:
 
@@ -82,8 +82,8 @@ External Secrets Operator доступен только для кластеро�
 
    - `<PROJECT_ID>`, `<USER_DOMAIN_NAME>` и `<USERNAME>` — значения, которые вы скопировали из настроек проекта. 
    - `<AUTH_URL>` — адрес в зависимости от {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]}:
-      - `https://msk.cloud.vk.com` для региона Москва;
-      - `https://kz.cloud.vk.com` для региона Казахстан.
+      - `https://msk.cloud.vk.ru` для региона Москва;
+      - `https://kz.cloud.vk.kz` для региона Казахстан.
 
 1. Примените созданный манифест в кластере:
 

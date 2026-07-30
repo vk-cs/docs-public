@@ -15,7 +15,7 @@ n8n — это платформа автоматизации процессов 
 
 ## {heading(1. Разверните n8n в проекте {var(cloud)})[id=marketplace-n8n-start-install]}
 
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Магазин приложений**, на странице раздела нажмите кнопку **Все решения**.
 1. Нажмите на карточку сервиса **n8n**.
 1. На странице с описанием сервиса нажмите кнопку **Подключить**.
@@ -94,7 +94,7 @@ n8n — это платформа автоматизации процессов 
 
 Если вы хотите изменить настройки доступа к сервису с определенных IP-адресов, отредактируйте правила групп безопасности:
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Виртуальные сети** → **Настройки firewall**.
 1. Нажмите на название группы безопасности инстанса вашего сервиса. Название будет иметь вид `8f9b4adf-n8n`, где `8f9b4adf` — первая часть {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-view)[text=идентификатор инстанса]}.
 1. {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=Добавьте новые правила]} в группу безопасности или {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-delete-rule)[text=удалите неактуальные]}. Если вы планируете использовать вебхуки, разрешите доступ для IP-адресов или диапазонов адресов внешних сервисов, которые будут отсылать запрос в n8n.

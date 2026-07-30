@@ -5,7 +5,7 @@
 ## {heading(Подготовительные шаги)[id=k8s-change-dns-prepare]}
 
 1. {linkto(/ru/tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=Установите OpenStack CLI и пройдите аутентификацию]}, если это еще не сделано.
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Нажмите на имя кластера, для которого нужно изменить DNS-настройки.
 1. На вкладке **Общие данные** узнайте имя сети и подсети, в которой расположен кластер.

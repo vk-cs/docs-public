@@ -165,7 +165,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
 
 {include(../../../_includes/_data_p.md)[tags=instance_extensions]}
@@ -181,7 +181,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.

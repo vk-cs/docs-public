@@ -2,7 +2,7 @@
 {ifdef(public)}
 ## {heading(Редактирование профиля пользователя)[id=account-manage-editinfo-profile]}
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт {var(cloud)}.
 1. Перейдите в раздел **Личная информация**.
    {/ifdef}
 
@@ -27,7 +27,7 @@
 {ifdef(public)}
 ## {heading(Смена пароля)[id=account-manage-editinfo-password]}
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт {var(cloud)}.
 1. Перейдите в раздел **Безопасность**.
 1. Нажмите на значок ![pencil-icon](../../../../../assets/pencil-icon.svg "inline"), чтобы отредактировать пароль.
 1. Заполните поля:

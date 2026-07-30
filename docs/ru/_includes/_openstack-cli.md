@@ -219,7 +219,7 @@ $ pip install python-cinderclient
 {/includetag}
 
 {includetag(openstack-authorize)}
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
    {ifdef(public)}
 1. Убедитесь, что {linkto(../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../api/rest-api/enable-api#rest-api-enable-activate)[text=активирован]} доступ по API.
    {/ifdef}

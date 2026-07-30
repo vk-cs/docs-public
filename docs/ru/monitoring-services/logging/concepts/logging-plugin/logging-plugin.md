@@ -19,12 +19,12 @@
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Эндпоинт сервиса Keystone
-| Параметр Auth URL в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}
+| Параметр Auth URL в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}
 
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Идентификатор проекта {var(cloud)}, в который будут записываться логи
-| Параметр Project ID в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}.
+| Параметр Project ID в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}.
 
 Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
@@ -33,17 +33,17 @@
 | `user_id`
 | ![](../../../../assets/no.svg "inline")
 | ID пользователя, от имени которого будут записываться логи
-| Создается в личном кабинете {var(cloud)} на вкладке {ifdef(public)}[Генерация учетных данных](https://msk.cloud.vk.com/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}Генерация учетных данных{/ifndef}
+| Создается в личном кабинете {var(cloud)} на вкладке {ifdef(public)}[Генерация учетных данных](https://msk.cloud.vk.ru/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}Генерация учетных данных{/ifndef}
 
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логин пользователя, от имени которого будут записываться логи
-| Параметр Username в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}
+| Параметр Username в {ifdef(public)}[личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys){/ifdef}{ifndef(public)}личном кабинете {var(cloud)}{/ifndef}
 
 | `password`
 | ![](../../../../assets/no.svg "inline")
 | Пароль пользователя, от имени которого будут записываться логи
-| Для `user_id` пароль создается в личном кабинете {var(cloud)} на вкладке {ifdef(public)}[Генерация учетных данных](https://msk.cloud.vk.com/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}Генерация учетных данных{/ifndef}.
+| Для `user_id` пароль создается в личном кабинете {var(cloud)} на вкладке {ifdef(public)}[Генерация учетных данных](https://msk.cloud.vk.ru/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}Генерация учетных данных{/ifndef}.
 
 Для `user_name` используется пароль для входа в личный кабинет {var(cloud)}
 
@@ -103,7 +103,7 @@
 
 Если не указан, будет присвоено значение `default`.
 
-Если необходимо, создайте собственные идентификаторы через {ifdef(public)}[техническую поддержку](/ru/contacts){/ifdef}{ifndef(public)}техническую поддержку{/ifndef} или самостоятельно {ifdef(public)}[на вкладке](https://msk.cloud.vk.com/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}на вкладке{/ifndef} **Прочие ресурсы** в настройках раздела **Мониторинг → Логирование**
+Если необходимо, создайте собственные идентификаторы через {ifdef(public)}[техническую поддержку](/ru/contacts){/ifdef}{ifndef(public)}техническую поддержку{/ifndef} или самостоятельно {ifdef(public)}[на вкладке](https://msk.cloud.vk.ru/app/services/monitoring/logging/settings){/ifdef}{ifndef(public)}на вкладке{/ifndef} **Прочие ресурсы** в настройках раздела **Мониторинг → Логирование**
 
 | `group_id`
 | ![](../../../../assets/no.svg "inline")

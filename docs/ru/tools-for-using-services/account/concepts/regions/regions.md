@@ -27,7 +27,7 @@
 `ME1`
 
 `PA2`
-| https://cloud.vk.com
+| https://cloud.vk.ru
 | Рубли
 
 | Казахстан
@@ -36,7 +36,7 @@
 `KTP`
 | https://vkcloud.kz
 
-https://kz.cloud.vk.com
+https://kz.cloud.vk.kz
 | Тенге
 
 |===

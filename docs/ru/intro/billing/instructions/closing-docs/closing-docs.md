@@ -2,7 +2,7 @@
 
 Если вы работаете по {linkto(/ru/intro/billing/concepts/physical-corporate#billing-physical-corporate-postpay)[text=постоплате]}, вы можете скачать закрывающие документы — счета на оплату и универсальные передаточные документы (УПД) — в личном кабинете {var(cloud)}.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 
 {include(/ru/_includes/_balance_page.md)}
 

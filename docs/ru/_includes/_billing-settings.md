@@ -3,15 +3,15 @@
 
 1. Изучите стоимость сервисов {var(cloud)}:
 
-   1. Ознакомьтесь с [прайс-листом](https://cloud.vk.com/pricelist/).
+   1. Ознакомьтесь с [прайс-листом](https://cloud.vk.ru/pricelist/).
    1. Изучите статьи об особенностях оплаты для нужных вам сервисов. Подобные статьи называются «Тарификация» и лежат в документации искомого сервиса. Например, {linkto(/ru/computing/iaas/tariffication#iaas-tariffication)[text=статья о тарификации]} для сервиса Cloud Servers.
-   1. Воспользуйтесь [калькулятором](https://cloud.vk.com/pricing) для расчета стоимости нужной вам конфигурации.
+   1. Воспользуйтесь [калькулятором](https://cloud.vk.ru/pricing) для расчета стоимости нужной вам конфигурации.
 
 1. Ознакомьтесь со списком {linkto(/ru/intro/billing/concepts/report#billing-report)[text=отчетных документов]}, которые платформа предоставляет физическим и юридическим лицам.
 
 ## {counter(billing)}. Проверьте баланс проекта
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
 
    На странице отобразится баланс лицевого счета и бонусный баланс проекта.
@@ -31,7 +31,7 @@
 {/includetag}
 
    {includetag(not_billing_onboarding)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
    {/includetag}
    {includetag(billing_onboarding)}
@@ -42,7 +42,7 @@
 {tab(Организациям и предпринимателям)}
 {/includetag}
    {includetag(not_billing_onboarding)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Баланс и платежи**.
    {/includetag}
    {includetag(billing_onboarding)}
@@ -73,7 +73,7 @@
 
 Чтобы настроить для проекта ограничение расходов и отправку уведомлений:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 
 {include(/ru/_includes/_balance_page.md)}
 

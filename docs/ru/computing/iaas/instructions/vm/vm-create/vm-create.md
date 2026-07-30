@@ -2,7 +2,7 @@
 
 В Cloud Servers можно создавать виртуальные машины через личный кабинет, OpenStack CLI или Terraform. Для создания виртуальной машины с помощью Terraform воспользуйтесь {ifdef(public)}{linkto(../../../../../tools-for-using-services/terraform/how-to-guides/iaas/create#terraform-iaas-create)[text=инструкцией в разделе Terraform]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/terraform/how-to-guides/iaas/create-private#terraform-iaas-create-private)[text=инструкцией в разделе Terraform]}{/ifdef}.
 
-Командой {var(cloud)} подготовлены образы некоторых ОС. Список готовых образов доступен в личном кабинете в {ifdef(public)}[окне создания новой виртуальной машины](https://msk.cloud.vk.com/app/services/infra/servers/add){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}окне создания новой виртуальной машины{/ifdef}. Также вы можете {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировать образ]} ОС самостоятельно.
+Командой {var(cloud)} подготовлены образы некоторых ОС. Список готовых образов доступен в личном кабинете в {ifdef(public)}[окне создания новой виртуальной машины](https://msk.cloud.vk.ru/app/services/infra/servers/add){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}окне создания новой виртуальной машины{/ifdef}. Также вы можете {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировать образ]} ОС самостоятельно.
 
 {note:info}
 Доступные для настройки параметры ВМ могут отличаться для разных операционных систем.
@@ -14,7 +14,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Проверьте, что баланс счета положителен и {ifdef(public)}{linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квот]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=квот]}{/ifdef} достаточно для создания желаемой конфигурации виртуальной машины.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите кнопку **Создать инстанс** или **Добавить**.

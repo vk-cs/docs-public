@@ -2,7 +2,7 @@
 
 ## {heading(Получение эндпоинта)[id=api-spec-s3-intro-endpoint]}
 
-В [личном кабинете](https://msk.cloud.vk.com/app/project/endpoints) уточните нужный эндпоинт в блоке **Объектное хранилище S3**.
+В [личном кабинете](https://msk.cloud.vk.ru/app/project/endpoints) уточните нужный эндпоинт в блоке **Объектное хранилище S3**.
 
 ## {heading(Авторизация и аутентификация)[id=api-spec-s3-intro-auth]}
 

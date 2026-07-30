@@ -21,7 +21,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы.
 1. Из выпадающего списка выберите **Журнал событий**.
 1. Нажмите кнопку **Скачать**.
@@ -38,7 +38,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы.
 1. Из выпадающего списка выберите **Журнал событий**.
 1. (Опционально) Укажите временной диапазон:
@@ -55,7 +55,7 @@
 
 1. [Включите](/ru/access/iam/instructions/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
-1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
+1. [Узнайте](https://msk.cloud.vk.ru/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:
 
    ```console

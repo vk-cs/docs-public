@@ -4,7 +4,7 @@
 
 {cut(Изменится ли стоимость услуг в 2026 году?)}
 
-12 января 2026 года начнет действовать новый прайс-лист. Подробности об изменениях будут в рассылке и [блоге {var(cloud)}](https://cloud.vk.com/blog/).
+12 января 2026 года начнет действовать новый прайс-лист. Подробности об изменениях будут в рассылке и [блоге {var(cloud)}](https://cloud.vk.ru/blog/).
 
 {/cut}
 
@@ -26,7 +26,7 @@
 
 {tab(Физические лица)}
 
-Бонусы для новых пользователей начисляются при соблюдении [условий](https://cloud.vk.com/bonus/) акции. Если бонус не был начислен автоматически, [обратитесь в техническую поддержку](/ru/contacts)
+Бонусы для новых пользователей начисляются при соблюдении [условий](https://cloud.vk.ru/bonus/) акции. Если бонус не был начислен автоматически, [обратитесь в техническую поддержку](/ru/contacts)
 
 {/tab}
 
@@ -50,7 +50,7 @@
 
 {cut(Что делать, если я не получил бонусы за миграцию в {var(cloud)}, тестирование ее производительности или участие в других акциях?)}
 
-Если вы не получили {linkto(../concepts/balance#billing-balance-bonuses)[text=бонусы]}, обратитесь к вашему персональному менеджеру {var(cloud)} или создайте запрос через [форму обратной связи](https://cloud.vk.com/form/).
+Если вы не получили {linkto(../concepts/balance#billing-balance-bonuses)[text=бонусы]}, обратитесь к вашему персональному менеджеру {var(cloud)} или создайте запрос через [форму обратной связи](https://cloud.vk.ru/form/).
 
 {/cut}
 
@@ -234,7 +234,7 @@
 
 {cut(Почему с банковской карты списались денежные средства, когда услуги не заказывались?)}
 
-Проверьте детализацию расходов в личном кабинете на [странице баланса](https://msk.cloud.vk.com/app/services/billing) проекта.
+Проверьте детализацию расходов в личном кабинете на [странице баланса](https://msk.cloud.vk.ru/app/services/billing) проекта.
 
 Если причина списания останется неясной, [обратитесь в техническую поддержку](/ru/contacts). Мы проанализируем списания, поможем сделать возврат платежа и отвязать банковскую карту при необходимости.
 
@@ -317,7 +317,7 @@
 
 Чтобы восстановить работу сервисов:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. {linkto(../instructions/payment#billing-payment-balance-charge)[text=Пополните]} лицевой счет проекта {linkto(../concepts/payment-methods#billing-payment-methods)[text=удобным способом]}. Чтобы средства быстрее поступили на баланс лицевого счета, используйте физические банковские карты. С них средства зачисляются сразу, а при оплате банковским переводом процесс может занять до 3 рабочих дней.
 1. Дождитесь активации сервисов в проекте. Она может занять до 15 минут с момента зачисления средств.
 1. Вручную активируйте ресурсы проекта:
@@ -377,8 +377,8 @@
 
 При помощи {var(cloud)} вы можете работать с инфраструктурой сервисов, которая физически развернута:
 
-- На территории России — {linkto(../../../intro/onboarding/account#onboarding-account)[text=зарегистрируйте]} учетную запись в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва по адресу https://cloud.vk.com.
-- На территории Казахстана — {linkto(../../../intro/onboarding/account#onboarding-account)[text=зарегистрируйте]} учетную запись в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Казахстан по адресу https://vkcloud.kz или https://kz.cloud.vk.com/.
+- На территории России — {linkto(../../../intro/onboarding/account#onboarding-account)[text=зарегистрируйте]} учетную запись в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва по адресу https://cloud.vk.ru.
+- На территории Казахстана — {linkto(../../../intro/onboarding/account#onboarding-account)[text=зарегистрируйте]} учетную запись в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Казахстан по адресу https://vkcloud.kz или https://kz.cloud.vk.kz/.
 
 В каждом регионе для нерезидентов РФ есть свои особенности работы:
 
@@ -452,7 +452,7 @@
 
 {tab(Москва)}
 
-Если ваш проект в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва и вы работаете с ООО «ВК», его основные реквизиты доступны по адресу https://cloud.vk.com/contacts.
+Если ваш проект в {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=регионе]} Москва и вы работаете с ООО «ВК», его основные реквизиты доступны по адресу https://cloud.vk.ru/contacts.
 
 Если вы работаете с {var(cloud)} по предоплате, можно {linkto(../instructions/bill-generation#billing-bill-generation)[text=сформировать счет]} в личном кабинете и посмотреть содержимое поля **Поставщик**.
 

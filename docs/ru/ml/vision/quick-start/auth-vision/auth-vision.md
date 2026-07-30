@@ -15,7 +15,7 @@
 
 ## {heading(Получение OAuth-токенов)[id=vision-quick-start-auth-vision-get-oauth-token]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 2. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects).
 3. Перейдите в раздел **AI API** → **Vision API**. Откроется страница с информацией, необходимой для получения токенов:
    - **OAuth endpoint**: адрес для запросов на получение OAuth-токенов;
@@ -62,7 +62,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ## {heading(Получение сервисного токена)[id=vision-quick-start-auth-vision-get-service-token]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 2. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects).
 3. Перейдите в раздел **AI API** → **Vision API**.
 4. Нажмите **Добавить сервисный токен**.

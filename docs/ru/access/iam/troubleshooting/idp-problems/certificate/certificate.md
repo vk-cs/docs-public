@@ -11,7 +11,7 @@ Forbidden: received invalid saml response: cannot validate signature on Assertio
 
 Загрузите метаданные IdP для федерации заново:
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений** на вкладку **Федерации**.
 1. Нажмите кнопку **Загрузить метаданные IdP** и добавьте XML-файл с метаданными поставщика удостоверений.
 1. Нажмите кнопку **Загрузить**.

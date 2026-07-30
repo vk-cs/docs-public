@@ -1,4 +1,4 @@
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет
    {var(cloud)}.
 1. В шапке личного кабинета нажмите на имя проекта.
 

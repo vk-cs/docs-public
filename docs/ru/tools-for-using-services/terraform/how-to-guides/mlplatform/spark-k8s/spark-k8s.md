@@ -100,7 +100,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: будет создан новый реестр Docker и размещен на выделенной виртуальной машине K8S Docker Registry, которая не входит в состав кластера и тарифицируется отдельно. Идентификатор будет получен после создания ресурса `vkcs_mlplatform_k8s_registry`. Ресурс будет сформирован далее.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего реестра K8S Docker Registry. Чтобы узнать идентификатор инстанса K8S Docker Registry:
   
-    1. [Перейдите](https://cloud.vk.com/app) в личный кабинет {var(cloud)}.
+    1. [Перейдите](https://cloud.vk.ru/app) в личный кабинет {var(cloud)}.
     1. Выберите проект, где нужно создать кластер.
     1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
     1. Перейдите на вкладку **Инстансы**.
@@ -273,7 +273,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Убедитесь, что кластер Spark был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что кластер Spark создан и активен.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=terraform-spark-k8s-delete]}

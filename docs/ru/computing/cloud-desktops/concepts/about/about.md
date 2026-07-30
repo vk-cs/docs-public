@@ -21,7 +21,7 @@
 
 - Администратор.
 
-  Управляет сервисом через {ifdef(public)}[личный кабинет](https://msk.cloud.vk.com/app){/ifdef}{ifdef(private-pdf,private-pg-pdf,private,private-pg)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=личный кабинет]}{/ifdef} {var(cloud)}. {linkto(../../../../computing/cloud-desktops/instructions/config#desktops-config)[text=Настраивает]} сети для инфраструктуры сервиса и пулов рабочих столов, интеграцию со службой каталогов и двухфакторную аутентификацию. {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-add)[text=Создает пулы]} рабочих столов и назначает их группам пользователей из сервиса каталогов.
+  Управляет сервисом через {ifdef(public)}[личный кабинет](https://msk.cloud.vk.ru/app){/ifdef}{ifdef(private-pdf,private-pg-pdf,private,private-pg)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=личный кабинет]}{/ifdef} {var(cloud)}. {linkto(../../../../computing/cloud-desktops/instructions/config#desktops-config)[text=Настраивает]} сети для инфраструктуры сервиса и пулов рабочих столов, интеграцию со службой каталогов и двухфакторную аутентификацию. {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-add)[text=Создает пулы]} рабочих столов и назначает их группам пользователей из сервиса каталогов.
 
 - Пользователь.
 

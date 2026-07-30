@@ -11,13 +11,13 @@
 
    Подготовить образ можно любым удобным способом, например, воспользовавшись одним из {linkto(../../../../../computing/iaas/how-to-guides#iaas-how-to-guides)[text=практических руководств]}.
 
-1. Если вам нужны рабочие столы с графическими процессорами GPU, {ifdef(private,private-pg,private-pdf,private-pg-pdf)}обратитесь к администратору {var(cloud)}.{/ifdef}{ifdef(public)}оставьте заявку на подключение нужного шаблона конфигурации на [сайте VK Cloud](https://cloud.vk.com/cloud-gpu) или через [техническую поддержку](/ru/contacts):
+1. Если вам нужны рабочие столы с графическими процессорами GPU, {ifdef(private,private-pg,private-pdf,private-pg-pdf)}обратитесь к администратору {var(cloud)}.{/ifdef}{ifdef(public)}оставьте заявку на подключение нужного шаблона конфигурации на [сайте VK Cloud](https://cloud.vk.ru/cloud-gpu) или через [техническую поддержку](/ru/contacts):
 
    {include(/ru/_includes/_gpu_connect.md)}{/ifdef}
 
 1. Если ранее при {linkto(../../../../../computing/cloud-desktops/instructions/config/setup-net#desktops-setup-net)[text=настройке сети]} для инфраструктуры сервиса вы выбрали {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-manual)[text=ручной режим]}, подготовьте сеть для пула рабочих столов:
 
-   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
    1. Перейдите в раздел **Виртуальные сети** → **Сети**.
    1. Нажмите на имя нужной сети. Если сети еще нет, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=создайте]} ее.
    1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной подсети и выберите пункт **Редактировать подсеть**. Если нужной подсети еще нет, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=создайте]} ее с учетом {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=требований к количеству портов]}.
@@ -29,7 +29,7 @@
 
 ## {heading(1. Запустите мастер создания пула)[id=desktops-pool-launch-master]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Пулы рабочих столов**.
 1. Нажмите кнопку **Добавить**.
 
