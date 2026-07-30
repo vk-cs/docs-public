@@ -12,8 +12,8 @@ export const config = {
         ],
         locales: ['ru'],
         defaultLocale: 'ru',
-        logoLink: 'https://cloud.vk.com',
-        canonicalBaseUrl: 'https://cloud.vk.com/docs',
+        logoLink: 'https://cloud.vk.ru',
+        canonicalBaseUrl: 'https://cloud.vk.ru/docs',
     },
     trackers: [
         {
@@ -64,7 +64,7 @@ export const config = {
         points: ['private'],
     },
     helpmate: {
-        apiUrl: 'https://cloud.vk.com/helpmate/widget/api',
+        apiUrl: 'https://cloud.vk.ru/helpmate/widget/api',
         consumerAlias: 'd11n_cloud_public',
     },
     plugins: {
@@ -76,7 +76,7 @@ export const config = {
             ru: [
                 {
                     title: 'On-Cloud',
-                    fullLink: 'https://cloud.vk.com/docs',
+                    fullLink: 'https://cloud.vk.ru/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
                 },
@@ -89,7 +89,7 @@ export const config = {
             en: [
                 {
                     title: 'On-Cloud',
-                    fullLink: 'https://cloud.vk.com/docs',
+                    fullLink: 'https://cloud.vk.ru/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
                 },
@@ -119,7 +119,7 @@ export const config = {
                 },
                 {
                     title: 'Сайт VK Cloud',
-                    absoluteLink: 'https://cloud.vk.com/',
+                    absoluteLink: 'https://cloud.vk.ru/',
                     iconPartialPath: '/ru/assets/web-site.svg',
                 },
             ]
@@ -141,7 +141,7 @@ export const config = {
     },
     contentSecurityPolicy: {
         connectSrc: [
-            'https://cloud.vk.com',
+            'https://cloud.vk.ru',
             'https://mcstest.mail.ru',
             'https://satori.devint.vkc.devmail.ru',
         ],

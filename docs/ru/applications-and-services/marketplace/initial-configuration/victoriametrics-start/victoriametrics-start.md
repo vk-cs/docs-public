@@ -1,6 +1,6 @@
 # {heading(Развертывание VictoriaMetrics)[id=marketplace-victoriametrics-start]}
 
-Вы можете собирать, хранить и анализировать метрики в базе данных временных рядов (time series database) с помощью сервиса [VictoriaMetrics](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info).
+Вы можете собирать, хранить и анализировать метрики в базе данных временных рядов (time series database) с помощью сервиса [VictoriaMetrics](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info).
 
 Инструкция поможет развернуть сервис VictoriaMetrics (на примере версии 1.93.9) на ВМ в {var(cloud)} и настроить сбор метрик.
 

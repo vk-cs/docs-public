@@ -8,7 +8,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы.
 1. Из выпадающего списка выберите **Управление доступами**.
 
@@ -24,7 +24,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Управление доступами**.
 1. На странице управления доступами перейдите на вкладку **Роли**.
 
@@ -42,7 +42,7 @@
 
 Из соображений безопасности вы можете сделать двухфакторную аутентификацию (2FA) обязательной для участников проекта:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. {linkto(../manage-2fa#iam-manage-2fa)[text=Включите]} 2FA для своего аккаунта, если она еще не включена.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Управление доступами**.
 1. На странице управления доступами включите опцию **Обязательная двухфакторная аутентификация**.
@@ -81,7 +81,7 @@
 
 Это групповая операция: при необходимости можно удалить сразу нескольких участников, выбрав их с помощью флажков.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Управление доступами**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного участника проекта и выберите пункт **Удалить**.
 1. Подтвердите удаление.

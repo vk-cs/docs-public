@@ -10,7 +10,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **1С:Готовое рабочее место** → **Приложения**.
 
 {include(/ru/_includes/_1c_app.md)[tags=1c_app_transition]}
@@ -39,7 +39,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **1С:Готовое рабочее место** → **Приложения**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного приложения и выберите пункт **Редактировать**.
 1. Измените количество лицензий в зависимости от {linkto(../../../../applications-and-services/1cgrm/concepts/about#1cgrm-modes)[text=режима работы]} с приложением 1С:

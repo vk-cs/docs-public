@@ -6,7 +6,7 @@
 
 ## {heading(1. Создайте инстанс JupyterHub)[id=mlplatform-jupyterhub-instructions-quickstart-1_create-instance]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform**.
 1. Нажмите кнопку **Создать инстанс** в карточке **JupyterHub**.
 1. На шаге **Конфигурация** задайте пароль для администратора инстанса. Сохраните имя пользователя и пароль.

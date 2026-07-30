@@ -11,7 +11,7 @@ API Endpoint — это «точки входа», URL, по которому п
 
 ## {heading(Доступ через идентификатор клиента и секретный ключ)[id=vision-quick-start-auth-vision-connect-ip-secret-access]}
 
-Для управления доступом через идентификатор клиента и секретный ключ на [странице Vision API](https://msk.cloud.vk.com/app/services/machinelearning/vision/access/) отображается нужная информация. Идентификатор клиента уже сгенерирован и замене не подлежит, а ключ можно перевыпустить соответствующей кнопкой.
+Для управления доступом через идентификатор клиента и секретный ключ на [странице Vision API](https://msk.cloud.vk.ru/app/services/machinelearning/vision/access/) отображается нужная информация. Идентификатор клиента уже сгенерирован и замене не подлежит, а ключ можно перевыпустить соответствующей кнопкой.
 
 ## {heading(Доступ через сервисный токен)[id=vision-quick-start-auth-vision-connect-service-token-access]}
 

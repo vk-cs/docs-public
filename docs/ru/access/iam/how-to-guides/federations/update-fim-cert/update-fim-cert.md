@@ -4,7 +4,7 @@
 
 ## {heading(Ручное обновление сертификата)[id=iam-update-fim-cert-manual]}
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
 1. Перейдите на вкладку **Федерации**.
 1. Нажмите кнопку **Скачать метаданные**.
@@ -27,7 +27,7 @@
 
 1. Получите ID вашей федерации удостоверений:
 
-   1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
+   1. [Перейдите](https://cloud.vk.ru/account) в аккаунт VK Cloud.
    1. Перейдите в раздел **Федерация удостоверений**.
    1. Перейдите на вкладку **Федерации**.
    1. Скопируйте значение параметра **ID федерации**.
@@ -36,7 +36,7 @@
 1. В поле **Relying party's federation metadata URL** вставьте URL для обновления метаданных: 
 
     ```text
-   https://msk.cloud.vk.com/federation-service/v1/federation/saml/<FEDERATION_ID>/metadata
+   https://msk.cloud.vk.ru/federation-service/v1/federation/saml/<FEDERATION_ID>/metadata
    ```
    
    Здесь `<FEDERATION_ID>` — значение параметра **ID федерации** раздела **Федерация удостоверений** в аккаунте VK Cloud.

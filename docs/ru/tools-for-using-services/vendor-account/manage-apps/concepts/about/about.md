@@ -255,7 +255,7 @@ Push-модель — способ получения метрик по факт
 |
 `https://<CLOUD_HOST>/marketplace/api/infra-api/api/v1-public/usages`
 
-Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.com`
+Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.ru`
 
 |
 `Content-Type`
@@ -302,7 +302,7 @@ Push-модель — способ получения метрик по факт
 
 {caption(Пример запроса на передачу метрик магазину)[align=left;position=above]}
 ```console
-$ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/usages \
+$ curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/usages \
 -H "Content-Type: application/json" \
 -H 'x-service-token: <SERVICE_TOKEN_USAGES>' \
 --data '{

@@ -1,5 +1,5 @@
 {includetag(detail-all)}
-Все списания и поступления по проектам фиксируются в личном кабинете {var(cloud)} на {ifdef(public)}[странице баланса](https://msk.cloud.vk.com/app/services/billing){/ifdef}{ifndef(public)}странице баланса{/ifndef} проекта.
+Все списания и поступления по проектам фиксируются в личном кабинете {var(cloud)} на {ifdef(public)}[странице баланса](https://msk.cloud.vk.ru/app/services/billing){/ifdef}{ifndef(public)}странице баланса{/ifndef} проекта.
 
 {ifdef(public)}
 Детализация расходов доступна пользователям, чья {linkto(../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль]} в проекте — владелец, суперадминистратор, администратор проекта или администратор биллинга.
@@ -14,7 +14,7 @@
 ## {heading(Просмотр списаний и поступлений)[id=includes-detail-debits-receipts-view]}
 {/includetag}
 {includetag(file-billing-detail)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(file-account-detail)}
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
@@ -49,7 +49,7 @@
 {/includetag}
 
 {includetag(file-billing-detail)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(file-account-detail)}
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
@@ -77,7 +77,7 @@
 {/includetag}
 
 {includetag(file-billing-detail)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    {/includetag}
    {includetag(file-account-detail)}
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.

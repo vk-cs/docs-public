@@ -4,7 +4,7 @@
 
 Вы можете визуализировать метрики ресурсов, создав график с помощью конструктора параметров или прямых запросов на языке PromQL. 
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. Нажмите кнопку **Создать график**.
@@ -75,7 +75,7 @@
 
 Вы можете изменять настройки графиков, просматривать их в детальном режиме или удалять.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. Откройте раздел с нужным графиком одним из способов:
@@ -97,7 +97,7 @@
 
 ### {heading(Создание раздела)[id=monitoring-create-section]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. Нажмите кнопку **Создать раздел**.
@@ -107,7 +107,7 @@
 
 ### {heading(Настройка и удаление раздела)[id=monitoring-manage-section]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. В заголовке нужного раздела нажмите на значок ![ ](../../../../assets/more-icon.svg "inline").
@@ -127,7 +127,7 @@
 
 Чтобы скрыть график:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. Откройте раздел с нужным графиком одним из способов:
@@ -140,7 +140,7 @@
 
 Чтобы отобразить график в превью:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Дашборды**.
 1. Перейдите на вкладку **Мои графики**.
 1. Откройте раздел с нужным графиком, нажав кнопку **Перейти в раздел**.

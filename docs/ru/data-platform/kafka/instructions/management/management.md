@@ -11,7 +11,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
@@ -100,7 +100,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
@@ -160,7 +160,7 @@
 {tab(Личный кабинет)}
 
 {ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 {/ifdef}
    
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.

@@ -283,7 +283,7 @@ resource "vkcs_db_user" "postgres_user" {
 
 Убедитесь, что кластер Spark был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**. Убедитесь, что кластер Spark создан и активен.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=terraform-spark-delete]}

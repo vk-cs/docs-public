@@ -14,7 +14,7 @@
 {tab(Личный кабинет)}
 {/ifdef}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Добавить группу узлов**.
 {ifdef(public)}
@@ -112,7 +112,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Найдите нужный кластер и группу узлов в нем.
@@ -215,7 +215,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Найдите нужный кластер и группу узлов в нем.
@@ -285,7 +285,7 @@
 {tab(Личный кабинет)}
 {/ifdef}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Найдите нужный кластер и группу узлов в нем.

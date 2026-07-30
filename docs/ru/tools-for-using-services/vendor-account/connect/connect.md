@@ -1,4 +1,4 @@
-Чтобы иметь возможность добавлять приложения в [Marketplace](https://cloud.vk.com/docs/ru/applications-and-services/marketplace):
+Чтобы иметь возможность добавлять приложения в [Marketplace](https://cloud.vk.ru/docs/ru/applications-and-services/marketplace):
 
 1. [Зарегистрируйте](/ru/intro/onboarding/account) в {var(cloud)} пользователя, который будет загружать ваше приложение в Marketplace, если это еще не сделано.
 

@@ -33,7 +33,7 @@
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Эндпоинт сервиса Keystone
-| Параметр Auth URL в [личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys)
+| Параметр Auth URL в [личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys)
 
 | `auth_timeout`
 | ![](../../../../assets/no.svg "inline")
@@ -45,7 +45,7 @@
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Идентификатор проекта {var(cloud)}, в который будут записываться логи
-| Параметр Project ID в [личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys).
+| Параметр Project ID в [личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys).
 
 Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
@@ -59,7 +59,7 @@
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логин пользователя, от имени которого будут записываться логи
-| Параметр Username в [личном кабинете {var(cloud)}](https://msk.cloud.vk.com/app/any/project/keys)
+| Параметр Username в [личном кабинете {var(cloud)}](https://msk.cloud.vk.ru/app/any/project/keys)
 
 | `password`
 | ![](../../../../assets/no.svg "inline")
@@ -91,8 +91,8 @@
 | ![](../../../../assets/check.svg "inline")
 | Эндпоинт API для получения данных аудита:
 
-- `https://msk.cloud.vk.com/audit/c2s` — для региона Москва;
-- `https://kz.cloud.vk.com/audit/c2s` — для региона Казахстан
+- `https://msk.cloud.vk.ru/audit/c2s` — для региона Москва;
+- `https://kz.cloud.vk.kz/audit/c2s` — для региона Казахстан
 
 | `source_id`
 | ![](../../../../assets/check.svg "inline")

@@ -56,7 +56,7 @@
 
 Чтобы изучить процесс подключения дисков LL NVMe к worker-узлам, запустите тестовое приложение `coffee`.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. {linkto(../../instructions/manage-node-group#k8s-manage-node-group-labels-taints)[text=Добавьте]} метку `disktype: ef-nvme` для ранее созданной группы узлов, чтобы обеспечить размещение пода на узлах с дисками LL NVMe:
 
    - **Key**: `disktype`.

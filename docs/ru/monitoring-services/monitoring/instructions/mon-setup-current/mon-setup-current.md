@@ -2,7 +2,7 @@
 
 Чтобы настроить мониторинг на существующей виртуальной машине:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте страницу ВМ, нажав на ее имя в общем списке.
 1. На вкладке **Общая информация** под основной информацией о ВМ перейдите на вкладку **Настройка мониторинга**.

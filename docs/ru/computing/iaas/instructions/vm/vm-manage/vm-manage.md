@@ -1,6 +1,6 @@
 # {heading(Управление ВМ)[id=iaas-vm-manage]}
 
-Изменить параметры и состояние виртуальной машины в {var(cloud)} можно в {ifdef(public)}[личном кабинете](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}личном кабинете{/ifdef} или с помощью интерфейса командной строки OpenStack CLI.
+Изменить параметры и состояние виртуальной машины в {var(cloud)} можно в {ifdef(public)}[личном кабинете](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}личном кабинете{/ifdef} или с помощью интерфейса командной строки OpenStack CLI.
 
 ## {heading(Получение ID виртуальной машины)[id=iaas-vm-manage-id-get]}
 
@@ -10,7 +10,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. В списке ВМ нажмите на имя виртуальной машины, идентификатор которой нужно узнать.
 1. На вкладке **Общая информация** найдите в таблице строку **ID виртуальной машины**.
@@ -44,7 +44,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Измените состояние ВМ одним из способов.
 
@@ -107,7 +107,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Вызовите принудительный перезапуск ВМ одним из способов.
 
@@ -149,7 +149,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Заблокируйте или разблокируйте ВМ одним из способов.
 
@@ -203,7 +203,7 @@
 
    {tab(Личный кабинет)}
       
-   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
    1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
    1. Удалите ВМ одним из способов.
 
@@ -252,7 +252,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Измените название или тип ВМ одним из способов.
 
@@ -309,7 +309,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной ВМ.
 1. Отметьте флажками нужные теги.
@@ -445,7 +445,7 @@ systemctl status qemu-guest-agent
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Воспользуйтесь одним из способов:
 
@@ -503,7 +503,7 @@ systemctl status qemu-guest-agent
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте окно получения пароля одним из способов.
 
@@ -550,7 +550,7 @@ systemctl status qemu-guest-agent
    {ifdef(public)}
 1. Создайте ссылку на файл с публичным ключом.
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
    1. Используйте существующий бакет или {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=создайте новый]}.
    1. {linkto(../../../../../storage/s3/instructions/objects/upload-object#s3-instructions-upload-object)[text=Добавьте файл]} с публичным ключом в бакет.
@@ -598,7 +598,7 @@ systemctl status qemu-guest-agent
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите на имя ВМ, которой нужно подключить диск.
 1. Перейдите на вкладку **Диски**.

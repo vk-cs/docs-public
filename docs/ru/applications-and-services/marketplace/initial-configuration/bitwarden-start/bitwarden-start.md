@@ -40,7 +40,7 @@ Bitwarden — это корпоративный менеджер паролей,
 Чтобы развернуть сервис Bitwarden на ВМ в вашем проекте {var(cloud)}:
 
 1. Запросите на [официальной странице Bitwarden](https://bitwarden.com/host) идентификатор и ключ установки. В запросе укажите почту, на которую вы хотите получать уведомления от Bitwarden, и регион `EU`.
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу Bitwarden из интернета:
 
    1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.

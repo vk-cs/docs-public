@@ -35,12 +35,12 @@
 
    {ifdef(public)}
 1. (Опционально) {linkto(../../../../networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel#vnet-vpn-tunnel)[text=Настройте]} VPN на маршрутизаторе, который будет использоваться в сервисе.
-1. Убедитесь, что в [личном кабинете](https://msk.cloud.vk.com/app/) подключен сервис Cloud Desktop: в меню слева доступен раздел **Cloud Desktop**.
+1. Убедитесь, что в [личном кабинете](https://msk.cloud.vk.ru/app/) подключен сервис Cloud Desktop: в меню слева доступен раздел **Cloud Desktop**.
    {/ifdef}
 
 ## {heading(1. Настройте внешнюю инфраструктуру)[id=vdi-with-gpu-settings]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}(Опционально) {/ifdef}Выберите {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проект]}, где будут размещены рабочие столы.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Настройка сети** задайте {linkto(../../../../computing/cloud-desktops/instructions/config/setup-net#desktops-setup-net)[text=сетевые параметры]}:

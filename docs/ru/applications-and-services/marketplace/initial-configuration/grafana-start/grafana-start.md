@@ -1,6 +1,6 @@
 # {heading(Развертывание Grafana)[id=marketplace-grafana-start]}
 
-Вы можете визуализировать данные мониторинга ресурсов с помощью сервиса [Grafana](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info).
+Вы можете визуализировать данные мониторинга ресурсов с помощью сервиса [Grafana](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info).
 
 Инструкция поможет развернуть сервис Grafana 10 на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 

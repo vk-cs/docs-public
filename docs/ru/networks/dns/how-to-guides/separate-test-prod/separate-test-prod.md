@@ -8,7 +8,7 @@
 
 ## {heading(Подготовительные шаги)[id=dns-separate-test-prod-prep]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. {linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add)[text=Создайте]} DNS-зону для production-среды, если она еще не создана.
 1. Установите утилиту `dig` на ваш компьютер для проверки настройки DNS:
 

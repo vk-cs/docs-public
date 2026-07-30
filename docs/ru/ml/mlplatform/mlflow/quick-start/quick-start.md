@@ -6,7 +6,7 @@
 
 ## {heading(1. Создайте инстанс MLflow)[id=mlp-mlflow-quickstart-1_create_mlflow]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform**.
 1. Нажмите кнопку **Создать инстанс** в карточке **MLflow**.
 1. На шаге **Конфигурация** отключите опцию **Подключить инстанс JupyterHub для совместной работы**.

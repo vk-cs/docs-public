@@ -6,7 +6,7 @@
 
    Если вы готовы {linkto(../about-partners#start-about-partners-deal-check-in)[text=зарегистрировать сделку]} с первым потенциальным клиентом, вместо плана развития будьте готовы {linkto(../../../tools-for-using-services/partner-platform/instructions/deals-and-applications/registration#pp-deal-registration)[text=отправить заявку]} на регистрацию сделки.
 
-1. Заполните заявку на [сайте](https://cloud.vk.com/partner), указав данные вашей компании. Менеджер по работе с партнерами {var(cloud)} свяжется с вами и расскажет о дальнейших шагах.
+1. Заполните заявку на [сайте](https://cloud.vk.ru/partner), указав данные вашей компании. Менеджер по работе с партнерами {var(cloud)} свяжется с вами и расскажет о дальнейших шагах.
 1. Обсудите с менеджером подходящую вам {linkto(../cooperation-models#partners-cooperation-models)[text=модель сотрудничества]} и предварительный план развития с {var(cloud)} (pipeline).
 1. Подпишите партнерский договор.
 

@@ -10,7 +10,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Остановите ВМ]}, образ которой нужно создать.  
 1. Перейдите в раздел **Облачные вычисления** → **Образы**.
 1. Нажмите кнопку **Создать**.
@@ -76,7 +76,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Образы**.
 1. Нажмите кнопку **Создать**.
 1. Задайте настройки импорта:
@@ -190,7 +190,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Образы**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужного образа и выберите пункт **Поделиться образом**.
    {ifdef(public)}
@@ -202,7 +202,7 @@
 
    - **Другие проекты**: позволяет делиться образом со всеми остальными проектами.
    
-     Если выбран этот тип, в поле **ID проекта в OpenStack** укажите [Project ID](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) вида `exampled4ef0547e5b222f445`, не совпадает с уникальным идентификатором проекта. Доступно добавление нескольких проектов.
+     Если выбран этот тип, в поле **ID проекта в OpenStack** укажите [Project ID](https://cloud.vk.ru/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) вида `exampled4ef0547e5b222f445`, не совпадает с уникальным идентификатором проекта. Доступно добавление нескольких проектов.
    
    {/ifdef}
    {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
@@ -263,7 +263,7 @@ openstack image member list <ID_ОБРАЗА>
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Образы**.
 1. Выполните одно из действий для нужного образа:
 

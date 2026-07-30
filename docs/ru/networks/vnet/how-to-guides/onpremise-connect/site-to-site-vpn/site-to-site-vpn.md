@@ -30,7 +30,7 @@
 ## {heading(Подготовительные действия)[id=vnet-site-to-site-vpn-prep]}
 
 1. Убедитесь, что клиент OpenStack {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть со следующими параметрами:
 

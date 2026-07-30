@@ -33,7 +33,7 @@
 Пример запроса для разрешения доступа к контенту только из Российской Федерации и Казахстана:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -89,10 +89,10 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 В теле запроса в блоке `options` пропишите параметры `referrer_acl`.
 
-Пример запроса для разрешения доступа к контенту только для поддоменов домена `vk.com`:
+Пример запроса для разрешения доступа к контенту только для поддоменов домена `vk.ru`:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -104,7 +104,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
         "referrer_acl": {
             "enabled": true,
             "excepted_values": [
-                "*.vk.com"
+                "*.vk.ru"
             ],
             "policy_type": "deny"
         }
@@ -149,7 +149,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса для запрета доступа к контенту с IP-адресов `192.168.1.100/32` и `10.10.10.10/24`:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

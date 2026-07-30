@@ -13,7 +13,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем на имя нужной подсети.
@@ -81,7 +81,7 @@ openstack port show --help
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем на имя нужной подсети.
@@ -127,7 +127,7 @@ openstack port create --help
 
 Это групповая операция: при необходимости можно включить сразу несколько выключенных портов, выбрав их с помощью флажков.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем на имя нужной подсети.
@@ -179,7 +179,7 @@ openstack port set --help
 
 Это групповая операция: при необходимости можно отключить сразу несколько включенных портов, выбрав их с помощью флажков.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем на имя нужной подсети.
@@ -227,7 +227,7 @@ openstack port set --help
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем — на имя нужной подсети.
@@ -347,7 +347,7 @@ openstack port unset --help
 
 Это групповая операция: при необходимости можно удалить сразу несколько портов, выбрав их с помощью флажков.
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети, затем на имя нужной подсети.

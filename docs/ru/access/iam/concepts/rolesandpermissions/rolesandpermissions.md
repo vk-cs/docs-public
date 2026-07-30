@@ -267,7 +267,7 @@
 
 ## {heading(Права в сервисе Security Gate)[id=rolesandpermissions-security-gate]}
 
-Сервис [Security Gate](https://cloud.vk.com/security-gate) в личном кабинете доступен для следующих ролей:
+Сервис [Security Gate](https://cloud.vk.ru/security-gate) в личном кабинете доступен для следующих ролей:
 
 - владелец проекта,
 - суперадминистратор,

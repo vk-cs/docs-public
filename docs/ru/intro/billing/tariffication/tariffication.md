@@ -2,7 +2,7 @@
 
 {include(/ru/_includes/_tariffication.md)[tags=pay]}
 
-Цены представлены в [настройках проекта](https://msk.cloud.vk.com/app/project/prices) в соответствии с [прайс-листом](https://cloud.vk.com/pricelist) или актуальными условиями договора.
+Цены представлены в [настройках проекта](https://msk.cloud.vk.ru/app/project/prices) в соответствии с [прайс-листом](https://cloud.vk.ru/pricelist) или актуальными условиями договора.
 
 {include(/ru/_includes/_tariffication.md)[tags=calculator]}
 

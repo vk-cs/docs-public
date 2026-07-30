@@ -17,11 +17,11 @@
 
 ## {heading(Оформление возврата для физических лиц)[id=billing-refund-individuals]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
 1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, чтобы прекратить списание средств.
 1. Скопируйте {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификатор (PID)]} проекта из URL сайта {var(cloud)}.
 
-   Пример URL для региона Москва: `https://msk.cloud.vk.com/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
+   Пример URL для региона Москва: `https://msk.cloud.vk.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
 
 1. В шапке страницы личного кабинета раскройте меню **Помощь** и выберите пункт **Запрос в техподдержку**.
 
@@ -64,11 +64,11 @@
 
 ## {heading(Оформление возврата для юридических лиц и ИП)[id=billing-refund-legal-entities]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
 1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, чтобы прекратить списание средств.
 1. Скопируйте {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификатор (PID)]} проекта из URL сайта {var(cloud)}.
 
-   Пример URL для региона Москва: `https://msk.cloud.vk.com/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
+   Пример URL для региона Москва: `https://msk.cloud.vk.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
 
 1. В электронной почте, адрес которой привязан к вашей учетной записи {var(cloud)}, создайте письмо с темой «{var(cloud)}: возврат денежных средств».
 1. Укажите в письме:

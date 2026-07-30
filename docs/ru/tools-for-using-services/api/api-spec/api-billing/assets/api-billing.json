@@ -17,7 +17,7 @@
           "Balance",
         ],
         "summary": "Узнать баланс проекта",
-        "description": "Возвращает информацию о балансе всех активных счетов проекта VK Cloud по его <a href='https://cloud.vk.com/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>идентификатору</a> (PID).",
+        "description": "Возвращает информацию о балансе всех активных счетов проекта VK Cloud по его <a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>идентификатору</a> (PID).",
         "operationId": "get_public_v1_projects_pid_balances_amount",
         "parameters": [
           {

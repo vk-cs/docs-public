@@ -12,7 +12,7 @@
 
 {tab(Кабинет поставщика)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. В разделе **Магазин приложений** нажмите кнопку **Перейти в кабинет поставщика**.
 1. Перейдите на вкладку **Управление сервисами**.
 1. Выберите нужный сервис в списке.
@@ -45,7 +45,7 @@
 |
 `https://<CLOUD_HOST>/marketplace/api/infra-api/api/v1-public/product/archive`
 
-Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.com`
+Здесь `<CLOUD_HOST>` — доменное имя облачной платформы `https://cloud.vk.ru`
 
 |
 `Content-Type`
@@ -74,7 +74,7 @@
 Пример запроса на архивацию сервиса:
 
 ```console
-$ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product/archive \
+$ curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/product/archive \
 -H "Content-Type: application/json" \
 -H "x-service-token: $token" \
 --data '{

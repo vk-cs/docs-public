@@ -40,7 +40,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
@@ -145,7 +145,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
@@ -269,7 +269,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
@@ -349,7 +349,7 @@
 
    {tab(Личный кабинет)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.

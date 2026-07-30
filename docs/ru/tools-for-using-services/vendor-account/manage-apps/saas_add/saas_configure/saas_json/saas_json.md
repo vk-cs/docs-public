@@ -40,7 +40,7 @@
       "full_description": "Мы предлагаем удобный баг-трекер для организации процесса тестирования:\n   - Автоматизация процессов с помощью API\n   - Гибкая настройка проектов\n   - Интеграция с внешними таск-трекерами\n   - Дистрибуция тестовых сборок\n   - Десктопная и мобильная версии баг-трекера",
       "singleton": false,
       "auto_bind": true,
-      "icon": "https://vk.com/images/bugs/vktesters_logo.svg",
+      "icon": "https://vk.ru/images/bugs/vktesters_logo.svg",
       "help": "http://vk.cc/vktesters_po_faq",
       "bindable": true,
       "plan_updateable": true,

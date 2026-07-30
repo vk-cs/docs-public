@@ -6,7 +6,7 @@
 
 ## {heading(Установка аддона)[id=k8s-install-advanced-gpu-operator-install]}
 
-Аддон {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-gpu-operator)[text=GPU Operator]} работает на worker-узлах с GPU, поэтому для него доступна только {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=установка на выделенные узлы]}. Чтобы иметь возможность добавлять в кластер worker-узлы с GPU, [подключите](https://cloud.vk.com/cloud-gpu/) сервис Cloud GPU.
+Аддон {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-gpu-operator)[text=GPU Operator]} работает на worker-узлах с GPU, поэтому для него доступна только {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=установка на выделенные узлы]}. Чтобы иметь возможность добавлять в кластер worker-узлы с GPU, [подключите](https://cloud.vk.ru/cloud-gpu/) сервис Cloud GPU.
 
 1. Подготовьте выделенную группу worker-узлов для установки аддона, если это еще не сделано:
 
@@ -14,7 +14,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Найдите в списке нужный кластер.
@@ -39,7 +39,7 @@
    
    {tab(Личный кабинет)}
       
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.

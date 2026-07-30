@@ -4,7 +4,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-lens-before-work]}
 
-1. {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер Kubernetes, к которому нужно подключиться, или выберите нужный кластер из списка в [личном кабинете](https://msk.cloud.vk.com/app/) на странице **Контейнеры → Кластеры Kubernetes**.
+1. {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер Kubernetes, к которому нужно подключиться, или выберите нужный кластер из списка в [личном кабинете](https://msk.cloud.vk.ru/app/) на странице **Контейнеры → Кластеры Kubernetes**.
 1. На хосте, с которого планируется подключаться к кластеру, [установите Lens](https://docs.k8slens.dev/getting-started/install-lens/), если этого еще не сделано.
 1. Убедитесь, что {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=активирован доступ по API]}.
 1. Установите плагин `client-keystone-auth` для подключения к кластеру с использованием {linkto(../../concepts/access-management#k8s-access-management)[text=Single Sign-On (SSO)]}:

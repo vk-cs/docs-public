@@ -57,7 +57,7 @@
 Пример запроса:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -137,7 +137,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса для настройки кеширования в браузере пользователя по источнику:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -185,7 +185,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса с настройками игнорирования заголовков Set-Cookie:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -244,7 +244,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах)}
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -265,7 +265,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {cut(Пример запроса для настройки CDN-ресурса на игнорирование указанных query-параметров в HTTP-запросах)}
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -293,7 +293,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 {cut(Пример запроса для настройки CDN-ресурса на игнорирование всех query-параметров в HTTP-запросах, кроме указанных)}
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

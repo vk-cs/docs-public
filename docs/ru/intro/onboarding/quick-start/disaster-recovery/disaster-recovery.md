@@ -1,6 +1,6 @@
 # {heading(Hystax Acura DR из Marketplace: защитите сервисы от сбоев и аварий)[id=onboarding-disaster-recovery]}
 
-Магазин приложений расширяет возможности {var(cloud)}, предлагая сторонние сервисы для решения задач. Один из таких сервисов — [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info). С его помощью вы можете настроить Disaster Recovery (DR) — комплекс стратегий и процедур, направленных на восстановление работы приложений, данных и бизнес-процессов после сбоев, аварий в ЦОД или человеческих ошибок.
+Магазин приложений расширяет возможности {var(cloud)}, предлагая сторонние сервисы для решения задач. Один из таких сервисов — [Hystax Acura Disaster Recovery](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info). С его помощью вы можете настроить Disaster Recovery (DR) — комплекс стратегий и процедур, направленных на восстановление работы приложений, данных и бизнес-процессов после сбоев, аварий в ЦОД или человеческих ошибок.
 
 Для настройки DR вы подключаете сервис, авторизуетесь в личном кабинете Hystax Acura и устанавливаете агенты на серверы, которые нужно реплицировать в резервную инфраструктуру. Данные на основной и резервной площадке регулярно синхронизируются.
 
@@ -25,7 +25,7 @@
 
 ### {heading(Подготовительные шаги)[id=onboarding-disaster-recovery-prepare]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 
 {include(../../../../_includes/_disaster-recovery.md)[tags=dr_onboarding_2; level=+1]}
 

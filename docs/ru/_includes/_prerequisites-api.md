@@ -9,7 +9,7 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
 {/includetag}
 
 {includetag(api-token-prerequisites)}
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=активирован]} доступ по API.
 1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 {/includetag}
@@ -218,7 +218,7 @@ x-subject-token: <ЗНАЧЕНИЕ_ТОКЕНА>
 {includetag(api-token-example)}
 Задача: получить список сетей через REST API (сервис Neutron).
 
-1. В личном кабинете [посмотрите](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
+1. В личном кабинете [посмотрите](https://msk.cloud.vk.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
 1. {linkto(#rest-api-keystone-token-gen)[text=Получите токен]}: сгенерируйте новый токен или скопируйте значение действующего токена.
 1. Выполните команду с помощью утилиты cURL:
 

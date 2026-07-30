@@ -6,7 +6,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Direct Connect**.
 
@@ -32,7 +32,7 @@
 1. Получите список всех соединений:
 
    ```console
-    curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.com/junp/v1/connections/
+    curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.ru/junp/v1/connections/
     ```
 
     Здесь `<ТОКЕН>` — токен доступа к API.
@@ -82,7 +82,7 @@
 1. Получите подробные данные о порте:
 
    ```console
-   curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.com/junp/v1/connections/{connectionUuid}
+   curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://msk.cloud.vk.ru/junp/v1/connections/{connectionUuid}
    ```
 
    Здесь `connectionUuid` — значение параметра `uuid`, полученное при запросе списка соединений.

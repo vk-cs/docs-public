@@ -2,7 +2,7 @@
 
 ### Решение
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет VK Cloud.
 1. Проверьте список всех проектов.
 1. Если достигнут лимит, [удалите](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-delete) проект.
 

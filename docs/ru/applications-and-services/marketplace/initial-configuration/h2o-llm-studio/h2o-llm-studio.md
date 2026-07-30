@@ -19,7 +19,7 @@ H2O LLM Studio — это платформа с открытым исходны�
 
 Чтобы развернуть сервис H2O LLM Studio на ВМ в вашем проекте {var(cloud)}:
 
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} и [перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Чтобы иметь доступ к ВМ с развернутым сервисом и к веб-интерфейсу H2O LLM Studio из интернета:
 
    1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.

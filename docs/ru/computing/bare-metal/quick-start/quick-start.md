@@ -22,7 +22,7 @@
    - Аренды желаемой конфигурации сервера Bare Metal.
    - Оплаты {linkto(../../../computing/iaas/concepts/vm#iaas-concepts-vm)[text=виртуальной машины]} с Linux в конфигурации с 1 vCPU, 1 ГБ RAM, 1 диском HDD на 10 ГБ и публичным IP-адресом Sprut.
 
-     Цены на указанные ресурсы доступны в [прайс-листе](https://cloud.vk.com/pricelist/).
+     Цены на указанные ресурсы доступны в [прайс-листе](https://cloud.vk.ru/pricelist/).
 
 1. Проверьте, хватает ли {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квот]} для:
 
@@ -32,7 +32,7 @@
 
 ## {heading({counter(TOC-steps)}. Создайте сеть)[id=bare-metal-quick-start-net-setup]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите кнопку **Создать**.
 1. Задайте параметры сети:
@@ -47,7 +47,7 @@
 
 ## {heading({counter(TOC-steps)}. Закажите сервер)[id=bare-metal-quick-start-order]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Bare Metal**.
 1. Нажмите кнопку **Арендовать**.
 1. Задайте параметры заказа:
@@ -95,7 +95,7 @@
 
    {/tabs}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Нажмите кнопку **Создать инстанс** или **Добавить**.
 1. Задайте параметры ВМ:
@@ -177,7 +177,7 @@
 
 ## {heading({counter(TOC-steps)}. Установите ОС)[id=bare-metal-quick-start-os-setup]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Облачные вычисления** → **Bare Metal**.
 1. В списке серверов Bare Metal нажмите на имя нужного сервера.
 1. На странице сервера нажмите ![ ](../../../assets/more-icon.svg "inline") и выберите пункт **Установить операционную систему**.

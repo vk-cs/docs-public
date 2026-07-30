@@ -20,7 +20,7 @@
 
 {ifdef(public)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 
 {/ifdef}
 
@@ -133,7 +133,7 @@ upload: ../pictures/picture.png to s3://my-bucket/folder/my-picture.png
 {tab(API)}
 
 1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
-1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса {var(s3)}.
+1. [Узнайте](https://msk.cloud.vk.ru/app/project/endpoints) эндпоинт для сервиса {var(s3)}.
    {ifdef(public)}
 1. {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=Сформируйте подпись]} запроса для аутентификации в API.
    {/ifdef}

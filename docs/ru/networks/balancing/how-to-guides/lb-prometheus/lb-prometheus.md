@@ -11,7 +11,7 @@
 ## {heading(Подготовительные шаги)[id=balancing-lb-prometheus-prep]}
 
 1. {linkto(../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=Установите]} клиент OpenStack с пакетами `octavia` и `neutron` и пройдите аутентификацию в проекте.
-1. {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=Разверните]} из магазина приложений сервис [Grafana](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info). Если вы настраиваете мониторинг для балансировщика в приватной сети, то ВМ, на которой разворачивается сервис, должна быть в одной подсети с этим балансировщиком. Сервисы из магазина приложений уже содержат базовые настройки для работы в VK Cloud. Подробнее о доступных настройках — в [официальной документации Grafana](https://archive.grafana.com/docs/grafana/v10.0/setup-grafana/configure-grafana/).
+1. {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=Разверните]} из магазина приложений сервис [Grafana](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info). Если вы настраиваете мониторинг для балансировщика в приватной сети, то ВМ, на которой разворачивается сервис, должна быть в одной подсети с этим балансировщиком. Сервисы из магазина приложений уже содержат базовые настройки для работы в VK Cloud. Подробнее о доступных настройках — в [официальной документации Grafana](https://archive.grafana.com/docs/grafana/v10.0/setup-grafana/configure-grafana/).
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} к ВМ, на которой установлен сервис Grafana, и установите на ней [Prometheus](https://prometheus.io/):
 
    ```console
@@ -23,7 +23,7 @@
 
 ## {heading(1. Получите сведения о балансировщике)[id=balancing-lb-prometheus-info]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Выберите проект.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 

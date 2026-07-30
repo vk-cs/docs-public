@@ -6,7 +6,7 @@
 
 - Воспользуйтесь [инструкцией](#onboarding-db-create-postgre) и создайте первую управляемую базу данных PostgreSQL, подключитесь к ней и выполните тестовые запросы.
 - Посмотрите [видео](#onboarding-db-create-video), в которых будут созданы управляемые базы данных MySQL, PostgreSQL и ClickHouse в конфигурации Single.
-- Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/). В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
+- Пройдите [бесплатный обучающий курс](https://cloud.vk.ru/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/). В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.ru/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.ru/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
 
 {note:info}Инстанс БД потребляет вычислительные ресурсы и [тарифицируется](/ru/dbs/dbaas/tariffication).{/note}
 
@@ -59,9 +59,9 @@ ClickHouse используется преимущественно для ана
 
 ## {heading(Обучающий курс)[id=onboarding-db-create-courses]}
 
-Пройдите [бесплатный обучающий курс](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/).
+Пройдите [бесплатный обучающий курс](https://cloud.vk.ru/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/).
 
-В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
+В теоретической части курса объясняется, что такое база данных и система управления базами данных, какие есть типы и конфигурации БД. В практической части курса вы создадите [кластер PostgreSQL](https://cloud.vk.ru/cloud-native-courses/advanced/postgresql/#sozdanieclastera) и [БД MySQL](https://cloud.vk.ru/cloud-native-courses/advanced/mysql/#praktikamysql), затем подключите созданную БД MySQL к приложению, установленному на виртуальной машине.
 
 ## {heading(Вопросы и ответы)[id=onboarding-db-create-faq]}
 

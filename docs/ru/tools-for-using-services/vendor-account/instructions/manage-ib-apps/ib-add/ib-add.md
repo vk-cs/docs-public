@@ -417,7 +417,7 @@ image_based_service
 
    {tab(Кабинет поставщика)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
    1. В разделе **Магазин приложений** нажмите кнопку **Перейти в кабинет поставщика**.
    1. На вкладке **Управление сервисами** нажмите кнопку **Добавить сервис**.
    1. Выберите zip-архив на своем устройстве для загрузки в систему.
@@ -434,7 +434,7 @@ image_based_service
    - Метод запроса: `POST`.
    - Путь запроса: `https://<ХОСТ_VK_CLOUD>/marketplace/api/infra-api/api/v1-public/product`.
 
-      Здесь `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK CLOUD `https://cloud.vk.com`.
+      Здесь `<ХОСТ_VK_CLOUD>` — доменное имя платформы VK CLOUD `https://cloud.vk.ru`.
 
    - Тело запроса: zip-архив.
    - `x-service-token`: `<СЕРВИСНЫЙ_КЛЮЧ>` — сервисный ключ, полученный от Marketplace на [этапе подготовки](#preparatory_steps).
@@ -446,7 +446,7 @@ image_based_service
    {tab(Linux (bash))}
 
    ```console
-   curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product \
+   curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/product \
    -H 'x-service-token: <SERVICE_TOKEN>' \
    -F "upload=@/home/VKservice.zip"
    ```
@@ -456,7 +456,7 @@ image_based_service
    {tab(Windows (cmd))}
 
    ```console
-   curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/product ^
+   curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/product ^
    -H "x-service-token: <SERVICE_TOKEN>" ^
    -F "upload=@/home/VKservice.zip"
    ```
@@ -491,7 +491,7 @@ image_based_service
 
 Чтобы проверить, как сервис будет функционировать в тестовом пространстве имен Marketplace:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/services/marketplace) в раздел **Магазин приложений** личного кабинета VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/services/marketplace) в раздел **Магазин приложений** личного кабинета VK Cloud.
 1. Нажмите кнопку **Все решения**.
 1. Нажмите на карточку вашего сервиса и перейдите на вкладку **Тарифные планы**.
 1. Убедитесь, что мастер конфигурации каждого тарифного плана отображается корректно.

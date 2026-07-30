@@ -6,7 +6,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Логирование**.
 1. (Опционально) Выберите значения для фильтров.
 1. (Опционально) Введите значение для поиска или сформулируйте запрос с использованием {linkto(../../concepts/search-tools#logging-search-tools)[text=языка поисковых запросов]}.
@@ -31,7 +31,7 @@
 
 {tab(Grafana)}
 
-1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Разверните]} сервис Grafana из [Магазина приложений](https://msk.cloud.vk.com/app/services/marketplace) в вашем проекте.
+1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Разверните]} сервис Grafana из [Магазина приложений](https://msk.cloud.vk.ru/app/services/marketplace) в вашем проекте.
 
    При развертывании сервиса он будет автоматически интегрирован с Cloud Logging:
 

@@ -41,7 +41,7 @@
 Пример запроса для очистки кеша CDN-ресурса:
 
 ```json
-curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281/purge'\
+curl --location --request POST 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281/purge'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -90,7 +90,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 Пример запроса для наполнения кеша CDN-ресурса:
 
 ```json
-curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281/prefetch'\
+curl --location --request POST 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281/prefetch'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -138,7 +138,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 Пример запроса с настройками для ответа HTTP 403:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -189,7 +189,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса с настройками сжатия GZip:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -242,7 +242,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса с настройками сжатия Brotli:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -296,7 +296,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса с настройками сжатия на источнике:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -354,7 +354,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 Пример запроса с настройками оптимизации доставки больших файлов:
 
 ```json
-curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://msk.cloud.vk.ru/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

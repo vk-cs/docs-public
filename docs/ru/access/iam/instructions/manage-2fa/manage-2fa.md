@@ -8,7 +8,7 @@
 
 ## {heading(Отключение 2FA)[id=iam-manage-2fa-off]}
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт {var(cloud)}.
 1. Перейдите в раздел **Безопасность**.
 1. В блоке **Двухфакторная аутентификация** нажмите на значок ![pencil-icon](/ru/assets/pencil-icon.svg "inline").
 1. Введите пароль от вашего аккаунта и код из приложения аутентификации.

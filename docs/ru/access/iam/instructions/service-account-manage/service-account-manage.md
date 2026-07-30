@@ -7,7 +7,7 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}. Создание СУЗ доступно для ролей:
 
     - владелец проекта,
@@ -45,7 +45,7 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
@@ -65,7 +65,7 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
@@ -92,7 +92,7 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}.
 1. Перейдите в раздел **Управление доступами** на вкладку **Сервисные пользователи**.
 
@@ -147,7 +147,7 @@
 {tabs}
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Убедитесь, что ваша {linkto(../../concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=роль в проекте]} имеет {linkto(../../concepts/service-accounts#iam-concepts-service-accounts)[text=права на управление СУЗ]}. Удаление СУЗ доступно для ролей:
 
     - владелец проекта,

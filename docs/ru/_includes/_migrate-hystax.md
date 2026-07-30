@@ -1,4 +1,4 @@
-Вы можете перенести ваши ресурсы в {var(cloud)} с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
+Вы можете перенести ваши ресурсы в {var(cloud)} с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
 
 {cut(Откуда можно перенести данные?)}
 
@@ -249,7 +249,7 @@
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=includes-migrate-hystax-delete]}
 
-Работающие ВМ потребляют вычислительные ресурсы и [тарифицируются](https://cloud.vk.com/docs/ru/computing/iaas/tariffication). Если они вам больше не нужны:
+Работающие ВМ потребляют вычислительные ресурсы и [тарифицируются](https://cloud.vk.ru/docs/ru/computing/iaas/tariffication). Если они вам больше не нужны:
 
 - Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
 - Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.

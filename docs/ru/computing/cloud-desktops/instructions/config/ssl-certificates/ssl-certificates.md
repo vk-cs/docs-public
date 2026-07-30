@@ -13,7 +13,7 @@ SSL-сертификат необходим для подключения пол
 
 ## {heading(Подключение своего SSL-сертификата)[id=desktops-own-certificate]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Сертификаты** нажмите кнопку **Изменить сертификат** или **Добавить сертификат**. Откроется окно добавления сертификата.
 1. Оставьте отключенной опцию **Использовать для подписи публичный центр сертификации**.
@@ -24,7 +24,7 @@ SSL-сертификат необходим для подключения пол
 
 Если вы изменили сертификат по умолчанию, для возврата к использованию сертификата Let's Encrypt:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Сертификаты** нажмите кнопку **Изменить сертификат**.
 1. Включите опцию **Использовать для подписи публичный центр сертификации** и нажмите кнопку **Изменить**.
@@ -34,7 +34,7 @@ SSL-сертификат необходим для подключения пол
 
 Чтобы использовать базовый SSL-сертификат от {var(cloud)}, удалите текущий подключенный сертификат{ifdef(public)}, свой или Let's Encrypt{/ifdef}:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") в блоке **Сертификат** и выберите пункт **Удалить**.
 1. Подтвердите удаление.
@@ -47,7 +47,7 @@ SSL-сертификат необходим для подключения пол
 
 ## {heading(Загрузка дополнительных цепочек доверия или корневых сертификатов)[id=desktops-add-chains-of-trust]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Сертификаты** нажмите кнопку **Добавить цепочку**. Откроется окно добавления новой цепочки доверия.
 1. Скопируйте данные цепочки доверия в соответствующее поле и нажмите кнопку **Добавить**.

@@ -4,7 +4,7 @@
 
 ## {heading(Диагностика с помощью логов)[id=desktops-diagnostics-logs]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Логирование**.
 1. Если на экране не отображаются поля запроса и фильтров, нажмите кнопку **Поиск и фильтры**.
 1. Укажите параметры поиска:
@@ -25,7 +25,7 @@
 
 ## {heading(Диагностика с помощью журнала событий)[id=desktops-diagnostics-events]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг** → **Журнал событий**.
 1. Если на экране не отображаются поля запроса и фильтров, нажмите кнопку **Поиск и фильтры**.
 1. Укажите параметры поиска:

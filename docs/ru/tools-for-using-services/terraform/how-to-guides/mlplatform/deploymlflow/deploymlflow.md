@@ -72,7 +72,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
   {cut(Примеры)}
 
   - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: будет создан новый инстанс MLflow, идентификатор инстанса будет получен после создания ресурса `vkcs_mlplatform_mlflow`. Ресурс будет сформирован далее.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса MLflow в [личном кабинете](https://cloud.vk.com/app) {var(cloud)}.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса MLflow в [личном кабинете](https://cloud.vk.ru/app) {var(cloud)}.
 
   {/cut}
 
@@ -191,7 +191,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Убедитесь, что инстанс MLflow Deploy был успешно создан:
 
-1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс MLflow Deploy создан и активен.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=terraform-deploymlflow-delete]}

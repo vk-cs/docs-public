@@ -8,7 +8,7 @@ Forbidden: role mapping misconfiguration: mapping is not configured for any of t
 
 ## Решение
 
-1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
+1. [Перейдите](https://cloud.vk.ru/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Федерация удостоверений**.
 1. Перейдите на вкладку **Группы**.
 1. Нажмите на название проекта, для которого настраивается федерация удостоверений.

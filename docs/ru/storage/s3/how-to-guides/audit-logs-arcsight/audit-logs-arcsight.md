@@ -16,7 +16,7 @@
 1. {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-view-user)[text=Убедитесь]}, что у вас есть доступ к личному кабинету {var(cloud)} с одной из {linkto(../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-audit)[text=ролей]}: `Владелец проекта`, `Суперадминистратор`, `Администратор проекта` или `Наблюдатель`.
 
 1. Создайте аккаунт для сервиса {var(s3)}, если это еще не сделано:
-   1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+   1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
    1. Выберите проект.
    1. Перейдите в раздел **Object Storage** → **Аккаунты**.
    1. Нажмите кнопку **Добавить аккаунт** или **Добавить**.
@@ -39,7 +39,7 @@
 
 ## {heading(1. Создайте SIEM-подключение в личном кабинете)[id=audit-logs-arcsight-create-connection]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Мониторинг → Журнал событий**.
 1. Нажмите кнопку **Настройки** и перейдите на вкладку **SIEM**.
 1. Нажмите кнопку **Создать подключение**.

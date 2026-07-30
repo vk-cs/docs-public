@@ -9,7 +9,7 @@
 ## {heading({counter(bucket)}. Создайте аккаунт для сервиса VK Object Storage)[id=create_account]}
 {/includetag}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
 {includetag(not_bucket_onboarding)}
    1. Выберите проект.
 {/includetag}
@@ -43,7 +43,7 @@
 ## {heading({counter(bucket)}. Создайте бакет)[id=create_bucket]}
 
 {includetag(not_bucket_onboarding)}
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
 {/includetag}
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите кнопку **Создать**.
@@ -68,7 +68,7 @@
 
 1. Добавьте объект:
 
-   1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
    1. Нажмите на имя созданного бакета.
@@ -119,7 +119,7 @@
 1. Добавьте объект:
 
 {includetag(not_bucket_onboarding)}
-   1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
 {/includetag}
@@ -131,7 +131,7 @@
 1. Предоставьте доступ к загруженному объекту по прямой ссылке:
 
 {includetag(not_bucket_onboarding)}
-   1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
    1. Выберите проект, где находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
    1. Нажмите на имя созданного бакета.

@@ -67,7 +67,7 @@
       "full_description": "Мы предлагаем удобный баг-трекер для организации процесса тестирования:\n   - Автоматизация процессов с помощью API\n   - Гибкая настройка проектов\n   - Интеграция с внешними таск-трекерами\n   - Дистрибуция тестовых сборок\n   - Десктопная и мобильная версии баг-трекера",
       "singleton": false,
       "auto_bind": true,
-      "icon": "https://vk.com/images/bugs/vktesters_logo.svg",
+      "icon": "https://vk.ru/images/bugs/vktesters_logo.svg",
       "help": "http://vk.cc/vktesters_po_faq",
       "bindable": true,
       "plan_updateable": true,
@@ -297,7 +297,7 @@
 
 {includetag(test_service)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/services/marketplace) в раздел **Магазин приложений** личного кабинета VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.ru/app/services/marketplace) в раздел **Магазин приложений** личного кабинета VK Cloud.
 1. Нажмите кнопку **Все решения**.
 1. Нажмите на карточку вашего сервиса и перейдите на вкладку **Тарифные планы**.
 1. Убедитесь, что мастер конфигурации каждого тарифного плана отображается корректно.

@@ -18,7 +18,7 @@
 
 Общая информация о модели приведена в {linkto(../cooperation-models#partners-cooperation-models-partner-how)[text=документации]}, а конкретные детали сотрудничества можно уточнить у менеджера по работе с партнерами следующими способами:
 
-- отправив заявку на партнерство или воспользовавшись кнопкой **Получить консультацию** на [сайте](https://cloud.vk.com/partner);
+- отправив заявку на партнерство или воспользовавшись кнопкой **Получить консультацию** на [сайте](https://cloud.vk.ru/partner);
 - написав на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru).
 
 {/cut}
@@ -35,7 +35,7 @@
 
 {linkto(../cooperation-models#partners-cooperation-models-partner)[text=Партнер]} {var(cloud)} может установить для своих клиентов любую стоимость услуг. При необходимости {var(cloud)} может отключить отображение их цены в {linkto(../../../tools-for-using-services/partner-platform/concepts/client-account#partner-platform-client-account)[text=личном кабинете]} вашего клиента. Для этого напишите на почту [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru).
 
-Клиенты, купившие услуги {var(cloud)} по рекомендации {linkto(../cooperation-models#partners-cooperation-models-agent)[text=агента]}, приобретают их по ценам, указанным в [прайс-листе](https://cloud.vk.com/pricelist) {var(cloud)}.
+Клиенты, купившие услуги {var(cloud)} по рекомендации {linkto(../cooperation-models#partners-cooperation-models-agent)[text=агента]}, приобретают их по ценам, указанным в [прайс-листе](https://cloud.vk.ru/pricelist) {var(cloud)}.
 
 {/cut}
 

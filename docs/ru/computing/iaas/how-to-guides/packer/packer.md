@@ -82,7 +82,7 @@ Packer позволяет сконструировать новый образ �
 1. Выберите желаемый шаблон конфигурации для нового образа ВМ.
 
    {note:info}
-   Актуальные шаблоны конфигурации представлены {ifdef(public)}на [странице создания ВМ](https://msk.cloud.vk.com/app/services/infra/servers/add) личного кабинета {var(cloud)} в списке **Тип виртуальной машины**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}в разделе {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]}{/ifdef}.
+   Актуальные шаблоны конфигурации представлены {ifdef(public)}на [странице создания ВМ](https://msk.cloud.vk.ru/app/services/infra/servers/add) личного кабинета {var(cloud)} в списке **Тип виртуальной машины**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}в разделе {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]}{/ifdef}.
    {/note}
 
 1. Создайте файл `altlinux.pkr.hcl`. Укажите имя выбранного шаблона конфигурации в параметре `flavor`.
@@ -185,7 +185,7 @@ Packer позволяет сконструировать новый образ �
 
    {tab(Личный кабинет)}
 
-   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+   1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
    1. Перейдите в раздел **Облачные вычисления** → **Образы**.
    1. Найдите образ в списке и нажмите на него. Откроется страница образа.
 

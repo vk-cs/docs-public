@@ -9,7 +9,7 @@
 ## {heading(Подготовительные шаги)[id=dns-global-balancer-prep]}
 
 1. Получите доступ к {linkto(../../../../networks/dns/concepts/global-balancer#dns-global-balancer)[text=DNS-балансировке]}, обратившись в [техническую поддержку](/ru/contacts), если этого не было сделано ранее.
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Выберите или {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создайте]} три ВМ с доступом в интернет в разных {linkto(../../../../start/concepts/architecture#architecture-az)[text=зонах доступности]}.
 1. Запишите внешние IP-адреса этих ВМ. В этом примере:
 

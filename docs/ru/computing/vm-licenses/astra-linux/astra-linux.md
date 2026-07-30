@@ -2,7 +2,7 @@
 
 В рамках {var(cloud)} поддерживается установка виртуальных машин с поддержкой образов от компании [Астра Линукс](https://astralinux.ru).
 
-Доступные редакции операционной системы отображаются в раскрывающемся списке **Операционная система** при создании ВМ через [личный кабинет](https://msk.cloud.vk.com/app/services/infra/servers/add) {var(cloud)}.
+Доступные редакции операционной системы отображаются в раскрывающемся списке **Операционная система** при создании ВМ через [личный кабинет](https://msk.cloud.vk.ru/app/services/infra/servers/add) {var(cloud)}.
 
 Astra Linux Speсial Edition 1.7 подходит для следующих сценариев применения:
 
@@ -48,7 +48,7 @@ Astra Linux Special Edition 1.7 «Воронеж» может выступать
 
 Цену за месяц использования ПО можно узнать:
 
-- в [прайс-листе](https://cloud.vk.com/pricelist);
+- в [прайс-листе](https://cloud.vk.ru/pricelist);
 - при {linkto(../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создании]} виртуальной машины (ВМ);
-- в [настройках проекта](https://msk.cloud.vk.com/app/project/) на вкладке **Цены**.
-- в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.com/app/services/billing).
+- в [настройках проекта](https://msk.cloud.vk.ru/app/project/) на вкладке **Цены**.
+- в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.ru/app/services/billing).

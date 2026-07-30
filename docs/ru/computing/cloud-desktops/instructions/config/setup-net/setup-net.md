@@ -8,7 +8,7 @@
 
 Чтобы использовать ручной режим, подготовьте сеть для размещения инфраструктуры сервиса:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной сети. Если сети еще нет, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=создайте]} ее.
 1. Нажмите на имя нужной подсети. Если нужной подсети еще нет, {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=создайте]} ее с учетом {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=требований к количеству портов]}.
@@ -87,7 +87,7 @@
 
 Чтобы проверить корректность настроек сети для сервиса:
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Настройка сети** активируйте опцию **Проверка настроек сети**.
 1. Нажмите **Проверить подключение**.

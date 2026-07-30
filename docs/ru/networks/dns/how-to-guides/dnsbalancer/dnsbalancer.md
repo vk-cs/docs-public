@@ -29,7 +29,7 @@
 
 ## {heading(Подготовительные шаги)[id=dns-dnsbalancer-prep]}
 
-1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. Выберите или создайте три ВМ с доступом в интернет в разных {linkto(../../../../start/concepts/architecture#architecture-az)[text=зонах доступности]}.
 1. Подключитесь к указанным ВМ по SSH.
 

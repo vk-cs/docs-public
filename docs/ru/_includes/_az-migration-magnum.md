@@ -60,7 +60,7 @@
 
 {tab(Снимок диска (личный кабинет))}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет {var(cloud)}.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
 1. {linkto(/ru/computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-create)[text=Создайте снимок диска]}, связанного с PVC.
 1. {linkto(/ru/computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=Создайте новый диск]} на основе этого снимка, указав следующие параметры:
     - **Источник**: снимок диска, созданный на предыдущем шаге;
@@ -444,7 +444,7 @@
 
    {tab(Аддоны)}
 
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
    1. Выберите проект, где находится нужный кластер.
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
