@@ -124,17 +124,22 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "link": {
-                      "type": "string",
-                      "description": "Link containing the session token and metadata:\n\n``domain`` — domain where the captcha will be used;\n\n``session_token`` — session token;\n\n``variant`` — captcha display type (``block`` or ``popup``)"
-                    },
-                    "status": {
-                      "type": "string",
-                      "enum": [
-                        "OK",
-                        "ERROR"
-                      ],
-                      "description": "Request execution status. Possible values:\n\n``OK`` — session created successfully;\n\n``ERROR`` — error during session creation"
+                    "response": {
+                      "type": "object",
+                      "properties": {
+                        "link": {
+                          "type": "string",
+                          "description": "Link containing the session token and metadata:\n\n``domain`` — domain where the captcha will be used;\n\n``session_token`` — session token;\n\n``variant`` — captcha display type (``block`` or ``popup``)"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "OK",
+                            "ERROR"
+                          ],
+                          "description": "Request execution status. Possible values:\n\n``OK`` — session created successfully;\n\n``ERROR`` — error during session creation"
+                        }
+                      }
                     }
                   }
                 }
@@ -203,15 +208,20 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "status": {
-                      "type": "string",
-                      "enum": [
-                        "OK",
-                        "ERROR",
-                        "ERROR_LIMIT",
-                        "ERROR_TOKEN_EXPIRED"
-                      ],
-                      "description": "Captcha completion status. Possible values:\n\n``OK`` — token is valid;\n\n``ERROR`` — token is invalid;\n\n``ERROR_LIMIT`` — request limit exceeded;\n\n``ERROR_TOKEN_EXPIRED`` — token lifetime expired"
+                    "response": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "OK",
+                            "ERROR",
+                            "ERROR_LIMIT",
+                            "ERROR_TOKEN_EXPIRED"
+                          ],
+                          "description": "Captcha completion status. Possible values:\n\n``OK`` — token is valid;\n\n``ERROR`` — token is invalid;\n\n``ERROR_LIMIT`` — request limit exceeded;\n\n``ERROR_TOKEN_EXPIRED`` — token lifetime expired"
+                        }
+                      }
                     }
                   }
                 }
