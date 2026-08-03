@@ -1211,8 +1211,6 @@
 
 Если {linkto(../../../concepts/features#s3-concepts-features-object-uploading)[text=составная загрузка]} не завершена, объект не создается и не может использоваться{ifdef(public)}, но хранение загруженных частей {linkto(../../../tariffication#s3-tariffication)[text=тарифицируется]}. Чтобы средства не списывались, удаляйте составные загрузки, которые не будут завершены{/ifdef}.
 
-Вы можете настроить автоматическое удаление незавершенных загрузок через {linkto(../../../concepts/lifecycle#s3-concepts-lifecycle)[text=жизненный цикл]} объектов или удалить загрузку вручную.
-
 {tabs}
 
 {tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}

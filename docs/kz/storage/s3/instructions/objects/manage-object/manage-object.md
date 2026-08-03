@@ -1213,8 +1213,6 @@
 
 Егер {linkto(../../../concepts/features#s3-concepts-features-object-uploading)[text=құрамдас жүктеу]} аяқталмаса, объект жасалмайды және пайдаланылмайды{ifdef(public)}, бірақ жүктелген бөліктерді сақтау {linkto(../../../tariffication#iaas-tariffication)[text=тарифтеледі]}. Қаражат есептен шығарылмауы үшін, аяқталмайтын құрамдас жүктеулерді жойыңыз{/ifdef}.
 
-Сіз аяқталмаған жүктеулерді {linkto(../../../concepts/lifecycle#s3-concepts-lifecycle)[text=өмірлік цикл]} арқылы автоматты түрде жоюды баптай аласыз немесе жүктеуді қолмен жоя аласыз.
-
 {tabs}
 
 {tab(Жеке кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
