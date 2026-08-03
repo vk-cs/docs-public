@@ -9,6 +9,7 @@ VK Cloud командасы VK Cloud сервистерін пайдаланат
 | Арна        | Ақпарат                  | Жұмыс уақыты  |
 |--------------|-----------------------------|---------------|
 | Портал       | https://support.mcs.mail.ru | тәулік бойы |
+| Max-бот      | https://max.ru/vk_tech_support_bot | тәулік бойы |
 | [Telegram-бот](../chatbots/tg-support-bot) | `@vk_tech_support_bot`      | тәулік бойы |
 | Пошта        | support@mcs.mail.ru         | тәулік бойы |
 | Телефон      | +7 (499) 350-97-03          | тәулік бойы |
