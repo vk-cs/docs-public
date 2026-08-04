@@ -13,6 +13,41 @@
 
 {tabs}
 
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, в котором находится нужный бакет.
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Перейдите в настройки бакета одним из способов:
+
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+   - Нажмите на имя нужного бакета, затем на странице бакета нажмите кнопку ![ ](../../../assets/settings-icon.svg "inline").
+
+1. Перейдите на вкладку **Версионирование**. Убедитесь, что оно включено.
+1. Перейдите на вкладку **Блокировка**.
+1. Включите блокировку объектов, если этого не было сделано ранее.
+1. Включите опцию **Блокировать объекты по умолчанию**.
+1. Выберите режим защиты:
+
+    - `Governance` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]} с возможностью обхода блокировки;
+    - `Compliance` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]} без возможности снятия блокировки до истечения установленного срока.
+
+1. Выберите срок хранения в днях.
+1. Нажмите кнопку **Сохранить**.
+
+{/tab}
+
 {tab(AWS CLI)}
 
 1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
@@ -150,6 +185,33 @@
 Чтобы управлять бессрочной блокировкой:
 
 {tabs}
+
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, в котором находится нужный бакет.
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Нажмите на имя бакета.
+1. Нажмите на имя объекта.
+1. Перейдите на вкладку **Версионирование**. Убедитесь, что оно включено.
+1. Перейдите на вкладку **Блокировка**.
+1. Включите блокировку объектов, если этого не было сделано ранее.
+1. Нажмите на значок ![ ](../../../assets/settings-sliders.svg "inline").
+1. Включите или выключите опцию **Бессрочная блокировка**.
+1. Нажмите кнопку **Применить**.
+
+{/tab}
 
 {tab(AWS CLI)}
 
@@ -330,6 +392,39 @@
 
 {tabs}
 
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, в котором находится нужный бакет.
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Нажмите на имя бакета.
+1. Нажмите на имя объекта.
+1. Перейдите на вкладку **Версионирование**. Убедитесь, что оно включено.
+1. Перейдите на вкладку **Блокировка**.
+1. Включите блокировку объектов, если этого не было сделано ранее.
+1. Нажмите на значок ![ ](../../../assets/settings-sliders.svg "inline").
+1. Включите или выключите опцию **Временная блокировка**.
+1. Если вы включили опцию **Временная блокировка**, выберите режим защиты:
+
+    - `Governance` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]} с возможностью обхода блокировки;
+    - `Compliance` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]} без возможности снятия блокировки до истечения установленного срока.
+
+1. Если вы включили опцию **Временная блокировка**, укажите дату и время окончания блокировки. Минимальное значение — 24 часа с момента установки блокировки.
+1. Нажмите кнопку **Применить**.
+
+{/tab}
+
 {tab(AWS CLI)}
 
 1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
@@ -358,8 +453,8 @@
     - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
     - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]};
-      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]}.
+      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]} с возможностью обхода блокировки;
+      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]} без возможности снятия блокировки до истечения установленного срока.
   
     - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
@@ -422,8 +517,8 @@
     - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
     - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]};
-      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]}.
+      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]} с возможностью обхода блокировки;
+      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]} без возможности снятия блокировки до истечения установленного срока.
 
     - `<YYYY-MM-DD HH:MM:SS>` — дата и время окончания блокировки.
 
@@ -481,8 +576,8 @@
     - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
     - `<РЕЖИМ_БЛОКИРОВКИ>` — режим блокировки:
 
-      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]};
-      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]}.
+      - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]} с возможностью обхода блокировки;
+      - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]} без возможности снятия блокировки до истечения установленного срока.
 
     - `<YYYY-MM-DD HH:MM:SS>` — новая более поздняя дата и время окончания блокировки.
 
@@ -560,7 +655,9 @@
 ## {heading(Обход временной блокировки)[id=s3-instructions-object-lock-bypass-governance-retention]}
 
 {note:warn}
-Обойти временную блокировку со строгим режимом (`COMPLIANCE`) нельзя.
+Временную блокировку можно обойти только с помощью AWS CLI или {linkto(../../../api#s3-api)[text=API]} и только для объектов с блокировкой в {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемом режиме]} (`GOVERNANCE`).
+
+Обойти блокировку со {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгим режимом]} (`COMPLIANCE`) нельзя.
 {/note}
 
 Пользователь, обладающий {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=правами на запись WRITE]}, может обойти временную блокировку с режимом `GOVERNANCE`, используя в командах флаг `--bypass-governance-retention`. Обходя блокировку, он может:

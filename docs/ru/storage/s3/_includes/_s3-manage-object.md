@@ -52,8 +52,8 @@ aws s3api put-object-lock-configuration \
 
 {/includetag}
 {includetag(configuration_lock_object_guide)}
-  - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим]};
-  - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим]}.
+  - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=управляемый режим блокировки]} с возможностью ее обхода;
+  - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=строгий режим блокировки]} без возможности ее снятия до истечения установленного срока.
 {/includetag}
 {includetag(configuration_lock_object)}
 - `<СРОК_БЛОКИРОВКИ>` — срок блокировки в днях (`Days`) или годах (`Years`) от момента загрузки объекта. Нельзя указать `Days` и `Years` одновременно. Пример: `1825` дней (5 лет).
