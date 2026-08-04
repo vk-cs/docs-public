@@ -13,7 +13,7 @@
 1. Қажетті бакет орналасқан жобаны таңдаңыз. Егер сізде әлі бакет болмаса, {linkto(../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=оны жасаңыз]}.
 {/includetag}
 {includetag(s3_create_cdn_all)}
-1. **Объектілік қойма** → **Бакеттер** бөліміне өтіңіз.
+1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 1. Бакет баптауларына келесі тәсілдердің бірімен өтіңіз:
 {/includetag}
 

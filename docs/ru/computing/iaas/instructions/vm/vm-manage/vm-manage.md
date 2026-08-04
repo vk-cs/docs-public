@@ -551,7 +551,7 @@ systemctl status qemu-guest-agent
 1. Создайте ссылку на файл с публичным ключом.
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
+   1. Перейдите в раздел **Object Storage** → **Бакеты**.
    1. Используйте существующий бакет или {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=создайте новый]}.
    1. {linkto(../../../../../storage/s3/instructions/objects/upload-object#s3-instructions-upload-object)[text=Добавьте файл]} с публичным ключом в бакет.
    1. {linkto(../../../../../storage/s3/instructions/access-management/signed-url#s3-instructions-signed-url)[text=Включите доступ]} по ссылке к этому файлу.
