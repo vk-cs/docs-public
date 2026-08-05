@@ -25,10 +25,7 @@
 
     - Объектінің {linkto(../features#s3-concepts-features-tagging)[text=тегтері]} бойынша (`Tag` немесе `Tags` параметрі).
 
-  - Объектінің өмір сүру уақыты (`Expiration` параметрі). Объект қашан жойылуы керегін анықтайды:
-
-    - жүктелгеннен кейін берілген күндер саны өткен соң;
-    - берілген уақытта (тек {ifdef(public)}{linkto(../../api/lifecycle#s3-api-lifecycle)[text=API]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../../api/lifecycle#s3-api-lifecycle)[text=API]}{/ifdef} және {linkto(../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} көмегімен).
+  - Нысанның өмір сүру уақыты (`Expiration` параметрі). Нысан жойылатын күндер санын анықтайды.
 
 - Ереже қосылғаннан кейін ол бакеттегі тиісті объектілерге немесе объект нұсқаларына автоматты түрде қолданылады.
 
@@ -51,7 +48,7 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 
 Конфигурацияны {linkto(../../instructions/manage-lifecycle#s3-instructions-manage-lifecycle)[text=орнату]} үшін үлгілерді қолданар алдында мыналарды орындау қажет:
 
-- `Expiration` блогында `Days`, `Date`, `ExpiredObjectDeleteMarker` элементтерінің ішінен тек біреуін қалдырып, қалғандарын жою;
+- `Expiration` блогында `Days`, `ExpiredObjectDeleteMarker` элементтерінің ішінен тек біреуін қалдырып, қалғандарын жою;
 - барлық `// <ТЕКСТ_КОММЕНТАРИЯ>` комментарийлерін жою;
 - өрістерді қажетті мәндермен толтыру;
 - егер бакетте нұсқалау қосылмаған болса, `NoncurrentVersionExpiration` конфигурация элементін жою.
@@ -67,9 +64,8 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 1,                                       // Указывается вместо Date и ExpiredObjectDeleteMarker
-        "Date": "YYYY-MM-DDTHH:MM:SSZ",                  // Указывается вместо Days и ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true                // Указывается вместо Days и Date (только для бакетов с версионированием)
+        "Days": 1,                                       // Указывается вместо ExpiredObjectDeleteMarker
+        "ExpiredObjectDeleteMarker": true                // Указывается вместо Days (только для бакетов с версионированием)
       },
       "ID": "string",
       "Status": "Enabled",
@@ -117,9 +113,9 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 - `null` — жалғыз нұсқа: `null` нұсқасы жойылады.
 - Нұсқалар бірнешеу және ағымдағысы — `null`: `null` нұсқасы жойылады. Егер `null` нұсқасы жойылғаннан кейін объектінің басқа нұсқалары қалса, `null` нұсқасымен жою маркері жасалады.
 - Нұсқалар бірнешеу және ағымдағысы `null` емес: тек `null` нұсқасымен жою маркері жасалады.
-- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` немесе `Date` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
+- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
 
-`Days`, `Date` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
+`Days` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
 
 Форматы: `object`.
 
@@ -128,20 +124,11 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 |`Days`
 |Бакетке жүктелгеннен кейінгі күндер саны.
 
-`Rules[i]` → `Expiration` → `Date` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
+`Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
 
 Форматы: `integer`.
 
 Толық жолы: `Rules[i]` → `Expiration` → `Days`
-
-|`Date`
-|ISO 8601 форматындағы UTC күн мен уақыт.
-
-`Rules[i]` → `Expiration` → `Days` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
-
-Форматы: `string`.
-
-Толық жолы: `Rules[i]` → `Expiration` → `Date`
 
 |`ExpiredObjectDeleteMarker`
 
@@ -258,9 +245,8 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 30,                              // Указывается вместо Date и ExpiredObjectDeleteMarker
-        "Date": "YYYY-MM-DDTHH:MM:SSZ",          // Указывается вместо Days и ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days и Date (только для бакетов с версионированием)
+        "Days": 30,                              // Указывается вместо ExpiredObjectDeleteMarker
+        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days (только для бакетов с версионированием)
       },
       "ID": "string",
       "Status": "Enabled",
@@ -294,16 +280,16 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 Нұсқалау қосылған бакет үшін.
 
 - Ағымдағы нұсқа жою маркері емес — жою маркері жасалып, ағымдағы нұсқаға айналады.
-- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` немесе `Date` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
+- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
 
 Нұсқалау тоқтатылған бакет үшін.
 
 - `null` — жалғыз нұсқа: `null` нұсқасы жойылады.
 - Нұсқалар бірнешеу және ағымдағысы — `null`: `null` нұсқасы жойылады. Егер `null` нұсқасы жойылғаннан кейін объектінің басқа нұсқалары қалса, `null` нұсқасымен жою маркері жасалады.
 - Нұсқалар бірнешеу және ағымдағысы `null` емес: тек `null` нұсқасымен жою маркері жасалады.
-- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` немесе `Date` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
+- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
 
-`Days`, `Date` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
+`Days` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
 
 Форматы: `object`.
 
@@ -312,20 +298,11 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 |`Days`
 |Бакетке жүктелгеннен кейінгі күндер саны.
 
-`Rules[i]` → `Expiration` → `Date` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
+`Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
 
 Форматы: `integer`.
 
 Толық жолы: `Rules[i]` → `Expiration` → `Days`
-
-|`Date`
-|ISO 8601 форматындағы UTC күн мен уақыт.
-
-`Rules[i]` → `Expiration` → `Days` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
-
-Форматы: `string`.
-
-Толық жолы: `Rules[i]` → `Expiration` → `Date`
 
 |`ExpiredObjectDeleteMarker`
 
@@ -412,9 +389,8 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 30,                              // Указывается вместо Date и ExpiredObjectDeleteMarker
-        "Date": "YYYY-MM-DDTHH:MM:SSZ",          // Указывается вместо Days и ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days и Date (только для бакетов с версионированием)
+        "Days": 30,                              // Указывается вместо ExpiredObjectDeleteMarker
+        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days (только для бакетов с версионированием)
       },
       "ID": "string",
       "Status": "Enabled",
@@ -447,16 +423,16 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 Нұсқалау қосылған бакет үшін.
 
 - Ағымдағы нұсқа жою маркері емес — жою маркері жасалып, ағымдағы нұсқаға айналады.
-- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` немесе `Date` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
+- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
 
 Нұсқалау тоқтатылған бакет үшін.
 
 - `null` — жалғыз нұсқа: `null` нұсқасы жойылады.
 - Нұсқалар бірнешеу және ағымдағысы — `null`: `null` нұсқасы жойылады. Егер `null` нұсқасы жойылғаннан кейін объектінің басқа нұсқалары қалса, `null` нұсқасымен жою маркері жасалады.
 - Нұсқалар бірнешеу және ағымдағысы `null` емес: тек `null` нұсқасымен жою маркері жасалады.
-- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` немесе `Date` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
+- Ағымдағы нұсқа жою маркері — ештеңе болмайды. Алайда басқа нұсқалар жоқ болса және `Days` орнына `ExpiredObjectDeleteMarker` қолданылса, жою маркері жойылады.
 
-`Days`, `Date` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
+`Days` немесе `ExpiredObjectDeleteMarker` конфигурация элементтері арқылы беріледі.
 
 Форматы: `object`.
 
@@ -465,27 +441,18 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 |`Days`
 |Бакетке жүктелгеннен кейінгі күндер саны.
 
-`Rules[i]` → `Expiration` → `Date` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
+`Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
 
 Форматы: `integer`.
 
 Толық жолы: `Rules[i]` → `Expiration` → `Days`
-
-|`Date`
-|ISO 8601 форматындағы UTC күн мен уақыт.
-
-`Rules[i]` → `Expiration` → `Days` және `Rules[i]` → `Expiration` → `ExpiredObjectDeleteMarker` конфигурация элементтерімен үйлеспейді.
-
-Форматы: `string`.
-
-Толық жолы: `Rules[i]` → `Expiration` → `Date`
 
 |`ExpiredObjectDeleteMarker`
 
 (тек нұсқалауы бар бакеттер үшін)
 |Бакеттен объектінің жою маркерін, осы объектінің басқа нұсқалары қалмаған кезде, жою қажет пе екенін анықтайтын опция.
 
-`Rules[i]` → `Expiration` → `Days` және `Rules[i]` → `Expiration` → `Date` конфигурация элементтерімен үйлеспейді.
+`Rules[i]` → `Expiration` → `Days` конфигурация элементтерімен үйлеспейді.
 
 Форматы: `boolean` мәні `true`.
 
