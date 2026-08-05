@@ -29,7 +29,7 @@
 
 1. Обновляются worker-узлы в группах.
 
-   Процедура тоже выполняется по принципу rolling update, но за шаг обновляется не один, а максимально возможное количество узлов. Это количество рассчитывается, исходя из {linkto(../../instructions/helpers/node-group-settings#k8s-node-group-settings)[text=настройки группы узлов]} **Процент недоступных нод при обновлении кластера**. Значение этой настройки вы можете установить как в момент {linkto(../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=создания]} группы узлов, так и перед началом {linkto(../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=обновления]} кластера. При расчетах используется округление до целого в большую сторону.
+   Процедура тоже выполняется по принципу rolling update, но за шаг обновляется не один, а максимально возможное количество узлов. Это количество рассчитывается, исходя из {linkto(../../instructions/manage-node-group#k8s-manage-node-group)[text=настройки группы узлов]} **Процент недоступных нод при обновлении кластера**. Значение этой настройки вы можете установить как в момент {linkto(../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=создания]} группы узлов, так и перед началом {linkto(../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=обновления]} кластера. При расчетах используется округление до целого в большую сторону.
 
 ## {heading(Как посчитать процент недоступных узлов при обновлении кластера)[id=k8s-update-unavailable-nodes]}
 
