@@ -3,7 +3,8 @@
 Техническая поддержка оказывается круглосуточно. Доступные каналы связи:
 
 - портал технической поддержки VK Tech https://support.mcs.mail.ru;
-- [Telegram-бот](/ru/start/support/chatbots/tg-support-bot) `@vk_tech_support_bot`;
+- [MAX-бот](/ru/start/support/chatbots/support-bot) `@vk_tech_support_bot`;
+- [Telegram-бот](/ru/start/support/chatbots/support-bot) `@vk_tech_support_bot`;
 - почта [support@mcs.mail.ru](mailto:support@mcs.mail.ru);
 - телефон +7 (499) 350-97-03.
 
@@ -31,11 +32,25 @@
    
    Созданная заявка появится в разделе **Мои заявки**.
 
-## {heading(Обращение через Telegram-бота)[id=onboarding-contact-support-telegram]}
+## {heading(Обращение через ИИ-ассистента)[id=onboarding-contact-support-telegram]}
 
-Чтобы воспользоваться Telegram-ботом, пройдите регистрацию в нем.
+Чтобы воспользоваться ИИ-ассистентом в MAX или Telegram, пройдите регистрацию в нем.
 
 1. [Перейдите](https://support.mcs.mail.ru/) в портал технической поддержки VK Tech.
 1. Пройдите аутентификацию с помощью учетной записи {var(cloud)}, для этого нажмите кнопку **Войти с помощью VK Cloud**.
 
+{tabs}
+
+{tab(MAX)}
+
+{include(../../../_includes/_max-support-bot.md)}
+
+{/tab}
+
+{tab(Telegram)}
+
 {include(../../../_includes/_tg-support-bot.md)}
+
+{/tab}
+
+{/tabs}

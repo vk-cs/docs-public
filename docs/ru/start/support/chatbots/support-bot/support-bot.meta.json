@@ -1,10 +1,10 @@
 {
   "title": "Поддержка VK Tech",
-  "shortDescription": "Как подключить и использовать Telegram-бот для работы с заявками в техническую поддержку VK Tech",
-  "metaDescription": "Как подключить и использовать Telegram-бот для работы с заявками в техническую поддержку VK Tech",
+  "shortDescription": "Как подключить и использовать бот в MAX и Telegram для работы с заявками в техническую поддержку VK Tech",
+  "metaDescription": "Как подключить и использовать бот в MAX и Telegram для работы с заявками в техническую поддержку VK Tech",
   "sectionTitle": "Поддержка VK Tech",
   "icon": "",
-  "weight": 0,
+  "weight": 3,
   "additionalUuids": [
     "601ddd8f-bfd7-47a1-a546-2eadb18d0b5d"
   ],

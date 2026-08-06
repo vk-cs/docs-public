@@ -30006,8 +30006,8 @@
     "locale": false
   },
   {
-    "source": "/ru/intro/start/support/chatbots/tg-support-bot",
-    "destination": "/ru/start/support/chatbots/tg-support-bot",
+    "source": "/ru/intro/start/support/chatbots/support-bot",
+    "destination": "/ru/start/support/chatbots/support-bot",
     "permanent": false,
     "locale": false
   },
