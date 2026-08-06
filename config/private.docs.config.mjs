@@ -108,6 +108,11 @@ export const config = {
                     iconPartialPath: '/ru/assets/portal-support.svg',
                 },
                 {
+                    title: 'MAX-бот техподдержки',
+                    absoluteLink: 'https://max.ru/vk_tech_support_bot',
+                    iconPartialPath: '/ru/assets/max-icon.svg',
+                },
+                {
                     title: 'Telegram-бот техподдержки',
                     absoluteLink: 'https://t.me/vk_tech_support_bot',
                     iconPartialPath: '/ru/assets/telegram-icon.svg',
