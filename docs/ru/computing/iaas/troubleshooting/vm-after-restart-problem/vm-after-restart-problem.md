@@ -4,7 +4,7 @@
 
 Ошибка может быть вызвана различными причинами.
 
-### {headingРешение)[id=iaas-vm-after-restart-problem-decision]}
+### {heading(Решение)[id=iaas-vm-after-restart-problem-decision]}
 
 {linkto(../../../../computing/iaas/how-to-guides/interface-settings-check#iaas-interface-settings-check-access)[text=Проверьте]} настройки сетевого интерфейса внутри ОС (файлы конфигурации `netplan` или `ifcfg`). Возможно, интерфейс не получает IP-адрес по DHCP или изменилось имя интерфейса.
 
