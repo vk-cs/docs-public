@@ -11,10 +11,7 @@ At the top of the management console page, [the payment account balance and the 
 To see details and costs of services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Open the balance page using one of these options:
-
-   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
-   - Select the **Balance** section in the side menu.
+{include(/en/_includes/_balance_page.md)}
 
 {note:info}
 
@@ -29,27 +26,32 @@ It is possible to credit funds to the [payment account balance](../../concepts/b
 To make a payment:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Click on the ![Make a payment](assets/icon_plus.svg "inline") icon at the top of the management console page or click on the **Make a payment** button on the [balance page](#viewing_the_balance).
-1. Specify the amount of the deposit.
+1. Open the balance top-up window by using one of the options:
+   1. Hover over the ![balance](/en/intro/billing/assets/balance.svg "inline")  icon in the page header and click the **Make a payment** button.
+   1. Go to the **Balance** page by clicking ![balance](/en/intro/billing/assets/balance.svg "inline") in the page header and click the **Make a payment** button.
+1. Specify the top-up amount.
 
-   The minimum amount that can be credited is 10 rubles for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) and 100 tenge for projects in the Kazakhstan region.
+   The minimum amount is 10 RUB for the projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions), and 100 KZT for the ones in Kazakhstan.
 
 1. Select one of the [payment methods](../../concepts/payment-methods).
 
-   Two options are available for paying via a bank card:
+   The following options are available for paying via a bank card:
 
-   - **Card**: for paying with a card that is [linked](../add-card) to the project.
+   - **Card**: to pay with a card that is [linked](../add-card) to the project. You do not need to enter the card details.
+   - **Bank card**: to add a new payment method via:
+   
+      - A new card.
+      - The Faster Payments System (FPS). You can link this method to your project by setting the **Сохранить для оплаты** checkbox.
 
-      When this option is selected, it is not necessary to enter the card details.
+         {note:info}
+         To disconnect payments via the FPS from your project, contact [technical support](mailto:support@mcs.mail.ru).
+         {/note}
+     
+      - Electronic money via SberPay and YooMoney.
 
-   - **Bank card**: for paying with a card that is not linked to the project.
    - **Payment by invoice for legal entities**: for paying by bank transfer by the generated invoice. Before generating the invoice, you can [add](/en/intro/billing/instructions/corporate#additional_registration_of_legal_entities) or [edit](/en/intro/billing/instructions/corporate#edit_company) your company details.
 
-   {note:info}
-
    For legal entities and sole proprietors, the recommended payment method is **Bank transfer**. Payments made using other methods are not included in the [financial documents](../../concepts/report) for legal entities and sole proprietors.
-
-   {/note}
 
 ## Expenses notifications
 
@@ -58,10 +60,8 @@ You can set up a monthly expenses limit for each of your projects. When an expen
 To set up an expenses limitation and notifications:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
-   - Select the **Balance** section in the side menu.
+{include(/en/_includes/_balance_page.md)}
 
 1. On the balance page, go to the **Limitation** tab.
 

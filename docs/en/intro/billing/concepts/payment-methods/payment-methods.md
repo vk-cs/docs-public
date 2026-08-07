@@ -6,29 +6,24 @@ The list of available payment methods is displayed on the **Balance** page of th
 
 {tab(Moscow)}
 
-- Bank card.
-
-  {note:warn}
-
-  It is recommended to use physical bank cards. Payments from virtual cards can be rejected by the security system.
-
-  {/note}
-
-  Bank cards issued in Russia with ruble currency are supported.
-
-  For all cards except UnionPay, you can [set up auto-top-up](../../instructions/add-card#configure_auto_completion).
-
-- Electronic money.
-
-  SberPay and YooMoney are supported.
-
-- Mobile payments from the phones of the main mobile operators.
-- Bank transfer.
+- Bank card
 
    {note:warn}
+   It is recommended to use physical bank cards. Payments from virtual cards can be rejected by the security system.
+   {/note}
 
+   Russian-issued cards with the ruble currency are supported.  
+   
+   For all cards except UnionPay, you can [set up](../../instructions/add-card#configure_auto_completion) automatic top-up.
+
+- Faster Payments System (FPS)
+- Electronic money: SberPay and YooMoney
+
+- Mobile payments from the phones of the main mobile operators
+- Bank transfer
+
+   {note:warn}
    In [accounting documents](../report) for legal entities, only payments made by bank transfer are taken into account.
-
    {/note}
 
 {/tab}
