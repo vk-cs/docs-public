@@ -214,3 +214,9 @@
 Время жизни ключа доступа не ограничено. Ключ действует до тех пор, пока вы его не {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys-deactivate-access-key)[text=деактивируете]} или не {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys-delete-access-key)[text=удалите]} вручную. В целях безопасности рекомендуется периодически проводить ротацию ключей.
 
 {/cut}
+
+{cut(Можно ли посмотреть детализацию расходов по отдельным бакетам?)}
+
+Нет, детализация затрат по отдельным бакетам недоступна. В разделе **Баланс и платежи** отображается общая стоимость использования сервиса {var(s3)}.
+
+{/cut}
