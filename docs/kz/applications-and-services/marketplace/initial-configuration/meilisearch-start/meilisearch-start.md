@@ -14,7 +14,7 @@ Meilisearch пайдалану арқылы сіз [Marketplace](/kz/start/legal
 
 VK Cloud жобасындағы ВМ-де Meilisearch сервисін өрістету үшін:
 
-1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
+1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app) өтіңіз.
 1. Өрістетілген сервисі бар ВМ-ге және интернеттен Meilisearch веб-интерфейсіне қол жеткізу үшін:
 
     1. Егер желі бұрын жасалмаған болса, интернетке қолжетімді [желіні жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).

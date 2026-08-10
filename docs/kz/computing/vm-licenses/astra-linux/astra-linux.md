@@ -4,7 +4,7 @@
 
 {var(cloud)} аясында [Astra Linux](https://astralinux.ru) компаниясының образдарын қолдайтын виртуалды машиналарды орнатуға қолдау көрсетіледі.
 
-Операциялық жүйенің қолжетімді редакциялары {var(cloud)} [жеке кабинет](https://kz.cloud.vk.com/app/services/infra/servers/add) арқылы ВМ жасау кезінде **Операциялық жүйе** ашылмалы тізімінде көрсетіледі.
+Операциялық жүйенің қолжетімді редакциялары {var(cloud)} [жеке кабинет](https://kz.cloud.vk.kz/app/services/infra/servers/add) арқылы ВМ жасау кезінде **Операциялық жүйе** ашылмалы тізімінде көрсетіледі.
 
 Astra Linux Speсial Edition 1.7 келесі қолдану сценарийлеріне жарамды:
 
@@ -50,7 +50,7 @@ Astra Linux Special Edition 1.7 «Воронеж» толыққанды серв
 
 БҚ пайдаланудың айлық бағасын мына жерлерден білуге болады:
 
-- [баға парағында](https://cloud.vk.com/pricelist);
+- [баға парағында](https://cloud.vk.kz/pricelist);
 - виртуалды машинаны (ВМ) [жасау](/kz/computing/iaas/instructions/vm/vm-create) кезінде;
-- [жоба баптауларында](https://kz.cloud.vk.com/app/project/) **Бағалар** қойындысында.
-- [жеке кабинеттегі](https://kz.cloud.vk.com/app/services/billing) **Баланс** бөлімінде.
+- [жоба баптауларында](https://kz.cloud.vk.kz/app/project/) **Бағалар** қойындысында.
+- [жеке кабинеттегі](https://kz.cloud.vk.kz/app/services/billing) **Баланс** бөлімінде.

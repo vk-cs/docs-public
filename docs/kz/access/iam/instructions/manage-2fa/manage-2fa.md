@@ -10,7 +10,7 @@
 
 ## {heading(2FA өшіру)[id=iam-manage-2fa-off]}
 
-1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
 1. **Қауіпсіздік** бөліміне өтіңіз.
 1. **Екі факторлы аутентификация** блогында ![pencil-icon](/kz/assets/pencil-icon.svg "inline") белгішесін басыңыз.
 1. Аккаунтыңыздың құпиясөзін және аутентификация қолданбасындағы кодты енгізіңіз.

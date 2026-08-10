@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Кітапханалар мен артефактілер репозиторийлерін модульдік әзірлеуде пайдалану үшін [Nexus 3](https://kz.cloud.vk.com/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info) сервисінің көмегімен өрістете аласыз. Бұл нұсқаулық VK Cloud-тағы ВМ-ге Nexus 3 сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
+Кітапханалар мен артефактілер репозиторийлерін модульдік әзірлеуде пайдалану үшін [Nexus 3](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info) сервисінің көмегімен өрістете аласыз. Бұл нұсқаулық VK Cloud-тағы ВМ-ге Nexus 3 сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
 
 Nexus 3 сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [Sonatype](https://sonatype.ru/prices) сервистерінің лицензиялық келісімдерімен келісесіз.
 

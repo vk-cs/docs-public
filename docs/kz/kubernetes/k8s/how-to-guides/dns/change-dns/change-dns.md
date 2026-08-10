@@ -7,7 +7,7 @@
 ## {heading(Дайындық қадамдары)[id=k8s-change-dns-prepare]}
 
 1. {linkto(/ru/tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI орнатыңыз және аутентификациядан өтіңіз]}, егер бұл әлі жасалмаған болса.
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Kubernetes кластерлері** → **Kubernetes кластерлері** бөліміне өтіңіз.
 1. DNS баптауларын өзгерту қажет кластердің атауын басыңыз.
 1. **Жалпы деректер** қойындысында кластер орналасқан желі мен ішкі желінің атауын біліңіз.

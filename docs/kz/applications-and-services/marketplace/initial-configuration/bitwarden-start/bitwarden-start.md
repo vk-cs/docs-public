@@ -39,7 +39,7 @@ Bitwarden сервисін пайдалану арқылы сіз [Marketplace V
 VK Cloud жобаңыздағы ВМ-де Bitwarden сервисін орналастыру үшін:
 
 1. [Bitwarden ресми бетінде](https://bitwarden.com/host) орнату идентификаторы мен кілтін сұратыңыз. Сұрауда Bitwarden хабарламаларын алғыңыз келетін поштаны және `EU` аймағын көрсетіңіз.
-1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне өтіңіз](https://kz.cloud.vk.com/app).
+1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне өтіңіз](https://kz.cloud.vk.kz/app).
 1. Орналастырылған сервисі бар ВМ-ге және интернеттен Bitwarden веб-интерфейсіне қол жеткізу үшін:
 
     1. Егер желі бұрын жасалмаған болса, интернетке қолжетімді [желі жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).

@@ -9,6 +9,6 @@
 
 ## {heading(Конфигурация үлгісін қосу)[id=gpu-connect-flavor]}
 
-Cloud GPU сервисін пайдалануды бастау үшін, қажетті конфигурация үлгісін қосуға өтінімді [VK Cloud сайтында](https://cloud.vk.com/cloud-gpu) немесе [техникалық қолдау](/kz/contacts) арқылы қалдырыңыз:
+Cloud GPU сервисін пайдалануды бастау үшін, қажетті конфигурация үлгісін қосуға өтінімді [VK Cloud сайтында](https://cloud.vk.ru/cloud-gpu) немесе [техникалық қолдау](/kz/contacts) арқылы қалдырыңыз:
 
 {include(/kz/_includes/_gpu_connect.md)}

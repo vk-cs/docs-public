@@ -4,7 +4,7 @@
 
 Қажетті виртуалды машиналарды жылдам табу үшін сүзгілерді пайдаланыңыз:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Облачные вычисления → Виртуальные машины** бөліміне өтіңіз.
 1. **Поиск по инстансам** өрісін басыңыз. Қолжетімді сүзгілер тізімі ашылады:
 

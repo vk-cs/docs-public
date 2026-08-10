@@ -165,10 +165,10 @@ OpenStack пәрмен жолы интерфейсі (OpenStack CLI) {var(cloud)
 
 ## {heading({counter(cli)}. Аутентификациядан өтіңіз)[id=openstack-authorize]}
 
-1. {var(cloud)} [жеке кабинетіне](https://kz.cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://kz.cloud.vk.kz/app/) өтіңіз.
 2. Екі факторлы аутентификация [қосылғанына](/kz/access/iam/instructions/manage-2fa) және API арқылы қолжетімділік [белсендірілгеніне](/kz/tools-for-using-services/api/rest-api/enable-api) көз жеткізіңіз.
 3. Жобаны таңдаңыз.
-4. **Жоба баптаулары** бетінде **API арқылы қолжетімділік** [қойындысына өтіңіз](https://kz.cloud.vk.com/app/project/keys/).
+4. **Жоба баптаулары** бетінде **API арқылы қолжетімділік** [қойындысына өтіңіз](https://kz.cloud.vk.kz/app/project/keys/).
 5. **openrc версии 3 жүктеп алу** түймесін басыңыз. `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh` атауымен файл жүктеледі.
 6. Орта айнымалыларында аутентификация үшін тіркелгі деректерін көрсетіңіз.
 

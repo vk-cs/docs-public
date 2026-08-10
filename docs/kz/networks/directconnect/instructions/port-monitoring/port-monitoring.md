@@ -8,7 +8,7 @@ Cloud Direct Connect сервисіне қосылу жүзеге асатын �
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
 1. **Виртуалды желілер** → **Direct Connect** бөліміне өтіңіз.
 
@@ -34,7 +34,7 @@ Cloud Direct Connect сервисіне қосылу жүзеге асатын �
 1. Барлық қосылымдардың тізімін алыңыз:
 
    ```console
-    curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://kz.cloud.vk.com/junp/v1/connections/
+    curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://kz.cloud.vk.kz/junp/v1/connections/
     ```
 
     Мұнда `<ТОКЕН>` — API-ге қатынау токені.
@@ -84,7 +84,7 @@ Cloud Direct Connect сервисіне қосылу жүзеге асатын �
 1. Порт туралы толық деректерді алыңыз:
 
    ```console
-   curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://kz.cloud.vk.com/junp/v1/connections/{connectionUuid}
+   curl -X GET -H "X-Auth-Token: <ТОКЕН>" https://kz.cloud.vk.kz/junp/v1/connections/{connectionUuid}
    ```
 
    Мұнда `connectionUuid` — қосылымдар тізіміне сұрау жасағанда алынған `uuid` параметрінің мәні.

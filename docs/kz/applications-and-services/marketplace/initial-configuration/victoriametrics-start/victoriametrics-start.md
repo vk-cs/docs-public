@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[VictoriaMetrics](https://kz.cloud.vk.com/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info) сервисінің көмегімен уақыт қатарлары дерекқорында (time series database) метрикаларды жинай, сақтай және талдай аласыз.
+[VictoriaMetrics](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/f260ad2b-bdc1-4ccc-a35f-2f440681e0f6/latest/info) сервисінің көмегімен уақыт қатарлары дерекқорында (time series database) метрикаларды жинай, сақтай және талдай аласыз.
 
 Нұсқаулық VictoriaMetrics сервисін (1.93.9 нұсқасы мысалында) VK Cloud-тағы ВМ-ге өрістетіп, метрикаларды жинауды баптауға көмектеседі.
 

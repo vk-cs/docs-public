@@ -5,7 +5,7 @@
   "sectionTitle": "Получение сервисного токена",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "9442dea0-65cf-4689-bdaf-9a86de3debf9",
   "build": {
     "for": [
       "public"

@@ -19,11 +19,11 @@
 
 ## {heading(Жеке тұлғалар үшін қайтаруды рәсімдеу)[id=billing-refund-individuals]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
 1. Қаражаттың есептен шығарылуын тоқтату үшін жобаны {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=консервациялаңыз]}.
 1. {var(cloud)} сайтының URL мекенжайынан жобаның {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификаторын (PID)]} көшіріп алыңыз.
 
-   Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.com/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
+   Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.kz/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
 
 1. Жеке кабинет бетінің тақырыбында **Көмек** мәзірін ашып, **Техқолдауға сұрау** тармағын таңдаңыз.
 
@@ -67,11 +67,11 @@
 
 ## {heading(Заңды тұлғалар мен ИП үшін қайтаруды рәсімдеу)[id=billing-refund-legal-entities]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
 1. Қаражаттың есептен шығарылуын тоқтату үшін жобаны {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=консервациялаңыз]}.
 1. {var(cloud)} сайтының URL мекенжайынан жобаның {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификаторын (PID)]} көшіріп алыңыз.
 
-   Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.com/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
+   Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.kz/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
 
 1. {var(cloud)} есептік жазбаңызға байланыстырылған электрондық поштада тақырыбы «{var(cloud)}: ақшалай қаражатты қайтару» болатын хат жасаңыз.
 1. Хатта мыналарды көрсетіңіз:

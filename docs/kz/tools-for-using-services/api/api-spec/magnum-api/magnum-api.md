@@ -4,7 +4,7 @@
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
 1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa), егер бұл әлі жасалмаса, екі факторлы аутентификацияны.
 1. [Қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate), егер бұл әлі жасалмаса, API арқылы қолжетімділікті.
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба параметрлері** бөлімін таңдаңыз.

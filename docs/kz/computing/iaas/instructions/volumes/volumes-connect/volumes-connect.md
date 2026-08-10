@@ -8,7 +8,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Бұлттық есептеулер → Дискілер** бөліміне өтіңіз.
 1. Тізімнен ВМ-ге қосылмаған дискіні табыңыз: диск атауының сол жағындағы белгіше сұр түсті, оған меңзерді апарғанда **Инстансқа қосылмаған** деген жазу пайда болады.
 1. Дискіні қосу үшін виртуалды машинаны таңдау терезесін ашу үшін тәсілдердің бірін қолданыңыз.
@@ -80,7 +80,7 @@
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Перейдите](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Перейдите]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. Қажетті дискілер тізімі бар бетті ашыңыз.
 
    - Барлық дискілер: **Бұлттық есептеулер** → **Дискілер** бөліміне өтіңіз.

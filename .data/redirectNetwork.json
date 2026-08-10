@@ -3937,7 +3937,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/dbaas-start/dbaas-logs",
-    "destination": "/ru/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -4885,7 +4885,7 @@
   },
   {
     "source": "/en/dbs/dbaas/dbaas-start/dbaas-logs",
-    "destination": "/en/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -7243,7 +7243,7 @@
   },
   {
     "source": "/en/dbs/dbaas/config/dbaas-logs",
-    "destination": "/en/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -7363,7 +7363,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/config/dbaas-logs",
-    "destination": "/ru/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -28639,7 +28639,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/service-management/dbaas-logs",
-    "destination": "/ru/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -31243,7 +31243,7 @@
   },
   {
     "source": "/en/dbs/dbaas/service-management/dbaas-logs",
-    "destination": "/en/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -33782,6 +33782,18 @@
   {
     "source": "/ru/applications-and-services/1cgrm/about",
     "destination": "/ru/applications-and-services/1cgrm/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/dbs/dbaas/instructions/dbaas-logs",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }

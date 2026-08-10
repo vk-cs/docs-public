@@ -135,7 +135,7 @@ Cloud ClickHouse жүйесінде `Стандартты пайдаланушы
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. {var(cloud)} жүйесінің жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жүйесінің жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 {include(../../../_includes/_data_p.md)[tags=instance_extensions]}
@@ -151,7 +151,7 @@ Cloud ClickHouse жүйесінде `Стандартты пайдаланушы
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. {var(cloud)} жүйесінің жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жүйесінің жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.

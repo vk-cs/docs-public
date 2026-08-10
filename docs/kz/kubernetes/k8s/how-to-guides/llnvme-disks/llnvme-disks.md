@@ -58,7 +58,7 @@
 
 LL NVMe дискілерін worker-түйіндерге қосу процесін зерттеу үшін `coffee` тестілік қолданбасын іске қосыңыз.
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Подтың LL NVMe дискілері бар түйіндерге орналасуын қамтамасыз ету үшін бұрын жасалған түйіндер тобына `disktype: ef-nvme` меткасын {linkto(../../instructions/manage-node-group#k8s-manage-node-group-labels-taints)[text=қосыңыз]}:
 
    - **Key**: `disktype`.

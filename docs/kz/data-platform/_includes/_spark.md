@@ -16,7 +16,7 @@ Cloud Spark — {var(cloud)} ұсынған [Apache Spark Operator](https://gith
 {includetag(open)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.

@@ -11,7 +11,7 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
 ## {heading({counter(TOC)}. Сервер желісі туралы ақпарат алыңыз)[id=bare-metal-router-get-info]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Бұлтты есептеулер** → **Bare Metal** бөліміне өтіңіз.
 1. Bare Metal серверлер тізімінен қажетті сервердің атауын басыңыз.
 1. **Желі** қойындысына өтіңіз.
@@ -25,7 +25,7 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
 ## {heading({counter(TOC)}. Жетілдірілген маршрутизаторды баптаңыз)[id=bare-metal-router-settings]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Виртуалды желілер** → **Маршрутизаторлар** бөліміне өтіңіз.
 1. Қажетті маршрутизатордың атауын басыңыз.
 1. **Интерфейстер** қойындысына өтіңіз.

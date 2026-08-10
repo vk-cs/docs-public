@@ -8,7 +8,7 @@ Cloud Servers ішінде файлдық сақтау орындарын жек
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Файлдық сақтау орнын жасау қажет [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. **Сақтау орнын жасау** немесе **Жасау** батырмасын басыңыз.

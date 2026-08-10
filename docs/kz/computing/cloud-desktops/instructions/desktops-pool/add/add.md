@@ -13,13 +13,13 @@
 
    Образды кез келген ыңғайлы тәсілмен дайындауға болады, мысалы, {ifdef(public,private,private-pg)}[тәжірибелік нұсқаулықтардың](/kz/computing/iaas/how-to-guides){/ifdef}{ifdef(private-pdf,private-pg-pdf)}<!---{linkto(../../../../../computing/iaas/how-to-guides)[text=тәжірибелік нұсқаулықтардың]}-->{/ifdef} бірін пайдаланып.
 
-1. Егер сізге GPU графикалық процессорлары бар жұмыс үстелдері қажет болса, {ifdef(private,private-pg,private-pdf,private-pg-pdf)}{var(cloud)} әкімшісіне хабарласыңыз.{/ifdef}{ifdef(public)}[VK Cloud сайтында](https://cloud.vk.com/cloud-gpu) немесе [техникалық қолдау](/kz/contacts) арқылы қажет конфигурация шаблонын қосуға өтінім қалдырыңыз:
+1. Егер сізге GPU графикалық процессорлары бар жұмыс үстелдері қажет болса, {ifdef(private,private-pg,private-pdf,private-pg-pdf)}{var(cloud)} әкімшісіне хабарласыңыз.{/ifdef}{ifdef(public)}[VK Cloud сайтында](https://cloud.vk.ru/cloud-gpu) немесе [техникалық қолдау](/kz/contacts) арқылы қажет конфигурация шаблонын қосуға өтінім қалдырыңыз:
 
    {include(/kz/_includes/_gpu_connect.md)}{/ifdef}
 
 1. Егер бұрын сервис инфрақұрылымы үшін {linkto(../../../../../computing/cloud-desktops/instructions/config/setup-net#desktops-setup-net)[text=желіні баптау]} кезінде {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-manual)[text=қолмен басқару режимін]} таңдасаңыз, жұмыс үстелдері пулы үшін желіні дайындаңыз:
 
-   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
    1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
    1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}.
    1. Қажетті ішкі желі үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Ішкі желіні өңдеу** тармағын таңдаңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=жасаңыз]}, мұнда {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескеріңіз.
@@ -31,7 +31,7 @@
 
 ## {heading(1. Пулды құру шеберін іске қосыңыз)[id=desktops-pool-launch-master]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Жұмыс үстелдері пулдары** бөліміне өтіңіз.
 1. **Қосу** батырмасын басыңыз.
 

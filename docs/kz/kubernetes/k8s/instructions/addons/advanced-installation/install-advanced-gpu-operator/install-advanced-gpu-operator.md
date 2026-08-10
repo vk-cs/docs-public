@@ -8,7 +8,7 @@
 
 ## {heading(Аддонды орнату)[id=k8s-install-advanced-gpu-operator-install]}
 
-{linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-gpu-operator)[text=GPU Operator]} аддоны GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=бөлінген түйіндерге орнату]} қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.com/cloud-gpu/).
+{linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-gpu-operator)[text=GPU Operator]} аддоны GPU бар worker-түйіндерде жұмыс істейді, сондықтан ол үшін тек {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=бөлінген түйіндерге орнату]} қолжетімді. Кластерге GPU бар worker-түйіндерді қоса алу үшін Cloud GPU сервисін [қосыңыз](https://cloud.vk.ru/cloud-gpu/).
 
 1. Егер бұл әлі жасалмаса, аддонды орнату үшін бөлінген worker-түйіндер тобын дайындаңыз:
 
@@ -16,7 +16,7 @@
    
    {tab(Жеке кабинет)}
       
-   1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+   1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
    1. Тізімнен қажетті кластерді табыңыз.
@@ -41,7 +41,7 @@
    
    {tab(Жеке кабинет)}
       
-   1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+   1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
    1. Қажетті кластердің атауын басыңыз.

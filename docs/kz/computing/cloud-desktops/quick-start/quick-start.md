@@ -22,11 +22,11 @@
    - тіркелгілік жазбаның құпиясөзі.
 
 1. (Опционалды) Сервисте пайдаланылатын маршрутизаторда VPN-ді [баптаңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel).
-1. [Жеке кабинетте](https://kz.cloud.vk.com/app) Cloud Desktop сервисі қосылғанына көз жеткізіңіз: сол жақ мәзірде **Cloud Desktop** бөлімі қолжетімді болуы керек.
+1. [Жеке кабинетте](https://kz.cloud.vk.kz/app) Cloud Desktop сервисі қосылғанына көз жеткізіңіз: сол жақ мәзірде **Cloud Desktop** бөлімі қолжетімді болуы керек.
 
 ## {heading(1. Сыртқы инфрақұрылымды баптаңыз)[id=desktops-quick-start-settings]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жұмыс үстелдері орналастырылатын <!--[проект](/kz/tools-for-using-services/account/concepts/projects)--> жобаны таңдаңыз.
 1. **Cloud Desktop** → **Сервис баптаулары** бөліміне өтіңіз.
 1. **Желіні баптау** қойындысында мыналарды көрсетіңіз:

@@ -20,7 +20,7 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 

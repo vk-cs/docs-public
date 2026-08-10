@@ -6,7 +6,7 @@
 
 PaaS құрамына кірмейтін жүйелердің логтарын сәйкестендіру үшін ресурс жасаңыз:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Логтау** бөліміне өтіңіз.
 1. **Баптаулар** батырмасын басыңыз.
 1. **Басқа ресурстар** қойындысына өтіп, **Ресурс қосу** батырмасын басыңыз.
@@ -16,7 +16,7 @@ PaaS құрамына кірмейтін жүйелердің логтарын �
 
 ## {heading(Оқиғалар журналдары ресурсын өңдеу)[id=logging-manage-resource-edit]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Логтау** бөліміне өтіңіз.
 1. **Баптаулар** батырмасын басыңыз.
 1. **Басқа ресурстар** қойындысына өтіңіз.
@@ -25,7 +25,7 @@ PaaS құрамына кірмейтін жүйелердің логтарын �
 
 ## {heading(Оқиға ресурсын жою)[id=logging-manage-resource-delete]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Логтау** бөліміне өтіңіз.
 1. **Баптаулар** батырмасын басыңыз.
 1. **Басқа ресурстар** қойындысына өтіңіз.

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Сіз ресурстар мониторингі деректерін [Grafana](https://kz.cloud.vk.com/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info) сервисінің көмегімен визуализациялай аласыз.
+Сіз ресурстар мониторингі деректерін [Grafana](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info) сервисінің көмегімен визуализациялай аласыз.
 
 Бұл нұсқаулық VK Cloud-тағы ВМ-де Grafana 10 сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы жасауға көмектеседі.
 

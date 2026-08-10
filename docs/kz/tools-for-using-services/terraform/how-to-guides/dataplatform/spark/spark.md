@@ -163,7 +163,7 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
     - `maintenance` — Cron пішіміндегі техникалық қызмет көрсету басталатын уақыт.
 
-    - `warehouses` — [деректер көздеріне](https://cloud.vk.com/docs/kz/data-platform/spark/concepts/parameters#parameters_data_sources) қосылымдар.
+    - `warehouses` — [деректер көздеріне](https://cloud.vk.ru/docs/kz/data-platform/spark/concepts/parameters#parameters_data_sources) қосылымдар.
 
 - `pod_groups` — кластердің есептеу ресурстары топтары:
 
@@ -287,7 +287,7 @@ resource "vkcs_db_user" "postgres_user" {
 
 Spark кластерінің сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз. Spark кластерінің жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=cleanup]}

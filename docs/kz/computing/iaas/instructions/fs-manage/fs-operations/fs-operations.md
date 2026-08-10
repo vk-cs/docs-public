@@ -8,7 +8,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз. Файлдық сақтау орындарының тізімі көрсетіледі.
 
@@ -34,7 +34,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті файлдық сақтау орнының атауын басыңыз. Ол туралы ақпарат көрсетіледі.
@@ -63,7 +63,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті сақтау орны үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Өлшемін өзгерту** тармағын таңдаңыз.
@@ -102,7 +102,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық сақтау орны орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық сақтау орны** бөліміне өтіңіз.
 1. Қажетті сақтау орны үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Жою** тармағын таңдаңыз.

@@ -16,7 +16,7 @@ Qdrant сервисін пайдалану арқылы сіз [Marketplace](/kz
 
 Жобада Qdrant сервисін өрістету үшін:
 
-1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account) және [жеке кабинетке өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud-та [тіркеліңіз](/kz/intro/onboarding/account) және [жеке кабинетке өтіңіз](https://kz.cloud.vk.kz/app).
 1. Өрістетілген сервисі бар ВМ-ге және интернеттен Qdrant веб-интерфейсіне қол жеткізу үшін:
 
     1. Егер ол бұрын жасалмаған болса, интернетке қолжетімді [желі жасаңыз](/kz/networks/vnet/instructions/net#vnet-net-add).

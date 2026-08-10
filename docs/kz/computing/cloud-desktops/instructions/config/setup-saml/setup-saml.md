@@ -21,7 +21,7 @@ Cloud Desktop ішінде SAML аутентификация сервисін п
 
 SAML сервисінің көмегімен екі факторлы аутентификацияны баптау үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. (Опционалды) **SAML** қойындысында **SAML қосу** опциясын қосыңыз.
 

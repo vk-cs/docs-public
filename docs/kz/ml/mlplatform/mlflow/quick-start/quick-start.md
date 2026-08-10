@@ -8,7 +8,7 @@
 
 ## {heading(1. MLflow инстансын жасаңыз)[id=mlp-mlflow-quickstart-1_create_mlflow]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** бөліміне өтіңіз.
 1. **MLflow** карточкасындағы **Инстанс жасау** түймесін басыңыз.
 1. **Конфигурация** қадамында **Бірлесіп жұмыс істеу үшін JupyterHub инстансын қосу** опциясын өшіріңіз.

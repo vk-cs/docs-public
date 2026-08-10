@@ -10,7 +10,7 @@ DNS баптауының көмегімен тестік және production о�
 
 ## {heading(Дайындық қадамдары)[id=dns-separate-test-prod-prep]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Егер production ортасына арналған DNS-аймақ әлі жасалмаса, оны {linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-add)[text=жасаңыз]}.
 1. DNS баптауын тексеру үшін компьютеріңізге `dig` утилитасын орнатыңыз:
 

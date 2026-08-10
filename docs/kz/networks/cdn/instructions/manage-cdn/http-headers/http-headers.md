@@ -41,7 +41,7 @@ HTTP тақырыбын сұрауға қосу үшін:
 Сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -104,7 +104,7 @@ HTTP тақырыбын жауапқа қосу үшін:
 Сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -170,7 +170,7 @@ Access-Control-Allow-Origin HTTP тақырыбын баптау үшін:
 Сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -225,7 +225,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 Сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

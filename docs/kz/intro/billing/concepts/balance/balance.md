@@ -30,7 +30,7 @@
 
 - {var(cloud)} жүйесінде жаңа аккаунтты {linkto(../../../../intro/onboarding/account#onboarding-account)[text=тіркеген]} кезде. Мұндай бонустар құттықтау бонустары деп аталады және тіркелу кезінде жасалған {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобада]} сервистер белсендірілгеннен кейін бір рет бірден есептеледі. Құттықтау бонустарының саны өңірге байланысты:
 
-    - Мәскеу — 5000 бонус (2000 бонус — виртуалды серверлер мен олардың резервтік көшірмелерінің ақысын төлеуге, 3000 — CDN, үшінші тарап сервистері мен лицензиялардан, сондай-ақ [Қосымшалар дүкеніндегі](https://kz.cloud.vk.com/app/services/marketplace) бағдарламалық өнімдерден басқа барлық сервистерге);
+    - Мәскеу — 5000 бонус (2000 бонус — виртуалды серверлер мен олардың резервтік көшірмелерінің ақысын төлеуге, 3000 — CDN, үшінші тарап сервистері мен лицензиялардан, сондай-ақ [Қосымшалар дүкеніндегі](https://kz.cloud.vk.kz/app/services/marketplace) бағдарламалық өнімдерден басқа барлық сервистерге);
     - Қазақстан — CDN, үшінші тарап сервистері мен лицензиялардан, сондай-ақ қосымшалар дүкеніндегі бағдарламалық өнімдерден басқа барлық сервистерге 24000 бонус.
 
   {note:err}
@@ -66,7 +66,7 @@ VK Cloud-та сіз {linkto(/kz/intro/billing/instructions/detail#includes-deta
 - Arenadata DB as a Service;
 - ML Platform (JupyterHub, MLflow және MLflow Deploy сервистері);
 - Cloud Databases;
-- [Marketplace](https://kz.cloud.vk.com/app/mcs1798875946/services/marketplace) (барлық сервистер).
+- [Marketplace](https://kz.cloud.vk.kz/app/mcs1798875946/services/marketplace) (барлық сервистер).
 
 {/cut}
 
@@ -95,5 +95,5 @@ VK Cloud-та сіз {linkto(/kz/intro/billing/instructions/detail#includes-deta
 - [VK Data Platform](/kz/data-platform) (барлық сервистер).
   {/cut}
 
-Параметрлердің толық тізімін [прайс-парақтан](https://cloud.vk.com/pricelist/) нақтылай аласыз.
+Параметрлердің толық тізімін [прайс-парақтан](https://cloud.vk.kz/pricelist/) нақтылай аласыз.
 {/ifdef}

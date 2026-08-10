@@ -4,7 +4,7 @@
 
 Cloud Servers ішінде виртуалды машиналарды жеке кабинет, OpenStack CLI немесе Terraform арқылы жасауға болады. Terraform көмегімен виртуалды машина жасау үшін [Terraform бөліміндегі нұсқаулықты](/kz/tools-for-using-services/terraform/how-to-guides/iaas/create) пайдаланыңыз.
 
-{var(cloud)} командасы кейбір ОЖ образдарын дайындады. Дайын образдардың тізімі жеке кабинеттегі [жаңа виртуалды машина жасау терезесінде](https://kz.cloud.vk.com/app/services/infra/servers/add) қолжетімді. Сондай-ақ ОЖ образын өзіңіз [импорттай](../../images/images-manage#iaas-images-manage-import) аласыз.
+{var(cloud)} командасы кейбір ОЖ образдарын дайындады. Дайын образдардың тізімі жеке кабинеттегі [жаңа виртуалды машина жасау терезесінде](https://kz.cloud.vk.kz/app/services/infra/servers/add) қолжетімді. Сондай-ақ ОЖ образын өзіңіз [импорттай](../../images/images-manage#iaas-images-manage-import) аласыз.
 
 {note:info}
 ВМ баптауға қолжетімді параметрлер әртүрлі операциялық жүйелер үшін өзгеше болуы мүмкін.
@@ -16,7 +16,7 @@ Cloud Servers ішінде виртуалды машиналарды жеке к
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Шот балансының оң екенін және виртуалды машинаның қажетті конфигурациясын жасау үшін [квоталардың](/kz/tools-for-using-services/account/concepts/quotasandlimits) жеткілікті екенін тексеріңіз.
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. **Инстанс құру** немесе **Қосу** түймесін басыңыз.

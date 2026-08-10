@@ -26,11 +26,11 @@ NVIDIA® Tesla® процессорлары бар виртуалды жұмыс
    * есептік жазбаның құпиясөзі.
 
 1. (Опционалды) Сервисте пайдаланылатын маршрутизаторда VPN <!---{linkto(../../../../networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel#)[text=баптаңыз]}-->.
-1. [Жеке кабинетте](https://kz.cloud.vk.com/app/) Cloud Desktop сервисі қосылғанына көз жеткізіңіз: сол жақ мәзірде **Cloud Desktop** бөлімі қолжетімді болуы керек.
+1. [Жеке кабинетте](https://kz.cloud.vk.kz/app/) Cloud Desktop сервисі қосылғанына көз жеткізіңіз: сол жақ мәзірде **Cloud Desktop** бөлімі қолжетімді болуы керек.
 
 ## {heading(1. Сыртқы инфрақұрылымды баптаңыз)[id=vdi-with-gpu-settings]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Жұмыс үстелдері орналастырылатын <!---{linkto(../../../../tools-for-using-services/account/concepts/projects#)[text=жобаны]}--> таңдаңыз.
 1. **Cloud Desktop** → **Сервис баптаулары** бөліміне өтіңіз.
 1. **Желіні баптау** қойындысында <!---{linkto(../../../../computing/cloud-desktops/instructions/config/setup-net#)[text=желілік параметрлерді]}--> орнатыңыз:

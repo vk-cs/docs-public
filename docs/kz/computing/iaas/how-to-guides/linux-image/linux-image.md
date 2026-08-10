@@ -87,7 +87,7 @@
 
 ## {heading(5. Образдың сәтті жүктелгенін тексеріңіз)[id=iaas-linux-image-custom-download-success]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} в личный кабинет {var(cloud)}.
 1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
 1. Тізімде `Arch` атауы бар образдың бар екеніне көз жеткізіңіз.
 

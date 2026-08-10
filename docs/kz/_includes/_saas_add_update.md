@@ -67,7 +67,7 @@
       "full_description": "Біз тестілеу процесін ұйымдастыруға арналған ыңғайлы баг-трекерді ұсынамыз:\n   - API көмегімен процестерді автоматтандыру\n   - Жобаларды икемді баптау\n   - Сыртқы таск-трекерлермен интеграция\n   - Тестілік жинақтарды дистрибуциялау\n   - Баг-трекердің десктоп және мобильді нұсқалары",
       "singleton": false,
       "auto_bind": true,
-      "icon": "https://vk.com/images/bugs/vktesters_logo.svg",
+      "icon": "https://vk.ru/images/bugs/vktesters_logo.svg",
       "help": "http://vk.cc/vktesters_po_faq",
       "bindable": true,
       "plan_updateable": true,
@@ -297,7 +297,7 @@
 
 {includetag(test_service)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/services/marketplace) VK Cloud жеке кабинетінің **Қолданбалар дүкені** бөліміне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/services/marketplace) VK Cloud жеке кабинетінің **Қолданбалар дүкені** бөліміне.
 1. **Барлық шешімдер** батырмасын басыңыз.
 1. Қызметіңіздің карточкасын басып, **Тарифтік жоспарлар** қойындысына өтіңіз.
 1. Әр тарифтік жоспардың конфигурациялау шебері дұрыс көрсетілетініне көз жеткізіңіз.

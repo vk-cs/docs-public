@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз.
 1. Қажетті MLflow Deploy инстансы үшін **DNS-аты** бағанындағы сілтемені басыңыз.
 1. Инстанста авторизациядан өтіңіз:

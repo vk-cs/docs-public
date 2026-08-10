@@ -1,2 +1,2 @@
-1. [Өтіңіз](https://cloud.vk.com/account) VK Cloud аккаунтына.
+1. [Өтіңіз](https://cloud.vk.kz/account) VK Cloud аккаунтына.
 1. Қажетті жобаның PID идентификаторын көшіріп алыңыз.

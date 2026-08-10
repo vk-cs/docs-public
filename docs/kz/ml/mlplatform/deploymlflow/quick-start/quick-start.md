@@ -24,7 +24,7 @@ MLflow Deploy инстансы тек MLflow инстансымен бірге �
 
 ## {heading(1. MLflow Deploy инстансын жасаңыз)[id=mlflowdeploy-quickstart-1_create-instance]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** бөліміне өтіңіз.
 1. **MLflow Deploy** картасындағы **Инстанс жасау** батырмасын басыңыз.
 1. **Конфигурация** қадамында MLflow Deploy инстансы қосылатын MLflow инстансын таңдаңыз.

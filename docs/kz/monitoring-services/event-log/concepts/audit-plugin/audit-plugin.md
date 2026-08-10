@@ -35,7 +35,7 @@ Kubernetes сияқты кейбір көздерден оқиғаларды ж�
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Keystone сервисінің эндпоинті
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Auth URL параметрі
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Auth URL параметрі
 
 | `auth_timeout`
 | ![](../../../../assets/no.svg "inline")
@@ -47,7 +47,7 @@ Kubernetes сияқты кейбір көздерден оқиғаларды ж�
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Логтар жазылатын {var(cloud)} жобасының идентификаторы
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Project ID параметрі.
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Project ID параметрі.
 
 Мысал: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
@@ -61,7 +61,7 @@ Kubernetes сияқты кейбір көздерден оқиғаларды ж�
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логтар жазылатын пайдаланушының логині
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Username параметрі
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Username параметрі
 
 | `password`
 | ![](../../../../assets/no.svg "inline")
@@ -93,8 +93,8 @@ Kubernetes сияқты кейбір көздерден оқиғаларды ж�
 | ![](../../../../assets/check.svg "inline")
 | Аудит деректерін алуға арналған API эндпоинті:
 
-- `https://kz.cloud.vk.com/audit/c2s` — Москва аймағы үшін;
-- `https://kz.cloud.vk.com/audit/c2s` — Қазақстан аймағы үшін
+- `https://kz.cloud.vk.kz/audit/c2s` — Москва аймағы үшін;
+- `https://kz.cloud.vk.kz/audit/c2s` — Қазақстан аймағы үшін
 
 | `source_id`
 | ![](../../../../assets/check.svg "inline")

@@ -53,7 +53,7 @@
 
    {tabs}
    {tab(Жеке кабинет)}
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Кластеры Kubernetes** бөліміне өтіңіз.
    1. Қажетті кластер мен ондағы тораптар тобын табыңыз.
@@ -80,7 +80,7 @@
    {tabs}
    {tab(Жеке кабинет)}
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 
    {include(/kz/_includes/_project_quotas.md)[tags=viewquotas]}
 

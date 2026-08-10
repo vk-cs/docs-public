@@ -16,12 +16,12 @@
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Keystone сервисінің эндпоинті
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Auth URL параметрі
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Auth URL параметрі
 
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Логтар жазылатын {var(cloud)} жобасының идентификаторы
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Project ID параметрі.
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Project ID параметрі.
 
 Мысал: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
@@ -30,17 +30,17 @@
 | `user_id`
 | ![](../../../../assets/no.svg "inline")
 | Логтар кімнің атынан жазылатын болса, сол пайдаланушының ID-і
-| {var(cloud)} жеке кабинетінде [Есептік деректерді генерациялау](https://kz.cloud.vk.com/app/services/monitoring/logging/settings) қойындысында жасалады
+| {var(cloud)} жеке кабинетінде [Есептік деректерді генерациялау](https://kz.cloud.vk.kz/app/services/monitoring/logging/settings) қойындысында жасалады
 
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логтар кімнің атынан жазылатын болса, сол пайдаланушының логині
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/any/project/keys) орналасқан Username параметрі
+| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Username параметрі
 
 | `password`
 | ![](../../../../assets/no.svg "inline")
 | Логтар кімнің атынан жазылатын болса, сол пайдаланушының құпиясөзі
-| `user_id` үшін құпиясөз {var(cloud)} жеке кабинетінде [Есептік деректерді генерациялау](https://kz.cloud.vk.com/app/services/monitoring/logging/settings) қойындысында жасалады.
+| `user_id` үшін құпиясөз {var(cloud)} жеке кабинетінде [Есептік деректерді генерациялау](https://kz.cloud.vk.kz/app/services/monitoring/logging/settings) қойындысында жасалады.
 
 `user_name` үшін {var(cloud)} жеке кабинетіне кіруге арналған құпиясөз қолданылады
 
@@ -95,7 +95,7 @@ Cloud Logging сервисі үшін генерацияланған аккау�
 
 Көрсетілмесе, `default` мәні беріледі.
 
-Қажет болса, жеке идентификаторларыңызды [техникалық қолдау](/kz/contacts) арқылы немесе бөлімнің **Мониторинг → Логтау** баптауларындағы **Өзге ресурстар** [қойындысында](https://kz.cloud.vk.com/app/services/monitoring/logging/settings) өзіңіз жасай аласыз
+Қажет болса, жеке идентификаторларыңызды [техникалық қолдау](/kz/contacts) арқылы немесе бөлімнің **Мониторинг → Логтау** баптауларындағы **Өзге ресурстар** [қойындысында](https://kz.cloud.vk.kz/app/services/monitoring/logging/settings) өзіңіз жасай аласыз
 
 | `group_id`
 | ![](../../../../assets/no.svg "inline")

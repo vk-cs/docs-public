@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-[OpenVPN](https://kz.cloud.vk.com/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info) сервисінің көмегімен бұлт ресурстарына қолжетімділікті басқара аласыз. Бұл нұсқаулық VK Cloud-тағы ВМ-ге OpenVPN сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
+[OpenVPN](https://kz.cloud.vk.kz/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info) сервисінің көмегімен бұлт ресурстарына қолжетімділікті басқара аласыз. Бұл нұсқаулық VK Cloud-тағы ВМ-ге OpenVPN сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
 
 OpenVPN сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [OpenVPN](https://openvpn.net/legal) сервистерінің лицензиялық келісімдерімен келісесіз.
 

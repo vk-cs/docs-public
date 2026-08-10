@@ -4,7 +4,7 @@
 
 Бар виртуалды машинада мониторингті баптау үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Бұлтты есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. Жалпы тізімдегі атауын басып, ВМ бетін ашыңыз.
 1. **Жалпы ақпарат** қойындысында ВМ туралы негізгі ақпараттың астындағы **Мониторингті баптау** қойындысына өтіңіз.

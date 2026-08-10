@@ -4,7 +4,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 {/includetag}
 {includetag(s3_create_cdn_s3)}
 1. Қажетті бакет орналасқан жобаны таңдаңыз. Егер сізде әлі бакет болмаса, {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=оны жасаңыз]}.

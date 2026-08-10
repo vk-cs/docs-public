@@ -8,7 +8,7 @@ Cloud Monitoring сервисі жинаған ресурс мониторинг
 - {linkto(../mon-setup-new#monitoring-mon-setup-new)[text=%text]} мақаласында сипатталғандай, жеке кабинеттегі **Мониторинг → Дашбордтар** бөлімінде;
 - Grafana сервисінің көмегімен.
 
-Grafana сервисін пайдалану үшін оны жобаңыздағы [Қолданбалар дүкенінен](https://kz.cloud.vk.com/app/services/marketplace) {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=іске орналастырыңыз]}.
+Grafana сервисін пайдалану үшін оны жобаңыздағы [Қолданбалар дүкенінен](https://kz.cloud.vk.kz/app/services/marketplace) {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=іске орналастырыңыз]}.
 
 Сервис іске орналастырылған кезде, ол Cloud Monitoring-пен автоматты түрде интеграцияланады:
 

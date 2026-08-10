@@ -5,7 +5,7 @@
   "sectionTitle": "Connecting to a web application",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "52c05a87-a5bd-4666-94e2-c0a1adea2e5c",
   "build": {
     "for": [
       "public"

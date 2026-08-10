@@ -16,7 +16,7 @@
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Қызмет данасын жасау қажет жобаны таңдаңыз.
 {/ifdef}
 

@@ -10,7 +10,7 @@ Cloud Desktop жұмысы AD/LDAP пайдаланушылар каталогы
 
 ## {heading(1. Пайдаланушылар каталогына қосылуды баптаңыз)[id=desktops-setup-ldap-step1]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Каталогты баптау** қойындысында параметрлерді орнатыңыз:
 
@@ -40,7 +40,7 @@ Cloud Desktop жұмысы AD/LDAP пайдаланушылар каталогы
 
 Қызмет үшін каталог баптауларының дұрыстығын тексеру үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Каталогты баптау** қойындысында **Каталог баптауларын тексеру** опциясын белсендіріңіз.
 1. **Қосылымды тексеру** түймесін басыңыз.

@@ -1,6 +1,6 @@
 {includetag(open)}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
 

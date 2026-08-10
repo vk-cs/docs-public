@@ -1,4 +1,4 @@
-1. [Өтіңіз](https://cloud.vk.com/account) VK Cloud аккаунтына.
+1. [Өтіңіз](https://cloud.vk.kz/account) VK Cloud аккаунтына.
 1. Қажетті жоба үшін ![](/kz/assets/more-icon.svg "inline") батырмасын басып, **Қайта атау** тармағын таңдаңыз.
 1. Жаңа атауды орнатыңыз.
 

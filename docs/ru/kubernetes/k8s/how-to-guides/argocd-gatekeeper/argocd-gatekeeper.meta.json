@@ -6,7 +6,7 @@
   "sectionTitle": "Поддержка GitOps",
   "icon": "",
   "weight": 40,
-  "uuid": "",
+  "uuid": "26811c71-2aa6-4b5f-9ea6-63baba8283b8",
   "build": {
     "for": [
       "public"

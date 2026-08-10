@@ -5,7 +5,7 @@
   "sectionTitle": "Bare Metal серверін жасау",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "86a42828-d375-4ef5-bd0c-1f123cddec60",
   "build": {
     "for": [
       "public"

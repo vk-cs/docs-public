@@ -4,7 +4,7 @@ ADFS сертификаттарының қолданылу мерзімі шек
 
 ## {heading(Сертификатты қолмен жаңарту)[id=manual-update]}
 
-1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
 1. **Куәліктер федерациясы** бөліміне өтіңіз.
 1. **Федерациялар** қойындысына өтіңіз.
 1. **Метадеректерді жүктеп алу** түймесін басыңыз.
@@ -27,7 +27,7 @@ ADFS сертификаттарының қолданылу мерзімі шек
 
 1. Куәліктер федерациясының ID мәнін алыңыз:
 
-   1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
+   1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
    1. **Куәліктер федерациясы** бөліміне өтіңіз.
    1. **Федерациялар** қойындысына өтіңіз.
    1. **Федерация ID** параметрінің мәнін көшіріп алыңыз.
@@ -36,7 +36,7 @@ ADFS сертификаттарының қолданылу мерзімі шек
 1. **Relying party's federation metadata URL** өрісіне метадеректерді жаңарту URL мекенжайын қойыңыз: 
 
     ```text
-   https://kz.cloud.vk.com/federation-service/v1/federation/saml/<FEDERATION_ID>/metadata
+   https://kz.cloud.vk.kz/federation-service/v1/federation/saml/<FEDERATION_ID>/metadata
    ```
 
    Мұнда `<FEDERATION_ID>` — {var(cloud)} аккаунтындағы **Куәліктер федерациясы** бөліміндегі **Федерация ID** параметрінің мәні.

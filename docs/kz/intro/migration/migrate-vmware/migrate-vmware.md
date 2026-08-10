@@ -125,7 +125,7 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
    openstack image list
    ```
 
-   {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/) образдар тізімі **Бұлттық есептеулер → Образдар** бөлімінде орналасқан.
+   {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/) образдар тізімі **Бұлттық есептеулер → Образдар** бөлімінде орналасқан.
 
 ## {heading(5. Виртуалды машинаны жасаңыз)[id=migration-migrate-vmware-create-vm]}
 

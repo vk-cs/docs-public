@@ -51,7 +51,7 @@ External Secrets Operator тек {linkto(/kz/kubernetes/k8s/concepts/cluster-gen
 
 ## {heading({counter(eso)}. SecretStore жасаңыз)[id=k8s-eso-store]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Беттің басындағы пайдаланушы атына басып, **Жоба параметрлері** таңдаңыз.
 1. **API арқылы қолжетімділік** бетіне өтіп, келесі мәндерді көшіріп алыңыз:
 
@@ -84,8 +84,8 @@ External Secrets Operator тек {linkto(/kz/kubernetes/k8s/concepts/cluster-gen
 
     - `<PROJECT_ID>`, `<USER_DOMAIN_NAME>` және `<USERNAME>` — жоба параметрлерінен көшіріп алған мәндеріңіз.
     - `<AUTH_URL>` — аймаққа байланысты {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=мекенжай]}:
-        - `https://msk.cloud.vk.com` Мәскеу аймағы үшін;
-        - `https://kz.cloud.vk.com` Қазақстан аймағы үшін.
+        - `https://msk.cloud.vk.ru` Мәскеу аймағы үшін;
+        - `https://kz.cloud.vk.kz` Қазақстан аймағы үшін.
 
 1. Жасалған манифестті кластерде қолданыңыз:
 

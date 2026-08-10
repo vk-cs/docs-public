@@ -8,7 +8,7 @@ Cloud Databases сервисімен [жұмысты](/kz/dbs/dbaas/concepts/abo
 
 - [Нұсқаулықты](#onboarding-db-create-postgre) пайдаланып, алғашқы басқарылатын PostgreSQL дерекқорын жасаңыз, оған қосылыңыз және тестілік сұрауларды орындаңыз.
 - Single конфигурациясындағы MySQL, PostgreSQL және ClickHouse басқарылатын дерекқорлары жасалатын [бейнелерді](#onboarding-db-create-video) қараңыз.
-- [Тегін оқыту курсынан](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/) өтіңіз. Курстың теориялық бөлігінде дерекқор мен дерекқорды басқару жүйесі деген не, БД-ның қандай түрлері мен конфигурациялары бар екені түсіндіріледі. Практикалық бөлікте сіз [PostgreSQL кластерін](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) және [MySQL БД-сын](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql) жасайсыз, содан кейін жасалған MySQL БД-сын виртуалды машинада орнатылған қосымшаға қосасыз.
+- [Тегін оқыту курсынан](https://cloud.vk.ru/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/) өтіңіз. Курстың теориялық бөлігінде дерекқор мен дерекқорды басқару жүйесі деген не, БД-ның қандай түрлері мен конфигурациялары бар екені түсіндіріледі. Практикалық бөлікте сіз [PostgreSQL кластерін](https://cloud.vk.ru/cloud-native-courses/advanced/postgresql/#sozdanieclastera) және [MySQL БД-сын](https://cloud.vk.ru/cloud-native-courses/advanced/mysql/#praktikamysql) жасайсыз, содан кейін жасалған MySQL БД-сын виртуалды машинада орнатылған қосымшаға қосасыз.
 
 {note:info}БД инстансы есептеу ресурстарын тұтынады және [тарифтеледі](/kz/dbs/dbaas/tariffication).{/note}
 
@@ -61,9 +61,9 @@ ClickHouse көбінесе нақты уақыт режимінде үлкен 
 
 ## {heading(Оқыту курсы)[id=onboarding-db-create-courses]}
 
-[Тегін оқыту курсынан](https://cloud.vk.com/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/) өтіңіз.
+[Тегін оқыту курсынан](https://cloud.vk.ru/cloud-native-courses/advanced/obschaya-teoriya-o-bazah-dannyh-i-tipah-hranilisch/) өтіңіз.
 
-Курстың теориялық бөлігінде дерекқор мен дерекқорды басқару жүйесі деген не, БД-ның қандай түрлері мен конфигурациялары бар екені түсіндіріледі. Практикалық бөлікте сіз [PostgreSQL кластерін](https://cloud.vk.com/cloud-native-courses/advanced/postgresql/#sozdanieclastera) және [MySQL БД-сын](https://cloud.vk.com/cloud-native-courses/advanced/mysql/#praktikamysql) жасайсыз, содан кейін жасалған MySQL БД-сын виртуалды машинада орнатылған қосымшаға қосасыз.
+Курстың теориялық бөлігінде дерекқор мен дерекқорды басқару жүйесі деген не, БД-ның қандай түрлері мен конфигурациялары бар екені түсіндіріледі. Практикалық бөлікте сіз [PostgreSQL кластерін](https://cloud.vk.ru/cloud-native-courses/advanced/postgresql/#sozdanieclastera) және [MySQL БД-сын](https://cloud.vk.ru/cloud-native-courses/advanced/mysql/#praktikamysql) жасайсыз, содан кейін жасалған MySQL БД-сын виртуалды машинада орнатылған қосымшаға қосасыз.
 
 ## {heading(Сұрақтар мен жауаптар)[id=onboarding-db-create-faq]}
 

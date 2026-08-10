@@ -18,7 +18,7 @@ VK Cloud серіктесі болу үшін [нұсқаулықты](/kz/start
 
 Модель туралы жалпы ақпарат [құжаттамада](/kz/start/partners/cooperation-models#reward) келтірілген, ал ынтымақтастықтың нақты егжей-тегжейлерін серіктестермен жұмыс жөніндегі менеджерден келесі тәсілдермен нақтылауға болады:
 
-- серіктестікке өтінім жіберу немесе [сайттағы](https://cloud.vk.com/partner) **Кеңес алу** батырмасын пайдалану;
+- серіктестікке өтінім жіберу немесе [сайттағы](https://cloud.vk.ru/partner) **Кеңес алу** батырмасын пайдалану;
 - [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) поштасына жазу.
 
 {/cut}
@@ -35,7 +35,7 @@ VK Cloud серіктесі болу үшін [нұсқаулықты](/kz/start
 
 [Серіктес](/kz/start/partners/cooperation-models#partner) VK Cloud өз клиенттері үшін қызметтердің кез келген құнын белгілей алады. Қажет болған жағдайда VK Cloud клиентіңіздің [жеке кабинетінде](/kz/tools-for-using-services/partner-platform/concepts/client-account) қызметтер бағасының көрсетілуін өшіре алады. Ол үшін [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru) поштасына жазыңыз.
 
-VK Cloud қызметтерін [агенттің](/kz/start/partners/cooperation-models#agent) ұсынысы бойынша сатып алған клиенттер оларды VK Cloud [прайс-парағында](https://cloud.vk.com/pricelist) көрсетілген бағалармен сатып алады.
+VK Cloud қызметтерін [агенттің](/kz/start/partners/cooperation-models#agent) ұсынысы бойынша сатып алған клиенттер оларды VK Cloud [прайс-парағында](https://cloud.vk.kz/pricelist) көрсетілген бағалармен сатып алады.
 
 {/cut}
 

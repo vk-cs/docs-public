@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к веб-приложению",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "c49bae17-10f8-4eed-a233-a6c991d68997",
   "build": {
     "for": [
       "public"

@@ -89,7 +89,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 Сервистік токенді алу үшін:
 
-1. VK Cloud [жеке кабинетінде](https://kz.cloud.vk.com/app/main) **AI API** → **Cloud Voice** бөліміне өтіңіз.
+1. VK Cloud [жеке кабинетінде](https://kz.cloud.vk.kz/app/main) **AI API** → **Cloud Voice** бөліміне өтіңіз.
 1. **Сервистік токен қосу** түймесін басыңыз.
 1. Ашылған терезеде қажетті параметрлерді көрсетіп, **Жасау** түймесін басыңыз.
 

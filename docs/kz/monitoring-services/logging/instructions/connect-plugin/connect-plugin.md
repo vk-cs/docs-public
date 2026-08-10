@@ -85,4 +85,4 @@
    ```
 
 1. Деректер жиналуы үшін бірнеше минут күтіңіз.
-1. {ifdef(public)}[жеке кабинетте](https://kz.cloud.vk.com/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=жеке кабинетте]}{/ifndef} {var(cloud)} **Мониторинг** → **Логтау** бөлімінде логтардың бар-жоғын тексеріңіз.
+1. {ifdef(public)}[жеке кабинетте](https://kz.cloud.vk.kz/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=жеке кабинетте]}{/ifndef} {var(cloud)} **Мониторинг** → **Логтау** бөлімінде логтардың бар-жоғын тексеріңіз.

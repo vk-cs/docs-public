@@ -14,7 +14,7 @@
 
 Хабарландыру арнасын құру үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. **Хабарландыру арналары** қойындысына өтіңіз.
 1. **Қосу** батырмасын басыңыз.
@@ -28,7 +28,7 @@
 
 ## {heading(Хабарландыру арнасын өңдеу)[id=alerting-notification-edit]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. **Хабарландыру арналары** қойындысына өтіңіз.
 1. Қажетті арна үшін ![more-icon](../../../../assets/more-icon.svg "inline") белгішесін басып, **Өзгерту** тармағын таңдаңыз.
@@ -41,7 +41,7 @@
 Арнаны жоймас бұрын онымен байланысты барлық {linkto(../triggers#alerting-triggers-delete)[text=триггерлерді жойыңыз]}.
 {/note}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. **Хабарландыру арналары** қойындысына өтіңіз.
 1. Қажетті арна үшін ![more-icon](../../../../assets/more-icon.svg "inline") белгішесін басып, **Жою** тармағын таңдаңыз.

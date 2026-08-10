@@ -1,5 +1,5 @@
 {includetag(detail-all)}
-Жобалар бойынша барлық есептен шығарулар мен түсімдер жоба {ifdef(public)}[баланс бетінде](https://kz.cloud.vk.com/app/services/billing){/ifdef}{ifndef(public)}баланс бетінде{/ifndef} {var(cloud)} жеке кабинетінде тіркеледі.
+Жобалар бойынша барлық есептен шығарулар мен түсімдер жоба {ifdef(public)}[баланс бетінде](https://kz.cloud.vk.kz/app/services/billing){/ifdef}{ifndef(public)}баланс бетінде{/ifndef} {var(cloud)} жеке кабинетінде тіркеледі.
 
 {ifdef(public)}
 Шығыстарды егжей-тегжейлі көрсету жобаңыздағы {linkto(/kz/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлі]} иесі, суперәкімші, жоба әкімшісі немесе биллинг әкімшісі болып табылатын пайдаланушыларға қолжетімді.
@@ -14,7 +14,7 @@
 ## {heading(Есептен шығарулар мен түсімдерді қарау)[id=includes-detail-debits-receipts-view]}
 {/includetag}
 {includetag(file-billing-detail)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
 1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
@@ -48,7 +48,7 @@
 {/includetag}
 
 {includetag(file-billing-detail)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
 1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
@@ -78,7 +78,7 @@
 {/includetag}
 
 {includetag(file-billing-detail)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 {/includetag}
 {includetag(file-account-detail)}
 1. {linkto(/kz/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]} {var(cloud)} жеке кабинетіне.
