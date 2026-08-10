@@ -8,10 +8,10 @@
 
 Қолжетімді дискілік кеңістікті ұлғайту үшін:
 
-1. [Қажетті диск өлшемі бар жаңа worker-түйіндер тобын жасаңыз](https://cloud.vk.com/docs/kubernetes/k8s/instructions/manage-node-group#add_group).
+1. [Қажетті диск өлшемі бар жаңа worker-түйіндер тобын жасаңыз](https://cloud.vk.ru/docs/kubernetes/k8s/instructions/manage-node-group#add_group).
 1. Жүктемені жаңа түйіндер тобына көшіріңіз. Толығырақ Kubernetes [ресми құжаттамасында](https://kubernetes.io/docs/home/) берілген.
 1. Сервистердің жұмысқа қабілеттілігін тексеріңіз.
-1. [Ескі worker-түйіндер тобын жойыңыз](https://cloud.vk.com/docs/kubernetes/k8s/instructions/manage-node-group#udalit_gruppu_uzlov).
+1. [Ескі worker-түйіндер тобын жойыңыз](https://cloud.vk.ru/docs/kubernetes/k8s/instructions/manage-node-group#udalit_gruppu_uzlov).
 
 {/cut}
 

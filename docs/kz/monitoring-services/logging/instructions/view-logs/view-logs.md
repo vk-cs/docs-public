@@ -8,7 +8,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Логтау** бөліміне өтіңіз.
 1. (Опционалды түрде) Сүзгілер үшін мәндерді таңдаңыз.
 1. (Опционалды түрде) Іздеу үшін мән енгізіңіз немесе {linkto(../../concepts/search-tools#logging-search-tools)[text=іздеу сұрауларының тілін]} пайдаланып сұрау құрастырыңыз.
@@ -33,7 +33,7 @@
 
 {tab(Grafana)}
 
-1. Жобаңызда [Қолданбалар дүкенінен](https://kz.cloud.vk.com/app/services/marketplace) Grafana сервисін {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=орналастырыңыз]}.
+1. Жобаңызда [Қолданбалар дүкенінен](https://kz.cloud.vk.kz/app/services/marketplace) Grafana сервисін {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=орналастырыңыз]}.
 
     Сервис орналастырылған кезде ол Cloud Logging-пен автоматты түрде біріктіріледі:
 

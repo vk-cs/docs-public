@@ -3,7 +3,7 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Дерекқорды жасау үшін
-[жеке кабинеттегі "Аналитикалық БД" бөліміне](https://kz.cloud.vk.com/app/services/analytic-databases/) өтіп, 
+[жеке кабинеттегі "Аналитикалық БД" бөліміне](https://kz.cloud.vk.kz/app/services/analytic-databases/) өтіп, 
 «Arenadata DB» лицензия нұсқасын таңдап, «БД жасау» түймесін басыңыз.
 
 Келесі қадамда қажетті кластер түрін, ArenadataDB инстансының нұсқасын және инстанс конфигурациясын таңдаңыз.

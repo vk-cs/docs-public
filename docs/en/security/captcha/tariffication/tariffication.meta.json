@@ -5,7 +5,7 @@
   "sectionTitle": "Tariffication",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "7a65a39b-e03d-48c1-b51b-5ecc99b6df59",
   "build": {
     "for": [
       "public"

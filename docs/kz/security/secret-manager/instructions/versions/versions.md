@@ -14,7 +14,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпиялар тізімінде қажетті құпияның атауын басыңыз.
 1. **Нұсқалар тарихы** қойындысына өтіңіз.
@@ -68,7 +68,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне өтіңіз.
 1. **Қауіпсіздік сервистері → Құпиялар менеджері** бөліміне өтіңіз.
 1. Құпиялар тізімінде қажетті құпияның атауын басыңыз.
 1. **Нұсқалар тарихы** қойындысына өтіңіз.

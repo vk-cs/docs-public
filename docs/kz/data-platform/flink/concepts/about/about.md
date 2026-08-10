@@ -25,5 +25,5 @@ Cloud Flink сервисі автоматтандыратын процестер
 {ifdef(public)}
 Пайдаланушы Cloud Flink ресурстарын VK Cloud жеке кабинеті арқылы басқара алады, Flink кластерлерімен жұмыс істеу [Flink CLI](https://docs.kafka-ui.provectus.io/overview/readme) арқылы қолжетімді.
 
-Cloud Flink сервисімен жұмысты бастау үшін қосылуға [өтінім қалдырыңыз](https://cloud.vk.com/flink/).
+Cloud Flink сервисімен жұмысты бастау үшін қосылуға [өтінім қалдырыңыз](https://cloud.vk.ru/flink/).
 {/ifdef}

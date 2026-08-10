@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Floating IP мекенжайын қосу мүмкін болмаса, мекенжайлар санына арналған [квоталар](https://cloud.vk.com/docs/kz/tools-for-using-services/account/concepts/quotasandlimits#seti_podseti_i_ip_adresa_a84cb9f0) таусылған болуы мүмкін.
+Floating IP мекенжайын қосу мүмкін болмаса, мекенжайлар санына арналған [квоталар](https://cloud.vk.ru/docs/kz/tools-for-using-services/account/concepts/quotasandlimits#seti_podseti_i_ip_adresa_a84cb9f0) таусылған болуы мүмкін.
 
 ### Шешім
 

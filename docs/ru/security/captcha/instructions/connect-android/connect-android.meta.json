@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к мобильному приложению на Android",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "e0dcfe8f-f78d-4ac3-83e8-adbcceffe2de",
   "build": {
     "for": [
       "public"

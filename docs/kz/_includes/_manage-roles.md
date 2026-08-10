@@ -12,7 +12,7 @@
 
 {tab(Личный кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. **Управление доступами** бөліміне, **Пользователи** қойындысына өтіңіз.
 1. Қажетті жоба қатысушысы үшін ![ ](/kz/assets/more-icon.svg "inline") белгішесін басып, **Редактировать** тармағын таңдаңыз.
 1. (Опционалды) {linkto(/kz/access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базалық рөлдердің]} бірін таңдаңыз:

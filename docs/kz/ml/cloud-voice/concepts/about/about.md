@@ -6,7 +6,7 @@ Cloud Voice — сөйлеуді тануға және синтездеуге м
 
 ![](assets/1633092587841-voice.png)
 
-Сервисті пайдалануды бастау үшін [Cloud Voice](https://kz.cloud.vk.com/app/services/machinelearning/voice/methods/) бетіне өтіңіз. Ол үшін сіз авторизацияланған болуыңыз керек.
+Сервисті пайдалануды бастау үшін [Cloud Voice](https://kz.cloud.vk.kz/app/services/machinelearning/voice/methods/) бетіне өтіңіз. Ол үшін сіз авторизацияланған болуыңыз керек.
 
 Сервисті пайдалану үшін қол жеткізу токенін алу қажет. Қол жеткізу токенін қалай алу керектігі туралы {linkto(../../instructions/get-voice-token#cloud_voice-instructions-get_voice_token)[text=мақаладан]} оқыңыз.
 

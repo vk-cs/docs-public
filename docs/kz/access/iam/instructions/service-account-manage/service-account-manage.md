@@ -9,7 +9,7 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/roles-reference) [СТЖ басқару құқықтарына](/kz/access/iam/concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жасау мына рөлдер үшін қолжетімді:
 
     - жоба иесі,
@@ -47,7 +47,7 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/roles-reference) {linkto(/kz/access/iam/concepts/service-accounts#tools-account-concepts-service-accounts)[text=СТЖ басқару құқықтарына]} ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
@@ -67,7 +67,7 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/roles-reference) [СТЖ басқару құқықтарына](/kz/access/iam/concepts/service-accounts) ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
@@ -94,7 +94,7 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/roles-reference) [СТЖ басқару құқықтарына](/kz/access/iam/concepts/service-accounts) ие екеніне көз жеткізіңіз.
 1. **Қолжетімділікті басқару** бөліміне өтіп, **Сервистік пайдаланушылар** қойындысын ашыңыз.
 
@@ -149,7 +149,7 @@
 {tabs}
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/roles-reference) [СТЖ басқару құқықтарына](/kz/access/iam/concepts/service-accounts) ие екеніне көз жеткізіңіз. СТЖ жою мына рөлдер үшін қолжетімді:
 
     - жоба иесі,

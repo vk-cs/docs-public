@@ -13,7 +13,7 @@
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 {/ifdef}
    
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -106,7 +106,7 @@
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 {/ifdef}
    
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.
@@ -166,7 +166,7 @@
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 {/ifdef}
    
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.

@@ -6,7 +6,7 @@
 
 {cut(2026 жылы қызметтердің құны өзгере ме?)}
 
-2026 жылғы 12 қаңтардан бастап жаңа прайс-парақ қолданысқа енеді. Өзгерістер туралы толық ақпарат тарату хатында және [{var(cloud)} блогында](https://cloud.vk.com/blog/) болады.
+2026 жылғы 12 қаңтардан бастап жаңа прайс-парақ қолданысқа енеді. Өзгерістер туралы толық ақпарат тарату хатында және [{var(cloud)} блогында](https://cloud.vk.kz/blog/) болады.
 
 {/cut}
 
@@ -28,7 +28,7 @@
 
 {tab(Жеке тұлғалар)}
 
-Жаңа пайдаланушыларға арналған бонустар акцияның [шарттары](https://cloud.vk.com/bonus/) орындалған кезде есептеледі. Егер бонус автоматты түрде есептелмесе, [техникалық қолдауға хабарласыңыз](/kz/contacts)
+Жаңа пайдаланушыларға арналған бонустар акцияның [шарттары](https://cloud.vk.kz/bonus/) орындалған кезде есептеледі. Егер бонус автоматты түрде есептелмесе, [техникалық қолдауға хабарласыңыз](/kz/contacts)
 
 {/tab}
 
@@ -52,7 +52,7 @@
 
 {cut({var(cloud)} жүйесіне көшу, оның өнімділігін тестілеу немесе басқа акцияларға қатысу үшін бонустарды алмасам не істеу керек?)}
 
-Егер сіз {linkto(../concepts/balance#billing-balance-bonuses)[text=бонустарды]} алмасаңыз, {var(cloud)} жүйесіндегі жеке менеджеріңізге хабарласыңыз немесе [кері байланыс нысаны](https://cloud.vk.com/form/) арқылы сұрау жасаңыз.
+Егер сіз {linkto(../concepts/balance#billing-balance-bonuses)[text=бонустарды]} алмасаңыз, {var(cloud)} жүйесіндегі жеке менеджеріңізге хабарласыңыз немесе [кері байланыс нысаны](https://cloud.vk.kz/form/) арқылы сұрау жасаңыз.
 
 {/cut}
 
@@ -228,7 +228,7 @@
 
 {cut(Қызметтерге тапсырыс берілмеген кезде банктік картадан неге ақша есептен шығарылды?)}
 
-Жеке кабинеттегі жоба [баланс бетінде](https://kz.cloud.vk.com/app/services/billing) шығындардың егжей-тегжейін тексеріңіз.
+Жеке кабинеттегі жоба [баланс бетінде](https://kz.cloud.vk.kz/app/services/billing) шығындардың егжей-тегжейін тексеріңіз.
 
 Егер есептен шығару себебі түсініксіз болып қалса, [техникалық қолдауға хабарласыңыз](/kz/contacts). Біз есептен шығаруларды талдап, төлемді қайтаруға және қажет болса банктік картаны ажыратуға көмектесеміз.
 
@@ -311,7 +311,7 @@
 
 Қызметтердің жұмысын қалпына келтіру үшін:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Жобаның дербес шотын {linkto(../instructions/payment#billing-payment-balance-charge)[text=толтырыңыз]} {linkto(../concepts/payment-methods#billing-payment-methods)[text=ыңғайлы тәсілмен]}. Қаражат дербес шот балансына тезірек түсуі үшін физикалық банктік карталарды пайдаланыңыз. Олардан қаражат бірден есепке түседі, ал банктік аударыммен төленгенде бұл процесс 3 жұмыс күніне дейін созылуы мүмкін.
 1. Жобадағы қызметтердің белсенуін күтіңіз. Бұл қаражат есепке түскен сәттен бастап 15 минутқа дейін созылуы мүмкін.
 1. Жоба ресурстарын қолмен белсендіріңіз:
@@ -371,8 +371,8 @@
 
 {var(cloud)} көмегімен сіз физикалық түрде мына жерде орналастырылған қызмет инфрақұрылымымен жұмыс істей аласыз:
 
-- Ресей аумағында — https://cloud.vk.com мекенжайында {linkto(../../../intro/onboarding/account#onboarding-account)[text=есептік жазбаны тіркеңіз]} {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Мәскеу өңірінде]}.
-- Қазақстан аумағында — https://vkcloud.kz немесе https://kz.cloud.vk.com/ мекенжайында {linkto(../../../intro/onboarding/account#onboarding-account)[text=есептік жазбаны тіркеңіз]} {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Қазақстан өңірінде]}.
+- Ресей аумағында — https://cloud.vk.ru мекенжайында {linkto(../../../intro/onboarding/account#onboarding-account)[text=есептік жазбаны тіркеңіз]} {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Мәскеу өңірінде]}.
+- Қазақстан аумағында — https://vkcloud.kz немесе https://kz.cloud.vk.kz/ мекенжайында {linkto(../../../intro/onboarding/account#onboarding-account)[text=есептік жазбаны тіркеңіз]} {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Қазақстан өңірінде]}.
 
 Әр өңірде РФ резиденті емес компаниялар үшін өз жұмыс ерекшеліктері бар:
 
@@ -471,7 +471,7 @@
 
 {tab(Мәскеу)}
 
-Егер жобаңыз {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Мәскеу өңірінде]} болса және сіз ООО «ВК»-мен жұмыс істесеңіз, оның негізгі деректемелері https://cloud.vk.com/contacts мекенжайында қолжетімді.
+Егер жобаңыз {linkto(../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=Мәскеу өңірінде]} болса және сіз ООО «ВК»-мен жұмыс істесеңіз, оның негізгі деректемелері https://cloud.vk.kz/contacts мекенжайында қолжетімді.
 
 Егер сіз {var(cloud)} жүйесімен алдын ала төлем бойынша жұмыс істесеңіз, жеке кабинетте {linkto(../instructions/bill-generation#billing-bill-generation)[text=шот қалыптастырып]}, **Жеткізуші** өрісінің мазмұнын қарай аласыз.
 

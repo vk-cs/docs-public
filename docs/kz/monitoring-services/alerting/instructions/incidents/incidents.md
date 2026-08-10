@@ -6,7 +6,7 @@
 
 ## {heading(Инцидент мәртебесін өзгерту)[id=alerting-incidents-edit]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Алертинг** бөліміне өтіңіз.
 1. **Инциденттер** қойындысына өтіңіз.
 1. Инциденттер кестесінде мәртебесін өзгерту қажет инцидентті таңдаңыз.

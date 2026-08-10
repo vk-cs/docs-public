@@ -8,7 +8,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті қойма үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Снэпшот жасау** тармағын таңдаңыз.
@@ -41,7 +41,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті қойма үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Снэпшоттар тізімі** тармағын таңдаңыз. Снэпшоттар туралы ақпарат көрсетіледі.
@@ -70,7 +70,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті қойма үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Снэпшоттар тізімі** тармағын таңдаңыз.
@@ -109,7 +109,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті файлдық қойма орналасқан [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Бұлтты есептеулер** → **Файлдық қойма** бөліміне өтіңіз.
 1. Қажетті қойма үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Снэпшоттар тізімі** тармағын таңдаңыз.

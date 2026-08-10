@@ -5,7 +5,7 @@
   "sectionTitle": "Создание сервера Bare Metal",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "b32744e6-a5cf-4028-8330-5f1b3b7923e0",
   "build": {
     "for": [
       "public"

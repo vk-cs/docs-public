@@ -14,7 +14,7 @@ n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/mark
 
 ## 1. VK Cloud жобасында n8n сервисін өрістетіңіз
 
-1. [Тіркеліңіз](/kz/intro/onboarding/account/create-account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
+1. [Тіркеліңіз](/kz/intro/onboarding/account/create-account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app) өтіңіз.
 
 1. **Қолданбалар дүкені** бөліміне өтіп, бөлім бетінде **Барлық шешімдер** түймесін басыңыз.
 
@@ -102,7 +102,7 @@ n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/mark
 
 Егер сервиске белгілі бір IP-мекенжайлардан қолжетімділік баптауларын өзгерткіңіз келсе, қауіпсіздік топтарының ережелерін өңдеңіз:
 
-1. VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
+1. VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app) өтіңіз.
 1. **Виртуалды желілер → Firewall баптаулары** бөліміне өтіңіз.
 1. Сервисіңіздің инстансына арналған қауіпсіздік тобының атауын басыңыз. Атауы `8f9b4adf-n8n` түрінде болады, мұнда `8f9b4adf` — [сервис инстансы ID-сының](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-view) бірінші бөлігі.
 1. Қауіпсіздік тобына [жаңа ережелерді қосыңыз](/kz/networks/vnet/instructions/secgroups#add_rule) немесе [өзектілігін жоғалтқан ережелерді жойыңыз](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-delete-rule). Егер вебхуктарды пайдалануды жоспарласаңыз, n8n-ге сұрау жіберетін сыртқы сервистердің IP-мекенжайлары немесе мекенжай ауқымдары үшін қолжетімділікке рұқсат беріңіз.

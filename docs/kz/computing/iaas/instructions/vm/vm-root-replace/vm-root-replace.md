@@ -10,7 +10,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Root-дискі ауыстырылуы тиіс [ВМ-ді тоқтатыңыз](../vm-manage#iaas-vm-manage-start-stop-restart).
 1. Root-дискті ауыстыру үшін пайдаланылатын дискіні [ВМ-ден ажыратыңыз](../../volumes/volumes-connect#iaas-volumes-connect-dismount-disk).
 1. Қажет болса, мақсатты дискіні [клондаңыз](../../volumes/volumes-manage#iaas-volumes-manage-clone-volume).

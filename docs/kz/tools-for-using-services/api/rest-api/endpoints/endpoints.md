@@ -10,7 +10,7 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 
 Өз аймағыңыз үшін эндпоинттер тізімін көру үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Бет үстіндегі пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API endpoints** қойындысына өтіңіз.
 
@@ -53,7 +53,7 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 
 | Эндпоинт                            | Мекенжай                   | Мақсаты |
 |-------------------------------------|-------------------------|-----------------|
-| Trove             | https://kz.cloud.vk.com/infra/database/v1.0/<project_id>        | [дерекқорларды](/kz/dbs/dbaas) басқару |
+| Trove             | https://kz.cloud.vk.kz/infra/database/v1.0/<project_id>        | [дерекқорларды](/kz/dbs/dbaas) басқару |
 
 ### VK Object Storage
 
@@ -65,7 +65,7 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 
 | Эндпоинт                              | Мекенжай                     | Мақсаты |
 |---------------------------------------|---------------------------| -----------------|
-| Mlplatform | https://kz.cloud.vk.com/infra/mlplatform   | [Cloud ML Platform](/kz/ml/mlplatform) басқару |
+| Mlplatform | https://kz.cloud.vk.kz/infra/mlplatform   | [Cloud ML Platform](/kz/ml/mlplatform) басқару |
 
 ### AI API
 
@@ -85,7 +85,7 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 
 {note:info}
 
-Жеке кабинетте Service Users эндпоинті (https://kz.cloud.vk.com/service-users/) көрсетілмеген — ол [сервистік есептік жазбаларды](/kz/access/iam/concepts/service-accounts) басқаруға мүмкіндік береді.
+Жеке кабинетте Service Users эндпоинті (https://kz.cloud.vk.kz/service-users/) көрсетілмеген — ол [сервистік есептік жазбаларды](/kz/access/iam/concepts/service-accounts) басқаруға мүмкіндік береді.
 
 {/note}
 
@@ -102,7 +102,7 @@ Project ID жеке кабинеттегі [жоба идентификатор�
 
 Жоба үшін Project ID мәнін алу үшін:
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Жеке кабинет бетінің жоғарғы жағындағы тізімнен таңдап, қажетті жобаны ашыңыз.
 1. Бет үстіндегі пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API арқылы қолжетімділік** қойындысын немесе **Terraform** қойындысын ашыңыз.

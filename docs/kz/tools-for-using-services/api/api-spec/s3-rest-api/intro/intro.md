@@ -4,7 +4,7 @@
 
 ## {heading(Эндпоинтті алу)[id=api-spec-s3-intro-endpoint]}
 
-[Жеке кабинетте](https://kz.cloud.vk.com/app/project/endpoints) **S3 объектілік сақтау қоймасы** блогындағы қажетті эндпоинтті нақтылаңыз.
+[Жеке кабинетте](https://kz.cloud.vk.kz/app/project/endpoints) **S3 объектілік сақтау қоймасы** блогындағы қажетті эндпоинтті нақтылаңыз.
 
 ## {heading(Авторландыру және аутентификация)[id=api-spec-s3-intro-auth]}
 

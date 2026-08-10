@@ -72,7 +72,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
   {cut(Мысалдар)}
 
   - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: жаңа MLflow инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_mlflow` ресурсы жасалғаннан кейін алынады. Ресурс кейінірек жасалады.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетінде](https://cloud.vk.com/app) MLflow инстансы бетінде қолжетімді.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетінде](https://cloud.vk.kz/app) MLflow инстансы бетінде қолжетімді.
 
   {/cut}
 
@@ -191,7 +191,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow Deploy инстансының сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow Deploy инстансының жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

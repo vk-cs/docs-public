@@ -15,7 +15,7 @@ SSL-сертификат пайдаланушыларды браузер арқ�
 
 ## {heading(Өз SSL-сертификатыңызды қосу)[id=desktops-own-certificate]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Сертификаттар** қойындысында **Сертификатты өзгерту** немесе **Сертификат қосу** батырмасын басыңыз. Сертификат қосу терезесі ашылады.
 1. **Қол қою үшін жария сертификаттау орталығын пайдалану** опциясын өшірулі күйде қалдырыңыз.
@@ -26,7 +26,7 @@ SSL-сертификат пайдаланушыларды браузер арқ�
 
 Егер әдепкі сертификатты өзгерткен болсаңыз, Let's Encrypt сертификатын қайта пайдалану үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Сертификаттар** қойындысында **Сертификатты өзгерту** батырмасын басыңыз.
 1. **Қол қою үшін жария сертификаттау орталығын пайдалану** опциясын қосып, **Өзгерту** батырмасын басыңыз.
@@ -36,7 +36,7 @@ SSL-сертификат пайдаланушыларды браузер арқ�
 
 {var(cloud)} ұсынатын базалық SSL-сертификатты пайдалану үшін ағымдағы қосылған сертификатты жойыңыз{ifdef(public)}, өзіңіздікін немесе Let's Encrypt{/ifdef}:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Сертификат** блогында ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Жою** тармағын таңдаңыз.
 1. Жоюды растаңыз.
@@ -49,7 +49,7 @@ SSL-сертификат пайдаланушыларды браузер арқ�
 
 ## {heading(Қосымша сенім тізбектерін немесе түбірлік сертификаттарды жүктеу)[id=desktops-add-chains-of-trust]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Сертификаттар** қойындысында **Тізбек қосу** батырмасын басыңыз. Жаңа сенім тізбегін қосу терезесі ашылады.
 1. Сенім тізбегінің деректерін тиісті өріске көшіріп, **Қосу** батырмасын басыңыз.

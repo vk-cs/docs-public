@@ -6,7 +6,7 @@
   "sectionTitle": "Публичный IP для пода без балансировщика",
   "icon": "",
   "weight": 50,
-  "uuid": "",
+  "uuid": "86ba22ed-dd81-4750-bd67-44195dd09e10",
   "build": {
     "for": [
       "public"

@@ -6,7 +6,7 @@
 
 ## {heading(Дайындық қадамдары)[id=k8s-lens-before-work]}
 
-1. Қосылу қажет Kubernetes кластерін {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=жасаңыз]} немесе [жеке кабинеттегі](https://kz.cloud.vk.com/app/) **Контейнерлер → Kubernetes кластерлері** бетінде тізімнен қажетті кластерді таңдаңыз.
+1. Қосылу қажет Kubernetes кластерін {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=жасаңыз]} немесе [жеке кабинеттегі](https://kz.cloud.vk.kz/app/) **Контейнерлер → Kubernetes кластерлері** бетінде тізімнен қажетті кластерді таңдаңыз.
 1. Кластерге қосылу жоспарланып отырған хостта, егер Lens әлі орнатылмаған болса, [Lens орнатыңыз](https://docs.k8slens.dev/getting-started/install-lens/).
 1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=API арқылы қолжетімділік белсендірілгеніне]} көз жеткізіңіз.
 1. {linkto(../../concepts/access-management#k8s-access-management)[text=Single Sign-On (SSO)]} арқылы кластерге қосылу үшін `client-keystone-auth` плагинін орнатыңыз:

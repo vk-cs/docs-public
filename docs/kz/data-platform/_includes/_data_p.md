@@ -41,7 +41,7 @@
 {includetag(instance_view_info)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -55,7 +55,7 @@
 {includetag(instance_edit_name)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -70,7 +70,7 @@
 {includetag(instance_view_status)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -86,7 +86,7 @@
 {includetag(instance_horizontal_scaling)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -101,7 +101,7 @@
 {includetag(instance_vertical_disk_scaling)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -126,7 +126,7 @@
 <!-- Пабликке арналған жалпы әрекеттер -->
 
 {includetag(public_select_project)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Сервис данасын жасау қажет жобаны таңдаңыз.
    {/includetag}
 
@@ -135,7 +135,7 @@
 {includetag(instance_delete)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -149,7 +149,7 @@
 {includetag(instance_user_delete)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -165,7 +165,7 @@
 {includetag(instance_edit_settings)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -186,7 +186,7 @@
 {includetag(instance_edit_settings_new)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -212,7 +212,7 @@
 {includetag(instance_backup_create)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -230,7 +230,7 @@
 {includetag(instance_backup_view)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -249,7 +249,7 @@
 {includetag(instance_backup_recovery)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -264,7 +264,7 @@
 {includetag(instance_view_connect)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -280,7 +280,7 @@
 {includetag(instance_edit_components)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -296,7 +296,7 @@
 {includetag(instance_admin_edit)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -311,7 +311,7 @@
 {includetag(instance_admin_password)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -336,7 +336,7 @@
 {includetag(instance_assign_ip)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -351,7 +351,7 @@
 {includetag(instance_disk_resize)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.
@@ -378,7 +378,7 @@
 {includetag(instance_service)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -394,7 +394,7 @@
 {includetag(instance_service_no_backup)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -410,7 +410,7 @@
 {includetag(instance_user_access)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -430,7 +430,7 @@
 {includetag(instance_create_connect)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -458,7 +458,7 @@
 {includetag(instance_open)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -472,7 +472,7 @@
 {includetag(instance_create_connect)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.

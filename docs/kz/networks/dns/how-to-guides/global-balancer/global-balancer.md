@@ -11,7 +11,7 @@
 ## {heading(Дайындық қадамдары)[id=dns-global-balancer-prep]}
 
 1. Егер бұл бұрын жасалмаса, [техникалық қолдауға](/kz/contacts) жүгіну арқылы {linkto(../../../../networks/dns/concepts/global-balancer#dns-global-balancer)[text=DNS-балансировкеге]} қолжеткізіңіз.
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Интернетке қолжетімді, әртүрлі {linkto(../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймақтарында]} орналасқан үш ВМ таңдаңыз немесе {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]}.
 1. Осы ВМ-лардың сыртқы IP-мекенжайларын жазып алыңыз. Бұл мысалда:
 

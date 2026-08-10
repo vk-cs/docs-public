@@ -11,7 +11,7 @@ Cloud Audit сервисі бұлттық сервистеріңіз бен ви
 ## {heading(SIEM-қосылымын құру)[id=event-log-create-siem-connections]}
 
 1. SIEM жүйеңіздің портын {var(cloud)} платформасынан хабарламаларды қабылдау үшін ашыңыз. Басқа қажетті баптаулар туралы толығырақ SIEM жүйесінің құжаттамасынан оқыңыз.
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. **Параметрлер** түймесін басып, **SIEM** қойындысына өтіңіз.
 1. **Қосылым жасау** түймесін басыңыз.
@@ -40,7 +40,7 @@ Cloud Audit сервисі бұлттық сервистеріңіз бен ви
 
 ## {heading(SIEM-қосылымы параметрлерін өзгерту)[id=event-log-edit-siem-connection]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. **Параметрлер** түймесін басып, **SIEM** қойындысына өтіңіз.
 1. Қажетті қосылым үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Баптау** тармағын таңдаңыз.
@@ -71,7 +71,7 @@ Cloud Audit сервисі бұлттық сервистеріңіз бен ви
 
 ## {heading(SIEM-қосылымының белсенділік күйін өзгерту)[id=event-log-activate-siem-connection]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. **Параметрлер** түймесін басып, **SIEM** қойындысына өтіңіз.
 
@@ -94,7 +94,7 @@ Cloud Audit сервисі бұлттық сервистеріңіз бен ви
 
 Бұл топтық операция: қажет болса, жалаушалардың көмегімен бірнеше қосылымды таңдап, жоюға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. **Параметрлер** түймесін басып, **SIEM** қойындысына өтіңіз.
 1. SIEM-қосылымын келесі тәсілдердің бірімен жойыңыз:

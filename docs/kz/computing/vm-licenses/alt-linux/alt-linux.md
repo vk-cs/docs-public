@@ -4,7 +4,7 @@
 
 {var(cloud)} аясында [Альт Linux](https://www.basealt.ru/alt-server) компаниясының образдарын қолдайтын виртуалды машиналарды орнатуға қолдау көрсетіледі.
 
-Операциялық жүйенің қолжетімді редакциялары {var(cloud)} [жеке кабинет](https://kz.cloud.vk.com/app/services/infra/servers/add) арқылы ВМ жасау кезінде **Операциялық жүйе** ашылмалы тізімінде көрсетіледі.
+Операциялық жүйенің қолжетімді редакциялары {var(cloud)} [жеке кабинет](https://kz.cloud.vk.kz/app/services/infra/servers/add) арқылы ВМ жасау кезінде **Операциялық жүйе** ашылмалы тізімінде көрсетіледі.
 
 ## {heading(Альт СП Сервер релизі 10)[id=vm-licenses-alt-linux-sp10]}
 
@@ -79,7 +79,7 @@
 
 БҚ пайдаланудың айлық бағасын мына жерлерден білуге болады:
 
-- [баға парағында](https://cloud.vk.com/pricelist);
+- [баға парағында](https://cloud.vk.kz/pricelist);
 - виртуалды машинаны [жасау](/kz/computing/iaas/instructions/vm/vm-create) кезінде;
-- [жоба баптауларында](https://kz.cloud.vk.com/app/project/) **Бағалар** қойындысында.
-- [жеке кабинеттегі](https://kz.cloud.vk.com/app/services/billing) **Баланс** бөлімінде.
+- [жоба баптауларында](https://kz.cloud.vk.kz/app/project/) **Бағалар** қойындысында.
+- [жеке кабинеттегі](https://kz.cloud.vk.kz/app/services/billing) **Баланс** бөлімінде.

@@ -85,7 +85,7 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
 1. Жаңа ВМ образы үшін қажетті конфигурация қалыбын таңдаңыз. Мысалда — `STD3-2-6`.
 
    {note:info}
-   Өзекті конфигурация қалыптары {var(cloud)} жеке кабинетінің **Виртуалды машина түрі** тізіміндегі [ВМ жасау бетінде](https://kz.cloud.vk.com/app/services/infra/servers/add) берілген.
+   Өзекті конфигурация қалыптары {var(cloud)} жеке кабинетінің **Виртуалды машина түрі** тізіміндегі [ВМ жасау бетінде](https://kz.cloud.vk.kz/app/services/infra/servers/add) берілген.
    {/note}
 
 1. `altlinux.pkr.hcl` файлын жасаңыз. Таңдалған конфигурация қалыбының атауын `flavor` параметрінде көрсетіңіз.
@@ -187,7 +187,7 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
 
    {tab(Жеке кабинет)}
 
-   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
+   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
    1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
    1. Тізімнен образды тауып, оны басыңыз. Образ беті ашылады.
 

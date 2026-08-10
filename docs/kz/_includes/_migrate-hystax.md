@@ -1,4 +1,4 @@
-Ресурстарыңызды VK Cloud ішіне [Hystax Acura Migration](https://kz.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) сервисінің көмегімен қолданбалардың жұмысын тоқтатпай көшіруге болады. Ресурстарды виртуалды платформалардан да, физикалық платформалардан да көшіруге болады.
+Ресурстарыңызды VK Cloud ішіне [Hystax Acura Migration](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) сервисінің көмегімен қолданбалардың жұмысын тоқтатпай көшіруге болады. Ресурстарды виртуалды платформалардан да, физикалық платформалардан да көшіруге болады.
 
 {cut(Деректерді қайдан көшіруге болады?)}
 
@@ -208,7 +208,7 @@ VK Cloud ішінде қосылған ВМ-ді (`<PID проекта>_cloud_ag
 
 ## Пайдаланылмайтын ресурстарды жойыңыз
 
-Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және [тарифтеледі](https://cloud.vk.com/docs/kz/computing/iaas/tariffication). Егер олар енді қажет болмаса:
+Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және [тарифтеледі](https://cloud.vk.ru/docs/kz/computing/iaas/tariffication). Егер олар енді қажет болмаса:
 
 - Hystax Acura [жеке кабинетіне](https://migration.mcs-cloud.ru) қосылған `Ubuntu-MR` ВМ-ді жойыңыз.
 - Hystax Acura [жеке кабинеті](https://migration.mcs-cloud.ru) арқылы `VK-Cloud-infra` резервтік инфрақұрылымын жойыңыз (detach).

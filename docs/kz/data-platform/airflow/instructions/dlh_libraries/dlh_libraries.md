@@ -41,7 +41,7 @@ DLH (Data Lakehouse) жүйесінде Cloud Airflow-пен жұмыс істе
 
 |mlplatform-client-on-prem
 |1.1.13
-|Cloud Spark кластерімен жұмыс істеу әдістерін ұсынатын Cloud ML Platform негізіндегі {var(data-p)} кітапханасы. Толығырақ [ресми құжаттамада](https://cloud.vk.com/docs/kz/ml/spark-to-k8s/ml-platform-library/library-reference)
+|Cloud Spark кластерімен жұмыс істеу әдістерін ұсынатын Cloud ML Platform негізіндегі {var(data-p)} кітапханасы. Толығырақ [ресми құжаттамада](https://cloud.vk.ru/docs/kz/ml/spark-to-k8s/ml-platform-library/library-reference)
 
 |polars
 |0.20.31

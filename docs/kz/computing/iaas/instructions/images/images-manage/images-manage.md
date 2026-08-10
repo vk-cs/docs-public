@@ -12,7 +12,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. [Образын жасау керек ВМ-ді тоқтатыңыз](../../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart).
 1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
 1. **Жасау** батырмасын басыңыз.
@@ -74,7 +74,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
 1. **Жасау** батырмасын басыңыз.
 1. Импорт параметрлерін орнатыңыз:
@@ -175,7 +175,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
 1. Қажетті образ үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Образмен бөлісу** тармағын таңдаңыз.
 1. Ашылған терезеде образбен бөлісу қажет жоба түрін таңдаңыз:
@@ -186,7 +186,7 @@
 
     - **Басқа жобалар**: образбен барлық қалған жобалармен бөлісуге мүмкіндік береді.
 
-      Егер осы түр таңдалса, **OpenStack-тағы жоба ID** өрісінде `exampled4ef0547e5b222f445` түріндегі [Project ID](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) көрсетіңіз, ол жобаның бірегей идентификаторымен сәйкес келмейді. Бірнеше жобаны қосуға болады.
+      Егер осы түр таңдалса, **OpenStack-тағы жоба ID** өрісінде `exampled4ef0547e5b222f445` түріндегі [Project ID](https://cloud.vk.ru/docs/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id) көрсетіңіз, ол жобаның бірегей идентификаторымен сәйкес келмейді. Бірнеше жобаны қосуға болады.
 
 1. **Қолжетімділікке рұқсат беру** батырмасын басыңыз.
 
@@ -242,7 +242,7 @@ openstack image member list <ID_ОБРАЗА>
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
 1. Қажетті образ үшін келесі әрекеттердің бірін орындаңыз:
 

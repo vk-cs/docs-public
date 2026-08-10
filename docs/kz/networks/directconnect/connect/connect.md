@@ -23,7 +23,7 @@ Cloud Direct Connect сервисін қосу үшін байланыс арн�
 
 1. Өз telecom-серіктесіңізге хабарласып, қажетті технологияны пайдаланып, {var(cloud)} дейін L2 байланыс арнасын ұйымдастырыңыз. Арна дата-орталық сөрелеріне дейінгі кроссировкаларды қоса алғанда құрылады.
 
-1. Direct Connect қосуға [өтінім жасаңыз](https://cloud.vk.com/direct-connect).
+1. Direct Connect қосуға [өтінім жасаңыз](https://cloud.vk.kz/direct-connect).
 1. Сервис қосылғаннан кейін {var(cloud)} жобаңызда L3 Static / BGP {linkto(../how-to-guides/advanced-router#directconnect-advanced-router)[text=маршрутизациясын баптаңыз]}.
 
 {/tab}
@@ -42,7 +42,7 @@ Cloud Direct Connect сервисін қосу үшін байланыс арн�
 
     {include(../../../_includes/_prerequisites.md)}
 
-1. Direct Connect қосуға [өтінім жасаңыз](https://cloud.vk.com/direct-connect/) және инфрақұрылымыңыздың қатысу нүктелерінің нақты координаттары (қосылыс қайда тартылады), қосылу түрі мен жылдамдығы туралы ақпаратты беріңіз.
+1. Direct Connect қосуға [өтінім жасаңыз](https://cloud.vk.kz/direct-connect/) және инфрақұрылымыңыздың қатысу нүктелерінің нақты координаттары (қосылыс қайда тартылады), қосылу түрі мен жылдамдығы туралы ақпаратты беріңіз.
 1. {var(cloud)} өкілі жоба мен қосылу құнын келісу үшін сізбен байланысқанша күтіңіз.
 1. {var(cloud)} өкілі {var(cloud)} инфрақұрылымындағы байланыс арналары қосылғаны туралы сізге хабарлағанша күтіңіз.
 1. {var(cloud)} жобаңызда L3 Static / BGP {linkto(../how-to-guides/advanced-router#directconnect-advanced-router)[text=маршрутизациясын баптаңыз]}.

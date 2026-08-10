@@ -10,7 +10,7 @@ Cloud Audit сервисі:
 
 ## {heading(Оқиғалар журналын қарау)[id=event-log-view]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
    Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
@@ -27,7 +27,7 @@ Cloud Audit сервисі:
 
 ## {heading(Сүзгілер мен іздеу сұрауларын пайдалану)[id=event-log-filter]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
    Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.
@@ -45,7 +45,7 @@ Cloud Audit сервисі:
 
 ## {heading(Оқиғалар тізімін экспорттау)[id=event-log-export]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 
     Жобадағы сіздің [рөліңіз](/kz/access/iam/concepts/rolesandpermissions) үшін көруге рұқсат етілген оқиғалар тізімі көрсетіледі.

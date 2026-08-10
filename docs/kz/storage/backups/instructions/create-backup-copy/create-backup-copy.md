@@ -28,7 +28,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшіру** бөліміне өтіңіз.
 1. **Қолмен** қойындысына өтіңіз.
 1. **Бэкап жасау** немесе **Қосу** батырмасын басыңыз.
@@ -58,7 +58,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Инстанс беті арқылы қажетті объектінің резервтік көшірмесін жасаңыз:
 
    {tabs}
@@ -113,7 +113,7 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Басты бетте **Барлық мүмкіндіктер** батырмасын басыңыз.
 1. **Барлық шешімдер → Бұлтты есептеулер** бөлімінде қажетті сервис карточкасындағы сәйкес батырманы басыңыз.
 1. Ашылған терезеде резервтік көшірменің параметрлерін көрсетіңіз:

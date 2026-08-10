@@ -8,7 +8,7 @@
 
 ## {heading(1. JupyterHub инстансын жасаңыз)[id=mlplatform-jupyterhub-instructions-quickstart-1_create-instance]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. **ML Platform** бөліміне өтіңіз.
 1. **JupyterHub** карточкасындағы **Инстанс жасау** батырмасын басыңыз.
 1. **Конфигурация** қадамында инстанс әкімшісі үшін құпиясөзді орнатыңыз. Пайдаланушы атын және құпиясөзді сақтаңыз.

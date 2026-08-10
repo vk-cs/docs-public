@@ -12,7 +12,7 @@
 
 {tab(Жеке кабинет)}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **1С:Дайын жұмыс орны** → **Қолданбалар** бөліміне өтіңіз.
 
 {include(/kz/_includes/_1c_app.md)[tags=1c_app_transition]}
@@ -41,7 +41,7 @@
 
 {tab(Жеке кабинет)}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **1С:Дайын жұмыс орны** → **Қолданбалар** бөліміне өтіңіз.
 1. Қажетті қолданба үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **Өңдеу** тармағын таңдаңыз.
 1. 1С қолданбасымен {linkto(../../../../applications-and-services/1cgrm/about#1cgrm-modes)[text=жұмыс режиміне]} байланысты лицензиялар санын өзгертіңіз:

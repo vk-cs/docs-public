@@ -22,7 +22,7 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 
@@ -135,7 +135,7 @@ upload: ../pictures/picture.png to s3://my-bucket/folder/my-picture.png
 {tab(API)}
 
 1. Егер бакет әлі жасалмаған болса, {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет жасаңыз]}.
-1. {var(s3)} сервисі үшін эндпоинтті [біліңіз](https://msk.cloud.vk.com/app/project/endpoints).
+1. {var(s3)} сервисі үшін эндпоинтті [біліңіз](https://kz.cloud.vk.kz/app/project/endpoints).
    {ifdef(public)}
 1. API-де аутентификация үшін сұраудың {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=қолтаңбасын қалыптастырыңыз]}.
    {/ifdef}

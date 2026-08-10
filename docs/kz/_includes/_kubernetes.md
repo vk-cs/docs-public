@@ -2,7 +2,7 @@
 
 ### {const(create_cluster)}.{counter(kuber_level_2)}. Кластерді жасаңыз
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Кластер орналастырылатын [жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 1. **Контейнерлер** → **Кластеры Kubernetes** бөліміне өтіңіз.
 1. Егер таңдалған жобада әлі бірде-бір кластер болмаса, **Кластер жасау** түймесін басыңыз. Әйтпесе **Қосу** түймесін басыңыз.
@@ -109,7 +109,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 1. Жеке кабинетте кластерге қосылу орындалатын пайдаланушы үшін **Администратор Kubernetes** рөлін қосыңыз:
 
-    1. [Өтіңіз](https://kz.cloud.vk.com/app/) VK Cloud жеке кабинетіне.
+    1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
     1. Бұрын жасалған кластер орналасқан жобаны таңдаңыз.
     1. **Қолжетімділіктерді басқару** бөліміне өтіңіз.
     1. Қажетті пайдаланушы үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Өңдеу** тармағын таңдаңыз.
@@ -118,7 +118,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 1. Осы пайдаланушы үшін [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api#aktivaciya_dostupa_po_api).
 
-1. [VK Cloud жеке кабинетінде](https://kz.cloud.vk.com/app/) кластер үшін kubeconfig алыңыз:
+1. [VK Cloud жеке кабинетінде](https://kz.cloud.vk.kz/app/) кластер үшін kubeconfig алыңыз:
 
     1. **Кластеры Kubernetes** → **Кластеры Kubernetes** бөліміне өтіңіз.
     1. Қажетті кластер үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Кластерге қол жеткізу үшін Kubeconfig алу** тармағын таңдаңыз.

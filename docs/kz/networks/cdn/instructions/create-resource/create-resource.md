@@ -14,7 +14,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. CDN-ресурсын жасау қажет жобаны таңдаңыз.
 1. **CDN → CDN-ресурстар** бөліміне өтіңіз.
 1. **Ресурс жасау** түймесін басыңыз.
@@ -169,7 +169,7 @@ CDN-ресурсын жасау үшін `POST /projects/{project_id}/resources/
 Сұрау мысалы:
 
 ```json
-curl --location --request POST 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources'\
+curl --location --request POST 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

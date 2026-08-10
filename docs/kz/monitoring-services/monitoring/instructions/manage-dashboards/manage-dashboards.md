@@ -6,7 +6,7 @@
 
 Ресурс метрикаларын параметрлер конструкторының немесе PromQL тіліндегі тікелей сұраулардың көмегімен график құру арқылы визуализациялай аласыз. 
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **График құру** батырмасын басыңыз.
@@ -77,7 +77,7 @@
 
 График баптауларын өзгертуге, оларды егжей-тегжейлі режимде қарауға немесе жоюға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті графигі бар бөлімді мына тәсілдердің бірімен ашыңыз:
@@ -99,7 +99,7 @@
 
 ### {heading(Бөлім құру)[id=monitoring-create-section]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **Бөлім құру** батырмасын басыңыз.
@@ -109,7 +109,7 @@
 
 ### {heading(Бөлімді баптау және жою)[id=monitoring-manage-section]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті бөлімнің тақырыбындағы ![ ](../../../../assets/more-icon.svg "inline") белгішесін басыңыз.
@@ -129,7 +129,7 @@
 
 Графикті жасыру үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. Қажетті графигі бар бөлімді мына тәсілдердің бірімен ашыңыз:
@@ -142,7 +142,7 @@
 
 Графикті алдын ала қарауда көрсету үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **Бөлімге өту** батырмасын басып, қажетті графигі бар бөлімді ашыңыз.

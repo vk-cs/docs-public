@@ -66,7 +66,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 1. **Security Gateway BYOL** шлюзін өрістетіңіз:
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
    1. **Магазин приложений** бөліміне өтіңіз.
    1. **Check Point CloudGuard Network — Security Gateway BYOL** сервисінің карточкасында **Подробнее** батырмасын басыңыз.
    1. Сервис бетінде **Подключить** батырмасын басыңыз.
@@ -82,7 +82,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 1. **Security Management BYOL** басқару серверін өрістетіңіз:
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
    1. **Магазин приложений** бөліміне өтіңіз.
    1. **Check Point CloudGuard Network — Security Management BYOL** сервисінің карточкасында **Подробнее** батырмасын басыңыз.
    1. Сервис бетінде **Подключить** батырмасын басыңыз.
@@ -98,7 +98,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 ## {heading(2. Настройте виртуальный шлюз)[id=setup_gateway]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. Виртуалды машиналар тізімінде виртуалды шлюз ретінде жасалған ВМ атауын басыңыз.
 1. ВМ бетінде **Консоль** қойындысына өтіңіз.
@@ -126,7 +126,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 ## {heading(3. Настройте сервер управления)[id=setup_management]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. Виртуалды машиналар тізімінде басқару сервері ретінде жасалған ВМ атауын басыңыз.
 1. ВМ бетінде **Консоль** қойындысына өтіңіз.
@@ -156,7 +156,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 Егер шлюз бен басқару сервері дискісі 100 ГБ-тан үлкен виртуалды машиналарда өрістетілсе, осы ВМ-дер үшін `lv_current` немесе `lv_log` логикалық томдарының өлшемін үлкейтіңіз:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. Виртуалды машиналар тізімінде шлюз немесе Check Point CloudGuard Network басқару сервері ретінде жасалған ВМ атауын басыңыз.
 1. ВМ бетінде **Консоль** қойындысына өтіңіз.
@@ -202,7 +202,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 ## {heading(5. Настройте сетевой доступ к шлюзу)[id=configure_network_access_to_gateway]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Виртуальные сети** → **Настройки firewall** бөліміне өтіңіз.
 1. Шлюзді баптау нұсқаулығында көрсетілген қауіпсіздік тобы үшін желіңіздегі IP мекенжайларынан келетін кіріс трафикке рұқсат беретін ережелерді қосыңыз:
    1. Қажетті қауіпсіздік тобының атауын басыңыз.
@@ -246,7 +246,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 ## {heading(6. Настройте сетевой доступ к серверу управления)[id=configure_network_access_to_management]}
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Виртуальные сети** → **Настройки firewall** бөліміне өтіңіз.
 1. Басқару серверін баптау нұсқаулығында көрсетілген қауіпсіздік тобы үшін желіңіздегі IP мекенжайларынан келетін кіріс трафикке рұқсат беретін ережелерді қосыңыз:
    1. Қажетті қауіпсіздік тобының атауын басыңыз.
@@ -310,7 +310,7 @@ Check Point CloudGuard Network BYOL (Bring Your Own Licence) моделі бой
 
 Әдепкі бойынша ВМ үшін бір желілік интерфейс жасалады. Шлюзге желілік интерфейс қосу үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. Виртуалды машиналар тізімінде шлюз ретінде жасалған ВМ атауын басыңыз.
 1. **Сети** қойындысына өтіңіз.

@@ -10,12 +10,12 @@ REST API Service Users [қызметтік тіркелгі жазбаларын
 
 {cut(Endpoint алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app) VK Cloud жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app) VK Cloud жеке кабинетіне.
 1. Егер бұл әлі жасалмаса, [екі факторлы аутентификацияны қосыңыз](/kz/access/iam/instructions/manage-2fa).
 1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api).
 1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack сервисі** блогынан **Service Users** endpoint-ін табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.com/service-users/` пайдаланыңыз.
+1. **OpenStack сервисі** блогынан **Service Users** endpoint-ін табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.kz/service-users/` пайдаланыңыз.
 1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token). Сұрауларды жіберу кезінде токенді тақырыпта пайдаланыңыз.
 
 {/cut}

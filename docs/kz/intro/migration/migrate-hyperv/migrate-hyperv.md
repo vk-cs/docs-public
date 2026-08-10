@@ -90,7 +90,7 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Hystax](../mig
    openstack image create --private --container-format bare --disk-format raw --file <путь_к_файлу.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
    ```
 
-1. Образдың {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.com/app/) **Бұлттық есептеулер → Образдар** бөлімінде немесе CLI арқылы жүктелгенін тексеріңіз:
+1. Образдың {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/) **Бұлттық есептеулер → Образдар** бөлімінде немесе CLI арқылы жүктелгенін тексеріңіз:
 
    ```console
    openstack image list

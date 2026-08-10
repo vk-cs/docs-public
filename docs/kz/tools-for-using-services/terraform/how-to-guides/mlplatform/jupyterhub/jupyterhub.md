@@ -190,7 +190,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 JupyterHub инстансының сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.com/app/) өтіңіз.
+1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. JupyterHub инстансының жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

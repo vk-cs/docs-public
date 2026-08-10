@@ -1,6 +1,6 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Әртүрлі көздерден (дерекқорлар, Google Sheets) алынған деректерді визуализациялауға, сондай-ақ [Redash](https://kz.cloud.vk.com/app/services/marketplace/v2/apps/service/7ee4cc28-6b2b-4595-b119-89c718af9e8b/latest/info) сервисінің көмегімен интерактивті есептер құруға болады. Бұл нұсқаулық VK Cloud-тағы ВМ-ге Redash 10.1.0 сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
+Әртүрлі көздерден (дерекқорлар, Google Sheets) алынған деректерді визуализациялауға, сондай-ақ [Redash](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/7ee4cc28-6b2b-4595-b119-89c718af9e8b/latest/info) сервисінің көмегімен интерактивті есептер құруға болады. Бұл нұсқаулық VK Cloud-тағы ВМ-ге Redash 10.1.0 сервисін өрістетуге, сервис консоліне кіруге және жаңа пайдаланушы құруға көмектеседі.
 
 Redash 10.1.0 сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [Redash](https://redash.io/terms) лицензиялық келісімдерімен келісесіз.
 

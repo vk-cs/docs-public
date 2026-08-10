@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{var(cloud)} платформасында виртуалды машинаның параметрлері мен күйін [жеке кабинетте](https://kz.cloud.vk.com/app/) немесе OpenStack CLI командалық жол интерфейсі арқылы өзгертуге болады.
+{var(cloud)} платформасында виртуалды машинаның параметрлері мен күйін [жеке кабинетте](https://kz.cloud.vk.kz/app/) немесе OpenStack CLI командалық жол интерфейсі арқылы өзгертуге болады.
 
 ## {heading(Виртуалды машинаның ID алу)[id=iaas-vm-manage-id-get]}
 
@@ -12,7 +12,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ тізімінде идентификаторын білу қажет виртуалды машинаның атауын басыңыз.
 1. ВМ бетінде **Жалпы ақпарат** қойындысына өтіңіз.
@@ -47,7 +47,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ күйін келесі тәсілдердің бірі арқылы өзгертіңіз.
 
@@ -110,7 +110,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ мәжбүрлі қайта жүктеуді келесі тәсілдердің бірі арқылы орындаңыз.
 
@@ -152,7 +152,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ-ді келесі тәсілдердің бірі арқылы бұғаттаңыз немесе бұғаттан шығарыңыз.
 
@@ -207,7 +207,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
    {tab(Личный кабинет)}
 
-    1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+    1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
     1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
     1. ВМ-ді келесі тәсілдердің бірі арқылы жойыңыз.
 
@@ -256,7 +256,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Личный кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ атауын немесе типін келесі тәсілдердің бірі арқылы өзгертіңіз.
 
@@ -313,7 +313,7 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті ВМ үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басыңыз.
 1. Қажетті тегтерді жалаушалармен белгілеңіз.
@@ -395,7 +395,7 @@ systemctl status qemu-guest-agent
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Келесі тәсілдердің бірін пайдаланыңыз:
 
@@ -445,7 +445,7 @@ systemctl status qemu-guest-agent
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Құпиясөзді алу терезесін келесі тәсілдердің бірімен ашыңыз.
 
@@ -489,7 +489,7 @@ SSH арқылы кілт жұбын пайдаланып Linux виртуалд
 
 1. Публичный кілт файлына сілтеме жасаңыз.
 
-    1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+    1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
     1. **Объектілік сақтау → Бакеттер** бөліміне өтіңіз.
     1. Бар бакетті пайдаланыңыз немесе [жаңасын жасаңыз](/kz/storage/s3/instructions/buckets/create-bucket).
     1. Публичный кілті бар файлды бакетке [қосыңыз](/kz/storage/s3/instructions/objects/upload-object).
@@ -529,7 +529,7 @@ SSH арқылы кілт жұбын пайдаланып Linux виртуалд
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Диск қосу қажет ВМ атауын басыңыз.
 1. **Дискілер** қойындысына өтіңіз.

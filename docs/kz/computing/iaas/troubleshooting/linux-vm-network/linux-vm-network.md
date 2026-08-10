@@ -283,7 +283,7 @@ SSH арқылы қосылу мәселесі локализацияланға�
 
 Қауіпсіздік топтарының баптауларын тексеру үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті виртуалды машина орналасқан жобаны таңдаңыз.
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті виртуалды машинаның атауын басыңыз.
@@ -305,7 +305,7 @@ SSH арқылы қосылу мәселесі локализацияланға�
 
 Қауіпсіздік топтарын қайта қосу үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Қажетті виртуалды машина орналасқан жобаны таңдаңыз.
 1. **Бұлтты есептеулер → Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті виртуалды машинаның атауын басыңыз.

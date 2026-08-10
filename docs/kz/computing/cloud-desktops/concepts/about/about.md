@@ -23,7 +23,7 @@ Cloud Desktop сервисінде келесі рөлдер қарастыры�
 
 - Әкімші.
 
-  Сервисті {var(cloud)} {ifdef(public,private,private-pg)}[жеке кабинеті](https://kz.cloud.vk.com/app){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=жеке кабинеті]}{/ifdef} арқылы басқарады. Сервис инфрақұрылымы мен жұмыс үстелдері пулдарына арналған желілерді, каталог қызметімен интеграцияны және екі факторлы аутентификацияны {ifdef(public,private,private-pg)}[баптайды](../../instructions/config){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/cloud-desktops/instructions/config#desktops-config)[text=баптайды]}{/ifdef}. Жұмыс үстелдерінің {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-add)[text=пулдарын жасайды]} және оларды каталог сервисіндегі пайдаланушылар топтарына тағайындайды.
+  Сервисті {var(cloud)} {ifdef(public,private,private-pg)}[жеке кабинеті](https://kz.cloud.vk.kz/app){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=жеке кабинеті]}{/ifdef} арқылы басқарады. Сервис инфрақұрылымы мен жұмыс үстелдері пулдарына арналған желілерді, каталог қызметімен интеграцияны және екі факторлы аутентификацияны {ifdef(public,private,private-pg)}[баптайды](../../instructions/config){/ifdef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/cloud-desktops/instructions/config#desktops-config)[text=баптайды]}{/ifdef}. Жұмыс үстелдерінің {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-add)[text=пулдарын жасайды]} және оларды каталог сервисіндегі пайдаланушылар топтарына тағайындайды.
 
 - Пайдаланушы.
 

@@ -9,7 +9,7 @@
 ## {heading({counter(bucket)}. VK Object Storage сервисі үшін аккаунт жасаңыз)[id=create_account]}
 {/includetag}
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 {includetag(not_bucket_onboarding)}
    1. Жобаны таңдаңыз.
 {/includetag}
@@ -43,7 +43,7 @@
 ## {heading({counter(bucket)}. Бакет жасаңыз)[id=create_bucket]}
 
 {includetag(not_bucket_onboarding)}
-1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 {/includetag}
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 1. **Жасау** түймесін басыңыз.
@@ -59,7 +59,7 @@
 
 1. Объект қосыңыз:
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
    1. Жасалған бакет орналасқан жобаны таңдаңыз.
    1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
    1. Жасалған бакеттің атауын басыңыз.
@@ -110,7 +110,7 @@
 1. Объект қосыңыз:
 
 {includetag(not_bucket_onboarding)}
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
    1. Жасалған бакет орналасқан жобаны таңдаңыз.
    1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 {/includetag}
@@ -122,7 +122,7 @@
 1. Жүктелген объектіге тікелей сілтеме арқылы қол жеткізуді беріңіз:
 
 {includetag(not_bucket_onboarding)}
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.com/app).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
    1. Жасалған бакет орналасқан жобаны таңдаңыз.
    1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
    1. Жасалған бакеттің атауын басыңыз.

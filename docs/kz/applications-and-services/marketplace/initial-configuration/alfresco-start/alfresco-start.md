@@ -15,7 +15,7 @@ Alfresco пайдалану арқылы сіз [Marketplace](/kz/start/legal/di
 
 VK Cloud жобасында Alfresco сервисін өрістету үшін:
 
-1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app) өтіңіз.
+1. [Тіркеліңіз](/kz/intro/onboarding/account) және VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app) өтіңіз.
 1. Интернеттен өрістетілген сервисі бар ВМ-ге және Alfresco веб-интерфейсіне қол жеткізу үшін:
 
     1. Егер бұрын жасалмаған болса, интернетке қолжетімді [желіні](/kz/networks/vnet/instructions/net#vnet-net-add) жасаңыз.

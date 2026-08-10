@@ -6,7 +6,7 @@
 
 ## {heading(Жұмыс үстелі туралы ақпаратты қарау)[id=desktops-manage-desktops-view]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жұмыс үстелдерінің тізімін келесі тәсілдердің бірімен ашыңыз:
 
    - Жұмыс үстелдерінің жалпы тізімі арқылы: **Cloud Desktop** → **Жұмыс үстелдерінің тізімі** бөліміне өтіңіз.
@@ -22,7 +22,7 @@
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы таңдап, пулдың бірнеше жұмыс үстелін басқаруға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жұмыс үстелдерінің тізімін келесі тәсілдердің бірімен ашыңыз:
 
    - Жұмыс үстелдерінің жалпы тізімі арқылы:
@@ -52,7 +52,7 @@
 
 Бұл топтық операция: қажет болған жағдайда жалаушалар арқылы таңдап, пулдың бірнеше жұмыс үстелін қайта жүктеуге болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Жұмыс үстелдері пулдары** бөліміне өтіңіз.
 1. Пулдар тізімінде қажетті пулдың атауын басыңыз.
 1. **Жұмыс үстелдері** қойындысына өтіңіз.
@@ -70,7 +70,7 @@
 
 Бұл топтық операция: қажет болған жағдайда жалаушалар арқылы таңдап, пулдың бірнеше жұмыс үстеліндегі сессияларды аяқтауға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Жұмыс үстелдері пулдары** бөліміне өтіңіз.
 1. Пулдар тізімінде қажетті пулдың атауын басыңыз.
 1. **Жұмыс үстелдері** қойындысына өтіңіз.
@@ -82,7 +82,7 @@
 
 Бұл топтық операция: қажет болса, жалаушалар арқылы таңдап, пулдың бірнеше жұмыс үстелін басқаруға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Жұмыс үстелдерінің тізімін келесі тәсілдердің бірімен ашыңыз:
 
    - Жұмыс үстелдерінің жалпы тізімі арқылы:

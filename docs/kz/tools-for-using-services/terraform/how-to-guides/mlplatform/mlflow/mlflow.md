@@ -72,7 +72,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Мысалдар)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: жаңа JupyterHub инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_jupyterhub` ресурсы құрылғаннан кейін алынады. Ресурс төменде құрылады.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетіндегі](https://cloud.vk.com/app) JupyterHub инстансы бетінде қолжетімді.
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетіндегі](https://cloud.vk.kz/app) JupyterHub инстансы бетінде қолжетімді.
 
   {/cut}
 
@@ -192,7 +192,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow инстансы сәтті құрылғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
 1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow инстансының құрылғанына және белсенді екеніне көз жеткізіңіз.
 
 ## Пайдаланылмайтын ресурстарды жойыңыз

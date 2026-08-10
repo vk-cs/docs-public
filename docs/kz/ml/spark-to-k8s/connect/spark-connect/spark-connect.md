@@ -6,7 +6,7 @@ Spark Connect Spark кластеріне қашықтан қосылып, оны
 
 ## {heading(Дайындық қадамдары)[id=mlspark-connect-spark-connect-prerequirements]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Жобаны таңдаңыз.
 1. Егер әлі жасалмаған болса, Spark кластерін {linkto(../../instructions/create#mlspark-instructions-create)[text=жасаңыз]}. **Виртуалды машина түрін** таңдаңыз, онда кемінде 6 CPU және 12 ГБ RAM болуы керек.
 

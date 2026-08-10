@@ -64,7 +64,7 @@ Kubernetes Dashboard тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generati
 
 1. Secret алыңыз:
 
-   1. Кластерге қосылатын пайдаланушы аккаунтымен VK Cloud [жеке кабинетіне](https://kz.cloud.vk.com/app/) өтіңіз.
+   1. Кластерге қосылатын пайдаланушы аккаунтымен VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app/) өтіңіз.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Контейнерлер → Kubernetes кластерлері** бөліміне өтіңіз.
    1. Қажетті кластер үшін ![](../../../../assets/more-icon.svg "inline") түймесін басып, **Kubernetes Dashboard-қа кіру үшін Secret алу** тармағын таңдаңыз.

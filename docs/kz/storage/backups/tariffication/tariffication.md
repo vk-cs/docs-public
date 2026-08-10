@@ -22,13 +22,13 @@ Cloud Backup сервисіндегі {linkto(/kz/storage/backups/concepts/about
 
 Резервтік көшірмені сақтаудың қорытынды құны деректер көлеміне, жиілігіне және таңдалған резервтік көшіру стратегиясына байланысты. Сервисті пайдалану шығындарын азайту үшін {linkto(/kz/storage/backups/concepts/best-practices#backup-cost-manage)[text=резервтік көшіруді баптау бойынша үздік тәжірибелерді]} пайдаланыңыз.
 
-Бағалар [прайс-парақта](https://cloud.vk.com/pricelist) келтірілген. {var(cloud)} сервистерінің ақысын төлеуге байланысты құралдардың қалай жұмыс істейтіні туралы {linkto(/kz/intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз. 
+Бағалар [прайс-парақта](https://cloud.vk.kz/pricelist) келтірілген. {var(cloud)} сервистерінің ақысын төлеуге байланысты құралдардың қалай жұмыс істейтіні туралы {linkto(/kz/intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз. 
 
-Сервистердің таңдалған конфигурациясының құнын есептеу үшін [калькуляторды](https://cloud.vk.com/pricing/) пайдаланыңыз.
+Сервистердің таңдалған конфигурациясының құнын есептеу үшін [калькуляторды](https://cloud.vk.kz/pricing/) пайдаланыңыз.
 
 ## {heading(Тарифтелмейді)[id=backup-tariffication-yes]}
 
-- Әрбір 1 ГБ дискілік кеңістік үшін диск снимоктары (snapshot). Бағасы барлық {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-concepts-disk-types)[text=диск түрлері]} үшін бірдей және [прайс-парақтың](https://cloud.vk.com/pricelist) **Виртуалды серверлер** бөлімінде келтірілген.
+- Әрбір 1 ГБ дискілік кеңістік үшін диск снимоктары (snapshot). Бағасы барлық {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-concepts-disk-types)[text=диск түрлері]} үшін бірдей және [прайс-парақтың](https://cloud.vk.kz/pricelist) **Виртуалды серверлер** бөлімінде келтірілген.
 - `BackupBucket` сақтау класы үшін {var(s3)} {linkto(/kz/storage/s3/tariffication#s3-tariffication)[text=тарифтері]} бойынша әрбір 1 ГБ сақталатын деректер көлемі. 
 
 ## {heading(Тарификацияланбайды)[id=backup-tariffication-no]}

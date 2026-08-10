@@ -79,7 +79,7 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.

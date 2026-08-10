@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
 1. **Жеке ақпарат** бөліміне өтіңіз.
 1. Өрістерді толтырыңыз:
     - **Аты-жөні**: атыңыз бен тегіңізді енгізіңіз;
@@ -19,7 +19,7 @@
 
 ## Құпиясөзді өзгерту
 
-1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.com/account).
+1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
 1. **Қауіпсіздік** бөліміне өтіңіз.
 1. Құпиясөзді өңдеу үшін ![pencil-icon](/kz/assets/pencil-icon.svg "inline") белгішесін басыңыз.
 1. Өрістерді толтырыңыз:

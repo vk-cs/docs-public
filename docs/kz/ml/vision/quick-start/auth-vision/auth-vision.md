@@ -17,7 +17,7 @@
 
 ## {heading(OAuth-токендерін алу)[id=vision-quick-start-auth-vision-get-oauth-token]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 2. [Жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 3. **AI API** → **Vision API** бөліміне өтіңіз. Токендерді алу үшін қажетті ақпарат бар бет ашылады:
    - **OAuth endpoint**: OAuth-токендерін алуға арналған сұраулардың мекенжайы;
@@ -60,7 +60,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token'             --
 
 ## {heading(Сервистік токенді алу)[id=vision-quick-start-auth-vision-get-service-token]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 2. [Жобаны](/kz/tools-for-using-services/account/concepts/projects) таңдаңыз.
 3. **AI API** → **Vision API** бөліміне өтіңіз.
 4. **Сервистік токен қосу** түймесін басыңыз.

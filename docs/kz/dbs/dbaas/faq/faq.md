@@ -53,7 +53,7 @@
 
 Әдепкі бойынша резервтік көшіру қосылмаған. Оны {linkto(
 ../instructions/create#dbaas-create)[text=инстансты құру]} кезінде қосуға немесе
-[Резервтік көшіру](https://kz.cloud.vk.com/app/services/databases/backups/) бөлімінде баптауға болады.
+[Резервтік көшіру](https://kz.cloud.vk.kz/app/services/databases/backups/) бөлімінде баптауға болады.
 
 {/cut}
 
@@ -61,7 +61,7 @@
 
 Резервтік көшіру қосылғанын тексеру үшін:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Қажетті ДБ инстансы орналасқан {linkto(
    ../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобаны]} таңдаңыз.
 1. **Базы данных** → **Резервное копирование** бөліміне өтіңіз.

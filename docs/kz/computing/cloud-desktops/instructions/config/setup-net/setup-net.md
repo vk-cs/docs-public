@@ -10,7 +10,7 @@ Cloud Desktop сервисінің желілік конфигурациясын
 
 Қол режимін пайдалану үшін, қызмет инфрақұрылымын орналастыруға арналған желіні дайындаңыз:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын басыңыз. Егер желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}.
 1. Қажетті ішкі желінің атауын басыңыз. Егер қажетті ішкі желі әлі жоқ болса, оны {linkto(../../../../../networks/vnet/instructions/net#vnet-net-subnet-add)[text=жасаңыз]}, {linkto(../../../../../computing/cloud-desktops/concepts/nets-config#desktops-nets-config-ports)[text=порттар санына қойылатын талаптарды]} ескере отырып.
@@ -87,7 +87,7 @@ Cloud Desktop сервисінің желілік конфигурациясын
 
 Қызмет үшін желі баптауларының дұрыстығын тексеру үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Desktop** → **Қызмет баптаулары** бөліміне өтіңіз.
 1. **Желіні баптау** қойындысында **Желі баптауларын тексеру** опциясын белсендіріңіз.
 1. **Қосылымды тексеру** түймесін басыңыз.

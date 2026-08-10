@@ -10,7 +10,7 @@ Forbidden: role mapping misconfiguration: mapping is not configured for any of t
 
 ## Шешім
 
-1. [Өтіңіз](https://cloud.vk.com/account) VK Cloud аккаунтына.
+1. [Өтіңіз](https://cloud.vk.kz/account) VK Cloud аккаунтына.
 1. **Идентификация федерациясы** бөліміне өтіңіз.
 1. **Топтар** қойындысына өтіңіз.
 1. Идентификация федерациясы бапталатын жобаның атауын басыңыз.

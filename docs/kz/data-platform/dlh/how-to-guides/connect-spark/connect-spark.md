@@ -12,7 +12,7 @@
 
 ## {heading(1. Cloud Spark сервисінің данасын өрістетіңіз)[id=dlh_connect-spark_create_instance]}
 
-1. [Өтіңіз](https://kz.cloud.vk.com/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Сервис данасын жасау қажет жобаны таңдаңыз.
 1. **Data Platform → Сервис даналары** бөліміне өтіңіз.
 1. **Дана жасау** түймесін басыңыз.

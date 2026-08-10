@@ -43,7 +43,7 @@ CDN-ресурсының кэшін тазалау үшін:
 CDN-ресурсының кэшін тазалауға арналған сұрау мысалы:
 
 ```json
-curl --location --request POST 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281/purge'\
+curl --location --request POST 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281/purge'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -94,7 +94,7 @@ CDN-ресурсының кэшін толтыру үшін:
 CDN-ресурсының кэшін толтыруға арналған сұрау мысалы:
 
 ```json
-curl --location --request POST 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281/prefetch'\
+curl --location --request POST 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281/prefetch'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -142,7 +142,7 @@ HTTP жауап кодын баптау үшін:
 HTTP 403 жауабына арналған баптаулары бар сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -193,7 +193,7 @@ GZip сығуын қосу үшін:
 GZip сығу баптаулары бар сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -246,7 +246,7 @@ Brotli сығуын қосу үшін:
 Brotli сығу баптаулары бар сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -300,7 +300,7 @@ CDN-ресурсы бастаудан сығылған контентті сұр
 Бастаудағы сығу баптаулары бар сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -360,7 +360,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 Үлкен файлдарды жеткізуді оңтайландыру баптаулары бар сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

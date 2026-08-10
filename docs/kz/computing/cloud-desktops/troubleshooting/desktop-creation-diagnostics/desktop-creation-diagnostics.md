@@ -6,7 +6,7 @@
 
 ## {heading(Логтар арқылы диагностикалау)[id=desktops-diagnostics-logs]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Логтау** бөліміне өтіңіз.
 1. Егер экранда сұрау мен сүзгілер өрістері көрсетілмесе, **Іздеу және сүзгілер** түймесін басыңыз.
 1. Іздеу параметрлерін көрсетіңіз:
@@ -27,7 +27,7 @@
 
 ## {heading(Оқиғалар журналы арқылы диагностикалау)[id=desktops-diagnostics-events]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. Егер экранда сұрау мен сүзгілер өрістері көрсетілмесе, **Іздеу және сүзгілер** түймесін басыңыз.
 1. Іздеу параметрлерін көрсетіңіз:

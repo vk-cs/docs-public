@@ -20,7 +20,7 @@
 
 1. Кластер құру шеберін іске қосыңыз:
 
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app/).
+   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    1. Кластер орналастырылатын {linkto(../../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобаны]} таңдаңыз.
    1. **Контейнерлер** → **Kubernetes кластерлері** бөліміне өтіңіз.
    1. **Қосу** батырмасын немесе егер жобада әлі бірде-бір кластер жасалмаса, **Кластер құру** батырмасын басыңыз.

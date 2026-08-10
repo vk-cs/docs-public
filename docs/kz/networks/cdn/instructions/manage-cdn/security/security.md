@@ -33,7 +33,7 @@
 Сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -92,7 +92,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 Ресей Федерациясы мен Қазақстаннан ғана контентке қол жеткізуге рұқсат беру үшін сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -148,10 +148,10 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 
 Сұрау денесіндегі `options` блогында `referrer_acl` параметрлерін жазыңыз.
 
-`vk.com` доменінің тек ішкі домендері үшін контентке қол жеткізуге рұқсат беру үшін сұрау мысалы:
+`vk.kz` доменінің тек ішкі домендері үшін контентке қол жеткізуге рұқсат беру үшін сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -163,7 +163,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
         "referrer_acl": {
             "enabled": true,
             "excepted_values": [
-                "*.vk.com"
+                "*.vk.kz"
             ],
             "policy_type": "deny"
         }
@@ -208,7 +208,7 @@ IP-мекенжайлар бойынша қауіпсіздік саясатын
 `192.168.1.100/32` және `10.10.10.10/24` IP-мекенжайларынан контентке қол жеткізуге тыйым салу үшін сұрау мысалы:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

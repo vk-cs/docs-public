@@ -59,7 +59,7 @@ CDN-ресурста кэшттеуді баптау үшін:
 Сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -139,7 +139,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 Пайдаланушы браузерінде көз бойынша кэшттеуді баптауға арналған сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -187,7 +187,7 @@ CDN-ресурс HTTP-сұрауларда `Set-Cookie` тақырыптарын
 Set-Cookie тақырыптарын елемеу баптаулары бар сұрау үлгісі:
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -246,7 +246,7 @@ CDN-ресурс HTTP-сұраулардағы параметрлерді еле
 {cut(HTTP-сұрауларда барлық query-параметрлерді елемеуге CDN-ресурсты баптауға арналған сұрау үлгісі)}
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -267,7 +267,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 {cut(HTTP-сұрауларда көрсетілген query-параметрлерді елемеуге CDN-ресурсты баптауға арналған сұрау үлгісі)}
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{
@@ -295,7 +295,7 @@ curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/e
 {cut(Көрсетілгендерден басқа барлық query-параметрлерді HTTP-сұрауларда елемеуге CDN-ресурсты баптауға арналған сұрау үлгісі)}
 
 ```json
-curl --location --request PUT 'https://kz.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+curl --location --request PUT 'https://kz.cloud.vk.kz/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
 --header 'X-Auth-Token: example6UjMOd'\
 --header 'Content-Type: application/json'\
 --data '{

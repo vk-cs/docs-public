@@ -6,7 +6,7 @@
 
 ## {heading(Дайындық қадамдары)[id=alerting-db-prepare]}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.com/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
 1. {linkto(../../../../dbs/dbaas/instructions/create/create-single-replica#dbaas-create-single-replica)[text=Құрыңыз]} PostgreSQL БД инстансын, егер бұл әлі жасалмаған болса.
 

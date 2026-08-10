@@ -31,7 +31,7 @@
 `ME1`
 
 `PA2`
-| https://cloud.vk.com
+| https://cloud.vk.ru
 | Рубль
 
 | Қазақстан
@@ -40,7 +40,7 @@
 `KTP`
 | https://vkcloud.kz
 
-https://kz.cloud.vk.com
+https://kz.cloud.vk.kz
 | Теңге
 
 |===

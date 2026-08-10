@@ -386,7 +386,7 @@ Kubernetes нұсқасы 1.23 және одан жоғары кластерле
 
 ## {heading(Security Gate сервисіндегі құқықтар)[id=rolesandpermissions-security-gate]}
 
-[Security Gate](https://cloud.vk.com/security-gate) сервисі жеке кабинетте келесі рөлдер үшін қолжетімді:
+[Security Gate](https://cloud.vk.ru/security-gate) сервисі жеке кабинетте келесі рөлдер үшін қолжетімді:
 
 - жоба иесі,
 - суперәкімші,

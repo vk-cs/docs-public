@@ -330,7 +330,7 @@ DNS серверін жазу үшін:
    {tab(DNS серверін көрсетпей)}
 
    ```console
-   nslookup cloud.vk.com && \
+   nslookup cloud.vk.kz && \
    nslookup kubernetes.default
    ```
 
@@ -341,11 +341,11 @@ DNS серверін жазу үшін:
    Address:        10.254.0.10#53
 
    Non-authoritative answer:
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.194
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.192
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.193
 
    Server:         10.254.0.10
@@ -360,7 +360,7 @@ DNS серверін жазу үшін:
    {tab(DNS серверін анық көрсетіп)}
 
    ```console
-   nslookup cloud.vk.com 169.254.0.10 && \
+   nslookup cloud.vk.kz 169.254.0.10 && \
    nslookup kubernetes.default 169.254.0.10
    ```
 
@@ -371,11 +371,11 @@ DNS серверін жазу үшін:
    Address:        169.254.0.10#53
 
    Non-authoritative answer:
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.192
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.193
-   Name:   cloud.vk.com
+   Name:   cloud.vk.kz
    Address: 95.163.254.194
 
    Server:         169.254.0.10

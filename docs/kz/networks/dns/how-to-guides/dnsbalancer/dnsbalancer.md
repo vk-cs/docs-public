@@ -31,7 +31,7 @@ DNSBalancer сервисі қолданба өрістетілген ВМ-лар
 
 ## {heading(Дайындық қадамдары)[id=dns-dnsbalancer-prep]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.com/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Интернетке қолжетімді, әртүрлі {linkto(../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймақтарында]} орналасқан үш ВМ таңдаңыз немесе жасаңыз.
 1. Көрсетілген ВМ-ларға SSH арқылы қосылыңыз.
 
