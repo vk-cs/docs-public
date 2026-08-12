@@ -1,6 +1,6 @@
 # {heading(Использование External Secrets Operator)[id=k8s-external-secrets-operator]}
 
-Используйте аддон {linkto(../../concepts/addons-and-settings/addons#k8s-addons-eso)[text=External Secrets Operator]}, чтобы настроить синхронизацию с секретами Kubernetes, которые хранятся в {linkto(../../../../security/secret-manager/concepts/about#sm-about)[text=менеджере секретов {var(cloud)}]}.
+Используйте аддон {linkto(../../concepts/addons-and-settings/addons#k8s-addons-eso)[text=External Secrets Operator]}, чтобы настроить синхронизацию с секретами Kubernetes, которые хранятся в {linkto(../../../../security/secret-manager/concepts/about#sm-about)[text=менеджере секретов {var(cloud)}]}. 
 
 {note:info}
 External Secrets Operator доступен только для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
@@ -9,14 +9,13 @@ External Secrets Operator доступен только для кластеро�
 ## {heading(Подготовительные шаги)[id=k8s-eso-prepare]}
 
 1. {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
-1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
-1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
+1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 1. {linkto(../../instructions/addons/advanced-installation/install-advanced-eso#k8s-install-advanced-eso)[text=Установите аддон External Secrets Operator]}, если это еще не сделано.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=Включите доступ по API]}, если это еще не сделано.
 
 ## {heading({counter(eso)}. Создайте секрет в менеджере секретов)[id=k8s-eso-kms]}
 
-{linkto(../../../../security/secret-manager/instructions/manage-secret#sm-manage-create)[text=Создайте]} секрет с идентификатором `external-secret` в менеджере секретов {var(cloud)} и добавьте в него произвольные ключи.
+{linkto(../../../../security/secret-manager/instructions/manage-secret#sm-manage-create)[text=Создайте]} секрет в менеджере секретов {var(cloud)} и добавьте в него произвольные ключи. Далее для примера используется секрет с идентификатором `external-secret`.
 
 ## {heading({counter(eso)}. Создайте секрет Kubernetes)[id=k8s-eso-create]}
 
@@ -186,7 +185,7 @@ External Secrets Operator доступен только для кластеро�
    password                   Opaque   1       ...
    ```
  
-1. Просмотрите содержимое секретов:
+1. Убедитесь, что секреты содержат нужные данные:
 
    ```console
    kubectl -n external-secrets-operator get secret external-secret -o yaml

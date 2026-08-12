@@ -11,14 +11,13 @@ External Secrets Operator тек {linkto(/kz/kubernetes/k8s/concepts/cluster-gen
 ## {heading(Дайындық қадамдары)[id=k8s-eso-prepare]}
 
 1. {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Жоқ болса]} жаңа нұсқасы бар кластер жасаңыз.
-1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Орнатыңыз және баптаңыз]} kubectl, егер бұрын жасалмаған болса.
-1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Қосылыңыз]} kubectl арқылы кластерге.
+1. Кластерге `kubectl` арқылы қосыла алатыныңызға көз {linkto(../../connect/kubectl#k8s-kubectl)[text=жеткізіңіз]}.
 1. {linkto(../../instructions/addons/advanced-installation/install-advanced-eso#k8s-install-advanced-eso)[text=External Secrets Operator аддонын орнатыңыз]}, егер бұрын жасалмаған болса.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=API арқылы қолжетімділікті қосыңыз]}, егер бұрын жасалмаған болса.
 
 ## {heading({counter(eso)}. Секрет менеджерінде секрет жасаңыз)[id=k8s-eso-kms]}
 
-[Жасаңыз](/ru/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") `external-secret` идентификаторы бар секретті VK Cloud секреттер менеджерінде және оған кез келген кілттерді қосыңыз.
+VK Cloud құпия менеджерінде құпия [жасаңыз](/ru/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") және оған ерікті кілттерді қосыңыз. Әрі қарай, мысал үшін `external-secret` идентификаторы бар құпия қолданылады.
 
 ## {heading({counter(eso)}. Kubernetes секретін жасаңыз)[id=k8s-eso-create]}
 
@@ -188,7 +187,7 @@ Kubernetes-те `external-secret-all` аты бар жаңа `Secret` типті
    password                   Opaque   1       ...
    ```
 
-1. Секреттердің мазмұнын қараңыз:
+1. Құпияларда қажетті деректер бар екеніне көз жеткізіңіз:
 
    ```console
    kubectl -n external-secrets-operator get secret external-secret -o yaml

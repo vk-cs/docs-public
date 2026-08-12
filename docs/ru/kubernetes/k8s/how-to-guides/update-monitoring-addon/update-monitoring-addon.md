@@ -1,4 +1,4 @@
-# {heading(Обновление аддона Kube Prometheus Stack)[id=k8s-update-monitoring-addon]}
+# {heading(Обновление Kube Prometheus Stack)[id=k8s-update-monitoring-addon]}
 
 В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, доступно {linkto(../../concepts/versions/components#k8s-components)[text=несколько версий]} аддона {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack]}. Обновление этого аддона средствами {var(cloud)} недоступно, но можно обновить аддон вручную.
 

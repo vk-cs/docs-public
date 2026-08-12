@@ -1,7 +1,7 @@
 # {heading(External Secrets Operator)[id=k8s-install-advanced-eso]}
 
 {note:info}
-Этот аддон доступен только для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
+Этот аддон доступен только для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}. 
 {/note}
 
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-eso-prep]}
@@ -200,20 +200,3 @@
 
 После редактирования кода продолжите установку аддона.
 
-## {heading(Удаление аддона)[id=k8s-install-advanced-eso-delete]}
-
-1. Удалите все созданные экземпляры ресурсов, относящиеся к Custom Resource Definitions (CRD) аддона, из всех пространств имен:
-
-   ```console
-   kubectl -n <ПРОСТРАНСТВО_ИМЕН> delete <ТИП_РЕСУРСА> <ИМЯ_ЭКЗЕМПЛЯРА>
-   ```
-    
-   Здесь:
-
-   - `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором находится созданный экземпляр ресурса.
-   - `<ТИП_РЕСУРСА>` — тип ресурса, созданный для аддона. Примеры: `ExternalSecret`, `SecretStore`, `ClusterSecretStore`.
-   - `<ИМЯ_ЭКЗЕМПЛЯРА>` — имя экземпляра, который вы хотите удалить.
-
-   Подробнее в официальной документации [External Secrets Operator](https://external-secrets.io/v2.5.0/introduction/getting-started/#uninstalling). 
-
-1. {linkto(../../manage-addons#k8s-manage-addons-delete)[text=Удалите]} аддон External Secrets Operator. 

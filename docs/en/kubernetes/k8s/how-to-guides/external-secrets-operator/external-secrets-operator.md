@@ -7,14 +7,13 @@ External Secrets Operator is only available for [second-generation](/en/kubernet
 ## {heading(Preparatory steps)[id=prep]}
 
 1. [Create](../../instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster of the latest version, if not done so already.
-1. [Install and configure](/en/kubernetes/k8s/connect/kubectl#before_you_start) `kubectl`, if not done so already.
-1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Verify](/en/kubernetes/k8s/connect/kubectl) you can connect to the cluster via `kubectl`.
 1. [Install the External Secrets Manager add-on](../../instructions/addons/advanced-installation/install-advanced-eso), if not done so already.
 1. [Enable API access](/en/tools-for-using-services/api/rest-api/enable-api), if not done so already.
 
 ## {heading({counter(eso)}. Create a secret in the secrets manager)[id=eso-kms]}
 
-In the VK Cloud Secret Manager, [create](/ru/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") a secret with the `external-secret` ID and arbitrary keys.
+In the VK Cloud Secret Manager, [create](/ru/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") a secret with arbitrary keys. The examples that follow use a secret with the `external-secret` ID.
 
 ## {heading({counter(eso)}. Create a Kubernetes secret)[id=eso-create]}
 
@@ -184,7 +183,7 @@ This will create a new object of the `Secret` type named `external-secret-all` i
    password                   Opaque   1       ...
    ```
  
-1. View the contents of the secrets:
+1. Verify the secrets contain the required data:
 
    ```console
    kubectl -n external-secrets-operator get secret external-secret -o yaml
