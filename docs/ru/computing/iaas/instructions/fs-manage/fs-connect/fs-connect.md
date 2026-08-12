@@ -1,5 +1,7 @@
 # {heading(Подключение и отключение файлового хранилища)[id=iaas-fs-connect]}
 
+<!-- #todo на раздел есть ссылка в Руководстве администратора VK Private Cloud. -->
+
 Подключение и отключение файловых хранилищ, запись и чтение данных доступны только на виртуальных машинах {var(cloud)}{ifdef(private,private-pg,private-pdf,private-pg-pdf)} семейства Linux {/ifdef}.
 
 ## {heading(Подключение файлового хранилища)[id=iaas-fs-connect-mount]}
