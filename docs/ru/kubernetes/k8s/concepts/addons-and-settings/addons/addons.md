@@ -199,7 +199,7 @@ S3-CSI может создавать бакеты в любом S3-совмес�
 ### {heading(External Secrets Operator)[id=k8s-addons-eso]}
 
 {note:info}
-Этот аддон доступен только для кластеров {linkto(../../cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
+Этот аддон доступен только для кластеров {linkto(../../cluster-generations#k8s-cluster-generations)[text=второго поколения]}. 
 {/note}
 
 {tabs}

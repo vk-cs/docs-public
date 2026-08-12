@@ -201,21 +201,3 @@ Editing the add-on code is applicable for standard installation and installation
 The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/external-secrets/external-secrets/blob/v2.5.0/deploy/charts/external-secrets/values.yaml).
 
 After editing the add-on code, continue with the installation process.
-
-## {heading(Removing add-on)[id=delete]}
-
-1. Remove all created instances of resources related to the Custom Resource Definitions (CRDs) of the add-on from all namespaces:
-
-   ```console
-   kubectl -n <NAMESPACE> delete <RESOURCE_TYPE> <INSTANCE_NAME>
-   ```
-
-   Here:
-
-    - `<NAMESPACE>` is the namespace where the created resource instance is located.
-    - `<RESOURCE_TYPE>` is the type of the resource created for the add-on. Examples: `ExternalSecret`, `SecretStore`, `ClusterSecretStore`.
-    - `<INSTANCE_NAME>` is the name of the instance you want to remove.
-
-   For more details on this process, refer to the [official documentation](https://external-secrets.io/v2.5.0/introduction/getting-started/#uninstalling) of the add-on.
-
-1. [Remove](/en/kubernetes/k8s/instructions/addons/manage-addons#removing_addon) the add-on. 

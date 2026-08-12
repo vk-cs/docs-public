@@ -201,21 +201,3 @@
 Өрістер сипаттамасымен бірге аддонды баптаудың толық коды [GitHub](https://github.com/external-secrets/external-secrets/blob/v2.5.0/deploy/charts/external-secrets/values.yaml) сайтында қолжетімді.
 
 Кодты өңдегеннен кейін аддонды орнатуды жалғастырыңыз.
-
-## {heading(Қосымшаны жою)[id=k8s-install-advanced-eso-delete]}
-
-1. Барлық имен кеңістігінен аддонның Custom Resource Definitions (CRD) қатысты барлық жасалған ресурс даналарын жойыңыз:
-
-   ```console
-   kubectl -n <КЕҢІСТІК_АТАУЫ> delete <РЕСУРС_ТҮРІ> <ДАНА_АТАУЫ>
-   ```
-
-   Мұнда:
-
-    - `<КЕҢІСТІК_АТАУЫ>` — құрылған ресурс данасы орналасқан имен кеңістігі.
-    - `<РЕСУРС_ТҮРІ>` — қосымша үшін жасалған ресурс түрі. Мысалдар: `ExternalSecret`, `SecretStore`, `ClusterSecretStore`.
-    - `<ДАНА_АТАУЫ>` — жойғыңыз келетін дананың аты.
-
-   Толығырақ ресми құжаттамада [External Secrets Operator](https://external-secrets.io/v2.5.0/introduction/getting-started/#uninstalling).
-
-1. {linkto(../../manage-addons#k8s-manage-addons-delete)[text=Жою]} қосымша External Secrets Operator. 

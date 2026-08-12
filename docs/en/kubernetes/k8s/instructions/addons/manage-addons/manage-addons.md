@@ -199,12 +199,29 @@ To remove the add-on:
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
+1. If you want to remove the External Secrets Operator addon, perform additional steps in advance:
+
+   1. [Verify](/en/kubernetes/k8s/connect/kubectl) you can connect to the cluster via `kubectl`.
+   1. Remove all created instances of resources related to the Custom Resource Definitions (CRDs) of the add-on from all namespaces:
+
+      ```console
+      kubectl -n <NAMESPACE> delete <RESOURCE_TYPE> <INSTANCE_NAME>
+      ```
+
+      Here:
+
+      - `<NAMESPACE>` is the namespace where the created resource instance is located.
+      - `<RESOURCE_TYPE>` is the type of the resource created for the add-on. Examples: `ExternalSecret`, `SecretStore`, `ClusterSecretStore`.
+      - `<INSTANCE_NAME>` is the name of the instance you want to remove.
+
+      For more details on this process, refer to the [official documentation](https://external-secrets.io/v2.5.0/introduction/getting-started/#uninstalling) of the add-on.
+
 1. Perform one of the actions for the required add-on:
 
    - Select the add-on using the checkbox, then click **Delete**.
    - Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Remove addon**.
 
-1. Confirm the deletion.
+1. Confirm the action.
 
 {/tab}
 
