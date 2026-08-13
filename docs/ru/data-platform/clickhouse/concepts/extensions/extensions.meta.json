@@ -1,0 +1,16 @@
+{
+  "title": "Расширения",
+  "shortDescription": "Описание доступных расширений Cloud ClickHouse",
+  "metaDescription": "Узнайте о расширениях Cloud ClickHouse VK Data Platform: справочник стран для валидации кодов, обогащения данных и аналитики по регионам.",
+  "sectionTitle": "Расширения",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a3f7c1d2-8b4e-4f6a-9c5d-1e2b3a4c5d6e",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

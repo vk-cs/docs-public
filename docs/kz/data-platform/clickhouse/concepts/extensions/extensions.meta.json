@@ -1,0 +1,16 @@
+{
+  "title": "Кеңейтілгендер",
+  "shortDescription": "Cloud ClickHouse қол жетімді кеңейтілгендерінің сипаттамасы",
+  "metaDescription": "Cloud ClickHouse VK Data Platform кеңейтілгендері туралы біліңіз: кодтарды валидациялау, деректерді байыту және аймақтар бойынша аналитика үшін елдер анықтамалығы.",
+  "sectionTitle": "Кеңейтілгендер",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a3f7c1d2-8b4e-4f6a-9c5d-1e2b3a4c5d6e",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
