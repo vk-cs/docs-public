@@ -152,7 +152,7 @@
 
 {var(cloud)} сервисінде пайдаланушыларға образдардың төменде келтірілген көріну мәртебелері қолжетімді. {ifdef(public)}төменде. {/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(#tab_images_status)[text=%number кестесінде]}.{/ifdef}
 
-{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}
 {caption(Кесте {counter(table)[id=numb_tab_images_status]} — Образдың көріну мәртебелері)[align=right;position=above;id=tab_images_status;number={const(numb_tab_images_status)}]}{/ifdef}
 [cols="1,3", options="header"]
 |===
@@ -166,7 +166,7 @@
 | Образды бірнеше жобада пайдалануға болады
 
 |===
-{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}
 {/caption}{/ifdef}
 
 Әдепкі бойынша барлық образдар `private` мәртебесіне ие. Образды басқа жобалармен бөлісу үшін:

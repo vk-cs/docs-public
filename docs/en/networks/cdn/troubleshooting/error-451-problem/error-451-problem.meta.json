@@ -1,0 +1,13 @@
+{
+  "title": "Error 451 when using CDN",
+  "shortDescription": "What to do if error 451 occurs when using CDN",
+  "metaDescription": "What to do if error 451 occurs when using CDN in VK Cloud. Troubleshooting CDN resource connection issues",
+  "sectionTitle": "Error 451 when using CDN",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

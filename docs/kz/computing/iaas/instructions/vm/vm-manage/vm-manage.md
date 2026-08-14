@@ -612,3 +612,13 @@ SSH арқылы кілт жұбын пайдаланып Linux виртуалд
 {/tab}
 
 {/tabs}
+
+## {heading(ВМ-ді басқа жобаға көшіру)[id=iaas-vm-manage-transfer]}
+
+Виртуалды машиналарды жобалар арасында көшіру оның дискісінің көшірмесін жасау және осы көшірмеден жаңа ВМ іске қосу арқылы орындалады.
+
+1. [Жасаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) ВМ дискісінің көшірмесін образ ретінде.
+1. [Экспорттаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-export) жасалған образды одан әрі пайдалану үшін.
+1. ВМ көшіру қажет жобаны таңдаңыз.
+1. [Импорттаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) образды қажетті жобаға.
+1. [Орнатыңыз](/kz/computing/iaas/instructions/vm/vm-create) образдан жаңа ВМ.

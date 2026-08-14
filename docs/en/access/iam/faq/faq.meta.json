@@ -1,0 +1,13 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about the IAM service",
+  "metaDescription": "Answers to frequently asked questions about the IAM service",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
