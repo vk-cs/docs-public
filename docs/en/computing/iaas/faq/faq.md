@@ -204,6 +204,12 @@ To restore the VM, contact [technical support](mailto:support@mcs.mail.ru).
 
 {/cut}
 
+{cut(Is it possible to move a virtual machine to another project?)}
+
+Yes. To transfer a VM, use the {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-transfer)[text=instruction]}.
+
+{/cut}
+
 ## Disks and images
 
 {cut(How do I increase the disk?)}
@@ -319,6 +325,17 @@ The VM disk size changes during operation, without restarting the VM.
 
 The **Delete disk** button is missing if the disk is connected to a VM.
 [Disconnect the disk](../instructions/volumes#disconnecting_disk_from_vm) from the VM, and the button will become available in the disk context menu and the disk page.
+
+{/cut}
+
+{cut(How to get the image ID?)}
+
+To get the image ID, enter the command:
+
+```console
+openstack image list --name <IMAGE_NAME>
+```
+where `<IMAGE_NAME>` is the name of the image whose ID should be displayed.
 
 {/cut}
 

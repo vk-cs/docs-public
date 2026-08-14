@@ -260,6 +260,12 @@ ISO образдары туралы толығырақ — [Windows ОС бар 
 
 {/cut}
 
+{cut(Виртуалды машинаны басқа жобаға көшіруге болады ма?)}
+
+Иә. ВМ көшіру үшін {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-transfer)[text=нұсқаулықты]} пайдаланыңыз.
+
+{/cut}
+
 ## {heading(Дискілер мен образдар)[id=iaas-faq-disks-and-images]}
 
 {cut(Дискіні қалай үлкейтуге болады?)}
@@ -351,6 +357,17 @@ Root-дискіні ауыстыру {var(cloud)} жобасында басқа 
 {cut(Дискіні бұлттан қалай жүктеуге болады?)}
 
 Образды [жасаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) және [экспорттаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-export).
+
+{/cut}
+
+{cut(Образдың идентификаторын қалай алуға болады?)}
+
+Образдың идентификаторын алу үшін команданы енгізіңіз:
+
+```console
+openstack image list --name <ОБРАЗ_АТАУЫ>
+```
+мұндағы `<ОБРАЗ_АТАУЫ>` — идентификаторын шығару қажет образдың атауы.
 
 {/cut}
 

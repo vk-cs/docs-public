@@ -84,3 +84,15 @@ Not all user roles have access to the CDN service. If you were invited to a proj
 If your role has permissions to work in the CDN service, but the service is unavailable, contact [technical support](mailto:support@mcs.mail.ru).
 
 {/cut}
+
+{cut(How to get the list of CDN IP addresses?)}
+
+To get the current list of IP addresses, please contact [technical support](mailto:support@mcs.mail.ru).
+
+{/cut}
+
+{cut(How to enable HTTP method support for a CDN resource?)}
+
+To configure allowed HTTP methods, use the {linkto(../instructions/manage-cdn/http-headers#cdn-security-allowed-http)[text=instruction]}.
+
+{/cut}
