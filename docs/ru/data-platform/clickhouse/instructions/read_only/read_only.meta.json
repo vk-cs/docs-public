@@ -1,0 +1,15 @@
+{
+  "title": "Вывод экземпляра из режима только для чтения",
+  "shortDescription": "Как вывести экземпляр Cloud ClickHouse из режима только для чтения",
+  "metaDescription": "Как в VK Data Platform вывести экземпляр Cloud ClickHouse из режима только для чтения (read-only) при переполнении диска и восстановить запись данных",
+  "sectionTitle": "Вывод экземпляра из режима только для чтения",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
