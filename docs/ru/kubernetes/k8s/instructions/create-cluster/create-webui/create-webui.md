@@ -93,9 +93,9 @@
 
      По умолчанию опция включена и позволяет отслеживать состояние кластера, {linkto(../../../../../monitoring-services/monitoring/instructions/mon-setup-new#monitoring-mon-setup-new)[text=используя сервис Мониторинг {var(cloud)}]}.
 
-1. Нажмите кнопку **Настроить** в блоке **Группы узлов** и задайте {linkto(../../manage-node-group#k8s-manage-node-group)[text=настройки]} для группы worker-узлов.
+1. Нажмите кнопку **Настроить** в блоке **Группы узлов** и задайте {linkto(../../helpers/node-group-settings#k8s-node-group-settings)[text=настройки]} для группы worker-узлов.
 
-   1. (Опционально) Добавьте еще одну или несколько групп worker-узлов, нажав кнопку **Добавить группу узлов**, и {linkto(../../manage-node-group#k8s-manage-node-group)[text=настройте]} их.
+   1. (Опционально) Добавьте еще одну или несколько групп worker-узлов, нажав кнопку **Добавить группу узлов**, и {linkto(../../helpers/node-group-settings#k8s-node-group-settings)[text=настройте]} их.
 
    1. (Опционально) Удалите ненужные группы узлов, нажав кнопку **Удалить группу узлов** в соответствующей группе.
 

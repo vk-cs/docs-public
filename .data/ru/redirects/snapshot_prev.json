@@ -799,6 +799,7 @@
   "8ab80b55-808b-457a-ba8c-19134749108d": "/ru/kubernetes/k8s/instructions/manage-pvs",
   "20c56de0-2e2c-4d0d-aa49-afe12a1de281": "/ru/kubernetes/k8s/instructions/helpers",
   "67dd6366-d306-494b-9efd-2b8cc10ffe7d": "/ru/kubernetes/k8s/instructions/helpers/terraform-howto",
+  "28f82307-4c0d-4591-99c8-6c32a919c8db": "/ru/kubernetes/k8s/instructions/helpers/node-group-settings",
   "853366b6-a93b-4b26-a4fa-773c16f8ac4d": "/ru/kubernetes/k8s/how-to-guides",
   "fc237f8f-c2f3-481e-b540-81355c0b2e91": "/ru/kubernetes/k8s/how-to-guides",
   "810b03d0-aa16-4aaa-bb86-0d1757398b8e": "/ru/kubernetes/k8s/how-to-guides/workload-migration",

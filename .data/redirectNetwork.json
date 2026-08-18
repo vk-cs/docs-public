@@ -17755,7 +17755,7 @@
   },
   {
     "source": "/ru/base/k8s/operations/helpers/node-group-settings",
-    "destination": "/ru/kubernetes/k8s/instructions/manage-node-group",
+    "destination": "/ru/kubernetes/k8s/instructions/helpers/node-group-settings",
     "permanent": false,
     "locale": false
   },
@@ -23887,7 +23887,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/operations/helpers/node-group-settings",
-    "destination": "/ru/kubernetes/k8s/instructions/manage-node-group",
+    "destination": "/ru/kubernetes/k8s/instructions/helpers/node-group-settings",
     "permanent": false,
     "locale": false
   },
@@ -28837,7 +28837,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/service-management/helpers/node-group-settings",
-    "destination": "/ru/kubernetes/k8s/instructions/manage-node-group",
+    "destination": "/ru/kubernetes/k8s/instructions/helpers/node-group-settings",
     "permanent": false,
     "locale": false
   },
