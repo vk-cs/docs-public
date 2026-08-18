@@ -4,7 +4,7 @@
   "metaDescription": "Подключение и настройка системы WordPress для управления контентом веб-сайтов",
   "sectionTitle": "Установка и настройка сервиса WordPress",
   "icon": "",
-  "weight": 15,
+  "weight": 5,
   "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93",
   "build": {
     "for": [

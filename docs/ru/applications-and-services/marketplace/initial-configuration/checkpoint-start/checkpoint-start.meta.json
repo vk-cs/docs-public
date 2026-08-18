@@ -4,7 +4,7 @@
   "metaDescription": "Развертывание Check Point CloudGuard Network: настройка шлюзов и добавление сетевых интерфейсов",
   "sectionTitle": "Защита инфраструктуры с помощью Check Point CloudGuard Network",
   "icon": "",
-  "weight": 4,
+  "weight": 9,
   "uuid": "e6f3f167-385c-49c8-9e80-e933a1cd7eb3",
   "build": {
     "for": [

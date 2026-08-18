@@ -4,7 +4,7 @@
   "metaDescription": "Marketplace VK Cloud: шаги по развертыванию платформы автоматизации рабочих процессов n8n из магазина приложений VK Cloud.",
   "sectionTitle": "Развертывание n8n",
   "icon": "",
-  "weight": 20,
+  "weight": 18,
   "uuid": "e5b83368-6322-4ad9-9e4d-1d12bd5fbc49",
   "build": {
     "for": [
