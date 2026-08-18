@@ -192,7 +192,7 @@ For individuals, the funds will be returned to the account from which the paymen
 When working on prepayment with a negative payment account balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
 
 - 3 days if you have never replenished the payment account of the project.
-- 30 days if you have topped up the payment account of the project at least once.
+- 7 days if you have topped up the payment account of the project at least once.
 
    {note:err}
 
