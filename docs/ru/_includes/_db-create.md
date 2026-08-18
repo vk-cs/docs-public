@@ -384,10 +384,10 @@
 
 ## {heading({counter(db)}. Создайте необходимые таблицы)[id=tables_create]}
 
-1. Активируйте расширение TimescaleDB:
+1. Убедитесь, что расширение TimescaleDB активировано:
 
    ```sql
-   CREATE EXTENSION timescaledb;
+   CREATE EXTENSION IF NOT EXISTS timescaledb;
    ```
 
    Дождитесь появления приглашения `tsdb1=>`.
