@@ -257,8 +257,10 @@
 1. Нажмите на имя нужного кластера.
 1. Перейдите на вкладку **Аддоны**.
 {ifdef(public)}
-1. Если вы хотите удалить аддон External Secrets Operator, выполните предварительные шаги:
+1. Если вы хотите удалить аддон External Secrets Operator или Velero, выполните предварительные шаги:
 
+   {tabs}
+   {tab(External Secrets Operator)}
 
    1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Подключитесь]} к кластеру с помощью `kubectl`.
    1. Удалите все созданные экземпляры ресурсов, относящиеся к Custom Resource Definitions (CRD) аддона, из всех пространств имен:
@@ -274,6 +276,28 @@
       - `<ИМЯ_ЭКЗЕМПЛЯРА>` — имя экземпляра, который вы хотите удалить.
 
       Подробнее в официальной документации [External Secrets Operator](https://external-secrets.io/v2.5.0/introduction/getting-started/#uninstalling).
+
+   {/tab}
+
+   {tab(Velero)}
+
+    1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Подключитесь]} к кластеру с помощью `kubectl`.
+    1. Удалите все созданные экземпляры ресурсов, относящиеся к Custom Resource Definitions (CRD) аддона, из всех пространств имен:
+
+       ```console
+       kubectl -n <ПРОСТРАНСТВО_ИМЕН> delete <ТИП_РЕСУРСА> <ИМЯ_ЭКЗЕМПЛЯРА>
+       ```
+
+       Здесь:
+
+        - `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором находится созданный экземпляр ресурса.
+        - `<ТИП_РЕСУРСА>` — тип ресурса, созданный для аддона. Примеры: `Backup`, `Schedule`, `Restore`.
+        - `<ИМЯ_ЭКЗЕМПЛЯРА>` — имя экземпляра, который вы хотите удалить.
+
+       Подробнее в [официальной документации Velero](https://velero.io/docs/main/uninstalling/).
+
+   {/tab}
+   {/tabs}
 
 {/ifdef}
 

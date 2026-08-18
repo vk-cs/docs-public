@@ -1,0 +1,17 @@
+{
+  "title": "Использование Velero",
+  "shortDescription": "Как выполнять резервное копирование с помощью Velero",
+  "metaDescription": "Узнайте, как выполнять резервное копирование кластеров первого поколения в сервисе Cloud Containers с помощью Velero",
+  "sectionTitle": "Использование Velero",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

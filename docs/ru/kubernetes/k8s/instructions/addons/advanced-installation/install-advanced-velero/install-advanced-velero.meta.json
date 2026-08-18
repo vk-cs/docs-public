@@ -1,0 +1,14 @@
+{
+  "title": "Velero",
+  "shortDescription": "",
+  "metaDescription": "Установка аддона Velero в Kubernetes: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
+  "sectionTitle": "Velero",
+  "icon": "",
+  "weight": 19,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

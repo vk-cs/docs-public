@@ -308,7 +308,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 ## {heading(3. Проверьте работу External DNS)[id=k8s-external-dns-check]}
 
-Далее будет развернуто несколько демо-приложений, основанных на [примере Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Эти приложения будут опубликованы (сделаны доступными из интернета) с использованием `Service` и `Ingress`, настроенных на работу с ExternalDNS.
+Далее будет развернуто несколько демоприложений, основанных на [примере Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Эти приложения будут опубликованы (сделаны доступными из интернета) с использованием `Service` и `Ingress`, настроенных на работу с ExternalDNS.
 
 ### {heading(3.1. Опубликуйте приложение, используя сервис типа LoadBalancer)[id=k8s-external-dns-publish-loadbalancer]}
 
