@@ -384,10 +384,10 @@
 
 ## {heading({counter(db)}. Қажетті кестелерді жасаңыз)[id=tables_create]}
 
-1. TimescaleDB кеңейтімін белсендіріңіз:
+1. TimescaleDB кеңейтімі белсендірілгеніне көз жеткізіңіз:
 
    ```sql
-   CREATE EXTENSION timescaledb;
+   CREATE EXTENSION IF NOT EXISTS timescaledb;
    ```
 
    `tsdb1=>` шақыруы пайда болғанша күтіңіз.

@@ -273,10 +273,10 @@ All further steps must be performed from the `psql` command line.
 
 ## 5. Create necessary tables
 
-1. Activate the TimescaleDB extension:
+1. Make sure the TimescaleDB extension is enabled:
 
    ```sql
-   CREATE EXTENSION timescaledb;
+   CREATE EXTENSION IF NOT EXISTS timescaledb;
    ```
 
    Wait for the `tsdb1=>` prompt to appear.
