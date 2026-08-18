@@ -7,7 +7,7 @@
 - создание новых узлов, когда этого требует рабочая нагрузка;
 - удаление недозагруженных узлов.
 
-Cluster Autoscaler предустановлен во всех кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, но по умолчанию не включен. Автоматическое масштабирование worker-узлов нужно включать для каждой группы worker-узлов вручную при {linkto(../../instructions/helpers/node-group-settings#k8s-node-group-settings)[text=определении ее настроек]}.
+Cluster Autoscaler предустановлен во всех кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, но по умолчанию не включен. Автоматическое масштабирование worker-узлов нужно включать для каждой группы worker-узлов вручную при {linkto(../../instructions/manage-node-group#k8s-manage-node-group)[text=определении ее настроек]}.
 
 ## {heading(Увеличение количества worker-узлов)[id=k8s-cluster-autoscaler-increase-workers]}
 
