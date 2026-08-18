@@ -1,18 +1,14 @@
 {
-  "title": "Использование Velero",
+  "title": "Использование Velero в кластерах первого поколения",
   "shortDescription": "Как выполнять резервное копирование вручную и по расписанию с помощью Velero",
   "metaDescription": "Узнайте, как выполнять резервное копирование кластеров первого поколения в сервисе Cloud Containers с помощью Velero, а также как настроить резервное копирование по расписанию в формате cron",
-  "sectionTitle": "Использование Velero",
+  "sectionTitle": "Использование Velero в кластерах первого поколения",
   "icon": "",
-  "weight": 3,
+  "weight": 20,
   "uuid": "192d9916-9358-4c5e-a63d-61fe62aaef93",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf"
+      "public"
     ]
   }
 }

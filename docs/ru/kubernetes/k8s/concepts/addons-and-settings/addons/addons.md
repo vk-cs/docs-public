@@ -515,6 +515,33 @@ Kube Prometheus Stack — система мониторинга состояни
 
 {/tabs}
 
+### {heading(Velero)[id=k8s-addons-velero]}
+
+{note:info}
+Этот аддон доступен только для кластеров {linkto(../../cluster-generations#k8s-cluster-generations)[text=второго поколения]}. В кластерах первого поколения вы можете {linkto(../../../install-tools/velero#k8s-velero)[text=установить]} Velero самостоятельно.
+{/note}
+
+{tabs}
+
+{tab(Описание)}
+
+[Velero](https://velero.io/docs/main/) — инструмент с открытым исходным кодом для резервного копирования и аварийного восстановления кластеров Kubernetes.
+
+С помощью аддона Velero вы можете легко настраивать и автоматизировать резервное копирование рабочих нагрузок, пространств имен и ресурсов Kubernetes, производить миграцию кластеров, а также выполнять восстановление после сбоев, ошибок конфигурации, некорректных релизов и инцидентов с данными. Резервные копии, которые создаются при работе с аддоном, хранятся в бакетах с классом хранения `Hotbox` в сервисе {linkto(../../../../../storage/s3/concepts/about#s3-concepts-about)[text={var(s3)}]}.
+
+Аддон Velero не поддерживает резервное копирование {linkto(/ru/kubernetes/k8s/reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=постоянных томов]} (Persistent Volumes, PV).
+
+{/tab}
+
+{tab(Системные требования)}
+
+- **CPU**: 20m — 1000m;
+- **RAM**: 64Mi — 512Mi.
+
+{/tab}
+
+{/tabs}
+
 ### {heading(Vertical Pod Autoscaler (VPA))[id=k8s-addons-vpa]}
 
 {note:info}

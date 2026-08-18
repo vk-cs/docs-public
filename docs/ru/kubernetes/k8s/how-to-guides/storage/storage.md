@@ -1,6 +1,6 @@
 # {heading(Работа с постоянными томами (PV))[id=k8s-storage]}
 
-{linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Постоянные тома]} (Persistent Volumes, PV) можно подключать к простым демо-приложениям различными способами. Далее для подключения будут использованы Persistent Volume Claims (PVC). Для проверки работоспособности приложений и подключенных к ним PV будет создан ресурс Ingress.
+{linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Постоянные тома]} (Persistent Volumes, PV) можно подключать к простым демоприложениям различными способами. Далее для подключения будут использованы Persistent Volume Claims (PVC). Для проверки работоспособности приложений и подключенных к ним PV будет создан ресурс Ingress.
 
 ## {heading(Подготовительные шаги)[id=k8s-storage-prepare]}
 
@@ -15,7 +15,7 @@
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=Убедитесь]}, что аддон NGINX Ingress (`ingress-nginx`) {linkto(../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress)[text=установлен]} в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-view)[text=Убедитесь]}, что аддон NGINX Ingress (`ingress-nginx`) {linkto(../../instructions/addons/advanced-installation/install-advanced-ingress#k8s-install-advanced-ingress)[text=установлен]} в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демоприложениям.
 
     {note:warn}
     При установке аддона для него будет создан {linkto(../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартный балансировщик нагрузки]}.
@@ -27,12 +27,12 @@
 
 1. Установите [curl](https://curl.se/docs/), если утилита еще не установлена.
 
-## {heading(1. Создайте демо-приложения и подключите к ним PV)[id=k8s-storage-create-demo]}
+## {heading(1. Создайте демоприложения и подключите к ним PV)[id=k8s-storage-create-demo]}
 
 Далее будет продемонстрировано, как создать несколько веб-приложений на базе NGINX для отображения веб-страниц, записанных на подключенные к этим приложениям PV.
 Используется образ NGINX `nginxdemos/nginx-hello`, который отображает веб-страницы из директории `/usr/share/nginx/html`, поэтому все PV будут монтироваться в поды приложений именно по этому пути.
 
-Можно создать одно или несколько демо-приложений, в зависимости от того, с какими способами подключения PV нужно познакомиться.
+Можно создать одно или несколько демоприложений, в зависимости от того, с какими способами подключения PV нужно познакомиться.
 
 ### {heading(Подключение блочных хранилищ)[id=k8s-storage-connect-block-storage]}
 
@@ -624,7 +624,7 @@
 
 {/tabs}
 
-## {heading(2. Проверьте работоспособность демо-приложений и PV)[id=k8s-storage-check]}
+## {heading(2. Проверьте работоспособность демоприложений и PV)[id=k8s-storage-check]}
 
 1. Создайте манифест для ресурса Ingress, через который будут проходить запросы к приложениям.
 

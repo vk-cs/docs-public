@@ -6,7 +6,7 @@
 Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 {/note}
 
-Ingress-контроллер можно развернуть {linkto(../../../concepts/network#k8s-network)[text=в связке с TCP-балансировщиком нагрузки]} платформы {var(cloud)}. Далее для примера будут созданы простые демо-приложения и ресурс Ingress для проверки работоспособности контроллера. Далее предполагается, что будет развернут NGINX Ingress Controller. Однако предложенные подходы можно адаптировать и под другие Ingress-контроллеры, например, Traefik.
+Ingress-контроллер можно развернуть {linkto(../../../concepts/network#k8s-network)[text=в связке с TCP-балансировщиком нагрузки]} платформы {var(cloud)}. Далее для примера будут созданы простые демоприложения и ресурс Ingress для проверки работоспособности контроллера. Далее предполагается, что будет развернут NGINX Ingress Controller. Однако предложенные подходы можно адаптировать и под другие Ingress-контроллеры, например, Traefik.
 
 ## {heading(1. Подготовительные шаги)[id=k8s-ingress-tcp-prepare]}
 
@@ -24,13 +24,13 @@ Ingress-контроллер можно развернуть {linkto(../../../co
 
 1. Установите [curl](https://curl.se/docs/), если утилита еще не установлена.
 
-## {heading(2. Разверните демо-приложения)[id=k8s-ingress-tcp-deploy-demo]}
+## {heading(2. Разверните демоприложения)[id=k8s-ingress-tcp-deploy-demo]}
 
 К этим приложениям будет организован доступ через Ingress-контроллер с помощью ресурса Ingress.
 
 Для демонстрации будут использованы приложения `tea` и `coffee` из [примера Cafe от NGINX](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example). Каждое приложение состоит из ReplicaSet, Deployment и Service, соответствующего этому Deployment.
 
-Чтобы развернуть демо-приложения:
+Чтобы развернуть демоприложения:
 
 1. Загрузите манифест [cafe.yaml](https://raw.githubusercontent.com/nginxinc/kubernetes-ingress/v2.4.0/examples/ingress-resources/complete-example/cafe.yaml).
 

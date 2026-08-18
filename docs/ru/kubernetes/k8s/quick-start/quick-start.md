@@ -396,7 +396,7 @@
       kubectl create secret docker-registry k8s-registry-creds --docker-server=192.0.2.22:5000 --docker-username=registry --docker-password=registry-password-123456
       ```
 
-## {counter(kuber_level_1)}. Разверните демо-приложения
+## {counter(kuber_level_1)}. Разверните демоприложения
 
 На основе загруженного в реестр Docker образа `nginx-k8s-demo` будет развернуто два приложения: `tea` и `coffee`.
 Для каждого из приложений будут созданы:
@@ -623,11 +623,11 @@
 
    {/tabs}
 
-## {counter(kuber_level_1)}. Настройте Ingress для демо-приложений
+## {counter(kuber_level_1)}. Настройте Ingress для демоприложений
 
 В кластере был установлен аддон [Ingress-контроллера](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) NGINX, позволяющий маршрутизировать входящие запросы пользователей к развернутым в кластере приложениям.
 
-Чтобы Ingress-контроллер маршрутизировал запросы к соответствующим ресурсам Service, через которые опубликованы демо-приложения `tea` и `coffee`:
+Чтобы Ingress-контроллер маршрутизировал запросы к соответствующим ресурсам Service, через которые опубликованы демоприложения `tea` и `coffee`:
 
 1. Поместите в директорию `~/k8s-deployments` следующий файл:
 

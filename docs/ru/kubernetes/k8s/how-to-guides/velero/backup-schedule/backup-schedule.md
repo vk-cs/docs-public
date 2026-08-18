@@ -1,10 +1,8 @@
 # {heading(Резервное копирование по расписанию)[id=k8s-backup-schedule]}
 
-Используйте [Velero](https://velero.io/docs/main/), чтобы настраивать резервное копирование кластеров по заданному расписанию в формате [cron](https://crontab.guru/every-1-minute) и восстанавливать кластер на основании этого расписания.
+Используйте инструмент [Velero](https://velero.io/docs/main/), чтобы настраивать резервное копирование кластеров по заданному расписанию в формате [cron](https://crontab.guru/every-1-minute) и восстанавливать кластер на основании этого расписания.
 
-{note:info}
-Использование Velero для резервного копирования поддерживается только в кластерах {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
+{include(/ru/_includes/_velero-magnum-how-to.md)[tags=note-magnum]}
 
 ## {heading(Подготовительные шаги)[id=k8s-backup-schedule-prepare]}
 

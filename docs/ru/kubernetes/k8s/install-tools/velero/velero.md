@@ -2,6 +2,13 @@
 
 Velero — это клиент-серверная утилита для резервного копирования и восстановления ресурсов кластера Kubernetes.
 
+{ifdef(public)}
+
+{note:info}
+Описанный процесс установки утилиты Velero предназначен только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}. Для кластеров второго поколения используйте {linkto(../../concepts/addons-and-settings/addons#k8s-addons-velero)[text=аддон Velero]}.
+{/note}
+{/ifdef}
+
 {ifndef(public)}
 Перед установкой Velero проверьте, что:
 
