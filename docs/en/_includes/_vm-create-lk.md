@@ -112,9 +112,11 @@
 
    - (Optional) **Assign external IP**: enable the option to assign a new or existing {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP address]} to the VM. The option is available if internet access is enabled for the {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-standard-net)[text=network]}.
 
-     {note:info}
      The option is always enabled if an {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=external network]} was previously selected for the VM.
-     {/note}
+
+      {note:info}
+      A VM with a [vGPU configuration template](/en/computing/gpu/concepts/vgpu#flavors) must have an internet connection to verify [licensing](/en/computing/gpu/concepts/vgpu#licensing). 
+      {/note}
      {/includetag}
      {includetag(create-from-disk)}
      To connect via SSH, add the `ssh` or `ssh+www` group. For more information about configuring network access rules, see the [Security groups](../../../../networks/vnet/instructions/secgroups) section.

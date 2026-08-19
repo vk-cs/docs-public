@@ -1,0 +1,18 @@
+{
+  "title": "Установка компонентов CUDA",
+  "sectionTitle": "Установка компонентов CUDA",
+  "shortDescription": "Как правильно установить компоненты CUDA в ОС Linux",
+  "metaDescription": "Пошаговая инструкция по установке компонентов CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

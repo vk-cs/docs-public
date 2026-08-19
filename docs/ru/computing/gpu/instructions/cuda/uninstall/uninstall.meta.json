@@ -1,0 +1,18 @@
+{
+  "title": "Удаление компонентов CUDA",
+  "sectionTitle": "Удаление компонентов CUDA",
+  "shortDescription": "Как правильно удалить компоненты CUDA в ОС Linux",
+  "metaDescription": "Пошаговая инструкция по удалению компонентов CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

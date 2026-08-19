@@ -53,7 +53,7 @@
 Проверка лицензии в VK Cloud выполняется через локальный NVIDIA® License Server. В зависимости от используемого образа ОС может потребоваться дополнительная настройка:
 
 - Образ от VK Cloud: дополнительные действия не требуются, сервер лицензирования уже настроен.
-- Собственный образ: необходимо {linkto(../../../../computing/gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=настроить]} систему для работы с vGPU.
+- Собственный образ: необходима установка драйвера vGPU и настройка работы токена лицензирования. Воспользуйтесь инструкцией {linkto(../../instructions/driver-install/vgpu-windows#gpu-instructions-driver-install-vgpu-windows)[text=для Windows]} или {linkto(../../instructions/driver-install/vgpu-linux#gpu-instructions-driver-install-vgpu-linux)[text=для Linux]}.
 
 При неудачной проверке ВМ работает в пробном режиме до 20 минут.
 {/ifdef}

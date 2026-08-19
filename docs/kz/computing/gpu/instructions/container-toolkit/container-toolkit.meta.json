@@ -1,0 +1,18 @@
+{
+  "title": "NVIDIA Container Toolkit орнату",
+  "sectionTitle": "NVIDIA Container Toolkit орнату",
+  "shortDescription": "GPU бар ВМ-де контейнерлер үшін NVIDIA Container Toolkit қалай орнату керек",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Docker контейнерлерінде GPU пайдалану үшін NVIDIA Container Toolkit орнату бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

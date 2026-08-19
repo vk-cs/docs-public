@@ -1,0 +1,14 @@
+{
+  "title": "Updating CUDA components",
+  "sectionTitle": "Updating CUDA components",
+  "shortDescription": "How to update CUDA components correctly",
+  "metaDescription": "Step-by-step instructions for updating CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

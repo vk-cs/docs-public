@@ -1,0 +1,18 @@
+{
+  "title": "GPU/vGPU драйверін орнату",
+  "sectionTitle": "GPU/vGPU драйверін орнату",
+  "shortDescription": "GPU/vGPU драйверін қалай дұрыс орнату керек",
+  "metaDescription": "VK Cloud виртуалды машиналарында GPU/vGPU драйверін орнату бойынша қадамдық нұсқаулықтар.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

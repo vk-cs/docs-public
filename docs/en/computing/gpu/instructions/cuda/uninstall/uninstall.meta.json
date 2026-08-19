@@ -1,0 +1,14 @@
+{
+  "title": "Removing CUDA components",
+  "sectionTitle": "Removing CUDA components",
+  "shortDescription": "How to remove CUDA components correctly",
+  "metaDescription": "Step-by-step instructions for removing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

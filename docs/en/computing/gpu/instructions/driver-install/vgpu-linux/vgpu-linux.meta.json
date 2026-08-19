@@ -1,0 +1,14 @@
+{
+  "title": "Installing the Linux vGPU driver and configuring the licensing token",
+  "sectionTitle": "Installing the Linux vGPU driver and configuring the licensing token",
+  "shortDescription": "How to install the vGPU driver and configure the licensing token on Linux OS correctly",
+  "metaDescription": "Step-by-step instructions for installing the vGPU driver and configuring the licensing token on Linux OS on VK Cloud virtual machines with vGPU.",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

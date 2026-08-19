@@ -1,0 +1,18 @@
+{
+  "title": "CUDA компоненттерін жою",
+  "sectionTitle": "CUDA компоненттерін жою",
+  "shortDescription": "Linux ОЖ-де CUDA компоненттерін қалай дұрыс жою керек",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін жою бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

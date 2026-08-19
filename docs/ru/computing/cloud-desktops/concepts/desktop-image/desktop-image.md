@@ -35,8 +35,6 @@
 
 - установлены драйверы GPU;
 - настроен токен лицензирования, если используются {linkto(../../../../computing/gpu/concepts/vgpu#gpu-vgpu-licensing)[text=виртуальные графические ускорители]} (vGPU).
-
-Подробнее в руководстве {linkto(../../../../computing/gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=Настройка ВМ с vGPU]}.
 {/ifdef}.
 
 ## {heading(Рекомендации по подготовке собственного образа)[id=desktops-image-recommend]}

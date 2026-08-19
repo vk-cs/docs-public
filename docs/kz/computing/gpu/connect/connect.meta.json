@@ -4,7 +4,7 @@
   "metaDescription": "Қызметті қосу жөніндегі нұсқаулық",
   "sectionTitle": "Қызметті қосу",
   "icon": "",
-  "weight": 2,
+  "weight": 1,
   "build": {
     "for": [
       "public"

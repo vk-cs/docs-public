@@ -1,0 +1,14 @@
+{
+  "title": "Installing CUDA components",
+  "sectionTitle": "Installing CUDA components",
+  "shortDescription": "How to install CUDA components correctly",
+  "metaDescription": "Step-by-step instructions for installing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

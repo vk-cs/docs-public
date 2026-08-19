@@ -1,0 +1,18 @@
+{
+  "title": "CUDA компоненттерін орнату",
+  "sectionTitle": "CUDA компоненттерін орнату",
+  "shortDescription": "Linux ОЖ-де CUDA компоненттерін қалай дұрыс орнату керек",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін орнату бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

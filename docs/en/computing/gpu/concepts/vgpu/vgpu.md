@@ -55,6 +55,6 @@ Cloud GPU uses NVIDIA® vGPU Virtual Workstation license for Q-series profiles.
 The license check in VK Cloud is performed by the local NVIDIA® License Server. Depending on which OS image is used, additional configuration may be required:
 
 - OS image provided by VK Cloud: no additional actions are required, as the licensing server is already configured.
-- Custom VM image: additional system configuration is required to use vGPU.
+- Custom VM image: additional system configuration is required to use vGPU. See {linkto(../../instructions/driver-install/vgpu-windows#gpu-instructions-driver-install-vgpu-windows)[text=%text]} or {linkto(../../instructions/driver-install/vgpu-linux#gpu-instructions-driver-install-vgpu-linux)[text=%text]}.
 
 If the check fails, the VM operates in trial mode for up to 20 minutes.

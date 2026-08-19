@@ -5,7 +5,7 @@
   "sectionTitle": "GPU Virtualization with vGPU",
   "build": {
     "for": [
-      "dontbuild"
+      "public"
     ]
   },
   "icon": "",

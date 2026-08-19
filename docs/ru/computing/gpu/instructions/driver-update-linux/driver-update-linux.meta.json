@@ -1,0 +1,18 @@
+{
+  "title": "Обновление Linux-драйвера GPU",
+  "sectionTitle": "Обновление Linux-драйвера GPU",
+  "shortDescription": "Обновление Linux-драйвера GPU на ВМ с ОС Linux",
+  "metaDescription": "Пошаговая инструкция по обновлению Linux-драйвера NVIDIA на виртуальных машинах с GPU от VK Cloud.",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}
