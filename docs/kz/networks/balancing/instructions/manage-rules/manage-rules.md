@@ -138,7 +138,11 @@ openstack loadbalancer <КОМАНДА> --help
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer pool create         --loadbalancer <ID_БАЛАНСИРОВЩИКА>         --name <ИМЯ_ПУЛА>         --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ>         --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
+      openstack loadbalancer pool create \
+        --loadbalancer <ID_БАЛАНСИРОВЩИКА> \       
+        --name <ИМЯ_ПУЛА> \       
+        --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> \       
+        --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ>
       ```
 
       {/tab}
@@ -167,7 +171,11 @@ openstack loadbalancer <КОМАНДА> --help
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer member create <ID_ПУЛА>         --name <ИМЯ_УЧАСТНИКА>         --address <IP-АДРЕС_ВМ>         --subnet-id <ID_ПОДСЕТИ>         --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
+      openstack loadbalancer member create <ID_ПУЛА> \       
+        --name <ИМЯ_УЧАСТНИКА> \       
+        --address <IP-АДРЕС_ВМ> \        
+        --subnet-id <ID_ПОДСЕТИ> \       
+        --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
       ```
 
       {/tab}
@@ -188,13 +196,19 @@ openstack loadbalancer <КОМАНДА> --help
       Бір пул шегіндегі барлық member-объектілер бірдей портты пайдалануы керек.
       {/note}
 
-   1. Пул үшін healthcheck-объектісін жасаңыз. Ол пул қатысушыларының (members) күйі мен қолжетімділігін тексереді.
+   1. Пул үшін healthmonitor-объектісін жасаңыз. Ол пул қатысушыларының (members) күйі мен қолжетімділігін тексереді.
 
       {tabs}
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer healthmonitor create <ID_ПУЛА>         --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА>         --delay <ЗАДЕРЖКА_В_СЕКУНДАХ>         --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ>         --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>         --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК>         --type <ТИП_ПРОВЕРКИ>
+      openstack loadbalancer healthmonitor create <ID_ПУЛА>  \      
+        --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> \        
+        --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> \        
+        --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> \        
+        --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \        
+        --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \        
+        --type <ТИП_ПРОВЕРКИ>
       ```
 
       {/tab}
@@ -202,7 +216,7 @@ openstack loadbalancer <КОМАНДА> --help
 
       ```console
       openstack loadbalancer healthmonitor create <ID_ПУЛА> `
-        --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> `
+        --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> `
         --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> `
         --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> `
         --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
@@ -220,7 +234,15 @@ openstack loadbalancer <КОМАНДА> --help
       {tab(Linux/macOS (bash, zsh))}
 
          ```console
-         openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА>            --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ>            --protocol <ПРОТОКОЛ>            --default-pool <ID_ПУЛА>            --protocol-port <НОМЕР_ПОРТА>            --timeout-member-data <ТАЙМ-АУТ_1>            --timeout-member-connect <ТАЙМ-АУТ_2>            --timeout-client-data <ТАЙМ-АУТ_3>            --timeout-tcp-inspect <ТАЙМ-АУТ_4>
+         openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА> \          
+           --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> \          
+           --protocol <ПРОТОКОЛ> \           
+           --default-pool <ID_ПУЛА> \           
+           --protocol-port <НОМЕР_ПОРТА> \           
+           --timeout-member-data <ТАЙМ-АУТ_1> \           
+           --timeout-member-connect <ТАЙМ-АУТ_2> \           
+           --timeout-client-data <ТАЙМ-АУТ_3> \          
+           --timeout-tcp-inspect <ТАЙМ-АУТ_4>
          ```
 
          Мұнда:
@@ -284,9 +306,8 @@ openstack loadbalancer <КОМАНДА> --help
 1. Өзгерістер енгізіп, **Өңдеу** батырмасын басыңыз.
 
 {/tab}
-{/tabs}
 
-<!-- {tab(OpenStack CLI)}
+{tab(OpenStack CLI)}
 
 {note:info}
 Мұнда командалардың тек негізгі аргументтері келтірілген. Командалар мен олардың аргументтері туралы толығырақ OpenStack CLI анықтамасынан оқыңыз:
@@ -312,60 +333,173 @@ openstack loadbalancer <КОМАНДА> --help
    ```console
    openstack loadbalancer list
    ```
-
-1. Теңгеру ережесінің идентификаторын анықтаңыз. Ол үшін жүктеме теңгергішінің ережелер тізімін шығарыңыз:
+1. Жүктеме теңгергіші туралы ақпаратты алыңыз:
 
    ```console
-   openstack loadbalancer rule list --load-balancer <ID_БАЛАНСИРОВЩИКА>
+   openstack loadbalancer show <ИМЯ_ИЛИ_ID_БАЛАНСИРОВЩИКА>
+   ```
+   Теңгергішпен байланысты пулдар мен тыңдағыштардың идентификаторларын жазып алыңыз.
+1. Кіріс қосылымдарын өңдейтін тыңдағыштың параметрлерін өзгертіңіз:
+
+      {tabs}
+
+      {tab(Linux/macOS (bash, zsh))}
+
+      ```console
+      openstack loadbalancer listener set \
+          --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> \
+          --protocol <ПРОТОКОЛ> \
+          --default-pool <ID_ПУЛА> \
+          --protocol-port <НОМЕР_ПОРТА> \
+          --timeout-member-data <ТАЙМ-АУТ_1> \
+          --timeout-member-connect <ТАЙМ-АУТ_2> \
+          --timeout-client-data <ТАЙМ-АУТ_3> \
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> \
+          <ID_БАЛАНСИРОВЩИКА> 
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer listener set `
+          --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> `
+          --protocol <ПРОТОКОЛ> `
+          --default-pool <ID_ПУЛА> `
+          --protocol-port <НОМЕР_ПОРТА> `
+          --timeout-member-data <ТАЙМ-АУТ_1> `
+          --timeout-member-connect <ТАЙМ-АУТ_2> `
+          --timeout-client-data <ТАЙМ-АУТ_3> `
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> `
+          <ID_БАЛАНСИРОВЩИКА>
+      ```
+
+      {/tab}
+      {/tabs}
+
+      Мұнда:
+
+      - `<ID_БАЛАНСИРОВЩИКА>` — жүктеме теңгергішінің идентификаторы.
+      - `<ИМЯ_ПРОСЛУШИВАТЕЛЯ>` — тыңдағыштың атауы.
+      - `<ПРОТОКОЛ>` — теңгерімдеу протоколы. Мүмкін мәндер: `TCP`, `HTTP`, `HTTPS`.
+      - `<ID_ПУЛА>` — пулдың идентификаторы.
+      - `<НОМЕР_ПОРТА>` — теңгерімдеу протоколының порты.
+      - `<ТАЙМ-АУТ_1>` — сервердің әрекетсіздік тайм-ауты. Әдепкі бойынша — `50000`.
+      - `<ТАЙМ-АУТ_2>` — теңгергіштің сервермен қосылым орнату тайм-ауты. Әдепкі бойынша — `5000`.
+      - `<ТАЙМ-АУТ_3>` — клиенттің әрекетсіздік тайм-ауты. Әдепкі бойынша — `50000`.
+      - `<ТАЙМ-АУТ_4>` — мазмұнды тексеру үшін қосымша TCP-пакеттерін күту. Әдепкі бойынша — `0`.
+
+1. Теңгерімдеу пулы туралы ақпаратты алыңыз:
+
+   ```console
+   openstack loadbalancer pool show <ID_ПУЛА>
+   ```
+   Пул қатысушыларының қолжетімділігін тексеретін объектінің идентификаторын (`healthmonitor_id`) жазып алыңыз.
+1. Трафик тұтынушылары орналастырылатын пулдың параметрлерін өзгертіңіз:
+
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
+
+      ```console
+      openstack loadbalancer pool set \
+          --loadbalancer <ID_БАЛАНСИРОВЩИКА> \
+          --name <ИМЯ_ПУЛА> \
+          --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> \
+          --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ> \
+          <ID_ПУЛА>
+
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer pool set `
+          --loadbalancer <ID_БАЛАНСИРОВЩИКА> `
+          --name <ИМЯ_ПУЛА> `
+          --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> `
+          --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ> `
+          <ID_ПУЛА>
+      ```
+
+      {/tab}
+      {/tabs}
+1. Пул қатысушыларының идентификаторларын алыңыз:
+
+   ```console
+   openstack loadbalancer member list <ID_ПУЛА>
    ```
 
-1. Теңгеру ережесін өзгертіңіз:
+1. Пул қатысушыларының параметрлерін өзгертіңіз:
 
-   {tabs}
-
-   {tab(Linux/macOS (bash, zsh))}
-
-      ```console
-      openstack loadbalancer rule set <ID_ПРАВИЛА>         --name <ИМЯ_ПРАВИЛА>         --description <ОПИСАНИЕ>         --protocol <ПРОТОКОЛ>         --port <НОМЕР_ПОРТА>         --pool <ID_ПУЛА>         --vip <VIP>
-      ```
-
-      Мұнда:
-
-      - `<ID_ПРАВИЛА>` — теңгеру ережесінің идентификаторы.
-      - `<ИМЯ_ПРАВИЛА>` — теңгеру ережесінің атауы.
-      - `<ПРОТОКОЛ>` — теңгеру протоколы. Мүмкін мәндер: `TCP`, `HTTP`, `HTTPS`.
-      - `<НОМЕР_ПОРТА>` — теңгеру протоколының порты.
-      - `<ID_ПУЛА>` — пул идентификаторы.
-      - `<VIP>` — виртуалды IP-мекенжай.
-
-   {/tab}
-   {tab(Windows (PowerShell))}
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer rule set <ID_ПРАВИЛА> `
-        --name <ИМЯ_ПРАВИЛА> `
-        --description <ОПИСАНИЕ> `
-        --protocol <ПРОТОКОЛ> `
-        --port <НОМЕР_ПОРТА> `
-        --pool <ID_ПУЛА> `
-        --vip <VIP>
+      openstack loadbalancer member set \
+          --name <ИМЯ_УЧАСТНИКА> \
+          --address <IP-АДРЕС_ВМ> \
+          --subnet-id <ID_ПОДСЕТИ> \
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> \
+          <ID_ПУЛА> \
+          <ID_УЧАСТНИКА>
       ```
 
-      Мұнда:
+      {/tab}
+      {tab(Windows (PowerShell))}
 
-      - `<ID_ПРАВИЛА>` — теңгеру ережесінің идентификаторы.
-      - `<ИМЯ_ПРАВИЛА>` — теңгеру ережесінің атауы.
-      - `<ПРОТОКОЛ>` — теңгеру протоколы. Мүмкін мәндер: `TCP`, `HTTP`, `HTTPS`.
-      - `<НОМЕР_ПОРТА>` — теңгеру протоколының порты.
-      - `<ID_ПУЛА>` — пул идентификаторы.
-      - `<VIP>` — виртуалды IP-мекенжай.
+      ```console
+      openstack loadbalancer member set `
+          --name <ИМЯ_УЧАСТНИКА> `
+          --address <IP-АДРЕС_ВМ> `
+          --subnet-id <ID_ПОДСЕТИ> `
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> `
+          <ID_ПУЛА> `
+          <ID_УЧАСТНИКА>
+      ```
 
-   {/tab}
-   {/tabs}
+      {/tab}
+      {/tabs}
 
-1. Ережеге кіретін объектілерге қажетті баптауларды қолдану (`set`) немесе баптауларды алып тастау (`unset`) үшін тиісті командаларды пайдаланыңыз (мысалы, `openstack loadbalancer pool set`).
+      {note:warn}
+      Бір пул шеңберіндегі барлық қатысушылар бірдей портты пайдалануы тиіс.
+      {/note}
 
-{/tab} -->
+1. Қолжетімділікті тексеру параметрлерін өзгертіңіз:
+
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
+
+      ```console
+      openstack loadbalancer healthmonitor set \
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> \
+          --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> \
+          --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> \
+          --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \
+          --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \
+          --type <ТИП_ПРОВЕРКИ> \
+          <ID_HEALTHMONITOR-ОБЪЕКТА> 
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer healthmonitor set `
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> `
+          --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> `
+          --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> `
+          --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
+          --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> `
+          --type <ТИП_ПРОВЕРКИ> `
+          <ID_HEALTHMONITOR-ОБЪЕКТА> 
+      ```
+
+      {/tab}
+      {/tabs}
+
+{/tab}
+{/tabs}
 
 ## {heading(Ережені жою)[id=balancing-manage-rules-delete]}
 

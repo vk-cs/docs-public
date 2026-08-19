@@ -9,7 +9,7 @@ The network of a load balancer cannot be changed, so you need to create a new lo
     - **Network**: the name of the target SDN Sprut.
     - Leave the remaining parameters as default.
 
-1. [Create](/en/networks/balancing/instructions/manage-lb#balancing-manage-rules) load balancing rules and copy their parameters from the original load balancer in SDN Neutron.
+1. [Create](/en/networks/balancing/instructions/manage-rules) load balancing rules and copy their parameters from the original load balancer in SDN Neutron.
 1. [Delete](/en/networks/balancing/instructions/manage-lb#balancing-manage-lb-delete) the original load balancer if you no longer need it.
 
 You can also migrate load balancers using the following methods:

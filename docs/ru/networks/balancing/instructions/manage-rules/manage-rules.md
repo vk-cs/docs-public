@@ -157,22 +157,24 @@ openstack loadbalancer <КОМАНДА> --help
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer member create <ID_ПУЛА> \
+      openstack loadbalancer member create \
           --name <ИМЯ_УЧАСТНИКА> \
           --address <IP-АДРЕС_ВМ> \
           --subnet-id <ID_ПОДСЕТИ> \
-          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> \
+          <ID_ПУЛА>
       ```
 
       {/tab}
       {tab(Windows (PowerShell))}
 
       ```console
-      openstack loadbalancer member create <ID_ПУЛА> `
+      openstack loadbalancer member create `
           --name <ИМЯ_УЧАСТНИКА> `
           --address <IP-АДРЕС_ВМ> `
           --subnet-id <ID_ПОДСЕТИ> `
-          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ>
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> `
+          <ID_ПУЛА> 
       ```
 
       {/tab}
@@ -182,32 +184,34 @@ openstack loadbalancer <КОМАНДА> --help
       Все member-объекты в рамках одного пула должны использовать один и тот же порт.
       {/note}
 
-   1. Создайте для пула healthcheck-объект. Он будет проверять состояние и доступность участников (members) пула.
+   1. Создайте для пула healthmonitor-объект. Он будет проверять состояние и доступность участников (members) пула:
 
       {tabs}
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer healthmonitor create <ID_ПУЛА> \
-          --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> \
+      openstack loadbalancer healthmonitor create \
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> \
           --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> \
           --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> \
           --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \
           --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \
-          --type <ТИП_ПРОВЕРКИ>
+          --type <ТИП_ПРОВЕРКИ> \
+          <ID_ПУЛА>
       ```
 
       {/tab}
       {tab(Windows (PowerShell))}
 
       ```console
-      openstack loadbalancer healthmonitor create <ID_ПУЛА> `
-          --name <ИМЯ_HEALTHCHECK-ОБЪЕКТА> `
+      openstack loadbalancer healthmonitor create `
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> `
           --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> `
           --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> `
           --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
           --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> `
-          --type <ТИП_ПРОВЕРКИ>
+          --type <ТИП_ПРОВЕРКИ> `
+          <ID_ПУЛА>
       ```
 
       {/tab}
@@ -220,7 +224,7 @@ openstack loadbalancer <КОМАНДА> --help
       {tab(Linux/macOS (bash, zsh))}
 
       ```console
-      openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА> \
+      openstack loadbalancer listener create \
           --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> \
           --protocol <ПРОТОКОЛ> \
           --default-pool <ID_ПУЛА> \
@@ -228,26 +232,15 @@ openstack loadbalancer <КОМАНДА> --help
           --timeout-member-data <ТАЙМ-АУТ_1> \
           --timeout-member-connect <ТАЙМ-АУТ_2> \
           --timeout-client-data <ТАЙМ-АУТ_3> \
-          --timeout-tcp-inspect <ТАЙМ-АУТ_4>
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> \
+          <ID_БАЛАНСИРОВЩИКА>
       ```
-      
-      Здесь:
-      
-      - `<ID_БАЛАНСИРОВЩИКА>` — идентификатор балансировщика нагрузки.
-      - `<ИМЯ_ПРОСЛУШИВАТЕЛЯ>` — название прослушивателя.
-      - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
-      - `<ID_ПУЛА>` — идентификатор пула.
-      - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
-      - `<ТАЙМ-АУТ_1>` — тайм-аут бездействия сервера. По умолчанию — `50000`.
-      - `<ТАЙМ-АУТ_2>` — тайм-аут установки соединения балансировщика с сервером. По умолчанию — `5000`.
-      - `<ТАЙМ-АУТ_3>` — тайм-аут бездействия клиента. По умолчанию — `50000`.
-      - `<ТАЙМ-АУТ_4>` — ожидание дополнительных TCP-пакетов для проверки содержимого. По умолчанию — `0`.
 
       {/tab}
       {tab(Windows (PowerShell))}
 
       ```console
-      openstack loadbalancer listener create <ID_БАЛАНСИРОВЩИКА> `
+      openstack loadbalancer listener create `
           --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> `
           --protocol <ПРОТОКОЛ> `
           --default-pool <ID_ПУЛА> `
@@ -255,8 +248,11 @@ openstack loadbalancer <КОМАНДА> --help
           --timeout-member-data <ТАЙМ-АУТ_1> `
           --timeout-member-connect <ТАЙМ-АУТ_2> `
           --timeout-client-data <ТАЙМ-АУТ_3> `
-          --timeout-tcp-inspect <ТАЙМ-АУТ_4>
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> `
+          <ID_БАЛАНСИРОВЩИКА>
       ```
+      {/tab}
+      {/tabs}
 
       Здесь:
 
@@ -269,9 +265,6 @@ openstack loadbalancer <КОМАНДА> --help
       - `<ТАЙМ-АУТ_2>` — тайм-аут установки соединения балансировщика с сервером. По умолчанию — `5000`.
       - `<ТАЙМ-АУТ_3>` — тайм-аут бездействия клиента. По умолчанию — `50000`.
       - `<ТАЙМ-АУТ_4>` — ожидание дополнительных TCP-пакетов для проверки содержимого. По умолчанию — `0`.
-
-      {/tab}
-      {/tabs}
 
 1. Чтобы применить (`set`) нужные настройки к объектам, которые входят в правило балансировки, или отменить настройки (`unset`), используйте соответствующие команды (например, `openstack loadbalancer pool set`).
 
@@ -292,9 +285,8 @@ openstack loadbalancer <КОМАНДА> --help
 1. Внесите изменения и нажмите **Редактировать**.
 
 {/tab}
-{/tabs}
 
-<!-- {tab(OpenStack CLI)}
+{tab(OpenStack CLI)}
 
 {note:info}
 Здесь приведены только основные аргументы команд. Подробнее о командах и их аргументах читайте в справке OpenStack CLI:
@@ -315,66 +307,173 @@ openstack loadbalancer <КОМАНДА> --help
    ```console
    openstack loadbalancer list
    ```
-
-1. Определите идентификатор правила балансировки. Для этого выведите список правил балансировщика нагрузки:
-
-   ```console
-   openstack loadbalancer rule list --load-balancer <ID_БАЛАНСИРОВЩИКА>
-   ```
-   
-1. Измените правило балансировки:
-
-   {tabs}
-
-   {tab(Linux/macOS (bash, zsh))}
+1. Получите информацию о балансировщике нагрузки:
 
    ```console
-   openstack loadbalancer rule set <ID_ПРАВИЛА> \
-       --name <ИМЯ_ПРАВИЛА> \
-       --description <ОПИСАНИЕ> \
-       --protocol <ПРОТОКОЛ> \
-       --port <НОМЕР_ПОРТА> \
-       --pool <ID_ПУЛА> \
-       --vip <VIP>
+   openstack loadbalancer show <ИМЯ_ИЛИ_ID_БАЛАНСИРОВЩИКА>
    ```
+   Запишите идентификаторы пулов и прослушивателей, связанных с балансировщиком.
+1. Измените параметры прослушивателя, который обрабатывает входящие соединения:
 
-   Здесь:
+      {tabs}
 
-   - `<ID_ПРАВИЛА>` — идентификатор правила балансировки.
-   - `<ИМЯ_ПРАВИЛА>` — имя правила балансировки.
-   - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
-   - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
-   - `<ID_ПУЛА>` — идентификатор пула.
-   - `<VIP>` — виртуальный IP-адрес.
+      {tab(Linux/macOS (bash, zsh))}
 
-   {/tab}
-   {tab(Windows (PowerShell))}
+      ```console
+      openstack loadbalancer listener set \
+          --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> \
+          --protocol <ПРОТОКОЛ> \
+          --default-pool <ID_ПУЛА> \
+          --protocol-port <НОМЕР_ПОРТА> \
+          --timeout-member-data <ТАЙМ-АУТ_1> \
+          --timeout-member-connect <ТАЙМ-АУТ_2> \
+          --timeout-client-data <ТАЙМ-АУТ_3> \
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> \
+          <ID_БАЛАНСИРОВЩИКА> 
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer listener set `
+          --name <ИМЯ_ПРОСЛУШИВАТЕЛЯ> `
+          --protocol <ПРОТОКОЛ> `
+          --default-pool <ID_ПУЛА> `
+          --protocol-port <НОМЕР_ПОРТА> `
+          --timeout-member-data <ТАЙМ-АУТ_1> `
+          --timeout-member-connect <ТАЙМ-АУТ_2> `
+          --timeout-client-data <ТАЙМ-АУТ_3> `
+          --timeout-tcp-inspect <ТАЙМ-АУТ_4> `
+          <ID_БАЛАНСИРОВЩИКА>
+      ```
+
+      {/tab}
+      {/tabs}
+
+      Здесь:
+
+      - `<ID_БАЛАНСИРОВЩИКА>` — идентификатор балансировщика нагрузки.
+      - `<ИМЯ_ПРОСЛУШИВАТЕЛЯ>` — название прослушивателя.
+      - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
+      - `<ID_ПУЛА>` — идентификатор пула.
+      - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
+      - `<ТАЙМ-АУТ_1>` — тайм-аут бездействия сервера. По умолчанию — `50000`.
+      - `<ТАЙМ-АУТ_2>` — тайм-аут установки соединения балансировщика с сервером. По умолчанию — `5000`.
+      - `<ТАЙМ-АУТ_3>` — тайм-аут бездействия клиента. По умолчанию — `50000`.
+      - `<ТАЙМ-АУТ_4>` — ожидание дополнительных TCP-пакетов для проверки содержимого. По умолчанию — `0`.
+
+1. Получите информацию о пуле балансировки:
 
    ```console
-   openstack loadbalancer rule set <ID_ПРАВИЛА> `
-       --name <ИМЯ_ПРАВИЛА> `
-       --description <ОПИСАНИЕ> `
-       --protocol <ПРОТОКОЛ> `
-       --port <НОМЕР_ПОРТА> `
-       --pool <ID_ПУЛА> `
-       --vip <VIP>
+   openstack loadbalancer pool show <ID_ПУЛА>
+   ```
+   Запишите идентификатор объекта, проверяющего доступность участников пула (`healthmonitor_id`).
+1. Измените параметры пула, в котором будут размещены потребители трафика:
+
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
+
+      ```console
+      openstack loadbalancer pool set \
+          --loadbalancer <ID_БАЛАНСИРОВЩИКА> \
+          --name <ИМЯ_ПУЛА> \
+          --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> \
+          --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ> \
+          <ID_ПУЛА>
+
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer pool set `
+          --loadbalancer <ID_БАЛАНСИРОВЩИКА> `
+          --name <ИМЯ_ПУЛА> `
+          --protocol <ПРОТОКОЛ_НАЗНАЧЕНИЯ> `
+          --lb-algorithm <АЛГОРИТМ_БАЛАНСИРОВКИ> `
+          <ID_ПУЛА>
+      ```
+
+      {/tab}
+      {/tabs}
+1. Получите идентификаторы участников пула:
+
+   ```console
+   openstack loadbalancer member list <ID_ПУЛА>
    ```
 
-   Здесь:
+1. Измените параметры участников пула:
 
-   - `<ID_ПРАВИЛА>` — идентификатор правила балансировки.
-   - `<ИМЯ_ПРАВИЛА>` — имя правила балансировки.
-   - `<ПРОТОКОЛ>` — протокол балансировки. Возможные значения: `TCP`, `HTTP`, `HTTPS`.
-   - `<НОМЕР_ПОРТА>` — порт протокола балансировки.
-   - `<ID_ПУЛА>` — идентификатор пула.
-   - `<VIP>` — виртуальный IP-адрес.
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
 
-   {/tab}
-   {/tabs}
+      ```console
+      openstack loadbalancer member set \
+          --name <ИМЯ_УЧАСТНИКА> \
+          --address <IP-АДРЕС_ВМ> \
+          --subnet-id <ID_ПОДСЕТИ> \
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> \
+          <ID_ПУЛА> \
+          <ID_УЧАСТНИКА>
+      ```
 
-1. Чтобы применить (`set`) нужные настройки к объектам, которые входят в правило балансировки, или отменить настройки (`unset`), используйте соответствующие команды (например, `openstack loadbalancer pool set`).
+      {/tab}
+      {tab(Windows (PowerShell))}
 
-{/tab} -->
+      ```console
+      openstack loadbalancer member set `
+          --name <ИМЯ_УЧАСТНИКА> `
+          --address <IP-АДРЕС_ВМ> `
+          --subnet-id <ID_ПОДСЕТИ> `
+          --protocol-port <НОМЕР_ПОРТА_НАЗНАЧЕНИЯ> `
+          <ID_ПУЛА> `
+          <ID_УЧАСТНИКА>
+      ```
+
+      {/tab}
+      {/tabs}
+
+      {note:warn}
+      Все участники в рамках одного пула должны использовать один и тот же порт.
+      {/note}
+
+1. Измените параметры проверки доступности:
+
+      {tabs}
+      {tab(Linux/macOS (bash, zsh))}
+
+      ```console
+      openstack loadbalancer healthmonitor set \
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> \
+          --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> \
+          --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> \
+          --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК> \
+          --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> \
+          --type <ТИП_ПРОВЕРКИ> \
+          <ID_HEALTHMONITOR-ОБЪЕКТА> 
+      ```
+
+      {/tab}
+      {tab(Windows (PowerShell))}
+
+      ```console
+      openstack loadbalancer healthmonitor set `
+          --name <ИМЯ_HEALTHMONITOR-ОБЪЕКТА> `
+          --delay <ЗАДЕРЖКА_В_СЕКУНДАХ> `
+          --timeout <ТАЙМ-АУТ_В_СЕКУНДАХ> `
+          --max-retries <КОЛИЧЕСТВО_УСПЕШНЫХ_ПОПЫТОК>`
+          --max-retries-down <КОЛИЧЕСТВО_НЕУСПЕШНЫХ_ПОПЫТОК> `
+          --type <ТИП_ПРОВЕРКИ> `
+          <ID_HEALTHMONITOR-ОБЪЕКТА> 
+      ```
+
+      {/tab}
+      {/tabs}
+
+{/tab}
+{/tabs}
 
 ## {heading(Удаление правила)[id=balancing-manage-rules-delete]}
 
