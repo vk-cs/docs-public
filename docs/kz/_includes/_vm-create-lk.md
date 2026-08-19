@@ -112,9 +112,11 @@
 
    - (Қосымша) **Сыртқы IP тағайындау**: ВМ үшін жаңа немесе бар {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-мекенжайын]} тағайындау үшін опцияны қосыңыз. Опция {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-standard-net)[text=желі]} үшін интернетке қол жеткізу қосылған болса қолжетімді.
 
-     {note:info}
      Егер бұрын ВМ үшін {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желі]} таңдалған болса, опция әрқашан қосылады.
-     {/note}
+
+      {note:info}
+      {linkto(../../../../gpu/concepts/about#gpu-about-vgpu-flavors)[text=vGPU конфигурациясының үлгісі]} бар ВМ-де {linkto(../../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензиялауды]} тексеру үшін интернетке қосылым болуы керек. 
+      {/note}
      {/includetag}
      {includetag(create-from-disk)}
      SSH арқылы қосылу үшін `ssh` немесе `ssh+www` тобын қосыңыз. Желілік қол жеткізу ережелерін баптау туралы толығырақ {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups)[text=Қауіпсіздік топтары]} бөлімінде.

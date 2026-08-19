@@ -1,0 +1,18 @@
+{
+  "title": "Установка Windows-драйвера vGPU с настройкой токена лицензирования",
+  "sectionTitle": "Установка Windows-драйвера vGPU с настройкой токена лицензирования",
+  "shortDescription": "Как правильно установить драйвер vGPU в ОС Windows, а также как настроить работу токена лицензирования",
+  "metaDescription": "Пошаговая инструкция по установке драйвера NVIDIA на виртуальных машинах с vGPU от VK Cloud на ОС Windows, а также по настройке работы токена лицензирования.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

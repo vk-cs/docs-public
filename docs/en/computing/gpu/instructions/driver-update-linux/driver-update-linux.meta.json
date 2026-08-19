@@ -1,0 +1,14 @@
+{
+  "title": "Updating the Linux GPU driver",
+  "sectionTitle": "Updating the Linux GPU driver",
+  "shortDescription": "How to update the GPU driver on Linux OS correctly",
+  "metaDescription": "Step-by-step instructions for updating the GPU driver on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

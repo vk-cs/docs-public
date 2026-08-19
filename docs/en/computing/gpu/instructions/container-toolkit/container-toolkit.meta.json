@@ -1,0 +1,14 @@
+{
+  "title": "Installing NVIDIA Container Toolkit",
+  "sectionTitle": "Installing NVIDIA Container Toolkit",
+  "shortDescription": "How to install NVIDIA Container Toolkit for containers on a VM with GPU",
+  "metaDescription": "Step-by-step instructions for installing NVIDIA Container Toolkit to use GPU in Docker containers on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

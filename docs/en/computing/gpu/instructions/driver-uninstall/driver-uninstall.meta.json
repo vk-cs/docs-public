@@ -1,0 +1,14 @@
+{
+  "title": "Removing the GPU/vGPU driver",
+  "sectionTitle": "Removing the GPU/vGPU driver",
+  "shortDescription": "How to remove the GPU/vGPU driver correctly",
+  "metaDescription": "Step-by-step instructions for removing the GPU/vGPU driver on VK Cloud virtual machines.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

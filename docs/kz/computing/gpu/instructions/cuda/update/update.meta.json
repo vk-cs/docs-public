@@ -1,0 +1,18 @@
+{
+  "title": "CUDA компоненттерін жаңарту",
+  "sectionTitle": "CUDA компоненттерін жаңарту",
+  "shortDescription": "Linux ОЖ-де CUDA компоненттерін қалай дұрыс жаңарту керек",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін жаңарту бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

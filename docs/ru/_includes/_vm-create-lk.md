@@ -112,9 +112,11 @@
 
    - (Опционально) **Назначить внешний IP**: включите опцию, чтобы назначить для ВМ новый или имеющийся {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}. Опция доступна, если для {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-standard-net)[text=сети]} включен доступ в интернет.
 
-     {note:info}
      Опция всегда включена, если ранее для ВМ была выбрана {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешняя сеть]}.
-     {/note}
+
+      {note:info}
+      ВМ с {linkto(../../../../gpu/concepts/about#gpu-about-vgpu-flavors)[text=шаблоном конфигурации vGPU]} должны иметь подключение к интернету для проверки {linkto(../../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензирования]}. 
+      {/note}
      {/includetag}
      {includetag(create-from-disk)}
      Чтобы подключиться по SSH, добавьте группу `ssh` или `ssh+www`. Подробнее про настройку правил сетевого доступа в разделе {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups)[text=Группы безопасности]}.

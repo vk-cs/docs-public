@@ -1,0 +1,18 @@
+{
+  "title": "Linux-жүйесіне арналған GPU драйверін орнату",
+  "sectionTitle": "Linux-жүйесіне арналған GPU драйверін орнату",
+  "shortDescription": "Linux ОЖ-де GPU драйверін қалай дұрыс орнату керек",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де GPU драйверін орнату бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

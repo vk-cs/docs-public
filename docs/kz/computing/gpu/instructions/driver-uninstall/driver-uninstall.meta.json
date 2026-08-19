@@ -1,0 +1,18 @@
+{
+  "title": "GPU/vGPU драйверін жою",
+  "sectionTitle": "GPU/vGPU драйверін жою",
+  "shortDescription": "GPU/vGPU драйверін қалай дұрыс жою керек",
+  "metaDescription": "VK Cloud виртуалды машиналарында GPU/vGPU драйверін жою бойынша қадамдық нұсқаулық.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

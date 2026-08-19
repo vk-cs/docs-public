@@ -49,6 +49,6 @@ vGPU жұмысы үшін NVIDIA® vGPU Software лицензиясы қаже�
 VK Cloud-та лицензияны тексеру жергілікті NVIDIA® License Server арқылы орындалады. Пайдаланылатын ОС образына байланысты қосымша баптау қажет болуы мүмкін:
 
 - VK Cloud образы: қосымша әрекеттер қажет емес, лицензиялау сервері әлдеқашан бапталған.
-- Жеке образ: жүйені vGPU-мен жұмыс істеу үшін {linkto(../../../../computing/gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=баптау]} қажет.
+- Жеке образ: vGPU драйверін орнату және лицензиялау токенінің жұмысын баптау қажет. {linkto(../../instructions/driver-install/vgpu-windows#gpu-instructions-driver-install-vgpu-windows)[text=Windows үшін]} немесе {linkto(../../instructions/driver-install/vgpu-linux#gpu-instructions-driver-install-vgpu-linux)[text=Linux үшін]} нұсқаулықты пайдаланыңыз.
 
 Тексеру сәтсіз болған жағдайда, ВМ сынақ режимінде 20 минутқа дейін жұмыс істейді.

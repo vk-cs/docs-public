@@ -31,7 +31,7 @@
       Остальные параметры установите на свое усмотрение.
 
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} к ВМ.
-1. {linkto(../../instructions/gpu-driver#gpu-instructions-gpu-driver-install)[text=Установите]} или {linkto(../../instructions/gpu-driver#gpu-instructions-gpu-driver-update)[text=обновите]} драйвер NVIDIA.
+1. {linkto(../../instructions/driver-install/gpu-linux#gpu-instructions-driver-install-gpu-linux)[text=Установите]} или {linkto(../../instructions/driver-update-linux#gpu-instructions-driver-update-linux)[text=обновите]} драйвер NVIDIA.
 
    {note:info}
 
@@ -53,7 +53,7 @@
 
 Окружение подготавливается непосредственно в ОС вашей виртуальной машины. Используйте этот метод, если необходим доступ к системным компонентам и самостоятельно устанавливать и настраивать нужные версии компонентов CUDA.
 
-1. {linkto(../../instructions/cuda#gpu-instructions-cuda-install)[text=Установите]} компоненты CUDA.
+1. {linkto(../../instructions/cuda/install#gpu-instructions-cuda-install)[text=Установите]} компоненты CUDA.
 1. Установите Python, если этого не было сделано ранее:
 
    {tabs}

@@ -1,0 +1,18 @@
+{
+  "title": "Установка драйвера GPU/vGPU",
+  "sectionTitle": "Установка драйвера GPU/vGPU",
+  "shortDescription": "Установка драйвера GPU/vGPU на ВМ с ОС Linux и Windows, а также настройка токена лицензирования для vGPU",
+  "metaDescription": "Пошаговые инструкции по установке драйвера NVIDIA на виртуальных машинах с GPU и vGPU от VK Cloud на ОС Linux и Windows.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

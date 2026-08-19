@@ -1,0 +1,14 @@
+{
+  "title": "Working with CUDA components",
+  "sectionTitle": "Working with CUDA components",
+  "shortDescription": "Installing, updating, and removing CUDA components",
+  "metaDescription": "Step-by-step instructions for installing, updating, and removing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

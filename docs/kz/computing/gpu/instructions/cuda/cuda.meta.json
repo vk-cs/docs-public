@@ -1,0 +1,18 @@
+{
+  "title": "CUDA компоненттерімен жұмыс істеу",
+  "sectionTitle": "CUDA компоненттерімен жұмыс істеу",
+  "shortDescription": "CUDA компоненттерін орнату, жаңарту және жою",
+  "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін орнату, жаңарту және жою бойынша қадамдық нұсқаулықтар.",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

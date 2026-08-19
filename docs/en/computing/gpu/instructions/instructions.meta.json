@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "sectionTitle": "Step-by-step instructions",
+  "shortDescription": "Instructions for preparing virtual machines with GPU/vGPU for workloads",
+  "metaDescription": "Step-by-step instructions for preparing VK Cloud virtual machines with GPU/vGPU for workloads: installing, updating, and removing driver and CUDA components, configuring vGPU licensing, preparing an environment for ML computations",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

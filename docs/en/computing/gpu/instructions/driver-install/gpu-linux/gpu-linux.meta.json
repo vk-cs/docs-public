@@ -1,0 +1,14 @@
+{
+  "title": "Installing the Linux GPU driver",
+  "sectionTitle": "Installing the Linux GPU driver",
+  "shortDescription": "How to install the GPU driver on Linux OS correctly",
+  "metaDescription": "Step-by-step instructions for installing the GPU driver on Linux OS on VK Cloud virtual machines with GPU.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

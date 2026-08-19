@@ -26,8 +26,6 @@ For a VM created from an image to utilize [graphics accelerators](/en/computing/
 - GPU drivers installed;
 - a license token configured if [virtual graphics accelerators](/ru/computing/gpu/concepts/vgpu#licensing "change-lang") (vGPU) are used.
 
-For more information, see the guide for [configuring a VM with vGPU](/ru/computing/gpu/how-to-guides/vgpu-setup "change-lang").
-
 ## Recommendations for preparing a custom desktop image
 
 For Astra Linux, it is recommended to install additional software to support the RDP protocol and the AD service. This will speed up the deployment of desktops in a pool.

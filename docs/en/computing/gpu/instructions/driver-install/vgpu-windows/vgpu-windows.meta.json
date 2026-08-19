@@ -1,0 +1,14 @@
+{
+  "title": "Installing the Windows vGPU driver and configuring the licensing token",
+  "sectionTitle": "Installing the Windows vGPU driver and configuring the licensing token",
+  "shortDescription": "How to install the vGPU driver and configure the licensing token on Windows OS correctly",
+  "metaDescription": "Step-by-step instructions for installing the vGPU driver and configuring the licensing token on Windows OS on VK Cloud virtual machines with vGPU.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

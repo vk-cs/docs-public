@@ -1,0 +1,14 @@
+{
+  "title": "Installing the GPU/vGPU driver",
+  "sectionTitle": "Installing the GPU/vGPU driver",
+  "shortDescription": "How to install the GPU/vGPU driver correctly",
+  "metaDescription": "Step-by-step instructions for installing the GPU/vGPU driver on VK Cloud virtual machines.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

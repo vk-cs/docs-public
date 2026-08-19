@@ -37,8 +37,6 @@
 
 - GPU драйверлері орнатылған;
 - егер {linkto(../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=виртуалды графикалық үдеткіштер]} (vGPU) пайдаланылса, лицензиялау токені бапталған.
-
-Толығырақ {linkto(../../../gpu/how-to-guides/vgpu-setup#vgpu-setup)[text=vGPU бар ВМ баптау]} нұсқаулығында.
 {/ifdef}
 
 ## {heading(Жеке образды дайындау бойынша ұсыныстар)[id=desktops-image-recommend]}
