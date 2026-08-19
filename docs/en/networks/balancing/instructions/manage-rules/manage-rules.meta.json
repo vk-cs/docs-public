@@ -1,0 +1,14 @@
+{
+  "title": "Managing load balancing rules",
+  "shortDescription": "Configuring load balancing rules",
+  "metaDescription": "Configuring load balancing rules",
+  "sectionTitle": "Managing load balancing rules",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}
