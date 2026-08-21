@@ -1,6 +1,4 @@
 {includetag(captcha-req-browser)}
-Your website must use HTTPS.
-
 Supported browsers:
 
 - Google Chrome version 52 and above;
