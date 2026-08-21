@@ -1,6 +1,4 @@
 {includetag(captcha-req-browser)}
-Ваш веб-сайт должен работать по протоколу HTTPS.
-
 Поддерживаемые браузеры:
 
 - Google Chrome версии 52 и выше;
