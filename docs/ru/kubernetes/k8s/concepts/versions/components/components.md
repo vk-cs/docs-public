@@ -10,9 +10,10 @@
 
 В таблице приведены поддерживаемые версии компонентов для различных версий кластеров Kubernetes.
 
-[cols="2,1,1,1,1,1", options="header"]
+[cols="2,1,1,1,1,1,1", options="header"]
 |===
 .^|Компонент
+.^|1.35.x
 .^|1.34.x, 1.33.x
 .^|1.32.x
 .^|1.31.x
@@ -20,6 +21,7 @@
 .^|1.28.x
 
 |[CoreDNS](https://github.com/coredns/coredns)
+|1.14.6-mcs.2
 |1.12.3
 |1.11.3
 |1.11.3
@@ -27,6 +29,7 @@
 |1.11.1
 
 |[Calico](https://github.com/projectcalico/calico)
+|3.29.1
 |3.30.2
 |3.29.1
 |3.28.0
@@ -34,6 +37,7 @@
 |3.28.0
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
+|3.18.2-mcs.1
 |3.18.2
 |3.18.2
 |3.18.2
@@ -41,6 +45,7 @@
 |3.14.0
 
 |[Helm](https://github.com/helm/helm)
+|3.21.3-mcs.2
 |3.18.4
 |3.14.2
 |3.14.2
@@ -48,6 +53,7 @@
 |3.14.2
 
 |[Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
+|![](../../../../../assets/no.svg "inline")
 |2.7.0
 |2.7.0
 |2.7.0
@@ -55,6 +61,7 @@
 |2.7.0
 
 |[Metrics Server](https://github.com/kubernetes-sigs/metrics-server)
+|0.9.0-mcs.2
 |0.7.1
 |0.7.1
 |0.7.1
@@ -62,6 +69,7 @@
 |0.7.1
 
 |[Shell-operator](https://github.com/flant/shell-operator)
+|![](../../../../../assets/no.svg "inline")
 |1.0.9
 |1.0.9
 |1.0.9
@@ -128,9 +136,10 @@
 
 Необходимые аддоны могут быть {linkto(../../../instructions/addons/manage-addons#k8s-manage-addons-install)[text=установлены]} в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
 
-[cols="2,1,1,1,1,1", options="header"]
+[cols="2,1,1,1,1,1,1", options="header"]
 |===
 .^|Аддон
+.^|1.35.x
 .^|1.34.x, 1.33.x
 .^|1.32.x
 .^|1.31.x
@@ -138,6 +147,7 @@
 .^|1.28.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
+|![](../../../../../assets/no.svg "inline")
 |0.7.2
 |0.7.2
 |0.7.2
@@ -145,6 +155,7 @@
 |0.4.6
 
 |[cert-manager](https://github.com/cert-manager/cert-manager)
+|1.16.3
 |1.16.3
 |1.16.3
 |1.16.3
@@ -157,8 +168,10 @@
 |2.2.2
 |2.2.2
 |2.2.2
+|2.2.2
 
 |[Fluent Bit](https://github.com/fluent/fluent-bit)
+|0.48.5
 |0.48.5
 |0.48.5
 |0.48.5
@@ -166,6 +179,7 @@
 |0.43.0
 
 |{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|0.48.5
 |0.34.2
 |0.34.2
 |0.34.2
@@ -173,6 +187,7 @@
 |0.34.2
 
 |[GPU Operator](https://github.com/NVIDIA/gpu-operator)
+|25.10.1
 |24.9.0
 |24.9.0
 |24.9.0
@@ -185,8 +200,10 @@
 |4.12.1
 |4.12.1
 |4.12.1
+|4.12.1
 
 |[Istio](https://github.com/istio/istio)
+|1.29.2
 |1.24.2
 |1.24.2
 |1.24.2
@@ -194,6 +211,7 @@
 |1.19.3
 
 |[Istio Gateaway](https://github.com/istio/gateway-api)
+|1.29.2
 |1.24.2
 |1.24.2
 |1.24.2
@@ -204,10 +222,12 @@
 |3.4.0
 |3.4.0
 |3.4.0
+|3.4.0
 |0.71.4
 |0.71.4
 
 |[Kiali](https://github.com/kiali/kiali)
+|![](../../../../../assets/no.svg "inline")
 |2.4.0
 |2.4.0
 |2.4.0
@@ -215,6 +235,9 @@
 |1.75.0
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
+
+|68.3.3
+
 |68.3.4-vk.1
 
 |68.3.3
@@ -226,6 +249,7 @@
 |54.2.2
 
 |[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
+|4.8.0
 |4.8.0
 |4.8.0
 |4.8.0
@@ -327,4 +351,3 @@
 В версиях аддона Kube Prometheus Stack с суффиксом `vk` встроено {linkto(../../../monitoring#k8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера Kubernetes]}. Это доработка от VK Tech, недоступная в базовой версии аддона.
 
 Чтобы использовать возможности прогнозирования, {linkto(../../../how-to-guides/update-monitoring-addon#k8s-update-monitoring-addon)[text=обновите]} аддон с базовой версии до версии от VK Tech.
-
