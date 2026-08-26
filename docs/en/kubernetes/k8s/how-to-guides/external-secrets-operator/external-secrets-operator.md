@@ -109,14 +109,14 @@ In the VK Cloud Secret Manager, [create](/ru/security/secret-manager/instruction
      data:
        - secretKey: <KEY_NAME_IN_SECRET>
          remoteRef:
-           key: <SECRET_ID>
+           key: "<SECRET_ID>"
            property: <SECRET_KEY>
    ```   
    
    Здесь:
 
    - `<KEY_NAME_IN_SECRET>` is the name of the key in the Kubernetes secret. Example: `password`.
-   - `<SECRET_ID>` is the ID of the secret that you [created](#eso-kms) earlier in the VK Cloud Secret Manager.
+   - `<SECRET_ID>` is the ID of the secret that you [created](#eso-kms) earlier in the VK Cloud Secret Manager. Must be enclosed in double quotation marks: `""`.
    - `<SECRET_KEY>` is the key in the secret from the VK Cloud Secret Manager the value of which you want to synchronize with the Kubernetes secret.
    
    For example, the VK Cloud Secret Manager has a secret with the `external-secret` ID and the following pairs of values: `key1: value1`, `key2: value2`, `key3: value3`. If you want to set up the Kubernetes secret to synchronize the value of `value2`, use `key2` in the `property` field: 
@@ -154,7 +154,7 @@ This will create a new object of the `Secret` type named `external-secret` in Ku
        creationPolicy: Owner
      dataFrom:
        - extract:
-           key: <SECRET_ID>
+           key: "<SECRET_ID>"
    ```
    
 1. Apply the manifest in the cluster:
