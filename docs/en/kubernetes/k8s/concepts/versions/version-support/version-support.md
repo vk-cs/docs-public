@@ -1,13 +1,12 @@
-New versions of Kubernetes aaS from VK Cloud are usually added one month after the official release.
-
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.35.6
 - 1.34.2
 - 1.33.3
 - 1.32.1
 - 1.31.4
 
-When [creating a new cluster](../../../instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](../../../instructions/update) to the latest available version. 
+When [creating a new cluster](../../../instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](../../../instructions/update) to the latest available version.
 
 If the cluster uses an outdated Kubernetes version, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
 
@@ -24,25 +23,30 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
 
+|1.35.6
+|December 17, 2025
+|August 27, 2026
+|October 27, 2027
+
 |1.34.2
 |August 27, 2025
-|10.02.2026
-|10.11.2026
+|February 10, 2026
+|November 10, 2026
 
 |1.33.x
 |May 15, 2025
-|20.10.2025
-|20.12.2026
+|October 20, 2025
+|December 20, 2026
 
 |1.32.x
 |December 12, 2024
-|28.05.2025
-|28.07.2026
+|May 28, 2025
+|July 28, 2026
 
 |1.31.x
 |December 10, 2024
-|17.02.2025
-|17.04.2026
+|February 17, 2025
+|April 17, 2026
 |===
 
 {cut(Previous versions)}
@@ -56,73 +60,73 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 
 |1.30.x
 |September 10, 2024
-|10.12.2024
-|10.02.2026
+|December 10, 2024
+|February 10, 2026
 
 | 1.29.x
 | July 17, 2024
-| 30.08.2024
-| 30.10.2025
+| August 30, 2024
+| October 30, 2025
 
 | 1.28.x
 | April 16, 2024
-| 30.06.2024
-| 30.08.2025
+| June 30, 2024
+| August 30, 2025
 
 | 1.27.x
 | September 13, 2023
-| 11.12.2023
-| 11.02.2025
+| December 11, 2023
+| February 11, 2025
 
 | 1.26.x
 | May 17, 2023
-| 14.08.2023
-| 17.10.2024
+| August 14, 2023
+|October 17, 2024
 
 | 1.25.x
 | May 17, 2023
-| 14.06.2023
-| 14.08.2024
+| June 14, 2023
+| August 14, 2024
 
 | 1.24.x
 | December 8, 2022
-| 06.03.2023
-| 06.05.2024
+| March 6, 2023
+| May 6, 2024
 
 | 1.23.x
 | April 13, 2022
-| 15.08.2022
-| 15.10.2023
+| August 15, 2022
+| October 15, 2023
 
 | 1.22.x
 | January 19, 2022
-| 18.02.2022
-| 18.04.2023
+| February 18, 2022
+| April 18, 2023
 
 | 1.21.4
 | April 8, 2021
-| 12.10.2021
-| 12.12.2022
+| October 12, 2021
+| December 12, 2022
 
 | 1.20.4
 | December 8, 2020
-| 01.03.2021
-| 01.05.2022
+| March 1, 2021
+| May 1, 2022
 
 | 1.19.4
 | August 26, 2020
-| 23.12.2020
-| 23.02.2022
+| December 23, 2020
+| February 23, 2022
 
 | 1.18.12
 | March 23, 2020
-| 23.12.2020
-| 23.02.2022
+| December 23, 2020
+| February 23, 2022
 
 | 1.17.8
 | December 9, 2019
-| 09.08.2020
-| 09.12.2021
+| August 9, 2020
+| December 9, 2021
 |===
 
 {/cut}
@@ -136,7 +140,7 @@ New features are added to all Kubernetes versions, unless a feature and version 
 [cols="2,1,1,1,1", options="header"]
 |===
 |Feature
-|1.34.х–1.27.x
+|1.35.х–1.27.x
 |1.26.x–1.24.x
 |1.23.x–1.21.4
 |1.20.x–1.17.x
@@ -209,6 +213,14 @@ New features are added to all Kubernetes versions, unless a feature and version 
 |Kubernetes version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|1.35.6
+|[Kubernetes v1.35: Timbernetes](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/)
+|Packages are updated:
+
+- CoreDNS is updated to version 1.14.6.
+- Helm is updated to version 3.21.3.
+- Metrics Server is updated to version 0.9.0
 
 |1.34.2
 |[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
