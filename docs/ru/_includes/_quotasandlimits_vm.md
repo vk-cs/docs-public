@@ -100,7 +100,7 @@
 | Общий объем дисков в проекте
 | **Размер дисков**
 | `gigabytes`
-| 0 ГБ
+| 400 ГБ
 | 1000 ГБ
 | не ограничено
 
@@ -210,56 +210,43 @@
 
 |Размер одного диска HDD
 |5 ТБ через личный кабинет
-(1 ТБ при установленных {linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 100 ТБ при помощи OpenStack CLI
 |В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения.
 
-{linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts)
 |![](/ru/assets/check.svg "inline")
 
 |Размер одного диска SSD
 |5 ТБ через личный кабинет
-(1 ТБ при установленных {linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 100 ТБ при помощи OpenStack CLI
 |В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения.
 
-{linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts)
 |![](/ru/assets/check.svg "inline")
 
 |Размер одного диска High-IOPS SSD
 |2 ТБ через личный кабинет
-(1 ТБ при установленных {linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись к менеджеру по электронной почте [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
-
-{linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
 В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного диска High-IOPS HA SSD
 |2 ТБ через личный кабинет
-(1 ТБ при установленных {linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Диск, созданный с превышением лимита (10 ТБ), ничем не отличается по производительности, но восстановление или миграция такого диска займут значительное время и будут сопряжены с рисками. Лимит можно превысить, обратившись к менеджеру по электронной почте [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
-
-{linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
 В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
 |![](/ru/assets/no.svg "inline")
 
 |Размер одного диска Low Latency NVMe
 |2 ТБ через личный кабинет
-(1 ТБ при установленных {linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=антифрод-ограничениях]}).
 
 10 ТБ при помощи OpenStack CLI
 |Лимит (10 ТБ) можно превысить, обратившись к менеджеру по электронной почте [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
-
-{linkto(/ru/intro/it-security/platform-security#it-security-platform-security-attacks-countering)[text=Антифрод-ограничения]} можно снять через обращение в [техническую поддержку](/ru/contacts).
 
 В некоторых сервисах {var(cloud)} на размер дисков могут быть установлены собственные ограничения
 |![](/ru/assets/no.svg "inline")
