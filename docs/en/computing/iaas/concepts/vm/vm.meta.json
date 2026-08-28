@@ -1,0 +1,13 @@
+{
+  "title": "Virtual machines",
+  "shortDescription": "Virtual machines in Cloud Servers",
+  "metaDescription": "Learn about virtual machines in VK Cloud and how tags help you classify and find VMs by environment, team, or purpose",
+  "sectionTitle": "Virtual machines",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

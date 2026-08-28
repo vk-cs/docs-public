@@ -267,7 +267,7 @@
 1. (Опционально) Отключите опцию **Приватный DNS**, если необходимо. В случае отключения укажите DNS-серверы.
 
    {note:info}
-   После создания подсети изменить адреса {linkto(../../../dns/concepts/about#dns-about-private)[text=приватных DNS-серверов]} можно, создав новую подсеть.
+   После создания подсети изменить адреса {ifdef(public)}{linkto(../../../dns/concepts/about#dns-about-private)[text=приватных DNS-серверов]}{/ifdef}{ifndef(public)}{linkto(../../concepts/dns#vnet-dns)[text=приватных DNS-серверов]}{/ifndef} можно, создав новую подсеть.
 
    {linkto(#vnet-net-subnet-edit)[text=Отредактировать]} адреса указанных вручную DNS-серверов можно с помощью OpenStack CLI.
    {/note}

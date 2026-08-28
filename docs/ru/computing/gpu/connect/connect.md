@@ -2,8 +2,8 @@
 
 ## {heading(Подготовительные шаги)[id=gpu-connect-preparatory-steps]}
 
-1. {linkto(../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)} в VK Cloud, если это еще не сделано.
-1. Убедитесь, что баланс счета положителен и {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-vm-no-quotas-limits)[text=квот]} достаточно для развертывания шаблона конфигурации GPU в проекте.
+1. {linkto(../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)}, если это еще не сделано.
+1. Убедитесь, что баланс счета положителен и {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квот]} достаточно для развертывания шаблона конфигурации GPU в проекте.
 
 ## {heading(Подключение шаблона конфигурации)[id=gpu-connect-flavor]}
 

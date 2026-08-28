@@ -1,0 +1,13 @@
+{
+  "title": "Tags",
+  "shortDescription": "Tags for classification and search of virtual machines",
+  "metaDescription": "Learn what virtual machine tags are for in VK Cloud: grouping and searching VMs, tag restrictions and format, and color in OpenStack CLI",
+  "sectionTitle": "Tags",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

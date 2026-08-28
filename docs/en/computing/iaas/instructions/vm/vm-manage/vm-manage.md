@@ -313,7 +313,7 @@ If the VM type changes, the VM will be rebooted.
 
 ## Assigning tags
 
-Tags allow you to filter the list of virtual machines and find the right VM faster. Use existing tags or create your own tag and choose a color for it.
+Tags allow you to filter the list of virtual machines and find the right VM faster. Use existing tags or create a new one. The tag name and color must match the [requirements](../../../concepts/vm/tags).
 
 {tabs}
 

@@ -56,6 +56,7 @@
       - `Подтверждена` — в копии нет ошибок и ее можно безопасно {linkto(../restore-from-backup#backup-restore)[text=восстановить]}.
       - `Не подтверждена` — в копии найдены ошибки или несогласованные данные. Создайте новую резервную копию — {linkto(../create-backup-plan#backup-plan-create)[text=автоматически]} или {linkto(../create-backup-copy#backup-copy-create)[text=вручную]}.
 
+   {includetag(restore-from-backup-volume-backups)}
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужной копии и выберите пункт **Восстановить диск**.
    {/includetag}
    {includetag(restore-from-backup-volume-iaas)}
