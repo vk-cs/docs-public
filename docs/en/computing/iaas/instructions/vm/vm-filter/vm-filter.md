@@ -17,7 +17,7 @@ Use filtering to quickly find the virtual machines you need:
         Manually creating VM backups does not affect filtering.
         {/note}
 
-    - **Tags** — select the required tags. Only VMs that have all the selected tags will remain in the list.
+    - **Tags** — select the required [tags](../../../concepts/vm/tags). Only VMs that have all the selected tags will remain in the list.
     - Filter by VM name — start filling in the search field. Only VMs which names begin with the entered characters will remain in the list.
 
 Different filters can be combined for a more accurate VM search.

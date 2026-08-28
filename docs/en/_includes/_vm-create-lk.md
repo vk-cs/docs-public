@@ -41,7 +41,7 @@
      {/ifdef}
      {/includetag}
      {includetag(create)}
-   - **Tags**: if necessary, {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags)[text=specify a tag]} for the VM or create a new one.
+   - **Tags**: if necessary, [specify a tag](../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) for the VM or create a new one.
      {/includetag}
      {includetag(create-from-disk)}
    - **Tags**: if necessary, [specify a tag](../../instructions/vm/vm-manage#assigning_tags) for the VM or create a new one.

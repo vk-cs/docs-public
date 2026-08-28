@@ -95,7 +95,7 @@
 - настроить взаимодействие с внешними системами;
 - подключить логирование для объектного хранилища.
 
-Конфигурация вебхуков для бакета создается {linkto(../../instructions/buckets/manage-webhook#s3-instructions-manage-webhook)[text=через личный кабинет]}{ifdef(s3,s3-pdf)} IAM Only{/ifdef} или {linkto(../../api/webhook#s3-api-webhooks)[text=с помощью API]}.
+Конфигурация вебхуков для бакета создается {linkto(../../instructions/buckets/manage-webhook#s3-instructions-manage-webhook)[text=через личный кабинет]}{ifdef(s3,s3-pdf)} IAM Only{/ifdef} или {ifdef(public)}{linkto(../../api/webhook#s3-api-webhooks)[text=с помощью API]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../api/notification#s3-api-notification)[text=с помощью API]}{/ifdef}.
 
 ## {heading(Маркировка объектов тегами)[id=s3-concepts-features-tagging]}
 

@@ -303,7 +303,7 @@
 
 ## {heading(Присвоение тегов)[id=iaas-vm-manage-tags]}
 
-Теги позволяют отфильтровать список виртуальных машин и быстрее найти нужную ВМ. Используйте существующие теги или создайте собственный тег и выберите для него цвет.
+Теги позволяют отфильтровать список виртуальных машин и быстрее найти нужную ВМ. Используйте существующие теги или создайте новый. Имя и цвет тега должны соответствовать {linkto(../../../../../computing/iaas/concepts/vm/tags#iaas-tags)[text=требованиям]}.
 
 {tabs}
 
@@ -684,10 +684,10 @@ systemctl status qemu-guest-agent
 
 ## {heading(Перенос ВМ в другой проект)[id=iaas-vm-manage-transfer]}
 
-Перенос виртуальной машины между проектами выполняется через создание копии её диска и запуск новой ВМ из этой копии.
+Перенос виртуальной машины между проектами выполняется через создание копии ее диска и запуск новой ВМ из этой копии.
 
-1. [Создайте](/ru/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) копию диска ВМ в виде образа.
-1. [Экспортируйте](/ru/computing/iaas/instructions/images/images-manage#iaas-images-manage-export) созданный образ для дальнейшего использования.
+1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=Создайте]} копию диска ВМ в виде образа.
+1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-export)[text=Экспортируйте]} созданный образ для дальнейшего использования.
 1. Выберите проект, в который нужно перенести ВМ.
-1. [Импортируйте](/ru/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) образ в нужный проект.
-1. [Разверните](/ru/computing/iaas/instructions/vm/vm-create) новую ВМ из образа.
+1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=Импортируйте]} образ в нужный проект.
+1. {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Разверните]} новую ВМ из образа.

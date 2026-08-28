@@ -1,0 +1,18 @@
+{
+  "title": "Теги",
+  "shortDescription": "Теги для классификации и поиска виртуальных машин",
+  "metaDescription": "Узнайте, для чего нужны теги виртуальных машин в VK Cloud: группировка и поиск ВМ, ограничения и формат тега, цвет в OpenStack CLI",
+  "sectionTitle": "Теги",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}
