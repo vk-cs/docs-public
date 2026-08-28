@@ -136,28 +136,22 @@ The status of the availability zones, services and infrastructure of VK Cloud ca
 
 Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located. In VK Cloud, the availability zone corresponds to a separate Tier III data center. VK Cloud provides availability zones:
 
-[cols="1,1,2", options="header"]
+[cols="1,1", options="header"]
 |===
 | Region
 | Accessibility zone
-| Data center
 
 .4+|Moscow
 |`GZ1`
-|[Goznak](https://tech.goznak.ru/dc-goznak-moscow)
 
 |`MS1`
-|DataLine NORD4
 
 |`ME1`
-|Medvedkovo Rostelecom Data Centre
 
 |`PA2`
-|«Pahra»
 
 .2+|Kazakhstan
 |`QAZ`
-.2+.^|[QazCloud](https://qazcloud.kz)
 
 |`KTP`
 
