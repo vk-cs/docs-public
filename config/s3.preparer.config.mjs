@@ -29,13 +29,6 @@ import {
 const TARGET_ENV = process.env.TARGET_ENV || 'localhost';
 
 console.debug('TARGET_ENV', TARGET_ENV);
-console.debug('SETTINGS', {
-    settings: {
-        satoriIndexPreparer: {
-            apiKey: (process.env?.SATORI_API_KEY || '').length,
-        },
-    }
-});
 
 let checkup = [
     LinksWithHashChecker, // Проверка ссылок с хешем на портале
