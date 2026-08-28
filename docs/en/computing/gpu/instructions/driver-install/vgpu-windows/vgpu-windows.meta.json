@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing the vGPU driver and configuring the licensing token on Windows OS on VK Cloud virtual machines with vGPU.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "4ec86bfe-7745-4a9a-aae3-2f672d950957",
   "build": {
     "for": [
       "public"

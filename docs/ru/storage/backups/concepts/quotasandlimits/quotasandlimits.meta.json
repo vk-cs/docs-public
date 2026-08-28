@@ -5,7 +5,7 @@
   "sectionTitle": "Квоты и лимиты",
   "icon": "",
   "weight": 20,
-  "uuid": "",
+  "uuid": "88c66412-ee1a-435d-838e-4619fcc6cfab",
   "build": {
     "for": [
       "public"

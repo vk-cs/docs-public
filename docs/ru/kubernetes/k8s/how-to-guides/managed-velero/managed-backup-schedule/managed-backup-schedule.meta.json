@@ -5,7 +5,7 @@
   "sectionTitle": "Резервное копирование по расписанию",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "573f3b8f-aa0b-41ec-bf6b-9658b6745520",
   "build": {
     "for": [
       "public"

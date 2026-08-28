@@ -5,7 +5,7 @@
   "sectionTitle": "Проверка резервной копии на целостность данных",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "a099b23f-aa6a-4b7e-a277-6ae607232239",
   "build": {
     "for": [
       "public",

@@ -4,8 +4,8 @@
   "metaDescription": "How to deployment and configure the OpenClaw AI platform for creating LLM-based agents with integration of external services and monitoring",
   "sectionTitle": "OpenClaw installation and configuration",
   "icon": "",
-  "weight": 3 ,
-  "uuid": "",
+  "weight": 3,
+  "uuid": "fd47b70d-64c6-4b83-b69d-f074380c1a51",
   "build": {
     "for": [
       "public"

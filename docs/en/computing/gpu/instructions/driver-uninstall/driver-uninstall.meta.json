@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for removing the GPU/vGPU driver on VK Cloud virtual machines.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "316e5ac0-18a0-4369-8200-4a373dd98407",
   "build": {
     "for": [
       "public"

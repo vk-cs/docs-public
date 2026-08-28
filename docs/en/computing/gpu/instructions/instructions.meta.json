@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for preparing VK Cloud virtual machines with GPU/vGPU for workloads: installing, updating, and removing driver and CUDA components, configuring vGPU licensing, preparing an environment for ML computations",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "1031f65d-ff38-434f-8171-114a9343b501",
   "build": {
     "for": [
       "public"

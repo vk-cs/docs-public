@@ -4,8 +4,8 @@
   "metaDescription": "Сыртқы сервистерді интеграциялау және мониторинг арқылы LLM негізінде агенттер жасау үшін OpenClaw AI-платформасын орналастыру және баптау",
   "sectionTitle": "OpenClaw сервисін орнату және баптау",
   "icon": "",
-  "weight": 3 ,
-  "uuid": "",
+  "weight": 3,
+  "uuid": "b2f4be82-e0e5-4f99-86ad-4a39b54b6325",
   "build": {
     "for": [
       "public"

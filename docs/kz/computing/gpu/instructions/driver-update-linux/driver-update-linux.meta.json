@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де GPU драйверін жаңарту бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "bb15d75d-3285-4f2d-af87-3bf1703ed7e6",
   "build": {
     "for": [
       "public",

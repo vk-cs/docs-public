@@ -5,7 +5,7 @@
   "sectionTitle": "Использование Velero",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "f2561544-5f7a-4fcb-a603-b72e5209e723",
   "build": {
     "for": [
       "private",

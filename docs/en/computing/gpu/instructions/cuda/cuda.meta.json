@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing, updating, and removing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "71f45e8a-0f9a-41c1-b47b-db435cbd7c06",
   "build": {
     "for": [
       "public"

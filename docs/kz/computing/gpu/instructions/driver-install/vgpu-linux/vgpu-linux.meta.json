@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud vGPU бар виртуалды машиналарында Linux ОЖ-де vGPU драйверін орнату және лицензиялау токенін баптау бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "e4424585-6eaa-4c38-b2f4-b898fab99325",
   "build": {
     "for": [
       "public",

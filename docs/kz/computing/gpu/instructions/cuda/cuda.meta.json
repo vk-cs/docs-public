@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін орнату, жаңарту және жою бойынша қадамдық нұсқаулықтар.",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "99806a8d-b60b-4f1d-bd10-02b0237db5c9",
   "build": {
     "for": [
       "public",

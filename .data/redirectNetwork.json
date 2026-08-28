@@ -33786,14 +33786,14 @@
     "locale": false
   },
   {
-    "source": "/ru/dbs/dbaas/instructions/dbaas-logs",
-    "destination": "/ru",
+    "source": "/ru/computing/gpu/how-to-guides/vgpu-setup",
+    "destination": "/ru/computing/gpu/instructions",
     "permanent": false,
     "locale": false
   },
   {
-    "source": "/en/dbs/dbaas/instructions/dbaas-logs",
-    "destination": "/en",
+    "source": "/ru/computing/gpu/instructions/gpu-driver",
+    "destination": "/ru/computing/gpu/instructions/driver-install/gpu-linux",
     "permanent": false,
     "locale": false
   }

@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговая инструкция по удалению компонентов CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "0b70985e-2f97-4256-98f3-5eaa33b52515",
   "build": {
     "for": [
       "public",

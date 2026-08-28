@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "04c119b1-33d1-443c-929c-864edfd37c24",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Вывод экземпляра из режима только для чтения",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "e32e9416-8590-40f7-aa75-93e89eae036b",
   "build": {
     "for": [
       "data-p",

@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing NVIDIA Container Toolkit to use GPU in Docker containers on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "5bdc07f6-c3d5-4c8b-8ebb-faddaf67fcee",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud vGPU бар виртуалды машиналарында Windows ОЖ-де vGPU драйверін орнату және лицензиялау токенін баптау бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "625d89b2-11d5-4dbd-afef-022c70469f75",
   "build": {
     "for": [
       "public",

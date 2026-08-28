@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Docker контейнерлерінде GPU пайдалану үшін NVIDIA Container Toolkit орнату бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "02be51c6-0315-4c30-94af-64b9ec2b983a",
   "build": {
     "for": [
       "public",

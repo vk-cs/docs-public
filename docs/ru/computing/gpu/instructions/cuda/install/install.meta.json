@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговая инструкция по установке компонентов CUDA на виртуальных машинах с GPU от VK Cloud на ОС Linux.",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "7ff5b2de-dde6-4003-9e23-a3d1a16b8b17",
   "build": {
     "for": [
       "public",

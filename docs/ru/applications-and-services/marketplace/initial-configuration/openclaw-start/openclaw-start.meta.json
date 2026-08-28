@@ -4,8 +4,8 @@
   "metaDescription": "Развертывание и настройка AI-платформы OpenClaw для создания агентов на базе LLM с интеграцией внешних сервисов и мониторингом",
   "sectionTitle": "Установка и настройка сервиса OpenClaw",
   "icon": "",
-  "weight": 3 ,
-  "uuid": "",
+  "weight": 3,
+  "uuid": "48edd8b7-4515-4708-9371-c15973e5fc24",
   "build": {
     "for": [
       "public"

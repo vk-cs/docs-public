@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for updating the GPU driver on Linux OS on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "60235569-e15f-4754-85df-e606a9a5f798",
   "build": {
     "for": [
       "public"

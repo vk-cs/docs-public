@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговые инструкции по удалению драйвера NVIDIA на виртуальных машинах с GPU и vGPU от VK Cloud на ОС Linux и Windows.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "8524adb6-4019-40ac-9609-d19b19e8b1ff",
   "build": {
     "for": [
       "public",

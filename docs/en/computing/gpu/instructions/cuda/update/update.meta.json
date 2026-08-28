@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for updating CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "87801ce5-5737-41cf-87c2-407d663e86a9",
   "build": {
     "for": [
       "public"

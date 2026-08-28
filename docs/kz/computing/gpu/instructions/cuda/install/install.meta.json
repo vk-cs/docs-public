@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін орнату бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "12268382-683c-482c-9e0f-fac024cdff61",
   "build": {
     "for": [
       "public",

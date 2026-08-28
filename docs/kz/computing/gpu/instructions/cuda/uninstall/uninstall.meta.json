@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud GPU бар виртуалды машиналарында Linux ОЖ-де CUDA компоненттерін жою бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "f58787b5-fa29-4cdd-8665-e57deb396f02",
   "build": {
     "for": [
       "public",

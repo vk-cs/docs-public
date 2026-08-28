@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing the vGPU driver and configuring the licensing token on Linux OS on VK Cloud virtual machines with vGPU.",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "a338b06a-8400-4b87-815c-ab8ec129e6a2",
   "build": {
     "for": [
       "public"

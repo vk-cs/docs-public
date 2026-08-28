@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud виртуалды машиналарында GPU/vGPU драйверін орнату бойынша қадамдық нұсқаулықтар.",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "bfd07e46-d247-48bc-94e8-badf16a07c03",
   "build": {
     "for": [
       "public",

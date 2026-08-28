@@ -5,7 +5,7 @@
   "metaDescription": "VK Cloud виртуалды машиналарында GPU/vGPU драйверін жою бойынша қадамдық нұсқаулық.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "7214f662-83d6-4aa2-8ef7-4aefec069800",
   "build": {
     "for": [
       "public",

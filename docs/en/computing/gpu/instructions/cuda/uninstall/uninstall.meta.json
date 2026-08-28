@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for removing CUDA components on Linux OS on VK Cloud virtual machines with GPU.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "58f5f474-da48-4711-8ccc-ad59bd0b3c93",
   "build": {
     "for": [
       "public"

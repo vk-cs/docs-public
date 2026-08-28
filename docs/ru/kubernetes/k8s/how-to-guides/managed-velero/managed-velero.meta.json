@@ -5,7 +5,7 @@
   "sectionTitle": "Использование Velero в кластерах второго поколения",
   "icon": "",
   "weight": 21,
-  "uuid": "",
+  "uuid": "59b14e8f-e469-471f-8498-a3a3f19c98af",
   "build": {
     "for": [
       "public"

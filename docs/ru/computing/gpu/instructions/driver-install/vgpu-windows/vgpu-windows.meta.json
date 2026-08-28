@@ -5,7 +5,7 @@
   "metaDescription": "Пошаговая инструкция по установке драйвера NVIDIA на виртуальных машинах с vGPU от VK Cloud на ОС Windows, а также по настройке работы токена лицензирования.",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "fd131c9e-13fd-4efe-921c-72a7c6fe8b0b",
   "build": {
     "for": [
       "public",

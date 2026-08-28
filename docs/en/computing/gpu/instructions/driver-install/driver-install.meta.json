@@ -5,7 +5,7 @@
   "metaDescription": "Step-by-step instructions for installing the GPU/vGPU driver on VK Cloud virtual machines.",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "88b1ca08-a58f-452a-9e7b-e14961792a5e",
   "build": {
     "for": [
       "public"
