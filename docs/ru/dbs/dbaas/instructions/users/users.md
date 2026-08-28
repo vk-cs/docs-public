@@ -55,22 +55,34 @@
    - Не может начинаться с `mcs_`.
    - Не может быть из списка запрещенных имен:
 
-     | Тип СУБД | Запрещенные имена пользователя |
-     |--|--|
-     | PostgreSQL | `os_admin`, `root`, `postgres`, `replicator` |
-     {ifdef(public)}
-     | MySQL | `clusterrepuser` (запрещено только для кластерной конфигурации), `os_admin`, `root` |
-     {/ifdef}
-     | ClickHouse | `os_admin`, `root`, `default`, `replicator` |
-     {ifdef(public)}
-     | MongoDB | `os_admin`, `root` |
-     | Tarantool | `os_admin`, `root`, `admin`, `guest`, `replicator` |
-     | OpenSearch | `os_admin`, `root`, `dbaasadmin` |
-     | Redis 6 | `default`, `os_admin`, `root` |
-     {/ifdef}
-     {ifndef(public)}
-     | Redis | `default`, `os_admin`, `root` |
-     {/ifndef}
+      [cols="1,6"]
+      |===
+
+      |PostgreSQL
+      |`os_admin`, `root`, `postgres`, `replicator`
+      {ifdef(public)}
+      |MySQL
+      |`clusterrepuser` (запрещено только для кластерной конфигурации), `os_admin`, `root`
+      {/ifdef}
+
+      |ClickHouse
+      |`os_admin`, `root`, `default`, `replicator`
+      {ifdef(public)}
+
+      |MongoDB
+      |`os_admin`, `root`
+
+      |Tarantool
+      |`os_admin`, `root`, `admin`, `guest`, `replicator`
+
+      |OpenSearch
+      |`os_admin`, `root`, `dbaasadmin`
+      {/ifdef}
+
+      |Redis
+      |`default`, `os_admin`, `root`
+
+      |===
 
 1. Придумайте или сгенерируйте пароль.
 

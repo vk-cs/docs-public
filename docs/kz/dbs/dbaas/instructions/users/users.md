@@ -56,7 +56,7 @@ Redis 6 инстанстарында пайдаланушыларды тек {li
     - Тыйым салынған аттар тізімінде болмауы керек:
 
       | СУБД түрі | Тыйым салынған пайдаланушы аттары |
-                    |--|--|
+      |--|--|
       | PostgreSQL | `os_admin`, `root`, `postgres`, `replicator` |
       | MySQL | `clusterrepuser` (тек кластерлік конфигурация үшін тыйым салынған), `os_admin`, `root` |
       | ClickHouse | `os_admin`, `root`, `default`, `replicator` |
