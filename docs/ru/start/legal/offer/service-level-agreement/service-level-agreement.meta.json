@@ -1,4 +1,3 @@
-
 {
   "title": "Соглашение об уровне обслуживания",
   "shortDescription": "",
@@ -6,7 +5,7 @@
   "sectionTitle": "Соглашение об уровне обслуживания ",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "759df326-e448-42b0-8cd1-a70a401523f7",
   "build": {
     "for": [
       "public"

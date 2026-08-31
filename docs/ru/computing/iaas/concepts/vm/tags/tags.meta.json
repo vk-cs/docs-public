@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте, для чего нужны теги виртуальных машин в VK Cloud: группировка и поиск ВМ, ограничения и формат тега, цвет в OpenStack CLI",
   "sectionTitle": "Теги",
   "weight": 2,
-  "uuid": "",
+  "uuid": "369841e0-1709-4e9f-88a9-3eb4a8fb3040",
   "build": {
     "for": [
       "public",

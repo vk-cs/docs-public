@@ -16855,109 +16855,109 @@
   },
   {
     "source": "/ru/additionals/start/legal/legal-terms",
-    "destination": "/ru/start/legal/vk/legal-terms",
+    "destination": "/ru/start/legal/archive/vk/legal-terms",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-hotbox",
-    "destination": "/ru/start/legal/vk/policy-hotbox",
+    "destination": "/ru/start/legal/archive/vk/policy-hotbox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-icebox",
-    "destination": "/ru/start/legal/vk/policy-icebox",
+    "destination": "/ru/start/legal/archive/vk/policy-icebox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-infra",
-    "destination": "/ru/start/legal/vk/policy-infra",
+    "destination": "/ru/start/legal/archive/vk/policy-infra",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-vision",
-    "destination": "/ru/start/legal/vk/policy-vision",
+    "destination": "/ru/start/legal/archive/vk/policy-vision",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-voice",
-    "destination": "/ru/start/legal/vk/policy-voice",
+    "destination": "/ru/start/legal/archive/vk/policy-voice",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-privacy",
-    "destination": "/ru/start/legal/vk/policy-privacy",
+    "destination": "/ru/start/legal/archive/vk/policy-privacy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/org-details",
-    "destination": "/ru/start/legal/vk/org-details",
+    "destination": "/ru/start/legal/archive/vk/org-details",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-1cgrm",
-    "destination": "/ru/start/legal/vk/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/vk/policy-1cgrm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-152fz",
-    "destination": "/ru/start/legal/vk/policy-152fz",
+    "destination": "/ru/start/legal/archive/vk/policy-152fz",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-cdn",
-    "destination": "/ru/start/legal/vk/policy-cdn",
+    "destination": "/ru/start/legal/archive/vk/policy-cdn",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/cloud-servers",
-    "destination": "/ru/start/legal/vk/cloud-servers",
+    "destination": "/ru/start/legal/archive/vk/cloud-servers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/marketplace",
-    "destination": "/ru/start/legal/vk/marketplace",
+    "destination": "/ru/start/legal/archive/vk/marketplace",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/contributor",
-    "destination": "/ru/start/legal/vk/contributor",
+    "destination": "/ru/start/legal/archive/vk/contributor",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-startup-program",
-    "destination": "/ru/start/legal/vk/policy-startup-program",
+    "destination": "/ru/start/legal/archive/vk/policy-startup-program",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/research-agreement",
-    "destination": "/ru/start/legal/vk/research-agreement",
+    "destination": "/ru/start/legal/archive/vk/research-agreement",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-promo-migration",
-    "destination": "/ru/start/legal/vk/policy-promo-migration",
+    "destination": "/ru/start/legal/archive/vk/policy-promo-migration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-vdi",
-    "destination": "/ru/start/legal/vk/policy-vdi",
+    "destination": "/ru/start/legal/archive/vk/policy-vdi",
     "permanent": false,
     "locale": false
   },
@@ -21583,13 +21583,13 @@
   },
   {
     "source": "/ru/start/legal/digital-cloud",
-    "destination": "/ru/start/legal",
+    "destination": "/ru/start/legal/archive/digital-cloud",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/start/legal/vk",
-    "destination": "/ru/start/legal",
+    "destination": "/ru/start/legal/archive/vk",
     "permanent": false,
     "locale": false
   },
@@ -27409,121 +27409,121 @@
   },
   {
     "source": "/ru/intro/start/legal/legal-terms",
-    "destination": "/ru/start/legal/vk/legal-terms",
+    "destination": "/ru/start/legal/archive/vk/legal-terms",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-hotbox",
-    "destination": "/ru/start/legal/vk/policy-hotbox",
+    "destination": "/ru/start/legal/archive/vk/policy-hotbox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-icebox",
-    "destination": "/ru/start/legal/vk/policy-icebox",
+    "destination": "/ru/start/legal/archive/vk/policy-icebox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-infra",
-    "destination": "/ru/start/legal/vk/policy-infra",
+    "destination": "/ru/start/legal/archive/vk/policy-infra",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-vision",
-    "destination": "/ru/start/legal/vk/policy-vision",
+    "destination": "/ru/start/legal/archive/vk/policy-vision",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-voice",
-    "destination": "/ru/start/legal/vk/policy-voice",
+    "destination": "/ru/start/legal/archive/vk/policy-voice",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-privacy",
-    "destination": "/ru/start/legal/vk/policy-privacy",
+    "destination": "/ru/start/legal/archive/vk/policy-privacy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/org-details",
-    "destination": "/ru/start/legal/vk/org-details",
+    "destination": "/ru/start/legal/archive/vk/org-details",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-1cgrm",
-    "destination": "/ru/start/legal/vk/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/vk/policy-1cgrm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-152fz",
-    "destination": "/ru/start/legal/vk/policy-152fz",
+    "destination": "/ru/start/legal/archive/vk/policy-152fz",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-cdn",
-    "destination": "/ru/start/legal/vk/policy-cdn",
+    "destination": "/ru/start/legal/archive/vk/policy-cdn",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/cloud-servers",
-    "destination": "/ru/start/legal/vk/cloud-servers",
+    "destination": "/ru/start/legal/archive/vk/cloud-servers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/marketplace",
-    "destination": "/ru/start/legal/vk/marketplace",
+    "destination": "/ru/start/legal/archive/vk/marketplace",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/contributor",
-    "destination": "/ru/start/legal/vk/contributor",
+    "destination": "/ru/start/legal/archive/vk/contributor",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-startup-program",
-    "destination": "/ru/start/legal/vk/policy-startup-program",
+    "destination": "/ru/start/legal/archive/vk/policy-startup-program",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/research-agreement",
-    "destination": "/ru/start/legal/vk/research-agreement",
+    "destination": "/ru/start/legal/archive/vk/research-agreement",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-promo-migration",
-    "destination": "/ru/start/legal/vk/policy-promo-migration",
+    "destination": "/ru/start/legal/archive/vk/policy-promo-migration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-vdi",
-    "destination": "/ru/start/legal/vk/policy-vdi",
+    "destination": "/ru/start/legal/archive/vk/policy-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-cloud-desktop",
-    "destination": "/ru/start/legal/vk/policy-cloud-desktop",
+    "destination": "/ru/start/legal/archive/vk/policy-cloud-desktop",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/cloud-start",
-    "destination": "/ru/start/legal/vk/cloud-start",
+    "destination": "/ru/start/legal/archive/vk/cloud-start",
     "permanent": false,
     "locale": false
   },
@@ -27607,7 +27607,7 @@
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/security-gate",
-    "destination": "/ru/start/legal/digital-cloud/security-gate",
+    "destination": "/ru/start/legal/archive/digital-cloud/security-gate",
     "permanent": false,
     "locale": false
   },
@@ -30067,235 +30067,235 @@
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud",
-    "destination": "/ru/start/legal/digital-cloud",
+    "destination": "/ru/start/legal/archive/digital-cloud",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/legal-terms",
-    "destination": "/ru/start/legal/digital-cloud/legal-terms",
+    "destination": "/ru/start/legal/archive/digital-cloud/legal-terms",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-hotbox",
-    "destination": "/ru/start/legal/digital-cloud/policy-hotbox",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-hotbox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-icebox",
-    "destination": "/ru/start/legal/digital-cloud/policy-icebox",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-icebox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-infra",
-    "destination": "/ru/start/legal/digital-cloud/policy-infra",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-infra",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-vision",
-    "destination": "/ru/start/legal/digital-cloud/policy-vision",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-vision",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-voice",
-    "destination": "/ru/start/legal/digital-cloud/policy-voice",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-voice",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-privacy",
-    "destination": "/ru/start/legal/digital-cloud/policy-privacy",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-privacy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/org-details",
-    "destination": "/ru/start/legal/digital-cloud/org-details",
+    "destination": "/ru/start/legal/org-details",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-1cgrm",
-    "destination": "/ru/start/legal/digital-cloud/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-1cgrm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-cdn",
-    "destination": "/ru/start/legal/digital-cloud/policy-cdn",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-cdn",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/cloud-servers",
-    "destination": "/ru/start/legal/digital-cloud/cloud-servers",
+    "destination": "/ru/start/legal/archive/digital-cloud/cloud-servers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/marketplace",
-    "destination": "/ru/start/legal/digital-cloud/marketplace",
+    "destination": "/ru/start/legal/archive/digital-cloud/marketplace",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/contributor",
-    "destination": "/ru/start/legal/digital-cloud/contributor",
+    "destination": "/ru/start/legal/feedback-form/contributor",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/research-agreement",
-    "destination": "/ru/start/legal/digital-cloud/research-agreement",
+    "destination": "/ru/start/legal/feedback-form/research-agreement",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-vdi",
-    "destination": "/ru/start/legal/digital-cloud/policy-vdi",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-cloud-desktop",
-    "destination": "/ru/start/legal/digital-cloud/policy-cloud-desktop",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-cloud-desktop",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/potential-partners",
-    "destination": "/ru/start/legal/digital-cloud/potential-partners",
+    "destination": "/ru/start/legal/feedback-form/potential-partners",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk",
-    "destination": "/ru/start/legal/vk",
+    "destination": "/ru/start/legal/archive/vk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/legal-terms",
-    "destination": "/ru/start/legal/vk/legal-terms",
+    "destination": "/ru/start/legal/archive/vk/legal-terms",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-hotbox",
-    "destination": "/ru/start/legal/vk/policy-hotbox",
+    "destination": "/ru/start/legal/archive/vk/policy-hotbox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-icebox",
-    "destination": "/ru/start/legal/vk/policy-icebox",
+    "destination": "/ru/start/legal/archive/vk/policy-icebox",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-infra",
-    "destination": "/ru/start/legal/vk/policy-infra",
+    "destination": "/ru/start/legal/archive/vk/policy-infra",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-vision",
-    "destination": "/ru/start/legal/vk/policy-vision",
+    "destination": "/ru/start/legal/archive/vk/policy-vision",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-voice",
-    "destination": "/ru/start/legal/vk/policy-voice",
+    "destination": "/ru/start/legal/archive/vk/policy-voice",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-privacy",
-    "destination": "/ru/start/legal/vk/policy-privacy",
+    "destination": "/ru/start/legal/archive/vk/policy-privacy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/org-details",
-    "destination": "/ru/start/legal/vk/org-details",
+    "destination": "/ru/start/legal/archive/vk/org-details",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-1cgrm",
-    "destination": "/ru/start/legal/vk/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/vk/policy-1cgrm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-152fz",
-    "destination": "/ru/start/legal/vk/policy-152fz",
+    "destination": "/ru/start/legal/archive/vk/policy-152fz",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-cdn",
-    "destination": "/ru/start/legal/vk/policy-cdn",
+    "destination": "/ru/start/legal/archive/vk/policy-cdn",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/cloud-servers",
-    "destination": "/ru/start/legal/vk/cloud-servers",
+    "destination": "/ru/start/legal/archive/vk/cloud-servers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/marketplace",
-    "destination": "/ru/start/legal/vk/marketplace",
+    "destination": "/ru/start/legal/archive/vk/marketplace",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/contributor",
-    "destination": "/ru/start/legal/vk/contributor",
+    "destination": "/ru/start/legal/archive/vk/contributor",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-startup-program",
-    "destination": "/ru/start/legal/vk/policy-startup-program",
+    "destination": "/ru/start/legal/archive/vk/policy-startup-program",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/research-agreement",
-    "destination": "/ru/start/legal/vk/research-agreement",
+    "destination": "/ru/start/legal/archive/vk/research-agreement",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-promo-migration",
-    "destination": "/ru/start/legal/vk/policy-promo-migration",
+    "destination": "/ru/start/legal/archive/vk/policy-promo-migration",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-vdi",
-    "destination": "/ru/start/legal/vk/policy-vdi",
+    "destination": "/ru/start/legal/archive/vk/policy-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-cloud-desktop",
-    "destination": "/ru/start/legal/vk/policy-cloud-desktop",
+    "destination": "/ru/start/legal/archive/vk/policy-cloud-desktop",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/cloud-start",
-    "destination": "/ru/start/legal/vk/cloud-start",
+    "destination": "/ru/start/legal/archive/vk/cloud-start",
     "permanent": false,
     "locale": false
   },
@@ -33812,6 +33812,312 @@
   {
     "source": "/en/start/concepts/architecture",
     "destination": "/en/intro/start/concepts/architecture",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/cloud-start",
+    "destination": "/ru/start/legal/loyalty-programs/cloud-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-cloud-science",
+    "destination": "/ru/start/legal/loyalty-programs/policy-cloud-science",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-promo-dlh",
+    "destination": "/ru/start/legal/loyalty-programs/policy-promo-dlh",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-start-cloud-desktop",
+    "destination": "/ru/start/legal/loyalty-programs/policy-start-cloud-desktop",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-promocode",
+    "destination": "/ru/start/legal/loyalty-programs/policy-promocode",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-startup-program",
+    "destination": "/ru/start/legal/loyalty-programs/policy-startup-program",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-reliable-migration",
+    "destination": "/ru/start/legal/loyalty-programs/policy-reliable-migration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-quick-start",
+    "destination": "/ru/start/legal/loyalty-programs/policy-quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-iri-program",
+    "destination": "/ru/start/legal/loyalty-programs/policy-iri-program",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/org-details",
+    "destination": "/ru/start/legal/org-details",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/events-terms",
+    "destination": "/ru/start/legal/feedback-form/events-terms",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/advertising-consent-template",
+    "destination": "/ru/start/legal/feedback-form/advertising-consent-template",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/contributor",
+    "destination": "/ru/start/legal/feedback-form/contributor",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/potential-partners",
+    "destination": "/ru/start/legal/feedback-form/potential-partners",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/research-agreement",
+    "destination": "/ru/start/legal/feedback-form/research-agreement",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud",
+    "destination": "/ru/start/legal/archive/digital-cloud",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/legal-terms",
+    "destination": "/ru/start/legal/archive/digital-cloud/legal-terms",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-hotbox",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-hotbox",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-icebox",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-icebox",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-infra",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-infra",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-vision",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-vision",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-voice",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-voice",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-privacy",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-privacy",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-1cgrm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-cdn",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/cloud-servers",
+    "destination": "/ru/start/legal/archive/digital-cloud/cloud-servers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/marketplace",
+    "destination": "/ru/start/legal/archive/digital-cloud/marketplace",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-vdi",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-vdi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/policy-cloud-desktop",
+    "destination": "/ru/start/legal/archive/digital-cloud/policy-cloud-desktop",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/digital-cloud/security-gate",
+    "destination": "/ru/start/legal/archive/digital-cloud/security-gate",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk",
+    "destination": "/ru/start/legal/archive/vk",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/legal-terms",
+    "destination": "/ru/start/legal/archive/vk/legal-terms",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-hotbox",
+    "destination": "/ru/start/legal/archive/vk/policy-hotbox",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-icebox",
+    "destination": "/ru/start/legal/archive/vk/policy-icebox",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-infra",
+    "destination": "/ru/start/legal/archive/vk/policy-infra",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-vision",
+    "destination": "/ru/start/legal/archive/vk/policy-vision",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-voice",
+    "destination": "/ru/start/legal/archive/vk/policy-voice",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-privacy",
+    "destination": "/ru/start/legal/archive/vk/policy-privacy",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/org-details",
+    "destination": "/ru/start/legal/archive/vk/org-details",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-1cgrm",
+    "destination": "/ru/start/legal/archive/vk/policy-1cgrm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-152fz",
+    "destination": "/ru/start/legal/archive/vk/policy-152fz",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-cdn",
+    "destination": "/ru/start/legal/archive/vk/policy-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/cloud-servers",
+    "destination": "/ru/start/legal/archive/vk/cloud-servers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/marketplace",
+    "destination": "/ru/start/legal/archive/vk/marketplace",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/contributor",
+    "destination": "/ru/start/legal/archive/vk/contributor",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-startup-program",
+    "destination": "/ru/start/legal/archive/vk/policy-startup-program",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/research-agreement",
+    "destination": "/ru/start/legal/archive/vk/research-agreement",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-promo-migration",
+    "destination": "/ru/start/legal/archive/vk/policy-promo-migration",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-vdi",
+    "destination": "/ru/start/legal/archive/vk/policy-vdi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/policy-cloud-desktop",
+    "destination": "/ru/start/legal/archive/vk/policy-cloud-desktop",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk/cloud-start",
+    "destination": "/ru/start/legal/archive/vk/cloud-start",
     "permanent": false,
     "locale": false
   }

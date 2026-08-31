@@ -1,4 +1,3 @@
-
 {
   "title": "Регламент технического обслуживания",
   "shortDescription": "",
@@ -6,7 +5,7 @@
   "sectionTitle": "Регламент технического обслуживания",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "e5873c9a-69ae-4a33-9ded-1bc4f50be64e",
   "build": {
     "for": [
       "public"

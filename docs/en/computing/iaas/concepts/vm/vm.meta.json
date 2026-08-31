@@ -4,7 +4,7 @@
   "metaDescription": "Learn about virtual machines in VK Cloud and how tags help you classify and find VMs by environment, team, or purpose",
   "sectionTitle": "Virtual machines",
   "weight": 3,
-  "uuid": "",
+  "uuid": "297dde32-5e95-4816-b471-a69c9b0ffa05",
   "build": {
     "for": [
       "public"

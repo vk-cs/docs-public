@@ -4,7 +4,7 @@
   "metaDescription": "Learn what virtual machine tags are for in VK Cloud: grouping and searching VMs, tag restrictions and format, and color in OpenStack CLI",
   "sectionTitle": "Tags",
   "weight": 2,
-  "uuid": "",
+  "uuid": "e8caaa65-021c-49b7-8874-cfa7a47c148e",
   "build": {
     "for": [
       "public"
