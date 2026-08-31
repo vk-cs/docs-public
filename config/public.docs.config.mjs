@@ -167,7 +167,7 @@ export const config = {
     },
     paths: {
         basePath: '/docs',
-        policy: '/intro/start/legal',
+        policy: '/ru/start/legal/offer/policy-privacy',
     },
     contentSecurityPolicy: {
         connectSrc: [

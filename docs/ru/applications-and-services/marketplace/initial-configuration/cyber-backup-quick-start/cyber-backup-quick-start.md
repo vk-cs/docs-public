@@ -17,7 +17,7 @@
 1. Создадите в сервисе резервную копию этой ВМ.
 1. Восстановите ВМ в {var(cloud)} из резервной копии, которая хранилась в сервисе.
 
-Используя сервис, вы соглашаетесь с [лицензионным соглашением](../../../../start/legal/vk/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
+Используя сервис, вы соглашаетесь с [лицензионным соглашением](../../../../start/legal/archive/digital-cloud/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
 
 ## {heading(Подготовительные шаги)[id=marketplace-cyber-backup-quick-start-prepare-step]}
 

@@ -1,0 +1,16 @@
+{
+  "title": "Реквизиты",
+  "shortDescription": "Данные организации для заключения договоров и выставления счетов",
+  "metaDescription": "Данные организации для заключения договоров и выставления счетов",
+  "sectionTitle": "Реквизиты",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "a0cd29dc-9c92-45e4-9d73-170ba9935058",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

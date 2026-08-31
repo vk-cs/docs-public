@@ -1,0 +1,16 @@
+{
+  "title": "Лицензионное соглашение на предоставление демонстрационной версии программы для ЭВМ «Security Gate»",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ представляет собой лицензионное соглашение на использование демонстрационной версии программы для ЭВМ «Security Gate» в рамках Платформы «VK Cloud».",
+  "sectionTitle": "Лицензионное соглашение на предоставление демонстрационной версии программы для ЭВМ «Security Gate»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

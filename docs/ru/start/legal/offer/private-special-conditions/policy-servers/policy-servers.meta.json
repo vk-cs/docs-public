@@ -1,0 +1,16 @@
+{
+  "title": "Условия использование Услуги «Cloud Servers»",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ представляет собой условия использования услуги «Cloud Servers» в рамках Платформы «VK Cloud». ",
+  "sectionTitle": "Условия использование Услуги «Cloud Servers»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

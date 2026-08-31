@@ -1,0 +1,14 @@
+{
+  "title": "Термины и определения",
+  "shortDescription": "",
+  "metaDescription": "Ключевые термины и определения, используемые на платформе VK Cloud",
+  "sectionTitle": "Термины и определения",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

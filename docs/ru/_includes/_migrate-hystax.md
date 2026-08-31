@@ -26,7 +26,7 @@
 
 В качестве примера с помощью сервиса Hystax Acura Migration в {var(cloud)} будет перенесена ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/vk/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
+Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/archive/digital-cloud/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
 
 ## {heading(Подготовительные шаги)[id=includes-migrate-hystax-prepare]}
 

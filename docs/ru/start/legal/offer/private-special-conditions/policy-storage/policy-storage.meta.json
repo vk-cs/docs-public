@@ -1,0 +1,16 @@
+{
+  "title": "Условия использования сервиса VK Object Storage",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ представляет собой условия использования сервиса VK Object Storage в рамках Платформы «VK Cloud». ",
+  "sectionTitle": "Условия использования сервиса VK Object Storage",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

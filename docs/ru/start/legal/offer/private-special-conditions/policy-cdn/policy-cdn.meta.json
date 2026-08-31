@@ -1,0 +1,16 @@
+{
+  "title": "Условия использования сервиса CDN",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ представляет собой условия использования сервиса «CDN» в рамках Платформы «VK Cloud». ",
+  "sectionTitle": "Условия использования сервиса CDN",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

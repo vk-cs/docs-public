@@ -1,0 +1,15 @@
+
+{
+  "title": "Соглашение об уровне обслуживания",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Соглашение об уровне обслуживания ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

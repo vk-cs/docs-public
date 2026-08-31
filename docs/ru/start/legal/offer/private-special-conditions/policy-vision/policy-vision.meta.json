@@ -1,0 +1,16 @@
+{
+  "title": "Лицензионное соглашение для программы «Vision»",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ представляет собой лицензионное соглашение на использование программы для ЭВМ «Vision» в рамках Платформы «VK Cloud». ",
+  "sectionTitle": "Лицензионное соглашение для программы «Vision»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

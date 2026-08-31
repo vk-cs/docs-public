@@ -4,7 +4,7 @@
 
 Инструкция поможет развернуть сервис VictoriaMetrics (на примере версии 1.93.9) на ВМ в {var(cloud)} и настроить сбор метрик.
 
-Используя VictoriaMetrics, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/vk/marketplace) и [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf).
+Используя VictoriaMetrics, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf).
 
 Чтобы развернуть сервис VictoriaMetrics в проекте:
 

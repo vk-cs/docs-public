@@ -2,7 +2,7 @@
 
 Вы можете управлять доступом к ресурсам облака с помощью сервиса [OpenVPN](https://msk.cloud.vk.ru/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info). Эта инструкция поможет развернуть сервис OpenVPN на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 
-Используя сервис OpenVPN, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/vk/marketplace) и [OpenVPN](https://openvpn.net/legal).
+Используя сервис OpenVPN, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [OpenVPN](https://openvpn.net/legal).
 
 Чтобы развернуть сервис OpenVPN в проекте:
 

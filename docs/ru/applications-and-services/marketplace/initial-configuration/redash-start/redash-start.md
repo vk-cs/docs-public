@@ -2,7 +2,7 @@
 
 Вы можете визуализировать данные из различных источников (базы данных, Google Sheets), а также строить интерактивные отчеты с помощью сервиса [Redash](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/7ee4cc28-6b2b-4595-b119-89c718af9e8b/latest/info). Эта инструкция поможет развернуть сервис Redash 10.1.0 на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 
-Используя Redash 10.1.0, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/vk/marketplace) и [Redash](https://redash.io/terms).
+Используя Redash 10.1.0, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [Redash](https://redash.io/terms).
 
 Чтобы развернуть сервис Redash в проекте:
 
