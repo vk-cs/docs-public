@@ -1,0 +1,15 @@
+
+{
+  "title": "Частные соглашения об уровне обслуживания",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Частные соглашения об уровне обслуживания",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

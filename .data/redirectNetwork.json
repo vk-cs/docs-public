@@ -21582,6 +21582,18 @@
     "locale": false
   },
   {
+    "source": "/ru/start/legal/digital-cloud",
+    "destination": "/ru/start/legal",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/vk",
+    "destination": "/ru/start/legal",
+    "permanent": false,
+    "locale": false
+  },
+  {
     "source": "/ru/ml/cloud-voice/about-cloud-voice",
     "destination": "/ru/ml/cloud-voice/concepts/about",
     "permanent": false,

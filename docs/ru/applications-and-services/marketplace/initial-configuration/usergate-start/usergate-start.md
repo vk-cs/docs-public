@@ -17,7 +17,7 @@
 
 Данная инструкция поможет развернуть сервис UserGate NGFW на ВМ в {var(cloud)}, подключиться к консоли UserGate NGFW и добавить новую сеть через консоль сервиса.
 
-Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/vk/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
+Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
 
 {note:warn}
 UserGate NGFW предоставляется по модели BYOL (Bring Your Own Licence): самостоятельно приобретите [лицензию](https://www.usergate.com/ru/purchase) на использование сервиса.

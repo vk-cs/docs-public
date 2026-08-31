@@ -11,7 +11,7 @@
 - Мониторинг: контроль конфигурации и отслеживание работы агентов.
 - Кастомизация: расширение платформы собственными инструментами и плагинами.
 
-Используя сервис OpenClaw, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](/ru/start/legal/vk/marketplace) и [OpenClaw](https://github.com/openclaw/openclaw/blob/main/LICENSE).
+Используя сервис OpenClaw, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](/ru/start/legal/archive/digital-cloud/marketplace) и [OpenClaw](https://github.com/openclaw/openclaw/blob/main/LICENSE).
 
 ## {heading(Подготовительные шаги)[id=marketplace-openclaw-prep]}
 

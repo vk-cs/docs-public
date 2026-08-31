@@ -3,7 +3,7 @@
 In order for VK LLC to accept any Contributions from you, you must adopt our Contributor License Agreement (the “CLA”) available here:
 
 1. https://cloud.vk.com/docs/en/additionals/start/legal/contributor (in English) and
-2. https://cloud.vk.ru/docs/additionals/start/legal/contributor (in Russian).
+2. https://cloud.vk.ru/docs/ru/start/legal/feedback-form/contributor (in Russian).
 
 Please read the terms and conditions of CLA carefully.
 By submitting your Contributions to VK LLC, you state the following:

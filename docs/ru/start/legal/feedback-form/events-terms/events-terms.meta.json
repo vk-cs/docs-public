@@ -1,0 +1,16 @@
+{
+  "title": "Соглашение об оказании услуг по организации участия в мероприятиях",
+  "shortDescription": "",
+  "metaDescription": "Соглашение об оказании услуг по организации участия в мероприятиях с 01.02.2025",
+  "sectionTitle": "Соглашение об оказании услуг по организации участия в мероприятиях",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "b685243c-b86c-458c-bd3b-bbdadad36eb2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

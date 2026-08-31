@@ -1,0 +1,14 @@
+{
+  "title": "Правила использования Услуг",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Правила использования Услуг",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

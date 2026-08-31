@@ -1,0 +1,14 @@
+{
+  "title": "Политика конфиденциальности",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Политика конфиденциальности",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

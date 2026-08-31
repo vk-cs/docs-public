@@ -1,0 +1,16 @@
+{
+  "title": "Частное соглашение об уровне обслуживания сервиса выделенных серверов VK Bare Metal",
+  "shortDescription": "",
+  "metaDescription": "Настоящий документ определяет Уровень обслуживания Сервиса выделенных серверов VK Bare Metal",
+  "sectionTitle": "Частное соглашение об уровне обслуживания сервиса выделенных серверов VK Bare Metal",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

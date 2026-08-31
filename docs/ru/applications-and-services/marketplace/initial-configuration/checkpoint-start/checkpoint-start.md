@@ -27,7 +27,7 @@
 1. Настроите политику безопасности.
 1. Ознакомитесь с вариантами резервного копирования.
 
-Используя сервис Check Point CloudGuard Network, вы соглашаетесь с лицензионным соглашением [магазина приложений](../../../../start/legal/vk/marketplace), а также с [лицензионным соглашением Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
+Используя сервис Check Point CloudGuard Network, вы соглашаетесь с лицензионным соглашением [магазина приложений](../../../../start/legal/archive/digital-cloud/marketplace), а также с [лицензионным соглашением Check Point](https://www.checkpoint.com/support-services/software-license-agreement-limited-hardware-warranty).
 
 {note:warn}
 Check Point CloudGuard Network предоставляется по модели BYOL (Bring Your Own Licence). Напишите партнеру Check Point на почту [cpcloud@proway.tech](mailto:cpcloud@proway.tech) для приобретения лицензии на использование сервиса.

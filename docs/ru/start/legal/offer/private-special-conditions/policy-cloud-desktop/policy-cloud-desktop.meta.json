@@ -1,0 +1,16 @@
+{
+  "title": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "shortDescription": "",
+  "metaDescription": "Настоящее лицензионное соглашение регулирует отношения между ООО «ВК Цифровые Технологии» и Вами — юридическим лицом либо индивидуальным предпринимателем по использованию программы для ЭВМ «Cloud Desktop».",
+  "sectionTitle": "Лицензионное соглашение для сервиса «Cloud Desktop»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

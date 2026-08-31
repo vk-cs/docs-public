@@ -212,7 +212,7 @@ UserGate NGFW содержит все функции решений класса
 
 * Ссылки:
 
-   * На [Пользовательское соглашение магазина приложений](/ru/start/legal/digital-cloud/marketplace)
+   * На [Пользовательское соглашение магазина приложений](/ru/start/legal/archive/digital-cloud/marketplace)
    * На пользовательское соглашение сервиса.
 
 * Для opensource-решений — дисклеймер об opensource-лицензиях.
@@ -221,7 +221,7 @@ UserGate NGFW содержит все функции решений класса
 ```markdown
 # Лицензионное соглашение
 Используя сервис UserGate NGFW, вы соглашаетесь с:
-- [Пользовательским соглашением магазина приложений](https://cloud.vk.ru/docs/ru/start/legal/digital-cloud/marketplace).
+- [Пользовательским соглашением магазина приложений](https://cloud.vk.ru/docs/ru/start/legal/archive/digital-cloud/marketplace).
 - [Лицензионным соглашением на использование UserGate NGFW](https://www.usergate.com/ru/usergate-eula).
 ```
 {/caption}
