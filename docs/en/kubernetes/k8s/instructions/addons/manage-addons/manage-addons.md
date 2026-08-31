@@ -244,3 +244,11 @@ To remove the add-on:
 {/tab}
 
 {/tabs}
+
+{note:warn}
+Persistent volumes (PVs) created for add-ons are not removed automatically, as they can still contain important data. If necessary, remove them using one of the options:
+
+- [via your management console](/en/kubernetes/k8s/instructions/manage-pvs) (available only for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters)
+- by using a required [reclaim policy](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes)
+  {/note}
+
