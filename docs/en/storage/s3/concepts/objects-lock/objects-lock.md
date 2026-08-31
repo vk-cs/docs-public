@@ -10,6 +10,8 @@ You can only use object lock in buckets created with this feature explicitly ena
 
 In VK Object Storage, two types of object lock are supported: retention period and legal hold. These types can be used separately or together for the same object, offering flexible protection scenarios.
 
+You can only enable object lock in a bucket with [versioning](/en/storage/s3/concepts/versioning) enabled. After you enable object lock, you cannot suspend bucket versioning while the lock remains enabled.
+
 ### {heading(Retention period)[id=temporary_lock]}
 
 A retention period provides a temporary lock for a fixed amount of time. Two modes of the retention period are supported: a managed `GOVERNANCE` lock and a strict `COMPLIANCE` lock.
@@ -42,6 +44,33 @@ A legal hold has no expiration date, and it remains in place until you explicitl
 A legal hold is valid regardless of the retention period set for an object and takes precedence over it.
 
 A legal hold is used in situations with indefinite data retention, such as court proceedings, internal audits, or investigations. The data remains protected until the relevant process is completed, after which the legal hold can be removed.
+
+## {heading(Deleting locked objects)[id=deleting-locked-objects]}
+
+Attempting to delete an object with object lock enabled produces different results depending on whether a version ID is used:
+
+- in the `versionId` parameter of an API request with the `DeleteObject` or `DeleteMultipleObjects` methods, or the AWS CLI `delete-object` and `delete-objects` commands;
+- when deleting an object in the control panel with the **Show object versions** option enabled.
+
+[cols="1,2,1,1", options="header"]
+|===
+| Version ID usage
+| What happens
+| Can it be bypassed
+| Result
+
+| No version ID
+| The protected version is not deleted. Instead, a [delete marker](/en/storage/s3/concepts/versioning#delete-marker) is created and becomes the current version of the object
+| Not applicable, because no version is actually deleted
+| The [delete marker](/en/storage/s3/concepts/versioning#delete-marker) becomes the current version of the object; the previous version is not deleted
+
+| Locked version ID specified
+| Deletion of the specified version is attempted
+| Only for [managed retention period mode](#governance-lock) (`GOVERNANCE`)
+| The operation is rejected. The object cannot be deleted until the [retention period](#temporary_lock) expires or the [legal hold](#legal-hold-lock) is removed
+|===
+
+A [delete marker](/en/storage/s3/concepts/versioning#delete-marker) cannot be locked. When you delete a delete marker, the previous version of the object becomes the current version.
 
 ## Comparison of object lock types
 

@@ -1,0 +1,16 @@
+{
+  "title": "Bucket versioning",
+  "shortDescription": "How bucket versioning works",
+  "metaDescription": "VK Object Storage versioning: what it is and why it's used (protection against accidental deletion or overwriting, storing a change history, and recovery), plus bucket versioning statuses and how they affect creating, storing, and deleting object versions.",
+  "sectionTitle": "Bucket versioning",
+  "icon": "",
+  "weight": 3,
+  "uuid": "c2c4a77f-617a-4f87-b911-d4463906034b",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}
