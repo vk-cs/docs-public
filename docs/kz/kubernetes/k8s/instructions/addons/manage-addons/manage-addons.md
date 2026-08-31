@@ -243,3 +243,10 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 {/tab}
 
 {/tabs}
+
+{note:warn}
+Қосымша үшін жасалған тұрақты көлемдер (PV) автоматты түрде жойылмайды, өйткені оларда қажетті деректер қалуы мүмкін. Қажет болса, оларды бір әдіспен өзіңіз алып тастаңыз:
+
+- {linkto(../../manage-pvs#k8s-manage-pvs)[text=жеке кабинет арқылы]} (тек кластерлер үшін {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=екінші буын]});
+- {linkto(../../../concepts/storage#k8s-storage-reclaim-policies)[text=томдарды босату саясаты]}.
+  {/note}
