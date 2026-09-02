@@ -11,7 +11,7 @@ n8n — это платформа автоматизации процессов 
 - Интеграция с внешними сервисами: поддержка REST API, вебхуков, а также популярных сервисов, таких как Google Sheets, Slack, Telegram и т.п.
 - Экспорт и импорт: удобный перенос настроенных процессов между инстансами.
 
-Используя n8n, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [n8n Sustainable Use License](https://docs.n8n.io/sustainable-use-license).
+Используя n8n, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [n8n Sustainable Use License](https://docs.n8n.io/sustainable-use-license).
 
 ## {heading(1. Разверните n8n в проекте {var(cloud)})[id=marketplace-n8n-start-install]}
 

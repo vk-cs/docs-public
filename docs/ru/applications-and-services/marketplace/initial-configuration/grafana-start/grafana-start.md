@@ -4,7 +4,7 @@
 
 Инструкция поможет развернуть сервис Grafana 10 на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 
-Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
+Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license).
 
 Чтобы развернуть сервис Grafana в проекте:
 

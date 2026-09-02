@@ -1,5 +1,5 @@
 {includetag(dr_onboarding_1)}
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/archive/digital-cloud/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
+Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/offer/private-special-conditions/policy-marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
 {/includetag}
 
 {includetag(not_dr_onboarding)}

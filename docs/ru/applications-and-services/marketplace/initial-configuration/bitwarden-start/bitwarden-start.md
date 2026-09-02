@@ -35,7 +35,7 @@ Bitwarden — это корпоративный менеджер паролей,
 
 {/cut}
 
-Используя сервис Bitwarden, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](../../../../start/legal/archive/digital-cloud/marketplace) и [Bitwarden](https://bitwarden.com/help/article/open-source-license).
+Используя сервис Bitwarden, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Bitwarden](https://bitwarden.com/help/article/open-source-license).
 
 Чтобы развернуть сервис Bitwarden на ВМ в вашем проекте {var(cloud)}:
 

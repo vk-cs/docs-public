@@ -12,7 +12,7 @@ Alfresco — это система управления корпоративны
 - управление пользователями, ролями и правами доступа;  
 - поддержка многоканального доступа (веб-интерфейс, мобильные приложения, файловые протоколы).
 
-Используя Alfresco, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](../../../../start/legal/archive/digital-cloud/marketplace) и [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE).
+Используя Alfresco, вы соглашаетесь с лицензионными соглашениями [Marketplace VK Cloud](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Alfresco](https://github.com/Alfresco/acs-deployment/blob/master/LICENSE).
 
 Чтобы развернуть сервис Alfresco в проекте {var(cloud)}:
 

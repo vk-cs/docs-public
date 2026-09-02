@@ -11,7 +11,7 @@ Meilisearch — это RESTful API для поиска. С его помощью
 
 Meilisearch предоставляет веб-интерфейс, чтобы вы могли протестировать настройки поиска, не встраивая внешний интерфейс на ваш веб-сайт.
 
-Используя Meilisearch, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [Meilisearch](https://www.meilisearch.com/terms-of-use).
+Используя Meilisearch, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Meilisearch](https://www.meilisearch.com/terms-of-use).
 
 Чтобы развернуть сервис Meilisearch на ВМ в вашем проекте {var(cloud)}:
 
