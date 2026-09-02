@@ -1,0 +1,16 @@
+{
+  "title": "Multipart",
+  "shortDescription": "Загрузка файлов большого размера по частям с помощью составной загрузки",
+  "metaDescription": "Все доступные методы для составной загрузки объектов в VK Object Storage: инициализация загрузки (CreateMultipartUpload), загрузка частей объекта (UploadPart), завершение загрузки (CompleteMultipartUpload), прерывание загрузки (AbortMultipartUpload), получение списка загруженных частей (ListParts)",
+  "sectionTitle": "Multipart",
+  "icon": "",
+  "weight": 6,
+  "uuid": "a56d6682-1b30-452d-b754-249a872f8368",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

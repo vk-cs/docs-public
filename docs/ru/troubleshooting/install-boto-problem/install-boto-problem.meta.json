@@ -1,0 +1,16 @@
+{
+  "title": "Не работает загрузка файла с помощью SDK",
+  "shortDescription": "Что делать, если не работает загрузка файла с помощью SDK для Python",
+  "metaDescription": "Что делать, если не работает загрузка файла с помощью SDK для Python",
+  "sectionTitle": "Не работает загрузка файла с помощью SDK",
+  "icon": "",
+  "weight": 2,
+  "uuid": "4fa548d3-f8c5-409d-b712-cd7e82b771df",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

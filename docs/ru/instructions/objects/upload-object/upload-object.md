@@ -1,0 +1,675 @@
+# {heading(Добавление объектов в бакет)[id=s3-instructions-upload-object]}
+
+В зависимости от размера объекта рекомендованы различные способы его загрузки в бакет:
+
+- До 1 ГБ — {linkto(#s3-instructions-upload-object-standard)[text=стандартная загрузка]} любым удобным способом: через личный кабинет, файловые менеджеры, CLI, SDK или API.
+- Свыше 1 ГБ — CLI, SDK или API.
+- Свыше 32 ГБ — только {linkto(#s3-instructions-upload-object-multipart)[text=составная загрузка]} через CLI, SDK или API.
+
+При загрузке объекта ему назначается специальный идентификатор — {linkto(../../../concepts/about#s3-concepts-about-object-key)[text=ключ объекта]}.
+
+{note:err}
+Если ключ загружаемого файла совпадает с ключом объекта в бакете и этот объект не {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=защищен от перезаписи]}, {var(s3)} заменит существующий объект на новый.
+{/note}
+
+## {heading(Стандартная загрузка)[id=s3-instructions-upload-object-standard]}
+
+{tabs}
+
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Нажмите на имя нужного бакета или создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=новый]}.
+1. (Опционально) Добавьте папку для хранения объекта:
+
+   1. Нажмите кнопку **Новая папка**.
+   1. Введите имя папки. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имени папки, так как оно станет частью ключа объекта.
+   1. Нажмите кнопку **Создать**.
+   1. Перейдите в созданную папку.
+
+1. Нажмите кнопку **Добавить файл**.
+1. Выберите необходимые {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=настройки ACL]} для загружаемых объектов.
+1. Чтобы загрузить один или несколько файлов, выполните одно из следующих действий:
+
+   - Перетащите файлы в окно загрузки.
+   - Нажмите кнопку **Выбрать файлы** и выберите файлы.
+
+1. Чтобы загрузить папку с файлами, перетащите папку в окно загрузки.
+
+   Статус загрузки файлов отобразится в правом нижнем углу экрана, где вы можете отследить прогресс загрузки или отменить ее.
+
+{/tab}
+
+{ifdef(s3,s3-pdf)}
+
+{tab(Файловый менеджер)}
+
+{note:warn}
+Здесь и далее мы используем файловый менеджер «CloudBerry Explorer for Amazon S3». Если вы используете другой файловый менеджер, интерфейс и названия его элементов могут отличаться от используемых в данной инструкции.
+{/note}
+
+На левой панели вашего файлового менеджера откройте папки вашей операционной системы. На правой панели файлового менеджера откройте {var(s3)} и перейдите в нужный бакет.
+
+На левой панели файлового менеджера найдите файл, которы вы планируете загрузить в бакет и с помощью мыши перетащите его на правую панель. Таким образом, в бакете будет создана копия файла из вашей ОС.
+
+Или используйте кнопки в левой панели файлового менеджера **Copy** или **Move**. Для этого выделите нужный файл или группу файлов и нажмите соответствующую кнопку. Функция «Copy» создает копию файла в бакете, функция «Move» перемещает файл в бакет.
+
+{/tab}
+
+{/ifdef}
+
+{tab(AWS CLI)}
+
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. В консоли выполните команду:
+
+   ```console
+   aws s3 cp <ПУТЬ> s3://<ИМЯ_БАКЕТА>/<КЛЮЧ_ОБЪЕКТА>
+      --endpoint-url <ENDPOINT_URL>
+      --storage-class <КЛАСС_ХРАНЕНИЯ>
+      --acl <НАСТРОЙКА_ACL>
+   ```
+
+   Здесь:
+
+   - `<ПУТЬ>` — путь к локальному файлу.
+   - `<ИМЯ_БАКЕТА>`  — имя бакета, в который нужно загрузить объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имен.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+     {/ifdef}
+   - (Опционально) `<КЛАСС_ХРАНЕНИЯ>` — задает {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=класс хранения]} объекта. Если не указано, класс хранения наследуется из бакета. Доступные значения:
+
+     - `STANDARD` — соответствует классу хранения Hotbox;
+     - `STANDARD_IA` — соответствует классу хранения Icebox.
+
+   - (Опционально) `<НАСТРОЙКА_ACL>` — задает {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=настройки ACL]}. Доступные значения:
+
+     - `private` — значение по умолчанию, если настройка не указана;
+     - `public-read`;
+     - `public-read-write`.
+
+{cut(Пример команды создания объекта)}
+
+Пример команды:
+
+```console
+aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png
+   --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   --storage-class STANDARD_IA
+   --acl public-read
+```
+
+Пример ответа:
+
+```console
+upload: ../pictures/picture.png to s3://my-bucket/folder/my-picture.png
+```
+{/cut}
+
+Полное описание операций копирования и перемещения объектов и файлов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
+
+{/tab}
+
+{tab(API)}
+
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. [Узнайте](https://msk.cloud.vk.ru/app/project/endpoints) эндпоинт для сервиса {var(s3)}.
+   {ifdef(public)}
+1. {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=Сформируйте подпись]} запроса для аутентификации в API.
+   {/ifdef}
+1. Используйте метод {linkto(../../../api/object#api-spec-s3-put-object)[text=PutObject]} для загрузки объекта в бакет.
+
+{/tab}
+
+{tab(Golang SDK)}
+
+1. Установите и настройте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} для Go, если он еще не установлен.
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. Добавьте код в свой проект:
+
+   ```go
+   package main
+
+   import (
+	   "github.com/aws/aws-sdk-go/aws"
+	   "github.com/aws/aws-sdk-go/aws/session"
+	   "github.com/aws/aws-sdk-go/service/s3"
+	   "log"
+	   "os"
+	   "strings"
+   )
+
+   const (
+	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcloud-storage.ru"
+	   defaultRegion         = "ru-msk"
+   )
+
+   func main() {
+	   // Создание сессии
+	   sess, _ := session.NewSession()
+
+	   // Подключение к сервису VK Object Storage
+	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
+
+	   bucket := "gobucket"
+
+	   // Загрузка объекта из строки в бакет
+	   key := "test_string.txt"
+	   body := "Hello World!"
+
+	   if _, err := svc.PutObject(&s3.PutObjectInput{
+		   Bucket: aws.String(bucket),
+		   Key:    aws.String(key),
+		   Body:   strings.NewReader(body),
+	   }); err != nil {
+		   log.Fatalf("Unable to upload %q to %q, %v\n", body, bucket, err)
+	   } else {
+		   log.Printf("File %q uploaded to bucket %q\n", body, bucket)
+	   }
+
+	   // Загрузка объекта из файла в бакет
+	   fileName := "test.txt"
+	   file, err := os.Open(fileName)
+	   if err != nil {
+		   log.Fatalf("Unable to open file %q, %v\n", fileName, err)
+	   }
+
+	   defer file.Close()
+
+	   if _, err := svc.PutObject(&s3.PutObjectInput{
+		   Bucket: aws.String(bucket),
+		   Key:    aws.String(key),
+		   Body:   file,
+	   }); err != nil {
+		   log.Fatalf("Unable to upload %q to %q, %v\n", fileName, bucket, err)
+	   } else {
+		   log.Printf("File %q uploaded to bucket %q\n", fileName, bucket)
+	   }
+   }
+   ```
+   {ifdef(public)}  
+   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+
+   - `vkCloudHotboxEndpoint`:
+
+      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+
+   - `defaultRegion`:
+
+      - `ru-msk` — для региона Москва;
+      - `kz-ast` — для региона Казахстан.
+   {/ifdef}
+
+   Команда `PutObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
+
+{/tab}
+
+{tab(Python SDK)}
+
+1. Установите и настройте {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} для Python, если он еще не установлен.
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. Добавьте код в свой проект:
+
+   ```python
+   import boto3
+   session = boto3.session.Session()
+   s3_client = session.client(
+      service_name = 's3',
+      endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru'
+      )
+
+   test_bucket_name = 'boto3-test-bucket-name'
+
+   #Загрузка данных из строки
+   s3_client.put_object(Body='TEST_TEXT_TEST_TEXT', Bucket=test_bucket_name, Key='test_file.txt')
+
+   #Загрузка локального файла
+   s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'copy_some_test_file.txt')
+
+   #Загрузка локального файла в директорию внутри бакета
+   s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup_dir/copy_some_test_file.txt')
+   ```
+   {ifdef(public)}
+   Значение переменной `endpoint_url` должно соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   {/ifdef}
+
+   Команды `put_object` и `upload_file` подробно описаны в официальной документации к библиотеке boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
+
+{/tab}
+
+{/tabs}
+
+## {heading(Составная загрузка)[id=s3-instructions-upload-object-multipart]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен. Установите выходной формат JSON, так как текстовые форматы не распознаются при выполнении команд составной загрузки.
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. Разделите на части файл, который нужно загрузить в бакет. Например, в Linux-системах это можно сделать при помощи команды `split`.
+1. Инициируйте составную загрузку. В консоли выполните команду:
+
+   ```console
+   aws s3api create-multipart-upload \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в который нужно загрузить объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для создания которого инициируется составная загрузка, включая путь до него. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имен.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды создания составной загрузки)}
+
+   Пример команды:
+
+   ```console
+   aws s3api create-multipart-upload \
+      --bucket mybucket \
+      --key large.avi \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```console
+   {
+      "Bucket": "mybucket",
+      "Key": "large-file.avi",
+      "UploadId": "example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH"
+   }
+   ```
+   {/cut}
+
+1. Выполните загрузку первой части файла. Откройте консоль, перейдите в директорию файла для загрузки и выполните команду:
+
+   ```console
+   aws s3api upload-part \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --part-number <НОМЕР_ЧАСТИ> \
+      --body <ИМЯ_ЧАСТИ> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<НОМЕР_ЧАСТИ>` — номер части в том порядке, в котором они будут собраны. Порядок загрузки части не важен.
+   - `<ID_ЗАГРУЗКИ>` — идентификатор загрузки (`UploadId`), который был получен на предыдущем шаге.
+
+   В результате успешной загрузки в ответе вернется `ETag` загруженной части. Сохраните полученное значение, оно понадобится для завершения загрузки объекта.
+
+   {cut(Пример команды загрузки части файла)}
+
+   Пример команды:
+
+   ```console
+   aws s3api upload-part \
+      --bucket mybucket \
+      --key large.avi \
+      --part-number 1 \
+      --body large.avi.00.part \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```console
+   {
+    "ETag": "\"example468bd2718bfe43af2bb\""
+   }
+   ```
+   {/cut}
+
+   Выполните команду для каждой части файла.
+
+1. Проверьте, все ли части файла загружены. Для этого выполните команду:
+
+   ```console
+   aws s3api list-parts \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   {cut(Пример выполнения команды)}
+
+   Пример запроса:
+
+   ```console
+   aws s3api list-parts \
+      --bucket mybucket \
+      --key large.avi \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```console
+   {
+    "Parts": [
+        {
+            "PartNumber": 1,
+            "LastModified": "2023-10-27T07:31:05.444000+00:00",
+            "ETag": "\"example468bd2718bfe43af2bb\"",
+            "Size": 209715200
+        },
+        {
+            "PartNumber": 2,
+            "LastModified": "2023-10-27T07:33:50.806000+00:00",
+            "ETag": "\"example1aeca61dee379f8ca0be0468\"",
+            "Size": 209715200
+        },
+        {
+            "PartNumber": 3,
+            "LastModified": "2023-10-27T07:35:21.803000+00:00",
+            "ETag": "\"example046628fad3c2d13b21b1270a\"",
+            "Size": 209715200
+        },
+        {
+            "PartNumber": 4,
+            "LastModified": "2023-10-27T07:37:14.395000+00:00",
+            "ETag": "\"examplef91ce7e6ba091581162bcf3d\"",
+            "Size": 203821824
+        }
+    ],
+    "ChecksumAlgorithm": null,
+    "Initiator": {
+        "ID": "XXXXrs3jZaLwhimPAbVEiny",
+        "DisplayName": "project"
+    },
+    "Owner": {
+        "DisplayName": "project",
+        "ID": "XXXXrs3jZaLwhimPAbVEiny"
+    },
+    "StorageClass": "STANDARD"
+   }
+   ```
+   {/cut}
+
+1. Создайте в текущей директории файл в формате JSON и укажите в нем `ETag` для каждой части файла.
+
+   {cut(Пример содержания JSON-файла)}
+
+   ```json
+   {
+      "Parts": [{
+         "ETag": "example468bd2718bfe43af2bb0a4da",
+         "PartNumber":1
+      },
+      {
+         "ETag": "example1aeca61dee379f8ca0be0468",
+         "PartNumber":2
+      },
+      {
+         "ETag": "example046628fad3c2d13b21b1270a",
+         "PartNumber":3
+      },
+      {
+         "ETag": "examplef91ce7e6ba091581162bcf3d",
+         "PartNumber":4
+      }]
+   }
+   ```
+   {/cut}
+
+1. Завершите составную загрузку и объедините части файла в объект. В консоли выполните команду:
+
+   ```console
+   aws s3api complete-multipart-upload \
+      --multipart-upload file://<JSON-файл> \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   В результате успешного выполнения команды из отдельных частей будет создан объект с указанным ключом.
+
+   {cut(Пример команды завершения составной загрузки)}
+   Пример команды:
+
+   ```console
+   aws s3api complete-multipart-upload \
+      --multipart-upload file://fileparts.json \
+      --bucket mybucket \
+      --key large.avi \
+      --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```console
+   {
+    "Location": "http://hb.ru-msk.vkcloud-storage.ru/mybucket/large.avi",
+    "Bucket": "mybucket",
+    "Key": "large.avi",
+    "ETag": "\"example7e0a4a8ce5683bf54ee3dff96-4\""
+   }
+   ```
+   {/cut}
+
+1. Если по какой-то причине составную загрузку необходимо отменить, выполните команду:
+
+   ```console
+   aws s3api abort-multipart-upload \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --upload-id <ID_ЗАГРУЗКИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в который выполнялась составная загрузка.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для создания которого инициировалась составная загрузка, включая путь до него.
+   - `<ID_ЗАГРУЗКИ>` — идентификатор загрузки (`UploadId`), который был получен при создании составной загрузки.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+     {/ifdef}
+
+   При успешном выполнении команда не выводит ответ, а все ранее загруженные части файлов удаляются.
+
+{/tab}
+
+{tab(API)}
+
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+1. Разделите на части файл, который нужно загрузить в бакет. Например, в Linux-системах это можно сделать при помощи команды `split`.
+   {ifdef(public)}
+1. {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro)[text=Узнайте эндпоинт и сформируйте подпись]} запроса для аутентификации в API.
+   {/ifdef}
+1. Инициируйте составную загрузку при помощи запроса {linkto(../../../api/multipart#api-spec-s3-create-multipart-upload)[text=CreateMultipartUpload]}. На этом этапе создается ключ будущего объекта и добавляются все его пользовательские метаданные. В ответе вернется идентификатор загрузки `UploadId`, который понадобится для следующих этапов составной загрузки.
+1. Загрузите в бакет все части файла. Для загрузки каждой части отправьте отдельный запрос {linkto(../../../api/multipart#api-spec-s3-upload-part)[text=UploadPart]}. Для каждой части укажите номер. Номера не должны повторяться, иначе последняя загруженная часть перезапишет предыдущую с таким же номером. {var(s3)} будет собирать все части объекта в порядке возрастания их номеров.
+
+   В каждом ответе на запрос вернется `ETag` загруженной части. Сохраните значение `ETag` и соответствующий ему номер части.
+
+1. Проверьте, все ли части файла загружены в бакет. Для этого используйте запрос {linkto(../../../api/multipart#api-spec-s3-list-parts)[text=ListParts]}.
+
+1. Завершите загрузку и соберите объект при помощи запроса {linkto(../../../api/multipart#api-spec-s3-complete-multipart-upload)[text=CompleteMultipartUpload]}.
+
+{/tab}
+
+{tab(Go SDK)}
+
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+
+1. Добавьте код в свой проект:
+
+   ```go
+   // Подключение S3Client для выполнения операций с бакетами и объектами
+   type BucketBasics struct {
+	      S3Client *s3.Client
+      }
+
+   // UploadLargeObject разделяет большой файл на части и загружает их VK Object Storage одновременно
+   func (basics BucketBasics) UploadLargeObject(bucketName string, objectKey string, largeObject []byte) error {
+	largeBuffer := bytes.NewReader(largeObject)
+	var partMiBs int64 = 10
+	uploader := manager.NewUploader(basics.S3Client, func(u *manager.Uploader) {
+		u.PartSize = partMiBs * 1024 * 1024
+	   })
+	   _, err := uploader.Upload(context.TODO(), &s3.PutObjectInput{
+		   Bucket: aws.String(bucketName),
+		   Key:    aws.String(objectKey),
+		   Body:   largeBuffer,
+	   })
+	   if err != nil {
+		   log.Printf("Couldn't upload large object to %v:%v. Here's why: %v\n",
+			   bucketName, objectKey, err)
+	   }
+
+	   return err
+   }
+
+   // DownloadLargeObject разделяет большой объект на части и скачивает их независимо из VK Object Storage
+   func (basics BucketBasics) DownloadLargeObject(bucketName string, objectKey string) ([]byte, error) {
+	   var partMiBs int64 = 10
+	   downloader := manager.NewDownloader(basics.S3Client, func(d *manager.Downloader) {
+		   d.PartSize = partMiBs * 1024 * 1024
+	   })
+	   buffer := manager.NewWriteAtBuffer([]byte{})
+	   _, err := downloader.Download(context.TODO(), buffer, &s3.GetObjectInput{
+		   Bucket: aws.String(bucketName),
+		   Key:    aws.String(objectKey),
+	   })
+	   if err != nil {
+		   log.Printf("Couldn't download large object from %v:%v. Here's why: %v\n",
+			   bucketName, objectKey, err)
+	   }
+	   return buffer.Bytes(), err
+   }
+   ```
+
+{/tab}
+
+{tab(Python SDK)}
+
+1. Создайте {linkto(../../buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]}, если он еще не создан.
+
+1. Добавьте код в свой проект:
+
+   ```python
+   import sys
+   import threading
+
+   import boto3
+   from boto3.s3.transfer import TransferConfig
+
+   MB = 1024 * 1024
+   s3 = boto3.resource("s3")
+
+   class TransferCallback:
+
+    def __init__(self, target_size):
+        self._target_size = target_size
+        self._total_transferred = 0
+        self._lock = threading.Lock()
+        self.thread_info = {}
+
+    # Метод обратного вызова, запускается периодически, чтобы показать прогресс по загрузке
+    def __call__(self, bytes_transferred):
+
+        thread = threading.current_thread()
+        with self._lock:
+            self._total_transferred += bytes_transferred
+            if thread.ident not in self.thread_info.keys():
+                self.thread_info[thread.ident] = bytes_transferred
+            else:
+                self.thread_info[thread.ident] += bytes_transferred
+
+            target = self._target_size * MB
+            sys.stdout.write(
+                f"\r{self._total_transferred} of {target} transferred "
+                f"({(self._total_transferred / target) * 100:.2f}%)."
+            )
+            sys.stdout.flush()
+
+    # Загрузка с настройками по умолчанию
+    def upload_with_default_configuration(local_file_path, bucket_name, object_key, file_size_mb):
+
+
+      transfer_callback = TransferCallback(file_size_mb)
+      s3.Bucket(bucket_name).upload_file(
+         local_file_path, object_key,  Callback=transfer_callback
+      )
+      return transfer_callback.thread_info
+
+    # Загрузка с определением размера частей загружаемого объекта и добавлением метаданных объекта
+    def upload_with_chunksize_and_meta(local_file_path, bucket_name, object_key, file_size_mb, metadata=None):
+
+      transfer_callback = TransferCallback(file_size_mb)
+
+      config = TransferConfig(multipart_chunksize=1 * MB)
+      extra_args = {"Metadata": metadata} if metadata else None
+      s3.Bucket(bucket_name).upload_file(
+         local_file_path,
+         object_key,
+         Config=config,
+         ExtraArgs=extra_args,
+         Callback=transfer_callback,
+      )
+      return transfer_callback.thread_info
+
+    # Загрузка с установкой порогового значения
+    # Если файл меньше или равен установленному порогу, он загружается обычным методом, если больше — через составную
+    def upload_with_high_threshold(local_file_path, bucket_name, object_key, file_size_mb):
+
+      transfer_callback = TransferCallback(file_size_mb)
+      config = TransferConfig(multipart_threshold=file_size_mb * 2 * MB)
+      s3.Bucket(bucket_name).upload_file(
+        local_file_path, object_key, Config=config, Callback=transfer_callback
+      )
+      return transfer_callback.thread_info
+   ```
+
+{/tab}
+
+{/tabs}

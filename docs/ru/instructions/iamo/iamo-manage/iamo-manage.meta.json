@@ -1,0 +1,16 @@
+{
+  "title": "Управление IAM Only",
+  "shortDescription": "Как управлять настройками аккаунта и проекта в личном кабинете",
+  "metaDescription": "IAM Only — веб‑интерфейс для VK Object Storage. В статье описано как управлять аккаунтом и настраивать проект.",
+  "sectionTitle": "Управление IAM Only",
+  "weight": 1,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "7f92e78c-4a28-43ae-93bd-1890bb7df858",
+  "createdAt": "",
+  "updatedAt": ""
+}
