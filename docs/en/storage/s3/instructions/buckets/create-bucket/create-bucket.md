@@ -39,7 +39,7 @@ To create it, you should:
 The bucket name must meet the conditions:
 
 - Be unique for the entire VK Cloud platform
-- Contain from 4 to 63 characters
+- Contain from 3 to 63 characters
 - Do not contain uppercase characters (uppercase)
 - Start with a lowercase character (lowercase) or digits
 

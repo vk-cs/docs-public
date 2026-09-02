@@ -8,7 +8,7 @@ Bucket names must be unique for all projects of the VK Object Storage service, i
 
 The bucket name must meet the following conditions:
 
-- Contain between 4 and 63 characters
+- Contain between 3 and 63 characters
 - Do not contain uppercase characters (uppercase)
 - Start with a lowercase character (lowercase) or numbers
 
