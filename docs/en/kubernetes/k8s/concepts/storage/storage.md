@@ -126,6 +126,16 @@ Each storage class has a reclaim policy configured for it.
 | ME1                 
 | Retain
 
+| csi-ceph-ssd-pa2                
+|`ceph-ssd`
+| PA2                 
+| Delete
+
+| csi-ceph-ssd-pa2-retain         
+| `ceph-ssd`
+| PA2                 
+| Retain
+
 | csi-ceph-hdd-gz1                
 | `ceph-hdd`
 | GZ1                 
@@ -144,6 +154,16 @@ Each storage class has a reclaim policy configured for it.
 | csi-ceph-hdd-me1-retain         
 |`ceph-hdd`
 | ME1                 
+| Retain
+
+| csi-ceph-hdd-pa2                
+| `ceph-hdd`
+| PA2                 
+| Delete
+
+| csi-ceph-hdd-pa2-retain         
+|`ceph-hdd`
+| PA2                 
 | Retain
 
 | csi-ceph-hdd-ms1                
@@ -184,6 +204,16 @@ Each storage class has a reclaim policy configured for it.
 | csi-high-iops-me1-retain        
 | `high-iops`
 | ME1                 
+| Retain
+
+| csi-high-iops-pa2               
+| `high-iops`
+| PA2                 
+| Delete
+
+| csi-high-iops-pa2-retain        
+| `high-iops`
+| PA2              
 | Retain
 |===
 
