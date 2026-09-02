@@ -12,7 +12,7 @@ Qdrant — это универсальная векторная СУБД и API-
 
 Qdrant предоставляет RESTful API и клиентские библиотеки на популярных языках программирования, что упрощает интеграцию с приложениями.
 
-Используя Qdrant, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [Qdrant](https://github.com/qdrant/qdrant/blob/master/LICENSE).
+Используя Qdrant, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Qdrant](https://github.com/qdrant/qdrant/blob/master/LICENSE).
 
 Чтобы развернуть сервис Qdrant в проекте:
 

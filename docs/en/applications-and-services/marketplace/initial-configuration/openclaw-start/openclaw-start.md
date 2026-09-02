@@ -11,7 +11,7 @@ OpenClaw features include:
 - Monitoring: tracking configuration and monitoring agent performance.
 - Customization: extending the platform with custom tools and plugins.
 
-By using the OpenClaw service, you agree to the license agreements of [Marketplace VK Cloud](/ru/start/legal/vk/marketplace) and [OpenClaw](https://github.com/openclaw/openclaw/blob/main/LICENSE).
+By using the OpenClaw service, you agree to the license agreements of [Marketplace VK Cloud](/ru/start/legal/offer/private-special-conditions/policy-marketplace) and [OpenClaw](https://github.com/openclaw/openclaw/blob/main/LICENSE).
 
 ## Prerequisites
 

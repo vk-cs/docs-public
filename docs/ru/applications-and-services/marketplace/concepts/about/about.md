@@ -10,7 +10,7 @@ Marketplace — подсистема {var(cloud)}, которая предост
 
 {ifdef(public)}
 {note:warn}
-Используя сервисы из магазина приложений, вы соглашаетесь с [пользовательским соглашением](../../../../start/legal/archive/digital-cloud/marketplace).
+Используя сервисы из магазина приложений, вы соглашаетесь с [пользовательским соглашением](../../../../start/legal/offer/private-special-conditions/policy-marketplace).
 {/note}
 {/ifdef}
 

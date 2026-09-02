@@ -12,7 +12,7 @@ Milvus — это гибкая платформа для анализа нест
 
 Milvus предоставляет RESTful API и клиентские библиотеки для различных языков, упрощая интеграцию с вашими приложениями, и включает Attu — веб-интерфейс для взаимодействия с Milvus.
 
-Используя Milvus, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/archive/digital-cloud/marketplace) и [Milvus](https://github.com/milvus-io/milvus/blob/master/LICENSE).
+Используя Milvus, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Milvus](https://github.com/milvus-io/milvus/blob/master/LICENSE).
 
 Чтобы развернуть сервис Milvus в проекте {var(cloud)}:
 

@@ -13,7 +13,7 @@ H2O LLM Studio — это платформа с открытым исходны�
 
 Используя H2O LLM Studio, вы соглашаетесь с лицензионными соглашениями:
 
-- [Marketplace VK Cloud](../../../../start/legal/archive/digital-cloud/marketplace).
+- [Marketplace VK Cloud](../../../../start/legal/offer/private-special-conditions/policy-marketplace).
 - [H2O LLM Studio](https://github.com/h2oai/h2o-llmstudio/blob/main/LICENSE).
 - [H2O Wave](https://github.com/h2oai/wave/blob/master/LICENSE).
 
