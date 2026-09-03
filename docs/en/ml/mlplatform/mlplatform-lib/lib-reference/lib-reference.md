@@ -1453,7 +1453,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## list_deployments
+## {heading(list_deployments)[id=list_deployments]}
 
 Get a list of all ML model deployments available on the MLflow Deploy instance.
 

@@ -97,6 +97,12 @@
 
 ## {heading(Бакет үшін ACL орнату)[id=s3-instructions-bucket-acl-add]}
 
+{note:info}
+
+Бакет үшін ACL объектінің ACL-іне қолданылмайды.
+
+{/note}
+
 ### {heading(Бакет үшін ACL конфигурациясын орнату)[id=s3-instructions-bucket-acl-add-config]}
 
 {tabs}
@@ -108,7 +114,7 @@
 1. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api put-bucket-acl --bucket <ИМЯ_БАКЕТА>  --access-control-policy file://<ИМЯ_ФАЙЛА>.xml --endpoint-url <ENDPOINT_URL>
+   aws s3api put-bucket-acl --bucket <ИМЯ_БАКЕТА>  --access-control-policy file://<ИМЯ_ФАЙЛА>.json --endpoint-url <ENDPOINT_URL>
    ```
    Мұнда:
 
@@ -129,28 +135,27 @@
    `kuber_backup` бакеті үшін ACL орнату командасының мысалы:
 
    ```console
-   aws s3api put-object-acl --output text --no-cli-pager --bucket kuber_backup --access-control-policy file://acl.xml --endpoint-url https://hb.vkcloud-storage.ru
+   aws s3api put-bucket-acl --output text --no-cli-pager --bucket kuber_backup --access-control-policy file://acl.json --endpoint-url https://hb.vkcloud-storage.ru
    ```
-   
-   `friend_project_canonical_id` жобасына оқу (`WRITE`) құқықтарын беру үшін XML форматындағы ACL конфигурация файлының мысалы:
 
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <AccessControlPolicy xmlns="https://<ИМЯ_БАКЕТА>.hb.vkcloud-storage.ru">
-     <Owner>
-       <ID>***Owner-Canonical-User-ID***</ID>
-       <DisplayName>owner-display-name</DisplayName>
-     </Owner>
-     <AccessControlList>
-       <Grant>
-         <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Canonical User">
-           <ID>friend_project_canonical_id</ID>
-           <DisplayName>friend_project@vkcloud-storage.ru</DisplayName>
-         </Grantee>
-         <Permission>WRITE</Permission>
-       </Grant>
-     </AccessControlList>
-   </AccessControlPolicy>
+   `AllUsers` метатобына оқу (`READ`) құқықтарын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
+
+   ```json
+   {
+      "Owner": {
+         "ID": "owner-canonical-id",
+         "DisplayName": "owner-display-name"
+      },
+      "Grants": [
+         {
+            "Grantee": {
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+            },
+            "Permission": "READ"
+         }
+      ]
+   }
    ```
    {/cut}
 
@@ -267,7 +272,7 @@
 1. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api put-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --access-control-policy file://<ИМЯ_ФАЙЛА>.xml --endpoint-url <ENDPOINT_URL>
+   aws s3api put-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --access-control-policy file://<ИМЯ_ФАЙЛА>.json --endpoint-url <ENDPOINT_URL>
    ```
    Мұнда:
 
@@ -292,30 +297,21 @@
    aws s3api put-object-acl --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --access-control-policy file://acl.json --endpoint-url https://hb.vkcloud-storage.ru
    ```
 
-   Пайдаланушыларға толық қолжетімділік (`FULL_CONTROL`) беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
+   Барлық {var(cloud)} жобаларындағы барлық авторизацияланған {var(s3)} пайдаланушыларына оқу (`READ`) құқығын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
 
    ```json
    {
       "Owner": {
-         "DisplayName": "mcs8274534762",
-         "ID": "f2041b20-d081-43a3-a0d9-b73a37eedbc1"
+         "ID": "owner-canonical-id",
+         "DisplayName": "owner-display-name"
       },
       "Grants": [
          {
             "Grantee": {
-               "ID": "f2041b20-d081-43a3-a0d9-b73a37eedbc1",
-               "DisplayName": "mcs8274534762",
-                  "Type": "CanonicalUser"
+                "Type": "Group",
+                "URI": "http://acs.amazonaws.com/groups/global/AuthenticatedUsers"
             },
-            "Permission": "FULL_CONTROL"
-         },
-         {
-            "Grantee": {
-               "ID": "d44e3594-0701-449b-890c-3e23c5d55fb7",
-               "DisplayName": "NAME_OF_USER",
-                  "Type": "CanonicalUser"
-            },
-            "Permission": "FULL_CONTROL"
+            "Permission": "READ"
          }
       ]
    }

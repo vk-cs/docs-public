@@ -55,6 +55,11 @@
 - в параметре `versionId` при запросе API с методами `DeleteObject`, `DeleteMultipleObjects` или командах AWS CLI `delete-object`, `delete-objects`;
 - при {linkto(../instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=удалении]} в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef} с включенной опцией **Показать версии объектов**.
 
+{ifdef(s3-pdf)}
+Сравнение результатов приведено в {linkto(#tab_delete_result_comparison)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_delete_result_comparison]} — Удаление заблокированных объектов)[align=right;position=above;id=tab_delete_result_comparison;number={const(numb_tab_delete_result_comparison)}]}
+{/ifdef}
 [cols="1,2,1,1", options="header"]
 |===
 | Использование идентификатора версии
@@ -72,6 +77,9 @@
 | Только для {linkto(#s3-concepts-object-lock-governance)[text=управляемого режима временной блокировки]} (`GOVERNANCE`)
 | Операция отклоняется, удаление недоступно до истечения срока {linkto(#s3-concepts-object-lock-retention-period)[text=временной блокировки]} или снятия {linkto(#s3-concepts-object-lock-legal-hold)[text=бессрочной блокировки]}
 |===
+{ifdef(s3-pdf)}
+{/caption}
+{/ifdef}
 
 {linkto(../versioning#s3-concepts-versioning-delete-marker)[text=Маркер удаления]} заблокировать нельзя, а при его удалении предыдущая версия объекта становится текущей.
 
