@@ -13,16 +13,20 @@ ACL объекта может назначаться:
 
 В дальнейшем ACL для бакета или объекта можно изменить. ACL бакета и объекта внутри него могут различаться.
 
-ACL имеет вид {linkto(../../../api/acl#api-spec-s3-acl-request-body)[text=файла конфигурации]} в формате XML. Получить текущий ACL бакета или объекта или изменить его можно {linkto(../../../instructions/access-management/acl#s3-instructions-acl)[text=с помощью AWS CLI или API]}.
+Параметры ACL могут быть переданы {linkto(../../../instructions/access-management/acl#s3-instructions-acl)[text=переданы]} через {linkto(../../../api/acl#api-spec-s3-acl-request-body)[text=конфигурацию]} в формате:
+
+- XML, при отправке запроса через API;
+- JSON, если используется AWS CLI.
 
 ## {heading(Получатели прав)[id=s3-concepts-acl-permittees]}
 
 Права доступа к бакетам и объектам могут быть даны следующим категориям получателей:
 
-- Пользователь {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
 - Проект {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
-- Предварительно определенная метагруппа. Например, метагруппа `AuthenticatedUsers`, которая содержит все существующие учетные записи {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
-- Весь мир, включая анонимный доступ. Соответствует метагруппе `AllUsers`. Любой, кто знает полный URL-адрес объекта, будет иметь к нему доступ.
+- Предварительно определенные метагруппы:
+
+    - `AuthenticatedUsers` — все учетные записи {var(s3)} в любом проекте {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
+    - `AllUsers` — любой анонимный пользователь, в том числе не являющийся пользователем {var(s3)}{ifdef(public)} и {var(cloud)}{/ifdef}.
 
 {note:warn}
 Используйте метагруппы только в случае необходимости.
@@ -40,7 +44,7 @@ ACL имеет вид {linkto(../../../api/acl#api-spec-s3-acl-request-body)[tex
 
 {var(s3)} предоставляет предварительно настроенные списки управления доступом — стандартные ACL. Эти списки можно использовать в API-запросах на доступ к бакету, объекту или к их текущим ACL.
 
-Стандартный ACL указывается в запросе с помощью HTTP-заголовка `x-amz-acl`. Можно указать только один стандартный ACL. Когда {var(s3)} получает запрос, содержащий стандартный ACL, он добавляет преднастроенные разрешения в ACL соответствующего бакета или объекта( {ifdef(s3-pdf)}{linkto(#tab_acl)[text=таблице %number]}{/ifdef}).
+Стандартный ACL указывается в запросе с помощью HTTP-заголовка `x-amz-acl`. Можно указать только один стандартный ACL. Когда {var(s3)} получает запрос, содержащий стандартный ACL, он добавляет преднастроенные разрешения в ACL соответствующего бакета или объекта{ifdef(s3-pdf)}({linkto(#tab_acl)[text=таблица %number]}){/ifdef}.
 
 {ifdef(s3-pdf)}
 {caption(Таблица {counter(table)[id=numb_tab_acl]} — Разрешения в ACL)[align=right;position=above;id=tab_acl;number={const(numb_tab_acl)}]}
@@ -61,29 +65,9 @@ ACL имеет вид {linkto(../../../api/acl#api-spec-s3-acl-request-body)[tex
 |Бакет и объект
 |Владелец имеет полные права (`FULL_CONTROL`). Метагруппа `AllUsers` имеет доступ на чтение (`READ`)
 
-|`public-read-write`
-|Бакет и объект
-|Владелец имеет полные права (`FULL_CONTROL`). Метагруппа `AllUsers` имеет права на чтение (`READ`) и запись (`WRITE`).
-
-Не рекомендуется использовать этот ACL для бакета
-
-|`aws-exec-read`
-|Бакет и объект
-|Владелец имеет полные права (`FULL_CONTROL`)
-
 |`authenticated-read`
 |Бакет и объект
 |Владелец имеет полные права (`FULL_CONTROL`). Метагруппа `AuthenticatedUsers` имеет права на чтение (`READ`)
-
-|`bucket-owner-read`
-|Объект
-|Владелец объекта имеет полные права (`FULL_CONTROL`). Владелец бакета имеет права на чтение (`READ`).
-
-Если указать этот стандартный ACL при создании бакета, {var(s3)} проигнорирует его
-
-|`bucket-owner-full-control`
-|Объект
-|Владелец объекта и владелец бакета имеют полные права (`FULL_CONTROL`) на объект.
 
 Если указать этот стандартный ACL при создании бакета, {var(s3)} проигнорирует его
 |===
