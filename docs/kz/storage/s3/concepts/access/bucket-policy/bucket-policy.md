@@ -6,7 +6,7 @@ _Қолжетімділік саясаты (bucket policy)_ — {linkto(../../ab
 
 Қолжетімділік саясатын және ACL-ді бірге пайдалану `OwnershipControls` бакет параметрімен реттеледі, оның екі режимі бар:
 - `BucketOwnerEnforced` — тек қолжетімділік саясаты қолданылады, ACL қолданылмайды (өшірілген). Құқықтарды бір жерде икемді басқарудың ұсынылатын тәсілі.
-- `BucketOwnerPreferred` — алдымен саясат бойынша қолжетімділік тексеріледі, содан кейін ACL тексеріледі. Мысалы, кері үйлесімділікті сақтау қажет болған жағдайда қолданылуы мүмкін.
+- `BucketOwnerPreferred` — алдымен саясат бойынша қолжетімділік тексеріледі, содан кейін ACL тексеріледі. Мысалы, кері үйлесімділікті сақтау қажет болған жағдайда қолданылуы мүмкін. Әдепкі түрде қосылған.
 
 `BucketOwnerPreferred` қолдану қолжетімділік саясаты мен ACL арасында қақтығыстар тудыруы мүмкін. Мүмкін болса, бакет баптауларында ACL-ді {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-acl-enable-and-disable)[text=өшіру]} ұсынылады, содан кейін `OwnershipControls` режимі `BucketOwnerEnforced` мәніне өзгертіледі.
 
@@ -218,25 +218,29 @@ JSON файлының құрылымы:
 
 ## {heading(Рұқсат беру және тыйым салу)[id=s3-concepts-bucket-policy-effect]}
 
-Қолжетімділік саясатының барлық ережелері үшін `Effect` параметрінде әрекетті орындауға айқын рұқсат (`Allow`) немесе тыйым (`Deny`) көрсетіледі.
+{linkto(#s3-concepts-bucket-policy-actions)[text=Әрекеттерге]} рұқсат (`Allow`) немесе тыйым (`Deny`) жасырын (implicit) және ашық (explicit) түрде қолданылуы мүмкін.
+- Жасырын рұқсат (implicit allow): {var(s3)} автоматты түрде орнатылады және барлық ішкі {linkto(#s3-concepts-bucket-policy-principal)[text=принципалдарға]} әдепкі түрде қолданылады.
+- Жасырын тыйым (implicit deny): {var(s3)} автоматты түрде орнатылады және барлық сыртқы {linkto(#s3-concepts-bucket-policy-principal)[text=принципалдарға]} әдепкі түрде қолданылады.
+- Ашық рұқсат (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
 
-[cols="1,1",frame="none",grid="none"]
-|===
-|```json
-...
-"Effect": "Allow"
-...
-```
+    ```json
+    ...
+    "Effect": "Allow"
+    ...
+    ```
 
-|```json
-...
-"Effect": "Deny"
-...
-```
+- Ашық тыйым (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
 
-|===
+    ```json
+    ...
+    "Effect": "Deny"
+    ...
+    ```
 
-Егер қандай да бір әрекет үшін сәйкес ереже болмаса, әдепкі бойынша айқын тыйым (`Deny`) қолданылады.
+Сәйкесінше:
+
+- ішкі принципалдарға әдепкі түрде барлық әрекеттер рұқсат етіледі (implicit allow), ал қол жеткізу ашық тыйымдар (explicit deny) арқылы шектеледі.
+- сыртқы принципалдарға әдепкі түрде барлық әрекеттер тыйым салынады (implicit deny), ал қол жеткізу ашық рұқсаттар (explicit allow) арқылы кеңейтіледі.
 
 ## {heading(Принципалдар)[id=s3-concepts-bucket-policy-principal]}
 
@@ -421,7 +425,7 @@ JSON файлының құрылымы:
 
 ## {heading(Конфигурация мысалдары)[id=s3-concepts-bucket-policy-examples]}
 
-- Объектілерді тек көрсетілген IP-адрестер диапазонынан жүктеп алуға рұқсат беру:
+- Анонимды қолданушыларға (сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]}) тек көрсетілген IP-адрес ауқымынан объекттерді жүктеп алуға рұқсат ету:
 
   ```json
   {
@@ -435,7 +439,7 @@ JSON файлының құрылымы:
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
           "IpAddress": {
-            "aws:SourceIp": ["203.0.113.0/24", "2001:db8:1234::/48"]
+            "aws:SourceIp": ["203.0.113.0/24", "198.51.100.0/24"]
           }
         }
       }
@@ -443,7 +447,7 @@ JSON файлының құрылымы:
   }
   ```
 
-- Көрсетілген IP-адрестен объектілерді жүктеп алуға тыйым салу:
+- Белгілі бір IP-адресінен объекттерді жүктеп алуға белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) тыйым салу:
 
   ```json
   {
@@ -452,7 +456,9 @@ JSON файлының құрылымы:
       {
         "Sid": "DenyGetFromSingleIP",
         "Effect": "Deny",
-        "Principal": "*",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
         "Action": "s3:GetObject",
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
@@ -465,7 +471,7 @@ JSON файлының құрылымы:
   }
   ```
 
-- Әртүрлі пайдаланушыларға белгілі бір бумаларға толық қолжетімділік беру:
+- Белгілі бір префиксі бар объекттерге белгілі бір қолданушыларға (басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]}) толық қол жеткізуді рұқсат ету:
 
   ```json
   {
@@ -475,7 +481,7 @@ JSON файлының құрылымы:
         "Sid": "UserAFullAccessToFolderA",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::mcs1234567890:user/user-a"
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
         },
         "Action": [
           "s3:GetObject",
@@ -496,7 +502,7 @@ JSON файлының құрылымы:
         "Sid": "UserBFullAccessToFolderB",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::mcs1234567890:user/user-b"
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-b"
         },
         "Action": [
           "s3:GetObject",
@@ -517,7 +523,7 @@ JSON файлының құрылымы:
   }
   ```
 
-- Әрбір пайдаланушыға немесе сервистік аккаунтқа бумаға толық қолжетімділік беру:
+- Белгілі бір префиксі бар объекттерге пайдаланушыларға немесе қызметтік есептік жазбаларға (басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]}) толық қол жеткізуді беру:
 
   ```json
   {
@@ -527,7 +533,7 @@ JSON файлының құрылымы:
         "Sid": "ProjectFullAccessToSharedFolder",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "mcs1234567890"
+          "AWS": "mcs9876543210"
         },
         "Action": [
           "s3:GetObject",
@@ -548,7 +554,7 @@ JSON файлының құрылымы:
   }
   ```
 
-- Жазу шарттарын міндетті түрде қолдану талап етілетін жағдайда ғана объектілерді жазуға рұқсат беру:
+- Пайдаланушыларға немесе қызметтік есептік жазбаларға (басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]}) тек белгілі бір IP-адресінен объекттерді жазуға рұқсат ету:
 
   ```json
   {
@@ -558,13 +564,324 @@ JSON файлының құрылымы:
         "Sid": "AllowPutOnlyFromCIDR",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "mcs1234567890"
+          "AWS": "mcs9876543210"
         },
         "Action": "s3:PutObject",
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
           "IpAddress": {
             "aws:SourceIp": ["203.0.113.0/24"]
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) кез келген объекттерді жүктеп алуға тыйым салу және осы тыйымды айналып өтуге мүмкіндік бермеу:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyDownloadObjectAndVersions",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
+        "Action": [
+          "s3:GetObject",
+          "s3:GetObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+  
+      {
+        "Sid": "DenyBypassPrevention",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
+        "Action": [
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) кез келген объекттерді жоюға тыйым салу және осы тыйымды айналып өтуге мүмкіндік бермеу:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyDeleteObjectAndVersions",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:DeleteObject",
+          "s3:DeleteObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+      
+      {
+        "Sid": "DenyBypassPreventionObject",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObject"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+
+      {
+        "Sid": "DenyBypassPreventionBucket",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutLifecycleConfiguration",
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy",
+          "s3:PutBucketVersioning" 
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) сұралған мерзімі 10 күннен аспаса, объекттердің сақталу мерзімін орнатуға немесе өзгертуге рұқсат ету:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowShortRetention",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
+        },
+        "Action": [
+          "s3:PutObjectRetention"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"],
+        "Condition": {
+          "NumericLessThan": {
+            "s3:object-lock-remaining-retention-days": 11
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) бакетке толық қол жеткізуді толықтай тыйым салу:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ExplicitDenyInternalUser",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": "s3:*",
+        "Resource": [
+          "arn:aws:s3:::my-bucket",
+          "arn:aws:s3:::my-bucket/*"
+        ]
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) тек бакеттің нұсқаларының (тарихының) тізімін көруге рұқсат ету:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowExternalUserListBucket",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
+        },
+        "Action": [
+          "s3:ListBucket",
+          "s3:ListBucketVersions",
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір бакетке, объектіге немесе префикске сыртқы және ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]} арналған ережелер жиынтығын орнату:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Анонимды қолданушыларға list-object рұқсат ету",
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "s3:ListBucket",
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Ішкі user-internal-a қолданушысына my-object-1 объектісін көруді, өңдеуді және жоюды тыйым салу",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:GetObject",
+          "s3:GetObjectVersion",
+          "s3:PutObject",
+          "s3:DeleteObject",
+          "s3:DeleteObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/my-object-1"]
+      },
+      {
+        "Sid": "Ішкі user-internal-a қолданушысына бакеттің және оның объекттерінің өмірлік циклі ережелерін өзгертуге тыйым салу",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutLifecycleConfiguration"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Ішкі user-internal-a қолданушысына my-bucket бакетінің саясатын өзгертуге және жоюға тыйым салу",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Басқа mcs9876543210 жобасынан сыртқы қолданушыларға 'directory' префиксі бар объекттерді алу үшін list-bucket рұқсат ету",
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "mcs9876543210"
+        },
+        "Action": [
+          "s3:ListBucket"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Басқа mcs9876543210 жобасынан сыртқы қолданушыларға 'directory' префиксі бар объекттерді алуға рұқсат ету",
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "mcs9876543210"
+        },
+        "Action": [
+          "s3:GetObject"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/directory/*"]
+      }     
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) объектілердің мерзімсіз бұғатталуын қосылған жағдайда өзгертуге тыйым салу:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyPutLegalHold",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObjectLegalHold"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"],
+        "Condition": {
+          "StringEquals": {
+            "s3:object-lock-legal-hold": "ON"
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Белгілі бір қолданушыға (ішкі {linkto(#s3-concepts-bucket-policy-effect)[text=принципалға]}) `GOVERNANCE` режимі орнатылған объектілердің уақытша бұғатталуын өзгертуге тыйым салу:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyPutObjectRetention",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObjectRetention",
+          "s3:BypassGovernanceRetention"
+        ],
+        "Resource": ["arn:aws:s3:::test-bucket-1/*"],
+        "Condition": {
+          "StringEquals": {
+            "s3:object-lock-mode": "COMPLIANCE"
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Басқа `mcs9876543210` жобасынан сыртқы {linkto(#s3-concepts-bucket-policy-effect)[text=принципалдарға]} объектілердің сақталу мерзімін сұралған `2026-09-17` күніне орнатуға рұқсат ету:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ExplicitAllowForExternalPrincipals",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "mcs9876543210" 
+        },
+        "Action": [
+          "s3:PutObjectRetention",
+          "s3:BypassGovernanceRetention"
+        ],
+        "Resource": ["arn:aws:s3:::test-bucket-1/*"],
+        "Condition": {
+          "DateEquals": {
+            "s3:object-lock-retain-until-date": "2026-09-17T00:00:00Z"
           }
         }
       }

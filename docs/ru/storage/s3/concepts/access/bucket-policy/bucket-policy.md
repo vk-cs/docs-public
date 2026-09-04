@@ -4,7 +4,7 @@ _Политика доступа (bucket policy)_ — способ управл�
 
 Совместное использование политики доступа и ACL регулируется параметром бакета `OwnershipControls`, который имеет два режима:
 - `BucketOwnerEnforced` — используется только политика доступа, ACL не используется (отключен). Рекомендуемый способ для гибкого управления правами в одном месте.
-- `BucketOwnerPreferred` — сначала проверяется доступ по политике, затем проверяется ACL. Может использоваться в случае, например, сохранения обратной совместимости.
+- `BucketOwnerPreferred` — сначала проверяется доступ по политике, затем проверяется ACL. Может использоваться в случае, например, сохранения обратной совместимости. Включен по умолчанию.
 
 Использование `BucketOwnerPreferred` может вызывать конфликты между политикой доступа и ACL. По возможности рекомендуется {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-acl-enable-and-disable)[text=отключить]} ACL в настройках бакета, после чего режим `OwnershipControls` будет изменен на `BucketOwnerEnforced`.
 
@@ -216,25 +216,29 @@ _Политика доступа (bucket policy)_ — способ управл�
 
 ## {heading(Разрешение и запрет)[id=s3-concepts-bucket-policy-effect]}
 
-Ко всем правилам политики доступа в параметре `Effect` указывается явное разрешение (`Allow`) или запрет (`Deny`) выполнения действия.
+Ко всем {linkto(#s3-concepts-bucket-policy-actions)[text=действиям]} может быть применено разрешение (`Allow`) или запрет (`Deny`) в неявном (impicit) и явном (explicit) виде.
+- Неявное разрешение (impicit allow): задается автоматически {var(s3)} и применяется по умолчанию для всех внутренних {linkto(#s3-concepts-bucket-policy-principal)[text=принципалов]}.
+- Неявный запрет (impicit deny): задается автоматически {var(s3)} и применяется по умолчанию для всех внешних {linkto(#s3-concepts-bucket-policy-principal)[text=принципалов]}.
+- Явное разрешение (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
 
-[cols="1,1",frame="none",grid="none"]
-|===
-|```json
-...
-"Effect": "Allow"
-...
-```
+    ```json
+    ...
+    "Effect": "Allow"
+    ...
+    ```
 
-|```json
-...
-"Effect": "Deny"
-...
-```
+- Явный запрет (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
 
-|===
+    ```json
+    ...
+    "Effect": "Deny"
+    ...
+    ```
 
-Если для какого-то действия нет подходящего правила, по умолчанию используется явный запрет (`Deny`).
+Соответственно:
+
+- внутренним принципалам по умолчанию разрешены все действия (impicit allow), а доступ ограничивается явными запретами (explicit deny).
+- внешним принципалам: по умолчанию запрещены все действия (impicit deny), а доступ расширяется за счет явных разрешений (explicit allow).
 
 ## {heading(Принципалы)[id=s3-concepts-bucket-policy-principal]}
 
@@ -419,7 +423,7 @@ _Политика доступа (bucket policy)_ — способ управл�
 
 ## {heading(Примеры конфигурации)[id=s3-concepts-bucket-policy-examples]}
 
-- Разрешить скачивать объекты только из указанного диапазона IP-адресов:
+- Разрешить скачивать объекты только из указанного диапазона IP-адресов анонимным пользователям (внешним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]}):
 
   ```json
   {
@@ -433,7 +437,7 @@ _Политика доступа (bucket policy)_ — способ управл�
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
           "IpAddress": {
-            "aws:SourceIp": ["203.0.113.0/24", "2001:db8:1234::/48"]
+            "aws:SourceIp": ["203.0.113.0/24", "198.51.100.0/24"]
           }
         }
       }
@@ -441,7 +445,7 @@ _Политика доступа (bucket policy)_ — способ управл�
   }
   ```
 
-- Запретить скачивать объекты с указанного IP-адреса:
+- Запретить скачивать объекты с указанного IP-адреса определеннному пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}):
 
   ```json
   {
@@ -450,7 +454,9 @@ _Политика доступа (bucket policy)_ — способ управл�
       {
         "Sid": "DenyGetFromSingleIP",
         "Effect": "Deny",
-        "Principal": "*",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
         "Action": "s3:GetObject",
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
@@ -463,7 +469,7 @@ _Политика доступа (bucket policy)_ — способ управл�
   }
   ```
 
-- Предоставить разным пользователям полный доступ к определенным папкам:
+- Разрешить некоторым пользователям (внешним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]} из другого проекта `mcs9876543210`) полный доступ к объектам с определенным префиксом:
 
   ```json
   {
@@ -473,7 +479,7 @@ _Политика доступа (bucket policy)_ — способ управл�
         "Sid": "UserAFullAccessToFolderA",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::mcs1234567890:user/user-a"
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
         },
         "Action": [
           "s3:GetObject",
@@ -494,7 +500,7 @@ _Политика доступа (bucket policy)_ — способ управл�
         "Sid": "UserBFullAccessToFolderB",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "arn:aws:iam::mcs1234567890:user/user-b"
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-b"
         },
         "Action": [
           "s3:GetObject",
@@ -515,7 +521,7 @@ _Политика доступа (bucket policy)_ — способ управл�
   }
   ```
 
-- Предоставить каждому пользователю или сервисному аккаунту полный доступ к папке:
+- Предоставить пользователям или сервисным аккаунтам (внешним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]} из другого проекта `mcs9876543210`) полный доступ к объектам с определенным префиксом:
 
   ```json
   {
@@ -525,7 +531,7 @@ _Политика доступа (bucket policy)_ — способ управл�
         "Sid": "ProjectFullAccessToSharedFolder",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "mcs1234567890"
+          "AWS": "mcs9876543210"
         },
         "Action": [
           "s3:GetObject",
@@ -546,7 +552,7 @@ _Политика доступа (bucket policy)_ — способ управл�
   }
   ```
 
-- Разрешить запись объектов только с обязательным использованием условий записи:
+- Разрешить пользователям или сервисным аккаунтам (внешним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]} из другого проекта `mcs9876543210`) запись объектов только с определенных IP-адресов:
 
   ```json
   {
@@ -556,13 +562,324 @@ _Политика доступа (bucket policy)_ — способ управл�
         "Sid": "AllowPutOnlyFromCIDR",
         "Effect": "Allow",
         "Principal": {
-          "AWS": "mcs1234567890"
+          "AWS": "mcs9876543210"
         },
         "Action": "s3:PutObject",
         "Resource": ["arn:aws:s3:::my-bucket/*"],
         "Condition": {
           "IpAddress": {
             "aws:SourceIp": ["203.0.113.0/24"]
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Запретить скачивать любые объекты и предотвратить обход данного запрета определенному пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}):
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyDownloadObjectAndVersions",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
+        "Action": [
+          "s3:GetObject",
+          "s3:GetObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+  
+      {
+        "Sid": "DenyBypassPrevention",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-b"
+        },
+        "Action": [
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Запретить удалять любые объекты и предотвратить обход данного запрета определенному пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}):
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyDeleteObjectAndVersions",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:DeleteObject",
+          "s3:DeleteObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+      
+      {
+        "Sid": "DenyBypassPreventionObject",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObject"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"]
+      },
+
+      {
+        "Sid": "DenyBypassPreventionBucket",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutLifecycleConfiguration",
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy",
+          "s3:PutBucketVersioning" 
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Разрешить устанавливать или изменять срок блокировки объектов определенному пользователю (внешнему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]} из другого проекта `mcs9876543210`), если запрашиваемый срок не более 10 дней:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowShortRetention",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
+        },
+        "Action": [
+          "s3:PutObjectRetention"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"],
+        "Condition": {
+          "NumericLessThan": {
+            "s3:object-lock-remaining-retention-days": 11
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Полностью запретить пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}) доступ к бакету:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ExplicitDenyInternalUser",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": "s3:*",
+        "Resource": [
+          "arn:aws:s3:::my-bucket",
+          "arn:aws:s3:::my-bucket/*"
+        ]
+      }
+    ]
+  }
+  ```
+
+- Разрешить пользователю (внешнему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]} из другого проекта `mcs9876543210`) только просмотр списка версий (истории) самого бакета:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "AllowExternalUserListBucket",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs9876543210:user/user-external-a"
+        },
+        "Action": [
+          "s3:ListBucket",
+          "s3:ListBucketVersions",
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      }
+    ]
+  }
+  ```
+
+- Установить набор правил для определенного бакета, объекта, префикса внешним и внутренним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]}:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "Разрешить list-object анонимным пользователям",
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "s3:ListBucket",
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Запретить просмотр, редактирование, удаление объекта my-object-1 внутреннему пользователю user-internal-a",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:GetObject",
+          "s3:GetObjectVersion",
+          "s3:PutObject",
+          "s3:DeleteObject",
+          "s3:DeleteObjectVersion"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/my-object-1"]
+      },
+      {
+        "Sid": "Запретить изменение правил жизненного цикла бакета и его объектов внутреннему пользователю user-internal-a",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutLifecycleConfiguration"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Запретить изменение и удаление политики бакета my-bucket внутреннему пользователю user-internal-a",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutBucketPolicy",
+          "s3:DeleteBucketPolicy"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Разрешить list-bucket для get-object объектов только с префиксом 'directory' внешним пользователям из другого проекта mcs9876543210",
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "mcs9876543210"
+        },
+        "Action": [
+          "s3:ListBucket"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket"]
+      },
+      {
+        "Sid": "Разрешить get-object объектов только с префиксом 'directory' внешним пользователям из другого проекта mcs9876543210",
+        "Effect": "Allow",
+        "Principal": {
+            "AWS": "mcs9876543210"
+        },
+        "Action": [
+          "s3:GetObject"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/directory/*"]
+      }     
+    ]
+  }
+  ```
+
+- Запретить определенному пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}) изменение бессрочной блокировки объектов, если она включена:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyPutLegalHold",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObjectLegalHold"
+        ],
+        "Resource": ["arn:aws:s3:::my-bucket/*"],
+        "Condition": {
+          "StringEquals": {
+            "s3:object-lock-legal-hold": "ON"
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Запретить определенному пользователю (внутреннему {linkto(#s3-concepts-bucket-policy-effect)[text=принципалу]}) изменение временной блокировки объектов, где установлен режим `GOVERNANCE`:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyPutObjectRetention",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "arn:aws:iam::mcs1234567890:user/user-internal-a"
+        },
+        "Action": [
+          "s3:PutObjectRetention",
+          "s3:BypassGovernanceRetention"
+        ],
+        "Resource": ["arn:aws:s3:::test-bucket-1/*"],
+        "Condition": {
+          "StringEquals": {
+            "s3:object-lock-mode": "COMPLIANCE"
+          }
+        }
+      }
+    ]
+  }
+  ```
+
+- Разрешить устанавливать срок хранения объектов пользователям (внешним {linkto(#s3-concepts-bucket-policy-effect)[text=принципалам]} из другого проекта `mcs9876543210`), если запрашиваемая дата `2026-09-17`:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ExplicitAllowForExternalPrincipals",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "mcs9876543210" 
+        },
+        "Action": [
+          "s3:PutObjectRetention",
+          "s3:BypassGovernanceRetention"
+        ],
+        "Resource": ["arn:aws:s3:::test-bucket-1/*"],
+        "Condition": {
+          "DateEquals": {
+            "s3:object-lock-retain-until-date": "2026-09-17T00:00:00Z"
           }
         }
       }
