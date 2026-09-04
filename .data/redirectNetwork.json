@@ -14545,97 +14545,97 @@
   },
   {
     "source": "/en/manage/cloud-desktops",
-    "destination": "/en/computing/cloud-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/quick-start",
-    "destination": "/en/computing/cloud-desktops/quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts",
-    "destination": "/en/computing/cloud-desktops/concepts",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts/overview",
-    "destination": "/en/computing/cloud-desktops/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts/vdi-reference",
-    "destination": "/en/computing/cloud-desktops/concepts/glossary",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions",
-    "destination": "/en/computing/cloud-desktops/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/config",
-    "destination": "/en/computing/cloud-desktops/instructions/config",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/manage-desktops",
-    "destination": "/en/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/delete-vdi",
-    "destination": "/en/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/use-cases",
-    "destination": "/en/computing/cloud-desktops/how-to-guides",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/use-cases/ipsec",
-    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/tariffication",
-    "destination": "/en/computing/cloud-desktops/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/faq",
-    "destination": "/en/computing/cloud-desktops/faq",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -17071,109 +17071,109 @@
   },
   {
     "source": "/ru/manage/cloud-desktops",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/quick-start",
-    "destination": "/ru/computing/cloud-desktops/quick-start",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts",
-    "destination": "/ru/computing/cloud-desktops/concepts",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/overview",
-    "destination": "/ru/computing/cloud-desktops/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/vdi-reference",
-    "destination": "/ru/computing/cloud-desktops/concepts/nets-config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/desktop-image",
-    "destination": "/ru/computing/cloud-desktops/concepts/desktop-image",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions",
-    "destination": "/ru/computing/cloud-desktops/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/config",
-    "destination": "/ru/computing/cloud-desktops/instructions/config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/manage-desktops",
-    "destination": "/ru/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/delete-vdi",
-    "destination": "/ru/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases/ipsec",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/tariffication",
-    "destination": "/ru/computing/cloud-desktops/tariffication",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/faq",
-    "destination": "/ru/computing/cloud-desktops/faq",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -19543,139 +19543,139 @@
   },
   {
     "source": "/en/base/cloud-desktops/concepts/overview",
-    "destination": "/en/computing/cloud-desktops/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts/vdi-reference",
-    "destination": "/en/computing/cloud-desktops/concepts/glossary",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions",
-    "destination": "/en/computing/cloud-desktops/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/config",
-    "destination": "/en/computing/cloud-desktops/instructions/config",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/manage-desktops",
-    "destination": "/en/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/delete-vdi",
-    "destination": "/en/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/use-cases",
-    "destination": "/en/computing/cloud-desktops/how-to-guides",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/use-cases/ipsec",
-    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/overview",
-    "destination": "/ru/computing/cloud-desktops/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/vdi-reference",
-    "destination": "/ru/computing/cloud-desktops/concepts/nets-config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions",
-    "destination": "/ru/computing/cloud-desktops/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/config",
-    "destination": "/ru/computing/cloud-desktops/instructions/config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/manage-desktops",
-    "destination": "/ru/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/delete-vdi",
-    "destination": "/ru/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases/ipsec",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -19855,7 +19855,7 @@
   },
   {
     "source": "/ru/additionals/api/vdi-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -25339,109 +25339,109 @@
   },
   {
     "source": "/en/base/cloud-desktops",
-    "destination": "/en/computing/cloud-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/quick-start",
-    "destination": "/en/computing/cloud-desktops/quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts",
-    "destination": "/en/computing/cloud-desktops/concepts",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts/about",
-    "destination": "/en/computing/cloud-desktops/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts/glossary",
-    "destination": "/en/computing/cloud-desktops/concepts/glossary",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts/desktop-image",
-    "destination": "/en/computing/cloud-desktops/concepts/desktop-image",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management",
-    "destination": "/en/computing/cloud-desktops/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/config",
-    "destination": "/en/computing/cloud-desktops/instructions/config",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/desktops-pool",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/desktops-pool/add",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/desktops-pool/manage",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/manage-desktops",
-    "destination": "/en/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/service-management/delete-vdi",
-    "destination": "/en/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/how-to-guides",
-    "destination": "/en/computing/cloud-desktops/how-to-guides",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/how-to-guides/ipsec",
-    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/en/computing/cloud-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/tariffication",
-    "destination": "/en/computing/cloud-desktops/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/faq",
-    "destination": "/en/computing/cloud-desktops/faq",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -25861,109 +25861,109 @@
   },
   {
     "source": "/ru/base/cloud-desktops",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/quick-start",
-    "destination": "/ru/computing/cloud-desktops/quick-start",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts",
-    "destination": "/ru/computing/cloud-desktops/concepts",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/about",
-    "destination": "/ru/computing/cloud-desktops/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/glossary",
-    "destination": "/ru/computing/cloud-desktops/concepts/nets-config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/desktop-image",
-    "destination": "/ru/computing/cloud-desktops/concepts/desktop-image",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management",
-    "destination": "/ru/computing/cloud-desktops/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/config",
-    "destination": "/ru/computing/cloud-desktops/instructions/config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/desktops-pool",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/desktops-pool/add",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/desktops-pool/manage",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/manage-desktops",
-    "destination": "/ru/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/service-management/delete-vdi",
-    "destination": "/ru/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/how-to-guides",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/how-to-guides/ipsec",
-    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/tariffication",
-    "destination": "/ru/computing/cloud-desktops/tariffication",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/faq",
-    "destination": "/ru/computing/cloud-desktops/faq",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -27943,79 +27943,79 @@
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/config/setup-provider",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/concepts/glossary",
-    "destination": "/ru/computing/cloud-desktops/concepts/nets-config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management",
-    "destination": "/ru/computing/cloud-desktops/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/config",
-    "destination": "/ru/computing/cloud-desktops/instructions/config",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/config/setup-net",
-    "destination": "/ru/computing/cloud-desktops/instructions/config/setup-net",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/config/setup-ldap",
-    "destination": "/ru/computing/cloud-desktops/instructions/config/setup-ldap",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/config/setup-saml",
-    "destination": "/ru/computing/cloud-desktops/instructions/config/setup-saml",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/group-policies",
-    "destination": "/ru/computing/cloud-desktops/instructions/group-policies",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/desktops-pool",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
-    "destination": "/ru/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/manage-desktops",
-    "destination": "/ru/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/computing/cloud-desktops/service-management/delete-vdi",
-    "destination": "/ru/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -30583,67 +30583,67 @@
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/config/setup-provider",
-    "destination": "/en/computing/cloud-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management",
-    "destination": "/en/computing/cloud-desktops/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/config",
-    "destination": "/en/computing/cloud-desktops/instructions/config",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/config/setup-net",
-    "destination": "/en/computing/cloud-desktops/instructions/config/setup-net",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/config/setup-ldap",
-    "destination": "/en/computing/cloud-desktops/instructions/config/setup-ldap",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/config/setup-saml",
-    "destination": "/en/computing/cloud-desktops/instructions/config/setup-saml",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/desktops-pool",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
-    "destination": "/en/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/manage-desktops",
-    "destination": "/en/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/service-management/delete-vdi",
-    "destination": "/en/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -32689,13 +32689,13 @@
   },
   {
     "source": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
-    "destination": "/en/computing/cloud-desktops",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -34118,6 +34118,402 @@
   {
     "source": "/ru/start/legal/vk/cloud-start",
     "destination": "/ru/start/legal/loyalty-programs/cloud-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/gpu/how-to-guides/vdi-with-gpu",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/quick-start",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/about",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/iam-access",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/nets-config",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/work-modes",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/system-reqs",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/desktop-image",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/concepts/bandwidth",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/config",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/config/setup-net",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/config/setup-ldap",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/config/setup-saml",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/config/ssl-certificates",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/group-policies",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/user-instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/user-instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/user-instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/user-instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/user-instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/how-to-guides",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/how-to-guides/keycloak",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/tariffication",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/troubleshooting",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/troubleshooting/desktop-creation-diagnostics",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/computing/cloud-desktops/faq",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/how-to-guides/integration",
+    "destination": "/ru/storage/s3/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/gpu/how-to-guides/vdi-with-gpu",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/concepts",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/concepts/about",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/concepts/glossary",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/concepts/desktop-image",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/concepts/bandwidth",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/config",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/config/setup-net",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/config/setup-ldap",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/config/setup-saml",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/desktops-pool",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/desktops-pool/add",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/desktops-pool/manage",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/manage-desktops",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/instructions/delete-vdi",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/how-to-guides",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/how-to-guides/keycloak",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/tariffication",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/faq",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/troubleshooting",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/computing/cloud-desktops/troubleshooting/desktop-creation-diagnostics",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }
