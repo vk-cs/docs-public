@@ -4,7 +4,7 @@
       "metaDescription": "Как CDN-серверы взаимодействуют с источниками из группы.",
     "sectionTitle": "Группы источников",
     "icon": "",
-    "weight": 3,
+    "weight": 4,
     "build": {
     "for": [
       "public"

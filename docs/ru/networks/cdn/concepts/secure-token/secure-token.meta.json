@@ -4,7 +4,7 @@
   "metaDescription": "CDN VK Cloud: обзор особенностей технологии Secure token для организации ограниченного, временного, платного доступа к контенту CDN-ресурса.",
   "sectionTitle": "Secure token",
   "icon": "",
-  "weight": 4,
+  "weight": 5,
   "build": {
     "for": [
       "public"
