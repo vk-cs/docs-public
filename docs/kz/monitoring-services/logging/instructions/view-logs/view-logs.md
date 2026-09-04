@@ -62,7 +62,6 @@
     - `default` — өзіне байланыстырылған сервистері жоқ және тестілеу мен жөндеуге арналған идентификатор.
     - `containers` — Cloud Containers.
     - `databases` — Cloud Databases.
-    - `vdi` — Cloud Desktop.
     - `mlplatform` — Cloud ML Platform.
 
     {/tab}

@@ -91,7 +91,6 @@ Cloud Logging сервисі үшін генерацияланған аккау�
 
 * `databases` — Cloud Databases сервисі.
 * `containers` — Cloud Containers сервисі.
-* `vdi` — Cloud Desktop сервисі.
 
 Көрсетілмесе, `default` мәні беріледі.
 

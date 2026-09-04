@@ -12,11 +12,7 @@
   ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf"
+      "dontbuild"
     ]
   },
   "uuid": "1cda2743-77e3-4d21-8547-027501422c70"

@@ -12,11 +12,7 @@
   ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf"
+      "dontbuild"
     ]
   }
 }
