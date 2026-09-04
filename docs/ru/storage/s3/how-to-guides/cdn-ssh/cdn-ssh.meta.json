@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание Astro-сайта на объектном хранилище с CDN",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "ca1b92d3-597b-46af-b4f3-53089212b6a3",
   "build": {
     "for": [
       "public"
