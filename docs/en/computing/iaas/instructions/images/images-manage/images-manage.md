@@ -166,11 +166,11 @@ By default, all images have the `private` status. To share an image with other p
 
    - **My Projects**: allows you to share the image with projects in which you are the owner.
 
-      If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
+      If you select this type, in the **Project ID** box, select the [unique project identifier (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) of the `mcsNNNNNNNNNN` type from the list. Multiple projects can be added.
 
    - **Other projects**: allows you to share the image with all other projects.
 
-   If you select this type, in the **OpenStack Project ID** box, specify the [Project ID](https://cloud.vk.com/docs/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id) of the `exampled4ef0547e5b222f445` form, it does not match the unique identifier of the project. Multiple projects can be added.   
+   If you select this type, in the **OpenStack Project ID** box, specify the [Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id) of the `exampled4ef0547e5b222f445` form, it does not match the unique identifier of the project. Multiple projects can be added.
 
 1. Click the **Allow access** button.
 

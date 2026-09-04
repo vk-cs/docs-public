@@ -8,7 +8,7 @@
   "uuid": "ed9397f7-752b-49ce-be70-93481e256c9b",
   "build": {
     "for": [
-      "public"
+      "dontbuild"
     ]
   }
 }

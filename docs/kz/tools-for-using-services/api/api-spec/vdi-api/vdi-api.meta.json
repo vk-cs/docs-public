@@ -7,7 +7,7 @@
   "weight": 15,
   "build": {
     "for": [
-      "public"
+      "dontbuild"
     ]
   },
   "uuid": "5895c5a8-4c85-4064-9639-a9b6c7d2ab1d"

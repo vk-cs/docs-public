@@ -93,13 +93,12 @@
 | ![](../../../../assets/check.svg "inline")
 | Адрес сервиса Cloud Logging (`cloudlogs.mcs.mail.ru:443`)
 
-| `service_id` 
+| `service_id`
 | ![](../../../../assets/no.svg "inline")
 | Идентификатор сервиса в системе логирования:
 
 - `databases` — сервис Cloud Databases.
 - `containers` — сервис Cloud Containers.
-- `vdi` — сервис Cloud Desktop.
 
 Если не указан, будет присвоено значение `default`.
 
