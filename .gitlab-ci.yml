@@ -6,7 +6,7 @@ include:
 
 variables:
   # pipeline parameters
-  VKCS_D11N_VERSION: '5.5.5'
+  VKCS_D11N_VERSION: '5.5.15'
   VKCS_DEV_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
