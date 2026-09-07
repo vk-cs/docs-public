@@ -1,0 +1,14 @@
+{
+  "title": "Подключение к кластеру с помощью Headlamp",
+  "shortDescription": "",
+  "metaDescription": "Настройка графического интерфейса Headlamp для управления кластерами Kubernetes в Managed Containers: режимы работы, способы установки и подключения",
+  "sectionTitle": "Подключение к кластеру с помощью Headlamp",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

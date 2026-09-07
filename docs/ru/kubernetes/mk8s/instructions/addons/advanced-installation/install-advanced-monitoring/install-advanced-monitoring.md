@@ -256,7 +256,16 @@ grafana:
 
 {tabs}
 
-<!--  удалена таба Kubernetes Dashboard. для Headlamp: забрать шаги и k8s с заменой на Headlamp или удалить -->
+{tab(Headlamp)}
+
+1. {linkto(../../../../connect/headlamp#mk8s-headlamp)[text=Подключитесь к кластеру]} с помощью Headlamp, если он установлен.
+1. Перейдите в раздел меню **Конфигурация → Секреты**.
+1. Найдите в списке секретов `kube-prometheus-stack-grafana` и нажмите на его имя.
+1. В блоке **Данные** нажмите на иконку глаза. 
+   
+   Будет отображен пароль.
+
+{/tab}
 
 {tab(kubectl)}
 

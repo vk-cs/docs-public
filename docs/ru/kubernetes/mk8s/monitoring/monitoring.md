@@ -1,6 +1,8 @@
 # {heading(Мониторинг кластера)[id=mk8s-monitoring]}
 
-Для отслеживания состояния кластера Kubernetes доступен {linkto(../concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack)[text=аддон мониторинга]}.
+Для отслеживания состояния кластера Kubernetes доступны следующие инструменты:
+
+- {linkto(../concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack)[text=Аддон мониторинга]}.
 
   Аддон расширяет возможности мониторинга кластера:
 
@@ -10,7 +12,14 @@
 
   Чтобы узнать, установлен ли аддон мониторинга в кластере, {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=посмотрите список установленных аддонов]}.
 
-<!-- удален подраздел с использованием Kubernetes Dashboard и из списка выше (см. исходную статью в k8s). можно забрать из k8s и раскомментировать, заменив на соответствующие шаги для Headlamp -->
+- Инструменты, встроенные в Headlamp — графический интерфейс (GUI) для управления кластерами Kubernetes.
+
+  Они обеспечивают базовые возможности мониторинга, позволяя посмотреть информацию о ресурсах кластера.
+
+## {heading(Использование Headlamp)[id=mk8s-monitoring-headlamp]}
+
+1. {linkto(../connect/headlamp#mk8s-headlamp)[text=Установите Headlamp и подключитесь к кластеру с его помощью]}.
+1. Перейдите в нужный кластер и просмотрите разделы **Обзор** и **События**, чтобы получить общие данные о его ресурсах и событиях. 
 
 ## {heading(Подключение к Grafana для просмотра метрик кластера)[id=mk8s-monitoring-connect-grafana]}
 

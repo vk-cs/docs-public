@@ -25,8 +25,7 @@
 Для сервиса Managed Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать дополнительно к {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовым ролям]} `Администратор пользователей (IAM)` или `Наблюдатель`. По умолчанию доступ к Managed Containers у этих базовых ролей ограничен:
 
 - `Администратор пользователей (IAM)`: нет доступа.
-- `Наблюдатель`: просмотр информации о кластере и группах узлов.
-<!-- если для Headlamp тоже нужен секрет, входит ли 'nj в права наблюдателя? -->
+- `Наблюдатель`: просмотр информации о кластере и группах узлов, получение секрета для доступа в Headlamp.
 
 ### {heading(mcs_k8s_viewer)[id=mk8s-concepts-iam_viewer]}
 

@@ -26,8 +26,8 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
    1. Поместите исполняемый файл в директорию, которая содержится в переменной окружения `PATH`, например:
 
-      * в `/usr/local/bin` для Linux/macOS;
-      * в `C:\` для Windows.
+      * для Linux и macOS: в `/usr/local/bin`;
+      * для Windows: в `C:\`.
 
 ## {heading(Подключение к кластеру)[id=k8s-k8s-dashboard-connect-to-cluster]}
 
