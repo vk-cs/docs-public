@@ -6,7 +6,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-sa-kubeconfig-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
    При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
 

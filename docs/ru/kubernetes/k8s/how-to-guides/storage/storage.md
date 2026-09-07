@@ -4,7 +4,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-storage-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
    При создании кластера:
 
@@ -46,10 +46,6 @@
 {tabs}
 
 {tab(Подключение с помощью статического PVC)}
-
-{note:info}
-Этот сценарий доступен только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
 
 В этом примере будут созданы:
 

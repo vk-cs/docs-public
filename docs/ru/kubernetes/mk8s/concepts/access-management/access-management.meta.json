@@ -1,0 +1,14 @@
+{
+  "title": "Аутентификация в Kubernetes",
+  "shortDescription": "Как работает аутентификация в Kubernetes",
+  "metaDescription": "Технология единого входа для личного кабинета VK Cloud и кластеров Kubernetes. Узнайте, как работает аутентификация через keystone-auth и как создать kubeconfig для сервисного аккаунта",
+  "sectionTitle": "Аутентификация в Kubernetes",
+  "icon": "",
+  "weight": 13,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

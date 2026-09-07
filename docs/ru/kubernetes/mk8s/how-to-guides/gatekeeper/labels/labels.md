@@ -1,0 +1,200 @@
+# {heading(Настройка обязательных меток)[id=mk8s-labels]}
+
+С помощью {linkto(../../../reference/gatekeeper#mk8s-gatekeeper)[text=Gatekeeper]} можно задать ограничение, которое будет требовать наличие определенной метки у создаваемых ресурсов Kubernetes. Например, это ограничение может быть полезно, если политики компании требуют указывать имя создателя любых ресурсов Kubernetes, чтобы облегчить аудит и разбор потенциальных инцидентов.
+
+Для демонстрации работы Gatekeeper будут созданы:
+
+* Шаблон ограничений и соответствующее ему ограничение. Оно будет требовать наличия метки (label) `creator-name` в ресурсах Kubernetes, которые создаются в любых пространствах имен (кроме системных)
+* Несколько ресурсов Kubernetes для проверки работы ограничения.
+
+## {heading(Подготовительные шаги)[id=mk8s-labels-prepare]}
+
+{include(/ru/_includes/_create-test-cluster.md)[tags=managed]}
+
+   Параметры кластера выберите на свое усмотрение.
+
+1. {linkto(../../../connect/kubectl#mk8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
+
+## {heading(Создайте ограничение, проверяющее метки)[id=mk8s-labels-create-constraint]}
+
+1. Создайте шаблон ограничения:
+
+   1. Создайте манифест шаблона ограничения.
+
+      Воспользуйтесь [содержимым этого файла](https://github.com/open-policy-agent/gatekeeper-library/blob/master/library/general/requiredlabels/template.yaml). Это уже готовый шаблон `K8sRequiredLabels` из [библиотеки Gatekeeper](https://github.com/open-policy-agent/gatekeeper-library), который проверяет наличие указанных меток у ресурса Kubernetes.
+
+   1. Создайте шаблон ограничения на основе манифеста шаблона:
+
+      ```yaml
+      kubectl apply -f template.yaml
+      ```
+
+1. Создайте ограничение:
+
+   1. Создайте манифест ограничения на основе шаблона, созданного ранее:
+
+      {cut(constraint.yaml)}
+
+      ```yaml
+      apiVersion: constraints.gatekeeper.sh/v1beta1
+      kind: K8sRequiredLabels
+      metadata:
+        name: require-creator-label
+      spec:
+        match:
+          kinds:
+            - apiGroups: [""]
+              kinds: ["Namespace"]
+          excludedNamespaces: ["kube-system"]
+        parameters:
+          labels:
+            - key: creator-name
+              allowedRegex: "(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?"
+      ```
+
+      {/cut}
+
+   1. Создайте ограничение на основе манифеста ограничения:
+
+      ```yaml
+      kubectl apply -f constraint.yaml
+      ```
+
+1. Убедитесь, что шаблон ограничения и ограничение успешно созданы, выполнив команду:
+
+   ```yaml
+   kubectl get constraints,constrainttemplates
+   ```
+
+   Должна быть выведена похожая информация:
+
+   ```text
+   NAME                                                              ENFORCEMENT-ACTION TOTAL-VIOLATIONS
+   k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label ...                ... 
+
+   NAME                                                              AGE
+   ...
+   constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels      ...
+   ```
+
+1. Проверьте работу ограничения, попробовав создать несколько пространств имен (namespaces):
+
+   {tabs}
+
+   {tab(Пространство, удовлетворяющее ограничению)}
+
+   1. Создайте манифест пространства имен:
+
+      {cut(example-allowed.yaml)}
+
+      ```yaml
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: allowed-namespace
+        labels:
+          creator-name: john.doe
+      ```
+
+      {/cut}
+
+   1. Попытайтесь создать пространство имен на основе манифеста:
+
+      ```yaml
+      kubectl apply -f example-allowed.yaml
+      ```
+
+      Операция должна завершиться успешно.
+
+   1. Убедитесь, что пространство имен успешно создано, выполнив команду:
+
+      ```yaml
+      kubectl get ns allowed-namespace
+      ```
+
+      Должна быть выведена похожая информация:
+
+      ```text
+      NAME                STATUS   AGE
+      allowed-namespace   Active   ...
+      ```
+
+   {/tab}
+
+   {tab(Пространство, не удовлетворяющее ограничению)}
+
+   1. Создайте манифест пространства имен:
+
+      {cut(example-disallowed.yaml)}
+
+      ```yaml
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: disallowed-namespace
+        labels:
+          my-label: sample
+      ```
+
+      {/cut}
+
+   1. Попытайтесь создать пространство имен на основе манифеста:
+
+      ```yaml
+      kubectl apply -f example-disallowed.yaml
+      ```
+
+      Операция должна завершиться с ошибкой:
+
+      ```text
+      Error from server (Forbidden): error when creating ".\\example-disallowed.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [require-creator-label] you must provide labels: {"creator-name"}
+      ```
+
+   1. Убедитесь, что пространство имен не было создано, выполнив команду:
+
+      ```yaml
+      kubectl get ns disallowed-namespace
+      ```
+
+      Должна быть выведена похожая информация:
+
+      ```text
+      Error from server (NotFound): namespaces "disallowed-namespace" not found
+      ```
+
+   {/tab}
+
+   {/tabs}
+
+## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-labels-delete]}
+
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы ограничения, вам больше не нужны, удалите их:
+
+1. Удалите созданное пространство имен `allowed-namespace` и связанные с ним ресурсы, а также шаблон ограничения и само ограничение:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   kubectl delete ns allowed-namespace
+   kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label
+   kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
+
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   kubectl delete ns allowed-namespace; `
+   kubectl delete k8srequiredlabels.constraints.gatekeeper.sh/require-creator-label; `
+   kubectl delete constrainttemplate.templates.gatekeeper.sh/k8srequiredlabels
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+{include(/ru/_includes/_delete-test-cluster-short.md)}

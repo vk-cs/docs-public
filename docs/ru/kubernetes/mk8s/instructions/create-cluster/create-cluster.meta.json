@@ -1,0 +1,14 @@
+{
+  "title": "Создание кластера",
+  "shortDescription": "Здесь перечислены различные способы создания кластера",
+  "metaDescription": "Доступные операции с кластером Kubernetes и его узлами. Узнайте, как создать кластер Kubernetes в личном кабинете VK Cloud или с помощью Terraform",
+  "sectionTitle": "Создание кластера",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Концепции",
+  "shortDescription": "Подробное описание принципов функционирования и устройства кластеров сервиса Cloud Containers",
+  "metaDescription": "Cloud Containers: подробное описание принципов функционирования и устройства кластеров Kubernetes",
+  "sectionTitle": "Концепции",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

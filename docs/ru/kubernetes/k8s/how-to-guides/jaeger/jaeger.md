@@ -4,7 +4,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-jaeger-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
 1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 1. {linkto(../../instructions/addons/advanced-installation/install-advanced-jaeger#k8s-install-advanced-jaeger)[text=Установите аддон Jaeger]}, если это еще не сделано.

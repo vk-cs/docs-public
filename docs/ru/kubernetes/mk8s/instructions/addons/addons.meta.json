@@ -1,0 +1,14 @@
+{
+  "title": "Работа с аддонами",
+  "shortDescription": "Как устанавливать аддоны в кластер Kubernetes и управлять ими",
+  "metaDescription": "Как устанавливать аддоны в кластер Kubernetes и управлять ими.",
+  "sectionTitle": "Работа с аддонами",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

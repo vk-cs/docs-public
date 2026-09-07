@@ -2,8 +2,6 @@
 
 {include(/ru/_includes/_velero-magnum-how-to.md)[tags=overview]}
 
-{include(/ru/_includes/_velero-magnum-how-to.md)[tags=note-magnum]}
-
 ## {heading(Подготовительные шаги)[id=k8s-velero-backup-prepare]}
 
 {include(/ru/_includes/_velero-magnum-how-to.md)[tags=prep]}

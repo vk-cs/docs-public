@@ -8,20 +8,13 @@
 
 ## {heading(Работа с сетевыми подсистемами (CNI))[id=k8s-network-cni]}
 
-Для организации внутрикластерной сети в сервисе Cloud Containers поддерживаются две сетевых подсистемы (CNI, Container Network Interface):
+Для организации внутрикластерной сети в сервисе Cloud Containers поддерживается сетевая подсистема (CNI, Container Network Interface) [Calico](https://projectcalico.docs.tigera.io/about/about-calico). Calico реализует сетевую маршрутизацию на уровне L3 с помощью стандартных сетевых протоколов и iptables. 
 
-- [Calico](https://projectcalico.docs.tigera.io/about/about-calico) реализует сетевую маршрутизацию на уровне L3 с помощью стандартных сетевых протоколов и iptables. Calico хорошо масштабируется и оптимально подходит для средних и крупных кластеров.
-- [Cilium](https://docs.cilium.io/en/stable/index.html) использует eBPF (Linux eXpress Data Path) для реализации сетевых политик и маршрутизации непосредственно в ядре ОС, минуя iptables. Cilium поддерживает фильтрацию трафика на уровнях L3, L4 и L7 (например, по HTTP-заголовкам), а также предоставляет расширенные возможности мониторинга (например, через встроенный инструмент Hubble). Cilium оптимально подходит для очень больших кластеров с высокой нагрузкой и микросервисных архитектур.
-
-  {note:info}
-  Cilium доступен только для кластеров {linkto(../cluster-generations#k8s-cluster-generations)[text=второго поколения]}.
-  {/note}
-
-Обе CNI взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]}. Чтобы подключить SDN Sprut к вашему проекту, обратитесь в [техническую поддержку](/ru/contacts).
+CNI взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]}. Чтобы подключить SDN Sprut к вашему проекту, обратитесь в [техническую поддержку](/ru/contacts).
 
 ## {heading(Интеграция с балансировщиками нагрузки)[id=k8s-network-loadbalancer-integration]}
 
-Кластер Kubernetes интегрируется с балансировщиками нагрузки платформы {var(cloud)}. Это касается и обычных балансировщиков нагрузки Kubernetes (`LoadBalancer`), и Ingress-контроллеров (`IngressController`): и к одним, и другим при создании будет привязан выделенный TCP-балансировщик {var(cloud)}. Это касается в том числе и Ingress-контроллера, который устанавливается в виде {linkto(../addons-and-settings/addons#k8s-addons)[text=аддона]}.
+Кластер Kubernetes интегрируется с балансировщиками нагрузки платформы {var(cloud)}. Это касается и обычных балансировщиков нагрузки Kubernetes (`LoadBalancer`), и Ingress-контроллеров (`IngressController`): и к одним, и другим при создании будет привязан выделенный TCP-балансировщик {var(cloud)}. Это касается, в том числе, и Ingress-контроллера, который устанавливается в виде {linkto(../addons-and-settings/addons#k8s-addons)[text=аддона]}.
 
 При необходимости можно использовать HTTP-балансировщик нагрузки. Подробнее об этом рассказано в {linkto(../../how-to-guides/ingress/ingress-http#k8s-ingress-http)[text=примере для Ingress-контроллера]}.
 

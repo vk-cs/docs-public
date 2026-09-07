@@ -10,10 +10,6 @@
 - тестовые стенды; 
 - legacy-приложения, которым нужен прямой внешний адрес на один экземпляр.
 
-{note:info}
-Это практическое руководство предназначено для кластеров {linkto(/ru/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
-
 ## {heading(Подготовительные шаги)[id=k8s-pip-prepare]}
 
 1. Обратитесь в [техническую поддержку](/ru/contacts), чтобы подключить свой проект к [SDN Sprut](/ru/networks/vnet/concepts/sdn#vnet-sdn-sprut), если это еще не сделано.

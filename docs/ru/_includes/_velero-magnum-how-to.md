@@ -2,24 +2,6 @@
 Используйте инструмент [Velero](https://velero.io/docs/main/), чтобы вручную создавать резервные копии данных кластера и восстанавливать их.
 {/includetag}
 
-{includetag(note-magnum)}
-
-{ifdef(public)}
-{note:info}
-Руководство подходит только для кластеров {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}. В кластерах второго поколения используйте {linkto(../../../concepts/addons-and-settings/addons#k8s-addons-velero)[text=аддон Velero]} и соответствующие {linkto(../../managed-velero#k8s-how-to-velero-managed)[text=практические руководства]}.
-{/note}
-{/ifdef}
-
-{/includetag}
-
-{includetag(note-managed)}
-
-{note:info}
-Аддон Velero доступен только в кластерах {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=второго поколения]}. В кластерах первого поколения {linkto(../../../install-tools/velero#k8s-velero)[text=установите]} Velero самостоятельно и настройте резервное копирование {linkto(../../velero#k8s-how-to-velero-magnum)[text=с помощью соответствующих руководств]}.
-{/note}
-
-{/includetag}
-
 {includetag(prep)}
 
 {ifdef(public)}

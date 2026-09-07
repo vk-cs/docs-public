@@ -1,0 +1,14 @@
+{
+  "title": "Добавление статических DNS-записей",
+  "shortDescription": "Как добавить домен и IP-адрес в DNS-сервис кластера, используя ресурс СoreDNS",
+  "metaDescription": "Узнайте, как добавить домен и IP-адрес в DNS-сервис кластера, используя ресурс СoreDNS для кластера Kubernetes в VK Cloud",
+  "sectionTitle": "Добавление статических DNS-записей",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Перенос рабочей нагрузки до миграции ресурсов",
+  "shortDescription": "",
+  "metaDescription": "Как в Cloud Containers перенести рабочую нагрузку (workload) в кластерах Kubernetes в другую зону доступности до миграции ресурсов",
+  "sectionTitle": "Перенос рабочей нагрузки до миграции ресурсов",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

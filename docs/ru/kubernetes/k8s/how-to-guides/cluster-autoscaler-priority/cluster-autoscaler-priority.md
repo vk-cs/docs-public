@@ -8,7 +8,7 @@
 
 ## Подготовительные шаги
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
 1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 

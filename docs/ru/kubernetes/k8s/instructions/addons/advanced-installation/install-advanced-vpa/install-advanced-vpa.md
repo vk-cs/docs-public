@@ -1,9 +1,5 @@
 # {heading(Vertical Pod Autoscaler)[id=k8s-install-advanced-vpa]}
 
-{note:info}
-Этот аддон доступен только для кластеров {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
-
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-vpa-prep]}
 
 {include(/ru/_includes/_addon-prep.md)}

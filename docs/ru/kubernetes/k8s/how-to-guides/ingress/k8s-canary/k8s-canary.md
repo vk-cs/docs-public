@@ -4,7 +4,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-k8s-canary-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Подключитесь]} к кластеру с помощью `kubectl`.
 1. Создайте тестовое приложение:
 

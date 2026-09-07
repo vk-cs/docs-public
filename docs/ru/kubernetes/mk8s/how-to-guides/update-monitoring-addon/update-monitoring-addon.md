@@ -1,0 +1,609 @@
+# {heading(Обновление Kube Prometheus Stack)[id=mk8s-update-monitoring-addon]}
+
+В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, доступно {linkto(../../concepts/versions/components#mk8s-components)[text=несколько версий]} аддона {linkto(../../concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack]}. Обновление этого аддона средствами {var(cloud)} недоступно, но можно обновить аддон вручную.
+
+Для обновления аддона Kube Prometheus Stack с версии `36.2.0` на версию `54.2.2` необходимо удалить текущую версию аддона и затем установить новую версию. Поэтому процесс обновления включает в себя подготовку окружения текущей версии аддона, чтобы сохранить его и затем переиспользовать с новой версией аддона.
+
+{note:warn}
+Далее предполагается, что аддон установлен в пространство имен (например, `kube-prometheus-stack`), которое содержит только те ресурсы Kubernetes, которые относятся к аддону.
+
+Если в пространстве имен есть и другие ресурсы Kubernetes, скорректируйте команды и скрипт так, чтобы они не затрагивали не относящиеся к аддону ресурсы.
+{/note}
+
+## {heading(Подготовительные шаги)[id=mk8s-update-monitoring-addon-prepare]}
+
+1. Если в сервисе Cloud Containers у вас уже есть существующий кластер Kubernetes с аддоном Kube Prometheus Stack, который нужно обновить, пропустите этот шаг.
+
+   В противном случае создайте тестовый кластер, в котором будет выполняться обновление аддона:
+
+   1. {linkto(../../instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=Создайте]} кластер Kubernetes версии `1.26.5`.
+
+      При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
+
+   1. {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=Установите в кластер]} аддон Kube Prometheus Stack версии `36.2.0`.
+
+      Выполните **быструю установку** аддона (без редактирования кода настройки аддона).
+
+1. {linkto(../../connect/kubectl#mk8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
+
+   Для подключения используйте файл конфигурации кластера (kubeconfig), загруженный из личного кабинета {var(cloud)}.
+
+1. Проверьте, что аддон доступен и работает. Для этого {linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=получите доступ к веб-интерфейсу Grafana]}.
+
+   {note:warn}
+   Запишите пароль для доступа к Grafana, даже если он хранится в виде секрета Kubernetes. В процессе обновления аддона пространство имен, где размещены аддон и секрет, будет удалено вместе со всем содержимым.
+   {/note}
+
+1. {linkto(../../install-tools/helm#mk8s-helm)[text=Установите]} Helm версии 3.0.0 или выше, если утилита еще не установлена.
+
+   Выберите для установки версию Helm, которая [совместима](https://helm.sh/docs/topics/version_skew/) с кластером.
+
+1. Задайте переменную среды окружения, указывающую на kubeconfig для кластера. Это упростит работу с `kubectl` и `helm` при обновлении аддона.
+
+   Путь к вашим файлам kubeconfig может отличаться от примера ниже.
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   export KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   $Env:KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+## {heading(1. Получите информацию, необходимую для обновления аддона)[id=mk8s-update-monitoring-addon-get-info]}
+
+1. {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons)[text=Перейдите в режим редактирования кода настройки аддона]}.
+
+   Не изменяйте код настройки аддона.
+
+   Запишите следующие сведения:
+
+   1. Название приложения (по умолчанию `kube-prometheus-stack`).
+   1. Название пространства имен (по умолчанию `prometheus-monitoring`).
+   1. Полный код настройки аддона.
+
+1. Задайте переменные среды окружения, указывающие на эти названия приложения и пространства имен. Это упростит дальнейшую работу при обновлении аддона.
+
+   Значения ваших переменных могут отличаться от примера ниже.
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   export CHART_NAME="kube-prometheus-stack"
+   export NAMESPACE="prometheus-monitoring"
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   $CHART_NAME="kube-prometheus-stack"
+   $NAMESPACE="prometheus-monitoring"
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Получите информацию о используемых аддоном {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)]}. Они используются для хранения собираемых метрик, а также других данных, необходимых для работы аддона.
+
+   ```console
+   kubectl -n $NAMESPACE get pvc
+   ```
+
+   В выводе команды будет содержаться список PVCs (`NAME`) и соответствующих им PVs (`VOLUMES`) с указанием размера томов (`CAPACITY`). Запишите эту информацию, она понадобится позднее.
+
+   {cut(Пример частичного вывода команды)}
+
+   ```text
+   NAME                                                                             STATUS   VOLUME                                     CAPACITY   ...
+   alertmanager-prometheus-alertmanager-db-alertmanager-prometheus-alertmanager-0   Bound    pvc-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX   1Gi        ...
+   kube-prometheus-stack-grafana                                                    Bound    pvc-YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY   1Gi        ...
+   prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0           Bound    pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ... 
+   ```
+
+   {/cut}
+
+## {heading(2. Подготовьте окружение аддона к обновлению)[id=mk8s-update-monitoring-addon-prepare-env]}
+
+Тома для аддона по умолчанию создаются с применением {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=политики освобождения]} `Retain`, если в код настройки аддона не было внесено изменений, связанных с классом хранения. Поэтому, если просто удалить аддон, то постоянные тома с данными будут удалены. Это приведет к потере накопленных за время работы аддона метрик, а также других данных, необходимых для работы аддона.
+
+Кроме того, следующие ресурсы Kubernetes, которые также используются аддоном, могут препятствовать установке новой версии аддона:
+
+- Набор Custom Resource Definitions (CRDs), необходимый для работы аддона.
+- Набор Persistent Volume Claims (PVCs), позволяющий аддону использовать постоянные тома.
+
+Перед обновлением аддона защитите от удаления постоянные тома, которые он использует, а также удалите упомянутые ресурсы Kubernetes одним из приведенных ниже способов.
+
+{tabs}
+
+{tab(Готовый bash-скрипт для Linux)}
+
+1. Создайте файл с кодом скрипта:
+
+   {cut(prepare-for-addon-update.sh)}
+
+   ```console
+   #!/bin/sh
+
+   set -e
+
+   DEFAULT_NAMESPACE=prometheus-monitoring
+   : "${NAMESPACE:=prometheus-monitoring}"
+   : "${CHART_NAME:=kube-prometheus-stack}"
+   : "${DRY_RUN:=none}"
+
+   usage() {
+   cat <<EOF
+   Usage:
+   -h help
+   -k kubeconfig           "${KUBECONFIG}"
+   -c kubeconfig context   ""
+   -n namespace            "${NAMESPACE}"
+   -r chart                "${CHART_NAME}"
+   -d dry run              "${DRY_RUN}". [none, server,client]
+   EOF
+   exit 1
+   }
+
+   while getopts 'k:c:n:r:hd' opt; do
+     case $opt in
+       h)
+           usage
+           ;;
+       k) KUBECONFIG=$OPTARG
+           ;;
+       c) CONTEXT=$OPTARG
+           ;;
+       n) NAMESPACE=$OPTARG
+           ;;
+       r) CHART_NAME=$OPTARG
+           ;;
+       d) DRY_RUN=server
+           ;;
+       *) usage ;;
+     esac
+   done
+
+   shift "$((OPTIND-1))"
+
+   # set k8s params as array
+   set -- "--namespace=${NAMESPACE}"
+   [ -n "${CONTEXT}" ] && {
+       set -- "--context=${CONTEXT}" "${@}"
+       # for helm
+       set -- "--kube-context=${CONTEXT}" "${@}"
+   }
+   [ -n "${KUBECONFIG}" ] && set -- "--kubeconfig=${KUBECONFIG}" "${@}"
+
+   get_prometheus_pv() {
+       kubectl "${@}" get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{"pv/"}{.metadata.name}{"\n"}{end}'
+   }
+
+   get_prometheus_crd() {
+       kubectl "${@}" get crd -o jsonpath='{range .items[?(@.spec.group=="monitoring.coreos.com")]}{"crd/"}{.metadata.name}{"\n"}{end}'
+   }
+
+   get_prometheus_pvc() {
+       kubectl "${@}" get pvc -o jsonpath='{range .items[*]}{"pvc/"}{.metadata.name}{"\n"}{end}'
+   }
+
+   set_prometheus_pv_retain_reclaim_policy() {
+       pvs=$(get_prometheus_pv "${@}")
+       [ -z "${pvs}" ] && return
+       for pv in ${pvs}; do
+           set -- "${pv}" "${@}"
+       done
+       kubectl patch "${@}" --dry-run="${DRY_RUN}" -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+   }
+
+   clear_prometheus_pv_claim_reference() {
+       pvs=$(get_prometheus_pv "${@}")
+       [ -z "${pvs}" ] && return
+       for pv in ${pvs}; do
+           set -- "${pv}" "${@}"
+       done
+       kubectl patch "${@}" --dry-run="${DRY_RUN}" --type json -p='[{"op": "remove", "path": "/spec/claimRef"}]'
+   }
+
+   delete_prometheus_crd() {
+       crds=$(get_prometheus_crd "${@}")
+       [ -z "${crds}" ] && return
+       for crd in ${crds}; do
+           set -- "${crd}" "${@}"
+       done
+       kubectl delete "${@}" --dry-run="${DRY_RUN}"
+   }
+
+   delete_prometheus_pvc() {
+       pvcs=$(get_prometheus_pvc "${@}")
+       [ -z "${pvcs}" ] && return
+       for pvc in ${pvcs}; do
+           set -- "${pvc}" "${@}"
+       done
+       kubectl delete "${@}" --dry-run="${DRY_RUN}"
+   }
+
+   delete_prometheus_chart() {
+       dry_run=""
+       [ "${DRY_RUN}" != "none" ] && dry_run="--dry-run"
+       if helm get manifest "${@}" "${CHART_NAME}" >/dev/null 2>&1; then
+           helm uninstall "${@}" "${CHART_NAME}" --wait --timeout 600s "${dry_run}" >/dev/null 2>&1 || true
+       fi
+       helm list "${@}" -aA -f "${CHART_NAME}" -q
+   }
+
+   delete_prometheus_namespace() {
+       if kubectl get "${@}" ns "${NAMESPACE}" >/dev/null 2>&1; then
+           kubectl delete "${@}" ns "${NAMESPACE}" --dry-run="${DRY_RUN}" --wait --timeout 600s --force --grace-period=0 --cascade=foreground
+       fi
+   }
+
+   echo "Setting retain policy for the Prometheus PVs..."
+   set_prometheus_pv_retain_reclaim_policy "${@}"
+   echo "Deleting Prometheus chart..."
+   delete_prometheus_chart "${@}"
+   echo "Deleting Prometheus PVCs..."
+   delete_prometheus_pvc "${@}"
+   echo "Clearing Prometheus PV claim references..."
+   clear_prometheus_pv_claim_reference "${@}"
+   echo "Clearing Prometheus CRDs..."
+   delete_prometheus_crd "${@}"
+   [ "${NAMESPACE}" = "${DEFAULT_NAMESPACE}" ] && {
+       echo "Deleting Prometheus namespace..."
+       delete_prometheus_namespace "${@}"
+   }
+   echo "Completed!"
+   ```
+
+   {/cut}
+
+   Скрипт выполняет следующие действия:
+
+   1. Обнаруживает постоянные тома, которые связаны с PVCs, созданными в пространстве имен, в котором установлен аддон. Для этих постоянных томов скрипт задает политику освобождения `Retain`. Это нужно, чтобы эти тома не были удалены при удалении текущей версии аддона.
+   1. Удаляет Helm-чарт (chart) текущей версии аддона. Это нужно, чтобы успешно удалить наборы PVCs и CRDs, которые используются аддоном.
+   1. Удаляет набор PVCs из пространства имен, в котором был установлен аддон. Это нужно, чтобы можно было отвязать PVs от PVCs и потом переиспользовать эти PVs с новой версией аддона.
+   1. Очищает ссылки на удаленные PVCs у постоянных томов, которые были связаны с этими PVCs. Эти постоянные тома станут доступны для связывания (статус PVs: `Available`) и будут переиспользованы новой версией аддона после ее установки.
+   1. Удаляет набор CRDs, который использовался аддоном.
+   1. Удаляет пространство имен `prometheus-monitoring`, если скрипт был запущен для этого пространства имен.
+
+1. Сделайте файл с кодом скрипта исполняемым:
+
+   ```console
+   chmod +x prepare-for-addon-update.sh
+   ```
+
+1. Определите, с какими параметрами будет выполнен скрипт:
+
+   ```console
+   bash prepare-for-addon-update.sh -h
+   ```
+
+   Будет выведена справка, в которой будут указаны доступные параметры и их значения по умолчанию:
+
+   - `-h`: вывод справки.
+   - `-k`: путь к файлу kubeconfig. Значение по умолчанию извлекается из переменной среды окружения `$KUBECONFIG`, если она задана.
+   - `-c`: название контекста kubeconfig, который нужно использовать при работе с кластером. Значение по умолчанию: пустая строка.
+   - `-n`: название пространства имен, в котором установлен аддон. Значение по умолчанию: `prometheus-monitoring`.
+   - `-r`: название приложения, с которым установлен аддон. Совпадает с именем Helm-чарта для аддона. Значение по умолчанию: `kube-prometheus-stack`.
+   - `-d`: значение аргумента [--dry-run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) для `kubectl`. Значение по умолчанию: `none`. Используйте `server` или `client` для тестового запуска скрипта: в кластер не будет внесено никаких изменений.
+
+   {cut(Пример вывода справки)}
+
+   ```text
+   Usage:
+   -h help
+   -k kubeconfig           "/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
+   -c kubeconfig context   ""
+   -n namespace            "prometheus-monitoring"
+   -r chart                "kube-prometheus-stack"
+   -d dry run              "none". [none, server,client]
+   ```
+
+   {/cut}
+
+1. Выполните скрипт.
+
+   {note:warn}
+   При выполнении скрипта с явно (параметр `-n`) или неявно заданным пространством имен `prometheus-monitoring` это пространство имен будет удалено.
+
+   При выполнении скрипта для другого пространства имен оно удалено не будет.
+   {/note}
+
+   Выполните команду, указав нужные параметры. Если вас устраивает значение параметра по умолчанию, то параметр можно опустить.
+
+   ```console
+     bash prepare-for-addon-update.sh \
+       -k <путь к файлу kubeconfig> \
+       -c <название контекста kubeconfig> \
+       -n <название пространства имен> \
+       -r <название приложения> \
+       -d <значение аргумента --dry-run для kubectl>
+
+   ```
+
+   Будут выведены подробные сообщения о работе скрипта. В том числе в выводе должны содержаться следующие сообщения:
+
+   ```text
+   Setting retain policy for the Prometheus PVs...
+   Deleting Prometheus chart...
+   Deleting Prometheus PVCs...
+   Clearing Prometheus PV claim references...
+   Clearing Prometheus CRDs...
+   Deleting Prometheus namespace...
+   Completed!
+   ```
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   Settings retain policy for the prometheus PVs...
+   persistentvolume/pvc-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX patched
+   persistentvolume/pvc-YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY patched
+   persistentvolume/pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ patched
+   Deleting prometheus chart...
+   Deleting prometheus PVCs...
+   persistentvolumeclaim "prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0" deleted
+   persistentvolumeclaim "alertmanager-prometheus-alertmanager-db-alertmanager-prometheus-alertmanager-0" deleted
+   Clearing prometheus PV claim references...
+   persistentvolume/pvc-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX patched
+   persistentvolume/pvc-YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY patched
+   persistentvolume/pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ patched
+   Clearing prometheus CRDs...
+   Warning: deleting cluster-scoped resources, not scoped to the provided namespace
+   customresourcedefinition.apiextensions.k8s.io "thanosrulers.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "servicemonitors.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "prometheusrules.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "prometheuses.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "probes.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "podmonitors.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "alertmanagers.monitoring.coreos.com" deleted
+   customresourcedefinition.apiextensions.k8s.io "alertmanagerconfigs.monitoring.coreos.com" deleted
+   Deleting prometheus namespace...
+   Warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+   Warning: deleting cluster-scoped resources, not scoped to the provided namespace
+   namespace "prometheus-monitoring" force deleted
+   Completed!
+   ```
+
+   {/cut}
+
+{/tab}
+
+{tab(Отдельные команды для Linux/macOS/Windows)}
+
+1. Получите список PVs, которые используются аддоном через PVCs в пространстве имен аддона:
+
+   ```console
+   kubectl get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{.metadata.name}{"\n"}{end}'
+   ```
+
+   Список PVs должен совпадать со списком PVs, {linkto(#mk8s-update-monitoring-addon-get-info)[text=полученным ранее]}.
+
+1. Пропатчите эти PVs так, чтобы они использовали политику освобождения `Retain`. Это необходимо для того, чтобы эти тома не были удалены при удалении текущей версии аддона.
+
+   Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка.
+
+   ```console
+   kubectl patch pv <ИМЯ_PV> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+   ```
+
+1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работает аддон, используют политику освобождения `Retain` и связаны с PVC (`Bound`):
+
+   ```console
+   kubectl get pv
+   ```
+
+   {cut(Пример частичного вывода команды)}
+
+   ```text
+   NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS  CLAIM    ...
+   pvc-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX   1Gi        ...   Retain           Bound   prometheus-monitoring/alertmanager-prometheus-alertmanager-db-alertmanager-prometheus-alertmanager-0 ...
+   pvc-YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY   1Gi        ...   Retain           Bound   prometheus-monitoring/kube-prometheus-stack-grafana ...
+   pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Bound   prometheus-monitoring/prometheus-prometheus-prometheus-db-prometheus-prometheus-prometheus-0 ...
+   ```
+
+   {/cut}
+
+1. Удалите Helm-чарт (chart) текущей версии аддона. Это необходимо для того, чтобы успешно удалить наборы PVCs и CRDs, которые используются аддоном.
+
+   ```console
+   helm uninstall -n $NAMESPACE $CHART_NAME --wait --timeout 600s
+   ```
+
+1. Получите список PVCs, которые использовались аддоном:
+
+   ```console
+   kubectl -n $NAMESPACE get pvc
+   ```
+
+   Итоговый список может отличаться от {linkto(#mk8s-update-monitoring-addon-get-info)[text=полученного ранее]}: часть PVCs была удалена при удалении Helm-чарта.
+
+1. Удалите PVCs, которые использовались аддоном. Это нужно, чтобы можно было отвязать PVs от PVCs и потом переиспользовать эти PVs с новой версией аддона.
+
+   Эта команда удаляет отдельный PVC. Выполните ее для всех PVCs из списка.
+
+   ```console
+   kubectl -n $NAMESPACE delete pvc <ИМЯ_PVC>
+   ```
+
+1. Пропатчите PVs, которые использовались аддоном, так, чтобы отвязать их от PVCs, которые были удалены. Эти постоянные тома станут доступны для связывания (статус PVs: `Available`) и будут переиспользованы новой версией аддона после ее установки.
+
+   Эта команда патчит отдельный PV. Выполните ее для всех PVs из списка, полученного ранее.
+
+   ```console
+   kubectl patch pv <ИМЯ_PV> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
+   ```
+
+1. Получите список всех PVs в кластере и убедитесь, что те PVs, с которыми работал аддон, используют политику освобождения `Retain` и доступны для связывания (`Available`):
+
+   ```console
+   kubectl get pv
+   ```
+
+   {cut(Пример частичного вывода команды)}
+
+   ```text
+   NAME                                       CAPACITY   ...   RECLAIM POLICY   STATUS      ...
+   pvc-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX   1Gi        ...   Retain           Available   ...
+   pvc-YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY   1Gi        ...   Retain           Available   ...
+   pvc-ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ   10Gi       ...   Retain           Available   ...
+   ```
+
+   {/cut}
+
+1. Получите список CRDs, с которыми работал аддон:
+
+   ```console
+   kubectl get crd -o jsonpath='{range .items[?(@.spec.group=="monitoring.coreos.com")]}{.metadata.name}{"\n"}{end}'
+   ```
+
+1. Удалите все CRDs, с которыми работал аддон.
+
+   Эта команда удаляет отдельный CRD. Выполните ее для всех CRDs из списка, полученного ранее.
+
+   ```console
+   kubectl delete crd <ИМЯ_CRD>
+   ```
+
+1. Удалите пространство имен, в котором был установлен аддон.
+
+   ```console
+   kubectl delete ns $NAMESPACE
+   ```
+
+{/tab}
+
+{/tabs}
+
+## {heading(3. Обновите аддон на новую версию)[id=mk8s-update-monitoring-addon-update]}
+
+1. {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-delete)[text=Удалите текущую версию аддона]}, пользуясь интерфейсами {var(cloud)}.
+1. {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=Установите в кластер]} аддон Kube Prometheus Stack версии `54.2.2`.
+
+   Выполните **стандартную установку** следующим образом:
+
+   1. Задайте те же названия приложения и пространства имен, которые использовались при установке аддона предыдущей версии.
+
+   1. Изучите код настройки аддона предыдущей версии, {linkto(#mk8s-update-monitoring-addon-get-info)[text=полученный ранее]}. Найдите фрагменты кода, которые отвечают за настройку хранилища для следующих компонентов аддона:
+
+      {tabs}
+
+      {tab(Grafana)}
+
+      ```yaml
+      grafana:
+
+        ...
+
+        persistence:
+          enabled: true
+          storageClassName: "csi-ceph-hdd-gz1"
+          accessModes:
+          - ReadWriteOnce
+          size: 1Gi
+
+        ...
+      ```
+
+      {/tab}
+
+      {tab(Alert Manager)}
+
+      ```yaml
+      alertmanager:
+
+        ...
+
+        alertmanagerSpec:
+
+        ...
+
+          storage:
+            volumeClaimTemplate:
+              spec:
+                storageClassName: "csi-ceph-hdd-gz1"
+                accessModes:
+                - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 1Gi
+      ```
+
+      {/tab}
+
+      {tab(Prometheus)}
+
+      ```yaml
+      prometheus:
+      
+        ...
+      
+        prometheusSpec:
+      
+          ...
+      
+          storageSpec:
+            volumeClaimTemplate:
+              spec:
+                storageClassName: "csi-ceph-ssd-gz1"
+                accessModes:
+                - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 10Gi
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+   1. Изучите код настройки новой версии аддона, которую планируется установить.
+
+      Если фрагменты кода, которые отвечают за настройку хранилища, отличаются от полученных ранее, то скорректируйте их. Настройки хранилища для Grafana, Alert Manager и Prometheus должны в точности совпадать с аналогичными настройками, которые использовались для аддона предыдущей версии.
+
+   1. (Опционально) Внесите иные изменения в код настройки аддона.
+
+      Если вы указали пароль для доступа к Grafana в поле `grafana.adminPassword` при установке аддона предыдущей версии, указывать его повторно не нужно. Новая версия аддона будет использовать прежние PVs в качестве хранилища, поэтому пароль останется прежним. Установка новой версии аддона не поменяет пароль для доступа к Grafana, даже если оставить это поле пустым: будет сгенерирован секрет с паролем для Grafana, но он не будет использован.
+
+      {note:warn}
+      Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
+      {/note}
+
+   1. Установите аддон.
+
+      Процесс установки может занять длительное время. Дождитесь его завершения.
+
+1. Получите информацию о используемых аддоном {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=Persistent Volume Claims (PVCs) и постоянных томах (persistent volumes, PVs)]}:
+
+   ```console
+   kubectl -n $NAMESPACE get pvc
+   ```
+
+   Вывод команды должен быть аналогичен выводу команды, которая {linkto(#mk8s-update-monitoring-addon-get-info)[text=выполнялась ранее]} для аддона предыдущей версии. Так, PVC `alertmanager...` должен быть связан с тем же PV, который использовался Alert Manager ранее. Для Prometheus и Grafana — аналогично.
+
+## {heading(4. Проверьте работоспособность аддона после обновления)[id=mk8s-update-monitoring-addon-check]}
+
+{linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=Получите доступ к веб-интерфейсу Grafana]}. Для подключения используйте тот же пароль, который использовался с аддоном предыдущей версии. Если вы забыли пароль от Grafana, {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-reset-password)[text=сбросьте его]}.
+
+Успешное подключение к Grafana свидетельствует об успешном обновлении аддона.
+
+## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-update-monitoring-addon-delete]}
+
+{include(/ru/_includes/_delete-test-cluster.md)}

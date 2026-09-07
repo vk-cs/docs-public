@@ -5,6 +5,7 @@
   "sectionTitle": "Установка и настройка аддонов",
   "icon": "",
   "weight": 2,
+  "additionalUuids": ["d26578b5-6854-49c6-8d36-ad8402bfe188"],
   "uuid": "372e7a27-7565-48c6-98b0-79d3459602a9",
   "build": {
     "for": [

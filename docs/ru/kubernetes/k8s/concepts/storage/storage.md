@@ -20,10 +20,6 @@
 - Кластер {linkto(#k8s-storage-supported-storage-types)[text=поддерживает]} хранилища, предоставляемые платформой {var(cloud)}. Поддержка блочных хранилищ реализована с помощью {linkto(#k8s-storage-csi)[text=Cinder CSI]}.
 - В кластере доступны {linkto(#k8s-storage-storage-classes)[text=преднастроенные классы хранения]} (storage class) для блочного хранилища, которые реализуют различные {linkto(#k8s-storage-reclaim-policies)[text=политики освобождения постоянных томов]}.
 
-## {heading(Управление постоянными томами (PV))[id=k8s-storage-pv-disks]}
-
-В сервисе Cloud Containers можно {linkto(../../instructions/manage-pvs#k8s-manage-pvs)[text=управлять]} PV, созданными для кластеров Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=второго поколения]}. Такие PV находятся в {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервисном проекте]}, которым управляет платформа {var(cloud)}. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
-
 Переместить или удалить PV можно, только если он не подключен к группе узлов.
 
 ## {heading(Поддерживаемые типы хранилищ {var(cloud)})[id=k8s-storage-supported-storage-types]}
@@ -80,10 +76,7 @@
 
 При использовании {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs-prepare)[text=динамической подготовки]} постоянного тома необходимо указать класс хранения. Класс хранения по умолчанию не настроен в кластерах Cloud Containers. Можно выбрать класс по умолчанию самостоятельно, или указывать нужный класс явно при создании PVC.
 
-В Cloud Containers есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ. Они предоставляют разные типы хранилищ, которые вы можете использовать при динамической подготовке постоянного тома:
-
-- Для определенного {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]} с указанием зоны доступности. 
-- Для любого региона и зоны доступности. Такие классы хранения называются мультизональными. Мультизональные классы хранения доступны только для кластеров {linkto(../cluster-generations#k8s-cluster-generations)[text=второго поколения]}. Подробнее о работе с ними в разделе {linkto(../../how-to-guides/multiaz-storage-class#k8s-multiaz-storage-class)[text=Использование мультизональных классов хранения]}.
+В Cloud Containers есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ. Они предоставляют разные типы хранилищ, которые вы можете использовать при динамической подготовке постоянного тома для определенного {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]} с указанием зоны доступности. 
 
 Каждому классу хранения соответствует своя политика освобождения постоянных томов.
 
@@ -224,47 +217,6 @@
 
 - Разрешают увеличение тома (`allowVolumeExpansion: true`).
 - Используют немедленное выделение и привязку тома (`volumeBindingMode: Immediate`).
-
-{/tab}
-
-{tab(Для любого региона и зоны доступности)}
-
-[cols="1,1,1",options="header"]
-|===
-
-| Наименование класса хранения
-| Тип хранилища Cinder CSI
-| Reclaim Policy
-
-| csi-ceph-ssd                    
-| `ceph-ssd`
-| Delete
-
-| csi-ceph-ssd-retain             
-| `ceph-ssd`
-| Retain
-
-| csi-ceph-hdd                    
-| `ceph-hdd`
-| Delete
-
-| csi-ceph-hdd-retain             
-| `ceph-hdd`
-| Retain
-
-| csi-high-iops                   
-| `high-iops`
-| Delete
-
-| csi-high-iops-retain            
-|`high-iops`
-| Retain
-|===
-
-Все перечисленные классы хранения:
-
-- Разрешают увеличение тома (`allowVolumeExpansion: true`).
-- Откладывают создание и привязку тома до момента, когда будет создан первый под, использующий соответствующий {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=PersistentVolumeClaim]} (`volumeBindingMode: WaitForFirstConsumer`).
 
 {/tab}
 

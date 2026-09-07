@@ -1,0 +1,14 @@
+{
+  "title": "Использование Ingress",
+  "shortDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress",
+  "metaDescription": "Узнайте, как настроить доступ к развернутым в кластере Kubernetes сервисам с помощью Ingress-контроллера или Canary Deployment Ingress",
+  "sectionTitle": "Использование Ingress",
+  "icon": "",
+  "weight": 12,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

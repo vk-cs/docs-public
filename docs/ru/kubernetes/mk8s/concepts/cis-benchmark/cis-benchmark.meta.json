@@ -1,0 +1,14 @@
+{
+  "title": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
+  "shortDescription": "Обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
+  "metaDescription": "Кластеры Kubernetes на платформе VK Cloud соответствуют рекомендациям CIS Benchmarks. Обзор результатов тестов CIS Benchmarks для кластеров Kubernetes версий 1.28 – 1.31",
+  "sectionTitle": "Результаты тестов CIS Benchmarks для кластеров Kubernetes",
+  "icon": "",
+  "weight": 20,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -19,7 +19,7 @@ Cloud Containers следит за корректной работой клас�
 
 - _Master-узлы_ хранят информацию о состоянии всего кластера и управляют распределением рабочей нагрузки по worker-узлам. Управление master-узлами пользователям не доступно, оно происходит на стороне платформы {var(cloud)}.
 
-   Когда вы {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=создаете]} кластер Kubernetes, Cloud Containers выбирает минимально подходящий {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации]} для его master-узлов. По умолчанию это ВМ с процессором Intel Cascade Lake, 2 CPU и 6 ГБ оперативной памяти. {linkto(../storage#k8s-storage-supported-storage-types)[text=Тип диска]} master-узлов — High-IOPS SSD на 20 ГБ.
+   Когда вы {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=создаете]} кластер Kubernetes, Cloud Containers выбирает минимально подходящий {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации]} для его master-узлов. По умолчанию это ВМ с процессором Intel Cascade Lake, 2 CPU и 6 ГБ оперативной памяти. {linkto(../storage#k8s-storage-supported-storage-types)[text=Тип диска]} master-узлов — High-IOPS SSD на 20 ГБ.
 
    На master-узлах по умолчанию включено {linkto(../scale#k8s-scale-types)[text=автоматическое масштабирование]}, поэтому при изменении нагрузки на кластер количество его вычислительных ресурсов будет изменяться автоматически.
 
@@ -86,12 +86,12 @@ API-эндпоинт кластеров Cloud Containers размещен за {
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI) — интеграция с сетевыми подсистемами.
 
-  В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, реализованы плагины, поддерживающие CNI: [Calico](https://projectcalico.docs.tigera.io/about/about-calico) и [Cilium](https://docs.cilium.io/en/stable/index.html) (доступен только для кластеров второго поколения). Они обеспечивают:
+  В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, реализован плагин [Calico](https://projectcalico.docs.tigera.io/about/about-calico), поддерживающий CNI. Он обеспечивает:
 
   - сетевую связность между контейнерами, {linkto(../../reference/pods#k8s-pods)[text=подами]} и узлами кластера;
   - применение и соблюдение [сетевых политик](https://kubernetes.io/docs/concepts/services-networking/network-policies/) (Network Policies) Kubernetes.
 
-  Calico и Cilium интегрируются с платформой {var(cloud)} с помощью SDN Sprut. Подробнее в разделе {linkto(../network#k8s-network)[text=Сеть в кластере]}.
+  Calico интегрируется с платформой {var(cloud)} с помощью SDN Sprut. Подробнее в разделе {linkto(../network#k8s-network)[text=Сеть в кластере]}.
 
 ## {heading(Встроенная поддержка Open Policy Agent)[id=k8s-architecture-opa-gatekeeper]}
 

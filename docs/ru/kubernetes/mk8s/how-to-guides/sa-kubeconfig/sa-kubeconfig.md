@@ -1,0 +1,581 @@
+# {heading(Создание файла kubeconfig для сервисного аккаунта)[id=mk8s-sa-kubeconfig]}
+
+При {linkto(../../connect/kubectl#mk8s-kubectl)[text=подключении с помощью kubectl]} к кластеру Cloud Containers используется [kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), файл конфигурации кластера. Обычно для работы с кластером используется kubeconfig из личного кабинета {var(cloud)}, который настроен на использование {linkto(../../concepts/access-management#mk8s-access-management)[text=технологии единого входа]}. Поэтому при работе с `kubectl` периодически нужно вводить пароль пользователя.
+
+Такой процесс аутентификации неудобен при работе с автоматизированными инструментами, которым нужен доступ к кластеру. Для работы с ними удобнее использовать файл kubeconfig для сервисного аккаунта. Этот kubeconfig позволяет аутентифицироваться с помощью токена с бесконечным временем жизни, без ввода пароля.
+
+## {heading(Подготовительные шаги)[id=mk8s-sa-kubeconfig-prepare]}
+
+{include(/ru/_includes/_create-test-cluster.md)[tags=managed]}
+
+   При создании кластера выберите опцию **Назначить внешний IP**. Прочие параметры кластера выберите на свое усмотрение.
+
+1. {linkto(../../connect/kubectl#mk8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к созданному кластеру с помощью `kubectl`.
+
+   При этом будет использоваться kubeconfig, загруженный из личного кабинета {var(cloud)}.
+
+1. Задайте переменные среды окружения, указывающие на kubeconfig:
+
+   - `VKCLOUD_KUBECONFIG`: путь к kubeconfig, загруженному из личного кабинета {var(cloud)}.
+   - `SA_KUBECONFIG`: путь к kubeconfig для сервисного аккаунта (сам файл будет создан позднее).
+
+   Это упростит дальнейшую работу с `kubectl`.
+
+   {note:info}
+   Путь к вашим файлам kubeconfig может отличаться от примера ниже.
+   {/note}
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   export VKCLOUD_KUBECONFIG="/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml"
+   export SA_KUBECONFIG="/home/user/.kube/sa_kubeconfig.yaml"
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   $VKCLOUD_KUBECONFIG="C:\Users\user\.kube\kubernetes-cluster-1234_kubeconfig.yaml"
+   $SA_KUBECONFIG="C:\Users\user\.kube\sa_kubeconfig.yaml"
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Убедитесь, что после подключения к кластеру есть права на создание необходимых ресурсов Kubernetes:
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create serviceaccount
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create secret
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG auth can-i create clusterrolebinding
+
+   ```
+
+   Для каждой из команд должен быть выведен ответ `yes`.
+
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=скорректируйте роль пользователя {var(cloud)}]}, от имени которого выполняется подключение к кластеру.
+
+   Подробнее о ролевой модели и доступных ролях читайте в разделе {linkto(../../concepts/access-management#mk8s-access-management)[text=Управление доступом]}.
+
+## {heading(1. Создайте сервисный аккаунт и свяжите его с ролью)[id=mk8s-sa-kubeconfig-create-sa]}
+
+1. Создайте сервисный аккаунт `example-sa` в пространстве имен `kube-system`:
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     create serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     create serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   Пример вывода команды:
+
+   ```text
+   serviceaccount/example-sa created
+   ```
+
+1. Выберите кластерную роль, которую нужно назначить сервисному аккаунту.
+
+   Чтобы получить список всех кластерных ролей с подробным описанием, выполните команду:
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG describe clusterroles
+   ```
+
+   При выборе роли следуйте [принципу наименьших привилегий](https://ru.wikipedia.org/wiki/Принцип_минимальных_привилегий), чтобы повысить безопасность при работе с кластером. Подробнее о ролевой модели читайте в [официальной документации Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
+
+   В качестве примера далее будет назначена роль `edit`. Она {linkto(../../concepts/iam-access#mk8s-concepts-iam-k8s-roles)[text=соответствует]} роли `Оператор Kubernetes` в личном кабинете.
+
+1. Свяжите созданный сервисный аккаунт с выбранной кластерной ролью. Для этого создайте ресурс `ClusterRoleBinding` с именем `example-binding`.
+
+   Сервисный аккаунт должен указываться вместе с пространством имен, к которому он принадлежит.
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     create clusterrolebinding example-binding \
+       --serviceaccount=kube-system:example-sa \
+       --clusterrole=edit
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     create clusterrolebinding example-binding `
+       --serviceaccount=kube-system:example-sa `
+       --clusterrole=edit
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   Пример вывода команды:
+
+   ```text
+   clusterrolebinding.rbac.authorization.k8s.io/example-binding created
+   ```
+
+## {heading(2. Получите токен для сервисного аккаунта)[id=mk8s-sa-kubeconfig-get-token]}
+
+1. Создайте секрет `example-token`, содержащий токен для сервисного аккаунта:
+
+   1. Создайте файл манифеста:
+
+      {cut(example-token.yaml)}
+
+      <!-- prettier-ignore -->
+      ```yaml
+      apiVersion: v1
+      kind: Secret
+      type: kubernetes.io/service-account-token
+      metadata:
+        name: example-token
+        namespace: kube-system
+        annotations:
+          kubernetes.io/service-account.name: example-sa
+      ```
+
+      {/cut}
+
+      Пояснения к полям манифеста:
+
+      - `type`: специальный тип секрета `kubernetes.io/service-account-token`. Такой секрет хранит в себе токен для сервисного аккаунта.
+      - `metadata.namespace`: пространство имен для секрета. Секрет должен размещаться в том же пространстве имен, что и сервисный аккаунт.
+      - `metadata.annotations`: специальная аннотация `kubernetes.io/service-account.name` с именем сервисного аккаунта. Токен из созданного секрета будет связан с этим аккаунтом.
+
+   1. Примените файл манифеста:
+
+      ```console
+      kubectl --kubeconfig $VKCLOUD_KUBECONFIG apply -f example-token.yaml
+      ```
+
+      Будет создан секрет с заданными параметрами. Пример вывода команды:
+
+      ```text
+      secret/example-token created
+      ```
+
+1. Убедитесь, что сервисному аккаунту был назначен токен из созданного секрета:
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     describe serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     describe serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   В выводе должно содержаться указание на секрет в поле `Tokens`.
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   Name:                example-sa
+   Namespace:           kube-system
+   Labels:              <none>
+   Annotations:         <none>
+   Image pull secrets:  <none>
+   Mountable secrets:   <none>
+   Tokens:              example-token
+   Events:              <none>
+   ```
+
+   {/cut}
+
+1. Получите значение токена.
+
+   Секрет хранит в себе токен в закодированном виде (схема кодирования [Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)). Токен необходимо декодировать, чтобы его можно было использовать в kubeconfig:
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     get secret example-token -n kube-system \
+     --template={{.data.token}} | base64 --decode
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   [System.Text.Encoding]::UTF8.GetString( `
+     [System.Convert]::FromBase64String( `
+       (kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+          get secret example-token -n kube-system -o json `
+          | ConvertFrom-Json).data.token))
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   Будет выведено значение токена. Сохраните его.
+
+   {note:err}
+   Значение токена — конфиденциальная информация. При его компрометации {linkto(#mk8s-sa-kubeconfig-revoke-token)[text=отзовите токен]}.
+   {/note}
+
+## {heading(4. Создайте kubeconfig для сервисного аккаунта)[id=mk8s-sa-kubeconfig-create]}
+
+1. Создайте основу для этого kubeconfig путем копирования kubeconfig, загруженного из личного кабинета {var(cloud)}.
+
+   ```console
+   cp $VKCLOUD_KUBECONFIG $SA_KUBECONFIG
+   ```
+
+1. (Опционально) Познакомьтесь со структурой kubeconfig:
+
+   ```console
+   kubectl --kubeconfig $SA_KUBECONFIG config view
+   ```
+
+   Будет выведено содержимое kubeconfig в сжатом виде: значения некоторых полей будут опущены.
+
+   {cut(Упрощенный пример kubeconfig)}
+
+   <!-- prettier-ignore -->
+   ```yaml
+   apiVersion: v1
+   clusters: # Кластеры
+     - cluster: <информация о кластере>
+       name: <имя кластера>
+   contexts: # Контексты, в рамках которых идет работа с кластером
+     - context:
+         cluster: <имя кластера>
+         user: <имя пользователя>
+       name: <имя контекста>
+   current-context: <имя текущего контекста>
+   kind: Config
+   preferences: {}
+   users: # Пользователи
+     - name: <имя пользователя>
+       user:
+         token: <данные для аутентификации>
+   ```
+
+   {/cut}
+
+   Kubeconfig содержит в себе все параметры, необходимые для работы с кластером:
+
+   - `clusters`: перечень кластеров и данных для подключения к ним.
+
+     Kubeconfig для кластера Cloud Containers содержит запись о единственном кластере.
+
+   - `users`: перечень пользователей и данных для их аутентификации в кластере.
+
+     Kubeconfig для кластера Cloud Containers содержит запись о единственном пользователе, который аутентифицируется с помощью `keystone-auth`.
+
+   - `contexts`: контекст, в рамках которого работает `kubectl`. В самом простом случае контекст — это комбинация имени кластера и имени пользователя.
+
+     Kubeconfig для кластера Cloud Containers содержит запись о единственном контексте. Этот контекст использует запись о кластере и пользователе, которые уже определены в kubeconfig.
+
+   Когда `kubectl` работает в указанном контексте, он работает с заданным в контексте кластером от имени указанного пользователя.
+
+1. Измените содержимое kubeconfig для сервисного аккаунта, чтобы этот файл содержал в себе параметры, связанные с настроенным ранее сервисным аккаунтом:
+
+   1. Удалите существующего пользователя.
+
+      Этот пользователь соответствует пользователю {var(cloud)} и не должен фигурировать в kubeconfig, который будет использоваться автоматизированными инструментами.
+
+      1. Получите список пользователей:
+
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
+
+         ```console
+         kubectl --kubeconfig $SA_KUBECONFIG \
+           config get-users
+
+         ```
+
+         {/tab}
+
+         {tab(Windows (PowerShell))}
+
+         ```console
+         kubectl --kubeconfig $SA_KUBECONFIG `
+           config get-users
+
+         ```
+
+         {/tab}
+
+         {/tabs}
+
+      1. Удалите пользователя, используя нужное имя из списка:
+
+         {tabs}
+
+         {tab(Linux (bash)/macOS (zsh))}
+
+         ```console
+         kubectl --kubeconfig $SA_KUBECONFIG \
+           config delete-user <имя пользователя>
+
+         ```
+
+         {/tab}
+
+         {tab(Windows (PowerShell))}
+
+         ```console
+         kubectl --kubeconfig $SA_KUBECONFIG `
+           config delete-user <имя пользователя>
+
+         ```
+
+         {/tab}
+
+         {/tabs}
+
+         Пример частичного вывода команды:
+
+         ```text
+         deleted user kubernetes-cluster-1234 from ...sa_kubeconfig.yaml
+         ```
+
+   1. Добавьте нового пользователя `example-sa`.
+
+      Этот пользователь соответствует созданному ранее сервисному аккаунту. Для аутентификации будет использоваться полученный ранее токен.
+
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
+
+      ```console
+      kubectl --kubeconfig $SA_KUBECONFIG \
+        config set-credentials example-sa --token="<значение токена>"
+
+      ```
+
+      {/tab}
+
+      {tab(Windows (PowerShell))}
+
+      ```console
+      kubectl --kubeconfig $SA_KUBECONFIG `
+        config set-credentials example-sa --token="<значение токена>"
+
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+      Пример вывода команды:
+
+      ```text
+      User "example-sa" set.
+      ```
+
+   1. Настройте текущий контекст на использование добавленного пользователя:
+
+      {tabs}
+
+      {tab(Linux (bash)/macOS (zsh))}
+
+      ```console
+      kubectl --kubeconfig $SA_KUBECONFIG \
+        config set-context --current --user="example-sa"
+
+      ```
+
+      {/tab}
+
+      {tab(Windows (PowerShell))}
+
+      ```console
+      kubectl --kubeconfig $SA_KUBECONFIG `
+        config set-context --current --user="example-sa"
+
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+      Пример вывода:
+
+      ```text
+      Context "default/kubernetes-cluster-1234" modified.
+      ```
+
+1. (Опционально) Проверьте обновленное содержимое kubeconfig для сервисного аккаунта:
+
+   ```console
+   kubectl --kubeconfig $SA_KUBECONFIG config view
+   ```
+
+   Этот kubeconfig не должен содержать других пользователей, кроме добавленного ранее `example-sa`. Единственный контекст должен использовать этого пользователя.
+
+   {cut(Пример вывода команды)}
+
+   <!-- prettier-ignore -->
+   ```yaml
+   apiVersion: v1
+   clusters:
+   - cluster:
+       certificate-authority-data: DATA+OMITTED
+       server: https://203.0.113.123:6443
+     name: kubernetes-cluster-1234
+   contexts:
+   - context:
+       cluster: kubernetes-cluster-1234
+       user: example-sa
+     name: default/kubernetes-cluster-1234
+   current-context: default/kubernetes-cluster-1234
+   kind: Config
+   preferences: {}
+   users:
+   - name: example-sa
+     user:
+       token: REDACTED
+   ```
+
+   {/cut}
+
+## {heading(5. Проверьте работу созданного kubeconfig)[id=mk8s-sa-kubeconfig-check]}
+
+Используйте команды `kubectl` и созданный ранее kubeconfig для сервисного аккаунта, чтобы получить информацию о кластере и его ресурсах, например:
+
+1. Получите информацию о кластере:
+
+   ```console
+   kubectl --kubeconfig $SA_KUBECONFIG cluster-info
+   ```
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   Kubernetes control plane is running at https://203.0.113.123:6443
+   CoreDNS is running at https://203.0.113.123:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+   ```
+
+   {/cut}
+
+1. Получите список основных ресурсов в пространстве имен `default`:
+
+   ```console
+   kubectl --kubeconfig $SA_KUBECONFIG get all -n default
+   ```
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+   service/kubernetes   ClusterIP   10.254.0.1   <none>        443/TCP   3d1h
+   ```
+
+   {/cut}
+
+Если при выполнении команд пароль не был запрошен, то полученный kubeconfig можно использовать в комбинации с автоматизированными инструментами для доступа к кластеру Cloud Containers.
+
+{note:err}
+Обеспечьте необходимые меры по защите файла kubeconfig. Он содержит конфиденциальную информацию: значение токена в открытом виде.
+
+При компрометации kubeconfig {linkto(#mk8s-sa-kubeconfig-revoke-token)[text=отзовите токен]}.
+{/note}
+
+## {heading(Отзовите скомпрометированный токен)[id=mk8s-sa-kubeconfig-revoke-token]}
+
+Если созданный ранее токен или содержащий его kubeconfig были скомпрометированы, отзовите токен, чтобы предотвратить несанкционированный доступ к кластеру.
+
+Для этого удалите секрет, который используется для хранения токена:
+
+```console
+kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
+```
+
+## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-sa-kubeconfig-revoke-delete]}
+
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если ресурсы Kubernetes, созданные для проверки работы kubeconfig, вам больше не нужны, удалите их: 
+
+1. Удалите ресурс `example-binding`, секрет `example-token` и сервисный аккаунт `example-sa`:
+
+   {tabs}
+
+   {tab(Linux (bash)/macOS (zsh))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     delete clusterrolebinding example-binding
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     delete secret example-token -n kube-system
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG \
+     delete serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     delete clusterrolebinding example-binding
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     delete secret example-token -n kube-system
+   kubectl --kubeconfig $VKCLOUD_KUBECONFIG `
+     delete serviceaccount example-sa -n kube-system
+
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+{include(/ru/_includes/_delete-test-cluster-short.md)}

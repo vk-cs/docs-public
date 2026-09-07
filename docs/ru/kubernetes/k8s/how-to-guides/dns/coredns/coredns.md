@@ -6,7 +6,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-coredns-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
    Параметры кластера выберите на свое усмотрение.
 

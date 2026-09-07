@@ -7,7 +7,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-vertical-pod-autoscaler-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
 1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
 1. {linkto(../../instructions/addons/advanced-installation/install-advanced-vpa#k8s-install-advanced-vpa)[text=Установите аддон VPA]}, если это еще не сделано.

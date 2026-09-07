@@ -1,6 +1,6 @@
-# {heading(Создание кластера первого поколения с помощью Terraform)[id=k8s-create-terraform]}
+# {heading(Создание кластера с помощью Terraform)[id=k8s-create-terraform]}
 
-Далее описывается создание кластера {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} с помощью Terraform. Также вы можете создать кластер первого поколения {linkto(../create-webui#k8s-create-webui)[text=в личном кабинете {var(cloud)}]}.
+Далее описывается создание кластера с помощью Terraform. Также вы можете создать кластер {linkto(../create-webui#k8s-create-webui)[text=в личном кабинете {var(cloud)}]}.
 
 Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 

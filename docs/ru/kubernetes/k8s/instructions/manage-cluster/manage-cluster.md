@@ -79,10 +79,6 @@ Terraform позволяет получить только часть инфор
 
 {tab(Terraform)}
 
-{note:info}
-Управление через Terraform доступно только для кластеров {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}. 
-{/note}
-
 {include(/ru/_includes/_pre_terraform.md)}   
 1. Выполните команду:
 

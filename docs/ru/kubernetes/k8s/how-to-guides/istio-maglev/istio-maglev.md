@@ -11,10 +11,10 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-im-prepare]}
 
-1. {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
+1. {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
 1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Установите и настройте]} `kubectl`, если это еще не сделано.
 1. {linkto(../../connect/kubectl#k8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
-1. [Установите](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio/install-advanced-istio-mk8s#k8s-install-advanced-istio-mk8s) аддон Istio, если это еще не сделано. Если аддон установлен, переустанавливать его не нужно.
+1. [Установите](/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum#k8s-install-advanced-istio-magnum) аддон Istio, если это еще не сделано. Если аддон установлен, переустанавливать его не нужно.
 
 ## {heading({counter(im)}. Проверьте Istio)[id=k8s-im-check]}
 

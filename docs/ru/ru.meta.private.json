@@ -64,6 +64,44 @@
         "value": "VK Private Cloud"
       }
     ],
+    "kube": [
+      {
+        "buildPoint": "public",
+        "value": "Cloud Containers для кластеров первого поколения"
+      },
+      {
+        "buildPoint": "private",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "private-pg",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "private-pdf",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "private-pg-pdf",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "s3",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "s3-pdf",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "data-p",
+        "value": "Cloud Containers"
+      },
+      {
+        "buildPoint": "data-p-pdf",
+        "value": "Cloud Containers"
+      }
+    ],
     "s3": [
       {
         "buildPoint": "public",

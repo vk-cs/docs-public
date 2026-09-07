@@ -24,13 +24,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/kubernetes/k8s/quick-start"
+                    "link": "/ru/kubernetes/mk8s/quick-start"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/instructions/create-cluster"
+                    "link": "/ru/kubernetes/mk8s/instructions/create-cluster"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/connect"
+                    "link": "/ru/kubernetes/mk8s/connect"
                 }
             ]
         },
