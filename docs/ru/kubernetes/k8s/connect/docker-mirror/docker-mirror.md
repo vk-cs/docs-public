@@ -19,7 +19,7 @@
       docker pull mirror.gcr.io/<ИМЯ_ОБРАЗА>
       ```
   
-  1. {linkto(../../../k8s/quick-start#k8s-quick-start-upload-to-registry)[text=Загрузите]} скачанный образ в приватный репозиторий.
+  1. Загрузите скачанный образ в приватный репозиторий.
 
   {/tab}
 

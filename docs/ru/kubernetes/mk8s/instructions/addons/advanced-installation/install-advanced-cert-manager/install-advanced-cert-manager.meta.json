@@ -1,0 +1,14 @@
+{
+  "title": "Cert-manager",
+  "shortDescription": "",
+  "metaDescription": "Здесь описана настройка и установка аддона cert-manager.",
+  "sectionTitle": "Cert-manager",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

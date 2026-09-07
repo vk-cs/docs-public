@@ -1,0 +1,14 @@
+{
+  "title": "Метки и ограничения",
+  "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
+  "metaDescription": "Основные понятия и объекты сервиса Cloud Containers в VK Cloud. Узнайте о метках (labels) и ограничениях (taints) в Kubernetes",
+  "sectionTitle": "Метки и ограничения",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

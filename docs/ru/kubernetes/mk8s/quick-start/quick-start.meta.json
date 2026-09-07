@@ -1,0 +1,14 @@
+{
+  "title": "Быстрый старт",
+  "shortDescription": "Начало работы с Kubernetes",
+  "metaDescription": "Сервис Cloud Containers от VK Cloud: быстрый старт поможет вам начать работу с сервисом и познакомиться с его возможностями.",
+  "sectionTitle": "Быстрый старт",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

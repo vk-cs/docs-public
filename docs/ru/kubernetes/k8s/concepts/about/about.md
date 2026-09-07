@@ -42,9 +42,9 @@
 - Обеспечение безопасности на всех этапах работы с кластером:
 
   - При сетевом взаимодействии в кластере все соединения шифруются, используются сертификаты.
-  - Можно применять {linkto(../network#k8s-network-cni)[text=сетевые политики]} Calico и Cilium. Подробнее о сетевых политиках в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+  - Можно применять {linkto(../network#k8s-network-cni)[text=сетевую политику Calico]}. Подробнее о сетевых политиках в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
   - Можно применять {linkto(../architecture#k8s-architecture-opa-gatekeeper)[text=ограничительные политики]} Gatekeeper. Подробнее в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
-  - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы {var(cloud)}. Подробнее читайте в разделе {linkto(../access-management#k8s-access-management)[text=Управление доступом]}.
+  - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы {var(cloud)}. Подробнее читайте в разделе {linkto(../iam-access#k8s-concepts-iam)[text=Управление доступом]}.
 
 - {linkto(../../how-to-guides/velero/velero-backup#k8s-velero-backup)[text=Резервное копирование]} кластеров Cloud Containers с помощью Velero.
 

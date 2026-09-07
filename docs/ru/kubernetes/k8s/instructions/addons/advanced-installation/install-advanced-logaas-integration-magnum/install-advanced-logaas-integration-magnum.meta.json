@@ -1,0 +1,14 @@
+{
+  "title": "Fluent Bit для Cloud Logging (logaas-integration)",
+  "shortDescription": "",
+  "metaDescription": "Узнайте, как установить и настроить аддон Fluent Bit для Cloud Logging (logaas-integration) в кластеры первого поколения в сервисе Cloud Containers",
+  "sectionTitle": "Fluent Bit для Cloud Logging (logaas-integration)",
+  "icon": "",
+  "weight": 5,
+  "uuid": "9597739b-32fa-41e7-80b7-054fe3d32676",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

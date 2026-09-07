@@ -1,0 +1,14 @@
+{
+  "title": "Подключение к кластеру",
+  "shortDescription": "Способы подключения к кластеру Cloud Containers",
+  "metaDescription": "К кластеру Cloud Containers и его компонентам можно подключиться несколькими способами. Инструкции по подключению к кластеру Kubernetes в VK Cloud",
+  "sectionTitle": "Подключение к кластеру",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

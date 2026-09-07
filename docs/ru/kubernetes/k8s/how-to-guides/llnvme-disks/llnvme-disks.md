@@ -11,7 +11,7 @@
    
     Дождитесь доступа к этой конфигурации, прежде чем переходить к следующим шагам.
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
 1. В личном кабинете {var(cloud)} {linkto(../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=добавьте]} группу узлов с ВМ на основе конфигурации для LL NVMe:
 

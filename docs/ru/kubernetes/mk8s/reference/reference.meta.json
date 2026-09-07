@@ -1,0 +1,14 @@
+{
+  "title": "Справочник Kubernetes",
+  "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
+  "metaDescription": "Основные понятия и объекты сервиса Cloud Containers на платформе VK Cloud. Принципы работы и примеры взаимодействия с ними",
+  "sectionTitle": "Справочник Kubernetes",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

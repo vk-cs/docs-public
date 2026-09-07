@@ -5,7 +5,7 @@
 Проблема возникает, если невозможно проверить подлинность цифрового сертификата, используемого для {linkto(../../connect/docker-registry#k8s-docker-registry)[text=подключения к реестру Docker]}. Например, для подключения по умолчанию используется самоподписанный сертификат, созданный системой.
 
 {note:info}
-При {linkto(/ru/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=создании кластера]} вы можете добавить адреса доверенных реестров Docker, с которых можно будет загружать и запускать образы контейнеров без проверки подлинности цифрового сертификата.
+При {linkto(/ru/kubernetes/k8s/instructions/create-cluster/create-webui#k8s-create-webui)[text=создании кластера]} вы можете добавить адреса доверенных реестров Docker, с которых можно будет загружать и запускать образы контейнеров без проверки подлинности цифрового сертификата.
 {/note}
 
 ### {heading(Решение)[id=k8s-docker-connect-problem-solution]}

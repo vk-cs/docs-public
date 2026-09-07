@@ -2,11 +2,9 @@
 
 Используйте инструмент [Velero](https://velero.io/docs/main/), чтобы настраивать резервное копирование кластеров по заданному расписанию в формате [cron](https://crontab.guru/every-1-minute) и восстанавливать кластер на основании этого расписания.
 
-{include(/ru/_includes/_velero-magnum-how-to.md)[tags=note-magnum]}
-
 ## {heading(Подготовительные шаги)[id=k8s-backup-schedule-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 1. {linkto(../../../install-tools/velero#k8s-velero)[text=Установите и настройте]} Velero, если это еще не сделано.
 

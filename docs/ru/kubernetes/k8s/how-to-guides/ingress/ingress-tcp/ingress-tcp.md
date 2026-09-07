@@ -10,7 +10,7 @@ Ingress-контроллер можно развернуть {linkto(../../../co
 
 ## {heading(1. Подготовительные шаги)[id=k8s-ingress-tcp-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
    При создании кластера выберите опцию **Назначить внешний IP**.
 

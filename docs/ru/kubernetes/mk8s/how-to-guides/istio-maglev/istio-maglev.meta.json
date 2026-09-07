@@ -1,0 +1,15 @@
+{
+  "title": "Балансировка нагрузки по алгоритмам LEAST_REQUEST и MAGLEV с помощью аддона Istio",
+  "shortDescription": "Как работают алгоритмы внутренней балансировки между подами одного Kubernetes Service",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Балансировка нагрузки по алгоритмам LEAST_REQUEST и MAGLEV",
+  "icon": "",
+  "weight": 50,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

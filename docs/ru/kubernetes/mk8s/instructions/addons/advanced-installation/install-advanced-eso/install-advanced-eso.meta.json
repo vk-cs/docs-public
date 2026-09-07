@@ -1,0 +1,14 @@
+{
+  "title": "External Secrets Operator",
+  "shortDescription": "",
+  "metaDescription": "Установка аддона External Secrets Operator в Kubernetes: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
+  "sectionTitle": "External Secrets Operator",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

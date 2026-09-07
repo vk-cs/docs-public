@@ -1,11 +1,11 @@
-# {heading(Создание кластера первого поколения в личном кабинете)[id=k8s-create-webui]}
+# {heading(Создание кластера в личном кабинете)[id=k8s-create-webui]}
 
-Далее описывается создание кластера Kubernetes {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} из личного кабинета. Также вы можете создать кластер первого поколения с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
+Далее описывается создание кластера Kubernetes из личного кабинета. Также вы можете создать кластер с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
 
-Создание кластеров первого поколения из личного кабинета отключено для новых пользователей и доступно только по запросу через [техническую поддержку](/ru/contacts). По умолчанию {linkto(../../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=доступны]} только кластеры второго поколения: они отличаются улучшенной производительностью и стабильностью.
+При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 
 {note:warn}
-При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
+Создание кластеров {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]} из личного кабинета отключено для новых пользователей и доступно только по запросу через [техническую поддержку](/ru/contacts). По умолчанию [доступны](/ru/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2) только кластеры второго поколения: они отличаются улучшенной производительностью и стабильностью.
 {/note}
 
 ## {heading(Перед созданием кластера)[id=k8s-create-webui-prepare]}

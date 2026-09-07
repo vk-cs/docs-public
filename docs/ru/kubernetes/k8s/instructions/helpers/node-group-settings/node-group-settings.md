@@ -1,6 +1,6 @@
 # {heading(Настройки групп worker-узлов)[id=k8s-node-group-settings]}
 
-Эти настройки задаются при {linkto(../../create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=создании кластера]} или при {linkto(../../manage-node-group#k8s-manage-node-group-add-group)[text=добавлении группы worker-узлов]} в уже существующий кластер:
+Эти настройки задаются при {linkto(../../create-cluster/create-webui#k8s-create-webui)[text=создании кластера]} или при {linkto(../../manage-node-group#k8s-manage-node-group-add-group)[text=добавлении группы worker-узлов]} в уже существующий кластер:
 
 - **Название группы:** должно начинаться с буквы. Может состоять только из латинских строчных букв, цифр и дефисов `-` в качестве разделителя.
 - Настройки worker-узлов:

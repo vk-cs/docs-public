@@ -573,15 +573,15 @@
 
 ### {heading(mcs_k8s_viewer)[id=mcs_k8s_viewer]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer-managed]}
 
 ### {heading(mcs_k8s_editor)[id=mcs_k8s_editor]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor-managed]}
 
 ### {heading(mcs_k8s_admin)[id=mcs_k8s_admin]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin-managed]}
 
 ### {heading(mcs_admin_vm)[id=mcs_admin_vm]}
 

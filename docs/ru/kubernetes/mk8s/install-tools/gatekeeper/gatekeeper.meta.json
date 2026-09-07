@@ -1,0 +1,14 @@
+{
+  "title": "Установка Gatekeeper",
+  "shortDescription": "Как установить контроллер Gatekeeper",
+  "metaDescription": "Узнайте, как установить, проверить работоспособность, удалить контроллер Gatekeeper. Примеры использования Gatekeeper в кластере Kubernetes",
+  "sectionTitle": "Установка Gatekeeper",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

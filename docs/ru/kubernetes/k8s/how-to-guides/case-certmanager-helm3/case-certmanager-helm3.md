@@ -19,7 +19,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-case-certmanager-helm3-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 
 1. Определите версию кластера.
 

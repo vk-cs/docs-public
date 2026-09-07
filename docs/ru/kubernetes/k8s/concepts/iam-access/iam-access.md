@@ -29,15 +29,15 @@
 
 ### {heading(mcs_k8s_viewer)[id=k8s-concepts-iam_viewer]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer-magnum]}
 
 ### {heading(mcs_k8s_editor)[id=k8s-concepts-iam_editor]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor-magnum]}
 
 ### {heading(mcs_k8s_admin)[id=k8s-concepts-iam_admin]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin]}
+{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin-magnum]}
 
 ## {heading(Взаимосвязь ролей личного кабинета и Kubernetes)[id=k8s-concepts-iam-k8s-roles]}
 

@@ -1,0 +1,310 @@
+# {heading(Политика поддержки версий Kubernetes)[id=mk8s-version-support]}
+
+В данный момент в Kubernetes aaS от {var(cloud)} доступны следующие версии Kubernetes:
+
+- 1.35.6
+- 1.34.2
+- 1.33.3
+- 1.32.1
+- 1.31.4
+
+При {linkto(../../../instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=создании нового кластера]} выбирайте последнюю доступную версию Kubernetes. По возможности {linkto(../../../instructions/update#mk8s-update)[text=обновляйте существующие кластеры]} до последней доступной версии.
+
+Если кластер использует устаревшую версию Kubernetes, его корректная работа не гарантируется. В случае возникновения проблем служба технической поддержки не сможет помочь с их решением.
+
+## {heading(Поддержка версий Kubernetes)[id=mk8s-version-support-list]}
+
+Версии Kubernetes поддерживаются на протяжении 14 месяцев с даты релиза в Kubernetes aaS от {var(cloud)}.
+
+За 30 дней до прекращения поддержки версии Kubernetes пользователи получат сообщение об этом по электронной почте и в центре уведомлений личного кабинета.
+
+[cols="1,2,1,1", options="header"]
+|===
+|Версия Kubernetes
+|Официальная дата релиза
+|Kubernetes aaS от VK релиз
+|Kubernetes aaS от VK завершение поддержки
+
+|1.35.6
+|17.12.2025
+|27.08.2026
+|27.10.2027
+
+|1.34.2
+|27.08.2025
+|10.02.2026
+|10.11.2026
+
+|1.33.x
+|15.05.2025
+|20.10.2025
+|20.12.2026
+
+|1.32.x
+|12.12.2024
+|28.05.2025
+|28.07.2026
+
+|1.31.x
+|10.12.2024
+|17.02.2025
+|17.04.2026
+|===
+
+{cut(Предыдущие версии)}
+
+[cols="1,1,1,1", options="header"]
+|===
+|Версия Kubernetes
+|Официальная дата релиза
+|Kubernetes aaS от VK релиз
+|Kubernetes aaS от VK завершение поддержки
+
+|1.30.x
+|10.09.2024
+|10.12.2024
+|10.02.2026
+
+| 1.29.x
+| 17.07.2024
+| 30.08.2024
+| 30.10.2025
+
+| 1.28.x
+| 16.04.2024
+| 30.06.2024
+| 30.08.2025
+
+| 1.27.x  
+| 13.09.2023
+| 11.12.2023
+| 11.02.2025
+
+| 1.26.x  
+| 17 мая 2023
+| 14.08.2023
+| 17.10.2024
+
+| 1.25.x  
+| 17.05.2023
+| 14.06.2023
+| 14.08.2024
+
+| 1.24.x  
+| 8.12.2022  
+| 06.03.2023
+| 06.05.2024
+
+| 1.23.x  
+| 13.04.2022  
+| 15.08.2022
+| 15.10.2023
+
+| 1.22.x  
+| 19.01.022  
+| 18.02.2022
+| 18.04.2023
+
+| 1.21.4  
+| 8 апреля 2021
+| 12.10.2021
+| 12.12.2022
+
+| 1.20.4  
+| 8.12.2020  
+| 01.03.2021
+| 01.05.2022
+
+| 1.19.4
+| 26.08.2020
+| 23.12.2020
+| 23.02.2022
+
+| 1.18.12
+| 23.03.2020
+| 23.12.2020
+| 23.02.2022
+
+| 1.17.8  
+| 9.12.2019  
+| 09.08.2020
+| 09.12.2021
+|===
+
+{/cut}
+
+Историю изменений версий можно посмотреть в разделе {linkto(#mk8s-version-support-version-history)[text=История версий Kubernetes]}.
+
+## {heading(Поддержка функций сервиса в версиях Kubernetes)[id=mk8s-version-support-features-list]}
+
+Новые функции добавляются во все версии Kubernetes, за исключением случаев несовместимости функции и версии.
+
+[cols="2,1,1,1,1", options="header"]
+|===
+|Название
+|1.35.х–1.27.x
+|1.26.x–1.24.x
+|1.23.x–1.21.4
+|1.20.x–1.17.x
+
+|Настройки масштабирования групп узлов
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Инвалидация ключевой пары
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Изменение размера диска Prometheus
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Изменение типа виртуальной машины Master
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Обновление версии кластера
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Метки и ограничения
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Узлы кластера на AlmaLinux
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|Интеграция с IAM облака {var(cloud)}
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|Автоматическое масштабирование master-узлов кластера
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|Поддержка GPU
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|===
+
+## {heading(История версий Kubernetes)[id=mk8s-version-support-version-history]}
+
+[cols="1,1,2", options="header"]
+|===
+|Версия Kubernetes
+|Изменения в Kubernetes
+|Изменения в сервисе Kubernetes aaS
+
+|1.35.6
+|[Kubernetes v1.35: Timbernetes](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/)
+|Обновление пакетов:
+
+- CoreDNS обновлено до 1.14.6.
+- Helm обновлен до 3.21.3.
+- Metrics Server обновлен до 0.9.0
+
+|1.34.2
+|[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.33.1
+|[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
+|Обновление пакетов:
+
+- CoreDNS обновлено до 1.12.3.
+- Calico обновлено до 3.30.2.
+- Helm обновлен до 3.18.4
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Добавлена возможность {linkto(../../../how-to-guides/gpu-operator#mk8s-gpu-operator)[text=использовать и управлять GPU]} в кластерах Kubernetes
+
+|===
+
+{cut(Предыдущие версии)}
+
+[cols="1,1,2", options="header"]
+|===
+|Версия Kubernetes
+|Изменения в Kubernetes
+|Изменения в сервисе Kubernetes aaS
+
+|1.30.5
+|[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.29.7
+|[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.28.9
+|[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.27.6
+|[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
+|Реализовано {linkto(../../scale#mk8s-scale-autoscaling)[text=автоматическое масштабирование]} master-узлов кластера
+
+|1.26.5
+|[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
+|Обновление пакетов:
+
+- Calico обновлено до 3.26.1.
+- Helm обновлен до 3.12.2.
+- Gatekeeper обновлен до 3.12.0
+
+|1.25.1
+|[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.24.9
+|[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
+|Calico обновлено до 3.25.0
+
+|1.23.6
+|[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
+|Добавлена {linkto(../../access-management#mk8s-access-management)[text=интеграция с IAM облака {var(cloud)}]}
+
+|1.22.6
+|[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
+|На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
+
+По умолчанию устанавливается ограничение на потребляемые вычислительные ресурсы ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) для пространств имен (namespace)
+
+|1.21.4
+|[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
+|На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 8
+
+|1.20.4
+|[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+|[Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
+
+Изменен [формат хранения логов](../../../../../cases/cases-logs/case-fluent-bit)
+
+|===
+{/cut}

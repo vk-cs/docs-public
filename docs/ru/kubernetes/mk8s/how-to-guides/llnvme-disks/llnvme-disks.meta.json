@@ -1,0 +1,14 @@
+{
+  "title": "Подключение дисков LL NVMe к worker-узлам",
+  "shortDescription": "Как подключить диск LL NVMe к worker-узлам кластера Kubernetes",
+  "metaDescription": "LL NVMe (Low Latency NVMe) — локальные диски с быстрым откликом. Узнайте, как подключить диск LL NVMe к worker-узлам кластера Kubernetes в VK Cloud",
+  "sectionTitle": "Подключение дисков LL NVMe к worker-узлам",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

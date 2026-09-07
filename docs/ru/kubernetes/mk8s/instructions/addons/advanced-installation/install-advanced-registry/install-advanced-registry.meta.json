@@ -1,0 +1,14 @@
+{
+  "title": "Docker Registry",
+  "shortDescription": "",
+  "metaDescription": "Настройка и установка аддона реестра Docker.",
+  "sectionTitle": "Docker Registry",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

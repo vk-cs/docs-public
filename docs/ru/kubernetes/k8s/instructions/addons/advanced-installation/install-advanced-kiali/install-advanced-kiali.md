@@ -5,15 +5,10 @@ Kiali — консоль аддона Istio. Позволяет строить �
 {/ifndef}
 
 {ifdef(public)}
-
-{note:info}
-Этот аддон доступен только для кластеров {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=первого поколения]}.
-{/note}
-
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-kiali-prepare]}
 
 {include(/ru/_includes/_addon-prep.md)}
-1. {linkto(../install-advanced-istio#k8s-install-advanced-istio)[text=Установите аддон]} `istio`.
+1. {linkto(../install-advanced-istio-magnum#k8s-install-advanced-istio)[text=Установите аддон]} `istio`.
 {/ifdef}
 
 ## {heading(Установка аддона)[id=k8s-install-advanced-kiali-install]}

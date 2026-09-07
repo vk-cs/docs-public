@@ -1,0 +1,470 @@
+# {heading(Работа с cert-manager с помощью Helm 3)[id=mk8s-case-certmanager-helm3]}
+
+С помощью инструмента [cert-manager](https://cert-manager.io/) можно управлять сертификатами в кластерах Kubernetes:
+
+* Выпускать сертификаты, в том числе самоподписанные (self-signed), путем отправки запросов к источникам, которые выступают в роли центра сертификации (certificate authority, CA).
+
+  Примеры источников:
+
+  * провайдеры решений по кибербезопасности, такие как [Venafi](https://www.venafi.com/);
+  * провайдеры сертификатов, такие как [Let’s Encrypt](https://letsencrypt.org/);
+  * хранилища секретов, такие как [HashiCorp Vault](https://www.vaultproject.io/);
+  * локальные контейнеры, содержащие внутри себя публичную часть сертификата и приватный ключ.
+
+* Автоматически перевыпускать сертификаты с истекающим сроком действия.
+
+Выпущенный с помощью `cert-manager` сертификат будет доступен другим ресурсам Kubernetes. Например, его можно использовать для Ingress.
+
+Далее будет показано, как с помощью [Helm 3](https://helm.sh/) выполняются установка и обновление `cert-manager` в кластерах Kubernetes. Также будет выпущен самоподписанный сертификат для проверки работоспособности `cert-manager`.
+
+## {heading(Подготовительные шаги)[id=mk8s-case-certmanager-helm3-prepare]}
+
+{include(/ru/_includes/_create-test-cluster.md)[tags=managed]}
+
+1. Определите версию кластера.
+
+1. На хосте, с которого планируется подключаться к кластеру, {linkto(../../connect/kubectl#mk8s-kubectl)[text=установите и настройте]} `kubectl`, если это еще не сделано.
+
+1. {linkto(../../connect/kubectl#mk8s-kubectl-check-connection)[text=Подключитесь]} к кластеру при помощи `kubectl`.
+
+1. На хосте, с которого планируется подключаться к кластеру, [установите](https://helm.sh/docs/intro/install/) Helm версии 3.0.0 или выше, если утилита еще не установлена.
+
+   Выберите для установки версию Helm, которая [совместима](https://helm.sh/docs/topics/version_skew/) с кластером.
+
+## {heading(1. Добавьте репозиторий и выберите версию для установки)[id=mk8s-case-certmanager-helm3-add-repo]}
+
+1. Добавьте репозиторий `cert-manager`:
+
+   ```console
+   helm repo add jetstack https://charts.jetstack.io
+   ```
+
+1. Обновите кеш чартов (charts):
+
+   ```console
+   helm repo update
+   ```
+
+1. Получите список доступных чартов `cert-manager` и их версий:
+
+   ```console
+   helm search repo jetstack -l
+   ```
+
+1. Выберите версию `cert-manager`, которую нужно установить в кластер.
+
+   Таблица совместимости версий `cert-manager` и Kubernetes [приведена в официальной документации cert-manager](https://cert-manager.io/docs/installation/supported-releases/).
+
+   {note:info}
+   Далее будет устанавливаться `cert-manager` версии `1.11.3`, чтобы дополнительно продемонстрировать {linkto(#mk8s-case-certmanager-helm3-upd-cm)[text=обновление]} до версии `1.12.3`.
+
+   Вы можете выбрать любую подходящую вам версию. Скорректируйте приведенные ниже команды, чтобы они соответствовали выбранной версии.
+   {/note}
+
+## {heading(2. Установите cert-manager)[id=mk8s-case-certmanager-helm3-install-cm]}
+
+1. Установите Custom Resource Definitions (CRDs), необходимые для работы `cert-manager`.
+
+   Установка CRDs будет выполнена вручную с помощью `kubectl`. [Рекомендуется](https://cert-manager.io/docs/installation/helm/#crd-considerations) использовать этот метод, поскольку он наиболее безопасный.
+
+   Выполните команду:
+
+   ```console
+   kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.3/cert-manager.crds.yaml
+   ```
+
+1. Установите выбранную версию `cert-manager`.
+
+   Эта команда установит релиз с именем `cert-manager` указанной версии в пространство имен (namespace) `cert-manager`. Если такого пространства в кластере не существует, то оно будет создано автоматически.
+
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
+
+   ```console
+   helm install cert-manager jetstack/cert-manager \
+     --version v1.11.3 \
+     --namespace cert-manager \
+     --create-namespace
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   helm install cert-manager jetstack/cert-manager `
+     --version v1.11.3 `
+     --namespace cert-manager `
+     --create-namespace
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   При успешном завершении установки в сообщении от Helm будет выведено:
+
+   * `STATUS`: `deployed`;
+   * `NOTES`: `cert-manager v1.11.3 has been deployed successfully!`.
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   NAME: cert-manager
+   LAST DEPLOYED: Thu Aug 17 15:06:35 2023
+   NAMESPACE: cert-manager
+   STATUS: deployed
+   REVISION: 1
+   TEST SUITE: None
+   NOTES:
+   cert-manager v1.11.3 has been deployed successfully!
+   
+   In order to begin issuing certificates, you will need to set up a ClusterIssuer
+   or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
+   
+   More information on the different types of issuers and how to configure them
+   can be found in our documentation:
+   
+   https://cert-manager.io/docs/configuration/
+   
+   For information on how to configure cert-manager to automatically provision
+   Certificates for Ingress resources, take a look at the `ingress-shim`
+   documentation:
+   
+   https://cert-manager.io/docs/usage/ingress/
+   ```
+
+   {/cut}
+
+## {heading(3. Проверьте работоспособность cert-manager)[id=mk8s-case-certmanager-helm3-check-cm]}
+
+1. Проверьте, что в пространстве имен `cert-manager` были успешно созданы необходимые поды, и что они находятся в состоянии `Running`:
+
+   ```console
+   kubectl get pods -n cert-manager
+   ```
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   NAME                                       READY   STATUS    RESTARTS   AGE
+   cert-manager-...                           1/1     Running   0          3m20s
+   cert-manager-cainjector-...                1/1     Running   0          3m20s
+   cert-manager-webhook-...                   1/1     Running   0          3m20s
+   ```
+
+   {/cut}
+
+1. В тестовых целях выпустите самоподписанный сертификат:
+
+   1. Создайте файл манифеста:
+
+      {cut(cert-manager-test-resources.yaml)}
+
+      ```yaml
+      apiVersion: v1
+      kind: Namespace
+      metadata:
+        name: cert-manager-test
+      ---
+      apiVersion: cert-manager.io/v1
+      kind: Issuer
+      metadata:
+        name: test-selfsigned
+        namespace: cert-manager-test
+      spec:
+        selfSigned: {}
+      ---
+      apiVersion: cert-manager.io/v1
+      kind: Certificate
+      metadata:
+        name: selfsigned-cert
+        namespace: cert-manager-test
+      spec:
+        dnsNames:
+          - example.com
+        secretName: selfsigned-cert-tls
+        issuerRef:
+          name: test-selfsigned
+      ```
+
+      {/cut}
+
+      В этом манифесте описаны:
+
+      * пространство имен `cert-manager-test`, в которое будут помещены ресурсы `Issuer` и `Certificate`;
+      * ресурс `Issuer`, который отвечает за выпуск самоподписанных сертификатов;
+      * ресурс `Certificate` с параметрами самоподписанного сертификата.
+
+   1. Примените файл манифеста.
+
+      ```console
+      kubectl apply -f cert-manager-test-resources.yaml
+      ```
+
+      Будут созданы описанные в манифесте ресурсы. Также `cert-manager` автоматически создаст другие необходимые ресурсы.
+
+   1. Проверьте, что были созданы все необходимые ресурсы:
+
+      ```console
+      kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges,secrets -n cert-manager-test
+      ```
+
+      В выводе должны присутствовать:
+
+      * `Issuer` и `Certificate`, конфигурация которых описана в манифесте, в статусе `READY: True`;
+      * `CertificateRequest` в статусе `READY: True`;
+      * `Secret`, содержащий в себе данные сертификата.
+
+      {cut(Пример вывода команды)}
+
+      ```text
+      NAME                                     READY   AGE
+      issuer.cert-manager.io/test-selfsigned   True    39m
+      
+      NAME                                          READY   SECRET                AGE
+      certificate.cert-manager.io/selfsigned-cert   True    selfsigned-cert-tls   39m
+      
+      NAME                                                       APPROVED   DENIED   READY   ISSUER            REQUESTOR                                         AGE
+      certificaterequest.cert-manager.io/selfsigned-cert-...     True                True    test-selfsigned   system:serviceaccount:cert-manager:cert-manager   39m
+      
+      NAME                         TYPE                DATA   AGE
+      secret/selfsigned-cert-tls   kubernetes.io/tls   3      39m
+      ```
+      {/cut}
+
+   1. Проверьте статус сертификата:
+
+      ```console
+      kubectl describe certificate selfsigned-cert -n cert-manager-test
+      ```
+
+      В случае успешного выпуска сертификата:
+
+      * Информация о статусе (`Status`) будет содержать строку `Certificate is up to date and has not expired`.
+      * В списке событий (`Events`) будет событие c сообщением `The certificate has been successfully issued`.
+
+      {cut(Пример части вывода команды)}
+
+      ```text
+      ...
+
+      Status:
+        Conditions:
+          Last Transition Time:  2023-08-17T08:11:27Z
+          Message:               Certificate is up to date and has not expired
+          Observed Generation:   1
+          Reason:                Ready
+          Status:                True
+          Type:                  Ready
+        Not After:               2023-11-15T08:11:27Z
+        Not Before:              2023-08-17T08:11:27Z
+        Renewal Time:            2023-10-16T08:11:27Z
+        Revision:                1
+      Events:
+        Type    Reason     Age    From                                       Message
+        ----    ------     ----   ----                                       -------
+        Normal  Issuing    3m16s  cert-manager-certificates-trigger          Issuing certificate as Secret does not exist
+        Normal  Generated  3m16s  cert-manager-certificates-key-manager      Stored new private key in temporary Secret resource "selfsigned-cert-..."
+        Normal  Requested  3m16s  cert-manager-certificates-request-manager  Created new CertificateRequest resource "selfsigned-cert-..."
+        Normal  Issuing    3m16s  cert-manager-certificates-issuing          The certificate has been successfully issued
+      ```
+
+      {/cut}
+
+   Если сертификат был выпущен успешно, то `cert-manager` корректно установлен и работает.
+
+## {heading(4. (Опционально) Создайте резервную копию ресурсов cert-manager)[id=mk8s-case-certmanager-helm3-create-backup]}
+
+{note:info}
+Создание резервной копии [рекомендовано](https://cert-manager.io/docs/tutorials/backup) в целях безопасности перед {linkto(#mk8s-case-certmanager-helm3-upd-cm)[text=обновлением]} `cert-manager`.
+{/note}
+
+Будет создана резервная копия ресурсов `Issuer`, `ClusterIssuer` и `Certificate`. В нее не входят:
+
+* Ресурсы `CertificateRequests`. [Не рекомендуется](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration) включать такие ресурсы в резервную копию, поскольку это может усложнить восстановление из резервной копии.
+
+* Секреты, которые непосредственно хранят в себе данные сертификатов и в том числе содержат приватный ключ.
+
+  {note:warn}
+  Если при восстановлении из резервной копии для ресурса `Cerificate` не будет найдено соответствующего секрета, то [сертификат будет перевыпущен](https://cert-manager.io/docs/tutorials/backup/#backing-up-cert-manager-resource-configuration).
+  {/note}
+
+Чтобы создать резервную копию, выполните команду:
+
+{tabs}
+
+{tab(Linux (bash) / macOS (zsh))}
+
+```console
+kubectl get -o yaml \
+  --all-namespaces \
+  issuer,clusterissuer,certificate \
+> cert-manager-backup.yaml
+```
+
+{/tab}
+
+{tab(Windows (PowerShell))}
+
+```console
+kubectl get -o yaml `
+  --all-namespaces `
+  issuer,clusterissuer,certificate `
+> cert-manager-backup.yaml
+```
+
+{/tab}
+
+{/tabs}
+
+О продвинутом резервном копировании и восстановлении из резервной копии читайте в [официальной документации cert-manager](https://cert-manager.io/docs/tutorials/backup).
+
+## {heading(5. Обновите cert-manager)[id=mk8s-case-certmanager-helm3-upd-cm]}
+
+1. Посмотрите версию установленного релиза `cert-manager`:
+
+   ```console
+   helm list --namespace cert-manager
+   ```
+
+1. Обновите кеш чартов:
+
+   ```console
+   helm repo update
+   ```
+
+1. Получите список доступных чартов `cert-manager` и их версий:
+
+   ```console
+   helm search repo jetstack -l
+   ```
+
+1. Изучите официальную документацию `cert-manager`, [посвященную обновлению](https://cert-manager.io/docs/installation/upgrading/). Она содержит рекомендации по обновлению, список критичных изменений (breaking changes) и другую полезную информацию.
+
+   В частности [рекомендуется](https://cert-manager.io/docs/installation/upgrading/) обновляться на одну минорную версию за раз (например, 1.**11**.3 → 1.**12**.3).
+
+1. Выберите версию, на которую нужно обновиться.
+
+   Таблица совместимости версий `cert-manager` и Kubernetes [приведена в официальной документации cert-manager](https://cert-manager.io/docs/installation/supported-releases/).
+
+   {note:info}
+   Далее будет выполнено обновление с версии `1.11.3` на версию `1.12.3`.
+
+   Если ранее была установлена другая версия `cert-manager`, выберите нужную версию для обновления с учетом рекомендаций выше.
+   {/note}
+
+1. Обновите установленные в кластере CRDs.
+
+   Поскольку ранее эти CRDs были {linkto(#mk8s-case-certmanager-helm3-install-cm)[text=установлены вручную]}, обновите их также вручную перед обновлением самого `cert-manager`.
+
+   ```console
+   kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
+   ```
+
+1. Обновите релиз `cert-manager` до выбранной версии:
+
+   {tabs}
+
+   {tab(Linux (bash) / macOS (zsh))}
+
+   ```console
+   helm upgrade cert-manager jetstack/cert-manager \
+     --version v1.12.3 \
+     --namespace cert-manager
+   ```
+
+   {/tab}
+
+   {tab(Windows (PowerShell))}
+
+   ```console
+   helm upgrade cert-manager jetstack/cert-manager `
+     --version v1.12.3 `
+     --namespace cert-manager
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   При успешном завершении обновления в сообщении от Helm будет выведено:
+
+   * `Release "cert-manager" has been upgraded. Happy Helming!`;
+   * `STATUS`: `deployed`;
+   * `NOTES`: `cert-manager v1.12.3 has been deployed successfully!`.
+
+   {cut(Пример вывода команды)}
+
+   ```text
+   Release "cert-manager" has been upgraded. Happy Helming!
+   NAME: cert-manager
+   LAST DEPLOYED: Thu Aug 17 15:17:35 2023
+   NAMESPACE: cert-manager
+   STATUS: deployed
+   REVISION: 2
+   TEST SUITE: None
+   NOTES:
+   cert-manager v1.12.3 has been deployed successfully!
+   
+   In order to begin issuing certificates, you will need to set up a ClusterIssuer
+   or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
+   
+   More information on the different types of issuers and how to configure them
+   can be found in our documentation:
+   
+   https://cert-manager.io/docs/configuration/
+   
+   For information on how to configure cert-manager to automatically provision
+   Certificates for Ingress resources, take a look at the `ingress-shim`
+   documentation:
+   
+   https://cert-manager.io/docs/usage/ingress/
+   ```
+
+   {/cut}
+
+## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-case-certmanager-helm3-delete]}
+
+Работающий кластер тарифицируется и потребляет вычислительные ресурсы. Если инструмент `cert-manager` и ресурсы Kubernetes, созданные для проверки его работы, вам больше не нужны, удалите их:
+
+1. Удалите ресурсы, описанные в манифесте `cert-manager-test-resources.yaml`:
+
+   ```console
+   kubectl delete -f cert-manager-test-resources.yaml
+   ```
+
+   {note:warn}
+   Будет удалено пространство имен `cert-manager-test` со всем содержимым, включая дополнительные ресурсы, автоматически созданные `cert-manager`.
+   {/note}
+
+1. Удалите `cert-manager` и связанные с ним ресурсы:
+
+   1. Убедитесь, что в кластере больше нет ресурсов, созданных `cert-manager`:
+
+      ```console
+      kubectl get issuers,clusterissuers,certificates,certificaterequests,orders,challenges --all-namespaces
+      ```
+
+      Если такие ресурсы есть — удалите их.
+
+   1. Удалите релиз `cert-manager`:
+
+      ```console
+      helm delete cert-manager --namespace cert-manager
+      ```
+
+   1. Удалите пространство имен `cert-manager`:
+
+      ```console
+      kubectl delete ns cert-manager
+      ```
+
+   1. Удалите установленные в кластер CRDs для `cert-manager`:
+
+      ```console
+      kubectl delete -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
+      ```
+
+{include(/ru/_includes/_delete-test-cluster-short.md)}

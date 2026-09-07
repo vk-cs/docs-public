@@ -28,7 +28,7 @@
 
 ## {heading(Подготовительные шаги)[id=k8s-load-balancer-prepare]}
 
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
 1. {linkto(../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
 ## {heading(1. Создайте приложение)[id=k8s-load-balancer-create-app]}

@@ -1765,7 +1765,7 @@
   },
   {
     "source": "/ru/base/k8s/k8s-start",
-    "destination": "/ru/kubernetes/k8s/quick-start",
+    "destination": "/ru/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -17605,7 +17605,7 @@
   },
   {
     "source": "/ru/base/k8s/quickstart",
-    "destination": "/ru/kubernetes/k8s/quick-start",
+    "destination": "/ru/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -17695,7 +17695,7 @@
   },
   {
     "source": "/ru/base/k8s/operations/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
     "permanent": false,
     "locale": false
   },
@@ -17707,7 +17707,7 @@
   },
   {
     "source": "/ru/base/k8s/operations/addons/advanced-installation/install-advanced-istio",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
     "permanent": false,
     "locale": false
   },
@@ -23743,7 +23743,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/quickstart",
-    "destination": "/ru/kubernetes/k8s/quick-start",
+    "destination": "/ru/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -23839,7 +23839,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
     "permanent": false,
     "locale": false
   },
@@ -23851,7 +23851,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-istio",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
     "permanent": false,
     "locale": false
   },
@@ -28783,7 +28783,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
     "permanent": false,
     "locale": false
   },
@@ -28801,7 +28801,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
     "permanent": false,
     "locale": false
   },
@@ -33421,7 +33421,7 @@
   },
   {
     "source": "/ru/intro/onboarding/quick-start/kubernetes",
-    "destination": "/ru/kubernetes/k8s/quick-start",
+    "destination": "/ru/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },

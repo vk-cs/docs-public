@@ -1,0 +1,14 @@
+{
+  "title": "Создание кластера с помощью Terraform",
+  "metaDescription": "Пошаговая инструкция по созданию кластера Kubernetes с помощью Terraform в VK Cloud: подготовка, описание конфигурации, выбор версии Kubernetes, настройка master-узлов, группы worker-узлов, работа с балансировщиками и аддонами",
+  "sectionTitle": "Создание кластера с помощью Terraform",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "hidden": true,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

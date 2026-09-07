@@ -1,0 +1,14 @@
+{
+  "title": "Вспомогательная информация",
+  "shortDescription": "Дополнительные сведения о Terraform и настройках групп worker-узлов",
+  "metaDescription": "Узнайте, как использовать Terraform для управления сервисом Cloud Containers. Полный список настроек групп worker-узлов кластера Kubernetes",
+  "sectionTitle": "Вспомогательная информация",
+  "icon": "",
+  "weight": 50,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
