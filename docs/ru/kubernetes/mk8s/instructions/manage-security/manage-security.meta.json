@@ -5,7 +5,7 @@
   "sectionTitle": "Управление политиками безопасности",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "b06f0ce3-8d5f-41e7-8856-d8bbe471af48",
   "build": {
     "for": [
       "public"

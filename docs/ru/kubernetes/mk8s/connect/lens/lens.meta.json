@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к кластеру с помощью Lens",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "0af6581d-495f-41b8-89d8-6cf5729e9b75",
   "build": {
     "for": [
       "public"

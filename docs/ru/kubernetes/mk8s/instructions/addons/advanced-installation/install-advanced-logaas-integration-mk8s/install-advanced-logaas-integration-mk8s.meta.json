@@ -5,8 +5,10 @@
   "sectionTitle": "Fluent Bit для Cloud Logging (logaas-integration)",
   "icon": "",
   "weight": 7,
-  "additionalUuids": ["4c28be68-7dc3-414a-a9ac-76dc02ff5d08"],
-  "uuid": "",
+  "additionalUuids": [
+    "4c28be68-7dc3-414a-a9ac-76dc02ff5d08"
+  ],
+  "uuid": "c3c18865-4a42-4113-a944-1fe7753e6d3c",
   "build": {
     "for": [
       "public"

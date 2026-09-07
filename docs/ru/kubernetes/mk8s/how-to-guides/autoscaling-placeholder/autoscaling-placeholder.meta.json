@@ -5,7 +5,7 @@
   "sectionTitle": "Резервирование узлов в группе",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "4910dd97-e70c-4afd-b2f9-c815128ddb03",
   "build": {
     "for": [
       "public"

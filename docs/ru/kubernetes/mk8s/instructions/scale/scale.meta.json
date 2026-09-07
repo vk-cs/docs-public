@@ -5,7 +5,7 @@
   "sectionTitle": "Масштабирование кластера",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "e8adf7fb-d433-4fb3-b20c-16fa9a84fa26",
   "build": {
     "for": [
       "public"

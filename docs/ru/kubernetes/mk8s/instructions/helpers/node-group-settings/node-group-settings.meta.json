@@ -5,7 +5,7 @@
   "sectionTitle": "Настройки групп worker-узлов",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "a4eb40c2-ec29-40ba-9288-6719632e004a",
   "build": {
     "for": [
       "public"

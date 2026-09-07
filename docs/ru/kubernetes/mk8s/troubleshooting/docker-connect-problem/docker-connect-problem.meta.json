@@ -5,7 +5,7 @@
   "sectionTitle": "Не получается подключиться к Docker",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "e32a75e9-8c20-4818-9e7f-f94cbefca632",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка Canary Deployment Ingress",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "5de6f015-db6d-469e-a646-9c955392b3c5",
   "build": {
     "for": [
       "public"

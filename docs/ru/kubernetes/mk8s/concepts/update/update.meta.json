@@ -5,7 +5,7 @@
   "sectionTitle": "Обновление версии кластера",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "7cf90646-f245-409c-9da8-94abbcb798cb",
   "build": {
     "for": [
       "public"

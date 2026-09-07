@@ -5,7 +5,7 @@
   "sectionTitle": "Не работает режим RWX",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "45762126-d3bd-42ad-bdb5-f5ad020fe187",
   "build": {
     "for": [
       "public"

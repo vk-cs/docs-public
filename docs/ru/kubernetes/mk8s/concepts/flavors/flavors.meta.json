@@ -5,7 +5,7 @@
   "sectionTitle": "Доступные вычислительные ресурсы",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "1fd44e66-a344-4f94-8d4c-070aa8155aa9",
   "build": {
     "for": [
       "public"

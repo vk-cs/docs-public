@@ -5,7 +5,7 @@
   "sectionTitle": "Политики безопасности",
   "icon": "",
   "weight": 14,
-  "uuid": "",
+  "uuid": "054a5b81-09a1-4e27-be6c-a673713a1698",
   "build": {
     "for": [
       "public"

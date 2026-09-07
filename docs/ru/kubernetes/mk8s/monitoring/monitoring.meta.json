@@ -5,7 +5,7 @@
   "sectionTitle": "Мониторинг кластера",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "093a2949-0d5b-4914-8a43-8a0ca1040400",
   "build": {
     "for": [
       "public"

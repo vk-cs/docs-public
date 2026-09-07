@@ -5,7 +5,7 @@
   "sectionTitle": "Версии компонентов Kubernetes",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "e4153eeb-2b37-4c80-8ee9-7829ef0c6b6f",
   "build": {
     "for": [
       "public"

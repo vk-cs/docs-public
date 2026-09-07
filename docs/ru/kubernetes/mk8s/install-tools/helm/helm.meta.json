@@ -5,7 +5,7 @@
   "sectionTitle": "Установка Helm",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "a526d925-4c24-484c-b31a-52593823b755",
   "build": {
     "for": [
       "public"

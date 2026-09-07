@@ -5,7 +5,7 @@
   "sectionTitle": "Управление доступом",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "d44183a1-8068-49a0-9820-bf8fe7d037ff",
   "build": {
     "for": [
       "public"

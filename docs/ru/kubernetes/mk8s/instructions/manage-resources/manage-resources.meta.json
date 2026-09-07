@@ -5,7 +5,7 @@
   "sectionTitle": "Управление ресурсами кластера в личном кабинете",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "76e0713e-ae72-4c49-8015-573da88e06f3",
   "build": {
     "for": [
       "public"

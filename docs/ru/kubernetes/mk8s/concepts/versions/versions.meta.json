@@ -5,7 +5,7 @@
   "sectionTitle": "О версиях и компонентах Kubernetes",
   "icon": "",
   "weight": 11,
-  "uuid": "",
+  "uuid": "44b87c84-2943-4cd7-a03e-f4bd1d050e5c",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка локального DNS-кеша",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "3829f41c-b49c-41d1-b769-6e1ca3758ce3",
   "build": {
     "for": [
       "public"

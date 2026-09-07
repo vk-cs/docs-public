@@ -5,7 +5,7 @@
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "21d32175-06c6-490c-835d-0ea0719cbb7a",
   "build": {
     "for": [
       "public"

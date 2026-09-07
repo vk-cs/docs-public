@@ -5,7 +5,7 @@
   "sectionTitle": "Добавление статических DNS-записей",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "44b7865e-7590-4f60-a69a-3cf2ab0fb1dd",
   "build": {
     "for": [
       "public"

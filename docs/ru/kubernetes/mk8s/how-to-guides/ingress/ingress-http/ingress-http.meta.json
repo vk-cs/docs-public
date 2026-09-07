@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "96456542-e9de-4cb4-850b-3845a15dd2f3",
   "build": {
     "for": [
       "public"

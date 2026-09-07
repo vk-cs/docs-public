@@ -5,7 +5,7 @@
   "sectionTitle": "Автоматическое масштабирование worker-узлов с помощью Cluster Autoscaler",
   "icon": "",
   "weight": 10,
-  "uuid": "",
+  "uuid": "4b564b0f-a89c-4e9a-9dca-5f5a75bcd309",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Масштабирование узлов кластера",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "10c95e13-acb7-423a-a342-a413be615cea",
   "build": {
     "for": [
       "public"

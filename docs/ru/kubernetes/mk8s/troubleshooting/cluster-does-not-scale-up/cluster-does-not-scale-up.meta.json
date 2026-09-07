@@ -5,7 +5,7 @@
   "sectionTitle": "Не добавляются новые узлы при автоматическом масштабировании",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "b125acd9-5172-4dc9-a03e-cbe8123e695c",
   "build": {
     "for": [
       "public"

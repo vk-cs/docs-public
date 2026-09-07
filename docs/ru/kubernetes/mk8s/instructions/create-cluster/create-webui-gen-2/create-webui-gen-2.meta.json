@@ -4,7 +4,7 @@
   "sectionTitle": "Создание кластера в личном кабинете",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "dc34e02c-9279-4b2c-934c-8755e859d447",
   "build": {
     "for": [
       "public"

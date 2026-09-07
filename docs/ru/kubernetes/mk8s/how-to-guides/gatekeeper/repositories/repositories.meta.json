@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка разрешенных репозиториев",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "289d5faf-f6b6-49ca-afb2-9c6f79985948",
   "build": {
     "for": [
       "public"

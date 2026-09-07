@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание Ingress-контроллера с TCP-балансировщиком",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "62303a1a-f4d0-4581-a63c-f9986f9316cf",
   "build": {
     "for": [
       "public"

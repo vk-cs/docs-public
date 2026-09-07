@@ -5,7 +5,7 @@
   "sectionTitle": "Ingress NGINX",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "911b14bd-bf77-4fe5-9adb-4750256215d5",
   "build": {
     "for": [
       "public"

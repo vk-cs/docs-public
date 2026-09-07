@@ -5,7 +5,7 @@
   "sectionTitle": "Архитектура сервиса",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "f50a8701-b18d-4fcb-b72c-485c761dd291",
   "build": {
     "for": [
       "public"

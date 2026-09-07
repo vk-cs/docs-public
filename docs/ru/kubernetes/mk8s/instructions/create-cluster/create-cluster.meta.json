@@ -5,7 +5,7 @@
   "sectionTitle": "Создание кластера",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "e2f6b289-0746-4933-b37d-6c368041cda1",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Обновление Kube Prometheus Stack",
   "icon": "",
   "weight": 15,
-  "uuid": "",
+  "uuid": "b4ec1133-c911-43b1-a3c4-f682cb217dc4",
   "build": {
     "for": [
       "public"

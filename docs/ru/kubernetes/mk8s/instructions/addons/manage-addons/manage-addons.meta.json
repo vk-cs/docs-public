@@ -5,7 +5,7 @@
   "sectionTitle": "Управление аддонами",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "aed1a029-90fb-4306-8543-980b799ef082",
   "build": {
     "for": [
       "public"

@@ -33427,7 +33427,7 @@
   },
   {
     "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+    "destination": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -34124,6 +34124,30 @@
   {
     "source": "/ru/storage/s3/how-to-guides/integration",
     "destination": "/ru/storage/s3/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio/install-advanced-istio-magnum",
+    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+    "destination": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   }

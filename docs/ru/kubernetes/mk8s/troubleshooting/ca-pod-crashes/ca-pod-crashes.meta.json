@@ -5,7 +5,7 @@
   "sectionTitle": "Агент автоматического масштабирования не может пройти аутентификацию в OpenStack или API Kubernetes",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "372d5e8e-31e5-4850-ac14-532ee2ff30c0",
   "build": {
     "for": [
       "public"

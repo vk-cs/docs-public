@@ -5,7 +5,7 @@
   "sectionTitle": "Kube Prometheus Stack",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "ab7695f6-b185-4790-b20f-757da90cc70f",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Gatekeeper",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "fe58c836-20d2-4951-8dd9-85c5da0bfe53",
   "build": {
     "for": [
       "public"

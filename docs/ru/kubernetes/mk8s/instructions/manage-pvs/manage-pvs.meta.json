@@ -5,7 +5,7 @@
   "sectionTitle": "Управление постоянными томами (PV)",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "e66a7ee0-7ae8-4cf9-ad10-fa45604094c1",
   "build": {
     "for": [
       "public"

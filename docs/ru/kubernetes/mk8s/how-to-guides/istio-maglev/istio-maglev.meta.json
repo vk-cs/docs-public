@@ -6,7 +6,7 @@
   "sectionTitle": "Балансировка нагрузки по алгоритмам LEAST_REQUEST и MAGLEV",
   "icon": "",
   "weight": 50,
-  "uuid": "",
+  "uuid": "46251e3d-66f5-4a52-ade5-4e8a4294879d",
   "build": {
     "for": [
       "public"

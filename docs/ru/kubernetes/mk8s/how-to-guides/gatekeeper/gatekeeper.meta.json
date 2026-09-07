@@ -5,7 +5,7 @@
   "sectionTitle": "Использование Gatekeeper",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "2b544e63-5ec9-4e06-9ce5-58385eb1aaa4",
   "build": {
     "for": [
       "public"

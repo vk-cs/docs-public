@@ -5,7 +5,7 @@
   "sectionTitle": "Velero",
   "icon": "",
   "weight": 20,
-  "uuid": "",
+  "uuid": "8cb0491e-5a88-4583-9cbc-88bca3b75f5d",
   "build": {
     "for": [
       "public"

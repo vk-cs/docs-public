@@ -5,7 +5,7 @@
   "sectionTitle": "Аутентификация в Kubernetes",
   "icon": "",
   "weight": 13,
-  "uuid": "",
+  "uuid": "1b5d2d7c-61c2-4c5a-afd9-c391d48e4365",
   "build": {
     "for": [
       "public"

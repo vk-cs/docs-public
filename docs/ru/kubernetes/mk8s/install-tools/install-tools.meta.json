@@ -5,7 +5,7 @@
   "sectionTitle": "Установка дополнительных инструментов",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "30b4b5b1-3aa8-41b1-ac17-64554223fe74",
   "build": {
     "for": [
       "public"

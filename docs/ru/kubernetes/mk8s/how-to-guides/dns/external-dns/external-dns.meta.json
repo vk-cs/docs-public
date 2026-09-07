@@ -5,7 +5,7 @@
   "sectionTitle": "Установка и использование ExternalDNS",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "03df999d-6c43-48ba-86b7-ad7face2a3b2",
   "build": {
     "for": [
       "public"

@@ -6,7 +6,7 @@
   "sectionTitle": "Настройка приоритетов масштабирования групп узлов",
   "icon": "",
   "weight": 60,
-  "uuid": "",
+  "uuid": "ff0a0ff3-b68f-4c10-b919-18bd327f18fe",
   "build": {
     "for": [
       "public"

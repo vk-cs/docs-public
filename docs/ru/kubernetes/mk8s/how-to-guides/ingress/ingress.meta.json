@@ -5,7 +5,7 @@
   "sectionTitle": "Использование Ingress",
   "icon": "",
   "weight": 12,
-  "uuid": "",
+  "uuid": "31930b48-58d6-4adb-8750-5b1d2f07ddfc",
   "build": {
     "for": [
       "public"

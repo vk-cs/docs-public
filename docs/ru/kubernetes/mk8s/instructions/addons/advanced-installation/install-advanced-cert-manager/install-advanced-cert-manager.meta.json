@@ -5,7 +5,7 @@
   "sectionTitle": "Cert-manager",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "fc8ee914-5dc9-4417-9bc3-22f5e3d8e0b6",
   "build": {
     "for": [
       "public"

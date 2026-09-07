@@ -5,7 +5,7 @@
   "sectionTitle": "Управление группой worker-узлов",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "6bd08f14-2555-4606-ba81-1426bd00f79f",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к кластеру",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "1b5ef6fb-e95d-4e77-850d-0a22d8ba9028",
   "build": {
     "for": [
       "public"

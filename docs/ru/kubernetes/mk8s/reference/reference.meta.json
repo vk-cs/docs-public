@@ -5,7 +5,7 @@
   "sectionTitle": "Справочник Kubernetes",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "c1fea9a6-63e7-4419-aa33-f9a286596c69",
   "build": {
     "for": [
       "public"

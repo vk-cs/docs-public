@@ -6,7 +6,7 @@
   "sectionTitle": "Горизонтальное масштабирование приложений",
   "icon": "",
   "weight": 30,
-  "uuid": "",
+  "uuid": "c208e12b-e3ff-437a-b1ec-56730d0b0bf8",
   "build": {
     "for": [
       "public"

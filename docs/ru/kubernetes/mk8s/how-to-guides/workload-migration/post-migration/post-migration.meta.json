@@ -5,7 +5,7 @@
   "sectionTitle": "Перенос рабочей нагрузки после миграции ресурсов",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "9663babc-c25d-4121-9fcc-196fc17989cb",
   "build": {
     "for": [
       "public"

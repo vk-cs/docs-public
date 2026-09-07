@@ -5,7 +5,7 @@
   "sectionTitle": "Работа с cert-manager с помощью Helm 3",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "3163c409-f06c-4161-a500-5d774ca659ff",
   "build": {
     "for": [
       "public"

@@ -1,1 +1,6 @@
-{}
+{
+  "d26578b5-6854-49c6-8d36-ad8402bfe188": "/ru/kubernetes/k8s/instructions/addons/advanced-installation",
+  "9597739b-32fa-41e7-80b7-054fe3d32676": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
+  "685ef03e-ae10-4436-8cc7-d8c5a0968bfb": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
+  "4c28be68-7dc3-414a-a9ac-76dc02ff5d08": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s"
+}

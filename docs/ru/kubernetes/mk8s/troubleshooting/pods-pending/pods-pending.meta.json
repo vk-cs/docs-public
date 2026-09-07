@@ -5,7 +5,7 @@
   "sectionTitle": "Поды кластера зависают в состоянии Pending",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "ff267913-ba1b-42f0-b4f9-f8820f945ee6",
   "build": {
     "for": [
       "public"

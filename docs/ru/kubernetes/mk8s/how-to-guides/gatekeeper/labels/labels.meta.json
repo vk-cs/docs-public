@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка обязательных меток",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "1d4f0d47-0492-4ee8-8b41-abe3d916a75c",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Сеть в кластере",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "2c7ff239-6c65-4710-b987-460d5dbc2c80",
   "build": {
     "for": [
       "public"

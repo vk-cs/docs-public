@@ -5,7 +5,7 @@
   "sectionTitle": "Просмотр логов агента автоматического масштабирования",
   "icon": "",
   "weight": 30,
-  "uuid": "",
+  "uuid": "bdea3a28-4c90-4be7-99d5-cbee9c95fe3c",
   "build": {
     "for": [
       "public"

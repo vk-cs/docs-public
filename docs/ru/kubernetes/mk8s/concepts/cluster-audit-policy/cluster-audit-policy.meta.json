@@ -5,7 +5,7 @@
   "sectionTitle": "Политика аудита кластеров",
   "icon": "",
   "weight": 15,
-  "uuid": "",
+  "uuid": "4e88f068-0271-48a2-bea5-2697a380bc72",
   "build": {
     "for": [
       "public"

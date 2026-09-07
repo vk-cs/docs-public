@@ -5,7 +5,7 @@
   "sectionTitle": "Хранилище в кластере",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "7c59e97f-b32c-41b0-bd9f-742140845536",
   "build": {
     "for": [
       "public"

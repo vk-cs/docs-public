@@ -5,7 +5,7 @@
   "sectionTitle": "Настройки DNS для кластера",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "427b7bf2-671d-451b-bdb7-28b3e4404173",
   "build": {
     "for": [
       "public"

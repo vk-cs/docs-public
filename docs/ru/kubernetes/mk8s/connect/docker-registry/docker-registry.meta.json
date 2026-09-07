@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к реестру Docker",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "9029eaf5-794a-4e73-8c5b-2754f02ef994",
   "build": {
     "for": [
       "public"

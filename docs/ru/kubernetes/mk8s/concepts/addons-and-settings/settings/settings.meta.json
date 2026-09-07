@@ -5,7 +5,7 @@
   "sectionTitle": "Настройки кластера",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "7e6a1435-cf93-4d31-8d75-85118a393f02",
   "build": {
     "for": [
       "public"

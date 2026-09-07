@@ -5,7 +5,7 @@
   "sectionTitle": "GPU Operator",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "756c5966-0640-44c2-8674-4a1e26503639",
   "build": {
     "for": [
       "public"

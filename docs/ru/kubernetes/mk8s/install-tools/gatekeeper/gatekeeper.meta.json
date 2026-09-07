@@ -5,7 +5,7 @@
   "sectionTitle": "Установка Gatekeeper",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "592dc8c3-d5f5-4e0c-b3ae-5025b4352a81",
   "build": {
     "for": [
       "public"

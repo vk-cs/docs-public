@@ -5,7 +5,7 @@
   "sectionTitle": "Istio",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "573fba9b-2289-481d-be1a-296d036f6a8c",
   "build": {
     "for": [
       "public"

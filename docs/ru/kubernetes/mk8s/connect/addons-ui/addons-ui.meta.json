@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к веб-интерфейсам аддонов",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "cb128857-b32b-4891-a4dd-3bddb3eaffb4",
   "build": {
     "for": [
       "public"

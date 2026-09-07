@@ -5,7 +5,7 @@
   "sectionTitle": "Ограничение использования ресурсов",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "4adefdf9-1cb4-4ea4-9ea9-5513f36994b7",
   "build": {
     "for": [
       "public"

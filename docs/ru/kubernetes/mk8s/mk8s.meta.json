@@ -5,7 +5,7 @@
   "sectionTitle": "Cloud Containers для кластеров второго поколения",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "e57572d5-ba7a-4c18-8892-1089cb9cc3b6",
   "build": {
     "for": [
       "public"

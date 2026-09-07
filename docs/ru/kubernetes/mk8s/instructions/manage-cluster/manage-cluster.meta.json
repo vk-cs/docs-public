@@ -5,7 +5,7 @@
   "sectionTitle": "Управление кластером",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "a0bc9c05-36e5-45d4-bcd0-a939fe43e5df",
   "build": {
     "for": [
       "public"

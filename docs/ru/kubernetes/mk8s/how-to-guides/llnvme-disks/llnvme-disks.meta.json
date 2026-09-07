@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение дисков LL NVMe к worker-узлам",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "6be3528d-5247-466e-9ce8-774c3937e589",
   "build": {
     "for": [
       "public"

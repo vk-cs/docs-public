@@ -5,7 +5,7 @@
   "sectionTitle": "Резервное копирование вручную",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "15dd1f65-39b0-4da0-a071-9b66d21c76a2",
   "build": {
     "for": [
       "public"

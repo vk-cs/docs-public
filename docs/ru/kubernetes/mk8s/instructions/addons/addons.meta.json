@@ -5,7 +5,7 @@
   "sectionTitle": "Работа с аддонами",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "a0cef2f3-5f93-4953-a30f-12ece0aa639d",
   "build": {
     "for": [
       "public"
