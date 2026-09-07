@@ -115,7 +115,7 @@
      Опция всегда включена, если ранее для ВМ была выбрана {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешняя сеть]}.
 
       {note:info}
-      ВМ с {linkto(../../../../gpu/concepts/about#gpu-about-vgpu-flavors)[text=шаблоном конфигурации vGPU]} должны иметь подключение к интернету для проверки {linkto(../../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензирования]}. 
+      ВМ с {ifdef(public)}{linkto(../../../../../computing/gpu/concepts/about#gpu-about-vgpu-flavors)[text=шаблоном конфигурации vGPU]}{/ifdef}{ifndef(public)}{linkto(../../../../../computing/gpu/concepts/vgpu#gpu-vgpu)[text=шаблоном конфигурации vGPU]}{/ifndef} должны иметь подключение к интернету для проверки {linkto(../../../../../computing/gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензирования]}.
       {/note}
      {/includetag}
      {includetag(create-from-disk)}

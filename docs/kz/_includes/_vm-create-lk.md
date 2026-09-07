@@ -115,7 +115,7 @@
      Егер бұрын ВМ үшін {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желі]} таңдалған болса, опция әрқашан қосылады.
 
       {note:info}
-      {linkto(../../../../gpu/concepts/about#gpu-about-vgpu-flavors)[text=vGPU конфигурациясының үлгісі]} бар ВМ-де {linkto(../../../../gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензиялауды]} тексеру үшін интернетке қосылым болуы керек. 
+      {linkto(../../../../../computing/gpu/concepts/about#gpu-about-vgpu-flavors)[text=vGPU конфигурациясының үлгісі]} бар ВМ-де {linkto(../../../../../computing/gpu/concepts/vgpu#gpu-vgpu-licensing)[text=лицензиялауды]} тексеру үшін интернетке қосылым болуы керек. 
       {/note}
      {/includetag}
      {includetag(create-from-disk)}
