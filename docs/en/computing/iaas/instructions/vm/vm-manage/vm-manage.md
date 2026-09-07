@@ -336,25 +336,25 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
    - Output a list of VM tags:
 
       ```console
-      nova server-tag-list <virtual machine ID>
+      openstack server show -c tags <virtual machine ID>
       ```
 
    - Assign a VM tag:
 
       ```console
-      nova server-tag-add <virtual machine ID> <tag>
+      openstack server set --tag <tag> <virtual machine ID>
       ```
 
    - Delete a tag from a VM:
 
       ```console
-      nova server-tag-delete <virtual machine ID> <tag>
+      openstack server unset --tag <tag> <virtual machine ID>
       ```
 
    - Delete all tags from a VM:
 
       ```console
-      nova server-tag-delete-all <virtual machine ID>
+      openstack server unset --all-tags <virtual machine ID>
       ```
 
 {/tab}

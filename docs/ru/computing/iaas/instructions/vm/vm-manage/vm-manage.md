@@ -325,25 +325,25 @@
    - Вывести список тегов ВМ:
 
      ```console
-     nova server-tag-list <ID_ВМ>
+     openstack server show -c tags <ID_ВМ>
      ```
 
    - Присвоить тег ВМ:
 
      ```console
-     nova server-tag-add <ID_ВМ> <ТЕГ>
+     openstack server set --tag <ТЕГ> <ID_ВМ>
      ```
 
    - Удалить тег у ВМ:
 
      ```console
-     nova server-tag-delete <ID_ВМ> <ТЕГ>
+     openstack server unset --tag <ТЕГ> <ID_ВМ>
      ```
 
    - Удалить все теги у ВМ:
 
      ```console
-     nova server-tag-delete-all <ID_ВМ>
+     openstack server unset --all-tags <ID_ВМ>
      ```
 
 {/tab}

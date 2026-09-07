@@ -329,25 +329,25 @@ OpenStack CLI көмегімен ВМ басқару үшін виртуалды
     - ВМ тегтерінің тізімін шығару:
 
       ```console
-      nova server-tag-list <виртуалды машинаның ID>
+      openstack server show -c tags <виртуалды машинаның ID>
       ```
 
     - ВМ-ге тег тағайындау:
 
       ```console
-      nova server-tag-add <виртуалды машинаның ID> <тег>
+      openstack server set --tag <тег> <виртуалды машинаның ID>
       ```
 
     - ВМ-дегі тегті жою:
 
       ```console
-      nova server-tag-delete <виртуалды машинаның ID> <тег>
+      openstack server unset --tag <тег> <виртуалды машинаның ID>
       ```
 
     - ВМ-дегі барлық тегтерді жою:
 
       ```console
-      nova server-tag-delete-all <виртуалды машинаның ID>
+      openstack server unset --all-tags <виртуалды машинаның ID>
       ```
 
 {/tab}

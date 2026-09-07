@@ -90,13 +90,6 @@ openstack server show <ВМ>
 
 Здесь `<ВМ>` — название или идентификатор ВМ.
 
-### {heading(Просмотр информации о ВМ (через Nova))[id=cli_nova_show]}
-
-```console
-nova show <ВМ>
-```
-Здесь `<ВМ>` — название или идентификатор ВМ.
-
 ### {heading(Добавление ВМ)[id=cli_openstack_server_create]}
 
 ```console
@@ -289,13 +282,6 @@ openstack server remove floating ip
 - `<ВМ>` — название или идентификатор инстанса, от которого отсоединяется IP-адрес.
 - `<IP-АДРЕС>` — Floating IP-адрес или его ID, который отсоединяется от инстанса.
 
-### {heading(Установка пароля на ВМ)[id=cli_nova_set_password]}
-
-```console
-nova set-password <ВМ>
-```
-Здесь `<ВМ>` — название или идентификатор ВМ.
-
 ### {heading(Миграция ВМ)[id=cli_openstack_server_migrate]}
 
 ```console
@@ -351,40 +337,42 @@ openstack server remove security group <ВМ> <ГРУППА_БЕЗОПАСНОС
 
 ## {heading(Управление тегами ВМ)[id=cli_tag]}
 
-### {heading(Просмотр списка тегов ВМ)[id=cli_nova_server_tag_list]}
+### {heading(Просмотр списка тегов ВМ)[id=cli_openstack_server_tag_list]}
 
 ```console
-nova server-tag-list <ВМ>
+openstack server show -c tags <ВМ>
 ```
 
 Здесь `<ВМ>` — название или идентификатор ВМ.
 
-### {heading(Добавление тега на ВМ)[id=cli_nova_server_tag_add]}
+### {heading(Добавление тега на ВМ)[id=cli_openstack_server_tag_add]}
 
 ```console
-nova server-tag-add <ВМ> <ТЕГ> [<ТЕГ_2> ...]
+openstack server set --tag <ТЕГ> [--tag <ТЕГ_2> …] <ВМ>
 ```
 
 Здесь:
 
+- `<ТЕГ>` — название тега в формате `<ИМЯ>^<ЦВЕТ>`, например `env:prod^positive`. Чтобы добавить несколько тегов, используйте параметр несколько раз.
 - `<ВМ>` — название или идентификатор ВМ.
-- `<ТЕГ> [<ТЕГ_2> ...]` — название или идентификатор тега. Несколько тегов необходимо указывать через пробел.
 
-### {heading(Удаление тегов ВМ)[id=cli_nova_server_tag_delete]}
+### {heading(Удаление тегов ВМ)[id=cli_openstack_server_tag_delete]}
 
 ```console
-nova server-tag-delete <ВМ> <ТЕГ> [<ТЕГ_2> ...]
+openstack server unset --tag <ТЕГ> [--tag <ТЕГ_2> …] <ВМ>
 ```
+
 Здесь:
 
+- `<ТЕГ>` — название тега, который необходимо удалить, в формате `<ИМЯ>^<ЦВЕТ>`, например `env:prod^positive`. Чтобы удалить несколько тегов, используйте параметр несколько раз.
 - `<ВМ>` — название или идентификатор ВМ.
-- `<ТЕГ> [<ТЕГ_2> ...]` — название или идентификатор тега. Несколько тегов необходимо указывать через пробел.
 
-### {heading(Удаление всех тегов ВМ)[id=cli_nova_server_tag_delete_all]}
+### {heading(Удаление всех тегов ВМ)[id=cli_openstack_server_tag_delete_all]}
 
 ```console
-nova server-tag-delete-all <ВМ>
+openstack server unset --all-tags <ВМ>
 ```
+
 Здесь `<ВМ>` — название или идентификатор ВМ.
 
 ## {heading(Управление ключевыми парами ВМ)[id=cli_keypair]}
