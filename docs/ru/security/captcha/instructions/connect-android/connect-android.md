@@ -41,7 +41,7 @@
 
    {/tabs}
 
-1. Получите от бэкенда ссылку для запуска виджета капчи.
+1. Получите от {linkto(../connect-backend#captcha-connect-backend)[text=бэкенда]} ссылку для запуска виджета капчи.
 
 1. (Опционально) Настройте язык локализации капчи. Воспользуйтесь {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-lang)[text=методом SDK]} `VKCaptcha.setLocale()`.
 

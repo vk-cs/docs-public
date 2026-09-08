@@ -1,0 +1,14 @@
+{
+  "title": "Установка VK Капча SDK",
+  "shortDescription": "Установка и подключение VK Капча SDK в веб-приложение через npm, yarn, pnpm или JS-скрипт",
+  "metaDescription": "Узнайте, как установить VK Капча SDK для веб-приложений через npm, yarn, pnpm или JS-скрипт и настроить локальную разработку.",
+  "sectionTitle": "Установка VK Капча SDK",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

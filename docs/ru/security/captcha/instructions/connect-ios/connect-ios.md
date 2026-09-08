@@ -41,7 +41,7 @@
 
    {/tabs}
 
-1. Получите от бэкенда ссылку для запуска виджета капчи.
+1. Получите от {linkto(../connect-backend#captcha-connect-backend)[text=бэкенда]} ссылку для запуска виджета капчи.
 
 1. Создайте конфигурацию капчи. Воспользуйтесь {linkto(../../concepts/reference-sdk/reference-sdk-ios#reference-sdk-ios-init)[text=конфигурационным объектом]} `VKCaptchaConfiguration(url:)`.
 
