@@ -44,9 +44,9 @@ DNS-сервер будет развернут в следующей конфи�
 - Тип развертывания: DaemonSet, чтобы сервер был доступен на всех узлах кластера.
 - IP-адреса, которые слушает сервер:
   - Локальный IP-адрес `169.254.0.10` на каждом узле. Такой link-local-адрес выбран специально, чтобы не было пересечений с адресами из других подсетей, используемых кластером.
-  - IP-адрес сервиса `kube-dns`. В кластерах Cloud Containers это всегда `10.254.0.10`.
+  - IP-адрес сервиса `kube-dns`. В кластерах Kubernetes в сервисе Managed Containers это всегда `10.254.0.10`.
 
-  Такая конфигурация используется, потому что `kube-proxy` в кластерах Cloud Containers {linkto(../../../concepts/addons-and-settings/settings#mk8s-settings-kube-proxy-mode)[text=работает]} в режиме `iptables`.
+  Такая конфигурация используется, потому что `kube-proxy` в кластерах Kubernetes в сервисе Managed Containers {linkto(../../../concepts/addons-and-settings/settings#mk8s-settings-kube-proxy-mode)[text=работает]} в режиме `iptables`.
 
 - Порт, к которому будет обращаться Prometheus для сбора метрик: `9153`.
 - Метка для выбора сервиса: `kube-dns`: `coredns`.

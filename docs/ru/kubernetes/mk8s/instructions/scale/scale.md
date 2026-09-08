@@ -1,6 +1,6 @@
 # {heading(Масштабирование узлов кластера)[id=mk8s-instructions-scale]}
 
-Вы можете выполнить {linkto(../../concepts/scale#mk8s-scale)[text=масштабирование кластера Cloud Containers]} вручную или настроить автоматическое масштабирование, чтобы адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
+В сервисе Managed Containers вы можете выполнить {linkto(../../concepts/scale#mk8s-scale)[text=масштабирование кластера Kubernetes]} вручную или настроить автоматическое масштабирование, чтобы адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
 ## {heading(Вертикальное масштабирование)[id=mk8s-instructions-scale-vertical]}
 

@@ -1,6 +1,6 @@
 # {heading(Использование GPU Operator)[id=k8s-gpu-operator]}
 
-Cloud Containers позволяет создавать {linkto(/ru/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu)[text=кластеры с GPU (графическими процессорами)]} для выполнения машинного обучения или обработки больших данных.
+Managed Containers позволяет создавать {linkto(/ru/kubernetes/k8s/concepts/flavors#k8s-flavors-gpu)[text=кластеры с GPU (графическими процессорами)]} для выполнения машинного обучения или обработки больших данных.
 
 GPU может использоваться в кластере следующими способами:
 

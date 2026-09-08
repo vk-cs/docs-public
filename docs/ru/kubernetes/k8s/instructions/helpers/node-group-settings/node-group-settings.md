@@ -33,7 +33,7 @@
 
   - **Процент недоступных нод при обновлении кластера:** процентное количество узлов, которые можно вывести из группы узлов при {linkto(../../../concepts/update#k8s-update)[text=обновлении кластера]}.
 
-      Вы можете установить это значение в момент {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=создания]} группы узлов или перед началом {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=обновления]} кластера. Во время обновления узлы становятся недоступными, поэтому рекомендуется обеспечить {linkto(../../../concepts/update#k8s-update-unavailable-nodes)[text=запас узлов]}, на которые Cloud Containers сможет перераспределить нагрузку на время обновления. Иначе для приложений, расположенных на обновляемых узлах, не будет доступных ресурсов.
+      Вы можете установить это значение в момент {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-add-group)[text=создания]} группы узлов или перед началом {linkto(../../../instructions/manage-node-group#k8s-manage-node-group-configure-node-update)[text=обновления]} кластера. Во время обновления узлы становятся недоступными, поэтому рекомендуется обеспечить {linkto(../../../concepts/update#k8s-update-unavailable-nodes)[text=запас узлов]}, на которые Managed Containers сможет перераспределить нагрузку на время обновления. Иначе для приложений, расположенных на обновляемых узлах, не будет доступных ресурсов.
 
   - Параметры Kubernetes: метки (labels), ограничения (taints) и исключения (tolerations).
 

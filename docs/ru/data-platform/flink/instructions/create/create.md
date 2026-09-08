@@ -30,7 +30,7 @@
 1. На шаге **Параметры**:
 
    1. Задайте для экземпляра название и описание.
-   1. Выберите кластер Kubernetes. В этот кластер {ifdef(public)} [Cloud Containers](/ru/kubernetes/k8s){/ifdef} будет добавлен {ifdef(public)} [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-узел {/ifndef} для размещения экземпляра Cloud Flink.
+   1. Выберите кластер Kubernetes. В этот кластер {ifdef(public)} [Managed Containers](/ru/kubernetes/k8s){/ifdef} будет добавлен {ifdef(public)} [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-узел {/ifndef} для размещения экземпляра Cloud Flink.
 
       Если нужного кластера нет в списке:
 
@@ -43,7 +43,7 @@
          1. Выберите нужную {ifndef(public)} SDN.{/ifndef}{ifdef(public)} [SDN](/ru/networks/vnet/concepts/sdn): `Neutron` или `Sprut`.{/ifdef}
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
-      1. Выберите {ifdef(public)} [зону доступности](/ru/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} зону доступности{/ifndef}, где будет размещен узел кластера {ifdef(public)}Cloud Containers{/ifdef}.
+      1. Выберите {ifdef(public)} [зону доступности](/ru/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} зону доступности{/ifndef}, где будет размещен узел кластера {ifdef(public)}Managed Containers{/ifdef}.
    1. Настройте параметры узлов, на которых будет развернут экземпляр сервиса:
 
       {tabs}

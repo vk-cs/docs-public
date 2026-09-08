@@ -77,7 +77,7 @@
 
 {cut(Остальные эндпоинты)}
 
-### {heading(Cloud Containers)[id=rest-api-endpoints-k8s]}
+### {heading(Managed Containers)[id=rest-api-endpoints-k8s]}
 
 [cols="1,2,2", options="header"]
 |===
@@ -88,11 +88,11 @@
 
 |Magnum
 |https://infra.mail.ru:9511/v1
-|Управление контейнерами {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers]}
+|Управление контейнерами {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Managed Containers]}
 
 |Magnum-addons
 |https://mcs.mail.ru/infra/container/addons
-|Управление {linkto(../../../../kubernetes/k8s/instructions/addons#k8s-addons)[text=аддонами]} сервиса Cloud Containers
+|Управление {linkto(../../../../kubernetes/k8s/instructions/addons#k8s-addons)[text=аддонами]} сервиса Managed Containers
 
 |===
 

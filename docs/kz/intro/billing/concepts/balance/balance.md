@@ -61,7 +61,7 @@ VK Cloud-та сіз {linkto(/kz/intro/billing/instructions/detail#includes-deta
 Келесі сервистерде жасалған ВМ параметрлері:
 
 - Cloud Servers;
-- Cloud Containers (алдыңғы буын Kubernetes кластерлері);
+- Managed Containers (алдыңғы буын Kubernetes кластерлері);
 - Cloud Desktop (серверлер мен жұмыс үстелдері);
 - Arenadata DB as a Service;
 - ML Platform (JupyterHub, MLflow және MLflow Deploy сервистері);
@@ -90,7 +90,7 @@ VK Cloud-та сіз {linkto(/kz/intro/billing/instructions/detail#includes-deta
 {cut(25.03.26 бастап есепте қолжетімді параметрлер)}
 Сервистер параметрлері:
 
-- Cloud Containers (жаңа буын Kubernetes кластерлері);
+- Managed Containers (жаңа буын Kubernetes кластерлері);
 - ML Platform жүйесіндегі Cloud Spark;
 - [VK Data Platform](/kz/data-platform) (барлық сервистер).
   {/cut}

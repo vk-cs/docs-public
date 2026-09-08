@@ -1,10 +1,10 @@
 # {heading(Архитектура сервиса)[id=k8s-architecture]}
 
-Сервис Cloud Containers обеспечивает среду для работы с кластерами Kubernetes на платформе {var(cloud)}. Архитектура сервиса, опираясь на [OpenStack](https://www.openstack.org/), дает пользователям широкие возможности для работы, обеспечивает отказоустойчивость, масштабируемость и интеграцию с другими сервисами платформы.
+Сервис Managed Containers обеспечивает среду для работы с кластерами Kubernetes на платформе {var(cloud)}. Архитектура сервиса, опираясь на [OpenStack](https://www.openstack.org/), дает пользователям широкие возможности для работы, обеспечивает отказоустойчивость, масштабируемость и интеграцию с другими сервисами платформы.
 
-{cut(Схема взаимодействия Cloud Containers с другими компонентами {var(cloud)})}
+{cut(Схема взаимодействия Managed Containers с другими компонентами {var(cloud)})}
 
-Cloud Containers следит за корректной работой кластеров, в то время как:
+Managed Containers следит за корректной работой кластеров, в то время как:
 
 - {linkto(../../../../computing/iaas#iaas)[text=Cloud Servers]} управляет ВМ на узлах кластера.
 - {linkto(../../../../networks/vnet#vnet)[text=Cloud Networks]} управляет сетями кластера.
@@ -15,11 +15,11 @@ Cloud Containers следит за корректной работой клас�
 
 ## {heading(Топологии кластера)[id=k8s-architecture-topology]}
 
-Кластер Kubernetes в сервисе Cloud Containers состоит из двух типов узлов (nodes) — master-узлов и worker-узлов:
+Кластер Kubernetes в сервисе Managed Containers состоит из двух типов узлов (nodes) — master-узлов и worker-узлов:
 
 - _Master-узлы_ хранят информацию о состоянии всего кластера и управляют распределением рабочей нагрузки по worker-узлам. Управление master-узлами пользователям не доступно, оно происходит на стороне платформы {var(cloud)}.
 
-   Когда вы {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=создаете]} кластер Kubernetes, Cloud Containers выбирает минимально подходящий {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации]} для его master-узлов. По умолчанию это ВМ с процессором Intel Cascade Lake, 2 CPU и 6 ГБ оперативной памяти. {linkto(../storage#k8s-storage-supported-storage-types)[text=Тип диска]} master-узлов — High-IOPS SSD на 20 ГБ.
+   Когда вы {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=создаете]} кластер Kubernetes, Managed Containers выбирает минимально подходящий {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации]} для его master-узлов. По умолчанию это ВМ с процессором Intel Cascade Lake, 2 CPU и 6 ГБ оперативной памяти. {linkto(../storage#k8s-storage-supported-storage-types)[text=Тип диска]} master-узлов — High-IOPS SSD на 20 ГБ.
 
    На master-узлах по умолчанию включено {linkto(../scale#k8s-scale-types)[text=автоматическое масштабирование]}, поэтому при изменении нагрузки на кластер количество его вычислительных ресурсов будет изменяться автоматически.
 
@@ -71,7 +71,7 @@ Cloud Containers следит за корректной работой клас�
 
 Все взаимодействие с кластером происходит через [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
-API-эндпоинт кластеров Cloud Containers размещен за {linkto(../network#k8s-network)[text=отдельным балансировщиком нагрузки]}, поэтому доступ к API кластера можно получить по одному и тому же IP-адресу вне зависимости от количества master-узлов.
+API-эндпоинт кластеров Kubernetes размещен за {linkto(../network#k8s-network)[text=отдельным балансировщиком нагрузки]}, поэтому доступ к API кластера можно получить по одному и тому же IP-адресу вне зависимости от количества master-узлов.
 
 ## {heading(Интеграция с платформой {var(cloud)})[id=k8s-architecture-platform-integration]}
 
@@ -86,7 +86,7 @@ API-эндпоинт кластеров Cloud Containers размещен за {
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI) — интеграция с сетевыми подсистемами.
 
-  В кластерах Kubernetes, которые вы создаете в сервисе Cloud Containers, реализован плагин [Calico](https://projectcalico.docs.tigera.io/about/about-calico), поддерживающий CNI. Он обеспечивает:
+  В кластерах Kubernetes, которые вы создаете в сервисе Managed Containers, реализован плагин [Calico](https://projectcalico.docs.tigera.io/about/about-calico), поддерживающий CNI. Он обеспечивает:
 
   - сетевую связность между контейнерами, {linkto(../../reference/pods#k8s-pods)[text=подами]} и узлами кластера;
   - применение и соблюдение [сетевых политик](https://kubernetes.io/docs/concepts/services-networking/network-policies/) (Network Policies) Kubernetes.
@@ -95,11 +95,11 @@ API-эндпоинт кластеров Cloud Containers размещен за {
 
 ## {heading(Встроенная поддержка Open Policy Agent)[id=k8s-architecture-opa-gatekeeper]}
 
-В кластеры Cloud Containers встроен {linkto(../../reference/gatekeeper#k8s-gatekeeper)[text=Open Policy Agent Gatekeeper]}. Он позволяет применять {linkto(../security-policies#k8s-security-policies)[text=политики безопасности]} для ресурсов Kubernetes. Также в таких кластерах действуют {linkto(../security-policies#k8s-security-policies-default)[text=политики безопасности по умолчанию]}.
+В кластеры Kubernetes в сервисе Managed Containers встроен {linkto(../../reference/gatekeeper#k8s-gatekeeper)[text=Open Policy Agent Gatekeeper]}. Он позволяет применять {linkto(../security-policies#k8s-security-policies)[text=политики безопасности]} для ресурсов Kubernetes. Также в таких кластерах действуют {linkto(../security-policies#k8s-security-policies-default)[text=политики безопасности по умолчанию]}.
 
 ## {heading(Возможности масштабирования кластера)[id=k8s-architecture-scaling-features]}
 
-Кластер Cloud Containers имеет встроенные {linkto(../scale#k8s-scale)[text=возможности масштабирования master-узлов и worker-узлов]}.
+Кластеры Kubernetes в сервисе Managed Containers имеют встроенные {linkto(../scale#k8s-scale)[text=возможности масштабирования master-узлов и worker-узлов]}.
 
 В том числе поддерживается автоматическое масштабирование узлов кластера, при котором количество узлов регулируется автоматически в зависимости от потребностей рабочей нагрузки:
 

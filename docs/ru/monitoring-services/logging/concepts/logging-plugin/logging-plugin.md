@@ -98,7 +98,7 @@
 | Идентификатор сервиса в системе логирования:
 
 - `databases` — сервис Cloud Databases.
-- `containers` — сервис Cloud Containers.
+- `containers` — сервис Managed Containers.
 
 Если не указан, будет присвоено значение `default`.
 

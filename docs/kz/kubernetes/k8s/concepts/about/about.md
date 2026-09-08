@@ -4,7 +4,7 @@
 
 ## {heading(Сервис қандай міндеттерге жарамды)[id=k8s-about-purpose]}
 
-Cloud Containers сервисі Kubernetes кластерлерін құруға және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуға мүмкіндік береді. Kubernetes үшін барлық үйреншікті құралдар қолжетімді, мысалы:
+Managed Containers сервисі Kubernetes кластерлерін құруға және олардың ішінде әртүрлі сервистер мен қолданбаларды іске қосуға мүмкіндік береді. Kubernetes үшін барлық үйреншікті құралдар қолжетімді, мысалы:
 
 - Контейнерлерде serverless-функцияларды сақтау және өңдеу: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
@@ -49,9 +49,9 @@ Cloud Containers сервисі Kubernetes кластерлерін құруға
   - Толығырақ [Gatekeeper ресми құжаттамасында](https://open-policy-agent.github.io/gatekeeper/website/docs/howto) берілген Gatekeeper {linkto(../architecture#k8s-architecture-opa-gatekeeper)[text=шектеу саясаттарын]} қолдануға болады.
   - Kubernetes [қауіпсіздіктің рөлдік моделін](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) {var(cloud)} платформасының рөлдерімен интеграциялау қолжетімді. Толығырақ {linkto(../access-management#k8s-access-management)[text=Қолжетімділікті басқару]} бөлімінде оқыңыз.
 
-- Velero көмегімен Cloud Containers кластерлерін {linkto(../../how-to-guides/velero/velero-backup#k8s-velero-backup)[text=резервтік көшіру]}.
+- Velero көмегімен Managed Containers кластерлерін {linkto(../../how-to-guides/velero/velero-backup#k8s-velero-backup)[text=резервтік көшіру]}.
 
-- Velero көмегімен басқа Kubernetes кластерлерін Cloud Containers ортасына көшіру.
+- Velero көмегімен басқа Kubernetes кластерлерін Managed Containers ортасына көшіру.
 
 - {linkto(../addons-and-settings/addons#k8s-addons)[text=Дайындалған аддондар жиынтығы]}, оларды {linkto(../../instructions/create-cluster/create-terraform#k8s-create-terraform)[text=Terraform көмегімен кластер құру кезінде]} таңдауға немесе қолданыстағы кластерге {linkto(../../instructions/addons/manage-addons#k8s-manage-addons)[text=орнатуға]} болады, бұл оларды қолмен орналастыру уақытын үнемдейді.
 - Кластер жұмысының тұрақтылығы мен қауіпсіздігін арттыруға көмектесетін {linkto(../addons-and-settings/settings#k8s-settings)[text=дайындалған баптаулар жиынтығы]}.

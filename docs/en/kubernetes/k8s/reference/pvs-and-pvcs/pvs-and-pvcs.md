@@ -19,7 +19,7 @@ A [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-vol
 
 {note:info}
 
-Access to PVC in RWX mode is not implemented in Cloud Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/instructions/fs-manage) on a separate virtual machine.
+Access to PVC in RWX mode is not implemented in Managed Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/instructions/fs-manage) on a separate virtual machine.
 
 {/note}
 
@@ -41,7 +41,7 @@ A PV must be prepared prior to requesting the PV via PVC. It can be done in one 
 
 For dynamic provisioning, two conditions must be met:
 
-- Storage classes must be configured in the Kubernetes cluster. Cloud Containers clusters already contain [pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
+- Storage classes must be configured in the Kubernetes cluster. Kubernetes clusters in the Managed Containers service already contain [pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
 
 - For PVCs, no suitable PVs shall be found that already exist.
 
@@ -119,7 +119,7 @@ In VK Cloud Kubernetes clusters, the storage type selected affects [available re
 
 ## See also
 
-- [How storage is organized in Cloud Containers](../../concepts/storage).
+- [How storage is organized in Managed Containers](../../concepts/storage).
 - [List of pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
 - [Use-case](../../how-to-guides/storage) that demonstrates using of various PVCs.
 - [Official Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes) for more information about PVCs and PVs.

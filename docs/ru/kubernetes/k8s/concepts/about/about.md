@@ -2,7 +2,7 @@
 
 ## {heading(Для каких задач подходит сервис)[id=k8s-about-purpose]}
 
-Сервис Cloud Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
+Сервис Managed Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
 
 - Хранение и обработка serverless-функций в контейнерах: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
@@ -46,9 +46,9 @@
   - Можно применять {linkto(../architecture#k8s-architecture-opa-gatekeeper)[text=ограничительные политики]} Gatekeeper. Подробнее в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
   - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы {var(cloud)}. Подробнее читайте в разделе {linkto(../iam-access#k8s-concepts-iam)[text=Управление доступом]}.
 
-- {linkto(../../how-to-guides/velero/velero-backup#k8s-velero-backup)[text=Резервное копирование]} кластеров Cloud Containers с помощью Velero.
+- {linkto(../../how-to-guides/velero/velero-backup#k8s-velero-backup)[text=Резервное копирование]} кластеров Kubernetes с помощью Velero.
 
-- Миграция других кластеров Kubernetes в Cloud Containers с помощью Velero.
+- Миграция других кластеров Kubernetes в Managed Containers с помощью Velero.
 
 - Набор {linkto(../addons-and-settings/addons#k8s-addons)[text=подготовленных аддонов]}, которые можно выбрать при {linkto(../../instructions/create-cluster/create-terraform#k8s-create-terraform)[text=создании кластера с помощью Terraform]} или {linkto(../../instructions/addons/manage-addons#k8s-manage-addons)[text=установить]} в уже существующий кластер, сэкономив время на их развертывании вручную.
 - Набор {linkto(../addons-and-settings/settings#k8s-settings)[text=подготовленных настроек]}, которые помогут повысить стабильность и безопасность работы кластера.

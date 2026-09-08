@@ -88,7 +88,7 @@
 
 {include(/ru/_includes/_quotasandlimits_vm.md)}
 
-## {heading(Cloud Containers (контейнеры Kubernetes))[id=quotasandlimits-k8s]}
+## {heading(Managed Containers (контейнеры Kubernetes))[id=quotasandlimits-k8s]}
 
 {include(/ru/_includes/_quotasandlimits.md)[tags=k8s; level=+1]}
 

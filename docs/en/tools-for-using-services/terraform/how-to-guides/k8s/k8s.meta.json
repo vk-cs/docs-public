@@ -1,7 +1,7 @@
 {
-  "title": "Cloud Containers",
-  "shortDescription": "How to use Terraform to manage the Cloud Containers service objects",
-  "metaDescription": "Working with the Cloud Containers service using Terraform",
+  "title": "Managed Containers",
+  "shortDescription": "How to use Terraform to manage the Managed Containers service objects",
+  "metaDescription": "Working with the Managed Containers service using Terraform",
   "sectionTitle": "Containers",
   "icon": "",
   "weight": 60,

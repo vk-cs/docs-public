@@ -1,4 +1,4 @@
-Kubernetes Dashboard is a universal web interface for Kubernetes clusters available into all [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters in Cloud Containers. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard is a universal web interface for Kubernetes clusters available into all [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters in Managed Containers. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
 The way to connect to Kubernetes Dashboard depends on the IP address of the cluster:
 
@@ -62,7 +62,7 @@ Kubernetes Dashboard is only available in [first-generation](/en/kubernetes/k8s/
 
    1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud under the account of the user who will connect to the cluster.
    1. Select the project where the required cluster is located.
-   1. Go to **Containers → Kubernetes Clusters**.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Get Secret to enter Kubernetes Dashboard**.
    1. Click the **Copy** button.
 

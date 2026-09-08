@@ -8,7 +8,7 @@
 
 ## {heading(Работа с сетевыми подсистемами (CNI))[id=k8s-network-cni]}
 
-Для организации внутрикластерной сети в сервисе Cloud Containers поддерживается сетевая подсистема (CNI, Container Network Interface) [Calico](https://projectcalico.docs.tigera.io/about/about-calico). Calico реализует сетевую маршрутизацию на уровне L3 с помощью стандартных сетевых протоколов и iptables. 
+Для организации внутрикластерной сети в сервисе Managed Containers поддерживается сетевая подсистема (CNI, Container Network Interface) [Calico](https://projectcalico.docs.tigera.io/about/about-calico). Calico реализует сетевую маршрутизацию на уровне L3 с помощью стандартных сетевых протоколов и iptables. 
 
 CNI взаимодействует с платформой VK Cloud с помощью программно-определяемой сети собственной разработки {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]}. Чтобы подключить SDN Sprut к вашему проекту, обратитесь в [техническую поддержку](/ru/contacts).
 
@@ -67,6 +67,6 @@ CNI взаимодействует с платформой VK Cloud с помо�
 
 ## {heading(Смотрите также)[id=k8s-network-see-also]}
 
-- {linkto(../about#k8s-about)[text=Обзор сервиса Cloud Containers]}.
-- {linkto(../architecture#k8s-architecture)[text=Архитектура сервиса Cloud Containers]}.
+- {linkto(../about#k8s-about)[text=Обзор сервиса Managed Containers]}.
+- {linkto(../architecture#k8s-architecture)[text=Архитектура сервиса Managed Containers]}.
 - {linkto(../storage#k8s-storage)[text=Хранилище в кластере]}.

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Airflow сервисі {ifdef(public)} [Cloud Containers](/kz/kubernetes) кластерлері негізінде жұмыс істейді және {/ifdef} келесі конфигурацияларда жайылтылуы мүмкін:
+Cloud Airflow сервисі {ifdef(public)} [Managed Containers](/kz/kubernetes) кластерлері негізінде жұмыс істейді және {/ifdef} келесі конфигурацияларда жайылтылуы мүмкін:
 
 {include(../../../_includes/_airflow.md)[tags=conf]}
 

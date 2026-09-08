@@ -1,1 +1,1 @@
-There are several ways to connect to the Cloud Containers cluster and its components. All available connection options are discussed here.
+In Managed Containers, there are several ways to connect to Kubernetes clusters and its components. All available connection options are discussed here.

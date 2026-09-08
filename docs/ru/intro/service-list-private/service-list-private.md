@@ -18,7 +18,7 @@
 
   {cut(Список PaaS-сервисов)}
 
-  - {linkto(../../kubernetes/k8s#k8s-k8s)[text=Cloud Containers]} — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
+  - {linkto(../../kubernetes/k8s#k8s-k8s)[text=Managed Containers]} — позволяет создавать и управлять кластерами Kubernetes, в которых можно запускать сервисы и приложения.
   - {linkto(../../dbs/dbaas#dbaas-dbaas)[text=Cloud Databases]} — предоставляет масштабируемые СУБД: PostgreSQL,{ifdef(private-pg)} Postgres Pro,{/ifdef} ClickHouse, Redis.
   - {linkto(../../monitoring-services/alerting#alerting)[text=Cloud Alerting]} —  настраивает уведомления об изменении ключевых метрик сервисов {var(cloud)}.
   - {linkto(../../monitoring-services/logging#logging)[text=Cloud Logging]} — агрегирует и анализирует логи сервисов в {var(cloud)}.

@@ -16,7 +16,7 @@
 
    При необходимости {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. Ознакомьтесь с {linkto(../../helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Cloud Containers.
+1. Ознакомьтесь с {linkto(../../helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Managed Containers.
 
 1. [Установите Terraform и настройте окружение](../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
@@ -251,4 +251,4 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - {linkto(../../../connect#k8s-connect)[text=Настройте окружение]} на хосте, с которого планируется подключаться к кластеру.
 - {linkto(../../../how-to-guides#k8s-how-to-guides)[text=Познакомьтесь со сценариями использования]} кластера.
-- {linkto(../../../concepts#k8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Cloud Containers.
+- {linkto(../../../concepts#k8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Managed Containers.

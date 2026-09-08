@@ -1,14 +1,14 @@
 # {heading(Управление доступом)[id=mk8s-concepts-iam]}
 
-Чтобы разграничить права для {linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=приглашенных]} участников {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекта]} или {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисных учетных записей]}, в Cloud Containers используется единый сервис управления идентификацией и доступом — {linkto(../../../../access/iam#iam)[text=IAM]}. Управлять доступами можно централизованно из личного кабинета {var(cloud)}.
+Чтобы разграничить права для {linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=приглашенных]} участников {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекта]} или {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисных учетных записей]}, в Managed Containers используется единый сервис управления идентификацией и доступом — {linkto(../../../../access/iam#iam)[text=IAM]}. Управлять доступами можно централизованно из личного кабинета {var(cloud)}.
 
-Список доступных участнику проекта действий в сервисе Cloud Containers определяет:
+Список доступных участнику проекта действий в сервисе Managed Containers определяет:
 
 - Присвоенная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference#iam-roles-reference-basic)[text=базовая роль]} — задает набор действий, доступных по умолчанию.
 
   Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям во всех сервисах.
 
-- Отдельная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированная роль]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначается]} дополнительно, если прав, входящих в базовую роль, недостаточно. Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Cloud Containers не поддерживается.
+- Отдельная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированная роль]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначается]} дополнительно, если прав, входящих в базовую роль, недостаточно. Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Managed Containers не поддерживается.
 
   {note:info}
   Доступы, предоставляемые вместе с базовой ролью, имеют приоритет над отдельными специализированными ролями.
@@ -22,7 +22,7 @@
 Специализированные роли могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
 {/note}
 
-Для сервиса Cloud Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать дополнительно к {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовым ролям]} `Администратор пользователей (IAM)` или `Наблюдатель`. По умолчанию доступ к Cloud Containers у этих базовых ролей ограничен:
+Для сервиса Managed Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать дополнительно к {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовым ролям]} `Администратор пользователей (IAM)` или `Наблюдатель`. По умолчанию доступ к Managed Containers у этих базовых ролей ограничен:
 
 - `Администратор пользователей (IAM)`: нет доступа.
 - `Наблюдатель`: просмотр информации о кластере и группах узлов.

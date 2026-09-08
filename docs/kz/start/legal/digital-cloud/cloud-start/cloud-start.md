@@ -76,7 +76,7 @@
 
 ## 4\. Арнайы шарттарды қолдануға қойылатын шектеулер:
 
-4.1. Бонус балдарымен төлеу мүмкіндігі түріндегі арнайы шарттар тек мынадай сервистерге қолданылады: Cloud Servers, VK Object Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse), Cloud ML Platform, Cloud Spark, Cloud Kafka, Cloud Trino, Cloud Flink, Vision, Voice, Cloud Backup. Өзге Сервистерді пайдалану ақысы Ұйымдастырушының [https://cloud.vk.com/pricelist](https://cloud.vk.com/pricelist) Прайс-парағында көрсетілген бағалар негізінде Тапсырыс берушімен жалпы шарттарда төленеді.
+4.1. Бонус балдарымен төлеу мүмкіндігі түріндегі арнайы шарттар тек мынадай сервистерге қолданылады: Cloud Servers, VK Object Storage, Managed Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse), Cloud ML Platform, Cloud Spark, Cloud Kafka, Cloud Trino, Cloud Flink, Vision, Voice, Cloud Backup. Өзге Сервистерді пайдалану ақысы Ұйымдастырушының [https://cloud.vk.com/pricelist](https://cloud.vk.com/pricelist) Прайс-парағында көрсетілген бағалар негізінде Тапсырыс берушімен жалпы шарттарда төленеді.
 
 Күмән болдырмау үшін, бонус балдарына айрықша құқықтары үшінші тұлғаларға (Ұйымдастырушы серіктестеріне) тиесілі сервистер мен өнімдерді, соның ішінде, бірақ бұнымен шектелмей, лицензиялық өнімдерді, VK Cloud Платформасының Қолданбалар дүкенінде қолжетімді өнімдерді, CDN сервисін, Cloud GPU сервисін және осы тармақтың бірінші абзацында тікелей көрсетілмеген өзге де сервистер мен өнімдерді төлеу үшін пайдалануға болмайды.
 

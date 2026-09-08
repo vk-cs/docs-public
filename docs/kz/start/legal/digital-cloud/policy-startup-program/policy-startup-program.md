@@ -75,7 +75,7 @@ VK Cloud-тың стартаптарды қолдау бағдарламасы (
 
 **Арнайы шарттарды қолдану шектеулері**:
 
-* Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, Cloud Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
+* Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, Cloud Storage, Managed Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
 
     Өзге Сервистерді пайдалану ақысын Пайдаланушы Прайс-парақта көрсетілген бағалар негізінде жалпы шарттармен төлейді.
 

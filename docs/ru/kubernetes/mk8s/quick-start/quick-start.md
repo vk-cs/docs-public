@@ -747,5 +747,5 @@ K8S Persistent Volume status: present
 ## {heading(Что дальше?)[id=mk8s-quick-start-what-next]}
 
 - {linkto(../how-to-guides#mk8s-how-to-guides)[text=Познакомьтесь со сценариями использования]} кластера.
-- {linkto(../concepts#mk8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Cloud Containers.
+- {linkto(../concepts#mk8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Managed Containers.
 - {linkto(../connect#mk8s-connect)[text=Познакомьтесь с подробными инструкциями]} по подключению к кластеру.

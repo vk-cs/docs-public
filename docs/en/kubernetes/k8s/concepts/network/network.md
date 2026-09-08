@@ -6,7 +6,7 @@ CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheu
 
 ## {heading(Working with Container Network Interface (CNI))[id=supported-cni]}
 
-To organize intra-cluster networks, Cloud Containers supports two CNIs:
+To organize intra-cluster networks, Managed Containers supports two CNIs:
 
 - [Calico](https://projectcalico.docs.tigera.io/about/about-calico) implements network routing at the L3 level using standard network protocols and iptables. Calico scales well and provides optimal performance for medium and large clusters.
 - [Cilium](https://docs.cilium.io/en/stable/index.html ) uses eBPF (Linux eXpress Data Path) to implement network policies and routing directly in the OS kernel, bypassing iptables. Cilium supports traffic filtering at the L3, L4, and L7 levels (for example, by HTTP headers), and provides advanced monitoring capabilities (for example, through the built-in Hubble tool). Cilium is best suited for very large and high-load clusters, as well as microservice architectures.
@@ -19,7 +19,7 @@ Both CNIs communicate with the VK Cloud platform using its own [software-defined
 
 ## Integration with load balancers
 
-Cloud Containers cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](../addons-and-settings/addons).
+Kubernetes clusters in the Managed Containers service integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](../addons-and-settings/addons).
 
 If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../how-to-guides/ingress/ingress-http) for details.
 

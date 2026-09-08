@@ -46,7 +46,7 @@
 Мұндай теңгергішті пайдаланушы жасайды және қолданбалардың істен шығуға төзімділігін және икемді масштабталуын қамтамасыз ету үшін пайдаланылуы мүмкін:
 
 - [Cloud Servers сервисімен](/kz/computing/iaas) жұмыс істегенде кіріс трафикті виртуалды серверлер арасында бөлу үшін.
-- [Cloud Containers сервисімен](/kz/kubernetes/k8s) жұмыс істегенде, мысалы [Ingress controller](/kz/kubernetes/k8s/how-to-guides/ingress) (соның ішінде {linkto(../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-ingress-controller-nginx)[text=алдын ала орнатылған]}) немесе [Load Balancer](/kz/kubernetes/k8s/how-to-guides/load-balancer) түріндегі сервистерді пайдаланғанда.
+- [Managed Containers сервисімен](/kz/kubernetes/k8s) жұмыс істегенде, мысалы [Ingress controller](/kz/kubernetes/k8s/how-to-guides/ingress) (соның ішінде {linkto(../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-ingress-controller-nginx)[text=алдын ала орнатылған]}) немесе [Load Balancer](/kz/kubernetes/k8s/how-to-guides/load-balancer) түріндегі сервистерді пайдаланғанда.
 
 {/tab}
 
@@ -54,7 +54,7 @@
 
 Мұндай теңгергіш сервистердің жұмысын қамтамасыз ету үшін автоматты түрде жасалады және мына жерде қолданылады:
 
-- [Cloud Containers сервисінде](/kz/kubernetes/k8s) Kubernetes API-ге қолжетімділікті қамтамасыз ету үшін әрбір Kubernetes кластері үшін.
+- [Managed Containers сервисінде](/kz/kubernetes/k8s) Kubernetes API-ге қолжетімділікті қамтамасыз ету үшін әрбір Kubernetes кластері үшін.
 - [Cloud Databases сервисінде](/kz/dbs/dbaas) кластерлік конфигурациядағы ДҚ инстанстары үшін инстанс түйіндері арасында жүктемені теңгеру мақсатында. Бұл мына инстанстарға қолданылады:
   - MySQL;
   - PostgreSQL.

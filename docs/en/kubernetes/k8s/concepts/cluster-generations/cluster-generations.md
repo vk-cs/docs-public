@@ -1,4 +1,4 @@
-The Cloud Containers service supports two generations of Kubernetes clusters:
+The Managed Containers service supports two generations of Kubernetes clusters:
 
 - The first (previous) generation. First-generation clusters use [Magnum](https://docs.openstack.org/magnum/latest/user/), an OpenStack tool for container orchestration, to automate their deployment and scaling. These clusters are hosted within user projects, providing users with access to all cluster components, including system ones. This approach gives users complete control over their clusters but also requires them to take responsibility for their own deployment and maintenance. While it offers flexibility, it also increases the risk of failures and errors in the cluster.
 

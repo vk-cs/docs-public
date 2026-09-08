@@ -11,7 +11,7 @@
 
 - У _постоянных томов_ (persistent volume, PV) свой {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=жизненный цикл]}, не зависящий от жизненного цикла пода. Благодаря разделению жизненных циклов такие тома можно переиспользовать позднее с другими подами. Для работы с постоянными томами поды и другие рабочие нагрузки используют Persistent Volume Claim (PVC).
 
-В Cloud Containers доступ к Persistent Volume Claim в режиме ReadWriteMany (RWX) не реализован. Это значит, что вы не можете одновременно записывать данные в один PV из нескольких подов на разных узлах.
+В Managed Containers доступ к Persistent Volume Claim в режиме ReadWriteMany (RWX) не реализован. Это значит, что вы не можете одновременно записывать данные в один PV из нескольких подов на разных узлах.
 
 Чтобы организовать общий доступ к данным из нескольких подов на разных узлах, {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=разверните NFS-сервер]} на отдельной виртуальной машине. NFS-сервер предоставляет общий доступ к данным по сети, позволяя нескольким подам одновременно читать и записывать данные в общий том.
 
@@ -22,7 +22,7 @@
 
 ## {heading(Управление постоянными томами (PV))[id=k8s-storage-pv-disks]}
 
-В сервисе Cloud Containers можно {linkto(../../instructions/manage-pvs#mk8s-manage-pvs)[text=управлять]} PV, созданными для кластеров Kubernetes. Такие PV находятся в {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервисном проекте]}, которым управляет платформа {var(cloud)}. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
+В сервисе Managed Containers можно {linkto(../../instructions/manage-pvs#mk8s-manage-pvs)[text=управлять]} PV, созданными для кластеров Kubernetes. Такие PV находятся в {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервисном проекте]}, которым управляет платформа {var(cloud)}. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
 
 ## {heading(Поддерживаемые типы хранилищ {var(cloud)})[id=mk8s-storage-supported-storage-types]}
 
@@ -76,9 +76,9 @@
 
 ## {heading(Преднастроенные классы хранения)[id=mk8s-storage-storage-classes]}
 
-При использовании {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=динамической подготовки]} постоянного тома необходимо указать класс хранения. Класс хранения по умолчанию не настроен в кластерах Cloud Containers. Можно выбрать класс по умолчанию самостоятельно, или указывать нужный класс явно при создании PVC.
+При использовании {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=динамической подготовки]} постоянного тома необходимо указать класс хранения. В сервисе Managed Containers для кластеров Kubernetes класс хранения по умолчанию не настроен. Можно выбрать класс по умолчанию самостоятельно, или указывать нужный класс явно при создании PVC.
 
-В Cloud Containers есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ. Они предоставляют разные типы хранилищ, которые вы можете использовать при динамической подготовке постоянного тома:
+В Managed Containers есть преднастроенные классы хранения, использующие Cinder CSI для блочных хранилищ. Они предоставляют разные типы хранилищ, которые вы можете использовать при динамической подготовке постоянного тома:
 
 - Для определенного {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]} с указанием зоны доступности. 
 - Для любого региона и зоны доступности. Такие классы хранения называются мультизональными. Подробнее о работе с ними в разделе {linkto(../../how-to-guides/multiaz-storage-class#mk8s-multiaz-storage-class)[text=Использование мультизональных классов хранения]}.
@@ -240,6 +240,6 @@
 
 ## {heading(Смотрите также)[id=mk8s-storage-see-also]}
 
-- {linkto(../about#mk8s-about)[text=Обзор сервиса Cloud Containers]}.
-- {linkto(../architecture#mk8s-architecture)[text=Архитектура сервиса Cloud Containers]}.
+- {linkto(../about#mk8s-about)[text=Обзор сервиса Managed Containers]}.
+- {linkto(../architecture#mk8s-architecture)[text=Архитектура сервиса Managed Containers]}.
 - {linkto(../network#mk8s-network)[text=Сеть в кластере]}.

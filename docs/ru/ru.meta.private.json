@@ -67,39 +67,39 @@
     "kube": [
       {
         "buildPoint": "public",
-        "value": "Cloud Containers для кластеров первого поколения"
+        "value": "Managed Containers для кластеров первого поколения"
       },
       {
         "buildPoint": "private",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "private-pg",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "private-pdf",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "private-pg-pdf",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "s3",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "s3-pdf",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "data-p",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       },
       {
         "buildPoint": "data-p-pdf",
-        "value": "Cloud Containers"
+        "value": "Managed Containers"
       }
     ],
     "s3": [

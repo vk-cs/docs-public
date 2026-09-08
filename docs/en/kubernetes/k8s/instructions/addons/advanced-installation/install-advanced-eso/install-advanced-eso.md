@@ -22,7 +22,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
     1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
     1. Select the project that contains the required cluster.
-    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Click the name of the required cluster.
     1. Go to **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
@@ -62,7 +62,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
     1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
     1. Select the project that contains the required cluster.
-    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Find the cluster you need in the list.
 
     1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
@@ -86,7 +86,7 @@ This add-on is only available for [second-generation](/en/kubernetes/k8s/concept
 
     1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
     1. Select the project that contains the required cluster.
-    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Click the name of the required cluster.
     1. Go to **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.
@@ -166,7 +166,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
     1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
     1. Select the project that contains the required cluster.
-    1. Go to **Containers** → **Kubernetes clusters**.
+    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Click the name of the required cluster.
     1. Go to **Addons** tab.
     1. If there are already installed add-ons in the cluster, click the **Add addon** button.

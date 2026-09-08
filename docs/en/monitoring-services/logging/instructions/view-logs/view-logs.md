@@ -54,7 +54,7 @@ Examples of search expressions:
     {tab(Pre-configured IDs)}
         
     - `default` — an identifier that has no services associated with it and is intended for testing and debugging.
-    - `containers` — Cloud Containers.
+    - `containers` — Managed Containers.
     - `databases` — Cloud Databases.
     - `mlplatform` — Cloud ML Platform.
 

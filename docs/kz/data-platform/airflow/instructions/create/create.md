@@ -33,7 +33,7 @@
 1. **Параметрлер** қадамында:
 
    1. Данаға атау мен сипаттама беріңіз.
-   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Cloud Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) {/ifdef} {ifndef(public)} worker-түйіні {/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) {/ifdef} {ifndef(public)} worker-түйіні {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -46,7 +46,7 @@
          1. Қажетті {ifndef(public)} SDN{/ifndef}{ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn): `Neutron` немесе `Sprut`{/ifdef} таңдаңыз.
          1. Мысалы, `10.0.1.0/24` ішкі желі мекенжайын орнатыңыз.
 
-      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда {ifdef(public)} Cloud Containers{/ifdef} кластерінің түйіні орналастырылады.
+      1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда {ifdef(public)} Managed Containers{/ifdef} кластерінің түйіні орналастырылады.
 
    1. **Worker** блогындағы параметрлерді орнатыңыз:
 
@@ -141,7 +141,7 @@
 1. **Параметрлер** қадамында:
 
    1. Данаға атау мен сипаттама беріңіз.
-   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Cloud Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйіні{/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйіні{/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -154,7 +154,7 @@
          1. Қажетті {ifndef(public)} SDN{/ifndef}{ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn): `Neutron` немесе `Sprut`{/ifdef} таңдаңыз.
          1. Мысалы, `10.0.1.0/24` ішкі желі мекенжайын орнатыңыз.
 
-      1. {ifdef(public)} {linkto(/kz/start/concepts/architecture#architecture-az)[text=қолжетімділік аймағын]}{/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда {ifdef(public)} Cloud Containers{/ifdef} кластерінің түйіні орналастырылады.
+      1. {ifdef(public)} {linkto(/kz/start/concepts/architecture#architecture-az)[text=қолжетімділік аймағын]}{/ifdef}{ifndef(public)} қолжетімділік аймағын{/ifndef} таңдаңыз, онда {ifdef(public)} Managed Containers{/ifdef} кластерінің түйіні орналастырылады.
    1. Кластер түйіндерінің параметрлерін опциялардың бірін таңдап баптаңыз:
 
       {tabs}

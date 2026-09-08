@@ -141,7 +141,7 @@ Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associa
 
 The GPU limit for a single instance is a limitation of KVM technology, which does not allow connecting more than one video card to a single virtual machine.
 
-### {heading(Cloud Containers)[id=k8s]}
+### {heading(Managed Containers)[id=k8s]}
 
 #### Container resources for one project
 
@@ -191,7 +191,7 @@ The GPU limit for a single instance is a limitation of KVM technology, which doe
 
 #### Limits without quotas
 
-Aside from the quotas listed above, Cloud Containers has specific technical limits.
+Aside from the quotas listed above, Managed Containers has specific technical limits.
 
 [cols="3,1,1", options="header"]
 |===

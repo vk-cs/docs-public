@@ -79,7 +79,7 @@ VK Cloud Платформасында Тіркелгіні 01.02.2025 жылда
 
 **Арнайы шарттарды қолдану шектеулері**:
 
-- Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, VK Object Storage, Cloud Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
+- Арнайы шарттар келесі VK Cloud Сервистеріне қолданылады: Cloud Servers, VK Object Storage, Managed Containers, Cloud Databases (MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Tarantool), Cloud Spark, Cloud Trino, Cloud Kafka, Cloud Flink, Cloud ML Platform, Vision, Voice, Cloud Backup.
 
   Өзге Сервистерді пайдалану төлемі Пайдаланушы тарапынан Прайс-парақта көрсетілген бағалар негізінде жалпы шарттармен жүзеге асырылады.
 

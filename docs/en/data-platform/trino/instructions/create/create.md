@@ -22,7 +22,7 @@
 1. At the **Parameters** step:
 
    1. Set a name and description for the instance.
-   1. Select a Kubernetes cluster.  A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host the Cloud Trino instance.
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host the Cloud Trino instance.
 
       If the desired cluster is not in the list:
 
@@ -31,7 +31,7 @@
 
          If the desired network is not listed, select **Create new network** and specify [SDN](/en/networks/vnet/concepts/architecture#sdns_used) and the subnet address.
 
-      1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the Cloud Containers cluster node will be located.
+      1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
    1. Configure the parameters of the nodes on which the service instance will be deployed:
 
       {tabs}

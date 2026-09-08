@@ -2,7 +2,7 @@
 
 {ifdef(public)}
 {note:warn}
-Через сервис Cloud Containers нельзя управлять кластерами {linkto(../../../../data-platform#data-platform-main)[text={var(data-p)}]}. Для этого используйте раздел {var(data-p)} личного кабинета {var(cloud)}.
+Через сервис Managed Containers нельзя управлять кластерами {linkto(../../../../data-platform#data-platform-main)[text={var(data-p)}]}. Для этого используйте раздел {var(data-p)} личного кабинета {var(cloud)}.
 {/note}
 {/ifdef}
 

@@ -11,7 +11,7 @@
 
    Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
-1. Cloud Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/k8s/instructions/helpers/terraform-howto) танысыңыз.
+1. Managed Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/k8s/instructions/helpers/terraform-howto) танысыңыз.
 
 1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 

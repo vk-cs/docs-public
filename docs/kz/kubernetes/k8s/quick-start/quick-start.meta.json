@@ -1,7 +1,7 @@
 {
   "title": "Жылдам бастау",
   "shortDescription": "Kubernetes-пен жұмысты бастау",
-  "metaDescription": "VK Cloud-тың Cloud Containers сервисі: жылдам бастау сервиспен жұмысты бастауға және оның мүмкіндіктерімен танысуға көмектеседі.",
+  "metaDescription": "VK Cloud-тың Managed Containers сервисі: жылдам бастау сервиспен жұмысты бастауға және оның мүмкіндіктерімен танысуға көмектеседі.",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
   "weight": 1,

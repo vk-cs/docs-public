@@ -91,4 +91,4 @@
 
 - {linkto(../../../connect#mk8s-connect)[text=Настройте окружение]} на хосте, с которого планируется подключаться к кластеру.
 - {linkto(../../../how-to-guides#mk8s-how-to-guides)[text=Познакомьтесь со сценариями использования]} кластера.
-- {linkto(../../../concepts#mk8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Cloud Containers.
+- {linkto(../../../concepts#mk8s-concepts)[text=Познакомьтесь с концепциями]} сервиса Managed Containers.

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers сервисіндегі Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін аудит саясаты ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)) бапталған. Ол кластердегі {linkto(../architecture#k8s-architecture-kubernetes-api-integration)[text=Kubernetes API]} оқиғаларының қайсысы және қандай көлемде VK Cloud платформасындағы {linkto(../../../../monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} аудит журналына жазылатынын анықтайды. Аудит саясаты Cloud Containers сервисінде жасайтын барлық кластерлер үшін бапталған және оны өзгертуге болмайды.
+Managed Containers сервисіндегі Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін аудит саясаты ([audit policy](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/#audit-policy)) бапталған. Ол кластердегі {linkto(../architecture#k8s-architecture-kubernetes-api-integration)[text=Kubernetes API]} оқиғаларының қайсысы және қандай көлемде VK Cloud платформасындағы {linkto(../../../../monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} аудит журналына жазылатынын анықтайды. Аудит саясаты Managed Containers сервисінде жасайтын барлық кластерлер үшін бапталған және оны өзгертуге болмайды.
 
 Аудит саясаты мыналарға көмектеседі:
 

@@ -15,7 +15,7 @@
 
    - `default` — әдепкі мән.
    - `databases` — Cloud Databases сервисі ресурстарының логталуы.
-   - `containers` — Cloud Containers сервисі ресурстарының логталуы.
+   - `containers` — Managed Containers сервисі ресурстарының логталуы.
    - `vdi` — Cloud Desktop сервисі ресурстарының логталуы.
 
 1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token).

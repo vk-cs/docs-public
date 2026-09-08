@@ -41,7 +41,7 @@
    1. Выберите одну или три зоны доступности, в которых будут размещены узлы кластера. Брокеры Kafka распределятся по выбранным зонам автоматически.
    {/ifndef}
    {ifdef(public)}
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер в сервисе [Managed Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 
@@ -50,7 +50,7 @@
 
          Если нужной сети нет в списке, выберите пункт `Создать`.
 
-      1. Выберите [зону доступности](/ru/start/concepts/architecture#architecture-az), где будет размещен узел кластера Cloud Containers.
+      1. Выберите [зону доступности](/ru/start/concepts/architecture#architecture-az), где будет размещен узел кластера Kubernetes.
    {/ifdef}
             
    1. Настройте параметры узлов кластера, выбрав одну из опций:

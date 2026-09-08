@@ -37,7 +37,7 @@
         <mxCell id="KdkBA5cxpChFYSDpkusV-11" value="&lt;font&gt;Cloud Network&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="891" y="578" width="190" height="187" as="geometry" />
         </mxCell>
-        <mxCell id="KdkBA5cxpChFYSDpkusV-12" value="&lt;font&gt;Cloud Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" parent="1" vertex="1">
+        <mxCell id="KdkBA5cxpChFYSDpkusV-12" value="&lt;font&gt;Managed Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1141" y="369" width="188" height="209" as="geometry" />
         </mxCell>
         <mxCell id="KdkBA5cxpChFYSDpkusV-13" value="&lt;font&gt;Cloud Database&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" parent="1" vertex="1">
@@ -301,7 +301,7 @@
         <mxCell id="fQ-9QoD9v9dR4WLrelMo-11" value="&lt;font&gt;Cloud Network&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="911" y="598" width="190" height="187" as="geometry" />
         </mxCell>
-        <mxCell id="fQ-9QoD9v9dR4WLrelMo-12" value="&lt;font&gt;Cloud Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="fQ-9QoD9v9dR4WLrelMo-12" value="&lt;font&gt;Managed Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcsize=12;fillColor=#FFFFFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=2;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#252629;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="1161" y="389" width="188" height="209" as="geometry" />
         </mxCell>
         <mxCell id="fQ-9QoD9v9dR4WLrelMo-14" value="&lt;font&gt;Виртуальные машины&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcsize=12;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;arcSize=12;absoluteArcSize=1;fontSize=14;fontColor=#252629;" vertex="1" parent="1">
@@ -532,7 +532,7 @@
         <mxCell id="nWp-eLL03zswu_rfTDF6-11" value="&lt;font&gt;Cloud Network&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" parent="1" vertex="1">
           <mxGeometry x="60" y="565" width="190" height="175" as="geometry" />
         </mxCell>
-        <mxCell id="nWp-eLL03zswu_rfTDF6-12" value="&lt;font&gt;Cloud Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" parent="1" vertex="1">
+        <mxCell id="nWp-eLL03zswu_rfTDF6-12" value="&lt;font&gt;Managed Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" parent="1" vertex="1">
           <mxGeometry x="310" y="369" width="188" height="209" as="geometry" />
         </mxCell>
         <mxCell id="nWp-eLL03zswu_rfTDF6-13" value="&lt;font&gt;Cloud Database&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" parent="1" vertex="1">
@@ -778,7 +778,7 @@
         <mxCell id="6l_-JQNu0ArzUlrvdVRh-11" value="&lt;font&gt;Cloud Network&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" vertex="1" parent="1">
           <mxGeometry x="51" y="575" width="190" height="175" as="geometry" />
         </mxCell>
-        <mxCell id="6l_-JQNu0ArzUlrvdVRh-12" value="&lt;font&gt;Cloud Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" vertex="1" parent="1">
+        <mxCell id="6l_-JQNu0ArzUlrvdVRh-12" value="&lt;font&gt;Managed Containers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" vertex="1" parent="1">
           <mxGeometry x="301" y="379" width="188" height="209" as="geometry" />
         </mxCell>
         <mxCell id="6l_-JQNu0ArzUlrvdVRh-13" value="&lt;font&gt;Cloud Database&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#E3E8F2;arcsize=12;fillColor=#FFF;spacing=12;verticalAlign=top;spacingTop=0;strokeWidth=4;spacingLeft=0;spacingBottom=0;fontStyle=1;arcSize=12;absoluteArcSize=1;fontColor=#212121;" vertex="1" parent="1">

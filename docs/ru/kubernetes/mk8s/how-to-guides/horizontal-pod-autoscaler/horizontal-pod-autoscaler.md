@@ -59,7 +59,7 @@ kubectl top pods -A
 v1beta1.metrics.k8s.io   kube-system/metrics-server   True
 ```
 
-В сервисе Cloud Containers Metrics Server предустановлен — `apiservice v1beta1.metrics.k8s.io` находится в состоянии `True`, а `kubectl top` работает из коробки. Не устанавливайте второй экземпляр, если API работает.
+В сервисе Managed Containers Metrics Server предустановлен — `apiservice v1beta1.metrics.k8s.io` находится в состоянии `True`, а `kubectl top` работает из коробки. Не устанавливайте второй экземпляр, если API работает.
 
 {note:warn}
 Не полагайтесь на `kubectl get --raw /apis/metrics.k8s.io/v1beta1/nodes` как на индикатор. В кластере VK Cloud эта команда возвращает `Error from server (NotFound)`, хотя metrics API рабочий (`kubectl top` и HPA функционируют, `metrics.k8s.io/v1beta1` присутствует в `kubectl api-versions`). Надежные проверки готовности metrics API — это состояние `apiservice … True` и работающий `kubectl top nodes`/`kubectl top pods`.

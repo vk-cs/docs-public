@@ -27,7 +27,7 @@ The vertical autoscaling agent evaluates the master node load by CPU and RAM, mo
 |Autoscaling behavior
 
 |CPU load is 80% for 60 seconds
-.2+|If at least one of the thresholds is exceeded, the autoscaling agent requests the [Cloud Containers](/ru/kubernetes/k8s) service to change the master node flavor:
+.2+|If at least one of the thresholds is exceeded, the autoscaling agent requests the [Managed Containers](/ru/kubernetes/k8s) service to change the master node flavor:
 
 - The CPU generation will not change.
 - The number of CPU cores will increase by two.
@@ -42,7 +42,7 @@ Examples:
 |CPU load exceeds 60% for 5 minutes
 
 |RAM load exceeds 90% for 60 seconds
-|The autoscaling agent requests the [Cloud Containers](/ru/kubernetes/k8s) service to change the master node flavor:
+|The autoscaling agent requests the [Managed Containers](/ru/kubernetes/k8s) service to change the master node flavor:
 
 - The CPU generation will not change.
 - The number of CPU cores will only change if this is necessary to increase RAM.
@@ -65,7 +65,7 @@ Vertical autoscaling agent evaluates the master node load by CPU and RAM, monito
 - CPU load exceeds 60% for 5 minutes
 - RAM load exceeds 90% for 60 seconds
 
-If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
+If at least one of the thresholds is exceeded, a request will be sent to the [Managed Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
 
 {/cut}
 

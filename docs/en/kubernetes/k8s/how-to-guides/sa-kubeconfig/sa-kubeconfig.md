@@ -1,4 +1,4 @@
-When [connecting using kubectl](../../connect/kubectl) to a Cloud Containers cluster, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), this is cluster configuration file. kubeconfig is usually used to work with the cluster from the VK Cloud management console, which is configured to use [single sign-on technology](../../concepts/access-management). Therefore, when working with `kubectl` you periodically need to enter the user's password.
+When [connecting using kubectl](../../connect/kubectl) to a Kubernetes cluster in Managed Containers, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/). Kubeconfig is usually used to work with the cluster from the VK Cloud management console, which is configured to use [single sign-on technology](../../concepts/access-management). So when working with `kubectl` you periodically need to enter your password.
 
 This authentication process is inconvenient when working with automated tools that need access to the cluster. To work with them, it is more convenient to use the kubeconfig file for the service account. This kubeconfig allows you to authenticate with a token with an infinite lifetime, without entering a password.
 
@@ -311,15 +311,15 @@ This authentication process is inconvenient when working with automated tools th
 
    - `clusters`: a list of clusters and data to connect to them.
 
-     The Kubeconfig for the Cloud Containers cluster contains an entry about a single cluster.
+     The Kubeconfig for the Kubernetes cluster in Managed Containers contains an entry about a single cluster.
 
    - `users`: a list of users and data for their authentication in the cluster.
 
-     Kubeconfig for the Cloud Containers cluster contains a record of a single user who authenticates using `keystone-auth`.
+     Kubeconfig for the Kubernetes cluster in Managed Containers contains a record of a single user who authenticates using `keystone-auth`.
 
    - `contexts`: the context in which `kubectl` works. In the simplest case, the context is a combination of the cluster name and the user name.
 
-     Kubeconfig for the Cloud Containers cluster contains an entry about a single context. This context uses the cluster and user record that are already defined in kubeconfig.
+     Kubeconfig for the Kubernetes cluster in Managed Containers contains an entry about a single context. This context uses the cluster and user record that are already defined in kubeconfig.
 
    When `kubectl` is running in the specified context, it is working with the cluster specified in the context on behalf of the specified user.
 
@@ -521,7 +521,7 @@ Use the `kubectl` commands and the previously created kubeconfig for the service
 
    {/cut}
 
-If the password was not requested when executing the commands, then the resulting kubeconfig can be used in combination with automated tools to access the Cloud Containers cluster.
+If the password was not requested when executing the commands, then the resulting kubeconfig can be used in combination with automated tools to access the Kubernetes cluster in Managed Containers.
 
 {note:err}
 

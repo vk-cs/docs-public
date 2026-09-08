@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers сервисінде сіз Kubernetes кластерлерінің {linkto(../../concepts/security-policies#k8s-security-policies)[text=қауіпсіздік саясаттарын]} VK Cloud жеке кабинеті арқылы басқара аласыз. Бұл, мысалы, `kubectl` көмегімен {linkto(../../reference/gatekeeper#k8s-gatekeeper)[text=Gatekeeper]} сәйкес саясат ресурстарымен тікелей жұмыс істеуге балама болып табылады.
+Managed Containers сервисінде сіз Kubernetes кластерлерінің {linkto(../../concepts/security-policies#k8s-security-policies)[text=қауіпсіздік саясаттарын]} VK Cloud жеке кабинеті арқылы басқара аласыз. Бұл, мысалы, `kubectl` көмегімен {linkto(../../reference/gatekeeper#k8s-gatekeeper)[text=Gatekeeper]} сәйкес саясат ресурстарымен тікелей жұмыс істеуге балама болып табылады.
 
 ## {heading(Қауіпсіздік саясаттарын қарау)[id=k8s-manage-security-view-policies]}
 

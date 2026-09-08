@@ -8,7 +8,7 @@
 
 ## {heading(Работа с сетевыми подсистемами (CNI))[id=mk8s-network-cni]}
 
-Для организации внутрикластерной сети в сервисе Cloud Containers поддерживаются две сетевых подсистемы (CNI, Container Network Interface):
+Для организации внутрикластерной сети в сервисе Managed Containers поддерживаются две сетевых подсистемы (CNI, Container Network Interface):
 
 - [Calico](https://projectcalico.docs.tigera.io/about/about-calico) реализует сетевую маршрутизацию на уровне L3 с помощью стандартных сетевых протоколов и iptables. Calico хорошо масштабируется и оптимально подходит для средних и крупных кластеров.
 - [Cilium](https://docs.cilium.io/en/stable/index.html) использует eBPF (Linux eXpress Data Path) для реализации сетевых политик и маршрутизации непосредственно в ядре ОС, минуя iptables. Cilium поддерживает фильтрацию трафика на уровнях L3, L4 и L7 (например, по HTTP-заголовкам), а также предоставляет расширенные возможности мониторинга (например, через встроенный инструмент Hubble). Cilium оптимально подходит для очень больших кластеров с высокой нагрузкой и микросервисных архитектур.
@@ -70,6 +70,6 @@
 
 ## {heading(Смотрите также)[id=mk8s-network-see-also]}
 
-- {linkto(../about#mk8s-about)[text=Обзор сервиса Cloud Containers]}.
-- {linkto(../architecture#mk8s-architecture)[text=Архитектура сервиса Cloud Containers]}.
+- {linkto(../about#mk8s-about)[text=Обзор сервиса Managed Containers]}.
+- {linkto(../architecture#mk8s-architecture)[text=Архитектура сервиса Managed Containers]}.
 - {linkto(../storage#mk8s-storage)[text=Хранилище в кластере]}.

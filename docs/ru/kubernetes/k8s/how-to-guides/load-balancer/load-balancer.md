@@ -17,7 +17,7 @@
 
   - Случайный выбор реплики (по умолчанию).
 
-    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Cloud Containers {linkto(../../concepts/addons-and-settings/settings#k8s-settings-kube-proxy-mode)[text=работает]} в режиме `iptables`.
+    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Kubernetes в сервисе Managed Containers {linkto(../../concepts/addons-and-settings/settings#k8s-settings-kube-proxy-mode)[text=работает]} в режиме `iptables`.
     Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables).
 
   - Закрепление реплики за конкретным IP-адресом.

@@ -260,7 +260,7 @@
 | ![](../../../../assets/no.svg "inline")
 
 |Администратор, оператор, аудитор Kubernetes
-| Все события сервиса Cloud Containers и все свои действия
+| Все события сервиса Managed Containers и все свои действия
 | ![](../../../../assets/check.svg "inline")
 | ![](../../../../assets/no.svg "inline")
 |===

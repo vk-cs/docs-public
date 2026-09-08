@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Cloud Containers сервисінің Kubernetes кластерлеріне арналған {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддондарын]} {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=Terraform көмегімен кластерді құру кезінде]} де, бұрыннан бар кластерге де орнатуға болады. Орнатылған аддондарды қарауға және жоюға болады.
+Managed Containers сервисінің Kubernetes кластерлеріне арналған {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддондарын]} {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=Terraform көмегімен кластерді құру кезінде]} де, бұрыннан бар кластерге де орнатуға болады. Орнатылған аддондарды қарауға және жоюға болады.
 
 ## {heading(Аддондарды қарау)[id=k8s-manage-addons-view]}
 

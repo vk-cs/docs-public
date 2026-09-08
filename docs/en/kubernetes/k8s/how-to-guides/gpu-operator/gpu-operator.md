@@ -1,4 +1,4 @@
-Cloud Containers allows you to create [GPU clusters](/en/kubernetes/k8s/concepts/flavors) for machine learning or big data processing.
+Managed Containers allows you to create [GPU clusters](/en/kubernetes/k8s/concepts/flavors) for machine learning or big data processing.
 
 A GPU can be used in a cluster in the following ways:
 

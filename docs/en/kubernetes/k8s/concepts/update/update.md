@@ -36,9 +36,9 @@ The cluster is updated as follows:
 
 ## {heading(How to calculate the percentage of unavailable nodes when updating clusters)[id=unavailable-nodes]}
 
-During the update process, the nodes become unavailable, and Cloud Containers automatically redistributes the load from them to the free nodes. During the update process, the auto-scaling functions do not work, so you need to have a sufficient number of spare master and worker nodes in your cluster, where the workload from the nodes undergoing updates can be redirected.
+During the update process, the nodes become unavailable, and Managed Containers automatically redistributes the load from them to the free nodes. During the update process, the auto-scaling functions do not work, so you need to have a sufficient number of spare master and worker nodes in your cluster, where the workload from the nodes undergoing updates can be redirected.
 
-When selecting the value for the **Percentage of unavailable nodes when updating the cluster version** setting, consider not only the number of nodes that you want to be updated at the same time, but also the available resources in the cluster. During the update process, Cloud Container redirects the load from the nodes that are being updated to other nodes, so there must be enough spare nodes available. Otherwise, applications running on the updated nodes may not have enough resources. Additionally, make sure there are enough spare nodes available in case the load on the existing nodes increases due to the redirected traffic from the updated nodes. The recommended number is 1% of the total number of nodes.
+When selecting the value for the **Percentage of unavailable nodes when updating the cluster version** setting, consider not only the number of nodes that you want to be updated at the same time, but also the available resources in the cluster. During the update process,the Managed Containers service redirects the load from the nodes that are being updated to other nodes, so there must be enough spare nodes available. Otherwise, applications running on the updated nodes may not have enough resources. Additionally, make sure there are enough spare nodes available in case the load on the existing nodes increases due to the redirected traffic from the updated nodes. The recommended number is 1% of the total number of nodes.
 
 So, if you plan to simultaneously update 10 nodes in a cluster of 30 nodes, and you set the respective value for the **Percentage of unavailable nodes when updating the cluster version** setting, you must have at least 10 spare nodes where the load can be directed to from the updated nodes, and one extra node in case the load increases.
 
@@ -59,7 +59,7 @@ To select the setting value:
 
    In this case, in total, you can update three nodes out of nine at the same time, which satisfies the requirements.
 
-1. Make sure that you have enough worker nodes in your cluster so that Cloud Containers can transfer the load from the existing nodes to them. If you don't have enough worker nodes, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) them.
+1. Make sure that you have enough worker nodes in your cluster so that Managed Containers can transfer the load from the existing nodes to them. If you don't have enough worker nodes, [add](/en/kubernetes/k8s/instructions/manage-node-group#add_group) them.
 
 1. Set the value as either:
 
@@ -68,6 +68,6 @@ To select the setting value:
 
 In the example above:
 
-  - With the value set to 33%, Cloud Containers will update three nodes at a time.
-  - With the value set to 20%, Cloud Containers will update two nodes at a time.
-  - With the value set to 10%, Cloud Containers will update one node at a time.
+  - With the value set to 33%, Managed Containers will update three nodes at a time.
+  - With the value set to 20%, Managed Containers will update two nodes at a time.
+  - With the value set to 10%, Managed Containers will update one node at a time.

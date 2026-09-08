@@ -58,7 +58,7 @@
    {tab(Преднастроенные идентификаторы)}
         
    - `default` — идентификатор, который не имеет привязанных к нему сервисов и предназначен для тестирования и отладки.
-   - `containers` — Cloud Containers.
+   - `containers` — Managed Containers.
    - `databases` — Cloud Databases.
    - `mlplatform` — Cloud ML Platform.
 

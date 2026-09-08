@@ -11,7 +11,7 @@
 
    При необходимости {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=увеличьте]} квоты.
 
-1. Ознакомьтесь с {linkto(../../../../../kubernetes/k8s/instructions/helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Cloud Containers.
+1. Ознакомьтесь с {linkto(../../../../../kubernetes/k8s/instructions/helpers/terraform-howto#k8s-terraform-howto)[text=особенностями использования Terraform]} в сервисе Managed Containers.
 1. {linkto(../../../quick-start#terraform-quick-start)[text=Установите Terraform и настройте провайдер]}, если этого еще не сделано.
 
    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.

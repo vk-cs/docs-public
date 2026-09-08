@@ -96,7 +96,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
 1. [Go to](https://msk.cloud.vk.com/app/) you VK Cloud management console.
 1. Select the project where the cluster you need is located.
-1. Go to the **Containers** → **Kubernetes Clusters** section.
+1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the cluster you need.
 1. Go to the **Cluster resources** tab.
 1. Expand the **Pods** list and make sure that the `overprovisioning` pod with the `Running` status is added to the list.

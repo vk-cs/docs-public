@@ -13,7 +13,7 @@ Kubernetes кластеріндегі деректер бірнеше тәсіл
 
 - _Тұрақты томдардың_ (persistent volume, PV) подтың өмірлік цикліне тәуелді емес өз {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=өмірлік циклі]} бар. Өмірлік циклдердің бөлінуінің арқасында мұндай томдарды кейін басқа подтармен қайта пайдалануға болады. Тұрақты томдармен жұмыс істеу үшін подтар мен басқа да жүктемелер Persistent Volume Claim (PVC) пайдаланады.
 
-Cloud Containers сервисінде ReadWriteMany (RWX) режиміндегі Persistent Volume Claim қолжетімділігі іске асырылмаған. Бұл әртүрлі түйіндердегі бірнеше подтан бір PV-ге бір уақытта деректер жаза алмайтыныңызды білдіреді.
+Managed Containers сервисінде ReadWriteMany (RWX) режиміндегі Persistent Volume Claim қолжетімділігі іске асырылмаған. Бұл әртүрлі түйіндердегі бірнеше подтан бір PV-ге бір уақытта деректер жаза алмайтыныңызды білдіреді.
 
 Әртүрлі түйіндердегі бірнеше подтан деректерге ортақ қолжеткізуді ұйымдастыру үшін, {linkto(../../../../computing/iaas/instructions/fs-manage#iaas-fs-manage)[text=бөлек виртуалды машинада NFS серверін өрістетіңіз]}. NFS сервері деректерге желі арқылы ортақ қолжеткізуді қамтамасыз етіп, бірнеше подқа ортақ томдағы деректерді бір уақытта оқуға және жазуға мүмкіндік береді.
 
@@ -24,7 +24,7 @@ PV жұмысын қамтамасыз ету үшін VK Cloud-та Kubernetes 
 
 ## {heading(Тұрақты томдарды (PV) басқару)[id=k8s-storage-pv-disks]}
 
-Cloud Containers сервисінде Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін жасалған PV-лерді {linkto(../../instructions/manage-pvs#k8s-manage-pvs)[text=басқаруға]} болады. Мұндай PV-лер VK Cloud платформасы басқаратын {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервистік жобада]} орналасады. Кластерді жою немесе көшіру кезінде мұндай PV-лердегі деректерге қолжетімділікті жоғалтпау үшін, оларды сервистік жобадан өз жобаңызға көшіруге болады.
+Managed Containers сервисінде Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін жасалған PV-лерді {linkto(../../instructions/manage-pvs#k8s-manage-pvs)[text=басқаруға]} болады. Мұндай PV-лер VK Cloud платформасы басқаратын {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервистік жобада]} орналасады. Кластерді жою немесе көшіру кезінде мұндай PV-лердегі деректерге қолжетімділікті жоғалтпау үшін, оларды сервистік жобадан өз жобаңызға көшіруге болады.
 
 PV-ні көшіруге немесе жоюға оны түйіндер тобына қоспаған жағдайда ғана болады.
 
@@ -82,9 +82,9 @@ PV үшін осы томмен байланысты PVC жойылған кез
 
 ## {heading(Алдын ала бапталған сақтау кластары)[id=k8s-storage-storage-classes]}
 
-Тұрақты томды {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs-prepare)[text=динамикалық дайындау]} кезінде сақтау класын көрсету қажет. Әдепкі сақтау класы Cloud Containers кластерлерінде бапталмаған. Әдепкі класты өзіңіз таңдай аласыз немесе PVC жасау кезінде қажетті класты нақты көрсете аласыз.
+Тұрақты томды {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs-prepare)[text=динамикалық дайындау]} кезінде сақтау класын көрсету қажет. Әдепкі сақтау класы Managed Containers кластерлерінде бапталмаған. Әдепкі класты өзіңіз таңдай аласыз немесе PVC жасау кезінде қажетті класты нақты көрсете аласыз.
 
-Cloud Containers сервисінде блоктық сақтау қоймалары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау кластары бар. Олар тұрақты томды динамикалық дайындау кезінде пайдалануға болатын әртүрлі сақтау түрлерін ұсынады:
+Managed Containers сервисінде блоктық сақтау қоймалары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау кластары бар. Олар тұрақты томды динамикалық дайындау кезінде пайдалануға болатын әртүрлі сақтау түрлерін ұсынады:
 
 - Белгілі бір {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңір]} үшін қолжетімділік аймағын көрсете отырып. 
 - Кез келген өңір мен қолжетімділік аймағы үшін. Мұндай сақтау кластары мультиаймақтық деп аталады. Мультиаймақтық сақтау кластары тек {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін қолжетімді. Олармен жұмыс істеу туралы толығырақ {linkto(../../how-to-guides/multiaz-storage-class#k8s-multiaz-storage-class)[text=Мультиаймақтық сақтау кластарын пайдалану]} бөлімінде берілген.
@@ -276,6 +276,6 @@ Cloud Containers сервисінде блоктық сақтау қоймала
 
 ## {heading(Сондай-ақ қараңыз)[id=k8s-storage-see-also]}
 
-- {linkto(../about#k8s-about)[text=Cloud Containers сервисіне шолу]}.
-- {linkto(../architecture#k8s-architecture)[text=Cloud Containers сервисінің архитектурасы]}.
+- {linkto(../about#k8s-about)[text=Managed Containers сервисіне шолу]}.
+- {linkto(../architecture#k8s-architecture)[text=Managed Containers сервисінің архитектурасы]}.
 - {linkto(../network#k8s-network)[text=Кластердегі желі]}.

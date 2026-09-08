@@ -73,7 +73,7 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
 
   {cut(List of PaaS services)}
 
-  - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters where you can run services and applications. 
+  - [Managed Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters where you can run services and applications. 
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMSs: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB powered by Greenplum.
   - [Cloud Spark](/en/ml/spark-to-k8s) — supports distributed batch and stream data processing, machine learning and analytics.
   - [Cloud ML Platform](/en/ml/mlplatform) — supports services for full-cycle ML development.

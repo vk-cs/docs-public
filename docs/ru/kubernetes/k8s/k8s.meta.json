@@ -1,7 +1,7 @@
 {
   "title": "{var(kube)}",
   "shortDescription": "Автоматическое масштабирование сервисов и приложений на при нагрузках на базе Kubernetes в кластерах первого поколения",
-  "metaDescription": "Сервис Cloud Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes первого поколения в VK Cloud",
+  "metaDescription": "Сервис Managed Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes первого поколения в VK Cloud",
   "sectionTitle": "{var(kube)}",
   "icon": "",
   "weight": 4,

@@ -422,13 +422,13 @@ A role that grants permissions to manage data in virtual network and DNS service
 
 Kubernetes Administrator.
 
-The role with the broadest set of permissions for working with the Cloud Containers service.
+The role with the broadest set of permissions for working with the Managed Containers service.
 
 ### mcs_k8s_editor
 
 Kubernetes Operator.
 
-A role with permissions for working in the Cloud Containers service.
+A role with permissions for working in the Managed Containers service.
 
 A user with this role can:
 
@@ -450,7 +450,7 @@ A user with this role can:
 
 Kubernetes Auditor.
 
-A role with permissions to view the Cloud Containers service.
+A role with permissions to view the Managed Containers service.
 
 A user with this role can:
 

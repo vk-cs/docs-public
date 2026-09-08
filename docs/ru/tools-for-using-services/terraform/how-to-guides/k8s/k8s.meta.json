@@ -1,8 +1,8 @@
 {
-  "title": "Cloud Containers",
-  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Containers",
-  "metaDescription": "Работа с сервисом Cloud Containers с использованием Terraform",
-  "sectionTitle": "Cloud Containers",
+  "title": "Managed Containers",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса Managed Containers",
+  "metaDescription": "Работа с сервисом Managed Containers с использованием Terraform",
+  "sectionTitle": "Managed Containers",
   "icon": "",
   "weight": 60,
   "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771",

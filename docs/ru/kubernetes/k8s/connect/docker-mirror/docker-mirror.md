@@ -23,7 +23,7 @@
 
   {/tab}
 
-{tab(Daemonset для Cloud Containers)}
+{tab(Daemonset для Managed Containers)}
 
   Используйте зеркало в конфигурации [CRI-O](https://cri-o.io/) на рабочих узлах кластера. Для этого примените следующий манифест в кластере {linkto(../kubectl#k8s-kubectl)[text=с помощью kubectl]} или в {linkto(../../instructions/manage-resources#k8s-manage-resources)[text=личном кабинете]}:
 

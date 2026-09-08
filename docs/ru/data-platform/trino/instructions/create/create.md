@@ -42,7 +42,7 @@
    1. (Пропустить для Standalone) Выберите кластер Kubernetes из выпадающего списка или создайте новый. В этот кластер будет добавлен worker-узел для размещения экземпляра Cloud Trino.
    {/ifndef}
    {ifdef(public)}
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Trino.
+   1. Выберите кластер Kubernetes. В этот кластер в сервисе [Managed Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Trino.
       Если нужного кластера нет в списке:
 
       1. Выберите пункт **Создать новый кластер**.
@@ -50,7 +50,7 @@
 
          Если нужной сети нет в списке, выберите пункт **Создать новую сеть** и укажите [SDN](/ru/networks/vnet/concepts/sdn) и адрес подсети.
 
-      1. Выберите [зону доступности](/ru/start/concepts/architecture#architecture-az), где будет размещен узел кластера Cloud Containers.
+      1. Выберите [зону доступности](/ru/start/concepts/architecture#architecture-az), где будет размещен узел кластера.
    {/ifdef}
    1. Настройте параметры узлов, на которых будет развернут экземпляр сервиса:
       

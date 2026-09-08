@@ -1,4 +1,4 @@
-Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../instructions/create-cluster/create-terraform), or [later](../../../instructions/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention. 
+Various add-ons (additional services) are available for Kubernetes clusters in the Managed Containers service. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../instructions/create-cluster/create-terraform), or [later](../../../instructions/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
 ## {heading(Features of installing add-ons)[id=features_of_installing_addons]}
 
@@ -217,7 +217,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
 
 {tab(Description)}
 
-[Fluent Bit](https://docs.fluentbit.io/manual) allows you to flexibly configure log collection in Cloud Containers clusters and analyze them in the [Cloud Logging](/en/monitoring-services/logging) service, for example, using Elasticsearch or Loki plugins.
+[Fluent Bit](https://docs.fluentbit.io/manual) allows you to flexibly configure log collection in clusters and analyze them in the [Cloud Logging](/en/monitoring-services/logging) service, for example, using Elasticsearch or Loki plugins.
 
 The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes.
 
@@ -237,7 +237,7 @@ The add-on does not have its own system requirements. The add-on subs use [limit
 
 {tab(Description)}
 
-Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
+Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from clusters to the [Cloud Logging](/en/monitoring-services/logging) service for further analysis of these logs.
 
 The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the sections on installing the add-on for [first-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum) and [second-generation](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s) clusters.
 
@@ -316,7 +316,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
 [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on [NGINX](https://docs.nginx.com/nginx-ingress-controller/intro/overview/) works as a reverse proxy and allows to organize single entry point for services in cluster which work via HTTP or HTTPS.
 
-If you have a controller, it is sufficient to create [Ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/) to make such services available from outside the Cloud Containers cluster.
+If you have a controller, it is sufficient to create [Ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/) to make such services available from outside of the cluster.
 
 The pre-installed Ingress controller integrates tightly with the VK Cloud platform. For more information, see [Network in cluster](../../network).
 

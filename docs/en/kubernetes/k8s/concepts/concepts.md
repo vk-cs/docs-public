@@ -1,1 +1,1 @@
-Detailed description of the principles of functioning and structure of Cloud Containers clusters.
+Detailed description of the principles of functioning and structure of Kubernetes clusters in the Managed Containers service.

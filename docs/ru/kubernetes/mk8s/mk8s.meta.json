@@ -1,8 +1,8 @@
 {
-  "title": "Cloud Containers для кластеров второго поколения",
+  "title": "Managed Containers для кластеров второго поколения",
   "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Kubernetes в кластерах второго поколения",
-  "metaDescription": "Сервис Cloud Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes второго поколения в VK Cloud",
-  "sectionTitle": "Cloud Containers для кластеров второго поколения",
+  "metaDescription": "Сервис Managed Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes второго поколения в VK Cloud",
+  "sectionTitle": "Managed Containers для кластеров второго поколения",
   "icon": "",
   "weight": 4,
   "uuid": "e57572d5-ba7a-4c18-8892-1089cb9cc3b6",

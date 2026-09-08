@@ -6,13 +6,13 @@
 1. {linkto(../../create-cluster/create-terraform#k8s-create-terraform)[text=Создайте]} новый кластер с одной или несколькими группами worker-узлов.
 1. Управляйте созданными ресурсами с помощью Terraform.
 
-Подробная информация о работе с сервисом Cloud Containers приведена в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
+Подробная информация о работе с сервисом Managed Containers приведена в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## {heading(Особенности использования Terraform для управления сервисом Cloud Containers)[id=k8s-terraform-howto-features]}
+## {heading(Особенности использования Terraform для управления сервисом Managed Containers)[id=k8s-terraform-howto-features]}
 
 - Некоторые операции с кластером выполняются только в {linkto(../../../../../tools-for-using-services/account#tools-account)[text=личном кабинете]}. Для каждой операции в {linkto(../../../instructions#k8s-instructions)[text=пошаговых инструкциях]} указано, можно ли ее выполнить также с помощью Terraform.
 
-- Изменение некоторых параметров уже существующего кластера приведет к созданию **нового кластера**. В документации сервиса Cloud Containers приводятся только те операции, которые можно выполнить над существующим кластером, не создавая при этом новый.
+- Изменение некоторых параметров уже существующего кластера приведет к созданию **нового кластера**. В документации сервиса Managed Containers приводятся только те операции, которые можно выполнить над существующим кластером, не создавая при этом новый.
 
   Подробнее в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference).
 

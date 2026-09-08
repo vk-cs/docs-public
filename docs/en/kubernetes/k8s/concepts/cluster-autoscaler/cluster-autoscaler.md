@@ -1,11 +1,11 @@
-In Cloud Containers, worker node groups in Kubernetes clusters are [automatically scaled](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) via [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler#readme). It constantly monitors the load on the worker nodes and adjusts their number within the specified limits, depending on the requirements of the workload. The main goal of Cluster Autoscaler is to make sure that there are enough [computing resources](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) for all the pods in the cluster, and at the same time to avoid excessive resource allocation and downtime. This approach ensures uninterrupted operation and efficiency of applications, while maximizing resource utilization and reducing expenses.
+In Managed Containers, worker node groups in Kubernetes clusters are [automatically scaled](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) via [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler#readme). It constantly monitors the load on the worker nodes and adjusts their number within the specified limits, depending on the requirements of the workload. The main goal of Cluster Autoscaler is to make sure that there are enough [computing resources](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) for all the pods in the cluster, and at the same time to avoid excessive resource allocation and downtime. This approach ensures uninterrupted operation and efficiency of applications, while maximizing resource utilization and reducing expenses.
 
 In worker node groups, Cluster Autoscaler:
 
 - creates new nodes when required by the workload
 - removes underloaded nodes
 
-Cluster Autoscaler is pre-installed in all Kubernetes clusters that you create in the Cloud Containers service, but it is not enabled by default. You need to enable automatic scaling manually for each group of worker nodes when [configuring its settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).
+Cluster Autoscaler is pre-installed in all Kubernetes clusters that you create in the Managed Containers service, but it is not enabled by default. You need to enable automatic scaling manually for each group of worker nodes when [configuring its settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).
 
 ## Increasing the number of worker nodes
 
@@ -27,6 +27,6 @@ Cluster Autoscaler checks the load of nodes in the cluster and decreases their n
 
    This parameter protects from accidentally removing the node if, for some reason, its pods are temporarily unavailable (for example, due to short-term load spikes). At the same time, it allows you to free up resources when the node becomes really unnecessary.
 
-   In Cloud Containers, the grace period is set to 5 minutes. If the node is empty for 5 minutes (all its pods are evicted), and no new pods appear, Cluster Autoscaler triggers the removal of this node.
+   In Managed Containers, the grace period is set to 5 minutes. If the node is empty for 5 minutes (all its pods are evicted), and no new pods appear, Cluster Autoscaler triggers the removal of this node.
 
 The number of nodes can only be decreased to the minimum value that you set in its group settings. If automatic scaling is enabled, but underloaded nodes do not get removed, try the solutions described in [Cluster Autoscaler is enabled, but underloaded nodes do not get removed](/en/kubernetes/k8s/troubleshooting/cluster-does-not-scale-down).

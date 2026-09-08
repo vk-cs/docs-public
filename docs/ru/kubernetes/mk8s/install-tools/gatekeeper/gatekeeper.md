@@ -51,7 +51,7 @@ gatekeeper-controller-manager-...                1/1     Running   0          ..
 
 ## {heading((Опционально) Настройка ограничений и шаблонов)[id=mk8s-gatekeeper-set-constraint]}
 
-В кластерах Kubernetes в сервисе Cloud Containers действуют {linkto(../../concepts/addons-and-settings/settings#mk8s-settings-templates-and-limitations)[text=политики безопасности по умолчанию]}, которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
+В кластерах Kubernetes в сервисе Managed Containers действуют {linkto(../../concepts/addons-and-settings/settings#mk8s-settings-templates-and-limitations)[text=политики безопасности по умолчанию]}, которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей. Чтобы защитить кластеры версии 1.20 или ниже, самостоятельно создайте ограничения и шаблоны ограничений Gatekeeper, которые соответствуют этим политикам.
 
 {tabs}
 
