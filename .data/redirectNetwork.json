@@ -34128,12 +34128,6 @@
     "locale": false
   },
   {
-    "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum",
     "destination": "/ru/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
     "permanent": false,

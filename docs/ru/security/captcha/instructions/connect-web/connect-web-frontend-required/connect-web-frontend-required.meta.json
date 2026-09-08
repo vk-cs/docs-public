@@ -5,7 +5,7 @@
   "sectionTitle": "Показ капчи по запросу фронтенда",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "3e464492-c904-4219-b82a-e2be8c4a11dc",
   "build": {
     "for": [
       "public"
