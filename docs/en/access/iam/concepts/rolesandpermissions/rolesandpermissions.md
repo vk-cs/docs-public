@@ -390,14 +390,14 @@ Some of the actions below are available only in the certain state of a cluster. 
 
 The [Security Gate](https://cloud.vk.com/security-gate) service in the management console is available for the following roles:
 
--   Project owner
--   Superadministrator
--   Project administrator
--   Network security administrator
--   Internal network administrator
--   Virtual machine administrator
--   Junior VM administrator
--   Virtual machine operator
--   Viewer
+-   `Project owner`
+-   `Superadministrator`
+-   `Project administrator`
+-   `Network security administrator`
+-   `Internal network administrator`
+-   `Virtual machine administrator`
+-   `Junior VM administrator`
+-   `Virtual machine operator`
+-   `Viewer`
 
 The Security Gate service is not available for any other roles.

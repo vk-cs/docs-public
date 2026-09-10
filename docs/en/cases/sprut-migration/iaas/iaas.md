@@ -39,7 +39,7 @@
     1. Run the command that will add execution permissions to all files with the `.sh` extension in this directory:
 
         ```console
-        chmod +x .sh
+        chmod +x *.sh
         ```
 
 ## 1. Collect project infrastructure data for migration
