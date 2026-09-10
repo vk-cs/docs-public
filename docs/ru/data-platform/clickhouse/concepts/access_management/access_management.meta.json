@@ -1,10 +1,10 @@
 {
   "title": "Управление доступом в VK Private Cloud",
   "shortDescription": "Как в Cloud ClickHouse распределяются права доступа между участниками проекта, примеры ролевых моделей",
-  "metaDescription": "Узнайте, как в сервисе Cloud ClickHouse VK Data Platform распределяются права доступа между участниками проекта: влияние базовых ролей и примеры ролевых моделей с отдельными разрешениями.",
+  "metaDescription": "Узнайте, как в Cloud ClickHouse VK Data Platform распределяются права доступа: влияние базовых ролей и примеры ролевых моделей",
   "sectionTitle": "Управление доступом в VK Private Cloud",
   "icon": "",
-  "weight": 4,
+  "weight": 2,
   "uuid": "92b6b091-5a9f-4f50-9be1-b82379cfdda0",
   "build": {
     "for": [

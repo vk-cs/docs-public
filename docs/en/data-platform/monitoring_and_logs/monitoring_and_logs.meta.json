@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring and logging",
+  "shortDescription": "Collecting logs and security events",
+  "metaDescription": "Monitoring and logging in VK Data Platform",
+  "sectionTitle": "Monitoring and logging",
+  "weight": 25,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "eb29a6ba-eb0f-440f-b01d-13b2420c0838"
+}

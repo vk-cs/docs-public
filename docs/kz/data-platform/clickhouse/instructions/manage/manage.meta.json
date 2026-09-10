@@ -5,12 +5,12 @@
   "sectionTitle": "Сервис данасымен жұмыс",
   "icon": "",
   "weight": 3,
+  "uuid": "84297c2d-f32d-4376-afd6-5441fdb82ed1",
   "build": {
     "for": [
       "public",
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "84297c2d-f32d-4376-afd6-5441fdb82ed1"
+  }
 }

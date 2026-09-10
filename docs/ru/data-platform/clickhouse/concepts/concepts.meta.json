@@ -1,9 +1,9 @@
 {
   "title": "Концепции",
   "shortDescription": "Основные понятия и характеристики сервиса Cloud ClickHouse",
-  "metaDescription": "Узнайте об основных понятиях и характеристиках сервиса Cloud ClickHouse в VK Data Platform",
+  "metaDescription": "Ознакомьтесь с основными понятиями и характеристиками сервиса Cloud ClickHouse в VK Data Platform: архитектура и модели доступа",
   "sectionTitle": "Концепции",
-  "weight": 0,
+  "weight": 1,
   "uuid": "b79f363e-14c6-4e8a-9975-bc7fade78a90",
   "build": {
     "for": [

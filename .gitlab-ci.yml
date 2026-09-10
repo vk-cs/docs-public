@@ -10,7 +10,7 @@ variables:
   VKCS_DEV_MATRIX_DEPLOY_MODE: auto
   VKCS_RELEASE_BRANCH: master
   VKCS_RELEASES_ENABLED: "true"
-  VKCS_FILEGEN_VERSION: "5.5.1"
+  VKCS_FILEGEN_VERSION: "5.5.10"
   SATORI_API_URL_STAGE: https://mcstest.mail.ru/search/api
   SATORI_API_URL_PROD: https://cloud.vk.ru/search/api
   SATORI_API_URL_DEV: https://satori.devint.vkc.devmail.ru

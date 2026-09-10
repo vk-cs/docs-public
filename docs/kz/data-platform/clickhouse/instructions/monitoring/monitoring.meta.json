@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-да мониторинг",
+  "shortDescription": "Cloud ClickHouse үшін Standalone-да мониторинг.",
+  "metaDescription": "Cloud ClickHouse үшін Standalone-да мониторинг туралы ақпарат және метрикалар анықтамалығына сілтеме.",
+  "sectionTitle": "Standalone-да мониторинг",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": "10ba2615-bbd9-440c-a80c-6192a82eeff8"
+}

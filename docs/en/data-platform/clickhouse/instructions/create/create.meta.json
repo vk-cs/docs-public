@@ -1,0 +1,15 @@
+{
+  "title": "Creating a service instance",
+  "sectionTitle": "Creating an instance",
+  "shortDescription": "How to create a Cloud ClickHouse instance in the VK Cloud management console.",
+  "metaDescription": "Step-by-step instructions for creating a Cloud ClickHouse instance: selecting configuration, parameters, maintenance settings, and credentials.",
+  "weight": 1,
+  "uuid": "c20ee3e3-a9a7-4e6c-814e-e7c34a681b65",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

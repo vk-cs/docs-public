@@ -1,0 +1,13 @@
+{
+  "title": "Pricing",
+  "sectionTitle": "Pricing",
+  "shortDescription": "Pricing for Cloud ClickHouse: what is charged and what is not.",
+  "metaDescription": "Information about Cloud ClickHouse pricing: charged resources include CPU, RAM, disks, IP addresses, load balancers; traffic and DP Console usage are not charged.",
+  "weight": 3,
+  "uuid": "2a779794-5aa1-4ebb-bdc9-84ecc7fb8f97",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

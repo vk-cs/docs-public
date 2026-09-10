@@ -1,0 +1,18 @@
+{
+  "title": "Connecting to a service instance",
+  "sectionTitle": "Connecting to an instance",
+  "shortDescription": "How to connect to a Cloud ClickHouse instance using clickhouse-client and drivers for Python, Java, C++, Go.",
+  "metaDescription": "Instructions for connecting to a Cloud ClickHouse instance via TCP and HTTP protocols using clickhouse-client and drivers for Python, Java, C++, and Go with TLS and without TLS.",
+  "weight": 2,
+  "uuid": "872dc734-a40a-4f90-bc68-91602fa27a7e",
+  "additionalUuids": [
+    "e13b2ac3-59ea-47b0-954a-11b1cbe7c344"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

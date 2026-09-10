@@ -1,0 +1,15 @@
+{
+  "title": "Managing a service instance",
+  "sectionTitle": "Managing an instance",
+  "shortDescription": "How to manage a Cloud ClickHouse instance: view information, scale, add connections, create backups, and delete.",
+  "metaDescription": "Instructions for managing a Cloud ClickHouse instance: viewing and editing information, scaling, managing accounts, extensions, connections, settings, backups, and deleting an instance.",
+  "weight": 3,
+  "uuid": "fa06848c-18b1-4420-99ff-376a13f08dfd",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

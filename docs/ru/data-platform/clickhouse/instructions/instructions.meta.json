@@ -1,9 +1,9 @@
 {
   "title": "Пошаговые инструкции",
   "shortDescription": "Создание экземпляра сервиса и управление экземпляром и его компонентами",
-  "metaDescription": "Узнайте как в VK Data Platform создавать и управлять экземплярами сервиса Cloud ClickHouse",
+  "metaDescription": "Узнайте, как в VK Data Platform создавать и управлять экземплярами сервиса Cloud ClickHouse: подключение, мониторинг, логирование",
   "sectionTitle": "Пошаговые инструкции",
-  "weight": 1,
+  "weight": 2,
   "uuid": "b7a8822c-0eb9-4397-a3fa-2f7be6080455",
   "build": {
     "for": [

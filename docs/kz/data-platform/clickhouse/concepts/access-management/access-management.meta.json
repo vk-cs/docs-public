@@ -1,0 +1,15 @@
+{
+  "title": "VK Private Cloud-та рұқсатты басқару",
+  "shortDescription": "Cloud ClickHouse үшін VK Private Cloud-та рұқсатты басқару: рөлдер, рұқсаттар және рөлдік модель мысалдары.",
+  "metaDescription": "Cloud ClickHouse үшін VK Private Cloud-та рұқсатты басқару сипаттамасы: қолжетімді рөлдер, рұқсаттар және әртүрлі сценарийлер үшін рөлдік модель мысалдары.",
+  "sectionTitle": "VK Private Cloud-та рұқсатты басқару",
+  "icon": "",
+  "weight": 4,
+  "uuid": "8e0e6575-44f6-45a1-b4a1-4a1745683550",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

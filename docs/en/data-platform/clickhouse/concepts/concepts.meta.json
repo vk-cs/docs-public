@@ -1,0 +1,15 @@
+{
+  "title": "Concepts",
+  "sectionTitle": "Concepts",
+  "shortDescription": "Key concepts and characteristics of the Cloud ClickHouse service.",
+  "metaDescription": "Key concepts and characteristics of the Cloud ClickHouse service on the VK Cloud platform.",
+  "weight": 1,
+  "uuid": "9053b972-8443-4288-995f-11b2a434a6b1",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

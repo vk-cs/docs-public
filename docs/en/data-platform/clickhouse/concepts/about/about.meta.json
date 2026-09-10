@@ -1,0 +1,15 @@
+{
+  "title": "About the service",
+  "sectionTitle": "About the service",
+  "shortDescription": "Cloud ClickHouse is a service for creating and managing ClickHouse database instances on the VK Cloud platform.",
+  "metaDescription": "Information about the Cloud ClickHouse service: supported versions, features, and links to official ClickHouse documentation.",
+  "weight": 1,
+  "uuid": "941c8015-02a6-4032-8879-d51686d18c81",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
