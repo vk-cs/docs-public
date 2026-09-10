@@ -1,0 +1,15 @@
+{
+  "title": "Cloud ClickHouse",
+  "sectionTitle": "Cloud ClickHouse",
+  "shortDescription": "Cloud ClickHouse — a high-performance SQL database management system for online analytical query processing (OLAP).",
+  "metaDescription": "Cloud ClickHouse — a high-performance column-oriented SQL database management system for online analytical query processing (OLAP) on the VK Cloud platform.",
+  "weight": 2,
+  "uuid": "dfddeb72-8dd0-4908-ba98-32a1e988fad9",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

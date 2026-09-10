@@ -112,7 +112,7 @@
 
    1. Нажмите кнопку **Создать**.
 
-1. Когда экземпляр перейдет в статус `Активно`, {ifdef(public)}{linkto(../connect-to-instance#clickhouse_connect_to_instance)[text=проверьте подключение]}{/ifdef}{ifndef(public)}{linkto(../connect#clickhouse_connect)[text=проверьте подключение]}{/ifndef} и убедитесь, что экземпляр успешно создан, а настройки доступа корректны.
+1. Когда экземпляр перейдет в статус `Активно`, {linkto(../connect#clickhouse_connect-clickhouse-client)[text=проверьте подключение]} и убедитесь, что экземпляр успешно создан, а настройки доступа корректны.
 
 {/tab}
 

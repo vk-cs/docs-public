@@ -1,0 +1,18 @@
+{
+  "title": "Қызмет данасына қосылу",
+  "shortDescription": "clickhouse-client және Python, Java, C++, Go драйверлері арқылы Cloud ClickHouse данасына қосылу.",
+  "metaDescription": "TCP және HTTP протоколдары бойынша clickhouse-client және Python, Java, C++, Go драйверлері арқылы TLS-пен және TLS-сіз Cloud ClickHouse данасына қосылу нұсқаулығы.",
+  "sectionTitle": "Қызмет данасына қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "additionalUuids": [
+    "e13b2ac3-59ea-47b0-954a-11b1cbe7c344"
+  ],
+  "weight": 2,
+  "uuid": "a4c5346d-3b96-4258-9012-90bf5f4c307e"
+}

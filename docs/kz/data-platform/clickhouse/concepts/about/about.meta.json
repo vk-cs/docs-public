@@ -4,12 +4,12 @@
   "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse қалай пайдаланылатынын біліңіз",
   "sectionTitle": "Сервис туралы",
   "weight": 0,
+  "uuid": "c686b842-15e3-4797-b9a4-27519863e3c2",
   "build": {
     "for": [
       "public",
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "c686b842-15e3-4797-b9a4-27519863e3c2"
+  }
 }

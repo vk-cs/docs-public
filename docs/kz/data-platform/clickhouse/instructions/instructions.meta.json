@@ -4,12 +4,12 @@
   "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse сервис даналарын қалай жасауға және басқаруға болатынын біліңіз",
   "sectionTitle": "Қадамдық нұсқаулар",
   "weight": 1,
+  "uuid": "6f4d8a35-bd52-43be-9d49-97dd918abdef",
   "build": {
     "for": [
       "public",
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "6f4d8a35-bd52-43be-9d49-97dd918abdef"
+  }
 }

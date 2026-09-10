@@ -4,12 +4,12 @@
   "metaDescription": "VK Data Platform жүйесіндегі Cloud ClickHouse сервисінің негізгі тұжырымдамалары мен сипаттамалары туралы біліңіз",
   "sectionTitle": "Тұжырымдамалар",
   "weight": 0,
+  "uuid": "8f57ef26-1110-43da-a7b2-6544b41ee8d1",
   "build": {
     "for": [
       "public",
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "8f57ef26-1110-43da-a7b2-6544b41ee8d1"
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "sectionTitle": "Logging",
+  "shortDescription": "Information about logging in Standalone for Cloud ClickHouse.",
+  "metaDescription": "Information about logging in Standalone for Cloud ClickHouse.",
+  "weight": 4,
+  "uuid": "ba789cf6-797f-474a-9883-2343d35ad322",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

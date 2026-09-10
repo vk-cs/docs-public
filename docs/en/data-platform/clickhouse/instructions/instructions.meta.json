@@ -1,0 +1,15 @@
+{
+  "title": "Step-by-step instructions",
+  "sectionTitle": "Step-by-step instructions",
+  "shortDescription": "Step-by-step instructions for working with Cloud ClickHouse: creating, connecting, managing, and monitoring instances.",
+  "metaDescription": "Detailed step-by-step instructions for working with Cloud ClickHouse: creating instances, connecting to them, managing, backing up, monitoring, and logging.",
+  "weight": 2,
+  "uuid": "a513d43e-bf33-412c-a13c-0465d83a0099",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

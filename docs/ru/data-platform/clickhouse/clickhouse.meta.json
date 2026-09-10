@@ -1,7 +1,7 @@
 {
   "title": "Cloud ClickHouse",
   "shortDescription": "Столбцовая аналитическая СУБД для хранения и обработки исторических данных",
-  "metaDescription": "Узнайте о работе с Cloud ClickHouse в VK Data Platform — столбцовой аналитической СУБД для хранения и обработки исторических данных: создание, подключение и работа с экземпляром сервиса",
+  "metaDescription": "Узнайте о работе с Cloud ClickHouse в VK Data Platform: столбцовая СУБД для хранения и обработки исторических данных, создание и управление экземпляром",
   "sectionTitle": "Cloud ClickHouse",
   "icon": "",
   "weight": 2,

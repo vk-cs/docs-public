@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring in Standalone",
+  "sectionTitle": "Monitoring",
+  "shortDescription": "Monitoring in Standalone for Cloud ClickHouse.",
+  "metaDescription": "Information about monitoring in Standalone for Cloud ClickHouse and a link to the metrics reference.",
+  "weight": 5,
+  "uuid": "0a42d629-5581-458b-89cc-862ea6099715",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -31,6 +31,23 @@
 {/tabs}
 
 {ifndef(public)}
+## {heading(TLS сертификатын көру және ауыстыру)[id=clickhouse_certificate]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
+
+   Сертификаттармен жұмыс істеу туралы толығырақ {linkto(../../../certificates/manage#certificates_manage)[text=Сертификаттар]} бөлімінен оқыңыз.
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
+
+{ifndef(public)}
 ## {heading(IP мен порттарды өзгерту)[id=clickhouse_change-ip]}
 
 {note:warn} Тек Standalone-тағы {var(data-p)} үшін қолжетімді. {/note}
@@ -72,6 +89,21 @@
 {/tab}
 
 {/tabs}
+
+{ifndef(public)}
+## {heading(Тік масштабтау)[id=clickhouse_vertical_scaling]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_vertical_scaling]}
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
 
 ## {heading(Диск өлшемін ұлғайту)[id=clickhouse_disk_resize]}
 
@@ -128,7 +160,7 @@ Cloud ClickHouse жүйесінде `Стандартты пайдаланушы
 
 {/tabs}
 
-### {heading(Кеңейтімдерді қосу және өшіру)[id=clickhouse_extensions]}
+## {heading(Кеңейтімдерді қосу және өшіру)[id=clickhouse_extensions]}
 
 {tabs}
 
@@ -262,6 +294,18 @@ Cloud ClickHouse жүйесінде `Стандартты пайдаланушы
 {include(../../../_includes/_clickhouse.md)[tags=maintenance]}
 
 1. **Өзгерістерді сақтау** түймесін басыңыз.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Резервтік көшірмелерді көру)[id=clickhouse_backup_view]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_backup_view]}
 
 {/tab}
 

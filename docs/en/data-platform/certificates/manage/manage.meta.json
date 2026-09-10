@@ -1,0 +1,14 @@
+{
+  "title": "Manage certificates",
+  "shortDescription": "Create, view, and delete TLS certificates",
+  "metaDescription": "Step-by-step instructions for working with TLS certificates in VK Data Platform: create a certificate, upload the certificate, chain, and private key, view and delete",
+  "sectionTitle": "Manage certificates",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "c715391b-8eab-42a5-9f37-cdd8ed96d1b2"
+}

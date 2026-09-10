@@ -1,14 +1,18 @@
 {
   "title": "Подключение к экземпляру сервиса",
-  "shortDescription": "Как подключиться по TLS к экземпляру сервиса",
-  "metaDescription": "Узнайте, как подключиться по TLS к развернутому экземпляру сервиса Cloud ClickHouse с помощью clickhouse-client в VK Data Platform",
+  "shortDescription": "Варианты подключения к экземпляру сервиса",
+  "metaDescription": "Узнайте, как подключиться к экземпляру сервиса Cloud ClickHouse в VK Data Platform через clickhouse-client и драйверы Python, Java, C++, Go",
   "sectionTitle": "Подключение к экземпляру сервиса",
   "build": {
     "for": [
+      "public",
       "data-p",
       "data-p-pdf"
     ]
   },
-  "weight": 4,
+  "additionalUuids": [
+    "e13b2ac3-59ea-47b0-954a-11b1cbe7c344"
+  ],
+  "weight": 2,
   "uuid": "3cf35079-b4ee-4eae-b080-b2cfc7023b7f"
 }

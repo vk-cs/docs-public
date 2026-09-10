@@ -1,0 +1,14 @@
+{
+  "title": "Access management in VK Private Cloud",
+  "sectionTitle": "Access management",
+  "shortDescription": "Access management in VK Private Cloud for Cloud ClickHouse: roles, permissions, and role model examples.",
+  "metaDescription": "Description of access management in VK Private Cloud for Cloud ClickHouse: available roles, permissions, and examples of role models for different scenarios.",
+  "weight": 2,
+  "uuid": "eca56a6e-8eee-4121-b947-41b27fd2e173",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
