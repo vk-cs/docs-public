@@ -6,6 +6,6 @@
 
 {includetag(managed)}
 
-1. {linkto(../../instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
+1. {linkto(/ru/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=Создайте]} кластер актуальной версии, если это еще не сделано.
 
 {/includetag}
