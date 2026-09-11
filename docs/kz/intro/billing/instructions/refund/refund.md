@@ -20,7 +20,7 @@
 ## {heading(Жеке тұлғалар үшін қайтаруды рәсімдеу)[id=billing-refund-individuals]}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
-1. Қаражаттың есептен шығарылуын тоқтату үшін жобаны {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=консервациялаңыз]}.
+1. (Опционалды) {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Жобаны консервациялаңыз]} егер сервистердің жұмысын уақытша тоқтатқыңыз келсе. Жобаны консервациялау қаражаттың есептен шығарылуын тоқтатады.
 1. {var(cloud)} сайтының URL мекенжайынан жобаның {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификаторын (PID)]} көшіріп алыңыз.
 
    Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.kz/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
@@ -68,7 +68,7 @@
 ## {heading(Заңды тұлғалар мен ИП үшін қайтаруды рәсімдеу)[id=billing-refund-legal-entities]}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) жоба иесінің есептік жазбасы арқылы {var(cloud)} жеке кабинетіне.
-1. Қаражаттың есептен шығарылуын тоқтату үшін жобаны {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=консервациялаңыз]}.
+1. (Опционалды) {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Жобаны консервациялаңыз]} егер сервистердің жұмысын уақытша тоқтатқыңыз келсе. Жобаны консервациялау қаражаттың есептен шығарылуын тоқтатады.
 1. {var(cloud)} сайтының URL мекенжайынан жобаның {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификаторын (PID)]} көшіріп алыңыз.
 
    Москва өңірі үшін URL мысалы: `https://kz.cloud.vk.kz/app/mcs123456789/main`, мұнда `mcs123456789` — жобаның идентификаторы (PID).
