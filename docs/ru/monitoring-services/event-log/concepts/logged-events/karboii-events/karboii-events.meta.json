@@ -1,0 +1,14 @@
+{
+  "title": "События компонента Karboii",
+  "shortDescription": "События, которые сервис резервного копирования передает в Cloud Audit",
+  "metaDescription": "Узнайте, какие события компонента резервного копирования Karboii фиксируются в Cloud Audit: изменения состояния ресурсов и запросы к API.",
+  "sectionTitle": "События компонента Karboii",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

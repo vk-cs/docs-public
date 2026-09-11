@@ -1,0 +1,14 @@
+{
+  "title": "Karboii component events",
+  "shortDescription": "Events that the backup service sends to Cloud Audit",
+  "metaDescription": "Learn which events of the Karboii backup component are recorded in Cloud Audit: resource state changes and API requests.",
+  "sectionTitle": "Karboii component events",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
