@@ -34144,5 +34144,11 @@
     "destination": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/data-platform/clickhouse/instructions/connect-to-instance",
+    "destination": "/ru/data-platform/clickhouse/instructions/connect",
+    "permanent": false,
+    "locale": false
   }
 ]
