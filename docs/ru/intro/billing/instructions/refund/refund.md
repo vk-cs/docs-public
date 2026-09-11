@@ -18,7 +18,7 @@
 ## {heading(Оформление возврата для физических лиц)[id=billing-refund-individuals]}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
-1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, чтобы прекратить списание средств.
+1. (Опционально) {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, если хотите приостановить работу сервисов. Консервация проекта прекратит списание средств.
 1. Скопируйте {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификатор (PID)]} проекта из URL сайта {var(cloud)}.
 
    Пример URL для региона Москва: `https://msk.cloud.vk.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
@@ -65,7 +65,7 @@
 ## {heading(Оформление возврата для юридических лиц и ИП)[id=billing-refund-legal-entities]}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)} под учетной записью владельца проекта.
-1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, чтобы прекратить списание средств.
+1. (Опционально) {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-freeze)[text=Законсервируйте]} проект, если хотите приостановить работу сервисов. Консервация проекта прекратит списание средств.
 1. Скопируйте {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификатор (PID)]} проекта из URL сайта {var(cloud)}.
 
    Пример URL для региона Москва: `https://msk.cloud.vk.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
