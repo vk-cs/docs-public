@@ -1,6 +1,6 @@
 {
   "title": "Cluster version update",
-  "shortDescription": "How an update procedure is arranged for Kubernetes clusters in the Managed Containers service",
+  "shortDescription": "How a Kubernetes cluster is updated in the Managed Containers service",
   "metaDescription": "",
   "sectionTitle": "Cluster version update",
   "icon": "",

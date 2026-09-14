@@ -88,7 +88,7 @@
 
 {/tabs}
 
-Подробнее об устройстве процедуры обновления в разделе {linkto(../../concepts/update#mk8s-update)[text=Обновление версии кластера]}.
+Подробнее об особенностях обновления в разделе {linkto(../../concepts/update#mk8s-update)[text=Обновление версии кластера]}.
 
 ## {heading(Удалить группу узлов)[id=mk8s-manage-node-group-delete-node-group]}
 
