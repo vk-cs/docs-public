@@ -260,7 +260,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 {/tabs}
 
-More details about the update procedure in [Cluster version update](../../concepts/update).
+For more details on the update process, refer to [Cluster version update](../../concepts/update).
 
 ## {heading(Delete node group)[id=delete_node_group]}
 

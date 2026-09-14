@@ -267,7 +267,7 @@
 
 {/tabs}
 
-Подробнее об устройстве процедуры обновления в разделе {linkto(../../concepts/update#k8s-update)[text=Обновление версии кластера]}.
+Подробнее об особенностях обновления в разделе {linkto(../../concepts/update#k8s-update)[text=Обновление версии кластера]}.
 {/ifdef}
 
 ## {heading(Удалить группу узлов)[id=k8s-manage-node-group-delete-node-group]}
