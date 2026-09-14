@@ -883,6 +883,7 @@
   "4fc41d71-8a88-473e-a220-e7ce8c08a147": "/en/monitoring-services/event-log/concepts/logged-events/octavia-events",
   "90856031-d88a-45a2-8653-3fbc051fd396": "/en/monitoring-services/event-log/concepts/logged-events/cinder-events",
   "91db1032-a2cf-425b-a0ac-260f6182f2ed": "/en/monitoring-services/event-log/concepts/logged-events/nova-events",
+  "5450d76e-894f-462c-8c9c-4b6b1d6e27ca": "/en/monitoring-services/event-log/concepts/logged-events/karboii-events",
   "c4d0fe1d-eb31-4b1c-a563-5e0149602dce": "/en/monitoring-services/event-log/instructions",
   "694a6a85-dea4-42a4-9f50-1e91909ba574": "/en/monitoring-services/event-log/instructions/siem-integration",
   "9bd4d7e9-c1fb-4621-b049-6b998e726e4a": "/en/monitoring-services/event-log/instructions/view-event-log",
