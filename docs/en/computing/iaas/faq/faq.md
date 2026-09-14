@@ -6,16 +6,6 @@ The servers are located in [several VK Cloud data centers](../concepts/about#ava
 
 {/cut}
 
-{cut(What is the connection speed?)}
-
-Along with the virtual machines, an incoming and outgoing communication channel of 1 Gbit/s is provided without any traffic limits, but the actual connection speed may be lower for several reasons:
-
-- External factors. For example, network latency, packet loss, connection quality, limited bandwidth or congestion on the client side.
-- Application or protocol-level limitations. For example, the VM may be running software or data transfer protocols that are not optimized for high speeds.
-- Insufficient computing resources on the server or client side (CPU, memory, disk). For example, the disk speed may be lower than the available download speed.
-
-{/cut}
-
 {cut(How do I set a new password for a VM?)}
 
 Use the [instructions](../instructions/vm/vm-manage#password).
