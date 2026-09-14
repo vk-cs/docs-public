@@ -1,6 +1,6 @@
 # {heading(Подключение к бэкенду приложения)[id=captcha-connect-backend]}
 
-1. Отправьте из бэкенда вашего сервиса запрос к API VK Капча на создание капча-сессии. Воспользуйтесь {linkto(../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=методом]} `GET /captchaNotRobot.createSession`.
+1. Отправьте из бэкенда вашего сервиса запрос к API VK Капча на создание капча-сессии. Воспользуйтесь методом {linkto(../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=GET /captchaNotRobot.createSession]}.
 
    Метод вернет в ответе ссылку для запуска виджета во фронтенде вашего приложения (параметр `link`).
 
@@ -8,7 +8,7 @@
 
 1. Получите от фронтенда сервиса токен успешного прохождения капчи `success_token`.
 
-1. Отправьте из бэкенда вашего сервиса запрос к API VK Капча на валидацию токена успешного прохождения капчи `success_token`. Воспользуйтесь {linkto(../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=методом]} `GET /captchaNotRobot.validate`.
+1. Отправьте из бэкенда вашего сервиса запрос к API VK Капча на валидацию токена успешного прохождения капчи `success_token`. Воспользуйтесь методом {linkto(../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=GET /captchaNotRobot.validate]}.
 
    Метод вернет в ответе статус прохождения капчи (параметр `status`).
 

@@ -26,7 +26,7 @@
    const captchaWidget = new CaptchaWidget();
    ```
 
-1. Подпишитесь на события с помощью {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-events-on)[text=метода SDK]} `captchaWidget.on()`.
+1. Подпишитесь на события с помощью метода SDK {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-events-on)[text=captchaWidget.on()]}.
 
    {tabs}
 
@@ -73,7 +73,7 @@
 
 1. Получите от {linkto(../../connect-backend#captcha-connect-backend)[text=бэкенда]} ссылку для запуска виджета капчи.
 
-1. Монтируйте капчу на страницу. Воспользуйтесь {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-render)[text=методом SDK]} `captchaWidget.render()`.
+1. Монтируйте капчу на страницу. Воспользуйтесь методом SDK {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-render)[text=captchaWidget.render()]}.
 
    {tabs}
    
@@ -137,7 +137,7 @@
 
    {/tabs}
 
-1. На целевом действии вызовите {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-execute)[text=метод SDK]} `captchaWidget.execute()`.
+1. На целевом действии вызовите метод SDK {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-execute)[text=captchaWidget.execute()]}.
 
    Метод вернет promise-объект с результатом прохождения капчи: токен успешного прохождения капчи, если пользователь прошел капчу, или ошибку.
 
@@ -146,7 +146,7 @@
    - Если promise-объект содержит токен успешного прохождения капчи, отправьте его бэкенду для валидации.
    - Определите, что будет происходить во фронтенде в случае, когда promise-объект вернул ошибку. Коды ошибок описаны в статье {linkto(../../../concepts/reference-sdk/reference-sdk-web#captcha-concepts-reference-sdk-web)[text=%text]}.
 
-1. (Опционально) Для одностраничного приложения (SPA, Single Page Application), где экраны сменяются без перезагрузки страницы, используйте {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-destroy)[text=метод SDK]} `captchaWidget.destroy()`, чтобы убрать предыдущую капчу со страницы.
+1. (Опционально) Для одностраничного приложения (SPA, Single Page Application), где экраны сменяются без перезагрузки страницы, используйте метод SDK {linkto(../../../concepts/reference-sdk/reference-sdk-web#reference-sdk-web-destroy)[text=captchaWidget.destroy()]}, чтобы убрать предыдущую капчу со страницы.
 
 Примеры кода на TypeScript:
 
