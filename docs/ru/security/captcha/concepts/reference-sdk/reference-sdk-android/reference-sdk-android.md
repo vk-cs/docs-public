@@ -25,7 +25,7 @@
 |`redirectUri`
 |![](../../../../../assets/check.svg "inline")
 |`string`
-|Ссылка для запуска виджета капчи во фронтенде вашего приложения, полученная в параметре `link` в ответе {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=метода]} `GET /captchaNotRobot.createSession`. Содержит сессионный токен и метаданные:
+|Ссылка для запуска виджета капчи во фронтенде вашего приложения, полученная в параметре `link` в ответе метода {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=GET /captchaNotRobot.createSession]}. Содержит сессионный токен и метаданные:
 
 - `domain` — домен, на котором будет использована капча;
 - `session_token` — сессионный токен;

@@ -43,16 +43,16 @@
 
 1. Получите от {linkto(../connect-backend#captcha-connect-backend)[text=бэкенда]} ссылку для запуска виджета капчи.
 
-1. (Опционально) Настройте язык локализации капчи. Воспользуйтесь {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-lang)[text=методом SDK]} `VKCaptcha.setLocale()`.
+1. (Опционально) Настройте язык локализации капчи. Воспользуйтесь методом SDK {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-lang)[text=VKCaptcha.setLocale()]}.
 
-1. Отобразите капчу пользователю. Воспользуйтесь {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-show)[text=методом SDK]} `VKCaptcha.openCaptcha()`.
+1. Отобразите капчу пользователю. Воспользуйтесь методом SDK {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-show)[text=VKCaptcha.openCaptcha()]}.
 
-1. Обработайте результат прохождения капчи, используя {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-result)[text=интерфейс]} `VKCaptchaResultListener`:
+1. Обработайте результат прохождения капчи, используя интерфейс {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-result)[text=VKCaptchaResultListener]}:
 
    - Если вернулся токен успешного прохождения капчи, отправьте его бэкенду для валидации.
 
      {note:info}
-     Если нужно получить токен успешного прохождения капчи повторно, используйте {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-token)[text=метод SDK]} `VKCaptcha.getToken()`.
+     Если нужно получить токен успешного прохождения капчи повторно, используйте метод SDK {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-token)[text=VKCaptcha.getToken()]}.
      {/note}
 
    - Если пользователь закрыл капчу, бэкенду ничего не отправляется. Определите, что будет происходить во фронтенде в этом случае.
