@@ -296,7 +296,7 @@ $ pip install python-cinderclient
 
    {/tabs}
    {/ifdef}
-   {ifndef(pulic)}
+   {ifndef(public)}
 1. Выполните загрузку параметров подключения из конфигурационного файла:
 
    ```console
