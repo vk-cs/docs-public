@@ -27,8 +27,8 @@ Kubernetes Dashboard is only available in [first-generation](/en/kubernetes/k8s/
 
    1. Place the executable file in the directory contained in the `PATH` environment variable, for example:
 
-      - in `/usr/local/bin` for Linux/macOS;
-      - In `C:\` for Windows.
+      - for Linux and macOS: in `/usr/local/bin`;
+      - for Windows: in `C:\`.
 
 ## Connect to cluster
 

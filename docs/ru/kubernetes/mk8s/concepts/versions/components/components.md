@@ -20,14 +20,6 @@
 .^|1.30.x, 1.29.x
 .^|1.28.x
 
-|[CoreDNS](https://github.com/coredns/coredns)
-|1.14.6-mcs.2
-|1.12.3
-|1.11.3
-|1.11.3
-|1.11.1
-|1.11.1
-
 |[Calico](https://github.com/projectcalico/calico)
 |3.29.1
 |3.30.2
@@ -35,6 +27,14 @@
 |3.28.0
 |3.28.0
 |3.28.0
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.14.6-mcs.2
+|1.12.3
+|1.11.3
+|1.11.3
+|1.11.1
+|1.11.1
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 |3.18.2-mcs.1
@@ -79,17 +79,17 @@
 .^|1.25.x, 1.24.x
 .^|1.22.x–1.21.4
 
-|[CoreDNS](https://github.com/coredns/coredns)
-|1.10.1
-|1.10.1
-|1.10.1
-|1.2.4
-
 |[Calico](https://github.com/projectcalico/calico)
 |3.26.3
 |3.26.1
 |3.25.0
 |3.20.2
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.10.1
+|1.10.1
+|1.10.1
+|1.2.4
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 |3.14.0

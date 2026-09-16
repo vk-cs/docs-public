@@ -240,8 +240,15 @@ controller:
 
 {tabs}
 
-<!-- удалена таба Kubernetes Dashboard. раскомментировать для Headlamp: забрать шаги и k8s с заменой на Headlamp или удалить -->
+{tab(Headlamp)}
 
+1. {linkto(../../../../connect/headlamp#mk8s-headlamp)[text=Подключитесь к кластеру]} с помощью Headlamp, если он установлен. 
+1. Перейдите в раздел меню **Сеть → Сервисы**.
+1. Найдите в списке сервисов `ingress-nginx-controller` типа `LoadBalancer`.
+   
+   В столбце **Внешний IP** будет отображен Floating IP-адрес, назначенный балансировщику.
+
+{/tab}
 {tab(kubectl)}
 
 1. {linkto(../../../../connect/kubectl#mk8s-kubectl-check-connection)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.

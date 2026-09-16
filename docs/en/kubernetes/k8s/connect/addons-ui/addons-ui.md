@@ -21,8 +21,8 @@ A browser must be installed on the host to connect.
 
    1. Place the executable file in the directory that is contained in the environment variable `PATH`, for example:
 
-      - at `/usr/local/bin` for Linux/macOS;
-      - at `C:\` for Windows.
+      - for Linux and macOS: in `/usr/local/bin`;
+      - for Windows: in `C:\`.
 
 ## {heading(Connecting to the add-on web interface)[id=web-ui]}
 

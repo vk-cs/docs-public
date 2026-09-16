@@ -23,8 +23,8 @@
 
    1. Поместите исполняемый файл в директорию, которая содержится в переменной окружения `PATH`, например:
 
-      - в `/usr/local/bin` для Linux/macOS;
-      - в `C:\` для Windows.
+      - для Linux и macOS: в `/usr/local/bin`;
+      - для Windows: в `C:\`.
 
 ## {heading(Подключение к веб-интерфейсу аддона)[id=mk8s-addons-ui-web-ui]}
 
