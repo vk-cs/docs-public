@@ -918,6 +918,7 @@
   "cca3bebd-0d7f-4c6f-af3b-741c273eaeae": "/ru/kubernetes/mk8s/concepts/quotasandlimits",
   "1b5ef6fb-e95d-4e77-850d-0a22d8ba9028": "/ru/kubernetes/mk8s/connect",
   "d32398f1-509f-4427-940d-fc8e6b195b40": "/ru/kubernetes/mk8s/connect/kubectl",
+  "ead8c892-f023-4a8e-9711-e1a507eeace5": "/ru/kubernetes/mk8s/connect/headlamp",
   "0af6581d-495f-41b8-89d8-6cf5729e9b75": "/ru/kubernetes/mk8s/connect/lens",
   "9029eaf5-794a-4e73-8c5b-2754f02ef994": "/ru/kubernetes/mk8s/connect/docker-registry",
   "530ccb80-5e09-4549-93bb-64dc13b35669": "/ru/kubernetes/mk8s/connect/docker-mirror",

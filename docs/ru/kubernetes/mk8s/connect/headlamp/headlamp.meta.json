@@ -5,7 +5,7 @@
   "sectionTitle": "Подключение к кластеру с помощью Headlamp",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "ead8c892-f023-4a8e-9711-e1a507eeace5",
   "build": {
     "for": [
       "public"
