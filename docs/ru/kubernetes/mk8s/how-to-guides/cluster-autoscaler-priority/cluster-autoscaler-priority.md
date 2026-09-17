@@ -39,7 +39,7 @@
    kubectl get nodes --show-labels
    ```
 
-1. {linkto(../../instructions/helpers/node-group-settings#mk8s-node-group-settings)[text=Проверьте]} группы узлов в личном кабинете VK Cloud и используйте их точные имена в регулярных выражениях ниже.
+1. {linkto(../../instructions/manage-node-group#mk8s-manage-node-group)[text=Проверьте]} группы узлов в личном кабинете VK Cloud и используйте их точные имена в регулярных выражениях ниже.
 
 ## 3. Создайте ConfigMap с приоритетами
 
