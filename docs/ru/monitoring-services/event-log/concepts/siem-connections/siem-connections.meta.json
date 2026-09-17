@@ -5,7 +5,7 @@
   "sectionTitle": "SIEM-подключения",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "48470590-68e8-47ea-995c-686771c8c923",
   "build": {
     "for": [
       "public"
