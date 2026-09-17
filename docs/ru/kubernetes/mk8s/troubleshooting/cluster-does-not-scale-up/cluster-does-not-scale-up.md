@@ -152,7 +152,7 @@
    kubectl describe pod <ИМЯ_ПОДА>
    ```
    
-1. Сравните ресурсы, указанные в блоке `resources.requests`, с характеристиками виртуальных машин в соответствующих {linkto(../../instructions/helpers/node-group-settings#mk8s-node-group-settings)[text=группах узлов]}. 
+1. Сравните ресурсы, указанные в блоке `resources.requests`, с характеристиками виртуальных машин в соответствующих {linkto(../../instructions/manage-node-group#mk8s-manage-node-group-add-group)[text=группах узлов]}.
 
 1. Если ресурсов недостаточно, {linkto(../../instructions/manage-node-group#mk8s-manage-node-group-add-group)[text=создайте]} новую группу узлов с {linkto(../../concepts/flavors#mk8s-flavors-vm-flavor)[text=шаблоном виртуальной машины]}, подходящим по количеству ресурсов.
 
