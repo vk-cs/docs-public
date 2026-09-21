@@ -3949,7 +3949,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/manage-db/patch-management",
-    "destination": "/ru/dbs/dbaas/instructions/postgre-update",
+    "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -7393,7 +7393,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/config/patch-management",
-    "destination": "/ru/dbs/dbaas/instructions/postgre-update",
+    "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -8545,7 +8545,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/instructions/patch-management",
-    "destination": "/ru/dbs/dbaas/instructions/postgre-update",
+    "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -28615,7 +28615,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/service-management/postgre-update",
-    "destination": "/ru/dbs/dbaas/instructions/postgre-update",
+    "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
   },
@@ -34148,6 +34148,12 @@
   {
     "source": "/ru/data-platform/clickhouse/instructions/connect-to-instance",
     "destination": "/ru/data-platform/clickhouse/instructions/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/dbaas/instructions/postgre-update",
+    "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
   }
