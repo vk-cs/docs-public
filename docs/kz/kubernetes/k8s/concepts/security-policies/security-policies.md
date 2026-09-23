@@ -24,9 +24,7 @@ Managed Containers сервисіндегі Kubernetes кластерлерін�
 | {linkto(#k8s-security-policies-host-filesystem)[text=host-filesystem шектеуі]} | Шектеу және шектеу қалыбы: `k8spsphostfilesystem` |
 | {linkto(#k8s-security-policies-host-namespaces)[text=host-namespaces шектеуі]} | Шектеу және шектеу қалыбы: `k8spsphostnamespace` |
 
-Бұл саясаттар {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=Gatekeeper-дің алдын ала бапталған қалыптары мен шектеулері]} көмегімен іске асырылады.
-
-Әдепкі қауіпсіздік саясаттарын өзгертуге немесе жоюға болмайды, олар әрқашан қосулы болады. Егер кластерлеріңіз үшін әдепкі қауіпсіздік саясаттарын өзгертуге қатысты сұрақтарыңыз болса, [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз.
+Бұл саясаттар {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=Gatekeeper-дің алдын ала бапталған қалыптары мен шектеулері]} көмегімен іске асырылады. Олар әдепкі бойынша барлық кластерлерде қосулы, бірақ сіз {linkto(#k8s-security-policies-management-console)[text=оларды жеке кабинет арқылы өзгерте немесе өшіре аласыз]}.
 
 ## {heading(Қауіпсіздік саясаттарымен жеке кабинет арқылы жұмыс істеу)[id=k8s-security-policies-management-console]}
 
@@ -188,12 +186,6 @@ SHA-хеш (digest) көрсетілмеген контейнер образда
 
 ### {heading(host-filesystem шектеуі)[id=k8s-security-policies-host-filesystem]}
 
-{note:info}
-
-Бұл — әдепкі саясат. Ол кластерде барлық атаулар кеңістіктері деңгейінде әлдеқашан бапталған, оны жоюға немесе өзгертуге болмайды.
-
-{/note}
-
 {tabs}
 
 {tab(Сипаттама)}
@@ -222,12 +214,6 @@ SHA-хеш (digest) көрсетілмеген контейнер образда
 {/tabs}
 
 ### {heading(host-namespaces шектеуі)[id=k8s-security-policies-host-namespaces]}
-
-{note:info}
-
-Бұл — әдепкі саясат. Ол кластерде барлық атаулар кеңістіктері деңгейінде әлдеқашан бапталған, оны жоюға немесе өзгертуге болмайды.
-
-{/note}
 
 {tabs}
 
