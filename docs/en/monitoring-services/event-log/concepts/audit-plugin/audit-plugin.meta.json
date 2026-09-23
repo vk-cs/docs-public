@@ -1,0 +1,14 @@
+{
+  "title": "Data plane audit plugin",
+  "shortDescription": "Authorization and configuration parameters of the audit plugin for the data plane in the Cloud Audit service",
+  "metaDescription": "Authorization and configuration parameters of the audit plugin for the data plane in the Cloud Audit service in VK Cloud. Audit plugin configuration parameters",
+  "sectionTitle": "Data plane audit plugin",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
