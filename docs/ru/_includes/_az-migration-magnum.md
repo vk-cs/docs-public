@@ -457,6 +457,148 @@
 
 {/includetag}
 
+{includetag(tf-magnum)}
+
+Если вы управляете ресурсами кластера через Terraform, после переноса кластера синхронизируйте Terraform State с фактической инфраструктурой:
+
+1. Добавьте в ресурс кластера `vkcs_kubernetes_cluster` блок `lifecycle`:
+
+   ```console
+   lifecycle {
+     prevent_destroy = true
+   }
+   ```
+
+   Это предотвратит пересоздание или удаление кластера, если в файле конфигурации или Terraform State останутся несинхронизированные поля.
+
+1. Привяжите кластер к ресурсу `vkcs_kubernetes_cluster`, используя данные из файла конфигурации Terraform:
+
+   ```console
+   terraform import vkcs_kubernetes_cluster.<ИМЯ_РЕСУРСА> <ID_КЛАСТЕРА>
+   ```
+   
+1. Привяжите каждую группу узлов к ресурсу `vkcs_kubernetes_node_group`:
+
+   ```console
+   terraform import vkcs_kubernetes_node_group.<ИМЯ_РЕСУРСА> <ID_ГРУППЫ_УЗЛОВ>
+   ```
+
+1. Посмотрите, какие параметры появились у новых ресурсов, и добавьте их в файл конфигурации Terraform:
+
+   ```console
+   terraform state show <РЕСУРС>.<ИМЯ_РЕСУРСА>
+   ```
+
+1. Если в группе узлов включено автомасштабирование, значение параметра `node_count` из файла Terraform может расходиться с реально используемым количеством узлов. Добавьте блок `lifecycle` в ресурс группы узлов:
+
+   ```console
+   lifecycle {
+     ignore_changes = [node_count]
+   }
+   ```   
+
+   Так Terraform не будет отслеживать изменения параметра `node_count`, которое автоматически меняется при автомасштабировании.
+
+1. Сгенерируйте файл изменений и убедитесь, что он не содержит указаний на пересоздание ресурсов:
+
+   ```console
+   terraform plan
+   ```
+
+   Если вывод команды показывает `No changes`, то файл конфигурации и Terraform State полностью синхронизированы. Если вывод все еще показывает изменения, продолжайте синхронизацию до тех пор, пока вывод команды не покажет `No changes`.
+
+   {note:warn}
+   Не применяйте изменения, если вывод команды `terraform plan` указывает на пересоздание ресурса (операции `replace`, `-/+`, `destroy and then create`), особенно по полям `availability_zone` и `availability_zones`.
+
+   Запуск `terraform apply` уничтожит существующий кластер и запустит новый, вместо обновления конфигурации после переноса между зонами доступности.
+   {/note}
+
+   Если вывод команды предлагает операции пересоздания ресурса по полям `availability_zone` или `availability_zones`:
+
+   1. Узнайте актуальное значение поля в конфигурации с помощью команды:
+
+      ```console
+      terraform state show <РЕСУРС>.<ИМЯ_РЕСУРСА>
+      ```
+   1. Обновите значение в файле конфигурации Terraform.
+
+1. Удалите ранее добавленный блок `lifecycle` с параметром `prevent_destroy = true` из ресурса кластера.
+
+Подробнее в разделе {linkto(../../../instructions/helpers/terraform-howto#k8s-terraform-howto-features)[text=Использование Terraform]} и [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference).
+
+{/includetag}
+
+{includetag(tf-managed)}
+
+Если вы управляете ресурсами кластера через Terraform, после переноса кластера синхронизируйте Terraform State с фактической инфраструктурой:
+
+1. Добавьте в ресурс кластера `vkcs_kubernetes_cluster_v2` блок `lifecycle`:
+
+   ```console
+   lifecycle {
+     prevent_destroy = true
+   }
+   ```
+
+   Это предотвратит пересоздание или удаление кластера, если в файле конфигурации или Terraform State останутся несинхронизированные поля.
+
+1. Привяжите кластер к ресурсу `vkcs_kubernetes_cluster_v2`, используя данные из файла конфигурации Terraform:
+
+   ```console
+   terraform import vkcs_kubernetes_cluster_v2.<ИМЯ_РЕСУРСА> <ID_КЛАСТЕРА>
+   ```
+
+1. Привяжите каждую группу узлов к ресурсу `vkcs_kubernetes_node_group_v2`:
+
+   ```console
+   terraform import vkcs_kubernetes_node_group_v2.<ИМЯ_РЕСУРСА> <ID_ГРУППЫ_УЗЛОВ>
+   ```
+
+1. Посмотрите, какие параметры появились у новых ресурсов, и добавьте их в файл конфигурации Terraform:
+
+   ```console
+   terraform state show <РЕСУРС>.<ИМЯ_РЕСУРСА>
+   ```
+
+1. Если в группе узлов включено автомасштабирование, значение параметра `node_count` из файла Terraform может расходиться с реально используемым количеством узлов. Добавьте блок `lifecycle` в ресурс группы узлов:
+
+   ```console
+   lifecycle {
+     ignore_changes = [node_count]
+   }
+   ```   
+
+   Так Terraform не будет отслеживать изменения параметра `node_count`, которое автоматически меняется при автомасштабировании.
+
+1. Сгенерируйте файл изменений и убедитесь, что он не содержит указаний на пересоздание ресурсов:
+
+   ```console
+   terraform plan
+   ```
+
+   Если вывод команды показывает `No changes`, то файл конфигурации и Terraform State полностью синхронизированы. Если вывод все еще показывает изменения, продолжайте синхронизацию до тех пор, пока вывод команды не покажет `No changes`.
+
+   {note:warn}
+   Не применяйте изменения, если вывод команды `terraform plan` указывает на пересоздание ресурса (операции `replace`, `-/+`, `destroy and then create`), особенно по полям `availability_zone` и `availability_zones`.
+
+   Запуск `terraform apply` уничтожит существующий кластер и запустит новый, вместо обновления конфигурации после переноса между зонами доступности.
+   {/note}
+
+   Если вывод команды предлагает операции пересоздания ресурса по полям `availability_zone` или `availability_zones`:
+
+   1. Узнайте актуальное значение поля в конфигурации с помощью команды:
+
+      ```console
+      terraform state show <РЕСУРС>.<ИМЯ_РЕСУРСА>
+      ```
+   1. Обновите значение в файле конфигурации Terraform.
+
+1. Удалите ранее добавленный блок `lifecycle` с параметром `prevent_destroy = true` из ресурса кластера.
+
+Подробнее в разделе {linkto(../../../instructions/helpers/terraform-howto#k8s-terraform-howto-features)[text=Использование Terraform]} и [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference).
+
+{/includetag}
+
 {includetag(delete)}
 
 Работающие ресурсы в кластере тарифицируются и потребляют вычислительные ресурсы. Если вы не планируете использовать PVC и снимки диска, оставшиеся после миграции, а также саму зону доступности, удалите их и связанные с ними ресурсы:
