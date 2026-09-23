@@ -4,7 +4,7 @@
   "metaDescription": "Kubernetes,K8S,нұсқа,компоненттер,тарих,саясат,қолдау",
   "sectionTitle": "Kubernetes нұсқалары мен компоненттері туралы",
   "icon": "",
-  "weight": 10,
+  "weight": 11,
   "build": {
     "for": [
       "public"

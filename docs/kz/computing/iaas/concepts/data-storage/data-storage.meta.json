@@ -3,7 +3,7 @@
   "shortDescription": "VK Cloud-тағы деректерді сақтау нұсқалары",
   "metaDescription": "VK Cloud-тағы деректерді сақтау нұсқалары",
   "sectionTitle": "Деректерді сақтау орны",
-  "weight": 3,
+  "weight": 4,
   "build": {
     "for": [
       "public",

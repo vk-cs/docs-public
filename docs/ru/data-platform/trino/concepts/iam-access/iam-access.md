@@ -3,29 +3,19 @@
 Чтобы разграничить права для {linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=приглашенных]} участников {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=проекта]} или {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервисных учетных записей]}, в Cloud Trino используется единый сервис управления идентификацией и доступом — {linkto(../../../../access/iam#iam)[text=IAM]}. Управлять доступами можно централизованно из личного кабинета {var(cloud)}.
 
 Список доступных участнику проекта действий в сервисе Cloud Trino определяет:
-- Присвоенная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference#iam-roles-reference-basic)[text=базовая роль]} — задает набор {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]}, доступных по умолчанию. {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=Специализированные роли]} для Cloud Trino отсутствуют.
 
-    Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям Cloud Trino, настраивать отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} не нужно.
-
+- {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=Базовая роль]} — задает набор прав, доступных по умолчанию.
 - Отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначаются]} дополнительно, если входящих в {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базовую роль]} недостаточно.
 
-    {note:info}
+Для сервиса Cloud Trino нет {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}.
 
-    Доступы, предоставляемые вместе базовой ролью, имеют приоритет над отдельными разрешениями.
-
-    {/note}
-
-При выдаче ролей и разрешений придерживайтесь принципа минимальных привилегий: пользователь должен иметь только те права, без которых невозможно выполнить его задачи.
+Роли и разрешения могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`. При выдаче ролей и разрешений придерживайтесь принципа минимальных привилегий: пользователь должен иметь только те права, без которых невозможно выполнить его задачи.
 
 ## {heading(Пример ролевой модели)[id=trino-concepts-iam-example]}
 
-{note:info}
+Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям Cloud Trino, настраивать отдельные {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешения]} не нужно.
 
-Роли и разрешения могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
-
-{/note}
-
-Для сервиса Cloud Trino нет {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}. Для разграничения доступа может использоваться {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference#iam-roles-reference-basic)[text=базовая роль]} `Администратор пользователей (IAM)` или `Наблюдатель` с дополнительными {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешениями]}. По умолчанию доступ к Cloud Trino у этих базовых ролей ограничен:
+Для разграничения доступа может использоваться {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовая роль]} `Администратор пользователей (IAM)` или `Наблюдатель` с дополнительными {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешениями]}. По умолчанию доступ к Cloud Trino у этих базовых ролей ограничен:
 
 - `Администратор пользователей (IAM)`: нет доступа.
 - `Наблюдатель`: только просмотр части информации о ранее созданных экземплярах сервиса Cloud Trino.
@@ -38,53 +28,83 @@
 
 {cut(Полный список разрешений, доступных в Cloud Trino)}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_change]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_change]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_logs_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_logs_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_versionupdate]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_versionupdate]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_monitoring_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_monitoring_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_ui]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_ui]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_reboot]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_reboot]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_viewhistory]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_viewhistory]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_create]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_create]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_delete]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_delete]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_delete]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_delete]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_change]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_change]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_install]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_install]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_create]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_create]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_audit]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_audit]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_execsql]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_execsql]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_uninstall]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_uninstall]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_scaledisk]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_scaledisk]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_update]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_update]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_maintenance]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_maintenance]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_backups_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_install]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_uninstall]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_update]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_create]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_update]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_view]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_innerips_change]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_updateinfo]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_viewhistory]}
 
 {/cut}
 
@@ -94,49 +114,79 @@
 
 {cut(Список разрешений для администрирования инфраструктуры)}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_change]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_change]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_logs_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_logs_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_versionupdate]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_versionupdate]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_monitoring_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_monitoring_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_ui]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_ui]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_reboot]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_reboot]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_viewhistory]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_viewhistory]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_create]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_create]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_delete]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_delete]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_change]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_change]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_install]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_install]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_audit]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_audit]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_execsql]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_execsql]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_uninstall]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_uninstall]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_scaledisk]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_scaledisk]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_update]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_update]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_maintenance]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_maintenance]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_backups_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_install]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_uninstall]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_update]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_create]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_update]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_view]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_innerips_change]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_updateinfo]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_viewhistory]}
 
 {/cut}
 
@@ -146,17 +196,19 @@
 
 {cut(Список разрешений для использования сервиса)}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_settings_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_settings_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_extensions_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_list]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_monitoring_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_monitoring_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_execsql]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_execsql]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_view]}
 
 {/cut}
 
@@ -166,12 +218,24 @@
 
 {cut(Список разрешений для аудита безопасности)}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_logs_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_logs_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_monitoring_view]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_monitoring_view]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_instances_audit]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_audit]}
 
-{include(/ru/_includes/_iam_dp.md)[tags=dp_trino_users_list]}
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_list]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_backups_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_connections_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_extensions_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_grants_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_instances_viewhistory]}
+
+{include(/ru/_includes/_iam_permissions.md)[tags=dp_trino_users_viewhistory]}
 
 {/cut}
