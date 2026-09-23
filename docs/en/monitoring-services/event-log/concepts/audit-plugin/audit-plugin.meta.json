@@ -5,7 +5,7 @@
   "sectionTitle": "Data plane audit plugin",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "863d329c-e207-4467-931f-224b31ba1b3b",
   "build": {
     "for": [
       "public"

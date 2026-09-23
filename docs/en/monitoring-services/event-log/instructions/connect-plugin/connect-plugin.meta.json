@@ -1,9 +1,9 @@
 {
-    "title": "Installing and configuring the FluentBit plugin for the data plane",
-      "shortDescription": "How to install and configure the plugin for data plane auditing",
-      "metaDescription": "How to install and configure the fluent-bit-plugin plugin using YAML files and Lua scripts to collect data plane audit events in VK Cloud. Configuring the agent and sources.",
-    "sectionTitle": "Installing and configuring the FluentBit plugin for the data plane",
-    "icon": "",
-    "weight": 3,
-    "uuid": ""
+  "title": "Installing and configuring the FluentBit plugin for the data plane",
+  "shortDescription": "How to install and configure the plugin for data plane auditing",
+  "metaDescription": "How to install and configure the fluent-bit-plugin plugin using YAML files and Lua scripts to collect data plane audit events in VK Cloud. Configuring the agent and sources.",
+  "sectionTitle": "Installing and configuring the FluentBit plugin for the data plane",
+  "icon": "",
+  "weight": 3,
+  "uuid": "d302fee8-164e-4554-ad22-770e094c0c34"
 }

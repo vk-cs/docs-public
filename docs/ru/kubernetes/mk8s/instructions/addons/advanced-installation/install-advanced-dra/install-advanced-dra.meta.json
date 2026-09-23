@@ -5,7 +5,7 @@
   "sectionTitle": "DRA Driver for NVIDIA GPUs",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "8cecc0de-fc48-4d94-bca6-814dc125b67c",
   "build": {
     "for": [
       "public"
