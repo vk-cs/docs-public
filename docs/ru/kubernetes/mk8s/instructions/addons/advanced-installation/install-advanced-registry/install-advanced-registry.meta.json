@@ -4,7 +4,7 @@
   "metaDescription": "Настройка и установка аддона реестра Docker.",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 5,
+  "weight": 4,
   "uuid": "a7d0eb8d-b988-47bb-b2a6-c79956949b16",
   "build": {
     "for": [

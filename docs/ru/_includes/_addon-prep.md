@@ -1,3 +1,3 @@
-1. Ознакомьтесь с {linkto(/ru/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-available)[text=системными требованиями]} аддона, чтобы убедиться, что у вас достаточно ресурсов для его установки.
+1. Ознакомьтесь с {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-available)[text=системными требованиями]} аддона, чтобы убедиться, что у вас достаточно ресурсов для его установки.
 
-1. (Опционально) {linkto(/ru/kubernetes/k8s/instructions/scale#k8s-instructions-scale-vertical-worker-nodes)[text=Выполните ручное масштабирование]} групп worker-узлов или {linkto(/ru/kubernetes/k8s/instructions/scale#k8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=настройте автоматическое масштабирование]}.
+1. (Опционально) {linkto(../../../scale#mk8s-instructions-scale-vertical-worker-nodes)[text=Выполните ручное масштабирование]} групп worker-узлов или {linkto(../../../scale#mk8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=настройте автоматическое масштабирование]}.
