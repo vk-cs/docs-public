@@ -4,7 +4,7 @@
   "metaDescription": "Настройка и установка аддона со средствами мониторинга.",
   "sectionTitle": "Kube Prometheus Stack",
   "icon": "",
-  "weight": 12,
+  "weight": 13,
   "uuid": "ab7695f6-b185-4790-b20f-757da90cc70f",
   "build": {
     "for": [

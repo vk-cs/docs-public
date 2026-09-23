@@ -12,7 +12,7 @@
 
 ## {heading(Установка аддона)[id=mk8s-install-gen-2-advanced-logaas-integration-install]}
 
-Для аддона доступен только {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-install-features)[text=стандартный вариант установки]} через личный кабинет {var(cloud)}.
+Для аддона {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-fluent-bit-logaas-managed)[text=Fluent Bit для Cloud Logging (logaas-integration)]} доступен только {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-install-features)[text=стандартный вариант установки]} через личный кабинет {var(cloud)}.
 
 Аддон будет установлен в виде контроллера [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) на все узлы кластера, включая master-узлы.
 
@@ -27,10 +27,8 @@
    1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
-   1. Нажмите кнопку **Установить** на карточке аддона `logaas-integration`.
-   1. Выберите нужную версию аддона из выпадающего списка и нажмите кнопку **Установить аддон**.
-   1. При необходимости отредактируйте:
+   1. Нажмите кнопку **Установить** на карточке аддона `logaas-integration` и нажмите кнопку **Установить аддон**.
+   1. (Опционально) Отредактируйте:
 
       - выбранную версию;
       - название приложения;

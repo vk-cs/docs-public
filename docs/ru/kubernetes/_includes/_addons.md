@@ -214,6 +214,69 @@ S3-CSI может создавать бакеты в любом S3-совмес�
 
 {/includetag}
 
+{includetag(dra)}
+
+<!--DRA Driver for NVIDIA GPUs-->
+
+{tabs}
+
+{tab(Описание)}
+
+[Dynamic Resource Allocation (DRA)](https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/) — механизм Kubernetes для гибкого запроса, настройки и совместного использования между подами специализированных устройств, таких как графические процессоры (GPU). В отличие от стандартного механизма [Device Plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/), который выделяет GPU как неделимый ресурс, DRA позволяет запрашивать только часть памяти или вычислительных ресурсов GPU для отдельной нагрузки.
+
+Преимущества аддона DRA Driver for NVIDIA GPUs:
+
+- Позволяет запускать несколько нагрузок на одной GPU-карте, ограничивая потребление памяти и вычислительных ресурсов для каждой из них.
+- Увеличивает использование worker-узлов на GPU и снижает совокупную стоимость владения GPU-инфраструктурой.
+- Снижает порог входа для команд, занимающихся машинным обучением и искусственным интеллектом, которым не требуется целая GPU-карта для таких задач, как инференс, RAG, обработка изображений.
+- Обеспечивает поддерживаемый и стандартизированный подход к управлению совместным использованием графических процессоров в кластере вместо самостоятельной разработки через Helm-чарты, политики доступа и правила размещения нагрузок.
+
+Состав аддона:
+
+- [DRA Kubelet Plugin](https://pkg.go.dev/k8s.io/dynamic-resource-allocation/kubeletplugin) для подготовки и подключения GPU к подам на worker-узлах.
+- [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery) для определения и регистрации функций, доступных на узлах кластера. Компонент содержит следующие службы:
+  - NFD-Master отвечает за подключение к серверу API Kubernetes и обновление объектов узлов.
+  - NFD-Worker подключается к службе NFD-Master для объявления аппаратных функций.
+  - NFD Garbage-Collector гарантирует, что все объекты Node Feature Discovery имеют соответствующие узлы, и удаляет устаревшие объекты для несуществующих узлов.
+
+{note:warn}
+Аддон DRA Driver for NVIDIA GPUs подходит только для кластеров с worker-узлами на GPU. Для работы аддона необходим Kubernetes {linkto(../../versions/version-support#mk8s-version-support)[text=версии 1.34]} или выше.
+{/note}
+
+{/tab}
+
+{tab(Системные требования)}
+
+Требования отдельных компонентов аддона:
+
+- DRA Kubelet Plugin (на каждом worker-узле c GPU):
+
+  - **CPU**: 200m — 500m;
+  - **RAM**: 64Mi — 512Mi;
+
+- NFD-Master:
+
+  - **CPU**: 100m — 500m;
+  - **RAM**: 128Mi — 4Gi;
+
+- NFD Garbage-Collector:
+
+  - **CPU**: 10m — 500m;
+  - **RAM**: 128Mi — 1Gi;
+
+- NFD-Worker (на каждом worker-узле c GPU):
+
+  - **CPU**: 205m — 2000m;
+  - **RAM**: 192Mi — 2Gi.
+  
+Если аддон устанавливается на несколько worker-узлов, то NFD-Worker и DRA Kubelet Plugin будут установлены на каждый из этих узлов и потребуют указанное количество RAM на каждый узел. Остальные компоненты устанавливаются только на один узел.
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
 {includetag(eso)}
 
 <!--External Secrets Operator -->
@@ -329,17 +392,15 @@ GPU Operator позволяет управлять {linkto(../../flavors#mk8s-fl
 
 Состав аддона:
 
-- NVIDIA GPU Operator для управления GPU.
+- [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html) для управления GPU.
 - Служебные валидаторы для проверки CUDA (Compute Unified Device Architecture) после изменения конфигурации.
 - Средства самостоятельной диагностики оператора.
-- NVIDIA device plugin для автоматизации привязки и выделения ресурсов GPU.
-- Node Feature Discovery для определения и регистрации функций, доступных на узлах кластера. Компонент содержит следующие службы:
+- [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes) для автоматизации привязки и выделения ресурсов GPU.
+- [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery) для определения и регистрации функций, доступных на узлах кластера. Компонент содержит следующие службы:
 
     - NFD-Master отвечает за подключение к серверу API Kubernetes и обновление объектов узлов.
     - NFD-Worker подключается к службе NFD-Master для объявления аппаратных функций.
     - NFD Garbage-Collector гарантирует, что все объекты Node Feature Discovery имеют соответствующие узлы, и удаляет устаревшие объекты для несуществующих узлов.
-
-Подробнее об аддоне и его компонентах: [NVIDIA GPU Operator](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/overview.html), [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes), [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery).
 
 {/tab}
 
@@ -348,16 +409,16 @@ GPU Operator позволяет управлять {linkto(../../flavors#mk8s-fl
 Требования отдельных компонентов аддона:
 
 - NVIDIA GPU Operator:
-    - **CPU**: 200 — 500m;
-    - **RAM**: 64 — 512Mi;
+    - **CPU**: 200m — 500m;
+    - **RAM**: 64Mi — 512Mi;
 - NFD-Master:
-    - **CPU**: 100 — 500m;
+    - **CPU**: 100m — 500m;
     - **RAM**: 128Mi — 4Gi;
 - NFD Garbage-Collector:
-    - **CPU**: 10 — 500m;
+    - **CPU**: 10m — 500m;
     - **RAM**: 128Mi — 1Gi;
-- NFD-Worker (на каждом узле GPU):
-    - **CPU**: 205 — 2000m;
+- NFD-Worker (на каждом worker-узле с GPU):
+    - **CPU**: 205m — 2000m;
     - **RAM**: 192Mi — 2Gi.
 
 Если аддон устанавливается на несколько worker-узлов, то NFD-Worker будет установлен на каждый из этих узлов и потребует указанное количество RAM на каждый узел. Остальные компоненты устанавливаются только на один узел.

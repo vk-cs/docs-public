@@ -4,7 +4,7 @@
   "metaDescription": "Сервис Managed Containers в VK Cloud: настройка и установка аддона Jaeger.",
   "sectionTitle": "Jaeger",
   "icon": "",
-  "weight": 10,
+  "weight": 11,
   "uuid": "20e1af62-a1b0-4882-88ab-1151a12f6821",
   "build": {
     "for": [

@@ -26,6 +26,10 @@
 
 {include(/ru/kubernetes/_includes/_addons.md)[tags=docker-registry]}
 
+### {heading(DRA Driver for NVIDIA GPUs)[id=mk8s-addons-dra]}
+
+{include(/ru/kubernetes/_includes/_addons.md)[tags=dra]}
+
 ### {heading(External Secrets Operator)[id=mk8s-addons-eso]}
 
 {include(/ru/kubernetes/_includes/_addons.md)[tags=eso]}
