@@ -339,7 +339,7 @@ Cloud ML Platform аясында JupyterHub инстансы ML-модельде
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -435,7 +435,7 @@ production-ортада жұмыс істегенде токендерді аш�
        volumes=[MLPlatformVolumeIn(
            size=50,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -464,14 +464,14 @@ production-ортада жұмыс істегенде токендерді аш�
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -649,7 +649,7 @@ Cloud ML Platform-тың барлық инстанстарының тізімі�
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -743,7 +743,7 @@ production-ортада жұмыс істегенде токендерді аш�
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -772,14 +772,14 @@ production-ортада жұмыс істегенде токендерді аш�
     mlflow_jh_instance_id: 6178700a-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: jh_default_admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -877,7 +877,7 @@ Cloud ML Platform-тың барлық инстанстарының тізімі�
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -975,7 +975,7 @@ production-ортада жұмыс істегенде токендерді аш�
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -1004,14 +1004,14 @@ production-ортада жұмыс істегенде токендерді аш�
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: f8258286-XXXX
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
 
    ```
@@ -1090,21 +1090,21 @@ production-ортада жұмыс істегенде токендерді аш�
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     # конец фрагмента
     ```
@@ -1199,21 +1199,21 @@ production-ортада жұмыс істегенде токендерді аш�
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     ```
 

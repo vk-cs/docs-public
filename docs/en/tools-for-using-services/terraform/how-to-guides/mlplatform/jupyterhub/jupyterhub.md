@@ -21,7 +21,7 @@ When creating the instance the following was used:
 
 In the example, the instance is created with the following configuration:
 
-- default region, availability zone — `GZ1`
+- default region, availability zone — `ME1`
 - boot disk type — `SSD`
 - username — `admin`, password — `Password!`
 - data disk type — `SSD`, sizes — 60 and 70 GB
@@ -34,7 +34,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   admin_name        = "admin"
   admin_password    = "Password!"
   flavor_id         = data.vkcs_compute_flavor.basic.id
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     volume_type = "ceph-ssd"
   }

@@ -49,7 +49,7 @@ resource "vkcs_networking_router_interface" "k8s" {
 
 In the examples below, clusters with the following configuration are created:
 
-- The `Moscow` region, the `GZ1` availability zone.
+- The `Moscow` region, the `ME1` availability zone.
 - Kubernetes version: `1.31`.
 
 - One `STD3-4-8` master node.
@@ -98,7 +98,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -167,7 +167,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -242,7 +242,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 

@@ -25,7 +25,7 @@
 
 В примере ниже кластер создается в следующей конфигурации:
 
-- регион по умолчанию, зона доступности `GZ1`;
+- регион по умолчанию, зона доступности `ME1`;
 - минамальное количеств worker-узлов — 2, максимальное количество worker-узлов — 100;
 - режим работы кластера — `DEV`;
 - переход кластера в спящий режим через 120 минут неактивности;
@@ -47,7 +47,7 @@ locals {
 
 resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   name              = "tf-example"
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   network_id        = vkcs_networking_network.app.id
   subnet_id         = vkcs_networking_subnet.app.id
 
@@ -130,7 +130,7 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
   admin_name        = "admin"
   admin_password    = "Password12!Password"
   flavor_id         = data.vkcs_compute_flavor.basic.id
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     volume_type = "ceph-ssd"
   }

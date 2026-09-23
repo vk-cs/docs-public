@@ -321,7 +321,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (type `int`).
 - `volume_type`: [disс type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.MS1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -335,7 +335,7 @@ Example of a disk description:
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -431,7 +431,7 @@ When working in a production environment, do not operate tokens in the clear. Us
        volumes=[MLPlatformVolumeIn(
            size=50,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -460,14 +460,14 @@ When working in a production environment, do not operate tokens in the clear. Us
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -631,7 +631,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (`int` type).
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.MS1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -645,7 +645,7 @@ Example of a disk description:
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -739,7 +739,7 @@ When working in a production environment, do not operate tokens in the clear. Us
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -768,14 +768,14 @@ When working in a production environment, do not operate tokens in the clear. Us
     mlflow_jh_instance_id: 6178700a-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: jh_default_admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -859,7 +859,7 @@ Each disk is described by an object of the `MLPlatformVolumeIn` class with field
 
 - `size`: the volume of the disk in GB (`int` type).
 - `volume_type`: [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e). Valid values are `VolumeType.ceph_ssd` and `VolumeType.high_iops`.
-- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.GZ1` and `AvailabilityZone.MS1`.
+- `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#architecture-az). Valid values are `AvailabilityZone.MS1` and `AvailabilityZone.MS1`.
 
 {note:warn}
 
@@ -873,7 +873,7 @@ Example of a disk description:
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -970,7 +970,7 @@ When working in a production environment, do not operate tokens in the clear. Us
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -999,14 +999,14 @@ When working in a production environment, do not operate tokens in the clear. Us
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: f8258286-XXXX
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
 
    ```
@@ -1084,21 +1084,21 @@ When working in a production environment, do not operate tokens in the clear. Us
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     # fragment end
     ```
@@ -1192,21 +1192,21 @@ When working in a production environment, do not operate tokens in the clear. Us
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     ```
 

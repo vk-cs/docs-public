@@ -25,7 +25,7 @@
 
 Төмендегі мысалда инстанс келесі конфигурацияда жасалады:
 
-- әдепкі аймақ, `GZ1` қолжетімділік аймағы;
+- әдепкі аймақ, `ME1` қолжетімділік аймағы;
 - `SSD` диск түрі;
 - пайдаланушы аты — `admin`, құпиясөз — `Password!`;
 - деректер дискісінің түрі `SSD`, көлемі — 60 және 70 ГБ.
@@ -38,7 +38,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   admin_name        = "admin"
   admin_password    = "Password!"
   flavor_id         = data.vkcs_compute_flavor.basic.id
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     volume_type = "ceph-ssd"
   }

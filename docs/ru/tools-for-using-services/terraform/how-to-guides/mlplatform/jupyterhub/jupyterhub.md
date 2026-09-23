@@ -25,7 +25,7 @@
 
 В примере ниже инстанс создается в следующей конфигурации:
 
-- регион по умолчанию, зона доступности `GZ1`;
+- регион по умолчанию, зона доступности `ME1`;
 - тип диска `SSD`;
 - имя пользователя — `admin`, пароль — `Password!`;
 - тип диска данных `SSD`, размер — 60 и 70 ГБ.
@@ -38,7 +38,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   admin_name        = "admin"
   admin_password    = "Password!"
   flavor_id         = data.vkcs_compute_flavor.basic.id
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     volume_type = "ceph-ssd"
   }

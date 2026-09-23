@@ -53,7 +53,7 @@ resource "vkcs_networking_router_interface" "k8s" {
 
 В примерах ниже кластеры создаются в следующей конфигурации:
 
-- Регион `Москва`, зона доступности `GZ1`.
+- Регион `Москва`, зона доступности `ME1`.
 - Версия Kubernetes `1.31`.
 - Один master-узел `STD3-4-8`.
 - Два worker-узла `STD2-2-4`:
@@ -101,7 +101,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -170,7 +170,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -245,7 +245,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 

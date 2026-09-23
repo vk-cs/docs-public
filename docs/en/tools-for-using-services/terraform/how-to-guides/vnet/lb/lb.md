@@ -131,7 +131,7 @@ resource "vkcs_compute_instance" "compute_2" {
 resource "vkcs_lb_loadbalancer" "loadbalancer" {
    name="loadbalancer"
    vip_subnet_id = "${vkcs_networking_subnet.lb.id}"
-   availability_zone = "GZ1"
+   availability_zone = "ME1"
    tags = ["tag1"]
 }
 
