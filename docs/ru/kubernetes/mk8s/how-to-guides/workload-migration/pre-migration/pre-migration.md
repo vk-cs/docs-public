@@ -63,6 +63,10 @@
 
 {include(/ru/_includes/_az-migration-magnum.md)[tags=helm-addons]}
 
+## {heading({counter(az)}. (Опционально) Синхронизируйте Terraform State)[id=mk8s-pre-migration-tf]}
+
+{include(/ru/_includes/_az-migration-magnum.md)[tags=tf-managed]}
+
 ## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-pre-migration-delete]}
 
 {include(/ru/_includes/_az-migration-magnum.md)[tags=delete]}
