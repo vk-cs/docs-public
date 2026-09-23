@@ -13,7 +13,7 @@
 
 ## {heading(Подготовительные шаги)[id=audit-logs-arcsight-prepare]}
 
-1. {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-view-user)[text=Убедитесь]}, что у вас есть доступ к личному кабинету {var(cloud)} с одной из {linkto(../../../../access/iam/concepts/rolesandpermissions#rolesandpermissions-audit)[text=ролей]}: `Владелец проекта`, `Суперадминистратор`, `Администратор проекта` или `Наблюдатель`.
+1. {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-view-user)[text=Убедитесь]}, что у вас есть доступ к личному кабинету {var(cloud)} с одной из {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовых ролей]}: `Владелец проекта`, `Суперадминистратор`, `Администратор проекта` или `Наблюдатель`.
 
 1. Создайте аккаунт для сервиса {var(s3)}, если это еще не сделано:
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.

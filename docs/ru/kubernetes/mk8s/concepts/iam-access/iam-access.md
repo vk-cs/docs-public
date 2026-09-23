@@ -4,40 +4,52 @@
 
 Список доступных участнику проекта действий в сервисе Managed Containers определяет:
 
-- Присвоенная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference#iam-roles-reference-basic)[text=базовая роль]} — задает набор действий, доступных по умолчанию.
+- {linkto(#mk8s-concepts-iam-basic-roles)[text=Базовая роль]} — определяет права пользователя на уровне всех сервисов {var(cloud)}.
+- {linkto(#mk8s-concepts-iam-special-roles)[text=Специализированная роль]} — определяет права пользователя на уровне отдельных сервисов {var(cloud)}.
 
-  Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям во всех сервисах.
+Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Managed Containers не поддерживается.
 
-- Отдельная {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированная роль]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначается]} дополнительно, если прав, входящих в базовую роль, недостаточно. Настройка отдельных {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=разрешений]} для Managed Containers не поддерживается.
+Роли могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`. Выбирая роли, придерживайтесь принципа минимальных привилегий: пользователь должен иметь только те права, без которых невозможно выполнить его задачи.
 
-  {note:info}
-  Доступы, предоставляемые вместе с базовой ролью, имеют приоритет над отдельными специализированными ролями.
-  {/note}
+## {heading(Базовые роли)[id=mk8s-concepts-iam-basic-roles]}
 
-При выдаче ролей придерживайтесь принципа минимальных привилегий: пользователь должен иметь только те права, без которых невозможно выполнить его задачи.
+Базовые роли `Владелец проекта`, `Суперадминистратор` и `Администратор проекта` получают полный доступ ко всем операциям Managed Containers, настраивать отдельные роли не нужно.
+
+### {heading(mcs_owner)[id=mk8s-concepts-iam-basic-roles-mcs_owner]}
+
+{include(/ru/_includes/_iam_roles.md)[tags=mcs_owner]}
+
+### {heading(mcs_co_owner)[id=mk8s-concepts-iam-basic-roles-mcs_co_owner]}
+
+{include(/ru/_includes/_iam_roles.md)[tags=mcs_co_owner]}
+
+### {heading(mcs_admin)[id=mk8s-concepts-iam-basic-roles-mcs_admin]}
+
+{include(/ru/_includes/_iam_roles.md)[tags=mcs_admin]}
+
+### {heading(mcs_admin_security)[id=mk8s-concepts-iam-basic-roles-mcs_admin_security]}
+
+{include(/ru/_includes/_iam_roles.md)[tags=mcs_admin_security]}
+
+### {heading(mcs_viewer)[id=mk8s-concepts-iam-basic-roles-mcs_viewer]}
+
+{include(/ru/_includes/_iam_roles.md)[tags=mcs_viewer]}
 
 ## {heading(Специализированные роли)[id=mk8s-concepts-iam-special-roles]}
 
-{note:info}
-Специализированные роли могут {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=назначать]} только участники проекта с ролями `Владелец проекта`, `Суперадминистратор` и `Администратор пользователей (IAM)`.
-{/note}
-
-Для сервиса Managed Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать дополнительно к {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовым ролям]} `Администратор пользователей (IAM)` или `Наблюдатель`. По умолчанию доступ к Managed Containers у этих базовых ролей ограничен:
-
-- `Администратор пользователей (IAM)`: нет доступа.
-- `Наблюдатель`: просмотр информации о кластере и группах узлов, получение секрета для доступа в Headlamp.
+Для сервиса Managed Containers доступно несколько {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=специализированных ролей]}, которые можно использовать вместе с {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=базовой ролью]} или самостоятельно.
 
 ### {heading(mcs_k8s_viewer)[id=mk8s-concepts-iam_viewer]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-viewer-managed]}
+{include(/ru/_includes/_iam_roles.md)[tags=k8s-viewer-managed]}
 
 ### {heading(mcs_k8s_editor)[id=mk8s-concepts-iam_editor]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-editor-managed]}
+{include(/ru/_includes/_iam_roles.md)[tags=k8s-editor-managed]}
 
 ### {heading(mcs_k8s_admin)[id=mk8s-concepts-iam_admin]}
 
-{include(/ru/_includes/_iam_k8s.md)[tags=k8s-admin-managed]}
+{include(/ru/_includes/_iam_roles.md)[tags=k8s-admin-managed]}
 
 ## {heading(Взаимосвязь ролей личного кабинета и Kubernetes)[id=mk8s-concepts-iam-k8s-roles]}
 
