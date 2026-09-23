@@ -26,7 +26,7 @@
 
 Төмендегі мысалда инстанс келесі конфигурацияда құрылады:
 
-- әдепкі аймақ, қолжетімділік аймағы `GZ1`;
+- әдепкі аймақ, қолжетімділік аймағы `ME1`;
 - диск түрі `SSD`, өлшемі — 50 ГБ;
 - деректер дискісінің түрі `SSD`, өлшемі — 60 ГБ.
 Мазмұны келесі Terraform конфигурация файлын `main.tf` жасаңыз:
@@ -37,7 +37,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   flavor_id         = data.vkcs_compute_flavor.basic.id
   jh_instance_id    = vkcs_mlplatform_jupyterhub.jupyterhub.id
   demo_mode         = true
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     size        = 50
     volume_type = "ceph-ssd"

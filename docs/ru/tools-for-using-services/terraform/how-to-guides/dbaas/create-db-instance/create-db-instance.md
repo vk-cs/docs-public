@@ -19,7 +19,7 @@
 Во всех примерах ниже инстансы БД создаются со следующими свойствами:
 
 - {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=Регион]}: по умолчанию (совпадает с регионом проекта).
-- [Зона доступности](../../../../../start/concepts/architecture#architecture-az): по умолчанию (для региона Москва — `GZ1`).
+- [Зона доступности](../../../../../start/concepts/architecture#architecture-az): по умолчанию (для региона Москва — `ME1`).
 - Тип СУБД и версия: MySQL 8.0.
 - {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=Конфигурация]} инстанса БД: **Single**.
 - Внешний IP-адрес: назначен.

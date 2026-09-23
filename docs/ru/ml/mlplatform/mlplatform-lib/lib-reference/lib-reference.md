@@ -337,7 +337,7 @@ get_external_networks(**kwargs
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -433,7 +433,7 @@ create_jupiter_hub(instance_name: str,
        volumes=[MLPlatformVolumeIn(
            size=50,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -462,14 +462,14 @@ create_jupiter_hub(instance_name: str,
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -647,7 +647,7 @@ attach_s3_bucket_to_jh(
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -741,7 +741,7 @@ create_mlflow(instance_name: str,
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -770,14 +770,14 @@ create_mlflow(instance_name: str,
     mlflow_jh_instance_id: 6178700a-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: jh_default_admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
    ```
 
@@ -875,7 +875,7 @@ create_mlflow(instance_name: str,
 MLPlatformVolumeIn(
     size=50,
     volume_type=VolumeType.ceph_ssd,
-    availability_zone=AvailabilityZone.GZ1)
+    availability_zone=AvailabilityZone.MS1)
 ```
 
 |`networks`
@@ -973,7 +973,7 @@ create_deploy(instance_name: str,
        volumes=[MLPlatformVolumeIn(
            size=30,
            volume_type=VolumeType.ceph_ssd,
-           availability_zone=AvailabilityZone.GZ1,
+           availability_zone=AvailabilityZone.MS1,
        )],
        networks=MLPlatformNetworkIn(
            network_id=NETWORK_ID,
@@ -1002,14 +1002,14 @@ create_deploy(instance_name: str,
     mlflow_jh_instance_id: None
     mlflow_deploy_instance_id: f8258286-XXXX
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: None
         size: 30
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: None]
 
    ```
@@ -1088,21 +1088,21 @@ get_all_instances_info(**kwargs
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     # конец фрагмента
     ```
@@ -1197,21 +1197,21 @@ get_instance_info(instance_id: str,
     mlflow_jh_instance_id: f8258286-ХХХХ
     mlflow_deploy_instance_id: None
     jh_admin_name: admin
-    availability_zone: GZ1
+    availability_zone: MS1
     volumes: [
     ---------------
         name: ml_platform_boot_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: ba1b3d71-ХХХХ, 
     ---------------
         name: ml_platform_data_volume
         size: 50
         volume_type: ceph-ssd
         imageRef: None
-        availability_zone: GZ1
+        availability_zone: MS1
         cinder_id: d6ee2d16-ХХХХ],
     ```
 

@@ -152,6 +152,10 @@ Multiple disks can be attached to a VM, but at least one of them must be bootabl
 
 ### Disks types
 
+{note:warn}
+Availability Zone `GZ1` is being decommissioned. Create new resources in other availability zones.
+{/note}
+
 The VK Cloud platform supports various types of disks:
 
 [cols="1,1,1,3", options="header"]

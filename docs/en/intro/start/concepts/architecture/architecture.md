@@ -134,6 +134,10 @@ The status of the availability zones, services and infrastructure of VK Cloud ca
 
 ### {heading(Availability zones)[id=architecture-az]}
 
+{note:warn}
+The `GZ1` availability zone is being decommissioned. Create new resources in other availability zones.
+{/note}
+
 Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located. In VK Cloud, the availability zone corresponds to a separate Tier III data center. VK Cloud provides availability zones:
 
 [cols="1,1", options="header"]

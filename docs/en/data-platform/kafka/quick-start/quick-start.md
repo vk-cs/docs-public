@@ -37,7 +37,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
    1. **Network**: choose **Create new network**.
    1. Choose **Sprut** as SDN.
    1. **Subnet address**: type `10.0.1.0/24`.
-   1. **Availability zone**: `Москва (GZ1)`.
+   1. **Availability zone**: `Москва (ME1)`.
    1. Click the **Next step** button.
 
 1. At the **Учетные данные** step:

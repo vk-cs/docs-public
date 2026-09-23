@@ -38,7 +38,7 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
   product_name    = "spark"
   product_version = "3.5.1"
 
-  availability_zone = "GZ1"
+  availability_zone = "PA2"
   configs = {
     settings = [
       {

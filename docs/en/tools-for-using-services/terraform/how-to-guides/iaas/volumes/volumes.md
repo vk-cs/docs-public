@@ -6,7 +6,7 @@ Make sure you [installed and configured Terraform](../../../quick-start).
 
 ## Create a disk volume
 
-To create a disk volume, create a `volume.tf` file that describes the configuration of the volume to be created. Add the text from the example below and correct the settings for your volume. This example describes how to create a 1 GB disk volume of type `ceph-ssd` in the `GZ1` availability zone.
+To create a disk volume, create a `volume.tf` file that describes the configuration of the volume to be created. Add the text from the example below and correct the settings for your volume. This example describes how to create a 1 GB disk volume of type `ceph-ssd` in the `ME1` availability zone.
 
 To create a disk volume, you need the `vkcs_blockstorage_volume` resource that provides a block storage volume. You can create, modify, and delete block storage volumes.
 
@@ -18,7 +18,7 @@ resource "vkcs_blockstorage_volume" "volume" {
     foo = "bar"
   }
   size = 1
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   volume_type = "ceph-ssd"
 }
 ```

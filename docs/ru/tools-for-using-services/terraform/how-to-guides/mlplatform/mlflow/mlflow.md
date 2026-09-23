@@ -26,7 +26,7 @@
 
 В примере ниже инстанс создается в следующей конфигурации:
 
-- регион по умолчанию, зона доступности `GZ1`;
+- регион по умолчанию, зона доступности `ME1`;
 - тип диска `SSD`, размер — 50 ГБ;
 - тип диска данных `SSD`, размер — 60 ГБ.
 Создайте файл конфигурации Terraform `main.tf` с содержимым:
@@ -37,7 +37,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   flavor_id         = data.vkcs_compute_flavor.basic.id
   jh_instance_id    = vkcs_mlplatform_jupyterhub.jupyterhub.id
   demo_mode         = true
-  availability_zone = "GZ1"
+  availability_zone = "ME1"
   boot_volume = {
     size        = 50
     volume_type = "ceph-ssd"

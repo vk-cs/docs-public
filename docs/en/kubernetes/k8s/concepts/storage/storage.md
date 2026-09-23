@@ -88,6 +88,10 @@ Each storage class has a reclaim policy configured for it.
 
 {tab(Moscow region)}
 
+{note:warn}
+Availability Zone `GZ1` is being decommissioned. Create new resources in other availability zones.
+{/note}
+
 [cols="1,1,1,1", options="header"]
 |===
 

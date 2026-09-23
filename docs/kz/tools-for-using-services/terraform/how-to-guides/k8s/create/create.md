@@ -54,7 +54,7 @@ resource "vkcs_networking_router_interface" "k8s" {
 
 Төмендегі мысалдарда кластерлер келесі конфигурацияда жасалады:
 
-- `Москва` өңірі, `GZ1` қолжетімділік аймағы.
+- `Москва` өңірі, `ME1` қолжетімділік аймағы.
 - Kubernetes нұсқасы `1.31`.
 
 - Бір `STD3-4-8` master-түйіні.
@@ -103,7 +103,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -172,7 +172,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 
@@ -247,7 +247,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   master_count        = 1
   network_id          = vkcs_networking_network.k8s.id
   subnet_id           = vkcs_networking_subnet.k8s.id
-  availability_zone   = "GZ1"
+  availability_zone   = "ME1"
 
   floating_ip_enabled = true
 

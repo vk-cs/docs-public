@@ -192,7 +192,7 @@ The DB instance is charged and consumes computational resources. After completin
 
    - **Database instance name:** for example, `vk-cloud-dbaas-quickstart`.
    - **Type of virtual machine:** `STD3-2-8`.
-   - **Availability zone:** `Moscow (GZ1)`.
+   - **Availability zone:** `Moscow (ME1)`.
    - **Disk Type:** `SSD`.
    - **Disk size, GB:** `10`.
    - **Enable volume autoscaling:** make sure that this option is disabled.

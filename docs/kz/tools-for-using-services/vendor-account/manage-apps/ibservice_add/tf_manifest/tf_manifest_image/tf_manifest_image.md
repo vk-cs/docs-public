@@ -66,7 +66,7 @@
      image_id          = 2a7a77db-d902-49bc-9198-531bd646d86f
      volume_type       = "ceph-ssd"
      size              = 10
-     availability_zone = "GZ1"
+     availability_zone = "ME1"
    }
    ```
    {/caption}
@@ -87,7 +87,7 @@
      # Размер тома диска, ГБ
      size = 1
      # Зона доступности
-     availability_zone = "GZ1"
+     availability_zone = "ME1"
      # Тип тома диска
      volume_type = "ceph-ssd"
    }
@@ -134,7 +134,7 @@
          # Перечень имен групп безопасности для ВМ
          security_groups   = [vkcs_networking_secgroup.secgroup.name]
          # Зона доступности ВМ
-         availability_zone = "GZ1"
+         availability_zone = "ME1"
          # Метаданные
          metadata          = { "sid" : "xaas", "product" : "test service" }
          # Root-диск

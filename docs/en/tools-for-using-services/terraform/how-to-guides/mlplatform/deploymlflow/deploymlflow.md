@@ -22,7 +22,7 @@ When creating the instance the following was used:
 
 In the example, the instance is created with the following configuration:
 
-- default region, availability zone — `GZ1`
+- default region, availability zone — `ME1`
 - boot disk type — `SSD`, size — 50 GB
 - data disk type — `SSD`, size — 60 GB
 
@@ -33,7 +33,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
   name               = "tf-example"
   flavor_id          = data.vkcs_compute_flavor.basic.id
   mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id
-  availability_zone  = "GZ1"
+  availability_zone  = "ME1"
   boot_volume = {
     size        = 50
     volume_type = "ceph-ssd"

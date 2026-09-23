@@ -153,7 +153,7 @@ variable "backup_style" {
 # Зона доступности
 variable "ds-az" {
   type    = string
-  default = "GZ1"
+  default = "ME1"
 }
 
 # Тип ВМ
