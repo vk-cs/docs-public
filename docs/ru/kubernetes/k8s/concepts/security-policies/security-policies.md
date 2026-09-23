@@ -16,15 +16,19 @@
 
 В кластерах Kubernetes в сервисе Managed Containers действуют политики безопасности по умолчанию, которые обеспечивают базовую защиту кластера от нескольких распространенных уязвимостей:
 
-<!-- prettier-ignore -->
-| Политика безопасности по умолчанию              | Соответствующие ресурсы Gatekeeper |
-|-------------------------------------------------| ---------------------------------- |
-| {linkto(#k8s-security-policies-host-filesystem)[text=Ограничение host-filesystem]} | Ограничение и шаблон ограничения: `k8spsphostfilesystem` |
-| {linkto(#k8s-security-policies-host-namespaces)[text=Ограничение host-namespaces]} | Ограничение и шаблон ограничения: `k8spsphostnamespace` |
+[cols="2a", options="header"]
+|===
+|Политика безопасности по умолчанию
+|Соответствующие ресурсы Gatekeeper
 
-Эти политики реализуются с помощью {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=преднастроенных шаблонов и ограничений Gatekeeper]}.
+|{linkto(#k8s-security-policies-host-filesystem)[text=Ограничение host-filesystem]}
+|Ограничение и шаблон ограничения: `k8spsphostfilesystem`
 
-Политики безопасности по умолчанию нельзя изменить или удалить, они всегда включены. Если у вас есть вопросы по изменению политик безопасности по умолчанию для ваших кластеров, обращайтесь в [техническую поддержку](/ru/contacts).
+|{linkto(#k8s-security-policies-host-namespaces)[text=Ограничение host-namespaces]}
+|Ограничение и шаблон ограничения: `k8spsphostnamespace`
+|===
+
+Эти политики реализуются с помощью {linkto(../../concepts/addons-and-settings/settings#k8s-settings-templates-and-limitations)[text=преднастроенных шаблонов и ограничений Gatekeeper]}. Политики безопасности по умолчанию по умолчанию включены во всех кластерах, но вы можете {linkto(#k8s-security-policies-management-console)[text=изменить или выключить их через личный кабинет]}.
 
 ## {heading(Работа с политиками безопасности через личный кабинет)[id=k8s-security-policies-management-console]}
 
@@ -184,10 +188,6 @@
 
 ### {heading(Ограничение host-filesystem)[id=k8s-security-policies-host-filesystem]}
 
-{note:info}
-Это политика по умолчанию. Она уже настроена в кластере на уровне всех пространств имен, ее нельзя удалить или изменить.
-{/note}
-
 {tabs}
 
 {tab(Описание)}
@@ -216,10 +216,6 @@
 {/tabs}
 
 ### {heading(Ограничение host-namespaces)[id=k8s-security-policies-host-namespaces]}
-
-{note:info}
-Это политика по умолчанию. Она уже настроена в кластере на уровне всех пространств имен, ее нельзя удалить или изменить.
-{/note}
 
 {tabs}
 

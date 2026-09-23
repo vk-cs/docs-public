@@ -45,12 +45,6 @@ Managed Containers сервисінде сіз Kubernetes кластерлері
 
 ## {heading(Қауіпсіздік саясатын қосу және өшіру)[id=k8s-manage-security-turn-on-off]}
 
-{note:warn}
-
-{linkto(../../concepts/security-policies#k8s-security-policies-default)[text=Әдепкі қауіпсіздік саясаттарын]} өшіруге болмайды.
-
-{/note}
-
 Бұл топтық операция: қажет болса, бірден бірнеше саясатты құсбелгілер арқылы таңдап, қосуға немесе өшіруге болады.
 
 Сіз кластердегі жекелеген саясаттардың жұмысын оларды қосу және өшіру арқылы басқара аласыз:
@@ -68,12 +62,6 @@ Managed Containers сервисінде сіз Kubernetes кластерлері
    Кластерді қайта конфигурациялау басталады. Бұл процесс біраз уақыт алуы мүмкін.
 
 ## {heading(Қауіпсіздік саясатын өңдеу)[id=k8s-manage-security-edit-policy]}
-
-{note:warn}
-
-{linkto(../../concepts/security-policies#k8s-security-policies-default)[text=Әдепкі қауіпсіздік саясаттарын]} өңдеуге болмайды.
-
-{/note}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
 1. Қажетті кластер орналасқан жобаны таңдаңыз.
@@ -94,12 +82,6 @@ Managed Containers сервисінде сіз Kubernetes кластерлері
    Кластерді қайта конфигурациялау басталады. Бұл процесс біраз уақыт алуы мүмкін.
 
 ## {heading(Қауіпсіздік саясатын жою)[id=k8s-manage-security-delete-policy]}
-
-{note:warn}
-
-{linkto(../../concepts/security-policies#k8s-security-policies-default)[text=Әдепкі қауіпсіздік саясаттарын]} жоюға болмайды.
-
-{/note}
 
 Бұл топтық операция: қажет болса, бірден бірнеше саясатты құсбелгілер арқылы таңдап, жоюға болады.
 
