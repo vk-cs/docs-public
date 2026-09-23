@@ -32,7 +32,7 @@ For more information about the balance, see the [Balance management](../instruct
 1. Check if the card is linked:
 
    - If the card is linked, its last 4 digits are displayed on the page.
-   - If the card is not linked, the button is displayed on the page **Link a card**. In this case, [bind](../instructions/add-card#bind_the_card) it.
+   - If the card is not linked, the button is displayed on the page **Link a card**. In this case, [bind](../instructions/add-card#link_card) it.
 
 One card can be linked to only one project. When linking the card, a small amount will be debited from it, which will be credited to the project balance.
 
