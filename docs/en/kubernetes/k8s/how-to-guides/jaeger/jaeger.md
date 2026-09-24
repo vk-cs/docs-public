@@ -1,10 +1,10 @@
 Learn how the [Jaeger](https://www.jaegertracing.io/) add-on works in Kubernetes clusters based on [HotROD](https://github.com/jaegertracing/jaeger/tree/main/examples/hotrod ) — the official demo application for Jaeger. HotROD consists of several microservices that you can use to generate and view query traces in Jaeger via the [OpenTelemetry SDK](https://opentelemetry.io/).
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
-1. [Install and configure](../../connect/kubectl) `kubectl`, if not done so already.
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Install and configure](/en/kubernetes/k8s/connect/kubectl) `kubectl`, if not done so already.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. [Install the Jaeger add-on](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-jaeger), if not done so already.
 
 ## {counter(jaeger)}. Create an application for HotROD

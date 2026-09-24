@@ -1,0 +1,91 @@
+To ensure that a domain name is always resolved to a given IP address, you need to add a static DNS record to the cluster DNS service.
+
+This article shows an example of how to add a domain and IP address to the cluster DNS service using the [CoreDNS](https://coredns.io/manual/toc/) resource.
+
+## Before you start
+
+{include(/en/_includes/_create-test-cluster.md)}
+
+   Choose the parameters of the cluster as you wish.
+
+1. [Make sure](/en/kubernetes/mk8s/connect/kubectl) you can connect to the cluster using `kubectl`.
+
+## {counter(coredns)}. Add host address to CoreDNS resource ConfigMap
+
+1. Run the command:
+
+   ```console
+   kubectl edit cm coredns -n kube-system
+   ```
+
+   The CoreDNS resource ConfigMap will open.
+1. Add the domain and IP address to the resource description before the `.:53` block, as shown below:
+  
+   ```yaml
+   apiVersion: v1
+   data:
+      Corefile: |
+         myhost.com {
+            hosts {
+               8.8.8.8 myhost.com
+               fallthrough
+            }
+         }
+         .:53 {
+            errors
+            log
+            health
+            kubernetes cluster.local 10.254.0.0/16 10.100.0.0/16 {
+               pods insecure
+            }
+            prometheus :9153
+            forward . /etc/resolv.conf
+            cache 30
+         }
+   ```
+
+   Here:
+
+   - `8.8.8.8` — the IP address of the domain being added.
+   - `myhost.com` — the host domain name.
+   - `fallthrough` — the parameter that allows to continue processing the request in the next plugins, if the domain is not found in the current zone.
+
+   CoreDNS will reload the configuration automatically within 1-2 minutes. Wait for the changes to apply.
+
+## {counter(coredns)}. Check configuration application
+
+1. Create a temporary pod:
+
+   ```console
+   kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
+   ```
+
+   Expected output:
+
+   ```console
+   Server:    10.254.0.10
+   Address 1: 10.254.0.10 kube-dns.kube-system.svc.cluster.local
+
+   Name:      myhost.com
+   Address 1: 8.8.8.8
+   ```
+   
+1. If the response returns a different IP address for host `myhost.com`:
+
+   1. Restart all CoreDNS pods:
+
+      ```console
+      kubectl rollout restart daemonset/coredns -n kube-system
+      ```
+
+      The DaemonSet controller will recreate them based on the changed configuration.
+
+   1. Repeat creating a temporary pod to test DNS:
+   
+      ```console
+      kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
+      ```
+
+## Delete unused resources
+
+{include(/en/_includes/_delete-test-cluster.md)}

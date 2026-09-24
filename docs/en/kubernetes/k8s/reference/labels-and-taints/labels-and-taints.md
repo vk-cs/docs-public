@@ -1,4 +1,4 @@
-Labels are key/value pairs that are attached to Kubernetes objects, such as [pods](../pods). They are designed to specify and use identifying attributes for objects relevant to the user. Taints can be used to organize and select subsets of objects.
+Labels are key/value pairs that are attached to Kubernetes objects, such as [pods](/en/kubernetes/k8s/reference/pods). They are designed to specify and use identifying attributes for objects relevant to the user. Taints can be used to organize and select subsets of objects.
 
 Taints apply at the worker node level, prohibiting the scheduler from placing pods on the worker nodes.
 

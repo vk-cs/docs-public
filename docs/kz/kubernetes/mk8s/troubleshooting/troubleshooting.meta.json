@@ -1,0 +1,13 @@
+{
+  "title": "Ақауларды жою",
+  "shortDescription": "Managed Containers үшін типтік мәселелерді диагностикалау және шешу тәсілдері",
+  "metaDescription": "Managed Containers үшін типтік мәселелерді диагностикалау және шешу тәсілдері",
+  "sectionTitle": "Ақауларды жою",
+  "icon": "",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

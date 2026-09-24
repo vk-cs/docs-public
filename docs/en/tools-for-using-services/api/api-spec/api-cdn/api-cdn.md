@@ -13,7 +13,7 @@ The [CDN](../../../../networks/cdn)  REST API supports managing and monitoring C
 
 {cut(Obtaining an endpoint, authorization, and authentication)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. [Enable](../../../../access/iam/instructions/manage-2fa) two-factor authentication if it has not been done yet.
 1. [Enable](../../rest-api/enable-api) API access if it has not been done yet.
 1. Click the username in the page header and select **Project settings**.

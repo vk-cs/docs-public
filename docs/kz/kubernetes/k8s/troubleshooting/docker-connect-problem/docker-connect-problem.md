@@ -8,7 +8,7 @@ Docker тізіліміне қосылған кезде `x509: certificate signe
 
 {note:info}
 
-{linkto(/kz/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=Кластерді жасау]} кезінде контейнер бейнелерін цифрлық сертификаттың түпнұсқалығын тексермей жүктеп алуға және іске қосуға болатын сенімді Docker тізілімдерінің мекенжайларын қоса аласыз.
+{linkto(/kz/kubernetes/k8s/instructions/create-cluster/create-webui#k8s-create-webui)[text=Кластерді жасау]} кезінде контейнер бейнелерін цифрлық сертификаттың түпнұсқалығын тексермей жүктеп алуға және іске қосуға болатын сенімді Docker тізілімдерінің мекенжайларын қоса аласыз.
 
 {/note}
 

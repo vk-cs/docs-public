@@ -202,13 +202,13 @@ When working on prepayment with a negative payment account balance, the project 
 
 To restore the services:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. [Replenish](../instructions/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
 1. Wait for the activation of services in the project. It can take up to 15 minutes.
 1. Manually activate project resources:
 
    - [Virtual machines](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)
-   - [Kubernetes containers](/en/kubernetes/k8s/instructions/manage-cluster)
+   - [Kubernetes containers](/en/kubernetes/mk8s/instructions/manage-cluster)
    - [VM backup](/en/storage/backups/instructions/manage-backup-plan)
    - Other resources
 

@@ -29,11 +29,11 @@ This article shows how to create a cluster with a GPU node and test its operatio
 
 1. [Connect](/en/kubernetes/k8s/connect/kubectl) to the cluster via kubectl.
 
-## 1. Install GPU Operator add-on
+## {counter(gpu)}. Install GPU Operator add-on
 
 Follow the [installation instructions](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-gpu-operator).
 
-## 2. Test cluster
+## {counter(gpu)}. Test cluster
 
 To test the GPU node, a CUDA sample will be run that sums two vectors.
 
@@ -104,7 +104,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
    pod "cuda-vectoradd" deleted
    ```
 
-## 3. Split GPU using MPS technology
+## {counter(gpu)}. Split GPU using MPS technology
 
 1. [Add](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code) the [NVIDIA device plugin](https://github.com/NVIDIA/k8s-device-plugin/tree/v0.17.0?tab=readme-ov-file#with-cuda-mps) configuration to GPU Operator add-on code:
 
@@ -204,7 +204,7 @@ To test the GPU node, a CUDA sample will be run that sums two vectors.
 
    Here the `nvidia.com/gpu:4` parameter indicates that the GPU is divided into 4 parts.
 
-## 4. Split GPU using MIG technology
+## {counter(gpu)}. Split GPU using MIG technology
 
 1. Add a label to the node with the GPU that will disable MPS splitting of the GPU:
 

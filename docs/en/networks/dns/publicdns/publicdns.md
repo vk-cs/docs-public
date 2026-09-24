@@ -23,7 +23,7 @@ To work with public DNS, configure [roles](/en/access/iam/concepts/rolesandpermi
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 
@@ -45,7 +45,7 @@ DNS zone is a logical association of domain names of your resources, containing 
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click the button **Add zone**.
@@ -90,7 +90,7 @@ For most providers, it is possible to delegate zone management independently. If
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Edit**.
@@ -139,7 +139,7 @@ After creating NS records, you can create a zone for a delegated subdomain.
 
 This is a group operation: if necessary, you can delete several zones at once by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Delete**.
@@ -175,7 +175,7 @@ To add a resource record:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to add a resource record.
@@ -291,7 +291,7 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to change the resource record.
@@ -316,7 +316,7 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 
 This is a group operation: if necessary, you can delete several records at once by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to delete the resource record.

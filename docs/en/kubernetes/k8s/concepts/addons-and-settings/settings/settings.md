@@ -6,12 +6,12 @@ The Managed Containers network proxy runs on each node, providing access to IP a
 
 This proxy can work in [several modes](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/#options), they are listed in the `--proxy-mode` setting description. In Kubernetes clusters in Managed Containers, the proxy works in the `iptables` mode. This mode of operation affects:
 
-- [the behavior of load balancers](../../../how-to-guides/load-balancer);
-- [on the behavior and settings of the local caching DNS server](../../../how-to-guides/dns/local-dns-cache).
+- [the behavior of load balancers](/en/kubernetes/k8s/how-to-guides/load-balancer);
+- [on the behavior and settings of the local caching DNS server](/en/kubernetes/k8s/how-to-guides/dns/local-dns-cache).
 
 ## Limits settings for pods
 
-When working with pods [it is recommended to specify](../../../reference/resource-limiting) in their configuration files `requests` and `limits` parameters for containers included in this pod.
+When working with pods [it is recommended to specify](/en/kubernetes/k8s/reference/resource-limiting) in their configuration files `requests` and `limits` parameters for containers included in this pod.
 
 If these parameters are not specified, clusters automatically apply the values for the corresponding containers:
 
@@ -28,7 +28,7 @@ Disabling or changing these templates and constraints can reduce the security of
 
 {/note}
 
-Templates are available for clusters starting with Managed Containers version 1.21. For older versions, [manually install Gatekeeper](../../../install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](../../architecture).
+Templates are available for clusters starting with Managed Containers version 1.21. For older versions, [manually install Gatekeeper](/en/kubernetes/k8s/install-tools/gatekeeper) and the above templates and restrictions, or upgrade the cluster. For more information about Gatekeeper, see [Architecture](/en/kubernetes/k8s/concepts/architecture).
 
 {tabs}
 

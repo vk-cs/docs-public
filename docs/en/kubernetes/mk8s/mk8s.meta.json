@@ -1,0 +1,17 @@
+{
+  "title": "Managed Containers for second-generation clusters",
+  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads on second-generation clusters",
+  "metaDescription": "",
+  "sectionTitle": "Managed Containers for second-generation clusters",
+  "icon": "",
+  "relativeSections": [
+    {
+      "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/k8s/create"
+    }
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

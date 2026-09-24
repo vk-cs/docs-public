@@ -1,0 +1,13 @@
+{
+  "title": "Cannot connect to Docker",
+  "shortDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
+  "metaDescription": "What to do if the «x509: certificate signed by unknown authority» error occurs when connecting to the Docker registry",
+  "sectionTitle": "Cannot connect to Docker",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

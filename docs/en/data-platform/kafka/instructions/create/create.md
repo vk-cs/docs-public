@@ -11,7 +11,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Add an instance** or **Create an instance** button.
@@ -31,7 +31,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
       - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
       - **Disk size:** disk size for the node.
 
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host an instance of Cloud Kafka.
+   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host an instance of Cloud Kafka.
 
       If the required cluster is not in the list:
 
@@ -78,7 +78,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Создать инстанс** or **Создать экземпляр** button.
@@ -92,7 +92,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. At the **Parameters** step:
 
    1. Specify the name and the description for the instance.
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host an instance of Cloud Kafka.
+   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host an instance of Cloud Kafka.
 
       If the required cluster is not in the list:
 

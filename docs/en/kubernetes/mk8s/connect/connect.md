@@ -1,0 +1,1 @@
+In Managed Containers, there are several ways to connect to Kubernetes clusters and its components. All available connection options are discussed here.

@@ -114,7 +114,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 {tabs}
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/instructions/buckets/create-bucket "change-lang").
 1. Go to the **Cloud storage → Buckets** section.
 1. Click the name of the bucket you need.

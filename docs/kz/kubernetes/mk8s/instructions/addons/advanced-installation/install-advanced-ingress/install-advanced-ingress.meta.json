@@ -1,0 +1,13 @@
+{
+  "title": "Ingress NGINX",
+  "shortDescription": "",
+  "metaDescription": "Ingress-контроллер аддонын баптау және орнату.",
+  "sectionTitle": "Ingress NGINX",
+  "icon": "",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

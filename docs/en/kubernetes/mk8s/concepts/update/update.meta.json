@@ -1,0 +1,13 @@
+{
+  "title": "Cluster version update",
+  "shortDescription": "How a Kubernetes cluster is updated in the Managed Containers service",
+  "metaDescription": "",
+  "sectionTitle": "Cluster version update",
+  "icon": "",
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

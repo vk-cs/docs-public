@@ -12,7 +12,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
 
@@ -72,7 +72,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the IP is located.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
@@ -123,7 +123,7 @@ Once a network is created, it will appear in the list of networks.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
 1. Click on the name of the cloud network.
@@ -215,7 +215,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
 1. Click on the name of the cloud network.
@@ -291,7 +291,7 @@ All the network subnets and ports will be deleted along with the network.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
 1. Click on the name of the cloud network where the subnet is located.
@@ -380,7 +380,7 @@ Once a subnet is deleted, it cannot be restored.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Virtual networks** → **Networks**.
 1. Click on the name of the cloud network where the subnet is located.

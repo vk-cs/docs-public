@@ -24,7 +24,7 @@ Cloud Spark кластері — Managed Containers сервисі негізі�
 
 ## {heading(Docker Registry бар ВМ)[id=mlspark-concepts-architecture-vm_docker_registry]}
 
-[Docker Registry](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) ішінде әдепкі бойынша пайдаланылатын контейнердің Docker-бейнесі сақталады, оған Cloud Spark кластерін өрістетуге және онда пайдаланушы қолданбаларын іске қосуға арналған кітапханалар, тәуелділіктер және баптаулар кіреді.
+[Docker Registry](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-registry) ішінде әдепкі бойынша пайдаланылатын контейнердің Docker-бейнесі сақталады, оған Cloud Spark кластерін өрістетуге және онда пайдаланушы қолданбаларын іске қосуға арналған кітапханалар, тәуелділіктер және баптаулар кіреді.
 
 Қажет болған жағдайда пайдаланушы Docker Registry-ге өз Docker-бейнелерін жүктеп, кейін оларды сервисте пайдалана алады.
 

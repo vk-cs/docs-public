@@ -556,5 +556,5 @@ _Shadow port_ технологиясы Kubernetes кластерлерін же�
 
 1. Жобаңызға Shadow port қосу үшін [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз. 
 1. Интернетке қол жеткізусіз желі үшін **VK Cloud сервистеріне қол жеткізу** опциясын {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=қосыңыз]}.
-1. Kubernetes кластерін осы желіде [орналастырыңыз](../../../../kubernetes/k8s/instructions/create-cluster).
+1. Kubernetes кластерін осы желіде [орналастырыңыз](../../../../kubernetes/mk8s/instructions/create-cluster).
 {/ifdef}

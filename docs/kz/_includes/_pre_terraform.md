@@ -9,4 +9,4 @@
        ```
     1. Егер ұсынылған өзгерістер сізді қанағаттандырса, оларды растаңыз.
 
-   Толығырақ {linkto(/kz/kubernetes/k8s/instructions/helpers/terraform-howto#k8s-terraform-howto-features)[text=terraform пайдалану]} бөлімінде.
+   Толығырақ {linkto(/kz/kubernetes/mk8s/instructions/helpers/terraform-howto#mk8s-terraform-howto-features)[text=terraform пайдалану]} бөлімінде.

@@ -1,4 +1,4 @@
-Kubernetes Dashboard is a universal web interface for Kubernetes clusters available into all [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters in Managed Containers. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
 
 The way to connect to Kubernetes Dashboard depends on the IP address of the cluster:
 
@@ -7,13 +7,9 @@ The way to connect to Kubernetes Dashboard depends on the IP address of the clus
 
 To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
-{note:info}
-Kubernetes Dashboard is only available in [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
+## Before you begin
 
-## Preparatory steps
-
-1. [Make sure](../kubectl#check_connection) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
 
 1. On the host from which you plan to connect to the cluster, install `kauthproxy` if the utility is not already installed:
 

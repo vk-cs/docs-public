@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Бұл баптаулар {linkto(../../create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=кластерді құру кезінде]} немесе бар кластерге {linkto(../../manage-node-group#k8s-manage-node-group-add-group)[text=worker-түйіндер тобын қосу кезінде]} беріледі:
+Бұл баптаулар {linkto(../../create-cluster/create-webui#k8s-create-webui)[text=кластерді құру кезінде]} немесе бар кластерге {linkto(../../manage-node-group#k8s-manage-node-group-add-group)[text=worker-түйіндер тобын қосу кезінде]} беріледі:
 
 - **Топ атауы:** әріптен басталуы тиіс. Тек латынның кіші әріптерінен, цифрлардан және бөлгіш ретінде `-` дефисінен тұра алады.
 - worker-түйіндер баптаулары:

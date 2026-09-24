@@ -1,3 +1,3 @@
-1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның {linkto(/kz/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-available)[text=жүйелік талаптарымен]} танысыңыз.
+1. Аддонды орнату үшін жеткілікті ресурстарыңыз бар екеніне көз жеткізу мақсатында оның {linkto(/kz/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-available)[text=жүйелік талаптарымен]} танысыңыз.
 
-1. (Қосымша) worker-түйіндер топтарын {linkto(/kz/kubernetes/k8s/instructions/scale#k8s-instructions-scale-vertical-worker-nodes)[text=қолмен масштабтауды орындаңыз]} немесе {linkto(/kz/kubernetes/k8s/instructions/scale#k8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=автоматты масштабтауды баптаңыз]}.
+1. (Қосымша) worker-түйіндер топтарын {linkto(/kz/kubernetes/mk8s/instructions/scale#mk8s-instructions-scale-vertical-worker-nodes)[text=қолмен масштабтауды орындаңыз]} немесе {linkto(/kz/kubernetes/mk8s/instructions/scale#mk8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=автоматты масштабтауды баптаңыз]}.

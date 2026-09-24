@@ -17,7 +17,7 @@ Log data can be useful both for internal analysis of incidents and when contacti
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Click on the user's name in the header of the page.
 1. Select **Action logger** from the drop-down list.
 1. Click the **Download report** button.
@@ -34,7 +34,7 @@ The generated report will be uploaded with the extension `.xlsx`.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Click on the user's name in the header of the page.
 1. Select **Action logger** from the drop-down list.
 1. (Optional) Specify the time range:

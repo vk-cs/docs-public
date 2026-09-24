@@ -24,7 +24,7 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/kubernetes/k8s/quick-start"
+                    "link": "/en/kubernetes/mk8s/quick-start"
                 },
                 {
                     "link": "/en/kubernetes/k8s/instructions/create-cluster"

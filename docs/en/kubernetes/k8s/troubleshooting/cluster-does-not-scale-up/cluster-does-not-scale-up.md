@@ -4,7 +4,7 @@ There might be several possible reasons for this issue. Follow the instructions 
 
 {cut(The pod has no requests for the required resources)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Display the manifest of the affected pod using the command:
 
    ```console
@@ -58,7 +58,7 @@ For more details on resources, refer to the [Resource limiting](/en/kubernetes/k
    {/tab}
 
    {tab(kubectl)}
-   1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+   1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
    1. Check whether the [Cluster Autoscaler logs](/en/kubernetes/k8s/how-to-guides/autoscaler-logs) have warnings that contain `max size reached`. If they do, the node group already has the maximum number of nodes.
    {/tab}
    {/tabs}
@@ -84,7 +84,7 @@ For more details, refer to the [Managing worker node group](/en/kubernetes/k8s/i
    
    {tab(kubectl)}
 
-   1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+   1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
    1. Check whether the [Cluster Autoscaler logs](/en/kubernetes/k8s/how-to-guides/autoscaler-logs) have warnings that contain `quota exceeded`. If they do, the project is out of quotas for the respective resources.
    
    {/tab}
@@ -101,7 +101,7 @@ For more details on quotas, refer to the [Quotas and limits](/en/tools-for-using
 
 {cut(Scheduler limitations: the pod has specific requirements and scheduling policies that none of the existing or potential new nodes can meet)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Check whether the [Cluster Autoscaler logs](/en/kubernetes/k8s/how-to-guides/autoscaler-logs) have warnings that contain `predicate failed`. If they do, the issue is due to the scheduling policies applied to the cluster.
 1. Display the manifest of the affected pod using the command:
 
@@ -120,7 +120,7 @@ For more details on labels, taints, and tolerations, refer to the [Labels and ta
 
 {cut(The pod is bound to a persistent volume in a different availability zone, which causes a conflict)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Display the manifest of the affected pod using the command:
 
    ```console
@@ -142,7 +142,7 @@ For more details on persistent volumes, refer to the [Persitent volumes and PVCs
 
 {cut(The pod requests more resources than any type of VM in the available node groups can provide)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Display the manifest of the affected pod using the command:
 
    ```console

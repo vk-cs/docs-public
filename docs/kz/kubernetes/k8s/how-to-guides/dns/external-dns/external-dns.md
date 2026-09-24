@@ -750,8 +750,6 @@ ExternalDNS осы VK Cloud пайдаланушысының деректеме�
       kubectl delete ns external-dns
       ```
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}
 
 1. `example.com` DNS-аймағын {linkto(../../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-delete)[text=жойыңыз]}.

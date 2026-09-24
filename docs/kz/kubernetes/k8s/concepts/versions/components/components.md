@@ -180,7 +180,7 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |0.43.0
 |0.43.0
 
-|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
 |0.48.5
 |0.34.2
 |0.34.2
@@ -293,7 +293,7 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 | ![](../../../../../assets/no.svg "inline")
 | ![](../../../../../assets/no.svg "inline")
 
-|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2

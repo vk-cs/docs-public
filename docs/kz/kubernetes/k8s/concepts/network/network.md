@@ -10,16 +10,9 @@
 
 ## {heading(Желілік ішкі жүйелермен жұмыс (CNI))[id=k8s-network-cni]}
 
-Managed Containers сервисінде кластер ішіндегі желіні ұйымдастыру үшін екі желілік ішкі жүйе (CNI, Container Network Interface) қолдау табады:
+Managed Containers сервисінде кластер ішіндегі желіні ұйымдастыру үшін [Calico](https://projectcalico.docs.tigera.io/about/about-calico) желілік ішкі жүйесі (CNI, Container Network Interface) қолдау табады. Calico стандартты желілік хаттамалар мен iptables көмегімен L3 деңгейінде желілік маршруттауды жүзеге асырады.
 
-- [Calico](https://projectcalico.docs.tigera.io/about/about-calico) стандартты желілік хаттамалар мен iptables көмегімен L3 деңгейінде желілік маршруттауды жүзеге асырады. Calico жақсы масштабталады және орташа және ірі кластерлер үшін оңтайлы түрде қолайлы.
-- [Cilium](https://docs.cilium.io/en/stable/index.html) желілік саясаттар мен маршруттауды iptables-ті айналып өтіп, тікелей ОЖ ядросында жүзеге асыру үшін eBPF (Linux eXpress Data Path) пайдаланады. Cilium L3, L4 және L7 деңгейлерінде (мысалы, HTTP-тақырыптары бойынша) трафикті сүзуді қолдайды, сондай-ақ кеңейтілген мониторинг мүмкіндіктерін ұсынады (мысалы, кірістірілген Hubble құралы арқылы). Cilium жоғары жүктемелі және микросервистік архитектуралары бар өте үлкен кластерлер үшін оңтайлы түрде қолайлы.
-
-  {note:info}
-  Cilium тек {linkto(/kz/kubernetes/k8s/concepts/cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін қолжетімді.
-  {/note}
-
-Екі CNI де VK Cloud платформасымен меншікті әзірленген {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} бағдарламалық-анықталатын желісі арқылы өзара әрекеттеседі. SDN Sprut желісін жобаңызға қосу үшін [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз.
+CNI VK Cloud платформасымен меншікті әзірленген {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} бағдарламалық-анықталатын желісі арқылы өзара әрекеттеседі. SDN Sprut желісін жобаңызға қосу үшін [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз.
 
 ## {heading(Жүктеме теңгергіштерімен интеграция)[id=k8s-network-loadbalancer-integration]}
 

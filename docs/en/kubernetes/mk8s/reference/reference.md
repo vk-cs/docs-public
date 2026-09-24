@@ -1,0 +1,1 @@
+A reference describing basic Kubernetes concepts and objects. For more information, see [official Kubernetes documentation](https://kubernetes.io/docs/home/).

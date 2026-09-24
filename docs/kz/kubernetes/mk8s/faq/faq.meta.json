@@ -1,0 +1,13 @@
+{
+  "title": "Сұрақтар мен жауаптар",
+  "shortDescription": "Managed Containers сервисі туралы жиі қойылатын сұрақтарға жауаптар",
+  "metaDescription": "Managed Containers сервисі туралы жиі қойылатын сұрақтарға жауаптар",
+  "sectionTitle": "Сұрақтар мен жауаптар",
+  "icon": "",
+  "weight": 11,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -6,7 +6,7 @@ Access control operations are available only to the following [roles](/en/access
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page.
 1. From the drop-down list, select **Manage access**.
 
@@ -22,7 +22,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, go to the tab **Roles**.
 
@@ -41,7 +41,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
 1. [Enable](/en/access/iam/instructions/manage-2fa) 2FA for your account, if it is not already enabled.
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, enable the option **Mandatory two-factor authentication**.
 
@@ -57,7 +57,7 @@ If the user enters the project by invitation, he does not need to confirm the ph
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, click **Add member**.
 1. Enter the email address of the member and select from the list the role you want to assign to him.
@@ -96,7 +96,7 @@ Only the project owner can assign another role to the superadministrator.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Edit**.
 1. In the window that opens, specify the list of new roles in the field **User role**.
@@ -133,7 +133,7 @@ Deleting these users will make the service inoperable.
 
 This is a group operation: if necessary, you can delete several members at once by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Delete**.
 1. Confirm the deletion.

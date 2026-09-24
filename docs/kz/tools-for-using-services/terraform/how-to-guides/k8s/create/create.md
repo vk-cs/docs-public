@@ -1,7 +1,7 @@
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Төменде Terraform көмегімен әртүрлі Kubernetes кластерлерін құру мысалдары келтірілген.
-Кластерді құру рәсімі [Terraform көмегімен кластер құру](/kz/kubernetes/k8s/instructions/create-cluster/create-terraform) бөлімінде егжей-тегжейлі сипатталған.
+Кластерді құру рәсімі [Terraform көмегімен кластер құру](/kz/kubernetes/mk8s/instructions/create-cluster/create-terraform) бөлімінде егжей-тегжейлі сипатталған.
 
 Параметрлердің толық сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) берілген.
 
@@ -11,7 +11,7 @@
 
    Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
-1. Managed Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/k8s/instructions/helpers/terraform-howto) танысыңыз.
+1. Managed Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/mk8s/instructions/helpers/terraform-howto) танысыңыз.
 
 1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
 
@@ -220,7 +220,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {tab(Docker Registry орнатумен)}
 
-[Сервисті](/kz/kubernetes/k8s/concepts/addons-and-settings/addons) орнатуға `vkcs_kubernetes_cluster` ресурсының `labels = { docker_registry_enabled }` баптауы жауап береді.
+[Сервисті](/kz/kubernetes/mk8s/concepts/addons-and-settings/addons) орнатуға `vkcs_kubernetes_cluster` ресурсының `labels = { docker_registry_enabled }` баптауы жауап береді.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {

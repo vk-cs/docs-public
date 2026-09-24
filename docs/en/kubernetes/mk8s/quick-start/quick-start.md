@@ -1,0 +1,767 @@
+Quickstart will help you get started with the service and become familiar with its features.
+
+After going through all the steps of the quickstart, you will:
+
+1. Create a small Kubernetes cluster.
+1. Learn how to connect to it.
+1. Become familiar with Kubernetes and [addons for it](/en/kubernetes/mk8s/concepts/addons-and-settings/addons):
+   1. Connect management and monitoring tools.
+   1. Load the Docker images into the Docker registry.
+   1. Deploy simple applications based on the downloaded images, with the ability to use VK Object Storage.
+   1. Provide access to the deployed applications using the Ingress controller.
+   1. Make sure that these applications actually work.
+
+{note:warn}
+
+A running Kubernetes cluster consumes computing resources.
+
+After completing a quickstart, stop or delete the cluster if you no longer need it.
+
+{/note}
+
+## {counter(step)}. Before you begin
+
+### 1.1. Create a cluster
+
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+1. If there are no clusters in the selected project yet, click **Create cluster**.
+
+   Otherwise, click **Add**.
+
+1. Select the **New generation** option and click the **Continue** button.
+
+1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/mk8s/concepts/versions/version-support).
+
+1. In the **Master nodes** block, click the **Set up** button and specify the following:
+
+   1. **Cluster name**: for example, `vk-cloud-k8s-quickstart`.
+   1. **Cluster type**: `Standard`.
+   1. **Availability zone:** `Moscow (MS1)`.
+
+      {note:info}
+
+      Configuration files for creating and configuring resources in the cluster are designed to use this zone.
+
+      If you choose another zone, adjust configuration files.
+
+      {/note}
+   
+   1. Leave the other settings unchanged.
+
+1. In the **Network and settings** block, click the **Set up** button and specify the following:
+
+   1. **Network:** `Create new network`.
+   1. **Assign external IP:** make sure this option is selected.
+   1. Leave the other settings unchanged.
+
+1. In the **Node group** block, click the **Set up** button and specify the following:
+
+   1. **Node type:** `STD3-4-8`.
+   1. **Availability zone:** `Moscow (MS1)`.
+
+      {note:info}
+
+      Configuration files for creating and configuring resources in the cluster are designed to use this zone.
+
+      If you choose another zone, adjust configuration files.
+
+      {/note}
+
+   1. Leave the other settings unchanged.
+
+1. Click the **Create** button.
+
+Wait for the cluster to complete, this process may take a while.
+
+### 1.2. Install add-ons in the cluster
+
+{note:warn}
+
+When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
+
+Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
+
+{/note}
+
+1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-registry) the `docker-registry` add-on.
+
+   Write down the data for accessing the Docker registry.
+
+1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) the `kube-prometheus-stack` add-on.
+
+   Write down the password to access the Grafana web interface.
+
+1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) the `ingress-nginx` add-on with default parameters.
+
+   Write down the floating IP address for the load balancer.
+
+Further, the following values will be used in the commands and configuration files for the example. Replace them with the ones that are relevant to you.
+
+| Parameter                                                   | Value                      |
+| ----------------------------------------------------------- | -------------------------- |
+| IP address of the load balancer<br>for the Ingress controller | `192.0.2.2`              |
+| URL of the Docker registry endpoint                         | `192.0.2.22:5000`          |
+| Login of the Docker registry user                           | `registry`                 |
+| Password of the Docker registry user                        | `registry-password-123456` |
+| The password of the user `admin` for Grafana                | `grafana-password-123456`  |
+
+### 1.3. Configure the environment to work with the cluster from
+
+Set up the host from which you will work with the cluster.
+This can be a real computer or a virtual machine.
+
+Install the following tools on the host:
+
+- A browser.
+- The `kubectl` utility. For the details, refer to [Connecting to cluster using kubectl](/en/kubernetes/mk8s/connect/kubectl) and the [official documentation](https://kubernetes.io/docs/tasks/tools/#kubectl).
+
+  {note:warn}
+
+  Download a version of `kubectl` that matches the version of the cluster, or differs by one minor version in any direction.
+
+  For example, versions 1.31, 1.32, and 1.33 of `kubectl` are compatible with cluster version 1.32.1.
+
+  {/note}
+
+- The `client-keystone-auth` utility. See [Connecting to cluster using kubectl](/en/kubernetes/mk8s/connect/kubectl) for details.
+- The [curl](https://curl.se/download.html) utility.
+- [Docker Engine](https://docs.docker.com/engine/install/):
+  - For Windows and macOS: Docker Desktop.
+  - For Linux, Docker Desktop is also recommended, but you can install and use Docker from the command line.
+
+### 1.4. Connect to the cluster
+
+1. Add the **Administrator Kubernetes** role in management console for the user on whose behalf the connection to the cluster will be performed:
+
+   1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/).
+   1. Select the project where the previously created cluster is located.
+   1. Go to **Manage access**.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required user and select **Edit**.
+   1. Select the **Kubernetes Administrator** role from the drop-down list.
+   1. Save your changes.
+
+1. [Activate API access](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access) for this user.
+
+1. Get kubeconfig for the cluster in [VK Cloud management console](https://msk.cloud.vk.com/app/):
+
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+   1. Find the required cluster in the list, then select **Get Kubeconfig to access the cluster** in its menu.
+
+1. Move kubeconfig to the `~/.kube` directory, so you don't have to specify additional arguments when using `kubectl`.
+
+   The commands below assume that kubeconfig has been downloaded into the `~/Downloads` directory under the name `mycluster_kubeconfig.yaml`.
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   mkdir ~/.kube && \
+   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   mkdir ~/.kube; `
+   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Specify the path to kubeconfig in the `$KUBECONFIG` environment variable:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+      ```console
+      export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
+      ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+      ```console
+      $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
+      ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Check that `kubectl` can connect to the cluster:
+
+   1. Run the command:
+
+      ```console
+      kubectl cluster-info
+      ```
+
+   1. Enter the user password from your VK Cloud account.
+
+   If the cluster works properly and `kubectl` is configured to work with it, similar information will be displayed:
+
+   ```text
+   Kubernetes control plane is running at...
+   CoreDNS is running at...
+
+   To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+   ```
+
+## {counter(step)}. Get access to cluster monitoring tools
+
+An add-on with [monitoring tools](/en/kubernetes/mk8s/monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled.
+
+1. In a separate terminal session, run the command:
+
+   ```console
+   kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+   ```
+
+   {note:warn}
+
+   - Do not close this session, or you will lose access to the Grafana web interface.
+   - If port `8001` is already in use by another application, adjust the command by specifying a free port.
+
+   {/note}
+
+1. Open the Grafana web interface:
+
+   1. In your browser, go to the URL `http://127.0.0.1:8001/`.
+   1. Authorize with the login/password pair `admin`/`grafana-password-123456`.
+   1. If a password change is requested, change it.
+
+1. Select **Dashboards → Browse** from the side menu of any pre-configured dashboard to get information about the cluster resources.
+
+## {counter(step)}. Upload the necessary images to the Docker registry
+
+The [Docker Registry add-on](/en/kubernetes/mk8s/connect/docker-registry) was installed in the cluster which will store the Docker images.
+
+{note:info}
+
+To best demonstrate the capabilities of the cluster, a special Docker image with the NGINX web server will be built next.
+The image is based on the [plaintext demo image](https://github.com/nginxinc/NGINX-Demos/tree/master/nginx-hello-nonroot) from NGINX.
+
+{/note}
+
+To put your own images in the Docker cluster registry:
+
+1. Add the Docker registry to the list of trusted registries:
+
+   1. Add the following parameter to the Docker `daemon.json` configuration file with the URL of the Docker registry endpoint:
+
+      ```json
+      {
+        ...
+
+        "insecure-registries": [
+          "192.0.2.22:5000"
+        ],
+
+        ...
+      }
+      ```
+
+      The location of this file for different Docker Engine installations is given in [official Docker documentation](https://docs.docker.com/config/daemon/#configure-the-docker-daemon).
+
+   1. Restart the Docker Engine.
+
+      {tabs}
+
+      {tab(Linux)}
+
+      Do one of the following:
+
+      - Run one of the commands to perform restart:
+
+        ```console
+        sudo systemd restart docker
+        ```
+
+        ```console
+        sudo service docker restart
+        ```
+
+      - [Restart the Docker Engine](https://docs.docker.com/desktop/settings/linux/#docker-engine) from the Docker Desktop GUI (if installed).
+
+      {/tab}
+
+      {tab(Windows)}
+
+      [Restart the Docker Engine](https://docs.docker.com/desktop/settings/windows/#docker-engine) from the Docker Desktop GUI.
+
+      {/tab}
+
+      {tab(macOS)}
+
+      [Restart the Docker Engine](https://docs.docker.com/desktop/settings/mac/#docker-engine) from the Docker Desktop GUI.
+
+      {/tab}
+
+      {/tabs}
+
+1. Build a Docker image:
+
+   1. Create a directory for the files and navigate to it:
+
+      {tabs}
+
+      {tab(Linux/macOS)}
+
+      ```console
+      mkdir ~/image-build && cd ~/image-build
+      ```
+
+      {/tab}
+
+      {tab(Windows)}
+
+      ```console
+      mkdir ~/image-build; cd ~/image-build
+      ```
+
+      {/tab}
+
+      {/tabs}
+
+   1. Place the following files in this directory:
+
+      {cut(Dockerfile)}
+
+      ```ini
+      FROM nginx:mainline-alpine
+
+      RUN chmod -R a+w /var/cache/nginx/ \
+              && touch /var/run/nginx.pid \
+              && chmod a+w /var/run/nginx.pid \
+              && rm /etc/nginx/conf.d/*
+
+      COPY nginx-config.conf /etc/nginx/conf.d/
+      USER nginx
+      ```
+
+      {/cut}
+
+      {cut(nginx-config.conf)}
+
+      ```ini
+      server {
+          listen 8080;
+
+          location / {
+
+              set $k8s_pv "not present";
+
+              if (-d /etc/nginx/k8s_demo_pv/) {
+                set $k8s_pv "present";
+              }
+
+              default_type text/plain;
+              expires -1;
+              return 200 'Server address: $server_addr:$server_port\nServer name: $hostname\nDate: $time_local\nURI: $request_uri\nRequest ID: $request_id\nRemote address (NGINX Ingress Controller): $remote_addr\nX-Forwarded-For (Request source): $http_x_forwarded_for\n\nK8S Persistent Volume status: $k8s_pv\n';
+          }
+      }
+      ```
+
+      {/cut}
+
+   1. Run the build process:
+
+      ```console
+      docker build . -t 192.0.2.22:5000/nginx-k8s-demo:latest
+      ```
+
+   Wait until the image build is complete.
+
+1. Place the built image in the Docker registry:
+
+   1. Sign in to the registry:
+
+      ```console
+      docker login 192.0.2.22:5000 --username registry --password registry-password-123456
+      ```
+
+   1. Push the image to the registry:
+
+      ```console
+      docker push 192.0.2.22:5000/nginx-k8s-demo:latest
+      ```
+
+   1. Check that the image is in the registry:
+
+      ```console
+      curl -k -X GET -u registry:registry-password-123456 https://192.0.2.22:5000/v2/_catalog
+      ```
+
+      Output should give you the similar information:
+
+      ```text
+      {"repositories":["nginx-k8s-demo"]}
+      ```
+
+   1. Create a Kubernetes secret so you can access the uploaded image from Kubernetes:
+
+      ```console
+      kubectl create secret docker-registry k8s-registry-creds --docker-server=192.0.2.22:5000 --docker-username=registry --docker-password=registry-password-123456
+      ```
+
+## {counter(step)}. Deploy demo applications
+
+Based on the `nginx-k8s-demo` image loaded in the Docker registry, two applications will be deployed: `tea` and `coffee`.
+For each of the applications the following will be created:
+
+- [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/), so that data volumes can be mounted inside the application.
+- [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/), in which will be set:
+  - Number of replicas.
+  - Volume to mount in pod.
+- [Service](https://kubernetes.io/docs/concepts/services-networking/service/) to provide access to the application. The Ingress controller will forward incoming requests to this Service.
+
+To deploy the applications:
+
+1. Create a directory for the files and navigate to it:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   mkdir ~/k8s-deployments && cd ~/k8s-deployments
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   mkdir ~/k8s-deployments; cd ~/k8s-deployments
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Place the following files in this directory:
+
+   {cut(deploy-coffee.yaml)}
+
+   ```yaml
+   kind: PersistentVolumeClaim
+   apiVersion: v1
+   metadata:
+     name: k8s-demo-pvc-coffee
+   spec:
+     storageClassName: "csi-ceph-hdd-ms1"
+     accessModes:
+       - ReadWriteOnce
+     resources:
+       requests:
+         storage: 1Gi
+
+   ---
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: coffee
+   spec:
+     replicas: 3
+     selector:
+       matchLabels:
+         app: coffee
+     template:
+       metadata:
+         labels:
+           app: coffee
+       spec:
+         volumes:
+           - name: k8s-pv-coffee
+             persistentVolumeClaim:
+               claimName: k8s-demo-pvc-coffee
+         imagePullSecrets:
+           - name: k8s-registry-creds
+         containers:
+           - name: coffee
+             image: 192.0.2.22:5000/nginx-k8s-demo:latest
+             imagePullPolicy: Always
+             ports:
+               - containerPort: 8080
+             volumeMounts:
+               - name: k8s-pv-coffee
+                 mountPath: /etc/nginx/k8s_demo_pv
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: coffee-svc
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       app: coffee
+   ```
+
+   {/cut}
+
+   {cut(deploy-tea.yaml)}
+
+   ```yaml
+   kind: PersistentVolumeClaim
+   apiVersion: v1
+   metadata:
+     name: k8s-demo-pvc-tea
+   spec:
+     storageClassName: "csi-ceph-hdd-ms1"
+     accessModes:
+       - ReadWriteOnce
+     resources:
+       requests:
+         storage: 1Gi
+
+   ---
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: tea
+   spec:
+     replicas: 2
+     selector:
+       matchLabels:
+         app: tea
+     template:
+       metadata:
+         labels:
+           app: tea
+       spec:
+         volumes:
+           - name: k8s-pv-tea
+             persistentVolumeClaim:
+               claimName: k8s-demo-pvc-tea
+         imagePullSecrets:
+           - name: k8s-registry-creds
+         containers:
+           - name: tea
+             image: 192.0.2.22:5000/nginx-k8s-demo:latest
+             imagePullPolicy: Always
+             ports:
+               - containerPort: 8080
+             volumeMounts:
+               - name: k8s-pv-tea
+                 mountPath: /etc/nginx/k8s_demo_pv
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: tea-svc
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       app: tea
+   ```
+
+   {/cut}
+
+   {note:warn}
+
+   Note that the configuration files `deploy-coffee.yaml` and `deploy-tea.yaml` for Persistent Volume Claim specify the storage class corresponding to the availability zone of the node (MS1) on which you plan to deploy applications.
+
+   Attempting to place an application on a node in one availability zone to which a volume from another availability zone is mounted will fail.
+
+   {/note}
+
+1. Deploy the applications:
+
+   ```console
+   kubectl apply -f deploy-coffee.yaml -f deploy-tea.yaml
+   ```
+
+1. Check if the deployment is correct for:
+
+   {tabs}
+
+   {tab(Persistent volumes)}
+
+   Use one of the ways:
+
+   - `kubectl`: run the command.
+
+     ```console
+     kubectl get pv
+     ```
+
+   - Grafana: open the **Kubernetes → Compute Resources → Persistent Volumes** dashboard.
+
+   You will see information that 1GB persistent volumes, that have been created with Persistent Volume Claim for deployments `tea` and `coffee`, are present.
+
+   {/tab}
+
+   {tab(Workloads)}
+
+   Use one of the ways:
+
+   - `kubectl`: run the command.
+
+     ```console
+     kubectl get deployment
+     ```
+
+   - Grafana: open the **Kubernetes → Compute Resources → Namespace (Workloads)** dashboard.
+
+   You will see that there is a deployment `coffee` of three pods, and a deployment `tea` of two pods.
+
+   {/tab}
+
+   {tab(Services)}
+
+   In `kubectl`, run the command: 
+
+     ```console
+     kubectl get svc
+     ```
+
+   You will see that there are two services `coffee-svc` and `tea-svc` of type `ClusterIP`.
+
+   {/tab}
+
+   {/tabs}
+
+## {counter(step)}. Configure Ingress for demo applications
+
+The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) add-on was installed in the cluster NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
+
+For Ingress controller to route requests to the corresponding Service resources, through which the `tea` and `coffee` demo applications were published, do the following:
+
+1. Place the following file in the `~/k8s-deployments` directory:
+
+   {cut(deploy-ingress.yaml)}
+
+   ```yaml
+   apiVersion: networking.k8s.io/v1
+   kind: Ingress
+   metadata:
+     name: cafe-ingress
+   spec:
+     ingressClassName: nginx
+     rules:
+       - host: cafe.example.com
+         http:
+           paths:
+             - path: /tea
+               pathType: Prefix
+               backend:
+                 service:
+                   name: tea-svc
+                   port:
+                     number: 80
+             - path: /coffee
+               pathType: Prefix
+               backend:
+                 service:
+                   name: coffee-svc
+                   port:
+                     number: 80
+   ```
+
+   {/cut}
+
+1. Deploy the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) resource:
+
+   ```console
+   kubectl apply -f deploy-ingress.yaml
+   ```
+
+1. Check if the deployment is correct by running the following `kubectl` command:
+
+   ```console
+   kubectl get ingress
+   ```
+
+   You will see information that there is a working Ingress resource.
+
+## {counter(step)}. Check that all the created resources in the cluster are working
+
+To verify that the example is working, run `curl` requests to the IP address `192.0.2.2` of the load balancer. The Ingress controller associated with the load balancer will then deliver these requests to the appropriate applications.
+
+Requests for:
+
+{tabs}
+
+{tab(The tea application)}
+
+```console
+curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/tea
+```
+
+Output should give you the similar information:
+
+```text
+Server address: 10.100.109.3:8080
+Server name: tea-8697dc7b86-s5vgn
+Date: 24/Aug/2022:09:27:34 +0000
+URI: /tea
+Request ID: ed83bd555afd25c103bfa05ee12cbfff
+Remote address (NGINX Ingress Controller): <IP address of Ingress controller>
+X-Forwarded-For (Request source): <IP address of host that sourced the request>
+
+K8S Persistent Volume status: present
+```
+
+{/tab}
+
+{tab(The coffee application)}
+
+```console
+curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
+```
+
+IP address
+
+```text
+Server address: 10.100.109.0:8080
+Server name: coffee-5f48899848-4q97z
+Date: 24/Aug/2022:09:35:57 +0000
+URI: /coffee
+Request ID: 35e93a2538be8843c1c1fcd65b5aac4c
+Remote address (NGINX Ingress Controller): <IP address of Ingress controller>
+X-Forwarded-For (Request source): <IP address of host that sourced the request>
+
+K8S Persistent Volume status: present
+```
+
+{/tab}
+
+{/tabs}
+
+This result demonstrates that:
+
+1. You can run applications using Docker images from the Docker cluster registry.
+1. You can mount storage to pods using Persistent Volume Claim.
+1. The Ingress controller provided with the cluster is configured correctly because it shows the real IP address of the request source.
+
+## Delete unused resources
+
+A running cluster consumes computing resources. If you no longer need it:
+
+- [stop](/en/kubernetes/mk8s/instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+- [delete](/en/kubernetes/mk8s/instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.
+
+## What's next?
+
+- [Get to know the usage scenarios](/en/kubernetes/mk8s/how-to-guides) of the cluster.
+- [Get to know the concepts](/en/kubernetes/mk8s/concepts) of the container service.
+- [Get to know the detailed instructions](/en/kubernetes/mk8s/connect) on how to connect to the cluster.

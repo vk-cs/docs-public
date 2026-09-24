@@ -90,8 +90,6 @@
       kubectl run -it --rm dns-test --image=busybox:1.28 --restart=Never -- nslookup myhost.com
       ```
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-coredns-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

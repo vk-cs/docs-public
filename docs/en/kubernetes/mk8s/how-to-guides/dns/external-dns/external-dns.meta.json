@@ -1,0 +1,13 @@
+{
+  "title": "Installing and using ExternalDNS",
+  "shortDescription": "How to install ExternalDNS integrated with the VK Cloud DNS and use this tool in a cluster.",
+  "metaDescription": "How to install ExternalDNS integrated with the VK Cloud DNS and use this tool in a cluster.",
+  "sectionTitle": "Installing and using ExternalDNS",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

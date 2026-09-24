@@ -210,6 +210,4 @@ VK Cloud Kubernetes кластерлерінің 1.23 және одан жоға
 
    {/tabs}
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

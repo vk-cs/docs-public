@@ -3,7 +3,7 @@ Follow the steps on the host from which you plan to connect to the cluster:
 
 1. Upload the cluster configuration file:
 
-    1. [Go to](https://msk.cloud.vk.com/app/) to your VK Cloud management console under the account of the user who will connect to the cluster.
+    1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console under the account of the user who will connect to the cluster.
     1. Select the project where the cluster you need is located.
     1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
     1. Click ![ ](/en/assets/more-icon.svg "inline") for the cluster and select **Get Kubeconfig to access the cluster**.

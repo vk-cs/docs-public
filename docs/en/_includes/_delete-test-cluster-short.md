@@ -1,1 +1,1 @@
-1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) the cluster you created to use it later or [delete](/en/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.
+1. [Stop](/en/kubernetes/mk8s/instructions/manage-cluster#stop) the cluster you created to use it later or [delete](/en/kubernetes/mk8s/instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.

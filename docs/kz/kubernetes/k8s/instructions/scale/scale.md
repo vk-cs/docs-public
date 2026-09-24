@@ -6,7 +6,7 @@
 
 ## {heading(Тік масштабтау)[id=k8s-instructions-scale-vertical]}
 
-Масштабтаудың бұл түрі master-түйіндерге және worker-түйіндер топтарына қолданылады. Масштабтау барысында кластер түйіндері үшін {linkto(../../concepts/flavors#k8s-flavors)[text=виртуалды машиналар шаблондары]} өзгереді, ал түйіндер саны өзгеріссіз қалады. Егер топтағы worker-түйіндер санын өзгерту қажет болса, {linkto(k8s-instructions-scale-horizontal)[text=көлденең масштабтауды орындаңыз]}.
+Масштабтаудың бұл түрі master-түйіндерге және worker-түйіндер топтарына қолданылады. Масштабтау барысында кластер түйіндері үшін {linkto(../../concepts/flavors#k8s-flavors)[text=виртуалды машиналар шаблондары]} өзгереді, ал түйіндер саны өзгеріссіз қалады. Егер топтағы worker-түйіндер санын өзгерту қажет болса, {linkto(#k8s-instructions-scale-horizontal)[text=көлденең масштабтауды орындаңыз]}.
 
 ### {heading(Master-түйіндерді масштабтау)[id=k8s-instructions-scale-vertical-master-nodes]}
 
@@ -49,10 +49,6 @@
 
    {tab(Terraform)}
 
-   {note:info}
-   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-   {/note}
- 
    1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобаға {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
@@ -120,7 +116,7 @@
    1. Егер есептеу ресурстарының көлемін азайтуды жоспарласаңыз, worker-түйіндер тобындағы ресурстардың қорытынды көлемі жұмыс жүктемесін орналастыру үшін жеткілікті болатынына көз жеткізіңіз.
    1. Жұмыс жүктемесі үшін репликация бапталғанына және репликалар түйіндер тобындағы бірнеше worker-түйінге бөлінгеніне көз жеткізіңіз.
 
-      Егер түйіндер тобында тек бір ғана worker-түйін болса, {linkto(k8s-instructions-scale-horizontal)[text=топтағы түйіндер санын арттырыңыз]} және мүмкін болса, репликацияны баптаңыз.
+      Егер түйіндер тобында тек бір ғана worker-түйін болса, {linkto(#k8s-instructions-scale-horizontal)[text=топтағы түйіндер санын арттырыңыз]} және мүмкін болса, репликацияны баптаңыз.
 
 1. Масштабтауды орындаңыз.
 
@@ -159,9 +155,6 @@
 
    {tab(Terraform)}
    
-   {note:info}
-   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-   {/note}
 
    1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобаға {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
@@ -253,10 +246,6 @@
 
    {tab(Terraform)}
 
-   {note:info}
-   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-   {/note}
-
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Қажетті кластердің іске қосылғанына көз жеткізіңіз]}.
@@ -332,10 +321,6 @@
    {/tab}
 
    {tab(Terraform)}
-
-   {note:info}
-   Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-   {/note}
 
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../tools-for-using-services/terraform/quick-start).
 

@@ -15,7 +15,7 @@ As a result, the user will be able to [sign in the JupyterHub instance](../conne
 
 ## {heading(Changing virtual machine type)[id=change-vm-type]}
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Change virtual machine type**.
 1. In the window that opens, select a virtual machine category to filter the list of VM flavors. More details in the [review of the Cloud Servers service](/en/computing/iaas/concepts/about#flavors).
@@ -24,7 +24,7 @@ As a result, the user will be able to [sign in the JupyterHub instance](../conne
 
 ## {heading(Changing disk size)[id=change-disk-size]}
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Change disk size**.
 1. In the window that opens, change the disk size. The minimum value is 50 GB.
@@ -36,7 +36,7 @@ The option allows you to add an S3 bucket to the instance to store data in it. T
 
 To connect an VK Object Storage bucket to an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Connect S3 bucket as disk**.
 1. In the window that opens, select the bucket that you want to connect to the instance. If there are no suitable buckets, select **Create a new bucket** — a new VK Object Storage bucket will be created and connected to the instance.
@@ -48,7 +48,7 @@ This is a group operation: if necessary, you can stop or start several instances
 
 To stop an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Stop the instance in one of the following ways:
 
@@ -58,7 +58,7 @@ To stop an instance:
 
 To launch an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Launch the instance in one of the following ways:
 
@@ -78,7 +78,7 @@ A reboot assumes a graceful shutdown of the operating system of the VM instance.
 
 To reboot an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Reboot the instance in one of the following ways:
 
@@ -98,7 +98,7 @@ A forced instance reboot corresponds to power cycling. Unsaved data may be lost.
 
 To force reboot an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Force reboot**.
 1. Confirm the action.
@@ -109,7 +109,7 @@ You can share the instance link with other users. Using this link, users will be
 
 To share a link to an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Copy link to JH**.
 
@@ -121,7 +121,7 @@ Shared folders allow you to quickly share files with other users. The user who u
 
 To share a file with other instance users:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click the link in the **DNS-имя** column for the instance you need.
 1. Sign in the instance.
@@ -131,7 +131,7 @@ To share a file with other instance users:
 
 This is a group operation: if necessary, you can delete several instances at once by selecting them with checkboxes.
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Delete the instance in one of the following ways:
 

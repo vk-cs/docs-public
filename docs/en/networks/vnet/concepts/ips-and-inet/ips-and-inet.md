@@ -224,4 +224,4 @@ To use the technology for creating a Kubernetes cluster:
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) to connect Shadow port to your project.
 1. [Enable](../../instructions/net#creating_network) the **Access to VK Cloud services** option for a network without internet access.
-1. [Locate](/en/kubernetes/k8s/instructions/create-cluster) the cluster on this network.
+1. [Locate](/en/kubernetes/mk8s/instructions/create-cluster) the cluster on this network.

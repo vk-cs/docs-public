@@ -10,7 +10,7 @@ At the top of the management console page, [the payment account balance and the 
 
 To see details and costs of services:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 {include(/en/_includes/_balance_page.md)}
 
 {note:info}
@@ -25,7 +25,7 @@ It is possible to credit funds to the [payment account balance](../../concepts/b
 
 To make a payment:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Open the balance top-up window by using one of the options:
    1. Hover over the ![balance](/en/intro/billing/assets/balance.svg "inline")  icon in the page header and click the **Make a payment** button.
    1. Go to the **Balance** page by clicking ![balance](/en/intro/billing/assets/balance.svg "inline") in the page header and click the **Make a payment** button.
@@ -59,7 +59,7 @@ You can set up a monthly expenses limit for each of your projects. When an expen
 
 To set up an expenses limitation and notifications:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 
 {include(/en/_includes/_balance_page.md)}
 

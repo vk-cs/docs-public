@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Logging (logaas-integration) үшін Fluent Bit",
+  "shortDescription": "",
+  "metaDescription": "Cloud logging (logaas-integration) үшін Fluent bit қосымшасын Managed Containers қызметінде қалай орнатуға және конфигурациялауға болатындығын біліңіз",
+  "sectionTitle": "Cloud Logging (logaas-integration) үшін Fluent Bit",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "8e0fb5d7-eec5-4591-b03b-fa14ca0e345a"
+}

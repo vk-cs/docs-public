@@ -4,7 +4,7 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:
@@ -22,7 +22,7 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:
@@ -40,7 +40,7 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Click the name of the desired cluster.
@@ -53,7 +53,7 @@
 
 {note:warn}The virtual machine type can only be changed when the cluster is running.{/note}
 
-The process is described in detail in the [Cluster Node Scaling](/en/kubernetes/k8s/concepts/scale) section.
+The process is described in detail in the [Cluster Node Scaling](/en/kubernetes/mk8s/concepts/scale) section.
 
 ## Connecting to a cluster
 
@@ -67,7 +67,7 @@ To connect to the cluster, use access tokens in the VK Cloud management console 
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:

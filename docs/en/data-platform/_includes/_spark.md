@@ -2,7 +2,7 @@
 
 Apache Spark is a service for distributed processing of large data. It consists of API interfaces for Java, Scala, Python, and R, as well as processing tools [Spark SQL](https://spark.apache.org/docs/latest/sql-programming-guide.html) for SQL, [Pandas API](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html), [MLlib](https://spark.apache.org/docs/latest/ml-guide.html) for machine learning, [GraphX](https://spark.apache.org/docs/latest/graphx-programming-guide.html) for graph processing, and [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) for stream processing. Most often, Spark is used as part of a Hadoop cluster.
 
-Cloud Spark is a solution based on [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) and [PaaS Kubernetes](/ru/kubernetes/k8s) from {var(cloud)}. It allows you to deploy Spark inside Kubernetes using an image from Docker Registry, without using a Hadoop cluster.
+Cloud Spark is a solution based on [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) and [Managed Containers](/en/kubernetes/mk8s) from {var(cloud)}. It allows you to deploy Spark inside Kubernetes using an image from Docker Registry, without using a Hadoop cluster.
 
 ## {heading(When to use this service)[id=use_cases]}
 

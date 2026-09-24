@@ -3217,7 +3217,7 @@
   },
   {
     "source": "/en/base/k8s/k8s-start",
-    "destination": "/en/kubernetes/k8s/quick-start",
+    "destination": "/en/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -15049,7 +15049,7 @@
   },
   {
     "source": "/en/base/k8s/quickstart",
-    "destination": "/en/kubernetes/k8s/quick-start",
+    "destination": "/en/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -15133,7 +15133,7 @@
   },
   {
     "source": "/en/base/k8s/operations/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -15145,7 +15145,7 @@
   },
   {
     "source": "/en/base/k8s/operations/addons/advanced-installation/install-advanced-istio",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-istio-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -23047,7 +23047,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/quickstart",
-    "destination": "/en/kubernetes/k8s/quick-start",
+    "destination": "/en/kubernetes/mk8s/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -23137,7 +23137,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -23149,7 +23149,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-istio",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-istio-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -31417,7 +31417,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -31429,7 +31429,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-istio-mk8s",
     "permanent": false,
     "locale": false
   },
@@ -33649,7 +33649,7 @@
   },
   {
     "source": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2",
-    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-mk8s",
+    "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
     "locale": false
   },

@@ -1,0 +1,13 @@
+{
+  "title": "Ingress NGINX",
+  "shortDescription": "",
+  "metaDescription": "Configuring and installing the Ingress controller add-on",
+  "sectionTitle": "Ingress NGINX",
+  "icon": "",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,1 +1,1 @@
-Working with VK Cloud management console.
+Working with the VK Cloud management console.

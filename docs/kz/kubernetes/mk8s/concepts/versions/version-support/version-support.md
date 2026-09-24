@@ -1,0 +1,312 @@
+# {heading(Kubernetes нұсқаларын қолдау саясаты)[id=mk8s-version-support]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
+
+Қазіргі уақытта VK Cloud жүйесіндегі Kubernetes aaS сервисінде Kubernetes-тің келесі нұсқалары қолжетімді:
+
+- 1.35.6
+- 1.34.2
+- 1.33.3
+- 1.32.1
+- 1.31.4
+
+{linkto(../../../instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=Жаңа кластерді құру]} кезінде Kubernetes-тің соңғы қолжетімді нұсқасын таңдаңыз. Мүмкіндік болса, {linkto(../../../instructions/update#mk8s-update)[text=қолданыстағы кластерлерді]} соңғы қолжетімді нұсқаға дейін жаңартыңыз.
+
+Егер кластер Kubernetes-тің ескірген нұсқасын пайдаланса, оның дұрыс жұмысына кепілдік берілмейді. Қандай да бір мәселелер туындаған жағдайда техникалық қолдау қызметі оларды шешуге көмектесе алмайды.
+
+## {heading(Kubernetes нұсқаларын қолдау)[id=mk8s-version-support-list]}
+
+Kubernetes нұсқалары VK Cloud жүйесіндегі Kubernetes aaS сервисінде релиз күні шыққан сәттен бастап 14 ай бойы қолдау көрсетіледі.
+
+Kubernetes нұсқасын қолдау тоқтатылғанға дейін 30 күн бұрын пайдаланушылар бұл туралы электрондық пошта арқылы және жеке кабинеттегі хабарландырулар орталығында хабарлама алады.
+
+[cols="1,1,1,1", options="header"]
+|===
+|Kubernetes нұсқасы
+|Ресми релиз күні
+|VK релизіндегі Kubernetes aaS
+|VK релизіндегі Kubernetes aaS қолдауының аяқталуы
+
+|1.35.6
+|17.12.2025
+|27.08.2026
+|27.10.2027
+
+|1.34.2
+|27.08.2025
+|10.02.2026
+|10.11.2026
+
+|1.33.x
+|15.05.2025
+|20.10.2025
+|20.12.2026
+
+|1.32.x
+|12.12.2024
+|28.05.2025
+|28.07.2026
+
+|1.31.x
+|10.12.2024
+|17.02.2025
+|17.04.2026
+|===
+
+{cut(Алдыңғы нұсқалар)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Kubernetes нұсқасы
+|Ресми релиз күні
+|VK релизіндегі Kubernetes aaS
+|VK релизіндегі Kubernetes aaS қолдауының аяқталуы
+
+|1.30.x
+|10.09.2024
+|10.12.2024
+|10.02.2026
+
+| 1.29.x
+| 17.07.2024
+| 30.08.2024
+| 30.10.2025
+
+| 1.28.x
+| 16.04.2024
+| 30.06.2024
+| 30.08.2025
+
+| 1.27.x  
+| 13.09.2023
+| 11.12.2023
+| 11.02.2025
+
+| 1.26.x  
+| 17 мая 2023
+| 14.08.2023
+| 17.10.2024
+
+| 1.25.x  
+| 17.05.2023
+| 14.06.2023
+| 14.08.2024
+
+| 1.24.x  
+| 8.12.2022  
+| 06.03.2023
+| 06.05.2024
+
+| 1.23.x  
+| 13.04.2022  
+| 15.08.2022
+| 15.10.2023
+
+| 1.22.x  
+| 19.01.022  
+| 18.02.2022
+| 18.04.2023
+
+| 1.21.4  
+| 8 апреля 2021
+| 12.10.2021
+| 12.12.2022
+
+| 1.20.4  
+| 8.12.2020  
+| 01.03.2021
+| 01.05.2022
+
+| 1.19.4
+| 26.08.2020
+| 23.12.2020
+| 23.02.2022
+
+| 1.18.12
+| 23.03.2020
+| 23.12.2020
+| 23.02.2022
+
+| 1.17.8  
+| 9.12.2019  
+| 09.08.2020
+| 09.12.2021
+|===
+
+{/cut}
+
+Нұсқалар өзгерістерінің тарихын {linkto(#mk8s-version-support-version-history)[text=Kubernetes нұсқаларының тарихы]} бөлімінен көруге болады.
+
+## {heading(Kubernetes нұсқаларында сервис функцияларын қолдау)[id=mk8s-version-support-features-list]}
+
+Жаңа функциялар функция мен нұсқаның үйлесімсіздігі жағдайларын қоспағанда, Kubernetes-тің барлық нұсқаларына қосылады.
+
+[cols="2,1,1,1,1", options="header"]
+|===
+|Атауы
+|1.35.х–1.27.x
+|1.26.x–1.24.x
+|1.23.x–1.21.4
+|1.20.x–1.17.x
+
+|Тораптар топтарын масштабтау баптаулары
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Кілттік жұпты жарамсыз ету
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Prometheus дискінің өлшемін өзгерту
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Master виртуалды машинасының түрін өзгерту
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Кластер нұсқасын жаңарту
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|Белгілер мен шектеулер
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+
+|AlmaLinux жүйесіндегі кластер тораптары
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|VK Cloud бұлтының IAM-пен интеграциясы
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|Кластердің master-тораптарын автоматты масштабтау
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|GPU қолдауы
+|![](../../../../../assets/check.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|===
+
+## {heading(Kubernetes нұсқаларының тарихы)[id=mk8s-version-support-version-history]}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes нұсқасы
+|Kubernetes-тегі өзгерістер
+|Kubernetes aaS сервисіндегі өзгерістер
+
+|1.35.6
+|[Kubernetes v1.35: Timbernetes](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/)
+|Обновление пакетов:
+
+- CoreDNS 1.14.6 нұсқасына жаңартылды..
+- Helm3.21.3 нұсқасына жаңартылды..
+- Metrics Server 0.9.0 нұсқасына жаңартылды.
+
+|1.34.2
+|[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.33.1
+|[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
+|Пакеттерді жаңарту:
+
+- CoreDNS 1.12.3 нұсқасына жаңартылды.
+- Calico 3.30.2 нұсқасына жаңартылды.
+- Helm 3.18.4 нұсқасына жаңартылды
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Kubernetes кластерлерінде {linkto(../../../how-to-guides/gpu-operator#mk8s-gpu-operator)[text=GPU пайдалануға және оны басқаруға]} мүмкіндік қосылды
+
+|===
+
+{cut(Алдыңғы нұсқалар)}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes нұсқасы
+|Kubernetes-тегі өзгерістер
+|Kubernetes aaS сервисіндегі өзгерістер
+
+|1.30.5
+|[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.29.7
+|[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.28.9
+|[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.27.6
+|[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
+|Кластердің master-тораптарын {linkto(../../scale#mk8s-scale-autoscaling)[text=автоматты масштабтау]} іске асырылды
+
+|1.26.5
+|[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
+|Пакеттерді жаңарту:
+
+- Calico 3.26.1 нұсқасына жаңартылды.
+- Helm 3.12.2 нұсқасына жаңартылды.
+- Gatekeeper 3.12.0 нұсқасына жаңартылды
+
+|1.25.1
+|[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.24.9
+|[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
+|Calico 3.25.0 нұсқасына жаңартылды
+
+|1.23.6
+|[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
+|{linkto(../../access-management#mk8s-access-management)[text=VK Cloud бұлтының IAM-пен интеграциясы]} қосылды
+
+|1.22.6
+|[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
+|Кластер тораптарында [AlmaLinux](https://wiki.almalinux.org) 9-нұсқадағы операциялық жүйесі пайдаланылады.
+
+Әдепкі бойынша аттар кеңістіктері (namespace) үшін тұтынылатын есептеу ресурстарына ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) шектеу орнатылады
+
+|1.21.4
+|[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
+|Кластер тораптарында [AlmaLinux](https://wiki.almalinux.org) 8-нұсқадағы операциялық жүйесі пайдаланылады
+
+|1.20.4
+|[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+|Кластердің [орындау ортасы](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) [CRI-O](https://cri-o.io/) ортасына ауыстырылды.
+
+[Логтарды сақтау пішімі](../../../../../cases/cases-logs/case-fluent-bit) өзгертілді
+
+|===
+{/cut}

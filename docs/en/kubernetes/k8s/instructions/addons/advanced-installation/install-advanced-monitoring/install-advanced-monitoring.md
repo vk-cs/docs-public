@@ -1,10 +1,10 @@
-## {heading(Preparatory steps)[id=prep]}
+## {heading(Before you begin)[id=prep]}
 
 {include(/en/_includes/_addon-prep.md)}
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+[Several installation options](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
 {tabs}
 
@@ -16,12 +16,11 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
@@ -46,7 +45,7 @@
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Create a Terraform configuration file with data about the add-on being installed in the `vkcs_kubernetes_addon` block:
 
-      - [Get](../../manage-addons#addons_available_for_installation) list of add-ons available for installation.
+      - [Get](/en/kubernetes/k8s/instructions/addons/manage-addons#addons_available_for_installation) list of add-ons available for installation.
       - Get the add-on settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
       - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the required values.
 
@@ -103,16 +102,16 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
    1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
-      If there is no such group — [add it](../../../manage-node-group#add_group).
+      If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
-   1. [Customise](../../../manage-node-group#labels_taints) for this node group, if it hasn't already been done:
+   1. [Customise](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
@@ -127,12 +126,11 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
@@ -226,12 +224,11 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
@@ -291,11 +288,11 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-2. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+2. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 3. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-4. Click on the name of the required cluster.
-5. Go to **Addons** tab.
+4. Click the name of the required cluster.
+5. Go to the **Addons** tab.
 6. Click ![ ](/en/assets/more-icon.svg "inline") for the `kube-prometheus-stack` add-on and select **Change Prometheus disk size**.
 7. Set the required disk size. The operation works only in the direction of increase.
 8. Click the **Confirm** button.
@@ -318,7 +315,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 {tab(Kubernetes Dashboard)}
 
-1. [Connect to the cluster](../../../../connect/k8s-dashboard) via Kubernetes Dashboard.
+1. [Connect to the cluster](/en/kubernetes/k8s/connect/k8s-dashboard) via Kubernetes Dashboard.
 1. In the drop-down list next to the left of the search bar, select a namespace `prometheus-monitoring`.
 1. Go to **Config and Storage → Secrets**.
 1. Find `kube-prometheus-stack-grafana` in the list of secrets and click on the secret name.
@@ -330,7 +327,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 {tab(kubectl)}
 
-1. [Make sure](../../../../connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
 
 1. Get the password to sign in to Grafana from the Kubernetes secret:
 

@@ -1,10 +1,10 @@
-Description of how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster using Terraform is provided below. It is also possible to create a first-generation cluster [via VK Cloud management console](../create-webui).
+Description of how to create a cluster using Terraform is provided below. You can also create a cluster [via the VK Cloud management console](/en/kubernetes/k8s/instructions/create-cluster/create-webui).
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 
 {note:warn}
 
-When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](../../../concepts/addons-and-settings/addons) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
+When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](/en/kubernetes/k8s/concepts/addons-and-settings/addons) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
@@ -16,7 +16,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
 
-1. Read about [Terraform features](../../helpers/terraform-howto) in the container service.
+1. Read about [Terraform features](/en/kubernetes/k8s/instructions/helpers/terraform-howto) in the container service.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
@@ -30,7 +30,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    {/note}
 
-## 1. Prepare the necessary data sources
+## {counter(terraform)}. Prepare the necessary data sources
 
 1. Determine what type of virtual machine will be used for the cluster master nodes:
 
@@ -74,7 +74,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 1. Add data sources to the configuration file:
 
-   1. [Virtual machine template](../../../concepts/flavors#configuration_templates) for master nodes. Example:
+   1. [Virtual machine template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes. Example:
 
       ```hcl
       data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -94,7 +94,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
       As a version, specify the version number obtained earlier.
 
-## 2. Describe the cluster configuration
+## {counter(terraform)}. Describe the cluster configuration
 
 Add the cluster resource to the configuration file:
 
@@ -120,8 +120,8 @@ Here:
   - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). Fault tolerance is provided at the zone level.
   - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
-- `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture) section.
-- `cluster_node_volume_type` — the volume type for [storage](../../../concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
+- `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](/en/kubernetes/k8s/concepts/architecture) section.
+- `cluster_node_volume_type` — the volume type for [storage](/en/kubernetes/k8s/concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
 - `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `PA2`.
 
    {note:info}
@@ -218,9 +218,9 @@ Here:
   - `true` — when the cluster is created, a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) will be assigned to access the cluster from the Internet. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
   - `false` — the cluster will not be assigned a floating IP address.
 
-To install add-ons in the cluster via Terraform, [get the list of availible add-ons](../../addons/manage-addons#348-tabpanel-1) and [install that you need](../../addons/advanced-installation).
+To install add-ons in the cluster via Terraform, [get the list of availible add-ons](/en/kubernetes/k8s/instructions/addons/manage-addons#348-tabpanel-1) and [install that you need](/en/kubernetes/k8s/instructions/addons/advanced-installation).
 
-## 3. Describe the configuration of one or more worker node groups
+## {counter(terraform)}. Describe the configuration of one or more worker node groups
 
 {note:info}
 
@@ -229,9 +229,9 @@ You can use Terraform to create a cluster of master nodes only, and add worker n
 
 {/note}
 
-This operation is described in detail in [Worker node group management](../../manage-node-group).
+This operation is described in detail in [Worker node group management](/en/kubernetes/k8s/instructions/manage-node-group).
 
-## 4. Run the cluster creation procedure
+## {counter(terraform)}. Run the cluster creation procedure
 
 1. Check the Terraform configuration file for correctness:
 
@@ -255,6 +255,6 @@ This operation is described in detail in [Worker node group management](../../ma
 
 ## What's next?
 
-- [Set up the environment](../../../connect) on the host from which you plan to connect to the cluster.
-- [Familiarize yourself with the usage scenarios](../../../how-to-guides) of the cluster.
-- [Familiarize yourself with the concepts](../../../concepts) of the container service.
+- [Set up the environment](/en/kubernetes/k8s/connect) on the host from which you plan to connect to the cluster.
+- [Familiarize yourself with the usage scenarios](/en/kubernetes/k8s/how-to-guides) of the cluster.
+- [Familiarize yourself with the concepts](/en/kubernetes/k8s/concepts) of the container service.

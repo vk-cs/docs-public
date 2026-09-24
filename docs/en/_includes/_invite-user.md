@@ -2,7 +2,7 @@ You can invite both a user who already has a VK Cloud account and an unregistere
 
 If a user joins a project by invitation, they do not need to confirm their phone number or link a card.
 
-1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Click the user name in the page header, and select **Access management** from the drop-down list.
 1. On the access management page, click **Add participant**.
 1. Enter the participant's email and select from the list the {linkto(/ru/access/iam/concepts/roles-reference#iam-roles-reference)[text=role]} or {linkto(/ru/access/iam/concepts/permissions-reference#iam-permissions-reference)[text=permission]} that you want to assign to them.

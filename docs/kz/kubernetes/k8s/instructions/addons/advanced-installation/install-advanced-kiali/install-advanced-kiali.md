@@ -2,14 +2,10 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{note:info}
-Бұл аддон тек {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-{/note}
-
 ## {heading(Дайындық қадамдары)[id=k8s-install-advanced-kiali-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
-1. {linkto(../install-advanced-istio#k8s-install-advanced-istio)[text=`istio` аддонын орнатыңыз]}.
+1. {linkto(../install-advanced-istio-magnum#k8s-install-advanced-istio-magnum)[text=`istio` аддонын орнатыңыз]}.
 
 ## {heading(Аддонды орнату)[id=k8s-install-advanced-kiali-install]}
 

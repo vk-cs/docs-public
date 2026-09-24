@@ -221,7 +221,7 @@ The way to connect to the cluster depends on its IP address:
 
    {/tabs}
 
-1. Prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
+1. Prepare everything you need to connect using [Single Sign-On (SSO)](/en/kubernetes/k8s/concepts/access-management).
 
    1. On the host from which you plan to connect to the cluster, install `client-keystone-auth` if the plugin is not already installed:
 
@@ -250,7 +250,7 @@ On the host:
 
 1. Enter the user's password for the VK Cloud account.
 
-   This is necessary for [authentication](../../concepts/access-management) when connecting to the cluster.
+   This is necessary for [authentication](/en/kubernetes/k8s/concepts/access-management) when connecting to the cluster.
 
 {/tab}
 

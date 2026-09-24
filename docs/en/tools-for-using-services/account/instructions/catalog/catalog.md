@@ -2,7 +2,7 @@ All services and features of the VK Cloud platform are collected in a single cat
 
 To quickly find the service or software product and start using it:
 
-1. [Go](https://msk.cloud.vk.com/app/) to your VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 
 1. On the main page, click the **Create resource** or **All features** button.
 

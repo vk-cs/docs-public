@@ -2,13 +2,13 @@
 
 For more details on Cluster Autoscaler and how to use it, refer to its [official documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md). 
 
-## {heading(Preparatory steps)[id=prepare]}
+## {heading(Before you begin)[id=prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
-1. [Install and configure](../../connect/kubectl) `kubectl` if not done so already.
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Install and configure](/en/kubernetes/k8s/connect/kubectl) `kubectl` if not done so already.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 
-## {heading(1. Identify Cluster Autoscaler pod)[id=review]}
+## {heading({counter(log)}. Identify Cluster Autoscaler pod)[id=review]}
 
 To identify which pod is the Cluster Autoscaler pod, use one of the following methods and search for the pod with the name that contains `cluster-autoscaler`:
 
@@ -32,7 +32,7 @@ View the list of pods in the cluster in the `kube-system` namespace using the co
 
 {/tabs}
 
-## 2. Review Cluster Autoscaler logs
+## {counter(log)}. Review Cluster Autoscaler logs
 
 Run the command: 
 
@@ -46,7 +46,7 @@ To monitor the logs in real time, add the `-f` option before the pod name:
 kubectl logs -f <POD_NAME> -n kube-system
 ```
 
-## 3. Review cluster events
+## {counter(log)}. Review cluster events
 
 1. Get information about the events happening in the cluster:
    

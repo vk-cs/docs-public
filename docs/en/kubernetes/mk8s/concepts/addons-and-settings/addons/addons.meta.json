@@ -1,0 +1,13 @@
+{
+  "title": "Add-ons",
+  "shortDescription": "Services to extend the functionality of the cluster",
+  "metaDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
+  "sectionTitle": "Add-ons",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

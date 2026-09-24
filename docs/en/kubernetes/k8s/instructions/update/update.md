@@ -1,8 +1,8 @@
-If the cluster uses not the latest [supported](../../concepts/versions/version-support) version of Kubernetes, it can be upgraded. At this, a part of its components is also [upgraded](../../concepts/update).
+If the cluster uses not the latest [supported](/en/kubernetes/k8s/concepts/versions/version-support) version of Kubernetes, it can be upgraded. At this, a part of its components is also [upgraded](/en/kubernetes/k8s/concepts/update).
 
 {note:warn}
 
-- If a [component](../../concepts/update), that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+- If a [component](/en/kubernetes/k8s/concepts/update), that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 - When the cluster is updating, the current CoreDNS [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
 
@@ -16,19 +16,19 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 
 ## Before updating
 
-1. Examine [the update process](../../concepts/update).
+1. Examine [the update process](/en/kubernetes/k8s/concepts/update).
 1. Back up the cluster you plan to update, for example, using Velero.
 1. Deploy the new cluster from the backup which is identical to the one you plan to update. Update it and verify that all cluster data and applications remain available, and applications behave as expected.
 1. In the cluster you are planning to update, ensure there are [enough spare nodes available](/en/kubernetes/k8s/concepts/update#unavailable-nodes) for Managed Containers to redirect the workload to. Otherwise, applications that run on the nodes that are being updated may not have enough resources.
-1. [Set threshold](../manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
+1. [Set threshold](/en/kubernetes/k8s/instructions/manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
 
-## 1. Perform update
+## {counter(update)}. Perform update
 
 {tabs}
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Update version**.
@@ -40,7 +40,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 
 {/tabs}
 
-## 2. (Optional) Reconfigure the IP addresses of the nodes for file shares
+## {counter(update)}. (Optional) Reconfigure the IP addresses of the nodes for file shares
 
 Once the cluster is updated, the IP addresses of its nodes change, which can lead to issues when accessing [file shares](/en/computing/iaas/instructions/fs-manage), if used.
 

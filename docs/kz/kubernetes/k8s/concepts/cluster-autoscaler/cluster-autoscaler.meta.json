@@ -7,12 +7,7 @@
   "weight": 10,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "769145b0-1bb7-46bc-9347-6352022694ef"

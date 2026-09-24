@@ -13,14 +13,14 @@ Access tokens (refresh tokens) have one of the following roles that define their
 
 Depending on the access rights, the token can be obtained in different ways:
 
-- via VK Cloud management console (usually an access token with the `Administrator` role)
+- via the VK Cloud management console (usually an access token with the `Administrator` role)
 - through the Cloud ML Platform library
 
 ## {heading(Creating an access token in the management console)[id=create_token_management]}
 
 If a user has access to the VK Cloud management console, it is possible to create an access token and choose one of two roles. Such token has unlimited validity time.
 
-1. [Go to](https://msk.cloud.vk.com/app) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Select the project in which you want to create a token.
 1. Go to **ML Platform → Tokens**.
 1. Click the **Create access token** button.
@@ -178,7 +178,7 @@ Only a list of access tokens can be retrieved. The list of created registration 
 {tabs}
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Select the project that holds the tokens.
 1. Go to **ML Platform → Tokens**.
 
@@ -256,7 +256,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 {tabs}
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app) to the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Select the project where the required token is located.
 1. Go to **ML Platform → Tokens**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired token and select **Delete**.

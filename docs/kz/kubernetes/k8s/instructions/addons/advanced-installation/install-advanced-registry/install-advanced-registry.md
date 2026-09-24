@@ -301,7 +301,7 @@
      loadBalancerIP: <выбранный Floating IP-адрес>
    ```
 
-Кодты өңдегеннен кейін {linkto(k8s-install-advanced-registry-install)[text=аддонды орнатуды жалғастырыңыз]}.
+Кодты өңдегеннен кейін {linkto(#k8s-install-advanced-registry-install)[text=аддонды орнатуды жалғастырыңыз]}.
 
 ## {heading(Тізілімге қосылу)[id=k8s-install-advanced-registry-connect]}
 

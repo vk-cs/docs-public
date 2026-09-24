@@ -1,0 +1,308 @@
+The following versions of Kubernetes aaS from VK Cloud are currently available:
+
+- 1.35.6
+- 1.34.2
+- 1.33.3
+- 1.32.1
+- 1.31.4
+
+When [creating a new cluster](/en/kubernetes/mk8s/instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](/en/kubernetes/mk8s/instructions/update) to the latest available version.
+
+If the cluster uses an outdated Kubernetes version, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
+
+## {heading(Kubernetes version support)[id=k8s-versions-list]}
+
+Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud.
+
+Thirty days before Kubernetes version support is discontinued, users will receive an email and notification about this in their management console notification center.
+
+[cols="1,2,1,1", options="header"]
+|===
+|Kubernetes version
+|Official release date
+|VK Kubernetes aaS release date
+|VK Kubernetes aaS end of support date
+
+|1.35.6
+|December 17, 2025
+|August 27, 2026
+|October 27, 2027
+
+|1.34.2
+|August 27, 2025
+|February 10, 2026
+|November 10, 2026
+
+|1.33.x
+|May 15, 2025
+|October 20, 2025
+|December 20, 2026
+
+|1.32.x
+|December 12, 2024
+|May 28, 2025
+|July 28, 2026
+
+|1.31.x
+|December 10, 2024
+|February 17, 2025
+|April 17, 2026
+|===
+
+{cut(Previous versions)}
+
+[cols="1,2,1,1", options="header"]
+|===
+|Kubernetes version
+|Official release date
+|VK Kubernetes aaS release date
+|VK Kubernetes aaS end of support date
+
+|1.30.x
+|September 10, 2024
+|December 10, 2024
+|February 10, 2026
+
+| 1.29.x
+| July 17, 2024
+| August 30, 2024
+| October 30, 2025
+
+| 1.28.x
+| April 16, 2024
+| June 30, 2024
+| August 30, 2025
+
+| 1.27.x
+| September 13, 2023
+| December 11, 2023
+| February 11, 2025
+
+| 1.26.x
+| May 17, 2023
+| August 14, 2023
+|October 17, 2024
+
+| 1.25.x
+| May 17, 2023
+| June 14, 2023
+| August 14, 2024
+
+| 1.24.x
+| December 8, 2022
+| March 6, 2023
+| May 6, 2024
+
+| 1.23.x
+| April 13, 2022
+| August 15, 2022
+| October 15, 2023
+
+| 1.22.x
+| January 19, 2022
+| February 18, 2022
+| April 18, 2023
+
+| 1.21.4
+| April 8, 2021
+| October 12, 2021
+| December 12, 2022
+
+| 1.20.4
+| December 8, 2020
+| March 1, 2021
+| May 1, 2022
+
+| 1.19.4
+| August 26, 2020
+| December 23, 2020
+| February 23, 2022
+
+| 1.18.12
+| March 23, 2020
+| December 23, 2020
+| February 23, 2022
+
+| 1.17.8
+| December 9, 2019
+| August 9, 2020
+| December 9, 2021
+|===
+
+{/cut}
+
+You can see the changelog in [Kubernetes version history](#k8s_versions_history).
+
+## {heading(Service feature matrix for Kubernetes)[id=k8s-features-list]}
+
+New features are added to all Kubernetes versions, unless a feature and version are incompatible.
+
+[cols="2,1,1,1,1", options="header"]
+|===
+|Feature
+|1.35.х–1.27.x
+|1.26.x–1.24.x
+|1.23.x–1.21.4
+|1.20.x–1.17.x
+
+|Node group scaling settings
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Key pair invalidation
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Changing the size of a Prometheus disk
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Changing the type of the master virtual machine
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Update cluster version
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Label & Taints
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+|Cluster nodes on AlmaLinux
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+|Integration with VK Cloud IAM
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+|Autoscaling of master nodes
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+|GPU support
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+|===
+
+## {heading(Kubernetes version history)[id=k8s_versions_history]}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes version
+|Changes in Kubernetes
+|Changes in Kubernetes aaS service
+
+|1.35.6
+|[Kubernetes v1.35: Timbernetes](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/)
+|Packages are updated:
+
+- CoreDNS is updated to version 1.14.6.
+- Helm is updated to version 3.21.3.
+- Metrics Server is updated to version 0.9.0
+
+|1.34.2
+|[Kubernetes v1.34: Of Wind and Will (O' WaW)](https://kubernetes.io/blog/2025/08/27/kubernetes-v1-34-release/)
+|![](/en/assets/no.svg "inline")
+
+|1.33.1
+|[Kubernetes v1.33: Octarine](https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/)
+|Packages are updated:
+
+- CoreDNS is updated to version 1.12.3.
+- Calico is updated to version 3.30.2.
+- Helm is updated to version 3.18.4
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](/en/assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Added the ability to [use and manage](/en/kubernetes/mk8s/how-to-guides/gpu-operator) GPUs in Kubernetes clusters
+
+|===
+
+{cut(Previous versions)}
+
+[cols="1,1,2", options="header"]
+|===
+|Kubernetes version
+|Changes in Kubernetes
+|Changes in Kubernetes aaS service
+
+|1.30.5
+|[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)
+|![](/en/assets/no.svg "inline")
+
+|1.29.7
+|[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
+| ![](/en/assets/no.svg "inline")
+
+|1.28.9
+|[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
+| ![](/en/assets/no.svg "inline")
+
+|1.27.6
+|[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
+|[Autoscaling](/en/kubernetes/mk8s/concepts/scale#autoscaling) of cluster master nodes is implemented
+
+|1.26.5
+|[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
+|Packages are updated:
+
+- Calico is updated to version 3.26.1
+- Helm is updated to version 3.12.2
+- Gatekeeper is updated to version 3.12.0
+
+|1.25.1
+|[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
+| ![](/en/assets/no.svg "inline")
+
+|1.24.9
+|[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
+|Calico is updated to version 3.25.0
+
+|1.23.6
+|[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
+|Added [integration with VK Cloud IAM](/en/kubernetes/mk8s/concepts/access-management)
+
+|1.22.6
+|[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
+|The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 9.
+
+By default, a limit on the consumed computing resources ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) is set for namespaces
+
+|1.21.4
+|[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
+|The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 8
+
+|1.20.4
+|[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+|[Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) of the cluster has been replaced by [CRI-O](https://cri-o.io/).
+
+[Log storage format](/en/cases/cases-logs/case-fluent-bit) has been changed
+|===
+
+{/cut}

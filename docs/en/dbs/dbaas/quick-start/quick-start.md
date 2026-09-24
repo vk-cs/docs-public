@@ -175,7 +175,7 @@ The DB instance is charged and consumes computational resources. After completin
 ## 1. Create PostgreSQL DB instance
 
 1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the instance will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the instance will be placed.
 1. Go to **Databases → Database instances**.
 1. If there are no instances in the selected project, click the **Create database** button.
 

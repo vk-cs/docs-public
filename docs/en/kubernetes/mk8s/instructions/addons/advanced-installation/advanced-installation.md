@@ -1,0 +1,1 @@
+It describes the configuration and installation of add-ons, including editing the add-on code.

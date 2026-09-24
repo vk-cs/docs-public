@@ -1,0 +1,13 @@
+{
+  "title": "Connecting LL NVMe disks to worker nodes",
+  "shortDescription": "How to connect an LL NVMe disk to a Kubernetes cluster",
+  "metaDescription": "",
+  "sectionTitle": "Connecting LL NVMe disks to worker nodes",
+  "icon": "",
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

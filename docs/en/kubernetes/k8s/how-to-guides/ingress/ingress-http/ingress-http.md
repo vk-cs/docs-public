@@ -1,4 +1,4 @@
-The Ingress controller can be deployed [in conjunction with the HTTP load balancer](../../../concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
+The Ingress controller can be deployed [in conjunction with the HTTP load balancer](/en/kubernetes/k8s/concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
 
 {note:info}
 
@@ -8,7 +8,7 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
 {/note}
 
-## 1. Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -16,15 +16,15 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-1. [Install](../../../install-tools/helm) Helm if the utility is not already installed.
+1. [Install](/en/kubernetes/k8s/install-tools/helm) Helm if the utility is not already installed.
 
 1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
 
-## 2. Deploy demo applications.
+## {counter(http)}. Deploy demo applications.
 
 These applications will be accessed through the Ingress controller using the Ingress resource.
 
@@ -62,7 +62,7 @@ deployment.apps/coffee   2/2     2            2           ...
 deployment.apps/tea      3/3     3            3           ...
 ```
 
-## 3. Install the Ingress Controller
+## {counter(http)}. Install the Ingress Controller
 
 1. Add the NGINX Helm repository:
 
@@ -135,7 +135,7 @@ deployment.apps/tea      3/3     3            3           ...
    nginx-ingress-http-nginx-ingress   NodePort   ...            <none>        80:<assigned port>/TCP   ...
    ```
 
-## 4. Create HTTP load balancer
+## {counter(http)}. Create HTTP load balancer
 
 The HTTP load balancer will terminate SSL/TLS connections and redirect HTTP traffic to the Ingress controller.
 
@@ -251,7 +251,7 @@ To configure the load balancer:
 
 1. Once the balancer is created, copy its public IP address, you will need it to access the resources published through Ingress.
 
-## 5. Create an Ingress resource
+## {counter(http)}. Create an Ingress resource
 
 The Ingress resource will publish the `coffee-svc` and `tea-svc` services on the `cafe.example.com` domain through the Ingress controller, thus providing access to the applications.
 
@@ -321,7 +321,7 @@ The following will demonstrate how to create an Ingress resource that works excl
                        /coffee   coffee-svc:80 (10.100.54.13:8080,10.100.54.14:8080)
    ```
 
-## 6. Check application availability
+## {counter(http)}. Check application availability
 
 1. Check that pods named `tea` and `coffee` exist by getting a list of all pods in the `default` namespace:
 

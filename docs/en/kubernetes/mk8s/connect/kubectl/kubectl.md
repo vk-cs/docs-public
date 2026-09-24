@@ -1,0 +1,275 @@
+The `kubectl` utility allows you to perform the full range of Kubernetes cluster management operations from the command line. See [official Kubernetes documentation](https://kubernetes.io/docs/reference/kubectl/) for details.
+
+The way to connect to the cluster depends on its IP address:
+
+- If an external IP address is assigned to the cluster, then you can connect to it from any host with Internet access.
+- If the cluster is assigned only an internal IP address, then you can connect to it only from a host in VK Cloud — a virtual machine that is located in the same subnet as the cluster.
+
+## Before you start
+
+1. On the host from which you plan to connect to the cluster, install `kubectl` if the utility is not already installed.
+
+   {note:warn}
+
+   Make sure that the minor version of `kubectl` differs by no more than one from the minor version of the cluster you are connecting to. For example, `kubectl` version 1.33 works correctly with clusters of versions 1.**31**, 1.**32**, and 1.**33**.
+
+   See [official Kubernetes documentation](https://kubernetes.io/releases/version-skew-policy/#kubectl) for more details.
+
+   {/note}
+
+   {tabs}
+
+   {tab(Linux (curl))}
+   
+   1. Download the correct version of `kubectl`.
+
+      An example command to download the `kubectl` utility which is compatible with cluster version 1.33.0:
+
+      ```console
+      curl -LO https://dl.k8s.io/release/v1.33.0/bin/linux/amd64/kubectl
+      ```
+
+   1. Make the `kubectl` binary file executable:
+
+      ```console
+      sudo chmod +x ./kubectl
+      ```
+
+   1. Place this file in a directory which is contained in the `PATH` environment variable, e.g. in `/usr/local/bin`:
+
+      ```console
+      sudo mv ./kubectl /usr/local/bin/kubectl
+      ```
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+
+   {tab(Linux (apt))}
+   
+   1. Add the Kubernetes repository:
+
+      1. Install packages required for using `apt`:
+
+           ```console
+           sudo apt-get update
+           sudo apt-get install -y apt-transport-https ca-certificates curl gnupg
+           ```
+
+      1. Create a file with the repository configuration. Examples of the commands for clusters of version 1.33.0:
+
+         ```console
+         curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+         sudo chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+         echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+         sudo chmod 644 /etc/apt/sources.list.d/kubernetes.list
+         ```
+
+      1. Update the list of the packages:
+
+         ```console
+         sudo apt-get update
+         ```
+   1. Install `kubectl`:
+
+      ```console
+      sudo apt-get install -y kubectl
+      ```
+
+      {note:info}
+
+      You can get the list of all available versions by using the command `sudo apt-cache policy kubectl`.
+
+      {/note}
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+
+   {tab(Linux (yum))}
+   
+   1. Add the Kubernetes repository. Examples of the commands for clusters of version 1.33.0:
+
+      ```console
+      cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+      [kubernetes]
+      name=Kubernetes
+      baseurl=https://pkgs.k8s.io/core:/stable:/v1.33/rpm/
+      enabled=1
+      gpgcheck=1
+      gpgkey=https://pkgs.k8s.io/core:/stable:/v1.33/rpm/repodata/repomd.xml.key
+      EOF
+      ```
+      
+   1. Install `kubectl`:
+
+      ```console
+      sudo yum install -y kubectl
+      ```
+
+      {note:info}
+
+      You can get the list of all available versions by using the command `yum --showduplicates list kubectl`.
+
+      {/note}
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+
+   {tab(macOS (curl))}
+   
+   1. Download the correct version of `kubectl`.
+
+      Examples of the commands to download the `kubectl` utility which is compatible with cluster version 1.33.0:
+
+      - Intel:
+
+        ```console
+        curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/amd64/kubectl
+        ```
+
+      - Apple Silicon:
+        ```console
+        curl -LO https://dl.k8s.io/release/v1.33.0/bin/darwin/arm64/kubectl
+        ```
+
+   1. Make the `kubectl` binary file executable:
+
+      ```console
+      sudo chmod +x ./kubectl
+      ```
+
+   1. Place this file in a directory which is contained in the `PATH` environment variable, e.g. in `/usr/local/bin`:
+
+      ```console
+      sudo mv ./kubectl /usr/local/bin/kubectl
+      ```
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+
+   {tab(macOS (Homebrew))}
+   
+   1. Run one of the installation commands:
+
+      ```console
+      brew install kubectl
+      ```
+
+      Or:
+
+      ```console
+      brew install kubernetes-cli
+      ```
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+   {tab(Windows)}
+   
+   1. Download the correct version of `kubectl`.
+
+      An example command to download the `kubectl` utility which is compatible with cluster version 1.33.0:
+
+      ```console
+      curl -LO https://dl.k8s.io/release/v1.33.0/bin/windows/amd64/kubectl.exe
+      ```
+
+   1. In the `PATH` environment variable, specify the directory where the `kubectl.exe` file was downloaded:
+
+      1. Go to **Start → This Computer → Properties → Advanced System Settings → Environment Variables → System Variables**.
+      1. Change the value of the `PATH` variable by appending the path to the directory with the file `kubectl.exe` to it.
+
+      {note:info}
+
+      Docker Desktop for Windows adds its own version of `kubectl` to the `PATH` environment variable. If Docker Desktop is installed, select one of the options:
+
+      - Specify the path to the downloaded file before the entry added by the Docker Desktop installer.
+      - Remove the `kubectl` utility provided with Docker Desktop.
+
+      {/note}
+
+   1. Check the `kubectl` version by running the command:
+
+      ```console
+      kubectl version
+      ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Prepare everything you need to connect using [Single Sign-On (SSO)](/en/kubernetes/mk8s/concepts/access-management).
+
+   1. On the host from which you plan to connect to the cluster, install `client-keystone-auth` if the plugin is not already installed:
+
+      {include(/en/_includes/_client_keystone_auth.md)}
+
+   1. Check if you have the [required role](/en/access/iam/concepts/rolesandpermissions#roles_permissions_kubernetes) to work with Kubernetes clusters. If you do not have one, ask the project owner or superadmin to add it for you.
+   1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access) API access.
+
+## {heading(Connecting to cluster)[id=connect]}
+
+{include(/en/_includes/_kubeconfig.md)}
+
+## {heading(Checking connection to cluster)[id=check_connection]}
+
+{tabs}
+
+{tab(Version of Kubernetes 1.23 and higher)}                                                        
+
+On the host:
+
+1. Run the command:
+
+   ```console
+   kubectl cluster-info
+   ```
+
+1. Enter the user's password for the VK Cloud account.
+
+   This is necessary for [authentication](/en/kubernetes/mk8s/concepts/access-management) when connecting to the cluster.
+
+{/tab}
+
+{tab(Version of Kubernetes 1.22 and lower)}
+
+Run the command on the host:
+
+```console
+kubectl cluster-info
+```
+
+{/tab}
+
+{/tabs}
+
+If the cluster is operating normally and `kubectl` is configured to work with it, similar information will be displayed:
+
+```text
+Kubernetes control plane is running at...
+CoreDNS is running at...
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+```

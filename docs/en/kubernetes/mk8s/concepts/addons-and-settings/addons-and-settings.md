@@ -1,0 +1,1 @@
+Each Kubernetes cluster in the Managed Containers service is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as add-ons that can be installed in the cluster.

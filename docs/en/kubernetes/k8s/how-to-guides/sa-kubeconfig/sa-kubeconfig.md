@@ -1,14 +1,14 @@
-When [connecting using kubectl](../../connect/kubectl) to a Kubernetes cluster in Managed Containers, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/). Kubeconfig is usually used to work with the cluster from the VK Cloud management console, which is configured to use [single sign-on technology](../../concepts/access-management). So when working with `kubectl` you periodically need to enter your password.
+When [connecting using kubectl](/en/kubernetes/k8s/connect/kubectl) to a Kubernetes cluster in Managed Containers, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/). Kubeconfig is usually used to work with the cluster from the VK Cloud management console, which is configured to use [single sign-on technology](/en/kubernetes/k8s/concepts/access-management). So when working with `kubectl` you periodically need to enter your password.
 
 This authentication process is inconvenient when working with automated tools that need access to the cluster. To work with them, it is more convenient to use the kubeconfig file for the service account. This kubeconfig allows you to authenticate with a token with an infinite lifetime, without entering a password.
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
    When creating a cluster, select the **Assign external IP** option. Select other cluster parameters at your discretion.
 
-1. [Make sure](../../connect/kubectl) that you can connect to the created cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the created cluster using `kubectl`.
 
    In this case, kubeconfig will be used, downloaded from the VK Cloud management console.
 
@@ -59,9 +59,9 @@ This authentication process is inconvenient when working with automated tools th
 
    If you do not have the rights to create any of these resources (the answer is `no`), [adjust the VK Cloud user role](/en/access/iam/instructions/access-manage#changing_member_role) on behalf of which the connection to the cluster is being performed.
 
-   For more information about the role model and available roles, see [Access management](../../concepts/access-management).
+   For more information about the role model and available roles, see [Access management](/en/kubernetes/k8s/concepts/access-management).
 
-## 1. Create a service account and link it to the role
+## {counter(sa)}. Create a service account and link it to the role
 
 1. Create an `example-sa` service account in the `kube-system` namespace:
 
@@ -105,7 +105,7 @@ This authentication process is inconvenient when working with automated tools th
 
    When choosing a role, follow the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) to increase security when working with the cluster. Read more about the role model in the [official Kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-   As an example, the `edit` role will be assigned next. It [corresponds to](../../concepts/access-management#kubernetes-roles-relation) to role `Kubernetes operator` from management console.
+   As an example, the `edit` role will be assigned next. It [corresponds to](/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation) to role `Kubernetes operator` from management console.
 
 1. Link the created service account to the selected cluster role. To do this, create a `ClusterRoleBinding` resource named `example-binding`.
 
@@ -144,7 +144,7 @@ This authentication process is inconvenient when working with automated tools th
    clusterrolebinding.rbac.authorization.k8s.io/example-binding created
    ```
 
-## 2. Get a token for a service account
+## {counter(sa)}. Get a token for a service account
 
 1. Create an 'example-token` secret containing a token for the service account:
 
@@ -267,7 +267,7 @@ This authentication process is inconvenient when working with automated tools th
 
    {/note}
 
-## 4. Create a kubeconfig for a service account
+## {counter(sa)}. Create a kubeconfig for a service account
 
 1. Create the basis for this kubeconfig by copying the kubeconfig downloaded from the VK Cloud management console.
 
@@ -487,7 +487,7 @@ This authentication process is inconvenient when working with automated tools th
 
    {/cut}
 
-## 5. Check the operation of the created kubeconfig
+## {counter(sa)}. Check the operation of the created kubeconfig
 
 Use the `kubectl` commands and the previously created kubeconfig for the service account to get information about the cluster and its resources, for example:
 

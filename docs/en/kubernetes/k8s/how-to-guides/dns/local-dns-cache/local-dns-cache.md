@@ -2,7 +2,7 @@ A local CoreDNS-based caching DNS server can be configured on each cluster node.
 
 ## Overview of the DNS architecture in a cluster
 
-Let some [pod](../../../reference/pods) initiate a DNS query.
+Let some [pod](/en/kubernetes/k8s/reference/pods) initiate a DNS query.
 
 - Without using caching DNS servers, the following will happen:
 
@@ -33,9 +33,9 @@ See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/adminis
 
    Choose the cluster parameters at your own discretion.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-## 1. Deploy a caching DNS server on each node
+## {counter(cache)}. Deploy a caching DNS server on each node
 
 The DNS server will be deployed in the following configuration:
 
@@ -44,7 +44,7 @@ The DNS server will be deployed in the following configuration:
   - A local `169.254.0.10` IP address on each node. This link-local address is specifically chosen so that there is no overlap with addresses from other subnets used by the cluster.
   - The IP address of the `kube-dns` service. In Kubernetes clusters in the Managed Containers service, it is always `10.254.0.10`.
 
-  This configuration is used because `kube-proxy` in Kubernetes clusters in Managed Containers [operates](../../../concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
+  This configuration is used because `kube-proxy` in Kubernetes clusters in Managed Containers [operates](/en/kubernetes/k8s/concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
 
 - The port to which Prometheus will connect to collect metrics: `9153`.
 - Label for service selection: `kube-dns`: `coredns`.
@@ -292,7 +292,7 @@ To deploy a DNS server:
    service/node-local-dns created
    ```
 
-## 2. Check the operation of the caching DNS server
+## {counter(cache)}. Check the operation of the caching DNS server
 
 1. Create [pod that includes utilities to work with DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
 

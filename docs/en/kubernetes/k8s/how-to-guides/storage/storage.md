@@ -1,6 +1,6 @@
 [Persistent volumes (PVs)](/en/kubernetes/k8s/reference/pvs-and-pvcs) can be connected to simple demo applications in various ways. Next, Persistent Volume Claims (PVCs) will be used to connect them. An Ingress resource will be created to test the functionality of the applications and the volumes connected to them.
 
-## 1. Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -13,7 +13,7 @@
 
    Other cluster parameters are at your discretion.
 
-1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../instructions/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
 
     {note:warn}
 
@@ -23,11 +23,11 @@
 
     {/note}
 
-1. [Make sure](../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
 1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
 
-## 2. Create demo applications and connect PVs to them
+## {counter(storage)}. Create demo applications and connect PVs to them
 
 The following will demonstrate how to create several NGINX-based web applications to display web pages written to the PVs connected to those applications.
 The NGINX `nginxdemos/nginx-hello` image is used, which displays web pages from the `/usr/share/nginx/html` directory, so all PVs will be mounted in the application pods via this path.
@@ -36,7 +36,7 @@ You can create one or more demo applications, depending on which way you want to
 
 ### Connecting block storages
 
-Block stores are connected to the cluster [with Cinder CSI](../../concepts/storage).
+Block stores are connected to the cluster [with Cinder CSI](/en/kubernetes/k8s/concepts/storage).
 
 When using this type of storage:
 
@@ -46,10 +46,6 @@ When using this type of storage:
 {tabs}
 
 {tab(Connecting via static PVC)}
-
-{note:info}
-This scenario is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
 
 This example will create:
 
@@ -626,7 +622,7 @@ To connect an NFS PV using a static PVC:
 
 {/tabs}
 
-## 3. Check the functionality of demo applications and PVs
+## {counter(storage)}. Check the functionality of demo applications and PVs
 
 1. Create a manifest for the Ingress resource through which application requests will go.
 
@@ -710,7 +706,7 @@ To connect an NFS PV using a static PVC:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Define](../../instructions/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
+1. [Define](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 

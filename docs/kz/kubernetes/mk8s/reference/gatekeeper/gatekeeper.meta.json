@@ -1,0 +1,13 @@
+{
+  "title": "Gatekeeper",
+  "shortDescription": "Шектеулерді жасау және оларды бақылау үшін кластерде Gatekeeper-ді қалай пайдалану керек",
+  "metaDescription": "Managed Containers сервисінің негізгі ұғымдары мен объектілері. Kubernetes кластерінде шектеулерді жасау және оларды бақылау үшін Gatekeeper-ді қалай пайдалану керегін біліңіз",
+  "sectionTitle": "Gatekeeper",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

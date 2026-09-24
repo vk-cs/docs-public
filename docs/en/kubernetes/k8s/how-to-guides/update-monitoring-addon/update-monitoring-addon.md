@@ -1,4 +1,4 @@
-There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Kubernetes clusters you create in the Managed Containers service. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
+There are [multiple versions](/en/kubernetes/k8s/concepts/versions/components) of the [Kube Prometheus Stack](/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Kubernetes clusters you create in the Managed Containers service. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
 
 To upgrade the Kube Prometheus Stack add-on from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the add-on and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the add-on for saving and further re-using it with the new version.
 
@@ -16,19 +16,19 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    Otherwise, create a test cluster where the add-on update will be performed:
 
-   1. [Create](../../instructions/create-cluster) a Kubernetes cluster version `1.26.5`.
+   1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster version `1.26.5`.
 
       When you create the cluster, select the **Assign external IP** option. Other cluster parameters can be set at your discretion.
 
-   1. [Install](../../instructions/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `36.2.0` in the cluster.
+   1. [Install](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `36.2.0` in the cluster.
 
       Perform a **quick installation** of the add-on (without editing the add-on configuration code).
 
-1. [Verify](../../connect/kubectl) that you can connect to the cluster via `kubectl`.
+1. [Verify](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster via `kubectl`.
 
    To connect, use the cluster configuration file (kubeconfig) downloaded from the VK Cloud management console.
 
-1. Make sure the add-on is available and working. To do this, [access the Grafana web interface](../../monitoring#using_grafana).
+1. Make sure the add-on is available and working. To do this, [access the Grafana web interface](/en/kubernetes/k8s/monitoring#using_grafana).
 
    {note:warn}
 
@@ -36,7 +36,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    {/note}
 
-1. [Install](../../install-tools/helm) Helm version 3.0.0 or higher if the utility has not been already installed.
+1. [Install](/en/kubernetes/k8s/install-tools/helm) Helm version 3.0.0 or higher if the utility has not been already installed.
 
    To install, select the Helm version that is [compatible](https://helm.sh/docs/topics/version_skew/) with the cluster.
 
@@ -64,9 +64,9 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    {/tabs}
 
-## {heading(1. Get information you need to update your add-on)[id=1_get_information_you_need_to_update_your_addon]}
+## {heading({counter(addon)}. Get information you need to update your add-on)[id=1_get_information_you_need_to_update_your_addon]}
 
-1. [Go to editing the add-on configuration code](../../instructions/addons/manage-addons#editing_addon_code).
+1. [Go to editing the add-on configuration code](/en/kubernetes/k8s/instructions/addons/manage-addons#editing_addon_code).
 
    Do not modify the code.
 
@@ -103,7 +103,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    {/tabs}
 
-1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
+1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](/en/kubernetes/k8s/reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
 
    ```console
    kubectl -n $NAMESPACE get pvc
@@ -122,9 +122,9 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    {/cut}
 
-## {heading(2. Prepare add-on environment for update)[id=2_prepare_addon_environment_for_update]}
+## {heading({counter(addon)}. Prepare add-on environment for update)[id=2_prepare_addon_environment_for_update]}
 
-Volumes for the add-on are created by default using the `Retain` [reclaim policy](../../concepts/storage#available_reclaim_policies_for_persistent_volumes) if no changes related to the storage class have been made to the add-on configuration code. So, deleting the add-on will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the add-on operation, as well as other data necessary for the add-on to work.
+Volumes for the add-on are created by default using the `Retain` [reclaim policy](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) if no changes related to the storage class have been made to the add-on configuration code. So, deleting the add-on will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the add-on operation, as well as other data necessary for the add-on to work.
 
 In addition, the following Kubernetes resources, which are also used by the add-on, may prevent you from installing a new version of the add-on:
 
@@ -496,10 +496,10 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 {/tabs}
 
-## {heading(3. Update add-on version)[id=3_update_addon_version]}
+## {heading({counter(addon)}. Update add-on version)[id=3_update_addon_version]}
 
-1. [Uninstall the current version of the add-on](../../instructions/addons/manage-addons#removing_addon) using VK Cloud interfaces.
-1. [Install](../../instructions/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `54.2.2` in the cluster.
+1. [Uninstall the current version of the add-on](/en/kubernetes/k8s/instructions/addons/manage-addons#removing_addon) using VK Cloud interfaces.
+1. [Install](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `54.2.2` in the cluster.
 
    Perform **standard installation** as follows:
 
@@ -596,7 +596,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
       The installation process may take a long time. Wait until it is completed.
 
-1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../reference/pvs-and-pvcs) used by the add-on:
+1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](/en/kubernetes/k8s/reference/pvs-and-pvcs) used by the add-on:
 
    ```console
    kubectl -n $NAMESPACE get pvc
@@ -604,9 +604,9 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    The output of the command should be similar to the output of the [previously executed](#1_get_information_you_need_to_update_your_addon) command for the add-on of the previous version. Thus, the `alertmanager...` PVC must be associated with the same PV that Alert Manager used earlier. Similarly for Prometheus and Grafana.
 
-## {heading(4. Verify add-on operability after updating)[id=4_verify_addon_operability_after_updating]}
+## {heading({counter(addon)}. Verify add-on operability after updating)[id=4_verify_addon_operability_after_updating]}
 
-[Get access to the Grafana web interface](../../monitoring#using_grafana). To connect, use the same password that was used with the previous version of the add-on. If you forgot your Grafana password, [reset it](../../instructions/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
+[Get access to the Grafana web interface](/en/kubernetes/k8s/monitoring#using_grafana). To connect, use the same password that was used with the previous version of the add-on. If you forgot your Grafana password, [reset it](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
 
 A successful connection to Grafana indicates a successful add-on update.
 

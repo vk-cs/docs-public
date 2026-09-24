@@ -318,7 +318,7 @@ There might be several possible reasons for this behavior. Follow the instructio
 
 {cut(Errors in integration with the container network interface (CNI) or the container storage interface (CSI))}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 
 1. View information about the system pods of the cluster located in the `kube-system` namespace using the command:
 

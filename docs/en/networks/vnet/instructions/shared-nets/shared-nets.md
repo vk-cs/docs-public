@@ -29,7 +29,7 @@ To share a network with other projects:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click ![more-icon](/ru/assets/more-icon.svg "inline") for the network and select ![sharing-icon](/ru/assets/sharing-icon.svg "inline") **Share network**.
@@ -56,7 +56,7 @@ Users of the specified projects will receive a notification of an invitation to 
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click the name of the required network.
@@ -82,7 +82,7 @@ To disconnect a project from the shared network:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click the name of the required network.

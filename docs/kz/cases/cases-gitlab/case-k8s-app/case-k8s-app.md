@@ -3,7 +3,7 @@
 Бұл мақалада қосымшаны Kubernetes кластеріне автоматты түрде жайып орналастыруды қалай баптау керектігі сипатталған. Мысалда келесі жабдық пайдаланылады:
 
 - Ubuntu 18.04 LTS x86_64 сервері: онда Docker, GitLab және Harbor орнатылып, бапталады.
-- VK Cloud-та [жайып орналастырылған](/kz/kubernetes/k8s/instructions/create-cluster/create-webui) K8s кластері.
+- VK Cloud-та [жайып орналастырылған](/kz/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2) K8s кластері.
 
 ## Дайындық қадамдары
 
@@ -148,8 +148,8 @@
 
 ## 3. Жергілікті қосымшаны Kubernetes кластерінде жайып орналастырыңыз
 
-1. VK Cloud-та Kubernetes кластерін [жасаңыз](/kz/kubernetes/k8s/instructions/create-cluster/create-webui).
-1. `kubectl` көмегімен кластерге [қосылыңыз](/kz/kubernetes/k8s/connect/kubectl).
+1. VK Cloud-та Kubernetes кластерін [жасаңыз](/kz/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2).
+1. `kubectl` көмегімен кластерге [қосылыңыз](/kz/kubernetes/mk8s/connect/kubectl).
 1. Кластерге Harbor образдар репозиторийіне қол жеткізу құқықтарын беріңіз:
 
    1. `<SERVER_DNS_NAME>` (Harbor серверінің атауы) және `<PASSWORD>` (Harbor-дағы k8s пайдаланушысының құпиясөзі) мәндерімен secret жасаңыз:
@@ -300,7 +300,7 @@
      Normal  UPDATE  5s    nginx-ingress-controller  Ingress default/myapp-ingress
    ```
 
-1. Қосымшаның жұмысын тексеріңіз. Ingress-контроллермен байланыстырылған сыртқы IP-мекенжайды [кластер бетінде](/kz/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-get-info) көруге болады. Ол Ingress Controller үшін жүктеме теңгергішінің IP-мекенжайы деп аталады. Оны `<INGRESS_EXTERNAL_IP>` деп белгілейік.
+1. Қосымшаның жұмысын тексеріңіз. Ingress-контроллермен байланыстырылған сыртқы IP-мекенжайды [кластер бетінде](/kz/kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-get-info) көруге болады. Ол Ingress Controller үшін жүктеме теңгергішінің IP-мекенжайы деп аталады. Оны `<INGRESS_EXTERNAL_IP>` деп белгілейік.
 
    ```console
    ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler

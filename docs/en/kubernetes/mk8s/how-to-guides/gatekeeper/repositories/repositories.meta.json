@@ -1,0 +1,13 @@
+{
+  "title": "Configuring allowed repositories",
+  "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
+  "metaDescription": "",
+  "sectionTitle": "Configuring allowed repositories",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

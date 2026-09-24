@@ -1,0 +1,13 @@
+{
+  "title": "Cluster monitoring",
+  "shortDescription": "How to track the state of a Kubernetes cluster",
+  "metaDescription": "Managed Containers: Kubernetes cluster monitoring, cluster status tracking, using Grafana and Prometheus",
+  "sectionTitle": "Cluster monitoring",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -25,7 +25,7 @@ You can create a Cloud Flink instance in one of two configurations:
 1. On the **Parameters** step:
 
    1. Enter a name and description of the instance.
-   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) service to host the Cloud Flink instance.
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host the Cloud Flink instance.
       
          If there is no acceptable cluster:
 
@@ -87,7 +87,7 @@ You can create a Cloud Flink instance in one of two configurations:
 1. On the **Parameters** step:
 
    1. Enter a name and description of the instance.
-   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) service to host the Cloud Flink instance.
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host the Cloud Flink instance.
 
       If there is no acceptable cluster:
 

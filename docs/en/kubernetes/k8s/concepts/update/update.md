@@ -1,8 +1,8 @@
-For Kubernetes clusters, a version update operation to one of [supported versions](../versions/version-support) is available in VK Cloud. You cannot downgrade versions.
+For Kubernetes clusters, a version update operation to one of [supported versions](/en/kubernetes/k8s/concepts/versions/version-support) is available in VK Cloud. You cannot downgrade versions.
 
 During the cluster update, the following entities also are updated:
 
-- Part of the cluster [components](../versions/components):
+- Part of the cluster [components](/en/kubernetes/k8s/concepts/versions/components):
 
   - CoreDNS.
 

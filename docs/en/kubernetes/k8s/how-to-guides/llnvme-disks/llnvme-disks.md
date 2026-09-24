@@ -1,6 +1,6 @@
 LL NVMe (Low Latency NVMe) disks are high-performance local disks available on the VK Cloud platform. They offer fast response times and are available upon request via technical support. Among all the disk options on the VK Cloud platform, LL NVMe disks have the lowest latency, with a guaranteed response time of no more than 0.5 milliseconds. Unlike other disks available on the VK Cloud platform, LL NVMe disks are local, meaning they are located on the same hosts as the virtual machines they are connected to.
  
-## {heading(Preparatory steps)[id=prepare]}
+## {heading(Before you begin)[id=prepare]}
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) to get access to the configuration for connecting an LL NVMe disk to a worker node, which includes:
    
@@ -17,10 +17,10 @@ LL NVMe (Low Latency NVMe) disks are high-performance local disks available on t
    - **Node type**: a VM template for an Low Latency NVMe disk (such templates have `NVME` in their names).
    - Leave the other settings unchanged. 
 
-1. [Install and configure](../../connect/kubectl) `kubectl` if not done so already.
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Install and configure](/en/kubernetes/k8s/connect/kubectl) `kubectl` if not done so already.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 
-## {heading(1. Add a storage class (StorageClass) for LL NVMe disks)[id=nvme_storageclass]}
+## {heading({counter(nvme)}. Add a storage class (StorageClass) for LL NVMe disks)[id=nvme_storageclass]}
 
 1. Create a manifest file for `StorageClass`, for example `csi-ef-nvme.yaml`, and add the following content to the file:
 
@@ -50,11 +50,11 @@ LL NVMe (Low Latency NVMe) disks are high-performance local disks available on t
    kubectl apply -f csi-ef-nvme.yaml
    ```
 
-## {heading(2. Create an application)[id=nvme_app]}
+## {heading({counter(nvme)}. Create an application)[id=nvme_app]}
 
 To learn how to connect LL NVMe disks to worker nodes, deploy the `coffee` test app.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. [Add](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) the `disktype: ef-nvme` label for the worker node group you created earlier to ensure that the pod is located on the nodes with LL NVMe disks:
 
    - **Key**: `disktype`.

@@ -1,0 +1,13 @@
+{
+  "title": "Working with add-ons",
+  "shortDescription": "How to install and manage add-ons in Kubernetes cluster",
+  "metaDescription": "How to install and manage add-ons in Kubernetes cluster",
+  "sectionTitle": "Working with add-ons",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -8,7 +8,7 @@ You can manage the load balancing rules of the selected load balancer: view, add
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.ru/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Cloud Networks** → **Load balancers**.
 1. Click the load balancer name.
@@ -277,7 +277,7 @@ openstack loadbalancer <COMMAND> --help
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.ru/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Cloud Networks** → **Load balancers**.
 1. Click the load balancer name.
@@ -481,7 +481,7 @@ openstack loadbalancer <COMMAND> --help
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.ru/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Cloud Networks** → **Load balancers**.
 1. Click the load balancer name.

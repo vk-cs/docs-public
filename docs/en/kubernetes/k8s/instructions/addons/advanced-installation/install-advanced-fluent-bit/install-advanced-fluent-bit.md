@@ -1,14 +1,10 @@
-{note:info}
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
-## {heading(Preparatory steps)[id=prep]}
+## {heading(Before you begin)[id=prep]}
 
 {include(/en/_includes/_addon-prep.md)}
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-Only [standard installation](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) is available for the add-on.
+Only [standard installation](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for the add-on.
 
 The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) controller on all nodes in the cluster, including master nodes.
 

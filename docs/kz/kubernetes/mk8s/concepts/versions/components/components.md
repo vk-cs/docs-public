@@ -1,0 +1,285 @@
+# {heading(Kubernetes компоненттерінің нұсқалары)[id=mk8s-components]}
+
+{include(/kz/_includes/_translated_by_ai.md)}
+
+Managed Containers ішіндегі Kubernetes кластерінің нұсқасына қарай компоненттердің және {linkto(../../addons-and-settings/addons#mk8s-addons)[text=аддондардың]} қолдау көрсетілетін нұсқалары тәуелді болады.
+
+Кластерді {linkto(../../update#mk8s-update)[text=жаңарту]} кезінде компоненттердің бір бөлігі де жаңартылады. Егер кластермен бірге жаңартылатын компонент жойылған болса, кластер жаңартылған кезде ол қайта қалпына келтіріледі.
+
+Аддондар кластермен бірге жаңартылмайды. Егер аддон үшін жаңа нұсқа қолжетімді болса, оларды {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-update)[text=өз бетіңізше жаңарта аласыз]}.
+
+## {heading(Компоненттер)[id=mk8s-components-supported-versions]}
+
+Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін компоненттердің қолдау көрсетілетін нұсқалары берілген.
+
+[cols="2,1,1,1,1,1,1", options="header"]
+|===
+.^|Компонент
+.^|1.35.x
+.^|1.34.x, 1.33.x
+.^|1.32.x
+.^|1.31.x
+.^|1.30.x, 1.29.x
+.^|1.28.x
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.14.6-mcs.2
+|1.12.3
+|1.11.3
+|1.11.3
+|1.11.1
+|1.11.1
+
+|[Calico](https://github.com/projectcalico/calico)
+|3.29.1
+|3.30.2
+|3.29.1
+|3.28.0
+|3.28.0
+|3.28.0
+
+|[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
+|3.18.2-mcs.1
+|3.18.2
+|3.18.2
+|3.18.2
+|3.16.3
+|3.14.0
+
+|[Helm](https://github.com/helm/helm)
+|3.21.3-mcs.2
+|3.18.4
+|3.14.2
+|3.14.2
+|3.14.2
+|3.14.2
+
+|[Metrics Server](https://github.com/kubernetes-sigs/metrics-server)
+|0.9.0-mcs.2
+|0.7.1
+|0.7.1
+|0.7.1
+|0.7.1
+|0.7.1
+
+|[Shell-operator](https://github.com/flant/shell-operator)
+|![](../../../../../assets/no.svg "inline")
+|1.0.9
+|1.0.9
+|1.0.9
+|1.0.9
+|1.0.9
+|===
+
+{cut(Алдыңғы нұсқалар)}
+
+[cols="2,1,1,1,1", options="header"]
+|===
+.^|Компонент
+.^|1.27.x
+.^|1.26.x
+.^|1.25.x, 1.24.x
+.^|1.22.x–1.21.4
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.10.1
+|1.10.1
+|1.10.1
+|1.2.4
+
+|[Calico](https://github.com/projectcalico/calico)
+|3.26.3
+|3.26.1
+|3.25.0
+|3.20.2
+
+|[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
+|3.14.0
+|3.12.0
+|3.11.0
+|3.7.0
+
+|[Helm](https://github.com/helm/helm)
+|3.12.2
+|3.12.2
+|3.11.3
+|3.11.3
+
+|[Metrics Server](https://github.com/kubernetes-sigs/metrics-server)
+|0.6.4
+|0.6.3
+|0.6.1
+|0.5.0
+
+|[Shell-operator](https://github.com/flant/shell-operator)
+|1.0.9
+|1.0.9
+|1.0.9
+|1.0.9
+|===
+
+{/cut}
+
+## {heading(Аддондар)[id=mk8s-components-addons]}
+
+Қажетті аддондар кластерге бөлек {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-install)[text=орнатылуы]} мүмкін. Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін аддондардың қолдау көрсетілетін нұсқалары берілген.
+
+[cols="2,1,1,1,1,1,1", options="header"]
+|===
+.^|Аддон
+.^|1.35.x
+.^|1.34.x, 1.33.x
+.^|1.32.x
+.^|1.31.x
+.^|1.30.x, 1.29.x
+.^|1.28.x
+
+|[cert-manager](https://github.com/cert-manager/cert-manager)
+|1.16.3
+|1.16.3
+|1.16.3
+|1.16.3
+|1.12.2/1.14.2
+|1.12.2/1.14.2
+
+|[Docker Registry](https://github.com/twuni/docker-registry.helm)
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+
+|{linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|0.48.5
+|0.34.2
+|0.34.2
+|0.34.2
+|0.34.2
+|0.34.2
+
+|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
+|25.10.1
+|24.9.0
+|24.9.0
+|24.9.0
+|24.9.0
+|24.9.0
+
+|[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
+|4.12.1
+|4.12.1
+|4.12.1
+|4.12.1
+|4.12.1
+|4.12.1
+
+|[Istio](https://github.com/istio/istio)
+|1.29.2
+|1.24.2
+|1.24.2
+|1.24.2
+|1.22.3
+|1.19.3
+
+|[Istio Gateway](https://github.com/istio/gateway-api)
+|1.29.2
+|1.24.2
+|1.24.2
+|1.24.2
+|1.22.3
+|1.19.3
+
+|[Jaeger](https://github.com/jaegertracing/jaeger)
+|3.4.0
+|3.4.0
+|3.4.0
+|3.4.0
+|0.71.4
+|0.71.4
+
+|[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
+
+|68.3.3
+
+|68.3.4-vk.1
+
+|68.3.3
+
+|68.3.3
+
+|54.2.2
+
+|54.2.2
+|===
+
+{cut(Алдыңғы нұсқалар)}
+
+[cols="2,1,1,1,1", options="header"]
+|===
+.^|Аддон
+.^|1.27.x
+.^|1.26.x, 1.25.x
+.^|1.24.x, 1.23.x
+.^|1.23.x–1.21.4
+
+|[cert-manager](https://github.com/cert-manager/cert-manager)
+|1.12.2/1.14.2
+|1.12.2
+|1.12.2
+| ![](../../../../../assets/no.svg "inline")
+
+|[Docker Registry](https://github.com/twuni/docker-registry.helm)
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+
+|{linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
+|0.34.2
+|0.34.2
+|0.34.2
+| ![](../../../../../assets/no.svg "inline")
+
+|[GPU Operator](https://github.com/NVIDIA/gpu-operator)
+|24.9.0
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+
+|[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
+|4.7.1
+|4.1.4
+|4.1.4
+|4.1.4
+
+|[Istio](https://github.com/istio/istio)
+|1.19.3
+|1.16.4
+|1.16.4
+| ![](../../../../../assets/no.svg "inline")
+
+|[Istio Gateway](https://github.com/istio/gateway-api)
+|1.19.3
+|1.16.4
+|1.16.4
+| ![](../../../../../assets/no.svg "inline")
+
+|[Jaeger](https://github.com/jaegertracing/jaeger)
+|0.71.4
+|0.71.4
+|0.71.4
+| ![](../../../../../assets/no.svg "inline")
+
+|[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
+|54.2.2
+|36.2.0
+|36.2.0
+|36.2.0
+|===
+
+{/cut}
+
+`vk` жұрнағы бар Kube Prometheus Stack аддоны нұсқаларында {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=Kubernetes кластері ресурстарын тұтынуды болжау]} кірістірілген. Бұл — VK Tech жасаған, аддонның базалық нұсқасында қолжетімді емес жетілдіру.
+
+Болжау мүмкіндіктерін пайдалану үшін аддонды базалық нұсқадан VK Tech нұсқасына дейін {linkto(../../../how-to-guides/update-monitoring-addon#mk8s-update-monitoring-addon)[text=жаңартыңыз]}.

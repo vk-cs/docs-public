@@ -6,22 +6,15 @@ CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheu
 
 ## {heading(Working with Container Network Interface (CNI))[id=supported-cni]}
 
-To organize intra-cluster networks, Managed Containers supports two CNIs:
+To organize intra-cluster networks, Managed Containers supports the [Calico](https://projectcalico.docs.tigera.io/about/about-calico) CNI. Calico implements network routing at the L3 level using standard network protocols and iptables. Calico scales well and provides optimal performance for medium and large clusters.
 
-- [Calico](https://projectcalico.docs.tigera.io/about/about-calico) implements network routing at the L3 level using standard network protocols and iptables. Calico scales well and provides optimal performance for medium and large clusters.
-- [Cilium](https://docs.cilium.io/en/stable/index.html ) uses eBPF (Linux eXpress Data Path) to implement network policies and routing directly in the OS kernel, bypassing iptables. Cilium supports traffic filtering at the L3, L4, and L7 levels (for example, by HTTP headers), and provides advanced monitoring capabilities (for example, through the built-in Hubble tool). Cilium is best suited for very large and high-load clusters, as well as microservice architectures.
-
-  {note:info}
-  Cilium is only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-  {/note}
-
-Both CNIs communicate with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
+The CNI communicates with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## Integration with load balancers
 
-Kubernetes clusters in the Managed Containers service integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](../addons-and-settings/addons).
+Kubernetes clusters in the Managed Containers service integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](/en/kubernetes/k8s/concepts/addons-and-settings/addons).
 
-If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../how-to-guides/ingress/ingress-http) for details.
+If necessary, you can use the HTTP load balancer. See [example for Ingress controller](/en/kubernetes/k8s/how-to-guides/ingress/ingress-http) for details.
 
 The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs.openstack.org/octavia/latest/), which has [HAProxy](http://www.haproxy.org/) at its core and supports:
 
@@ -37,13 +30,13 @@ Sometimes when using the Ingress controller, the pod in the cluster needs to see
 
 To allow a pod that is placed behind the Ingress controller to see the user's real IP address, use one of the options:
 
-- [Ingress controller with proxy protocol support](../../how-to-guides/ingress/ingress-tcp).
+- [Ingress controller with proxy protocol support](/en/kubernetes/k8s/how-to-guides/ingress/ingress-tcp).
 
   If you plan to handle HTTPS traffic, configure SSL connection termination on this Ingress controller because the TCP balancer that will be created for the controller cannot terminate SSL connections itself.
 
-  The [NGINX-based Ingress Controller](../addons-and-settings/addons) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
+  The [NGINX-based Ingress Controller](/en/kubernetes/k8s/concepts/addons-and-settings/addons) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
 
-- [Separate HTTP(S) balancer with additional settings](../../how-to-guides/ingress/ingress-http):
+- [Separate HTTP(S) balancer with additional settings](/en/kubernetes/k8s/how-to-guides/ingress/ingress-http):
 
   - If you plan to handle HTTPS traffic, configure SSL connection termination on this balancer.
   - Activate the `ExternalTrafficPolicy: Local` policy on the Ingress controller.
@@ -74,6 +67,6 @@ Changing these rule groups may render the cluster inoperable.
 
 ## See also
 
-- [Container service overview](../about).
-- [Container service architecture](../architecture).
-- [Storage in a cluster](../storage).
+- [Container service overview](/en/kubernetes/k8s/concepts/about).
+- [Container service architecture](/en/kubernetes/k8s/concepts/architecture).
+- [Storage in a cluster](/en/kubernetes/k8s/concepts/storage).

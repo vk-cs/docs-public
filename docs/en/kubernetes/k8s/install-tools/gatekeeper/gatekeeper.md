@@ -1,14 +1,14 @@
-Gatekeeper is a controller embedded between the Kubernetes API and the Open Policy Agent (OPA) policy engine to check that Kubernetes resources created, modified and deleted are compliant with policies. For more information about Gatekeeper, see [Kubernetes reference](../../reference/gatekeeper) and [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/).
+Gatekeeper is a controller embedded between the Kubernetes API and the Open Policy Agent (OPA) policy engine to check that Kubernetes resources created, modified and deleted are compliant with policies. For more information about Gatekeeper, see [Kubernetes reference](/en/kubernetes/k8s/reference/gatekeeper) and [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
 {note:warn}
 
-Use these instructions if your cluster is version 1.20 or lower. Starting with Kubernetes 1.21, Gatekeeper is [already installed](../../concepts/architecture) in the cluster along with [preconfigured templates and restrictions](../../concepts/addons-and-settings/settings).
+Use these instructions if your cluster is version 1.20 or lower. Starting with Kubernetes 1.21, Gatekeeper is [already installed](/en/kubernetes/k8s/concepts/architecture) in the cluster along with [preconfigured templates and restrictions](/en/kubernetes/k8s/concepts/addons-and-settings/settings).
 
 {/note}
 
 ## Installation
 
-1. [Install Helm](../helm) if the utility is not already installed.
+1. [Install Helm](/en/kubernetes/k8s/install-tools/helm) if the utility is not already installed.
 
 1. Run the commands
 

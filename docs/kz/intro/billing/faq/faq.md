@@ -317,7 +317,7 @@
 1. Жоба ресурстарын қолмен белсендіріңіз:
 
    - {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=виртуалды машиналар]};
-   - {linkto(../../../kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-start)[text=Kubernetes контейнерлері]};
+   - {linkto(../../../kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-start)[text=Kubernetes контейнерлері]};
    - {linkto(../../../storage/backups/instructions/manage-backup-plan#backup-plan-activate-stop-delete)[text=ВМ резервтік көшіру]};
    - басқа ресурстар.
 

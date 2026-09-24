@@ -1,13 +1,13 @@
-Some [add-ons](../../concepts/addons-and-settings/addons) that can be [installed](../../instructions/addons/manage-addons) in the cluster have a web interface. The method of connecting to the web interface depends on the IP address of the cluster:
+Some [add-ons](/en/kubernetes/k8s/concepts/addons-and-settings/addons) that can be [installed](/en/kubernetes/k8s/instructions/addons/manage-addons) in the cluster have a web interface. The method of connecting to the web interface depends on the IP address of the cluster:
 
 - If an external IP address is assigned to the cluster, then you can connect from any host with Internet access.
 - If the cluster is assigned only an internal IP address, then you can connect only from a host in VK Cloud - a virtual machine that is located on the same subnet as the cluster.
 
 A browser must be installed on the host to connect.
 
-## Preparatory steps
+## Before you begin
 
-1. On the host from which you plan to connect to the add-on web interface, [make sure](../kubectl#check_connection) that you can connect to the cluster using `kubectl`.
+1. On the host from which you plan to connect to the add-on web interface, [make sure](/en/kubernetes/k8s/connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
 
 1. Install `kauthproxy` on the same host if the utility is not already installed:
 
@@ -30,7 +30,7 @@ A browser must be installed on the host to connect.
 
 {tab(Jaeger)}
 
-1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](../../instructions/addons/advanced-installation/install-advanced-jaeger) to the cluster.
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that `jaeger` add-on [is installed](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-jaeger) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
    ```console
@@ -53,7 +53,7 @@ A browser must be installed on the host to connect.
 
 Kiali is a web interface for working with Istio. To connect to it:
 
-1. [Make sure](../../instructions/addons/manage-addons#viewing_addons) that `kiali` add-on [is installed](../../instructions/addons/advanced-installation/install-advanced-kiali) to the cluster.
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that `kiali` add-on [is installed](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-kiali) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
    ```console

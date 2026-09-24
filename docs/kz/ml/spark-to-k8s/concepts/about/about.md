@@ -8,7 +8,7 @@
 
 - Kubernetes ішінде Spark кластерін өрістету.
 - Өрістетілетін кластерлердің master-түйіндерін автоматты түрде баптау.
-- Алдын ала орнатылған Spark бейнесі бар {var(cloud)} [Docker Registry](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) пайдалану.
+- Алдын ала орнатылған Spark бейнесі бар {var(cloud)} [Docker Registry](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-registry) пайдалану.
 - Автоматты масштабтауды қолдай отырып, кластерді көлденең және тік масштабтау.
 - Токендер мен рөлдік модель арқылы қолжетімділікті шектеу.
 - Кластерді жою немесе оны кесте бойынша ұйқы режиміне ауыстыру.

@@ -127,6 +127,4 @@ Kubernetes кластерлеріндегі [Jaeger](https://www.jaegertracing.i
    kubectl delete ns example-hotrod
    ```
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

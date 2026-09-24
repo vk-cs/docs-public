@@ -66,8 +66,6 @@ kubectl logs -f <ИМЯ_ПОДА> -n kube-system
 
 Оқиғалармен жұмыс істеу туралы толығырақ Kubernetes-тің [ресми құжаттамасында](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-autoscaler-logs-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

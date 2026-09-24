@@ -2,7 +2,7 @@ The Managed Containers service supports two generations of Kubernetes clusters:
 
 - The first (previous) generation. First-generation clusters use [Magnum](https://docs.openstack.org/magnum/latest/user/), an OpenStack tool for container orchestration, to automate their deployment and scaling. These clusters are hosted within user projects, providing users with access to all cluster components, including system ones. This approach gives users complete control over their clusters but also requires them to take responsibility for their own deployment and maintenance. While it offers flexibility, it also increases the risk of failures and errors in the cluster.
 
-- The second (new) generation, or managed clusters. These clusters are maintained and managed by the VK Cloud platform, minimizing the need for routine manual management by users. The components of second-generation clusters are hosted in [service projects](#service-projects) as opposed to user projects, and the clusters are deployed in [system clusters](#system-clusters). The advantages of this approach include:
+- The [second (new) generation](/en/kubernetes/mk8s), or managed clusters. These clusters are maintained and managed by the VK Cloud platform, minimizing the need for routine manual management by users. The components of second-generation clusters are hosted in [service projects](#service-projects) as opposed to user projects, and the clusters are deployed in [system clusters](#system-clusters). The advantages of this approach include:
 
    - Automated configuration and maintenance of the infrastructure.
    - Guarantee of high availability, fault tolerance, performance, and reliability of the Kubernetes clusters.

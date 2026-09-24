@@ -1,6 +1,6 @@
 {note:warn}
 
-Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
+Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](/en/kubernetes/k8s/instructions/helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
 
 {/note}
 
@@ -10,11 +10,11 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
-1. Set [settings](../helpers/node-group-settings) for the node group.
+1. Set [settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings) for the node group.
 1. Click the **Add node group** button.
 
 {/tab}
@@ -85,7 +85,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 You can change the size of a group of worker nodes manually or configure automatic scaling. You can also change the configuration template of VMs for an already existing group of worker nodes.
 
-These operations are described in detail in [Scaling cluster nodes](../scale) section.
+These operations are described in detail in [Scaling cluster nodes](/en/kubernetes/k8s/instructions/scale) section.
 
 ## {heading(Customise labels and taints)[id=labels_taints]}
 
@@ -104,7 +104,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
@@ -198,17 +198,17 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 
 {/tabs}
 
-See [Labels and taints](../../reference/labels-and-taints) for details.
+See [Labels and taints](/en/kubernetes/k8s/reference/labels-and-taints) for details.
 
 ## {heading(Configure update settings)[id=configure_node_update]}
 
-To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update process, specify the maximum percentage of unavailable nodes for the node group before [updating the cluster](../update).
+To increase update speed, the container service updates multiple nodes in a group at once. To keep your applications and services available during the update process, specify the maximum percentage of unavailable nodes for the node group before [updating the cluster](/en/kubernetes/k8s/instructions/update).
 
 {tabs}
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the required cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the cluster with the node group that you want to change the update settings for.
@@ -260,7 +260,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 {/tabs}
 
-For more details on the update process, refer to [Cluster version update](../../concepts/update).
+For more details on the update process, refer to [Cluster version update](/en/kubernetes/k8s/concepts/update).
 
 ## {heading(Delete node group)[id=delete_node_group]}
 
@@ -272,7 +272,7 @@ The single cluster node group cannot be deleted from the management console. How
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.

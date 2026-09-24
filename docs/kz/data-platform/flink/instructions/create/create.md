@@ -32,7 +32,7 @@
 1. **Параметрлер** қадамында:
 
    1. Дана үшін атау мен сипаттаманы орнатыңыз.
-   1. Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Flink данасын орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s){/ifdef} кластеріне {ifdef(public)} [worker-түйін](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйін {/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Осы кластерге Cloud Flink данасын орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s){/ifdef} кластеріне {ifdef(public)} [worker-түйін](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйін {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 

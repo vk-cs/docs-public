@@ -24,4 +24,4 @@ The NFS/CIFS file storage supports backup, however, backups are not available in
     * `<destination_address>` — IP address of the new storage.
 
 1. Make sure that all data has been successfully migrated to the new file storage.
-1. [Delete](/en/kubernetes/k8s/instructions/manage-cluster#k8s-manage-cluster-delete) the original file storage if you no longer need it.
+1. [Delete](/en/kubernetes/mk8s/instructions/manage-cluster#k8s-manage-cluster-delete) the original file storage if you no longer need it.

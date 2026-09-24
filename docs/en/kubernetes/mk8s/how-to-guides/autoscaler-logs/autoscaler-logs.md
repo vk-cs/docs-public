@@ -1,0 +1,67 @@
+[Cluster Autoscaler](/en/kubernetes/mk8s/concepts/cluster-autoscaler) is a tool that monitors the load on worker nodes of a Kubernetes cluster and adjusts their number accordingly. It can be used to reduce or increase the number of nodes based on the current workload. You can check the logs of the Cluster Autoscaler to troubleshoot any issues with the scaling process.
+
+For more details on Cluster Autoscaler and how to use it, refer to its [official documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md). 
+
+## {heading(Before you begin)[id=prepare]}
+
+{include(/en/_includes/_create-test-cluster.md)}
+1. [Install and configure](/en/kubernetes/mk8s/connect/kubectl) `kubectl` if not done so already.
+1. [Connect](/en/kubernetes/mk8s/connect/kubectl#connect) to the cluster via `kubectl`.
+
+## {heading({counter(log)}. Identify Cluster Autoscaler pod)[id=review]}
+
+To identify which pod is the Cluster Autoscaler pod, use one of the following methods and search for the pod with the name that contains `cluster-autoscaler`:
+
+{tabs}
+
+{tab(Management console)}
+
+[View](/en/kubernetes/mk8s/instructions/manage-resources#view-resources) the list of pods in your cluster via your VK Cloud management console.
+
+{/tab}
+
+{tab(kubectl)}
+
+View the list of pods in the cluster in the `kube-system` namespace using the command:
+
+```console
+   kubectl get pods -n kube-system | grep cluster-autoscaler
+```
+
+{/tab}
+
+{/tabs}
+
+## {counter(log)}. Review Cluster Autoscaler logs
+
+Run the command: 
+
+```console
+kubectl logs <POD_NAME> -n kube-system
+```
+   
+To monitor the logs in real time, add the `-f` option before the pod name:
+
+```console
+kubectl logs -f <POD_NAME> -n kube-system
+```
+
+## {counter(log)}. Review cluster events
+
+1. Get information about the events happening in the cluster:
+   
+   ```console
+   kubectl get events -n kube-system
+   ```
+
+1. Filter the events by the name of the Cluster Autoscaler pod. Typically, the pod name contains `cluster-autoscaler`:
+
+   ```console
+   kubectl get events -n kube-system | grep cluster-autoscaler
+   ```
+
+For more details on working with events, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_events/).
+
+## {heading(Delete unused resources)[id=delete]}
+
+{include(/en/_includes/_delete-test-cluster.md)}

@@ -6,7 +6,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project where you want to add anycast routing.
 1. Go to **Cloud Networks** → **IP addresses**.
 1. Go to the **Anycast IP** tab.
@@ -25,7 +25,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to **Anycast IP** tab.
@@ -55,7 +55,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 
 This is a group operation: multiple IP addresses can be unbound at once by selecting them with checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
@@ -87,7 +87,7 @@ Without health checks enabled, traffic may be routed to an inactive node, leadin
 
 To add a health check rule:
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
@@ -117,7 +117,7 @@ For the virtual machines specified in the check, [allow](../../secgroups) incomi
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
@@ -146,7 +146,7 @@ You cannot modify the rule for anycast IP addresses that are bound to load balan
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
@@ -168,7 +168,7 @@ You cannot modify the rule for anycast IP addresses that are bound to load balan
 
 This is a group operation: multiple anycast IP addresses can be deleted at once by selecting them with checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.

@@ -38,8 +38,8 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 
 | Эндпоинт                            | Мекенжай                   | Мақсаты |
 |-------------------------------------|-------------------------|-----------------|
-| Magnum            | https://infra.mail.ru:9511/v1                       | [Managed Containers](/kz/kubernetes/k8s) контейнерлерін басқару |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managed Containers сервисінің [аддондарын](/kz/kubernetes/k8s/instructions/addons) басқару |
+| Magnum            | https://infra.mail.ru:9511/v1                       | [Managed Containers](/kz/kubernetes/mk8s) контейнерлерін басқару |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managed Containers сервисінің [аддондарын](/kz/kubernetes/mk8s/instructions/addons) басқару |
 
 ### Cloud Networks
 

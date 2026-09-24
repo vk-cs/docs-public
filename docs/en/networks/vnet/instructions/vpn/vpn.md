@@ -11,7 +11,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 
@@ -84,7 +84,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click the **Add VPN** or **Add** button. The New VPN Tunnel Wizard opens.
@@ -523,7 +523,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Edit VPN**.
@@ -784,7 +784,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Restart VPN**.
@@ -834,7 +834,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Remove VPN**.

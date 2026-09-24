@@ -6,7 +6,7 @@ The following versions of Kubernetes aaS from VK Cloud are currently available:
 - 1.32.1
 - 1.31.4
 
-When [creating a new cluster](../../../instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](../../../instructions/update) to the latest available version.
+When [creating a new cluster](/en/kubernetes/k8s/instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](/en/kubernetes/k8s/instructions/update) to the latest available version.
 
 If the cluster uses an outdated Kubernetes version, its correct operation is not guaranteed. Technical support will not be able to help you resolve issues if they occur.
 
@@ -240,7 +240,7 @@ New features are added to all Kubernetes versions, unless a feature and version 
 
 |1.31.4
 |[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Added the ability to [use and manage](../../../how-to-guides/gpu-operator) GPUs in Kubernetes clusters
+|Added the ability to [use and manage](/en/kubernetes/k8s/how-to-guides/gpu-operator) GPUs in Kubernetes clusters
 
 |===
 
