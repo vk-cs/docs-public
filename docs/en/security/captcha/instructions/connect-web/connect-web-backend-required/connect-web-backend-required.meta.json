@@ -1,0 +1,14 @@
+{
+  "title": "Displaying captcha upon backend request",
+  "shortDescription": "Integrating VK Капча into a web application in a situation where the backend requests a captcha",
+  "metaDescription": "Learn how to connect VK Капча upon backend request: mounting the widget on an error response, verifying the user, and retrying the request with a token.",
+  "sectionTitle": "Displaying captcha upon backend request",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

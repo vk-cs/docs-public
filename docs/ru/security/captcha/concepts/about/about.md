@@ -117,3 +117,7 @@ iOS:
 Android:
 
 {include(../../../../_includes/_captcha-requirements.md)[tags=captcha-req-android]}
+
+## {heading(Обратная связь)[id=captcha-about-feedback]}
+
+Если у вас остались вопросы о работе сервиса или предложения по его развитию, напишите на почту [captcha@corp.vk.com](mailto:captcha@corp.vk.com).
