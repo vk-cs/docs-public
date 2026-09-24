@@ -13,9 +13,14 @@
 
    - Чтобы использовать {linkto(/ru/storage/backups/concepts/gfs-backup#backup-gfs)[text=GFS-стратегию]}, включите опцию **Включить стратегию хранения полных копий (GFS)**.
    - Чтобы использовать {linkto(/ru/storage/backups/concepts/forward-incremental#backup-forward-incremental)[text=стратегию с ограничением количества резервных копий]}, отключите опцию **Включить стратегию хранения полных копий (GFS)**.
-     {ifdef(public)}
-   - Чтобы {linkto(/ru/storage/backups/concepts/blocked-backup#backup-blocked)[text=блокировать резервные копии от удаления]}, включите опцию **Включить неудаляемые бэкапы**.
-     {/ifdef}
+   {ifdef(public)}
+   - Чтобы {linkto(/ru/storage/backups/concepts/blocked-backup#backup-blocked)[text=блокировать резервные копии от удаления]}, включите опцию **Включить неудаляемые бэкапы**. 
+      
+      {note:info}
+      Если вы используете GFS-стратегию, включить блокировку резервных копий от удаления нельзя.
+      {/note}
+     
+   {/ifdef}
 
 1. Настройте выбранный подход.
 
@@ -41,6 +46,8 @@
 
    1. Выберите срок хранения резервных копий в днях.
    1. Выберите режим защиты: `Compliance` ({linkto(/ru/storage/backups/concepts/blocked-backup#backup-blocked-compliance-lock)[text=строгая блокировка]}) или `Governance` ({linkto(/ru/storage/backups/concepts/blocked-backup#backup-blocked-governance-lock)[text=блокировка с возможностью снятия]}).
+      
+   Пока резервная копия защищена блокировкой от удаления, она не учитывается в {linkto(/ru/storage/backups/concepts/forward-incremental#backup-forward-incremental)[text=лимите количества резервных копий]} и не может быть удалена по правилам этой стратегии. После снятия блокировки копия начинает учитываться в лимите и может быть удалена автоматически при его превышении.
 
    {/tab}
    {/ifdef}
@@ -80,9 +87,14 @@
 
    - Чтобы использовать {linkto(/ru/storage/backups/concepts/gfs-backup#backup-gfs)[text=GFS-стратегию]}, включите опцию **Включить стратегию хранения полных копий (GFS)**.
    - Чтобы использовать {linkto(/ru/storage/backups/concepts/forward-incremental#backup-forward-incremental)[text=стратегию с ограничением количества резервных копий]}, отключите опцию **Включить стратегию хранения полных копий (GFS)**.
-     {ifdef(public)}
+   {ifdef(public)}
    - Чтобы {linkto(/ru/storage/backups/concepts/blocked-backup#backup-blocked)[text=блокировать резервные копии от удаления]}, включите опцию **Включить неудаляемые бэкапы**.
-     {/ifdef}
+    
+      {note:info}
+      Если вы используете GFS-стратегию, включить блокировку резервных копий от удаления нельзя.
+      {/note}
+     
+   {/ifdef}
 
 1. Настройте выбранный подход.
 
@@ -111,6 +123,8 @@
 
    Любые изменения в параметры блокировки будут действовать только на новые копии, созданные в плане. Для ранее созданных защищенных копий параметры блокировки меняться не будут.
 
+   Пока резервная копия защищена блокировкой, она не учитывается в {linkto(/ru/storage/backups/concepts/forward-incremental#backup-forward-incremental)[text=лимите количества резервных копий]} и не может быть удалена по правилам этой стратегии. После снятия блокировки копия начинает учитываться в лимите и может быть удалена автоматически при его превышении.
+   
    {/tab}
    {/ifdef}
    {/tabs}

@@ -848,7 +848,6 @@
   "427b7bf2-671d-451b-bdb7-28b3e4404173": "/ru/kubernetes/mk8s/how-to-guides/dns",
   "03df999d-6c43-48ba-86b7-ad7face2a3b2": "/ru/kubernetes/mk8s/how-to-guides/dns/external-dns",
   "3829f41c-b49c-41d1-b769-6e1ca3758ce3": "/ru/kubernetes/mk8s/how-to-guides/dns/local-dns-cache",
-  "44b7865e-7590-4f60-a69a-3cf2ab0fb1dd": "/ru/kubernetes/mk8s/how-to-guides/dns/coredns",
   "3cf10d14-1367-48c3-90d3-1dc18ffd2dc6": "/ru/kubernetes/mk8s/how-to-guides/dns/change-dns",
   "b3109df6-a49d-4a32-a1a3-38aac7d4808c": "/ru/kubernetes/mk8s/how-to-guides/sa-kubeconfig",
   "4910dd97-e70c-4afd-b2f9-c815128ddb03": "/ru/kubernetes/mk8s/how-to-guides/autoscaling-placeholder",
