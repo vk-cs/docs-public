@@ -317,6 +317,22 @@
               "description": "Health check port. `NULL` is allowed. For the VMs specified in the check, add a security rule allowing incoming traffic on the specified port from the IP address `169.254.169.100/32`",
               "type": "integer"
             },
+            "period_seconds": {
+                "description": "Delay between checks in seconds",
+                "type": "integer"
+              },
+              "failure_threshold": {
+                "description": "Number of consecutive failed checks required to remove the resource from the announcement",
+                "type": "integer"
+              },
+              "success_threshold": {
+                "description": "Number of consecutive successful checks required to return the resource to the announcement",
+                "type": "integer"
+              },
+              "timeout": {
+                "description": "Connection timeout to the resource",
+                "type": "integer"
+              },
             "property": {
               "description": "Options for specific check types. Currently, options are not implemented",
               "type": "object"
@@ -367,6 +383,10 @@
           "healthcheck": {
             "type": "TCP,",
             "port": "80,",
+            "success_threshold": 1,
+            "timeout_seconds": 2,
+            "failure_threshold": 1,
+            "period_seconds": 5,
             "property": {}
           }
         }
@@ -397,7 +417,11 @@
         "healthcheck": {
           "property": {},
           "type": "TCP",
-          "port": 80
+          "port": 80,
+          "success_threshold": 1,
+          "timeout_seconds": 2,
+          "failure_threshold": 1,
+          "period_seconds": 5
         },
         "project_id": "bbb222c2c174a0bb128cd33cf0b7878",
         "ip_address": "212.233.95.21",

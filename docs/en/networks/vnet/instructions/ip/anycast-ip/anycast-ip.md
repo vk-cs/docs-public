@@ -92,11 +92,18 @@ To add a health check rule:
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click the name of the anycast IP address and go to the **Rule** tab, then click **Add Rule**.
+1. Select the monitoring type: TCP or ICMP.
 
-    - Select the monitoring type: TCP or ICMP.
+   If Anycast IP addresses are bound with virtual machine IP addresses or load balancers, both options are available. For advanced router and load balancer IP addresses, only ICMP monitoring is available.
 
-    If Anycast IP addresses are bound with virtual machine IP addresses or load balancers, both options are available. For advanced router and load balancer IP addresses, only ICMP monitoring is available.
-    - If you select TCP monitoring, specify the health check port. A single value is set for the entire group of bound IP addresses.
+1. Configure the check settings:
+
+   - (For TCP) **Port** — the port used to verify connectivity. A single value is set for the entire group of associated IP addresses.
+   - **Delay between checks** — time in seconds.
+   - **Connection timeout** — time in seconds.
+   - **Successful check threshold for announcement** — the number of consecutive successful checks required to return the resource to the announcement.
+   - **Failed check threshold for removal from announcement** — the number of consecutive failed checks required to remove the resource from the announcement.
+
 1. Click **Save**.
 
 {/tab}
@@ -123,11 +130,18 @@ For the virtual machines specified in the check, [allow](../../secgroups) incomi
 1. Go to the **Anycast IP** tab.
 1. Click the name of the anycast IP address and go to the **Rule** tab.
 1. Click **Edit Rule**.
+1. Select the monitoring type: TCP or ICMP.
 
-    - Select the monitoring type: TCP or ICMP.
+   If virtual machine IP addresses are bound to the anycast IP address, both options are available. For advanced router and load balancer IP addresses, only ICMP monitoring is available.
 
-    If virtual machine IP addresses are bound to the anycast IP address, both options are available. For advanced router and load balancer IP addresses, only ICMP monitoring is available.
-    - If you select TCP monitoring, specify the health check port. A single value is set for the entire group of bound IP addresses.
+1. Edit the check settings:
+
+   - (For TCP) **Port** — the port used to verify connectivity. A single value is set for the entire group of associated IP addresses.
+   - **Delay between checks** — time in seconds.
+   - **Connection timeout** — time in seconds.
+   - **Successful check threshold for announcement** — the number of consecutive successful checks required to return the resource to the announcement.
+   - **Failed check threshold for removal from announcement** — the number of consecutive failed checks required to remove the resource from the announcement.
+
 1. Click **Save**.
 
 {/tab}
