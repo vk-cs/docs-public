@@ -8,9 +8,9 @@ This article shows an example of how to add a domain and IP address to the clust
 
    Choose the parameters of the cluster as you wish.
 
-1. [Make sure](../../../connect/kubectl) you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) you can connect to the cluster using `kubectl`.
 
-## 1. Add host address to CoreDNS resource ConfigMap
+## {counter(coredns)}. Add host address to CoreDNS resource ConfigMap
 
 1. Run the command:
 
@@ -52,7 +52,7 @@ This article shows an example of how to add a domain and IP address to the clust
 
    CoreDNS will reload the configuration automatically within 1-2 minutes. Wait for the changes to apply.
 
-## 2. Check configuration application
+## {counter(coredns)}. Check configuration application
 
 1. Create a temporary pod:
 

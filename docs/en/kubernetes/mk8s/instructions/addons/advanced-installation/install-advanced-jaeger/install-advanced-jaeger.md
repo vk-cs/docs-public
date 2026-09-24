@@ -1,0 +1,250 @@
+As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
+
+## Before you begin
+
+1. Review the [system requirements](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#available_addons) of the add-on to make sure you have enough resources to install it.
+
+   Jaeger add-on system requirements depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
+
+1. (Optional) Perform [manual scaling](/en/kubernetes/mk8s/instructions/scale#scale_worker_nodes) of worker node groups or set up [automatic scaling](/en/kubernetes/mk8s/instructions/scale#autoscale_worker_nodes).
+
+## {heading(Installing add-on)[id=installing_addon]}
+
+[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+
+{tabs}
+
+{tab(Standard installation)}
+
+1. Install the add-on:
+
+   {tabs}
+   
+   {tab(Management console)}
+      
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
+   1. Click the **Install addon** button on the `jaeger` add-on card.
+   1. Edit if necessary:
+
+      - application name;
+      - the name of the namespace where the add-on will be installed.
+
+   1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation) if:
+
+      - you need a non-standard number of Elasticsearch replicas;
+      - the master nodes and worker nodes are located in different availability zones.
+
+      {note:warn}
+
+      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+
+      {/note}
+
+   1. Click the **Install addon** button.
+
+      The installation of the add-on in the cluster will begin. This process can take a long time.
+
+   {/tab}
+   
+   {/tabs}
+
+{include(/en/_includes/_jaeger_install_optional.md)}
+
+{/tab}
+
+{tab(Installation on dedicated worker nodes)}
+
+1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
+
+   {tabs}
+   
+   {tab(Management console)}
+      
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+   1. Find the cluster you need in the list.
+
+   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+
+      If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
+
+   1. [Customise](/en/kubernetes/mk8s/instructions/manage-node-group#labels_taints) for this node group, if it hasn't already been done:
+
+      - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
+      - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
+
+   {/tab}
+   
+   {/tabs}
+
+1. Install the add-on:
+
+   {tabs}
+   
+   {tab(Management console)}
+      
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
+   1. Click the **Install addon** button on the `jaeger` add-on.
+   1. Edit if necessary:
+
+      - application name;
+      - the name of the namespace where the add-on will be installed.
+
+   1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation) if:
+
+      - you need a non-standard number of Elasticsearch replicas;
+      - the master nodes and worker nodes are located in different availability zones.
+
+   1. Set the necessary tolerations and nodeSelector in the add-on settings code:
+
+      {tabs}
+      
+      {tab(Tolerations)}
+            
+      ```yaml
+      tolerations:
+        - key: "addonNodes"
+          operator: "Equal"
+          value: "dedicated"
+          effect: "NoSchedule"
+      ```
+
+      Set this exception for fields:
+
+      - `elasticsearch.tolerations`;
+      - `agent.tolerations`;
+      - `collector.tolerations`;
+      - `query.tolerations`.
+
+      {/tab}
+      
+      {tab(nodeSelector)}
+      
+      ```yaml
+      nodeSelector:
+        addonNodes: dedicated
+      ```
+
+      Set this selector for fields:
+
+      - `elasticsearch.nodeSelector`;
+      - `agent.nodeSelector`;
+      - `collector.nodeSelector`;
+      - `query.nodeSelector`.
+
+      {/tab}
+      
+      {/tabs}
+
+      {note:warn}
+
+      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+
+      {/note}
+
+   1. Click the **Install addon** button.
+
+      The installation of the add-on in the cluster will begin. This process can take a long time.
+
+   {/tab}
+   
+   {/tabs}
+
+{include(/en/_includes/_jaeger_install_optional.md)}
+
+{/tab}
+
+{tab(Quick installation)}
+
+{note:info}
+
+To install the add-on in this way, it is necessary that the master nodes and the worker nodes are in the same availability zone.
+
+During quick installation, the add-on settings code is not edited. Three Elasticsearch replicas will be used as the storage backend.
+
+If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
+
+{/note}
+
+1. Install the add-on:
+
+   {tabs}
+   
+   {tab(Management console)}
+      
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
+   1. Click the **Install addon** button on the `jaeger` add-on.
+   1. Edit if necessary:
+
+      - application name;
+      - the name of the namespace where the add-on will be installed;
+
+   1. Click the **Install addon** button.
+
+      The installation of the add-on in the cluster will begin. This process can take a long time.
+
+   {/tab}
+   
+   {/tabs}
+
+{include(/en/_includes/_jaeger_install_optional.md)}
+
+{/tab}
+
+{/tabs}
+
+## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
+
+Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
+
+The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml).
+
+{note:err}
+
+Do not delete the `podAnnotations.timestamp` fields or the values set in them. These fields are required for correct installation and operation of the add-on.
+
+{/note}
+
+### Changing the number of Elasticsearch replicas
+
+To set the required number of replicas, change the value of the field in the add-on settings code:
+
+```yaml
+elasticsearch:
+  replicas: <NUMBER_OF_REPLICAS>
+```
+
+{note:warn}
+
+Make sure that the number of worker nodes in the cluster is not less than the selected number of replicas.
+
+{/note}
+
+### Changing Elasticsearch storage settings
+
+Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](/en/kubernetes/mk8s/reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#architecture-az) in which the cluster's worker nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
+
+To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes), the availability zone of which coincides with the availability zone of worker nodes:
+
+```yaml
+elasticsearch:
+  volumeClaimTemplate:
+    accessModes:
+    - ReadWriteOnce
+    storageClassName: "<STORAGE_CLASS_NAME>"
+```
+
+After editing the add-on code [continue installing the add-on](#installing_addon).

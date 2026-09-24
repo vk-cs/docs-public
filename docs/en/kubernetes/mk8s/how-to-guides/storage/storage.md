@@ -1,0 +1,699 @@
+[Persistent volumes (PVs)](/en/kubernetes/mk8s/reference/pvs-and-pvcs) can be connected to simple demo applications in various ways. Next, Persistent Volume Claims (PVCs) will be used to connect them. An Ingress resource will be created to test the functionality of the applications and the volumes connected to them.
+
+## Before you begin
+
+{include(/en/_includes/_create-test-cluster.md)}
+
+   When creating the cluster:
+
+   - Select the **Assign external IP** option.
+   - Create one group of worker nodes with virtual machine type `STD3-2-8` in the `MS1` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
+
+    For example, you can create one group of nodes with virtual machine type `STD3-2-8`.
+
+   Other cluster parameters are at your discretion.
+
+1. [Make sure](/en/kubernetes/mk8s/instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) in a cluster with default parameters. It will be required to provide access to demo applications.
+
+    {note:warn}
+
+    When installing the add-on, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created.
+
+    Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
+
+    {/note}
+
+1. [Make sure](/en/kubernetes/mk8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
+
+1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
+
+## {counter(storage)}. Create demo applications and connect PVs to them
+
+The following will demonstrate how to create several NGINX-based web applications to display web pages written to the PVs connected to those applications.
+The NGINX `nginxdemos/nginx-hello` image is used, which displays web pages from the `/usr/share/nginx/html` directory, so all PVs will be mounted in the application pods via this path.
+
+You can create one or more demo applications, depending on which way you want to connect the PVs.
+
+### Connecting block storages
+
+Block stores are connected to the cluster [with Cinder CSI](/en/kubernetes/mk8s/concepts/storage).
+
+When using this type of storage:
+
+- only one pod can access storage (multiple pods cannot use block storage at the same time);
+- as a consequence, the `ReadWriteOnce` mode must be used to access the storage.
+
+{tabs}
+
+{tab(Connecting via dynamic PVC)}
+
+This example will create:
+
+1. A dynamic PVC that will create a permanent volume based on the given parameters.
+1. A `coffee` application as a single pod deployment, and its corresponding service.
+
+   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the PV.
+
+To connect a PV using dynamic PVC:
+
+1. Examine the connection features:
+
+   1. The required storage size is specified in the `spec.resources.requests.storage` parameter of the PersistentVolumeClaim resource. In this example it is 1 GB.
+   1. For the PersistentVolumeClaim resource, specify the storage class in the `spec.storageClassName` parameter. The storage class must use the same availability zone as the worker node on which the pod (application) will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pod on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. The storage access mode is set in the `spec.accessModes` parameter for the PersistentVolumeClaim resource.
+   1. ReclaimPolicy `Delete` is used for PV (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the PV will automatically be deleted.
+
+1. Create a manifest for the `coffee` application.
+
+   {cut(coffee.yaml)}
+
+   ```yaml
+   ---
+   apiVersion: v1
+   kind: PersistentVolumeClaim
+   metadata:
+     name: coffee-pvc
+   spec:
+     accessModes:
+       - ReadWriteOnce
+     resources:
+       requests:
+         storage: 1Gi
+     storageClassName: "csi-ceph-hdd-ms1"
+
+   ---
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: coffee
+   spec:
+     replicas: 1
+     selector:
+       matchLabels:
+         app: coffee
+     template:
+       metadata:
+         labels:
+           app: coffee
+       spec:
+         volumes:
+           - name: coffee-volume
+             persistentVolumeClaim:
+               claimName: coffee-pvc
+         initContainers:
+           - name: write-html-for-nginx
+             image: busybox
+             volumeMounts:
+               - name: coffee-volume
+                 mountPath: /usr/share/nginx/html
+             command: ["/bin/sh", "-c"]
+             args:
+               [
+                 'echo "The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume." > /usr/share/nginx/html/index.html',
+               ]
+         containers:
+           - name: coffee
+             image: nginxdemos/nginx-hello
+             volumeMounts:
+               - name: coffee-volume
+                 mountPath: /usr/share/nginx/html
+             ports:
+               - containerPort: 8080
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: coffee-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       app: coffee
+   ```
+
+   {/cut}
+
+1. Apply this manifest to the cluster to create all necessary resources:
+
+   ```console
+   kubectl apply -f ./coffee.yaml
+   ```
+
+{/tab}
+
+{tab(Connecting to several pods via dynamic PVC)}
+
+This example will create:
+
+1. Application `juice` as a StatefulSet of two pods, as well as the corresponding services.
+
+   For this application there will also be an initialization container ([initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)) which will write the web page to the PV.
+
+1. A dynamic PVC that will create PVs based on the parameters you specify.
+
+To connect a PV to multiple pods using dynamic PVC:
+
+1. Examine the connection features:
+
+   1. When you use a StatefulSet PVC, it is not configured separately as in the other examples, but as part of the StatefulSet resource.
+   1. The PVC will create one PV for each StatefulSet replica, and these replicas will be numbered in order.
+
+      {note:info}
+
+      When deploying an application of multiple replicas as a Deployment resource, you must also ensure that a PV is created for each replica using the PVC. Such volumes will have random identifiers instead of sequential numbers.
+
+      {/note}
+
+   1. The required storage size is specified in the `spec.volumeClaimTemplates.spec.resources.requests.storage` parameter of the StatefulSet resource. In this example it is 1 GB.
+   1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. The storage access mode is set in the `spec.volumeClaimTemplates.spec.accessModes` parameter of the StatefulSet resource.
+   1. ReclaimPolicy `Delete` is used for permanent volume (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the permanent volume will be automatically deleted.
+
+1. Create a manifest for the `juice` application.
+
+   {cut(juice.yaml)}
+
+   ```yaml
+   ---
+   apiVersion: apps/v1
+   kind: StatefulSet
+   metadata:
+     name: juice
+   spec:
+     serviceName: juice
+     replicas: 2
+     selector:
+       matchLabels:
+         app: juice
+     volumeClaimTemplates:
+       - metadata:
+           name: juice-pvc
+         spec:
+           accessModes: ["ReadWriteOnce"]
+           storageClassName: "csi-ceph-hdd-ms1"
+           resources:
+             requests:
+               storage: 1Gi
+     template:
+       metadata:
+         labels:
+           app: juice
+       spec:
+         initContainers:
+           - name: write-html-for-nginx
+             image: busybox
+             volumeMounts:
+               - name: juice-pvc
+                 mountPath: /usr/share/nginx/html
+             command: ["/bin/sh", "-c"]
+             args:
+               [
+                 'echo "The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume." > /usr/share/nginx/html/index.html',
+               ]
+         containers:
+           - name: juice
+             image: nginxdemos/nginx-hello
+             volumeMounts:
+               - name: juice-pvc
+                 mountPath: /usr/share/nginx/html
+             ports:
+               - containerPort: 8080
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: juice-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       app: juice
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: juice-0-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       statefulset.kubernetes.io/pod-name: juice-0
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: juice-1-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       statefulset.kubernetes.io/pod-name: juice-1
+   ```
+
+   {/cut}
+
+1. Apply this manifest to the cluster to create all necessary resources:
+
+   ```console
+   kubectl apply -f ./juice.yaml
+   ```
+
+{/tab}
+
+{/tabs}
+
+### Connecting file storages
+
+File storages are connected to the cluster using a PV that is configured to use the existing storage via the required protocol, such as NFS.
+
+When using this type of storage:
+
+- Multiple pods can access the storage at once;
+- as a consequence, the `ReadWriteMany` mode must be used to access the storage.
+
+{tabs}
+
+{tab(Connecting NFS storage via static PVC)}
+
+This example will create:
+
+1. NFS file storage in the Cloud Servers service.
+1. A PV corresponding to this storage.
+1. Static PVC using an already created PV.
+1. Application `milkshake` as a StatefulSet of two pods, as well as the corresponding services.
+
+To connect an NFS PV using a static PVC:
+
+1. [Create file storage](/en/computing/iaas/instructions/fs-manage#fs-create).
+
+   When creating it, specify:
+
+   - **Name of file storage:** any name, such as `storage-milkshake`.
+   - **Storage size:** `10 GB'.
+   - **Protocol:** `NFS`.
+   - **Network:** network and subnet where the Kubernetes cluster is located. This information can be found on the cluster page.
+   - **File storage network:** existing network. If a suitable network is not on the list, select `Create new network`.
+
+1. [View information](/en/computing/iaas/instructions/fs-manage#viewing_information_about_file_storage) about the created file storage.
+
+   Save the value of the **Connection point** parameter.
+
+1. Examine the specifics of the connection:
+
+   1. The storage sizes specified in the `spec.capacity.storage` and `spec.resources.requests.storage` parameters for the PersistentVolumeClaim resource must match the size of the created file storage. In this example it's 10 GB.
+   1. For the PersistentVolumeClaim resource, use an empty value in the `storageClassName` storage class parameter.
+   1. For the PersistentVolume resource:
+
+      1. The storage access mode is specified in the `spec.accessModes` parameter for the PersistentVolume resource.
+      1. The `spec.mountOptions` parameter set must contain an `nfsvers` entry with version `4.0`.
+
+   1. Instead of an initialization container to write a web page to a PV, a single-run Kubernetes task (job) is used. This approach works because in this case all pods will have access to the same PV.
+
+   1. ReclaimPolicy `Retain` is used for the PV because the `Recycle` policy will not allow instant removal of the volume when it becomes unnecessary. Clearing a volume of data takes a long time. The `Delete` policy is not used so that you can monitor the state of the storage manually and not accidentally delete it.
+
+1. Create a manifest for the `milkshake` application.
+
+   For the PersistentVolume resource, specify:
+
+   - IP address from the **Connection point** of the file storage as the value of the `spec.nfs.server` parameter.
+   - Data after the IP address (`/shares/...`) as a value of the `spec.nfs.path` parameter.
+
+   {cut(milkshake.yaml)}
+
+   ```yaml
+   apiVersion: v1
+   kind: PersistentVolume
+   metadata:
+     name: milkshake-pv
+   spec:
+     accessModes:
+       - ReadWriteMany
+     mountOptions:
+       - hard
+       - nfsvers=4.0
+       - timeo=60
+       - retrans=10
+     capacity:
+       storage: 10Gi
+     nfs:
+       server: <share IP address>
+       path: "<share path starting with /share/...>"
+     persistentVolumeReclaimPolicy: "Retain"
+
+   ---
+   apiVersion: v1
+   kind: PersistentVolumeClaim
+   metadata:
+     name: milkshake-pvc
+   spec:
+     volumeMode: Filesystem
+     accessModes:
+       - ReadWriteMany
+     resources:
+       requests:
+         storage: 10Gi
+     volumeName: "milkshake-pv"
+     storageClassName: ""
+
+   ---
+   apiVersion: batch/v1
+   kind: Job
+   metadata:
+     name: write-html-for-nginx-on-nfs-volume
+   spec:
+     template:
+       spec:
+         restartPolicy: Never
+         volumes:
+           - name: milkshake-volume
+             persistentVolumeClaim:
+               claimName: milkshake-pvc
+         containers:
+           - name: write-html-for-nginx
+             image: busybox
+             volumeMounts:
+               - name: milkshake-volume
+                 mountPath: /usr/share/nginx/html
+             command: ["/bin/sh", "-c"]
+             args:
+               [
+                 'echo "The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany persistent volume." > /usr/share/nginx/html/index.html',
+               ]
+
+   ---
+   apiVersion: apps/v1
+   kind: StatefulSet
+   metadata:
+     name: milkshake
+   spec:
+     serviceName: milkshake
+     replicas: 2
+     selector:
+       matchLabels:
+         app: milkshake
+     template:
+       metadata:
+         labels:
+           app: milkshake
+       spec:
+         volumes:
+           - name: milkshake-volume
+             persistentVolumeClaim:
+               claimName: milkshake-pvc
+         containers:
+           - name: milkshake
+             image: nginxdemos/nginx-hello
+             volumeMounts:
+               - name: milkshake-volume
+                 mountPath: /usr/share/nginx/html
+             ports:
+               - containerPort: 8080
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: milkshake-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       app: milkshake
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: milkshake-0-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       statefulset.kubernetes.io/pod-name: milkshake-0
+
+   ---
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: milkshake-1-svc
+     labels:
+   spec:
+     ports:
+       - port: 80
+         targetPort: 8080
+         protocol: TCP
+         name: http
+     selector:
+       statefulset.kubernetes.io/pod-name: milkshake-1
+   ```
+
+   {/cut}
+
+1. Apply this manifest to the cluster to create all necessary resources:
+
+   ```console
+   kubectl apply -f ./milkshake.yaml
+   ```
+
+{/tab}
+
+{/tabs}
+
+## {counter(storage)}. Check the functionality of demo applications and PVs
+
+1. Create a manifest for the Ingress resource through which application requests will go.
+
+   {cut(cafe-ingress.yaml)}
+
+   ```yaml
+   ---
+   apiVersion: networking.k8s.io/v1
+   kind: Ingress
+   metadata:
+     name: cafe-ingress
+   spec:
+     ingressClassName: nginx
+     rules:
+     - host: cafe.example.com
+       http:
+         paths:
+         - path: /tea
+           pathType: Prefix
+           backend:
+             service:
+               name: tea-svc
+               port:
+                 number: 80
+         - path: /coffee
+           pathType: Prefix
+           backend:
+             service:
+               name: coffee-svc
+               port:
+                 number: 80
+         - path: /juice
+           pathType: Prefix
+           backend:
+             service:
+               name: juice-svc
+               port:
+                 number: 80
+         - path: /juice/0
+           pathType: Prefix
+           backend:
+             service:
+               name: juice-0-svc
+               port:
+                 number: 80
+         - path: /juice/1
+           pathType: Prefix
+           backend:
+             service:
+               name: juice-1-svc
+               port:
+                 number: 80
+         - path: /milkshake
+           pathType: Prefix
+           backend:
+             service:
+               name: milkshake-svc
+               port:
+                 number: 80
+         - path: /milkshake/0
+           pathType: Prefix
+           backend:
+             service:
+               name: milkshake-0-svc
+               port:
+                 number: 80
+         - path: /milkshake/1
+           pathType: Prefix
+           backend:
+             service:
+               name: milkshake-1-svc
+               port:
+                 number: 80
+   ```
+
+   {/cut}
+
+1. Apply this manifest to the cluster to create all necessary resources:
+
+   ```console
+   kubectl apply -f ./cafe-ingress.yaml
+   ```
+
+1. [Define](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
+
+1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
+
+   {note:info}
+
+   If some of the applications have not been deployed, the message `Service Unavailable` will be displayed for them.
+
+   {/note}
+
+   {tabs}
+
+   {tab(Tea)}
+
+   Run the command:
+
+   ```console
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/tea
+   ```
+
+   A response should be displayed:
+
+   ```text
+   The tea pod says Hello World to everyone! This file is located on the statically claimed PV.
+   ```
+
+   {/tab}
+
+   {tab(Coffee)}
+
+   Run the command:
+
+   ```console
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/coffee
+   ```
+
+   A response should be displayed:
+
+   ```text
+   The coffee pod says Hello World to everyone! This file is located on the statically claimed PV.
+   ```
+
+   {/tab}
+
+   {tab(Juice)}
+
+   Run the commands:
+
+   ```console
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice/0
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/juice/1
+   ```
+
+   The same response should be output for the application and each of its replicas:
+
+   ```text
+   The juice StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce PV.
+   ```
+
+   {/tab}
+
+   {tab(Milkshake)}
+
+   Run the commands:
+
+   ```console
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake/0
+   curl --resolve cafe.example.com:80:<Ingress IP address> http://cafe.example.com/milkshake/1
+   ```
+
+   The same response should be output for the application and each of its replicas:
+
+   ```text
+   The milkshake StatefulSet pod says Hello World to everyone! This file is located on the dynamically claimed NFS ReadWriteMany PV.
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+## Delete unused resources
+
+{include(/en/_includes/_remove-k8s-resources.md)} persistent volumes, delete them:
+
+1. Delete the resources described in the manifests:
+
+   {tabs}
+
+   {tab(Linux/macOS)}
+
+   ```console
+   kubectl delete -f ./cafe-ingress.yaml
+   kubectl delete -f ./milkshake.yaml
+   kubectl delete -f ./juice.yaml
+   kubectl delete -f ./coffee.yaml
+   kubectl delete -f ./tea.yaml
+
+   ```
+
+   {/tab}
+
+   {tab(Windows)}
+
+   ```console
+   kubectl delete -f ./cafe-ingress.yaml; `
+   kubectl delete -f ./milkshake.yaml; `
+   kubectl delete -f ./juice.yaml; `
+   kubectl delete -f ./coffee.yaml; `
+   kubectl delete -f ./tea.yaml
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Remove unused storage:
+
+   1. The disk used by the `tea` application.
+
+   1. The NFS repository used by the `milkshake` application.
+
+   All other Cinder stores created with dynamic PVCs will be deleted automatically.
+
+{include(/en/_includes/_delete-test-cluster-short.md)}

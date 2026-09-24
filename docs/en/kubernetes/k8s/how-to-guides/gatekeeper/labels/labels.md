@@ -1,17 +1,17 @@
-With [Gatekeeper](../../../reference/gatekeeper) you can set a constraint that will require a specific label for created Kubernetes resources. For example, this constraint can be useful if company policies require the creator name of any Kubernetes resources to facilitate auditing and parsing of potential incidents.
+With [Gatekeeper](/en/kubernetes/k8s/reference/gatekeeper) you can set a constraint that will require a specific label for created Kubernetes resources. For example, this constraint can be useful if company policies require the creator name of any Kubernetes resources to facilitate auditing and parsing of potential incidents.
 
 To demonstrate how Gatekeeper works, the following will be created:
 
 - A constraint template and its corresponding constraint. It will require a `creator-name` label in Kubernetes resources that are created in any namespaces (except system namespaces).
 - A few Kubernetes resources to test how the constraint works.
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
    Choose the cluster parameters at your own discretion.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster with `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster with `kubectl`.
 
 ## Create a constraint that checks labels
 

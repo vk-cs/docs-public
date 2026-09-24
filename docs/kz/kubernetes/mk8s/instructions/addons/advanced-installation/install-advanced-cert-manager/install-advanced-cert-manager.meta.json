@@ -1,0 +1,13 @@
+{
+  "title": "Cert-manager",
+  "shortDescription": "",
+  "metaDescription": "Мұнда cert-manager аддонын баптау және орнату сипатталған.",
+  "sectionTitle": "Cert-manager",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

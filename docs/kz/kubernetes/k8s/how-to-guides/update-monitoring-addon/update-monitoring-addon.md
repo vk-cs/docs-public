@@ -614,8 +614,6 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
 
 Grafana-ға сәтті қосылу аддонның сәтті жаңартылғанын көрсетеді.
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-update-monitoring-addon-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

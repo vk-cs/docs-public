@@ -1,0 +1,62 @@
+## What the service can do
+
+The container service allows you to create Kubernetes clusters and run various services and applications in them. All the usual Kubernetes tools are available, e.g:
+
+- Storing and handling serverless functions in containers: OpenFaaS, OpenWhisk, Kubeless.
+- Service Mesh: Istio, Consul, Linkerd.
+- Monitoring, analytics, logging: Prometheus, Fluentd, Jaeger, OpenTracing.
+- CI/CD: GitLab, CircleCI, Travis CI.
+- IaC (infrastructure as code): Terraform, Helm.
+- Big Data and data science: Spark.
+
+  For big data analysts, the following features can be useful:
+
+  - Autoscaling clusters that can handle large computational loads.
+  - Creating event-triggered data handlers.
+  - Integration of Kubernetes clusters and data with other [VK Cloud machine learning platform services](/en/ml).
+
+{note:info}
+
+VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Hosted](https://www.cncf.io/certification/software-conformance/#logos) by CNCF ([Cloud Native Computing Foundation](https://www.cncf.io/)). This means that the distribution has been tested for reliability and standards compliance, it meets all functional requirements of the community and is compatible with the standard [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/). VK Cloud is the only cloud provider in Russia that has achieved this certification.
+
+{/note}
+
+## Service features
+
+- Managing [clusters](/en/kubernetes/mk8s/instructions/manage-cluster) and [groups of nodes](/en/kubernetes/mk8s/instructions/manage-node-group) using the VK Cloud management console and VK Cloud own Terraform provider.
+
+- Managing objects and resources in the Managed Containers service after [connecting to the cluster](/en/kubernetes/mk8s/connect) using `kubectl` or Headlamp.
+
+- Automatic and manual [cluster scaling](/en/kubernetes/mk8s/instructions/scale).
+
+  When automatic scaling is enabled, applications instantly get additional computing power when the load peaks. When the load drops, the amount of resources available to the application is reduced.
+
+  This approach saves up to 60% of computing resources.
+
+- Creating distributed installations within [VK Cloud regions](/en/tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
+
+- Integration with the [storage subsystem](/en/kubernetes/mk8s/concepts/storage) and [networking subsystem](/en/kubernetes/mk8s/concepts/network) of the VK Cloud platform.
+
+- One-click rolling update of clusters with no downtime. This applies to both minor and major versions of Kubernetes.
+
+- Ensuring security at all stages of cluster operation:
+
+  - During network communication in the cluster, all connections are encrypted and certificates are used.
+  - You can [apply](/en/kubernetes/mk8s/concepts/network#supported-cni) network policies: Calico or Cilium. For more details on network policies, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+  - You can [apply](/en/kubernetes/mk8s/concepts/architecture#built_in_support_for_the_open_policy_agent) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
+  - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](/en/kubernetes/mk8s/concepts/access-management).
+
+- Backup Kubernetes clusters in the Managed Containers service with Velero.
+
+- Migration of other Kubernetes clusters to Managed Containers using Velero.
+
+- A set of [preconfigured add-ons](/en/kubernetes/mk8s/concepts/addons-and-settings/addons) which can be selected when [creating a cluster using Terraform](/en/kubernetes/mk8s/instructions/create-cluster) or [install](/en/kubernetes/mk8s/instructions/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
+- A set of [preconfigured settings](/en/kubernetes/mk8s/concepts/addons-and-settings/settings), which help improve cluster stability and security.
+
+- Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](/en/kubernetes/mk8s/monitoring).
+
+## What's next
+
+- [Get to know the service architecture](/en/kubernetes/mk8s/concepts/architecture).
+- [Get to know the network structure in the cluster](/en/kubernetes/mk8s/concepts/network).
+- [Get to know the storage device in the cluster](/en/kubernetes/mk8s/concepts/storage).

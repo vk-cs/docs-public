@@ -71,7 +71,7 @@ When downloading through your VK Cloud management console, the size of the downl
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Servers → Images**.
 1. Click the **Create** button.
 1. Specify import settings:
@@ -159,7 +159,7 @@ By default, all images have the `private` status. To share an image with other p
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Servers → Images**.
 1. Click ![ ](/ru/assets/more-icon.svg "inline") for the image you need and select **Share image**.
 1. In the window that opens, select the type of the project with which you want to share the image:
@@ -226,7 +226,7 @@ openstack image member list <IMAGE_ID>
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Images**.
 3. Do one of the following for the required image:
 

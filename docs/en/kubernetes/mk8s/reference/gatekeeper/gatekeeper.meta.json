@@ -1,0 +1,13 @@
+{
+  "title": "Gatekeeper",
+  "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
+  "metaDescription": "",
+  "sectionTitle": "Gatekeeper",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

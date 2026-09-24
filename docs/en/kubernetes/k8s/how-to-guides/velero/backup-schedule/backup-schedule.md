@@ -1,16 +1,12 @@
 Use [Velero](https://velero.io/docs/main/) to configure cluster backups based on a schedule you set in the [cron](https://crontab.guru/every-1-minute) format, and then restore the cluster using this schedule.
 
-{note:info}
-Using Velero for backups is supported only in [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster via `kubectl`.
 1. [Install and configure](/en/kubernetes/k8s/install-tools/velero) Velero, if not done so already.
 
-## 1. Create a schedule for backups
+## {counter(schedule)}. Create a schedule for backups
 
 Create a schedule for backups for the required namespace:
 
@@ -58,7 +54,7 @@ As a result of this schedule, backups will be created daily at 07:00. The name o
 The default backup lifetime is 720 hours. After that time, the backup will be deleted.
 {/note}
 
-## 2. Review the created schedule
+## {counter(schedule)}. Review the created schedule
 
 1. Make sure that the created schedule appears in the list of backup schedules available for the selected namespace:
 
@@ -97,7 +93,7 @@ The default backup lifetime is 720 hours. After that time, the backup will be de
    Paused:  false
    ```
 
-## 3. Restore data
+## {counter(schedule)}. Restore data
 
 Restore data from the backup that was created according to the schedule you configured.
 

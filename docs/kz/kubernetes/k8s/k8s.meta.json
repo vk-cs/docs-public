@@ -1,8 +1,8 @@
 {
-  "title": "Managed Containers",
-  "shortDescription": "Kubernetes негізінде жүктемелер кезінде сервистер мен қолданбаларды автоматты масштабтау",
-  "metaDescription": "Managed Containers сервисі Kubernetes кластерлерін пайдалануға мүмкіндік береді. VK Cloud-та Kubernetes кластерлерін қалай құруға, басқаруға және қолдауға болатынын біліңіз",
-  "sectionTitle": "Managed Containers",
+  "title": "Бірінші буын кластерлеріне арналған Managed Containers",
+  "shortDescription": "Бірінші буын кластерлеріндегі Kubernetes негізінде жүктемелер кезінде сервистер мен қолданбаларды автоматты масштабтау",
+  "metaDescription": "Managed Containers сервисі Kubernetes кластерлерін пайдалануға мүмкіндік береді. VK Cloud-та бірінші буын Kubernetes кластерлерін қалай құруға, басқаруға және қолдауға болатынын біліңіз",
+  "sectionTitle": "Бірінші буын кластерлеріне арналған Managed Containers",
   "icon": "",
   "weight": 4,
   "relativeSections": [
@@ -12,11 +12,7 @@
   ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pdf",
-      "private-pg",
-      "private-pg-pdf"
+      "public"
     ]
   },
   "uuid": "343eb883-fc0d-4d43-8600-f17508822fd7"

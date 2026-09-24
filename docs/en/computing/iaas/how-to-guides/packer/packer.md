@@ -194,7 +194,7 @@ Import the image according to the [instructions](../../instructions/images/image
 
     {tab(Management console)}
 
-    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
     1. Go to **Cloud Servers → Images**.
     1. Find the image in the list and click on it. The image page opens.
 

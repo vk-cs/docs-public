@@ -1,10 +1,6 @@
 Use [Velero](https://velero.io/docs/main/) to manually create backups of cluster data and restore them.
 
-{note:info}
-Using Velero for backups is supported only in [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -14,7 +10,7 @@ Using Velero for backups is supported only in [first-generation](/en/kubernetes/
 1. [Install and configure](/en/kubernetes/k8s/install-tools/velero) Velero, if not done so already.
 1. [Install](/en/tools-for-using-services/cli/openstack-cli) OpenStack CLI, if not done so already. Make sure you can authorize in the cloud using it.
 
-## 1. Deploy an application
+## {counter(backup)}. Deploy an application
 
 To get familiar with creating a backup and using it to restore cluster data, deploy a demo application `coffee`. A persistent volume will be attached to this application.
 
@@ -171,7 +167,7 @@ To get familiar with creating a backup and using it to restore cluster data, dep
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-## 2. Create a backup of the application
+## {counter(backup)}. Create a backup of the application
 
 1. Create a manual backup of the entire `example-app` namespace, which contains the resources you need for the application:
 
@@ -199,7 +195,7 @@ To get familiar with creating a backup and using it to restore cluster data, dep
 
 1. (Optionally) [Configure](/en/kubernetes/k8s/how-to-guides/velero/backup-schedule) automatic scheduled backups.
 
-## 3. Restore the application from the backup
+## {counter(backup)}. Restore the application from the backup
 
 1. Simulate application failure. To do this, delete the `example-app` namespace which contains the resources needed for the application to work:
 

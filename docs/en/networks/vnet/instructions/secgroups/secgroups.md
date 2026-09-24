@@ -6,7 +6,7 @@ A security group is a set of custom traffic rules that can be assigned to instan
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 
@@ -56,7 +56,7 @@ A security group ID is displayed in not all platform services. Create groups wit
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click the **Add** button.
@@ -98,7 +98,7 @@ openstack security group create --description <group description> <new group nam
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -135,7 +135,7 @@ A security group rule is a set of parameters that define the conditions for traf
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -216,7 +216,7 @@ Available arguments for the rule creation command:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -254,7 +254,7 @@ To apply a rule set to a virtual machine, the security group that contains the r
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -284,7 +284,7 @@ openstack server add security group <instance ID> <security group ID>
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -322,7 +322,7 @@ A group cannot be removed as long as there are ports that use this group. Also, 
 
 This is a group operation: if necessary, you can delete several security groups at once by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the security group you want to delete and select **Delete** button.

@@ -1,0 +1,13 @@
+{
+  "title": "Managing cluster resources via the management console",
+  "shortDescription": "How to manage resources of a Kubernetes cluster via the management console",
+  "metaDescription": "Manage Kubernetes resources in VK Cloud via the web interface: create, view, change, and delete cluster resources without using kubectl and Headlamp",
+  "sectionTitle": "Managing cluster resources via the management console",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

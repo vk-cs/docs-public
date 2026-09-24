@@ -103,4 +103,4 @@ To use Gatekeeper:
 1. Create a constraint template resource based on the manifest.
 1. Create a constraint manifest based on the created constraint template. Set the scope and parameters in the constraint.
 
-Examples of how to use Gatekeeper constraints are given in [use cases](../../how-to-guides/gatekeeper).
+Examples of how to use Gatekeeper constraints are given in [use cases](/en/kubernetes/k8s/how-to-guides/gatekeeper).

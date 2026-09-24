@@ -33,7 +33,7 @@
 1. **Параметрлер** қадамында:
 
    1. Данаға атау мен сипаттама беріңіз.
-   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) {/ifdef} {ifndef(public)} worker-түйіні {/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology) {/ifdef} {ifndef(public)} worker-түйіні {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -141,7 +141,7 @@
 1. **Параметрлер** қадамында:
 
    1. Данаға атау мен сипаттама беріңіз.
-   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйіні{/ifndef} қосылады.
+   1. Kubernetes кластерін таңдаңыз. Бұл кластерге сервис данасы Cloud Airflow-ды орналастыру үшін {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s) {/ifdef} кластерінің {ifdef(public)} [worker-түйіні](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology){/ifdef} {ifndef(public)} worker-түйіні{/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 

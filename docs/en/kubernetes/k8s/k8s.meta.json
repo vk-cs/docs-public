@@ -1,8 +1,8 @@
 {
-  "title": "Managed Containers",
-  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
+  "title": "Managed Containers for first-generation clusters",
+  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads on first-generation clusters",
   "metaDescription": "",
-  "sectionTitle": "Managed Containers",
+  "sectionTitle": "Managed Containers for first-generation clusters",
   "icon": "",
   "relativeSections": [
     {
@@ -12,16 +12,7 @@
   "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
   }
 }

@@ -1,0 +1,13 @@
+{
+  "title": "Подтар",
+  "shortDescription": "Kubernetes-тегі подтар туралы жалпы мәліметтер",
+  "metaDescription": "VK Cloud-тағы Managed Containers сервисінің негізгі ұғымдары мен объектілері. Подтардың не екенін және олардың Kubernetes-те қалай қолданылатынын біліңіз",
+  "sectionTitle": "Подтар",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

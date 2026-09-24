@@ -21,7 +21,7 @@ Managed Containers сервисіндегі Kubernetes кластеры екі �
 
 - _Master-түйіндер_ бүкіл кластердің күйі туралы ақпаратты сақтайды және жұмыс жүктемесін worker-түйіндер арасында бөлуді басқарады. Пайдаланушыларға master-түйіндерді басқару қолжетімді емес, ол {var(cloud)} платформасы жағында жүзеге асырылады.
 
-  Kubernetes кластерін {linkto(../../instructions/create-cluster/create-webui-gen-2#k8s-create-webui-gen-2)[text=құрған кезде]}, Managed Containers оның master-түйіндері үшін ең аз сәйкес келетін {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-concepts-vm-flavor)[text=конфигурация үлгісін]} таңдайды. Әдепкі бойынша бұл Intel Cascade Lake процессоры, 2 CPU және 6 ГБ жедел жады бар ВМ. Master-түйіндердің {linkto(../storage#k8s-storage-supported-storage-types)[text=диск түрі]} — 20 ГБ көлеміндегі High-IOPS SSD.
+  Kubernetes кластерін {linkto(../../instructions/create-cluster/create-webui#k8s-create-webui)[text=құрған кезде]}, Managed Containers оның master-түйіндері үшін ең аз сәйкес келетін {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-concepts-vm-flavor)[text=конфигурация үлгісін]} таңдайды. Әдепкі бойынша бұл Intel Cascade Lake процессоры, 2 CPU және 6 ГБ жедел жады бар ВМ. Master-түйіндердің {linkto(../storage#k8s-storage-supported-storage-types)[text=диск түрі]} — 20 ГБ көлеміндегі High-IOPS SSD.
 
   Master-түйіндерде {linkto(../scale#k8s-scale-types)[text=автоматты масштабтау]} әдепкі бойынша қосылған, сондықтан кластерге түсетін жүктеме өзгерген кезде оның есептеу ресурстарының саны автоматты түрде өзгертіледі.
 
@@ -88,12 +88,12 @@ Managed Containers кластерлерінің API-эндпоинті {linkto(.
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI) — желілік ішкі жүйелермен интеграция.
 
-  Managed Containers сервисінде жасайтын Kubernetes кластерлерінде CNI қолдайтын плагиндер іске асырылған: [Calico](https://projectcalico.docs.tigera.io/about/about-calico) және [Cilium](https://docs.cilium.io/en/stable/index.html) (тек екінші буындағы кластерлер үшін қолжетімді). Олар мыналарды қамтамасыз етеді:
+  Managed Containers сервисінде жасайтын Kubernetes кластерлерінде CNI қолдайтын [Calico](https://projectcalico.docs.tigera.io/about/about-calico) плагині іске асырылған. Ол мыналарды қамтамасыз етеді:
 
   - контейнерлер, {linkto(../../reference/pods#k8s-pods)[text=подтар]} және кластер түйіндері арасындағы желілік байланысты;
   - Kubernetes [желілік саясаттарын](https://kubernetes.io/docs/concepts/services-networking/network-policies/) (Network Policies) қолдану және сақтау.
 
-  Calico және Cilium SDN Sprut көмегімен {var(cloud)} платформасымен интеграцияланады. Толығырақ {linkto(../network#k8s-network)[text=Кластердегі желі]} бөлімінде.
+  Calico SDN Sprut көмегімен {var(cloud)} платформасымен интеграцияланады. Толығырақ {linkto(../network#k8s-network)[text=Кластердегі желі]} бөлімінде.
 
 ## {heading(Open Policy Agent кірістірілген қолдауы)[id=k8s-architecture-opa-gatekeeper]}
 

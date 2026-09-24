@@ -14,7 +14,7 @@ To create VM:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Verify that the account balance is positive and there are enough [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
 1. Go to **Cloud Servers → Virtual machines**.
 1. Click the **Create Instance** or **Add** button.

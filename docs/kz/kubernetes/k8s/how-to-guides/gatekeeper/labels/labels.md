@@ -199,6 +199,4 @@ Gatekeeper жұмысын көрсету үшін мыналар жасалад�
 
    {/tabs}
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

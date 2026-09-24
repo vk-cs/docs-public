@@ -19,13 +19,13 @@ In Managed Containers, Kubernetes clusters version 1.23 and higher are tightly i
 
 {note:info}
 
-To get the same capabilities for older clusters, [upgrade](../../instructions/update) to version 1.23 or higher.
+To get the same capabilities for older clusters, [upgrade](/en/kubernetes/k8s/instructions/update) to version 1.23 or higher.
 
 {/note}
 
 ## How does the authentication process work
 
-When using [kubectl](../../connect/kubectl), the `keystone-auth` utility is responsible for authentication.
+When using [kubectl](/en/kubernetes/k8s/connect/kubectl), the `keystone-auth` utility is responsible for authentication.
 
 The cluster configuration file is used for the operation of kubectl ([kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)). This file contains all the user's details, except for the password (it is not specified for security reasons). Therefore, when using kubectl, the keystone-auth utility will require you to enter the user's password interactively in order to authenticate:
 
@@ -33,9 +33,9 @@ The cluster configuration file is used for the operation of kubectl ([kubeconfig
 Please enter password:
 ```
 
-After successful authentication, a token with a short lifetime is issued, which gives temporary access to the cluster. When the token expires, `keystone-auth` will require you to enter the password again in order to update the token. This will happen both when working with kubectl and with other tools that work with such tokens — for example, `kauthproxy` uses them for authentication in the [web interfaces of cluster components and add-ons](../../connect).
+After successful authentication, a token with a short lifetime is issued, which gives temporary access to the cluster. When the token expires, `keystone-auth` will require you to enter the password again in order to update the token. This will happen both when working with kubectl and with other tools that work with such tokens — for example, `kauthproxy` uses them for authentication in the [web interfaces of cluster components and add-ons](/en/kubernetes/k8s/connect).
 
-This authentication process is inconvenient when working with automated tools that need access to the cluster. To provide access to the cluster for such tools, [create a kubeconfig file for the service account](../../how-to-guides/sa-kubeconfig). This kubeconfig contains the details of the service account and the corresponding token with an infinite lifetime, which allows you to authenticate without entering a password.
+This authentication process is inconvenient when working with automated tools that need access to the cluster. To provide access to the cluster for such tools, [create a kubeconfig file for the service account](/en/kubernetes/k8s/how-to-guides/sa-kubeconfig). This kubeconfig contains the details of the service account and the corresponding token with an infinite lifetime, which allows you to authenticate without entering a password.
 
 ## {heading(Relationship between the roles of management console and Kubernetes)[id=kubernetes-roles-relation]}
 

@@ -44,7 +44,7 @@ If the organization works with VK Cloud on [prepayment](../../concepts/physical-
 
 To complete additional registration:
 
-1. [Go to](https://cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to project settings in one of the ways:
 
     - Click the **Fill in** button in the **Fill in the company details** card on the main page.
@@ -74,7 +74,7 @@ To complete additional registration:
 You will not be able to edit company data if it was entered when [concluding an individual contract](#individual_contract). If you need to modify this data, please contact your VK Cloud manager or email [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
 {/note}
 
-1. [Go to](https://cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to project settings in one of the ways:
 
     - Click the **Fill in** button in the **Fill in the company details** card on the main page.

@@ -1,6 +1,6 @@
-The supported versions of components and [add-ons](../../addons-and-settings/addons) depend on the version of the Kubernetes cluster.
+The supported versions of components and [add-ons](/en/kubernetes/k8s/concepts/addons-and-settings/addons) depend on the version of the Kubernetes cluster.
 
-When [updating a cluster](../../../instructions/update), some of its components are also updated. If you delete a component that is supposed to be updated with the cluster, it will be restored during the next cluster update.
+When [updating a cluster](/en/kubernetes/k8s/instructions/update), some of its components are also updated. If you delete a component that is supposed to be updated with the cluster, it will be restored during the next cluster update.
 
 Add-ons are not updated with the cluster updates. If a new add-on version is available, you can [update](/en/kubernetes/k8s/instructions/addons/manage-addons#updating_addon_version) it manually. 
 
@@ -51,7 +51,7 @@ The table shows the supported component versions for different Kubernetes cluste
 |3.14.2
 
 |[Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
-|![](../../../../../assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 |2.7.0
 |2.7.0
 |2.7.0
@@ -67,7 +67,7 @@ The table shows the supported component versions for different Kubernetes cluste
 |0.7.1
 
 |[Shell-operator](https://github.com/flant/shell-operator)
-|![](../../../../../assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 |1.0.9
 |1.0.9
 |1.0.9
@@ -132,7 +132,7 @@ The table shows the supported component versions for different Kubernetes cluste
 
 ## Add-ons
 
-You can separately [install](../../../instructions/addons/manage-addons#installing_addon) the add-ons you need in your cluster. The table shows the supported add-on versions for different Kubernetes cluster versions.
+You can separately [install](/en/kubernetes/k8s/instructions/addons/manage-addons#installing_addon) the add-ons you need in your cluster. The table shows the supported add-on versions for different Kubernetes cluster versions.
 
 [cols="2,1,1,1,1,1,1", options="header"]
 |===
@@ -145,7 +145,7 @@ You can separately [install](../../../instructions/addons/manage-addons#installi
 .^|1.28.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
-|![](../../../../../assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 |0.7.2
 |0.7.2
 |0.7.2
@@ -176,7 +176,7 @@ You can separately [install](../../../instructions/addons/manage-addons#installi
 |0.43.0
 |0.43.0
 
-|[Fluent Bit for Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|[Fluent Bit for Cloud Logging<br>(logaas-integration)](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum)
 |0.48.5
 |0.34.2
 |0.34.2
@@ -225,7 +225,7 @@ You can separately [install](../../../instructions/addons/manage-addons#installi
 |0.71.4
 
 |[Kiali](https://github.com/kiali/kiali)
-|![](../../../../../assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
 |2.4.0
 |2.4.0
 |2.4.0
@@ -283,7 +283,7 @@ You can separately [install](../../../instructions/addons/manage-addons#installi
 | ![](/en/assets/no.svg "inline")
 | ![](/en/assets/no.svg "inline")
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../instructions/addons/advanced-installation/install-advanced-logaas-integration)
+|[Fluent Bit для Cloud Logging<br>(logaas-integration)](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum)
 |0.34.2
 |0.34.2
 |0.34.2

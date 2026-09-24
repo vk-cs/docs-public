@@ -1,0 +1,1 @@
+How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies.

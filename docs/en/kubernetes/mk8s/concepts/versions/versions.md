@@ -1,0 +1,1 @@
+It contains information about the available versions of Kubernetes and components that can be deployed in VK Cloud. The version support policy is also provided.

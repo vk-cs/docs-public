@@ -1,8 +1,8 @@
-# {heading(Terraform көмегімен бірінші буындағы кластерді құру)[id=k8s-create-terraform]}
+# {heading(Terraform көмегімен кластерді құру)[id=k8s-create-terraform]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде Terraform көмегімен {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буындағы]} кластерді құру сипатталады. Сондай-ақ бірінші буындағы кластерді {linkto(../create-webui#k8s-create-webui)[text=VK Cloud жеке кабинетінде]} де құра аласыз.
+Төменде Terraform көмегімен кластерді құру сипатталады. Сондай-ақ кластерді {linkto(../create-webui#k8s-create-webui)[text=VK Cloud жеке кабинетінде]} де құра аласыз.
 
 Әртүрлі кластерлерді құруға арналған дайын конфигурациялық файлдар мысалдары Terraform бөлімінде [келтірілген](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create).
 

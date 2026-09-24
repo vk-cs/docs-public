@@ -1,0 +1,13 @@
+{
+  "title": "Кластерлер буындары",
+  "shortDescription": "Managed Containers сервисіндегі Kubernetes бірінші және екінші буын кластерлерінің айырмашылығы неде",
+  "metaDescription": "VK Cloud платформасындағы Managed Containers сервисіндегі бірінші және екінші буын кластерлерінің айырмашылықтары туралы біліңіз: Managed Kubernetes артықшылықтары, автоматтандыру, сервистік жобалар арқылы басқару",
+  "sectionTitle": "Кластерлер буындары",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

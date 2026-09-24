@@ -10,7 +10,7 @@ Only the project owner can assign a different role to a super administrator.
 
 {tab(Management console)}
 
-1.  [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
+1.  [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 2.  Go to the **Access management** section on the **Users and roles** tab.
 3.  Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Edit**.
 4.  Select one of the [basic roles](/en/access/iam/concepts/roles-reference#basic_roles): `Super Administrator`, `Project Administrator`, `User access administrator`, or `Viewer`.

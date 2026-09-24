@@ -140,8 +140,6 @@
 {"echo-production"=>896, "echo-canary"=>104}
 ```
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-k8s-canary-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

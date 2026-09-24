@@ -162,7 +162,7 @@
 | 2 дана
 | шектелмеген
 
-| [түйіндер](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) саны
+| [түйіндер](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology) саны
 | **Kubernetes түйіндері**
 | 10 дана
 | шектелмеген
@@ -223,7 +223,7 @@
 |50 дана
 |![](/kz/assets/no.svg "inline")
 
-|Кластердегі [подтар](/kz/kubernetes/k8s/reference/pods) саны
+|Кластердегі [подтар](/kz/kubernetes/mk8s/reference/pods) саны
 |50000 дана
 |![](/kz/assets/no.svg "inline")
 

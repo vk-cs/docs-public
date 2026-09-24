@@ -2,10 +2,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{note:info}
-Бұл аддон тек {linkto(../../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буындағы]} кластерлер үшін қолжетімді.
-{/note}
-
 ## {heading(Дайындық қадамдары)[id=k8s-install-advanced-fluent-bit-prepare]}
 
 {include(/kz/_includes/_addon-prep.md)}
@@ -163,6 +159,6 @@
 
    {/note}
 
-1. По завершении редактирования кода {linkto(k8s-install-advanced-fluent-bit-install)[text=аддонды орнатуды жалғастырыңыз]}.
+1. По завершении редактирования кода {linkto(#k8s-install-advanced-fluent-bit-install)[text=аддонды орнатуды жалғастырыңыз]}.
 
 Пайплайн туралы толығырақ [ресми құжаттамадан](https://docs.fluentbit.io/manual/pipeline) оқуға болады.

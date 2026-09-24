@@ -1,1 +1,0 @@
-Installation and configuration of the Fluent Bit for Cloud Logging (`logaas-integration`) add-on in the [first- and second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.

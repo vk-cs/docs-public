@@ -385,8 +385,6 @@
    1. {linkto(../../connect/addons-ui#k8s-addons-ui-web-ui)[text=Қосылыңыз]} Kube Prometheus Stack аддоны құрамына кіретін Grafana веб-интерфейсіне. 
    1. **Home → Dashboards → General → VPA Recommendations** бөліміндегі дашбордтарды қараңыз. 
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-vertical-pod-autoscaler-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

@@ -6,7 +6,7 @@ Use Service Users REST API to manage [service accounts](/en/access/iam/concepts/
 
 {cut(Obtaining an endpoint, authorization, and authentication)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. [Enable](/en/access/iam/instructions/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
 1. Enable API access if it hasn't been done yet:
 

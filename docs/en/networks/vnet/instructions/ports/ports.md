@@ -13,7 +13,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
@@ -81,7 +81,7 @@ openstack port show --help
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
@@ -127,7 +127,7 @@ openstack port create --help
 
 This is a group operation: you can enable multiple disabled ports at once, if necessary, by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
@@ -179,7 +179,7 @@ A disabled port does not allow any traffic to pass through.
 
 This is a group operation: you can disable multiple enabled ports at once, if necessary, by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
@@ -227,7 +227,7 @@ openstack port set --help
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
@@ -335,7 +335,7 @@ It is not possible to delete a port if it is in use by the router.
 
 This is a group operation: you can delete multiple ports at once, if necessary, by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.

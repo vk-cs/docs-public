@@ -1,4 +1,4 @@
-The Ingress controller can be deployed [in conjunction with the TCP load balancer](../../../concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
+The Ingress controller can be deployed [in conjunction with the TCP load balancer](/en/kubernetes/k8s/concepts/network) of the VK Cloud platform. As an example, a simple demo application and an Ingress resource will be deployed to test the operation of the controller.
 
 {note:info}
 
@@ -6,7 +6,7 @@ It is assumed throughout the document that the NGINX Ingress Controller will be 
 
 {/note}
 
-## 1. Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -14,15 +14,15 @@ It is assumed throughout the document that the NGINX Ingress Controller will be 
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-1. [Install](../../../install-tools/helm) Helm if the utility is not already installed.
+1. [Install](/en/kubernetes/k8s/install-tools/helm) Helm if the utility is not already installed.
 
 1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
 
-## 2. Deploy demo applications
+## {counter(tcp)}. Deploy demo applications
 
 These applications will be accessed through the Ingress controller using the Ingress resource.
 
@@ -60,7 +60,7 @@ deployment.apps/coffee   2/2     2            2           ...
 deployment.apps/tea      3/3     3            3           ...
 ```
 
-## 3. Install Ingress Controller
+## {counter(tcp)}. Install Ingress Controller
 
 When installing, select [PROXY](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) operation mode as it is necessary for full interaction with the TCP load balancer. If you install an Ingress controller without support for this protocol, the controller will not be able to handle headers that contain information about the request source.
 
@@ -114,7 +114,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
 Check if the Ingress controller is working by browsing to `http://<IP address assigned to the load balancer>`. If the controller is configured correctly, a page with the status of `HTTP 404` will be displayed.
 
-## 4. Create an Ingress resource
+## {counter(tcp)}. Create an Ingress resource
 
 The Ingress resource will publish the `coffee-svc` and `tea-svc` services through the Ingress controller, thus providing access to the applications.
 
@@ -189,7 +189,7 @@ To create an Ingress resource:
 
     Note that the IP address assigned to Ingress must be the same as the IP address assigned to the Ingress controller. This address belongs to the VK Cloud platform's TCP balancer, which routes incoming traffic to the Ingress controller.
 
-## 5. Check application availability
+## {counter(tcp)}. Check application availability
 
 1. Check that pods named `tea` and `coffee` exist by getting a list of all pods in the `default` namespace:
 

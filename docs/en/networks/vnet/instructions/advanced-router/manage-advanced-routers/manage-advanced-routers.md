@@ -8,7 +8,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**. A list of routers will be displayed. For advanced routers, the **Router Type** column indicates `Advanced`.
 1. Click the name of the router you need. A page will open with detailed information about it. You can [edit](#editing_an_advanced_router) router parameters on this page .
 
@@ -22,7 +22,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**.
 1. Click the **Add router** button.
 1. In the **Router type** field choose `Advanced`. If this field is missing, SDN Sprut is not enabled in your project. Please, contact [technical support](mailto:support@mcs.mail.ru), to enable SDN Sprut and advanced routers.
@@ -49,7 +49,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**.
 1. Open the router editing window by one of the following ways:
 

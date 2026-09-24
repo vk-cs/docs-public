@@ -1,0 +1,13 @@
+{
+  "title": "Pods",
+  "shortDescription": "General information about pods in Kubernetes",
+  "metaDescription": "",
+  "sectionTitle": "Pods",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -4,7 +4,7 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 
@@ -36,7 +36,7 @@ Activation will be required:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Service properties** tab.
@@ -52,7 +52,7 @@ Activation will be required:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Tariff plans** tab.
@@ -69,7 +69,7 @@ Activation will be required:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Tariff plans** tab.
@@ -88,7 +88,7 @@ The update of the service instance will begin, the process may take a long time.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.
@@ -109,7 +109,7 @@ The operation is available if the service instance is in the status **Ошибк
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.
@@ -125,7 +125,7 @@ The operation is available if the service instance is in the status **Ошибк
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Marketplace** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.

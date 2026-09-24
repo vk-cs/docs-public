@@ -22,7 +22,7 @@
 1. At the **Parameters** step:
 
    1. Set a name and description for the instance.
-   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host the Cloud Trino instance.
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host the Cloud Trino instance.
 
       If the desired cluster is not in the list:
 

@@ -105,8 +105,6 @@
 1. **Кластер ресурстары** қойындысына өтіңіз.
 1. **Подтар** тізімін ашып, тізімде `overprovisioning` поды `Running` күйімен қосылғанына көз жеткізіңіз.
 
-{ifdef(public)}
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-autoscaling-placeholder-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

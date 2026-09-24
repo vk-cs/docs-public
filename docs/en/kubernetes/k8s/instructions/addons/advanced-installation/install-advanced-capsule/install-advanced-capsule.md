@@ -1,14 +1,10 @@
-{note:info}
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
-## {heading(Preparatory steps)[id=prep]}
+## {heading(Before you begin)[id=prep]}
 
 {include(/en/_includes/_addon-prep.md)}
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+[Several installation options](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
 {tabs}
 
@@ -20,12 +16,11 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-    1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
     1. Select the project where the needed cluster is located.
     1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Click on the name of the cluster.
     1. Go to the **Addons** tab.
-    1. If there are already installed add-ons in the cluster, click the **Add addon** button.
     1. Click the **Install** button on the `capsule` add-on card.
     1. Select the needed add-on version from the drop-down list.
     1. Click the **Install addon** button.
@@ -87,15 +82,15 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
    1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
-      If there is no such group — [add it](../../../manage-node-group#add_group).
+      If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
-   1. [Customise](../../../manage-node-group#labels_taints) for this node group, if it hasn't already been done:
+   1. [Customise](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
@@ -110,12 +105,11 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install** button on the `capsule` add-on card.
    1. Выберите нужную версию аддона из выпадающего списка.
    1. Нажмите кнопку **Установить аддон**.
@@ -218,12 +212,11 @@ If this is not suitable for you, perform a **standard installation** or **instal
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install** button on the `capsule` add-on card.
    1. Select the necessary add-on version from the drop-down list.
    1. Click the **Install addon** button.

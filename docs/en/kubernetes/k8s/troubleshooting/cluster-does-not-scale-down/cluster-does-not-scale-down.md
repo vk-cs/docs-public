@@ -4,7 +4,7 @@ There might be several possible reasons for this issue. Follow the instructions 
 
 {cut(The node has a pod that cannot be evicted due to the settings of the PodDisruptionBudget object)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Check whether the [Cluster Autoscaler logs](/en/kubernetes/k8s/how-to-guides/autoscaler-logs) have warnings that contain `pdb blocking`. If present, this indicates that one or more ongoing operations are causing pod disruptions, and the number of these disruptions has exceeded the allowable threshold defined in the Pod Disruption Budget (PDB).
 
    {cut(How PDB works)}
@@ -39,7 +39,7 @@ For more details on disruptions and PDB, refer to the [official Kubernetes docum
 
 {cut(The node has system pods with no PDB configured)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Display information about the system pods of the cluster in the `kube-system` namespace:
 
    ```console
@@ -58,7 +58,7 @@ For more details on disruptions and PDB, refer to the [official Kubernetes docum
 
 {cut(The node has a pod without a workload controller)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Display the manifest of the affected pod using the command:
 
    ```console
@@ -74,7 +74,7 @@ For more details on disruptions and PDB, refer to the [official Kubernetes docum
 
 {cut(The node is explicitly marked with an annotation that prohibits Cluster Autoscaler to remove it)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Check if the affected node is marked with an annotation that prohibits Cluster Autoscaler to remove it. Run the command:
 
    ```console
@@ -97,7 +97,7 @@ For more details on disruptions and PDB, refer to the [official Kubernetes docum
 
 {cut(An empty node is still within its grace period before being deleted)}
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. Check whether the [Cluster Autoscaler logs](/en/kubernetes/k8s/how-to-guides/autoscaler-logs) have warnings that contain the following line: 
 
    ```console

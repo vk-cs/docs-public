@@ -1,0 +1,13 @@
+{
+  "title": "Тұжырымдамалар",
+  "shortDescription": "Managed Containers сервисі кластерлерінің жұмыс істеу қағидаттары мен құрылымының толық сипаттамасы",
+  "metaDescription": "Managed Containers: Kubernetes кластерлерінің жұмыс істеу қағидаттары мен құрылымының толық сипаттамасы",
+  "sectionTitle": "Тұжырымдамалар",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

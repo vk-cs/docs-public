@@ -1,0 +1,13 @@
+{
+  "title": "Installing additional tools",
+  "shortDescription": "How to install additional tools in the Kubernetes cluster",
+  "metaDescription": "",
+  "sectionTitle": "Installing additional tools",
+  "icon": "",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

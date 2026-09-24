@@ -1,4 +1,4 @@
-In Managed Containers, you can install [add-ons](../../../concepts/addons-and-settings/addons) in Kubernetes clusters both when [creating a cluster using Terraform](../../create-cluster/create-terraform) and into an existing cluster. You can then view and delete installed add-ons.
+In Managed Containers, you can install [add-ons](/en/kubernetes/k8s/concepts/addons-and-settings/addons) in Kubernetes clusters both when [creating a cluster using Terraform](/en/kubernetes/k8s/instructions/create-cluster/create-terraform) and into an existing cluster. You can then view and delete installed add-ons.
 
 ## {heading(Viewing add-ons)[id=viewing_addons]}
 
@@ -8,16 +8,16 @@ In Managed Containers, you can install [add-ons](../../../concepts/addons-and-se
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
+1. Click the name of the required cluster.
+1. Go to the **Addons** tab.
 
    If there are no add-ons installed in the cluster yet, the cards of available add-ons will be shown on this tab in the **Available addons** block.
    If there are already installed add-ons in the cluster, click on the **Add addon** button and look at the cards of available add-ons.
 
-1. Click to the icon ![Information](./assets/info_icon.svg "inline") on the add-on card to view detailed information about it.
+1. Click to the icon ![Information](/en/kubernetes/k8s/instructions/addons/manage-addons/assets/info_icon.svg "inline") on the add-on card to view detailed information about it.
 
 {/tab}
 
@@ -49,11 +49,11 @@ In Managed Containers, you can install [add-ons](../../../concepts/addons-and-se
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
+1. Click the name of the required cluster.
+1. Go to the **Addons** tab.
 
    The installed add-ons will be listed in the table. The table also shows:
 
@@ -94,7 +94,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
-The procedure for installing add-ons is discussed in the [relevant section](../advanced-installation).
+The procedure for installing add-ons is discussed in the [relevant section](/en/kubernetes/k8s/instructions/addons/advanced-installation).
 
 ## {heading(Editing add-on code)[id=editing_addon_code]}
 
@@ -102,11 +102,11 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
+1. Click the name of the required cluster.
+1. Go to the **Addons** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Edit**.
 1. Make the necessary changes to the add-on setup code.
 1. Click the **Change settings** button.
@@ -150,14 +150,14 @@ To update some add-ons, you will first need to uninstall the previous version.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
+1. Click the name of the required cluster.
+1. Go to the **Addons** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Update**.
 1. In the window that opens, review the changes.
-1. (Optional) [Update](../../update) the cluster version for compatibility with the add-on.
+1. (Optional) [Update](/en/kubernetes/k8s/instructions/update) the cluster version for compatibility with the add-on.
 1. Make the necessary changes to the add-on settings.
 1. Click the **Update** button.
 
@@ -194,11 +194,11 @@ This is a group operation: if necessary, you can delete several add-ons at once 
 
 To remove the add-on:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
+1. Click the name of the required cluster.
+1. Go to the **Addons** tab.
 1. If you want to remove the External Secrets Operator addon, perform additional steps in advance:
 
    1. [Verify](/en/kubernetes/k8s/connect/kubectl) you can connect to the cluster via `kubectl`.
@@ -246,9 +246,6 @@ To remove the add-on:
 {/tabs}
 
 {note:warn}
-Persistent volumes (PVs) created for add-ons are not removed automatically, as they can still contain important data. If necessary, remove them using one of the options:
-
-- [via your management console](/en/kubernetes/k8s/instructions/manage-pvs) (available only for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters)
-- by using a required [reclaim policy](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes)
-  {/note}
+Persistent volumes (PVs) created for add-ons are not removed automatically, as they can still contain important data. If necessary, remove them yourself using a [reclaim policy](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes).
+{/note}
 

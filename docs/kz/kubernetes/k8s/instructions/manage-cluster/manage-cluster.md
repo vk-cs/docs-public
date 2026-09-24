@@ -67,10 +67,6 @@ Managed Containers қызметі арқылы {linkto(../../../../data-platform
 
 {tab(Terraform)}
 
-{note:info}
-Terraform арқылы басқару тек {linkto(../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлері үшін қолжетімді.
-{/note}
-
 {include(/kz/_includes/_pre_terraform.md)}
 1. Команданы орындаңыз:
 

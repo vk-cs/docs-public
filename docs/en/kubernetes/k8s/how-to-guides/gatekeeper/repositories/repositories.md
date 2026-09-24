@@ -1,17 +1,17 @@
-With [Gatekeeper](../../../reference/gatekeeper) you can set a constraint that requires only allowed repositories to be used to download images. For example, this constraint can be useful if company policies require downloading images only from trusted repositories, so that cluster operators do not accidentally run an untrusted application from an untrusted source.
+With [Gatekeeper](/en/kubernetes/k8s/reference/gatekeeper) you can set a constraint that requires only allowed repositories to be used to download images. For example, this constraint can be useful if company policies require downloading images only from trusted repositories, so that cluster operators do not accidentally run an untrusted application from an untrusted source.
 
 To demostrate how Gatekeeper works several objects will be created:
 
 - A constraint template and its corresponding constraint. It will only allow images to be downloaded from the Docker Hub repository.
 - A few Kubernetes resources to test how the constraint works.
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
    Choose the cluster parameters at your own discretion.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster with `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster with `kubectl`.
 
 ## Create a constraint that checks the repositories
 

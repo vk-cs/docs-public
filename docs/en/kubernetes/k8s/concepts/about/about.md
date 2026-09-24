@@ -23,40 +23,40 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 ## Service features
 
-- Management of [cluster](../../instructions/manage-cluster) and [groups of nodes](../../instructions/manage-node-group) using VK Cloud management console and VK Cloud own Terraform provider.
+- Management of [cluster](/en/kubernetes/k8s/instructions/manage-cluster) and [groups of nodes](/en/kubernetes/k8s/instructions/manage-node-group) using the VK Cloud management console and VK Cloud own Terraform provider.
 
-- Manage Managed Containers objects and resources after [connecting to the cluster](../../connect) using `kubectl` or Kubernetes Dashboard.
+- Manage Managed Containers objects and resources after [connecting to the cluster](/en/kubernetes/k8s/connect) using `kubectl` or Kubernetes Dashboard.
 
-- Automatic and manual [cluster scaling](../../instructions/scale).
+- Automatic and manual [cluster scaling](/en/kubernetes/k8s/instructions/scale).
 
   When automatic scaling is enabled, applications instantly get additional computing power when the load peaks. When the load drops, the amount of resources available to the application is reduced.
 
   This approach saves up to 60% of computing resources.
 
-- Creating distributed installations within [VK Cloud regions](../../../../tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/k8s/concepts/architecture#cluster_topologies): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
+- Creating distributed installations within [VK Cloud regions](/en/tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/k8s/concepts/architecture#cluster_topologies): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
 
-- Integration with the [storage subsystem](../storage) and [networking subsystem](../network) of the VK Cloud platform.
+- Integration with the [storage subsystem](/en/kubernetes/k8s/concepts/storage) and [networking subsystem](/en/kubernetes/k8s/concepts/network) of the VK Cloud platform.
 
 - One-click rolling update of clusters with no downtime. This applies to both minor and major versions of Kubernetes.
 
 - Ensuring security at all stages of cluster operation:
 
   - During network communication in the cluster, all connections are encrypted and certificates are used.
-  - You can [apply](../network#supported-cni) network policies: Calico or Cilium. For more details on network policies, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
-  - You can [apply](../architecture#built_in_support_for_the_open_policy_agent) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
-  - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](../../concepts/access-management).
+  - You can [apply](/en/kubernetes/k8s/concepts/network#supported-cni) network policies: Calico or Cilium. For more details on network policies, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+  - You can [apply](/en/kubernetes/k8s/concepts/architecture#built_in_support_for_the_open_policy_agent) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
+  - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](/en/kubernetes/k8s/concepts/access-management).
 
-- [Backup](../../how-to-guides/velero/velero-backup) Kubernetes clusters in the Managed Containers service with Velero.
+- [Backup](/en/kubernetes/k8s/how-to-guides/velero/velero-backup) Kubernetes clusters in the Managed Containers service with Velero.
 
 - Migration of other Kubernetes clusters to Managed Containers using Velero.
 
-- A set of [preconfigured add-ons](../addons-and-settings/addons) which can be selected when [creating a cluster using Terraform](../../instructions/create-cluster) or [install](../../instructions/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
-- A set of [preconfigured settings](../addons-and-settings/settings), which help improve cluster stability and security.
+- A set of [preconfigured add-ons](/en/kubernetes/k8s/concepts/addons-and-settings/addons) which can be selected when [creating a cluster using Terraform](/en/kubernetes/k8s/instructions/create-cluster) or [install](/en/kubernetes/k8s/instructions/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
+- A set of [preconfigured settings](/en/kubernetes/k8s/concepts/addons-and-settings/settings), which help improve cluster stability and security.
 
-- Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](../../monitoring).
+- Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](/en/kubernetes/k8s/monitoring).
 
 ## What's next
 
-- [Get to know the service architecture](../architecture).
-- [Get to know the network structure in the cluster](../network).
-- [Get to know the storage device in the cluster](../storage).
+- [Get to know the service architecture](/en/kubernetes/k8s/concepts/architecture).
+- [Get to know the network structure in the cluster](/en/kubernetes/k8s/concepts/network).
+- [Get to know the storage device in the cluster](/en/kubernetes/k8s/concepts/storage).

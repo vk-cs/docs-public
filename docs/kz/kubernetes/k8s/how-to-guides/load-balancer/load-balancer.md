@@ -402,6 +402,4 @@
 
 1. `coffee-svc-public-static-ip` сервисіне тағайындалған статикалық жария IP мекенжайын {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=жойыңыз]}.
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

@@ -63,10 +63,6 @@ Different information is available for running and stopped clusters. Terraform a
 
 {tab(Terraform)}
 
-{note:info}
-Using Terraform is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
 {include(/en/_includes/_pre_terraform.md)}
 1. Run the command:
 
@@ -88,11 +84,11 @@ Available props:
 - `kubectl` configuration file;
 - Kubernetes Dashboard secret (it can only be obtained when the cluster is running).
 
-The operations to get these props are described in detail in [Connecting](../../connect) section.
+The operations to get these props are described in detail in [Connecting](/en/kubernetes/k8s/connect) section.
 
 ## Change virtual machine type for master nodes
 
-This operation is described in detail in [Cluster node scaling](../scale). You can only perform it when the cluster is running.
+This operation is described in detail in [Cluster node scaling](/en/kubernetes/k8s/instructions/scale). You can only perform it when the cluster is running.
 
 ## {heading(Delete cluster)[id=k8s-manage-cluster-delete]}
 

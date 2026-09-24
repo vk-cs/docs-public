@@ -22,10 +22,6 @@ PV жұмысын қамтамасыз ету үшін VK Cloud-та Kubernetes 
 - Кластер VK Cloud платформасы ұсынатын сақтау қоймаларын {linkto(#k8s-storage-supported-storage-types)[text=қолдайды]}. Блоктық сақтау қоймаларын қолдау {linkto(#k8s-storage-csi)[text=Cinder CSI]} арқылы іске асырылған.
 - Кластерде блоктық сақтау қоймасына арналған, {linkto(#k8s-storage-reclaim-policies)[text=тұрақты томдарды босату саясаттарын]} іске асыратын {linkto(#k8s-storage-storage-classes)[text=алдын ала бапталған сақтау кластары]} (storage class) қолжетімді.
 
-## {heading(Тұрақты томдарды (PV) басқару)[id=k8s-storage-pv-disks]}
-
-Managed Containers сервисінде Kubernetes {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін жасалған PV-лерді {linkto(../../instructions/manage-pvs#k8s-manage-pvs)[text=басқаруға]} болады. Мұндай PV-лер VK Cloud платформасы басқаратын {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервистік жобада]} орналасады. Кластерді жою немесе көшіру кезінде мұндай PV-лердегі деректерге қолжетімділікті жоғалтпау үшін, оларды сервистік жобадан өз жобаңызға көшіруге болады.
-
 PV-ні көшіруге немесе жоюға оны түйіндер тобына қоспаған жағдайда ғана болады.
 
 ## {heading(VK Cloud қолдайтын сақтау қоймаларының түрлері)[id=k8s-storage-supported-storage-types]}
@@ -84,10 +80,7 @@ PV үшін осы томмен байланысты PVC жойылған кез
 
 Тұрақты томды {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs-prepare)[text=динамикалық дайындау]} кезінде сақтау класын көрсету қажет. Әдепкі сақтау класы Managed Containers кластерлерінде бапталмаған. Әдепкі класты өзіңіз таңдай аласыз немесе PVC жасау кезінде қажетті класты нақты көрсете аласыз.
 
-Managed Containers сервисінде блоктық сақтау қоймалары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау кластары бар. Олар тұрақты томды динамикалық дайындау кезінде пайдалануға болатын әртүрлі сақтау түрлерін ұсынады:
-
-- Белгілі бір {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңір]} үшін қолжетімділік аймағын көрсете отырып. 
-- Кез келген өңір мен қолжетімділік аймағы үшін. Мұндай сақтау кластары мультиаймақтық деп аталады. Мультиаймақтық сақтау кластары тек {linkto(../cluster-generations#k8s-cluster-generations)[text=екінші буын]} кластерлері үшін қолжетімді. Олармен жұмыс істеу туралы толығырақ {linkto(../../how-to-guides/multiaz-storage-class#k8s-multiaz-storage-class)[text=Мультиаймақтық сақтау кластарын пайдалану]} бөлімінде берілген.
+Managed Containers сервисінде блоктық сақтау қоймалары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау кластары бар. Олар белгілі бір {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңір]} үшін қолжетімділік аймағын көрсете отырып, тұрақты томды динамикалық дайындау кезінде пайдалануға болатын әртүрлі сақтау түрлерін ұсынады.
 
 Әрбір сақтау класына тұрақты томдарды босатудың өз саясаты сәйкес келеді.
 

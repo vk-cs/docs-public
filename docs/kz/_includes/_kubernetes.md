@@ -59,15 +59,15 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 {/note}
 
-1. `docker-registry` [аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry).
+1. `docker-registry` [аддонын орнатыңыз](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-registry).
 
    Docker тізіліміне қол жеткізу деректерін жазып алыңыз.
 
-1. `kube-prometheus-stack` [аддонын орнатыңыз](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-monitoring).
+1. `kube-prometheus-stack` [аддонын орнатыңыз](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring).
 
    Grafana веб-интерфейсіне қол жеткізу құпиясөзін жазып алыңыз.
 
-1. `ingress-nginx` [аддонын](/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-ingress) әдепкі параметрлермен орнатыңыз.
+1. `ingress-nginx` [аддонын](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) әдепкі параметрлермен орнатыңыз.
 
    Жүктеме теңгергішіне арналған Floating IP-мекенжайды жазып алыңыз.
 
@@ -89,7 +89,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 Хостқа келесі құралдарды орнатыңыз:
 
 - Браузер.
-- `kubectl` утилитасы. Толығырақ [kubectl көмегімен кластерге қосылу](/kz/kubernetes/k8s/connect/kubectl#podgotovitelnye_shagi) бөлімінде және [ресми құжаттамада](https://kubernetes.io/docs/tasks/tools/#kubectl).
+- `kubectl` утилитасы. Толығырақ [kubectl көмегімен кластерге қосылу](/kz/kubernetes/mk8s/connect/kubectl#mk8s-kubectl-before-work) бөлімінде және [ресми құжаттамада](https://kubernetes.io/docs/tasks/tools/#kubectl).
 
   {note:warn}
 
@@ -99,7 +99,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
   {/note}
 
-- `client-keystone-auth` утилитасы. Толығырақ [kubectl көмегімен кластерге қосылу](/kz/kubernetes/k8s/connect/kubectl) бөлімінде.
+- `client-keystone-auth` утилитасы. Толығырақ [kubectl көмегімен кластерге қосылу](/kz/kubernetes/mk8s/connect/kubectl) бөлімінде.
 - [curl](https://curl.se/download.html) утилитасы.
 - [Docker Engine](https://docs.docker.com/engine/install/):
     - Windows және macOS үшін: Docker Desktop.
@@ -192,7 +192,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 ## {counter(kuber_level_1)}. Кластер мониторингі құралдарына қол жеткізіңіз
 
-Кластерде Prometheus және Grafana негізіндегі [мониторинг құралдары](/kz/kubernetes/k8s/monitoring) бар аддон орнатылды.
+Кластерде Prometheus және Grafana негізіндегі [мониторинг құралдары](/kz/kubernetes/mk8s/monitoring) бар аддон орнатылды.
 
 1. Терминалдың бөлек сессиясында команданы орындаңыз:
 
@@ -215,9 +215,9 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 1. Кластер ресурстары туралы ақпарат алу үшін бүйірлік мәзірден кез келген алдын ала бапталған дашбордты **Dashboards → Browse** таңдаңыз.
 
-## {heading({counter(kuber_level_1)}. Қажетті образдарды Docker тізіліміне жүктеңіз)[id=k8s-quick-start-upload-to-registry]}
+## {heading({counter(kuber_level_1)}. Қажетті образдарды Docker тізіліміне жүктеңіз)[id=mk8s-quick-start-upload-to-registry]}
 
-Кластерде Docker-образдар сақталатын [Docker тізілімі](/kz/kubernetes/k8s/connect/docker-registry) аддоны орнатылды.
+Кластерде Docker-образдар сақталатын [Docker тізілімі](/kz/kubernetes/mk8s/connect/docker-registry) аддоны орнатылды.
 
 {note:info}
 
@@ -729,9 +729,9 @@ K8S Persistent Volume status: present
 1. Persistent Volume Claim көмегімен VK Cloud сақтау орнын подтарға монтирлеуге болады.
 1. Кластермен бірге берілетін Ingress-контроллер дұрыс бапталған, себебі ол сұрау көзіне тиесілі нақты IP-мекенжайды көрсетеді.
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=k8s-quick-start-delete-resources]}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=mk8s-quick-start-delete-resources]}
 
 Жұмыс істеп тұрған кластер есептеу ресурстарын тұтынады. Егер ол сізге енді қажет болмаса:
 
-- Кейінірек пайдалану үшін кластерді [тоқтатыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#zapustit_ili_ostanovit_klaster) немесе оны біржола [жойыңыз](/kz/kubernetes/k8s/instructions/manage-cluster#delete_cluster).
+- Кейінірек пайдалану үшін кластерді [тоқтатыңыз](/kz/kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-stop) немесе оны біржола [жойыңыз](/kz/kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-delete).
 - Жүктеме теңгергіштерін [жойыңыз](/kz/networks/balancing/instructions/manage-lb#udalenie_balansirovshchika_nagruzki).

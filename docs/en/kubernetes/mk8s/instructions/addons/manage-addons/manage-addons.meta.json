@@ -1,0 +1,13 @@
+{
+  "title": "Add-ons management",
+  "shortDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
+  "metaDescription": "How to view, install and remove add-ons in a Kubernetes cluster",
+  "sectionTitle": "Add-ons management",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

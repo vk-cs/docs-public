@@ -23,7 +23,7 @@ Docker Hub-ты баптау үшін:
       docker pull mirror.gcr.io/<имя_образа>
       ```
 
-  1. Жүктеп алынған образды жеке репозиторийге {linkto(../../../k8s/quick-start#k8s-quick-start-upload-to-registry)[text=жүктеңіз]}.
+  1. Жүктеп алынған образды жеке репозиторийге жүктеңіз.
 
   {/tab}
 

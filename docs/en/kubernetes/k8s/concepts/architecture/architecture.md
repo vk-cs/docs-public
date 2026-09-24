@@ -17,7 +17,7 @@ A Kubernetes cluster in Managed Containers consists of two types of nodes, maste
 
 - _Master nodes_ store cluster-wide state information and manage workload distribution across worker nodes. Users cannot manage cluster nodes, as they are managed by the VK Cloud platform.
 
-  When you [create](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster in Managed Containers, it automatically selects the minimum appropriate [configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for its master nodes. By default, it is a VM with an Intel Cascade Lake processor, 2 CPUs, and 6 GB RAM. The default [disk type](/en/kubernetes/k8s/concepts/storage#storage_types) for master nodes is a 20 GB High-IOPS SSD.
+  When you [create](/en/kubernetes/k8s/instructions/create-cluster/create-webui) a Kubernetes cluster in Managed Containers, it automatically selects the minimum appropriate [configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for its master nodes. By default, it is a VM with an Intel Cascade Lake processor, 2 CPUs, and 6 GB RAM. The default [disk type](/en/kubernetes/k8s/concepts/storage#storage_types) for master nodes is a 20 GB High-IOPS SSD.
 
   [Automatic scaling](/en/kubernetes/k8s/concepts/scale#autoscaling) is enabled for all master nodes by default. When the workload of the cluster changes, the amount of the resources used by master nodes changes respectively.
 
@@ -63,13 +63,13 @@ Master and worker nodes use the AlmaLinux OS (starting with Kubernetes 1.31).
 
 The cluster runs containers via Kubernetes [Container Runtime Interface](https://kubernetes.io/docs/concepts/architecture/cri/) (CRI) with CRI-O.
 
-See [Available Kubernetes versions and version support policy](../versions) for details.
+See [Available Kubernetes versions and version support policy](/en/kubernetes/k8s/concepts/versions) for details.
 
 ## {heading(Integration with the Kubernetes API)[id=kubernetes-api-integration]}
 
 All interaction with the cluster is through the [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
-The cluster API endpoint in the Managed Containers service is placed behind [dedicated load balancer](../network), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
+The cluster API endpoint in the Managed Containers service is placed behind [dedicated load balancer](/en/kubernetes/k8s/concepts/network), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
 
 ## Integration with VK Cloud platform
 
@@ -80,28 +80,28 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
   Allows to use VK Object Storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
   Persistent Volume Claim (PVC) is available.
 
-  Integration is achieved using OpenStack Cinder API. See [Storage in cluster](../storage) for details.
+  Integration is achieved using OpenStack Cinder API. See [Storage in cluster](/en/kubernetes/k8s/concepts/storage) for details.
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI): integration with network services.
 
-  Every Kubernetes cluster that you create in Managed Containers has plugins that support this interface: [Calico](https://projectcalico.docs.tigera.io/about/about-calico) and [Cilium](https://docs.cilium.io/en/stable/index.html) (only available for [second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters).
+  Every Kubernetes cluster that you create in Managed Containers has a plugin that supports the [Calico](https://projectcalico.docs.tigera.io/about/about-calico) interface.
 
-  These plugins provide:
+  This plugin provides:
 
-  - Network connectivity between containers, [pods](../../reference/pods), and cluster nodes
+  - Network connectivity between containers, [pods](/en/kubernetes/k8s/reference/pods), and cluster nodes
   - Application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
-  Calico integrates with VK Cloud platform using SDN Sprut. See [Network in cluster](../network) for details.
+  Calico integrates with VK Cloud platform using SDN Sprut. See [Network in cluster](/en/kubernetes/k8s/concepts/network) for details.
 
 ## Built-in support for the Open Policy Agent
 
 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) can access various information and components of a Kubernetes cluster. With certain settings, pods themselves and the Kubernetes cluster in which they run can be vulnerable to attacks.
 
-[Open Policy Agent Gatekeeper](../../reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
+[Open Policy Agent Gatekeeper](/en/kubernetes/k8s/reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
 ## Cluster scaling options
 
-Managed Containers has built-in [scaling capabilities for master nodes and worker nodes](../scale) that automatically adjusts the number of nodes depending on the workload requirements:
+Managed Containers has built-in [scaling capabilities for master nodes and worker nodes](/en/kubernetes/k8s/concepts/scale) that automatically adjusts the number of nodes depending on the workload requirements:
 
 - For master nodes, automatic scaling is enabled by default, and you cannot disable it. 
 - For worker nodes, automatic scaling is performed via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler), and you need to manually enable it for each worker node group when [configuring its settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings).

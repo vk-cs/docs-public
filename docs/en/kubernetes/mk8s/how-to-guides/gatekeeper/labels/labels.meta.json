@@ -1,0 +1,13 @@
+{
+  "title": "Configuring mandatory labels",
+  "shortDescription": "How to create a Gatekeeper constraint that checks mandatory labels",
+  "metaDescription": "",
+  "sectionTitle": "Configuring mandatory labels",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

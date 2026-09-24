@@ -1,6 +1,6 @@
-The following describes how to create a [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) cluster from your management console. You can also create a first-generation cluster [with Terraform](../create-terraform).
+The following describes how to create a Kubernetes cluster from your management console. You can also create a cluster [with Terraform](/en/kubernetes/k8s/instructions/create-cluster/create-terraform).
 
-Creating first-generation clusters from the management console is disabled for new users and is only available on request via [technical support](mailto:support@mcs.mail.ru). By default, only [second-generation](/en/kubernetes/k8s/instructions/create-cluster/create-webui-gen-2) clusters are available: they feature improved performance and stability. 
+Creating [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters from the management console is disabled for new users and is only available on request via [technical support](mailto:support@mcs.mail.ru). By default, only second-generation clusters are [available](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2): they feature improved performance and stability.
 
 
 {note:warn}
@@ -16,7 +16,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 1. Run the cluster creation wizard:
 
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
-   1. Select the [project](../../../../../tools-for-using-services/account/concepts/projects) to place the cluster in.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) to place the cluster in.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
    1. Select the **Previous generation** option and click the **Continue** button.
@@ -36,7 +36,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
      
    - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for fault-tolerant clusters is automatically set to `3`, but you can change it to `5`.
 
-      For more information about cluster topologies and possible configurations, see [Service architecture](../../../concepts/architecture#cluster_topologies).
+      For more information about cluster topologies and possible configurations, see [Service architecture](/en/kubernetes/k8s/concepts/architecture#cluster_topologies).
 
    - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#architecture-az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
 
@@ -50,9 +50,9 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
   - **Virtual machine type - Master**: select the [VM configuration template](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for master nodes.
 
-     Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
+     Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for details.
 
-  - **Master disk type**: [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
+  - **Master disk type**: [storage type](/en/kubernetes/k8s/concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
 
   - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
 
@@ -96,9 +96,9 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
       By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](/en/monitoring-services/monitoring/instructions/mon-setup-new).
 
-1. In the **Node group** block, click the **Set up** button and specify the [settings](../../helpers/node-group-settings) for the worker node group.
+1. In the **Node group** block, click the **Set up** button and specify the [settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings) for the worker node group.
 
-   1. (Optionally) Add one or more worker-node groups by clicking the **Add node group** button, and [configure](../../helpers/node-group-settings) them.
+   1. (Optionally) Add one or more worker-node groups by clicking the **Add node group** button, and [configure](/en/kubernetes/k8s/instructions/helpers/node-group-settings) them.
 
    1. (Optionally) Delete a node group you no longer need by clicking the **Delete node group** button in the respective group.
 
@@ -110,6 +110,6 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
 ## What's next?
 
-- [Set up the environment](../../../connect) on the host from which you plan to connect to the cluster.
-- [Familiarize yourself with the usage scenarios](../../../how-to-guides) of the cluster.
-- [Familiarize yourself with the concepts](../../../concepts) of the container service.
+- [Set up the environment](/en/kubernetes/k8s/connect) on the host from which you plan to connect to the cluster.
+- [Familiarize yourself with the usage scenarios](/en/kubernetes/k8s/how-to-guides) of the cluster.
+- [Familiarize yourself with the concepts](/en/kubernetes/k8s/concepts) of the container service.

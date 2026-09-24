@@ -246,7 +246,7 @@ For more details on creating virtual networks using Terraform, see the hands-on 
 
 Make sure that the network and infrastructure were created successfully:
 
-1. [Go to](https://cloud.vk.com/app/) the VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/) your VK Cloud management console.
 1. Go to **Virtual networks** → **VPN**. Make sure the VPN connection is created and includes all resources added in the example.
 
 ## Delete unused resources

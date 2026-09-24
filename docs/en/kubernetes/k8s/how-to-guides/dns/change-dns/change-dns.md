@@ -9,7 +9,7 @@ This article shows an example of changing the IP addresses of DNS servers that a
 1. On the **General Information** tab, find out the name of the network and subnet where the cluster is located.
 1. Contact your DNS provider for the IP addresses of the DNS servers that should be used instead of those assigned to the cluster.
 
-## 1. Change DNS server addresses in network settings
+## {counter(dns)}. Change DNS server addresses in network settings
 
 1. Get the ID of the subnet you want to edit:
 
@@ -37,13 +37,13 @@ This article shows an example of changing the IP addresses of DNS servers that a
    openstack subnet set --dns-nameserver <DNS_ADDRESS_1> --dns-nameserver <DNS_ADDRESS_2> --dns-nameserver <DNS_ADDRESS_3> <SUBNET_ID>
    ```
 
-## 2. Reboot the cluster
+## {counter(dns)}. Reboot the cluster
 
 To apply the changes:
 
-1. [Stop](../../../instructions/manage-cluster#stop) your cluster and wait for all nodes to completely shut down.
+1. [Stop](/en/kubernetes/k8s/instructions/manage-cluster#stop) your cluster and wait for all nodes to completely shut down.
 
-1. [Start](../../../instructions/manage-cluster) the cluster again and wait for all nodes to initialize.
+1. [Start](/en/kubernetes/k8s/instructions/manage-cluster) the cluster again and wait for all nodes to initialize.
 
 {note:warn}
 

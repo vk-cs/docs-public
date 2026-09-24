@@ -2,7 +2,7 @@
 
 Apache Spark — үлкен деректерді үлестірілген өңдеуге арналған сервис. Ол Java, Scala, Python және R тілдеріндегі API интерфейстерінен, сондай-ақ SQL үшін [Spark SQL](https://spark.apache.org/docs/latest/sql-programming-guide.html) өңдеу құралдарынан, [Pandas API](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_ps.html), машиналық оқытуға арналған [MLlib](https://spark.apache.org/docs/latest/ml-guide.html), графтарды өңдеуге арналған [GraphX](https://spark.apache.org/docs/latest/graphx-programming-guide.html) және ағындық өңдеуге арналған [Structured Streaming](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) құралдарынан тұрады. Көбіне Spark Hadoop кластерінің құрамында қолданылады.
 
-Cloud Spark — [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) және VK Cloud ұсынатын [PaaS Kubernetes](/kz/kubernetes/k8s) негізіндегі шешім. Ол Hadoop кластерін пайдаланбай, Docker Registry ішіндегі образдың көмегімен Spark-ты Kubernetes ішінде өрістетуге мүмкіндік береді.
+Cloud Spark — [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) және VK Cloud ұсынатын [Managed Containers](/kz/kubernetes/mk8s) негізіндегі шешім. Ол Hadoop кластерін пайдаланбай, Docker Registry ішіндегі образдың көмегімен Spark-ты Kubernetes ішінде өрістетуге мүмкіндік береді.
 
 ## Сервис қандай міндеттерге жарайды
 

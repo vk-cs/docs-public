@@ -11,8 +11,8 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 ## {heading(Before you start )[id=prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
-1. [Install and configure](../../connect/kubectl) `kubectl`, if you have not done it already.
-1. [Connect](../../connect/kubectl#check_connection) to the cluster using `kubectl`.
+1. [Install and configure](/en/kubernetes/k8s/connect/kubectl) `kubectl`, if you have not done it already.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#check_connection) to the cluster using `kubectl`.
 1. Prepare the CPU and RAM data of the scaling node:
 
     1. In the terminal with a session connected to the cluster, run the command:
@@ -31,7 +31,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
        The response will return a detailed description of the node. In the `Allocatable` parameter, find the values of `cpu` and `memory`. Save these values. This example uses `cpu: 940m` and `memory: 1454740Ki`.
 
-## {heading(1. Configure adding empty pod to cluster)[id=set]}
+## {heading({counter(placeholder)}. Configure adding empty pod to cluster)[id=set]}
 
 1. Create a `placeholder.yaml` file on your computer.
 1. Add the following content to it and save:
@@ -92,9 +92,9 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 
    If the command is successful, the response will confirm the creation of `PriorityClass` and `Deployment`.
 
-## {heading(2. Check settings are applied)[id=check]}
+## {heading({counter(placeholder)}. Check settings are applied)[id=check]}
 
-1. [Go to](https://msk.cloud.vk.com/app/) you VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select the project where the cluster you need is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the cluster you need.

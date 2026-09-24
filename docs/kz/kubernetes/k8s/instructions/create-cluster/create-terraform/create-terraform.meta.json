@@ -1,17 +1,12 @@
 {
-  "title": "Terraform көмегімен бірінші буындағы кластерді құру",
+  "title": "Terraform көмегімен кластерді құру",
   "metaDescription": "VK Cloud-та Terraform көмегімен Kubernetes кластерін құру бойынша қадамдық нұсқаулық: дайындық, конфигурацияны сипаттау, Kubernetes нұсқасын таңдау, master-түйіндерді, worker-түйіндер тобын баптау, балансировщиктермен және аддондармен жұмыс",
-  "sectionTitle": "Terraform көмегімен бірінші буындағы кластерді құру",
+  "sectionTitle": "Terraform көмегімен кластерді құру",
   "icon": "",
   "weight": 2,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert"
+      "public"
     ]
   },
   "uuid": "583a8427-15e8-45d4-8287-c1a6d688d9b4"

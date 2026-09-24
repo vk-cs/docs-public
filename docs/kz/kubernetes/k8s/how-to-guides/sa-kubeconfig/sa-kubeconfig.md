@@ -586,6 +586,4 @@ kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-sys
 
    {/tabs}
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

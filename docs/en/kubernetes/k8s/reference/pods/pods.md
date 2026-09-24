@@ -8,7 +8,7 @@ A pod runs one or more application containers:
   {note:info}
 
   - It is not recommended to use multi-container pods unless explicitly needed.
-  - It is recommended to [limit compute resource consumption](../resource-limiting) for the pod's container for stable cluster operation.
+  - It is recommended to [limit compute resource consumption](/en/kubernetes/k8s/reference/resource-limiting) for the pod's container for stable cluster operation.
   
   {/note}
 

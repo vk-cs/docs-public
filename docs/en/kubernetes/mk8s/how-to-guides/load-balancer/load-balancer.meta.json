@@ -1,0 +1,13 @@
+{
+  "title": "Using load balancers",
+  "shortDescription": "How to create load balancers for different purposes",
+  "metaDescription": "",
+  "sectionTitle": "Using load balancers",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

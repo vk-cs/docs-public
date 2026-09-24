@@ -1,10 +1,10 @@
-## {heading(Preparatory steps)[id=prep]}
+## {heading(Before you begin)[id=prep]}
 
 {include(/en/_includes/_addon-prep.md)}
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-The [GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
+The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
 
 1. Prepare a dedicated group of worker nodes for installing the addon, if it is not already done:
 
@@ -18,9 +18,9 @@ The [GPU Operator](../../../../concepts/addons-and-settings/addons#gpu_operator)
    1. Click the name of the cluster.
    1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which addons will be hosted. 
    
-      If there is no such group, [add it](../../../manage-node-group#add_group).
+      If there is no such group, [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
-   1. (Optional) If nodes with GPUs should only run processes that require GPU resources, [set](../../../manage-node-group#labels_taints) a taint for this node group:
+   1. (Optional) If nodes with GPUs should only run processes that require GPU resources, [set](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) a taint for this node group:
 
       - effect `NoSchedule`
       - key `nvidia.com`

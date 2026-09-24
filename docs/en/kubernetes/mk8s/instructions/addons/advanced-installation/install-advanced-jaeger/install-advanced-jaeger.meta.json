@@ -1,0 +1,13 @@
+{
+  "title": "Jaeger",
+  "shortDescription": "",
+  "metaDescription": "Managed Containers service in VK Cloud: configuring and installing the Jaeger add-on.",
+  "sectionTitle": "Jaeger",
+  "icon": "",
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

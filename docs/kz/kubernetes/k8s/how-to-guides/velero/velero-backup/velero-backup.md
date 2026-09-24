@@ -4,10 +4,6 @@
 
 [Velero](https://velero.io/docs/main/) құралын кластер деректерінің резервтік көшірмелерін қолмен жасау және оларды қалпына келтіру үшін пайдаланыңыз.
 
-{note:info}
-Резервтік көшіру үшін Velero пайдалану тек {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде ғана қолдау көрсетіледі.
-{/note}
-
 ## {heading(Дайындық қадамдары)[id=k8s-velero-backup-prepare]}
 
 {include(/kz/_includes/_create-test-cluster.md)}
@@ -283,6 +279,4 @@
 
    Қажет болса, сондай-ақ {linkto(/kz/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=бакеттің өзін де жойыңыз]}.
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

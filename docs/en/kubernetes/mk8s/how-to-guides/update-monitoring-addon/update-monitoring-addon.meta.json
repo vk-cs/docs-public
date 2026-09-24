@@ -1,0 +1,13 @@
+{
+  "title": "Updating Kube Prometheus Stack",
+  "shortDescription": "How to manually update an add-on with a large difference between its versions",
+  "metaDescription": "How to manually update an add-on with a large difference between its versions.",
+  "sectionTitle": "Updating Kube Prometheus Stack",
+  "icon": "",
+  "weight": 17,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

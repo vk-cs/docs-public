@@ -1,0 +1,18 @@
+{
+  "title": "Екінші буын кластерлеріне арналған Managed Containers",
+  "shortDescription": "Екінші буын кластерлеріндегі Kubernetes негізінде жүктемелер кезінде сервистер мен қолданбаларды автоматты масштабтау",
+  "metaDescription": "Managed Containers сервисі Kubernetes кластерлерін пайдалануға мүмкіндік береді. VK Cloud-та екінші буын Kubernetes кластерлерін қалай құруға, басқаруға және қолдауға болатынын біліңіз",
+  "sectionTitle": "Екінші буын кластерлеріне арналған Managed Containers",
+  "icon": "",
+  "weight": 4,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/terraform/how-to-guides/k8s/create"
+    }
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

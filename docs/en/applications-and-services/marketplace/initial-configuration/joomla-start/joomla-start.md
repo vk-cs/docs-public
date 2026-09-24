@@ -13,7 +13,7 @@ By using Joomla, you agree to the [Marketplace](/ru/start/legal/offer/private-sp
 
 To deploy Joomla service in the VK Cloud project:
 
-1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) the VK Cloud management console.
+1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. To have access to the VM with the deployed service and to the Joomla web interface from the internet:
 
     1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with internet access if it has not been created previously.

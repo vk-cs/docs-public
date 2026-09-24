@@ -14,7 +14,7 @@ By using Alfresco, you agree to the [Marketplace](/ru/start/legal/offer/private-
 
 To deploy the Alfresco service in a VK Cloud project:
 
-1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) to your VK Cloud management console.
+1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. To have access to the VM with deployed service and to the Alfresco web interface from the internet:
 
     1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with internet access, if it has not been created earlier.

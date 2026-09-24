@@ -4,7 +4,7 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the section **Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired instance and select **Edit**.
 1. In the window that opens, specify a new instance name.
@@ -180,7 +180,7 @@ This is a group operation: if necessary, you can delete multiple instances of th
 
 {tab(Management console)}
 
-1. [Go](https://msk.cloud.vk.com/app) to the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to the section **Data Platform**Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. Deletion may take a long time.

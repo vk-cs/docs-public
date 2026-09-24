@@ -2,7 +2,7 @@ MLflow instance management is available through your VK Cloud management console
 
 ## {heading(Changing virtual machine type)[id=change-vm-type]}
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Change virtual machine type**.
 1. In the window that opens, select a virtual machine category to filter the list of VM flavors. More details in the [review of the Cloud Servers service](/en/computing/iaas/concepts/about#flavors).
@@ -11,7 +11,7 @@ MLflow instance management is available through your VK Cloud management console
 
 ## {heading(Changing disk size)[id=change-disk-size]}
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Change disk size**.
 1. In the window that opens, change the disk size. The minimum value is 30 GB.
@@ -23,7 +23,7 @@ This is a group operation: if necessary, you can stop or start several instances
 
 To stop an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Stop the instance in one of the following ways:
 
@@ -33,7 +33,7 @@ To stop an instance:
 
 To launch an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Launch the instance in one of the following ways:
 
@@ -53,7 +53,7 @@ A reboot assumes a graceful shutdown of the operating system of the VM instance.
 
 To reboot an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Reboot the instance in one of the following ways:
 
@@ -73,7 +73,7 @@ A forced instance reboot corresponds to power cycling. Unsaved data may be lost.
 
 To force reboot an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Force reboot**.
 1. Confirm the action.
@@ -84,7 +84,7 @@ You can share the instance link with other users. Using this link, users will be
 
 To share a link to an instance:
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance you need and select **Copy link to JH**.
 
@@ -100,7 +100,7 @@ If the MLflow instance is associated with an MLflow Deploy, first [delete the ML
 
 This is a group operation: if necessary, you can delete several instances at once by selecting them with checkboxes.
 
-1. [Go to](https://cloud.vk.com/app/en) to your VK Cloud management console.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances** section.
 1. Delete the instance in one of the following ways:
 

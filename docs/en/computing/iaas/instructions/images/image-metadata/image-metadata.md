@@ -6,7 +6,7 @@ VM image tags are divided into:
 
 - `os_*`: guest operating system (OS) settings;
 - `hw_*`: virtual machine settings;
-- `mcs_*`: VM properties used for sorting in VK Cloud management console;
+- `mcs_*`: VM properties used for sorting in the VK Cloud management console;
 - other tags that affect the work with the image.
 
 | Name | Description | Default value |

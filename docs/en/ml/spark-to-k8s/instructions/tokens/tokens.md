@@ -11,7 +11,7 @@ The library supports two types of tokens:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the tokens are located.
 1. Go to **ML Platform → Tokens**.
 
@@ -33,7 +33,7 @@ There are no registration tokens in this list.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project in which you want to create a token.
 1. Go to **ML Platform → Tokens**.
 1. Click the **Create access token** button.
@@ -256,7 +256,7 @@ A list of created registration tokens is not maintained. You can only [get a lis
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the required token is located.
 1. Go to **ML Platform → Tokens**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required token and select **Delete**.

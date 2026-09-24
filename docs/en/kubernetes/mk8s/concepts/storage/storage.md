@@ -1,0 +1,274 @@
+Data in a Kubernetes cluster in the Managed Containers service can be stored in several ways: directly in a container or on _volumes_. There are problems with storing data in a container:
+
+- If the container crashes or stops, data is lost.
+- Container data is inaccessible to other containers, even if all containers are in the same [pod](/en/kubernetes/mk8s/reference/pods).
+
+To solve these problems, Managed Containers volumes are used. Volumes have different lifecycles depending on the usage scenario:
+
+- _Ephemeral volumes_ (EVs) have the same lifecycle as a pod. When a pod using such a volume ceases to exist, the volume is also deleted. Ephemeral volumes can only be used by a single pod, so volumes are declared directly in the pod's manifest.
+
+- _Persistent volumes_ (PVs) have their own [lifecycle](/en/kubernetes/mk8s/reference/pvs-and-pvcs), independent of the pod's lifecycle. Due to the separation of lifecycles, such volumes can be reused later with other pods. Pods and other workloads use Persistent Volume Claim (PVC) to handle persistent volumes.
+
+Managed Containers do not support ReadWriteMany (RWX) access to Persistent Volume Claims. This means that you cannot simultaneously write data to a single PV from multiple pods on different nodes.
+
+To share data between pods on different nodes, [deploy an NFS server](/en/computing/iaas/instructions/fs-manage) on a separate VM. An NFS server shares data over the network, allowing multiple pods to simultaneously read and write data to a shared volume.
+
+Kubernetes clusters in the Managed Containers service are tightly integrated with the VK Cloud platform to handle PVs:
+
+- The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
+- [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](/en/kubernetes/mk8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
+
+## {heading(Managing persistent volumes (PVs))[id=pv-disks]}
+
+In the Managed Containers service, you can [manage](/en/kubernetes/mk8s/instructions/manage-pvs) PVs created for Kubernetes clusters. Such PVs are located in the [service project](/en/kubernetes/mk8s/concepts/cluster-generations#service-projects) managed by the VK Cloud platform. If you want to keep access to the data located on these PVs when deleting or moving the cluster, you can move the PVs from the service project to yours.
+
+You can only move or delete a PV if it is not connected to a node group.
+
+## {heading(Supported VK Cloud storage types)[id=storage_types]}
+
+- Block storages:
+
+  - Based on [Ceph](https://ceph.io/en/). To ensure fault tolerance and data integrity, the storage consists of three replicas located in different server racks. The storage uses SSD disks.
+
+  - Based on high-performance [NVMe](https://www.snia.org/education/what-is-nvme) SSD disks (High-IOPS SSD). Such storage is connected via [iSCSI](https://www.snia.org/education/what-is-iscsi). Hardware RAID-10 is used to provide fault tolerance and data integrity at the storage level.
+
+- [File Storage](https://www.snia.org/education/what-is-nas) connected via [NFS](https://www.ibm.com/docs/en/aix/7.1?topic=management-network-file-system) and [CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview).
+
+## Working with Container Storage Interface (CSI)
+
+Kubernetes clusters use [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) to integrate with block storage in VK Cloud.
+
+The storage types available in a Kubernetes cluster via Cinder CSI correlate with VK Cloud block storage as follows:
+
+- Ceph SSD corresponds to `ceph-ssd` in Cinder.
+- High-IOPS SSD corresponds to `high-iops` in Cinder.
+
+Using Cinder CSI allows you to:
+
+- Statically and dynamically [provision](/en/kubernetes/mk8s/reference/pvs-and-pvcs#dynamic-provisioning) PV that is based on block storage.
+
+- Automatically remount persistent volumes:
+  - When the pod using the volume or the worker node hosting the pod fails (assuming the pod is restored to that node or another node).
+  - When you migrate a pod using a volume from one worker node to another.
+
+- Manage the storage that is used by PV:
+  - When a volume is dynamically provisioned, the disk corresponding to that volume in VK Cloud will be automatically created.
+  - If the `Delete` reclaim policy is set for a volume, the associated volume and the corresponding disk in VK Cloud will be deleted after the PVC is deleted.
+
+## Available reclaim policies for persistent volumes
+
+A [reclaim policy](/en/kubernetes/mk8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
+
+- Keep the volume (`Retain`). The PV and its associated storage will not be deleted.
+
+  This policy applies to both block and file storage. Use it for PVs with sensitive data to protect the data if the PVC is accidentally deleted. If necessary, you can manually clean up and delete PVs with this policy and their associated storage.
+
+- Delete the volume (`Delete`). The PV and its associated storage will be deleted.
+
+  This policy is only applicable to block storage.
+
+  {note:warn}
+
+  Use this policy and the storage classes that implement it with caution: deleting a PVC will cause the PV and the disk corresponding to that volume to be deleted.
+
+  {/note}
+
+## Pre-configured storage classes
+
+When using [dynamic provisioning](/en/kubernetes/mk8s/reference/pvs-and-pvcs#dynamic-provisioning) of a persistent volume, a storage class must be specified. The default storage class is not configured in Kubernetes clusters you create in the Managed Containers service. You can either set the default class manually, or explicitly specify the required class when creating a PVC.
+
+In Managed Containers, there are pre-configured storage classes that use Cinder CSI for block storage. They provide different storage types that you can use when configuring dynamic provisioning of a PV:
+
+- For a specific [region](/en/tools-for-using-services/account/concepts/regions) indicating the required availability zone.
+- For any region and availability zone. Such storage classes are called multi-zone ones. For more details on working with them, refer to the [Using multi-zone storage classes](/en/kubernetes/mk8s/how-to-guides/multiaz-storage-class) section.
+
+Each storage class has a reclaim policy configured for it.
+
+{tabs}
+
+{tab(Moscow region)}
+
+[cols="1,1,1,1", options="header"]
+|===
+
+| Storage class name
+| Cinder CSI storage type
+| Availability zone
+| Reclaim policy
+
+| csi-ceph-ssd-gz1                
+| `ceph-ssd`
+| GZ1                 
+| Delete
+
+| csi-ceph-ssd-gz1-retain         
+| `ceph-ssd`
+| GZ1                 
+| Retain
+
+| csi-ceph-ssd-ms1                
+| `ceph-ssd`
+| MS1                 
+| Delete
+
+| csi-ceph-ssd-ms1-retain         
+| `ceph-ssd`
+| MS1                 
+| Retain
+
+| csi-ceph-ssd-me1                
+|`ceph-ssd`
+| ME1                 
+| Delete
+
+| csi-ceph-ssd-me1-retain         
+| `ceph-ssd`
+| ME1                 
+| Retain
+
+| csi-ceph-ssd-pa2                
+|`ceph-ssd`
+| PA2                 
+| Delete
+
+| csi-ceph-ssd-pa2-retain         
+| `ceph-ssd`
+| PA2                 
+| Retain
+
+| csi-ceph-hdd-gz1                
+| `ceph-hdd`
+| GZ1                 
+| Delete
+
+| csi-ceph-hdd-gz1-retain                
+| `ceph-hdd`
+| GZ1                 
+| Retain
+
+| csi-ceph-hdd-me1                
+| `ceph-hdd`
+| ME1                 
+| Delete
+
+| csi-ceph-hdd-me1-retain         
+|`ceph-hdd`
+| ME1                 
+| Retain
+
+| csi-ceph-hdd-pa2                
+| `ceph-hdd`
+| PA2                 
+| Delete
+
+| csi-ceph-hdd-pa2-retain         
+|`ceph-hdd`
+| PA2                 
+| Retain
+
+| csi-ceph-hdd-ms1                
+| `ceph-hdd`
+| MS1                 
+| Delete
+
+| csi-ceph-hdd-ms1-retain                
+| `ceph-hdd`
+| MS1                 
+| Retain
+
+| csi-high-iops-gz1               
+|`high-iops`
+| GZ1                 
+| Delete
+
+| csi-high-iops-gz1-retain        
+| `high-iops`
+| GZ1                 
+| Retain
+
+| csi-high-iops-ms1               
+| `high-iops`
+| MS1                 
+| Delete
+
+| csi-high-iops-ms1-retain        
+| `high-iops`
+| MS1                 
+| Retain
+
+| csi-high-iops-me1               
+| `high-iops`
+| ME1                 
+| Delete
+
+| csi-high-iops-me1-retain        
+| `high-iops`
+| ME1                 
+| Retain
+
+| csi-high-iops-pa2               
+| `high-iops`
+| PA2                 
+| Delete
+
+| csi-high-iops-pa2-retain        
+| `high-iops`
+| PA2              
+| Retain
+|===
+
+All the storage classes listed:
+
+- Allow for volume expansion (`allowVolumeExpansion: true`).
+- Use immediate volume provisioning and binding (`volumeBindingMode: Immediate`).
+
+{/tab}
+
+{tab(Any region and availability zone)}
+
+[cols="1,1,1",options="header"]
+|===
+
+| Storage class name
+| Cinder CSI storage type
+| Reclaim policy
+
+| csi-ceph-ssd                    
+| `ceph-ssd`
+| Delete
+
+| csi-ceph-ssd-retain             
+| `ceph-ssd`
+| Retain
+
+| csi-ceph-hdd                    
+| `ceph-hdd`
+| Delete
+
+| csi-ceph-hdd-retain             
+| `ceph-hdd`
+| Retain
+
+| csi-high-iops                   
+| `high-iops`
+| Delete
+
+| csi-high-iops-retain            
+|`high-iops`
+| Retain
+|===
+
+All the storage classes listed:
+
+- Allow for volume expansion (`allowVolumeExpansion: true`).
+- Allow Kubernetes to delay creating and binding a [persistent volume](/en/kubernetes/mk8s/reference/pvs-and-pvcs) until the first pod that uses the respective [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) is created (`volumeBindingMode: WaitForFirstConsumer`).
+
+{/tab}
+
+{/tabs}
+
+## See also
+
+- [Container service overview](/en/kubernetes/mk8s/concepts/about).
+- [Container service architecture](/en/kubernetes/mk8s/concepts/architecture).
+- [Network in a cluster](/en/kubernetes/mk8s/concepts/network).

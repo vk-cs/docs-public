@@ -6,7 +6,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
   - Selecting random replica (default).
 
-    The balancer behaves this way because `kube-proxy` in Kubernetes clusters in Managed Containers [works](../../concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
+    The balancer behaves this way because `kube-proxy` in Kubernetes clusters in Managed Containers [works](/en/kubernetes/k8s/concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
     See [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables) for details.
 
   - Bounding a replica to a specific IP address.
@@ -15,7 +15,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
 - Allow access only from specific IP addresses.
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -23,7 +23,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
 1. Make sure you can connect to the cluster with `kubectl`.
 
-## 1. Create application
+## {counter(lb)}. Create application
 
 Requests to this application will be served by the load balancer. To demonstrate the behavior of the load balancer, the application will be deployed as a StatefulSet of two replicas. In this case, all the sub-applications will be numbered, and it will be easy to determine which replica the load balancer will send the request to.
 
@@ -64,7 +64,7 @@ To create such an application:
    kubectl apply -f coffee.yaml
    ```
 
-## 2. Create load balancers
+## {counter(lb)}. Create load balancers
 
 Create several load balancers with different behaviors that serve the deployed `coffee` application.
 
@@ -79,7 +79,7 @@ The tabs below describe different scenarios for creating load balancers:
 
 {tab(Scenario 1)}
 
-1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add).
+1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add).
 
    There should be no internal IP address attached to the IP address.
 
@@ -253,7 +253,7 @@ The tabs below describe different scenarios for creating load balancers:
 
 Read more about services and load balancers in [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/).
 
-## 3. Check the operation of the load balancers
+## {counter(lb)}. Check the operation of the load balancers
 
 The tabs below describe different scenarios for testing load balancers:
 

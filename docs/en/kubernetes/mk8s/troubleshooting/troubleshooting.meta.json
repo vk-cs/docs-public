@@ -1,0 +1,13 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Methods for diagnosing and solving typical problems with Managed Containers",
+  "metaDescription": "Methods for diagnosing and solving typical problems with Managed Containers",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -6,7 +6,7 @@
 
 - [Cloud Servers](/kz/computing/iaas/concepts).
 - [Виртуалды желілер](/kz/networks/vnet/concepts).
-- [Контейнерлер](/kz/kubernetes/k8s/reference).
+- [Контейнерлер](/kz/kubernetes/mk8s/reference).
 
 {/note}
 

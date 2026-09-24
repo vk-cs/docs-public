@@ -6,7 +6,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 
@@ -75,7 +75,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Virtual networks** → **Load balancers**.
 
@@ -110,7 +110,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Click **Add balancer** or **Add**.
@@ -178,7 +178,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the load balancer you want to edit:
@@ -243,7 +243,7 @@ If the balancer network is connected to a router with Internet access, you can a
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Do one of the following:
@@ -281,7 +281,7 @@ If the balancer network is connected to a router with Internet access, and a pub
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual Networks** → **Load balancers**.
 1. Do one of the following:
@@ -322,7 +322,7 @@ This is a group operation: if necessary, you can remove multiple load balancers 
 
 To remove a load balancer:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the necessary load balancer is located.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the necessary load balancer:

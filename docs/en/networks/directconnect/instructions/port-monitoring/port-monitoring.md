@@ -4,7 +4,7 @@ You can obtain the parameters of the switch ports used for the Cloud Direct Conn
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Select a project.
 1. Go to **Cloud networks** → **Direct Connect**.
 

@@ -1,0 +1,13 @@
+{
+  "title": "Creating cluster",
+  "shortDescription": "The different ways to create a cluster.",
+  "metaDescription": "",
+  "sectionTitle": "Creating cluster",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

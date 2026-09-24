@@ -1,1 +1,0 @@
-Installation and configuration of the Istio add-on in the [first- and second-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.

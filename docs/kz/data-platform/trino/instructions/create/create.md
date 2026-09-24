@@ -42,7 +42,7 @@
    1.  (Тек Standalone үшін, міндетті емес) Ішкі желіден сервис данасына IP мекенжайын орнатыңыз. Ол үшін **IP автоматты түрде тағайындау** опциясын өшіріңіз. Әдепкі бойынша IP мекенжайы данаға автоматты түрде тағайындалады.
    {/ifndef}
 
-   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Managed Containers](/kz/kubernetes/k8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
+   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 

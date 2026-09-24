@@ -1,14 +1,14 @@
 ## How to start using Terraform
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
-1. [Create](../../create-cluster/create-terraform) a new cluster with one or more worker node groups.
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster/create-terraform) a new cluster with one or more worker node groups.
 1. Manage the created resources using Terraform.
 
 See the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) for more information on working with the container service.
 
 ## Features of using Terraform to manage the container service
 
-- Some cluster operations are performed only in [management console](../../../../../tools-for-using-services/account). For each operation, the [step-by-step instructions](../../../instructions) indicate whether it can also be performed using Terraform.
+- Some cluster operations are performed only in [management console](/en/tools-for-using-services/account). For each operation, the [step-by-step instructions](/en/kubernetes/k8s/instructions) indicate whether it can also be performed using Terraform.
 
 - Changing some parameters of an existing cluster will create a **new cluster**. The container service documentation lists only operations that can be performed on an existing cluster without creating a new cluster.
 

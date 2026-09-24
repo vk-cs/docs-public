@@ -2,7 +2,7 @@
 
 You can visualize resource metrics by creating a chart using the parameter constructor or direct queries in PromQL.
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. Click the **Create chart** button.
@@ -73,7 +73,7 @@ You can visualize resource metrics by creating a chart using the parameter const
 
 You can change the chart settings, view charts in the detailed mode, or delete them.
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. View the dashboard with the required chart using one of the methods:
@@ -94,7 +94,7 @@ Categories allow you to structure your dashboard by grouping charts into logical
 
 ### Creating a category
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. Click the **Create category** button.
@@ -104,7 +104,7 @@ The new category appears in the list. Now, you can add charts to this category.
 
 ### Configuring and deleting a category
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. Click the ![ ](/en/assets/more-icon.svg "inline") icon in the header of the required category.
@@ -124,7 +124,7 @@ You can hide the chart from the preview section on the **My charts** tab. A hidd
 
 To hide a chart:
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. View the dashboard with the required chart using one of the methods:
@@ -137,7 +137,7 @@ To hide a chart:
 
 To show the chart in the preview:
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Monitoring** → **Dashboards** section.
 1. Go to the **My charts** tab.
 1. View the dashboard with the required chart by clicking **Navigate to dashboard**.

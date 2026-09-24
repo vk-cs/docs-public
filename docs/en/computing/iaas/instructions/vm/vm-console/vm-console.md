@@ -28,7 +28,7 @@ To connect VM via VNC console:
     
     {tab(Management console)}
     
-    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
     1. Go to the **Cloud Servers → Virtual machines** section.
     1. In the list of virtual machines, click on the name of the VM you need.
     1. Go to the **Console** tab.

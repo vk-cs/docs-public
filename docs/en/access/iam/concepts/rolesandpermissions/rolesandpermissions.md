@@ -267,7 +267,7 @@ Some services have special sets of rights. Below are such sets of rights and how
 
 ## {heading(Permissions in Managed Containers)[id=roles_permissions_kubernetes]}
 
-The following user roles are intended for working with the [Сontainers service](/en/kubernetes/k8s):
+The following user roles are intended for working with the [Сontainers service](/en/kubernetes/mk8s):
 
 - Kubernetes administrator
 - Kubernetes operator
@@ -277,7 +277,7 @@ The operations available to Kubernetes administrator are also available to Proje
 
 For other roles these operations are unavailable.
 
-For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation) (`admin`, `edit`, or `view`) assigned to the user.
+For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/mk8s/concepts/access-management#kubernetes-roles-relation) (`admin`, `edit`, or `view`) assigned to the user.
 
 {note:info}
 

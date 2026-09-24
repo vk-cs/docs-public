@@ -6,7 +6,7 @@ You can manage routers: view, edit and delete them.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 
@@ -54,7 +54,7 @@ You can manage routers: view, edit and delete them.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Click the **Add router** button.
@@ -114,7 +114,7 @@ You can manage routers: view, edit and delete them.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Perform one of the actions for the router you want to edit:
@@ -380,7 +380,7 @@ This is a group operation: if necessary, you can delete several routers at once 
 
 To remove a router:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where the required balancer is located.
 1. Go to **Virtual networks** → **Routers**.
 1. Do one of the following for the required router:

@@ -287,8 +287,6 @@ GPU түйінінің жұмысын тексеру үшін екі векто�
    kubectl label nodes my-kubernetes-cluster-gpu-group-0 nvidia.com/mig.config=all-disabled --overwrite
    ```
 
-{ifdef(public)}
 ## {heading(Қолданылмайтын ресурстарды жойыңыз)[id=k8s-gpu-operator-delete]}
 
 {include(/kz/_includes/_delete-test-cluster.md)}
-{/ifdef}

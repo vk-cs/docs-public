@@ -157,7 +157,7 @@ The GPU limit for a single instance is a limitation of KVM technology, which doe
 | 2 pcs.
 | not limited
 
-| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies)
+| Number of [nodes](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies)
 | **Kubernetes nodes**
 | 10 pcs.
 | not limited
@@ -219,7 +219,7 @@ Aside from the quotas listed above, Managed Containers has specific technical li
 |50 pcs.
 |![](/en/assets/no.svg "inline")
 
-|Number of [pods](/en/kubernetes/k8s/reference/pods) in a cluster
+|Number of [pods](/en/kubernetes/mk8s/reference/pods) in a cluster
 |50000 pcs.
 |![](/en/assets/no.svg "inline")
 
@@ -358,14 +358,14 @@ Quotas for the total number of disks in the project take into account all types 
 26 pcs. when configuration disk is disabled
 |The limit is associated with PCI bus limitations.
 
-If, while [creating VM](/en/computing/iaas/instructions/vm/vm-create), the **Use configuration disk** option is enabled in VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
+If, while [creating VM](/en/computing/iaas/instructions/vm/vm-create), the **Use configuration disk** option is enabled in the VK Cloud management console or the `--use-config-drive` parameter is used in OpenStack CLI, the maximum number of disks is 25. Use configuration disk in networks without a DHCP server.
 
 If the **Use configuration disk** option is disabled or the `--use-config-drive` parameter is not used, the maximum number of disks is 26
 
 |![](/en/assets/check.svg "inline")
 
 |Size of one HDD
-|5 TB via VK Cloud management console
+|5 TB via the VK Cloud management console
 (1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
 100 TB using OpenStack CLI
@@ -375,7 +375,7 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 |![](/en/assets/check.svg "inline")
 
 |Size of one SSD
-|5 TB via VK Cloud management console
+|5 TB via the VK Cloud management console
 (1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
 100 TB using OpenStack CLI
@@ -385,7 +385,7 @@ If the **Use configuration disk** option is disabled or the `--use-config-drive`
 |![](/en/assets/check.svg "inline")
 
 |Size of one High-IOPS SSD disk
-|2 TB via VK Cloud management console
+|2 TB via the VK Cloud management console
 (1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
 10 TB using OpenStack CLI
@@ -397,7 +397,7 @@ Certain VK Cloud services may have their own disk size limits
 |![](/en/assets/no.svg "inline")
 
 |Size of one High-IOPS HA SSD disk
-|2 TB via VK Cloud management console
+|2 TB via the VK Cloud management console
 (1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
 10 TB using OpenStack CLI
@@ -409,7 +409,7 @@ Certain VK Cloud services may have their own disk size limits
 |![](/en/assets/no.svg "inline")
 
 |Size of one Low Latency NVMe disk
-|2 TB via VK Cloud management console
+|2 TB via the VK Cloud management console
 (1 TB with [antifraud](/en/intro/it-security/platform-security#monitoring_and_countering_attacks) restrictions enabled).
 
 10 TB using OpenStack CLI
@@ -421,7 +421,7 @@ Certain VK Cloud services may have their own disk size limits
 |![](/en/assets/no.svg "inline")
 
 |Size of one image
-|100 GB via VK Cloud management console.
+|100 GB via the VK Cloud management console.
 
  500 GB using OpenStack CLI
 |This is a hard limit for the Glance service.
@@ -726,7 +726,7 @@ Even if the quota for the total number of subnets in the project has been [incre
 
 You can exceed the limit on the number of balancing rules per load balancer (10 pcs.) without contacting technical support. To do this, create rules using the OpenStack CLI. For stable operation, it is not recommended to use more than 30 rules per load balancer.
 
-The quota **Neutron balancers**, which is displayed in VK Cloud management console, is not used.
+The quota **Neutron balancers**, which is displayed in the VK Cloud management console, is not used.
 
 ### Cloud Backup
 

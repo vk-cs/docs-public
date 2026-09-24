@@ -8,7 +8,7 @@ After completing all the quick start steps, you will:
 
 ## Step 1: Create networks and subnets
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Create a network with internet access:
@@ -35,7 +35,7 @@ Create a VM with internet access and 3 VMs without internet access.
 
 {tab(test-vm1)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. In the **Configuration** box set VM parameters depending on your requirements.
@@ -58,7 +58,7 @@ Create a VM with internet access and 3 VMs without internet access.
 
 {tab(test-vm2)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. In the **Configuration** box set VM parameters depending on your requirements.
@@ -82,7 +82,7 @@ Create a VM with internet access and 3 VMs without internet access.
 
 {tab(test-vm3)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. In the **Configuration** box set VM parameters depending on your requirements.
@@ -106,7 +106,7 @@ Create a VM with internet access and 3 VMs without internet access.
 
 {tab(test-vm4)}
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. In the **Configuration** box set VM parameters depending on your requirements.
@@ -134,7 +134,7 @@ Wait for the creation of the virtual machines to complete. Files with virtual ma
 
 ## Step 3: Create a rule group
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Networks** → **Firewall Settings**.
 1. Click **Add**.
 1. Specify a rule group name, for example, `test-icmp`.
@@ -159,7 +159,7 @@ Wait for the creation of the virtual machines to complete. Files with virtual ma
 
 To send and receive traffic, assign a security group to the VM. For previously created VMs, apply the following settings:
 
-1. [Go to](https://msk.cloud.vk.com/app) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the virtual machine and select **Firewall Settings**.
 1. Find the rule group created in step 3 in the list.
@@ -174,7 +174,7 @@ Successful completion of this step ensures that ICMP connectivity exists between
 
 ## Step 5: Check network connectivity between VMs
 
-1. [Go to](https://msk.cloud.vk.com/app/) to VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. For each of the VMs in the `internet` and `test-network` networks, perform the following steps:
 
@@ -211,7 +211,7 @@ Successful completion of this step ensures that ICMP connectivity exists between
 
 ## Step 6: Check internet access
 
-1. [Go to](https://msk.cloud.vk.com/app/) to VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Open the `test-vm4` VM page by clicking its name in the list.
 1. Go to the **Console** tab.

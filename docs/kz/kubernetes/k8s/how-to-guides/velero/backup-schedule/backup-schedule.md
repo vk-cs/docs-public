@@ -4,10 +4,6 @@
 
 [Velero](https://velero.io/docs/main/) құралын кластерлердің резервтік көшірмесін [cron](https://crontab.guru/every-1-minute) форматындағы берілген кесте бойынша баптау және кластерді осы кесте негізінде қалпына келтіру үшін пайдаланыңыз.
 
-{note:info}
-Резервтік көшіру үшін Velero пайдалану тек {linkto(../../../concepts/cluster-generations#k8s-cluster-generations)[text=бірінші буын]} кластерлерінде ғана қолдау көрсетіледі.
-{/note}
-
 ## {heading(Дайындық қадамдары)[id=k8s-backup-schedule-prepare]}
 
 {include(/kz/_includes/_create-test-cluster.md)}
@@ -130,6 +126,4 @@ velero restore create --namespace <ПРОСТРАНСТВО_ИМЕН> --from-sch
 
    Қажет болса, сондай-ақ {linkto(/kz/storage/s3/instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=бакеттің өзін де жойыңыз]}.
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

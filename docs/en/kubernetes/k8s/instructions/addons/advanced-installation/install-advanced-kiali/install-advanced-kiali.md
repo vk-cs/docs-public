@@ -1,15 +1,11 @@
-{note:info}
-This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters.
-{/note}
-
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_addon-prep.md)}
-1. [Install](../install-advanced-istio) the `istio` add-on.
+1. [Install](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum) the `istio` add-on.
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+[Several installation options](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
 {tabs}
 
@@ -21,12 +17,11 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kiali` add-on card.
    1. Edit if necessary:
 
@@ -51,7 +46,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Create a Terraform configuration file with data about the add-on being installed in the `vkcs_kubernetes_addon` block:
 
-      - [Get](../../manage-addons#addons_available_for_installation) list of add-ons available for installation.
+      - [Get](/en/kubernetes/k8s/instructions/addons/manage-addons#addons_available_for_installation) list of add-ons available for installation.
       - Get the add-on settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
       - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the required values.
 
@@ -94,7 +89,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {/tabs}
 
-1. [Connect to Kiali](../../../../connect/addons-ui).
+1. [Connect to Kiali](/en/kubernetes/k8s/connect/addons-ui).
 
 {/tab}
 
@@ -106,16 +101,16 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
    1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
-      If there is no such group — [add it](../../../manage-node-group#add_group).
+      If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
-   1. [Customise](../../../manage-node-group#labels_taints) for this node group, if it hasn't already been done:
+   1. [Customise](/en/kubernetes/k8s/instructions/manage-node-group#labels_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
@@ -130,12 +125,11 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kiali` add-on.
    1. Edit if necessary:
 
@@ -194,7 +188,7 @@ This add-on is only available for [first-generation](/en/kubernetes/k8s/concepts
    
    {/tabs}
 
-1. [Connect to Kiali](../../../../connect/addons-ui).
+1. [Connect to Kiali](/en/kubernetes/k8s/connect/addons-ui).
 
 {/tab}
 
@@ -214,12 +208,11 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-   1. Click on the name of the required cluster.
-   1. Go to **Addons** tab.
-   1. If there are already installed add-ons in the cluster, click the **Add addon** button.
+   1. Click the name of the required cluster.
+   1. Go to the **Addons** tab.
    1. Click the **Install addon** button on the `kiali` add-on.
    1. Edit if necessary:
 
@@ -240,7 +233,7 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {/tabs}
 
-1. [Connect to Kiali](../../../../connect/addons-ui).
+1. [Connect to Kiali](/en/kubernetes/k8s/connect/addons-ui).
 
 {/tab}
 

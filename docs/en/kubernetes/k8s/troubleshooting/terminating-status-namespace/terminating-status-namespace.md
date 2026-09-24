@@ -4,7 +4,7 @@ This problem might be due to the fact that the deletion process is stuck or ther
 
 ### Solution
 
-1. [Connect](../../connect/kubectl#connect) to the cluster via `kubectl`.
+1. [Connect](/en/kubernetes/k8s/connect/kubectl#connect) to the cluster via `kubectl`.
 
 1. Run the command to obtain the JSON file with the namespace description.
    

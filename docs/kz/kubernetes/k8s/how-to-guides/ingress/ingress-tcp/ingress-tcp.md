@@ -298,6 +298,4 @@ Ingress ресурсін жасау үшін:
 
    {/tabs}
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

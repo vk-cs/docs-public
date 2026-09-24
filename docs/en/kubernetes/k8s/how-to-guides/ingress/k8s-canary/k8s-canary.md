@@ -1,6 +1,6 @@
 This article will help you deploy a Kubernetes cluster and configure [Canary Deployment](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary) on it using Nginx Ingress Annotations: execute the Canary Deployment script for the echo server and make sure that traffic is distributed according to the configuration file.
 
-## Preparatory steps
+## Before you begin
 
 {include(/en/_includes/_create-test-cluster.md)}
 1. [Connect](/en/kubernetes/k8s/connect/kubectl) to the cluster using `kubectl`.
@@ -18,7 +18,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
    ```
 
-## 1. Create an Ingress resource
+## {counter(canary)}. Create an Ingress resource
 
 1. Create a manifest file `http-svc.ingress` with the following contents:
 
@@ -51,7 +51,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
    As a result, an application will be created and the server will respond to all requests from `echo.com`.
 
-## 2. Create a copy of the deployed application
+## {counter(canary)}. Create a copy of the deployed application
 
 1. Create a Canary version of the namespace for the application:
 
@@ -101,9 +101,9 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
-## 3. Check the performance of traffic distribution
+## {counter(canary)}. Check the performance of traffic distribution
 
-1. [Connect](../../../connect/k8s-dashboard) to the cluster using Kubernetes Dashboard.
+1. [Connect](/en/kubernetes/k8s/connect/k8s-dashboard) to the cluster using Kubernetes Dashboard.
 1. Go to **Namespaces**.
 1. Switch the **Namespace** filter to `All`.
 1. At the bottom of the side menu, select **Ingresses**.

@@ -423,6 +423,4 @@ Ingress ресурсы `coffee-svc` және `tea-svc` сервистерін `c
 
    {/tabs}
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

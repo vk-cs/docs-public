@@ -1,0 +1,13 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Detailed description of the principles of functioning and structure of Kubernetes clusters in the Managed Containers service",
+  "metaDescription": "Managed Containers: a detailed description of the principles of functioning and device of Kubernetes clusters",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -8,7 +8,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. In the list of VMs, click on the name of the VM whose ID you want to find out.
 4. On the VM page, go to the **General information** tab.
@@ -44,7 +44,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Change the VM state in one of the ways.
 
@@ -110,7 +110,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Force a VM restart in one of the ways.
 
@@ -152,7 +152,7 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Block or unblock the VM in one of the ways.
 
@@ -210,7 +210,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
    {tab(Management console)}
    
-   1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    2. Go to **Cloud Servers → Virtual machines**.
    3. Delete the VM in one of the ways.
 
@@ -261,7 +261,7 @@ If the VM type changes, the VM will be rebooted.
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Change the VM name or type in one of the ways.
 
@@ -319,7 +319,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
 4. Check the tags or click **Create a new tag**.
@@ -404,7 +404,7 @@ To set the password:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Use one of the ways:
 
@@ -459,7 +459,7 @@ If the password was changed after the VM was created or the VM was created on th
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 2. Go to **Cloud Servers → Virtual machines**.
 3. Open the password receipt window using one of the following methods.
 
@@ -499,7 +499,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
 2. Create a link to the file with the public key.
 
-   1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
    2. Go to **Object storage → Buckets**.
    3. Use an existing package or [create a new one](/en/storage/s3/instructions/buckets/create-bucket).
    4. [Add file](/en/storage/s3/instructions/objects/upload-object) with a public key in the bucket.
@@ -581,7 +581,7 @@ Examples of events:
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to the **Cloud Servers → Virtual machines** section.
 1. Click on the name of the VM to which you want to connect the disk.
 1. Go to the **Disks** tab.

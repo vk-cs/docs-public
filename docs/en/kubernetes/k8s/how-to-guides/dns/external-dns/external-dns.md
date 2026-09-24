@@ -8,15 +8,15 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    In the example below, the `example.com` zone is used.
 
-1. [Create](../../../instructions/create-cluster) a Kubernetes cluster of the latest version that has an external IP address and is accessible from the Internet.
+1. [Create](/en/kubernetes/k8s/instructions/create-cluster) a Kubernetes cluster of the latest version that has an external IP address and is accessible from the Internet.
 
    Select other cluster parameters at your discretion.
 
-1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl`.
+1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
    To connect, use the cluster configuration file (kubeconfig) downloaded from your VK Cloud management console.
 
-1. [Install](../../../install-tools/helm) Helm version 3.0.0 or higher if the utility is not already installed.
+1. [Install](/en/kubernetes/k8s/install-tools/helm) Helm version 3.0.0 or higher if the utility is not already installed.
 
    To install, select a version of Helm that is [compatible](https://helm.sh/docs/topics/version_skew/) with the cluster.
 
@@ -44,7 +44,7 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    {/tabs}
 
-## 1. Prepare a user for ExternalDNS
+## {counter(extdns)}. Prepare a user for ExternalDNS
 
 ExternalDNS will use this VK Cloud user's credentials to cooperate with the VK Cloud API and manage DNS resource records.
 
@@ -70,7 +70,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Get the credentials you need to access the VK Cloud API:
 
-   1. [Go](https://msk.cloud.vk.com/app/en) to your VK Cloud management console using the credentials of the user assigned to ExternalDNS.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console using the credentials of the user assigned to ExternalDNS.
    1. Click the username in the page header and select **Project Settings**.
    1. Go to the **API access** tab and note the values of the following parameters:
 
@@ -82,7 +82,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Write down the password for this user: it is also required to access the API.
 
-## 2. Install ExternalDNS
+## {counter(extdns)}. Install ExternalDNS
 
 1. Create a namespace where ExternalDNS will be installed:
 
@@ -310,7 +310,7 @@ Prepare the user and get all the necessary credentials:
 
    {/cut}
 
-## 3. Verify that External DNS is working
+## {counter(extdns)}. Verify that External DNS is working
 
 Next, several demo applications based on [NGINX's Cafe example](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example) will be deployed. These applications will be published (made available from the Internet) using `Service` and `Ingress` configured to work with ExternalDNS.
 
@@ -712,7 +712,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    kubectl delete -f tea-service.yaml -f tea-app.yaml
    ```
 
-1. [Delete the Ingress NGINX add-on](../../../instructions/addons/manage-addons#removing_addon).
+1. [Delete the Ingress NGINX add-on](/en/kubernetes/k8s/instructions/addons/manage-addons#removing_addon).
 
    It might take a long time to delete the add-on and its associated resources.
 

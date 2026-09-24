@@ -197,6 +197,4 @@ LL NVMe дискілерін worker-түйіндерге қосу процесі
 
 1. {linkto(../../concepts/storage#k8s-storage-reclaim-policies)[text=Жасаған]} тұрақты томды жойыңыз.
 
-{ifdef(public)}
 {include(/kz/_includes/_delete-test-cluster-short.md)}
-{/ifdef}

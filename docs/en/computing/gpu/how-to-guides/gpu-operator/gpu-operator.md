@@ -1,1 +1,1 @@
-{include(/en/kubernetes/k8s/how-to-guides/gpu-operator/gpu-operator.md)}
+{include(/en/kubernetes/mk8s/how-to-guides/gpu-operator/gpu-operator.md)}
