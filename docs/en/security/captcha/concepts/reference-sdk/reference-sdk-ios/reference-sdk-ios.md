@@ -1,4 +1,4 @@
-# {heading(iOS SDK Reference)[id=captcha-concepts-reference-sdk-ios]}
+# {heading(SDK reference for iOS)[id=captcha-concepts-reference-sdk-ios]}
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
@@ -6,9 +6,9 @@
 
 {include(../../../../../_includes/_captcha-requirements.md)[tags=captcha-req-ios]}
 
-## {heading(Initialize captcha)[id=reference-sdk-ios-init]}
+## {heading(Initialize the captcha)[id=reference-sdk-ios-init]}
 
-The configuration object `VKCaptchaConfiguration(url:)` passes the link to launch the captcha widget, received in the `link` parameter in the response of {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=method]} `GET /captchaNotRobot.createSession`.
+The `VKCaptchaConfiguration(url:)` configuration object passes the link for launching the captcha widget, received in the `link` parameter in the response of the {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=GET /captchaNotRobot.createSession]} method.
 
 Method parameters:
 
@@ -22,22 +22,22 @@ Method parameters:
 |`url`
 |![](../../../../../assets/check.svg "inline")
 |`URL`
-|Link to launch the captcha widget in your application frontend, received in the `link` parameter in the response of {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=method]} `GET /captchaNotRobot.createSession`. Contains the session token and metadata:
+|The link for launching the captcha widget in your application's frontend, received in the `link` parameter in the response of the {linkto(../../../../../tools-for-using-services/api/api-spec/captcha-api#api-spec-captcha)[text=GET /captchaNotRobot.createSession]} method. Contains a session token and metadata:
 
-- `domain` — domain where the captcha will be used;
-- `session_token` — session token;
-- `variant` — captcha display type (`block` or `popup`)
+- `domain` — the domain where the captcha will be used;
+- `session_token` — the session token;
+- `variant` — the captcha display type (`block` or `popup`)
   |===
 
-Configuration call example:
+Example of a configuration call:
 
 ```swift
 VKCaptchaConfiguration(url: captchaUrl)
 ```
 
-## {heading(Display captcha)[id=reference-sdk-ios-show]}
+## {heading(Display the captcha)[id=reference-sdk-ios-show]}
 
-The `VKCaptcha.getCaptchaViewController(completion:)` method displays the captcha to the user in an iOS application. The captcha is displayed as `UIViewController` and integrates into the application navigation.
+The `VKCaptcha.getCaptchaViewController(completion:)` method displays the captcha to the user in an iOS application. The captcha is displayed as a `UIViewController` and is integrated into the application navigation.
 
 Method parameters:
 
@@ -57,7 +57,7 @@ Method parameters:
 - `failure(error)` — error if the user closed the captcha window
   |===
 
-Method call example:
+Example of a method call:
 
 ```swift
 captcha.getCaptchaViewController { [weak self] result in
@@ -70,7 +70,7 @@ captcha.getCaptchaViewController { [weak self] result in
    }
 ```
 
-## {heading(Close captcha)[id=reference-sdk-ios-close]}
+## {heading(Close the captcha)[id=reference-sdk-ios-close]}
 
 The `VKCaptcha.closeCaptcha(animated:completion:)` method closes the captcha widget.
 
@@ -86,15 +86,15 @@ Method parameters:
 |`animated`
 |![](../../../../../assets/no.svg "inline")
 |`boolean`
-|Flag for captcha closing animation. Default value is `true`
+|Flag for the captcha closing animation. Default value is `true`
 
 |`completion`
 |![](../../../../../assets/no.svg "inline")
 |`() -> Void`
-|Callback function after closing the captcha
+|Callback function called after the captcha is closed
 |===
 
-Method call example:
+Example of a method call:
 
 ```swift
 captcha.closeCaptcha(animated: true) {

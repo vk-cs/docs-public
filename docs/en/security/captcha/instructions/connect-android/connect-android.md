@@ -1,8 +1,8 @@
-# {heading(Connecting to a mobile application on Android)[id=captcha-connect-android]}
+# {heading(Connecting to a mobile app on Android)[id=captcha-connect-android]}
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-1. Download VK Капча SDK:
+1. Download the VK Капча SDK:
 
    {tabs}
 
@@ -18,16 +18,16 @@
       }
       ```
 
-   1. Add the library to your application module's `build.gradle.kts`:
+   1. Connect the library in the app module's `build.gradle.kts`:
 
       ```kotlin
       dependencies {
           implementation("com.vk.id.captcha:vkid-captcha:<VERSION>")
       }
       ```
-      Here `<VERSION>` is the VK Капча SDK version for Android (`0.0.13`).
+      Here `<VERSION>` is the version of the VK Капча SDK for Android (`0.0.13`).
 
-   1. In your application's `Android Manifest`, override the `authority` of the provider that initializes the SDK:
+   1. In your app's `Android Manifest`, override the `authority` of the provider that initializes the SDK:
 
       ```xml
       <application>
@@ -43,23 +43,23 @@
 
    {/tabs}
 
-1. Get a link from the backend to launch the captcha widget.
+1. Get the link for launching the captcha widget from the {linkto(../connect-backend#captcha-connect-backend)[text=backend]}.
 
-1. (Optional) Configure the captcha localization language. Use the {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-lang)[text=SDK method]} `VKCaptcha.setLocale()`.
+1. (Optional) Configure the captcha localization language. Use the SDK method {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-lang)[text=VKCaptcha.setLocale()]}.
 
-1. Display the captcha to the user. Use the {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-show)[text=SDK method]} `VKCaptcha.openCaptcha()`.
+1. Display the captcha to the user. Use the SDK method {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-show)[text=VKCaptcha.openCaptcha()]}.
 
-1. Handle the captcha completion result using the {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-result)[text=interface]} `VKCaptchaResultListener`:
+1. Handle the captcha completion result using the {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-result)[text=VKCaptchaResultListener]} interface:
 
    - If a successful captcha completion token is returned, send it to the backend for validation.
 
      {note:info}
-     If you need to get the successful captcha completion token again, use the {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-token)[text=SDK method]} `VKCaptcha.getToken()`.
+     If you need to get the successful captcha completion token again, use the SDK method {linkto(../../concepts/reference-sdk/reference-sdk-android#reference-sdk-android-token)[text=VKCaptcha.getToken()]}.
      {/note}
 
    - If the user closed the captcha, nothing is sent to the backend. Determine what will happen in the frontend in this case.
 
-Kotlin code example:
+Example Kotlin code:
 
 ```kotlin
 import com.vk.id.captcha.api.VKCaptcha
@@ -78,7 +78,7 @@ class CaptchaHandler {
                         repeatRequest(token)
                     }
                     is VKCaptchaResult.Error -> {
-                        // Error handling or captcha closure
+                        // Handling an error or captcha closure
                     }
                 }
             }

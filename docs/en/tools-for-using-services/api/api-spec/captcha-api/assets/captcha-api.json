@@ -17,7 +17,7 @@
   "tags": [
     {
       "name": "session",
-      "description": "CAPTCHA session"
+      "description": "captcha session"
     },
     {
       "name": "success-token",
@@ -27,7 +27,7 @@
   "paths": {
     "/captchaNotRobot.createSession": {
       "get": {
-        "summary": "Create a CAPTCHA session",
+        "summary": "Create a captcha session",
         "operationId": "createSession",
         "tags": [
           "session"
@@ -170,7 +170,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Request source.\n\nSpecify the value that was passed in the CAPTCHA session creation request.\n\nFormat: string in Latin characters without spaces"
+            "description": "Request source.\n\nSpecify the value that was passed in the captcha session creation request.\n\nFormat: string in Latin characters without spaces"
           },
           {
             "name": "domain",
@@ -179,7 +179,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Domain where the captcha is integrated.\n\nSpecify the value that was passed in the CAPTCHA session creation request"
+            "description": "Domain where the captcha is integrated.\n\nSpecify the value that was passed in the captcha session creation request"
           },
           {
             "name": "client",
@@ -188,7 +188,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "User session identifier on the service side.\n\nSpecify the value that was passed in the CAPTCHA session creation request"
+            "description": "User session identifier on the service side.\n\nSpecify the value that was passed in the captcha session creation request"
           },
           {
             "name": "success_token",

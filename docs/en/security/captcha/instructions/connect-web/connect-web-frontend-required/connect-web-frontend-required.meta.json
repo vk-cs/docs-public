@@ -1,0 +1,14 @@
+{
+  "title": "Showing captcha on frontend request",
+  "shortDescription": "Integrating VK Капча into a web application in a scenario where the frontend requests the captcha",
+  "metaDescription": "Learn how to connect VK Капча to a web application on frontend request: configuring invisible, inline, and popup captcha, subscribing to events, and handling the result.",
+  "sectionTitle": "Showing captcha on frontend request",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

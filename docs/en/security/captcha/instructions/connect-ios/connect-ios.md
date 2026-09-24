@@ -1,8 +1,8 @@
-# {heading(Connecting to a mobile app on iOS)[id=captcha-connect-ios]}
+# {heading(Connecting to a mobile application on iOS)[id=captcha-connect-ios]}
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-1. Download VK Капча SDK:
+1. Download the VK Капча SDK:
 
    {tabs}
 
@@ -15,9 +15,9 @@
         .package(url: "https://github.com/VKCOM/vkid-captcha-ios-sdk", .upToNextMajor(from: "<VERSION>"))
       \]
       ```
-      Here `<VERSION>` is the VK Капча SDK version for iOS Swift Package Manager (`0.1.0`)
+      Here, `<VERSION>` is the version of the VK Капча SDK for iOS Swift Package Manager (`0.1.0`)
 
-   1. [Download](https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/ios/VKCaptchaSDK-0.1.0.zip) the ZIP archive and extract it.
+   1. [Download](https://artifactory-external.vkpartner.ru/artifactory/vk-id-captcha/ios/VKCaptchaSDK-0.1.0.zip) the ZIP archive and unpack it.
 
    1. Add the `VKCaptchaSDKResources.bundle` file from the archive to your project.
 
@@ -25,13 +25,13 @@
 
    {tab(CocoaPods)}
 
-   1. Add the library to the `Podfile`:
+   1. Add the library to the `Podfile` file:
 
       ```ruby
       `source 'https://github.com/VKCOM/vkid-captcha-ios-sdk.git' `
       `pod 'VKCaptchaSDK', '~> <VERSION>'`
       ```
-      Here `<VERSION>` is the VK Капча SDK version for iOS CocoaPods (`0.1.1`).
+      Here, `<VERSION>` is the version of the VK Капча SDK for iOS CocoaPods (`0.1.1`).
 
    1. Run the command in the directory containing the `Podfile`:
 
@@ -43,16 +43,16 @@
 
    {/tabs}
 
-1. Get the link for launching the captcha widget from the backend.
+1. Get the captcha widget launch link from the {linkto(../connect-backend#captcha-connect-backend)[text=backend]}.
 
-1. Create a captcha configuration. Use the {linkto(../../concepts/reference-sdk/reference-sdk-ios#reference-sdk-ios-init)[text=configuration object]} `VKCaptchaConfiguration(url:)`.
+1. Create the captcha configuration. Use the configuration object {linkto(../../concepts/reference-sdk/reference-sdk-ios#reference-sdk-ios-init)[text=VKCaptchaConfiguration(url:)]}.
 
-1. Display the captcha to the user. Use the {linkto(../../concepts/reference-sdk/reference-sdk-ios#reference-sdk-ios-show)[text=SDK method]} `VKCaptcha.getCaptchaViewController(completion:)`.
+1. Display the captcha to the user. Use the SDK method {linkto(../../concepts/reference-sdk/reference-sdk-ios#reference-sdk-ios-show)[text=VKCaptcha.getCaptchaViewController(completion:)]}.
 
 1. Handle the captcha completion result:
 
    - If the method returned a successful captcha completion token, send it to the backend for validation.
-   - If the user closed the captcha, nothing is sent to the backend. Determine what should happen on the frontend in this case.
+   - If the user closed the captcha, nothing is sent to the backend. Determine what will happen in the frontend in this case.
 
 Swift code example:
 
@@ -64,7 +64,7 @@ struct APIResponse: Decodable {
 }
 
 func handleCaptcha(captchaUrl: URL) {
-   let config = VKCaptchaConfiguration(url: captchaUrl) // The link for launching the captcha widget, obtained from the backend, contains a session token
+   let config = VKCaptchaConfiguration(url: captchaUrl) // The captcha widget launch link received from the backend contains a session token
    let captcha = VKCaptcha(configuration: config)
 
    let vc = captcha.getCaptchaViewController { [weak self] result in

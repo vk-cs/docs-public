@@ -1,4 +1,6 @@
-# {heading(Установка VK Капча SDK)[id=captcha-connect-web-install]}
+# {heading(Installing VK Капча SDK)[id=captcha-connect-web-install]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
 
 {tabs}
 
@@ -23,12 +25,12 @@ pnpm add @vkid/captcha
 ```
 {/tab}
 
-{tab(JS-скрипт)}
+{tab(JS script)}
 
 ```javascript
 <script src="https://static.vk.ru/captchaSDK/loader/2/umd/index.js"></script>
 ```
-После загрузки скрипта VK Капча SDK будет доступен в объекте `window.vkidCaptcha`. Здесь `vkidCaptcha` — promise-объект.
+After the script is loaded, the VK Капча SDK will be available in the `window.vkidCaptcha` object. Here, `vkidCaptcha` is a promise object.
 
 {/tab}
 
