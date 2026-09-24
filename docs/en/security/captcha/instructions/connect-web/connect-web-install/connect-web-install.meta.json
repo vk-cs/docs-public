@@ -5,7 +5,7 @@
   "sectionTitle": "Installing VK Капча SDK",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "5424da39-65aa-47ac-8380-588dc60aa53e",
   "build": {
     "for": [
       "public"

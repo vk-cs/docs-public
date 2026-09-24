@@ -5,7 +5,7 @@
   "sectionTitle": "Showing captcha on frontend request",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "c69a9297-07aa-4a3d-aaf6-b8fce549acb1",
   "build": {
     "for": [
       "public"

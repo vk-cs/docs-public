@@ -34156,5 +34156,17 @@
     "destination": "/ru/dbs/dbaas/instructions/manage-instance/postgresql",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio/install-advanced-istio-magnum",
+    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-istio-magnum",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration/install-advanced-logaas-integration-magnum",
+    "destination": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum",
+    "permanent": false,
+    "locale": false
   }
 ]
