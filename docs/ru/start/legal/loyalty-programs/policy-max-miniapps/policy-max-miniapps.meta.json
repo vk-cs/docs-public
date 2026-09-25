@@ -1,0 +1,15 @@
+{
+  "title": "Правила акции «Хостинг мини-приложений в MAX на VK Cloud»",
+  "shortDescription": "",
+  "metaDescription": "Правила акции «Хостинг мини-приложений в MAX на VK Cloud»",
+  "sectionTitle": "Правила акции «Хостинг мини-приложений в MAX на VK Cloud»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
