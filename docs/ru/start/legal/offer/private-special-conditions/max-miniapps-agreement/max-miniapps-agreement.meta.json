@@ -1,0 +1,15 @@
+{
+  "title": "Соглашение об оказании комплексной услуги хостинга мини-приложений",
+  "shortDescription": "",
+  "metaDescription": "Соглашение об оказании комплексной услуги хостинга мини-приложений",
+  "sectionTitle": "Соглашение об оказании комплексной услуги хостинга мини-приложений",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
