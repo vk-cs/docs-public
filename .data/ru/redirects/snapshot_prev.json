@@ -943,6 +943,7 @@
   "c3c18865-4a42-4113-a944-1fe7753e6d3c": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
   "4c28be68-7dc3-414a-a9ac-76dc02ff5d08": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
   "756c5966-0640-44c2-8674-4a1e26503639": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-gpu-operator",
+  "74fcce9d-68d4-425f-984e-a41848a3a7ca": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-hami",
   "911b14bd-bf77-4fe5-9adb-4750256215d5": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress",
   "573fba9b-2289-481d-be1a-296d036f6a8c": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-istio-mk8s",
   "20e1af62-a1b0-4882-88ab-1151a12f6821": "/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-jaeger",
