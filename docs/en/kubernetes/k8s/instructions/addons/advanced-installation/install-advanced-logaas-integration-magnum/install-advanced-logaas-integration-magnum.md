@@ -22,14 +22,13 @@ Regardless of the selected installation option, the add-on will be installed as 
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `logaas-integration` add-on card.
-   1. Select the required add-on version from the drop-down list.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `logaas-integration` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - the selected version;
       - application name;
@@ -38,7 +37,7 @@ Regardless of the selected installation option, the add-on will be installed as 
 
         {note:warn}
 
-        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+        Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
         {/note}
 
@@ -81,15 +80,13 @@ If this does not suit you, perform the **standard installation**.
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `logaas-integration` add-on card.
-   1. Select the necessary add-on version from the drop-down list.
-   1. Click the **Install addon** button.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `logaas-integration` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - selected version;
       - application name;

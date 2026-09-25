@@ -20,13 +20,13 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `ingress-nginx` add-on card.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -34,7 +34,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
         {note:warn}
 
-        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+        Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
         {/note}
 
@@ -104,8 +104,8 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
@@ -128,13 +128,13 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `ingress-nginx` add-on.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -179,7 +179,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
       {note:warn}
 
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
       {/note}
 
@@ -217,13 +217,13 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `ingress-nginx` add-on.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -253,7 +253,7 @@ If this does not suit you, perform a **standard installation** or **installation
 {note:info}
 
 - Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
-- The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
+- You can find the full add-on settings code along with the description of the fields on [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
 
 {/note}
 
@@ -273,7 +273,7 @@ service:
     }
 ```
 
-After editing the add-on code [continue installing the add-on](#installing_addon).
+Once done with editing the add-on code, continue with the installation process.
 
 ### Prohibition of deleting an Ingress controller node by the Autoscaler module
 
@@ -285,7 +285,7 @@ controller:
     cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
 ```
 
-After editing the add-on code [continue installing the add-on](#installing_addon).
+Once done with editing the add-on code, continue with the installation process.
 
 ## Getting the IP address of the load balancer
 

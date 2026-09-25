@@ -354,6 +354,45 @@ If the add-on is installed on several worker nodes, then NFD-Worker will be inst
 
 {/includetag}
 
+{includetag(hami)}
+
+<!--HAMi -->
+
+{tabs}
+
+{tab(Description)}
+
+[HAMi](https://project-hami.io/) (Heterogeneous AI Computing Virtualization Middleware) is a set of tools for managing heterogeneous AI accelerators for Kubernetes.
+
+The HAMi add-on in Managed Containers allows to share GPU resources (memory, computing power, or virtual cards) among different processes, for example, to run more ML models on existing hardware. This way, a single physical card can handle multiple tasks simultaneously with no changes required for your application code.
+
+The HAMi add-on helps to:
+
+- Effectively divide the GPU among pods, with the ability to allocate a specific portion of resources to each pod.
+- Isolate the memory and computing resources of the GPU at the level of an individual pod.
+- Increase the utilization of worker nodes on the GPU and reduce the total cost of ownership of the GPU infrastructure.
+- Lower the entry threshold for teams using machine learning and artificial intelligence, who do not need a full GPU card for tasks such as inference, RAG, and image processing.
+
+For more details on the add-on and its architecture, refer to the [official HAMi documentation](https://project-hami.io/docs).
+
+{note:warn}
+The HAMi add-on is only available for [worker nodes on GPU](/en/kubernetes/mk8s/concepts/flavors#gpu). The add-on also requires Kubernetes of [version 1.33](/en/kubernetes/mk8s/concepts/versions/version-support) or higher.
+{/note}
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 200m
+- **RAM**: 512Mi
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
+
 {includetag(ingress-controller-nginx)}
 
 <!--Ingress Controller (NGINX) -->

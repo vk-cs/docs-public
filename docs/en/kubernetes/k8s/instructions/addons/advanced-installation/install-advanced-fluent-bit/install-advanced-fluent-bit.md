@@ -17,10 +17,7 @@ The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concept
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the cluster.
    1. Go to the **Addons** tab.
-   1. If the cluster already has add-ons installed, click **Add Addon**.
-   1. Click **Install** on the `fluent-bit` add-on card.
-   1. Select the required add-on version from the drop-down list.
-   1. Click **Install addon**.
+   1. Click the **Install** button on the `fluent-bit` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
       - The selected version
@@ -31,7 +28,7 @@ The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concept
 
         {note:warn}
 
-        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+        Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
         {/note}
 
@@ -53,7 +50,7 @@ The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concept
       If necessary, adapt the given examples of the resource and the data sources usage to your task and Terraform configuration. For example, you can edit the add-on settings code by changing the `vkcs_kubernetes_addon` resource.
 
       {note:warn}
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
       {/note}
 
    1. Make sure the configuration files are correct and contain the necessary changes:
@@ -156,6 +153,6 @@ Installation of the add-on is impossible without editing the settings code. It i
 
    {/note}
 
-1. When you have finished editing the code, [continue installing the add-on](#installing_addon).
+1. Once done with editing the add-on code, continue with the installation process.
 
 You can read more about the pipeline in the [official documentation](https://docs.fluentbit.io/manual/pipeline).

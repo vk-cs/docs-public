@@ -1,0 +1,14 @@
+{
+  "title": "HAMi",
+  "shortDescription": "",
+  "metaDescription": "Install the HAMi add‑on for Kubernetes clusters in the Managed Containers service: step‑by‑step instructions for dedicated worker nodes on GPU",
+  "sectionTitle": "HAMi",
+  "icon": "",
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

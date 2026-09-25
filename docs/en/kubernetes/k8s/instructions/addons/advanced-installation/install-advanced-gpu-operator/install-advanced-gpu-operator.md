@@ -6,7 +6,7 @@
 
 The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
 
-1. Prepare a dedicated group of worker nodes for installing the addon, if it is not already done:
+1. Prepare a dedicated group of worker nodes for installing the add-on, if not done so already:
 
    {tabs}
    
@@ -30,7 +30,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
    
    {/tabs}
 
-1. Install add-on:
+1. Install the add-on:
 
    {tabs}
    
@@ -41,10 +41,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the cluster.
    1. Go to the **Addons** tab.
-   1. If the cluster already has add-ons installed, click **Add Addon**.
-   1. Click **Install** on the `gpu-operator` add-on card.
-   1. Select the required add-on version from the drop-down list.
-   1. Click **Install addon**.
+   1. Click the **Install** button on the `gpu-operator` add-on card, then click **Install addon**.
    1. (Optional) Edit the following:
 
       - the selected version
@@ -54,7 +51,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
 
       {note:warn}
 
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
       {/note}
       
@@ -95,7 +92,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
 
 ## {heading(Editing add-on settings code during installation)[id=editing_addon_code]}
 
-The full addon setup code with descriptions is available on [GitHub](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes).
+You can find the full add-on settings code along with the description of the fields on [GitHub](https://github.com/NVIDIA/k8s-device-plugin?tab=readme-ov-file#nvidia-device-plugin-for-kubernetes).
 
 {note:err}
 
@@ -105,4 +102,4 @@ The parameter is responsible for installing the nfd-worker plugin only on nodes 
 
 {/note}
 
-After editing the code, [continue installing the addon](#installing_addon).
+Once done with editing the add-on code, continue with the installation process.
