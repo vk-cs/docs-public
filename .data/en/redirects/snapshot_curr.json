@@ -685,6 +685,7 @@
   "8f7e776d-b5b2-4005-8385-66c189ec03c3": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-registry",
   "fa51143a-d565-4430-9718-164a54e0fe2c": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-eso",
   "4e5fde10-a8a0-4969-8af9-fa178d812350": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-gpu-operator",
+  "2063d0f3-6848-4b3d-9894-c3cea5ee73ec": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-hami",
   "39de11be-94e5-450b-9acf-8ffc6a834387": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress",
   "cc582dfd-0671-4e94-8fc9-eee2d6952464": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-jaeger",
   "7da09d5a-9a89-4b3f-a845-5869aa5144c2": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-kgateway",

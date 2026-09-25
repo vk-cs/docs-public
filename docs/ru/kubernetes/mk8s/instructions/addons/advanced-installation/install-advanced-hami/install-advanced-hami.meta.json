@@ -5,7 +5,7 @@
   "sectionTitle": "HAMi",
   "icon": "",
   "weight": 9,
-  "uuid": "",
+  "uuid": "74fcce9d-68d4-425f-984e-a41848a3a7ca",
   "build": {
     "for": [
       "public"
