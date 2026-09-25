@@ -16,15 +16,13 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `cert-manager` add-on card.
-   1. Select the necessary add-on version from the drop-down list.
-   1. Click the **Install addon** button.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `cert-manager` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - selected version;
       - application name;
@@ -33,7 +31,7 @@
 
         {note:warn}
 
-        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+        Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
         {/note}
 
@@ -82,8 +80,8 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
@@ -106,15 +104,13 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `cert-manager` add-on card.
-   1. Select the necessary add-on version from the drop-down list.
-   1. Click the **Install addon** button.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `cert-manager` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - selected version;
       - application name;
@@ -162,7 +158,7 @@
 
       {note:warn}
 
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
       {/note}
 
@@ -219,15 +215,13 @@ If this is not suitable for you, perform a **standard installation** or **instal
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `cert-manager` add-on card.
-   1. Select the necessary add-on version from the drop-down list.
-   1. Click the **Install addon** button.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `cert-manager` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - selected version;
       - application name;
@@ -276,7 +270,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
 
 Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
 
-The full add-on setup code along with the description of the fields is available on [GitHub](https://github.com/cert-manager/cert-manager/blob/master/deploy/charts/cert-manager/values.yaml).
+You can find the full add-on settings code along with the description of the fields on [GitHub](https://github.com/cert-manager/cert-manager/blob/master/deploy/charts/cert-manager/values.yaml).
 
 {note:err}
 
@@ -284,4 +278,4 @@ Do not delete the `podAnnotations.timestamp` fields or the values set in them. T
 
 {/note}
 
-After editing the add-on code [continue installing the add-on](#installing_addon).
+Once done with editing the add-on code, continue with the installation process.

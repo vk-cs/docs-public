@@ -16,13 +16,13 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -30,7 +30,7 @@
 
         {note:warn}
 
-        An incorrectly set settings code can lead to errors during installation or the add-on is inoperable.
+        Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
         {/note}
 
@@ -102,8 +102,8 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
@@ -126,13 +126,13 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -185,7 +185,7 @@
 
       {note:warn}
 
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
 
       {/note}
 
@@ -224,13 +224,13 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
-   1. Edit if necessary:
+   1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
+   1. (Optional) Edit:
 
       - application name;
       - the name of the namespace where the add-on will be installed;
@@ -261,7 +261,7 @@ If this does not suit you, perform a **standard installation** or **installation
 {note:info}
 
 - Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
-- The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
+- You can find the full add-on settings code along with the description of the fields on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
 
 {/note}
 
@@ -276,7 +276,7 @@ grafana:
   adminPassword: "<temporary user password>"
 ```
 
-After editing the add-on code [continue installing the add-on](#installing_addon).
+Once done with editing the add-on code, continue with the installation process.
 
 ## Changing Prometheus disk size
 
@@ -288,8 +288,8 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-2. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+2. Select the project where the required cluster is located.
 3. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 4. Click the name of the required cluster.
 5. Go to the **Addons** tab.

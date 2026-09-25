@@ -44,6 +44,10 @@
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=gpu-operator]}
 
+### {heading(HAMi)[id=mk8s-addons-hami]}
+
+{include(/kz/kubernetes/_includes/_addons.md)[tags=hami]}
+
 ### {heading(Ingress Controller (NGINX))[id=mk8s-addons-ingress-controller-nginx]}
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=ingress-controller-nginx]}

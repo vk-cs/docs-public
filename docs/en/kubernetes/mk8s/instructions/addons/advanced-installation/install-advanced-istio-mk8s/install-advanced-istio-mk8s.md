@@ -16,17 +16,16 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
-   1. Go to **Kubernetes clusters** → **Kubernetes clusters**.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `istio` add-on card.
-   1. Click the **Install addon** button.
+   1. Click the **Install** button on the `istio` add-on card, then click **Install addon**.
    1. If necessary, edit the [add-on settings code](#edit-code) (for example, to changes the add-on operating mode).
 
       {note:warn}
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
       {/note}
 
    1. Click the **Install addon** button.
@@ -49,8 +48,8 @@
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
@@ -73,17 +72,16 @@
    
    {tab(Management console)}
 
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
-   1. Go to **Kubernetes clusters** → **Kubernetes clusters**.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
+   1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `istio` add-on card.
-   1. Click the **Install addon** button.
+   1. Click the **Install** button on the `istio` add-on card, then click **Install addon**.
    1. If necessary, edit the [add-on settings code](#edit-code) (for example, to changes the add-on operating mode).
 
       {note:warn}
-      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
+      Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
       {/note}
    
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
@@ -162,13 +160,12 @@ During quick installation, the add-on settings code is not edited.
    
    {tab(Management console)}
       
-   1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+   1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the required cluster.
    1. Go to the **Addons** tab.
-   1. Click the **Install** button on the `istio` add-on card.
-   1. Click the **Install addon** button.
+   1. Click the **Install** button on the `istio` add-on card, then click **Install addon**.
    1. Leave the parameters unchanged and click the **Install addon** button.
 
       The installation of the add-on in the cluster will begin. This process can take a long time.

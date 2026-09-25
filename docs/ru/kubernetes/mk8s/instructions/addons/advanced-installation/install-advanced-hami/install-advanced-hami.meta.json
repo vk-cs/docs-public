@@ -1,0 +1,14 @@
+{
+  "title": "HAMi",
+  "shortDescription": "",
+  "metaDescription": "Установите аддон HAMi для кластеров Kubernetes в сервисе Managed Containers: пошаговая инструкция выделенных worker-узлов на GPU",
+  "sectionTitle": "HAMi",
+  "icon": "",
+  "weight": 9,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
