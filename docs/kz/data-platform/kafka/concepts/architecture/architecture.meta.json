@@ -4,7 +4,7 @@
   "metaDescription": "VK Data Platform: Cloud Kafka сервисінің хабарламаларды оқу / жазу деңгейіндегі және сервисті басқару деңгейіндегі архитектурасы",
   "sectionTitle": "Сервис архитектурасы",
   "icon": "",
-  "weight": 2,
+  "weight": 3,
   "build": {
     "for": [
       "public",
