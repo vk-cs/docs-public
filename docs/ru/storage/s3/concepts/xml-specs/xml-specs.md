@@ -614,6 +614,29 @@
 {/caption}
 {/ifdef}
 
+## {heading(AbortIncompleteMultipartUpload)[id=s3-concepts-xml-specs-abort-incomplete-multipart-upload-api]}
+
+{ifdef(s3-pdf)}
+Описание типов данных AbortIncompleteMultipartUpload приведено в {linkto(#tab_abort_incomplete_multipart_upload_api)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_abort_incomplete_multipart_upload_api]} — AbortIncompleteMultipartUpload)[align=right;position=above;id=tab_abort_incomplete_multipart_upload_api;number={const(numb_tab_abort_incomplete_multipart_upload_api)}]}
+{/ifdef}
+[cols="2,6,4,2", options="header"]
+|===
+|Имя
+|Описание
+|Тип
+|Обязательное
+
+|DaysAfterInitiation
+|Количество дней после инициализации составной загрузки, по истечении которых незавершенная составная загрузка прерывается, а все загруженные части удаляются
+|Integer
+| ![](../../assets/no.svg "inline")
+|===
+{ifdef(s3-pdf)}
+{/caption}
+{/ifdef}
+
 ## {heading(LifecycleRule)[id=s3-concepts-xml-specs-lifecyclerule-api]}
 
 {ifdef(s3-pdf)}
@@ -651,6 +674,11 @@
 |{linkto(#s3-concepts-xml-specs-lifecycle-api)[text=%text]}
 | ![](../../assets/no.svg "inline")
 
+|AbortIncompleteMultipartUpload
+|Указывает количество дней с начала незавершенной составной загрузки, по истечении которых {var(s3)} безвозвратно удаляет все части загрузки
+|{linkto(#s3-concepts-xml-specs-abort-incomplete-multipart-upload-api)[text=%text]}
+| ![](../../assets/no.svg "inline")
+
 |===
 {ifdef(s3-pdf)}
 {/caption}
@@ -659,10 +687,6 @@
 <!--- //|Transition -->
 <!--- //|Указывает, когда объект переходит к указанному классу хранилища -->
 <!--- //|Array of xml_Transition -->
-<!--- // ![](../../assets/no.svg "inline") -->
-<!--- //|AbortIncompleteMultipartUpload -->
-<!--- //|Указывает количество дней с начала незавершенной многокомпонентной загрузки, по истечении которых {var(s3)} безвозвратно удаляет все части загрузки -->
-<!--- //|AbortIncompleteMultipartUpload -->
 <!--- // ![](../../assets/no.svg "inline") -->
 
 ## {heading(LifecycleRuleFilter)[id=s3-concepts-xml-specs-lifecyclerulefilter-api]}
