@@ -8,13 +8,17 @@
     {
       "name": "Balance",
       "description": "Операции с балансом проекта"
+    },
+    {
+      "name": "Reports",
+      "description": "Операции с отчетами"
     }
   ],
   "paths": {
     "/public/v1/projects/{pid}/balances/amount": {
       "get": {
         "tags": [
-          "Balance",
+          "Balance"
         ],
         "summary": "Узнать баланс проекта",
         "description": "Возвращает информацию о балансе всех активных счетов проекта VK Cloud по его <a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>идентификатору</a> (PID).",
@@ -23,17 +27,17 @@
           {
             "in": "path",
             "name": "pid",
-            "description": "PID проекта. Указывается в эндпоинте.",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>Идентификатор</a> (PID) проекта",
             "required": true,
             "schema": {
               "title": "Pid",
               "type": "string"
             }
-          },
+          }
         ],
         "responses": {
           "200": {
-            "description": "Успешное выполнение запроса",
+            "description": "ОК",
             "content": {
               "application/json": {
                 "schema": {
@@ -43,7 +47,7 @@
             }
           },
           "404": {
-            "description": "Проект не найден",
+            "description": "Объект не найден",
             "content": {
               "application/json": {
                 "schema": {
@@ -53,11 +57,141 @@
             }
           },
           "422": {
-            "description": "Ошибка валидации",
+            "description": "Некорректный запрос",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "publicAuth": []
+          }
+        ]
+      }
+    },
+    "/public/v1/projects/{pid}/reports/lite-granular": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "summary": "Получить гранулярный отчет",
+        "description": "Возвращает детализированный отчет о потреблении облачных ресурсов проекта за указанный период.\n\nРекомендуемый диапазон — не более 1 месяца. Максимально допустимый диапазон — 6 месяцев. Данные возвращаются от начала дня ``date_from`` до конца дня ``date_to``.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>Идентификатор</a> (PID) проекта",
+            "required": true,
+            "schema": {
+              "title": "Pid",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "date_from",
+            "description": "Начало периода отчета. Формат: ``YYYY-MM-DD``",
+            "required": true,
+            "schema": {
+              "title": "date_from",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "date_to",
+            "description": "Конец периода отчета. Формат: ``YYYY-MM-DD``. Если не указан, вернется отчет за один день",
+            "required": false,
+            "schema": {
+              "title": "date_to",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "timezone",
+            "description": "Часовой пояс. Формат: IANA Time Zone",
+            "required": false,
+            "example": "Europe/Moscow",
+            "schema": {
+              "title": "timezone",
+              "type": "string",
+              "default": "Europe/Moscow"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiteGranularReportResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректный запрос",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorWithCodeSchema"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Ошибка аутентификации",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorWithCodeSchema"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Объект не найден",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorWithCodeSchema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Некорректный запрос",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorWithCodeSchema"
+                }
+              }
+            }
+          },
+          "504": {
+            "description": "Таймаут соединения",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorWithCodeSchema"
                 }
               }
             }
@@ -83,12 +217,10 @@
         ],
         "properties": {
           "base": {
-            "title": "Лицевой счет",
             "description": "Баланс лицевого счета",
             "type": "number"
           },
           "bonus": {
-            "title": "Бонусный счет",
             "description": "Баланс бонусного счета",
             "type": "number"
           }
@@ -102,7 +234,6 @@
         ],
         "properties": {
           "error": {
-            "title": "Ошибка",
             "description": "Текст ошибки",
             "type": "string"
           }
@@ -118,19 +249,306 @@
         ],
         "properties": {
           "loc": {
-            "title": "Расположение ошибки",
+            "description": "Расположение ошибки",
             "type": "array",
             "items": {
               "type": "string"
             }
           },
           "msg": {
-            "title": "Текст ошибки",
+            "description": "Текст ошибки",
             "type": "string"
           },
           "type": {
-            "title": "Тип ошибки",
+            "description": "Тип ошибки",
             "type": "string"
+          }
+        }
+      },
+      "LiteGranularReportResponse": {
+        "title": "LiteGranularReportResponse",
+        "description": "Гранулярный отчет о потреблении ресурсов",
+        "type": "object",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "items": {
+            "title": "Items",
+            "description": "Массив строк отчета",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReportItem"
+            }
+          }
+        }
+      },
+      "ReportItem": {
+        "title": "ReportItem",
+        "description": "Строка гранулярного отчета — потребление конкретного ресурса за конкретный день",
+        "type": "object",
+        "required": [
+          "pid",
+          "usage_day",
+          "resource_price",
+          "money",
+          "bonus",
+          "labels"
+        ],
+        "properties": {
+          "pid": {
+            "title": "PID",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid'>Идентификатор</a> (PID) проекта",
+            "type": "string"
+          },
+          "usage_day": {
+            "title": "Usage day",
+            "description": "День, за который агрегировано потребление",
+            "type": "string",
+            "format": "date"
+          },
+          "service_code": {
+            "title": "Service code",
+            "description": "Код услуги. Возможные значения приведены в схеме ``BillingCatalog``. Список может расширяться при появлении новых сервисов",
+            "type": "string",
+            "nullable": true
+          },
+          "service_name": {
+            "title": "Service name",
+            "description": "Название услуги",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_id": {
+            "title": "Resource ID",
+            "description": "Уникальный идентификатор ресурса",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_type": {
+            "title": "Resource type",
+            "description": "Тип ресурса. Возможные значения приведены в схеме ``BillingCatalog``. Список может расширяться при появлении новых сервисов",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_subtype": {
+            "title": "Resource subtype",
+            "description": "Подтип ресурса. \n\nПримеры для ``compute``: STD3-2-4, HEAVY-32-256 и т.д. \n\nПримеры для ``volume``: HDD, SSD, High iops SSD",
+            "type": "string",
+            "nullable": true
+          },
+          "parameter_code": {
+            "title": "Parameter code",
+            "description": "Код параметра тарификации",
+            "type": "string",
+            "nullable": true
+          },
+          "parameter_name": {
+            "title": "Parameter name",
+            "description": "Название параметра",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_unit": {
+            "title": "Resource unit",
+            "description": "Единица измерения потребления",
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "title": "Value",
+            "description": "Объем потребления",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_price": {
+            "title": "Resource price",
+            "description": "Цена по тарифу",
+            "type": "string"
+          },
+          "resource_price_unit": {
+            "title": "Resource price unit",
+            "description": "Единица измерения тарифа",
+            "type": "string",
+            "nullable": true
+          },
+          "resource_price_period": {
+            "title": "Resource price period",
+            "description": "Период тарификации",
+            "type": "string",
+            "nullable": true
+          },
+          "money": {
+            "title": "Money",
+            "description": "Сумма, списанная деньгами",
+            "type": "string"
+          },
+          "bonus": {
+            "title": "Bonus",
+            "description": "Сумма, списанная бонусами",
+            "type": "string"
+          },
+          "labels": {
+            "title": "Labels",
+            "description": "Пользовательские метки ресурса. Ключи — имена меток, значения — строки. Если меток нет, содержит пустой объект {}",
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "BillingCatalog": {
+        "title": "BillingCatalog",
+        "description": "Справочник услуг, типов и подтипов ресурсов, параметров тарификации и единиц измерения. Справочник не является исчерпывающим и может расширяться.",
+        "type": "object",
+        "required": [
+          "services"
+        ],
+        "properties": {
+          "services": {
+            "title": "Services",
+            "description": "Услуги биллинга",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BillingService"
+            }
+          }
+        },
+        "example": {
+          "services": [
+            {
+              "service_code": "ias",
+              "service_name": "IaaS",
+              "description": "Виртуальные серверы, диски, снимки",
+              "resource_types": [
+                {
+                  "resource_type": "compute",
+                  "resource_subtypes": ["STD3-{cpu}-{ram}", "HEAVY-{cpu}-{ram}", "BK-Standard-{cpu}-{ram}"],
+                  "parameters": [
+                    {"name": "CPU", "units": ["minute"]},
+                    {"name": "RAM", "units": ["minute"]}
+                  ]
+                },
+                {
+                  "resource_type": "volume",
+                  "resource_subtypes": ["HDD", "SSD", "High iops SSD"],
+                  "parameters": [{"name": "Объем диска", "units": ["GB-minute"]}]
+                },
+                {
+                  "resource_type": "snapshot",
+                  "resource_subtypes": ["ssd", "high_iops_disk"],
+                  "parameters": [{"name": "Объем снимка", "units": ["GB-minute"]}]
+                }
+              ]
+            },
+            {
+              "service_code": "bgd",
+              "service_name": "Big Data",
+              "description": "Кластеры больших данных (Sahara)",
+              "resource_types": [
+                {"resource_type": "sahara:compute", "resource_subtypes": ["HEAVY-16-128", "HEAVY-32-256", "STD3-{cpu}-{ram}"], "parameters": [{"name": "CPU", "units": ["minute"]}, {"name": "RAM", "units": ["minute"]}]},
+                {"resource_type": "sahara:volume", "resource_subtypes": ["SSD", "High iops SSD"], "parameters": [{"name": "Объем диска", "units": ["GB-minute"]}]}
+              ]
+            },
+            {
+              "service_code": "kub",
+              "service_name": "Kubernetes",
+              "description": "Кластеры первого поколения (Magnum)",
+              "resource_types": [
+                {"resource_type": "magnum:compute", "resource_subtypes": ["STD3-{cpu}-{ram}", "STD2-{cpu}-{ram}", "Standard-{cpu}-{ram}"], "parameters": [{"name": "CPU", "units": ["minute"]}, {"name": "RAM", "units": ["minute"]}]},
+                {"resource_type": "magnum:volume", "resource_subtypes": ["SSD", "HDD", "High iops SSD"], "parameters": [{"name": "Объем диска", "units": ["GB-minute"]}]},
+                {"resource_type": "magnum:load_balancer", "resource_subtypes": ["lb"], "parameters": [{"name": "Service Load Balancer", "units": ["minute"]}]}
+              ]
+            },
+            {
+              "service_code": "ksm",
+              "service_name": "Managed Cloud Containers (master)",
+              "description": "Кластеры второго поколения: control plane и балансировщики нагрузки",
+              "resource_types": [
+                {"resource_type": "managed_k8s:control_plane", "resource_subtypes": ["cluster-{id}ControlPlane"], "parameters": [{"name": "Потребление control plane", "units": ["minute"]}]},
+                {"resource_type": "managed_k8s:lb", "resource_subtypes": ["cluster-{id}"], "parameters": [{"name": "Балансировщик нагрузки", "units": ["minute"]}]}
+              ]
+            },
+            {
+              "service_code": "ksw",
+              "service_name": "Managed Cloud Containers (worker)",
+              "description": "Кластеры второго поколения: data plane",
+              "resource_types": [
+                {"resource_type": "managed_k8s:data_plane", "resource_subtypes": ["cluster-{id}{node-group}"], "parameters": [{"name": "Потребление data plane", "units": ["minute"]}]}
+              ]
+            },
+            {
+              "service_code": "dtb",
+              "service_name": "Databases",
+              "description": "Управляемые базы данных (Trove)",
+              "resource_types": [
+                {"resource_type": "trove:compute", "resource_subtypes": ["STD2-{cpu}-{ram}"], "parameters": [{"name": "CPU", "units": ["minute"]}, {"name": "RAM", "units": ["minute"]}]},
+                {"resource_type": "trove:volume", "resource_subtypes": ["SSD"], "parameters": [{"name": "Объем диска", "units": ["GB-minute"]}]},
+                {"resource_type": "trove:load_balancer", "resource_subtypes": ["lb"], "parameters": [{"name": "Service Load Balancer", "units": ["minute"]}]}
+              ]
+            },
+            {"service_code": "lbs", "service_name": "Load Balancer", "description": "Балансировщик нагрузки", "resource_types": [{"resource_type": "load_balancer", "resource_subtypes": ["lb"], "parameters": [{"name": "Балансировщик нагрузки", "units": ["minute"]}]}]},
+            {"service_code": "ipa", "service_name": "Public IP", "description": "Публичные IP-адреса", "resource_types": [{"resource_type": "ip_external", "resource_subtypes": ["fip:sprut", "external_port:sprut"], "parameters": [{"name": "Публичный IP-адрес", "units": ["minute"]}]}]},
+            {"service_code": "s3b", "service_name": "S3 Backup", "description": "Объектное хранилище (Backup)", "resource_types": [{"resource_type": "storage_bk", "parameters": [{"name": "Хранилище", "units": ["byte"]}]}, {"resource_type": "ingress_bk", "parameters": [{"name": "Входящий трафик", "units": ["byte"]}]}, {"resource_type": "egress_bk", "parameters": [{"name": "Исходящий трафик", "units": ["byte"]}]}, {"resource_type": "req1_bk", "parameters": [{"name": "Запросы", "units": ["req"]}]}, {"resource_type": "req3_bk", "parameters": [{"name": "Запросы", "units": ["req"]}]}]},
+            {"service_code": "s3h", "service_name": "S3 HotBox", "description": "Объектное хранилище (HotBox)", "resource_types": [{"resource_type": "storage", "parameters": [{"name": "Хранилище", "units": ["byte"]}]}, {"resource_type": "ingress", "parameters": [{"name": "Входящий трафик", "units": ["byte"]}]}, {"resource_type": "egress", "parameters": [{"name": "Исходящий трафик", "units": ["byte"]}]}, {"resource_type": "req3", "parameters": [{"name": "Запросы", "units": ["req"]}]}]},
+            {"service_code": "s3i", "service_name": "S3 IceBox", "description": "Объектное хранилище (IceBox)", "resource_types": [{"resource_type": "storage_ia", "parameters": [{"name": "Хранилище", "units": ["byte"]}]}, {"resource_type": "ingress_ia", "parameters": [{"name": "Входящий трафик", "units": ["byte"]}]}, {"resource_type": "egress_ia", "parameters": [{"name": "Исходящий трафик", "units": ["byte"]}]}]},
+            {"service_code": "msl", "service_name": "Microsoft Licenses", "description": "Лицензии Microsoft", "resource_types": [{"resource_type": "license_image", "resource_subtypes": ["mswinsrv"], "parameters": [{"name": "Лицензия", "units": ["license-minute"]}]}]},
+            {"service_code": "shr", "service_name": "Storage Manila", "description": "Сетевое файловое хранилище", "resource_types": [{"resource_type": "share", "resource_subtypes": ["HDD"], "parameters": [{"name": "Объем хранилища", "units": ["GB-minute"]}]}]}
+          ]
+        }
+      },
+      "BillingService": {
+        "title": "BillingService",
+        "type": "object",
+        "required": ["service_code", "service_name", "resource_types"],
+        "properties": {
+          "service_code": {"type": "string", "description": "Код услуги"},
+          "service_name": {"type": "string", "description": "Название услуги"},
+          "description": {"type": "string", "description": "Описание услуги"},
+          "resource_types": {"type": "array", "items": {"$ref": "#/components/schemas/BillingResourceType"}}
+        }
+      },
+      "BillingResourceType": {
+        "title": "BillingResourceType",
+        "type": "object",
+        "required": ["resource_type"],
+        "properties": {
+          "resource_type": {"type": "string", "description": "Тип ресурса"},
+          "resource_subtypes": {"type": "array", "description": "Примеры подтипов; список может быть неполным", "items": {"type": "string"}},
+          "parameters": {"type": "array", "items": {"$ref": "#/components/schemas/BillingParameter"}}
+        }
+      },
+      "BillingParameter": {
+        "title": "BillingParameter",
+        "type": "object",
+        "required": ["name", "units"],
+        "properties": {
+          "code": {"type": "string", "description": "Код параметра тарификации, если известен"},
+          "name": {"type": "string", "description": "Название параметра"},
+          "units": {"type": "array", "description": "Единицы измерения", "items": {"type": "string"}}
+        }
+      },
+      "ErrorWithCodeSchema": {
+        "title": "ErrorWithCodeSchema",
+        "description": "Ошибка с кодом и деталями",
+        "type": "object",
+        "required": [
+          "error",
+          "code"
+        ],
+        "properties": {
+          "error": {
+            "description": "Описание ошибки",
+            "type": "string"
+          },
+          "code": {
+            "description": "Код ошибки",
+            "type": "string"
+          },
+          "details": {
+            "description": "Дополнительные сведения об ошибке",
+            "type": "object"
           }
         }
       }

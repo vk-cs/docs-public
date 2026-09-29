@@ -1,6 +1,6 @@
 # {heading(Биллинг)[id=api-spec-billing]}
 
-С помощью API сервиса **Биллинг** вы можете узнать {linkto(/ru/intro/billing/concepts/balance#billing-balance)[text=баланс]} проекта VK Cloud.
+С помощью API сервиса **Биллинг** вы можете узнать {linkto(../../../../intro/billing/concepts/balance#billing-balance)[text=баланс]} проекта VK Cloud или получить {linkto(../../../../intro/billing/concepts/balance#billing-details)[text=гранулярный отчет]} о потреблении ресурсов.
 
 {cut(Получение эндпоинта, авторизация и аутентификация)}
 
