@@ -54,12 +54,25 @@ A browser must be installed on the host to connect.
 The Kube Prometheus Stack addon includes [Grafana](https://grafana.com/) — a tool for visualizing metrics and the status of clusters. To connect to it:
 
 1. [Make sure](/en/kubernetes/mk8s/instructions/addons/manage-addons#viewing_addons) that the `kube-prometheus-stack` addon [is installed](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) in the cluster.
-1. On the host, in a separate terminal session, run the command:
+1. On the host, in a separate terminal session, run the command to find the Grafana service name:
 
    ```console
-   kubectl -n <NAMESPACE> port-forward service/kube-prometheus-stack-grafana 8001:80
-   ``` 
-   where `<NAMESPACE>` is the namespace where the addon is installed.
+   kubectl -n <NAMESPACE> get svc -l app.kubernetes.io/name=grafana
+   ```
+
+   Here `<NAMESPACE>` is the namespace where the addon is installed.
+
+   The command output will show the Grafana service name in the format `<APP_NAME>-grafana`. If the app name was auto-generated when installed via the management console, the service name will look like `addon-<HASH>-grafana`, for example, `addon-c01ea19419-grafana`.
+
+   {note:info}
+   Service names for other addon components are also based on the app name. The exception is Prometheus and Alertmanager: their names are always `prometheus-prometheus` and `prometheus-alertmanager`. See {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-additional)[text=the addon installation instructions]} for details.
+   {/note}
+
+1. Grant external access to Grafana via `port-forward` using the service name:
+
+   ```console
+   kubectl -n <NAMESPACE> port-forward service/<GRAFANA_SERVICE_NAME> 8001:80
+   ```
 1. In a browser, open the address: http://127.0.0.1:8001.
 
 {/tab}

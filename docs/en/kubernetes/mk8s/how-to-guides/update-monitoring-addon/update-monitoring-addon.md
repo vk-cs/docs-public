@@ -72,9 +72,15 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    Write down the following information:
 
-   1. Application name (`kube-prometheus-stack` by default).
-   1. Namespace name (`prometheus-monitoring` by default).
-   1. Full add-on configuration code.
+   - Application name. To find it, run the following command and look for the name in the `NAME` column:
+
+     ```console
+     helm list -n <NAMESPACE>
+     ```
+
+     If the addon was installed via the management console and the name wasn't changed, it will look like `addon-<HASH>`.
+   - Namespace name (`prometheus-monitoring` by default).
+   - Full add-on configuration code.
 
 1. Set the environment variables that point to these application and namespace names. This will simplify further updating the add-on.
 
@@ -85,7 +91,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    {tab(Linux (bash)/macOS (zsh))}
 
    ```console
-   export CHART_NAME="kube-prometheus-stack"
+   export CHART_NAME="<APP_NAME>"
    export NAMESPACE="prometheus-monitoring"
 
    ```
@@ -95,7 +101,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    {tab(Windows (PowerShell))}
 
    ```console
-   $CHART_NAME="kube-prometheus-stack"
+   $CHART_NAME="<APP_NAME>"
    $NAMESPACE="prometheus-monitoring"
    ```
 
@@ -109,7 +115,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    kubectl -n $NAMESPACE get pvc
    ```
 
-   The output of the command will contain a list of PVCs (`NAME`) and their corresponding PVs (`VOLUMES`) with the size of the volumes (`CAPACITY`). Write this information down, you will need it later.
+   The output of the command will contain a list of PVCs (`NAME`) and their corresponding PVs (`VOLUMES`) with the size of the volumes (`CAPACITY`). Write this information down, you will need it later. The Grafana PVC name starts with the app name (in the example below — `kube-prometheus-stack`).
 
    {cut(Example of the command partial output)}
 
@@ -303,7 +309,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
    - `-k`: path to the kubeconfig file. The default value is retrieved from the `$KUBECONFIG` environment variable if specified.
    - `-c`: name of the kubeconfig context that should be used when working with the cluster. Default value: empty string.
    - `-n`: name of the namespace in which the add-on is installed. Default value is `prometheus-monitoring`.
-   - `-r`: name of the application with which the add-on is installed. It matches the name of the Helm-chart for the add-on. Default value is `kube-prometheus-stack`.
+   - `-r`: app name (Helm release) the addon is installed with. Default value is `kube-prometheus-stack` — this is the Helm chart name. When installed via the management console, the app name defaults to `addon-<HASH>`, so {linkto(#1_get_information_you_need_to_update_your_addon)[text=check the actual name]} and specify it explicitly.
    - `-d`: value of the [--dry-run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) argument for `kubectl`. Default value is `none`. Use `server` or `client` for test running of the script: no changes will be made to the cluster.
 
    {cut(Help output example)}
@@ -330,15 +336,15 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
    {/note}
 
-   Run the command, specifying the required parameters. You can omit the parameter if you are satisfied with its default value.
+   Run the command, specifying the required values after the flags. You can omit the parameter if you are satisfied with its default value.
 
    ```console
      bash prepare-for-addon-update.sh \
-       -k <path to the kubeconfig file> \
-       -c <name of the kubeconfig context> \
-       -n <name of the namespace> \
-       -r <name of the application> \
-       -d <value of the --dry-run argument for kubectl>
+       -k <KUBECONFIG_PATH> \
+       -c <KUBECONFIG_CONTEXT_NAME> \
+       -n <NAMESPACE> \
+       -r <APP_NAME> \
+       -d <DRY_RUN_VALUE>
 
    ```
 

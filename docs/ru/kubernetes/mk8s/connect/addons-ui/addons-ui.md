@@ -54,12 +54,26 @@
 В состав аддона Kube Prometheus Stack входит [Grafana](https://grafana.com/) — инструмент для визуализации метрик и состояния кластера. Чтобы подключиться к нему: 
 
 1. {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=Убедитесь]}, что аддон `kube-prometheus-stack` {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=установлен]} в кластере.
-1. На хосте в отдельной сессии терминала выполните команду:
-   
+1. На хосте в отдельной сессии терминала выполните команду, чтобы узнать имя сервиса Grafana:
+
    ```console
-   kubectl -n <ПРОСТРАНСТВО_ИМЕН> port-forward service/kube-prometheus-stack-grafana 8001:80
-   ``` 
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get svc -l app.kubernetes.io/name=grafana
+   ```
+
    Здесь `<ПРОСТРАНСТВО_ИМЕН>` — название пространства имен, куда установлен аддон.
+
+   В выводе команды будет имя сервиса Grafana в формате `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana`. Если название приложения было сгенерировано автоматически при установке через личный кабинет, имя сервиса будет иметь вид `addon-<ХЕШ>-grafana`, например, `addon-c01ea19419-grafana`.
+
+   {note:info}
+   Названия сервисов других компонентов аддона также формируются на основе названия приложения. Исключение — Prometheus и Alertmanager: их названия всегда `prometheus-prometheus` и `prometheus-alertmanager`. Подробнее в {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-additional)[text=инструкции по установке аддона]}.
+   {/note}
+
+1. Откройте доступ к Grafana извне через `port-forward`, используя имя сервиса:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
+   ```
+
 1. Откройте в браузере адрес http://127.0.0.1:8001.
 
 {/tab}

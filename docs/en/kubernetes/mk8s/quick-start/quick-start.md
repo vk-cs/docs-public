@@ -15,24 +15,21 @@ After going through all the steps of the quickstart, you will:
 
 A running Kubernetes cluster consumes computing resources.
 
-After completing a quickstart, stop or delete the cluster if you no longer need it.
+After completing the quickstart, {linkto(#mk8s-quick-start-delete-resources)[text=stop or delete the cluster]} if you no longer need it.
 
 {/note}
 
-## {counter(step)}. Before you begin
+## {counter(kuber_level_1)[id=create_cluster]}. Create and configure the cluster
 
-### 1.1. Create a cluster
+### {const(create_cluster)}.{counter(kuber_level_2)}. Create a cluster
 
 1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/).
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. If there are no clusters in the selected project yet, click **Create cluster**.
-
-   Otherwise, click **Add**.
-
+1. If there are no clusters in the selected project yet, click **Create cluster**. Otherwise, click **Add**.
 1. Select the **New generation** option and click the **Continue** button.
 
-1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/mk8s/concepts/versions/version-support).
+1. In the **Configuration** block, select the latest available Kubernetes version.
 
 1. In the **Master nodes** block, click the **Set up** button and specify the following:
 
@@ -58,7 +55,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 1. In the **Node group** block, click the **Set up** button and specify the following:
 
-   1. **Node type:** `STD3-4-8`.
+   1. **Node type:** `STD3-4-4`.
    1. **Availability zone:** `Moscow (MS1)`.
 
       {note:info}
@@ -73,15 +70,15 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 1. Click the **Create** button.
 
-Wait for the cluster to complete, this process may take a while.
+Wait for the cluster to be created, this process might take a while.
 
-### 1.2. Install add-ons in the cluster
+### {const(create_cluster)}.{counter(kuber_level_2)}. Install add-ons in the cluster
 
 {note:warn}
 
 When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
-Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
+Usage of load balancers is [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
@@ -91,7 +88,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) the `kube-prometheus-stack` add-on.
 
-   Write down the password to access the Grafana web interface.
+   [Specify](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-temp-password) a password for the Grafana web interface. If you don't specify a password, one will be generated automatically and you'll need to [retrieve it](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-get-password) from the Kubernetes secret.
 
 1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) the `ingress-nginx` add-on with default parameters.
 
@@ -107,7 +104,7 @@ Further, the following values will be used in the commands and configuration fil
 | Password of the Docker registry user                        | `registry-password-123456` |
 | The password of the user `admin` for Grafana                | `grafana-password-123456`  |
 
-### 1.3. Configure the environment to work with the cluster from
+### {const(create_cluster)}.{counter(kuber_level_2)}. Configure the environment to work with the cluster
 
 Set up the host from which you will work with the cluster.
 This can be a real computer or a virtual machine.
@@ -131,7 +128,7 @@ Install the following tools on the host:
   - For Windows and macOS: Docker Desktop.
   - For Linux, Docker Desktop is also recommended, but you can install and use Docker from the command line.
 
-### 1.4. Connect to the cluster
+## {counter(kuber_level_1)}. Connect to the cluster
 
 1. Add the **Administrator Kubernetes** role in management console for the user on whose behalf the connection to the cluster will be performed:
 
@@ -149,7 +146,7 @@ Install the following tools on the host:
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the required cluster in the list, then select **Get Kubeconfig to access the cluster** in its menu.
 
-1. Move kubeconfig to the `~/.kube` directory, so you don't have to specify additional arguments when using `kubectl`.
+1. Specify the path to kubeconfig in the `$KUBECONFIG` environment variable. The variable is only active in the current terminal session.
 
    The commands below assume that kubeconfig has been downloaded into the `~/Downloads` directory under the name `mycluster_kubeconfig.yaml`.
 
@@ -158,8 +155,7 @@ Install the following tools on the host:
    {tab(Linux/macOS)}
 
    ```console
-   mkdir ~/.kube && \
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   export KUBECONFIG="$HOME/Downloads/mycluster_kubeconfig.yaml"
    ```
 
    {/tab}
@@ -167,31 +163,8 @@ Install the following tools on the host:
    {tab(Windows)}
 
    ```console
-   mkdir ~/.kube; `
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   $env:KUBECONFIG = "$HOME\Downloads\mycluster_kubeconfig.yaml"
    ```
-
-   {/tab}
-
-   {/tabs}
-
-1. Specify the path to kubeconfig in the `$KUBECONFIG` environment variable:
-
-   {tabs}
-
-   {tab(Linux/macOS)}
-
-      ```console
-      export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
-      ```
-
-   {/tab}
-
-   {tab(Windows)}
-
-      ```console
-      $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
-      ```
 
    {/tab}
 
@@ -216,24 +189,30 @@ Install the following tools on the host:
    To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
    ```
 
-## {counter(step)}. Get access to cluster monitoring tools
+## {counter(kuber_level_1)}. Get access to cluster monitoring tools
 
-An add-on with [monitoring tools](/en/kubernetes/mk8s/monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled.
+An add-on with [monitoring tools](/en/kubernetes/mk8s/monitoring) based on Prometheus and Grafana was installed in the cluster.
 
-1. In a separate terminal session, run the command:
+1. Find the Grafana service name using the following command:
 
    ```console
-   kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+   kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+   ```
+
+   The command output will show the Grafana service name in the format `<APP_NAME>-grafana`. If the app name was auto-generated when installed via the management console, the service name will look like `addon-<HASH>-grafana`, for example, `addon-c01ea19419-grafana`.
+
+1. Grant external access to Grafana via `port-forward` using the service name:
+
+   ```console
+   kubectl -n prometheus-monitoring port-forward service/<GRAFANA_SERVICE_NAME> 8001:80
    ```
 
    {note:warn}
-
-   - Do not close this session, or you will lose access to the Grafana web interface.
-   - If port `8001` is already in use by another application, adjust the command by specifying a free port.
-
+   - Do not close this session or you will lose access to the Grafana web interface.
+   - If port `8001` is already in use by another application, modify the command to use a free port.
    {/note}
 
-1. Open the Grafana web interface:
+1. Launch the Grafana web interface:
 
    1. In your browser, go to the URL `http://127.0.0.1:8001/`.
    1. Authorize with the login/password pair `admin`/`grafana-password-123456`.
@@ -241,7 +220,7 @@ An add-on with [monitoring tools](/en/kubernetes/mk8s/monitoring) was installed 
 
 1. Select **Dashboards → Browse** from the side menu of any pre-configured dashboard to get information about the cluster resources.
 
-## {counter(step)}. Upload the necessary images to the Docker registry
+## {heading({counter(kuber_level_1)}. Upload the necessary images to the Docker registry)[id=mk8s-quick-start-upload-to-registry]}
 
 The [Docker Registry add-on](/en/kubernetes/mk8s/connect/docker-registry) was installed in the cluster which will store the Docker images.
 
@@ -413,7 +392,7 @@ To put your own images in the Docker cluster registry:
       kubectl create secret docker-registry k8s-registry-creds --docker-server=192.0.2.22:5000 --docker-username=registry --docker-password=registry-password-123456
       ```
 
-## {counter(step)}. Deploy demo applications
+## {counter(kuber_level_1)}. Deploy demo applications
 
 Based on the `nginx-k8s-demo` image loaded in the Docker registry, two applications will be deployed: `tea` and `coffee`.
 For each of the applications the following will be created:
@@ -628,7 +607,9 @@ To deploy the applications:
 
    {tab(Services)}
 
-   In `kubectl`, run the command: 
+   Use one of the ways:
+
+   In `kubectl`, run the command:
 
      ```console
      kubectl get svc
@@ -640,9 +621,9 @@ To deploy the applications:
 
    {/tabs}
 
-## {counter(step)}. Configure Ingress for demo applications
+## {counter(kuber_level_1)}. Configure Ingress for demo applications
 
-The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) add-on was installed in the cluster NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
+The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) add-on for NGINX was installed in the cluster to route incoming user requests to the applications deployed in the cluster.
 
 For Ingress controller to route requests to the corresponding Service resources, through which the `tea` and `coffee` demo applications were published, do the following:
 
@@ -693,7 +674,7 @@ For Ingress controller to route requests to the corresponding Service resources,
 
    You will see information that there is a working Ingress resource.
 
-## {counter(step)}. Check that all the created resources in the cluster are working
+## {counter(kuber_level_1)}. Check that all the created resources in the cluster are working
 
 To verify that the example is working, run `curl` requests to the IP address `192.0.2.2` of the load balancer. The Ingress controller associated with the load balancer will then deliver these requests to the appropriate applications.
 
@@ -729,7 +710,7 @@ K8S Persistent Volume status: present
 curl --resolve cafe.example.com:80:192.0.2.2 http://cafe.example.com/coffee
 ```
 
-IP address
+Output should give you the similar information:
 
 ```text
 Server address: 10.100.109.0:8080
@@ -753,14 +734,15 @@ This result demonstrates that:
 1. You can mount storage to pods using Persistent Volume Claim.
 1. The Ingress controller provided with the cluster is configured correctly because it shows the real IP address of the request source.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-quick-start-delete-resources]}
 
 A running cluster consumes computing resources. If you no longer need it:
 
 - [stop](/en/kubernetes/mk8s/instructions/manage-cluster#start_or_stop_cluster) it to use it later;
 - [delete](/en/kubernetes/mk8s/instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.
+- [Delete](/en/networks/balancing/instructions/manage-lb#balancing-manage-lb-delete) the load balancers.
 
-## What's next?
+## {heading(What's next?)[id=mk8s-quick-start-what-next]}
 
 - [Get to know the usage scenarios](/en/kubernetes/mk8s/how-to-guides) of the cluster.
 - [Get to know the concepts](/en/kubernetes/mk8s/concepts) of the container service.

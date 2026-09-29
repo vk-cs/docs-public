@@ -8,7 +8,7 @@ Installing the GPU driver on a VM with Windows OS is done interactively using an
 
 1. Check your VM's configuration type:
 
-   1. [Go](https://msk.cloud.vk.com/app/en/) to your {var(cloud)} personal account.
+   1. [Go](https://msk.cloud.vk.com/app/en/) to your {var(cloud)} management console.
    1. Go to **Cloud Computing** → **Virtual Machines**.
    1. In the list, find the VM for which you need to install the GPU driver. Make sure the **Type** column shows a dedicated GPU configuration flavor.
 

@@ -58,12 +58,25 @@
 Kube Prometheus Stack аддонының құрамына [Grafana](https://grafana.com/) кіреді — бұл метрикалар мен кластер күйін визуализациялауға арналған құрал. Оған қосылу үшін: 
 
 1. Кластерде `kube-prometheus-stack` аддоны {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=орнатылғанына]} {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=көз жеткізіңіз]}.
-1. Хостта терминалдың бөлек сессиясында команданы орындаңыз:
+1. Хостта терминалдың бөлек сессиясында Grafana сервисінің атауын табу үшін команданы орындаңыз:
 
    ```console
-   kubectl -n <ПРОСТРАНСТВО_ИМЕН> port-forward service/kube-prometheus-stack-grafana 8001:80
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get svc -l app.kubernetes.io/name=grafana
    ``` 
+
    Мұнда `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған атаулар кеңістігінің атауы.
+
+   Команда шығысында Grafana сервисінің `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana` форматындағы атауы көрсетіледі. Егер аддон жеке кабинет арқылы орнатылған болса және қолданбаның атауы автоматты түрде жасалған болса, сервис атауы `addon-<ХЕШ>-grafana` түрінде болады, мысалы, `addon-c01ea19419-grafana`.
+
+   {note:info}
+   Аддонның басқа компоненттерінің сервис атаулары да қолданбаның атауы негізінде жасалады. Ерекшелік — Prometheus пен Alertmanager: олардың атаулары әрқашан `prometheus-prometheus` және `prometheus-alertmanager`. Толығырақ {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-additional)[text=аддонды орнату нұсқаулығында]}.
+   {/note}
+
+1. Сервис атауын пайдаланып, Grafana-ға `port-forward` арқылы сыртқы қолжетімділікті қамтамасыз етіңіз:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
+   ``` 
 1. Браузерде http://127.0.0.1:8001 мекенжайын ашыңыз.
 
 {/tab}

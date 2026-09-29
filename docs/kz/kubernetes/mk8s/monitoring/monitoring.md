@@ -22,16 +22,22 @@ Kubernetes кластерінің күйін бақылау үшін келес�
 
 1. Grafana веб-интерфейсіне қол жеткізіңіз:
 
-   1. Терминалдың бөлек сессиясында команданы орындаңыз:
+   1. Команданы орындап, Grafana сервисінің атауын табыңыз:
 
       ```console
-      kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+      kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+      ```
+
+      Команда шығысында Grafana сервисінің `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana` форматындағы атауы көрсетіледі. Егер аддон жеке кабинет арқылы орнатылған болса және қолданбаның атауы автоматты түрде жасалған болса, сервис атауы `addon-<ХЕШ>-grafana` түрінде болады, мысалы, `addon-c01ea19419-grafana`.
+
+   1. Сервис атауын пайдаланып, Grafana-ға `port-forward` арқылы сыртқы қолжетімділікті қамтамасыз етіңіз:
+
+      ```console
+      kubectl -n prometheus-monitoring port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
       ```
 
       {note:warn}
-
-      Бұл сессияны жаппаңыз, әйтпесе Grafana веб-интерфейсіне қолжеткізу жоғалады.
-
+      Бұл сессияны жаппаңыз, әйтпесе Grafana веб-интерфейсіне қол жеткізу жоғалады.
       {/note}
 
    1. Команда шығысы бойынша Grafana-ға қол жеткізу үшін `kubectl` ашқан портты анықтаңыз.

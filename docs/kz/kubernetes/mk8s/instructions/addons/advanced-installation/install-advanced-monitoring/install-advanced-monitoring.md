@@ -30,7 +30,7 @@
 
       - қосымша атауын;
       - аддон орнатылатын аттар кеңістігінің атауын;
-      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=аддонды баптау кодын]}.
+      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=аддонды баптау кодын]} (мысалы, Grafana веб-интерфейсі үшін уақытша құпиясөз орнату).
 
         {note:warn}
 
@@ -48,9 +48,7 @@
 
    {/tabs}
 
-1. Қажет болса, {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=Prometheus дискісінің өлшемін өзгертіңіз]}.
-1. Қажет болса, {linkto(#mk8s-install-advanced-monitoring-get-password)[text=Grafana үшін құпиясөзді Kubernetes секретінен алыңыз]}.
-1. Қажет болса, браузерде Kube Prometheus Stack аддонының құрамына кіретін {linkto(../../../../connect/addons-ui#mk8s-addons-ui-web-ui)[text=Grafana веб-интерфейсіне қосылыңыз]}.
+{include(/kz/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -96,7 +94,7 @@
 
       - қосымша атауын;
       - аддон орнатылатын аттар кеңістігінің атауын;
-      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=аддонды баптау кодын]}.
+      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=аддонды баптау кодын]} (мысалы, Grafana веб-интерфейсі үшін уақытша құпиясөз орнату).
 
    1. Аддонды баптау кодында қажетті ерекшеліктерді (tolerations) және түйін селекторларын (nodeSelector) орнатыңыз:
 
@@ -159,8 +157,7 @@
 
    {/tabs}
 
-1. Қажет болса, {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=Prometheus дискісінің өлшемін өзгертіңіз]}.
-1. Қажет болса, {linkto(#mk8s-install-advanced-monitoring-get-password)[text=Grafana үшін құпиясөзді Kubernetes секретінен алыңыз]}.
+{include(/kz/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -201,8 +198,7 @@
 
    {/tabs}
 
-1. Қажет болса, {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=Prometheus дискісінің өлшемін өзгертіңіз]}.
-1. {linkto(#mk8s-install-advanced-monitoring-get-password)[text=Grafana үшін құпиясөзді Kubernetes секретінен алыңыз]}.
+{include(/kz/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -210,12 +206,7 @@
 
 ## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=mk8s-install-advanced-monitoring-edit-code]}
 
-{note:info}
-
-- Аддон кодын өңдеу стандартты орнату және бөлінген worker-түйіндерге орнату үшін қолданылады.
-- Өрістер сипаттамасымен бірге аддонды баптау кодының толық нұсқасы [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml) сайтында қолжетімді.
-
-{/note}
+Аддон кодын өңдеу стандартты орнату және бөлінген worker-түйіндерге орнату үшін қолданылады. Өрістер сипаттамасымен бірге аддонды баптау кодының толық нұсқасы [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml) сайтында қолжетімді.
 
 ### {heading(Grafana веб-интерфейсі үшін уақытша құпиясөз орнату)[id=mk8s-install-advanced-monitoring-temp-password]}
 
@@ -225,14 +216,18 @@
 
 ```yaml
 grafana:
-  adminPassword: "<временный пароль>"
+  adminPassword: "<ВРЕМЕННЫЙ_ПАРОЛЬ>"
 ```
+
+Бұл өрістің мәні тек аддонды орнату кезінде әрекет етеді. Егер оны орнатылған аддонда өзгертсеңіз, Kubernetes секреті жаңартылады, бірақ Grafana-ға кіруге арналған құпиясөз өзгермейді: `admin` пайдаланушысы PVC-дегі Grafana дерекқорында сақталады және жаңарту кезінде қайта жазылмайды. Бұл жағдайда секреттегі құпиясөз кіру үшін жарамсыз болуы мүмкін.
+
+Орнатылған аддонда құпиясөзді ауыстыру үшін қалпына келтіру пәрменімен жаңа құпиясөзді {linkto(#mk8s-install-advanced-monitoring-reset-password)[text=орнатыңыз]} немесе Grafana PVC-ін жойып, аддонды {linkto(#mk8s-install-advanced-monitoring-reinstall)[text=қайта орнатыңыз]}.
 
 Кодты өңдегеннен кейін {linkto(#mk8s-install-advanced-monitoring-install)[text=аддонды орнатуды жалғастырыңыз]}.
 
-## {heading(Prometheus дискісінің өлшемін өзгерту)[id=mk8s-install-advanced-monitoring-disk-change]}
+## {heading(Аддонмен қосымша әрекеттер)[id=mk8s-install-advanced-monitoring-additional]}
 
-Бұл операция кластерде `kube-prometheus-stack` мониторинг аддоны {linkto(#mk8s-install-advanced-monitoring-install)[text=орнатылған]} болса қолжетімді.
+### {heading(Prometheus дискісінің өлшемін өзгерту)[id=mk8s-install-advanced-monitoring-disk-change]}
 
 Prometheus дискісінде кластер мониторингі деректері сақталады. Егер олар үшін орын жеткіліксіз болса немесе Prometheus дискісінің өнімділігін арттырғыңыз келсе, диск өлшемін үлкейтіңіз.
 
@@ -253,15 +248,9 @@ Prometheus дискісінде кластер мониторингі дерек
 
 {/tabs}
 
-## {heading(Grafana үшін құпиясөзді Kubernetes секретінен алу)[id=mk8s-install-advanced-monitoring-get-password]}
+### {heading(Grafana үшін құпиясөзді Kubernetes секретінен алу)[id=mk8s-install-advanced-monitoring-get-password]}
 
-Егер аддон уақытша құпиясөз көрсетілмей орнатылған болса, Grafana веб-интерфейсіне кіруге арналған құпиясөз мәнін Kubernetes секретінен алуға болады.
-
-{note:info}
-
-Төменде `kube-prometheus-stack` сервис атауы және `prometheus-monitoring` аттар кеңістігі пайдаланылады. Егер аддонды қосу кезінде басқа параметрлер таңдалса, қадамдар мен пәрмендерді түзетіңіз.
-
-{/note}
+Егер аддон уақытша құпиясөз көрсетілмей орнатылған болса, Grafana веб-интерфейсіне кіруге арналған құпиясөз мәнін Kubernetes секретінен алуға болады. Егер аддонды орнатқаннан кейін `grafana.adminPassword` мәні өзгертілсе, секреттегі құпиясөз Grafana-ға кіруге арналған құпиясөзге сәйкес келмеуі мүмкін.
 
 {tabs}
 
@@ -271,14 +260,24 @@ Prometheus дискісінде кластер мониторингі дерек
 
 1. `kubectl` көмегімен кластерге қосыла алатыныңызға {linkto(../../../../connect/kubectl#mk8s-kubectl-check-connection)[text=көз жеткізіңіз]}.
 
-1. Kubernetes секретінен Grafana-ға кіруге арналған құпиясөзді алыңыз:
+1. Grafana секретінің атауын табыңыз:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret -l app.kubernetes.io/name=grafana
+   ```
+
+   Мұнда `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі. Әдепкі бойынша — `prometheus-monitoring`.
+
+   Пәрмен шығысында Grafana секретінің атауы болады. Ол қолданбаның атауы негізінде жасалады, мысалы `myapp-grafana`. Егер қолданбаның атауы аддонды жеке кабинет арқылы орнату кезінде автоматты түрде жасалған болса, атау `addon-a0b1c2d3f4-grafana` түрінде болады.
+
+1. Осы атауды көрсетіп, Kubernetes секретінен Grafana-ға кіруге арналған құпиясөзді алыңыз:
 
    {tabs}
 
    {tab(Windows (PowerShell))}
 
    ```console
-   $ENCODED = kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}'; `
+   $ENCODED = kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret <ИМЯ_СЕКРЕТА_GRAFANA> -o jsonpath='{.data.admin-password}'; `
    [System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String($ENCODED)) | Write-Output
    ```
 
@@ -287,41 +286,74 @@ Prometheus дискісінде кластер мониторингі дерек
    {tab(Linux (bash)/macOS (zsh))}
 
    ```console
-   kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}' | base64 --decode
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret <ИМЯ_СЕКРЕТА_GRAFANA> -o jsonpath='{.data.admin-password}' | base64 --decode
    ```
 
    {/tab}
 
    {/tabs}
 
+   Мұнда:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі.
+   - `<ИМЯ_СЕКРЕТА_GRAFANA>` — алдыңғы пәрмен шығысындағы секрет атауы.
+
 {/tab}
 
 {/tabs}
 
-## {heading(Grafana үшін құпиясөзді қалпына келтіру)[id=mk8s-install-advanced-monitoring-reset-password]}
+### {heading(Grafana үшін құпиясөзді қалпына келтіру)[id=mk8s-install-advanced-monitoring-reset-password]}
 
-Егер аддон уақытша құпиясөз көрсетілмей орнатылған болса, Grafana веб-интерфейсіне кіруге арналған құпиясөз мәні Kubernetes секретінде сақталады. Егер бұл секрет жоғалып кетсе, Grafana-ға қайта қол жеткізу үшін құпиясөзді қалпына келтіре аласыз.
-
-{note:info}
-Төменде `kube-prometheus-stack` сервис атауы және `prometheus-monitoring` аттар кеңістігі пайдаланылады. Егер аддонды қосу кезінде басқа параметрлер таңдалса, пәрмендерді түзетіңіз.
-{/note}
+Егер Grafana веб-интерфейсіне кіруге арналған құпиясөз жоғалса немесе жарамаса (мысалы, Kubernetes секретіндегі құпиясөз нақты құпиясөзге сәйкес келмесе), жаңа құпиясөз орната аласыз.
 
 1. Grafana подының атауын алыңыз:
 
    ```console
-   kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get pod -l app.kubernetes.io/name=grafana
    ```
 
-   **Пәрмен шығысындағы под атауының форматы:**
-
-   ```text
-   kube-prometheus-stack-grafana-XXXXXXXXX-XXXXX
-   ```
+   Мұнда `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі. Әдепкі бойынша — `prometheus-monitoring`.
 
 1. Grafana подының ішінде пәрменді орындап, құпиясөзді қалпына келтіріңіз:
 
    ```console
-   kubectl -n prometheus-monitoring exec <имя пода Grafana> -- sh -c "grafana cli --debug admin reset-admin-password <новый пароль>"
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> exec <ИМЯ_ПОДА_GRAFANA> -- sh -c "grafana cli --debug admin reset-admin-password <НОВЫЙ_ПАРОЛЬ>"
    ```
 
+   Мұнда:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі.
+   - `<ИМЯ_ПОДА_GRAFANA>` — алдыңғы пәрмен шығысындағы под атауы.
+   - `<НОВЫЙ_ПАРОЛЬ>` — Grafana-ға кіруге арналған жаңа құпиясөз.
+
    Егер құпиясөз сәтті қалпына келтірілсе, пәрмен шығысында `Admin password changed successfully ✔` хабарламасы болады.
+
+### {heading(Аддонды Grafana PVC-ін жойып қайта орнату)[id=mk8s-install-advanced-monitoring-reinstall]}
+
+Бұл тәсіл аддонды баптау кодындағы `grafana.adminPassword` өрісі арқылы Grafana құпиясөзін орнатуға мүмкіндік береді.
+
+{note:warn}
+Grafana PVC-мен бірге Grafana дерекқорында сақталған деректер жойылады: пайдаланушы дашбордтары, деректер көздері және веб-интерфейс арқылы енгізілген басқа баптаулар.
+{/note}
+
+1. `kube-prometheus-stack` аддонын {linkto(../../manage-addons#mk8s-manage-addons-delete)[text=жойыңыз]}.
+1. Grafana PVC-і қалғанын тексеріңіз:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get pvc -l app.kubernetes.io/name=grafana
+   ```
+
+   Мұнда `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі. Әдепкі бойынша — `prometheus-monitoring`.
+
+1. Егер PVC қалса, оны жойыңыз:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> delete pvc <ИМЯ_PVC_GRAFANA>
+   ```
+
+   Мұнда:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған аттар кеңістігі.
+   - `<ИМЯ_PVC_GRAFANA>` — алдыңғы пәрмен шығысындағы PVC атауы.
+
+1. Аддонды қайтадан орнатып, баптау кодында қажетті құпиясөзді {linkto(#mk8s-install-advanced-monitoring-temp-password)[text=көрсетіңіз]}.

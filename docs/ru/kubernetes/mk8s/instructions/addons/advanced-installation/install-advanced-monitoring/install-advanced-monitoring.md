@@ -28,7 +28,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]}.
+      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]} (например, для установки временного пароля веб-интерфейса Grafana).
 
         {note:warn}
         Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
@@ -44,9 +44,7 @@
    
    {/tabs}
 
-1. При необходимости {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
-1. При необходимости {linkto(#mk8s-install-advanced-monitoring-get-password)[text=получите пароль для Grafana из секрета Kubernetes]}.
-1. При необходимости в браузере {linkto(../../../../connect/addons-ui#mk8s-addons-ui-web-ui)[text=подключитесь к веб-интерфейсу Grafana]}, входящему в состав аддона Kube Prometheus Stack.
+{include(/ru/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -92,7 +90,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]}.
+      - {linkto(#mk8s-install-advanced-monitoring-edit-code)[text=код настройки аддона]} (например, для установки временного пароля веб-интерфейса Grafana).
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -153,8 +151,7 @@
    
    {/tabs}
 
-1. При необходимости {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
-1. При необходимости {linkto(#mk8s-install-advanced-monitoring-get-password)[text=получите пароль для Grafana из секрета Kubernetes]}.
+{include(/ru/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -193,8 +190,7 @@
    
    {/tabs}
 
-1. При необходимости {linkto(#mk8s-install-advanced-monitoring-disk-change)[text=измените размер диска Prometheus]}.
-1. {linkto(#mk8s-install-advanced-monitoring-get-password)[text=Получите пароль для Grafana из секрета Kubernetes]}.
+{include(/ru/_includes/_mk8s_kube_prometheus_stack_optional.md)}
 
 {/tab}
 
@@ -202,10 +198,7 @@
 
 ## {heading(Редактирование кода настройки аддона при установке)[id=mk8s-install-advanced-monitoring-edit-code]}
 
-{note:info}
-- Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы.
-- Полный код настройки аддона вместе с описанием полей доступен на [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
-{/note}
+Редактирование кода аддона применимо для стандартной установки и установки на выделенные worker-узлы. Полный код настройки аддона вместе с описанием полей доступен на [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
 
 ### {heading(Установка временного пароля для веб-интерфейса Grafana)[id=mk8s-install-advanced-monitoring-temp-password]}
 
@@ -218,11 +211,15 @@ grafana:
   adminPassword: "<ВРЕМЕННЫЙ_ПАРОЛЬ>"
 ```
 
+Значение этого поля действует только при установке аддона. Если изменить его у уже установленного аддона, секрет Kubernetes обновится, но пароль для входа в Grafana не изменится: пользователь `admin` хранится в базе Grafana на PVC и не перезаписывается при обновлении. В этом случае пароль из секрета может не подойти для входа.
+
+Чтобы сменить пароль на уже установленном аддоне, {linkto(#mk8s-install-advanced-monitoring-reset-password)[text=задайте]} новый пароль с помощью команды сброса или {linkto(#mk8s-install-advanced-monitoring-reinstall)[text=переустановите]} аддон с удалением PVC Grafana.
+
 После редактирования кода {linkto(#mk8s-install-advanced-monitoring-install)[text=продолжите установку аддона]}.
 
-## {heading(Изменение размера диска Prometheus)[id=mk8s-install-advanced-monitoring-disk-change]}
+## {heading(Дополнительные действия с аддоном)[id=mk8s-install-advanced-monitoring-additional]}
 
-Эта операция доступна, если в кластере {linkto(#mk8s-install-advanced-monitoring-install)[text=установлен]} аддон мониторинга `kube-prometheus-stack`.
+### {heading(Изменение размера диска Prometheus)[id=mk8s-install-advanced-monitoring-disk-change]}
 
 На диске Prometheus хранятся данные мониторинга кластера. Если для них недостаточно места, или вы хотите увеличить производительность диска Prometheus, увеличьте размер диска.
 
@@ -243,13 +240,9 @@ grafana:
 
 {/tabs}
 
-## {heading(Получение пароля для Grafana из секрета Kubernetes)[id=mk8s-install-advanced-monitoring-get-password]}
+### {heading(Получение пароля для Grafana из секрета Kubernetes)[id=mk8s-install-advanced-monitoring-get-password]}
 
-Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana можно получить из секрета Kubernetes.
-
-{note:info}
-Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте шаги и команды.
-{/note}
+Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana можно получить из секрета Kubernetes. Если после установки аддона значение `grafana.adminPassword` изменялось, пароль в секрете может не совпадать с паролем для входа в Grafana.
 
 {tabs}
 
@@ -257,7 +250,10 @@ grafana:
 
 1. {linkto(../../../../connect/headlamp#mk8s-headlamp)[text=Подключитесь к кластеру]} с помощью Headlamp, если он установлен.
 1. Перейдите в раздел меню **Конфигурация → Секреты**.
-1. Найдите в списке секретов `kube-prometheus-stack-grafana` и нажмите на его имя.
+1. Найдите в списке секрет Grafana и нажмите на его имя. 
+
+   Секрет находится в пространстве имен, в котором установлен аддон (по умолчанию — `prometheus-monitoring`). Его имя формируется на основе названия приложения: `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana`. Если аддон был установлен через личный кабинет и название приложения было сгенерировано автоматически, имя секрета будет иметь вид `addon-<ХЕШ>-grafana`.
+
 1. В блоке **Данные** нажмите на иконку глаза. 
    
    Будет отображен пароль.
@@ -268,6 +264,16 @@ grafana:
 
 1. {linkto(../../../../connect/kubectl#mk8s-kubectl-check-connection)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 
+1. Узнайте имя секрета Grafana:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret -l app.kubernetes.io/name=grafana
+   ```
+
+   Здесь `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором установлен аддон. По умолчанию — `prometheus-monitoring`.
+
+   В выводе команды будет имя секрета Grafana. Оно формируется на основе названия приложения, например `myapp-grafana`. Если аддон был установлен через личный кабинет и название приложения было сгенерировано автоматически, имя будет иметь вид `addon-a0b1c2d3f4-grafana`.
+
 1. Получите пароль для входа в Grafana из секрета Kubernetes:
 
    {tabs}
@@ -275,7 +281,7 @@ grafana:
    {tab(Windows (PowerShell))}
       
    ```console
-   $ENCODED = kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}'; `
+   $ENCODED = kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret <ИМЯ_СЕКРЕТА_GRAFANA> -o jsonpath='{.data.admin-password}'; `
    [System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String($ENCODED)) | Write-Output
    ```
 
@@ -284,41 +290,74 @@ grafana:
    {tab(Linux (bash)/macOS (zsh))}
    
    ```console
-   kubectl -n prometheus-monitoring get secret kube-prometheus-stack-grafana -o jsonpath='{.data.admin-password}' | base64 --decode
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get secret <ИМЯ_СЕКРЕТА_GRAFANA> -o jsonpath='{.data.admin-password}' | base64 --decode
    ```
 
    {/tab}
 
    {/tabs}
 
+   Здесь:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором установлен аддон.
+   - `<ИМЯ_СЕКРЕТА_GRAFANA>` — имя секрета из вывода предыдущей команды.
+
 {/tab}
 
 {/tabs}
 
-## {heading(Сброс пароля для Grafana)[id=mk8s-install-advanced-monitoring-reset-password]}
+### {heading(Сброс пароля для Grafana)[id=mk8s-install-advanced-monitoring-reset-password]}
 
-Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana хранится в секрете Kubernetes. Если этот секрет был утерян, вы можете сбросить пароль, чтобы снова получить доступ к Grafana.
-
-{note:info}
-Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте команды.
-{/note}
+Если пароль для входа в веб-интерфейс Grafana утерян или не подходит (например, пароль в секрете Kubernetes не совпадает с фактическим), вы можете задать новый пароль.
 
 1. Получите имя пода Grafana:
 
    ```console
-   kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get pod -l app.kubernetes.io/name=grafana
    ```
 
-   **Формат имени пода из вывода команды:**
-
-   ```text
-   kube-prometheus-stack-grafana-XXXXXXXXX-XXXXX
-   ```
+   Здесь `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором установлен аддон. По умолчанию — `prometheus-monitoring`.
 
 1. Сбросьте пароль, выполнив команду внутри пода Grafana:
 
    ```console
-   kubectl -n prometheus-monitoring exec <ИМЯ_ПОДА_GRAFANA> -- sh -c "grafana cli --debug admin reset-admin-password <НОВЫЙ_ПАРОЛЬ>"
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> exec <ИМЯ_ПОДА_GRAFANA> -- sh -c "grafana cli --debug admin reset-admin-password <НОВЫЙ_ПАРОЛЬ>"
    ```
 
+   Здесь:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором установлен аддон.
+   - `<ИМЯ_ПОДА_GRAFANA>` — имя пода из вывода предыдущей команды.
+   - `<НОВЫЙ_ПАРОЛЬ>` — новый пароль для входа в Grafana.
+
    Если пароль успешно сброшен, в выводе команды будет сообщение `Admin password changed successfully ✔`.
+
+### {heading(Переустановка аддона с удалением PVC Grafana)[id=mk8s-install-advanced-monitoring-reinstall]}
+
+Этот способ позволяет задать пароль Grafana через поле `grafana.adminPassword` в коде настройки аддона.
+
+{note:warn}
+Вместе с PVC Grafana будут удалены данные, которые хранятся в базе Grafana: пользовательские дашборды, источники данных и другие настройки, внесенные через веб-интерфейс.
+{/note}
+
+1. {linkto(../../manage-addons#mk8s-manage-addons-delete)[text=Удалите аддон]} `kube-prometheus-stack`.
+1. Проверьте, остался ли PVC Grafana:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> get pvc -l app.kubernetes.io/name=grafana
+   ```
+
+   Здесь `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором был установлен аддон. По умолчанию — `prometheus-monitoring`.
+
+1. Если PVC остался, удалите его:
+
+   ```console
+   kubectl -n <ПРОСТРАНСТВО_ИМЕН> delete pvc <ИМЯ_PVC_GRAFANA>
+   ```
+
+   Здесь:
+
+   - `<ПРОСТРАНСТВО_ИМЕН>` — пространство имен, в котором был установлен аддон.
+   - `<ИМЯ_PVC_GRAFANA>` — имя PVC из вывода предыдущей команды.
+
+1. Установите аддон заново и {linkto(#mk8s-install-advanced-monitoring-temp-password)[text=задайте нужный пароль]} в коде настройки.

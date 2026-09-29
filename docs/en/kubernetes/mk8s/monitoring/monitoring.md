@@ -14,16 +14,22 @@ To find out if the monitoring add-on is installed in the cluster, [see the list 
 
 1. Access the Grafana web interface:
 
-   1. In a separate terminal session, run the command:
+   1. Find the Grafana service name using the following command:
 
       ```console
-      kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+      kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+      ```
+
+      The command output will show the Grafana service name in the format `<APP_NAME>-grafana`. If the app name was auto-generated when installed via the management console, the service name will look like `addon-<HASH>-grafana`, for example, `addon-c01ea19419-grafana`.
+
+   1. Grant external access to Grafana via `port-forward` using the service name:
+
+      ```console
+      kubectl -n prometheus-monitoring port-forward service/<GRAFANA_SERVICE_NAME> 8001:80
       ```
 
       {note:warn}
-
       Do not close this session or you will lose access to the Grafana web interface.
-
       {/note}
 
    1. From the output of the command identify the port opened by `kubectl` to access Grafana.
@@ -38,7 +44,7 @@ To find out if the monitoring add-on is installed in the cluster, [see the list 
    1. Open in your browser the URL for accessing the Grafana web interface:
 
       ```http
-      http://localhost:<port>/
+      http://localhost:<PORT>/
       ```
 
       The Grafana authorization page will appear.

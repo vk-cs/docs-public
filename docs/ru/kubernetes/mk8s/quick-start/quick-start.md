@@ -80,7 +80,7 @@
 
 1. [Установите аддон](/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) `kube-prometheus-stack`.
 
-   Запишите пароль для доступа к веб-интерфейсу Grafana.
+   [Укажите](/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-temp-password) пароль для доступа к веб-интерфейсу Grafana. Если не указать пароль, он будет сгенерирован автоматически и его нужно будет [получить](/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-get-password) из секрета Kubernetes.
 
 1. [Установите аддон](/ru/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) `ingress-nginx` с параметрами по умолчанию.
 
@@ -136,7 +136,7 @@
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Получить Kubeconfig для доступа к кластеру**.
 
-1. Переместите kubeconfig в директорию `~/.kube`, чтобы при использовании `kubectl` не указывать дополнительные аргументы.
+1. Укажите путь к kubeconfig в переменной среды окружения `$KUBECONFIG`.  Переменная действует только в текущей сессии терминала.
 
    В приведенных ниже командах предполагается, что kubeconfig был загружен в директорию `~/Downloads` под именем `mycluster_kubeconfig.yaml`.
 
@@ -145,8 +145,7 @@
    {tab(Linux/macOS)}
 
    ```console
-   mkdir ~/.kube && \
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   export KUBECONFIG="$HOME/Downloads/mycluster_kubeconfig.yaml"
    ```
 
    {/tab}
@@ -154,30 +153,7 @@
    {tab(Windows)}
 
    ```console
-   mkdir ~/.kube; `
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
-   ```
-
-   {/tab}
-
-   {/tabs}
-
-1. Укажите путь к kubeconfig в переменной среды окружения `$KUBECONFIG`:
-
-   {tabs}
-
-   {tab(Linux/macOS)}
-
-   ```console
-   export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
-   ```
-
-   {/tab}
-
-   {tab(Windows)}
-
-   ```console
-   $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
+   $env:KUBECONFIG = "$HOME\Downloads\mycluster_kubeconfig.yaml"
    ```
 
    {/tab}
@@ -207,10 +183,18 @@
 
 В кластере был установлен аддон со [средствами мониторинга](/ru/kubernetes/mk8s/monitoring) на базе Prometheus и Grafana. 
 
-1. В отдельной сессии терминала выполните команду:
+1. Узнайте имя сервиса Grafana с помощью команды:
 
    ```console
-   kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+   kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+   ```
+
+   В выводе команды будет имя сервиса Grafana в формате `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana`. Если название приложения было сгенерировано автоматически при установке через личный кабинет, имя сервиса будет иметь вид `addon-<ХЕШ>-grafana`, например, `addon-c01ea19419-grafana`.
+
+1. Откройте доступ к Grafana извне через `port-forward`, используя имя сервиса:
+
+   ```console
+   kubectl -n prometheus-monitoring port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
    ```
 
    {note:warn}
@@ -218,7 +202,7 @@
    - Если порт `8001` уже используется другим приложением, скорректируйте команду, указав свободный порт.
    {/note}
 
-1. Откройте веб-интерфейс Grafana:
+1. Запустите веб-интерфейс Grafana:
 
    1. В браузере перейдите по URL `http://127.0.0.1:8001/`.
    1. Авторизуйтесь с помощью пары логин/пароль `admin`/`grafana-password-123456`.

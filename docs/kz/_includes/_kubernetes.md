@@ -65,7 +65,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 1. `kube-prometheus-stack` [аддонын орнатыңыз](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring).
 
-   Grafana веб-интерфейсіне қол жеткізу құпиясөзін жазып алыңыз.
+   Grafana веб-интерфейсіне қол жеткізу үшін құпиясөзді [көрсетіңіз](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-temp-password). Егер құпиясөз көрсетілмесе, ол автоматты түрде жасалады және оны Kubernetes секретінен [алу](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-get-password) қажет болады.
 
 1. `ingress-nginx` [аддонын](/kz/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) әдепкі параметрлермен орнатыңыз.
 
@@ -123,7 +123,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
     1. **Кластеры Kubernetes** → **Кластеры Kubernetes** бөліміне өтіңіз.
     1. Қажетті кластер үшін ![ ](/kz/assets/more-icon.svg "inline") батырмасын басып, **Кластерге қол жеткізу үшін Kubeconfig алу** тармағын таңдаңыз.
 
-1. `kubectl` пайдалану кезінде қосымша аргументтерді көрсетпеу үшін kubeconfig-ті `~/.kube` директориясына жылжытыңыз.
+1. kubeconfig-ке жолды `$KUBECONFIG` орта айнымалысында көрсетіңіз. Айнымалы тек терминалдың ағымдағы сессиясында әрекет етеді.
 
    Төмендегі командаларда kubeconfig `~/Downloads` директориясына `mycluster_kubeconfig.yaml` атауымен жүктелген деп есептеледі.
 
@@ -132,8 +132,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
    {tab(Linux/macOS)}
 
    ```console
-   mkdir ~/.kube && \
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
+   export KUBECONFIG="$HOME/Downloads/mycluster_kubeconfig.yaml"
    ```
 
    {/tab}
@@ -141,30 +140,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
    {tab(Windows)}
 
    ```console
-   mkdir ~/.kube; `
-   mv ~/Downloads/mycluster_kubeconfig.yaml ~/.kube/config
-   ```
-
-   {/tab}
-
-   {/tabs}
-
-1. kubeconfig-ке жолды `$KUBECONFIG` орта айнымалысында көрсетіңіз:
-
-   {tabs}
-
-   {tab(Linux/macOS)}
-
-   ```console
-   export KUBECONFIG=/home/user/.kube/mycluster_kubeconfig.yaml
-   ```
-
-   {/tab}
-
-   {tab(Windows)}
-
-   ```console
-   $env:KUBECONFIG = 'C:\Users\user\.kube\mycluster_kubeconfig.yaml'
+   $env:KUBECONFIG = "$HOME\Downloads\mycluster_kubeconfig.yaml"
    ```
 
    {/tab}
@@ -194,10 +170,18 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
 Кластерде Prometheus және Grafana негізіндегі [мониторинг құралдары](/kz/kubernetes/mk8s/monitoring) бар аддон орнатылды.
 
-1. Терминалдың бөлек сессиясында команданы орындаңыз:
+1. Команданы орындап, Grafana сервисінің атауын табыңыз:
 
    ```console
-   kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+   kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+   ```
+
+   Команда шығысында Grafana сервисінің `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana` форматындағы атауы көрсетіледі. Егер аддон жеке кабинет арқылы орнатылған болса және қолданбаның атауы автоматты түрде жасалған болса, сервис атауы `addon-<ХЕШ>-grafana` түрінде болады, мысалы, `addon-c01ea19419-grafana`.
+
+1. Сервис атауын пайдаланып, Grafana-ға `port-forward` арқылы сыртқы қолжетімділікті қамтамасыз етіңіз:
+
+   ```console
+   kubectl -n prometheus-monitoring port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
    ```
 
    {note:warn}
@@ -207,7 +191,7 @@ Docker Registry және Ingress NGINX аддондарын орнату кез�
 
    {/note}
 
-1. Grafana веб-интерфейсін ашыңыз:
+1. Grafana веб-интерфейсін іске қосыңыз:
 
     1. Браузерде `http://127.0.0.1:8001/` URL-іне өтіңіз.
     1. `admin`/`grafana-password-123456` логин/құпиясөз жұбы арқылы авторизациядан өтіңіз.
