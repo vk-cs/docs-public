@@ -37,7 +37,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan",
@@ -89,7 +89,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
@@ -170,7 +170,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           }
         ],
         "responses": {
@@ -218,7 +218,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -272,7 +272,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -331,7 +331,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -381,7 +381,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -443,7 +443,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -501,7 +501,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger",
@@ -553,7 +553,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
@@ -610,7 +610,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger_id",
@@ -661,7 +661,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger_id",
@@ -723,7 +723,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -788,7 +788,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -865,7 +865,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -966,7 +966,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1030,7 +1030,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1093,7 +1093,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1167,7 +1167,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "restore",
@@ -1213,7 +1213,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
@@ -1270,7 +1270,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "restore_id",
@@ -1317,7 +1317,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           }
         ],
         "responses": {
@@ -1353,7 +1353,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1457,7 +1457,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1515,7 +1515,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           }
         ],
         "responses": {
@@ -1560,7 +1560,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "from",
@@ -1629,7 +1629,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+            "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "from",
@@ -1850,7 +1850,7 @@
         },
         "project_id": {
           "type": "string",
-          "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
         },
         "name": {
           "type": "string",
@@ -2088,7 +2088,7 @@
         },
         "project_id": {
           "type": "string",
-          "description": "<a href='https://cloud.vk.ru/docs/kz/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          "description": "<a href='https://cloud.vk.com/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
         }
       },
       "required": [

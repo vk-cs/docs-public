@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API specification for Karboii (backups). Support operations with backups for Nova and Trove servers, Cinder volumes",
+    "description": "API specification for Karboii (backups). Supports operations with backups for Nova and Trove servers, and Cinder volumes",
     "version": "0.0.1",
     "title": "Karboii"
   },
@@ -37,7 +37,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan",
@@ -69,7 +69,7 @@
             "description": "Policy does not allow current user to do this operation"
           },
           "500": {
-            "description": "Unable to create plan",
+            "description": "Unable to create a plan",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -89,13 +89,13 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
             "in": "query",
             "type": "string",
-            "description": "Coma separated list of sort keys"
+            "description": "Comma-separated list of sort keys"
           },
           {
             "name": "limit",
@@ -114,6 +114,18 @@
             "in": "query",
             "type": "integer",
             "description": "Whether to show manual or automatic backups. 0 is to show manual ones"
+          },
+          {
+            "name": "checkpoints_stats_from",
+            "in": "query",
+            "type": "integer",
+            "description": "Beginning of the time period to collect plan checkpoint information in Unix Timestamp. Required to get checkpoint statistics. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
+          },
+          {
+            "name": "checkpoints_stats_to",
+            "in": "query",
+            "type": "integer",
+            "description": "End of the time period to collect plan checkpoint information in Unix Timestamp. Required to get checkpoint statistics. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
           }
         ],
         "responses": {
@@ -144,6 +156,54 @@
         }
       }
     },
+    "/{project_id}/plans/default": {
+      "get": {
+        "tags": [
+          "plans"
+        ],
+        "summary": "Get or create the default plan",
+        "operationId": "getOrCreateDefaultPlan",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/planResponse"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters"
+          },
+          "401": {
+            "description": "User must authenticate before making a request"
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation"
+          },
+          "404": {
+            "description": "Provided plan ID is not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Unable to get the plan",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
     "/{project_id}/plans/{plan_id}": {
       "get": {
         "tags": [
@@ -158,7 +218,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -192,7 +252,7 @@
             }
           },
           "500": {
-            "description": "Unable to get plan",
+            "description": "Unable to get the plan",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -212,7 +272,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -271,7 +331,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "plan_id",
@@ -286,20 +346,140 @@
           "204": {
             "description": "OK"
           },
-          "400": {
-            "description": "error",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
           "404": {
             "description": "Provided plan ID is not found",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
           },
+          "400": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Unable to delete the plan",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/{project_id}/plans/{plan_id}/resources": {
+      "post": {
+        "tags": [
+          "plans"
+        ],
+        "summary": "Add a resource to a backup plan",
+        "operationId": "createPlanResource",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          },
+          {
+            "name": "plan_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "ID of the plan in UUID format"
+          },
+          {
+            "name": "plan_resource",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/resources"
+            },
+            "required": true,
+            "description": "Plan resources passed to be added in the plan"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/resources"
+            }
+          },
+          "404": {
+            "description": "Provided plan ID or project ID is not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Unable to add a resource to the plan",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/{project_id}/plans/{plan_id}/resources/{resource_id}": {
+      "delete": {
+        "tags": [
+          "plans"
+        ],
+        "summary": "Delete a resource from a backup plan",
+        "operationId": "deletePlanResource",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          },
+          {
+            "name": "plan_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "ID of the plan in UUID format"
+          },
+          {
+            "name": "resource_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "ID of a plan resource to be deleted in UUID format"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Provided plan ID or project ID is not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "400": {
+            "description": "Request is invalid",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Unable to delete the plan resource",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -321,7 +501,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger",
@@ -373,13 +553,13 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
             "in": "query",
             "type": "string",
-            "description": "Coma separated list of sort keys"
+            "description": "Comma-separated list of sort keys"
           },
           {
             "name": "limit",
@@ -430,7 +610,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger_id",
@@ -481,7 +661,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "trigger_id",
@@ -498,7 +678,7 @@
               "$ref": "#/definitions/updateTriggerRequest"
             },
             "required": true,
-            "description": "`updateTriggerRequest` object is JSON format"
+            "description": "`updateTriggerRequest` object in JSON format"
           }
         ],
         "responses": {
@@ -543,7 +723,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -551,10 +731,11 @@
             "format": "uuid",
             "type": "string",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           },
           {
@@ -580,6 +761,12 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           },
+          "409": {
+            "description": "The previous checkpoint is still processing. Try again later",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal server error",
             "schema": {
@@ -601,7 +788,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -609,10 +796,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           },
           {
@@ -626,7 +814,7 @@
             "name": "sort",
             "in": "query",
             "type": "string",
-            "description": "Coma separated list of sort keys"
+            "description": "Comma-separated list of sort keys"
           },
           {
             "name": "limit",
@@ -663,6 +851,67 @@
         }
       }
     },
+    "/{project_id}/providers/{provider_id}/plan_checkpoints": {
+      "post": {
+        "tags": [
+          "checkpoints"
+        ],
+        "summary": "Create a checkpoint for plan",
+        "operationId": "postPlanCheckpoints",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          },
+          {
+            "name": "provider_id",
+            "in": "path",
+            "format": "uuid",
+            "type": "string",
+            "required": true,
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
+            "enum": [
+              "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
+            ]
+          },
+          {
+            "name": "planCheckpoints",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/planCheckpointsRequestObject"
+            },
+            "required": true,
+            "description": "`planCheckpointsRequestObject` in JSON format"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/planCheckpointsResponse"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
     "/{project_id}/checkpoints": {
       "get": {
         "tags": [
@@ -676,14 +925,15 @@
             "in": "query",
             "type": "string",
             "format": "uuid",
-            "description": "Plan id",
+            "description": "Plan ID",
             "required": true
           },
           {
             "name": "project_id",
             "in": "path",
             "type": "string",
-            "required": true
+            "required": true,
+            "description": "Project ID"
           }
         ],
         "responses": {
@@ -716,7 +966,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -724,10 +974,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           },
           {
@@ -744,6 +995,12 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/checkpointResponseObject"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
             }
           },
           "404": {
@@ -773,7 +1030,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -781,10 +1038,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           },
           {
@@ -799,6 +1057,12 @@
         "responses": {
           "204": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
           },
           "404": {
             "description": "The checkpoint is not found",
@@ -829,7 +1093,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -837,10 +1101,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           },
           {
@@ -873,6 +1138,12 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           },
+          "404": {
+            "description": "The checkpoint or the requested resource are not found",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
           "500": {
             "description": "Internal error",
             "schema": {
@@ -887,7 +1158,7 @@
         "tags": [
           "restores"
         ],
-        "summary": "create a restore",
+        "summary": "Create a restore",
         "operationId": "postRestore",
         "parameters": [
           {
@@ -896,7 +1167,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "restore",
@@ -933,7 +1204,7 @@
         "tags": [
           "restores"
         ],
-        "summary": "list restores",
+        "summary": "List restores",
         "operationId": "listRestores",
         "parameters": [
           {
@@ -942,13 +1213,13 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "sort",
             "in": "query",
             "type": "string",
-            "description": "Coma separated list of sort keys"
+            "description": "Comma-separated list of sort keys"
           },
           {
             "name": "limit",
@@ -990,7 +1261,7 @@
         "tags": [
           "restores"
         ],
-        "summary": "get restore",
+        "summary": "Get restore",
         "operationId": "getRestore",
         "parameters": [
           {
@@ -999,7 +1270,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "restore_id",
@@ -1037,7 +1308,7 @@
         "tags": [
           "providers"
         ],
-        "summary": "list providers",
+        "summary": "List providers",
         "operationId": "listProviders",
         "parameters": [
           {
@@ -1046,7 +1317,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           }
         ],
         "responses": {
@@ -1073,7 +1344,7 @@
         "tags": [
           "providers"
         ],
-        "summary": "get provider info",
+        "summary": "Get provider info",
         "operationId": "getProvider",
         "parameters": [
           {
@@ -1082,7 +1353,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1090,10 +1361,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           }
         ],
@@ -1119,6 +1391,58 @@
         }
       }
     },
+    "/{project_id}/resources": {
+      "get": {
+        "tags": [
+          "resources"
+        ],
+        "summary": "Get unused resources",
+        "operationId": "getUnusedResources",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "OpenStack project_id"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "type": "string",
+            "required": false,
+            "description": "Type of the requested resource"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/listResourcesResponse"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized. Authentication credentials were missing or incorrect."
+          },
+          "403": {
+            "description": "Forbidden. The user does not have permission to perform this action."
+          },
+          "500": {
+            "description": "Unable to fetch resources without plans",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
     "/{project_id}/resources/{provider_id}/in-use": {
       "get": {
         "tags": [
@@ -1133,7 +1457,7 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
           },
           {
             "name": "provider_id",
@@ -1141,10 +1465,11 @@
             "type": "string",
             "format": "uuid",
             "required": true,
-            "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
             "enum": [
               "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-              "7ab9410c-edda-4623-a51a-1bb806666cb3"
+              "7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "e987c60b-5925-431c-a15b-6b8f87291c8c"
             ]
           }
         ],
@@ -1176,6 +1501,177 @@
         }
       }
     },
+    "/{project_id}/statistics/plans": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "Count plans in project and its size",
+        "operationId": "getStatisticsPlans",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/plansStatistics"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request"
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation"
+          },
+          "500": {
+            "description": "Unable to fetch statistics",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/{project_id}/statistics/checkpoints": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "List number of checkpoints with statuses",
+        "operationId": "getStatisticsCheckpoints",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "type": "integer",
+            "description": "Beginning of the time period to collect checkpoints information in Unix Timestamp. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "type": "integer",
+            "description": "End of the time period to collect checkpoints information in Unix Timestamp. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
+          },
+          {
+            "name": "scheduled",
+            "in": "query",
+            "type": "integer",
+            "description": "Whether to show stats of manual or automatic backups. 0 is to show manual ones"
+          },
+          {
+            "name": "summary",
+            "in": "query",
+            "type": "integer",
+            "description": "- `1` — shows sum of scheduled and not scheduled backup size (if passed then \"scheduled\" ignoring).\n- `0` — show backup size depends on \"scheduled\"."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/checkpointStatistics"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request"
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation"
+          },
+          "500": {
+            "description": "Unable to fetch statistics",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/{project_id}/statistics/restores": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "List number of restores with statuses",
+        "operationId": "getStatisticsRestores",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "type": "string",
+            "format": "uuid",
+            "required": true,
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "type": "integer",
+            "description": "Beginning of the time period to fetch statistics in Unix Timestamp. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "type": "integer",
+            "description": "End of the time period to fetch statistics in Unix Timestamp. Specify the max integer in both (from-to) parameters to get checkpoint statistics for the last plan checkpoints."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/restoreStatistics"
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request"
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation"
+          },
+          "500": {
+            "description": "Unable to fetch statistics",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
     "/health": {
       "get": {
         "tags": [
@@ -1194,6 +1690,7 @@
   },
   "definitions": {
     "resources": {
+      "description": "`planResource` to be added to the plan",
       "type": "object",
       "properties": {
         "id": {
@@ -1207,22 +1704,30 @@
             "OS::Nova::Server",
             "OS::Cinder::Volume",
             "OS::Trove::Instance",
-            "OS::Trove::Cluster"
+            "OS::Trove::Cluster",
+            "OS::Sahara::Cluster"
           ]
         },
         "name": {
           "type": "string",
           "description": "Resource name. By default it's an instance name (+ `_restored` if it was restored from the backup)"
+        },
+        "resources": {
+          "type": "array",
+          "description": "Sub resources (e.g., volumes for a server)",
+          "items": {
+            "$ref": "#/definitions/resources"
+          }
         }
       },
       "required": [
         "id",
-        "type",
-        "name"
+        "type"
       ]
     },
     "checkpointResources": {
       "type": "object",
+      "description": "Resource of the checkpoint",
       "properties": {
         "id": {
           "type": "string",
@@ -1243,12 +1748,22 @@
             "OS::Nova::Server",
             "OS::Cinder::Volume",
             "OS::Trove::Instance",
-            "OS::Trove::Cluster"
+            "OS::Trove::Cluster",
+            "OS::Sahara::Cluster"
           ]
         },
         "status": {
           "type": "string",
-          "description": "Status of the checkpoint resource. 6 are presented: `available`, `protecting`, `deleting`, `deleted`, `error`, `error-deleting`"
+          "description": "Status of the checkpoint resource",
+          "enum": [
+            "available",
+            "protecting",
+            "deleting",
+            "deleted",
+            "error",
+            "error-deleting",
+            "error-stopped"
+          ]
         },
         "parent_id": {
           "type": "string",
@@ -1269,6 +1784,7 @@
     },
     "planParameters": {
       "type": "object",
+      "x-nullable": true,
       "additionalProperties": {
         "type": "object",
         "additionalProperties": {
@@ -1278,6 +1794,7 @@
       "description": "DEPRECATED. Left to support types for old Karbor versions in the private cloud"
     },
     "planStatusObject": {
+      "description": "Status of the plan. `running` — the plan is active; `suspended` — the plan is stopped; `deleted` — the plan is deleted",
       "type": "string",
       "enum": [
         "running",
@@ -1301,7 +1818,7 @@
           "x-nullable": true,
           "maximum": 6,
           "minimum": 0,
-          "description": "`NULL` — full backups plan, `0-6` — incremental backups plan, the number represents the full backup day of the week"
+          "description": "- `NULL` — full backups plan.\n- `0-6` — incremental backups plan, the number represents the full backup day of the week."
         },
         "retention_type": {
           "$ref": "#/definitions/retentionType"
@@ -1309,13 +1826,18 @@
         "gfs": {
           "$ref": "#/definitions/gfsRequest"
         },
+        "object_lock": {
+          "$ref": "#/definitions/objectLock"
+        },
         "resources": {
           "type": "array",
-          "minItems": 1,
           "maxItems": 100,
           "items": {
             "$ref": "#/definitions/resources"
           }
+        },
+        "is_default": {
+          "type": "boolean"
         }
       }
     },
@@ -1328,7 +1850,7 @@
         },
         "project_id": {
           "type": "string",
-          "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab"
+          "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
         },
         "name": {
           "type": "string",
@@ -1342,31 +1864,37 @@
         },
         "provider_id": {
           "type": "string",
-          "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+          "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
           "enum": [
             "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-            "7ab9410c-edda-4623-a51a-1bb806666cb3"
+            "7ab9410c-edda-4623-a51a-1bb806666cb3",
+            "e987c60b-5925-431c-a15b-6b8f87291c8c"
           ]
         },
         "status": {
-          "$ref": "#/definitions/planStatusObject",
-          "description": "Status of the plan. `running` — the plan is active; `suspended` — the plan is stopped; `deleted` — the plan is deleted"
+          "$ref": "#/definitions/planStatusObject"
         },
         "parameters": {
-          "$ref": "#/definitions/planParameters",
-          "description": "DEPRECATED. Left to support types for old Karbor versions in the private cloud",
-          "x-nullable": true
+          "$ref": "#/definitions/planParameters"
         },
         "full_day": {
-          "description": "`NULL` — full backup, `0-6` — incremental backup, the number represents the full backup day of the week",
+          "description": "- `NULL` — full backup.\n- `0-6` — incremental backup, the number represents the full backup day of the week.",
           "type": "integer"
         },
         "retention_type": {
-          "$ref": "#/definitions/retentionType",
-          "description": "Type of the retention policy"
+          "$ref": "#/definitions/retentionType"
         },
         "gfs": {
           "$ref": "#/definitions/gfsResponse"
+        },
+        "checkpoints_stats": {
+          "$ref": "#/definitions/checkpointStatistics"
+        },
+        "object_lock": {
+          "$ref": "#/definitions/objectLock"
+        },
+        "is_default": {
+          "type": "boolean"
         }
       },
       "required": [
@@ -1404,31 +1932,34 @@
             },
             "provider_id": {
               "type": "string",
-              "description": "ID of the provider. Hardcoded Nova and Trove are supported. Nova: 37997f75-0637-4a69-bf7e-49ff2ff11fa5, Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3",
+              "description": "ID of the provider. Hardcoded Nova, Trove and Sahara are supported.\n\n- **Nova**: `37997f75-0637-4a69-bf7e-49ff2ff11fa5`\n- **Trove**: `7ab9410c-edda-4623-a51a-1bb806666cb3`\n- **Sahara**: `e987c60b-5925-431c-a15b-6b8f87291c8c`",
               "enum": [
                 "37997f75-0637-4a69-bf7e-49ff2ff11fa5",
-                "7ab9410c-edda-4623-a51a-1bb806666cb3"
+                "7ab9410c-edda-4623-a51a-1bb806666cb3",
+                "e987c60b-5925-431c-a15b-6b8f87291c8c"
               ]
             },
             "parameters": {
-              "$ref": "#/definitions/planParameters",
-              "description": "DEPRECATED. Left to support types for old Karbor versions in the private cloud",
-              "x-nullable": true
+              "$ref": "#/definitions/planParameters"
             },
             "full_day": {
               "type": "integer",
               "x-nullable": true,
               "maximum": 6,
               "minimum": 0,
-              "description": "`NULL` — full backup, `0-6` — incremental backup, the number represents the full backup day of the week"
+              "description": "- `NULL` — full backup.\n- `0-6` — incremental backup, the number represents the full backup day of the week."
             },
             "retention_type": {
-              "$ref": "#/definitions/retentionType",
-              "description": "Type of the retention policy"
+              "$ref": "#/definitions/retentionType"
             },
             "gfs": {
-              "$ref": "#/definitions/gfsRequest",
-              "description": "`gfsRequest` object in JSON format while using GFS retention policy"
+              "$ref": "#/definitions/gfsRequest"
+            },
+            "object_lock": {
+              "$ref": "#/definitions/objectLock"
+            },
+            "is_default": {
+              "type": "boolean"
             }
           },
           "required": [
@@ -1499,7 +2030,7 @@
             },
             "pattern": {
               "type": "string",
-              "description": "Pattern represents the cron rule for a backup. Note: for DB or DB cluster, if they have a time period less than 1 day, there are only available 3, 6, 12 periods of time"
+              "description": "Pattern represents the cron rule for a backup. Note: for a DB or a DB cluster, if they have a time period of less than 1 day, only 3, 6, and 12 periods of time are available"
             },
             "name": {
               "type": "string",
@@ -1528,8 +2059,7 @@
           "description": "ID of the plan"
         },
         "properties": {
-          "$ref": "#/definitions/triggerProperties",
-          "description": "Different properties of the trigger. See `triggerProperties` object description for more info"
+          "$ref": "#/definitions/triggerProperties"
         }
       },
       "required": [
@@ -1554,12 +2084,11 @@
           "description": "Name of the trigger"
         },
         "properties": {
-          "$ref": "#/definitions/triggerProperties",
-          "description": "Different properties of the trigger. See `triggerProperties` object description for more info"
+          "$ref": "#/definitions/triggerProperties"
         },
         "project_id": {
           "type": "string",
-          "description": "ID of the project. It can be found on VKCS in project settings under Terraform tab."
+          "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>. You can find it in your VK Cloud management console in the project settings, **Terraform** tab"
         }
       },
       "required": [
@@ -1573,10 +2102,11 @@
     },
     "triggerProperties": {
       "type": "object",
+      "description": "Different properties of the trigger. See the `triggerProperties` object description for more info",
       "properties": {
         "pattern": {
           "type": "string",
-          "description": "Pattern represents the cron rule for a backup. Note: for DB or DB cluster, if they have a time period less than 1 day, there are only available 3, 6, 12 hours periods of time"
+          "description": "Pattern represents the cron rule for a backup. Note: for a DB or a DB cluster, if they have a time period of less than 1 day, only 3, 6, and 12 hour periods of time are available"
         },
         "max_backups": {
           "type": "integer",
@@ -1598,31 +2128,57 @@
       "enum": [
         "max_backups",
         "gfs"
+      ],
+      "description": "Type of the retention policy"
+    },
+    "objectLock": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "compliance",
+            "governance",
+            "legalhold"
+          ]
+        },
+        "days": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "retain_until": {
+          "type": "integer",
+          "format": "int64"
+        }
+      },
+      "required": [
+        "type"
       ]
     },
     "gfsRequest": {
       "type": "object",
+      "description": "`gfsRequest` object in JSON format while using GFS retention policy",
       "properties": {
         "grandfather": {
           "type": "integer",
           "maximum": 10,
           "minimum": 0,
           "x-nullable": false,
-          "description": "How much yearly backups to keep"
+          "description": "How many yearly backups to keep"
         },
         "father": {
           "type": "integer",
           "maximum": 120,
           "minimum": 0,
           "x-nullable": false,
-          "description": "How much monthly backups to keep"
+          "description": "How many monthly backups to keep"
         },
         "son": {
           "type": "integer",
           "maximum": 53,
           "minimum": 1,
           "x-nullable": false,
-          "description": "How much daily backups to keep"
+          "description": "How many daily backups to keep"
         }
       },
       "required": [
@@ -1637,21 +2193,21 @@
           "maximum": 10,
           "minimum": 0,
           "x-nullable": false,
-          "description": "How much yearly backups to keep"
+          "description": "How many yearly backups to keep"
         },
         "father": {
           "type": "integer",
           "maximum": 120,
           "minimum": 0,
           "x-nullable": false,
-          "description": "How much monthly backups to keep"
+          "description": "How many monthly backups to keep"
         },
         "son": {
           "type": "integer",
           "maximum": 53,
           "minimum": 1,
           "x-nullable": false,
-          "description": "How much daily backups to keep"
+          "description": "How many daily backups to keep"
         }
       },
       "required": [
@@ -1659,6 +2215,23 @@
         "father",
         "son"
       ]
+    },
+    "entityCount": {
+      "type": "object",
+      "properties": {
+        "available": {
+          "type": "integer",
+          "description": "How many entities are available"
+        },
+        "in_progress": {
+          "type": "integer",
+          "description": "How many entities are in progress"
+        },
+        "error": {
+          "type": "integer",
+          "description": "How many entities have errored"
+        }
+      }
     },
     "listCheckpointsResponse": {
       "type": "object",
@@ -1699,7 +2272,7 @@
         },
         "resource_type": {
           "type": "string",
-          "description": "Type of resource"
+          "description": "Type of the resource"
         },
         "number_of_full_backups": {
           "type": "integer"
@@ -1731,7 +2304,7 @@
           "type": "string"
         },
         "status": {
-          "type": "string"
+          "$ref": "#/definitions/checkpointStatus"
         },
         "checkpoint_resource_id": {
           "type": "string"
@@ -1747,17 +2320,27 @@
         },
         "size": {
           "type": "integer",
-          "description": "size of backup"
+          "description": "Size of the backup"
         },
         "created_at": {
           "type": "string"
         },
+        "done_at": {
+          "type": "string"
+        },
         "link_id": {
           "type": "string"
+        },
+        "object_lock": {
+          "$ref": "#/definitions/objectLock"
+        },
+        "error_detail": {
+          "$ref": "#/definitions/checkpointErrorObject"
         }
       }
     },
     "checkpointStatus": {
+      "description": "Status of the checkpoint",
       "type": "string",
       "enum": [
         "error",
@@ -1786,6 +2369,28 @@
       "properties": {
         "checkpoint": {
           "$ref": "#/definitions/checkpointObject"
+        }
+      }
+    },
+    "planCheckpointsRequestObject": {
+      "type": "object",
+      "properties": {
+        "planCheckpoints": {
+          "$ref": "#/definitions/planCheckpointsShortObject"
+        }
+      },
+      "required": [
+        "planCheckpoints"
+      ]
+    },
+    "planCheckpointsResponse": {
+      "type": "object",
+      "properties": {
+        "checkpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/checkpointObject"
+          }
         }
       }
     },
@@ -1990,6 +2595,26 @@
         "plan_id": {
           "type": "string"
         },
+        "resource_id": {
+          "type": "string"
+        },
+        "extra_info": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "plan_id"
+      ]
+    },
+    "planCheckpointsShortObject": {
+      "type": "object",
+      "properties": {
+        "plan_id": {
+          "type": "string"
+        },
         "extra_info": {
           "type": "object",
           "additionalProperties": {
@@ -2012,11 +2637,9 @@
           "type": "string"
         },
         "status": {
-          "$ref": "#/definitions/checkpointStatus",
-          "description": "Status of the checkpoint"
+          "$ref": "#/definitions/checkpointStatus"
         },
         "protection_plan": {
-          "type": "object",
           "$ref": "#/definitions/checkpointPlanObject"
         },
         "resources": {
@@ -2028,7 +2651,11 @@
         },
         "size": {
           "type": "integer",
-          "description": "Size of the checkpoint. Represents the sum of its resources sizes (the maximum capacity of each is counted)"
+          "description": "Size of the checkpoint. Represents the sum of its resource sizes (the maximum capacity of each is counted)"
+        },
+        "resource_size": {
+          "type": "integer",
+          "description": "Size of the backup. Represents the sum of its backup sizes (used space of each is counted)"
         },
         "timestamp": {
           "type": "integer",
@@ -2038,9 +2665,16 @@
           "type": "string",
           "description": "When the checkpoint was created in ISO 8601 standard"
         },
+        "done_at": {
+          "type": "string",
+          "description": "When the checkpoint was completed in ISO 8601 standard"
+        },
         "link_id": {
           "type": "string",
           "description": "NULL if the backup is full, UUID if the backup is incremental"
+        },
+        "object_lock": {
+          "$ref": "#/definitions/objectLock"
         },
         "extra_info": {
           "type": "object",
@@ -2053,7 +2687,10 @@
           "items": {
             "type": "string"
           },
-          "description": "IDs of the external resources. A VM has by default 2 external IDs: the Nova instance and its boot drive in Cinder. A DB and a DB cluster have only 1 external ID"
+          "description": "IDs of the external resources. By default, a VM has 2 external IDs: the Nova instance and its boot drive in Cinder. A DB and a DB cluster have only 1 external ID"
+        },
+        "error_detail": {
+          "$ref": "#/definitions/checkpointErrorObject"
         }
       },
       "required": [
@@ -2065,6 +2702,33 @@
         "created_at",
         "external_ids"
       ]
+    },
+    "checkpointErrorObject": {
+      "type": "object",
+      "properties": {
+        "service": {
+          "type": "string",
+          "enum": [
+            "auth-service",
+            "breeze",
+            "cinder",
+            "glance",
+            "neutron",
+            "nova",
+            "sahara",
+            "trove",
+            "karboii"
+          ],
+          "description": "The name of the external service that returned an error while creating the checkpoint"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
     },
     "checkpointPlanObject": {
       "type": "object",
@@ -2132,7 +2796,7 @@
           "additionalProperties": {
             "type": "string"
           },
-          "description": "Reasons of the erroneous resources that could not be restored"
+          "description": "Reasons for the erroneous resources that could not be restored"
         },
         "resources_status": {
           "type": "object",
@@ -2163,16 +2827,23 @@
         "restore_net_id": {
           "type": "string"
         },
+        "nics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/nics"
+          }
+        },
         "destination": {
           "type": "string"
         },
         "volume_type": {
           "type": "string"
         },
-        "enable_fip": {
-          "type": "boolean"
+        "volume_size": {
+          "type": "integer",
+          "format": "int64"
         },
-        "enable_geo_replication": {
+        "enable_fip": {
           "type": "boolean"
         },
         "flavor": {
@@ -2180,11 +2851,260 @@
         },
         "volume_target_vm_id": {
           "type": "string"
+        },
+        "volume_autoresize_enabled": {
+          "type": "integer"
+        },
+        "volume_autoresize_max_size": {
+          "type": "integer"
+        },
+        "configuration": {
+          "type": "string"
+        },
+        "allow_remote_access": {
+          "type": "boolean"
+        },
+        "security_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "backup_schedule": {
+          "$ref": "#/definitions/postBackupSchedule"
+        },
+        "cloud_monitoring_enabled": {
+          "type": "boolean"
+        },
+        "databases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/database"
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/postCapability"
+          }
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/db_user"
+          }
+        },
+        "wal_volume": {
+          "$ref": "#/definitions/walVolume"
+        },
+        "replica_of": {
+          "type": "string"
+        },
+        "replica_count": {
+          "type": "integer"
+        },
+        "instances": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/postClusterInstance"
+          }
         }
       },
       "required": [
         "restore_name"
       ]
+    },
+    "postClusterInstance": {
+      "type": "object",
+      "properties": {
+        "key_name": {
+          "type": "string"
+        },
+        "availability_zone": {
+          "type": "string"
+        },
+        "flavorRef": {
+          "type": "string"
+        },
+        "nics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/nics"
+          }
+        },
+        "security_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "volume": {
+          "$ref": "#/definitions/volume"
+        },
+        "wal_volume": {
+          "$ref": "#/definitions/volume"
+        },
+        "shard_id": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/postCapability"
+          }
+        },
+        "cloud_monitoring_enabled": {
+          "type": "boolean"
+        },
+        "volume_autoresize_enabled": {
+          "type": "boolean"
+        },
+        "volume_autoresize_max_size": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "availability_zone",
+        "flavorRef",
+        "nics",
+        "volume"
+      ]
+    },
+    "volume": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "example": {
+        "size": 100,
+        "type": "ef-nvme"
+      }
+    },
+    "walVolume": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "autoresize_enabled": {
+          "type": "integer"
+        },
+        "autoresize_max_size": {
+          "type": "integer"
+        }
+      },
+      "example": {
+        "size": 100,
+        "type": "ef-nvme",
+        "autoresize_enabled": 1,
+        "autoresize_max_size": 350
+      }
+    },
+    "postCapability": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "example": {
+            "database": "testdb"
+          }
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "database": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "example": {
+        "name": "mydb1"
+      }
+    },
+    "db_user": {
+      "type": "object",
+      "properties": {
+        "databases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/database"
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "example": {
+        "databases": [
+          "mydb1"
+        ],
+        "name": "user1",
+        "password": "qwerty"
+      }
+    },
+    "postBackupSchedule": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "my schedule"
+        },
+        "start_hours": {
+          "type": "integer",
+          "example": 0
+        },
+        "start_minutes": {
+          "type": "integer",
+          "example": 1
+        },
+        "interval_hours": {
+          "type": "integer",
+          "example": 24
+        },
+        "keep_count": {
+          "type": "integer",
+          "example": 7
+        }
+      },
+      "required": [
+        "start_hours",
+        "start_minutes",
+        "interval_hours",
+        "keep_count"
+      ]
+    },
+    "nics": {
+      "type": "object",
+      "description": "Should include network_id and/or subnet_id or subnet_id/subnet-id or port_id as JSON",
+      "properties": {
+        "net-id": {
+          "type": "string"
+        },
+        "subnet-id": {
+          "type": "string"
+        }
+      }
     },
     "providerResponse": {
       "type": "object",
@@ -2218,6 +3138,57 @@
         }
       }
     },
+    "listResourcesResponse": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        },
+        "servers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/server"
+          }
+        }
+      }
+    },
+    "server": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The UUID of the server."
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/link"
+          },
+          "description": "Links to the resources in question."
+        },
+        "name": {
+          "type": "string",
+          "description": "The server name."
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "rel": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
     "InUseResources": {
       "type": "object",
       "properties": {
@@ -2244,29 +3215,6 @@
         }
       }
     },
-    "User": {
-      "type": "object",
-      "properties": {
-        "project_id": {
-          "type": "string"
-        },
-        "token": {
-          "type": "string"
-        },
-        "is_admin": {
-          "type": "boolean"
-        },
-        "roles": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "user_id": {
-          "type": "string"
-        }
-      }
-    },
     "ErrorResponse": {
       "type": "object",
       "properties": {
@@ -2278,15 +3226,44 @@
         }
       }
     },
-    "protectableTypes": {
-      "type": "string",
-      "enum": [
-        "OS::Cinder::Volume",
-        "OS::Glance::Image",
-        "OS::Nova::Server",
-        "OS::Trove::Instance",
-        "OS::Trove::Cluster"
-      ]
+    "plansStatistics": {
+      "type": "object",
+      "properties": {
+        "counts": {
+          "type": "integer",
+          "description": "The number of plans in the project at the time of the request"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int64",
+          "description": "The total size of the backups in the project at the time of the request"
+        }
+      }
+    },
+    "checkpointStatistics": {
+      "type": "object",
+      "properties": {
+        "counts": {
+          "$ref": "#/definitions/entityCount"
+        },
+        "last_time": {
+          "type": "integer",
+          "description": "When the last checkpoint was created in Unix Timestamp"
+        },
+        "size": {
+          "type": "integer",
+          "description": "Size of all checkpoint resources' backups",
+          "x-omitempty": true
+        }
+      }
+    },
+    "restoreStatistics": {
+      "type": "object",
+      "properties": {
+        "counts": {
+          "$ref": "#/definitions/entityCount"
+        }
+      }
     }
   }
 }
