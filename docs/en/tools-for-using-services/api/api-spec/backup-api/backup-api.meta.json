@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Backup",
+  "shortDescription": "OpenAPI specification for the Cloud Backup service",
+  "metaDescription": "OpenAPI specification for the Cloud Backup service",
+  "sectionTitle": "Cloud Backup",
+  "icon": "",
+  "weight": 4,
+  "uuid": "c667b4d3-64c5-4a79-84a2-32dd2a8296cc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

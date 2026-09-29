@@ -1,4 +1,4 @@
-The following are some examples of using the VK Cloud [Karboii API](/ru/tools-for-using-services/api/api-spec/backup-api "change-lang").
+The following are some examples of using the VK Cloud [Karboii API](/en/tools-for-using-services/api/api-spec/backup-api).
 
 To follow the examples given:
 

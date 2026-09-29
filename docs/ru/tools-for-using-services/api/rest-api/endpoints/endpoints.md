@@ -235,7 +235,9 @@ Project ID не совпадает с {linkto(../../../account/instructions/proj
 
    Значение доступно на обеих вкладках, под заголовками **Project ID** и **Project ID / tenant_id**, соответственно.
    {ifdef(public)}
+   
    {note:info}
    На вкладке **Доступ по API** значение **Project ID** отображается, если доступ по API активирован.
    {/note}
+   
    {/ifdef}
