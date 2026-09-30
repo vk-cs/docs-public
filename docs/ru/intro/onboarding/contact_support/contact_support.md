@@ -6,7 +6,7 @@
 - [MAX-бот](/ru/start/support/chatbots/support-bot) `@vk_tech_support_bot`;
 - [Telegram-бот](/ru/start/support/chatbots/support-bot) `@vk_tech_support_bot`;
 - почта [support@mcs.mail.ru](mailto:support@mcs.mail.ru);
-- телефон +7 (499) 350-97-03.
+- телефон +7 (495) 740 05 60.
 
 {note:info}
 Чтобы ускорить обработку обращения, приложите к нему данные учетной записи (логин, название проекта) и опишите вопрос как можно подробнее. По возможности добавьте любую доступную диагностическую информацию: скриншоты, логи или иные материалы.
