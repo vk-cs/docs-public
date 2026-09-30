@@ -4,6 +4,13 @@ You can see the cost of services in the [price list](https://cloud.vk.com/pricel
 
 The cost details are displayed separately for master and worker nodes.
 
+Tariffication specifics:
+
+- The tariffication process for a new cluster begins when it switches to the `ready` status.
+- When the cluster is started, the tariffication of each individual node begins when that node switches to `ready`.
+- When the cluster is stopped, the tariffication process for each node ceases once the node is stopped.
+- The tariffication for a cluster ends when its deletion process begins.
+
 ## What is charged
 
 - CPU (vCPU) — for each core. 1 vCPU corresponds to 1 physical core of the virtualization server.

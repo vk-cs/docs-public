@@ -12,7 +12,7 @@
 | Max-бот      | https://max.ru/vk_tech_support_bot | круглосуточно |
 | [Telegram-бот](../chatbots/support-bot) | `@vk_tech_support_bot`      | круглосуточно |
 | Почта        | support@mcs.mail.ru         | круглосуточно |
-| Телефон      | +7 (499) 350-97-03          | круглосуточно |
+| Телефон      | +7 (495) 740 05 60          | круглосуточно |
 
 <info>
 
