@@ -109,7 +109,9 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   cluster_template_id      = data.vkcs_kubernetes_clustertemplate.k8s-template.id
   master_flavor            = data.vkcs_compute_flavor.k8s-master-flavor.id
   master_count             = <КОЛИЧЕСТВО_MASTER_УЗЛОВ>
-  cluster_node_volume_type = "<ТИП_ДИСКА>"
+  labels = {
+    cluster_node_volume_type = "<ТИП_ДИСКА>"
+  }
   network_id               = "<ИДЕНТИФИКАТОР_СЕТИ>"
   subnet_id                = "<ИДЕНТИФИКАТОР_ПОДСЕТИ>"
   availability_zone        = "<ЗОНА_ДОСТУПНОСТИ>"
@@ -121,11 +123,11 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - `cluster_type` — кластер түрі:
 
-  - `standart` (әдепкі бойынша) — кластердің барлық master-түйіндері бір {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағында]} орналасады. Істен шығуға төзімділік аймақ деңгейінде қамтамасыз етіледі.
+  - `standard` (әдепкі бойынша) — кластердің барлық master-түйіндері бір {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағында]} орналасады. Істен шығуға төзімділік аймақ деңгейінде қамтамасыз етіледі.
   - `regional` — кластердің master-түйіндері үш қолжетімділік аймағының әрқайсысында орналасады, бұл аймақтардың бірі істен шыққан жағдайда да басқаруды сақтауға мүмкіндік береді. Master-түйіндердің жалпы саны — 3 немесе одан көп.
 
 - `master_count` — master-түйіндер саны. Тақ сан болуы керек. Стандартты кластер үшін master-түйіндер саны `1`, `3` немесе `5` болуы керек. Аймақтық кластер үшін — `3` немесе `5`. Толығырақ {linkto(../../../concepts/architecture#k8s-architecture)[text=Сервис архитектурасы]} бөлімінде.
-- `cluster_node_volume_type` — түйіндер пайдаланатын {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=деректерді сақтау]} үшін диск түрі. Таңдалған диск түрі кластердің өнімділігіне әсер етеді. Қолжетімді мәндер: `ceph-ssd` (әдепкі бойынша) және `high-iops`.
+- `labels.cluster_node_volume_type` — master-түйіндердің {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=деректерді сақтау]} үшін диск түрі. Таңдалған диск түрі кластердің өнімділігіне әсер етеді. Қолжетімді мәндер: `ceph-ssd` (әдепкі бойынша) және `high-iops`.
 - `availability_zone` — кластердің қолжетімділік аймағы. Егер кластер түрі стандартты болса, параметрді пайдаланыңыз. `Москва` аймағы үшін үш қолжетімділік аймағының бірін көрсетіңіз: `ME1`, `MS1` немесе `PA2`.
 
    {note:info}

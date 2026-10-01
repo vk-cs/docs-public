@@ -216,7 +216,7 @@ locals {
 # ---------------------data------------------------
 # Получение данных виртуальной сети
 data "vkcs_networking_subnet" subnet {
-  subnet_id = var.ds-subnet
+  id = var.ds-subnet
 }
 
 # --------------------backup-----------------------

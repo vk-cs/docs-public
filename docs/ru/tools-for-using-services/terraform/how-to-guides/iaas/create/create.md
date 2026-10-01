@@ -141,11 +141,19 @@ data "vkcs_images_image" "compute" {
   }
 }
 
+data "vkcs_networking_secgroup" "default" {
+  name = "default"
+}
+
+data "vkcs_networking_secgroup" "ssh" {
+  name = "ssh"
+}
+
 resource "vkcs_compute_instance" "compute" {
   name                    = "compute-instance"
   flavor_id               = data.vkcs_compute_flavor.compute.id
   key_pair                = var.key_pair_name
-  security_groups         = ["default","ssh"]
+  security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
   availability_zone       = var.availability_zone_name
 
   block_device {
@@ -211,11 +219,19 @@ data "vkcs_images_image" "compute" {
   }
 }
 
+data "vkcs_networking_secgroup" "default" {
+  name = "default"
+}
+
+data "vkcs_networking_secgroup" "ssh" {
+  name = "ssh"
+}
+
 resource "vkcs_compute_instance" "compute" {
   name                    = "compute-instance"
   flavor_id               = data.vkcs_compute_flavor.compute.id
   key_pair                = var.key_pair_name
-  security_groups         = ["default","ssh"]
+  security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
   availability_zone       = var.availability_zone_name
 
   block_device {
@@ -306,7 +322,7 @@ output "instance_fip" {
      name                    = "compute-instance"
      flavor_id               = data.vkcs_compute_flavor.compute.id
      key_pair                = var.key_pair_name
-     security_groups         = ["default","ssh"]
+     security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
      availability_zone       = var.availability_zone_name
 
      block_device {
