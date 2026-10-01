@@ -105,7 +105,9 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   cluster_template_id = data.vkcs_kubernetes_clustertemplate.k8s-template.id
   master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
   master_count        = <NUMBER_OF_MASTER_NODES>
-  cluster_node_volume_type = "<VOLUME_TYPE>"
+  labels = {
+    cluster_node_volume_type = "<VOLUME_TYPE>"
+  }
   network_id          = "<NETWORK_ID>"
   subnet_id           = "<SUBNET_ID>"
   availability_zone   = "<AVAILABILITY_ZONE"
@@ -121,7 +123,7 @@ Here:
   - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
 - `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](/en/kubernetes/mk8s/concepts/architecture) section.
-- `cluster_node_volume_type` — the volume type for [storage](/en/kubernetes/mk8s/concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
+- `labels.cluster_node_volume_type` — the volume type for the [storage](/en/kubernetes/mk8s/concepts/storage#storage_types) of master nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
 - `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `PA2`.
 
    {note:info}

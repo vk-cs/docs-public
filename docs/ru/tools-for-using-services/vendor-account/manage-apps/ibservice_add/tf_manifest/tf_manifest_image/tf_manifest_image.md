@@ -8,7 +8,7 @@
    ```hcl
    data "vkcs_networking_subnet" subnet {
      # Идентификатор подсети
-     subnet_id = var.ds-subnet
+     id = var.ds-subnet
    }
    ```
    {/caption}
@@ -129,8 +129,8 @@
         name              = "compute-instance"
         # Идентификатор типа ВМ
         flavor_id         = var.ds-flavor
-        # Перечень имен групп безопасности для ВМ
-        security_groups   = [vkcs_networking_secgroup.secgroup.name]
+        # Перечень идентификаторов групп безопасности для ВМ
+        security_group_ids = [vkcs_networking_secgroup.secgroup.id]
         # Зона доступности ВМ
         availability_zone = "ME1"
         # Метаданные
@@ -208,7 +208,7 @@
 ```hcl
 data "vkcs_networking_subnet" "subnet" {
   # Идентификатор подсети, заданный в переменной ds-subnet
-  subnet_id = var.ds-subnet
+  id = var.ds-subnet
 }
 ```
 {/caption}

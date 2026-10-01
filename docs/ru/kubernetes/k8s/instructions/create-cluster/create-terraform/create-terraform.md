@@ -103,7 +103,9 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   cluster_template_id      = data.vkcs_kubernetes_clustertemplate.k8s-template.id
   master_flavor            = data.vkcs_compute_flavor.k8s-master-flavor.id
   master_count             = <КОЛИЧЕСТВО_MASTER_УЗЛОВ>
-  cluster_node_volume_type = "<ТИП_ДИСКА>"
+  labels = {
+    cluster_node_volume_type = "<ТИП_ДИСКА>"
+  }
   network_id               = "<ИДЕНТИФИКАТОР_СЕТИ>"
   subnet_id                = "<ИДЕНТИФИКАТОР_ПОДСЕТИ>"
   availability_zone        = "<ЗОНА_ДОСТУПНОСТИ>"
@@ -115,11 +117,11 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - `cluster_type` — тип кластера:
 
-  - `standart` (по умолчанию) — все master-узлы кластера будут располагаться в одной {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]}. Отказоустойчивость обеспечиваетcя на уровне зоны.
+  - `standard` (по умолчанию) — все master-узлы кластера будут располагаться в одной {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зоне доступности]}. Отказоустойчивость обеспечиваетcя на уровне зоны.
   - `regional` — master-узлы кластера будут располагаться в каждой из трех зон доступности, что позволяет сохранить управление даже при отказе одной из зон. Общее количество master-узлов — 3 или более.
 
 - `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе {linkto(../../../concepts/architecture#k8s-architecture)[text=Архитектура сервиса]}.
-- `cluster_node_volume_type` — тип диска для {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=хранения данных]}, который будет использоваться узлами. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
+- `labels.cluster_node_volume_type` — тип диска master-узла для {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=хранения данных]}. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
 - `availability_zone` — зона доступности кластера. Используйте параметр, если тип кластера — стандартный. Для региона `Москва` укажите одну из трех зон доступности: `ME1`, `MS1` или `PA2`.
   
    {note:info}
