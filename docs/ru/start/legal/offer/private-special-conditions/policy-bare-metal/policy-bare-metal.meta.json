@@ -1,0 +1,15 @@
+{
+  "title": "Условия использования услуги «Bare Metal» / «Сервис выделенных серверов»",
+  "shortDescription": "",
+  "metaDescription": "Условия использования услуги «Bare Metal» / «Сервис выделенных серверов»",
+  "sectionTitle": "Условия использования услуги «Bare Metal» / «Сервис выделенных серверов»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
