@@ -5,8 +5,6 @@
 - 1.35.6
 - 1.34.2
 - 1.33.3
-- 1.32.1
-- 1.31.4
 
 При {linkto(../../../instructions/create-cluster/create-webui-gen-2#mk8s-create-webui-gen-2)[text=создании нового кластера]} выбирайте последнюю доступную версию Kubernetes. По возможности {linkto(../../../instructions/update#mk8s-update)[text=обновляйте существующие кластеры]} до последней доступной версии.
 
@@ -33,22 +31,12 @@
 |1.34.2
 |27.08.2025
 |10.02.2026
-|10.11.2026
+|10.04.2027
 
 |1.33.x
 |15.05.2025
 |20.10.2025
 |20.12.2026
-
-|1.32.x
-|12.12.2024
-|28.05.2025
-|28.07.2026
-
-|1.31.x
-|10.12.2024
-|17.02.2025
-|17.04.2026
 |===
 
 {cut(Предыдущие версии)}
@@ -59,6 +47,16 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+|1.32.x
+|12.12.2024
+|28.05.2025
+|03.10.2026
+
+|1.31.x
+|10.12.2024
+|17.02.2025
+|03.10.2026
 
 |1.30.x
 |10.09.2024
@@ -236,14 +234,6 @@
 - Calico обновлено до 3.30.2.
 - Helm обновлен до 3.18.4
 
-|1.32.1
-|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
-|![](../../../../../assets/no.svg "inline")
-
-|1.31.4
-|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Добавлена возможность {linkto(../../../how-to-guides/gpu-operator#mk8s-gpu-operator)[text=использовать и управлять GPU]} в кластерах Kubernetes
-
 |===
 
 {cut(Предыдущие версии)}
@@ -253,6 +243,14 @@
 |Версия Kubernetes
 |Изменения в Kubernetes
 |Изменения в сервисе Kubernetes aaS
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Добавлена возможность {linkto(../../../how-to-guides/gpu-operator#mk8s-gpu-operator)[text=использовать и управлять GPU]} в кластерах Kubernetes
 
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)

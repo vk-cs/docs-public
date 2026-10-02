@@ -16,7 +16,7 @@
 
 ## {heading(Заключение индивидуального договора)[id=billing-corporate-individual_contract]}
 
-ЮЛ и ИП по умолчанию работают с {var(cloud)} на основании договоров {linkto(../../../../start/legal/offer/offer-agreement)[text=публичной оферты]}. Есть возможность перейти на индивидуальный {linkto(../../concepts/physical-corporate#billing-physical-corporate-agreement-type)[text=тип договора]} с {var(cloud)}.
+ЮЛ и ИП по умолчанию работают с {var(cloud)} на основании договоров [публичной оферты](/ru/start/legal/offer/offer-agreement). Есть возможность перейти на индивидуальный {linkto(../../concepts/physical-corporate#billing-physical-corporate-agreement-type)[text=тип договора]} с {var(cloud)}.
 
 Чтобы заключить индивидуальный договор:
 
