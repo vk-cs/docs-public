@@ -4299,7 +4299,7 @@
         "properties": {
           "id": {
             "type": "integer",
-            "description": "ID записи",
+            "description": "ID записи"
           },
           "tenant_id": {
             "type": "string",
