@@ -88,7 +88,7 @@
 
 |Magnum
 |https://infra.mail.ru:9511/v1
-|Управление контейнерами {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=Managed Containers]}
+|Управление контейнерами {linkto(../../../../kubernetes#kubernetes)[text=Managed Containers]}
 
 |Magnum-addons
 |https://mcs.mail.ru/infra/container/addons

@@ -4,7 +4,7 @@
   "metaDescription": "Сервис Managed Containers позволяет использовать кластеры Kubernetes. Узнайте, как создавать, управлять и поддерживать кластеры Kubernetes второго поколения в VK Cloud",
   "sectionTitle": "Managed Containers для кластеров второго поколения",
   "icon": "",
-  "weight": 4,
+  "weight": 1,
   "uuid": "e57572d5-ba7a-4c18-8892-1089cb9cc3b6",
   "build": {
     "for": [

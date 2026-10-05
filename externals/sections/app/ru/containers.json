@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/kubernetes/k8s/concepts"
+                    "link": "/ru/kubernetes/mk8s/concepts"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/reference"
+                    "link": "/ru/kubernetes/mk8s/reference"
                 },
                 {
                     "link": "/ru/intro/billing",
@@ -38,22 +38,22 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/kubernetes/k8s/monitoring"
+                    "link": "/ru/kubernetes/mk8s/monitoring"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/install-tools"
+                    "link": "/ru/kubernetes/mk8s/install-tools"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/instructions/addons"
+                    "link": "/ru/kubernetes/mk8s/instructions/addons"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/how-to-guides/ingress"
+                    "link": "/ru/kubernetes/mk8s/how-to-guides/ingress"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/how-to-guides/dns/local-dns-cache"
+                    "link": "/ru/kubernetes/mk8s/how-to-guides/dns/local-dns-cache"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/how-to-guides/velero/velero-backup"
+                    "link": "/ru/kubernetes/mk8s/how-to-guides/managed-velero/managed-velero-backup"
                 }
             ]
         }
