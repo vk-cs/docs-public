@@ -40,7 +40,7 @@
    1. (Пропустить для Standalone) Выберите кластер Kubernetes из выпадающего списка или создайте новый. В этот кластер будет добавлен worker-узел для размещения экземпляра Cloud Kafka.
    {/ifndef}
    {ifdef(public)}
-   1. Выберите кластер Kubernetes. В этот кластер в сервисе [Managed Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер в сервисе [Managed Containers](/ru/kubernetes#kubernetes) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 

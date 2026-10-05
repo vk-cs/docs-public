@@ -30,7 +30,7 @@
 1. На шаге **Параметры**:
 
    1. Задайте для экземпляра название и описание.
-   1. Выберите кластер Kubernetes. В этот кластер {ifdef(public)} [Managed Containers](/ru/kubernetes/k8s){/ifdef} будет добавлен {ifdef(public)} [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-узел {/ifndef} для размещения экземпляра Cloud Flink.
+   1. Выберите кластер Kubernetes. В этот кластер {ifdef(public)} [Managed Containers](/ru/kubernetes#kubernetes){/ifdef} будет добавлен {ifdef(public)} [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology){/ifdef} {ifndef(public)} worker-узел {/ifndef} для размещения экземпляра Cloud Flink.
 
       Если нужного кластера нет в списке:
 
