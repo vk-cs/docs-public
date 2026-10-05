@@ -1,5 +1,5 @@
 {includetag(dr_onboarding_1)}
-Hystax Acura Disaster Recovery сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use) сервистерінің лицензиялық келісімдерімен келісесіз.
+Хайстекс Акура — аварийное восстановление сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [Хайстекс Акура — аварийное восстановление](https://хст.рф/terms-of-use) сервистерінің лицензиялық келісімдерімен келісесіз.
 {/includetag}
 
 {includetag(not_dr_onboarding)}
@@ -12,13 +12,13 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
 {includetag(dr_onboarding_2)}
 1. Қалпына келтірілген инфрақұрылым атынан жайылдырылатын аккаунт үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/access/iam/instructions/manage-2fa).
 1. Қалпына келтіру қолданылатын ВМ-ді [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create#create_vm). Жылдам бастау шеңберінде Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-DR` ВМ-і пайдаланылады.
-1. Hystax Acura Disaster Recovery сервисін [қосыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-add).
+1. Хайстекс Акура — аварийное восстановление сервисін [қосыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-add).
 
-   Орнатудың аяқталуын күтіңіз — поштаға логин мен құпиясөзі бар сілтеме келеді. Сервис https://dr.mcs-cloud.ru мекенжайында жайылдырылады (Hystax Acura жеке кабинеті).
+   Орнатудың аяқталуын күтіңіз — поштаға логин мен құпиясөзі бар сілтеме келеді. Сервис https://dr.mcs-cloud.ru мекенжайында жайылдырылады (Хайстекс Акура жеке кабинеті).
 
 ## {heading({counter(dr)}. Деректер репликациясын орындаңыз)[id=replication]}
 
-1. Алынған логин мен құпиясөзді пайдаланып, Hystax Acura [жеке кабинетінде](https://dr.mcs-cloud.ru) [авторизациядан өтіңіз](https://dr.mcs-cloud.ru).
+1. Алынған логин мен құпиясөзді пайдаланып, Хайстекс Акура [жеке кабинетінде](https://dr.mcs-cloud.ru) [авторизациядан өтіңіз](https://dr.mcs-cloud.ru).
 1. **Install replication agents** түймесін басыңыз.
 1. **Agent selection** қадамында **Linux** таңдаңыз және **Next** түймесін басыңыз.
 1. **Agent settings** қадамында параметрлерді көрсетіңіз:
@@ -65,14 +65,14 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
            timeout: 300
          become: yes
 
-       - name: Install Hystax Linux Replication Agent from rpm package
+       - name: Install Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
 
-       - name: Install Hystax Linux Replication Agent from deb package
+       - name: Install Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
@@ -88,7 +88,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
 
    {/cut}
 
-   Агент орнатылғаннан кейін `Ubuntu-DR` ВМ-і Hystax Acura [жеке кабинетінің](https://dr.mcs-cloud.ru) басты бетінде **Unprotected** мәртебесімен пайда болады.
+   Агент орнатылғаннан кейін `Ubuntu-DR` ВМ-і Хайстекс Акура [жеке кабинетінің](https://dr.mcs-cloud.ru) басты бетінде **Unprotected** мәртебесімен пайда болады.
 
 1. **Machines Groups** тізімінде `Ubuntu-DR` ВМ-нің мәзірін ашып, **Edit Replication schedule** опциясын таңдаңыз. Ашылған терезеде параметрлерді көрсетіңіз:
 
@@ -98,7 +98,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
 
    {note:info}
 
-   Репликация және сақтық көшірмелеу кестесін жасау туралы толығырақ [Hystax ресми құжаттамасында](https://hystax.com/documentation/dr/dr_overview.html#edit-replication-settings-schedule).
+   Репликация және сақтық көшірмелеу кестесін жасау туралы толығырақ [Хайстекс ресми құжаттамасында](https://hstx.ru/documentation/disaster-recovery-and-cloud-backup/dr-overview.html#edit-replication-settings-schedule).
 
    {/note}
 
@@ -119,7 +119,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
     - `subnet_id` параметрінде `Ubuntu-DR` ВМ-іне арналған желі идентификаторын көрсетіңіз.
     - `flavor` параметрінде ВМ шаблонының атауын көрсетіңіз, оны `openstack flavor list` командасы арқылы нақтылаңыз.
 
-    Параметрлердің толық сипаттамасы [Hystax Acura ресми құжаттамасында](https://hystax.com/documentation/live-migration/migration_overview.html#migration-plan-syntax).
+    Параметрлердің толық сипаттамасы [Хайстекс Акура ресми құжаттамасында](https://hstx.ru/documentation/live-migration/migration-overview.html#migration-plan-syntax).
 
     {cut(Апаттық қалпына келтіру жоспарының мысалы)}
 
@@ -207,7 +207,7 @@ Hystax Acura Disaster Recovery сервисін пайдалану арқылы 
    - **Password**: пайдаланушының құпиясөзі.
    - **Target project domain**: [жоба баптауларындағы](https://kz.cloud.vk.kz/app/project/keys) **Project Domain ID** мәні.
    - **Target project ID**: [жоба баптауларындағы](https://kz.cloud.vk.kz/app/project/keys) **Project ID** мәні.
-   - **Hystax Service Network**: ВМ жайылдырылаатын желінің UUID-і.
+   - **Service Network**: ВМ жайылдырылаатын желінің UUID-і.
    - **Floating IP Network**: сыртқы `ext-net` желісі.
 
 1. **Next** түймесін басыңыз.
@@ -227,7 +227,7 @@ VK Cloud-та қалпына келтірілген ВМ-ді (`<PID_ПРОЕК�
 Жұмыс істеп тұрған ВМ-дер есептеу ресурстарын тұтынады. Егер олар сізге енді қажет болмаса:
 
 - `Ubuntu-DR` ВМ-ін [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
-- `VK-Cloud-infra` резервтік инфрақұрылымын Hystax Acura [жеке кабинеті](https://dr.mcs-cloud.ru) арқылы жойыңыз.
+- `VK-Cloud-infra` резервтік инфрақұрылымын Хайстекс Акура [жеке кабинеті](https://dr.mcs-cloud.ru) арқылы жойыңыз.
 - Егер қалпына келтіру кезінде Floating IP-мекенжайы жасалған болса, оны [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#delete).
 
 {/includetag}

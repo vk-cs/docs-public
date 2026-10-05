@@ -7,12 +7,6 @@ The Hyper-V virtual machine must meet the following requirements:
 - The current user has administrator rights.
 - At least one disk is connected to the VM.
 
-{note:info}
-
-To migrate a VM with UEFI emulation, use [Hystax](../migrate-hystax-mr) or transfer data to a new Hyper-V VM with BIOS emulation.
-
-{/note}
-
 ## 2. Prepare the VM for migration
 
 {tabs}

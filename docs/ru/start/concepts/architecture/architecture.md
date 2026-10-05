@@ -177,4 +177,4 @@
 
 ## {heading(Миграция в {var(cloud)})[id=architecture-migration]}
 
-{var(cloud)} поддерживает миграцию с использованием {linkto(../../../intro/migration#migration)[text=стороннего ПО]} или {linkto(../../../intro/migration/migrate-hystax-mr#migration-migrate-hystax-mr)[text=средствами платформы]}. Перенос виртуальных ресурсов обходится дешевле за счет реализации сервисов на базе OSS-решений (Open Source Solutions).
+{var(cloud)} поддерживает миграцию с использованием {linkto(../../../intro/migration#migration)[text=стороннего ПО]} или {linkto(../../../intro/migration/migrate-hstx-mr#migration-migrate-hstx-mr)[text=средствами платформы]}. Перенос виртуальных ресурсов обходится дешевле за счет реализации сервисов на базе OSS-решений (Open Source Solutions).

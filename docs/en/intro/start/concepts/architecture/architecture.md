@@ -175,4 +175,4 @@ For more information, see the section [Platform security](/en/intro/it-security)
 
 ## Migration to VK Cloud
 
-VK Cloud supports migration using [third-party software](../../../migration) or [platform tools](../../../migration/migrate-hystax-mr). The transfer of virtual resources is cheaper due to the implementation of services based on OSS (Open Source Solutions).
+VK Cloud supports migration using common [third-party software](../../../migration).

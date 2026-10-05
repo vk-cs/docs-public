@@ -1,4 +1,4 @@
-Ресурстарыңызды VK Cloud ішіне [Hystax Acura Migration](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) сервисінің көмегімен қолданбалардың жұмысын тоқтатпай көшіруге болады. Ресурстарды виртуалды платформалардан да, физикалық платформалардан да көшіруге болады.
+Ресурстарыңызды VK Cloud ішіне [Хайстекс Акура — миграция](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) сервисінің көмегімен қолданбалардың жұмысын тоқтатпай көшіруге болады. Ресурстарды виртуалды платформалардан да, физикалық платформалардан да көшіруге болады.
 
 {cut(Деректерді қайдан көшіруге болады?)}
 
@@ -18,21 +18,21 @@
 
 {/cut}
 
-Мысал ретінде Hystax Acura Migration сервисінің көмегімен VK Cloud ішіне Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-MR` ВМ көшіріледі.
+Мысал ретінде Хайстекс Акура — миграция сервисінің көмегімен VK Cloud ішіне Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-MR` ВМ көшіріледі.
 
-Hystax Acura Migration сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [Hystax Acura Migration](https://хст.рф/terms-of-use) сервистерінің лицензиялық келісімдерімен келісесіз.
+Осы сервисті пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) сервистерінің және [Хайстекс Акура — миграция](https://хст.рф/terms-of-use) сервистерінің лицензиялық келісімдерімен келісесіз.
 
 ## Дайындық қадамдары
 
 1. [Тіркеліңіз](/kz/intro/onboarding/account) в VK Cloud.
 1. Көшірілетін инфрақұрылым орналастырылатын аккаунт үшін [екі факторлы аутентификацияны (2FA)](/kz/access/iam/instructions/manage-2fa) баптаңыз.
-1. [Hystax Acura Migration](/kz/applications-and-services/marketplace/instructions/pr-instance-add) сервисін қосыңыз.
+1. [Хайстекс Акура — миграция](/kz/applications-and-services/marketplace/instructions/pr-instance-add) сервисін қосыңыз.
 
-   Орнату аяқталғанша күтіңіз — поштаңызға логин мен құпиясөз көрсетілген сілтеме келеді. Сервис https://migration.mcs-cloud.ru мекенжайында орналастырылады (Hystax Acura жеке кабинеті).
+   Орнату аяқталғанша күтіңіз — поштаңызға логин мен құпиясөз көрсетілген сілтеме келеді. Сервис https://migration.mcs-cloud.ru мекенжайында орналастырылады (Хайстекс Акура жеке кабинеті).
 
 ## 1. Деректер репликациясын орындаңыз
 
-1. Алынған логин мен құпиясөзді пайдаланып, [Hystax Acura жеке кабинетіне](https://migration.mcs-cloud.ru) авторизациялаңыз.
+1. Алынған логин мен құпиясөзді пайдаланып, [Хайстекс Акура жеке кабинетіне](https://migration.mcs-cloud.ru) авторизациялаңыз.
 1. **Install replication agents** батырмасын басыңыз.
 1. **Agent selection** қадамында **Linux** таңдаңыз да, **Next** батырмасын басыңыз.
 1. **Agent settings** қадамында параметрлерді көрсетіңіз:
@@ -77,14 +77,14 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
            timeout: 300
          become: yes
 
-       - name: Install Hystax Linux Replication Agent from rpm package
+       - name: Install Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
 
-       - name: Install Hystax Linux Replication Agent from deb package
+       - name: Install Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
@@ -100,7 +100,7 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
 
    {/cut}
 
-   Агент орнатылғаннан кейін `Ubuntu-MR` ВМ Hystax Acura [жеке кабинетінің](https://migration.mcs-cloud.ru) басты бетінде **Discovered** мәртебесімен пайда болады.
+   Агент орнатылғаннан кейін `Ubuntu-MR` ВМ Хайстекс Акура [жеке кабинетінің](https://migration.mcs-cloud.ru) басты бетінде **Discovered** мәртебесімен пайда болады.
 
 1. **Machines Groups** тізіміндегі `Ubuntu-MR` ВМ мәзірін ашып, **Start Replication** опциясын таңдаңыз.
 1. Операция аяқталғанша күтіңіз — ВМ мәртебесі **Synced** болып өзгереді.
@@ -164,7 +164,7 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
    - `flavor` — ВМ үшін [конфигурация шаблонының](/kz/computing/iaas/concepts/vm/flavor) атауы немесе ID-і. Атауды `openstack flavor list` командасы арқылы нақтылаңыз.
    - `availability_zone` — ВМ орналастырылатын [қолжетімділік аймағының](/kz/start/concepts/architecture#architecture-az) атауы.
    - `security_groups` — `Ubuntu-MR` үшін [қауіпсіздік топтарының](/kz/networks/vnet/instructions/secgroups) атаулары немесе ID-лерінің тізімі.
-   - `id` — алдыңғы қадамда Hystax жасаған виртуалды машинаның ішкі ID-і.
+   - `id` — алдыңғы қадамда Хайстекс жасаған виртуалды машинаның ішкі ID-і.
    - `custom_image_metadata` — ВМ үшін пайдаланушылық метадеректер:
    
      - `os_type` — қонақ ОС түрі.
@@ -179,7 +179,7 @@ Hystax Acura Migration сервисін пайдалану арқылы сіз [
    - `subnet_id` — ВМ орналастырылатын ішкі желінің ID-і.
    - `cidr` — CIDR форматындағы ішкі желі мекенжайы.
 
-   Параметрлердің толық сипаттамасы — [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description) ресми құжаттамасында, ал пайдаланушылық метадеректер сипаттамасы — [Образ метатегтері](/kz/computing/iaas/instructions/images/image-metadata) бөлімінде.
+   Параметрлердің толық сипаттамасы — [Хайстекс Акура](https://hstx.ru/documentation/live-migration/migration-process.html#syntax-of-machine-description) ресми құжаттамасында, ал пайдаланушылық метадеректер сипаттамасы — [Образ метатегтері](/kz/computing/iaas/instructions/images/image-metadata) бөлімінде.
 
    {/cut}
 
@@ -210,6 +210,6 @@ VK Cloud ішінде қосылған ВМ-ді (`<PID проекта>_cloud_ag
 
 Жұмыс істеп тұрған ВМ есептеу ресурстарын тұтынады және [тарифтеледі](https://cloud.vk.ru/docs/kz/computing/iaas/tariffication). Егер олар енді қажет болмаса:
 
-- Hystax Acura [жеке кабинетіне](https://migration.mcs-cloud.ru) қосылған `Ubuntu-MR` ВМ-ді жойыңыз.
-- Hystax Acura [жеке кабинеті](https://migration.mcs-cloud.ru) арқылы `VK-Cloud-infra` резервтік инфрақұрылымын жойыңыз (detach).
+- Хайстекс Акура [жеке кабинетіне](https://migration.mcs-cloud.ru) қосылған `Ubuntu-MR` ВМ-ді жойыңыз.
+- Хайстекс Акура [жеке кабинеті](https://migration.mcs-cloud.ru) арқылы `VK-Cloud-infra` резервтік инфрақұрылымын жойыңыз (detach).
 - Егер көшіру кезінде жасалған болса, [Floating IP-мекенжайын](/kz/networks/vnet/instructions/ip/floating-ip#delete) жойыңыз.
