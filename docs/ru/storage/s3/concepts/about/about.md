@@ -173,3 +173,24 @@
 {ifdef(public)}
 - `BackupBucket` (только для бакетов) — для {linkto(../../../../storage/backups#cloud-backup)[text=резервных копий инстансов]}, созданных как автоматически, так и вручную. Бакеты такого класса нельзя самостоятельно создать или удалить. После удаления резервных копий бакет BackupBucket может остаться пустым. Он необходим объектному хранилищу для дальнейшей работы с планами резервного копирования в проекте. В API обозначается названием `BACKUP`.
 {/ifdef}
+
+{ifdef(public)}
+## {heading(Шифрование подключения к хранилищу)[id=s3-concepts-about-connect]}
+
+Подключение к {var(s3)} возможно как с шифрованием (протоколы TLS 1.2 и TLS 1.3), так и без него.
+
+Шифры TLS 1.2 (`ssl_ciphers`):
+
+- `ECDHE-ECDSA-AES128-GCM-SHA256`,
+- `ECDHE-ECDSA-AES256-GCM-SHA384`,
+- `ECDHE-RSA-AES128-GCM-SHA256`,
+- `ECDHE-RSA-AES256-GCM-SHA384`,
+- `ECDHE-ECDSA-CHACHA20-POLY1305`,
+- `ECDHE-RSA-CHACHA20-POLY1305`.
+
+Шифры TLS 1.3 (`ssl_conf_command Ciphersuites`):
+
+- `TLS_AES_128_GCM_SHA256`,
+- `TLS_AES_256_GCM_SHA384`,
+- `TLS_CHACHA20_POLY1305_SHA256`.
+{/ifdef}

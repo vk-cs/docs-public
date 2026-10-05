@@ -4,7 +4,7 @@
 
 {var(s3)} сервисін пәрмен жолы интерфейсі арқылы басқаруды қолдайды.
 
-## {heading({var(s3)} қызметіне қосылуды баптаңыз)[id=s3-connect-cli-configure]}
+## {heading({var(s3)} қызметіне қосылу баптауы)[id=s3-connect-cli-configure]}
 
 1. {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef} жеке кабинетінде {var(s3)} үшін {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунт пен қолжетімділік кілтін жасаңыз]}. Қолжетімділіктің құпия кілтін (**Secret Key**) сақтап қойыңыз.
 1. Қажетті құралдарды орнатыңыз:
@@ -100,7 +100,7 @@
 
 {/tabs}
 
-## {heading({var(s3)} қызметіне қосылуды тексеріңіз)[id=s3-connect-cli-check]}
+## {heading({var(s3)} қосылымын тексеру)[id=s3-connect-cli-check]}
 
 Бакеттер тізімін шығару үшін команданы орындаңыз:
 
