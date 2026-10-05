@@ -7,7 +7,7 @@
   "weight": 3,
   "relativeSections": [
     {
-      "partialPath": "/kz/tools-for-using-services/api/api-spec/monitoring2-api"
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/monitoring-api"
     }
   ],
   "build": {

@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Monitoring",
+  "shortDescription": "OpenAPI-спецификация сервиса Cloud Monitoring",
+  "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Cloud Monitoring",
+  "sectionTitle": "Cloud Monitoring",
+  "icon": "",
+  "weight": 16,
+  "uuid": "173c5989-2b7a-4675-b08d-d6c112a8670e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
