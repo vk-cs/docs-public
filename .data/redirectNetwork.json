@@ -1207,7 +1207,7 @@
   },
   {
     "source": "/en/additionals/hystax/migration/syntax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -1219,13 +1219,13 @@
   },
   {
     "source": "/en/additionals/hystax/replication/launch",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/hystax/replication",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -1237,31 +1237,31 @@
   },
   {
     "source": "/en/additionals/hystax/start/project",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/hystax/migration/syntax",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/hystax/replication/agent",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/hystax/replication/launch",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/hystax/replication",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
@@ -7621,13 +7621,13 @@
   },
   {
     "source": "/en/additionals/hystax/migration/plan",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/hystax/migration/launch",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -7657,13 +7657,13 @@
   },
   {
     "source": "/ru/additionals/hystax/migration/launch",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/hystax/migration/plan",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
@@ -9103,7 +9103,7 @@
   },
   {
     "source": "/en/additionals/hystax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -9121,25 +9121,25 @@
   },
   {
     "source": "/en/additionals/hystax/disaster-recovery",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/hystax/disaster-recovery/launch",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/hystax/disaster-recovery/plan",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/hystax/start/connection",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -10417,19 +10417,19 @@
   },
   {
     "source": "/en/additionals/mp",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/mp",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/disaster-recovery",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -10471,43 +10471,43 @@
   },
   {
     "source": "/en/manage/disaster-recovery/quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/disaster-recovery/quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/disaster-recovery/quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/disaster-recovery/quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/disaster-recovery/concepts/dr-models",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/migration/migrate-hystax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/migration/migrate-hystax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -10759,13 +10759,13 @@
   },
   {
     "source": "/ru/additionals/migration/migrate-hystax",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/migration/migrate-hystax",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
@@ -14305,7 +14305,7 @@
   },
   {
     "source": "/en/additionals/cases/migration/migrate-hystax-mr",
-    "destination": "/en/intro/migration/migrate-hystax-mr",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -16735,7 +16735,7 @@
   },
   {
     "source": "/ru/additionals/cases/migration/migrate-hystax-mr",
-    "destination": "/ru/intro/migration/migrate-hystax-mr",
+    "destination": "/ru/intro/migration/migrate-hstx-mr",
     "permanent": false,
     "locale": false
   },
@@ -20629,49 +20629,49 @@
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/migrate-hystax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/marketplace/initial-configuration/migrate-hystax",
-    "destination": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -21727,13 +21727,13 @@
   },
   {
     "source": "/ru/vendors-products/marketplace/initial-configuration/migrate-hystax",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/marketplace/initial-configuration/migrate-hystax",
-    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
     "permanent": false,
     "locale": false
   },
@@ -34172,6 +34172,78 @@
   {
     "source": "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
     "destination": "/ru/tools-for-using-services/api/api-spec/monitoring-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/intro/migration/migrate-hystax-mr",
+    "destination": "/ru/intro/migration/migrate-hstx-mr",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/ru/applications-and-services/marketplace/initial-configuration/migrate-hstx",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/intro/migration/migrate-hystax-mr",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }
