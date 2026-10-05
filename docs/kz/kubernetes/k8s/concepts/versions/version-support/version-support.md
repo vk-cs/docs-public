@@ -7,8 +7,6 @@
 - 1.35.6
 - 1.34.2
 - 1.33.3
-- 1.32.1
-- 1.31.4
 
 {linkto(../../../instructions/create-cluster/create-webui#k8s-create-webui)[text=Жаңа кластерді құру]} кезінде Kubernetes-тің соңғы қолжетімді нұсқасын таңдаңыз. Мүмкіндік болса, {linkto(../../../instructions/update#k8s-update)[text=қолданыстағы кластерлерді]} соңғы қолжетімді нұсқаға дейін жаңартыңыз.
 
@@ -35,22 +33,12 @@ Kubernetes нұсқасын қолдау тоқтатылғанға дейін 3
 |1.34.2
 |27.08.2025
 |10.02.2026
-|10.11.2026
+|10.04.2027
 
 |1.33.x
 |15.05.2025
 |20.10.2025
 |20.12.2026
-
-|1.32.x
-|12.12.2024
-|28.05.2025
-|28.07.2026
-
-|1.31.x
-|10.12.2024
-|17.02.2025
-|17.04.2026
 |===
 
 {cut(Алдыңғы нұсқалар)}
@@ -61,6 +49,16 @@ Kubernetes нұсқасын қолдау тоқтатылғанға дейін 3
 |Ресми релиз күні
 |VK релизіндегі Kubernetes aaS
 |VK релизіндегі Kubernetes aaS қолдауының аяқталуы
+
+|1.32.x
+|12.12.2024
+|28.05.2025
+|03.10.2026
+
+|1.31.x
+|10.12.2024
+|17.02.2025
+|03.10.2026
 
 |1.30.x
 |10.09.2024
@@ -238,14 +236,6 @@ Kubernetes нұсқасын қолдау тоқтатылғанға дейін 3
 - Calico 3.30.2 нұсқасына жаңартылды.
 - Helm 3.18.4 нұсқасына жаңартылды
 
-|1.32.1
-|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
-|![](../../../../../assets/no.svg "inline")
-
-|1.31.4
-|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Kubernetes кластерлерінде {linkto(../../../how-to-guides/gpu-operator#k8s-gpu-operator)[text=GPU пайдалануға және оны басқаруға]} мүмкіндік қосылды
-
 |===
 
 {cut(Алдыңғы нұсқалар)}
@@ -255,6 +245,14 @@ Kubernetes нұсқасын қолдау тоқтатылғанға дейін 3
 |Kubernetes нұсқасы
 |Kubernetes-тегі өзгерістер
 |Kubernetes aaS сервисіндегі өзгерістер
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](../../../../../assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Kubernetes кластерлерінде {linkto(../../../how-to-guides/gpu-operator#k8s-gpu-operator)[text=GPU пайдалануға және оны басқаруға]} мүмкіндік қосылды
 
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)

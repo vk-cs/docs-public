@@ -3,8 +3,6 @@ The following versions of Kubernetes aaS from VK Cloud are currently available:
 - 1.35.6
 - 1.34.2
 - 1.33.3
-- 1.32.1
-- 1.31.4
 
 When [creating a new cluster](/en/kubernetes/k8s/instructions/create-cluster), choose the latest available Kubernetes version. If possible, [update the existing clusters](/en/kubernetes/k8s/instructions/update) to the latest available version.
 
@@ -31,22 +29,12 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |1.34.2
 |August 27, 2025
 |February 10, 2026
-|November 10, 2026
+|April 10, 2027
 
 |1.33.x
 |May 15, 2025
 |October 20, 2025
 |December 20, 2026
-
-|1.32.x
-|December 12, 2024
-|May 28, 2025
-|July 28, 2026
-
-|1.31.x
-|December 10, 2024
-|February 17, 2025
-|April 17, 2026
 |===
 
 {cut(Previous versions)}
@@ -57,6 +45,16 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+|1.32.x
+|December 12, 2024
+|May 28, 2025
+|October 3, 2026
+
+|1.31.x
+|December 10, 2024
+|February 17, 2025
+|October 3, 2026
 
 |1.30.x
 |September 10, 2024
@@ -234,14 +232,6 @@ New features are added to all Kubernetes versions, unless a feature and version 
 - Calico is updated to version 3.30.2.
 - Helm is updated to version 3.18.4
 
-|1.32.1
-|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
-|![](/en/assets/no.svg "inline")
-
-|1.31.4
-|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
-|Added the ability to [use and manage](/en/kubernetes/k8s/how-to-guides/gpu-operator) GPUs in Kubernetes clusters
-
 |===
 
 {cut(Previous versions)}
@@ -251,6 +241,14 @@ New features are added to all Kubernetes versions, unless a feature and version 
 |Kubernetes version
 |Changes in Kubernetes
 |Changes in Kubernetes aaS service
+
+|1.32.1
+|[Kubernetes v1.32: Penelope](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/)
+|![](/en/assets/no.svg "inline")
+
+|1.31.4
+|[Kubernetes v1.31: Elli](https://kubernetes.io/blog/2024/08/13/kubernetes-v1-31-release/)
+|Added the ability to [use and manage](/en/kubernetes/k8s/how-to-guides/gpu-operator) GPUs in Kubernetes clusters
 
 |1.30.5
 |[Kubernetes v1.30: Uwubernetes](https://kubernetes.io/blog/2024/04/17/kubernetes-v1-30-release/)

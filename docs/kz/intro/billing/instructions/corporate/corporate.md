@@ -19,7 +19,7 @@
 
 ## {heading(Жеке шарт жасасу)[id=billing-corporate-individual_contract]}
 
-Әдепкі бойынша ЮЛ және ИП {var(cloud)}-пен {linkto(../../../../start/legal/digital-cloud/legal-terms#legal-legal-terms)[text=жария оферта]} шарттары негізінде жұмыс істейді. {var(cloud)}-пен жеке {linkto(../../concepts/physical-corporate#billing-physical-corporate-agreement-type)[text=шарт түріне]} ауысу мүмкіндігі бар.
+Әдепкі бойынша ЮЛ және ИП {var(cloud)}-пен [жария оферта](/kz/start/legal/digital-cloud/legal-terms) шарттары негізінде жұмыс істейді. {var(cloud)}-пен жеке {linkto(../../concepts/physical-corporate#billing-physical-corporate-agreement-type)[text=шарт түріне]} ауысу мүмкіндігі бар.
 
 Жеке шарт жасасу үшін:
 
