@@ -1,4 +1,4 @@
-Вы можете перенести ваши ресурсы в {var(cloud)} с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
+Вы можете перенести ваши ресурсы в {var(cloud)} с помощью сервиса [Хайстекс Акура — миграция](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
 
 {cut(Откуда можно перенести данные?)}
 
@@ -6,11 +6,11 @@
 
 **Поддерживаемые приложения**: SAP, Microsoft Active Directory, PostgreSQL, Oracle, NGINX, Red Hat Jboss Enterprise, IBM WebSphere, Apache, VMware vSphere, MySQL, MongoDB, Hadoop, Spark.
 
-{includetag(migrate-hystax)}
+{includetag(migrate-hstx)}
 **Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создания ВМ]} в вашем личном кабинете.
 {/includetag}
 
-{includetag(migrate-hystax-mr)}
+{includetag(migrate-hstx-mr)}
 **Поддерживаемые операционные системы**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Полный список доступных для миграции ОС и их версий приведен на странице {linkto(../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создания ВМ]} в вашем личном кабинете.
 {/includetag}
 
@@ -24,29 +24,29 @@
 
 {/cut}
 
-В качестве примера с помощью сервиса Hystax Acura Migration в {var(cloud)} будет перенесена ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
+В качестве примера с помощью сервиса Хайстекс Акура — миграция в {var(cloud)} будет перенесена ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/offer/private-special-conditions/policy-marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use).
+Используя этот сервис, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/offer/private-special-conditions/policy-marketplace) и [Хайстекс Акура — миграция](https://хст.рф/terms-of-use).
 
-## {heading(Подготовительные шаги)[id=includes-migrate-hystax-prepare]}
+## {heading(Подготовительные шаги)[id=includes-migrate-hstx-prepare]}
 
-{includetag(migrate-hystax)}
+{includetag(migrate-hstx)}
 1. {linkto(../../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
 1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
-1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Hystax Acura Migration.
+1. {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Хайстекс Акура — миграция.
 {/includetag}
 
-{includetag(migrate-hystax-mr)}
+{includetag(migrate-hstx-mr)}
 1. {linkto(../../../intro/onboarding/account#onboarding-account)[text=Зарегистрируйтесь]} в {var(cloud)}.
 1. {linkto(../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Настройте]} двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
-1. {linkto(../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Hystax Acura Migration.
+1. {linkto(../../../applications-and-services/marketplace/instructions/pr-instance-add#marketplace-pr-instance-add)[text=Подключите]} сервис Хайстекс Акура — миграция.
 {/includetag}
 
-   Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Hystax Acura).
+   Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Хайстекс Акура).
 
-## {heading(1. Выполните репликацию данных)[id=includes-migrate-hystax-data-replication]}
+## {heading(1. Выполните репликацию данных)[id=includes-migrate-hstx-data-replication]}
 
-1. [Авторизуйтесь](https://migration.mcs-cloud.ru) в личном кабинете Hystax Acura, используя полученные логин и пароль.
+1. [Авторизуйтесь](https://migration.mcs-cloud.ru) в личном кабинете Хайстекс Акура, используя полученные логин и пароль.
 1. Нажмите кнопку **Install replication agents**.
 1. На шаге **Agent selection** выберите **Linux** и нажмите кнопку **Next**.
 1. На шаге **Agent settings** укажите параметры:
@@ -91,14 +91,14 @@
            timeout: 300
          become: yes
 
-       - name: Install Hystax Linux Replication Agent from rpm package
+       - name: Install Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
 
-       - name: Install Hystax Linux Replication Agent from deb package
+       - name: Install Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
@@ -114,12 +114,12 @@
 
    {/cut}
 
-   После установки агента ВМ `Ubuntu-MR` появится на главной странице [личного кабинета](https://migration.mcs-cloud.ru) Hystax Acura со статусом **Discovered**.
+   После установки агента ВМ `Ubuntu-MR` появится на главной странице [личного кабинета](https://migration.mcs-cloud.ru) Хайстекс Акура со статусом **Discovered**.
 
 1. Раскройте меню ВМ `Ubuntu-MR` в списке **Machines Groups** и выберите опцию **Start Replication**.
 1. Дождитесь завершения операции — статус ВМ изменится на **Synced**.
 
-## {heading(2. Создайте план миграции)[id=includes-migrate-hystax-migration-plan]}
+## {heading(2. Создайте план миграции)[id=includes-migrate-hstx-migration-plan]}
 
 1. Нажмите кнопку **Create Migration plan**.
 1. В поле **Name** укажите наименование плана `MR-plan`.
@@ -175,29 +175,29 @@
    Параметры плана:
 
    - `<ИМЯ_ВМ>` — имя, которое будет присвоено виртуальной машине в {var(cloud)}.
-   {includetag(migrate-hystax)}
+   {includetag(migrate-hstx)}
    - `flavor` — имя или ID {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблона конфигурации]} для ВМ. Уточните название с помощью команды `openstack flavor list`.
    {/includetag}
-   {includetag(migrate-hystax-mr)}
+   {includetag(migrate-hstx-mr)}
    - `flavor` — имя или ID {linkto(../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблона конфигурации]} для ВМ. Уточните название с помощью команды `openstack flavor list`.
    {/includetag}
    - `availability_zone` — имя [зоны доступности](/ru/start/concepts/architecture#architecture-az), в которой будет развернута ВМ.
-   {includetag(migrate-hystax)}
+   {includetag(migrate-hstx)}
    - `security_groups` — список имен или ID {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups)[text=групп безопасности]} для `Ubuntu-MR`.
    {/includetag}
-   {includetag(migrate-hystax-mr)}
+   {includetag(migrate-hstx-mr)}
    - `security_groups` — список имен или ID {linkto(../../../networks/vnet/instructions/secgroups#vnet-secgroups)[text=групп безопасности]} для `Ubuntu-MR`.
    {/includetag}
-   - `id` — внутренний ID виртуальной машины, сгенерированный Hystax на предыдущем шаге.
+   - `id` — внутренний ID виртуальной машины, сгенерированный Хайстекс на предыдущем шаге.
    - `custom_image_metadata` — пользовательские метаданные для ВМ:
    
      - `os_type` — тип гостевой ОС.
-     {includetag(migrate-hystax)}
+     {includetag(migrate-hstx)}
      - `os_distro` — имя дистрибутива ОС. Уточните имя, следуя инструкции в разделе {linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata-find-param)[text=Заполнение os_distro и os_version]}.
      - `os_version` — версия ОС. Уточните версию, следуя инструкции в разделе {linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata-find-param)[text=Заполнение os_distro и os_version]}.
      - `os_admin_user` — имя пользователя ОС с правами администратора. Пароль может быть установлен через {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=личный кабинет]}.
      {/includetag}
-     {includetag(migrate-hystax-mr)}
+     {includetag(migrate-hstx-mr)}
      - `os_distro` — имя дистрибутива ОС. Уточните имя, следуя инструкции в разделе {linkto(../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata-find-param)[text=Заполнение os_distro и os_version]}.
      - `os_version` — версия ОС. Уточните версию, следуя инструкции в разделе {linkto(../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata-find-param)[text=Заполнение os_distro и os_version]}.
      - `os_admin_user` — имя пользователя ОС с правами администратора. Пароль может быть установлен через {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=личный кабинет]}.
@@ -210,18 +210,18 @@
    - `subnet_id` — ID подсети, в которой будет развернута ВМ.
    - `cidr` — адрес подсети в формате CIDR.
 
-   {includetag(migrate-hystax)}
-   Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе {linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=Метатеги образов]}.
+   {includetag(migrate-hstx)}
+   Подробное описание параметров — в официальной документации [Хайстекс Акура](https://hstx.ru/documentation/live-migration/migration-process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе {linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=Метатеги образов]}.
    {/includetag}
-   {includetag(migrate-hystax-mr)}
-   Подробное описание параметров — в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе {linkto(../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=Метатеги образов]}.
+   {includetag(migrate-hstx-mr)}
+   Подробное описание параметров — в официальной документации [Хайстекс Акура](https://hstx.ru/documentation/live-migration/migration-process.html#syntax-of-machine-description), описание пользовательских метаданных — в разделе {linkto(../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=Метатеги образов]}.
    {/includetag}
 
    {/cut}
 
 1. Нажмите кнопку **Save**.
 
-## {heading(3. Запустите план)[id=includes-migrate-hystax-launch-plan]}
+## {heading(3. Запустите план)[id=includes-migrate-hstx-launch-plan]}
 
 1. Перейдите в раздел **Migrate**.
 1. Выберите план `MR-plan` и нажмите кнопку **Next**.
@@ -238,24 +238,24 @@
      1. Нажмите кнопку **Save**.
      1. Повторно запустите план.
 
-## {heading(4. Проверьте работоспособность добавленной ВМ)[id=includes-migrate-hystax-check]}
+## {heading(4. Проверьте работоспособность добавленной ВМ)[id=includes-migrate-hstx-check]}
 
-{includetag(migrate-hystax)}
+{includetag(migrate-hstx)}
 Найдите добавленную ВМ в {var(cloud)} (`<PID_ПРОЕКТА>_cloud_agent`), {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage)[text=выполните]} произвольные операции над ней.
 {/includetag}
-{includetag(migrate-hystax-mr)}
+{includetag(migrate-hstx-mr)}
 Найдите добавленную ВМ в {var(cloud)} (`<PID_ПРОЕКТА>_cloud_agent`), {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage)[text=выполните]} произвольные операции над ней.
 {/includetag}
 
-## {heading(Удалите неиспользуемые ресурсы)[id=includes-migrate-hystax-delete]}
+## {heading(Удалите неиспользуемые ресурсы)[id=includes-migrate-hstx-delete]}
 
 Работающие ВМ потребляют вычислительные ресурсы и [тарифицируются](https://cloud.vk.ru/docs/ru/computing/iaas/tariffication). Если они вам больше не нужны:
 
-- Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
-- Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
-{includetag(migrate-hystax)}
+- Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Хайстекс Акура.
+- Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Хайстекс Акура.
+{includetag(migrate-hstx)}
 - {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Удалите]} Floating IP-адрес, если он был создан во время миграции.
 {/includetag}
-{includetag(migrate-hystax-mr)}
+{includetag(migrate-hstx-mr)}
 - {linkto(../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Удалите]} Floating IP-адрес, если он был создан во время миграции.
 {/includetag}

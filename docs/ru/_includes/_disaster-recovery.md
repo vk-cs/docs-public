@@ -1,5 +1,5 @@
 {includetag(dr_onboarding_1)}
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/offer/private-special-conditions/policy-marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use).
+Используя сервис, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/start/legal/offer/private-special-conditions/policy-marketplace) и [Хайстекс Акура — аварийное восстановление](https://хст.рф/terms-of-use).
 {/includetag}
 
 {includetag(not_dr_onboarding)}
@@ -12,13 +12,13 @@
 {includetag(dr_onboarding_2)}
 1. [Настройте](/ru/access/iam/instructions/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/computing/iaas/instructions/vm/vm-create#iaas-vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
-1. [Подключите](/ru/applications-and-services/marketplace/instructions/pr-instance-add) сервис Hystax Acura Disaster Recovery.
+1. [Подключите](/ru/applications-and-services/marketplace/instructions/pr-instance-add) сервис Хайстекс Акура — аварийное восстановление.
 
-   Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://dr.mcs-cloud.ru (личный кабинет Hystax Acura).
+   Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://dr.mcs-cloud.ru (личный кабинет Хайстекс Акура).
 
 ## {heading({counter(dr)}. Выполните репликацию данных)[id=replication]}
 
-1. [Авторизуйтесь](https://dr.mcs-cloud.ru) в личном кабинете Hystax Acura, используя полученные логин и пароль.
+1. [Авторизуйтесь](https://dr.mcs-cloud.ru) в личном кабинете Хайстекс Акура, используя полученные логин и пароль.
 1. Нажмите кнопку **Install replication agents**.
 1. На шаге **Agent selection** выберите **Linux** и нажмите кнопку **Next**.
 1. На шаге **Agent settings** укажите параметры:
@@ -65,14 +65,14 @@
            timeout: 300
          become: yes
 
-       - name: Install Hystax Linux Replication Agent from rpm package
+       - name: Install Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
 
-       - name: Install Hystax Linux Replication Agent from deb package
+       - name: Install Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
@@ -88,7 +88,7 @@
 
    {/cut}
 
-   После установки агента ВМ `Ubuntu-DR` появится на главной странице [личного кабинета](https://dr.mcs-cloud.ru) Hystax Acura со статусом **Unprotected**.
+   После установки агента ВМ `Ubuntu-DR` появится на главной странице [личного кабинета](https://dr.mcs-cloud.ru) Хайстекс Акура со статусом **Unprotected**.
 
 1. Раскройте меню ВМ `Ubuntu-DR` в списке **Machines Groups** и выберите опцию **Edit Replication schedule**. В открывшемся окне укажите параметры:
 
@@ -98,7 +98,7 @@
 
    {note:info}
 
-   Подробней о репликации и создании расписания резервного копирования в [официальной документации Hystax](https://hystax.com/documentation/dr/dr_overview.html#edit-replication-settings-schedule).
+   Подробней о репликации и создании расписания резервного копирования в [официальной документации Хайстекс](https://hstx.ru/documentation/disaster-recovery-and-cloud-backup/dr-overview.html#edit-replication-settings-schedule).
 
    {/note}
 
@@ -119,7 +119,7 @@
     - В параметре `subnet_id` укажите идентификатор сети для ВМ `Ubuntu-DR`.
     - В параметре `flavor` укажите название шаблона ВМ, уточните его с помощью команды `openstack flavor list`.
 
-    Подробное описание параметров в официальной документации [Hystax Acura](https://hystax.com/documentation/live-migration/migration_overview.html#migration-plan-syntax).
+    Подробное описание параметров в официальной документации [Хайстекс Акура](https://hstx.ru/documentation/live-migration/migration-overview.html#migration-plan-syntax).
 
     {cut(Пример плана аварийного восстановления)}
 
@@ -207,7 +207,7 @@
    - **Password**: пароль пользователя.
    - **Target project domain**: значение **Project Domain ID** [настроек проекта](https://msk.cloud.vk.ru/app/project/keys).
    - **Target project ID**: значение **Project ID** [настроек проекта](https://msk.cloud.vk.ru/app/project/keys)
-   - **Hystax Service Network**: UUID сети, в которую будет разворачиваться ВМ.
+   - **Service Network**: UUID сети, в которую будет разворачиваться ВМ.
    - **Floating IP Network**: внешняя сеть `ext-net`.
 
 1. Нажмите кнопку **Next**.
@@ -227,7 +227,7 @@
 Работающие ВМ потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
 - [Удалите](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) ВМ `Ubuntu-DR`.
-- Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
+- Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Хайстекс Акура.
 - [Удалите](/ru/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP-адрес, если он был создан во время восстановления.
 
 {/includetag}
