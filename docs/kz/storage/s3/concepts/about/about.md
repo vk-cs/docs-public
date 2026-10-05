@@ -175,3 +175,24 @@
 {ifdef(public)}
 - `BackupBucket` (тек бакеттер үшін) — автоматты түрде де, қолмен де жасалған {linkto(../../../../storage/backups#cloud-backup)[text=инстанстардың резервтік көшірмелері]} үшін. Мұндай кластағы бакеттерді өз бетіңізше жасауға немесе жоюға болмайды. Резервтік көшірмелер жойылғаннан кейін BackupBucket бакеті бос болып қалуы мүмкін. Ол объектілік қоймаға жобадағы резервтік көшіру жоспарларымен әрі қарай жұмыс істеу үшін қажет. API-де `BACKUP` атауымен белгіленеді.
 {/ifdef}
+
+{ifdef(public)}
+## {heading(Хабарластыру қорына қосылу шифрлауы)[id=s3-concepts-about-connect]}
+
+{var(s3)} жүйесіне қосылу шифрлау арқылы (TLS 1.2 және TLS 1.3 протоколдары) немесе шифрлаусыз жүзеге асырылуы мүмкін.
+
+TLS 1.2 шифрлары (ssl_ciphers):
+
+- `ECDHE-ECDSA-AES128-GCM-SHA256`,
+- `ECDHE-ECDSA-AES256-GCM-SHA384`,
+- `ECDHE-RSA-AES128-GCM-SHA256`,
+- `ECDHE-RSA-AES256-GCM-SHA384`,
+- `ECDHE-ECDSA-CHACHA20-POLY1305`,
+- `ECDHE-RSA-CHACHA20-POLY1305`.
+
+TLS 1.3 шифрлары (ssl_conf_command Ciphersuites):
+
+- `TLS_AES_128_GCM_SHA256`,
+- `TLS_AES_256_GCM_SHA384`,
+- `TLS_CHACHA20_POLY1305_SHA256`.
+{/ifdef}

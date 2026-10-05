@@ -2,7 +2,7 @@
 
 {var(s3)} поддерживает управление сервисом через интерфейс командной строки.
 
-## {heading(Настройте подключение к {var(s3)})[id=s3-connect-cli-configure]}
+## {heading(Настройка подключения к {var(s3)})[id=s3-connect-cli-configure]}
 
 1. {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=Создайте аккаунт и ключ доступа]} к {var(s3)} в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}. Сохраните секретный ключ доступа (**Secret Key**).
 1. Установите нужные инструменты:
@@ -98,7 +98,7 @@
 
 {/tabs}
 
-## {heading(Проверьте подключение к {var(s3)})[id=s3-connect-cli-check]}
+## {heading(Проверка подключения к {var(s3)})[id=s3-connect-cli-check]}
 
 Выполните команду для вывода списка бакетов:
 

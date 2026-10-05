@@ -27,6 +27,8 @@
 
   - Нысанның өмір сүру уақыты (`Expiration` параметрі). Нысан жойылатын күндер санын анықтайды.
 
+- Сақтау шығындарын азайту үшін аяқталмаған құрамдас жүктеулерді `AbortIncompleteMultipartUpload` параметрі арқылы үзу ұсынылады. Ол құрамдас жүктеуді инициализациялаудан кейінгі күндер санын анықтайды, осы мерзім өткеннен кейін аяқталмаған жүктеу үзіледі, ал жүктелген бөліктер жойылады.
+
 - Ереже қосылғаннан кейін ол бакеттегі тиісті объектілерге немесе объект нұсқаларына автоматты түрде қолданылады.
 
     Бұдан әрі объектілер фондық режимде жойылады: алдымен, өмір сүру уақыты аяқталғаннан кейін қолжетімсіз болады, содан соң келесі 24 сағат ішінде кезек тәртібімен жойылады.
@@ -36,7 +38,7 @@
 - Әр бакет үшін 50 ережеден артық орнатуға болмайды.
 - API арқылы ережелерді жасағанда ережелері бар XML-файлдың өлшемі 512 КБ-тан аспауы тиіс.
 
-Өмірлік цикл ережелері фондық режимде жұмыс істейді және {var(s3)} сервисінің өнімділігіне әсер етпейді.
+Өмірлік цикл ережелері асинхронды түрде фондық режимде жұмыс істейді және {var(s3)} қызметінің өнімділігіне әсер етпейді.
 
 ## {heading(Өмірлік цикл ережелерінің конфигурациясы)[id=s3-concepts-lifecycle-config]}
 
@@ -64,8 +66,8 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 1,                                       // Указывается вместо ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true                // Указывается вместо Days (только для бакетов с версионированием)
+        "Days": 1,                                       // ExpiredObjectDeleteMarker орнына көрсетіледі
+        "ExpiredObjectDeleteMarker": true                // Days орнына көрсетіледі (тек нұсқалауы бар бакеттер үшін)
       },
       "ID": "string",
       "Status": "Enabled",
@@ -79,9 +81,12 @@ JSON-конфигурация үшін барлық ережелер `object` ф
           ]
         }
       },
-      "NoncurrentVersionExpiration": {                   // Только для бакетов с версионированием
+      "NoncurrentVersionExpiration": {                   // Тек нұсқалауы бар бакеттер үшін
         "NoncurrentDays": 30,
         "NewerNoncurrentVersions": 50
+      },
+      "AbortIncompleteMultipartUpload": {                // Аяқталмаған құрамдас жүктеулерді үзу
+        "DaysAfterInitiation": 7
       }
     }
   ]
@@ -89,7 +94,7 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 ```
 
 {ifdef(s3-pdf)}
-Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config1)[text=%number кестеде]} келтірілген.
+Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config1)[text=%number кестеде]} келтірілген.
 
 {caption(Кесте {counter(table)[id=numb_tab_lifecycle-config1]} — Конфигурация параметрлері)[align=right;position=above;id=tab_lifecycle-config1;number={const(numb_tab_lifecycle-config1)}]}
 {/ifdef}
@@ -231,10 +236,29 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 
 Толық жолы: `Rules[i]` → `NoncurrentVersionExpiration` → `NewerNoncurrentVersions`
 
+|`AbortIncompleteMultipartUpload`
+|Аяқталмаған құрамдас жүктеулерді үзу шарттары.
+
+- Егер құрамдас жүктеу инициализациядан кейін `DaysAfterInitiation` параметрінде көрсетілген күндер саны ішінде аяқталмаса, {var(s3)} құрамдас жүктеуді үзеді және оған байланысты барлық жүктелген бөліктерді жояды.
+- Егер құрамдас жүктеу көрсетілген күндер саны ішінде аяқталса, осы ереже бойынша ешқандай әрекет орындалмайды.
+
+Ереже барлық аяқталмаған жүктеулерге, соның ішінде бұрыннан барларына да қолданылады. `AbortIncompleteMultipartUpload` объектілерді емес, тек жүктелетін объектінің аяқталмаған бөліктерін жояды.
+
+Форматы: `object`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload`
+
+|`DaysAfterInitiation`
+|Құрамдас жүктеуді инициализациялаудан кейінгі күндер саны, осы мерзім өткеннен кейін аяқталмаған жүктеу үзіледі.
+
+Форматы: `integer`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload` → `DaysAfterInitiation`
+
 |===
 {ifdef(s3-pdf)}
 {/caption}
-{/ifdef}
+{/endif}
 
 {/cut}
 
@@ -245,17 +269,20 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 30,                              // Указывается вместо ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days (только для бакетов с версионированием)
+        "Days": 30,                              // ExpiredObjectDeleteMarker орнына көрсетіледі
+        "ExpiredObjectDeleteMarker": true        // Days орнына көрсетіледі (тек нұсқалауы бар бакеттер үшін)
       },
       "ID": "string",
       "Status": "Enabled",
       "Filter": {
         "Prefix": "string"
       },
-      "NoncurrentVersionExpiration": {          // Только для бакетов с версионированием
+      "NoncurrentVersionExpiration": {           // Тек нұсқалауы бар бакеттер үшін
         "NoncurrentDays": 30,
         "NewerNoncurrentVersions": 50
+      },
+      "AbortIncompleteMultipartUpload": {        // Аяқталмаған құрамдас жүктеулерді үзу
+        "DaysAfterInitiation": 7
       }
     }
   ]
@@ -263,7 +290,7 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 ```
 
 {ifdef(s3-pdf)}
-Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config2)[text=%number кестеде]} келтірілген.
+Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config2)[text=%number кестеде]} келтірілген.
 
 {caption(Кесте {counter(table)[id=numb_tab_lifecycle-config2]} — Конфигурация параметрлері)[align=right;position=above;id=tab_lifecycle-config2;number={const(numb_tab_lifecycle-config2)}]}
 {/ifdef}
@@ -376,10 +403,30 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 Форматы: `integer`, бірақ 100-ден аспайды.
 
 Толық жолы: `Rules[i]` → `NoncurrentVersionExpiration` → `NewerNoncurrentVersions`
+
+|`AbortIncompleteMultipartUpload`
+|Аяқталмаған құрамдас жүктеулерді үзу шарттары.
+
+- Егер құрамдас жүктеу инициализациядан кейін `DaysAfterInitiation` параметрінде көрсетілген күндер саны ішінде аяқталмаса, {var(s3)} құрамдас жүктеуді үзеді және оған байланысты барлық жүктелген бөліктерді жояды.
+- Егер құрамдас жүктеу көрсетілген күндер саны ішінде аяқталса, осы ереже бойынша ешқандай әрекет орындалмайды.
+
+Ереже барлық аяқталмаған жүктеулерге, соның ішінде бұрыннан барларына да қолданылады. `AbortIncompleteMultipartUpload` объектілерді емес, тек жүктелетін объектінің аяқталмаған бөліктерін жояды.
+
+Форматы: `object`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload`
+
+|`DaysAfterInitiation`
+|Құрамдас жүктеуді инициализациялаудан кейінгі күндер саны, осы мерзім өткеннен кейін аяқталмаған жүктеу үзіледі.
+
+Форматы: `integer`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload` → `DaysAfterInitiation`
+
 |===
 {ifdef(s3-pdf)}
 {/caption}
-{/ifdef}
+{/endif}
 {/cut}
 
 {cut(Тек бір тег бойынша JSON форматындағы конфигурация үлгісі)}
@@ -389,24 +436,27 @@ JSON-конфигурация үшін барлық ережелер `object` ф
   "Rules": [
     {
       "Expiration": {
-        "Days": 30,                              // Указывается вместо ExpiredObjectDeleteMarker
-        "ExpiredObjectDeleteMarker": true        // Указывается вместо Days (только для бакетов с версионированием)
+        "Days": 30,                              // ExpiredObjectDeleteMarker орнына көрсетіледі
+        "ExpiredObjectDeleteMarker": true        // Days орнына көрсетіледі (тек нұсқалауы бар бакеттер үшін)
       },
       "ID": "string",
       "Status": "Enabled",
       "Filter": {
         "Tag": { "Key": "env", "Value": "prod" }
       },
-      "NoncurrentVersionExpiration": {           // Только для бакетов с версионированием
+      "NoncurrentVersionExpiration": {           // Тек нұсқалауы бар бакеттер үшін
         "NoncurrentDays": 30,
         "NewerNoncurrentVersions": 50
+      },
+      "AbortIncompleteMultipartUpload": {        // Аяқталмаған құрамдас жүктеулерді үзу
+        "DaysAfterInitiation": 7
       }
     }
   ]
 }
 ```
 {ifdef(s3-pdf)}
-Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config3)[text=%number кестеде]} келтірілген.
+Конфигурация параметрлерінің сипаттамасы {linkto(#tab_lifecycle-config3)[text=%number кестеде]} келтірілген.
 
 {caption(Кесте {counter(table)[id=numb_tab_lifecycle-config3]} — Конфигурация параметрлері)[align=right;position=above;id=tab_lifecycle-config3;number={const(numb_tab_lifecycle-config3)}]}
 {/ifdef}
@@ -522,8 +572,27 @@ JSON-конфигурация үшін барлық ережелер `object` ф
 
 Толық жолы: `Rules[i]` → `NoncurrentVersionExpiration` → `NewerNoncurrentVersions`
 
+|`AbortIncompleteMultipartUpload`
+|Аяқталмаған құрамдас жүктеулерді үзу шарттары.
+
+- Егер құрамдас жүктеу инициализациядан кейін `DaysAfterInitiation` параметрінде көрсетілген күндер саны ішінде аяқталмаса, {var(s3)} құрамдас жүктеуді үзеді және оған байланысты барлық жүктелген бөліктерді жояды.
+- Егер құрамдас жүктеу көрсетілген күндер саны ішінде аяқталса, осы ереже бойынша ешқандай әрекет орындалмайды.
+
+Ереже барлық аяқталмаған жүктеулерге, соның ішінде бұрыннан барларына да қолданылады. `AbortIncompleteMultipartUpload` объектілерді емес, тек жүктелетін объектінің аяқталмаған бөліктерін жояды.
+
+Форматы: `object`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload`
+
+|`DaysAfterInitiation`
+|Құрамдас жүктеуді инициализациялаудан кейінгі күндер саны, осы мерзім өткеннен кейін аяқталмаған жүктеу үзіледі.
+
+Форматы: `integer`.
+
+Толық жолы: `Rules[i]` → `AbortIncompleteMultipartUpload` → `DaysAfterInitiation`
+
 |===
 {ifdef(s3-pdf)}
 {/caption}
-{/ifdef}
+{/endif}
 {/cut}

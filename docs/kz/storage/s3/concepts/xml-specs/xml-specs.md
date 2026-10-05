@@ -614,7 +614,30 @@ LifecycleExpiration деректер түрлерінің сипаттамасы
 |===
 {ifdef(s3-pdf)}
 {/caption}
-{/ifdef}
+{/endif}
+
+## {heading(AbortIncompleteMultipartUpload)[id=s3-concepts-xml-specs-abort-incomplete-multipart-upload-api]}
+
+{ifdef(s3-pdf)}
+AbortIncompleteMultipartUpload деректер түрлерінің сипаттамасы {linkto(#tab_abort_incomplete_multipart_upload_api)[text=%number кестеде]} келтірілген.
+
+{caption(Кесте {counter(table)[id=numb_tab_abort_incomplete_multipart_upload_api]} — AbortIncompleteMultipartUpload)[align=right;position=above;id=tab_abort_incomplete_multipart_upload_api;number={const(numb_tab_abort_incomplete_multipart_upload_api)}]}
+{/endif}
+[cols="2,6,4,2", options="header"]
+|===
+|Атауы
+|Сипаттама
+|Түрі
+|Міндетті
+
+|DaysAfterInitiation
+|Құрамдас жүктеуді инициализациялаудан кейінгі күндер саны, осы мерзім өткеннен кейін аяқталмаған құрамдас жүктеу үзіледі, ал барлық жүктелген бөліктер жойылады
+|Integer
+| ![](../../assets/no.svg "inline")
+|===
+{ifdef(s3-pdf)}
+{/caption}
+{/endif}
 
 ## {heading(LifecycleRule)[id=s3-concepts-xml-specs-lifecyclerule-api]}
 
@@ -653,6 +676,11 @@ LifecycleRule деректер түрлерінің сипаттамасы {link
 |{linkto(#s3-concepts-xml-specs-lifecycle-api)[text=%text]}
 | ![](../../assets/no.svg "inline")
 
+|AbortIncompleteMultipartUpload
+|Аяқталмаған құрамдас жүктеудің басталуынан бері өткен күндер санын көрсетеді, осы мерзім өткеннен кейін {var(s3)} жүктеудің барлық бөліктерін қайтарымсыз жояды
+|{linkto(#s3-concepts-xml-specs-abort-incomplete-multipart-upload-api)[text=%text]}
+| ![](../../assets/no.svg "inline")
+
 |===
 {ifdef(s3-pdf)}
 {/caption}
@@ -661,10 +689,6 @@ LifecycleRule деректер түрлерінің сипаттамасы {link
 <!--- //|Transition -->
 <!--- //|Указывает, когда объект переходит к указанному классу хранилища -->
 <!--- //|Array of {linkto(#xml_Transition)[text=%text]} -->
-<!--- // ![](../../assets/no.svg "inline") -->
-<!--- //|AbortIncompleteMultipartUpload -->
-<!--- //|Указывает количество дней с начала незавершенной многокомпонентной загрузки, по истечении которых {var(s3)} безвозвратно удаляет все части загрузки -->
-<!--- //|AbortIncompleteMultipartUpload -->
 <!--- // ![](../../assets/no.svg "inline") -->
 
 ## {heading(LifecycleRuleFilter)[id=s3-concepts-xml-specs-lifecyclerulefilter-api]}
