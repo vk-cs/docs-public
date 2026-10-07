@@ -181,6 +181,180 @@
 
 {/tabs}
 
+## {heading(Бакетті нұсқалауды басқару)[id=s3-instructions-manage-bucket-versioning]}
+
+{var(s3)} бакет объектілерінің өзгеру тарихын сақтау, сондай-ақ оларды кездейсоқ жойылудан немесе қайта жазылудан қорғау үшін {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауды]} қосуға мүмкіндік береді.
+
+{note:warn}
+Нұсқалауды қосқаннан кейін оны өшіру мүмкін емес, тек уақытша тоқтата тұруға болады.
+{/note}
+
+{tabs}
+
+{tab(Жеке кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. IAM Only жеке кабинетіне {linkto(../../iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+
+{/ifdef}
+
+1. Қажетті бакет орналасқан жобаны таңдаңыз.
+1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
+1. Бакет баптауларына келесі тәсілдердің бірімен өтіңіз:
+
+   - Қажетті бакет үшін ![ ](../../../assets/more-icon.svg "inline") түймесін басып, **Баптаулар** тармағын таңдаңыз.
+   - Қажетті бакеттің атауын басыңыз, содан кейін бакет бетінде ![ ](../../../assets/settings-icon.svg "inline") түймесін басыңыз.
+
+1. **Нұсқалау** қойындысына өтіңіз.
+1. Ауыстырып-қосқыш көмегімен нұсқалауды қосыңыз немесе тоқтата тұрыңыз.
+
+   Егер объектілерді бұғаттау қосылған болса, бакетті нұсқалауды тоқтата тұру мүмкін емес.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Консольде қажетті әрекетті орындаңыз:
+
+   {tabs}
+
+   {tab(Қосу)}
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --versioning-configuration Status=Enabled \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — нұсқалау статусын өзгерту қажет бакеттің атауы.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   {cut(Нұсқалауды қосу командасының мысалы)}
+
+   Команда мысалы:
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket my-bucket \
+      --versioning-configuration Status=Enabled \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Команда жауап қайтармайды.
+
+   {/cut}
+
+   {/tab}
+
+   {tab(Тоқтата тұру)}
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --versioning-configuration Status=Suspended \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — нұсқалау статусын өзгерту қажет бакеттің атауы.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   {cut(Нұсқалауды тоқтата тұру командасының мысалы)}
+
+   Команда мысалы:
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket my-bucket \
+      --versioning-configuration Status=Suspended \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Команда жауап қайтармайды.
+
+   {/cut}
+
+   {/tab}
+
+   {tab(Статусын білу)}
+
+   ```console
+   aws s3api get-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — нұсқалау статусын білу қажет бакеттің атауы.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   {cut(Команда және жауап мысалы)}
+
+   Команда мысалы:
+
+   ```console
+   aws s3api get-bucket-versioning \
+      --bucket my-bucket \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Жауап мысалы:
+
+   ```json
+   {
+       "Status": "Enabled"
+   }
+   ```
+
+   Егер бакеттің нұсқалауы қосылмаған болса, жауапта `Status` өрісі болмайды.
+
+   {/cut}
+
+   {/tab}
+
+   {/tabs}
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Доменді байланыстыру)[id=s3-instructions-manage-bucket-domain]}
 
 Доменді бакетке байланыстыру бакет объектілеріне доменіңіз арқылы қол жеткізуге, сондай-ақ бакетті сайтыңыздың репозиторийі ретінде пайдалануға мүмкіндік береді.

@@ -172,6 +172,108 @@
 
 {/tabs}
 
+## {heading(Объект нұсқаларын қарау)[id=s3-instructions-manage-object-list-versions]}
+
+Егер бакет үшін {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған болса, объектінің барлық нұсқаларын, соның ішінде {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=жою маркерлерін]} қарауға болады.
+
+{tabs}
+
+{tab(Жеке кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. IAM Only жеке кабинетіне {linkto(../../iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+
+{/ifdef}
+
+1. Бакет орналасқан жобаны таңдаңыз.
+1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
+1. Бакет атауын басыңыз.
+1. **Объект нұсқаларын көрсету** опциясын қосыңыз.
+
+   Объектілер тізімінде барлық объект нұсқалары пайда болады, ал **Нұсқа ID** бағанында оның {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификаторы]} көрсетіледі.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Консольде команданы орындаңыз:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket <ИМЯ_БАКЕТА> \
+      --prefix <ПУТЬ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — нұсқаларын қарау қажет объект орналасқан бакеттің атауы.
+   - (Опционально) `--prefix` — объектілерді сүзгілеу қажет кілт префиксі. Мысалы: `image/`, `pre/`, `image/photo`.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   {cut(Команда және жауап мысалы)}
+
+   Команда мысалы:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket my-bucket \
+      --prefix folder/ \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Жауап мысалы:
+
+   ```json
+   {
+       "Versions": [
+           {
+               "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+               "Size": 13204976,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+               "IsLatest": true,
+               "LastModified": "2023-10-05T14:38:16+00:00"
+           },
+           {
+               "ETag": "\"1efbf0a935e6f74ba1ca884a53194b46\"",
+               "Size": 12984512,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "QUpfdndhfd8438MNFDNvssklpaTBGxxE",
+               "IsLatest": false,
+               "LastModified": "2023-09-27T11:48:56+00:00"
+           }
+       ],
+       "DeleteMarkers": []
+   }
+   ```
+
+   {/cut}
+
+`list-object-versions` командасы үшін қолжетімді параметрлердің сипаттамасы [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-object-versions.html) берілген.
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Объект қасиеттерін қарау)[id=s3-instructions-manage-object-view]}
 
 {tabs}
@@ -204,6 +306,64 @@
    - **Объектке сілтеме** — объектіні жүктеп алу сілтемесі. Сілтемені оның оң жағындағы ![Копировать](assets/copy-icon.svg "inline") белгішесін басып көшіруге болады.
    - **ETag** — {linkto(../../../concepts/features#s3-concepts-features-object-uploading)[text=құрамдас жүктеу]} кезінде тұтастығын тексеру үшін қолданылатын объектінің бақылау сомасы. Бақылау сомасын оның оң жағындағы ![Копировать](assets/copy-icon.svg "inline") белгішесін басып көшіруге болады.
    - **Файлға қол жеткізу** — объектіге тағайындалған {linkto(../../../concepts/access/s3-acl#s3-concepts-acl)[text=қол жеткізуді басқару тізімі (ACL)]}.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Консольде команданы орындаңыз:
+
+   ```console
+   aws s3api head-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
+
+   {cut(Команда және жауап мысалы)}
+
+   Команда мысалы:
+
+   ```console
+   aws s3api head-object \
+      --bucket my-bucket \
+      --key folder/my-object.exe \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Жауап мысалы:
+
+   ```json
+   {
+     "LastModified": "2023-10-05T14:38:16+00:00",
+     "ContentLength": 13204976,
+     "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+     "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+     "ContentType": "application/x-msdownload",
+     "Metadata": {}
+   }
+   ```
+
+   {/cut}
+
+`head-object` командасы үшін қолжетімді параметрлердің сипаттамасы [AWS CLI ресми құжаттамасында](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) берілген.
 
 {/tab}
 
@@ -261,7 +421,30 @@
 1. Консольді ашып, объектіні жүктеп алу қажет директорияға өтіңіз.
 1. Команданы орындаңыз:
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=get_object]}
+   ```console
+   aws s3api get-object \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --version-id <ID_ВЕРСИИ> \
+     <ИМЯ_ФАЙЛА> \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — нұсқалауы бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
+   - `<ИМЯ_ФАЙЛА>` — жүктеп алынған файлға берілетін атау.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
 
    {cut(Объектіні жүктеп алу командасының мысалы)}
 
@@ -717,6 +900,7 @@
    aws s3api get-object-tagging \
       --bucket <ИМЯ_БАКЕТА> \
       --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -724,6 +908,7 @@
 
    - `<ИМЯ_БАКЕТА>` — бакет жасалған кезде берілген атау.
    - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
 
@@ -768,7 +953,7 @@
 
    ```console
    aws s3api copy-object \
-      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА> \
+      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>?versionId=<ID_ВЕРСИИ> \
       --bucket <ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ> \
       --key <КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ> \
       --tagging-directive COPY \
@@ -779,6 +964,7 @@
 
    - `<ИМЯ_БАКЕТА_ИСТОЧНИКА>` — объектіні көшіру қажет бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>` — көшірілетін объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `?versionId=<ID_ВЕРСИИ>` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
    - `<ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ>` — объектіні көшіру қажет бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ>` — объект көшірмесінің толық атауы, оған дейінгі жолды қоса. Атауларды таңдағанда {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=ұсынымдарды]} ұстаныңыз.
      {ifdef(public)}
@@ -808,7 +994,7 @@
 
    ```console
    aws s3api copy-object \
-      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА> \
+      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>?versionId=<ID_ВЕРСИИ> \
       --bucket <ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ> \
       --key <КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ> \
       --tagging-directive REPLACE \
@@ -820,6 +1006,7 @@
 
    - `<ИМЯ_БАКЕТА_ИСТОЧНИКА>` — объектіні көшіру қажет бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>` — көшірілетін объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `?versionId=<ID_ВЕРСИИ>` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
    - `<ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ>` — объектіні көшіру қажет бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ>` — объект көшірмесінің толық атауы, оған дейінгі жолды қоса. Атауларды таңдағанда {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=ұсынымдарды]} ұстаныңыз.
    - `<ТЕГИ>` — `<КЛЮЧ_1>=<ЗНАЧЕНИЕ_1>&...<КЛЮЧ_N>=<ЗНАЧЕНИЕ_N>` форматындағы тегтер. Мысалы: `Key1=Value1&Key2=Value2`.
@@ -923,6 +1110,7 @@
             }
          ]
       }' \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -931,6 +1119,7 @@
    - `<ИМЯ_БАКЕТА>` — бакет жасалған кезде берілген атау.
    - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
    - `<КЛЮЧ_ТЕГА_1>`, `<ЗНАЧЕНИЕ_ТЕГА_1>` және `<КЛЮЧ_ТЕГА_2>`, `<ЗНАЧЕНИЕ_ТЕГА_2>` — объект тегтері үшін кілт/мән жұптары.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
     
@@ -960,6 +1149,7 @@
    aws s3api delete-object-tagging \
       --bucket <ИМЯ_БАКЕТА> \
       --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -967,6 +1157,7 @@
 
    - `<ИМЯ_БАКЕТА>` — бакет жасалған кезде берілген атау.
    - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
     
@@ -1043,13 +1234,97 @@
 
    {tab(Бір объектіні жою)}
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_rm-single]}
+   ```console
+   aws s3api delete-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}.
+
+      {note:warn}
+      Көрсетілген нұсқа жалғыз болса, объект қайтарымсыз, қалпына келтіру мүмкіндігінсіз жойылады. Толығырақ — {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=%text]} бөлімінде.
+      {/note}
+
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
 
    {/tab}
 
    {tab(Бірнеше объектіні жою)}
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_rm-multiple]}
+   1. Қандай файлдар жойылатынын тексеріңіз:
+
+      ```console
+      aws s3 rm s3://<ИМЯ_БАКЕТА>/<ПРЕФИКС> --recursive --dryrun --endpoint-url <ENDPOINT_URL>
+      ```
+
+   1. Егер жойылатын файлдар тізімі дұрыс болса, жоюды орындаңыз:
+
+      ```console
+      aws s3 rm s3://<ИМЯ_БАКЕТА>/<ПРЕФИКС> --recursive --endpoint-url <ENDPOINT_URL>
+      ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+   - `<ПРЕФИКС>` — жою қажет объект кілттерінің барлығына ортақ префикс. Бос префикс көрсетілсе, бакеттегі барлық объектілер жойылады.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
+
+   {/tab}
+
+   {tab(Объект нұсқасын жою)}
+
+   ```console
+   aws s3api delete-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}.
+
+      {note:warn}
+      Көрсетілген нұсқа жалғыз болса, объект қайтарымсыз, қалпына келтіру мүмкіндігінсіз жойылады. Толығырақ — {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=%text]} бөлімінде.
+      {/note}
+
+      Егер {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=жою маркері]} болып табылатын объект нұсқасы көрсетілсе, алдыңғы нұсқа ағымдағы нұсқаға айналады.
+
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+     {/ifdef}
 
    {/tab}
 

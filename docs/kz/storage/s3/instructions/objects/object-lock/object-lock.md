@@ -18,6 +18,7 @@
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Қажетті бакет орналасқан жобаны таңдаңыз.
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 1. Бакет баптауларына келесі тәсілдердің бірімен өтіңіз:
@@ -25,7 +26,6 @@
    - Қажетті бакет үшін ![ ](../../../assets/more-icon.svg "inline") түймесін басып, **Баптаулар** тармағын таңдаңыз.
    - Қажетті бакеттің атауын басыңыз, содан кейін бакет бетінде ![ ](../../../assets/settings-icon.svg "inline") түймесін басыңыз.
 
-1. **Нұсқалау** қойындысына өтіңіз. Оның қосылғанына көз жеткізіңіз.
 1. **Бұғаттау** қойындысына өтіңіз.
 1. Егер бұл бұрын жасалмаған болса, объектілерді бұғаттауды қосыңыз.
 1. **Әдепкі бойынша объектілерді бұғаттау** опциясын қосыңыз.
@@ -42,6 +42,7 @@
 {tab(AWS CLI)}
 
 1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Консольді ашып, бұғаттаумен қажетті әрекетті орындаңыз:
 
    {tabs}
@@ -50,7 +51,39 @@
       
    Әдепкі уақытша бұғаттауды орнату үшін команданы орындаңыз:
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=configuration_lock_object]}
+   ```console
+   aws s3api put-object-lock-configuration \
+     --bucket <ИМЯ_БАКЕТА> \
+     --object-lock-configuration '{
+       "ObjectLockEnabled": "Enabled",
+       "Rule": {
+         "DefaultRetention": {
+           "Mode": "<РЕЖИМ_БЛОКИРОВКИ>",
+           "Days": <СРОК_БЛОКИРОВКИ>
+         }
+       }
+     }' \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — бакет атауы.
+   - `<РЕЖИМ_БЛОКИРОВКИ>` — бұғаттау режимі:
+
+     - `GOVERNANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=басқарылатын режим]};
+     - `COMPLIANCE` — {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң режим]}.
+
+   - `<СРОК_БЛОКИРОВКИ>` — объект жүктелген сәттен бастап күндермен (`Days`) немесе жылдармен (`Years`) бұғаттау мерзімі. `Days` және `Years` мәндерін бір уақытта көрсетуге болмайды. Мысал: `1825` күн (5 жыл).
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
 
    {cut(Команда мысалы)}
 
@@ -180,11 +213,12 @@
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Қажетті бакет орналасқан жобаны таңдаңыз.
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 1. Бакет атауын басыңыз.
 1. Объект атауын басыңыз.
-1. **Нұсқалау** қойындысына өтіңіз. Оның қосылғанына көз жеткізіңіз.
+1. **Нұсқалау** қойындысына өтіңіз. Оның {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосылғанына]} көз жеткізіңіз.
 1. **Бұғаттау** қойындысына өтіңіз.
 1. Егер бұл бұрын жасалмаған болса, объектілерді бұғаттауды қосыңыз.
 1. ![ ](../../../assets/settings-sliders.svg "inline") белгішесін басыңыз.
@@ -196,6 +230,7 @@
 {tab(AWS CLI)}
 
 1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Консольді ашып, бұғаттаумен қажетті әрекетті орындаңыз.
 
    {tabs}
@@ -260,7 +295,27 @@
     
    Бакетте орналасқан объект үшін мерзімсіз бұғаттауды орнату үшін команданы орындаңыз:
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_legal_hold]}
+   ```console
+   aws s3api put-object-legal-hold \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --legal-hold Status=ON \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
 
    {cut(Команда мысалы)}
 
@@ -329,7 +384,26 @@
     
    Объектінің мерзімсіз бұғаттау күйін білу үшін команданы орындаңыз:
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_state_legal_hold]}
+   ```console
+   aws s3api get-object-legal-hold \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — бакет атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
 
    {cut(Команда мысалы)}
 
@@ -375,11 +449,12 @@
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Қажетті бакет орналасқан жобаны таңдаңыз.
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
 1. Бакет атауын басыңыз.
 1. Объект атауын басыңыз.
-1. **Нұсқалау** қойындысына өтіңіз. Оның қосылғанына көз жеткізіңіз.
+1. **Нұсқалау** қойындысына өтіңіз. Оның {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосылғанына]} көз жеткізіңіз.
 1. **Бұғаттау** қойындысына өтіңіз.
 1. Егер бұл бұрын жасалмаған болса, объектілерді бұғаттауды қосыңыз.
 1. ![ ](../../../assets/settings-sliders.svg "inline") белгішесін басыңыз.
@@ -397,6 +472,7 @@
 {tab(AWS CLI)}
 
 1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер бұл бұрын жасалмаған болса, нұсқалауды {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=қосыңыз]}.
 1. Консольді ашып, бұғаттаумен қажетті әрекетті орындаңыз.
 
    {tabs}
@@ -585,7 +661,28 @@
     
    {tab(Күйін білу)}
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_state]}
+   Объектінің уақытша бұғаттау статусын білу үшін келесі команданы орындаңыз:
+
+   ```console
+   aws s3api get-object-retention \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+     {/ifdef}
 
    {cut(Команда мысалы)}
 
@@ -655,6 +752,7 @@
     aws s3api delete-object \
       --bucket <ИМЯ_БАКЕТА> \
       --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
       --bypass-governance-retention \
       --endpoint-url <ENDPOINT_URL>
     ```
@@ -663,6 +761,13 @@
 
     - `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакеттің атауы.
     - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+    - (Міндетті емес) `<ID_ВЕРСИИ>` — жоюға қажет объектінің бұғатталған нұсқасының {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, жоюдың орнына объектінің ағымдағы нұсқасы болатын {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=жою маркері]} жасалады. Алдыңғы нұсқа бакетте қалады. Толығырақ — {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=Объектіні немесе оның нұсқасын жою]} бөлімінде.
+
+      {note:warn}
+      Егер көрсетілген нұсқа жалғыз болса, объект қалпына келтіру мүмкіндігінсіз, қайтарымсыз жойылады. Толығырақ — {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=%text]} бөлімінде.
+      {/note}
+
+      Егер {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=жою маркері]} болып табылатын объект нұсқасы көрсетілсе, алдыңғы нұсқа ағымдағы нұсқаға айналады.
 
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
@@ -684,6 +789,7 @@
     aws s3api delete-object \
       --bucket my-bucket-with-lock \
       --key images/image2.png \
+      --version-id e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic \
       --bypass-governance-retention \
       --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
     ```

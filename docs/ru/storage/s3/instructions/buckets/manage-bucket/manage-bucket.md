@@ -68,7 +68,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    {cut(Пример команды просмотра списка бакетов)}
@@ -179,6 +179,180 @@
 
 {/tabs}
 
+## {heading(Управление версионированием бакета)[id=s3-instructions-manage-bucket-versioning]}
+
+{var(s3)} позволяет включить {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионирование]} объектов бакета, чтобы хранить историю их изменений и защититься от случайного удаления или перезаписи.
+
+{note:warn}
+После включения версионирования отключить его невозможно, только приостановить.
+{/note}
+
+{tabs}
+
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, в котором находится нужный бакет.
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Перейдите в настройки бакета одним из способов:
+
+   - Нажмите ![ ](../../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
+   - Нажмите на имя нужного бакета, затем на странице бакета нажмите кнопку ![ ](../../../assets/settings-icon.svg "inline").
+
+1. Перейдите на вкладку **Версионирование**.
+1. Включите или приостановите версионирование с помощью переключателя.
+
+   Версионирование бакета нельзя приостановить, если включена блокировка объектов.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
+1. Откройте консоль и выполните нужное действие:
+
+   {tabs}
+
+   {tab(Включить)}
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --versioning-configuration Status=Enabled \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно изменить статус версионирования.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды включения версионирования)}
+
+   Пример команды:
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket my-bucket \
+      --versioning-configuration Status=Enabled \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Команда не выводит ответа.
+
+   {/cut}
+
+   {/tab}
+
+   {tab(Приостановить)}
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --versioning-configuration Status=Suspended \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно изменить статус версионирования.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды приостановки версионирования)}
+
+   Пример команды:
+
+   ```console
+   aws s3api put-bucket-versioning \
+      --bucket my-bucket \
+      --versioning-configuration Status=Suspended \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Команда не выводит ответа.
+
+   {/cut}
+
+   {/tab}
+
+   {tab(Узнать статус)}
+
+   ```console
+   aws s3api get-bucket-versioning \
+      --bucket <ИМЯ_БАКЕТА> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, статус версионирования которого нужно узнать.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды и ответа)}
+
+   Пример команды:
+
+   ```console
+   aws s3api get-bucket-versioning \
+      --bucket my-bucket \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+       "Status": "Enabled"
+   }
+   ```
+
+   Если версионирование бакета не включалось, ответ не содержит поля `Status`.
+
+   {/cut}
+
+   {/tab}
+
+   {/tabs}
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Привязка домена)[id=s3-instructions-manage-bucket-domain]}
 
 Привязка домена к бакету позволит получить доступ к объектам бакета через ваш домен, а также использовать бакет в качестве репозитория вашего сайта.
@@ -261,7 +435,7 @@
        - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
        {/ifdef}
        {ifdef(s3,s3-pdf)}
-     - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+     - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
        {/ifdef}
 
    {cut(Пример команды обновления локальной директории в соответствии с бакетом)}
@@ -375,7 +549,7 @@
 
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    {cut(Пример команды удаления бакета и всех объектов в нем)}

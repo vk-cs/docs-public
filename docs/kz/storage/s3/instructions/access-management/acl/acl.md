@@ -58,12 +58,13 @@
 1. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api get-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --endpoint-url <ENDPOINT_URL>
+   aws s3api get-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --version-id <ID_ВЕРСИИ> --endpoint-url <ENDPOINT_URL>
    ```
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 
@@ -272,13 +273,14 @@
 1. Консольде команданы орындаңыз:
 
    ```console
-   aws s3api put-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --access-control-policy file://<ИМЯ_ФАЙЛА>.json --endpoint-url <ENDPOINT_URL>
+   aws s3api put-object-acl --bucket <ИМЯ_БАКЕТА> --key <КЛЮЧ_ОБЪЕКТА> --access-control-policy file://<ИМЯ_ФАЙЛА>.json --version-id <ID_ВЕРСИИ> --endpoint-url <ENDPOINT_URL>
    ```
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
    - `<ИМЯ_ФАЙЛА>` — ACL конфигурациясы бар файлдың атауы.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 
@@ -344,6 +346,7 @@
      --bucket <ИМЯ_БАКЕТА> \
      --key <КЛЮЧ_ОБЪЕКТА> \
      --acl <ПРЕДОПРЕДЕЛЕННЫЙ_ACL> \
+     --version-id <ID_ВЕРСИИ> \
      --endpoint-url <ENDPOINT_URL>
    ```
 
@@ -352,6 +355,7 @@
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
    - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — объект үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]} атауы.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 
@@ -386,6 +390,7 @@
      --endpoint-url <ENDPOINT_URL> \
      --bucket <ИМЯ_БАКЕТА> \
      --key <КЛЮЧ_ОБЪЕКТА> \
+     --version-id <ID_ВЕРСИИ> \
      <ВИД_РАЗРЕШЕНИЯ> <ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>
    ```
 
@@ -402,6 +407,7 @@
      - `--grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
 
    - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 

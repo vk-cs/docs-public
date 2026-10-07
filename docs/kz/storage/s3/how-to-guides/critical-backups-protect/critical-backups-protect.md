@@ -12,15 +12,58 @@ AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған �
 
 1. Жаңа бакет жасаңыз:
 
-   {include(../../_includes/_s3-manage-bucket.md)[tags=create_bucke,create_bucket_guide]}
+   ```console
+   aws s3api create-bucket \
+       --bucket <ИМЯ_БАКЕТА> \
+       --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — {linkto(../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес бакет атауы.
+
+     Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
+
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
 1. {linkto(../../concepts/versioning#s3-concepts-versioning)[text=Нұсқалауды]} қосыңыз:
 
-   {include(../../_includes/_s3-manage-bucket.md)[tags=version_bucket]}
+   ```console
+   aws s3api put-bucket-versioning \
+     --bucket <ИМЯ_БАКЕТА> \
+     --versioning-configuration Status=Enabled \
+     --endpoint-url <ENDPOINT_URL>  
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — бакет атауы.
+   - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
 1. {linkto(../../concepts/objects-lock#s3-concepts-object-lock)[text=Объектілерді бұғаттауды]} қосыңыз:
 
-   {include(../../_includes/_s3-manage-object.md)[tags=object_config_block]}
+   ```console
+   aws s3api put-object-lock-configuration \
+     --bucket <ИМЯ_БАКЕТА> \
+     --object-lock-configuration '{
+       "ObjectLockEnabled": "Enabled"
+       }' \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ИМЯ_БАКЕТА>` — бакет атауы.
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
 
 ## {heading(2. Объектіні жүктеп, оған бұғаттауды орнатыңыз)[id=s3-critical-backups-protect-download]}
 
@@ -33,11 +76,46 @@ AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған �
 
 1. Объектіні уақытша бұғаттауды {linkto(../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң режимде]} (`COMPLIANCE`) орната отырып жүктеңіз:
 
-   {include(../../_includes/_s3-manage-object.md)[tags=put_object]}
+   ```console
+   aws s3api put-object \
+     --body <ПУТЬ> \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --object-lock-mode COMPLIANCE \
+     --object-lock-retain-until-date "<СРОК_БЛОКИРОВКИ>" \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Мұнда:
+
+   - `<ПУТЬ>` — сақтау мерзімін өзгерту қажет объектілер орналасқан директорияға дейінгі жол.
+   - `<ИМЯ_БАКЕТА>` — бакет атауы.
+   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<СРОК_БЛОКИРОВКИ>` — [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) форматындағы бұғаттаудың аяқталу күні мен уақыты. Мысал: `2030-01-01T00:00:00.000Z`.
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+     - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
 
 ## {heading(3. Бұғаттаудың қолданылғанына көз жеткізіңіз)[id=s3-critical-backups-protect-block-on]}
 
-{include(../../_includes/_s3-manage-object.md)[tags=object_state]}
+Объектінің уақытша бұғаттау статусын білу үшін келесі команданы орындаңыз:
+
+```console
+aws s3api get-object-retention \
+  --bucket <ИМЯ_БАКЕТА> \
+  --key <КЛЮЧ_ОБЪЕКТА> \
+  --endpoint-url <ENDPOINT_URL>
+```
+
+Мұнда:
+
+- `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+- `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+  - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+  - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
 
 Жауапта бұғаттау режимін және аяқталу күнін растайтын JSON-құрылым болуы тиіс.
 
@@ -45,7 +123,23 @@ AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған �
 
 Объектіні жоюға әрекет жасап көріңіз:
 
-{include(../../_includes/_s3-manage-object.md)[tags=object_rm-single]}
+```console
+aws s3api delete-object \
+   --bucket <ИМЯ_БАКЕТА> \
+   --key <КЛЮЧ_ОБЪЕКТА> \
+   --version-id <ID_ВЕРСИИ> \
+   --endpoint-url <ENDPOINT_URL>
+```
+
+Мұнда:
+
+- `<ИМЯ_БАКЕТА>` — объект орналасқан бакет атауы.
+- `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
+- `<ID_ВЕРСИИ>` — {linkto(../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқаның идентификаторы]}. Объект {linkto(../../concepts/versioning#s3-concepts-versioning)[text=нұсқалауы]} қосылған бакетте орналасқан.
+- `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+  - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+  - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
 Жауап ретінде `Access Denied` қатесі келуі тиіс. Бұл белсенді WORM-қорғауды растайды.
 
@@ -53,6 +147,24 @@ AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған �
 
 Объектіні жүктеп алыңыз:
 
-{include(../../_includes/_s3-manage-object.md)[tags=get_object]}
+```console
+aws s3api get-object \
+  --bucket <ИМЯ_БАКЕТА> \
+  --key <КЛЮЧ_ОБЪЕКТА> \
+  --version-id <ID_ВЕРСИИ> \
+  <ИМЯ_ФАЙЛА> \
+  --endpoint-url <ENDPOINT_URL>
+```
+
+Мұнда:
+
+- `<ИМЯ_БАКЕТА>` — қажетті объект орналасқан бакет атауы.
+- `<КЛЮЧ_ОБЪЕКТА>` — объект атауы және оған дейінгі жол, егер каталогтар болса, оларды қоса.
+- `<ID_ВЕРСИИ>` — {linkto(../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқаның идентификаторы]}. Нұсқалау қосылған бакеттегі объект. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа пайдаланылады.
+- `<ИМЯ_ФАЙЛА>` — жүктеп алынған файлға берілетін атау.
+- `<ENDPOINT_URL>` — аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+
+  - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
+  - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
 
 Объект оқу және жүктеп алу үшін қолжетімді болып қалады, бұл оны қалпына келтіру үшін пайдалануға мүмкіндік береді.
