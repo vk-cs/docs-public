@@ -86,7 +86,29 @@
 1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
 1. Откройте консоль и выполните команду:
 
-    {include(../../../_includes/_s3-manage-bucket.md)[tags=create_bucket,create_bucket_instruction]}
+    ```console
+    aws s3api create-bucket \
+        --bucket <ИМЯ_БАКЕТА> \
+        --endpoint-url <ENDPOINT_URL> \
+        --region <КОД_РЕГИОНА>
+    ```
+
+    Здесь:
+
+    - `<ИМЯ_БАКЕТА>` — имя бакета, соответствующее {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=рекомендуемым правилам]}.
+
+        После создания бакета изменить его имя будет невозможно.
+
+    {ifdef(public)}
+    - `<ENDPOINT_URL>` — домен сервиса VK Object Storage, должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+        - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+    {/ifdef}
+    {ifdef(s3,s3-pdf)}
+    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое было указано при установке сервиса.
+    {/ifdef}
+    - `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk`{ifdef(public)} для региона Москва. Доступные значения приведены в {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=описании API сервиса VK Object Storage]}{/ifdef}.
 
     Пример команды создания бакета:
 
@@ -162,7 +184,7 @@
         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
     {/ifdef}
     {ifdef(s3,s3-pdf)}
-    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
     {/ifdef}
     - `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk`{ifdef(public)} для региона Москва. Доступные значения приведены в {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=описании API сервиса {var(s3)}]}{/ifdef}.
 
@@ -204,7 +226,7 @@
         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
     {/ifdef}
     {ifdef(s3,s3-pdf)}
-    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
     {/ifdef}
     - `<КОД_РЕГИОНА>` — код региона аккаунта, например `ru-msk`{ifdef(public)} для региона Москва. Доступные значения приведены в {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=описании API сервиса {var(s3)}]}{/ifdef}.
 

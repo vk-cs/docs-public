@@ -53,7 +53,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
   {cut(Пример команды просмотра списка объектов)}
@@ -170,6 +170,108 @@
 
 {/tabs}
 
+## {heading(Просмотр версий объектов)[id=s3-instructions-manage-object-list-versions]}
+
+Если для бакета включено {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионирование]}, вы можете просмотреть все версии объектов, включая {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=маркеры удаления]}.
+
+{tabs}
+
+{tab(Личный кабинет{ifdef(s3,s3-pdf)} IAM Only{/ifdef})}
+
+{ifdef(public)}
+
+1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+
+{/ifdef}
+
+1. Выберите проект, в котором находится нужный бакет.
+1. Перейдите в раздел **Object Storage** → **Бакеты**.
+1. Нажмите на имя бакета.
+1. Включите опцию **Показать версии объектов**.
+
+   В списке объектов появятся все версии объектов, а в столбце **ID версии** будет указан ее {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор]}.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
+1. В консоли выполните команду:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket <ИМЯ_БАКЕТА> \
+      --prefix <ПУТЬ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, версии объектов которого нужно просмотреть.
+   - (Опционально) `--prefix` — префикс ключа, по которому нужно отфильтровать объекты. Например: `image/`, `pre/`, `image/photo`.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды и ответа)}
+
+   Пример команды:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket my-bucket \
+      --prefix folder/ \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+       "Versions": [
+           {
+               "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+               "Size": 13204976,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+               "IsLatest": true,
+               "LastModified": "2023-10-05T14:38:16+00:00"
+           },
+           {
+               "ETag": "\"1efbf0a935e6f74ba1ca884a53194b46\"",
+               "Size": 12984512,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "QUpfdndhfd8438MNFDNvssklpaTBGxxE",
+               "IsLatest": false,
+               "LastModified": "2023-09-27T11:48:56+00:00"
+           }
+       ],
+       "DeleteMarkers": []
+   }
+   ```
+
+   {/cut}
+
+Описание всех параметров команды `list-object-versions` доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-object-versions.html).
+
+{/tab}
+
+{/tabs}
+
 ## {heading(Просмотр свойств объекта)[id=s3-instructions-manage-object-view]}
 
 {tabs}
@@ -202,6 +304,64 @@
    - **Ссылка на объект** — ссылка на скачивание объекта. Ссылку можно скопировать, нажав на значок ![Копировать](assets/copy-icon.svg "inline") справа от нее.
    - **ETag** — контрольная сумма объекта, используемая для проверки его целостности при {linkto(../../../concepts/features#s3-concepts-features-object-uploading)[text=составной загрузке]}. Контрольную сумму можно скопировать, нажав на значок ![Копировать](assets/copy-icon.svg "inline") справа от нее.
    - **Доступ к файлу** — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl)[text=список управления доступом (ACL)]} назначенный объекту.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Установите и настройте {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}, если он еще не установлен.
+1. В консоли выполните команду:
+
+   ```console
+   aws s3api head-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположен объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `--version-id` не указан, будет использована текущая версия.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
+
+   {cut(Пример команды и ответа)}
+
+   Пример команды:
+
+   ```console
+   aws s3api head-object \
+      --bucket my-bucket \
+      --key folder/my-object.exe \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Пример ответа:
+
+   ```json
+   {
+     "LastModified": "2023-10-05T14:38:16+00:00",
+     "ContentLength": 13204976,
+     "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+     "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+     "ContentType": "application/x-msdownload",
+     "Metadata": {}
+   }
+   ```
+
+   {/cut}
+
+Описание всех параметров команды `head-object` доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html).
 
 {/tab}
 
@@ -259,7 +419,30 @@
 1. Откройте консоль и перейдите в директорию, в которую нужно скачать объект.
 1. Выполните команду:
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=get_object]}
+   ```console
+   aws s3api get-object \
+     --bucket <ИМЯ_БАКЕТА> \
+     --key <КЛЮЧ_ОБЪЕКТА> \
+     --version-id <ID_ВЕРСИИ> \
+     <ИМЯ_ФАЙЛА> \
+     --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — имя объекта и путь до него, включая директории, если они есть.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с версионированием. Если параметр `--version-id` не указан, будет использована текущая версия.
+   - `<ИМЯ_ФАЙЛА>` — имя, которое будет присвоено скачанному файлу.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое было указано при установке сервиса.
+     {/ifdef}
 
    {cut(Пример команды скачивания объекта)}
 
@@ -454,7 +637,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    {cut(Пример команды настройки доступа к объекту)}
@@ -493,7 +676,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    Время модификации объектов обновится. Учитывайте это при управлении жизненным циклом (lifecycle) объектов и использовании условных запросов (`if-modified-since`).
@@ -550,7 +733,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    {cut(Пример команды копирования одного объекта в другой бакет)}
@@ -715,6 +898,7 @@
    aws s3api get-object-tagging \
       --bucket <ИМЯ_БАКЕТА> \
       --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -722,6 +906,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, присвоенное ему при создании.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `--version-id` не указан, будет использована текущая версия.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
@@ -729,7 +914,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    Пример ответа:
@@ -766,7 +951,7 @@
 
    ```console
    aws s3api copy-object \
-      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА> \
+      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>?versionId=<ID_ВЕРСИИ> \
       --bucket <ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ> \
       --key <КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ> \
       --tagging-directive COPY \
@@ -777,6 +962,7 @@
 
    - `<ИМЯ_БАКЕТА_ИСТОЧНИКА>` — имя бакета, из которого нужно скопировать объект.
    - `<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>` — полное имя копируемого объекта, включая путь до него.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `?versionId=<ID_ВЕРСИИ>` не указан, будет использована текущая версия.
    - `<ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ>` — имя бакета, в который нужно скопировать объект.
    - `<КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ>` — полное имя для копии объекта, включая путь до него. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имен.
      {ifdef(public)}
@@ -786,7 +972,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
 {/tab}
@@ -806,7 +992,7 @@
 
    ```console
    aws s3api copy-object \
-      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА> \
+      --copy-source <ИМЯ_БАКЕТА_ИСТОЧНИКА>/<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>?versionId=<ID_ВЕРСИИ> \
       --bucket <ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ> \
       --key <КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ> \
       --tagging-directive REPLACE \
@@ -818,6 +1004,7 @@
 
    - `<ИМЯ_БАКЕТА_ИСТОЧНИКА>` — имя бакета, из которого нужно скопировать объект.
    - `<КЛЮЧ_ОБЪЕКТА_ИСТОЧНИКА>` — полное имя копируемого объекта, включая путь до него.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `?versionId=<ID_ВЕРСИИ>` не указан, будет использована текущая версия.
    - `<ИМЯ_БАКЕТА_НАЗНАЧЕНИЯ>` — имя бакета, в который нужно скопировать объект.
    - `<КЛЮЧ_ОБЪЕКТА_НАЗНАЧЕНИЯ>` — полное имя для копии объекта, включая путь до него. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имен.
    - `<ТЕГИ>` — теги в формате `<КЛЮЧ_1>=<ЗНАЧЕНИЕ_1>&...<КЛЮЧ_N>=<ЗНАЧЕНИЕ_N>`. Например: `Key1=Value1&Key2=Value2`.
@@ -828,7 +1015,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
 {/tab}
@@ -859,7 +1046,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
    - `<ИМЯ_БАКЕТА>` — имя бакета, присвоенное ему при создании.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него. Следуйте {linkto(../../../concepts/about#s3-concepts-about-object-key-rules)[text=рекомендациям]} при выборе имен.
@@ -879,7 +1066,7 @@
 Чтобы добавить тег к существующему объекту, выполните команду `put-object-tagging` с опцией `--tagging` и перечислением пар ключ/значение в формате JSON.
 
 {note:warn}
-Операция `put-object-tagging` перезаписывает текущие теги объекта, если они были установлены ранее. Для сохранения уже имеющихся тегов, {linkto(#s3-instructions-manage-object-tagging-view)[text=запросите]} текущую конфигурацию тегов и добавьте её в команду `put-object-tagging`.
+Операция `put-object-tagging` перезаписывает текущие теги объекта, если они были установлены ранее. Для сохранения уже имеющихся тегов, {linkto(#s3-instructions-manage-object-tagging-view)[text=запросите]} текущую конфигурацию тегов и добавьте ее в команду `put-object-tagging`.
 {/note}
 
 {cut(Структура перечисления тегов)}
@@ -921,6 +1108,7 @@
             }
          ]
       }' \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -929,6 +1117,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, присвоенное ему при создании.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
    - `<КЛЮЧ_ТЕГА_1>`, `<ЗНАЧЕНИЕ_ТЕГА_1>` и `<КЛЮЧ_ТЕГА_2>`, `<ЗНАЧЕНИЕ_ТЕГА_2>` — пары ключ/значение для тегов объекта.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `--version-id` не указан, будет использована текущая версия.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
     
@@ -936,7 +1125,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
 {/tab}
@@ -958,6 +1147,7 @@
    aws s3api delete-object-tagging \
       --bucket <ИМЯ_БАКЕТА> \
       --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
       --endpoint-url=<ENDPOINT_URL>
    ```
 
@@ -965,6 +1155,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, присвоенное ему при создании.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `--version-id` не указан, будет использована текущая версия.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
     
@@ -972,7 +1163,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
 {/tab}
@@ -1041,13 +1232,97 @@
 
    {tab(Удаление одного объекта)}
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_rm-single]}
+   ```console
+   aws s3api delete-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположен объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   - `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}.
+
+      {note:warn}
+      Если указанная версия — единственная, объект будет удален безвозвратно и без возможности восстановления. Подробнее — в разделе {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=%text]}.
+      {/note}
+
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
 
    {/tab}
 
    {tab(Удаление нескольких объектов)}
 
-   {include(../../../_includes/_s3-manage-object.md)[tags=object_rm-multiple]}
+   1. Проверьте, какие файлы будут удалены:
+
+      ```console
+      aws s3 rm s3://<ИМЯ_БАКЕТА>/<ПРЕФИКС> --recursive --dryrun --endpoint-url <ENDPOINT_URL>
+      ```
+
+   1. Если список удаляемых файлов корректный, выполните удаление:
+
+      ```console
+      aws s3 rm s3://<ИМЯ_БАКЕТА>/<ПРЕФИКС> --recursive --endpoint-url <ENDPOINT_URL>
+      ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором находится нужный объект.
+   - `<ПРЕФИКС>` — общий префикс для всех ключей объектов, которые необходимо удалить. При указании пустого префикса удаляются все объекты в бакете.
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — домен сервиса VK Object Storage, должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое было указано при установке сервиса.
+     {/ifdef}
+
+   {/tab}
+
+   {tab(Удаление версии объекта)}
+
+   ```console
+   aws s3api delete-object \
+      --bucket <ИМЯ_БАКЕТА> \
+      --key <КЛЮЧ_ОБЪЕКТА> \
+      --version-id <ID_ВЕРСИИ> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Здесь:
+
+   - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположен объект.
+   - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, включая путь до него.
+   - `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}.
+
+      {note:warn}
+      Если указанная версия — единственная, объект будет удален безвозвратно и без возможности восстановления. Подробнее — в разделе {linkto(../../../concepts/versioning#s3-concepts-versioning-objects-delete)[text=%text]}.
+      {/note}
+
+      Если указать версию объекта, которая является {linkto(../../../concepts/versioning#s3-concepts-versioning-delete-marker)[text=маркером удаления]}, текущей версией становится предыдущая версия.
+
+     {ifdef(public)}
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+
+     - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
+     {/ifdef}
 
    {/tab}
 
@@ -1255,7 +1530,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    {cut(Пример команды просмотра незавершенных загрузок)}
@@ -1354,7 +1629,7 @@
      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки обратитесь к вашему администратору.
+   - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
 
    Пример выполнения команды:
