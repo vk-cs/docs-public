@@ -1,103 +1,152 @@
-# {heading(Подключение к экземпляру сервиса)[id=kafka_connect]}
+# {heading(Подключение через Kafka CLI и kcat)[id=kafka_connect-cli]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-Подключиться к экземпляру сервиса Cloud Kafka по TLS можно с помощью Kafka CLI и других сторонних клиентов.
+Для подключения к развернутому экземпляру Cloud Kafka из терминала используйте Kafka CLI или kcat. Выберите инструмент в зависимости от задачи:
 
-{include(../../../_includes/_connect.md)[tags=connect-secure]}
+- Kafka CLI — для подключения и дальнейшего администрирования Kafka.
+- kcat — для проверки подключения и работы с сообщениями из терминала.
 
-## {heading(Подключение через Kafka CLI)[id=kafka_connect-kafka-cli]}
+## {heading(Подготовка к подключению)[id=kafka_connect-preparation]}
 
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
+1. Установите [Kafka CLI](https://kafka.apache.org/quickstart/) или [kcat](https://github.com/edenhill/kcat#install).
 
-1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
-1. Нажмите на название экземпляра сервиса.
-1. На странице экземпляра перейдите на вкладку **Общая информация**.
-1. Скопируйте строку подключения, указанную в поле **Kafka bootstrap TLS connection**.
-1. В блоке сертификата нажмите ![значок](../../../assets/more-icon.svg "inline") → **Скачать**. Поместите скачанный сертификат под именем `CA.crt` в `/tmp` для Linux/macOS или в `%TEMP%` для Windows.
-1. Откройте терминал.
-1. Создайте конфигурационный файл клиента:
-   1. Задайте переменные с логином и паролем учетной записи Cloud Kafka:
+{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
 
-      {tabs}
+## {heading(Kafka CLI)[id=kafka_connect-kafka-cli]}
 
-      {tab(Linux/macOS)}
+### {heading(Linux и macOS)[id=kafka_connect-kafka-cli-unix]}
 
-      ```bash
-      K_USERNAME="<ЛОГИН>"
-      K_PASSWORD="<ПАРОЛЬ>"
-      ```
+1. Откройте терминал и задайте переменные с логином и паролем учетной записи Cloud Kafka:
 
-      {/tab}
+   ```console
+   K_USERNAME="<ЛОГИН>"
+   K_PASSWORD="<ПАРОЛЬ>"
+   ```
 
-      {tab(Windows)}
-
-      ```powershell
-      $env:K_USERNAME = "<ЛОГИН>"
-      $env:K_PASSWORD = "<ПАРОЛЬ>"
-      ```
-
-      {/tab}
-
-      {/tabs}
-
-   1. Создайте файл конфигурации с помощью команды:
-
-      {tabs}
-
-      {tab(Linux/macOS)}
-
-      ```bash
-      cat > /tmp/client.properties <<EOF
-      security.protocol=SASL_SSL
-      sasl.mechanism=SCRAM-SHA-512
-      sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="${K_USERNAME}" password="${K_PASSWORD}";
-      ssl.truststore.type=PEM
-      ssl.truststore.location=/tmp/CA.crt
-      ssl.endpoint.identification.algorithm=
-      request.timeout.ms=30000
-      EOF
-      ```
-
-      {/tab}
-
-      {tab(Windows)}
-
-      ```powershell
-      @"
-      security.protocol=SASL_SSL
-      sasl.mechanism=SCRAM-SHA-512
-      sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="$env:K_USERNAME" password="$env:K_PASSWORD";
-      ssl.truststore.type=PEM
-      ssl.truststore.location=$($env:TEMP -replace '\\','/')/CA.crt
-      ssl.endpoint.identification.algorithm=
-      request.timeout.ms=30000
-      "@ | Set-Content -Path "$env:TEMP\client.properties" -Encoding ASCII
-      ```
-
-      {/tab}
-
-      {/tabs}
-
-1. Задайте переменные окружения:
+1. Создайте файл конфигурации `/tmp/client.properties` для подключения с TLS (трафик шифруется) или без TLS (трафик не шифруется):
 
    {tabs}
 
-   {tab(Linux/macOS)}
+   {tab(TLS)}
 
-   ```bash
-   export K_BOOTSTRAP=<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>
-   export K_CLI_BASE=<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>
-   export K_CONFIG=/tmp/client.properties
+   ```console
+   cat > /tmp/client.properties <<EOF
+   security.protocol=SASL_SSL
+   sasl.mechanism=SCRAM-SHA-512
+   sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="${K_USERNAME}" password="${K_PASSWORD}";
+   ssl.truststore.type=PEM
+   ssl.truststore.location=<ПУТЬ_К_ЦЕПОЧКЕ_СЕРТИФИКАТОВ>
+   ssl.endpoint.identification.algorithm=
+   request.timeout.ms=30000
+   EOF
+   ```
+
+   Здесь `<ПУТЬ_К_ЦЕПОЧКЕ_СЕРТИФИКАТОВ>`: путь к файлу цепочки сертификатов, скачанному на вкладке **Общая информация** при подготовке к подключению.
+
+   {note:info}
+   Параметр `ssl.endpoint.identification.algorithm` отключает проверку соответствия имени сервера сертификату. Проверка доверия к сертификату по указанному файлу сохраняется.
+   {/note}
+
+   {/tab}
+
+   {tab(Без TLS)}
+
+   {note:warn}
+   При подключении без TLS трафик не шифруется. Используйте этот вариант только в изолированной сети.
+   {/note}
+
+   ```console
+   cat > /tmp/client.properties <<EOF
+   security.protocol=SASL_PLAINTEXT
+   sasl.mechanism=SCRAM-SHA-512
+   sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="${K_USERNAME}" password="${K_PASSWORD}";
+   request.timeout.ms=30000
+   EOF
    ```
 
    {/tab}
 
-   {tab(Windows)}
+   {/tabs}
+
+1. Задайте переменные окружения:
+
+   ```console
+   export K_BOOTSTRAP="<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>"
+   export K_CLI_BASE="<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>"
+   export K_CONFIG=/tmp/client.properties
+   ```
+
+   Здесь:
+
+   - `<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>`: строка подключения, скопированная при подготовке;
+   - `<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>`: директория, в которой установлен Kafka CLI. Пример: `/opt/homebrew/opt/kafka/bin`.
+
+1. Получите список топиков:
+
+   ```console
+   "${K_CLI_BASE}/kafka-topics.sh" --command-config "${K_CONFIG}" --bootstrap-server "${K_BOOTSTRAP}" --list
+   ```
+
+   В терминале появится список доступных топиков. Если доступных топиков нет, вывод может быть пустым.
+
+### {heading(Windows)[id=kafka_connect-kafka-cli-windows]}
+
+1. Откройте PowerShell и задайте переменные с логином и паролем учетной записи Cloud Kafka:
+
+   ```powershell
+   $env:K_USERNAME = "<ЛОГИН>"
+   $env:K_PASSWORD = "<ПАРОЛЬ>"
+   ```
+
+1. Создайте файл конфигурации клиента для подключения с TLS (трафик шифруется) или без TLS (трафик не шифруется):
+
+   {tabs}
+
+   {tab(TLS)}
+
+   ```powershell
+   @"
+   security.protocol=SASL_SSL
+   sasl.mechanism=SCRAM-SHA-512
+   sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="$env:K_USERNAME" password="$env:K_PASSWORD";
+   ssl.truststore.type=PEM
+   ssl.truststore.location=<ПУТЬ_К_ЦЕПОЧКЕ_СЕРТИФИКАТОВ>
+   ssl.endpoint.identification.algorithm=
+   request.timeout.ms=30000
+   "@ | Set-Content -Path "$env:TEMP\client.properties" -Encoding ASCII
+   ```
+
+   Здесь `<ПУТЬ_К_ЦЕПОЧКЕ_СЕРТИФИКАТОВ>`: путь к файлу цепочки сертификатов, скачанному на вкладке **Общая информация** при подготовке к подключению. В пути используйте прямые слеши, например `C:/certs/ca.crt`.
+
+   {note:info}
+   Параметр `ssl.endpoint.identification.algorithm` отключает проверку соответствия имени сервера сертификату. Проверка доверия к сертификату по указанному файлу сохраняется.
+   {/note}
+
+   {/tab}
+
+   {tab(Без TLS)}
+
+   {note:warn}
+   При подключении без TLS трафик не шифруется. Используйте этот вариант только в изолированной сети.
+   {/note}
+
+   ```powershell
+   @"
+   security.protocol=SASL_PLAINTEXT
+   sasl.mechanism=SCRAM-SHA-512
+   sasl.jaas.config=org.apache.kafka.common.security.scram.ScramLoginModule required username="$env:K_USERNAME" password="$env:K_PASSWORD";
+   request.timeout.ms=30000
+   "@ | Set-Content -Path "$env:TEMP\client.properties" -Encoding ASCII
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+1. Задайте переменные окружения:
 
    ```powershell
    $env:K_BOOTSTRAP = "<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>"
@@ -105,35 +154,14 @@
    $env:K_CONFIG    = "$env:TEMP\client.properties"
    ```
 
-   {/tab}
-
-   {/tabs}
-
    Здесь:
 
-   - `<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>` — скопированная строка подключения к Cloud Kafka.
-   - `<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>` — директория, куда были распакованы скрипты Kafka CLI.
+   - `<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>`: строка подключения, скопированная при подготовке;
+   - `<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>`: директория со скриптами Kafka CLI, например `C:\kafka\bin\windows`.
 
-   В Windows распакуйте Kafka в директорию с коротким путем, например `C:\kafka`. При длинном пути скрипт может завершиться с ошибкой `The input line is too long`.
+   Используйте для Kafka CLI директорию с коротким путем, например `C:\kafka`. При длинном пути скрипт может завершиться с ошибкой `The input line is too long`.
 
-   В дистрибутиве Apache Kafka для Linux скрипты имеют расширение `.sh`. При использовании этого дистрибутива добавьте `.sh` к именам `kafka-topics` и `kafka-configs` в командах этой инструкции и инструкции по управлению топиками.
-
-1. Запустите Kafka CLI и получите список топиков:
-
-   {tabs}
-
-   {tab(Linux/macOS)}
-
-   ```bash
-   "${K_CLI_BASE}/kafka-topics" \
-     --command-config "${K_CONFIG}" \
-     --bootstrap-server "${K_BOOTSTRAP}" \
-     --list
-   ```
-
-   {/tab}
-
-   {tab(Windows)}
+1. Получите список топиков:
 
    ```powershell
    & "$env:K_CLI_BASE\kafka-topics.bat" `
@@ -142,13 +170,38 @@
      --list
    ```
 
-   {/tab}
+   В терминале появится список доступных топиков. Если доступных топиков нет, вывод может быть пустым.
 
-   {/tabs}
+## {heading(kcat)[id=kafka_connect-kcat]}
 
-   Пример вывода:
-   ```console
-   __consumer_offsets
-   my-test-topic-for-metrics
-   ...
-   ```
+Откройте терминал и выполните команду для выбранного варианта подключения.
+
+{tabs}
+
+{tab(TLS)}
+
+```console
+kcat -b "<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>" -X security.protocol=SASL_SSL -X sasl.mechanism=SCRAM-SHA-512 -X sasl.username="<ЛОГИН>" -X sasl.password="<ПАРОЛЬ>" -X ssl.ca.location="<ПУТЬ_К_ЦЕПОЧКЕ_СЕРТИФИКАТОВ>" -L
+```
+
+Команда выведет информацию о брокерах и топиках экземпляра Cloud Kafka.
+
+{/tab}
+
+{tab(Без TLS)}
+
+{note:warn}
+При подключении без TLS трафик не шифруется. Используйте этот вариант только в изолированной сети.
+{/note}
+
+```console
+kcat -b "<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>" -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=SCRAM-SHA-512 -X sasl.username="<ЛОГИН>" -X sasl.password="<ПАРОЛЬ>" -L
+```
+
+Команда выведет информацию о брокерах и топиках экземпляра Cloud Kafka.
+
+{/tab}
+
+{/tabs}
+
+{include(../../../_includes/_kafka.md)[tags=connection-values]}

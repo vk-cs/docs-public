@@ -4,7 +4,7 @@
   "metaDescription": "Управление топиками Cloud Kafka через Kafka CLI в VK Data Platform: создание, просмотр, увеличение числа партиций, изменение срока хранения и удаление",
   "sectionTitle": "Управление топиками через Kafka CLI",
   "icon": "",
-  "weight": 5,
+  "weight": 7,
   "uuid": "2de8c140-0627-4776-9f91-72b5582d2db4",
   "build": {
     "for": [

@@ -1,8 +1,8 @@
 {
-  "title": "Подключение к экземпляру сервиса",
-  "shortDescription": "Как подключиться к экземпляру Cloud Kafka по TLS через Kafka CLI",
-  "metaDescription": "Подключение к экземпляру сервиса Cloud Kafka через Kafka CLI по TLS в VK Data Platform: получение строки подключения и настройка клиента",
-  "sectionTitle": "Подключение к экземпляру сервиса",
+  "title": "Подключение через Kafka CLI и kcat",
+  "shortDescription": "Настройка утилит и проверка подключения с TLS или без TLS",
+  "metaDescription": "Подключение к Cloud Kafka в {var(data-p)} через Kafka CLI и kcat: подготовка параметров, настройка TLS или подключения без TLS и проверка доступа",
+  "sectionTitle": "Подключение через Kafka CLI и kcat",
   "build": {
     "for": [
       "public",
