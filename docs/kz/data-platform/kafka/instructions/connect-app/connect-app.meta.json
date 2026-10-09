@@ -1,0 +1,15 @@
+{
+  "title": "Қолданба кодынан қосылу",
+  "shortDescription": "Клиенттік кітапханаларды баптау және брокерлерге қол жеткізуді тексеру",
+  "metaDescription": "{var(data-p)} ішіндегі Cloud Kafka-ға қолданба кодынан қосылу: Java, Scala, Python, Go, C / C++, .NET және Node.js мысалдары, TLS арқылы және TLS-сіз",
+  "sectionTitle": "Қолданба кодынан қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 6,
+  "uuid": ""
+}

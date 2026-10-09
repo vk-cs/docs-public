@@ -1,0 +1,15 @@
+{
+  "title": "Kafka Bridge арқылы қосылу",
+  "shortDescription": "Компонентті қосу, топиктерге қол жеткізуді баптау және REST API-ді тексеру",
+  "metaDescription": "{var(data-p)} ішіндегі Cloud Kafka-ға Kafka Bridge REST API арқылы қосылу: компонентті қосу, топиктерге қол жеткізуді баптау және API-ді тексеру",
+  "sectionTitle": "Kafka Bridge арқылы қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": ""
+}
