@@ -12,7 +12,7 @@ VK Cloud командасы VK Cloud сервистерін пайдаланат
 | Max-бот      | https://max.ru/vk_tech_support_bot | тәулік бойы |
 | [Telegram-бот](../chatbots/tg-support-bot) | `@vk_tech_support_bot`      | тәулік бойы |
 | Пошта        | support@mcs.mail.ru         | тәулік бойы |
-| Телефон      | +7 (499) 350-97-03          | тәулік бойы |
+| Телефон      | +7 (495) 740 05 60          | Мәскеуде 9-дан 18-ге дейін |
 
 <info>
 
