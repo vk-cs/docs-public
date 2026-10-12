@@ -21,7 +21,7 @@
 
 1. Откройте терминал и задайте переменные с логином и паролем учетной записи Cloud Kafka:
 
-   ```console
+   ```bash
    K_USERNAME="<ЛОГИН>"
    K_PASSWORD="<ПАРОЛЬ>"
    ```
@@ -32,7 +32,7 @@
 
    {tab(TLS)}
 
-   ```console
+   ```bash
    cat > /tmp/client.properties <<EOF
    security.protocol=SASL_SSL
    sasl.mechanism=SCRAM-SHA-512
@@ -58,7 +58,7 @@
    При подключении без TLS трафик не шифруется. Используйте этот вариант только в изолированной сети.
    {/note}
 
-   ```console
+   ```bash
    cat > /tmp/client.properties <<EOF
    security.protocol=SASL_PLAINTEXT
    sasl.mechanism=SCRAM-SHA-512
@@ -73,7 +73,7 @@
 
 1. Задайте переменные окружения:
 
-   ```console
+   ```bash
    export K_BOOTSTRAP="<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>"
    export K_CLI_BASE="<ПУТЬ_К_ДИРЕКТОРИИ_KAFKA_CLI>"
    export K_CONFIG=/tmp/client.properties
@@ -86,8 +86,11 @@
 
 1. Получите список топиков:
 
-   ```console
-   "${K_CLI_BASE}/kafka-topics.sh" --command-config "${K_CONFIG}" --bootstrap-server "${K_BOOTSTRAP}" --list
+   ```bash
+   "${K_CLI_BASE}/kafka-topics.sh" \
+       --command-config "${K_CONFIG}" \
+       --bootstrap-server "${K_BOOTSTRAP}" \
+       --list
    ```
 
    В терминале появится список доступных топиков. Если доступных топиков нет, вывод может быть пустым.
@@ -165,9 +168,9 @@
 
    ```powershell
    & "$env:K_CLI_BASE\kafka-topics.bat" `
-     --command-config "$env:K_CONFIG" `
-     --bootstrap-server "$env:K_BOOTSTRAP" `
-     --list
+       --command-config "$env:K_CONFIG" `
+       --bootstrap-server "$env:K_BOOTSTRAP" `
+       --list
    ```
 
    В терминале появится список доступных топиков. Если доступных топиков нет, вывод может быть пустым.
