@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Instructions for working with the Cloud Alerting notification service on the {var(cloud)} platform",
+  "metaDescription": "How to configure triggers and channels to receive notifications about the status of VK Cloud resources. Instructions for working with the Cloud Alerting notification service",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

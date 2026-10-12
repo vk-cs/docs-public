@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/monitoring-services/alerting/about"
+                    "link": "/en/monitoring-services/alerting/concepts/about"
                 },
                 {
-                    "link": "/en/monitoring-services/alerting/notification"
+                    "link": "/en/monitoring-services/alerting/instructions/notification"
                 },
                 {
-                    "link": "/en/monitoring-services/alerting/triggers"
+                    "link": "/en/monitoring-services/alerting/instructions/triggers"
                 },
                 {
-                    "link": "/en/monitoring-services/alerting/incidents"
+                    "link": "/en/monitoring-services/alerting/instructions/incidents"
                 }
             ]
         }

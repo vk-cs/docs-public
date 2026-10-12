@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Description of the operating principles and architecture of the service",
+  "metaDescription": "Description of the Cloud Alerting service: how it works, possible configurations, how it is implemented in VK Cloud, and what limitations apply.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

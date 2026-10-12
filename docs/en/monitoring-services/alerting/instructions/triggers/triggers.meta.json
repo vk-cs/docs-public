@@ -1,7 +1,7 @@
 {
   "title": "Triggers",
   "shortDescription": "Instructions for creating and managing triggers in Cloud Alerting",
-  "metaDescription": "",
+  "metaDescription": "How to create and configure alert triggers in Cloud Alerting. Step-by-step instructions for adding, editing, and starting triggers to respond to incidents in VK Cloud in a timely manner.",
   "sectionTitle": "Triggers",
   "icon": "",
   "weight": 0,
