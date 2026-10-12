@@ -75,7 +75,7 @@ You can [configure](/en/kubernetes/k8s/instructions/scale#autoscale_worker_nodes
 
 ## {heading(Kubernetes cluster scaling alert)[id=alerting]}
 
-To receive notifications about cluster or node group scaling, [set up](/en/monitoring-services/alerting/triggers/triggers-add) a trigger in the Cloud Alerting service. The trigger can be configured by the following metrics:
+To receive notifications about cluster or node group scaling, [set up](/en/monitoring-services/alerting/instructions/triggers) a trigger in the Cloud Alerting service. The trigger can be configured by the following metrics:
 
 - `kubernetes_master_vscale` — vertical scaling of the cluster master node.
 - `kubernetes_worker_vscale` — vertical scaling of a node group.
