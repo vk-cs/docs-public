@@ -92,18 +92,6 @@
             "description": "Captcha type to create. Possible values:\n\n``checkbox`` — checkbox;\n\n``slider`` — slider;\n\n``sound`` — audio"
           },
           {
-            "name": "session_token_ttl",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "maximum": 600,
-              "minimum": 0,
-              "default": 300
-            },
-            "description": "Session token lifetime (in seconds)"
-          },
-          {
             "name": "success_token_ttl",
             "in": "query",
             "required": false,
