@@ -92,18 +92,6 @@
             "description": "Тип создаваемой капчи. Возможные значения:\n\n``checkbox`` — флажок;\n\n``slider`` — ползунок;\n\n``sound`` — аудио"
           },
           {
-            "name": "session_token_ttl",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "maximum": 600,
-              "minimum": 0,
-              "default": 300
-            },
-            "description": "Время жизни сессионного токена (в секундах)"
-          },
-          {
             "name": "success_token_ttl",
             "in": "query",
             "required": false,
