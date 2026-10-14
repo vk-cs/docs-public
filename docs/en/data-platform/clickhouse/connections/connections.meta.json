@@ -1,0 +1,15 @@
+{
+  "title": "Connection",
+  "shortDescription": "Connecting to a Cloud ClickHouse instance",
+  "metaDescription": "Learn how to connect to a Cloud ClickHouse instance in VK Data Platform: find the connection parameters and choose a suitable protocol",
+  "sectionTitle": "Connection",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

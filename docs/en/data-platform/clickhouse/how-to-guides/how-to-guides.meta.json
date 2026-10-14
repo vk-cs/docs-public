@@ -1,0 +1,15 @@
+{
+  "title": "How-to guides",
+  "shortDescription": "Use cases for the Cloud ClickHouse service",
+  "metaDescription": "How-to guides for Cloud ClickHouse in VK Data Platform: configure data processing and loading workflows through practical examples",
+  "sectionTitle": "How-to guides",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

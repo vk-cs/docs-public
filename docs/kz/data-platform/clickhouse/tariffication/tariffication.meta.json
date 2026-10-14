@@ -4,7 +4,7 @@
   "metaDescription": "Cloud ClickHouse: сервисті тарификациялау ерекшеліктері, құнын есептеу",
   "sectionTitle": "Тарифтеу",
   "icon": "",
-  "weight": 3,
+  "weight": 5,
   "uuid": "a6cf88f6-0776-4373-aa36-558fb52214a8",
   "build": {
     "for": [

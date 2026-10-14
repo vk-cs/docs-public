@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте об особенностях тарификации сервиса Cloud ClickHouse в VK Data Platform: принципы расчета стоимости и тарифные планы",
   "sectionTitle": "Тарификация",
   "icon": "",
-  "weight": 3,
+  "weight": 5,
   "uuid": "67fe6848-44af-42f0-b1c0-9b7d80326967",
   "build": {
     "for": [

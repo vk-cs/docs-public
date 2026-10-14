@@ -1,0 +1,15 @@
+{
+  "title": "Практикалық нұсқаулықтар",
+  "shortDescription": "Cloud ClickHouse сервисін пайдалану сценарийлері",
+  "metaDescription": "VK Data Platform жүйесіндегі Cloud ClickHouse бойынша практикалық нұсқаулықтар: деректерді өңдеу және жүктеу сценарийлерін нақты мысалдар арқылы реттеу",
+  "sectionTitle": "Практикалық нұсқаулықтар",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

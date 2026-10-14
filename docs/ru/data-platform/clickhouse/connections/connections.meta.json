@@ -1,0 +1,15 @@
+{
+  "title": "Подключение",
+  "shortDescription": "Подключение к экземпляру Cloud ClickHouse",
+  "metaDescription": "Узнайте, как подключиться к экземпляру Cloud ClickHouse в VK Data Platform: получите параметры подключения и выберите подходящий протокол",
+  "sectionTitle": "Подключение",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

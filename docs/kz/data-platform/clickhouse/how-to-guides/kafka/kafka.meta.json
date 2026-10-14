@@ -1,0 +1,15 @@
+{
+  "title": "Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу",
+  "shortDescription": "Kafka топигіндегі хабарларды мақсатты кестеге жүктеу жолы",
+  "metaDescription": "VK Data Platform жүйесінде Kafka қозғалтқышы бар кесте мен материалдандырылған көрініс арқылы Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу жолын біліңіз",
+  "sectionTitle": "Kafka-дан деректерді жүктеу",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

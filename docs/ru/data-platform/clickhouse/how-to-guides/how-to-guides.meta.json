@@ -1,0 +1,15 @@
+{
+  "title": "Практические руководства",
+  "shortDescription": "Сценарии использования сервиса Cloud ClickHouse",
+  "metaDescription": "Практические руководства по работе с Cloud ClickHouse в VK Data Platform: настройка сценариев обработки и загрузки данных на конкретных примерах",
+  "sectionTitle": "Практические руководства",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}
