@@ -1,7 +1,5 @@
 # {heading(Перенос ВМ в другую зону доступности)[id=iaas-vm-az-migration]}
 
-Все виртуальные машины, которые используют {linkto(../../../../start/concepts/architecture#architecture-az)[text=зону доступности]} `GZ1`, необходимо перенести на другую зону доступности (например `PA2`), так как `GZ1` выводится из эксплуатации.
-
 {note:warn}
 В зоне доступности `PA2` используется только SDN Sprut. Если в вашем проекте используется SDN Neutron, предварительно выполните {linkto(../../../../cases/sprut-migration#cases-sprut-migration)[text=миграцию в SDN Sprut]}.
 {/note}
