@@ -29,7 +29,7 @@ variables:
     matrix:
       - DOCKERFILE_PATH: devops/public.Dockerfile
         IMAGE_NAME_SUFFIX: common
-        VKCS_PREPARE_ENABLED: "true"
+        VKCS_PREPARE_ENABLED: "false"
         VKCS_PREPARE_CHECK_URL_STAGE: "https://mcstest.mail.ru"
         VKCS_PREPARE_CHECK_URL_PROD: "https://cloud.vk.ru"
         VKCS_K8S_DEV_INGRESS_PATH: /docs
@@ -49,22 +49,22 @@ variables:
         VKCS_PREPARE_ENABLED: "false"
         VKCS_K8S_DEV_INGRESS_PATH: /s3
 
-# preparer-settings
-preparer Dev Matrix:
-  script:
-    - cd /home/node/app
-    - BUILD_POINTS=public npx preparer start checkup
+# # preparer-settings
+# preparer Dev Matrix:
+#   script:
+#     - cd /home/node/app
+#     - BUILD_POINTS=public npx preparer start checkup
 
-preparer Stage Matrix:
-  script:
-    - cd /home/node/app
-    - BUILD_POINTS=public npx preparer start checkup
+# preparer Stage Matrix:
+#   script:
+#     - cd /home/node/app
+#     - BUILD_POINTS=public npx preparer start checkup
 
-preparer Prod Matrix:
-  script:
-    - cd /home/node/app
-    - BUILD_POINTS=public npx preparer start checkup
-#    - BUILD_POINTS=public npx preparer start forTraining
+# preparer Prod Matrix:
+#   script:
+#     - cd /home/node/app
+#     - BUILD_POINTS=public npx preparer start checkup
+# #    - BUILD_POINTS=public npx preparer start forTraining
 
 # filegen-settings
 .filegen-dest:
