@@ -1,0 +1,15 @@
+{
+  "title": "Загрузка данных из Kafka в Cloud ClickHouse",
+  "shortDescription": "Как загрузить сообщения из топика Kafka в целевую таблицу",
+  "metaDescription": "Узнайте, как настроить загрузку данных из Kafka в Cloud ClickHouse с помощью таблицы с движком Kafka и материализованного представления в VK Data Platform",
+  "sectionTitle": "Загрузка данных из Kafka",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

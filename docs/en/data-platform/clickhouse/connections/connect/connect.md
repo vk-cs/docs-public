@@ -20,8 +20,8 @@ The instructions apply to Cloud ClickHouse versions `24.3.18.7` and `25.3.14.14`
 1. On the **General information** tab of the service instance, copy the host and port from the required connection string, depending on the protocol (TCP or HTTP) and whether TLS encryption is enabled.
 1. Prepare the database name, login, and password for the Cloud ClickHouse user account. This can be:
 
-   - a user {linkto(../create#clickhouse_create)[text=specified when creating the instance]};
-   - an additional user {linkto(../manage#clickhouse_add_admin)[text=added to the instance]} manually.
+   - a user {linkto(../../instructions/create#clickhouse_create)[text=specified when creating the instance]};
+   - an additional user {linkto(../../instructions/manage#clickhouse_add_admin)[text=added to the instance]} manually.
 
 The following steps depend on the connection method:
 

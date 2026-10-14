@@ -220,6 +220,7 @@ Only accounts assigned the `Standard user`, `Observer`, and `Security auditor` r
    - `ClickHouse` — connection to a Cloud ClickHouse database.
    - `PostgreSQL` — connection to a PostgreSQL database.
    - `MySQL` — connection to a MySQL database.
+   - `Kafka` — connection to Kafka.
 
 1. Configure the connection parameters for the data source:
 
@@ -272,10 +273,42 @@ Only accounts assigned the `Standard user`, `Observer`, and `Security auditor` r
    - **User password**: the password of the database user account.
 
    {/tab}
-   
+
+   {tab(Kafka)}
+
+   - **Name**: specify a connection name. The name must start with a lowercase Latin letter and contain only uppercase and lowercase Latin letters, digits, and `_` characters. The name will be used when working with Cloud ClickHouse.
+   - **Username**: the Kafka username.
+   - **User password**: the Kafka user password.
+   - **Broker list**: broker addresses separated by commas in the format `<HOSTNAME>:<PORT>` or `<IP_ADDRESS>:<PORT>`. Example: `broker1:9092,broker2:9092`.
+   - **Topic list**: topic names separated by commas.
+   - **Consumer group name**: the name of the consumer group that will receive messages from the topics.
+   - (Optional) **Save connection to the connection catalog**: enable this option to use the connection for other service instances.
+   - (Optional) Click **Show all parameters** and configure additional parameters:
+
+      - **Security protocol**: select `SASL_SSL` for an encrypted connection or `SASL_PLAINTEXT` for a connection without encryption. The default is `SASL_PLAINTEXT`.
+      - **SASL mechanism**: select how the password is verified when connecting. Available values:
+
+         - `PLAIN` — the password is transmitted in plain text;
+         - `SCRAM-SHA-256` — the password is verified using SHA-256 hashing;
+         - `SCRAM-SHA-512` — the password is verified using SHA-512 hashing. The default.
+
+      - **SSL certificate verification**: enable this option to verify the broker's SSL certificate. This parameter applies to `SASL_SSL` and is disabled by default.
+      - **Message format**: select the format of messages in the topics. Available values:
+
+         - `JSONEachRow` — one JSON message per row. The default;
+         - `JSONAsString` — each JSON message is stored as one `String` value;
+         - `JSONCompactEachRow` — JSON message field values are passed as an array in table column order;
+         - `CSV` — field values are separated by commas;
+         - `TabSeparated` — field values are separated by tabs;
+         - `LineAsString` — each line of a message is stored as one `String` value;
+         - `Native` — ClickHouse's native binary format.
+      - **Number of consumers**: specify a number from `1` to `32`. The default is `1`.
+
+   {/tab}
+
    {/tabs}
 
-1. Click the **Save changes** button.
+1. Click the **Add** button.
 
 {/tab}
 

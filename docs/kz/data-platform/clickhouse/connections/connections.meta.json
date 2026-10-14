@@ -1,0 +1,15 @@
+{
+  "title": "Қосылу",
+  "shortDescription": "Cloud ClickHouse данасына қосылу",
+  "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse данасына қосылу жолын біліңіз: қосылым параметрлерін алыңыз және тиісті протоколды таңдаңыз",
+  "sectionTitle": "Қосылу",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

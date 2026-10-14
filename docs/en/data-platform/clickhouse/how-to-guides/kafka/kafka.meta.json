@@ -1,0 +1,15 @@
+{
+  "title": "Loading data from Kafka into Cloud ClickHouse",
+  "shortDescription": "How to load Kafka topic messages into a target table",
+  "metaDescription": "Learn how to load data from Kafka into Cloud ClickHouse using a table with the Kafka engine and a materialized view in VK Data Platform",
+  "sectionTitle": "Loading data from Kafka",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

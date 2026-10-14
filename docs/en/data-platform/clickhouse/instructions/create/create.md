@@ -114,7 +114,7 @@
 
    1. Click the **Create** button.
 
-1. When the instance transitions to the `Active` status, {linkto(../connect#clickhouse_connect-clickhouse-client)[text=check the connection]} and make sure that the instance was created successfully and the access settings are correct.
+1. When the instance transitions to the `Active` status, {linkto(../../connections/connect#clickhouse_connect-clickhouse-client)[text=check the connection]} and make sure that the instance was created successfully and the access settings are correct.
 
 {/tab}
 
