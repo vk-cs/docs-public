@@ -20569,7 +20569,7 @@
   },
   {
     "source": "/en/manage/alerting/alerting-about",
-    "destination": "/en/monitoring-services/alerting/about",
+    "destination": "/en/monitoring-services/alerting/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -24655,55 +24655,55 @@
   },
   {
     "source": "/en/manage/alerting/about",
-    "destination": "/en/monitoring-services/alerting/about",
+    "destination": "/en/monitoring-services/alerting/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/notification",
-    "destination": "/en/monitoring-services/alerting/notification",
+    "destination": "/en/monitoring-services/alerting/instructions/notification",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/notification/notification-add",
-    "destination": "/en/monitoring-services/alerting/notification/notification-add",
+    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-add",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/notification/notification-edit",
-    "destination": "/en/monitoring-services/alerting/notification/notification-edit",
+    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/triggers",
-    "destination": "/en/monitoring-services/alerting/triggers",
+    "destination": "/en/monitoring-services/alerting/instructions/triggers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/triggers/trigger-edit",
-    "destination": "/en/monitoring-services/alerting/triggers/trigger-edit",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/triggers/triggers-add",
-    "destination": "/en/monitoring-services/alerting/triggers/triggers-add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/triggers/trigger-start",
-    "destination": "/en/monitoring-services/alerting/triggers/trigger-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/incidents",
-    "destination": "/en/monitoring-services/alerting/incidents",
+    "destination": "/en/monitoring-services/alerting/instructions/incidents",
     "permanent": false,
     "locale": false
   },
@@ -34244,6 +34244,60 @@
   {
     "source": "/en/intro/migration/migrate-hystax-mr",
     "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/triggers/triggers-add",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/triggers/trigger-edit",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/triggers/trigger-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/about",
+    "destination": "/en/monitoring-services/alerting/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/notification",
+    "destination": "/en/monitoring-services/alerting/instructions/notification",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/notification/notification-add",
+    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/notification/notification-edit",
+    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/triggers",
+    "destination": "/en/monitoring-services/alerting/instructions/triggers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/incidents",
+    "destination": "/en/monitoring-services/alerting/instructions/incidents",
     "permanent": false,
     "locale": false
   }
