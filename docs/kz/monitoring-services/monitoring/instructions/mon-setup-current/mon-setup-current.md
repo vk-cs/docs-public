@@ -16,7 +16,7 @@
 
 Егер **Мониторингті баптау** қойындысы болмаса:
 
-1. [қосылғанына](/kz/access/iam/instructions/manage-2fa) екі факторлы аутентификацияның және API арқылы қолжетімділіктің {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
+1. API арқылы қолжетімділіктің {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Қолжетімділік токенін алыңыз]} `X-Subject-Token`.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=Project ID алыңыз]}, бұл сервистермен жұмыс істеуге арналған арнайы идентификатор. Мысалы: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-id-get)[text=Виртуалды машинаның ID-сін алыңыз]}.

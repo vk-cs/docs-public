@@ -55,7 +55,6 @@
 
 {tab(API)}
 
-1. Аккаунтыңыз үшін [екі факторлы аутентификацияны (2FA) қосыңыз](/kz/access/iam/instructions/manage-2fa).
 1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token).
 1. `Audit` эндпоинтының [мекенжайын біліңіз](https://kz.cloud.vk.kz/app/project/endpoints).
 1. Сұрауды орындаңыз:

@@ -12,7 +12,6 @@ REST API сервиса {linkto(../../../../monitoring-services/monitoring#monit
 
 1. Убедитесь, что на проекте включен сервис Cloud Monitoring, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
-1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если это еще не сделано.
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Включите]} доступ по API, если это еще не сделано.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.

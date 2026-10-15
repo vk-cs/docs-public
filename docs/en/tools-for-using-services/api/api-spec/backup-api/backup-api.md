@@ -3,7 +3,6 @@
 {cut(Obtaining an endpoint, authorization, and authentication)}
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. Enable two-factor authentication if not done so already.
 1. Enable API access if not done so already.
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.

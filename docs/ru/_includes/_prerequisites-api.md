@@ -10,7 +10,12 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
 
 {includetag(api-token-prerequisites)}
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
+{ifdef(public)}
+1. Убедитесь, что {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=активирован]} доступ по API.
+{/ifdef}
+{ifndef(public)}
 1. Убедитесь, что {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=активирован]} доступ по API.
+{/ifndef}
 1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 {/includetag}
 
