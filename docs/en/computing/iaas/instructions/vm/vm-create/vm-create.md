@@ -18,7 +18,7 @@ To create VM:
 1. Verify that the account balance is positive and there are enough [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) to create the virtual machine configuration you need.
 1. Go to **Cloud Servers → Virtual machines**.
 1. Click the **Create Instance** or **Add** button.
-1. Set the VM parameters in the **Configuration** box:   
+1. Set the VM parameters in the **Configuration** box:
 
      - **Operating system**: select the [operating system](/en/computing/iaas/concepts/about#operating_system) or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#importing_an_image) in VK Cloud.
      - **Category of virtual machine**: select the [category](../../../concepts/about#flavors) of the VM.
@@ -85,6 +85,7 @@ To create VM:
       {/note}
 
    - **Enable monitoring**: enable to install an agent to send metrics to the [monitoring service](/en/monitoring-services/monitoring/concepts).
+   - **Enable logging**: turn on to install an agent to send records to the [logging service](../../../../../monitoring-services/logging/concepts).
 
 1. Configure the settings in the **Backup** box.
 

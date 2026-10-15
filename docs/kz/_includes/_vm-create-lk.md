@@ -139,6 +139,9 @@
      {ifndef(private-cert)}
    - **Мониторингті қосу**: {linkto(../../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=мониторинг сервісіне]} метрикаларды жіберу үшін агентті орнату мақсатында қосыңыз.
      {/ifndef}
+     {ifdef(public)}
+     - **Журналдауды қосу**: жазбаларды {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=лог сервисі]} жіберу үшін агентті орнатуды қосыңыз.
+     {/ifdef}
      {/includetag}
      {includetag(create-from-disk)}
      {ifdef(public)}
@@ -152,6 +155,9 @@
      {ifndef(private-cert)}
    - **Мониторингті қосу**: {linkto(../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=мониторинг сервісіне]} метрикаларды жіберу үшін агентті орнату мақсатында қосыңыз.
      {/ifndef}
+     {ifdef(public)}
+     - **Журналдауды қосу**: жазбаларды {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=лог сервисі]} жіберу үшін агентті орнатуды қосыңыз.
+     {/ifdef}
      {/includetag}
    {includetag(create,create-from-disk)}
 1. {ifdef(public)}**Резервтік көшіру**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}**Резервтік көшіруді баптау**{/ifdef} блогында қажетті параметрлерді көрсетіңіз.
