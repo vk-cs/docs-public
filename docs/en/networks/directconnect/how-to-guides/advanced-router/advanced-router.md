@@ -30,7 +30,7 @@ To show the configuration of an advanced router, two independent networks will b
    In this case, we will use a network with a virtual machine Router OS 7.10 (MikroTik), performing the functions of a BGP router.
    {/note}
 
-1. Select or [create](../../instructions/net#creating_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
+1. Select or [create](../../instructions/net#creating_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
 
    Note the following:
 

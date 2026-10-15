@@ -12,12 +12,12 @@
 {var(cloud)} техникалық қолдау порталына куәліктер федерациясы арқылы кіруді баптау үшін [нұсқаулықпен](/kz/access/iam/instructions/support-fim) танысыңыз.
 {/note}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=iam-ad-fim-prepare]}
 
 1. AD FS-ті [баптаңыз](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment), пайдаланушылар мен топтарды [жасаңыз](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps).
 1. AD FS метадеректері бар XML-файлды [экспорттаңыз](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-endpoints#federation-metadata-test).
 
-## 1. {var(cloud)} жүйесінде куәліктер федерациясын жасаңыз
+## {heading({counter(ad-fim)}. {var(cloud)} жүйесінде куәліктер федерациясын жасаңыз)[id=iam-ad-fim-create]}
 
 {include(/kz/_includes/_create-fim.md)[tags=ad-fs]}
 
@@ -27,7 +27,7 @@ Active Directory домені өзгерген кезде бар федерац�
 
 {/note}
 
-## 2. AD FS-ті баптаңыз
+## {heading({counter(ad-fim)}. AD FS-ті баптаңыз)[id=iam-ad-fim-set]}
 
 1. Федерация метадеректерінің көмегімен [сенім қатынасын жасаңыз](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata). Федерацияны жасау кезінде алынған метадеректері бар XML-файлды пайдаланыңыз.
 1. Пайдаланушы атрибуттары мен AD FS шығыс мәлімдемелері түрлерінің (Claims Mapping) арасындағы сәйкестікті баптаңыз, ол үшін келесі ережелерді [қосыңыз](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/checklist--creating-claim-rules-for-a-relying-party-trust):
@@ -59,7 +59,7 @@ Active Directory домені өзгерген кезде бар федерац�
         - **Outgoing claim type**: `Group`.
         - **Outgoing claim value**: `<НАЗВАНИЕ_ГРУППЫ>`.
 
-## 3. {var(cloud)} жүйесінде топтар мен рөлдер арасындағы байланысты баптаңыз
+## {heading({counter(ad-fim)}. {var(cloud)} жүйесінде топтар мен рөлдер арасындағы байланысты баптаңыз)[id=iam-ad-fim-connect]}
 
 {var(cloud)} жүйесінде AD FS топтары мен рөлдері арасындағы байланысты баптау операциялары жеке кабинеттің келесі [рөлдеріне](/kz/access/iam/concepts/rolesandpermissions) ғана қолжетімді: иесіне, суперадминистраторға және пайдаланушылар әкімшісіне (IAM). Байланыстарды қарау жоба әкімшісі мен бақылаушыға да қолжетімді.
 
@@ -80,14 +80,14 @@ Active Directory домені өзгерген кезде бар федерац�
 
     1. **Қосу** түймесін басыңыз.
 
-## 4. Федерация арқылы кіру мүмкіндігін тексеріңіз
+## {heading({counter(ad-fim)}. Федерация арқылы кіру мүмкіндігін тексеріңіз)[id=iam-ad-fim-check]}
 
 1. {var(cloud)} аккаунтына [өтіңіз](https://cloud.vk.kz/account).
 1. **Куәліктер федерациясы** бөліміне өтіп, **Федерациялар** қойындысын ашыңыз.
 1. **Федеративті пайдаланушыларға арналған кіру URL** параметрінің мәнін көшіріп алыңыз.
 1. Алынған URL мекенжайын браузер жолына қойыңыз. Сіз AD FS аутентификация бетіне қайта бағытталасыз.
 1. Өз корпоративтік аутентификация деректеріңізді енгізіңіз. Сәтті авторизациядан кейін {var(cloud)} жеке кабинетінің басты бетіне қайта бағытталасыз.
-1. {var(cloud)} пайдаланушысына автоматты түрде тағайындалған рөл [топты қосу](#3_vk_cloud_zhuyesinde_toptar_men_rolder_arasyndagy_baylanysty_baptanyz) кезінде таңдалған рөлге сәйкес келетінін тексеріңіз.
+1. {var(cloud)} пайдаланушысына автоматты түрде тағайындалған рөл [топты қосу](#iam-ad-fim-connect) кезінде таңдалған рөлге сәйкес келетінін тексеріңіз.
 
 {note:warn}
 

@@ -127,7 +127,7 @@ Here:
 
   - `router_id = vkcs_networking_subnet.example.id`: the subnet will be connected to the router that will be created with the `vkcs_networking_router` resource.
   - `router_id = data.vkcs_networking_subnet.example.id`: the subnet will be connected to the existing router. The router ID is taken from the `vkcs_networking_router` data source.
-  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: the subnet will be connected to the existing router. The router ID is taken from the [list of routers](/en/networks/vnet/instructions/router#viewing_a_list_of_routers_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: the subnet will be connected to the existing router. The router ID is taken from the [list of routers](/en/networks/vnet/instructions/router#vnet-router-view) in the VK Cloud account or via the Openstack CLI.
 
   {/cut}
 
