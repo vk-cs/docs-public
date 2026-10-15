@@ -1,8 +1,18 @@
-### Service Description
+## Service Description
 
-Cloud Logging is a service for working with user application logs on VMs and in VK Cloud. It provides collecting, storing, reading, displaying and processing logs in a single interface in the cloud.
+Cloud Logging is a service for managing logs from user applications running on VMs and within the {var(cloud)} cloud. It provides a unified cloud interface for collecting, storing, reading, displaying, and processing logs.
 
-The service centralizes the logs of the entire product system in a single control panel, stores records and makes it convenient to search and work with them. It also helps to control the operation of applications and debug them if necessary.
+The service centralizes logs from the entire product system into a single dashboard, stores records, and enables convenient searching and management. It also aids in monitoring application performance and facilitates debugging when necessary.
+
+Cloud Logging records events triggered via the management console or API. For example, you can identify who disabled a specific server.
+
+The service maintains an event log for:
+
+- Kubernetes clusters with the Fluent Bit addon installed.
+- Virtual machines for which logging is enabled at [creation](../../../../computing/iaas/instructions/vm/vm-create) or on which the Fluent Bit agent is later [installed](../../instructions/connect-plugin).
+- Databases:
+  - PostgreSQL
+  - ClickHouse
 
 ### Advantages
 

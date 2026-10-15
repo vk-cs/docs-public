@@ -5,7 +5,7 @@
    ```console
    curl https://cloudlogging.hb.ru-msk.vkcloud-storage.ru/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
-   
+
 1. Установите плагин `vkcloudlogs-fluent-bit-plugin`.
 
    {tabs}

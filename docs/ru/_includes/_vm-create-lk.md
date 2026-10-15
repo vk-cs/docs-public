@@ -139,6 +139,9 @@
      {ifndef(private-cert)}
    - **Включить мониторинг**: включите, чтобы установить агент для отправки метрик в {linkto(../../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=сервис мониторинга]}.
      {/ifndef}
+     {ifdef(public)}
+   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
+     {/ifdef}
      {/includetag}
      {includetag(create-from-disk)}
      {ifdef(public)}
@@ -152,6 +155,9 @@
      {ifndef(private-cert)}
    - **Включить мониторинг**: включите, чтобы установить агент для отправки метрик в {linkto(../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=сервис мониторинга]}.
      {/ifndef}
+     {ifdef(public)}
+   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
+     {/ifdef}
      {/includetag}
    {includetag(create,create-from-disk)}
 1. Укажите нужные параметры в блоке {ifdef(public)}**Резервное копирование**{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}**Настройка резервного копирования**{/ifdef}.
