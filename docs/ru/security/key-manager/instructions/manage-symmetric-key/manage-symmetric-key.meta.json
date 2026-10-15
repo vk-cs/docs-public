@@ -5,7 +5,7 @@
   "sectionTitle": "Управление симметричным ключом",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "a937a028-9219-410b-b7de-e0419e7e7d70",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Менеджер ключей",
   "icon": "",
   "weight": 21,
-  "uuid": "",
+  "uuid": "35f280c8-33e2-4ded-90be-5d1bf0a4963d",
   "build": {
     "for": [
       "public"
