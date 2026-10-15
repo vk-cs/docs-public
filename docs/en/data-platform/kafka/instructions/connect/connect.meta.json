@@ -1,8 +1,8 @@
 {
-  "title": "Connecting to a service instance",
-  "shortDescription": "How to connect via TLS to a service instance",
-  "metaDescription": "Learn how to connect via TLS to a deployed Cloud Kafka service instance using kafka-cli in VK Data Platform",
-  "sectionTitle": "Connecting to a service instance",
+  "title": "Connect through Kafka CLI and kcat",
+  "shortDescription": "Configure the tools and check the connection with or without TLS",
+  "metaDescription": "Connect to Cloud Kafka on VK Data Platform through Kafka CLI and kcat: prepare connection parameters, configure TLS or a connection without TLS, and check access",
+  "sectionTitle": "Connect through Kafka CLI and kcat",
   "build": {
     "for": [
       "public",

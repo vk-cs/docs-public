@@ -106,3 +106,5 @@ Kafka Bridge — Cloud Kafka компоненті. Ол HTTP арқылы топ
    {/tabs}
 
    Топиктер тізімі бар `200 OK` жауабы, тізім бос болса да, Kafka Bridge REST API-іне қол жеткізу бар екенін растайды.
+
+REST API әдістері мен параметрлері [Strimzi Kafka Bridge ресми құжаттамасында](https://strimzi.io/docs/bridge/latest/#api_reference-bridge) сипатталған.

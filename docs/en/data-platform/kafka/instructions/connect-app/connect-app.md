@@ -20,7 +20,7 @@ Continue with the instructions for your programming language:
 
 ## {heading(Java)[id=kafka_connect-java]}
 
-To connect with Java, use the `kafka-clients` library. The minimum JDK version is `11`.
+To connect with Java, use the [`kafka-clients`](https://kafka.apache.org/41/javadoc/) library. The minimum JDK version is `11`.
 
 1. Add a dependency to your Java project using Maven or Gradle:
 
@@ -121,7 +121,7 @@ To connect with Java, use the `kafka-clients` library. The minimum JDK version i
 
 ## {heading(Scala)[id=kafka_connect-scala]}
 
-To connect with Scala, use the `kafka-clients` library. The minimum JDK version is `11`.
+To connect with Scala, use the [`kafka-clients`](https://kafka.apache.org/41/javadoc/) library. The minimum JDK version is `11`.
 
 1. Add a dependency to `build.sbt`:
 
@@ -214,7 +214,7 @@ To connect with Scala, use the `kafka-clients` library. The minimum JDK version 
 
 ## {heading(Python)[id=kafka_connect-python]}
 
-To connect with Python, use the `confluent-kafka-python` client library.
+To connect with Python, use the [`confluent-kafka-python`](https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html) client library.
 
 1. Install the library in a terminal in the same Python environment in which you will run the example:
 
@@ -283,7 +283,7 @@ To connect with Python, use the `confluent-kafka-python` client library.
 
 ## {heading(Go)[id=kafka_connect-go]}
 
-To connect with Go, use the `Sarama` client library.
+To connect with Go, use the [`Sarama`](https://pkg.go.dev/github.com/IBM/sarama) client library.
 
 1. In a terminal, go to the Go project directory.
 1. Install the dependencies:
@@ -431,7 +431,7 @@ To connect with Go, use the `Sarama` client library.
 
 ## {heading(C / C++)[id=kafka_connect-c]}
 
-To connect with C or C++, use the `librdkafka` client library. The examples use its C API.
+To connect with C or C++, use the [`librdkafka`](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html) client library. The examples use its C API.
 
 1. Install the librdkafka development files with TLS and SASL SCRAM support. For example, run the following command in an Ubuntu terminal:
 
@@ -541,7 +541,7 @@ To connect with C or C++, use the `librdkafka` client library. The examples use 
 
 ## {heading(.NET)[id=kafka_connect-dotnet]}
 
-To connect with .NET, use the `Confluent.Kafka` client library.
+To connect with .NET, use the [`Confluent.Kafka`](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html) client library.
 
 1. Create a console application to check the connection and go to its project directory:
 
@@ -623,7 +623,7 @@ To connect with .NET, use the `Confluent.Kafka` client library.
 
 ## {heading(Node.js)[id=kafka_connect-node]}
 
-To connect with Node.js, use the `@confluentinc/kafka-javascript` client library.
+To connect with Node.js, use the [`@confluentinc/kafka-javascript`](https://docs.confluent.io/kafka-clients/javascript/current/overview.html) client library.
 
 1. Install the library in the project directory:
 

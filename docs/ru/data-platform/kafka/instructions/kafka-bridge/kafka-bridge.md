@@ -104,3 +104,5 @@ Kafka Bridge — компонент Cloud Kafka, который предоста
    {/tabs}
 
    Ответ с кодом `200 OK` и списком топиков, в том числе пустым, подтверждает доступ к REST API Kafka Bridge.
+
+Методы и параметры REST API описаны в [официальной документации Strimzi Kafka Bridge](https://strimzi.io/docs/bridge/latest/#api_reference-bridge).

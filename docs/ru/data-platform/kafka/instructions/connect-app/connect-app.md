@@ -18,7 +18,7 @@
 
 ## {heading(Java)[id=kafka_connect-java]}
 
-Для подключения с помощью Java используйте клиентскую библиотеку `kafka-clients`. Минимальная версия JDK — `11`.
+Для подключения с помощью Java используйте клиентскую библиотеку [`kafka-clients`](https://kafka.apache.org/41/javadoc/). Минимальная версия JDK — `11`.
 
 1. Добавьте зависимость в Java-проект с Maven или Gradle:
 
@@ -119,7 +119,7 @@
 
 ## {heading(Scala)[id=kafka_connect-scala]}
 
-Для подключения с помощью Scala используйте клиентскую библиотеку `kafka-clients`. Минимальная версия JDK — `11`.
+Для подключения с помощью Scala используйте клиентскую библиотеку [`kafka-clients`](https://kafka.apache.org/41/javadoc/). Минимальная версия JDK — `11`.
 
 1. Добавьте зависимость в файл `build.sbt`:
 
@@ -212,7 +212,7 @@
 
 ## {heading(Python)[id=kafka_connect-python]}
 
-Для подключения с помощью Python используйте клиентскую библиотеку `confluent-kafka-python`.
+Для подключения с помощью Python используйте клиентскую библиотеку [`confluent-kafka-python`](https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html).
 
 1. Установите библиотеку в терминале в том же окружении Python, в котором будете запускать пример:
 
@@ -281,7 +281,7 @@
 
 ## {heading(Go)[id=kafka_connect-go]}
 
-Для подключения с помощью Go используйте клиентскую библиотеку `Sarama`.
+Для подключения с помощью Go используйте клиентскую библиотеку [`Sarama`](https://pkg.go.dev/github.com/IBM/sarama).
 
 1. Перейдите в терминале в директорию Go-проекта.
 1. Установите зависимости:
@@ -429,7 +429,7 @@
 
 ## {heading(C / C++)[id=kafka_connect-c]}
 
-Для подключения с помощью C или C++ используйте клиентскую библиотеку `librdkafka`. В примерах применяется API на C.
+Для подключения с помощью C или C++ используйте клиентскую библиотеку [`librdkafka`](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html). В примерах применяется API на C.
 
 1. Установите средства разработки librdkafka с поддержкой TLS и SASL SCRAM. Например, в терминале Ubuntu выполните команду:
 
@@ -539,7 +539,7 @@
 
 ## {heading(.NET)[id=kafka_connect-dotnet]}
 
-Для подключения с помощью .NET используйте клиентскую библиотеку `Confluent.Kafka`.
+Для подключения с помощью .NET используйте клиентскую библиотеку [`Confluent.Kafka`](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html).
 
 1. Создайте консольное приложение для проверки подключения и перейдите в директорию проекта:
 
@@ -621,7 +621,7 @@
 
 ## {heading(Node.js)[id=kafka_connect-node]}
 
-Для подключения с помощью Node.js используйте клиентскую библиотеку `@confluentinc/kafka-javascript`.
+Для подключения с помощью Node.js используйте клиентскую библиотеку [`@confluentinc/kafka-javascript`](https://docs.confluent.io/kafka-clients/javascript/current/overview.html).
 
 1. Установите библиотеку в директории проекта:
 

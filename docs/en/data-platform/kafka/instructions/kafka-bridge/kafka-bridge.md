@@ -106,3 +106,5 @@ Kafka Bridge is a Cloud Kafka component that provides a REST API for sending mes
    {/tabs}
 
    A `200 OK` response with a list of topics, which may be empty, confirms access to the Kafka Bridge REST API.
+
+REST API methods and parameters are described in the [official Strimzi Kafka Bridge documentation](https://strimzi.io/docs/bridge/latest/#api_reference-bridge).

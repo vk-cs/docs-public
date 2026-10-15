@@ -20,7 +20,7 @@
 
 ## {heading(Java)[id=kafka_connect-java]}
 
-Java арқылы қосылу үшін `kafka-clients` клиенттік кітапханасын пайдаланыңыз. JDK-ның ең төменгі нұсқасы — `11`.
+Java арқылы қосылу үшін [`kafka-clients`](https://kafka.apache.org/41/javadoc/) клиенттік кітапханасын пайдаланыңыз. JDK-ның ең төменгі нұсқасы — `11`.
 
 1. Maven немесе Gradle пайдаланатын Java жобасына тәуелділікті қосыңыз:
 
@@ -121,7 +121,7 @@ Java арқылы қосылу үшін `kafka-clients` клиенттік кі�
 
 ## {heading(Scala)[id=kafka_connect-scala]}
 
-Scala арқылы қосылу үшін `kafka-clients` клиенттік кітапханасын пайдаланыңыз. JDK-ның ең төменгі нұсқасы — `11`.
+Scala арқылы қосылу үшін [`kafka-clients`](https://kafka.apache.org/41/javadoc/) клиенттік кітапханасын пайдаланыңыз. JDK-ның ең төменгі нұсқасы — `11`.
 
 1. `build.sbt` файлына тәуелділікті қосыңыз:
 
@@ -214,7 +214,7 @@ Scala арқылы қосылу үшін `kafka-clients` клиенттік кі
 
 ## {heading(Python)[id=kafka_connect-python]}
 
-Python арқылы қосылу үшін `confluent-kafka-python` клиенттік кітапханасын пайдаланыңыз.
+Python арқылы қосылу үшін [`confluent-kafka-python`](https://docs.confluent.io/platform/current/clients/confluent-kafka-python/html/index.html) клиенттік кітапханасын пайдаланыңыз.
 
 1. Кітапхананы мысалды іске қосатын Python ортасында терминал арқылы орнатыңыз:
 
@@ -283,7 +283,7 @@ Python арқылы қосылу үшін `confluent-kafka-python` клиент�
 
 ## {heading(Go)[id=kafka_connect-go]}
 
-Go арқылы қосылу үшін `Sarama` клиенттік кітапханасын пайдаланыңыз.
+Go арқылы қосылу үшін [`Sarama`](https://pkg.go.dev/github.com/IBM/sarama) клиенттік кітапханасын пайдаланыңыз.
 
 1. Терминалда Go жобасының директориясына өтіңіз.
 1. Тәуелділіктерді орнатыңыз:
@@ -431,7 +431,7 @@ Go арқылы қосылу үшін `Sarama` клиенттік кітапха
 
 ## {heading(C / C++)[id=kafka_connect-c]}
 
-C немесе C++ арқылы қосылу үшін `librdkafka` клиенттік кітапханасын пайдаланыңыз. Мысалдарда C тілінің API-і қолданылады.
+C немесе C++ арқылы қосылу үшін [`librdkafka`](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html) клиенттік кітапханасын пайдаланыңыз. Мысалдарда C тілінің API-і қолданылады.
 
 1. TLS және SASL SCRAM қолдауы бар librdkafka әзірлеу құралдарын орнатыңыз. Мысалы, Ubuntu терминалында мына команданы орындаңыз:
 
@@ -541,7 +541,7 @@ C немесе C++ арқылы қосылу үшін `librdkafka` клиент�
 
 ## {heading(.NET)[id=kafka_connect-dotnet]}
 
-.NET арқылы қосылу үшін `Confluent.Kafka` клиенттік кітапханасын пайдаланыңыз.
+.NET арқылы қосылу үшін [`Confluent.Kafka`](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html) клиенттік кітапханасын пайдаланыңыз.
 
 1. Қосылуды тексеруге арналған консольдік қолданба жасап, жоба директориясына өтіңіз:
 
@@ -623,7 +623,7 @@ C немесе C++ арқылы қосылу үшін `librdkafka` клиент�
 
 ## {heading(Node.js)[id=kafka_connect-node]}
 
-Node.js арқылы қосылу үшін `@confluentinc/kafka-javascript` клиенттік кітапханасын пайдаланыңыз.
+Node.js арқылы қосылу үшін [`@confluentinc/kafka-javascript`](https://docs.confluent.io/kafka-clients/javascript/current/overview.html) клиенттік кітапханасын пайдаланыңыз.
 
 1. Жоба директориясында кітапхананы орнатыңыз:
 
