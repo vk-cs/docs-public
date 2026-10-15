@@ -1,6 +1,8 @@
+# {heading(Standard routers)[id=vnet-router]}
+
 You can manage routers: view, edit and delete them.
 
-## Viewing a list of routers and information about them
+## {heading(Viewing a list of routers and information about them)[id=vnet-router-view]}
 
 {tabs}
 
@@ -14,7 +16,7 @@ You can manage routers: view, edit and delete them.
 
 1. Click on the name of the necessary router.
 
-   A page with detailed information about the router will open. You can also [edit](#editing_a_router) router parameters on this page.
+   A page with detailed information about the router will open. You can also [edit](#vnet-router-edit) router parameters on this page.
 
 {/tab}
 
@@ -41,14 +43,14 @@ You can manage routers: view, edit and delete them.
 
    - `id`: the router's ID.
    - `external_gateway_info`: information on connection to external network. A blank field means that connection to the external network is not configured.
-   - `interfaces_info`: information about [interfaces of the router](#managing_an_interface). A blank field means that no interfaces have been added.
-   - `routes`: information about [static router routes](#managing_static_routes). An empty field means no static routes were added.
+   - `interfaces_info`: information about [interfaces of the router](#vnet-router-interfaces-manage). A blank field means that no interfaces have been added.
+   - `routes`: information about [static router routes](#vnet-router-static-routs-manage). An empty field means no static routes were added.
 
 {/tab}
 
 {/tabs}
 
-## Adding a router
+## {heading(Adding a router)[id=vnet-router-add]}
 
 {tabs}
 
@@ -102,13 +104,13 @@ You can manage routers: view, edit and delete them.
 
    A router with an external network connection will have Internet access and a public IP address. Create this type of router if you plan to assign floating IP addresses to ports on subnets connected to the router and provide Internet access from those subnets.
 
-1. Learn how to connect one or more interfaces to the router by either [editing the router](#editing_a_router) or [managing its interfaces](#managing_an_interface) directly.
+1. Learn how to connect one or more interfaces to the router by either [editing the router](#vnet-router-edit) or [managing its interfaces](#vnet-router-interfaces-manage) directly.
 
 {/tab}
 
 {/tabs}
 
-## Editing a router
+## {heading(Editing a router)[id=vnet-router-edit]}
 
 {tabs}
 
@@ -147,7 +149,7 @@ You can manage routers: view, edit and delete them.
 
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
-1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
+1. [Get the ID](#vnet-router-view) of the necessary router.
 1. Perform one of the available actions:
 
    - Change the name of the router:
@@ -220,7 +222,7 @@ You can manage routers: view, edit and delete them.
 
      {note:info}
 
-     You can also add or remove a subnet by [changing the interface](#managing_an_interface) of the router.
+     You can also add or remove a subnet by [changing the interface](#vnet-router-interfaces-manage) of the router.
 
      {/note}
 
@@ -228,15 +230,15 @@ You can manage routers: view, edit and delete them.
 
 {/tabs}
 
-## Managing an interface
+## {heading(Managing an interface)[id=vnet-router-interfaces-manage]}
 
-Router interface management is an alternative to [managing subnets](#editing_a_router) connected to it.
+Router interface management is an alternative to [managing subnets](#vnet-router-edit) connected to it.
 
 {tabs}
 
 {tab(Management console)}
 
-1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page and select tab **Interfaces**.
+1. [Go to](#vnet-router-view) the router page and select tab **Interfaces**.
 
 1. To add an interface:
 
@@ -268,7 +270,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
-1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
+1. [Get the ID](#vnet-router-view) of the necessary router.
 
 1. To add an interface:
 
@@ -286,13 +288,13 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
    {note:info}
 
-   To get a list of interfaces, [see router details](#viewing_a_list_of_routers_and_information_about_them) using the OpenStack CLI.
+   To get a list of interfaces, [see router details](#vnet-router-view) using the OpenStack CLI.
 
    {/note}
 
 1. To remove an interface:
 
-    1. [Look at the interfaces (ports)](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
+    1. [Look at the interfaces (ports)](#vnet-router-view) configured on the router.
     1. Run the command:
 
        ```console
@@ -311,13 +313,13 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 {/tabs}
 
-## Managing Static Routes
+## {heading(Managing Static Routes)[id=vnet-router-static-routs-manage]}
 
 {tabs}
 
 {tab(Management console)}
 
-1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page, then select the **Static Routes** tab.
+1. [Go to](#vnet-router-view) the router page, then select the **Static Routes** tab.
 
 1. To add a static route:
 
@@ -337,7 +339,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
-1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
+1. [Get the ID](#vnet-router-view) of the necessary router.
 
 1. To add a static route, run the command:
 
@@ -347,7 +349,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. To remove a static route:
 
-    1. [Look up the static routes](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
+    1. [Look up the static routes](#vnet-router-view) configured on the router.
     1. Run the command:
 
        ```console
@@ -368,7 +370,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 {note:warn}
 
-Before deleting the router, delete the [static routes](#managing-static-routes) and the configured [interfaces](#managing_an_interface) (if any) one by one before deleting the router.
+Before deleting the router, delete the [static routes](#vnet-router-static-routs-manage) and the configured [interfaces](#vnet-router-interfaces-manage) (if any) one by one before deleting the router.
 
 {/note}
 
@@ -400,7 +402,7 @@ To remove a router:
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
-1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
+1. [Get the ID](#vnet-router-view) of the necessary router.
 
 1. Run the command:
 

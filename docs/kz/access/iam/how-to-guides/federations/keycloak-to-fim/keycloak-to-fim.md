@@ -68,7 +68,7 @@
         * **SAML Attribute Name**: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`.
         * **SAML Attribute NameFormat**: `URI Reference`.
 
-## 3. {var(cloud)} жүйесінде топтар мен рөлдер арасындағы байланысты баптаңыз
+## {heading(3. {var(cloud)} жүйесінде топтар мен рөлдер арасындағы байланысты баптаңыз)[id=iam-keycloak-fim-groups-roles]}
 
 {note:info}
 
@@ -98,4 +98,4 @@
 1. Keycloak-та пайдаланушы [жасаңыз](https://www.keycloak.org/docs/latest/server_admin/index.html#proc-creating-user_server_administration_guide) және оны қажетті топқа [қосыңыз](https://www.keycloak.org/docs/latest/server_admin/index.html#proc-managing-groups_server_administration_guide).
 1. Браузер жолына федеративті пайдаланушыларға арналған кіру URL мекенжайын енгізіңіз. Сіз Keycloak аутентификация бетіне қайта бағытталасыз.
 1. Пайдаланушының аутентификация деректерін енгізіңіз. Сәтті авторизациядан кейін {var(cloud)} жеке кабинетінің басты бетіне қайта бағытталасыз.
-1. {var(cloud)} пайдаланушысына автоматты түрде тағайындалған рөл [топты қосу](#3_vk_cloud_zhuyesinde_toptar_men_rolder_arasyndagy_baylanysty_baptanyz) кезінде таңдалған рөлге сәйкес келетінін тексеріңіз.
+1. {var(cloud)} пайдаланушысына автоматты түрде тағайындалған рөл [топты қосу](#iam-keycloak-fim-groups-roles) кезінде таңдалған рөлге сәйкес келетінін тексеріңіз.

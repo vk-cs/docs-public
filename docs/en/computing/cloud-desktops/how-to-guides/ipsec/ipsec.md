@@ -15,7 +15,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create an LDAP environment:
 
-    1. Select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
+    1. Select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
 
         Write down the following:
 
@@ -28,7 +28,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create a VDI environment:
 
-    1. In VK Cloud, select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#adding_a_router) a new one.
+    1. In VK Cloud, select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
 
         Write down the following:
 

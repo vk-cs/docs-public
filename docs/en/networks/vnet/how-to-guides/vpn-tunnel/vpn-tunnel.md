@@ -345,7 +345,7 @@ If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) virtual machines.
 1. [Delete](../../instructions/vpn#vnet-vpn-delete) VPN tunnel.
-1. [Delete](../../instructions/router#managing_static_routes) static routes defined on the side of the client network.
+1. [Delete](../../instructions/router#vnet-router-static-routs-manage) static routes defined on the side of the client network.
 
    {note:info}
 
