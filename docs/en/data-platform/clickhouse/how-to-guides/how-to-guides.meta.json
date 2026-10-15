@@ -4,7 +4,7 @@
   "metaDescription": "How-to guides for Cloud ClickHouse in VK Data Platform: configure data processing and loading workflows through practical examples",
   "sectionTitle": "How-to guides",
   "weight": 4,
-  "uuid": "",
+  "uuid": "6f0054d8-50e0-4536-993e-12e8131c82e7",
   "build": {
     "for": [
       "public",

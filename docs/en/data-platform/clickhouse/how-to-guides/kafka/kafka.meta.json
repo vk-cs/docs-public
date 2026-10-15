@@ -4,7 +4,7 @@
   "metaDescription": "Learn how to load data from Kafka into Cloud ClickHouse using a table with the Kafka engine and a materialized view in VK Data Platform",
   "sectionTitle": "Loading data from Kafka",
   "weight": 1,
-  "uuid": "",
+  "uuid": "0fe00a3b-bf50-4bba-9ad0-0157a58cef71",
   "build": {
     "for": [
       "public",

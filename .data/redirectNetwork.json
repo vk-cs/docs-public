@@ -34147,7 +34147,7 @@
   },
   {
     "source": "/ru/data-platform/clickhouse/instructions/connect-to-instance",
-    "destination": "/ru/data-platform/clickhouse/instructions/connect",
+    "destination": "/ru/data-platform/clickhouse/connections/connect",
     "permanent": false,
     "locale": false
   },
@@ -34298,6 +34298,30 @@
   {
     "source": "/en/monitoring-services/alerting/incidents",
     "destination": "/en/monitoring-services/alerting/instructions/incidents",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/clickhouse/instructions/connect",
+    "destination": "/ru/data-platform/clickhouse/connections/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/data-platform/clickhouse/instructions/connect",
+    "destination": "/ru/data-platform/clickhouse/connections/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/clickhouse/instructions/connect",
+    "destination": "/en/data-platform/clickhouse/connections/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/data-platform/clickhouse/instructions/connect",
+    "destination": "/en/data-platform/clickhouse/connections/connect",
     "permanent": false,
     "locale": false
   }

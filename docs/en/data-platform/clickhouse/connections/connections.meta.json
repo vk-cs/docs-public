@@ -4,7 +4,7 @@
   "metaDescription": "Learn how to connect to a Cloud ClickHouse instance in VK Data Platform: find the connection parameters and choose a suitable protocol",
   "sectionTitle": "Connection",
   "weight": 2,
-  "uuid": "",
+  "uuid": "25b22a22-802a-4a93-a636-3ab835ca5d3b",
   "build": {
     "for": [
       "public",

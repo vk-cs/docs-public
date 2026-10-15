@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте, как настроить загрузку данных из Kafka в Cloud ClickHouse с помощью таблицы с движком Kafka и материализованного представления в VK Data Platform",
   "sectionTitle": "Загрузка данных из Kafka",
   "weight": 1,
-  "uuid": "",
+  "uuid": "67ca0fda-5711-4aae-b01c-c65bf42848a7",
   "build": {
     "for": [
       "public",

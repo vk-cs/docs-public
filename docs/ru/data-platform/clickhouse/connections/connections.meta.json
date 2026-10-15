@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте, как подключиться к экземпляру Cloud ClickHouse в VK Data Platform: получите параметры подключения и выберите подходящий протокол",
   "sectionTitle": "Подключение",
   "weight": 2,
-  "uuid": "",
+  "uuid": "6e9e908e-cf56-41ed-a9e3-e3f3f6bfca8f",
   "build": {
     "for": [
       "public",

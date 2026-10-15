@@ -4,7 +4,7 @@
   "metaDescription": "Практические руководства по работе с Cloud ClickHouse в VK Data Platform: настройка сценариев обработки и загрузки данных на конкретных примерах",
   "sectionTitle": "Практические руководства",
   "weight": 4,
-  "uuid": "",
+  "uuid": "c84586bb-2358-4624-b395-549e77a75324",
   "build": {
     "for": [
       "public",

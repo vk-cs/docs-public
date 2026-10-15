@@ -4,7 +4,7 @@
   "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse данасына қосылу жолын біліңіз: қосылым параметрлерін алыңыз және тиісті протоколды таңдаңыз",
   "sectionTitle": "Қосылу",
   "weight": 2,
-  "uuid": "",
+  "uuid": "3cc3b76e-9d1c-46c6-85c8-4434f8c06978",
   "build": {
     "for": [
       "public",

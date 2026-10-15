@@ -4,7 +4,7 @@
   "metaDescription": "VK Data Platform жүйесіндегі Cloud ClickHouse бойынша практикалық нұсқаулықтар: деректерді өңдеу және жүктеу сценарийлерін нақты мысалдар арқылы реттеу",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "weight": 4,
-  "uuid": "",
+  "uuid": "fd401adc-8777-4597-910c-b227758237b5",
   "build": {
     "for": [
       "public",

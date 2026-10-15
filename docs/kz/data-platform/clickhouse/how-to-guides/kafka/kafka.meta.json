@@ -4,7 +4,7 @@
   "metaDescription": "VK Data Platform жүйесінде Kafka қозғалтқышы бар кесте мен материалдандырылған көрініс арқылы Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу жолын біліңіз",
   "sectionTitle": "Kafka-дан деректерді жүктеу",
   "weight": 1,
-  "uuid": "",
+  "uuid": "d935ee56-a269-4614-bc80-261237abf7a7",
   "build": {
     "for": [
       "public",

@@ -5,7 +5,7 @@
   "sectionTitle": "Установка и настройка сервиса Apache Kafka",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "64cfa636-6c48-4966-b6f2-adac9bd3fc36",
   "build": {
     "for": [
       "public"
