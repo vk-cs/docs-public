@@ -1,11 +1,5 @@
 # {heading(Управление секретом)[id=sm-manage-secret]}
 
-{note:info}
-
-Для получения доступа к сервису обратитесь в [техническую поддержку](/ru/contacts).
-
-{/note}
-
 ## {heading(Просмотр списка секретов)[id=sm-manage-list]}
 
 {tabs}
