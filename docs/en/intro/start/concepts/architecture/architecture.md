@@ -120,7 +120,7 @@ VK Cloud provides [technical support](/en/intro/start/support/support-info) for 
 
 ## Fault tolerance
 
-Physical fault tolerance is implemented by placing VK Cloud in three Tier III reliability level data centers in the Russian Federation. With this placement, it is guaranteed to maintain the SLA of data centers of more than 98% with a total [SLA](/en/intro/start/support/sla) of 99.95%.
+Physical fault tolerance is implemented by placing VK Cloud in three Tier III reliability level data centers in the Russian Federation. Availability conditions are described at [https://cloud.vk.ru/docs/start/legal/offer/service-level-agreement](/ru/start/legal/offer/service-level-agreement "change-lang").
 
 Network fault tolerance is provided by communication of data centers with routes with a bandwidth of 200 GB/sec. Communication of each server with backbone providers goes through two independent channels, through two routers.
 

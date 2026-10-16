@@ -8,12 +8,11 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 
 Read more in the article [Cloud Servers overview](../about#disks).
 
-Certain performance characteristics are guaranteed for each type of disk. Quotas and limits on the quantity and size of disks are given in the [Quotas and Limits](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes) article.
+The table shows the expected performance characteristics for each type of disk. Quotas and limits on the quantity and size of disks are given in the [Quotas and Limits](/en/tools-for-using-services/account/concepts/quotasandlimits#images-volumes) article.
 
 {note:info}
 
-The latency value is guaranteed only for Low Latency NVMe disks.<br/>
-For other types of disks, the delay value is approximate and is indicated for reference.
+Latency values for all disk types are expected and provided for reference.
 
 {/note}
 
@@ -33,7 +32,7 @@ Disk performance depends on its volume. In some cases, to increase the speed of 
 
 ## Network HDD
 
-Below are detailed performance characteristics for network HDD drives of different sizes.
+Below are expected performance characteristics for network HDD drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
@@ -50,7 +49,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 ## Network SSD
 
-Below are detailed performance characteristics for network SSD drives of different sizes.
+Below are expected performance characteristics for network SSD drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
@@ -67,7 +66,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 ## High-IOPS SSD
 
-Below are detailed performance characteristics for network High-IOPS SSD drives of different sizes.
+Below are expected performance characteristics for network High-IOPS SSD drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
@@ -84,7 +83,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 ## High-IOPS HA SSD
 
-Below are detailed performance characteristics for network High-IOPS SSD HA drives of different sizes.
+Below are expected performance characteristics for network High-IOPS SSD HA drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
@@ -101,7 +100,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 ## Low Latency NVMe
 
-Below are detailed performance characteristics for local Low Latency NVMe drives of different sizes.
+Below are detailed expected performance characteristics for local Low Latency NVMe drives of different sizes.
 
 | Size, GB | Read, IOPS<br/>bs=4k,<br/>iodepth=32 | Read, MB/sec<br/>bs=1M,<br/>iodepth=16 | Write, IOPS<br/>bs=4k,<br/>iodepth=32 | Write, MB/sec<br/>bs=1M,<br/>iodepth=16 |
 |--------------|--------------|--------------|--------------|--------------|
@@ -127,9 +126,9 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
    | Type of testing | Result, IOPS |
    | ---- | ---- |
-   | Read/write in blocks of 4 KB in 32 threads | Complies with SLA   |
-   | Read/write in blocks of 8 KB in 32 threads | At least 75% of SLA |
-   | Read/write in blocks of 16 KB in 32 threads | At least 50% of the SLA |
+   | Read/write in blocks of 4 KB in 32 threads | Meets the target performance   |
+   | Read/write in blocks of 8 KB in 32 threads | At least 75% of the target performance |
+   | Read/write in blocks of 16 KB in 32 threads | At least 50% of the target performance |
 
 2. Test the disk.
 
