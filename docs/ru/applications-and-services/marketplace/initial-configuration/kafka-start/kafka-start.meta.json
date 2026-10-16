@@ -4,7 +4,7 @@
   "metaDescription": "Развернуть Apache Kafka из магазина приложений VK Cloud, настроить подключение, выполнить первые действия с топиками и настроить мониторинг",
   "sectionTitle": "Установка и настройка сервиса Apache Kafka",
   "icon": "",
-  "weight": 3,
+  "weight": 18,
   "uuid": "64cfa636-6c48-4966-b6f2-adac9bd3fc36",
   "build": {
     "for": [
