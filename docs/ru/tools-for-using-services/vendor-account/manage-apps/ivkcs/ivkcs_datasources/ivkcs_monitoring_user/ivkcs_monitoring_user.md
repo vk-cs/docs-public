@@ -31,7 +31,7 @@
 `auth_url`
 |URL-адрес авторизации в облачной платформе
 |
-`https://infra.mail.ru:5000/v3/`
+`https://infra.mail.ru/infra/identity/v3/`
 
 |
 `namespace`

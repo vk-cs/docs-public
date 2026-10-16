@@ -114,7 +114,7 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
            }
        }
    }' \
-   -i "https://infra.mail.ru:5000/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
+   -i "https://infra.mail.ru/infra/identity/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
    ```
 
    Пример команды для метода `token`:   
@@ -139,7 +139,7 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
            }
        }
    }' \
-   -i "https://infra.mail.ru:5000/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
+   -i "https://infra.mail.ru/infra/identity/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
    ```
    {/tab}
     
@@ -151,7 +151,7 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
    curl -X POST ^
    -H "Content-Type: application/json" ^
    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"name\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-   -i "https://infra.mail.ru:5000/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
+   -i "https://infra.mail.ru/infra/identity/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
    ```
 
    Пример команды для метода `token`:
@@ -160,7 +160,7 @@ HTTP и HTTPS-запросы к REST API по умолчанию работаю�
    curl -X POST ^
    -H "Content-Type: application/json" ^
    -d "{\"auth\": {\"identity\": {\"methods\": [\"token\"], \"token\": {\"id\": \"%$OS_TOKEN%\"}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-   -i "https://infra.mail.ru:5000/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
+   -i "https://infra.mail.ru/infra/identity/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
    ```
    
    {/tab}

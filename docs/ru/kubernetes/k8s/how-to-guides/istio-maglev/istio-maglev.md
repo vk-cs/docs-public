@@ -315,7 +315,7 @@ MAGLEV обеспечивает мягкую affinity, а не гарантир�
 
    ```powershell
    $env:KUBECONFIG = "C:\path\to\kubeconfig.yaml"
-   $env:OS_AUTH_URL = "https://infra.mail.ru:35357/v3/"
+   $env:OS_AUTH_URL = "https://infra.mail.ru/infra/identity/v3/"
    $env:OS_PROJECT_ID = "<project-id>"
    $env:OS_REGION_NAME = "RegionOne"
    $env:OS_USERNAME = "<username>"

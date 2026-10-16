@@ -65,8 +65,8 @@ provider "vkcs" {
 
 - `auth_url`:
 
-    - для региона Москва: `https://infra.mail.ru:35357/v3/`;
-    - для региона Казахстан: `https://kz.infra.mail.ru:35357/v3/`.
+    - для региона Москва: `https://infra.mail.ru/infra/identity/v3/`;
+    - для региона Казахстан: `https://kz.infra.mail.ru/infra/identity/v3/`.
 
 ## {heading(Файлы конфигурации ресурсов)[id=terraform_configuration_resource]}
 

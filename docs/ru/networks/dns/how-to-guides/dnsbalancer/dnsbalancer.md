@@ -75,7 +75,7 @@
     ```yaml
     config:
         url: "https://mcs.mail.ru/public-dns/" 
-        auth_url: "https://infra.mail.ru:3535/v3/" 
+        auth_url: "https://infra.mail.ru/infra/identity/v3/"
         login: "example@test" 
         password: "123456example" 
         project_id: "777e19938fe947666d5d3be5c00053d7" 
