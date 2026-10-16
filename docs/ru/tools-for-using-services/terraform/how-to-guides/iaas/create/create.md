@@ -286,6 +286,44 @@ output "instance_fip" {
 
 Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
+## {heading({counter(tf-vm)}. (Опционально) Включите конфигурационный диск)[id=terraform-iaas-create-config-drive]}
+
+Чтобы использовать конфигурационный диск для настройки сетевых параметров, а также передачи метаданных и пользовательских скриптов на ВМ, включите опцию `config_drive`.
+
+Это позволит настраивать работу ВМ в сетях, где отсутствует DHCP-сервер, или если виртуальная машина подключается к {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}.
+
+В файле `main.tf` в описании ресурса `vkcs_compute_instance` добавьте параметр `config_drive = true`. Пример:
+
+```hcl
+resource "vkcs_compute_instance" "compute" {
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
+  availability_zone       = var.availability_zone_name
+  config_drive            = true
+
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
+
+  network {
+    uuid = vkcs_networking_network.example.id
+  }
+
+  depends_on = [
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
+  ]
+}
+```
+
 ## {heading({counter(tf-vm)}. (Опционально) Настройте мониторинг на ВМ)[id=terraform-iaas-create-monitoring]}
 
 Это позволит при создании ВМ автоматически включить передачу ее метрик в сервис Cloud Monitoring.

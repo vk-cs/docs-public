@@ -286,7 +286,45 @@ output "instance_fip" {
 
 The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
 
-## 4. (Optional) Set up monitoring on VM
+## 4. (Optional) Enable configuration drive
+
+To use the configuration drive to set network parameters and pass metadata and user scripts to the VM, enable the `config_drive` option.
+
+This allows configuring the VM operation in networks without a DHCP server, or when the virtual machine is connected to an [external network](../../../../../networks/vnet/concepts/net-types#external_net).
+
+Add the `config_drive = true` parameter within the `vkcs_compute_instance` resource description in the `main.tf` file. Example:
+
+```hcl
+resource "vkcs_compute_instance" "compute" {
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
+  availability_zone       = var.availability_zone_name
+  config_drive            = true
+
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
+
+  network {
+    uuid = vkcs_networking_network.example.id
+  }
+
+  depends_on = [
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
+  ]
+}
+```
+
+## 5. (Optional) Set up monitoring on VM
 
 This will allow you to automatically enable the transfer of metrics to the Cloud Monitoring service when creating a VM.
 
@@ -355,7 +393,7 @@ Monitoring cannot be enabled for VMs that are not accessible from the external n
 
 The parameters for connecting to the Cloud Monitoring service are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md).
 
-## 5. Create resources using Terraform
+## 6. Create resources using Terraform
 
 1. Place all Terraform configuration files in the same directory:
 
@@ -386,7 +424,7 @@ The parameters for connecting to the Cloud Monitoring service are described in t
 
 Once resource creation is complete, the Terraform `instance_fip` output will show the floating IP address assigned to the VM.
 
-## 6. Check if example works
+## 7. Check if example works
 
 [Connect via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
 
