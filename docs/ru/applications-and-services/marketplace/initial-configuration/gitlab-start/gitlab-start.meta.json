@@ -1,0 +1,14 @@
+{
+  "title": "Развертывание GitLab CE",
+  "shortDescription": "Развертывание сервиса GitLab CE в проекте",
+  "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса GitLab CE в целевой проект",
+  "sectionTitle": "Развертывание GitLab CE",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

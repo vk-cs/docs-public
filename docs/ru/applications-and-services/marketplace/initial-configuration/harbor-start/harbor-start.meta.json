@@ -4,7 +4,7 @@
   "metaDescription": "Harbor в VK Cloud: шаги по развертыванию сервиса Harbor для хранения контейнерных образов, управления доступом к ним и проверки на уязвимости",
   "sectionTitle": "Развертывание Harbor",
   "icon": "",
-  "weight": 7,
+  "weight": 8,
   "uuid": "",
   "build": {
     "for": [
