@@ -140,7 +140,9 @@ The configurations available by default allow you to create VMs on servers with 
 
 A disk on the VK Cloud platform is a network block storage device that connects to a VM. The amount of stored data and the speed of access to it depends on the size and type of disk.
 
-The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuous access to data and their safety are ensured by replication.
+The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuous access to data and their safety are ensured by replication. The fault tolerance level depends on the disk type: copies can be located on different DSS servers or on the same server.
+
+{include(../../../../_includes/_high-iops-availability-warn.md)}
 
 Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
 
@@ -178,7 +180,7 @@ The VK Cloud platform supports various types of disks:
 | Network<br/>High-IOPS SSD
 | high-iops
 | MS1, GZ1, ME1, PA2
-| SSD with increased speed of operation. Double replication: both copies are on the same server of DSS. In case of a failure of the DSS, it will be necessary to prepare a new server and transfer physical disks with user data to the new server. Recovery time is not regulated
+| SSD with increased speed of operation. Double replication: both copies are on the same server of DSS. In case of a failure of the DSS, it will be necessary to prepare a new server and transfer physical disks with user data to the new server. Expected recovery time is up to 10 hours 57 minutes. No availability guarantees are provided for this disk type
 
 | Local <br/>Low Latency NVMe
 | ef-nvme
