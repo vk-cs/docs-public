@@ -70,6 +70,8 @@
 
     - **Название группы**: должно начинаться с буквы. Может состоять только из латинских строчных букв, цифр и дефисов `-` в качестве разделителя.
     - **Выделенные серверы**: выберите арендованный ранее сервер Bare Metal или {linkto(../../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=закажите]} новый.
+
+        Для добавления в группу узлов доступны только серверы с тегом `ManagedContainers`. Тег можно задать в поле **Теги** при {linkto(../../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=заказе сервера]} или {linkto(../../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-tag-create)[text=создать]} позже для уже заказанного сервера.
     - **Ключ подключения к серверу**: выберите уже существующий ключ для подключения к worker-узлам по SSH или создайте новый.
     - Параметры Kubernetes:  укажите {linkto(../../reference/labels-and-taints#mk8s-labels-and-taints)[text=метки (labels) и ограничения (taints)]}.
     - **Подтверждаю добавление**: установите флажок, чтобы подтвердить добавление группы worker-узлов типа Bare Metal. Если на сервере Bare Metal, который вы добавляете в группу узлов, есть данные, они будут безвозвратно удалены.
