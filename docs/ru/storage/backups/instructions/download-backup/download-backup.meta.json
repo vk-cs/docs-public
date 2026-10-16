@@ -5,7 +5,7 @@
   "sectionTitle": "Скачивание резервной копии диска ВМ",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "733449ea-12cb-40b9-b92d-4f87aa4b44da",
   "build": {
     "for": [
       "public"

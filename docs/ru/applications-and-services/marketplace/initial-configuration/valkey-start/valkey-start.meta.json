@@ -5,7 +5,7 @@
   "sectionTitle": "Установка и настройка сервиса Valkey",
   "icon": "",
   "weight": 22,
-  "uuid": "",
+  "uuid": "5f643059-ca1c-49af-abf2-6e04c412c780",
   "build": {
     "for": [
       "public"

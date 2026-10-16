@@ -5,7 +5,7 @@
   "sectionTitle": "Скачивание копии через личный кабинет",
   "icon": "",
   "weight": 0,
-  "uuid": "",
+  "uuid": "26c8aa90-f28b-4340-8d92-aa749712cc41",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "Перенос резервных копий дисков ВМ вне {var(cloud)}",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "a1cd724c-b219-4738-a9a4-0f2e22ebff37",
   "build": {
     "for": [
       "public"

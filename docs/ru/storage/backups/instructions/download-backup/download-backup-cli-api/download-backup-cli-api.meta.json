@@ -5,7 +5,7 @@
   "sectionTitle": "Скачивание копии через OpenStack CLI и API",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "20ca8223-6fba-4b18-b0a6-22ba299a0151",
   "build": {
     "for": [
       "public"

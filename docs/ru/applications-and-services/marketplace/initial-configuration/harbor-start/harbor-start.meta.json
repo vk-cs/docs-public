@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание Harbor",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "27eeeeaf-ab5d-42a1-aff8-a35aeac5b731",
   "build": {
     "for": [
       "public"
