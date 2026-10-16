@@ -1,6 +1,6 @@
 # {heading(Создание кластера в личном кабинете)[id=mk8s-create-webui-gen-2]}
 
-Далее описывается создание кластера Kubernetes из личного кабинета. Для кластеров включена интеграция с сервисом {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=мониторинга {var(cloud)}]}, отключить ее нельзя. 
+Для кластеров включена интеграция с сервисом {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=мониторинга {var(cloud)}]}, отключить ее нельзя. 
 
 <!-- Также вы можете создать кластер с помощью Terraform. [файл для TF скопировать из k8s] -->
 

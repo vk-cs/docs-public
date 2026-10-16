@@ -1,6 +1,6 @@
 # {heading(Создание кластера с помощью Terraform)[id=k8s-create-terraform]}
 
-Далее описывается создание кластера с помощью Terraform. Также вы можете создать кластер {linkto(../create-webui#k8s-create-webui)[text=в личном кабинете {var(cloud)}]}.
+Кластер Kubernetes можно создать не только через Terraform, но и через {linkto(../create-webui#k8s-create-webui)[text=личный кабинет {var(cloud)}]}.
 
 Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 

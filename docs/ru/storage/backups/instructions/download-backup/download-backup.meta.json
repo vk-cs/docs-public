@@ -1,0 +1,14 @@
+{
+  "title": "Скачивание резервной копии диска ВМ",
+  "shortDescription": "Как скачать файлы резервной копии диска ВМ из Cloud Backup через личный кабинет, OpenStack CLI или API",
+  "metaDescription": "Как скачать резервную копию диска ВМ из Cloud Backup через личный кабинет VK Cloud, OpenStack CLI или API и проверить целостность файлов.",
+  "sectionTitle": "Скачивание резервной копии диска ВМ",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
