@@ -127,7 +127,6 @@ Cloud Servers ішінде виртуалды машиналарды жеке к
 
 1. OpenStack CLI-пен жұмыс істеуге дайындалыңыз:
 
-    1. Екі факторлы аутентификацияны [қосыңыз](/kz/access/iam/instructions/manage-2fa).
     1. Ағымдағы пайдаланушы үшін API арқылы қолжетімділікті [белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
     1. OpenStack клиентінің [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 

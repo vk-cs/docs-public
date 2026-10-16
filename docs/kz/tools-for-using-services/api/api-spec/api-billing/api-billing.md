@@ -7,7 +7,6 @@
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
-1. Егер әлі жасалмаған болса, {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=екі факторлы аутентификацияны қосыңыз]}.
 1. Егер әлі жасалмаған болса, {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=API арқылы қолжетімділікті қосыңыз]}.
 1. `X-Auth-Token` қол жеткізу токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}. Сұрауларды жіберу кезінде токенді тақырыпта пайдаланыңыз.
 1. Сұрау жолында жобаңыздың [идентификаторын](/kz/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#zhoba_identifikatoryn_alu) (PID) көрсете отырып, `https://kz.cloud.vk.kz/billing/public/v1/projects/<PID>/balances/amount` эндпоинтін пайдаланыңыз.

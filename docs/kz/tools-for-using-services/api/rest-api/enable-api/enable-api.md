@@ -6,7 +6,12 @@ API арқылы қолжетімділікті белсендіру {var(cloud)
 
 ## {heading(API арқылы қолжетімділікті белсендіру)[id=rest-api-enable-activate]}
 
-1. [Қосыңыз](/kz/access/iam/instructions/manage-2fa) екі факторлы аутентификацияны.
+1. Егер бұл әлі жасалмаса, {linkto(../../../../access/iam/instructions/service-account-manage#service-account-create)[text=сервистік тіркелгі жазбасын жасаңыз]}.
+1. Егер бұл әлі жасалмаса, API-ға қолжетімділікті алыңыз:
+
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-download-rc-file)[text=OpenStack RC-файлын жүктеп алыңыз]}.
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-authorize)[text=Сервистік тіркелгі жазбасы арқылы OpenStack CLI-де авторизациядан өтіңіз]}.
+
 1. Бет үстіндегі пайдаланушы атына басып, API арқылы қолжетімділікті келесі тәсілдердің бірімен қосыңыз:
 
       {tabs}
@@ -30,6 +35,6 @@ API арқылы қолжетімділікті белсендіру {var(cloud)
 
 ## {heading(API арқылы қолжетімділікті өшіру)[id=rest-api-enable-deactivate]}
 
-1. Егер ол өшірілген болса, [қосыңыз](/kz/access/iam/instructions/manage-2fa#iam-manage-2fa-off) екі факторлы аутентификацияны.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Бет үстіндегі пайдаланушы атына басып, **Аккаунт баптаулары** тармағын таңдаңыз.
 1. **Қауіпсіздік** бөлімінде **API арқылы қолжетімділік** опциясын өшіріңіз.

@@ -1,6 +1,6 @@
 Service accounts are special accounts intended for programs. On behalf of service accounts, programs can manage VK Cloud resources and interact with each other without human intervention. Service accounts help automate such interactions.
 
-Like ordinary accounts, service accounts allow authorization in the API and CLI using a login and password. However, it is impossible to authorize in the VK Cloud management console using service accounts.
+Service accounts allow authorization in the API and CLI using a login and password. It is impossible to authorize in the VK Cloud management console using service accounts.
 
 Access to VK Cloud resources by programs is limited by the scope of the role that is assigned to their used service account. A service account can be assigned with [any user role](../rolesandpermissions), except for the Project owner role.
 

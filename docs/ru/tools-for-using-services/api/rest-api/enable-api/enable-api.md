@@ -4,7 +4,12 @@
 
 ## {heading(Активация доступа по API)[id=rest-api-enable-activate]}
 
-1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию.
+1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Создайте]} сервисную учетную запись, если это еще не сделано.
+1. Получите доступ к API, если это еще не сделано:
+
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-download-rc-file)[text=Скачайте OpenStack RC-файл]}.
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-authorize)[text=Авторизуйтесь в OpenStack CLI с помощью СУЗ]}.
+
 1. Нажмите на имя пользователя в шапке страницы и включите доступ по API одним из способов:
 
       {tabs}
@@ -28,6 +33,6 @@
 
 ## {heading(Деактивация доступа по API)[id=rest-api-enable-deactivate]}
 
-1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Включите]} двухфакторную аутентификацию, если она была отключена.
+1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки аккаунта**.
 1. В разделе **Безопасность** отключите опцию **Доступ по API**.

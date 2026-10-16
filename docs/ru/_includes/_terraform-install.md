@@ -8,7 +8,7 @@
    {/includetag}
    {includetag(terraform-install-prepare)}
    {ifdef(public)}
-1. [Настройте двухфакторную аутентификацию](/ru/access/iam/instructions/manage-2fa) и [активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api), если это еще не сделано.
+1. [Активируйте доступ по API](/ru/tools-for-using-services/api/rest-api/enable-api), если это еще не сделано.
    {/ifdef}
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Настройки проекта**.
    {/includetag}

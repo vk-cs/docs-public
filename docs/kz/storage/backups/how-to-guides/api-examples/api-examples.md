@@ -6,7 +6,7 @@
 
 Келтірілген мысалдарды орындау үшін:
 
-1. Екі факторлы аутентификация {linkto(../../../../access/iam/instructions/manage-2fa#vk-cloud-account-manage-2fa)[text=қосылғанына]} және API арқылы қолжетімділік {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
+1. API арқылы қолжетімділік {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=`X-Subject-Token` қатынау токенін алыңыз]}.
 1. Karboii сервисі үшін эндпоинтті {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=біліңіз]}.
 

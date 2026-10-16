@@ -7,7 +7,6 @@ API {linkto(../../../../security/secret-manager#security-secret-manager)[text=қ
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
-1. Егер әлі жасалмаған болса, екі факторлы аутентификацияны {linkto(/kz/access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=қосыңыз]}.
 1. Егер әлі жасалмаған болса, API арқылы қолжетімділікті {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
 1. Беттің жоғарғы бөлігіндегі пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
