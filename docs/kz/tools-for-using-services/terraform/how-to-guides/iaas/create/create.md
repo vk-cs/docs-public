@@ -286,7 +286,45 @@ output "instance_fip" {
 
 Параметрлер сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources) берілген.
 
-## 4. (Опционалды) ВМ-де мониторингті баптаңыз
+## 4. (Опционалды) Конфигурация дискісін қосу
+
+Конфигурация дискінін желі параметрлерін реттеу және ВЧ-ге метадеректер мен пайдаланушы скриптерін беру үшін `config_drive` опциясын қосыңыз.
+
+Бұл ВЧ-ді DHCP сервері жоқ желілерде жұмыс істеуге орнатуга немесе ВЧ {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желіге]} қосылған жағдайда мүмкіндік береді.
+
+`main.tf` файлындағы `vkcs_compute_instance` ресурс сипаттамасына `config_drive = true` параметрін қосыңыз. Мысалы:
+
+```hcl
+resource "vkcs_compute_instance" "compute" {
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_group_ids      = [data.vkcs_networking_secgroup.default.id, data.vkcs_networking_secgroup.ssh.id]
+  availability_zone       = var.availability_zone_name
+  config_drive            = true
+
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
+
+  network {
+    uuid = vkcs_networking_network.example.id
+  }
+
+  depends_on = [
+    vkcs_networking_network.example,
+    vkcs_networking_subnet.example
+  ]
+}
+```
+
+## 5. (Опционалды) ВМ-де мониторингті баптаңыз
 
 Бұл ВМ жасау кезінде оның метрикаларын Cloud Monitoring сервисіне жіберуді автоматты түрде қосуға мүмкіндік береді.
 
@@ -355,7 +393,7 @@ output "instance_fip" {
 
 Cloud Monitoring сервисіне қосылу параметрлерінің сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md) берілген.
 
-## 5. Terraform көмегімен ресурстарды жасаңыз
+## 6. Terraform көмегімен ресурстарды жасаңыз
 
 1. Барлық Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
@@ -386,7 +424,7 @@ Cloud Monitoring сервисіне қосылу параметрлерінің 
 
 Ресурстарды жасау аяқталғаннан кейін Terraform шығысында ВМ-ге тағайындалған Floating IP мекенжайы `instance_fip` ретінде көрсетіледі.
 
-## 6. Мысалдың жұмысқа қабілеттілігін тексеріңіз
+## 7. Мысалдың жұмысқа қабілеттілігін тексеріңіз
 
 [`compute-instance` виртуалды машинасына SSH арқылы қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
