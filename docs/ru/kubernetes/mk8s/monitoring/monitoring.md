@@ -29,10 +29,18 @@
 
 1. Получите доступ к веб-интерфейсу Grafana:
 
-   1. В отдельной сессии терминала выполните команду:
+   1. Узнайте имя сервиса Grafana с помощью команды:
 
       ```console
-      kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
+      kubectl -n prometheus-monitoring get svc -l app.kubernetes.io/name=grafana
+      ```
+
+      В выводе команды будет имя сервиса Grafana в формате `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana`. Если название приложения было сгенерировано автоматически при установке через личный кабинет, имя сервиса будет иметь вид `addon-<ХЕШ>-grafana`, например, `addon-c01ea19419-grafana`.
+
+   1. Откройте доступ к Grafana извне через `port-forward`, используя имя сервиса:
+
+      ```console
+      kubectl -n prometheus-monitoring port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
       ```
 
       {note:warn}

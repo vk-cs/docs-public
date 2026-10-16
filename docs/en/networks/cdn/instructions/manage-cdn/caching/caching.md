@@ -9,7 +9,7 @@ To configure the caching for the CDN resource:
 
 {tabs}
 
-{tab(Personal account)}
+{tab(Management console)}
 
 {include(/en/_includes/_open-cdn.md)}
 
