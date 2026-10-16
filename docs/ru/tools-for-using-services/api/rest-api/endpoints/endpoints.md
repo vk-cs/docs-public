@@ -197,7 +197,7 @@
 |Защищенное хранение секретов (SSH-ключей, токенов Keystone, сертификатов TLS)
 
 |Keystone
-|https://infra.mail.ru:5000/v3/
+|https://infra.mail.ru/infra/identity/v3/
 |Управление пользователями проекта, авторизация пользователей на основе {linkto(../case-keystone-token#rest-api-keystone-token)[text=токенов]}
 
 |Quota-manager

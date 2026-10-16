@@ -33,7 +33,7 @@
 `auth_url`
 |Бұлтты платформадағы авторизацияның URL мекенжайы
 |
-`https://infra.mail.ru:5000/v3/`
+`https://infra.mail.ru/infra/identity/v3/`
 
 |
 `namespace`

@@ -79,7 +79,7 @@ VK Cloud-пен API арқылы жұмыс істеу үшін [API арқыл�
 |-------------------------------------|-----------------------------------------------|-----------------|
 | Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id> | Жобадағы пайдаланушылар әрекеттерінің статистикасын жинау |
 | Barbican          | https://public.infra.mail.ru:9311             | Секреттерді (SSH-кілттер, Keystone токендері, TLS сертификаттары) қорғалған түрде сақтау |
-| Keystone          | https://infra.mail.ru:5000/v3/                | Жоба пайдаланушыларын басқару, [токендер](../../rest-api/case-keystone-token) негізінде пайдаланушыларды авторизациялау |
+| Keystone          | https://infra.mail.ru/infra/identity/v3/      | Жоба пайдаланушыларын басқару, [токендер](../../rest-api/case-keystone-token) негізінде пайдаланушыларды авторизациялау |
 | Quota-manager     | https://mcs.mail.ru/quota-manager             | Жобаның [квоталарын](/kz/tools-for-using-services/account/concepts/quotasandlimits) көру |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>    | Бұлт сервистерін оркестрациялау (эндпоинт ескірген) |
 
