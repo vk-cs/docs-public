@@ -1,6 +1,6 @@
 # {heading(Создание кластера в личном кабинете)[id=k8s-create-webui]}
 
-Далее описывается создание кластера Kubernetes из личного кабинета. Также вы можете создать кластер с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
+Кластер Kubernetes можно создать не только через личный кабинет, но и с помощью {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]}.
 
 При создании кластера для него будет создан {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервисный балансировщик нагрузки]}. Использование балансировщика {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифицируется]}.
 

@@ -1,0 +1,14 @@
+{
+  "title": "Скачивание копии через OpenStack CLI и API",
+  "shortDescription": "Как определить копии через OpenStack CLI или API, скачать их файлы из хранилища через AWS CLI и проверить целостность",
+  "metaDescription": "Как скачать файлы резервной копии диска ВМ из Cloud Backup через OpenStack CLI, API и AWS CLI, если личный кабинет недоступен, и проверить их.",
+  "sectionTitle": "Скачивание копии через OpenStack CLI и API",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -64,3 +64,9 @@
 {linkto(../../../computing/iaas/instructions/vm/vm-filter#iaas-vm-filter)[text=Используйте]} фильтр **Бэкап** для поиска таких виртуальных машин.
 
 {/cut}
+
+{cut(Можно ли скачать резервную копию и развернуть ее вне платформы?)}
+
+Да, можно скачать и развернуть резервную копию диска ВМ. Подробнее в разделе {linkto(../concepts/download-features#backup-download-features)[text=%text]}.
+
+{/cut}
