@@ -136,6 +136,10 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 
 ## {heading(Отвязка Floating IP-адреса)[id=vnet-floating-ip-disassociate]}
 
+{note:warn}
+Қолданыстағы Floating IP-адрестер ешбір портқа тағайындалмаса да тарификацияланады. Егер ажыратылған Floating IP-адрес бұдан былай қажет болмаса, оны {linkto(#vnet-floating-ip-delete)[text=жойыңыз]}.
+{/note}
+
 {tabs}
 
 {tab(Жеке кабинет)}
