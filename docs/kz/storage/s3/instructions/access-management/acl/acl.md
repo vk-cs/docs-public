@@ -231,15 +231,21 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
-   - `<ВИД_РАЗРЕШЕНИЯ>` — келесідей болуы мүмкін:
+   - `<ВИД_РАЗРЕШЕНИЯ>` — келесі нұсқалар қолжетімді:
 
-     - `--grant-read` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
-     - `--grant-write` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
-     - `--grant-read-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
-     - `--grant-write-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
-     - `--grant-full-control` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
+     - `grant-read` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
+     - `grant-write` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
+     - `grant-read-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
+     - `grant-write-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
+     - `grant-full-control` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
       
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — бакет үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}.
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — бакет үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
+
+     - `id=<ID_ПРОЕКТА>` — жобаның ID-і;
+     - `emailaddress=<PID_ПРОЕКТА>` — жобаның PID-і;
+     - `uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers` — `AuthenticatedUsers` метатобы;
+     - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — `AllUsers` метатобы.
+
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
 
@@ -249,6 +255,15 @@
      {ifdef(s3,s3-pdf)}
    - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
      {/ifdef}
+
+   {cut(Команда мысалы)}
+
+   `kuber_backup` бакеті үшін `AllUsers` метатобына оқу (`READ`) рұқсатын беру командасының мысалы:
+
+   ```console
+   aws s3api put-bucket-acl --bucket kuber_backup --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers --endpoint-url https://hb.vkcloud-storage.ru
+   ```
+   {/cut}
 
 {/tab}
 
@@ -398,15 +413,21 @@
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
-   - `<ВИД_РАЗРЕШЕНИЯ>` — келесідей болуы мүмкін:
+   - `<ВИД_РАЗРЕШЕНИЯ>` — келесі нұсқалар қолжетімді:
 
-     - `--grant-read` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
-     - `--grant-write` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
-     - `--grant-read-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
-     - `--grant-write-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
-     - `--grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
+     - `grant-read` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
+     - `grant-write` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
+     - `grant-read-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
+     - `grant-write-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
+     - `grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
 
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}.
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
+
+     - `id=<ID_ПРОЕКТА>` — жобаның ID-і;
+     - `emailaddress=<PID_ПРОЕКТА>` — жобаның PID-і;
+     - `uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers` — `AuthenticatedUsers` метатобы;
+     - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — `AllUsers` метатобы.
+
    - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
@@ -417,6 +438,15 @@
      {ifdef(s3,s3-pdf)}
    - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
      {/ifdef}
+
+   {cut(Команда мысалы)}
+
+   `kuber_backup` бакетінің `keycloak.tar.gz` объектісі үшін `AllUsers` метатобына оқу (`READ`) рұқсатын беру командасының мысалы:
+
+   ```console
+   aws s3api put-object-acl --endpoint-url https://hb.vkcloud-storage.ru --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers
+   ```
+   {/cut}
 
 {/tab}
 
