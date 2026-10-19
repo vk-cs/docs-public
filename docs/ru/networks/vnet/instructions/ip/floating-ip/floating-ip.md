@@ -140,6 +140,10 @@ Floating IP-адрес назначается из общего пула слу�
 
 ## {heading(Отвязка Floating IP-адреса)[id=vnet-floating-ip-disassociate]}
 
+{note:warn}
+Существующие Floating IP-адреса тарифицируются, даже если они не назначены какому-либо порту. Если отвязанный Floating IP-адрес вам больше не нужен, {linkto(#vnet-floating-ip-delete)[text=удалите]} его.
+{/note}
+
 {tabs}
 
 {tab(Личный кабинет)}

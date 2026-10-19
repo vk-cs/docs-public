@@ -1,0 +1,14 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about the Cloud Networks service",
+  "metaDescription": "Answers to frequently asked questions about the Cloud Networks service",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

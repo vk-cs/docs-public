@@ -136,6 +136,10 @@ A floating IP address is randomly assigned from a shared pool.
 
 ## {heading(Unbinding floating IP address)[id=vnet-floating-ip-disassociate]}
 
+{note:warn}
+Existing floating IP addresses are billed even if they are not assigned to any port. If the unbound floating IP address is no longer needed, {linkto(#vnet-floating-ip-delete)[text=delete]} it.
+{/note}
+
 {tabs}
 
 {tab(Management console)}
