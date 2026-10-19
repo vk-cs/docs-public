@@ -229,15 +229,21 @@ ACL для бакета не распространяются на ACL объе�
    Здесь:
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого нужно установить ACL.
-   - `<ВИД_РАЗРЕШЕНИЯ>` — могут быть следующими:
+   - `<ВИД_РАЗРЕШЕНИЯ>` — доступны следующие варианты:
 
-     - `--grant-read` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
-     - `--grant-write` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
-     - `--grant-read-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
-     - `--grant-write-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
-     - `--grant-full-control` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
+     - `grant-read` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
+     - `grant-write` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
+     - `grant-read-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
+     - `grant-write-acp` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
+     - `grant-full-control` — для бакета будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
       
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для бакета.
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для бакета:
+
+     - `id=<ID_ПРОЕКТА>` — ID проекта;
+     - `emailaddress=<PID_ПРОЕКТА>` — PID проекта;
+     - `uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers` — метагруппа `AuthenticatedUsers`;
+     - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — метагруппа `AllUsers`.
+
      {ifdef(public)}
    - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
@@ -247,6 +253,15 @@ ACL для бакета не распространяются на ACL объе�
      {ifdef(s3,s3-pdf)}
    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
+
+   {cut(Пример команды)}
+
+   Пример команды выдачи прав на чтение (`READ`) метагруппе `AllUsers` для бакета `kuber_backup`:
+
+   ```console
+   aws s3api put-bucket-acl --bucket kuber_backup --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers --endpoint-url https://hb.vkcloud-storage.ru
+   ```
+   {/cut}
 
 {/tab}
 
@@ -396,15 +411,21 @@ ACL для бакета не распространяются на ACL объе�
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, в котором расположен объект.
    - `<КЛЮЧ_ОБЪЕКТА>` — полное имя объекта, для которого нужно установить ACL, включая путь до него.
-   - `<ВИД_РАЗРЕШЕНИЯ>` — могут быть следующими:
+   - `<ВИД_РАЗРЕШЕНИЯ>` — доступны следующие варианты:
 
-     - `--grant-read` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
-     - `--grant-write` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
-     - `--grant-read-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
-     - `--grant-write-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
-     - `--grant-full-control` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
+     - `grant-read` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ`.
+     - `grant-write` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE`.
+     - `grant-read-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `READ_ACP`.
+     - `grant-write-acp` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `WRITE_ACP`.
+     - `grant-full-control` — для объекта будет установлено {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=разрешение]} `FULL_CONTROL`.
 
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для объекта.
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=получатель]}, которому будет предоставлено разрешение для объекта:
+
+     - `id=<ID_ПРОЕКТА>` — ID проекта;
+     - `emailaddress=<PID_ПРОЕКТА>` — PID проекта;
+     - `uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers` — метагруппа `AuthenticatedUsers`;
+     - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — метагруппа `AllUsers`.
+
    - (Опционально) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=идентификатор версии]} объекта в бакете с {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версионированием]}. Если параметр `--version-id` не указан, будет использована текущая версия.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
@@ -415,6 +436,15 @@ ACL для бакета не распространяются на ACL объе�
      {ifdef(s3,s3-pdf)}
    - `<ENDPOINT_URL>` — ссылка с доменным именем, которое используется в вашей инсталляции {var(s3)}. Формат имени может отличаться. Чтобы узнать точный формат ссылки, обратитесь к вашему администратору.
      {/ifdef}
+
+   {cut(Пример команды)}
+
+   Пример команды выдачи прав на чтение (`READ`) метагруппе `AllUsers` для объекта `keycloak.tar.gz` бакета `kuber_backup`:
+
+   ```console
+   aws s3api put-object-acl --endpoint-url https://hb.vkcloud-storage.ru --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers
+   ```
+   {/cut}
 
 {/tab}
 
