@@ -21,6 +21,18 @@
         ]
       },
       {
+        "key": "ai-products",
+        "title": "AI-продукты",
+        "items": [
+          {
+            "key": "vk-ai-space",
+            "absoluteLink": "https://docs.tech.vk.ru/ai-space",
+            "title": "VK AI Space",
+            "description": "ИИ-платформа для создания и запуска ИИ-агентов"
+          }
+        ]
+      },
+      {
         "key": "cloud-platform",
         "title": "Облачная платформа",
         "items": [

@@ -612,7 +612,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 ## {heading({counter(addon)}. Verify add-on operability after updating)[id=4_verify_addon_operability_after_updating]}
 
-[Get access to the Grafana web interface](/en/kubernetes/mk8s/monitoring#using_grafana). To connect, use the same password that was used with the previous version of the add-on. If you forgot your Grafana password, [reset it](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
+[Get access to the Grafana web interface](/en/kubernetes/mk8s/monitoring#using_grafana). To connect, use the same password that was used with the previous version of the add-on. If you forgot your Grafana password, {linkto(/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-reset-password)[text=reset it]}.
 
 A successful connection to Grafana indicates a successful add-on update.
 
