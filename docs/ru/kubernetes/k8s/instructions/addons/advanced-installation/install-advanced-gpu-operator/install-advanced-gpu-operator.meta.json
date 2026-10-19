@@ -8,7 +8,11 @@
   "uuid": "c7c54de5-7b62-4713-8ccb-95a614da2b78",
   "build": {
     "for": [
-      "public"
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
     ]
   }
 }
