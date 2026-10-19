@@ -52,6 +52,14 @@ const checkup = [
     SatoriIndexPreparer, // Индексация для Satori
 ];
 
+const checkup_dev = [
+    LinksWithHashChecker, // Проверка ссылок с хешем на портале
+    LaunchPreparer,
+    FolderStructureChecker,
+    MetaParamUuidPreparer,
+    OriginalTreeCachePreparer,
+];
+
 export const config = {
     docsRelativePath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
     dataRelativePath: './.data', // Абсолютный путь до папки с результатами подготовки файлами, если null, то ./preparationData
@@ -86,6 +94,9 @@ export const config = {
         // Проверка портала после запуска
         // npx preparer start checkup
         checkup,
+        // Проверка портала после запуска на dev
+        // npx preparer start checkup_dev
+        checkup_dev,
     },
     settings: {
         satoriIndexPreparer: {
