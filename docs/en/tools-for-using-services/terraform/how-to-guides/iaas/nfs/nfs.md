@@ -18,29 +18,29 @@ To create an NFS, you need the following objects:
 
 - Resources:
 
-  - `vkcs_networking_network`: a network on which the NFS will be created. In the example below, a network named `sfs` is created.
-  - `vkcs_networking_subnet`: a subnet of the network. In the example: `sfs`.
-  - `vkcs_sharedfilesystem_sharenetwork`: use this resource to set up a shared network. The shared network stores information that NFS servers can use when creating the NFS. The following arguments are supported:
+  - `vkcs_networking_network` — a network on which the NFS will be created. In the example below, a network named `sfs` is created.
+  - `vkcs_networking_subnet` — a subnet of the network. In the example: `sfs`.
+  - `vkcs_sharedfilesystem_sharenetwork` — use this resource to set up a shared network. The shared network stores information that NFS servers can use when creating the NFS. The following arguments are supported:
 
-    - `name`: a name for the shared network. Changing this argument updates the name of the existing shared network.
-    - `neutron_net_id`: the UUID of the Neutron network when setting up or updating the shared network. Changing this argument updates the existing shared network if it is not being used by shared resources.
-    - `neutron_subnet_id`: the UUID of the Neutron subnet when setting up or updating the shared network. Changing this argument updates the existing shared network if it is not being used by shared resources.
+    - `name` — a name for the shared network. Changing this argument updates the name of the existing shared network.
+    - `neutron_net_id` — the UUID of the Neutron network when setting up or updating the shared network. Changing this argument updates the existing shared network if it is not being used by shared resources.
+    - `neutron_subnet_id` — the UUID of the Neutron subnet when setting up or updating the shared network. Changing this argument updates the existing shared network if it is not being used by shared resources.
 
-  - `vkcs_sharedfilesystem_share`: use this resource to set up a share. The following arguments are supported:
+  - `vkcs_sharedfilesystem_share` — use this resource to set up a share. The following arguments are supported:
 
-    - `name`: the share name. Changing this argument updates the name of the existing share.
-    - `description`: a human-readable description of the share. Changing this argument updates the description of the existing share.
-    - `share_proto`: the sharing protocol, it can be `NFS`, `CIFS`, `CEPHFS`, `GLUSTERFS`, `HDFS` or `MAPRFS`. Changing this argument creates a new share.
-    - `share_type`: the share type. If you omit this argument, the default share type is used.
-    - `size`: the share size, in gigabytes. The requested share size cannot exceed the allowed quota in GB. Changing this argument changes the size of the existing share.
-    - `share_network_id`: the ID of the network with the NFS server.
+    - `name` — the share name. Changing this argument updates the name of the existing share.
+    - `description` — a human-readable description of the share. Changing this argument updates the description of the existing share.
+    - `share_proto` — the sharing protocol, it can be `NFS` or `CIFS`. Changing this argument creates a new share.
+    - `share_type` — the share type. If you omit this argument, the default share type is used.
+    - `size` — the share size, in gigabytes. The requested share size cannot exceed the allowed quota in GB. Changing this argument changes the size of the existing share.
+    - `share_network_id` — the ID of the network with the NFS server.
 
-  - `vkcs_sharedfilesystem_share_access`: use this resource to manage share lists. The following arguments are supported:
+  - `vkcs_sharedfilesystem_share_access` — use this resource to manage share lists. The following arguments are supported:
 
-    - `share_id`: the UUID of the share that you have been granted access to.
-    - `access_type`: the access rule type. Can be one of the following: `ip`, `user`, `cert`, or `cephx`.
-    - `access_to`: the value specifying access. This can be either an IP address or a username verified by the configured Cloud Networks security service.
-    - `access_level`: the level of access to the shared resource. Can be either `rw` for read-write access or `ro` for read-only access.
+    - `share_id` — the UUID of the share that you have been granted access to.
+    - `access_type` — the access rule type. Can be one of the following: `ip`, `user`, or `cert`.
+    - `access_to` — the value specifying access. This can be either an IP address or a username verified by the configured Cloud Networks security service.
+    - `access_level` — the level of access to the shared resource. Can be either `rw` for read-write access or `ro` for read-only access.
 
 Example of the `nfs.tf` file:
 
