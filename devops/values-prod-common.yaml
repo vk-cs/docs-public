@@ -10,7 +10,17 @@ components:
   - name: common
     image:
       name: infra/front/tech-writers/docs-public/common
-    replicas: 2
+    replicas: 5
+    topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: topology.kubernetes.io/zone
+        whenUnsatisfiable: ScheduleAnyway
+        matchLabelKeys:
+          - pod-template-hash
+        labelSelector:
+          matchLabels:
+            app.kubernetes.io/instance: docs-public
+            app.kubernetes.io/component: common
     ports:
       - port: 3000
         headlessOnly: true
