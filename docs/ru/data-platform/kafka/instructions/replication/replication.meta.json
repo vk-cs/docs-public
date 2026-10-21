@@ -4,7 +4,7 @@
   "metaDescription": "Пошаговая инструкция по настройке репликации данных из внешних кластеров Kafka в текущий кластер Cloud Kafka VK Data Platform с помощью MirrorMaker",
   "sectionTitle": "Репликация данных из внешних кластеров Kafka",
   "icon": "",
-  "weight": 5,
+  "weight": 6,
   "uuid": "56742d92-cf2b-4e70-8b27-47dec54298be",
   "build": {
     "for": [

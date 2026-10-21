@@ -1,7 +1,7 @@
 {
   "title": "Подключение к экземпляру сервиса",
-  "shortDescription": "Как подключиться по TLS к экземпляру сервиса",
-  "metaDescription": "Узнайте, как подключиться по TLS к развернутому экземпляру сервиса Cloud Kafka с помощью kafka-cli в VK Data Platform",
+  "shortDescription": "Как подключиться к экземпляру Cloud Kafka по TLS через Kafka CLI",
+  "metaDescription": "Подключение к экземпляру сервиса Cloud Kafka через Kafka CLI по TLS в VK Data Platform: получение строки подключения и настройка клиента",
   "sectionTitle": "Подключение к экземпляру сервиса",
   "build": {
     "for": [
