@@ -214,6 +214,26 @@ VNC-консоль доступна на странице виртуальной
 Подробнее про ISO-образы — в разделе {linkto(../../../computing/iaas/how-to-guides/win-image#iaas-win-image)[text=Создание образа ВМ с ОС Windows]}.
 {/cut}
 
+{cut(Что делать, если утерян SSH-ключ от ВМ?)}
+
+Воспользуйтесь инструкцией {linkto(../instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key)[text=%text]}.
+
+{/cut}
+
+{cut(Можно ли подключить к ВМ несколько сетевых интерфейсов?)}
+
+Да, вы можете {linkto(../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect)[text=подключить]} ВМ к нескольким сетям. При добавлении нового подключения в выбранной сети автоматически создается отдельный порт. После добавления сетевого интерфейса к ВМ {linkto(../../../computing/iaas/how-to-guides/interface-settings-check#iaas-interface-settings-check)[text=проверьте]} его настройки в операционной системе ВМ.
+
+Чтобы использовать несколько {linkto(../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адресов]} на одной ВМ, воспользуйтесь руководством {linkto(../../../networks/vnet/how-to-guides/multiple-floating-ip#vnet-multiple-floating-ip)[text=%text]}.
+
+{/cut}
+
+{cut(Можно ли создать ВМ из образа ISO?)}
+
+ISO-образы предназначены только для Bare Metal и не могут быть использованы для создания ВМ. Для импорта загрузочного образа и создания ВМ поддерживаются только образы в формате RAW.
+
+{/cut}
+
 {cut(Как сделать копию ВМ с новым IP-адресом?)}
 
 1. {linkto(../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots)[text=Создайте]} снимок диска ВМ.

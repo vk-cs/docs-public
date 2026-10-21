@@ -62,9 +62,21 @@
 
    1. Получите список доступных образов ВМ и сохраните нужный идентификатор:
 
-      ```console
-      openstack image list
-      ```
+       ```console
+       openstack image list
+       ```
+
+       Чтобы найти образ по имени, используйте фильтр:
+
+       ```console
+       openstack image list | grep -i <ЧАСТЬ_ИМЕНИ_ОБРАЗА>
+       ```
+
+       Например, для поиска образа Astra Linux:
+
+       ```console
+       openstack image list | grep -i alse
+       ```
 
    1. Получите список групп безопасности:
 

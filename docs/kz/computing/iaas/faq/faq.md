@@ -215,6 +215,26 @@ ISO образдары туралы толығырақ — [Windows ОС бар 
 
 {/cut}
 
+{cut(ВМ-ге арналған SSH-кілт жоғалса, не істеу керек?)}
+
+{linkto(../instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key)[text=%text]} нұсқаулығын пайдаланыңыз.
+
+{/cut}
+
+{cut(ВМ-ге бірнеше желілік интерфейсті қосуға бола ма?)}
+
+Иә, ВМ-ді бірнеше желіге {linkto(../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect)[text=қоса аласыз]}. Жаңа қосылым қосылғанда таңдалған желіде жеке порт автоматты түрде жасалады. ВМ-ге желілік интерфейсті қосқаннан кейін оның параметрлерін ВМ операциялық жүйесінде {linkto(../../../computing/iaas/troubleshooting/linux-vm-network#iaas-linux-vm-network-flavor-check)[text=тексеріңіз]}.
+
+Бір ВМ-де бірнеше {linkto(../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адресті]} пайдалану үшін «Бір ВМ-ге бірнеше Floating IP-адресті байланыстыру» басшылығын пайдаланыңыз.
+
+{/cut}
+
+{cut(ISO образынан ВМ жасауға бола ма?)}
+
+ISO-образдары тек Bare Metal үшін арналған және ВМ жасау үшін пайдаланыла алмайды. Жүктелетін образды импорттау және ВМ жасау үшін тек RAW форматындағы образдарға қолдау көрсетіледі.
+
+{/cut}
+
 {cut(Жаңа IP мекенжайымен ВМ көшірмесін қалай жасауға болады?)}
 
 1. ВМ дискінің [снимогын жасаңыз](/kz/computing/iaas/instructions/volumes/volumes-snapshots).

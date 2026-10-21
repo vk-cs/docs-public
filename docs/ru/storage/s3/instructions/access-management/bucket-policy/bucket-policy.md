@@ -2,6 +2,10 @@
 
 {var(s3)} позволяет настраивать доступ к {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакету]} и {linkto(../../../concepts/about#s3-concepts-about-object)[text=объектам]} с помощью {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy)[text=политики доступа]}.
 
+{note:info}
+Чтобы управлять политиками доступа бакета с помощью Terraform, сначала {linkto(#s3-instructions-bucket-policy-enable-and-disable)[text=включите политики доступа]} в личном кабинете.
+{/note}
+
 ## {heading(Включение и отключение политики доступа)[id=s3-instructions-bucket-policy-enable-and-disable]}
 
 {ifdef(public)}

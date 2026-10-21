@@ -11,7 +11,11 @@
 
 Вы можете создать несколько аккаунтов {var(s3)}. Их количество в одном проекте ограничено {linkto(../../../concepts/about#s3-concepts-about-limits)[text=лимитами]}. Одновременно с аккаунтом автоматически создается ключ доступа к нему. Ключ доступа к аккаунту — это пара из публичного идентификатора ключа (Access Key ID) и секретного ключа (Secret Key). Секретный ключ доступен только при создании пары, восстановить его позднее невозможно, но вы можете {linkto(../../../instructions/access-management/access-keys#s3-instructions-access-keys-existing-account-access-key)[text=создать]} новый ключ доступа. К одному аккаунту можно привязать до двух ключей.
 
-Управление аккаунтами {var(s3)} и привязанными к ним ключами доступно только в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
+Управление аккаунтами {var(s3)} и привязанными к ним ключами доступно только владельцу проекта через личный кабинет {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef}.
+
+{note:info}
+Создать аккаунт {var(s3)} через API или Terraform может только владелец проекта.
+{/note}
 
 ## {heading(Ключи доступа к бакету)[id=s3-concepts-account-and-keys-bucket-access-keys]}
 

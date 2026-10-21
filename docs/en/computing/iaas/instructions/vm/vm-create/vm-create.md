@@ -141,6 +141,18 @@ To create VM:
       openstack image list
       ```
 
+      To find an image by name, use a filter:
+
+      ```console
+      openstack image list | grep -i <PART_OF_IMAGE_NAME>
+      ```
+
+      For example, to search for an Astra Linux image:
+
+      ```console
+      openstack image list | grep -i alse
+      ```
+
    3. Get a list of security groups:
 
       ```console

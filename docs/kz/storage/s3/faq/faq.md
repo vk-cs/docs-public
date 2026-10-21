@@ -48,12 +48,27 @@
 Иә, қолдау табады. {linkto(../concepts/versioning#s3-concepts-versioning)[text={var(s3)} бакеттеріндегі объектілерді нұсқалау туралы толығырақ]}.
 {/cut}
 
-{cut(Бакетке қолжетімділікті шектеуге бола ма?)}
-Иә, болады. Бакеттегі жекелеген директория мазмұнына ғана қолжетімділік беру үшін {linkto(../../../tools-for-using-services/api/api-spec/s3-rest-api/pak-api#api-spec-s3-pak)[text=префикстік кілттерді]} пайдаланыңыз. 
+{cut({var(s3)} қандай AWS S3 API әдістерін қолдайды?)}
 
-Пайдаланушыға қолжетімді операцияларды басқару үшін {linkto(../concepts/access/s3-acl#s3-concepts-acl)[text=ACL (Access Control List)]} қолданыңыз.
+Іске асырылған AWS S3 API әдістерінің тізімі {linkto(../concepts/features#s3-concepts-features-s3-api)[text=%text]} бөлімінде берілген.
 
-Бакетке қолжетімділікті IP-адрес бойынша шектеу мүмкін емес.
+AWS S3 API кейбір әдістері {var(s3)} сервисінде іске асырылмаған. Мұндай әдістер үшін сұраулар XML форматындағы S3-үйлесімді `NotImplemented` қате жауабын қайтарады.
+
+{/cut}
+
+{cut(Бакеттерге және объектілерге қолжетімділікті қалай басқаруға болады?)}
+
+Пайдаланушылардың бакеттерге және объектілерге қолжетімділігін басқару үшін {linkto(../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=қолжетімділік саясатын баптаңыз]}. Қажет болған жағдайда қосымша түрде ACL {linkto(../instructions/access-management/acl#s3-instructions-acl)[text=баптаңыз]}.
+
+Бакеттерге және объектілерге API, CLI немесе Terraform арқылы қолжетімділік үшін {var(s3)} аккаунтын және қолжетімділік кілттерін {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys)[text=жасаңыз]}.
+
+{/cut}
+
+{cut(Бакеттегі жекелеген директорияға қолжетімділікті шектеуге бола ма?)}
+Иә, болады. Мұндай қолжетімділік белгілі бір префикспен объектілерге бапталады:
+
+- префикстік кілтті {linkto(../instructions/access-management/bucket-keys#s3-instructions-bucket-keys)[text=қосыңыз]} және оны {var(s3)} аккаунтының орнына пайдаланыңыз;
+- {linkto(../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=қолжетімділік саясатын баптаңыз]}.
 {/cut}
 
 {cut(Бакет объектілерінің резервтік көшірмесін жасауға бола ма?)}

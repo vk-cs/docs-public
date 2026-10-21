@@ -46,12 +46,27 @@
 Да, поддерживается. {linkto(../concepts/versioning#s3-concepts-versioning)[text=Подробнее о версионировании объектов в бакетах {var(s3)}]}.
 {/cut}
 
-{cut(Можно ли ограничить доступ к бакету?)}
-Да, можно. Чтобы выдать доступ только к содержимому отдельной директории в бакете, используйте {linkto(../../../tools-for-using-services/api/api-spec/s3-rest-api/pak-api#api-spec-s3-pak)[text=префиксные ключи]}. 
+{cut(Какие методы AWS S3 API поддерживает {var(s3)}?)}
 
-Чтобы управлять операциями, доступными пользователю, используйте {linkto(../concepts/access/s3-acl#s3-concepts-acl)[text=ACL (Access Control List)]}.
+Список реализованных методов AWS S3 API приведен в разделе {linkto(../concepts/features#s3-concepts-features-s3-api)[text=%text]}.
 
-Ограничить доступ к бакету по IP-адресу нельзя.
+Методы AWS S3 API, которые не реализованы в сервисе {var(s3)}, возвращают S3-совместимый ответ об ошибке `NotImplemented` в формате XML.
+
+{/cut}
+
+{cut(Как управлять доступом к бакетам и объектам?)}
+
+Чтобы управлять доступом пользователей к бакетам и объектам, {linkto(../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=настройте]} политики доступа. При необходимости дополнительно {linkto(../instructions/access-management/acl#s3-instructions-acl)[text=настройте]} ACL.
+
+Для доступа к бакетам и объектам с помощью API, CLI или Terraform {linkto(../instructions/access-management/access-keys#s3-instructions-access-keys)[text=создайте]} аккаунт {var(s3)} и ключи доступа.
+
+{/cut}
+
+{cut(Можно ли ограничить доступ к отдельной директории в бакете?)}
+Да, можно. Такой доступ настраивается для объектов с определенным префиксом:
+
+- {linkto(../instructions/access-management/bucket-keys#s3-instructions-bucket-keys)[text=добавьте]} префиксный ключ и используйте его вместо аккаунта {var(s3)};
+- {linkto(../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=настройте]} политики доступа.
 {/cut}
 
 {cut(Можно ли сделать резервную копию объектов бакета?)}

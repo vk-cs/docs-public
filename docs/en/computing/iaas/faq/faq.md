@@ -76,6 +76,26 @@ If you lose the private key that was used to access the VM over SSH, you need to
 
 {/cut}
 
+{cut(What should I do if the SSH key for a VM is lost?)}
+
+Use the {linkto(../instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key)[text=%text]} instructions.
+
+{/cut}
+
+{cut(Can I connect multiple network interfaces to a VM?)}
+
+Yes, you can {linkto(../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect)[text=connect]} a VM to multiple networks. When adding a new connection, a separate port is automatically created in the selected network. After adding a network interface to the VM, {linkto(../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect)[text=check]} its settings in the VM's operating system.
+
+To use multiple {linkto(../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=floating IP addresses]} on a single VM, follow the "Binding multiple floating IP addresses to one VM" guide.
+
+{/cut}
+
+{cut(Can I create a VM from an ISO image?)}
+
+ISO images are intended for Bare Metal only and cannot be used to create VMs. Only RAW images are supported for importing a bootable image and creating a VM.
+
+{/cut}
+
 {cut(Openstack CLI does not connect)}
 
 You can connect to the Openstack CLI using the configuration file. Information about installation, configuration and connection parameters is given in [CLI](/en/tools-for-using-services/cli) chapter.
@@ -230,7 +250,7 @@ If these factors are missing, collect disk performance statistics using one of t
 - `disk utilization` — using [utility](https://www.cyberciti.biz/tips/linux-disk-performance-monitoring-howto.html) `iostat`;
 - `load average` — using [utility](https://www.digitalocean.com/community/tutorials/load-average-in-linux) `top`.
 
-Compare the obtained indicators with the [guaranteed disk performance](../concepts/volume-sla) provided by the VK Cloud platform. If there are significant deviations, contact [technical support](mailto:support@mcs.mail.ru).
+Compare the obtained indicators with the [expected disk performance](../concepts/volume-sla) provided by the VK Cloud platform. If there are significant deviations, contact [technical support](mailto:support@mcs.mail.ru).
 
 {note:info}
 
