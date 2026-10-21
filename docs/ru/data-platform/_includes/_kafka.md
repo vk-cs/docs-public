@@ -21,7 +21,7 @@
 
 1. Загрузите цепочку сертификатов для подключения по TLS: на вкладке **Общая информация** в карточке сертификата нажмите ![значок](/ru/data-platform/assets/more-icon.svg "inline") → **Скачать цепочку сертификатов**.
 
-1. Подготовьте логин и пароль учетной записи Cloud Kafka. Учетную запись можно {linkto(/ru/data-platform/kafka/instructions/management#kafka_user-add)[text=добавить на странице экземпляра сервиса]}.
+1. Подготовьте логин и пароль учетной записи Cloud Kafka. Учетную запись можно {linkto(/ru/data-platform/kafka/instructions/management#kafka_user-add)[text=добавить]} на странице экземпляра сервиса.
 
 {/includetag}
 
