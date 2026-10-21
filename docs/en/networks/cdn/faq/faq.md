@@ -85,14 +85,20 @@ If your role has permissions to work in the CDN service, but the service is unav
 
 {/cut}
 
-{cut(How to get the list of CDN IP addresses?)}
+{cut(CDN resource is paused. How do I resume content delivery?)}
 
-To get the current list of IP addresses, please contact [technical support](mailto:support@mcs.mail.ru).
+Enable the {linkto(../instructions/manage-cdn/enable-cdn#cdn-enable-cdn)[text=Content delivery to end users]} option in the CDN resource settings. Once enabled, the resource switches to the `Active` state, and content is delivered to consumers.
 
 {/cut}
 
-{cut(How to enable HTTP method support for a CDN resource?)}
+{cut(How to get the list of CDN IP addresses?)}
 
-To configure allowed HTTP methods, use the {linkto(../instructions/manage-cdn/http-headers#cdn-security-allowed-http)[text=instruction]}.
+You can get the current list of CDN IP addresses using the [CDN PoP servers API](https://api.lk.cdn.megafon.ru/cdn/public_ips_list).
+
+{/cut}
+
+{cut(Why are the OPTIONS, DELETE, POST, PUT, or PATCH methods unavailable in the CDN settings?)}
+
+By default, only the `GET` and `HEAD` methods can be {linkto(../instructions/manage-cdn/http-headers#cdn-security-allowed-http)[text=configured]} for a CDN resource. To unlock the `OPTIONS`, `DELETE`, `POST`, `PUT`, or `PATCH` methods, contact [technical support](mailto:support@mcs.mail.ru).
 
 {/cut}

@@ -144,6 +144,18 @@ Cloud Servers ішінде виртуалды машиналарды жеке к
        openstack image list
        ```
 
+       Образды атауы бойынша табу үшін фильтрді пайдаланыңыз:
+
+       ```console
+       openstack image list | grep -i <ЧАСТЬ_ИМЕНИ_ОБРАЗА>
+       ```
+
+       Мысалы, Astra Linux образын іздеу үшін:
+
+       ```console
+       openstack image list | grep -i alse
+       ```
+
     1. Қауіпсіздік топтарының тізімін алыңыз:
 
        ```console

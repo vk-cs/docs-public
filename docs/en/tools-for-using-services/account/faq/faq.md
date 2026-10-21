@@ -74,3 +74,16 @@ Yes, they can. To do this, contact the designated GeekBrains curator.
 Contact technical support, read more in the article [Deleting an account](/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/account-delete).
 
 {/cut}
+
+{cut(Why is the account blocked?)}
+
+The account may be blocked for one of the following reasons:
+
+- Requirements of legislation or an authorized body.
+- Suspicious activity: abnormal network traffic, frequent operations to create and delete resources (for example, IP address brute-force), abuse of platform resources.
+- Duplicate accounts or attempts to re-register with modified data after blocking.
+- An owner change request for accounts registered since September 2025 that have previously shown suspicious network activity.
+
+If the account is blocked, contact [technical support](mailto:support@mcs.mail.ru). You will need documents confirming your identity, legal entity details, and a description of the project.
+
+{/cut}

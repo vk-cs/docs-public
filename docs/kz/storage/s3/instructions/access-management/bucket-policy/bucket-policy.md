@@ -4,6 +4,10 @@
 
 {var(s3)} {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy)[text=қолжетімділік саясаты]} көмегімен {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакетке]} және {linkto(../../../concepts/about#s3-concepts-about-object)[text=объектілерге]} қолжетімділікті баптауға мүмкіндік береді.
 
+{note:info}
+Terraform көмегімен бакеттің қолжетімділік саясатын басқару үшін алдымен жеке кабинетте {linkto(#s3-instructions-bucket-policy-enable-and-disable)[text=қолжетімділік саясатын қосыңыз]}.
+{/note}
+
 ## {heading(Қолжетімділік саясатын қосу және өшіру)[id=s3-instructions-bucket-policy-enable-and-disable]}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.

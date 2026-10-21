@@ -8,7 +8,7 @@
 
 ## {heading(Тарифицируется)[id=gpu-tariffication-list]}
 
-- Каждый {linkto(/ru/computing/gpu/concepts/about#gpu-about-flavors)[text=шаблон конфигурации]} (flavors) с выделенными GPU или на базе технологии {linkto(/ru/computing/gpu/concepts/vgpu#gpu-vgpu)[text=vGPU]}.
+- GPU и {linkto(/ru/computing/gpu/concepts/vgpu#gpu-vgpu)[text=vGPU]}: стоимость графического ускорителя включена в стоимость {linkto(/ru/computing/gpu/concepts/about#gpu-about-flavors)[text=шаблона конфигурации]} (flavor) виртуальной машины. Стоимость всех GPU-конфигураций приведена в [прайс-листе](https://cloud.vk.ru/pricelist).
 
 ## {heading(Не тарифицируется)[id=gpu-tariffication-not-list]}
 

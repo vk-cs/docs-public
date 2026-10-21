@@ -185,7 +185,7 @@ aws s3api put-bucket-website \
 1. {linkto(../../../../networks/cdn/instructions/manage-cdn/origin-settings#cdn-origin-settings-protocol)[text=Выберите]} HTTPS в качестве протокола взаимодействия с источником для CDN-ресурса, чтобы обеспечить безопасную передачу данных пользователям. Это также необходимо для использования Let's Encrypt в качестве SSL-сертификата.
 1. В настройках шифрования CDN-ресурса выберите опцию **Let's Encrypt** — будет использован бесплатный SSL-сертификат, который создается автоматически после распространения CNAME-записей в DNS (обычно до 30 минут).
 Подробнее об управлении SSL-сертификатами — в разделе {linkto(../../../../networks/cdn/instructions/manage-cdn/ssl#cdn-ssl)[text=Использование SSL-сертификата]}.
-1. Настройте DNS-запись: создайте CNAME-запись для домена `astro.example.com`, указав в качестве псевдонима сохраненное служебное доменное имя CDN-ресурса. Если используется сервис DNS от {var(cloud)}, следуйте {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-record-add)[text=инструкции по добавлению DNS-записей]}.
+1. Настройте DNS-запись: создайте CNAME-запись для домена `astro.example.com`, указав в качестве псевдонима сохраненное служебное доменное имя CDN-ресурса. Если используется сервис DNS от {var(cloud)}, следуйте {linkto(../../../../networks/dns/instructions/publicdns/records#dns-records-add)[text=инструкции по добавлению DNS-записей]}.
 
 ## {heading(6. Настройте правила кеширования)[id=cdn-ssh-step6]}
 
