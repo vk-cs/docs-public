@@ -1,0 +1,16 @@
+{
+  "title": "Cannot delete a subnet",
+  "shortDescription": "What to do if a subnet cannot be deleted",
+  "metaDescription": "What to do if a subnet cannot be deleted: detaching a port left from a deleted virtual machine and deleting the subnet",
+  "sectionTitle": "Cannot delete a subnet",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": ""
+}

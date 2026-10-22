@@ -20,7 +20,7 @@ Unable to complete operation on subnet: One or more ports have an IP allocation 
    Здесь:
 
    - `<ПРОИЗВОЛЬНЫЙ_ТЕКСТ>` — любое имя или идентификатор несуществующего ресурса.
-   - `<ИМЯ_ИЛИ_ID_ПОРТА>` — {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=идентификатор группы безопасности]}, привязанного к удаленной ВМ.
+   - `<ИМЯ_ИЛИ_ID_ПОРТА>` — имя или идентификатор порта, оставшегося от удаленной ВМ. Посмотреть порты подсети: `openstack port list --network <ИМЯ_ИЛИ_ID_СЕТИ>`.
 
 1. Попробуйте удалить подсеть:
 

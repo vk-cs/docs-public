@@ -107,7 +107,7 @@ A page with detailed information about it will open.
 
 1. Click the pencil icon next to the security group name.
 
-Edit the name and (if necessary) the name of the security group.
+Edit the name and (if necessary) the description of the security group.
 
 1. Click the **Save** button.
 

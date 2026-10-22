@@ -22,7 +22,7 @@ Unable to complete operation on subnet: One or more ports have an IP allocation 
    Мұнда:
 
    - `<ПРОИЗВОЛЬНЫЙ_ТЕКСТ>` — жоқ ресурстың кез келген атауы немесе идентификаторы.
-   - `<ИМЯ_ИЛИ_ID_ПОРТА>` — жойылған ВМ-ге байланысқан {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-view)[text=қауіпсіздік тобының идентификаторы]}.
+   - `<ИМЯ_ИЛИ_ID_ПОРТА>` — жойылған ВМ-ден қалған порттың атауы немесе идентификаторы. Ішкі желінің порттарын көру: `openstack port list --network <ИМЯ_ИЛИ_ID_СЕТИ>`.
 
 1. Ішкі желіні жойып көріңіз:
 

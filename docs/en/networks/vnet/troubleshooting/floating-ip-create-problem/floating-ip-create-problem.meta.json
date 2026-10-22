@@ -1,0 +1,14 @@
+{
+  "title": "Cannot add a Floating IP address",
+  "shortDescription": "What to do if you cannot add a Floating IP address",
+  "metaDescription": "What to do if you cannot add a Floating IP address: checking the project quota for external IP addresses and free addresses in the external network",
+  "sectionTitle": "Cannot add a Floating IP address",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}
