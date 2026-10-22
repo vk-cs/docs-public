@@ -1,0 +1,14 @@
+{
+  "title": "VPN tunnel diagnostics",
+  "shortDescription": "What to do if a VPN tunnel is not established or does not pass traffic",
+  "metaDescription": "What to do if a VPN tunnel is not established or does not pass traffic: checking IKE/IPsec parameters, UDP ports 500 and 4500, MTU and routing",
+  "sectionTitle": "VPN tunnel diagnostics",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

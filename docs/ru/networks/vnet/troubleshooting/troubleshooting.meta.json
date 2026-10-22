@@ -11,5 +11,8 @@
       "private"
     ]
   },
-  "uuid": "b77f8772-f226-4ab6-8d70-1ba6e6e3fcf4"
+  "uuid": "b77f8772-f226-4ab6-8d70-1ba6e6e3fcf4",
+  "additionalUuids": [
+    "17d482b3-1f48-4477-be1b-110f1c0ef917"
+  ]
 }

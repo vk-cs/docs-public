@@ -1,0 +1,15 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Methods for diagnosing and solving typical problems with virtual networks",
+  "metaDescription": "How to troubleshoot the Cloud Networks service in VK Cloud. Methods for diagnosing and solving typical problems with virtual networks",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public",
+      "private"
+    ]
+  },
+  "uuid": ""
+}
