@@ -34324,5 +34324,11 @@
     "destination": "/en/data-platform/clickhouse/connections/connect",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/networks/vnet/troubleshooting/route-add-error",
+    "destination": "/ru/networks/vnet/troubleshooting",
+    "permanent": false,
+    "locale": false
   }
 ]

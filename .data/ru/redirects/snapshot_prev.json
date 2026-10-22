@@ -1173,6 +1173,7 @@
   "8daaa9ae-122c-43e5-bf73-978481ab8751": "/ru/data-platform/kafka/instructions/create",
   "5a7d8b53-3503-4083-b13c-75b981ccb7b5": "/ru/data-platform/kafka/instructions/management",
   "cc01b276-76c2-49c0-9600-01ce6edbab6c": "/ru/data-platform/kafka/instructions/connect",
+  "2de8c140-0627-4776-9f91-72b5582d2db4": "/ru/data-platform/kafka/instructions/topics",
   "da3f3576-d316-48ff-b951-8c955bbf7c65": "/ru/data-platform/kafka/tariffication",
   "d35f60fb-df95-4198-946a-c588a9527cc0": "/ru/ml",
   "ab24a318-2169-471e-9f86-b5e68361cfdb": "/ru/ml/mlplatform",
