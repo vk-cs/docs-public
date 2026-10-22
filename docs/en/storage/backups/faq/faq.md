@@ -56,3 +56,9 @@ After installation, you will need to register additional metadata on the VM. For
 [Use](/en/computing/iaas/instructions/vm/vm-filter) the **Backup** filter to find such VMs.
 
 {/cut}
+
+{cut(Can I download a backup and deploy it outside the platform?)}
+
+Yes, you can download a VM disk backup and deploy it outside VK Cloud. For more information, see [Migrating VM disk backups outside VK Cloud](/en/storage/backups/concepts/download-features).
+
+{/cut}

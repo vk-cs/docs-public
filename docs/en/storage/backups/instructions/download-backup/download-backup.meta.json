@@ -1,0 +1,14 @@
+{
+  "title": "Downloading a VM disk backup",
+  "shortDescription": "How to download VM disk backup files from Cloud Backup via the management console, OpenStack CLI, or API",
+  "metaDescription": "How to download a VM disk backup from Cloud Backup via the VK Cloud management console, OpenStack CLI, or API, and verify file integrity.",
+  "sectionTitle": "Downloading a VM disk backup",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

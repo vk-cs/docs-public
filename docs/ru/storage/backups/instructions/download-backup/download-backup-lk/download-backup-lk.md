@@ -39,7 +39,7 @@
 
 1. Скачайте все пять файлов для каждой копии.
 
-   В имени каждого файла указан один и тот же идентификатор копии — UUID резервной копии в сервисе Cinder. По нему можно {linkto(../download-backup-cli-api#backup-download-cli-api-get-ids)[text=узнать размер исходного диска]} через OpenStack CLI. Различается только тип файла:
+   В имени каждого файла указан один и тот же ID копии — UUID резервной копии в сервисе Cinder. По нему можно {linkto(../download-backup-cli-api#backup-download-cli-api-get-ids)[text=узнать размер исходного диска]} через OpenStack CLI. Различается только тип файла:
    
    - `content`,
    - `object_segments`,

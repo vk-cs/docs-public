@@ -1,0 +1,14 @@
+{
+  "title": "Migrating VM disk backups outside {var(cloud)}",
+  "shortDescription": "What a VM disk backup consists of, how full and incremental copies differ, how copies are stored, and what the limitations are",
+  "metaDescription": "Migrating VM disk backups from Cloud Backup: which files a copy consists of, how full and incremental copies differ, and the limitations.",
+  "sectionTitle": "Migrating VM disk backups outside {var(cloud)}",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

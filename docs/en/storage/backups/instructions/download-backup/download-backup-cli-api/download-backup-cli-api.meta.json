@@ -1,0 +1,14 @@
+{
+  "title": "Downloading a copy via OpenStack CLI and API",
+  "shortDescription": "How to identify copies via OpenStack CLI or API, download their files from the storage via AWS CLI, and verify integrity",
+  "metaDescription": "How to download VM disk backup files from Cloud Backup via OpenStack CLI, API, and AWS CLI if the management console is unavailable, and verify them.",
+  "sectionTitle": "Downloading a copy via OpenStack CLI and API",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -57,23 +57,23 @@
      selector:
        matchLabels:
          run: overprovisioning
-   template:
-     metadata:
-       labels:
-         run: overprovisioning
-     spec:
-       priorityClassName: overprovisioning
-       terminationGracePeriodSeconds: 0
-       containers:
-        - name: reserve-resources
-          image: registry.k8s.io/pause:3.9
-          resources:
-            requests:
-              cpu: 940m
-              memory: 1454740Ki
-            limits:
-              cpu: 940m
-              memory: 1454740Ki
+     template:
+       metadata:
+         labels:
+           run: overprovisioning
+       spec:
+         priorityClassName: overprovisioning
+         terminationGracePeriodSeconds: 0
+         containers:
+           - name: reserve-resources
+             image: registry.k8s.io/pause:3.9
+             resources:
+               requests:
+                 cpu: 940m
+                 memory: 1454740Ki
+               limits:
+                 cpu: 940m
+                 memory: 1454740Ki
    ```
 
    Здесь:

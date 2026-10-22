@@ -1,4 +1,4 @@
-The following describes how to create a Kubernetes cluster from your management console. For these clusters, integration with the [VK Cloud monitoring service](/en/monitoring-services/monitoring) is enabled, and you cannot disable it.
+Integration with the [VK Cloud monitoring service](/en/monitoring-services/monitoring) is enabled for these clusters, and you cannot disable it.
 
 {note:warn}
 

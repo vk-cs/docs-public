@@ -1,4 +1,4 @@
-The following describes how to create a Kubernetes cluster from your management console. You can also create a cluster [with Terraform](/en/kubernetes/k8s/instructions/create-cluster/create-terraform).
+You can create a Kubernetes cluster not only via the management console but also [with Terraform](/en/kubernetes/k8s/instructions/create-cluster/create-terraform).
 
 Creating [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clusters from the management console is disabled for new users and is only available on request via [technical support](mailto:support@mcs.mail.ru). By default, only second-generation clusters are [available](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2): they feature improved performance and stability.
 

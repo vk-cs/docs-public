@@ -118,7 +118,7 @@ Cloud services are managed using an API. Users interact with the API through one
 
 VK Cloud provides [technical support](/en/intro/start/support/support-info) for it's services. Partner solutions (e.g. AntiDDoS, WAF) are supported together with the partner.
 
-## Fault tolerance
+## {heading(Fault tolerance)[id=fault_tolerance]}
 
 Physical fault tolerance is implemented by placing VK Cloud in three Tier III reliability level data centers in the Russian Federation. Availability conditions are described at [https://cloud.vk.ru/docs/start/legal/offer/service-level-agreement](/ru/start/legal/offer/service-level-agreement "change-lang").
 
