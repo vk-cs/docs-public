@@ -12,7 +12,7 @@
    {tab(CentOS 7.X, CentOS 8.X, AlmaLinux 9)}
 
    ```console
-   sudo rpm -i https://cloudaudit.hb.bizmrg.com/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
+   sudo rpm -i https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
    ```
 
    {/tab}
@@ -20,7 +20,7 @@
    {tab(Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»)}
 
    ```console
-   wget https://cloudaudit.hb.bizmrg.com/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin_0.2.1_amd64.deb
+   wget https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin_0.2.1_amd64.deb
    sudo dpkg -i vkcloudaudit-fluent-bit-plugin_0.2.1_amd64.deb
    ```
 
@@ -29,7 +29,7 @@
    {tab(AltLinux Server p10)}
 
    ```console
-   sudo apt-get install https://cloudaudit.hb.bizmrg.com/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
+   sudo apt-get install https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
    ```
 
    {/tab}

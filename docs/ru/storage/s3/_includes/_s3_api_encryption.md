@@ -12,7 +12,7 @@
 
 ```curl
 GET /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 ```
 
@@ -35,7 +35,7 @@ HTTP/1.1 200
 
 **Код ошибки**
 
-HTTP: 400. Ошибка `ServerSideEncryptionConfigurationNotFoundError` — отсутствие конфигурации по умолчанию.
+HTTP: 400. Ошибка `ServerSideEncryptionConfigurationNotFoundError` — отсутствие конфигурации по умолчанию.
 
 ## {heading(PutBucketEncryption)[id=api-spec-s3-put-bucket-encryption]}
 
@@ -45,12 +45,12 @@ HTTP: 400. Ошибка `ServerSideEncryptionConfigurationNotFoundError` — о
 
 ```curl
 PUT /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-MD5: ContentMD5
 x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 <?xml version="1.0" encoding="UTF-8"?>
-<ServerSideEncryptionConfiguration xmlns="<http://hb.bizmrg.com/doc/2006-03-01/>">
+<ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 					      <Rule>
                   <ApplyServerSideEncryptionByDefault>
                      <SSEAlgorithm>AES256</SSEAlgorithm>
@@ -62,7 +62,7 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 **Path параметры**
 
 {ifdef(s3-pdf)}
-Описание параметров приведено в {linkto(#tab_path_parameters)[text=таблице %number]}.
+Описание параметров приведено в {linkto(#tab_path_parameters)[text=таблице %number]}.
 
 {caption(Таблица {counter(table)[id=numb_tab_path_parameters]} — Path-параметры)[align=right;position=above;id=tab_path_parameters;number={const(numb_tab_path_parameters)}]}
 {/ifdef}
@@ -77,8 +77,8 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 |Bucket
 |Да
 |bucket-name
-| <!--- ПУСТАЯ ЯЧЕЙКА  --->
-| <!--- ПУСТАЯ ЯЧЕЙКА  --->
+|Имя бакета
+|Имя бакета, для которого устанавливается шифрование объектов по умолчанию
 
 |SSEAlgorithm
 |Да
@@ -102,7 +102,7 @@ HTTP: 200 OK.
 
 ```curl
 DELETE /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 ```
 

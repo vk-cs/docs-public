@@ -15,7 +15,7 @@
 
 ```curl
 GET /{Key+}?legal-hold HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 Жауап мысалы:
@@ -73,7 +73,7 @@ HTTP/1.1 200
 
 ```curl
 PUT /{Key+}?legal-hold HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 <?xml version="1.0" encoding="UTF-8"?>
 <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
    <Status>string</Status>
@@ -88,7 +88,7 @@ Host: my-test-bucket1.hb.bizmrg.com
 
 ```curl
 GET /{Key+}?retention HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 Жауап мысалы:
@@ -153,7 +153,7 @@ HTTP/1.1 200
 
 ```curl
 PUT /{Key+}?retention HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-bypass-governance-retention: BypassGovernanceRetention
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -167,7 +167,7 @@ x-amz-bypass-governance-retention: BypassGovernanceRetention
 
 ```curl
 GET /?object-lock HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 Жауап мысалы:
@@ -257,7 +257,7 @@ HTTP/1.1 200
 
 ```curl
 PUT /?object-lock HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 <?xml version="1.0" encoding="UTF-8"?>
 <ObjectLockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
    <ObjectLockEnabled>string</ObjectLockEnabled>

@@ -78,23 +78,22 @@ Content-Type: text/plain
 Connection: close
 
 <?xml version="1.0" encoding="UTF-8"?>
-  <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-    <Owner>
-      <ID>6174283</ID>
-      <DisplayName>6174283</DisplayName>
-    </Owner>
-    <Buckets>
-      <Bucket>
-        <Name>static-images</Name>
-        <CreationDate>2020-08-31T18:37:48.157Z</CreationDate>
-      </Bucket>
-    <Buckets>
-      <Bucket>
-        <Name>log-files</Name>
-        <CreationDate>2020-08-31T18:37:48.157Z</CreationDate>
-      </Bucket>
-    </Buckets>
-  </ListAllMyBucketsResult>
+<ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+  <Owner>
+    <ID>6174283</ID>
+    <DisplayName>6174283</DisplayName>
+  </Owner>
+  <Buckets>
+    <Bucket>
+      <Name>static-images</Name>
+      <CreationDate>2020-08-31T18:37:48.157Z</CreationDate>
+    </Bucket>
+    <Bucket>
+      <Name>log-files</Name>
+      <CreationDate>2020-08-31T18:37:48.157Z</CreationDate>
+    </Bucket>
+  </Buckets>
+</ListAllMyBucketsResult>
 ...
 ```
 

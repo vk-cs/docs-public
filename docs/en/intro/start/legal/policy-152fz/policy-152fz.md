@@ -24,7 +24,7 @@ Cloud FZ-152 / Service is a service of the Company known under the name "Cloud F
 
 **Subjects** — Subjects of Personal Data, whose Data is processed by the Customer when using the Service.
 
-**ISPDN** is an information system of personal data Cloud Servers from VK Cloud, formerly known as "VK Cloud Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.bizmrg.com/mcs-static/\_\_\_files/certificates/security_certificate.pdf)](https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf).
+**ISPDN** is an information system of personal data Cloud Servers from VK Cloud, formerly known as "VK Cloud Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.ru-msk.vkcloud-storage.ru/mcs-static/\_\_\_files/certificates/security_certificate.pdf)](https://hb.ru-msk.vkcloud-storage.ru/mcs-static/___files/certificates/security_certificate.pdf).
 
 **Service unavailability (Downtime)** — the time interval from the moment the Customer sent a message to the Company's support service by e-mail to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or through the feedback form in the personal account, the fact of which was subsequently confirmed by the Company, and the moment the Service was resumed after the completion of the restoration work by the Company.
 

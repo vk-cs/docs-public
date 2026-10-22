@@ -55,7 +55,7 @@ A detailed description of the resources is in the [provider documentation](https
         - `<DOMAIN>` — the URL for accessing the storage, which depends on the account region. Possible values:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain.
-            - `https://hb.kz-ast.bizmrg.com` — the Kazakhstan region domain.
+            - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
 1. Run the command to initialize Terraform:
 
@@ -296,7 +296,7 @@ Make sure the bucket and objects have been created successfully, and the configu
       - `endpoint-url` is the VK Object Storage service domain, must match the [region](/en/tools-for-using-services/account/concepts/regions) of the account:
 
          - `https://hb.ru-msk.vkcloud-storage.ru` — domain of the Moscow region.
-         - `https://hb.kz-ast.bizmrg.com` — domain of the Kazakhstan region.
+         - `https://hb.kz-ast.vkcloud-storage.ru` — domain of the Kazakhstan region.
 
       The response will return the created bucket and the list of objects added to it.
 

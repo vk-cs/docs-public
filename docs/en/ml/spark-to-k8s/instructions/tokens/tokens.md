@@ -99,7 +99,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```console
-      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
    {/tab}
@@ -109,7 +109,7 @@ When working in a production environment, do not operate tokens in clear text. U
    Run the command:
 
    ```console
-   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 
    {/tab}
@@ -187,7 +187,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```console
-      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
    {/tab}
@@ -197,7 +197,7 @@ When working in a production environment, do not operate tokens in clear text. U
    Run the command:
 
    ```console
-   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 
    {/tab}
@@ -305,7 +305,7 @@ When working in a production environment, do not operate tokens in clear text. U
    1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```console
-      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
    {/tab}
@@ -315,7 +315,7 @@ When working in a production environment, do not operate tokens in clear text. U
    Run the command:
 
    ```console
-   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 
    {/tab}

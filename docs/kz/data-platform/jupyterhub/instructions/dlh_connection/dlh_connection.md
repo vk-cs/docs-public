@@ -83,7 +83,7 @@ JupyterHub сервис данасында DLH жүйесінде жұмыс і�
     ```python
     uri = "postgres://<ЛОГИН>:<ҚҰПИЯСӨЗ>@<IP-МЕКЕНЖАЙ>:8001/<БД>"
     s3_bucket_name = "<БАКЕТ>"
-    ENDPOINT = "https://hb.bizmrg.com"
+    ENDPOINT = "https://hb.ru-msk.vkcloud-storage.ru"
     ACCESS_KEY = "<S3_ҚОЛЖЕТКІЗУГЕ_АРНАЛҒАН_ЖАРИЯ_КІЛТ>"
     SECRET_KEY = "<S3_ҚОЛЖЕТКІЗУГЕ_АРНАЛҒАН_ҚҰПИЯ_КІЛТ>"
     ```

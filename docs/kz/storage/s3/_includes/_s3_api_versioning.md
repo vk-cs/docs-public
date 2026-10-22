@@ -29,7 +29,7 @@ HTTP/1.1 200
 
 ```curl
 PUT /?versioning HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-MD5: ContentMD5
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -59,7 +59,7 @@ Date: Wed, 01 Mar  2006 12:00:00 GMT3
 
 ```curl
 GET /?versions&delimiter=Delimiter&encoding-type=EncodingType&key-marker=KeyMarker&max-keys=MaxKeys&prefix=Prefix&version-id-marker=VersionIdMarker HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 x-amz-request-payer: RequestPayer
 x-amz-optional-object-attributes: OptionalObjectAttributes

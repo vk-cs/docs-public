@@ -38,7 +38,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```console
-      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
       ```
 
    {/tab}
@@ -48,7 +48,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    Execute the command:
 
    ```console
-   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.ru-msk.vkcloud-storage.ru/mlplatform_client.tar.gz
    ```
 
    {/tab}

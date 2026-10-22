@@ -148,7 +148,7 @@
    Здесь `--endpoint-url` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта. Возможные значения:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    В ответе должен вернуться список бакетов {var(s3)}.
 
