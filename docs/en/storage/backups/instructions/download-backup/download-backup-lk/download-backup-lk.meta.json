@@ -1,0 +1,14 @@
+{
+  "title": "Downloading a copy via the management console",
+  "shortDescription": "How to select copies, download VM disk backup files in the management console, and verify their integrity",
+  "metaDescription": "How to download VM disk backup files from Cloud Backup via the VK Cloud management console: select copies, download files, and verify their integrity.",
+  "sectionTitle": "Downloading a copy via the management console",
+  "icon": "",
+  "weight": 0,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

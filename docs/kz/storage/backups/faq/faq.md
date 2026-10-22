@@ -64,3 +64,9 @@
 Мұндай виртуалды машиналарды іздеу үшін **Бэкап** сүзгісін {linkto(../../../computing/iaas/instructions/vm/vm-filter#iaas-vm-filter)[text=пайдаланыңыз]}.
 
 {/cut}
+
+{cut(Резервтік көшірмені жүктеп алып, платформадан тыс орналастыруға бола ма?)}
+
+Иә, ВМ дискінің резервтік көшірмесін жүктеп алып, орналастыруға болады. Толығырақ {linkto(../concepts/download-features#backup-download-features)[text=%text]} бөлімінде.
+
+{/cut}

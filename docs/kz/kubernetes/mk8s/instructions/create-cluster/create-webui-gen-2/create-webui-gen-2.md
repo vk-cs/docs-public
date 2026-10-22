@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде жеке кабинеттен Kubernetes кластерін құру сипатталады. Кластерлер үшін {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=VK Cloud мониторинг]} сервисімен интеграция қосылған, оны өшіру мүмкін емес.
+Кластерлер үшін {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=VK Cloud мониторинг]} сервисімен интеграция қосылған, оны өшіру мүмкін емес.
 
 {note:warn}
 

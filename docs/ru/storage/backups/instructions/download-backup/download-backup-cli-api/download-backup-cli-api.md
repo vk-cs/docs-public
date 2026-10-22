@@ -1,6 +1,6 @@
 # {heading(Скачивание копии через OpenStack CLI и API)[id=backup-download-cli-api]}
 
-При использовании этого способа идентификаторы резервных копий определяются через OpenStack CLI или {linkto(../../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]}, а файлы копий скачиваются напрямую из {var(s3)} через AWS CLI. Используйте этот способ, чтобы автоматизировать скачивание или если личный кабинет недоступен. Также можно {linkto(../download-backup-lk#backup-download-lk)[text=скачать копию через личный кабинет]}.
+При использовании этого способа ID резервных копий определяются через OpenStack CLI или {linkto(../../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]}, а файлы копий скачиваются напрямую из {var(s3)} через AWS CLI. Используйте этот способ, чтобы автоматизировать скачивание или если личный кабинет недоступен. Также можно {linkto(../download-backup-lk#backup-download-lk)[text=скачать копию через личный кабинет]}.
 
 {note:err}
 Не удаляйте копию из Cloud Backup после скачивания.
@@ -8,9 +8,9 @@
 
 ## {heading(Перед скачиванием копии)[id=backup-download-cli-api-prepare]}
 
-1. Убедитесь, что {linkto(../../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=включена]} двухфакторная аутентификация и {linkto(../../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
+1. Убедитесь, что {linkto(../../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=активирован]} доступ по API.
 1. {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=Установите клиент OpenStack и пройдите аутентификацию]} в проекте, в котором хранятся резервные копии. Для аутентификации используйте {linkto(../../../../../access/iam/instructions/service-account-manage#service-account-download-rc-file)[text=OpenStack RC-файл]} или другой способ получения токена.
-1. Узнайте и запишите Project ID проекта: он понадобится при работе через API и при скачивании файлов из {var(s3)}.
+1. Получите и запишите Project ID проекта: он понадобится при работе через API и при скачивании файлов из {var(s3)}.
 
    Project ID не совпадает с {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)[text=идентификатором проекта]} в личном кабинете. Если вы прошли аутентификацию через OpenStack RC-файл, значение хранится в переменной `OS_PROJECT_ID`:
 
@@ -24,7 +24,7 @@
    openstack token issue -c project_id -f value
    ```
 
-   Также Project ID можно {linkto(../../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=узнать]} в личном кабинете. Сохраните его в переменную:
+   Также Project ID можно {linkto(../../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=получить]} в личном кабинете. Сохраните его в переменную:
 
    ```console
    export OS_PROJECT_ID=<ID_ПРОЕКТА>
@@ -51,7 +51,7 @@
 
    В столбце `ID` указан ID каждой копии. Чтобы получить копии только одного диска:
 
-      1. Узнайте ID диска ВМ с помощью команды: 
+      1. Получите ID диска ВМ с помощью команды: 
    
          ```console
          openstack volume list
@@ -116,7 +116,7 @@
 
    Здесь:
 
-   - `${OS_PROJECT_ID}` — Project ID проекта, который вы узнали ранее;
+   - `${OS_PROJECT_ID}` — Project ID проекта, который вы получили ранее;
    - `<ID_СЕРВИСА>` — ID сервиса `provider_id`, полученный на предыдущем шаге.
 
 1. Выведите основные сведения о точках восстановления:
@@ -140,7 +140,7 @@
    Резервным копиям дисков соответствуют ресурсы типа `OS::Cinder::Volume`. В каждой строке:
 
    - `original_id` — ID исходного диска;
-   - `external_id` — ID резервной копии этого диска (имя папки в бакете `volumebackups-<ID_ПРОЕКТА>`, где `<ID_ПРОЕКТА>` — Project ID, который вы узнали ранее);
+   - `external_id` — ID резервной копии этого диска (имя папки в бакете `volumebackups-<ID_ПРОЕКТА>`, где `<ID_ПРОЕКТА>` — Project ID, который вы получили ранее);
    - `status` — статус копии, должен быть `available`.
 
    Если у ВМ несколько дисков, строк будет несколько: каждый диск имеет свою цепочку копий и восстанавливается отдельно.
@@ -211,7 +211,7 @@ aws --endpoint-url <АДРЕС_S3> s3 cp s3://volumebackups-<ID_ПРОЕКТА>/
 Здесь:
 
 - `<АДРЕС_S3>` — адрес эндпоинта {var(s3)}, например `https://hb.ru-msk.vkcloud-storage.ru`.
-- `<ID_ПРОЕКТА>` — Project ID проекта, который вы узнали ранее.
+- `<ID_ПРОЕКТА>` — Project ID проекта, который вы получили ранее.
 - `<ID_КОПИИ>` — ID резервной копии: 
 
    - для OpenStack CLI — значение из столбца `ID`;
@@ -222,7 +222,7 @@ aws --endpoint-url <АДРЕС_S3> s3 cp s3://volumebackups-<ID_ПРОЕКТА>/
 - `content`,
 - `object_segments`,
 - `volume_segments`,
-- `sha_list`
+- `sha_list`,
 - `volume_metadata`. 
 
 Подробнее в разделе {linkto(../../../concepts/download-features#backup-download-features-content)[text=Перенос резервных копий дисков ВМ вне {var(cloud)}]}.

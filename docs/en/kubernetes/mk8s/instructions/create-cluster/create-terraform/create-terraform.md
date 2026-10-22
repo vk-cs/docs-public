@@ -1,4 +1,4 @@
-Description of how to create a cluster using Terraform is provided below. You can also create a cluster [via the VK Cloud management console](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2).
+You can create a Kubernetes cluster not only with Terraform but also [via the VK Cloud management console](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2).
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 

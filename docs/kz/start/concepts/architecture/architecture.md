@@ -122,7 +122,7 @@ VK Cloud компоненттері мен сервистерінің жалпы
 
 VK Cloud өз сервистері үшін [техникалық қолдау](/kz/start/support/support-info) ұсынады. Серіктестік шешімдерге (мысалы, AntiDDoS, WAF) қолдау серіктеспен бірлесіп көрсетіледі.
 
-## Істен шығуға төзімділік
+## {heading(Істен шығуға төзімділік)[id=architecture-fault-tolerance]}
 
 Физикалық істен шығуға төзімділік VK Cloud-ты РФ аумағындағы Tier III сенімділік деңгейіндегі үш деректер орталығында орналастыру арқылы іске асырылған. Қолжетімділік шарттары [https://cloud.vk.ru/docs/start/legal/offer/service-level-agreement](/ru/start/legal/offer/service-level-agreement "change-lang") мақаласында сипатталған.
 

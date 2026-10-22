@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде Terraform көмегімен кластерді құру сипатталады. Сондай-ақ кластерді {linkto(../create-webui#k8s-create-webui)[text=VK Cloud жеке кабинетінде]} де құра аласыз.
+Kubernetes кластерін Terraform арқылы ғана емес, {linkto(../create-webui#k8s-create-webui)[text={var(cloud)} жеке кабинеті]} арқылы да құруға болады.
 
 Әртүрлі кластерлерді құруға арналған дайын конфигурациялық файлдар мысалдары Terraform бөлімінде [келтірілген](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create).
 

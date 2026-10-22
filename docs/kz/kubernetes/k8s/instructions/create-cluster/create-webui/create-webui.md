@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Төменде жеке кабинеттен Kubernetes кластерін құру сипатталады. Сондай-ақ кластерді {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]} көмегімен де құра аласыз.
+Kubernetes кластерін жеке кабинет арқылы ғана емес, {linkto(../create-terraform#k8s-create-terraform)[text=Terraform]} көмегімен де құруға болады.
 
 Жеке кабинеттен бірінші буын кластерлерін құру жаңа пайдаланушылар үшін өшірілген және тек [техникалық қолдау](/kz/contacts) арқылы сұраныс бойынша қол жетімді. Әдепкі [қол жетімді](/kz/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2) тек екінші буын кластерлері: олар жақсартылған өнімділік пен тұрақтылыққа ие.
 
