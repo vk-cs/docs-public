@@ -57,7 +57,7 @@
         - `<ДОМЕН>` — аккаунт аймағына байланысты сақтау қоймасына қол жеткізуге арналған URL. Мүмкін мәндер:
 
             - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-            - `https://hb.kz-ast.bizmrg.com` — Қазақстан аймағының домені.
+            - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
 
 1. Terraform инициализациялау үшін команданы орындаңыз:
 
@@ -296,7 +296,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
     - `endpoint-url` — {var(s3)} сервисінің домені, ол аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
 
         - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-        - `https://hb.kz-ast.bizmrg.com` — Қазақстан аймағының домені.
+        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
 
    Жауапта жасалған бакет және оған қосылған объектілер тізімі қайтарылады.
 

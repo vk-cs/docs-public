@@ -59,7 +59,7 @@
       - `<ДОМЕН>` — URL для доступа к хранилищу, который зависит от региона аккаунта. Возможные значения:
 
         - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-        - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+        - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
 1. Выполните команду для инициализации Terraform:
 
@@ -296,7 +296,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
    - `endpoint-url` — домен сервиса {var(s3)}, должен соответствовать {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-     - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+     - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
 
    В ответе вернется созданный бакет и список добавленных в него объектов.
 

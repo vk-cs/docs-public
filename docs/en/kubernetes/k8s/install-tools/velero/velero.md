@@ -70,7 +70,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    Here `<DOMAIN>` is the VK Object Storage service domain corresponding to the account region:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain.
-   - `https://hb.kz-ast.bizmrg.com` — the Kazakhstan region domain.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
    After the installation is complete, a message will be displayed:
 

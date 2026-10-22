@@ -81,7 +81,7 @@
     ```python
     uri = "postgres://<ЛОГИН>:<ПАРОЛЬ>@<IP-АДРЕС>:8001/<БД>"
     s3_bucket_name = "<БАКЕТ>"
-    ENDPOINT = "https://hb.bizmrg.com"
+    ENDPOINT = "https://hb.ru-msk.vkcloud-storage.ru"
     ACCESS_KEY = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА_К_S3>"
     SECRET_KEY = "<ПРИВАТНЫЙ_КЛЮЧ_ДОСТУПА_К_S3>"
     ```

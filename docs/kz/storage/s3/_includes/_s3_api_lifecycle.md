@@ -236,7 +236,7 @@
 
 ```curl
 GET /?lifecycle HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T001757Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=e92e48fb16dad3d9d332460adde86493b8930262d9385e002b0408e17a2781f4
@@ -274,7 +274,7 @@ Connection: close
 
 ```curl
 PUT /?lifecycle HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-Length: 488
 Content-Type: application/xml
 x-amz-content-sha256: 34850007f92ec3331486b48fd7db15f48315fe73c4a9b135e6d9fd629276c1e7

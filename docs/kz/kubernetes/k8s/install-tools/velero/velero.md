@@ -74,7 +74,7 @@ Velero — Kubernetes кластері ресурстарының резервт
    Мұнда `<ДОМЕН>` — аккаунт аймағына сәйкес VK Object Storage сервисінің домені:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені.
-   - `https://hb.kz-ast.bizmrg.com` — Қазақстан аймағының домені.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
 
    Орнату аяқталғаннан кейін хабарлама шығарылады:
 

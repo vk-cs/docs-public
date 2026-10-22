@@ -104,7 +104,7 @@ HTTP: 200 OK.
 
 ```curl
 GET /{Key+}?tagging HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 Жауап мысалы:
@@ -133,7 +133,7 @@ HTTP/1.1 200
 
 ```curl
 DELETE /{Key+}?tagging HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 **Сәтті жауап коды**

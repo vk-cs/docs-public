@@ -147,7 +147,7 @@ If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/ins
     Here `--endpoint-url` is the VK Object Storage service domain, it should match the [region](/en/tools-for-using-services/account/concepts/regions) of the account. Possible values:
 
       - `https://hb.ru-msk.vkcloud-storage.ru` is the Moscow region domain.
-      - `https://hb.kz-ast.bizmrg.com` is the Kazakhstan region domain.
+      - `https://hb.kz-ast.vkcloud-storage.ru` is the Kazakhstan region domain.
 
 The response should return a list of the VK Object Storage buckets.
 

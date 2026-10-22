@@ -202,7 +202,7 @@ Velero — это клиент-серверная утилита для резе
    Здесь `<ДОМЕН>` — домен сервиса VK Object Storage, соответствующий региону аккаунта:
 
    - `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва.
-   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
+   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
    {/ifdef}
 
    {ifndef(public)}

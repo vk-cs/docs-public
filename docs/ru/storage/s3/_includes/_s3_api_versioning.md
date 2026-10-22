@@ -6,7 +6,7 @@
 
 ## {heading(GetBucketVersioning)[id=api-spec-s3-get-bucket-versioning]}
 
-Операция `GET` возвращает информацию по версионирование бакета. Версионирование может быть установлено в одно из двух состояний: `Enabled` — включено; `Suspended` — приостановлено.
+Операция `GET` возвращает информацию по версионированию бакета. Версионирование может быть установлено в одно из двух состояний: `Enabled` — включено; `Suspended` — приостановлено.
 
 Пример ответа:
 
@@ -29,7 +29,7 @@ HTTP/1.1 200
 
 ```curl
 PUT /?versioning HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-MD5: ContentMD5
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -46,7 +46,7 @@ Content-MD5: ContentMD5
 HTTP/1.1 200 OK
 x-amz-id-2: YgIPIfBiKa2bj0KMg95r/0zo3emzU4dzsD4rcKCHQUAdQkf3ShJTOOpXUueF6QKo
 x-amz-request-id: 236A8905248E5A01
-Date: Wed, 01 Mar  2006 12:00:00 GMT3
+Date: Wed, 01 Mar 2006 12:00:00 GMT
 ```
 
 ## {heading(ListObjectVersions)[id=api-spec-s3-list-object-versions]}
@@ -59,7 +59,7 @@ Date: Wed, 01 Mar  2006 12:00:00 GMT3
 
 ```curl
 GET /?versions&delimiter=Delimiter&encoding-type=EncodingType&key-marker=KeyMarker&max-keys=MaxKeys&prefix=Prefix&version-id-marker=VersionIdMarker HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 x-amz-request-payer: RequestPayer
 x-amz-optional-object-attributes: OptionalObjectAttributes

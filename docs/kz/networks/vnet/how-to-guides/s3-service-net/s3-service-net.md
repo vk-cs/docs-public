@@ -148,7 +148,7 @@
    Мұнда `--endpoint-url` — VK Object Storage сервисінің домені, ол аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} сәйкес келуі тиіс. Мүмкін мәндер:
 
     - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-    - `https://hb.kz-ast.bizmrg.com` — Қазақстан аймағының домені.
+    - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
 
    Жауапта VK Object Storage бакеттерінің тізімі қайтарылуы тиіс.
 

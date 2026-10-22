@@ -97,7 +97,7 @@
 	   cfg, err := config.LoadDefaultConfig(context.TODO())
 	   if err != nil {
 		   fmt.Printf("Error loading default config: %v", err)
-		   os.Exit(0)
+		   os.Exit(1)
 	   }
 
 	   client := s3.NewFromConfig(cfg, func(o *s3.Options) {

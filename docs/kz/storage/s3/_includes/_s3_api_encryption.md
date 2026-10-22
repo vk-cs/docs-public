@@ -12,7 +12,7 @@
 
 ```curl
 GET /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 ```
 
@@ -45,12 +45,12 @@ HTTP: 400. `ServerSideEncryptionConfigurationNotFoundError` қатесі — ә
 
 ```curl
 PUT /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 Content-MD5: ContentMD5
 x-amz-sdk-checksum-algorithm: ChecksumAlgorithm
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 <?xml version="1.0" encoding="UTF-8"?>
-<ServerSideEncryptionConfiguration xmlns="<http://hb.bizmrg.com/doc/2006-03-01/>">
+<ServerSideEncryptionConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 					      <Rule>
                   <ApplyServerSideEncryptionByDefault>
                      <SSEAlgorithm>AES256</SSEAlgorithm>
@@ -102,7 +102,7 @@ HTTP: 200 OK.
 
 ```curl
 DELETE /?encryption HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 x-amz-expected-bucket-owner: ExpectedBucketOwner
 ```
 

@@ -78,7 +78,7 @@ HTTP: 200 OK.
 
 |AccessDenied
 |Доступ запрещен. ID учетной записи не соответствует владельцу бакета
-|400 Bad Request
+|403 Forbidden
 
 |MalformedXML
 |XML запроса не соответствует схеме
@@ -104,7 +104,7 @@ HTTP: 200 OK.
 
 ```curl
 GET /{Key+}?tagging HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 Пример ответа:
@@ -118,6 +118,7 @@ HTTP/1.1 200
          <Key>key-object1</Key>
          <Value>value-object1</Value>
       </Tag>
+      <Tag>
          <Key>key-object2</Key>
          <Value>value-object2</Value>
       </Tag>
@@ -133,7 +134,7 @@ HTTP/1.1 200
 
 ```curl
 DELETE /{Key+}?tagging HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.ru-msk.vkcloud-storage.ru
 ```
 
 **Код успешного ответа**
