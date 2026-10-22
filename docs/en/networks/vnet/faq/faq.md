@@ -123,14 +123,6 @@ To choose a suitable option for your scenario, contact your manager at [sales-te
 
 {/cut}
 
-{cut(Is traffic to external SMTP servers limited?)}
-
-To protect against spam, outgoing traffic through SMTP ports (25, 465, 587) is limited by default in new projects.
-
-If you cannot send email, contact [technical support](mailto:support@mcs.mail.ru) to remove the restriction.
-
-{/cut}
-
 {cut(The service runs stably on a VM in one availability zone, but the number of 5XX errors periodically grows on a VM in another zone. What should I do?)}
 
 Contact [technical support](mailto:support@mcs.mail.ru) to diagnose network problems. Be sure to attach the results of a traceroute (MTR) taken at the time the problem occurred (at least 1000 packets) and the exact timestamps of the incidents.
