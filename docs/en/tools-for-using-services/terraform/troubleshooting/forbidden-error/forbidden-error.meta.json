@@ -1,0 +1,14 @@
+{
+  "title": "403 error when creating a server",
+  "shortDescription": "What to do if a 403 error Working with SDN=NEUTRON is not allowed appears when creating a server via Terraform",
+  "metaDescription": "What to do if a 403 error Working with SDN=NEUTRON is not allowed appears when creating a server via Terraform",
+  "sectionTitle": "403 error when creating a server",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

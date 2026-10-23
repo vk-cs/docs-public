@@ -10,7 +10,7 @@ Joomla мүмкіндіктері:
 - көптілділікті қолдау;
 - басқа жүйелермен интеграцияға арналған API.
 
-Joomla пайдалану арқылы сіз [Marketplace](/kz/start/legal/digital-cloud/marketplace) және [Joomla](https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt) лицензиялық келісімдерімен келісесіз.
+Joomla пайдалану арқылы сіз [Marketplace](/kz/start/legal/digital-cloud/marketplace) және [Joomla](https://github.com/joomla/joomla-cms/blob/5.4-dev/LICENSE.txt) лицензиялық келісімдерімен келісесіз.
 
 VK Cloud жобасында Joomla сервисін өрістету үшін:
 
