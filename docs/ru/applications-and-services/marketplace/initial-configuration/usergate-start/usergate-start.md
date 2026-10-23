@@ -1,4 +1,4 @@
-# {heading(Защита инфраструктуры с помощью UserGate NGFW)[id=marketplace-usergate-start]}
+# {heading(Развертывание UserGate NGFW)[id=marketplace-usergate-start]}
 
 Вы можете настроить файервол нового поколения для защиты инфраструктуры от сетевых атак с помощью сервиса UserGate NGFW. Возможности сервиса:
 

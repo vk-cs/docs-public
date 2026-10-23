@@ -1,4 +1,4 @@
-# {heading(Защита инфраструктуры с помощью Check Point CloudGuard Network)[id=marketplace-checkpoint-start]}
+# {heading(Развертывание Check Point CloudGuard Network)[id=marketplace-checkpoint-start]}
 
 Вы можете защитить свою инфраструктуру от возможных веб-угроз с помощью сервиса Check Point CloudGuard Network. Этот сервис представляет собой комплексное решение для усовершенствованного предотвращения угроз и защиты сети в облаке любого типа. Сервис Check Point CloudGuard Network включает в себя:
 
