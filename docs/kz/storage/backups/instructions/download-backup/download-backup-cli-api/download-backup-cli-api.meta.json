@@ -5,7 +5,7 @@
   "sectionTitle": "Көшірмені OpenStack CLI және API арқылы жүктеп алу",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "c40c8325-3e4d-4536-916d-d91e53d530ec",
   "build": {
     "for": [
       "public"

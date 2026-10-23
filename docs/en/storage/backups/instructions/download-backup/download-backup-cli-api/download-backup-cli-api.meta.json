@@ -5,7 +5,7 @@
   "sectionTitle": "Downloading a copy via OpenStack CLI and API",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "6e906907-977d-4e40-b405-bc6fa5fa9417",
   "build": {
     "for": [
       "public"

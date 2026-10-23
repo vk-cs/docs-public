@@ -5,7 +5,7 @@
   "sectionTitle": "Downloading a VM disk backup",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "c32d4375-feb5-450e-bcae-dea32d0f2884",
   "build": {
     "for": [
       "public"

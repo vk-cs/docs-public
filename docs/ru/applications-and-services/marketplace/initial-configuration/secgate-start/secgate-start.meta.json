@@ -5,7 +5,7 @@
   "sectionTitle": "Развертывание VK Security Gate",
   "icon": "",
   "weight": 21,
-  "uuid": "",
+  "uuid": "b88c28d7-1adc-4ea9-a561-8ecab6343715",
   "build": {
     "for": [
       "public"

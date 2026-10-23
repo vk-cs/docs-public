@@ -5,7 +5,7 @@
   "sectionTitle": "Migrating VM disk backups outside {var(cloud)}",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "60ee9ac5-91d3-4351-82f1-dbd09699c8a1",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "ВМ дискінің резервтік көшірмесін жүктеп алу",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "c6fabbee-168a-4674-a7ca-1e58367ad3ce",
   "build": {
     "for": [
       "public"

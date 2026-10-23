@@ -34330,5 +34330,11 @@
     "destination": "/ru/networks/vnet/troubleshooting",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/networks/dns/troubleshooting/cannot-create-cname",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
   }
 ]

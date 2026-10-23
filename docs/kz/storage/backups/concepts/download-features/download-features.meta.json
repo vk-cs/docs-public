@@ -5,7 +5,7 @@
   "sectionTitle": "ВМ дисктерінің резервтік көшірмелерін {var(cloud)} сыртына ауыстыру",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "26fe6037-5b18-4d94-b2fa-74da40215a28",
   "build": {
     "for": [
       "public"
