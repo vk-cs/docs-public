@@ -1,5 +1,7 @@
 # {heading(Cannot delete a subnet)[id=vnet-subnet-delete-problem]}
 
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 An error occurs when deleting a subnet:
 
 ```text
@@ -27,6 +29,6 @@ The problem occurs when a virtual machine has been deleted, but its port remains
    ```console
    openstack subnet delete <SUBNET_ID>
    ```
-   Here `<SUBNET_ID>` is the {linkto(../../../../networks/vnet/instructions/net)[text=identifier of the subnet]} to delete.
+   Here `<SUBNET_ID>` is the [identifier of the subnet](../../../../networks/vnet/instructions/net) to delete.
 
-1. If the problem persists, contact {ifdef(public)}[technical support](/en/contacts){/ifdef}{ifdef(private,private-pg)}your {var(cloud)} administrator{/ifdef}.
+1. If the problem persists, contact {ifdef(public)}[technical support](mailto:support@mcs.mail.ru){/ifdef}{ifdef(private,private-pg)}your {var(cloud)} administrator{/ifdef}.

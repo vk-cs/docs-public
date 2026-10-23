@@ -11,7 +11,8 @@ Joomla — система управления контентом (CMS) с от�
 - поддержка многоязычности;
 - API для интеграции с другими системами.
 
-Используя Joomla, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Joomla](https://github.com/binhnk0791/joomla/blob/master/LICENSE.txt).
+Используя Joomla, вы соглашаетесь с лицензионными соглашениями [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и [Joomla](https://github.com/joomla/joomla-cms/blob/5.4-dev/LICENSE.txt).
+
 
 Чтобы развернуть сервис Joomla в проекте {var(cloud)}:
 

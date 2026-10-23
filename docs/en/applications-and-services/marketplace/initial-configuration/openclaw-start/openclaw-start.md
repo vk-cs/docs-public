@@ -94,7 +94,7 @@ To deploy the OpenClaw service on a VM in your VK Cloud project:
 
 1. Run a test task to verify that the agent correctly executes the scenario.
 
-## {heading({counter(openclaw)}. Add a model via the web interface)[id=marketplace-openclaw-check]}
+## {heading({counter(openclaw)}. Add a model via the web interface)[id=marketplace-openclaw-add-model]}
 
 1. In the OpenClaw service web interface, go to the **Config** section.
 1. Switch to **Raw** mode and add the settings for the required model to the JSON configuration without removing existing parameters.

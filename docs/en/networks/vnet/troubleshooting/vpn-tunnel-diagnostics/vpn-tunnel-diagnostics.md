@@ -1,5 +1,7 @@
 # {heading(VPN tunnel diagnostics)[id=vpn-tunnel-diagnostics]}
 
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 A site-to-site VPN tunnel is not established or does not pass traffic, including large packets.
 
 Possible causes:

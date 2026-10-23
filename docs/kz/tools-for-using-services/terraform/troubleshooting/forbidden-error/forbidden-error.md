@@ -4,4 +4,33 @@ Terraform арқылы серверді жасау кезінде `Working with 
 
 ### Шешім
 
-VK Cloud провайдерінің өзекті нұсқасын және Sprut-пен үйлесімді ресурстарды (немесе әмбебап `vkcs_networking_*` ресурстарын) пайдаланып жатқаныңызға көз жеткізіңіз.
+1. {var(cloud)} провайдерінің өзекті нұсқасын пайдаланып жатқаныңызға көз жеткізіңіз. Нұсқаны `vkcs_provider.tf` файлынан тексеріңіз:
+
+   ```hcl
+   terraform {
+     required_providers {
+       vkcs = {
+         source = "vk-cs/vkcs"
+         version = ">= 0.18.0"
+       }
+     }
+   }
+   ```
+
+   Провайдердің өзекті нұсқасы [провайдер репозиторийінде](https://github.com/vk-cs/terraform-provider-vkcs/releases) келтірілген.
+
+1. Қажет болса, провайдерді жаңартыңыз:
+
+   ```console
+   terraform init --upgrade
+   ```
+
+1. Конфигурацияны тексеріп, өзгерістерді қолданыңыз:
+
+   ```console
+   terraform validate
+   terraform plan
+   terraform apply
+   ```
+
+Егер мәселе сақталса, [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts) және `terraform plan` командасының нәтижесі мен провайдер нұсқасын қосыңыз.
