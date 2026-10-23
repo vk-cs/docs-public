@@ -1,4 +1,4 @@
-# {heading(Установка и настройка сервиса OpenClaw)[id=marketplace-openclaw-quick-start]}
+# {heading(Развертывание OpenClaw)[id=marketplace-openclaw-quick-start]}
 
 [OpenClaw](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/546d0a61-00dd-4ce9-b662-d7eeb4be3149/v0.12/info) — это инструмент с открытым исходным кодом для создания AI-агентов и приложений на базе LLM. Он также позволяет эффективно управлять такими агентами и приложениями. OpenClaw предоставляет интерфейс для настройки агентов, интеграции внешних инструментов и автоматизации задач.
 

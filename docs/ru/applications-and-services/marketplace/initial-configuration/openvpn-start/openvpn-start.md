@@ -1,4 +1,4 @@
-# {heading(Установка и настройка сервиса OpenVPN)[id=marketplace-openvpn-start]}
+# {heading(Развертывание OpenVPN)[id=marketplace-openvpn-start]}
 
 Вы можете управлять доступом к ресурсам облака с помощью сервиса [OpenVPN](https://msk.cloud.vk.ru/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info). Эта инструкция поможет развернуть сервис OpenVPN на ВМ в {var(cloud)}, зайти в консоль сервиса и создать нового пользователя.
 

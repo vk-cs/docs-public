@@ -1,4 +1,4 @@
-# {heading(Установка и настройка сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start]}
+# {heading(Развертывание сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start]}
 
 Мониторинг для Arenadata DB — готовое решение для мониторинга баз данных Arenadata в инфраструктуре {var(cloud)}. Содержит набор предустановленных инструментов для сбора метрик, визуализации и своевременного оповещения о проблемах.
 

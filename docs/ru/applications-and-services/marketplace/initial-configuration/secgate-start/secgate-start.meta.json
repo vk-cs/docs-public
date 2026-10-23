@@ -1,0 +1,14 @@
+{
+  "title": "Развертывание VK Security Gate",
+  "shortDescription": "Развертывание сервиса VK Security Gate и конфигурация дополнительных сервисов: CodeQL, AI-триаж на базе LLM и интеграция с Jira",
+  "metaDescription": "Практическое руководство по первичной настройке VK Security Gate после развертывания: подключение по SSH, управление продуктом через CLI secgate, загрузка и настройка CodeQL, подключение LLM для AI-триажа находок и интеграция с Jira",
+  "sectionTitle": "Развертывание VK Security Gate",
+  "icon": "",
+  "weight": 21,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

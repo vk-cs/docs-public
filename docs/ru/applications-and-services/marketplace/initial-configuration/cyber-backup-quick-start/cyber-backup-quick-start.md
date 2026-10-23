@@ -1,4 +1,4 @@
-# {heading(Установка и настройка сервиса Кибер Бэкап Облачный)[id=marketplace-cyber-backup-quick-start]}
+# {heading(Развертывание сервиса Кибер Бэкап Облачный)[id=marketplace-cyber-backup-quick-start]}
 
 Вы можете настроить резервное копирование и восстановление ваших виртуальных машин с помощью сервиса [Кибер Бэкап Облачный](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/630008e7-a649-4111-a21f-6d8461cd5f7a/latest/info).
 
