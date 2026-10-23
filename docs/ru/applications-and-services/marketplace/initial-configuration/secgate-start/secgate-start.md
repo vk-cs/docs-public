@@ -1,4 +1,4 @@
-# {heading(Установка и настройка сервиса VK Security Gate)[id=secgate-start]}
+# {heading(Развертывание VK Security Gate)[id=secgate-start]}
 
 VK Security Gate — это платформа анализа безопасности, которая развертывается на выделенной виртуальной машине в вашем проекте VK Cloud и предоставляет возможности для автоматизированного контроля качества кода:
 
@@ -33,7 +33,7 @@ VK Security Gate — это платформа анализа безопасно
 
 {/cut}
 
-Используя сервис, вы принимаете лицензионное соглашение сервиса [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и лицензионное соглашение сервиса [VK Security Gate](../../../../start/legal/offer/private-special-conditions/policy-security-gate).
+Используя сервис, вы принимаете лицензионное соглашение сервиса [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и лицензионное соглашение сервиса [VK Security Gate](../../../../start/legal/offer/private-special-conditions/policy-security-gate-usage).
 
 Чтобы развернуть сервис VK Security Gate в проекте VK Cloud:
 

@@ -6,7 +6,7 @@
   "icon": "",
   "disableGithub": true,
   "disableDateInformation": true,
-  "weight": 5,
+  "weight": 6,
   "uuid": "e2073b8b-708c-4b64-94aa-f5bd6d437f92",
   "build": {
     "for": [
