@@ -1,0 +1,14 @@
+{
+  "title": "Enabling Secure token",
+  "shortDescription": "How to protect CDN resource files from unwanted downloads using the Secure token option",
+  "metaDescription": "How to protect CDN resource files from unwanted downloads using Secure token technology",
+  "sectionTitle": "Enabling Secure token",
+  "icon": "",
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "3f101e4c-70d6-4744-b86a-79685367e0ad"
+}

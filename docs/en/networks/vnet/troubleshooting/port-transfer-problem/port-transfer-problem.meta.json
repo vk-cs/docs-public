@@ -1,0 +1,14 @@
+{
+  "title": "Network interface does not appear after port transfer",
+  "shortDescription": "What to do if a new network interface does not appear after transferring a port to another VM",
+  "metaDescription": "What to do if a new network interface does not appear after transferring a port to another VM",
+  "sectionTitle": "Network interface does not appear after port transfer",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "1409bd74-098e-4a67-8408-fcb525e36598"
+}

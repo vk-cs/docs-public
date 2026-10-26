@@ -1,6 +1,6 @@
-По умолчанию стандартный агент мониторинга собирает следующую информацию из операционной системы:
+By default, the standard monitoring agent collects the following information from the operating system:
 
-- Потребление CPU (плагин [cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)):
+- CPU usage (plugin [cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)):
 
   - `time_user` (float)
   - `time_system` (float)
@@ -25,7 +25,7 @@
   - `usage_guest` (float, percent)
   - `usage_guest_nice` (float, percent)
 
-- Потребление памяти (плагин [mem](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem)):
+- Memory usage (plugin [mem](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem)):
 
   - `active` (integer, Darwin, FreeBSD, Linux, OpenBSD)
   - `available` (integer)
@@ -64,7 +64,7 @@
   - `write_back` (integer, Linux)
   - `write_back_tmp` (integer, Linux)
 
-- Статистика страниц ядра ОС (плагин [kernel_vmstat](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kernel_vmstat)):
+- OS kernel page statistics (plugin [kernel_vmstat](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kernel_vmstat)):
 
   - `nr_free_pages` (integer, nr_free_pages)
   - `nr_inactive_anon` (integer, nr_inactive_anon)
@@ -158,7 +158,7 @@
   - `thp_collapse_alloc_failed` (integer, thp_collapse_alloc_failed)
   - `thp_split` (integer, thp_split)
 
-- Информация о диске (плагин [disk](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk)):
+- Disk information (plugin [disk](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk)):
 
   - `free` (integer, bytes)
   - `total` (integer, bytes)
@@ -168,7 +168,7 @@
   - `inodes_total` (integer, files)
   - `inodes_used` (integer, files)
 
-- Информация о дисковом IO (плагин [diskio](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio)):
+- Disk I/O information (plugin [diskio](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio)):
 
   - `reads` (integer, counter)
   - `writes` (integer, counter)
@@ -182,7 +182,7 @@
   - `merged_reads` (integer, counter)
   - `merged_writes` (integer, counter)
 
-- Информация о работе сетевой подсистемы внутри ОС (плагин [net](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md)):
+- Information about the network subsystem operation within the OS (plugin [net](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md)):
 
   - `bytes_sent` — the total number of bytes sent by the interface;
   - `bytes_recv` — the total number of bytes received by the interface;
@@ -193,7 +193,7 @@
   - `drop_in` — the total number of received packets dropped by the interface;
   - `drop_out` — the total number of transmitted packets dropped by the interface.
 
-- Информация из [NetStat](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NETSTAT_README.md):
+- Information from [NetStat](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NETSTAT_README.md):
 
   - `tcp_established`
   - `tcp_syn_sent`

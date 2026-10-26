@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the Cloud for Cold Data service (Icebox)",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC VK (hereinafter — the Company) to conclude a user agreement (hereinafter — the Agreement) with you",
+  "sectionTitle": "User Agreement for the Cloud for Cold Data service (Icebox)",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "571b7578-c012-422e-9b6c-b0f7f5eba8dd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

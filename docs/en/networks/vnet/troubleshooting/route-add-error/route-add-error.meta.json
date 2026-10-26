@@ -1,0 +1,14 @@
+{
+  "title": "Error when adding a route",
+  "shortDescription": "What to do if you cannot add a static route",
+  "metaDescription": "What to do if you cannot add a static route",
+  "sectionTitle": "Error when adding a route",
+  "icon": "",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "17d482b3-1f48-4477-be1b-110f1c0ef917"
+}

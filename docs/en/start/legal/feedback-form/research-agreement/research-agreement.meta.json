@@ -1,0 +1,16 @@
+{
+  "title": "Research (Testing) Participation Agreement",
+  "shortDescription": "",
+  "metaDescription": "Research (testing) participation agreement from VK Cloud",
+  "sectionTitle": "Research (Testing) Participation Agreement",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "c4ebbbd0-9dfd-4bac-bac0-1ab30f68848d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

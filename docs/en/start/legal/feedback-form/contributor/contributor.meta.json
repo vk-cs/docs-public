@@ -1,0 +1,16 @@
+{
+  "title": "Contributor License Agreement",
+  "shortDescription": "",
+  "metaDescription": "Contributor License Agreement for the VK Cloud platform as of 01.02.2025",
+  "sectionTitle": "Contributor License Agreement",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "7f85da95-4de2-4757-aa6e-904b0581e8b5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

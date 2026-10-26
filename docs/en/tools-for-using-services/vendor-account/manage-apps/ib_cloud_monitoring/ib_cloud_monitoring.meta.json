@@ -1,0 +1,13 @@
+{
+  "title": "Integration with Cloud Monitoring of the cloud platform",
+  "shortDescription": "",
+  "metaDescription": "Integration with Cloud Monitoring of the cloud platform",
+  "sectionTitle": "Integration with Cloud Monitoring of the cloud platform",
+  "weight": 4,
+  "uuid": "4d8744c8-8814-4c58-9b5d-e971ac52c8b2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

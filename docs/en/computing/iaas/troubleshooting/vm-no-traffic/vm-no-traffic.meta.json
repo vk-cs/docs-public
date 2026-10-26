@@ -1,0 +1,14 @@
+{
+  "title": "ВМ does not forward traffic",
+  "shortDescription": "What to do if a virtual machine acts as an intermediate network node but does not forward traffic",
+  "metaDescription": "What to do if a virtual machine acts as an intermediate network node but does not forward traffic",
+  "sectionTitle": "ВМ does not forward traffic",
+  "icon": "",
+  "weight": 11,
+  "uuid": "63aea8bd-a074-42a8-b094-d8dba174239a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

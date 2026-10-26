@@ -1,0 +1,16 @@
+{
+  "title": "Spark on the VK Data Platform",
+  "shortDescription": "Apache Spark-based service for distributed big data processing",
+  "metaDescription": "Working with the Spark service on the VK Data Platform: service instance parameters, creating an instance and working with it, pricing",
+  "sectionTitle": "Spark on the VK Data Platform",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "eeff3f8f-5a5b-4a4b-8bb3-63fd8844263a"
+}

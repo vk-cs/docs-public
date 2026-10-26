@@ -1,0 +1,14 @@
+{
+  "title": "Information Security Policy",
+  "shortDescription": "Information security policy requirements for the provision of {var(cloud)} cloud services",
+  "metaDescription": "VK Cloud information security: requirements of information security policies of companies within the VK group (hereinafter referred to as VK) as applied to managing and ensuring information security in the provision of cloud services",
+  "sectionTitle": "Information Security Policy",
+  "icon": "",
+  "weight": 2,
+  "uuid": "dd82a682-0e1f-41a0-b759-aa67f4afb087",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

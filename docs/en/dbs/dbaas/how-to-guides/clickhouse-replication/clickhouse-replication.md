@@ -1,50 +1,50 @@
-Репликация — одна из техник масштабирования баз данных. Состоит техника в том, что данные с одного сервера базы данных постоянно копируются (реплицируются) на один или несколько других. Появляется возможность использовать не один сервер для обработки запросов, а несколько. Таким образом, появляется возможность распределить нагрузку с одного сервера на несколько.
+Replication is one of the database scaling techniques. The technique consists in continuously copying (replicating) data from one database server to one or several others. This makes it possible to use not just one server, but several, for processing requests. Thus, it becomes possible to distribute the load from one server across several.
 
-В сервисе VK Cloud есть возможность создать реплику на этапе создания инстанса БД — для этого активируйте опцию **Создать реплику** на шаге **Создание инстанса**.
+In VK Cloud, you can create a replica at the stage of creating a DB instance — to do this, enable the **Create replica** option at the **Create instance** step.
 
-## Описание
+## Description
 
-В СУБД Clickhouse репликация данных настраивается на уровне таблиц, в отличие от традиционных, где это обычно уровень БД или даже инстанса. То есть для того, чтобы данные реплицировались на другие хосты в кластере, необходимо правильным образом создать таблицу. Архитектура Clickhouse подразумевает, что таблицы с одинаковым именем реплицируются между двумя репликами (то есть имеют одинаковые данные), а между шардами никак не связаны, то есть данные “шардируются”. При этом, к сожалению, это никак не контролируется Clickhouse, поэтому вам надо самостоятельно  все создать/настроить правильно.
+In the Clickhouse DBMS, data replication is configured at the table level, unlike traditional DBMSs, where this is usually done at the database or even instance level. This means that for data to be replicated to other hosts in the cluster, the table must be created correctly. The Clickhouse architecture implies that tables with the same name are replicated between two replicas (that is, they have identical data), while there is no connection between shards — that is, the data is "sharded". Unfortunately, this is not controlled by Clickhouse in any way, so you need to create/configure everything correctly yourself.
 
-## Создание реплицируемых таблиц
+## Creating replicated tables
 
-Итак, у нас в наличии кластер Clickhouse, например с 2 шардами - в каждом 2 реплики. Имя кластера Clickhouse в VK Cloud всегда cluster. Выполним запрос:
+So, let's say we have a Clickhouse cluster, for example with 2 shards — each with 2 replicas. The name of the Clickhouse cluster in VK Cloud is always cluster. Let's run the following query:
 
 ```sql
 CREATE TABLE table\_name ON CLUSTER cluster
 (
-    EventDate DateTime,
-    CounterID UInt32,
-    UserID UInt32
+    EventDate DateTime,
+    CounterID UInt32,
+    UserID UInt32
 ) ENGINE = ReplicatedMergeTree('/clickhouse/tables/{shard}/table\_name', '{replica}')
 PARTITION BY toYYYYMM(EventDate)
 ORDER BY (CounterID, EventDate, intHash32(UserID))
 SAMPLE BY intHash32(UserID);
 ```
 
-Его можно выполнить один раз на одном сервере, так как есть опция ON CLUSTER. В этом случае, Clickhouse обращается к конфигурационному файлу, где указаны все ноды кластера и выполняет запрос на каждом из них. Без этой опции можно просто выполнить такой запрос на каждой ноде.
+It can be run once on a single server, since the ON CLUSTER option is available. In this case, Clickhouse refers to the configuration file, which lists all the nodes of the cluster, and executes the query on each of them. Without this option, you can simply run the same query on each node.
 
-Давайте разберем особенности этой команды. Здесь используется движок таблицы ReplicatedMergeTree. Этот движок и другие из семейства Replicated рассчитаны на то, чтобы публиковать изменения в таблице в ZooKeeper. Соответственно, аргументами и являются параметры для сохранения этой информации в Zookeeper. Первая часть - это путь, вторая название ключа, в который публикуется информация. В фигурных скобках указаны макросы, макросы определяются в конфиге у каждого сервера. В кластере VK Cloud они уже будут сконфигурированы соответственно составу кластера, так что можно указывать прямо так, как в примере.
+Let's take a closer look at the specifics of this command. It uses the ReplicatedMergeTree table engine. This engine, along with others from the Replicated family, is designed to publish table changes to ZooKeeper. Accordingly, the arguments are the parameters for storing this information in Zookeeper. The first part is the path, the second is the name of the key to which the information is published. The curly braces contain macros, which are defined in each server's configuration. In the VK Cloud cluster, they will already be configured according to the cluster composition, so you can specify them exactly as shown in the example.
 
-В итоге серверы реплики одного шарда будут иметь одинаковый путь в ZK, и будут применять изменения с других серверов и публиковать свои (двусторонняя репликация). Получается что можно обратиться к одному из серверов и получить актуальные данные, но как получить данные по всем шардам? Для удобства в этом случае можно использовать тип таблицы Distributed.
+As a result, the replica servers of a single shard will have the same path in ZK, and will apply changes from other servers while publishing their own (two-way replication). This means you can query any one of the servers and get up-to-date data, but how do you get data across all shards? For convenience in this case, you can use the Distributed table type.
 
-## Создание Distributed-таблиц
+## Creating Distributed tables
 
 ```sql
 CREATE TABLE distributed ON CLUSTER cluster
 (
-    EventDate DateTime,
-    CounterID UInt32,
-    UserID UInt32
+    EventDate DateTime,
+    CounterID UInt32,
+    UserID UInt32
 ) ENGINE = Distributed(cluster, default, table\_name, UserID);
 ```
 
-Такая таблица будет указывать на таблицу на всех серверах в кластере. То есть при селектах данные будут собираться со всех нод. Создав такую таблицу на всех серверах, можно обращаться за всеми данными к каждому из них, получается своего рода балансировка нагрузки (однако, не стоит на это сильно рассчитывать, так как Clickhouse не предназначен для одновременного выполнения большого количества тяжелых запросов).
+Such a table will point to the table on all servers in the cluster. This means that during SELECT queries, data will be collected from all nodes. By creating such a table on all servers, you can request all the data from each of them, which gives a kind of load balancing (however, you shouldn't rely on this too much, since Clickhouse is not designed to execute a large number of heavy queries simultaneously).
 
-Есть два способа записывать данные на кластер:
+There are two ways to write data to a cluster:
 
-Во-первых, вы можете самостоятельно определять, на какие серверы какие данные записывать, и выполнять запись непосредственно на каждый шард. То есть делать INSERT в те таблицы, на которые «смотрит» распределенная таблица. Это наиболее гибкое решение, поскольку вы можете использовать любую схему шардирования, которая может быть нетривиальной из-за требований предметной области.
+First, you can decide for yourself which data to write to which servers, and perform the write directly to each shard. That is, do an INSERT into the tables that the distributed table "looks at". This is the most flexible solution, since you can use any sharding scheme, which can be non-trivial due to domain requirements.
 
-Также это является наиболее оптимальным решением, так как данные могут записываться на разные шарды полностью независимо.
+This is also the most optimal solution, since data can be written to different shards completely independently.
 
-Во-вторых, вы можете делать INSERT в Distributed таблицу. В этом случае, таблица будет сама распределять вставляемые данные по серверам. Для того, чтобы писать в Distributed таблицу, у нее должен быть задан ключ шардирования (последний параметр). Также, если шард всего-лишь один, то запись работает и без указания ключа шардирования (так как в этом случае он не имеет смысла).
+Second, you can do an INSERT into a Distributed table. In this case, the table will distribute the inserted data across the servers itself. To write to a Distributed table, it must have a sharding key defined (the last parameter). Also, if there is only one shard, writing works even without specifying a sharding key (since in this case it has no meaning).

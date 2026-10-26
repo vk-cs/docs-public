@@ -1,0 +1,14 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "How to manage a service instance in a project",
+  "metaDescription": "Learn how to manage JupyterHub service instances in VK Data Platform: view component statuses, perform scaling, work with connections, and more.",
+  "sectionTitle": "Working with a service instance",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "a95014eb-2264-40de-bd06-cd7609196ef6"
+}

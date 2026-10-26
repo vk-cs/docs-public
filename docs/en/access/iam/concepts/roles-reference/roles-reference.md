@@ -366,9 +366,9 @@ Component descriptions are provided for the `orchestration_modify` permission.
 
 Creating and managing the UI.
 
-The role provides access to the graphical interface for managing specific cloud resources. Allows the user to use visual tools (buttons, forms, lists, and graphs) in the personal account to perform operations and monitor resources through the browser.
+The role provides access to the graphical interface for managing specific cloud resources. Allows the user to use visual tools (buttons, forms, lists, and graphs) in the management console to perform operations and monitor resources through the browser.
 
-A user with this role can create and modify components responsible for the composition and operation of the personal account's graphical interface.
+A user with this role can create and modify components responsible for the composition and operation of the management console's graphical interface.
 
 -   `horizon_nova`: visual management of virtual machines.
 -   `horizon_cinder`: visual management of disks and snapshots.
@@ -380,9 +380,9 @@ A user with this role can create and modify components responsible for the compo
 
 Deleting UI components.
 
-The role handles the deletion of visual tools (buttons, forms, lists, and graphs) in the personal account.
+The role handles the deletion of visual tools (buttons, forms, lists, and graphs) in the management console.
 
-A user with this role can delete components responsible for the composition and operation of the personal account's graphical interface: all components with the `horizon_*` prefix.
+A user with this role can delete components responsible for the composition and operation of the management console's graphical interface: all components with the `horizon_*` prefix.
 
 Component descriptions are provided for the `horizon_modify` permission.
 
@@ -390,9 +390,9 @@ Component descriptions are provided for the `horizon_modify` permission.
 
 Viewing the UI.
 
-The role provides viewing of visual tools (buttons, forms, lists, and graphs) in the personal account.
+The role provides viewing of visual tools (buttons, forms, lists, and graphs) in the management console.
 
-A user with this role can view components responsible for the composition and operation of the personal account's web interface: all components with the `horizon_*` prefix.
+A user with this role can view components responsible for the composition and operation of the management console's web interface: all components with the `horizon_*` prefix.
 
 Component descriptions are provided for the `horizon_modify` permission.
 

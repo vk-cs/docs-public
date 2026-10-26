@@ -19,7 +19,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 
@@ -65,7 +65,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 
@@ -89,7 +89,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 
@@ -114,6 +114,6 @@ The single cluster node group cannot be deleted from the management console. How
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}

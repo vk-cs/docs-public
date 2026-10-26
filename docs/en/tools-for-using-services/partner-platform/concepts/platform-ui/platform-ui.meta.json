@@ -1,0 +1,17 @@
+{
+  "title": "Partner management console",
+  "shortDescription": "User interface of the {var(cloud)} partner platform",
+  "metaDescription": "User interface of the VK Cloud partner platform: what is the VK Cloud partner management console.",
+  "sectionTitle": "Partner management console",
+  "icon": "",
+  "disableGithub": false,
+  "isBeta": false,
+  "hidden": false,
+  "weight": 0,
+  "uuid": "43460807-7c7a-434f-b082-bf7db1aa9ed6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

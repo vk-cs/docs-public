@@ -1,0 +1,19 @@
+{
+  "title": "Attaching and detaching a disk",
+  "shortDescription": "How to attach a disk to a virtual machine or detach it",
+  "metaDescription": "Attaching and detaching disks from virtual machines in VK Cloud. Adding an additional disk to a VM and safely detaching a disk.",
+  "sectionTitle": "Attaching and detaching a disk",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fbca158d-7867-4614-8071-4bcb41be0ced",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Data Storage Types",
+  "shortDescription": "Advantages and disadvantages of data storage types supported by VK Cloud",
+  "metaDescription": "Object storage, block storage, file storage",
+  "sectionTitle": "Data Storage Types",
+  "weight": 0,
+  "uuid": "a76ada22-b0c9-448f-a2cd-447a836ce4b2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,150 +1,150 @@
-Настоящий документ представляет собой оферту в соответствии со ст. 435 ГК РФ (далее по тексту – «Оферта») на заключение между ООО «ВК» (125167, г. Москва, Ленинградский проспект, д. 39, стр. 79, ОГРН 1027739850962) (далее – «Компания») и Вами (далее – «Заказчик») пользовательского соглашения на условиях настоящей Оферты (далее – «Соглашение»), предметом которого является оказание услуг по предоставлению доступа к Сервису «CDN» в рамках Платформы «VK Cloud» (далее – «Платформа»).
+This document is an offer in accordance with Article 435 of the Civil Code of the Russian Federation (hereinafter referred to as the "Offer") for entering into a user agreement between VK LLC (125167, Moscow, Leningradsky Prospekt, 39, bldg. 79, OGRN 1027739850962) (hereinafter referred to as the "Company") and You (hereinafter referred to as the "Customer") on the terms of this Offer (hereinafter referred to as the "Agreement"), the subject matter of which is the provision of services for granting access to the "CDN" Service as part of the "VK Cloud" Platform (hereinafter referred to as the "Platform").
 
-Настоящее Соглашение доступно в сети Интернет по адресу: [https://mcs.mail.ru/help/ru_RU/legal/policy-cdn](/en/intro/start/legal/policy-cdn) и является неотъемлемой частью Условий использования платформы «VK Cloud», доступных в сети Интернет по адресу: [https://mcs.mail.ru/help/legal/termofuse](/en/intro/start/legal/legal-terms) и Политики Конфиденциальности Компании, в сети Интернет по адресу: [https://mcs.mail.ru/help/legal/privacy](/en/intro/start/legal/policy-privacy) (далее совместно — «Применимые правила»). В случае противоречия между положениями Условий использования Платформы и настоящего Соглашения, приоритет имеют положения настоящего Соглашения. К отношениям Сторон, которые не урегулированы настоящим Соглашением, применяются Условия использования Платформы.
+This Agreement is available on the Internet at: [https://mcs.mail.ru/help/ru_RU/legal/policy-cdn](/en/intro/start/legal/policy-cdn) and is an integral part of the VK Cloud Platform Terms of Use, available on the Internet at: [https://mcs.mail.ru/help/legal/termofuse](/en/intro/start/legal/legal-terms), and the Company's Privacy Policy, available on the Internet at: [https://mcs.mail.ru/help/legal/privacy](/en/intro/start/legal/policy-privacy) (hereinafter jointly referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform shall apply to relations between the Parties that are not governed by this Agreement.
 
-Используя Сервис, Вы в соответствии со ст. 438 ГК РФ безоговорочно и в полном объеме принимаете условия Соглашения.
+By using the Service, in accordance with Article 438 of the Civil Code of the Russian Federation, You unconditionally and fully accept the terms of the Agreement.
 
-## 1\. Термины и определения
+## 1\. Terms and Definitions
 
-**Сайт** — интернет-сайт, расположенный по адресу [https://mcs.mail.ru/](https://mcs.mail.ru/), предоставляющий Заказчику доступ к Сервису. Компания размещает на Сайте информацию, обязательную для Заказчика.
+**Site** — a website located at [https://mcs.mail.ru/](https://mcs.mail.ru/) that provides the Customer with access to the Service. The Company posts on the Site information that is mandatory for the Customer.
 
-**Платформа «VK Cloud» (Платформа)** — доступная Заказчику через Сайт и оперируемая Компанией программа для ЭВМ, которая предоставляет Заказчику доступ к выбранным Сервисам.
+**"VK Cloud" Platform (Platform)** — a computer program accessible to the Customer through the Site and operated by the Company, which provides the Customer with access to selected Services.
 
-**Сервис CDN (Сервис)** — услуга Компании, известная под наименованием «CDN», состоящая в представлении Заказчику возможности использования географически распределённой сетевой инфраструктуры, позволяющей оптимизировать доставку и дистрибуцию содержимого конечным пользователям в сети Интернет.
+**CDN Service (Service)** — a service of the Company, known as "CDN", consisting of providing the Customer with the ability to use a geographically distributed network infrastructure that makes it possible to optimize the delivery and distribution of content to end users on the Internet.
 
-**Контент** — информационное содержание сайта, генерируемое на сервере в момент получения запроса (изменяемое пользователем, либо загружаемое из базы данных), либо хранимое на сервере в неизменяемом виде (бинарные файлы, аудио и видео файлы, JC и CSS).
+**Content** — the informational content of a site, generated on the server at the moment a request is received (modified by the user, or loaded from a database), or stored on the server in an unchangeable form (binary files, audio and video files, JC and CSS).
 
-**Недоступность Сервиса (Даунтайм)** — интервал времени с момента отправки Заказчиком в службу поддержки Компании сообщения по электронной почте на адрес support@mcs.mail.ru или через форму обратной связи в Личном кабинете, факт которой был впоследствии подтверждён Компанией, и моментом возобновления работы Сервиса после завершения Компанией восстановительных работ.
+**Service Unavailability (Downtime)** — the time interval between the moment the Customer sends a message to the Company's support service by e-mail to support@mcs.mail.ru or through the feedback form in the management console, the fact of which is subsequently confirmed by the Company, and the moment the Service resumes operation after the Company completes recovery work.
 
-**Компенсация** — сумма, подлежащая зачислению на Лицевой счет Заказчика в случае Даунтайма в порядке, предусмотренном настоящим Соглашением. Компенсация не предполагает выплаты Заказчику денежных средств.
+**Compensation** — the amount to be credited to the Customer's Personal Account in the event of Downtime in the manner provided for by this Agreement. Compensation does not involve the payment of funds to the Customer.
 
-**Личный кабинет** - закрытая область Платформы, позволяющая Заказчику управлять настройками, редактировать Учетную запись Заказчика, получать доступ к данным статистики, а также совершать иные действия, необходимые для реализации функциональных возможностей Платформы и отдельных Сервисов.
+**Management console** — a closed area of the Platform that allows the Customer to manage settings, edit the Customer's Account, access statistical data, and perform other actions necessary to exercise the functional capabilities of the Platform and individual Services.
 
-**Лицевой счет** – совокупность записей, отражающая финансовые взаимоотношения между Заказчиком и Компанией по предоставляемым услугам. Баланс Заказчика увеличивается на сумму средств, перечисленных Заказчиком Компании и зачисленных Компанией на Лицевой счет в счет предоплаты.
+**Personal Account** — a set of records reflecting the financial relationship between the Customer and the Company with respect to the services provided. The Customer's balance is increased by the amount of funds transferred by the Customer to the Company and credited by the Company to the Personal Account as an advance payment.
 
-**Тарифный план** - форма коммерческого предложения, в которой указывается перечень услуг и порядок определения их стоимости.
+**Tariff Plan** — a form of commercial offer that specifies the list of services and the procedure for determining their cost.
 
-**Договор** - соглашение, регулирующее отношения между ООО «ВК» и Заказчиком в связи с оказанием услуг доступа к Сервису.
+**Contract** — an agreement governing the relationship between VK LLC and the Customer in connection with the provision of services for access to the Service.
 
-**Отчетный период** — календарный месяц.
+**Reporting Period** — a calendar month.
 
-Иные термины определены в Условиях использования Платформы «VK Cloud».
+Other terms are defined in the Terms of Use of the "VK Cloud" Platform.
 
-## 2\. Предмет Соглашения
+## 2\. Subject of the Agreement
 
-2.1. По условиям настоящего Соглашения Компания предоставляет Заказчику круглосуточно при наличии подключения к сети Интернет «Сервис CDN» (далее – Сервис), позволяющий Заказчику использовать географически распределенную сетевую инфраструктуру, позволяющую оптимизировать доставку и дистрибуцию контента конечным пользователям в сети Интернет, а Заказчик обязуется оплатить услуги Компании за использование предоставленного доступа к сервису в размере и порядке, которые определяются Применимыми правилами. Компания вправе предоставлять доступ к Сервису на основании соглашений, заключенных с правообладателями прав на Сервис или третьими лицами, владеющими такими правами на договорной основе.
+2.1. Under the terms of this Agreement, the Company provides the Customer, around the clock subject to an Internet connection, with the "CDN Service" (hereinafter — the Service), which allows the Customer to use a geographically distributed network infrastructure that makes it possible to optimize the delivery and distribution of content to end users on the Internet, and the Customer undertakes to pay the Company for the services related to the use of the access provided to the Service in the amount and in the manner determined by the Applicable Rules. The Company has the right to provide access to the Service on the basis of agreements concluded with the holders of rights to the Service or with third parties holding such rights on a contractual basis.
 
-2.2. Условием использования Сервиса является полное и безоговорочное принятие Заказчиком положений настоящего Соглашения. Доступ к Сервису осуществляется в рамках Платформы, в связи с чем условием использования Сервиса является использование Платформы и принятие Условий использования Платформы, доступных по ссылке [https://mcs.mail.ru/docs/intro/start/legal/legal-terms/](/en/intro/start/legal/legal-terms/), а также Политики Конфиденциальности Компании, доступной по ссылке [https://mcs.mail.ru/docs/ru/intro/start/legal/policy-privacy](/en/intro/start/legal/policy-privacy) (далее вместе именуемые «Применимые правила»). В случае противоречия между положениями Условий использования Платформы и настоящего Соглашения, приоритет имеют положения настоящего Соглашения. К отношениям Сторон, которые не урегулированы настоящим Соглашением, применяются Условия использования Платформы.
+2.2. The condition for using the Service is the complete and unconditional acceptance by the Customer of the provisions of this Agreement. Access to the Service is provided within the Platform, and therefore the condition for using the Service is the use of the Platform and acceptance of the Terms of Use of the Platform, available at [https://mcs.mail.ru/docs/intro/start/legal/legal-terms/](/en/intro/start/legal/legal-terms/), as well as the Company's Privacy Policy, available at [https://mcs.mail.ru/docs/ru/intro/start/legal/policy-privacy](/en/intro/start/legal/policy-privacy) (hereinafter jointly referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform shall apply to relations between the Parties that are not governed by this Agreement.
 
-2.3. При каждом доступе и/или фактическом использовании Сервиса Заказчик соглашается с положениями настоящего Соглашения и Применимыми правилами в редакции, которые действовали на момент фактического использования Сервиса.
+2.3. With each access and/or actual use of the Service, the Customer agrees to the provisions of this Agreement and the Applicable Rules, as in effect at the time of the actual use of the Service.
 
-2.4. Применимые правила, в том числе настоящее Соглашение, могут быть изменены Компанией в любое время без какого-либо предварительного уведомления Заказчика. Любые такие изменения вступают в силу в день, следующий за днем опубликования таких изменений на Сайте. Заказчик обязуется самостоятельно проверять Применимые правила на предмет изменений. Неосуществление Заказчиком действий по ознакомлению с Применимыми правилами и/или измененной редакцией не может служить основанием для неисполнения Заказчиком своих обязанностей, связанных с использованием Платформы и Сервиса. Заказчик вправе отказаться от принятия изменений и дополнений в Применимые правила, что означает отказ Заказчика от использования Платформы и/или Сервиса.
+2.4. The Applicable Rules, including this Agreement, may be amended by the Company at any time without any prior notice to the Customer. Any such changes shall take effect on the day following the day such changes are published on the Site. The Customer undertakes to independently check the Applicable Rules for changes. The Customer's failure to familiarize itself with the Applicable Rules and/or the amended version thereof may not serve as grounds for the Customer's non-performance of its obligations related to the use of the Platform and the Service. The Customer has the right to refuse to accept amendments and additions to the Applicable Rules, which shall mean the Customer's refusal to use the Platform and/or the Service.
 
-2.5. Функциональные возможности Сервиса, использование Сервиса:
+2.5. Functional capabilities of the Service, use of the Service:
 
-Заказчик может использовать Сервис в объеме прав, предоставленных ему Администратором Платформы и Сервиса, любыми способами, допустимыми функциональными возможностями Платформы и Сервиса, за исключением способов, прямо запрещенных Условиями использования Платформы и Соглашением, а также применимым законодательством. В частности, Заказчик может создавать новые CDN-ресурсы, осуществлять их настройку, создание, загрузку файлов в ресурс, кэширование, настраивать HTTP-заголовки, контент, группы источников, DNS. В любом случае функционал Сервиса предоставляется «как есть».
+The Customer may use the Service to the extent of the rights granted to it by the Administrator of the Platform and the Service, in any manner permitted by the functional capabilities of the Platform and the Service, except for methods expressly prohibited by the Terms of Use of the Platform and the Agreement, as well as by applicable law. In particular, the Customer may create new CDN resources, configure them, create them, upload files to a resource, configure caching, HTTP headers, content, origin groups, and DNS. In any case, the functionality of the Service is provided "as is".
 
-2.6. Компания вправе осуществлять мониторинг Контента в целях проверки соблюдения Заказчиком требований настоящего Соглашения. Заказчик обязуется не создавать Компании препятствия при осуществлении такого мониторинга, при этом вправе использовать инструменты для сохранения конфиденциальности Контента (как например шифрование, брандмауэры).
+2.6. The Company has the right to monitor the Content in order to verify the Customer's compliance with the requirements of this Agreement. The Customer undertakes not to obstruct the Company in carrying out such monitoring, while retaining the right to use tools to preserve the confidentiality of the Content (such as, for example, encryption, firewalls).
 
-2.7. Доступ к Сервису может предоставляться одним из следующих способов:
+2.7. Access to the Service may be granted in one of the following ways:
 
-2.7.1. При предоплатной системе расчетов: после внесения денежных средств в объеме, предусмотренном Тарифами. Заказчику предоставляется доступ для работы с Сервисом.
+2.7.1. Under a prepaid settlement system: after depositing funds in the amount provided for by the Tariffs. The Customer is granted access to work with the Service.
 
-2.7.2. При постоплатной системе расчетов: после подписания договора на постоплату. Заказчику предоставляется доступ для работы с Сервисом.
+2.7.2. Under a postpaid settlement system: after signing a contract for postpaid settlement. The Customer is granted access to work with the Service.
 
-## 3\. Права и обязанности Сторон
+## 3\. Rights and Obligations of the Parties
 
-3.1. Компания обязуется:
+3.1. The Company undertakes to:
 
-3.1.1. Предоставить Заказчику возможность использования Сервиса Компании.
+3.1.1. Provide the Customer with the ability to use the Company's Service.
 
-3.1.2. Обеспечить постоянную, круглосуточную доступность Сервиса Заказчику, при наличии подключения к сети Интернет.
+3.1.2. Ensure continuous, round-the-clock availability of the Service to the Customer, subject to an Internet connection.
 
-3.1.3. Осуществлять техническую поддержку Заказчика по выбору Компании: лично либо с привлечением третьих лиц, в том числе ПАО «МегаФон» (ОГРН 1027809169585) через каналы связи, предусмотренные функционалом Сервиса.
+3.1.3. Provide technical support to the Customer at the Company's discretion: either personally or with the involvement of third parties, including PJSC MegaFon (OGRN 1027809169585), through the communication channels provided for by the functionality of the Service.
 
-3.1.4. Не разглашать данные Заказчика, за исключением случаев, предусмотренных законодательством РФ, настоящим Соглашением и Применимыми правилами.
+3.1.4. Not disclose the Customer's data, except in cases provided for by the laws of the Russian Federation, this Agreement, and the Applicable Rules.
 
-3.2. Компания вправе:
+3.2. The Company has the right to:
 
-3.2.1. Блокировать доступ к Сервису и к Контенту Заказчика в случае, если Компании станет известно о нарушении условий настоящего Соглашения, Применимых правил или законодательства РФ. Любые убытки, причиненные Заказчику в связи с блокировкой Компанией доступа к Сервису или к Контенту Заказчика, не возмещаются Компанией.
+3.2.1. Block access to the Service and to the Customer's Content if the Company becomes aware of a violation of the terms of this Agreement, the Applicable Rules, or the laws of the Russian Federation. Any losses incurred by the Customer in connection with the Company's blocking of access to the Service or to the Customer's Content shall not be reimbursed by the Company.
 
-3.2.2. В уведомительном, одностороннем порядке вносить изменения в Применимые правила.
+3.2.2. Make amendments to the Applicable Rules unilaterally, on a notification basis.
 
-3.2.3. Требовать от Заказчика предоставления информации и документов, подтверждающих соответствие Контента требованиям настоящего Соглашения.
+3.2.3. Require the Customer to provide information and documents confirming that the Content complies with the requirements of this Agreement.
 
-3.3. Заказчик обязуется:
+3.3. The Customer undertakes to:
 
-3.3.1. Оплачивать услуги Компании согласно условиям настоящего Соглашения.
+3.3.1. Pay for the Company's services in accordance with the terms of this Agreement.
 
-3.3.2. На регулярной основе самостоятельно знакомиться с действующей редакцией Применимых правил и соблюдать их в полном объеме.
+3.3.2. Regularly and independently familiarize itself with the current version of the Applicable Rules and comply with them in full.
 
-3.2.3. Нести ответственность за свои действия и/или бездействия по использованию Сервиса Компании.
+3.2.3. Bear responsibility for its actions and/or omissions in connection with the use of the Company's Service.
 
-## 4\. Стоимость услуг и порядок расчетов
+## 4\. Cost of Services and Settlement Procedure
 
-4.1. Использование Сервисов является платным. Компания в целях определения стоимости использования Сервиса устанавливает цену и соответствующий перечень услуг согласно Тарифам.
+4.1. Use of the Services is subject to a fee. For the purpose of determining the cost of using the Service, the Company sets the price and the corresponding list of services in accordance with the Tariffs.
 
-4.2. Тарифы устанавливаются Компанией и доводятся до сведения Заказчика путем публикации на официальном сайте компании. Действующие Тарифы доступны по ссылке: [https://mcs.mail.ru/docs/networks/cdn/about-cdn](https://mcs.mail.ru/docs/networks/cdn/about-cdn). Тарифы BOX 1, 3, 5, 10, 20 могут быть изменены Компанией в одностороннем порядке, что доводится до сведения Заказчика путем обновления информации на [https://mcs.mail.ru/docs/networks/cdn/about-cdn](https://mcs.mail.ru/docs/networks/cdn/about-cdn). Компания может в одностороннем порядке изменять Тарифы, которые применяются с Отчетного периода, следующего за тем периодом, в котором были изменены Тарифы. Стоимость услуг по тарифу Индивидуальный и порядок расчетов устанавливаются Договором.
+4.2. The Tariffs are set by the Company and are brought to the Customer's attention by publication on the Company's official website. The current Tariffs are available at: [https://mcs.mail.ru/docs/networks/cdn/about-cdn](https://mcs.mail.ru/docs/networks/cdn/about-cdn). The BOX 1, 3, 5, 10, 20 Tariffs may be changed by the Company unilaterally, which is brought to the Customer's attention by updating the information at [https://mcs.mail.ru/docs/networks/cdn/about-cdn](https://mcs.mail.ru/docs/networks/cdn/about-cdn). The Company may unilaterally change the Tariffs, which shall apply from the Reporting Period following the period in which the Tariffs were changed. The cost of services under the Individual tariff and the settlement procedure are established by the Contract.
 
-4.3 В случае отсутствия денежных средств на Лицевом счете для списания оплаты стоимости услуг за предоставление доступа к Сервису или за оказанные в предыдущем Отчётном периоде услуги (далее – Нулевой баланс), доступ Заказчика к Сервису и Контенту прекращается. В случае использования тарифа Индивидуальный доступ к Сервису и Контенту, а также приостановление или блокировка доступа определяется условиями Договора.
+4.3 If there are no funds in the Personal Account to pay for the cost of services for providing access to the Service or for services rendered in the previous Reporting Period (hereinafter — Zero Balance), the Customer's access to the Service and Content shall be terminated. If the Individual tariff is used, access to the Service and Content, as well as the suspension or blocking of access, shall be determined by the terms of the Contract.
 
-4.4. При Нулевом балансе Заказчика Компания вправе удалить файлы, занимающие дисковое пространство с предварительным уведомлением Заказчика по электронной почте, на которую зарегистрирован Личный кабинет. В случае использования тарифа Индивидуальный право на удаление файлов, занимающих дисковое пространство, определяется условиями договора.
+4.4. In the event of a Zero Balance of the Customer, the Company has the right to delete files occupying disk space, with prior notice to the Customer by e-mail to the address to which the management console is registered. If the Individual tariff is used, the right to delete files occupying disk space shall be determined by the terms of the contract.
 
-4.5. Для восстановления доступа к Сервису Заказчик должен пополнить средства на его Лицевом счете на сумму, необходимую для оплаты услуг в требуемом для Заказчика объеме в соответствии с Тарифами, действующими на момент совершения платежа. В случае использования тарифа Индивидуальный условия возобновления доступа к Сервису, определяется условиями договора.
+4.5. To restore access to the Service, the Customer must replenish its Personal Account with the amount necessary to pay for services in the volume required by the Customer, in accordance with the Tariffs in effect at the time of payment. If the Individual tariff is used, the conditions for resuming access to the Service shall be determined by the terms of the contract.
 
-4.6. Заказчик вправе воспользоваться демо-доступом (без осуществления платы в целях ознакомления с функционалом) к Сервису 1 (один) раз на срок, не превышающий 7 (семь) календарных дней и не превышающий 1 Тб трафика.
+4.6. The Customer has the right to use demo access (free of charge, for the purpose of becoming familiar with the functionality) to the Service once (1) for a period not exceeding 7 (seven) calendar days and not exceeding 1 TB of traffic.
 
-4.7 Демо-доступ предоставляется автоматически при подключении Сервиса в личном кабинете.
+4.7 Demo access is provided automatically when the Service is activated in the management console.
 
-4.8 При завершении срока демо-доступа, либо при исчерпании трафика доступного в рамках демо-доступа, Сервис предоставляется в соответствии с тарифами, действующими на момент платежа.
+4.8 Upon expiration of the demo access period, or upon exhaustion of the traffic available under the demo access, the Service shall be provided in accordance with the tariffs in effect at the time of payment.
 
-## 5\. Ответственность Сторон
+## 5\. Liability of the Parties
 
-5.1. Размер ответственности Компании ограничен исключительно соответствующими Применимыми правилами, размещенным на Сайте в разделе [https://help.mail.ru/mcs/legal/](/en/intro/start/legal).
+5.1. The extent of the Company's liability is limited exclusively by the relevant Applicable Rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](/en/intro/start/legal).
 
-5.2. Упущенная выгода Заказчика возмещению Компанией не подлежит.
+5.2. The Customer's lost profits shall not be reimbursed by the Company.
 
-5.3. Компания не несёт ответственности перед Заказчиком за блокировку доступа к Контенту Заказчика, или уничтожение Контента в случае, если Компанией были получены соответствующие претензии третьих лиц, либо предупреждения, предписания или иные акты органов государственной власти в отношении действий Заказчика с использованием Сервиса.
+5.3. The Company shall not be liable to the Customer for blocking access to the Customer's Content, or for the destruction of Content, in the event that the Company has received corresponding claims from third parties, or warnings, orders, or other acts of government authorities regarding the Customer's actions using the Service.
 
-5.4. Компания не несет ответственности за любые нарушения действующего законодательства, которые имеют или могут иметь место на проектах, реализуемых Заказчиком. В случае предъявления к Компании претензий от третьих лиц в связи с такими имевшими место нарушениями Заказчик обязан освободить Компании от ответственности и урегулировать такие претензии самостоятельно, а также возместить все убытки, понесённые Компанией по вине Заказчика, в полном объеме, в том числе, но не ограничиваясь: по урегулированию претензий, споров, исполнению санкций органов государственной власти, должны быть возмещены Компании в случае наличия таковых.
+5.4. The Company shall not be liable for any violations of applicable law that have occurred or may occur in connection with projects implemented by the Customer. If claims are made against the Company by third parties in connection with such violations, the Customer shall be obligated to release the Company from liability and settle such claims independently, as well as to reimburse the Company in full for all losses incurred by the Company through the fault of the Customer, including, but not limited to: in connection with the settlement of claims and disputes and the execution of sanctions imposed by government authorities, which, if any, must be reimbursed to the Company.
 
-## 6\. Прочие условия
+## 6\. Other Conditions
 
-6.1. Заказчик гарантирует, что его Контент, размещаемый с использованием Сервиса Компании, не содержит информацию и изображения порнографического характера, не пропагандирует насилие, расовое, половое, религиозное или другие формы неравенства, либо иную деятельность, прямо запрещенную законодательством Российской Федерации, не нарушает законодательство об авторском праве и иное действующее законодательство, поскольку это может повлиять на репутацию Компании.
+6.1. The Customer warrants that its Content, posted using the Company's Service, does not contain information or images of a pornographic nature, does not promote violence, racial, sexual, religious, or other forms of inequality, or other activity expressly prohibited by the laws of the Russian Federation, and does not violate copyright law or other applicable law, since this could affect the Company's reputation.
 
-6.2. Заказчик гарантирует, что размещение Контента Заказчика происходит с соблюдением условий действующего законодательства РФ.
+6.2. The Customer warrants that the posting of the Customer's Content is carried out in compliance with the requirements of applicable laws of the Russian Federation.
 
-6.3. Формы использования Заказчиком изображений, текстов, наименований, эмблем и символов Компании должны быть согласованы с представителями Компании.
+6.3. The forms in which the Customer uses the Company's images, texts, names, emblems, and symbols must be agreed with representatives of the Company.
 
-6.4. Компания гарантирует, что услуги по предоставлению доступа к Сервису оказываются 24 (двадцать четыре) часа в сутки, 7 (семь) дней в неделю.
+6.4. The Company guarantees that the services for providing access to the Service are rendered 24 (twenty-four) hours a day, 7 (seven) days a week.
 
-6.5. Компания оставляет за собой право прерывать работу Сервиса для проведения необходимых профилактических работ, в том числе в рабочие дни. Такие случаи не будут считаться перерывами в оказании услуг, если Компания предварительно уведомит Заказчика за 24 (двадцать четыре) часа до момента начала профилактических работ, влекущих перерывы в работе Сервиса, путем публикации на Сайте соответствующей информации (в том числе продолжительность профилактических работ). Время недоступности Сервиса, связанное с проведением профилактических работ, не подлежит компенсации по правилам п. 6.6. Соглашения.
+6.5. The Company reserves the right to interrupt the operation of the Service in order to carry out necessary maintenance work, including on business days. Such instances shall not be considered interruptions in the provision of services if the Company gives the Customer prior notice 24 (twenty-four) hours before the commencement of maintenance work that entails interruptions in the operation of the Service, by publishing the relevant information on the Site (including the duration of the maintenance work). The time during which the Service is unavailable in connection with maintenance work shall not be subject to compensation under the rules of clause 6.6 of the Agreement.
 
-6.6. Недоступность Сервиса («Даунтайм») определяется как интервал времени с момента отправки Заказчиком в службу поддержки Компании сообщения через форму обратной связи, доступную в Личном кабинете, содержащего уведомление о недоступности Сервиса, либо сообщения по электронной почте на адрес: support@mcs.mail.ru, факт которой был впоследствии подтверждён Компанией, и моментом возобновления работы Сервиса после завершения Компанией восстановительных работ. Если Компания располагает собственными данными о начале Даунтайма, указывающими на более раннее время начала недоступности Сервиса, чем время отправки сообщения по электронной почте на адрес support@mcs.mail.ru или форму обратной связи в Личном кабинете, Компания может использовать такие данные. Разногласия о времени начала и окончания Даунтайма решаются путём переговоров Сторон. Если Даунтайм начался в одном Отчетном периоде, а окончился в следующем Отчетном периоде, то недоступность Сервиса полностью относится к тому Отчетному периоду, в котором имела место большая часть Даунтайма.
+6.6. Service Unavailability ("Downtime") is defined as the time interval from the moment the Customer sends a message to the Company's support service through the feedback form available in the management console containing a notification of the unavailability of the Service, or a message by e-mail to: support@mcs.mail.ru, the fact of which is subsequently confirmed by the Company, and the moment the Service resumes operation after the Company completes recovery work. If the Company has its own data on the commencement of Downtime indicating an earlier start time for the unavailability of the Service than the time the e-mail message was sent to support@mcs.mail.ru or the feedback form in the management console was submitted, the Company may use such data. Disagreements regarding the start and end times of Downtime shall be resolved through negotiations between the Parties. If Downtime began in one Reporting Period and ended in the next Reporting Period, the unavailability of the Service shall be attributed in full to the Reporting Period in which the greater part of the Downtime occurred.
 
-6.7. В случае недоступности Сервиса, Компания обязуется перечислить Заказчику (зачислить на Лицевой счет) Компенсацию, размер которой зависит от фактического времени доступности рассматриваемого Сервиса и его стоимости, списанной с Лицевого баланса в Отчетном периоде, в котором был зафиксирован Даунтайм.
+6.7. In the event of unavailability of the Service, the Company undertakes to transfer to the Customer (credit to the Personal Account) Compensation, the amount of which depends on the actual availability time of the Service in question and its cost debited from the Personal Account in the Reporting Period in which the Downtime was recorded.
 
-Для целей расчета Компенсации не учитывается стоимость других сервисов, доступных на Платформе, по которым не был зафиксирован Даунтайм.
+For the purposes of calculating the Compensation, the cost of other services available on the Platform for which no Downtime was recorded shall not be taken into account.
 
-Размер Компенсации определяется на основании нижеприведенной таблицы (далее – Таблица №1):
+The amount of the Compensation is determined on the basis of the table below (hereinafter — Table No. 1):
 
-| Время доступности (в %)\* | Время недоступности (мин или ч) в одном Отчетном периоде суммарно | Размер Компенсации |
+| Availability time (in %)\* | Unavailability time (min. or h.) in one Reporting Period, total | Amount of Compensation |
 | --- | --- | --- |
-| 99.95% и выше | менее 22 минут | не выплачивается |
-| 99,9%–99,95% | от 22 до 45 минут | 3% суммы, списанной с Лицевого баланса за Сервис за Отчётный период, в котором был Даунтайм |
-| 99,0%–99,9% | от 45 минут до 7,5 часов | 10% суммы, списанной с Лицевого баланса за Сервис за Отчетный период, в котором был Даунтайм |
-| 95,0%–99,0% | от 7,5 часов до 36 часов | 20% суммы, списанной с Лицевого баланса за Сервис за Отчетный период, в котором был Даунтайм |
-| 90,0%–95,0% | от 36 часов до 73 часов | 25% суммы, списанной с Лицевого баланса за Сервис за Отчетный период, в котором был Даунтайм |
-| менее 90% | более 73 часов | 50% суммы, списанной с Лицевого баланса за Сервис за Отчетный период, в котором был Даунтайм |
+| 99.95% and above | less than 22 minutes | not paid |
+| 99.9%–99.95% | from 22 to 45 minutes | 3% of the amount debited from the Personal Account for the Service for the Reporting Period in which the Downtime occurred |
+| 99.0%–99.9% | from 45 minutes to 7.5 hours | 10% of the amount debited from the Personal Account for the Service for the Reporting Period in which the Downtime occurred |
+| 95.0%–99.0% | from 7.5 hours to 36 hours | 20% of the amount debited from the Personal Account for the Service for the Reporting Period in which the Downtime occurred |
+| 90.0%–95.0% | from 36 hours to 73 hours | 25% of the amount debited from the Personal Account for the Service for the Reporting Period in which the Downtime occurred |
+| less than 90% | more than 73 hours | 50% of the amount debited from the Personal Account for the Service for the Reporting Period in which the Downtime occurred |
 
-_\*Расчет произведен исходя из 43 800 минут в Отчетном периоде_
+_\*Calculation is based on 43 800 minutes in the Reporting Period_
 
-6.8. В любых случаях нарушения гарантий уровня Сервиса Заказчик обязуется сотрудничать с Компанией для определения источника проблем, его устранения и восстановления работоспособности Сервиса или удаленного/поврежденного Контента.
+6.8. In any case of violation of the Service level guarantees, the Customer undertakes to cooperate with the Company to determine the source of the problems, eliminate it, and restore the operability of the Service or any deleted/damaged Content.
 
-6.9. Расчет Компенсации осуществляется автоматически на основании данных статистики Компании. Сумма Компенсации перечисляется на счет Заказчика в размере, определяемом на основании правил п. 6.7. настоящего Соглашения в течение 7 (семи) рабочих дней с момента начала Отчетного периода, следующего за тем, в котором имели место события, послужившие основанием для Компенсации.
+6.9. The Compensation is calculated automatically on the basis of the Company's statistical data. The amount of the Compensation is transferred to the Customer's account in the amount determined on the basis of the rules of clause 6.7 of this Agreement, within 7 (seven) business days from the beginning of the Reporting Period following the one in which the events giving rise to the Compensation occurred.
 
-6.10. Размер Компенсации в течение Отчетного периода по обоим основаниям, указанным в п.п. 6.6. и 6.7. Соглашения, не может превышать размер средств, оплаченных Заказчиком за Отчетный период, в котором имели место события, послужившие основанием для Компенсации.
+6.10. The amount of the Compensation during a Reporting Period, on both grounds specified in clauses 6.6 and 6.7 of the Agreement, may not exceed the amount of funds paid by the Customer for the Reporting Period in which the events giving rise to the Compensation occurred.
 
-6.11. Не подлежит Компенсации недоступность Сервиса, вызванная действиями Заказчика или третьих лиц, либо обстоятельствами непреодолимой силы, которые повлекли за собой недоступность услуг; приостановка оказания услуг, связанная с проведением запланированных профилактических работ, как определено в п. 6.5. настоящего Соглашения; приостановка оказания услуг по требованию государственных или муниципальных органов в случаях и порядке, определенным применимым законодательством. Компания ни при каких обстоятельствах не возмещает Заказчику Сервиса косвенные убытки, в том числе упущенную выгоду и причиненный вред деловой репутации.
+6.11. The following shall not be subject to Compensation: unavailability of the Service caused by the actions of the Customer or third parties, or by force majeure circumstances that resulted in the unavailability of the services; suspension of the provision of services in connection with scheduled maintenance work, as defined in clause 6.5 of this Agreement; suspension of the provision of services at the request of state or municipal authorities in the cases and in the manner determined by applicable law. Under no circumstances shall the Company reimburse the Customer of the Service for indirect losses, including lost profits and harm caused to business reputation.
 
-Редакция: от 18.10.2022 г.
+Revision dated: 18.10.2022.

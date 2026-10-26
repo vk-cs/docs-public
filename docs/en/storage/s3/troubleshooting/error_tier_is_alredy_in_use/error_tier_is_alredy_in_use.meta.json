@@ -1,0 +1,16 @@
+{
+  "title": "Error when integrating with VK Object Storage",
+  "shortDescription": "When integrating MinIO with VK Object Storage, the message Tier is already in use appears",
+  "metaDescription": "When integrating MinIO with VK Object Storage, the message Tier is already in use appears",
+  "sectionTitle": "Error when integrating with VK Object Storage",
+  "icon": "",
+  "weight": 4,
+  "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

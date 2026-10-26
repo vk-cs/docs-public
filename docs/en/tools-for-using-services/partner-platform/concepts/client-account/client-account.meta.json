@@ -1,0 +1,17 @@
+{
+  "title": "Partner's client account",
+  "shortDescription": "Features of managing user infrastructure in {var(cloud)} for partner's clients",
+  "metaDescription": "Managing VK Cloud user infrastructure for partner's clients: what is a VK Cloud partner's client account",
+  "sectionTitle": "Partner's client account",
+  "icon": "",
+  "disableGithub": false,
+  "isBeta": false,
+  "hidden": false,
+  "weight": 1,
+  "uuid": "c1613b46-4d3a-41c4-97ed-eee99e519ec7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

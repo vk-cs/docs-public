@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Network: create a virtual network and configure a security group",
+  "shortDescription": "Create a cloud network and subnet to ensure network connectivity, configure a security group to control network traffic",
+  "metaDescription": "Explore the capabilities of the Cloud Network service: create a cloud network and subnet to ensure network connectivity, configure a security group to control network traffic.",
+  "sectionTitle": "Cloud Network: create a virtual network and configure a security group",
+  "icon": "",
+  "weight": 2,
+  "uuid": "93a3fa13-80db-45d2-81d7-6c94f151ed57",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

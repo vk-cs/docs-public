@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to MLflow Deploy",
+  "shortDescription": "How to connect to the web interface of an MLflow Deploy instance",
+  "metaDescription": "How to connect to the web interface of an MLflow Deploy instance",
+  "sectionTitle": "Connecting to MLflow Deploy",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1e7875a6-a9d5-4b45-8f9f-7d3809239407",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

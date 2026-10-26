@@ -1,0 +1,17 @@
+{
+  "title": "Working with Deployments",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Working with Deployments",
+  "icon": "",
+  "weight": 13,
+  "uuid": "1d647b85-4081-493e-97dc-3311bffa0c0a",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

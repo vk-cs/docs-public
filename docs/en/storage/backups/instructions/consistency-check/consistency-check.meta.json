@@ -1,0 +1,19 @@
+{
+  "title": "Verifying a Backup for Data Integrity",
+  "shortDescription": "How to check that a backup is not corrupted and can be used for recovery",
+  "metaDescription": "Check the integrity of backups, make sure the data is not corrupted and contains no errors. Learn how to find a copy and assess its condition in the Cloud Backup service",
+  "sectionTitle": "Verifying a Backup for Data Integrity",
+  "icon": "",
+  "weight": 7,
+  "uuid": "a099b23f-aa6a-4b7e-a277-6ae607232239",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

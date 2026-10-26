@@ -1,0 +1,14 @@
+{
+  "title": "Managing telegraf and its plugins",
+  "shortDescription": "How to enable or disable a plugin for monitoring metrics, enable and disable the agent itself",
+  "metaDescription": "Tools for monitoring VM services and platform applications. Learn how to enable and disable the telegraf monitoring agent and additional plugins in the Cloud Monitoring service",
+  "sectionTitle": "Managing telegraf and its plugins",
+  "icon": "",
+  "weight": 3,
+  "uuid": "d351fda4-3add-454f-b9d0-5b376a806ac1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

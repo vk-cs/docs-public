@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a Bare Metal Server with Linux OS",
+  "sectionTitle": "Connecting to a Linux OS Server",
+  "shortDescription": "How to connect to a Linux OS server via SSH",
+  "metaDescription": "Step-by-step instructions for connecting to a Bare Metal server on Linux via SSH: specifics of working with a key pair, access configuration, important conditions, and the necessary commands for a secure connection.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "70ca1d07-47b7-42ea-80e4-7c5475a9e835",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

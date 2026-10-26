@@ -1,0 +1,16 @@
+{
+  "title": "Cloud Airflow",
+  "shortDescription": "Streaming processing for high-performance real-time applications",
+  "metaDescription": "A stream processing environment for real-time applications",
+  "sectionTitle": "Cloud Airflow",
+  "icon": "",
+  "isBeta": true,
+  "weight": 9,
+  "uuid": "26d8e8b2-cd22-4945-a980-295abeae4f44",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

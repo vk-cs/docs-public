@@ -1,0 +1,16 @@
+{
+  "title": "Terms of Use",
+  "shortDescription": "",
+  "metaDescription": "Terms of use of the «VK Cloud» platform as of 01.02.2025",
+  "sectionTitle": "Terms of Use",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 0,
+  "uuid": "3909eef9-829b-463b-b447-0e8d57efbf7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

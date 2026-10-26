@@ -1,0 +1,13 @@
+{
+  "title": "List of resources",
+  "shortDescription": "",
+  "metaDescription": "List of resources",
+  "sectionTitle": "List of resources",
+  "uuid": "d5a94c12-7da9-48fc-87dc-a06f6841812e",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

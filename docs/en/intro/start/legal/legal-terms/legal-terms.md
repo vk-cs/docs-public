@@ -36,7 +36,7 @@ The provisions of this Agreement apply to the relations between the Parties on t
 
 **Customer account** — information provided by the Customer (the presence of which is a prerequisite) for registration and subsequent authorization of the Customer on the Platform in the process of rendering services to him by the Company, which is the name (login), password for access to the Personal Account (password), and also other information. Access to the Account is carried out through the Personal Account.
 
-**The Customer's personal account** is a closed area of the Platform, which allows the Customer to manage settings, edit the Customer's account, gain access to statistics data, as well as perform other actions necessary to implement the functionality of the Platform and individual Services.
+**The Customer's management console** is a closed area of the Platform, which allows the Customer to manage settings, edit the Customer's account, gain access to statistics data, as well as perform other actions necessary to implement the functionality of the Platform and individual Services.
 
 **A project** is a set of logically interconnected web pages that are tied to a specific domain name or other identifier and operate according to computer program algorithms. Within the framework of one Project, using the Platform's web interface, Accounts for Project Users working within the framework of such a Project are created, who can be granted access to one or more Platform Services.
 

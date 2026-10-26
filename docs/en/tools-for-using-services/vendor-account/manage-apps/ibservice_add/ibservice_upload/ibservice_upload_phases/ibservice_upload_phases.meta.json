@@ -1,0 +1,13 @@
+{
+  "title": "Service upload phases",
+  "shortDescription": "",
+  "metaDescription": "Service upload phases",
+  "sectionTitle": "Service upload phases",
+  "weight": 2,
+  "uuid": "a5dcd1b5-04af-41de-9979-255948079b74",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

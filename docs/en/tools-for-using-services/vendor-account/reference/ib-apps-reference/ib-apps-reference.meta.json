@@ -1,0 +1,13 @@
+{
+  "title": "Reference for working with image-based applications",
+  "shortDescription": "Reference information on adding image-based applications to Marketplace and updating them",
+  "metaDescription": "Reference information on adding image-based applications to Marketplace and updating them. Structure and parameters of configuration files. Structure and components of the Terraform manifest. Description of the API for testing the Terraform manifest.",
+  "sectionTitle": "Reference for working with image-based applications",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "12212338-a9dc-4a9c-90c3-fc8a72c5d988"
+}

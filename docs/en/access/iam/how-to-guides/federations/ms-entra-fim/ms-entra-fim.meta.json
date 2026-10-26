@@ -1,0 +1,14 @@
+{
+  "title": "Configuring identity federation via MS Entra",
+  "shortDescription": "How to configure authentication in VK Cloud via MS Entra",
+  "metaDescription": "How to configure federated access in VK Cloud using MS Entra as an identity provider",
+  "sectionTitle": "Configuring identity federation via MS Entra",
+  "icon": "",
+  "weight": 2,
+  "uuid": "068f6edf-5e1f-4d48-bc6e-bbd1da627938",
+   "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

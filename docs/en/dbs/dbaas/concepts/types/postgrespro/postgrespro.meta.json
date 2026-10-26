@@ -1,0 +1,15 @@
+{
+  "title": "Postgres Pro",
+  "shortDescription": "",
+  "metaDescription": "About the Postgres Pro DBMS and its versions available in VK Cloud",
+  "sectionTitle": "Postgres Pro",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "e162ef60-6c27-46b9-a556-0709335632e4"
+}

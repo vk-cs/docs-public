@@ -1,0 +1,18 @@
+{
+  "title": "ADB Instance Rebuild",
+  "shortDescription": "Rebuilding an analytical DB instance from a backup",
+  "metaDescription": "Arenadata DB as a Service: rebuilding an analytical database instance from a backup in VK Cloud",
+  "sectionTitle": "ADB Instance Rebuild",
+  "icon": "",
+  "weight": 9,
+  "uuid": "372cfcd8-0860-4b7d-b500-d10c7fb87e96",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

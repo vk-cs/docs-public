@@ -1,0 +1,14 @@
+{
+  "title": "Standalone Monitoring",
+  "shortDescription": "",
+  "metaDescription": "Learn how to view metrics of deployed Cloud Airflow service instances in VK Data Platform Standalone edition",
+  "sectionTitle": "Standalone Monitoring",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "f98d5bda-5033-40fd-9215-fe84474f37e9"
+}

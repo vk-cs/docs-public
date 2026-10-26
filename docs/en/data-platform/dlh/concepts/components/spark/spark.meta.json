@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Spark in the Data Lakehouse architecture",
+  "shortDescription": "Purpose and functions of the Cloud Spark component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the Cloud Spark component in the Data Lakehouse architecture",
+  "sectionTitle": "Cloud Spark",
+  "icon": "",
+  "weight": 4,
+  "uuid": "5021f2a4-df2b-4eb9-830b-74dce0354daf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

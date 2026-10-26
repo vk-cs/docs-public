@@ -1,0 +1,14 @@
+{
+  "title": "Separating test and production environments",
+  "shortDescription": "Creating a DNS subzone to host an isolated test environment",
+  "metaDescription": "Configuring DNS to isolate test and production environments: creating a subzone, delegating management, and setting up resource records in VK Cloud. A step-by-step guide to environment separation via DNS.",
+  "sectionTitle": "Separating test and production environments",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "0af8b5f1-69d8-447e-8ab2-b1f589cb6d1f"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Object Lock",
+  "shortDescription": "Setting an indefinite (legal hold) or temporary (retention) lock on object deletion, as well as configuring the default retention lock",
+  "metaDescription": "All available methods for working with object locking in VK Object Storage: set or remove an indefinite lock (PutObjectLegalHold), get the status of an indefinite lock (GetObjectLegalHold), set, configure, or remove a temporary lock (PutObjectRetention), get the status of a temporary lock (GetObjectRetention), set, configure, or remove the default temporary lock (PutObjectLockConfiguration), or get the status of the default temporary lock (GetObjectLockConfiguration)",
+  "sectionTitle": "Object Lock",
+  "icon": "",
+  "weight": 8,
+  "uuid": "ad28e9d2-0e7d-430d-b499-df68472ac497",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

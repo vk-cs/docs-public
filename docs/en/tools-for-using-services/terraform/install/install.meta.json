@@ -1,0 +1,18 @@
+{
+  "title": "Installing and initializing Terraform",
+  "shortDescription": "How to install Terraform using a configuration file",
+  "metaDescription": "How to install the VK Cloud Terraform provider using a configuration file. Getting started with Terraform: installation and initialization.",
+  "sectionTitle": "Installing and initializing Terraform",
+  "icon": "",
+  "weight": 0,
+  "uuid": "0c77dc91-ca4e-4a92-ae06-b1391034da0e",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

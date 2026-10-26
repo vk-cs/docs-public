@@ -1,0 +1,14 @@
+{
+  "title": "Port binding error",
+  "shortDescription": "What to do if the Port is still in use error occurs when binding a port",
+  "metaDescription": "What to do if the Port is still in use error occurs when binding a port",
+  "sectionTitle": "Port binding error",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "a6aa170e-2da6-480d-bc7b-604f9e41bbce"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Terraform Reference",
+  "shortDescription": "Basic Terraform commands and manifest examples",
+  "metaDescription": "Terraform reference: basic Terraform commands and manifest examples",
+  "sectionTitle": "Terraform Reference",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "7c29225d-a53a-49ad-b28c-d38076ea5059"
+}

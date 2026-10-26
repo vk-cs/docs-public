@@ -1,0 +1,16 @@
+{
+  "title": "VK Mini Apps Service Developer Support Program from VK Cloud",
+  "shortDescription": "",
+  "metaDescription": "The VK Mini Apps Service Developer Support Program (hereinafter referred to as the Program) has been developed by VK LLC (OGRN: 1027739850962) (hereinafter referred to as the Company) and is intended to attract and retain companies on the VK Cloud Platform",
+  "sectionTitle": "VK Mini Apps Service Developer Support Program from VK Cloud",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 14,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "157ad3b9-7ff1-453f-af02-6a0b4684450d"
+}

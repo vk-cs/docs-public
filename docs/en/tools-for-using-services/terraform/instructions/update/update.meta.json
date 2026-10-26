@@ -1,0 +1,17 @@
+{
+  "title": "Terraform update",
+  "shortDescription": "How to change the Terraform version",
+  "metaDescription": "How to change the version of the VK Cloud Terraform provider. Working with Terraform: creating resources and updating the provider.",
+  "sectionTitle": "Terraform update",
+  "icon": "",
+  "weight": 0,
+  "uuid": "a1f87c5d-21ce-477e-931d-ca754d18f419",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

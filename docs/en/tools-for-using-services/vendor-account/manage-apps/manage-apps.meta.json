@@ -1,0 +1,14 @@
+{
+  "title": "Guide to Adding Services to Marketplace",
+  "shortDescription": "Instructions for adding and updating services in Marketplace",
+  "metaDescription": "Instructions for adding and updating services in Marketplace",
+  "sectionTitle": "Guide to Adding Services to Marketplace",
+  "weight": 6,
+  "hidden": true,
+  "uuid": "425f829c-4e2e-400d-8213-6eac33a22253",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

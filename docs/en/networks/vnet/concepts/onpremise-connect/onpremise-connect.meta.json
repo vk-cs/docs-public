@@ -1,0 +1,14 @@
+{
+  "title": "Options for connecting to remote infrastructure",
+  "shortDescription": "How to integrate an On-premises infrastructure with the project infrastructure on {var(cloud)}",
+  "metaDescription": "How to integrate an On-premises infrastructure with the project infrastructure on VK Cloud",
+  "sectionTitle": "Options for connecting to remote infrastructure",
+  "icon": "",
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ac6f906d-0364-449f-8249-374881bf39b9"
+}

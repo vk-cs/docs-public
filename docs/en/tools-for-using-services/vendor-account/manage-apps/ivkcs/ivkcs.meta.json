@@ -1,0 +1,13 @@
+{
+  "title": "VK CS Infra Provider Reference (iVK CS)",
+  "shortDescription": "",
+  "metaDescription": "Information about data sources and resources of the VK CS Infra provider",
+  "sectionTitle": "VK CS Infra Provider Reference (iVK CS)",
+  "weight": 8,
+  "uuid": "2c84e247-fa72-45f1-9ee1-484633accf2a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

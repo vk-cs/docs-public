@@ -1,7 +1,7 @@
 {
   "title": "Getting database logs",
   "shortDescription": "",
-  "metaDescription": "Важно\nЛоги баз данных доступны только для БД, созданных после 1 декабря 2020 года. В настоящее время реализована возможность получения логов для следующих",
+  "metaDescription": "Important. Database logs are available only for databases created after December 1, 2020. Currently, log retrieval is implemented for the following",
   "sectionTitle": "Getting database logs",
   "icon": "",
   "uuid": "fcce7858-28b6-49fd-8df5-d933a0517591",

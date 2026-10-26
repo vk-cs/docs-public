@@ -1,0 +1,12 @@
+{
+  "title": "Preview section",
+  "shortDescription": "",
+  "metaDescription": "Preview section",
+  "sectionTitle": "Preview section",
+  "uuid": "bea8c21c-aa86-43be-a471-835797497a96",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

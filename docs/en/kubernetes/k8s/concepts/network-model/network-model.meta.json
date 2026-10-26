@@ -1,0 +1,17 @@
+{
+  "title": "Kubernetes Network Model",
+  "shortDescription": "",
+  "metaDescription": "Description of the Kubernetes network model and the specifics of network usage by applications in Managed Containers of the VK Private Cloud platform",
+  "sectionTitle": "Kubernetes Network Model",
+  "icon": "",
+  "weight": 16,
+  "uuid": "e2067d28-d768-4f5c-a2e4-ead8e8a504eb",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

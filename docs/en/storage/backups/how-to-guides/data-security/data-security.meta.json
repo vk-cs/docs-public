@@ -1,0 +1,14 @@
+{
+  "title": "Ensuring data safety in case of a cyberattack or insider threat",
+  "shortDescription": "Enabling immutable copies (Object Lock) in COMPLIANCE mode in a backup plan to ensure data safety in case of a cyberattack or insider threat",
+  "metaDescription": "Enabling immutable copies (Object Lock) in COMPLIANCE mode in a backup plan to ensure data safety in case of a cyberattack or insider threat",
+  "sectionTitle": "Ensuring data safety in case of a cyberattack or insider threat",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2e6e8e70-0218-45a4-8c64-492459142982",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

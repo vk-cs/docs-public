@@ -1,0 +1,14 @@
+{
+  "title": "Uploading an image-based application to Marketplace",
+  "shortDescription": "Components of the image-based application upload system on Marketplace and their interaction scheme",
+  "metaDescription": "A brief description of the VK Cloud platform components involved in uploading an image-based application to Marketplace. Their functions in the upload process and interaction scheme.",
+  "sectionTitle": "Uploading an image-based application to Marketplace",
+  "isBeta": true,
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "46fd8892-ba9d-4689-b0b7-e5a83f0b3145"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Cloud Start Program Rules",
+  "shortDescription": "",
+  "metaDescription": "A program providing special terms of use for the VK Cloud, VK WorkSpace, and VK ID platforms",
+  "sectionTitle": "Cloud Start Program Rules",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 19,
+  "uuid": "392a9552-837b-4540-8737-ea7c4f061d48",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

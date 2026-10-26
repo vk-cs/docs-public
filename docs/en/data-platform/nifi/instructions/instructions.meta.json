@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "NiFi in VK Data Platform: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "6a51a9fb-fb72-4866-b456-fcd8082d5ee2"
+}

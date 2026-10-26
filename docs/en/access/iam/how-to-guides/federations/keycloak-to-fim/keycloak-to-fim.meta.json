@@ -1,0 +1,14 @@
+{
+  "title": "Configuring identity federation via Keycloak",
+  "shortDescription": "How to configure authentication in VK Cloud via Keycloak",
+  "metaDescription": "Configure VK Cloud login via Keycloak. This guide will help you create a federation, set up mappers (email, groups), and map groups to roles in VK Cloud.",
+  "sectionTitle": "Configuring identity federation via Keycloak",
+  "icon": "",
+  "weight": 2,
+  "uuid": "da82e55a-aa29-42d2-a6a8-1ed144a20a67",
+   "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

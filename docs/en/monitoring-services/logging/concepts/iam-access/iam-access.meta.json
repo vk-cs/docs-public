@@ -1,0 +1,14 @@
+{
+  "title": "Access management",
+  "shortDescription": "How IAM distributes access rights among project members in Cloud Logging",
+  "metaDescription": "Everything about access control using IAM in Cloud Logging from VK Cloud: how basic (owner, administrator, viewer) and specialized project member roles affect access to service components.",
+  "sectionTitle": "Access management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "c160a0cd-9fdd-4c95-8a8b-2b266c1f069d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

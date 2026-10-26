@@ -1,0 +1,14 @@
+{
+  "title": "Certificates, licenses and attestations of LLC «VK»",
+  "shortDescription": "Certificates, licenses and attestations of the platform for LLC «VK». Compliance with regulatory documents",
+  "metaDescription": "VK Cloud information security: certificates, licenses and attestations of the platform for LLC «VK». Compliance with regulatory documents.",
+  "sectionTitle": "Certificates, licenses and attestations of LLC «VK»",
+  "icon": "",
+  "weight": 2,
+  "uuid": "bb01ef70-f9a2-4bae-a377-9e9bd391ce7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

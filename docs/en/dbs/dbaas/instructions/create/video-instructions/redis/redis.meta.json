@@ -1,0 +1,14 @@
+{
+  "title": "Redis",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud Cloud Databases: a detailed video instruction on creating and configuring a Redis instance for fast data storage and retrieval in the cloud",
+  "sectionTitle": "Redis",
+  "icon": "",
+  "weight": 5,
+  "uuid": "48bf7345-17dd-4246-b945-eeb2bbb70555",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

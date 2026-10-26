@@ -1,0 +1,14 @@
+{
+  "title": "Create an account and your first project",
+  "shortDescription": "Register with {var(cloud)} as an individual, a legal entity, or a sole proprietor",
+  "metaDescription": "Guide to creating a VK Cloud account: registration, email and phone verification, card linking, setting up billing details for legal entities and sole proprietors, and two-factor authentication protection.",
+  "sectionTitle": "Create an account and your first project",
+  "icon": "",
+  "weight": 1,
+  "uuid": "69a46750-1ebf-4d07-9a88-135f0c2a8228",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Incorrect encryption algorithm",
+  "shortDescription": "When attempting to log in via the identity federation, a message appears stating that this encryption algorithm is not supported",
+  "metaDescription": "Solution to known issues with identity federation configuration: when attempting to log in via the identity federation, a message appears stating that this encryption algorithm is not supported",
+  "sectionTitle": "Incorrect encryption algorithm",
+  "icon": "",
+  "weight": 6,
+  "uuid": "850b68bf-2df8-4bc3-b020-553eeb0845d6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

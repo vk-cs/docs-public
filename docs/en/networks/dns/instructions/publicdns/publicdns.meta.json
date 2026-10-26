@@ -1,0 +1,14 @@
+{
+    "title": "Public DNS",
+    "shortDescription": "Managing DNS zones that are visible on the internet",
+    "metaDescription": "DNS is a hierarchical distributed database that allows storing IP addresses and other data. Public DNS provides binding of the IP of a VM or a load balancer to a domain name",
+    "sectionTitle": "Public DNS",
+    "icon": "",
+    "weight": 2,
+      "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "d6699635-506c-4076-9c9e-a5d5c9dd9150"
+}

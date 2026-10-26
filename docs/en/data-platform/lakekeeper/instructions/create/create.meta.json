@@ -1,0 +1,14 @@
+{
+  "title": "Creating a service instance",
+  "shortDescription": "",
+  "metaDescription": "Step-by-step instructions for creating a Lakekeeper VK Data Platform instance: selecting the service configuration and version, configuring parameters, and maintenance",
+  "sectionTitle": "Creating a service instance",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "538e145f-ab09-445b-81b6-835ccfdf12d7"
+}

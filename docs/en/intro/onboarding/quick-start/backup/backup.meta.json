@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Backup: configure backup",
+  "shortDescription": "Try protecting your data in the cloud by creating backups",
+  "metaDescription": "Backup in VK Object Storage for cloud resources. Scheduled backup configuration and data recovery after failures or deletion.",
+  "sectionTitle": "Cloud Backup: configure backup",
+  "icon": "",
+  "weight": 5,
+  "uuid": "ea766ad8-a130-4f30-9bad-e522a82885d9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

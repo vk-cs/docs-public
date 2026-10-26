@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for the «Cloud Desktop» service",
+  "shortDescription": "",
+  "metaDescription": "License Agreement for the «Cloud Desktop» service",
+  "sectionTitle": "License Agreement for the «Cloud Desktop» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 18,
+  "uuid": "979853f8-1168-475a-a5bc-2cd0f79e4f47",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

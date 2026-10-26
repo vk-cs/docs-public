@@ -1,0 +1,15 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "Cloud Airflow in VK Data Platform: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 3,
+  "uuid": "c281548a-4c7e-47e3-a2d0-a40511a153ff",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

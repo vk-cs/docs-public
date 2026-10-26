@@ -1,0 +1,14 @@
+{
+  "title": "Inviting a client",
+  "shortDescription": "How to invite a client to {var(cloud)}",
+  "metaDescription": "How to invite a client to VK Cloud: description of the process of a partner inviting a client to VK Cloud via the management console",
+  "sectionTitle": "Inviting a client",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b000b9ed-e2d6-4f8a-9172-9a3562d63ce3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

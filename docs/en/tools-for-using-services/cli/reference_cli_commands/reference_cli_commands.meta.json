@@ -1,0 +1,17 @@
+{
+  "title": "Openstack CLI Reference",
+  "shortDescription": "Basic Openstack CLI commands",
+  "metaDescription": "VK Private Cloud: Openstack CLI command reference for managing cloud resources from the command line.",
+  "sectionTitle": "Openstack CLI Reference",
+  "weight": 2,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "7df1d86b-c6d2-4eab-94fd-a9155d72aae6"
+}

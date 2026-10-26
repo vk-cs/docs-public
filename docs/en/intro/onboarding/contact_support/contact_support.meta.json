@@ -1,0 +1,14 @@
+{
+  "title": "Contact technical support",
+  "shortDescription": "Learn about the channels for contacting technical support and get help when working with the services",
+  "metaDescription": "Learn about the channels for contacting technical support and get help when working with the services",
+  "sectionTitle": "Contact technical support",
+  "icon": "",
+  "weight": 3,
+  "uuid": "d9106164-2a20-420c-a7f0-8322dad2e844",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

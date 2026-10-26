@@ -1,0 +1,14 @@
+{
+  "title": "Creating a Spark cluster",
+  "shortDescription": "",
+  "metaDescription": "Creating a Spark service instance on the VK Data Platform using Terraform. Description of the Spark cluster parameters, network infrastructure, and data sources.",
+  "sectionTitle": "Creating a Spark cluster",
+  "icon": "",
+  "weight": 1,
+  "uuid": "18d78c74-179d-4c75-ac65-1f5e8170add3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

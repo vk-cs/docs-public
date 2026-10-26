@@ -1,0 +1,15 @@
+{
+  "title": "IAM Only",
+  "shortDescription": "Using and configuring the IAM Only management console",
+  "metaDescription": "Step-by-step actions when working with the IAM Only management console for VK Object Storage: sign-in and account management, project configuration.",
+  "sectionTitle": "IAM Only",
+  "icon": "",
+  "weight": 3,
+  "uuid": "8324692e-ad48-4748-91f6-70b466972ce1",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Viewing applications",
+  "shortDescription": "How to view information about deal conclusion applications",
+  "metaDescription": "How to view information about deal conclusion applications: description of working with applications in the VK Cloud partner dashboard",
+  "sectionTitle": "Viewing applications",
+  "icon": "",
+  "weight": 1,
+  "uuid": "8c153cc3-4a1c-4662-94db-276e1700ea44",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Using scripts in a manifest",
+  "shortDescription": "Using scripts when executing a Terraform manifest and deploying an application instance",
+  "metaDescription": "How scripts can be used during the execution of a Terraform manifest and the deployment of a provider's image-based application on the VK Cloud cloud platform. Two methods: via cloud-init or via the Marketplace agent.",
+  "sectionTitle": "Using scripts in a manifest",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "44fa2a0e-37d8-479b-b19b-430cf260ebd2"
+}

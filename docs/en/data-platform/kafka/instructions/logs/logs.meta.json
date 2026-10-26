@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "How to view service instance logs in Standalone",
+  "metaDescription": "Learn how to view and work with logs of a deployed Cloud Kafka service instance in the Standalone version of VK Data Platform",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 6,
+  "uuid": "51357148-faa7-49d9-88a7-f2c2cd39b17e"
+}

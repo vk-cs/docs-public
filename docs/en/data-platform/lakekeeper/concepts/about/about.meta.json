@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "",
+  "metaDescription": "Lakekeeper VK Data Platform — a data catalog for storing and servicing object metadata",
+  "sectionTitle": "About the service",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "dd153721-2d4d-4d09-ad18-94f550ba0a14"
+}

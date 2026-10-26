@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Purpose, capabilities, and general principles of the vendor account",
+  "metaDescription": "Purpose, capabilities, and general principles of the vendor account.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "394f4d4e-78d2-406a-9046-0e2ff0a0e553",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

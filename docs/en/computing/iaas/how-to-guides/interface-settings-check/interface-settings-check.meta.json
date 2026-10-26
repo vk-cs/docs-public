@@ -1,0 +1,14 @@
+{
+  "title": "Configuring a VM Network Interface",
+  "sectionTitle": "Configuring a VM Network Interface",
+  "shortDescription": "How to check and, if necessary, configure a VM network interface",
+  "metaDescription": "How to check and, if necessary, configure a VM network interface",
+  "icon": "",
+  "weight": 9,
+  "uuid": "8b04f5f4-b6a4-4474-a345-c014c35e26f4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

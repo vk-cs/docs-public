@@ -1,0 +1,14 @@
+{
+  "title": "Deploying an Astro site to object storage with CDN",
+  "shortDescription": "How to set up hosting for a static Astro site on object storage with CDN connection to speed up loading.",
+  "metaDescription": "VK Object Storage | How to set up hosting for a static Astro site on object storage with CDN connection to speed up loading.",
+  "sectionTitle": "Deploying an Astro site to object storage with CDN",
+  "icon": "",
+  "weight": 12,
+  "uuid": "ca1b92d3-597b-46af-b4f3-53089212b6a3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

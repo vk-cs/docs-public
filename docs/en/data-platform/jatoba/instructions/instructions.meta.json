@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "Jatoba in VK Data Platform: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "18c40f82-3442-4590-835f-2cb3179b5b78"
+}

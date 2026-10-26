@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "How the secret manager works and what its features are",
+  "metaDescription": "Learn how the secret manager helps you centrally store and manage secrets: passwords, keys, and tokens. Security, encryption, and version control for your infrastructure.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "15fc0e0a-3874-4263-92f2-d873df5c2709",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

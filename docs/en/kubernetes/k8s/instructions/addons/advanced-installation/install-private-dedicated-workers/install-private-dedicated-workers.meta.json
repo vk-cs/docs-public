@@ -1,0 +1,17 @@
+{
+  "title": "Installing the add-on on a dedicated node group",
+  "shortDescription": "",
+  "metaDescription": "Learn how to install the add-on on a dedicated node group",
+  "sectionTitle": "Installing the add-on on a dedicated node group",
+  "icon": "",
+  "weight": 15,
+  "uuid": "7292bfb9-8e8b-4af0-b4a1-621bef9fc535",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Service infrastructure description in the manifest",
+  "shortDescription": "Description in the Terraform manifest of the infrastructure components on which the application will be deployed",
+  "metaDescription": "Description in the Terraform manifest of the infrastructure components on which the provider's service will be deployed: creating the instance VM, obtaining the SDN type, assigning a fixed IP address, generating access passwords for the service instance.",
+  "sectionTitle": "Service infrastructure description in the manifest",
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ae99007f-30a5-440b-bc46-2de17f0ef47f"
+}

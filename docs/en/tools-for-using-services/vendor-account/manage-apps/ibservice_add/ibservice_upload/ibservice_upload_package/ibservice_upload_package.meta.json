@@ -1,0 +1,13 @@
+{
+  "title": "Uploading a service package to the store",
+  "shortDescription": "",
+  "metaDescription": "Uploading a service package to the store",
+  "sectionTitle": "Uploading a service package to the store",
+  "weight": 5,
+  "uuid": "b6e2619b-ea48-4fd1-88c1-778cf26e5522",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

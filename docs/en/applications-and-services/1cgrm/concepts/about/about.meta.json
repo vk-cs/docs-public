@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Key features of the 1C:GRM service in {var(cloud)}",
+  "metaDescription": "Cloud solutions 1C:GRM from VK Cloud and 1C company: quick connection and deployment of 1C accounting, management, and CRM applications in the cloud. Remote access, flexible billing, technical support",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "151b5d75-54c8-484d-a11a-a6706176b70a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring",
+  "shortDescription": "How to monitor and analyze the operation of IAM Only and VK Object Storage",
+  "metaDescription": "Monitoring is responsible for the process of tracking and analyzing the operation of the access management system and cloud storage to ensure security, stability, and correctness of data transfer between them.",
+  "sectionTitle": "Monitoring",
+  "uuid": "429a28ef-34f8-42e7-9438-b8a2cbbb434e",
+  "weight": 4,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

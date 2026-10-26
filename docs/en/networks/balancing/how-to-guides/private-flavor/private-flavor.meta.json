@@ -1,0 +1,15 @@
+{
+  "title": "Creating a load balancer with a custom configuration template",
+  "shortDescription": "How to create a load balancer with a custom configuration template",
+  "metaDescription": "How to create a load balancer with a private flavor",
+  "sectionTitle": "Creating a load balancer with a custom configuration template",
+  "hidden": true,
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "bafe33f0-8e1c-4234-8aee-fb028924aa1b"
+}

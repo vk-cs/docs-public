@@ -1,0 +1,13 @@
+{
+  "title": "Manifest output parameters",
+  "shortDescription": "Terraform manifest output parameters to be passed to the application user",
+  "metaDescription": "Description of Terraform manifest output parameters: the service instance VM IP address, password or SSH key for accessing the instance. Output parameters are passed to the user of an image-based application.",
+  "sectionTitle": "Manifest output parameters",
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "bfec7501-f8ed-4fc4-8da5-64919987ff1d"
+}

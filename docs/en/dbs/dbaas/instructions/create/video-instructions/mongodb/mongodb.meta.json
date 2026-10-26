@@ -1,0 +1,14 @@
+{
+  "title": "MongoDB",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud Cloud Databases: step-by-step video guide on deploying and configuring a MongoDB instance for storing and processing data in the cloud",
+  "sectionTitle": "MongoDB",
+  "icon": "",
+  "weight": 4,
+  "uuid": "676012e4-56d8-4b58-b203-187965ae678f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

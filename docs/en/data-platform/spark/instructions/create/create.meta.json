@@ -1,0 +1,16 @@
+{
+  "title": "Creating a service instance",
+  "shortDescription": "How to create a Spark instance in the desired configuration",
+  "metaDescription": "Learn how to create a Cloud Spark service instance in VK Data Platform.",
+  "sectionTitle": "Creating a service instance",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "72a0fb34-a96f-4601-bb1b-8d6ab09583c5"
+}

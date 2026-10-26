@@ -72,6 +72,32 @@ The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreS
 
 {/tabs}
 
+## {heading(PgBouncer)[id=dbaas-extensions-postgresql-pgbouncer]}
+
+{tabs}
+
+{tab(Extension description)}
+
+The [PgBouncer](https://www.pgbouncer.org) balancer works as a proxy, managing a pool of client connections to the DB server. It reuses connections, reducing the load on the server and improving performance.
+It supports three modes: session, transaction, and statement.
+Read more about working with the balancer extension in the {linkto(../../how-to-guides/tls-connect#dbaas-tls-connect)[text=Using the TLS protocol to connect to PostgreSQL]} section.
+
+{/tab}
+
+{tab(Extension parameters)}
+
+- `pool_mode`: connection management mode.
+  Possible values:
+    - `session`: the connection is returned to the pool after the session ends.
+    - `transaction`: the connection is returned to the pool after the transaction ends.
+    - `statement`: the connection is returned to the pool after each SQL query is executed. This mode is suitable for simple queries, but may be incompatible with some PostgreSQL features (for example, temporary tables or cursors).
+- `max_client_conn`: limit on the number of client connections to prevent balancer overload.
+- `listen_port`: port for incoming connections.
+
+{/tab}
+
+{/tabs}
+
 ## pg_hint_plan
 
 {tabs}

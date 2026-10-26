@@ -1,0 +1,17 @@
+{
+  "title": "Redis Extensions",
+  "shortDescription": "A list of available Redis extensions and their parameters",
+  "metaDescription": "Cloud Databases in VK Cloud: a list of available Redis extensions and their parameters.",
+  "sectionTitle": "Redis Extensions",
+  "icon": "",
+  "weight": 5,
+  "uuid": "5a169eac-b9f9-4059-80d5-3b54ab3e73cb",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

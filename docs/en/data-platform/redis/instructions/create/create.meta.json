@@ -1,0 +1,14 @@
+{
+  "title": "Creating a service instance",
+  "shortDescription": "How to create a Redis instance with the desired configuration",
+  "metaDescription": "How to create a Redis service instance with the desired configuration in VK Data Platform",
+  "sectionTitle": "Creating a service instance",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "d8d3734b-22f8-41d2-9253-5f879379e105"
+}

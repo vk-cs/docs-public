@@ -1,0 +1,14 @@
+{
+  "title": "OpenSearch",
+  "shortDescription": "",
+  "metaDescription": "Cloud Databases in VK Cloud: the OpenSearch open-source search and analytics suite",
+  "sectionTitle": "OpenSearch",
+  "icon": "",
+  "weight": 4,
+  "uuid": "b32d30f6-1c7d-48d0-90a5-eabbc04b6c18",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

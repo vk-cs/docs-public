@@ -1,0 +1,18 @@
+{
+  "title": "Creating a file storage",
+  "shortDescription": "How to create and configure a file storage",
+  "metaDescription": "Creating a file storage in VK Cloud: choosing the NFS or CIFS protocol, specifying size and network, configuring access rules during creation.",
+  "sectionTitle": "Creating a file storage",
+  "icon": "",
+  "weight": 1,
+  "uuid": "17e93910-3c28-4f06-b63d-684f43720038",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

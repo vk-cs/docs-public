@@ -1,0 +1,16 @@
+{
+  "title": "Terms of Use of the «1C:Ready Workplace» Service",
+  "shortDescription": "",
+  "metaDescription": "This document represents the terms of use of the «1C: Ready Workplace» service within the «VK Cloud» Platform.",
+  "sectionTitle": "Terms of Use of the «1C:Ready Workplace» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "uuid": "9f57d0dc-125f-4b82-ae22-2bf57cc94687",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

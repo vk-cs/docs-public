@@ -1,0 +1,14 @@
+{
+  "title": "Secret Version Management",
+  "shortDescription": "Viewing existing versions and creating new ones",
+  "metaDescription": "Detailed step-by-step instructions for the main operations when working with the VK Cloud secret manager: creating and viewing secret versions.",
+  "sectionTitle": "Secret Version Management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a86aa13f-2f9b-4cb5-95e9-a4a2f0baff59",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

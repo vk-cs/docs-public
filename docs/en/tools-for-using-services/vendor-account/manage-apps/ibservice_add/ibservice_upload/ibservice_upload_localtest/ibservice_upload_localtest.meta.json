@@ -1,0 +1,13 @@
+{
+  "title": "Local Testing of a Terraform Manifest",
+  "shortDescription": "",
+  "metaDescription": "Local testing of a Terraform manifest",
+  "sectionTitle": "Local Testing of a Terraform Manifest",
+  "weight": 3,
+  "uuid": "83743852-9b4d-4c5d-8ca1-a46121992e18",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

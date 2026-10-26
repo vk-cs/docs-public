@@ -1,0 +1,16 @@
+{
+  "title": "Terms of Use of the «Cloud Servers» Service",
+  "shortDescription": "",
+  "metaDescription": "This document sets out the terms of use of the «Cloud Servers» service within the «VK Cloud» Platform. ",
+  "sectionTitle": "Terms of Use of the «Cloud Servers» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "d660eb90-7776-4d31-b8ca-2d6a17c447a3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

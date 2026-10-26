@@ -1,0 +1,14 @@
+{
+  "title": "Error when connecting to Spark via SparkSession",
+  "shortDescription": "",
+  "metaDescription": "Learn why an error occurs when connecting to Cloud Spark VK Data Platform via SparkSession and how to fix it",
+  "sectionTitle": "Error when connecting to Spark via SparkSession",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "eca8a055-fdca-4567-aebc-80e6d9257f42"
+}

@@ -1,11 +1,11 @@
-## Использование балансировщика нагрузки
+## Using the load balancer
 
-Для каждого кластера PG/MySQL создается TCP-балансировщик, который имеет 3 порта. Они указывают на:
+For each PG/MySQL cluster, a TCP load balancer is created with 3 ports. They point to:
 
-- мастер;
-- синхронную реплику;
-- асинхронную реплику.
+- the master;
+- the synchronous replica;
+- the asynchronous replica.
 
-## Настройка файервола
+## Configuring the firewall
 
-Вы можете настроить группы безопасности как при [создании](../../instructions/create) инстанса БД, так и после его развертывания через [раздел](/en/networks/vnet/instructions/secgroups) **Виртуальные сети** → **Настройки firewall**.
+You can configure security groups either when [creating](../../instructions/create) a DB instance, or after its deployment, via the [section](/en/networks/vnet/instructions/secgroups) **Virtual networks** → **Firewall settings**.

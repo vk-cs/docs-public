@@ -1,0 +1,14 @@
+{
+  "title": "OpenSearch",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud Cloud Databases: video instruction on creating and configuring an OpenSearch instance for data search and analytics in the cloud",
+  "sectionTitle": "OpenSearch",
+  "icon": "",
+  "weight": 6,
+  "uuid": "2a391c66-1850-4afc-90fb-55c5ca716b73",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

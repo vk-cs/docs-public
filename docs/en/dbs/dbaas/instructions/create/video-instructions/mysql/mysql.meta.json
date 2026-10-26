@@ -1,0 +1,14 @@
+{
+  "title": "MySQL",
+  "shortDescription": "",
+  "metaDescription": "Cloud Databases VK Cloud: video instruction on creating a MySQL instance for quickly launching a relational database in the VK Cloud",
+  "sectionTitle": "MySQL",
+  "icon": "",
+  "weight": 3,
+  "uuid": "443d76fe-af87-4c4d-b6f3-7eb629012a84",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Load balancer management",
+  "metaDescription": "Explore the OpenAPI specification of the VK Cloud Octavia API: description of methods, parameters, examples of requests and responses. Get detailed documentation for automating load balancer management.",
+  "shortDescription": "OpenAPI specification for load balancer management",
+  "sectionTitle": "Load balancer management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "be0d1369-dd32-4804-95ba-0d67d0e64a5e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

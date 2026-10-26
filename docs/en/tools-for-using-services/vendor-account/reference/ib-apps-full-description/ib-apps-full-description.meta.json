@@ -1,0 +1,13 @@
+{
+  "title": "Marketplace Application Description",
+  "shortDescription": "Reference guide for preparing the full_description.md file with information displayed on the application page in Marketplace",
+  "metaDescription": "Filling in the full_description.md file. This file contains the application description that is displayed on its page in Marketplace: information about the service, billing rules, useful links, support contacts, license agreement.",
+  "sectionTitle": "Marketplace Application Description",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "63b2c21e-866a-4dc4-8faa-f82ecade1b06"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Pod management",
+  "shortDescription": "",
+  "metaDescription": "Pod management",
+  "sectionTitle": "Pod management",
+  "weight": 12,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "93f38756-aafc-42ee-a24a-9a4efdb8a483"
+}

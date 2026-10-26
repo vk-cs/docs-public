@@ -1,0 +1,14 @@
+{
+  "title": "Hystax Acura — disaster recovery from Marketplace: protect your services from failures and disasters",
+  "shortDescription": "Set up infrastructure recovery on a backup site",
+  "metaDescription": "Infrastructure recovery with Hystax Acura. Configure redundancy and test recovery to ensure service continuity.",
+  "sectionTitle": "DR from Marketplace: protect your services from failures and disasters",
+  "icon": "",
+  "weight": 6,
+  "uuid": "54d527a1-0b0d-4150-a978-95259eaff784",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

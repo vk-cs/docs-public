@@ -1,0 +1,14 @@
+{
+  "title": "{var(data-p)}",
+  "shortDescription": "How to use Terraform to manage {var(data-p)} service objects",
+  "metaDescription": "Learn how to use Terraform to manage VK Data Platform service instances. See an example of creating a Spark cluster.",
+  "sectionTitle": "{var(data-p)}",
+  "icon": "",
+  "weight": 80,
+  "uuid": "c0247f4e-312f-4e33-9880-b8e4f5efbb85",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

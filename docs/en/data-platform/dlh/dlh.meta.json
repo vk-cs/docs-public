@@ -1,0 +1,14 @@
+{
+  "title": "Data Lakehouse",
+  "shortDescription": "An approach to data storage and analytics combining elements of data lakes and enterprise data warehousing",
+  "metaDescription": "An approach to data storage and analytics combining elements of data lakes and enterprise data warehousing",
+  "sectionTitle": "Data Lakehouse",
+  "icon": "",
+  "weight": 1,
+  "uuid": "aacac787-08b3-46f8-b4ae-caf9e59d8b9f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

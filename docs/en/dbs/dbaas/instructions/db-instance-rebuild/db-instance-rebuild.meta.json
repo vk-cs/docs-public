@@ -1,0 +1,18 @@
+{
+  "title": "DB Instance Rebuild",
+  "shortDescription": "Rebuilding a DB instance from a backup",
+  "metaDescription": "Cloud Databases: rebuilding a database instance from a backup in VK Cloud",
+  "sectionTitle": "DB Instance Rebuild",
+  "icon": "",
+  "weight": 9,
+  "uuid": "b2b4f895-eed2-4275-8d18-8343f7cb3193",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

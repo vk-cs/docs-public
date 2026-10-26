@@ -1,0 +1,16 @@
+{
+  "title": "Consent to receiving advertising",
+  "shortDescription": "",
+  "metaDescription": "Consent to receiving advertising",
+  "sectionTitle": "Consent to receiving advertising",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "99fb0643-38b9-4fa8-9d69-77bcda367181",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

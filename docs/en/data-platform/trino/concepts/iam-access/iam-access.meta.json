@@ -1,0 +1,14 @@
+{
+  "title": "Access management",
+  "shortDescription": "How Cloud Trino uses IAM to distribute access rights among project members, examples of role models",
+  "metaDescription": "Learn how access control between project members is configured using IAM in the Cloud Trino service from VK Cloud: the impact of basic roles on access to service components and examples of role models with individual permissions.",
+  "sectionTitle": "Access management",
+  "icon": "",
+  "weight": 4,
+  "uuid": "c245e4a3-47a7-469d-9f83-09de171dc113",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

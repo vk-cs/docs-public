@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the “Hosting Mini-Apps in MAX on VK Cloud” Promotion",
+  "shortDescription": "",
+  "metaDescription": "Rules of the “Hosting Mini-Apps in MAX on VK Cloud” Promotion",
+  "sectionTitle": "Rules of the “Hosting Mini-Apps in MAX on VK Cloud” Promotion",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "9a614ce0-ccc0-458e-adbd-4c991c76169b"
+}

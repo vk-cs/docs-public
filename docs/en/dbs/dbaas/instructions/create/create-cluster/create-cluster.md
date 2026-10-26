@@ -269,7 +269,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffication).
 
       - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
-      - **Количество синхронных реплик** and **Количество асинхронных реплик**: Select the number of synchronous and asynchronous replicas that will be automatically deployed to other zones.
+      - **Number of synchronous replicas** and **Number of asynchronous replicas**: Select the number of synchronous and asynchronous replicas that will be automatically deployed to other zones.
 
           {note:warn}
 

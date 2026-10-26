@@ -34,22 +34,22 @@ To deploy the OpenClaw service on a VM in your VK Cloud project:
 1. In your VK Cloud [management console](https://msk.cloud.vk.com/app/en), go to the **Marketplace** section.
 1. On the **OpenClaw** service card, click the **Details** button.
 1. On the service description page, click the **Connect** button.
-1. On the **Параметры сервера** page, specify the connection settings for the OpenClaw service.
+1. On the **Server parameters** page, specify the connection settings for the OpenClaw service.
 
     1. Specify the OpenClaw parameters:
 
-        - **Как будет размещен openclaw**: select the service deployment type.
+        - **How openclaw will be hosted**: select the service deployment type.
 
             - `external` — with an external IP address and domain name provided by VK Cloud. This way, the VM with the deployed OpenClaw service will be accessible from the internet.
             - `internal` — with access only from the VK Cloud project network via an internal IP address.
 
-        - **Включить резервное копирование на S3**: enable this option to create daily backups of OpenClaw data in [VK Object Storage](/en/storage/s3/concepts/about). The storage is created automatically. The last 7 copies are retained.
+        - **Enable backup to S3**: enable this option to create daily backups of OpenClaw data in [VK Object Storage](/en/storage/s3/concepts/about). The storage is created automatically. The last 7 copies are retained.
 
-        - **Включить мониторинг**: enable the option to automatically send metrics of the virtual machine where OpenClaw is deployed to the [Cloud Monitoring](/en/monitoring-services/monitoring) service. These metrics will be available in the **Monitoring** section of your management console.
+        - **Enable monitoring**: enable the option to automatically send metrics of the virtual machine where OpenClaw is deployed to the [Cloud Monitoring](/en/monitoring-services/monitoring) service. These metrics will be available in the **Monitoring** section of your management console.
 
     1. Specify the parameters of the virtual machine where the service instance will be deployed:
 
-        - **Сеть**: select the network where the VM with the deployed service will be hosted. If you specified the `external` deployment type, select the previously configured network with internet access and the subnet where the **Private DNS** option is disabled.
+        - **Network**: select the network where the VM with the deployed service will be hosted. If you specified the `external` deployment type, select the previously configured network with internet access and the subnet where the **Private DNS** option is disabled.
         - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the VM will be launched.
         - **Type of virtual machine**: select a [predefined VM configuration](/en/computing/iaas/concepts/about#flavors) according to your workload. For pilot scenarios, the minimum configuration is sufficient.
 

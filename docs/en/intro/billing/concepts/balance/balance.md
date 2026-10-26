@@ -101,7 +101,7 @@ Parameters of the following services:
 
 Other parameters:
 
-- Licenses for the software of Microsoft, Astra Linux SE 1.7 «Воронеж», Astra Linux SE 1.7 «Орел», ALT Server 10, RED OS
+- Licenses for the software of Microsoft, Astra Linux SE 1.7 «Voronezh», Astra Linux SE 1.7 «Orel», ALT Server 10, RED OS
 - Standard load balancers (the service ones are not included)
 - Public IP addresses
 - File storages

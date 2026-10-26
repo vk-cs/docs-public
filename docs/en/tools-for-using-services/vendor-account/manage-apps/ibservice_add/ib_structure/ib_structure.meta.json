@@ -1,0 +1,13 @@
+{
+  "title": "Service Package Structure",
+  "shortDescription": "",
+  "metaDescription": "Service Package Structure",
+  "sectionTitle": "Service Package Structure",
+  "weight": 3,
+  "uuid": "12e3dc5a-1363-4202-83b1-c16a60b06261",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

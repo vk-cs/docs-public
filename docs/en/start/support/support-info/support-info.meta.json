@@ -1,0 +1,25 @@
+{
+  "title": "Support Terms",
+  "shortDescription": "Support policies, contact methods and information for VIP customers",
+  "metaDescription": "The VK Cloud team provides technical support to customers using VK Cloud services",
+  "sectionTitle": "Support Terms",
+  "weight": 1,
+  "additionalUuids": [
+    "40b9cfd6-bbcb-4aa1-b69b-a0af91f885cd"
+  ],
+  "uuid": "dabb0c90-418b-4ec6-bf6e-4b5fd5ff0859",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

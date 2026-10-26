@@ -1,0 +1,14 @@
+{
+  "title": "Network lost after VM restart",
+  "shortDescription": "No network access after restarting a virtual machine",
+  "metaDescription": "No network access after restarting a virtual machine",
+  "sectionTitle": "Network lost after VM restart",
+  "icon": "",
+  "weight": 28,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ce422051-c028-494f-86b1-e0c28b53122b"
+}

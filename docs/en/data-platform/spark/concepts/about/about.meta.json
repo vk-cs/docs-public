@@ -1,0 +1,15 @@
+{
+  "title": "About the service",
+  "shortDescription": "Overview of the Spark service",
+  "metaDescription": "Learn about the capabilities of the Cloud Spark service in VK Data Platform and what tasks it is suitable for",
+  "sectionTitle": "About the service",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "11741763-878a-491b-90d5-b35c13a41e33"
+}

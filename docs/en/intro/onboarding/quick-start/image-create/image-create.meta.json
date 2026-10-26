@@ -1,0 +1,15 @@
+{
+  "title": "Create a custom VM image",
+  "shortDescription": "Create an image from the disk of an existing VM",
+  "metaDescription": "Create an image from the disk of an existing VM",
+  "sectionTitle": "Create a custom VM image",
+  "icon": "",
+  "hidden": true,
+  "weight": 7,
+  "uuid": "adc45db2-5b34-4d2e-816f-b4297256f176",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

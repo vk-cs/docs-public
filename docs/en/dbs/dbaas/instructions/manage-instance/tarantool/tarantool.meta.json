@@ -1,0 +1,14 @@
+{
+  "title": "Tarantool",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud databases: managing Tarantool instances.",
+  "sectionTitle": "Tarantool",
+  "icon": "",
+  "weight": 6,
+  "uuid": "2548afac-d3de-4119-a9d5-802c819a8257",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -111,7 +111,7 @@ Available policies:
   {note:warn}
 
   Use this policy and the storage classes that implement it with caution: data loss is possible.
-  In VK Cloud, due to [integration with Cinder CSI](/en/kubernetes/k8s/concepts/storage#working_with_container_storage_interface_csi), deleting a PV will also delete the VK Cloud disk associated with it.
+  In VK Cloud, due to [integration with Cinder CSI](/en/kubernetes/k8s/concepts/storage#k8s-storage-csi), deleting a PV will also delete the VK Cloud disk associated with it.
 
   {/note}
 

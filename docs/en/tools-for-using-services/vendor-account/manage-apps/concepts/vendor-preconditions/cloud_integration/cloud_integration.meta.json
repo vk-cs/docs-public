@@ -1,0 +1,13 @@
+{
+  "title": "Service operation within the cloud platform",
+  "shortDescription": "",
+  "metaDescription": "Service operation within the cloud platform",
+  "sectionTitle": "Service operation within the cloud platform",
+  "weight": 6,
+  "uuid": "b45e2901-e587-4973-89a2-dc64cf1a6f67",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "title": "DNS",
+  "shortDescription": "Private DNS",
+  "metaDescription": "Private DNS",
+  "sectionTitle": "DNS",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "3756e0cb-7a76-44b8-901c-6d45f23722a3"
+}

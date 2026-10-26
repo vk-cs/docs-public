@@ -1,0 +1,14 @@
+{
+  "title": "Quotas and limits",
+  "shortDescription": "A list of quotas and technical limitations applicable in the Managed Containers service",
+  "metaDescription": "A list of quotas and technical limitations applicable in VK Cloud projects",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 30,
+  "uuid": "5772b784-6034-4c89-a697-a1c337fb1164",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

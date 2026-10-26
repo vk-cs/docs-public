@@ -1,0 +1,16 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Ways to diagnose and resolve issues in the {var(cloud)} management console",
+  "metaDescription": "How to troubleshoot issues in the VK Cloud management console. Ways to diagnose and resolve issues in the VK Cloud management console",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 5,
+  "uuid": "3d89f8b1-cb17-4477-a748-330f1417042c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

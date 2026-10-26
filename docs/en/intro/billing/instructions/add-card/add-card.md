@@ -50,8 +50,8 @@ To link a card or connect payments via FPS:
 1. Click the **Make a payment** button.
 1. Specify the top-up amount (minimum 10 rubles for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions), and 100 tenge for projects in the Kazakhstan region) and select the **By bank card** payment method.
 1. Click the **Continue** button.
-1. Select the **СБП** option.
-1. Select the **Сохранить для оплаты** option and pay via the QR code.
+1. Select the **FPS** option.
+1. Select the **Save for payment** option and pay via the QR code.
 
     After the funds are successfully debited, the account will be linked. After that, when you click the **Make a payment** button, a separate **With linked SBP** option becomes available, which you can use to top up the project balance instantly.
 
@@ -100,9 +100,9 @@ To configure autopayment of the project balance from a bank card or a linked FPS
 1. On the balance page, click the **Add card** button.
 1. In the window that opens, in the row with the linked card:
 
-    1. Click the **Изменить** link.
+    1. Click the **Edit** link.
     1. Click the ![](/en/assets/no.svg "inline") icon.
-    1. Click the **Удалить** button.
+    1. Click the **Delete** button.
 
 Wait for the card to be unlinked. After that, it will no longer display on the balance page.
 
@@ -118,9 +118,9 @@ If you are a legal entity and work on prepayment, leave the card as an additiona
 1. Next to the linked FPS account, click the ![](/en/assets/edit-icon.svg "inline") icon.
 1. In the window that opens, in the row with the linked account:
 
-    1. Click the **Изменить** link.
+    1. Click the **Edit** link.
     1. Click the ![](/en/assets/no.svg "inline") icon.
-    1. Click the **Удалить** button.
+    1. Click the **Delete** button.
 
 Wait for the account to be unlinked. After that, it will no longer be displayed on the balance page.
 

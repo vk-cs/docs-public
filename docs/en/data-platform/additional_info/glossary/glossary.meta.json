@@ -1,0 +1,14 @@
+{
+  "title": "Terms and Abbreviations",
+  "shortDescription": "Main terms and abbreviations used in the documentation",
+  "metaDescription": "Terms and Abbreviations",
+  "sectionTitle": "Terms and Abbreviations",
+  "weight": 2,
+  "uuid": "39665c3f-daae-417a-b933-5bf4493d6f09",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Working with a Service Instance",
+  "shortDescription": "How to manage a service instance in a project",
+  "metaDescription": "Learn how to manage Redis service instances in VK Data Platform: view component statuses, perform scaling, work with extensions, and more",
+  "sectionTitle": "Working with a Service Instance",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "3539cef7-1ae3-4a89-8d7d-1e142132a556"
+}

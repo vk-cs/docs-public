@@ -53,7 +53,7 @@ The disk to create the image must be disconnected from the VM and have the statu
 
 {/tabs}
 
-## Importing an image
+## {heading(Importing an image)[id=iaas-images-manage-import]}
 
 The VK Cloud service supports uploading your own virtual machine images with [some restrictions](../../../concepts/about#operating_system) by operating systems.
 

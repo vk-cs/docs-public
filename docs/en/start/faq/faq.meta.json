@@ -1,0 +1,14 @@
+{
+  "title": "Frequently asked questions",
+  "shortDescription": "Answers to frequently asked questions",
+  "metaDescription": "Technical support communication channels and answers to frequently asked questions",
+  "sectionTitle": "Frequently asked questions",
+  "icon": "",
+  "weight": 7,
+  "uuid": "04381ae7-c4ad-4d23-8b46-224fc197b944",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -17,7 +17,7 @@ Write to [technical support](mailto:support@mcs.mail.ru). In your message specif
 
     Tariff plan — Monthly
 
-    Disk volume — 10 ГБ
+    Disk volume — 10 GB
 
     Disk type — High-IOPS SSD
     ```

@@ -1,0 +1,14 @@
+{
+  "title": "Meilisearch Deployment",
+  "shortDescription": "Deploying Meilisearch for data search and filtering tasks",
+  "metaDescription": "VK Cloud Marketplace: steps to deploy the Meilisearch service for data search and filtering tasks in the target project",
+  "sectionTitle": "Meilisearch Deployment",
+  "icon": "",
+  "weight": 16,
+  "uuid": "fd9c7f36-0cfc-4d21-b99a-f2d2d46385de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

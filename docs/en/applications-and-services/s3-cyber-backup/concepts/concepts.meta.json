@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "How the S3 Gateway for Cyber Backup Cloud works",
+  "metaDescription": "Concepts of the S3 Gateway for Cyber Backup Cloud: service operating principles and architecture",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a86ccc6a-8dab-44a4-8bfa-576776980e95",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

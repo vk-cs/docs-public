@@ -1,0 +1,14 @@
+{
+  "title": "Basic Terraform Commands",
+  "shortDescription": "",
+  "metaDescription": "How to use the VK Cloud Terraform provider to manage VK Data Platform. A list of the main Terraform commands used",
+  "sectionTitle": "Basic Terraform Commands",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "956a7214-ad40-4b24-8eda-8a2263463e2c"
+}

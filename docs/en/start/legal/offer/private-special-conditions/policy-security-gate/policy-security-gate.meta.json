@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for Providing a Demonstration Version of the Computer Program \"Security Gate\"",
+  "shortDescription": "",
+  "metaDescription": "This document is a license agreement for the use of the demonstration version of the computer program \"Security Gate\" within the \"VK Cloud\" Platform.",
+  "sectionTitle": "License Agreement for Providing a Demonstration Version of the Computer Program \"Security Gate\"",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "1bcf014e-ba98-48c8-98eb-0e57874a197f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

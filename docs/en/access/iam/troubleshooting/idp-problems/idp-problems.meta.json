@@ -1,0 +1,14 @@
+{
+  "title": "Problems with identity federation sign-in",
+  "shortDescription": "Solutions to known issues with identity federation sign-in",
+  "metaDescription": "Solutions to known issues with identity federation configuration: IdP-side errors when configuring identity federation and ways to resolve them.",
+  "sectionTitle": "Identity federation sign-in issues",
+  "icon": "",
+  "weight": 1,
+  "uuid": "70e6e3f5-181f-4663-a1ee-615764548784",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

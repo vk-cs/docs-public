@@ -1,0 +1,16 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "How to manage a service instance in a project",
+  "metaDescription": "Learn how to manage Cloud Spark service instances in VK Data Platform: view component statuses, perform scaling, work with extensions, and more.",
+  "sectionTitle": "Working with a service instance",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "efaca6b7-275e-43e9-a1f5-f7078416ccf9"
+}

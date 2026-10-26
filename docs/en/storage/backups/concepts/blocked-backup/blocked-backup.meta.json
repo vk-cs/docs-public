@@ -1,0 +1,14 @@
+{
+  "title": "Deletion-protected backups",
+  "shortDescription": "Creating backups with a temporary or permanent deletion lock",
+  "metaDescription": "Creating backups with a temporary or permanent deletion lock. Temporary lock (retention period) and permanent lock (legal hold). Managed (GOVERNANCE) and strict (COMPLIANCE) temporary lock modes.",
+  "sectionTitle": "Deletion-protected backups",
+  "icon": "",
+  "weight": 4,
+  "uuid": "c57288d5-8d1a-4aeb-ab55-84900bfd38db",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

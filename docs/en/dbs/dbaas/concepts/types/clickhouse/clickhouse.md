@@ -1,16 +1,16 @@
-ClickHouse — это столбцовая аналитическая СУБД с открытым исходным кодом, разработанная компанией Яндекс. Главное преимущество этой СУБД — быстрая обработка OLAP-запросов на структурированных больших данных. ClickHouse эффективно использует ресурсы процессора и позволяет обрабатывать данные, которые хранятся на жестких дисках, без полной загрузки этих данных в кеш памяти.
+ClickHouse is an open-source column-oriented analytical DBMS developed by Yandex. The main advantage of this DBMS is fast processing of OLAP queries on large volumes of structured data. ClickHouse efficiently uses CPU resources and allows processing data stored on hard disks without fully loading this data into the memory cache.
 
-ClickHouse использует собственный диалект языка SQL, с рядом расширений и ограничений по сравнению со стандартным SQL. Среди основных расширений — возможность работы с внешними хранилищами key-value (словарями), агрегатные функции для приближенных вычислений. Среди основных ограничений — отсутствие транзакций и поддержки точечных UPDATE/DELETE (доступен только пакетный UPDATE/DELETE), ограниченная поддержка синтаксиса JOIN.
+ClickHouse uses its own SQL dialect, with a number of extensions and limitations compared to standard SQL. The main extensions include the ability to work with external key-value storages (dictionaries) and aggregate functions for approximate calculations. The main limitations include the lack of transactions and support for point UPDATE/DELETE operations (only batch UPDATE/DELETE is available), and limited support for JOIN syntax.
 
-ClickHouse рекомендуется использовать, когда:
+ClickHouse is recommended for use when:
 
-- нужно генерировать аналитические отчеты по большим данным в режиме реального времени — например, рассчитывать аналитику поведения клиентов приложения;
-- в базу постоянно записывается большой объем входящих данных, при этом нужна стабильно высокая скорость обработки запросов на чтение;
-- важна линейная масштабируемость.
+- you need to generate analytical reports on large volumes of data in real time — for example, to calculate analytics on application user behavior;
+- a large volume of incoming data is constantly written to the database, while a consistently high speed of read query processing is required;
+- linear scalability is important.
 
-Список версий ClickHouse, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+The list of ClickHouse versions supported in VK Cloud is available when [creating](../../../instructions/create) an instance of this database.
 
-## Что дальше?
+## What's next?
 
-- [Изучите](https://clickhouse.com/docs/ru) официальную документацию ClickHouse.
-- [Познакомьтесь](../../../instructions) с основными операциями, которые доступны для инстансов этой СУБД в VK Cloud.
+- [See](https://clickhouse.com/docs/ru) the official ClickHouse documentation.
+- [Learn about](../../../instructions) the main operations available for instances of this DBMS in VK Cloud.

@@ -1,0 +1,16 @@
+{
+  "title": "NFS file storage fails to connect to a VM",
+  "shortDescription": "How to fix the «mount.nfs: No route to host» error that occurs when connecting file storage to a virtual machine",
+  "metaDescription": "How to fix the «mount.nfs: No route to host» error that occurs when connecting file storage to a virtual machine",
+  "sectionTitle": "NFS file storage fails to connect to a VM",
+  "icon": "",
+  "weight": 10,
+  "uuid": "6074d3b4-14b0-40b4-81a7-8577f7ed68b9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

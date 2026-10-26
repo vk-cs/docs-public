@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to VK Cloud via Cloud Direct Connect in a fault-tolerant VRRP configuration",
+  "shortDescription": "How to organize data transfer between On-premises infrastructure and the VK Cloud platform using two dedicated connections in a fault-tolerant VRRP configuration",
+  "metaDescription": "How to organize data transfer between On-premises infrastructure and the VK Cloud platform using two dedicated connections and two advanced routers in a fault-tolerant VRRP configuration",
+  "sectionTitle": "Connecting to VK Cloud Cloud Direct Connect in a fault-tolerant VRRP configuration",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "d5f0429e-6d9e-4d58-8822-03c655427bbd"
+}

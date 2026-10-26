@@ -1,0 +1,23 @@
+{
+  "title": "Creating a service instance",
+  "shortDescription": "How to create a Cloud Iceberg Metastore instance with the required configuration",
+  "metaDescription": "How to create a service instance with the required configuration.",
+  "sectionTitle": "Creating a service instance",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b0af96f0-c2ea-46d7-b9e4-97cf0918d987",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

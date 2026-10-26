@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Basic concepts and characteristics of the Redis service",
+  "metaDescription": "Learn about the basic concepts and characteristics of the Redis service in VK Data Platform",
+  "sectionTitle": "Concepts",
+  "weight": 0,
+  "uuid": "b481db36-eebf-4ba3-94c6-d9f18884ca35",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Balancing between distributed sites",
+  "shortDescription": "How to use balancing groups in DNS to create a fault-tolerant application",
+  "metaDescription": "Balancing between distributed sites in VK Cloud. How to use balancing groups in DNS to create a fault-tolerant application",
+  "sectionTitle": "Balancing between distributed sites",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "af32708b-22b3-4b86-b174-27e026bc715d"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Extensions",
+  "shortDescription": "Description of available Cloud ClickHouse extensions",
+  "metaDescription": "Learn about VK Data Platform Cloud ClickHouse extensions: a country reference for code validation, data enrichment, and regional analytics.",
+  "sectionTitle": "Extensions",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a3f7c1d2-8b4e-4f6a-9c5d-1e2b3a4c5d6e",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

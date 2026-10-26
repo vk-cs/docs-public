@@ -1,0 +1,14 @@
+{
+  "title": "VPN tunnel is not working",
+  "shortDescription": "What to do if a VPN tunnel is not working after creation",
+  "metaDescription": "What to do if a VPN tunnel is not working after creation and rebooting does not help: how to fix an error in VPN tunnel setup caused by an unescaped PSK key",
+  "sectionTitle": "VPN tunnel is not working",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "b319a932-ced4-4334-89c3-3aa771c1fcdc"
+}

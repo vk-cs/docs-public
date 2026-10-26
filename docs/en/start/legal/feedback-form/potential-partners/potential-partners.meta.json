@@ -1,0 +1,16 @@
+{
+  "title": "Agreement on Information Cooperation with Potential Partners",
+  "shortDescription": "",
+  "metaDescription": "This agreement is concluded between LLC Digital Cloud and a potential partner who has expressed interest in potentially concluding an agreement with the Company",
+  "sectionTitle": "Agreement on Information Cooperation with Potential Partners",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "261b49d2-e547-4d54-ad63-7fd5da9fcf10",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

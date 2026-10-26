@@ -1,6 +1,6 @@
 Activation of API access is necessary to work with VK Cloud using the public API and additional tools such as OpenStack CLI, Terraform, kubectl and others.
 
-## Activate API access
+## {heading(Activate API access)[id=rest-api-enable-activate]}
 
 1. [Create](/en/access/iam/instructions/service-account-manage#create) a service account if you have not done so already.
 1. Get access to the API if you have not done so already:

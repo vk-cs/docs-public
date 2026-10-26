@@ -1,0 +1,14 @@
+{
+  "title": "WAF and AntiDDoS",
+  "shortDescription": "Special services that will significantly enhance the functionality of your cloud infrastructure in terms of protection, speed, and flexibility",
+  "metaDescription": "Special services that will significantly enhance the functionality of your cloud infrastructure in terms of protection, speed, and flexibility.",
+  "sectionTitle": "WAF and AntiDDoS",
+  "icon": "",
+  "weight": 1,
+  "uuid": "0bc64199-d59d-4118-b7ec-0690b51a941c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

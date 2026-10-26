@@ -1,0 +1,13 @@
+{
+  "title": "Adding a SaaS application",
+  "shortDescription": "Adding a vendor's SaaS application to the Marketplace service",
+  "metaDescription": "Instructions for adding a SaaS application to Marketplace: developing and testing the SaaS broker, uploading the configuration to the broker and deploying the service, testing and publishing the service.",
+  "sectionTitle": "Adding a SaaS application",
+  "weight": 0,
+  "uuid": "d8020a40-add0-4c98-8588-3f19a974f6c1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

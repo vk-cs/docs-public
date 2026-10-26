@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring in Standalone",
+  "shortDescription": "Collecting and viewing metrics in Standalone",
+  "metaDescription": "Learn how to view metrics of deployed Cloud Iceberg Metastore service instances in VK Data Platform Standalone edition",
+  "sectionTitle": "Monitoring in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": "c2f3cbd6-541b-49a7-943c-4aaa94ea9caa"
+}

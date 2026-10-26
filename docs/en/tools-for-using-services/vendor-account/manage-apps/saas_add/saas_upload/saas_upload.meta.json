@@ -1,0 +1,13 @@
+{
+  "title": "Uploading a SaaS application to the store",
+  "shortDescription": "",
+  "metaDescription": "Uploading a SaaS application to the store",
+  "sectionTitle": "Uploading a SaaS application to the store",
+  "weight": 5,
+  "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

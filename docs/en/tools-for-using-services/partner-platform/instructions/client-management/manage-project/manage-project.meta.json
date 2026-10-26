@@ -1,0 +1,14 @@
+{
+  "title": "Managing a client project",
+  "shortDescription": "How to block or unblock a client project on the partner platform",
+  "metaDescription": "How to block or unblock a client project: description of working with a client project in the VK Cloud partner dashboard",
+  "sectionTitle": "Managing a client project",
+  "icon": "",
+  "weight": 2,
+  "uuid": "56f78f7e-77ef-4562-a261-9057c03a16b8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

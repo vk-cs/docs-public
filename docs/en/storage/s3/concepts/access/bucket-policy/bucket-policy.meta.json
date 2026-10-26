@@ -1,0 +1,17 @@
+{
+  "title": "Access policies",
+  "shortDescription": "How access management for VK Object Storage objects works using an access policy (bucket policy)",
+  "metaDescription": "Access policies (bucket policy) for VK Object Storage: creating a bucket-level JSON access policy, what capabilities it provides, principles of permission differentiation, how it interacts with ACL, what types of users (principal) are supported and how to specify them, as well as ready-made configuration examples for typical scenarios.",
+  "sectionTitle": "Access policies",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "8d566fa1-281e-454c-b226-3c763713248f",
+  "createdAt": "",
+  "updatedAt": ""
+}

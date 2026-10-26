@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and tariffication details",
+  "metaDescription": "Cost of the Data Lakehouse service and its tariffication details.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "fb7ae25e-45cd-419e-8d93-9ccab06ef9c4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

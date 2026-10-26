@@ -1,0 +1,14 @@
+{
+  "title": "Bare Metal",
+  "shortDescription": "Dedicated physical servers for resource-intensive tasks",
+  "metaDescription": "Bare Metal dedicated physical servers for resource-intensive tasks and high-load projects. Bare Metal is a separate isolated solution without virtualization for maximum performance, reliability and security.",
+  "sectionTitle": "Bare Metal",
+  "icon": "",
+  "weight": 2,
+  "uuid": "173925e2-de37-40a9-b135-02d0af22d3b9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

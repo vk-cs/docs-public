@@ -1,0 +1,14 @@
+{
+  "title": "How-to guides",
+  "sectionTitle": "How-to guides",
+  "shortDescription": "Advanced configuration and use cases for Bare Metal with other VK Cloud services",
+  "metaDescription": "A collection of advanced guides on using Bare Metal from VK Cloud: detailed instructions for configuring the operating system, software, and integration with other VK Cloud services.",
+  "icon": "",
+  "weight": 6,
+  "uuid": "4062af79-e899-432f-97d7-c72d9ff7502e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

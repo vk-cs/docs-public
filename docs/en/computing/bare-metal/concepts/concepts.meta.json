@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Description of the operating principles and structure of the service",
+  "metaDescription": "Description of the Bare Metal service: how it works, available configurations, how it is implemented in VK Cloud, and what limitations exist.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0a671c3a-7bb4-4775-a0b3-ffb0b3a3976b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

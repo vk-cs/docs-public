@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the CDN Service",
+  "shortDescription": "",
+  "metaDescription": "This document constitutes an offer in accordance with Article 435 of the Civil Code of the Russian Federation (hereinafter referred to as the Offer) for concluding an agreement between VK LLC (125167, Moscow",
+  "sectionTitle": "User Agreement for the CDN Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "a6cdfc8a-04d8-44f1-a9b8-3948a650981b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

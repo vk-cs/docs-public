@@ -1,0 +1,14 @@
+{
+  "title": "Installing and Configuring the WordPress Service",
+  "shortDescription": "Connecting and configuring the WordPress system for website content management",
+  "metaDescription": "Connecting and configuring the WordPress system for website content management",
+  "sectionTitle": "Installing and Configuring the WordPress Service",
+  "icon": "",
+  "weight": 5,
+  "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

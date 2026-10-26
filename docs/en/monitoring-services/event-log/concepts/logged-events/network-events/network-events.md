@@ -472,7 +472,7 @@ Events that the service of [virtual networks](/ru/networks/vnet) reports to Clou
 |A port forwarding rule has been deleted for a Direct Connect network
 
 <!--  anycastips-->
-<!--  !!! Добавить ссылку на "Anycast IP-адрес", когда будет опубликована статья -->
+<!--  !!! Add a link to "Anycast IP address" once the article is published -->
 |`create-anycastips`
 |An Anycast IP address has been created
 

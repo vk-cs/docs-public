@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Kafka",
+  "shortDescription": "",
+  "metaDescription": "Learn which metrics of the Kafka broker, coordinator, JVM, and Kubernetes pod are collected for each deployed instance of the Cloud Kafka service in VK Data Platform",
+  "sectionTitle": "Cloud Kafka",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "673db982-3fec-4dae-a040-1ffa0fc3cd4c"
+}

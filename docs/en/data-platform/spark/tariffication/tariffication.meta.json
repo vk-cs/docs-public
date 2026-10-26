@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service tariffication features and cost calculation",
+  "metaDescription": "Spark: service tariffication features, cost calculation",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "7ebcf532-3965-4514-818f-c0d8dfa04f21"
+}

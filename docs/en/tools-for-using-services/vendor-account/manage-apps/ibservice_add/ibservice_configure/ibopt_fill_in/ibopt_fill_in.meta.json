@@ -1,0 +1,13 @@
+{
+  "title": "Filling in YAML files for tariff options",
+  "shortDescription": "",
+  "metaDescription": "Filling in YAML files for tariff options",
+  "sectionTitle": "Filling in YAML files for tariff options",
+  "weight": 5,
+  "uuid": "beb29a03-20e7-452c-ad1f-3619010fef3b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

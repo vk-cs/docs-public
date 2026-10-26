@@ -1,0 +1,16 @@
+{
+  "title": "Terms of Use of the «Bare Metal» / «Dedicated Server Service»",
+  "shortDescription": "",
+  "metaDescription": "Terms of Use of the «Bare Metal» / «Dedicated Server Service»",
+  "sectionTitle": "Terms of Use of the «Bare Metal» / «Dedicated Server Service»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "eb0915c2-2ea4-4872-92c5-8fd6c76ca1cd"
+}

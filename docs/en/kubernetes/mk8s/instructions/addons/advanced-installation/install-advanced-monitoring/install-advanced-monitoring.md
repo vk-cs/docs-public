@@ -40,7 +40,7 @@
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 
@@ -149,7 +149,7 @@
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 
@@ -190,7 +190,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 
@@ -250,7 +250,7 @@ If the add-on was installed without specifying a temporary password, the passwor
 
 {tabs}
 
-<!--  удалена таба Kubernetes Dashboard. для Headlamp: забрать шаги и k8s с заменой на Headlamp или удалить -->
+<!--  Kubernetes Dashboard tab removed. For Headlamp: take the steps and k8s, replacing with Headlamp, or delete -->
 
 {tab(kubectl)}
 

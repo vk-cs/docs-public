@@ -1,0 +1,18 @@
+{
+  "title": "Managing key pairs",
+  "shortDescription": "Available operations with SSH keys on the platform",
+  "metaDescription": "Available operations with SSH keys on the VK Private Cloud platform.",
+  "sectionTitle": "Managing key pairs",
+  "icon": "",
+  "weight": 2,
+  "uuid": "8ba2b3aa-014e-4970-8b94-e0a4a429640d",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

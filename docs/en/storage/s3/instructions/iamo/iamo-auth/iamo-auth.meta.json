@@ -1,0 +1,16 @@
+{
+  "title": "IAM Only management console login",
+  "shortDescription": "How to sign in to the management console",
+  "metaDescription": "IAM Only — a web interface for VK Object Storage. The article describes authorization in IAM Only: how to open the login page, as well as its specifics and limitations.",
+  "sectionTitle": "IAM Only management console login",
+  "weight": 1,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "295df91f-5a3d-4a8e-9d4b-ccf57543d3f3",
+  "createdAt": "",
+  "updatedAt": ""
+}

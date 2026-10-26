@@ -1,0 +1,14 @@
+{
+  "title": "Using the TLS protocol to connect to PostgreSQL",
+  "shortDescription": "A detailed guide on configuring and using TLS to protect data from unauthorized access",
+  "metaDescription": "Cloud Databases in VK Cloud: using the TLS protocol to connect to PostgreSQL.",
+  "sectionTitle": "Using the TLS protocol to connect to PostgreSQL",
+  "icon": "",
+  "weight": 6,
+  "uuid": "9799a1b4-4704-43c6-b031-cb7faf1393cc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

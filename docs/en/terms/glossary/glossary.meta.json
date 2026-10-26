@@ -1,0 +1,17 @@
+{
+  "title": "Terms and Abbreviations",
+  "shortDescription": "",
+  "metaDescription": "What abbreviations and terms are used in the VK Private Cloud user guide. Their definitions and explanations for a better understanding of the Platform.",
+  "sectionTitle": "Terms and Abbreviations",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "674f336d-3ab0-4e79-a126-cdef6395ced4"
+}

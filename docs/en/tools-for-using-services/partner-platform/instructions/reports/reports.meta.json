@@ -1,0 +1,14 @@
+{
+  "title": "Detailed information and reports",
+  "shortDescription": "How to view detailed information and generate reports on customer expenses and resource consumption",
+  "metaDescription": "How to view detailed information and generate reports on expenses and consumption: a description of working with reports, expenses, and detailed information in the VK Cloud partner dashboard",
+  "sectionTitle": "Detailed information and reports",
+  "icon": "",
+  "weight": 3,
+  "uuid": "12db9c00-8268-4785-b152-1befba3b6ab0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

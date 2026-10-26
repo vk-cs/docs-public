@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the «Reliable Migration» promotion",
+  "shortDescription": "",
+  "metaDescription": "The «Reliable Migration» promotion (hereinafter — the «Promotion») is an event or a set of events aimed at drawing the attention of potential customers to the VK Cloud platform Services",
+  "sectionTitle": "Rules of the «Reliable Migration» promotion",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "uuid": "aa3a395e-5cc6-4cc1-9107-59da35c6beb4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

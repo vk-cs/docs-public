@@ -1,0 +1,17 @@
+{
+  "title": "Istio",
+  "shortDescription": "",
+  "metaDescription": "Learn how to install and configure the Istio addon in VK Private Cloud clusters: different installation types, editing the addon code",
+  "sectionTitle": "Istio",
+  "icon": "",
+  "weight": 9,
+  "uuid": "7a27afdc-c217-4b70-aafc-8645af366f8b",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

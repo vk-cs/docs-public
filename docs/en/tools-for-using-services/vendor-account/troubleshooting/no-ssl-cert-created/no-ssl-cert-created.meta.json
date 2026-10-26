@@ -1,0 +1,14 @@
+{
+  "title": "SSL certificate is not created",
+  "shortDescription": "When deploying an application instance, the SSL certificate is not created on the instance VM",
+  "metaDescription": "Find out why the SSL certificate is not created on the VM of an image-based application instance when it is deployed on the VK Cloud platform Marketplace. Recommendations for diagnosing and resolving the issue",
+  "sectionTitle": "SSL certificate is not created",
+  "icon": "",
+  "weight": 0,
+  "uuid": "aa7b9ce1-a0ff-4d02-ab88-549622c6ebaa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

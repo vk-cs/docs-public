@@ -1,0 +1,22 @@
+{
+  "title": "Support lines",
+  "shortDescription": "Description of L1–L4 support lines and their areas of responsibility",
+  "metaDescription": "A multi-tier technical support model is used to handle requests in VK Cloud",
+  "sectionTitle": "Support lines",
+  "weight": 0,
+  "uuid": "79269c6e-1602-4e77-b246-c35099a418fd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

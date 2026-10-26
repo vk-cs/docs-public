@@ -1,0 +1,16 @@
+{
+  "title": "Cross-origin requests (CORS)",
+  "shortDescription": "Managing cross-origin requests to buckets and objects",
+  "metaDescription": "CORS in VK Object Storage: what cross-origin rules for browser requests to a bucket are, how to set them (via the management console, S3 API/SDK, or AWS CLI), which parameters the configuration includes (AllowedOrigins/Methods/Headers, ExposeHeaders, MaxAgeSeconds, etc.), and how CORS works in practice",
+  "sectionTitle": "Cross-origin requests (CORS)",
+  "icon": "",
+  "weight": 3,
+  "uuid": "38405507-7eaa-469d-a064-c74d471cb74b",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

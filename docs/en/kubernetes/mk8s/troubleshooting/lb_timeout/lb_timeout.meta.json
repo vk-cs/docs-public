@@ -1,0 +1,14 @@
+{
+  "title": "Connection termination in the load balancer",
+  "shortDescription": "What to do if the connection is terminated in a LoadBalancer type Kubernetes service",
+  "metaDescription": "What to do if the connection is terminated in a LoadBalancer type Kubernetes service",
+  "sectionTitle": "Connection termination in the load balancer",
+  "icon": "",
+  "weight": 5,
+  "uuid": "82422a97-c1fc-43bd-9d3a-03288f01be2e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

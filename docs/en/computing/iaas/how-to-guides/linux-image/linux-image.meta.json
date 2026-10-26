@@ -1,0 +1,18 @@
+{
+  "title": "Creating an image using a local VM",
+  "shortDescription": "How to create a VM image with a Linux OS using a local virtual machine",
+  "metaDescription": "How to create a VM image with a Linux OS using a local virtual machine.",
+  "sectionTitle": "Creating an image using a local VM",
+  "weight": 6,
+  "uuid": "6f909d36-bbbd-4aab-ace9-07b827095765",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

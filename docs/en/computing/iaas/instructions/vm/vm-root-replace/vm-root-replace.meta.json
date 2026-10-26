@@ -1,0 +1,19 @@
+{
+  "title": "Replacing a VM root disk",
+  "shortDescription": "How to replace a virtual machine's root disk",
+  "metaDescription": "Replacing a virtual machine's root disk in VK Cloud. Preparing the VM, attaching a new disk, and switching the boot to it.",
+  "sectionTitle": "Replacing a VM root disk",
+  "icon": "",
+  "weight": 7,
+  "uuid": "24ac6d98-1c40-4fd8-b30e-8e7e7c3495f3",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Other documents",
+  "shortDescription": "Documents governing various forms of interaction with potential and existing customers",
+  "metaDescription": "Documents governing various forms of interaction with potential and existing customers",
+  "sectionTitle": "Other documents",
+  "icon": "",
+  "weight": 4,
+  "uuid": "a5d70054-4877-4ed8-99c9-e52162034130",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

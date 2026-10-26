@@ -1,0 +1,18 @@
+{
+  "title": "Enabling Multiqueue",
+  "shortDescription": "How to enable and verify the operation of multiqueue",
+  "metaDescription": "How to enable and verify the operation of multiqueue.",
+  "sectionTitle": "Enabling Multiqueue",
+  "icon": "",
+  "weight": 8,
+  "uuid": "f17a874c-48fd-4d1e-8f31-f13a132e8451",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

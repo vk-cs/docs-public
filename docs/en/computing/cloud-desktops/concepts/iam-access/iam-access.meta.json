@@ -1,0 +1,14 @@
+{
+  "title": "Access Management",
+  "shortDescription": "How IAM in Cloud Desktop distributes access rights among project members",
+  "metaDescription": "Everything about access management using IAM in Cloud Desktop from VK Cloud: how the basic project member roles (owner, administrator, observer) affect access to service components",
+  "sectionTitle": "Access Management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7249968d-57b7-4778-b648-803e37e4dd9d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

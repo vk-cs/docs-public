@@ -1,0 +1,14 @@
+{
+  "title": "Information about clients and their projects",
+  "shortDescription": "How to view the list of clients, detailed information about a client, and the list of their projects",
+  "metaDescription": "How to view the list of clients, detailed information about a client, and the list of their projects: viewing information about clients and their projects in the VK Cloud partner dashboard.",
+  "sectionTitle": "Information about clients and their projects",
+  "icon": "",
+  "weight": 0,
+  "uuid": "337b6a8a-57d4-4f0f-b321-341fc16b7138",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

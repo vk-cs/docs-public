@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Airflow in the Data Lakehouse architecture",
+  "shortDescription": "Purpose and functions of the Cloud Airflow component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the Cloud Airflow component in the Data Lakehouse architecture",
+  "sectionTitle": "Cloud Airflow",
+  "icon": "",
+  "weight": 5,
+  "uuid": "9e4995e7-831e-4131-8430-90c790201087",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

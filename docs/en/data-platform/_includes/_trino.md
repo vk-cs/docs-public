@@ -23,11 +23,11 @@
    - `Oracle DB` — connection to an Oracle database.
    {/ifndef}
    - `Redis` — connection to a Redis database.
-   - `Iceberg c хранением данных на S3 VK Cloud` — connection to {var(s3)} in the same project.
-   - `Iceberg c хранением данных на внешнем S3` — connection to an external S3 object storage.
-   - `Hive Metastore c хранением данных на HDFS` — connection to a Hive Metastore server with HDFS storage.
-   - `Hive Metastore c хранением данных на внешнем S3` — connection to a Hive Metastore server with S3 storage.
-   - `Hive Metastore c хранением данных на VK Cloud S3` — connection to a Hive Metastore server with {ifdef(public)} [VK Object Storage](/ru/storage/s3/concepts/about){/ifdef}{ifndef(public)} {var(s3)}{/ifndef} storage.
+   - `Iceberg with data stored on VK Cloud S3` — connection to {var(s3)} in the same project.
+   - `Iceberg with data stored on external S3` — connection to an external S3 object storage.
+   - `Hive Metastore with data stored on HDFS` — connection to a Hive Metastore server with HDFS storage.
+   - `Hive Metastore with data stored on external S3` — connection to a Hive Metastore server with S3 storage.
+   - `Hive Metastore with data stored on VK Cloud S3` — connection to a Hive Metastore server with {ifdef(public)} [VK Object Storage](/ru/storage/s3/concepts/about){/ifdef}{ifndef(public)} {var(s3)}{/ifndef} storage.
 
 1. Configure the connection parameters for the source:
 

@@ -1,0 +1,14 @@
+{
+  "title": "Terms of Use",
+  "shortDescription": "Public offer, usage rules, interaction policy within technical support, and service privacy policy",
+  "metaDescription": "VK Cloud offer, SLA, usage rules, maintenance policy, and data processing agreement. Full terms of cloud service provision.",
+  "sectionTitle": "Terms of Use",
+  "icon": "",
+  "weight": 1,
+  "uuid": "6152e99d-fb39-4908-a799-f973f1f510aa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

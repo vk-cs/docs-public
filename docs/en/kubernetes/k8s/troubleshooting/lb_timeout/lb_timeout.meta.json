@@ -1,0 +1,14 @@
+{
+  "title": "Connection drop in load balancer",
+  "shortDescription": "What to do if a connection drop occurs in a LoadBalancer-type Kubernetes service",
+  "metaDescription": "What to do if a connection drop occurs in a LoadBalancer-type Kubernetes service",
+  "sectionTitle": "Connection drop in load balancer",
+  "icon": "",
+  "weight": 5,
+  "uuid": "0584bf4a-baa9-4e38-b810-9d49e2d7c3c0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

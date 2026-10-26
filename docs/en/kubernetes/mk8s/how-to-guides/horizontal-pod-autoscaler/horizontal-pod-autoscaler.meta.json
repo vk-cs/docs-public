@@ -1,0 +1,15 @@
+{
+  "title": "Horizontal application scaling",
+  "shortDescription": "How to horizontally scale applications in Kubernetes by CPU, RAM, and custom metrics",
+  "metaDescription": "Guide to configuring HPA in Kubernetes: scaling by CPU, memory, and custom Prometheus metrics with code examples and diagnostics",
+  "hidden": true,
+  "sectionTitle": "Horizontal application scaling",
+  "icon": "",
+  "weight": 30,
+  "uuid": "c208e12b-e3ff-437a-b1ec-56730d0b0bf8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

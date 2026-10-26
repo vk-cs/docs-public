@@ -1,0 +1,14 @@
+{
+  "title": "Certificates, licenses and attestations for Digital Cloud LLC",
+  "shortDescription": "Platform certificates, licenses and attestations for Digital Cloud LLC. Compliance with regulatory documents",
+  "metaDescription": "VK Cloud information security for Digital Cloud LLC: platform certificates, licenses and attestations. Compliance with regulatory documents.",
+  "sectionTitle": "Certificates, licenses and attestations for Digital Cloud LLC",
+  "icon": "",
+  "weight": 1,
+  "uuid": "77fe3f50-6fb7-4062-9551-828c4fa83659",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

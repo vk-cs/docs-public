@@ -1,0 +1,14 @@
+{
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions about the VK Object Storage service",
+  "metaDescription": "VK Object Storage FAQ: answers to common questions about limits, rules, security settings, as well as recommendations for specific cases",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 7,
+  "uuid": "956cf291-bf62-4692-91c1-fc5185e7b6af",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Application Store User Agreement",
+  "shortDescription": "",
+  "metaDescription": "Key agreements, public offers, details for concluding contracts and issuing invoices. Application Store User Agreement",
+  "sectionTitle": "Application Store User Agreement",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "uuid": "34694e4d-473a-4fcb-bc35-0c212393efc6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

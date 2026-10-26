@@ -1,0 +1,14 @@
+{
+  "title": "input/output error in cluster system components",
+  "shortDescription": "What to do if input/output errors appear in the system components of a Kubernetes cluster",
+  "metaDescription": "What to do if input/output errors appear in the system components of a Kubernetes cluster",
+  "sectionTitle": "input/output error in cluster system components",
+  "icon": "",
+  "weight": 4,
+  "uuid": "8e5c98bf-79d9-4182-8fb8-66de422f1601",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

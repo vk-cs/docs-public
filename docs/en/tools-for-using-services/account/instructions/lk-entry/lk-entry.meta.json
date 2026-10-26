@@ -1,0 +1,17 @@
+{
+  "title": "Logging into your management console",
+  "shortDescription": "How to access the {var(cloud)} management console",
+  "metaDescription": "How to access the VK Private Cloud management console",
+  "sectionTitle": "Logging into your management console",
+  "weight": 0,
+  "uuid": "7dc30fae-c1de-40c3-b79d-49ddcf2635d4",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

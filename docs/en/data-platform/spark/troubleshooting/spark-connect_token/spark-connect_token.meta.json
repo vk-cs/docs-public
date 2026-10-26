@@ -1,0 +1,14 @@
+{
+  "title": "Cannot connect to Spark Connect without an authorization token",
+  "shortDescription": "",
+  "metaDescription": "Learn how to obtain an authorization token in Basic Auth format for Spark Connect in the Cloud Spark service of VK Data Platform",
+  "sectionTitle": "Cannot connect to Spark Connect without an authorization token",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "e6074c23-b5eb-4ff5-95ca-b6e0da25bc35"
+}

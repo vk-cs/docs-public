@@ -1,0 +1,15 @@
+{
+  "title": "Notification",
+  "shortDescription": "Managing notification configuration for a bucket",
+  "metaDescription": "Description of methods for getting (GetBucketNotificationConfiguration) and setting (PutBucketNotificationConfiguration) the notification configuration for a bucket in VK Object Storage, as well as a description of the operations available for tracking",
+  "sectionTitle": "Notification",
+  "icon": "",
+  "weight": 6,
+  "uuid": "2301e9f4-f084-4f74-8949-1fd098024c9c",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

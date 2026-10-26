@@ -1,0 +1,17 @@
+{
+  "title": "Configuring log retention time",
+  "shortDescription": "How to configure log retention time for all services at once or individually for each service",
+  "metaDescription": "VK Cloud: how to configure log retention time for all services at once or individually for each service in the Cloud Logging service.",
+  "sectionTitle": "Configuring log retention time",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "041adfc2-e473-451a-b923-2fa8b5639c33"
+}

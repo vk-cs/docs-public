@@ -1,0 +1,14 @@
+{
+  "title": "Deleting a client",
+  "shortDescription": "How to delete a client and all its resources using the {var(cloud)} partner platform",
+  "metaDescription": "How to delete a client and all its resources: deleting a client and all its resources in the VK Cloud partner dashboard",
+  "sectionTitle": "Deleting a client",
+  "icon": "",
+  "weight": 3,
+  "uuid": "5206e336-ff8b-4e22-b4cf-810733ccf17a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

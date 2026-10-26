@@ -1,0 +1,18 @@
+{
+  "title": "Data Storage",
+  "shortDescription": "Data storage options in VK Cloud",
+  "metaDescription": "Data storage options in VK Cloud",
+  "sectionTitle": "Data Storage",
+  "weight": 4,
+  "uuid": "60fe5ddc-1836-4c6f-a969-4b13d6e6536e",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

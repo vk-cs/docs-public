@@ -1,0 +1,14 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Ways to diagnose and resolve issues with Marketplace applications",
+  "metaDescription": "A troubleshooting guide for applications hosted by vendors on the VK Cloud platform Marketplace. Descriptions of common issues and their solutions, diagnostic recommendations",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 8,
+  "uuid": "1bd25e37-a3d4-457d-b2a5-ccfafa18dc8d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

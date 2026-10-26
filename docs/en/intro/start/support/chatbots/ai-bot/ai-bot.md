@@ -4,7 +4,7 @@ The AI consultant works only with public documentation and does not have access 
 
 ## {heading(How to use AI consultant)[id=using_ai_bot]}
 
-1.	Go to the AI consultant via [direct link](https://t.me/vk_cloud_support_bot) or find it in Telegram by searching `@vk_cloud_support_bot` or `ИИ-консультант VK Cloud`.
+1.	Go to the AI consultant via [direct link](https://t.me/vk_cloud_support_bot) or find it in Telegram by searching `@vk_cloud_support_bot` or `AI consultant VK Cloud`.
 
 1.	Ask the bot a question as if you were asking a human. The more detailed you describe what you are interested in, the more accurately the bot can answer.
 

@@ -1,0 +1,16 @@
+{
+  "title": "Slow upload of large files via AWS CLI",
+  "metaDescription": "Solution to the problem of slow file uploads in VK Object Storage. Learn how to speed up data transfer via AWS CLI by optimizing multipart upload parameters",
+  "shortDescription": "How to optimize AWS CLI settings to speed up uploading of large files",
+  "sectionTitle": "Slow upload of large files via AWS CLI",
+  "icon": "",
+  "weight": 10,
+  "uuid": "79955911-c1b3-4e9e-8907-02748156333f",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Vendor account capabilities",
+  "metaDescription": "Description of the Vendor account service capabilities.",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a90ab259-ade2-4dce-a469-304ea75b94e6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

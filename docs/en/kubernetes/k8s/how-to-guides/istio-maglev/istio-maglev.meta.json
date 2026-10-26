@@ -1,0 +1,15 @@
+{
+  "title": "Load balancing with LEAST_REQUEST and MAGLEV algorithms using the Istio add-on",
+  "shortDescription": "How internal balancing algorithms work between pods of a single Kubernetes Service",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Load balancing with LEAST_REQUEST and MAGLEV algorithms",
+  "icon": "",
+  "weight": 50,
+  "uuid": "ff97bcfb-322c-4fd2-82b9-556a92871b9d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

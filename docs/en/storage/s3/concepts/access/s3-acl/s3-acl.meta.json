@@ -1,0 +1,16 @@
+{
+  "title": "Access Control List (ACL)",
+  "shortDescription": "Access management via lists of grantees for each bucket and object",
+  "metaDescription": "ACL in VK Object Storage: what access control lists for buckets and objects are, how and when they are assigned (at creation or modification), who can be a grantee (owner, other accounts/users, predefined groups), what types of permissions are supported, and how to apply predefined ACLs in typical scenarios.",
+  "sectionTitle": "Access Control List (ACL)",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fc9c5f2a-4c5f-4850-b387-58d8239792b7",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "A VM backup is not created when information security tools are used",
+  "shortDescription": "How to restore VM backup operation when antivirus and DLP systems are used and fix the causes of failures",
+  "metaDescription": "Why VM backup does not work when information security tools are used: possible causes of failures",
+  "sectionTitle": "A VM backup is not created when information security tools are used",
+  "icon": "",
+  "weight": 2,
+  "uuid": "df771b52-12a0-4833-89ac-cfb29a031aa7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

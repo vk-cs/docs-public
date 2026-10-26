@@ -22,8 +22,7 @@ It will, if you use {linkto(../../../networks/vnet/concepts/net-types#vnet-net-t
 
 {cut(How do I move a port from one VM to another?)}
 
-1. {linkto(../../../networks/vnet/instructions/ports#vnet-ports-off)[text=Disable]} the port on the first virtual machine.
-1. {linkto(../../../networks/vnet/instructions/ports#vnet-ports-on)[text=Enable]} the port on the second virtual machine.
+To move a port from one VM to another:
 
 {/cut}
 
@@ -75,11 +74,11 @@ Create additional ports in the subnet, attach them to the VM, and bind a separat
 
 {cut(Is it possible to choose a specific IP address range if there is no way to allow multiple IP zones at once?)}
 
-Choosing a specific range or subnet for a public IP (floating IP) is not supported. The address is assigned randomly from the available pool. To implement whitelists on your side, it is recommended to use a VPN tunnel or a dedicated connection to interact via a stable internal IP.
+Selecting a specific range or subnet for a public IP (Floating IP) is not provided in the interface. The address is assigned randomly from the available pool. To implement allowlists on your side, it is recommended to use a VPN tunnel or a dedicated connection to interact via a stable internal IP
 
 {/cut}
 
-{cut(How do I get a quota for an external IP address?)}
+{cut(Can the advanced router be managed via OpenStack CLI?)}
 
 By default, a project has no available external IP address quotas, and they cannot be increased via [technical support](mailto:support@mcs.mail.ru).
 

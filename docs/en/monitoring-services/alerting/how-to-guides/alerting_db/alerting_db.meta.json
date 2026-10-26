@@ -1,0 +1,16 @@
+{
+  "title": "Setting up notifications about PostgreSQL database metric changes",
+  "shortDescription": "How to set up monitoring of PostgreSQL database metrics and notifications about their changes to maintain stable operation of cloud applications",
+  "metaDescription": "How to set up monitoring of PostgreSQL database metrics and notifications about their changes to maintain stable operation of cloud applications",
+  "sectionTitle": "Setting up notifications about PostgreSQL database metric changes",
+  "icon": "",
+  "weight": 1,
+  "uuid": "9da3519d-ae04-4198-a915-e5290b6de41d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

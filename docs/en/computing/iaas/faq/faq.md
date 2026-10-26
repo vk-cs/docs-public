@@ -146,7 +146,7 @@ Billing iteration occurs once an hour — during this time, the calculation of t
 
 {cut(Can I set a floating IP address for a VM?)}
 
-You can [assign an existing](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) address manually.
+You can [assign an existing](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-associate) floating IP address to the VM, or [add a new](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) address manually.
 
 {note:warn}
 

@@ -1,0 +1,14 @@
+{
+  "title": "VK Object Storage in the Data Lakehouse architecture",
+  "shortDescription": "Purpose and functions of the VK Object Storage component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the VK Object Storage component in the Data Lakehouse architecture",
+  "sectionTitle": "VK Object Storage",
+  "icon": "",
+  "weight": 1,
+  "uuid": "934bf4e1-ef60-4db0-bb23-3943dca290d6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

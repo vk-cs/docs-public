@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Structure and main tools of the {var(cloud)} partner platform",
+  "metaDescription": "Structure and main tools of the VK Cloud partner platform: description of the VK Cloud partner management console and the partner's client management console",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "663ea9a4-61c5-414e-a023-bd34614523de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

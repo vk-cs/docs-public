@@ -1,0 +1,14 @@
+{
+  "title": "Resource records",
+  "shortDescription": "Creating, editing, and deleting DNS zone resource records",
+  "metaDescription": "A resource record is a DNS record of a domain in the domain name system. Using them, you determine where to direct requests coming to domain names, and also provide additional information about the domain",
+  "sectionTitle": "Resource records",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "c83d3bb0-e63c-4228-8ff3-161e70a99643"
+}

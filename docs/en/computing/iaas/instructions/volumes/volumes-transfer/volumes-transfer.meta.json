@@ -1,0 +1,14 @@
+{
+  "title": "Moving a disk between projects",
+  "shortDescription": "How to move a disk to another project",
+  "metaDescription": "Moving a disk between projects in VK Cloud using OpenStack CLI. Transferring a disk to another project for resource sharing.",
+  "sectionTitle": "Moving a disk between projects",
+  "icon": "",
+  "weight": 7,
+  "uuid": "75feca45-f780-4772-a7da-14c729709f17",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

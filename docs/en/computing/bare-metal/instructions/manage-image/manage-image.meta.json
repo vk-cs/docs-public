@@ -1,0 +1,14 @@
+{
+  "title": "Working with ISO images",
+  "shortDescription": "How to upload your own ISO image",
+  "metaDescription": "How to work with custom images: preparing, uploading, and using your own OS images in VK Cloud storage for subsequent deployment on Bare Metal servers.",
+  "sectionTitle": "Working with ISO images",
+  "icon": "",
+  "weight": 4,
+  "uuid": "5cd60659-a608-436a-93b5-90760e1c2280",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

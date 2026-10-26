@@ -1,0 +1,19 @@
+{
+  "title": "Object and Bucket Management Features",
+  "shortDescription": "Standard and multipart upload, object copying, and other service features",
+  "metaDescription": "VK Object Storage data management features: standard and multipart upload with size limits and multipart advantages, object copying (within a bucket and between buckets), bucket event notifications (upload, deletion, copying, etc.), object tagging, and the use of the S3 API",
+  "sectionTitle": "Object and Bucket Management Features",
+  "icon": "",
+  "weight": 1,
+  "uuid": "0c41b43a-7fcd-45f9-9f85-4d3e1447eaca",
+  "additionalUuids": [
+    "4801a6f5-5a82-4c45-81d4-5cada60392ab"
+  ],
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

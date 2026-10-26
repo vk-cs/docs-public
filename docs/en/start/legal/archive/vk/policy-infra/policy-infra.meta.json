@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Infra» service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «VK» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Infra» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "caad3052-54ae-4f03-ad2e-5aefa6d6fb54",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

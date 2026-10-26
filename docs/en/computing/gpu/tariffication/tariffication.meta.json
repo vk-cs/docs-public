@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Features of service tariffication and cost calculation",
+  "metaDescription": "Features of Cloud GPU service tariffication, cost calculation.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 5,
+  "uuid": "d496d724-38c8-44b2-b005-1d2f5a6ebc53",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

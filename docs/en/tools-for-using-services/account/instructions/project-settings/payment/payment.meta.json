@@ -1,0 +1,18 @@
+{
+  "title": "Viewing project balance",
+  "shortDescription": "How to view the project balance",
+  "metaDescription": "VK Cloud: how to view the project balance",
+  "sectionTitle": "Viewing project balance",
+  "icon": "",
+  "weight": 7,
+  "uuid": "3973ff36-d87e-45bc-9c76-8b4aaa084415",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

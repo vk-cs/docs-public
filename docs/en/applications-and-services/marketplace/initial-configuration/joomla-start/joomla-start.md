@@ -22,7 +22,7 @@ To deploy Joomla service in the VK Cloud project:
 1. Go to **Marketplace**, on the section page, click **All Solutions**.
 1. On the **Joomla** service card, click **Details**.
 1. On the service description page, click **Connect**.
-1. Enter the details on the **Параметры сервера** page.
+1. Enter the details on the **Server parameters** page.
     1. Specify how the Joomla service will be hosted:
 
         - `external` — with an external IP address and name in the `*.xaas.msk.bizmrg.com` domain. Select this placement type to access the VM with deployed Joomla service from the internet.
@@ -31,7 +31,7 @@ To deploy Joomla service in the VK Cloud project:
     1. Enable monitoring to automatically send metrics of the virtual machine on which the Joomla service is deployed to the [Cloud Monitoring](/en/monitoring-services/monitoring) service. These metrics will be available in the **Monitoring** section of the management console.
     1. Specify the parameters of the virtual machine on which the service instance will be deployed:
 
-        - **Сеть**: select the network where the VM with the deployed service will be hosted. If the `external` type is specified for Joomla deployment, select the network with internet access and subnet for which the **Private DNS** option is disabled.
+        - **Network**: select the network where the VM with the deployed service will be hosted. If the `external` type is specified for Joomla deployment, select the network with internet access and subnet for which the **Private DNS** option is disabled.
         - **Availability Zone**: select the [data center](/en/intro/start/concepts/architecture#architecture-az), where the VM will run.
         - **Type of virtual machine**: select [pre-installed VM configuration](/en/computing/iaas/concepts/about#flavors).
 
@@ -43,10 +43,10 @@ To deploy Joomla service in the VK Cloud project:
     1. Click the **Next step** button.
     1. Specify the Joomla initialization parameters:
 
-        - **Заголовок сайта**: specify a name for your site.
-        - **Имя администратора Joomla**: set the login of the site administrator. Use only Latin letters, numbers, spaces, and special characters `-`, `_`, `.`, `@`.
+        - **Site title**: specify a name for your site.
+        - **Joomla administrator name**: set the login of the site administrator. Use only Latin letters, numbers, spaces, and special characters `-`, `_`, `.`, `@`.
      
-    1. **Включить резервное копирование на S3**: enable the option to back up Joomla data to VK Cloud [object storage](/en/storage/s3/concepts/about) on a daily basis. The storage is created automatically. The last 7 copies are saved.
+    1. **Enable backup to S3**: enable the option to back up Joomla data to VK Cloud [object storage](/en/storage/s3/concepts/about) on a daily basis. The storage is created automatically. The last 7 copies are saved.
     
 1. Click the **Next step** button.
 

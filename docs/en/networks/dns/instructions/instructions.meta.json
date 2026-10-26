@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "How to perform basic operations in the service",
+  "metaDescription": "Step-by-step instructions for VK Cloud DNS: brief instructions for performing basic operations in the service.",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 2,
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "849d8b84-ecc7-4c93-a8a6-737ac273798b"
+}

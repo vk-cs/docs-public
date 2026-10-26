@@ -1,0 +1,16 @@
+{
+  "title": "Access via signed URL",
+  "shortDescription": "Providing access to a bucket or object using a signed URL",
+  "metaDescription": "Presigned URL (signed links) in VK Object Storage: what they are for (temporary access to objects without issuing keys), how link-based access works and its features, as well as the parameters specified during generation: bucket and key names, HTTP headers, expiration time, etc.",
+  "sectionTitle": "Access via signed URL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "c9c1df39-8069-40db-be1f-4e4b4bf76579",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

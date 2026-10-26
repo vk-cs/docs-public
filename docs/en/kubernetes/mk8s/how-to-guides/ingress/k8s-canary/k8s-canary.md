@@ -101,7 +101,7 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
    kubectl apply -f http-svc.ingress.canary -n echo-canary
    ```
 
-<!-- раскомментировать только с заменой Kubernetes Dashboard на Headlamp и заменить соответствующие шаги проверки
+<!-- uncomment only after replacing Kubernetes Dashboard with Headlamp and updating the corresponding verification steps
 
 ## {counter(canary)}. Check the performance of traffic distribution
 

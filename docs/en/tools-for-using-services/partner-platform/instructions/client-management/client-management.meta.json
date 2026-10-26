@@ -1,0 +1,14 @@
+{
+  "title": "Managing clients and their projects",
+  "shortDescription": "How to view information about clients and their projects and manage clients' projects",
+  "metaDescription": "Managing clients and their projects on the VK Cloud partner platform",
+  "sectionTitle": "Managing clients and their projects",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f91a598c-54bc-45d0-8893-c9278552cdb0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

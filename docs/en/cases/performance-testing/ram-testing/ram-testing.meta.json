@@ -1,0 +1,23 @@
+{
+  "title": "How to Test RAM",
+  "shortDescription": "Instructions for testing RAM performance",
+  "metaDescription": "Instructions for testing RAM performance",
+  "sectionTitle": "How to Test RAM",
+  "icon": "",
+  "weight": 3,
+  "uuid": "bb5bf8f7-5fd3-46eb-8fa1-29a151320bb0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

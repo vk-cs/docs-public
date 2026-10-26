@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Description of the Bare Metal service capabilities in VK Cloud and examples of tasks that can be solved with its help",
+  "metaDescription": "Bare Metal from VK Cloud is dedicated physical server rental. The service provides maximum performance for high-load systems and high data security",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "8ab7a899-a591-4311-9d04-3aab04606dff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Legal Documents of Digital Cloud LLC",
+  "shortDescription": "Agreements and documents valid until August 31, 2026",
+  "metaDescription": "Agreements and documents valid until August 31, 2026",
+  "sectionTitle": "Legal Documents of Digital Cloud LLC",
+  "icon": "",
+  "weight": 6,
+  "uuid": "b2c50ffe-88b4-4b84-b937-d496aac45810",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

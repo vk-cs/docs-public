@@ -1,0 +1,14 @@
+{
+  "title": "Connecting ClickHouse as an analytical DB",
+  "shortDescription": "How to deploy a ClickHouse service instance as an analytical DB for the Data Lakehouse service",
+  "metaDescription": "How to deploy a ClickHouse service instance.",
+  "sectionTitle": "Connecting an analytical DB",
+  "icon": "",
+  "weight": 1,
+  "uuid": "5dd21c0a-7a97-47d0-945f-4d445911f6cd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

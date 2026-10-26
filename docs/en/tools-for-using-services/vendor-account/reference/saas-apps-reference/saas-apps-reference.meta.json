@@ -1,0 +1,13 @@
+{
+  "title": "Reference guide for working with SaaS applications",
+  "shortDescription": "Reference information on adding SaaS applications to Marketplace and updating them",
+  "metaDescription": "Reference information on adding SaaS applications to Marketplace and updating them. Basic application configuration parameters. Tariff plan and option parameters. Page display parameters and pricing settings in the application connection wizard.",
+  "sectionTitle": "Reference guide for working with SaaS applications",
+  "weight": 2,
+  "uuid": "53902466-ffe4-4ff4-a70a-7d9c426f8d2a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

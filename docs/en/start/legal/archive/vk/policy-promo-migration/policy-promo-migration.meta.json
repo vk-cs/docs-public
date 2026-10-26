@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the promotion “Migrate to the VK Cloud cloud platform for free”",
+  "shortDescription": "",
+  "metaDescription": "The promotion is designed to attract consumer attention to the platform's Services and increase the recognition of VK Cloud products",
+  "sectionTitle": "Rules of the promotion “Migrate to the VK Cloud cloud platform for free”",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 16,
+  "uuid": "d8a2b4c5-7966-45e4-b38c-1b11187472e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

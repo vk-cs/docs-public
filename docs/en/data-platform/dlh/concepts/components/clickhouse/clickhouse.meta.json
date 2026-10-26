@@ -1,0 +1,14 @@
+{
+  "title": "ClickHouse in the Data Lakehouse Architecture",
+  "shortDescription": "Purpose and functions of the ClickHouse component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the ClickHouse component in the Data Lakehouse architecture",
+  "sectionTitle": "ClickHouse",
+  "icon": "",
+  "weight": 6,
+  "uuid": "1d706c14-fdb4-4289-b9df-1dd5f6146cfb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

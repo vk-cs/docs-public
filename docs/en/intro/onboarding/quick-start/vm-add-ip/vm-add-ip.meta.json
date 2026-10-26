@@ -1,0 +1,15 @@
+{
+  "title": "Assign a static public IP address to the virtual machine",
+  "shortDescription": "Connect an external network to the virtual machine and configure the network interface in its operating system",
+  "metaDescription": "Connect an external network to the virtual machine and configure the network interface in its operating system",
+  "sectionTitle": "Assign a static public IP address to the virtual machine",
+  "icon": "",
+  "hidden": true,
+  "weight": 11,
+  "uuid": "5079d64c-f557-40d2-a590-20479b60d412",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

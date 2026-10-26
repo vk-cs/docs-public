@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to {var(cloud)} via the Cloud Direct Connect network",
+  "shortDescription": "How to organize data transfer between On-premises infrastructure and the {var(cloud)} platform using a dedicated connection and an advanced router",
+  "metaDescription": "How to organize data transfer between On-premises infrastructure and the VK Cloud platform using a dedicated connection and an advanced router",
+  "sectionTitle": "Connecting to {var(cloud)} via the Cloud Direct Connect network",
+  "icon": "",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "51e0c0df-b6f7-4203-a608-9b9e9fc11eb9"
+}

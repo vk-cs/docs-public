@@ -1,0 +1,23 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "Cloud Iceberg Metastore in VK Cloud: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 3,
+  "uuid": "de7afdbf-13e6-470d-9ada-bf1c42624635",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

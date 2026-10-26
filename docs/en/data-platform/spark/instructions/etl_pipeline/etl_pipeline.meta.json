@@ -1,0 +1,14 @@
+{
+  "title": "Creating an ETL pipeline for processing CSV files from S3 into Cloud Iceberg Metastore",
+  "shortDescription": "How to create an ETL pipeline for processing CSV files from S3 into Cloud Iceberg Metastore",
+  "metaDescription": "Learn how to create an ETL pipeline in VK Data Platform for processing CSV files from S3 into Cloud Iceberg Metastore using Cloud Spark",
+  "sectionTitle": "Creating an ETL pipeline for processing CSV files from S3 into Cloud Iceberg Metastore",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "165f4d1a-b11f-409f-adb2-a073568fc62e"
+}

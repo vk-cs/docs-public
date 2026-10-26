@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Infra» Service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «Digital Cloud» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Infra» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "8dda24c3-44fe-4b27-9561-6a587b1c7904",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

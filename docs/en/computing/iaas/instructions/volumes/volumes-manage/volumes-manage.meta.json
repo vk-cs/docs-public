@@ -1,0 +1,19 @@
+{
+  "title": "Volume Management",
+  "shortDescription": "How to manage volumes, increase volume size, change its type, or make a volume bootable",
+  "metaDescription": "",
+  "sectionTitle": "Volume Management",
+  "icon": "",
+  "weight": 3,
+  "uuid": "7807031a-32a5-4fb9-9e0f-965f8993b16b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "User Access Management",
+  "shortDescription": "Configuring access permissions for Cloud Trino users",
+  "metaDescription": "How to use the role-based access control model (RBAC) to configure Cloud Trino user permissions for adding, editing, and deleting access rules for catalogs, schemas, and tables.",
+  "sectionTitle": "User Access Management",
+  "icon": "",
+  "weight": 3,
+  "uuid": "e795e4ff-712a-48af-9cfe-12cf634fbbf5",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

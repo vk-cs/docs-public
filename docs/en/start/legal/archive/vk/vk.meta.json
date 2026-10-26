@@ -1,0 +1,14 @@
+{
+  "title": "Legal Documents of VK LLC",
+  "shortDescription": "Agreements and documents valid until August 31, 2026 for clients having a separate valid agreement for the use of the VK Cloud platform and services, concluded with VK LLC in the form of a single document",
+  "metaDescription": "Agreements and documents valid until August 31, 2026 for clients having a separate valid agreement for the use of the VK Cloud platform and services, concluded with VK LLC in the form of a single document",
+  "sectionTitle": "Legal Documents of VK LLC",
+  "icon": "",
+  "weight": 7,
+  "uuid": "f11afe21-b7c3-42be-9bd1-ce8227332c7d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

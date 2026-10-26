@@ -1,0 +1,24 @@
+{
+  "title": "Partner Software Certification",
+  "shortDescription": "How to certify the technological compatibility of your software with the VK cloud ecosystem",
+  "metaDescription": "Procedure for certifying the technological compatibility of partner software with the VK cloud ecosystem",
+  "sectionTitle": "Partner Software Certification",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 4,
+  "uuid": "6685671c-e71f-4695-8c0a-f85bcdc09341",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

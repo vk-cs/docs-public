@@ -1,0 +1,14 @@
+{
+  "title": "Access management",
+  "shortDescription": "How IAM distributes access rights between project members in Cloud Kafka, examples of role models",
+  "metaDescription": "Learn how access control between project members is configured in the VK Cloud Cloud Kafka service using IAM: the impact of basic roles on access to service components and examples of role models with individual permissions.",
+  "sectionTitle": "Access management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a3ac1ab8-fc00-4e6e-909e-a53fb147285d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

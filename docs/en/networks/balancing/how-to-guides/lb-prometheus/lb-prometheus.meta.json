@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring load balancers with Prometheus",
+  "shortDescription": "How to set up metric collection from a load balancer using the Prometheus plugin and visualization using Grafana",
+  "metaDescription": "Monitoring VK Cloud load balancers with Prometheus: how to set up metric collection from a load balancer using the Prometheus plugin and visualization using Grafana",
+  "sectionTitle": "Monitoring load balancers with Prometheus",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "c37ab9c8-5782-43f6-8279-b42f65f73b52"
+}

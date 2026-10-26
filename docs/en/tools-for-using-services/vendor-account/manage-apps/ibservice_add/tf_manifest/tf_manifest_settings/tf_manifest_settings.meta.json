@@ -1,0 +1,13 @@
+{
+  "title": "settings.yaml file",
+  "shortDescription": "",
+  "metaDescription": "settings.yaml file",
+  "sectionTitle": "settings.yaml file",
+  "weight": 1,
+  "uuid": "8987cf7f-ddc4-4d22-b950-567678bbacc6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

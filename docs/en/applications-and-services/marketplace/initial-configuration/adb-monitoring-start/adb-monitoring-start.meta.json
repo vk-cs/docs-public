@@ -1,0 +1,14 @@
+{
+  "title": "Installation and configuration of the Monitoring service for Arenadata DB",
+  "shortDescription": "Connecting and configuring the Arenadata database monitoring system in {var(cloud)}",
+  "metaDescription": "Connecting and configuring the Arenadata database monitoring system in VK Cloud",
+  "sectionTitle": "Installation and configuration of the Monitoring service for Arenadata DB",
+  "icon": "",
+  "weight": 8,
+  "uuid": "e1e0656b-1ec9-4bf3-9b00-e7fc34300c05",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

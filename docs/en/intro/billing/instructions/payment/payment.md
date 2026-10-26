@@ -41,7 +41,7 @@ To make a payment:
    - **Bank card**: to add a new payment method via:
    
       - A new card.
-      - The Faster Payments System (FPS). You can link this method to your project by setting the **Сохранить для оплаты** checkbox.
+      - The Faster Payments System (FPS). You can link this method to your project by setting the **Save for payment** checkbox.
 
          {note:info}
          To disconnect payments via the FPS from your project, contact [technical support](mailto:support@mcs.mail.ru).

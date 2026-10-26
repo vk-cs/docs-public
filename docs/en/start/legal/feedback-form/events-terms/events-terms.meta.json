@@ -1,0 +1,16 @@
+{
+  "title": "Agreement for the provision of services for organizing participation in events",
+  "shortDescription": "",
+  "metaDescription": "Agreement for the provision of services for organizing participation in events as of 01.02.2025",
+  "sectionTitle": "Agreement for the provision of services for organizing participation in events",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "b685243c-b86c-458c-bd3b-bbdadad36eb2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

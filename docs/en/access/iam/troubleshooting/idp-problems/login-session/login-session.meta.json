@@ -1,0 +1,14 @@
+{
+  "title": "Expired session",
+  "shortDescription": "When attempting to log in via an identity federation, a message about an expired session appears",
+  "metaDescription": "Solutions to known issues with identity federation configuration: when attempting to log in via an identity federation, a message about an expired session appears",
+  "sectionTitle": "Expired session",
+  "icon": "",
+  "weight": 1,
+  "uuid": "00d485fc-6da9-416b-b4a5-c942851cc3c3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

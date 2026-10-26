@@ -1,0 +1,14 @@
+{
+  "title": "Error when working with the spark-submit script",
+  "shortDescription": "",
+  "metaDescription": "Learn why an error occurs when working with the spark-submit script in Cloud Spark in VK Data Platform and how to fix it",
+  "sectionTitle": "Error when working with the spark-submit script",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "d414c90e-4668-4293-b98c-a06940b2524a"
+}

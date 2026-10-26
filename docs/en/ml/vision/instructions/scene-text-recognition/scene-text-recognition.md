@@ -70,7 +70,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
+curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<your token>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \
  -F "file=@image3.jpg" \

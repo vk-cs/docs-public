@@ -1,0 +1,14 @@
+{
+  "title": "Spark Version",
+  "shortDescription": "Current version and features of Apache Spark in Cloud Spark",
+  "metaDescription": "Current version of Apache Spark in Cloud Spark VK Data Platform and available features: Spark Connect, Iceberg, S3, Sparkjobs",
+  "sectionTitle": "Spark Version",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "1254f8b9-adef-4f80-9469-bff5ee12eb3a"
+}

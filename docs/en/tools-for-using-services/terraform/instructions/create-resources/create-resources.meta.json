@@ -1,0 +1,18 @@
+{
+  "title": "Creating resources",
+  "shortDescription": "How to create resources using Terraform",
+  "metaDescription": "How to create resources using the VK Cloud Terraform provider. Working with Terraform: creating resources and updating the provider.",
+  "sectionTitle": "Creating resources",
+  "icon": "",
+  "weight": 0,
+  "uuid": "77ef97c8-fe4a-4920-a652-9bee56c0eb48",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

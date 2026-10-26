@@ -1,0 +1,16 @@
+{
+  "title": "File upload via SDK does not work",
+  "shortDescription": "What to do if file upload via the Python SDK does not work",
+  "metaDescription": "What to do if file upload via the Python SDK does not work",
+  "sectionTitle": "File upload via SDK does not work",
+  "icon": "",
+  "weight": 2,
+  "uuid": "4fa548d3-f8c5-409d-b712-cd7e82b771df",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

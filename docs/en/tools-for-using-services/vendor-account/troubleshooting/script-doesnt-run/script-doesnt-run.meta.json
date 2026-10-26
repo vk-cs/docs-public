@@ -1,0 +1,14 @@
+{
+  "title": "Script does not run after SSL certificate update",
+  "shortDescription": "On the VM of an image-based application instance, the pre-specified script does not run after the SSL certificate update",
+  "metaDescription": "Finding the reason why the script specified in the ivkcs_cert resource description does not run on the VM of an image-based application instance after the SSL certificate update. Recommendations for diagnosing and resolving the issue",
+  "sectionTitle": "Script does not run after SSL certificate update",
+  "icon": "",
+  "weight": 2,
+  "uuid": "c706eed6-ed07-4d87-a0c1-49ac5ea56e56",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

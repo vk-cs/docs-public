@@ -59,7 +59,7 @@ If the **Configuring monitoring** tab is missing:
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
       -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
-      -Headers @{'X-Auth-Token' = '<токен доступа X-Subject-Token>'} `
+      -Headers @{'X-Auth-Token' = '<access token X-Subject-Token>'} `
       -Body $params | Select-Object -Expand Content
       ```
 

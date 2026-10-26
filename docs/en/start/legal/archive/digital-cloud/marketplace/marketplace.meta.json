@@ -1,0 +1,16 @@
+{
+  "title": "«Application Marketplace» User Agreement",
+  "shortDescription": "",
+  "metaDescription": "Key agreements, public offers, details for concluding contracts and issuing invoices. «Application Marketplace» User Agreement",
+  "sectionTitle": "«Application Marketplace» User Agreement",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "uuid": "502436bc-1baa-4712-8a00-4d839852ff0e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

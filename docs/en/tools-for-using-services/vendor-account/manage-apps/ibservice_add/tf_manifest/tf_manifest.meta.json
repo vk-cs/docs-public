@@ -1,0 +1,13 @@
+{
+  "title": "Image-based application infrastructure configuration",
+  "shortDescription": "",
+  "metaDescription": "Image-based application infrastructure configuration",
+  "sectionTitle": "Image-based application infrastructure configuration",
+  "weight": 5,
+  "uuid": "f8034592-6eb5-495b-bd9d-6a2fd03a1bf6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

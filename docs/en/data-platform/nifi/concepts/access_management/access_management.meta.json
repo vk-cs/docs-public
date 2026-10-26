@@ -1,0 +1,15 @@
+{
+  "title": "Access management in VK Private Cloud",
+  "shortDescription": "How access rights are distributed between project members in NiFi, examples of role models",
+  "metaDescription": "Learn how access rights are distributed between project members in the VK Data Platform NiFi service: the impact of basic roles and examples of role models with separate permissions.",
+  "sectionTitle": "Access management in VK Private Cloud",
+  "icon": "",
+  "weight": 4,
+  "uuid": "9f558e92-d2c6-4b23-80af-03d70d00513c",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

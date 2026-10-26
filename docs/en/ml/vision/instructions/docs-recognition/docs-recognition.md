@@ -43,7 +43,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
@@ -71,8 +71,8 @@ curl -X 'POST' \
             "10.04.1990"
           ],
           "birthplace": [
-            "ГОР.",
-            "МОСКВА"
+            "CITY",
+            "MOSCOW"
           ],
           "code_of_issue": [
             "459-653"
@@ -81,31 +81,31 @@ curl -X 'POST' \
             "11.11.1995"
           ],
           "first_name": [
-            "ФОМА"
+            "FOMA"
           ],
           "last_name": [
-            "КИНЯЕВ"
+            "KINYAEV"
           ],
           "middle_name": [
-            "СЕМЕНОВИЧ"
+            "SEMENOVICH"
           ],
           "number": [
             "233675"
           ],
           "place_of_issue": [
-            "ГОРОДА",
-            "МОСКВЫ",
-            "ОДИНЦОВСКОГО",
-            "РАЙОНА",
-            "ОТДЕЛОМ",
-            "ВНУТРЕННИХ",
-            "ДЕЛ"
+            "CITY",
+            "MOSCOW",
+            "ODINTSOVSKY",
+            "DISTRICT",
+            "DEPARTMENT",
+            "INTERNAL",
+            "AFFAIRS"
           ],
           "series_number": [
             "560Р"
           ],
           "sex": [
-            "МУЖ."
+            "MALE"
           ]
         }
       }
@@ -124,7 +124,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@docs_recognize_not_doc.jpg;type=image/jpeg' \
@@ -162,7 +162,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -192,7 +192,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \

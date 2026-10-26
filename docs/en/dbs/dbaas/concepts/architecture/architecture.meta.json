@@ -1,7 +1,7 @@
 {
   "title": "Service architecture",
   "shortDescription": "",
-  "metaDescription": "В упрощённом виде архитектура DBaaS (база данных как сервис) представлена на картинке ниже: В панели управления VK Cloud разворачивается виртуальная машина или",
+  "metaDescription": "In simplified form, the DBaaS (database as a service) architecture is shown in the picture below: In the VK Cloud control panel, a virtual machine or",
   "sectionTitle": "Service architecture",
   "icon": "",
   "weight": 1,

@@ -1,0 +1,14 @@
+{
+  "title": "Working with Spark jobs",
+  "shortDescription": "",
+  "metaDescription": "List of Cloud ML Platform library methods for working with Spark jobs.",
+  "sectionTitle": "Working with Spark jobs",
+  "icon": "",
+  "weight": 3,
+  "uuid": "1ce1a0a1-2b23-40e3-999e-460ffa2fc3dd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "How to manage a service instance in a project",
+  "metaDescription": "Learn how to manage PostgreSQL service instances in VK Data Platform: view component statuses, perform scaling, work with extensions, and more.",
+  "sectionTitle": "Working with a service instance",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "c2fa973b-24bb-45b3-a050-521d1284041e"
+}

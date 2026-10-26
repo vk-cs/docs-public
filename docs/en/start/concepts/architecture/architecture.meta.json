@@ -1,0 +1,17 @@
+{
+  "title": "{var(cloud)} Architecture",
+  "shortDescription": "List of {var(cloud)} components and services, security and fault tolerance mechanisms",
+  "metaDescription": "Description of VK Cloud architecture, platform security and fault tolerance, migration to VK Cloud.",
+  "sectionTitle": "{var(cloud)} Architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "767e44a6-d657-4d6f-8db0-e22f0700f208",
+  "additionalUuids": [
+    "668da823-819b-4ae9-8842-8459dc790be9"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

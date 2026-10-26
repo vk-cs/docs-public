@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for the «Vision» Program",
+  "shortDescription": "",
+  "metaDescription": "This License Agreement (hereinafter the «Agreement») governs the relations between LLC «Digital Cloud», hereinafter referred to as the «Licensor», and You",
+  "sectionTitle": "License Agreement for the «Vision» Program",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "3c5d065f-bfe9-462e-96a1-04875248f6be",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

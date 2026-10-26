@@ -1,0 +1,12 @@
+{
+  "title": "Changelog",
+  "shortDescription": "",
+  "metaDescription": "Changelog",
+  "sectionTitle": "Changelog",
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "0667d811-2c02-450b-a1a1-46c1442ed0de"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Service requirements",
+  "shortDescription": "Requirements for services hosted on the {var(cloud)} platform",
+  "metaDescription": "Requirements for services hosted on the VK Cloud platform",
+  "sectionTitle": "Service requirements",
+  "weight": 2,
+  "uuid": "e0c7ee72-7250-4598-82c2-db92b4b2cb17",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

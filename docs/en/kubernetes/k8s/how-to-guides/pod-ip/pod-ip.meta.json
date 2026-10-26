@@ -1,0 +1,15 @@
+{
+  "title": "Public IP for a pod without a load balancer",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Public IP for a pod without a load balancer",
+  "icon": "",
+  "weight": 50,
+  "uuid": "86ba22ed-dd81-4750-bd67-44195dd09e10",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

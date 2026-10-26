@@ -1,0 +1,14 @@
+{
+  "title": "Migration using Hystax",
+  "shortDescription": "How to migrate customer infrastructure to the target {var(cloud)} project using Hystax Acura — migration",
+  "metaDescription": "Steps to migrate customer infrastructure to the VK Cloud target project using Hystax Acura",
+  "sectionTitle": "Migration using Hystax",
+  "icon": "",
+  "weight": 1,
+  "uuid": "e164452e-4f12-4dc8-9f85-92cb171f6828",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

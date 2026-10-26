@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Working with the {var(cloud)} partner platform",
+  "metaDescription": "Working with the VK Cloud partner platform: how to invite clients to VK Cloud, register deals, and manage clients and their projects in the VK Cloud partner dashboard",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 2,
+  "uuid": "d17cd43e-9574-4382-b1d0-41be32b4c62f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

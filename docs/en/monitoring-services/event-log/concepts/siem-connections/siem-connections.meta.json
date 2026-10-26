@@ -1,0 +1,14 @@
+{
+  "title": "SIEM connections",
+  "shortDescription": "How connections to SIEM systems work in the Cloud Audit service",
+  "metaDescription": "SIEM connections in the VK Cloud Cloud Audit service: what they are, how many connections and SIEM systems can be created, which parameters are configured — connection point, data transfer protocol and message format, as well as network access requirements for data transfer.",
+  "sectionTitle": "SIEM connections",
+  "icon": "",
+  "weight": 4,
+  "uuid": "48470590-68e8-47ea-995c-686771c8c923",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

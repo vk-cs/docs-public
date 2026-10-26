@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "How to view service instance logs in Standalone",
+  "metaDescription": "Learn how in the Standalone version of VK Data Platform you can view and work with the logs of a deployed Cloud PostgreSQL service instance",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "f897b8d4-f6d8-49a2-ae6a-582f27d5e561"
+}

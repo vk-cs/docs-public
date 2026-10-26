@@ -1,0 +1,18 @@
+{
+  "title": "Creating a VM",
+  "shortDescription": "",
+  "metaDescription": "Using the VK Cloud Terraform provider to manage the platform. How to use Terraform to manage Cloud Servers service objects. Creating a VM",
+  "sectionTitle": "Creating a VM",
+  "icon": "",
+  "weight": 1,
+  "uuid": "abe044aa-0c01-4de8-b8ce-74b995fa213b",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

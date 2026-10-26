@@ -1,0 +1,14 @@
+{
+  "title": "Components",
+  "shortDescription": "Purpose and functions of each Data Lakehouse component",
+  "metaDescription": "Purpose and functions of each Data Lakehouse component",
+  "sectionTitle": "Components",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0e6a7012-5f89-4360-a6ad-87d315230be5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

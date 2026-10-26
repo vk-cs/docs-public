@@ -1,0 +1,14 @@
+{
+    "title": "Connecting to the service",
+      "shortDescription": "How to connect the Direct Connect service",
+      "metaDescription": "Cloud Direct Connect — how to set up a communication channel for connecting the Cloud Direct Connect service on your own or with the help of the VK Cloud team",
+    "sectionTitle": "Connecting to the service",
+    "icon": "",
+    "weight": 0,
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "f3400fa4-1942-4f5f-aad9-b403144e9136"
+}

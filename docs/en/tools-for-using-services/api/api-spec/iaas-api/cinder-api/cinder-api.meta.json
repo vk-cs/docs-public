@@ -1,0 +1,14 @@
+{
+  "title": "Disk management",
+  "metaDescription": "Explore the OpenAPI specification of the VK Cloud Block Storage API: description of methods, parameters, examples of requests and responses. Get detailed documentation for automating disk and snapshot management.",
+  "shortDescription": "OpenAPI specification for managing disks and their snapshots",
+  "sectionTitle": "Disk management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f992d55c-53b0-4f76-8f3c-290189fd5d8b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

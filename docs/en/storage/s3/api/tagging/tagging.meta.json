@@ -1,0 +1,16 @@
+{
+  "title": "Tagging",
+  "shortDescription": "Setting, viewing, and deleting object tags",
+  "metaDescription": "All available methods for working with object tagging in VK Object Storage: add or modify object tags (PutObjectTagging), get object tags (GetObjectTagging), delete all object tags (DeleteObjectTagging)",
+  "sectionTitle": "Tagging",
+  "icon": "",
+  "weight": 10,
+  "uuid": "9ed1d6dc-058e-4776-af99-d2e59e30619e",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

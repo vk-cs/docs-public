@@ -1,0 +1,14 @@
+{
+  "title": "Content caching",
+  "shortDescription": "The role of caching in CDN; the impact of TTL on website acceleration and resource savings",
+  "metaDescription": "How the caching mechanism in VK Cloud CDN turns static files into instantly available content, optimizing latency and reducing server load",
+  "sectionTitle": "Content caching",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "0a7e7c39-2665-4155-8b06-840fdabd6671"
+}

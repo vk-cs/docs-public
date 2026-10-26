@@ -1,0 +1,23 @@
+{
+  "title": "About the service",
+  "shortDescription": "Overview of the Cloud Iceberg Metastore service",
+  "metaDescription": "Cloud Iceberg Metastore in VK Cloud: service overview",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "ffc4f1b1-cfb7-4d46-b7d0-3504a006977a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

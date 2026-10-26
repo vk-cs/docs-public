@@ -296,7 +296,7 @@ The following will demonstrate how to create an Ingress resource that works excl
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-   Будет создан ресурс Ingress `cafe-ingress`.
+   An Ingress resource `cafe-ingress` will be created.
 
 1. Verify that the resource was created successfully by running the command:
 

@@ -1,0 +1,13 @@
+{
+  "title": "Using scripts",
+  "shortDescription": "",
+  "metaDescription": "Using scripts",
+  "sectionTitle": "Using scripts",
+  "weight": 5,
+  "uuid": "0382e561-e9d1-4f09-ab8a-f4344e3dff0e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

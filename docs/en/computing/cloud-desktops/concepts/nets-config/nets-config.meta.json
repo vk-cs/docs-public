@@ -1,0 +1,18 @@
+{
+  "title": "Network configuration of the service",
+  "shortDescription": "Network configuration options and network settings for the service",
+  "metaDescription": "Network configuration options and network settings for the service.",
+  "sectionTitle": "Network configuration of the service",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1f7bc12f-92e7-49cc-bb3f-b7d115cabf05",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

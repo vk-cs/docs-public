@@ -1,0 +1,13 @@
+{
+  "title": "CPU generations",
+  "shortDescription": "Types and generations of CPUs on hosts for placing VMs in VK Cloud",
+  "metaDescription": "Types and generations of CPUs on hosts for placing VMs in VK Cloud",
+  "sectionTitle": "CPU generations",
+  "weight": 1,
+  "uuid": "9560cf47-2a46-4ee0-937a-2cce225eed4e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

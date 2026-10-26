@@ -6,7 +6,7 @@ Do not delete the copy from Cloud Backup after you download it.
 
 ## {heading(Before you download a copy)[id=download_cli_api_prepare]}
 
-1. Make sure that API access is [activated](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access).
+1. Make sure that API access is [activated](/en/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
 1. [Install the OpenStack client and authenticate](/en/tools-for-using-services/cli/openstack-cli) in the project that stores the backups. For authentication, use the [OpenStack RC file](/en/access/iam/instructions/service-account-manage#download_rc_file) or another way to get a token.
 1. Make note of the Project ID of the project. You will need it when you work via API and when you download files from VK Object Storage.
 
@@ -94,7 +94,7 @@ Do not delete the copy from Cloud Backup after you download it.
 {/tab}
 {tab(API)}
 
-1. [Get an access token](/en/tools-for-using-services/api/rest-api/case-keystone-token#token_generation) and save it to a variable:
+1. [Get an access token](/en/tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token-gen) and save it to a variable:
 
    ```console
    export TOKEN='<TOKEN_VALUE>'

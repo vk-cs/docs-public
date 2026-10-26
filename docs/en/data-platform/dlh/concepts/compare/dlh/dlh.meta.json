@@ -1,0 +1,14 @@
+{
+  "title": "Data Lakehouse",
+  "shortDescription": "Data Lakehouse architecture: advantages compared to Data Warehouse and Data Lake",
+  "metaDescription": "Data Lakehouse architecture: advantages compared to Data Warehouse and Data Lake",
+  "sectionTitle": "Data Lakehouse",
+  "icon": "",
+  "weight": 3,
+  "uuid": "2bf7d5b3-fef4-47a9-869f-8aa44ff8e7f1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

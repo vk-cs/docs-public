@@ -1,0 +1,16 @@
+{
+  "title": "No port access from an external network",
+  "shortDescription": "Diagnosing port unavailability from an external network",
+  "metaDescription": "Diagnosing port unavailability from an external network",
+  "sectionTitle": "No port access from an external network",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": "9acf562b-a855-4dee-af52-b55848f3fda0"
+}

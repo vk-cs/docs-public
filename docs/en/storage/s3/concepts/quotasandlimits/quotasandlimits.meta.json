@@ -1,0 +1,14 @@
+{
+  "title": "Quotas and limits",
+  "shortDescription": "A list of quotas and technical restrictions applied in the VK Object Storage service",
+  "metaDescription": "A list of quotas and technical restrictions applied in VK Cloud projects",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 20,
+  "uuid": "a8431474-79ab-43a2-b553-2283d7bc6ef5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

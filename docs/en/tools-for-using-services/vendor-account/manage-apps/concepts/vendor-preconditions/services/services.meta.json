@@ -1,0 +1,13 @@
+{
+  "title": "Service types",
+  "shortDescription": "",
+  "metaDescription": "Service types",
+  "sectionTitle": "Service types",
+  "weight": 1,
+  "uuid": "7eb88211-df70-45d7-a9e0-16cf9a8ee48b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

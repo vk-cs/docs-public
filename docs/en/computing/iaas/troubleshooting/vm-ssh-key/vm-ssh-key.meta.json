@@ -1,0 +1,16 @@
+{
+  "title": "Lost private key",
+  "shortDescription": "What to do if the private key for SSH access to a virtual machine is lost",
+  "metaDescription": "What to do if the private key for SSH access to a virtual machine is lost",
+  "sectionTitle": "Lost private key",
+  "icon": "",
+  "weight": 3,
+  "uuid": "4ce27709-2f55-48e8-8eea-58ed3826a7d6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

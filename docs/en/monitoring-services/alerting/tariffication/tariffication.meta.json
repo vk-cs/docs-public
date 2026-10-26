@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and features of its tariffication",
+  "metaDescription": "Cost of the Cloud Alerting service and features of its tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "3dcbcd5d-171a-4eab-81bc-8fefab9730c7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

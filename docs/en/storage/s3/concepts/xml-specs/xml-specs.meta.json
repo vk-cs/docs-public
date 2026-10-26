@@ -1,0 +1,15 @@
+{
+  "title": "Data types description",
+  "shortDescription": "Description of data types in XML configurations in API request bodies",
+  "metaDescription": "XML data types for VK Object Storage API: structure and formats of elements in request bodies, required and optional fields",
+  "sectionTitle": "Data types description",
+  "icon": "",
+  "weight": 11,
+  "uuid": "604bde9b-92ca-4c90-acbb-f0382701d72b",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

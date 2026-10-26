@@ -1,0 +1,16 @@
+{
+  "title": "Private Service Level Agreement for the Cloud GPU service (Virtual Servers)",
+  "shortDescription": "",
+  "metaDescription": "This document defines the Service Level of the Cloud GPU service (Virtual Servers) and is an integral part of the Agreement and the General Service Level Agreement",
+  "sectionTitle": "Private Service Level Agreement for the Cloud GPU service (Virtual Servers)",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "fffb4977-2ef3-407a-b33d-39d856c534e8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

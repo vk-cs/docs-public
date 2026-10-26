@@ -1,0 +1,13 @@
+{
+  "title": "display section",
+  "shortDescription": "Display parameters of pages in the SaaS application connection wizard",
+  "metaDescription": "The display section in the JSON configuration file of a SaaS application: display parameters of pages in the SaaS application connection wizard in Marketplace.",
+  "sectionTitle": "display section",
+  "weight": 3,
+  "uuid": "074a12c7-6bd7-4b78-adec-f3054d7f0403",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Attach a block disk to a virtual machine",
+  "shortDescription": "Create a block disk and attach it to a virtual machine",
+  "metaDescription": "Create a block disk and attach it to a virtual machine",
+  "sectionTitle": "Attach a block disk to a virtual machine",
+  "icon": "",
+  "hidden": true,
+  "weight": 10,
+  "uuid": "dc5a167d-6ad2-4e3a-a1bc-fabea016e290",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

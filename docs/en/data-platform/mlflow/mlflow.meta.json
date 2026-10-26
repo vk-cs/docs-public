@@ -1,0 +1,16 @@
+{
+  "title": "MLflow",
+  "shortDescription": "Platform for managing the full lifecycle of machine learning models",
+  "metaDescription": "MLflow service for managing the full lifecycle of machine learning models in the VK Data Platform infrastructure",
+  "sectionTitle": "MLflow",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 14,
+  "isBeta": true,
+  "hidden": true,
+  "uuid": "f60c833f-8141-44b2-8bff-1f4f9c081a1e"
+}

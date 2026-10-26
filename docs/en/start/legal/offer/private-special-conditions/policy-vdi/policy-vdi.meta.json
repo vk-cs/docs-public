@@ -1,0 +1,16 @@
+{
+  "title": "Terms of Use of the «Cloud Desktop» Service",
+  "shortDescription": "",
+  "metaDescription": "This document represents the terms of use of the Cloud Desktop service within the «VK Cloud» Platform. ",
+  "sectionTitle": "Terms of Use of the «Cloud Desktop» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "e2073b8b-708c-4b64-94aa-f5bd6d437f92",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Configuring a Docker Mirror",
+  "shortDescription": "",
+  "metaDescription": "How to configure a Docker Hub mirror for working with Kubernetes in VK Cloud. Set up a private registry with the Docker Registry add-on or a Daemonset for Managed Containers",
+  "sectionTitle": "Configuring a Docker Mirror",
+  "icon": "",
+  "weight": 5,
+  "uuid": "432f4242-e00d-4655-be7d-b490b6333052",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

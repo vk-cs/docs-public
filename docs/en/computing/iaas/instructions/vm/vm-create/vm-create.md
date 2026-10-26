@@ -20,7 +20,7 @@ To create VM:
 1. Click the **Create Instance** or **Add** button.
 1. Set the VM parameters in the **Configuration** box:
 
-     - **Operating system**: select the [operating system](/en/computing/iaas/concepts/about#operating_system) or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#importing_an_image) in VK Cloud.
+     - **Operating system**: select the [operating system](/en/computing/iaas/concepts/about#operating_system) or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#iaas-images-manage-import) in VK Cloud.
      - **Category of virtual machine**: select the [category](../../../concepts/about#flavors) of the VM.
      - **Type of virtual machine**: select the flavor VM configuration.
      - **Availability zone**: select the [availability zone](/en/computing/iaas/concepts/about#availability_zone) where the VM will be deployed.

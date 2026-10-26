@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_compute_instance_reboot resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_compute_instance_reboot resource",
+  "sectionTitle": "ivkcs_compute_instance_reboot resource",
+  "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

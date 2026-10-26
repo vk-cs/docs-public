@@ -1,0 +1,17 @@
+{
+  "title": "Application Deployment",
+  "shortDescription": "",
+  "metaDescription": "A how-to guide to deploying applications using kubectl in the Managed Containers service of the VK Private Cloud platform",
+  "sectionTitle": "Application Deployment",
+  "icon": "",
+  "weight": 16,
+  "uuid": "f4ef6083-b6b0-4789-83da-6d6d22f783ab",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

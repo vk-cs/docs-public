@@ -1,0 +1,16 @@
+{
+  "title": "Requirements for image-based applications",
+  "shortDescription": "",
+  "metaDescription": "Requirements for image-based applications",
+  "sectionTitle": "Requirements for image-based applications",
+  "weight": 4,
+  "uuid": "0aebaab2-038c-41aa-884b-1be9ea680185",
+  "additionalUuids": [
+    "eb584126-1304-4f45-8440-38e814c6d662" 
+  ],
+    "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "API",
+  "shortDescription": "API operations, request and response structures, and error codes when using API methods for VK Object Storage",
+  "metaDescription": "VK Object Storage API: working with buckets and objects, managing ACL, CORS, lifecycle, object lock configurations, multipart upload, PAK (prefix access keys), tagging, and webhook notifications.",
+  "sectionTitle": "API",
+  "icon": "",
+  "weight": 10,
+  "uuid": "383b711d-9c8e-45b9-ba13-d0a372ad4c96",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

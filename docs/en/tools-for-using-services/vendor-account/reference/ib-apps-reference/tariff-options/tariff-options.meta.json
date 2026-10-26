@@ -1,0 +1,13 @@
+{
+  "title": "Tariff option YAML file",
+  "shortDescription": "Structure and parameters of a tariff option YAML file",
+  "metaDescription": "Configuration YAML file of a tariff option. Name, type, description and billing method of the tariff option. Parameters for displaying the tariff option in the tariff plan configuration wizard. Parameters of the tariff option cost.",
+  "sectionTitle": "Tariff option YAML file",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2b82b76f-f5a7-44d2-b275-aaa338274aa2"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Partner Platform {var(cloud)}",
+  "shortDescription": "Managing {var(cloud)} partner's clients and their projects",
+  "metaDescription": "How to work with VK Cloud partner platform tools: working in the VK Cloud partner management console and specifics of the partner's client management console",
+  "sectionTitle": "Partner Platform {var(cloud)}",
+  "icon": "",
+  "isBeta": false,
+  "hidden": false,
+  "weight": 4,
+  "uuid": "1cc994ec-a0ba-4f98-ade8-c1831f7c6d33",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

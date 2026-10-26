@@ -1,0 +1,14 @@
+{
+  "title": "VM cannot see the external network",
+  "shortDescription": "Why a virtual machine in VK Cloud cannot see the external network",
+  "metaDescription": "Why a virtual machine in VK Cloud cannot see the external network",
+  "sectionTitle": "VM cannot see the external network",
+  "icon": "",
+  "weight": 2,
+  "uuid": "218b27cb-65ec-4887-b005-102702730d7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

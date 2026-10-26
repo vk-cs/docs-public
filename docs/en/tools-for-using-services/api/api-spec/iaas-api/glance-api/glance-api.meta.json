@@ -1,0 +1,14 @@
+{
+  "title": "VM Image Management",
+  "metaDescription": "Explore the OpenAPI specification of the VK Cloud Image Service API: method descriptions, parameters, request and response examples. Get detailed documentation for automating VM image management.",
+  "shortDescription": "OpenAPI specification for VM image management",
+  "sectionTitle": "VM Image Management",
+  "icon": "",
+  "weight": 3,
+  "uuid": "f177a864-dbac-4662-bb30-fd453720724d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

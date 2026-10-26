@@ -1,0 +1,14 @@
+{
+  "title": "Managed Containers",
+  "shortDescription": "OpenAPI specification for managing K8s clusters of the Managed Containers service",
+  "metaDescription": "Public API specifications for automating cloud service management and developing your own tools for working with VK Cloud. Managed Containers service API",
+  "sectionTitle": "Managed Containers",
+  "icon": "",
+  "weight": 8,
+  "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Updating a SaaS application",
+  "shortDescription": "",
+  "metaDescription": "Updating a SaaS application",
+  "sectionTitle": "Updating a SaaS application",
+  "weight": 7,
+  "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -49,7 +49,7 @@ Use the utility `qemu-img`:
 
 ## 2. Upload the base image to the cloud
 
-Import the image according to the [instructions](../../instructions/images/images-manage#importing_an_image).
+Import the image according to the [instructions](../../instructions/images/images-manage#iaas-images-manage-import).
 
 ## 3. Create a Packer configuration file
 

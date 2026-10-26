@@ -1,0 +1,14 @@
+{
+  "title": "DRA Driver for NVIDIA GPUs",
+  "shortDescription": "",
+  "metaDescription": "Install the DRA Driver for NVIDIA GPUs add-on in Kubernetes: step-by-step instructions for VK Cloud and dedicated GPU worker nodes",
+  "sectionTitle": "DRA Driver for NVIDIA GPUs",
+  "icon": "",
+  "weight": 5,
+  "uuid": "8cecc0de-fc48-4d94-bca6-814dc125b67c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

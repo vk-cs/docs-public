@@ -1,0 +1,16 @@
+{
+  "title": "Object lifecycle",
+  "metaDescription": "Learn what an object lifecycle in a VK Object Storage bucket is. Configure rules for automatic object deletion using JSON or XML configurations with filtering by tags or key prefixes.",
+  "shortDescription": "Description of object lifecycle rules in a bucket",
+  "sectionTitle": "Object lifecycle",
+  "icon": "",
+  "weight": 5,
+  "uuid": "48a0c1a3-6bed-4a3c-80e9-b23c7f7fc73d",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

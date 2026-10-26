@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the VK Cloud Startup Support Program",
+  "shortDescription": "",
+  "metaDescription": "The VK Cloud Startup Support Program (hereinafter — the “Program”) has been developed by VK LLC (OGRN: 1027739850962) (hereinafter — the “Organizer”) and is intended to attract and retain on the VK Cloud Platform companies (legal entities or individual entrepreneurs) that develop digital products and services.",
+  "sectionTitle": "Rules of the VK Cloud Startup Support Program",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 15,
+  "uuid": "23338e7d-7cbf-4d05-9f65-ebe0876cbaa1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

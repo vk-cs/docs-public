@@ -1,0 +1,14 @@
+{
+  "title": "References for working with applications",
+  "shortDescription": "Methods for creating a service image, rules for describing the application configuration and infrastructure for its deployment",
+  "metaDescription": "Reference information on adding applications to Marketplace and updating them",
+  "sectionTitle": "References for working with applications",
+  "weight": 6,
+  "isBeta": true,
+  "uuid": "f134c654-09fa-4235-8e25-dbe1801058ee",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

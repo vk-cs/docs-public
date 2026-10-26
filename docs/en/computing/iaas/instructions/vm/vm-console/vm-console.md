@@ -2,7 +2,7 @@ In emergency situations and when there is no [connection to the VM](../vm-connec
 
 {note:info}
 
-Information about the user's actions with the VM and about changes in its state is contained in the [event log](../vm-manage#viewing_the_event_log) OpenStack.
+Information about the user's actions with the VM and about changes in its state is contained in the [event log](../vm-manage#iaas-vm-manage-view-logs) OpenStack.
 
 {/note}
 

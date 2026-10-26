@@ -1,0 +1,17 @@
+{
+  "title": "Block Storage Disk Performance",
+  "shortDescription": "Performance characteristics of block storage disks in VK Cloud",
+  "metaDescription": "SLA for VK Cloud disks. Disk performance characteristics",
+  "sectionTitle": "Block Storage Disk Performance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7efbd1d5-c92d-4c40-ba1e-32e51b5edc1f",
+  "additionalUuids": [
+    "9c45b518-ff23-4f0b-98ff-83301c7071e9"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

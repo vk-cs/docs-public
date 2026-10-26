@@ -1,0 +1,14 @@
+{
+  "title": "VK Data Platform Monitoring in Private Cloud",
+  "shortDescription": "Collecting metrics using the Cloud Monitoring service for VK Data Platform in Private Cloud",
+  "metaDescription": "Learn how data plane level monitoring is performed for Data Platform services in Private Cloud Monitoring",
+  "sectionTitle": "VK Data Platform Monitoring in Private Cloud",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": "0070f6de-b754-454b-8b3e-d28e62e30dbe"
+}

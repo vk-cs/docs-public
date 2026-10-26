@@ -1,0 +1,16 @@
+{
+  "title": "Concepts",
+  "shortDescription": "About the Cloud Iceberg Metastore service architecture",
+  "metaDescription": "How the Cloud Iceberg Metastore service in VK Data Platform is structured: functional features and internal architecture",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "uuid": "8daee586-d5e8-4514-bcdd-35801e870b0b",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

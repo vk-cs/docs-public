@@ -81,14 +81,14 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
       - `Windows Server 2019 Standard (en)`
       - `Windows Server 2022 Standard (ru)`
       - `Windows Server 2022 Standard (en)`
-      - `Red OS 7.3 Стандарт (Cloud Desktop)`
-      - `Astra Linux SE 1.7 Орел (Cloud Desktop)`
+      - `Red OS 7.3 Standard (Cloud Desktop)`
+      - `Astra Linux SE 1.7 Orel (Cloud Desktop)`
 
       {/cut}
 
       If you [applied](#preparatory_steps) to include GPU flavors in your project, the corresponding images will also be available for selection.
 
-      If necessary, click **Upload your image** and upload the previously prepared image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#importing_an_image).
+      If necessary, click **Upload your image** and upload the previously prepared image following the [import instructions](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import).
 
       {note:info}
 

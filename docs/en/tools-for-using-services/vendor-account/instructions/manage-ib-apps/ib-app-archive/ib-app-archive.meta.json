@@ -1,0 +1,16 @@
+{
+  "title": "Moving an image-based application to archive",
+  "shortDescription": "",
+  "metaDescription": "Moving an image-based application to archive",
+  "sectionTitle": "Moving an image-based application to archive",
+  "weight": 5,
+  "uuid": "dbfbedf8-15e4-44f3-b15e-d8d1a5fdeb97",
+  "additionalUuids": [
+    "8e4826bf-2b38-407c-ae63-782c8ed4e78e"
+  ],
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

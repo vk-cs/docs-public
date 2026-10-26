@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the VK Cloud exclusive infrastructure program for winners of the Internet Development Institute competitions in the Software Products category",
+  "shortDescription": "",
+  "metaDescription": "These Rules (hereinafter referred to as the Program Rules) constitute an agreement between You (hereinafter referred to as the Participant) and the Program Organizer, the subject of which is participation in the program, establishment of the rights and obligations of Participants, as well as the procedure for organizing and conducting the program.",
+  "sectionTitle": "Rules of the VK Cloud exclusive infrastructure program for winners of the Internet Development Institute competitions in the Software Products category",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "4a8f2a47-e980-4619-9d07-bcbd9d5750af",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

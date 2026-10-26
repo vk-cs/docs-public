@@ -1,0 +1,14 @@
+{
+  "title": "Cluster monitoring",
+  "shortDescription": "How to monitor the state of a Spark cluster",
+  "metaDescription": "How to monitor the state of a Spark cluster",
+  "sectionTitle": "Cluster monitoring",
+  "icon": "",
+  "weight": 6,
+  "uuid": " ",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

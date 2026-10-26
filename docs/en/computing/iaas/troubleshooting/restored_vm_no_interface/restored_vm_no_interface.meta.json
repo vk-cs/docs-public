@@ -1,0 +1,14 @@
+{
+  "title": "VM interface is not configured",
+  "shortDescription": "The interface of a VM restored from a backup is not configured",
+  "metaDescription": "The interface of a VM restored from a backup is not configured",
+  "sectionTitle": "VM interface is not configured",
+  "icon": "",
+  "weight": 20,
+  "uuid": "560ea818-4693-4c0c-bf08-80cb15bc274d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

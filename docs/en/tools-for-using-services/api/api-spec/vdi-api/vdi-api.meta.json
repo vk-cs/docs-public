@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Desktop",
+  "shortDescription": "OpenAPI specification of the Cloud Desktop service",
+  "metaDescription": "Cloud Desktop API reference",
+  "sectionTitle": "Cloud Desktop",
+  "icon": "",
+  "weight": 15,
+  "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  }
+}

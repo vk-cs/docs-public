@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Databases: create your first managed database",
+  "shortDescription": "Create a PostgreSQL database instance, install the TimescaleDB extension, and connect to the created DB instance",
+  "metaDescription": "Explore the capabilities of the Cloud Databases service. Create a PostgreSQL database instance, install the TimescaleDB extension, and connect to the created DB instance.",
+  "sectionTitle": "Cloud Databases: create your first managed database",
+  "icon": "",
+  "weight": 3,
+  "uuid": "d1183c66-d968-4c35-b96f-5aa6de03fa6c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Operating principles and architecture of the Data Lakehouse service",
+  "metaDescription": "Purpose, advantages, and limitations of the Data Lakehouse architecture",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "14a85b8e-c5aa-4e66-92a2-2b748402e57b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

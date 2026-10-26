@@ -1,0 +1,18 @@
+{
+  "title": "Managing file storage",
+  "shortDescription": "How to manage file storage, their parameters, and state",
+  "metaDescription": "Managing file storage in VK Cloud: viewing the list and parameters, resizing a file storage, deleting storage and its network.",
+  "sectionTitle": "Managing file storage",
+  "icon": "",
+  "weight": 3,
+  "uuid": "f4ed330e-e87e-4095-8969-52aef044a839",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

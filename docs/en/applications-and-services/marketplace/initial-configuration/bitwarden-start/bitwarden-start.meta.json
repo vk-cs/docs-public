@@ -1,0 +1,14 @@
+{
+  "title": "Bitwarden Deployment",
+  "shortDescription": "Deploying Bitwarden for secure storage of credentials and secrets with the ability to jointly manage them",
+  "metaDescription": "Deploying Bitwarden for secure storage and joint management of credentials and secrets",
+  "sectionTitle": "Bitwarden Deployment",
+  "icon": "",
+  "weight": 12,
+  "uuid": "6fa28981-bc4c-4520-ac34-1665e0fbffb5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

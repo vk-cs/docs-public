@@ -1,0 +1,24 @@
+{
+  "title": "How to become a partner",
+  "shortDescription": "Steps on the path to partnership",
+  "metaDescription": "Grow your business and earn together with us!",
+  "sectionTitle": "How to become a partner",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 2,
+  "uuid": "23fa7d00-bcca-4c80-af36-8080b477c623",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

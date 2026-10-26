@@ -1,0 +1,14 @@
+{
+  "title": "Service Level Agreement",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Service Level Agreement ",
+  "icon": "",
+  "weight": 5,
+  "uuid": "759df326-e448-42b0-8cd1-a70a401523f7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

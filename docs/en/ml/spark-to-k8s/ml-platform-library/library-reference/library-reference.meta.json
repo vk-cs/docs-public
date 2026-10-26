@@ -1,0 +1,14 @@
+{
+  "title": "Methods for working with Cloud Spark",
+  "shortDescription": "Reference of methods for working with Cloud Spark",
+  "metaDescription": "Reference of methods for working with Cloud Spark.",
+  "sectionTitle": "Methods for working with Cloud Spark",
+  "icon": "",
+  "weight": 3,
+  "uuid": "74e6e3de-3f01-4ebd-9040-c96c23f69d02",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

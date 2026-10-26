@@ -242,9 +242,9 @@ When working in a production environment, do not operate tokens in the clear. Us
 
    ```txt
    Token my-user-token:
-	        id: 8cdc3742-ХХХХ
+	        id: 8cdc3742-XXXX
 	        type: USER
-	        issuer_name: ХХХХ@example.ru
+	        issuer_name: XXXX@example.ru
 	        exp: None
    ```
 

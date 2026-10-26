@@ -83,6 +83,6 @@ Recommendations for working with the service:
 
 The running service infrastructure consumes computing resources. If you no longer need it:
 
-- [Delete](../../instructions/pr-instance-manage#deleting_a_service_instance) the UserGate NGFW service instance.
+- [Delete](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-delete) the UserGate NGFW service instance.
 - [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the network used for the service.
 - [Delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address created during service deployment.

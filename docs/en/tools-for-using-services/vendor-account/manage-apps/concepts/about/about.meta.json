@@ -1,0 +1,14 @@
+{
+  "title": "About services",
+  "shortDescription": "General characteristics of services and their billing on the {var(cloud)} platform",
+  "metaDescription": "General characteristics of services and their billing on the VK Cloud platform.",
+  "sectionTitle": "About services",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b4e0c317-4967-4aa2-9161-59772fb967a3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

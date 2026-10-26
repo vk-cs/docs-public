@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a service instance",
+  "shortDescription": "How to connect via TLS to a service instance",
+  "metaDescription": "Learn how to connect via TLS to a deployed OpenSearch service instance using the web interface or curl in VK Data Platform",
+  "sectionTitle": "Connecting to a service instance",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "e7716997-1932-4500-8d45-955d3befae34"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "How to view the logs of a service instance in Standalone",
+  "metaDescription": "Learn how to view and work with the logs of a deployed Cloud Iceberg Metastore service instance in the Standalone version of VK Data Platform",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "6af31ace-c685-4ae7-b052-df6e7a7b928a"
+}

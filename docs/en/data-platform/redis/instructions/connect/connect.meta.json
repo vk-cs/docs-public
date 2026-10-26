@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a service instance",
+  "shortDescription": "How to connect via TLS to a service instance",
+  "metaDescription": "Learn how to connect via TLS to a deployed Redis service instance using the web interface in VK Data Platform",
+  "sectionTitle": "Connecting to a service instance",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "3c7371d2-18f3-4fdc-bbb7-7c6816012b3f"
+}

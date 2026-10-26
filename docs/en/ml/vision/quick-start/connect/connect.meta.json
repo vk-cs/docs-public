@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to the service",
+  "shortDescription": "Ways to connect to the service",
+  "metaDescription": "The machine learning service is enabled by default in VK Cloud projects. You can connect to the service in two different ways, described below. API Endpoint API Endp",
+  "sectionTitle": "Creating and connecting to the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "a4ce7c87-5e5b-4206-b8c4-b625f18d19e7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

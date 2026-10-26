@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and tariffication details",
+  "metaDescription": "Cost of the Cloud Monitoring service and details of its tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "1edce488-a8ae-4ec9-aa2f-9abaecac796e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

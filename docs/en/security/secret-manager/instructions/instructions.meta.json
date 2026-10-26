@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Managing secrets and their versions",
+  "metaDescription": "Detailed step-by-step instructions for working with the VK Cloud secret manager: creating and deleting a secret, viewing and editing metadata, managing versions.",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0e345a99-7f38-4331-83d9-d94ee09f2c45",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Video instructions",
+  "shortDescription": "Step-by-step video guides for creating DB instances",
+  "metaDescription": "Cloud Databases VK Cloud: step-by-step video instructions for deploying database instances — PostgreSQL, MySQL, MongoDB, Redis, ClickHouse and OpenSearch",
+  "sectionTitle": "Video instructions",
+  "icon": "",
+  "weight": 3,
+  "uuid": "841ea734-f8e3-4570-9f34-7dbd4ae4ed1a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

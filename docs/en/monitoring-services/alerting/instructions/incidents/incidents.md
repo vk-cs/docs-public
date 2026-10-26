@@ -16,7 +16,7 @@ To change the incident status, go to the "Alerting" page in the "Monitoring" sec
 - Open → Closed
 - At work → Private
 
-### Re-creating incidents
+## Re-creating incidents
 
 If an incident has been created, but the metric value continues to fall under the condition in the trigger,
 the incident is active and no new incidents are created.

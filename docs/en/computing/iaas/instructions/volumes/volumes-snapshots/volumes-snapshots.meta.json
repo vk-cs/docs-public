@@ -1,0 +1,19 @@
+{
+  "title": "Working with snapshots",
+  "shortDescription": "How to create and use disk snapshots",
+  "metaDescription": "Creating and using disk snapshots in VK Cloud. Creating a disk snapshot, restoring a disk or virtual machine from a snapshot, and deleting snapshots.",
+  "sectionTitle": "Working with snapshots",
+  "icon": "",
+  "weight": 9,
+  "uuid": "7995c4b8-f8fb-498b-886a-5bdb5a46b1a5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

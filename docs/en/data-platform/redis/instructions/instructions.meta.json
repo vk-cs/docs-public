@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "Redis in VK Data Platform: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "a660a75d-ac15-45e2-bd60-cc88f14023c1"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Creating an image for an image-based application",
+  "sectionTitle": "Creating an image for an image-based application",
+  "shortDescription": "Creating an image of a VM with an image-based application instance installed and uploading it to VK Cloud",
+  "metaDescription": "Creating an image of a VM with an image-based application instance installed and uploading it to VK Cloud. Two methods are described: using Packer (recommended) and via the VK Cloud management console.",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "55bf52ef-2788-474f-96c6-f66d531f7e73"
+}

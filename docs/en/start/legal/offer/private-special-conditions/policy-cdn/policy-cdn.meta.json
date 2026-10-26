@@ -1,0 +1,16 @@
+{
+  "title": "CDN Service Terms of Use",
+  "shortDescription": "",
+  "metaDescription": "This document sets out the terms of use of the CDN service within the VK Cloud Platform.",
+  "sectionTitle": "CDN Service Terms of Use",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "cf908d02-d7ad-4300-8894-b3d3a327e27b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
