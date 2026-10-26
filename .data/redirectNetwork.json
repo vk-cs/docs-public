@@ -20808,12 +20808,6 @@
     "locale": false
   },
   {
-    "source": "/en/tools-for-using-services/account/instructions/account-manage",
-    "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/tools-for-using-services/account/instructions/account-manage/editinfo",
     "destination": "/en/tools-for-using-services/vk-cloud-account/instructions/account-manage/editinfo",
     "permanent": false,
@@ -24667,13 +24661,13 @@
   },
   {
     "source": "/en/manage/alerting/notification/notification-add",
-    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/alerting/notification/notification-edit",
-    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -33636,18 +33630,6 @@
     "locale": false
   },
   {
-    "source": "/en/dbs/dbaas/concepts/types/postgrespro",
-    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/dbs/dbaas/concepts/types/postgrespro",
-    "destination": "/en/dbs/dbaas/concepts/types/postgresql",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-gen-2",
     "destination": "/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s",
     "permanent": false,
@@ -33806,12 +33788,6 @@
   {
     "source": "/ru/computing/gpu/instructions/gpu-driver",
     "destination": "/ru/computing/gpu/instructions/driver-install/gpu-linux",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/start/concepts/architecture",
-    "destination": "/en/intro/start/concepts/architecture",
     "permanent": false,
     "locale": false
   },
@@ -34194,42 +34170,6 @@
     "locale": false
   },
   {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "destination": "/en",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "destination": "/en",
     "permanent": false,
@@ -34279,13 +34219,13 @@
   },
   {
     "source": "/en/monitoring-services/alerting/notification/notification-add",
-    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-add",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/monitoring-services/alerting/notification/notification-edit",
-    "destination": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -34334,6 +34274,18 @@
   {
     "source": "/ru/networks/dns/troubleshooting/cannot-create-cname",
     "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/instructions/notification/notification-add",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }
