@@ -1,0 +1,16 @@
+{
+  "title": "Load balancer returns 504 Gateway Timeout error",
+  "shortDescription": "What to do if timeouts occur on the load balancer and it returns a «504 Gateway Timeout» error",
+  "metaDescription": "What to do if timeouts occur on the load balancer and it returns a «504 Gateway Timeout» error. Increase the load balancer timeouts",
+  "sectionTitle": "Load balancer returns 504 Gateway Timeout error",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": "29d5c6d0-6dd5-47c5-81cf-5802850fdbb5"
+}

@@ -533,7 +533,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
       ssh -i <the path to the file with the private key> <login>@<external IP address of the VM>
       ```
 
-## Viewing the event log
+## {heading(Viewing the event log)[id=iaas-vm-manage-view-logs]}
 
 The event log contains information about changes in the VM state and user actions.
 
@@ -635,5 +635,5 @@ Transferring a virtual machine between projects is performed by creating a copy 
 1. [Create](/en/computing/iaas/instructions/images/images-manage#creating_an_image) a copy of the VM disk as an image.
 1. [Export](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) the created image for further use.
 1. Select the project to which you want to transfer the VM.
-1. [Import](/en/computing/iaas/instructions/images/images-manage#importing_an_image) the image into the desired project.
+1. [Import](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) the image into the desired project.
 1. [Deploy](/en/computing/iaas/instructions/vm/vm-create) a new VM from the image.

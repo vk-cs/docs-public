@@ -2,7 +2,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 VPN service is available in the Neutron and Sprut [SDN](../../concepts/architecture#sdns_used). Service management tools depend on SDN used:
 
-- Sprut SDN: m interface, API, Terraform.
+- Sprut SDN: management console interface, API, Terraform.
 - Neutron SDN: management console interface, API, [Terraform](/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn), [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
 ## Viewing a list of VPN tunnels and information about them
@@ -151,7 +151,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          
          - **Name** — the name of a local endpoint group.
          - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
-         - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
+         - (Optional) To connect an additional subnet, click **Add another CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
 
          {/tab}
          
@@ -193,10 +193,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
     1. (Optional) Specify advanced settings:
 
        - **Peer Router ID for Authentication (Peer ID)** — by default matches the peer address.
-       - (For VPN in Sprut SDN only) **Селектор потоков траффика**:
+       - (For VPN in Sprut SDN only) **Traffic flow selector**:
 
-         - **Объединить** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
-         - **Разделить** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
+         - **Combine** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
+         - **Split** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
 
        - **Initiator State** — behavior when establishing an IPsec connection:
 
@@ -547,7 +547,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
          
          - **Name** — the name of a local endpoint group.
          - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
-         - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
+         - (Optional) To connect an additional subnet, click **Add another CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
 
          {/tab}
          
@@ -588,10 +588,10 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
    1. (Optional) Advanced settings:
 
       - **Peer Router ID for Authentication (Peer ID)** — by default matches the peer address.
-      - (For VPN in Sprut SDN only) **Селектор потоков траффика**:
+      - (For VPN in Sprut SDN only) **Traffic flow selector**:
 
-         - **Объединить** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
-         - **Разделить** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
+         - **Combine** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
+         - **Split** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
 
       - **Initiator State** — behavior when establishing an IPsec connection:
 

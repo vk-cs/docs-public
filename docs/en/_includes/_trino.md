@@ -1,7 +1,7 @@
 {includetag(open)}
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. Go to **Data Platform** → **Экземпляры сервисов**.
+1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the desired instance.
 
 {/includetag}

@@ -1,0 +1,13 @@
+{
+  "title": "Terraform Manifest",
+  "shortDescription": "",
+  "metaDescription": "Terraform Manifest",
+  "sectionTitle": "Terraform Manifest",
+  "weight": 2,
+  "uuid": "3fb65faa-3266-4c6b-aff4-33862b3cd38e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

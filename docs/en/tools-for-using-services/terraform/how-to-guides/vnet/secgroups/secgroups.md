@@ -47,7 +47,7 @@ In the file, the following configuration is described:
   1. In the group, create the rule that allows incoming traffic by TCP via the 22 port.
   1. Allow the rule with the port, added in `network.tf`.
 
-  {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
+  {include(../../../../../../ru/_includes/_secgroups_tf.md)[tags=secgroup,ruleoneport,ruleassoc]}
 
 {/tab}
 
@@ -58,7 +58,7 @@ In the file, the following configuration is described:
   1. Create the `security_group` security group.
   1. In the group, create the rule that allows incoming traffic by TCP via all ports.
 
-  {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
+  {include(../../../../../../ru/_includes/_secgroups_tf.md)[tags=secgroup,alludp]}
 
 {/tab}
 
@@ -69,7 +69,7 @@ In the file, the following configuration is described:
   1. Create the `security_group` security group.
   1. In the group, create the rule that allow all incoming traffic.
 
-  {include(/en/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
+  {include(../../../../../../ru/_includes/_secgroups_tf.md)[tags=secgroup,ingress]}
 
 {/tab}
 
@@ -83,7 +83,7 @@ Do not change the rules or create preset security groups via Terraform if they a
 
 {/note}
 
-{include(/ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
+{include(../../../../../../ru/_includes/_secgroups_tf.md)[tags=ssh,sshwww,rdp,rdpwww,all]}
 
 {/tab}
 

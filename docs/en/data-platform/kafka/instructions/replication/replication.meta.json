@@ -1,0 +1,15 @@
+{
+  "title": "Replicating data from external Kafka clusters",
+  "shortDescription": "Setting up data replication from external Kafka clusters using the MirrorMaker component",
+  "metaDescription": "Step-by-step instructions for setting up data replication from external Kafka clusters to the current Cloud Kafka VK Data Platform cluster using MirrorMaker",
+  "sectionTitle": "Replicating data from external Kafka clusters",
+  "icon": "",
+  "weight": 5,
+  "uuid": "56742d92-cf2b-4e70-8b27-47dec54298be",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Cloud for Hot Data» (Hotbox) service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «Digital Cloud» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Cloud for Hot Data» (Hotbox) service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "8d528295-0e12-4df7-8463-4db7b8ef32fc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

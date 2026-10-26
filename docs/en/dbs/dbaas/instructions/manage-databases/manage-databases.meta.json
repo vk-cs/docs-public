@@ -1,0 +1,16 @@
+{
+  "title": "Database Management",
+  "shortDescription": "",
+  "metaDescription": "Database Management",
+  "sectionTitle": "Database Management",
+  "weight": 4,
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "76d2a850-0c7a-4cea-b0b0-6097f258a0ae"
+}

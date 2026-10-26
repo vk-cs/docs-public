@@ -1,0 +1,14 @@
+{
+  "title": "DNS balancing",
+  "shortDescription": "Traffic distribution between different availability zones using DNS",
+  "metaDescription": "DNS balancing: how to distribute traffic in VK Cloud between different availability zones using DNS",
+  "sectionTitle": "DNS balancing",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2e9874a5-575b-426d-bd3b-55630adbc75d"
+}

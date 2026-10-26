@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "How to view service instance logs in Standalone",
+  "metaDescription": "Learn how to view and work with the logs of a deployed Cloud Spark service instance in the Standalone version of VK Data Platform",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 7,
+  "uuid": "3aaff14f-4e4a-41cc-a34f-e890c2011de1"
+}

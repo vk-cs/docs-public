@@ -1,0 +1,14 @@
+{
+  "title": "Webhooks",
+  "shortDescription": "Configuring notifications by sending HTTP/HTTPS requests upon bucket events",
+  "metaDescription": "All available methods for working with webhooks in VK Object Storage buckets: enable event notification (PutBucketNotificationConfiguration), check the current notification rule configuration for a bucket (GetBucketNotificationConfiguration)",
+  "sectionTitle": "Webhooks",
+  "icon": "",
+  "weight": 11,
+  "uuid": "80c67385-b262-4835-a629-29e996b232e9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

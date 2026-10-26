@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and specifics of its tariffication",
+  "metaDescription": "Cost of the DNS service and specifics of its tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "b0c57060-bb51-4bc3-9918-098387751c43",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

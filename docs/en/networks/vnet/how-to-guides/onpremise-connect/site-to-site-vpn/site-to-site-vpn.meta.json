@@ -1,0 +1,14 @@
+{
+  "title": "Setting up a VPN tunnel using SDN Sprut",
+  "shortDescription": "How to set up a VPN tunnel connecting a client network to the {var(cloud)} cloud network using SDN Sprut",
+  "metaDescription": "How to set up a VPN tunnel between an external (client) network with MikroTik equipment and a VK Cloud virtual network using the advanced SDN Sprut router",
+  "sectionTitle": "Setting up a VPN tunnel using SDN Sprut",
+  "icon": "",
+  "weight": 2,
+  "uuid": "8c3421ba-5012-4a30-b270-21ed017ab495",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
-### Важно
+### Important
 
-Логи баз данных доступны только для БД, созданных после 1 декабря 2020 года.
+Database logs are available only for databases created after December 1, 2020.
 
-В настоящее время реализована возможность получения логов для следующих баз данных:
+Currently, log retrieval is implemented for the following databases:
 
 - MySQL
 - PostgreSQL
@@ -10,19 +10,19 @@
 - Redis
 - MongoBD
 
-Отметим, что для реализации получения логов необходимо [подключиться к БД по SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+Note that to retrieve logs, you need to [connect to the DB via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
 
-Ниже представлено детальное описание получения логов из каждого типа БД.
+Below is a detailed description of how to retrieve logs for each type of database.
 
 ## MySQL
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+To retrieve logs, connect via SSH and enter the following command:
 
 ```console
 \[admin@mysql-8658 ~\]journalctl -u mysqld
 ```
 
-Далее, ответом будут выведены логи:
+The logs will then be displayed in response:
 
 ```console
 \-- Logs begin at Fri 2020-12-25 08:35:15 UTC, end at Mon 2021-01-11 18:41:34 UTC. --
@@ -59,13 +59,13 @@ lines 1-29
 
 ## PostgreSQL
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+To retrieve logs, connect via SSH and enter the following command:
 
 ```console
 \[admin@postgresql-9641 ~\]journalctl -u postgresql
 ```
 
-Далее, ответом будут выведены логи:
+The logs will then be displayed in response:
 
 ```console
 \-- Logs begin at Fri 2020-12-25 07:48:19 UTC, end at Mon 2021-01-11 18:46:16 UTC. --
@@ -102,13 +102,13 @@ lines 1-29
 
 ## ClickHouse
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+To retrieve logs, connect via SSH and enter the following command:
 
 ```console
 \[admin@clickhouse5992 ~\]less /var/log/clickhouse-server/clickhouse-server.log
 ```
 
-Далее, ответом будут выведены логи:
+The logs will then be displayed in response:
 
 ```console
 2020.12.25 20:27:13.406404 \[ 1025 \] {} <Information> SentryWriter: Sending crash reports is disabled
@@ -134,13 +134,13 @@ lines 1-29
 
 ## Redis
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+To retrieve logs, connect via SSH and enter the following command:
 
 ```console
  \[admin@redis-4275 ~\]journalctl -u redis
 ```
 
-Далее, ответом будут выведены логи:
+The logs will then be displayed in response:
 
 ```console
 \-- Logs begin at Mon 2021-01-11 15:45:47 UTC, end at Mon 2021-01-11 19:06:17 UTC. --
@@ -177,13 +177,13 @@ lines 1-29
 
 ## MongoBD
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+To retrieve logs, connect via SSH and enter the following command:
 
 ```console
 \[admin@mongodb-5604 ~\]$ journalctl -u mongod
 ```
 
-Далее, ответом будут выведены логи:
+The logs will then be displayed in response:
 
 ```console
 \-- Logs begin at Thu 2020-12-31 03:20:03 UTC, end at Mon 2021-01-11 19:09:03 UTC. --

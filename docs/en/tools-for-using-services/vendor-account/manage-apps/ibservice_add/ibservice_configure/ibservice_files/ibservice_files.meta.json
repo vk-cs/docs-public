@@ -1,0 +1,13 @@
+{
+  "title": "List of configuration files of an image-based application",
+  "shortDescription": "",
+  "metaDescription": "List of configuration files of an image-based application",
+  "sectionTitle": "List of configuration files of an image-based application",
+  "weight": 1,
+  "uuid": "140f666e-0df0-4d7b-9411-53d363444b76",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

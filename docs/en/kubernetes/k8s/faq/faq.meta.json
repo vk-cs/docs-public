@@ -1,0 +1,14 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about the Managed Containers service",
+  "metaDescription": "Answers to frequently asked questions about the Managed Containers service",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 11,
+  "uuid": "6403a544-8b9c-4e5d-9286-acc51ac0ec2c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,49 +1,49 @@
-С помощью Cloud Monitoring в личном кабинете VK Cloud будет создана виртуальная машина (ВМ) Linux настроен сбор метрик для нее с визуализацией в интерфейсе.
+Using Cloud Monitoring in the VK Cloud management console, you will create a Linux virtual machine (VM) and set up metric collection for it with visualization in the interface.
 
-Быстрый старт поможет вам начать работу с сервисом и познакомиться с его возможностями.
+The quick start will help you get started with the service and learn about its capabilities.
 
-Пройдя все шаги быстрого старта, вы:
+After completing all the steps of the quick start, you will:
 
-- Создадите новую виртуальную машину (ВМ).
-- Подключите мониторинг к ВМ.
-- Создадите для новый график.
+- Create a new virtual machine (VM).
+- Connect monitoring to the VM.
+- Create a new graph for it.
 
-## Подготовительные шаги
+## Preparatory steps
 
-1. При [создании ВМ](/en/computing/iaas/instructions/vm/vm-create) активируйте пункт **Включить мониторинг**.
-1. Дождитесь завершения создания ВМ.
-1. [Узнайте](/en/computing/iaas/instructions/vm/vm-manage) ID созданной виртуальной машины.
-1. Подождите некоторое время, чтобы накопились данные для мониторинга.
+1. When [creating a VM](/en/computing/iaas/instructions/vm/vm-create), enable the **Enable monitoring** option.
+1. Wait for the VM creation to complete.
+1. [Find out](/en/computing/iaas/instructions/vm/vm-manage) the ID of the created virtual machine.
+1. Wait some time for monitoring data to accumulate.
 
-## 1. Создайте график
+## 1. Create a graph
 
-1. Перейдите в раздел **Мониторинг → Дашборды**.
-1. Нажмите кнопку **Добавить график**.
-1. На шаге **Конфигурация графика** выберите:
+1. Go to the **Monitoring → Dashboards** section.
+1. Click the **Add graph** button.
+1. At the **Graph configuration** step, select:
 
-   - **Заголовок графика**: укажите название графика, например, `cpu-monitoring`.
-   - **Тип ресурса**: выберите вариант **Виртуальная машина**.
-   - **Тип диаграммы**: выберите вариант **Линейная**.
+   - **Graph title**: specify the graph name, for example, `cpu-monitoring`.
+   - **Resource type**: select the **Virtual machine** option.
+   - **Chart type**: select the **Line** option.
 
-1. Нажмите кнопку **Следующий шаг**.
-1. На шаге **Параметры** выберите:
+1. Click the **Next step** button.
+1. At the **Parameters** step, select:
 
-   - **Название метрики**: выберите `cpu_usage`.
-   - **Группировка**: выберите поле `vm_uuid`.
-   - **Функция агрегации**: среднее арифметическое.
+   - **Metric name**: select `cpu_usage`.
+   - **Grouping**: select the `vm_uuid` field.
+   - **Aggregation function**: arithmetic mean.
 
-1. Нажмите кнопку **Создать график**.
+1. Click the **Create graph** button.
 
-При корректной настройке на графике появятся значения для созданной ВМ.
+If configured correctly, values for the created VM will appear on the graph.
 
-## 2. Проследите за сбором метрик
+## 2. Monitor the metric collection
 
-1. Подождите некоторое время, чтобы накопились данные для мониторинга.
-1. Обновите страницу. Должны появиться данные за новый период.
+1. Wait some time for monitoring data to accumulate.
+1. Refresh the page. Data for the new period should appear.
 
-## Удалите неиспользуемые ресурсы
+## Delete unused resources
 
-Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
+A running VM consumes computing resources. If you no longer need it:
 
-- [остановите](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) ее, чтобы воспользоваться ею позже;
-- [удалите](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) ее навсегда.
+- [stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) it to use it later;
+- [delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) it permanently.

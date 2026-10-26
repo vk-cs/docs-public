@@ -1,0 +1,14 @@
+{
+  "title": "Cloud PostgreSQL",
+  "shortDescription": "Object-relational DBMS for storing and managing data",
+  "metaDescription": "Cloud PostgreSQL service for storing and managing data in the VK Data Platform infrastructure",
+  "sectionTitle": "Cloud PostgreSQL",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 11,
+  "uuid": "42ba6d54-f0c5-4aa9-a159-b3db7a1ccf4a"
+}

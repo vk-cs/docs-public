@@ -1,0 +1,20 @@
+{
+  "title": "Managing static site hosting configuration",
+  "shortDescription": "How to configure a bucket for use as a static website",
+  "metaDescription": "How to configure static site hosting in VK Object Storage: viewing, setting, editing, and deleting the static site configuration.",
+  "sectionTitle": "Static site hosting",
+  "weight": 9,
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "cfeb91d2-1689-445c-867a-7ef3fdf5d0a2",
+  "additionalUuids": [
+    "fb298631-fafc-4224-8680-d19afc206c99"
+  ],
+  "createdAt": "",
+  "updatedAt": ""
+}

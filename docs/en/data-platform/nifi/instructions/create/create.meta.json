@@ -1,0 +1,14 @@
+{
+  "title": "Creating a service instance",
+  "shortDescription": "How to create a NiFi instance with the desired configuration",
+  "metaDescription": "How to create a NiFi service instance with the desired configuration in VK Data Platform",
+  "sectionTitle": "Creating a service instance",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "ae9e57c7-65d1-493c-852e-4e966e7adaa9"
+}

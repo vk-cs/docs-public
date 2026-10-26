@@ -1,0 +1,14 @@
+{
+  "title": "Assigning multiple Floating IP addresses to a single VM",
+  "shortDescription": "How to assign multiple Floating IP addresses to a single VM: create additional ports in the subnet, attach them to the VM, and configure them in the OS",
+  "metaDescription": "Learn how to assign multiple Floating IP addresses to a single VK Cloud virtual machine: creating additional ports, attaching them to the VM, and configuring network interfaces in Linux and Windows.",
+  "sectionTitle": "Assigning multiple Floating IP addresses to a single VM",
+  "icon": "",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "008470d7-abf5-4a0f-ad2c-492d27406be4"
+}

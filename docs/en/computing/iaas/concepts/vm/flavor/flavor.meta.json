@@ -1,0 +1,18 @@
+{
+  "title": "VM Flavor Templates",
+  "shortDescription": "Virtual machine flavor templates in VK Cloud",
+  "metaDescription": "Virtual machine flavor templates in VK Cloud",
+  "sectionTitle": "VM Flavor Templates",
+  "weight": 0,
+  "uuid": "3f4ab7f5-3680-47a3-91c5-ee59006299e9",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

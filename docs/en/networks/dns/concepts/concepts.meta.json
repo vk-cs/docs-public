@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "How the DNS service works in {var(cloud)}",
+  "metaDescription": "Description of the operating principles and structure of the DNS service in VK Cloud.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "825c0b3b-84a3-4a79-b01f-1b27dff7bfcc"
+}

@@ -94,7 +94,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {/tabs}
 
-## Bindind a floating IP address
+## {heading(Bindind a floating IP address)[id=vnet-floating-ip-associate]}
 
 {tabs}
 

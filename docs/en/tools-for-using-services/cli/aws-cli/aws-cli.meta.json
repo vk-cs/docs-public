@@ -1,0 +1,13 @@
+{
+  "title": "Installing AWS CLI",
+  "shortDescription": "Installing the AWS client for managing resources on the {var(cloud)} platform",
+  "metaDescription": "Installing the AWS client for managing resources on the VK Cloud platform",
+  "sectionTitle": "Installing AWS CLI",
+  "weight": 2,
+  "uuid": "857b60cf-d946-4021-acfb-bbc63b88a762",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_agent_init resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_agent_init resource",
+  "sectionTitle": "ivkcs_agent_init resource",
+  "uuid": "a5da6854-ccd9-43bc-ac5c-11df08153e15",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

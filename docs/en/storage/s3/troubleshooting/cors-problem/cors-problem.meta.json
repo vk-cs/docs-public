@@ -1,0 +1,16 @@
+{
+  "title": "CORS error when uploading files to a bucket by a web application",
+  "shortDescription": "What to do if a web application's request to upload a file to a bucket is blocked by the browser",
+  "metaDescription": "What to do if a web application's request to upload a file to a bucket is blocked by the browser",
+  "sectionTitle": "CORS error when uploading files to a bucket by a web application",
+  "icon": "",
+  "weight": 8,
+  "uuid": "ebf0aa2a-779c-4512-9c49-e1387412d423",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -23,17 +23,17 @@ To deploy the Alfresco service in a VK Cloud project:
 1. Go to the **Marketplace** section, on the section page, click **All Solutions** button.
 1. On the **Alfresco** service card, click the **Details** button.
 1. On the service description page, click the **Connect** button.
-1. Enter data on the **Параметры сервера** page:
+1. Enter data on the **Server parameters** page:
     1. Specify how the Alfresco service will be hosted:
     - `external` — with public IP address and domain name in `*.xaas.msk.bizmrg.com`. Choose this deployment type for internet access to the VM with the deployed Alfresco service.
     - `internal` — with access only via internal IP address.
 
-    1. **Включить резервное копирование на S3**: enable this option to create daily backups of Alfresco data in a VK Cloud object storage. The storage is created automatically. The last 7 copies are stored.
+    1. **Enable backup to S3**: enable this option to create daily backups of Alfresco data in a VK Cloud object storage. The storage is created automatically. The last 7 copies are stored.
 
-    1. **Включить мониторинг**: enable this option to automatically send metrics from the VM running Alfresco to the [Cloud Monitoring](/en/monitoring-services/monitoring) service. These metrics will be available in the **Monitoring** section of your management console.
+    1. **Enable monitoring**: enable this option to automatically send metrics from the VM running Alfresco to the [Cloud Monitoring](/en/monitoring-services/monitoring) service. These metrics will be available in the **Monitoring** section of your management console.
     1. Specify the parameters of the VM on which the service instance will be deployed:
 
-        - **Сеть**: select the network where the VM with the deployed service will be located. If you specified `external` deployment type, select a network with internet access and a subnet with the **Private DNS** option disabled.
+        - **Network**: select the network where the VM with the deployed service will be located. If you specified `external` deployment type, select a network with internet access and a subnet with the **Private DNS** option disabled.
         - **Availability zone**: select the [data center](/en/intro/start/concepts/architecture#architecture-az) where the VM will run.
         - **Type of virtual machine**: select a [VM preset configuration](/en/computing/iaas/concepts/about#flavors).
 
@@ -80,5 +80,3 @@ To deploy the Alfresco service in a VK Cloud project:
     An example of using the interface to access the Alfresco administration panel via the address bar: `http://<YOUR_DOMAIN_OR_IP>/admin/`.
     
 1. (Optional) Use the [guide](https://support.hyland.com/r/Alfresco/Alfresco-Content-Services-Community-Edition/23.3/Alfresco-Content-Services-Community-Edition/Install/Install-with-zip/Install-additional-software/Test-installation/Post-installation-checks), to get started with the service. If necessary, review the [Alfresco official documentation](https://support.hyland.com/r/Alfresco/Alfresco-Content-Services-Community-Edition/23.3/Alfresco-Content-Services-Community-Edition).
-
-

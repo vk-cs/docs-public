@@ -1,0 +1,14 @@
+{
+  "title": "Managing an MLflow Deploy instance",
+  "shortDescription": "How to change instance settings, stop and restart an instance, delete an instance",
+  "metaDescription": "How to change instance settings, stop and restart an instance, delete an instance",
+  "sectionTitle": "Managing an MLflow Deploy instance",
+  "icon": "",
+  "weight": 3,
+  "uuid": "0362dd86-b424-48ae-a1ad-9b7f90c6427e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_cert resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_cert resource",
+  "sectionTitle": "ivkcs_cert resource",
+  "weight": 5,
+  "uuid": "ca4d9a15-89a0-4d73-b13c-174f95c1730b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

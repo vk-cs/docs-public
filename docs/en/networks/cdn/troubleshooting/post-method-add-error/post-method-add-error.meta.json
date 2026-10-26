@@ -1,0 +1,14 @@
+{
+  "title": "Error when adding POST to the list of allowed methods",
+  "shortDescription": "Why an error occurs when adding POST to the list of allowed HTTP methods",
+  "metaDescription": "Error when adding POST to the list of allowed HTTP methods: why it occurs, what CDN limitations it is related to, and what is important to consider",
+  "sectionTitle": "Error when adding POST to the list of allowed methods",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "f99320bf-e5dd-4470-a905-72841ecea065"
+}

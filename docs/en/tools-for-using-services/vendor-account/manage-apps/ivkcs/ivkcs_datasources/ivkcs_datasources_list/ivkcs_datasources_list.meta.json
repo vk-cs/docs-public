@@ -1,0 +1,13 @@
+{
+  "title": "List of data sources",
+  "shortDescription": "",
+  "metaDescription": "List of data sources",
+  "sectionTitle": "List of data sources",
+  "uuid": "30b1d298-6cdc-4447-bcc2-0f7f3ebd37bf",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

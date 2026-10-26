@@ -1,0 +1,16 @@
+{
+  "title": "Access policy",
+  "shortDescription": "How to configure access to buckets and objects using an access policy (bucket policy)",
+  "metaDescription": "How to configure an access policy (bucket policy) in VK Object Storage: viewing, setting, editing and deleting the access policy configuration",
+  "sectionTitle": "Access policy",
+  "icon": "",
+  "weight": 5,
+  "uuid": "1b9b8363-45e9-476b-92a7-ab818417371c",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

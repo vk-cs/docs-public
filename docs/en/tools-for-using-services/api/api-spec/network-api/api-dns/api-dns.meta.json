@@ -1,0 +1,14 @@
+{
+  "title": "Managing public DNS zones",
+  "shortDescription": "OpenAPI specification for managing public DNS zones",
+  "metaDescription": "Public API specifications for automating cloud service management and developing your own tools for working with VK Cloud. Public DNS API",
+  "sectionTitle": "Managing public DNS zones",
+  "icon": "",
+  "weight": 3,
+  "uuid": "828601c4-5d6f-433f-b162-f1c5f44bc7cf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

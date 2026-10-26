@@ -1,0 +1,14 @@
+{
+  "title": "Connecting via API",
+  "shortDescription": "Connecting to the REST API for managing {var(cloud)} resources",
+  "metaDescription": "Start managing VK Private Cloud using the API. This step-by-step guide will help you obtain an authentication token and connect to the VK Private Cloud API.",
+  "sectionTitle": "Connecting via API",
+  "weight": 1,
+  "uuid": "4e7c59c6-1657-4a3d-8ea2-93dd65ffe026",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

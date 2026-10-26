@@ -1,0 +1,14 @@
+{
+  "title": "Basic and legal information about the cloud",
+  "shortDescription": "How to register in VK Cloud or contact technical support. Basic information about the cloud, legal information, and company details",
+  "metaDescription": "The VK Cloud (VK Cloud) platform provides infrastructure for developing and running applications",
+  "sectionTitle": "Basic and legal information about the cloud",
+  "icon": "",
+  "weight": 100,
+  "uuid": "e2d304db-dac8-4071-a94b-82632887448e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

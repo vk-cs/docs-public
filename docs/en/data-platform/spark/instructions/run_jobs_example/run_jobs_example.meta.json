@@ -1,0 +1,14 @@
+{
+  "title": "Example of Creating and Running a Spark Job",
+  "shortDescription": "How to create and run a basic Spark job using the Spark client",
+  "metaDescription": "Learn how to create and run a basic Spark job using the Spark client in the Cloud Spark service from VK Data Platform",
+  "sectionTitle": "Example of Creating and Running a Spark Job",
+  "weight": 5,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "c4f83ef1-f418-46c7-bceb-c752d7a72801"
+}

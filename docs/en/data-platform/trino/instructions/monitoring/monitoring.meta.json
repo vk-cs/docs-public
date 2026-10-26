@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring in Standalone",
+  "shortDescription": "Collecting and viewing metrics in Standalone",
+  "metaDescription": "Learn how to view metrics of deployed Cloud Trino service instances in VK Data Platform Standalone edition",
+  "sectionTitle": "Monitoring in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 6,
+  "uuid": "3f8cf79d-90d9-441d-a7bf-4e66c20d3f72"
+}

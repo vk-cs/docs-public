@@ -43,7 +43,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
   
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
@@ -144,7 +144,7 @@ For each object (picture) there can be several types, with varying degrees of ce
             "docs": [
               {
                 "eng": "Pasport",
-                "rus": "Паспорт",
+                "rus": "Passport",
                 "probability": 0.475
               }
             ]
@@ -166,7 +166,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \
@@ -196,7 +196,7 @@ Response example:
             "docs": [
               {
                 "eng": "Voditelskye_prava",
-                "rus": "Водительские права",
+                "rus": "Driver's license",
                 "probability": 0.8387
               }
             ]
@@ -216,7 +216,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -260,7 +260,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \

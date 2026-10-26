@@ -1,0 +1,14 @@
+{
+  "title": "Creating a pipeline for streaming event processing from Cloud Kafka to Cloud Iceberg Metastore",
+  "shortDescription": "How to create a pipeline for streaming event processing from Cloud Kafka to Cloud Iceberg Metastore",
+  "metaDescription": "Learn how to create a pipeline for streaming event processing from Cloud Kafka to Cloud Iceberg Metastore using Cloud Spark in VK Data Platform",
+  "sectionTitle": "Creating a pipeline for streaming event processing from Cloud Kafka to Cloud Iceberg Metastore",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "22fe2670-1ce6-4d14-9f6a-7c4b6c6993eb"
+}

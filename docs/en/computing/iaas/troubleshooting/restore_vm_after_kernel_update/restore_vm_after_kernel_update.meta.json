@@ -1,0 +1,14 @@
+{
+  "title": "VM does not boot after a kernel update",
+  "shortDescription": "After installing a new OS kernel, the virtual machine stopped booting",
+  "metaDescription": "After installing a new OS kernel, the virtual machine stopped booting",
+  "sectionTitle": "VM does not boot after a kernel update",
+  "icon": "",
+  "weight": 25,
+  "uuid": "84366140-41e1-4839-959e-7d1df76cc47c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

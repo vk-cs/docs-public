@@ -1,0 +1,17 @@
+{
+  "title": "Server groups",
+  "shortDescription": "Managing the placement of virtual resources in VK Cloud by creating server groups",
+  "metaDescription": "Managing the placement of virtual resources in VK Cloud by creating server groups",
+  "sectionTitle": "Server groups",
+  "weight": 2,
+  "uuid": "3d2f7d42-ddb7-4feb-a38f-97128ef7963b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

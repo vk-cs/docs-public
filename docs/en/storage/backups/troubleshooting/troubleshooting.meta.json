@@ -1,0 +1,16 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Ways to diagnose and resolve backup issues",
+  "metaDescription": "How to troubleshoot the Cloud Backup service in VK Cloud. Ways to diagnose and resolve backup issues",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 5,
+  "uuid": "b42e17ce-f15e-4844-bf76-b092e235c7cc",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

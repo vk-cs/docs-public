@@ -1,0 +1,24 @@
+{
+  "title": "About the Partner Program",
+  "shortDescription": "Capabilities and benefits of the {var(cloud)} partner program",
+  "metaDescription": "Grow your business and earn together with us!",
+  "sectionTitle": "About the Partner Program",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 0,
+  "uuid": "a9693534-6fa4-48a1-a93f-4c9cec91e61b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

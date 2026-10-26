@@ -1,0 +1,18 @@
+{
+  "title": "Creating an image with diskimage-builder",
+  "shortDescription": "How to create a virtual machine image using the diskimage-builder utility",
+  "metaDescription": "How to create a virtual machine image using the diskimage-builder utility.",
+  "sectionTitle": "Creating an image with diskimage-builder",
+  "weight": 8,
+  "uuid": "c084e2f8-4d10-45c0-9470-cb01cc390a75",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

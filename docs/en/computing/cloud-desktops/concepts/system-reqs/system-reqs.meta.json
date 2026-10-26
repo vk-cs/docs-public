@@ -1,0 +1,18 @@
+{
+  "title": "System requirements",
+  "sectionTitle": "System requirements",
+  "shortDescription": "Requirements for the computer of a virtual desktop user",
+  "metaDescription": "What requirements a desktop user's computer must meet to work with the Cloud Desktop Client application.",
+  "icon": "",
+  "weight": 4,
+  "uuid": "3f8deb2d-9cb3-49f9-8ab6-de9db750ca4d",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

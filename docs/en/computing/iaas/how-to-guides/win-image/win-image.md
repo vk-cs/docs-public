@@ -191,7 +191,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 ## 6. Import image to VK Cloud
 
-[Use OpenStack CLI](../../instructions/images/images-manage#importing_an_image) to import the image:
+[Use OpenStack CLI](../../instructions/images/images-manage#iaas-images-manage-import) to import the image:
 
 ```console
 openstack image create \

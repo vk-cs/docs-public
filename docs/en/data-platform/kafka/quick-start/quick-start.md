@@ -15,8 +15,8 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where you want to create an instance of the service.
-1. Go to **Data Platform → Экземпляры сервисов**.
-1. Click the **Создать экземпляр** button.
+1. Go to **Data Platform → Service instances**.
+1. Click the **Create instance** button.
 1. At the **Configuration** step:
 
    1. Select the type of service **Cloud Kafka**.
@@ -31,19 +31,19 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
       - **Type of virtual machine:** `Standard-2-4`.
       - **Disk Type:** `High-IOPS SSD`.
-      - **Disk size:** `50 ГБ`.
+      - **Disk size:** `50 GB`.
 
-   1. **Кластер Kubernetes**: choose **Создать новый кластер**.
+   1. **Kubernetes cluster**: choose **Create a new cluster**.
    1. **Network**: choose **Create new network**.
    1. Choose **Sprut** as SDN.
    1. **Subnet address**: type `10.0.1.0/24`.
-   1. **Availability zone**: `Москва (ME1)`.
+   1. **Availability zone**: `Moscow (ME1)`.
    1. Click the **Next step** button.
 
-1. At the **Учетные данные** step:
+1. At the **Credentials** step:
 
-   1. **Логин администратора для доступа к Kafka**: for example, `kafkaadmin`.
-   1. **Пароль администратора для доступа к Kafka**: click the **Generate** button and save the received password.
+   1. **Administrator login for access to Kafka**: for example, `kafkaadmin`.
+   1. **Administrator password for access to Kafka**: click the **Generate** button and save the received password.
 
       {note:err}
 
@@ -114,7 +114,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
    1. Select the project where the service instance is located.
-   1. Go to **Data Platform → Экземпляры сервисов**.
+   1. Go to **Data Platform → Service instances**.
    1. Open the `vkcloud-demo-kafka` cluster page by clicking on its name.
    1. Go to the **General information** tab.
    1. Write down the address from the **Bootstrap** parameter.

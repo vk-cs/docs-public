@@ -1,0 +1,13 @@
+{
+  "title": "Requirements for SaaS application APIs",
+  "shortDescription": "",
+  "metaDescription": "Requirements for SaaS application APIs",
+  "sectionTitle": "Requirements for SaaS application APIs",
+  "weight": 3,
+  "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

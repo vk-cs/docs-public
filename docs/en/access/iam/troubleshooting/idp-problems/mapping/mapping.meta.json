@@ -1,0 +1,14 @@
+{
+  "title": "Role mapping is not configured",
+  "shortDescription": "When attempting to log in through identity federation, a message appears stating that role mapping for groups is not configured",
+  "metaDescription": "Solution to known issues with identity federation configuration: when attempting to log in through identity federation, a message appears stating that role mapping for a group is not configured",
+  "sectionTitle": "Role mapping is not configured",
+  "icon": "",
+  "weight": 5,
+  "uuid": "d4227505-2c4e-4a75-9312-6208e96704b1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

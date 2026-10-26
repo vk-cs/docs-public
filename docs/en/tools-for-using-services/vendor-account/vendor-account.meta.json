@@ -1,0 +1,14 @@
+{
+  "title": "Vendor Cabinet",
+  "shortDescription": "Vendor management console for managing applications in the Marketplace service",
+  "metaDescription": "A complete toolkit for vendors working with the Marketplace.",
+  "sectionTitle": "Vendor Cabinet",
+  "icon": "",
+  "weight": 3,
+  "uuid": "5a29e08c-8ab3-4a3a-960c-6b853089b80d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

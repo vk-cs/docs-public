@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "Collecting and analyzing logs in Standalone",
+  "metaDescription": "Learn how to view and work with the logs of a deployed service instance in the Standalone version of VK Data Platform",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 2,
+  "uuid": "7cdcea0e-50ad-425e-bd7e-99e491123acc"
+}

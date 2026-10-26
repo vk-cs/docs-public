@@ -1,0 +1,14 @@
+{
+  "title": "Jatoba",
+  "shortDescription": "A secure DBMS based on a modernized PostgreSQL DBMS kernel",
+  "metaDescription": "The Jatoba service for storing and managing data in the VK Data Platform infrastructure",
+  "sectionTitle": "Jatoba",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 12,
+  "uuid": "d8421726-2bc4-4c9b-aadf-2fdbbbe2b206"
+}

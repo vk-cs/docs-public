@@ -1,0 +1,23 @@
+{
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions",
+  "metaDescription": "Support contact channels for partners and answers to frequently asked questions",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 4,
+  "uuid": "5c7f039c-0ea7-4271-ab79-4678b18037bd",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

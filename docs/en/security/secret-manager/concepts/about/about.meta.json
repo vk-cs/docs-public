@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "What a secrets manager is and how it works",
+  "metaDescription": "How the VK Cloud secrets manager works and what its features are: what secrets are and what types they have, how secret versions work.",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 2,
+  "uuid": "88990f49-0ef8-456a-8127-f0cb658e40bf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

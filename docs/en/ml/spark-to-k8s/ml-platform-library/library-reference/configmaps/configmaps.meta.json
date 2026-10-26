@@ -1,0 +1,14 @@
+{
+  "title": "Working with ConfigMaps",
+  "shortDescription": "",
+  "metaDescription": "List of Cloud ML Platform library methods for working with ConfigMaps.",
+  "sectionTitle": "Working with ConfigMaps",
+  "icon": "",
+  "weight": 5,
+  "uuid": "0818ec1b-88f0-4ed9-a32f-1312d27d5d99",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

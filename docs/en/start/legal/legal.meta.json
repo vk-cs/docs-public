@@ -1,0 +1,14 @@
+{
+  "title": "Legal information",
+  "shortDescription": "Key agreements and documents, details for concluding contracts and issuing invoices",
+  "metaDescription": "Key agreements and public Offers of VK Cloud",
+  "sectionTitle": "Legal information",
+  "icon": "",
+  "weight": 6,
+  "uuid": "31d2161c-1450-4801-b340-4116591a8ce2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Block storage disks",
+  "shortDescription": "Types of block storage disks in VK Cloud",
+  "metaDescription": "Types of block storage disks in VK Cloud",
+  "sectionTitle": "Block storage disks",
+  "weight": 1,
+  "uuid": "5ff479bb-65a0-407e-b3cf-477981885a55",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "About the documentation portal",
+  "shortDescription": "Structural elements and formatting features of the documentation",
+  "metaDescription": "This section lists the various structural elements and formatting features used in the VK Cloud documentation.",
+  "sectionTitle": "About the documentation portal",
+  "icon": "",
+  "weight": 8,
+  "uuid": "26fbba17-23b6-4460-95da-a0ce84826cc7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

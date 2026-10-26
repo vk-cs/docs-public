@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "Step-by-step instructions for working with Lakekeeper VK Data Platform: creating and managing an instance",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "b0aa3b81-6fdf-45e1-914f-28af1d7a9fb1"
+}

@@ -9,22 +9,22 @@ To deploy the OpenVPN service in the project::
 1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add) the OpenVPN service:
 
-   1. In the **Настройки Кластера** step, specify VM settings:
+   1. In the **Cluster settings** step, specify VM settings:
 
-      - **Сеть**: select the previously created network with Internet access and subnet. The external IP address will be assigned automatically.
+      - **Network**: select the previously created network with Internet access and subnet. The external IP address will be assigned automatically.
       - Choose other VM parameters at your discretion.
 
    1. Click the **Next Step** button.
-   1. In the **Настройки OpenVPN** step, specify network connectivity settings:
+   1. In the **OpenVPN settings** step, specify network connectivity settings:
 
-      - **Подсеть клиентских адресов**: specify the subnet address where the service will assign addresses for user devices. Ensure that this address space does not overlap with the address space being configured for access.
-      - **Адрес DNS**: the DNS server address that OpenVPN will use to resolve domain names to IP addresses. It can be a local or external server if it is accessible from the subnet.
-      - **Активировать full-tunneling**: if this option is enabled, all user traffic will be routed through the VPN. This will increase the server load if large data streams are being transmitted. Disable the option if you only need to route user traffic through the VPN to access the subnet.
-      - **Адреса подсетей**: specify the subnet addresses, separated by commas, that need to be accessed. Example: `10.0.0.0/24,10.0.10.0/24`. The subnets specified in this field will be accessible from the subnet where the service was deployed. The deployment subnet is specified by default in the service, so there is no need to add it here. This parameter is ignored if the **Активировать full-tunneling** option is enabled.
+      - **Client address subnet**: specify the subnet address where the service will assign addresses for user devices. Ensure that this address space does not overlap with the address space being configured for access.
+      - **DNS address**: the DNS server address that OpenVPN will use to resolve domain names to IP addresses. It can be a local or external server if it is accessible from the subnet.
+      - **Enable full-tunneling**: if this option is enabled, all user traffic will be routed through the VPN. This will increase the server load if large data streams are being transmitted. Disable the option if you only need to route user traffic through the VPN to access the subnet.
+      - **Subnet addresses**: specify the subnet addresses, separated by commas, that need to be accessed. Example: `10.0.0.0/24,10.0.10.0/24`. The subnets specified in this field will be accessible from the subnet where the service was deployed. The deployment subnet is specified by default in the service, so there is no need to add it here. This parameter is ignored if the **Enable full-tunneling** option is enabled.
 
       {note:warn}
 
-      Check the router settings in the subnets: network connectivity has to be set between subnets in the **Адреса подсетей** field.
+      Check the router settings in the subnets: network connectivity has to be set between subnets in the **Subnet addresses** field.
 
       {/note}
 

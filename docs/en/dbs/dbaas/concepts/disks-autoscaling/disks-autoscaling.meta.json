@@ -1,0 +1,14 @@
+{
+  "title": "Disk autoscaling",
+  "shortDescription": "How automatic disk scaling works for DB instances",
+  "metaDescription": "Cloud Databases: how automatic disk scaling works in the service",
+  "sectionTitle": "Disk autoscaling",
+  "icon": "",
+  "weight": 5,
+  "uuid": "aaba7aac-a5db-4658-a3cf-5526fd5dd9c1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

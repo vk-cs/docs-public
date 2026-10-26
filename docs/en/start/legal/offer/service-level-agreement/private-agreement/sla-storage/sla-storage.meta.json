@@ -1,0 +1,16 @@
+{
+  "title": "Private Service Level Agreement for the File Storage Service",
+  "shortDescription": "",
+  "metaDescription": "This document defines the Service Level of the File Storage Service and is an integral part of the Agreement and the General Service Level Agreement",
+  "sectionTitle": "Private Service Level Agreement for the File Storage Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "0c75541a-d01d-48eb-b392-94b30354b2e4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

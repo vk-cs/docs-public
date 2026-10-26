@@ -1,0 +1,14 @@
+{
+  "title": "Viewing deals",
+  "shortDescription": "How to view information about registered deals",
+  "metaDescription": "How to view information about registered deals: description of working with deals in the VK Cloud partner dashboard",
+  "sectionTitle": "Viewing deals",
+  "icon": "",
+  "weight": 2,
+  "uuid": "f5d42073-a5de-4ca1-a00c-af499561d2bf",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

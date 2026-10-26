@@ -1,0 +1,17 @@
+{
+  "title": "File storage",
+  "shortDescription": "File storage in VK Cloud",
+  "metaDescription": "File storage in VK Cloud",
+  "sectionTitle": "File storage",
+  "weight": 3,
+  "uuid": "d9f279a5-2235-4ff0-ad54-dc311f3884b6",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

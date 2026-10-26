@@ -1,41 +1,41 @@
-## Просмотр списка объектов
+## Viewing the list of objects
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Выберите проект, в котором находится нужный бакет.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите на имя нужного бакета.
+1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
       ```console
-      aws s3 ls s3://<имя_бакета> --endpoint-url <домен>
+      aws s3 ls s3://<bucket_name> --endpoint-url <domain>
       ```
 
-      Здесь:
+      Here:
 
-      - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+      - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+         - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+         - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды просмотра списка объектов)}
+   {cut(Example command for viewing the list of objects)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3 ls s3://my-bucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      Пример ответа:
+      Response example:
 
       ```console
                                     PRE folder/
@@ -48,17 +48,17 @@
 
    {/cut}
 
-Полное описание операций просмотра объектов доступно в [официальной документации AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
+A full description of object viewing operations is available in the [official AWS CLI documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
 
 {/tab}
 
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Go if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```go
    package main
@@ -75,21 +75,21 @@
    const defaultRegion = "ru-msk"
 
    func main() {
-	   // Создание сессии
+	   // Create a session
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису VK Object Storage
+	   // Connect to the VK Object Storage service
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
-	   // получение списка объектов в бакете
+	   // get the list of objects in the bucket
 	   result, err := svc.ListObjectsV2(&s3.ListObjectsV2Input{
 		   Bucket: aws.String(bucket),
 	   })
 	   if err != nil {
 		   log.Fatalf("Unable to list items in bucket %q, %v", bucket, err)
 	   } else {
-         // итерирование по объектам
+         // iterate over the objects
 		   for _, item := range result.Contents {
 			log.Printf("Object: %s, size: %d\n", aws.StringValue(item.Key), aws.Int64Value(item.Size))
 		   }
@@ -97,29 +97,29 @@
    }
    ```
 
-   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   The values of the `vkCloudHotboxEndpoint` and `defaultRegion` variables must match the account's [region](../../../../../tools-for-using-services/account/concepts/regions):
 
    - `vkCloudHotboxEndpoint`:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — for the Moscow region;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — for the Kazakhstan region.
 
    - `defaultRegion`:
 
-      - `ru-msk` — для региона Москва;
-      - `kz-ast` — для региона Казахстан.
+      - `ru-msk` — for the Moscow region;
+      - `kz-ast` — for the Kazakhstan region.
 
-Команда `ListObjectsV2` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
+The `ListObjectsV2` command is described in detail in the [official documentation for the aws-sdk-go library](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListObjectsV2).
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Python if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```python
    import boto3
@@ -132,63 +132,63 @@
    print(key['Key'])
    ```
 
-Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+The value of the `endpoint_url` variable must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-- `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-- `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+- `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+- `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-Команда `list_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
+The `list_object` command is described in detail in the [official documentation for the boto3 library](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
 {/tab}
 
 {/tabs}
 
-## Скачивание объекта
+## Downloading an object
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Выберите проект, в котором находится нужный бакет.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите на имя нужного бакета.
-1. Выполните одно из действий для нужного объекта:
+1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need.
+1. Do one of the following for the object you need:
 
-   - Выберите с помощью флажка объект, затем нажмите кнопку **Скачать**.
-   - Раскройте меню объекта и выберите пункт **Скачать файл**.
+   - Select the object using the checkbox, then click the **Download** button.
+   - Expand the object's menu and select **Download file**.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и перейдите в директорию, в которую нужно скачать объект.
+1. Open the console and go to the directory where you want to download the object.
 
-1. Выполните команду:
+1. Run the command:
 
    ```console
-   aws s3api get-object --bucket <имя_бакета> --key <ключ_объекта> <имя_загруженного файла> --endpoint-url <домен>
+   aws s3api get-object --bucket <bucket_name> --key <object_key> <downloaded_file_name> --endpoint-url <domain>
    ```
 
-   Здесь:
+   Here:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
-   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<object_key>` — the object name and the path to it, including directories, if any.
+   - `<downloaded_file_name>` — the name that will be assigned to the downloaded object.
+   - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+       - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды скачивания объекта)}
+   {cut(Example command for downloading an object)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3api get-object --bucket my-bucket --key folder/my-object.exe uploaded-file.exe --endpoint-url   https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      Пример ответа:
+      Response example:
 
       ```json
       {
@@ -205,11 +205,11 @@
 
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Go if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```go
    package main
@@ -228,16 +228,16 @@
    )
 
    func main() {
-	   // Создание сессии
+	   // Create a session
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису VK Object Storage
+	   // Connect to the VK Object Storage service
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	   bucket := "gobucket"
 	   key := "test_string.txt"
 
-	   // Извлечение объекта из бакета
+	   // Retrieve the object from the bucket
 	   if result, err := svc.GetObject(&s3.GetObjectInput{
 		   Bucket: aws.String(bucket),
 		   Key:    aws.String(key),
@@ -252,29 +252,29 @@
 
    ```
 
-   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   The values of the `vkCloudHotboxEndpoint` and `defaultRegion` variables must match the account's [region](../../../../../tools-for-using-services/account/concepts/regions):
 
    - `vkCloudHotboxEndpoint`:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — for the Moscow region;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — for the Kazakhstan region.
 
    - `defaultRegion`:
 
-      - `ru-msk` — для региона Москва;
-      - `kz-ast` — для региона Казахстан.
+      - `ru-msk` — for the Moscow region;
+      - `kz-ast` — for the Kazakhstan region.
 
-   Команда `GetObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
+   The `GetObject` command is described in detail in the [official documentation for the aws-sdk-go library](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Python if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```python
    import boto3
@@ -286,70 +286,70 @@
    print(response['Body'].read())
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   The value of the `endpoint_url` variable must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   Команда `get_object` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_objects).
+   The `get_object` command is described in detail in the [official documentation for the boto3 library](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
 {/tab}
 
 {/tabs}
 
-## Предоставление доступа к объекту
+## Granting access to an object
 
-Загруженные в бакет объекты по умолчанию имеют уровень доступа `private`, то есть их можно скачать только:
+Objects uploaded to a bucket have the `private` access level by default, which means they can only be downloaded:
 
-- в личном кабинете VK Cloud;
-- через CLI, API, SDK и файловые менеджеры, если есть ключи доступа к бакету или аккаунту.
+- in the VK Cloud management console;
+- via CLI, API, SDK, and file managers, if there are access keys to the bucket or account.
 
-Вы можете изменить уровень доступа объекта, чтобы сделать его доступным сторонним пользователям. Уровни доступа соответствуют [стандартным ACL](../../access-management/s3-acl). По умолчанию доступны уровни:
+You can change the object's access level to make it available to third-party users. Access levels correspond to [standard ACLs](../../access-management/s3-acl). The following levels are available by default:
 
-- `private` — полные права доступа при наличии ключей доступа к бакету или аккаунту, всем остальным объект не доступен;
-- `public-read` — полные права доступа при наличии ключей, остальным пользователям VK Cloud и сторонним пользователям объект доступен только для чтения;
-- `authenticated-read` — полные права доступа при наличии ключей, остальным пользователям VK Cloud объект доступен только для чтения.
+- `private` — full access rights if you have access keys to the bucket or account; the object is not available to anyone else;
+- `public-read` — full access rights if you have the keys; other VK Cloud users and third-party users have read-only access to the object;
+- `authenticated-read` — full access rights if you have the keys; other VK Cloud users have read-only access to the object.
 
-Чтобы изменить уровень доступа к объекту:
+To change an object's access level:
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-Это групповая операция: при необходимости можно изменить настройки доступа сразу для нескольких объектов, выбрав их с помощью флажков.
+This is a bulk operation: if needed, you can change access settings for several objects at once by selecting them with the checkboxes.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Выберите проект, в котором находится нужный бакет.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите на имя нужного бакета.
-1. Раскройте меню нужного объекта и выберите **Доступ к файлу**.
-1. В поле **Настройка ACL** выберите нужную настройку доступа и нажмите **Сохранить изменения**. При выборе `public-read` или `authenticated-read` после сохранения изменений появится ссылка на доступ к объекту.
-1. Скопируйте ссылку и закройте окно настройки доступа.
-1. Отправьте ссылку пользователям или разместите ее на стороннем ресурсе для прямого доступа к объекту.
+1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need.
+1. Expand the menu of the object you need and select **File access**.
+1. In the **ACL settings** field, select the access setting you need and click **Save changes**. If you select `public-read` or `authenticated-read`, a link for accessing the object will appear after you save the changes.
+1. Copy the link and close the access settings window.
+1. Send the link to users or place it on a third-party resource for direct access to the object.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
       ```console
-      aws s3api put-object-acl --bucket <имя_бакета> --key <ключ_объекта> --acl <настройка_acl> --endpoint-url <домен>
+      aws s3api put-object-acl --bucket <bucket_name> --key <object_key> --acl <acl_setting> --endpoint-url <domain>
       ```
 
-      Здесь:
+      Here:
 
-      - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-      - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
-      - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-         - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-         - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+      - `<object_key>` — the object name and the path to it, including directories, if any.
+      - `<acl_setting>` — the ACL access level. If the specified access level is not configured in the project, the object will be assigned the `private` access level.
+      - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+         - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+         - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды просмотра списка объектов)}
+   {cut(Example command for viewing the list of objects)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3api put-object-acl --bucket my-bucket --key picture.png --acl public-read --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
@@ -357,47 +357,47 @@
 
    {/cut}
 
-Полное описание операции изменения ACL объекта доступно в [официальной документации AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
+A full description of the object ACL modification operation is available in the [official AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/reference/s3api/put-object-acl.html).
 
 {/tab}
 
 {/tabs}
 
-## Предоставление доступа к объекту по подписанному URL
+## Granting access to an object via a presigned URL
 
-Подписанный URL предоставляет полный доступ к объекту стороннему пользователю, но ограничен по времени.
+A presigned URL provides full access to an object for a third-party user, but is limited in time.
 
-Для генерации подписанного URL:
+To generate a presigned URL:
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
    ```console
-   aws s3 presign s3://<имя_бакета>/<ключ_объекта> --endpoint-url <домен> --expires-in <время_действия>
+   aws s3 presign s3://<bucket_name>/<object_key> --endpoint-url <domain> --expires-in <validity_period>
    ```
 
-   Здесь:
+   Here:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
-   - `<время_действия>` — время действия доступа в секундах. Если не указано, ссылка будет действовать 3600 секунд.
+   - `<object_key>` — the object name and the path to it, including directories, if any.
+   - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+       - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+   - `<validity_period>` — the access validity period in seconds. If not specified, the link will be valid for 3600 seconds.
 
-   {cut(Пример команды формирования подписанного URL)}
+   {cut(Example command for generating a presigned URL)}
 
-   Пример команды :
+   Command example:
 
    ```console
    aws s3 presign s3://my-bucket/my-object.png --endpoint-url https://hb.ru-msk.vkcloud-storage.ru --expires-in 300000
    ```
 
-   Пример ответа:
+   Response example:
 
    ```http
    https://hb.ru-msk.vkcloud-storage.ru/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
@@ -409,11 +409,11 @@
 
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Go if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```go
    package main
@@ -447,9 +447,9 @@
 	   })
 
 	   presigner := s3.NewPresignClient(client)
-	   // имя бакета, где находится объект
+	   // the name of the bucket where the object is located
 	   bucketName := "my-bucket"
-	   // имя объекта
+	   // the object name
 	   objectKey := "picture.png"
 	   lifeTimeSeconds := int64(60)
 
@@ -468,27 +468,27 @@
 	   fmt.Printf("%s", request.URL)
    }
    ```
-   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   The values of the `vkCloudHotboxEndpoint` and `defaultRegion` variables must match the account's [region](../../../../../tools-for-using-services/account/concepts/regions):
 
    - `vkCloudHotboxEndpoint`:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — for the Moscow region;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — for the Kazakhstan region.
 
    - `defaultRegion`:
 
-      - `ru-msk` — для региона Москва;
-      - `kz-ast` — для региона Казахстан.
+      - `ru-msk` — for the Moscow region;
+      - `kz-ast` — for the Kazakhstan region.
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Python if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```python
    import argparse
@@ -522,49 +522,49 @@
       print("Error creating link")
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   The value of the `endpoint_url` variable must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
 {/tab}
 
 {/tabs}
 
-## Копирование объекта
+## Copying an object
 
-Инструкция подходит для копирования объекта в пределах одного бакета или между бакетами одного проекта.
+This guide is suitable for copying an object within a single bucket or between buckets of the same project.
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
    ```console
-   aws s3 cp s3://<бакет_источник>/<ключ_объекта> s3://<бакет_приемник>/<ключ_объекта> --endpoint-url=<домен>
+   aws s3 cp s3://<source_bucket>/<object_key> s3://<destination_bucket>/<object_key> --endpoint-url=<domain>
    ```
 
-   Здесь:
+   Here:
 
-   - `<бакет_источник>` — имя бакета, из которого копируется объект.
-   - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<source_bucket>` — the name of the bucket the object is copied from.
+   - `<destination_bucket>` — the name of the bucket the object is copied to. If the names match, the object is copied within the same bucket.
+   - `<object_key>` — the object name and the path to it, including directories, if any.
+   - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+       - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды копирования объекта в другой бакет)}
+   {cut(Example command for copying an object to another bucket)}
 
-   Пример команды:
+   Command example:
 
    ```console
    aws s3 cp s3://my-bucket/my-picture.png s3://my-another-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
    ```
 
-   Пример ответа:
+   Response example:
 
    ```console
    copy: s3://my-bucket/my-picture.png to s3://my-another-bucket/my-picture.png
@@ -576,11 +576,11 @@
 
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Go if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```go
    package main
@@ -600,13 +600,13 @@
    )
 
    func main() {
-	   // Создание сессии
+	   // Create a session
 	   sess, _ := session.NewSession()
 
-	   // Подключение к сервису VK Object Storage
+	   // Connect to the VK Object Storage service
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
-	   // Копирование объекта из одного бакета в другой
+	   // Copy an object from one bucket to another
 
 	   sourceBucket := "gobucket"
 	   sourceKey := "test_string.txt"
@@ -625,29 +625,29 @@
    }
    ```
 
-   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   The values of the `vkCloudHotboxEndpoint` and `defaultRegion` variables must match the account's [region](../../../../../tools-for-using-services/account/concepts/regions):
 
    - `vkCloudHotboxEndpoint`:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — for the Moscow region;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — for the Kazakhstan region.
 
    - `defaultRegion`:
 
-      - `ru-msk` — для региона Москва;
-      - `kz-ast` — для региона Казахстан.
+      - `ru-msk` — for the Moscow region;
+      - `kz-ast` — for the Kazakhstan region.
 
-   Команда `CopyObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
+   The `CopyObject` command is described in detail in the [official documentation for the aws-sdk-go library](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CopyObjecty).
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Python if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```python
 
@@ -668,48 +668,48 @@
 
    s3_client.copy(copy_source, target_bucket_name, target_path)
    ```
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   The value of the `endpoint_url` variable must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   Команда `copy` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
+   The `copy` command is described in detail in the [official documentation for the boto3 library](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy).
 
 {/tab}
 
 {/tabs}
 
-## Копирование всех объектов бакета
+## Copying all objects of a bucket
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
    ```console
-   aws s3 cp --recursive s3://<бакет_источник> s3://<бакет_приемник> --endpoint-url=<домен>
+   aws s3 cp --recursive s3://<source_bucket> s3://<destination_bucket> --endpoint-url=<domain>
    ```
 
-   Здесь:
+   Here:
 
-   - `<бакет_источник>` — имя бакета, из которого копируется объект.
-   - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<source_bucket>` — the name of the bucket the object is copied from.
+   - `<destination_bucket>` — the name of the bucket the object is copied to. If the names match, the object is copied within the same bucket.
+   - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+       - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды копирования всех объектов бакета в другой бакет)}
+   {cut(Example command for copying all objects of a bucket to another bucket)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3 cp --recursive s3://my-bucket s3://my-another-bucket --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      Пример ответа:
+      Response example:
 
       ```console
       copy: s3://my-bucket/video.mp4 to s3://my-another-bucket/video.mp4
@@ -724,55 +724,55 @@
 
 {/tabs}
 
-## Удаление объекта
+## Deleting an object
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-Это групповая операция: при необходимости можно удалить сразу несколько объектов, выбрав их с помощью флажков.
+This is a bulk operation: if needed, you can delete several objects at once by selecting them with the checkboxes.
 
-Для удаления объекта:
+To delete an object:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Выберите проект, в котором находится нужный бакет.
-1. Перейдите в раздел **Объектное хранилище → Бакеты**.
-1. Нажмите на имя нужного бакета. Откроется страница с информацией о бакете на вкладке **Папки и файлы**.
-1. Выполните одно из действий для нужного объекта:
+1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need. A page with information about the bucket will open on the **Folders and files** tab.
+1. Do one of the following for the object you need:
 
-   - Выберите с помощью флажка объект, затем нажмите кнопку **Удалить**.
-   - Раскройте меню объекта и выберите пункт **Удалить файл**.
+   - Select the object using the checkbox, then click the **Delete** button.
+   - Expand the object's menu and select **Delete file**.
 
-1. Подтвердите удаление.
+1. Confirm the deletion.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен.
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
 
-1. Откройте консоль и выполните команду:
+1. Open the console and run the command:
 
    ```console
-   aws s3 rm s3://<имя_бакета>/<ключ_объекта> --endpoint-url=<домен>
+   aws s3 rm s3://<bucket_name>/<object_key> --endpoint-url=<domain>
    ```
 
-   Здесь:
+   Here:
 
-   - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
-   - `<домен>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
-       - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-       - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `<object_key>` — the object name and the path to it, including directories, if any.
+   - `<domain>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+       - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+       - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды удаления объекта)}
+   {cut(Example command for deleting an object)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3 rm s3://my-bucket/my-picture.png --endpoint-url=https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      Пример ответа:
+      Response example:
 
       ```console
       delete: s3://my-bucket/my-picture.png
@@ -784,11 +784,11 @@
 
 {tab(Golang SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Go, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Go if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```go
    package main
@@ -807,15 +807,15 @@
    )
 
    func main() {
-	   // Создание сессии
+	   // Create a session
 	   sess, err := session.NewSession()
 	   if err != nil {
 		   log.Fatalf("Unable to create session, %v", err)
 	   }
-	   // Подключение к сервису VK Object Storage
+	   // Connect to the VK Object Storage service
 	   svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
-	   // Удаление объекта из бакета
+	   // Delete an object from the bucket
       bucket := "gobucket"
 	   key := "test_string.txt"
 
@@ -828,7 +828,7 @@
 		   log.Printf("Object %q deleted from bucket %q\n", key, bucket)
 	   }
 
-      // Удаление множества объектов
+      // Delete multiple objects
 	   if _, err := svc.DeleteObjects(&s3.DeleteObjectsInput{
 		   Bucket: aws.String(bucket),
 		   Delete: &s3.Delete{
@@ -849,29 +849,29 @@
    }
 
    ```
-   Значения переменных `vkCloudHotboxEndpoint` и `defaultRegion` должны соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
+   The values of the `vkCloudHotboxEndpoint` and `defaultRegion` variables must match the account's [region](../../../../../tools-for-using-services/account/concepts/regions):
 
    - `vkCloudHotboxEndpoint`:
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — для региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — для региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — for the Moscow region;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — for the Kazakhstan region.
 
    - `defaultRegion`:
 
-      - `ru-msk` — для региона Москва;
-      - `kz-ast` — для региона Казахстан.
+      - `ru-msk` — for the Moscow region;
+      - `kz-ast` — for the Kazakhstan region.
 
-   Команды [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) и [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) подробно описаны в официальной документации к библиотеке aws-sdk-go.
+   The [DeleteObject](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObject) and [DeleteObjects](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.DeleteObjects) commands are described in detail in the official documentation for the aws-sdk-go library.
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Установите и настройте [SDK](../../../connect/s3-sdk) для Python, если он еще не установлен.
+1. Install and configure the [SDK](../../../connect/s3-sdk) for Python if you haven't done so already.
 
-1. Добавьте [реквизиты подключения](../../../connect/s3-sdk) к VK Object Storage в переменные окружения или конфигурационный файл, если этого не было сделано ранее.
+1. Add the [connection credentials](../../../connect/s3-sdk) for VK Object Storage to environment variables or a configuration file if you haven't done so already.
 
-1. Добавьте код в свой проект:
+1. Add the code to your project:
 
    ```python
    import boto3
@@ -880,70 +880,70 @@
 
    test_bucket_name = 'boto3-test-bucket-name'
 
-   #Удаление одного объекта
+   #Deleting a single object
    s3_client.delete_object(Bucket='boto3-bucket-name-test', Key='object_name.txt',)
 
-   #Удаление множества объектов
+   #Deleting multiple objects
    object_to_delete = [{'Key':'objectkey1.txt'}, {'Key':'objectkey2.txt'}]
    s3_client.delete_objects(Bucket=test_bucket_name, Delete={'Objects': object_to_delete})
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+   The value of the `endpoint_url` variable must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-   - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+   - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   Команда `delete_objects` подробно описана в [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
+   The `delete_objects` command is described in detail in the [official documentation for the boto3 library](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).
 
 {/tab}
 
 {/tabs}
 
-## Удаление частей загруженного объекта
+## Deleting parts of an uploaded object
 
-Если [составная загрузка](/ru/storage/s3/concepts/features#object_uploading "change-lang") не завершена, объект не создается и не может использоваться, но хранение загруженных частей [тарифицируется](../../../tariffication). Чтобы средства не списывались, удаляйте составные загрузки, которые не будут завершены.
+If a [multipart upload](/en/storage/s3/concepts/features#object_uploading) is not completed, the object is not created and cannot be used, but storage of the uploaded parts is [charged](../../../tariffication). To avoid being charged, delete multipart uploads that will not be completed.
 
-Вы можете настроить автоматическое удаление незавершенных загрузок через жизненный цикл объектов или удалить загрузку вручную.
+You can configure automatic deletion of incomplete uploads via the object lifecycle, or delete the upload manually.
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-Чтобы узнать, есть ли у вас незавершенные составные загрузки:
+To find out if you have incomplete multipart uploads:
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Object Storage** → **Бакеты**.
-1. Нажмите на имя нужного бакета и перейдите на вкладку **Multipart**.
+1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
+1. Go to the **Object Storage** → **Buckets** section.
+1. Click the name of the bucket you need and go to the **Multipart** tab.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
-1. Откройте консоль и выполните команду:
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already. Set the output format to JSON or YAML, since text formats are not recognized when running multipart upload or deletion commands.
+1. Open the console and run the command:
 
    ```console
-   aws s3api list-multipart-uploads --bucket <имя_бакета> --endpoint-url <endpoint-url>
+   aws s3api list-multipart-uploads --bucket <bucket_name> --endpoint-url <endpoint-url>
    ```
 
-   Здесь:
+   Here:
 
-    - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
+    - `<bucket_name>` — the name of the bucket for which you need to delete incomplete uploads.
 
-    - `<endpoint-url>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<endpoint-url>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   {cut(Пример команды просмотра незавершенных загрузок)}
+   {cut(Example command for viewing incomplete uploads)}
 
-      Пример команды:
+      Command example:
 
       ```console
       aws s3api list-multipart-uploads --bucket mybucket --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
       ```
 
-      Пример ответа:
+      Response example:
 
       ```json
       {
@@ -973,54 +973,54 @@
 
 {/tabs}
 
-Чтобы удалить незавершенные загрузки:
+To delete incomplete uploads:
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-Это групповая операция: при необходимости можно удалить сразу несколько частей, выбрав их с помощью флажков.
+This is a bulk operation: if needed, you can delete several parts at once by selecting them with the checkboxes.
 
-1. [Перейдите](https://msk.cloud.vk.com/app/en) в личный кабинет VK Cloud.
-1. Перейдите в раздел **Object Storage** → **Бакеты**.
-1. Нажмите на имя нужного бакета и перейдите на вкладку **Multipart**.
-1. Выполните одно из действий для нужной части:
+1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
+1. Go to the **Object Storage** → **Buckets** section.
+1. Click the name of the bucket you need and go to the **Multipart** tab.
+1. Do one of the following for the part you need:
 
-   - Выберите с помощью флажка часть, затем нажмите кнопку **Удалить** над таблицей.
-   - Выберите часть, которую нужно удалить, и нажмите на значок ![Удалить](assets/delete-icon.svg "inline") справа.
-1. Подтвердите удаление.
+   - Select the part using the checkbox, then click the **Delete** button above the table.
+   - Select the part you want to delete and click the ![Delete](assets/delete-icon.svg "inline") icon on the right.
+1. Confirm the deletion.
 
 {/tab}
 
 {tab(AWS CLI)}
 
-1. Установите и настройте [AWS CLI](../../../connect/s3-cli), если он еще не установлен. Установите выходной формат JSON или YAML, так как текстовые форматы не распознаются при выполнении команд составной загрузки или удаления.
-1. Откройте консоль и выполните команду:
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already. Set the output format to JSON or YAML, since text formats are not recognized when running multipart upload or deletion commands.
+1. Open the console and run the command:
 
    ```console
-   aws s3api abort-multipart-upload --bucket <имя_бакета> --key <ключ_объекта> --upload-id <UploadId> --endpoint-url <endpoint-url>
+   aws s3api abort-multipart-upload --bucket <bucket_name> --key <object_key> --upload-id <UploadId> --endpoint-url <endpoint-url>
    ```
 
-   Здесь:
+   Here:
 
-    - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
+    - `<bucket_name>` — the name of the bucket for which you need to delete incomplete uploads.
 
-    - `<ключ_объекта>` — **Название** объекта на вкладке **Multipart** в личном кабинете или значение параметра `Key` в ответе AWS CLI.
+    - `<object_key>` — the **Name** of the object on the **Multipart** tab in the management console, or the value of the `Key` parameter in the AWS CLI response.
 
-    - `<UploadId>` — **ID** объекта на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
+    - `<UploadId>` — the **ID** of the object on the **Multipart** tab in the management console, or the value of the `UploadId` parameter in the AWS CLI response.
 
-    - `<endpoint-url>` — домен сервиса VK Object Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
+    - `<endpoint_url>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
 
-      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
-      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
+      - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+      - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
 
-   Пример выполнения команды:
+   Command execution example:
 
    ```console
    aws s3api abort-multipart-upload --bucket mybucket --key inupload.avi --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
    ```
 
-В результате все незавершенные загрузки будут отменены, а загруженные части — удалены.
+As a result, all incomplete uploads will be canceled, and the uploaded parts will be deleted.
 
 {/tab}
 

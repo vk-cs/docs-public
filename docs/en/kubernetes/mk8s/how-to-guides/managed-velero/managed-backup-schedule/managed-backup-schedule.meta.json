@@ -1,0 +1,14 @@
+{
+  "title": "Scheduled backup",
+  "shortDescription": "How to use Velero to back up and restore second-generation cluster resources on a schedule",
+  "metaDescription": "Configure scheduled backups of a Kubernetes cluster using Velero with cron format schedules. Make a copy of the desired namespace, check the schedules, and restore data if needed",
+  "sectionTitle": "Scheduled backup",
+  "icon": "",
+  "weight": 2,
+  "uuid": "e38363c7-0687-4f80-9dac-4392287a184b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

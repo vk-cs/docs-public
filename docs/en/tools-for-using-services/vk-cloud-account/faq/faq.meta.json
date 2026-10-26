@@ -1,0 +1,14 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about working with a {var(cloud)} account",
+  "metaDescription": "Answers to frequently asked questions about a VK Cloud account.",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 6,
+  "uuid": "9d99bc9c-665a-4bdd-8507-11932c17f098",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

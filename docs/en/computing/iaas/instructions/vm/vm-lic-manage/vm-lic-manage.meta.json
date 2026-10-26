@@ -1,0 +1,14 @@
+{
+  "title": "Microsoft RDS License Management",
+  "shortDescription": "How to activate Remote Desktop Services licenses, change their quantity or type",
+  "metaDescription": "How to activate Remote Desktop Services licenses, change their quantity or type",
+  "sectionTitle": "Microsoft RDS License Management",
+  "icon": "",
+  "weight": 8,
+  "uuid": "f29fd844-7f88-4012-9c86-9040be405e3d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

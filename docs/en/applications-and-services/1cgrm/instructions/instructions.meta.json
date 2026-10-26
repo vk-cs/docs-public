@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "sectionTitle": "Step-by-step instructions",
+  "shortDescription": "Creating a user, managing a connected 1C application",
+  "metaDescription": "How to create a user for working with a 1C application. How to access a connected 1C application via VK Cloud, edit it and delete it",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b6577ca8-5277-4255-a82e-06795949f36c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

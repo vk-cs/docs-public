@@ -1,0 +1,14 @@
+{
+  "title": "{var(s3)}",
+  "shortDescription": "API operations, request and response structures, error codes",
+  "metaDescription": "API operations, request and response structures, error codes.",
+  "sectionTitle": "{var(s3)}",
+  "icon": "",
+  "weight": 5,
+  "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

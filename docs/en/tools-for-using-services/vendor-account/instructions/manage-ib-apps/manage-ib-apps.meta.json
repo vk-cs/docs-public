@@ -1,0 +1,14 @@
+{
+  "title": "Managing image-based applications",
+  "shortDescription": "How to add an image-based application to Marketplace, update it, archive it, or integrate it with the Cloud Monitoring service",
+  "metaDescription": "A guide to adding image-based applications to Marketplace, updating and archiving them. Instructions for integrating an image-based application with the Cloud Monitoring service",
+  "sectionTitle": "Managing image-based applications",
+  "weight": 4,
+  "isBeta": true,
+  "uuid": "3283eb56-f740-47a3-aae2-3812231a7a63",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

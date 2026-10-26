@@ -1,0 +1,14 @@
+{
+  "title": "Migrating workloads before resource migration",
+  "shortDescription": "",
+  "metaDescription": "How to migrate a workload in Kubernetes clusters to another availability zone before resource migration in Managed Containers",
+  "sectionTitle": "Migrating workloads before resource migration",
+  "icon": "",
+  "weight": 1,
+  "uuid": "84cbf637-b86a-4ad6-b8d8-e21775e261e7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

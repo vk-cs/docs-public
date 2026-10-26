@@ -59,7 +59,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@objects_detect_ok_car_number.jpg;type=image/jpeg' \
@@ -201,7 +201,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -241,7 +241,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -275,7 +275,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/objects/detect?oauth_token=<your token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \

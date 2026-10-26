@@ -13,7 +13,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
-1. Go to **Data Platform → Экземпляры сервисов**.
+1. Go to **Data Platform → Service instances**.
 1. Click the **Add an instance** or **Create an instance** button.
 1. At the **Configuration** step:
 
@@ -35,7 +35,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       If the required cluster is not in the list:
 
-      1. Choose **Создать новый кластер** option.
+      1. Choose **Create a new cluster** option.
       1. Select the network and subnet for the cluster from the drop-down list **Network**.
 
          If the required network is not in the list:
@@ -80,8 +80,8 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
-1. Go to **Data Platform → Экземпляры сервисов**.
-1. Click the **Создать инстанс** or **Создать экземпляр** button.
+1. Go to **Data Platform → Service instances**.
+1. Click the **Create an instance** or **Create instance** button.
 1. At the **Configuration** step:
 
    1. Select the type of service **Kafka**.
@@ -96,7 +96,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       If the required cluster is not in the list:
 
-      1. Choose **Создать новый кластер** option.
+      1. Choose **Create a new cluster** option.
       1. Select the network and subnet for the cluster from the drop-down list **Network**.
 
          If the required network is not in the list:
@@ -147,7 +147,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
    1. Click the **Create** button.
 
-1. At the **Учетные данные** step:
+1. At the **Credentials** step:
 
    1. Set the administrator login to access Kafka.
    1. Create or generate an administrator password.

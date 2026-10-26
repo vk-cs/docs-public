@@ -1,0 +1,14 @@
+{
+  "title": "Creating a subnet with custom parameters",
+  "shortDescription": "How to create a subnet without DNS, DHCP, a gateway, and with an arbitrary mask",
+  "metaDescription": "How to create a subnet without DNS, DHCP, a gateway, and with an arbitrary mask",
+  "sectionTitle": "Creating a subnet with custom parameters",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "597623e9-d3cb-4485-a094-dd4eca69fc36"
+}

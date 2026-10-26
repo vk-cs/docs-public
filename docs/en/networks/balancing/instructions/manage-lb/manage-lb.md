@@ -267,7 +267,7 @@ If the balancer network is connected to a router with Internet access, you can a
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Get port ID](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
-1. [Assign a floating IP address](/en/networks/vnet/instructions/ip/floating-ip#bindind_a_floating_ip_address) to a port with this ID.
+1. [Assign a floating IP address](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-associate) to a port with this ID.
 
 {/tab}
 

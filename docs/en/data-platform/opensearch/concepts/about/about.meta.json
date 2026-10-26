@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Information about the OpenSearch service",
+  "metaDescription": "OpenSearch in VK Data Platform: information about the service",
+  "sectionTitle": "About the service",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "32aa6fc5-d905-4cc0-ba06-1f5da78f1911"
+}

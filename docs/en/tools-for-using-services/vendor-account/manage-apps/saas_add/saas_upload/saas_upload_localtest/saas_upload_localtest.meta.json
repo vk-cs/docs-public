@@ -1,0 +1,12 @@
+{
+  "title": "Local broker testing",
+  "shortDescription": "",
+  "metaDescription": "Local broker testing",
+  "sectionTitle": "Local broker testing",
+  "uuid": "0bb7e012-6206-473b-a3ec-c8faba18c34a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

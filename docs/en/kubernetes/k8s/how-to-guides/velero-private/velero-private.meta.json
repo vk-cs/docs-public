@@ -1,0 +1,17 @@
+{
+  "title": "Using Velero",
+  "shortDescription": "How to perform backups using Velero",
+  "metaDescription": "Learn how to back up first-generation clusters in the Managed Containers service using Velero",
+  "sectionTitle": "Using Velero",
+  "icon": "",
+  "weight": 3,
+  "uuid": "f2561544-5f7a-4fcb-a603-b72e5209e723",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

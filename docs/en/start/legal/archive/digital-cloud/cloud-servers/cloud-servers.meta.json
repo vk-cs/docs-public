@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Cloud Servers» service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer by LLC «Digital Cloud» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Cloud Servers» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "ecbf43f4-8ceb-4519-97f7-c5b9942df6ab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

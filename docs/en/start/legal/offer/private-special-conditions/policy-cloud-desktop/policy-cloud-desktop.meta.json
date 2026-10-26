@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for the Cloud Desktop Service",
+  "shortDescription": "",
+  "metaDescription": "This license agreement governs the relationship between LLC VK Digital Technologies and you — a legal entity or individual entrepreneur — regarding the use of the Cloud Desktop computer software.",
+  "sectionTitle": "License Agreement for the Cloud Desktop Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "5117c1e5-b059-4976-b105-49dc62d8e240",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

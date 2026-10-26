@@ -6,19 +6,19 @@ The following options affect the order in which an origin can be selected from t
 
   The type of origin. This is specified at the single origin level within the group.
 
-- **Использовать следующий источник из списка при 4XX и 5XX кодах на источнике**.
+- **Use next origin from the list on 4XX and 5XX codes from the origin**.
 
   This is set at the overall origin group level. The option is available if more than one origin is configured in the group.
 
 The selection of an origin is based on the following rules:
 
-- If the option **Использовать следующий источник из списка при 4XX и 5XX кодах на источнике** is disabled, content is firstly requested from one of the active origins, then from one of the reserve origins.
+- If the option **Use next origin from the list on 4XX and 5XX codes from the origin** is disabled, content is firstly requested from one of the active origins, then from one of the reserve origins.
 
   The CDN server requests content from one of the reserve origins only if the active origin returns an HTTP status from the 5XX range. If an HTTP status from the 4XX range is received from either active or reserve origins, the CDN server will return an error to the user.
 
   The active origin is selected based on a round-robin algorithm to provide load balancing.
 
-- If the option **Использовать следующий источник из списка при 4XX и 5XX кодах на источнике** is enabled, the CDN server requests content by moving down the origin list.
+- If the option **Use next origin from the list on 4XX and 5XX codes from the origin** is enabled, the CDN server requests content by moving down the origin list.
 
   If all origins in the list are active, the CDN server requests content from the first active origin. With HTTP status [404](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404), [500](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500), [502](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502), [503](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503) or [504](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504), the CDN server will move down the list and request content from the remaining origins.
   

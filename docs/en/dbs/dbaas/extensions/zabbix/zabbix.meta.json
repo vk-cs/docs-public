@@ -1,7 +1,7 @@
 {
   "title": "Zabbix agent",
   "shortDescription": "",
-  "metaDescription": "Развертывание zabbix агента Zabbix — это ПО для мониторинга приложений, серверов и сетевых устройств.  Многочисленные предустановленные шаблоны позволяют п",
+  "metaDescription": "Deploying the zabbix agent. Zabbix is software for monitoring applications, servers and network devices.  Numerous preset templates allow you to q",
   "sectionTitle": "Zabbix agent",
   "icon": "",
   "uuid": "608ecece-7cd6-4e58-a4f0-d489863224d6",

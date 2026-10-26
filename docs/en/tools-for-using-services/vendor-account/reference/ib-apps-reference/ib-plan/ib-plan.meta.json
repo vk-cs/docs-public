@@ -1,0 +1,13 @@
+{
+  "title": "plan.yaml file",
+  "shortDescription": "Tariff plan parameters",
+  "metaDescription": "The plan.yaml configuration file. General tariff plan parameters. Tariff plan cost excluding paid options. Selective overriding of tariff options for the plan.",
+  "sectionTitle": "plan.yaml file",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "a390bd96-2de1-4404-b58d-e00b243749cd"
+}

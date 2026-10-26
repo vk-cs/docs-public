@@ -1,0 +1,3240 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API публичного DNS",
+    "version": "2.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:3120",
+      "description": "",
+      "variables": {
+        "version": {
+          "enum": [
+            "v2"
+          ],
+          "default": "v2"
+        }
+      }
+    }
+  ],
+  "tags": [
+    {
+      "name": "DNS"
+    },
+    {
+      "name": "A Record"
+    },
+    {
+      "name": "AAAA Record"
+    },
+    {
+      "name": "CNAME Record"
+    },
+    {
+      "name": "MX Record"
+    },
+    {
+      "name": "NS Record"
+    },
+    {
+      "name": "SRV Record"
+    },
+    {
+      "name": "TXT Record"
+    }
+  ],
+  "paths": {
+    "/v2/dns/": {
+      "get": {
+        "summary": "Получить список DNS-зон",
+        "description": "Получение списка зон DNS. Вы можете использовать фильтры в запросе, чтобы ограничить поиск",
+        "tags": [
+          "DNS"
+        ],
+        "parameters": [
+          {
+            "name": "tenant",
+            "description": "Идентификатор тенанта",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "7642b2c2-XXXX-XXXX-XXXX-b26de7cbdaf9"
+            }
+          },
+          {
+            "name": "soa_primary_dns",
+            "description": "Имя первичного DNS",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "ns1.mcs.mail.ru"
+            }
+          },
+          {
+            "name": "soa_admin_email",
+            "description": "Email администратора DNS",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "minLength": 5,
+              "maxLength": 255,
+              "example": "admin@dns.mail.ru."
+            }
+          },
+          {
+            "name": "soa_serial",
+            "description": "Номер версии DNS-зоны",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9223372036854776000,
+              "example": 11
+            }
+          },
+          {
+            "name": "soa_refresh",
+            "description": "Время в секундах, по истечении которого вторичный NS-сервер запросит SOA-запись у первичного, чтобы поддержать изменения в зоне",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 60,
+              "maximum": 2147483648,
+              "example": 86400
+            }
+          },
+          {
+            "name": "soa_retry",
+            "description": "Время в секундах, по истечении которого вторичный NS-сервер вновь попробует синхронизировать информацию с первичным NS-сервером, если тот не ответил ранее",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 60,
+              "maximum": 2147483648,
+              "example": 7200
+            }
+          },
+          {
+            "name": "soa_expire",
+            "description": "Время в секундах, после которого вторичный NS-сервер перестает отвечать на запросы для этой зоны, если первичный NS-сервер не отвечает",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 60,
+              "maximum": 2147483648,
+              "example": 3600000
+            }
+          },
+          {
+            "name": "soa_ttl",
+            "in": "query",
+            "description": "Время жизни кеша при отрицательном ответе на запрос в зоне. Если не заполнено, добавляется значение по умолчанию",
+            "schema": {
+              "type": "integer",
+              "minimum": 60,
+              "maximum": 2147483648,
+              "example": 86400
+            }
+          },
+          {
+            "name": "zone",
+            "description": "Наименование DNS-зоны",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "example": "example.com"
+            }
+          },
+          {
+            "name": "status",
+            "description": "Статус DNS-зоны",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "no_mcs_ns",
+                "pending",
+                "active"
+              ],
+              "example": "pending"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется список DNS-зон, которые соответствуют условиям фильтрации",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Dns_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать DNS-зону",
+        "description": "Создание новой зоны DNS с заданными параметрами",
+        "tags": [
+          "DNS"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания DNS-зоны",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dns_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. DNS-зона создана",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dns_Create_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}": {
+      "get": {
+        "summary": "Получить DNS-зону",
+        "description": "Получение параметров DNS-зоны по ее идентификатору",
+        "tags": [
+          "DNS"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "in": "path",
+            "description": "Идентификатор DNS-зоны",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры DNS-зоны",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dns_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить DNS-зону",
+        "description": "Изменение параметров DNS-зоны по ее идентификатору",
+        "tags": [
+          "DNS"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "in": "path",
+            "description": "Идентификатор DNS-зоны",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dns_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация о DNS-зоне с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dns_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить DNS-зону",
+        "description": "Удаление DNS-зоны по ее идентификатору",
+        "tags": [
+          "DNS"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "in": "path",
+            "description": "Идентификатор DNS-зоны",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "readOnly": true,
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. DNS-зона удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/a/": {
+      "get": {
+        "summary": "Получить список A-записей",
+        "description": "Получение списка всех записей типа А в DNS-зоне",
+        "tags": [
+          "A Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа A для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ARecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать А-запись",
+        "description": "Создание записи типа A с заданными параметрами для DNS-зоны",
+        "tags": [
+          "A Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа A",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа A в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ARecord_Create_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/a/{ARecordUuid}": {
+      "get": {
+        "summary": "Получить A-запись",
+        "description": "Получение параметров A-записи по ее идентификатору",
+        "tags": [
+          "A Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "ARecordUuid",
+            "description": "Идентификатор A-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры A-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ARecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить A-запись",
+        "description": "Изменение параметров A-записи",
+        "tags": [
+          "A Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "ARecordUuid",
+            "description": "Идентификатор A-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация об A-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ARecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить А-запись",
+        "description": "Удаление записи типа A по ее идентификатору",
+        "tags": [
+          "A Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "ARecordUuid",
+            "description": "Идентификатор A-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-8bf0-48c9-8b41-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. Запись типа А удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/aaaa/": {
+      "get": {
+        "summary": "Получить список AААА-записей",
+        "description": "Получение списка всех записей типа AAAA в DNS-зоне",
+        "tags": [
+          "AAAA Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа AAAA для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AaaaRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать AAAA-запись",
+        "description": "Создание записи типа AAAA для DNS-зоны по заданным параметрам",
+        "tags": [
+          "AAAA Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа AAAA",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AaaaRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа AAAA в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AaaaRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/aaaa/{AaaaRecordUuid}": {
+      "get": {
+        "summary": "Получить AAAA-запись",
+        "description": "Получение параметров AAAA-записи по ее идентификатору",
+        "tags": [
+          "AAAA Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "AaaaRecordUuid",
+            "description": "Идентификатор AAAA-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры AAAA-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AaaaRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить AAAA-запись",
+        "description": "Изменение параметров AAAA-записи",
+        "tags": [
+          "AAAA Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "AaaaRecordUuid",
+            "description": "Идентификатор AAAA-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AaaaRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация об AAAA-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AaaaRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить AAAA-запись",
+        "description": "Удаление AAAA-записи по ее идентификатору",
+        "tags": [
+          "AAAA Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "AaaaRecordUuid",
+            "description": "Идентификатор AAAA-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. AAAA-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/cname/": {
+      "get": {
+        "summary": "Получить список CNAME-записей",
+        "description": "Получение списка всех записей типа CNAME в DNS-зоне",
+        "tags": [
+          "CNAME Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа CNAME для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CnameRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать CNAME-запись",
+        "description": "Создание записи типа CNAME для DNS-зоны по заданным параметрам",
+        "tags": [
+          "CNAME Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа CNAME",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CnameRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа CNAME в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CnameRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/cname/{CnameRecordUuid}": {
+      "get": {
+        "summary": "Получить CNAME-запись",
+        "description": "Получение параметров CNAME-записи по ее идентификатору",
+        "tags": [
+          "CNAME Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "CnameRecordUuid",
+            "description": "Идентификатор CNAME-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры CNAME-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CnameRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить CNAME-запись",
+        "description": "Изменение параметров CNAME-записи",
+        "tags": [
+          "CNAME Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "CnameRecordUuid",
+            "description": "Идентификатор CNAME-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CnameRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация о CNAME-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CnameRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить CNAME-запись",
+        "description": "Удаление CNAME-записи по ее идентификатору",
+        "tags": [
+          "CNAME Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "CnameRecordUuid",
+            "description": "Идентификатор CNAME-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. CNAME-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/mx/": {
+      "get": {
+        "summary": "Получить список MX-записей",
+        "description": "Получение списка всех записей типа MX в DNS-зоне",
+        "tags": [
+          "MX Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа MX для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MxRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать MX-запись",
+        "description": "Создание записи типа MX для DNS-зоны по заданным параметрам",
+        "tags": [
+          "MX Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа MX",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MxRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа MX в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MxRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/mx/{MxRecordUuid}": {
+      "get": {
+        "summary": "Получить MX-запись",
+        "description": "Получение параметров MX-записи по ее идентификатору",
+        "tags": [
+          "MX Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "MxRecordUuid",
+            "description": "Идентификатор MX-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры MX-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MxRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить MX запись",
+        "description": "Изменение параметров MX-записи",
+        "tags": [
+          "MX Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "MxRecordUuid",
+            "description": "Идентификатор MX-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MxRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация об MX-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MxRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить MX-запись",
+        "description": "Удаление MX-записи по ее идентификатору",
+        "tags": [
+          "MX Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "MxRecordUuid",
+            "description": "Идентификатор MX-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. MX-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/ns/": {
+      "get": {
+        "summary": "Получить список NS-записей",
+        "description": "Получение списка всех записей типа NS в DNS-зоне",
+        "tags": [
+          "NS Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа NS для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NsRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать NS-запись",
+        "description": "Создание записи типа NS для DNS-зоны по заданным параметрам",
+        "tags": [
+          "NS Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа NS",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NsRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа NS в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NsRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/ns/{NsRecordUuid}": {
+      "get": {
+        "summary": "Получить NS-запись",
+        "description": "Получение параметров NS-записи по ее идентификатору",
+        "tags": [
+          "NS Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "NsRecordUuid",
+            "description": "Идентификатор NS-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры NS-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NsRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить NS-запись",
+        "description": "Изменение параметров NS-записи",
+        "tags": [
+          "NS Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "NsRecordUuid",
+            "description": "Идентификатор NS-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NsRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация об NS-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NsRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить NS-запись",
+        "description": "Удаление NS-записи по ее идентификатору",
+        "tags": [
+          "NS Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "NsRecordUuid",
+            "description": "Идентификатор NS-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. NS-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/srv/": {
+      "get": {
+        "summary": "Получить список SRV-записей",
+        "description": "Получение списка всех записей типа SRV в DNS-зоне",
+        "tags": [
+          "SRV Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа SRV для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SrvRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать SRV-запись",
+        "description": "Создание записи типа SRV для DNS-зоны",
+        "tags": [
+          "SRV Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа SRV",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SrvRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа SRV в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SrvRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/srv/{SrvRecordUuid}": {
+      "get": {
+        "summary": "Получить SRV-запись",
+        "description": "Получение параметров SRV-записи по ее идентификатору",
+        "tags": [
+          "SRV Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "SrvRecordUuid",
+            "description": "Идентификатор SRV-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры SRV-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SrvRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить SRV-запись",
+        "description": "Изменение параметров SRV-записи",
+        "tags": [
+          "SRV Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "SrvRecordUuid",
+            "description": "Идентификатор SRV-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры DNS-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SrvRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация об SRV-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SrvRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить SRV-запись",
+        "description": "Удаление SRV-записи по ее идентификатору",
+        "tags": [
+          "SRV Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "SrvRecordUuid",
+            "description": "Идентификатор SRV-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. SRV-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/txt/": {
+      "get": {
+        "summary": "Получить список TXT-записей",
+        "description": "Получение списка всех записей типа TXT в DNS-зоне",
+        "tags": [
+          "TXT Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив со списком записей типа TXT для указанной зоны DNS",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TxtRecord_Filter"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Записи не найдены"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создать TXT-запись",
+        "description": "Создание записи типа TXT для DNS-зоны по заданным параметрам",
+        "tags": [
+          "TXT Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры создания записи типа TXT",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TxtRecord_Create"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Создана запись типа TXT в указанной DNS-зоне",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TxtRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      }
+    },
+    "/v2/dns/{DnsUuid}/txt/{TxtRecordUuid}": {
+      "get": {
+        "summary": "Получить TXT-запись",
+        "description": "Получение параметров TXT-записи по ее идентификатору",
+        "tags": [
+          "TXT Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-c02f-4ba3-839b-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "TxtRecordUuid",
+            "description": "Идентификатор TXT-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Получены параметры TXT-записи",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TxtRecord_Get"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Изменить TXT-запись",
+        "description": "Изменение параметров TXT-записи",
+        "tags": [
+          "TXT Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "TxtRecordUuid",
+            "description": "Идентификатор TXT-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "description": "В теле запроса передаются параметры TXT-записи, которые нужно изменить",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TxtRecord_Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе возвращается информация о TXT-записи с учетом внесенных изменений",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TxtRecord_Update_Response"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          },
+          "409": {
+            "description": "Конфликт параметров, дублирование или недоступность операции"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить TXT-запись",
+        "description": "Удаление TXT-записи по ее идентификатору",
+        "tags": [
+          "TXT Record"
+        ],
+        "parameters": [
+          {
+            "name": "DnsUuid",
+            "description": "Идентификатор DNS-зоны",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "12f67238-XXXX-XXXX-XXXX-227afa2eb8dd"
+            },
+            "required": true
+          },
+          {
+            "name": "TxtRecordUuid",
+            "description": "Идентификатор TXT-записи",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "example": "1a8b660e-XXXX-XXXX-XXXX-6efa053a095b"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. TXT-запись удалена"
+          },
+          "401": {
+            "description": "Ошибка авторизации"
+          },
+          "404": {
+            "description": "Запись не найдена"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Dns_Create": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "$ref": "#/components/schemas/zone"
+          },
+          "soa_primary_dns": {
+            "$ref": "#/components/schemas/soa_primary_dns"
+          },
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          },
+          "soa_serial": {
+            "$ref": "#/components/schemas/soa_serial"
+          },
+          "soa_refresh": {
+            "$ref": "#/components/schemas/soa_refresh"
+          },
+          "soa_retry": {
+            "$ref": "#/components/schemas/soa_retry"
+          },
+          "soa_expire": {
+            "$ref": "#/components/schemas/soa_expire"
+          },
+          "soa_ttl": {
+            "$ref": "#/components/schemas/soa_ttl"
+          }
+        },
+        "required": [
+          "tenant",
+          "zone"
+        ]
+      },
+      "Dns_Create_Response": {
+        "type": "object",
+        "properties": {
+          "DnsUuid": {
+            "$ref": "#/components/schemas/uuid-dns"
+          },
+          "tenant": {
+            "$ref": "#/components/schemas/tenant"
+          },
+          "soa_primary_dns": {
+            "$ref": "#/components/schemas/soa_primary_dns"
+          },
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          },
+          "soa_serial": {
+            "$ref": "#/components/schemas/soa_serial"
+          },
+          "soa_refresh": {
+            "$ref": "#/components/schemas/soa_refresh"
+          },
+          "soa_retry": {
+            "$ref": "#/components/schemas/soa_retry"
+          },
+          "soa_expire": {
+            "$ref": "#/components/schemas/soa_expire"
+          },
+          "soa_ttl": {
+            "$ref": "#/components/schemas/soa_ttl"
+          },
+          "zone": {
+            "$ref": "#/components/schemas/zone"
+          },
+          "status": {
+            "$ref": "#/components/schemas/status"
+          }
+        }
+      },
+      "Dns_Get": {
+        "type": "object",
+        "properties": {
+          "DnsUuid": {
+            "$ref": "#/components/schemas/uuid-dns"
+          },
+          "tenant": {
+            "$ref": "#/components/schemas/tenant"
+          },
+          "soa_primary_dns": {
+            "$ref": "#/components/schemas/soa_primary_dns"
+          },
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          },
+          "soa_serial": {
+            "$ref": "#/components/schemas/soa_serial"
+          },
+          "soa_refresh": {
+            "$ref": "#/components/schemas/soa_refresh"
+          },
+          "soa_retry": {
+            "$ref": "#/components/schemas/soa_retry"
+          },
+          "soa_expire": {
+            "$ref": "#/components/schemas/soa_expire"
+          },
+          "soa_ttl": {
+            "$ref": "#/components/schemas/soa_ttl"
+          },
+          "zone": {
+            "$ref": "#/components/schemas/zone"
+          },
+          "status": {
+            "$ref": "#/components/schemas/status"
+          }
+        }
+      },
+      "Dns_Filter": {
+        "type": "object",
+        "properties": {
+          "DnsUuid": {
+            "$ref": "#/components/schemas/uuid-dns"
+          },
+          "tenant": {
+            "$ref": "#/components/schemas/tenant"
+          },
+          "soa_primary_dns": {
+            "$ref": "#/components/schemas/soa_primary_dns"
+          },
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          },
+          "soa_serial": {
+            "$ref": "#/components/schemas/soa_serial"
+          },
+          "soa_refresh": {
+            "$ref": "#/components/schemas/soa_refresh"
+          },
+          "soa_retry": {
+            "$ref": "#/components/schemas/soa_retry"
+          },
+          "soa_expire": {
+            "$ref": "#/components/schemas/soa_expire"
+          },
+          "soa_ttl": {
+            "$ref": "#/components/schemas/soa_ttl"
+          },
+          "zone": {
+            "$ref": "#/components/schemas/zone"
+          },
+          "status": {
+            "$ref": "#/components/schemas/status"
+          }
+        }
+      },
+      "Dns_Update": {
+        "type": "object",
+        "properties": {
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          }
+        }
+      },
+      "Dns_Update_Response": {
+        "type": "object",
+        "properties": {
+          "DnsUuid": {
+            "$ref": "#/components/schemas/uuid-dns"
+          },
+          "tenant": {
+            "$ref": "#/components/schemas/tenant"
+          },
+          "soa_primary_dns": {
+            "$ref": "#/components/schemas/soa_primary_dns"
+          },
+          "soa_admin_email": {
+            "$ref": "#/components/schemas/soa_admin_email"
+          },
+          "soa_serial": {
+            "$ref": "#/components/schemas/soa_serial"
+          },
+          "soa_refresh": {
+            "$ref": "#/components/schemas/soa_refresh"
+          },
+          "soa_retry": {
+            "$ref": "#/components/schemas/soa_retry"
+          },
+          "soa_expire": {
+            "$ref": "#/components/schemas/soa_expire"
+          },
+          "soa_ttl": {
+            "$ref": "#/components/schemas/soa_ttl"
+          },
+          "zone": {
+            "$ref": "#/components/schemas/zone"
+          },
+          "status": {
+            "$ref": "#/components/schemas/status"
+          }
+        }
+      },
+      "ARecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "ipv4": {
+            "$ref": "#/components/schemas/ipv4"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "ipv4",
+          "ttl"
+        ]
+      },
+      "ARecord_Create_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-a"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv4": {
+            "$ref": "#/components/schemas/ipv4"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "ARecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-a"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv4": {
+            "$ref": "#/components/schemas/ipv4"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "ARecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-a"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv4": {
+            "$ref": "#/components/schemas/ipv4"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "ARecord_Update": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          }
+        }
+      },
+      "ARecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-a"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv4": {
+            "$ref": "#/components/schemas/ipv4"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "AaaaRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "ipv6": {
+            "$ref": "#/components/schemas/ipv6"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "ipv6",
+          "ttl"
+        ]
+      },
+      "AaaaRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-aaaa"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv6": {
+            "$ref": "#/components/schemas/ipv6"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/name"
+          }
+        }
+      },
+      "AaaaRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-aaaa"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv6": {
+            "$ref": "#/components/schemas/ipv6"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/name"
+          }
+        }
+      },
+      "AaaaRecord_Update": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          }
+        }
+      },
+      "AaaaRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-aaaa"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "ipv6": {
+            "$ref": "#/components/schemas/ipv6"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/name"
+          }
+        }
+      },
+      "CnameRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name-cname"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-cname"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "content",
+          "ttl"
+        ]
+      },
+      "CnameRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-cname"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-cname"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-cname"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "CnameRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-cname"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-cname"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-cname"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "CnameRecord_Update": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/content-cname"
+          }
+        }
+      },
+      "CnameRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-cname"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-cname"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-cname"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "MxRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-mx"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "content",
+          "ttl",
+          "priority"
+        ]
+      },
+      "MxRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-mx"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-mx"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "MxRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-mx"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-mx"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "MxRecord_Update": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/content-mx"
+          }
+        }
+      },
+      "MxRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-mx"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-mx"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "NsRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-ns"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "content",
+          "ttl"
+        ]
+      },
+      "NsRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-ns"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-ns"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "NsRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-ns"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-ns"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "NsRecord_Update": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/content-ns"
+          }
+        }
+      },
+      "NsRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-ns"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-ns"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "SrvRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name-srv"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/weight"
+          },
+          "port": {
+            "$ref": "#/components/schemas/port"
+          },
+          "host": {
+            "$ref": "#/components/schemas/host"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "priority",
+          "weight",
+          "port",
+          "host"
+        ]
+      },
+      "SrvRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-srv"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-srv"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/weight"
+          },
+          "port": {
+            "$ref": "#/components/schemas/port"
+          },
+          "host": {
+            "$ref": "#/components/schemas/host"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "SrvRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-srv"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-srv"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/weight"
+          },
+          "port": {
+            "$ref": "#/components/schemas/port"
+          },
+          "host": {
+            "$ref": "#/components/schemas/host"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "SrvRecord_Update": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name-srv"
+          }
+        }
+      },
+      "SrvRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-srv"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name-srv"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "priority": {
+            "$ref": "#/components/schemas/priority"
+          },
+          "weight": {
+            "$ref": "#/components/schemas/weight"
+          },
+          "port": {
+            "$ref": "#/components/schemas/port"
+          },
+          "host": {
+            "$ref": "#/components/schemas/host"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "TxtRecord_Create": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-txt"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        },
+        "required": [
+          "name",
+          "content",
+          "ttl"
+        ]
+      },
+      "TxtRecord_Get": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-txt"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-txt"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "TxtRecord_Filter": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-txt"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-txt"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "TxtRecord_Update": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/content-txt"
+          }
+        }
+      },
+      "TxtRecord_Update_Response": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "$ref": "#/components/schemas/uuid-txt"
+          },
+          "name": {
+            "$ref": "#/components/schemas/name"
+          },
+          "dns": {
+            "$ref": "#/components/schemas/dns"
+          },
+          "content": {
+            "$ref": "#/components/schemas/content-txt"
+          },
+          "ttl": {
+            "$ref": "#/components/schemas/ttl"
+          }
+        }
+      },
+      "zone": {
+        "type": "string",
+        "example": "example.com",
+        "description": "Наименование DNS-зоны. Максимальная длина — 63 символа. Может содержать только цифры, латинские буквы, дефис и точку. Обязательно должно содержать как минимум одну точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "tenant": {
+        "type": "string",
+        "example": "b5b7ffd4-XXXX-XXXX-XXXX-f44555df8f67",
+        "description": "Тенант DNS"
+      },
+      "status": {
+        "type": "string",
+        "example": "pending",
+        "description": "Статус зоны DNS"
+      },
+      "soa_primary_dns": {
+        "type": "string",
+        "example": "ns1.mcs.mail.ru",
+        "description": "Первичный DNS-сервер"
+      },
+      "soa_admin_email": {
+        "type": "string",
+        "example": "admin@dns.mail.ru",
+        "description": "Почта администратора зоны"
+      },
+      "soa_serial": {
+        "type": "integer",
+        "description": "Номер версии DNS-зоны",
+        "example": 1
+      },
+      "soa_refresh": {
+        "type": "integer",
+        "example": 86400,
+        "description": "Время в секундах, по истечении которого вторичный NS-сервер должен запросить SOA-запись у первичного, чтобы поддержать изменения в зоне",
+        "minimum": 60,
+        "maximum": 2147483648
+      },
+      "soa_retry": {
+        "type": "integer",
+        "example": 7200,
+        "description": "Время в секундах, по истечении которого вторичный NS-сервер вновь попробует синхронизировать информацию с первичным NS-сервером, если тот не ответил ранее. Значение должно быть меньше, чем soa_refresh",
+        "minimum": 60,
+        "maximum": 2147483648
+      },
+      "soa_expire": {
+        "type": "integer",
+        "example": 3600000,
+        "description": "Время в секундах, после которого вторичный NS-сервер перестает отвечать на запросы для этой зоны, если первичный NS-сервер не отвечает",
+        "minimum": 60,
+        "maximum": 2147483648
+      },
+      "soa_ttl": {
+        "type": "integer",
+        "example": 86400,
+        "description": "Время жизни кеша при отрицательном ответе на запрос в зоне",
+        "minimum": 60,
+        "maximum": 2147483648
+      },
+      "name": {
+        "type": "string",
+        "example": "@",
+        "description": "Наименование записи. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "name-cname": {
+        "type": "string",
+        "example": "www",
+        "description": "Наименование записи. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "name-srv": {
+        "type": "string",
+        "example": "_sip._udp",
+        "description": "Символьное имя сервиса и протокола через точку. Максимальная длина — 255 символов. Максимальная длина поддомена — 63 символа. Может содержать только цифры, латинские буквы, дефис и точку"
+      },
+      "content-cname": {
+        "type": "string",
+        "example": "example.com",
+        "description": "FQDN-адрес назначения (то, куда указывает добавляемый псевдоним). Должен состоять из двух или более поддоменов. Максимальная длина поддомена — 63 символа. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "content-mx": {
+        "type": "string",
+        "example": "mailhost1.example.com",
+        "description": "FQDN-адрес почтового сервера. Должен состоять из двух или более поддоменов. Максимальная длина поддомена — 63 символа. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "content-ns": {
+        "type": "string",
+        "example": "ns3.corp.mail.ru",
+        "description": "Aдрес NS-сервера, например, ns1.mcs.mail.ru или ns2.mcs.mail.ru. Должен состоять из двух или более поддоменов. Максимальная длина поддомена — 63 символа. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "content-txt": {
+        "type": "string",
+        "example": "some text",
+        "description": "Tекстовое значение ресурсной записи. Максимальная длина — 255 символов. Может содержать только цифры, латинские буквы, дефис и точку. Не может начинаться и заканчиваться на дефис или точку"
+      },
+      "ipv4": {
+        "type": "string",
+        "description": "адрес IPv4, с которым сопостовляется запись DNS",
+        "example": "8.8.8.8"
+      },
+      "ipv6": {
+        "type": "string",
+        "description": "Aдрес IPv6, с которым сопостовляется запись DNS",
+        "example": "1050::5:600:300c:326b"
+      },
+      "ttl": {
+        "type": "integer",
+        "description": "Время жизни кеша в секундах",
+        "minimum": 60,
+        "maximum": 2147483648
+      },
+      "priority": {
+        "type": "integer",
+        "example": 11,
+        "description": "Приоритет хоста. Чем ниже значение, тем предпочтительнее хос"
+      },
+      "weight": {
+        "type": "integer",
+        "example": 5,
+        "description": "Вес для хостов с одинаковым приоритетом. Чем выше значение, тем вероятность выбора хоста"
+      },
+      "port": {
+        "type": "integer",
+        "example": 5060,
+        "description": "Номер порта, который использует служба SRV"
+      },
+      "host": {
+        "type": "string",
+        "example": "example.com",
+        "description": "FQDN-хоста, на котором размещается служба"
+      },
+      "uuid-dns": {
+        "type": "string",
+        "description": "Идентификатор DNS-зоны",
+        "example": "e39bfe02-XXXX-XXXX-XXXX-15f9bba715a4"
+      },
+      "uuid-a": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор A-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-aaaa": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор AAAA-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-cname": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор CNAME-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-mx": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор MX-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-ns": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор NS-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-srv": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор SRV-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "uuid-txt": {
+        "type": "string",
+        "format": "uuid",
+        "description": "Идентификатор TXT-записи",
+        "example": "ffacee97-XXXX-XXXX-XXXX-e36ec2dd94c8"
+      },
+      "dns": {
+        "type": "string",
+        "example": "/v2/dns/12f67238-XXXX-XXXX-XXXX-227afa2eb8dd",
+        "description": "Идентификатор DNS"
+      }
+    }
+  }
+}

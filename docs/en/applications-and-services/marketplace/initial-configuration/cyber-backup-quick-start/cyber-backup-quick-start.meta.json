@@ -1,0 +1,14 @@
+{
+  "title": "Installation and configuration of the Cyber Backup Cloud service",
+  "shortDescription": "Connecting the Cyber Backup Cloud service, creating a VM backup and restoring a VM from a copy",
+  "metaDescription": "Cyber Backup Cloud in the application marketplace: connecting the service, creating a VM backup and restoring a VM from a copy",
+  "sectionTitle": "Installation and configuration of the Cyber Backup Cloud service",
+  "icon": "",
+  "weight": 7,
+  "uuid": "95f1d1e1-52e5-492b-a5a3-4d2f7bde30d8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

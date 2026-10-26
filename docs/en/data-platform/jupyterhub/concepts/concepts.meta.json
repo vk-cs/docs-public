@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Basic concepts and characteristics of the JupyterHub service",
+  "metaDescription": "Learn about the basic concepts and characteristics of the JupyterHub service in VK Data Platform",
+  "sectionTitle": "Concepts",
+  "weight": 0,
+  "uuid": "6e495143-2405-4d7c-953a-3898471fffdf",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

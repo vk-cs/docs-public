@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a Bare Metal server via VNC console",
+  "shortDescription": "How to connect to a server via VNC console in your management console",
+  "metaDescription": "Step-by-step instructions for connecting to a Bare Metal server via VNC console in the management console of an IaaS provider — an alternative to SSH for server diagnostics and management.",
+  "sectionTitle": "Connecting via VNC console",
+  "icon": "",
+  "weight": 2,
+  "uuid": "8dc32725-4020-4316-860c-6967f6f4a8c0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

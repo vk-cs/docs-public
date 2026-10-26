@@ -1,0 +1,13 @@
+{
+  "title": "The service.yaml file",
+  "shortDescription": "General application parameters, internal names of tariff plans and options",
+  "metaDescription": "Reference information about the service.yaml configuration file, which contains general parameters of an image-based application, internal names of tariff plans and tariff options.",
+  "sectionTitle": "The service.yaml file",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2cd0bfd7-c884-4a2a-8fbd-355680db7bc6"
+}

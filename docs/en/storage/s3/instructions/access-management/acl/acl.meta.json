@@ -1,0 +1,16 @@
+{
+  "title": "Access Control Lists",
+  "shortDescription": "How to manage access rights to VK Object Storage buckets and objects using ACL",
+  "metaDescription": "Instructions for configuring access to VK Cloud VK Object Storage buckets and objects using access control lists (ACL). Getting and setting ACL for a bucket and an object",
+  "sectionTitle": "Access Control Lists (ACL)",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b2f12498-ac0c-431a-889a-82d6de54b206",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

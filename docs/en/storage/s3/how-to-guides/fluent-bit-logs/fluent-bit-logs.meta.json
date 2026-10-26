@@ -1,0 +1,14 @@
+{
+  "title": "Log replication to object storage using Fluent Bit",
+  "shortDescription": "How to set up collection and aggregation of logs from distributed systems using Fluent Bit and send them to VK Cloud Object Storage",
+  "metaDescription": "Configuring log aggregation with Fluent Bit to VK Cloud Object Storage: an efficient way to centrally collect, store, and analyze data from distributed systems.",
+  "sectionTitle": "Log replication to object storage using Fluent Bit",
+  "icon": "",
+  "weight": 10,
+  "uuid": "1f752b80-d9d6-4e5f-86cf-1a95e9f64e17",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -10,7 +10,7 @@ Vision technologies are available through APIs that are constantly being expande
 - [Determination of scenes and objects](../../instructions/vision-api-obj);
 - [Classification of documents](../../instructions/vision-api-doctypes);
 - [Recognition of the fields of documents](../../instructions/docs-recognition);
-- Распознавание знаменитостей;
+- Recognition of celebrities;
 - [Text recognition on images](../../instructions/vision-api-txt);
 - [Detection of cars and their numbers](../../instructions/plate-recognition);
 - [Determination of car numbers](../../instructions/plate-recognition);

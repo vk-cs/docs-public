@@ -11,9 +11,9 @@ To deploy the Grafana service in a project:
 1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add) Grafana service:
 
-   - **Как будет размещена Grafana**: specify the `external` access type to Grafana to have access to the service via an external IP address.
-   - **Резервное копирование**: select the `no` option to not copy the service data. With the `yes` option, data for the last 7 days is saved to the [Object Storage](/en/storage/s3).
-   - **Сеть**: select the previously created network and subnet.
+   - **How Grafana will be hosted**: specify the `external` access type to Grafana to have access to the service via an external IP address.
+   - **Backup**: select the `no` option to not copy the service data. With the `yes` option, data for the last 7 days is saved to the [Object Storage](/en/storage/s3).
+   - **Network**: select the previously created network and subnet.
 
    Specify the other parameters at your discretion.
 

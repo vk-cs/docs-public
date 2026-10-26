@@ -1,7 +1,7 @@
 {
   "title": "ACL",
   "shortDescription": "",
-  "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего бакета, так и на у",
+  "metaDescription": "ACL (Access Control List) allows you to control which operations are allowed for which users. ACL can be set both at the level of the entire bucket and at th",
   "sectionTitle": "ACL",
   "icon": "",
   "weight": 3,

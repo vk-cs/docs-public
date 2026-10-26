@@ -1,4 +1,4 @@
-## {heading(Creating a chart)[id=monitoring_create_custom_chart]}
+## {heading(Creating a chart)[id=monitoring-create-custom-chart]}
 
 You can visualize resource metrics by creating a chart using the parameter constructor or direct queries in PromQL.
 

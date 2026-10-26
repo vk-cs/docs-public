@@ -1,0 +1,18 @@
+{
+  "title": "Project balance",
+  "shortDescription": "How the project balance works, what its components are, what bonuses are and when they are credited",
+  "metaDescription": "How the project balance works, what its components are, what bonuses are and when they are credited",
+  "sectionTitle": "Project balance",
+  "icon": "",
+  "weight": 7,
+  "uuid": "6a1da0b7-027d-4275-82a6-f6a175ddf924",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

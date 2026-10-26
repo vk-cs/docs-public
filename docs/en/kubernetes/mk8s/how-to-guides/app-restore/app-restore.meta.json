@@ -1,0 +1,15 @@
+{
+  "title": "Automatic Application Recovery When External Storage Is Unavailable",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Automatic Application Recovery When External Storage Is Unavailable",
+  "icon": "",
+  "weight": 50,
+  "uuid": "7a1ccf3b-f09c-4529-9cf6-f97b1876789e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

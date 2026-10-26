@@ -1,0 +1,14 @@
+{
+  "title": "Load balancing groups",
+  "shortDescription": "Managing DNS load balancing groups",
+  "metaDescription": "Managing DNS load balancing groups that allow you to create a fault-tolerant distributed application by balancing between A records of a domain zone",
+  "sectionTitle": "Load balancing groups",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "270faea8-a943-4790-adde-d58bfb7eb40a"
+}

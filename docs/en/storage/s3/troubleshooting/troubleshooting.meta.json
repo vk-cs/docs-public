@@ -1,0 +1,16 @@
+{
+  "title": "Troubleshooting",
+  "shortDescription": "Methods for diagnosing and resolving object storage issues",
+  "metaDescription": "How to troubleshoot the VK Object Storage service on the VK Cloud platform. Methods for diagnosing and resolving object storage issues",
+  "sectionTitle": "Troubleshooting",
+  "icon": "",
+  "weight": 8,
+  "uuid": "9790c111-7f42-46ca-87b3-f259b2ad857a",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

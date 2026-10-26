@@ -1,0 +1,14 @@
+{
+  "title": "S3 Gateway for Cyber Backup Cloud",
+  "shortDescription": "How to use VK Object Storage buckets to store backups of the Cyber Backup Cloud service",
+  "metaDescription": "How to use VK Object Storage buckets to store backups of the Cyber Backup Cloud service",
+  "sectionTitle": "S3 Gateway for Cyber Backup Cloud",
+  "icon": "",
+  "weight": 3,
+  "uuid": "c5ce4c86-efb5-4194-bd02-c3cf8ad8911e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Vertical Pod Autoscaler",
+  "shortDescription": "",
+  "metaDescription": "Installation of the Vertical Pod Autoscaler (VPA) addon in Kubernetes: step-by-step instructions for VK Cloud, Terraform, dedicated worker nodes, and quick installation",
+  "sectionTitle": "Vertical Pod Autoscaler",
+  "icon": "",
+  "weight": 20,
+  "uuid": "04b3ce0d-c361-4398-8889-2bbc5f26353c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

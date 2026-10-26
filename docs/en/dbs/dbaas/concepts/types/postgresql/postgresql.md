@@ -1,19 +1,19 @@
-PostgreSQL — это объектно-реляционная СУБД с открытым исходным кодом. Она может хранить большие объемы данных, поддерживает множество типов данных и предоставляет возможность создания собственных типов.
+PostgreSQL is an open-source object-relational DBMS. It can store large volumes of data, supports many data types, and provides the ability to create custom types.
 
-Основные преимущества PostgreSQL:
+Key advantages of PostgreSQL:
 
-- сохранение целостности данных (близкое к стандарту ANSI-SQL:2008);
-- возможность создания сложных выборок (представления, правила, подзапросы);
-- управление параллельным доступом посредством многоверсионности (MVCC).
+- data integrity preservation (close to the ANSI-SQL:2008 standard);
+- the ability to create complex queries (views, rules, subqueries);
+- concurrent access control through multiversioning (MVCC).
 
-Подробнее в [официальной документации PostgreSQL](https://www.postgresql.org/docs/).
+For more information, see the [official PostgreSQL documentation](https://www.postgresql.org/docs/).
 
-Список версий PostgreSQL, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+The list of PostgreSQL versions supported in VK Cloud is available when [creating](../../../instructions/create) an instance of this database.
 
-В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва для [PostgreSQL](/ru/dbs/dbaas/concepts/types/postgresql) версии 16 вы можете создать геораспределенные конфигурации с хостами в разных [зонах доступности](/ru/start/concepts/architecture#architecture-az), чтобы дополнительно повысить отказоустойчивость.
+In the [Moscow region](/ru/tools-for-using-services/account/concepts/regions), for [PostgreSQL](/ru/dbs/dbaas/concepts/types/postgresql) version 16, you can create geographically distributed configurations with hosts in different [availability zones](/ru/start/concepts/architecture#architecture-az) to further increase fault tolerance.
 
-## Что дальше?
+## What's next?
 
-- [Создайте](../../../instructions/create) инстанс базы данных.
-- [Подключитесь](../../../connect) к базе данных.
-- [Ознакомьтесь](../../extensions) с доступными расширениями баз данных.
+- [Create](../../../instructions/create) a database instance.
+- [Connect](../../../connect) to the database.
+- [Review](../../extensions) the available database extensions.

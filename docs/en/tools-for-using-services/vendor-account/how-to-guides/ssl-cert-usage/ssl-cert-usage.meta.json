@@ -1,0 +1,14 @@
+{
+  "title": "Using SSL Certificates",
+  "sectionTitle": "Using SSL Certificates",
+  "shortDescription": "How to integrate an SSL certificate automated management system into an image-based application",
+  "metaDescription": "Guide to connecting the SSL certificate automated management system provided by the VK Cloud platform for image-based applications of Marketplace vendors",
+  "icon": "",
+  "weight": 1,
+  "uuid": "7f37b31d-2d15-4bb4-a1a1-5fb86bed443a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

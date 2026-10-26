@@ -1,0 +1,14 @@
+{
+  "title": "Get started with {var(cloud)} services",
+  "shortDescription": "Set up your work with {var(cloud)} services via the console. Create a virtual machine, virtual network, security group, and bucket",
+  "metaDescription": "Set up your work with VK Cloud services via the console. Create a virtual machine, virtual network, security group, and bucket",
+  "sectionTitle": "Get started with {var(cloud)} services",
+  "icon": "",
+  "weight": 2,
+  "uuid": "d397cb95-3147-40f6-a92a-16a7e81f61a6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

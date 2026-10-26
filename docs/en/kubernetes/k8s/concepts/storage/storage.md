@@ -15,7 +15,7 @@ To share data between pods on different nodes, [deploy an NFS server](/en/comput
 
 Kubernetes clusters in the Managed Containers service are tightly integrated with the VK Cloud platform to handle PVs:
 
-- The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
+- The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#k8s-storage-csi).
 - [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](/en/kubernetes/k8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
 
 ## {heading(Supported VK Cloud storage types)[id=storage_types]}
@@ -28,7 +28,7 @@ Kubernetes clusters in the Managed Containers service are tightly integrated wit
 
 - [File Storage](https://www.snia.org/education/what-is-nas) connected via [NFS](https://www.ibm.com/docs/en/aix/7.1?topic=management-network-file-system) and [CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview).
 
-## Working with Container Storage Interface (CSI)
+## {heading(Working with Container Storage Interface (CSI))[id=k8s-storage-csi]}
 
 Kubernetes clusters use [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) to integrate with block storage in VK Cloud.
 

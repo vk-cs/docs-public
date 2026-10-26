@@ -1,0 +1,16 @@
+{
+  "title": "Object Lock",
+  "shortDescription": "Protecting objects from deletion using Object Lock",
+  "metaDescription": "Step-by-step instructions for managing VK Object Storage Object Lock via AWS CLI: configuring a default time-based lock on a bucket (default retention), enabling/removing an indefinite object lock (legal hold), setting/changing a time-based lock for a specific object (retention period / retain-until-date), as well as the conditions and procedure for bypassing the time-based lock with `bypass-governance-retention` (if permissions are available) and checking the current lock status.",
+  "sectionTitle": "Object Lock",
+  "icon": "",
+  "weight": 4,
+  "uuid": "503513e4-51a7-49da-b56f-c598f5913cb0",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

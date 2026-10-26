@@ -1,0 +1,14 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "How to manage a service instance in a project",
+  "metaDescription": "Learn how to manage NiFi service instances in VK Data Platform: view component statuses, perform scaling, configure an instance, and more",
+  "sectionTitle": "Working with a service instance",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "94208d99-a8e3-41a0-b2fb-af72c8acee7b"
+}

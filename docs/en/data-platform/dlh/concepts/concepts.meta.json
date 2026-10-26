@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "How the Data LakeHouse service in VK Cloud works: functional features and internal architecture",
+  "metaDescription": "How the Data LakeHouse service in VK Cloud works: functional features and internal architecture",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 2,
+  "uuid": "e3db020f-32d0-492c-a6f2-5ea2cf33f9cd",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

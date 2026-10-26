@@ -1,0 +1,17 @@
+{
+  "title": "ClickHouse Monitoring",
+  "shortDescription": "Monitoring deployed ClickHouse instances",
+  "metaDescription": "Monitoring the state of ClickHouse instances in VK Cloud with detailed information on metrics of individual hosts. Description of available metrics, analysis and use of monitoring data",
+  "sectionTitle": "ClickHouse Monitoring",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fd807829-0188-45e0-8dfe-caabaaf4edf1",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

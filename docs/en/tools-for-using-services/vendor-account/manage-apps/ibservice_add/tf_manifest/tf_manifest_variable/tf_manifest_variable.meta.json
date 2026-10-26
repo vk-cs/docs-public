@@ -1,0 +1,13 @@
+{
+  "title": "Input variables for resource configuration",
+  "shortDescription": "",
+  "metaDescription": "Input variables for resource configuration",
+  "sectionTitle": "Input variables for resource configuration",
+  "weight": 3,
+  "uuid": "028a3449-2a68-4652-99fb-860c04df6de2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

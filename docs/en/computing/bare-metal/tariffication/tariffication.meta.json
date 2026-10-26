@@ -1,0 +1,14 @@
+{
+  "title": "Billing",
+  "shortDescription": "How the service is billed and cost calculation",
+  "metaDescription": "Learn how the Bare Metal server is billed: what is included in the price, which services are not charged, the payment model, and where to find current prices.",
+  "sectionTitle": "Billing",
+  "icon": "",
+  "weight": 10,
+  "uuid": "16fff4a1-ecad-4be7-addf-79a63dc870a6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

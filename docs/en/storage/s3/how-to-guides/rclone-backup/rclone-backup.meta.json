@@ -1,0 +1,14 @@
+{
+  "title": "Data backup to object storage using rclone",
+  "shortDescription": "How to configure data backup to object storage using rclone",
+  "metaDescription": "How to configure data backup to VK Cloud object storage using rclone. Tools, settings, automation, and security. A solution for information protection and cloud backup.",
+  "sectionTitle": "Data backup to object storage using rclone",
+  "icon": "",
+  "weight": 9,
+  "uuid": "d6d88ec5-b503-4286-a798-40cacaced227",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

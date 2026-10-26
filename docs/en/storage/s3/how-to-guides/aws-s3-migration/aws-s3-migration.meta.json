@@ -1,0 +1,14 @@
+{
+  "title": "Migrating data from AWS S3 to VK Cloud object storage",
+  "shortDescription": "How to transfer data from AWS S3 to VK Cloud object storage",
+  "metaDescription": "Reduce costs and avoid AWS S3 vendor lock-in by migrating data to VK Cloud. A solution for data migration, backup, and storage in the cloud.",
+  "sectionTitle": "Migrating data from AWS S3 to VK Cloud object storage",
+  "icon": "",
+  "weight": 8,
+  "uuid": "8e6830d6-4cc6-4a13-87e8-02b0716bd5c3",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

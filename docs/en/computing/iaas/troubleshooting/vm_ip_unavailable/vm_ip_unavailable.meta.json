@@ -1,0 +1,14 @@
+{
+  "title": "Service unavailable by IP address",
+  "shortDescription": "No IP address access to a service hosted on a virtual machine",
+  "metaDescription": "No IP address access to a service hosted on a virtual machine",
+  "sectionTitle": "Service unavailable by IP address",
+  "icon": "",
+  "weight": 27,
+  "uuid": "d7f2e010-936f-4bf2-8553-16b92e333c19",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

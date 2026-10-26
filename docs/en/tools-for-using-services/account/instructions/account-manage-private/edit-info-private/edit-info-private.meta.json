@@ -1,0 +1,18 @@
+{
+  "title": "Profile edit",
+  "shortDescription": "Changing the password and personal data of a user",
+  "metaDescription": "How to change the password and data in the user profile of a VK Private Cloud account.",
+  "sectionTitle": "Profile edit",
+  "icon": "",
+  "weight": 1,
+  "uuid": "78c3991b-0470-433d-96f2-8ab2e9e20e4d",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

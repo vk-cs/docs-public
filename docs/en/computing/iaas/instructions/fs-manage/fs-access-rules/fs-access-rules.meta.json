@@ -1,0 +1,18 @@
+{
+  "title": "Managing access rules",
+  "shortDescription": "How to configure access rules for a file storage",
+  "metaDescription": "Managing access rules for VK Cloud file storages: adding, modifying, and deleting access rules by IP address or subnet for reading and writing data.",
+  "sectionTitle": "Managing access rules",
+  "icon": "",
+  "weight": 5,
+  "uuid": "85b058fd-af26-4046-b046-aa67f72b67db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

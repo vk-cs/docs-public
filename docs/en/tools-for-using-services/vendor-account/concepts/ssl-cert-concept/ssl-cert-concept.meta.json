@@ -1,0 +1,14 @@
+{
+  "title": "Installing SSL certificates on service instances",
+  "shortDescription": "A system for automatic SSL certificate management on vendor service instances",
+  "metaDescription": "A system for managing SSL certificates on vendor service instances: automatic SSL certificate creation, their installation, access rights configuration, and renewal followed by execution of custom scripts.",
+  "sectionTitle": "Installing SSL certificates on service instances",
+  "icon": "",
+  "weight": 2,
+  "uuid": "c12a3eca-4404-43ef-8f95-77c8679be0de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

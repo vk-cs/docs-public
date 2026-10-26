@@ -1,0 +1,14 @@
+{
+  "title": "A VM stopped passing packets in a client VLAN network",
+  "shortDescription": "What to do if a VM in a client External VLAN network stopped passing packets, although packets pass between other VMs in this network",
+  "metaDescription": "What to do if a VM in a client External VLAN network stopped passing packets, although packets pass between other VMs in this network",
+  "sectionTitle": "A VM stopped passing packets in a client VLAN network",
+  "icon": "",
+  "weight": 12,
+  "uuid": "2a5bb3b3-467a-4aa1-8d46-37c75c412949",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

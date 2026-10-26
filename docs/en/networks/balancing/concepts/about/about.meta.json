@@ -1,0 +1,22 @@
+{
+  "title": "About the service",
+  "shortDescription": "Description of distributing network traffic between servers using VK Cloud load balancers",
+  "metaDescription": "VK Cloud Load Balancing load balancer service. Operating principles, types, and main capabilities of the Load Balancing service",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "361aaf6f-e676-4729-9e2d-e733ebe91fe5",
+  "additionalUuids": [
+    "9885dcd7-a968-4ae7-86d7-4291b8c7138d"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Quick Start",
+  "shortDescription": "Getting started with Terraform",
+  "metaDescription": "How to use the VK Cloud Terraform provider to manage VK Data Platform. Getting started with Terraform: installation, initialization, Terraform updates",
+  "sectionTitle": "Quick Start",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "772e53b5-0de3-45cf-a5ff-205c9ea02ff8"
+}

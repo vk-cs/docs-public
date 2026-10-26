@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Information about the Redis service",
+  "metaDescription": "Redis in VK Data Platform: information about the service",
+  "sectionTitle": "About the service",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "05a62b66-2448-409e-add1-63c1783b0c0d"
+}

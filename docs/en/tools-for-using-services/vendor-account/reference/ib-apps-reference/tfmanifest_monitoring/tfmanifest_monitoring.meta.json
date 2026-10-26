@@ -1,0 +1,13 @@
+{
+  "title": "Enabling monitoring in a manifest",
+  "shortDescription": "Enabling service status monitoring using a Terraform manifest",
+  "metaDescription": "How to enable monitoring of the state of an instance of your image-based application deployed on a virtual machine on the VK Cloud platform using a Terraform manifest.",
+  "sectionTitle": "Enabling monitoring in a manifest",
+  "weight": 11,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "cfbf0908-59be-4dcd-8dd4-cc59749f34c8"
+}

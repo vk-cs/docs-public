@@ -1,0 +1,22 @@
+{
+  "title": "GFS Backup Strategy",
+  "shortDescription": "GFS long-term backup retention strategy",
+  "metaDescription": "The article describes the GFS long-term backup retention strategy.",
+  "sectionTitle": "GFS Backup Strategy",
+  "icon": "",
+  "weight": 3,
+  "additionalUuids": [
+    "32918039-cfc5-49f5-9300-a6b2422af0f5"
+  ],
+  "uuid": "b7a9313e-012d-40a1-9b6c-0ab9f5ad614a",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

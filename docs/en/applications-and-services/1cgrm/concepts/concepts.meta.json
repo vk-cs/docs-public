@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Description of the service's operating principles and structure",
+  "metaDescription": "Description of the 1C:Ready Workplace service: how it works, possible configurations, how it is implemented in VK Cloud, and what limitations exist.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 1,
+  "uuid": "7649a0c7-6f99-4c83-af92-cb4d5b9030f5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -53,17 +53,17 @@ Cloud Spark is a solution based on [Apache Spark Operator](https://github.com/Go
 1. Click the **Add connection** button.
 1. Select the data source:
 
-   - `S3 внешний` — connection to an external S3 object storage.
+   - `External S3` — connection to an external S3 object storage.
    - `S3 VK Cloud` — connection to {var(s3)} storage in the same project.
    - `PostgreSQL` — connection to a PostgreSQL database.
-   - `Iceberg Metastore с S3 VK Cloud` — connection to a Cloud Iceberg Metastore instance in the same VK Cloud project.
-   - `Iceberg Metastore с внешним S3` — connection to an external Cloud Iceberg Metastore catalog.
+   - `Iceberg Metastore with VK Cloud S3` — connection to a Cloud Iceberg Metastore instance in the same VK Cloud project.
+   - `Iceberg Metastore with external S3` — connection to an external Cloud Iceberg Metastore catalog.
    
 1. Configure the connection parameters for the source:
 
    {tabs}
 
-   {tab(S3 внешний)}
+   {tab(External S3)}
 
    - **External S3 connection name**: set the connection name. The name can contain only uppercase and lowercase Latin letters, digits, and `_` characters.
    - **Access Key**: unique key ID for storage access.
@@ -93,7 +93,7 @@ Cloud Spark is a solution based on [Apache Spark Operator](https://github.com/Go
 
    {/tab}
 
-   {tab(Iceberg Metastore с S3 VK Cloud)}
+   {tab(Iceberg Metastore with VK Cloud S3)}
 
    - **Internal Iceberg Metastore connection name**: set the connection name. The name can contain only uppercase and lowercase Latin letters, digits, and `_` characters.
    - **Iceberg DB hostname**: server address for the connection.
@@ -105,7 +105,7 @@ Cloud Spark is a solution based on [Apache Spark Operator](https://github.com/Go
 
    {/tab}
  
-   {tab(Iceberg Metastore с внешний S3)}
+   {tab(Iceberg Metastore with external S3)}
 
    - **External Iceberg Metastore connection name**: set the connection name. The name can contain only uppercase and lowercase Latin letters, digits, and `_` characters.
    - **Iceberg DB hostname**: server address for the connection.

@@ -1,0 +1,14 @@
+{
+  "title": "{var(s3)}: create a bucket in object storage and upload data to it",
+  "shortDescription": "Create an account for the {var(s3)} service, upload an object to a bucket, and provide access to it via a link",
+  "metaDescription": "Explore the capabilities of the VK Object Storage service: create an account for the VK Object Storage service, upload an object to a bucket, and provide access to it via a link",
+  "sectionTitle": "{var(s3)}: create a bucket in object storage and upload a file",
+  "icon": "",
+  "weight": 4,
+  "uuid": "79ee48e9-0ef8-4699-ad85-05511100427e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

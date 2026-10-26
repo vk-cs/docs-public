@@ -1,0 +1,16 @@
+{
+  "title": "Privacy Policy of the «VK Cloud» Platform",
+  "shortDescription": "",
+  "metaDescription": "1. The subject of this Privacy Policy (hereinafter referred to as the «Policy») is the relations between Limited Liability Company «Digital Cloud»",
+  "sectionTitle": "Privacy Policy of the «VK Cloud» Platform",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "0aa35edf-60e3-460f-8fe9-bf0be7332b05",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

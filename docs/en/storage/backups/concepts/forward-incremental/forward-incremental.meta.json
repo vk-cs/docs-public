@@ -1,0 +1,19 @@
+{
+  "title": "Backup with copy count limitation",
+  "shortDescription": "Storing and deleting backups when a maximum number of full copies is set",
+  "metaDescription": "The article describes the strategy for deleting backups when the maximum number of stored backups is exceeded: when the limit is exceeded, the oldest copies are deleted.",
+  "sectionTitle": "Backup with copy count limitation",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7e67a953-d197-4629-b912-29dc3f99dd31",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

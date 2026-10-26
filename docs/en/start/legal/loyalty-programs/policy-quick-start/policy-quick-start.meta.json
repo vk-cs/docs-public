@@ -1,0 +1,16 @@
+{
+  "title": "Quick Start Promotion Terms and Conditions",
+  "shortDescription": "",
+  "metaDescription": "These Terms and Conditions of the Quick Start Promotion (hereinafter — the Promotion Terms) constitute an agreement between You (hereinafter — the Participant) and the Promotion Organizer, the subject of which is participation in the Promotion",
+  "sectionTitle": "Quick Start Promotion Terms and Conditions",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 8,
+  "uuid": "ee61d8df-ba14-4603-8303-d2178f26db77",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

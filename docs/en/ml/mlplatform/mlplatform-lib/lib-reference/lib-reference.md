@@ -783,7 +783,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## create_deploy
+## {heading(create_deploy)[id=mllib-lib-reference-create_deploy]}
 
 Create an MLflow Deploy instance connected to an existing MLflow or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance.
 
@@ -1212,7 +1212,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## delete_instance
+## {heading(delete_instance)[id=mllib-lib-reference-delete_instance]}
 
 Remove the Cloud ML Platform instance (JupyterHub, MLflow, or MLflow Deploy).
 

@@ -1,0 +1,14 @@
+{
+  "title": "Downloading closing documents",
+  "shortDescription": "How to download an invoice and a UPD if you use a post-payment plan",
+  "metaDescription": "Learn how to download closing documents — invoices and universal transfer documents (UPD) — in the VK Cloud management console if you use a post-payment plan",
+  "sectionTitle": "Downloading closing documents",
+  "icon": "",
+  "weight": 7,
+  "uuid": "c8f4982a-8274-4102-ac4b-5c6c483c4c28",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Connecting Cloud Spark as a data processing tool",
+  "shortDescription": "How to deploy a Cloud Spark service instance for performing complex false ETL and ELT tasks",
+  "metaDescription": "How to deploy a Cloud Spark service instance for performing complex false ETL and ELT tasks",
+  "sectionTitle": "Connecting data processing tools",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fa88db70-ad7c-4c73-8ae9-fc827d5b41de",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

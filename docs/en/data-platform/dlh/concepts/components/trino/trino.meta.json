@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Trino in the Data Lakehouse architecture",
+  "shortDescription": "Purpose and functions of the Cloud Trino component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the Cloud Trino component in the Data Lakehouse architecture",
+  "sectionTitle": "Cloud Trino",
+  "icon": "",
+  "weight": 3,
+  "uuid": "777d8f3f-724f-412a-b906-65ba187f2720",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

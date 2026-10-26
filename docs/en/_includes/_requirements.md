@@ -1,0 +1,7 @@
+- Points of presence in data centers: You can request the current list of presence points from [technical support](mailto:support@mcs.mail.ru) or your personal manager via email at [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
+- Fiber type: Single-Mode (SM) only.
+- Transceiver type: Duplex with LC connectors (connection requires two fibers in one communication channel).
+- The {var(cloud)} switch port must receive exclusively tagged traffic (802.1Q Trunk Mode).
+- MLAG/VPC technology is not supported on {var(cloud)} switches.
+- LACP aggregation is only available within a single switch.
+- A Layer 2 (L2) communication channel is connected to the cloud project.

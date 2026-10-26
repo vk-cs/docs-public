@@ -1,0 +1,16 @@
+{
+  "title": "Agreement on the Provision of the Integrated Service of Mini-App Hosting",
+  "shortDescription": "",
+  "metaDescription": "Agreement on the Provision of the Integrated Service of Mini-App Hosting",
+  "sectionTitle": "Agreement on the Provision of the Integrated Service of Mini-App Hosting",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ba74359d-d87f-43b8-b697-5d5f2bd5ff78"
+}

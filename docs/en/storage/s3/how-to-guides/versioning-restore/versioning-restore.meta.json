@@ -1,0 +1,14 @@
+{
+  "title": "Restoring deleted objects using versioning",
+  "shortDescription": "How to reduce the risk of data loss due to human error and ransomware attacks through bucket versioning",
+  "metaDescription": "How to restore deleted data using object versioning in VK Cloud. Protection against accidental changes and data loss. Restoration capabilities, configuration, and usage in data storage systems.",
+  "sectionTitle": "Restoring deleted objects using versioning",
+  "icon": "",
+  "weight": 7,
+  "uuid": "d035dc6e-8831-4591-b067-a3a8198f6746",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

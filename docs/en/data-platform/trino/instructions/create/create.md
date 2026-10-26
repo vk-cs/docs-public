@@ -4,9 +4,9 @@
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud мanagement console.
+1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
 1. Select the project where you want to create a service instance.
-1. Go to **Data Platform** → **Экземпляры сервисов**.
+1. Go to **Data Platform** → **Service instances**.
 1. Click **Add Instance** or **Create Instance**.
 1. At the **Configuration** step:
 

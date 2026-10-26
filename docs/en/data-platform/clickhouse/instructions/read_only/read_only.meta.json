@@ -1,0 +1,15 @@
+{
+  "title": "Taking an instance out of read-only mode",
+  "shortDescription": "How to take a Cloud ClickHouse instance out of read-only mode",
+  "metaDescription": "How to take a Cloud ClickHouse instance out of read-only mode when the disk is full in VK Data Platform and restore data writing",
+  "sectionTitle": "Taking an instance out of read-only mode",
+  "icon": "",
+  "weight": 7,
+  "uuid": "e32e9416-8590-40f7-aa75-93e89eae036b",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

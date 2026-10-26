@@ -1,0 +1,14 @@
+{
+  "title": "Port is not renamed after unlinking a security group",
+  "shortDescription": "What to do if the ability to rename a port is lost after unlinking a security group",
+  "metaDescription": "What to do if the ability to rename a port is lost after unlinking a security group",
+  "sectionTitle": "Port is not renamed after unlinking a security group",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "4d5b2b79-26d4-4f91-8173-c50100e60a8f"
+}

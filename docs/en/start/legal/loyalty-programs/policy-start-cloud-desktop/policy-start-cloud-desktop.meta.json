@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the «Cloud Desktop Start» promotion",
+  "shortDescription": "",
+  "metaDescription": "The «Cloud Desktop Start» promotion is intended to draw consumers' attention to the Cloud Desktop product, increase awareness of this product, and promote it in the market of goods, works, and services.",
+  "sectionTitle": "Rules of the «Cloud Desktop Start» promotion",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "33e89d61-3918-4b54-86bc-ba32f1509a72",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

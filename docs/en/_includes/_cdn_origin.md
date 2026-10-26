@@ -42,7 +42,7 @@
 
 {includetag(4XX_5XX)}
 
-1. Enable the **Использовать следующий источник из списка при 4XX и 5XX кодах на источнике** to manage the order of origins that CDN servers request content from.
+1. Enable the **Use next origin from the list on 4XX and 5XX response codes from the origin** to manage the order of origins that CDN servers request content from.
 
    When the option is enabled, CDN servers turn to the next origin in the list if the current origin is unavailable. If all origins are unavailable, CDN servers return the response of the last origin in the list when requesting content. Read more about origins selection in the [Origin groups](/en/networks/cdn/concepts/origin-groups) section.
 

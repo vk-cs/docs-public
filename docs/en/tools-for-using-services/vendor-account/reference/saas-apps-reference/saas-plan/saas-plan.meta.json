@@ -1,0 +1,13 @@
+{
+  "title": "Tariff plan parameters",
+  "shortDescription": "Description of the basic parameters of a SaaS application tariff plan",
+  "metaDescription": "Tariff plan parameters in the SaaS application configuration JSON file: parameter name, short description, format, whether the parameter is required in the configuration, default value.",
+  "sectionTitle": "Tariff plan parameters",
+  "weight": 2,
+  "uuid": "5a65d7b2-8c93-401c-b7d5-3dcb209e4129",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

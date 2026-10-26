@@ -91,7 +91,7 @@ Available CPU resources on the node:
 | 12 | 11,9 |
 | 16 | 15,89 |
 
-Доступные ресурсы RAM на узле:
+Available RAM resources on the node:
 
 | Node RAM (GB) | Node RAM Capacity (Ki) |	RAM Allocatable (Ki)	| RAM Allocatable (Mi) |
 | --- | --- | --- | --- |

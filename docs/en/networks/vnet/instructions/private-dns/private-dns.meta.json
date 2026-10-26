@@ -1,0 +1,18 @@
+{
+  "title": "Private DNS",
+  "shortDescription": "Managing DNS zones deployed in private networks",
+  "metaDescription": "Private DNS in VK Cloud — DNS server functionality operating in the platform's project networks",
+  "sectionTitle": "Private DNS",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "10d7260a-f550-4aad-accd-e59df33fa9e4"
+}

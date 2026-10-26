@@ -1,0 +1,14 @@
+{
+  "title": "Application management",
+  "shortDescription": "Starting and deleting an application in {var(cloud)}, switching to the 1C application",
+  "metaDescription": "How to manage an application in VK Cloud: edit, freeze or delete it. How to switch to the 1C application from the VK Cloud platform",
+  "sectionTitle": "Application management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "aa533665-d8dd-42fb-a238-ab3a1dba3e3d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

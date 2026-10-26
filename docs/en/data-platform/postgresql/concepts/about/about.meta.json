@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Information about the Cloud PostgreSQL service",
+  "metaDescription": "Cloud PostgreSQL in VK Data Platform: information about the service",
+  "sectionTitle": "About the service",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "48b93406-acc8-4021-94e4-287a4bef2670"
+}

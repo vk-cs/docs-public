@@ -1,0 +1,14 @@
+{
+  "title": "How-to guides",
+  "shortDescription": "Examples of using the MLflow Deploy service",
+  "metaDescription": "Examples of using the MLflow Deploy service.",
+  "sectionTitle": "How-to guides",
+  "icon": "",
+  "weight": 3,
+  "uuid": "eda04283-2969-4abe-8830-dfbaf5e7bf77",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

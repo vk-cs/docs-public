@@ -1,0 +1,14 @@
+{
+  "title": "OpenSearch",
+  "shortDescription": "A software suite for building search engines and analytical solutions",
+  "metaDescription": "OpenSearch service for building search engines and analytical solutions in the VK Data Platform infrastructure",
+  "sectionTitle": "OpenSearch",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 17,
+  "uuid": "d744628d-8dc6-4534-b751-7f9a8627dc2e"
+}

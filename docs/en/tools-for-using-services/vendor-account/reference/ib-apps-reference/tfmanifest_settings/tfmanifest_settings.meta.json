@@ -1,0 +1,13 @@
+{
+  "title": "Manifest Execution Parameters",
+  "shortDescription": "Description of Terraform manifest execution parameters",
+  "metaDescription": "Reference information on filling in the settings.yaml file, which contains the parameters for executing the Terraform manifest of an image-based application deployed on the VK Cloud platform.",
+  "sectionTitle": "Manifest Execution Parameters",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2282adb9-3f53-48fb-8be3-c647bdd123b5"
+}

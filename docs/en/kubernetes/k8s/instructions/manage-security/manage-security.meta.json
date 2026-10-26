@@ -1,0 +1,14 @@
+{
+  "title": "Security policy management",
+  "shortDescription": "How to manage security policies in a cluster via the management console",
+  "metaDescription": "VK Cloud Containers: Managing security policies in a Kubernetes cluster via the management console.",
+  "sectionTitle": "Security policy management",
+  "icon": "",
+  "weight": 5,
+  "uuid": "17a3e35b-d5df-4541-83ec-855868c43bbe",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

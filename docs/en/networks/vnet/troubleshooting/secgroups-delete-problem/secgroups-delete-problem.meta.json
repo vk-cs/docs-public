@@ -1,0 +1,16 @@
+{
+  "title": "Cannot delete a security group",
+  "shortDescription": "What to do if an error occurs when deleting a security group",
+  "metaDescription": "What to do if an error occurs when deleting a security group",
+  "sectionTitle": "Cannot delete a security group",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": "4f544efd-2c26-4c06-867d-e83c29b888af"
+}

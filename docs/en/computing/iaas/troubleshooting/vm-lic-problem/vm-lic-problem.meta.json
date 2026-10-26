@@ -1,0 +1,14 @@
+{
+  "title": "RDS License Issue",
+  "shortDescription": "What to do if an information window about a licensing problem appears when connecting to a VM via RDS",
+  "metaDescription": "What to do if an information window about a licensing problem appears when connecting to a VM via RDS",
+  "sectionTitle": "RDS License Issue",
+  "icon": "",
+  "weight": 12,
+  "uuid": "80186aa5-d37c-4243-8c3b-e90c8463785a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

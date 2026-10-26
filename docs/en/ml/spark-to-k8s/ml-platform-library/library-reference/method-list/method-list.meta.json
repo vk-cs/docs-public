@@ -1,0 +1,14 @@
+{
+  "title": "List of available methods",
+  "shortDescription": "",
+  "metaDescription": "Complete list of methods of the Cloud ML Platform library for Cloud Spark.",
+  "sectionTitle": "List of available methods",
+  "icon": "",
+  "weight": 1,
+  "uuid": "6bd14157-a872-4bf5-9386-8312d35b05ff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

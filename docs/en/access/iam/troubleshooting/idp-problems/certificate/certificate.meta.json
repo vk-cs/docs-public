@@ -1,0 +1,14 @@
+{
+  "title": "Invalid certificate",
+  "shortDescription": "When trying to log in through the identity federation, a message appears stating that the system could not recognize the signature and verify the certificate",
+  "metaDescription": "Solution to known issues with identity federation configuration: when trying to log in through the identity federation, a message appears stating that the system could not recognize the signature and verify the certificate",
+  "sectionTitle": "Invalid certificate",
+  "icon": "",
+  "weight": 2,
+  "uuid": "830f7f03-570b-4394-8585-50b2caaad8e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

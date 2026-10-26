@@ -1,0 +1,18 @@
+{
+  "title": "VM Rebuild",
+  "sectionTitle": "VM Rebuild",
+  "shortDescription": "How to restore a virtual machine from a backup with a new IP address or restore the previous state of the virtual machine without changing its IP address",
+  "metaDescription": "Learn how to restore a VM from a backup with a new IP address or restore the previous state of the virtual machine without changing its IP address.",
+  "icon": "",
+  "weight": 9,
+  "uuid": "b4251561-072f-4ba8-8c6d-ec58c88afbc7",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

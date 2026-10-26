@@ -1,0 +1,14 @@
+{
+  "title": "Error when creating a project",
+  "shortDescription": "What to do if you cannot create a new project in VK Cloud",
+  "metaDescription": "Unable to create a new project in VK Cloud: possible causes of the error, account limitations, and ways to quickly resolve the issue",
+  "sectionTitle": "Error when creating a project",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "4e1d04c1-54ef-439a-9f05-e37bfc1dcc78"
+}

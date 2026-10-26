@@ -1,0 +1,14 @@
+{
+  "title": "Standalone Monitoring",
+  "shortDescription": "Collecting and viewing metrics in Standalone",
+  "metaDescription": "Learn how to view metrics of deployed Redis service instances in VK Data Platform Standalone version",
+  "sectionTitle": "Standalone Monitoring",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "a05cb8c5-5819-4576-9de4-19ea07df5e84"
+}

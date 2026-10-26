@@ -1,0 +1,14 @@
+{
+  "title": "Unable to change the configuration of a VM with a Marketplace image",
+  "shortDescription": "Troubleshooting configuration changes for VMs with Marketplace images",
+  "metaDescription": "Why you cannot change the configuration of a VM with a Marketplace image: what restrictions apply to such images and what they are related to",
+  "sectionTitle": "Unable to change the configuration of a VM with a Marketplace image",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "4214a5c6-e409-4ca3-9832-37587f95b32b"
+}

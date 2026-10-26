@@ -1,0 +1,16 @@
+{
+  "title": "Unable to upload a VM image",
+  "shortDescription": "Troubleshooting errors that occur when uploading a VM image",
+  "metaDescription": "Troubleshooting errors that occur when uploading a VM image",
+  "sectionTitle": "Unable to upload a VM image",
+  "icon": "",
+  "weight": 7,
+  "uuid": "ed31cb18-5b3e-4c81-9c06-75a893ea0544",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Servers: create your first virtual machine",
+  "shortDescription": "Create a virtual machine from a ready-made operating system image and connect to it via SSH",
+  "metaDescription": "Explore the capabilities of the Cloud Servers service. Create a virtual machine from a ready-made operating system image and connect to it via SSH",
+  "sectionTitle": "Cloud Servers: create your first virtual machine",
+  "icon": "",
+  "weight": 1,
+  "uuid": "6bf012a0-7e74-4ae0-8f32-663ca3488ce0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

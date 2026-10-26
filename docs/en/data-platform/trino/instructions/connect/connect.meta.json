@@ -1,0 +1,15 @@
+{
+  "title": "Connecting to a service instance",
+  "shortDescription": "How to connect via TLS to a service instance",
+  "metaDescription": "Learn how to connect via TLS to a deployed Cloud Trino service instance using the web interface or a client in VK Data Platform",
+  "sectionTitle": "Connecting to a service instance",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": "fb0b162f-d972-478e-8637-2c9c75256261"
+}

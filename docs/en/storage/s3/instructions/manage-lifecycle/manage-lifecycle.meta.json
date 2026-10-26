@@ -1,0 +1,16 @@
+{
+  "title": "Object lifecycle in a bucket",
+  "metaDescription": "Configuring the object lifecycle in VK Object Storage. Learn how to add, modify, and delete automatic object deletion rules via the VK Cloud management console, AWS CLI, or API",
+  "shortDescription": "Configuring automated deletion of objects from a bucket",
+  "sectionTitle": "Object lifecycle in a bucket",
+  "icon": "",
+  "weight": 5,
+  "uuid": "9a518e5b-61ab-4af5-af83-c625dada3796",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Attaching and detaching file storage",
+  "shortDescription": "How to attach file storage to a virtual machine or detach it",
+  "metaDescription": "How to attach file storage to a virtual machine and detach it: step-by-step instructions for mounting and detaching disks via NFS and CIFS protocols for Windows and Linux.",
+  "sectionTitle": "Attaching and detaching file storage",
+  "icon": "",
+  "weight": 2,
+  "uuid": "76a567e8-d30c-473c-9ca5-2e23a0f5ea70",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

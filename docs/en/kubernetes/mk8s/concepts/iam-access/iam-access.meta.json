@@ -1,0 +1,14 @@
+{
+  "title": "Access Management",
+  "shortDescription": "How IAM distributes access rights between project members in Managed Containers",
+  "metaDescription": "Everything about access control with IAM in Managed Containers from VK Cloud: how the basic project member roles (owner, administrator, observer) affect access to service components, and which specialized roles with which permissions are provided for managing clusters and their resources",
+  "sectionTitle": "Access Management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "d44183a1-8068-49a0-9820-bf8fe7d037ff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

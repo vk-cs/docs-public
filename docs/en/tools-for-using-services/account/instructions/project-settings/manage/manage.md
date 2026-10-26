@@ -113,7 +113,7 @@ You will be able to reactivate the project after any period of time by uploading
 
 You can [transfer disks](/en/computing/iaas/instructions/volumes#move_disk_to_another_project) between projects. This allows you to transfer virtual machines between projects.
 
-Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) locally the disk image and [download](/en/computing/iaas/instructions/images/images-manage#importing_an_image) it to the new project.
+Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) locally the disk image and [download](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) it to the new project.
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 
@@ -337,7 +337,7 @@ Information about increasing quotas for GeekBrains program participants you can 
 
 There are the default and additional [SDN](/en/networks/vnet/concepts/architecture#sdns_used) of the project, if it is connected. To change the SDN type, contact [technical support](mailto:support@mcs.mail.ru).
 
-## Deleting a project
+## {heading(Deleting a project)[id=project-delete]}
 
 Deleting a project is also possible with a negative balance.
 

@@ -1,0 +1,19 @@
+{
+  "title": "Creating a disk",
+  "shortDescription": "How to create and configure a disk",
+  "metaDescription": "Creating a disk in VK Cloud via the personal dashboard and OpenStack CLI. Selecting the disk type, size, and availability zone.",
+  "sectionTitle": "Creating a disk",
+  "icon": "",
+  "weight": 1,
+  "uuid": "919a2ae9-e566-4cc1-9b84-a502870f63a0",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Setting up scaling priorities for node groups",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Setting up scaling priorities for node groups",
+  "icon": "",
+  "weight": 60,
+  "uuid": "ff0a0ff3-b68f-4c10-b919-18bd327f18fe",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

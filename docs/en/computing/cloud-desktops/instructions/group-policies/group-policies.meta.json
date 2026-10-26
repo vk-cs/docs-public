@@ -1,0 +1,18 @@
+{
+  "title": "Configuring AD Group Policies",
+  "shortDescription": "Configuring AD group policies required for connecting to desktops running Windows OS",
+  "metaDescription": "Configuring AD domain controller group policies to allow end users to connect to virtual desktops running Windows OS",
+  "sectionTitle": "Configuring AD Group Policies",
+  "icon": "",
+  "weight": 1,
+  "uuid": "eac9027a-2cbe-412a-abc7-d38790f54809",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

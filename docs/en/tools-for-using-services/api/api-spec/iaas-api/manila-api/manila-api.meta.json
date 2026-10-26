@@ -1,0 +1,14 @@
+{
+  "title": "Managing file storages",
+  "metaDescription": "Explore the OpenAPI specification of the VK Cloud Shared File Systems API: method descriptions, parameters, request and response examples. Get detailed documentation for automating file storage management.",
+  "shortDescription": "OpenAPI specification for managing file storages",
+  "sectionTitle": "Managing file storages",
+  "icon": "",
+  "weight": 4,
+  "uuid": "4c61d697-e603-4667-8cb3-249c7687895f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

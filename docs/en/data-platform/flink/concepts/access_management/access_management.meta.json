@@ -1,0 +1,15 @@
+{
+  "title": "Access management in VK Private Cloud",
+  "shortDescription": "How access rights are distributed among project members in Cloud Flink, examples of role models",
+  "metaDescription": "Learn how access rights are distributed among project members in the Cloud Flink service of VK Data Platform: the impact of basic roles and examples of role models with separate permissions.",
+  "sectionTitle": "Access management in VK Private Cloud",
+  "icon": "",
+  "weight": 4,
+  "uuid": "28e9e334-7eb2-4cc7-9bb5-5ac209580182",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

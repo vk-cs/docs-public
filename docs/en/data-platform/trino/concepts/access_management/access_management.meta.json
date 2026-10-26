@@ -1,0 +1,15 @@
+{
+  "title": "Access management in VK Private Cloud",
+  "shortDescription": "How the access management subsystem in Cloud Trino distributes access rights between project members in VK Private Cloud, examples of role models",
+  "metaDescription": "Learn how access rights are distributed between project members in the Cloud Trino service of VK Data Platform: the impact of basic roles and examples of role models with individual permissions.",
+  "sectionTitle": "Access management in VK Private Cloud",
+  "icon": "",
+  "weight": 4,
+  "uuid": "936ec98f-0b12-46c9-bd50-0f1915e60f00",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

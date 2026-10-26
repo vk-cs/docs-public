@@ -1,0 +1,14 @@
+{
+  "title": "Working with data",
+  "shortDescription": "How to load data from sources into Data LakeHouse",
+  "metaDescription": "How to load data from sources into Data LakeHouse",
+  "sectionTitle": "Working with data",
+  "icon": "",
+  "weight": 3,
+  "uuid": "3e9acd2b-cffb-4c3e-be1f-f72b6b1f7844",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

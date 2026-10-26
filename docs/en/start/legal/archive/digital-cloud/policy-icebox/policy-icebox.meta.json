@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the Cold Data Cloud (Icebox) service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer by Digital Cloud LLC (hereinafter referred to as the Company) to conclude a user agreement (hereinafter referred to as the Agreement) with you",
+  "sectionTitle": "User Agreement for the Cold Data Cloud (Icebox) service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "2c1fc894-dd99-4880-97fe-de6e02b49b40",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

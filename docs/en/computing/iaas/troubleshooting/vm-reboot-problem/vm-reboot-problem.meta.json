@@ -1,0 +1,14 @@
+{
+  "title": "VM stuck in reboot status",
+  "shortDescription": "What to do if a virtual machine cannot start after a reboot",
+  "metaDescription": "What to do if a virtual machine cannot start after a reboot",
+  "sectionTitle": "VM stuck in reboot status",
+  "icon": "",
+  "weight": 22,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "25836c7f-6c27-4b4f-9d3a-d88abf7ca81d"
+}

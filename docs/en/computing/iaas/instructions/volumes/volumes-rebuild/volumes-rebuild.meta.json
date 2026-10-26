@@ -1,0 +1,18 @@
+{
+  "title": "Volume restore",
+  "sectionTitle": "Volume restore",
+  "shortDescription": "How to restore a volume from a backup",
+  "metaDescription": "Cloud Servers: restoring a virtual machine volume from a backup in VK Cloud.",
+  "icon": "",
+  "weight": 10,
+  "uuid": "11c06ec1-e7bf-48f1-9f1e-b67861ccccd5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

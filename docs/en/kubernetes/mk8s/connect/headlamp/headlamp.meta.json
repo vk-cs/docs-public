@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a cluster using Headlamp",
+  "shortDescription": "",
+  "metaDescription": "Setting up the Headlamp graphical interface for managing Kubernetes clusters in Managed Containers: operating modes, installation and connection methods",
+  "sectionTitle": "Connecting to a cluster using Headlamp",
+  "icon": "",
+  "weight": 2,
+  "uuid": "ead8c892-f023-4a8e-9711-e1a507eeace5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for the Vision Software",
+  "shortDescription": "",
+  "metaDescription": "This License Agreement (hereinafter referred to as the Agreement) governs the relationship between VK LLC (PSRN 1027739850962, Russia, 125167, Moscow, 39 Leningradsky Prospekt, bldg. 79), hereinafter referred to as the Licensor, and You",
+  "sectionTitle": "License Agreement for the Vision Software",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "57c656ef-b67b-4b6f-984a-2bd54885a46b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

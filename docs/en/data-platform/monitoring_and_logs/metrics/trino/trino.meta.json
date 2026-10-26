@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Trino",
+  "shortDescription": "",
+  "metaDescription": "Learn which Trino metrics are collected for each deployed instance of the Cloud Trino service in VK Data Platform for monitoring: cluster state, interaction between components, results of SQL query and task execution, resource usage",
+  "sectionTitle": "Cloud Trino",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "ce619646-a6fd-4e71-b0e0-598a351f4b4b"
+}

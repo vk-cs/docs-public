@@ -1,0 +1,18 @@
+{
+  "title": "DB instance sharding",
+  "shortDescription": "Managing shards in ClickHouse and MongoDB DBMS",
+  "metaDescription": "Cloud Databases: managing DBMS shards in VK Cloud",
+  "sectionTitle": "DB instance sharding",
+  "icon": "",
+  "weight": 7,
+  "uuid": "7ff17b62-9804-4552-852e-bfc046a2b558",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

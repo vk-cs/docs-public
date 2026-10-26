@@ -1,0 +1,13 @@
+{
+  "title": "Image-based application configuration",
+  "shortDescription": "",
+  "metaDescription": "Image-based application configuration",
+  "sectionTitle": "Image-based application configuration",
+  "weight": 4,
+  "uuid": "f6302c1f-f4ff-4b1e-9168-2f500acaba01",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,17 +1,17 @@
-MySQL — реляционная СУБД с открытым исходным кодом, которая разрабатывается компанией Oracle при поддержке Open Source сообщества.
+MySQL is a relational open-source DBMS developed by Oracle with support from the open source community.
 
-Эта одна из самых распространенных СУБД для небольших решений — она входит в состав стеков LAMP, WAMP, Denwer и других. MySQL универсальна: доступны версии для всех основных операционных систем, предоставляются API и коннекторы для большинства часто используемых языков программирования. Для этой СУБД существует множество дополнительных расширений (плагинов).
+This is one of the most widespread DBMSs for small-scale solutions — it is included in the LAMP, WAMP, Denwer, and other stacks. MySQL is versatile: versions are available for all major operating systems, and APIs and connectors are provided for most commonly used programming languages. Many additional extensions (plugins) exist for this DBMS.
 
-MySQL будет оптимальным решением, если:
+MySQL will be the optimal solution if:
 
-- нужна полнофункциональная реляционная СУБД, распространяемая бесплатно;
-- от базы данных требуется хорошая горизонтальная масштабируемость и способность выдерживать много одновременных запросов на чтение;
-- важно, чтобы решение было простым в развертывании и настройке.
+- you need a full-featured relational DBMS distributed free of charge;
+- the database needs good horizontal scalability and the ability to handle many simultaneous read queries;
+- it is important that the solution be simple to deploy and configure.
 
-Список версий MySQL, которые поддерживаются в VK Cloud, доступен при [создании](../../../instructions/create) инстанса этой базы данных.
+The list of MySQL versions supported in VK Cloud is available when [creating](../../../instructions/create) an instance of this database.
 
-## Что дальше?
+## What's next?
 
-- [Изучите](https://dev.mysql.com/doc/) официальную документацию MySQL.
-- [Узнайте](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html), в чем различия между версиями MySQL 5.7 и 8.0.
-- [Познакомьтесь](../../../instructions) с основными операциями, которые доступны для инстансов этой СУБД в VK Cloud.
+- [See](https://dev.mysql.com/doc/) the official MySQL documentation.
+- [Find out](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html) the differences between MySQL versions 5.7 and 8.0.
+- [Learn about](../../../instructions) the main operations available for instances of this DBMS in VK Cloud.

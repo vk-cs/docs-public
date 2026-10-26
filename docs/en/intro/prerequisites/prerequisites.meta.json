@@ -1,0 +1,14 @@
+{
+  "title": "Tool setup",
+  "shortDescription": "How to log in to your management console, connect to OpenStack CLI or API, install Terraform",
+  "metaDescription": "Tool setup",
+  "sectionTitle": "Tool setup",
+  "weight": 1,
+  "uuid": "bb1b144e-a404-44a1-937f-114311411936",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

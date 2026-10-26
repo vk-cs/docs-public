@@ -17,7 +17,7 @@ The example use:
 
 {cut(The full Terraform manifest used in creating the example resources)}
 
-{include(/ru/_includes/_cdn_tf.md)}
+{include(../../../../_includes/_cdn_tf.md)}
 
 {/cut}
 
@@ -36,7 +36,7 @@ Origin groups manage the backend servers responsible for hosting and delivering 
 
 Create a Terraform configuration file `cdn.tf` and add the following content to it:
 
-{include(/en/_includes/_cdn_tf.md)[tags=origin]}
+{include(../../../../_includes/_cdn_tf.md)[tags=origin]}
 
 Here:
 
@@ -108,7 +108,7 @@ To add shielding to the CDN resource configuration, get a list of available prec
 
 1. Select precache server point of presence and add its data to CDN resource configuration file. To do this, open `cdn.tf` file and add the following content to it:
 
-    {include(/en/_includes/_cdn_tf.md)[tags=shielding]}
+    {include(../../../../_includes/_cdn_tf.md)[tags=shielding]}
 
 ## {heading(3. (Optional) Add SSL certificate to your project)[id=ssl]}
 
@@ -120,7 +120,7 @@ If you plan to use a Let's Encrypt certificate or not use an SSL certificate at 
 1. Check that the files contain all the certificate lines.
 1. Open the `cdn.tf` file and add the following content to it:
 
-    {include(/en/_includes/_cdn_tf.md)[tags=ssl]}
+    {include(../../../../_includes/_cdn_tf.md)[tags=ssl]}
 
     Here:
 
@@ -134,7 +134,7 @@ If you plan to use a Let's Encrypt certificate or not use an SSL certificate at 
 
 Open the `cdn.tf` file and add the following content:
 
-{include(/en/_includes/_cdn_tf.md)[tags=cdn]}
+{include(../../../../_includes/_cdn_tf.md)[tags=cdn]}
 
 Here:
 

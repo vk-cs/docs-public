@@ -1,0 +1,16 @@
+{
+  "title": "Rules of the VK Cloud academic projects and research support program",
+  "shortDescription": "",
+  "metaDescription": "Rules of the VK Cloud academic projects and research support program",
+  "sectionTitle": "Rules of the VK Cloud academic projects and research support program",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "Правила программы поддержки академических проектов и исследований VK Cloud",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "ACL",
+  "shortDescription": "Managing the configuration of access control list (ACL) rules for buckets and objects",
+  "metaDescription": "All available methods for working with access control lists (ACL) for VK Object Storage buckets and objects: set a bucket ACL (PutBucketACL) or an object ACL (PutObjectACL); get a bucket ACL (GetBucketACL) or an object ACL (GetObjectACL)",
+  "sectionTitle": "ACL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f45c4a9a-cad3-458e-87b2-4409b9190f14",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

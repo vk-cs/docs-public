@@ -1,0 +1,14 @@
+{
+  "title": "Deals and applications",
+  "shortDescription": "How to create a deal application and view information about open applications and registered deals",
+  "metaDescription": "How to create a deal application and view information about open applications and registered deals: description of working with deals and applications in the VK Cloud partner management console ",
+  "sectionTitle": "Deals and applications",
+  "icon": "",
+  "weight": 4,
+  "uuid": "89d808be-ae52-4d17-b427-d03e9af32271",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

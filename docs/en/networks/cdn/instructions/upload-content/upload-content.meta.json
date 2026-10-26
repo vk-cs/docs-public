@@ -1,0 +1,14 @@
+{
+    "title": "Uploading content to CDN",
+      "shortDescription": "How to upload content to CDN via your management console",
+      "metaDescription": "VK Cloud CDN: uploading content to CDN via your management console.",
+    "sectionTitle": "Uploading content to CDN",
+    "icon": "",
+    "weight": 3,
+    "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2a95e84d-88b0-4166-8c46-b1ff2528edbb"
+}

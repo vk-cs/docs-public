@@ -1,0 +1,14 @@
+{
+  "title": "OS Installation",
+  "shortDescription": "How to install and reinstall the OS on a server",
+  "metaDescription": "Step-by-step instructions for installing and reinstalling the operating system on a Bare Metal server via the VK Cloud platform management console.",
+  "sectionTitle": "OS Installation",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a2b1cd41-d085-47c9-8f2f-ba9a03dca4e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

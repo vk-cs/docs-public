@@ -1,0 +1,14 @@
+{
+  "title": "Access management",
+  "shortDescription": "How IAM distributes access rights between project members in Cloud Monitoring",
+  "metaDescription": "Everything about access control with IAM in Cloud Monitoring from VK Cloud: how the basic roles of project members (owner, administrator, observer) affect access to service components, and which specialized roles with which rights are provided for managing the service.",
+  "sectionTitle": "Access management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "40efc870-8055-49fb-a7b9-d480ec9a006e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

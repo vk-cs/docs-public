@@ -1,0 +1,23 @@
+{
+  "title": "Connecting ELK Monitoring in the Cloud and Configuring Remote Nodes",
+  "shortDescription": "",
+  "metaDescription": "Author: Mikhail Volynov This article will help you install an ELK monitoring server and connect filebeat agents to it for Nginx application logs, as well as lear",
+  "sectionTitle": "Connecting ELK Monitoring in the Cloud and Configuring Remote Nodes",
+  "icon": "",
+  "weight": 1,
+  "uuid": "d6d94f5b-0274-4420-b91a-f7b2c488469f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

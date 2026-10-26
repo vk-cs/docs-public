@@ -1,0 +1,12 @@
+{
+  "title": "Testing the service in the store",
+  "shortDescription": "",
+  "metaDescription": "Testing the service in the store",
+  "sectionTitle": "Testing the service in the store",
+  "uuid": "2ffb94d4-62d9-4bbf-8a11-a6e76ab813ea",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

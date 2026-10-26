@@ -1,0 +1,14 @@
+{
+  "title": "Access Management",
+  "shortDescription": "How IAM distributes access rights between project members in Cloud Servers",
+  "metaDescription": "Everything about access management with IAM in Cloud Servers from VK Cloud: how the basic roles of project members (owner, administrator, observer) affect access to service components, and which specialized roles with which rights are provided for managing virtual machines.",
+  "sectionTitle": "Access Management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "4e5445e3-6476-490b-a968-b17ab75846a8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_ssh_keypair resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_ssh_keypair resource",
+  "sectionTitle": "ivkcs_ssh_keypair resource",
+  "uuid": "eea31316-890f-4cb4-a624-0cda33dd9781",
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

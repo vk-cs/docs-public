@@ -1,0 +1,13 @@
+{
+  "title": "Client Registration",
+  "shortDescription": "How to join a partner project using the link from the email",
+  "metaDescription": "How to join a VK Cloud partner project: joining a partner project via the link from the email",
+  "sectionTitle": "Client Registration",
+  "weight": 2,
+  "uuid": "96332c7a-d27d-4fd6-95cb-31798fe1ed56",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

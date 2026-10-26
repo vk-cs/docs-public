@@ -1,0 +1,14 @@
+{
+  "title": "Managing SaaS applications",
+  "shortDescription": "How to add a SaaS application to Marketplace or update it",
+  "metaDescription": "A guide to adding SaaS applications to Marketplace and updating them for the case of developing a SaaS broker based on a template received from the VK Cloud cloud platform.",
+  "sectionTitle": "Managing SaaS applications",
+  "weight": 5,
+  "isBeta": true,
+  "uuid": "9d701d79-19f3-4865-aa8d-4dbc84d79887",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Quick start",
+  "shortDescription": "How to get started with a Bare Metal server",
+  "metaDescription": "Step-by-step guide for a quick Bare Metal launch in VK Cloud: initial setup, network creation, server ordering, Linux installation, SSH connection via a jump host for Linux and Windows.",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "weight": 1,
+  "uuid": "8562bf32-f582-48fb-89cb-38ff86550566",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

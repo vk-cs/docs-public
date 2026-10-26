@@ -24,7 +24,7 @@ To calculate the total price for the services, use the [calculator](https://clou
 
 ## What is charged
 
-- Disk snapshots for each 1 GB of the disk space. The price is the same for all disk types and is available in the [price list](https://cloud.vk.com/pricelist)  in the **Виртуальные серверы** section.
+- Disk snapshots for each 1 GB of the disk space. The price is the same for all disk types and is available in the [price list](https://cloud.vk.com/pricelist)  in the **Virtual Servers** section.
 - Volume of the data stored for each 1 GB by the VK Object Storage [tariffs](/en/storage/s3/tariffication) for the `BackupBucket` storage class. 
 
 ## What is not charged

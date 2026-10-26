@@ -1,0 +1,2 @@
+
+Agreements and documents valid until August 31, 2026 for clients who have a separate valid agreement for the use of the VK Cloud platform and services, concluded with LLC "VK" in the form of a single document.

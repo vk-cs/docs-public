@@ -1,0 +1,16 @@
+{
+  "title": "Cannot delete a bucket",
+  "shortDescription": "Why a bucket cannot be deleted in your management console or via AWS CLI",
+  "metaDescription": "Why a bucket cannot be deleted in your management console or via AWS CLI",
+  "sectionTitle": "Cannot delete a bucket",
+  "icon": "",
+  "weight": 1,
+  "uuid": "d9d03e2b-619b-42a3-906d-b0edaa7d5fdb",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

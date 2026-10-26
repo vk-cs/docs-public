@@ -1,0 +1,14 @@
+{
+  "title": "Redis",
+  "shortDescription": "A NoSQL-type DBMS for storing data as key/value pairs",
+  "metaDescription": "Redis service for storing data in RAM as key/value pairs in the VK Data Platform infrastructure",
+  "sectionTitle": "Redis",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 16,
+  "uuid": "56aa5e71-6dbe-4650-9d6f-b4345a7d4d39"
+}

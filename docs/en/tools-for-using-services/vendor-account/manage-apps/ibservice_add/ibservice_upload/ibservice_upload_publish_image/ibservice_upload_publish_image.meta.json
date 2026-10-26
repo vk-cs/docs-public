@@ -1,0 +1,13 @@
+{
+  "title": "Publishing a service image",
+  "shortDescription": "",
+  "metaDescription": "Publishing a service image",
+  "sectionTitle": "Publishing a service image",
+  "weight": 6,
+  "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

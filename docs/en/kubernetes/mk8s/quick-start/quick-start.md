@@ -139,7 +139,7 @@ Install the following tools on the host:
    1. Select the **Kubernetes Administrator** role from the drop-down list.
    1. Save your changes.
 
-1. [Activate API access](/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access) for this user.
+1. [Activate API access](/en/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate) for this user.
 
 1. Get kubeconfig for the cluster in [VK Cloud management console](https://msk.cloud.vk.com/app/):
 

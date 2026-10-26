@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to OpenStack CLI",
+  "shortDescription": "Installing the OpenStack client for managing {var(cloud)} resources",
+  "metaDescription": "Start managing VK Cloud from the command line. This step-by-step guide will help you install OpenStack CLI on Windows, macOS, and Linux and complete authentication.",
+  "sectionTitle": "Connecting to OpenStack CLI",
+  "weight": 1,
+  "uuid": "1a7bb3d0-6d0d-4b16-97dd-f749cad971f4",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

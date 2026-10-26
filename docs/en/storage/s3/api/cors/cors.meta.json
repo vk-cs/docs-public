@@ -1,0 +1,16 @@
+{
+  "title": "CORS",
+  "shortDescription": "Installing, deleting, and viewing the configuration of the cross-origin request (CORS) mechanism in buckets",
+  "metaDescription": "All available methods for working with the configuration of the cross-origin request (CORS) mechanism in VK Object Storage buckets: get the current configuration (GetBucketCORS), set the configuration (PutBucketCORS), delete the configuration (DeleteBucketCORS)",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 3,
+  "uuid": "bc73cb11-f884-4e3f-95c9-00ba1e7b237b",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

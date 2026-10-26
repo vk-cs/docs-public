@@ -1,0 +1,14 @@
+{
+  "title": "Billing",
+  "shortDescription": "Service cost and billing specifics",
+  "metaDescription": "Cloud Audit service cost and billing specifics.",
+  "sectionTitle": "Billing",
+  "icon": "",
+  "weight": 4,
+  "uuid": "d72c2ae8-1cc0-4fc4-bd50-883b309859d6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

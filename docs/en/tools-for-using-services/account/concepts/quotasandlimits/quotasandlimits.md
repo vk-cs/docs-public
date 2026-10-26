@@ -16,7 +16,7 @@ Quotas can be [viewed](../../instructions/project-settings/manage#viewing_projec
 - short list — [in the management console](../../instructions/project-settings/manage#viewing_project_quotas)
 - extended list — via the OpenStack CLI
 
-There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common_4cc7e93b), which can be created by a single user.
+There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#quotasandlimits-general), which can be created by a single user.
 
 Quotas are closely related to [technical limits](#quotas_and_technical_limits).
 
@@ -36,7 +36,7 @@ Non-rigid limits can be exceeded — either also through [technical support](mai
 
 The following is a list of quotas and limits for the Moscow region.
 
-### Common
+### {heading(Common)[id=quotasandlimits-general]}
 
 [cols="2,1,1,1,1", options="header"]
 |===

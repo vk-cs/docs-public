@@ -1,0 +1,12 @@
+{
+  "title": "Service publishing",
+  "shortDescription": "",
+  "metaDescription": "Service publishing",
+  "sectionTitle": "Service publishing",
+  "uuid": "fe9c622f-9e0d-4e2e-88d4-fcb68eb31dcb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

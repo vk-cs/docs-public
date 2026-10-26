@@ -1,0 +1,16 @@
+{
+  "title": "Static site hosting",
+  "shortDescription": "Using buckets as a static website",
+  "metaDescription": "How static site hosting works in VK Object Storage. What static site configuration options exist, and the specifics of handling requests to a page.",
+  "sectionTitle": "Static site hosting",
+  "icon": "",
+  "weight": 8,
+  "uuid": "4686a870-4b6e-49c0-a8b9-704cd6ea6ec3",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

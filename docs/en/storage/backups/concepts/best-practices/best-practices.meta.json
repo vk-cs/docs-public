@@ -1,0 +1,19 @@
+{
+  "title": "Best practices for configuring backups",
+  "shortDescription": "Recommendations for configuring backups using Cloud Backup",
+  "metaDescription": "Best practices for configuring backups using the VK Cloud platform Cloud Backup service. Recommendations for backing up critical and non-critical data.",
+  "sectionTitle": "Best practices for configuring backups",
+  "icon": "",
+  "weight": 5,
+  "uuid": "4419ca7a-62ec-4361-93c1-b4fcbe4cd07f",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

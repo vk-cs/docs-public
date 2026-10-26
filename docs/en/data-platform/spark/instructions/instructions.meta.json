@@ -1,0 +1,15 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing the instance and its components",
+  "metaDescription": "Creating a service instance and managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "674d1dd0-a615-47da-9ae0-a4483c7139f7"
+}

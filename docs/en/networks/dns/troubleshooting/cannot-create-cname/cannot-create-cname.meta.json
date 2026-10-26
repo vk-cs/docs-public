@@ -1,0 +1,14 @@
+{
+  "title": "Failed to create a CNAME record for the root domain",
+  "shortDescription": "Why it is not possible to create a CNAME record for the root domain, what restrictions apply in DNS, and how to resolve this issue",
+  "metaDescription": "Why it is not possible to create a CNAME record for the root domain, what restrictions apply in DNS, and how to resolve this issue",
+  "sectionTitle": "Failed to create a CNAME record for the root domain",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b855167f-b69d-4e83-906c-ddc5bc4f28e4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

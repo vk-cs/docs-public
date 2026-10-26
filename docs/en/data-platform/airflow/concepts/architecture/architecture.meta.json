@@ -1,0 +1,15 @@
+{
+  "title": "Service architecture",
+  "shortDescription": "How the Cloud Airflow service is structured",
+  "metaDescription": "Architecture of the Cloud Airflow service in VK Data Platform",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "77ec32c9-f266-4a33-81d2-446f05486a41",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Rules for Using the Services",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Rules for Using the Services",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b8029c94-0327-4218-b2ac-46f70980fc5a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

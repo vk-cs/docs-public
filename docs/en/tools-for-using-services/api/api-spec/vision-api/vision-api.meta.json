@@ -1,0 +1,14 @@
+{
+  "title": "Vision",
+  "shortDescription": "OpenAPI specification of the Vision service",
+  "metaDescription": "Specifications of public APIs for automating the management of cloud services and developing your own tools for working with VK Cloud. Vision service API",
+  "sectionTitle": "Vision",
+  "icon": "",
+  "weight": 3,
+  "uuid": "698924fa-a36b-44d0-ab12-5ace5ee33ed7",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "schemas section",
+  "shortDescription": "Parameters of tariff plan options in the SaaS application connection wizard",
+  "metaDescription": "The schemas section in the SaaS application configuration JSON file: parameters of tariff plan options in the SaaS application connection wizard in Marketplace.",
+  "sectionTitle": "schemas section",
+  "weight": 5,
+  "uuid": "4bdde308-3854-41d5-b242-131983dc0245",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

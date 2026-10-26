@@ -1,0 +1,14 @@
+{
+  "title": "Protecting critical data",
+  "shortDescription": "Using the Object Lock feature to protect objects from deletion and overwriting",
+  "metaDescription": "Object Lock in COMPLIANCE mode for VK Object Storage: step-by-step configuration of critical data protection from deletion and overwriting (WORM) — enabling Object Lock on a bucket.",
+  "sectionTitle": "Protecting critical data",
+  "icon": "",
+  "weight": 3,
+  "uuid": "894838b8-dc0f-400d-ba3f-203cd227e8d8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

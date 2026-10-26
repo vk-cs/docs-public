@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «1C:Ready Workplace» service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer by LLC «Digital» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «1C:Ready Workplace» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "uuid": "a9d526a4-e5be-43e4-b198-d9d61806bb9c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

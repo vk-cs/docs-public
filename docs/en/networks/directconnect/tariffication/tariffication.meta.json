@@ -1,0 +1,14 @@
+{
+  "title": "Billing",
+  "shortDescription": "Service cost and billing specifics",
+  "metaDescription": "Cloud Direct Connect service cost and billing specifics.",
+  "sectionTitle": "Billing",
+  "icon": "",
+  "weight": 3,
+  "uuid": "05fb9d00-26bd-4c06-a781-0d9182934042",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

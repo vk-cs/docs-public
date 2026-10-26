@@ -1,0 +1,14 @@
+{
+  "title": "Endpoints",
+  "shortDescription": "Endpoints for working with Cloud Spark",
+  "metaDescription": "Learn which endpoints Cloud Spark provides in VK Data Platform: Spark Connect for connecting from a Python script and Spark Service for viewing logs and running jobs",
+  "sectionTitle": "Endpoints",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "6c9642fa-ed81-44dd-b80f-49f8142f86d5"
+}

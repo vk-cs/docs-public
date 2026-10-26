@@ -1,0 +1,13 @@
+{
+  "title": "Adding an image-based application",
+  "shortDescription": "Adding a vendor's image-based application to Marketplace",
+  "metaDescription": "Guide to adding image-based applications to Marketplace: creating the application image, preparing a service package describing the service configuration (pricing plans, options) and its infrastructure, uploading and publishing the service to Marketplace",
+  "sectionTitle": "Adding an image-based application",
+  "weight": 0,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "805024e1-9746-4a8c-a57c-1799b1346523"
+}

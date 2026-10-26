@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Redis",
+  "shortDescription": "",
+  "metaDescription": "Learn which Redis metrics in Prometheus format are collected and displayed on dashboards for monitoring Cloud Redis instances in VK Data Platform.",
+  "sectionTitle": "Cloud Redis",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "b7ea6d3f-24db-4c73-9a96-df02fe50376f"
+}

@@ -41,7 +41,7 @@
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 
@@ -145,7 +145,7 @@
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 
@@ -187,7 +187,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
 
    {/tab}
    
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
    
    {/tabs}
 

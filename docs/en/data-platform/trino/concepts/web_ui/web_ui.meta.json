@@ -1,0 +1,15 @@
+{
+  "title": "Trino Web Interface",
+  "shortDescription": "Cloud Trino web interface for monitoring queries and cluster status",
+  "metaDescription": "Learn about the VK Data Platform Cloud Trino web interface: purpose, main sections, query statuses, and typical use cases",
+  "sectionTitle": "Trino Web Interface",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "b23b124d-f910-408a-a6f5-3f4dd129ad59"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Networks",
+  "metaDescription": "Explore the API specifications of the VK Cloud Cloud Networks service: method descriptions, parameters, examples of requests and responses. Get detailed documentation for integrating and automating cloud services.",
+  "shortDescription": "OpenAPI specifications of the Cloud Networks service",
+  "sectionTitle": "Cloud Networks",
+  "icon": "",
+  "weight": 1,
+  "uuid": "42affd86-804c-4175-ab24-82fc9fa24d8d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

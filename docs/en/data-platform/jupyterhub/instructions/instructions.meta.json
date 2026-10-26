@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Creating a service instance and managing its components",
+  "metaDescription": "JupyterHub in VK Data Platform: creating a service instance, managing the instance and its components",
+  "sectionTitle": "Step-by-step instructions",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "96c7718a-00db-4d8a-9300-705039433c94"
+}

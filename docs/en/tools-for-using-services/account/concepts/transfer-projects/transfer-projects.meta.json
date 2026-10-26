@@ -1,0 +1,14 @@
+{
+  "title": "Transferring objects between projects",
+  "shortDescription": "How the process of transferring objects between projects works in VK Cloud",
+  "metaDescription": "How the process of transferring objects between projects works in VK Cloud: VMs, disks, Floating IP addresses, and external network addresses",
+  "sectionTitle": "Transferring objects between projects",
+  "icon": "",
+  "weight": 4,
+  "uuid": "1e19b384-8bcf-4784-9093-693bcd412068",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

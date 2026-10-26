@@ -1,0 +1,13 @@
+{
+  "title": "full_description.md file",
+  "shortDescription": "",
+  "metaDescription": "full_description.md file",
+  "sectionTitle": "full_description.md file",
+  "weight": 3,
+  "uuid": "87c9619b-7657-4e54-99bf-5aa2a7138308",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

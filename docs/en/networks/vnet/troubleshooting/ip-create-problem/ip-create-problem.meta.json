@@ -1,0 +1,14 @@
+{
+  "title": "Floating IP address allocation is limited in a specific subnet",
+  "shortDescription": "What to do if a Floating IP address from a specific subnet cannot be added",
+  "metaDescription": "What to do if a Floating IP address from a specific subnet cannot be added",
+  "sectionTitle": "Floating IP address allocation is limited in a specific subnet",
+  "icon": "",
+  "weight": 9,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "c7e80af4-3bb4-4c4b-8e6b-859e1eca079d"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Object",
+  "shortDescription": "Uploading, copying, deleting, checking object existence and downloading its contents",
+  "metaDescription": "All available methods for working with objects in VK Object Storage: download an object from a bucket (GetObject), upload an object to a bucket (PutObject), copy an object (CopyObject), get information about an object (HeadObject), delete an object (DeleteObject) or a group of objects (DeleteMultipleObjects)",
+  "sectionTitle": "Object",
+  "icon": "",
+  "weight": 7,
+  "uuid": "eb4a3910-e268-4185-b9d9-70b8454b4bc2",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

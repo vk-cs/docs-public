@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «FZ-152 Cloud» service",
+  "shortDescription": "",
+  "metaDescription": "This document constitutes an offer in accordance with Article 435 of the Civil Code of the Russian Federation (hereinafter referred to as the «Offer») for concluding an agreement between VK LLC (125167, Mosc",
+  "sectionTitle": "User Agreement for the «FZ-152 Cloud» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 8,
+  "uuid": "3594244a-42d1-4944-a86d-4b82c80a1d19",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

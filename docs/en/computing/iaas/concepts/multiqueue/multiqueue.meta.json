@@ -1,0 +1,18 @@
+{
+  "title": "Multiple queues (Multiqueue)",
+  "shortDescription": "Multiple queues (Multiqueue): conditions for enabling, use cases, limitations",
+  "metaDescription": "Multiple queues (Multiqueue): conditions for enabling, use cases, limitations.",
+  "sectionTitle": "Multiple queues (Multiqueue)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "62dcb9a4-8ea6-461c-bd2f-3fbc3a617fbd",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

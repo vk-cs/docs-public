@@ -1,0 +1,15 @@
+{
+  "title": "Versioning",
+  "shortDescription": "Managing bucket versioning settings, checking the current status, enabling and suspending versioning, viewing metadata of all versions",
+  "metaDescription": "All available methods for working with versioning in VK Object Storage buckets: Set versioning in a bucket (PutBucketVersioning), check the versioning configuration of a bucket (GetBucketVersioning), get metadata about all versions of objects in a bucket (ListObjectVersions)",
+  "sectionTitle": "Versioning",
+  "icon": "",
+  "weight": 11,
+  "uuid": "99c5fc83-11d1-4618-849a-ced029d922ab",
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

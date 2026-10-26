@@ -1,0 +1,16 @@
+{
+  "title": "Access Using Keys",
+  "shortDescription": "Two types of access keys: keys tied to the VK Object Storage account and keys tied to a bucket",
+  "metaDescription": "VK Object Storage access keys: how Access Key ID and Secret Key work, what limitations exist and in which scenarios to use them — AWS CLI, SDK and S3 API integration.",
+  "sectionTitle": "Access Using Keys",
+  "icon": "",
+  "weight": 0,
+  "uuid": "ce4b919e-d265-42e2-84bb-f1cecc2a26c9",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

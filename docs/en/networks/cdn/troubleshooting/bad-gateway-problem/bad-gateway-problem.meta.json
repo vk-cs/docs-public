@@ -1,0 +1,14 @@
+{
+  "title": "502 Error When Accessing a Resource",
+  "shortDescription": "What to do if you get a 502 Bad Gateway error when accessing a CDN resource",
+  "metaDescription": "What to do if you get a 502 Bad Gateway error when accessing a CDN resource",
+  "sectionTitle": "502 Error When Accessing a Resource",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "62063c5c-8295-42e9-be3d-3c9f97776609"
+}

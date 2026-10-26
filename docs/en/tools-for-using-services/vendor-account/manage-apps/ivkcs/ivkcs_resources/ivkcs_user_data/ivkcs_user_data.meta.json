@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_user_data resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_user_data resource",
+  "sectionTitle": "ivkcs_user_data resource",
+  "uuid": "7a1ea2c6-be8a-4c2b-944a-c4fcf6383660",
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

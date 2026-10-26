@@ -43,7 +43,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {/tab}
 
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
    {/tabs}
 
@@ -93,7 +93,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {/tab}
 
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
    {/tabs}
 
@@ -127,7 +127,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    {/tab}
 
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
    {/tabs}
 
@@ -157,6 +157,6 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    {/tab}
 
-   <!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+   <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
    {/tabs}

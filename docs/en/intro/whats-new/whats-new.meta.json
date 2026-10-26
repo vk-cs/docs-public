@@ -1,0 +1,14 @@
+{
+  "title": "What's new",
+  "shortDescription": "What's new in the VK Private Cloud release version 4.3, release date: November 2025",
+  "metaDescription": "What's new in VK Private Cloud",
+  "sectionTitle": "What's new",
+  "weight": 0,
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  },
+  "uuid": "2997ae35-9f20-4e9d-bada-760201c055d9"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Access management",
+  "shortDescription": "How Cloud Audit uses IAM to distribute access rights among project members",
+  "metaDescription": "Everything about access management with IAM in Cloud Audit from VK Cloud: how the basic roles of project members (owner, administrator, observer) affect access to the event log, and which specialized roles with which rights are provided for viewing and exporting events.",
+  "sectionTitle": "Access management",
+  "icon": "",
+  "weight": 2,
+  "uuid": "4d44208b-566a-4dc1-802b-9a062d9aa0ef",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

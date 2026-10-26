@@ -1,0 +1,15 @@
+{
+  "title": "How-To Guides",
+  "shortDescription": "Use cases for the virtual network service",
+  "metaDescription": "Public and private DNS providing name resolution for VK Cloud platform services. How to configure and use DNS",
+  "sectionTitle": "How-To Guides",
+  "hidden": false,
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "314bcd75-6b57-41e2-a8e8-5ff4b8ee1f6e"
+}

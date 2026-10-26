@@ -1,0 +1,14 @@
+{
+  "title": "Error when running a Spark job: The node was low on resource: ephemeral-storage",
+  "shortDescription": "",
+  "metaDescription": "Learn why the error occurs when running a Spark job in Cloud Spark VK Data Platform: The node was low on resource: ephemeral-storage",
+  "sectionTitle": "Error when running a Spark job: The node was low on resource: ephemeral-storage",
+  "weight": 5,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "0ce91e19-cc20-404c-b9b9-5990669562c8"
+}

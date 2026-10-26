@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service tariffication rules, how to calculate the cost of using the service",
+  "metaDescription": "Description of the tariff system for the VK Object Storage Cyber Backup service in VK Cloud. Example of price calculation for a configured fault-tolerant cluster of three servers",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 7,
+  "uuid": "d937ca0f-ced8-403c-88b9-52c9504c8a24",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

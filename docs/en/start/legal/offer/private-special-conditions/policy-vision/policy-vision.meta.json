@@ -1,0 +1,16 @@
+{
+  "title": "License Agreement for the Vision Software",
+  "shortDescription": "",
+  "metaDescription": "This document is a license agreement for the use of the Vision computer software within the VK Cloud Platform.",
+  "sectionTitle": "License Agreement for the Vision Software",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 6,
+  "uuid": "d4270297-4419-4371-a203-9f7fa1e15539",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

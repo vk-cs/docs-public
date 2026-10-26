@@ -1,0 +1,14 @@
+{
+  "title": "Connection",
+  "shortDescription": "How to connect to rented servers",
+  "metaDescription": "Step-by-step instructions for connecting to a Bare Metal server: SSH for Linux with a key pair and fallback access via the VNC console in the VK Cloud management console. All connection details, recommendations, and sequential steps for simple and secure access.",
+  "sectionTitle": "Connection",
+  "icon": "",
+  "weight": 3,
+  "uuid": "ea40d0e7-dc76-4ac0-bb1c-fc2f7a4440f6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

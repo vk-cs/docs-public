@@ -1,0 +1,14 @@
+{
+  "title": "General Service Level Agreement",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "General Service Level Agreement",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cedee32e-f567-4328-a18d-fc85678384ef",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

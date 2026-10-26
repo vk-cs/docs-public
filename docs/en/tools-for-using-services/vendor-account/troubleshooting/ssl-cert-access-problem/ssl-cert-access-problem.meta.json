@@ -1,0 +1,14 @@
+{
+  "title": "Access error when creating an SSL certificate",
+  "shortDescription": "An access error occurs when creating an SSL certificate on the VM of an application instance",
+  "metaDescription": "Finding the cause of the access error that occurs when creating an SSL certificate on the VM of an image-based application instance during its deployment on the VK Cloud platform Marketplace. Recommendations for diagnosing and resolving the issue",
+  "sectionTitle": "Access error when creating an SSL certificate",
+  "icon": "",
+  "weight": 1,
+  "uuid": "2dc3c09a-bd76-4476-999b-b54bb998d6ff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

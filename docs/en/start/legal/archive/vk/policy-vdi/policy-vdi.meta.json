@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Cloud Desktop» Service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «VK» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Cloud Desktop» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 17,
+  "uuid": "cae807a6-e74f-4f86-9851-f8a2cd4f68c9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

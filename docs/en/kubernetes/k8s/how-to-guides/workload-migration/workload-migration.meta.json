@@ -1,0 +1,14 @@
+{
+  "title": "Migrating workloads between availability zones",
+  "shortDescription": "How to migrate a workload in Kubernetes clusters to a different availability zone",
+  "metaDescription": "How to migrate a workload in Kubernetes clusters to a different availability zone in Managed Containers, before and after resource migration",
+  "sectionTitle": "Migrating workloads between availability zones",
+  "icon": "",
+  "weight": 0,
+  "uuid": "810b03d0-aa16-4aaa-bb86-0d1757398b8e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

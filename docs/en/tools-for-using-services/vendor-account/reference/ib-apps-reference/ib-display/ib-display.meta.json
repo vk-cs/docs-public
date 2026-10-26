@@ -1,0 +1,13 @@
+{
+  "title": "display.yaml file",
+  "shortDescription": "Parameters for configuring the display of the tariff plan in the application tariff plan matrix",
+  "metaDescription": "display.yaml configuration file. Parameters for displaying configuration wizard pages for the tariff plan. Parameters of VK Cloud infrastructure billed under the tariff plan.",
+  "sectionTitle": "display.yaml file",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "5aaf0935-3131-4716-a2be-48b44e6ca97c"
+}

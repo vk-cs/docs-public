@@ -1,0 +1,18 @@
+{
+  "title": "Managing a {var(cloud)} account",
+  "shortDescription": "Operations for managing a {var(cloud)} account: viewing and editing profile data, SSH key pairs, and API access",
+  "metaDescription": "Operations for managing a VK Private Cloud account: viewing and editing profile data, SSH key pairs, and API access.",
+  "sectionTitle": "Managing a {var(cloud)} account",
+  "icon": "",
+  "weight": 3,
+  "uuid": "82a14247-044e-44a2-bd1f-88cddfb42ccc",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

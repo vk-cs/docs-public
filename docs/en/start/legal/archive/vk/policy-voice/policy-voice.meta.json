@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Cloud Voice» Service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «VK» (125167, Moscow, Leningradsky Prospekt, 39, bldg. 79, OGRN 1027739850962) (hereinafter — the «Company») to conclude a user agreement (hereinafter — the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Cloud Voice» Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "e266e764-7a7a-410a-93ff-e59df6fed10b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

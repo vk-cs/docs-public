@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and specifics of its tariffication",
+  "metaDescription": "Cost of the Cloud Logging service and specifics of its tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "3a17f84f-5b28-4b27-9837-6d5e1a239527",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

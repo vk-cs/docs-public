@@ -1,0 +1,16 @@
+{
+  "title": "x-amz-content-sha256 error when working with AWS CLI v2",
+  "shortDescription": "When working with object storage, the message `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` appears",
+  "metaDescription": "When working with object storage, the message `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` appears",
+  "sectionTitle": "x-amz-content-sha256 error when working with AWS CLI v2",
+  "icon": "",
+  "weight": 5,
+  "uuid": "62741a81-bc29-4192-be1e-fcc6647b94fa",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

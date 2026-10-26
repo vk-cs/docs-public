@@ -85,7 +85,7 @@ Answer example:
   "qid": "61b5cf067c494b4a9a0b87a3c43e37ef",
   "result": {
     "task_id": "05ad987e-ceee-4186-acdb-956148b91692",
-    "task_token": "<ЗНАЧЕНИЕ_ТОКЕНА>"
+    "task_token": "<TOKEN_VALUE>"
   }
 }
 ```

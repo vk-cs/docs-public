@@ -1,0 +1,16 @@
+{
+  "title": "Issue with resource display in the management console",
+  "shortDescription": "Help with recording logs to a HAR file for technical support",
+  "metaDescription": "Help with recording logs to a HAR file for technical support",
+  "sectionTitle": "Issue with resource display in the management console",
+  "icon": "",
+  "weight": 1,
+  "uuid": "04dd7891-21b7-4663-a9d6-df41650e95db",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg"
+    ]
+  }
+}

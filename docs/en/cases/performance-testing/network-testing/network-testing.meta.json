@@ -1,0 +1,23 @@
+{
+  "title": "How to test network performance",
+  "shortDescription": "Instructions for testing network performance within a single zone and between different zones",
+  "metaDescription": "How to test network performance within a single zone and between different zones",
+  "sectionTitle": "How to test network performance",
+  "icon": "",
+  "weight": 5,
+  "uuid": "441d63ac-bf65-4618-bec0-2eb0070f5517",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

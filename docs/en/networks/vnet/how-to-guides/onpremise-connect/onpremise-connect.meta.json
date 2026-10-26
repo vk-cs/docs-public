@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to remote infrastructure",
+  "shortDescription": "How to set up connectivity between a {var(cloud)} project and remote infrastructure",
+  "metaDescription": "How to set up connectivity between a VK Cloud project and remote infrastructure",
+  "sectionTitle": "Connecting to remote infrastructure",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2b4448e9-5cb9-4f06-80fe-b8e42a2d9287"
+}

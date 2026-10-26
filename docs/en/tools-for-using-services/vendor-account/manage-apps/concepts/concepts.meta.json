@@ -1,0 +1,13 @@
+{
+  "title": "Concepts",
+  "shortDescription": "",
+  "metaDescription": "General characteristics of services added to the Marketplace application store and the requirements imposed on them",
+  "sectionTitle": "Concepts",
+  "weight": 1,
+  "uuid": "02752860-9094-4b4e-9cee-5cb59991cf53",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

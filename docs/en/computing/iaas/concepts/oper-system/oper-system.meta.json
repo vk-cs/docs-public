@@ -1,0 +1,18 @@
+{
+  "title": "Operating Systems",
+  "shortDescription": "Information about operating systems supported in VK Cloud, default user accounts, and licenses",
+  "metaDescription": "Information about operating systems supported in VK Cloud, default user accounts, and licenses",
+  "sectionTitle": "Operating Systems",
+  "weight": 5,
+  "uuid": "0a7dbeea-377f-4135-8670-8b25c7398416",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

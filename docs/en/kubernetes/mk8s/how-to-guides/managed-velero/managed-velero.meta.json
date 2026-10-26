@@ -1,0 +1,14 @@
+{
+  "title": "Using Velero",
+  "shortDescription": "How to perform manual and scheduled backups using the Velero add-on",
+  "metaDescription": "Learn how to back up second-generation clusters in the Managed Containers service using the Velero add-on, as well as how to configure scheduled backups in cron format",
+  "sectionTitle": "Using Velero",
+  "icon": "",
+  "weight": 21,
+  "uuid": "23e8e106-5a50-4cbf-8217-b3204c6e4469",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

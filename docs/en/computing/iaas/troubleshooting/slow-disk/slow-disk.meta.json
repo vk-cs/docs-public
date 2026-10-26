@@ -1,0 +1,14 @@
+{
+  "title": "Slow disk performance",
+  "shortDescription": "Resolving disk performance issues",
+  "metaDescription": "Resolving disk performance issues",
+  "sectionTitle": "Slow disk performance",
+  "icon": "",
+  "weight": 4,
+  "uuid": "d421e98a-24b5-4c98-b96e-a5112f249839",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

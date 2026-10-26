@@ -17,17 +17,17 @@
   "tags": [
     {
       "name": "session",
-      "description": "captcha session"
+      "description": "капча-сессия"
     },
     {
       "name": "success-token",
-      "description": "Successful captcha completion token"
+      "description": "Токен успешного прохождения капчи"
     }
   ],
   "paths": {
     "/captchaNotRobot.createSession": {
       "get": {
-        "summary": "Create a captcha session",
+        "summary": "Создать капча-сессию",
         "operationId": "createSession",
         "tags": [
           "session"
@@ -41,7 +41,7 @@
               "type": "boolean",
               "default": false
             },
-            "description": "Header for testing the VK Капча service. When the value `true` is specified:\n\n- all captcha attempts are considered successful;\n\n- requests are not billed"
+            "description": "Заголовок для тестирования сервиса VK Капча. При указании значения ``true``:\n\n- все попытки прохождения капчи считаются успешными;\n\n- запросы не тарифицируются"
           },
           {
             "$ref": "#/components/parameters/v"
@@ -56,7 +56,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Request source. A text identifier within your service that describes the reason for issuing the captcha: a user action or event.\n\nIdentifiers are defined by your service.\n\nFormat: string in Latin characters without spaces"
+            "description": "Источник запроса. Текстовый идентификатор внутри вашего сервиса, который описывает причину выдачи капчи: действие пользователя или событие.\n\nИдентификаторы задаются вашим сервисом самостоятельно.\n\nФормат: строка на латинице без пробелов"
           },
           {
             "name": "domain",
@@ -65,7 +65,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Domain where the captcha is integrated.\n\nThe specified value is inserted into the CSP header"
+            "description": "Домен, на котором интегрирована капча.\n\nУказанное значение подставляется в CSP-заголовок"
           },
           {
             "name": "client",
@@ -74,7 +74,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "User session identifier on the service side"
+            "description": "Идентификатор сессии пользователя на стороне сервиса"
           },
           {
             "name": "captcha_type",
@@ -89,7 +89,7 @@
               ],
               "default": "checkbox"
             },
-            "description": "Captcha type to create. Possible values:\n\n``checkbox`` — checkbox;\n\n``slider`` — slider;\n\n``sound`` — audio"
+            "description": "Тип создаваемой капчи. Возможные значения:\n\n``checkbox`` — флажок;\n\n``slider`` — ползунок;\n\n``sound`` — аудио"
           },
           {
             "name": "success_token_ttl",
@@ -101,12 +101,12 @@
               "minimum": 0,
               "default": 300
             },
-            "description": "Successful captcha completion token lifetime (in seconds)"
+            "description": "Время жизни токена успешного прохождения капчи (в секундах)"
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "ОК",
             "content": {
               "application/json": {
                 "schema": {
@@ -117,7 +117,7 @@
                       "properties": {
                         "link": {
                           "type": "string",
-                          "description": "Link containing the session token and metadata:\n\n``domain`` — domain where the captcha will be used;\n\n``session_token`` — session token;\n\n``variant`` — captcha display type (``block`` or ``popup``)"
+                          "description": "Ссылка, содержащая сессионный токен и метаданные:\n\n``domain`` — домен, на котором будет использована капча;\n\n``session_token`` — сессионный токен;\n\n``variant`` — вид отображения капчи (``block`` или ``popup``)"
                         },
                         "status": {
                           "type": "string",
@@ -125,7 +125,7 @@
                             "OK",
                             "ERROR"
                           ],
-                          "description": "Request execution status. Possible values:\n\n``OK`` — session created successfully;\n\n``ERROR`` — error during session creation"
+                          "description": "Статус выполнения запроса. Возможные значения:\n\n``OK`` — сессия создана успешно;\n\n``ERROR`` — ошибка при создании сессии"
                         }
                       }
                     }
@@ -139,7 +139,7 @@
     },
     "/captchaNotRobot.validate": {
       "get": {
-        "summary": "Validation of the successful captcha completion token",
+        "summary": "Валидация токена успешного прохождения капчи",
         "operationId": "validate",
         "tags": [
           "success-token"
@@ -158,7 +158,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Request source.\n\nSpecify the value that was passed in the captcha session creation request.\n\nFormat: string in Latin characters without spaces"
+            "description": "Источник запроса.\n\nУказывается значение, которое было передано в запросе на создание капча-сессии.\n\nФормат: строка на латинице без пробелов"
           },
           {
             "name": "domain",
@@ -167,7 +167,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "Domain where the captcha is integrated.\n\nSpecify the value that was passed in the captcha session creation request"
+            "description": "Домен, на котором интегрирована капча.\n\nУказывается значение, которое было передано в запросе на создание капча-сессии"
           },
           {
             "name": "client",
@@ -176,7 +176,7 @@
             "schema": {
               "type": "string"
             },
-            "description": "User session identifier on the service side.\n\nSpecify the value that was passed in the captcha session creation request"
+            "description": "Идентификатор сессии пользователя на стороне сервиса.\n\nУказывается значение, которое было передано в запросе на создание капча-сессии"
           },
           {
             "name": "success_token",
@@ -185,12 +185,12 @@
             "schema": {
               "type": "string"
             },
-            "description": "Successful captcha completion token"
+            "description": "Токен успешного прохождения капчи"
           }
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "ОК",
             "content": {
               "application/json": {
                 "schema": {
@@ -207,7 +207,7 @@
                             "ERROR_LIMIT",
                             "ERROR_TOKEN_EXPIRED"
                           ],
-                          "description": "Captcha completion status. Possible values:\n\n``OK`` — token is valid;\n\n``ERROR`` — token is invalid;\n\n``ERROR_LIMIT`` — request limit exceeded;\n\n``ERROR_TOKEN_EXPIRED`` — token lifetime expired"
+                          "description": "Статус прохождения капчи. Возможные значения:\n\n``OK`` — токен валиден;\n\n``ERROR`` — токен невалиден;\n\n``ERROR_LIMIT`` — превышен лимит запросов;\n\n``ERROR_TOKEN_EXPIRED`` — истекло время жизни токена"
                         }
                       }
                     }
@@ -239,7 +239,7 @@
             5.188
           ]
         },
-        "description": "API version"
+        "description": "Версия API"
       },
       "service_token": {
         "name": "service_token",
@@ -248,7 +248,7 @@
         "schema": {
           "type": "string"
         },
-        "description": "VK Капча API access token"
+        "description": "Токен доступа к API VK Капча"
       }
     }
   }

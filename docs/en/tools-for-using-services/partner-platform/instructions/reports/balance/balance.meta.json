@@ -1,0 +1,14 @@
+{
+  "title": "Balance details and resource consumption statistics",
+  "shortDescription": "How to view changes in the project balance and resource consumption statistics on the {var(cloud)} partner platform",
+  "metaDescription": "VK Cloud: viewing resource consumption statistics and balance changes on partner program projects",
+  "sectionTitle": "Balance details and resource consumption statistics",
+  "icon": "",
+  "weight": 0,
+  "uuid": "8efae0ef-0d8c-4558-add3-0a618d0146d1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

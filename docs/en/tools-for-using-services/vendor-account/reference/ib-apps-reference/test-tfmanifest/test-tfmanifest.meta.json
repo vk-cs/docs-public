@@ -1,0 +1,13 @@
+{
+  "title": "API for testing a Terraform manifest",
+  "shortDescription": "Description of API methods for testing a Terraform manifest",
+  "metaDescription": "Description of API methods for testing a Terraform manifest: uploading the manifest to the deployment system, checking the current manifest configuration, creating and deleting a service instance, viewing the instance state and logs.",
+  "sectionTitle": "API for testing a Terraform manifest",
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "20a9e47f-5431-4056-b9f6-6bcf4ea9e298"
+}

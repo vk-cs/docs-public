@@ -1,0 +1,14 @@
+{
+  "title": "Private Service Level Agreements",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Private Service Level Agreements",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a0232831-941e-45fe-8d68-137129a30a97",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

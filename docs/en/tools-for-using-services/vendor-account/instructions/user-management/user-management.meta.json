@@ -1,0 +1,14 @@
+{
+  "title": "User management",
+  "shortDescription": "How to add, delete, and manage roles of vendor account users",
+  "metaDescription": "Management of vendor account users.",
+  "sectionTitle": "User management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "d789c6c3-b90b-4453-bf48-21dfd1533275",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

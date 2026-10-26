@@ -1,0 +1,16 @@
+{
+  "title": "Managing webhooks",
+  "shortDescription": "How to configure notifications about adding or deleting an object from a bucket",
+  "metaDescription": "Managing notifications (webhooks) about events in VK Object Storage buckets: how to configure, change, or delete a notification configuration for the required operations and configuration examples in the management console.",
+  "sectionTitle": "Managing webhooks",
+  "icon": "",
+  "weight": 5,
+  "uuid": "8902a6f8-65ea-4edb-ada3-3beb19ca3485",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

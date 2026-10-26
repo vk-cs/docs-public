@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_monitoring_user data source",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_monitoring_user data source",
+  "sectionTitle": "ivkcs_monitoring_user data source",
+  "uuid": "91a4c37e-7908-43c1-8dd3-8aa2acccc032",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

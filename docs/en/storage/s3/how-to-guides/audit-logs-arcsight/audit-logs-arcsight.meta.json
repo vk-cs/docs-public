@@ -1,0 +1,14 @@
+{
+  "title": "Loading audit logs into SIEM ArcSight and searching for events",
+  "shortDescription": "How to load audit logs into SIEM ArcSight and configure event search for rapid threat detection and security compliance",
+  "metaDescription": "Configuring audit log loading from VK Cloud into SIEM ArcSight: steps, tools, and settings. How to properly integrate logs, configure parsing, and search for events in ArcSight. Solutions for security analysis and monitoring.",
+  "sectionTitle": "Loading audit logs into SIEM ArcSight and searching for events",
+  "icon": "",
+  "weight": 6,
+  "uuid": "5419ca4e-d10c-4304-b811-54afffaa356c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

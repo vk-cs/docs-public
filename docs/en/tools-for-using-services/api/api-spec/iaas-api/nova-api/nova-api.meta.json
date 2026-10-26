@@ -1,0 +1,14 @@
+{
+  "title": "Virtual machine management",
+  "metaDescription": "Explore the OpenAPI specification of VK Cloud Compute API: method descriptions, parameters, examples of requests and responses. Get detailed documentation for automating virtual machine management.",
+  "shortDescription": "OpenAPI specification for virtual machine management",
+  "sectionTitle": "Virtual machine management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "dce6de99-1e65-40de-bf6e-bf585ffeb3e4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

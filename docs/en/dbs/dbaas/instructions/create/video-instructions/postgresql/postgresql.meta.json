@@ -1,0 +1,14 @@
+{
+  "title": "PostgreSQL",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud Cloud Databases: video instruction on deploying a PostgreSQL instance for working with relational databases in the cloud",
+  "sectionTitle": "PostgreSQL",
+  "icon": "",
+  "weight": 1,
+  "uuid": "722d28fc-0c89-4f82-93c3-6be2500b3e9e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

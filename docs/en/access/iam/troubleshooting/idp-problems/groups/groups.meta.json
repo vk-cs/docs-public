@@ -1,0 +1,14 @@
+{
+  "title": "Group not found",
+  "shortDescription": "When attempting to log in via identity federation, a message about an empty group list appears",
+  "metaDescription": "Solutions to known issues with identity federation configuration: when attempting to log in via identity federation, a message about an empty group list appears",
+  "sectionTitle": "Group not found",
+  "icon": "",
+  "weight": 4,
+  "uuid": "c49e33a5-0f32-4ebe-a38d-fde628b7cdfa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

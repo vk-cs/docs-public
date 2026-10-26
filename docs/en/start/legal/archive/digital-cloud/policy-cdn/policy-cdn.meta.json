@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the CDN service",
+  "shortDescription": "",
+  "metaDescription": "This document is an offer in accordance with Article 435 of the Civil Code of the Russian Federation (hereinafter referred to as the Offer) for concluding an agreement with LLC Digital Cloud",
+  "sectionTitle": "User Agreement for the CDN service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "8f69d4a3-e19a-4ab0-b0d9-b1e229815bf5",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

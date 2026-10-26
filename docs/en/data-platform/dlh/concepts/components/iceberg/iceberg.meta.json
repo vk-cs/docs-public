@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Iceberg Metastore in the Data Lakehouse architecture",
+  "shortDescription": "Purpose and functions of the Cloud Iceberg Metastore component in the Data Lakehouse architecture on the VK Cloud platform",
+  "metaDescription": "Purpose and functions of the Cloud Iceberg Metastore component in the Data Lakehouse architecture",
+  "sectionTitle": "Cloud Iceberg Metastore",
+  "icon": "",
+  "weight": 2,
+  "uuid": "4ad987ef-2fce-4136-989e-92c38b699c72",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "«Security Gate» License Agreement",
+  "shortDescription": "",
+  "metaDescription": "«Security Gate» License Agreement",
+  "sectionTitle": "«Security Gate» License Agreement",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 20,
+  "uuid": "95d8c6e0-5d25-4f84-aa70-2d7f52e773d1",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

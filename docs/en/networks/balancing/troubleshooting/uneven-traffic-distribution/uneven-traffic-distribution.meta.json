@@ -1,0 +1,14 @@
+{
+  "title": "Uneven traffic distribution",
+  "shortDescription": "How to configure the load balancer for even traffic distribution",
+  "metaDescription": "How to configure the load balancer for even traffic distribution",
+  "sectionTitle": "Uneven traffic distribution",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "edd4bf8d-f1ed-45a4-8a0d-264cace0ec19"
+}

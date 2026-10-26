@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a Spark cluster from scripts in Standalone",
+  "shortDescription": "How to create a service user and connect to a Spark cluster from scripts in Standalone",
+  "metaDescription": "Step-by-step instructions for creating service users and connecting to a Cloud Spark cluster from scripts in Standalone VK Data Platform",
+  "sectionTitle": "Connecting to a Spark cluster from scripts in Standalone",
+  "weight": 8,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "a21269b3-2eb5-44ed-81fb-e89512704951"
+}

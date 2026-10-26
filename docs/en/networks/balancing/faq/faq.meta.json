@@ -1,0 +1,14 @@
+{
+  "title": "Questions and answers",
+  "shortDescription": "Answers to frequently asked questions about load balancers",
+  "metaDescription": "Answers to frequently asked questions about load balancers",
+  "sectionTitle": "Questions and answers",
+  "icon": "",
+  "weight": 6,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "47350c01-b570-43fe-8b79-86a52c316c33"
+}

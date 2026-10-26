@@ -1,0 +1,16 @@
+{
+  "title": "Bucket",
+  "shortDescription": "Creating, deleting, checking the existence of a bucket, and listing its contents",
+  "metaDescription": "All available methods for working with VK Object Storage buckets: creating a new bucket (CreateBucket), listing buckets (ListBuckets), checking bucket existence (HeadBucket), listing bucket objects (ListObjects), deleting a bucket (DeleteBucket)",
+  "sectionTitle": "Bucket",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fa09b0df-7c3d-43ca-ad08-9376b69aa330",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Migration with {var(cloud)} specialist support",
+  "sectionTitle": "Migration with {var(cloud)} specialist support",
+  "shortDescription": "How migration to the platform works with support from {var(cloud)} technical specialists",
+  "metaDescription": "How migration to the platform works with support from VK Cloud technical specialists",
+  "icon": "",
+  "weight": 5,
+  "uuid": "1b5dd967-c8b6-4fef-8a16-e63582396f21",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

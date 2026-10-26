@@ -1,0 +1,12 @@
+{
+  "title": "JSON file structure",
+  "shortDescription": "",
+  "metaDescription": "JSON file structure",
+  "sectionTitle": "JSON file structure",
+  "uuid": "d7a5064e-d7df-435b-ab5f-7f955e0223eb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

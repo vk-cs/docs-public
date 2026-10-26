@@ -1,0 +1,14 @@
+{
+  "title": "Logging in Standalone",
+  "shortDescription": "How to view the logs of a service instance in Standalone",
+  "metaDescription": "Learn how to view and work with the logs of a deployed Cloud Trino service instance in the Standalone version of VK Data Platform",
+  "sectionTitle": "Logging in Standalone",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 5,
+  "uuid": "022c3dd3-0569-4149-963d-9f224c45497d"
+}

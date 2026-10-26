@@ -1,0 +1,14 @@
+{
+  "title": "Power Management",
+  "shortDescription": "How to power on, power off, and reboot a server",
+  "metaDescription": "Guide to Bare Metal server power management: how to power on, power off, and reboot a server via the VK Cloud platform dashboard.",
+  "sectionTitle": "Power Management",
+  "icon": "",
+  "weight": 3,
+  "uuid": "e3734ec0-0b0e-4a20-9ccc-8a89554e68ea",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Cluster migration between availability zones",
+  "shortDescription": "How the process of migrating a cluster to a new availability zone works",
+  "metaDescription": "Migration of Kubernetes clusters between availability zones in Managed Containers. Instructions on how to check the impact of migration on workloads and perform the migration",
+  "sectionTitle": "Cluster migration between availability zones",
+  "icon": "",
+  "weight": 16,
+  "uuid": "903fb126-5dcc-4fce-8947-ff0e342c306a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

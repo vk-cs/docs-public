@@ -1,0 +1,14 @@
+{
+  "title": "Lifecycle rules are not triggered",
+  "metaDescription": "Objects in VK Object Storage are not deleted after the lifecycle period expires? Make sure the object key in the rule is specified correctly with case sensitivity in mind, and account for a possible application delay of up to 48 hours",
+  "shortDescription": "Why objects are not automatically deleted according to the configured rules",
+  "sectionTitle": "Lifecycle rules are not triggered",
+  "icon": "",
+  "weight": 11,
+  "uuid": "83f83e9f-46d4-42e6-acae-c398bf745693",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

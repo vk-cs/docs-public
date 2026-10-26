@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Features of service tariffication and cost calculation",
+  "metaDescription": "Tariffication features of Arenadata DB service, cost calculation.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e97e4269-6f9d-4c72-a299-892c144a0aff",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

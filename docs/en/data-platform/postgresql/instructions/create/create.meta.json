@@ -1,0 +1,14 @@
+{
+  "title": "Creating a Service Instance",
+  "shortDescription": "How to create a Cloud PostgreSQL instance with the desired configuration",
+  "metaDescription": "How to create a Cloud PostgreSQL service instance with the desired configuration in VK Data Platform",
+  "sectionTitle": "Creating a Service Instance",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "39bd85d1-51e2-49f6-a468-11191b2d55d6"
+}

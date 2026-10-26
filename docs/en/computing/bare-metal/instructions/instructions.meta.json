@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "shortDescription": "Ordering a server and other service management operations",
+  "metaDescription": "Detailed step-by-step instructions for working with Bare Metal IaaS servers: from ordering and power management to installing and reinstalling the OS via the management console. Achieving your goals — step by step, clearly and easily.",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "weight": 4,
+  "uuid": "571472d7-8229-434f-8705-3fef07c65ef0",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

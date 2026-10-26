@@ -1,0 +1,14 @@
+{
+  "title": "Connecting to a vendor account",
+  "shortDescription": "How to connect a vendor account to test services before publication and upload them to the app store",
+  "metaDescription": "Connecting to a vendor account.",
+  "sectionTitle": "Connecting to a vendor account",
+  "icon": "",
+  "weight": 2,
+  "uuid": "7a143ed5-d9df-4d37-827a-5966a45e0e15",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Service architecture",
+  "shortDescription": "Architecture of the Data LakeHouse service",
+  "metaDescription": "Architecture of the Data LakeHouse service",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1eca4e9d-acdf-4077-9611-b6fd41635d53",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

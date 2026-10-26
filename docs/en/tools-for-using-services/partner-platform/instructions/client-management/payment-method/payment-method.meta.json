@@ -1,0 +1,14 @@
+{
+  "title": "Changing the Payment Model",
+  "shortDescription": "How to change a client's payment model using the partner platform {var(cloud)}",
+  "metaDescription": "How to change a client's payment model using the VK Cloud partner platform: changing the client's payment model in the VK Cloud partner dashboard",
+  "sectionTitle": "Changing the Payment Model",
+  "icon": "",
+  "weight": 1,
+  "uuid": "1d92a26c-addb-4b0e-9c05-68afd6eaaa3e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Access Management",
+  "shortDescription": "Ways to manage VK Object Storage user access to buckets and the objects within them",
+  "metaDescription": "VK Object Storage security and access: access keys (Access/Secret), permission management via ACL, CORS configuration for browser requests, and the use of presigned URLs for temporary secure access to objects without issuing permanent credentials.",
+  "sectionTitle": "Access Management",
+  "icon": "",
+  "weight": 6,
+  "uuid": "e29cd283-22fb-4ed1-9c9c-276e2a71ce65",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

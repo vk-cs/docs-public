@@ -1,0 +1,14 @@
+{
+  "title": "FAQ",
+  "shortDescription": "Answers to frequently asked questions about a Spark cluster",
+  "metaDescription": "Answers to frequently asked questions about a Spark cluster",
+  "sectionTitle": "FAQ",
+  "icon": "",
+  "weight": 10,
+  "uuid": "a9922d0d-c988-4d7c-84cd-e9bbb5d58944",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

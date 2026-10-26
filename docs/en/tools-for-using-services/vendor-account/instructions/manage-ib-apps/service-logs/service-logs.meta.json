@@ -1,0 +1,14 @@
+{
+  "title": "Viewing service logs",
+  "sectionTitle": "Viewing service logs",
+  "shortDescription": "Instructions for viewing the logs of an image-based application instance",
+  "metaDescription": "How to view the logs of an image-based application instance. Logs allow identifying errors that users encounter when connecting to your service.",
+  "icon": "",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "2ad667b0-ac51-44da-a4d2-725b124f50e7"
+}

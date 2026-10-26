@@ -1,0 +1,14 @@
+{
+  "title": "Quotas and limits",
+  "shortDescription": "A list of quotas and technical limitations applied in the Load Balancing service",
+  "metaDescription": "A list of quotas and technical limitations applied in VK Cloud projects",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 20,
+  "uuid": "feba8753-01e3-4052-9cf4-14a8ea016597",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

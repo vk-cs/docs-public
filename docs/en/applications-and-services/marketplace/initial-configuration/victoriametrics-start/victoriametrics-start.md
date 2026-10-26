@@ -63,16 +63,16 @@ To deploy the VictoriaMetrics service in a project:
 
    {tab(Single)}
 
-   1. At the **Настройки VictoriaMetrics** step:
+   1. At the **VictoriaMetrics settings** step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the object storage [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
-      - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
-      - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
+      - **Backup**: select the `no` option to not save data to the object storage [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Metrics retention period**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
+      - **Deduplication parameters**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the **Параметры сервера** step:
+   1. At the **Server parameters** step:
 
-      - **Сеть**: select the previously created network and subnet.
+      - **Network**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
@@ -87,18 +87,18 @@ To deploy the VictoriaMetrics service in a project:
 
    {tab(Cluster Mini)}
 
-   1. At the **Настройки VictoriaMetrics** step:
+   1. At the **VictoriaMetrics settings** step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Backup**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
-      - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
-      - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
+      - **Metrics retention period**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
+      - **Deduplication parameters**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the **Параметры серверов** step:
+   1. At the **Server parameters** step:
 
-      - **Количество серверов**: specify the number of VMs to deploy in the cluster.
-      - **Сеть**: select the previously created network and subnet.
+      - **Number of servers**: specify the number of VMs to deploy in the cluster.
+      - **Network**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
@@ -113,23 +113,23 @@ To deploy the VictoriaMetrics service in a project:
 
    {tab(Cluster Maxi)}
 
-   1. На шаге **Настройки Кластера**:
+   1. At the **Cluster settings** step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Backup**: select the `no` option to not save data to the [VK Object Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
-      - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
-      - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
+      - **Metrics retention period**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
+      - **Deduplication parameters**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
    1. Click the **Next step** button.
-   1. At the **Общие параметры** step:
+   1. At the **General parameters** step:
 
-      - **Сеть**: select the previously created network and subnet.
+      - **Network**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Disk size**: specify the required VM disk size in gigabytes.
       - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
-   1. At the **Параметры компонентов** step:
+   1. At the **Component parameters** step:
 
       - For each of the `vmselect`, `vminsert` and `vmstorage` components, specify the number of deployed VMs in the cluster and [the type of virtual machine](/en/computing/iaas/concepts/about#flavors).
       - For the data disk for `vmstorage`:

@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Features of {var(cloud)} account tariffication",
+  "metaDescription": "Features of VK Cloud account tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "daaf3acf-792e-4904-a5bb-323cd7798d4d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

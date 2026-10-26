@@ -1,0 +1,16 @@
+{
+  "title": "Private Service Level Agreement for the Standard Load Balancer service",
+  "shortDescription": "",
+  "metaDescription": "This document defines the Service Level of the Standard Load Balancer service and is an integral part of the Agreement and the General Service Level Agreement",
+  "sectionTitle": "Private Service Level Agreement for the Standard Load Balancer service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "b095f09b-cb6a-45f5-ab25-ca218801c174",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

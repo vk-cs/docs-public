@@ -1,0 +1,14 @@
+{
+  "title": "RWX mode does not work",
+  "shortDescription": "Issues when using the ReadWriteMany (RWX) volume access mode",
+  "metaDescription": "Issues when using the ReadWriteMany (RWX) volume access mode",
+  "sectionTitle": "RWX mode does not work",
+  "icon": "",
+  "weight": 3,
+  "uuid": "01bb5470-ac76-42d2-ae68-29cbd33ee8fc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Adding a SaaS application to the store",
+  "shortDescription": "",
+  "metaDescription": "Adding a SaaS application to the store",
+  "sectionTitle": "Adding a SaaS application to the store",
+  "weight": 6,
+  "uuid": "949bc2f7-274d-48a3-b115-1ccdbd0e5c30",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "billing section",
+  "shortDescription": "Parameters for configuring the cost of a tariff plan and its options in the SaaS application connection wizard",
+  "metaDescription": "The billing section in the SaaS application configuration JSON file: parameters for the user to configure the cost of the tariff plan and its options when connecting the SaaS application in Marketplace.",
+  "sectionTitle": "billing section",
+  "weight": 4,
+  "uuid": "22b24f9d-3e24-41f4-bd00-acffa2c5adcc",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

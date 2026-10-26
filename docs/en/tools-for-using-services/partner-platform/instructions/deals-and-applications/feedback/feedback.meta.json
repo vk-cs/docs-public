@@ -1,0 +1,14 @@
+{
+  "title": "Working with feedback",
+  "shortDescription": "How to create and send deal feedback to {var(cloud)}",
+  "metaDescription": "How to create and send deal feedback for the VK Cloud partner program: description of working with feedback when registering a customer deal",
+  "sectionTitle": "Feedback",
+  "icon": "",
+  "weight": 4,
+  "uuid": "bde5b564-5262-4347-9719-6d2e34dd294d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

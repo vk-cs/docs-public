@@ -1,0 +1,14 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "",
+  "metaDescription": "Step-by-step instructions for working with a Lakekeeper VK Data Platform instance: viewing information, configuring parameters, scaling, and maintenance",
+  "sectionTitle": "Working with a service instance",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "51e5c2fa-2463-4a4d-9dfe-c802ced3d3d8"
+}

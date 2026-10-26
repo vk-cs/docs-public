@@ -1,0 +1,15 @@
+{
+  "title": "Cloud Logging",
+  "shortDescription": "Viewing logs via the Cloud Logging service API",
+  "metaDescription": "Public API specifications for automating the management of cloud services and developing your own tools for working with VK Cloud. Cloud Logging service API",
+  "sectionTitle": "Cloud Logging",
+  "icon": "",
+  "weight": 8,
+  "isBeta": true,
+  "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

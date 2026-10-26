@@ -1,0 +1,15 @@
+{
+  "title": "Taking an instance out of read-only mode",
+  "shortDescription": "How to take a Cloud Kafka instance out of read-only mode",
+  "metaDescription": "Learn how to take a Cloud Kafka instance out of read-only mode in VK Data Platform",
+  "sectionTitle": "Taking an instance out of read-only mode",
+  "icon": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": "4f63af21-4b5a-4c16-bc6d-fb297b23d91d"
+}

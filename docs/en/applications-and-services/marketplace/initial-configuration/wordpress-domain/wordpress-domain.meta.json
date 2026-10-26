@@ -1,0 +1,14 @@
+{
+  "title": "Changing the domain for the WordPress service",
+  "shortDescription": "Changing the domain and configuring SSL certificates for WordPress",
+  "metaDescription": "Changing the domain and configuring SSL certificates for WordPress",
+  "sectionTitle": "Changing the domain for the WordPress service",
+  "icon": "",
+  "weight": 6,
+  "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

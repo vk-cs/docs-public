@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «Cloud for Hot Data» (Hotbox) service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer by LLC «VK» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «Cloud for Hot Data» (Hotbox) service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "c874aa76-211e-486b-80cd-cda2358c25bb",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

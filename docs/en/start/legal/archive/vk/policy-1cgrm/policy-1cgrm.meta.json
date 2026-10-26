@@ -1,0 +1,16 @@
+{
+  "title": "User Agreement for the «1C:Ready Workplace» service",
+  "shortDescription": "",
+  "metaDescription": "This document is an official offer of LLC «VK» (hereinafter referred to as the «Company») to conclude a user agreement (hereinafter referred to as the «Agreement») with you",
+  "sectionTitle": "User Agreement for the «1C:Ready Workplace» service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "uuid": "4d676246-6710-4e02-8b6e-3b3d5cd0f973",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

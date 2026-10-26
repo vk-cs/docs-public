@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "Key capabilities of the DNS service in {var(cloud)}",
+  "metaDescription": "Key capabilities of the DNS service in VK Cloud",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "dfc56be5-8515-4987-9143-a64c28ba7c20"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "The NoSuchBucket error occurs when working with a bucket via AWS CLI",
+  "shortDescription": "What to do if the NoSuchBucket error is returned when running a command for an existing bucket",
+  "metaDescription": "What to do if the NoSuchBucket error is returned when running a command for an existing bucket",
+  "sectionTitle": "The NoSuchBucket error occurs when working with a bucket via AWS CLI",
+  "icon": "",
+  "weight": 7,
+  "uuid": "f2209861-2716-4738-849e-b556f8d0cd8e",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

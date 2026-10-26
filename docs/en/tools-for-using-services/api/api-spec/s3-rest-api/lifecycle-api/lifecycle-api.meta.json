@@ -1,0 +1,14 @@
+{
+  "title": "Lifecycle",
+  "shortDescription": "Configuring lifecycle rules in a bucket for automatic deletion of outdated objects and their versions by tags and prefixes",
+  "metaDescription": "All available methods for working with the object lifecycle in VK Object Storage: view the lifecycle configuration (GetBucketLifecycleConfiguration), set the configuration with lifecycle rules (PutBucketLifecycle), delete the lifecycle configuration (DeleteBucketLifecycle)",
+  "sectionTitle": "Lifecycle",
+  "icon": "",
+  "weight": 5,
+  "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

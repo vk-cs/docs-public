@@ -1,0 +1,14 @@
+{
+  "title": "Working in DLH",
+  "shortDescription": "How to configure JupyterHub in DLH to work with Cloud Iceberg Metastore and S3",
+  "metaDescription": "Learn how to configure JupyterHub in DLH to work with Cloud Iceberg Metastore and S3. Step-by-step instructions for connecting, configuring, and managing data using Jupyter notebooks",
+  "sectionTitle": "Working in DLH",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "05c429c9-def9-4c17-b067-d2aad034e499"
+}

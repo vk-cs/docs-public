@@ -1,0 +1,14 @@
+{
+  "title": "Creating a file service with Foundation Models and MCP",
+  "shortDescription": "How to create a file service where VK Object Storage serves as the primary storage system, while Foundation Models and MCP significantly speed up development and deployment processes",
+  "metaDescription": "Creating a file service using VK Object Storage as the primary storage and integrating Foundation Models and MCP to accelerate development and deployment.",
+  "sectionTitle": "Creating a file service with Foundation Models and MCP",
+  "icon": "",
+  "weight": 11,
+  "uuid": "61775f68-b69e-4b43-8da9-c986e813beb2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

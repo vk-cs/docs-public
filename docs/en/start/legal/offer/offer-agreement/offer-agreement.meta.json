@@ -1,0 +1,16 @@
+{
+  "title": "Offer for the Provision of VK Cloud Platform Services",
+  "shortDescription": "",
+  "metaDescription": "This document constitutes an offer by Digital Cloud LLC, addressed to a person possessing the necessary legal capacity and capability to conclude and perform the Agreement, to conclude an Agreement for the use of the VK Cloud Platform Services on the terms set forth herein",
+  "sectionTitle": "Offer for the Provision of VK Cloud Platform Services",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "6cad1ae3-8e1c-444e-861a-d6277b501722",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

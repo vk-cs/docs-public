@@ -1,0 +1,14 @@
+{
+  "title": "MySQL",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud databases: managing MySQL instances.",
+  "sectionTitle": "MySQL",
+  "icon": "",
+  "weight": 3,
+  "uuid": "fad02954-3633-435b-a864-e0ff96c17c51",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

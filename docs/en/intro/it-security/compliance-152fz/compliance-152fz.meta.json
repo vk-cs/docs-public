@@ -1,0 +1,14 @@
+{
+  "title": "Platform 152-FZ Compliance",
+  "shortDescription": "How compliance with 152-FZ requirements is ensured",
+  "metaDescription": "VK Cloud information security: how the platform ensures compliance with 152-FZ requirements for personal data processing.",
+  "sectionTitle": "Platform 152-FZ Compliance",
+  "icon": "",
+  "weight": 4,
+  "uuid": "20f6c792-cd60-4db1-be2c-059aac7181af",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

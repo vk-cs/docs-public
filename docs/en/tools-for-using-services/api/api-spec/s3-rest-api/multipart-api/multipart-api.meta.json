@@ -1,0 +1,14 @@
+{
+  "title": "Multipart",
+  "shortDescription": "Uploading large files in parts using multipart upload",
+  "metaDescription": "All available methods for multipart upload of objects in VK Object Storage: upload initialization (CreateMultipartUpload), object part upload (UploadPart), upload completion (CompleteMultipartUpload), upload abortion (AbortMultipartUpload), retrieving the list of uploaded parts (ListParts)",
+  "sectionTitle": "Multipart",
+  "icon": "",
+  "weight": 6,
+  "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

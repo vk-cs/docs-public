@@ -1,0 +1,14 @@
+{
+  "title": "Set up billing and balance notifications",
+  "shortDescription": "Get started with {var(cloud)}: instructions for setting up billing. Learn how to top up your balance for individuals and legal entities and configure expense notifications for budget control.",
+  "metaDescription": "Credit the initial amount to your management console and set up notifications",
+  "sectionTitle": "Set up billing and balance notifications",
+  "icon": "",
+  "weight": 2,
+  "uuid": "00944374-be49-4d00-a338-453b24751274",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

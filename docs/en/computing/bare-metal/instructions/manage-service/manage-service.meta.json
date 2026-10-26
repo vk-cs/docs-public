@@ -1,0 +1,14 @@
+{
+  "title": "Server Lease",
+  "shortDescription": "How to order a server or cancel its lease",
+  "metaDescription": "Step-by-step instructions for ordering a Bare Metal server: choosing the configuration and lease terms, as well as canceling the lease via your management console.",
+  "sectionTitle": "Server Lease",
+  "icon": "",
+  "weight": 0,
+  "uuid": "8c7b207f-7511-4dca-8ab1-fa8ac45fcc85",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

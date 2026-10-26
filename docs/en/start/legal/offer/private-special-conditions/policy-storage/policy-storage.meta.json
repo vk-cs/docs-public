@@ -1,0 +1,16 @@
+{
+  "title": "VK Object Storage Service Terms of Use",
+  "shortDescription": "",
+  "metaDescription": "This document sets out the terms of use of the VK Object Storage service within the VK Cloud Platform.",
+  "sectionTitle": "VK Object Storage Service Terms of Use",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "47e3b7ca-e845-49a5-b56f-a6ea6714024a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

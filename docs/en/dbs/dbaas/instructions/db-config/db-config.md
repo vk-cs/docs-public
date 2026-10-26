@@ -1,35 +1,35 @@
-Сервис Cloud Databases дает возможность задавать параметры инстансов БД, позволяя влиять на их работу. Для каждого [типа СУБД](../../concepts/types) есть свой набор параметров.
+The Cloud Databases service allows you to configure DB instance parameters, letting you influence their operation. Each [DBMS type](../../concepts/types) has its own set of parameters.
 
-Чтобы добавить, изменить или удалить параметры:
+To add, change, or delete parameters:
 
 {tabs}
 
-{tab(Личный кабинет)}
+{tab(Management console)}
 
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный инстанс БД.
-1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
-1. Убедитесь, что нужный инстанс баз данных запущен.
-1. Нажмите на имя инстанса.
-1. Перейдите на вкладку **Параметры баз данных** или **Параметры кластера**.
-1. Выполните требуемые действия:
+1. [Go](https://msk.cloud.vk.com/app/) to the VK Cloud management console.
+1. Select the project where the required DB instance is located.
+1. Go to the **Databases → Database instances** section.
+1. Make sure the required database instance is running.
+1. Click the instance name.
+1. Go to the **Database parameters** or **Cluster parameters** tab.
+1. Perform the required actions:
 
-   - Чтобы добавить параметр:
+   - To add a parameter:
 
-     1. Нажмите **Добавить параметр**.
-     1. Выберите нужный параметр из выпадающего списка и задайте его значение в поле рядом с названием параметра.
-     1. При необходимости добавьте другие нужные параметры.
-     1. Нажмите кнопку **Сохранить**.
+     1. Click **Add parameter**.
+     1. Select the required parameter from the drop-down list and set its value in the field next to the parameter name.
+     1. If necessary, add other required parameters.
+     1. Click **Save**.
 
-   - Чтобы изменить параметр:
+   - To change a parameter:
 
-     1. Задайте новое значение в поле рядом с названием параметра.
-     1. Нажмите кнопку **Сохранить**.
+     1. Set a new value in the field next to the parameter name.
+     1. Click **Save**.
 
-   - Чтобы удалить параметр:
+   - To delete a parameter:
 
-     1. Нажмите на значок ![Корзина](./assets/trash-icon.svg "inline") в строке параметра.
-     1. Нажмите кнопку **Сохранить**.
+     1. Click the ![Trash can](./assets/trash-icon.svg "inline") icon in the parameter row.
+     1. Click **Save**.
 
 {/tab}
 

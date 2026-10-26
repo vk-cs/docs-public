@@ -1,0 +1,14 @@
+{
+  "title": "Archived legal documents",
+  "shortDescription": "Agreements and documents valid until August 31, 2026",
+  "metaDescription": "Agreements and documents valid until August 31, 2026 for all clients",
+  "sectionTitle": "Archive",
+  "icon": "",
+  "weight": 6,
+  "uuid": "55b965fb-d1c6-43e7-96cc-f24c5b30e659",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

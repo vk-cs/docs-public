@@ -1,0 +1,13 @@
+{
+  "title": "Description of output parameters",
+  "shortDescription": "",
+  "metaDescription": "Description of output parameters",
+  "sectionTitle": "Description of output parameters",
+  "weight": 7,
+  "uuid": "54d835b9-9344-43c2-a820-f7d89d645800",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

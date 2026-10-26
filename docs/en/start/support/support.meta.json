@@ -1,0 +1,26 @@
+{
+  "title": "Technical Support",
+  "shortDescription": "Information about technical support for {var(cloud)} services",
+  "metaDescription": "Information about technical support for VK Cloud services",
+  "sectionTitle": "Technical Support",
+  "icon": "",
+  "weight": 3,
+  "additionalUuids": [
+    "55eb9967-05ce-4436-87ff-574691574580"
+  ],
+  "uuid": "eddb2f75-1d1a-431e-b990-39708313c56c",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

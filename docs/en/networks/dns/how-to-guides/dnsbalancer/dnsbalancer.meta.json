@@ -1,0 +1,15 @@
+{
+  "title": "DNS Balancing",
+  "shortDescription": "How to manage public DNS resource records taking into account infrastructure availability across different zones",
+  "metaDescription": "How to install and configure the DNSBalancer service on three VMs in different availability zones so that requests to the application are sent to one of the running VMs",
+  "sectionTitle": "DNS Balancing",
+  "icon": "",
+  "hidden": true,
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "ddc4804a-430d-4169-a8e3-d6f4b50b3b45"
+}

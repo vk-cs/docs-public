@@ -14,16 +14,16 @@
 
 Possible service instance statuses:
 
-- **Разворачивается** — a service instance in the process of deployment.
-- **Активный** — the service instance has been created or updated, ready for use.
-- **Ошибка создания** — failed to create a service instance due to an error.
-- **Обновляется** — an instance of the service in the process of updating the tariff plan or options.
-- **Ошибка обновления** — failed to update the service instance due to an error.
-- **Удален** — the service instance has been deleted.
-- **Приостанавливается** — the service instance is in the process of deactivation due to insufficient amount to pay for the use of the service.
-- **Ошибка приостановки** — the service instance could not be deactivated due to an error.
-- **Неактивный** — the service instance has been deactivated. The deactivated instance of the service is unavailable for use.
-- **Возобновляется** — service instance in the process of [activation](#activating_a_service_instance).
+- **Deploying** — a service instance in the process of deployment.
+- **Active** — the service instance has been created or updated, ready for use.
+- **Creation error** — failed to create a service instance due to an error.
+- **Updating** — an instance of the service in the process of updating the tariff plan or options.
+- **Update error** — failed to update the service instance due to an error.
+- **Deleted** — the service instance has been deleted.
+- **Suspending** — the service instance is in the process of deactivation due to insufficient amount to pay for the use of the service.
+- **Suspension error** — the service instance could not be deactivated due to an error.
+- **Inactive** — the service instance has been deactivated. The deactivated instance of the service is unavailable for use.
+- **Resuming** — service instance in the process of [activation](#activating_a_service_instance).
 
 ## Activating a service instance
 
@@ -80,7 +80,7 @@ Activation will be required:
 
 {/tabs}
 
-The update of the service instance will begin, the process may take a long time. If the update has completed with the status **Ошибка обновления**, [updating access](#updating_access_to_a_service_instance) to a service instance.
+The update of the service instance will begin, the process may take a long time. If the update has completed with the status **Update error**, [updating access](#updating_access_to_a_service_instance) to a service instance.
 
 ## Updating access to a service instance
 
@@ -103,7 +103,7 @@ The update of the service instance will begin, the process may take a long time.
 
 ## Recreating or re-updating a service instance
 
-The operation is available if the service instance is in the status **Ошибка создания** or **Ошибка обновления**.
+The operation is available if the service instance is in the status **Creation error** or **Update error**.
 
 {tabs}
 
@@ -119,7 +119,7 @@ The operation is available if the service instance is in the status **Ошибк
 
 {/tabs}
 
-## Deleting a service instance
+## {heading(Deleting a service instance)[id=marketplace-pr-instance-manage-delete]}
 
 {tabs}
 

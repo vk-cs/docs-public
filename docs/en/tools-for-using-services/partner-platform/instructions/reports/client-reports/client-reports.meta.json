@@ -1,0 +1,14 @@
+{
+  "title": "Getting a client report",
+  "shortDescription": "How to get a client report on the {var(cloud)} partner platform",
+  "metaDescription": "How to get a client report on the VK Cloud partner platform: getting client reports using the VK Cloud management console",
+  "sectionTitle": "Getting a client report",
+  "icon": "",
+  "weight": 1,
+  "uuid": "b09bef80-12af-4caa-922a-c14be4531ec4",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Tariffication",
+  "shortDescription": "Service cost and tariffication details",
+  "metaDescription": "Cost of the Load Balancing service and details of its tariffication.",
+  "sectionTitle": "Tariffication",
+  "icon": "",
+  "weight": 4,
+  "uuid": "390f0a8e-971c-4882-8039-ef8c307cfe16",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

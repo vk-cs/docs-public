@@ -1,0 +1,14 @@
+{
+  "title": "Viewing service statistics",
+  "shortDescription": "How to view the main metrics of vendor service usage",
+  "metaDescription": "Viewing statistics on vendor service usage",
+  "sectionTitle": "Viewing service statistics",
+  "icon": "",
+  "weight": 3,
+  "uuid": "b7d4e485-914c-4f1b-aadf-dc164487c265",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

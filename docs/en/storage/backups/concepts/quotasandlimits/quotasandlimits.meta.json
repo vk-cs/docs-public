@@ -1,0 +1,14 @@
+{
+  "title": "Quotas and limits",
+  "shortDescription": "List of quotas and technical limitations applied in the Cloud Backup service",
+  "metaDescription": "List of quotas and technical limitations applicable in VK Cloud projects",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 20,
+  "uuid": "88c66412-ee1a-435d-838e-4619fcc6cfab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

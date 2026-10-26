@@ -1,0 +1,16 @@
+{
+  "title": "Bucket Management",
+  "shortDescription": "How to perform routine operations on a bucket via the management console, AWS CLI, SDK",
+  "metaDescription": "Instructions for managing VK Object Storage buckets via AWS CLI: how to get a list of buckets, synchronize data with a local copy using the `aws s3 sync` command (key parameters and examples), as well as how to recursively delete all objects in a bucket and then the bucket itself.",
+  "sectionTitle": "Bucket Management",
+  "icon": "",
+  "weight": 3,
+  "uuid": "3f0e7381-d78b-42e4-91ec-23b908617878",
+  "build": {
+    "for": [
+      "public",
+      "s3",
+      "s3-pdf"
+    ]
+  }
+}

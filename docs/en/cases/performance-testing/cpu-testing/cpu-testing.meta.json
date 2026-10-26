@@ -1,0 +1,23 @@
+{
+  "title": "How to test CPU",
+  "shortDescription": "Instructions for testing CPU performance",
+  "metaDescription": "Instructions for testing CPU performance",
+  "sectionTitle": "How to test CPU",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a40ba477-cf9b-45c1-8bf2-fde4930e8155",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert",
+      "s3",
+      "s3-pdf",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

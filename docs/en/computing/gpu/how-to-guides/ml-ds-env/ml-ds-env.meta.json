@@ -1,0 +1,14 @@
+{
+  "title": "Preparing a GPU Environment for Machine Learning (ML) and Data Science (DS)",
+  "sectionTitle": "Preparing a GPU Environment for Machine Learning (ML) and Data Science (DS)",
+  "shortDescription": "How to configure a virtual machine for working with the PyTorch machine learning tools",
+  "metaDescription": "Step-by-step instructions for configuring GPU virtual machines for working with the PyTorch machine learning tools + LLM Llama-2-7B Fine-tuning with LoRA in a conda environment",
+  "icon": "",
+  "weight": 3,
+  "uuid": "8953bb28-bd88-4768-a3a4-22c8d2815928",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

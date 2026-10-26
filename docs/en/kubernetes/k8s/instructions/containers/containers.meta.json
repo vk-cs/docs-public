@@ -1,0 +1,17 @@
+{
+  "title": "Typical container operations",
+  "shortDescription": "",
+  "metaDescription": "Typical container operations in Kubernetes. Learn how to manage Kubernetes cluster containers via your management console or using Terraform",
+  "sectionTitle": "Typical container operations",
+  "icon": "",
+  "weight": 12,
+  "uuid": "7fa10591-3134-4297-9ecd-107c27b6c44e",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

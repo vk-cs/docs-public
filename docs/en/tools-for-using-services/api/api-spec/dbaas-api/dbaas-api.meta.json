@@ -1,0 +1,15 @@
+{
+  "title": "Cloud Databases",
+  "shortDescription": "OpenAPI specification of the Cloud Databases service",
+  "metaDescription": "VK Cloud: managing Cloud Databases using the DBaaS API.",
+  "sectionTitle": "Cloud Databases",
+  "hidden": false,
+  "icon": "",
+  "weight": 4,
+  "uuid": "165ffc1f-747a-45ea-a44f-905466991f38",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

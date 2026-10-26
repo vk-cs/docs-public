@@ -1,0 +1,14 @@
+{
+  "title": "Standalone Monitoring",
+  "shortDescription": "Collecting and viewing metrics in Standalone",
+  "metaDescription": "Learn how to view metrics of deployed service instances in VK Data Platform Standalone edition",
+  "sectionTitle": "Standalone Monitoring",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": "d568ca15-0c25-4769-a1d5-076e8d1cc8ed"
+}

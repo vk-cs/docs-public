@@ -1,0 +1,13 @@
+{
+  "title": "Terraform Manifest Input Variables",
+  "shortDescription": "Declaring input variables in a Terraform manifest",
+  "metaDescription": "Terraform manifest input variables — input variables for describing the infrastructure configuration on which the vendor's image-based application will be deployed.",
+  "sectionTitle": "Manifest Input Variables",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "a344b962-f979-4f2a-940d-46b2d20d3d4e"
+}

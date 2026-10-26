@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_dns resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_dns resource",
+  "sectionTitle": "ivkcs_dns resource",
+  "uuid": "1945e626-9564-494b-8ff8-07867dca6fa6",
+  "weight": 7,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

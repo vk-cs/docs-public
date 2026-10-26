@@ -1,0 +1,14 @@
+{
+  "title": "Managing reports",
+  "shortDescription": "How to view and download service usage reports",
+  "metaDescription": "Viewing and exporting service usage reports.",
+  "sectionTitle": "Managing reports",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0d4e0692-c2c9-4334-bfa9-291f231d0111",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

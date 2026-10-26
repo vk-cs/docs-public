@@ -1,0 +1,18 @@
+{
+  "title": "Images",
+  "shortDescription": "Virtual machine images in VK Cloud",
+  "metaDescription": "Virtual machine images in VK Cloud",
+  "sectionTitle": "Images",
+  "weight": 6,
+  "uuid": "8df83d35-dea2-42b0-89dd-8318000b8c2b",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

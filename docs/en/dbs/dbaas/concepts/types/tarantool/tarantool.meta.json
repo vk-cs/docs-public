@@ -1,0 +1,14 @@
+{
+  "title": "Tarantool",
+  "shortDescription": "",
+  "metaDescription": "Description of the Tarantool in-memory computing platform for VK Cloud.",
+  "sectionTitle": "Tarantool",
+  "icon": "",
+  "weight": 6,
+  "uuid": "e655dba7-5447-4e7d-ab22-ae291916f5af",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

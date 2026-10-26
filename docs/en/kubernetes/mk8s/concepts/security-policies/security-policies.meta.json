@@ -1,0 +1,14 @@
+{
+  "title": "Security policies",
+  "shortDescription": "Tools for enhancing cluster security when working with Kubernetes resources",
+  "metaDescription": "VK Cloud containers: tools for enhancing cluster security when working with Kubernetes resources.",
+  "sectionTitle": "Security policies",
+  "icon": "",
+  "weight": 14,
+  "uuid": "054a5b81-09a1-4e27-be6c-a673713a1698",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Working with a service instance",
+  "shortDescription": "How to manage Cloud Airflow service components in a project",
+  "metaDescription": "Step-by-step instructions for working with a Cloud Airflow VK Data Platform instance: viewing information, configuring connections, and managing user accounts",
+  "sectionTitle": "Working with a service instance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "c26ce2c9-1413-428a-8589-c58236797d87",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

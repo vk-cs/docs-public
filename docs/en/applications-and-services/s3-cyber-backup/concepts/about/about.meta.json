@@ -1,0 +1,14 @@
+{
+  "title": "About the service",
+  "shortDescription": "A brief overview of the service capabilities",
+  "metaDescription": "A brief overview of the service capabilities",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 1,
+  "uuid": "87779807-0e12-413c-8f37-e1ae2b5fa001",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

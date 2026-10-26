@@ -1,0 +1,14 @@
+{
+  "title": "Deploying ML Models with MLflow Client",
+  "shortDescription": "How to manage the deployment of ML models using MLflow Client",
+  "metaDescription": "How to manage the deployment of ML models using MLflow Client",
+  "sectionTitle": "Deploying ML Models with MLflow Client",
+  "icon": "",
+  "weight": 1,
+  "uuid": "327277eb-e5b3-4fd9-a04c-76ba466105c8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

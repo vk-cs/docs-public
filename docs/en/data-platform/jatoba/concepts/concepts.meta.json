@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Basic concepts and characteristics of the Jatoba service",
+  "metaDescription": "Learn about the basic concepts and characteristics of the Jatoba service in VK Data Platform",
+  "sectionTitle": "Concepts",
+  "weight": 0,
+  "uuid": "f66be912-58cc-49a2-9029-70a665d6129e",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

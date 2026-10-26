@@ -1,0 +1,14 @@
+{
+  "title": "Local testing of a Terraform manifest",
+  "sectionTitle": "Local testing of a Terraform manifest",
+  "shortDescription": "Instructions for local testing of the Terraform manifest of an image-based application",
+  "metaDescription": "Instructions for local testing of a Terraform manifest describing the cloud infrastructure for your image-based application and the procedure for its deployment.",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "25710b49-fecb-47b7-9c85-ba9b0a366fb7"
+}

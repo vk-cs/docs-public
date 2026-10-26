@@ -1,0 +1,14 @@
+{
+  "title": "Terms and Definitions",
+  "shortDescription": "",
+  "metaDescription": "Key terms and definitions used on the VK Cloud platform",
+  "sectionTitle": "Terms and Definitions",
+  "icon": "",
+  "weight": 8,
+  "uuid": "8da8d461-dc2e-4fd3-a13e-e24e3d59d04b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

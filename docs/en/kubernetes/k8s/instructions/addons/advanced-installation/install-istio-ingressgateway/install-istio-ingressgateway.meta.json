@@ -1,0 +1,17 @@
+{
+  "title": "Istio-ingressgateway",
+  "shortDescription": "",
+  "metaDescription": "Managed Containers service in VK Cloud: configuring and installing the Istio-ingressgateway add-on.",
+  "sectionTitle": "Istio-ingressgateway",
+  "icon": "",
+  "weight": 14,
+  "uuid": "af40e598-a5e1-4639-8638-e3fce79ed2d0",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

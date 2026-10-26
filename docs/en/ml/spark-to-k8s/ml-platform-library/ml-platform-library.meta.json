@@ -1,0 +1,14 @@
+{
+  "title": "Cloud ML Platform Library",
+  "shortDescription": "Information on working with the library and a reference of methods applicable to Cloud Spark",
+  "metaDescription": "Documentation for the Cloud ML Platform Python library (for Cloud Spark).",
+  "sectionTitle": "Cloud ML Platform Library",
+  "icon": "",
+  "weight": 50,
+  "uuid": "0f090db7-9ad5-4355-a129-658d588ad894",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

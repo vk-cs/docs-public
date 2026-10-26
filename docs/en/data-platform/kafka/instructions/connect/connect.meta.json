@@ -1,0 +1,15 @@
+{
+  "title": "Connecting to a service instance",
+  "shortDescription": "How to connect via TLS to a service instance",
+  "metaDescription": "Learn how to connect via TLS to a deployed Cloud Kafka service instance using kafka-cli in VK Data Platform",
+  "sectionTitle": "Connecting to a service instance",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": "cc01b276-76c2-49c0-9600-01ce6edbab6c"
+}

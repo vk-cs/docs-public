@@ -1,0 +1,16 @@
+{
+  "title": "Private Service Level Agreement for the VK Bare Metal Dedicated Server Service",
+  "shortDescription": "",
+  "metaDescription": "This document defines the Service Level of the VK Bare Metal Dedicated Server Service",
+  "sectionTitle": "Private Service Level Agreement for the VK Bare Metal Dedicated Server Service",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "4367d138-c8ac-474f-a627-210dcccb706b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

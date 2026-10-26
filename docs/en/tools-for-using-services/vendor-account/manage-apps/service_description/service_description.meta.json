@@ -1,0 +1,13 @@
+{
+  "title": "Filling in the service description for the marketplace",
+  "shortDescription": "",
+  "metaDescription": "Filling in the service description for the marketplace",
+  "sectionTitle": "Filling in the service description for the marketplace",
+  "weight": 8,
+  "uuid": "f43f54f2-6db1-42dc-8343-e82949c4de12",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

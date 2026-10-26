@@ -1,0 +1,14 @@
+{
+  "title": "Viewing service prices in a project",
+  "shortDescription": "How to view prices for the services you use in a project",
+  "metaDescription": "Learn how to view prices for services in a project on the VK Cloud platform via your management console or using a price list ",
+  "sectionTitle": "Viewing service prices in a project",
+  "icon": "",
+  "weight": 2,
+  "uuid": "07124bb3-d0aa-4249-a5b2-7590563556e9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

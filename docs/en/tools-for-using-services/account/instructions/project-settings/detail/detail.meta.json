@@ -1,0 +1,18 @@
+{
+  "title": "Expense details",
+  "shortDescription": "Statistics on resource consumption and balance changes",
+  "metaDescription": "VK Cloud: viewing statistics on resource consumption and balance changes in projects",
+  "sectionTitle": "Expense details",
+  "icon": "",
+  "weight": 8,
+  "uuid": "6137f910-4a18-4872-81b6-9fa0ca16a0b8",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

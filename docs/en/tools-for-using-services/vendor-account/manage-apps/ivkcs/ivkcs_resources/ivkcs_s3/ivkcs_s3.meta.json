@@ -1,0 +1,13 @@
+{
+  "title": "ivkcs_s3 resource",
+  "shortDescription": "",
+  "metaDescription": "ivkcs_s3 resource",
+  "sectionTitle": "ivkcs_s3 resource",
+  "uuid": "36140600-4dd0-4c8c-84cf-774af159f465",
+  "weight": 8,
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

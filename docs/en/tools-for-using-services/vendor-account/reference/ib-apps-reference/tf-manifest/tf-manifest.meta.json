@@ -1,0 +1,13 @@
+{
+  "title": "Terraform Manifest Structure",
+  "shortDescription": "Structure of the Terraform manifest describing the infrastructure for deploying an application",
+  "metaDescription": "Structure of the Terraform manifest describing the infrastructure for deploying a provider's service. Main and optional infrastructure components. Example of a Terraform manifest.",
+  "sectionTitle": "Terraform Manifest Structure",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "410a60e0-0568-4bc9-8cea-057274d6f882"
+}

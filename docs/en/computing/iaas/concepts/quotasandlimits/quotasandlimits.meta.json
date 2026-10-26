@@ -1,0 +1,14 @@
+{
+  "title": "Quotas and limits",
+  "shortDescription": "A list of quotas and technical limitations applicable in the Cloud Servers service",
+  "metaDescription": "A list of quotas and technical limitations that apply in VK Cloud projects",
+  "sectionTitle": "Quotas and limits",
+  "icon": "",
+  "weight": 20,
+  "uuid": "dcf76cf9-c45a-4022-992a-6a550f8b756d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

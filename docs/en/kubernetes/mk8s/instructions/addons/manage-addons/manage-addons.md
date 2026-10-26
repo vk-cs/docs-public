@@ -21,7 +21,7 @@ In Managed Containers, you can install [add-ons](/en/kubernetes/mk8s/concepts/ad
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 
@@ -44,7 +44,7 @@ In Managed Containers, you can install [add-ons](/en/kubernetes/mk8s/concepts/ad
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 
@@ -189,7 +189,7 @@ To remove the add-on:
 
 {/tab}
 
-<!-- удалена таба Terraform, при работе над задачей по TF забрать её из k8s и подставить нужные значения -->
+<!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
 
 {/tabs}
 

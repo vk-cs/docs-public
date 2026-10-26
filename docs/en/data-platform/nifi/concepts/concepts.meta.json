@@ -1,0 +1,14 @@
+{
+  "title": "Concepts",
+  "shortDescription": "Basic concepts and characteristics of the NiFi service",
+  "metaDescription": "Learn about the basic concepts and characteristics of the NiFi service in VK Data Platform",
+  "sectionTitle": "Concepts",
+  "weight": 0,
+  "uuid": "a0a00c02-02f1-47fa-aab8-df98d3473e7c",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

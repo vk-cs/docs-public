@@ -1,0 +1,14 @@
+{
+  "title": "Server management",
+  "shortDescription": "How to get information about a server",
+  "metaDescription": "Learn how to get detailed information about your Bare Metal server via the VK Cloud platform management console. A simple and clear instruction.",
+  "sectionTitle": "Server management",
+  "icon": "",
+  "weight": 1,
+  "uuid": "368a1cf2-7e31-496e-bbe0-93d0d46a118d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

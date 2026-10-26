@@ -1,0 +1,14 @@
+{
+  "title": "Using the Vertical Pod Autoscaler",
+  "shortDescription": "How to use the Vertical Pod Autoscaler add-on with the Updater component in Recreate mode",
+  "metaDescription": "Instructions for using the VPA add-on with the Updater component in Recreate mode in Kubernetes. Preparation, creating a Deployment, configuring VPA, testing, and analyzing results. Examples of manifests, kubectl commands, and recommendations on metrics and monitoring",
+  "sectionTitle": "Using the Vertical Pod Autoscaler",
+  "icon": "",
+  "weight": 25,
+  "uuid": "d8d9eaa5-0408-45f7-a590-9d0590739620",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -6,7 +6,7 @@ A Keystone token is required to work with some components and resources of the V
 1. Make sure that [two-factor authentication](/en/access/iam/instructions/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 1. At the top of your management console page, select the project for which you need a token.
 
-## Token generation
+## {heading(Token generation)[id=rest-api-keystone-token-gen]}
 
 {note:warn}
 

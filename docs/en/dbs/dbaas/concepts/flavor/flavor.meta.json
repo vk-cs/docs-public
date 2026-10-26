@@ -1,0 +1,16 @@
+{
+  "title": "DB Instance Configuration Flavor",
+  "shortDescription": "",
+  "metaDescription": "DB instance configuration flavor",
+  "sectionTitle": "DB instance configuration flavor",
+  "weight": 9,
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "f114d42e-edd3-46c5-8ddc-5f988d34fa93"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "IAM Only Management",
+  "shortDescription": "How to manage account and project settings in your personal dashboard",
+  "metaDescription": "IAM Only is a web interface for VK Object Storage. The article describes how to manage an account and configure a project.",
+  "sectionTitle": "IAM Only Management",
+  "weight": 1,
+  "build": {
+    "for": [
+      "s3",
+      "s3-pdf"
+    ]
+  },
+  "uuid": "7f92e78c-4a28-43ae-93bd-1890bb7df858",
+  "createdAt": "",
+  "updatedAt": ""
+}
