@@ -10,7 +10,7 @@
 - standard installation;
 - quick installation.
 
-Regardless of the selected installation option, the add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
+Regardless of the selected installation option, the add-on is installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
 
 {tabs}
 
@@ -30,10 +30,10 @@ Regardless of the selected installation option, the add-on will be installed as 
    1. Click the **Install** button on the `logaas-integration` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - the selected version;
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
         {note:warn}
 
@@ -43,7 +43,7 @@ Regardless of the selected installation option, the add-on will be installed as 
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -88,13 +88,13 @@ If this does not suit you, perform the **standard installation**.
    1. Click the **Install** button on the `logaas-integration` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - selected version;
-      - application name;
-      - the name of the namespace where the add-on will be installed.
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -194,7 +194,7 @@ Before sending logs to the Cloud Logging service, the add-on performs the follow
        - In the namespace `kube-system` there is a pod named `kube-controller-manager-my-cluster-master-0`.
        - The label `k8s-app=kube-controller-manager` is set for this pod.
 
-       Then the resource identifier will look like:
+       Then the resource identifier looks like:
 
        ```text
        kube-system.kube-controller-manager
@@ -248,15 +248,15 @@ It is the prefix that is configured for the pods so that you can receive logs fr
 
 - The only rule applies at the level of the `kube-system` namespace.
 
-   Only those logs from this namespace that have a severity level of `WARN` or higher (`ERROR`, `FATAL`) will get into Cloud Logging.
+   Only those logs from this namespace that have a severity level of `WARN` or higher (`ERROR`, `FATAL`) get into Cloud Logging.
 
 - The only rule applies at the level of the pods that are in the `default` namespace, and whose names begin with the prefix `test-pod`.
 
-   Only those logs from these pods that have a severity level of `ERROR` or higher (`FATAL`) will get into Cloud Logging. Logs are not filtered at the `default` namespace level.
+   Only those logs from these pods that have a severity level of `ERROR` or higher (`FATAL`) get into Cloud Logging. Logs are not filtered at the `default` namespace level.
 
 - Several rules apply at the level of the `my-namespace` namespace and at the level of the `example-pod` prefixed pods that are located in this namespace.
 
-   Only the listed logs will be included in Cloud Logging:
+   Only the listed logs are included in Cloud Logging:
 
    - Logs from the namespace that do not belong to pods with the prefix `example-pod` and have a severity level of `ERROR` or higher (`FATAL`).
    - Logs from the pods with the prefix `example-pod`, which have a severity level of `WARN` or higher (`ERROR`, `FATAL`).
@@ -331,18 +331,18 @@ It is the prefix that is configured for the pods so that you can receive logs fr
 
 - The only rule applies at the level of the `kube-system` namespace.
 
-   If part of the log entry from this namespace matches the specified pattern `[Ww]%d%d%d%d%s+`, then this entry will be assigned the `ERROR` severity level.
+   If part of the log entry from this namespace matches the specified pattern `[Ww]%d%d%d%d%s+`, then this entry is assigned the `ERROR` severity level.
 
 - The only rule applies at the level of the pods that are in the `default` namespace, and whose names begin with the prefix `test-pod`.
 
-   If a part of the log entry from these pods matches the specified pattern `this is a plain text message`, then this entry will be assigned the `WARN` severity level.
+   If a part of the log entry from these pods matches the specified pattern `this is a plain text message`, then this entry is assigned the `WARN` severity level.
 
 - Several rules apply at the level of the `my-namespace` namespace and at the level of the `example-pod` prefixed pods that are located in this namespace.
 
-   The severity levels will be assigned according to the following rules:
+   The severity levels are assigned according to the following rules:
 
-   - If a part of the log record from this namespace (which does not belong to the pods with the prefix `example-pod`) matches the specified pattern `[Ww]%s+`, then this record will be assigned the `ERROR` severity level.
-   - If a part of the log record from the pods with the prefix `example-pod` matches the specified pattern `Debug trace`, then this record will be assigned the `DEBUG` severity level.
+   - If a part of the log record from this namespace (which does not belong to the pods with the prefix `example-pod`) matches the specified pattern `[Ww]%s+`, then this record is assigned the `ERROR` severity level.
+   - If a part of the log record from the pods with the prefix `example-pod` matches the specified pattern `Debug trace`, then this record is assigned the `DEBUG` severity level.
 
 If no part of the log record matches the specified patterns, then such a record is assigned a severity level determined using Fluent Bit parsers.
 

@@ -1,8 +1,8 @@
 1. Edit if necessary:
 
-   - selected version 
-   - application name
-   - the name of the namespace where the add-on will be installed
+   - the selected version
+   - the application name
+   - the namespace where to install the add-on
 
 1. Configure the addon code to work with the S3-compatible storage. To do this, add the required values to the `secret` block:
 

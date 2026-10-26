@@ -4,7 +4,7 @@ Creating [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clu
 
 
 {note:warn}
-When installing a cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
+When installing a cluster, VK Cloud creates a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers). Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 {/note}
 
 ## Before you create a cluster
@@ -31,8 +31,8 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
    - **Cluster type**:
 
-     - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). High availability is provided at the zone level.
-     - **Fault-tolerant**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or 5.
+     - **Standard**: all cluster master nodes are located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). High availability is provided at the zone level.
+     - **Fault-tolerant**: cluster master nodes are located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or 5.
      
    - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for fault-tolerant clusters is automatically set to `3`, but you can change it to `5`.
 
@@ -52,13 +52,13 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
      Templates with high-performance CPUs are available upon request to technical support. See [Available computing resources](/en/kubernetes/k8s/concepts/flavors#configuration_templates) for details.
 
-  - **Master disk type**: [storage type](/en/kubernetes/k8s/concepts/storage#storage_types) that will be used by nodes. The disk type you select affects the performance of the cluster.
+  - **Master disk type**: [storage type](/en/kubernetes/k8s/concepts/storage#storage_types) that nodes use. The disk type you select affects the performance of the cluster.
 
   - **Disk size on Master node**: the larger the disk size, the better its performance in some disk operations.
 
 1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
-   - **Network**: select the network and subnet that will host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
+   - **Network**: select the network and subnet that host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
 
       {note:info}
 
@@ -70,11 +70,11 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
      
       By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 
-   - **Use pod subnet**: enable this option to specify the subnet that the pods will use to communicate with each other.
+   - **Use pod subnet**: enable this option to specify the subnet that the pods use to communicate with each other.
 
       By default, the pods use the `10.100.0.0./16` subnet for communication. If such a subnet already exists in the cluster network, specify a different subnet that is not part of the cluster network to be used by the pods. This is necessary so that the address spaces do not overlap.
 
-   - **Assign external IP**: enable this option so that external IP addresses are assigned to the cluster API endpoint and the pre-installed Ingress controller (if selected in the previous step). Otherwise, IP addresses will be assigned from the cluster subnet.
+   - **Assign external IP**: enable this option so that external IP addresses are assigned to the cluster API endpoint and the pre-installed Ingress controller (if selected in the previous step). Otherwise, IP addresses are assigned from the cluster subnet.
 
       By default, the option is enabled, which allows access to the cluster and the Ingress controller from the Internet.
 
@@ -86,7 +86,7 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
        - `<DOCKER_REGISTRY_IP_ADDRESS>:<DOCKER_REGISTRY_PORT>`. For example, `172.24.4.3:5000`.
        - An arbitrary domain. For example, `example.com`.
 
-     The address you add will be set for all nodes of the cluster, including those that you add after it is created. For more details on disabling the validation, refer to the [official Docker documentation](http://docs.docker.com/reference/cli/dockerd/#insecure-registries).
+     The address you add is set for all nodes of the cluster, including those that you add after it is created. For more details on disabling the validation, refer to the [official Docker documentation](http://docs.docker.com/reference/cli/dockerd/#insecure-registries).
 
      {note:warn}
      Do not add addresses of the registries that you are unsure of, as it can reduce the security of your connection.
@@ -104,9 +104,9 @@ When installing a cluster, a [service load balancer](/en/networks/balancing/conc
 
 1. Click the **Create** button.
 
-   This will start the process of creating the Kubernetes cluster. This process might take a long time depending on the size of the cluster.
+   This starts the process of creating the Kubernetes cluster. This process might take a long time depending on the size of the cluster.
 
-   Once the cluster is created, its [configuration file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) (kubeconfig) will be automatically downloaded to your machine with the name in the following format: `<CLUSTER NAME>_kubeconfig.yaml`. You will need this file to [connect](/en/kubernetes/k8s/connect) to the cluster.
+   Once the cluster is created, its [configuration file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) (kubeconfig) is automatically downloaded to your machine with the name in the following format: `<CLUSTER NAME>_kubeconfig.yaml`. You need this file to [connect](/en/kubernetes/k8s/connect) to the cluster.
 
 ## What's next?
 

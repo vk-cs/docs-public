@@ -30,8 +30,8 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
    1. Click the **Install** button on the `jaeger` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed.
+      - the application name
+      - the namespace where to install the add-on
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation) if:
 
@@ -46,7 +46,7 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -69,7 +69,7 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -96,8 +96,8 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
    1. Click the **Install** button on the `jaeger` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed.
+      - the application name
+      - the namespace where to install the add-on
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation) if:
 
@@ -153,7 +153,7 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -169,7 +169,7 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
 
 To install the add-on in this way, it is necessary that the master nodes and the worker nodes are in the same availability zone.
 
-During quick installation, the add-on settings code is not edited. Three Elasticsearch replicas will be used as the storage backend.
+During quick installation, the add-on settings code is not edited. Three Elasticsearch replicas are used as the storage backend.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -189,12 +189,12 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Click the **Install** button on the `jaeger` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -235,7 +235,7 @@ Make sure that the number of worker nodes in the cluster is not less than the se
 
 ### Changing Elasticsearch storage settings
 
-Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](/en/kubernetes/mk8s/reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#architecture-az) in which the cluster's worker nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
+Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](/en/kubernetes/mk8s/reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#architecture-az) in which the cluster's worker nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes cannot work with volumes.
 
 To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes), the availability zone of which coincides with the availability zone of worker nodes:
 

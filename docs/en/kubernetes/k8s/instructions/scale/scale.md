@@ -14,9 +14,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {note:warn}
 
-   During the scaling process, the virtual machines hosting the master nodes will be restarted sequentially.
+   During the scaling process, the virtual machines hosting the master nodes are restarted sequentially.
 
-   If the cluster [contains one master node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies), then the Kubernetes API will be unavailable during scaling.
+   If the cluster [contains one master node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies), then the Kubernetes API is unavailable during scaling.
 
    {/note}
 
@@ -25,7 +25,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project where the necessary cluster is located.
+   1. Select the project that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
@@ -59,7 +59,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
          openstack flavor list
          ```
 
-         The available virtual machine types will be displayed.
+         The available virtual machine types are displayed.
 
       1. Select the required virtual machine type and write its name from the **Name** column.
 
@@ -109,7 +109,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 1. Prepare to scale:
 
    1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
-   1. If you plan to reduce the amount of computing resources, then make sure that the total amount of resources in the worker node group will be enough to accommodate the workload.
+   1. If you plan to reduce the amount of computing resources, then make sure that the total amount of resources in the worker node group is enough to accommodate the workload.
    1. Make sure that replication is configured for the workload and replicas are distributed across multiple worker nodes from the node group.
 
       If there is only one worker node in the node group, [increase the number of nodes in the group](#horizontal_scaling) and configure replication if possible.
@@ -118,9 +118,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {note:warn}
 
-   During the scaling process, the virtual machines hosting the worker nodes will be restarted sequentially.
+   During the scaling process, the virtual machines hosting the worker nodes are restarted sequentially.
 
-   Workloads for which replication has not been configured will not be available during scaling.
+   Workloads for which replication has not been configured are not available during scaling.
 
    {/note}
 
@@ -129,10 +129,10 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project where the necessary cluster is located.
+   1. Select the project that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
-   1. Locate the necessary cluster and node group.
+   1. Locate the required cluster and node group.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Change type of master virtual machine**.
    1. Select the VM category to filter the list of available configuration templates.
       
@@ -164,7 +164,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
          openstack flavor list
          ```
 
-         The available virtual machine types will be displayed.
+         The available virtual machine types are displayed.
 
       1. Select the required virtual machine type and write its name from the **Name** column.
 
@@ -225,7 +225,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project where the necessary cluster is located.
+   1. Select the project that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
@@ -301,7 +301,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    {tab(Management console)}
 
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en).
-   1. Select the project where the necessary cluster is located.
+   1. Select the project that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.

@@ -16,7 +16,7 @@ You can manage resources of a Kubernetes cluster via the UI of the VK Cloud mana
 1. Add the resource manifest in the YAML format. For the examples of manifests, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/).
 1. Confirm the operation.
 
-The resource you add is recognized automatically and becomes available in the list of resources in the respective category. For example, if you add a manifest for PV, it will be available in the category **Storage** in the **Persistent Volumes** section.
+The resource you add is recognized automatically and becomes available in the list of resources in the respective category. For example, if you add a manifest for PV, it is available in the category **Storage** in the **Persistent Volumes** section.
 
 ## {heading(Download a resource manifest)[id=download-yaml]}
 

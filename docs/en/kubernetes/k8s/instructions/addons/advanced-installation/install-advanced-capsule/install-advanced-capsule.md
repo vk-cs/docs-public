@@ -24,10 +24,10 @@
     1. Click the **Install** button on the `capsule` add-on card, then click **Install addon**.
     1. (Optional) Edit:
 
-      - selected version
-      - application name
-      - namespace where the add-on will be installed
-      - [add-on settings code](#editing_addon_settings_code_during_installation)
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
         {note:warn}
 
@@ -37,7 +37,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -84,7 +84,7 @@
    1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
@@ -111,10 +111,10 @@
    1. Click the **Install** button on the `capsule` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - selected version
-      - application name
-      - the name of the namespace where the add-on will be installed
-      - [add-on settings code](#editing_addon_settings_code_during_installation)
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
    1. Set the necessary tolerations and nodeSelector in the add-on setup code:
 
@@ -155,7 +155,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -214,13 +214,13 @@ If this is not suitable for you, perform a **standard installation** or **instal
    1. Click the **Install** button on the `capsule` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - selected version
-      - application name
-      - the name of the namespace where the add-on will be installed
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    

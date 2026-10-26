@@ -2,7 +2,7 @@ If the cluster uses not the latest [supported](/en/kubernetes/k8s/concepts/versi
 
 {note:warn}
 
-- If a [component](/en/kubernetes/k8s/concepts/update), that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+- If a [component](/en/kubernetes/k8s/concepts/update), that is to be updated with the cluster, is deleted, then it is restored during the next cluster update.
 
 - When the cluster is updating, the current CoreDNS [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
 
@@ -29,7 +29,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Update version**.
 1. In the window that appears, select the required version.

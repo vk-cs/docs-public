@@ -24,9 +24,9 @@
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation) (for example, to set a temporary password for the Grafana web interface).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation) (for example, to set a temporary password for the Grafana web interface)
 
         {note:warn}
 
@@ -36,7 +36,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -61,7 +61,7 @@
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -88,9 +88,9 @@
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation) (for example, to set a temporary password for the Grafana web interface).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation) (for example, to set a temporary password for the Grafana web interface)
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
@@ -145,7 +145,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -161,7 +161,7 @@
 
 {note:info}
 
-During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to sign in to the Grafana web interface.
+During quick installation, the add-on settings code is not edited. A Kubernetes secret is created, containing a permanent password to sign in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -181,12 +181,12 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -206,16 +206,16 @@ Editing the addon configuration applies to both standard installation and instal
 
 ### {heading(Setting temporary password for Grafana web interface)[id=mk8s-install-advanced-monitoring-temp-password]}
 
-When installing an add-on with default parameters, a Kubernetes secret will be created containing a permanent password to sign in to the Grafana web interface.
+When installing an add-on with default parameters, a Kubernetes secret is created containing a permanent password to sign in to the Grafana web interface.
 
-Also, when installing the add-on, you can specify a temporary user password. In this case, the first authorization to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the add-on settings code:
+Also, when installing the add-on, you can specify a temporary user password. In this case, the first authorization to the Grafana web interface is performed with this password, then you are prompted to change it. To do this, change the value of the field in the add-on settings code:
 
 ```yaml
 grafana:
   adminPassword: "<TEMPORARY_PASSWORD>"
 ```
 
-This field's value takes effect only during addon installation. If you change it for an already installed addon, the Kubernetes secret will be updated, but the Grafana login password won't change: the `admin` user is stored in Grafana's database on PVC and isn't overwritten during updates. In this case, the password from the secret might not work for login.
+This field's value takes effect only during addon installation. If you change it for an already installed addon, the Kubernetes secret is updated, but the Grafana login password does not change: the `admin` user is stored in Grafana's database on PVC and isn't overwritten during updates. In this case, the password from the secret might not work for login.
 
 To change the password on an already installed addon, {linkto(#mk8s-install-advanced-monitoring-reset-password)[text=set]} a new password using the reset command or {linkto(#mk8s-install-advanced-monitoring-reinstall)[text=reinstall]} the addon after deleting the Grafana PVC.
 
@@ -264,7 +264,7 @@ If the add-on was installed without specifying a temporary password, the passwor
 
    Here `<NAMESPACE>` is the namespace where the addon is installed. By default, it is `prometheus-monitoring`.
 
-   The command output contains the Grafana secret name. It is based on the app name, for example `myapp-grafana`. If the app name was auto-generated when the addon was installed via the management console, the name will look like `addon-a0b1c2d3f4-grafana`.
+   The command output contains the Grafana secret name. It is based on the app name, for example `myapp-grafana`. If the app name was auto-generated when the addon was installed via the management console, the name looks like `addon-a0b1c2d3f4-grafana`.
 
 1. Get the password to sign in to Grafana from the Kubernetes secret using this name:
 
@@ -322,14 +322,14 @@ If the password for the Grafana web interface has been lost or doesn't work (for
    - `<GRAFANA_POD_NAME>` is the pod name from the output of the previous command.
    - `<NEW_PASSWORD>` is the new password to sign in to Grafana.
 
-   If the password is successfully reset, the command output will contain the message `Admin password changed successfully ✔`.
+   If the password is successfully reset, the command output contains the message `Admin password changed successfully ✔`.
 
 ### {heading(Reinstalling the addon with Grafana PVC deletion)[id=mk8s-install-advanced-monitoring-reinstall]}
 
 This method allows setting the Grafana password via the `grafana.adminPassword` field in the addon configuration.
 
 {note:warn}
-The PVC deletion will also remove Grafana database data: custom dashboards, data sources, and other settings made through the web interface.
+The PVC deletion also removes Grafana database data: custom dashboards, data sources, and other settings made through the web interface.
 {/note}
 
 1. {linkto(../../manage-addons#removing_addon)[text=Delete the]} `kube-prometheus-stack` addon.

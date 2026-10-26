@@ -15,9 +15,9 @@ This is a group operation: if necessary, you can start several stopped clusters 
 To start a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Use the checkbox to select the necessary cluster.
+1. Use the checkbox to select the required cluster.
 1. Click the **Launch** button.
 1. Confirm the operation.
 
@@ -36,9 +36,9 @@ This is a group operation: if necessary, you can stop several started clusters a
 To stop a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Use the checkbox to select the necessary cluster.
+1. Use the checkbox to select the required cluster.
 1. Click the **Stop** button.
 1. Confirm the operation.
 
@@ -55,13 +55,42 @@ Different information is available for running and stopped clusters.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Click on the name of the necessary cluster. A page with information will open.
+1. Click on the name of the required cluster. A page with information opens.
 
 {/tab}
 
 <!-- Terraform tab removed; when working on the TF task, take it from k8s and substitute the required values -->
+
+{/tabs}
+
+## View cluster status dashboard
+
+{tabs}
+
+{tab(Management console)}
+
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
+1. Select the project that contains the required cluster.
+1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
+1. Click on the name of the required cluster and go to the **Monitoring** tab.
+
+   The [dashboard](/en/kubernetes/mk8s/monitoring#cluster_status_dashboard) with the cluster status data opens. It shows:
+
+   - key indicators of CPU, memory, disk, and persistent volume usage
+   - CPU and memory usage over time, node utilization, and network traffic
+   - containers and volumes that use the most resources or are close to their limits
+
+1. Specify the period for which to show the data: select a fixed period or set a custom one manually or with the calendar.
+1. Select the required metrics from the list and click **Apply**. By default, all metrics are selected.
+
+For more information about charts and alerts in Cloud Monitoring, see:
+
+- [Managing dashboards and charts](/en/monitoring-services/monitoring/instructions/manage-dashboards)
+- [Triggers](/en/monitoring-services/alerting/instructions/triggers#alerting-triggers-add)
+
+{/tab}
 
 {/tabs}
 
@@ -89,7 +118,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 To delete a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Perform one of the actions for the required cluster:
    - Select the cluster using the checkbox, then click **Delete**.

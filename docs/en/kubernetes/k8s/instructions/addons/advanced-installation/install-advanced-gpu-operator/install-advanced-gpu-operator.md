@@ -16,7 +16,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
    1. Select the project where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the cluster.
-   1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which addons will be hosted. 
+   1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which addons are hosted. 
    
       If there is no such group, [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
@@ -46,7 +46,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
 
       - the selected version
       - the application name
-      - the namespace where the add-on will be installed
+      - the namespace where to install the add-on
       - the [add-on settings code](#editing_addon_code)
 
       {note:warn}
@@ -57,7 +57,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
       
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -98,7 +98,7 @@ You can find the full add-on settings code along with the description of the fie
 
 Do not delete the `"mcs.mail.ru/gpu-exists"` parameter and its `true` value.
 
-The parameter is responsible for installing the nfd-worker plugin only on nodes with a GPU. If you delete the parameter and value, nfd-worker and its accompanying plugins will be installed on all cluster nodes, which will lead to increased resource consumption.
+The parameter is responsible for installing the nfd-worker plugin only on nodes with a GPU. If you delete the parameter and value, nfd-worker and its accompanying plugins are installed on all cluster nodes, which leads to increased resource consumption.
 
 {/note}
 

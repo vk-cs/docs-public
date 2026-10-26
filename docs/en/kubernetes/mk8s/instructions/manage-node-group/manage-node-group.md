@@ -11,7 +11,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
 1. Set [settings](/en/kubernetes/mk8s/instructions/helpers/node-group-settings) for the node group.
@@ -40,16 +40,16 @@ Re-configuring taints can cause pods to be evicted to other nodes. If they do no
 
 {/note}
 
-Labels and taints can be set both with the interfaces supported by the VK Cloud platform (management console and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform will overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or management console.
+Labels and taints can be set both with the interfaces supported by the VK Cloud platform (management console and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or management console.
 
 {tabs}
 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Locate the necessary cluster and node group.
+1. Locate the required cluster and node group.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Labels and Taints**.
 1. Do the necessary actions.
 
@@ -106,9 +106,9 @@ The single cluster node group cannot be deleted from the management console. How
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary cluster is located.
+1. Select the project that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
-1. Locate the necessary cluster and node group.
+1. Locate the required cluster and node group.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Delete**.
 1. Click the **Confirm** button.
 

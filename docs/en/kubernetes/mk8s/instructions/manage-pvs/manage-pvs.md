@@ -18,7 +18,7 @@ Once you move a PV to your project, you cannot move it back to the [service](/en
 
 1. Confirm the operation. 
 
-Once you move the PV, it will no longer be available in the **Kubernetes clusters** → **PV disks** section and becomes available in the **Cloud Servers → Disks** section. There, you can [manage](/en/computing/iaas/instructions/volumes) it the same way as any other disk.
+Once you move the PV, it is no longer available in the **Kubernetes clusters** → **PV disks** section and becomes available in the **Cloud Servers → Disks** section. There, you can [manage](/en/computing/iaas/instructions/volumes) it the same way as any other disk.
 
 ## Deleting PVs
 

@@ -30,7 +30,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -53,7 +53,7 @@
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -138,7 +138,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
 {/tab}
 
@@ -168,7 +168,7 @@ During quick installation, the add-on settings code is not edited.
    1. Click the **Install** button on the `istio` add-on card, then click **Install addon**.
    1. Leave the parameters unchanged and click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
     
