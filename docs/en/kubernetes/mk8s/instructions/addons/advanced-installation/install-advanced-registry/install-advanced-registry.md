@@ -2,7 +2,7 @@
 
 {include(/en/_includes/_addon-prep.md)}
 
-1. [Create](/en/storage/s3/instructions/buckets/create-bucket) in the object storage bucket, which will be used to store Docker images.
+1. [Create](/en/storage/s3/instructions/buckets/create-bucket) in the object storage bucket, which is used to store Docker images.
 
    When creating, select:
 
@@ -43,12 +43,12 @@
 
 1. [Add](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) floating IP or [find](/en/networks/vnet/instructions/ip/floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
 
-   Write down this IP address. It will be used to access the Docker registry.
+   Write down this IP address. It is used to access the Docker registry.
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
 {note:warn}
-When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) are created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
 [Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on:
@@ -74,8 +74,8 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Click the **Install** button on the `docker-registry` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed.
+      - the application name
+      - the namespace where to install the add-on
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation).
 
@@ -87,7 +87,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -112,7 +112,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -139,8 +139,8 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Click the **Install** button on the `docker-registry` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed.
+      - the application name
+      - the namespace where to install the add-on
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation).
 
@@ -183,7 +183,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -230,7 +230,7 @@ Specify:
      bucket: <bucket name>
    ```
 
-1. IP address for the load balancer through which access to the service will be provided:
+1. IP address for the load balancer through which access to the service is provided:
 
    ```yaml
    service:
@@ -247,6 +247,6 @@ Once done with editing the add-on code, continue with the installation process.
 
    - Login.
    - Password.
-   - The IP address of the registry. The Docker registry URL will look like this: `<IP address>:5000`.
+   - The IP address of the registry. The Docker registry URL looks like this: `<IP address>:5000`.
 
 1. [Connect](/en/kubernetes/mk8s/connect/docker-registry) to Docker Registry.

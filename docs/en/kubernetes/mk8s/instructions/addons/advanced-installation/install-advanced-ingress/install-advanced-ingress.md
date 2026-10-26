@@ -5,7 +5,7 @@
 ## {heading(Installing add-on)[id=installing_addon]}
 
 {note:warn}
-When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
+When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) are created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
 [Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
@@ -28,9 +28,9 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
         {note:warn}
 
@@ -40,7 +40,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -65,7 +65,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -92,9 +92,9 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
@@ -141,7 +141,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -157,7 +157,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
 {note:info}
 
-During quick installation, the add-on settings code is not edited. A load balancer with a floating IP address will be created, and the Ingress controller will be accessible from the Internet.
+During quick installation, the add-on settings code is not edited. A load balancer with a floating IP address is created, and the Ingress controller is accessible from the Internet.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -177,12 +177,12 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Click the **Install** button on the `ingress-nginx` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -207,9 +207,9 @@ If this does not suit you, perform a **standard installation** or **installation
 
 ### Changing the load balancer type for the Ingress controller
 
-When installing an add-on with default parameters, a load balancer with a floating IP address is created, and the Ingress controller will be accessible from the Internet.
+When installing an add-on with default parameters, a load balancer with a floating IP address is created, and the Ingress controller is accessible from the Internet.
 
-To prevent the Ingress controller from being accessible from the Internet, specify an annotation according to which an internal load balancer will be created:
+To prevent the Ingress controller from being accessible from the Internet, specify an annotation according to which an internal load balancer is created:
 
 ```yaml
 ---
@@ -257,7 +257,7 @@ The following uses the service name `ingress-nginx` and the `ingress-nginx` name
    kubectl get svc ingress-nginx-controller -n ingress-nginx
    ```
 
-   The `EXTERNAL-IP` column will display the floating IP address assigned to the load balancer.
+   The `EXTERNAL-IP` column displays the floating IP address assigned to the load balancer.
 
 {/tab}
 

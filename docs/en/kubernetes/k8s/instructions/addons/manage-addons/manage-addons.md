@@ -9,12 +9,12 @@ In Managed Containers, you can install [add-ons](/en/kubernetes/k8s/concepts/add
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the required cluster.
 1. Go to the **Addons** tab.
 
-   If there are no add-ons installed in the cluster yet, the cards of available add-ons will be shown on this tab in the **Available addons** block.
+   If there are no add-ons installed in the cluster yet, the cards of available add-ons are shown on this tab in the **Available addons** block.
    If there are already installed add-ons in the cluster, click on the **Add addon** button and look at the cards of available add-ons.
 
 1. Click to the icon ![Information](/en/kubernetes/k8s/instructions/addons/manage-addons/assets/info_icon.svg "inline") on the add-on card to view detailed information about it.
@@ -50,12 +50,12 @@ In Managed Containers, you can install [add-ons](/en/kubernetes/k8s/concepts/add
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the required cluster.
 1. Go to the **Addons** tab.
 
-   The installed add-ons will be listed in the table. The table also shows:
+   The installed add-ons are listed in the table. The table also shows:
 
    - add-on status information: `Installing`, `Installed`, `Error`, `Deleting`.
    - Additional information about the add-on.
@@ -88,7 +88,7 @@ In Managed Containers, you can install [add-ons](/en/kubernetes/k8s/concepts/add
 
 {note:warn}
 
-When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) are created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
@@ -103,7 +103,7 @@ The procedure for installing add-ons is discussed in the [relevant section](/en/
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the required cluster.
 1. Go to the **Addons** tab.
@@ -142,7 +142,7 @@ Only an increase in the add-on version is available.
 
 {note:warn}
 
-To update some add-ons, you will first need to uninstall the previous version.
+To update some add-ons, you first need to uninstall the previous version.
 
 {/note}
 
@@ -151,7 +151,7 @@ To update some add-ons, you will first need to uninstall the previous version.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the required cluster.
 1. Go to the **Addons** tab.
@@ -195,7 +195,7 @@ This is a group operation: if necessary, you can delete several add-ons at once 
 To remove the add-on:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster will be placed.
+1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click the name of the required cluster.
 1. Go to the **Addons** tab.

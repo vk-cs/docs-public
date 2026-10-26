@@ -20,7 +20,7 @@ The [HAMi](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#hami) add-on 
     1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
     1. Find the cluster you need in the list.
 
-    1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which add-ons will be hosted.
+    1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which add-ons are hosted.
 
        If there is no such group, [add it](/en/kubernetes/mk8s/instructions/manage-node-group#add_group).
 
@@ -46,10 +46,10 @@ The [HAMi](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#hami) add-on 
     1. Click the **Install** button on the `hami` add-on card, then click **Install addon**.
     1. (Optional) Edit:
 
-        - the selected version;
-        - the application name;
-        - the name of the namespace where the add-on will be installed;
-        - the [add-on settings code](#editing_addon_code).
+        - the selected version
+        - the application name
+        - the namespace where to install the add-on
+        - the [add-on settings code](#editing_addon_code)
 
           {note:warn}
           Incorrect configuration of the add-on code might lead to issues during the installation process or render the add-on inoperable.
@@ -57,7 +57,7 @@ The [HAMi](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#hami) add-on 
 
     1. Click the **Install addon** button.
 
-       The installation of the add-on in the cluster will begin. This process can take a long time.
+       The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    {/tabs}

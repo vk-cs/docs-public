@@ -29,7 +29,7 @@ These settings are set when [creating a cluster](/en/kubernetes/k8s/instructions
 
   - **Number of nodes**: at least one node. One node does not provide high availability on the level of an individual group of nodes, two nodes or more do.
 
-  - **Enable autoscaling**: enable this option to allow [auto-scaling](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
+  - **Enable autoscaling**: enable this option to allow [auto-scaling](/en/kubernetes/k8s/concepts/architecture#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling is performed.
 
   - **Percentage of unavailable nodes when updating the cluster version**: the percentage of nodes that can be removed from the node group when [updating](/en/kubernetes/k8s/instructions/update) the cluster.
   

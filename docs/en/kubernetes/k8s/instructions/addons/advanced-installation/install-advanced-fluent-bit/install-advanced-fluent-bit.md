@@ -6,7 +6,7 @@
 
 Only [standard installation](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for the add-on.
 
-The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) controller on all nodes in the cluster, including master nodes.
+The add-on is installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) controller on all nodes in the cluster, including master nodes.
 
    {tabs}
    
@@ -20,9 +20,9 @@ The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concept
    1. Click the **Install** button on the `fluent-bit` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - The selected version
-      - The application name
-      - The namespace where the add-on will be installed
+      - the selected version
+      - the application name
+      - the namespace where to install the add-on
 
    1. Edit the [add-on settings code](#editing_addon_settings_code_during_installation): in the `Output` section set the parameters of logs delivery to the selected service. Leave other parameters at your discretion.
 
@@ -34,7 +34,7 @@ The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concept
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    

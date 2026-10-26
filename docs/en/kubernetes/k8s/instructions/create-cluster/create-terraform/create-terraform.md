@@ -4,7 +4,7 @@ Ready-to-use examples of configuration files to create different clusters are li
 
 {note:warn}
 
-When installing the cluster, a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created. When you select [add-on](/en/kubernetes/k8s/concepts/addons-and-settings/addons) NGINX Ingress Controller, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) will be created for it.
+When installing the cluster, VK Cloud creates a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers). When you select [add-on](/en/kubernetes/k8s/concepts/addons-and-settings/addons) NGINX Ingress Controller, VK Cloud also creates a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) for it.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
@@ -32,7 +32,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 ## {counter(terraform)}. Prepare the necessary data sources
 
-1. Determine what type of virtual machine will be used for the cluster master nodes:
+1. Determine what type of virtual machine to use for the cluster master nodes:
 
    1. Run the command:
 
@@ -40,7 +40,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
       openstack flavor list
       ```
 
-      The available virtual machine types will be displayed.
+      The available virtual machine types are displayed.
 
    1. Select the required virtual machine type and write its name from the **Name** column.
 
@@ -68,7 +68,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
       terraform output k8s-version-list
       ```
 
-      A list of available Kubernetes versions will be displayed.
+      A list of available Kubernetes versions is displayed.
 
    1. Select the necessary Kubernetes version and write down its version number.
 
@@ -119,8 +119,8 @@ Here:
 
 - `cluster_type` — cluster type:
 
-  - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). Fault tolerance is provided at the zone level.
-  - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
+  - `standard` (default) — all cluster master nodes are located in one [availability zone](/en/intro/start/concepts/architecture#architecture-az). Fault tolerance is provided at the zone level.
+  - `regional` — cluster master nodes are located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
 - `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](/en/kubernetes/k8s/concepts/architecture) section.
 - `labels.cluster_node_volume_type` — the volume type for the [storage](/en/kubernetes/k8s/concepts/storage#storage_types) of master nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
@@ -132,7 +132,7 @@ Here:
 
    {/note}
 
-- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "PA2"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
+- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "PA2"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones are set up automatically.
 - `network_id` and `subnet_id` are the network and subnet identifiers, respectively. They can be specified in different ways:
 
   {tabs}
@@ -217,8 +217,8 @@ Here:
 
 - `floating_ip_enabled` — assign a public IP address to the API cluster:
 
-  - `true` — when the cluster is created, a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) will be assigned to access the cluster from the Internet. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
-  - `false` — the cluster will not be assigned a floating IP address.
+  - `true` — when the cluster is created, a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) is assigned to access the cluster from the Internet. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
+  - `false` — the cluster is not assigned a floating IP address.
 
 To install add-ons in the cluster via Terraform, [get the list of availible add-ons](/en/kubernetes/k8s/instructions/addons/manage-addons#348-tabpanel-1) and [install that you need](/en/kubernetes/k8s/instructions/addons/advanced-installation).
 
@@ -253,7 +253,7 @@ This operation is described in detail in [Worker node group management](/en/kube
    terraform apply
    ```
 
-   This will start creating the Kubernetes cluster. This process can take a long time, depending on the size of the cluster.
+   This starts creating the Kubernetes cluster. This process can take a long time, depending on the size of the cluster.
 
 ## What's next?
 

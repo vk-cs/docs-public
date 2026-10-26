@@ -25,9 +25,9 @@
    1. Click the **Install** button on the `kiali` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
         {note:warn}
 
@@ -37,7 +37,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -106,7 +106,7 @@
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
@@ -133,9 +133,9 @@
    1. Click the **Install** button on the `kiali` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
@@ -176,7 +176,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -196,7 +196,7 @@
 
 {note:info}
 
-During quick installation, the add-on settings code is not edited. Grafana integration will not be available.
+During quick installation, the add-on settings code is not edited. Grafana integration is not available.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -216,12 +216,12 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Click the **Install** button on the `kiali` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -249,7 +249,7 @@ Editing the add-on code is applicable for standard installation and installation
 
 ### Setting the password to integrate with Grafana
 
-When installing an add-on with default parameters, integration with Grafana will be unavailable.
+When installing an add-on with default parameters, integration with Grafana is unavailable.
 
 To allow the integration, specify the `admin` Grafana user's password during the add-on installation. To do this, change the value of the field in the add-on settings code:
 

@@ -10,13 +10,13 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
 
 - Some cluster operations are performed only in [management console](/en/tools-for-using-services/account). For each operation, the [step-by-step instructions](/en/kubernetes/mk8s/instructions) indicate whether it can also be performed using Terraform.
 
-- Changing some parameters of an existing cluster will create a **new cluster**. The container service documentation lists only operations that can be performed on an existing cluster without creating a new cluster.
+- Changing some parameters of an existing cluster creates a **new cluster**. The container service documentation lists only operations that can be performed on an existing cluster without creating a new cluster.
 
   See [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference) for details.
 
-- If you change the settings of a cluster that is managed by Terraform in your management console, those changes will not be reflected in the Terraform configuration file.
+- If you change the settings of a cluster that is managed by Terraform in your management console, those changes are not reflected in the Terraform configuration file.
 
-  In this case, the current Terraform configuration will become obsolete, and applying it with `terraform apply` will cause the settings made to be rolled back or even render the cluster inoperable.
+  In this case, the current Terraform configuration becomes obsolete, and applying it with `terraform apply` causes the settings made to be rolled back or even renders the cluster inoperable.
 
   To manage such a cluster again using Terraform:
 
@@ -28,7 +28,7 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
         terraform apply -refresh-only
         ```
 
-        You will be prompted for infrastructure changes that will overwrite the local state.
+        Terraform prompts you to confirm infrastructure changes that overwrite the local state.
 
      1. If you are satisfied with these changes, confirm them.
 

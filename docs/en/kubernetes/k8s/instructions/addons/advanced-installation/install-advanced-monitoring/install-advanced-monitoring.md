@@ -24,9 +24,9 @@
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
         {note:warn}
 
@@ -36,7 +36,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -107,7 +107,7 @@
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that host add-ons.
 
       If there is no such group — [add it](/en/kubernetes/k8s/instructions/manage-node-group#add_group).
 
@@ -134,9 +134,9 @@
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
-      - [add-on settings code](#editing_addon_settings_code_during_installation).
+      - the application name
+      - the namespace where to install the add-on
+      - the [add-on settings code](#editing_addon_settings_code_during_installation)
 
    1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
@@ -191,7 +191,7 @@
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -212,7 +212,7 @@
 
 {note:info}
 
-During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to sign in to the Grafana web interface.
+During quick installation, the add-on settings code is not edited. A Kubernetes secret is created, containing a permanent password to sign in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -232,12 +232,12 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Click the **Install** button on the `kube-prometheus-stack` add-on card, then click **Install addon**.
    1. (Optional) Edit:
 
-      - application name;
-      - the name of the namespace where the add-on will be installed;
+      - the application name
+      - the namespace where to install the add-on
 
    1. Click the **Install addon** button.
 
-      The installation of the add-on in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster begins. This process can take a long time.
 
    {/tab}
    
@@ -267,9 +267,9 @@ If this does not suit you, perform a **standard installation** or **installation
 
 ### Setting temporary password for Grafana web interface
 
-When installing an add-on with default parameters, a Kubernetes secret will be created containing a permanent password to sign in to the Grafana web interface.
+When installing an add-on with default parameters, a Kubernetes secret is created containing a permanent password to sign in to the Grafana web interface.
 
-Also, when installing the add-on, you can specify a temporary user password. In this case, the first authorization to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the add-on settings code:
+Also, when installing the add-on, you can specify a temporary user password. In this case, the first authorization to the Grafana web interface is performed with this password, then you are prompted to change it. To do this, change the value of the field in the add-on settings code:
 
 ```yaml
 grafana:
@@ -321,7 +321,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 1. Find `kube-prometheus-stack-grafana` in the list of secrets and click on the secret name.
 1. In the **Data** block, click on the eye icon next to the `admin-password` parameter.
 
-   The password will be displayed.
+   The password is displayed.
 
 {/tab}
 
@@ -384,4 +384,4 @@ Further the `kube-prometheus-stack` service name and the `prometheus-monitoring`
    kubectl -n prometheus-monitoring exec <Grafana pod name> -- sh -c "grafana cli --debug admin reset-admin-password <new password>"
    ```
 
-   If the password is successfully reset, the command output will contain the following message: `Admin password changed successfully ✔`.
+   If the password is successfully reset, the command output contains the following message: `Admin password changed successfully ✔`.
