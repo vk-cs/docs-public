@@ -33,7 +33,7 @@ VK Security Gate — это платформа анализа безопасно
 
 {/cut}
 
-Используя сервис, вы принимаете лицензионное соглашение сервиса [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и лицензионное соглашение сервиса [VK Security Gate](../../../../start/legal/offer/private-special-conditions/policy-security-gate-usage).
+Используя сервис, вы принимаете лицензионное соглашение сервиса [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) и лицензионное соглашение сервиса [VK Security Gate](https://vkcloud-cms-prod.s3.prodcloud.vk.team/EULA_Security_Gate_fin_1_2bec12401b.pdf).
 
 Чтобы развернуть сервис VK Security Gate в проекте VK Cloud:
 
