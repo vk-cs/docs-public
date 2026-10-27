@@ -4,7 +4,7 @@
   "metaDescription": "Managed Containers сервисіндегі Kubernetes кластерлері үшін HAMi аддонын орнатыңыз: GPU бар бөлінген worker-түйіндер бойынша кезең-кезеңімен нұсқаулық",
   "sectionTitle": "HAMi",
   "icon": "",
-  "weight": 9,
+  "weight": 10,
   "uuid": "2f9b4681-d7d0-4d82-8101-360b2b81c164",
   "build": {
     "for": [

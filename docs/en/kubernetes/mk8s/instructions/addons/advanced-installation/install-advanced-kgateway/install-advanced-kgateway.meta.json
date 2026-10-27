@@ -4,7 +4,7 @@
   "metaDescription": "Installing the Kgateway add-on in Kubernetes: step-by-step instructions for VK Cloud, dedicated worker nodes and quick installation",
   "sectionTitle": "Kgateway",
   "icon": "",
-  "weight": 13,
+  "weight": 14,
   "build": {
     "for": [
       "public"

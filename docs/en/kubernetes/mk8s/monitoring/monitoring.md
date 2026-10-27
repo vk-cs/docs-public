@@ -4,7 +4,7 @@ You can use the following tools to monitor the status of a Kubernetes cluster:
 
 - [Kube Prometheus Stack monitoring add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kube_prometheus_stack).
 
-  With the add-on, you can view metrics of Kubernetes resources, down to individual pods. You can also use alerts that warn you when a metric exceeds its threshold.
+  With the add-on, you can view metrics of Kubernetes resources, down to individual pods. You can also use alerts that warn you when a metric exceeds its threshold, and [forecast](#forecasting_cluster_resource_consumption) cluster resource consumption. Forecasting is available in the add-on [version](/en/kubernetes/mk8s/concepts/versions/components) `68.3.3`.
 
 ## Cluster status dashboard
 
@@ -83,3 +83,89 @@ The dashboard indicators fall into three groups:
 Now you can work with Grafana. For example, it is possible to create and view dashboards. Preconfigured dashboards with information about various Kubernetes resources are available in the **Dashboards → Browse** side menu.
 
 Read more about working with Grafana in [official documentation](https://grafana.com/docs/grafana/latest/).
+
+## {heading(Forecast cluster resource consumption)[id=forecasting_cluster_resource_consumption]}
+
+The `kube-prometheus-stack` monitoring add-on version `68.3.3` includes built-in alerts that notify you if it forecasts that specific cluster resources will run out within a given time. The add-on also provides Grafana dashboards that show current resource consumption forecasts.
+
+The add-on builds forecasts using the [linear regression method](https://prometheus.io/docs/prometheus/latest/querying/functions/#predict_linear): the add-on builds a linear function from the metric values it collects at a given interval within a given period, and calculates the forecast as the value of this function at a given time in the future. It expresses the result as a percentage of the maximum resource capacity on the Kubernetes object.
+
+{note:warn}
+The add-on does not forecast master node objects.
+{/note}
+
+1. [Make sure](/en/kubernetes/mk8s/instructions/addons/manage-addons#viewing_addons) that you have [installed](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) version `68.3.3` of the `kube-prometheus-stack` monitoring add-on in the cluster.
+1. [Go to](/en/kubernetes/mk8s/instructions/addons/manage-addons#editing_addon_code) the `kube-prometheus-stack` add-on code editing page and make sure that the `grafana.alerts.enabled` parameter in the code is set to `true`. This value is assigned to the parameter when the add-on is installed.
+1. If this parameter was changed to `false`, set it back to `true` and save the updated settings.
+
+   {note:warn}
+   If the `grafana.alerts.enabled` parameter is disabled or the add-on code has other changes that are incompatible with the default settings, the add-on might not send resource exhaustion alerts.
+   {/note}
+
+1. [Sign in](#using_grafana) to Grafana.
+1. In the side menu, go to the **Dashboards** section.
+1. In the list of dashboards in the **VK Cloud** section, open the **K8s Resources Prediction** dashboard.
+1. View the available resource consumption forecasts:
+
+   - **CPU Leaders**: forecast of CPU consumption by worker nodes
+   - **Memory Leaders**: forecast of RAM consumption by worker nodes
+   - **Persistent Volume Leaders**: forecast of space consumption on a persistent volume ([PV](/en/kubernetes/mk8s/reference/pvs-and-pvcs))
+   - **Inode Leaders**: forecast of index descriptor (inode) consumption on a persistent volume
+
+1. (Optional) Adjust how forecasts are displayed using Grafana controls.
+1. (Optional) Change the parameters used to calculate forecasts:
+
+   - **Analysis period**: the time interval up to the current moment whose data the add-on uses to build the forecast function
+   - **Forecast horizon**: the interval between the current moment and the future moment for which the add-on calculates the forecast
+
+1. In the side menu, go to **Alerting** → **Alert rules**.
+1. In the **Grafana** block, expand the **VK Cloud > K8s Resources Prediction** folder and view the built-in resource exhaustion alerts:
+
+   - **K8sNodeCpuPrediction**: a worker node has no free CPU.
+   - **K8sNodeMemoryPrediction**: a worker node has no free RAM.
+   - **K8sPersistentVolumeCapacityPrediction**: a persistent volume has no free space.
+   - **K8sPersistentVolumeInodePrediction**: a persistent volume has no free index descriptors.
+
+   These alerts have the following parameters:
+
+   - Analysis period: `1 week`
+   - Sampling interval: `10 minutes`
+   - Forecast horizon: `1 day`
+   - Alert threshold: `100%`
+
+   You cannot change the parameters of built-in alerts, but you can create your own alert based on a built-in one.
+
+1. (Optional) Create your own alert based on a built-in one:
+
+   1. In the list of alerts, click the copy button for the built-in alert you need, for example, `K8sNodeCpuPrediction`.
+   1. Read the warning and click **Copy**.
+
+      The **Add rule** page will open. In the **2 Define query and alert condition** section, the query string will appear under the **A** label. For the `K8sNodeCpuPrediction` alert, it looks like this:
+
+      ```txt
+
+      predict_linear(avg(instance:node_cpu_utilisation:rate5m * 100  * on(instance) group_left(nodename) node_uname_info{nodename!~".*master.*"}) by (nodename) [1w:10m],86400)
+
+      ```
+
+      This query contains the following values:
+
+      - `100` — alert threshold in percent
+      - `1w` — analysis period
+      - `10m` — sampling interval
+      - `86400` — forecast horizon in seconds
+
+   1. Change the values as needed. The forecast horizon is set only in seconds, while for the analysis period and sampling interval, [other units](https://prometheus.io/docs/prometheus/latest/querying/basics/#float-literals-and-time-durations) are available.
+   1. Configure other alert parameters as described in the [official Grafana documentation](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/).
+   1. Save the changes.
+
+1. [Configure](https://grafana.com/docs/grafana/latest/alerting/configure-notifications) how Grafana delivers notifications when built-in and custom alerts fire.
+
+Forecasting setup is complete.
+
+Now you can:
+
+- receive notifications about resource exhaustion
+- when you receive a notification, view forecasts for other objects to resolve potential problems in advance
+- view current forecasts and compare them with the consumption dynamics shown on the standard Grafana dashboards
+- refine forecasting parameters based on the comparison and create your own alerts

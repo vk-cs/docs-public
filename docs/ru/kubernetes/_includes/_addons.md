@@ -667,7 +667,7 @@ Jaeger выполняет трассировку запросов на осно�
 
 Kube Prometheus Stack — система мониторинга состояния кластера и развернутых в нем сервисов, реализованная на базе [Prometheus](https://prometheus.io/) и инструмента визуализации [Grafana](https://grafana.com/). Подробнее в разделе {linkto(../../../monitoring#mk8s-monitoring-connect-grafana)[text=%text]}.
 
-{var(cloud)} предоставляет две {linkto(../../versions/components#mk8s-components-addons)[text=версии аддона Kube Prometheus Stack]}: базовую и с доработками от компании VK Tech (версия с суффиксом `vk` в номере). Аддон с доработками содержит дополнительные встроенные функции, в частности, {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера]}.
+В аддон версии `68.3.3` встроено {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера]}.
 
 {/tab}
 

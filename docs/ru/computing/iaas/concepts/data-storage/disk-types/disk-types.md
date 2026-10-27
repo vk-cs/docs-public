@@ -134,6 +134,7 @@
 |===
 
 {/cut}
+{/ifdef}
 
 {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
 В {var(cloud)} поддерживаются следующие типы дисков:

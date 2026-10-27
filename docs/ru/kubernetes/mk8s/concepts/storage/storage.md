@@ -108,16 +108,6 @@
 | GZ1                 
 | Retain
 
-| csi-ceph-ssd-ms1                
-| `ceph-ssd`
-| MS1                 
-| Delete
-
-| csi-ceph-ssd-ms1-retain         
-| `ceph-ssd`
-| MS1                 
-| Retain
-
 | csi-ceph-ssd-me1                
 |`ceph-ssd`
 | ME1                 
@@ -146,16 +136,6 @@
 | csi-high-iops-gz1-retain        
 | `high-iops`
 | GZ1                 
-| Retain
-
-| csi-high-iops-ms1               
-| `high-iops`
-| MS1                 
-| Delete
-
-| csi-high-iops-ms1-retain        
-| `high-iops`
-| MS1                 
 | Retain
 
 | csi-high-iops-me1               

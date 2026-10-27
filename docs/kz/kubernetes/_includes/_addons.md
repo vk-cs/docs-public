@@ -667,7 +667,7 @@ Jaeger-дің тұрақты жұмысын қамтамасыз ету үшін
 
 Kube Prometheus Stack — [Prometheus](https://prometheus.io/) және [Grafana](https://grafana.com/) визуализациялау құралы негізінде іске асырылған кластер күйін және оның ішінде жайылған сервистерді мониторингтеу жүйесі. Толығырақ {linkto(../../../monitoring#mk8s-monitoring-connect-grafana)[text=%text]} бөлімінен қараңыз.
 
-{var(cloud)} {linkto(../../versions/components#mk8s-components-addons)[text=Kube Prometheus Stack аддонының екі нұсқасын]} ұсынады: базалық және VK Tech компаниясының жетілдірулері бар нұсқа (`vk` жұрнағы бар нұсқа нөмірімен). Жетілдірулері бар аддонда қосымша кіріктірілген функциялар бар, атап айтқанда {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=кластер ресурстарын тұтынуды болжау]}.
+Аддонның `68.3.3` нұсқасында {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=кластер ресурстарын тұтынуды болжау]} кірістірілген.
 
 {/tab}
 

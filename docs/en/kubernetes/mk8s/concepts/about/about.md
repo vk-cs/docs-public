@@ -55,6 +55,11 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 - Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](/en/kubernetes/mk8s/monitoring).
 
+- [Forecasting of resource consumption](/en/kubernetes/mk8s/monitoring#forecasting_cluster_resource_consumption) of the cluster based on monitoring data. The `kube-prometheus-stack` monitoring add-on version `68.3.3` provides additional capabilities preconfigured in [Grafana](/en/kubernetes/mk8s/monitoring#using_grafana):
+
+  - dashboards showing current resource consumption forecasts on cluster nodes
+  - alerts that send notifications if the add-on forecasts that specific resources will run out within a given time
+
 ## What's next
 
 - [Get to know the service architecture](/en/kubernetes/mk8s/concepts/architecture).

@@ -6,7 +6,7 @@
 
 - {linkto(../concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack)[text=Аддон мониторинга Kube Prometheus Stack]}.
 
-  Аддон позволяет просматривать метрики ресурсов Kubernetes вплоть до отдельных подов, использовать алерты с оповещениями о превышении пороговых значений метрик и {linkto(#mk8s-monitoring-forecast-consumption)[text=прогнозировать]} потребление ресурсов кластера. Прогнозирование доступно только в {linkto(../concepts/versions/components#mk8s-components-addons)[text=версиях аддона]} с доработками от VK Tech (имеют `vk` в номере).
+  Аддон позволяет просматривать метрики ресурсов Kubernetes вплоть до отдельных подов, использовать алерты с оповещениями о превышении пороговых значений метрик и {linkto(#mk8s-monitoring-forecast-consumption)[text=прогнозировать]} потребление ресурсов кластера. Прогнозирование доступно в аддоне {linkto(../concepts/versions/components#mk8s-components-addons)[text=версии]} `68.3.3`.
 
 - Инструменты, встроенные в {linkto(#mk8s-monitoring-headlamp)[text=Headlamp]} — графический интерфейс (GUI) для управления кластерами Kubernetes.
 
@@ -93,7 +93,7 @@
 
 ## {heading(Прогнозирование потребления ресурсов кластера)[id=mk8s-monitoring-forecast-consumption]}
 
-В аддон мониторинга `kube-prometheus-stack` с доработками от VK Tech встроены алерты для отправки оповещений, если через заданное время прогнозируется исчерпание определенных ресурсов кластера. Этот аддон также предоставляет дашборды в Grafana, на которых отображаются текущие прогнозы потребления ресурсов.
+В аддон мониторинга `kube-prometheus-stack` версии `68.3.3` встроены алерты для отправки оповещений, если через заданное время прогнозируется исчерпание определенных ресурсов кластера. Этот аддон также предоставляет дашборды в Grafana, на которых отображаются текущие прогнозы потребления ресурсов.
 
 Аддон строит прогнозы [методом линейной регрессии](https://prometheus.io/docs/prometheus/latest/querying/functions/#predict_linear): по значениям метрики, собранным с заданным интервалом в пределах заданного периода, строится линейная функция; прогноз вычисляется как ее значение в будущем через заданное время. Полученное значение выражается в процентах от максимальной емкости ресурса на объекте Kubernetes.
 
@@ -101,7 +101,7 @@
 Прогнозирование не выполняется для объектов master-узлов.
 {/note}
 
-1. {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=Убедитесь]}, что в кластере {linkto(../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=установлена]} версия аддона мониторинга `kube-prometheus-stack` с доработками от VK Tech (с суффиксом `vk` в номере версии).
+1. {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=Убедитесь]}, что в кластере {linkto(../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=установлена]} версия аддона мониторинга `kube-prometheus-stack` `68.3.3`.
 1. {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-edit-code)[text=Перейдите]} на страницу редактирования кода аддона `kube-prometheus-stack` и убедитесь, что параметр `grafana.alerts.enabled` в коде равен `true`. Это значение присваивается параметру при установке аддона.
 1. Если этот параметр был изменен на `false`, исправьте на `true` и сохраните обновленные настройки.
 
