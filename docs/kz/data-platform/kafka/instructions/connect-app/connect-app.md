@@ -433,13 +433,37 @@ Go арқылы қосылу үшін [Sarama](https://pkg.go.dev/github.com/IBM
 
 C немесе C++ арқылы қосылу үшін [librdkafka](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html) клиенттік кітапханасын пайдаланыңыз. Мысалдарда C тілінің API-і қолданылады.
 
-1. TLS және SASL SCRAM қолдауы бар librdkafka әзірлеу құралдарын орнатыңыз. Мысалы, Ubuntu терминалында мына команданы орындаңыз:
+1. TLS және SASL SCRAM қолдауы бар librdkafka әзірлеу құралдарын орнатыңыз. Операциялық жүйеге сәйкес команданы терминалда орындаңыз:
+
+   {tabs}
+
+   {tab(Ubuntu)}
 
    ```console
    sudo apt update && sudo apt install librdkafka-dev
    ```
 
-   macOS жүйесінде кітапхананы `brew install librdkafka` командасымен, CentOS/RHEL жүйесінде `sudo yum install librdkafka-devel` командасымен орнатуға болады. Төмендегі құрастыру командалары компиляторға librdkafka тақырып файлдары мен кітапханасы қолжетімді ортаға арналған.
+   {/tab}
+
+   {tab(macOS)}
+
+   ```console
+   brew install librdkafka
+   ```
+
+   {/tab}
+
+   {tab(CentOS / Red Hat Enterprise Linux)}
+
+   ```console
+   sudo yum install librdkafka-devel
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   Төмендегі құрастыру командалары компиляторға librdkafka тақырып файлдары мен кітапханасы қолжетімді ортаға арналған.
 
 1. Қосылу коды бар `check.c` файлын жасаңыз. TLS арқылы (трафик шифрланады) немесе TLS-сіз (трафик шифрланбайды) қосылу нұсқасын таңдаңыз:
 

@@ -431,13 +431,37 @@
 
 Для подключения с помощью C или C++ используйте клиентскую библиотеку [librdkafka](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html). В примерах применяется API на C.
 
-1. Установите средства разработки librdkafka с поддержкой TLS и SASL SCRAM. Например, в терминале Ubuntu выполните команду:
+1. Установите средства разработки librdkafka с поддержкой TLS и SASL SCRAM. Выполните команду в терминале в зависимости от операционной системы:
+
+   {tabs}
+
+   {tab(Ubuntu)}
 
    ```console
    sudo apt update && sudo apt install librdkafka-dev
    ```
 
-   На macOS библиотеку можно установить командой `brew install librdkafka`, на CentOS/RHEL — `sudo yum install librdkafka-devel`. Команды сборки ниже рассчитаны на окружение, в котором компилятору доступны заголовочные файлы и библиотека librdkafka.
+   {/tab}
+
+   {tab(macOS)}
+
+   ```console
+   brew install librdkafka
+   ```
+
+   {/tab}
+
+   {tab(CentOS / Red Hat Enterprise Linux)}
+
+   ```console
+   sudo yum install librdkafka-devel
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   Команды сборки ниже рассчитаны на окружение, в котором компилятору доступны заголовочные файлы и библиотека librdkafka.
 
 1. Создайте файл `check.c` с кодом подключения. Используйте вариант с TLS (трафик шифруется) или без TLS (трафик не шифруется):
 

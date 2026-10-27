@@ -433,13 +433,37 @@ To connect with Go, use the [Sarama](https://pkg.go.dev/github.com/IBM/sarama) c
 
 To connect with C or C++, use the [librdkafka](https://docs.confluent.io/platform/current/clients/librdkafka/html/index.html) client library. The examples use its C API.
 
-1. Install the librdkafka development files with TLS and SASL SCRAM support. For example, run the following command in an Ubuntu terminal:
+1. Install the librdkafka development files with TLS and SASL SCRAM support. Run the command in a terminal for your operating system:
+
+   {tabs}
+
+   {tab(Ubuntu)}
 
    ```console
    sudo apt update && sudo apt install librdkafka-dev
    ```
 
-   On macOS, you can install the library with `brew install librdkafka`; on CentOS/RHEL, use `sudo yum install librdkafka-devel`. The build commands below require an environment where the compiler can access the librdkafka headers and library.
+   {/tab}
+
+   {tab(macOS)}
+
+   ```console
+   brew install librdkafka
+   ```
+
+   {/tab}
+
+   {tab(CentOS / Red Hat Enterprise Linux)}
+
+   ```console
+   sudo yum install librdkafka-devel
+   ```
+
+   {/tab}
+
+   {/tabs}
+
+   The build commands below require an environment where the compiler can access the librdkafka headers and library.
 
 1. Create `check.c` with the connection code. Use the TLS option (traffic is encrypted) or the non-TLS option (traffic is not encrypted):
 

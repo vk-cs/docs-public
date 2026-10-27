@@ -8,10 +8,14 @@
 
 To connect to a deployed Cloud Kafka instance from a terminal, use Kafka CLI or kcat. Choose a tool based on your task:
 
-- Kafka CLI — to connect to and administer Kafka.
-- kcat — to check the connection and work with messages from a terminal.
+- Kafka CLI — to administer Kafka and send and read messages.
+- kcat — to check the connection and send and read messages without installing Java.
 
 ## {heading(Prepare to connect)[id=kafka_connect-preparation]}
+
+{note:info}
+Java must be installed to use Kafka CLI.
+{/note}
 
 1. Install [Kafka CLI](https://kafka.apache.org/quickstart/) or [kcat](https://github.com/edenhill/kcat#install).
 
@@ -28,7 +32,7 @@ To connect to a deployed Cloud Kafka instance from a terminal, use Kafka CLI or 
    K_PASSWORD="<PASSWORD>"
    ```
 
-1. Create the `/tmp/client.properties` configuration file for a connection with TLS (traffic is encrypted) or without TLS (traffic is not encrypted):
+1. Create the `/tmp/client.properties` configuration file for a connection with or without TLS:
 
    {tabs}
 
