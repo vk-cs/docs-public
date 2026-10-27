@@ -77,7 +77,7 @@ Events that the service of [computing resource management](/en/computing/iaas/in
 |`aggregate-delete`
 |An aggregate has been deleted
 
-|`aggregate-delete`
+|`aggregate-update`
 |An aggregate has been updated
 
 |`external-event`

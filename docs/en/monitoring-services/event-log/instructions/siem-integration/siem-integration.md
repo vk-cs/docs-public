@@ -17,7 +17,7 @@ In your management console, you can change [parameters](#event_log_edit_siem_con
    - **Connection point**: enter the IP address of your SIEM system and the port open to receive messages from VK Cloud.
    - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available options: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
    - **TLS key**: enter the TLS key value from your provider in PEM format. This option is available when `TCP over TLS` is selected.
-   - **Message format**: select the format in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+   - **Message format**: {linkto(../../concepts/siem-export-format#event-log-siem-export-format)[text=select the format]} in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format)`.
 
 1. (Optional) Select the type of message filtering:
 
@@ -47,7 +47,7 @@ A page with the settings of the selected SIEM connection will open.
    - **Connection point**: enter the IP address of your SIEM system and the port open to receive messages from VK Cloud.
    - **Data transfer protocol**: select the protocol for transferring data to the SIEM system. Available options: `TCP`, `UDP`, `TCP over TLS`. To use data encryption, select `TCP over TLS`.
    - **TLS key**: enter the TLS key value from your provider in PEM format. This option is available when `TCP over TLS` is selected.
-   - **Message format**: select the format in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format`.
+   - **Message format**: {linkto(../../concepts/siem-export-format#event-log-siem-export-format)[text=select the format]} in which data will be provided to the SIEM system. Available options: `RAW (Syslog RFC5424)`, `CEF (Common Event Format)`.
 
 1. (Optional) Select the type of message filtering:
 

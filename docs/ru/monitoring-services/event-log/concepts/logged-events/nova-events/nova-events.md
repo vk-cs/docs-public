@@ -79,7 +79,7 @@
 |`aggregate-delete`
 |Удален агрегат
 
-|`aggregate-delete`
+|`aggregate-update`
 |Обновлен агрегат
 
 |`external-event`

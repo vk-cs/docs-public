@@ -92,7 +92,7 @@ Public DNS Cloud Audit-ке жіберетін оқиғалар:
 
 |DELETE<br>`/v2/dns/{DnsUuid}/srv/{SrvRecordUuid}`
 |SRV түріндегі жазбаны оның идентификаторы бойынша жою
-|`ACTION_SRV_RECORD_UPDATE`
+|`ACTION_SRV_RECORD_DELETE`
 
 3+|**TXT Record**
 

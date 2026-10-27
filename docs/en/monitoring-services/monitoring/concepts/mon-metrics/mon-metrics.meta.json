@@ -1,7 +1,7 @@
 {
   "title": "Standard metrics",
   "shortDescription": "List of metrics collected by a standard monitoring agent",
-  "metaDescription": "This article describes the standard metrics collected and displayed in VK Cloud services. By default, the standard monitoring agent collects the follow",
+  "metaDescription": "The article describes the standard metrics collected and displayed in VK Cloud services. On Linux virtual machines, the standard monitoring agent collects the foll",
   "sectionTitle": "Standard metrics",
   "icon": "",
   "weight": 2,

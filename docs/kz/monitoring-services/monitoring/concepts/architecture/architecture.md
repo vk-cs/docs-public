@@ -2,8 +2,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-## {heading(Тұжырымдамалар)[id=monitoring-architecture-concepts]}
-
 Cloud Monitoring сервисі бірнеше бөліктен тұрады:
 
 - Метрикаларды қабылдауға арналған масштабталатын API.
@@ -112,6 +110,12 @@ SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h)
 ```
 
+## {heading(PromQL сұрау тілі)[id=monitoring-mon-read-metrics]}
+
+Cloud Monitoring метрика мәндерін алу үшін PromQL сұрау тілінің ішкі жиынын қолдайтын API ұсынады.
+
+Сұрау синтаксисі, сүзгілеу операторлары және агрегаттау функциялары [Prometheus ресми құжаттамасында](https://prometheus.io/docs/prometheus/latest/querying/basics/) сипатталған.
+
 ## {heading(Агрегаттау)[id=monitoring-aggregation]}
 
 Агрегаттау процесінің негізгі сипаттамалары:
@@ -132,6 +136,32 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 
 Cloud Monitoring жүйесінде беруге және олар бойынша агрегаттауға болатын стандартты өлшем бірліктері бар:
 
-`Seconds`, `Microseconds`, `Milliseconds`, `Bytes`, `Kilobytes`, `Megabytes`, `Gigabytes`, `Terabytes`, `Bits`, `Kilobits`, `Megabits`, `Gigabits`, `Terabits`, `Percent`, `Count`, `Bytes/Second`, `Kilobytes/Second`, `Megabytes/Second`, `Gigabytes/Second`, `Terabytes/Second`, `Bits/Second`, `Kilobits/Second`, `Megabits/Second`, `Gigabits/Second`, `Terabits/Second`, `Count/Second`, `None`
+- `Seconds`,
+- `Microseconds`,
+- `Milliseconds`,
+- `Bytes`,
+- `Kilobytes`,
+- `Megabytes`,
+- `Gigabytes`,
+- `Terabytes`,
+- `Bits`,
+- `Kilobits`,
+- `Megabits`,
+- `Gigabits`,
+- `Terabits`,
+- `Percent`,
+- `Count`,
+- `Bytes/Second`,
+- `Kilobytes/Second`,
+- `Megabytes/Second`,
+- `Gigabytes/Second`,
+- `Terabytes/Second`,
+- `Bits/Second`,
+- `Kilobits/Second`,
+- `Megabits/Second`,
+- `Gigabits/Second`,
+- `Terabits/Second`,
+- `Count/Second`,
+- `None`.
 
 Егер өлшем бірлігі көрсетілмесе, `None` пайдаланылады.

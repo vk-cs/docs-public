@@ -1,14 +1,21 @@
 {
-  "title": "Service architecture",
-  "shortDescription": "Features of the implementation of the Cloud Monitoring service",
-  "metaDescription": "Cloud Monitoring consists of several parts: a scalable API for ingesting metrics,\ndistributed metric storage, a scalable API for re",
-  "sectionTitle": "Service architecture",
+  "title": "About the service",
+  "shortDescription": "How the Cloud Monitoring service is structured: its components, namespaces, labels, and PromQL query language",
+  "metaDescription": "Cloud Monitoring service: service components, metric namespaces, labels and their use in queries, PromQL query language, aggregation, and units of measurement.",
+  "sectionTitle": "About the service",
   "icon": "",
   "weight": 0,
   "uuid": "8b980499-86d8-4016-b222-7c3be4dba322",
   "build": {
     "for": [
-      "public"
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
     ]
-  }
+  },
+  "additionalUuids": [
+    "ee308a06-5eea-4d67-b01a-a1e1790e913e"
+  ]
 }

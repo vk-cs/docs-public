@@ -1,209 +1,140 @@
-By default, the standard monitoring agent collects the following information from the operating system:
+# {heading(Standard metrics)[id=monitoring-mon-metrics]}
 
-- CPU usage (plugin [cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)):
+{include(/en/_includes/_translated_by_ai.md)}
 
-  - `time_user` (float)
-  - `time_system` (float)
-  - `time_idle` (float)
-  - `time_active` (float)
-  - `time_nice` (float)
-  - `time_iowait` (float)
-  - `time_irq` (float)
-  - `time_softirq` (float)
-  - `time_steal` (float)
-  - `time_guest` (float)
-  - `time_guest_nice` (float)
-  - `usage_user` (float, percent)
-  - `usage_system` (float, percent)
-  - `usage_idle` (float, percent)
-  - `usage_active` (float)
-  - `usage_nice` (float, percent)
-  - `usage_iowait` (float, percent)
-  - `usage_irq` (float, percent)
-  - `usage_softirq` (float, percent)
-  - `usage_steal` (float, percent)
-  - `usage_guest` (float, percent)
-  - `usage_guest_nice` (float, percent)
+On Linux virtual machines, the standard monitoring agent collects the following information from the operating system:
 
-- Memory usage (plugin [mem](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem)):
+- CPU consumption ([cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu) plugin):
 
-  - `active` (integer, Darwin, FreeBSD, Linux, OpenBSD)
-  - `available` (integer)
-  - `available_percent` (float)
-  - `buffered` (integer, FreeBSD, Linux)
-  - `cached` (integer, FreeBSD, Linux, OpenBSD)
-  - `commit_limit` (integer, Linux)
-  - `committed_as` (integer, Linux)
-  - `dirty` (integer, Linux)
-  - `free` (integer, Darwin, FreeBSD, Linux, OpenBSD)
-  - `high_free` (integer, Linux)
-  - `high_total` (integer, Linux)
-  - `huge_pages_free` (integer, Linux)
-  - `huge_page_size` (integer, Linux)
-  - `huge_pages_total` (integer, Linux)
-  - `inactive` (integer, Darwin, FreeBSD, Linux, OpenBSD)
-  - `laundry` (integer, FreeBSD)
-  - `low_free` (integer, Linux)
-  - `low_total` (integer, Linux)
-  - `mapped` (integer, Linux)
-  - `page_tables` (integer, Linux)
-  - `shared` (integer, Linux)
-  - `slab` (integer, Linux)
-  - `sreclaimable` (integer, Linux)
-  - `sunreclaim` (integer, Linux)
-  - `swap_cached` (integer, Linux)
-  - `swap_free` (integer, Linux)
-  - `swap_total` (integer, Linux)
-  - `total` (integer)
-  - `used` (integer)
-  - `used_percent` (float)
-  - `vmalloc_chunk` (integer, Linux)
-  - `vmalloc_total` (integer, Linux)
-  - `vmalloc_used` (integer, Linux)
-  - `wired` (integer, Darwin, FreeBSD, OpenBSD)
-  - `write_back` (integer, Linux)
-  - `write_back_tmp` (integer, Linux)
+  - `usage_guest` (float, percent) — the share of virtual CPU operating time for guest OSes;
+  - `usage_irq` (float, percent) — the share of time spent processing hardware interrupts;
+  - `usage_iowait` (float, percent) — the share of time spent waiting for I/O;
+  - `usage_system` (float, percent) — the share of CPU time in system mode;
+  - `usage_user` (float, percent) — the share of CPU time in user mode.
 
-- OS kernel page statistics (plugin [kernel_vmstat](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kernel_vmstat)):
+- Memory consumption ([mem](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem) plugin):
 
-  - `nr_free_pages` (integer, nr_free_pages)
-  - `nr_inactive_anon` (integer, nr_inactive_anon)
-  - `nr_active_anon` (integer, nr_active_anon)
-  - `nr_inactive_file` (integer, nr_inactive_file)
-  - `nr_active_file` (integer, nr_active_file)
-  - `nr_unevictable` (integer, nr_unevictable)
-  - `nr_mlock` (integer, nr_mlock)
-  - `nr_anon_pages` (integer, nr_anon_pages)
-  - `nr_mapped` (integer, nr_mapped)
-  - `nr_file_pages` (integer, nr_file_pages)
-  - `nr_dirty` (integer, nr_dirty)
-  - `nr_writeback` (integer, nr_writeback)
-  - `nr_slab_reclaimable` (integer, nr_slab_reclaimable)
-  - `nr_slab_unreclaimable` (integer, nr_slab_unreclaimable)
-  - `nr_page_table_pages` (integer, nr_page_table_pages)
-  - `nr_kernel_stack` (integer, nr_kernel_stack)
-  - `nr_unstable` (integer, nr_unstable)
-  - `nr_bounce` (integer, nr_bounce)
-  - `nr_vmscan_write` (integer, nr_vmscan_write)
-  - `nr_writeback_temp` (integer, nr_writeback_temp)
-  - `nr_isolated_anon` (integer, nr_isolated_anon)
-  - `nr_isolated_file` (integer, nr_isolated_file)
-  - `nr_shmem` (integer, nr_shmem)
-  - `numa_hit` (integer, numa_hit)
-  - `numa_miss` (integer, numa_miss)
-  - `numa_foreign` (integer, numa_foreign)
-  - `numa_interleave` (integer, numa_interleave)
-  - `numa_local` (integer, numa_local)
-  - `numa_other` (integer, numa_other)
-  - `nr_anon_transparent_hugepages` (integer, nr_anon_transparent_hugepages)
-  - `pgpgin` (integer, pgpgin)
-  - `pgpgout` (integer, pgpgout)
-  - `pswpin` (integer, pswpin)
-  - `pswpout` (integer, pswpout)
-  - `pgalloc_dma` (integer, pgalloc_dma)
-  - `pgalloc_dma32` (integer, pgalloc_dma32)
-  - `pgalloc_normal` (integer, pgalloc_normal)
-  - `pgalloc_movable` (integer, pgalloc_movable)
-  - `pgfree` (integer, pgfree)
-  - `pgactivate` (integer, pgactivate)
-  - `pgdeactivate` (integer, pgdeactivate)
-  - `pgfault` (integer, pgfault)
-  - `pgmajfault` (integer, pgmajfault)
-  - `pgrefill_dma` (integer, pgrefill_dma)
-  - `pgrefill_dma32` (integer, pgrefill_dma32)
-  - `pgrefill_normal` (integer, pgrefill_normal)
-  - `pgrefill_movable` (integer, pgrefill_movable)
-  - `pgsteal_dma` (integer, pgsteal_dma)
-  - `pgsteal_dma32` (integer, pgsteal_dma32)
-  - `pgsteal_normal` (integer, pgsteal_normal)
-  - `pgsteal_movable` (integer, pgsteal_movable)
-  - `pgscan_kswapd_dma` (integer, pgscan_kswapd_dma)
-  - `pgscan_kswapd_dma32` (integer, pgscan_kswapd_dma32)
-  - `pgscan_kswapd_normal` (integer, pgscan_kswapd_normal)
-  - `pgscan_kswapd_movable` (integer, pgscan_kswapd_movable)
-  - `pgscan_direct_dma` (integer, pgscan_direct_dma)
-  - `pgscan_direct_dma32` (integer, pgscan_direct_dma32)
-  - `pgscan_direct_normal` (integer, pgscan_direct_normal)
-  - `pgscan_direct_movable` (integer, pgscan_direct_movable)
-  - `zone_reclaim_failed` (integer, zone_reclaim_failed)
-  - `pginodesteal` (integer, pginodesteal)
-  - `slabs_scanned` (integer, slabs_scanned)
-  - `kswapd_steal` (integer, kswapd_steal)
-  - `kswapd_inodesteal` (integer, kswapd_inodesteal)
-  - `kswapd_low_wmark_hit_quickly` (integer, kswapd_low_wmark_hit_quickly)
-  - `kswapd_high_wmark_hit_quickly` (integer, kswapd_high_wmark_hit_quickly)
-  - `kswapd_skip_congestion_wait` (integer, kswapd_skip_congestion_wait)
-  - `pageoutrun` (integer, pageoutrun)
-  - `allocstall` (integer, allocstall)
-  - `pgrotated` (integer, pgrotated)
-  - `compact_blocks_moved` (integer, compact_blocks_moved)
-  - `compact_pages_moved` (integer, compact_pages_moved)
-  - `compact_pagemigrate_failed` (integer, compact_pagemigrate_failed)
-  - `compact_stall` (integer, compact_stall)
-  - `compact_fail` (integer, compact_fail)
-  - `compact_success` (integer, compact_success)
-  - `htlb_buddy_alloc_success` (integer, htlb_buddy_alloc_success)
-  - `htlb_buddy_alloc_fail` (integer, htlb_buddy_alloc_fail)
-  - `unevictable_pgs_culled` (integer, unevictable_pgs_culled)
-  - `unevictable_pgs_scanned` (integer, unevictable_pgs_scanned)
-  - `unevictable_pgs_rescued` (integer, unevictable_pgs_rescued)
-  - `unevictable_pgs_mlocked` (integer, unevictable_pgs_mlocked)
-  - `unevictable_pgs_munlocked` (integer, unevictable_pgs_munlocked)
-  - `unevictable_pgs_cleared` (integer, unevictable_pgs_cleared)
-  - `unevictable_pgs_stranded` (integer, unevictable_pgs_stranded)
-  - `unevictable_pgs_mlockfreed` (integer, unevictable_pgs_mlockfreed)
-  - `thp_fault_alloc` (integer, thp_fault_alloc)
-  - `thp_fault_fallback` (integer, thp_fault_fallback)
-  - `thp_collapse_alloc` (integer, thp_collapse_alloc)
-  - `thp_collapse_alloc_failed` (integer, thp_collapse_alloc_failed)
-  - `thp_split` (integer, thp_split)
+  - `available` (integer) — an estimate of the amount of memory available for launching new applications without swapping to swap;
+  - `available_percent` (float) — the share of available memory;
+  - `cached` (integer) — cache of files read from disk (page cache), excluding `swap_cached` memory;
+  - `dirty` (integer) — "dirty" pages waiting to be written to disk;
+  - `free` (integer) — free memory;
+  - `used` (integer) — used memory;
+  - `used_percent` (float) — the share of used memory.
 
-- Disk information (plugin [disk](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk)):
+- Disk information ([disk](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk) plugin):
 
-  - `free` (integer, bytes)
-  - `total` (integer, bytes)
-  - `used` (integer, bytes)
-  - `used_percent` (float, percent)
-  - `inodes_free` (integer, files)
-  - `inodes_total` (integer, files)
-  - `inodes_used` (integer, files)
+  - `free` (integer, bytes) — free space in the file system;
+  - `inodes_free` (integer, files) — the number of free inodes;
+  - `used_percent` (float, percent) — the share of used space, calculated as `used / (used + free)`.
 
-- Disk I/O information (plugin [diskio](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio)):
+- Disk I/O information ([diskio](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio) plugin):
 
-  - `reads` (integer, counter)
-  - `writes` (integer, counter)
-  - `read_bytes` (integer, counter, bytes)
-  - `write_bytes` (integer, counter, bytes)
-  - `read_time` (integer, counter, milliseconds)
-  - `write_time` (integer, counter, milliseconds)
-  - `io_time` (integer, counter, milliseconds)
-  - `weighted_io_time` (integer, counter, milliseconds)
-  - `iops_in_progress` (integer, gauge)
-  - `merged_reads` (integer, counter)
-  - `merged_writes` (integer, counter)
+  - `io_time` (integer, counter, milliseconds) — time spent on I/O operations;
+  - `read_bytes` (integer, counter, bytes) — the number of bytes read;
+  - `read_time` (integer, counter, milliseconds) — time spent on read operations;
+  - `reads` (integer, counter) — the number of completed read operations;
+  - `weighted_io_time` (integer, counter, milliseconds) — weighted I/O time reflecting both the duration of operations and the accumulated queue;
+  - `write_bytes` (integer, counter, bytes) — the number of bytes written;
+  - `write_time` (integer, counter, milliseconds) — time spent on write operations;
+  - `writes` (integer, counter) — the number of completed write operations.
 
-- Information about the network subsystem operation within the OS (plugin [net](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md)):
+- Information about the network subsystem within the OS ([net](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/README.md) plugin):
 
-  - `bytes_sent` — the total number of bytes sent by the interface;
-  - `bytes_recv` — the total number of bytes received by the interface;
-  - `packets_sent` — the total number of packets sent by the interface;
-  - `packets_recv` — the total number of packets received by the interface;
-  - `err_in` — the total number of receive errors detected by the interface;
-  - `err_out` — the total number of transmit errors detected by the interface;
-  - `drop_in` — the total number of received packets dropped by the interface;
-  - `drop_out` — the total number of transmitted packets dropped by the interface.
+  - `bytes_recv` — the total number of bytes received by the network interface;
+  - `bytes_sent` — the total number of bytes sent by the network interface;
+  - `drop_in` — the total number of received packets dropped;
+  - `drop_out` — the total number of sent packets dropped;
+  - `err_in` — the total number of errors when receiving data;
+  - `err_out` — the total number of errors when sending data;
+  - `packets_recv` — the total number of packets received by the network interface;
+  - `packets_sent` — the total number of packets sent by the network interface.
 
-- Information from [NetStat](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NETSTAT_README.md):
+- Information from [NetStat](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/netstat/README.md):
 
-  - `tcp_established`
-  - `tcp_syn_sent`
-  - `tcp_syn_recv`
-  - `tcp_fin_wait1`
-  - `tcp_fin_wait2`
-  - `tcp_time_wait`
-  - `tcp_close`
-  - `tcp_close_wait`
-  - `tcp_last_ack`
-  - `tcp_listen`
-  - `tcp_closing`
-  - `tcp_none`
+  - `tcp_established` — the number of established connections (ESTABLISHED).
+
+- GPU metrics ([nvidia_smi](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/nvidia_smi) plugin) — collected only on GPU virtual machines if the `nvidia-smi` utility is installed:
+
+  - `clocks_current_graphics` (integer) — the current graphics core frequency (MHz);
+  - `clocks_current_memory` (integer) — the current video memory frequency (MHz);
+  - `fan_speed` (float, percent) — the GPU fan rotation speed;
+  - `memory_free` (integer) — free GPU memory;
+  - `memory_total` (integer) — total GPU memory;
+  - `memory_used` (integer) — used GPU memory;
+  - `pcie_link_gen_current` (integer) — the current PCIe interface generation;
+  - `pcie_link_width_current` (integer) — the current PCIe link width (the number of active lanes);
+  - `power_draw` (float) — GPU power consumption (W);
+  - `remapped_rows_uncorrectable` (integer) — the number of video memory rows remapped due to uncorrectable errors (row remapping);
+  - `retired_pages_double_bit` (integer) — the number of GPU memory pages retired due to double bit errors (ECC);
+  - `temperature_gpu` (integer) — GPU temperature (°C);
+  - `utilization_gpu` (float, percent) — GPU utilization;
+  - `utilization_memory` (float, percent) — GPU memory utilization.
+
+On Windows virtual machines, the agent collects Windows performance counter metrics ([win_perf_counters](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/win_perf_counters) plugin). For objects with multiple instances (CPU cores, disks, network interfaces), values are collected for each instance separately, and for the processor they are also collected in total (`_Total`). Counters are grouped by monitoring areas:
+
+- Processor usage (`win_cpu` group):
+
+  - `Percent_DPC_Time` — the share of time spent processing deferred procedure calls (DPC);
+  - `Percent_Idle_Time` — the share of processor idle time;
+  - `Percent_Interrupt_Time` — the share of time spent processing hardware interrupts;
+  - `Percent_Privileged_Time` — the share of time executing in privileged mode (kernel);
+  - `Percent_Processor_Time` — processor load: the share of time executing non-idle threads;
+  - `Percent_User_Time` — the share of time executing in user mode.
+
+- Logical disks (`win_disk` group):
+
+  - `Current_Disk_Queue_Length` — the disk request queue length;
+  - `Free_Megabytes` — free disk space, MB;
+  - `Percent_Disk_Read_Time` — the share of time servicing read operations;
+  - `Percent_Disk_Time` — the share of time the disk services requests;
+  - `Percent_Disk_Write_Time` — the share of time servicing write operations;
+  - `Percent_Free_Space` — the share of free disk space;
+  - `Percent_Idle_Time` — the share of disk idle time.
+
+- Physical disks (`win_diskio` group):
+
+  - `Current_Disk_Queue_Length` — the disk request queue length;
+  - `Disk_Read_Bytes_persec` — the read speed, bytes/s;
+  - `Disk_Reads_persec` — the number of read operations per second;
+  - `Disk_Write_Bytes_persec` — the write speed, bytes/s;
+  - `Disk_Writes_persec` — the number of write operations per second;
+  - `Percent_Disk_Read_Time` — the share of time servicing read operations;
+  - `Percent_Disk_Time` — the share of time the disk services requests;
+  - `Percent_Disk_Write_Time` — the share of time servicing write operations.
+
+- Network interfaces (`win_net` group):
+
+  - `Bytes_Received_persec` — the data reception speed, bytes/s;
+  - `Bytes_Sent_persec` — the data transmission speed, bytes/s;
+  - `Packets_Outbound_Discarded` — the number of outbound packets discarded;
+  - `Packets_Outbound_Errors` — the number of packet transmission errors;
+  - `Packets_Received_Discarded` — the number of received packets discarded;
+  - `Packets_Received_Errors` — the number of packet reception errors;
+  - `Packets_Received_persec` — the number of packets received per second;
+  - `Packets_Sent_persec` — the number of packets sent per second.
+
+- System activity (`win_system` group):
+
+  - `Context_Switches_persec` — the number of context switches per second;
+  - `Processor_Queue_Length` — the length of the thread queue waiting for the processor to become available;
+  - `System_Calls_persec` — the number of system calls per second;
+  - `System_Up_Time` — the system uptime since boot.
+
+- Memory (`win_mem` group):
+
+  - `Available_Bytes` — the amount of available memory, bytes;
+  - `Cache_Faults_persec` — the number of file cache page accesses per second that required searching for a page outside the cache;
+  - `Demand_Zero_Faults_persec` — the number of page faults per second where the page is filled with zeros without reading from disk;
+  - `Page_Faults_persec` — the total number of page faults per second;
+  - `Pages_persec` — the number of pages read from or written to disk per second to resolve page faults;
+  - `Pool_Nonpaged_Bytes` — the size of the kernel non-paged memory pool, bytes;
+  - `Pool_Paged_Bytes` — the size of the kernel paged memory pool, bytes;
+  - `Standby_Cache_Core_Bytes` — the size of the kernel branch of the standby cache, bytes;
+  - `Standby_Cache_Normal_Priority_Bytes` — the size of the normal priority branch of the standby cache, bytes;
+  - `Standby_Cache_Reserve_Bytes` — the size of the reserve branch of the standby cache, bytes;
+  - `Transition_Faults_persec` — the number of page faults per second resolved without reading from disk (the page is already in memory or in a transitional state).
+
+- Swap file (`win_swap` group):
+
+  - `Percent_Usage` — the share of used space in the swap file.

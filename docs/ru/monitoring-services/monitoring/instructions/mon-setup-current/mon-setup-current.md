@@ -31,7 +31,7 @@
    -H "content-type: application/json" \
    -H "X-Auth-Token: <токен доступа X-Subject-Token>" \
    -d '{"instance_id":"<ID виртуальной машины>", "capabilities":["telegraf"], "os_type":"linux"}' \
-   -X POST  https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link
+   -X POST  https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link
    ```
 
    {/tab}
@@ -61,7 +61,7 @@
       ```console
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
-      -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
+      -Uri https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link `
       -Headers @{'X-Auth-Token' = '<токен доступа X-Subject-Token>'} `
       -Body $params | Select-Object -Expand Content
       ```
@@ -77,7 +77,7 @@
    {tab(Пример для Linux)}
 
    ```console
-   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
+   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
    ```
 
    {/tab}
@@ -85,7 +85,7 @@
    {tab(Пример для Windows (powershell))}
 
    ```console
-   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
+   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
    ```
 
    {/tab}
