@@ -445,44 +445,6 @@ The password must be at least 8 characters long and contain letters of the Latin
 
 {/note}
 
-## Password recovery
-
-Password recovery generated for the default user is available only for Windows virtual machines created on a private network. To get a password, you need the private key of the key pair selected when creating the VM.
-
-{note:warn}
-
-If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#password).
-
-{/note}
-
-{tabs}
-
-{tab(Management console)}
-
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-2. Go to **Cloud Servers → Virtual machines**.
-3. Open the password receipt window using one of the following methods.
-
-    - Through the context menu:
-
-        1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
-        1. Select **Get password**.
-
-    - On the virtual machine page:
-
-        1. In the list of virtual machines, click on the name of the VM whose state you want to change.
-        2. On the VM page, go to the **General information** tab.
-        3. Above the table with VM parameters, click **More**.
-        4. Choose **Get password**.
-
-4. In the window that opens, click **Private key file** or paste the contents of the key into the **Private key** field.
-5. Click **Decrypt password**.
-6. A field will appear in the window **Password**. Copy the password by clicking the icon in the field.
-
-{/tab}
-
-{/tabs}
-
 ## Restoring VM access by key
 
 To restore access to a Linux virtual machine via SSH using a key pair, you need to know the password of the OS user.

@@ -23,7 +23,7 @@
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Убедитесь]}, что виртуальная машина запущена.
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Убедитесь]}, что вы можете получить доступ к VNC-консоли виртуальной машины и авторизоваться в ней.
 
-   Если это необходимо, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password-recovery)[text=восстановите пароль]} для логина.
+   Если это необходимо, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=измените пароль]} для логина.
 
 ## {heading(1. Проверьте настройки сетевого интерфейса)[id=iaas-linux-vm-network-settings-check]}
 
