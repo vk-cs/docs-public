@@ -5,7 +5,7 @@
   "sectionTitle": "Формат событий при экспорте в SIEM",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "2763f564-c220-4c8c-b258-ec300ddca42e",
   "build": {
     "for": [
       "public"

@@ -5,7 +5,7 @@
   "sectionTitle": "SIEM-ге экспорттау кезіндегі оқиғалар форматы",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "50b05a03-3a58-427c-a903-17ab8f5ba462",
   "build": {
     "for": [
       "public"

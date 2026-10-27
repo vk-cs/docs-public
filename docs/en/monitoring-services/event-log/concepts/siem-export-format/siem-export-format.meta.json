@@ -5,7 +5,7 @@
   "sectionTitle": "Event format for SIEM export",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "3865ad03-9c77-42c0-b605-9fdd35e734f7",
   "build": {
     "for": [
       "public"

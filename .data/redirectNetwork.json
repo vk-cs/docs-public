@@ -13927,7 +13927,7 @@
   },
   {
     "source": "/en/manage/monitoring/monitoring-dash/mon-read-metrics",
-    "destination": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
@@ -13981,7 +13981,7 @@
   },
   {
     "source": "/ru/manage/monitoring/monitoring-dash/mon-read-metrics",
-    "destination": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
@@ -24733,7 +24733,7 @@
   },
   {
     "source": "/en/manage/monitoring/concepts/mon-read-metrics",
-    "destination": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
@@ -24919,7 +24919,7 @@
   },
   {
     "source": "/ru/manage/monitoring/concepts/mon-read-metrics",
-    "destination": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
@@ -34286,6 +34286,24 @@
   {
     "source": "/en/monitoring-services/alerting/instructions/notification/notification-edit",
     "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/offer/private-special-conditions/policy-security-gate-usage",
+    "destination": "/ru/start/legal/offer/private-special-conditions",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   }
