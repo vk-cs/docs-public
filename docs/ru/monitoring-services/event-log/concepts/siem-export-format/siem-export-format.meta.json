@@ -1,0 +1,14 @@
+{
+  "title": "Формат событий при экспорте в SIEM",
+  "shortDescription": "Как поля события Cloud Audit отображаются в сообщения Syslog и CEF при экспорте в SIEM",
+  "metaDescription": "Формат событий Cloud Audit при экспорте в SIEM: сопоставление полей события полям сообщений Syslog (RFC 5424) и CEF, примеры сообщений для настройки парсеров SIEM-систем.",
+  "sectionTitle": "Формат событий при экспорте в SIEM",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

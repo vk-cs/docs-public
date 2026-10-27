@@ -28,7 +28,7 @@ If the **Configuring monitoring** tab is missing:
    -H "content-type: application/json" \
    -H "X-Auth-Token: <access token X-Subject-Token>" \
    -d '{"instance_id":"<virtual machine ID>", "capabilities":["telegraf"], "os_type":"linux"}' \
-   -X POST  https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link
+   -X POST  https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link
    ```
 
    {/tab}
@@ -58,7 +58,7 @@ If the **Configuring monitoring** tab is missing:
       ```console
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
-      -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
+      -Uri https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link `
       -Headers @{'X-Auth-Token' = '<access token X-Subject-Token>'} `
       -Body $params | Select-Object -Expand Content
       ```
@@ -74,7 +74,7 @@ If the **Configuring monitoring** tab is missing:
    {tab(Example for Linux)}
 
    ```console
-   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | sudo bash
+   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | sudo bash
    ```
 
    {/tab}
@@ -82,7 +82,7 @@ If the **Configuring monitoring** tab is missing:
    {tab(Example for Windows (powershell))}
 
    ```console
-   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | iex
+   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/monitoring/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<virtual machine ID> | iex
    ```
 
    {/tab}

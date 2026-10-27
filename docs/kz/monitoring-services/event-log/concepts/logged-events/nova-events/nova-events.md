@@ -82,7 +82,7 @@
 |`aggregate-delete`
 |Агрегат жойылды
 
-|`aggregate-delete`
+|`aggregate-update`
 |Агрегат жаңартылды
 
 |`external-event`

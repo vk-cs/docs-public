@@ -88,7 +88,7 @@ Events that Public DNS sends to Cloud Audit:
 
 |DELETE<br>`/v2/dns/{DnsUuid}/srv/{SrvRecordUuid}`
 |Removing an SRV-record by its ID
-|`ACTION_SRV_RECORD_UPDATE`
+|`ACTION_SRV_RECORD_DELETE`
 
 3+|**TXT Record**
 

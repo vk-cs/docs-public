@@ -62,7 +62,7 @@ You can visualize resource metrics by creating a chart using the parameter const
             * **Gauge** — the value on a scale with color zones (green, yellow, red).
             * **Binary** — one of the two states — true or false — based on the query result.
 
-    1. In the **Query body** field, enter the query for metrics. Use the [PromQL syntax](/en/monitoring-services/monitoring/concepts/mon-read-metrics).
+    1. In the **Query body** field, enter the query for metrics. Use the [PromQL syntax](/en/monitoring-services/monitoring/concepts/architecture).
     1. Click **Create**.
 
     {/tab}

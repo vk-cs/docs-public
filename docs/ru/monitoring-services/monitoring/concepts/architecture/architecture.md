@@ -1,6 +1,4 @@
-# {heading(Архитектура сервиса)[id=monitoring-architecture]}
-
-## {heading(Концепции)[id=monitoring-architecture-concepts]}
+# {heading(О сервисе)[id=monitoring-architecture]}
 
 Сервис Cloud Monitoring состоит из нескольких частей:
 
@@ -110,6 +108,12 @@ SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h)
 ```
 
+## {heading(Язык запросов PromQL)[id=monitoring-mon-read-metrics]}
+
+Для получения значений метрик Cloud Monitoring предоставляет API с поддержкой подмножества языка запросов PromQL.
+
+Синтаксис запросов, операторы фильтрации и функции агрегации описаны в [официальной документации Prometheus](https://prometheus.io/docs/prometheus/latest/querying/basics/).
+
 ## {heading(Агрегирование)[id=monitoring-aggregation]}
 
 Основные характеристики процесса агрегирования:
@@ -130,6 +134,32 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 
 В Cloud Monitoring есть стандартные единицы измерений, которые можно передавать и по которым можно агрегировать:
 
-`Seconds`, `Microseconds`, `Milliseconds`, `Bytes`, `Kilobytes`, `Megabytes`, `Gigabytes`, `Terabytes`, `Bits`, `Kilobits`, `Megabits`, `Gigabits`, `Terabits`, `Percent`, `Count`, `Bytes/Second`, `Kilobytes/Second`, `Megabytes/Second`, `Gigabytes/Second`, `Terabytes/Second`, `Bits/Second`, `Kilobits/Second`, `Megabits/Second`, `Gigabits/Second`, `Terabits/Second`, `Count/Second`, `None`
+- `Seconds`, 
+- `Microseconds`, 
+- `Milliseconds`, 
+- `Bytes`, 
+- `Kilobytes`, 
+- `Megabytes`, 
+- `Gigabytes`, 
+- `Terabytes`, 
+- `Bits`, 
+- `Kilobits`, 
+- `Megabits`, 
+- `Gigabits`, 
+- `Terabits`, 
+- `Percent`, 
+- `Count`, 
+- `Bytes/Second`, 
+- `Kilobytes/Second`, 
+- `Megabytes/Second`, 
+- `Gigabytes/Second`, 
+- `Terabytes/Second`, 
+- `Bits/Second`, 
+- `Kilobits/Second`, 
+- `Megabits/Second`, 
+- `Gigabits/Second`, 
+- `Terabits/Second`, 
+- `Count/Second`, 
+- `None`.
 
 Если единица измерений не указана, используется `None`.

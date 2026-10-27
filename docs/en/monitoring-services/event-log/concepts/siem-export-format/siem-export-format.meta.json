@@ -1,0 +1,14 @@
+{
+  "title": "Event format for SIEM export",
+  "shortDescription": "How Cloud Audit event fields are mapped to Syslog and CEF messages when exported to a SIEM",
+  "metaDescription": "Cloud Audit event format for SIEM export: mapping of event fields to Syslog (RFC 5424) and CEF message fields, message examples for configuring SIEM system parsers.",
+  "sectionTitle": "Event format for SIEM export",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
