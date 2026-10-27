@@ -26,7 +26,7 @@ The described approaches can also be used when access is lost to another applica
 
 1. [Make sure](../../instructions/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in.
 
-   If necessary, [restore password](../../instructions/vm/vm-manage#password) for authorization.
+   If necessary, [change the password](../../instructions/vm/vm-manage#password) for authorization.
 
 1. Get information about the configuration of the virtual machine network interface:
 

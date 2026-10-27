@@ -80,7 +80,7 @@ SSH — самый распространенный и безопасный сп
       1. {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Создайте новую]} или {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net)[text=подключите уже существующую]} ВМ с параметрами:
 
          - **Сеть**: выберите ту же сеть, к которой подключен сервер Bare Metal.
-         - **Назначить внешний IP-адрес**: включите эту опцию. К ВМ будет подключен {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}.
+         - **Назначить внешний IP**: включите эту опцию. К ВМ будет подключен {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}.
 
       1. Проверьте, что подключение к промежуточному серверу по внешнему IP-адресу работает.
    
@@ -158,7 +158,7 @@ SSH — самый распространенный и безопасный сп
       1. {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Создайте новую]} или {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net)[text=подключите уже существующую]} ВМ с параметрами:
 
          - **Сеть**: выберите ту же сеть, к которой подключен сервер Bare Metal.
-         - **Назначить внешний IP-адрес**: включите эту опцию. К ВМ будет подключен {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}.
+         - **Назначить внешний IP**: включите эту опцию. К ВМ будет подключен {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]}.
 
       1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix-os)[text=Проверьте]} что подключение к промежуточному серверу по внешнему IP работает.
    

@@ -25,7 +25,7 @@
 1. [Көз жеткізіңіз](../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart), виртуалды машина іске қосылғанына.
 1. [Көз жеткізіңіз](../../instructions/vm/vm-console#vm-console-vnc), виртуалды машинаның VNC-консоліне қол жеткізіп, онда авторизациялана алатыныңызға.
 
-   Қажет болса, логин үшін [құпиясөзді қалпына келтіріңіз](../../instructions/vm/vm-manage#iaas-vm-manage-password-recovery).
+   Қажет болса, логин үшін [құпиясөзді өзгертіңіз](../../instructions/vm/vm-manage#iaas-vm-password).
 
 ## {heading(1. Желілік интерфейс баптауларын тексеріңіз)[id=iaas-linux-vm-network]}
 

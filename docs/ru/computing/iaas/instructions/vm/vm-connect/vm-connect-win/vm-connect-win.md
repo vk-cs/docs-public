@@ -26,7 +26,7 @@ VK Cloud предоставляет {linkto(../../../../../../networks/dns/instr
 
 1. {linkto(../../../../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text=Узнайте]} имя созданного по умолчанию пользователя ОС.
 1. {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=Установите]} пароль для входа в ОС и запишите имя пользователя и пароль.
-1. Если пароль был утрачен, {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=сбросьте]} или {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password-recovery)[text=восстановите]} его.
+1. Если пароль был утрачен, {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=сбросьте]} его.
 
 ## {heading({counter(vm_win)}. Подключитесь к ВМ)[id=iaas-vm-connect-win-vm]}
 
