@@ -43,17 +43,24 @@
    1. **Hyper-V** опциясын жалаушамен белгілеп, **ОК** батырмасын басыңыз.
    1. Компьютерді қайта іске қосыңыз.
 
-1. Windows Powershell бағдарламасының нұсқасын 4 немесе одан жоғары нұсқаға жаңартыңыз.
+1. Windows PowerShell 5.1 немесе одан жоғары нұсқа қолданылатынына көз жеткізіңіз. Бұл нұсқа Windows 10/11 және Windows Server 2016-дан бастап алдын ала орнатылған. Windows отбасының алдыңғы нұсқаларында әдепкі бойынша одан ескі нұсқа қолданылады.
 
-   1. Ағымдағы нұсқаны тексеріңіз. Ол үшін Windows PowerShell-ді іске қосып, команданы орындаңыз: `$PSVersionTable.PSVersion` немесе `get-host`.
-   1. Егер нұсқа төртіншіден төмен болса, Windows PowerShell-дің соңғы нұсқасын [Microsoft ресми сайтынан](https://aka.ms/PSWindows) орнатыңыз немесе ішкі ресурстан жаңартуды орнату үшін ұйымыңыздың жүйелік әкімшісіне жүгініңіз.
+   1. Ағымдағы нұсқаны Windows PowerShell-де `$PSVersionTable.PSVersion` немесе `get-host` командасын орындап тексеріңіз.
+   1. Егер нұсқа 5.1-ден төмен болса, [Windows Management Framework 5.1](https://aka.ms/wmf51download) орнатыңыз.
 
 1. Windows Assessment and Deployment Kit (ADK) құралдар жиынтығын орнатыңыз.
 
    1. ADK орнатылғанын тексеріңіз. Ол үшін басқару тақтасындағы **Программы и компоненты** бөліміне өтіп, **Windows Assessment and Deployment Kit** бағдарламасын табыңыз.
    1. Егер бұл бағдарлама болмаса, ADK-ны [ресми сайттан](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) жүктеп алып, орнатыңыз. Орнату кезінде **Windows Assessment Toolkit** компонентінен басқа барлық компоненттерді жалаушамен таңдаңыз.
 
-1. [VirtIO (KVM) драйверлерін](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/virtio-win.iso) жүктеп алыңыз.
+1. [VirtIO (KVM) драйверлерін](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/) жүктеп алыңыз.
+
+   Образдарды жинау үшін мына virtio-win драйверлерінің нұсқалары пайдаланылады:
+
+   - Windows Server 2012 R2 — 0.1.215;
+   - Windows Server 2016, 2019 және 2022 — 0.1.225;
+   - Windows Server 2025 — 0.1.285.
+
 1. Windows образдарын жасауды автоматтандыру құралы — Windows Imaging Tools репозиторийінің [архивін](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip) жүктеп алыңыз.
 1. Windows жаңартуларын басқару модулі — WindowsUpdateCLI репозиторийінің [архивін](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip) жүктеп алыңыз.
 

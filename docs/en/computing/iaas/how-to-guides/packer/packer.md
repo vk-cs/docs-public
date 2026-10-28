@@ -1,4 +1,4 @@
-Packer allows you to create virtual machine images with the necessary parameters using a configuration file. The Alt Linux P9 OS image in QCOW format will be used as an example.
+Packer allows you to create virtual machine images with the necessary parameters using a configuration file. The Alt Linux 10 OS image in QCOW format will be used as an example.
 
 ## Preparatory steps
 
@@ -11,7 +11,7 @@ Packer allows you to create virtual machine images with the necessary parameters
    {/note}
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
-1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
+1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p10/images/cloud/x86_64/) OS Alt Linux 10 to your computer (file `alt-p10-cloud-x86_64.qcow2`).
 
 ## 1. Convert image to RAW format
 
@@ -42,7 +42,7 @@ Use the utility `qemu-img`:
 1. Run the file conversion using the command:
 
     ```console
-    qemu-img convert -f qcow2 -O raw alt-p9-cloud-x86_64.qcow2 alt-p9-cloud-x86_64.raw
+    qemu-img convert -f qcow2 -O raw alt-p10-cloud-x86_64.qcow2 alt-p10-cloud-x86_64.raw
     ```
 
     The syntax of the conversion command is given in the [official QEMU documentation](https://www.qemu.org/docs/master/tools/qemu-img.html).
@@ -113,7 +113,7 @@ Import the image according to the [instructions](../../instructions/images/image
 
       source "openstack" "altlinux" {
         flavor       = "STD3-2-6"
-        image_name   = "Alt-Linux-P9-Starter-Kit"
+        image_name   = "Alt-Linux-P10"
         source_image = "${var.source_image}"
         config_drive            = "true"
         networks = ["${var.network_id}"]
@@ -177,14 +177,14 @@ Import the image according to the [instructions](../../instructions/images/image
     --property hw_watchdog_action='reset' \
     --property hw_qemu_guest_agent='yes' \
     --property os_require_quiesce='yes' \
-    --property mcs_name='Alt Linux P9 Starter Kit' \
+    --property mcs_name='Alt Linux 10' \
     --property mcs_os_distro='debian' \
     --property mcs_os_type='linux' \
-    --property mcs_os_version='P9' \
+    --property mcs_os_version='P10' \
     --property os_admin_user='altlinux' \
-    --property os_distro='altlinux-p9' \
+    --property os_distro='altlinux-p10' \
     --property os_type='linux' \
-    --property os_version='p9' \
+    --property os_version='p10' \
     c6320138-035f-40d8-XXXX-e814edb2ce5f
     ```
 
@@ -222,9 +222,9 @@ Import the image according to the [instructions](../../instructions/images/image
     | id               | c6320138-035f-40d8-XXXX-e814edb2ce5f                 |
     | min_disk         | 0                                                    |
     | min_ram          | 0                                                    |
-    | name             | Alt-Linux-P9-Starter-Kit                             |
+    | name             | Alt-Linux-P10                             |
     | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
-    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', hw_video_model='qxl', hw_watchdog_action='reset', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', mcs_os_distro='debian', mcs_os_type='linux', mcs_os_version='P9', os_admin_user='altlinux', os_distro='altlinux-p9', os_require_quiesce='True', os_type='linux', os_version='p9', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
+    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', hw_video_model='qxl', hw_watchdog_action='reset', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux 10', mcs_os_distro='debian', mcs_os_type='linux', mcs_os_version='P10', os_admin_user='altlinux', os_distro='altlinux-p10', os_require_quiesce='True', os_type='linux', os_version='p10', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p10-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
     | protected        | False                                                |
     | schema           | /v2/schemas/image                                    |
     | size             | 1653604352                                           |

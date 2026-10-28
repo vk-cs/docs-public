@@ -10,9 +10,12 @@
 | --- | --- | --- |
 | Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz <br> Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz | Intel Cascade Lake (Intel Xeon Gen 2) | Әдепкі бойынша |
 | Intel Xeon Gold 6338 @ 2.0GHz <br> Intel Xeon Platinum 8380 CPU @ 2.3GHz | Intel Ice Lake (Intel Xeon Gen 3) | Әдепкі бойынша |
-| Intel(R) Xeon(R) Gold 6230 CPU @ 3.40GHz  <br> Intel(R) Xeon(R) Gold 6238R CPU @ 3.70GHz <br> Intel(R) Xeon(R) Platinum 8380 CPU @ 3.4GHz | Жоғары өнімді процессорлар | Сұрау бойынша |
+| Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz <br> (Turbo Boost режимінде 3.40GHz) <br> Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz <br> (Turbo Boost режимінде 3.70GHz) <br> Intel(R) Xeon(R) Platinum 8380 CPU @ 2.30GHz <br> (Turbo Boost режимінде 3.40GHz) | Жоғары өнімді процессорлар | Сұрау бойынша |
 | AMD EPYC 7662 | Тек GPU бар кейбір виртуалды машиналар үшін | Сұрау бойынша |
 
 Әдепкі бойынша қолжетімді конфигурациялар стандартты процессорлары бар серверлерде ВМ жасауға мүмкіндік береді.
 
 Жоғары өнімді процессорларға қол жеткізу үшін [техникалық қолдауға хабарласыңыз](/kz/contacts). Жоғары өнімді процессоры бар виртуалды машинаның құны әрбір сұрау үшін жеке есептеледі.
+
+ВМ орналасқан процессор буыны ВМ-нің {linkto(../../vm/flavor#iaas-concepts-vm-flavor)[text=конфигурация шаблонымен]} (flavor) анықталады. Жоғары өнімді CPU бар шаблондар сұрау бойынша қолжетімді және ВМ конфигурациясын жасау немесе өзгерту кезінде таңдалады.
+

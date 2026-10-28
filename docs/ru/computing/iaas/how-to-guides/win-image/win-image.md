@@ -41,17 +41,24 @@
    1. Выберите с помощью флажка опцию **Hyper-V** и нажмите кнопку **ОК**.
    1. Перезапустите компьютер.
 
-1. Обновите версию программы Windows Powershell до версии 4 или выше.
+1. Убедитесь, что используется Windows PowerShell 5.1 или выше. Эта версия предустановлена, начиная с Windows 10/11 и Windows Server 2016. В предыдущих версиях ОС семейства Windows по умолчанию используется более старая версия.
 
-   1. Проверьте текущую версию. Для этого запустите Windows PowerShell и выполните команду: `$PSVersionTable.PSVersion` или `get-host`.
-   1. Если версия ниже четвертой, установите последнюю версию Windows PowerShell с [официального сайта Microsoft](https://aka.ms/PSWindows) или обратитесь к системному администратору вашей организации для установки обновления с внутреннего ресурса.
+   1. Проверьте текущую версию, выполнив в Windows PowerShell команду `$PSVersionTable.PSVersion` или `get-host`.
+   1. Если версия ниже 5.1, установите [Windows Management Framework 5.1](https://aka.ms/wmf51download).
 
 1. Установите набор инструментов Windows Assessment and Deployment Kit (ADK).
 
    1. Проверьте, установлен ли ADK. Для этого перейдите в панель управления в раздел **Программы и компоненты** и найдите программу **Windows Assessment and Deployment Kit**.
    1. Если этой программы нет, скачайте ADK с [официального сайта](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) и установите. Во время установки выберите с помощью флажков все компоненты, кроме **Windows Assessment Toolkit**.
 
-1. [Скачайте](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/virtio-win.iso) драйверы VirtIO (KVM).
+1. [Скачайте](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/) драйверы VirtIO (KVM).
+
+   Для сборки образов используются следующие версии драйверов virtio-win:
+
+   - Windows Server 2012 R2 — 0.1.215, 
+   - Windows Server 2016, 2019 и 2022 — 0.1.225, 
+   - Windows Server 2025 — 0.1.285.
+
 1. [Скачайте](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip) архив репозитория Windows Imaging Tools — инструмента для автоматизации создания Windows-образов.
 1. [Скачайте](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip) архив репозитория WindowsUpdateCLI — модуля для управления обновлениями Windows.
 

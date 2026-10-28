@@ -1,13 +1,13 @@
 {
   "title": "Error 403 when deleting a VM image",
   "shortDescription": "Unable to delete a VM image due to error 403",
-  "metaDescription": "Error 403 when deleting a VM image: why deletion is forbidden, what the problem is related to, and how to restore access to the operation",
+  "metaDescription": "Error 403 when deleting a VM image: why the deletion is forbidden, what causes the problem, and how to regain the ability to perform the operation",
   "sectionTitle": "Error 403 when deleting a VM image",
   "icon": "",
   "weight": 6,
   "build": {
     "for": [
-      "dontbuild"
+      "public"
     ]
   },
   "uuid": "e96c6143-e839-48f4-bb2d-be9e247ed038"
