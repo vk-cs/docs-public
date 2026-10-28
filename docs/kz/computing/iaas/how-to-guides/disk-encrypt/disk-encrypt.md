@@ -2,9 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{note:err}
-{var(cloud)} үшінші тарап БҚ-сының дұрыс жұмысына жауап бермейді.
-
+{note:warn}
 Дискіні шифрламас бұрын [ВМ-нің резервтік көшірмесін жасаңыз](/kz/storage/backups/instructions/create-backup-copy).
 {/note}
 

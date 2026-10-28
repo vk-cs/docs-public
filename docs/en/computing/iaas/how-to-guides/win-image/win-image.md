@@ -41,17 +41,24 @@ Requirements for the computer used to prepare the image:
     1. Select the **Hyper-V** option and click the **OK** button.
     1. Restart your computer.
 
-1. Update Windows Powershell to version 4 or higher.
+1. Make sure that Windows PowerShell 5.1 or higher is used. This version is preinstalled starting with Windows 10/11 and Windows Server 2016. Earlier versions of the Windows family OS use an older version by default.
 
-    1. Check the current version. To do this, launch Windows PowerShell and run the command: `$PSVersionTable.PSVersion` or `get-host`.
-    1. If the version is lower than 4, install the latest version of Windows PowerShell from the [official Microsoft website](https://aka.ms/PSWindows) or contact the system administrator of your organization to install the update from an internal resource.
+    1. Check the current version by running the `$PSVersionTable.PSVersion` or `get-host` command in Windows PowerShell.
+    1. If the version is lower than 5.1, install [Windows Management Framework 5.1](https://aka.ms/wmf51download).
 
 1. Install the Windows Assessment and Deployment Kit (ADK).
 
     1. Check if ADK is installed. To do this, go to the **Programs and Features** section of Control Panel and find the **Windows Assessment and Deployment Kit** program.
     1. If this program is missing, download ADK from the [official website](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) and install it. During installation select all components except **Windows Assessment Toolkit**.
 
-1. [Download](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.266-1/virtio-win.iso) the VirtIO (KVM) drivers.
+1. [Download](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/) the VirtIO (KVM) drivers.
+
+   The following virtio-win driver versions are used for building images:
+
+   - Windows Server 2012 R2 — 0.1.215;
+   - Windows Server 2016, 2019, and 2022 — 0.1.225;
+   - Windows Server 2025 — 0.1.285.
+
 1. [Download](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip) the archive of the Windows Imaging Tools repository — a tool for automating the creation of Windows images.
 1. [Download](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip) the archive of the WindowsUpdateCLI repository — a module for managing Windows updates.
 

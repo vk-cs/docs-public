@@ -1,9 +1,5 @@
-{note:err}
-
-VK Cloud is not responsible for the correct operation of third-party software.
-
+{note:warn}
 [Make a backup copy of the VM](/en/storage/backups/instructions/create-backup-copy) before encrypting the disk.
-
 {/note}
 
 Configure virtual machine disk encryption using [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) for Linux.

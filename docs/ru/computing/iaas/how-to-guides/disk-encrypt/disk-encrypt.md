@@ -1,8 +1,6 @@
 # {heading(Шифрование диска при помощи cryptsetup)[id=iaas-disk-encrypt]}
 
-{note:err}
-{var(cloud)} не несет ответственности за корректную работу стороннего ПО.
-
+{note:warn}
 {linkto(../../../../storage/backups/instructions/create-backup-copy#backup-copy-create)[text=Сделайте резервную копию ВМ]} перед шифрованием диска.
 {/note}
 

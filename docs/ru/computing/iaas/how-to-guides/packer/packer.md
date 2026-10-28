@@ -2,7 +2,7 @@
 
 Packer позволяет сконструировать новый образ ВМ на основе базового образа с желаемой гостевой ОС и любого из предустановленных в {var(cloud)} {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблонов конфигурации]}. Параметры нового образа задаются при помощи конфигурационного файла Packer. 
 
-В качестве примера будет использован образ ОС Alt Linux P9 в формате QCOW2.
+В качестве примера будет использован образ ОС Альт Сервер 10 в формате QCOW2.
 
 ## {heading(Подготовительные шаги)[id=iaas-packer-preparatory-steps]}
 
@@ -13,7 +13,7 @@ Packer позволяет сконструировать новый образ �
    {/note}
 
 1. Убедитесь, что клиент OpenStack {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
-1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
+1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p10/images/cloud/x86_64/) ОС Альт Сервер 10 локально (файл `alt-p10-cloud-x86_64.qcow2`).
 
 ## {heading(1. Конвертируйте образ в формат RAW)[id=iaas-packer-convert-image]}
 
@@ -44,7 +44,7 @@ Packer позволяет сконструировать новый образ �
 1. Запустите конвертацию файла с помощью команды:
 
    ```console
-   qemu-img convert -f qcow2 -O raw alt-p9-cloud-x86_64.qcow2 alt-p9-cloud-x86_64.raw
+   qemu-img convert -f qcow2 -O raw alt-p10-cloud-x86_64.qcow2 alt-p10-cloud-x86_64.raw
    ```
 
    Синтаксис команды конвертации приведен в [официальной документации QEMU](https://www.qemu.org/docs/master/tools/qemu-img.html).
@@ -114,7 +114,7 @@ Packer позволяет сконструировать новый образ �
 
    source "openstack" "altlinux" {
      flavor       = "<ШАБЛОН_КОНФИГУРАЦИИ_ВМ>"
-     image_name   = "Alt-Linux-P9-Starter-Kit"
+     image_name   = "Alt-Linux-P10"
      source_image = "${var.source_image}"
      config_drive            = "true"
      networks = ["${var.network_id}"]
@@ -174,7 +174,7 @@ Packer позволяет сконструировать новый образ �
    openstack image set \
        --property hw_qemu_guest_agent=True \
        --property os_require_quiesce=yes \
-       --property mcs_name='Alt Linux P9 Starter Kit' \
+       --property mcs_name='Alt Linux 10' \
        c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
    Используйте идентификатор, скопированный на {linkto(#iaas-packer-download-prepare-image)[text=шаге 4]}.
@@ -214,9 +214,9 @@ Packer позволяет сконструировать новый образ �
    | id               | c6320138-035f-40d8-XXXX-e814edb2ce5f                 |
    | min_disk         | 0                                                    |
    | min_ram          | 0                                                    |
-   | name             | Alt-Linux-P9-Starter-Kit                             |
+   | name             | Alt-Linux-P10                             |
    | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
-   | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', os_require_quiesce='True', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
+   | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux 10', os_require_quiesce='True', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p10-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
    | protected        | False                                                |
    | schema           | /v2/schemas/image                                    |
    | size             | 1653604352                                           |

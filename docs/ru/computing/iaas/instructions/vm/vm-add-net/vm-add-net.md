@@ -43,7 +43,7 @@
 
 Убедитесь, что клиент OpenStack {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 
-### {heading(Подключение к существующему порту)[id=iaas-vm-add-net-connect]}
+### {heading(Подключение к существующему порту)[id=iaas-vm-add-net-connect-port]}
 
 1. Получите идентификатор виртуальной машины, которую планируется подключить к сети:
 
