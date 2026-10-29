@@ -116,7 +116,7 @@ Yes, you can create a test infrastructure and verify the migration of individual
 
 {cut(Can there be connectivity between projects on different SDNs? Is it possible to migrate a project in parts?)}
 
-Yes. It is possible to organize network connectivity within a single project by combining two SDNs through an [advanced router](/en/networks/vnet/how-to-guides/advanced-router).
+Yes. It is possible to organize network connectivity within a single project by combining two SDNs through an [advanced router](/en/networks/directconnect/how-to-guides/dc-advanced-router).
 {/cut}
 
 {cut(Is the migration reversible if something goes wrong?)}

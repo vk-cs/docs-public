@@ -15,7 +15,7 @@ Virtual machines will be created in each network to verify the tunnel's operabil
 
 {note:warn}
 Below is an example of setting up a VPN tunnel for networks with SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=Neutron]}.
-In networks with SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]}, the connection between the {var(cloud)} virtual network and the client network is configured using the {linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=advanced router]}.
+In networks with SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]}, the connection between the {var(cloud)} virtual network and the client network is configured using the {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=advanced router]}.
 {/note}
 
 ## {heading(Preparatory steps)[id=vnet-vpn-tunnel-prep]}

@@ -169,7 +169,7 @@ Review the copied entities and make sure that all routers, networks, and subnets
 
 ## 4. (Optional) Configure the advanced router
 
-If the project uses an IPsec tunnel, [configure](/en/networks/vnet/how-to-guides/advanced-router) the advanced router created by the script and prepare it for connecting the IPsec tunnel.
+If the project uses an IPsec tunnel, [configure](/en/networks/vnet/how-to-guides/onpremise-connect/site-to-site-vpn) the advanced router created by the script and prepare it for connecting the IPsec tunnel.
 
 ## 5. (Optional) Migrate the IPsec tunnel
 

@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=Продвинутый маршрутизатордың]} көмегімен жергілікті инфрақұрылымыңыздың желісі мен {var(cloud)} виртуалды желілері арасында VPN-туннелін баптай аласыз.
+{linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=Продвинутый маршрутизатордың]} көмегімен жергілікті инфрақұрылымыңыздың желісі мен {var(cloud)} виртуалды желілері арасында VPN-туннелін баптай аласыз.
 
 Продвинутый маршрутизаторды баптауды көрсету үшін екі тәуелсіз желі байланыстырылады:
 

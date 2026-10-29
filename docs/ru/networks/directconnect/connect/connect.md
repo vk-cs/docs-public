@@ -22,7 +22,7 @@
 1. Обратитесь к своему telecom-партнеру и организуйте канал связи L2 до {var(cloud)} с использованием требуемой технологии. Канал строится, включая кроссировки до стоек дата-центров.
 
 1. [Создайте заявку](https://cloud.vk.ru/direct-connect) на подключение Direct Connect.
-1. После подключения сервиса {linkto(../how-to-guides/advanced-router#directconnect-advanced-router)[text=настройте маршрутизацию]} L3 Static / BGP в своем проекте {var(cloud)}.
+1. После подключения сервиса {linkto(../how-to-guides/dc-advanced-router#directconnect-dc-advanced-router)[text=настройте маршрутизацию]} L3 Static / BGP в своем проекте {var(cloud)}.
 
 {/tab}
 
@@ -43,7 +43,7 @@
 1. [Создайте заявку](https://cloud.vk.ru/direct-connect/) на подключение Direct Connect и передайте информацию о точных координатах точек присутствия своей инфраструктуры (куда строится соединение), тип и скорость подключения.
 1. Дождитесь, когда представитель {var(cloud)} свяжется с вами для согласования проекта и стоимости подключения.
 1. Дождитесь, когда представитель {var(cloud)} уведомит вас, что каналы связи в инфраструктуре {var(cloud)} подключены.
-1. {linkto(../how-to-guides/advanced-router#directconnect-advanced-router)[text=Настройте маршрутизацию]} L3 Static / BGP в своем проекте {var(cloud)}.
+1. {linkto(../how-to-guides/dc-advanced-router#directconnect-dc-advanced-router)[text=Настройте маршрутизацию]} L3 Static / BGP в своем проекте {var(cloud)}.
 
 {/tab}
 

@@ -25,7 +25,7 @@ You can migrate your projects to SDN Sprut on your own.
 
 Functional benefits of migration:
 
-- [Advanced router](/en/networks/vnet/how-to-guides/advanced-router) with BGP dynamic routing support for building fault-tolerant routing schemes.
+- [Advanced router](/en/networks/vnet/concepts/router#advanced) with BGP dynamic routing support for building fault-tolerant routing schemes.
 - [Cloud Direct Connect](https://cloud.vk.com/direct-connect) — dedicated connections between a company's local network and VK Cloud.
 - [Shared networks](/en/networks/vnet/concepts/net-types#shared_net) for combining projects within the same region.
 - Decentralized DHCP service for improved fault tolerance.

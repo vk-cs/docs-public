@@ -2,7 +2,7 @@
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-Using the {linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=advanced router]}, you can set up a VPN tunnel between your on-premises infrastructure network and the virtual networks of {var(cloud)}.
+Using the {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=advanced router]}, you can set up a VPN tunnel between your on-premises infrastructure network and the virtual networks of {var(cloud)}.
 
 To demonstrate the advanced router configuration, two independent networks will be connected:
 

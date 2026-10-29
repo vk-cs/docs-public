@@ -15,7 +15,7 @@
 
 {note:warn}
 Төменде SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=Neutron]} бар желілер үшін VPN-туннелін баптау мысалы келтірілген.
-SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} бар желілерде {var(cloud)} виртуалды желісін клиенттік желімен қосу {linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=кеңейтілген маршрутизатор]} арқылы бапталады.
+SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} бар желілерде {var(cloud)} виртуалды желісін клиенттік желімен қосу {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=кеңейтілген маршрутизатор]} арқылы бапталады.
 {/note}
 
 ## {heading(Дайындық қадамдары)[id=vnet-vpn-tunnel-prep]}
