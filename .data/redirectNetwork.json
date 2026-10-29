@@ -22285,7 +22285,7 @@
   },
   {
     "source": "/en/networks/vnet/use-cases/advanced-router",
-    "destination": "/en/networks/vnet/how-to-guides/advanced-router",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -22339,7 +22339,7 @@
   },
   {
     "source": "/en/networks/directconnect/use-cases/advanced-router",
-    "destination": "/en/networks/directconnect/how-to-guides/advanced-router",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -22441,7 +22441,7 @@
   },
   {
     "source": "/ru/networks/vnet/use-cases/advanced-router",
-    "destination": "/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -22477,7 +22477,7 @@
   },
   {
     "source": "/ru/networks/directconnect/use-cases/advanced-router",
-    "destination": "/ru/networks/directconnect/how-to-guides/advanced-router",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -28111,7 +28111,7 @@
   },
   {
     "source": "/ru/networks/vnet/how-to-guides/advanced-router",
-    "destination": "/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -34304,6 +34304,36 @@
   {
     "source": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
     "destination": "/en/monitoring-services/monitoring/concepts/architecture",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/directconnect/how-to-guides/advanced-router",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/networks/vnet/how-to-guides/advanced-router",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/networks/directconnect/how-to-guides/advanced-router",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }
