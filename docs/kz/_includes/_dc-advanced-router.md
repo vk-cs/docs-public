@@ -89,9 +89,9 @@ Cloud Direct Connect сіздің жергілікті инфрақұрылым�
 |![](/kz/assets/no.svg "inline")
 |===
 
-## {heading(1. Транзиттік ішкі желіні қосыңыз)[id=directconnect-dc-advanced-router-add-subnet]}
+## {heading(1. Cloud Direct Connect ішкі желіні қосыңыз)[id=directconnect-dc-advanced-router-add-subnet]}
 
-Cloud Direct Connect желісіне `/30` маскасымен транзиттік ішкі желіні {linkto(/kz/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=қосыңыз]}. Ортаның айнымалыларын қосу кезінде `N_ID="<ЖЕЛІЛІК_ТҮЙІСПЕ_UUID>"` параметрін көрсетіңіз.
+Cloud Direct Connect желісіне `/30` маскасымен ішкі желіні {linkto(/kz/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=қосыңыз]}. Ортаның айнымалыларын қосу кезінде `N_ID="<ЖЕЛІЛІК_ТҮЙІСПЕ_UUID>"` параметрін көрсетіңіз.
 
 Ішкі желінің атауы мен CIDR мәнін жазып алыңыз. Бұл мысалда: `dc-subnet`, `192.168.0.0/30`.
 

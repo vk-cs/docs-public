@@ -18,8 +18,8 @@ To migrate a cluster to Sprut SDN:
 
     To reduce service downtime, connect the original Neutron SDN and the new Sprut SDN using an advanced router connected to transit networks with standard routers. This approach is useful if you are migrating services gradually or cannot shut down the cluster during the migration.
 
-    1. [Connect](/en/networks/vnet/how-to-guides/advanced-router) the advanced router to transit networks with standard routers in the original Neutron SDN and the new Sprut SDN.
-    1. [Configure](/en/networks/vnet/how-to-guides/advanced-router#includes-advanced-router-static-routs) static routes between Neutron and Sprut networks.
+    1. [Connect](/en/networks/directconnect/how-to-guides/dc-standard-router) the advanced router to transit networks with standard routers in the original Neutron SDN and the new Sprut SDN.
+    1. [Configure](/en/networks/directconnect/how-to-guides/dc-standard-router#directconnect-dc-standard-router-advanced-static-routs) static routes between Neutron and Sprut networks.
 
 1. Verify the functionality of the new cluster:
 

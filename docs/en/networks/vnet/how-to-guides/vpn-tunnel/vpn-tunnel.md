@@ -4,7 +4,7 @@ Throughout this guide, a VK Cloud subnet will be connected with the client subne
 {note:warn}
 
 The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
-For networks created with use of Sprut SDN, set up a tunnel via [advanced router](/en/networks/vnet/how-to-guides/advanced-router).
+For networks created with use of Sprut SDN, set up a tunnel via [advanced router](/en/networks/directconnect/how-to-guides/dc-advanced-router).
 
 {/note}
 

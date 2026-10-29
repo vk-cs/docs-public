@@ -13,7 +13,7 @@ VPN-туннель в примере будет связывать следую�
 
 {note:warn}
 Далее приведен пример настройки VPN-туннеля для сетей с SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=Neutron]}.
-В сетях с SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} соединение виртуальной сети {var(cloud)} с клиентской сетью настраивается при помощи {linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=продвинутого маршрутизатора]}.
+В сетях с SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} соединение виртуальной сети {var(cloud)} с клиентской сетью настраивается при помощи {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=продвинутого маршрутизатора]}.
 {/note}
 
 ## {heading(Подготовительные шаги)[id=vnet-vpn-tunnel-prep]}

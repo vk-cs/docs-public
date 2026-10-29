@@ -123,7 +123,7 @@ Correspondence between outdated and current names:
 Unavailable disk types:
 
 [cols="2,1,1", options="header"]
-
+|===
 |Disk type
 |API name
 |Availability zone

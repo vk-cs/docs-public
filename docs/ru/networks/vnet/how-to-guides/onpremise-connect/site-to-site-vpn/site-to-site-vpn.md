@@ -1,6 +1,6 @@
 # {heading(Организация VPN-туннеля с использованием SDN Sprut)[id=vnet-site-to-site-vpn]}
 
-С помощью {linkto(../../../../../networks/vnet/how-to-guides/onpremise-connect/advanced-router#vnet-advanced-router)[text=продвинутого маршрутизатора]} вы можете настроить VPN-туннель между сетью вашей локальной инфраструктуры и виртуальными сетями {var(cloud)}.
+С помощью {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=продвинутого маршрутизатора]} вы можете настроить VPN-туннель между сетью вашей локальной инфраструктуры и виртуальными сетями {var(cloud)}.
 
 Чтобы показать настройку продвинутого маршрутизатора, будут связаны две независимые сети:
 

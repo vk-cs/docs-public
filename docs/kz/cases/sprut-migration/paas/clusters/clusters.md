@@ -17,8 +17,8 @@
 
     Сервистердің қолжетімсіз болу уақытын қысқарту үшін, транзиттік желілер арқылы стандартты маршрутизаторларға қосылған кеңейтілген маршрутизатордың көмегімен бастапқы SDN Neutron мен жаңа SDN Sprut-ты біріктіріңіз. Егер сервистерді кезең-кезеңмен көшіріп жатсаңыз немесе көші-қон кезінде кластерді өшіре алмасаңыз, бұл тәсіл пайдалы болады.
 
-    1. [Кеңейтілген маршрутизаторды қосыңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/advanced-router) бастапқы SDN Neutron мен жаңа SDN Sprut-тағы стандартты маршрутизаторлары бар транзиттік желілерге.
-    1. Neutron және Sprut желілері арасында [статикалық маршруттарды баптаңыз](/kz/networks/vnet/how-to-guides/onpremise-connect/advanced-router#includes-advanced-router-static-routs).
+    1. [Кеңейтілген маршрутизаторды қосыңыз](/kz/networks/directconnect/how-to-guides/dc-standard-router) бастапқы SDN Neutron мен жаңа SDN Sprut-тағы стандартты маршрутизаторлары бар транзиттік желілерге.
+    1. Neutron және Sprut желілері арасында [статикалық маршруттарды баптаңыз](/kz/networks/directconnect/how-to-guides/dc-standard-router#directconnect-dc-standard-router-advanced-static-routs).
 
 1. Жаңа кластердің жұмысқа қабілеттілігін тексеріңіз:
 

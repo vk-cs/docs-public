@@ -89,9 +89,13 @@ Cloud Direct Connect позволяет организовать разные {l
 |![](/ru/assets/no.svg "inline")
 |===
 
-## {heading(1. Добавьте транзитную подсеть)[id=directconnect-dc-advanced-router-add-subnet]}
+После выполнения описанных ниже действий итоговая схема организации сетевой связности с учетом адресации должна выглядеть следующим образом:
 
-В сеть Cloud Direct Connect {linkto(/ru/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=добавьте]} транзитную подсеть с маской `/30`. При добавлении переменных окружения укажите параметр `N_ID="<UUID_СЕТЕВОГО_СТЫКА>"`.
+![Схема организации сетевой связности с адресацией](/ru/networks/directconnect/how-to-guides/dc-advanced-router/assets/cdc-p1address.png){params[noBorder=true]}
+
+## {heading(1. Добавьте подсеть для Cloud Direct Connect)[id=directconnect-dc-advanced-router-add-subnet]}
+
+В сеть Cloud Direct Connect {linkto(/ru/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=добавьте]} подсеть с маской `/30`. При добавлении переменных окружения укажите параметр `N_ID="<UUID_СЕТЕВОГО_СТЫКА>"`.
 
 Запишите имя и CIDR подсети. В этом примере: `dc-subnet`, `192.168.0.0/30`.
 

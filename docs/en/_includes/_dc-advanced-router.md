@@ -89,9 +89,9 @@ Configuration limitations:
 |![](/ru/assets/no.svg "inline")
 |===
 
-## {heading(1. Add a transit subnet)[id=directconnect-dc-advanced-router-add-subnet]}
+## {heading(1. Add a Cloud Direct Connect subnet)[id=directconnect-dc-advanced-router-add-subnet]}
 
-{linkto(/ru/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=Add]} a transit subnet with a `/30` mask to the Cloud Direct Connect network. When adding the environment variables, specify the `N_ID="<NETWORK_INTERCONNECT_UUID>"` parameter.
+{linkto(/ru/networks/vnet/how-to-guides/custom-subnet#vnet-custom-subnet)[text=Add]} a subnet with a `/30` mask to the Cloud Direct Connect network. When adding the environment variables, specify the `N_ID="<NETWORK_INTERCONNECT_UUID>"` parameter.
 
 Record the subnet name and CIDR. In this example: `dc-subnet`, `192.168.0.0/30`.
 

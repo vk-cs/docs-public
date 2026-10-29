@@ -83,7 +83,7 @@
 
 Желілерді алдын ала дайындау сызбасы келесідей көрінеді:
 
-![Желілерді алдын ала дайындау сызбасы](/kz/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
+![Желілерді алдын ала дайындау сызбасы](/kz/networks/directconnect/how-to-guides/dc-advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
 
 ## {heading(1. Кеңейтілген маршрутизаторды қосыңыз)[id=includes-advanced-router-add-router]}
 
@@ -336,7 +336,7 @@ IP-мекенжай пингке жауап беруі тиіс.
 
 Желілер мен олардың ішіндегі машиналар арасындағы құрылған өзара әрекеттесу сызбасы келесідей көрінеді:
 
-![Желілер арасындағы өзара әрекеттесу сызбасы](/kz/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
+![Желілер арасындағы өзара әрекеттесу сызбасы](/kz/networks/directconnect/how-to-guides/dc-advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=includes-advanced-router-delete]}
 
