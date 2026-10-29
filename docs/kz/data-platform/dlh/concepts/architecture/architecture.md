@@ -1,5 +1,9 @@
 # {heading(Сервис архитектурасы)[id=dlh_architecture]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} әртүрлі көздерден құрылымдалған және құрылымдалмаған деректерді жинайды, оларды {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} арқылы ([ETL](https://ru.wikipedia.org/wiki/ETL) немесе ELT) не {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} арқылы (SQL-сұраулар) өңдейді, {linkto(../components/s3#dlh_s3)[text=S3-қоймасында]} {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} ішінде каталогтаумен сақтайды, DataHub-та метадеректерді басқарады және аналитика, BI және ML үшін деректерді Cloud Trino, Cloud Spark немесе {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]} арқылы ұсынады.

@@ -1,5 +1,9 @@
 # {heading(Cloud Kafka)[id=kafka_metrics]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The Cloud Kafka service collects the following types of metrics in Prometheus format:

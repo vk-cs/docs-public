@@ -1,5 +1,9 @@
 # {heading(About the service)[id=redis_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Redis is a highly efficient, high-speed open-source NoSQL DBMS that stores data in RAM as key/value pairs. For more information about Redis, see the [official documentation](https://redis.io/).

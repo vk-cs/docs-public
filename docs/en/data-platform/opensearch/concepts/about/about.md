@@ -1,5 +1,9 @@
 # {heading(About the service)[id=opensearch_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 OpenSearch is a software suite for building search engines and analytical solutions. The service includes the OpenSearch search platform and the OpenSearch Dashboards web interface for data visualization and analysis. For more information, see the [official documentation](https://docs.opensearch.org/docs/latest/).

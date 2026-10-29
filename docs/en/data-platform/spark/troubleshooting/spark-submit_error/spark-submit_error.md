@@ -1,5 +1,9 @@
 # {heading(Error when working with the spark-submit script)[id=spark-submit_error]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=spark-submit_error_problem]}

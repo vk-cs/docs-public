@@ -1,5 +1,9 @@
 # {heading(Data Lake)[id=dlh_data-lake]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Data Lake немесе *деректер көлі* — бұл бастапқы форматында үлкен көлемдегі деректерді сақтау үшін {linkto(../dwh#dlh_dwh)[text=%text]} (DWH) баламасы ретінде пайда болған корпоративтік деректер қоймаларының (КДҚ) архитектурасы.

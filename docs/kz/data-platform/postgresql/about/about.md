@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=postgresql_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud PostgreSQL — деректерді сақтау және басқару үшін пайдаланылатын объектілік-реляциялық СУБД. Сервис PostgreSQL негізінде әзірленген. PostgreSQL туралы толығырақ [ресми құжаттамада](https://www.postgresql.org/docs/).

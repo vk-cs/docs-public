@@ -1,5 +1,9 @@
 # {heading(About the service)[id=postgresql_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud PostgreSQL is an object-relational DBMS used for storing and managing data. The service is built on PostgreSQL. For more information about PostgreSQL, see the [official documentation](https://www.postgresql.org/docs/).

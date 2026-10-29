@@ -1,5 +1,9 @@
 # {heading(Работа с экземпляром сервиса)[id=jupyterhub_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_standalone.md)[tags=difference_management]}
 
 ## {heading(Общая информация)[id=jupyterhub_info]}

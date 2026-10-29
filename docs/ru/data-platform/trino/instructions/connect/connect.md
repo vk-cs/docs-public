@@ -1,5 +1,9 @@
 # {heading(Подключение к экземпляру сервиса)[id=trino_connect]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Подключиться к экземпляру сервиса Cloud Trino можно только по TLS с помощью веб-интерфейса и сторонних клиентов, например DBeaver.
 
 {include(../../../_includes/_connect.md)[tags=connect-secure]}

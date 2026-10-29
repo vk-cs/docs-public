@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Trino uses a client-server architecture consisting of the following components:
 
 - _Client_ is any application or tool capable of sending SQL queries and processing the results. Trino provides drivers for various programming languages, providing integration with a wide range of tools.

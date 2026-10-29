@@ -1,5 +1,9 @@
 # {heading(Spark version)[id=spark_version]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Spark uses Apache Spark version 3.5.1.

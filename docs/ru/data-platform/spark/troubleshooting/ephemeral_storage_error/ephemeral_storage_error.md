@@ -1,5 +1,9 @@
 # {heading(Ошибка при запуске Spark-задачи: The node was low on resource: ephemeral-storage)[id=ephemeral_storage_error]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=ephemeral_storage_error_problem]}
 
 При запуске Spark-задачи появляется ошибка:

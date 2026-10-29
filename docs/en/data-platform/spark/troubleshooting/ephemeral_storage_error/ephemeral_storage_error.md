@@ -1,5 +1,9 @@
 # {heading(Spark task startup error: The node was low on resource: ephemeral-storage)[id=ephemeral_storage_error]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=ephemeral_storage_error_problem]}

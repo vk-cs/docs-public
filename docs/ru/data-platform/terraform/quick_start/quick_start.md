@@ -1,5 +1,9 @@
 # {heading(Быстрый старт)[id=terraform_quick_start]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Подготовительные шаги)[id=terraform_quick_start_preparations]}
 
 1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от {var(cloud)}.

@@ -1,5 +1,9 @@
 # {heading(SparkSession арқылы Cloud Spark-ке қосылу кезіндегі қате)[id=spark-session_error]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=spark-session_error_problem]}

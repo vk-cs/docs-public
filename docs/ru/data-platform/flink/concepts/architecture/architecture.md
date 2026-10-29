@@ -1,5 +1,9 @@
 # {heading(Архитектура сервиса)[id=flink_architecture]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Архитектура Cloud Flink построена вокруг концепции распределенного потокового вычисления и состоит из нескольких компонентов: 
 
 - *Job Manager* — master-узел, который координирует все процессы обработки данных в сервисе:

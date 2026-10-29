@@ -1,5 +1,9 @@
 # {heading(Creating an ETL pipeline for processing CSV files from S3 to Cloud Iceberg Metastore)[id=etl_pipeline]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Using the Cloud Spark service, you can create an ETL pipeline that checks data quality and load idempotency (checksums, duplicate handling), and performs logging and error handling. The pipeline ensures reliable, repeatable, and fast loading of data from external systems (such as CRM or ERP) into an analytical storage. The data is available to analysts in a single table version and supports fast updates and adding new batches.

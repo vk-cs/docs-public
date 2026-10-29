@@ -1,5 +1,9 @@
 # {heading(Архитектура сервиса)[id=kafka_architecture]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 <!--![Архитектура сервиса](assets/arch_diagram.png)-->
 
 Кластер Cloud Kafka состоит из совмещенных узлов KRaft и [брокера](https://kafka.apache.org/documentation/#intro_concepts_and_terms) (Kafka Broker). Количество таких узлов зависит от выбранного режима отказоустойчивости. Чтобы повысить производительность кластера, количество узлов можно увеличить вручную.

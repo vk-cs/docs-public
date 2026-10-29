@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 *Cloud Flink* is a service for stream processing and transferring any volume of data from sources to target systems. The service is developed based on [Apache Flink](https://flink.apache.org/) and Kubernetes.
 
 The Apache Flink service operates on the concept of distributed stream computing: data is considered as a continuous stream that is processed in parallel and distributed. This approach allows achieving high performance and scalability.

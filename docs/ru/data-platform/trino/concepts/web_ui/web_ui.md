@@ -1,5 +1,9 @@
 # {heading(Веб-интерфейс Trino)[id=trino-web-ui]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud Trino предоставляет веб-интерфейс, с помощью которого можно просматривать активные и завершенные запросы, отслеживать их статусы и прогресс, анализировать производительность. Подробнее — в [официальной документации Trino](https://trino.io/docs/current/admin/web-interface.html).
 
 ## {heading(Доступ к интерфейсу)[id=trino-ui-access]}

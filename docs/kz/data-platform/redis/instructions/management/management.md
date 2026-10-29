@@ -1,5 +1,9 @@
 # {heading(Қызмет компоненттерімен жұмыс)[id=redis_management]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {include(../../../_includes/_standalone.md)[tags=difference_management]}

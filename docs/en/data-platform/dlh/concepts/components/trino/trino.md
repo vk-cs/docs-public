@@ -1,5 +1,9 @@
 # {heading(Cloud Trino in Data Lakehouse architecture)[id=dlh_trino]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../../../../trino/concepts/about#trino_info)[text=Cloud Trino]} is a massively parallel analytical SQL engine for processing large volumes of data from various sources. It allows you to:

@@ -1,5 +1,9 @@
 # {heading(Создание кластера Spark)[id=tf_spark]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Вы можете автоматически развернуть кластер Cloud Spark и связанную с ним инфраструктуру в {var(data-p)} с помощью Terraform.
 Для этого опишите кластер и другие ресурсы в конфигурационных файлах и примените конфигурацию.
 

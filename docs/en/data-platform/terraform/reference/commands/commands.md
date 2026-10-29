@@ -1,5 +1,9 @@
 # {heading(Основные команды Terraform)[id=terraform_commands]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 [Командная строка Terraform](https://www.terraform.io/cli/commands) — это команда `terraform`, которая принимает множество подкоманд.

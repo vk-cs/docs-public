@@ -1,5 +1,9 @@
 # {heading(О сервисе)[id=iceberg_info]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud Iceberg Metastore — компонент системы управления метаданными для таблиц в формате Apache Iceberg. 
 
 Cloud Iceberg Metastore:

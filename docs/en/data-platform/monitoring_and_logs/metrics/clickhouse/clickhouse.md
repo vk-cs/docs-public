@@ -1,5 +1,9 @@
 # {heading(Cloud ClickHouse)[id=clickhouse_metrics]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 In the Cloud ClickHouse service, metrics are collected in Prometheus format. For each metric, a panel is automatically created that can be displayed on a dashboard.

@@ -1,5 +1,9 @@
 # {heading(Connecting to a Spark cluster from scripts in Standalone)[id=spark_m2m]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In the {var(data-p)} Standalone configuration, user identity and access management for Cloud Spark is performed via the CIAM system. For more information about CIAM, see the [CIAM User Guide](https://docs.tech.vk.ru/ciam/ru/26_2/user-guide/common).

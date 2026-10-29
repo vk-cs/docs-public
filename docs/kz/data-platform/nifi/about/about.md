@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=nifi_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 NiFi — деректер ағындарын автоматтандыруға және басқаруға арналған платформа. Сервис Apache NiFi негізінде әзірленген. Толығырақ [ресми құжаттамада](https://nifi.apache.org).

@@ -1,5 +1,9 @@
 # {heading(Cloud Kafka)[id=kafka_metrics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В сервисе Cloud Kafka собираются следующие виды метрик в формате Prometheus:
 
 - Метрики брокера и координатора Kafka;

@@ -1,5 +1,9 @@
 # {heading(Taking an instance out of read-only mode)[id=kafka_read_only]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 If less than 10% of free space remains on the disk of at least one Cloud Kafka broker, {var(data-p)} automatically switches the instance to read-only mode. This prevents disk overflow and helps maintain cluster operability. When attempting to publish messages, an error will occur and writing to topics will fail.

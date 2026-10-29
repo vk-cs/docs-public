@@ -1,5 +1,9 @@
 # {heading(Работа с экземпляром сервиса)[id=flink_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Просмотр информации об экземпляре)[id=flink_view]}
 
 {tabs}

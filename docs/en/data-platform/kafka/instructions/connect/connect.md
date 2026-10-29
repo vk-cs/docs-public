@@ -1,5 +1,9 @@
 # {heading(Connecting to a service instance)[id=kafka_connect]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 You can connect to a Cloud Kafka service instance over TLS using Kafka CLI and other third-party clients.

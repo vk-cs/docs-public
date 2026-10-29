@@ -1,5 +1,9 @@
 # {heading(Cloud Spark-ты деректерді өңдеу құралы ретінде қосу)[id=dlh_connect-spark]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../../quick-start#dlh_quick-start)[text=базалық құрылымға]} {linkto(../../../spark#dlh_spark)[text=Cloud Spark]} сервисін Data Lakehouse (DLH) құрамына қосу [Cloud Trino](../../../trino) салыстырғанда, деректерді S3 объектілік қоймасына түспес бұрын күрделі трансформациялауды орындауға мүмкіндік береді, өйткені ол салыстырмалы түрде қарапайым сценарийлерді жүзеге асыра алады.

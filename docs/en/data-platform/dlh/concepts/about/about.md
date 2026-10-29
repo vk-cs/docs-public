@@ -1,5 +1,9 @@
 # {heading(About the service)[id=dlh_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Data Lakehouse (DLH) is a hybrid data management architecture that can be organized on the {var(cloud)} platform. It combines the scalability and flexibility of a {linkto(../compare/data-lake#dlh_data-lake)[text=%text]} with the reliability and structure of a {linkto(../compare/dwh#dlh_dwh)[text=%text]}. Such an architecture:

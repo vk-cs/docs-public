@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud Trino allows you to use a preconfigured instance of the [Trino](https://trino.io) SQL engine to process large amounts of data from different sources in parallel. 
 
 Cloud Trino does not store data in itself, but coordinates and optimises requests to it. Queries are dynamically distributed between the service nodes and executed in parallel. In this case, one query can be addressed to several sources, regardless of their location and data storage format. The received data are aggregated and processed to obtain unified analytics.

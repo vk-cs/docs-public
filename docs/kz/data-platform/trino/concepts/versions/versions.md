@@ -1,5 +1,9 @@
 # {heading(Нұсқаларды қолдау саясаты)[id=trino_versions]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Trino нұсқаларын қолдау саясаты нұсқаларды қолдау ережелерін реттейді және жаңаларына көшу процесін сипаттайды. Саясат жаңартуларды шығарудың негізі болып табылады және Cloud Trino нұсқаларымен жұмысты жоспарлауға мүмкіндік береді.

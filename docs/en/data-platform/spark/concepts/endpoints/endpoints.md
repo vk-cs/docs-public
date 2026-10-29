@@ -1,5 +1,9 @@
 # {heading(Endpoints)[id=spark-endpoints]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Spark provides endpoints for working with the service: Spark Connect and Spark Service. The endpoints are displayed on the service instance page on the **General information** tab.

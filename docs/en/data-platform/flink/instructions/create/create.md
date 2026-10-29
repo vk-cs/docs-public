@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 You can create a Cloud Flink instance in one of two configurations:
 
 - [Single](#single): the configuration runs the Job Manager and Task Manager components on a single node. The solution is suitable for development and testing, reduces the cost of deploying a test infrastructure. Does not provide fault tolerance: a node failure stops all the work.

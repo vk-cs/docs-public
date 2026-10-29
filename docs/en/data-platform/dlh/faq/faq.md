@@ -1,5 +1,9 @@
 # {heading(Frequently asked questions)[id=dlh_faq]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {cut(Which tools should be used for data ingestion?)}

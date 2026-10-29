@@ -1,5 +1,9 @@
 # {heading(Cloud Airflow)[id=dlh_airflow]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../../../../airflow/concepts/about#airflow_info)[text=Cloud Airflow]} is a data flow orchestrator and a tool for managing the launch of ETL and ELT processes for high-performance, scalable real-time applications. It is optionally included in the DLH architecture when integration of the data warehouse with data sources is needed via the {linkto(../../architecture#dlh_data_processing_models)[text=PULL model]}.

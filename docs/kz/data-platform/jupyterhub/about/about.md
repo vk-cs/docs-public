@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=jupyterhub_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 JupyterHub — Jupyter Notebook негізіндегі көппайдаланушылық ортаны құруға арналған құрал. Ол әртүрлі пайдаланушылар үшін веб-интерфейс арқылы Jupyter Notebook-тың көптеген жеке сессияларын іске қосуға және оларды басқаруға мүмкіндік береді. JupyterHub туралы толығырақ [ресми құжаттамадан](https://jupyterhub.readthedocs.io/en/stable/) қараңыз.

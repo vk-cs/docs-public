@@ -1,5 +1,9 @@
 # {heading(Cloud Redis)[id=redis_metrics]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In the Cloud Redis service, metrics are collected in Prometheus format. A panel is automatically created for each metric, which can be displayed on a dashboard. The list of metrics is given in {linkto(#redis_tab_metrics)[text=table %number]}.

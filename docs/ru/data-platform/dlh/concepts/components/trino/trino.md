@@ -1,5 +1,9 @@
 # {heading(Cloud Trino в архитектуре Data Lakehouse)[id=dlh_trino]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {linkto(../../../../trino/concepts/about#trino_info)[text=Cloud Trino]} – это массивно-параллельный аналитический SQL-движок для обработки больших объемов данных из разных источников. Он позволяет:
 
 - выполнять SQL-запросы на чтение параллельно из нескольких источников и хранилищ;

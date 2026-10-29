@@ -1,5 +1,9 @@
 # {heading(Manage certificates)[id=certificates_manage]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 TLS certificate replacement is available for the following services: Cloud Trino, Cloud Airflow, Cloud ClickHouse, Cloud PostgreSQL, Redis, OpenSearch.

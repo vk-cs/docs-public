@@ -1,5 +1,9 @@
 # {heading(Cloud Trino)[id=trino_metrics]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Trino жүйесінде кластер күйін, компоненттер арасындағы өзара әрекеттесуді, SQL-сұраулар мен тапсырмаларды орындау нәтижелерін, ресурстарды пайдалануды мониторингтеу үшін Prometheus форматындағы метрикалар жиналады. Әрбір метрика үшін дашбордта көрсетуге болатын панель автоматты түрде жасалады.

@@ -1,5 +1,9 @@
 # {heading(Spark тапсырмасын жасау және іске қосудың мысалы)[id=run_jobs]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Нұсқаулықта Пи санын есептеуге арналған скрипт мысалында Cloud Spark сервисінде Spark тапсырмаларын қалай жасау және іске қосу көрсетілген. Барлық әрекеттер қадамдарға бөлінген:

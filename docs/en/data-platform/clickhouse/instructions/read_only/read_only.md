@@ -1,5 +1,9 @@
 # {heading(Taking an instance out of read-only mode)[id=clickhouse_read_only]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {note:warn}

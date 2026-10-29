@@ -1,5 +1,9 @@
 # {heading(Интерактивті логтарды қарау)[id=kafka_iceberg]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Spark сервисінде Spark тапсырмаларының орындалуы туралы толық ақпараты бар интерактивті логтарды мәтіндік немесе JSON форматында қарау қолжетімді.

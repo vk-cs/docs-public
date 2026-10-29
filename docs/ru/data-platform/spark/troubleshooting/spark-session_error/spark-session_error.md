@@ -1,5 +1,9 @@
 # {heading(Ошибка при подключение к Cloud Spark через SparkSession)[id=spark-session_error]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=spark-session_error_problem]}
 
 Не работает подключение к Cloud Spark через `SparkSession`. 

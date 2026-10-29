@@ -1,5 +1,9 @@
 # {heading(Қызмет туралы)[id=redis_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Redis — ашық бастапқы коды бар, деректерді жедел жадта кілт/мән жұптары түрінде сақтайтын жоғары тиімді және жоғары жылдамдықты NoSQL түріндегі СУБД. Redis туралы толығырақ — [ресми құжаттамада](https://redis.io/).

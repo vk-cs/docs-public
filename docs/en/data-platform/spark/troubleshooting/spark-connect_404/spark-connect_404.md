@@ -1,5 +1,9 @@
 # {heading(Spark Connect error: 404 unimplemented)[id=spark_connect_404]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=spark_connect_404_problem]}

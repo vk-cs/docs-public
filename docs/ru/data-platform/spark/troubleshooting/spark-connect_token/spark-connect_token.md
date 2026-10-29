@@ -1,5 +1,9 @@
 # {heading(Не удается подключиться к Spark Connect без токена авторизации)[id=spark_connect_token]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=spark_connect_token_problem]}
 
 Для подключения к Spark Connect в {var(data-p)} требуется токен авторизации. Токен представляет собой заголовок Basic Auth, который необходимо добавить к запросу при обращении к Spark Connect. Без корректного токена соединение не устанавливается.

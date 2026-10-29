@@ -1,5 +1,9 @@
 # {heading(Terms and abbreviations)[id=glossary]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 This document uses the terms and abbreviations listed in {linkto(#tab_glossary)[text=table %number]}.

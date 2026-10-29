@@ -1,5 +1,9 @@
 # {heading(Работа с экземпляром сервиса)[id=lakekeeper_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_standalone.md)[tags=difference_management]}
 
 ## {heading(Просмотр информации об экземпляре)[id=lakekeeper_view_info]}

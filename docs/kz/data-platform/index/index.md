@@ -1,5 +1,9 @@
 # {heading(Кіріспе)[id=dp_index]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Жалпы ақпарат)[id=dp_index_inform]}

@@ -1,5 +1,9 @@
 # {heading(Сертификаттармен жұмыс)[id=certificates_manage]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 TLS сертификатын мына сервистер үшін ауыстыруға болады: Cloud Trino, Cloud Airflow, Cloud ClickHouse, Cloud PostgreSQL, Redis, OpenSearch.

@@ -1,5 +1,9 @@
 # {heading(About the service)[id=iceberg_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Iceberg Metastore is a component of the metadata management system for tables in Apache Iceberg format.

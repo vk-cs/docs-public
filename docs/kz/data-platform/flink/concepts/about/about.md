@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=flink_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Flink — деректерді көздерден мақсатты жүйелерге кез келген көлемде ағындық өңдеуге және тасымалдауға арналған сервис. Сервис [Apache Flink](https://flink.apache.org/) пен Kubernetes негізінде әзірленген.

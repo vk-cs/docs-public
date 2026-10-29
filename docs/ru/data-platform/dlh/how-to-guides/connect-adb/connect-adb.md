@@ -1,5 +1,9 @@
 # {heading(Подключение ClickHouse в качестве аналитической БД)[id=dlh_connect-adb]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Добавление в архитектуру Data Lakehouse (DLH) отдельной аналитической БД позволяет выполнять быструю обработку входящего потока событий без необходимости сохранения данных в S3-хранилище. Такой БД может быть PostgreSQL, где оперативные данные поступают в виде потока сообщений или батчами, или {linkto(../../../clickhouse/concepts/about#clickhouse_info)[text=Cloud ClickHouse]}.
 
 Далее будет рассмотрен вариант конфигурации сервиса Data Lakehouse с аналитической базы данных на базе продукта ClickHouse.

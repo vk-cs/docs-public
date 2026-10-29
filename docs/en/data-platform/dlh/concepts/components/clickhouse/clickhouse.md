@@ -1,5 +1,9 @@
 # {heading(ClickHouse in the Data Lakehouse architecture)[id=dlh_clickhouse]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../../../../clickhouse/concepts/about#clickhouse_info)[text=Cloud ClickHouse]} is an open-source columnar relational DBMS for fast processing of analytical SQL queries on structured big data in real time. It is optionally included in the DLH architecture when real-time operational analytics need to be performed on the incoming event stream without the need to store data in S3 storage.

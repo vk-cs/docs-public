@@ -1,5 +1,9 @@
 # {heading(Подключение к экземпляру сервиса)[id=kafka_connect]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Подключиться к экземпляру сервиса Cloud Kafka по TLS можно с помощью Kafka CLI и других сторонних клиентов.
 
 {include(../../../_includes/_connect.md)[tags=connect-secure]}

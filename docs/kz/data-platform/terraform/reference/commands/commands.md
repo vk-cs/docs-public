@@ -1,5 +1,9 @@
 # {heading(Негізгі Terraform командалары)[id=terraform_commands]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 [Terraform командалық жолы](https://www.terraform.io/cli/commands) — бұл көптеген ішкі командаларды қабылдайтын `terraform` командасы.

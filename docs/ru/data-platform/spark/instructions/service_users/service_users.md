@@ -1,5 +1,9 @@
 # {heading(Подключение к кластеру Spark из скриптов в Standalone)[id=spark_m2m]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В конфигурации {var(data-p)} Standalone управление идентификацией и доступом пользователей к Cloud Spark выполняется через систему CIAM. Подробнее о CIAM — в [Руководстве пользователя CIAM](https://docs.tech.vk.ru/ciam/ru/26_2/user-guide/common).
 
 Для подключения к кластеру Cloud Spark из скрипта создайте учетную запись сервисного пользователя и используйте ее учетные данные для авторизации.

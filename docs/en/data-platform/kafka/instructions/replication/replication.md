@@ -1,5 +1,9 @@
 # {heading(Replicating data from external Kafka clusters)[id=kafka_replication]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In the Cloud Kafka service, data from external Kafka clusters can be replicated to the current cluster using the MirrorMaker component.

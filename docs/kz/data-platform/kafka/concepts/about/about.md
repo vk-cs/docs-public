@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=kafka_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Kafka — қолданбалар арасында хабарламаларды жіберуге арналған үлестірілген платформа. Сервистің әрбір экземпляры ақауға төзімді конфигурацияда немесе бір торап конфигурациясында жайылған [Apache Kafka](https://kafka.apache.org/) кластері болып табылады.

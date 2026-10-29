@@ -1,5 +1,9 @@
 # {heading(Access management in VK Private Cloud)[id=trino-concepts-iam]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {include(../../../_includes/_access_management.md)[tags=dp_private_access_intro]}

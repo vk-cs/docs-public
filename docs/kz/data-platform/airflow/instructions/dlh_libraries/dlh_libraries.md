@@ -1,5 +1,9 @@
 # {heading(DLH-пен жұмыс істеуге арналған кітапханалар)[id=dlh_libraries]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 DLH (Data Lakehouse) жүйесінде Cloud Airflow-пен жұмыс істеу үшін тиісті Python кітапханаларын пайдаланып, оларды DAG файлдарына импорттау қажет. Пайдаланушыларға қолжетімді кітапханалардың толық тізімі {linkto(#tab_glossary)[text=%number кестесінде]} келтірілген.

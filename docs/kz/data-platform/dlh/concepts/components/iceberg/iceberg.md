@@ -1,5 +1,9 @@
 # {heading(Cloud Iceberg Metastore Data Lakehouse архитектурасында)[id=dlh_iceberg]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../../../../iceberg-metastore/concepts/about#iceberg_info)[text=Cloud Iceberg Metastore]} — бұл DLH деректер каталогы, ол сыртқы сервистермен қойманың өзара әрекеттесуін ұйымдастыру үшін объектілер құрылымының көрінісін және S3 қоймасындағы деректерге қол жеткізу ережелерін (интерфейстерін) анықтайды. Кестелердің ашық форматының арқасында қоймадан күрделі аналитикалық SQL-сұраулар арқылы орасан көлемдегі деректерді жоғары өнімділікпен оқуды қамтамасыз ететіндіктен, DLH-де пайдалану үшін басым нұсқа болып табылады.

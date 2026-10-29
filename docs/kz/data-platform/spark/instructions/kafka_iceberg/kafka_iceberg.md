@@ -1,5 +1,9 @@
 # {heading(Cloud Kafka-дан Cloud Iceberg Metastore-ға оқиғаларды ағындық өңдеуге арналған конвейер жасау)[id=kafka_iceberg]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Spark, Cloud Kafka және Cloud Iceberg Metastore сервистері нақты уақыт режимінде оқиғаларды ағындық өңдеуге арналған конвейер жасауға мүмкіндік береді, ол:

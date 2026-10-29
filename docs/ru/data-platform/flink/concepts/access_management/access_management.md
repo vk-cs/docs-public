@@ -1,5 +1,9 @@
 # {heading(Управление доступом в VK Private Cloud)[id=flink-concepts-iam]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_access_management.md)[tags=dp_private_access_intro]}
 
 {include(../../../_includes/_access_management.md)[tags=dp_private_access_roles]}

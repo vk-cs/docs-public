@@ -1,5 +1,9 @@
 # {heading(About the service)[id=mlflow_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 MLflow is an open source platform for managing the full lifecycle of machine learning (ML) models. It allows you to organize centralized tracking and storage of: models, experiment parameters, and artifacts of data specialists' work. For more information about MLflow, see the [official documentation](https://mlflow.org/docs/latest/).

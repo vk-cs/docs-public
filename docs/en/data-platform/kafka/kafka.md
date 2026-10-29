@@ -1,1 +1,5 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 A service for creating and managing Apache Kafka® clusters in the VK Cloud infrastructure. It provides ease of integration into the project infrastructure, reliability and scalability of the system, minimal delays and high throughput, provides fault-tolerant pipelines operating on the principle of “publication /subscription”.

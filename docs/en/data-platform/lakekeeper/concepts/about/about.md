@@ -1,5 +1,9 @@
 # {heading(About the service)[id=lakekeeper_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Lakekeeper is a data catalog for Data Lakehouse, implemented on top of the Apache Iceberg REST Catalog API. The catalog manages collections of tables grouped into namespaces. For more information about Lakekeeper, see the [official documentation](https://docs.lakekeeper.io/docs/nightly/concepts/).

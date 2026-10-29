@@ -1,5 +1,9 @@
 # {heading(Spark-тапсырмасын іске қосу кезіндегі қате: The node was low on resource: ephemeral-storage)[id=ephemeral_storage_error]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=ephemeral_storage_error_problem]}

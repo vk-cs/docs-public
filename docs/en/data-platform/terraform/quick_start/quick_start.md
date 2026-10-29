@@ -1,5 +1,9 @@
 # {heading(Quick start)[id=terraform_quick_start]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Preparatory steps)[id=terraform_quick_start_preparations]}

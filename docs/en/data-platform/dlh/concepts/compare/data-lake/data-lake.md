@@ -1,5 +1,9 @@
 # {heading(Data Lake)[id=dlh_data-lake]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Data Lake or *data lakes* is an enterprise data warehouse (EDW) architecture that emerged as an alternative to {linkto(../dwh#dlh_dwh)[text=%text]} (DWH) for storing large volumes of data in their original format.

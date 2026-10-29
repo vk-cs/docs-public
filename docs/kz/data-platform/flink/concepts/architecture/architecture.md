@@ -1,5 +1,9 @@
 # {heading(Сервис архитектурасы)[id=flink_architecture]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Flink архитектурасы үлестірілген ағындық есептеулер тұжырымдамасының айналасында құрылған және бірнеше компоненттен тұрады: 

@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Renaming service instance)[id=rename]}
 
 {tabs}

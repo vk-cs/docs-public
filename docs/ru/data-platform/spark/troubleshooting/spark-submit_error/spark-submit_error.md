@@ -1,5 +1,9 @@
 # {heading(Ошибка при работе со скриптом spark-submit)[id=spark-submit_error]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=spark-submit_error_problem]}
 
 Не работает запуск Spark-задач с помощью скрипта `spark-submit`. 

@@ -1,5 +1,9 @@
 # {heading(User access management)[id=trino_rbac]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In Cloud Trino, user access management is performed by adding rules for actions with objects: catalogs, schemas, and tables. These rules define which SQL commands the user can execute. For more information about how rules work and the privileges for executing SQL commands, see the article {linkto(../../concepts/rbac_info#rbac_info)[text=%text]}.

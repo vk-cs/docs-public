@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=dlh_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Data Lakehouse (DLH) — бұл {var(cloud)} платформасында ұйымдастыруға болатын деректерді басқарудың гибридті архитектурасы. Ол {linkto(../compare/data-lake#dlh_data-lake)[text=%text]} ауқымдылығы мен икемділігін {linkto(../compare/dwh#dlh_dwh)[text=%text]} сенімділігі және құрылымдылығымен біріктіреді. Мұндай архитектура:

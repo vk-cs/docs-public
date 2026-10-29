@@ -1,5 +1,9 @@
 # {heading(Введение)[id=dp_index]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Общая информация)[id=dp_index_inform]}
 
 Полное наименование системы: {var(data-p)}.

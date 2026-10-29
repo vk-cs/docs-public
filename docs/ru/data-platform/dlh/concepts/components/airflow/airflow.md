@@ -1,5 +1,9 @@
 # {heading(Cloud Airflow)[id=dlh_airflow]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {linkto(../../../../airflow/concepts/about#airflow_info)[text=Cloud Airflow]} – это оркестратор потоков данных и инструмент управления запуском процессов ETL и ELT для высокопроизводительных, масштабируемых приложений реального времени. Опционально включается в архитектуру DLH при необходимости интеграции хранилища с источниками данных по {linkto(../../architecture#dlh_data_processing_models)[text=PULL-модели]}.
 
 Компонент выполняет следующие функции:

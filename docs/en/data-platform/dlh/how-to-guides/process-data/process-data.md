@@ -1,5 +1,9 @@
 # {heading(Working with data)[id=dlh_process-data]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 After deploying the basic Data Lakehouse architecture, the next step is to fill the service with data and analyze it. This instruction provides examples of loading data from three different sources into Data Lakehouse and running SQL queries to analyze the loaded data. All data manipulations are performed via SQL queries to external systems using Cloud Trino.

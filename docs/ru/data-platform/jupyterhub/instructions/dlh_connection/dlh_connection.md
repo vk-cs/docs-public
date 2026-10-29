@@ -1,5 +1,9 @@
 # {heading(Работа в DLH)[id=jupyterhub_dlh]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Для работы JupyterHub в DLH необходимо настроить подключение к Cloud Iceberg Metastore и S3.
 
 Все необходимые команды и код для настройки подключений содержатся в [примере Jupyter-ноутбука](./assets/iceberg.ipynb "download"). Загрузите его и импортируйте в ваш Jupyter-ноутбук или настройте подключения самостоятельно по инструкции ниже.

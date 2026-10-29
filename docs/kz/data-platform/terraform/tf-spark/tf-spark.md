@@ -1,5 +1,9 @@
 # {heading(Spark кластерін жасау)[id=tf_spark]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Сіз Terraform көмегімен {var(data-p)} ішінде Cloud Spark кластерін және онымен байланысты инфрақұрылымды автоматты түрде өрістете аласыз.

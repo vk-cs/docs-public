@@ -1,5 +1,9 @@
 # {heading(Управление топиками через Kafka CLI)[id=kafka_topics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 С помощью Kafka CLI можно создать топик Cloud Kafka, посмотреть его параметры, изменить настройки и удалить топик.
 
 Доступные действия с топиками зависят от роли, которую назначают пользователю Cloud Kafka при {linkto(../create#kafka_create)[text=создании экземпляра]} или {linkto(../management#kafka_user-add)[text=добавлении учетной записи]}:

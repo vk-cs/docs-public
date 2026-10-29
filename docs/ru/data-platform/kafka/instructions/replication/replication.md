@@ -1,5 +1,9 @@
 # {heading(Репликация данных из внешних кластеров Kafka)[id=kafka_replication]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В сервисе Cloud Kafka данные из внешних кластеров Kafka можно реплицировать в текущий кластер с помощью компонента MirrorMaker.
 
 ## {heading(Включение репликации)[id=kafka_replication_enable]}

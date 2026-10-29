@@ -1,5 +1,9 @@
 # {heading(Connecting to the service instance)[id=trino_connect]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The Cloud Trino service instance can only be accessed via TLS using the web interface and third-party clients, such as DBeaver.

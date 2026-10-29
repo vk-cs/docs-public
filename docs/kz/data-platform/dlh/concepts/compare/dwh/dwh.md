@@ -1,5 +1,9 @@
 # {heading(Data Warehouse)[id=dlh_dwh]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Data Warehouse (DWH) — *корпоративтік деректер қоймасы* (КДҚ) идеясын іске асыратын алғашқы архитектуралық тұжырымдамалардың бірі. КДҚ — бұл әртүрлі көздерден жиналған ұйымның үлкен көлемдегі деректерін сақтайтын және оларды басқаратын орталық репозиторий.

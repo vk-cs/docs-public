@@ -1,5 +1,9 @@
 # {heading(About the service)[id=jupyterhub_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 JupyterHub is a tool for creating a multi-user environment based on Jupyter Notebook. It allows you to run multiple separate Jupyter Notebook sessions for different users via a web interface and manage them. For more information about JupyterHub, see the [official documentation](https://jupyterhub.readthedocs.io/en/stable/).

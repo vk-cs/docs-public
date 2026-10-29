@@ -1,5 +1,9 @@
 # {heading(Подключение к экземпляру сервиса)[id=opensearch_connect]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Подключиться к экземпляру сервиса OpenSearch можно с помощью веб-интерфейса, curl и сторонних клиентов.
 
 {include(../../../_includes/_connect.md)[tags=connect-secure]}

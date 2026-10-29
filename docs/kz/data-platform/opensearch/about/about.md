@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=opensearch_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 OpenSearch — іздеу жүйелері мен талдау шешімдерін құруға арналған бағдарламалық кешен. Сервис OpenSearch іздеу платформасын және деректерді визуализациялау мен талдауға арналған OpenSearch Dashboards веб-интерфейсін қамтиды. Толығырақ [ресми құжаттамадан](https://docs.opensearch.org/docs/latest/) қараңыз.

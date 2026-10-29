@@ -1,5 +1,9 @@
 # {heading(О сервисе)[id=spark_info]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_spark.md)[tags=intro]}
 
 ## {heading(Возможности сервиса)[id=capabilities]}

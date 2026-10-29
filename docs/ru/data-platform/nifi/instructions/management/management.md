@@ -1,5 +1,9 @@
 # {heading(Работа с компонентами сервиса)[id=nifi_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_standalone.md)[tags=difference_management]}
 
 ## {heading(Просмотр общей информации)[id=nifi_view_info]}

@@ -1,5 +1,9 @@
 # {heading(Creating a pipeline for streaming event processing from Cloud Kafka to Cloud Iceberg Metastore)[id=kafka_iceberg]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The Cloud Spark, Cloud Kafka, and Cloud Iceberg Metastore services allow you to create a streaming event processing pipeline that can:
