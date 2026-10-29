@@ -4,7 +4,7 @@
   "metaDescription": "Learn the difference between Kubernetes clusters of the first and second generations in the Managed Containers service on the VK Cloud platform: advantages of Managed Kubernetes, automation, service projects",
   "sectionTitle": "Cluster generations",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "uuid": "c57919ca-37b6-4c37-84f3-e047de2b5cb4",
   "build": {
     "for": [

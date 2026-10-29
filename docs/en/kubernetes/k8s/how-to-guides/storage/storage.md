@@ -7,7 +7,7 @@
    When creating the cluster:
 
    - Select the **Assign external IP** option.
-   - Create one group of worker nodes with virtual machine type `STD3-2-8` in the `MS1` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
+   - Create one group of worker nodes with virtual machine type `STD3-2-8` in the `PA2` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
 
     For example, you can create one group of nodes with virtual machine type `STD3-2-8`.
 
@@ -58,14 +58,14 @@ This example will create:
 
 To connect a PV using static PVC:
 
-1. [Create a network HDD](/en/computing/iaas/instructions/volumes).
+1. [Create a network SSD](/en/computing/iaas/instructions/volumes).
 
    When creating, specify:
 
    - **Disk name:** any name, such as `disk-tea`.
    - **Source:** `empty disk`.
-   - **Disk type:** `network HDD (ceph-hdd)`.
-   - **Availability zone:** `MS1`.
+   - **Disk type:** `network SSD (ceph-ssd)`.
+   - **Availability zone:** `PA2`.
    - **Size:** `1 GB`.
 
    Leave other options and settings unchanged.
@@ -77,7 +77,7 @@ To connect a PV using static PVC:
    1. The storage sizes specified in the parameters `spec.capacity.storage` for the PersistentVolume resource and `spec.resources.requests.storage` for the PersistentVolumeClaim resource must match the size of the corresponding disk. In this example it is 1 GB.
    1. For the PersistentVolumeClaim resource, use an empty value in the `storageClassName` storage class parameter.
    1. The storage access mode is specified in the `spec.accessModes` parameter for the PersistentVolume resource.
-   1. The availability zones of the disk and the worker node on which the pod (application) will be located must match. Otherwise an attempt to mount a PV corresponding to the disk on this node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use a disk from the same zone.
+   1. The availability zones of the disk and the worker node on which the pod (application) will be located must match. Otherwise an attempt to mount a PV corresponding to the disk on this node will fail. In this example, the pod will be placed on a group of worker nodes in the `PA2` availability zone and use a disk from the same zone.
    1. ReclaimPolicy `Retain` is used for the permanent volume. The `Delete` policy is not used so that you can monitor the state of the disk manually and not accidentally delete it.
 
 1. Create a manifest for the `tea` application.
@@ -194,7 +194,7 @@ To connect a PV using dynamic PVC:
 1. Examine the connection features:
 
    1. The required storage size is specified in the `spec.resources.requests.storage` parameter of the PersistentVolumeClaim resource. In this example it is 1 GB.
-   1. For the PersistentVolumeClaim resource, specify the storage class in the `spec.storageClassName` parameter. The storage class must use the same availability zone as the worker node on which the pod (application) will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pod on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. For the PersistentVolumeClaim resource, specify the storage class in the `spec.storageClassName` parameter. The storage class must use the same availability zone as the worker node on which the pod (application) will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pod on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `PA2` availability zone and use the `csi-ceph-ssd-pa2` storage class from the same zone.
    1. The storage access mode is set in the `spec.accessModes` parameter for the PersistentVolumeClaim resource.
    1. ReclaimPolicy `Delete` is used for PV (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the PV will automatically be deleted.
 
@@ -214,7 +214,7 @@ To connect a PV using dynamic PVC:
      resources:
        requests:
          storage: 1Gi
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
 
    ---
    apiVersion: apps/v1
@@ -305,7 +305,7 @@ To connect a PV to multiple pods using dynamic PVC:
       {/note}
 
    1. The required storage size is specified in the `spec.volumeClaimTemplates.spec.resources.requests.storage` parameter of the StatefulSet resource. In this example it is 1 GB.
-   1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `MS1` availability zone and use the `csi-ceph-hdd-ms1` storage class from the same zone.
+   1. The storage class is specified in the `spec.volumeClaimTemplates.spec.storageClassName` parameter of the StatefulSet resource. The storage class must use the same availability zone as the worker node on which the sub-application will reside. Otherwise, an attempt to connect a PV corresponding to the PVC to the pad on that node will fail. In this example, the pod will be placed on a group of worker nodes in the `PA2` availability zone and use the `csi-ceph-ssd-pa2` storage class from the same zone.
    1. The storage access mode is set in the `spec.volumeClaimTemplates.spec.accessModes` parameter of the StatefulSet resource.
    1. ReclaimPolicy `Delete` is used for permanent volume (it follows from selected storage class). When the PVC is deleted, the disk corresponding to the permanent volume will be automatically deleted.
 
@@ -330,7 +330,7 @@ To connect a PV to multiple pods using dynamic PVC:
            name: juice-pvc
          spec:
            accessModes: ["ReadWriteOnce"]
-           storageClassName: "csi-ceph-hdd-ms1"
+           storageClassName: "csi-ceph-ssd-pa2"
            resources:
              requests:
                storage: 1Gi

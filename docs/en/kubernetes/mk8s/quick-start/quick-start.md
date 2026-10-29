@@ -35,7 +35,7 @@ After completing the quickstart, {linkto(#mk8s-quick-start-delete-resources)[tex
 
    1. **Cluster name**: for example, `vk-cloud-k8s-quickstart`.
    1. **Cluster type**: `Standard`.
-   1. **Availability zone:** `Moscow (MS1)`.
+   1. **Availability zone:** `Moscow (PA2)`.
 
       {note:info}
 
@@ -56,7 +56,7 @@ After completing the quickstart, {linkto(#mk8s-quick-start-delete-resources)[tex
 1. In the **Node group** block, click the **Set up** button and specify the following:
 
    1. **Node type:** `STD3-4-4`.
-   1. **Availability zone:** `Moscow (MS1)`.
+   1. **Availability zone:** `Moscow (PA2)`.
 
       {note:info}
 
@@ -437,7 +437,7 @@ To deploy the applications:
    metadata:
      name: k8s-demo-pvc-coffee
    spec:
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
      accessModes:
        - ReadWriteOnce
      resources:
@@ -500,7 +500,7 @@ To deploy the applications:
    metadata:
      name: k8s-demo-pvc-tea
    spec:
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
      accessModes:
        - ReadWriteOnce
      resources:
@@ -557,7 +557,7 @@ To deploy the applications:
 
    {note:warn}
 
-   Note that the configuration files `deploy-coffee.yaml` and `deploy-tea.yaml` for Persistent Volume Claim specify the storage class corresponding to the availability zone of the node (MS1) on which you plan to deploy applications.
+   Note that the configuration files `deploy-coffee.yaml` and `deploy-tea.yaml` for Persistent Volume Claim specify the storage class corresponding to the availability zone of the node (PA2) on which you plan to deploy applications.
 
    Attempting to place an application on a node in one availability zone to which a volume from another availability zone is mounted will fail.
 

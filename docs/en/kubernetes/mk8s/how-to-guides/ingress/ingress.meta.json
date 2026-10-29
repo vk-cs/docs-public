@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "Using Ingress",
   "icon": "",
-  "weight": 14,
+  "weight": 12,
   "build": {
     "for": [
       "public"

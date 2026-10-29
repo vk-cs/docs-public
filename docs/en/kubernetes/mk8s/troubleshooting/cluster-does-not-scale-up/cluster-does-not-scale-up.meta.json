@@ -4,7 +4,7 @@
   "metaDescription": "What to do if new nodes are not added and the pods remain in the Pending state, even though Cluster Autoscaler is enabled",
   "sectionTitle": "Cluster Autoscaler is enabled, but no new nodes are added",
   "icon": "",
-  "weight": 4,
+  "weight": 7,
   "build": {
     "for": [
       "public"

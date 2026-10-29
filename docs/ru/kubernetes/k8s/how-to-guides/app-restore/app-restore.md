@@ -151,7 +151,7 @@ persistentvolumeclaim "application-storage" not found
 
    ```text
    NAME                   PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE
-   csi-ceph-hdd           cinder.csi.openstack.org       Delete          WaitForFirstConsumer
+   csi-ceph-ssd           cinder.csi.openstack.org       Delete          WaitForFirstConsumer
    csi-ceph-ssd (default) cinder.csi.openstack.org       Delete          WaitForFirstConsumer
    ```
 

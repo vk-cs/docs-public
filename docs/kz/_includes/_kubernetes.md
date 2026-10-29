@@ -13,7 +13,7 @@
 
     1. **Кластер атауы:** мысалы, `vk-cloud-k8s-quickstart`.
     1. **Кластер түрі:** `Стандартный`.
-    1. **Қолжетімділік аймағы:** `Москва (MS1)`.
+    1. **Қолжетімділік аймағы:** `Москва (PA2)`.
 
        {note:info}
 
@@ -33,7 +33,7 @@
 1. **Торап топтары** блогындағы **Баптау** түймесін басып, мыналарды орнатыңыз:
 
     1. **Node-тораптар түрі:** `STD3-4-4`.
-    1. **Қолжетімділік аймағы:** `Москва (MS1)`.
+    1. **Қолжетімділік аймағы:** `Москва (PA2)`.
 
         {note:info}
 
@@ -416,7 +416,7 @@ Docker тізіліміне жүктелген `nginx-k8s-demo` образы н�
    metadata:
      name: k8s-demo-pvc-coffee
    spec:
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
      accessModes:
        - ReadWriteOnce
      resources:
@@ -479,7 +479,7 @@ Docker тізіліміне жүктелген `nginx-k8s-demo` образы н�
    metadata:
      name: k8s-demo-pvc-tea
    spec:
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
      accessModes:
        - ReadWriteOnce
      resources:
@@ -536,7 +536,7 @@ Docker тізіліміне жүктелген `nginx-k8s-demo` образы н�
 
    {note:warn}
 
-   `deploy-coffee.yaml` және `deploy-tea.yaml` конфигурациялық файлдарында Persistent Volume Claim үшін қосымшалар жайылдырылады деп жоспарланған тораптың қолжетімділік аймағына (MS1) сәйкес келетін сақтау класы көрсетілетініне назар аударыңыз.
+   `deploy-coffee.yaml` және `deploy-tea.yaml` конфигурациялық файлдарында Persistent Volume Claim үшін қосымшалар жайылдырылады деп жоспарланған тораптың қолжетімділік аймағына (PA2) сәйкес келетін сақтау класы көрсетілетініне назар аударыңыз.
 
    Бір қолжетімділік аймағындағы торапқа басқа қолжетімділік аймағындағы том монтирленген қолданбаны орналастыру әрекеті сәтсіз аяқталады.
 

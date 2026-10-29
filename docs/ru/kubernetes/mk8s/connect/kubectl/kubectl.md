@@ -232,7 +232,7 @@
 
 ## {heading(Подключение к кластеру)[id=mk8s-kubectl-connect]}
 
-{include(/ru/_includes/_kubeconfig.md)}
+{include(/ru/_includes/_kubeconfig.md)[tags=novariables,variables]}
 
 
 ## {heading(Проверка подключения к кластеру)[id=mk8s-kubectl-check-connection]}

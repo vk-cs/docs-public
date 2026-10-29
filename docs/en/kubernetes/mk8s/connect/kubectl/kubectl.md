@@ -232,7 +232,7 @@ The way to connect to the cluster depends on its IP address:
 
 ## {heading(Connecting to cluster)[id=connect]}
 
-{include(/en/_includes/_kubeconfig.md)}
+{include(/en/_includes/_kubeconfig.md)[tags=novariables,variables]}
 
 ## {heading(Checking connection to cluster)[id=check_connection]}
 

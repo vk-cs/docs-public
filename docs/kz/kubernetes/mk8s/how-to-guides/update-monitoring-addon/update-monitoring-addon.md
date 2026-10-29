@@ -528,7 +528,7 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
 
         persistence:
           enabled: true
-          storageClassName: "csi-ceph-hdd-gz1"
+          storageClassName: "csi-ceph-ssd-gz1"
           accessModes:
           - ReadWriteOnce
           size: 1Gi
@@ -552,7 +552,7 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
           storage:
             volumeClaimTemplate:
               spec:
-                storageClassName: "csi-ceph-hdd-gz1"
+                storageClassName: "csi-ceph-ssd-gz1"
                 accessModes:
                 - ReadWriteOnce
                 resources:

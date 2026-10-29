@@ -4,7 +4,7 @@
   "metaDescription": "Configuring and installing the Docker Registry add-on",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 5,
+  "weight": 3,
   "uuid": "c5ff4587-e97f-4ac5-9e6b-7e8c96181f30",
   "build": {
     "for": [

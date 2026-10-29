@@ -520,7 +520,7 @@
 
         persistence:
           enabled: true
-          storageClassName: "csi-ceph-hdd-gz1"
+          storageClassName: "csi-ceph-ssd-gz1"
           accessModes:
           - ReadWriteOnce
           size: 1Gi
@@ -544,7 +544,7 @@
           storage:
             volumeClaimTemplate:
               spec:
-                storageClassName: "csi-ceph-hdd-gz1"
+                storageClassName: "csi-ceph-ssd-gz1"
                 accessModes:
                 - ReadWriteOnce
                 resources:

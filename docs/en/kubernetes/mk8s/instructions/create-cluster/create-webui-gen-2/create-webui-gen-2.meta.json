@@ -3,7 +3,7 @@
   "metaDescription": "Learn how to create a Kubernetes cluster using the Managed Containers service on the VK Cloud platform. Recommendations for choosing the cluster configuration depending on the tasks",
   "sectionTitle": "Creating a cluster from management console",
   "icon": "",
-  "weight": 3,
+  "weight": 1,
   "build": {
     "for": [
       "public"

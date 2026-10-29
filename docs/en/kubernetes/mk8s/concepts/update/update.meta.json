@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "Cluster version update",
   "icon": "",
-  "weight": 9,
+  "weight": 12,
   "build": {
     "for": [
       "public"

@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "CIS Benchmarks test results for Kubernetes clusters",
   "icon": "",
-  "weight": 14,
+  "weight": 20,
   "build": {
     "for": [
       "public"

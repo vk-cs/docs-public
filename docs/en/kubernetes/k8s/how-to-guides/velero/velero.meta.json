@@ -4,7 +4,7 @@
   "metaDescription": "Learn how to back up clusters in the Managed Containers service using Velero, as well as how to set up scheduled backups in the cron format",
   "sectionTitle": "Using Velero",
   "icon": "",
-  "weight": 4,
+  "weight": 20,
   "uuid": "75266620-3257-4118-815c-20bebf6272e7",
   "build": {
     "for": [

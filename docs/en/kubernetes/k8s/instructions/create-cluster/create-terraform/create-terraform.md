@@ -124,7 +124,7 @@ Here:
 
 - `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](/en/kubernetes/k8s/concepts/architecture) section.
 - `labels.cluster_node_volume_type` — the volume type for the [storage](/en/kubernetes/k8s/concepts/storage#storage_types) of master nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
-- `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `PA2`.
+- `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `GZ1`, `ME1`, or `PA2`.
 
    {note:info}
 
@@ -132,7 +132,7 @@ Here:
 
    {/note}
 
-- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "PA2"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones are set up automatically.
+- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["GZ1", "ME1", "PA2"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones are set up automatically.
 - `network_id` and `subnet_id` are the network and subnet identifiers, respectively. They can be specified in different ways:
 
   {tabs}

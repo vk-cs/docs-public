@@ -10,22 +10,22 @@
 
 ## {heading(1. Добавьте мультизональный класс хранения (StorageClass) для PV)[id=maz-storageclass]}
 
-1. Создайте файл манифеста для `StorageClass`, например `csi-ceph-hdd.yaml`, и добавьте в него следующее содержимое:
+1. Создайте файл манифеста для `StorageClass`, например `csi-ceph-ssd.yaml`, и добавьте в него следующее содержимое:
 
    ```yaml
    apiVersion: storage.k8s.io/v1
    kind: StorageClass
    metadata:
-     name: csi-ceph-hdd
+     name: csi-ceph-ssd
    parameters:
-     type: ceph-hdd
+     type: ceph-ssd
    provisioner: cinder.csi.openstack.org
    reclaimPolicy: Delete
    volumeBindingMode: WaitForFirstConsumer
    allowVolumeExpansion: true
    ```
    Здесь: 
-   - `type: ceph-hdd` описывает {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=тип диска]} для PV. 
+   - `type: ceph-ssd` описывает {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=тип диска]} для PV. 
    - `volumeBindingMode: WaitForFirstConsumer` откладывает создание и привязку PV до момента, когда будет создан первый под, использующий соответствующий PVC. Так этот под будет сначала запланирован на узел, и только после этого Kubernetes создаст для него PV той же зоне доступности, что и узел. Это позволит избежать ситуации, при которой под и PV окажутся в разных зонах доступности.
 
       Если после первого запуска вы попытаетесь перенести этот под в другую зону доступности, вы получите ошибку, содержащую похожий текст:
@@ -39,7 +39,7 @@
 1. Примените созданный манифест в кластере:
 
    ```console
-   kubectl apply -f csi-ceph-hdd.yaml
+   kubectl apply -f csi-ceph-ssd.yaml
    ```
 
 ## {heading(2. Создайте приложение)[id=mk8s-multiaz-storage-class-app]}
@@ -93,7 +93,7 @@
            resources:
              requests:
                storage: 1Gi
-           storageClassName: csi-ceph-hdd
+           storageClassName: csi-ceph-ssd
    ```
    {/cut}
 
@@ -137,14 +137,14 @@
       kubectl get pv -o wide
       ```
 
-   1. В выведенной таблице найдите значения столбца `NODE` для каждого из созданных PVC на основе созданного класса хранения `csi-ceph-hdd`. Пример вывода: 
+   1. В выведенной таблице найдите значения столбца `NODE` для каждого из созданных PVC на основе созданного класса хранения `csi-ceph-ssd`. Пример вывода: 
 
       ```text
       NAME                                       ...   STATUS    STORAGECLASS   ...   NODE
       ...                                        ...   ...       ...                      
-      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-0
-      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud2-2
-      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-1
+      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-0
+      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud2-2
+      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-1
       ```
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=mk8s-multiaz-storage-class-delete-resources]}

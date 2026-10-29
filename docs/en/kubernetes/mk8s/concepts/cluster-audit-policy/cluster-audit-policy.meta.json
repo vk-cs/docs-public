@@ -4,7 +4,7 @@
   "metaDescription": "A description of the policy file, audit levels, and rules that determine which cluster API events and to what extent will be logged in Cloud Audit. Find out how audit policy rules and granularity levels are configured.",
   "sectionTitle": "Cluster audit policy",
   "icon": "",
-  "weight": 13,
+  "weight": 15,
   "build": {
     "for": [
       "public"
