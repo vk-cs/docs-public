@@ -8,15 +8,15 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
 
 ## {counter(storageclass)}. Add a multi-zone StorageClass for PV
 
-1. Create a manifest file for `StorageClass`, for example `csi-ceph-hdd.yaml`, and add the following content to the file:
+1. Create a manifest file for `StorageClass`, for example `csi-ceph-ssd.yaml`, and add the following content to the file:
 
    ```yaml
    apiVersion: storage.k8s.io/v1
    kind: StorageClass
    metadata:
-     name: csi-ceph-hdd
+     name: csi-ceph-ssd
    parameters:
-     type: ceph-hdd
+     type: ceph-ssd
    provisioner: cinder.csi.openstack.org
    reclaimPolicy: Delete
    volumeBindingMode: WaitForFirstConsumer
@@ -24,7 +24,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
    ```
    Here: 
 
-   - `type: ceph-hdd` specifies the [disk type](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes) for the PV. 
+   - `type: ceph-ssd` specifies the [disk type](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes) for the PV. 
    - `volumeBindingMode: WaitForFirstConsumer` delays creating and binding the PV until the first pod that uses the respective PVC is created. This way, this pod will be scheduled for the node first, and then Kubernetes will create a PV in the same availability zone as the node. This helps to avoid situations when the pod and the PV end up in different availability zones.
 
      If you try to move this pod to another availability zone after its first run, you will receive an error containing similar text:
@@ -38,7 +38,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
 1. Apply the manifest you created in the cluster:
 
    ```console
-   kubectl apply -f csi-ceph-hdd.yaml
+   kubectl apply -f csi-ceph-ssd.yaml
    ```
 
 ## {counter(storageclass)}. Create an application
@@ -92,7 +92,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
            resources:
              requests:
                storage: 1Gi
-           storageClassName: csi-ceph-hdd
+           storageClassName: csi-ceph-ssd
    ```
    {/cut}
 
@@ -136,14 +136,14 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
       kubectl get pv -o wide
       ```
 
-   1. In the output table, find the values of the `NODE` column for each of the created PVCs based on the created `csi-ceph-hdd` storage class. Output example:
+   1. In the output table, find the values of the `NODE` column for each of the created PVCs based on the created `csi-ceph-ssd` storage class. Output example:
 
       ```text
       NAME                                       ...   STATUS    STORAGECLASS   ...   NODE
       ...                                        ...   ...       ...                      
-      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-0
-      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud2-2
-      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-1
+      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-0
+      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud2-2
+      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-1
       ```
 
 ## Delete unused resources

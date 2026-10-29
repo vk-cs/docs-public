@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "Configuring Canary Deployment Ingress",
   "icon": "",
-  "weight": 5,
+  "weight": 7,
   "build": {
     "for": [
       "public"

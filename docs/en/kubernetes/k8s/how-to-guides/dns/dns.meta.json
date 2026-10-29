@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "DNS settings for cluster",
   "icon": "",
-  "weight": 5,
+  "weight": 4,
   "uuid": "d45ac3f7-de12-428c-97d4-45740d065a17",
   "build": {
     "for": [

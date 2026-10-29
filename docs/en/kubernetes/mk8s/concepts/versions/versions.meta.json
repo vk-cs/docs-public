@@ -4,7 +4,7 @@
   "metaDescription": "Kubernetes,K8S,version,components,history,policy,support",
   "sectionTitle": "About Kubernetes versions and components",
   "icon": "",
-  "weight": 10,
+  "weight": 11,
   "build": {
     "for": [
       "public"

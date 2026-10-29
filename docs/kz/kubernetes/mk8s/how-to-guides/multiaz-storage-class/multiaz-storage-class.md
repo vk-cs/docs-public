@@ -12,22 +12,22 @@ Kubernetes подты жоспарлау кезінде оған сол подт
 
 ## {heading(1. PV үшін көпаймақты сақтау класын (StorageClass) қосыңыз)[id=maz-storageclass]}
 
-1. `StorageClass` үшін манифест файлын, мысалы `csi-ceph-hdd.yaml`, жасаңыз да, оған келесі мазмұнды қосыңыз:
+1. `StorageClass` үшін манифест файлын, мысалы `csi-ceph-ssd.yaml`, жасаңыз да, оған келесі мазмұнды қосыңыз:
 
    ```yaml
    apiVersion: storage.k8s.io/v1
    kind: StorageClass
    metadata:
-     name: csi-ceph-hdd
+     name: csi-ceph-ssd
    parameters:
-     type: ceph-hdd
+     type: ceph-ssd
    provisioner: cinder.csi.openstack.org
    reclaimPolicy: Delete
    volumeBindingMode: WaitForFirstConsumer
    allowVolumeExpansion: true
    ```
    Мұнда:
-   - `type: ceph-hdd` PV үшін {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=диск түрін]} сипаттайды.
+   - `type: ceph-ssd` PV үшін {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=диск түрін]} сипаттайды.
    - `volumeBindingMode: WaitForFirstConsumer` тиісті PVC пайдаланатын алғашқы под жасалғанға дейін PV жасауды және оған байланыстыруды кейінге қалдырады. Осылайша, бұл под алдымен түйінге жоспарланады, содан кейін ғана Kubernetes ол үшін түйінмен бірдей қолжетімділік аймағындағы PV жасайды. Бұл под пен PV әртүрлі қолжетімділік аймақтарында болып қалатын жағдайды болдырмауға мүмкіндік береді.
 
       Егер бірінші іске қосудан кейін осы подты басқа қолжетімділік аймағына көшіруге әрекеттенсеңіз, ұқсас мәтіні бар қатені аласыз:
@@ -41,7 +41,7 @@ Kubernetes подты жоспарлау кезінде оған сол подт
 1. Кластерде жасалған манифесті қолданыңыз:
 
    ```console
-   kubectl apply -f csi-ceph-hdd.yaml
+   kubectl apply -f csi-ceph-ssd.yaml
    ```
 
 ## {heading(2. Қолданбаны жасаңыз)[id=mk8s-multiaz-storage-class-app]}
@@ -95,7 +95,7 @@ Kubernetes подты жоспарлау кезінде оған сол подт
            resources:
              requests:
                storage: 1Gi
-           storageClassName: csi-ceph-hdd
+           storageClassName: csi-ceph-ssd
    ```
    {/cut}
 
@@ -139,14 +139,14 @@ Kubernetes подты жоспарлау кезінде оған сол подт
       kubectl get pv -o wide
       ```
 
-   1. Шығарылған кестеде жасалған `csi-ceph-hdd` сақтау класы негізіндегі әрбір PVC үшін `NODE` бағанының мәндерін табыңыз. Шығыс мысалы:
+   1. Шығарылған кестеде жасалған `csi-ceph-ssd` сақтау класы негізіндегі әрбір PVC үшін `NODE` бағанының мәндерін табыңыз. Шығыс мысалы:
 
       ```text
       NAME                                       ...   STATUS    STORAGECLASS   ...   NODE
       ...                                        ...   ...       ...                      
-      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-0
-      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud2-2
-      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-hdd   ...   test-multiaz-node-group-ud1-1
+      pvc-58fd0c60-e825-42a9-a187-b9f092bb077d         Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-0
+      pvc-eb0ee40d-6580-4902-a832-ea192e32f910   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud2-2
+      pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-1
       ```
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=mk8s-multiaz-storage-class-delete-resources]}

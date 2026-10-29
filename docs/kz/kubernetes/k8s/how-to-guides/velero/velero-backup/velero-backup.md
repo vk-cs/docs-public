@@ -18,7 +18,7 @@
 
 Резервтік көшірмені жасау және одан қалпына келтірумен танысу үшін `coffee` демо-қосымшасын жасаңыз. Бұл қосымшаға тұрақты том (persistent volume) қосылады.
 
-1. Манифест файлын жасаңыз:
+1. Манифест файлын{ifdef(public)} worker-түйіндер тобыңыз орналасқан қолжетімділік аймағындағы {linkto(../../../concepts/storage#k8s-storage-storage-classes)[text=сақтау класын]} көрсете отырып{/ifdef} жасаңыз:
 
    {cut(coffee.yaml)}
 
@@ -40,7 +40,7 @@
      resources:
        requests:
          storage: 1Gi
-     storageClassName: "csi-ceph-hdd-gz1"
+     storageClassName: "<САҚТАУ_КЛАСЫ>"
 
    ---
    apiVersion: apps/v1

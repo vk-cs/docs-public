@@ -40,6 +40,7 @@
 
 - Ceph SSD соответствует `ceph-ssd` в Cinder.
 - High-IOPS SSD соответствует `high-iops` в Cinder.
+- High-IOPS HA SSD соответствует `high-iops-ha` в Cinder.
 
 Применение Cinder CSI позволяет:
 
@@ -132,46 +133,6 @@
 | PA2                 
 | Retain
 
-| csi-ceph-hdd-gz1                
-| `ceph-hdd`
-| GZ1                 
-| Delete
-
-| csi-ceph-hdd-gz1-retain                
-| `ceph-hdd`
-| GZ1                 
-| Retain
-
-| csi-ceph-hdd-me1                
-| `ceph-hdd`
-| ME1                 
-| Delete
-
-| csi-ceph-hdd-me1-retain         
-|`ceph-hdd`
-| ME1                 
-| Retain
-
-| csi-ceph-hdd-pa2                
-| `ceph-hdd`
-| PA2                 
-| Delete
-
-| csi-ceph-hdd-pa2-retain         
-|`ceph-hdd`
-| PA2                 
-| Retain
-
-| csi-ceph-hdd-ms1                
-| `ceph-hdd`
-| MS1                 
-| Delete
-
-| csi-ceph-hdd-ms1-retain                
-| `ceph-hdd`
-| MS1                 
-| Retain
-
 | csi-high-iops-gz1               
 |`high-iops`
 | GZ1                 
@@ -210,6 +171,16 @@
 | csi-high-iops-pa2-retain        
 | `high-iops`
 | PA2              
+| Retain
+
+| csi-highops-ha-me1              
+| `high-iops-ha`
+| ME1                 
+| Delete
+
+| csi-highops-ha-me1-retain       
+| `high-iops-ha`
+| ME1                 
 | Retain
 |===
 

@@ -309,7 +309,7 @@
 {ifdef(public)}
 ## {heading(Подключение к кластеру)[id=k8s-kubectl-connect]}
 
-{include(/ru/_includes/_kubeconfig.md)}
+{include(/ru/_includes/_kubeconfig.md)[tags=novariables,variables]}
 {/ifdef}
 
 {ifndef(public)}

@@ -118,7 +118,7 @@
 Недоступные типы дисков:
 
 [cols="2,1,1", options="header"]
-
+|===
 |Тип диска
 |Название в API
 |Зона доступности
@@ -133,7 +133,6 @@
 |===
 
 {/cut}
-{/ifdef}
 
 {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
 В {var(cloud)} поддерживаются следующие типы дисков:

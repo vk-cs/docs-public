@@ -4,7 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "Connecting LL NVMe disks to worker nodes",
   "icon": "",
-  "weight": 8,
+  "weight": 7,
   "build": {
     "for": [
       "public"

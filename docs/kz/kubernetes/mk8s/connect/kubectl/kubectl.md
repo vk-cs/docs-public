@@ -236,7 +236,7 @@
 
 ## {heading(Кластерге қосылу)[id=mk8s-kubectl-connect]}
 
-{include(/kz/_includes/_kubeconfig.md)}
+{include(/kz/_includes/_kubeconfig.md)[tags=novariables,variables]}
 
 ## {heading(Кластерге қосылуды тексеру)[id=mk8s-kubectl-check-connection]}
 

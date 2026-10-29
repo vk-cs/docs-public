@@ -54,10 +54,11 @@ Before performing any operation on a cluster from Terraform, read the informatio
      node_count = <number of nodes in the group>
      cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
      flavor_id = data.vkcs_compute_flavor.k8s-node-group-flavor.id
+     availability_zones = ["<availability zone>"]
    }
    ```
 
-   If necessary, specify additional settings given in the resource documentation.
+   By default, a node group is created in the cluster zone. To select a different zone, set the `availability_zones` parameter. For the `Moscow` region, the available zones are `GZ1`, `ME1`, and `PA2`. If necessary, specify additional settings given in the resource documentation.
 
 1. Check correctness of the Terraform configuration file:
 

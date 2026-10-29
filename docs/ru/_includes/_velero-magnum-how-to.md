@@ -5,7 +5,7 @@
 {includetag(prep)}
 
 {ifdef(public)}
-{include(/ru/_includes/_create-test-cluster.md)}
+{include(/ru/_includes/_create-test-cluster.md)[tags=magnum]}
    Разместите в зоне доступности `ME1` одну или несколько групп worker-узлов. Остальные параметры кластера выберите на свое усмотрение.
 1. {linkto(../../../connect/kubectl#k8s-kubectl)[text=Убедитесь]}, что вы можете подключиться к кластеру с помощью `kubectl`.
 1. {linkto(../../../install-tools/velero#k8s-velero)[text=Установите и настройте]} Velero, если это еще не сделано.

@@ -4,7 +4,7 @@
   "metaDescription": "How the cluster can adapt to the demands of the workload.",
   "sectionTitle": "Scaling cluster nodes",
   "icon": "",
-  "weight": 8,
+  "weight": 9,
   "build": {
     "for": [
       "public"

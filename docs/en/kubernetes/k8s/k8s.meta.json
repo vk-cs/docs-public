@@ -4,6 +4,7 @@
   "metaDescription": "",
   "sectionTitle": "Managed Containers for first-generation clusters",
   "icon": "",
+  "weight": 2,
   "relativeSections": [
     {
       "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/k8s/create"

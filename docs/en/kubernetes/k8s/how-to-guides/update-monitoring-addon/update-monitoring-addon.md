@@ -518,7 +518,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
         persistence:
           enabled: true
-          storageClassName: "csi-ceph-hdd-gz1"
+          storageClassName: "csi-ceph-ssd-gz1"
           accessModes:
           - ReadWriteOnce
           size: 1Gi
@@ -542,7 +542,7 @@ Before you update the add-on, protect the persistent volumes used by this add-on
           storage:
             volumeClaimTemplate:
               spec:
-                storageClassName: "csi-ceph-hdd-gz1"
+                storageClassName: "csi-ceph-ssd-gz1"
                 accessModes:
                 - ReadWriteOnce
                 resources:

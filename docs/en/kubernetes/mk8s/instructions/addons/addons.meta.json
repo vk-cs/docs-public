@@ -4,7 +4,7 @@
   "metaDescription": "How to install and manage add-ons in Kubernetes cluster",
   "sectionTitle": "Working with add-ons",
   "icon": "",
-  "weight": 5,
+  "weight": 6,
   "build": {
     "for": [
       "public"

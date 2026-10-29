@@ -42,6 +42,7 @@ Kubernetes кластерінде Cinder CSI арқылы қолжетімді �
 
 - Ceph SSD Cinder-дегі `ceph-ssd` түріне сәйкес келеді.
 - High-IOPS SSD Cinder-дегі `high-iops` түріне сәйкес келеді.
+- High-IOPS HA SSD Cinder-дегі `high-iops-ha` түріне сәйкес келеді.
 
 Cinder CSI қолдану мыналарға мүмкіндік береді:
 
@@ -140,46 +141,6 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | PA2                 
 | Retain
 
-| csi-ceph-hdd-gz1                
-| `ceph-hdd`
-| GZ1                 
-| Delete
-
-| csi-ceph-hdd-gz1-retain                
-| `ceph-hdd`
-| GZ1                 
-| Retain
-
-| csi-ceph-hdd-me1                
-| `ceph-hdd`
-| ME1                 
-| Delete
-
-| csi-ceph-hdd-me1-retain         
-|`ceph-hdd`
-| ME1                 
-| Retain
-
-| csi-ceph-hdd-pa2                
-| `ceph-hdd`
-| PA2                 
-| Delete
-
-| csi-ceph-hdd-pa2-retain         
-|`ceph-hdd`
-| PA2                 
-| Retain
-
-| csi-ceph-hdd-ms1                
-| `ceph-hdd`
-| MS1                 
-| Delete
-
-| csi-ceph-hdd-ms1-retain                
-| `ceph-hdd`
-| MS1                 
-| Retain
-
 | csi-high-iops-gz1               
 |`high-iops`
 | GZ1                 
@@ -219,6 +180,16 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | `high-iops`
 | PA2              
 | Retain
+
+| csi-highops-ha-me1              
+| `high-iops-ha`
+| ME1                 
+| Delete
+
+| csi-highops-ha-me1-retain       
+| `high-iops-ha`
+| ME1                 
+| Retain
 |===
 
 Жоғарыда аталған барлық сақтау кластары:
@@ -243,14 +214,6 @@ Managed Containers сервисінде блоктық сақтау қоймал
 
 | csi-ceph-ssd-retain             
 | `ceph-ssd`
-| Retain
-
-| csi-ceph-hdd                    
-| `ceph-hdd`
-| Delete
-
-| csi-ceph-hdd-retain             
-| `ceph-hdd`
 | Retain
 
 | csi-high-iops                   

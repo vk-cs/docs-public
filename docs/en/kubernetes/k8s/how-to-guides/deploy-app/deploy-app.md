@@ -45,7 +45,7 @@ To deploy the application:
    metadata:
      name: k8s-demo-pvc-tea
    spec:
-     storageClassName: "csi-ceph-hdd-ms1"
+     storageClassName: "csi-ceph-ssd-pa2"
      accessModes:
        - ReadWriteOnce
      resources:

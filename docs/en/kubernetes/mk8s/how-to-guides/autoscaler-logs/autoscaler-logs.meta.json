@@ -4,7 +4,7 @@
   "metaDescription": "How to review Cluster Autoscaler logs",
   "sectionTitle": "Reviewing Cluster Autoscaler logs",
   "icon": "",
-  "weight": 15,
+  "weight": 30,
   "build": {
     "for": [
       "public"

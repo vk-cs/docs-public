@@ -4,7 +4,7 @@
   "metaDescription": "Configuring and installing the Docker Registry add-on",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 5,
+  "weight": 4,
   "build": {
     "for": [
       "public"
