@@ -1,5 +1,9 @@
 # {heading(Cloud Airflow)[id=airflow_metrics]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In the Cloud Airflow service, metrics are collected in Prometheus format. A panel is automatically created for each metric, which can be displayed on a dashboard.

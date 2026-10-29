@@ -1,5 +1,9 @@
 # {heading(Quick start)[id=dlh_quick-start]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The quick start covers a basic scenario for deploying the Data Lakehouse (DLH) service based on three components:

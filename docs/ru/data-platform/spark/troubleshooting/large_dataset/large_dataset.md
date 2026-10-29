@@ -1,5 +1,9 @@
 # {heading(Ошибка при обработке датасета более 100 ГБ)[id=spark_large_dataset]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=large_dataset_problem]}
 
 Spark не обрабатывает датасет размером более 100 ГБ и завершает работу с ошибкой:

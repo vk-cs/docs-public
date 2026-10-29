@@ -1,5 +1,9 @@
 # {heading(100 ГБ-тан асатын датасетті өңдеу кезіндегі қате)[id=spark_large_dataset]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=large_dataset_problem]}

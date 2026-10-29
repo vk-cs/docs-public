@@ -1,5 +1,9 @@
 # {heading(Политика поддержки версий)[id=trino_versions]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Политика поддержки версий Cloud Trino регламентирует правила поддержки версий и описывает процесс перехода на новые. Политика служит основой для выпуска обновлений и позволяют планировать работу с версиями Cloud Trino.
 
 ## {heading(О версиях)[id=trino_versions_general]}

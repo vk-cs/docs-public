@@ -1,5 +1,9 @@
 # {heading(Connecting Cloud Spark as a data processing tool)[id=dlh_connect-spark]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Including the {linkto(../../../spark#spark)[text=Cloud Spark]} service in the {linkto(../../quick-start#dlh_quick-start)[text=basic architecture]} of a Data Lakehouse (DLH) makes it possible to perform complex data transformations before the data gets into S3 object storage, unlike [Cloud Trino](../../../trino), which can implement relatively simple scenarios.

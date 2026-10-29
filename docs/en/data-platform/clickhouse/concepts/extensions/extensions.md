@@ -1,5 +1,9 @@
 # {heading(Extensions)[id=clickhouse_extensions_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud ClickHouse extensions supplement the basic DBMS functionality without changing the instance configuration. They can be {linkto(../../instructions/manage#clickhouse_extensions)[text=enabled or disabled]} at any time.

@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 When creating or editing a Cloud Spark service instance, you can configure its parameters.
 They define how the Cloud Spark instance performs tasks and interacts with other services.
 These include:

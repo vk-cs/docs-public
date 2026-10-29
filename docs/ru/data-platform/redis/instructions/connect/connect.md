@@ -1,5 +1,9 @@
 # {heading(Подключение к экземпляру сервиса)[id=redis_connect]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Подключиться к экземпляру сервиса Redis можно с помощью любого поддерживаемого клиента.
 
 {include(../../../_includes/_connect.md)[tags=connect-secure]}

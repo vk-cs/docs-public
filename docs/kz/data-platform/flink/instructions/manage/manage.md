@@ -1,5 +1,9 @@
 # {heading(Сервис данасымен жұмыс)[id=flink_management]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Дана туралы ақпаратты қарау)[id=flink_view]}

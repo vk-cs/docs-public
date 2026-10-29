@@ -1,5 +1,9 @@
 # {heading(Работа с экземпляром сервиса)[id=clickhouse_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {ifndef(public)}
 {include(../../../_includes/_standalone.md)[tags=difference_management]}
 {/ifndef}

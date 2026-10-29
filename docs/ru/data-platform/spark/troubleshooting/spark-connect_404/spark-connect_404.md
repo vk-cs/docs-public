@@ -1,5 +1,9 @@
 # {heading(Ошибка Spark Connect: 404 unimplemented)[id=spark_connect_404]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## {heading(Проблема)[id=spark_connect_404_problem]}
 
 При подключении к Spark Connect по SSH-тунелю, который проксирует запросы с `localhost` клиента до кластера Spark, возникает ошибка:

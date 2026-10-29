@@ -1,5 +1,9 @@
 # {heading(Быстрый старт)[id=dlh_quick-start]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Быстрый старт включает базовый сценарий развертывания сервиса Data Lakehouse (DLH) на основе трех компонентов:
 
 - {linkto(../concepts/components/s3#dlh_s3)[text=VK Object Storage]} — S3-хранилище, которое используется в качестве недорогого бесконечно расширяемого хранилища неструктурированных данных, получаемых из различных БД, например PostgreSQL.

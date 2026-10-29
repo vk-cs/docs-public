@@ -1,5 +1,9 @@
 # {heading(Архитектура сервиса)[id=dlh_architecture]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} собирает структурированные и неструктурированные данные из различных источников, обрабатывает их через {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} ([ETL](https://ru.wikipedia.org/wiki/ETL) или ELT) или {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} (SQL-запросы), хранит в {linkto(../components/s3#dlh_s3)[text=S3-хранилище]} с каталогизацией в {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]}, управляет метаданными в DataHub и предоставляет данные для аналитики, BI и ML через Cloud Trino, Cloud Spark или {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]}.
 
 ![](assets/arch_diagram.png){params[noBorder=true]}

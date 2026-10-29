@@ -1,5 +1,9 @@
 # {heading(Cloud Spark in the Data Lakehouse architecture)[id=dlh_spark]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../../../../spark/concepts/about#spark_info)[text=Cloud Spark]} is a framework for real-time data processing with the ability to distribute tasks across multiple compute nodes combined into clusters. It is optionally included in the DLH architecture when complex end-to-end multi-stage ETL pipelines for data processing from sources through S3 storage to end consumers need to be implemented.

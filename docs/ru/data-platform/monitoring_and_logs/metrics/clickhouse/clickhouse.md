@@ -1,5 +1,9 @@
 # {heading(Cloud ClickHouse)[id=clickhouse_metrics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В сервисе Cloud ClickHouse метрики собираются в формате Prometheus. Для каждой метрики автоматически создается панель, которую можно отобразить на дашборде.
 
 ## {heading(Метрики узлов ClickHouse)[id=clickhouse_metrics_instance]}

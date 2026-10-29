@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud Kafka is a distributed platform for transferring messages between applications. Each instance of the service is a [Apache Kafka](https://kafka.apache.org/) cluster deployed in a fault-tolerant configuration or in a single node configuration.
 
 The service operates on the “publish/subscribe” principle: producers publish messages to topics, and consumers poll the service to receive new messages. Cloud Kafka does not track which records have already been read by the consumer, but stores the records for a specified period of time. Due to this, the same message can be processed by different consumers the required number of times.

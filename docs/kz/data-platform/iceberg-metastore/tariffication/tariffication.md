@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 ## Тарификация туралы
 
 {include(/kz/_includes/_translated_by_ai.md)}

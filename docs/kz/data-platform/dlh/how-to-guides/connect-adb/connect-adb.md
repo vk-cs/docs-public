@@ -1,5 +1,9 @@
 # {heading(ClickHouse-ты аналитикалық ДҚ ретінде қосу)[id=dlh_connect-adb]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Data Lakehouse (DLH) архитектурасына жеке аналитикалық ДҚ қосу деректерді S3-қоймада сақтау қажеттілігінсіз келіп түсетін оқиғалар ағынын жылдам өңдеуге мүмкіндік береді. Мұндай ДҚ ретінде PostgreSQL пайдаланылуы мүмкін, онда жедел деректер хабарламалар ағыны немесе батчтар түрінде келіп түседі, немесе {linkto(../../../clickhouse/concepts/about#clickhouse_info)[text=Cloud ClickHouse]}.

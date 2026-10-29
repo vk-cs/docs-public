@@ -1,5 +1,9 @@
 # {heading(Версия Spark)[id=spark_version]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В Cloud Spark используется Apache Spark версии 3.5.1.
 
 ## {heading(Возможности версии 3.5.1)[id=spark_version_features]}

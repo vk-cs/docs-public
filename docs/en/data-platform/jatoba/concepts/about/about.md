@@ -1,5 +1,9 @@
 # {heading(About the service)[id=jatoba_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Jatoba is a secure DBMS based on a modernized open source PostgreSQL DBMS core. It can be used by both small organizations and large companies. For more information about Jatoba, see the [official documentation](https://jatoba.ru/).

@@ -1,5 +1,9 @@
 # {heading(О сервисе)[id=opensearch_info]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 OpenSearch — программный комплекс для создания поисковых систем и аналитических решений. Сервис содержит поисковую платформу OpenSearch и веб-интерфейс OpenSearch Dashboards для визуализации и анализа данных. Подробнее см. в [официальной документации](https://docs.opensearch.org/docs/latest/).
 
 Области применения сервиса:

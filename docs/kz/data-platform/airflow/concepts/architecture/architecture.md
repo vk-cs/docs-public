@@ -1,5 +1,9 @@
 # {heading(Сервис архитектурасы)[id=airflow_architecture]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Airflow сервисі {ifdef(public)} [Managed Containers](/kz/kubernetes) кластерлері негізінде жұмыс істейді және {/ifdef} келесі конфигурацияларда жайылтылуы мүмкін:

@@ -1,5 +1,9 @@
 # {heading(Оқыту курстары)[id=courses]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Tech оқыту платформасында пайдаланушылар үшін {var(data-p)} платформасымен жұмыс істеу негіздері бойынша курстар қолжетімді. Курстарға қол жеткізу үшін:

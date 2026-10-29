@@ -1,5 +1,9 @@
 # {heading(Access rule specifics)[id=rbac_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 In Cloud Trino, user access is managed by rules for objects: catalogs, schemas, and tables. These rules define which SQL commands a user can execute.

@@ -1,5 +1,9 @@
 # {heading(Пример создания и запуска Spark-задачи)[id=run_jobs]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В инструкции показано как создавать и запускать Spark-задачи в Cloud Spark на примере скрипта для расчета числа Пи. Все действия разделены на шаги:
 
 1. {linkto(#run_jobs_install_client)[text=Установка Spark-клиента]}.

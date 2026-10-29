@@ -1,5 +1,9 @@
 # {heading(Example of Creating and Running a Spark Job)[id=run_jobs]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 This instruction shows how to create and run Spark jobs in Cloud Spark using a script for calculating Pi as an example. All actions are divided into steps:

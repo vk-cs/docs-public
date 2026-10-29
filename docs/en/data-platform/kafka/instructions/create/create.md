@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 You can create an instance of Cloud Kafka in one of two configurations:
 
 - [Single](#creating_an_instance_in_the_single_configuration): single node configuration, not fault-tolerant. An instance in this configuration is suitable for development and testing tasks.

@@ -1,5 +1,9 @@
 # {heading(Connecting ClickHouse as an analytical DB)[id=dlh_connect-adb]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Adding a separate analytical DB to the Data Lakehouse (DLH) architecture makes it possible to quickly process the incoming stream of events without the need to store data in S3 storage. Such a DB can be PostgreSQL, where operational data arrives as a message stream or in batches, or {linkto(../../../clickhouse/concepts/about#clickhouse_info)[text=Cloud ClickHouse]}.

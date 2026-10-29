@@ -1,5 +1,9 @@
 # {heading(Connecting to a service instance)[id=clickhouse_connect]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 Cloud ClickHouse accepts connections over two protocols: TCP and HTTP. The connection to the service instance is protected with a self-signed TLS certificate.

@@ -1,5 +1,9 @@
 # {heading(About the service)[id=airflow_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Airflow is a service for programming, scheduling, and monitoring workflows based on the [Apache Airflow](https://airflow.apache.org/) platform and Kubernetes clusters.

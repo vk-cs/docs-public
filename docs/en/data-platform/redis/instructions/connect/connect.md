@@ -1,5 +1,9 @@
 # {heading(Connecting to a service instance)[id=redis_connect]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 You can connect to a Redis service instance using any supported client.

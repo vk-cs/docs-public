@@ -1,5 +1,9 @@
 # {heading(Создание экземпляра сервиса)[id=lakekeeper_create]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_standalone.md)[tags=difference]}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.

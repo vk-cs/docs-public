@@ -1,5 +1,9 @@
 # {heading(Cannot connect to Spark Connect without an authorization token)[id=spark_connect_token]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=spark_connect_token_problem]}

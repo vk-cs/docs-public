@@ -1,5 +1,9 @@
 # {heading(Data Lakehouse)[id=dlh_dlh]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Data Lakehouse (DLH) is a modern hybrid architecture that combines the advantages of {linkto(../dwh#dlh_dwh)[text=%text]} (DWH) and {linkto(../data-lake#dlh_data-lake)[text=%text]}, while eliminating their key drawbacks.

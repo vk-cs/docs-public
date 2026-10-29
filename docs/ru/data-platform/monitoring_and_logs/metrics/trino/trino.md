@@ -1,5 +1,9 @@
 # {heading(Cloud Trino)[id=trino_metrics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В Cloud Trino собираются метрики в формате Prometheus для мониторинга: состояния кластера, взаимодействия между компонентами, результатов выполнения SQL-запросов и задач, использования ресурсов. Для каждой метрики автоматически создается панель, которую можно отобразить на дашборде.
 
 ## {heading(Метрики рабочих нод кластера Cloud Trino)[id=trino_metrics_cluster_nodes]}

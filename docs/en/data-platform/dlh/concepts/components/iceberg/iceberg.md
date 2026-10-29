@@ -1,5 +1,9 @@
 # {heading(Cloud Iceberg Metastore in the Data Lakehouse architecture)[id=dlh_iceberg]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../../../../iceberg-metastore/concepts/about#iceberg_info)[text=Cloud Iceberg Metastore]} is the DLH data catalog that defines the representation of the object structure and the rules (interfaces) for accessing the S3 storage data, to organize interaction between the storage and external services. It is the preferred option for use in DLH, since the open table format enables high-performance reading of huge volumes of data from the storage through complex analytical SQL queries.

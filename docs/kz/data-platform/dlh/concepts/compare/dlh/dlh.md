@@ -1,5 +1,9 @@
 # {heading(Data Lakehouse)[id=dlh_dlh]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Data Lakehouse (DLH) — {linkto(../dwh#dlh_dwh)[text=%text]} (DWH) және {linkto(../data-lake#dlh_data-lake)[text=%text]} артықшылықтарын біріктіретін, сонымен бірге олардың негізгі кемшіліктерін жоятын заманауи гибридті архитектура. 

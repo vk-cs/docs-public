@@ -1,5 +1,9 @@
 # {heading(Жылдам бастау)[id=dlh_quick-start]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Жылдам бастау үш компонент негізіндегі Data Lakehouse (DLH) сервисін өрістетудің базалық сценарийін қамтиды:

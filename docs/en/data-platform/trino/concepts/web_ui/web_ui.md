@@ -1,5 +1,9 @@
 # {heading(Trino Web Interface)[id=trino-web-ui]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Trino provides a web interface that allows you to view active and completed queries, track their statuses and progress, and analyze performance. For more information, see the [official Trino documentation](https://trino.io/docs/current/admin/web-interface.html).

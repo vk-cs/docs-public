@@ -1,5 +1,9 @@
 # {heading(Cloud Redis)[id=redis_metrics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В сервисе Cloud Redis метрики собираются в формате Prometheus. Для каждой метрики автоматически создается панель, которую можно отобразить на дашборде. Список метрик перечислен в {linkto(#redis_tab_metrics)[text=таблице %number]}.
 
 {caption(Таблица {counter(table)[id=numb_redis_tab_metrics]} — Метрики Redis)[align=right;position=above;id=redis_tab_metrics;number={const(numb_redis_tab_metrics)}]}

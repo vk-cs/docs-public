@@ -1,5 +1,9 @@
 # {heading(Cloud Trino Data Lakehouse архитектурасында)[id=dlh_trino]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../../../../trino/concepts/about#trino_info)[text=Cloud Trino]} – бұл әртүрлі көздерден ірі көлемдегі деректерді өңдеуге арналған массивті-параллель аналитикалық SQL-қозғалтқыш. Ол мыналарға мүмкіндік береді:

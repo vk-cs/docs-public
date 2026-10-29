@@ -1,5 +1,9 @@
 # {heading(Libraries for working in DLH)[id=dlh_libraries]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 For Cloud Airflow to work in DLH (Data Lakehouse), you need to use the appropriate Python libraries and import them into DAG files. The full list of libraries available to users is given in {linkto(#tab_glossary)[text=table %number]}.

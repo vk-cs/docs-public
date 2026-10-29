@@ -1,5 +1,9 @@
 # {heading(Cloud Trino)[id=trino_metrics]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Trino collects Prometheus-format metrics for monitoring: cluster state, interaction between components, results of SQL query and task execution, and resource usage. A panel is automatically created for each metric, which can be displayed on a dashboard.

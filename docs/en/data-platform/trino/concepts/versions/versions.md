@@ -1,5 +1,9 @@
 # {heading(Version support policy)[id=trino_versions]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The Cloud Trino version support policy defines the rules for version support and describes the process of migrating to new versions. The policy serves as the basis for releasing updates and allows planning work with Cloud Trino versions.

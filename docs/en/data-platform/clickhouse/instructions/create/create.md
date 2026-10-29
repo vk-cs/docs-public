@@ -1,5 +1,9 @@
 # {heading(Creating a service instance)[id=clickhouse_create]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 {ifdef(public)}

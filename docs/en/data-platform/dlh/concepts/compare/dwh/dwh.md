@@ -1,5 +1,9 @@
 # {heading(Data Warehouse)[id=dlh_dwh]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Data Warehouse (DWH) is the first architectural concept implementing the idea of an *enterprise data warehouse* (EDW). An EDW is a central repository that stores a large volume of an organization's data collected from various sources and manages this data.

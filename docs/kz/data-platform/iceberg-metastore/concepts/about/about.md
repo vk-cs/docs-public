@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=iceberg_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Iceberg Metastore — Apache Iceberg форматындағы кестелерге арналған метадеректерді басқару жүйесінің компоненті. 

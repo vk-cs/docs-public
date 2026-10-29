@@ -1,5 +1,9 @@
 # {heading(Error when processing a dataset larger than 100 GB)[id=spark_large_dataset]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=large_dataset_problem]}

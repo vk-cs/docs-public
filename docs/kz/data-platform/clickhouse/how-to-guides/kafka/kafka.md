@@ -1,5 +1,9 @@
 # {heading(Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу)[id=clickhouse_kafka]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud ClickHouse жүйесінде Kafka топиктерінен хабарларды оқу үшін Kafka қозғалтқышы бар кесте және материалдандырылған көрініс қолданылады. Kafka қозғалтқышының сипаттамасы [ClickHouse ресми құжаттамасында](https://clickhouse.com/docs/ru/integrations/kafka/kafka-table-engine) берілген.

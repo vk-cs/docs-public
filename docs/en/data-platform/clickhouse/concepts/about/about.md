@@ -1,5 +1,9 @@
 # {heading(About the service)[id=clickhouse_info]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 {include(../../../_includes/_clickhouse.md)[tags=intro-dp]}

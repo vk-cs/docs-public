@@ -1,5 +1,9 @@
 # {heading(VK Private Cloud-та рұқсатты басқару)[id=clickhouse-concepts-iam]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {include(../../../_includes/_access_management.md)[tags=dp_private_access_intro]}

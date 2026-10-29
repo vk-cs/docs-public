@@ -1,5 +1,9 @@
 # {heading(Авторизация токенінсіз Spark Connect-ке қосылу мүмкін емес)[id=spark_connect_token]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=spark_connect_token_problem]}

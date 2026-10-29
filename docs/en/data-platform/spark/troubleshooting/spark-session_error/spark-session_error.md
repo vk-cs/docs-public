@@ -1,5 +1,9 @@
 # {heading(Error when connecting to Cloud Spark via SparkSession)[id=spark-session_error]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(Problem)[id=spark-session_error_problem]}

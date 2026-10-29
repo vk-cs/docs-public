@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 VK Data Platform UI Console (DP Console) — VK Data Platform платформасымен жұмысты оңтайландыруға арналған сервис.

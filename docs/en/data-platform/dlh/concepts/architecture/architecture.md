@@ -1,5 +1,9 @@
 # {heading(Data Platform Architecture)[id=dlh_architecture]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} collects structured and unstructured data from various sources, processes it via {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} ([ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) or ELT) or {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} (SQL queries), stores it in {linkto(../components/s3#dlh_s3)[text=S3 storage]} with cataloging in {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]}, manages metadata in DataHub, and provides data for analytics, BI, and ML via Cloud Trino, Cloud Spark, or {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]}.

@@ -1,5 +1,9 @@
 # {heading(DLH жүйесінде жұмыс істеу)[id=jupyterhub_dlh]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 JupyterHub-пен DLH жүйесінде жұмыс істеу үшін Cloud Iceberg Metastore және S3-ке қосылымды баптау қажет.

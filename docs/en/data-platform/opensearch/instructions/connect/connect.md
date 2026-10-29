@@ -1,5 +1,9 @@
 # {heading(Connecting to a service instance)[id=opensearch_connect]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 You can connect to an OpenSearch service instance via the web interface, curl, and third-party clients.

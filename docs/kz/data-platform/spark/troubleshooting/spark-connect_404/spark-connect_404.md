@@ -1,5 +1,9 @@
 # {heading(Spark Connect қатесі: 404 unimplemented)[id=spark_connect_404]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=spark_connect_404_problem]}

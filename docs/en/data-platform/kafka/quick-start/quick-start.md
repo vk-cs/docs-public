@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 A quick start will help you get started with the service and get to know its capabilities.
 
 After completing all the steps of a quick start, you will:

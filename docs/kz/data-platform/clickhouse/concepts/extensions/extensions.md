@@ -1,5 +1,9 @@
 # {heading(Кеңейтілгендер)[id=clickhouse_extensions_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud ClickHouse кеңейтілгендері ДҚЖ-ның базалық функционалдылығын инстанс конфигурациясын өзгертпей толықтырады. Оларды кез келген уақытта {linkto(../../instructions/manage#clickhouse_extensions)[text=қосуға немесе өшіруге]} болады.

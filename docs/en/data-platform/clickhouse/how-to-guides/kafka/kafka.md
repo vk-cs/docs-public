@@ -1,5 +1,9 @@
 # {heading(Loading data from Kafka into Cloud ClickHouse)[id=clickhouse_kafka]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai.md)}
 
 Cloud ClickHouse uses a table with the Kafka engine and a materialized view to read messages from Kafka topics. For details about the Kafka engine, see the [official ClickHouse documentation](https://clickhouse.com/docs/en/integrations/kafka/kafka-table-engine).

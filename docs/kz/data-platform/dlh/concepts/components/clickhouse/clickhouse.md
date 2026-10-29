@@ -1,5 +1,9 @@
 # {heading(ClickHouse Data Lakehouse архитектурасында)[id=dlh_clickhouse]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../../../../clickhouse/concepts/about#clickhouse_info)[text=Cloud ClickHouse]} — бұл құрылымдалған үлкен деректер бойынша аналитикалық SQL-сұрауларды нақты уақыт режимінде жылдам өңдеуге арналған ашық бастапқы коды бар бағандық реляциялық СУБД. Деректерді S3 қоймасында сақтаусыз кіріс оқиғалар ағынында нақты уақыттағы жедел аналитиканы орындау қажет болған жағдайда DLH архитектурасына қосымша түрде енгізіледі.

@@ -1,5 +1,9 @@
 # {heading(Создание конвейера для потоковой обработки событий из Cloud Kafka в Cloud Iceberg Metastore)[id=kafka_iceberg]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Сервисы Cloud Spark, Cloud Kafka и Cloud Iceberg Metastore позволяют создать конвейер для потоковой обработки событий, который может:
 1. Читать события в реальном времени.
 1. Преобразовывать данные в формат JSON.

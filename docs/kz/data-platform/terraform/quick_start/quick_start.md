@@ -1,5 +1,9 @@
 # {heading(Жылдам бастау)[id=terraform_quick_start]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Дайындық қадамдары)[id=terraform_quick_start_preparations]}

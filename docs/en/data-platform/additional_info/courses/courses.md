@@ -1,5 +1,9 @@
 # {heading(Training courses)[id=courses]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The VK Tech learning platform offers courses on the basics of working with {var(data-p)} for users. To gain access to the courses:

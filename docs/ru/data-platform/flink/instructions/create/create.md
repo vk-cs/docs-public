@@ -1,6 +1,10 @@
 # {heading(Создание экземпляра сервиса)[id=flink_create]}
 
 {ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
+{ifdef(public)}
 {include(/ru/_includes/_dp_mpl_user_warn.md)}
 {/ifdef}
 

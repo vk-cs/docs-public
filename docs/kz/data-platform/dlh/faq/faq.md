@@ -1,5 +1,9 @@
 # {heading(Сұрақтар мен жауаптар)[id=dlh_faq]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {cut(Деректерді жинау үшін қандай құралдарды пайдалану керек?)}

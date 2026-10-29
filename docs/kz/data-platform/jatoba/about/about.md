@@ -1,5 +1,9 @@
 # {heading(Сервис туралы)[id=jatoba_info]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Jatoba — PostgreSQL ашық кодты ДҚБЖ-ның жаңғыртылған өзегіне негізделген қорғалған ДҚБЖ. Оны шағын ұйымдарда да, ірі компанияларда да пайдалануға болады. Jatoba туралы толығырақ [ресми құжаттамада](https://jatoba.ru/).

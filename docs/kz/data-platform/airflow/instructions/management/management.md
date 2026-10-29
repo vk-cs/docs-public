@@ -1,5 +1,9 @@
 # {heading(Сервис данасымен жұмыс істеу)[id=airflow_management]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Жалпы ақпаратты қарау)[id=airflow_view_info]}

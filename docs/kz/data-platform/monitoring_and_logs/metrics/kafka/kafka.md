@@ -1,5 +1,9 @@
 # {heading(Cloud Kafka)[id=kafka_metrics]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Kafka сервисінде Prometheus форматындағы метрикалардың келесі түрлері жиналады:

@@ -1,5 +1,9 @@
 # {heading(Конфигурация файлдары)[id=terraform_configuration]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Ресурстарды жасау кезінде Terraform конфигурация файлдарымен жұмыс істейді. Олардың кеңейтімі `.tf`.

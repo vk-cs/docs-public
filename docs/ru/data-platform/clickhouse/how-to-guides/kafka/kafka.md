@@ -1,5 +1,9 @@
 # {heading(Загрузка данных из Kafka в Cloud ClickHouse)[id=clickhouse_kafka]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Для чтения сообщений из топиков Kafka в Cloud ClickHouse используются таблица с движком Kafka и материализованное представление. Описание движка Kafka приведено в [официальной документации ClickHouse](https://clickhouse.com/docs/ru/integrations/kafka/kafka-table-engine).
 
 ## {heading(Подготовительные шаги)[id=clickhouse_kafka_preparation]}

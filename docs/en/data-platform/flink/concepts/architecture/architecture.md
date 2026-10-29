@@ -1,3 +1,7 @@
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 The Cloud Flink architecture is built around the concept of distributed stream computing and consists of several components:
 
 - *Job Manager* is a master node that coordinates all data processes in the service:

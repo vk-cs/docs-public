@@ -1,5 +1,9 @@
 # {heading(Terraform configuration files)[id=terraform_configuration]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 When creating resources, Terraform works with configuration files. They have the `.tf` extension.

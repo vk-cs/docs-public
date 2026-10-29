@@ -1,1 +1,5 @@
 # {heading(Практические руководства)[id=clickhouse_how-to-guides]}
+
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}

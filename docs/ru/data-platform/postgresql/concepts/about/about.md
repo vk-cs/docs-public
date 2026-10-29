@@ -1,5 +1,9 @@
 # {heading(О сервисе)[id=postgresql_info]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud PostgreSQL — объектно-реляционная СУБД, которая используется для хранения и управления данными. Сервис разработан на основе PostgreSQL. Подробнее о PostgreSQL в [официальной документации](https://www.postgresql.org/docs/).
 
 Cloud PostgreSQL подходит для хранения больших объемов данных. СУБД поддерживает множество типов данных и предоставляет возможность создания собственных типов.

@@ -1,5 +1,9 @@
 # {heading(spark-submit скриптімен жұмыс істеу кезіндегі қате)[id=spark-submit_error]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=spark-submit_error_problem]}

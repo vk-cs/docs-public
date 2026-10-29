@@ -1,5 +1,9 @@
 # {heading(Қызмет архитектурасы)[id=trino_architecture]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Trino келесі компоненттерден тұратын клиент-сервер архитектурасын пайдаланады:

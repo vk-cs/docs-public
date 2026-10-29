@@ -1,5 +1,9 @@
 # {heading(Работа с компонентами сервиса)[id=redis_management]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(../../../_includes/_standalone.md)[tags=difference_management]}
 
 ## {heading(Общая информация)[id=redis_info]}

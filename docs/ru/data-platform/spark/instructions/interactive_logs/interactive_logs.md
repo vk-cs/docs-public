@@ -1,5 +1,9 @@
 # {heading(Просмотр интерактивных логов)[id=spark_interactive_logs]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В Cloud Spark доступен просмотр интерактивных логов с подробной информацией о выполнении Spark-задач в текстовом или JSON-формате.
 
 {note:warn}

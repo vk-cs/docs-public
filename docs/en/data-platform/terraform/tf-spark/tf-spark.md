@@ -1,5 +1,9 @@
 # {heading(Creating a Spark cluster)[id=tf_spark]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 You can automatically deploy a Cloud Spark cluster and its associated infrastructure in {var(data-p)} using Terraform.

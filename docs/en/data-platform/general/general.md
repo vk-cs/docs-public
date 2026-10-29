@@ -1,5 +1,9 @@
 # {heading(Introduction)[id=dp_index]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 ## {heading(General information)[id=dp_index_inform]}

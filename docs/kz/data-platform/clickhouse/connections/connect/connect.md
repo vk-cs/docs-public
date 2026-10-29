@@ -1,5 +1,9 @@
 # {heading(Қызмет данасына қосылу)[id=clickhouse_connect]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud ClickHouse екі протокол бойынша қосылымдарды қабылдайды: TCP және HTTP. Сервис данасына қосылым өзіне қол қойылған TLS сертификаты арқылы қорғалған.

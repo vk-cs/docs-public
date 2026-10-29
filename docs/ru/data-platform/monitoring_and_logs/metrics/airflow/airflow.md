@@ -1,5 +1,9 @@
 # {heading(Cloud Airflow)[id=airflow_metrics]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 В сервисе Cloud Airflow метрики собираются в формате Prometheus. Для каждой метрики автоматически создается панель, которую можно отобразить на дашборде.
 
 ## {heading(Метрики worker-узлов)[id=airflow_metrics_worker]}

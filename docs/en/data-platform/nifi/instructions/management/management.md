@@ -1,5 +1,9 @@
 # {heading(Working with service components)[id=nifi_management]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 {include(../../../_includes/_standalone.md)[tags=difference_management]}

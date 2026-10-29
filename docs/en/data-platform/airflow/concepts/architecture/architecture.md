@@ -1,5 +1,9 @@
 # {heading(Airflow service architecture)[id=airflow_architecture]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 The Cloud Airflow service can be deployed in the following configurations:

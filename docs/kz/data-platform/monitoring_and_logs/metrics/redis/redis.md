@@ -1,5 +1,9 @@
 # {heading(Cloud Redis)[id=redis_metrics]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 Cloud Redis сервисінде метрикалар Prometheus форматында жиналады. Әрбір метрика үшін дашбордта көрсетуге болатын панель автоматты түрде жасалады. Метрикалар тізімі {linkto(#redis_tab_metrics)[text=%number кестеде]} келтірілген.

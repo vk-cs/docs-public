@@ -1,5 +1,9 @@
 # {heading(Вопросы и ответы)[id=dlh_faq]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {cut(Какие инструменты использовать для сбора данных?)}
 
 Выбор инструментов зависит от выбранной {linkto(../concepts/architecture#dlh_data_processing_models)[text=модели получения данных]}

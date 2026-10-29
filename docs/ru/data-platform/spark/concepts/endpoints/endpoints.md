@@ -1,5 +1,9 @@
 # {heading(Эндпоинты)[id=spark-endpoints]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Cloud Spark предоставляет эндпоинты для работы с сервисом: Spark Connect и Spark Service. Эндпоинты отображаются на странице экземпляра сервиса на вкладке **Общая информация**.
 
 ## {heading(Spark Connect)[id=spark-endpoints-connect]}

@@ -1,5 +1,9 @@
 # {heading(Cloud Airflow Data Lakehouse архитектурасында)[id=dlh_airflow]}
 
+{ifdef(public)}
+{include(/kz/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/kz/_includes/_translated_by_ai.md)}
 
 {linkto(../../../../airflow/concepts/about#airflow_info)[text=Cloud Airflow]} – бұл нақты уақыттағы жоғары өнімді, ауқымдалатын қосымшаларға арналған деректер ағындарының оркестраторы және ETL мен ELT процестерін іске қосуды басқару құралы. Қойманы деректер көздерімен {linkto(../../architecture#dlh_data_processing_models)[text=PULL-моделі]} бойынша біріктіру қажет болған жағдайда DLH архитектурасына қосымша түрде енгізіледі.

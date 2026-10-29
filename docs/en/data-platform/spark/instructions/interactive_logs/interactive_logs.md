@@ -1,5 +1,9 @@
 # {heading(Viewing interactive logs)[id=spark_interactive_logs]}
 
+{ifdef(public)}
+{include(/en/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 {include(/en/_includes/_translated_by_ai_en.md)}
 
 Cloud Spark provides viewing of interactive logs with detailed information about Spark job execution in text or JSON format.

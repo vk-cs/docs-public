@@ -1,5 +1,9 @@
 # {heading(Расширения)[id=clickhouse_extensions_info]}
 
+{ifdef(public)}
+{include(/ru/_includes/_dp-unavailable.md)}
+{/ifdef}
+
 Расширения Cloud ClickHouse дополняют базовую функциональность СУБД без изменения конфигурации экземпляра. Их можно в любой момент {linkto(../../instructions/manage#clickhouse_extensions)[text=включить или отключить]}.
 
 ## {heading(Справочник с данными о странах)[id=clickhouse_extension_countries]}
