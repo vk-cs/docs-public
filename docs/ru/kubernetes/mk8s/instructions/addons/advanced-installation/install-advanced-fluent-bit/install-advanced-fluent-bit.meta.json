@@ -5,7 +5,7 @@
   "sectionTitle": "Fluent Bit",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "d9a698d7-ca51-4f2b-af05-7836f2a8a778",
   "build": {
     "for": [
       "public"
