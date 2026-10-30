@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Жалпы ақпарат)[id=postgresql_info]}
 
 ### {heading(Жалпы ақпаратты қарау)[id=postgresql_view_info]}
@@ -34,9 +32,21 @@
 
 {/tabs}
 
-## {heading(IP және порттарды өзгерту)[id=postgresql_change-ip]}
+## {heading(TLS сертификатын қарау және ауыстыру)[id=postgresql_certificate]}
 
-{note:warn} Тек Standalone жүйесіндегі {var(data-p)} үшін қолжетімді. {/note}
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
+
+Сертификаттармен жұмыс істеу туралы толығырақ {linkto(../../../certificates/manage#certificates_manage)[text=Сертификаттар]} бөлімінен оқыңыз.
+
+{/tab}
+
+{/tabs}
+
+## {heading(IP және порттарды өзгерту)[id=postgresql_change-ip]}
 
 {tabs}
 
@@ -53,10 +63,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Қызмет экземплярлары** бөліміне өтіңіз.
 1. Қажетті экземплярдың атауын басыңыз.
@@ -110,10 +116,6 @@
 
 {tab(Жеке кабинет)}
 
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
-
 1. **Data Platform** → **Қызмет экземплярлары** бөліміне өтіңіз.
 1. Қажетті экземплярдың атауын басыңыз.
 1. Экземпляр бетінде **Есептік деректер** қойындысына өтіңіз.
@@ -135,10 +137,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Қызмет экземплярлары** бөліміне өтіңіз.
 1. Қажетті экземплярдың атауын басыңыз.
@@ -249,10 +247,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Қызмет экземплярлары** бөліміне өтіңіз.
 1. Қажетті экземплярдың атауын басыңыз.

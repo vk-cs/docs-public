@@ -4,10 +4,7 @@
   "metaDescription": "VK Data Platform инфрақұрылымындағы машиналық оқыту модельдерінің толық өмірлік циклін басқаруға арналған MLflow сервисі",
   "sectionTitle": "MLflow",
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "weight": 12,
   "uuid": "65c39d3b-b504-43cc-838d-dbd3e8bebb20"

@@ -6,10 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Дана туралы ақпаратты қарау)[id=clickhouse_view]}
 
 {tabs}
@@ -53,8 +49,6 @@
 
 {ifndef(public)}
 ## {heading(IP мен порттарды өзгерту)[id=clickhouse_change-ip]}
-
-{note:warn} Тек Standalone-тағы {var(data-p)} үшін қолжетімді. {/note}
 
 {tabs}
 

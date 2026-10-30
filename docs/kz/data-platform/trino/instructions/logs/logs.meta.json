@@ -1,8 +1,8 @@
 {
-  "title": "Standalone режиміндегі логтау",
-  "shortDescription": "Standalone режимінде сервис данасының логтарын қалай қарауға болады",
+  "title": "Логтау",
+  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
   "metaDescription": "VK Data Platform платформасының Standalone нұсқасында жайылған Cloud Trino сервисі данасының жұмыс логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone режиміндегі логтау",
+  "sectionTitle": "Логтау",
   "build": {
     "for": [
       "data-p",

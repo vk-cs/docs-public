@@ -5,10 +5,7 @@
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "weight": 3,
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "uuid": "c79618e6-b124-4931-8b5f-a6a2e4256fe5"
 }

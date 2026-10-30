@@ -1,8 +1,8 @@
 {
-  "title": "Standalone жүйесіндегі логтау",
-  "shortDescription": "Standalone жүйесінде қызмет экземплярының логтарын қалай қарауға болады",
+  "title": "Логтау",
+  "shortDescription": "қызмет экземплярының логтарын қалай қарауға болады",
   "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында жайылған Cloud PostgreSQL қызметі экземпляры жұмысының логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone жүйесіндегі логтау",
+  "sectionTitle": "Логтау",
   "build": {
     "for": [
       "data-p",

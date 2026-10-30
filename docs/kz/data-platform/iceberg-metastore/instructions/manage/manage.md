@@ -6,10 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Дана туралы ақпаратты қарау)[id=iceberg_view]}
 
 {tabs}
@@ -47,8 +43,6 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 
 {ifndef(public)}
 ## {heading(IP және порттарды өзгерту)[id=iceberg_change-ip]}
-
-{note:warn} Тек Standalone-тағы {var(data-p)} үшін қолжетімді. {/note}
 
 {tabs}
 
@@ -236,6 +230,18 @@ postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
 {include(../../../_includes/_iceberg.md)[tags=maintenance]}
 
 1. **Өзгерістерді сақтау** батырмасын басыңыз.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Резервтік көшірмелерді қарау)[id=iceberg_backup_view]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_backup_view]}
 
 {/tab}
 

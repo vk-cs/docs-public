@@ -80,13 +80,11 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 
 {/tabs}
 
-## {heading(Administrator account)[id=jupyterhub_admin]}
+## {heading(Viewing an account)[id=jupyterhub_admin_view]}
 
 {note:warn}
-Only for Standalone as part of {var(cloud)}.
+Only for {var(data-p)} as part of {var(cloud)}.
 {/note}
-
-### {heading(Viewing an account)[id=jupyterhub_admin_view]}
 
 {tabs}
 
@@ -98,7 +96,11 @@ Only for Standalone as part of {var(cloud)}.
 
 {/tabs}
 
-### {heading(Adding an account)[id=jupyterhub_admin_create]}
+## {heading(Adding an account)[id=jupyterhub_admin_create]}
+
+{note:warn}
+Only for {var(data-p)} as part of {var(cloud)}.
+{/note}
 
 {tabs}
 

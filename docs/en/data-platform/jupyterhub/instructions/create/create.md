@@ -116,19 +116,19 @@ Configuring PostgreSQL and {var(s3)} connections is required to create a Jupyter
 ## {heading(Step 5. Credentials)[id=jupyterhub_create_user]}
 
 {note:warn}
-Only for Standalone within {var(cloud)}.
+Only for {var(data-p)} as part of {var(cloud)}.
 {/note}
 
 1. Set the parameters:
 
-   1. **Administrator login for JupyterHub access**: the administrator login. Login requirements:
+   1. **Login for JupyterHub access**: the user login. Login requirements:
 
       - Only digits, Latin letters, and the `_` character are allowed.
       - The first character: a Latin letter of any case or `_`.
       - Invalid names: `os_admin`, `root`, `dataplatform_moth`, `default`.
       - No more than 50 characters.
 
-   1. **Administrator password for JupyterHub access**: the administrator password. To set a password, click **Generate** or specify your own. Password requirements:
+   1. **Password for JupyterHub access**: the user password. To set a password, click **Generate** or specify your own. Password requirements:
 
       - At least 8 characters.
       - At least one uppercase and one lowercase Latin letter.

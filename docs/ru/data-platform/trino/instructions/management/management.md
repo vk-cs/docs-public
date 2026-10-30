@@ -4,10 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Просмотр информации об экземпляре)[id=trino_view]}
 
 {tabs}
@@ -51,10 +47,6 @@
 
 {ifndef(public)}
 ## {heading(Изменение IP и портов)[id=trino_change-ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 
@@ -119,11 +111,11 @@
 
 {/tabs}
 
-## {heading(Просмотр учетной записи администратора)[id=trino_admin_view]}
+## {heading(Просмотр учетной записи)[id=trino_admin_view]}
 
 {ifndef(public)}
-{note:info}
-Только для Standalone в составе {var(cloud)}.
+{note:warn}
+Только для {var(data-p)} в составе {var(cloud)}.
 {/note}
 {/ifndef}
 
@@ -140,11 +132,11 @@
 
 {/tabs}
 
-## {heading(Изменение пароля администратора)[id=trino_change_password]}
+## {heading(Изменение пароля)[id=trino_change_password]}
 
 {ifndef(public)}
 {note:info}
-Только для Standalone в составе {var(cloud)}.
+Только для {var(data-p)} в составе {var(cloud)}.
 {/note}
 {/ifndef}
 
@@ -156,7 +148,7 @@
 
 1. На странице экземпляра перейдите на вкладку **Учетные данные**.
 1. Нажмите **•••** для нужной учетной записи и выберите пункт **Редактировать**.
-1. В открывшемся окне укажите новый пароль администратора.
+1. В открывшемся окне укажите новый пароль пользователя.
 
    {include(../../../_includes/_trino.md)[tags=password]}
 
@@ -172,11 +164,11 @@
 
 {/tabs}
 
-## {heading(Создание учетной записи администратора)[id=trino_add_admin]}
+## {heading(Создание учетной записи)[id=trino_add_admin]}
 
 {ifndef(public)}
 {note:info}
-Только для Standalone в составе {var(cloud)}.
+Только для {var(data-p)} в составе {var(cloud)}.
 {/note}
 {/ifndef}
 
@@ -188,8 +180,8 @@
 
 1. На странице экземпляра перейдите на вкладку **Учетные данные**.
 1. Нажмите кнопку **Добавить учетную запись**.
-1. В открывшемся окне задайте логин администратора для доступа к Cloud Trino.
-1. Придумайте или сгенерируйте пароль администратора.
+1. В открывшемся окне задайте логин пользователя для доступа к Cloud Trino.
+1. Придумайте или сгенерируйте пароль пользователя.
 
    {include(../../../_includes/_trino.md)[tags=password]}
 

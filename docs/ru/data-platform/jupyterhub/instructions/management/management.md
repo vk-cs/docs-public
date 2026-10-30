@@ -4,8 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Общая информация)[id=jupyterhub_info]}
 
 ### {heading(Просмотр общей информации)[id=jupyterhub_view_info]}
@@ -34,10 +32,6 @@
 
 ## {heading(Изменение IP и портов)[id=jupyterhub_change-ip]}
 
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
-
 {tabs}
 
 {tab(Личный кабинет)}
@@ -53,10 +47,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -78,13 +68,11 @@
 
 {/tabs}
 
-## {heading(Учетная запись администратора)[id=jupyterhub_admin]}
+## {heading(Просмотр учетной записи)[id=jupyterhub_admin_view]}
 
 {note:warn}
-Только для Standalone в составе {var(cloud)}.
+Только для {var(data-p)} в составе {var(cloud)}.
 {/note}
-
-### {heading(Просмотр учетной записи)[id=jupyterhub_admin_view]}
 
 {tabs}
 
@@ -96,15 +84,15 @@
 
 {/tabs}
 
-### {heading(Добавление учетной записи)[id=jupyterhub_admin_create]}
+## {heading(Добавление учетной записи)[id=jupyterhub_admin_create]}
+
+{note:warn}
+Только для {var(data-p)} в составе {var(cloud)}.
+{/note}
 
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -165,10 +153,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.

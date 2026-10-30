@@ -5,10 +5,7 @@
   "sectionTitle": "Сервис данасын жасау",
   "weight": 1,
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "uuid": "4f581662-ea63-463b-8bff-700e949216fb"
 }

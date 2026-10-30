@@ -4,10 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Просмотр информации об экземпляре)[id=kafka_view]}
 
 {tabs}
@@ -51,27 +47,7 @@
 
 {ifndef(public)}
 
-## {heading(Назначение внешнего IP)[id=kafka_assign-ip]}
-
-{note:warn}
-Доступно только для {var(data-p)} в составе {var(cloud)}.
-{/note}
-
-{tabs}
-
-{tab(Личный кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_assign_ip]}
-
-{/tab}
-
-{/tabs}
-
 ## {heading(Изменение IP и портов)[id=kafka_change-ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 

@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Жалпы ақпарат)[id=mlflow_info]}
 
 ### {heading(Жалпы ақпаратты қарау)[id=mlflow_view_info]}

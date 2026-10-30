@@ -1,8 +1,8 @@
 {
-  "title": "Логирование в Standalone",
-  "shortDescription": "Сбор и анализ логов в Standalone",
-  "metaDescription": "Узнайте как в Standalone версии VK Data Platform можно просматривать и работать с логами работы развернутого экземпляра сервиса",
-  "sectionTitle": "Логирование в Standalone",
+  "title": "Логирование",
+  "shortDescription": "Сбор и анализ логов",
+  "metaDescription": "Узнайте, как в VK Data Platform можно просматривать и работать с логами работы развернутого экземпляра сервиса",
+  "sectionTitle": "Логирование",
   "build": {
     "for": [
       "data-p",
@@ -10,5 +10,8 @@
     ]
   },
   "weight": 2,
+  "additionalUuids": [
+    "dd82b818-644b-42ff-9662-c1c8dd43e25a"
+  ],
   "uuid": "7cdcea0e-50ad-425e-bd7e-99e491123acc"
 }

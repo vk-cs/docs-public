@@ -1,4 +1,4 @@
-# {heading(Логирование в Standalone)[id=postgresql-logs]}
+# {heading(Логирование)[id=postgresql-logs]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

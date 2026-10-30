@@ -6,10 +6,6 @@
 
 {include(/en/_includes/_translated_by_ai.md)}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Viewing instance information)[id=clickhouse_view]}
 
 {tabs}
@@ -53,10 +49,6 @@
 
 {ifndef(public)}
 ## {heading(Changing IP and ports)[id=clickhouse_change-ip]}
-
-{note:warn}
-For Standalone and Standalone as part of {var(cloud)} only.
-{/note}
 
 {tabs}
 

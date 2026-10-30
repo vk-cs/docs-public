@@ -2,7 +2,7 @@
   "title": "О сервисе",
   "shortDescription": "Информация о сервисе JupyterHub",
   "metaDescription": "О сервисе",
-  "sectionTitle": "JupyterHub в VK Data Platform: информация о сервисе",
+  "sectionTitle": "О сервисе",
   "weight": 1,
   "build": {
     "for": [

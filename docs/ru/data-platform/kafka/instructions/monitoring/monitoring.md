@@ -1,4 +1,4 @@
-# {heading(Мониторинг в Standalone)[id=kafka-monitoring]}
+# {heading(Мониторинг)[id=kafka-monitoring]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

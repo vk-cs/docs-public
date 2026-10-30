@@ -1,8 +1,8 @@
 {
-  "title": "Standalone-да мониторинг",
-  "shortDescription": "Cloud ClickHouse үшін Standalone-да мониторинг.",
-  "metaDescription": "Cloud ClickHouse үшін Standalone-да мониторинг туралы ақпарат және метрикалар анықтамалығына сілтеме.",
-  "sectionTitle": "Standalone-да мониторинг",
+  "title": "Мониторинг",
+  "shortDescription": "Метрикаларды жинау және қарау",
+  "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse данасын бақылау: метрика графиктерін қарау және жаңарту, кезеңді таңдау, көрсетілімді баптау және метрикалар анықтамалығы.",
+  "sectionTitle": "Мониторинг",
   "build": {
     "for": [
       "data-p",

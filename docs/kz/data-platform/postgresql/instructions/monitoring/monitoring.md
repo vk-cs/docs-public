@@ -1,4 +1,4 @@
-# {heading(Standalone жүйесіндегі мониторинг)[id=postgresql-monitoring]}
+# {heading(Мониторинг)[id=postgresql-monitoring]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Жалпы ақпарат)[id=jatoba_info]}
 
 ### {heading(Жалпы ақпаратты қарау)[id=jatoba_view_info]}
@@ -36,8 +34,6 @@
 
 ## {heading(IP мен порттарды өзгерту)[id=jatoba_change-ip]}
 
-{note:warn} Тек Standalone түріндегі {var(data-p)} үшін қолжетімді. {/note}
-
 {tabs}
 
 {tab(Жеке кабинет)}
@@ -53,10 +49,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
@@ -112,10 +104,6 @@
 
 {tab(Жеке кабинет)}
 
-{ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-{/ifdef}
-
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
 1. Дана бетінде **Тіркелгі деректері** қойындысына өтіңіз.
@@ -137,10 +125,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
@@ -251,10 +235,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.

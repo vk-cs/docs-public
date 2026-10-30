@@ -5,10 +5,7 @@
   "sectionTitle": "Step-by-step instructions",
   "weight": 3,
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "uuid": "515079b5-c7ba-49b3-b70c-e6edb522f043"
 }

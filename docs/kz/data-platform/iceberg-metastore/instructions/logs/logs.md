@@ -1,4 +1,4 @@
-# {heading(Standalone-та журнал жүргізу)[id=iceberg-logs]}
+# {heading(Логтау)[id=iceberg-logs]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

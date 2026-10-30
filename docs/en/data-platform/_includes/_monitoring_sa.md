@@ -2,7 +2,7 @@
 
 {includetag(monitoring_info)}
 
-{var(data-p)} in the Standalone version collects metrics and displays them as charts on the **Monitoring** tab for each deployed service instance.
+{var(data-p)} collects metrics and displays them as charts on the **Monitoring** tab for each deployed service instance.
 
 ## {heading(Viewing charts)[id=monitoring_standalone_view]}
 

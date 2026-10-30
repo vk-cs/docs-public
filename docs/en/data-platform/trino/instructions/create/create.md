@@ -1,15 +1,23 @@
+# {heading(Creating a service instance)[id=trino_create]}
+
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}
 {/ifdef}
 
+{include(/en/_includes/_translated_by_ai.md)}
+
+{ifdef(public)}
 {include(/en/_includes/_dp_mpl_user_warn.md)}
+{/ifdef}
 
 {tabs}
 
 {tab(Management console)}
 
+{ifdef(public)}
 1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
 1. Select the project where you want to create a service instance.
+{/ifdef}
 1. Go to **Data Platform** → **Service instances**.
 1. Click **Add Instance** or **Create Instance**.
 1. At the **Configuration** step:
@@ -26,6 +34,19 @@
 1. At the **Parameters** step:
 
    1. Set a name and description for the instance.
+   {ifdef(public)}
+   1. Enable **Assign external IP** if you need to access the instance from an external network.
+   {/ifdef}
+
+   {ifndef(public)}
+   1. Only for {var(data-p)} as part of {var(cloud)}:
+
+      1. Select the network where the service instance will be deployed.
+      1. (Optional) Add a security group. If the required security group is not listed, create it using **{var(cloud)} Administrator Guide** → **Networks** → [Configuring a firewall](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
+
+   1. (Optional) Specify an IP address for the service instance from the subnet. To do this, disable **Automatic IP assignment**. By default, the instance is assigned an IP address automatically.
+   {/ifndef}
+   {ifdef(public)}
    1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host the Cloud Trino instance.
 
       If the desired cluster is not in the list:
@@ -36,6 +57,7 @@
          If the desired network is not listed, select **Create new network** and specify [SDN](/en/networks/vnet/concepts/architecture#sdns_used) and the subnet address.
 
       1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
+   {/ifdef}
    1. Configure the parameters of the nodes on which the service instance will be deployed:
 
       {tabs}
@@ -78,6 +100,10 @@
 
       {/tabs}
       
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
+
    1. Click the **Next Step** button.
 
 1. At the **Maintenance** step:
@@ -103,18 +129,18 @@
    1. Press the **Next Step** button.
 1. At the **Initialization** step:
 
-   1. Set the administrator login to access Trino.
-   1. Think of or generate an administrator password.
+   1. Set the user login for Cloud Trino access.
+   1. Think of or generate an user password.
 
       {include(/en/_includes/_trino.md)[tags=password]}
 
       {note:info}
 
-      You cannot recover a lost password, but you can [change](../management#change_password) it to a new one.
+      You cannot recover a lost password, but you can [change](../management#trino_change_password) it to a new one.
 
       {/note}
 
-   1. (Optional) To add another administrator account, click **Add Account** and specify the login and password.
+   1. (Optional) To add another account, click **Add Account** and specify the login and password.
    1. Click the **Create** button.
 
    Wait for the operation to complete. It may take a long time to create a Cloud Trino instance.

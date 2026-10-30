@@ -1,4 +1,4 @@
-# {heading(Standalone-тағы логтау)[id=logs-standalone]}
+# {heading(Логтау)[id=logs-standalone]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

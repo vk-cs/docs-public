@@ -4,8 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Общая информация)[id=opensearch_info]}
 
 ### {heading(Просмотр общей информации)[id=opensearch_view_info]}
@@ -32,7 +30,6 @@
 
 {/tabs}
 
-{ifndef(public)}
 ## {heading(Просмотр и замена TLS-сертификата)[id=opensearch_certificate]}
 
 {tabs}
@@ -47,13 +44,7 @@
 
 {/tabs}
 
-{/ifndef}
-
 ## {heading(Изменение IP и портов)[id=opensearch_change-ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 
@@ -70,10 +61,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -114,10 +101,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -190,10 +173,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.

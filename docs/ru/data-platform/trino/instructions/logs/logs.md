@@ -1,4 +1,4 @@
-# {heading(Логирование в Standalone)[id=trino-logs]}
+# {heading(Логирование)[id=trino-logs]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

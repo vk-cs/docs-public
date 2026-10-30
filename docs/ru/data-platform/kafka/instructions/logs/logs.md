@@ -1,4 +1,4 @@
-# {heading(Логирование в Standalone)[id=kafka-logs]}
+# {heading(Логирование)[id=kafka-logs]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

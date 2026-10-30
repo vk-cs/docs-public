@@ -171,7 +171,7 @@
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. On the instance page, go to the **Credentials** tab.
-1. Click **•••** for the required instance and select **Delete**.
+1. Click **•••** for the required account and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete.
 
 {/includetag}

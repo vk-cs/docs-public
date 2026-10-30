@@ -1,4 +1,4 @@
-# {heading(Logging in Standalone)[id=clickhouse-logs]}
+# {heading(Logging)[id=clickhouse-logs]}
 
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}

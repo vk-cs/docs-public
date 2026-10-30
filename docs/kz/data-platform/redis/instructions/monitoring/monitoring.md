@@ -1,4 +1,4 @@
-# {heading(Standalone-тағы мониторинг)[id=redis-monitoring]}
+# {heading(Мониторинг)[id=redis-monitoring]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

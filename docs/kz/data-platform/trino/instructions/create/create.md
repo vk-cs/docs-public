@@ -10,10 +10,6 @@
 {include(/kz/_includes/_dp_mpl_user_warn.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference]}
-{/ifndef}
-
 {tabs}
 
 {tab(Жеке кабинет)}
@@ -40,13 +36,21 @@
 
    1. Дана үшін атау мен сипаттаманы орнатыңыз.
 
-   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Данаға сыртқы желіден қол жеткізу қажет болса, **Сыртқы IP тағайындау** опциясын қосыңыз.
+   {ifdef(public)}
+   1. Данаға сыртқы желіден қол жеткізу қажет болса, **Сыртқы IP тағайындау** опциясын қосыңыз.
+   {/ifdef}
 
    {ifndef(public)}
-   1.  (Тек Standalone үшін, міндетті емес) Ішкі желіден сервис данасына IP мекенжайын орнатыңыз. Ол үшін **IP автоматты түрде тағайындау** опциясын өшіріңіз. Әдепкі бойынша IP мекенжайы данаға автоматты түрде тағайындалады.
+   1. Тек {var(cloud)} құрамындағы {var(data-p)} үшін:
+
+      1. Сервис данасы орналастырылатын желіні таңдаңыз.
+      1. (Міндетті емес) Қауіпсіздік тобын қосыңыз. Тізімде қажетті қауіпсіздік тобы болмаса, оны {var(cloud)} **Әкімші нұсқаулығы** → **Желілер** → [Firewall баптау](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup) нұсқаулығы бойынша жасаңыз.
+
+   1. (Міндетті емес) Ішкі желіден сервис данасы үшін IP мекенжайын орнатыңыз. Ол үшін **IP-ді автоматты түрде тағайындау** опциясын өшіріңіз. Әдепкі бойынша IP мекенжайы данаға автоматты түрде тағайындалады.
    {/ifndef}
 
-   1. {ifndef(public)} (Standalone үшін өткізіп жіберіңіз) {/ifndef} Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
+   {ifdef(public)}
+   1. Kubernetes кластерін таңдаңыз. Осы кластерге {ifdef(public)} [Managed Containers](/kz/kubernetes/mk8s){/ifdef} ішінде Cloud Trino данасын орналастыру үшін {ifdef(public)} [worker-торап](/kz/kubernetes/mk8s/concepts/architecture#mk8s-architecture-topology){/ifdef} {ifndef(public)} worker-торап {/ifndef} қосылады.
 
       Егер тізімде қажетті кластер болмаса:
 
@@ -56,6 +60,7 @@
          Егер тізімде қажетті желі болмаса, **Жаңа желі жасау** тармағын таңдап, {ifdef(public)} [SDN](/kz/networks/vnet/concepts/sdn) {/ifdef} {ifndef(public)} SDN{/ifndef} және ішкі желі мекенжайын көрсетіңіз.
 
       1. {ifdef(public)} [қолжетімділік аймағын](/kz/start/concepts/architecture#architecture-az){/ifdef} {ifndef(public)} қолжетімділік аймағын {/ifndef} таңдаңыз, онда {ifdef(public)}Managed Containers{/ifdef} кластерінің торабы орналастырылады.
+   {/ifdef}
    1. Сервис данасы жайылатын тораптардың параметрлерін баптаңыз:
 
       {tabs}
@@ -83,6 +88,10 @@
       {/tab}
 
       {/tabs}
+
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
 
    1. **Келесі қадам** батырмасын басыңыз.
 1. **Қызмет көрсету** қадамында:
@@ -123,8 +132,8 @@
    1. **Келесі қадам** батырмасын басыңыз.
 1. **Тіркелгі деректері** қадамында:
 
-   1. Trino-ға қол жеткізу үшін әкімші логинін орнатыңыз.
-   1. Әкімші құпиясөзін ойлап табыңыз немесе жасаңыз.
+   1. Cloud Trino-ға қол жеткізу үшін пайдаланушы логинін орнатыңыз.
+   1. Құпиясөзді ойлап табыңыз немесе жасаңыз.
 
       {include(../../../_includes/_trino.md)[tags=password]}
 
@@ -134,7 +143,7 @@
 
       {/note}
 
-   1. (Міндетті емес) Тағы бір әкімші тіркелгісін қосу үшін **Тіркелгі қосу** батырмасын басып, логин мен құпиясөзді көрсетіңіз.
+   1. (Міндетті емес) Тағы бір тіркелгіні қосу үшін **Тіркелгі қосу** батырмасын басып, логин мен құпиясөзді көрсетіңіз.
    1. **Жасау** батырмасын басыңыз.
 
       Операцияның аяқталуын күтіңіз. Cloud Trino данасын жасау ұзақ уақыт алуы мүмкін.

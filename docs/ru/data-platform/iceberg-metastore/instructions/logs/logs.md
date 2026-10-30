@@ -1,4 +1,4 @@
-# {heading(Логирование в Standalone)[id=iceberg-logs]}
+# {heading(Логирование)[id=iceberg-logs]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

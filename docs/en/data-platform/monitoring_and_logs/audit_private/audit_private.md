@@ -1,4 +1,4 @@
-# {heading(Audit as part of VK Private Cloud)[id=audit-private]}
+# {heading(Audit in VK Private Cloud)[id=audit-private]}
 
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}

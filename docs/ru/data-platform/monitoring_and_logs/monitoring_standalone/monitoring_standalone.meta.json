@@ -1,8 +1,8 @@
 {
-  "title": "Мониторинг в Standalone",
-  "shortDescription": "Сбор и просмотр метрик в Standalone",
-  "metaDescription": "Узнайте, как просматривать метрики работы развернутых экземпляров сервисов в VK Data Platform версии Standalone",
-  "sectionTitle": "Мониторинг в Standalone",
+  "title": "Мониторинг",
+  "shortDescription": "Сбор и просмотр метрик",
+  "metaDescription": "Узнайте, как просматривать метрики работы развернутых экземпляров сервисов в VK Data Platform",
+  "sectionTitle": "Мониторинг",
   "build": {
     "for": [
       "data-p",
@@ -10,5 +10,8 @@
     ]
   },
   "weight": 4,
+  "additionalUuids": [
+    "0070f6de-b754-454b-8b3e-d28e62e30dbe"
+  ],
   "uuid": "d568ca15-0c25-4769-a1d5-076e8d1cc8ed"
 }

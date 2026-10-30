@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Жалпы ақпарат)[id=jupyterhub_info]}
 
 ### {heading(Жалпы ақпаратты қарау)[id=jupyterhub_view_info]}
@@ -36,8 +34,6 @@
 
 ## {heading(IP мен порттарды өзгерту)[id=jupyterhub_change-ip]}
 
-{note:warn} Тек Standalone конфигурациясындағы {var(data-p)} үшін қолжетімді. {/note}
-
 {tabs}
 
 {tab(Жеке кабинет)}
@@ -53,10 +49,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
@@ -78,9 +70,11 @@
 
 {/tabs}
 
-## {heading(Әкімші тіркелгісі)[id=jupyterhub_admin]}
+## {heading(Тіркелгіні қарау)[id=jupyterhub_admin_view]}
 
-### {heading(Тіркелгіні қарау)[id=jupyterhub_admin_view]}
+{note:warn}
+Тек {var(cloud)} құрамындағы {var(data-p)} үшін.
+{/note}
 
 {tabs}
 
@@ -92,15 +86,15 @@
 
 {/tabs}
 
-### {heading(Тіркелгіні қосу)[id=jupyterhub_admin_create]}
+## {heading(Тіркелгіні қосу)[id=jupyterhub_admin_create]}
+
+{note:warn}
+Тек {var(cloud)} құрамындағы {var(data-p)} үшін.
+{/note}
 
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
@@ -163,10 +157,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.

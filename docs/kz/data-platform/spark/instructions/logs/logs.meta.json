@@ -1,8 +1,8 @@
 {
-  "title": "Standalone жүйесіндегі логтау",
-  "shortDescription": "Standalone жүйесінде сервис данасының логтарын қалай қарауға болады",
+  "title": "Логтау",
+  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
   "metaDescription": "VK Data Platform платформасының Standalone нұсқасында Cloud Spark сервисінің жайылған данасының жұмыс логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone жүйесіндегі логтау",
+  "sectionTitle": "Логтау",
   "build": {
     "for": [
       "data-p",

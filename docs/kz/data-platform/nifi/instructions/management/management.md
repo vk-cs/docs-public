@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Жалпы ақпаратты қарау)[id=nifi_view_info]}
 
 {tabs}
@@ -34,8 +32,6 @@
 
 ## {heading(IP және порттарды өзгерту)[id=nifi_change-ip]}
 
-{note:warn} Тек Standalone нұсқасындағы {var(data-p)} үшін қолжетімді. {/note}
-
 {tabs}
 
 {tab(Жеке кабинет)}
@@ -51,10 +47,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
@@ -117,10 +109,6 @@
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-{/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.

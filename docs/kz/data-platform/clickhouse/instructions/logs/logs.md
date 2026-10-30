@@ -1,4 +1,4 @@
-# {heading(Standalone-та логтау)[id=clickhouse-logs]}
+# {heading(Логтау)[id=clickhouse-logs]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

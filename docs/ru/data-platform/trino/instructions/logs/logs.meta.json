@@ -1,8 +1,8 @@
 {
-  "title": "Логирование в Standalone",
-  "shortDescription": "Как смотреть логи экземпляра сервиса в Standalone",
-  "metaDescription": "Узнайте как в Standalone версии VK Data Platform можно просматривать и работать с логами работы развернутого экземпляра сервиса Cloud Trino",
-  "sectionTitle": "Логирование в Standalone",
+  "title": "Логирование",
+  "shortDescription": "Как смотреть логи экземпляра сервиса",
+  "metaDescription": "Узнайте, как в VK Data Platform можно просматривать и работать с логами работы развернутого экземпляра сервиса Cloud Trino",
+  "sectionTitle": "Логирование",
   "build": {
     "for": [
       "data-p",

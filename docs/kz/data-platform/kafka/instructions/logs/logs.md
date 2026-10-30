@@ -1,4 +1,4 @@
-# {heading(Standalone ішіндегі лог жүргізу)[id=kafka-logs]}
+# {heading(Лог жүргізу)[id=kafka-logs]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

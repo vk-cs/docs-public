@@ -1,4 +1,4 @@
-# {heading(Standalone-та мониторинг)[id=iceberg-monitoring]}
+# {heading(Мониторинг)[id=iceberg-monitoring]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

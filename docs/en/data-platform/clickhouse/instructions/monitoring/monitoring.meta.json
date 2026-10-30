@@ -1,8 +1,8 @@
 {
-  "title": "Monitoring in Standalone",
+  "title": "Monitoring",
   "sectionTitle": "Monitoring",
-  "shortDescription": "Monitoring in Standalone for Cloud ClickHouse.",
-  "metaDescription": "Information about monitoring in Standalone for Cloud ClickHouse and a link to the metrics reference.",
+  "shortDescription": "Collecting and viewing metrics",
+  "metaDescription": "Monitor a Cloud ClickHouse instance in VK Data Platform: view and refresh metric charts, select a time period, customize the display, and access the metrics reference.",
   "weight": 5,
   "uuid": "0a42d629-5581-458b-89cc-862ea6099715",
   "build": {

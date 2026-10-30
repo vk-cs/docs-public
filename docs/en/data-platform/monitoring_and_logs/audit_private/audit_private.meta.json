@@ -1,7 +1,7 @@
 {
   "title": "Audit in VK Private Cloud",
-  "shortDescription": "Security event collection integrated with the user's SIEM system as part of VK Private Cloud",
-  "metaDescription": "Learn how the Audit service works in VK Data Platform as part of VK Private Cloud",
+  "shortDescription": "Security event collection integrated with the user's SIEM system in VK Private Cloud",
+  "metaDescription": "Learn how the Audit service works in VK Data Platform in VK Private Cloud",
   "sectionTitle": "Audit in VK Private Cloud",
   "weight": 1,
   "build": {

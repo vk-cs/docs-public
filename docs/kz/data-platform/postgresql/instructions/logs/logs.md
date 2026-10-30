@@ -1,4 +1,4 @@
-# {heading(Standalone жүйесіндегі логтау)[id=postgresql-logs]}
+# {heading(Логтау)[id=postgresql-logs]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
