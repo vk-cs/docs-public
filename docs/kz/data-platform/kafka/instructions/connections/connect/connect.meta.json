@@ -1,8 +1,8 @@
 {
-  "title": "Kafka CLI және kcat арқылы қосылу",
+  "title": "Kafka CLI және kcat",
   "shortDescription": "Утилиталарды баптау және TLS арқылы немесе TLS-сіз қосылуды тексеру",
   "metaDescription": "VK Data Platform ішіндегі Cloud Kafka-ға Kafka CLI және kcat арқылы қосылу: параметрлерді дайындау, TLS арқылы немесе TLS-сіз қосылуды баптау және қол жеткізуді тексеру",
-  "sectionTitle": "Kafka CLI және kcat арқылы қосылу",
+  "sectionTitle": "Kafka CLI және kcat",
   "build": {
     "for": [
       "public",
@@ -10,6 +10,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 4,
+  "weight": 1,
   "uuid": "cc01b276-76c2-49c0-9600-01ce6edbab6c"
 }

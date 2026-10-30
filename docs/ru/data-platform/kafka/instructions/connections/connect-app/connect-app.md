@@ -1,10 +1,10 @@
-# {heading(Подключение из кода приложения)[id=kafka_connect-app]}
+# {heading(Из кода приложения)[id=kafka_connect-app]}
 
 Для подключения к развернутому экземпляру Cloud Kafka из кода приложения используйте клиентскую библиотеку для своего языка программирования. Ниже приведены примеры для Java, Scala, Python, Go, C / C++, .NET и Node.js.
 
 ## {heading(Подготовка к подключению)[id=kafka_connect-preparation]}
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 Дальнейшие действия зависят от языка программирования:
 
@@ -113,7 +113,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Запустите класс `CheckKafka` средствами своей IDE или системы сборки. Если программа выводит сведения о брокерах без ошибки, клиент подключился к Cloud Kafka.
 
@@ -200,7 +200,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. В терминале из директории проекта выполните команду:
 
@@ -269,7 +269,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. В терминале из директории с файлом выполните:
 
@@ -417,7 +417,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Запустите программу:
 
@@ -550,7 +550,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. В терминале из директории с файлом скомпилируйте `check.c` и запустите полученную программу:
 
@@ -633,7 +633,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. В терминале из директории тестового проекта выполните:
 
@@ -728,7 +728,7 @@
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. В терминале запустите скрипт:
 

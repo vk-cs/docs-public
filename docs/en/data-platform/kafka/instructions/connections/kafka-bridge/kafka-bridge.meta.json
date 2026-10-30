@@ -1,8 +1,8 @@
 {
-  "title": "Connect through Kafka Bridge",
+  "title": "Kafka Bridge",
   "shortDescription": "Enable the component, configure topic access, and check the REST API",
   "metaDescription": "Connect to Cloud Kafka on {var(data-p)} through the Kafka Bridge REST API: enable the component, configure topic access, and check the API",
-  "sectionTitle": "Connect through Kafka Bridge",
+  "sectionTitle": "Kafka Bridge",
   "build": {
     "for": [
       "public",
@@ -10,6 +10,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 5,
+  "weight": 2,
   "uuid": ""
 }

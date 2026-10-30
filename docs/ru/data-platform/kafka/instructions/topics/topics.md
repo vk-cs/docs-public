@@ -14,7 +14,7 @@
 
 ## {heading(Создание топика)[id=kafka_topics_create]}
 
-1. {linkto(../connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
+1. {linkto(../connections/connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
 1. Создайте топик с нужным количеством партиций и фактором репликации:
 
    {tabs}
@@ -61,7 +61,7 @@
 
 ## {heading(Просмотр топиков и их параметров)[id=kafka_topics_view]}
 
-1. {linkto(../connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
+1. {linkto(../connections/connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
 1. Получите список топиков:
 
    {tabs}
@@ -132,7 +132,7 @@
 
 Если сообщения распределяются по ключу, увеличение числа партиций может изменить распределение новых сообщений и порядок их обработки. Существующие сообщения останутся в прежних партициях.
 
-1. {linkto(../connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
+1. {linkto(../connections/connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
 1. Посмотрите текущее количество партиций топика:
 
    {tabs}
@@ -239,7 +239,7 @@
 Сокращение срока хранения может привести к удалению ранее записанных сообщений. Kafka удаляет их вместе с сегментами журнала, поэтому удаление происходит не сразу.
 {/note}
 
-1. {linkto(../connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
+1. {linkto(../connections/connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
 1. Установите нужный срок хранения сообщений:
 
    {tabs}
@@ -320,7 +320,7 @@
 Перед удалением убедитесь, что топик больше не нужен приложениям. При удалении топика хранящиеся в нем сообщения будут потеряны.
 {/note}
 
-1. {linkto(../connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
+1. {linkto(../connections/connect#kafka_connect-kafka-cli)[text=Подключитесь]} к экземпляру сервиса через Kafka CLI.
 1. Удалите топик:
 
    {tabs}

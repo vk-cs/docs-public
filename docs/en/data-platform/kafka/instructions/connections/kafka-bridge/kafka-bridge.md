@@ -1,4 +1,4 @@
-# {heading(Connect through Kafka Bridge)[id=kafka_connect-bridge]}
+# {heading(Kafka Bridge)[id=kafka_connect-bridge]}
 
 {include(/en/_includes/_translated_by_ai.md)}
 

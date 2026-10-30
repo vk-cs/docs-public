@@ -1,4 +1,4 @@
-# {heading(Connect from application code)[id=kafka_connect-app]}
+# {heading(Application code)[id=kafka_connect-app]}
 
 {include(/en/_includes/_translated_by_ai.md)}
 
@@ -6,7 +6,7 @@ To connect to a deployed Cloud Kafka instance from application code, use a clien
 
 ## {heading(Prepare to connect)[id=kafka_connect-preparation]}
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 Continue with the instructions for your programming language:
 
@@ -115,7 +115,7 @@ To connect with Java, use the [kafka-clients](https://kafka.apache.org/41/javado
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the `CheckKafka` class using your IDE or build system. If the program displays broker information without an error, the client has connected to Cloud Kafka.
 
@@ -202,7 +202,7 @@ To connect with Scala, use the [kafka-clients](https://kafka.apache.org/41/javad
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the following command in a terminal from the project directory:
 
@@ -271,7 +271,7 @@ To connect with Python, use the [confluent-kafka-python](https://docs.confluent.
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the following command in a terminal from the directory containing the file:
 
@@ -419,7 +419,7 @@ To connect with Go, use the [Sarama](https://pkg.go.dev/github.com/IBM/sarama) c
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the program:
 
@@ -552,7 +552,7 @@ To connect with C or C++, use the [librdkafka](https://docs.confluent.io/platfor
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. In a terminal, compile `check.c` from its directory and run the resulting program:
 
@@ -635,7 +635,7 @@ To connect with .NET, use the [Confluent.Kafka](https://docs.confluent.io/kafka-
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the following command in a terminal from the test project directory:
 
@@ -730,7 +730,7 @@ To connect with Node.js, use the [@confluentinc/kafka-javascript](https://docs.c
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Run the script in a terminal:
 

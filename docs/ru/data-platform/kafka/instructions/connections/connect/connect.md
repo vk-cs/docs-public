@@ -1,4 +1,4 @@
-# {heading(Подключение через Kafka CLI и kcat)[id=kafka_connect-cli]}
+# {heading(Kafka CLI и kcat)[id=kafka_connect-cli]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}
@@ -17,7 +17,7 @@
 
 1. Установите [Kafka CLI](https://kafka.apache.org/quickstart/) или [kcat](https://github.com/edenhill/kcat#install).
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 ## {heading(Kafka CLI)[id=kafka_connect-kafka-cli]}
 
@@ -211,4 +211,4 @@ kcat -b "<АДРЕС_И_ПОРТ_BOOTSTRAP_СЕРВЕРА>" -X security.protocol
 
 {/tabs}
 
-{include(../../../_includes/_kafka.md)[tags=connection-values]}
+{include(../../../../_includes/_kafka.md)[tags=connection-values]}

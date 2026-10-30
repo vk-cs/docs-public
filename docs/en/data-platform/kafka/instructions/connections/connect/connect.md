@@ -1,4 +1,4 @@
-# {heading(Connect through Kafka CLI and kcat)[id=kafka_connect-cli]}
+# {heading(Kafka CLI and kcat)[id=kafka_connect-cli]}
 
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}
@@ -19,7 +19,7 @@ Java must be installed to use Kafka CLI.
 
 1. Install [Kafka CLI](https://kafka.apache.org/quickstart/) or [kcat](https://github.com/edenhill/kcat#install).
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 ## {heading(Kafka CLI)[id=kafka_connect-kafka-cli]}
 
@@ -213,4 +213,4 @@ The command displays information about the brokers and topics of the Cloud Kafka
 
 {/tabs}
 
-{include(../../../_includes/_kafka.md)[tags=connection-values]}
+{include(../../../../_includes/_kafka.md)[tags=connection-values]}

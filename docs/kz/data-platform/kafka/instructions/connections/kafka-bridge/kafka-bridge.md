@@ -1,4 +1,4 @@
-# {heading(Kafka Bridge арқылы қосылу)[id=kafka_connect-bridge]}
+# {heading(Kafka Bridge)[id=kafka_connect-bridge]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -8,8 +8,8 @@ Kafka Bridge — Cloud Kafka компоненті. Ол HTTP арқылы топ
 
 1. Kafka Bridge компонентін мына тәсілдердің бірімен қосыңыз:
 
-   - {linkto(../create#kafka_create)[text=сервис данасын жасау]} кезінде **Параметрлер** қадамындағы қосымша компоненттер блогында;
-   - жасалған дананы {linkto(../management#kafka_scaling)[text=көлденең масштабтау]} кезінде.
+   - {linkto(../../create#kafka_create)[text=сервис данасын жасау]} кезінде **Параметрлер** қадамындағы қосымша компоненттер блогында;
+   - жасалған дананы {linkto(../../management#kafka_scaling)[text=көлденең масштабтау]} кезінде.
 
 1. Хабарламаларды жіберу және оқу үшін Kafka Bridge компонентінің қажетті топиктерге қол жеткізуін баптаңыз. Сервис данасының **Баптаулар** қойындысында әр параметр жолындағы **•••** белгішесін басып, **Өңдеу** тармағын таңдаңыз. Мәндерді көрсетіңіз:
 
@@ -20,7 +20,7 @@ Kafka Bridge — Cloud Kafka компоненті. Ол HTTP арқылы топ
       - `Read`: тек оқу;
       - `Write`: тек жазу (әдепкі мән).
 
-   Параметрлерді өзгерту тәртібі {linkto(../management#kafka_config)[text=Сервис конфигурациясын өңдеу]} бөлімінде сипатталған.
+   Параметрлерді өзгерту тәртібі {linkto(../../management#kafka_config)[text=Сервис конфигурациясын өңдеу]} бөлімінде сипатталған.
 
 ## {heading(Қосылу)[id=kafka_connect-bridge-connect]}
 

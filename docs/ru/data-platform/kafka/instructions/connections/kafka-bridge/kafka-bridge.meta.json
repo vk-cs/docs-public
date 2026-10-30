@@ -1,8 +1,8 @@
 {
-  "title": "Подключение через Kafka Bridge",
+  "title": "Kafka Bridge",
   "shortDescription": "Включение компонента, настройка доступа к топикам и проверка REST API",
   "metaDescription": "Подключение к Cloud Kafka через REST API Kafka Bridge в {var(data-p)}: включение компонента, настройка доступа к топикам и проверка API",
-  "sectionTitle": "Подключение через Kafka Bridge",
+  "sectionTitle": "Kafka Bridge",
   "build": {
     "for": [
       "public",
@@ -10,6 +10,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 5,
+  "weight": 2,
   "uuid": ""
 }

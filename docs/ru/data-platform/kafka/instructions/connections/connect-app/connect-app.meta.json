@@ -1,8 +1,8 @@
 {
-  "title": "Подключение из кода приложения",
+  "title": "Из кода приложения",
   "shortDescription": "Настройка клиентских библиотек и проверка доступа к брокерам",
   "metaDescription": "Подключение из кода приложения к Cloud Kafka в {var(data-p)}: примеры на Java, Scala, Python, Go, C / C++, .NET и Node.js с TLS и без TLS",
-  "sectionTitle": "Подключение из кода приложения",
+  "sectionTitle": "Из кода приложения",
   "build": {
     "for": [
       "public",
@@ -10,6 +10,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 6,
+  "weight": 3,
   "uuid": ""
 }

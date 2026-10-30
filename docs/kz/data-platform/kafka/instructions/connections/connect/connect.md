@@ -1,4 +1,4 @@
-# {heading(Kafka CLI және kcat арқылы қосылу)[id=kafka_connect-cli]}
+# {heading(Kafka CLI және kcat)[id=kafka_connect-cli]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -15,7 +15,7 @@ Kafka CLI жұмысы үшін Java орнатылған болуы керек.
 
 1. [Kafka CLI](https://kafka.apache.org/quickstart/) немесе [kcat](https://github.com/edenhill/kcat#install) орнатыңыз.
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 ## {heading(Kafka CLI)[id=kafka_connect-kafka-cli]}
 
@@ -209,4 +209,4 @@ kcat -b "<BOOTSTRAP_СЕРВЕРІНІҢ_МЕКЕНЖАЙЫ_МЕН_ПОРТЫ>" 
 
 {/tabs}
 
-{include(../../../_includes/_kafka.md)[tags=connection-values]}
+{include(../../../../_includes/_kafka.md)[tags=connection-values]}

@@ -5,6 +5,7 @@ export const tableOfContents = [
     '/ru/data-platform/kafka/concepts/*@level=+1',
     '/ru/data-platform/kafka/instructions@level=+1',
     '/ru/data-platform/kafka/instructions/*@level=+1',
+    '/ru/data-platform/kafka/instructions/connections/*@level=+2',
     '/ru/data-platform/airflow',
     '/ru/data-platform/airflow/concepts@level=+1',
     '/ru/data-platform/airflow/concepts/*@level=+1',

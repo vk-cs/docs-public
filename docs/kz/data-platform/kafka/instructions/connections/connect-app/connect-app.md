@@ -1,4 +1,4 @@
-# {heading(Қолданба кодынан қосылу)[id=kafka_connect-app]}
+# {heading(Қолданба кодынан)[id=kafka_connect-app]}
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
@@ -6,7 +6,7 @@
 
 ## {heading(Қосылуға дайындық)[id=kafka_connect-preparation]}
 
-{include(../../../_includes/_kafka.md)[tags=connection-preparation]}
+{include(../../../../_includes/_kafka.md)[tags=connection-preparation]}
 
 Келесі әрекеттер бағдарламалау тіліне байланысты:
 
@@ -115,7 +115,7 @@ Java арқылы қосылу үшін [kafka-clients](https://kafka.apache.org
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. `CheckKafka` класын IDE немесе құрастыру жүйесі арқылы іске қосыңыз. Бағдарлама брокерлер туралы мәліметтерді қатесіз шығарса, клиент Cloud Kafka-ға қосылды.
 
@@ -202,7 +202,7 @@ Scala арқылы қосылу үшін [kafka-clients](https://kafka.apache.or
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Терминалда жоба директориясынан мына команданы орындаңыз:
 
@@ -271,7 +271,7 @@ Python арқылы қосылу үшін [confluent-kafka-python](https://docs.
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Терминалда файл орналасқан директориядан мына команданы орындаңыз:
 
@@ -419,7 +419,7 @@ Go арқылы қосылу үшін [Sarama](https://pkg.go.dev/github.com/IBM
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Бағдарламаны іске қосыңыз:
 
@@ -552,7 +552,7 @@ C немесе C++ арқылы қосылу үшін [librdkafka](https://docs.
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Терминалда файл орналасқан директориядан `check.c` файлын компиляциялап, алынған бағдарламаны іске қосыңыз:
 
@@ -635,7 +635,7 @@ C немесе C++ арқылы қосылу үшін [librdkafka](https://docs.
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Терминалда сынақ жобасының директориясынан мына команданы орындаңыз:
 
@@ -730,7 +730,7 @@ Node.js арқылы қосылу үшін [@confluentinc/kafka-javascript](http
 
    {/tabs}
 
-   {include(../../../_includes/_kafka.md)[tags=connection-values]}
+   {include(../../../../_includes/_kafka.md)[tags=connection-values]}
 
 1. Терминалда скриптті іске қосыңыз:
 
