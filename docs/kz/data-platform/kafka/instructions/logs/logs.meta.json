@@ -1,8 +1,8 @@
 {
-  "title": "Standalone ішіндегі лог жүргізу",
-  "shortDescription": "Standalone ішінде сервис данасының логтарын қалай қарауға болады",
+  "title": "Лог жүргізу",
+  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
   "metaDescription": "Cloud Kafka сервисінің орналастырылған данасының жұмыс логтарын VK Data Platform жүйесінің Standalone нұсқасында қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone ішіндегі лог жүргізу",
+  "sectionTitle": "Лог жүргізу",
   "build": {
     "for": [
       "data-p",

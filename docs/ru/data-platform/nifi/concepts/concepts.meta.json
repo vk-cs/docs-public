@@ -6,9 +6,6 @@
   "weight": 0,
   "uuid": "a0a00c02-02f1-47fa-aab8-df98d3473e7c",
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   }
 }

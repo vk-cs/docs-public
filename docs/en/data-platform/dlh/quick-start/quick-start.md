@@ -190,7 +190,7 @@ To deploy a Cloud Trino service instance and configure its PostgreSQL connection
    1. In the **Password** field, click the **Generate** button to generate an administrator password. Save the password; you will need it later.
 
       {note:info}
-      A lost password cannot be recovered, but it can be [changed](../../trino/instructions/management#change_password) to a new one.
+      A lost password cannot be recovered, but it can be [changed](../../trino/instructions/management#trino_change_password) to a new one.
       {/note}
 
 1. Click the **Create** button.

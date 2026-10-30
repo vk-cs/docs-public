@@ -4,8 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Просмотр информации об экземпляре)[id=lakekeeper_view_info]}
 
 {tabs}
@@ -53,27 +51,7 @@
 
 {/tabs}
 
-## {heading(Назначение внешнего IP)[id=lakekeeper_assign_ip]}
-
-{note:warn}
-Доступно только для {var(data-p)} в составе {var(cloud)}.
-{/note}
-
-{tabs}
-
-{tab(Личный кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_assign_ip]}
-
-{/tab}
-
-{/tabs}
-
 ## {heading(Изменение IP и портов)[id=lakekeeper_change_ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 

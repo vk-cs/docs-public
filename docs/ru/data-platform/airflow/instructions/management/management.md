@@ -1,7 +1,5 @@
 # {heading(Работа с экземпляром сервиса)[id=airflow_management]}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Просмотр общей информации)[id=airflow_view_info]}
 
 {tabs}
@@ -56,10 +54,6 @@
 {/ifndef}
 
 ## {heading(Изменение IP и портов)[id=airflow_change_ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 

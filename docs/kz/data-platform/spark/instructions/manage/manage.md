@@ -6,10 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Дана туралы ақпаратты қарау)[id=spark_view]}
 
 {tabs}
@@ -36,12 +32,12 @@
 
 {ifndef(public)}
 ## {heading(IP мекенжайы мен порттарды өзгерту)[id=spark_change-ip]}
-{note:warn} Тек Standalone режиміндегі {var(data-p)} үшін қолжетімді. {/note}
+
 {tabs}
 
 {tab(Жеке кабинет)}
 
-{include(../../../_includes/_standalone.md)[tags=change_ip]}
+{include(../../../_includes/_standalone.md)[tags=change_ip_without_ui]}
 
 {/tab}
 
@@ -71,6 +67,21 @@
 {/tab}
 
 {/tabs}
+
+{ifndef(public)}
+## {heading(Тік масштабтау)[id=spark_vertical_scaling]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_vertical_scaling]}
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
 
 ## {heading(Spark нұсқасын қарау және өзгерту)[id=spark_settings]}
 
@@ -144,7 +155,7 @@
 
 {tab(Жеке кабинет)}
 
-{include(../../../_includes/_data_p.md)[tags=instance_user_delete]}
+{include(../../../_includes/_data_p.md)[tags=instance_delete]}
 
 {/tab}
 

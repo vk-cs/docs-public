@@ -1,4 +1,4 @@
-# {heading(Standalone режиміндегі мониторинг)[id=trino-monitoring]}
+# {heading(Мониторинг)[id=trino-monitoring]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

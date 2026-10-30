@@ -1,4 +1,4 @@
-# {heading(Мониторинг в Standalone)[id=clickhouse_monitoring]}
+# {heading(Мониторинг)[id=clickhouse_monitoring]}
 
 {include(../../../_includes/_monitoring_sa.md)[tags=monitoring_info]}
 

@@ -3,7 +3,7 @@
 {includetag(difference)}
 
 {note:info}
-Most steps for creating a service instance are the same for {var(data-p)} configurations: Standalone as part of {var(cloud)} and Standalone as part of {var(cloud)}. Differences in the steps are noted accordingly.
+Most steps for creating a service instance are the same for the two {var(data-p)} configurations: Standalone and Standalone as part of {var(cloud)}. Steps available in only one configuration are marked accordingly.
 
 You can identify the Standalone configuration by the icon in the top-left corner and the {var(data-p)} label.
 {/note}
@@ -15,7 +15,7 @@ You can identify the Standalone configuration by the icon in the top-left corner
 {includetag(difference_management)}
 
 {note:info}
-Some actions on a service instance may be unavailable depending on the {var(data-p)} configuration: Standalone as part of {var(cloud)} and Standalone as part of {var(cloud)}.
+Some actions on a service instance may be unavailable depending on the {var(data-p)} configuration: Standalone or Standalone as part of {var(cloud)}.
 
 You can identify the Standalone configuration by the icon in the top-left corner and the {var(data-p)} label.
 {/note}
@@ -38,7 +38,7 @@ You can identify the Standalone configuration by the icon in the top-left corner
 1. Click on the name of the required service instance.
 1. Go to the **General information** tab.
 1. Click **Manage IP addresses**.
-1. (Standalone as part of {var(cloud)} only) Change the security group.
+1. (Optional) Only for {var(data-p)} as part of {var(cloud)}: change the security group.
 1. Specify the new IP addresses and change the ports if necessary.
 1. Click **Save changes**.
 
@@ -130,7 +130,7 @@ In the Standalone configuration, user authorization in the service web interface
 1. Click on the name of the required service instance.
 1. Go to the **General information** tab.
 1. Click **Manage IP addresses**. IP address editing is available for endpoints without a web interface.
-1. (Standalone as part of {var(cloud)} only) Change the security group.
+1. (Optional) Only for {var(data-p)} as part of {var(cloud)}: change the security group.
 1. Specify the new IP addresses and change the ports if necessary.
 1. Click **Save changes**.
 
@@ -141,7 +141,7 @@ In the Standalone configuration, user authorization in the service web interface
 {includetag(total_quotas)}
 
 {note:info}
-Resources in the Standalone and Standalone as part of {var(cloud)} configurations are shared among all users. Specify the instance parameters with the available resources in mind. The amount of available resources is displayed on the **Data Platform** → **Service instances** page in the top panel.
+When creating an instance, keep in mind that {var(data-p)} resources are shared among all users. The amount of available resources is displayed in the top panel of the **Data Platform** → **Service instances** section.
 {/note}
 
 {/includetag}

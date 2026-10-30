@@ -10,10 +10,6 @@
 {include(/en/_includes/_dp_mpl_user_warn.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference]}
-{/ifndef}
-
 {tabs}
 
 {tab(Management console)}
@@ -42,14 +38,22 @@
       - **Name**: specify a name for the service instance.
       - **Description**: add a description if necessary.
       - **Database name**: specify the name of the database that Cloud ClickHouse will connect to.
-      - {ifndef(public)} (Skip for Standalone) {/ifndef} **Assign external IP**: enable the option to make the Cloud ClickHouse instance accessible via the internet.
+      {ifdef(public)}
+
+      - **Assign external IP**: enable the option to make the Cloud ClickHouse instance accessible via the internet.
+      {/ifdef}
 
       {ifndef(public)}
-      - (For Standalone only, optional) **Automatic IP assignment**: disable the option to specify an IP address for the service instance from the subnet.
-      - (For Standalone as part of {var(cloud)} only, optional) Add a security group. If the required security group is not in the list, create it following the instructions in **{var(cloud)} Administrator Guide** → **Networks** → [Firewall configuration](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
-      - (Skip for Standalone) Select a Kubernetes cluster from the dropdown list or create a new one. A worker node will be added to this cluster to host the Cloud ClickHouse instance.
+
+      - Only for {var(data-p)} as part of {var(cloud)}:
+
+         - **Network**: select the subnet where the service instance will be deployed.
+         - (Optional) Add a security group. If the required security group is not listed, create it using **{var(cloud)} Administrator Guide** → **Networks** → [Firewall configuration](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
+
+      - (Optional) **Automatic IP assignment**: disable the option to specify an IP address for the instance from the subnet. By default, the address is assigned automatically.
       {/ifndef}
       {ifdef(public)}
+
       - **Kubernetes cluster**: select the required cluster from the dropdown list or create a new one by selecting `Create new cluster` in the list. When creating a new cluster, specify the parameters:
 
          - **Network**: select the subnet where the cluster will be accessible from the list, or create a new one by selecting `Create new network` in the list. When creating a new subnet, specify the [SDN](/en/networks/vnet/concepts/sdn) and the subnet address.

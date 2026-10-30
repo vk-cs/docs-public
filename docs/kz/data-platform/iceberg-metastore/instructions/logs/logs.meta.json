@@ -1,8 +1,8 @@
 {
-  "title": "Standalone-та журнал жүргізу",
-  "shortDescription": "Standalone-та сервис данасының журналдарын қалай қарауға болады",
+  "title": "Логтау",
+  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
   "metaDescription": "VK Data Platform-тың Standalone нұсқасында Cloud Iceberg Metastore сервисінің жайылған данасының жұмыс журналдарын қалай қарауға және олармен қалай жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone-та журнал жүргізу",
+  "sectionTitle": "Логтау",
   "build": {
     "for": [
       "data-p",

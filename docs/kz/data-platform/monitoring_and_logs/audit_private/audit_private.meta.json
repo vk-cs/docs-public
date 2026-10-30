@@ -1,8 +1,8 @@
 {
-  "title": "Audit VK Private Cloud құрамында",
-  "shortDescription": "VK Private Cloud құрамында пайдаланушының SIEM жүйесімен біріктірілген қауіпсіздік оқиғаларын жинау",
-  "metaDescription": "VK Data Platform құрамында VK Private Cloud-та Audit сервисінің қалай жұмыс істейтінін біліңіз",
-  "sectionTitle": "Audit VK Private Cloud құрамында",
+  "title": "VK Private Cloud-тағы аудит",
+  "shortDescription": "VK Private Cloud-та пайдаланушының SIEM жүйесімен біріктірілген қауіпсіздік оқиғаларын жинау",
+  "metaDescription": "VK Private Cloud-тағы VK Data Platform-да Audit сервисінің қалай жұмыс істейтінін біліңіз",
+  "sectionTitle": "VK Private Cloud-тағы аудит",
   "weight": 1,
   "build": {
     "for": [

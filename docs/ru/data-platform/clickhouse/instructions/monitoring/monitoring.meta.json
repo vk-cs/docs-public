@@ -1,8 +1,8 @@
 {
-  "title": "Мониторинг в Standalone",
-  "shortDescription": "Сбор и просмотр метрик в Standalone",
-  "metaDescription": "Узнайте, как просматривать метрики работы развернутых экземпляров сервиса Cloud ClickHouse в VK Data Platform версии Standalone",
-  "sectionTitle": "Мониторинг в Standalone",
+  "title": "Мониторинг",
+  "shortDescription": "Сбор и просмотр метрик",
+  "metaDescription": "Узнайте о мониторинге экземпляра Cloud ClickHouse в VK Data Platform: просмотр и обновление графиков метрик, выбор периода, настройка отображения и справочник метрик.",
+  "sectionTitle": "Мониторинг",
   "build": {
     "for": [
       "data-p",

@@ -1,4 +1,4 @@
-# {heading(Мониторинг в Standalone)[id=airflow_monitoring]}
+# {heading(Мониторинг)[id=airflow_monitoring]}
 
 {include(../../../_includes/_monitoring_sa.md)[tags=monitoring_info]}
 

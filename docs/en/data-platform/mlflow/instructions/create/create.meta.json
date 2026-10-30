@@ -5,10 +5,7 @@
   "sectionTitle": "Creating a service instance",
   "weight": 1,
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "uuid": "957ec94e-928e-452c-84dd-c80f413fcc0f"
 }

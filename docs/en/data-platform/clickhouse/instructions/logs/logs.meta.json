@@ -1,8 +1,8 @@
 {
-  "title": "Logging in Standalone",
+  "title": "Logging",
   "sectionTitle": "Logging",
-  "shortDescription": "Information about logging in Standalone for Cloud ClickHouse.",
-  "metaDescription": "Information about logging in Standalone for Cloud ClickHouse.",
+  "shortDescription": "How to view service instance logs",
+  "metaDescription": "View and filter Cloud ClickHouse instance logs in VK Data Platform: select event levels and time periods, view log entry details, and refresh logs.",
   "weight": 4,
   "uuid": "ba789cf6-797f-474a-9883-2343d35ad322",
   "build": {

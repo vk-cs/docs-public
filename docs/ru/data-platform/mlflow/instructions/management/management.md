@@ -4,8 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Общая информация)[id=mlflow_info]}
 
 ### {heading(Просмотр общей информации)[id=mlflow_view_info]}

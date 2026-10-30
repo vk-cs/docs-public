@@ -6,8 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{include(../../../_includes/_standalone.md)[tags=difference]}
-
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. **Дана жасау** түймесін басыңыз.
 1. Келесі қадамдарды орындаңыз:

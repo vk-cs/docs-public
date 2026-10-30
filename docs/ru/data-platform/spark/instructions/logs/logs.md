@@ -1,4 +1,4 @@
-# {heading(Логирование в Standalone)[id=spark-logs]}
+# {heading(Логирование)[id=spark-logs]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

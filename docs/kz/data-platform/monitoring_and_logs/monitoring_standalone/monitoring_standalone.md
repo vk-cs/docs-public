@@ -1,4 +1,4 @@
-# {heading(Standalone-тағы мониторинг)[id=monitoring-standalone]}
+# {heading(Мониторинг)[id=monitoring-standalone]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

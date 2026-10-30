@@ -4,10 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Просмотр информации об экземпляре)[id=clickhouse_view]}
 
 {tabs}
@@ -51,10 +47,6 @@
 
 {ifndef(public)}
 ## {heading(Изменение IP и портов)[id=clickhouse_change-ip]}
-
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
 
 {tabs}
 

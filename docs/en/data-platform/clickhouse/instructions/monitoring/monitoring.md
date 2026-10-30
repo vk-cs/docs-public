@@ -1,4 +1,4 @@
-# {heading(Monitoring in Standalone)[id=clickhouse_monitoring]}
+# {heading(Monitoring)[id=clickhouse_monitoring]}
 
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}

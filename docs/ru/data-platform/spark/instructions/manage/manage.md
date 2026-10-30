@@ -4,10 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Просмотр информации об экземпляре)[id=spark_view]}
 
 {tabs}
@@ -34,9 +30,7 @@
 
 {ifndef(public)}
 ## {heading(Изменение IP и портов)[id=spark_change-ip]}
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
+
 {tabs}
 
 {tab(Личный кабинет)}
@@ -161,7 +155,7 @@
 
 {tab(Личный кабинет)}
 
-{include(../../../_includes/_data_p.md)[tags=instance_user_delete]}
+{include(../../../_includes/_data_p.md)[tags=instance_delete]}
 
 {/tab}
 

@@ -8,10 +8,6 @@
 {include(/ru/_includes/_dp_mpl_user_warn.md)}
 {/ifdef}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference]}
-{/ifndef}
-
 {tabs}
 
 {tab(Личный кабинет)}
@@ -36,12 +32,17 @@
 1. На шаге **Параметры**:
 
    1. Задайте для экземпляра название и описание.
-   1. {ifndef(public)} (Пропустить для Standalone) {/ifndef} Включите опцию **Назначить внешний IP**, если необходим доступ к экземпляру из внешней сети.
+   {ifdef(public)}
+   1. Включите опцию **Назначить внешний IP**, если необходим доступ к экземпляру из внешней сети.
+   {/ifdef}
 
    {ifndef(public)}
-   1. (Только для Standalone, опционально) Задайте IP-адрес для экземпляра сервиса из подсети. Для этого отключите опцию **Автоматическое назначение IP**. По умолчанию IP-адрес назначается экземпляру автоматически.
-   1. (Только для Standalone в составе {var(cloud)}, опционально) Добавьте группу безопасности. Если нужной группы безопасности нет в списке, создайте ее по инструкции из **Руководства администратора {var(cloud)}** → **Сети** → [Настройка firewall](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
-   1. (Пропустить для Standalone) Выберите кластер Kubernetes из выпадающего списка или создайте новый. В этот кластер будет добавлен worker-узел для размещения экземпляра Cloud Kafka.
+   1. Только для {var(data-p)} в составе {var(cloud)}:
+
+      1. Выберите сеть, в которой будет размещен экземпляр сервиса.
+      1. (Опционально) Добавьте группу безопасности. Если нужной группы безопасности нет в списке, создайте ее по инструкции из **Руководства администратора {var(cloud)}** → **Сети** → [Настройка firewall](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
+
+   1. (Опционально) Задайте IP-адрес для экземпляра сервиса из подсети. Для этого отключите опцию **Автоматическое назначение IP**. По умолчанию IP-адрес назначается экземпляру автоматически.
    {/ifndef}
    {ifdef(public)}
    1. Выберите кластер Kubernetes. В этот кластер в сервисе [Managed Containers](/ru/kubernetes#kubernetes) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) для размещения экземпляра Cloud Kafka.

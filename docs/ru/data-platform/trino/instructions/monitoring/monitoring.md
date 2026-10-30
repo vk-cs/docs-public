@@ -1,4 +1,4 @@
-# {heading(Мониторинг в Standalone)[id=trino-monitoring]}
+# {heading(Мониторинг)[id=trino-monitoring]}
 
 {ifdef(public)}
 {include(/ru/_includes/_dp-unavailable.md)}

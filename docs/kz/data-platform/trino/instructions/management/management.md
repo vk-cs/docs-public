@@ -6,10 +6,6 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{ifndef(public)}
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-{/ifndef}
-
 ## {heading(Дана туралы ақпаратты қарау)[id=trino_view]}
 
 {tabs}
@@ -35,15 +31,28 @@
 {/tabs}
 
 {ifndef(public)}
-## {heading(IP және порттарды өзгерту)[id=trino_change-ip]}
-
-{note:warn} Тек Standalone режиміндегі {var(data-p)} үшін қолжетімді. {/note}
+## {heading(TLS сертификатын қарау және ауыстыру)[id=trino_certificate]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-{include(../../../_includes/_standalone.md)[tags=change_ip]}
+{include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
+
+{ifndef(public)}
+## {heading(IP және порттарды өзгерту)[id=trino_change-ip]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_standalone.md)[tags=change_ip_without_ui]}
 
 {/tab}
 
@@ -75,7 +84,61 @@
 
 {/tabs}
 
-## {heading(Әкімші құпиясөзін өзгерту)[id=trino_change_password]}
+{ifndef(public)}
+## {heading(Дананы тік масштабтау)[id=trino_vertical_scaling]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_vertical_scaling]}
+
+{/tab}
+
+{/tabs}
+
+{/ifndef}
+
+## {heading(Баптауларды қарау және өңдеу)[id=trino_edit_settings]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+{include(../../../_includes/_data_p.md)[tags=instance_edit_settings_new]}
+
+{/tab}
+
+{/tabs}
+
+## {heading(Тіркелгіні қарау)[id=trino_admin_view]}
+
+{ifndef(public)}
+{note:warn}
+Тек {var(cloud)} құрамындағы {var(data-p)} үшін.
+{/note}
+{/ifndef}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
+1. Дананың атауын басыңыз.
+1. **Тіркелгі деректері** қойындысына өтіңіз.
+1. Ақпаратпен танысыңыз.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Құпиясөзді өзгерту)[id=trino_change_password]}
+
+{ifndef(public)}
+{note:info}
+Тек {var(cloud)} құрамындағы {var(data-p)} үшін.
+{/note}
+{/ifndef}
 
 {tabs}
 
@@ -85,7 +148,7 @@
 
 1. Дана бетінде **Тіркелгі деректері** қойындысына өтіңіз.
 1. Қажетті тіркелгі үшін **•••** түймесін басып, **Өңдеу** тармағын таңдаңыз.
-1. Ашылған терезеде жаңа әкімші құпиясөзін көрсетіңіз.
+1. Ашылған терезеде жаңа пайдаланушы құпиясөзін көрсетіңіз.
 
    {include(../../../_includes/_trino.md)[tags=password]}
 
@@ -103,7 +166,13 @@
 
 {/tabs}
 
-## {heading(Әкімші тіркелгісін жасау)[id=trino_add_admin]}
+## {heading(Тіркелгіні жасау)[id=trino_add_admin]}
+
+{ifndef(public)}
+{note:info}
+Тек {var(cloud)} құрамындағы {var(data-p)} үшін.
+{/note}
+{/ifndef}
 
 {tabs}
 
@@ -113,8 +182,8 @@
 
 1. Дана бетінде **Тіркелгі деректері** қойындысына өтіңіз.
 1. **Тіркелгі қосу** батырмасын басыңыз.
-1. Ашылған терезеде Cloud Trino-ға қол жеткізу үшін әкімші логинін орнатыңыз.
-1. Әкімші құпиясөзін ойлап табыңыз немесе жасаңыз.
+1. Ашылған терезеде Cloud Trino-ға қол жеткізу үшін пайдаланушы логинін орнатыңыз.
+1. Құпиясөзді ойлап табыңыз немесе жасаңыз.
 
    {include(../../../_includes/_trino.md)[tags=password]}
 
@@ -182,6 +251,10 @@
 
 {/tabs}
 
+## {heading(Пайдаланушылардың қолжетімділігін басқару)[id=trino_management_rbac]}
+
+Толығырақ нұсқаулықта: {linkto(../rbac#trino_rbac)[text=%text]}.
+
 ## {heading(Қызмет көрсету кезеңін өзгерту)[id=trino_maintenance]}
 
 {tabs}
@@ -212,6 +285,21 @@
          - **Метадеректер файлдары нұсқаларының саны** — метадеректер файлдары нұсқаларының ең көп саны. Егер **Метадеректер файлдарын жою** опциясы қосулы болса, ескірген нұсқалар жойылады. Әдепкі мәні — `10`.
 
 1. **Өзгерістерді сақтау** батырмасын басыңыз.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Өзгерістер тарихын қарау)[id=trino_changes_history]}
+
+{tabs}
+
+{tab(Жеке кабинет)}
+
+1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
+1. Дананың атауын басыңыз.
+1. Қажетті қойындыға өтіп, оң жақтағы ![белгіше](../../../assets/icon-clock.svg "inline") белгішесін басыңыз.
+1. Өзгерістер тарихымен танысыңыз.
 
 {/tab}
 

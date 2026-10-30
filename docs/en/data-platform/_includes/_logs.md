@@ -2,7 +2,7 @@
 
 {includetag(logs_info)}
 
-{var(data-p)} in the Standalone version collects logs from all deployed service instances and displays them separately for each instance on the **Logging** tab.
+{var(data-p)} collects logs from all deployed service instances and displays them separately for each instance on the **Logging** tab.
 
 ## {heading(Viewing instance logs)[id=logs_standalone_view]}
 

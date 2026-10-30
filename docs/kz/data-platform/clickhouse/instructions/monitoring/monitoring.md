@@ -1,4 +1,4 @@
-# {heading(Standalone-да мониторинг)[id=clickhouse_monitoring]}
+# {heading(Мониторинг)[id=clickhouse_monitoring]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

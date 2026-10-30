@@ -5,10 +5,7 @@
   "sectionTitle": "Working with a service instance",
   "weight": 2,
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "uuid": "94208d99-a8e3-41a0-b2fb-af72c8acee7b"
 }

@@ -1,4 +1,4 @@
-# {heading(Standalone режиміндегі логтау)[id=trino-logs]}
+# {heading(Логтау)[id=trino-logs]}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

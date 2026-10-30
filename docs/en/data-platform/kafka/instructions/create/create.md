@@ -1,176 +1,154 @@
+# {heading(Creating a service instance)[id=kafka_create]}
+
 {ifdef(public)}
 {include(/en/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-You can create an instance of Cloud Kafka in one of two configurations:
 
-- [Single](#creating_an_instance_in_the_single_configuration): single node configuration, not fault-tolerant. An instance in this configuration is suitable for development and testing tasks.
-- [Cluster](#creating_an_instance_in_the_cluster_configuration): fault-tolerant configuration of multiple nodes. An instance in this configuration is suitable for any task, including daily work with data in a production environment.
+{include(/en/_includes/_translated_by_ai.md)}
 
+{ifdef(public)}
 {include(/en/_includes/_dp_mpl_user_warn.md)}
-
-## Creating an instance in the Single configuration
-
-{tabs}
-
-{tab(Management console)}
-
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where you want to create an instance of the service.
-1. Go to **Data Platform → Service instances**.
-1. Click the **Add an instance** or **Create an instance** button.
-1. At the **Configuration** step:
-
-   1. Select the type of service **Kafka**.
-   1. Select the version of the service.
-   1. Select the configuration **Single**.
-   1. Click the **Next step** button.
-
-1. At the **Parameters** step:
-
-   1. Specify the name and the description for the instance.
-   1. Set the node parameters for the broker:
-
-      - **Type of virtual machine:** [flavor](/en/computing/iaas/concepts/about#flavors) for the node.
-      - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
-      - **Disk size:** disk size for the node.
-
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host an instance of Cloud Kafka.
-
-      If the required cluster is not in the list:
-
-      1. Choose **Create a new cluster** option.
-      1. Select the network and subnet for the cluster from the drop-down list **Network**.
-
-         If the required network is not in the list:
-
-         1. Choose **Create new network** option.
-         1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
-         1. Enter the subnet address, for example, `10.0.1.0/24`.
-
-   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
-   1. Click the **Next step** button.
-
-1. At the **Credentials** step:
-
-   1. Set the administrator login to access Kafka.
-   1. Create or generate an administrator password.
-
-      Password requirements:
-
-      - can contain only numbers, special characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, uppercase and lowercase Latin letters;
-      - must consist of at least 8 characters;
-      - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
-
-      {note:err}
-
-      The password cannot be restored.
-
-      {/note}
-
-   1. Click the **Create** button.
-
-      Wait for the operation to complete. It may take a long time to create an instance of Cloud Kafka.
-
-{/tab}
-
-{/tabs}
-
-## Creating an instance in the Cluster configuration
+{/ifdef}
 
 {tabs}
 
 {tab(Management console)}
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where you want to create an instance of the service.
+{ifdef(public)}
+1. [Go to](https://msk.cloud.vk.ru/app/) your {var(cloud)} management console.
+1. Select the project where you want to create the service instance.
+{/ifdef}
+
 1. Go to **Data Platform → Service instances**.
-1. Click the **Create an instance** or **Create instance** button.
+1. Click **Create instance**.
 1. At the **Configuration** step:
 
-   1. Select the type of service **Kafka**.
-   1. Select the required version of the service.
-   1. Select the configuration **Cluster**.
-   1. Click the **Next step** button.
+   1. Select the `Cloud Kafka` service type.
+   1. Select the required service version.
+   1. Select the service instance configuration:
+
+      {include(../../../_includes/_data_p.md)[tags=configuration_atom]}
+
+   1. Click **Next step**.
 
 1. At the **Parameters** step:
 
-   1. Specify the name and the description for the instance.
-   1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/mk8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/mk8s) service to host an instance of Cloud Kafka.
+   1. Specify the instance name and description.
+   {ifdef(public)}
+   1. Enable **Assign external IP** if you need to access the instance from an external network.
+   {/ifdef}
 
-      If the required cluster is not in the list:
+   {ifndef(public)}
+   1. Only for {var(data-p)} as part of {var(cloud)}:
 
-      1. Choose **Create a new cluster** option.
-      1. Select the network and subnet for the cluster from the drop-down list **Network**.
+      1. Select the network where the service instance will be deployed.
+      1. (Optional) Add a security group. If the required security group is not listed, create it using **{var(cloud)} Administrator Guide** → **Networks** → [Configuring a firewall](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/admin-guide/service_management/network/network_firewall_setup).
 
-         If the required network is not in the list:
+   1. (Optional) Specify an IP address for the service instance from the subnet. To do this, disable **Automatic IP assignment**. By default, the instance is assigned an IP address automatically.
+   {/ifndef}
+   {ifdef(public)}
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host the Cloud Kafka instance.
 
-         1. Choose **Create new network** option.
-         1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
-         1. Set the subnet address, for example, `10.0.1.0/24`.
+      If the required cluster is not listed:
 
-   1. Select [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the cluster node will be located.
-   1. Configure the cluster node settings by selecting one of the options:
+      1. Select `Create new cluster`.
+      1. Select a network and subnet for the cluster from the **Network** drop-down list.
+
+         If the required network is not listed, select `Create`.
+
+      1. Select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) where the Kubernetes cluster node will be deployed.
+   {/ifdef}
+
+   1. Configure the cluster node parameters by selecting one of the options:
 
       {tabs}
-      
-      {tab(Basic)}
-            
-      Select one of the ready-made cluster templates. [Flavor](/en/computing/iaas/concepts/about#flavors) and [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) the cluster nodes have already been selected.
 
-      If you select any template, the Cloud Kafka instance will consist of three nodes for brokers and three nodes for ZooKeeper.
+      {tab(Basic)}
+
+      Depending on the selected configuration, the preconfigured resources have different numbers of nodes:
+
+         - in the `Single node` instance configuration: 1 Kafka broker node;
+         - in the `Cluster` instance configuration: 3 Kafka broker nodes.
 
       {/tab}
-      
+
       {tab(Advanced)}
-      
-      Configure the settings yourself:
 
-      1. Set the node parameters for brokers in the **Broker** block:
+      Configure the parameters manually:
 
-         - **Type of virtual machine:** [flavor](/en/computing/iaas/concepts/about#flavors) for the node.
-         - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
-         - **Disk size:** disk size for the node.
-         - **Number of brokers:** the total number of nodes.
+      1. In the **Kafka broker** block, specify:
 
-           The minimum number of nodes is three.
+         - The number of Kafka broker nodes and their parameters: the number of CPUs, RAM, disk {ifdef(public)}[type](/ru/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list){/ifdef}{ifndef(public)}type{/ifndef} and size.
 
-         - **Replication factor:** default [replication factor](https://kafka.apache.org/documentation/#intro_concepts_and_terms).
+            To create a fault-tolerant cluster, the number of nodes must be greater than `1`.
 
-           The minimum value of the coefficient coincides with the selected number of nodes for brokers.
+         - The **security.protocol** protocol used for authentication in Cloud Kafka:
 
-           This coefficient is applied when creating Kafka topics, unless a replication coefficient has been explicitly specified for them.
+            - `ALL`: connections both with SSL/TLS encryption and without encryption.
+            - `SASL_SSL`: connections with SSL/TLS encryption only.
+            - `SASL_PLAINTEXT`: connections without encryption only. Data is transmitted in plain text.
 
-      1. Get acquainted with the node parameters for ZooKeeper.
+      1. (Optional) Select and configure additional components. To do this, enable **Install** and specify the number of CPUs and RAM. The following options are available:
 
-         These parameters are preset and cannot be changed.
+         - Install **Kafka Bridge** to work with Cloud Kafka through the REST API.
+         - Install **Kafka UI** to work with Cloud Kafka through a graphical interface.
+
+      {ifndef(public)}
+      1. Select one or three availability zones where the cluster nodes will be deployed. Kafka brokers will be distributed across the selected zones automatically.
+      {/ifndef}
 
       {/tab}
 
       {/tabs}
 
-   1. Click the **Create** button.
+      {ifndef(public)}
+      {include(../../../_includes/_standalone.md)[tags=total_quotas]}
+      {/ifndef}
+
+   1. Click **Next step**.
+
+1. At the **Maintenance** step:
+
+   1. Select the days of the week and the start time for maintenance. During this time, maintenance tasks, including backups, may run on the server, and the service may be temporarily unavailable.
+
+      {note:info}
+      Maintenance lasts 4 hours. The time zone is GMT+03:00.
+      {/note}
+
+   1. Click **Next step**.
 
 1. At the **Credentials** step:
 
-   1. Set the administrator login to access Kafka.
+   1. Specify the account username for accessing Kafka.
+   1. Select a role:
+
+      - `Cluster owner`: has full control over messages, analysis, transactions, and settings, and can create, modify, delete, and view all objects (topics, schemas, groups, connectors, and configurations).
+
+      {include(../../../_includes/_kafka.md)[tags=roles]}
+
+      {note:info}
+      Users can only be managed through the {ifdef(public)}{var(cloud)}{/ifdef}{ifndef(public)}{var(data-p)}{/ifndef} management console.
+      {/note}
+
+      You can create multiple users for Cloud Kafka, but at least one must have the `Cluster owner` role.
+
    1. Create or generate an administrator password.
 
       Password requirements:
 
-      - can contain only numbers, special characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, uppercase and lowercase Latin letters;
-      - must consist of at least 8 characters;
-      - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
+      - may contain only digits, the symbols `!`, `"`, `#`, `$`, `%`, `&`, `'`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `/`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `\\`, `]`, `^`, `_`, `` ` ``, `{`, `|`, `}`, `~`, and uppercase and lowercase Latin letters;
+      - must contain at least 16 characters;
+      - must contain at least one uppercase and one lowercase Latin letter, and at least one digit.
 
       {note:err}
-
       The password cannot be restored.
-
       {/note}
 
-   1. Click the **Create** button.
+   1. (Optional) To add more users, click **Add account**.
+   1. Click **Create**.
 
-      Wait for the operation to complete. It may take a long time to create an instance of Cloud Kafka.
+      Wait for the operation to complete. Creating a Cloud Kafka instance may take a long time.
 
 {/tab}
 

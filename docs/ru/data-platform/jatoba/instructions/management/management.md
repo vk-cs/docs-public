@@ -4,8 +4,6 @@
 {include(/ru/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(../../../_includes/_standalone.md)[tags=difference_management]}
-
 ## {heading(Общая информация)[id=jatoba_info]}
 
 ### {heading(Просмотр общей информации)[id=jatoba_view_info]}
@@ -34,10 +32,6 @@
 
 ## {heading(Изменение IP и портов)[id=jatoba_change-ip]}
 
-{note:warn}
-Только для Standalone и Standalone в составе {var(cloud)}.
-{/note}
-
 {tabs}
 
 {tab(Личный кабинет)}
@@ -53,10 +47,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -112,10 +102,6 @@
 
 {tab(Личный кабинет)}
 
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
-
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
 1. На странице экземпляра перейдите на вкладку **Учетные данные**.
@@ -137,10 +123,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.
@@ -249,10 +231,6 @@
 {tabs}
 
 {tab(Личный кабинет)}
-
-{ifdef(public)}
-1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-{/ifdef}
 
 1. Перейдите в раздел **Data Platform** → **Экземпляры сервисов**.
 1. Нажмите на имя нужного экземпляра.

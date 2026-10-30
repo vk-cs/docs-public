@@ -1,8 +1,8 @@
 {
-  "title": "Standalone-та логтау",
-  "shortDescription": "Standalone-та сервис данасының логтарын қалай қарауға болады",
-  "metaDescription": "VK Data Platform-тың Standalone нұсқасында өрістетілген Cloud ClickHouse сервис данасының жұмыс логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Standalone-та логтау",
+  "title": "Логтау",
+  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
+  "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse данасының логтарын қарау және сүзгілеу: оқиға деңгейі мен кезеңді таңдау, жазба мәліметтерін қарау және логтарды жаңарту.",
+  "sectionTitle": "Логтау",
   "build": {
     "for": [
       "data-p",

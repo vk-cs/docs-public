@@ -4,10 +4,7 @@
   "metaDescription": "Сервис NiFi для автоматизации и управления потоками данных в инфраструктуре VK Data Platform",
   "sectionTitle": "NiFi",
   "build": {
-    "for": [
-      "data-p",
-      "data-p-pdf"
-    ]
+    "for": ["data-p-pdf"]
   },
   "weight": 15,
   "uuid": "f85a5ad9-ebc3-4a26-a744-1d3348a27ee9"
