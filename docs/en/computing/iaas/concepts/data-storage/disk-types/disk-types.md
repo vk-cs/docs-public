@@ -25,9 +25,6 @@ A virtual machine can have multiple disks of the same or different types attache
 ## {heading(Block storage disk types)[id=iaas-disk-types-list]}
 
 {ifdef(public)}
-{note:warn}
-The `GZ1` availability zone is being decommissioned. Create new resources in other availability zones.
-{/note}
 
 [cols="1,1,1,2,2", options="header"]
 |===

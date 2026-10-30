@@ -138,9 +138,7 @@ You can check the status of availability zones, services, and {var(cloud)} infra
 
 ### {heading(Availability zones)[id=architecture-az]}
 
-{note:warn}
-The `GZ1` availability zone is being decommissioned. Create new resources in other availability zones.
-{/note}
+
 
 Each availability zone contains one or more data centers where cloud infrastructure objects are physically located. In {var(cloud)}, an availability zone corresponds to a separate Tier III data center. {var(cloud)} provides the following availability zones:
 
