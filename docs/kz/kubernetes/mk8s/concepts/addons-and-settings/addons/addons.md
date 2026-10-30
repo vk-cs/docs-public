@@ -36,6 +36,10 @@
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=eso]}
 
+### {heading(Fluent Bit)[id=mk8s-addons-fluent-bit]}
+
+{include(/kz/kubernetes/_includes/_addons.md)[tags=fluent-bit]}
+
 ### {heading(Cloud Logging үшін Fluent Bit (logaas-integration))[id=mk8s-addons-fluent-bit-logaas-managed]}
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=fluent-bit-logaas-managed]}

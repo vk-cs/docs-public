@@ -22,14 +22,6 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 .^|1.30.x, 1.29.x
 .^|1.28.x
 
-|[CoreDNS](https://github.com/coredns/coredns)
-|1.14.6-mcs.2
-|1.12.3
-|1.11.3
-|1.11.3
-|1.11.1
-|1.11.1
-
 |[Calico](https://github.com/projectcalico/calico)
 |3.29.1
 |3.30.2
@@ -37,6 +29,14 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |3.28.0
 |3.28.0
 |3.28.0
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.14.6-mcs.2
+|1.12.3
+|1.11.3
+|1.11.3
+|1.11.1
+|1.11.1
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 |3.18.2-mcs.1
@@ -81,17 +81,17 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 .^|1.25.x, 1.24.x
 .^|1.22.x–1.21.4
 
-|[CoreDNS](https://github.com/coredns/coredns)
-|1.10.1
-|1.10.1
-|1.10.1
-|1.2.4
-
 |[Calico](https://github.com/projectcalico/calico)
 |3.26.3
 |3.26.1
 |3.25.0
 |3.20.2
+
+|[CoreDNS](https://github.com/coredns/coredns)
+|1.10.1
+|1.10.1
+|1.10.1
+|1.2.4
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 |3.14.0
@@ -124,17 +124,28 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 
 Қажетті аддондар кластерге бөлек {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-install)[text=орнатылуы]} мүмкін. Кестеде Kubernetes кластерлерінің әртүрлі нұсқалары үшін аддондардың қолдау көрсетілетін нұсқалары берілген.
 
-[cols="2,1,1,1,1,1,1", options="header"]
+[cols="2,1,1,1,1,1,1,1", options="header"]
 |===
 .^|Аддон
 .^|1.35.x
-.^|1.34.x, 1.33.x
+.^|1.34.x
+.^|1.33.x
 .^|1.32.x
 .^|1.31.x
 .^|1.30.x, 1.29.x
 .^|1.28.x
 
+|[Argo CD](https://github.com/argoproj/argo-cd)
+|9.5.0
+|9.5.0
+|9.5.0
+|9.5.0
+|9.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
 |[cert-manager](https://github.com/cert-manager/cert-manager)
+|1.16.3
 |1.16.3
 |1.16.3
 |1.16.3
@@ -149,9 +160,38 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |2.2.2
 |2.2.2
 |2.2.2
+|2.2.2
 
-|{linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|[DRA Driver for NVIDIA GPUs](https://github.com/kubernetes-sigs/dra-driver-nvidia-gpu)
+|0.5.0
+|0.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[External Secrets Operator](https://github.com/external-secrets/external-secrets)
+|2.5.0
+|2.5.0
+|2.5.0
+|2.5.0
+|2.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
 |0.48.5
+|0.48.5
+|0.48.5
+|0.48.5
+|0.48.5
+|0.43.0
+|0.43.0
+
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-advanced-logaas-integration-gen-2)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|0.34.2
+|0.34.2
 |0.34.2
 |0.34.2
 |0.34.2
@@ -159,14 +199,25 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |0.34.2
 
 |[GPU Operator](https://github.com/NVIDIA/gpu-operator)
-|25.10.1
+|24.9.0/25.10.1
+|24.9.0/25.10.1
 |24.9.0
 |24.9.0
 |24.9.0
 |24.9.0
 |24.9.0
 
+|[HAMi](https://github.com/Project-HAMi/HAMi)
+|2.10.0
+|2.10.0
+|2.10.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
+|4.12.1
 |4.12.1
 |4.12.1
 |4.12.1
@@ -176,17 +227,10 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 
 |[Istio](https://github.com/istio/istio)
 |1.29.2
-|1.24.2
-|1.24.2
-|1.24.2
-|1.22.3
-|1.19.3
-
-|[Istio Gateway](https://github.com/istio/gateway-api)
 |1.29.2
-|1.24.2
-|1.24.2
-|1.24.2
+|1.29.2
+|1.29.2
+|1.29.2
 |1.22.3
 |1.19.3
 
@@ -195,22 +239,45 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |3.4.0
 |3.4.0
 |3.4.0
+|3.4.0
 |0.71.4
 |0.71.4
+
+|[Kgateway](https://github.com/kgateway-dev/kgateway)
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
-
 |68.3.3
-
-|68.3.4-vk.1
-
 |68.3.3
-
 |68.3.3
-
+|68.3.3
+|68.3.3
+|54.2.2
 |54.2.2
 
-|54.2.2
+|[S3-CSI](https://github.com/yandex-cloud/k8s-csi-s3)
+|0.43.6
+|0.43.6
+|0.43.6
+|0.43.6
+|0.43.6
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[Velero](https://github.com/vmware-tanzu/velero)
+|1.18.1
+|1.18.1
+|1.18.1
+|1.18.1
+|1.18.1
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 |===
 
 {cut(Алдыңғы нұсқалар)}
@@ -235,7 +302,13 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |2.2.2
 |2.2.2
 
-|{linkto(/kz/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-logaas-integration-magnum#k8s-install-advanced-logaas-integration)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
+|0.43.0
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-advanced-logaas-integration-gen-2)[text=Cloud Logging үшін Fluent Bit (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
@@ -259,12 +332,6 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 |1.16.4
 | ![](../../../../../assets/no.svg "inline")
 
-|[Istio Gateway](https://github.com/istio/gateway-api)
-|1.19.3
-|1.16.4
-|1.16.4
-| ![](../../../../../assets/no.svg "inline")
-
 |[Jaeger](https://github.com/jaegertracing/jaeger)
 |0.71.4
 |0.71.4
@@ -280,6 +347,4 @@ Managed Containers ішіндегі Kubernetes кластерінің нұсқа
 
 {/cut}
 
-`vk` жұрнағы бар Kube Prometheus Stack аддоны нұсқаларында {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=Kubernetes кластері ресурстарын тұтынуды болжау]} кірістірілген. Бұл — VK Tech жасаған, аддонның базалық нұсқасында қолжетімді емес жетілдіру.
-
-Болжау мүмкіндіктерін пайдалану үшін аддонды базалық нұсқадан VK Tech нұсқасына дейін {linkto(../../../how-to-guides/update-monitoring-addon#mk8s-update-monitoring-addon)[text=жаңартыңыз]}.
+Kube Prometheus Stack аддонының `68.3.3` нұсқасында {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=Kubernetes кластері ресурстарын тұтынуды болжау]} кірістірілген.

@@ -198,9 +198,9 @@
 |4.12.1
 |4.12.1
 |4.12.1
-|4.12.1
-|4.12.1
-|4.12.1
+|4.12.0/4.12.1
+|4.10.1/4.12.1
+|4.10.1/4.12.1
 
 |[Istio](https://github.com/istio/istio)
 |1.29.2
@@ -210,7 +210,7 @@
 |1.22.3
 |1.19.3
 
-|[Istio Gateaway](https://github.com/istio/gateway-api)
+|[Istio Gateway](https://github.com/istio/gateway-api)
 |1.29.2
 |1.24.2
 |1.24.2
@@ -315,7 +315,7 @@
 |1.16.4
 | ![](../../../../../assets/no.svg "inline")
 
-|[Istio Gateaway](https://github.com/istio/gateway-api)
+|[Istio Gateway](https://github.com/istio/gateway-api)
 |1.19.3
 |1.16.4
 |1.16.4

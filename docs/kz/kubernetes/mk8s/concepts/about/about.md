@@ -58,7 +58,7 @@ Managed Containers сервисі Kubernetes кластерлерін құруғ
 
 - Prometheus көмегімен кластер күйін мониторингтеу. Мониторинг деректерін {linkto(../../monitoring#mk8s-monitoring)[text=бірнеше тәсілмен]} көруге болады.
 
-- Мониторинг деректері негізінде кластер ресурстарын {linkto(../../monitoring#mk8s-monitoring-forecast-consumption)[text=тұтынуды болжау]}. VK Tech жетілдірулері бар `kube-prometheus-stack` мониторинг аддоны {linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=Grafana]} ішінде алдын ала бапталған қосымша мүмкіндіктерді ұсынады:
+- Мониторинг деректері негізінде кластер ресурстарын {linkto(../../monitoring#mk8s-monitoring-forecast-consumption)[text=тұтынуды болжау]}. `kube-prometheus-stack` мониторинг аддонының `68.3.3` нұсқасы {linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=Grafana]} ішінде алдын ала бапталған қосымша мүмкіндіктерді ұсынады:
 
   - кластер түйіндеріндегі ресурстарды тұтынудың ағымдағы болжамдарын көрсететін дашбордтар;
   - белгілі бір уақыттан кейін нақты ресурстардың таусылуы болжанса, хабарламалар жіберуге арналған алерттер.

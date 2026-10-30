@@ -8,7 +8,7 @@ Kubernetes кластерінің күйін бақылау үшін келес�
 
 - {linkto(../concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack)[text=Kube Prometheus Stack мониторинг аддоны]}.
 
-  Аддон Kubernetes ресурстарының метрикаларын жеке подтарға дейін қарауға, метрикалардың шекті мәндерінен асқанда хабарлама жіберетін alert-терді пайдалануға және кластер ресурстарының тұтынылуын {linkto(#mk8s-monitoring-forecast-consumption)[text=болжауға]} мүмкіндік береді. Болжау тек VK Tech тарапынан доработкалары бар {linkto(../concepts/versions/components#mk8s-components-addons)[text=аддон нұсқаларында]} қолжетімді (нұсқа нөмірінде `vk` бар).
+  Аддон Kubernetes ресурстарының метрикаларын жеке подтарға дейін қарауға, метрикалардың шекті мәндерінен асқанда хабарлама жіберетін alert-терді пайдалануға және кластер ресурстарының тұтынылуын {linkto(#mk8s-monitoring-forecast-consumption)[text=болжауға]} мүмкіндік береді. Болжау аддонның `68.3.3` {linkto(../concepts/versions/components#mk8s-components-addons)[text=нұсқасында]} қолжетімді.
 
 ## {heading(Кластер күйінің дашборды)[id=mk8s-monitoring-dashboard]}
 
@@ -91,7 +91,7 @@ Grafana-мен жұмыс туралы толығырақ [ресми құжат
 
 ## {heading(Кластер ресурстарының тұтынылуын болжау)[id=mk8s-monitoring-forecast-consumption]}
 
-VK Tech доработкалары бар `kube-prometheus-stack` мониторинг аддонына кластердің белгілі бір ресурстары берілген уақыттан кейін таусылады деп болжанған жағдайда хабарламалар жіберуге арналған alert-тер ендірілген. Сондай-ақ бұл аддон Grafana-да ресурстар тұтынылуының ағымдағы болжамдары көрсетілетін дашбордтарды ұсынады.
+`kube-prometheus-stack` мониторинг аддонының `68.3.3` нұсқасына кластердің белгілі бір ресурстары берілген уақыттан кейін таусылады деп болжанған жағдайда хабарламалар жіберуге арналған alert-тер ендірілген. Сондай-ақ бұл аддон Grafana-да ресурстар тұтынылуының ағымдағы болжамдары көрсетілетін дашбордтарды ұсынады.
 
 Аддон болжамдарды [сызықтық регрессия әдісімен](https://prometheus.io/docs/prometheus/latest/querying/functions/#predict_linear) жасайды: берілген кезең шегінде белгілі бір аралықпен жиналған метрика мәндері бойынша сызықтық функция құрылады; болжам осы функцияның болашақтағы берілген уақыттан кейінгі мәні ретінде есептеледі. Алынған мән Kubernetes объектісіндегі ресурс сыйымдылығының ең жоғарғы мәнінен пайызбен өрнектеледі.
 
@@ -99,7 +99,7 @@ VK Tech доработкалары бар `kube-prometheus-stack` монитор
 master-түйіндері объектілері үшін болжау орындалмайды.
 {/note}
 
-1. Кластерде VK Tech доработкалары бар (нұсқа нөмірінде `vk` жұрнағы бар) `kube-prometheus-stack` мониторинг аддонының нұсқасы {linkto(../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=орнатылғанына]} {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=көз жеткізіңіз]}.
+1. Кластерде `kube-prometheus-stack` мониторинг аддонының `68.3.3` немесе одан жоғары нұсқасы {linkto(../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=орнатылғанына]} {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=көз жеткізіңіз]}.
 1. `kube-prometheus-stack` аддоны кодының өңдеу бетіне {linkto(../instructions/addons/manage-addons#mk8s-manage-addons-edit-code)[text=өтіңіз]} және кодтағы `grafana.alerts.enabled` параметрі `true` мәніне тең екеніне көз жеткізіңіз. Бұл мән параметрге аддонды орнату кезінде беріледі.
 1. Егер бұл параметр `false` болып өзгертілсе, оны `true` етіп түзетіп, жаңартылған баптауларды сақтаңыз.
 

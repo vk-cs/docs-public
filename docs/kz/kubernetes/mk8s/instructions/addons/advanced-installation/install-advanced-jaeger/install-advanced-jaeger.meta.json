@@ -4,7 +4,7 @@
   "metaDescription": "VK Cloud-тағы Managed Containers сервисі: Jaeger аддонын баптау және орнату.",
   "sectionTitle": "Jaeger",
   "icon": "",
-  "weight": 12,
+  "weight": 13,
   "build": {
     "for": [
       "public"

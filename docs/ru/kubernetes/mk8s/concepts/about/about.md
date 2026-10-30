@@ -55,7 +55,7 @@
 
 - Мониторинг состояния кластера с помощью Prometheus. Посмотреть данные мониторинга можно {linkto(../../monitoring#mk8s-monitoring)[text=несколькими способами]}.
 
-- {linkto(../../monitoring#mk8s-monitoring-forecast-consumption)[text=Прогнозирование потребления]} ресурсов кластера на основе данных мониторинга. Аддон мониторинга `kube-prometheus-stack` с доработками от VK Tech предоставляет дополнительные возможности, преднастроенные в {linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=Grafana]}:
+- {linkto(../../monitoring#mk8s-monitoring-forecast-consumption)[text=Прогнозирование потребления]} ресурсов кластера на основе данных мониторинга. Аддон мониторинга `kube-prometheus-stack` версии `68.3.3` предоставляет дополнительные возможности, преднастроенные в {linkto(../../monitoring#mk8s-monitoring-connect-grafana)[text=Grafana]}:
   
   - дашборды с отображением текущих прогнозов потребления ресурсов на узлах кластера;
   - алерты для отправки оповещений, если через заданное время прогнозируется исчерпание определенных ресурсов.

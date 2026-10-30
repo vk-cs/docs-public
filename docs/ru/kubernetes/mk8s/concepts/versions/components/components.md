@@ -122,17 +122,28 @@
 
 Необходимые аддоны могут быть {linkto(../../../instructions/addons/manage-addons#mk8s-manage-addons-install)[text=установлены]} в кластер отдельно. В таблице приведены поддерживаемые версии аддонов для различных версий кластеров Kubernetes.
 
-[cols="2,1,1,1,1,1,1", options="header"]
+[cols="2,1,1,1,1,1,1,1", options="header"]
 |===
 .^|Аддон
 .^|1.35.x
-.^|1.34.x, 1.33.x
+.^|1.34.x
+.^|1.33.x
 .^|1.32.x
 .^|1.31.x
 .^|1.30.x, 1.29.x
 .^|1.28.x
 
+|[Argo CD](https://github.com/argoproj/argo-cd)
+|9.5.0
+|9.5.0
+|9.5.0
+|9.5.0
+|9.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
 |[cert-manager](https://github.com/cert-manager/cert-manager)
+|1.16.3
 |1.16.3
 |1.16.3
 |1.16.3
@@ -147,9 +158,38 @@
 |2.2.2
 |2.2.2
 |2.2.2
+|2.2.2
 
-|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|[DRA Driver for NVIDIA GPUs](https://github.com/kubernetes-sigs/dra-driver-nvidia-gpu)
+|0.5.0
+|0.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[External Secrets Operator](https://github.com/external-secrets/external-secrets)
+|2.5.0
+|2.5.0
+|2.5.0
+|2.5.0
+|2.5.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
 |0.48.5
+|0.48.5
+|0.48.5
+|0.48.5
+|0.48.5
+|0.43.0
+|0.43.0
+
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-gen-2-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|0.34.2
+|0.34.2
 |0.34.2
 |0.34.2
 |0.34.2
@@ -157,14 +197,25 @@
 |0.34.2
 
 |[GPU Operator](https://github.com/NVIDIA/gpu-operator)
-|25.10.1
+|24.9.0/25.10.1
+|24.9.0/25.10.1
 |24.9.0
 |24.9.0
 |24.9.0
 |24.9.0
 |24.9.0
 
+|[HAMi](https://github.com/Project-HAMi/HAMi)
+|2.10.0
+|2.10.0
+|2.10.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
+|4.12.1
 |4.12.1
 |4.12.1
 |4.12.1
@@ -174,17 +225,10 @@
 
 |[Istio](https://github.com/istio/istio)
 |1.29.2
-|1.24.2
-|1.24.2
-|1.24.2
-|1.22.3
-|1.19.3
-
-|[Istio Gateway](https://github.com/istio/gateway-api)
 |1.29.2
-|1.24.2
-|1.24.2
-|1.24.2
+|1.29.2
+|1.29.2
+|1.29.2
 |1.22.3
 |1.19.3
 
@@ -193,22 +237,45 @@
 |3.4.0
 |3.4.0
 |3.4.0
+|3.4.0
 |0.71.4
 |0.71.4
+
+|[Kgateway](https://github.com/kgateway-dev/kgateway)
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|2.2.2
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
-
 |68.3.3
-
-|68.3.4-vk.1
-
 |68.3.3
-
 |68.3.3
-
+|68.3.3
+|68.3.3
+|54.2.2
 |54.2.2
 
-|54.2.2
+|[S3-CSI](https://github.com/yandex-cloud/k8s-csi-s3)
+|0.43.6
+|0.43.6
+|0.43.6
+|0.43.6
+|0.43.6
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
+|[Velero](https://github.com/vmware-tanzu/velero)
+|1.18.1
+|1.18.1
+|1.18.1
+|1.18.1
+|1.18.1
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
 |===
 
 {cut(Предыдущие версии)}
@@ -233,7 +300,13 @@
 |2.2.2
 |2.2.2
 
-|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
+|[Fluent Bit](https://github.com/fluent/fluent-bit)
+|0.43.0
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+| ![](../../../../../assets/no.svg "inline")
+
+|{linkto(../../../instructions/addons/advanced-installation/install-advanced-logaas-integration-mk8s#mk8s-install-gen-2-advanced-logaas-integration)[text=Fluent Bit для Cloud Logging (logaas-integration)]}
 |0.34.2
 |0.34.2
 |0.34.2
@@ -257,12 +330,6 @@
 |1.16.4
 | ![](../../../../../assets/no.svg "inline")
 
-|[Istio Gateway](https://github.com/istio/gateway-api)
-|1.19.3
-|1.16.4
-|1.16.4
-| ![](../../../../../assets/no.svg "inline")
-
 |[Jaeger](https://github.com/jaegertracing/jaeger)
 |0.71.4
 |0.71.4
@@ -278,6 +345,4 @@
 
 {/cut}
 
-В версиях аддона Kube Prometheus Stack с суффиксом `vk` встроено {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера Kubernetes]}. Это доработка от VK Tech, недоступная в базовой версии аддона.
-
-Чтобы использовать возможности прогнозирования, {linkto(../../../how-to-guides/update-monitoring-addon#mk8s-update-monitoring-addon)[text=обновите]} аддон с базовой версии до версии от VK Tech.
+В аддон Kube Prometheus Stack версии `68.3.3` встроено {linkto(../../../monitoring#mk8s-monitoring-forecast-consumption)[text=прогнозирование потребления ресурсов кластера Kubernetes]}.

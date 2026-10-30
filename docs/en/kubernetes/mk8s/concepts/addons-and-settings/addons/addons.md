@@ -28,6 +28,10 @@
 
 {include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=eso]}
 
+### {heading(Fluent Bit)[id=fluent_bit]}
+
+{include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=fluent-bit]}
+
 ### Fluent Bit for Cloud Logging (logaas-integration)
 
 {include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=fluent-bit-logaas-managed]}

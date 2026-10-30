@@ -587,6 +587,8 @@ The system for monitoring the status of the cluster and the services deployed in
 
 See [Cluster Monitoring](/en/kubernetes/mk8s/monitoring#using_grafana) for details.
 
+Add-on version `68.3.3` includes built-in [cluster resource consumption forecasting](/en/kubernetes/mk8s/monitoring#forecasting_cluster_resource_consumption).
+
 {/tab}
 
 {tab(System requirements)}

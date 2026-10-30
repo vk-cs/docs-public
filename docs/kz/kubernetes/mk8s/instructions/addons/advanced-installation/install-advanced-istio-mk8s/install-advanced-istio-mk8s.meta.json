@@ -4,7 +4,7 @@
   "metaDescription": "VK Cloud-тағы Managed Containers сервисі: Istio аддонын баптау және орнату",
   "sectionTitle": "Istio",
   "icon": "",
-  "weight": 2,
+  "weight": 12,
   "build": {
     "for": [
       "public"
