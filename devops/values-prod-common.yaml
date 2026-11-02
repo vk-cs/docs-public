@@ -5,6 +5,9 @@ envSecret:
   MAILER_TOKEN: new-help-secret
   VKTEAMS_ALERT_TOKEN: new-help-secret
   GITHUB_BOT_TOKEN: new-help-secret
+  HELPDESK_USERNAME: new-help-secret
+  HELPDESK_PASSWORD: new-help-secret
+  ROLE_JWT_SECRET: new-help-secret
 
 components:
   - name: common
