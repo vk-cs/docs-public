@@ -184,6 +184,19 @@ export const config = {
         editOnGitOps: true,
         dpp: true,
         helpmate: true,
+        accessRestriction: true,
+    },
+    accessRestriction: {
+        defaultRole: {
+            role: 'guest',
+            name: 'Гость',
+        },
+        availableRoles: [
+            {
+                role: 'data-platform.doc_guest',
+                name: 'data-platform.client',
+            },
+        ],
     },
     translations: {
         en: {
