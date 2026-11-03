@@ -311,7 +311,7 @@ ISO-образы предназначены только для Bare Metal и н
 
 {cut(Можно ли использовать виртуальную машину физическому лицу?)}
 
-Да, физические лица могут использовать виртуальные машины и другие ресурсы в {var(cloud)}. Для этого необходимо {linkto(../../../intro/onboarding/account/create-account#onboarding-create-account)[text=зарегистрироваться]} в личном кабинете и {linkto(../../../intro/onboarding/account/billing-settings#onboarding-billing-settings)[пополнить баланс]} проекта.
+Да, физические лица могут использовать виртуальные машины и другие ресурсы в {var(cloud)}. Для этого необходимо {linkto(../../../intro/onboarding/account/create-account#onboarding-create-account)[text=зарегистрироваться]} в личном кабинете и {linkto(../../../intro/onboarding/account/billing-settings#onboarding-billing-settings)[text=пополнить баланс]} проекта.
 
 {/cut}
 

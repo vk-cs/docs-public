@@ -15,9 +15,9 @@
         1. **Ескерту жүйесі** блогында **Триггерлерді жасау** түймесін басыңыз.
 1. Деректер көзін таңдаңыз:
 
-   - `Бақылау` — {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]} сервисінің метрикалары бойынша;
-   - `Логирование` — {linkto(../../../logging/concepts/about#event-log-about)[text=Cloud Logging]} сервисінің жазбалары бойынша;
-   - `Оқиғалар журналы` — {linkto(../../../event-log/concepts/about#logging-about)[text=Cloud Audit]} сервисінің оқиғалары бойынша.
+   - `Бақылау` — {linkto({@root}/monitoring-services/monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]} сервисінің метрикалары бойынша;
+   - `Логирование` — {linkto({@root}/monitoring-services/logging/concepts/about#logging-about)[text=Cloud Logging]} сервисінің жазбалары бойынша;
+   - `Оқиғалар журналы` — {linkto({@root}/monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]} сервисінің оқиғалары бойынша.
 
 1. Триггер атауын көрсетіңіз.
 1. (Қосымша) ![plus-icon](../../../../assets/plus-icon.svg "inline") **Сипаттаманы қосу** түймесін басып, триггер сипаттамасын қосыңыз.
@@ -28,7 +28,7 @@
    - **Ресурс түрі**: бақылау деректері жиналатын {var(cloud)} ресурсының түрін тізімнен таңдаңыз.
    - **Дереккөз**: тізімнен дереккөзді таңдаңыз (ВМ, БД, контейнер және т.б. атауы).
    - **Метрика атауы**: тізімнен қажетті метриканы таңдаңыз. Егер тізім бос болса, инстанс үшін бақылау қосылмаған деген сөз. Қажетті ВМ-ға бақылау агентін {linkto(../../../monitoring/instructions/mon-setup-current#monitoring-mon-setup-current)[text=орнатыңыз]}.
-   - (Қосымша) ![plus-icon](../../../../assets/plus-icon.svg "inline") **Белгіні қосу**: түймені басып, тізімдерден {linkto(../../../monitoring/concepts/architecture#monitoring-label)[text=белгінің]} атауы мен мәнін таңдаңыз.
+   - (Қосымша) ![plus-icon](../../../../assets/plus-icon.svg "inline") **Белгіні қосу**: түймені басып, тізімдерден {linkto({@root}/monitoring-services/monitoring/concepts/architecture#monitoring-label)[text=белгінің]} атауы мен мәнін таңдаңыз.
    - **Триггердің іске қосылу шарты**: тізімнен салыстыру операциясын таңдап, шекті мәнді көрсетіңіз.
    - **Салыстыру аралығы**: триггер іске қосылуы үшін шарт орындалуы тиіс уақыт аралығын тізімнен таңдаңыз.
    {/tab}

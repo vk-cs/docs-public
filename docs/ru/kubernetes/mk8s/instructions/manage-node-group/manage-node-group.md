@@ -15,7 +15,7 @@
 
     - **Название группы:** должно начинаться с буквы. Может состоять только из латинских строчных букв, цифр и дефисов `-` в качестве разделителя.
     - Настройки worker-узлов:
-        - **Категория виртуальной машины**: выберите {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=категорию]} предустановленных конфигураций ВМ.
+        - **Категория виртуальной машины**: выберите {linkto({@root}/computing/iaas/concepts/vm/flavor#iaas-flavor)[text=категорию]} предустановленных конфигураций ВМ.
 
         - **Тип Node-узлов:** {linkto(../../concepts/flavors#mk8s-flavors-vm-flavor)[text=шаблон виртуальной машины]} для worker-узлов.
 
@@ -23,7 +23,7 @@
 
           Подробнее в разделе {linkto(../../concepts/flavors#mk8s-flavors-vm-flavor)[text=Доступные вычислительные ресурсы]}.
 
-        - **Зона доступности:** {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=зона доступности]} для узлов.
+        - **Зона доступности:** {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=зона доступности]} для узлов.
 
           Для отказоустойчивости рекомендуется создать несколько групп узлов в разных зонах доступности и размещать реплики приложения на этих узлах так, чтобы реплики тоже были в разных зонах доступности.
 
@@ -69,9 +69,9 @@
 1. Выберите для группы worker-узлов {linkto(../../concepts/architecture#mk8s-architecture-deployment-types)[text=тип развертывания]} `Bare Metal` и укажите ее настройки:
 
     - **Название группы**: должно начинаться с буквы. Может состоять только из латинских строчных букв, цифр и дефисов `-` в качестве разделителя.
-    - **Выделенные серверы**: выберите арендованный ранее сервер Bare Metal или {linkto(../../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=закажите]} новый.
+    - **Выделенные серверы**: выберите арендованный ранее сервер Bare Metal или {linkto({@root}/computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=закажите]} новый.
 
-        Для добавления в группу узлов доступны только серверы с тегом `ManagedContainers`. Тег можно задать в поле **Теги** при {linkto(../../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=заказе сервера]} или {linkto(../../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-tag-create)[text=создать]} позже для уже заказанного сервера.
+        Для добавления в группу узлов доступны только серверы с тегом `ManagedContainers`. Тег можно задать в поле **Теги** при {linkto({@root}/computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=заказе сервера]} или {linkto({@root}/computing/bare-metal/instructions/manage-server#bare-metal-server-tag-create)[text=создать]} позже для уже заказанного сервера.
     - **Ключ подключения к серверу**: выберите уже существующий ключ для подключения к worker-узлам по SSH или создайте новый.
     - Параметры Kubernetes:  укажите {linkto(../../reference/labels-and-taints#mk8s-labels-and-taints)[text=метки (labels) и ограничения (taints)]}.
     - **Подтверждаю добавление**: установите флажок, чтобы подтвердить добавление группы worker-узлов типа Bare Metal. Если на сервере Bare Metal, который вы добавляете в группу узлов, есть данные, они будут безвозвратно удалены.
@@ -80,7 +80,7 @@
 {/tab}
 {/tabs}
 
-После создания первой группы этого типа информация об узлах {linkto(../../../../../computing/bare-metal/concepts/about#bare-metal-about)[text=Bare Metal]} станет доступна в разделе **Облачные вычисления** → **Bare Metal** личного кабинета {var(cloud)} на вкладке **Инстансы Kubernetes**.
+После создания первой группы этого типа информация об узлах {linkto({@root}/computing/bare-metal/concepts/about#bare-metal-about)[text=Bare Metal]} станет доступна в разделе **Облачные вычисления** → **Bare Metal** личного кабинета {var(cloud)} на вкладке **Инстансы Kubernetes**.
 
 ## {heading(Настроить параметры масштабирования)[id=mk8s-manage-node-group-scaling-options]}
 

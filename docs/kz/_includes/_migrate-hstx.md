@@ -6,7 +6,7 @@
 
 **Қолдау көрсетілетін қолданбалар**: SAP, Microsoft Active Directory, PostgreSQL, Oracle, NGINX, Red Hat Jboss Enterprise, IBM WebSphere, Apache, VMware vSphere, MySQL, MongoDB, Hadoop, Spark.
 
-**Қолдау көрсетілетін операциялық жүйелер**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Көшіруге қолжетімді ОС және олардың нұсқаларының толық тізімі жеке кабинетіңіздегі [ВМ жасау](/kz/computing/iaas/instructions/vm/vm-create#create_vm) бетінде келтірілген.
+**Қолдау көрсетілетін операциялық жүйелер**: Windows, RHEL, CentOS, Debian, Ubuntu, AstraLinux, AltLinux, Ред ОС. Көшіруге қолжетімді ОС және олардың нұсқаларының толық тізімі жеке кабинетіңіздегі [ВМ жасау](/kz/computing/iaas/instructions/vm/vm-create#iaas-vm-create) бетінде келтірілген.
 
 {/cut}
 

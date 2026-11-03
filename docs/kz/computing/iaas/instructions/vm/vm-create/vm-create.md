@@ -22,7 +22,7 @@ Cloud Servers ішінде виртуалды машиналарды жеке к
 1. **Инстанс құру** немесе **Қосу** түймесін басыңыз.
 1. **Конфигурация** блогында ВМ параметрлерін орнатыңыз:
 
-    - **Операциялық жүйе**: [операциялық жүйе нұсқасын](../../../concepts/oper-system) немесе бұрын VK Cloud ішінде [жасаған](../../images/images-manage#sozdanie_obraza) не [импорттаған](../../images/images-manage#iaas-images-manage-import) образды таңдаңыз.
+    - **Операциялық жүйе**: [операциялық жүйе нұсқасын](../../../concepts/oper-system) немесе бұрын VK Cloud ішінде [жасаған](../../images/images-manage#iaas-images-manage-create) не [импорттаған](../../images/images-manage#iaas-images-manage-import) образды таңдаңыз.
     - **Виртуалды машина санаты**: ВМ-нің алдын ала орнатылған конфигурацияларының [санатын](../../../concepts/vm/flavor#iaas-flavor-vm-categories) таңдаңыз.
     - **Виртуалды машина түрі**: ВМ-нің алдын ала орнатылған конфигурациясын таңдаңыз.
 
@@ -128,7 +128,7 @@ Cloud Servers ішінде виртуалды машиналарды жеке к
 1. OpenStack CLI-пен жұмыс істеуге дайындалыңыз:
 
     1. Ағымдағы пайдаланушы үшін API арқылы қолжетімділікті [белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
-    1. OpenStack клиентінің [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+    1. OpenStack клиентінің [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#tools-cli-openstack) көз жеткізіп, жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 
 1. Деректерді жинаңыз:
 

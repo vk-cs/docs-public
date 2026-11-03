@@ -22,7 +22,7 @@ _Ключ_ — набор криптографических параметро�
 
 - _Ключевой материал_ — данные, которые используются для шифрования и дешифрования на основе выбранного алгоритма. Менеджер ключей {var(cloud)} самостоятельно генерирует ключевой материал в изолированной среде, пользователь не участвует в его подготовке.
 
-Ключами и их версиями можно {linkto(../../security/key-manager/instructions#km-instructions)[text=управлять]} через личный кабинет {var(cloud)} или с помощью {linkto(../../../../tools-for-using-services/api/api-spec/key-manager-api#api-spec-km)[text=API]}.
+Ключами и их версиями можно {linkto({@root}/security/key-manager/instructions#km-instructions)[text=управлять]} через личный кабинет {var(cloud)} или с помощью {linkto({@root}/tools-for-using-services/api/api-spec/key-manager-api#api-spec-km)[text=API]}.
 
 ## {heading(Версии и ротация)[id=km-about-versions]}
 

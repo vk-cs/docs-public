@@ -104,7 +104,7 @@ VNC консолі виртуалды машина бетінде **Бұлтты
 
 {cut(ВМ үшін Floating IP мекенжайын тағайындай аламын ба?)}
 
-Сіз ВМ үшін [қолданыстағы](/kz/networks/vnet/instructions/ip/floating-ip#associate) Floating IP мекенжайын тағайындай аласыз немесе [жаңасын](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) қоса аласыз.
+Сіз ВМ үшін [қолданыстағы](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-edit) Floating IP мекенжайын тағайындай аласыз немесе [жаңасын](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) қоса аласыз.
 
 {note:warn}
 
@@ -217,7 +217,7 @@ ISO образдары туралы толығырақ — [Windows ОС бар 
 
 {cut(ВМ-ге арналған SSH-кілт жоғалса, не істеу керек?)}
 
-{linkto(../instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key)[text=%text]} нұсқаулығын пайдаланыңыз.
+{linkto(../instructions/vm/vm-manage#iaas-vm-manage-recovery-access)[text=Қолжетімділікті қалпына келтіру]} нұсқаулығын пайдаланыңыз.
 
 {/cut}
 
@@ -462,7 +462,7 @@ NFS немесе CIFS протоколы бойынша жұмыс істейт�
 
 {cut(Windows Server лицензиясын қалай алуға болады?)}
 
-Windows ОС негізінде жасалатын ВМ-ге Windows Server операциялық жүйесінің лицензиялық көшірмесі алдын ала орнатылған. Егер [ВМ-ге қойылатын талаптар](../../vm-licenses/ms-lic#requirements) сақталса, лицензиялық көшірмені белсендіру ВМ қосылған кезде автоматты түрде жүреді. ОС белсендіру қатесі туындаса, виртуалды машинаның ID-н көрсете отырып, [техникалық қолдауға](/kz/contacts) жүгініңіз.
+Windows ОС негізінде жасалатын ВМ-ге Windows Server операциялық жүйесінің лицензиялық көшірмесі алдын ала орнатылған. Егер [ВМ-ге қойылатын талаптар](../../vm-licenses/ms-lic) сақталса, лицензиялық көшірмені белсендіру ВМ қосылған кезде автоматты түрде жүреді. ОС белсендіру қатесі туындаса, виртуалды машинаның ID-н көрсете отырып, [техникалық қолдауға](/kz/contacts) жүгініңіз.
 
 {/cut}
 

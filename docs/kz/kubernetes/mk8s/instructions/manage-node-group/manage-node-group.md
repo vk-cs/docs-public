@@ -14,7 +14,7 @@
 1. Қажетті кластер орналасқан жобаны таңдаңыз.
 1. **Кластеры Kubernetes → Кластеры Kubernetes** бөліміне өтіңіз.
 1. Қажетті кластер үшін ![](../../../../assets/more-icon.svg "inline") белгішесін басып, **Добавить группу узлов** тармағын таңдаңыз.
-1. Түйіндер тобы үшін {linkto(/kz/kubernetes/k8s/instructions/helpers/node-group-settings#mk8s-node-group-settings)[text=баптауларды]} орнатыңыз.
+1. Түйіндер тобы үшін {linkto(/kz/kubernetes/k8s/instructions/helpers/node-group-settings#k8s-node-group-settings)[text=баптауларды]} орнатыңыз.
 1. **Добавить группу узлов** түймесін басыңыз.
 
 {/tab}

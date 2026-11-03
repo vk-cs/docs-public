@@ -23,7 +23,7 @@
 
 {ifdef(s3,s3-pdf)}
 
-1. {linkto(../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
+1. {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=Войдите]} в личный кабинет IAM Only.
 
 {/ifdef}
 

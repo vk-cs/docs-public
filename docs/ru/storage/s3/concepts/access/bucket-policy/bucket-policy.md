@@ -219,7 +219,7 @@ _Политика доступа (bucket policy)_ — способ управл�
 Ко всем {linkto(#s3-concepts-bucket-policy-actions)[text=действиям]} может быть применено разрешение (`Allow`) или запрет (`Deny`) в неявном (impicit) и явном (explicit) виде.
 - Неявное разрешение (impicit allow): задается автоматически {var(s3)} и применяется по умолчанию для всех внутренних {linkto(#s3-concepts-bucket-policy-principal)[text=принципалов]}.
 - Неявный запрет (impicit deny): задается автоматически {var(s3)} и применяется по умолчанию для всех внешних {linkto(#s3-concepts-bucket-policy-principal)[text=принципалов]}.
-- Явное разрешение (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
+- Явное разрешение (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
 
     ```json
     ...
@@ -227,7 +227,7 @@ _Политика доступа (bucket policy)_ — способ управл�
     ...
     ```
 
-- Явный запрет (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
+- Явный запрет (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=задается]} пользователем с помощью политик доступа через параметр `Effect`:
 
     ```json
     ...

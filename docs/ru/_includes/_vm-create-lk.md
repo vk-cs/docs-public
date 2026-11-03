@@ -4,10 +4,10 @@
    {ifdef(public)}
    {includetag(create)}
    - **Операционная система**: выберите {linkto(../../../../../computing/iaas/concepts/oper-system#iaas-oper-system)[text=версию операционной системы]} или образ, который вы ранее {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=создали]} или {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импортировали]} в {var(cloud)}.
-   - **Категория виртуальной машины**: выберите {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
+   - **Категория виртуальной машины**: выберите {linkto({@root}/computing/iaas/concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
      {/includetag}
      {includetag(create-from-disk)}
-   - **Категория виртуальной машины**: выберите {linkto(../../concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
+   - **Категория виртуальной машины**: выберите {linkto({@root}/computing/iaas/concepts/vm/flavor#iaas-flavor-vm-categories)[text=категорию]} предустановленных конфигураций ВМ.
      {/includetag}
      {includetag(create,create-from-disk)}
    - **Тип виртуальной машины**: выберите предустановленную конфигурацию ВМ.
@@ -20,7 +20,7 @@
    {includetag(create)}
    {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}
    - **Имя виртуальной машины**: используйте только латинские буквы, цифры или спецсимволы `-`, `_` и `.`.
-   - **Тип виртуальной машины**: выберите предустановленный {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации ВМ]}.
+   - **Тип виртуальной машины**: выберите предустановленный {linkto({@root}/computing/iaas/concepts/vm/flavor#iaas-flavor)[text=шаблон конфигурации ВМ]}.
 
      {ifndef(private-cert)}
      Если для работы требуются {linkto(../../../../../computing/gpu/concepts/about#gpu-about)[text=шаблоны конфигурации ВМ с GPU или vGPU]}, обратитесь к администратору {var(cloud)} с просьбой добавить их в проект.
@@ -55,7 +55,7 @@
    {/ifdef}
     - **Размер диска**: укажите нужный размер диска ВМ в гигабайтах.
       {ifdef(public)}
-      Максимальный размер диска {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-vm-no-quotas-limits)[text=ограничен]}. Для создания ВМ с диском большего объема используйте {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
+      Максимальный размер диска {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#include-quotasandlimits-vm-no-quotas-limits)[text=ограничен]}. Для создания ВМ с диском большего объема используйте {linkto(../../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
       {/ifdef}
     - **Тип диска**: выберите {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=тип диска]}.
 
@@ -140,7 +140,7 @@
    - **Включить мониторинг**: включите, чтобы установить агент для отправки метрик в {linkto(../../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=сервис мониторинга]}.
      {/ifndef}
      {ifdef(public)}
-   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
+   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto({@root}/monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
      {/ifdef}
      {/includetag}
      {includetag(create-from-disk)}
@@ -156,7 +156,7 @@
    - **Включить мониторинг**: включите, чтобы установить агент для отправки метрик в {linkto(../../../../monitoring-services/monitoring/concepts#monitoring-concepts)[text=сервис мониторинга]}.
      {/ifndef}
      {ifdef(public)}
-   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto(../../../../../monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
+   - **Включить логирование**: включите, чтобы установить агент для отправки записей в {linkto({@root}/monitoring-services/logging/concepts#logging-concepts)[text=сервис логирования]}.
      {/ifdef}
      {/includetag}
    {includetag(create,create-from-disk)}

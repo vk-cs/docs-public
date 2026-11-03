@@ -19,7 +19,7 @@
 
 Определите, повлияет ли миграция на рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)) ваших кластеров. Для этого узнайте, указана ли зона доступности:
 
-{include(/ru/_includes/_az-migration-magnum.md)[tags=check]}
+{include(/ru/_includes/_az-migration-magnum.md)[tags=check,check-mk8s]}
 
 ## {heading({counter(az)}. Перенесите рабочую нагрузку на новые группы узлов)[id=mk8s-workload-migration-new-node-groups]}
 

@@ -65,7 +65,7 @@
 {ifdef(public)}
 Рекомендованный способ импорта образа — с использованием CLI.
 
-Размер загружаемого файла {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-images-volumes)[text=ограничен]}.
+Размер загружаемого файла {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#include-quotasandlimits-images-volumes)[text=ограничен]}.
 {/ifdef}
 
 {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}

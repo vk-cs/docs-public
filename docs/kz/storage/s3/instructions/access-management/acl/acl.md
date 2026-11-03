@@ -233,11 +233,11 @@
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
    - `<ВИД_РАЗРЕШЕНИЯ>` — келесі нұсқалар қолжетімді:
 
-     - `grant-read` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
-     - `grant-write` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
-     - `grant-read-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
-     - `grant-write-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
-     - `grant-full-control` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
+     - `grant-read` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ` орнатылады.
+     - `grant-write` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE` орнатылады.
+     - `grant-read-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ_ACP` орнатылады.
+     - `grant-write-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE_ACP` орнатылады.
+     - `grant-full-control` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `FULL_CONTROL` орнатылады.
       
    - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — бакет үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
 
@@ -415,11 +415,11 @@
    - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
    - `<ВИД_РАЗРЕШЕНИЯ>` — келесі нұсқалар қолжетімді:
 
-     - `grant-read` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ` орнатылады.
-     - `grant-write` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE` орнатылады.
-     - `grant-read-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `READ_ACP` орнатылады.
-     - `grant-write-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `WRITE_ACP` орнатылады.
-     - `grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=рұқсат]} `FULL_CONTROL` орнатылады.
+     - `grant-read` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ` орнатылады.
+     - `grant-write` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE` орнатылады.
+     - `grant-read-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ_ACP` орнатылады.
+     - `grant-write-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE_ACP` орнатылады.
+     - `grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `FULL_CONTROL` орнатылады.
 
    - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
 

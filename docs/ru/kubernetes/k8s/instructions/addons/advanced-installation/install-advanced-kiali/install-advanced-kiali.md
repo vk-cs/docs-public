@@ -8,7 +8,7 @@ Kiali — консоль аддона Istio. Позволяет строить �
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-kiali-prepare]}
 
 {include(/ru/_includes/_addon-prep.md)}
-1. {linkto(../install-advanced-istio-magnum#k8s-install-advanced-istio)[text=Установите аддон]} `istio`.
+1. {linkto(../install-advanced-istio-magnum#k8s-install-advanced-istio-magnum)[text=Установите аддон]} `istio`.
 {/ifdef}
 
 ## {heading(Установка аддона)[id=k8s-install-advanced-kiali-install]}

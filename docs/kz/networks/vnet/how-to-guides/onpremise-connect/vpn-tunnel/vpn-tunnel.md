@@ -325,7 +325,7 @@ SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut
 
    Бұл тестілік виртуалды машиналардың бір-бірін ping арқылы тексере алуы үшін қажет.
 
-1. Екі виртуалды машинаны {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create-step)[text=жасаңыз]}:
+1. Екі виртуалды машинаны {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]}:
 
     - `clientVM`:
 

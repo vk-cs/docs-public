@@ -68,7 +68,7 @@
     - **Интерфейстің IP-мекенжайын көрсету**: опцияны қосыңыз.
     - **Интерфейстің IP-мекенжайы**: `10.10.2.1`.
 
-1. Келесі параметрлері бар виртуалды машинаны {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create-step)[text=жасаңыз]}:
+1. Келесі параметрлері бар виртуалды машинаны {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]}:
 
     - **Виртуалды машинаның атауы**: `test-vm`.
     - **Желі**: `priv_net_demo`.

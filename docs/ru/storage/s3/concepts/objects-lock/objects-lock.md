@@ -53,7 +53,7 @@
 Попытка удаления объекта с включенной блокировкой даст разные результаты, в зависимости от того, использовался ли идентификатор версии:
 
 - в параметре `versionId` при запросе API с методами `DeleteObject`, `DeleteMultipleObjects` или командах AWS CLI `delete-object`, `delete-objects`;
-- при {linkto(../instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=удалении]} в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef} с включенной опцией **Показать версии объектов**.
+- при {linkto(../../instructions/objects/manage-object#s3-instructions-manage-object-delete)[text=удалении]} в личном кабинете {ifdef(public)}{var(cloud)}{/ifdef}{ifdef(s3,s3-pdf)}IAM Only{/ifdef} с включенной опцией **Показать версии объектов**.
 
 {ifdef(s3-pdf)}
 Сравнение результатов приведено в {linkto(#tab_delete_result_comparison)[text=таблице %number]}.
