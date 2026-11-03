@@ -6,6 +6,9 @@
   "icon": "",
   "weight": 5,
   "uuid": "6c765345-4492-419c-9859-2e16fc277cab",
+  "additionalUuids": [
+    "0bf25d80-a329-42b6-9699-429d74bc4d8b"
+  ],
   "build": {
     "for": [
       "public"
