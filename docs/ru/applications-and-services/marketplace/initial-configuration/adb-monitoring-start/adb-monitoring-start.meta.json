@@ -1,7 +1,7 @@
 {
   "title": "Развертывание сервиса Мониторинг для Arenadata DB",
   "shortDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в {var(cloud)}",
-  "metaDescription": "Подключение и настройка системы мониторинга баз данных Arenadata в VK Cloud",
+  "metaDescription": "Готовый мониторинг Arenadata DB на базе Prometheus и Grafana: сбор метрик, дашборды и алерты в Telegram и MAX.",
   "sectionTitle": "Развертывание сервиса Мониторинг для Arenadata DB",
   "icon": "",
   "weight": 25,

@@ -1,373 +1,247 @@
 # {heading(Развертывание сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start]}
 
-Мониторинг для Arenadata DB — готовое решение для мониторинга баз данных Arenadata в инфраструктуре {var(cloud)}. Содержит набор предустановленных инструментов для сбора метрик, визуализации и своевременного оповещения о проблемах.
+Сервис Мониторинг для Arenadata DB объединяет возможности Prometheus для сбора метрик со всех узлов кластера и Grafana для их визуализации. Сервис позволяет не только отслеживать состояние системы в реальном времени через готовые дашборды, но и настраивать автоматические оповещения (алерты) в Telegram и MAX при возникновении критических событий.
 
-Пройдя все шаги этой инструкции, вы:
+Дашборды Grafana доступны по доменному имени с доверенным сертификатом. Если публичный адрес не нужен, Grafana работает только во внутренней сети по адресу ВМ с развернутым сервисом. Подробнее о дашбордах в [официальной документации Grafana](https://grafana.com/docs/grafana/latest/).
 
-1. Подключите в личном кабинете {var(cloud)} сервис Мониторинг для Arenadata DB.
+Инструкция поможет развернуть сервис Мониторинг для Arenadata DB на ВМ в {var(cloud)} и подключить к нему кластер Arenadata DB.
 
-   При подключении автоматически будет создана виртуальная машина и на ней установлены:
+{cut(Минимальные технические характеристики ВМ для сервиса)}
 
-   - [Grafana](https://grafana.com/docs/grafana/latest/) — сервис для визуализации и анализа данных мониторинга;
-   - [Prometheus](https://prometheus.io/) — сервис мониторинга и оповещений;
-   - ADB Exporter — сервис сбора метрик из Arenadata DB;
-   - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — обработчик оповещений, поступающих от Prometheus.
+- **vCPU**: 4.
+- **RAM**: 16 ГБ.
+- Размер дисков:
 
-1. Подготовите базу данных Arenadata для работы с сервисом Мониторинг для Arenadata DB.
-1. Настроите сервис ADB Exporter.
-1. Установите и настроите Node Exporter — агент сбора метрик состояния операционной системы.
-1. Установите и настроите cAdvisor — агент для сбора метрик контейнеров Docker.
-1. Подключитесь к сервису Grafana и посмотрите дашборды с данными, поступающими из Prometheus.
+  - **Системный диск**: не менее 10 ГБ.
+  - **Диск с данными**: не менее 100 ГБ.
 
-## {heading(Подготовительные шаги)[id=marketplace-adb-monitoring-start-prepare-step]}
+- **Сеть**:
 
-1. Создайте Telegram-чат, в который будут отправляться оповещения от сервиса Мониторинг для Arenadata DB, сохраните идентификатор чата.
-1. Создайте Telegram-бот, который будет использоваться для отправки оповещений, сохраните токен бота.
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)}, если это не сделано ранее.
-1. {linkto(../../../../dbs/adb/quick-start/create-adb#adb-create-adb)[text=Создайте]} инстанс Arenadata DB. Сохраните данные, указанные при создании инстанса:
+  - ВМ должна иметь доступ в интернет.
+  - Приватный DNS должен быть отключен.
 
-   - Имя кластера Arenadata DB. Оно же является именем инстанса.
-   - Имя базы данных Arenadata.
-   - Имя и пароль пользователя базы данных Arenadata.
+{/cut}
 
-   Эти данные понадобятся при подключении и настройке сервиса Мониторинг для Arenadata DB.
+Используя Мониторинг для Arenadata DB, вы принимаете лицензионные соглашения [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace), [Grafana](https://github.com/grafana/grafana/blob/main/LICENSE), [Prometheus](https://github.com/prometheus/prometheus/blob/main/LICENSE), [Alertmanager](https://github.com/prometheus/alertmanager/blob/main/LICENSE) и [ADB Exporter](https://mit-license.org/).
 
-1. Перейдите в раздел **Аналитические БД** → **Инстансы АБД**.
-1. Нажмите на имя нужного инстанса.
-1. На вкладке **Информация** в строке **Connecting settings** найдите и сохраните данные:
+## {heading(Подготовительные шаги)[id=marketplace-adb-monitoring-prep]}
 
-   - IP-адрес узла Arenadata DB — значение аргумента `-h` в psql-команде.
-   - Порт для подключения к Arenadata DB — значение аргумента `-p` в psql-команде.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Зарегистрируйтесь]} в {var(cloud)} и [перейдите](https://msk.cloud.vk.ru/app) в личный кабинет.
+1. Настройте сеть, чтобы иметь доступ к сервису из интернета:
 
-   Эти данные понадобятся при подключении и настройке сервиса Мониторинг для Arenadata DB.
+   1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
+   1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 
-## {heading(1. Подключите сервис Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect]}
+## {heading(1. Подключите сервис Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-connect]}
 
-1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
-1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть с доступом в интернет, если она не была создана ранее.
-1. В {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=настройках подсети]}, где будет размещена ВМ сервиса Мониторинг для Arenadata DB, отключите опцию **Приватный DNS**.
-1. Перейдите в раздел **Магазин приложений**, на странице раздела нажмите кнопку **Все решения**.
-1. На карточке сервиса **Мониторинг для Arenadata DB** нажмите кнопку **Подробнее**.
-1. На странице с описанием сервиса нажмите кнопку **Подключить**.
-1. Введите данные на странице **Параметры сервера**.
+1. В [личном кабинете](https://msk.cloud.vk.com/app/) {var(cloud)} перейдите в раздел **Магазин приложений**.
+1. Нажмите на карточку сервиса **Мониторинг для Arenadata DB**.
 
-   1. Укажите параметры виртуальной машины, на которой будет развернут инстанс сервиса:
+   Если на странице нет карточки сервиса **Мониторинг для Arenadata DB**, нажмите кнопку **Все решения** и найдите карточку в каталоге.
 
-      - **Зона доступности**: выберите {linkto(../../../../start/concepts/architecture#architecture-az)[text=дата-центр]}, где будет запущена ВМ.
-      - **Тип виртуальной машины**: выберите предустановленную {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурацию ВМ]}.
-      - **Сеть**: выберите сеть с доступом в интернет и подсеть, для которой отключена опция **Приватный DNS**.
+1. Нажмите **Подключить**.
+1. Укажите параметры ВМ, на которой будет развернут сервис:
 
-   1. Укажите параметры системного диска и диска с данными:
+   - **Зона доступности**: выберите {linkto(../../../../start/concepts/architecture#architecture-az)[text=зону доступности]}, где будет запущена ВМ.
+   - **Тип виртуальной машины**: выберите {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=предустановленную конфигурацию ВМ]} из списка — от `2-8` до `16-64`, где первое число задает количество ядер, второе — объем памяти в гигабайтах.
+   - **Сеть**: выберите ранее созданную сеть с доступом в интернет и подсеть с отключенной опцией **Приватный DNS**.
 
-      - **Размер диска**: укажите нужный размер диска ВМ в гигабайтах.
-      - **Тип диска**: выберите {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=один из типов диска]} — `HDD`, `SSD` или `High-IOPS SSD`.
+1. Укажите параметры системного диска и диска с данными:
+   
+   - **Размер диска данных**: укажите нужный размер диска ВМ в гигабайтах. Для тестирования оставьте значение `100`. Для рабочей нагрузки укажите больший размер, если история метрик в Grafana короче 30 дней.
+   - **Тип диска**: выберите {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=один из типов диска]}. Для интенсивной записи выберите `High-IOPS SSD`.
 
 1. Нажмите кнопку **Следующий шаг**.
-1. Введите данные на странице **Параметры мониторинга**.
+1. На шаге **Сетевой доступ** укажите параметры:
 
-   1. Укажите ранее сохраненные данные для подключения к базе данных Arenadata:
-
-      - имя кластера (инстанса) Arenadata DB, для которого будет выполняться мониторинг;
-      - IP-адрес узла кластера Arenadata DB, к которому будет подключаться сервис Мониторинг для Arenadata DB;
-      - порт для подключения к Arenadata DB;
-      - логин и пароль пользователя базы данных Arenadata;
-      - имя базы данных в кластере Arenadata DB.
-
-   1. Задайте логин и пароль пользователя для входа в Grafana. Этот пользователь будет обладать правами администратора Grafana.
-   1. Укажите ранее сохраненные параметры Telegram-бота для оповещений.
+   - **Домен, сертификат и публичный адрес**: включите опцию, чтобы иметь доступ к сервису из интернета. Если отключить опцию, сервис будет доступен только во внутренней сети по IP-адресу ВМ с самоподписанным сертификатом.
+   - **Сеть клиентов**: оставьте значение `subnet`, если пользователи Grafana работают в той же подсети, что и ВМ с развернутым сервисом. Если пользователи в другой подсети, укажите ее адрес, например `10.0.2.0/24`. {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=Посмотреть]} адрес подсети можно в личном кабинете. Если опция **Домен, сертификат и публичный адрес** отключена, графики и данные мониторинга в Grafana и доступ по SSH открыты только из этой сети.
 
 1. Нажмите кнопку **Следующий шаг**.
-1. Ознакомьтесь с тарифными условиями и стоимостью инфраструктуры для развертывания сервиса и нажмите кнопку **Подключить тариф**.
+1. На шаге **Параметры мониторинга** укажите параметры подключения к кластеру:
 
-   После успешного развертывания на зарегистрированную в {var(cloud)} почту придут сообщения:
+   - **Имя кластера Arenadata DB**: укажите имя кластера Arenadata DB, например `adb-prod`. Под этим именем кластер будет отображаться на дашбордах и в алертах. Для кластера Arenadata DB, развернутого в {var(cloud)}, имя кластера доступно в разделе **Аналитические БД** → **Инстансы АБД** на вкладке **Информация** на странице кластера. Доступные символы: латиница, цифры, `.`, `-`, `_`. Максимальная длина — 64 символа.
+   - **IP-адрес узла Arenadata DB**: укажите внутренний адрес мастер-сервера кластера, например `10.0.0.5`, адреса вида `172.31.X.X` не подходят. Для кластера Arenadata DB, развернутого в {var(cloud)}, адрес мастер-сервера указан в разделе **Облачные вычисления** → **Виртуальные машины** на странице ВМ с именем `<ПРЕФИКС>-Master-0`, где `<ПРЕФИКС>` — цифро-буквенное значение, которым помечены имена всех ВМ одного кластера, например `ADB207d0a3b`.
+   
+      Сохраните это значение, оно понадобится вам позже при настройке учетной записи для сбора метрик.
+
+   - **Порт Arenadata DB**: укажите порт для подключения к кластеру Arenadata DB. Для кластера Arenadata DB, развернутого в {var(cloud)}, номер порта для подключения указан в разделе **Аналитические БД** → **Инстансы АБД** на вкладке **Информация** на странице кластера, в строке **Connecting settings** после параметра `-p`. По умолчанию используется значение `5432`.
+   
+      Сохраните это значение, оно понадобится вам позже при настройке учетной записи для сбора метрик.
+
+   - **Пользователь базы данных**: укажите логин для учетной записи мониторинга.
+   
+      Сохраните это значение, оно понадобится вам позже при настройке учетной записи для сбора метрик. Для примера далее в этой инструкции используется значение `vkc_monitoring`.
+
+   - **Пароль пользователя базы данных**: придумайте пароль. Тот же пароль получит учетная запись `vkc_monitoring` в кластере. Максимальная длина — 128 символов, нельзя использовать пробелы, кавычки и символы `\`, `$` и `!`. Сохраните это значение, оно понадобится вам позже при настройке учетной записи для сбора метрик.
+   - **Имя базы данных**: укажите имя базы данных, например `analytics`. Для кластера Arenadata DB, развернутого в {var(cloud)}, укажите значение из строки **Имя базы данных** на вкладке **Информация** в разделе **Аналитические БД** → **Инстансы АБД**.
+
+1. Нажмите кнопку **Следующий шаг**.
+1. На шаге **Алерты** укажите:
+
+   - **Алерты в Telegram**: включите опцию, если алерты нужны в Telegram, и задайте параметры:
+
+     - **Идентификатор чата Telegram**: укажите идентификатор чата, в котором подключаются алерты, например `-1001234567890`. Идентификатор — часть адреса чата после знака `#` в веб-версии Telegram `web.telegram.org/a/`.
+     - **Токен Telegram-бота**: укажите токен бота, от имени которого будут приходить алерты. Подойдет любой бот, предварительно добавленный в этот чат.
+
+   - **Алерты в MAX**: включите опцию, если алерты нужны в MAX, и задайте параметры:
+
+     - **Идентификатор чата MAX**: укажите идентификатор канала или чата, например `-71234567890123`. Как узнать идентификатор, описано в [официальной документации MAX](https://dev.max.ru/docs-api/use-cases/getting-chat-id).
+     - **Токен бота MAX**: укажите токен бота, от имени которого будут приходить алерты. Подойдет любой бот, предварительно добавленный в этот чат или канал.
+
+1. Нажмите кнопку **Следующий шаг**.
+1. Ознакомьтесь со стоимостью инфраструктуры для развертывания сервиса и нажмите кнопку **Подключить тариф**.
+
+   Начнется развертывание облачной инфраструктуры, и откроется страница свойств сервиса. Статус процесса будет отображаться также в разделе **Магазин приложений** → **Мои сервисы**.
+
+   После успешного развертывания на почту, привязанную к вашему аккаунту в {var(cloud)}, придут сообщения:
 
    - уведомление со ссылкой на инстанс сервиса в личном кабинете {var(cloud)};
-   - письмо с одноразовой ссылкой.
+   - письмо с одноразовой ссылкой на данные для доступа к сервису.
 
 1. Перейдите по одноразовой ссылке из письма и сохраните данные для доступа к сервису:
 
+   - `productURL` — адрес Grafana;
    - `grafanaUser` и `grafanaPassword` — логин и пароль администратора Grafana;
-   - `productURL` — ссылка на веб-интерфейс Grafana;
-   - `sshUser` — имя администратора ВМ сервиса Мониторинг для Arenadata DB;
-   - `sshKey` — приватный ключ для подключения ĸ ВМ по SSH.
+   - `externalIP` — публичный адрес ВМ с сервисом, если включена опция **Домен, сертификат и публичный адрес**;
+   - `internalIP` — внутренний адрес ВМ с сервисом;
+   - `sshUser` и `sshKey` — логин и закрытый ключ для подключения к ВМ с сервисом по SSH.
 
    {note:info}
    Если данные для доступа утрачены, {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access)[text=сгенерируйте]} новые.
    {/note}
 
-## {heading(2. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-connect-service]}
+## {heading(2. Создайте учетную запись для сбора метрик в кластере)[id=marketplace-adb-monitoring-db-user]}
 
-1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
-1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
-1. Нажмите на имя ВМ, начинающееся с `adb-monitoring-`.
-1. На странице ВМ скопируйте и сохраните внешний IP-адрес. Он понадобится для подключения к ВМ сервиса Мониторинг для Arenadata DB.
-1. Создайте на вашем компьютере файл `vkc_monitoring.pem` и скопируйте в него полученный в письме SSH-ключ.
-1. Установите доступ к файлу `vkc_monitoring.pem` так, чтобы только владелец имел права на чтение и запись. Для этого выполните команду:
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Подключитесь]} по SSH к ВМ с развернутым сервисом с логином `sshUser` и ключом `sshKey` из письма. Используйте для подключения к ВМ адрес `externalIP` из письма, а если опция **Домен, сертификат и публичный адрес** отключена — `internalIP` из письма.
+
+1. Настройте подключение к базе данных:
 
    ```console
-   chmod 600 vkc_monitoring.pem
-   ```
-
-1. Подключитесь к ВМ сервиса Мониторинг для Arenadata DB, выполнив команду:
-
-   ```console
-   ssh -i <ПУТЬ_К_КЛЮЧУ>/vkc_monitoring.pem <ЛОГИН>@<IP-АДРЕС_ВМ>
+   psql -h <IP_УЗЛА> -p <ПОРТ> -U <ЛОГИН> -d <ИМЯ_БД> \
+     -f /home/almalinux/init.sql \
+     -c "ALTER USER vkc_monitoring PASSWORD '<ПАРОЛЬ>'"
    ```
 
    Здесь:
 
-   - `<ПУТЬ_К_КЛЮЧУ>` — путь к директории с файлом `vkc_monitoring.pem`.
-   - `<ЛОГИН>` — имя администратора ВМ, полученное в письме (`sshUser`).
-   - `<IP-АДРЕС_ВМ>` — сохраненный ранее внешний IP-адрес ВМ сервиса Мониторинг для Arenadata DB.
+   - `<IP_УЗЛА>` — значение поля **IP-адрес узла Arenadata DB**, указанное при развертывании сервиса.
+   - `<ПОРТ>` — значение поля **Порт Arenadata DB**, указанное при развертывании сервиса.
+   - `<ЛОГИН>` — имя пользователя базы данных. Значение указано в разделе **Аналитические БД** → **Инстансы АБД** на вкладке **Информация** страницы кластера в строке **Пользователь**.
+   - `<ИМЯ_БД>` — значение поля **Имя базы данных**, указанное при развертывании сервиса.
+   - `<ПАРОЛЬ>` — значение поля **Пароль пользователя базы данных**, указанное при развертывании сервиса.
 
-## {heading(3. Подготовьте Arenadata DB для работы с сервисом Мониторинг для Arenadata DB)[id=marketplace-adb-monitoring-start-arenadata-db]}
+   В результате на ВМ с развернутым сервисом скрипт `init.sql` автоматически создаст учетную запись `vkc_monitoring` с правами только на чтение данных мониторинга.
 
-1. На ВМ сервиса Мониторинг для Arenadata DB подключитесь к базе данных Arenadata. Для этого выполните команду, подставив в нее ранее сохраненные данные:
+   Ожидаемый ответ: в выводе нет строк с `ERROR`, последняя строка — `ALTER ROLE`.
+
+## {heading(3. Подключите узлы кластера к Prometheus)[id=marketplace-adb-monitoring-nodes]}
+
+1. Установите агент Node Exporter на все узлы кластера. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/start/support/support-info). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/prometheus/node_exporter/blob/master/README.md).
+1. В группе безопасности для узлов кластера {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=добавьте]} правило для входящего трафика со следующими параметрами:
+
+   - Протокол: `TCP`.
+   - Порт: `9100`.
+   - Удаленный адрес: значение `internalIP` из письма или подсеть, в которую входит этот адрес, например `10.0.0.0/24`.
+   
+   Для кластера Arenadata DB, развернутого в {var(cloud)}, эта группа безопасности называется `adb-main-ext`.
+
+1. Подключитесь к ВМ с развернутым сервисом по SSH и узнайте имена узлов кластера в запросе к базе данных:
 
    ```console
-   psql -h <IP-АДРЕС_БД> -p <ПОРТ> -U <ЛОГИН> <ИМЯ_БД>
+   psql -h <IP_УЗЛА> -p <ПОРТ> -U vkc_monitoring -d <ИМЯ_БД> \
+     -c "SELECT DISTINCT hostname FROM gp_segment_configuration ORDER BY hostname"
    ```
 
    Здесь:
 
-   - `<IP-АДРЕС_БД>` — IP-адрес узла кластера Arenadata DB.
-   - `<ПОРТ>` — порт для подключения к Arenadata DB.
-   - `<ЛОГИН>` — логин пользователя Arenadata DB.
-   - `<ИМЯ_БД>` — имя базы данных в кластере Arenadata DB.
+   - `<IP_УЗЛА>` — значение поля **IP-адрес узла Arenadata DB**, указанное при развертывании сервиса.
+   - `<ПОРТ>` — значение поля **Порт Arenadata DB**, указанное при развертывании сервиса.
+   - `<ИМЯ_БД>` — значение поля **Имя базы данных**, указанное при развертывании сервиса.
+   
+   На запрос пароля введите значение поля **Пароль пользователя базы данных**, указанное при развертывании сервиса.
 
-1. Откройте для редактирования скрипт инициализации базы данных `/home/almalinux/init.sql`.
+   Ожидаемый ответ: отображаются имена узлов кластера (мастер-серверов, резервного мастер-сервера и серверов-сегментов), например `<ПРЕФИКС>-Master-0`, `<ПРЕФИКС>-Standby-0` и `<ПРЕФИКС>-Segments-0`. Служебные узлы в ответе не отображаются.
 
-   {cut(Скрипт инициализации базы данных)}
+   Запишите эти имена, они понадобятся вам позже.
+   
+   Здесь:
+   
+   -  `<ПРЕФИКС>` — цифро-буквенное значение, которым помечены имена всех ВМ одного кластера. Далее для примера используется префикс `ADB207d0a3b`.
+   -  `Master`, `Standby`, `Segments` — типы узлов кластера.
 
-   ```console
-   -- client database
-   -- 1. create
-   CREATE RESOURCE GROUP monitoring_group
-   WITH (
-   concurrency=15,
-   cpu_rate_limit=1,
-   memory_limit=0
-   )
-   ;
-   CREATE USER vkc_monitoring WITH login password '<ПАРОЛЬ>' RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
-   CREATE SCHEMA IF NOT EXISTS vkcloud_toolkit;
-   CREATE EXTENSION gp_internal_tools;  -- crates session_state schema
+1. Определите имена служебных узлов. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины** и найдите ВМ с префиксом `ADB207d0a3b`, которые не были указаны в ответе на предыдущем шаге. Запишите эти имена — они понадобятся вам далее.
+1. Узнайте внутренний адрес для каждого из узлов кластера. В разделе **Облачные вычисления** → **Виртуальные машины** для ВМ с префиксом `ADB207d0a3b` на вкладке **Сети** найдите значение в поле **IP-адрес**, например `10.0.0.5`.
+1. На ВМ с развернутым сервисом откройте файл настроек Prometheus:
 
-
-   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_replication() RETURNS SETOF pg_stat_replication AS
-   $$ SELECT * FROM pg_catalog.pg_stat_replication; $$
-   LANGUAGE sql SECURITY definer
-   ;
-
-   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_activity() RETURNS SETOF pg_stat_activity AS
-   $$ SELECT * FROM pg_catalog.pg_stat_activity; $$
-   LANGUAGE sql SECURITY definer
-   ;
-
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_replication_delay
-   AS SELECT pg_current_xlog_location() - ( SELECT pg_stat_replication.replay_location
-            FROM vkcloud_toolkit.pg_stat_replication()) AS replication_delay_bytes
-   ;
-
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_locked_pids
-   AS SELECT COALESCE(blockingl.relation::regclass::text, blockingl.locktype) AS locked_item,
-      now() - blockeda.query_start AS waiting_duration,
-      blockeda.pid AS blocked_pid,
-      blockeda.query AS blocked_query,
-      blockedl.mode AS blocked_mode,
-      blockinga.pid AS blocking_pid,
-      blockinga.query AS blocking_query,
-      blockingl.mode AS blocking_mode
-      FROM pg_locks blockedl
-      JOIN vkcloud_toolkit.pg_stat_activity() blockeda ON blockedl.pid = blockeda.pid
-      JOIN pg_locks blockingl ON (blockingl.transactionid = blockedl.transactionid OR (blockingl.relation = blockedl.relation AND blockingl.locktype = blockedl.locktype)) AND blockedl.pid <> blockingl.pid
-      JOIN vkcloud_toolkit.pg_stat_activity() blockinga ON blockingl.pid = blockinga.pid AND blockinga.datid = blockeda.datid
-   WHERE NOT blockedl.granted AND blockinga.datname = current_database()
-   ;
-
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_resgroup_slots
-   AS SELECT tt.groupname,
-      tt.slots_for_queries,
-      tt.active_queries,
-      tt.slots_for_queries - tt.active_queries AS free_slots,
-      tt.waiting_queries,
-      tt.max_wait_sec
-      FROM ( SELECT grc.groupname,
-               grc.concurrency::bigint AS slots_for_queries,
-               COALESCE(act.active_queries, 0::bigint) AS active_queries,
-               COALESCE(act.waiting_queries, 0::bigint) AS waiting_queries,
-               date_part('epoch'::text, COALESCE(act.max_wait_time, '00:00:00'::interval)) AS max_wait_sec
-            FROM gp_toolkit.gp_resgroup_config grc
-               LEFT JOIN ( SELECT pg_stat_activity.rsgid,
-                     count(1) AS active_queries,
-                     count(pg_stat_activity.rsgqueueduration) AS waiting_queries,
-                     max(pg_stat_activity.rsgqueueduration) AS max_wait_time
-                     FROM vkcloud_toolkit.pg_stat_activity()
-                     WHERE pg_stat_activity.rsgname IS NOT NULL AND pg_stat_activity.rsgname <> 'unknown'::text
-                     GROUP BY pg_stat_activity.rsgid) act ON grc.groupid = act.rsgid) tt
-   ;
-
-
-   -- 2. grant
-   GRANT USAGE ON SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
-   GRANT SELECT ON ALL tables IN SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
-   GRANT EXECUTE ON ALL functions IN SCHEMA vkcloud_toolkit TO vkc_monitoring;
-   GRANT SELECT ON session_state.session_level_memory_consumption TO vkc_monitoring;
+   ```bash
+   sudo vim /opt/monitoring_data/prometheus/prometheus.yml
    ```
 
-   {/cut}
+1. В файле настроек в задании `node_exporter` замените строку `static_configs: []` блоком с узлами кластера. Для каждой ВМ кластера добавьте свой блок `- targets`:
 
-1. Сгенерируйте или придумайте пароль для пользователя `vkc_monitoring` базы данных Arenadata, от имени которого будет работать сервис Мониторинг для Arenadata DB.
-1. Вставьте этот пароль в скрипт `/home/almalinux/init.sql` в строку:
-
-   ```console
-   CREATE USER vkc_monitoring WITH login password `<ПАРОЛЬ>` RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
+   ```yaml
+       static_configs:
+         - targets: ["<АДРЕС_ВМ>:9100"]
+           labels:
+             instance: "<ИМЯ_ВМ>"
+             adb_cluster: "<ИМЯ_КЛАСТЕРА>"
    ```
 
-1. Сохраните изменения.
-1. Внутри терминала `psql` выполните скрипт инициализации базы данных:
-
-   ```console
-   \i /home/almalinux/init.sql
-   ```
-
-1. Выйдите из терминала `psql` с помощью команды `\q`.
-
-## {heading(4. Настройте сервис ADB Exporter)[id=marketplace-adb-monitoring-start-adb-exporter]}
-
-Сервис ADB Exporter предназначен для экспорта метрик из баз данных Arenadata в Prometheus. Сервис формирует метрики на основе описаний в конфигурационном файле и автоматически обновляет их значения по заданному расписанию, выполняя SQL-запросы к базе данных.
-
-ADB Exporter автоматически устанавливается и настраивается на ВМ инстанса при развертывании сервиса Мониторинг для Arenadata DB. Чтобы ADB Exporter получал метрики из вашей Arenadata DB, укажите в его конфигурационном файле параметры доступа к базе данных:
-
-1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса ADB Exporter:
-
-   ```console
-   sudo nano /etc/adb_exporter/config.yml
-   ```
-
-1. Добавьте в конфигурационный файл параметры подключения к базе данных Arenadata с помощью ранее созданного пользователя `vkc_monitoring`:
-
-   ```txt
-   datasource:
-      dsn: "postgresql://vkc_monitoring:<ПАРОЛЬ>@<IP-АДРЕС_БД>:<ПОРТ>/<ИМЯ_БД>?sslmode=disable"
-
-   ```
    Здесь:
 
-   - `<ПАРОЛЬ>` — ранее заданный пароль пользователя `vkc_monitoring`.
-   - `<IP-АДРЕС_БД>` — IP-адрес узла кластера Arenadata DB.
-   - `<ПОРТ>` — порт для подключения к Arenadata DB.
-   - `<ИМЯ_БД>` — имя базы данных в кластере Arenadata DB.
+   - `<АДРЕС_ВМ>` — внутренний адрес узла, найденный ранее.
+   - `<ИМЯ_ВМ>` — имя узла из вывода запроса к базе данных, например `ADB207d0a3b-Segments-0`. По этому имени дашборд **Segments** связывает узел с сегментами кластера.
+   - `<ИМЯ_КЛАСТЕРА>` — значение поля **Имя кластера Arenadata DB**, указанное при развертывании сервиса.
 
-1. Перезапустите ADB Exporter:
+1. Сохраните файл, проверьте его и примените настройки:
+
+   ```bash
+   sudo /usr/local/bin/promtool check config \
+     /opt/monitoring_data/prometheus/prometheus.yml
+   sudo systemctl reload prometheus
+   ```
+
+   Ожидаемый ответ: в выводе первой команды есть строка `SUCCESS: /opt/monitoring_data/prometheus/prometheus.yml is valid prometheus config file syntax`.
+
+## {heading(4. Подключите метрики docker-контейнеров к Prometheus)[id=marketplace-adb-monitoring-docker]}
+
+Пока метрики не подключены, дашборд **Docker Containers** остается пустым.
+
+1. Установите агент cAdvisor на узлы кластера, где работают контейнеры Docker. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/start/supp). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/google/cadvisor/blob/master/README.md).
+1. В группе безопасности для узлов кластера {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=добавьте]} правило для входящего трафика:
+
+   - Протокол: `TCP`.
+   - Порт: `8080`.
+   - Удаленный адрес: значение `internalIP` из письма или подсеть, в которую входит этот адрес, например `10.0.0.0/24`.
+
+1. На ВМ с развернутым сервисом откройте файл настроек Prometheus, как в шаге выше, и добавьте в конец файла задание `docker-exporter`. Для каждого узла с cAdvisor добавьте свой блок `- targets`:
+
+   ```yaml
+     - job_name: 'docker-exporter'
+       static_configs:
+         - targets: ["<АДРЕС_ВМ>:8080"]
+           labels:
+             instance: "<ИМЯ_ВМ>"
+   ```
+
+   - `<АДРЕС_ВМ>` — внутренний адрес узла, найденный ранее.
+   - `<ИМЯ_ВМ>` — имя узла из вывода запроса к базе данных, например `ADB207d0a3b-Segments-0`.
+
+1. Сохраните файл, проверьте его и примените настройки:
 
    ```console
-   sudo systemctl restart adb_exporter
+   sudo /usr/local/bin/promtool check config \
+     /opt/monitoring_data/prometheus/prometheus.yml
+   sudo systemctl reload prometheus
    ```
 
-1. Проверьте состояние ADB Exporter:
+   Ожидаемый ответ: в выводе первой команды есть строка `SUCCESS: /opt/monitoring_data/prometheus/prometheus.yml is valid prometheus config file syntax`.
 
-   ```console
-   sudo systemctl status adb_exporter
-   ```
+## {heading(5. Проверьте отображение метрик в Grafana)[id=marketplace-adb-monitoring-grafana]}
 
-   Если сервис успешно запущен и работает, ответ команды будет содержать строку:
+1. Перейдите в веб-интерфейс сервиса мониторинга по адресу из параметра `productURL` из письма. Если опция **Домен, сертификат и публичный адрес** отключена, открывайте адрес из сети клиентов и подтвердите переход, когда браузер предупредит о самоподписанном сертификате.
 
-   ```txt
-   Active: active (running)
-   ```
+1. Для входа введите логин `grafanaUser` и пароль `grafanaPassword` из письма.
 
-## {heading(5. Установите и настройте агент Node Exporter)[id=marketplace-adb-monitoring-start-node-exporter]}
-
-Агент Node Exporter собирает системные метрики серверов, включая использование процессора, памяти, дисков, файловых систем и сетевых интерфейсов. Без установки этого агента не будут работать некоторые дашборды Grafana и оповещения в Prometheus.
-
-1. Установите агент Node Exporter на все узлы кластера Arenadata DB, как описано на [странице продукта в GitHub](https://github.com/prometheus/node_exporter/blob/master/README.md).
-1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса Prometheus:
-
-   ```console
-   sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-   ```
-
-1. Добавьте в конфигурационный файл информацию об источниках метрик: IP-адреса узлов кластера (`targets`) и метки метрик (`labels`).
-
-   Пример конфигурации Prometheus:
-
-   ```yml
-   - job_name: 'node_exporter'
-     static_configs:
-       - targets: ['localhost:9100']
-         labels:
-           instance: segment-1
-           adb_cluster: staging
-   ```
-1. Перезапустите Prometheus.
-
-   ```console
-   sudo systemctl restart prometheus
-   ```
-
-1. Проверьте состояние Prometheus:
-
-   ```console
-   sudo systemctl status prometheus
-   ```
-
-   Если сервис успешно запущен и работает, ответ команды будет содержать строку:
-
-   ```txt
-   Active: active (running)
-   ```
-
-## {heading(6. Установите и настройте агент cAdvisor)[id=marketplace-adb-monitoring-start-cadvisor]}
-
-Агент cAdvisor собирает метрики работы контейнеров Docker, включая использование процессора, памяти, дискового ввода-вывода и сетевого трафика. Без установки этого агента не будут работать некоторые дашборды Grafana и оповещения в Prometheus.
-
-1. Установите агент cAdvisor на все узлы кластера Arenadata DB, на которых запущены контейнеризованные приложения. Процедура установки описана на [странице продукта в GitHub](https://github.com/google/cadvisor/blob/master/README.md).
-1. На ВМ сервиса Мониторинг для Arenadata DB откройте конфигурационный файл сервиса Prometheus:
-
-   ```console
-   sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-   ```
-
-1. Добавьте в конфигурационный файл информацию об источниках метрик: IP-адреса узлов кластера (`targets`) и метки метрик (`labels`).
-
-   Пример конфигурации Prometheus:
-
-   ```yml
-   - job_name: 'docker_exporter'
-     metrics_path: /metrics
-     static_configs:
-       - targets: ['localhost:8080']
-         labels:
-           instance: adcc-node-1
-   ```
-1. Перезапустите Prometheus.
-
-   ```console
-   sudo systemctl restart prometheus
-   ```
-
-1. Проверьте состояние Prometheus:
-
-   ```console
-   sudo systemctl status prometheus
-   ```
-
-   Если сервис успешно запущен и работает, ответ команды будет содержать строку:
-
-   ```txt
-   Active: active (running)
-   ```
-
-## {heading(7. Подключитесь к веб-интерфейсу Grafana)[id=marketplace-adb-monitoring-start-connect-grafana]}
-
-1. Перейдите по сохраненной ранее ссылке `productURL` из письма. Откроется веб-интерфейс Grafana.
-1. Авторизуйтесь с помощью логина и пароля администратора Grafana, полученных в письме (`grafanaUser` и `grafanaPassword`).
-1. Просмотрите содержимое дашбордов с отображением метрик, собранных Prometheus.
-
-   {note:info}
-   Менять пароль при первом входе необязательно.
-   {/note}
+Откроется главная страница сервиса мониторинга Grafana. На дашбордах вы увидите состояние всех подключенных узлов кластера.
