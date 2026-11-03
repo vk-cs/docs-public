@@ -11875,7 +11875,7 @@
   },
   {
     "source": "/en/additionals/cases/cases-db-config/case-mongo-update",
-    "destination": "/en/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/en/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
@@ -11917,7 +11917,7 @@
   },
   {
     "source": "/ru/additionals/cases/cases-db-config/case-mongo-update",
-    "destination": "/ru/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/ru/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
@@ -20083,7 +20083,7 @@
   },
   {
     "source": "/en/dbs/dbaas/use-cases/case-mongo-update",
-    "destination": "/en/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/en/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
@@ -21145,7 +21145,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/use-cases/case-mongo-update",
-    "destination": "/ru/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/ru/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
@@ -34334,6 +34334,18 @@
   {
     "source": "/en/networks/vnet/how-to-guides/onpremise-connect/advanced-router",
     "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/ru/dbs/dbaas/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/dbs/dbaas/how-to-guides/case-mongo-update",
+    "destination": "/en/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
   }
