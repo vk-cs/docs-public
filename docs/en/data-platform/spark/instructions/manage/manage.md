@@ -100,7 +100,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 {include(../../../_includes/_spark.md)[tags=open]}
 
 1. On the instance page, go to the **Settings** tab.
-1. View the Spark version change history by clicking **•••**.
+1. View the Spark version change history by clicking ![icon](../../../assets/more-icon.svg "inline").
 1. If necessary, change the Spark version that will be used to run your tasks:
 
    1. Click the **Edit** button.

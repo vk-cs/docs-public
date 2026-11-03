@@ -117,7 +117,7 @@ In the Standalone configuration, user authorization in the service web interface
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. Go to the **Service users** tab.
-1. Click **•••** for the required service user and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the required service user and select **Delete**.
 1. Confirm the deletion.
 
 {/includetag}

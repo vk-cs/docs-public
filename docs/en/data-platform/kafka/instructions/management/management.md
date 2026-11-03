@@ -89,13 +89,13 @@
 
    - From the service instance list:
 
-      1. Click **•••** for the required instance in the service instance list.
+      1. Click ![icon](../../../assets/more-icon.svg "inline") for the required instance in the service instance list.
       1. Select **Horizontal scaling**.
 
    - From the service instance page:
 
       1. Click the name of the required instance in the service instance list.
-      1. On the **General information** tab, click **•••**.
+      1. On the **General information** tab, click ![icon](../../../assets/more-icon.svg "inline").
       1. Select **Horizontal scaling**.
 
 1. Specify the new number of Kafka broker nodes.

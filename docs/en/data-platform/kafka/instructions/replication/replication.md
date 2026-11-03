@@ -91,7 +91,7 @@ The MirrorMaker component will be placed in one of the available zones.
 1. Go to the **Data Platform** → **Service instances** section.
 1. In the list of service instances, click the name of the desired instance.
 1. Go to the **Connections** tab.
-1. Click the **•••** icon to the right of the MirrorMaker component connection.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon to the right of the MirrorMaker component connection.
 1. Select the **Delete** option.
 1. Confirm the deletion.
 

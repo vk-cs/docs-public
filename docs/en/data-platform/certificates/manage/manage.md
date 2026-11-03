@@ -30,7 +30,7 @@ TLS certificate replacement is available for the following services: Cloud Trino
    - **Certificate chain** — intermediate certificates in PEM format. They link the server certificate to a trusted root certificate authority. Without the chain, the client cannot verify the certificate's authenticity.
    - **Private key** — the private key in PEM format corresponding to the certificate. Used by the server to complete the TLS handshake.
 
-   To replace or delete an uploaded file, click **•••** next to the file and select the desired action.
+   To replace or delete an uploaded file, click ![icon](../../assets/more-icon.svg "inline") next to the file and select the desired action.
 
 1. Click **Create**.
 
@@ -53,5 +53,5 @@ TLS certificate replacement is available for the following services: Cloud Trino
 ## {heading(Delete a certificate)[id=certificates_delete]}
 
 1. Go to **Data Platform** → **Certificates**.
-1. Click **•••** for the required certificate and select **Delete**.
+1. Click ![icon](../../assets/more-icon.svg "inline") for the required certificate and select **Delete**.
 1. Confirm the deletion.

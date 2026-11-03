@@ -25,7 +25,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the **Data Platform → Service instances** section.
-1. Click ![ ](/en/assets/more-icon.svg "inline") the instance you need and select **Edit**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") the instance you need and select **Edit**.
 1. In the window that opens, specify a new name and description for the instance.
 1. Click the **Save changes** button.
 
@@ -41,7 +41,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the **Data Platform → Service instances** section.
-1. Click ![ ](/en/assets/more-icon.svg "inline") the instance you need and select **Change password**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") the instance you need and select **Change password**.
 1. In the window that opens create or generate a new administrator password.
 
    Password requirements:
@@ -70,7 +70,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the **Data Platform → Service instances** section.
-1. Click ![ ](/en/assets/more-icon.svg "inline") the instance you need and select **Go to k8s cluster**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") the instance you need and select **Go to k8s cluster**.
 
 {/tab}
 
@@ -86,7 +86,7 @@ This is a group operation: if necessary, you can delete several instances of the
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the **Data Platform → Service instances** section.
-1. Click ![ ](/en/assets/more-icon.svg "inline") the instance you need and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") the instance you need and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. The deletion may take a long time.
 
 {/tab}
