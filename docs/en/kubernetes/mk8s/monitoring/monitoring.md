@@ -8,7 +8,7 @@ You can use the following tools to monitor the status of a Kubernetes cluster:
 
 ## Cluster status dashboard
 
-VK Cloud creates a dashboard for each cluster automatically. The dashboard is based on [Cloud Monitoring](/en/monitoring-services/monitoring). It shows the status of cluster resources, how their usage changes, and the main resource consumers. The data comes from the metrics of nodes, containers, persistent volumes, and the network. VK Cloud collects these metrics automatically.
+VK Cloud creates a dashboard for each cluster automatically. The dashboard is based on [Cloud Monitoring](/en/monitoring-services/monitoring). It shows the status of cluster resources, how their usage changes, and the main resource consumers. The data comes from the metrics of nodes, containers, and the network. VK Cloud collects these metrics automatically.
 
 The dashboard is [available](/en/kubernetes/mk8s/instructions/manage-cluster#view_cluster_status_dashboard) in the management console on the cluster page. Use its indicators to [configure](/en/monitoring-services/alerting/instructions/triggers#alerting-triggers-add) alerts in Cloud Monitoring.
 
@@ -17,8 +17,6 @@ The dashboard indicators fall into three groups:
 - Cluster health — key indicators that show whether the cluster has enough resources:
 
    - CPU and memory usage of the cluster — actual resource consumption by all workloads. Values close to the maximum mean that the nodes have almost no spare computing resources.
-   - Filesystem usage of the most-filled node. If the node disk is full, the kubelet may evict pods from the node. For more information about eviction thresholds, see [Calculation of available CPU and RAM computing resources](/en/kubernetes/mk8s/concepts/flavors#calculation_of_available_cpu_and_ram_computing_resources).
-   - Number of [PVCs](/en/kubernetes/mk8s/reference/pvs-and-pvcs) that are more than 85% full. Applications cannot write data to a full PVC. For such PVCs, free up space or increase their size.
    - CPU and memory request usage — the share of [allocatable resources on the node](/en/kubernetes/mk8s/concepts/flavors#available_computing_resources_on_the_node) that pod requests reserve. If the value is high, the scheduler cannot place new pods, even if actual consumption is low. To fix this, try the solutions from [Pods are stuck in the Pending state](/en/kubernetes/mk8s/troubleshooting/pods-pending).
 
 - Cluster resources — how resource usage changes:
@@ -27,11 +25,10 @@ The dashboard indicators fall into three groups:
    - Node utilization — CPU, memory, and filesystem usage for each node. Use it to find overloaded nodes and uneven load.
    - Node network traffic — incoming and outgoing traffic for each node. Use it to notice sudden spikes in network load.
 
-- Resource consumers and risks — containers and PVCs that use the most resources or are close to running out:
+- Resource consumers and risks — containers that use the most resources or are close to running out:
 
    - Containers with the highest resource consumption. For such containers, [check](/en/kubernetes/mk8s/concepts/addons-and-settings/settings#limits_settings_for_pods) that resource requests and limits match the actual load. If you do not set them, the cluster uses default values.
    - Containers close to the memory limit. If a container exceeds the limit, the Linux kernel stops its process because of lack of memory, and the container may restart. The list does not include containers without a limit.
-   - PVCs that will soon run out of space.
 
 ## Using Grafana
 
