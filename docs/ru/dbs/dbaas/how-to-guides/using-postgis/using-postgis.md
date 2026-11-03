@@ -13,7 +13,7 @@ CREATE TABLE gtest ( ID int4, NAME varchar(20) ); SELECT AddGeometryColumn('', '
 Далее, вы можете вставлять геометрию в таблицу с помощью SQL-команды _insert_. Объект ГИС будет форматирован согласно формату well-known text Консорциума OpenGIS:
 
 ```sql
-INSERT INTO gtest (ID, NAME, GEOM) VALUES ( 1, 'Первая геометрия', GeomFromText('LINESTRING(2 3,4 5,6 5,7 8)', -1) );
+INSERT INTO gtest (ID, NAME, GEOM) VALUES ( 1, 'First geometry', GeomFromText('LINESTRING(2 3,4 5,6 5,7 8)', -1) );
 ```
 
 Подробную информацию о других объектах ГИС можно посмотреть в справочнике объектов. Просмотр ваших ГИС-данных в таблице:

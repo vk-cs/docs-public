@@ -78,6 +78,6 @@ VK Cloud allows the installation of OpenSearch plugins on already deployed datab
 
 - `transport-nio`
 
-    The plugin implements a transport layer using the NIO approach. [NIO Transport](https://activemq.apache.org/nio-transport-reference) provides asynchronous, non-blocking I/O processing, which improves system performance and scalability.
+    The plugin implements a transport layer using NIO (asynchronous non-blocking I/O), which improves system performance and scalability.
 
 Read more about working with extensions and plugins in VK Cloud in [Managing extensions](../../instructions/managing-extensions).

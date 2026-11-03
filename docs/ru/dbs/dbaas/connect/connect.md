@@ -125,7 +125,7 @@
 
    {ifndef(public)}
    ```ruby
-   require "postgres"
+   require "pg"
 
    conn = PGconn.connect(:host => '<IP-АДРЕС>', :dbname => '<БД>', :user='<ПОЛЬЗОВАТЕЛЬ>', :password => '<ПАРОЛЬ>')
    ```
@@ -161,7 +161,7 @@
    ```java
    import java.sql.*;
 
-   Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>`", "<ПОЛЬЗОВАТЕЛЬ>", "<ПАРОЛЬ>");
+   Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-АДРЕС>/<БД>?sslmode=<РЕЖИМ_ПОДКЛЮЧЕНИЯ>", "<ПОЛЬЗОВАТЕЛЬ>", "<ПАРОЛЬ>");
    ```
    {/ifdef}
 
