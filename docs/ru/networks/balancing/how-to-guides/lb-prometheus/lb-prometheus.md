@@ -101,4 +101,4 @@ openstack loadbalancer listener create \
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=balancing-lb-delete]}
 
-Работающая ВМ с Grafana и Prometheus потребляет вычислительные ресурсы. Если она вам больше не нужна, {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=удалите ее]}.
+Работающая ВМ с Grafana и Prometheus потребляет вычислительные ресурсы. Если она вам больше не нужна, {linkto({@root}/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=удалите ее]}.

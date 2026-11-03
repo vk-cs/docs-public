@@ -45,8 +45,8 @@ aws s3api put-object-lock-configuration \
 - `<ИМЯ_БАКЕТА>` — бакет атауы.
 - `<РЕЖИМ_БЛОКИРОВКИ>` — бұғаттау режимі:
 
-    - `GOVERNANCE` — [басқарылатын режим](/kz/storage/s3/concepts/objects-lock#governance-lock);
-    - `COMPLIANCE` — [қатаң режим](/kz/storage/s3/concepts/objects-lock#compliance-lock).
+    - `GOVERNANCE` — [басқарылатын режим](/kz/storage/s3/concepts/objects-lock#s3-concepts-object-lock-governance);
+    - `COMPLIANCE` — [қатаң режим](/kz/storage/s3/concepts/objects-lock#s3-concepts-object-lock-compliance).
 
 - `<СРОК_БЛОКИРОВКИ>` — объект жүктелген сәттен бастап күндермен (`Days`) немесе жылдармен (`Years`) көрсетілетін бұғаттау мерзімі. `Days` және `Years` мәндерін бір уақытта көрсетуге болмайды. Мысал: `1825` күн (5 жыл).
 - `<URL_СЕРВИСА>` — VK Object Storage сервисінің домені, аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:

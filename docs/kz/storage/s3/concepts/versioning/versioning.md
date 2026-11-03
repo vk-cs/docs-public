@@ -72,7 +72,7 @@
 - Нұсқа идентификаторы көрсетілген және {linkto(../objects-lock#s3-concepts-object-lock)[text=объектілерді бұғаттау]} (object lock) қосылмаған: көрсетілген идентификаторы бар объект нұсқасы немесе жою маркері жойылады. Басқа нұсқалар болмаған жағдайда, объектіні жою қайтарымсыз орындалады.
 - Нұсқа идентификаторы көрсетілген және {linkto(../objects-lock#s3-concepts-object-lock)[text=объектілерді бұғаттау]} (object lock) қосылған: {linkto(../objects-lock#s3-concepts-object-lock-retention-period)[text=уақытша бұғаттау]} мерзімі аяқталғанға дейін немесе {linkto(../objects-lock#s3-concepts-object-lock-legal-hold)[text=мерзімсіз бұғаттауды]} алып тастағанға дейін жою қолжетімсіз.
 
-  {linkto(../s3-acl#s3-concepts-acl-permissions)[text=жазу құқықтары]} (`WRITE`) бар пайдаланушылар {linkto(../objects-lock#s3-concepts-object-lock-governance)[text=басқарылатын режимде]} (`GOVERNANCE`) уақытша бұғаттауды {linkto(../../instructions/objects/object-lock#s3-instructions-object-lock-bypass-governance-retention)[text=айналып өте алады]}.
+  {linkto(../access/s3-acl#s3-concepts-acl-permissions)[text=жазу құқықтары]} (`WRITE`) бар пайдаланушылар {linkto(../objects-lock#s3-concepts-object-lock-governance)[text=басқарылатын режимде]} (`GOVERNANCE`) уақытша бұғаттауды {linkto(../../instructions/objects/object-lock#s3-instructions-object-lock-bypass-governance-retention)[text=айналып өте алады]}.
 
 Нұсқалау тоқтатылған:
 

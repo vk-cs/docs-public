@@ -18,10 +18,18 @@
 
 - в [правилах планирования](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) пода:
    - в параметрах `nodeAffinity`, `topologySpreadConstraints` или `nodeSelector`;
-   - в {linkto(../../../reference/labels-and-taints#mk8s-labels-and-taints)[text=метках]} `topology.kubernetes.io/zone`,`failure-domain.beta.kubernetes.io/zone` и `topology.cinder.csi.openstack.org/zone`.
+     {/includetag}
+     {includetag(check-k8s)}
+   - в {linkto({@root}/kubernetes/k8s/reference/labels-and-taints#k8s-labels-and-taints)[text=метках]} `topology.kubernetes.io/zone`,`failure-domain.beta.kubernetes.io/zone` и `topology.cinder.csi.openstack.org/zone`.
+  
+- в {linkto({@root}/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes)[text=классе хранения]} (`StorageClass`) для подов [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
+     {/includetag}
+     {includetag(check-mk8s)}
+   - в {linkto({@root}/kubernetes/mk8s/reference/labels-and-taints#mk8s-labels-and-taints)[text=метках]} `topology.kubernetes.io/zone`,`failure-domain.beta.kubernetes.io/zone` и `topology.cinder.csi.openstack.org/zone`.
 
-- в {linkto(../../../concepts/storage#mk8s-storage-storage-classes)[text=классе хранения]} (`StorageClass`) для подов [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
-
+- в {linkto({@root}/kubernetes/mk8s/concepts/storage#mk8s-storage-storage-classes)[text=классе хранения]} (`StorageClass`) для подов [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/).
+  {/includetag}
+  {includetag(check)}
 Если зона доступности не указана, миграция на другую зону доступности никак не повлияет на вашу рабочую нагрузку и дополнительных действий по переносу от вас не потребуется.
 
 {/includetag}

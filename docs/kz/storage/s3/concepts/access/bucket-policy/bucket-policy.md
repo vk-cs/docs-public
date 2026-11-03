@@ -221,7 +221,7 @@ JSON файлының құрылымы:
 {linkto(#s3-concepts-bucket-policy-actions)[text=Әрекеттерге]} рұқсат (`Allow`) немесе тыйым (`Deny`) жасырын (implicit) және ашық (explicit) түрде қолданылуы мүмкін.
 - Жасырын рұқсат (implicit allow): {var(s3)} автоматты түрде орнатылады және барлық ішкі {linkto(#s3-concepts-bucket-policy-principal)[text=принципалдарға]} әдепкі түрде қолданылады.
 - Жасырын тыйым (implicit deny): {var(s3)} автоматты түрде орнатылады және барлық сыртқы {linkto(#s3-concepts-bucket-policy-principal)[text=принципалдарға]} әдепкі түрде қолданылады.
-- Ашық рұқсат (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
+- Ашық рұқсат (explicit allow): {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
 
     ```json
     ...
@@ -229,7 +229,7 @@ JSON файлының құрылымы:
     ...
     ```
 
-- Ашық тыйым (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
+- Ашық тыйым (explicit deny): {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-policy)[text=қолданушы]} қол жетімділік саясаттары арқылы `Effect` параметрі арқылы орнатылады:
 
     ```json
     ...

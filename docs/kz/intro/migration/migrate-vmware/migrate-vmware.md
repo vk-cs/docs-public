@@ -145,7 +145,7 @@ UEFI эмуляциясы бар ВМ-ді көшіру үшін [Хайстек
 1. Импортталған образды {linkto(../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=аралық Windows ВМ жасау]} үшін пайдаланыңыз.
 1. Windows жүктелуіне VirtIO HBA драйверін қосыңыз.
 
-   1. Минималды өлшемдегі {linkto(../../../computing/iaas/instructions/vm/vm-create#iaas-volumes-create)[text=диск жасаңыз]} және оны ВМ-ге {linkto(../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=қосыңыз]}.
+   1. Минималды өлшемдегі {linkto(../../../computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=диск жасаңыз]} және оны ВМ-ге {linkto(../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=қосыңыз]}.
    1. Виртуалды машинаны {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=іске қосыңыз]}.
    1. VirtIO орнатқышын `repair` режимінде іске қосыңыз.
    1. Виртуалды машинаны {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]}.

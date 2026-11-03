@@ -129,7 +129,7 @@
    - `<ОБЪЕМ_ДИСКА>` — размер диска в ГБ.
 
      {ifdef(public)}
-     Максимальный размер ограничен. Подробнее — в разделе {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-images-volumes-no-quotas-limits)[text=Квоты и лимиты]}.
+     Максимальный размер ограничен. Подробнее — в разделе {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#include-quotasandlimits-images-volumes-size)[text=Квоты и лимиты]}.
      {/ifdef}
    
    - `<ID_ОБРАЗА>` — идентификатор образа, полученный ранее.

@@ -236,8 +236,8 @@
 Чтобы обновить инстанс БД, создайте его резервную копию в сервисе Cloud Backup и восстановите на инстанс с более новой версией PostgreSQL.
 
 1. {linkto(../../../../../storage/backups/instructions/create-backup-copy#backup-copy-create)[text=Создайте]} резервную копию.
-1. Подготовьте новый инстанс БД с версией, на которую необходимо обновиться, с помощью {linkto(../../instructions/db-instance-rebuild#dbaas-db-instance-rebuild)[text=восстановления]} из созданной ранее резервной копии Cloud Backup.
-1. {linkto(../../instructions/managing-extensions#dbaas-managing-extensions-install)[text=Установите]} те же расширения, что и на изначальном инстансе БД.
+1. Подготовьте новый инстанс БД с версией, на которую необходимо обновиться, с помощью {linkto(../../db-instance-rebuild#dbaas-db-instance-rebuild)[text=восстановления]} из созданной ранее резервной копии Cloud Backup.
+1. {linkto(../../managing-extensions#dbaas-managing-extensions-install)[text=Установите]} те же расширения, что и на изначальном инстансе БД.
 1. Если инстанс БД используется в реальном времени для работы приложений или сервисов, настройте [логическую репликацию](https://www.postgresql.org/docs/current/logical-replication.html) и дождитесь синхронизации источника и подписчика.
 
    1. Убедитесь, что все таблицы в подписке имеют состояние `replicating`. Для проверки на подписчике выполните запрос:

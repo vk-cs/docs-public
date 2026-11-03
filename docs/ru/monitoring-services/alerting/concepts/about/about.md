@@ -8,7 +8,7 @@ Cloud Alerting фиксирует наступление события с по�
 
 Срабатывание триггера можно {linkto(../../instructions/triggers#alerting-triggers)[text=настроить]} по следующим источникам:
 
-По значениям метрик сервиса {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]}. Метрики собираются с конкретного ресурса (например, ВМ или БД). Значения метрик можно получить с помощью запроса к {linkto(../../../../tools-for-using-services/api/api-spec/monitoring2-api#api-spec-monitoring2)[text=API]} мониторинга на языке PromQL.
+По значениям метрик сервиса {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]}. Метрики собираются с конкретного ресурса (например, ВМ или БД).{ifdef(public)} Значения метрик можно получить с помощью запроса к {linkto({@root}/tools-for-using-services/api/api-spec/monitoring-api#api-spec-monitoring2)[text=API]} мониторинга на языке PromQL.{/ifdef}
 По записям сервиса {linkto(../../../logging/concepts/about#logging-about)[text=Cloud Logging]}. Записи собираются с ресурсов внутри конкретного сервиса {var(cloud)} и источником данных для триггера служит этот сервис. Условие для триггера задается на {linkto(../../../logging/concepts/search-tools#logging-search-tools)[text=языке поисковых запросов]}.
 По событиям сервиса {linkto(../../../event-log/concepts/about#event-log-about)[text=Cloud Audit]}. События собираются с управляющего слоя или слоя данных сервиса {var(cloud)}. Условие для триггера задается на {linkto(../../../logging/concepts/search-tools#logging-search-tools)[text=языке поисковых запросов]}.
 

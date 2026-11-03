@@ -17,7 +17,7 @@
      {includetag(disk,vm)}
    
      {ifdef(public)}
-     Максимальный размер диска [ограничен](/ru/tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-vm-no-quotas-limits). Для создания ВМ с диском большего объема используйте [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
+     Максимальный размер диска {linkto({@root}/tools-for-using-services/account/concepts/quotasandlimits#include-quotasandlimits-vm-no-quotas-limits)[text=ограничен]}. Для создания ВМ с диском большего объема используйте {linkto({@root}/tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]}.
      {/ifdef}
    
      {/includetag}

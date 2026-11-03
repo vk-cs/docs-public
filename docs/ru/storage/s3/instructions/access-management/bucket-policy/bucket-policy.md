@@ -65,7 +65,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо получить конфигурацию политики доступа.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -99,7 +99,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо установить конфигурацию политики доступа.
      {ifdef(public)}
    - `<КОНФИГУРАЦИЯ>` — имя файла конфигурации политики доступа в формате JSON.
-   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -126,7 +126,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо отредактировать конфигурацию политики доступа.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -151,7 +151,7 @@
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо установить конфигурацию политики доступа.
    - `<КОНФИГУРАЦИЯ>` — имя файла конфигурации политики доступа в формате JSON.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.
@@ -175,7 +175,7 @@
 
    - `<ИМЯ_БАКЕТА>` — имя бакета, для которого необходимо удалить конфигурацию политики доступа.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — должен соответствовать {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
+   - `<ENDPOINT_URL>` — должен соответствовать {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региону]} аккаунта:
 
      - `https://hb.vkcloud-storage.ru` или `https://hb.ru-msk.vkcloud-storage.ru` — домен региона Москва;
      - `https://hb.kz-ast.vkcloud-storage.ru` — домен региона Казахстан.

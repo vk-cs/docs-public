@@ -1,6 +1,6 @@
 # {heading(Перенос рабочей нагрузки после миграции ресурсов)[id=mk8s-post-migration]}
 
-Это руководство поможет вам завершить перенос своей рабочей нагрузки (workload) после того, как сотрудники {var(cloud)} завершат {linkto(../../../concepts/az-migration-magnum#mk8s-az-migration)[text=работы по миграции]} ресурсов кластера между {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зонами доступности]}. Вы выполните следующие шаги:
+Это руководство поможет вам завершить перенос своей рабочей нагрузки (workload) после того, как сотрудники {var(cloud)} завершат {linkto(../../../concepts/az-migration#mk8s-az-migration)[text=работы по миграции]} ресурсов кластера между {linkto(../../../../../start/concepts/architecture#architecture-az)[text=зонами доступности]}. Вы выполните следующие шаги:
 
 1. Определите, зависит ли ваша рабочая нагрузка (workload) от старой зоны доступности, так как в таком случае метаданные вашей рабочей нагрузки продолжат ссылаться на нее.
 1. Адаптируете рабочую нагрузку на уже смигрированных группах worker-узлов под новую зону доступности.
@@ -18,7 +18,7 @@
 
 Определите, повлияет ли миграция на рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)) ваших кластеров. Для этого узнайте, указана ли зона доступности:
 
-{include(/ru/_includes/_az-migration-magnum.md)[tags=check]}
+{include(/ru/_includes/_az-migration-magnum.md)[tags=check,check-mk8s]}
 
 ## {heading({counter(az)}. Обновите конфигурации смигрированных групп узлов)[id=mk8s-post-migration-update]}
 
@@ -71,7 +71,7 @@
 
 ## {heading({counter(az)}. Перенесите stateful-нагрузку на новый PVC)[id=mk8s-post-migration-stateful]}
 
-Так как работы по {linkto(../../../concepts/az-migration-magnum#mk8s-az-migration)[text=миграции ресурсов]} со стороны {var(cloud)} уже завершены, диски, на которых расположены PV, уже физически изменили свою зону. Теперь вам нужно актуализировать их метаданные в кластере. 
+Так как работы по {linkto(../../../concepts/az-migration#mk8s-az-migration)[text=миграции ресурсов]} со стороны {var(cloud)} уже завершены, диски, на которых расположены PV, уже физически изменили свою зону. Теперь вам нужно актуализировать их метаданные в кластере. 
 
 Чтобы перенести stateful-нагрузку на PVC в новой зоне доступности,
 

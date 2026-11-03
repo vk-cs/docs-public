@@ -44,7 +44,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — қолжетімділік саясатының конфигурациясын алу қажет бакеттің атауы.
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -73,7 +73,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
    - `<ИМЯ_БАКЕТА>` — қолжетімділік саясатының конфигурациясын орнату қажет бакеттің атауы.
    - `<КОНФИГУРАЦИЯ>` — JSON форматындағы қолжетімділік саясаты конфигурациясы файлының атауы.
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -95,7 +95,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — қолжетімділік саясатының конфигурациясын өңдеу қажет бакеттің атауы.
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -115,7 +115,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
    - `<ИМЯ_БАКЕТА>` — қолжетімділік саясатының конфигурациясын орнату қажет бакеттің атауы.
    - `<КОНФИГУРАЦИЯ>` — JSON форматындағы қолжетімділік саясаты конфигурациясы файлының атауы.
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
@@ -134,7 +134,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — қолжетімділік саясатының конфигурациясын жою қажет бакеттің атауы.
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto({@root}/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.

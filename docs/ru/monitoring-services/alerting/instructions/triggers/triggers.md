@@ -2,7 +2,7 @@
 
 ## {heading(Создание триггера)[id=alerting-triggers-add]}
 
-1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
+1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto({@root}/tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
 1. Добавьте триггер одним из способов:
 
     - Через вкладку **Триггеры**:
@@ -13,9 +13,9 @@
         1. В блоке **Алертинг** нажмите кнопку **Создать триггеры**.
 1. Выберите источник данных:
 
-   - `Мониторинг` — по метрикам сервиса {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]};
-   - `Логирование` — по записям сервиса {linkto(../../../logging/concepts/about#event-log-about)[text=Cloud Logging]};
-   - `Журнал событий` — по событиям сервиса {linkto(../../../event-log/concepts/about#logging-about)[text=Cloud Audit]}.
+   - `Мониторинг` — по метрикам сервиса {linkto({@root}/monitoring-services/monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]};
+   - `Логирование` — по записям сервиса {linkto({@root}/monitoring-services/logging/concepts/about#logging-about)[text=Cloud Logging]};
+   - `Журнал событий` — по событиям сервиса {linkto({@root}/monitoring-services/event-log/concepts/about#event-log-about)[text=Cloud Audit]}.
 
 1. Укажите название триггера.
 1. (Опционально) Нажмите кнопку ![plus-icon](../../../../assets/plus-icon.svg "inline") **Добавить описание** и добавьте описание триггера.

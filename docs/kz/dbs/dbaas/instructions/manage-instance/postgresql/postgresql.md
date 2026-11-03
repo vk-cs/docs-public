@@ -129,15 +129,13 @@
 
 {tab(Single конфигурациясы)}
 
-Дананы кеңейту үшін оған реплика қосыңыз. Операция {linkto(
-../../../instructions/replication#dbaas-replication)[text=Репликация]} бөлімінде толық сипатталған.
+Дананы кеңейту үшін оған реплика қосыңыз. Операция {linkto(../../replication#dbaas-replication)[text=Репликация]} бөлімінде толық сипатталған.
 
 {/tab}
 
 {tab(Master-Replica конфигурациясы)}
 
-Дананы кеңейту үшін оған реплика қосыңыз. Операция {linkto(
-../../../instructions/replication#dbaas-replication)[text=Репликация]} бөлімінде толық сипатталған.
+Дананы кеңейту үшін оған реплика қосыңыз. Операция {linkto(../../replication#dbaas-replication)[text=Репликация]} бөлімінде толық сипатталған.
 
 {/tab}
 

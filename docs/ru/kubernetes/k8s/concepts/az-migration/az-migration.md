@@ -4,7 +4,7 @@
 
 1. Определите, повлияет ли миграция на рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)) ваших кластеров. Для этого проверьте, указана ли зона доступности:
 
-   {include(/ru/_includes/_az-migration-magnum.md)[tags=check]}
+   {include(/ru/_includes/_az-migration-magnum.md)[tags=check,check-k8s]}
 
 1. Если рабочая нагрузка кластера зависит от зоны доступности, перенесите ее самостоятельно либо {linkto(/ru/kubernetes/k8s/how-to-guides/workload-migration/pre-migration#k8s-pre-migration)[text=до начала работ]} по миграции ресурсов кластера со стороны {var(cloud)}, либо {linkto(/ru/kubernetes/k8s/how-to-guides/workload-migration/post-migration#k8s-post-migration)[text=после]}.
 

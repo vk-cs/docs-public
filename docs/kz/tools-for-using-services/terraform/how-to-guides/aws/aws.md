@@ -220,7 +220,7 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 - `data "aws_canonical_user_id" "current" {}` — деректер көзі ағымдағы пайдаланушының канондық идентификаторын (Canonical User ID) алады.
 - `id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"` — бакетке қол жеткізу құқықтары берілетін пайдаланушының канондық идентификаторы (Canonical User ID). [Пайдаланушының канондық идентификаторын қалай білуге болады](/kz/tools-for-using-services/api/api-spec/s3-rest-api/acl-api).
 - `email_address = "mcs1234567890"` — бакетке қол жеткізу құқықтары берілетін PID (жоба идентификаторы). [PID-ті қалай білуге болады](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
-- `permission` — [қол жеткізу құқықтарының түрі](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissons). Қолжетімді мәндер: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
+- `permission` — [қол жеткізу құқықтарының түрі](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissions). Қолжетімді мәндер: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
 ## 4. Бакет үшін CORS ережелерін баптаңыз
 

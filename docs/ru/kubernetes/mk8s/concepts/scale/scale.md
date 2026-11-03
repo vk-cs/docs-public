@@ -87,7 +87,7 @@ _Горизонтальное автоматическое масштабиро�
 
 ## {heading(Действующие ограничения)[id=mk8s-scale-limitations]}
 
-- Возможности вертикального масштабирования ограничены {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-quotas)[text=действующими квотами]} и доступными {linkto(../flavors#mk8s-flavors-vm-flavor)[text=шаблонами виртуальных машин]}.
+- Возможности вертикального масштабирования ограничены {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=действующими квотами]} и доступными {linkto(../flavors#mk8s-flavors-vm-flavor)[text=шаблонами виртуальных машин]}.
 - Возможности горизонтального масштабирования ограничены действующими квотами и пределом на количество worker-узлов в отдельной группе узлов: от 1 до 500 узлов.
 - Невозможно выполнить горизонтальное масштабирование вручную, если настроено автоматическое масштабирование. Чтобы выполнить масштабирование вручную, {linkto(../../instructions/scale#mk8s-instructions-scale-horizontal-worker-nodes)[text=выключите автоматическое масштабирование]}.
 

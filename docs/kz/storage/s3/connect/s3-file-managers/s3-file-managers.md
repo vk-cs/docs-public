@@ -30,7 +30,7 @@ CyberDuck әртүрлі қоймаларға бір уақытта қосылу
 Сәтті қосылғаннан кейін аккаунтқа қолжетімді бакеттер CyberDuck ішінде көрсетіледі.
 
 {note:info}
-Cyberduck арқылы жасалатын бакеттер мен объектілер әдепкі бойынша Cyberduck баптауларында көрсетілген {linkto(../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класына]} және {linkto(../../concepts/access/s3-acl#s3-concepts-acl-permissons)[text=қолжетімділік түріне]} ие болады.
+Cyberduck арқылы жасалатын бакеттер мен объектілер әдепкі бойынша Cyberduck баптауларында көрсетілген {linkto(../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класына]} және {linkto(../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=қолжетімділік түріне]} ие болады.
 {/note}
 
 ## {heading(WinSCP)[id=s3-connect-file-managers-winscp]}

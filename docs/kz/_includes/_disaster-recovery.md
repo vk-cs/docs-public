@@ -11,7 +11,7 @@
 
 {includetag(dr_onboarding_2)}
 1. Қалпына келтірілген инфрақұрылым атынан жайылдырылатын аккаунт үшін екі факторлы аутентификацияны (2FA) [баптаңыз](/kz/access/iam/instructions/manage-2fa).
-1. Қалпына келтіру қолданылатын ВМ-ді [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create#create_vm). Жылдам бастау шеңберінде Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-DR` ВМ-і пайдаланылады.
+1. Қалпына келтіру қолданылатын ВМ-ді [жасаңыз](/kz/computing/iaas/instructions/vm/vm-create#iaas-vm-create). Жылдам бастау шеңберінде Ubuntu 18.04 операциялық жүйесі бар `Ubuntu-DR` ВМ-і пайдаланылады.
 1. Хайстекс Акура — аварийное восстановление сервисін [қосыңыз](/kz/applications-and-services/marketplace/instructions/pr-instance-add).
 
    Орнатудың аяқталуын күтіңіз — поштаға логин мен құпиясөзі бар сілтеме келеді. Сервис https://dr.mcs-cloud.ru мекенжайында жайылдырылады (Хайстекс Акура жеке кабинеті).

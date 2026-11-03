@@ -81,7 +81,7 @@
 
 По умолчанию в проекте нет доступных квот на внешние IP-адреса и их нельзя увеличить через [техническую поддержку](/ru/contacts).
 
-Чтобы снять ограничение, обратитесь к менеджеру по почте [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru). После согласования деталей менеджер создаст запрос на увеличение квоты внешних IP-адресов. В дальнейшем вы сможете {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[увеличивать]} квоты самостоятельно.
+Чтобы снять ограничение, обратитесь к менеджеру по почте [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru). После согласования деталей менеджер создаст запрос на увеличение квоты внешних IP-адресов. В дальнейшем вы сможете {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=увеличивать]} квоты самостоятельно.
 
 {/cut}
 

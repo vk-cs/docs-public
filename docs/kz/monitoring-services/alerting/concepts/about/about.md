@@ -10,7 +10,7 @@ Cloud Alerting оқиғаның орын алуын _триггерлер_ кө�
 
 Триггердің іске қосылуын {linkto(../../instructions/triggers#alerting-triggers)[text=баптауға]} келесі дереккөздер бойынша болады:
 
-- {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]} сервисінің метрика мәндері бойынша. Метрикалар нақты бір ресурстан (мысалы, ВМ немесе БД) жиналады. Метрика мәндерін PromQL тілінде бақылау {linkto(../../../../tools-for-using-services/api/api-spec/monitoring2-api#api-spec-monitoring2)[text=API]}-іне сұрау арқылы алуға болады.
+- {linkto(../../../monitoring/concepts/architecture#monitoring-architecture)[text=Cloud Monitoring]} сервисінің метрика мәндері бойынша. Метрикалар нақты бір ресурстан (мысалы, ВМ немесе БД) жиналады. Метрика мәндерін PromQL тілінде бақылау {linkto({@root}/tools-for-using-services/api/api-spec/monitoring-api#api-spec-monitoring2)[text=API]}-іне сұрау арқылы алуға болады.
 - {linkto(../../../logging/concepts/about#logging-about)[text=Cloud Logging]} сервисінің жазбалары бойынша. Жазбалар {var(cloud)} ішіндегі нақты бір сервис аясындағы ресурстардан жиналады және триггер үшін дереккөз ретінде осы сервис қызмет етеді. Триггер шарты {linkto(../../../logging/concepts/search-tools#logging-search-tools)[text=іздеу сұраулары тілінде]} беріледі.
 - {linkto(../../../event-log/concepts/about#event-log-about)[text=Cloud Audit]} сервисінің оқиғалары бойынша. Оқиғалар {var(cloud)} сервисінің `Басқару қабаты` немесе `Деректер қабаты` деңгейінен жиналады. Триггер шарты {linkto(../../../logging/concepts/search-tools#logging-search-tools)[text=іздеу сұраулары тілінде]} беріледі.
 

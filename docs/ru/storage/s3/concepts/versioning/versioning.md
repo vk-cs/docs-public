@@ -70,7 +70,7 @@
 - Указан идентификатор версии и не включена {linkto(../objects-lock#s3-concepts-object-lock)[text=блокировка объектов]} (object lock): будет удалена версия объекта или маркер удаления с указанным идентификатором. Если это единственная версия, ее удаление приведет к безвозвратному удалению объекта из бакета.
 - Указан идентификатор версии и включена {linkto(../objects-lock#s3-concepts-object-lock)[text=блокировка объектов]} (object lock): удаление недоступно до истечения срока {linkto(../objects-lock#s3-concepts-object-lock-retention-period)[text=временной блокировки]} или снятия {linkto(../objects-lock#s3-concepts-object-lock-legal-hold)[text=бессрочной блокировки]}.
 
-  Пользователи с {linkto(../s3-acl#s3-concepts-acl-permissions)[text=правами на запись]} (`WRITE`) могут {linkto(../../instructions/objects/object-lock#s3-instructions-object-lock-bypass-governance-retention)[text=обойти]} временную блокировку в {linkto(../objects-lock#s3-concepts-object-lock-governance)[text=управляемом режиме]} (`GOVERNANCE`).
+  Пользователи с {linkto(../access/s3-acl#s3-concepts-acl-permissions)[text=правами на запись]} (`WRITE`) могут {linkto(../../instructions/objects/object-lock#s3-instructions-object-lock-bypass-governance-retention)[text=обойти]} временную блокировку в {linkto(../objects-lock#s3-concepts-object-lock-governance)[text=управляемом режиме]} (`GOVERNANCE`).
 
 Версионирование приостановлено:
 

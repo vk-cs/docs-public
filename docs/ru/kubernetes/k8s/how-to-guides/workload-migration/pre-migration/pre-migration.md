@@ -1,6 +1,6 @@
 # {heading(Перенос рабочей нагрузки до миграции ресурсов)[id=k8s-pre-migration]}
 
-Это руководство поможет вам заранее подготовиться к {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=миграции]} ресурсов кластера между {linkto(/ru/start/concepts/architecture#architecture-az)[text=зонами доступности]}, которую проведут сотрудники {var(cloud)}. Вы выполните следующие шаги:
+Это руководство поможет вам заранее подготовиться к {linkto({@root}/kubernetes/k8s/concepts/az-migration#k8s-az-migration)[text=миграции]} ресурсов кластера между {linkto(/ru/start/concepts/architecture#architecture-az)[text=зонами доступности]}, которую проведут сотрудники {var(cloud)}. Вы выполните следующие шаги:
 
 1. Определите, зависит ли ваша рабочая нагрузка (workload) от текущей зоны доступности.
 1. Создадите новую группу worker-узлов в зоне доступности, куда будет происходить миграция, и перенесете туда свою рабочую нагрузку.
@@ -19,7 +19,7 @@
 
 Определите, повлияет ли миграция на рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)) ваших кластеров. Для этого узнайте, указана ли зона доступности:
 
-{include(/ru/_includes/_az-migration-magnum.md)[tags=check]}
+{include(/ru/_includes/_az-migration-magnum.md)[tags=check,check-k8s]}
 
 ## {heading({counter(az)}. Перенесите рабочую нагрузку на новые группы узлов)[id=k8s-workload-migration-new-node-groups]}
 
@@ -56,7 +56,7 @@
 
 ## {heading({counter(az)}. Завершите миграцию ресурсов)[id=k8s-pre-migration-finish]}
 
-1. Дождитесь окончания {linkto(/ru/kubernetes/k8s/concepts/az-migration-magnum#k8s-az-migration)[text=работ по миграции]} ресурсов со стороны {var(cloud)}.
+1. Дождитесь окончания {linkto({@root}/kubernetes/k8s/concepts/az-migration#k8s-az-migration)[text=работ по миграции]} ресурсов со стороны {var(cloud)}.
 1. Запустите рабочую нагрузку и убедитесь, что после миграции она работает корректно.
 
 ## {heading({counter(az)}. Обновите Helm-чарты и настройки аддонов)[id=k8s-pre-migration-helm-addons]}

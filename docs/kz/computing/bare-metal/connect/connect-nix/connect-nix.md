@@ -79,7 +79,7 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
       Егер сізде осындай талаптарға сай келетін ВМ болмаса:
 
       1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын {linkto(../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-get-info)[text=біліңіз]}.
-      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
+      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
 
          - **Желі**: Bare Metal сервері қосылған сол желіні таңдаңыз.
          - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP-мекенжай]} қосылады.
@@ -157,7 +157,7 @@ SSH — Linux ОС бар серверге қосылудың ең кең тар
       Егер сізде осындай талаптарға сай келетін ВМ болмаса:
 
       1. Bare Metal серверіңіздің қай желіге қосылғанын және оның ішкі IP-мекенжайын {linkto(../../../../computing/bare-metal/instructions/manage-server#bare-metal-server-get-info)[text=біліңіз]}.
-      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
+      1. Келесі параметрлері бар жаңа ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]} немесе бұрыннан барын {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#vm-add-net)[text=қосыңыз]}:
 
          - **Желі**: Bare Metal сервері қосылған сол желіні таңдаңыз.
          - **Сыртқы IP-мекенжайды тағайындау**: осы опцияны қосыңыз. ВМ-ге {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP-мекенжай]} қосылады.
