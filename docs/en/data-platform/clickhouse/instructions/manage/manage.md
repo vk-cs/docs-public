@@ -190,7 +190,7 @@ Only accounts assigned the `Standard user`, `Observer`, and `Security auditor` r
 1. Edit the required settings:
     1. Click the **Edit** button.
     1. Change the values of the required parameters in the table.
-    1. If you need to revert to the default value, click **•••** for the required parameter and select **Reset**.
+    1. If you need to revert to the default value, click ![icon](../../../assets/more-icon.svg "inline") for the required parameter and select **Reset**.
     1. Click the **Save changes** button.
 
 {/tab}
@@ -365,7 +365,7 @@ Restoring from a backup will overwrite all data in the instance. All changes mad
 {include(../../../_includes/_clickhouse.md)[tags=open]}
 
 1. On the instance page, go to the backups tab.
-1. Click **•••** for the required backup and select **Restore**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the required backup and select **Restore**.
 1. (Optional) Change the instance parameter values. The parameters are described in the {linkto(../create#clickhouse_create)[text=creating an instance]} section.
 1. Click the **Create** button.
 

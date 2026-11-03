@@ -59,7 +59,7 @@
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon for the required instance and select **Edit**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance and select **Edit**.
 1. Edit the instance name and description.
 1. Click **Save changes**.
 
@@ -90,7 +90,7 @@
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon for the required instance and select **Vertical scaling**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance and select **Vertical scaling**.
 1. Change the cluster parameters.
 1. Click **Save changes**.
 
@@ -106,7 +106,7 @@
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon for the required instance and select **Horizontal scaling**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance and select **Horizontal scaling**.
 1. Specify the number of nodes.
 1. Click **Save changes**.
 
@@ -121,7 +121,7 @@
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon for the required instance and select **Increase disks**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance and select **Increase disks**.
 1. Increase the disk size.
 1. Click **Save changes**.
 
@@ -155,7 +155,7 @@
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon for the required instance and select **Delete**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. Instance deletion may take a long time.
 
 {/includetag}
@@ -171,7 +171,7 @@
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. On the instance page, go to the **Credentials** tab.
-1. Click **•••** for the required account and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the required account and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete.
 
 {/includetag}
@@ -188,11 +188,11 @@
 1. Click on the name of the required instance.
 1. On the instance page, go to the **Settings** tab.
 1. Find the required parameter in the instance settings table; use the search bar if needed.
-1. View the settings change history by clicking **•••**.
+1. View the settings change history by clicking ![icon](../../../assets/more-icon.svg "inline").
 1. Edit the required settings:
     1. Click **Edit**.
     1. Change the values of the required parameters in the table.
-    1. To reset a parameter to its default value, click **•••** for the required parameter and select **Reset**.
+    1. To reset a parameter to its default value, click ![icon](../../../assets/more-icon.svg "inline") for the required parameter and select **Reset**.
     1. Click **Save changes**.
     
 {/includetag}
@@ -214,8 +214,8 @@
 
 1. Make changes to the instance parameters:
 
-    - To change a value, click **•••** for the required parameter and select **Edit**.
-    - To reset a value to its default, click **•••** for the required parameter and select **Reset**.
+    - To change a value, click ![icon](../../../assets/more-icon.svg "inline") for the required parameter and select **Edit**.
+    - To reset a value to its default, click ![icon](../../../assets/more-icon.svg "inline") for the required parameter and select **Reset**.
 
    Parameter values that differ from the default are marked with the `Mod.` label.
 
@@ -271,7 +271,7 @@ The full list of all service instance backups is available in **Data Platform** 
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. Go to the **Backup list** tab.
-1. To the right of the backup name, click the **•••** icon and select **Restore**.
+1. To the right of the backup name, click the ![icon](../../../assets/more-icon.svg "inline") icon and select **Restore**.
 
 {/includetag}
 
@@ -316,7 +316,7 @@ The full list of all service instance backups is available in **Data Platform** 
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon to the right of the instance name and select **Change credentials**
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon to the right of the instance name and select **Change credentials**
 1. Specify the new credentials.
 1. Click **Save**.
 
@@ -331,7 +331,7 @@ The full list of all service instance backups is available in **Data Platform** 
 {/ifdef}
 
 1. Go to **Data Platform** → **Service instances**.
-1. Click the **•••** icon to the right of the instance name and select **Change password**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon to the right of the instance name and select **Change password**.
 1. Specify a new password or generate one by clicking **Generate**. Password requirements:
 
     - At least 8 characters.
@@ -360,13 +360,13 @@ The full list of all service instance backups is available in **Data Platform** 
 
     - From the service instance list:
 
-        1. In the service instance list, click the **•••** icon for the required instance.
+        1. In the service instance list, click the ![icon](../../../assets/more-icon.svg "inline") icon for the required instance.
         1. Select **Increase disks**.
 
     - From the instance page:
 
         1. In the service instance list, click on the name of the required instance.
-        1. On the **General information** tab, click the **•••** icon.
+        1. On the **General information** tab, click the ![icon](../../../assets/more-icon.svg "inline") icon.
         1. Select **Increase disks**.
 
 1. Specify the new disk size.
@@ -417,7 +417,7 @@ The full list of all service instance backups is available in **Data Platform** 
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. Go to the **Credentials** tab.
-1. Click **•••** for the required account and select:
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the required account and select:
 
     - **Block** — to restrict account access without deleting it;
     - **Unblock** — to remove previously set restrictions.
@@ -432,7 +432,7 @@ The full list of all service instance backups is available in **Data Platform** 
 
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the instance name.
-1. On the **General information** tab, click the **•••** icon and select **Assign External IP**.
+1. On the **General information** tab, click the ![icon](../../../assets/more-icon.svg "inline") icon and select **Assign External IP**.
 1. Select an IP address or add a new one.
 1. Click **Confirm**.
 
@@ -490,7 +490,7 @@ The full list of all service instance backups is available in **Data Platform** 
 1. Go to **Data Platform** → **Service instances**.
 1. Click on the name of the required instance.
 1. On the **General information** tab, find the certificate block.
-1. Click **•••** and select the required operation:
+1. Click ![icon](../../../assets/more-icon.svg "inline") and select the required operation:
 
    - **Download** — to download the certificate issued by {var(data-p)}.
    - **Edit** — to replace the certificate. In the opened window, select a certificate from the list.

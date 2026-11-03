@@ -26,7 +26,7 @@
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
 1. Go to the section **Data Platform → Service instances**.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired instance and select **Edit**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired instance and select **Edit**.
 1. In the window that opens, specify a new instance name.
 1. Click **Save Changes**.
 
@@ -151,7 +151,7 @@ Only for {var(data-p)} as part of {var(cloud)}.
 {include(/en/_includes/_trino.md)[tags=open]}
 
 1. On the instance page, click the **Credentials** tab.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired account and select **Edit**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired account and select **Edit**.
 1. In the window that opens, specify a new user password.
 
    {include(/en/_includes/_trino.md)[tags=password]}
@@ -248,7 +248,7 @@ Only for {var(data-p)} as part of {var(cloud)}.
 {include(/en/_includes/_trino.md)[tags=open]}
 
 1. On the instance page, click the **Connections** tab.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired account and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired account and select **Delete**.
 1. Confirm the deletion.
 
 {/tab}
@@ -305,7 +305,7 @@ This is a group operation: if necessary, you can delete multiple instances of th
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. Go to the section **Data Platform**Data Platform → Service instances**.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired instance and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. Deletion may take a long time.
 
 {/tab}

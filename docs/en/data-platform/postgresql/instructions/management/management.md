@@ -163,7 +163,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 1. Go to the **Data Platform** → **Service instances** section.
 1. Click the name of the desired instance.
 1. Go to the **Credentials** tab.
-1. Click the **•••** icon to the right of the user account and select **Edit network access**.
+1. Click the ![icon](../../../assets/more-icon.svg "inline") icon to the right of the user account and select **Edit network access**.
 1. Select new connection permissions for the account.
 
    {note:info}

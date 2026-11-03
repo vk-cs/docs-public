@@ -92,8 +92,8 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 1. Go to the **Data Platform → Service instances** section.
 1. Open the scaling settings in one of the following ways:
 
-   - Click **•••** for the desired instance and select **Horizontal scaling**.
-   - Click the name of the desired instance, on the **General information** tab click **•••** and select **Horizontal scaling**.
+   - Click ![icon](../../../assets/more-icon.svg "inline") for the desired instance and select **Horizontal scaling**.
+   - Click the name of the desired instance, on the **General information** tab click ![icon](../../../assets/more-icon.svg "inline") and select **Horizontal scaling**.
    - Click the name of the desired instance, go to the **Component status** tab and click the **Horizontal scaling** button.
    
 1. Change the cluster parameters.
@@ -154,7 +154,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 {include(../../../_includes/_iceberg.md)[tags=open]}
 
 1. Go to the **Credentials** tab.
-1. Click **•••** for the desired account and select **Edit network access**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired account and select **Edit network access**.
 1. In the window that opens, set the parameter values:
 
    - **Allow connection**: select the resources to connect to:
@@ -189,7 +189,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 
    1. Service extensions. They cannot be disabled. For some extensions, you can edit the parameters:
    
-      1. Click **•••** for the desired extension and select **Edit**.
+      1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired extension and select **Edit**.
       1. In the window that opens, change the extension parameters.
       1. Click **Save**.
       
@@ -219,7 +219,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 
    1. Click the **Edit** button.
    1. Change the values of the desired parameters in the table.
-   1. If you need to return to the default value, click **•••** for the desired parameter and select **Reset**.
+   1. If you need to return to the default value, click ![icon](../../../assets/more-icon.svg "inline") for the desired parameter and select **Reset**.
    1. Click the **Save changes** button.
 
 {/tab}
@@ -283,7 +283,7 @@ Only for Standalone and Standalone as part of {var(cloud)}.
 {include(../../../_includes/_iceberg.md)[tags=open]}
 
 1. On the instance page, go to the tab with backups.
-1. Click **•••** for the desired backup and select **Restore**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") for the desired backup and select **Restore**.
 1. (Optional) Change the instance parameter values. The parameters are described in the section on {linkto(../create#iceberg_create)[text=creating an instance]}.
 
 1. Click the **Create** button.

@@ -170,7 +170,7 @@ Rules are applied in order from top to bottom. Place general rules higher, and m
 {include(../../../_includes/_trino.md)[tags=open]}
 
 1. Go to the **Accesses** tab.
-1. Click **•••** to the right of the rule and select **Edit**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") to the right of the rule and select **Edit**.
 1. Edit the rule and click the **Save** button.
 
 {/tab}
@@ -186,7 +186,7 @@ Rules are applied in order from top to bottom. Place general rules higher, and m
 {include(../../../_includes/_trino.md)[tags=open]}
 
 1. Go to the **Accesses** tab.
-1. Click **•••** to the right of the rule and select **Delete**.
+1. Click ![icon](../../../assets/more-icon.svg "inline") to the right of the rule and select **Delete**.
 1. Confirm the rule deletion.
 
 {/tab}
