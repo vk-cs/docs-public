@@ -15,10 +15,10 @@ components:
       startup:
         path: docs/api/healthz
         port: 3000
-        initialDelaySeconds: 30
-        periodSeconds: 30
+        initialDelaySeconds: 10
+        periodSeconds: 5
         timeoutSeconds: 5
-        failureThreshold: 60
+        failureThreshold: 360  # 360 x 5s = 30 min, same budget as before
       liveness:
         path: docs/api/healthz
         port: 3000
@@ -31,7 +31,7 @@ components:
         path: docs/api/healthz
         port: 3000
         initialDelaySeconds: 20
-        periodSeconds: 15
+        periodSeconds: 5
         timeoutSeconds: 5
         failureThreshold: 3
         successThreshold: 1
