@@ -8,9 +8,7 @@
   "uuid": "f7db88a7-74d8-40d2-8635-eecceba436f6",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
   }
 }
