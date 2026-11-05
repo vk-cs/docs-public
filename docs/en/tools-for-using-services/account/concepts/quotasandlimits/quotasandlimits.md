@@ -117,7 +117,7 @@ No more than 1000 virtual machines can be displayed in the management console.
 |Limit
 |Hard
 
-|Number of vCPUs per instance 
+|Number of vCPUs per instance
 |32 pcs.
 |![](../../../../assets/no.svg "inline")
 
@@ -187,7 +187,7 @@ The GPU limit for a single instance is a limitation of KVM technology, which doe
 | 200 GB
 | not limited
 
-|=== 
+|===
 
 #### Limits without quotas
 
@@ -254,42 +254,48 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 
 #### Disk capacity
 
-[cols="3,2,2,1,1", options="header"]
+[cols="3,2,2,1,1,1", options="header"]
 |===
 | Parameter
 | Quota in management console
 | Quota in CLI
 | Basic quota
+| Increased quota
 | Limit
 
 | The total volume of disks in the project
 | **Disk size**
 | `gigabytes`
-| 600 GB
+| 400 GB
+| 1024 GB
 | not limited
 
 | Total volume of High-IOPS SSD disks
 | **High-IOPS SSD size**
 | `gigabytes_high-iops`
-| 600 GB
+| 400 GB
+| 1024 GB
 | not limited
 
 | Total volume of High-IOPS HA SSD disks
 | **High-IOPS HA SSD size**
 | `gigabytes_high-iops-ha`
-| 600 GB
+| 400 GB
+| 1024 GB
 | not limited
 
 | Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#architecture-az) GZ1 (legacy)
 | **High-IOPS SSD size in the (DP1) area**
 | `gigabytes_dp1-high-iops`
-| 200 GB
+| 400 GB
+| 1024 GB
 | not limited
 
 | Total volume of High-IOPS SSD disks in [availability zone](/en/intro/start/concepts/architecture#architecture-az) MS1 (legacy)
 | **High-IOPS SSD size in the Moscow (MS1) (MS1) area**
 | `gigabytes_ko1-high-iops`
-| 200 GB
+| 400 GB
+| 1024 GB
 | not limited
 |===
 

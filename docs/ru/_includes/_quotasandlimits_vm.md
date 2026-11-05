@@ -44,7 +44,7 @@
 | 0 шт.
 | 0 шт.
 | ![](../../../../assets/no.svg "inline")
-| ![](../../../../assets/no.svg "inline") 
+| ![](../../../../assets/no.svg "inline")
 |===
 
 Лимит на количество инстансов в проекте можно превысить, если {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=увеличить]} соответствующую квоту.
@@ -75,7 +75,7 @@
 (8 шт. для [Tesla H200](/ru/computing/gpu/concepts/about#gpu-about-flavors))
 | ![](../../../../assets/check.svg "inline")
 
-| Объем RAM у одного инстанса   
+| Объем RAM у одного инстанса
 | 1024 ГБ
 | ![](../../../../assets/no.svg "inline")
 |===
@@ -101,35 +101,35 @@
 | **Размер дисков**
 | `gigabytes`
 | 400 ГБ
-| 1000 ГБ
+| 1024 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD
 | **Размер High-IOPS SSD**
 | `gigabytes_high-iops`
 | 400 ГБ
-| 1000 ГБ
+| 1024 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS HA SSD
 | **Размер High-IOPS HA SSD**
 | `gigabytes_high-iops-ha`
 | 400 ГБ
-| 1000 ГБ
+| 1024 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD в {linkto(/ru/start/concepts/architecture#architecture-az)[text=зоне доступности]} GZ1 (legacy)
 | **Размер High-IOPS SSD в зоне - (DP1)**
 | `gigabytes_dp1-high-iops`
 | 400 ГБ
-| 1000 ГБ
+| 1024 ГБ
 | не ограничено
 
 | Общий объем дисков High-IOPS SSD в {linkto(/ru/start/concepts/architecture#architecture-az)[text=зоне доступности]} MS1 (legacy)
 | **Размер High-IOPS SSD в зоне Москва (MS1)**
 | `gigabytes_ko1-high-iops`
 | 400 ГБ
-| 1000 ГБ
+| 1024 ГБ
 | не ограничено
 |===
 
