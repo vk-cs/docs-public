@@ -1,0 +1,15 @@
+{
+  "title": "Kafka-ға қосылу",
+  "shortDescription": "Kafka CLI және kcat, Kafka Bridge және клиенттік кітапханалар",
+  "metaDescription": "VK Data Platform ішіндегі Cloud Kafka-ға Kafka CLI және kcat, Kafka Bridge арқылы және әртүрлі бағдарламалау тілдеріндегі қолданба кодынан қосылу",
+  "sectionTitle": "Kafka-ға қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

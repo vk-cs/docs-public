@@ -1,0 +1,15 @@
+{
+  "title": "Kafka CLI и kcat",
+  "shortDescription": "Настройка утилит и проверка подключения с TLS или без TLS",
+  "metaDescription": "Подключение к Cloud Kafka в {var(data-p)} через Kafka CLI и kcat: подготовка параметров, настройка TLS или подключения без TLS и проверка доступа",
+  "sectionTitle": "Kafka CLI и kcat",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 1,
+  "uuid": "cc01b276-76c2-49c0-9600-01ce6edbab6c"
+}

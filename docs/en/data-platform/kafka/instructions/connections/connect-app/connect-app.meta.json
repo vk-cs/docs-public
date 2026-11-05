@@ -1,0 +1,15 @@
+{
+  "title": "Application code",
+  "shortDescription": "Configure client libraries and check broker access",
+  "metaDescription": "Connect to Cloud Kafka on {var(data-p)} from application code: Java, Scala, Python, Go, C / C++, .NET, and Node.js examples with and without TLS",
+  "sectionTitle": "Application code",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 3,
+  "uuid": ""
+}

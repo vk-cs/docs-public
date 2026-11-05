@@ -1,0 +1,15 @@
+{
+  "title": "Подключение к Kafka",
+  "shortDescription": "Kafka CLI и kcat, Kafka Bridge и клиентские библиотеки",
+  "metaDescription": "Подключение к Cloud Kafka в VK Data Platform с помощью Kafka CLI и kcat, через Kafka Bridge и из кода приложения на разных языках программирования",
+  "sectionTitle": "Подключение к Kafka",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

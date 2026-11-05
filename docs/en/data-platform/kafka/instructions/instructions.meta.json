@@ -1,7 +1,7 @@
 {
   "title": "Step-by-step instructions",
-  "shortDescription": "Creating an instance of the service and managing its components",
-  "metaDescription": "Cloud Kafka in VK Cloud: creating an instance of the service, managing the instance and its components",
+  "shortDescription": "Creating a service instance, connecting, and managing components",
+  "metaDescription": "Step-by-step instructions for Cloud Kafka in VK Data Platform: create an instance, connect from application code or through Kafka Bridge, and manage components",
   "sectionTitle": "Step-by-step instructions",
   "icon": "",
   "weight": 3,

@@ -1,0 +1,15 @@
+{
+  "title": "Connect to Kafka",
+  "shortDescription": "Kafka CLI and kcat, Kafka Bridge, and client libraries",
+  "metaDescription": "Connect to Cloud Kafka on VK Data Platform using Kafka CLI and kcat, through Kafka Bridge, or from application code in different programming languages",
+  "sectionTitle": "Connect to Kafka",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Kafka CLI and kcat",
+  "shortDescription": "Configure the tools and check the connection with or without TLS",
+  "metaDescription": "Connect to Cloud Kafka on VK Data Platform through Kafka CLI and kcat: prepare connection parameters, configure TLS or a connection without TLS, and check access",
+  "sectionTitle": "Kafka CLI and kcat",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 1,
+  "uuid": "cc01b276-76c2-49c0-9600-01ce6edbab6c"
+}
