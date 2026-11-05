@@ -88,7 +88,7 @@
 |`instances`
 | 15 дана
 | 1000 дана
-| ![](/kz/assets/no.svg "inline") 
+| ![](/kz/assets/no.svg "inline")
 
 | Жобадағы vCPU саны
 | **vCPU**
@@ -196,7 +196,7 @@
 
 #### {heading(Квотасыз лимиттер)[id=quotasandlimits-k8s-no-quotas-limits]}
 
-Жоғарыда көрсетілген квоталардан бөлек, Managed Containers сервисін пайдалану да белгілі бір техникалық лимиттермен шектеледі. 
+Жоғарыда көрсетілген квоталардан бөлек, Managed Containers сервисін пайдалану да белгілі бір техникалық лимиттермен шектеледі.
 
 [cols="3,1,1", options="header"]
 |===
@@ -258,42 +258,48 @@
 
 #### {heading(Дисктер көлемі)[id=quotasandlimits-images-volumes-size]}
 
-[cols="3,2,2,1,1", options="header"]
+[cols="3,2,2,1,1,1", options="header"]
 |===
 | Параметр
 | Жеке кабинеттегі квота
 | CLI-дегі квота
 | Базалық квота
+| Ұлғайтылған квота
 | Лимит
 
 | Жобадағы дисктердің жалпы көлемі
 | **Дисктер өлшемі**
 | `gigabytes`
-| 600 ГБ
+| 400 ГБ
+| 1024 ГБ
 | шектелмеген
 
 | High-IOPS SSD дисктерінің жалпы көлемі
 | **High-IOPS SSD өлшемі**
 | `gigabytes_high-iops`
-| 600 ГБ
+| 400 ГБ
+| 1024 ГБ
 | шектелмеген
 
 | High-IOPS HA SSD дисктерінің жалпы көлемі
 | **High-IOPS HA SSD өлшемі**
 | `gigabytes_high-iops-ha`
-| 600 ГБ
+| 400 ГБ
+| 1024 ГБ
 | шектелмеген
 
 | [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) GZ1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
 | **Аймақтағы High-IOPS SSD өлшемі - (DP1)**
 | `gigabytes_dp1-high-iops`
-| 200 ГБ
+| 400 ГБ
+| 1024 ГБ
 | шектелмеген
 
 | [қолжетімділік аймағындағы](/kz/start/concepts/architecture#architecture-az) MS1 (legacy) High-IOPS SSD дисктерінің жалпы көлемі
 | **Москва аймағындағы High-IOPS SSD өлшемі (MS1) (MS1)**
 | `gigabytes_ko1-high-iops`
-| 200 ГБ
+| 400 ГБ
+| 1024 ГБ
 | шектелмеген
 
 |===
