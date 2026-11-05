@@ -8,8 +8,6 @@ export const tableOfContents = [
     '/ru/computing/iaas/*',
     '/ru/computing/gpu',
     '/ru/computing/gpu/*',
-    '/ru/computing/cloud-desktops',
-    '/ru/computing/cloud-desktops/*',
     '/ru/networks/vnet',
     '/ru/networks/vnet/*',
     '/ru/networks/balancing',
