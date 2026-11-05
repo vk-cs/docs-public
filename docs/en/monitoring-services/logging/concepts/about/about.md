@@ -20,6 +20,8 @@ The service maintains an event log for:
 
 **Convenient search**. In Cloud Logging, you can search, view and analyze logs using text search with additional filters.
 
+**Visual representation.** The histogram in the personal account dashboard shows the types and number of event records over a specified period, making it possible to track spikes in errors or activity. The log list is configurable so you can choose the most convenient view for working with logs.
+
 **Flexible settings**. You can customize the service for your tasks using the API for reading and collecting logs. For example, you can set the storage time for logs, set up roles for working with logs.
 
 **Availability and reliability**. We will ensure the operability and fault tolerance of the service and guarantee its availability according to the SLA.

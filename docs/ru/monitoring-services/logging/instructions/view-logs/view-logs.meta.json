@@ -1,8 +1,8 @@
 {
-  "title": "Просмотр логов",
-  "shortDescription": "Как просмотреть логи",
-  "metaDescription": "Как выполнять базовые операции в сервисе Cloud Logging. Просмотр логов в личном кабинете VK Cloud, с помощью API или сервиса Grafana",
-  "sectionTitle": "Просмотр логов",
+  "title": "Работа с логами",
+  "shortDescription": "Как отфильтровать и просмотреть логи, создать триггер из лога",
+  "metaDescription": "Как работать с записями в сервисе Cloud Logging. Просмотр и фильтрация логов в личном кабинете VK Cloud, с помощью API или сервиса Grafana, создание триггера в Cloud Alerting из лога",
+  "sectionTitle": "Работа с логами",
   "icon": "",
   "weight": 4,
   "uuid": "411c861c-495c-4379-83f4-93939715c7c0",
