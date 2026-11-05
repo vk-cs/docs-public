@@ -1,8 +1,8 @@
 {
-  "title": "Viewing logs",
-  "shortDescription": "How to view logs",
-  "metaDescription": "",
-  "sectionTitle": "Viewing logs",
+  "title": "Working with logs",
+  "shortDescription": "How to filter and view logs, and create a trigger from a log",
+  "metaDescription": "How to work with records in the Cloud Logging service. Viewing and filtering logs in the VK Cloud management console, via the API, or using Grafana, and creating a trigger in Cloud Alerting from a log",
+  "sectionTitle": "Working with logs",
   "icon": "",
   "weight": 4,
   "uuid": "a5aad1eb-dd98-4aeb-9060-b92eda6fd99a",

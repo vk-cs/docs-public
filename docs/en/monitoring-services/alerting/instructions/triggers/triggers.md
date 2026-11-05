@@ -56,6 +56,10 @@ Logging
 1. (Optional) Click ![plus-icon](../../../../assets/plus-icon.svg "inline") **Add channel** to add another notification channel and specify its parameters.
 1. Click **Create trigger**.
 
+## {heading(Creating a trigger from logs)[id=alerting-triggers-events-add]}
+
+{include(../../../../_includes/_add-event-trigger.md)[tags=alerting]}
+
 ## {heading(Editing a trigger)[id=alerting-triggers-edit]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.

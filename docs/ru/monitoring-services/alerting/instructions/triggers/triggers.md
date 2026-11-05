@@ -58,6 +58,10 @@
 1. (Опционально) Нажмите ![plus-icon](../../../../assets/plus-icon.svg "inline") **Добавить канал**, чтобы добавить еще один канал уведомлений и укажите его параметры.
 1. Нажмите кнопку **Создать триггер**.
 
+## {heading(Создание триггера из логов)[id=alerting-triggers-events-add]}
+
+{include(../../../../_includes/_add-event-trigger.md)[tags=alerting]}
+
 ## {heading(Редактирование триггера)[id=alerting-triggers-edit]}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.

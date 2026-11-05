@@ -60,6 +60,10 @@
 1. (Қосымша) Тағы бір хабарландыру арнасын қосу үшін ![plus-icon](../../../../assets/plus-icon.svg "inline") **Арнаны қосу** түймесін басып, оның параметрлерін көрсетіңіз.
 1. **Триггерді жасау** түймесін басыңыз.
 
+## {heading(Логтардан триггер жасау)[id=alerting-triggers-events-add]}
+
+{include(../../../../_includes/_add-event-trigger.md)[tags=alerting]}
+
 ## {heading(Триггерді өңдеу)[id=alerting-triggers-edit]}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.

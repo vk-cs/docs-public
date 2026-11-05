@@ -1,17 +1,13 @@
 {
-  "title": "Логтарды қарау",
-  "shortDescription": "Логтарды қалай қарауға болады",
-  "metaDescription": "Cloud Logging сервисінде базалық операцияларды қалай орындауға болады. VK Cloud жеке кабинетінде, API арқылы немесе Grafana сервисі арқылы логтарды қарау",
-  "sectionTitle": "Логтарды қарау",
+  "title": "Логтармен жұмыс",
+  "shortDescription": "Логтарды қалай сүзуге және қарауға болады, логтан триггер жасау",
+  "metaDescription": "Cloud Logging сервисінде жазбалармен қалай жұмыс істеу керек. VK Cloud жеке кабинетінде, API арқылы немесе Grafana сервисі арқылы логтарды қарау және сүзу, логтан Cloud Alerting-те триггер жасау",
+  "sectionTitle": "Логтармен жұмыс",
   "icon": "",
   "weight": 4,
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf"
+      "public"
     ]
   },
   "uuid": "47671f1d-f594-420d-be9d-93f87d7de525"
