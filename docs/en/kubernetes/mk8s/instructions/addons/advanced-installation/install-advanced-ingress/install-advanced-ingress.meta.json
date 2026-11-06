@@ -4,7 +4,7 @@
   "metaDescription": "Configuring and installing the Ingress controller add-on",
   "sectionTitle": "Ingress NGINX",
   "icon": "",
-  "weight": 11,
+  "weight": 120,
   "build": {
     "for": [
       "public"

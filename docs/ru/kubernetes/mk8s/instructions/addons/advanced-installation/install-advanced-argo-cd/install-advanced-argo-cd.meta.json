@@ -4,7 +4,7 @@
   "metaDescription": "Установка аддона Argo CD в Managed Containers: пошаговая инструкция для VK Cloud, выделенных worker-узлов и быстрой установки",
   "sectionTitle": "Argo CD",
   "icon": "",
-  "weight": 1,
+  "weight": 10,
   "uuid": "276a01ea-f070-4013-aae0-0ee01ec51742",
   "build": {
     "for": [

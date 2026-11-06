@@ -147,6 +147,51 @@ The requirements of the individual add-on components:
 
 {/includetag}
 
+{includetag(cert-operator)}
+
+<!--cert-operator -->
+
+{tabs}
+
+{tab(Description)}
+
+The cert-operator add-on from VK Cloud lets you pull images from container registries that have self-signed certificates. The add-on makes the registry trusted automatically.
+
+The add-on works as follows:
+
+1. You create a `RegistryCertificate` object in the cluster. In the object, you specify the registry address in the `host[:port]` format and the CA certificate of the registry in PEM format.
+1. The add-on automatically synchronizes the CA certificate on the worker nodes of the cluster. The synchronization interval is set by the `reconcileInterval` parameter. By default, it is 30 seconds. You can [change it](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-cert-operator#mk8s-install-advanced-cert-operator-edit-code) in the add-on code.
+1. The object status shows the result for each node:
+
+   - `Synced` — the add-on applied the CA certificate.
+   - `Failed` — the add-on did not apply the CA certificate. The message shows the reason.
+
+Features of the add-on:
+
+- If you create several objects for one registry address, the add-on applies the first object in alphabetical order.
+- If the registry address in an object is not valid, the add-on does not apply this object.
+- If the certificate in an object is not valid, the add-on does not apply it. If the add-on applied a CA certificate for this registry before, this certificate does not change.
+- If you change the CA certificate in an object, the add-on replaces the old certificate on the nodes with the new one.
+- If you delete a `RegistryCertificate` object, the add-on removes the CA certificate from the nodes. The add-on does not apply this certificate anymore, and the registry is not trusted.
+- If you delete the add-on, the CA certificates that are already on the nodes stay there, but the synchronization of `RegistryCertificate` objects stops. To resume the synchronization, [install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-cert-operator#mk8s-install-advanced-cert-operator) the add-on again.
+
+The add-on works only with CA certificates and certificate chains. It does not use client certificates, private keys, or mutual TLS (mTLS) authentication.
+
+{/tab}
+
+{tab(System requirements)}
+
+The requirements are for one pod. The add-on runs one pod on each worker node of the cluster.
+
+- **CPU**: 10m — 200m
+- **RAM**: 64Mi — 256Mi
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
 {includetag(s3)}
 
 <!--Container Storage Interface (CSI) for S3 -->

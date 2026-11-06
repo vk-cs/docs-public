@@ -151,6 +151,15 @@
 |1.12.2/1.14.2
 |1.12.2/1.14.2
 
+|cert-operator
+|1.0.0
+|1.0.0
+|1.0.0
+|1.0.0
+|1.0.0
+|![](../../../../../assets/no.svg "inline")
+|![](../../../../../assets/no.svg "inline")
+
 |[Docker Registry](https://github.com/twuni/docker-registry.helm)
 |2.2.2
 |2.2.2

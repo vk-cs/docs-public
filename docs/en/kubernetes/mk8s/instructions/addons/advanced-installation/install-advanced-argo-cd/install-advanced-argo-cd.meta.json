@@ -4,7 +4,7 @@
   "metaDescription": "Installing the Argo CD add-on in Kubernetes: step-by-step instructions for VK Cloud, dedicated worker nodes and quick installation",
   "sectionTitle": "Argo CD",
   "icon": "",
-  "weight": 1,
+  "weight": 10,
   "build": {
     "for": [
       "public"

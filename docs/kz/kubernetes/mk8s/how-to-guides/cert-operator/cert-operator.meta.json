@@ -1,0 +1,14 @@
+{
+  "title": "cert-operator пайдалану",
+  "shortDescription": "Тізілімнің CA-сертификатын worker-түйіндерге тасымалдау үшін cert-operator қалай пайдалану керек",
+  "metaDescription": "Managed Containers ішінде cert-operator аддонын пайдалану: RegistryCertificate объектін жасау, тізілімнің CA-сертификатын worker-түйіндерге тасымалдау және мәртебені тексеру",
+  "sectionTitle": "cert-operator пайдалану",
+  "icon": "",
+  "weight": 15,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

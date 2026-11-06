@@ -149,6 +149,15 @@ You can separately [install](/en/kubernetes/mk8s/instructions/addons/manage-addo
 |1.12.2/1.14.2
 |1.12.2/1.14.2
 
+|cert-operator
+|1.0.0
+|1.0.0
+|1.0.0
+|1.0.0
+|1.0.0
+|![](/en/assets/no.svg "inline")
+|![](/en/assets/no.svg "inline")
+
 |[Docker Registry](https://github.com/twuni/docker-registry.helm)
 |2.2.2
 |2.2.2

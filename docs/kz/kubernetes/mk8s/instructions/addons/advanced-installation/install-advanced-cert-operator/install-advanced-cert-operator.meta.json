@@ -1,0 +1,14 @@
+{
+  "title": "Cert-operator",
+  "shortDescription": "",
+  "metaDescription": "Managed Containers ішінде cert-operator аддонын орнату және пайдалану: тізілімдердің CA-сертификаттарын worker-түйіндерге тасымалдау",
+  "sectionTitle": "Cert-operator",
+  "icon": "",
+  "weight": 30,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

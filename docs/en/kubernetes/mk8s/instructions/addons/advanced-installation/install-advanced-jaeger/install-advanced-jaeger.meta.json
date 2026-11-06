@@ -4,7 +4,7 @@
   "metaDescription": "Managed Containers service in VK Cloud: configuring and installing the Jaeger add-on.",
   "sectionTitle": "Jaeger",
   "icon": "",
-  "weight": 13,
+  "weight": 140,
   "build": {
     "for": [
       "public"
