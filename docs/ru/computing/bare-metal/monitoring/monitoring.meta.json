@@ -1,0 +1,14 @@
+{
+  "title": "Мониторинг",
+  "shortDescription": "Мониторинг серверов Bare Metal через Cloud Monitoring",
+  "metaDescription": "Мониторинг серверов Bare Metal на платформе VK Cloud: просмотр системных метрик CPU, памяти, дисков и сети в личном кабинете, готовые дашборды Cloud Monitoring, создание собственных графиков и проверка работы агента мониторинга telegraf.",
+  "sectionTitle": "Мониторинг",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
