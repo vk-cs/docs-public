@@ -50,6 +50,9 @@
 
 |Cloud Monitoring
 |`mcs/monitoring`
+
+|Bare Metal
+|`mcs/baremetal`
 |===
 {/ifdef}
 
