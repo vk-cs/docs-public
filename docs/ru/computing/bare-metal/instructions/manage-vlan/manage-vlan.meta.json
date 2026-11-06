@@ -5,7 +5,7 @@
   "sectionTitle": "Управление VLAN",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "2a07f6bd-31a3-47c3-85db-4e24bf519912",
   "build": {
     "for": [
       "public"

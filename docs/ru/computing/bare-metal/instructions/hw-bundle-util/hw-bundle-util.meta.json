@@ -5,7 +5,7 @@
   "sectionTitle": "Сбор диагностических данных утилитой hw-bundle-util",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "896d1c59-65e1-489d-b252-9563f287d6c5",
   "build": {
     "for": [
       "public"

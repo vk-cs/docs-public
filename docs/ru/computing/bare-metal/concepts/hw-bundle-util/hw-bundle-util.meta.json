@@ -5,7 +5,7 @@
   "sectionTitle": "Диагностическая утилита hw-bundle-util",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "dbfcd3e2-bff5-4c02-a82a-c9ee653d20b9",
   "build": {
     "for": [
       "public"

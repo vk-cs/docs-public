@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка сетевой конфигурации",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "1279ff1f-2343-4c9b-beb3-66229ff4b750",
   "build": {
     "for": [
       "public"

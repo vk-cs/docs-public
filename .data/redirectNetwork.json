@@ -34348,17 +34348,5 @@
     "destination": "/en/dbs/dbaas/how-to-guides",
     "permanent": false,
     "locale": false
-  },
-  {
-    "source": "/ru/data-platform/kafka/instructions/connect",
-    "destination": "/ru/data-platform/kafka/instructions/connections/connect",
-    "permanent": false,
-    "locale": false
-  },
-  {
-    "source": "/en/data-platform/kafka/instructions/connect",
-    "destination": "/en/data-platform/kafka/instructions/connections/connect",
-    "permanent": false,
-    "locale": false
   }
 ]
