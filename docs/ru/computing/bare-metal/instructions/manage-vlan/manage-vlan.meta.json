@@ -1,0 +1,14 @@
+{
+  "title": "Управление VLAN",
+  "shortDescription": "Как создать, изменить и удалить VLAN",
+  "metaDescription": "Пошаговая инструкция по управлению VLAN для серверов Bare Metal в личном кабинете VK Cloud: как создать VLAN типа Sprut или L2Only, изменить его наименование и описание, а также удалить VLAN.",
+  "sectionTitle": "Управление VLAN",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
