@@ -1,0 +1,14 @@
+{
+  "title": "Networks in Bare Metal",
+  "shortDescription": "How the Bare Metal server network works: network interfaces, aggregated interfaces (LAG), VLANs, and their types",
+  "metaDescription": "Learn how the network configuration of Bare Metal servers in VK Cloud works: network interfaces and link aggregation (LAG), VLANs and the 802.1Q standard, Sprut and L2Only VLAN types, addressing, and internet access.",
+  "sectionTitle": "Networks in Bare Metal",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

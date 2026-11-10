@@ -1,0 +1,14 @@
+{
+  "title": "Сети в Bare Metal",
+  "shortDescription": "Как устроена сеть серверов Bare Metal: сетевые интерфейсы, агрегированные интерфейсы (LAG), VLAN и их типы",
+  "metaDescription": "Как устроена сетевая конфигурация серверов Bare Metal в VK Cloud: сетевые интерфейсы и агрегирование каналов (LAG), VLAN и стандарт 802.1Q, типы VLAN Sprut и L2Only, адресация и доступ в интернет.",
+  "sectionTitle": "Сети в Bare Metal",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Configuring the network",
+  "shortDescription": "How to assign a VLAN to a server network interface and combine interfaces into a LAG interface",
+  "metaDescription": "Step-by-step instructions for configuring the network of a Bare Metal server in the VK Cloud management console: how to assign a VLAN to a network interface or LAG interface and how to combine server network interfaces into an aggregated interface (LAG).",
+  "sectionTitle": "Configuring the network",
+  "icon": "",
+  "weight": 6,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
