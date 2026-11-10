@@ -1,0 +1,14 @@
+{
+  "title": "Monitoring",
+  "shortDescription": "Monitoring Bare Metal servers with Cloud Monitoring",
+  "metaDescription": "Monitoring Bare Metal servers on the VK Cloud platform: view CPU, memory, disk, and network system metrics in the management console, use ready-made Cloud Monitoring dashboards, create custom charts, and check the telegraf monitoring agent.",
+  "sectionTitle": "Monitoring",
+  "icon": "",
+  "weight": 7,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

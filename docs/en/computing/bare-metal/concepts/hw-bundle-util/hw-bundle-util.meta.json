@@ -1,0 +1,14 @@
+{
+  "title": "hw-bundle-util diagnostic utility",
+  "shortDescription": "What the hw-bundle-util utility collects and how confidential data is processed",
+  "metaDescription": "Bare Metal server diagnostics in VK Cloud: learn what the hw-bundle-util utility collects, including data on hardware, storage devices, memory, network, and the kernel log, which system tools it uses, and how confidential data is processed before the report is created.",
+  "sectionTitle": "hw-bundle-util diagnostic utility",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

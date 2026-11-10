@@ -1,0 +1,14 @@
+{
+  "title": "Collecting diagnostic data with hw-bundle-util",
+  "shortDescription": "How to download the hw-bundle-util utility, use it to collect diagnostic data from a server, and check the result",
+  "metaDescription": "Step-by-step instruction for collecting diagnostic data from a Bare Metal server in VK Cloud: learn how to download the hw-bundle-util utility, run data collection, check the return code, and verify the resulting report archive.",
+  "sectionTitle": "Collecting diagnostic data with hw-bundle-util",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

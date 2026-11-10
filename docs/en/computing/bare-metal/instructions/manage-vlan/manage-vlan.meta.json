@@ -1,0 +1,14 @@
+{
+  "title": "VLAN management",
+  "shortDescription": "How to create, edit, and delete a VLAN",
+  "metaDescription": "Step-by-step instructions for managing VLANs for Bare Metal servers in the VK Cloud management console: how to create a Sprut or L2Only VLAN, change its name and description, and delete a VLAN.",
+  "sectionTitle": "VLAN management",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

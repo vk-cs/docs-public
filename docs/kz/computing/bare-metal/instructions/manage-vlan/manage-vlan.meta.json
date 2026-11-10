@@ -1,0 +1,14 @@
+{
+  "title": "VLAN басқару",
+  "shortDescription": "VLAN қалай жасауға, өзгертуге және жоюға болады",
+  "metaDescription": "VK Cloud жеке кабинетінде Bare Metal серверлеріне арналған VLAN-ды басқару бойынша қадамдық нұсқаулық: Sprut немесе L2Only түріндегі VLAN жасау, оның атауы мен сипаттамасын өзгерту, сондай-ақ VLAN жою.",
+  "sectionTitle": "VLAN басқару",
+  "icon": "",
+  "weight": 5,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
