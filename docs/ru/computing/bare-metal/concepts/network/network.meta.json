@@ -5,7 +5,7 @@
   "sectionTitle": "Сети в Bare Metal",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "506169ed-d037-44d9-a85a-8282d846fccc",
   "build": {
     "for": [
       "public"

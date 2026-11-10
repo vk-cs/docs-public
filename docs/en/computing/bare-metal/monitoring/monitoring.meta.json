@@ -5,7 +5,7 @@
   "sectionTitle": "Monitoring",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "1e452882-b214-4470-8e2e-77ca3b0c6757",
   "build": {
     "for": [
       "public"

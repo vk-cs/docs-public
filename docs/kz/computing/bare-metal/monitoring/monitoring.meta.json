@@ -5,7 +5,7 @@
   "sectionTitle": "Мониторинг",
   "icon": "",
   "weight": 7,
-  "uuid": "",
+  "uuid": "31c04f6e-88cc-4e10-b0cc-316e924609a2",
   "build": {
     "for": [
       "public"

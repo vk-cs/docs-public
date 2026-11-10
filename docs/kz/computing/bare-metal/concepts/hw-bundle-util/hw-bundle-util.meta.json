@@ -5,7 +5,7 @@
   "sectionTitle": "hw-bundle-util диагностикалық утилитасы",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "57c140c4-ab7d-4bba-b43c-b2aeda275632",
   "build": {
     "for": [
       "public"

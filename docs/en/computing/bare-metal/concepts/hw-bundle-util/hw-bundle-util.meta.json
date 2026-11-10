@@ -5,7 +5,7 @@
   "sectionTitle": "hw-bundle-util diagnostic utility",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "c97b290b-daf2-424f-b11d-dc22f1fc290a",
   "build": {
     "for": [
       "public"

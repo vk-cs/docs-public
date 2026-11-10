@@ -5,7 +5,7 @@
   "sectionTitle": "Configuring the network",
   "icon": "",
   "weight": 6,
-  "uuid": "",
+  "uuid": "954bd632-60c2-4fe9-bb13-a6512e72c70c",
   "build": {
     "for": [
       "public"

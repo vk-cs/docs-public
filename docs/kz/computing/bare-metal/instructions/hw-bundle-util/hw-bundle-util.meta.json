@@ -5,7 +5,7 @@
   "sectionTitle": "hw-bundle-util утилитасымен диагностикалық деректерді жинау",
   "icon": "",
   "weight": 5,
-  "uuid": "",
+  "uuid": "6574bb5c-84cf-4dad-870d-8091b980070a",
   "build": {
     "for": [
       "public"

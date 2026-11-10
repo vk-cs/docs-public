@@ -5,7 +5,7 @@
   "sectionTitle": "Networks in Bare Metal",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "399617a6-a152-47dc-af0a-c0d5fdbd6e81",
   "build": {
     "for": [
       "public"

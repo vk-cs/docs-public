@@ -5,7 +5,7 @@
   "sectionTitle": "Bare Metal желілері",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "59d9c681-331e-4e70-8e80-2cd86bc2800b",
   "build": {
     "for": [
       "public"
