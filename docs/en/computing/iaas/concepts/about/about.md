@@ -189,7 +189,7 @@ The VK Cloud platform supports various types of disks:
 
 | Network<br/>High-IOPS HA SSD
 | high-iops-ha
-| ME1
+| MS1, ME1, PA2
 | SSD with increased speed of operation. Double replication to different storage servers. Switchover time in case of storage server failure is from 30 sec to 5 min.
 
 According to the ISCSI protocol, the disk wait time in case of loss of availability is 300 sec. During this time, the VM operating system will switch to the backup storage server. However, conduct additional testing with disk failure emulation if you will use the disk to host highly loaded DBMS
