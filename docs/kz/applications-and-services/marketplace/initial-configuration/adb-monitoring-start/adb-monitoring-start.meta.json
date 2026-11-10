@@ -1,23 +1,14 @@
 {
-  "title": "Arenadata DB үшін мониторинг сервисін орнату және баптау",
-  "shortDescription": "VK Cloud-та Arenadata дерекқорларының мониторинг жүйесін қосу және баптау",
-  "metaDescription": "VK Cloud-та Arenadata дерекқорларының мониторинг жүйесін қосу және баптау",
-  "sectionTitle": "Arenadata DB үшін мониторинг сервисін орнату және баптау",
+  "title": "Arenadata DB мониторинг қызметін орнату",
+  "shortDescription": "{var(cloud)} құрамында Arenadata дерекқорларын мониторингтеу жүйесін қосу және баптау",
+  "metaDescription": "VK Cloud құрамында Arenadata дерекқорларын мониторингтеу жүйесін қосу және баптау",
+  "sectionTitle": "Arenadata DB мониторинг қызметін орнату",
   "icon": "",
-  "weight": 19,
+  "weight": 25,
+  "uuid": "e1e0656b-1ec9-4bf3-9b00-e7fc34300c05",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "5720b607-162a-4d00-8040-537a0368cef6"
+  }
 }

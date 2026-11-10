@@ -1,14 +1,14 @@
 {
-  "title": "JupyterHub инстансын жасау",
+  "title": "JupyterHub инстансін жасау",
   "shortDescription": "",
-  "metaDescription": "Terraform пайдаланып JupyterHub инстансын жасау мысалы",
-  "sectionTitle": "JupyterHub инстансын жасау",
+  "metaDescription": "Terraform қолдана отырып JupyterHub инстансін жасау мысалы",
+  "sectionTitle": "JupyterHub инстансін жасау",
   "icon": "",
   "weight": 1,
+  "uuid": "66fd85f6-5860-48e2-a2ce-73dfcacc8043",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "191f7ff0-9ef6-4cc5-9aeb-763882ed49ea"
+  }
 }

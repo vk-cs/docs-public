@@ -1,12 +1,12 @@
 {
-  "title": "Дүкенде сервисті тестілеу",
+  "title": "Дүкендегі қызметті тестілеу",
   "shortDescription": "",
-  "metaDescription": "Дүкенде сервисті тестілеу",
-  "sectionTitle": "Дүкенде сервисті тестілеу",
+  "metaDescription": "Дүкендегі қызметті тестілеу",
+  "sectionTitle": "Дүкендегі қызметті тестілеу",
+  "uuid": "2ffb94d4-62d9-4bbf-8a11-a6e76ab813ea",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "47a2f17c-a4ac-420c-b272-f21747fdb66b"
+  }
 }

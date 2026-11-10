@@ -1,0 +1,17 @@
+{
+  "title": "Терминдер мен аббревиатуралар",
+  "shortDescription": "",
+  "metaDescription": "VK Private Cloud пайдаланушы нұсқаулығында қандай аббревиатуралар мен терминдер қолданылатыны. Платформаны жақсырақ түсіну үшін олардың түсіндірмесі мен анықтамалары.",
+  "sectionTitle": "Терминдер мен аббревиатуралар",
+  "weight": 1,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "674f336d-3ab0-4e79-a126-cdef6395ced4"
+}

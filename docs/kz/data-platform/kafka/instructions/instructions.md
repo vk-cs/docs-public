@@ -1,4 +1,6 @@
-# {heading(Қадамдық нұсқаулықтар)[id=kafka_instructions]}
+# {heading(Қадамдық нұсқаулар)[id=kafka_instructions]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

@@ -1,6 +1,6 @@
 # {heading(Логтау агентін басқару)[id=logging-manage-plugin]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Агентті қосу немесе өшіру)[id=logging-plugin-on-off]}
 
@@ -37,15 +37,16 @@
 
   {/tabs}
 
-## {heading(Қосымша мәтіндік файлдардан логтарды жинау үшін агентті баптау)[id=logging-configure-agent]}
+## {heading(Қосымша мәтіндік файлдардан логтарды жинау агентін баптау)[id=logging-configure-agent]}
 
-1. {ifndef(private-pdf,private-pg-pdf)}[Қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect){/ifndef}{ifdef(private-pdf,private-pg-pdf)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef} виртуалды машинаға.
-1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына {linkto(../connect-plugin#logging-connect-plugin)[text=көз жеткізіңіз]}.
+1. Виртуалдық машинаға {ifdef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-connect#iaas-vm-connect)[text=Қосылыңыз]}{/ifdef}{ifndef(public)}{linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=Қосылыңыз]}{/ifndef}.
+1. `vkcloudlogs-fluent-bit-plugin` плагині орнатылғанына {linkto(../connect-plugin#logging-connect-plugin)[text=Көз жеткізіңіз]}.
 1. `vkcloudlogs-fluent-bit.conf` файлын қажетті түрде түзетіңіз:
 
-   - `[INPUT]` секциясында логтар көзі файлына апаратын жолды `Path` параметрінде және тегті `Tag` параметрінде көрсетіңіз;
-   - `[OUTPUT]` секциясында жазбалар логтарға түсуі үшін орнатылған тегті көрсетіңіз.
+   - `[INPUT]` секциясында логтардың бастапқы файлына жолды `Path` параметрінде және тегті `Tag` параметрінде көрсетіңіз;
+   - `[OUTPUT]` секциясында орнатылған тегті көрсетіңіз, жазбалар логтарға түсуі үшін.
 
+   {ifdef(public)}
    {cut(/var/log/auth.log файлын қосу мысалы)}
 
    ```ini
@@ -64,13 +65,33 @@
       password          pwd12345
       project_id        XXXX000XXXX00
    ```
+   {/ifdef}
+
+   {ifndef(public)}
+   {cut(/var/log/auth.log файлын қосу мысалы)}
+
+   ```ini
+   [INPUT]
+      Name             tail
+      Path             /var/log/auth.log
+      Skip_Empty_Lines On
+      Tag              vkcloudlogs.tail.auth.log
+
+   [OUTPUT]
+      Name              vkcloudlogs
+      Match             vkcloudlogs.tail.*
+      auth_url          https://infra.mail.ru/infra/identity/v3/
+      server_host_port  cloudlogs.mcs.mail.ru:443
+      user_id           user1
+      password          pwd12345
+      project_id        XXXX000XXXX00
+   ```
+   {/ifndef}
 
    {/cut}
 
    {note:info}
-
-   Логтарды жинау көзін жою үшін `vkcloudlogs-fluent-bit.conf` файлынан тиісті жазбаларды алып тастаңыз.
-
+   Логтарды жинау көзін жою үшін `vkcloudlogs-fluent-bit.conf` файлынан сәйкес жазбаларды алып тастаңыз.
    {/note}
 
 1. Агентті қайта іске қосыңыз:

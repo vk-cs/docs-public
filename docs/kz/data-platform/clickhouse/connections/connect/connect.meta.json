@@ -1,8 +1,8 @@
 {
-  "title": "Қызмет данасына қосылу",
-  "shortDescription": "clickhouse-client және Python, Java, C++, Go драйверлері арқылы Cloud ClickHouse данасына қосылу.",
-  "metaDescription": "TCP және HTTP протоколдары бойынша clickhouse-client және Python, Java, C++, Go драйверлері арқылы TLS-пен және TLS-сіз Cloud ClickHouse данасына қосылу нұсқаулығы.",
-  "sectionTitle": "Қызмет данасына қосылу",
+  "title": "Сервис данағына қосылу",
+  "shortDescription": "Сервис данасына қосылу нұсқалары",
+  "metaDescription": "VK Data Platform платформасындағы Cloud ClickHouse сервис данасына clickhouse-client және Python, Java, C++, Go драйверлері арқылы қалай қосылу туралы біліңіз",
+  "sectionTitle": "Сервис данаға қосылу",
   "build": {
     "for": [
       "public",
@@ -14,5 +14,5 @@
     "e13b2ac3-59ea-47b0-954a-11b1cbe7c344"
   ],
   "weight": 1,
-  "uuid": "a4c5346d-3b96-4258-9012-90bf5f4c307e"
+  "uuid": "3cf35079-b4ee-4eae-b080-b2cfc7023b7f"
 }

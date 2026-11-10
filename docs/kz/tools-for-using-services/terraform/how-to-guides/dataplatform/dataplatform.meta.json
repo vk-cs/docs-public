@@ -1,15 +1,14 @@
 {
   "title": "{var(data-p)}",
-  "shortDescription": "{var(data-p)} сервисінің объектілерін басқару үшін Terraform қалай пайдаланылады",
-  "metaDescription": "VK Data Platform сервистерінің даналарын басқару үшін Terraform қалай пайдаланылатынын біліңіз. Spark кластерін құру мысалымен танысыңыз.",
+  "shortDescription": "{var(data-p)} сервисінің нысандарын басқару үшін Terraform қалай қолданылады",
+  "metaDescription": "VK Data Platform сервистерінің даналарын басқару үшін Terraform қалай қолданылатынын біліңіз. Spark кластерін құру мысалымен танысыңыз.",
   "sectionTitle": "{var(data-p)}",
   "icon": "",
   "weight": 80,
+  "uuid": "c0247f4e-312f-4e33-9880-b8e4f5efbb85",
   "build": {
     "for": [
-      "public",
-      "data-p"
+      "public"
     ]
-  },
-  "uuid": "10c68d2f-2695-4e9b-8d6c-561c95aa3c71"
+  }
 }

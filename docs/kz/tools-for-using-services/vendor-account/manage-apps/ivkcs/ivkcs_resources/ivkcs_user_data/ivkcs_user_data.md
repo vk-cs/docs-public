@@ -1,10 +1,10 @@
-# {heading(Ресурс ivkcs_user_data)[id=ivkcs_user_data]}
+# {heading(ivkcs_user_data ресурсы)[id=ivkcs_user_data]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:warn}
 
-Ресурсты пайдалану үшін сервис образының құрамында Cloud-init бағдарламалық пакеті болуы керек (толығырақ {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=%text]} бөлімінде).
+Ресурсті пайдалану үшін сервис бейнесінде [cloud-init](https://cloudinit.readthedocs.io/en/latest) бағдарламалық пакеті болуы керек.
 
 {/note}
 
@@ -15,15 +15,15 @@
 |===
 |Атауы
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Міндетті
 |Әдепкі мәні
-|Мән өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |
 `uuid`
 |
-Сервис орналастыруының идентификаторы
+Сервисді орналастыру идентификаторы
 |string
 | ![](/kz/assets/check.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -32,7 +32,7 @@
 |
 `hosts`
 |
-Агентті инициализациялауға арналған хост атауларының тізімі
+Агентті инициализациялау үшін хост атауларының тізімі
 |list, тізім элементтері — string
 | ![](/kz/assets/check.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -41,7 +41,7 @@
 |
 `target_os`
 |
-Мақсатты ОЖ ({linkto(#target_os)[text=%text]} бөлімінде толығырақ)
+Мақсатты ОҚ (мұқияттырақ — {linkto(#target_os)[text=%text]} бөлімінде)
 |string
 | ![](/kz/assets/check.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -50,7 +50,7 @@
 |
 `ssh_private_key`
 |
-Хостты сәйкестендіруге арналған `RSA` пішіміндегі жабық кілт. `ssh_public_key` аргументімен бірге пайдаланылады
+Хостты идентификациялау үшін `RSA` форматындағы жабық кілт. `ssh_public_key` аргументімен бірге пайдаланылады
 |string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -59,7 +59,7 @@
 |
 `ssh_public_key`
 |
-Хостты сәйкестендіруге арналған `RSA` пішіміндегі ашық кілт. `ssh_private_key` аргументімен бірге пайдаланылады
+Хостты идентификациялау үшін `RSA` форматындағы ашық кілт. `ssh_private_key` аргументімен бірге пайдаланылады
 |string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -68,7 +68,7 @@
 |
 `ssh_authorized_keys`
 |
-Пайдаланушыны SSH арқылы аутентификациялауға арналған кілттер. Әдепкі пайдаланушыға жазылады
+Пайдаланушыны SSH арқылы аутентификациялау кілттері. Әдепкі бойынша пайдаланушыға жазылады
 |list, тізім элементтері — string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -77,7 +77,7 @@
 |
 `ca_certificates`
 |
-ОЖ-де сенімді ретінде орнатылуы тиіс түбірлік сертификаттар тізімі
+ОҚ-ға сенімді ретінде орнатылуы тиіс түбірткі сертификаттардың тізімі
 |list, тізім элементтері — string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -86,7 +86,7 @@
 |
 `agent_install`
 |
-Агентті орнату керек пе, соны анықтайды
+Агентті орнату керек пе, жоқ па соны анықтайды
 |boolean
 | ![](/kz/assets/no.svg "inline")
 |`true`
@@ -95,7 +95,7 @@
 |
 `agent_memory_limit`
 |
-Агент пайдаланатын жедел жад шектеуі, МБ
+Агент үшін пайдаланылатын жедел жады шектеуі, МБ
 |integer
 | ![](/kz/assets/no.svg "inline")
 |`512`
@@ -104,7 +104,7 @@
 |
 `packages`
 |
-Қандай пакеттер орнатылуы тиіс екенін анықтайды ({linkto(#packages)[text=%text]} бөлімінде толығырақ)
+Қандай пакеттер орнатылуы тиіс соны анықтайды (мұқияттырақ — {linkto(#packages)[text=%text]} бөлімінде)
 |set
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -118,21 +118,22 @@
 | ![](/kz/assets/no.svg "inline")
 
 |`token_file_path`
-|Marketplace API қол жеткізу токенін жазуға арналған файлға жол
+|
+Marketplace API қолжетімділік токенін жазу үшін файл жолы
 |string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/check.svg "inline")
 
 |`token_rotate`
-|Токен ротациясын қосу керек пе, соны анықтайды
+|Токен ротациясын қосу керек пе, жоқ па соны анықтайды
 |boolean
 | ![](/kz/assets/no.svg "inline")
 | `false`
 | ![](/kz/assets/check.svg "inline")
 
 |`token_file_owner`
-|Токені бар файлдың иесі ретінде тағайындалатын пайдаланушы
+|Токені бар файлдың иесі болып тағайындалатын пайдаланушы
 |string
 | ![](/kz/assets/no.svg "inline")
 | ![](/kz/assets/no.svg "inline")
@@ -149,18 +150,19 @@
 
 {note:info}
 
-Агентті орнату кезінде жедел жадты шектеу үшін `agent_memory_limit` аргументін пайдаланыңыз.
+Агентті орнатқанда жедел жадыны шектеу үшін `agent_memory_limit` аргументін пайдаланыңыз.
 
 {/note}
 
-`ivkcs_user_data` ресурсы `user_data` атрибутын жолдар тізімі пішімінде қайтарады. Тізімдегі индекс `hosts` аргументінде берілген хост индексіне сәйкес келеді. Мәні — MIME архиві пішіміндегі cloud-config конфигурациясы. Алынған мәнді `vkcs_compute_instance` ресурсының `user_data` аргументінде пайдаланыңыз.
+`ivkcs_user_data` ресурсы `user_data` атрибутын жолдар тізімі форматында қайтарады. Тізімдегі индекс `hosts` аргументінде берілген хосттың индексіне сәйкес келеді. Мәні MIME-архив форматындағы cloud-config конфигурациясы болып табылады. Алынған мәнді `vkcs_compute_instance` ресурсының `user_data` аргументінде пайдаланыңыз.
 
 {caption(`ivkcs_user_data` ресурсын пайдалану мысалы)[align=left;position=above]}
 ```hcl
-# Кілт жұбын жасау
+
+# Кілттік жұп жасау
 resource "ivkcs_ssh_keypair" "test" {}
 
-# cloud-config конфигурациясын жасау. Хостта агентті инициализациялауға арналған деректерді алу
+# cloud-config конфигурациясын жасау. Хостта агентті инициализациялау үшін деректерді алу
 resource "ivkcs_user_data" "test" {
   uuid                = var.instance_uuid
   hosts               = ["host1"]
@@ -174,27 +176,29 @@ resource "ivkcs_user_data" "test" {
 resource "vkcs_compute_instance" "single" {
   name              = "host1"
   ...
-  # ВМ-ді баптауға арналған cloud-config конфигурациясын қолдану. Агентті орнату
-  # [] ішінде хост нөмірін көрсетіңіз. Егер сервис бір ВМ-де орналастырылса, мән 0 болуы керек
+
+# ВМ баптау үшін cloud-config конфигурациясын қолдану. Агентті орнату
+
+# [] ішінде хост нөмірін көрсетіңіз. Егер сервис бір ВМ-ге орналастырылса, мән 0 болуы тиіс
   user_data = ivkcs_user_data.test.user_data[0]
   ...
 }
 ```
 {/caption}
 
-## {heading(Аргумент target_os)[id=target_os]}
+## {heading(target_os аргументі)[id=target_os]}
 
-`target_os` аргументінің ықтимал мәндері {linkto(#tab_target_os)[text=%number кестеде]} келтірілген. Әрбір мән бұлтты платформаның нақты базалық образына және оның белгілі бір конфигурациясына (ОЖ мен Cloud-init нұсқасының үйлесімі) сәйкес келеді.
+`target_os` аргументінің мүмкін мәндері {linkto(#tab_target_os)[text=%number кестеде]} келтірілген. Әрбір мән бұлтты платформаның нақты бір базалық бейнесіне және оның белгілі бір конфигурациясына (ОҚ және Cloud-init нұсқасының тіркесімі) сәйкес келеді.
 
-Дұрыс cloud-config конфигурациясын жасау кестедегі базалық образдар үшін кепілдендіріледі.
+Дұрыс cloud-config конфигурациясының жасалуы кестедегі базалық бейнелер үшін кепілдендірілген.
 
-{caption({counter(table)[id=numb_tab_target_os]} кесте — target_os аргументінің ықтимал мәндері)[align=right;position=above;id=tab_target_os;number={const(numb_tab_target_os)}]}
+{caption({counter(table)[id=numb_tab_target_os]} кесте — target_os аргументінің мүмкін мәндері)[align=right;position=above;id=tab_target_os;number={const(numb_tab_target_os)}]}
 [cols="3,2,2,2", options="header"]
 |===
 |Мәні
-|ОЖ
+|ОҚ
 |Cloud-init нұсқасы
-|Базалық ОЖ
+|Базалық ОҚ
 
 |
 `freebsd132`
@@ -252,17 +256,17 @@ resource "vkcs_compute_instance" "single" {
 |===
 {/caption}
 
-Егер кестеде қажетті ОЖ болмаса, туыстығы жағынан ең жақын ОЖ үшін немесе ең жақын базалық ОЖ үшін мәнді пайдаланыңыз. Мысалы, Ubuntu 21.10 үшін туыстығы жағынан ең жақын ОЖ — Ubuntu 22.04, сондықтан `ubuntu2204` мәнін көрсетіңіз.
+Кестеде қажетті ОҚ болмаса, туыстығы жағынан ең жақын ОҚ үшін немесе ең жақын базалық ОҚ үшін мәнді пайдаланыңыз. Мысалы, Ubuntu 21.10-ға туыстық жағынан ең жақын ОҚ — Ubuntu 22.04, сондықтан `ubuntu2204` мәнін көрсетіңіз.
 
 {note:info}
 
-Егер сервис жұмысы үшін тек агент және ВМ-ге қол жеткізуге арналған `ssh_authorized_keys` SSH кілттері қажет болса, `target_os` аргументінің кез келген мәнін пайдаланыңыз.
+Егер сервис жұмысы үшін тек агент және ВМ-ге қолжетімділік үшін SSH-кілттер `ssh_authorized_keys` қажет болса, `target_os` аргументінің кез келген мәнін пайдаланыңыз.
 
 {/note}
 
-`target_os` мәніне сәйкес келетін {var(cloud)} базалық образының ID-сін [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) ішінде `openstack image list` командасын орындау арқылы білуге болады. Команда жобада қолжетімді ВМ образдарының толық тізімін шығарады. Әрбір образ үшін оның ID-і, `target_os` мәні және күйі көрсетіледі.
+`target_os` мәніне сәйкес келетін VK Cloud-тағы базалық бейненің ID-сын [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli)-де `openstack image list` командасын орындап білуге болады. Команда жобада қолжетімді барлық ВМ бейнелерінің тізімін шығарады. Әрбір бейне үшін оның ID-сы, `target_os` мәні және күйі көрсетіледі.
 
-## {heading(Аргумент packages)[id=packages]}
+## {heading(packages аргументі)[id=packages]}
 
 `packages` аргументтері {linkto(#tab_packages)[text=%number кестеде]} келтірілген.
 
@@ -271,7 +275,7 @@ resource "vkcs_compute_instance" "single" {
 |===
 |Атауы
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Міндетті
 
 |
@@ -290,11 +294,11 @@ resource "vkcs_compute_instance" "single" {
 
 {note:warn}
 
-Альт Сервер ОЖ үшін пакет атауы мен нұсқасын арнайы пішімде көрсету қажет.
+Альт Сервер ОҚ үшін пакет атауы мен нұсқасын арнайы форматта көрсету қажет.
 
 {/note}
 
-Альт Сервер ОЖ үшін пакет атауы мен нұсқасын көрсету үшін мына пішімді пайдаланыңыз:
+Альт Сервер ОҚ үшін пакет атауы мен нұсқасын көрсету үшін мына форматты пайдаланыңыз:
 
 ```txt
 name: "<NAME>=<VERSION_PART_1>"
@@ -304,10 +308,10 @@ version: "<VERSION_PART_2>"
 Мұнда:
 
 * `<NAME>` — пакет атауы.
-* `<VERSION_PART_1>` — пакет нұсқасының бірінші `-` таңбасына дейінгі мәні.
-* `<VERSION_PART_2>` — пакет нұсқасының бірінші `-` таңбасынан кейінгі мәні.
+* `<VERSION_PART_1>` — пакет нұсқасының алғашқы `-` таңбасына дейінгі мәні.
+* `<VERSION_PART_2>` — пакет нұсқасының алғашқы `-` таңбасынан кейінгі мәні.
 
-{caption(mc атауы және 4.8.28-alt1:p10+299225.100.2.1 нұсқасы бар пакетті жазу мысалы)[align=left;position=above]}
+{caption(mc атаулы және 4.8.28-alt1:p10+299225.100.2.1 нұсқалы пакетті жазу мысалы)[align=left;position=above]}
 ```hcl
 name: "mc=4.8.28"
 version: "alt1:p10+299225.100.2.1"
@@ -334,7 +338,7 @@ resource "ivkcs_user_data" "user_data" {
 ```
 {/caption}
 
-## {heading(Аргумент user_script)[id=user_script]}
+## {heading(user_script аргументі)[id=user_script]}
 
 `user_script` аргументтері {linkto(#tab_userscript)[text=%number кестеде]} келтірілген.
 
@@ -343,16 +347,16 @@ resource "ivkcs_user_data" "user_data" {
 |===
 |Атауы
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Әдепкі мәні
 
 |`name`
-|Скрипт атауы. Скрипттер әліпби ретімен орындалады
+|Скрипт атауы. Скрипттерді орындау алфавиттік ретпен жүзеге асырылады
 |string
 | ![](/en/assets/no.svg "inline")
 
 |`content_type`
-|Скрипт түрі. Скрипттің қашан орындалатынын анықтайды. Ықтимал мәндер:
+|Скрипт түрі. Скрипт қашан орындалатынын анықтайды. Мүмкін мәндері:
 
   - `text/x-shellscript-per-boot`;
   - `text/x-shellscript-per-instance`;
@@ -372,21 +376,21 @@ resource "ivkcs_user_data" "user_data" {
 {caption({counter(table)[id=numb_tab_scripttype]} кесте — Скрипт түрлері)[align=right;position=above;id=tab_scripttype;number={const(numb_tab_scripttype)}]}
 [cols="1,2,3", options="header"]
 |===
-|Орындалу кезектілігі
+|Орындалу реті
 |Скрипт түрі
 |Сипаттамасы
 
 |1
 |`x-shellscript-per-boot`
-|Жүйе жүктелген сайын әліпби ретімен орындалады
+|Жүйе әрбір жүктелген сайын алфавиттік ретпен орындалады
 
 |2
 |`x-shellscript-per-instance`
-|Жаңа инстанс алғаш іске қосылғанда әліпби ретімен орындалады
+|Жаңа инстанс алғаш рет іске қосылғанда алфавиттік ретпен орындалады
 
 |3
 |`x-shellscript-per-once`
-|Бір рет әліпби ретімен орындалады. Инстанс өзгерген кезде қайта іске қосылмайды
+|Алфавиттік ретпен бір рет орындалады. Инстанс өзгергенде қайта іске қосылмайды
 |===
 {/caption}
 
@@ -401,7 +405,7 @@ resource "ivkcs_user_data" "init" {
   ssh_authorized_keys = [
     ivkcs_ssh_keypair.keypair.public_key,
   ]
-  
+
   user_script {
     name = "script1"
     content_type = "text/x-shellscript-per-once"

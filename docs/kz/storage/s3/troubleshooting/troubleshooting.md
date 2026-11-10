@@ -1,7 +1,7 @@
 # {heading(Ақауларды жою)[id=s3-troubleshooting]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
-Объектілік хранилищедегі типтік мәселелерді диагностикалау және шешу тәсілдері.
+Объекттік қоймадағы типтік мәселелерді диагностикалау және шешу тәсілдері.
 {/ifdef}

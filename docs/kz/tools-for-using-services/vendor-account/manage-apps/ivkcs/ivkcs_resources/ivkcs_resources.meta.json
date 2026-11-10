@@ -4,10 +4,10 @@
   "metaDescription": "Ресурстар",
   "sectionTitle": "Ресурстар",
   "weight": 1,
+  "uuid": "5b8a87d1-30ba-445d-9109-585eac40ce44",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "8fd60577-b324-49e2-ad1c-b17beca0f093"
+  }
 }

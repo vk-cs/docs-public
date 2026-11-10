@@ -1,13 +1,13 @@
 {
-  "title": "Файл service.yaml",
+  "title": "service.yaml файлы",
   "shortDescription": "",
-  "metaDescription": "Файл service.yaml",
-  "sectionTitle": "Файл service.yaml",
+  "metaDescription": "service.yaml файлы",
+  "sectionTitle": "service.yaml файлы",
   "weight": 2,
+  "uuid": "2bc5e6db-4de3-4e8e-99d7-93cd4f2c1c33",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "e15f3ad2-935d-4e16-8385-f10afbaf28c0"
+  }
 }

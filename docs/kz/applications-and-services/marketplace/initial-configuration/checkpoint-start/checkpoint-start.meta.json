@@ -1,23 +1,14 @@
 {
-  "title": "Check Point CloudGuard Network көмегімен инфрақұрылымды қорғау",
-  "shortDescription": "Жобада Check Point CloudGuard Network сервисін өрістету",
-  "metaDescription": "Check Point CloudGuard Network өрістету: шлюздерді баптау және желілік интерфейстерді қосу",
-  "sectionTitle": "Check Point CloudGuard Network көмегімен инфрақұрылымды қорғау",
+  "title": "Check Point CloudGuard Network орнату",
+  "shortDescription": "Жобада Check Point CloudGuard Network қызметін орнату",
+  "metaDescription": "Check Point CloudGuard Network орнату: шлюзлерді баптау және желілік интерфейстерді қосу",
+  "sectionTitle": "Check Point CloudGuard Network орнату",
   "icon": "",
   "weight": 4,
+  "uuid": "e6f3f167-385c-49c8-9e80-e933a1cd7eb3",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "a97836a1-3f86-4617-8019-8fe2b721990f"
+  }
 }

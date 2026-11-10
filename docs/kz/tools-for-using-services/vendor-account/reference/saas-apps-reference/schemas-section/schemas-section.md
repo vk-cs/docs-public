@@ -1,6 +1,7 @@
-{include(/kz/_includes/_translated_by_ai.md)}
 
-`schemas` секциясы [сервис конфигурациясының JSON-файлында](../../../manage-saas-apps/saas-add#service_config) нақты жоспардың [тарифтік опцияларын](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) сипаттайды. Секцияның құрылымы келесідей:
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+`schemas` секциясы [сервисді конфигурациялаудың JSON-файлында](../../../instructions/manage-saas-apps/saas-add#service_config) нақты жоспардың [тарифтік опцияларын](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) сипаттайды. Секцияның құрылымы мынадай:
 
 ```json
 "schemas": {
@@ -44,35 +45,35 @@
 
 Мұнда:
 
-* `service_instance` секциясы жоспардың тарифтік опцияларын сипаттайды және ақылы опциялар үшін ақшалай қаражатты есептен шығару тәсілін анықтайды.
+* `service_instance` секциясы жоспардың тарифтік опцияларын сипаттайды және ақылы опциялар үшін ақша алу тәсілін анықтайды.
 
-  * `service_instance.create` секциясы сервис қосылған кезде тарифтік жоспарды конфигурациялау шеберінде белсенді болатын тегін және алдын ала төленетін тарифтік опцияларды сипаттайды.
-  * `service_instance.update` секциясы сервис тарифтік жоспары жаңартылған кезде тарифтік жоспарды конфигурациялау шеберінде белсенді болатын тегін және алдын ала төленетін тарифтік опцияларды сипаттайды.
-  * `service_instance.resource_usages` секциясы кейін төленетін тарифтік опцияларды сипаттайды. Осы секциядағы барлық опциялар [брокерде сипатталуы](../../../manage-saas-apps/saas-add) керек.
+  * `service_instance.create` секциясы сервисді қосқан кезде тарифтік жоспарды конфигурациялау шеберінде белсенді болатын тегін және алдын ала төленетін тарифтік опцияларды сипаттайды.
+  * `service_instance.update` секциясы сервисдің тарифтік жоспарын жаңартқан кезде тарифтік жоспарды конфигурациялау шеберінде белсенді болатын тегін және алдын ала төленетін тарифтік опцияларды сипаттайды.
+  * `service_instance.resource_usages` секциясы кейін төленетін тарифтік опцияларды сипаттайды. Осы секциядан алынған барлық опциялар [брокерде сипатталған](../../../instructions/manage-saas-apps/saas-add) болуы тиіс.
 
-* `service_binding` секциясы сервистік байланыстарды жасауды сипаттайды.
+* `service_binding` секциясы сервистік байланыстыруды (service binding) құруды сипаттайды.
 
 {note:warn}
 
-Бір тарифтік жоспар шеңберінде мыналар сипатталуы мүмкін:
+Бір тарифтік жоспар шегінде сипаттауға болады:
 
-* не тек `service_instance.create` және `service_instance.update` секциялары (екеуі де немесе тек біреуі);
-* не тек `service_instance.resource_usages` секциясы.
+* немесе тек `service_instance.create` және `service_instance.update` секцияларын (екеуін немесе тек біреуін);
+* немесе тек `service_instance.resource_usages` секциясын.
 
 {/note}
 
-`schemas` ішіндегі барлық секциялар JSON-файлда міндетті түрде жариялануы керек. Секциялар бос болуы мүмкін.
+`schemas` ішіндегі барлық секциялар JSON-файлында жариялау үшін міндетті. Секциялар бос болуы мүмкін.
 
-SaaS-қосымшасы үшін `datasource` түрінен басқа [тарифтік опциялардың барлық түрлері](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) қолдау табады. Тарифтік опциялардың параметрлері JSON-схемалармен сипатталады. [image-based қосымшасы үшін тарифтік опция параметрлері](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema) сияқты дәл сол параметрлер пайдаланылады. Әртүрлі опция түрлерін сипаттау және олардың image-based қосымшасы үшін дүкен интерфейсінде көрсетілу мысалдары [Тарифтік опциялардың YAML-файлдарын толтыру](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in) бөлімінде келтірілген.
+SaaS-қосымшасы үшін `datasource` түрінен басқа барлық [тарифтік опция түрлеріне](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types) қолдау көрсетіледі. Тарифтік опциялардың параметрлері JSON-схемалармен сипатталады. [Image-based қосымшасы үшін тарифтік опциялардың параметрлеріндегі](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema) сияқты параметрлер қолданылады. Әртүрлі типтегі опцияларды сипаттау мысалдары және олардың image-based қосымшасының дүкен интерфейсінде көрсетілуі [Тарифтік опциялардың YAML-файлдарын толтыру](/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/ibopt_fill_in) бөлімінде келтірілген.
 
-Ақылы опциялардың құны және `integer` түріндегі опция үшін өзгерту қадамы [billing секциясында](../billing-section) көрсетіледі.
+Ақылы опциялардың құны және `integer` типті опция үшін өзгерту қадамы [billing секциясында](../billing-section) көрсетіледі.
 
 Опция атауларына қойылатын талап:
 
-* Егер SaaS-қосымшасының метрикаларын жинау [pull-моделі](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_pull) бойынша жүрсе, JSON-файлдағы опция атауы Marketplace-ке есепті жіберу үшін [брокер әдісінде](../../../manage-saas-apps/saas-add) көрсетілген `kind` параметрінің мәнімен сәйкес келуі керек.
-* Егер метрикаларды жинау [push-моделі](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push) бойынша жүзеге асырылса, JSON-файлдағы опция атауы метрикаларды жіберуге арналған API-сұраудағы `param` параметрінің мәнімен сәйкес келуі керек.
+* Егер SaaS-қосымшасының метрикаларын жинау [pull-модель](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_pull) бойынша жүзеге асырылса, JSON-файлындағы опция атауы Marketplace-ке есеп беру үшін [брокер әдісінде көрсетілген](../../../instructions/manage-saas-apps/saas-add) `kind` параметрінің мәніне сәйкес болуы тиіс.
+* Егер метрикаларды жинау [push-модель](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push) бойынша жүзеге асырылса, JSON-файлындағы опция атауы метрикаларды жеткізуге арналған API-сұраныстағы `param` параметрінің мәніне сәйкес болуы тиіс.
 
-### JSON форматындағы әртүрлі опция түрлерін сипаттау мысалдары
+### JSON форматындағы әртүрлі типтегі опцияларды сипаттау мысалдары
 
 {cut(Тегін және алдын ала төленетін тарифтік опциялар үшін schemas секциясының мысалы)}
 
@@ -84,58 +85,58 @@ SaaS-қосымшасы үшін `datasource` түрінен басқа [тар�
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "type": "object",
                   "properties": {
-                    "int_const": {  // Тарифная опция-константа типа integer
+                    "int_const": {  // integer типті константа-тарифтік опция
                       "type": "integer",
-                      "description": "Размер системного диска",
-                      "hint": "В ГБ",
+                      "description": "Жүйелік дискінің көлемі",
+                      "hint": "ГБ есебінде",
                       "const": 20
                     },
-                    "int_enum": {  // Тарифная опция типа integer с выбором значения из списка
+                    "int_enum": {  // Тізімнен мән таңдау мүмкіндігі бар integer типті тарифтік опция
                       "type": "integer",
-                      "description": "Количество серверов в кластере",
+                      "description": "Кластердеегі серверлер саны",
                       "enum": [3, 5, 7],
                       "default": 5
                     },
-                    "int_step_1": {  // Тарифная опция типа integer с шагом изменения 1
+                    "int_step_1": {  // Өзгерту қадамы 1 болатын integer типті тарифтік опция
                       "type": "integer",
-                      "description": "Количество участников",
-                      "hint": "Количество сотрудников компании заказчика, которые могут использовать инфраструктуру тестирования и обрабатывать отчеты от тестировщиков VK Testers.",
+                      "description": "Уақыт бөлетіндер саны",
+                      "hint": "Тапсырыс беруші компанияның тестілеу инфрақұрылымын пайдалана алатын және тестілеушілерден VK Testers есептерін өңдейтін қызметкерлерінің саны.",
                       "default": 20,
                       "minimum": 20
                     },
-                    "int_step_user": {  // Тарифная опция типа integer с шагом изменения, заданным в секции billing
+                    "int_step_user": {  // Өзгерту қадамы billing секциясында көрсетілген integer типті тарифтік опция
                       "type": "integer",
-                      "description": "Объем загружаемых сборок",
-                      "hint": "На платформу можно загружать тестовые сборки приложений для раздачи сотрудникам заказчика и тестировщикам VK Testers. Чем больше хранилище, тем больше версий ваших продуктов можно сохранять на платформе тестирования. Поддерживаемые платформы: iOS, Android, Windows, MacOS, Linux.",
+                      "description": "Жүктеп салынатын жинақтар көлемі",
+                      "hint": "Платформаға тапсырыс берушінің қызметкерлеріне және VK Testers тестілеушілеріне тарату үшін қосымшалардың тестілік жинақтарын жүктеуге болады. Сақтау орны неғұрлым көп болса, платформада соғұрлым көп өнім нұсқаларын сақтауға болады. Қолдау көрсетілетін платформалар: iOS, Android, Windows, MacOS, Linux.",
                       "default": 0
                     },
-                    "string_const": {  // Тарифная опция-константа типа string
+                    "string_const": {  // string типті константа-тарифтік опция
                       "type": "string",
-                      "description": "Логин администратора",
+                      "description": "Әкімшінің логині",
                       "const": "admin@example.ru"
                     },
-                    "string_input": {  // Тарифная опция типа string с вводом значения
+                    "string_input": {  // Мән енгізу мүмкіндігі бар string типті тарифтік опция
                       "type": "string",
-                      "description": "Email администратора",
-                      "hint": "Email для выпуска SSL-сертификата"
+                      "description": "Әкімшінің Email-і",
+                      "hint": "SSL-сертификат шығару үшін Email"
                     },
-                    "string_enum": {  // Тарифная опция типа string с выбором значения из списка
+                    "string_enum": {  // Тізімнен мән таңдау мүмкіндігі бар string типті тарифтік опция
                       "type": "string",
-                      "description": "OS тип",
-                      "hint": "Операционная система",
+                      "description": "OS түрі",
+                      "hint": "Операциялық жүйе",
                       "enum": ["Ubuntu 20.4", "Windows 8.1", "Windows 10"],
                       "default": "Windows 8.1"
                     },
-                    "boolean_const": {  // Тарифная опция-константа типа boolean
+                    "boolean_const": {  // boolean типті константа-тарифтік опция
                       "type": "boolean",
-                      "description": "Premium поддержка",
-                      "hint": "Техническая поддержка 24/7",
+                      "description": "Premium қолдау",
+                      "hint": "Тәулік бойы 24/7 техникалық қолдау",
                       "const": false
                     },
-                    "boolean": {  // Тарифная опция-переключатель типа boolean
+                    "boolean": {  // boolean типті қосқыш-тарифтік опция
                       "type": "boolean",
-                      "description": "Уведомления об обновлениях",
-                      "hint": "Получать ли на почту уведомления о новых версиях сервиса.",
+                      "description": "Жаңартулар туралы хабарламалар",
+                      "hint": "Сервисдің жаңа нұсқалары туралы хабарламаларды поштаға алу керек пе.",
                       "default": true
                     }
                   }
@@ -199,7 +200,7 @@ SaaS-қосымшасы үшін `datasource` түрінен басқа [тар�
                   "type": "object",
                   "properties": {
                     "storage": {
-                      "description": "Хранение в ДЦ Киберпротект для продуктов Бэкап Облачный",
+                      "description": "Бэкап Облачный өнімдері үшін Киберпротект ДҚ-да сақтау",
                       "type": "number"
                     }
                   }

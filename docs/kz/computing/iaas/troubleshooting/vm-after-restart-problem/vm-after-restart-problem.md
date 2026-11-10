@@ -4,6 +4,8 @@
 
 ### Решение
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 [Проверьте](/kz/computing/iaas/how-to-guides/interface-settings-check#iaas-interface-settings-check-access) настройки сетевого интерфейса внутри ОС (файлы конфигурации `netplan` или `ifcfg`). Возможно, интерфейс не получает IP-адрес по DHCP или изменилось имя интерфейса.
 
 В аварийных ситуациях и при отсутствии подключения к виртуальной машине по сети используйте [VNC-консоль](/kz/computing/iaas/instructions/vm/vm-console).

@@ -1,8 +1,8 @@
 {
-  "title": "Логтау",
-  "shortDescription": "қызмет экземплярының логтарын қалай қарауға болады",
-  "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында жайылған Cloud PostgreSQL қызметі экземпляры жұмысының логтарын қалай қарауға және олармен жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Логтау",
+  "title": "Журналдау",
+  "shortDescription": "Сервис данасының журналдарын қалай көруге болады",
+  "metaDescription": "VK Data Platform платформасында орнатылған Cloud PostgreSQL сервисінің данасының жұмыс журналдарын қалай көруге және олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Журналдау",
   "build": {
     "for": [
       "data-p",
@@ -10,5 +10,5 @@
     ]
   },
   "weight": 3,
-  "uuid": "564e6170-102d-4dcb-abda-7c941fcaf08f"
+  "uuid": "f897b8d4-f6d8-49a2-ae6a-582f27d5e561"
 }

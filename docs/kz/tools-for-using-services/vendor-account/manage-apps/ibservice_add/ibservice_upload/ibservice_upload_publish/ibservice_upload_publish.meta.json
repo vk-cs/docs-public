@@ -1,13 +1,13 @@
 {
-  "title": "Қызметті жариялау",
+  "title": "Сервисті жариялау",
   "shortDescription": "",
-  "metaDescription": "Қызметті жариялау",
-  "sectionTitle": "Қызметті жариялау",
+  "metaDescription": "Сервисті жариялау",
+  "sectionTitle": "Сервисті жариялау",
   "weight": 7,
+  "uuid": "f4103de3-006c-4c43-8f32-0782a5527e2a",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "a44fe7da-1644-4d8b-99c8-8f2c6792d2da"
+  }
 }

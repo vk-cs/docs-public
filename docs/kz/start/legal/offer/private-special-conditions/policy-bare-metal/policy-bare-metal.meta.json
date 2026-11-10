@@ -1,0 +1,16 @@
+{
+  "title": "«Bare Metal» / «Арнайы серверлер қызметі» қызметін пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "«Bare Metal» / «Арнайы серверлер қызметі» қызметін пайдалану шарттары",
+  "sectionTitle": "«Bare Metal» / «Арнайы серверлер қызметі» қызметін пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 12,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "eb0915c2-2ea4-4872-92c5-8fd6c76ca1cd"
+}

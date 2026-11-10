@@ -1,0 +1,14 @@
+{
+  "title": "Androidға арналған SDK анықтамалығы",
+  "shortDescription": "Android қосымшаларын әзірлеуге арналған VK Капча SDK әдістерінің сипаттамасы",
+  "metaDescription": "Android қосымшасында капчаны қалай көрсету керек — VK Капча SDK әдістері: openCaptcha, getToken, setLocale, нәтижелерді өңдеу.",
+  "sectionTitle": "Androidға арналған SDK анықтамалығы",
+  "icon": "",
+  "weight": 3,
+  "uuid": "24d85c85-8c3b-4454-8502-bc866ae3ce28",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

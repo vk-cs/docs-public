@@ -43,7 +43,6 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 
 {/note}
 
-
 ### {heading(Қолдау көрсетілетін аудио пішімдері)[id=cloud_voice-instructions-speech_recognition-audiofiles-formats]}
 
 | Контейнер | Кодек | Content-type           |

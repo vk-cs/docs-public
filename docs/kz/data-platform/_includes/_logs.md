@@ -6,6 +6,7 @@
 
 ## {heading(Дана логтарын қарау)[id=logs_standalone_view]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті сервис данасының атауын басыңыз.
 1. **Логтау** қойындысына өтіңіз.

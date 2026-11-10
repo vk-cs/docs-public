@@ -1,0 +1,16 @@
+{
+  "title": "Зерттеуге (тестілеуге) қатысу туралы келісім",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud-тен зерттеуге (тестілеуге) қатысу туралы келісім",
+  "sectionTitle": "Зерттеуге (тестілеуге) қатысу туралы келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "c4ebbbd0-9dfd-4bac-bac0-1ab30f68848d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,27 +1,27 @@
-# {heading(Үлкен көлемді ОС бейнесінен диск жасау)[id=s3-load-large-image]}
+# {heading(Үлкен көлемдегі ОС бейнесінен диск жасау)[id=s3-load-large-image]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(cloud)} ішінде жүктелетін операциялық жүйе бейнелерінің өлшеміне {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=шектеулер қолданылады]}. Лимит асып кеткен кезде мына түрдегі хабарлама пайда болады:
+{var(cloud)} жүйесінде жүктеп алынатын операциялық жүйелердің бейнелерінің өлшеміне {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-s3)[text=шектеулер қойылған]}. Лимиттен асқан кезде мына түрдегі хабарлама пайда болады:
 
 ```txt
 HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1f06dce4-XXXX-444c-bcaa-896ed69023c1/file, Request Entity Too Large
 ```
 
-Төменде {var(cloud)} объектілік қоймасы арқылы өлшемі 500 ГБ-тан үлкен ОС бейнесінен диск жасау қарастырылған.
+Төменде {var(cloud)} объектілік қоймасы арқылы 500 ГБ-тан үлкен өлшемдегі ОС бейнесінен диск жасау қарастырылған.
 
-Қолданылатындар:
+Пайдаланылатын құралдар:
 
-- өлшемі кемінде 500 ГБ болатын виртуалды машина;
-- Linux тұқымдас жергілікті машина, онда:
+- өлшемі кемінде 500 ГБ виртуалды машина;
+- Linux тобындағы жергілікті машина, онда:
 
   - [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) утилитасы орнатылған;
-  - өлшемі кемінде 500 ГБ болатын `image.raw` ОС бейне файлы бар.
+  - өлшемі кемінде 500 ГБ `image.raw` ОС бейнесінің файлы бар.
 
-## {heading(Дайындық қадамдары)[id=s3-load-large-image-prepare]}
+## {heading(Дайындық қадамдар)[id=s3-load-large-image-prepare]}
 
-1. {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунт]} және `uc_bucket` {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакетін]} жасаңыз.
-1. AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылған және бапталған]} екеніне көз жеткізіңіз. Онда бакетке қосылу деректерін (`Access key ID` және `Secret key`) көрсетіңіз. `~/.aws/config` конфигурациялық файлын ашып, оған өзгерістер енгізіңіз:
+1. {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=Аккаунт]} және `uc_bucket` {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакетін]} жасаңыз.
+1. AWS CLI {linkto(../../connect/s3-cli#s3-connect-cli)[text=орнатылғанын және бапталғанын]} тексеріңіз. Онда бакетке қосылу деректерін (`Access key ID` және `Secret key`) көрсетіңіз. `~/.aws/config` конфигурациялық файлын ашып, оған өзгертулер енгізіңіз:
 
    ```txt
    [default]
@@ -36,10 +36,10 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    ```
 
 1. {var(cloud)} бұлтында Ubuntu 22.04 ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]}.
-1. ВМ-ге [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) утилитасын орнатыңыз.
-1. Өлшемі кемінде 600 ГБ диск {linkto(../../../../computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=жасаңыз]} және оны ВМ-ге {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=қосыңыз]}.
+1. ВМ-ға [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) утилитасын орнатыңыз.
+1. Өлшемі кемінде 600 ГБ диск {linkto(../../../../computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=жасап]}, оны ВМ-ға {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=қосыңыз]}.
 
-## {heading(1. Бейнені жергілікті машинадан объектілік қоймаға жүктеңіз)[id=s3-load-large-image-download]}
+## {heading(1. Бейнені жергілікті машинадан объектілік қоймаға жүктеп салыңыз)[id=s3-load-large-image-download]}
 
 1. Жергілікті машинада команданы орындаңыз:
 
@@ -47,7 +47,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
    dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
    ```
 
-1. Жүктеу басталғанын мына команда арқылы тексеріңіз:
+1. Жүктеп салу басталғанын мына команда арқылы тексеріңіз:
 
    ```console
    aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcloud-storage.ru
@@ -116,12 +116,12 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
    {/cut}
 
-1. Объектілік қоймаға жүктеудің аяқталуын күтіңіз. `aws s3api list-multipart-uploads` командасының шығысында `Uploads` блогында деректер болмауы тиіс.
+1. Объектілік қоймаға жүктеп салудың аяқталуын күтіңіз. `aws s3api list-multipart-uploads` командасының шығысында `Uploads` блогінде деректер болмауы тиіс.
 
-## {heading(2. Бейнені {var(cloud)} дискісіне жүктеңіз)[id=s3-load-large-image-download-on-volume]}
+## {heading(2. Бейнені {var(cloud)} дискіне жүктеп салыңыз)[id=s3-load-large-image-download-on-volume]}
 
-1. SSH көмегімен {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=ВМ-ге қосылыңыз]}.
-1. `lsblk` командасы арқылы қосылған дискінің бар-жоғын тексеріңіз.
+1. SSH көмегімен ВМ-ға {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=қосылыңыз]}.
+1. Қосылған дискінің бар екенін `lsblk` командасы арқылы тексеріңіз.
 
    {cut(Команда шығысының мысалы)}
 
@@ -134,22 +134,22 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 
    {/cut}
 
-1. Бейнені дискіге мына команда арқылы жазыңыз:
+1. Бейнені мына команда арқылы дискіге орналастырыңыз:
 
    ```console
    wget https://uc_bucket.hb.ru-msk.vkcloud-storage.ru/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. ОС бейнесі жазылған дискіні жүктелетін ретінде {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-changing-bootable-attribute)[text=белгілеңіз]}.
-1. ВМ-нің root-дискін ОС бейнесі жазылған дискіге {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=ауыстырыңыз]}.
-1. ВМ-ді {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=іске қосыңыз]}. Іске қосу сәтті өткеніне көз жеткізіңіз.
+1. Оған ОС бейнесі орналастырылған дискіні жүктегіш (bootable) ретінде {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-changing-bootable-attribute)[text=белгілеңіз]}.
+1. ВМ-ның root-дискин ОС бейнесі орналастырылған дискіге {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=ауыстырыңыз]}.
+1. ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=іске қосыңыз]}. Іске қосудың сәтті өткенін тексеріңіз.
 
-Сондай-ақ ОС бейнесі жазылған дискіні ағымдағы ВМ-нен {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=ажыратып]}, оны басқа ВМ үшін {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=root-дискіні ауыстыру]} ретінде пайдалануға болады.  
+Сондай-ақ, ОС бейнесі орналастырылған дискіні ағымдағы ВМ-нан {linkto(../../../../computing/iaas/instructions/volumes/volumes-connect#iaas-volumes-connect-mount-disk)[text=ажыратып]}, оны басқа ВМ үшін {linkto(../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=root-диск алмастырушысы]} ретінде пайдалана аласыз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=s3-load-large-image-delete]}
 
-Жасалған ресурстар тарифтеледі және есептеу ресурстарын тұтынады. Егер олар сізге енді қажет болмаса:
+Жасалған ресурстар тарифтенеді және есептеу ресурстарын тұтынады. Егер олар сізге қажет болмаса:
 
-- ВМ-ді {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]} немесе {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]}.
+- ВМ {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]} немесе {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]}.
 - `uc_bucket` бакетін {linkto(../../instructions/buckets/manage-bucket#s3-instructions-manage-bucket-delete)[text=жойыңыз]}.
 - Дискіні {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=жойыңыз]}.

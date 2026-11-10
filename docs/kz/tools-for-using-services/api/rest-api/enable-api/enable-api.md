@@ -1,40 +1,40 @@
-# {heading(API арқылы қолжетімділікті басқару)[id=rest-api-enable]}
+# {heading(API арқылы рұқсатты басқару)[id=rest-api-enable]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-API арқылы қолжетімділікті белсендіру {var(cloud)} платформасымен жария API және OpenStack CLI, Terraform, kubectl сияқты қосымша құралдардың көмегімен жұмыс істеу үшін қажет.
+{var(cloud)} жүйесімен публичтік API және OpenStack CLI, Terraform, kubectl сияқты қосымша құралдар арқылы жұмыс істеу үшін API арқылы рұқсатты белсендіру қажет.
 
-## {heading(API арқылы қолжетімділікті белсендіру)[id=rest-api-enable-activate]}
+## {heading(API арқылы рұқсатты белсендіру)[id=rest-api-enable-activate]}
 
-1. Егер бұл әлі жасалмаса, {linkto(../../../../access/iam/instructions/service-account-manage#service-account-create)[text=сервистік тіркелгі жазбасын жасаңыз]}.
-1. Егер бұл әлі жасалмаса, API-ға қолжетімділікті алыңыз:
+1. Егер бұрын жасалмаса, {linkto(../../../../access/iam/instructions/service-account-manage#service-account-create)[text=сервислік есептік жазбаны жасаңыз]}.
+1. Егер бұрын алынбаса, API-ға қолжетімділік алыңыз:
 
-   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-download-rc-file)[text=OpenStack RC-файлын жүктеп алыңыз]}.
-   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-authorize)[text=Сервистік тіркелгі жазбасы арқылы OpenStack CLI-де авторизациядан өтіңіз]}.
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-download-rc-file)[text=OpenStack RC-файлды жүктеп алыңыз]}.
+   1. {linkto(../../../../access/iam/instructions/service-account-manage#service-account-authorize)[text=СУЗ көмегімен OpenStack CLI-де авторизацияланңыз]}.
 
-1. Бет үстіндегі пайдаланушы атына басып, API арқылы қолжетімділікті келесі тәсілдердің бірімен қосыңыз:
+1. Беттың жоғарғы жағындағы пайдаланушы атын басып, API арқылы рұқсатты келесі тәсілдердің бірімен қосыңыз:
 
       {tabs}
 
       {tab(Жоба баптаулары)}
 
-      1. Ашылмалы тізімнен **Жоба баптаулары** тармағын таңдаңыз.
+      1. Ашылмалы тізімнен **Жоба баптаулары** опциясын таңдаңыз.
       1. **API арқылы қолжетімділік** қойындысында **API арқылы қолжетімділікті белсендіру** түймесін басыңыз.
 
       {/tab}
 
       {tab(Аккаунт баптаулары)}
 
-      1. Ашылмалы тізімнен **Аккаунт баптаулары** тармағын таңдаңыз.
+      1. Ашылмалы тізімнен **Аккаунт баптаулары** опциясын таңдаңыз.
       1. {var(cloud)} аккаунтының **Қауіпсіздік** бөліміне өтіңіз.
-      1. **Қосымша қолжетімділіктер** блогында **API арқылы қолжетімділік** опциясын қосыңыз.
+      1. **Қосымша рұқсаттар** блогында **API арқылы қолжетімділік** опциясын қосыңыз.
 
       {/tab}
 
       {/tabs}
 
-## {heading(API арқылы қолжетімділікті өшіру)[id=rest-api-enable-deactivate]}
+## {heading(API арқылы рұқсатты өшіру)[id=rest-api-enable-deactivate]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
-1. Бет үстіндегі пайдаланушы атына басып, **Аккаунт баптаулары** тармағын таңдаңыз.
+1. VK Cloud жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. Беттың жоғарғы жағындағы пайдаланушы атын басып, **Аккаунт баптаулары** опциясын таңдаңыз.
 1. **Қауіпсіздік** бөлімінде **API арқылы қолжетімділік** опциясын өшіріңіз.

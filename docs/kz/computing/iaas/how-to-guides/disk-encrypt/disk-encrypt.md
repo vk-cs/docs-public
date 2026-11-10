@@ -1,12 +1,12 @@
-# {heading(Сryptsetup көмегімен дискіні шифрлау)[id=iaas-disk-encrypt]}
+# {heading(cryptsetup көмегімен дискіні шифрлау)[id=iaas-disk-encrypt]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:warn}
-Дискіні шифрламас бұрын [ВМ-нің резервтік көшірмесін жасаңыз](/kz/storage/backups/instructions/create-backup-copy).
+Дискіні шифрлау алдында {linkto(../../../../storage/backups/instructions/create-backup-copy#backup-copy-create)[text=ВМ резервтік көшірмесін жасаңыз]}.
 {/note}
 
-Linux үшін [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) көмегімен виртуалды машина дискінің шифрлануын баптаңыз.
+Виртуалды машинаның дискісін шифрлауды Linux үшін [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) көмегімен конфигурациялаңыз.
 
 ## {heading(Дайындық қадамдары)[id=iaas-disk-encrypt-preparatory-steps]}
 

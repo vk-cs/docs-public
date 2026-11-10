@@ -1,0 +1,16 @@
+{
+  "title": "VK Bare Metal арнайы серверлер қызметінің қызмет көрсету деңгейі туралы жеке келісім",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат VK Bare Metal арнайы серверлер қызметінің қызмет көрсету деңгейін анықтайды",
+  "sectionTitle": "VK Bare Metal арнайы серверлер қызметінің қызмет көрсету деңгейі туралы жеке келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 1,
+  "uuid": "4367d138-c8ac-474f-a627-210dcccb706b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "title": "Сервис пакетінің құрылымы",
+  "title": "Сервистік пакеттің құрылымы",
   "shortDescription": "",
-  "metaDescription": "Сервис пакетінің құрылымы",
-  "sectionTitle": "Сервис пакетінің құрылымы",
+  "metaDescription": "Сервистік пакеттің құрылымы",
+  "sectionTitle": "Сервистік пакеттің құрылымы",
   "weight": 3,
+  "uuid": "12e3dc5a-1363-4202-83b1-c16a60b06261",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "f2c9d594-fd20-44b0-bebb-62d0e484f03c"
+  }
 }

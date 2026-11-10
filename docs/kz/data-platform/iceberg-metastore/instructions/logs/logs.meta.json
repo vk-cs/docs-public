@@ -1,8 +1,8 @@
 {
-  "title": "Логтау",
-  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
-  "metaDescription": "VK Data Platform-тың Standalone нұсқасында Cloud Iceberg Metastore сервисінің жайылған данасының жұмыс журналдарын қалай қарауға және олармен қалай жұмыс істеуге болатынын біліңіз",
-  "sectionTitle": "Логтау",
+  "title": "Журналдарды жүргізу",
+  "shortDescription": "Сервис данасының журналдарын қалай көруге болады",
+  "metaDescription": "VK Data Platform-та орнатылған Cloud Iceberg Metastore сервис данасының жұмыс журналдарын қалай көруге және олармен жұмыс істеуге болатынын біліңіз",
+  "sectionTitle": "Журналдарды жүргізу",
   "build": {
     "for": [
       "data-p",
@@ -10,5 +10,5 @@
     ]
   },
   "weight": 3,
-  "uuid": "bd1162c4-8314-432c-bd72-5e67c66074e4"
+  "uuid": "6af31ace-c685-4ae7-b052-df6e7a7b928a"
 }

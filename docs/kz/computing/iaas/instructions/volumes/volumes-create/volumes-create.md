@@ -5,7 +5,7 @@
 Low Latency NVMe түріндегі дискіні жасау үшін [техникалық қолдауға хабарласыңыз](/kz/contacts) және [жоғары өнімді конфигурацияларға](../../../concepts/vm/cpu-generation) және дискілерге қол жеткізуді сұраңыз. Қалған [диск түрлерін](../../../concepts/data-storage/disk-types) жасау барлық конфигурацияларда әдепкі бойынша қолжетімді.
 
 {note:info}
-Белгілі бір ВМ үшін дискіні жасау [ВМ басқару](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-mount-disk) бөлімінде сипатталған.
+Белгілі бір ВМ үшін дискіні жасау [ВМ басқару](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-mount-disk) бөлімінде сипатталған.
 {/note}
 
 {tabs}

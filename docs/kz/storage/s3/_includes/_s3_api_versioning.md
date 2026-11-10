@@ -6,6 +6,7 @@
 
 ## {heading(GetBucketVersioning)[id=api-spec-s3-get-bucket-versioning]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 `GET` операциясы бакеттің нұсқалануы туралы ақпаратты қайтарады. Нұсқалау екі күйдің біріне орнатылуы мүмкін: `Enabled` — қосылған; `Suspended` — уақытша тоқтатылған.
 
 Жауап мысалы:

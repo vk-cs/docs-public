@@ -112,7 +112,6 @@ Cloud Spark кластерімен қашықтан жұмыс істеудің 
     from datetime import datetime, date
     from pyspark.sql import Row
 
-
     ADMIN_REFRESH_TOKEN = "<ТОКЕН_ДОСТУПА>"
 
     spark_connect_url = f"sc://<ДОМЕННОЕ_ИМЯ_КЛАСТЕРА>:15002/;spark-token={ADMIN_REFRESH_TOKEN}"

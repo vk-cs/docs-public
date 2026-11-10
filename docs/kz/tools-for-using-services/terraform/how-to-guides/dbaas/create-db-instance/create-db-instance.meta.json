@@ -1,16 +1,17 @@
 {
-  "title": "ДБ инстансын құру",
-  "shortDescription": "ДБ инстансын және оған арналған пайдаланушыларды қалай өрістетуге болады",
-  "metaDescription": "Cloud Databases: VK Cloud-та Terraform көмегімен ДБ инстансын қалай құруға болады",
-  "sectionTitle": "ДБ инстансын құру",
+  "title": "ДБ инстансін жасау",
+  "shortDescription": "ДБ инстансін қалай орнату және оған пайдаланушыларды қосу",
+  "metaDescription": "Cloud Databases: VK Cloud жүйесінде Terraform көмегімен ДБ инстансін қалай жасау",
+  "sectionTitle": "ДБ инстансін жасау",
   "icon": "",
   "weight": 1,
+  "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
+  "additionalUuids": [
+    "c6332d21-771e-4916-a8b5-2496ac480960"
+  ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "22b9f79e-720a-41b8-8d0c-48bde3b33db2"
+  }
 }

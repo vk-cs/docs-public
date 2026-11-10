@@ -4,10 +4,10 @@
   "metaDescription": "Сервис образын жасау",
   "sectionTitle": "Сервис образын жасау",
   "weight": 2,
+  "uuid": "6893cb8f-b22f-45e9-a684-8423c7b9d1b8",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "29d00963-76ee-4656-ba98-84e9ff4d3c67"
+  }
 }

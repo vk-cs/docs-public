@@ -1,18 +1,20 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Жобаны құру)[id=vk-cloud-account-project-create]}
 
-{include(/kz/_includes/_project_create_header.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{include(../../../../../_includes/_project_create_header.md)}
 
 {tabs}
 
 {tab({var(cloud)} Аккаунт)}
 
-{include(/kz/_includes/_project_create_tab_account.md)}
+{include(../../../../../_includes/_project_create_tab_account.md)}
 
 {/tab}
 
 {tab(Жеке кабинет)}
 
-{include(/kz/_includes/_project_create_tab_lk.md)}
+{include(../../../../../_includes/_project_create_tab_lk.md)}
 
 {/tab}
 
@@ -20,11 +22,11 @@
 
 {note:info}
 
-Жобамен кейінгі жұмыс [{var(cloud)} жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) жүргізіледі.
+Жобамен әрі қарай жұмыс {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text={var(cloud)} жеке кабинетінде]} жүргізіледі.
 
 {/note}
 
-## Әрі қарай не істеу керек?
+## {heading(Одан әрі не істеу керек?)[id=vk-cloud-account-project-what-next]}
 
-- [Жобаны басқару](/kz/tools-for-using-services/account/instructions/project-settings/manage) туралы толығырақ біліңіз.
-- Жобаға [қолжетімділікті баптау](/kz/access/iam/instructions/access-manage) мүмкіндіктерімен танысыңыз.
+- {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text=Жобаны басқару]} туралы толығырақ біліңіз.
+- Жобаға {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=рұқсаттарды баптау]} мүмкіндіктерімен танысыңыз.

@@ -1,6 +1,6 @@
 # {heading(Kube Prometheus Stack аддонын жаңарту)[id=k8s-update-monitoring-addon]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Managed Containers сервисінде жасайтын Kubernetes кластерлерінде {linkto(../../concepts/versions/components#k8s-components)[text=Kube Prometheus Stack]} аддонының {linkto(../../concepts/addons-and-settings/addons#k8s-addons-kube-prometheus-stack)[text=бірнеше нұсқасы]} қолжетімді. Бұл аддонды VK Cloud құралдарымен жаңарту қолжетімсіз, бірақ аддонды қолмен жаңартуға болады.
 
@@ -193,6 +193,7 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
    set -- "--namespace=${NAMESPACE}"
    [ -n "${CONTEXT}" ] && {
        set -- "--context=${CONTEXT}" "${@}"
+
        # for helm
        set -- "--kube-context=${CONTEXT}" "${@}"
    }
@@ -499,114 +500,6 @@ Kube Prometheus Stack аддонын `36.2.0` нұсқасынан `54.2.2` нұ
 {/tab}
 
 {/tabs}
-
-## {heading(3. Аддонды жаңа нұсқаға жаңартыңыз)[id=k8s-update-monitoring-addon-update]}
-
-1. {linkto(../../instructions/addons/manage-addons#k8s-manage-addons-delete)[text=VK Cloud интерфейстерін пайдаланып, аддонның ағымдағы нұсқасын жойыңыз]}.
-1. {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=Кластерге]} `54.2.2` нұсқасындағы Kube Prometheus Stack аддонын {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#k8s-install-advanced-monitoring)[text=орнатыңыз]}.
-
-   **Стандартты орнатуды** келесі түрде орындаңыз:
-
-   1. Аддонның алдыңғы нұсқасын орнату кезінде пайдаланылған қолданба мен аттар кеңістігінің сол атауларын беріңіз.
-
-   1. {linkto(#k8s-update-monitoring-addon-get-info)[text=Бұрын алынған]} аддонның алдыңғы нұсқасының баптау кодын зерттеңіз. Аддонның келесі компоненттері үшін сақтау орнын баптауға жауап беретін код фрагменттерін табыңыз:
-
-      {tabs}
-
-      {tab(Grafana)}
-
-      ```yaml
-      grafana:
-
-        ...
-
-        persistence:
-          enabled: true
-          storageClassName: "csi-ceph-ssd-gz1"
-          accessModes:
-          - ReadWriteOnce
-          size: 1Gi
-
-        ...
-      ```
-
-      {/tab}
-
-      {tab(Alert Manager)}
-
-      ```yaml
-      alertmanager:
-
-        ...
-
-        alertmanagerSpec:
-
-        ...
-
-          storage:
-            volumeClaimTemplate:
-              spec:
-                storageClassName: "csi-ceph-ssd-gz1"
-                accessModes:
-                - ReadWriteOnce
-                resources:
-                  requests:
-                    storage: 1Gi
-      ```
-
-      {/tab}
-
-      {tab(Prometheus)}
-
-      ```yaml
-      prometheus:
-
-        ...
-
-        prometheusSpec:
-
-          ...
-
-          storageSpec:
-            volumeClaimTemplate:
-              spec:
-                storageClassName: "csi-ceph-ssd-gz1"
-                accessModes:
-                - ReadWriteOnce
-                resources:
-                  requests:
-                    storage: 10Gi
-      ```
-
-      {/tab}
-
-      {/tabs}
-
-   1. Орнату жоспарланған аддонның жаңа нұсқасының баптау кодын зерттеңіз.
-
-      Егер сақтау орнын баптауға жауап беретін код фрагменттері бұрын алынғандардан өзгеше болса, оларды түзетіңіз. Grafana, Alert Manager және Prometheus үшін сақтау орнының баптаулары аддонның алдыңғы нұсқасында пайдаланылған ұқсас баптаулармен дәл сәйкес келуі тиіс.
-
-   1. (Опционалды түрде) Аддонды баптау кодына басқа өзгерістер енгізіңіз.
-
-      Егер аддонның алдыңғы нұсқасын орнату кезінде `grafana.adminPassword` өрісінде Grafana-ға кіру құпиясөзін көрсеткен болсаңыз, оны қайта көрсету қажет емес. Аддонның жаңа нұсқасы сақтау орны ретінде бұрынғы PVs-ті пайдаланады, сондықтан құпиясөз өзгеріссіз қалады. Бұл өрісті бос қалдырсаңыз да, аддонның жаңа нұсқасын орнату Grafana-ға кіру құпиясөзін өзгертпейді: Grafana үшін құпиясөзі бар secret жасалады, бірақ ол пайдаланылмайды.
-
-      {note:warn}
-
-      Дұрыс берілмеген баптау коды аддонды орнату кезінде қателерге немесе оның жұмысқа жарамсыз болуына әкелуі мүмкін.
-
-      {/note}
-
-   1. Аддонды орнатыңыз.
-
-      Орнату процесі ұзақ уақыт алуы мүмкін. Оның аяқталуын күтіңіз.
-
-1. Аддон пайдаланатын {linkto(../../reference/pvs-and-pvcs#k8s-pvs-and-pvcs)[text=Persistent Volume Claims (PVCs) және тұрақты томдар (persistent volumes, PVs)]} туралы ақпарат алыңыз:
-
-   ```console
-   kubectl -n $NAMESPACE get pvc
-   ```
-
-   Команда шығысы аддонның алдыңғы нұсқасы үшін {linkto(#k8s-update-monitoring-addon-get-info)[text=бұрын орындалған]} команданың шығысына ұқсас болуы тиіс. Мысалы, `alertmanager...` PVC-і бұрын Alert Manager пайдаланған сол PV-пен байланысқан болуы тиіс. Prometheus пен Grafana үшін де дәл солай.
 
 ## {heading(4. Жаңартудан кейін аддонның жұмысқа қабілеттілігін тексеріңіз)[id=k8s-update-monitoring-addon-check]}
 

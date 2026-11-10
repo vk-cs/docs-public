@@ -1,13 +1,13 @@
 {
-  "title": "Дереккөздер",
+  "title": "Деректер көздері",
   "shortDescription": "",
-  "metaDescription": "Дереккөздер",
-  "sectionTitle": "Дереккөздер",
+  "metaDescription": "Деректер көздері",
+  "sectionTitle": "Деректер көздері",
   "weight": 1,
+  "uuid": "d5fecc11-0e8b-4193-9647-8e5d77a78dcf",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "2de4f94e-3f13-4132-9bde-258cf7c18a07"
+  }
 }

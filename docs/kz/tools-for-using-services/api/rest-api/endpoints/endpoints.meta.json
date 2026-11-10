@@ -1,14 +1,22 @@
 {
   "title": "API эндпоинттері",
-  "shortDescription": "Ағымдағы аймақ үшін {var(cloud)} API эндпоинттерінің тізімі",
-  "metaDescription": "Ағымдағы аймақ үшін VK Cloud API эндпоинттерінің тізімі",
+  "shortDescription": "Ағымдағы өңір үшін {var(cloud)} API эндпоинттерінің тізімі",
+  "metaDescription": "Ағымдағы өңір үшін VK Cloud API эндпоинттерінің тізімі",
   "sectionTitle": "API эндпоинттері",
   "icon": "",
   "weight": 3,
+  "additionalUuids": [
+    "ac5e4ffc-e19b-43c9-8654-105e1205aae7"
+  ],
+  "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047",
   "build": {
     "for": [
-      "public"
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "bb98bc0d-77de-4cc6-a3f0-b99a32eded84"
+  }
 }

@@ -130,7 +130,6 @@ services:
           fluentd-async-connect: "true"
           tag: "nginx"
 
-
 ```
 
 {note:warn}
@@ -145,9 +144,9 @@ services:
 
 ```nginx
 events {
- 
+
  }
- 
+
  http {
     client_max_body_size 20m;
     proxy_cache_path /etc/nginx/cache keys_zone=one:32m max_size=64m;

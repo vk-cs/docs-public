@@ -1,6 +1,5 @@
-# {heading(worker-түйіндер тобын басқару)[id=mk8s-manage-node-group]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 <!-- удалено предупреждение с текстом "Перед выполнением любой операции с кластером из Terraform ознакомьтесь с информацией в разделе {linkto(../helpers/terraform-howto#mk8s-terraform-howto-features)[text=Использование Terraform]}". Вернуть, когда Terraform будет добавлен во второе поколение. -->
 

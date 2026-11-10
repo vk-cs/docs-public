@@ -1,0 +1,16 @@
+{
+  "title": "Сервис данасына қосылу",
+  "shortDescription": "Сервис данасына қосылу нұсқалары",
+  "metaDescription": "VK Data Platform платформасындағы Cloud ClickHouse сервис данасына clickhouse-client және Python, Java, C++, Go драйверлері арқылы қалай қосылу туралы біліңіз",
+  "sectionTitle": "Сервис данасына қосылу",
+  "icon": "",
+  "weight": 2,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": ""
+}

@@ -1,11 +1,11 @@
 {
   "title": "Tagging",
-  "shortDescription": "Объект тегтерін орнату, қарау және жою",
-  "metaDescription": "VK Object Storage жүйесінде объектілерді тегтермен белгілеумен жұмыс істеуге арналған барлық қолжетімді әдістер: объект тегін қосу немесе өзгерту (PutObjectTagging), объект тегін алу (GetObjectTagging), объектінің барлық тегтерін жою (DeleteObjectTagging)",
+  "shortDescription": "Нысан тақтарын орнату, көру және жою",
+  "metaDescription": "VK Object Storage-тағы нысандарды тақтармен белгілеумен жұмыс істеуге арналған барлық қолжетімді әдістер: нысан тағын қосу немесе өзгерту (PutObjectTagging), нысан тағын алу (GetObjectTagging), нысанның барлық тағтарын жою (DeleteObjectTagging)",
   "sectionTitle": "Tagging",
   "icon": "",
   "weight": 10,
-  "uuid": "b0548fe7-60b5-45d4-9778-bf37228de462",
+  "uuid": "423e409c-4852-4c41-95b1-205802507aab",
   "build": {
     "for": [
       "public"

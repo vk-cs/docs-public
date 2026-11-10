@@ -1,0 +1,14 @@
+{
+  "title": "Квоталар және лимиттер",
+  "shortDescription": "Managed Containers сервисінде қолданылатын квоталар мен техникалық шектеулердің тізбесі",
+  "metaDescription": "VK Cloud жобаларында қолданылатын квоталар мен техникалық шектеулердің тізбесі",
+  "sectionTitle": "Квоталар және лимиттер",
+  "icon": "",
+  "weight": 30,
+  "uuid": "cca3bebd-0d7f-4c6f-af3b-741c273eaeae",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Балансировщиксіз подқа арналған публичтік IP",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Балансировщиксіз подқа арналған публичтік IP",
+  "icon": "",
+  "weight": 50,
+  "uuid": "86ba22ed-dd81-4750-bd67-44195dd09e10",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "",
+  "metaDescription": "Lakekeeper VK Data Platform — нысандардың метадеректерін сақтауға және қызмет көрсетуге арналған деректер каталогы",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "dd153721-2d4d-4d09-ad18-94f550ba0a14"
+}

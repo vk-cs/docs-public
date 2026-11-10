@@ -1,37 +1,12 @@
-# {heading(Қызмет данасымен жұмыс)[id=spark_management]}
+# {heading(Сервис данасымен жұмыс жасау)[id=spark_management]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-## {heading(Дана туралы ақпаратты қарау)[id=spark_view]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_view_info]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Дана атауы мен сипаттамасын өңдеу)[id=spark_edit]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_edit_name]}
-
-{/tab}
-
-{/tabs}
-
-{ifndef(public)}
-## {heading(IP мекенжайы мен порттарды өзгерту)[id=spark_change-ip]}
+## {heading(IP мен порттарды өзгерту)[id=spark_change-ip]}
 
 {tabs}
 

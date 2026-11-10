@@ -242,7 +242,7 @@
         requests:
           cpu: 250m
           memory: 512Mi
-   
+
    ztunnel:
     enabled: false
     k8s:

@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Қадамдық нұсқаулар)[id=partner-platform-instructions]}
 
-VK Cloud серіктес платформасының көмегімен клиенттерді және олардың жобаларын басқару.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{var(cloud)} серіктестік платформасы арқылы клиенттерді және олардың жобаларын басқару.

@@ -1,14 +1,16 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Жоба параметрлері)[id=vk-cloud-account-project-manage]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:info}
 
-Қосымша жоба баптаулары [{var(cloud)} жеке кабинетінде](/kz/tools-for-using-services/account/instructions/project-settings/manage) қолжетімді.
+Жобаның қосымша параметрлері {linkto(../../../../account/instructions/project-settings/manage#tools-account-project-manage)[text={var(cloud)} жеке кабинетінде]} қолжетімді.
 
 {/note}
 
-## Жоба идентификаторын алу
+## {heading(Жоба идентификаторын алу)[id=vk-cloud-account-project-pid]}
 
-{include(/kz/_includes/_project_pid_common.md)}
+{include(../../../../../_includes/_project_pid_common.md)}
 
 Жоба идентификаторын алу үшін:
 
@@ -16,36 +18,36 @@
 
 {tab({var(cloud)} Аккаунт)}
 
-{include(/kz/_includes/_project_pid_tab_account.md)}
+{include(../../../../../_includes/_project_pid_tab_account.md)}
 
 {/tab}
 
 {tab(Жеке кабинет)}
 
-{include(/kz/_includes/_project_pid_tab_lk.md)}
+{include(../../../../../_includes/_project_pid_tab_lk.md)}
 
 {/tab}
 
 {/tabs}
 
-## Жоба атауын өзгерту
+## {heading(Жоба атауын өзгерту)[id=vk-cloud-account-project-name]}
 
-Жоба атауын оның өмірлік циклінің кез келген кезеңінде өзгертуге болады.
+Жоба атауын жобаның өмірлік циклінің кез келген кезеңінде өзгертуге болады.
 
 {tabs}
 
 {tab({var(cloud)} Аккаунт)}
 
-{include(/kz/_includes/_project_rename_tab_account.md)}
+{include(../../../../../_includes/_project_rename_tab_account.md)}
 
 {/tab}
 
 {tab(Жеке кабинет)}
 
-{include(/kz/_includes/_project_rename_tab_lk.md)}
+{include(../../../../../_includes/_project_rename_tab_lk.md)}
 
 {/tab}
 
 {/tabs}
 
-{include(/kz/_includes/_project_rename_common.md)}
+{include(../../../../../_includes/_project_rename_common.md)}

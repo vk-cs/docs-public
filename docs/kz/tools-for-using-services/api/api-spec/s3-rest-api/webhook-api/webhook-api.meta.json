@@ -1,11 +1,11 @@
 {
   "title": "Webhooks",
   "shortDescription": "Бакеттердегі оқиғалар бойынша HTTP/HTTPS сұрауларын жіберу арқылы хабарландыруларды баптау",
-  "metaDescription": "VK Object Storage бакеттерінде вебхуктармен (webhook) жұмыс істеуге арналған барлық қолжетімді әдістер: оқиға туралы хабарландыруды қосу (PutBucketNotificationConfiguration), бакет үшін хабарландыру ережелерінің ағымдағы конфигурациясын тексеру (GetBucketNotificationConfiguration)",
+  "metaDescription": "VK Object Storage бакеттеріндегі вебхуктермен (webhook) жұмыс істеуге арналған барлық қолжетімді әдістер: оқиға туралы хабарландыруды қосу (PutBucketNotificationConfiguration), бакет үшін хабарландыру ережелерінің ағымдағы конфигурациясын тексеру (GetBucketNotificationConfiguration)",
   "sectionTitle": "Webhooks",
   "icon": "",
   "weight": 11,
-  "uuid": "f27d61d5-0b4f-4195-8062-14ae9bee333a",
+  "uuid": "80c67385-b262-4835-a629-29e996b232e9",
   "build": {
     "for": [
       "public"

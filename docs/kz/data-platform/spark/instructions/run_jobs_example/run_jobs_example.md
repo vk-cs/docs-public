@@ -1,23 +1,21 @@
-# {heading(Spark тапсырмасын жасау және іске қосудың мысалы)[id=run_jobs]}
+# {heading(Спарк тапсырмасын құру және іске қосудың мысалы)[id=run_jobs]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+Нұсқаулықта Пи санын есептеуге арналған скрипт мысалында Cloud Spark жүйесінде Spark тапсырмаларын құру және іске қосу көрсетілген. Барлық әрекеттер қадамдарға бөлінген:
 
-Нұсқаулықта Пи санын есептеуге арналған скрипт мысалында Cloud Spark сервисінде Spark тапсырмаларын қалай жасау және іске қосу көрсетілген. Барлық әрекеттер қадамдарға бөлінген:
-
-1. {linkto(#run_jobs_install_client)[text=Spark-клиентті орнату]}.
+1. {linkto(#run_jobs_install_client)[text=Spark клиентін орнату]}.
 1. {linkto(#run_jobs_env)[text=Ортаны дайындау]}.
-1. {linkto(#run_jobs_create_job)[text=Spark тапсырмасының скриптін жасау]}.
-1. {linkto(#run_jobs_main)[text=Spark тапсырмасын іске қосуға арналған негізгі скриптті жасау]}.
+1. {linkto(#run_jobs_create_job)[text=Spark тапсырмасының скриптін құру]}.
+1. {linkto(#run_jobs_main)[text=Spark тапсырмасын іске қосуға арналған негізгі скриптті құру]}.
 1. {linkto(#run_jobs_run)[text=Spark тапсырмасын іске қосу]}.
 
 {note:info}
-
-Жұмысты бастамас бұрын {linkto(../create#spark_create)[text=Cloud Spark]} сервисінің данасы жайылғанына көз жеткізіңіз.
-
+Жұмысты бастамас бұрын {linkto(../create#spark_create)[text=Cloud Spark]} сервисінің данасы орналастырылғанына көз жеткізіңіз.
 {/note}
 
 ## {heading(1-қадам. Spark-клиентті орнату)[id=run_jobs_install_client]}
@@ -41,7 +39,6 @@ Cloud Spark сервисіне қосылу тек арнайы Spark-клиен
     - [РЕД ОС, Python 3.11](https://mlplatfrom_prod.hb.ru-msk.vkcloud-storage.ru/mlplatform_client/dist-py311-latest-redos.zip)
     - [AlmaLinux, Python 3.11](https://mlplatfrom_prod.hb.ru-msk.vkcloud-storage.ru/mlplatform_client/dist-py311-latest-almalinux.zip)
     {/cut}
-
 
 ## {heading(2-қадам. Ортаны дайындау)[id=run_jobs_env]}
 
@@ -83,18 +80,15 @@ Cloud Spark сервисіне қосылу тек арнайы Spark-клиен
 
     from pyspark.sql import SparkSession
 
-
     """ Usage: pi [partitions]"""
     spark = SparkSession.builder.appName("PythonPi").getOrCreate()
 
     partitions = int(sys.argv[1]) if len(sys.argv) > 1 else 2
     n = 100000 * partitions
 
-
     def f(_: int) -> float:
     x, y = random() * 2 - 1, random() * 2 - 1  # noqa: S311
     return 1 if x**2 + y**2 <= 1 else 0
-
 
     count = spark.sparkContext.parallelize(range(1, n + 1), partitions).map(f).reduce(add)
     print("Pi is roughly %f" % (4.0 * count / n))
@@ -113,6 +107,7 @@ from mlplatform_client.v2.clients.spark import SparkClient
 from mlplatform_client.v2.utils import wait_job_running, wait_job_succeeded
 
 def spark_demo() -> None:
+
 # Кластерді аламыз (1.2.* нұсқасынан бастап)
 cluster = SparkCluster(
 SparkClient(
@@ -128,7 +123,9 @@ skip_tls_verify=True,
     job_name = "demo-name" 
     manifest = cluster.jobs.get_default_manifest(job_name) 
     manifest.set_executor_settings({"instances": 1, "cores": 1}) 
+
     # Қолданба манифестін баптаймыз 
+
     # manifest.set_spark_conf({"spark.hadoop.fs.s3a.endpoint.region": "RegionOne"}) 
     print("Кластерде іске қосылатын spark-job манифесі:") 
     print(manifest.to_yaml()) 
@@ -166,7 +163,6 @@ skip_tls_verify=True,
     print(f"{job_name} атаулы spark-job жойылып жатыр") 
     job.delete() 
     print("Spark-job жойылды") 
-
 
 if __name__ == "__main__":
 spark_demo()

@@ -1,0 +1,16 @@
+{
+  "title": "«Архитекторлар қолдауымен бұлтта VK Data Lakehouse тестілеу үшін 150 000 бонусдық рубль» акциясының ережелері",
+  "shortDescription": "",
+  "metaDescription": "«Архитекторлар қолдауымен бұлтта VK Data Lakehouse тестілеу үшін 150 000 бонусдық рубль» акциясының ережелері",
+  "sectionTitle": "«Архитекторлар қолдауымен бұлтта VK Data Lakehouse тестілеу үшін 150 000 бонусдық рубль» акциясының ережелері",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 3,
+  "uuid": "2225f83a-d1f0-4621-bd4b-0bffd7aeb249",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

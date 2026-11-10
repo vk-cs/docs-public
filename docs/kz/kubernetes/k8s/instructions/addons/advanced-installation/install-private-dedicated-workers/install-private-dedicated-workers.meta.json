@@ -1,0 +1,17 @@
+{
+  "title": "Аддонды арналған түйіндер тобына орнату",
+  "shortDescription": "",
+  "metaDescription": "Аддонды арналған түйіндер тобына қалай орнатуды біліңіз",
+  "sectionTitle": "Аддонды арналған түйіндер тобына орнату",
+  "icon": "",
+  "weight": 15,
+  "uuid": "7292bfb9-8e8b-4af0-b4a1-621bef9fc535",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

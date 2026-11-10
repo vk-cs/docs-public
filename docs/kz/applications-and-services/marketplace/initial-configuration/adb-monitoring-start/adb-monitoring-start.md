@@ -1,22 +1,25 @@
-{include(/kz/_includes/_translated_by_ai.md)}
-Arenadata DB үшін мониторинг — VK Cloud инфрақұрылымындағы Arenadata дерекқорларын мониторингтеуге арналған дайын шешім. Ол метрикаларды жинауға, визуализациялауға және мәселелер туралы уақтылы хабарлауға арналған алдын ала орнатылған құралдар жиынтығын қамтиды.
+# {heading(Arenadata DB мониторинг қызметін орнату)[id=marketplace-adb-monitoring-start]}
 
-Осы нұсқаулықтағы барлық қадамдарды орындағаннан кейін, сіз:
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-1. VK Cloud жеке кабинетінде Arenadata DB үшін мониторинг сервисін қосасыз.
+Arenadata DB мониторингі — {var(cloud)} инфрақұрылымындағы Arenadata дерекқорларын мониторингтеуге арналған дайын шешім. Метрикаларды жинау, визуализациялау және мәселелер туралы уақтылы хабарландыруға арналған алдын ала орнатылған құралдар жинағын қамтиды.
 
-   Қосылған кезде виртуалды машина автоматты түрде жасалып, оған мыналар орнатылады:
+Осы нұсқаулықтың барлық қадамдарын орындаған соң сіз:
 
-    - [Grafana](https://grafana.com/docs/grafana/latest/) — мониторинг деректерін визуализациялау және талдау сервисі;
-    - [Prometheus](https://prometheus.io/) — мониторинг және хабарландырулар сервисі;
-    - ADB Exporter — Arenadata DB жүйесінен метрикаларды жинау сервисі;
-    - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — Prometheus-тен келетін хабарландыруларды өңдеу құралы.
+1. {var(cloud)} жеке кабинетінде Arenadata DB мониторингі қызметін қосасыз.
 
-1. Arenadata дерекқорын Arenadata DB үшін мониторинг сервисімен жұмыс істеуге дайындайсыз.
-1. ADB Exporter сервисін баптайсыз.
-1. Node Exporter агентін орнатып, баптайсыз — операциялық жүйе күйінің метрикаларын жинау агенті.
-1. cAdvisor агентін орнатып, баптайсыз — Docker контейнерлерінің метрикаларын жинау агенті.
-1. Grafana сервисіне қосылып, Prometheus-тен келіп түсетін деректері бар дашбордтарды қарайсыз.
+   Қосу кезінде автоматты түрде виртуалды машина жасалып, оған мыналар орнатылады:
+
+   - [Grafana](https://grafana.com/docs/grafana/latest/) — мониторинг деректерін визуализациялау және талдау қызметі;
+   - [Prometheus](https://prometheus.io/) — мониторинг және хабарландыру қызметі;
+   - ADB Exporter — Arenadata DB-ден метрикалар жинау қызметі;
+   - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — Prometheus-тен келетін хабарландыруларды өңдеу қызметі.
+
+1. Arenadata дерекқорын Arenadata DB мониторингі қызметімен жұмыс істеуге дайындайсыз.
+1. ADB Exporter қызметін баптайсыз.
+1. Операциялық жүйе күйінің метрикаларын жинау агенті — Node Exporter-ді орнатып, баптайсыз.
+1. Docker контейнерлерінің метрикаларын жинау агенті — cAdvisor-ді орнатып, баптайсыз.
+1. Grafana қызметіне қосылып, Prometheus-тен түсетін деректері бар дашбордтарды қарайсыз.
 
 ## Дайындық қадамдары
 
@@ -92,7 +95,7 @@ Arenadata DB үшін мониторинг — VK Cloud инфрақұрылым
 
    {note:info}
 
-   Егер қол жеткізу деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+   Егер қол жеткізу деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 
@@ -161,7 +164,6 @@ Arenadata DB үшін мониторинг — VK Cloud инфрақұрылым
    CREATE SCHEMA IF NOT EXISTS vkcloud_toolkit;
    CREATE EXTENSION gp_internal_tools;  -- crates session_state schema
 
-
    CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_replication() RETURNS SETOF pg_stat_replication AS
    $$ SELECT * FROM pg_catalog.pg_stat_replication; $$
    LANGUAGE sql SECURITY definer
@@ -172,12 +174,10 @@ Arenadata DB үшін мониторинг — VK Cloud инфрақұрылым
    LANGUAGE sql SECURITY definer
    ;
 
-
    CREATE OR REPLACE VIEW vkcloud_toolkit.v_replication_delay
    AS SELECT pg_current_xlog_location() - ( SELECT pg_stat_replication.replay_location
             FROM vkcloud_toolkit.pg_stat_replication()) AS replication_delay_bytes
    ;
-
 
    CREATE OR REPLACE VIEW vkcloud_toolkit.v_locked_pids
    AS SELECT COALESCE(blockingl.relation::regclass::text, blockingl.locktype) AS locked_item,
@@ -194,7 +194,6 @@ Arenadata DB үшін мониторинг — VK Cloud инфрақұрылым
       JOIN vkcloud_toolkit.pg_stat_activity() blockinga ON blockingl.pid = blockinga.pid AND blockinga.datid = blockeda.datid
    WHERE NOT blockedl.granted AND blockinga.datname = current_database()
    ;
-
 
    CREATE OR REPLACE VIEW vkcloud_toolkit.v_resgroup_slots
    AS SELECT tt.groupname,
@@ -217,7 +216,6 @@ Arenadata DB үшін мониторинг — VK Cloud инфрақұрылым
                      WHERE pg_stat_activity.rsgname IS NOT NULL AND pg_stat_activity.rsgname <> 'unknown'::text
                      GROUP BY pg_stat_activity.rsgid) act ON grc.groupid = act.rsgid) tt
    ;
-
 
    -- 2. grant
    GRANT USAGE ON SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;

@@ -1,0 +1,14 @@
+{
+  "title": "Жеке қызмет көрсету деңгейі туралы келісімдер",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Жеке қызмет көрсету деңгейі туралы келісімдер",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a0232831-941e-45fe-8d68-137129a30a97",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

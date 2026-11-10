@@ -1,11 +1,11 @@
-# {heading(S3-ке деректерді жүктеу кезінде 451 қатесі)[id=s3-error-unavailable_for-legal-reasons]}
+# {heading(S3-ға деректерді жүктеу кезіндегі 451 қатесі)[id=s3-error-unavailable_for-legal-reasons]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Объектілік қоймаға жүгінген кезде `451 Unavailable For Legal Reasons` қатесі пайда болады.
+Объектілік қоймаға өтінген кезде `451 Unavailable For Legal Reasons` қатесі пайда болады.
 
-Бұл қате қол жеткізу заңды себептер бойынша бұғатталғанын білдіреді.
+Бұл қате қолжетімділік заңды себептер бойынша бұғатталғанын білдіреді.
 
-### {heading(Шешімі)[id=s3-error-unavailable_for-legal-reasons-resolve]}
+### {heading(Шешу)[id=s3-error-unavailable_for-legal-reasons-resolve]}
 
-Егер бұғаттау қате деп есептесеңіз, [техникалық қолдауға жүгініңіз](/kz/contacts).
+Егер бұғаттау қате екеніне сенімді болсаңыз, [техникалық қолдау көрсету қызметіне өтініңіз](/kz/contacts).

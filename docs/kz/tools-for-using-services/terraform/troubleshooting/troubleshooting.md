@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Ақауларды жою)[id=terraform-troubleshooting]}
 
-Terraform-пен жұмыс істеу кезінде туындайтын әртүрлі мәселелерді шешу тәсілдері.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+Terraform-мен жұмыс кезінде туындайтын әртүрлі мәселелерді шешу жолдары.

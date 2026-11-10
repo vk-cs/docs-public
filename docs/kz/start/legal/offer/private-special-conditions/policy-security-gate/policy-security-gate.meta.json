@@ -1,0 +1,16 @@
+{
+  "title": "«Security Gate» ЭЕМ бағдарламасының демонстрациялық нұсқасын ұсыну бойынша лицензиялық келісім",
+  "shortDescription": "",
+  "metaDescription": "Бұл құжат «VK Cloud» Платформасы аясында «Security Gate» ЭЕМ бағдарламасының демонстрациялық нұсқасын пайдалану бойынша лицензиялық келісім болып табылады.",
+  "sectionTitle": "«Security Gate» ЭЕМ бағдарламасының демонстрациялық нұсқасын ұсыну бойынша лицензиялық келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 2,
+  "uuid": "1bcf014e-ba98-48c8-98eb-0e57874a197f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

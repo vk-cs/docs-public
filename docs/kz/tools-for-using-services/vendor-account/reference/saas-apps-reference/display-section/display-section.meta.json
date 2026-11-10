@@ -1,13 +1,13 @@
 {
-  "title": "Display секциясы",
+  "title": "display секциясы",
   "shortDescription": "SaaS-қосымшасын қосу шеберіндегі беттерді көрсету параметрлері",
-  "metaDescription": "SaaS-қосымшасы конфигурациясының JSON-файлындағы display секциясы: Marketplace-те SaaS-қосымшасын қосу шеберіндегі беттерді көрсету параметрлері.",
-  "sectionTitle": "Display секциясы",
+  "metaDescription": "SaaS-қосымшасының конфигурациялық JSON-файлындағы display секциясы: Marketplace-тегі SaaS-қосымшасын қосу шеберіндегі беттерді көрсету параметрлері.",
+  "sectionTitle": "display секциясы",
   "weight": 3,
+  "uuid": "074a12c7-6bd7-4b78-adec-f3054d7f0403",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "7e831bbc-4d2e-4c0e-8f75-ce05780e9a4c"
+  }
 }

@@ -1,6 +1,6 @@
 # {heading(kubectl көмегімен кластерге қосылу)[id=mk8s-kubectl]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `kubectl` утилитасы Kubernetes кластерін пәрмен жолынан басқару бойынша барлық операциялар спектрін орындауға мүмкіндік береді. Толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/reference/kubectl/).
 

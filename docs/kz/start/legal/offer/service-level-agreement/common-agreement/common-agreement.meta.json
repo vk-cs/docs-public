@@ -1,0 +1,14 @@
+{
+  "title": "Қызметтер деңгейі туралы Жалпы келісім",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Қызметтер деңгейі туралы Жалпы келісім",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cedee32e-f567-4328-a18d-fc85678384ef",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

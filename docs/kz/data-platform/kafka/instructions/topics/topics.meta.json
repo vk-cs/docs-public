@@ -1,0 +1,16 @@
+{
+  "title": "Топиктерді Kafka CLI арқылы басқару",
+  "shortDescription": "Cloud Kafka топиктерін жасау, көру, өзгерту және жою",
+  "metaDescription": "VK Data Platform-та Kafka CLI арқылы Cloud Kafka топиктерін басқару: жасау, көру, партиялар санын арттыру, сақтау мерзімін өзгерту және жою",
+  "sectionTitle": "Топиктерді Kafka CLI арқылы басқару",
+  "icon": "",
+  "weight": 5,
+  "uuid": "2de8c140-0627-4776-9f91-72b5582d2db4",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

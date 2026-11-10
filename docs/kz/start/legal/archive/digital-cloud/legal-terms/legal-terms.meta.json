@@ -1,0 +1,16 @@
+{
+  "title": "Пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "«VK Cloud» платформасын пайдалану шарттары, 01.02.2025 жылдан бастап",
+  "sectionTitle": "Пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 0,
+  "uuid": "3909eef9-829b-463b-b447-0e8d57efbf7c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

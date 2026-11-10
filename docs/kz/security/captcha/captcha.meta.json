@@ -1,0 +1,20 @@
+{
+  "title": "VK Капча",
+  "shortDescription": "Капча арқылы пайдаланушыларды верификациялау қызметі",
+  "metaDescription": "VK Капча — капча көмегімен қосымшаны боттардан қорғау тәсілі. Веб, iOS және Android үшін SDK, көпдеңгейлі тексеру, 12 тіл.",
+  "sectionTitle": "VK Капча",
+  "hidden": true,
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/kz/tools-for-using-services/api/api-spec/captcha-api"
+    }
+  ],
+  "uuid": "8b991349-41d8-436c-a48a-6702d038e45f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform-ның Standalone нұсқасында жайылған сервис даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform жүйесінде орналастырылған сервис даналарының жұмыс метрикаларын қалай көруді біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -11,7 +11,7 @@
   },
   "weight": 4,
   "additionalUuids": [
-    "f7404e13-45c2-44b0-90a0-57c62bbd0594"
+    "0070f6de-b754-454b-8b3e-d28e62e30dbe"
   ],
-  "uuid": "78fd3b60-bea1-4aec-b912-6b783704e949"
+  "uuid": "d568ca15-0c25-4769-a1d5-076e8d1cc8ed"
 }

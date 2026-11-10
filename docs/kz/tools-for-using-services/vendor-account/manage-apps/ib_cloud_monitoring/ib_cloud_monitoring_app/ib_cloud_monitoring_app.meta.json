@@ -1,13 +1,13 @@
 {
-  "title": "Image-based қолданбаның метрикалары",
+  "title": "Image-based қосымшаның метрикалары",
   "shortDescription": "",
-  "metaDescription": "Image-based қолданбаның метрикалары",
-  "sectionTitle": "Image-based қолданбаның метрикалары",
+  "metaDescription": "Image-based қосымшаның метрикалары",
+  "sectionTitle": "Image-based қосымшаның метрикалары",
   "weight": 3,
+  "uuid": "7978fdef-cc6b-456d-887c-47d02638d3a8",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "cf23aec1-caee-42ad-adaa-88f36921dbbe"
+  }
 }

@@ -1,22 +1,20 @@
 # {heading(Managed Containers)[id=api-spec-magnum]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. [Қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate), егер бұл әлі жасалмаса, API арқылы қолжетімділікті.
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба параметрлері** бөлімін таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. Әзірге жасалмаса, API арқылы қолжетімділікті {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack Service** блогынан **Magnum** эндпоинтін табыңыз.
-1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token).
+1. **OpenStack қызметі** блокінен **Magnum** эндпоинтін тауып алыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/magnumapi-swagger.json "download") бойынша жүктеп ала аласыз.
-
+JSON форматындағы бастапқы спецификацияны [сілтеме](assets/magnumapi-swagger.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/magnumapi-swagger.json)

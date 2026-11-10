@@ -5,12 +5,12 @@
   "sectionTitle": "Ақауларды жою",
   "icon": "",
   "weight": 5,
+  "uuid": "3d89f8b1-cb17-4477-a748-330f1417042c",
   "build": {
     "for": [
       "public",
       "private",
       "private-pg"
     ]
-  },
-  "uuid": "95bd9053-0548-482b-9d29-9b979d2dec17"
+  }
 }

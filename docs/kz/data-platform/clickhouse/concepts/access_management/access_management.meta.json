@@ -1,0 +1,15 @@
+{
+  "title": "VK Private Cloud-та қолжетімділікті басқару",
+  "shortDescription": "Cloud ClickHouse-та жобаның қатысушылары арасында қолжетімділік құқықтары қалай бөлінеді, рөлдік модельдер мысалдары",
+  "metaDescription": "Cloud ClickHouse VK Data Platform-та қолжетімділік құқықтары қалай бөлінетінін біліңіз: базалық рөлдердің әсері және рөлдік модельдер мысалдары",
+  "sectionTitle": "VK Private Cloud-та қолжетімділікті басқару",
+  "icon": "",
+  "weight": 2,
+  "uuid": "92b6b091-5a9f-4f50-9be1-b82379cfdda0",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

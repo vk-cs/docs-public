@@ -1,0 +1,17 @@
+{
+  "title": "ClickHouse мониторингі",
+  "shortDescription": "Орнатылған ClickHouse инстанстарын мониторингтеу",
+  "metaDescription": "VK Cloud жүйесінде жеке хосттардың метрикалары туралы толық ақпарат беретін ClickHouse инстанстарының күйін мониторингтеу. Қолжетімді метрикалардың сипаттамасы, мониторинг деректерін талдау және пайдалану",
+  "sectionTitle": "ClickHouse мониторингі",
+  "icon": "",
+  "weight": 2,
+  "uuid": "fd807829-0188-45e0-8dfe-caabaaf4edf1",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

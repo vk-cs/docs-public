@@ -1,0 +1,14 @@
+{
+  "title": "Image-based қосымшаның бейнесін жасау",
+  "sectionTitle": "Image-based қосымшаның бейнесін жасау",
+  "shortDescription": "Image-based қосымшаның инстансы орнатылған ВМ бейнесін жасау және оны VK Cloud жүйесіне жүктеу",
+  "metaDescription": "Image-based қосымшаның инстансы орнатылған ВМ бейнесін жасау және оны VK Cloud жүйесіне жүктеу. Екі әдіс сипатталған: Packer көмегімен (ұсынылады) және VK Cloud жеке кабинеті арқылы.",
+  "icon": "",
+  "weight": 1,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "55bf52ef-2788-474f-96c6-f66d531f7e73"
+}

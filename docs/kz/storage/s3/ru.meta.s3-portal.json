@@ -1,11 +1,12 @@
 {
   "title": "VK Object Storage",
   "decorator": "list",
-  "metaDescription": "VK Object Storage | S3 API қолдауы бар объектілік хранилище, ол кез келген объектілерді сенімді масштабталатын сақтауды және тұрақты тарату жылдамдығын қамтамасыз етеді",
+  "metaDescription": "VK Object Storage | S3 API қолдауы бар нысандық қойма, ол кез келген деректерді сенімді масштабталатын сақтауды және тұрақты тарату жылдамдығын қамтамасыз етеді",
   "uuid": "",
   "variables": {
-    "system": "Marketplace қолданбалар дүкені",
+    "marketplace": "Marketplace қосымшалар дүкені",
     "revdate": "18.07.2024",
+    "vendor": "VK Tech",
     "cloud": [
       {
         "buildPoint": "public",

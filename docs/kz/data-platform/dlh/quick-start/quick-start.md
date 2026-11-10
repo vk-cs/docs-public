@@ -1,28 +1,28 @@
 # {heading(Жылдам бастау)[id=dlh_quick-start]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+Жылдам бастау үш компонент негізінде Data Lakehouse (DLH) сервисін орналастырудың негізгі сценарийін қамтиды:
 
-Жылдам бастау үш компонент негізіндегі Data Lakehouse (DLH) сервисін өрістетудің базалық сценарийін қамтиды:
-
-- {linkto(../concepts/components/s3#dlh_s3)[text=VK Object Storage]} — PostgreSQL сияқты түрлі ДҚ-лардан алынатын құрылымдалмаған деректер үшін қымбат емес, шексіз кеңейтілетін қойма ретінде пайдаланылатын S3-қойма.
-- {linkto(../concepts/components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} — Apache Iceberg негізінде метадеректер каталогын ұйымдастыру үшін пайдаланылады. DLH сервисінің түрлі компоненттері арасындағы операциялардың келісімділігін қамтамасыз етеді.
-- {linkto(../concepts/components/trino#dlh_trino)[text=Cloud Trino]}— Cloud Iceberg Metastore-пен бірге клиенттерге келесі операцияларды орындау үшін үйреншікті SQL-интерфейсті қамтамасыз етеді:
+- {linkto(../concepts/components/s3#dlh_s3)[text=VK Object Storage]} — әртүрлі БД-дан, мысалы PostgreSQL, алынатын құрылымдалмаған деректерді сақтаудың арзан, шексіз кеңейтілетін қоймасы ретінде пайдаланылатын S3-қойма.
+- {linkto(../concepts/components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} — Apache Iceberg негізінде метадеректер каталогын ұйымдастыру үшін пайдаланылады. DLH сервисінің әртүрлі компоненттері арасындағы операциялардың дәйектілігін қамтамасыз етеді.
+- {linkto(../concepts/components/trino#dlh_trino)[text=Cloud Trino]} — Cloud Iceberg Metastore-мен бірге клиенттерге келесі операцияларды орындауға арналған таныс SQL-интерфейсті қамтамасыз етеді:
 
    - деректерді тасымалдау (ETL);
-   - түсірілген деректермен манипуляциялар (ELT);
+   - алынған деректерді манипуляциялау (ELT);
    - әртүрлі көздерден алынған деректерді біріктіру (Data Mesh);
-   - каталогпен және деректермен басқа да операциялар.
+   - каталогпен және деректермен жасалатын басқа операциялар.
 
-Жылдам бастау қадамдарының барлығын орындағаннан кейін сіз:
+Жылдам бастаудың барлық қадамдарынан өтсеңіз, сіз:
 
-1. Cloud Iceberg Metastore және Cloud Trino сервисінің даналарын жасайсыз.
-1. PostgreSQL ДҚ инстансын жасап, оған Cloud Trino-да қосылымды баптайсыз.
+1. Cloud Iceberg Metastore және Cloud Trino сервистерінің даналарын құрасыз.
+1. PostgreSQL БД данасын құрасыз және Cloud Trino-да оған қосылуға конфигурация жасайсыз.
 
-S3-қойма бакеті Cloud Trino сервисі данасы үшін қосылымдарды баптау кезінде автоматты түрде жасалады.
+S3-қойманың бакеті Cloud Trino сервисінің данасы үшін қосылымдарды баптау кезінде автоматты түрде құрылады.
 
 ## {heading(1. Cloud Iceberg Metastore сервисінің данасын жасаңыз)[id=dlh_quick-start_create_iceberg_instance]}
 

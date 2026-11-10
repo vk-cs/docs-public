@@ -1,16 +1,14 @@
 {
   "title": "Қауіпсіздік топтарын жасау және баптау",
   "shortDescription": "",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. Қауіпсіздік топтарын жасау және баптау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Networks сервисінің нысандарын басқару үшін Terraform-ты қалай пайдалану керек. Қауіпсіздік топтарын жасау және баптау",
   "sectionTitle": "Қауіпсіздік топтарын жасау және баптау",
   "icon": "",
   "weight": 2,
+  "uuid": "52aa965d-86fe-40c0-bf32-5dd47d130e3d",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "91834f63-2c87-42da-9488-047cc72b353d"
+  }
 }

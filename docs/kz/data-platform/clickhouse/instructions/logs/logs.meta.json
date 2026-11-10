@@ -1,14 +1,14 @@
 {
-  "title": "Логтау",
-  "shortDescription": "Сервис данасының логтарын қалай қарауға болады",
-  "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse данасының логтарын қарау және сүзгілеу: оқиға деңгейі мен кезеңді таңдау, жазба мәліметтерін қарау және логтарды жаңарту.",
-  "sectionTitle": "Логтау",
+  "title": "Журнаpling қысқаша: Журнаpling",
+  "shortDescription": "Сервис данасының журналдарын қалай көру",
+  "metaDescription": "VK Data Platform платформасындағы Cloud ClickHouse данасының журналдарымен жұмыс істеу жолын біліңіз: оқиғалар деңгейі мен кезеңін таңдау, жазбалардың толық мәліметтерін көру және журналдарды жаңарту.",
+  "sectionTitle": "Журнаpling",
   "build": {
     "for": [
       "data-p",
       "data-p-pdf"
     ]
   },
-  "weight": 4,
-  "uuid": "91fcb98f-919c-4eed-9cd2-cbc8e87f862c"
+  "weight": 6,
+  "uuid": "75b21f9a-b4ef-4240-bc10-56b27c908c58"
 }

@@ -1,0 +1,18 @@
+{
+  "title": "ADB инстансын қалпына келтіру",
+  "shortDescription": "Аналитикалық деректер қоры инстансын резервтік көшірмеден қалпына келтіру",
+  "metaDescription": "Arenadata DB as a Service: VK Cloud жүйесінде аналитикалық деректер қоры инстансын резервтік көшірмеден қалпына келтіру",
+  "sectionTitle": "ADB инстансын қалпына келтіру",
+  "icon": "",
+  "weight": 9,
+  "uuid": "372cfcd8-0860-4b7d-b500-d10c7fb87e96",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

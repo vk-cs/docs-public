@@ -1,0 +1,14 @@
+{
+  "title": "iOS үшін SDK анықтамалығы",
+  "shortDescription": "iOS-қосымшаларын әзірлеуге арналған VK Капча SDK әдістерінің сипаттамасы",
+  "metaDescription": "iOS-қосымшасында капчаны қалай көрсетуге болады — VK Капча SDK әдістері: getCaptchaViewController, closeCaptcha, конфигурация және нәтижелерді өңдеу.",
+  "sectionTitle": "iOS үшін SDK анықтамалығы",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2ff0e223-0800-4447-bf9e-a58c4ba6bd85",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

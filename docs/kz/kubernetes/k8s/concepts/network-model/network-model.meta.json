@@ -1,0 +1,17 @@
+{
+  "title": "Kubernetes желілік моделі",
+  "shortDescription": "",
+  "metaDescription": "Kubernetes желілік моделінің сипаттамасы және VK Private Cloud платформасының Managed Containers қызметінде қосымшалардың желіні пайдалану ерекшеліктері",
+  "sectionTitle": "Kubernetes желілік моделі",
+  "icon": "",
+  "weight": 16,
+  "uuid": "e2067d28-d768-4f5c-a2e4-ead8e8a504eb",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

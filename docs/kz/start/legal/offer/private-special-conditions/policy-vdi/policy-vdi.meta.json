@@ -1,0 +1,16 @@
+{
+  "title": "«Cloud Desktop» қызметін пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «VK Cloud» Платформасы аясындағы Cloud Desktop қызметін пайдалану шарттарын білдіреді. ",
+  "sectionTitle": "«Cloud Desktop» қызметін пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 6,
+  "uuid": "e2073b8b-708c-4b64-94aa-f5bd6d437f92",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

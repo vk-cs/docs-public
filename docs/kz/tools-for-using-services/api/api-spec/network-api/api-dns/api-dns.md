@@ -1,35 +1,35 @@
-# {heading(Жария DNS аймақтарын басқару)[id=api-spec-dns]}
+# {heading(Жариялы DNS аймақтарын басқару)[id=api-spec-dns]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-[жария DNS](/kz/networks/dns/instructions/publicdns) REST API-ы келесі ресурстарды басқаруды қолдайды:
+{linkto(../../../../../networks/dns/instructions/publicdns#dns-publicdns)[text=Жариялы DNS]} REST API ресурстарды басқаруды қолдайды:
 
-- DNS аймақтарының және олардың жазбаларының тізімдерін қарау;
-- DNS аймақтарын және олардың жазбаларын құру;
-- DNS аймақтарының және олардың жазбаларының параметрлерін қарау;
-- DNS аймақтарын және олардың жазбаларын өзгерту;
-- DNS аймақтарын және олардың жазбаларын жою.
+- DNS-аймақтары мен олардың жазбаларының тізімдерін көру;
+- DNS-аймақтары мен олардың жазбаларын жасау;
+- DNS-аймақтары мен олардың жазбаларының параметрлерін көру;
+- DNS-аймақтары мен олардың жазбаларын өзгерту;
+- DNS-аймақтары мен олардың жазбаларын жою.
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) VK Cloud жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, API арқылы қолжетімділікті [қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. API арқылы қолжетімділік әлі қосылмаған болса, оны {linkto(../../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Настройки проекта** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack Service** блогынан **Publicdns** эндпоинтін табыңыз.
-1. `X-Auth-Token` қолжетімділік токенін [алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token). Сұрауларды жіберу кезінде токенді тақырыпта пайдаланыңыз.
+1. **Сервис OpenStack** блогінен **Publicdns** эндпоинтын табыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}. Сұраныстар жіберген кезде токенді тақырыпта пайдаланыңыз.
 
-Сұрау үлгісі:
+Сұраныс мысалы:
 
 ```curl
-curl --location "https://mcs.mail.ru/public-dns/v2/dns/" --header "X-Auth-Token: gAAAAABlLjgzyxXXXX" --header "Content-Type: application/json"
+curl --location "https://mcs.mail.ru/public-dns/v2/dns/" \
+--header "X-Auth-Token: gAAAAABlLjgzyxXXXX" \
+--header "Content-Type: application/json"
 ```
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/public-dns-api.json "download") арқылы жүктеп ала аласыз.
-
+JSON форматындағы бастапқы спецификацияны [сілтеме](assets/public-dns-api.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/public-dns-api.json)

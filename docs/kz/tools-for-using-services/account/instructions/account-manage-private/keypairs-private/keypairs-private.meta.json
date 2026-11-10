@@ -1,0 +1,18 @@
+{
+  "title": "Кілттік жұптарды басқару",
+  "shortDescription": "Платформадағы SSH-кілттермен қолжетімді операциялар",
+  "metaDescription": "VK Private Cloud платформасындағы SSH кілттерімен қолжетімді операциялар.",
+  "sectionTitle": "Кілттік жұптарды басқару",
+  "icon": "",
+  "weight": 2,
+  "uuid": "8ba2b3aa-014e-4970-8b94-e0a4a429640d",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

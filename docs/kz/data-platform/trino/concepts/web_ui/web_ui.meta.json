@@ -1,0 +1,15 @@
+{
+  "title": "Trino веб-интерфейсі",
+  "shortDescription": "Сұраныстар мен кластер күйін мониторингтеуге арналған Cloud Trino веб-интерфейсі",
+  "metaDescription": "VK Data Platform Cloud Trino веб-интерфейсі туралы біліңіз: мақсаты, негізгі бөлімдер, сұраныстардың күйлері және типтік пайдалану сценарийлері",
+  "sectionTitle": "Trino веб-интерфейсі",
+  "weight": 4,
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "b23b124d-f910-408a-a6f5-3f4dd129ad59"
+}

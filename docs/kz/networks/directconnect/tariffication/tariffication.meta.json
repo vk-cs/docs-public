@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Сервис құны және оны тарификациялау ерекшеліктері",
+  "metaDescription": "Cloud Direct Connect сервисінің құны және оны тарификациялау ерекшеліктері.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 3,
+  "uuid": "05fb9d00-26bd-4c06-a781-0d9182934042",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

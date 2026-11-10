@@ -1,0 +1,14 @@
+{
+  "title": "Терминдер мен анықтамалар",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud платформасында қолданылатын негізгі терминдер мен анықтамалар",
+  "sectionTitle": "Терминдер мен анықтамалар",
+  "icon": "",
+  "weight": 8,
+  "uuid": "8da8d461-dc2e-4fd3-a13e-e24e3d59d04b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

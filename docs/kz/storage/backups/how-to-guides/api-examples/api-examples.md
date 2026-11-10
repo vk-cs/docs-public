@@ -1,14 +1,14 @@
-# {heading(API пайдалану мысалдары)[id=backup-api-examples]}
+# {heading(API қолдану мысалдары)[id=backup-api-examples]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Төменде {var(cloud)} платформасындағы {linkto(../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]} пайдалану бойынша кейбір мысалдар келтірілген.
+Төменде {var(cloud)} қызметінің {linkto(../../../../tools-for-using-services/api/api-spec/backup-api#api-spec-karboii)[text=API Karboii]} қолдану мысалдары келтірілген.
 
 Келтірілген мысалдарды орындау үшін:
 
-1. API арқылы қолжетімділік {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=белсендірілгеніне]} көз жеткізіңіз.
-1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=`X-Subject-Token` қатынау токенін алыңыз]}.
-1. Karboii сервисі үшін эндпоинтті {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=біліңіз]}.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable)[text=Белсендірілгеніне]} API арқылы қолжетімділік көз жеткізіңіз.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Рұқсат токенін алыңыз]} `X-Subject-Token`.
+1. Karboii қызметі үшін {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=эндпоинтті анықтаңыз]}.
 
 Сұрау мысалдарында мыналар қолданылады:
 
@@ -36,12 +36,15 @@
   +-----------------------------+-----------------------------------------------------------+
   ```
 
-## {heading(Жасалған резервтік көшіру жоспарларының тізімін алу)[id=backup-api-examples-get-plan]}
+## {heading(Жасалған сақтық көшірме жоспарларының тізімін алу)[id=backup-api-examples-get-plan]}
 
 Сұрау мысалы:
 
 ```console
-curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>" https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
+curl -X GET \
+-H "Accept: application/json" \
+-H "X-Auth-Token: <ТОКЕН_МӘНІ>" \
+https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
 {cut(Жауап мысалы)}
@@ -69,20 +72,23 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <ЗНАЧЕНИЕ_Т
 
 {/cut}
 
-## {heading(ВМ үшін жаңа резервтік көшіру жоспарын жасау)[id=backup-api-examples-create-plan]}
+## {heading(ВМ үшін жаңа сақтық көшірме жоспарын жасау)[id=backup-api-examples-create-plan]}
 
-Резервтік көшіру жоспарын жасау үшін:
+Сақтық көшірме жоспарын жасау үшін:
 
-1. Резервтік көшіруді қамтамасыз ететін сервистің (`provider_id`) {linkto(#backup-api-examples-get-provider-id)[text=идентификаторын алыңыз]}.
-1. Резервтік көшіру жоспарының негізгі баптаулары берілетін `plan` {linkto(#backup-api-examples-post-plan)[text=объектісін жасаңыз]}.
-1. Резервтік көшіру іске қосылу кестесін беретін {linkto(#backup-api-examples-post-trigger)[text=триггерді жасаңыз]}.
+1. Сақтық көшірме жасауды қамтамасыз ететін қызметтің {linkto(#backup-api-examples-get-provider-id)[text=идентификаторын алыңыз]} (`provider_id`).
+1. Сақтық көшірме жоспарының негізгі баптауларын белгілейтін `plan` нысанын {linkto(#backup-api-examples-post-plan)[text=жасаңыз]}.
+1. Сақтық көшірмелерді іске қосу кестесін белгілейтін {linkto(#backup-api-examples-post-trigger)[text=триггер жасаңыз]}.
 
 ### {heading({counter(backup-api)}. Провайдер идентификаторын алу)[id=backup-api-examples-get-provider-id]}
 
 Сұрау мысалы:
 
 ```console
-curl -X GET     -H "Accept: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
+curl -X GET \
+    -H "Accept: application/json" \
+    -H "X-Auth-Token: <ТОКЕН_МӘНІ>" \
+    https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
 {cut(Жауап мысалы)}
@@ -102,14 +108,18 @@ curl -X GET     -H "Accept: application/json"     -H "X-Auth-Token: <ЗНАЧЕ�
 
 {/cut}
 
-### {heading({counter(backup-api)}. Резервтік көшіру жоспарын жасау)[id=backup-api-examples-post-plan]}
+### {heading({counter(backup-api)}. Сақтық көшірме жоспарын жасау)[id=backup-api-examples-post-plan]}
 
-`provider_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5` пайдаланылады, себебі жоспар БД инстансы үшін емес, виртуалды машина үшін жасалады.
+`provider_id` = `37997f75-0637-XXXX-bf7e-49ff2ff11fa5` қолданылады, өйткені жоспар дерекқор инстансы үшін емес, виртуалды машина үшін жасалады.
 
 Сұрау мысалы:
 
 ```console
-curl -X POST     -H "Accept: application/json"     -H "Content-type: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     -d '{
+curl -X POST \
+    -H "Accept: application/json" \
+    -H "Content-type: application/json" \
+    -H "X-Auth-Token: <ТОКЕН_МӘНІ>" \
+    -d '{
       "plan": {
         "name": "example-plan",
         "resources": [
@@ -123,7 +133,8 @@ curl -X POST     -H "Accept: application/json"     -H "Content-type: application
         "full_day": null,
         "retention_type": "max_backups"
       }
-    }'         https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
+    }' \
+        https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
 {cut(Жауап мысалы)}
@@ -155,7 +166,11 @@ curl -X POST     -H "Accept: application/json"     -H "Content-type: application
 Сұрау мысалы:
 
 ```console
-curl -s -X POST     -H "Accept: application/json"     -H "Content-type: application/json"     -H "X-Auth-Token: <ЗНАЧЕНИЕ_ТОКЕНА>"     -d '{
+curl -s -X POST \
+    -H "Accept: application/json" \
+    -H "Content-type: application/json" \
+    -H "X-Auth-Token: <ТОКЕН_МӘНІ>" \
+    -d '{
       "trigger_info": {
         "name": "example-plan",
         "plan_id": "17f09168-62c3-419b-XXXX-8889aac8fb0f",
@@ -165,7 +180,8 @@ curl -s -X POST     -H "Accept: application/json"     -H "Content-type: applicat
           "next_time": 0
         }
       }
-    }'     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
+    }' \
+    https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/triggers
 ```
 
 {cut(Жауап мысалы)}

@@ -4,10 +4,10 @@
   "metaDescription": "Тарифтік опцияның YAML-файлы",
   "sectionTitle": "Тарифтік опцияның YAML-файлы",
   "weight": 4,
+  "uuid": "bf36c879-dec7-41c4-804b-fde6d631e6a9",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "cb1b11de-382d-4abf-a77e-eaffe58c5d28"
+  }
 }

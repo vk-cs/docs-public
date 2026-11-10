@@ -1,6 +1,6 @@
 # {heading(Floating IP-адреса)[id=vnet-floating-ip]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Сіз Floating IP-адрестерін басқара аласыз: оларды қарау, жобаға қосу және жобадан шығару, сондай-ақ осы IP-адрестерін байланыстыру және ажырату.
 
@@ -134,35 +134,33 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 
 {/tabs}
 
-## {heading(Отвязка Floating IP-адреса)[id=vnet-floating-ip-disassociate]}
+## {heading(Floating IP-мекенжайын байланыстырудан босу)[id=vnet-floating-ip-disassociate]}
 
 {note:warn}
-Қолданыстағы Floating IP-адрестер ешбір портқа тағайындалмаса да тарификацияланады. Егер ажыратылған Floating IP-адрес бұдан былай қажет болмаса, оны {linkto(#vnet-floating-ip-delete)[text=жойыңыз]}.
+Бар Floating IP-мекенжайлары ешбір портқа тағайындалмаған жағдайда да тарифтенеді. Егер босатылған Floating IP-мекенжайы сізге енді қажет болмаса, оны {linkto(#vnet-floating-ip-delete)[text=өшіріңіз]}.
 {/note}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Қажетті IP-адрес орналасқан жобаны таңдаңыз.
-1. **Виртуалды желілер** → **IP-адрестер** бөліміне өтіңіз.
-1. **Floating IP** қойындысына өтіңіз.
-1. Ішкі IP-адреске байланыстырылған Floating IP-адрес үшін ![ ](../../../../../assets/more-icon.svg "inline") белгішесін басып, **IP ажырату** тармағын таңдаңыз.
-1. **Растау** батырмасын басыңыз.
+1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. Қажетті IP-мекенжай орналасқан жобаны таңдаңыз.
+1. **Виртуалды желілер** → {ifndef(public)}**Жылжымалы IP**.{/ifndef}{ifdef(public)}**IP-мекенжайлар** бөліміне өтіңіз.
+1. **Floating IP** қойындысына өтіңіз.{/ifdef}
+1. Ішкі IP-мекенжайға байланыстырылған Floating IP-мекенжайы үшін ![ ](../../../../../assets/more-icon.svg "inline") түймесін басып, **IP-ді босату** тармағын таңдаңыз.
+1. **Растау** түймесін басыңыз.
 
 {/tab}
 
 {tab(OpenStack CLI)}
 
-1. OpenStack клиенті {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
-
-1. Floating IP-адрестерінің {linkto(#vnet-floating-ip-view)[text=тізімін алыңыз]}. Тізімнен порттан ажырату керек болатын Floating IP-адрестің идентификаторын табыңыз.
-
-1. Келесі пәрменді орындаңыз:
+1. OpenStack клиенті {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанын]} тексеріп, жобада {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Floating IP-мекенжайларының тізімін {linkto(#vnet-floating-ip-view)[text=алыңыз]}. Тізімнен порттан босату қажет Floating IP-мекенжайының идентификаторын табыңыз.
+1. Команданы орындаңыз:
 
    ```console
-   openstack floating ip unset <ID_FLOATING_IP-АДРЕСА> --port
+   openstack floating ip unset <ID_FLOATING_IP-МЕКЕНЖАЙЫ> --port
    ```
 
 {/tab}

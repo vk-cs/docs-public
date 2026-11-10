@@ -1,23 +1,17 @@
 {
-  "title": "Grafana өрістету",
-  "shortDescription": "Жобада Grafana 10 сервисін өрістету",
-  "metaDescription": "Marketplace VK Cloud: мақсатты жобада Grafana 10 сервисін өрістету қадамдары",
-  "sectionTitle": "Grafana өрістету",
+  "title": "Grafana орнату",
+  "shortDescription": "Grafana 10 қызметін жобада орнату",
+  "metaDescription": "VK Cloud Marketplace: Grafana 10 қызметін мақсатты жобада орнату қадамдары",
+  "sectionTitle": "Grafana орнату",
   "icon": "",
-  "weight": 7,
+  "weight": 6,
+  "additionalUuids": [
+    "2a9dd393-ad10-4606-ac2b-3fa5557844b3"
+  ],
+  "uuid": "52f065bf-ae76-401d-ab88-90d50c0684f7",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "f500e545-0ba7-4825-9ca3-d7bbd97ce63f"
+  }
 }

@@ -63,7 +63,6 @@
 
 ## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=mk8s-install-advanced-logaas-integration-gen-2-edit-code]}
 
-
 Аддон кодын өңдеу стандартты орнатуға қолданылады.
 
 Өрістердің сипаттамасымен бірге аддонды баптаудың толық коды аддонды орнату кезінде жеке кабинетте қолжетімді. Сондай-ақ [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml) сайтында осы аддонның негізі болып табылатын Fluent Bit баптау коды қолжетімді.

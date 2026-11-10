@@ -1,21 +1,21 @@
-# {heading(VPN-туннелін SDN Neutron арқылы ұйымдастыру)[id=vnet-vpn-tunnel]}
+# {heading(ON-Premises инфрақұрылымы мен SDN Neutron арасында VPN-туннельді ұйымдастыру)[id=vnet-vpn-tunnel]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(cloud)} on-premises инфрақұрылымы мен {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=SDN Neutron]} бар {var(cloud)} виртуалды желісі арасында VPN-туннелі арқылы желілік байланыс орнатуға мүмкіндік береді.
+{var(cloud)} VPN-туннель арқылы on-premises инфрақұрылымы мен {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=SDN Neutron]} бар {var(cloud)} виртуалды желісінің арасында желілік байланысты орнатуға мүмкіндік береді.
 
-Мысал ретінде {var(cloud)} ішіндегі басқа желіге дейін стандартты маршрутизатор негізінде VPN-туннелі құрылады. VPN-эндпоинт ретінде виртуалды машина пайдаланылады. VPN-туннелін баптау жөніндегі нұсқауларды кез келген басқа VPN-эндпоинтпен, мысалы, корпоративтік файерволмен немесе басқа желілік жабдықпен жұмыс істеуге бейімдеуге болады.
+Мысал ретінде {var(cloud)} ішінде стандартты маршрутизатор негізінде басқа бір желіге дейін VPN-туннель құрылады. VPN-эндпоинт ретінде виртуалды машина қолданылады. VPN-туннельді баптау нұсқауларын кез келген басқа VPN-эндпоинтпен, мысалы, корпоративтік файерволмен немесе басқа желілік жабдықпен жұмыс істеуге бейімдеуге болады.
 
-Мысалдағы VPN-туннелі келесі желілерді байланыстырады:
+Мысалдағы VPN-туннель келесі желілерді байланыстырады:
 
-- Клиенттік желі — on-premises инфрақұрылымындағы желіні еліктейтін {var(cloud)} ішіндегі желі.
-- Виртуалды желі — стандартты маршрутизаторға қосылған {var(cloud)} ішіндегі желі.
+- Клиенттік желі — on-premises инфрақұрылымындағы желіні имитациялайтын {var(cloud)} желісі.
+- Виртуалды желі — стандартты маршрутизаторға қосылған {var(cloud)} желісі.
 
-Әр желіде туннельдің жұмысқа қабілеттілігін тексеру үшін виртуалды машиналар жасалады.
+Туннельдің жұмыс істеуін тексеру үшін әр желіде виртуалды машиналар жасалады.
 
 {note:warn}
-Төменде SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=Neutron]} бар желілер үшін VPN-туннелін баптау мысалы келтірілген.
-SDN {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} бар желілерде {var(cloud)} виртуалды желісін клиенттік желімен қосу {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=кеңейтілген маршрутизатор]} арқылы бапталады.
+Әрі қарай {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=Neutron]} SDN бар желілер үшін VPN-туннельді баптау мысалы келтірілген.
+{linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=Sprut]} SDN бар желілерде {var(cloud)} виртуалды желісінің клиенттік желімен байланысы {linkto(../../../../../networks/directconnect/how-to-guides/dc-advanced-router#vnet-dc-advanced-router)[text=жетілдірілген маршрутизатор]} көмегімен бапталады.
 {/note}
 
 ## {heading(Дайындық қадамдары)[id=vnet-vpn-tunnel-prep]}

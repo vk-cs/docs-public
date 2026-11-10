@@ -1,0 +1,18 @@
+{
+  "title": "ДБ инстансын қалпына келтіру",
+  "shortDescription": "ДБ инстансын резервтік көшірмеден қалпына келтіру",
+  "metaDescription": "Cloud Databases: VK Cloud жүйесінде дерекқор инстансын резервтік көшірмеден қалпына келтіру",
+  "sectionTitle": "ДБ инстансын қалпына келтіру",
+  "icon": "",
+  "weight": 9,
+  "uuid": "b2b4f895-eed2-4275-8d18-8343f7cb3193",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

@@ -1,12 +1,12 @@
-# {heading(Кеңейтілгендер)[id=clickhouse_extensions_info]}
+# {heading(Кеңейтімдер)[id=clickhouse_extensions_info]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-Cloud ClickHouse кеңейтілгендері ДҚЖ-ның базалық функционалдылығын инстанс конфигурациясын өзгертпей толықтырады. Оларды кез келген уақытта {linkto(../../instructions/manage#clickhouse_extensions)[text=қосуға немесе өшіруге]} болады.
+Cloud ClickHouse кеңейтімдері СУБД конфигурациясын өзгертпей-ақ оның базалық функционалдылығын толықтырады. Оларды кез келген уақытта {linkto(../../instructions/manage#clickhouse_extensions)[text=қосуға немесе өшіруге]} болады.
 
 ## {heading(Елдер туралы анықтамалық)[id=clickhouse_extension_countries]}
 

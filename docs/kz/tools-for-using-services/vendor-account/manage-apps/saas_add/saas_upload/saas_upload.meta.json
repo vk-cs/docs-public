@@ -1,13 +1,13 @@
 {
-  "title": "SaaS-қолданбаны дүкенге жүктеу",
+  "title": "SaaS-қосымшасын дүкенге жүктеу",
   "shortDescription": "",
-  "metaDescription": "SaaS-қолданбаны дүкенге жүктеу",
-  "sectionTitle": "SaaS-қолданбаны дүкенге жүктеу",
+  "metaDescription": "SaaS-қосымшасын дүкенге жүктеу",
+  "sectionTitle": "SaaS-қосымшасын дүкенге жүктеу",
   "weight": 5,
+  "uuid": "972dd61f-7820-4b61-b2c7-483351a36c13",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "91443c9a-22da-4813-9697-9a043e106613"
+  }
 }

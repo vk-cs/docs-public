@@ -152,7 +152,7 @@ VictoriaMetrics пайдалану арқылы сіз [Marketplace](/kz/start/l
 
    {note:info}
 
-   Егер қол жеткізу деректерін сақтап үлгермесеңіз, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+   Егер қол жеткізу деректерін сақтап үлгермесеңіз, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

@@ -1,0 +1,14 @@
+{
+  "title": "VK Security Gate орнату",
+  "shortDescription": "VK Security Gate қызметін орнату және қосымша қызметтерді конфигурациялау: CodeQL, LLM негізіндегі AI-триаж және Jira интеграциясы",
+  "metaDescription": "VK Security Gate орнатылғаннан кейінгі бастапқы баптау бойынша практикалық нұсқаулық: SSH арқылы қосылу, secgate CLI арқылы өнімді басқару, CodeQL жүктеп алу және баптау, табылғандардарға AI-триаж үшін LLM қосу және Jira интеграциясы",
+  "sectionTitle": "VK Security Gate орнату",
+  "icon": "",
+  "weight": 21,
+  "uuid": "b88c28d7-1adc-4ea9-a561-8ecab6343715",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

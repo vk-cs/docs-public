@@ -1,11 +1,11 @@
 {
   "title": "Multipart",
-  "shortDescription": "Құрамдас жүктеу арқылы үлкен көлемді файлдарды бөліктермен жүктеу",
-  "metaDescription": "VK Object Storage жүйесінде объектілерді құрамдас жүктеуге арналған барлық қолжетімді әдістер: жүктеуді инициализациялау (CreateMultipartUpload), объект бөліктерін жүктеу (UploadPart), жүктеуді аяқтау (CompleteMultipartUpload), жүктеуді үзу (AbortMultipartUpload), жүктелген бөліктер тізімін алу (ListParts)",
+  "shortDescription": "Үлкен көлемді файлдарды құрамдас жүктеу арқылы бөліктермен жүктеу",
+  "metaDescription": "VK Object Storage объектілерін құрамдас жүктеуге арналған барлық қолжетімді әдістер: жүктеуді инициализациялау (CreateMultipartUpload), объект бөліктерін жүктеу (UploadPart), жүктеуді аяқтау (CompleteMultipartUpload), жүктеуді үзу (AbortMultipartUpload), жүктелген бөліктер тізімін алу (ListParts)",
   "sectionTitle": "Multipart",
   "icon": "",
   "weight": 6,
-  "uuid": "65f8fa47-2068-479c-bdc8-b4e5049c0655",
+  "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
   "build": {
     "for": [
       "public"

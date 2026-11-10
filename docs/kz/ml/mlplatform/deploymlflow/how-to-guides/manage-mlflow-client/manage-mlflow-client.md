@@ -72,7 +72,7 @@ client = get_deploy_client('vk-cloud-mlplatform')
 deploy_server_name = "deploy_server_one"
 client.create_endpoint(name=deploy_server_name)
 ```
-  
+
 `client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ssd", av_zone=None)`
 
 Жоғарыда параметрлердің толық тізімі келтірілген. Орналастыру серверін тек сервер атауын көрсету арқылы да жасауға болады. Бұл жағдайда `av_zone` параметрінің мәні ретінде байланыстырылған MLflow сервисі орналасқан аймақ таңдалады.

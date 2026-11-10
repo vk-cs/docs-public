@@ -1,0 +1,14 @@
+{
+  "title": "Техникалық қызмет көрсету регламенті",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Техникалық қызмет көрсету регламенті",
+  "icon": "",
+  "weight": 6,
+  "uuid": "e5873c9a-69ae-4a33-9ded-1bc4f50be64e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

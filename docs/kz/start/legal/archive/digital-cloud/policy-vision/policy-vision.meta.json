@@ -1,0 +1,16 @@
+{
+  "title": "«Vision» бағдарламасына арналған лицензиялық келісім",
+  "shortDescription": "",
+  "metaDescription": "Осы Лицензиялық келісім (әрі қарай «Келісім») «Цифровое облако» ЖШС (әрі қарай «Лицензиар») және Сіздің арасыңдағы қатынастарды реттейді",
+  "sectionTitle": "«Vision» бағдарламасына арналған лицензиялық келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "3c5d065f-bfe9-462e-96a1-04875248f6be",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

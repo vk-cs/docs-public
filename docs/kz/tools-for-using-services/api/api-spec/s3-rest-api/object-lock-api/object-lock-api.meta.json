@@ -1,11 +1,11 @@
 {
   "title": "Object Lock",
-  "shortDescription": "Объектілерді жоюды мерзімсіз (legal hold) және уақытша (retention) бұғаттауды орнату, сондай-ақ әдепкі уақытша бұғаттауды баптау",
-  "metaDescription": "VK Object Storage жүйесінде объектілерді бұғаттаумен жұмыс істеуге арналған барлық қолжетімді әдістер: мерзімсіз бұғаттауды орнату немесе алып тастау (PutObjectLegalHold), мерзімсіз бұғаттаудың күйін алу (GetObjectLegalHold), уақытша бұғаттауды орнату, баптау немесе алып тастау (PutObjectRetention), уақытша бұғаттаудың күйін алу (GetObjectRetention), әдепкі уақытша бұғаттауды орнату, баптау немесе алып тастау (PutObjectLockConfiguration) немесе әдепкі уақытша бұғаттаудың күйін алу (GetObjectLockConfiguration)",
+  "shortDescription": "Нысандарды жоюға мерзімсіз (legal hold) және уақытша (retention) блоктау орнату, сонымен қатар әдепкі уақытша блоктауды баптау",
+  "metaDescription": "VK Object Storage жүйесінде нысандарды блоктаумен жұмыс істеуге арналған барлық қолжетімді әдістер: мерзімсіз блоктауды орнату немесе алу (PutObjectLegalHold), мерзімсіз блоктау күйін алу (GetObjectLegalHold), уақытша блоктауды орнату, баптау немесе алу (PutObjectRetention), уақытша блоктау күйін алу (GetObjectRetention), әдепкі уақытша блоктауды орнату, баптау немесе алу (PutObjectLockConfiguration) немесе әдепкі уақытша блоктау күйін алу (GetObjectLockConfiguration)",
   "sectionTitle": "Object Lock",
   "icon": "",
   "weight": 8,
-  "uuid": "51e1a0df-e8d9-4b49-8e91-fdb07a7a5bcf",
+  "uuid": "cadd5118-c626-48b3-801f-ec59138816d7",
   "build": {
     "for": [
       "public"

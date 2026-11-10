@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "JupyterHub сервисі туралы ақпарат",
+  "metaDescription": "Сервис туралы",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "033caf9d-85b7-4d25-993d-cee5ebc8acf9"
+}

@@ -1,16 +1,14 @@
 {
-  "title": "VPN қосылымын жасау",
+  "title": "VPN байланысын құру",
   "shortDescription": "",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. VPN қосылымын жасау",
-  "sectionTitle": "VPN қосылымын жасау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Networks сервісінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек. VPN-байланысын құру",
+  "sectionTitle": "VPN байланысын құру",
   "icon": "",
   "weight": 2,
+  "uuid": "24531a5f-a42b-4f14-a6d7-ebd154e71d02",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "1c280c7f-2597-4c40-8c95-0c51d2309026"
+  }
 }

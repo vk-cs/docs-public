@@ -1,0 +1,14 @@
+{
+  "title": "Marketplace-ке image-based қосымшаны жүктеу",
+  "shortDescription": "Marketplace-ке image-based қосымшаны жүктеу жүйесінің компоненттері және олардың өзара әрекеттесу схемасы",
+  "metaDescription": "Marketplace-ке image-based қосымшаны жүктеуге қатысатын VK Cloud платформасы компоненттерінің қысқаша сипаттамасы. Жүктеу процесіндегі олардың функциялары және өзара әрекеттесу схемасы.",
+  "sectionTitle": "Marketplace-ке image-based қосымшаны жүктеу",
+  "isBeta": true,
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "46fd8892-ba9d-4689-b0b7-e5a83f0b3145"
+}

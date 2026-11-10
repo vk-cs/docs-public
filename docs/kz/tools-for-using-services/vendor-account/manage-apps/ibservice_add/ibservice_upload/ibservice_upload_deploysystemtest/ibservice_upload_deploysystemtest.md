@@ -1,43 +1,43 @@
-# {heading(Манифесттерді орналастыру жүйесімен тестілеу)[id=ibservice_upload_deploysystemtest]}
+# {heading(Манифесттерді жүйеорталықтау жүйесімен тесттеу)[id=ibservice_upload_deploysystemtest]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Terraform манифесттерін жергілікті түрде тестілегеннен кейін және сервистік пакетті дүкенге жүктеу алдында `plans/<PLAN_NAME>/deployment/deploy.tf` манифесттерін орналастыру жүйесімен тестілеу ұсынылады. Бұл орналастыру жүйесі сипатталған барлық ресурстарды жасай алатынына көз жеткізуге мүмкіндік береді.
+Terraform манифесттерін жергілікті тесттеуден кейін және сервистік пакетті дүкенге жүктемес бұрын `plans/<PLAN_NAME>/deployment/deploy.tf` манифесттерін жүйеорталықтау жүйесімен тесттеу ұсынылады. Бұл сипатталған барлық ресурстарды жүйеорталықтау жүйесі жасай алатынына көз жеткізуге мүмкіндік береді.
 
 {note:warn}
 
-Орналастыру жүйесімен тестілеу алдында OpenStack PID жеткізушілер тізіміне енгізілгеніне көз жеткізіңіз (толығырақ — {linkto(../ibservice_upload_prepare#ibservice_upload_prepare)[text=%text]} бөлімінде).
+Жүйеорталықтау жүйесімен тесттеуден бұрын OpenStack PID жеткізушілер тізіміне енгізілгеніне көз жеткізіңіз (толығырақ — {linkto(../ibservice_upload_prepare#ibservice_upload_prepare)[text=%text]} бөлімінде).
 
 {/note}
 
-Тестілеу барысында мыналар қажет болады:
+Тесттеу барысында қажет болады:
 
-* API-ге қол жеткізу кілті. Кілт бұлттық платформаның ЖК-дағы жоба баптаулары бетінде көрсетіледі (API арқылы қол жеткізу туралы ақпараты бар қойынды).
-* Бұлттық платформаның домендік атауы — `https://cloud.vk.com`.
+* API-ға қолжетімділік кілті. Кілт бұлт платформасының ЖК-да жобаның баптаулар бетінде көрсетіледі (API арқылы қолжетімділік туралы ақпарат бар қойынды).
+* Бұлт платформасының домендік атауы — `https://cloud.vk.ru`.
 
-Terraform манифестін орналастыру жүйесімен тестілеу үшін:
+Terraform манифестін жүйеорталықтау жүйесімен тесттеу үшін:
 
-1. Бұлттық платформаның ЖК-да екі факторлы аутентификацияны (2FA) және API арқылы қол жеткізуді қосыңыз (толығырақ — [2FA басқару](/kz/access/iam/instructions/manage-2fa) бөлімінде).
-1. API сұрауларын орындаңыз:
+1. Бұлт платформасының ЖК-да екіфакторлы аутентификацияны (2FA) және API арқылы қолжетімділікті қосыңыз (толығырақ — [2FA басқару](/kz/access/iam/instructions/manage-2fa) бөлімінде).
+1. API-сұрауларды орындаңыз:
 
-   1. Манифесті орналастыру жүйесіне жүктеңіз.
+   1. Манифестті жүйеорталықтау жүйесіне жүктеңіз.
    1. Жүктелген манифесттің ағымдағы конфигурациясын тексеріңіз.
-   1. Сервис инстансын жасаңыз.
-   1. Сервис инстансын жойыңыз.
+   1. Сервистің инстансын жасаңыз.
+   1. Сервистің инстансын жойыңыз.
 
-   API сұрауларының параметрлері келесі бөлімдерде сипатталған.
+   API-сұраулардың параметрлері келесі бөлімдерде сипатталған.
 
 {note:info}
 
-Жасау барысында, сервис инстансы жасалғаннан кейін және жойылғаннан кейін оның күйін тексеріңіз. Егер сервис инстансының мәртебесі `failed` болса, қате журналын қараңыз (толығырақ — {linkto(#deploysystemtest_log)[text=%text]} бөлімінде).
+Сервистің инстансын жасау барысында, жасаудан кейін және жоюдан кейін оның күйін тексеріңіз. Сервистің инстансының статусы `failed` болса, қатенің логын қараңыз (толығырақ — {linkto(#deploysystemtest_log)[text=%text]} бөлімінде).
 
 {/note}
 
-## {heading(Terraform манифестін орналастыру жүйесіне жүктеу)[id=upload_terraform_manifest]}
+## {heading(Terraform манифестін жүйеорталықтау жүйесіне жүктеу)[id=upload_terraform_manifest]}
 
-`plans/<PLAN_NAME>/deployment/deploy.tf` манифестін орналастыру жүйесіне жүктеу үшін {linkto(#tab_request_params)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз.
+`plans/<PLAN_NAME>/deployment/deploy.tf` манифестін жүйеорталықтау жүйесіне жүктеу үшін {linkto(#tab_request_params)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз.
 
-{caption(Кесте {counter(table)[id=numb_tab_request_params]} — Манифестті жүктеу сұрауының параметрлері)[align=right;position=above;id=tab_request_params;number={const(numb_tab_request_params)}]}
+{caption({counter(table)[id=numb_tab_request_params]} кесте — Манифестті жүктеуге арналған сұрау параметрлері)[align=right;position=above;id=tab_request_params;number={const(numb_tab_request_params)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -55,7 +55,7 @@ Terraform манифестін орналастыру жүйесімен тес�
 
 Мұнда:
 
-* `<CLOUD_HOST>` — бұлттық платформаның домендік атауы.
+* `<CLOUD_HOST>` — бұлт платформасының домендік атауы.
 * `<MANIFEST_NAME>` — манифест атауы
 
 |
@@ -63,23 +63,23 @@ Terraform манифестін орналастыру жүйесімен тес�
 |
 `plans/<PLAN_NAME>/deployment/deploy.tf` манифестінің мазмұны.
 
-Егер тестілеу үшін провайдерлердің қосымша ресурстары қажет болса, оларды сұрау денесіне қосыңыз
+Егер тесттеу үшін жеткізушілердің қосымша ресурстары қажет болса, оларды сұрау денесіне қосыңыз
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
-{caption(Манифестті жүктеу сұрауының мысалы)[align=left;position=above]}
+{caption(Манифестті жүктеуге арналған сұрау мысалы)[align=left;position=above]}
 
 {tabs}
 
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <AUTH_TOKEN>' \
 --data-binary "@deploy.tf"
 ```
@@ -89,7 +89,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <AUTH_TOKEN>" ^
 --data-binary "@deploy.tf"
 ```
@@ -100,16 +100,16 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes;number={const(numb_tab_http_codes)}]}
+{caption({counter(table)[id=numb_tab_http_codes]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes;number={const(numb_tab_http_codes)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |201
-|Манифест жүктелді немесе жаңартылды
+|Манифест жүктелген немесе жаңартылған
 
 |400, 500
 |Сұрауды орындау қатесі
@@ -119,17 +119,17 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 |===
 {/caption}
 
-Егер сұрау орналастыру жүйесінде бұрыннан бар манифест атауымен жіберілсе, осы манифесттің конфигурациясы жаңартылады.
+Жүйеорталықтау жүйесінде бұрыннан бар манифест атауымен сұрау жіберілгенде, осы манифестің конфигурациясы жаңартылады.
 
-Манифесттер бір пайдаланушы аккаунты шеңберінде жүктеледі.
+Манифесттер бір пайдаланушы аккаунты шегінде жүктеледі.
 
-Terraform дұрыс жұмыс істеуін қамтамасыз ету үшін манифесттің бұрын жүктелген барлық конфигурациялары орналастыру жүйесінде сақталады. Сервис инстансы GET сұрауы `/hoe/config/<MANIFEST_NAME>` арқылы көруге болатын манифесттің ағымдағы конфигурациясымен орналастырылады (толығырақ — {linkto(#check_terraform_configuration)[text=%text]} бөлімінде).
+Бұрын жүктелген манифест конфигурацияларының барлығы Terraform дұрыс жұмыс істеуін қамтамасыз ету үшін жүйеорталықтау жүйесінде сақталады. Сервистің инстансы манифесттің ағымдағы конфигурациясымен орналастырылады, оны `/hoe/config/<MANIFEST_NAME>` GET-сұрауы арқылы көруге болады (толығырақ — {linkto(#check_terraform_configuration)[text=%text]} бөлімінде).
 
 ## {heading(Terraform манифестінің ағымдағы конфигурациясын тексеру)[id=check_terraform_configuration]}
 
-Орналастыру жүйесінде тұрған Terraform манифестінің ағымдағы конфигурациясын тексеру үшін {linkto(#tab_check_terraform_configuration)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз.
+Жүйеорталықтау жүйесінде орналасқан Terraform манифестінің ағымдағы конфигурациясын тексеру үшін {linkto(#tab_check_terraform_configuration)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз.
 
-{caption(Кесте {counter(table)[id=numb_tab_check_terraform_configuration]} — Манифесттің ағымдағы конфигурациясын тексеру сұрауының параметрлері)[align=right;position=above;id=tab_check_terraform_configuration;number={const(numb_tab_check_terraform_configuration)}]}
+{caption({counter(table)[id=numb_tab_check_terraform_configuration]} кесте — Манифесттің ағымдағы конфигурациясын тексеру сұрауының параметрлері)[align=right;position=above;id=tab_check_terraform_configuration;number={const(numb_tab_check_terraform_configuration)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -147,13 +147,13 @@ Terraform дұрыс жұмыс істеуін қамтамасыз ету үш�
 
 Мұнда:
 
-* `<CLOUD_HOST>` — бұлттық платформаның домендік атауы.
+* `<CLOUD_HOST>` — бұлт платформасының домендік атауы.
 * `<MANIFEST_NAME>` — манифест атауы
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
@@ -164,7 +164,7 @@ Terraform дұрыс жұмыс істеуін қамтамасыз ету үш�
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -173,7 +173,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/config/test_1.0 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -183,19 +183,19 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes_after_check)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes_after_check)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes_after_check]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes_after_check;number={const(numb_tab_http_codes_after_check)}]}
+{caption({counter(table)[id=numb_tab_http_codes_after_check]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes_after_check;number={const(numb_tab_http_codes_after_check)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |200
 |
 Сұрау орындалды.
 
-Сұрауға жауапта көрсетілген Terraform манифестінің ағымдағы конфигурациясы болады
+Сұрауға жауап көрсетілген Terraform манифестінің ағымдағы конфигурациясын қамтиды
 
 |401
 |
@@ -211,11 +211,11 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 |===
 {/caption}
 
-## {heading(Сервис инстансын жасау)[id=create_service_instance]}
+## {heading(Сервистің инстансын жасау)[id=create_service_instance]}
 
-Сервис инстансын жасау үшін {linkto(#tab_create_service_instance)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз. Terraform манифестінің ағымдағы конфигурациясының ресурстары жасалады.
+Сервистің инстансын жасау үшін {linkto(#tab_create_service_instance)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз. Terraform манифестінің ағымдағы конфигурациясының ресурстары жасалады.
 
-{caption(Кесте {counter(table)[id=numb_tab_create_service_instance]} — Сервис инстансын жасау сұрауының параметрлері)[align=right;position=above;id=tab_create_service_instance;number={const(numb_tab_create_service_instance)}]}
+{caption({counter(table)[id=numb_tab_create_service_instance]} кесте — Сервистің инстансын жасау сұрауының параметрлері)[align=right;position=above;id=tab_create_service_instance;number={const(numb_tab_create_service_instance)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -231,7 +231,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 |
 `https://<CLOUD_HOST>/marketplace/api/infra-api/api/v1-public/hoe/object`
 
-Мұнда `<CLOUD_HOST>` — бұлттық платформаның домендік атауы
+Мұнда `<CLOUD_HOST>` — бұлт платформасының домендік атауы
 
 |
 `Content-Type`
@@ -243,25 +243,25 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/config/tes
 |
 Келесі параметрлерді көрсетіңіз:
 
-* `uuid` — UUID4 генераторының көмегімен қалыптастырылған сервис инстансының идентификаторы.
+* `uuid` — UUID4 генераторымен жасалған сервистің инстансының идентификаторы.
 * `config` — манифест атауы.
-* `vars` — манифесттің сыртқы кіріс айнымалылары. Мұндай айнымалылардың мәндерін сұрау денесінде беру пайдаланушының тарифтік жоспарды баптау шеберіндегі әрекеттерін имитациялайды.
+* `vars` — манифесттің сыртқы кіріс айнымалылары. Мұндай айнымалыларға мәндерді сұрау денесінде беру тарифтік жоспарды конфигурациялау шеберінде пайдаланушының әрекеттерін имитациялайды.
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
-{caption(Сервис инстансын жасау сұрауының мысалы)[align=left;position=above]}
+{caption(Сервистің инстансын жасау сұрауының мысалы)[align=left;position=above]}
 
 {tabs}
 
 {tab(Linux (bash))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object \
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object \
 -H "Content-Type: application/json" \
 -H 'x-auth-token: <AUTH_TOKEN>' \
 --data '{
@@ -281,7 +281,7 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object ^
+curl -v -X POST https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object ^
 -H "Content-Type: application/json" ^
 -H "x-auth-token: <AUTH_TOKEN>" ^
 --data "{\"uuid\": \"675f6f08-XXXX-f02311f795d7\", \"config\": \"test_1.0\", \"vars\": {\"sub_network\": \"a793470c-XXXX-67af6c178c8e\", \"image_uuid\": \"163ff752-XXXX-b0001e3e65d3\", \"volume_type\": \"ceph-ssd\", \"flavor_uuid\": \"6e61564f-XXXX-08df5fd84514\"}}"
@@ -293,23 +293,23 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 
 Мұнда:
 
-* `sub_network` — ішкі желінің ID-і.
-* `image_uuid` — сервис образының ID-і.
+* `sub_network` — подсеть ID-сы.
+* `image_uuid` — сервистің бейнесінің ID-сы.
 * `volume_type` — диск түрі.
-* `flavor_uuid` — ВМ конфигурация үлгісінің ID-і.
+* `flavor_uuid` — ВМ конфигурациясының үлгісінің ID-сы.
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes_after_create)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes_after_create)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes_after_create]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes_after_create;number={const(numb_tab_http_codes_after_create)}]}
+{caption({counter(table)[id=numb_tab_http_codes_after_create]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes_after_create;number={const(numb_tab_http_codes_after_create)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |201
-|Сервис инстансы жасалды
+|Сервистің инстансы жасалған
 
 |400, 500
 |Сұрауды орындау қатесі
@@ -319,11 +319,11 @@ curl -v -X POST https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe
 |===
 {/caption}
 
-## {heading(Сервис инстансын жою)[id=delete_service_instance]}
+## {heading(Сервистің инстансын жою)[id=delete_service_instance]}
 
-Terraform манифестін орындау нәтижесінде жасалған сервис инстансын жою үшін {linkto(#tab_delete_service_instance)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз.
+Terraform манифестін орындау нәтижесінде жасалған сервистің инстансын жою үшін {linkto(#tab_delete_service_instance)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз.
 
-{caption(Кесте {counter(table)[id=numb_tab_delete_service_instance]} — Сервис инстансын жою сұрауының параметрлері)[align=right;position=above;id=tab_delete_service_instance;number={const(numb_tab_delete_service_instance)}]}
+{caption({counter(table)[id=numb_tab_delete_service_instance]} кесте — Сервистің инстансын жою сұрауының параметрлері)[align=right;position=above;id=tab_delete_service_instance;number={const(numb_tab_delete_service_instance)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -341,24 +341,24 @@ Terraform манифестін орындау нәтижесінде жасал�
 
 Мұнда:
 
-* `<CLOUD_HOST>` — бұлттық платформаның домендік атауы.
-* `<OBJECT_UUID>` — сервис инстансын орналастыру идентификаторы. Мәні сервис инстансын орналастыру туралы сұраудағы `uuid` параметріне сәйкес келеді
+* `<CLOUD_HOST>` — бұлт платформасының домендік атауы.
+* `<OBJECT_UUID>` — сервистің инстансын орналастыру идентификаторы. Мән сервистің инстансын орналастыру сұрауындағы `uuid` параметріне сәйкес келеді
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
-{caption(Сервис инстансын жою сұрауының мысалы)[align=left;position=above]}
+{caption(Сервистің инстансын жою сұрауының мысалы)[align=left;position=above]}
 
 {tabs}
 
 {tab(Linux (bash))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -367,7 +367,7 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 {tab(Windows (cmd))}
 
 ```console
-curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl -v -X DELETE https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -377,16 +377,16 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes_after_delete)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes_after_delete)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes_after_delete]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes_after_delete;number={const(numb_tab_http_codes_after_delete)}]}
+{caption({counter(table)[id=numb_tab_http_codes_after_delete]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes_after_delete;number={const(numb_tab_http_codes_after_delete)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |201
-|Сервис инстансы жойылды
+|Сервистің инстансы жойылған
 
 |400, 500
 |Сұрауды орындау қатесі
@@ -399,11 +399,11 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 |===
 {/caption}
 
-## {heading(Сервис инстансының күйін тексеру)[id=check_instance_status]}
+## {heading(Сервистің инстансының күйін тексеру)[id=check_instance_status]}
 
-Сервис инстансының күйін тексеру үшін {linkto(#tab_check_instance_status)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз.
+Сервистің инстансының күйін тексеру үшін {linkto(#tab_check_instance_status)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз.
 
-{caption(Кесте {counter(table)[id=numb_tab_check_instance_status]} — Сервис инстансының күйін тексеру сұрауының параметрлері)[align=right;position=above;id=tab_check_instance_status;number={const(numb_tab_check_instance_status)}]}
+{caption({counter(table)[id=numb_tab_check_instance_status]} кесте — Сервистің инстансының күйін тексеру сұрауының параметрлері)[align=right;position=above;id=tab_check_instance_status;number={const(numb_tab_check_instance_status)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -421,24 +421,24 @@ curl -v -X DELETE https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/h
 
 Мұнда:
 
-* `<CLOUD_HOST>` — бұлттық платформаның домендік атауы.
-* `<OBJECT_UUID>` — сервис инстансын орналастыру идентификаторы. Мәні сервис инстансын орналастыру туралы сұраудағы `uuid` параметріне сәйкес келеді
+* `<CLOUD_HOST>` — бұлт платформасының домендік атауы.
+* `<OBJECT_UUID>` — сервистің инстансын орналастыру идентификаторы. Мән сервистің инстансын орналастыру сұрауындағы `uuid` параметріне сәйкес келеді
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
-{caption(Сервис инстансының күйін тексеру сұрауының мысалы)[align=left;position=above]}
+{caption(Сервистің инстансының күйін тексеру сұрауының мысалы)[align=left;position=above]}
 
 {tabs}
 
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -447,7 +447,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/hoe/object/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -457,24 +457,24 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes_status)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes_status)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes_status]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes_status;number={const(numb_tab_http_codes_status)}]}
+{caption({counter(table)[id=numb_tab_http_codes_status]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes_status;number={const(numb_tab_http_codes_status)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |200
 |
 Сұрау орындалды.
 
-Сұрауға жауап сервис инстансының мәртебесін (`status`) қамтиды. Мүмкін мәртебелер:
+Сұрауға жауап сервистің инстансының статусын қамтиды (`status`). Мүмкін статустар:
 
-* `applying` — манифест орындалуда, ресурстар жасалу процесінде.
-* `running` — манифест орындалды, сервис инстансы жасалды.
-* `failed` — манифест қателікпен аяқталды, сервис инстансы жасалмады.
-* `deleted` — сервис инстансы жойылды
+* `applying` — манифест орындалуда, ресурстар жасалу үдерісінде.
+* `running` — манифест орындалған, сервистің инстансы жасалған.
+* `failed` — манифест қатемен аяқталған, сервистің инстансы жасалмаған.
+* `deleted` — сервистің инстансы жойылған
 
 |401
 |
@@ -482,7 +482,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 
 |404
 |
-Сервис инстансының идентификаторы табылмады
+Сервистің инстансының идентификаторы табылмады
 
 |500
 |
@@ -490,7 +490,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 |===
 {/caption}
 
-{caption(Сервис инстансы жойылғаннан кейін орындалған сұрауға жауап мысалы)[align=left;position=above]}
+{caption(Сервистің инстансын жойғаннан кейін орындалған сұрауға жауаптың мысалы)[align=left;position=above]}
 ```yaml
 {
     "uuid": "675f6f08-XXXX-f02311f795d7",
@@ -512,25 +512,25 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 
 Мұнда:
 
-* `uuid` — сервис инстансын орналастыру идентификаторы.
-* `target_status` — сервис инстансының мақсатты мәртебесі (`deleted` немесе `running`).
+* `uuid` — сервистің инстансын орналастыру идентификаторы.
+* `target_status` — сервистің инстансының мақсатты статусы (`deleted` немесе `running`).
 * `vars` — манифесттің кіріс айнымалылары.
 * `out` — манифесттің шығыс параметрлері.
-* `status` — сервис инстансының ағымдағы мәртебесі.
-* `conf_name` — сервисті орналастырған пайдаланушының аты.
-* `conf_hash` — сервис инстансы конфигурациясының хеші.
+* `status` — сервистің инстансының ағымдағы статусы.
+* `conf_name` — сервисті орналастырған пайдаланушының атауы.
+* `conf_hash` — сервистің инстансы конфигурациясының хеші.
 * `pid` — сервисті орналастырған пайдаланушы жобасының идентификаторы (OpenStack PID).
-* `create_at` — сервис инстансы жасалған күн мен уақыт.
-* `update_at` — сервис инстансын орналастыру жүйесі соңғы рет жаңартқан күн мен уақыт.
-* `full_deployed` — сервис инстансы сәтті орналастырылды ма (`deleted` мәртебесі үшін мәні `false` болады).
-* `attempts` — сервис инстансын орналастыру кезіндегі орындалған қайталама әрекеттер саны.
-* `max_attempts` — қайталама әрекеттердің ең көп саны.
+* `create_at` — сервистің инстансы жасалған күн мен уақыт.
+* `update_at` — сервистің инстансын жүйеорталықтау жүйесі соңғы жаңартқан күн мен уақыт.
+* `full_deployed` — сервистің инстансы сәтті орналастырылды ма (`deleted` статусы үшін мән `false` тең).
+* `attempts` — сервистің инстансын орналастыру кезінде орындалған қайталап күш жұмсау саны.
+* `max_attempts` — қайталап күш жұмсаудың максималды саны.
 
-## {heading(Сервис инстансының журналдарын қарау)[id=deploysystemtest_log]}
+## {heading(Сервистің инстансының логтарды қарау)[id=deploysystemtest_log]}
 
-Сервис инстансының журналын қарау үшін {linkto(#tab_log_request)[text=%number кестесінде]} келтірілген параметрлермен сұрауды орындаңыз.
+Сервистің инстансының логын қарау үшін {linkto(#tab_log_request)[text=%number кестеде]} келтірілген параметрлері бар сұрауды орындаңыз.
 
-{caption(Кесте {counter(table)[id=numb_tab_log_request]} — Сервис инстансының журналын шығару сұрауының параметрлері)[align=right;position=above;id=tab_log_request;number={const(numb_tab_log_request)}]}
+{caption({counter(table)[id=numb_tab_log_request]} кесте — Сервистің инстансының логын шығару сұрауының параметрлері)[align=right;position=above;id=tab_log_request;number={const(numb_tab_log_request)}]}
 [cols="2,5", options="header"]
 |===
 |Параметр
@@ -548,24 +548,24 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/hoe/object/675
 
 Мұнда:
 
-* `<CLOUD_HOST>` — бұлттық платформаның домендік атауы.
-* `<OBJECT_UUID>` — сервис инстансын орналастыру идентификаторы. Мәні сервис инстансын орналастыру туралы сұраудағы `uuid` параметріне сәйкес келеді
+* `<CLOUD_HOST>` — бұлт платформасының домендік атауы.
+* `<OBJECT_UUID>` — сервистің инстансын орналастыру идентификаторы. Мән сервистің инстансын орналастыру сұрауындағы `uuid` параметріне сәйкес келеді
 
 |
 `x-auth-token`
 |
-`<AUTH_TOKEN>` — API-ге қол жеткізу кілті
+`<AUTH_TOKEN>` — API-ға қолжетімділік кілті
 |===
 {/caption}
 
-{caption(Сервис инстансының журналын шығару сұрауының мысалы)[align=left;position=above]}
+{caption(Сервистің инстансының логын шығару сұрауының мысалы)[align=left;position=above]}
 
 {tabs}
 
 {tab(Linux (bash))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 \
 -H 'x-auth-token: <AUTH_TOKEN>'
 ```
 
@@ -574,7 +574,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 {tab(Windows (cmd))}
 
 ```console
-curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
+curl https://cloud.vk.ru/marketplace/api/infra-api/api/v1-public/logs/instance/675f6f08-XXXX-f02311f795d7 ^
 -H "x-auth-token: <AUTH_TOKEN>"
 ```
 
@@ -584,19 +584,19 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 
 {/caption}
 
-Жауаптың HTTP кодтары {linkto(#tab_http_codes_log)[text=%number кестесінде]} келтірілген.
+Жауаптың HTTP-кодтары {linkto(#tab_http_codes_log)[text=%number кестеде]} келтірілген.
 
-{caption(Кесте {counter(table)[id=numb_tab_http_codes_log]} — Жауаптың HTTP кодтары)[align=right;position=above;id=tab_http_codes_log;number={const(numb_tab_http_codes_log)}]}
+{caption({counter(table)[id=numb_tab_http_codes_log]} кесте — Жауаптың HTTP-кодтары)[align=right;position=above;id=tab_http_codes_log;number={const(numb_tab_http_codes_log)}]}
 [cols="2,5", options="header"]
 |===
 |Код
-|Сипаттама
+|Сипаттамасы
 
 |200
 |
 Сұрау орындалды.
 
-Сұрауға жауапта `message` параметрінде сервис инстансының журналдары көрсетіледі
+Сұрауға жауапта `message` параметрінде сервистің инстансының логтары көрсетіледі
 
 |401
 |
@@ -604,7 +604,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 
 |404
 |
-Сервис инстансының идентификаторы табылмады
+Сервистің инстансының идентификаторы табылмады
 
 |500
 |
@@ -612,7 +612,7 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 |===
 {/caption}
 
-{caption(Сұрауға жауап мысалы)[align=left;position=above]}
+{caption(Сұрауға жауаптың мысалы)[align=left;position=above]}
 ```yaml
 [
   {
@@ -627,16 +627,16 @@ curl https://cloud.vk.com/marketplace/api/infra-api/api/v1-public/logs/instance/
 ```
 {/caption}
 
-## {heading(Агент жұмысының журналдары мен нәтижелерін қарау)[id=agent_log]}
+## {heading(Агенттің жұмыс логтары мен нәтижелерін қарау)[id=agent_log]}
 
-Агент жұмысының журналдары мен нәтижелерін қарау үшін:
+Агенттің жұмыс логтары мен нәтижелерін қарау үшін:
 
-1. Агент орнатылған ВМ-ға қашықтан қол жеткізу протоколы арқылы қосылыңыз (толығырақ — [ВМ-ға қосылу](/kz/computing/iaas/instructions/vm/vm-connect) бөлімінде) немесе бұлттық платформаның ЖК-дағы VNC-консолі арқылы.
+1. Агент орнатылған ВМ-ге қашықтан қолжетімділік протоколы арқылы қосылыңыз (толығырақ — [ВМ-ге қосылу](/kz/computing/iaas/instructions/vm/vm-connect) бөлімінде) немесе бұлт платформасының ЖК-дағы VNC-консолі көмегімен.
 
    {note:info}
 
-   Агент орнатылған ВМ атауы `plans/<PLAN_NAME>/deployment/deploy.tf` манифестіндегі `ivkcs_agent_init` немесе `ivkcs_user_data` ресурсында берілген.
+   Агент орнатылған ВМ-нің атауы `plans/<PLAN_NAME>/deployment/deploy.tf` манифестіндегі `ivkcs_agent_init` немесе `ivkcs_user_data` ресурсында берілген.
 
    {/note}
-1. Журналдарды қарау үшін `journalctl -u sower` пәрменін орындаңыз.
+1. Логтарды қарау үшін `journalctl -u sower` командасын орындаңыз.
 1. Нәтижелерді қарау үшін `/etc/sower/result` директориясына өтіңіз.

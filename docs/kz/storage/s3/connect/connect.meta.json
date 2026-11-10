@@ -1,16 +1,16 @@
 {
-  "title": "Қоймаға қосылу",
-  "shortDescription": "VK Object Storage қоймасына AWS CLI, файлдық менеджерлер, SDK арқылы қосылу",
-  "metaDescription": "VK Object Storage қоймасына ыңғайлы тәсілмен қосылу: AWS CLI, файлдық менеджерлер (Cyberduck, WinSCP, Диск‑О:, S3FS) және SDK (Python, Go және т.б.) арқылы қатынауды баптау және тексеру — кілттерді алу, endpoint/region көрсету, типтік операциялардың мысалдары.",
-  "sectionTitle": "Қоймаға қосылу",
+  "title": "Сақтауышқа қосылу",
+  "shortDescription": "AWS CLI, файлдық менеджерлер, SDK қолдана отырып VK Object Storage сақтауышына қосылу",
+  "metaDescription": "VK Object Storage сақтауышына ыңғайлы тәсілмен қосылу: AWS CLI, файлдық менеджерлер (Cyberduck, WinSCP, Диск‑О:, S3FS) және SDK (Python, Go және т.б.) арқылы қолжетімділікті баптау және тексеру — кілттерді алу, endpoint/region көрсету, типтік операциялар мысалдары.",
+  "sectionTitle": "Сақтауышқа қосылу",
   "icon": "",
   "weight": 3,
+  "uuid": "b43a9538-c2a6-4df9-a384-ead71809cabb",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "74a63765-a50d-40c0-b724-3eeec2c9baac"
+  }
 }

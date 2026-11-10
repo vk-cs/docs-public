@@ -1,13 +1,13 @@
 {
-  "title": "Қызметті жүктеу кезеңдері",
+  "title": "Сервисті жүктеу кезеңдері",
   "shortDescription": "",
-  "metaDescription": "Қызметті жүктеу кезеңдері",
-  "sectionTitle": "Қызметті жүктеу кезеңдері",
+  "metaDescription": "Сервисті жүктеу кезеңдері",
+  "sectionTitle": "Сервисті жүктеу кезеңдері",
   "weight": 2,
+  "uuid": "a5dcd1b5-04af-41de-9979-255948079b74",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "5f3f381f-1975-4553-a068-3bab7d8c0750"
+  }
 }

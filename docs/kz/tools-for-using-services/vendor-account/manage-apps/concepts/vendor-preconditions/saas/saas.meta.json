@@ -1,13 +1,13 @@
 {
-  "title": "Талаптар API SaaS-қосымшаларына",
+  "title": "SaaS-қосымшаларының API талаптары",
   "shortDescription": "",
-  "metaDescription": "Талаптар API SaaS-қосымшаларына",
-  "sectionTitle": "Талаптар API SaaS-қосымшаларына",
+  "metaDescription": "SaaS-қосымшаларының API талаптары",
+  "sectionTitle": "SaaS-қосымшаларының API талаптары",
   "weight": 3,
+  "uuid": "00251bc3-7915-47ab-aeb1-9d66b86953eb",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "2d052041-d4a4-4989-82b4-84f2fc107bd7"
+  }
 }

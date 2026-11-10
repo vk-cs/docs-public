@@ -1,11 +1,11 @@
 {
   "title": "Prefix access keys",
-  "shortDescription": "Префикстік кілттер (prefix access keys) бойынша икемді қол жеткізу баптауларымен пайдаланушыларды жасау",
-  "metaDescription": "VK Object Storage жүйесіне қол жеткізуге арналған префикстік кілттермен жұмыс істеудің барлық қолжетімді әдістері: қол жеткізуге арналған префикстік кілттері бар пайдаланушыны жасау (CreatePrefixKey), префикстік пайдаланушылар тізімін алу (ListPrefixKeys), пайдаланушыдан префикстік кілтті жою (DeletePrefixKey)",
+  "shortDescription": "Префикстік кілттер бойынша (prefix access keys) икемді рұқсат баптаулары бар пайдаланушыларды жасау",
+  "metaDescription": "VK Object Storage-ке рұқсат алуға арналған префикстік кілттермен жұмыс істеудің барлық қолжетімді әдістері: префикстік кілттері бар пайдаланушыны жасау (CreatePrefixKey), префикстік пайдаланушылар тізімін алу (ListPrefixKeys), пайдаланушыдан префикстік кілтті жою (DeletePrefixKey)",
   "sectionTitle": "Prefix access keys",
   "icon": "",
   "weight": 9,
-  "uuid": "d99e8860-d4c8-4edb-b96a-8bf0398f943f",
+  "uuid": "9120115e-616f-48ca-a282-12639a63a366",
   "build": {
     "for": [
       "public"

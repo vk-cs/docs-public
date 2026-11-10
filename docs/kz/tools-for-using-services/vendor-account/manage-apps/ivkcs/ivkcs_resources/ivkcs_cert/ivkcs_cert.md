@@ -1,86 +1,89 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `ivkcs_cert` ресурсы виртуалды машиналарда SSL-сертификаттарды автоматты түрде жасауға және басқаруға арналған.
 
-## Ресурстың аргументтері
+## Ресурс аргументтері
 
 [cols="3,6,2,2,2", options="header"]
 |===
-|Атауы
+|Аты
 |Сипаттамасы
 |Форматы
 |Міндетті
-|Мәні өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |`uuid`
-|image-based қолданба инстансының UUID
+|image-based қосымшаның инстансының UUID-і
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`domain`
-|Сертификат шығарылатын доменнің FQDN атауы
+|Сертификат шығарылатын доменнің FQDN-і
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |`path_cert`
-|Сертификат пен кілт файлдары сақталатын директорияға жол
+|Сертификат пен кілт файлдары сақталатын каталогқа жол
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`renewal_hook_path`
 |Сертификат әр жаңартылғаннан кейін орындалатын bash-скриптке жол
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`cert_files_owner`
 |Сертификат пен кілт файлдарының иесі
 |string
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`cert_files_group`
 |Сертификат пен кілт файлдарының тобы
 |string
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.create`
-|Сертификатты жасау тайм-ауты. Тайм-аут аяқталғаннан кейін процесс қателікпен аяқталады
+|Сертификатты жасау тайм-ауты. Тайм-аут біткеннен кейін процесс қатеге байланысты аяқталады
 |string
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.update`
-|Сертификатты жаңарту тайм-ауты. Тайм-аут аяқталғаннан кейін процесс қателікпен аяқталады
+|Сертификатты жаңарту тайм-ауты. Тайм-аут біткеннен кейін процесс қатеге байланысты аяқталады
 |string
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 
 |`timeouts.update`
-|Сертификатты жою тайм-ауты. Пайдаланушы өз қолданба инстансын жойған сәттен бастап есептеледі. Тайм-аут аяқталғаннан кейін процесс қателікпен аяқталады
+|Сертификатты жою тайм-ауты. Пайдаланушы өз қосымша инстансын жойған сәттен бастап есептеледі. Тайм-аут біткеннен кейін процесс қатеге байланысты аяқталады
 |string
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 
 `renewal_hook_path` аргументінде көрсетілген скрипт сертификат әр жаңартылғаннан кейін орындалады:
 
-- егер бұл аргумент берілсе, `cert_files_owner` аргументінде көрсетілген пайдаланушы атынан;
-- егер `cert_files_owner` аргументі берілмесе, `root` пайдаланушысы атынан.
+- `cert_files_owner` аргументінде көрсетілген пайдаланушы атынан, егер бұл аргумент берілсе;
+- `cert_files_owner` аргументі берілмеген жағдайда `root` пайдаланушысы атынан.
 
 Nginx серверін қайта жүктеуге арналған скрипт мысалы:
 
 ```bash
 #!/bin/bash
+
 # /opt/scripts/reload_nginx.sh
 
-# Проверяем конфигурацию nginx
+# nginx конфигурациясын тексереміз
 if nginx -t; then
-    # Перезагружаем nginx
+
+# nginx-ті қайта жүктейміз
     systemctl reload nginx
     echo "$(date): Nginx reloaded successfully after certificate renewal"
 else
@@ -93,7 +96,7 @@ fi
 
 [cols="1,3,1", options="header"]
 |===
-|Атауы
+|Аты
 |Сипаттамасы
 |Форматы
 
@@ -112,7 +115,7 @@ fi
 
 ## Ресурсты пайдалану мысалдары
 
-### Сертификаттың базалық баптауы бар веб-сервер
+### Сертификаттың негізгі баптауы бар веб-сервер
 
 ```hcl
 resource "ivkcs_cert" "website" {
@@ -122,14 +125,15 @@ resource "ivkcs_cert" "website" {
   renewal_hook_path = "/usr/local/bin/reload_nginx.sh"
 }
 
-# Использование сертификата в конфигурации nginx
+# nginx конфигурациясында сертификатты пайдалану
 resource "ivkcs_user_data" "nginx_config" {
   uuid = ivkcs_cert.website.uuid
-  # ... другие параметры
+
+# ... басқа параметрлер
 }
 ```
 
-2-мысал. Қолжетімділік құқықтарын баптауы бар микросервис:
+2-мысал. Рұқсаттар құқығын баптауы бар микросервис:
 
 ```hcl
 resource "ivkcs_cert" "api_service" {
@@ -146,7 +150,7 @@ resource "ivkcs_cert" "api_service" {
 }
 ```
 
-3-мысал. Бірнеше сертификат:
+3-мысал. Бірнеше сертификаттар:
 
 ```hcl
 variable "domains" {

@@ -1,12 +1,12 @@
 # {heading(Cloud ClickHouse)[id=clickhouse_metrics]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-Cloud ClickHouse сервисінде метрикалар Prometheus форматында жиналады. Әр метрика үшін дашбордта көрсетуге болатын панель автоматты түрде жасалады.
+Cloud ClickHouse қызметінде метрикалар Prometheus пішімінде жиналады. Әр метрика үшін дашбордта көрсетуге болатын панель автоматты түрде жасалады.
 
 ## {heading(ClickHouse түйіндерінің метрикалары)[id=clickhouse_metrics_instance]}
 

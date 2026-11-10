@@ -1,23 +1,14 @@
 {
-  "title": "Meilisearch өрістету",
-  "shortDescription": "Деректерді іздеу және сүзгілеу міндеттері үшін Meilisearch өрістету",
-  "metaDescription": "Marketplace VK Cloud: мақсатты жобаға деректерді іздеу және сүзгілеу міндеттері үшін Meilisearch сервисін өрістету қадамдары",
-  "sectionTitle": "Meilisearch өрістету",
+  "title": "Meilisearch орнату",
+  "shortDescription": "Деректерді іздеу және сүзгілеу тапсырмалары үшін Meilisearch орнату",
+  "metaDescription": "VK Cloud Marketplace: мақсатты жобада деректерді іздеу және сүзгілеу тапсырмалары үшін Meilisearch қызметін орнату қадамдары",
+  "sectionTitle": "Meilisearch орнату",
   "icon": "",
-  "weight": 12,
+  "weight": 10,
+  "uuid": "fd9c7f36-0cfc-4d21-b99a-f2d2d46385de",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "d400f16f-b7ee-4296-bbe4-13b98580f957"
+  }
 }

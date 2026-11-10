@@ -1,5 +1,7 @@
 # {heading(Рөлдік басқару қолжеткізу моделі)[id=iam-concepts-rolesandpermissions]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=Жоба]} құрылғаннан кейін бірден онда тек бір ғана пайдаланушы болады — оның иесі. Бұл пайдаланушы басқа қатысушыларды жобаға {linkto(../../../../tools-for-using-services/account/instructions/project-settings/invite#tools-account-project-invite)[text=шақыра]} алады, оларға рөлдер мен рұқсаттар тағайындайды. Рөлдер мен рұқсаттар пайдаланушының жеке кабинет функционалдығымен және бұлттық сервистермен жұмыс істеу кезінде қолжетімді құқықтарын анықтайды.
 
 *Рөл* — бұл VK Cloud ресурстарымен операцияларды орындауға арналған рұқсаттардың белгілі бір жиынтығы.

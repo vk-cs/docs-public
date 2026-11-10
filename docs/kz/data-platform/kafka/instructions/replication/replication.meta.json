@@ -1,0 +1,15 @@
+{
+  "title": "Сыртқы Kafka кластерлерінен деректерді репликациялау",
+  "shortDescription": "MirrorMaker компоненті арқылы сыртқы Kafka кластерлерінен деректерді репликациялауды баптау",
+  "metaDescription": "MirrorMaker көмегімен сыртқы Kafka кластерлерінен деректерді VK Data Platform Cloud Kafka-ның ағымдағы кластеріне репликациялауды баптаудың қадамдық нұсқаулығы",
+  "sectionTitle": "Сыртқы Kafka кластерлерінен деректерді репликациялау",
+  "icon": "",
+  "weight": 6,
+  "uuid": "56742d92-cf2b-4e70-8b27-47dec54298be",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

@@ -1,12 +1,6 @@
-# {heading(Құпия нұсқаларын басқару)[id=sm-versions]}
+# {heading(Секреттің нұсқаларын басқару)[id=sm-versions]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-{note:info}
-
-Сервиске қол жеткізу үшін [техникалық қолдауға](/kz/contacts) жүгініңіз.
-
-{/note}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Құпияның жаңа нұсқасын жасау)[id=sm-versions-create]}
 

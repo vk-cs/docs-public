@@ -1,35 +1,35 @@
 # {heading(Сервис архитектурасы)[id=dlh_architecture]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-{linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} әртүрлі көздерден құрылымдалған және құрылымдалмаған деректерді жинайды, оларды {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} арқылы ([ETL](https://ru.wikipedia.org/wiki/ETL) немесе ELT) не {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} арқылы (SQL-сұраулар) өңдейді, {linkto(../components/s3#dlh_s3)[text=S3-қоймасында]} {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} ішінде каталогтаумен сақтайды, DataHub-та метадеректерді басқарады және аналитика, BI және ML үшін деректерді Cloud Trino, Cloud Spark немесе {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]} арқылы ұсынады.
+{linkto(../about#dlh_info)[text=Data Lakehouse (DLH)]} әртүрлі дереккөздерден құрылымдық және құрылымсыз деректерді жинайды, оларды {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} ([ETL](https://ru.wikipedia.org/wiki/ETL) немесе ELT) немесе {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} (SQL-сұраулары) арқылы өңдейді, {linkto(../components/s3#dlh_s3)[text=S3-қоймасында]} {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} каталогтауымен сақтайды, метадеректерді DataHub-та басқарады және деректерді Cloud Trino, Cloud Spark немесе {linkto(../components/clickhouse#dlh_clickhouse)[text=Cloud ClickHouse]} арқылы аналитика, BI және ML үшін ұсынады.
 
 ![](assets/arch_diagram.png){params[noBorder=true]}
 
-1. Операциялық ([OLTP](https://ru.wikipedia.org/wiki/OLTP)) және корпоративтік (CRM, ERP) жүйелерден келетін құрылымдалған деректер күрделі ETL және ELT процестерін орындау үшін Cloud Trino-ға тікелей немесе Cloud Spark арқылы түседі.
+1. Жедел ([OLTP](https://ru.wikipedia.org/wiki/OLTP)) және корпоративтік (CRM, ERP) жүйелерден түсетін құрылымдық деректер Cloud Trino-ға тікелей немесе күрделі ETL- және ELT-процессдерін орындау үшін Cloud Spark арқылы түседі.
 
-1. Жартылай құрылымдалған (JSON, XML, CSV) және құрылымдалмаған (медиафайлдар, құжаттар) деректер S3 қоймасына ағындар немесе блоктар түрінде жіберіледі.
+1. Жартылай құрылымдық (JSON, XML, CSV) және құрылымсыз (медиафайлдар, құжаттар) деректер S3 қоймасына ағындар түрінде немесе блоктармен беріледі.
 
-1. {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} және {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} S3 қоймасымен деректер алмасу үшін Iceberg Metastore API пайдаланады.
+1. {linkto(../components/trino#dlh_trino)[text=Cloud Trino]} және {linkto(../components/spark#dlh_spark)[text=Cloud Spark]} S3 қоймасымен деректер алмасу үшін Iceberg Metastore API-ін пайдаланады.
 
-    Cloud Trino-да сұрауларды өңдеу процесі координатордың (Coordinator) SQL-сұрауларды қабылдауын ([PULL-моделі](#dlh_data_processing_models)) және оңтайландыруын қамтиды, содан кейін ол оларды жұмысшы түйіндерге (Workers) таратып, дәстүрлі СУБД-ларға ұқсас функционалдылықты қамтамасыз етеді.
+    Cloud Trino-да сұрауларды өңдеу процесі координатордың (Coordinator) SQL-сұрауларын қабылдауын ([PULL-моделі](#dlh_data_processing_models)) және оңтайландыруын қамтиды, содан кейін ол оларды жұмыс тораптарына (Workers) бөледі, бұл дәстүрлі СУБД-ға ұқсас функционалдылықты қамтамасыз етеді.
 
-    Cloud Spark күрделі ETL және ELT процестерін орындау үшін қолданылады. Бұл сервис деректерді пакеттік те, ағындық та өңдеуді қолдайды:
+    Cloud Spark күрделі ETL- және ELT-процессдерін орындау үшін қолданылады. Бұл сервис деректердің топтық та, ағындық та өңдеуін қолдайды:
 
-    - [Ағындық өңдеу](https://en.wikipedia.org/wiki/Stream_processing) (Streaming Processing) кезінде деректер үздіксіз, микропартиялармен (mini-batches) немесе оқиға бойынша (event-by-event), нақты уақыт режимінде өңделеді. Ағындық өңдеу [PUSH-моделі](#dlh_data_processing_models) бойынша жүзеге асырылады.
+    - [Ағынды өңдеу](https://en.wikipedia.org/wiki/Stream_processing) кезінде (Streaming Processing) деректер үздіксіз, микропартиялармен (mini-batches) немесе оқиға бойынша (event-by-event) нақты уақыт режимінде өңделеді. Ағынды өңдеу [PUSH-моделі](#dlh_data_processing_models) бойынша жүзеге асырылады.
 
-    - [Пакеттік өңдеу](https://en.wikipedia.org/wiki/Batch_processing) (Batch Processing) кезінде деректер партиялармен (файлдар, кестелер) жинақталып, бір уақытта өңделеді. Шығарып алу процесі кесте бойынша немесе қолмен іске қосылады ([PULL-моделі](#dlh_data_processing_models)).
+    - [Топтық өңдеу](https://en.wikipedia.org/wiki/Batch_processing) кезінде (Batch Processing) деректер партиялармен (файлдар, кестелер) жинақталып, бір мезгілде өңделеді. Шығарып алу процесі кесте бойынша немесе қолмен іске қосылады ([PULL-моделі](#dlh_data_processing_models)).
 
-1. Cloud Iceberg Metastore {linkto(../components/s3#dlh_s3)[text=S3 қоймасының]} объектілерін каталогтайды және оған қол жеткізу үшін API ұсынады.
+1. Cloud Iceberg Metastore {linkto(../components/s3#dlh_s3)[text=S3 қоймасының]} нысандарын каталогтайды және оған қолжетімділік үшін API ұсынады.
 
-    Деректерді сақтау {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} сервисі арқылы [ACID](https://ru.wikipedia.org/wiki/ACID)-транзакцияларды қолдаумен ұйымдастырылған, бұл S3 қоймасының объектілерін ДҚ кестелері ретінде ұсынуға мүмкіндік береді. S3 қоймасын пайдалану сақтау құнын едәуір төмендетеді.
+    Деректерді сақтау {linkto(../components/iceberg#dlh_iceberg)[text=Cloud Iceberg Metastore]} сервисі арқылы [ACID](https://ru.wikipedia.org/wiki/ACID)-транзакцияларды қолдаумен ұйымдастырылған, ол S3 қоймасының нысандарын ДҚ кестелері ретінде көрсетуге мүмкіндік береді. S3 қоймасын пайдалану сақтау шығындарын айтарлықтай азайтады.
 
-1. Объектілер мен оларды өңдеу ережелерінің жалпы тізімі қолжеткізуді басқару және деректер тарихын қадағалау үшін DataHub негізіндегі деректер каталогында (Data Discovery, Data Quality, Metadata Management, Data Governance, Data Lineage функционалын қолдаумен) жарияланады.
-1. Cloud Trino және Cloud Spark-тен өңделген деректерді әртүрлі сыртқы аналитикалық жүйелерде пайдалануға болады: MLflow, Jupyter, ClickHouse. Бұл жүйелер деректерді терең талдауға, егжей-тегжейлі визуализациялар жасауға және машиналық оқыту модельдерінің өмірлік циклін басқаруға мүмкіндік береді.
+1. Нысандардың және оларды өңдеу ережелерінің жалпы тізімі қолжетімділікті басқару және деректердің тарихын бақылау үшін DataHub негізіндегі деректер каталогінде жарияланады (Data Discovery, Data Quality, Metadata Management, Data Governance, Data Lineage функционалын қолдаумен).
+1. Cloud Trino және Cloud Spark-тан өңделген деректерді әртүрлі сыртқы аналитикалық жүйелерде пайдалануға болады: MLflow, Jupyter, ClickHouse. Бұл жүйелер деректерді терең талдауға, егжей-тегжейлі визуализациялар жасауға және машиналық оқыту модельдерінің өмірлік циклін басқаруға мүмкіндік береді.
 
 ## {heading(Деректерді өңдеу модельдері)[id=dlh_data_processing_models]}
 

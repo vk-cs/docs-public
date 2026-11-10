@@ -1,16 +1,19 @@
 {
-  "title": "VK Object Storage аккаунты және оған қол жеткізу кілттері",
-  "shortDescription": "AWS CLI, API және файл менеджерлері арқылы VK Object Storage қызметіне қол жеткізу",
-  "metaDescription": "VK Object Storage аккаунтын жасау және жою. AWS CLI, API және файл менеджерлері арқылы VK Object Storage қызметіне қол жеткізу үшін аккаунтқа байланыстырылған кілттерді басқару.",
-  "sectionTitle": "VK Object Storage аккаунты және оған қол жеткізу кілттері",
+  "title": "VK Object Storage аккаунты және оның қол жеткізу кілттері",
+  "shortDescription": "AWS CLI, API және файл менеджерлері арқылы VK Object Storage-қа қол жеткізу",
+  "metaDescription": "VK Object Storage аккаунтын жасау және жою. AWS CLI, API және файл менеджерлері арқылы VK Object Storage-қа қол жеткізу үшін аккаунтқа байланыстырылған кілттерді басқару.",
+  "sectionTitle": "VK Object Storage аккаунты және оның қол жеткізу кілттері",
   "icon": "",
   "weight": 1,
+  "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",
+  "additionalUuids": [
+    "d62ab1ee-fcdf-49d3-99a4-8c1fb83fa610"
+  ],
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "90305e46-78b2-4d85-b5fd-0fe2f7d5ea54"
+  }
 }

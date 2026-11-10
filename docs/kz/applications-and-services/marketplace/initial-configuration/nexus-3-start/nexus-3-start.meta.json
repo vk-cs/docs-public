@@ -1,23 +1,17 @@
 {
-  "title": "Nexus 3 өрістету",
-  "shortDescription": "Жобада Sonatype Nexus 3 сервисін өрістету",
-  "metaDescription": "Marketplace VK Cloud: мақсатты жобаға Sonatype Nexus 3 сервисін өрістету қадамдары",
-  "sectionTitle": "Nexus 3 өрістету",
+  "title": "Nexus 3 орнату",
+  "shortDescription": "Sonatype Nexus 3 қызметін жобада орнату",
+  "metaDescription": "VK Cloud Marketplace: Sonatype Nexus 3 қызметін мақсатты жобада орнату қадамдары",
+  "sectionTitle": "Nexus 3 орнату",
   "icon": "",
-  "weight": 6,
+  "weight": 13,
+  "additionalUuids": [
+    "7bc44fb4-b3d9-4f39-b56c-ba3387a6ef2c"
+  ],
+  "uuid": "ec93abd2-9c23-44bc-8bc0-6320bd05f81b",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "e169642f-3264-4e02-ad84-053051314501"
+  }
 }

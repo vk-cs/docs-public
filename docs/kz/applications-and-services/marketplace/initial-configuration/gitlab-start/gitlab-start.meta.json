@@ -1,0 +1,14 @@
+{
+  "title": "GitLab CE орнату",
+  "shortDescription": "GitLab CE қызметін жобада орнату",
+  "metaDescription": "Marketplace VK Cloud: GitLab CE қызметін мақсатты жобада орнату қадамдары",
+  "sectionTitle": "GitLab CE орнату",
+  "icon": "",
+  "weight": 5,
+  "uuid": "78289511-01f4-4758-9e4d-5367f277234f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

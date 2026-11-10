@@ -1,0 +1,17 @@
+{
+  "title": "Контейнерлермен типтік операциялар",
+  "shortDescription": "",
+  "metaDescription": "Kubernetes-тегі контейнерлермен типтік операциялар. Kubernetes кластерінің контейнерлерін жеке кабинет арқылы немесе Terraform көмегімен басқруды үйреніңіз",
+  "sectionTitle": "Контейнерлермен типтік операциялар",
+  "icon": "",
+  "weight": 12,
+  "uuid": "7fa10591-3134-4297-9ecd-107c27b6c44e",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

@@ -1,16 +1,19 @@
 {
   "title": "Cloud Servers",
-  "shortDescription": "Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "shortDescription": "Cloud Servers сервисінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек",
   "sectionTitle": "Cloud Servers",
   "icon": "",
-  "weight": 10,
+  "weight": 20,
+  "uuid": "3cf2376e-bb9d-4961-bc9e-d7576069ddd6",
   "build": {
     "for": [
       "public",
       "private",
-      "private-pg"
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "f32012a9-f8ab-4cb8-b15c-090c50e98d2a"
+  }
 }

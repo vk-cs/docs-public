@@ -642,9 +642,9 @@ VPN сервисі Neutron және Sprut {linkto(../../concepts/sdn#vnet-sdn)[t
     1. Егер қолайлы жергілікті endpoint-тобы табылмаса, оны жасаңыз:
 
       {tabs}
-      
+
       {tab(Linux/macOS (bash, zsh))}
-            
+
       ```console
       openstack vpn endpoint group create <ИМЯ_ЛОКАЛЬНОЙ_ENDPOINT-ГРУППЫ> \
         --type subnet \
@@ -674,9 +674,9 @@ VPN сервисі Neutron және Sprut {linkto(../../concepts/sdn#vnet-sdn)[t
     1. Егер қолайлы қашықтағы endpoint-тобы табылмаса, оны жасаңыз:
 
       {tabs}
-      
+
       {tab(Linux/macOS (bash, zsh))}
-            
+
       ```console
       openstack vpn endpoint group create <ИМЯ_УДАЛЕННОЙ_ENDPOINT-ГРУППЫ> \
         --type cidr \

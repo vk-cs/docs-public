@@ -1,24 +1,10 @@
-# {heading(Қызмет компоненттерімен жұмыс)[id=redis_management]}
+# {heading(Сервистің құрамдас бөлігімен жұмыс істеу)[id=redis_management]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
-
-## {heading(Жалпы ақпарат)[id=redis_info]}
-
-### {heading(Жалпы ақпаратты қарау)[id=redis_view_info]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_view_info]}
-
-{/tab}
-
-{/tabs}
 
 ### {heading(Жалпы ақпаратты өңдеу)[id=redis_edit_info]}
 
@@ -32,7 +18,7 @@
 
 {/tabs}
 
-## {heading(TLS сертификатын қарау және ауыстыру)[id=redis_certificate]}
+## {heading(TLS-сертификатын көру және ауыстыру)[id=redis_certificate]}
 
 {tabs}
 
@@ -40,7 +26,7 @@
 
 {include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
 
-Сертификаттармен жұмыс істеу туралы толығырақ {linkto(../../../certificates/manage#certificates_manage)[text=Сертификаттар]} бөлімінен оқыңыз.
+Сертификаттармен жұмыс істеу туралы толығырақ — {linkto(../../../certificates/manage#certificates_manage)[text=Сертификаттар]} бөлімінде.
 
 {/tab}
 
@@ -58,47 +44,21 @@
 
 {/tabs}
 
-## {heading(Компоненттер күйін қарау)[id=redis_view_status]}
+## {heading(Компоненттер күйін көру)[id=redis_view_status]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. **Data Platform** → **Қызмет даналары** бөліміне өтіңіз.
-1. Қажетті дананың атауын басыңыз.
+1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
+1. Қажетті дананың атын басыңыз.
 1. Дана бетінде **Компоненттер күйі** қойындысына өтіңіз.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Масштабтау)[id=redis_scaling]}
-
-### {heading(Көлденең масштабтау)[id=redis_horizontal_scaling]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_horizontal_scaling]}
-
-{/tab}
-
-{/tabs}
-
-### {heading(Дискілерді тік масштабтау)[id=redis_vertical_disk_scaling]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_vertical_disk_scaling]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Тіркелгіні қарау)[id=redis_admin_view]}
+## {heading(Тіркелгіні көру)[id=redis_admin_view]}
 
 {tabs}
 
@@ -110,116 +70,40 @@
 
 {/tabs}
 
-## {heading(Тіркелгі қосу)[id=redis_admin_create]}
+## {heading(Тіркелгіні қосу)[id=redis_admin_create]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. **Data Platform** → **Қызмет даналары** бөліміне өтіңіз.
+1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
-1. Дана бетінде **Тіркелгі деректері** қойындысына өтіңіз.
-1. **Тіркелгі қосу** батырмасын басыңыз.
+1. Дана парақшасында **Тіркелгі деректері** қойыншасына өтіңіз.
+1. **Тіркелгі қосу** түймесін басыңыз.
 1. Тіркелгінің логині мен құпиясөзін көрсетіңіз.
 
    {note:info}
-
-   Логин мен құпиясөзді енгізу ерекшеліктері туралы толығырақ — {linkto(../create#redis_create_user)[text=4-қадам. Тіркелгі деректері]} бөлімінде.
-
+   Логин мен құпиясөзді енгізу ерекшеліктері туралы толығырақ — {linkto(../create#redis_create_user)[text=4-қадам. Тіркелгі деректері]} бөлімінде
    {/note}
 
-1. **Өзгерістерді сақтау** батырмасын басыңыз.
+1. **Өзгерістерді сақтау** түймесін басыңыз.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Баптауларды қарау және өңдеу)[id=redis_edit_settings]}
+## {heading(Өзгертулер тарихын көру)[id=redis_changes_history]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-{include(../../../_includes/_data_p.md)[tags=instance_edit_settings]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Данаға қызмет көрсету)[id=redis_service]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_service]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Дананың резервтік көшірмелері)[id=redis_backup]}
-
-### {heading(Резервтік көшірмелерді қарау)[id=redis_backup_view]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_backup_view]}
-
-{/tab}
-
-{/tabs}
-
-### {heading(Резервтік көшірме жасау)[id=redis_backup_create]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_backup_create]}
-
-{/tab}
-
-{/tabs}
-
-### {heading(Резервтік көшірмені қалпына келтіру)[id=redis_backup_recovery]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_backup_recovery]}
-
-{/tab}
-
-{/tabs}
-
-
-## {heading(Өзгерістер тарихын қарау)[id=redis_changes_history]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-1. **Data Platform** → **Қызмет даналары** бөліміне өтіңіз.
+1. **Data Platform** → **Сервистер даналары** бөліміне өтіңіз.
 1. Қажетті дананың атауын басыңыз.
-1. Қызықтыратын қойындыға өтіп, оң жақтағы ![белгіше](../../../assets/clock-icon.svg "inline") белгішесін басыңыз.
-1. Өзгерістер тарихымен танысыңыз.
+1. Қызығушылық танытқан қойындыға өтіңіз және оң жақтағы ![белгіше](../../../assets/clock-icon.svg "inline") белгішесін басыңыз.
+1. Өзгертулер тарихымен танысыңыз.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Қызмет данасын жою)[id=redis_delete]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_delete]}
-
-{/tab}
-
-{/tabs}

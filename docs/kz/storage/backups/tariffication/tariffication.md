@@ -1,39 +1,39 @@
-# {heading(Тарифтеу)[id=backup-backup-cost]}
+# {heading(Тарификация)[id=backup-backup-cost]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-## {heading(Тарифтеу туралы)[id=backup-tariffication]}
+## {heading(Тарификация туралы)[id=backup-tariffication]}
 
-Cloud Backup сервисіндегі {linkto(/kz/storage/backups/concepts/about#backup-about)[text=резервтік көшіру]} құны дискінің уақытша снимогын сақтау және резервтік көшірмені кейіннен сақтау құнынан құралады:
+Cloud Backup-тағы {linkto(/kz/storage/backups/concepts/about#backup-about)[text=резервтік көшірмелеу]} құны дискінің уақытша суретін (snapshot) сақтау және одан кейінгі резервтік көшірмені сақтау құнынан құралады:
 
-1. Резервтік көшірмені жасау үшін жүйе {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-concepts-disk-types)[text=дискілік қоймада]} сақталатын және минут сайын тарификацияланатын (орта есеппен бір сағат) дискінің уақытша снимогын (snapshot) қалыптастырады.
+1. Резервтік көшірме жасау үшін жүйе дискінің уақытша суретін (snapshot) құрады, ол {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=дискілік жадта]} сақталады және минут сайын тарифицирленеді (орташа есеппен бір сағат).
 
-2. Диск снимогының негізінде {linkto(/kz/storage/s3/concepts/about#s3-concepts-about)[text={var(s3)}]} объектілік қоймасында `BackupBucket` {linkto(/kz/storage/s3/concepts/about#s3-concepts-about-storage-class)[text=сақтау класы]} бар бакеттерде сақталатын сығылған резервтік көшірме жасалады.
+2. Диск суреті негізінде сығылған резервтік көшірме жасалады, ол {linkto(/kz/storage/s3/concepts/about#s3-concepts-about)[text={var(s3)}]} объектілік жадында `BackupBucket` {linkto(/kz/storage/s3/concepts/about#s3-concepts-about-storage-class)[text=сақтау класы]} бар бакеттерде сақталады.
 
    {cut(Резервтік көшірмелердегі деректер қалай сығылады)}
 
-   Дискідегі файл түріне байланысты оларға әртүрлі сығу дәрежесі қолданылады:
+   Дискідегі файлдардың түріне байланысты оларға әртүрлі сығу дәрежесі қолданылады:
 
       - жоғары: мәтіндік құжаттар, дерекқорлар;
-      - төмен: бұрыннан сығылған форматтар (кескіндер, бейнежазбалар, архивтер).
+      - төмен: бұрыннан сығылған форматтар (суреттер, бейне жазбалар, архивтер).
 
    Деректерді сығудың нақты коэффициенті алдын ала белгісіз, сондықтан олардың қорытынды көлемін резервтік көшірмені жасау аяқталғаннан кейін ғана анықтауға болады.
    {/cut}
 
-Резервтік көшірмені сақтаудың қорытынды құны деректер көлеміне, жиілігіне және таңдалған резервтік көшіру стратегиясына байланысты. Сервисті пайдалану шығындарын азайту үшін {linkto(/kz/storage/backups/concepts/best-practices#backup-cost-manage)[text=резервтік көшіруді баптау бойынша үздік тәжірибелерді]} пайдаланыңыз.
+Резервтік көшірмені сақтаудың қорытынды құны деректер көлеміне, жиілікке және таңдалған резервтік көшірмелеу стратегиясына байланысты. Сервисді пайдалану шығындарын азайту үшін {linkto(/kz/storage/backups/concepts/best-practices#backup-cost-manage)[text=резервтік көшірмелеуді баптаудың үздік тәжірибелерін]} пайдаланыңыз.
 
-Бағалар [прайс-парақта](https://cloud.vk.kz/pricelist) келтірілген. {var(cloud)} сервистерінің ақысын төлеуге байланысты құралдардың қалай жұмыс істейтіні туралы {linkto(/kz/intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз. 
+{include(/kz/_includes/_tariffication.md)[tags=prices]}
 
-Сервистердің таңдалған конфигурациясының құнын есептеу үшін [калькуляторды](https://cloud.vk.kz/pricing/) пайдаланыңыз.
+{include(/kz/_includes/_tariffication.md)[tags=calculator]}
 
-## {heading(Тарифтелмейді)[id=backup-tariffication-yes]}
+## {heading(Тарифицирленеді)[id=backup-tariffication-yes]}
 
-- Әрбір 1 ГБ дискілік кеңістік үшін диск снимоктары (snapshot). Бағасы барлық {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-concepts-disk-types)[text=диск түрлері]} үшін бірдей және [прайс-парақтың](https://cloud.vk.kz/pricelist) **Виртуалды серверлер** бөлімінде келтірілген.
-- `BackupBucket` сақтау класы үшін {var(s3)} {linkto(/kz/storage/s3/tariffication#s3-tariffication)[text=тарифтері]} бойынша әрбір 1 ГБ сақталатын деректер көлемі. 
+- Диск суреттері (snapshot) дискілік кеңістіктің әрбір 1 ГБ үшін. Баға барлық {linkto(/kz/computing/iaas/concepts/data-storage/disk-types#iaas-disk-types)[text=диск түрі]} үшін бірдей және **Виртуалды серверлер** бөліміндегі [бағалық тізімде](https://cloud.vk.ru/pricelist) көрсетілген.
+- Сақталатын деректер көлемі әрбір 1 ГБ үшін `BackupBucket` сақтау класы бойынша {var(s3)} {linkto(/kz/storage/s3/tariffication#s3-tariffication)[text=тарифтері]} бойынша.
 
-## {heading(Тарификацияланбайды)[id=backup-tariffication-no]}
+## {heading(Тарифицирленбейді)[id=backup-tariffication-no]}
 
-- {var(s3)} ішіндегі сұраулар.
-- Резервтік көшірмелерді жасау операциялары.
+- {var(s3)} сұраулары.
+- Резервтік көшірмелер жасау операциялары.
 - Кіріс және шығыс трафик.
 - Мониторинг.

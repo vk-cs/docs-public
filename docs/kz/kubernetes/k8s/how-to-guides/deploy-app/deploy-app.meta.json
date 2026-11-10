@@ -1,0 +1,17 @@
+{
+  "title": "Қолданбаларды орналастыру",
+  "shortDescription": "",
+  "metaDescription": "VK Private Cloud платформасының Managed Containers қызметінде kubectl көмегімен қолданбаларды орналастыру бойынша практикалық нұсқаулық",
+  "sectionTitle": "Қолданбаларды орналастыру",
+  "icon": "",
+  "weight": 16,
+  "uuid": "f4ef6083-b6b0-4789-83da-6d6d22f783ab",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

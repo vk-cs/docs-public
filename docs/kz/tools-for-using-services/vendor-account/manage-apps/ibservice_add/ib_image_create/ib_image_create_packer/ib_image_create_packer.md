@@ -1,39 +1,39 @@
 # {heading(Packer көмегімен жасау)[id=ib_image_create_packer]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Packer көмегімен сервис образын жасау үшін:
+Packer көмегімен сервис бейнесін жасау үшін:
 
 1. Packer орнатыңыз:
 
-   1. Packer-ді [ресми {var(cloud)} айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп алыңыз.
-   1. Архивті ашып, `Path` орта айнымалысында ашылған файлға апаратын жолды көрсетіңіз.
-   1. Packer сәтті орнатылғанына көз жеткізу үшін `packer` командасын орындаңыз.
+   1. Packer пакетін [ресми {var(cloud)} айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп алыңыз.
+   1. Архивті тарап, `Path` орта айнымалысында таратылған файлға жолды көрсетіңіз.
+   1. Packer сәтті орнатылғанын тексеру үшін `packer` командасын орындаңыз.
 
-   Егжей-тегжейлі нұсқаулық [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) берілген.
-1. OpenStack CLI-ді [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
-1. Бұлтты платформалармен жұмыс істеуді қолдайтын ОС-тің базалық образын жүктеп алыңыз.
+   Толық нұсқаулық [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) берілген.
+1. OpenStack CLI [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli) және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
+1. Бұлтты платформалармен жұмыс істеуді қолдайтын ОҚ базалық бейнесін жүктеп алыңыз.
 
-   ОС {linkto(../../../ibservice_add/ib_image_create/ib_image_requirements#ib_image_requirements)[text=сервис образына қойылатын талаптарға]} сәйкес келуі керек.
+   ОҚ [сервис бейнесіне қойылатын талаптарға](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/image_based#image_based_req_image) сәйкес болуы тиіс.
 
-   [OpenStack ресми сайтында](https://docs.openstack.org/image-guide/obtain-images.html) бұлтты платформалармен жұмыс істеуді қолдайтын кейбір ОС образдарына сілтемелер орналастырылған.
+   [OpenStack ресми сайтында](https://docs.openstack.org/image-guide/obtain-images.html) бұлтты платформалармен жұмыс істеуді қолдайтын кейбір ОҚ бейнелерінің сілтемелері орналастырылған.
 
    {note:info}
 
-   Базалық образды бұлтты платформаға өзіңіз жүктемеу үшін, {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]} бөліміндегі кестеден дайын нұсқаны пайдаланыңыз. Бұл жағдайда бірден packer-файлды конфигурациялау қадамына өтіңіз.
+   Базалық бейнені бұлтты платформаға өз бетінше жүктемеу үшін, {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]} бөліміндегі кестеден дайынын пайдаланыңыз. Бұл жағдайда бірден packer-файлын конфигурациялау қадамына өтіңіз.
 
    {/note}
-1. Базалық образды `RAW` форматына түрлендіріңіз:
+1. Базалық бейнені `RAW` пішіміне түрлендіріңіз:
 
-   1. [qemu-img](https://www.qemu.org/docs/master/tools/qemu-img.html) утилитасын жергілікті компьютерге орнатыңыз.
+   1. Жергілікті компьютерге [qemu-img](https://www.qemu.org/docs/master/tools/qemu-img.html) утилитасын орнатыңыз.
 
-      {caption(RHEL негізіндегі образдар үшін qemu-img орнату мысалы (CentOS, AlmaLinux, Rocky Linux))[align=left;position=above]}
+      {caption(RHEL (CentOS, AlmaLinux, Rocky Linux) негізіндегі бейнелер үшін qemu-img орнату мысалы)[align=left;position=above]}
       ```console
       sudo yum install qemu-img
       ```
       {/caption}
 
-      {caption(Debian негізіндегі образдар үшін qemu-img орнату мысалы (Ubuntu))[align=left;position=above]}
+      {caption(Debian (Ubuntu) негізіндегі бейнелер үшін qemu-img орнату мысалы)[align=left;position=above]}
       ```console
       sudo apt install qemu-utils
       ```
@@ -46,10 +46,10 @@ Packer көмегімен сервис образын жасау үшін:
 
       Мұнда:
 
-      * `<INITIAL_IMAGE_NAME>` — бастапқы базалық образдың атауы. Мысалы, `alt-p9-cloud-x86_64.qcow2`.
-      * `<IMAGE_NAME>` — `RAW` форматындағы базалық образдың атауы. Мысалы, `alt-p9-cloud-x86_64.raw`.
+      * `<INITIAL_IMAGE_NAME>` — бастапқы базалық бейненің атауы. Мысалы, `alt-p9-cloud-x86_64.qcow2`.
+      * `<IMAGE_NAME>` — `RAW` пішіміндегі базалық бейненің атауы. Мысалы, `alt-p9-cloud-x86_64.raw`.
 
-1. `RAW` форматындағы базалық образды бұлтты платформаға жүктеңіз:
+1. Базалық бейнені `RAW` пішімінде бұлтты платформаға жүктеп салыңыз:
 
    ```console
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <IMAGE_PATH> <IMAGE_NAME>
@@ -57,15 +57,15 @@ Packer көмегімен сервис образын жасау үшін:
 
    Мұнда:
 
-   * `<IMAGE_PATH>` — базалық образға апаратын жол.
-   * `<IMAGE_NAME>` — `RAW` форматындағы базалық образдың атауы.
+   * `<IMAGE_PATH>` — базалық бейнеге жол.
+   * `<IMAGE_NAME>` — `RAW` пішіміндегі базалық бейненің атауы.
 
-      Жасалған образдың ID-і бұлтты платформаның ЖК-сінде көрсетіледі.
+      Жасалған бейненің ID бұлтты платформаның ЛК-да көрсетіледі.
 
-   Егжей-тегжейлі нұсқаулық [Образды импорттау](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) бөлімінде берілген.
-1. packer-файлды конфигурациялаңыз:
+   Толық нұсқаулық [Бейнені импорттау](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) бөлімінде берілген.
+1. Packer-файлын конфигурациялаңыз:
 
-   1. Қоршаған орта айнымалыларына желі ID-ін және базалық образ ID-ін жазыңыз:
+   1. Орта айнымалыларына желінің ID және базалық бейненің ID жазыңыз:
 
       ```console
       export NETWORK_ID=<NETWORK_ID>
@@ -74,15 +74,15 @@ Packer көмегімен сервис образын жасау үшін:
 
       Мұнда:
 
-      * `<NETWORK_ID>` — желінің ID-і. Мән бұлтты платформаның ЖК-сінде желілер тізімі бар бетте көрсетіледі.
-      * `<IMAGE_ID>` — базалық образдың ID-і. Мән бұлтты платформаның ЖК-сінде образдар тізімі бар бетте көрсетіледі. Егер дайын базалық образ пайдаланылса, ID-ді {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]} бөлімінен көрсетіңіз.
+      * `<NETWORK_ID>` — желінің ID. Мән бұлтты платформаның ЛК-да желілер тізімі бар бетте көрсетіледі.
+      * `<IMAGE_ID>` — базалық бейненің ID. Мән бұлтты платформаның ЛК-да бейнелер тізімі бар бетте көрсетіледі. Дайын базалық бейне пайдаланылса, {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data#target_os)[text=%text]} бөліміндегі ID көрсетіңіз.
 
    1. `<FILE_NAME>.pkr.hcl` файлын жасаңыз. Мысалы, `altlinux.pkr.hcl`.
-   1. Файлда сервис образын жасауға негіз болатын ВМ конфигурациясын сипаттаңыз (синтаксисі — [Packer ресми сайтында](https://developer.hashicorp.com/packer/docs/templates/hcl_templates)).
+   1. Файлда сервис бейнесі жасалатын ВМ конфигурациясын сипаттаңыз (синтаксис — [Packer ресми сайтында](https://developer.hashicorp.com/packer/docs/templates/hcl_templates)).
 
-      {caption(Alt Linux P9 ОС-і бар ВМ конфигурациясының және Ansible playbook-тен image-based қолданбасын өрістетудің мысалы)[align=left;position=above]}
+      {caption(Ansible плейбогынан image-based қосымшаны орнатумен Alt Linux P9 ОҚ бар ВМ конфигурациясының мысалы)[align=left;position=above]}
       ```console
-      # ID сети
+      # Желі ID
       variable "network_id" {
         type = string
         default = "${env("NETWORK_ID")}"
@@ -94,7 +94,7 @@ Packer көмегімен сервис образын жасау үшін:
         }
       }
 
-      # ID базового образа
+      # Базалық бейне ID
       variable "source_image" {
         type = string
         default = "${env("SOURCE_IMAGE")}"
@@ -106,7 +106,7 @@ Packer көмегімен сервис образын жасау үшін:
         }
       }
 
-      # Создание ВМ из базового образа
+      # Базалық бейнеден ВМ жасау
       source "openstack" "altlinux" {
         flavor       = "STD3-2-6"
         image_name   = "Alt-Linux-P9-Starter-Kit"
@@ -119,7 +119,7 @@ Packer көмегімен сервис образын жасау үшін:
         volume_availability_zone = "MS1"
       }
 
-      # Настройка ВМ
+      # ВМ баптауы
       build {
         sources = ["source.openstack.altlinux"]
         provisioner "shell" {
@@ -142,11 +142,11 @@ Packer көмегімен сервис образын жасау үшін:
 
       {note:info}
 
-      Егер метрикаларды Cloud Monitoring сервисіне жіберу қажет болса, ВМ конфигурациясында мониторинг агентін орнатуды сипаттаңыз (толығырақ — [ВМ жүйелік метрикалары](../../../ib_cloud_monitoring/ib_cloud_monitoring_vm) бөлімінде).
+      Метриктерді Cloud Monitoring сервисіне жіберу қажет болса, ВМ конфигурациясында мониторинг агентін орнатуды сипаттаңыз (толығырақ — [ВМ жүйелік метриктері](../../../ib_cloud_monitoring/ib_cloud_monitoring_vm) бөлімінде).
 
       {/note}
 
-      ОС пайдаланушысының аты ОС-ке байланысты. Атаулар тізімі [Linux ВМ-ге қосылу](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) бөлімінде берілген.
+      ОҚ пайдаланушысының атауы ОҚ-ға байланысты. Атаулар тізімі [Linux ВМ-ге қосылу](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) бөлімінде берілген.
 
       Әдепкі қауіпсіздік тобының атауы SDN түріне байланысты:
 
@@ -155,7 +155,7 @@ Packer көмегімен сервис образын жасау үшін:
 
          {note:info}
 
-         Қолжетімді қауіпсіздік топтарын мына команда арқылы қараңыз:
+         Қолжетімді қауіпсіздік топтарын команда көмегімен қараңыз:
 
          ```console
          # openstack security group list
@@ -169,25 +169,25 @@ Packer көмегімен сервис образын жасау үшін:
       packer validate <FILE_NAME>.pkr.hcl
       ```
 
-      Мұнда `<FILE_NAME>.pkr.hcl` — packer-файлдың атауы.
+      Мұнда `<FILE_NAME>.pkr.hcl` — packer-файлының атауы.
 
-1. Бұлтты платформада сервис образын жасаңыз:
+1. Бұлтты платформада сервис бейнесін жасаңыз:
 
-   1. Сервис образын жасауды іске қосыңыз:
+   1. Сервис бейнесін жасауды іске қосыңыз:
 
       ```console
       packer build <PACKER_FILE>
       ```
 
-      Мұнда `<PACKER_FILE>` — packer-файлдың атауы.
-   1. Сәтті жасалғаны туралы хабарламаның пайда болуын күтіңіз. Хабарламада сервис образының ID-і көрсетіледі.
+      Мұнда `<PACKER_FILE>` — packer-файлының атауы.
+   1. Сәтті жасалғаны туралы хабарламаның пайда болуын күтіңіз. Хабарламада сервис бейнесінің ID көрсетіледі.
 
-      {caption(Сервис образының сәтті жасалғаны туралы хабарламаның мысалы)[align=left;position=above]}
+      {caption(Сервис бейнесі сәтті жасалғаны туралы хабарламаның мысалы)[align=left;position=above]}
       ```console
       ==> Builds finished. The artifacts of successful builds are:
       --> openstack.altlinux: An image was created: c6320138-035f-40d8-XXXX-e814edb2ce5f
       ```
       {/caption}
 
-      Мұнда `c6320138-035f-40d8-XXXX-e814edb2ce5f` — сервис образының ID-і.
-   1. Сервис образы бұлтты платформаның ЖК-сінде көрсетілетініне көз жеткізіңіз.
+      Мұнда `c6320138-035f-40d8-XXXX-e814edb2ce5f` — сервис бейнесінің ID.
+   1. Сервис бейнесі бұлтты платформаның ЛК-да көрсетілгеніне көз жеткізіңіз.

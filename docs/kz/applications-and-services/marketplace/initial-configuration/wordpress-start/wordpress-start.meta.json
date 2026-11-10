@@ -1,23 +1,14 @@
 {
-  "title": "WordPress сервисін орнату және баптау",
-  "shortDescription": "Веб-сайт контентін басқаруға арналған WordPress жүйесін қосу және баптау",
-  "metaDescription": "Веб-сайт контентін басқаруға арналған WordPress жүйесін қосу және баптау",
-  "sectionTitle": "WordPress сервисін орнату және баптау",
+  "title": "WordPress орнату",
+  "shortDescription": "Веб-сайттардың контентін басқару үшін WordPress жүйесін қосу және баптау",
+  "metaDescription": "Веб-сайттардың контентін басқару үшін WordPress жүйесін қосу және баптау",
+  "sectionTitle": "WordPress орнату",
   "icon": "",
-  "weight": 15,
+  "weight": 22,
+  "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "81c97a74-e05f-47bd-867f-7d6960d5a5b0"
+  }
 }

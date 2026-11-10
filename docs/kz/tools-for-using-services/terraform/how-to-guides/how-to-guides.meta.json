@@ -1,18 +1,22 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "{var(cloud)} жүйесінде Terraform пайдалану мысалдары",
-  "metaDescription": "VK Cloud жүйесінде Terraform пайдалану.",
+  "shortDescription": "{var(cloud)} платформасында Terraform пайдалану мысалдары",
+  "metaDescription": "VK Cloud платформасында Terraform пайдалану.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
-  "weight": 1,
+  "weight": 2,
+  "uuid": "b94c90cb-ae39-4460-83d2-7881b05fac17",
+  "additionalUuids": [
+    "7eed1411-ffad-4888-90e6-1675ce7fd134"
+  ],
   "build": {
     "for": [
       "public",
       "private",
       "private-pg",
-      "s3",
-      "data-p"
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "2fdd7668-5cda-4cd7-95b8-fc725c2998cb"
+  }
 }

@@ -5,6 +5,10 @@
   "sectionTitle": "Жеке кабинет",
   "icon": "",
   "weight": 2,
+  "additionalUuids": [
+    "ab1486af-0c0a-4aa3-b328-383da74395fc"
+  ],
+  "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4",
   "build": {
     "for": [
       "public",
@@ -14,6 +18,5 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  },
-  "uuid": "91580f72-4bc1-4d99-9ec2-3a1dbf0c9ba4"
+  }
 }

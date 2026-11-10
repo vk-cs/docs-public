@@ -1,13 +1,13 @@
 {
-  "title": "Скрипттерді пайдалану",
+  "title": "Скрипттерді қолдану",
   "shortDescription": "",
-  "metaDescription": "Скрипттерді пайдалану",
-  "sectionTitle": "Скрипттерді пайдалану",
+  "metaDescription": "Скрипттерді қолдану",
+  "sectionTitle": "Скрипттерді қолдану",
   "weight": 5,
+  "uuid": "0382e561-e9d1-4f09-ab8a-f4344e3dff0e",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "fbe795be-0691-48bf-a613-b63fee9bbd1e"
+  }
 }

@@ -8,6 +8,7 @@
 
 ## {heading(CORS конфигурациясының XML жалпы көрінісі)[id=api-spec-s3-cors-request-body]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 ```xml
 <CORSConfiguration>
     <CORSRule>

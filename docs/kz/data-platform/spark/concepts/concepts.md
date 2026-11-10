@@ -1,8 +1,10 @@
+# {heading(Концепциялар)[id=spark-concepts]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 {ifndef(data-p-pdf)}
 Spark сервисінің негізгі ұғымдары мен сипаттамалары.

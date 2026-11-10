@@ -1,27 +1,25 @@
-# {heading(Cloud Kafka-дан Cloud Iceberg Metastore-ға оқиғаларды ағындық өңдеуге арналған конвейер жасау)[id=kafka_iceberg]}
+# {heading(Cloud Kafka-дан Cloud Iceberg Metastore-ға оқиғаларды ағынды өңдеу конвейерін жасау)[id=kafka_iceberg]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+Cloud Spark, Cloud Kafka және Cloud Iceberg Metastore сервистері келесі мүмкіндіктері бар оқиғаларды ағынды өңдеу конвейерін жасауға мүмкіндік береді:
+1. Оқиғаларды нақты уақыт режимінде оқу.
+1. Деректерді JSON форматына түрлендіру.
+1. Нәтижелерді Cloud Iceberg Metastore-ға сақтау, S3-тегі бақылау нүктелері арқылы ақауға төзімділік пен ауысымдарды бақылауды қамтамасыз ету.
 
-Cloud Spark, Cloud Kafka және Cloud Iceberg Metastore сервистері нақты уақыт режимінде оқиғаларды ағындық өңдеуге арналған конвейер жасауға мүмкіндік береді, ол:
-1. Оқиғаларды нақты уақытта оқи алады.
-1. Деректерді JSON форматына түрлендіре алады.
-1. Нәтижелерді Cloud Iceberg Metastore-да сақтай алады, бұл ретте S3 ішіндегі бақылау нүктелері арқылы істен шығуға төзімділікті және ығысуларды бақылауды қамтамасыз етеді.
+Конвейер аналитика үшін өзекті деректерді минималды кешігумен — сағаттардың орнына бірнеше минут ішінде жеткізуді қамтамасыз етеді. Бұл бизнестің реакциясын жылдамдатады және аналитиктерге жаңа оқиғалар негізінде дашбордтарды жылдам құруға және мониторинг жүргізуге мүмкіндік береді.
 
-Конвейер аналитика үшін өзекті деректерді минималды кідіріспен жеткізеді — сағаттардың орнына бірнеше минут ішінде. Бұл бизнестің әрекет ету жылдамдығын арттырады және аналитиктерге жаңа оқиғалар негізінде дашбордтарды жылдам құруға және мониторинг жүргізуге мүмкіндік береді.
-
-Нұсқаулықта конвейер жасауға қажетті скрипттер берілген. Конвейерді іске қосу үшін: 
-1. Скрипт файлдарын бөлек директорияға орналастырыңыз.
-1. Көрсетілген айнымалылар үшін мәндерді орнатыңыз.
+Нұсқаулықта конвейерді жасау үшін қажетті скрипттер көрсетілген. Конвейерді іске қосу үшін:
+1. Скрипт файлдарын жеке каталогке орналастырыңыз.
+1. Көрсетілген айнымалылар үшін мәндерді көрсетіңіз.
 1. Скрипттерді орындаңыз.
 
 {note:info}
-
-Нұсқаулықтағы скрипттер Python 3.8 және одан жоғары нұсқаларымен жұмыс істейді.
-
+Нұсқаулықтағы скрипттер 3.8 және одан жоғары нұсқасы бар Python-мен жұмыс істейді.
 {/note}
 
 ## {heading(Жұмысты бастамас бұрын)[id=kafka_iceberg_preparation]}
@@ -152,7 +150,6 @@ Cloud Spark, Cloud Kafka және Cloud Iceberg Metastore сервистері �
         log.error("Error connecting to Kafka broker")
         exit(1)
 
-
     producer = KafkaProducer(
         bootstrap_servers=os.getenv("KAFKA_BROKER"),
         security_protocol="SASL_SSL",
@@ -209,7 +206,6 @@ import logging.config
 from mlplatform_client.v2 import BasicAuth, SparkCluster
 from mlplatform_client.v2.clients.spark import SparkClient
 from mlplatform_client.v2.utils import wait_job_running
-
 
 def start_kafka_job(log: logging.Logger, output_s3_path: str, skip_tls_verify: bool = False):
     log.info("Starting Kafka Spark job")
@@ -310,7 +306,6 @@ if __name__ == "__main__":
     from pyspark.sql.functions import *
     from pyspark.sql.types import *
 
-
     def create_table_if_not_exists(spark):
         table_name = "iceberg.metastore.counts_table"
 
@@ -337,7 +332,6 @@ if __name__ == "__main__":
                 print(f"Table {table_name} created successfully.")
             else:
                 raise e
-
 
     def main():
         spark = SparkSession.builder.appName("KafkaToIceberg").getOrCreate()

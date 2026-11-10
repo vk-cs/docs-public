@@ -1,0 +1,18 @@
+{
+  "title": "Шығындардың егжей-тегжейі",
+  "shortDescription": "Ресурстарды тұтыну және баланстың өзгеруі туралы статистика",
+  "metaDescription": "VK Cloud: жобалардағы ресурстарды тұтыну және баланстың өзгеруі статистикасын көру",
+  "sectionTitle": "Шығындардың егжей-тегжейі",
+  "icon": "",
+  "weight": 8,
+  "uuid": "6137f910-4a18-4872-81b6-9fa0ca16a0b8",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

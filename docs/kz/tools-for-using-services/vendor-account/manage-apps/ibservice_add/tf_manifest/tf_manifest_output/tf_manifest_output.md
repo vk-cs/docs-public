@@ -1,29 +1,29 @@
 # {heading(Шығыс параметрлерінің сипаттамасы)[id=tf_manifest_output]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Пайдаланушыға манифест орындалып, сервис deployed болғаннан кейін email арқылы жіберу үшін шығыс параметрлерін сипаттаңыз.
+Шығыс параметрлерін сипаттаңыз, оларды манифест орындалып, сервис орналастырылғаннан кейін пайдаланушыға email арқылы жіберу үшін.
 
-Егер шығыс параметрінде сезімтал деректер болса, `sensitive` атрибутын орнатыңыз. Бұл жағдайда шығыс параметрінің деректері пайдаланушыға беріледі, бірақ Terraform журналдарында сақталмайды.
+Егер шығыс параметр сезімтал деректерді құрамдаса, `sensitive` атрибутын көрсетіңіз. Бұл жағдайда шығыс параметрінің деректері пайдаланушыға жіберіледі, бірақ Terraform логтарында сақталмайды.
 
-Шығыс параметрлерінде пайдаланушыға мыналарды беруге болады:
+Шығыс параметрлері арқылы пайдаланушыға мыналарды жібруге болады:
 
-* Құрылған сервис инстансының ВМ IP-мекенжайы.
+* Сервис инстансының жасалған ВМ IP-адресі.
 
-  {caption(ВМ IP-мекенжайы үшін шығыс параметрінің мысалы)[align=left;position=above]}
+   {caption(ВМ IP-адресі үшін шығыс параметрінің мысалы)[align=left;position=above]}
    ```hcl
-   # Вывод IP-адреса ВМ
+   # ВМ IP-адресін шығару
    output "address" {
      description = "The host IP-address"
      value = vkcs_compute_instance.compute.access_ip_v4
    }
    ```
-  {/caption}
-* Скрипт жасаған сервис инстансын бастапқы баптауға арналған парольдер.
+   {/caption}
+* Скриптпен генерацияланған сервис инстансының бастапқы баптауына арналған құпиясөздер.
 
-  {caption(Скрипт нәтижелері үшін шығыс параметрінің мысалы)[align=left;position=above]}
+   {caption(Скрипт нәтижелері үшін шығыс параметрінің мысалы)[align=left;position=above]}
    ```hcl
-   # Выполнение скрипта
+   # Скриптті орындау
    resource "ivkcs_agent_exec" "start" {
      hosts = [local.hosts_name]
      name  = "start"
@@ -44,7 +44,7 @@
      ]
    }
 
-   # Запрос результатов скрипта
+   # Скрипт нәтижелерін сұрау
    data "ivkcs_agent_script_result" "password" {
      uuid  = var.instance_uuid
      host  = local.hosts_names[0]
@@ -56,37 +56,37 @@
      ]
    }
 
-   # Вывод результатов скрипта
+   # Скрипт нәтижелерін шығару
    output "password" {
      description = "password"
      value = data.ivkcs_agent_script_result.password.result
      sensitive = true
    }
    ```
-  {/caption}
-* `random_password` ресурсы арқылы жасалған сервис инстансын бастапқы баптауға арналған парольдер.
+   {/caption}
+* `random_password` ресурсы көмегімен генерацияланған сервис инстансының бастапқы баптауына арналған құпиясөздер.
 
-  {caption(`random_password` ресурсы арқылы жасалған пароль үшін шығыс параметрінің мысалы)[align=left;position=above]}
+   {caption(`random_password` ресурсы көмегімен генерацияланған құпиясөз үшін шығыс параметрінің мысалы)[align=left;position=above]}
    ```hcl
    output "default_password" {
      value     = random_password.user.result
      sensitive = true
    }
    ```
-  {/caption}
-* Сервис инстансының ВМ-ге қол жеткізуге арналған жабық SSH кілті.
+   {/caption}
+* Сервис инстансының ВМ-не кіру үшін жабық SSH-кілті.
 
-  {caption(Жабық SSH кілті үшін шығыс параметрінің мысалы)[align=left;position=above]}
+   {caption(Жабық SSH-кілт үшін шығыс параметрінің мысалы)[align=left;position=above]}
    ```hcl
    output "private_key" {
      value     = ivkcs_ssh_keypair.key.private_key
      sensitive = true
    }
    ```
-  {/caption}
+   {/caption}
 
-  {note:err}
+   {note:err}
 
-  `sensitive` атрибутынсыз `output` ішінде жабық SSH кілтін шығаруға тыйым салынады.
+   `sensitive` атрибутысыз жабық SSH-кілтті `output` арқылы шығаруға болмайды.
 
-  {/note}
+   {/note}

@@ -1,15 +1,15 @@
-# {heading(Spark кластерін жасау)[id=tf_spark]}
+# {heading(Spark кластерін құру)[id=tf_spark]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{var(data-p)} платформасында Cloud Spark кластерін және оған байланысты инфрақұрылымды Terraform көмегімен автоматты түрде орнатуға болады.
+Ол үшін кластерді және басқа ресурстарды конфигурациялық файлдарда сипаттап, конфигурацияны қолданыңыз.
 
-Сіз Terraform көмегімен {var(data-p)} ішінде Cloud Spark кластерін және онымен байланысты инфрақұрылымды автоматты түрде өрістете аласыз.
-Ол үшін кластерді және басқа ресурстарды конфигурация файлдарында сипаттап, конфигурацияны қолданыңыз.
-
-Кластерді жасау кезінде мыналар пайдаланылады:
+Кластерді құру кезінде мыналар пайдаланылады:
 
 - [vkcs_dataplatform_cluster](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dataplatform_cluster.md) ресурсы;
 - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) ресурсы;

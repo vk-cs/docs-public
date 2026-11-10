@@ -280,12 +280,12 @@ Kibana-ны орнатып, бастапқы баптауды орындау ү�
    ```nginx
    server {
        listen 80;
-    
+
        server_name <внешний IP-адрес веб-сервера>;
-    
+
        auth_basic "Restricted Access";
        auth_basic_user_file /etc/nginx/htpasswd.users;
-    
+
        location / {
            proxy_pass http://localhost:5601;
            proxy_http_version 1.1;

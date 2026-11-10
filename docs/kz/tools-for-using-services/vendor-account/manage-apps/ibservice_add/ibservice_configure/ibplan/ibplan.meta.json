@@ -1,13 +1,13 @@
 {
-  "title": "Файл plan.yaml",
+  "title": "plan.yaml файлы",
   "shortDescription": "",
-  "metaDescription": "Файл plan.yaml",
-  "sectionTitle": "Файл plan.yaml",
+  "metaDescription": "plan.yaml файлы",
+  "sectionTitle": "plan.yaml файлы",
   "weight": 6,
+  "uuid": "24d51557-5cd5-438e-afc9-f7842b38e7c1",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "0193fd13-5638-40d2-8c87-b37187f21955"
+  }
 }

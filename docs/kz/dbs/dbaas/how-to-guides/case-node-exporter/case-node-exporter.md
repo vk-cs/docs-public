@@ -199,7 +199,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
 Құрылған ресурстар тарификацияланады және квоталарды жұмсайды. Егер олар енді қажет болмаса:
 
 1. Өрістетілген виртуалды машиналарды {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
-1. Grafana бар виртуалды машинаны [жойыңыз](../../../../applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-delete).
+1. Grafana бар виртуалды машинаны [жойыңыз](../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-delete).
 1. `Centos_8_5_Prometheus` виртуалды машинасына тағайындалған Floating
    IP-мекенжайын {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=жойыңыз]}.
 1. Виртуалды IP мекенжайы тағайындалған портты {linkto(../../../../networks/vnet/instructions/ports#vnet-ports-delete)[text=жойыңыз]}.

@@ -1,10 +1,11 @@
 {
   "title": "Тұжырымдамалар",
-  "shortDescription": "Cloud Backup сервисінің жұмыс істеу қағидаттары",
-  "metaDescription": "VK Cloud ішіндегі Cloud Backup сервисінің жұмыс істеу қағидаттарының сипаттамасы.",
+  "shortDescription": "Cloud Backup қызметінің жұмыс істеу принциптері",
+  "metaDescription": "VK Cloud платформасындағы Cloud Backup қызметінің жұмыс істеу принциптерінің сипаттамасы.",
   "sectionTitle": "Тұжырымдамалар",
   "icon": "",
   "weight": 0,
+  "uuid": "75406afc-6c81-4b7c-9cc8-ad15489b9222",
   "build": {
     "for": [
       "public",
@@ -14,6 +15,5 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  },
-  "uuid": "686add2e-86af-4252-9be5-d202df53b75a"
+  }
 }

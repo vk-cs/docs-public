@@ -1,0 +1,14 @@
+{
+  "title": "Пошаговые нұсқаулар",
+  "shortDescription": "Сервис данасын жасау және оның компоненттерін басқару",
+  "metaDescription": "Lakekeeper VK Data Platform жұмысы бойынша пошаговые нұсқаулар: дана жасау және оны басқару",
+  "sectionTitle": "Пошаговые нұсқаулар",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "b0aa3b81-6fdf-45e1-914f-28af1d7a9fb1"
+}

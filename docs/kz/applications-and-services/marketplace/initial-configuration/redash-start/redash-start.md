@@ -21,7 +21,7 @@ Redash 10.1.0 сервисін пайдалану арқылы сіз [Marketpla
 
    {note:info}
 
-   Егер кіру деректерін сақтамаған болсаңыз, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+   Егер кіру деректерін сақтамаған болсаңыз, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

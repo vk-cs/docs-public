@@ -1,15 +1,13 @@
 {
-  "title": "AWS CLI",
+  "title": "AWS CLI орнату",
   "shortDescription": "{var(cloud)} платформасындағы ресурстарды басқару үшін AWS клиентін орнату",
   "metaDescription": "VK Cloud платформасындағы ресурстарды басқару үшін AWS клиентін орнату",
-  "sectionTitle": "AWS CLI",
+  "sectionTitle": "AWS CLI орнату",
   "weight": 2,
+  "uuid": "857b60cf-d946-4021-acfb-bbc63b88a762",
   "build": {
     "for": [
-      "public",
-      "s3",
-      "s3-pdf"
+      "public"
     ]
-  },
-  "uuid": "ec80aa68-c932-434e-a57d-c4f3fee7bf9c"
+  }
 }

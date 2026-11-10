@@ -1,0 +1,17 @@
+{
+  "title": "Redis кеңейтулері",
+  "shortDescription": "Қолжетімді Redis кеңейтулерінің және олардың параметрлерінің тізімі",
+  "metaDescription": "VK Cloud-тағы Cloud Databases: қолжетімді Redis кеңейтулерінің және олардың параметрлерінің тізімі.",
+  "sectionTitle": "Redis кеңейтулері",
+  "icon": "",
+  "weight": 5,
+  "uuid": "5a169eac-b9f9-4059-80d5-3b54ab3e73cb",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

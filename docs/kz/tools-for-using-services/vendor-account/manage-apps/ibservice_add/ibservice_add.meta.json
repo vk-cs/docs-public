@@ -1,13 +1,13 @@
 {
-  "title": "Дүкенге image-based қосымшаны қосу",
+  "title": "Image-based қосымшаны дүкенге қосу",
   "shortDescription": "",
-  "metaDescription": "Дүкенге image-based қосымшаны қосу",
-  "sectionTitle": "Дүкенге image-based қосымшаны қосу",
+  "metaDescription": "Image-based қосымшаны дүкенге қосу",
+  "sectionTitle": "Image-based қосымшаны дүкенге қосу",
   "weight": 2,
+  "uuid": "ba36c460-79cd-45bf-aa90-8ff6512a1089",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "cd62e94f-2389-47b2-9096-e6f9f27cd4d6"
+  }
 }

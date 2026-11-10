@@ -4,10 +4,10 @@
   "metaDescription": "settings.yaml файлы",
   "sectionTitle": "settings.yaml файлы",
   "weight": 1,
+  "uuid": "8987cf7f-ddc4-4d22-b950-567678bbacc6",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "6fad7ee6-2c92-4186-86cb-e17a5853ee65"
+  }
 }

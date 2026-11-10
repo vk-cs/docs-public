@@ -1,13 +1,13 @@
 {
   "title": "VK CS Infra (iVK CS) провайдері бойынша анықтамалық",
   "shortDescription": "",
-  "metaDescription": "VK CS Infra провайдерінің дереккөздері мен ресурстары туралы мәліметтер",
+  "metaDescription": "VK CS Infra провайдерінің деректер көздері мен ресурстары туралы мәліметтер",
   "sectionTitle": "VK CS Infra (iVK CS) провайдері бойынша анықтамалық",
   "weight": 8,
+  "uuid": "2c84e247-fa72-45f1-9ee1-484633accf2a",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "7f4ae43f-dbe7-4a74-96ce-a79b1d86445b"
+  }
 }

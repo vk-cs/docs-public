@@ -1,14 +1,14 @@
 {
   "title": "Cloud Backup",
-  "shortDescription": "Cloud Backup сервисінің OpenAPI спецификациясы",
-  "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыруға және VK Cloud-пен жұмыс істеуге арналған өз құралдарыңызды әзірлеуге арналған жария API спецификациялары. Cloud Backup сервисінің OpenAPI спецификациясы",
+  "shortDescription": "Cloud Backup сервисінің OpenAPI-сипаттамасы",
+  "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарын әзірлеу үшін жалпыға қолжетімді API-сипаттамалар. Cloud Backup сервисінің OpenAPI-сипаттамасы",
   "sectionTitle": "Cloud Backup",
   "icon": "",
   "weight": 2,
+  "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "14094f25-60f4-4cb0-86c4-7a17408ba050"
+  }
 }

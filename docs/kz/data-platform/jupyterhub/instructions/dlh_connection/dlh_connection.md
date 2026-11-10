@@ -1,17 +1,17 @@
-# {heading(DLH жүйесінде жұмыс істеу)[id=jupyterhub_dlh]}
+# {heading(DLH-те жұмыс)[id=jupyterhub_dlh]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+JupyterHub-ты DLH-те пайдалану үшін Cloud Iceberg Metastore және S3 қосылымын баптау қажет.
 
-JupyterHub-пен DLH жүйесінде жұмыс істеу үшін Cloud Iceberg Metastore және S3-ке қосылымды баптау қажет.
-
-Қосылымдарды баптауға арналған барлық қажетті командалар мен код [Jupyter-ноутбуктің мысалында](./assets/iceberg.ipynb "download") берілген. Оны жүктеп алып, Jupyter-ноутбукке импорттаңыз немесе төмендегі нұсқаулық бойынша қосылымдарды өзіңіз баптаңыз.
+Қосылымдарды баптауға қажетті барлық командалар мен код [Jupyter-ноутбук мысалында](./assets/iceberg.ipynb "download") орналасқан. Оны жүктеп алып, өз Jupyter-ноутбегіңізге импорттаңыз немесе төмендегі нұсқаулық бойынша қосылымдарды өзіңіз баптаңыз.
 
 {note:info}
-Осы нұсқаулықтағы коды бар әрбір қадамды Jupyter-ноутбуктің кодқа арналған бір немесе әртүрлі ұяшықтарында орындауға болады.
+Осы нұсқаулықтағы коды бар әрбір қадамды Jupyter-ноутбегінің бір немесе әр түрлі код ұяшықтарында орындауға болады.
 {/note}
 
 ## {heading(Қосылымдарды баптауға дайындық)[id=jupyterhub_dlh_connection_preparation]}
@@ -78,31 +78,30 @@ JupyterHub сервис данасында DLH жүйесінде жұмыс і�
     Егер Cloud Iceberg Metastore-ға қосылу кезінде қате орын алса, айнымалылардағы мәндердің дұрыстығын тексеріп, Jupyter-ноутбук ядросын қайта жүктеңіз.
     {/note}
 
+## {heading(S3-ге қосу)[id=jupyterhub_dlh_s3_connection]}
 
-## {heading(S3-ке қосылу)[id=jupyterhub_dlh_s3_connection]}
-
-1. S3-ке қол жеткізуге арналған жария және құпия кілттерді жасаңыз.
-1. Ағымдағы Jupyter-ноутбукта кодқа арналған ұяшықта айнымалыларды беріп, оларға тіркелгі деректерін көрсетіңіз:
+1. S3-ге қол жеткізудің ашық және жабық кілттерін жасаңыз.
+1. Ағымдағы Jupyter-ноутбукта код ұяшығында айнымалыларды орнатыңыз және оларға тіркелгі деректемелерін көрсетіңіз:
 
     ```python
-    uri = "postgres://<ЛОГИН>:<ҚҰПИЯСӨЗ>@<IP-МЕКЕНЖАЙ>:8001/<БД>"
+    uri = "postgres://<ЛОГИН>:<ПАРОЛЬ>@<IP-АДРЕС>:8001/<БД>"
     s3_bucket_name = "<БАКЕТ>"
     ENDPOINT = "https://hb.ru-msk.vkcloud-storage.ru"
-    ACCESS_KEY = "<S3_ҚОЛЖЕТКІЗУГЕ_АРНАЛҒАН_ЖАРИЯ_КІЛТ>"
-    SECRET_KEY = "<S3_ҚОЛЖЕТКІЗУГЕ_АРНАЛҒАН_ҚҰПИЯ_КІЛТ>"
+    ACCESS_KEY = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА_К_S3>"
+    SECRET_KEY = "<ПРИВАТНЫЙ_КЛЮЧ_ДОСТУПА_К_S3>"
     ```
 
    Мұнда:
 
-    - `<ЛОГИН>` — Cloud Iceberg Metastore сервис данасын құру кезінде көрсетілген пайдаланушы логині;
-    - `<ҚҰПИЯСӨЗ>` — Cloud Iceberg Metastore сервис данасын құру кезінде көрсетілген пайдаланушы құпиясөзі;
-    - `<IP-МЕКЕНЖАЙ>` — **Iceberg Metastore bouncer connection string** өрісінен көшірілген сыртқы IP-мекенжай;
-    - `<БАКЕТ>` — Cloud Iceberg Metastore сервис данасын құру кезінде көрсетілген бакет атауы;
-    - `<БД>` — Cloud Iceberg Metastore сервис данасын құру кезінде көрсетілген дерекқор атауы.
-1. S3-ке қосылымды тексеру және бакет мазмұны туралы ақпаратты шығару үшін кодты көрсетіп, орындаңыз:
+    - `<ЛОГИН>` — Cloud Iceberg Metastore сервисінің данасын жасау кезінде көрсетілген пайдаланушы логині;
+    - `<ПАРОЛЬ>` — Cloud Iceberg Metastore сервисінің данасын жасау кезінде көрсетілген пайдаланушы құпиясөзі;
+    - `<IP-АДРЕС>` — **Iceberg Metastore bouncer connection string** өрісінен көшірілген сыртқы IP-мекенжайы;
+    - `<БАКЕТ>` — Cloud Iceberg Metastore сервисінің данасын жасау кезінде көрсетілген бакет атауы;
+    - `<БД>` — Cloud Iceberg Metastore сервисінің данасын жасау кезінде көрсетілген деректер қорының атауы.
+1. S3-ге қосылымды тексеру және бакет мазмұны туралы ақпаратты шығару үшін кодты көрсетіңіз және орындаңыз:
 
-    ```python
-    import boto3
+   ```python
+   import boto3
 
    # S3-ке қосылуды тексеру
     try:
@@ -170,12 +169,12 @@ Iceberg-кестесіне деректерді жазу үшін мыналар
                 prepared_df[col] = prepared_df[col].astype('string')
 
             elif pd.api.types.is_integer_dtype(dtype):
+
                 # Типтерді Iceberg-пен үйлесімді форматқа түрлендіру
                 prepared_df[col] = prepared_df[col].astype('int64')
 
             elif pd.api.types.is_float_dtype(dtype):
                 prepared_df[col] = prepared_df[col].astype('float64')
-
 
             elif pd.api.types.is_bool_dtype(dtype):
                 prepared_df[col] = prepared_df[col].astype('boolean')
@@ -216,6 +215,7 @@ def create_pyarrow_scheme(prepared_df: pd.DataFrame) -> pa.schema:
 
     ```python
     def add_data_to_iceberg_table(table: Table, data_df: pd.DataFrame) -> None:
+
         # Iceberg үшін деректерді дайындау
         prepared_df = prepare_dataframe_for_iceberg(data_df)
 

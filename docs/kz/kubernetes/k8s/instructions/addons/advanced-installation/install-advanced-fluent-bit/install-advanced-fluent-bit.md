@@ -13,9 +13,9 @@
 Аддон master-түйіндерді қоса алғанда, кластердің барлық түйіндеріне [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) контроллері түрінде орнатылады.
 
    {tabs}
-   
+
    {tab(Жеке кабинет)}
-      
+
    1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Kubernetes кластерлері → Kubernetes кластерлері** бөліміне өтіңіз.
@@ -43,9 +43,9 @@
       Кластерге аддонды орнату басталады. Бұл процесс ұзақ уақыт алуы мүмкін.
 
    {/tab}
-   
+
    {tab(Terraform)}
-   
+
    1. Егер бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](../../../../../../tools-for-using-services/terraform/quick-start).
    1. Кластерді сипаттайтын Terraform конфигурация файлдарыңызға мыналарды қосыңыз:
 
@@ -72,7 +72,7 @@
       ```
 
    {/tab}
-   
+
    {/tabs}
 
 ## {heading(Орнату кезінде аддонды баптау кодын өңдеу)[id=k8s-install-advanced-fluent-bit-edit-code]}

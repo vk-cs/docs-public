@@ -1,12 +1,12 @@
 {
-  "title": "Ортаныда брокерді өрістету",
+  "title": "Брокерді ортада орналастыру",
   "shortDescription": "",
-  "metaDescription": "Ортаныда брокерді өрістету",
-  "sectionTitle": "Ортаныда брокерді өрістету",
+  "metaDescription": "Брокерді ортада орналастыру",
+  "sectionTitle": "Брокерді ортада орналастыру",
+  "uuid": "93bf1d4b-a09e-4cbd-9a42-810813bfe2b4",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "4673d258-f54e-48fa-8bcb-b9e58d601163"
+  }
 }

@@ -5,10 +5,10 @@
   "sectionTitle": "Жүйе күйін тексеру",
   "icon": "",
   "weight": 5,
+  "uuid": "30d03839-73a1-4d58-bed0-494ed2a5f8df",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "afe53a68-6f4f-4158-8788-f42443922494"
+  }
 }

@@ -13,6 +13,7 @@ EventBridge қолдау көрсетілмейді.
 
 ## {heading(Оқиға түрлері)[id=working-with-notifications]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 Оқиға түрлерінің сипаттамасы {linkto(#notifications)[text=%number кестесінде]} берілген.
 
 {caption(Кесте {counter(table)[id=numb_tab_notifications]} — Оқиға түрлері)[align=right;position=above;id=notifications;number={const(numb_tab_notifications)}]}

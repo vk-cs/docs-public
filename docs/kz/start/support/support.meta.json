@@ -1,10 +1,14 @@
 {
   "title": "Техникалық қолдау",
-  "shortDescription": "VK Cloud сервистерін техникалық қолдау туралы ақпарат",
-  "metaDescription": "VK Cloud сервистерін техникалық қолдау туралы ақпарат",
+  "shortDescription": "{var(cloud)} сервистерінің техникалық қолдауы туралы ақпарат",
+  "metaDescription": "VK Cloud сервистерінің техникалық қолдауы туралы ақпарат",
   "sectionTitle": "Техникалық қолдау",
   "icon": "",
   "weight": 3,
+  "additionalUuids": [
+    "55eb9967-05ce-4436-87ff-574691574580"
+  ],
+  "uuid": "eddb2f75-1d1a-431e-b990-39708313c56c",
   "build": {
     "for": [
       "public",
@@ -18,6 +22,5 @@
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "ea9dfc40-5b76-488d-ab23-efdfaadb5d28"
+  }
 }

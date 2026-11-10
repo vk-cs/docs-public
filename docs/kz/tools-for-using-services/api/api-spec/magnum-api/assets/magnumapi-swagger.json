@@ -3316,7 +3316,8 @@
           }
         },
         "example": {
-                  }
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
       },
       "patchJobResponse": {
         "type": "object",
@@ -3326,7 +3327,8 @@
           }
         },
         "example": {
-                  }
+          "uuid": "9fe3bb90-261e-42f9-a091-c6f6f704fdd7"
+        }
       },
       "patchUpgradeResponse": {
         "type": "object",
@@ -3336,7 +3338,8 @@
           }
         },
         "example": {
-                  }
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
       },
       "clusterUUID": {
         "type": "object",
@@ -3346,7 +3349,8 @@
           }
         },
         "example": {
-                  }
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
       },
       "patchNodegroupResponse": {
         "type": "object",
@@ -3356,7 +3360,8 @@
           }
         },
         "example": {
-                  }
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
       },
       "node": {
         "type": "object",

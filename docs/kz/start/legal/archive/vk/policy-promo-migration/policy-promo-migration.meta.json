@@ -1,0 +1,16 @@
+{
+  "title": "«VK Cloud бұлдыр платформасына тегін көші» акциясының ережелері",
+  "shortDescription": "",
+  "metaDescription": "Акция тұтынушылардың назарын Платформа Сервистеріне аударуға және VK Cloud өнімдерінің танымалдығын арттыруға арналған",
+  "sectionTitle": "«VK Cloud бұлдыр платформасына тегін көші» акциясының ережелері",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 16,
+  "uuid": "d8a2b4c5-7966-45e4-b38c-1b11187472e2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

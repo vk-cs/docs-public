@@ -1,14 +1,14 @@
-# {heading(Cloud Spark-ты деректерді өңдеу құралы ретінде қосу)[id=dlh_connect-spark]}
+# {heading(Cloud Spark деректерді өңдеу құралы ретінде қосу)[id=dlh_connect-spark]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{linkto(../../quick-start#dlh_quick-start)[text=негізгі құрылымға]} Data Lakehouse (DLH) {linkto(../../../spark#spark)[text=Cloud Spark]} сервісін қосу деректер S3-объектілік сақтауышқа түспес бұрын оларды күрделі түрлендіруді орындауға мүмкіндік береді, ал [Cloud Trino](../../../trino) салыстырмалы түрде қарапайым сценарийлерді ғана жүзеге асыра алады.
 
-{linkto(../../quick-start#dlh_quick-start)[text=базалық құрылымға]} {linkto(../../../spark#dlh_spark)[text=Cloud Spark]} сервисін Data Lakehouse (DLH) құрамына қосу [Cloud Trino](../../../trino) салыстырғанда, деректерді S3 объектілік қоймасына түспес бұрын күрделі трансформациялауды орындауға мүмкіндік береді, өйткені ол салыстырмалы түрде қарапайым сценарийлерді жүзеге асыра алады.
-
-Жедел ақпаратты сақтау үшін қосымша ретінде аналитикалық ДҚ, мысалы [Cloud ClickHouse](../../../clickhouse), пайдаланылуы мүмкін, бірақ мұндай архитектура шешімді күрделендіріп, оның құнын арттырады.
+Ағымдағы ақпаратты сақтау үшін қосымша аналитикалық БД қолданылуы мүмкін, мысалы [Cloud ClickHouse](../../../clickhouse), дегенмен мұндай архитектура шешімді күрделендіріп, оның құнын арттырады.
 
 ## {heading(Дайындық қадамдары)[id=dlh_connect-spark_preparations]}
 

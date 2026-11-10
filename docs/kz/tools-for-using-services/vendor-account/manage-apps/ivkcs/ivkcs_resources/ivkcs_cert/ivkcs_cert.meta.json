@@ -4,10 +4,10 @@
   "metaDescription": "ivkcs_cert ресурсы",
   "sectionTitle": "ivkcs_cert ресурсы",
   "weight": 5,
+  "uuid": "ca4d9a15-89a0-4d73-b13c-174f95c1730b",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "02551f85-f2df-41ae-99b9-fc7575eb5bc5"
+  }
 }

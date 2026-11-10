@@ -1,14 +1,14 @@
 {
   "title": "Cloud ML Platform",
-  "shortDescription": "Cloud ML Platform сервисінің объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
-  "metaDescription": "Cloud ML Platform сервисімен Terraform көмегімен жұмыс істеу",
+  "shortDescription": "Cloud ML Platform сервисінің нысандарын басқару үшін Terraform-ды қалай пайдалану",
+  "metaDescription": "Terraform-ды қолдана отырып, Cloud ML Platform сервисімен жұмыс істеу",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 70,
+  "uuid": "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "efe621f1-dde2-42cd-972c-88c2681445d0"
+  }
 }

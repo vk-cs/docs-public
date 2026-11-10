@@ -1,18 +1,19 @@
 {
   "title": "Жобалар",
-  "shortDescription": "{var(cloud)} ішіндегі жоба деген не",
-  "metaDescription": "VK Cloud ішіндегі жоба деген не.",
+  "shortDescription": "{var(cloud)} қызметінде жоба дегеніміз не",
+  "metaDescription": "VK Cloud қызметінде жоба дегеніміз не.",
   "sectionTitle": "Жобалар",
   "icon": "",
   "weight": 0,
+  "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
   "build": {
     "for": [
       "public",
       "private",
       "private-pg",
       "private-pdf",
-      "private-pg-pdf"
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "c0a0ac74-898e-4f4a-b943-7712701254ef"
+  }
 }

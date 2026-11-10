@@ -1,18 +1,19 @@
 {
-  "title": "Жобалармен жұмыс",
+  "title": "Жобалармен жұмыс істеу",
   "shortDescription": "{var(cloud)} жобаларын басқару",
   "metaDescription": "VK Cloud жобаларын басқару.",
-  "sectionTitle": "Жобалармен жұмыс",
+  "sectionTitle": "Жобалармен жұмыс істеу",
   "icon": "",
   "weight": 2,
+  "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff",
   "build": {
     "for": [
       "public",
       "private",
       "private-pg",
       "private-pdf",
-      "private-pg-pdf"
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "803a0a9f-f8ad-4c79-8acf-1ac6d66989ec"
+  }
 }

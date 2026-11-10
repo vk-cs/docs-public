@@ -1,42 +1,6 @@
 # {heading(Деректер қабаты үшін Fluent Bit плагинін орнату және баптау)[id=event-log-connect-plugin]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-## {heading(Плагинді орнату)[id=event-log-connect-plugin-install]}
-
-1. Бұрын орнатылмаған болса, ВМ-ге [Fluent Bit](https://docs.fluentbit.io/manual/installation/downloads) БҚ-ны орнатыңыз.
-1. Деректер қабаты аудит оқиғаларын жинау үшін `vkcloudaudit-fluent-bit-plugin` {linkto(../../concepts/audit-plugin#event-log-audit-plugin)[text=плагинін]} орнатыңыз.
-
-   {tabs}
-
-   {tab(CentOS 7.X, CentOS 8.X, AlmaLinux 9)}
-
-   ```console
-   sudo rpm -i https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
-   ```
-
-   {/tab}
-
-   {tab(Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»)}
-
-   ```console
-   wget https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin_0.2.1_amd64.deb
-   sudo dpkg -i vkcloudaudit-fluent-bit-plugin_0.2.1_amd64.deb
-   ```
-
-   {/tab}
-
-   {tab(AltLinux Server p10)}
-
-   ```console
-   sudo apt-get install https://cloudaudit.hb.ru-msk.vkcloud-storage.ru/vkcloudaudit-fluent-bit-plugin/vkcloudaudit-fluent-bit-plugin-0.2.1-1.x86_64.rpm
-   ```
-
-   {/tab}
-
-   {/tabs}
-
-   Орнатудан кейін ВМ қызметтерінде `vkcloudaudit-fluent-bit.service` логтарды жинау агенті пайда болады. Әдепкі бойынша ол өшірулі.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Плагинді баптау)[id=event-log-connect-plugin-configure]}
 
@@ -114,6 +78,7 @@ FluentBit 3.2 және одан жоғары нұсқалары үшін аге�
             tag: kubernetes
             path: examples/logs/kubernetes.log
             skip_empty_lines: on
+
             # debug option
             read_from_head: true
             multiline.parser: multiline_regex_json

@@ -1,8 +1,10 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(MLflow инстансін жасау)[id=terraform-mlflow]}
 
-Мақалада Terraform көмегімен MLflow инстансын құру мысалдары келтірілген.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Инстансты құру кезінде мыналар пайдаланылады:
+Бұл мақалада Terraform көмегімен MLflow инстансін жасау мысалдары келтірілген.
+
+Инстансті жасағанда мыналар пайдаланылады:
 
 - [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md) ресурсы;
 - [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md) ресурсы;
@@ -12,24 +14,24 @@
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Инстансты құру алдында
+## {heading(Инстансті жасамас бұрын)[id=terraform-mlflow-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) инстансты құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын жасауға жеткілікті ресурс бар-жоғын тексеріңіз. Әртүрлі өңірлер үшін әртүрлі квоталар орнатылуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. Егер бұрын жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңіз және провайдерді баптаңыз]}.
 
-1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
+1. `vkcs_provider.tf` файлында провайдердің нұсқасы 0.6.0 немесе одан жоғары көрсетілгенін тексеріңіз. Егер провайдердің нұсқасы төмен болса, оны {linkto(../../../quick-start#terraform-quick-start-update)[text=жаңартыңыз]}.
 
-## 1. MLflow инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-mlflow)}. MLflow инстансін сипаттайтын файл жасаңыз)[id=terraform-mlflow-instance-file]}
 
-Төмендегі мысалда инстанс келесі конфигурацияда құрылады:
+Төмендегі мысалда инстанс келесі конфигурацияда жасалады:
 
-- әдепкі аймақ, қолжетімділік аймағы `ME1`;
-- диск түрі `SSD`, өлшемі — 50 ГБ;
-- деректер дискісінің түрі `SSD`, өлшемі — 60 ГБ.
-Мазмұны келесі Terraform конфигурация файлын `main.tf` жасаңыз:
+- әдепкі өңір, `ME1` қолжетімділік аймағы;
+- `SSD` диск түрі, өлшемі — 50 ГБ;
+- деректер дискінің түрі `SSD`, өлшемі — 60 ГБ.
+Terraform конфигурация файлын `main.tf` мына мазмұнмен жасаңыз:
 
 ```hcl
 resource "vkcs_mlplatform_mlflow" "mlflow" {
@@ -58,39 +60,39 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
 
 Мұнда:
 
-- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестте көрсетуге немесе деректер көзінен алуға болады.
+- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестке жазуға немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор төменде құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) арқылы алынған идентификатор көрсетіледі.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор әрі қарай құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
-- `jh_instance_id` — бірлесіп жұмыс істеуге арналған JupyterHub инстансының идентификаторы. Жаңа инстанс жасауға немесе барын пайдалануға болады.
+- `jh_instance_id` — бірлесіп жұмыс істеуге арналған JupyterHub инстансінің идентификаторы. Жаңа инстанс жасауға немесе бар инстансті пайдалануға болады.
 
   {cut(Мысалдар)}
 
-  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: жаңа JupyterHub инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_jupyterhub` ресурсы құрылғаннан кейін алынады. Ресурс төменде құрылады.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетіндегі](https://cloud.vk.kz/app) JupyterHub инстансы бетінде қолжетімді.
+  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: жаңа JupyterHub инстансі жасалады, инстанстің идентификаторы `vkcs_mlplatform_jupyterhub` ресурсы жасалғаннан кейін алынады. Ресурс әрі қарай құрылады.
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстің идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://cloud.vk.ru/app) JupyterHub инстансі бетінде қолжетімді.
 
   {/cut}
 
-- `demo_mode` — демо-режим. Егер `true` болса, барлық деректер инстанстың ВМ-інде сақталады. Егер `false` болса, деректерді сақтау үшін DBaaS Postgres дерекқоры бар {var(s3)} бакеті қосылады.
+- `demo_mode` — демо-режим. Егер `true` болса, барлық деректер инстанстің ВМ-інде сақталады. Егер `false` болса, деректерді сақтау үшін DBaaS Postgres дерекқоры бар {var(s3)} бакеті қосылады.
 
-- `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстанс бар желіде немесе жаңа желіде орналастырылуы мүмкін. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
+- `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстансті бар желіге немесе жаңа желіге орналастыруға болады. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
-  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
+  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсымен жасалатын жаңа желіге орналастырылады. Ресурс әрі қарай құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіге орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі әрі қарай құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіге орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынады.
 
   {/cut}
 
-## 2. (Опционалды) ВМ түріне арналған деректер көзінің сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-mlflow)}. (Қалауыңызша) ВМ түрі үшін деректер көзін сипаттайтын файл жасаңыз)[id=terraform-mlflow-vm-file]}
 
-Қажетті ВМ түрінің сипаттамасы бар Terraform конфигурация файлын `flavor.tf` жасаңыз:
+Қажетті ВМ түрін сипаттайтын Terraform конфигурация файлын `flavor.tf` жасаңыз:
 
 ```hcl
 data "vkcs_compute_flavor" "basic" {
@@ -98,21 +100,21 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Файлда көрсетілген ВМ түрі Terraform жобаңызда MLflow инстансын жасау үшін пайдаланылады.
+Файлда көрсетілген ВМ түрі Terraform жобасында MLflow инстансін жасау үшін пайдаланылатын болады.
 
-## 3. (Опционалды) Байланыстырылған JupyterHub инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-mlflow)}. (Қалауыңызша) Байланысты JupyterHub инстансін сипаттайтын файл жасаңыз)[id=terraform-mlflow-jupyterhub-file]}
 
-Terraform конфигурация файлын `jh_instance.tf` [JupyterHub инстансының сипаттамасымен](../jupyterhub) жасаңыз.
+{linkto(../jupyterhub#terraform-jupyterhub)[text=JupyterHub инстансінің сипаттамасы]} бар Terraform конфигурация файлын `jh_instance.tf` жасаңыз.
 
-## 4. (Опционалды) Инстанс үшін желілік инфрақұрылым сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-mlflow)}. (Қалауыңызша) Инстанс үшін желілік инфрақұрылымды сипаттайтын файл жасаңыз)[id=terraform-mlflow-net-file]}
 
-Инстансқа арналған желілік инфрақұрылым сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
+Инстанс үшін желілік инфрақұрылымды сипаттайтын Terraform конфигурация файлын `network.tf` жасаңыз:
 
 {tabs}
 
-{tab(Қолданыстағы желінің сипаттамасы)}
+{tab(Бар желінің сипаттамасы)}
 
-Жобада бар желіге арналған деректер көзі сипаттамасының мысалы:
+Жобадағы бар желі үшін деректер көзінің сипаттамасы мысалы:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -122,9 +124,10 @@ data "vkcs_networking_network" "default" {
 ```
 {/tab}
 
-{tab(Жаңа желі құру)}
+{tab(Жаңа желі жасау)}
 
 ```hcl
+
 # Create networks
 resource "vkcs_networking_network" "app" {
   name        = "app-tf-example"
@@ -146,7 +149,8 @@ data "vkcs_networking_network" "extnet" {
 # Create a router to connect netwoks
 resource "vkcs_networking_router" "router" {
   name = "router-tf-example"
-  # Connect router to Internet
+
+# Connect router to Internet
   external_network_id = data.vkcs_networking_network.extnet.id
 }
 
@@ -161,18 +165,18 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 5. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading({counter(tf-mlflow)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-mlflow-create]}
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
    - `vkcs_provider.tf`;
    - `main.tf`;
-   - `flavor.tf` (егер жасалса);
-   - `jh_instance.tf`(егер жасалса);
-   - `network.tf`(егер жасалса).
+   - `flavor.tf` (жасалған болса);
+   - `jh_instance.tf` (жасалған болса);
+   - `network.tf` (жасалған болса).
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Конфигурация файлдары дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
 
    ```console
    terraform validate && terraform plan
@@ -184,28 +188,28 @@ resource "vkcs_networking_router_interface" "app" {
    terraform apply
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 6. Конфигурацияның қолданылуын тексеріңіз
+## {heading({counter(tf-mlflow)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-mlflow-check]}
 
-MLflow инстансы сәтті құрылғанына көз жеткізіңіз:
+MLflow инстансі сәтті жасалғанын тексеріңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow инстансының құрылғанына және белсенді екеніне көз жеткізіңіз.
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://cloud.vk.ru/app/).
+1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. MLflow инстансі жасалғанын және белсенді екенін тексеріңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-mlflow-delete]}
 
 Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурация файлдары бар директорияға өтіңіз.
-1. Келесі пәрменді орындаңыз:
+1. Terraform конфигурация файлдары орналасқан директорияға өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

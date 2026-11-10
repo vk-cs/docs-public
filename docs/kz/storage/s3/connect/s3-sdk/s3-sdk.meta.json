@@ -1,16 +1,20 @@
 {
   "title": "SDK",
-  "shortDescription": "VK Object Storage қоймасына SDK арқылы қосылу",
-  "metaDescription": "VK Object Storage қоймасына SDK арқылы кезең-кезеңімен қосылу: қатынау кілттері мен endpoint параметрлерін баптау, region таңдау, клиентті инициализациялау және қатынауды тексеру; танымал SDK-лар (Python boto3, Go) үшін код мысалдары мен типтік операциялар.",
+  "shortDescription": "SDK арқылы VK Object Storage-қа қосылу",
+  "metaDescription": "SDK арқылы VK Object Storage-қа қадамдық қосылу: қол жеткізу кілттерін және endpoint-ті баптау, аймақты таңдау, клиентті инициализациялау және қол жетімділікті тексеру; танымал SDK-ларға (Python boto3, Go) арналған типтік операциялармен код мысалдары.",
   "sectionTitle": "SDK",
   "icon": "",
   "weight": 3,
+  "uuid": "3525ddf4-6195-4c1c-adfe-cb92b137cb32",
+  "additionalUuids": [
+    "f60f6718-aa7f-45d2-9f9a-75a1e4d5884b",
+    "35d52b51-374b-4991-9a2f-b80bcba0ca34"
+  ],
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "b5ff598c-b47c-4861-827f-b63dfd597298"
+  }
 }

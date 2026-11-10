@@ -1,44 +1,44 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(ДБ инстансын жасау)[id=terraform-create-db-instance]}
 
-Мақалада Terraform көмегімен әртүрлі баптаулары бар ДҚ инстанстарын жасау мысалдары келтірілген.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+Мақалада Terraform көмегімен әртүрлі баптаулары бар ДБ инстанстарын жасау мысалдары келтірілген.
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдары)[id=terraform-create-db-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) ДҚ инстансын жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әртүрлі өңірлер үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болса, квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер әлі орындалмаса, [Terraform-ды орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. Әлі жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді баптаңыз]}.
 
-   Провайдер баптауларын Terraform конфигурациясының `provider.tf` файлына орналастырыңыз.
+   Провайдер баптауларын Terraform конфигурация файлына `provider.tf` қойыңыз.
 
-## 1. ДҚ инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-db)}. ДБ инстансының сипаттамасы бар файлды жасаңыз)[id=terraform-create-db-file]}
 
-Төмендегі барлық мысалдарда ДҚ инстанстары келесі қасиеттермен жасалады:
+Төмендегі барлық мысалдарда ДБ инстанстары келесі қасиеттерімен жасалады:
 
-- [Аймақ](/kz/tools-for-using-services/account/concepts/regions): әдепкі бойынша (жоба аймағымен сәйкес келеді).
-- [Қолжетімділік аймағы](/kz/start/concepts/architecture#architecture-az): әдепкі бойынша (Мәскеу аймағы үшін — `ME1`).
-- ДҚБЖ түрі мен нұсқасы: MySQL 8.0.
-- ДҚ инстансының [конфигурациясы](/kz/dbs/dbaas/concepts/work-configs): **Single**.
-- Сыртқы IP мекенжайы: тағайындалған.
+- {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=Өңір]}: әдепкі (жобаның өңірімен сәйкес).
+- [Қолжетімділік аймағы](../../../../../start/concepts/architecture#architecture-az): әдепкі (Москва өңірі үшін — `ME1`).
+- СУБД түрі және нұсқасы: MySQL 8.0.
+- ДБ инстансының {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурациясы]}: **Single**.
+- Сыртқы IP-мекенжайы: тағайындалған.
 
 {note:warn}
+MySQL немесе PostgreSQL ДБ инстанстарын **Кластер** {linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурациясында]} жасағанда {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=қызметтік жүктемені теңгеруші]} жасалады.
 
-{linkto(../../../../../dbs/dbaas/concepts/work-configs#dbaas-work-configs)[text=конфигурация]} ішінде MySQL немесе PostgreSQL ДБ инстанстарын жасау кезінде **Кластер** үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгерімдеушісі]} құрылады.
-
-Теңгергішті пайдалану [тарифтеледі](/kz/networks/vnet/tariffication).
-
+Теңгерушіні пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеленеді]}.
 {/note}
 
-Кластерді жасаудың мысалдарының бірін таңдап, қажетті мазмұнмен Terraform конфигурациясының `main.tf` файлын жасаңыз:
+Кластерді жасау мысалдарының бірін таңдап, қажетті мазмұны бар Terraform `main.tf` конфигурация файлын жасаңыз:
 
 {tabs}
 
 {tab(Қосымша баптауларсыз)}
 
-Инстанс ВМ үшін [конфигурация үлгісі](/kz/computing/iaas/concepts/vm/flavor) `db-instance-flavor` айнымалысы арқылы беріледі.
+Инстанс ВМ-інің {linkto(../../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурация үлгісі]} `db-instance-flavor` айнымалысы арқылы беріледі.
 
 ```hcl
 variable "db-instance-flavor" {
@@ -99,9 +99,9 @@ resource "vkcs_db_instance" "db-instance" {
 
 {/tab}
 
-{tab(Кеңейтіммен)}
+{tab(Кеңейтумен)}
 
-Кеңейтімдерді қосуға `vkcs_db_instance` ресурсының `capabilities` баптауы жауап береді.
+Кеңейтулерді қосуды `vkcs_db_instance` ресурсының `capabilities` баптауы атқарады.
 
 ```hcl
 variable "db-instance-flavor" {
@@ -167,11 +167,11 @@ resource "vkcs_db_instance" "db-instance" {
 
 {/tab}
 
-{tab(ДҚ және пайдаланушымен)}
+{tab(ДБ және пайдаланушымен)}
 
-Дерекқорлар мен пайдаланушыларды қосуға тиісінше `vkcs_db_database` және `vkcs_db_user` ресурстары жауап береді.
+Деректер базалары мен пайдаланушыларды қосуды сәйкесінше `vkcs_db_database` және `vkcs_db_user` ресурстары атқарады.
 
-ДҚ пайдаланушысының құпиясөзі — сезімтал деректер. Онымен қауіпсіз жұмыс істеу үшін, мысалы, `db_user_password` айнымалысын пайдаланыңыз. Консольдегі шығысты жасыру үшін осы айнымалыға `sensitive = true` параметрін қосыңыз:
+ДБ пайдаланушысының құпиясөзі — сезімтал деректер, онымен қауіпсіз жұмыс істеу үшін айнымалыны пайдаланыңыз, мысалы, `db_user_password`. Консольдегі шығуды жасыру үшін осы айнымалыға `sensitive = true` параметрін қосыңыз:
 
 ```hcl
 variable "db_user_password" {
@@ -180,58 +180,56 @@ variable "db_user_password" {
 }
 ```
 
-{cut(`sensitive = true` параметрі бар айнымалы үшін мәнді қалай орнатуға болады?)}
+{cut(sensitive = true параметрі бар айнымалыға мәнді қалай орнатуға болады?)}
 
-Құпиясөзді берудің тәсілдерінің бірін пайдаланыңыз:
+Құпиясөзді орнатудың бір тәсілін пайдаланыңыз:
 
-- `secret.tfvars` файлын жасап, оған `db_user_password="YOUR_DB_PASSWORD"` деп жазыңыз және оны `terraform apply` командасына аргумент ретінде беріңіз:
+- `secret.tfvars` файлын жасап, оған `db_user_password="YOUR_DB_PASSWORD"` жазып, оны `terraform apply` командасына аргумент ретінде беріңіз:
 
-   ```console
-   terraform apply -var-file="secret.tfvars"
-   ```
+  ```console
+  terraform apply -var-file="secret.tfvars"
+  ```
 
   Құпия деректер конфигурациядан бөлек сақталады.
 
-- Terraform-пен жұмыс істеуді жоспарлаған shell сеансында мәнді `TF_VAR` префиксі бар орта айнымалысы арқылы орнатыңыз:
+- Terraform-мен жұмыс істеуді жоспарлайтын қоршам сессиясында мәнді `TF_VAR` префиксі бар орта айнымалысы арқылы орнатыңыз:
 
   {tabs}
 
   {tab(Linux, macOS)}
 
-   ```console
-   export TF_VAR_db_user_password=YOUR_DB_PASSWORD
-   ```
+  ```console
+  export TF_VAR_db_user_password=YOUR_DB_PASSWORD
+  ```
   {/tab}
 
   {tab(Windows (cmd))}
 
-    ```console
-    set TF_VAR_db_user_password=YOUR_DB_PASSWORD
-    ```
+  ```console
+  set TF_VAR_db_user_password=YOUR_DB_PASSWORD
+  ```
 
   {/tab}
 
   {tab(Windows (PowerShell))}
 
-    ```console
-    $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
-    ```
+  ```console
+  $Env:TF_VAR_db_user_password = "YOUR_DB_PASSWORD"
+  ```
 
   {/tab}
 
   {/tabs}
 
-  Конфигурацияны қолданған кезде құпиясөз мәні ортадан автоматты түрде жүктеледі.
+  Конфигурацияны қолданғанда құпиясөздің мәні ортадан автоматты түрде жүктеледі.
 
 {note:info}
-
-Егер құпиясөз мәні орнатылмаса, Terraform конфигурацияны қолдану кезінде оны консольде енгізуді сұрайды.
-
+Құпиясөздің мәні орнатылмаса, конфигурацияны қолданғанда Terraform оны консольге енгізуді талап етеді.
 {/note}
 
 {/cut}
 
-ДҚ мен пайдаланушыны қосатын конфигурация файлы:
+ДБ мен пайдаланушы қосылған конфигурация файлы:
 
 ```hcl
 variable "db_user_password" {
@@ -312,49 +310,49 @@ resource "vkcs_db_user" "db-user" {
 
 {/tabs}
 
-## 2. Terraform көмегімен ресурстарды жасаңыз
+## {heading({counter(tf-db)}. Ресурстарды Terraform көмегімен жасаңыз)[id=terraform-create-db-resource]}
 
-1. Terraform конфигурациясының `terraform.rc`, `vkcs_provider.tf`, `main.tf` және `secret.tfvars` файлдарын (егер жасалған болса) бір директорияға орналастырыңыз.
-1. Осы директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдарын `terraform.rc`, `vkcs_provider.tf`, `main.tf` және `secret.tfvars` (жасалған болса) бір каталогқа қойыңыз.
+1. Осы каталогқа өтіңіз.
+1. Команданы орындаңыз:
 
-    ```console
-    terraform init
-    ```
+   ```console
+   terraform init
+   ```
 
    Terraform инициализациясының аяқталуын күтіңіз.
 
-1. Келесі команданы орындаңыз:
+1. Команданы орындаңыз:
 
-    ```console
-    terraform apply
-    ```
+   ```console
+   terraform apply
+   ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұалғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 3. Конфигурацияның қолданылуын тексеріңіз
+## {heading({counter(tf-db)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-create-db-check]}
 
-[Жеке кабинеттегі](https://kz.cloud.vk.kz/app/) {var(cloud)} **Дерекқорлар** → **Дерекқор инстанстары** бөліміне өтіңіз. Конфигурацияда сипатталған барлық объектілердің сәтті жасалғанына көз жеткізіңіз:
+{var(cloud)} жеке кабинетінің **Деректер базалары** → **Деректер базаларының инстанстары** бөліміне [өтіңіз](https://msk.cloud.vk.ru/app/). Конфигурацияда сипатталған барлық объектілер сәтті жасалғанына көз жеткізіңіз:
 
-- [ДҚ инстансы](/kz/dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-get-info).
-- Инстанс үшін сыртқы IP мекенжайы — инстанс бетінде көрсетіледі.
-- [Prometheus Node exporter](/kz/dbs/dbaas/instructions/managing-extensions) кеңейтімі (егер орнатылған болса) — инстанс бетіндегі **Кеңейтімдер** қойындысында көрсетіледі.
-- Инстанстағы ДҚ (егер жасалған болса) — инстанс бетіндегі **Дерекқорлар тізімі** қойындысында көрсетіледі.
-- [ДҚ пайдаланушысы](/kz/dbs/dbaas/instructions/users#dbaas-users-list) (егер жасалған болса) — инстанс бетіндегі **Пайдаланушылар** қойындысында көрсетіледі.
+- {linkto(../../../../../dbs/dbaas/instructions/manage-instance/mysql#dbaas-mysql-get-info)[text=ДБ инстансы]}.
+- Инстанс үшін сыртқы IP-мекенжай — инстанс бетінде көрсетіледі.
+- linkto(../../../../../dbs/dbaas/instructions/managing-extensions#dbaas-managing-extensions)[text=Prometheus Node exporter]}{ кеңейтімі (орнатылған болса) — инстанс бетінің **Кеңейтулер** қойыншасында көрсетіледі.
+- Инстанстағы ДБ (жасалған болса) — инстанс бетінің **Деректер базалары тізімі** қойыншасында көрсетіледі.
+- {linkto(../../../../../dbs/dbaas/instructions/users#dbaas-users-list)[text=ДБ пайдаланушысы]} (жасалған болса) — инстанс бетінің **Пайдаланушылар** қойыншасында көрсетіледі.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-create-db-delete]}
 
-Осы сценарийде жасалған кейбір объектілер ресурстарды тұтынады. Егер олар сізге енді қажет болмаса, оларды жойыңыз:
+Осы сценарийде жасалған кейбір объектілер ресурстарды тұтынады. Олар сізге енді қажет болмаса, жойыңыз:
 
-1. Terraform конфигурациясы файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары бар каталогке өтіңіз.
+1. Команданы орындаңыз:
 
-    ```console
-    terraform destroy
-    ```
+   ```console
+   terraform destroy
+   ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұалғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

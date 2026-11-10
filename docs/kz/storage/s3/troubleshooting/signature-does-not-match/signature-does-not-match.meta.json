@@ -1,16 +1,16 @@
 {
-  "title": "Объектілік хранилищеге жүгінгенде SignatureDoesNotMatch қатесі",
-  "metaDescription": "VK Object Storage жүйесіндегі SignatureDoesNotMatch қатесін қалай түзетуге болады? Қатені жою үшін сервис доменінің, қолжеткізу кілттерінің дұрыстығын тексеріп, жүйелік уақытты NTP арқылы синхрондаңыз.",
-  "shortDescription": "API арқылы немесе AWS CLI көмегімен объектілік хранилищеге жүгінгенде SignatureDoesNotMatch қатесі қайтарылса не істеу керек",
-  "sectionTitle": "Объектілік хранилищеге жүгінгенде SignatureDoesNotMatch қатесі",
+  "title": "Объекттік қоймадағы қоңырау кезіндегі SignatureDoesNotMatch қатесі",
+  "metaDescription": "VK Object Storage жүйесінде SignatureDoesNotMatch қатесін қалай түзетуге болады? Мәселені шешу үшін сервистің домен атауының дұрыстығын, қолжетім кілттерін тексеріңіз және жүйелік уақытты NTP арқылы синхрондаңыз.",
+  "shortDescription": "Объекттік қоймаға API арқылы немесе AWS CLI көмегімен қоңырау шалғанда SignatureDoesNotMatch қатесі қайтарылса, не істеу керек",
+  "sectionTitle": "Объекттік қоймадағы қоңырау кезіндегі SignatureDoesNotMatch қатесі",
   "icon": "",
   "weight": 6,
+  "uuid": "8a621c8c-8158-4b5c-9c5d-95b11e514ac0",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "2e66b539-3477-4966-b105-8c0f0304d111"
+  }
 }

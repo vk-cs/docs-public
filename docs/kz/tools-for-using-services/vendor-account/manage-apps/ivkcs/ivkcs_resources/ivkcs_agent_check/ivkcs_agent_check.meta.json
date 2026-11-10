@@ -3,11 +3,11 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_agent_check ресурсы",
   "sectionTitle": "ivkcs_agent_check ресурсы",
+  "uuid": "4261b57f-6590-4e06-b8c4-50ed00763ac1",
   "weight": 2,
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "d10a3c4b-30b9-45d0-9e65-48c63ec65f92"
+  }
 }

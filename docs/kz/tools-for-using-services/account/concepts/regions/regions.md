@@ -1,17 +1,15 @@
 # {heading(Аймақтар)[id=tools-account-concepts-regions]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Аймақ — [қолжетімділік аймақтарын](/kz/start/concepts/architecture#architecture-az) біріктіретін географиялық аумақ.
+Аймақ — {linkto(../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймақтарын]} біріктіретін географиялық аймақ.
 
-Аймақ әрбір [жобаға](../projects) автоматты түрде тағайындалады және жоба иесі өз аккаунтын [тіркеген](/kz/intro/onboarding/account) сайттың URL мекенжайына байланысты болады.
+Аймақ әрбір {linkto(../projects#tools-account-concepts-projects)[text=жобаларға]} автоматты түрде тағайындалады және жоба иесі аккаунтын {linkto(../../../../intro/onboarding/account#onboarding-account)[text=тіркеген]} сайттың URL мекенжайына байланысты.
 
-Нысандарды (мысалы, виртуалды машиналарды) тек жоба құрылған аймақтың қолжетімділік аймағында ғана жасауға болады.
+Объекттерді (мысалы, виртуалды машиналарды) жоба жасалған аймақтың қолжетімділік аймағында ғана жасауға болады.
 
 {note:warn}
-
-Барлық аймақтарда пайдаланушылардың бірыңғай дерекқоры бар. Бірдей поштамен әртүрлі аймақтарда есептік жазбаларды тіркеу мүмкін емес.
-
+Барлық аймақтарда бірыңғай пайдаланушылар базасы бар. Әртүрлі аймақтарда бір электрондық поштамен аккаунттарды тіркеу мүмкін емес.
 {/note}
 
 Келесі аймақтар қолжетімді:
@@ -20,8 +18,8 @@
 |===
 | Аймақ
 | Қолжетімділік аймақтары
-| Сайт URL мекенжайы
-| Жобалар валютасы
+| Сайттың URL мекенжайы
+| Жобалардың валютасы
 
 | Мәскеу
 | `GZ1`
@@ -45,15 +43,13 @@ https://kz.cloud.vk.kz
 
 |===
 
-Әртүрлі аймақтарда құрылған жобаларда мынадай айырмашылықтар бар:
+Әртүрлі аймақтарда жасалған жобаларда мыналар ерекшеленеді:
 
-- қолжетімді сервистер жиынтығы;
-- [квоталар](../quotasandlimits) жиынтығы;
-- [эндпоинттер {var(cloud)} API](/kz/tools-for-using-services/api/rest-api) мекенжайлары;
-- [openrc](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize) және [Terraform](/kz/tools-for-using-services/terraform/quick-start) конфигурация файлдарындағы аймақ атауы.
+- қолжетімді қызметтердің жиынтығы;
+- {linkto(../quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоталардың]} жиынтығы;
+- {linkto(../../../api/rest-api/endpoints#rest-api-endpoints)[text={var(cloud)} API эндпоинттерінің]} мекенжайлары;
+- {linkto(../../../cli/openstack-cli#openstack-authorize)[text=openrc]} және {linkto(../../../terraform/quick-start#terraform-quick-start)[text=Terraform]} конфигурация файлдарындағы аймақ атауы.
 
 {note:warn}
-
-Әртүрлі аймақтардағы жобалардың виртуалды желілерін стандартты тәсілдермен біріктіру мүмкін емес. Мұндай жобалар арасындағы желілік байланыстылықты [VPN-туннелі](/kz/networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel) арқылы баптауға болады.
-
+Әртүрлі аймақтардағы жобалардың виртуалды желілерін стандартты тәсілдермен біріктіру мүмкін емес. Мұндай жобалар арасындағы желілік байланысты {linkto(../../../../networks/vnet/how-to-guides/onpremise-connect/vpn-tunnel#vnet-vpn-tunnel)[text=VPN-туннель]} көмегімен конфигурациялауға болады.
 {/note}

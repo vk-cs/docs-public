@@ -1,15 +1,14 @@
 {
-  "title": "Spark кластерін құру",
+  "title": "Spark кластерін жасау",
   "shortDescription": "",
-  "metaDescription": "VK Data Platform платформасында Terraform көмегімен Spark сервисінің данасын құру. Spark кластерінің, желілік инфрақұрылымның және деректер көздерінің параметрлерінің сипаттамасы.",
-  "sectionTitle": "Spark кластерін құру",
+  "metaDescription": "Terraform көмегімен VK Data Platform платформасында Spark сервисінің данасын жасау. Spark кластерінің параметрлері, желілік инфрақұрылымы және деректер көздерінің сипаттамасы.",
+  "sectionTitle": "Spark кластерін жасау",
   "icon": "",
   "weight": 1,
+  "uuid": "18d78c74-179d-4c75-ac65-1f5e8170add3",
   "build": {
     "for": [
-      "public",
-      "data-p"
+      "public"
     ]
-  },
-  "uuid": "a9b0bc4f-26c0-4693-b445-f2946b08648c"
+  }
 }

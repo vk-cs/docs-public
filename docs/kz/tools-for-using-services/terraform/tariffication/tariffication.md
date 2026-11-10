@@ -1,5 +1,5 @@
 # {heading(Тарификация)[id=tools-terraform-tariffication]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Terraform тарификацияланбайды. Сіз Terraform көмегімен жасалатын ресурстар үшін төлейсіз.
+Terraform тарификацияға жатпайды. Terraform көмегімен жасалатын ресурстар үшін төлейсіз.

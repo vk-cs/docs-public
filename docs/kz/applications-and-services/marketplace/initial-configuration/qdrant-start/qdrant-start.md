@@ -66,7 +66,7 @@ Qdrant сервисін пайдалану арқылы сіз [Marketplace](/kz
 
    {note:info}
 
-   Егер кіру деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+   Егер кіру деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

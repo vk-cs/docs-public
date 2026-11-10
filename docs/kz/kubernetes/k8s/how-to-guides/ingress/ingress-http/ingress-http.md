@@ -1,6 +1,6 @@
 # {heading(Ingress-контроллерін HTTP-балансировщикпен жайып орналастыру)[id=k8s-ingress-http]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:warn}
 Ingress-контроллерін жайып орналастырған кезде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме балансировщигі]} жасалады.
@@ -138,122 +138,6 @@ deployment.apps/tea      3/3     3            3           ...
    NAME                               TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)                     AGE
    nginx-ingress-http-nginx-ingress   NodePort   ...            <none>        80:<тағайындалған порт>/TCP   ...
    ```
-
-## {heading(4. HTTP жүктеме балансировщигін жасаңыз)[id=k8s-ingress-http-create-http-balancer]}
-
-HTTP жүктеме балансировщигі SSL/TLS қосылыстарын терминирлейді және тек HTTP-трафикті Ingress-контроллеріне қайта бағыттайды.
-
-Балансировщикті баптау үшін:
-
-1. Қажетті деректерді жинаңыз:
-
-   - Кластер түйіндері орналасқан желі мен ішкі желінің атаулары.
-   - Кластердің master-түйіндері мен worker-түйіндеріне сәйкес келетін Cloud Servers сервисі инстанстарының атаулары.
-   - Алдыңғы қадамда Ingress-контроллеріне тағайындалған порт нөмірі.
-
-1. Балансировщик жасаңыз:
-
-   1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-   1. Қажетті кластер орналасқан жобаны таңдаңыз.
-   1. **Виртуалды желілер → Жүктеме балансировщиктері** бөліміне өтіңіз.
-   1. **Қосу** батырмасын басыңыз.
-   1. Ашылған терезеде:
-      1. **балансировщик атауын** орнатыңыз (кез келген).
-      1. Кластердегілермен бірдей желі мен ішкі желіні таңдаңыз.
-      1. **DNS атауын** орнатыңыз (кез келген).
-      1. **Сыртқы IP тағайындау** опциясының қосулы екеніне көз жеткізіңіз.
-      1. Әрбір трафик түрі үшін өңдеу параметрлерін орнатыңыз:
-
-         {tabs}
-
-         {tab(HTTP-трафик үшін)}
-
-         1. **Балансировка ережелері** блогында **+ Ереже қосу** сілтемесін басыңыз.
-         1. **Тағайындау протоколы** ретінде `HTTP` таңдаңыз, оған Ingress-контроллеріне тағайындалған **портты** орнатыңыз.
-         1. **Рұқсат етілген CIDR** блогында **+ Мекенжай қосу** сілтемесін басыңыз. `0.0.0.0/0` енгізіңіз.
-         1. **X-Forwarded-For тақырыбын жіберу** опциясын таңдаңыз.
-         1. **Келесі инстанстарға қолдану** блогында кластердің master-түйіндері мен worker-түйіндеріне сәйкес келетін барлық Cloud Servers сервисі инстанстарын қосыңыз.
-
-            Барлық инстанстар үшін `1` мәніне тең бірдей салмақтарды орнатыңыз.
-
-         1. **Келесі қадам** батырмасын басыңыз.
-         1. **Қосу** батырмасын басыңыз.
-
-         {/tab}
-
-         {tab(HTTPS-трафик үшін)}
-
-         1. **Балансировка ережелері** блогында **+ Ереже қосу** сілтемесін басыңыз.
-         1. **Балансировка протоколы** ретінде `HTTPS` таңдаңыз.
-         1. **Тағайындау протоколы** ретінде `HTTP` таңдаңыз, оған Ingress-контроллеріне тағайындалған **портты** орнатыңыз.
-         1. **Рұқсат етілген CIDR** блогында **+ Мекенжай қосу** сілтемесін басыңыз. `0.0.0.0/0` енгізіңіз.
-         1. **X-Forwarded-For тақырыбын жіберу** опциясын таңдаңыз.
-         1. **Келесі инстанстарға қолдану** блогында кластердің master-түйіндері мен worker-түйіндеріне сәйкес келетін барлық Cloud Servers сервисі инстанстарын қосыңыз.
-
-            Барлық инстанстар үшін `1` мәніне тең бірдей салмақтарды орнатыңыз.
-
-         1. **Сертификат** блогында:
-
-            1. **Жаңа сертификатты жүктеу** тармағын таңдаңыз.
-            1. **сертификат атауын** орнатыңыз (кез келген).
-
-            1. Спойлер астындағы мазмұнды **Сертификат немесе сертификаттар тізбегі** өрісіне қойыңыз.
-
-               {cut(NGINX certificate.pub өздігінен қол қойылған сертификатының жария бөлігі)}
-
-               ```text
-               -----BEGIN CERTIFICATE-----
-               MIIDLjCCAhYCCQDAOF9tLsaXWjANBgkqhkiG9w0BAQsFADBaMQswCQYDVQQGEwJV
-               UzELMAkGA1UECAwCQ0ExITAfBgNVBAoMGEludGVybmV0IFdpZGdpdHMgUHR5IEx0
-               ZDEbMBkGA1UEAwwSY2FmZS5leGFtcGxlLmNvbSAgMB4XDTE4MDkxMjE2MTUzNVoX
-               DTIzMDkxMTE2MTUzNVowWDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMSEwHwYD
-               VQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxGTAXBgNVBAMMEGNhZmUuZXhh
-               bXBsZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCp6Kn7sy81
-               p0juJ/cyk+vCAmlsfjtFM2muZNK0KtecqG2fjWQb55xQ1YFA2XOSwHAYvSdwI2jZ
-               ruW8qXXCL2rb4CZCFxwpVECrcxdjm3teViRXVsYImmJHPPSyQgpiobs9x7DlLc6I
-               BA0ZjUOyl0PqG9SJexMV73WIIa5rDVSF2r4kSkbAj4Dcj7LXeFlVXH2I5XwXCptC
-               n67JCg42f+k8wgzcRVp8XZkZWZVjwq9RUKDXmFB2YyN1XEWdZ0ewRuKYUJlsm692
-               skOrKQj0vkoPn41EE/+TaVEpqLTRoUY3rzg7DkdzfdBizFO2dsPNFx2CW0jXkNLv
-               Ko25CZrOhXAHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAKHFCcyOjZvoHswUBMdL
-               RdHIb383pWFynZq/LuUovsVA58B0Cg7BEfy5vWVVrq5RIkv4lZ81N29x21d1JH6r
-               jSnQx+DXCO/TJEV5lSCUpIGzEUYaUPgRyjsM/NUdCJ8uHVhZJ+S6FA+CnOD9rn2i
-               ZBePCI5rHwEXwnnl8ywij3vvQ5zHIuyBglWr/Qyui9fjPpwWUvUm4nv5SMG9zCV7
-               PpuwvuatqjO1208BjfE/cZHIg8Hw9mvW9x9C+IQMIMDE7b/g6OcK7LGTLwlFxvA8
-               7WjEequnayIphMhKRXVf1N349eN98Ez38fOTHTPbdJjFA/PcC+Gyme+iGt5OQdFh
-               yRE=
-               -----END CERTIFICATE-----
-               ```
-
-               {/cut}
-
-            1. Спойлер астындағы мазмұнды **Жабық кілт** өрісіне қойыңыз.
-
-               {cut(NGINX private.key өздігінен қол қойылған сертификатының жабық бөлігі)}
-
-               ```text
-               -----BEGIN RSA PRIVATE KEY-----
-               <ЗНАЧЕНИЕ_ЗАКРЫТОГО_RSA_КЛЮЧА>
-               -----END RSA PRIVATE KEY-----
-               ```
-
-               {/cut}
-
-            {note:info}
-
-            NGINX өздігінен қол қойылған сертификаты `cafe.example.com` доменінде жарияланған қосымшаларға қол жеткізу үшін пайдаланылады.
-
-            {/note}
-
-         1. **Келесі қадам** батырмасын басыңыз.
-         1. **Қосу** батырмасын басыңыз.
-
-         {/tab}
-
-         {/tabs}
-
-   Балансировщикті жасау операциясы басталады, ол біраз уақыт алады.
-
-1. Балансировщик жасалғаннан кейін оның жария IP-мекенжайын көшіріп алыңыз, ол Ingress арқылы жарияланған ресурстарға қол жеткізу үшін қажет болады.
 
 ## {heading(5. Ingress ресурсін жасаңыз)[id=k8s-ingress-http-create-ingress]}
 

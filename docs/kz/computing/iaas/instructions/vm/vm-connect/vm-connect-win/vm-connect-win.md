@@ -1,6 +1,6 @@
 # {heading(Windows ВМ-ге қосылу)[id=iaas-vm-connect-win]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Windows виртуалды машинасына қосылудың ұсынылатын тәсілі — RDP (Remote Desktop Protocol) протоколы арқылы.
 
@@ -24,11 +24,11 @@ VK Cloud сіз өз доменіңізді делегирлей алатын [D
 
 Егер виртуалды машинаға RDP арқылы қосылу мүмкін болмаса немесе қолжетімсіз болса, [VNC-консольді](/kz/computing/iaas/instructions/vm/vm-console#vm-console-vnc) пайдаланыңыз.
 
-## {counter(vm_win)}. Тіркелгі деректерін дайындаңыз
+## {heading({counter(vm_win)}. Деректемелерді дайындаңыз)[id=iaas-vm-connect-win-credentials]}
 
-1. [Әдепкі бойынша жасалған](/kz/computing/iaas/concepts/oper-system#iaas-oper-system-default-account) ОЖ пайдаланушысының атын біліңіз.
-1. ОЖ-ге кіру үшін [құпиясөзді орнатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-password) және пайдаланушы аты мен құпиясөзді жазып алыңыз.
-1. Егер құпиясөз жоғалған болса, [құпиясөзді қайта орнатыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-password).
+1. {linkto(../../../../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text=Біліңіз]} ОС-де әдепкі бойынша жасалған пайдаланушының атын.
+1. {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=Орнатыңыз]} ОС-ке кіру үшін құпиясөзді және пайдаланушы аты мен құпиясөзді жазып алыңыз.
+1. Егер құпиясөз жоғалған болса, оны {linkto(../../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=қалпына келтіріңіз]}.
 
 ## {counter(vm_win)}. ВМ-ге қосылыңыз
 

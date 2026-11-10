@@ -1,13 +1,13 @@
 {
-  "title": "Файл display.yaml",
+  "title": "display.yaml файлы",
   "shortDescription": "",
-  "metaDescription": "Файл display.yaml",
-  "sectionTitle": "Файл display.yaml",
+  "metaDescription": "display.yaml файлы",
+  "sectionTitle": "display.yaml файлы",
   "weight": 7,
+  "uuid": "735286e9-2ad6-4395-9beb-7e9f631895d9",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "5aa5dc38-ddf9-4fe7-87fa-364c8c0e8e6a"
+  }
 }

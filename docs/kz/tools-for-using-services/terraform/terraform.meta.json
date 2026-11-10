@@ -1,10 +1,11 @@
 {
   "title": "Terraform",
-  "shortDescription": "{var(cloud)} платформасын басқару үшін Terraform-провайдерді пайдалану, жылдам бастау және манифест мысалдары",
-  "metaDescription": "VK Cloud платформасын басқару үшін Terraform-провайдерді пайдалану, жылдам бастау және манифест мысалдары.",
+  "shortDescription": "{var(cloud)} басқару үшін Terraform провайдерін пайдалану",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану, жылдам бастау және манифест мысалдары.",
   "sectionTitle": "Terraform",
   "icon": "",
   "weight": 6,
+  "uuid": "409caeaa-b3cf-4fb3-a690-0a262c0383da",
   "build": {
     "for": [
       "public",
@@ -12,10 +13,7 @@
       "private-pg",
       "private-pdf",
       "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "data-p"
+      "private-cert"
     ]
-  },
-  "uuid": "30da77dd-de94-445b-8790-7dd432bf7990"
+  }
 }

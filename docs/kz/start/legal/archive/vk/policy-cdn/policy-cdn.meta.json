@@ -1,0 +1,16 @@
+{
+  "title": "CDN қызметіне арналған пайдаланушы келісімі",
+  "shortDescription": "",
+  "metaDescription": "Бұл құжат РК Азаматтық кодексінің 435-бабына сәйкес (әрі қарай мәтінде – «Оферта») «ВК» ЖШС (125167, Мәскеу қ. мекенжайы бойынша)",
+  "sectionTitle": "CDN қызметіне арналған пайдаланушы келісімі",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 9,
+  "uuid": "a6cdfc8a-04d8-44f1-a9b8-3948a650981b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

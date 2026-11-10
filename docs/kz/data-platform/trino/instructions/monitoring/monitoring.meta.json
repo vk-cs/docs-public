@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "Метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform платформасының Standalone нұсқасында жайылған Cloud Trino сервисі даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform платформасында орналастырылған Cloud Trino сервисінің жұмыс метрикаларын қалай көруге болатынын біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -9,6 +9,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 5,
-  "uuid": "6fb9cb96-811f-4032-ba26-2d705f2c1b81"
+  "weight": 6,
+  "uuid": "3f8cf79d-90d9-441d-a7bf-4e66c20d3f72"
 }

@@ -1,6 +1,6 @@
 # {heading({var(s3)} жүйесіне интернетсіз қосылу)[id=vnet-s3-service-net]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {linkto(../../../../networks/vnet/concepts/net-types#vnet-net-types-service-net)[text=Сервистік желі]} интернетке қолжетімділіксіз VK Object Storage объектілік қоймасымен жұмыс істеуге мүмкіндік береді. Сіз объектілік қоймаға приватты бұлттық желіде орналасқан немесе {var(cloud)} жүйесіне {linkto(../../../../networks/directconnect/connect#directconnect-connect)[text=Direct Connect]} арқылы қосылған серверлерді қоса аласыз.
 
@@ -133,24 +133,25 @@
 
 Егер сізге ВМ-ге SSH арқылы қолжетімділік енді қажет болмаса, ВМ-ді құру кезінде қосылған интернетке қолжетімді желіні {linkto(../../../../computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-delete)[text=өшіріңіз]}.
 
-## {heading(3. VK Object Storage сервисіне қосылуды тексеріңіз)[id=vnet-s3-service-net-check]}
+## {heading(3. {var(s3)} сервисіне қосылысты тексеріңіз)[id=vnet-s3-service-net-check]}
 
 1. ВМ-ге қосылыңыз:
 
-    - жария желі өшірілген болса, {linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console)[text=VNC-консоль арқылы]}.
-    - жария желі өшірілмеген болса, {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы]}.
+   - {linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console)[text=VNC-консоль арқылы]}, егер публичті желі өшірілген болса.
+   - {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы]}, егер публичті желі өшірілмеген болса.
+
 1. Команданы орындаңыз:
 
-    ```console
-    aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
-    ```
+   ```console
+   aws s3 ls --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
 
-   Мұнда `--endpoint-url` — VK Object Storage сервисінің домені, ол аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} сәйкес келуі тиіс. Мүмкін мәндер:
+   Мұнда `--endpoint-url` — {var(s3)} сервисінің домені, аккаунтыңыздың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс. Мүмкін мәндер:
 
-    - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-    - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+   - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
-   Жауапта VK Object Storage бакеттерінің тізімі қайтарылуы тиіс.
+   Жауапта {var(s3)} бакеттерінің тізімі қайтарылуы тиіс.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=vnet-s3-service-net-delete]}
 

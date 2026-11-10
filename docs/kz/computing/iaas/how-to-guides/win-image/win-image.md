@@ -1,6 +1,6 @@
 # {heading(Windows ОС-ы бар ВМ образын жасау)[id=iaas-win-image]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:info}
 {var(cloud)} ішіне көші-қон қолдау көрсетілетін Windows ОС тізімі [операциялық жүйелер](../../concepts/oper-system) бөлімінде келтірілген.
@@ -33,36 +33,36 @@
 1. {var(cloud)} ішіне көшіру жоспарланған Windows ОС-ының орнату ISO-образын жүктеп алыңыз. Образдың en-US нұсқасын пайдалану ұсынылады.
 1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 
-## {heading(1. Құралдар жиынтығын дайындаңыз)[id=iaas-win-image-toolkit-prepare]}
+## {heading(1. Инструментарийді дайындаңыз)[id=iaas-win-image-toolkit-prepare]}
 
 1. Hyper-V виртуализация механизмін қосыңыз.
 
-   1. Компьютердің басқару тақтасына өтіңіз. Ол үшін WIN+R пернелер тіркесімін басыңыз, ашылған **Выполнить** терезесінде `control` енгізіп, **OK** батырмасын басыңыз.
-   1. Басқару тақтасында **Программы и компоненты** таңдаңыз.
-   1. Сол жақ бүйірлік мәзірден **Включение или отключение компонентов Windows** таңдаңыз.
-   1. **Hyper-V** опциясын жалаушамен белгілеп, **ОК** батырмасын басыңыз.
+   1. Компьютердің басқару тақтасына өтіңіз. Мұны істеу үшін WIN+R пернелер тіркесімін басып, ашылған **Выполнить** терезесіне `control` енгізіп, **OK** түймесін басыңыз.
+   1. Басқару тақтасында **Программы и компоненты** бөлімін таңдаңыз.
+   1. Сол жақ бүйірлік мәзірде **Включение или отключение компонентов Windows** тармағын таңдаңыз.
+   1. Құсбелгі арқылы **Hyper-V** опциясын таңдап, **ОК** түймесін басыңыз.
    1. Компьютерді қайта іске қосыңыз.
 
-1. Windows PowerShell 5.1 немесе одан жоғары нұсқа қолданылатынына көз жеткізіңіз. Бұл нұсқа Windows 10/11 және Windows Server 2016-дан бастап алдын ала орнатылған. Windows отбасының алдыңғы нұсқаларында әдепкі бойынша одан ескі нұсқа қолданылады.
+1. Windows PowerShell 5.1 немесе одан жаңа нұсқасы қолданылып жатқанына көз жеткізіңіз. Бұл нұсқа Windows 10/11 және Windows Server 2016 нұсқаларынан бастап алдын ала орнатылған. Windows отбасының алдыңғы нұсқаларын әдепкі бойынша ескі нұсқа қолданылады.
 
    1. Ағымдағы нұсқаны Windows PowerShell-де `$PSVersionTable.PSVersion` немесе `get-host` командасын орындап тексеріңіз.
-   1. Егер нұсқа 5.1-ден төмен болса, [Windows Management Framework 5.1](https://aka.ms/wmf51download) орнатыңыз.
+   1. Нұсқа 5.1-ден төмен болса, [Windows Management Framework 5.1](https://aka.ms/wmf51download) орнатыңыз.
 
 1. Windows Assessment and Deployment Kit (ADK) құралдар жиынтығын орнатыңыз.
 
-   1. ADK орнатылғанын тексеріңіз. Ол үшін басқару тақтасындағы **Программы и компоненты** бөліміне өтіп, **Windows Assessment and Deployment Kit** бағдарламасын табыңыз.
-   1. Егер бұл бағдарлама болмаса, ADK-ны [ресми сайттан](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) жүктеп алып, орнатыңыз. Орнату кезінде **Windows Assessment Toolkit** компонентінен басқа барлық компоненттерді жалаушамен таңдаңыз.
+   1. ADK орнатылғанын тексеріңіз. Мұны істеу үшін басқару тақтасындағы **Программы и компоненты** бөліміне өтіп, **Windows Assessment and Deployment Kit** бағдарламасын табыңыз.
+   1. Бұл бағдарлама болмаса, ADK-ны [ресми сайттан](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) жүктеп алып, орнатыңыз. Орнату кезінде құсбелгілер арқылы **Windows Assessment Toolkit** басқа барлық құрамдастарды таңдаңыз.
 
-1. [VirtIO (KVM) драйверлерін](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/) жүктеп алыңыз.
+1. [Жүктеп алыңыз](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/) VirtIO (KVM) драйверлерін.
 
-   Образдарды жинау үшін мына virtio-win драйверлерінің нұсқалары пайдаланылады:
+   Образтарды жинау үшін келесі virtio-win драйверлерінің нұсқалары қолданылады:
 
-   - Windows Server 2012 R2 — 0.1.215;
-   - Windows Server 2016, 2019 және 2022 — 0.1.225;
+   - Windows Server 2012 R2 — 0.1.215, 
+   - Windows Server 2016, 2019 және 2022 — 0.1.225, 
    - Windows Server 2025 — 0.1.285.
 
-1. Windows образдарын жасауды автоматтандыру құралы — Windows Imaging Tools репозиторийінің [архивін](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip) жүктеп алыңыз.
-1. Windows жаңартуларын басқару модулі — WindowsUpdateCLI репозиторийінің [архивін](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip) жүктеп алыңыз.
+1. Windows-образтарын жасауды автоматтандыру құралы — Windows Imaging Tools репозиторийінің [жинақтамасын жүктеп алыңыз](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip).
+1. Windows жаңартуларын басқару модулі — WindowsUpdateCLI репозиторийінің [жинақтамасын жүктеп алыңыз](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip).
 
 ## {heading(2. Hyper-V ішінде сыртқы виртуалды коммутатор жасаңыз)[id=iaas-win-image-switch-create]}
 

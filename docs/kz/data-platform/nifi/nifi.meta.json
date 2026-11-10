@@ -1,11 +1,11 @@
 {
   "title": "NiFi",
-  "shortDescription": "Деректер ағындарын автоматтандыруға және басқаруға арналған платформа",
-  "metaDescription": "VK Data Platform инфрақұрылымындағы деректер ағындарын автоматтандыруға және басқаруға арналған NiFi сервисі",
+  "shortDescription": "Деректер ағындарын автоматтандыру және басқару платформасы",
+  "metaDescription": "VK Data Platform инфрақұрылымындағы деректер ағындарын автоматтандыру және басқаруға арналған NiFi сервисі",
   "sectionTitle": "NiFi",
   "build": {
     "for": ["data-p-pdf"]
   },
-  "weight": 13,
-  "uuid": "0cde714f-ef41-4295-bb44-4c859f6a1e16"
+  "weight": 15,
+  "uuid": "f85a5ad9-ebc3-4a26-a744-1d3348a27ee9"
 }

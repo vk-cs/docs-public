@@ -1,0 +1,14 @@
+{
+  "title": "Foundation Models және MCP бар файлдық сервисді жасау",
+  "shortDescription": "VK Object Storage негізгі сақтау жүйесі ретінде әрекет ететін, ал Foundation Models және MCP әзірлеу және деплой процестерін айтарлықтай жылдамдататын файлдық сервисді қалай жасау",
+  "metaDescription": "VK Object Storage негізгі сақтау орны ретінде пайдаланып, Foundation Models және MCP интеграциясы арқылы әзірлеу мен деплоиді жылдамдататын файлдық сервисді жасау.",
+  "sectionTitle": "Foundation Models және MCP бар файлдық сервисді жасау",
+  "icon": "",
+  "weight": 11,
+  "uuid": "61775f68-b69e-4b43-8da9-c986e813beb2",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

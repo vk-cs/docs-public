@@ -9,6 +9,7 @@
 
 ## {heading(GetObjectLegalHold)[id=api-spec-s3-get-object-legal-hold]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 Объектіге орнатылған мерзімсіз бұғаттаудың статусын қайтарады.
 
 Сұрау мысалы:

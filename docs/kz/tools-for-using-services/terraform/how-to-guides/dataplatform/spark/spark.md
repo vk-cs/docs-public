@@ -1,8 +1,10 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Spark кластерін жасау)[id=terraform-spark]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Мақалада {var(data-p)} платформасында Terraform көмегімен Spark кластерін жасау мысалы келтірілген.
 
-Кластерді жасау кезінде мыналар пайдаланылады:
+Кластерді жасау кезінде пайдаланылады:
 
 - [vkcs_dataplatform_cluster](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dataplatform_cluster.md) ресурсы;
 - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) ресурсы;
@@ -15,19 +17,18 @@
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## {heading(Дайындық қадамдары)[id=preparation]}
+## {heading(Дайындық қадамдары)[id=terraform-spark-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) кластерді жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әр түрлі өңірлер үшін әр түрлі квоталар орнатылуы мүмкін.
 
-   Квоталарды ұлғайту үшін [техникалық қолдау қызметіне](/kz/contacts) хабарласыңыз.
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер әлі орындалмаса, [Terraform-ды орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және ортаны баптаңыз]}, егер бұл әлі жасалмаған болса.
+1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдердің нұсқасы төмен болса, оны {linkto(../../../quick-start#terraform-quick-start-update)[text=жаңартыңыз]}.
 
-1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
+## {heading(1. Кластер сипаттамасы бар файлды жасаңыз)[id=terraform-spark-cluster-file]}
 
-## {heading(1. Кластер сипаттамасы бар файлды жасаңыз)[id=cluster_config]}
-
-Келесі мазмұнмен Terraform конфигурациясының `main.tf` файлын жасаңыз:
+Terraform конфигурация файлын `main.tf` келесі мазмұнмен жасаңыз:
 
 ```hcl
 locals {
@@ -42,7 +43,7 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
   product_name    = "spark"
   product_version = "3.5.1"
 
-  availability_zone = "ME1"
+  availability_zone = "MS1"
   configs = {
     settings = [
       {
@@ -127,13 +128,13 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
 Мұнда:
 
-- `network_id` — кластер орналастырылатын желінің идентификаторы. Кластер бар желіде де, жаңа желіде де орналастырылуы мүмкін. Идентификаторды манифесте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
+- `network_id` — кластер орналасатын желінің идентификаторы. Кластер бар желіде немесе жаңа желіде орналасуы мүмкін. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурсдан алуға болады.
 
   {cut(Мысалдар)}
 
-    - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады. Ресурс төменде жасалады.
-    - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде жасалады.
-    - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған түрде көрсетіледі.
+  - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсымен жасалатын жаңа желіде орналасады. Ресурс кейінірек құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналасады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналасады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
@@ -141,38 +142,35 @@ resource "vkcs_dataplatform_cluster" "basic_spark" {
 
   {cut(Мысалдар)}
 
-    - `product_name = "spark"`: сервис атауы тікелей кластер конфигурациясында көрсетіледі.
-    - `product_name = data.vkcs_dataplatform_product.spark.product_name`: сервис атауы басқа конфигурациялық файлда көрсетіледі, ол `vkcs_dataplatform_product` деректер көзінен алынады. Деректер көзі төменде [жасалады](#product).
+  - `product_name = "spark"`: сервис атауы тікелей кластер конфигурациясында көрсетіледі.
+  - `product_name = data.vkcs_dataplatform_product.spark.product_name`: сервис атауы басқа конфигурациялық файлда көрсетіледі, ол `vkcs_dataplatform_product` деректер көзінен алынады. Деректер көзі кейінірек {linkto(#terraform-spark-product)[text=құрылады]}.
 
   {/cut}
 
 - `product_version` — {var(data-p)} платформасындағы Spark сервисінің нұсқасы.
 
-  {cut(Мысалдар)}
+   {cut(Мысалдар)}
 
-    - `product_version = "3.5.1"`: сервис нұсқасы тікелей кластер конфигурациясында көрсетіледі.
-    - `product_version = data.vkcs_dataplatform_product.spark.product_version`: сервис нұсқасы басқа конфигурациялық файлда көрсетіледі, ол `vkcs_dataplatform_product` деректер көзінен алынады. Деректер көзі төменде [жасалады](#product).
+   - `product_version = "3.5.1"`: сервис нұсқасы тікелей кластер конфигурациясында көрсетіледі.
+   - `product_version = data.vkcs_dataplatform_product.spark.product_version`: сервис нұсқасы басқа конфигурациялық файлда көрсетіледі, ол `vkcs_dataplatform_product` деректер көзінен алынады. Деректер көзі кейінірек {linkto(#terraform-spark-product)[text=құрылады]}.
 
-  {/cut}
+   {/cut}
 
-- `availability_zone` — кластер жасалатын [қолжетімділік аймағы](/kz/start/concepts/architecture#architecture-az).
-
+- `availability_zone` — кластер жасалатын [қолжетімділік аймағы](../../../../../start/concepts/architecture#architecture-az).
 - `configs` — кластер конфигурациясының параметрлері:
 
-    - `settings` — жалпы параметрлер. `sparkproxy.spark_version` параметрі тапсырмаларды орындау үшін Spark нұсқасын анықтайды.
+  - `settings` — жалпы параметрлер. `sparkproxy.spark_version` параметрі тапсырмаларды орындауға арналған Spark нұсқасын анықтайды.
+  - `maintenance` — Cron форматындағы техникалық қызмет көрсетудің басталу уақыты.
+  - `warehouses` — {linkto(../../../../../data-platform/spark/concepts/parameters#parameters_data_sources)[text=деректер көздеріне]} қосылымдар.
 
-    - `maintenance` — Cron пішіміндегі техникалық қызмет көрсету басталатын уақыт.
+- `pod_groups` — кластердің есептеу ресурстарының топтары:
 
-    - `warehouses` — [деректер көздеріне](https://cloud.vk.ru/docs/kz/data-platform/spark/concepts/parameters#parameters_data_sources) қосылымдар.
+  - `sparkconnect` — деректерді интерактивті өңдеуге арналған ресурстар.
+  - `sparkhistory` — Spark тапсырмаларының тарихын сақтауға арналған ресурстар.
 
-- `pod_groups` — кластердің есептеу ресурстары топтары:
+## {heading(2. (Қалауыңыз бойынша) {var(data-p)} платформасындағы Spark сервисін деректер көзі арқылы анықтаңыз)[id=terraform-spark-product]}
 
-    - `sparkconnect` — деректерді интерактивті өңдеуге арналған ресурстар.
-    - `sparkhistory` — Spark тапсырмаларының тарихын сақтауға арналған ресурстар.
-
-## {heading(2. (Опционалды) {var(data-p)} платформасындағы Spark сервисін деректер көзі арқылы анықтаңыз)[id=product]}
-
-{var(data-p)} платформасындағы Spark сервисін сипаттау үшін Terraform конфигурациясының `product.tf` файлын жасаңыз:
+{var(data-p)} платформасындағы Spark сервисінің сипаттамасы бар `product.tf` Terraform конфигурация файлын жасаңыз:
 
 ```hcl
 data "vkcs_dataplatform_product" "spark" {
@@ -181,20 +179,20 @@ data "vkcs_dataplatform_product" "spark" {
 }
 ```
 
-Бұл деректер көзін пайдалану конфигурацияны икемдірек етуге мүмкіндік береді.
-Сіз `main.tf` файлында `data.vkcs_dataplatform_product.spark.product_name` және `data.vkcs_dataplatform_product.spark.product_version` мәндеріне сілтеме жасай аласыз.
+Бұл деректер көзін пайдалану конфигурацияны икемдірек етеді. 
+`main.tf` файлында `data.vkcs_dataplatform_product.spark.product_name` және `data.vkcs_dataplatform_product.spark.product_version` мәндеріне сілтеме жасай аласыз.
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/dataplatform_product.md).
 
-## {heading(3. (Опционалды) Кластер үшін желілік инфрақұрылым сипаттамасы бар файлды жасаңыз)[id=network]}
+## {heading(3. (Қалауыңыз бойынша) Кластерге арналған желілік инфрақұрылым сипаттамасы бар файлды жасаңыз)[id=terraform-spark-net-file]}
 
-Кластерге арналған желілік инфрақұрылым сипаттамасы бар Terraform конфигурациясының `network.tf` файлын жасаңыз:
+Кластерге арналған желілік инфрақұрылымның сипаттамасы бар `network.tf` Terraform конфигурация файлын жасаңыз:
 
 {tabs}
 
-{tab(Қолданыстағы желінің сипаттамасы)}
+{tab(Бар желінің сипаттамасы)}
 
-Жобада бар желіге арналған деректер көзі сипаттамасының мысалы:
+Жобада бар желі үшін деректер көзінің сипаттамасы мысалы:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -204,7 +202,7 @@ data "vkcs_networking_network" "default" {
 ```
 {/tab}
 
-{tab(Жаңа желіні жасау)}
+{tab(Жаңа желі жасау)}
 
 ```hcl
 resource "vkcs_networking_network" "db" {
@@ -223,9 +221,9 @@ resource "vkcs_networking_subnet" "db" {
 
 {/tabs}
 
-## {heading(4. (Опционалды) Spark-ке қосылу үшін дерекқор сипаттамасы бар файлды жасаңыз)[id=db]}
+## {heading(4. (Қалауыңыз бойынша) Spark қосылатын деректер қорының сипаттамасы бар файлды жасаңыз)[id=terraform-spark-db-file]}
 
-Spark қосылатын дерекқорды сипаттау үшін Terraform конфигурациясының `db.tf` файлын жасаңыз:
+Spark қосылатын деректер қорының сипаттамасына арналған `db.tf` Terraform конфигурация файлын жасаңыз:
 
 ```hcl
 resource "vkcs_db_instance" "db_instance" {
@@ -233,11 +231,11 @@ resource "vkcs_db_instance" "db_instance" {
   flavor_id   = "STD3-2-8"
   size        = 10
   volume_type = "ceph-ssd"
-  
+
   network {
     uuid = vkcs_networking_network.db.id
   }
-  
+
   datastore {
     type    = "postgresql"
     version = "13"
@@ -256,18 +254,18 @@ resource "vkcs_db_user" "postgres_user" {
 }
 ```
 
-## {heading(5. Terraform көмегімен қажетті ресурстарды жасаңыз)[id=terraform_apply]}
+## {heading(5. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-spark-resource]}
 
-1. Terraform конфигурациясы файлдарын бір директорияға орналастырыңыз:
+1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
-    - `vkcs_provider.tf`;
-    - `main.tf`;
-    - `product.tf` (егер жасалған болса);
-    - `network.tf` (егер жасалған болса);
-    - `db.tf` (егер жасалған болса).
+   - `vkcs_provider.tf`;
+   - `main.tf`;
+   - `product.tf` (жасалған болса);
+   - `network.tf` (жасалған болса);
+   - `db.tf` (жасалған болса).
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Конфигурациялық файлдар дұрыс және қажетті өзгерістер бар екеніне көз жеткізіңіз:
 
    ```console
    terraform validate && terraform plan
@@ -279,28 +277,28 @@ resource "vkcs_db_user" "postgres_user" {
    terraform apply
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## {heading(6. Конфигурацияның қолданылуын тексеріңіз)[id=check_deployment]}
+## {heading(Конфигурацияның қолданылуын тексеріңіз)[id=terraform-spark-check]}
 
-Spark кластерінің сәтті жасалғанына көз жеткізіңіз:
+Spark кластері сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
-1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз. Spark кластерінің жасалғанына және белсенді екеніне көз жеткізіңіз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. **Data Platform** → **Сервис инстанстары** бөліміне өтіңіз. Spark кластері жасалғанына және белсенді екеніне көз жеткізіңіз.
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=cleanup]}
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-spark-delete]}
 
 Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурациясы файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары орналасқан директорияға өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

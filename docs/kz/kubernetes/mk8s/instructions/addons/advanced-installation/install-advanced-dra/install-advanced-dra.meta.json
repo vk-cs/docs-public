@@ -1,0 +1,14 @@
+{
+  "title": "NVIDIA GPU-ларына арналған DRA Driver",
+  "shortDescription": "",
+  "metaDescription": "Kubernetes-те NVIDIA GPU-ларына арналған DRA Driver аддонын орнатыңыз: VK Cloud және GPU бар арнайы worker-түйіндері үшін қадамдық нұсқаулық",
+  "sectionTitle": "NVIDIA GPU-ларына арналған DRA Driver",
+  "icon": "",
+  "weight": 5,
+  "uuid": "8cecc0de-fc48-4d94-bca6-814dc125b67c",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

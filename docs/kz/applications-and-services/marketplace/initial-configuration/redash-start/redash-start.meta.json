@@ -1,23 +1,14 @@
 {
-  "title": "Redash 10.1 өрістету",
-  "shortDescription": "Деректерді визуализациялау тапсырмалары үшін Redash сервисін өрістету",
-  "metaDescription": "Marketplace VK Cloud: мақсатты жобада деректерді визуализациялау тапсырмалары үшін Redash 10.1.0 сервисін өрістету қадамдары",
-  "sectionTitle": "Redash 10.1 өрістету",
+  "title": "Redash 10.1 орнату",
+  "shortDescription": "Деректерді визуализациялау міндеттері үшін Redash қызметін орнату",
+  "metaDescription": "Marketplace VK Cloud: мақсатты жобада деректерді визуализациялау міндеттері үшін Redash 10.1.0 қызметін орнату қадамдары",
+  "sectionTitle": "Redash 10.1 орнату",
   "icon": "",
-  "weight": 8,
+  "weight": 17,
+  "uuid": "14c8e766-2890-455e-91bd-01411ecd60d4",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "1e02b4db-69d3-47f1-897e-581dc5500065"
+  }
 }

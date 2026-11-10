@@ -1,37 +1,35 @@
-# {heading(Желілер арасындағы трафикті бағдарлау)[id=terraform-networks-routing]}
+# {heading(Сы желілер арасындағы трафикті маршрутизациялау)[id=terraform-networks-routing]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Төменде Terraform көмегімен екі желі арасындағы бағдарлауды баптау мысалы келтірілген.
+Төменде Terraform көмегімен екі желі арасында маршрутизацияны баптау мысалы келтірілген.
 
 Мысал инфрақұрылымы:
 
-- Мысалда екі желі жасалған: `common-private` жеке желісі және `common-public` жария желісі. Әрбір желі бір ішкі желіден тұрады.
-- Әрбір желі үшін тиісті ішкі желілерде интерфейстері бар бағдарлауыштар жасалған.
-- Жария желі бағдарлауышы үшін сыртқы желіге қатынау бапталған, сондықтан осы желідегі объектілерге Floating IP мекенжайларын тағайындауға болады.
-- Әрбір желіде оның жалғыз ішкі желісіне сәйкес келетін порт жасалған. Осы порттарға екі желі арасындағы бағдарлауыш рөлін атқаратын `common-router` виртуалды машинасы қосылады.
-- Бағдарлауыштарда виртуалды машина порты арқылы басқа ішкі желіге апаратын статикалық маршруттар бапталған.
-- Әрбір ішкі желіде бір виртуалды машинадан жасалған. Жария желідегі виртуалды машинада Floating IP мекенжайы бар.
+- Мысалда екі желі жасалған: жекеменшік `common-private` және жариялы `common-public`. Әр желі бір subnet-тен тұрады.
+- Әр желі үшін сәйкес subnet-терде интерфейстері бар маршрутизаторлар жасалған.
+- Жариялы желінің маршрутизаторына сыртқы желіге қолжетім бапталған, сондықтан бұл желідегі нысандарға Floating IP-адрестерін тағайындауға болады.
+- Әр желіде оның жалғыз subnet-іне сәйкес келетін порт жасалған. Осы порттарға екі желі арасында маршрутизатор рөлін атқаратын `common-router` виртуалды машинасы қосылады.
+- Маршрутизаторларда виртуалды машинаның порты арқылы басқа subnet-ке апаратын статикалық маршруттар бапталған.
+- Әр subnet-те бір виртуалды машина жасалған. Жариялы желідегі виртуалды машинаның Floating IP-адресі бар.
 
-  Бұл машиналар [желілер арасындағы бағдарлаудың бапталуын тексеру](#terraform-networks-routing-check) үшін пайдаланылады: олардың арасындағы сәтті ping дұрыс баптауды білдіреді.
+  Бұл машиналар {linkto(#terraform-networks-routing-check[text=желілер арасындағы маршрутизация баптауын тексеру үшін]} пайдаланылады): олардың арасындағы сәтті пинг дұрыс бапталғанын растайды.
 
-![Инфраструктура примера](assets/infrastructure-scheme.png){params[noBorder=true]}
+![Мысал инфрақұрылымы](assets/infrastructure-scheme.png){params[noBorder=true]}
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## {heading(Жұмысты бастамас бұрын)[id=terraform-networks-routing-prepare]}
+## {heading(Бастамас бұрын)[id=terraform-networks-routing-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) желілер мен виртуалды машиналарды жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әр түрлі өңірлер үшін әр түрлі квоталар бапталған болуы мүмкін.
 
-   Қажет болса, [квоталарды](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) ұлғайтыңыз.
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=ұлғайтыңыз]}.
 
 1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#tools-cli-openstack) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 
-1. Бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   Провайдер баптауларын Terraform конфигурация файлына `provider.tf` орналастырыңыз.
 
-   Провайдер баптауларын Terraform конфигурациясының `provider.tf` файлына орналастырыңыз.
-
-1. Айнымалылары бар Terraform конфигурациясының `variables.tf` файлын жасаңыз:
+1. Terraform конфигурация файлын `variables.tf` айнымалылармен жасаңыз:
 
    ```hcl
    variable "image_flavor" {
@@ -57,12 +55,12 @@
 
    Бұл файлда келесі айнымалылар жарияланады:
 
-   - `image_flavor`: виртуалды машина бейнесінің атауы;
-   - `compute_flavor`: виртуалды машина конфигурациясы қалыбының атауы;
-   - `key_pair_name`: виртуалды машинаға SSH арқылы қосылу үшін пайдаланылатын кілт жұбының атауы;
+   - `image_flavor`: виртуалды машинаның бейнесінің атауы;
+   - `compute_flavor`: виртуалды машинаның конфигурация үлгісінің атауы;
+   - `key_pair_name`: виртуалды машинаға SSH арқылы қосу үшін пайдаланылатын кілт жұбының атауы;
    - `availability_zone_name`: виртуалды машина орналастырылатын қолжетімділік аймағының атауы.
 
-   Қажет болса, олардың рұқсат етілген мәндерін нақтылап, айнымалылар мәндерін түзетіңіз:
+   Қажет болған жағдайда айнымалылардың рұқсат етілген мәндерін нақтылап, олардың мәндерін түзетіңіз:
 
    {tabs}
 
@@ -98,18 +96,18 @@
 
    {tab(availability_zone_name)}
 
-   [Қолжетімділік аймақтарына](/kz/start/concepts/architecture#architecture-az) арналған құжаттан.
+   [Қолжетімділік аймақтарына](../../../../../start/concepts/architecture#architecture-az) арналған құжаттан.
 
    {/tab}
 
    {/tabs}
 
-## {heading({counter(tf-routing)}. Базалық желілік инфрақұрылым сипатталған файлдарды жасаңыз)[id=terraform-networks-routing-net-files]}
+## {heading({counter(tf-routing)}. Базалық желілік инфрақұрылымды сипаттайтын файлдарды жасаңыз)[id=terraform-networks-routing-net-files]}
 
-1. Terraform конфигурациясының `common-public.tf` файлын жасаңыз. Онда мыналар сипатталады:
+1. Terraform конфигурация файлын `common-public.tf` жасаңыз. Онда мыналар сипатталады:
 
-   - жария желі мен ішкі желі;
-   - `internet` сыртқы желісіне қатынауы және жария ішкі желідегі интерфейсі бар бағдарлауыш.
+   - жариялы желі және subnet;
+   - `internet` сыртқы желісіне қолжетімі және жариялы subnet-те интерфейсі бар маршрутизатор.
 
    ```hcl
    data "vkcs_networking_network" "extnet" {
@@ -139,10 +137,10 @@
    }
    ```
 
-1. Terraform конфигурациясының `common-private.tf` файлын жасаңыз. Онда мыналар сипатталады:
+1. Terraform конфигурация файлын `common-private.tf` жасаңыз. Онда мыналар сипатталады:
 
-   - жеке желі мен ішкі желі;
-   - жеке ішкі желідегі интерфейсі бар бағдарлауыш.
+   - жекеменшік желі және subnet;
+   - жекеменшік subnet-те интерфейсі бар маршрутизатор.
 
    ```hcl
    resource "vkcs_networking_network" "common-private" {
@@ -167,21 +165,21 @@
    }
    ```
 
-## {heading({counter(tf-routing)}. Бағдарлауыш рөліндегі виртуалды машинаға арналған инфрақұрылым сипатталған файлды жасаңыз)[id=terraform-networks-routing-infrastructure-file]}
+## {heading({counter(tf-routing)}. Маршрутизатор рөлінде виртуалды машинаға арналған инфрақұрылымды сипаттайтын файлды жасаңыз)[id=terraform-networks-routing-infrastructure-file]}
 
-Terraform конфигурациясының `main.tf` файлын жасаңыз. Онда мыналар сипатталады:
+Terraform конфигурация файлын `main.tf` жасаңыз. Онда мыналар сипатталады:
 
-- Виртуалды машина қосылатын жария және жеке ішкі желілердегі порттар.
+- Виртуалды машина қосылатын жариялы және жекеменшік subnet-тердегі порттар.
 - Виртуалды машинаның конфигурациясы.
 
-  Конфигурацияда бағдарлауды қосатын команданы `cloud-init` көмегімен орындау үшін `user_data` параметрі пайдаланылады:
+  Конфигурацияда `cloud-init` көмегімен маршрутизацияны қосатын команданы орындау үшін `user_data` параметрі пайдаланылады:
 
   ```console
   sysctl -w net.ipv4.ip_forward=1
   ```
 
-- Виртуалды машина порттары арқылы қажетті желілерге арналған статикалық маршруттар.
-- Виртуалды машинаға SSH арқылы қосылуға арналған Floating IP мекенжайы.
+- Виртуалды машинаның порттары арқылы қажетті желілерге апаратын статикалық маршруттар.
+- Виртуалды машинаға SSH арқылы қосу үшін Floating IP-адресі.
 
 ```hcl
 data "vkcs_compute_flavor" "router-compute" {
@@ -282,18 +280,18 @@ resource "vkcs_compute_floatingip_associate" "fip-router" {
 }
 ```
 
-## {heading({counter(tf-routing)}. Сынақ виртуалды машиналары сипатталған файлды жасаңыз)[id=terraform-networks-routing-vm-file]}
+## {heading({counter(tf-routing)}. Тесттік виртуалды машиналарды сипаттайтын файлды жасаңыз)[id=terraform-networks-routing-vm-file]}
 
-Terraform конфигурациясының `test-vms.tf` файлын жасаңыз. Онда мыналар сипатталады:
+Terraform конфигурация файлын `test-vms.tf` жасаңыз. Онда мыналар сипатталады:
 
 - Виртуалды машиналар:
 
-  - Floating мекенжайы бар жария ішкі желідегі `common-instance-public`. Мұндай виртуалды машинаға интернеттен SSH арқылы қосылуға болады.
-  - Жеке ішкі желідегі `common-instance-private`. Мұндай виртуалды машинаға басқа виртуалды машинадан SSH арқылы қосылуға болады.
+  - жариялы subnet-те Floating адресі бар `common-instance-public`. Мұндай виртуалды машинаға интернеттен SSH арқылы қосуға болады.
+  - жекеменшік subnet-те `common-instance-private`. Мұндай виртуалды машинаға басқа виртуалды машинаның ішінен SSH арқылы қосуға болады.
 
-  Бұл виртуалды машиналар [екі желі арасындағы бағдарлаудың жұмысқа қабілеттілігін тексеру](#terraform-networks-routing-check) үшін пайдаланылады.
+  Бұл виртуалды машиналар {linkto(#terraform-networks-routing-check)[text=екі желі арасындағы маршрутизация жұмысын тексеру үшін]} пайдаланылатын болады.
 
-- Виртуалды машиналардың IP мекенжайлары бар Terraform шығулары ([output](https://developer.hashicorp.com/terraform/language/values/outputs)).
+- Виртуалды машиналардың IP-адрестері бар Terraform ([output](https://developer.hashicorp.com/terraform/language/values/outputs)) шығыстары.
 
 ```hcl
 data "vkcs_compute_flavor" "vm-compute" {
@@ -383,7 +381,7 @@ output "common-instance-private-ip" {
 }
 ```
 
-## {heading({counter(tf-routing)}. Terraform көмегімен қажетті ресурстарды жасаңыз)[id=terraform-networks-routing-create]}
+## {heading({counter(tf-routing)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-networks-routing-create]}
 
 1. Жасалған Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
@@ -395,7 +393,6 @@ output "common-instance-private-ip" {
    - `test-vms.tf`.
 
 1. Осы директорияға өтіңіз.
-
 1. Команданы орындаңыз:
 
    ```console
@@ -408,34 +405,34 @@ output "common-instance-private-ip" {
    terraform apply
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-   Ресурстарды жасау аяқталғаннан кейін Terraform мынадай шығуларды көрсетеді:
+   Ресурстар жасалғаннан кейін Terraform-ның келесі шығыстары көрсетіледі:
 
-   - `common-instance-private-ip`: жеке ішкі желідегі виртуалды машинаның IP мекенжайы.
-   - `common-instance-public-ip`: жария ішкі желідегі виртуалды машинаның IP мекенжайы.
-   - `common-instance-public-floating-ip`: жария ішкі желідегі виртуалды машинаның Floating IP мекенжайы.
+   - `common-instance-private-ip`: жекеменшік subnet-тегі виртуалды машинаның IP-адресі.
+   - `common-instance-public-ip`: жариялы subnet-тегі виртуалды машинаның IP-адресі.
+   - `common-instance-public-floating-ip`: жариялы subnet-тегі виртуалды машинаның Floating IP-адресі.
 
-   Бұл IP мекенжайларын [мысалдың жұмысқа қабілеттілігін тексеру](#terraform-networks-routing-check) кезінде пайдаланыңыз.
+   Осы IP-адрестерді мысалдың жұмысын {linkto(#terraform-networks-routing-check)[text=тексеру кезінде]} пайдаланыңыз.
 
-## {heading({counter(tf-routing)}. Мысалдың жұмысқа қабілеттілігін тексеріңіз)[id=terraform-networks-routing-check]}
+## {heading({counter(tf-routing)}. Мысалдың жұмысын тексеріңіз)[id=terraform-networks-routing-check]}
 
-1. `common-instance-public` виртуалды машинасына [SSH арқылы қосылыңыз](/kz/computing/iaas/instructions/vm/vm-connect/vm-connect-nix).
+1. `common-instance-public` виртуалды машинасына {linkto(../../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=SSH арқылы қосылыңыз]}.
 
-   Қосылу үшін мыналарды пайдаланыңыз:
+   Қосу үшін пайдаланыңыз:
 
-   - `common-instance-public-floating-ip` шығуындағы IP мекенжайы.
-   - `variables.tf` файлындағы `key_pair_name` айнымалысында көрсетілген атауы бар SSH кілті.
+   - `common-instance-public-floating-ip` шығысындағы IP-адресті.
+   - `variables.tf` файлындағы `key_pair_name` айнымалысында көрсетілген атауы бар SSH-кілтті.
 
-1. `common-instance-private-ip` шығуындағы IP мекенжайға ping орындаңыз:
+1. `common-instance-private-ip` шығысындағы IP-адреске пинг орындаңыз:
 
    ```console
    ping 192.168.199.XXX
    ```
 
-   Сәтті ping мысалдың дұрыс жұмыс істейтінін білдіреді:
+   Сәтті пинг мысалдың дұрыс жұмыс істейтінін растайды:
 
    ```text
    PING 192.168.199.XXX (192.168.199.XXX) 56(84) bytes of data.
@@ -451,16 +448,15 @@ output "common-instance-private-ip" {
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-networks-routing-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурация файлдары бар директорияға өтіңіз.
-
+1. Terraform конфигурация файлдары орналасқан директорияға өтіңіз.
 1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

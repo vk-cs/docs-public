@@ -1,31 +1,31 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+{var(cloud)} платформасына Marketplace-те сатып алынған image-based қолданбаларыңызбен жұмыс істеу кезінде пайдаланушылардың ресурстарды тұтыну метрикаларын жібере аласыз. Бұл {var(cloud)} платформасына пайдаланушылардан тұтынылған ресурстар үшін олар таңдаған тарифке сәйкес ақыны автоматты түрде алуға мүмкіндік береді.
 
-Сіз Marketplace арқылы сатып алынған image-based қолданбаларыңызбен пайдаланушылар жұмыс істеген кезде {var(cloud)} жүйесіне ресурс тұтыну метрикаларын жібере аласыз. Бұл {var(cloud)} жүйесіне пайдаланушылардан тұтынған ресурстары үшін өздері таңдаған тарифке сәйкес автоматты түрде ақы алуға мүмкіндік береді.
+Төменде мысалда қауіпсіздікті қамтамасыз етудің келесі механизмдерін пайдалана отырып, метрикаларды {var(cloud)} платформасына қорғалған түрде жіберу жолы көрсетілген:
 
-Төменде мысал ретінде {var(cloud)} жүйесіне метрикаларды қорғалған түрде жіберуді келесі қауіпсіздік механизмдерін пайдалана отырып қалай ұйымдастыруға болатыны көрсетілген:
-
-- сервисті тоқтатпай орындалатын автоматты ротациясы бар уақытша токендер арқылы Marketplace API-ге қол жеткізу;
-- ашық және жабық кілттер жұбын пайдаланып деректерді шифрлау;
+- қызметті тоқтатпай орындалатын автоматты ротациясы бар уақытша токендер арқылы Marketplace API-ға қолжетімділік;
+- ашық және жабық кілттер жұбын пайдалана отырып деректерді шифрлау;
 - жабық кілттерді тек қорғалған инфрақұрылымда сақтау;
-- көпдеңгейлі компрометацияны тексеру.
+- компрометацияны көпдеңгейлі тексеру.
 
-## {heading(Дайындық қадамдары)[id=preparatory_steps]}
+## {heading(Дайындық қадамдар)[id=preparatory_steps]}
 
-1. Marketplace API-ге сұраулар деректерін шифрлау және Marketplace серверінен келген жауаптың цифрлық қолтаңбасының түпнұсқалығын тексеру үшін [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com) мекенжайы бойынша шифрлауға арналған ашық кілтті сұратыңыз.
-1. Сіздің image-based қолданбаңыз орнатылған ВМ [бейнесін дайындау](../../manage-apps/ibservice_add/ib_image_create) кезінде Marketplace API-ге қол жеткізу токені файлын сақтау үшін бума жасаңыз.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+1. Marketplace API-ға жасалатын сұраулардың деректерін шифрлау және Marketplace серверінің жауабының цифрлық қолтаңбасының растығын тексеру үшін [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com) мекенжайы бойынша шифрлаудың ашық кілтін сұраңыз.
+1. Сіздің image-based қолданбаңыз орнатылған ВМ [бейнесін дайындау](../../manage-apps/ibservice_add/ib_image_create) кезінде Marketplace API-ға қолжетімділік токені сақталатын файлға арналған қалтаны жасаңыз.
 
     {note:warn}
 
-    Бұл мақсат үшін жүйелік бумаларды пайдалануға кеңес берілмейді, өйткені токені бар бумаға қол жеткізу құқықтары қауіпсіздік механизмдерімен шектеледі. Бұл ОЖ немесе басқа қолданбалардың жұмысында қателерге әкелуі мүмкін.
+    Бұл мақсатқа бар жүйелік қалталарды пайдалану ұсынылмайды, себебі токен орналасқан қалтаға қолжетімділік құқықтары қауіпсіздікті қамтамасыз ету механизмдерімен шектеледі. Бұл ОЖ немесе басқа қолданбалардың жұмысында қателерге әкелуі мүмкін.
 
     {/note}
 
-1. Қолданба кодында токен файлына жолды көрсетіңіз.
-1. image-based қолданбаңыздың сервистік пакетін дайындау кезінде [Terraform манифесіне](../../manage-apps/ibservice_add/tf_manifest/tf_manifest_steps) мысалда көрсетілгендей қосымша ресурстарды қосыңыз:
+1. Қолданба кодында қолжетімділік токені сақталған файлға апаратын жолды көрсетіңіз.
+1. Image-based қолданбаңыздың сервисілік пакетін дайындау кезінде [Terraform манифесіне](../../manage-apps/ibservice_add/tf_manifest/tf_manifest_steps) мысалда көрсетілгендей қосымша ресурстарды қосыңыз:
 
     ```hcl
     resource "ivkcs_ssh_keypair" "keypair" {}
-       
+
     resource "ivkcs_user_data" "init" {
       uuid         = var.instance_uuid
       hosts        = [local.hosts_name]
@@ -34,7 +34,7 @@
       token_file_owner = "root"
       token_file_group = "root"
       token_rotate     = true
-        
+
       ssh_authorized_keys = [
         ivkcs_ssh_keypair.keypair.public_key,
       ]
@@ -43,58 +43,58 @@
 
     Мұнда:
 
-    - `uuid` — image-based қолданба инстансының идентификаторы.
-    - `hosts` — [Marketplace агентін](../../manage-apps/ibservice_add/ib_image_create/ib_image_agent) инициализациялауға арналған хост атауларының тізімі.
-    - `target_os` — орналастырылған қолданбасы бар виртуалды машинаның ОЖ-сы.
-    - `token_file_path` — токен файлына жол.
-    - `token_file_owner` — токен файлының иесі болып тағайындалатын пайдаланушы. Міндетті емес аргумент.
-    - `token_file_group` — токен файлы үшін тағайындалатын топ. Міндетті емес аргумент.
+    - `uuid` — image-based қолданбаның инстансының идентификаторы.
+    - `hosts` — [Marketplace агентіне](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/ib_image_agent) арналған хост атауларының тізімі.
+    - `target_os` — қолданба орнатылған виртуалды машинаның ОЖ.
+    - `token_file_path` — токені бар файлға апаратын жол.
+    - `token_file_owner` — токені бар файлдың иесі болып тағайындалатын пайдаланушы. Міндетті емес аргумент.
+    - `token_file_group` — токені бар файлға тағайындалатын топ. Міндетті емес аргумент.
     - `token_rotate` — токеннің автоматты ротациясын орындау белгісі:
-        - `true` — токен мезгіл-мезгіл жаңартылып отырады. Қолданбаңызды пайдаланушылардың ресурс тұтыну метрикалары сияқты сезімтал ақпаратты {var(cloud)} жүйесіне жіберген кезде токен ротациясын қосу ұсынылады.
+        - `true` — токен уақыт сайын жаңартылады. Қолданбаңыздың пайдаланушыларының ресурстарды тұтыну метрикалары сияқты құпия ақпаратты {var(cloud)} платформасына жіберу кезінде токен ротациясын қосу ұсынылады.
         - `false` — токен жаңартылмайды. Бұл әдепкі мән.
 
     Ресурс аргументтері туралы толығырақ — [ivkcs_user_data ресурсы](../../manage-apps/ivkcs/ivkcs_resources/ivkcs_user_data) бөлімінде.
 
-    Мысалда келтірілген ресурс конфигурациясы:
+    Мысалда келтірілген ресурстар конфигурациясы:
 
-    - Marketplace API-ге әрекет ету мерзімі шектеулі қол жеткізу токенін жасайды;
-    - `xaas-secret-auth-token.key` токені бар файлды виртуалды машинаның `/opt/agent` директориясына орналастырады;
+    - қолданылу мерзімі шектеулі Marketplace API қолжетімділігінің токенін жасайды;
+    - токені бар `xaas-secret-auth-token.key` файлын виртуалды машинаның `/opt/agent` каталогына орналастырады;
     - токені бар файлға `root` тобының `root` пайдаланушысына құқықтар береді;
-    - токенді мерзімді түрде жаңартуды қосады;
-    - [Marketplace агенті](../../manage-apps/ibservice_add/ib_image_create/ib_image_agent) үшін (егер ол орнатылған болса) `/opt/agent/xaas-secret-auth-token.key` файлындағы токеннің өзектілігін қамтамасыз ету тапсырмасын іске қосады.
+    - токеннің мерзімді жаңартылуын қосады;
+    - [Marketplace агенті үшін](/kz/tools-for-using-services/vendor-account/manage-apps/concepts/vendor-preconditions/ib_image_agent) (орнатылған болса) `/opt/agent/xaas-secret-auth-token.key` файлындағы токенді өзекті күйде ұстау міндеттемесін іске қосады.
 
-1. (Опционалды) Файлдағы токенді өзекті күйде ұстау үшін Marketplace агентін пайдалану мақсатында [Terraform манифесінде](../../manage-apps/ibservice_add/tf_manifest/tf_manifest_steps) агентті орнатуға тыйым жоқ екеніне көз жеткізіңіз: `agent_install = false`.
+1. (Міндетті емес) Агентті токеннің өзектілігін сақтау үшін пайдалану үшін [Terraform манифесінде](../../manage-apps/ibservice_add/tf_manifest/tf_manifest_steps) агентті орнатуға тыйым салынбағанына көз жеткізіңіз: `agent_install = false`.
 
-   Егер `agent_install` аргументі көрсетілмесе немесе `true` мәніне ие болса, агент image-based қолданбаңызды орналастыру процесінде автоматты түрде орнатылады.
+   Егер `agent_install` аргументі көрсетілмесе немесе `true` мәні болса, агент сіздің image-based қолданбаңыз орнатылу барысында автоматты түрде орнатылады.
 
    {note:warn}
 
-   Егер токен ротациясын қоссаңыз, агентті орнатуға тыйым салу ұсынылмайды. Агентсіз файлдағы токен жаңартылмайды. Қолданбаңызға жаңартылған нұсқасын дер кезінде алу үшін Marketplace API арқылы токенді тұрақты түрде [сұратып](#get_token) отыру қажет болады.
+   Токен ротациясын қоссаңыз, агенттің орнатылуына тыйым салу ұсынылмайды. Агент болмаса, файлдағы токен жаңартылмайды. Қолданбаңыз жаңартуларды уақтылы алу үшін Marketplace API-дан [токенді мезгіл-мезгіл сұрап](#get_token) тұруы қажет болады.
 
    {/note}
 
-## {heading(1. Marketplace API-ге қол жеткізу токенін алыңыз)[id=get_token]}
+## {heading(1. Marketplace API қолжетімдігінің токенін алыңыз)[id=get_token]}
 
-API-ге алғаш жүгінген кезде Terraform манифесінің `token_file_path` параметрінде [көрсетілген](#preparatory_steps) файлдан токенді шығарып алыңыз. Кейінгі жүгінулерде токенді алу тәсілі қолданбаңыздың инстансында агенттің орнатылғанына байланысты болады.
+API-ға алғашқы өтіну кезінде токенді Terraform манифесінің `token_file_path` параметрінде [көрсетілген](#preparatory_steps) файлдан алыңыз. Кейінгі өтінімдер кезінде токен алу тәсілі қолданбаңыздың инстансында агент орнатылған-орнатылмағанына байланысты.
 
 {tabs}
 
 {tab(Агент орнатылған)}
 
-Terraform манифесінің `token_file_path` параметрінде [көрсетілген](#preparatory_steps) файлдан токеннің өзекті нұсқасын шығарып алыңыз.
+Токеннің өзекті нұсқасын Terraform манифесінің `token_file_path` параметрінде [көрсетілген](#preparatory_steps) файлдан алыңыз.
 
 {/tab}
 
 {tab(Агент орнатылмаған)}
 
-Marketplace API-ге сұрау арқылы токенді алыңыз:
+Marketplace API-ға сұрау арқылы токенді алыңыз:
 
 ```shell
-curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
+curl https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/auth/key \
 -H 'Authorization: Bearer <TOKEN>'
 ```
 
-Мұнда `<ТОКЕН>` — API-ге қол жеткізу токенінің ағымдағы нұсқасы.
+Мұнда `<ТОКЕН>` — API қолжетімдігі токенінің өзекті нұсқасы.
 
 Жауап құрылымы:
 
@@ -108,15 +108,15 @@ curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 
 Мұнда:
 
-- `instance_uuid` — қолданбаңыз инстансының идентификаторы.
-- `key` — жаңартылған қол жеткізу токені.
-- `secondary_key` — қолданылу мерзімі жақында аяқталатын қол жеткізу токені. Бұл параметр болмауы мүмкін.
+- `instance_uuid` — қолданбаңыздың инстансының идентификаторы.
+- `key` — жаңартылған қолжетімділік токені.
+- `secondary_key` — қолданылу мерзімі жақында бітетін қолжетімділік токені. Бұл параметр болмауы мүмкін.
 
-Егер жауапта `secondary_key` параметрі болмаса, ағымдағы токенді пайдалануды жалғастырыңыз. Әйтпесе API-ге келесі сұрауларда `key` параметрінде берілген токенді пайдаланыңыз. Токенді жаңасына ауыстырғаннан кейін алдыңғысы жарамсыз болады.
+Егер жауапта `secondary_key` параметрі болмаса, ағымдағы токенді пайдалана беруді жалғастырыңыз. Әйтпесе, API-ға келесі сұрауларда `key` параметрімен берілген токенді пайдаланыңыз. Токен жаңасына ауыстырылғаннан кейін алдыңғысы жарамсыз болады.
 
 {note:warn}
 
-Егер токен ротациясы қосылған болса, оны өзекті күйде ұстау үшін токен алу сұрауларын тұрақты түрде орындау қажет.
+Токен ротациясы қосылған болса, оның өзекті күйін сақтау үшін токен алу сұрауларын мезгіл-мезгіл орындау қажет.
 
 {/note}
 
@@ -126,7 +126,7 @@ curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 
 ## 2. Бастапқы деректерді дайындаңыз
 
-1. Жіберілетін метрикалар мен осы метрикаларды жинау уақытын (`base_date`) қамтитын JSON-файлды қалыптастырыңыз.
+1. Жіберілетін метрикаларды және олардың жиналу уақытын (`base_date`) қамтитын JSON-файлды құрыңыз.
 1. Файлды UTC форматындағы уақыт белгісімен (`timestamp`) толықтырыңыз.
 
 Жіберуге арналған бастапқы деректері бар JSON-файл мысалы:
@@ -152,40 +152,38 @@ curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 }
 ```
 
-Бір ретте 50-ден артық метрика жіберуге болмайды.
+Бір мезгілде 50 метрикадан асырып жібере алмайсыз.
 
-## 3. Жіберілетін деректерді шифрлаңыз
+## 3. Жіберуге арналған деректерді шифрлаңыз
 
 {note:info}
-
-Қолданбаңызда деректерді шифрлауды қалай іске асыруға болатынының мысалдары төменде келтірілген.
-
+Қолданбаңызда деректерді шифрлауды қалай жүзеге асыруға болатынының мысалдары төменде келтірілген.
 {/note}
 
-1. AES-256 симметриялық шифрлауы үшін кілт жасаңыз. Генерация параметрлері:
+1. AES-256 симметриялық шифрлауына арналған кілтті генерациялаңыз. Генерациялау параметрлері:
 
-    - Әдіс: `crypto/rand` криптографиялық тұрғыдан қауіпсіз кездейсоқ сандар генераторы.
+    - Әдіс: `crypto/rand` криптографиялық қауіпсіз кездейсоқ сандар генераторы.
     - Кілт өлшемі: 32 байт.
 
-1. CBC (Cipher Block Chaining) шифрлау режимі үшін инициализация векторын (IV) жасаңыз. Генерация параметрлері:
+1. CBC (Cipher Block Chaining) шифрлау режиміне арналған инициализация векторын (IV) генерациялаңыз. Генерациялау параметрлері:
 
-    - Әдіс: `crypto/rand` криптографиялық тұрғыдан қауіпсіз кездейсоқ сандар генераторы.
+    - Әдіс: `crypto/rand` криптографиялық қауіпсіз кездейсоқ сандар генераторы.
     - IV өлшемі: 16 байт.
 
 1. Бастапқы деректері бар JSON-файлды шифрлаңыз. Шифрлау параметрлері:
 
     - Алгоритм: CBC режиміндегі AES.
     - Толықтыру схемасы (padding): PKCS7.
-    - Кілт: алдыңғы қадамдарда жасалған 32 байттық кілт.
-    - IV: алдыңғы қадамдарда жасалған 16 байттық инициализация векторы.
+    - Кілт: алдыңғы қадамдарда генерацияланған 32 байттық кілт.
+    - IV: алдыңғы қадамдарда генерацияланған 16 байттық инициализация векторы.
 
-1. Симметриялық шифрлауға арналған кілт пен инициализация векторын шифрлаңыз. Шифрлау параметрлері:
+1. Симметриялық шифрлау кілтін және инициализация векторын шифрлаңыз. Шифрлау параметрлері:
 
     - Алгоритм: OAEP толықтыру схемасы бар RSA.
-    - Хеш-функция: SHA-256.
+    - Хэш-функция: SHA-256.
     - Кілт: бұрын алынған [ашық кілт](#preparatory_steps).
 
-1. API-ге сұрау мазмұнын келесі құрылымды пайдаланып қалыптастырыңыз:
+1. API-ға сұрау үшін мазмұнды келесі құрылымды пайдалана отырып құрыңыз:
 
     ```json
     {
@@ -198,7 +196,7 @@ curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
     Мұнда:
 
     - `<ЗАШИФРОВАННЫЕ_ДАННЫЕ>` — бастапқы деректері бар шифрланған JSON-файл.
-    - `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — симметриялық шифрлауға арналған шифрланған кілт.
+    - `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — шифрланған симметриялық шифрлау кілті.
     - `<ЗАШИФРОВАННЫЙ_IV>` — шифрланған инициализация векторы.
 
 {cut(Деректерді шифрлау мысалдары)}
@@ -211,22 +209,22 @@ curl https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/auth/key \
 def encrypt_message(public_key_pem: str, data) -> dict:
     symmetric_key = os.urandom(32)  # AES-256
     iv = os.urandom(16)
- 
+
     message_json = json.dumps(data).encode('utf-8')
- 
-    # Создаем падддинг для симметричного шифрования
+
+# Симметриялық шифрлауға арналған паддинг жасаймыз
     padder = sym_padding.PKCS7(algorithms.AES.block_size).padder()
     padded_data = padder.update(message_json) + padder.finalize()
- 
-    # Шифруем данные симметричным ключом
+
+# Деректерді симметриялық кілтпен шифрлаймыз
     cipher = Cipher(algorithms.AES(symmetric_key), modes.CBC(iv))
     encryptor = cipher.encryptor()
     encrypted_message = encryptor.update(padded_data) + encryptor.finalize()
- 
-    # Загружаем публичный ключ
+
+# Ашық кілтті жүктейміз
     public_key = serialization.load_pem_public_key(public_key_pem.encode('utf-8'))
- 
-    # Шифруем симметричный ключ и IV публичным ключом
+
+# Симметриялық кілт пен IV-ны ашық кілтпен шифрлаймыз
     encrypted_key = public_key.encrypt(
         symmetric_key,
         padding.OAEP(
@@ -235,7 +233,7 @@ def encrypt_message(public_key_pem: str, data) -> dict:
             label=None
         )
     )
- 
+
     encrypted_iv = public_key.encrypt(
         iv,
         padding.OAEP(
@@ -249,7 +247,7 @@ def encrypt_message(public_key_pem: str, data) -> dict:
         "encryptedKey": base64.urlsafe_b64encode(encrypted_key).decode('utf-8'),
         "encryptedIV": base64.urlsafe_b64encode(encrypted_iv).decode('utf-8')
     }
- 
+
     return api_request
 ```
 
@@ -259,7 +257,7 @@ def encrypt_message(public_key_pem: str, data) -> dict:
 
 ```golang
 package main
- 
+
 import (
     "crypto/aes"
     "crypto/cipher"
@@ -274,31 +272,31 @@ import (
     "time"
 )
 
-// Вставьте публичный ключ вместо плейсхолдера <ПУБЛИЧНЫЙ_КЛЮЧ>
+// <АШЫҚ_КІЛТ> плейсхолдерінің орнына ашық кілтті қойыңыз
 const publicKeyPEM = `-----BEGIN RSA PUBLIC KEY-----
-<ПУБЛИЧНЫЙ_КЛЮЧ>
+<АШЫҚ_КІЛТ>
 -----END RSA PUBLIC KEY-----`
- 
+
 type EncryptedMessage struct {
     EncryptedPayload string `json:"encryptedPayload"`
     EncryptedKey     string `json:"encryptedKey"`
     EncryptedIV      string `json:"encryptedIV"`
 }
- 
+
 func encryptMessage(payload []byte, publicKey *rsa.PublicKey) (*EncryptedMessage, error) {
-    // Генерируем симметричный ключ (32 байта для AES-256)
+    // Симметриялық кілтті генерациялаймыз (AES-256 үшін 32 байт)
     symmetricKey := make([]byte, 32)
     if _, err := rand.Read(symmetricKey); err != nil {
         return nil, fmt.Errorf("failed to generate symmetric key: %v", err)
     }
- 
-    // Генерируем IV (16 байт для CBC)
+
+    // IV-ны генерациялаймыз (CBC үшін 16 байт)
     iv := make([]byte, 16)
     if _, err := rand.Read(iv); err != nil {
         return nil, fmt.Errorf("failed to generate IV: %v", err)
     }
- 
-    // Создаем структуру для шифрования с timestamp
+
+    // timestamp бар шифрлау құрылымын жасаймыз
     messageToEncrypt := struct {
         Payload   string    `json:"payload"`
         Timestamp time.Time `json:"timestamp"`
@@ -306,30 +304,30 @@ func encryptMessage(payload []byte, publicKey *rsa.PublicKey) (*EncryptedMessage
         Payload:   base64.URLEncoding.EncodeToString(payload),
         Timestamp: time.Now().UTC(),
     }
- 
-    // Сериализуем структуру
+
+    // Құрылымды сериализациялаймыз
     messageBytes, err := json.Marshal(messageToEncrypt)
     if err != nil {
         return nil, fmt.Errorf("failed to marshal message: %v", err)
     }
- 
-    // Создаем блочный шифр AES
+
+    // AES блоктық шифрын жасаймыз
     block, err := aes.NewCipher(symmetricKey)
     if err != nil {
         return nil, fmt.Errorf("failed to create cipher: %v", err)
     }
- 
-    // Создаем режим CBC
+
+    // CBC режимін жасаймыз
     mode := cipher.NewCBCEncrypter(block, iv)
- 
-    // Добавляем padding (PKCS7)
+
+    // Padding қосамыз (PKCS7)
     paddedPayload := pkcs7Pad(messageBytes, aes.BlockSize)
- 
-    // Шифруем payload
+
+    // Payload-ты шифрлаймыз
     encryptedPayload := make([]byte, len(paddedPayload))
     mode.CryptBlocks(encryptedPayload, paddedPayload)
- 
-    // Шифруем симметричный ключ публичным ключом с использованием OAEP
+
+    // Симметриялық кілтті OAEP пайдалана отырып ашық кілтпен шифрлаймыз
     encryptedKey, err := rsa.EncryptOAEP(
         sha256.New(),
         rand.Reader,
@@ -340,8 +338,8 @@ func encryptMessage(payload []byte, publicKey *rsa.PublicKey) (*EncryptedMessage
     if err != nil {
         return nil, fmt.Errorf("failed to encrypt symmetric key: %v", err)
     }
- 
-    // Шифруем IV публичным ключом с использованием OAEP
+
+    // IV-ты OAEP пайдалана отырып ашық кілтпен шифрлаймыз
     encryptedIV, err := rsa.EncryptOAEP(
         sha256.New(),
         rand.Reader,
@@ -352,16 +350,16 @@ func encryptMessage(payload []byte, publicKey *rsa.PublicKey) (*EncryptedMessage
     if err != nil {
         return nil, fmt.Errorf("failed to encrypt IV: %v", err)
     }
- 
-    // Формируем зашифрованное сообщение
+
+    // Шифрланған хабарламаны құрастырамыз
     return &EncryptedMessage{
         EncryptedPayload: base64.URLEncoding.EncodeToString(encryptedPayload),
         EncryptedKey:     base64.URLEncoding.EncodeToString(encryptedKey),
         EncryptedIV:      base64.URLEncoding.EncodeToString(encryptedIV),
     }, nil
 }
- 
-// pkcs7Pad добавляет padding согласно PKCS7
+
+// pkcs7Pad PKCS7 бойынша padding қосады
 func pkcs7Pad(data []byte, blockSize int) []byte {
     padding := blockSize - len(data)%blockSize
     padText := make([]byte, len(data)+padding)
@@ -371,20 +369,20 @@ func pkcs7Pad(data []byte, blockSize int) []byte {
     }
     return padText
 }
- 
+
 func main() {
-    // Декодируем PEM в структуру публичного ключа
+    // PEM-ді ашық кілт құрылымына декодтаймыз
     block, _ := pem.Decode([]byte(publicKeyPEM))
     if block == nil {
-        panic("Ошибка декодирования PEM блока")
+        panic("PEM блогын декодтау қатесі")
     }
- 
+
     publicKey, err := x509.ParsePKCS1PublicKey(block.Bytes)
     if err != nil {
-        panic(fmt.Sprintf("Ошибка парсинга публичного ключа: %v", err))
+        panic(fmt.Sprintf("Ашық кілтті парсингтеу қатесі: %v", err))
     }
- 
-    // Тестовое сообщение
+
+    // Тестік хабарлама
     jsn := `{
         "metrics": [
             {
@@ -396,21 +394,21 @@ func main() {
         "base_date": "2024-10-24T10:00:00Z"
     }`
     message := []byte(jsn)
-    fmt.Printf("Исходное сообщение: %s\n", message)
- 
-    // Шифруем сообщение
+    fmt.Printf("Бастапқы хабарлама: %s\n", message)
+
+    // Хабарламаны шифрлаймыз
     encryptedMsg, err := encryptMessage(message, publicKey)
     if err != nil {
-        panic(fmt.Sprintf("Ошибка шифрования: %v", err))
+        panic(fmt.Sprintf("Шифрлау қатесі: %v", err))
     }
- 
-    // Конвертируем в JSON
+
+    // JSON-ға түрлендіреміз
     jsonData, err := json.MarshalIndent(encryptedMsg, "", "    ")
     if err != nil {
-        panic(fmt.Sprintf("Ошибка создания JSON: %v", err))
+        panic(fmt.Sprintf("JSON жасау қатесі: %v", err))
     }
- 
-    fmt.Printf("\nJSON для API запроса:\n%s\n", string(jsonData))
+
+    fmt.Printf("\nAPI сұрауына арналған JSON:\n%s\n", string(jsonData))
 }
 ```
 
@@ -420,12 +418,12 @@ func main() {
 
 {/cut}
 
-## 4. (Опционалды) Метрикаларды жіберуді тестілеңіз
+## 4. (Міндетті емес) Метрикаларды жіберуін тексеріңіз
 
-{var(cloud)} жүйесіне метрикаларды беру процесін жөндеу үшін Marketplace API-ге сұрау орындаңыз:
+{var(cloud)} платформасына метрикаларды беру процесін отладкалау үшін Marketplace API-ға сұрау орындаңыз:
 
 ```shell
-curl -X POST https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics/decrypt \
+curl -X POST https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/metrics/decrypt \
 -H 'Authorization: Bearer <ТОКЕН>' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -437,12 +435,12 @@ curl -X POST https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics
 
 Мұнда:
 
-- `<ТОКЕН>` — API-ге қол жеткізу токені.
+- `<ТОКЕН>` — API қолжетімдігінің токені.
 - `<ЗАШИФРОВАННЫЕ_ДАННЫЕ>` — бастапқы деректері бар шифрланған JSON-файл.
-- `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — симметриялық шифрлауға арналған шифрланған кілт.
+- `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — шифрланған симметриялық шифрлау кілті.
 - `<ЗАШИФРОВАННЫЙ_IV>` — шифрланған инициализация векторы.
 
-Сұрау сәтті өңделсе, API берілген метрикалардың тізімін қайтарады.
+Сұрау сәтті өңделген жағдайда API жіберілген метрикалардың тізімін қайтарады.
 
 Жауап мысалы:
 
@@ -458,16 +456,16 @@ curl -X POST https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics
 
 {note:warn}
 
-Берілген метрикаларға сәйкес ресурс тұтынуды есепке алу және пайдаланушыларға тиісті есептеулер жүргізілмейді.
+Берілген метрикаларға сәйкес ресурстарды тұтынуды есептеу және пайдаланушылар үшін тиісті есептелімдер жасалмайды.
 
 {/note}
 
-## 5. Метрикаларды {var(cloud)} жүйесіне жіберіңіз
+## 5. Метрикаларды {var(cloud)} платформасына жіберіңіз
 
-Marketplace API-ге сұрау орындаңыз:
+Marketplace API-ға сұрау орындаңыз:
 
 ```shell
-curl -X POST https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics/push \
+curl -X POST https://msk.cloud.vk.ru/marketplace/api/infra-api/v1-public/metrics/push \
 -H 'Authorization: Bearer <ТОКЕН>' \
 -H 'Content-Type: application/json' \
 --data-raw '{
@@ -479,12 +477,12 @@ curl -X POST https://kz.cloud.vk.com/marketplace/api/infra-api/v1-public/metrics
 
 Мұнда:
 
-- `<ТОКЕН>` — API-ге қол жеткізу токені.
+- `<ТОКЕН>` — API қолжетімдігінің токені.
 - `<ЗАШИФРОВАННЫЕ_ДАННЫЕ>` — бастапқы деректері бар шифрланған JSON-файл.
-- `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — симметриялық шифрлауға арналған шифрланған кілт.
+- `<ЗАШИФРОВАННЫЙ_КЛЮЧ>` — шифрланған симметриялық шифрлау кілті.
 - `<ЗАШИФРОВАННЫЙ_IV>` — шифрланған инициализация векторы.
 
-Сұрау сәтті өңделсе, API берілген метрикалардың тізімін қайтарады.
+Сұрау сәтті өңделген жағдайда API жіберілген метрикалардың тізімін қайтарады.
 
 Жауап мысалы:
 

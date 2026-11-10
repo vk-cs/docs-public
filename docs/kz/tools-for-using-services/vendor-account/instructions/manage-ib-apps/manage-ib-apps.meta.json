@@ -1,0 +1,14 @@
+{
+  "title": "Image-based қосымшаларды басқару",
+  "shortDescription": "Image-based қосымшаны Marketplace-ке қалай қосу, жаңарту, архивтеу немесе Cloud Monitoring сервисімен интеграциялау",
+  "metaDescription": "Image-based қосымшаларды Marketplace-ке қосу, жаңарту, архивтеу бойынша нұсқаулық. Image-based қосымшаны Cloud Monitoring сервисімен интеграциялау бойынша нұсқаулық",
+  "sectionTitle": "Image-based қосымшаларды басқару",
+  "weight": 4,
+  "isBeta": true,
+  "uuid": "3283eb56-f740-47a3-aae2-3812231a7a63",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

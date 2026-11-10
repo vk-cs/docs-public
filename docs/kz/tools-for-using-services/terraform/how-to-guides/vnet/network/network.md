@@ -1,14 +1,14 @@
 # {heading(Желілерді жасау)[id=terraform-network]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Мақалада Cloud Network сервисінде Terraform көмегімен бұлттық желілерді жасау мысалдары берілген:
+Мақалада Cloud Network қызметінде Terraform көмегімен бұлтты желілерді жасау мысалдары келтірілген:
 
 - жеке желі;
-- интернетке қолжетімді желі;
-- Floating IP-адресіне байланыстырылған порты бар желі.
+- интернетке қолжетімділігі бар желі;
+- Floating IP-мекенжайына байланған порты бар желі.
 
-Желілерді жасау кезінде мыналар пайдаланылады:
+Желілерді жасау кезінде мыналар қолданылады:
 
 - Ресурстар (resource):
 
@@ -19,7 +19,7 @@
   - [vkcs_networking_port](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_port.md);
   - [vkcs_networking_floatingip](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_floatingip.md).
 
-- Дереккөздер (data source):
+- Деректер көздері (data source):
 
   - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md);
   - [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_subnet.md);
@@ -30,56 +30,56 @@
 
 ## {heading(Дайындық қадамдары)[id=terraform-network-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) желілерді жасау үшін жеткілікті ресурстар бар екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әртүрлі өңірлер үшін әртүрлі квоталар орнатылуы мүмкін.
 
-   Қажет болса, [квоталарды ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер әлі жасалмаса, [Terraform-ды орнатып, провайдерді баптаңыз](../../../quick-start).
+1. Әлі жасалмаған болса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді баптаңыз]}.
 
-## {heading({counter(tf-network)}. Желінің сипаттамасы бар файлды жасаңыз)[id=terraform-network-net-file]}
+## {heading({counter(tf-network)}. Желі сипаттамасы бар файлды жасаңыз)[id=terraform-network-net-file]}
 
-Terraform конфигурациясының `network.tf` файлын жасаңыз. Мазмұны қажетті желі түріне байланысты:
+Terraform конфигурация файлын `network.tf` жасаңыз. Мазмұны қажетті желі түріне байланысты:
 
 {tabs}
 
-{tab(Жеке желіні жасау)}
+{tab(Жеке желі жасау)}
 
 Файлда келесі конфигурациядағы желілік инфрақұрылым сипатталған:
 
-  1. SDN `Sprut` ішінде `example-tf-net` желісі жасалады.
-  1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
-  1. SDN `Sprut` ішінде [сыртқы желіге](/kz/networks/vnet/concepts/net-types#vnet-net-types-external-net) қосылмайтын `example-tf-router` маршрутизаторы жасалады.
-  1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
+1. `Sprut` SDN-інде `example-tf-net` желісі жасалады.
+1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
+1. {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=Сыртқы желіге]} қосылымы жоқ `Sprut` SDN-інде `example-tf-router` маршрутизаторы жасалады.
+1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
 
 {include(../../../../../_includes/_create_network_tf.md)[tags=net,router,shift=2]}
 
 {/tab}
 
-{tab(Интернетке қолжетімді желіні жасау)}
+{tab(Интернетке қолжетімділігі бар желі жасау)}
 
 Файлда келесі конфигурациядағы желілік инфрақұрылым сипатталған:
 
-  1. SDN `Sprut` ішінде `example-tf-net` желісі жасалады.
-  1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
-  1. SDN `Sprut` ішінде SDN `Sprut` жүйесіндегі [сыртқы желіге](/kz/networks/vnet/concepts/net-types#vnet-net-types-external-net) қосылған `example-tf-router` маршрутизаторы жасалады.
-  1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
+1. `Sprut` SDN-інде `example-tf-net` желісі жасалады.
+1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
+1. `Sprut` SDN-індегі {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желіге]} қосылымы бар `Sprut` SDN-інде `example-tf-router` маршрутизаторы жасалады.
+1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
 
 {include(../../../../../_includes/_create_network_tf.md)[tags=extnet,net,extrouter,shift=2]}
 
 {/tab}
 
-{tab(Floating IP-адресіне байланыстырылған порты бар желіні жасау)}
+{tab(Floating IP-мекенжайына байланған порты бар желі жасау)}
 
 Файлда келесі конфигурациядағы желілік инфрақұрылым сипатталған:
 
-  1. SDN `Sprut` ішінде `example-tf-net` желісі жасалады.
-  1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
-  1. SDN `Sprut` ішінде SDN `Sprut` жүйесіндегі [сыртқы желіге](/kz/networks/vnet/concepts/net-types#vnet-net-types-external-net) қосылған `example-tf-router` маршрутизаторы жасалады.
-  1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
-  1. Оған `192.168.199.23` IP-адресі тағайындалатын порт жасалады.
-  1. Порт Floating IP-адресімен байланыстырылады.
+1. `Sprut` SDN-інде `example-tf-net` желісі жасалады.
+1. `example-tf-net` желісінде `example-tf-subnet` ішкі желісі жасалады.
+1. `Sprut` SDN-індегі {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желіге]} қосылымы бар `Sprut` SDN-інде `example-tf-router` маршрутизаторы жасалады.
+1. `example-tf-subnet` ішкі желісі мен `example-tf-router` маршрутизаторы байланыстырылады.
+1. `192.168.199.23` IP-мекенжайы тағайындалған порт жасалады.
+1. Порт Floating IP-мекенжайымен байланыстырылады.
 
-  {include(../../../../../_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
+{include(../../../../../_includes/_create_network_tf.md)[tags=extnet,net,extrouter,port]}
 
 {/tab}
 
@@ -87,77 +87,73 @@ Terraform конфигурациясының `network.tf` файлын жаса�
 
 Мұнда:
 
-- `admin_state_up` — ресурсты қосулы `true` немесе өшірулі `false` күйінде жасау.
-
-- `external` — [сыртқы желінің](/kz/networks/vnet/concepts/net-types#vnet-net-types-external-net) белгісі: `true` немесе `false`.
-
-- `external_network_id` — интернетке қол жеткізуге арналған сыртқы желі идентификаторы. Идентификаторды манифесте көрсетуге немесе дереккөзден алуға болады.
+- `admin_state_up` — ресурсды `true` (қосулы) немесе `false` (өшіккен) статусында жасау.
+- `external` — {linkto(../../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желінің]} белгісі: `true` немесе `false`.
+- `external_network_id` — интернетке қолжетімділік үшін сыртқы желінің идентификаторы. Идентификаторды манифестте көрсетуге немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `external_network_id = data.vkcs_networking_network.extnet.id`: идентификатор `vkcs_networking_network` дереккөзінен алынады.
-  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған идентификатор көрсетіледі.
+  - `external_network_id = data.vkcs_networking_network.extnet.id`: идентификатор `vkcs_networking_network` деректер көзінен алынады.
+  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
-- `fixed_ip` — портқа арналған бекітілген IP-адрес. Блокта келесі аргументтерді көрсетіңіз:
+- `fixed_ip` — порт үшін тұрақты IP-мекенжай. Блокта келесі аргументтерді көрсетеңіз:
 
-  - `subnet_id` — порт осы ішкі желінің IP-адрестерінің бірімен байланыстырылады. Егер тек осы аргумент көрсетілсе, порт үшін IP-адрес ішкі желінің IP-адрестер пулынан автоматты түрде таңдалады.
-  - (Опционалды) `ip_address` — порт көрсетілген IP-адреспен байланыстырылады.
+  - `subnet_id` — порт осы ішкі желідегі IP-мекенжайлардың бірімен байланыстырылады. Тек осы аргумент көрсетілген болса, порт үшін IP-мекенжай ішкі желінің IP-мекенжайлар пулінен автоматты түрде таңдалады.
+  - (Қалауыңызша) `ip_address` — порт көрсетілген IP-мекенжаймен байланыстырылады.
 
-- `network_id` — желі идентификаторы. Мысалдарда ішкі желі жаңа желіде орналастырылған. Ішкі желіні бар желіде де орналастыруға болады, ал идентификаторды манифесте көрсетуге немесе дереккөзден алуға болады.
+- `network_id` — желінің идентификаторы. Мысалдарда ішкі желі жаңа желілде орналастырылған. Ішкі желіні бар желілде де орналастыруға болады, ал идентификаторды манифестте көрсетуғе немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.example.id`: ішкі желі `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады.
-  - `network_id = data.vkcs_networking_network.example.id`: ішкі желі бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` дереккөзінен алынады.
-  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: ішкі желі бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
+  - `network_id = vkcs_networking_network.example.id`: ішкі желі `vkcs_networking_network` ресурсы жасайтын жаңа желілде орналастырылады.
+  - `network_id = data.vkcs_networking_network.example.id`: ішкі желі бар желілде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады.
+  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: ішкі желі бар желілде орналастырылады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-- `pool` — Floating IP-адрестер пулы: Sprut [SDN](/kz/networks/vnet/concepts/sdn) үшін `internet`, Neutron SDN үшін `ext-net`.
-
-- `port_id` — Floating IP-адресімен байланыстырылатын порт идентификаторы. Идентификаторды манифесте көрсетуге, дереккөзден немесе ресурстан алуға болады.
+- `pool` — Floating IP-мекенжайлар пулы: `Sprut` {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN-і]} үшін `internet`, SDN Neutron үшін `ext-net`.
+- `port_id` — Floating IP-мекенжайы байланыстырылатын порттың идентификаторы. Идентификаторды манифестте көрсетуғе, деректер көзінен немесе ресурс жасағаннан кейін алуға болады.
 
   {cut(Мысалдар)}
 
-  - `port_id = vkcs_networking_port.example.id`: порт идентификаторы `vkcs_networking_port` ресурсы жасалғаннан кейін алынады.
-  - `port_id = data.vkcs_networking_port.example.id`: порт идентификаторы `vkcs_networking_port` дереккөзінен алынады.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [порттар тізімінен](/kz/networks/vnet/instructions/ports#vnet-ports-view) немесе Openstack CLI арқылы алынған идентификатор көрсетілген.
+  - `port_id = vkcs_networking_port.example.id`: порттың идентификаторы `vkcs_networking_port` ресурсы жасалғаннан кейін алынады.
+  - `port_id = data.vkcs_networking_port.example.id`: порттың идентификаторы `vkcs_networking_port` деректер көзінен алынады.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/ports#vnet-ports-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған идентификатор көрсетілген.
 
   {/cut}
 
-- `router_id` — ішкі желі байланыстырылатын маршрутизатор идентификаторы. Мысалда ішкі желі жаңа маршрутизатормен байланыстырылған. Ішкі желіні бар маршрутизатормен де байланыстыруға болады, ал идентификаторды манифесте көрсетуге немесе дереккөзден алуға болады.
+- `router_id` — ішкі желі байланыстырылатын маршрутизатордың идентификаторы. Мысалда ішкі желі жаңа маршрутизатормен байланыстырылған. Ішкі желіні бар маршрутизатормен де байланыстыруға болады, ал идентификаторды манифестте көрсетуғе немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
   - `router_id = vkcs_networking_subnet.example.id`: ішкі желі `vkcs_networking_router` ресурсы жасайтын жаңа маршрутизатормен байланыстырылады.
-  - `router_id = data.vkcs_networking_subnet.example.id`: ішкі желі бар маршрутизатормен байланыстырылады, оның идентификаторы `vkcs_networking_router` дереккөзінен алынады.
-  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: ішкі желі бар маршрутизатормен байланыстырылады. {var(cloud)} жеке кабинетіндегі [маршрутизаторлар тізімінен](/kz/networks/vnet/instructions/router#vnet-router-view) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
+  - `router_id = data.vkcs_networking_subnet.example.id`: ішкі желі бар маршрутизатормен байланыстырылады, оның идентификаторы `vkcs_networking_router` деректер көзінен алынады.
+  - `router_id = "bb76507d-cccc-cccc-cccc-2bca1a4c4cfc"`: ішкі желі бар маршрутизатормен байланыстырылады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/router#vnet-router-view)[text=маршрутизаторлар тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-- `sdn` — ресурс (желі, ішкі желі, маршрутизатор және т.б.) жасалатын [SDN](/kz/networks/vnet/concepts/sdn). Қолжетімді мәндер: `neutron`, `sprut`. Егер SDN көрсетілмесе, әдепкі бойынша қолданылатын SDN пайдаланылады. Жобаңыз үшін қандай SDN қосылғанын [жоба баптауларынан](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-sdn-view) білуге болады.
-
-- `subnet_id` — ішкі желі идентификаторы. Идентификаторды манифесте көрсетуге, дереккөзден алуға немесе ресурс жасалғаннан кейін алуға болады.
+- `sdn` — ресурс (желі, ішкі желі, маршрутизатор және т.б.) жасалатын {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]}. Қолжетімді мәндер: `neutron`, `sprut`. SDN көрсетілмесе, әдепкі SDN қолданылады. Сіздің жобаңыз үшін қандай SDN қосылғанын {linkto(../../../../account/instructions/project-settings/manage#project-sdn-view)[text=жоба баптауларында]} білуге болады.
+- `subnet_id` — ішкі желінің идентификаторы. Идентификаторды манифестте көрсетуғе, деректер көзінен немесе ресурс жасағаннан кейін алуға болады.
 
   {cut(Мысалдар)}
 
-  - `subnet_id = vkcs_networking_subnet.example.id`: ішкі желі идентификаторы `vkcs_networking_subnet` ресурсы арқылы жасалғаннан кейін алынады.
-  - `subnet_id = data.vkcs_networking_subnet.example.id`: ішкі желі идентификаторы `vkcs_networking_subnet` дереккөзінен алынады.
-  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған ішкі желі идентификаторы көрсетіледі.
+  - `subnet_id = vkcs_networking_subnet.example.id`: ішкі желінің идентификаторы `vkcs_networking_subnet` ресурсы оны жасағаннан кейін алынады.
+  - `subnet_id = data.vkcs_networking_subnet.example.id`: ішкі желінің идентификаторы `vkcs_networking_subnet` деректер көзінен алынады.
+  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған ішкі желінің идентификаторы көрсетіледі.
 
   {/cut}
 
-## {heading({counter(tf-network)}. Terraform көмегімен қажетті ресурстарды жасаңыз)[id=terraform-network-create]}
+## {heading({counter(tf-network)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-network-create]}
 
-1. Terraform конфигурациясының файлдарын бір директорияға орналастырыңыз:
+1. Terraform конфигурация файлдарын бір каталогқа орналастырыңыз:
 
    - `vkcs_provider.tf`;
    - `network.tf`.
 
-1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Осы каталогқа өтіңіз.
+1. Конфигурация файлдары дұрыс және қажетті өзгерістерді қамтитынына көз жеткізіңіз:
 
    ```console
    terraform validate && terraform plan
@@ -169,7 +165,7 @@ Terraform конфигурациясының `network.tf` файлын жаса�
    terraform apply
    ```
 
-   Растауды сұрағанда, `yes` деп енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
@@ -177,20 +173,20 @@ Terraform конфигурациясының `network.tf` файлын жаса�
 
 Желі мен инфрақұрылымның сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз. Желінің жасалғанын және мысалда қосылған барлық ішкі желілерді, маршрутизаторларды және порттарды қамтитынын тексеріңіз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз. Желі жасалғанын және онда мысалда қосылған барлық ішкі желілер, маршрутизаторлар мен порттар бар екеніне көз жеткізіңіз.
 
-## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-network-delete]}
+## {heading(Қолданылмайтын ресурстарды жойыңыз)[id=terraform-network-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурациясы файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары орналасқан каталогқа өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда, `yes` деп енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

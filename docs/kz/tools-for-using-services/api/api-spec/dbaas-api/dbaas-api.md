@@ -1,31 +1,29 @@
 # {heading(Cloud Databases)[id=api-spec-dbaas]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-[Cloud Databases](/kz/dbs/dbaas) сервисінің API бұлттық дерекқорлармен жұмыс істеуді қолдайды:
+{linkto(../../../../dbs/dbaas#dbaas-dbaas)[text=Cloud Databases]} сервисінің API бұлтты дерекқорлармен жұмыс істеуді қолдайды:
 
 - инстанстардың, кластерлердің және деректер қоймаларының мүмкіндіктері туралы ақпарат алу;
-- дерекқорларды, деректер қоймаларын, инстанстар мен кластерлерді басқару;
+- дерекқорларды, деректер қоймаларын, инстанстарды және кластерлерді басқару;
 - конфигурацияларды басқару;
-- резервтік көшіруді басқару;
+- резервтік көшірмелеуді басқару;
 - пайдаланушыларды басқару;
-- биллинг журналын қарау.
+- биллинг журналын көру.
 
-{cut(Endpoint алу, авторизация және аутентификация)}
+{cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) VK Cloud жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. API арқылы қолжетімділікті әлі жасалмаса, {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жобаны баптау** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack сервисі** блогынан **Trove** endpoint-ін табыңыз.
-1. `X-Auth-Token` [қолжетімділік токенін алыңыз](../../rest-api/case-keystone-token).
+1. **OpenStack сервисі** блогынан **Trove** эндпоинтін тауып алыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/dbaasapi-swagger.json "download") арқылы жүктеп ала аласыз.
-
+JSON форматындағы бастапқы спецификацияны [сілтеме](assets/dbaasapi-swagger.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/dbaasapi-swagger.json)

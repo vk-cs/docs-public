@@ -1,16 +1,16 @@
 {
-  "title": "Объектілерді бұғаттау (object lock)",
-  "shortDescription": "Объектілерді жоюдан және қайта жазудан бұғаттау",
-  "metaDescription": "VK Object Storage сервисіндегі объектілерді жоюдан және қайта жазудан бұғаттау. Уақытша бұғаттау (retention period): басқарылатын (GOVERNANCE) және қатаң (COMPLIANCE) режимдер. Мерзімсіз бұғаттау (legal hold). Нұсқалау мен объектілерді бұғаттау арасындағы байланыс.",
-  "sectionTitle": "Объектілерді бұғаттау (object lock)",
+  "title": "Объекттерді блоктау (object lock)",
+  "shortDescription": "Объекттерді жою және қайта жазудан блоктау",
+  "metaDescription": "VK Object Storage қызметінде объекттерді жою және қайта жазудан блоктау. Уақытша блоктау (retention period): басқарылатын (GOVERNANCE) және қатаң (COMPLIANCE) режимдері. Мәңгілік блоктау (legal hold). Нұсқаларды басқару мен объекттерді блоктау арасындағы байланыс.",
+  "sectionTitle": "Объекттерді блоктау (object lock)",
   "icon": "",
   "weight": 4,
+  "uuid": "8b8c5a2a-05ac-4978-8c65-e7bf14f7bd22",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "016dfb16-8a96-43f8-aa72-67c7d5e14015"
+  }
 }

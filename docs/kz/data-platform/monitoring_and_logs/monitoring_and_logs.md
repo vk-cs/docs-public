@@ -1,7 +1,7 @@
-# {heading(Мониторинг және логтау)[id=monitoring-and-logs]}
+# {heading(Мониторинг және логтарды жазу)[id=monitoring-and-logs]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}

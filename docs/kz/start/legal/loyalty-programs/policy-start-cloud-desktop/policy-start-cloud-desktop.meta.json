@@ -1,0 +1,16 @@
+{
+  "title": "«Cloud Desktop іске қосу» акциясының ережелері",
+  "shortDescription": "",
+  "metaDescription": "«Cloud Desktop іске қосу» акциясы тұтынушылардың назарын Cloud Desktop өніміне аударуға, осы өнімнің танымалдығын арттыруға және оны тауарлар, жұмыстар мен қызметтер нарығында ілгерілетуге арналған.",
+  "sectionTitle": "«Cloud Desktop іске қосу» акциясының ережелері",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 4,
+  "uuid": "33e89d61-3918-4b54-86bc-ba32f1509a72",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

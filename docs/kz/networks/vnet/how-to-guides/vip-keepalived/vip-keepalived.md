@@ -203,7 +203,7 @@
            ```console
            sudo apt update
            sudo apt install keepalived
-  
+
            ```
 
     1. `kld-vm-2` виртуалды машинасында дәл осы әрекеттерді орындаңыз.
@@ -223,7 +223,7 @@
        {
          router_id KLD-VM-1
        }
- 
+
        vrrp_instance VI_254
        {
          state MASTER
@@ -231,13 +231,13 @@
          virtual_router_id 254
          priority 120
          advert_int 1
- 
+
          authentication
          {
            auth_type PASS
            auth_pass <ПАРОЛЬ_ДЛЯ_АУТЕНТИФИКАЦИИ>
          }
- 
+
          virtual_ipaddress
          {
            192.168.0.254/24
@@ -258,7 +258,7 @@
        {
          router_id KLD-VM-2
        }
- 
+
        vrrp_instance VI_254
        {
          state BACKUP
@@ -266,13 +266,13 @@
          virtual_router_id 254
          priority 90
          advert_int 1
- 
+
          authentication
          {
            auth_type PASS
            auth_pass <ПАРОЛЬ_ДЛЯ_АУТЕНТИФИКАЦИИ>
          }
- 
+
          virtual_ipaddress
          {
            192.168.0.254/24
@@ -309,7 +309,7 @@
 
            ```console
            sudo systemctl start keepalived
-  
+
            ```
 
         1. `keepalived` күйін тексеру үшін команданы орындаңыз:

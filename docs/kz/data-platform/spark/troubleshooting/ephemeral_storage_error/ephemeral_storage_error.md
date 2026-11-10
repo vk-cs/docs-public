@@ -1,10 +1,10 @@
-# {heading(Spark-тапсырмасын іске қосу кезіндегі қате: The node was low on resource: ephemeral-storage)[id=ephemeral_storage_error]}
+# {heading(Spark тапсырмасын іске қосу қатесі: The node was low on resource: ephemeral-storage)[id=ephemeral_storage_error]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=ephemeral_storage_error_problem]}
 

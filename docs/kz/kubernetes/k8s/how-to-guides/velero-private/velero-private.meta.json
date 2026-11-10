@@ -1,0 +1,17 @@
+{
+  "title": "Velero қолдану",
+  "shortDescription": "Velero көмегімен қалайтын сақтық көшірме жасау",
+  "metaDescription": "Managed Containers сервісінде Velero көмегімен бірінші буын кластерлерінің сақтық көшірмесін қалай жасау туралы біліңіз",
+  "sectionTitle": "Velero қолдану",
+  "icon": "",
+  "weight": 3,
+  "uuid": "f2561544-5f7a-4fcb-a603-b72e5209e723",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

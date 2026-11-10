@@ -1,36 +1,38 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(JupyterHub инстансін жасау)[id=terraform-jupyterhub]}
 
-Мақалада Terraform көмегімен JupyterHub инстансын жасау мысалдары келтірілген.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Инстансты жасау кезінде мыналар пайдаланылады:
+Бұл мақалада Terraform көмегімен JupyterHub инстансін жасау мысалдары келтірілген.
+
+Инстансті жасау кезінде пайдаланылады:
 
 - [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md) ресурсы;
 - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) ресурсы;
 - [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) деректер көзі;
 - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) деректер көзі.
 
-Параметрлердің толық сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) берілген.
+Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Инстансты жасамас бұрын
+## {heading(Инстансті жасамас бұрын)[id=terraform-jupyterhub-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) инстансты жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсты жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әртүрлі өңірлер үшін әртүрлі квоталар орнатылуы мүмкін.
 
-   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болса, квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. Мұны бұрын жасамаған болсаңыз, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңіз және провайдерді теңшеріңіз]}.
 
-1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
+1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Провайдердің нұсқасы төмен болса, оны {linkto(../../../quick-start#terraform-quick-start-update)[text=жаңартыңыз]}.
 
-## 1. JupyterHub инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-jupyterhub)}. JupyterHub инстансінің сипаттамасы бар файлды жасаңыз)[id=terraform-jupyterhub-instance-file]}
 
 Төмендегі мысалда инстанс келесі конфигурацияда жасалады:
 
-- әдепкі аймақ, `ME1` қолжетімділік аймағы;
+- әдепкі өңір, `ME1` қолжетімділік аймағы;
 - `SSD` диск түрі;
 - пайдаланушы аты — `admin`, құпиясөз — `Password!`;
-- деректер дискісінің түрі `SSD`, көлемі — 60 және 70 ГБ.
+- деректер дискінің түрі `SSD`, өлшемі — 60 және 70 ГБ.
 
-Келесі мазмұндағы `main.tf` Terraform конфигурация файлын жасаңыз:
+Terraform конфигурация файлын `main.tf` мына мазмұнмен жасаңыз:
 
 ```hcl
 resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
@@ -62,38 +64,38 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 Мұнда:
 
-- `admin_password` — JupyterHub инстансы әкімшісінің құпиясөзі.
+- `admin_password` — JupyterHub инстансінің әкімшісінің құпиясөзі.
 
   {cut(Құпиясөзге қойылатын талаптар)}
 
   - Құпиясөздің ең аз ұзындығы — 8 таңба.
-  - Латын әліпбиінің бас және кіші әріптерін қамтуы керек.
-  - Кемінде бір сан және `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `<`, `>`, `|`, `[`, `]`, `{`, `}`, `(`, `)` арнайы таңбаларының бірін қамтуы керек.
-  
+  - Латын алфавитінің бас және кіші әріптерін қамтуы керек.
+  - Кемінде бір цифр және `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `<`, `>`, `|`, `[`, `]`, `{`, `}`, `(`, `)` арнайы таңбасы болуы керек.
+
   {/cut}
 
-- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифесте көрсетуге немесе оны деректер көзінен алуға болады.
+- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестке жазуға немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор кейінірек жасалатын `vkcs_compute_flavor` деректер көзінен алынады.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) арқылы алынған идентификатор көрсетіледі.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор `vkcs_compute_flavor` деректер көзінен алынады, ол әрі қарай құрылады.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
-- `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстансты бар желіде де, жаңа желіде де орналастыруға болады. Идентификаторды манифесте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
+- `network_id` — инстанс орналасатын желінің идентификаторы. Инстанс бар желіде немесе жаңа желіде орналасуы мүмкін. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады. Ресурс кейінірек жасалады.
-  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек жасалады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
+  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсымен жасалатын жаңа желіде орналасады. Ресурс әрі қарай құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналасады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі әрі қарай құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналасады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-## 2. (Опционалды) ВМ түріне арналған деректер көзінің сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-jupyterhub)}. (Міндетті емес) ВМ түрі үшін деректер көзінің сипаттамасы бар файлды жасаңыз)[id=terraform-jupyterhub-vm-file]}
 
-Қажетті ВМ түрінің сипаттамасы бар `flavor.tf` Terraform конфигурация файлын жасаңыз:
+Қажетті ВМ түрінің сипаттамасы бар Terraform конфигурация файлын `flavor.tf` жасаңыз:
 
 ```hcl
 data "vkcs_compute_flavor" "basic" {
@@ -101,17 +103,17 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Файлда көрсетілген ВМ түрі сіздің Terraform жобаңызда JupyterHub инстансын жасау үшін пайдаланылады.
+Файлда көрсетілген ВМ түрі Terraform жобаңызда JupyterHub инстансін жасау үшін пайдаланылады.
 
-## 3. (Опционалды) Инстансқа арналған желілік инфрақұрылымның сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-jupyterhub)}. (Міндетті емес) Инстанс үшін желілік инфрақұрылымның сипаттамасы бар файлды жасаңыз)[id=terraform-jupyterhub-net-file]}
 
-Инстансқа арналған желілік инфрақұрылым сипаттамасы бар `network.tf` Terraform конфигурация файлын жасаңыз:
+Инстанс үшін желілік инфрақұрылымның сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
 
 {tabs}
 
 {tab(Бар желінің сипаттамасы)}
 
-Жобада бар желіге арналған деректер көзі сипаттамасының мысалы:
+Жобада бар желі үшін деректер көзінің сипаттамасының мысалы:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -121,9 +123,10 @@ data "vkcs_networking_network" "default" {
 ```
 {/tab}
 
-{tab(Жаңа желіні жасау)}
+{tab(Жаңа желі жасау)}
 
 ```hcl
+
 # Create networks
 resource "vkcs_networking_network" "app" {
   name        = "app-tf-example"
@@ -145,7 +148,8 @@ data "vkcs_networking_network" "extnet" {
 # Create a router to connect netwoks
 resource "vkcs_networking_router" "router" {
   name = "router-tf-example"
-  # Connect router to Internet
+
+# Connect router to Internet
   external_network_id = data.vkcs_networking_network.extnet.id
 }
 
@@ -160,17 +164,17 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 4. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading({counter(tf-jupyterhub)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-jupyterhub-create]}
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
-  
+
    - `vkcs_provider.tf`;
    - `main.tf`;
-   - `flavor.tf` (егер жасалған болса);
-   - `network.tf`(егер жасалған болса).
+   - `flavor.tf` (жасалған болса);
+   - `network.tf` (жасалған болса).
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Конфигурация файлдары дұрыс және қажетті өзгерістерді қамтитынына көз жеткізіңіз:
 
    ```console
    terraform validate && terraform plan
@@ -182,28 +186,28 @@ resource "vkcs_networking_router_interface" "app" {
    terraform apply
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 5. Конфигурацияның қолданылуын тексеріңіз
+## {heading({counter(tf-jupyterhub)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-jupyterhub-check]}
 
-JupyterHub инстансының сәтті жасалғанына көз жеткізіңіз:
+JupyterHub инстансі сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
-1. **ML Platform** → **Инстансы** бөліміне өтіңіз. JupyterHub инстансының жасалғанына және белсенді екеніне көз жеткізіңіз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. JupyterHub инстансі жасалғанына және белсенді екеніне көз жеткізіңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-jupyterhub-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Конфигурация файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары орналасқан директорияға өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

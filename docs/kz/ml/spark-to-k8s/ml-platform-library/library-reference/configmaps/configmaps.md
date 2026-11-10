@@ -102,7 +102,6 @@ data:
 
     from pyspark.sql import SparkSession
 
-
     """
         Usage: pi [partitions]
     """
@@ -171,7 +170,7 @@ production-ортада токендермен ашық түрде жұмыс і
                cluster_id='XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
                configmap_yaml_path='/home/user/mongodb_configmap.yaml',
                namespace='default')
- 
+
    print(configmap)
 ```
 

@@ -289,7 +289,7 @@ DRA Driver for NVIDIA GPUs аддоны тек GPU бар worker-торапта�
 
 {tab(Сипаттама)}
 
-[External Secrets Operator](https://external-secrets.io/latest/) бұлтты қоймаларда кластерден тыс сақталатын Kubernetes [құпияларын](https://kubernetes.io/docs/concepts/configuration/secret) қауіпсіз басқаруға мүмкіндік береді (мысалы, [VK Cloud құпия менеджері](/ru/security/secret-manager/concepts/about#sm-about "change-lang"), AWS Secrets Manager, Azure Key Vault және т.б.
+[External Secrets Operator](https://external-secrets.io/latest/) бұлтты қоймаларда кластерден тыс сақталатын Kubernetes [құпияларын](https://kubernetes.io/docs/concepts/configuration/secret) қауіпсіз басқаруға мүмкіндік береді (мысалы, [VK Cloud құпия менеджері](/kz/security/secret-manager/concepts/about#sm-about "change-lang"), AWS Secrets Manager, Azure Key Vault және т.б.
 
 Қосымша бөлімде VK Cloud құпия менеджерімен қалай пайдалану керектігі туралы толығырақ {linkto(../../../how-to-guides/external-secrets-operator#mk8s-external-secrets-operator)[text=%text]}.
 
@@ -750,3 +750,5 @@ VPA үш компоненттен тұрады:
 {/tabs}
 
 {/includetag}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}

@@ -1,14 +1,17 @@
 {
   "title": "Жылдам бастау",
-  "shortDescription": "Terraform-пен жұмысты бастау",
-  "metaDescription": "VK Cloud платформасын басқару үшін Terraform-провайдерді қалай пайдалану керек. Terraform-пен жұмысты бастау: орнату, инициализациялау, Terraform-ды жаңарту",
+  "shortDescription": "Terraform-мен жұмысты бастау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін қалай пайдалану. Terraform-мен жұмысты бастау: орнату, инициализациялау, Terraform-ты жаңарту",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
   "weight": 0,
+  "additionalUuids": [
+    "9e9a50c6-5e61-4071-a20d-617f5fefb33b"
+  ],
+  "uuid": "5464e06e-5062-43bf-bb20-f3de8b6a1a5d",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "9430933e-0ecc-4ec4-a7d1-7f476ecb3f2b"
+  }
 }

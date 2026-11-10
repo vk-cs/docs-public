@@ -1,10 +1,11 @@
 {
   "title": "Terraform анықтамалығы",
-  "shortDescription": "Terraform-дың негізгі командалары және манифест мысалдары",
-  "metaDescription": "Terraform-дың негізгі командалары және манифест мысалдары",
+  "shortDescription": "Terraform-ның негізгі командалары және манифесттер мысалдары",
+  "metaDescription": "Terraform-ның негізгі командалары және манифесттер мысалдары",
   "sectionTitle": "Terraform анықтамалығы",
   "icon": "",
-  "weight": 4,
+  "weight": 5,
+  "uuid": "7765e74c-eb74-45cb-a87d-ee2c47617abc",
   "build": {
     "for": [
       "public",
@@ -14,6 +15,5 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  },
-  "uuid": "78eb482b-1947-4dcb-a80b-ece9d13e74c6"
+  }
 }

@@ -1,50 +1,50 @@
-# {heading(ivkcs_agent_script_result деректер көзі)[id=ivkcs_agent_script_result]}
+# {heading(ivkcs_agent_script_result дереккөзі)[id=ivkcs_agent_script_result]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-`ivkcs_agent_script_result` деректер көзінің аргументтері {linkto(#tab_source_args)[text=%number кестеде]} келтірілген.
+`ivkcs_agent_script_result` дереккөзінің аргументтері {linkto(#tab_source_args)[text=%number кестеде]} келтірілген.
 
-{caption({counter(table)[id=numb_tab_source_args]} кесте — ivkcs_agent_script_result деректер көзінің аргументтері)[align=right;position=above;id=tab_source_args;number={const(numb_tab_source_args)}]}
+{caption(Кесте {counter(table)[id=numb_tab_source_args]} — ivkcs_agent_script_result дереккөзінің аргументтері)[align=right;position=above;id=tab_source_args;number={const(numb_tab_source_args)}]}
 [cols="2,5,2,2", options="header"]
 |===
 |Атауы
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Міндетті
 
 |
 `uuid`
 |
-Сервисті өрістету идентификаторы
+Сервисті орналастыру идентификаторы
 |string
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `host`
 |
-Скрипт орындалған хост атауы. `ivkcs_agent_exec` ресурсының `hosts` аргументінде көрсетілген атауға сәйкес келеді
+Скрипт орындалған хосттың атауы. `ivkcs_agent_exec` ресурсының `hosts` аргументінде көрсетілген атауға сәйкес келеді
 |string
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `group`
 |
 Скрипттер тобының атауы. `ivkcs_agent_exec` ресурсының `name` аргументінің мәніне сәйкес келеді
 |string
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `index`
 |
 Скрипт индексі. `ivkcs_agent_exec` ресурсының `step.index` аргументінің мәніне сәйкес келеді
 |integer
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
-`ivkcs_agent_script_result` деректер көзі {linkto(#tab_source_args1)[text=%number кестеде]} келтірілген атрибуттарды қайтарады.
+`ivkcs_agent_script_result` дереккөзі {linkto(#tab_source_args1)[text=%number кестеде]} келтірілген атрибуттарды қайтарады.
 
-{caption({counter(table)[id=numb_tab_source_args1]} кесте — ivkcs_agent_script_result деректер көзінің атрибуттары)[align=right;position=above;id=tab_source_args1;number={const(numb_tab_source_args1)}]}
+{caption(Кесте {counter(table)[id=numb_tab_source_args1]} — ivkcs_agent_script_result дереккөзінің атрибуттары)[align=right;position=above;id=tab_source_args1;number={const(numb_tab_source_args1)}]}
 [cols="2,5", options="header"]
 |===
 |Атауы
@@ -56,11 +56,11 @@
 
 |
 `structured_result`
-|Скрипттің орындалуының пішімделген нәтижесі
+|Скрипттің орындалу нәтижесінің форматталған түрі
 |===
 {/caption}
 
-{caption(`ivkcs_agent_script_result` деректер көзінің мысалы)[align=left;position=above]}
+{caption(`ivkcs_agent_script_result` дереккөзінің мысалы)[align=left;position=above]}
 ```hcl
 data "ivkcs_agent_script_result" "step_1_result" {
   uuid  = var.instance_uuid

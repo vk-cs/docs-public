@@ -1,6 +1,6 @@
 # {heading(ВМ-ге желіні қосу)[id=iaas-vm-add-net]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Виртуалды машинаны желіге порт арқылы қосуға болады. Порт — ВМ-нің виртуалды желілік картасы, ол үшін келесі мәндер бапталады:
 
@@ -45,36 +45,36 @@
 
 OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобаға [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
 
-### {heading(Бар портқа қосылу)[id=iaas-vm-net-connect]}
+### {heading(Бар портқа қосу)[id=iaas-vm-add-net-connect-port]}
 
-1. Желіге қосу жоспарланған виртуалды машинаның идентификаторын алыңыз:
+1. Желіге қосылуда жоспарланған ВМ идентификаторын алыңыз:
 
    ```console
    openstack server list
    ```
 
-1. Желілердің және олардың құрамындағы ішкі желілердің тізімін алыңыз:
+1. Желілер мен оларға кіретін подсеттер тізімін алыңыз:
 
    ```console
    openstack network list
    ```
 
-1. Қажетті желідегі қолжетімді порттардың тізімін алыңыз:
+1. Қажетті желідегі қолжетімді порттар тізімін алыңыз:
 
    ```console
-   openstack port list --network <ИМЯ_ИЛИ_ID_СЕТИ>
+   openstack port list --network <ЖЕЛІ_АТЫ_НЕМЕСЕ_ID>
    ```
 
-1. Таңдалған портты ВМ-ге қосыңыз:
+1. Таңдалған портты ВМ-ға қосыңыз:
 
    ```console
-   openstack server add port <ID_ВМ> <ID_ПОРТА>
+   openstack server add port <ВМ_ID> <ПОРТ_ID>
    ```
 
-1. Порттың ВМ-ге сәтті қосылғанына көз жеткізіңіз:
+1. Порттың ВМ-ға сәтті қосылғанын тексеріңіз:
 
    ```console
-   openstack port list --server <ID_ВМ>
+   openstack port list --server <ВМ_ID>
    ```
 
 ### {heading(Жаңа порт құру)[id=iaas-vm-net-create-port]}

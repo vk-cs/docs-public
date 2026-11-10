@@ -1,14 +1,14 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "{var(cloud)} жеке кабинет сервисін пайдалану сценарийлері",
-  "metaDescription": "VK Cloud жеке кабинет сервисін пайдалану сценарийлері",
+  "shortDescription": "{var(cloud)} жеке кабинетінің қызметін пайдалану сценарийлері",
+  "metaDescription": "VK Cloud жеке кабинетінің қызметін пайдалану сценарийлері",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
   "weight": 3,
+  "uuid": "1bfc458b-282a-4efb-a87a-65256f6308a9",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "eb3a8601-8db9-478d-839c-fb7b2580b7c7"
+  }
 }

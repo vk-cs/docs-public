@@ -1,15 +1,15 @@
-# {heading(Бакет жасау)[id=s3-instructions-create-bucket]}
+# {heading(Бакет құру)[id=s3-instructions-create-bucket]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Қоймаға объектілерді жүктеу үшін, оларды орналастыруға арналған {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакет]} алдын ала жасалуы керек.
+Объекттерді сақтау орнына жүктеу үшін алдымен оларды орналастыруға арналған {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакет]} құру қажет.
 
-Бакетті жасайтын пайдаланушының есептік жазбасы бакетке және объектілерге толық қол жеткізу құқықтарын алады. Бакетке объектілердің кез келген саны жүктелуі мүмкін.
+Бакетті құратын пайдаланушының тіркелгісі бакетке және объектілерге толық қолжетімділік алады. Бакетке кез келген санддағы объектілерді жүктеуге болады.
 
 {ifdef(public)}
 
 {note:warn}
-Бакет жасау [тарифтелмейді](../../../tariffication). Қаражат объектілерді сақтау және жүктеп алу үшін есептен шығарылады.
+Бакет құру [тарифтенбейді](../../../tariffication). Объекттерді сақтау және жүктеп алу үшін қаражат алынады.
 {/note}
 
 {/ifdef}
@@ -20,48 +20,48 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
 
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
 
-1. IAM Only жеке кабинетіне {linkto(../../iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+1. IAM Only жеке кабинетіне {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
 
 {/ifdef}
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
-1. **Жасау** түймесін басыңыз.
+1. **Құру** түймесін басыңыз.
 1. **Конфигурация** блогында:
 
     1. {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес келетін бакет атауын енгізіңіз.
 
-        Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
+        Бакет құрылғаннан кейін оның атауын өзгерту мүмкін болмайды.
 
-    1. {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класын]} таңдаңыз. Бакет жасалғаннан кейін оны {linkto(../../change-storage-class#s3-instructions-change-storage-class)[text=өзгерте]} аласыз.
+    1. {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау сыныбын]} таңдаңыз. Бакет құрылғаннан кейін оны {linkto(../../change-storage-class#s3-instructions-change-storage-class)[text=өзгертуге]} болады.
 
-1. **Нұсқалау және бұғаттау** блогында:
+1. **Версионирование и блокировка** блогында:
 
-    1. (Қосымша) Әр объектінің бірнеше {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқасын]} сақтау үшін **Объектілерді нұсқалау** опциясын қосыңыз. Кейін нұсқалауды өшіру мүмкін емес — тек уақытша тоқтатуға болады.
-    1. (Қосымша) {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=объектілерді жоюдан және қайта жазудан қорғау]} үшін **Объектілерді бұғаттау** опциясын қосыңыз. Кейін объектілерді бұғаттауды өшіру мүмкін емес, бірақ конфигурацияны {linkto(../../../instructions/objects/object-lock#s3-instructions-object-lock)[text=өзгертуге]} болады.
+    1. (Қалауыңыз бойынша) Әр объектінің бірнеше {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқасын]} сақтау үшін **Версионирование объектов** опциясын қосыңыз. Версиялауды кейін өшіру мүмкін емес, тек тоқтатуға болады.
+    1. (Қалауыңыз бойынша) Объекттерді {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=жоюдан және қайта жазудан қорғау]} үшін **Блокировка объектов** опциясын қосыңыз. Объекттерді блоктауды кейін өшіру мүмкін емес, бірақ конфигурацияны {linkto(../../../instructions/objects/object-lock#s3-instructions-object-lock)[text=өзгертуге]} болады.
 
         {note:info}
 
-        {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=объектілерді бұғаттау]} қосылған кезде бакетте {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=объектілерді нұсқалау]} автоматты түрде қосылады.
+        {linkto(../../../concepts/objects-lock#s3-concepts-object-lock)[text=Объекттерді блоктау]} қосылған кезде бакетте {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=объекттерді версиялау]} автоматты түрде қосылады.
 
         {/note}
 
-    1. (Қосымша) **Әдепкі бойынша объектілерді бұғаттау** опциясын қосып, қажетті параметрлерді баптаңыз:
+    1. (Қалауыңыз бойынша) **Блокировать объекты по умолчанию** опциясын қосыңыз және қажетті параметрлерді теңшеңіз:
 
         - **Қорғау режимі**:
 
-            - `Governance`: оны айналып өту мүмкіндігі бар {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=басқарылатын бұғаттау режимі]}.
-            - `Compliance`: белгіленген мерзім аяқталғанға дейін оны алып тастау мүмкіндігі жоқ {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң бұғаттау режимі]}.
+            - `Governance`: оны айналып өту мүмкіндігі бар {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-governance)[text=басқарылатын блоктау режимі]}.
+            - `Compliance`: белгіленген мерзім бітпей оны алып тастау мүмкіндігі жоқ {linkto(../../../concepts/objects-lock#s3-concepts-object-lock-compliance)[text=қатаң блоктау режимі]}.
 
-        - **Сақтау мерзімі, күн**: бұғаттау әрекет ететін күндер саны.
+        - **Сақтау мерзімі, күн**: блоктау әрекет ететін күндер саны.
 
-    1. Егер бұған дейін **Объектілерді бұғаттау** опциясы қосылған болса, бұғаттауды қосуды растаңыз.
+    1. Егер бұрын **Блокировка объектов** опциясы қосылған болса, блоктауды қосуды растаңыз.
 
-1. **Бакет жасау** түймесін басыңыз.
+1. **Создать бакет** түймесін басыңыз.
 
 {/tab}
 
@@ -70,14 +70,14 @@
 {tab(Файл менеджері)}
 
 {note:warn}
-Мұнда және әрі қарай біз «CloudBerry Explorer for Amazon S3» файл менеджерін қолданамыз. Егер сіз басқа файл менеджерін қолдансаңыз, интерфейс және оның элементтерінің атаулары осы нұсқаулықта қолданылғандардан өзгеше болуы мүмкін.
+Осы жерде және әрі қарай біз «CloudBerry Explorer for Amazon S3» файл менеджерін қолданамыз. Егер сіз басқа файл менеджерін қолдансаңыз, оның интерфейсі және элементтерінің атаулары осы нұсқаулықта қолданылғандардан өзгеше болуы мүмкін.
 {/note}
 
-Жаңа бакет жасау үшін келесі әрекеттерді орындаңыз:
+Жаңа бакет құру үшін мына әрекеттерді орындаңыз:
 
-1. Жобаңыз ашылған файл менеджері панелінде **New Bucket** түймесін басыңыз.
+1. Сіздің жобаңыз ашылған файл менеджері панелінде **New Bucket** түймесін басыңыз.
 1. Содан кейін жаңа бакеттің атауын (мысалы, `new-bkt-1`) көрсетіп, **Ок** түймесін басыңыз.
-1. Жасалған бакет жобаңыздың панелінде көрсетіледі.
+1. Құрылған бакет сіздің жобаңыздың панелінде көрсетіледі.
 
 {/tab}
 
@@ -85,7 +85,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
+1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатыңыз және теңшеңіз.
 1. Консольді ашып, команданы орындаңыз:
 
     ```console
@@ -97,22 +97,22 @@
 
     Мұнда:
 
-    - `<ИМЯ_БАКЕТА>` — {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес бакет атауы.
+    - `<ИМЯ_БАКЕТА>` — {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес келетін бакет атауы.
 
-        Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
+        Бакет құрылғаннан кейін оның атауын өзгерту мүмкін болмайды.
 
     {ifdef(public)}
-    - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, аккаунттың {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
+    - `<ENDPOINT_URL>` — VK Object Storage сервисінің домені, тіркелгінің {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} сәйкес болуы тиіс:
 
-        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
+        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
     {/ifdef}
     {ifdef(s3,s3-pdf)}
-    - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік аты бар сілтеме.
+    - `<ENDPOINT_URL>` — сервис орнатылған кезде көрсетілген домендік атауы бар сілтеме.
     {/ifdef}
-    - `<КОД_РЕГИОНА>` — аккаунт өңірінің коды, мысалы `ru-msk`{ifdef(public)} Мәскеу өңірі үшін. Қолжетімді мәндер {linkto(/kz/tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=VK Object Storage сервисінің API сипаттамасында]} берілген{/ifdef}.
+    - `<КОД_РЕГИОНА>` — тіркелгінің аймақ коды, мысалы `ru-msk`{ifdef(public)} Мәскеу аймағы үшін. Қолжетімді мәндер {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text=VK Object Storage сервисінің API сипаттамасында]} келтірілген{/ifdef}.
 
-    Бакет жасау командасының мысалы:
+    Бакет құру командасының мысалы:
 
     ```console
     aws s3api create-bucket \
@@ -121,7 +121,7 @@
         --region ru-msk
     ```
 
-    Жауап мысалы:
+    Жауаптың мысалы:
 
     ```json
     {
@@ -133,8 +133,8 @@
 
 {tab(Golang SDK)}
 
-1. Егер Go үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
-1. Жобаңызға кодты қосыңыз:
+1. Егер әлі орнатылмаған болса, Go үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} орнатыңыз және теңшеңіз.
+1. Өз жобаңызға кодты қосыңыз:
 
     ```go
     package main
@@ -171,68 +171,68 @@
     }
     ```
 
-    Бұл код мысалында `Hotbox` {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класымен]} бакет жасалады.
+    Осы код мысалында `Hotbox` {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау сыныбы]} бар бакет құрылады.
 
     Мұнда:
 
     - `<ИМЯ_БАКЕТА>` — {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес келетін бакет атауы.
 
-        Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.     
+        Бакет құрылғаннан кейін оның атауын өзгерту мүмкін болмайды.     
 
     {ifdef(public)}
-    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, тіркелгінің {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} сәйкес болуы тиіс:
 
-        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
+        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
     {/ifdef}
     {ifdef(s3,s3-pdf)}
-    - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+    - `<ENDPOINT_URL>` — сіздің {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге хабарласыңыз.
     {/ifdef}
-    - `<КОД_РЕГИОНА>` — аккаунт өңірінің коды, мысалы `ru-msk`{ifdef(public)} Мәскеу өңірі үшін. Қолжетімді мәндер {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text={var(s3)} сервисінің API сипаттамасында]} келтірілген{/ifdef}.
+    - `<КОД_РЕГИОНА>` — тіркелгінің аймақ коды, мысалы `ru-msk`{ifdef(public)} Мәскеу аймағы үшін. Қолжетімді мәндер {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text={var(s3)} сервисінің API сипаттамасында]} келтірілген{/ifdef}.
 
-    `CreateBucket` командасы [aws-sdk-go кітапханасының ресми құжаттамасында](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CreateBucket) егжей-тегжейлі сипатталған.
+    `CreateBucket` командасы [aws-sdk-go кітапханасының ресми құжаттамасында](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.CreateBucket) толық сипатталған.
 
 {/tab}
 
 {tab(Python SDK)}
 
-1. Егер Python үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} әлі орнатылмаған болса, оны орнатып, баптаңыз.
-1. Жобаңызға кодты қосыңыз:
+1. Егер әлі орнатылмаған болса, Python үшін {linkto(../../../connect/s3-sdk#s3-connect-sdk)[text=SDK]} орнатыңыз және теңшеңіз.
+1. Өз жобаңызға кодты қосыңыз:
 
     ```python
     import boto3
     session = boto3.session.Session()
     s3_client = session.client(
-        service_name='s3',
-        endpoint_url='<ENDPOINT_URL>',
+        service_name='s3',
+        endpoint_url='<ENDPOINT_URL>',
         region_name="<КОД_РЕГИОНА>"
     )
 
     test_bucket_name = '<ИМЯ_БАКЕТА>'
-    # Создание бакета
+    # Бакет құру
     s3_client.create_bucket(Bucket=test_bucket_name)
     ```
 
-    Бұл код мысалында `Hotbox` {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау класымен]} бакет жасалады.
+    Осы код мысалында `Hotbox` {linkto(../../../concepts/about#s3-concepts-about-storage-class)[text=сақтау сыныбы]} бар бакет құрылады.
 
     Мұнда:
 
     - `<ИМЯ_БАКЕТА>` — {linkto(../../../concepts/about#s3-concepts-about-bucket-naming)[text=ұсынылатын ережелерге]} сәйкес келетін бакет атауы.
 
-        Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.     
+        Бакет құрылғаннан кейін оның атауын өзгерту мүмкін болмайды.     
 
     {ifdef(public)}
-    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі керек:
+    - `<ENDPOINT_URL>` — {var(s3)} сервисінің домені, тіркелгінің {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} сәйкес болуы тиіс:
 
-        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+        - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
+        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
     {/ifdef}
     {ifdef(s3,s3-pdf)}
-    - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік аты бар сілтеме. Атаудың форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+    - `<ENDPOINT_URL>` — сіздің {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге хабарласыңыз.
     {/ifdef}
-    - `<КОД_РЕГИОНА>` — аккаунт өңірінің коды, мысалы `ru-msk`{ifdef(public)} Мәскеу өңірі үшін. Қолжетімді мәндер {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text={var(s3)} сервисінің API сипаттамасында]} келтірілген{/ifdef}.
+    - `<КОД_РЕГИОНА>` — тіркелгінің аймақ коды, мысалы `ru-msk`{ifdef(public)} Мәскеу аймағы үшін. Қолжетімді мәндер {linkto(../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro#api-spec-s3-intro-auth)[text={var(s3)} сервисінің API сипаттамасында]} келтірілген{/ifdef}.
 
-    `create_bucket` командасы [boto3 кітапханасының ресми құжаттамасында](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket) егжей-тегжейлі сипатталған.
+    `create_bucket` командасы [boto3 кітапханасының ресми құжаттамасында](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket) толық сипатталған.
 
 {/tab}
 

@@ -1,0 +1,16 @@
+{
+  "title": "«VK Cloud» платформасының құпиялық саясаты",
+  "shortDescription": "",
+  "metaDescription": "1. Осы құпиялық саясатының (әрі қарай – «Саясат») реттеу нысанасы «Цифровое облако» жауапкершілігі шектеулі қоғамы мен",
+  "sectionTitle": "«VK Cloud» платформасының құпиялық саясаты",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "0aa35edf-60e3-460f-8fe9-bf0be7332b05",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,8 +1,8 @@
-# {heading(Объектілік қоймаға жүгінген кезде SignatureDoesNotMatch қатесі)[id=s3-signature-does-not-match]}
+# {heading(Объекттік қоймадағы SignatureDoesNotMatch қатесі)[id=s3-signature-does-not-match]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-API арқылы немесе AWS CLI көмегімен объектілік қоймаға жүгінген кезде келесі қате қайтарылады:
+Объекттік қоймаға API арқылы немесе AWS CLI көмегімен қол жеткізген кезде келесі қате қайтарылады:
 
 ```console
 An error occurred (SignatureDoesNotMatch) when calling the... 
@@ -10,23 +10,23 @@ operation: The request signature we calculated does not match the signature you 
 Check your key and signing method`.
 ```
 
-Бұл қате сұраудың қолтаңбасы (signature) сервер күткен қолтаңбамен сәйкес келмейтінін білдіреді. Себебі әдетте клиенттік орта конфигурациясына байланысты болады.
+Бұл қате сұраныстың қолтаңбасы (signature) сервер күтетін қолтаңбаға сәйкес келмейтінін көрсетеді. Себебі әдетте клиенттік ортаның конфигурациясымен байланысты.
 
-### {heading(Шешімі)[id=s3-signature-does-not-match-resolve]}
+### {heading(Шешу)[id=s3-signature-does-not-match-resolve]}
 
-1. Команданың `--endpoint-url` параметрінде сервис домені дұрыс көрсетілгеніне көз жеткізіңіз{ifdef(public)} және {var(s3)} аккаунтының {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келетініне көз жеткізіңіз:
+1. Команданың `--endpoint-url` параметрінде сервис домені дұрыс көрсетілгенін{ifdef(public)} және аккаунттың {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймағына]} {var(s3)} сәйкес келетінін тексеріңіз:
 
-   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
-   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені{/ifdef}.
+   - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
+   - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені{/ifdef}.
 
-1. `~/.aws/credentials` конфигурация файлында **Access Key ID** және **Secret Access Key** мәндері қате жазылусыз, артық бос орындарсыз немесе басқа таңбаларсыз берілгеніне көз жеткізіңіз. Сондай-ақ орта айнымалылары (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) конфигурация файлындағы мәндерді қайта анықтап тұрмағанын тексеріңіз.
-   
-   Қол жеткізу кілттеріндегі қатені жоққа шығару үшін {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text={var(s3)} аккаунтыңыз]} үшін жаңа **Access Key ID** және **Secret Access Key** жұбын жасаңыз.
+1. **Access Key ID** және **Secret Access Key** мәндері `~/.aws/credentials` конфигурациялық файлында қате жазу, артық бос орындар немесе басқа таңбалар болмай енгізілгенін тексеріңіз. Сондай-ақ, орта айнымалылары (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) конфигурациялық файлдағы мәндерді қайта анықтамайтынын тексеріңіз.
 
-1. Жүйелік уақыт дәл уақыт серверімен (NTP) синхрондалғанына көз жеткізіңіз.
+   Рұқсат кілттеріндегі қатені болдырмау үшін {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунтыңызға]} {var(s3)} жаңа **Access Key ID** және **Secret Access Key** жұбын жасаңыз.
+
+1. Жүйелік уақыт дәл уақыт серверімен (NTP) синхрондалғанын тексеріңіз.
 
    {note:info}
-   Егер жүйелік уақыт сервер уақытынан 15 минуттан артық айырмашылықта болса, қолтаңба жарамсыз болып есептеледі.
+   Жүйелік уақыт серверлік уақыттан 15 минуттан астам өзгеше болса, қолтаңба жарамсыз болып есептеледі.
    {/note}
 
    Уақытты мәжбүрлеп синхрондау үшін команданы орындаңыз:
@@ -51,10 +51,10 @@ Check your key and signing method`.
 
    {/tabs}
 
-1. Сұраудың қалыптасуы туралы толық ақпарат алу және қатенің себебін анықтау үшін AWS CLI командасына `--debug` жалаушасын қосыңыз.
+1. Сұраныстың қалыптасуы туралы толық ақпарат алу және қатенің себебін анықтау үшін AWS CLI командасына `--debug` жалаушасын қосыңыз.
 
 {ifdef(public)}
 
-1. Егер мәселе сақталса, [техникалық қолдауға](/kz/contacts) жүгініңіз.
+1. Егер проблема сақталса, [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініңіз.
 
 {/ifdef}

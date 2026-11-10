@@ -1,23 +1,14 @@
 {
-  "title": "Milvus өрістету",
-  "shortDescription": "Құрылымдалмаған деректерді жылдам іздеу және талдау үшін Milvus өрістету",
-  "metaDescription": "Marketplace VK Cloud: құрылымдалмаған деректерді жылдам іздеу және талдау міндеттері үшін Milvus сервисін өрістету қадамдары",
-  "sectionTitle": "Milvus өрістету",
+  "title": "Milvus орнату",
+  "shortDescription": "Құрылымдалмаған деректерді жылдам іздеу және талдау үшін Milvus орнату",
+  "metaDescription": "Marketplace VK Cloud: құрылымдалмаған деректерді жылдам іздеу және талдау міндеттері үшін Milvus қызметін орнату қадамдары",
+  "sectionTitle": "Milvus орнату",
   "icon": "",
-  "weight": 13,
+  "weight": 11,
+  "uuid": "9478781f-896c-4b5e-ad73-844a4d5af1aa",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "96793b1a-5ef5-44a7-bc5a-3ce893b8d6a4"
+  }
 }

@@ -1,16 +1,14 @@
 {
   "title": "Желілерді жасау",
   "shortDescription": "",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. Желілерді жасау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Networks сервисінің объектілерін басқару үшін Terraform-ты қалай пайдалану керек. Желілерді жасау",
   "sectionTitle": "Желілерді жасау",
   "icon": "",
   "weight": 1,
+  "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "e21a9195-b9ba-4dd1-bd05-0704425f53e8"
+  }
 }

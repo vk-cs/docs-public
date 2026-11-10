@@ -1,7 +1,7 @@
 # {heading(Жобалармен жұмыс)[id=tools-account-project-settings]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
-{var(cloud)} жүйесіндегі жобаларды басқару операциялары.
+{var(cloud)} жүйесінде жобаларды басқару операциялары.
 {/ifdef}

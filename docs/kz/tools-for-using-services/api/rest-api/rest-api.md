@@ -1,5 +1,5 @@
-# {heading(API арқылы қосылу)[id=tools-rest-api]}
+# {heading(API арқылы қосу)[id=tools-rest-api]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(cloud)} API-мен өзара әрекеттесу эндпоинттер арқылы орындалады. Кейбір жағдайларда аутентификация үшін токен қажет болады.
+{include(../../../_includes/_prerequisites-api.md)[tags=api-intro]}

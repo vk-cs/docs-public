@@ -1,23 +1,17 @@
 {
-  "title": "Хайстекс көмегімен көші-қон",
-  "shortDescription": "Хайстекс Акура — миграция көмегімен клиент инфрақұрылымын VK Cloud мақсатты жобасына көшіру қадамдары",
-  "metaDescription": "Клиент инфрақұрылымын Хайстекс Акура көмегімен VK Cloud мақсатты жобасына көшіру қадамдары",
-  "sectionTitle": "Хайстекс көмегімен көші-қон",
+  "title": "Хайстекс арқылы көшіру",
+  "shortDescription": "{var(cloud)} мақсатты жобасына клиент инфрақұрылымын Хайстекс Акура — көшіру құралы арқылы тасымалдау қадамдары",
+  "metaDescription": "Хайстекс Акура құралын пайдалана отырып, клиент инфрақұрылымын VK Cloud мақсатты жобасына тасымалдау қадамдары",
+  "sectionTitle": "Хайстекс арқылы көшіру",
   "icon": "",
-  "weight": 2,
+  "weight": 27,
+  "uuid": "ea85eeef-cf87-4638-94ee-ccf00cb1f3ac",
+  "additionalUuids": [
+    "db7f6c29-c80c-4955-a4ce-b7f31d80f25c"
+  ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "67d3083d-9077-4d03-a612-902dffd90381"
+  }
 }

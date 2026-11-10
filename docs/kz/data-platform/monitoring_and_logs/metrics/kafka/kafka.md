@@ -1,18 +1,18 @@
 # {heading(Cloud Kafka)[id=kafka_metrics]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-Cloud Kafka сервисінде Prometheus форматындағы метрикалардың келесі түрлері жиналады:
+Cloud Kafka сервісінде Prometheus форматында келесі метрика түрлері жиналады:
 
 - Kafka брокері мен координаторының метрикалары;
 - JVM метрикалары;
-- Kubernetes подының метрикалары.
+- Kubernetes-под метрикалары.
 
-Әрбір метрика үшін дашбордта көрсетуге болатын панель автоматты түрде жасалады.
+Әрбір метрика үшін автоматты түрде дашбордта көрсетуге болатын панель жасалады.
 
 ## {heading(Kafka брокері мен координаторының метрикалары)[id=kafka_metrics_product]}
 

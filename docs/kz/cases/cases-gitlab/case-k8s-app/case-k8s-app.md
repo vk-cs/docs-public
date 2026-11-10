@@ -51,20 +51,20 @@
 
    ```yaml
    image: docker:latest
-   
+
    stages:
      - builds
      - test
      - release
-   
+
    variables:
      REGISTRY_URL: https://$DOCKER_REGISTRY:8443
      IMAGE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:$CI_COMMIT_REF_NAME
      RELEASE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:latest
-   
+
    before_script:
       - docker login $REGISTRY_URL -u $DOCKER_USER -p $DOCKER_PASSWORD
-   
+
    build:
      stage: builds
      tags:
@@ -72,7 +72,7 @@
      script:
       - cd app && docker build --pull -t $IMAGE .
       - docker push $IMAGE
-   
+
    release:
      stage: release
      tags:
@@ -401,21 +401,21 @@ GitLab әдепкі бойынша Kubernetes кластерімен интег�
 
    ```yaml
    image: docker:latest
-   
+
    stages:
    - build
    - test
    - release
    - deploy
-   
+
    variables:
    REGISTRY_URL: https://$DOCKER_REGISTRY:8443
    IMAGE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:$CI_COMMIT_REF_NAME
    RELEASE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:latest
-   
+
    before_script:
    - docker login $REGISTRY_URL -u $DOCKER_USER -p $DOCKER_PASSWORD
-   
+
    build:
    stage: build
    tags:
@@ -423,7 +423,7 @@ GitLab әдепкі бойынша Kubernetes кластерімен интег�
    script:
    - cd app && docker build --pull -t $IMAGE .
    - docker push $IMAGE
-   
+
    release:
    stage: release
    tags:
@@ -434,7 +434,7 @@ GitLab әдепкі бойынша Kubernetes кластерімен интег�
    - docker push $RELEASE
    only:
    - master
-   
+
    deploy:
    stage: deploy
    before_script:

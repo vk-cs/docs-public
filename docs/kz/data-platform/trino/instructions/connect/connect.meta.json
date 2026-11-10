@@ -1,0 +1,15 @@
+{
+  "title": "Сервис данысына қосылу",
+  "shortDescription": "TLS арқылы сервис данасына қалай қосылу",
+  "metaDescription": "VK Data Platform жүйесінде веб-интерфейс немесе клиент арқылы орналастырылған Cloud Trino сервис данасына TLS арқылы қалай қосылу туралы біліңіз",
+  "sectionTitle": "Сервис данысына қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": "fb0b162f-d972-478e-8637-2c9c75256261"
+}

@@ -1,10 +1,11 @@
 {
-  "title": "Terraform-дың негізгі командалары",
+  "title": "Terraform-ның негізгі командалары",
   "shortDescription": "",
-  "metaDescription": "VK Cloud платформасын басқару үшін Terraform-провайдерді қалай пайдалану керек. Terraform-дың негізгі қолданылатын командаларының тізімі",
-  "sectionTitle": "Terraform-дың негізгі командалары",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін қалай пайдалану керек. Terraform-ның негізгі қолданылатын командаларының тізімі",
+  "sectionTitle": "Terraform-ның негізгі командалары",
   "icon": "",
   "weight": 0,
+  "uuid": "5f0b50ea-e485-490b-b91b-c4999df39167",
   "build": {
     "for": [
       "public",
@@ -14,6 +15,5 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  },
-  "uuid": "4af932e8-fd88-4edf-a381-1bfb1a074ebd"
+  }
 }

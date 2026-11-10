@@ -1,14 +1,19 @@
 {
   "title": "API",
-  "shortDescription": "API арқылы {var(cloud)} сервистерін басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
-  "metaDescription": "VK Cloud сервистерін API арқылы басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
+  "shortDescription": "{var(cloud)} қызметтерін API арқылы басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
+  "metaDescription": "VK Cloud қызметтерін API арқылы басқару. Қосылу ерекшеліктері және эндпоинттердің сипаттамасы",
   "sectionTitle": "API",
   "icon": "",
   "weight": 6,
+  "uuid": "35bf307f-d896-4c37-9267-8fc7d90c3587",
   "build": {
     "for": [
-      "public"
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "5fb1fa45-e953-42e1-9b19-9ce9295e0537"
+  }
 }

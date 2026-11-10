@@ -1,9 +1,9 @@
-# {heading(Логтау)[id=logs-standalone]}
+# {heading(Журналдау)[id=logs-standalone]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 {include(../../_includes/_logs.md)[tags=logs_info]}

@@ -1,0 +1,14 @@
+{
+  "title": "Сервис данысмын жасау",
+  "shortDescription": "",
+  "metaDescription": "Lakekeeper VK Data Platform данысмын жасаудың қадамдық нұсқаулығы: сервис конфигурациясы мен нұсқасын таңдау, параметрлерді баптау және қызмет көрсету",
+  "sectionTitle": "Сервис данысмын жасау",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "538e145f-ab09-445b-81b6-835ccfdf12d7"
+}

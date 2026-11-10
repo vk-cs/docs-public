@@ -1,16 +1,7 @@
-# {heading(Жеке кабинетте кластерді құру)[id=mk8s-create-webui-gen-2]}
-
-{include(/kz/_includes/_translated_by_ai.md)}
-
-Кластерлер үшін {linkto(../../../../../monitoring-services/monitoring#monitoring)[text=VK Cloud мониторинг]} сервисімен интеграция қосылған, оны өшіру мүмкін емес.
-
-{note:warn}
-
-Кластерді құру кезінде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгергіші]} құрылады. Теңгергішті пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
-
-{/note}
 
 ## {heading(Кластерді құру алдында)[id=mk8s-create-webui-gen-2-prepare]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 1. Кластерді құру жоспарланып отырған {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймақ]} үшін қолжетімді ресурстармен және {linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-k8s)[text=квоталармен]} танысыңыз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталған болуы мүмкін.
 

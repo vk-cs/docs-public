@@ -1,15 +1,16 @@
 {
-  "title": "Қызметтермен жұмыс істеуге арналған құралдар",
-  "shortDescription": "OpenStack CLI, AWS CLI, REST API, Terraform көмегімен {var(cloud)} ресурстарын басқару",
-  "metaDescription": "Платформа ресурстарын негізгі басқару VK Cloud жеке кабинеті арқылы орындалады. Веб-интерфейстен бөлек, басқару OpenStack CLI, REST API, Terraform құралдарын пайдалану арқылы да жүзеге асырылуы мүмкін.",
-  "sectionTitle": "Қызметтермен жұмыс істеуге арналған құралдар",
+  "title": "Сервистермен жұмыс істеу құралдары",
+  "shortDescription": "{var(cloud)} ресурстарын OpenStack CLI, AWS CLI, REST API, Terraform көмегімен басқару",
+  "metaDescription": "Платформа ресурстарын негізгі басқару VK Cloud жеке кабинеті арқылы жүзеге асырылады. Веб-интерфейстен бөлек, басқаруды мына құралдар арқылы жүргізуге болады: OpenStack CLI, REST API, Terraform.",
+  "sectionTitle": "Сервистермен жұмыс істеу құралдары",
   "icon": "",
   "weight": 12,
   "relativeSections": [
     {
-      "partialPath": "/kz/tools-for-using-services/account/concepts/projects"
+      "partialPath": "/ru/tools-for-using-services/account/concepts/projects"
     }
   ],
+  "uuid": "f82f032c-2fad-4738-a896-dd06a80b4658",
   "build": {
     "for": [
       "public",
@@ -17,12 +18,7 @@
       "private-pg",
       "private-pdf",
       "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "private-cert"
     ]
-  },
-  "uuid": "b28fcdb5-b46b-4d95-bb06-81eb33c607fa"
+  }
 }

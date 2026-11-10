@@ -1,0 +1,16 @@
+{
+  "title": "ДБ инстанстарының конфигурациясының шаблоны",
+  "shortDescription": "",
+  "metaDescription": "ДБ инстанстарының конфигурациясының шаблоны",
+  "sectionTitle": "ДБ инстанстарының конфигурациясының шаблоны",
+  "weight": 9,
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  },
+  "uuid": "f114d42e-edd3-46c5-8ddc-5f988d34fa93"
+}
