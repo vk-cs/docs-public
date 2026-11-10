@@ -424,7 +424,7 @@ production-ортада жұмыс істегенде токендерді аш�
    # Получить ID одной из стандартных сетей в списке доступных
    networks = mlp.get_internal_networks()
    NETWORK_ID = networks[0].id
-   
+
    # Создать инстанс JupyterHub
    jh = mlp.create_jupyter_hub(
        instance_name="jh-test",
@@ -734,7 +734,7 @@ production-ортада жұмыс істегенде токендерді аш�
    # Получить ID одной из стандартных сетей в списке доступных
    networks = mlp.get_internal_networks()
    NETWORK_ID = networks[0].id
-   
+
    # Создать инстанс MLflow
    mlflow = mlp.create_mlflow(
        instance_name="mlflow-test",
@@ -964,7 +964,7 @@ production-ортада жұмыс істегенде токендерді аш�
    # Получить ID одной из стандартных сетей в списке доступных
    networks = mlp.get_internal_networks()
    NETWORK_ID = networks[0].id
-   
+
    # Создать инстанс MLflow Deploy
    mlflow_deploy = mlp.create_deploy(
        instance_name="mlflow-deploy-test",
@@ -1173,7 +1173,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    # Получить список всех инстансов Cloud ML Platform
    instances = mlp.get_all_instances_info()
-   
+
    # Получить и вывести на экран информацию о втором инстансе в списке
    INSTANCE_ID = instances[1].id
    instance_info = mlp.get_instance_info(instance_id=INSTANCE_ID)
@@ -1282,11 +1282,11 @@ production-ортада жұмыс істегенде токендерді аш�
    # Получить и вывести на экран список всех инстансов Cloud ML Platform
    instances = mlp.get_all_instances_info()
    print(instances)
-   
+
    # Удалить первый инстанс в списке
    INSTANCE_ID = instances[0].id
    mlp.delete_instance(instance_id=INSTANCE_ID)
-   
+
    # Получить и вывести на экран список инстансов еще раз для проверки
    instances = mlp.get_all_instances_info()
    print(instances)
@@ -1413,7 +1413,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
@@ -1530,7 +1530,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
@@ -1649,7 +1649,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
@@ -1769,13 +1769,13 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
 
    # Инстанс MLflow Deploy должен существовать и на нем должно быть доступно хотя бы одно развертывание
-   
+
    # Получить и вывести на экран список развертываний ML-моделей
    deployments = mlp.list_deployments(
        deploy_server_name="mlflow-deploy-test",
@@ -1792,7 +1792,7 @@ production-ортада жұмыс істегенде токендерді аш�
        username="admin", 
        password="Admin123@" 
    )
-   
+
    # Повторно получить и вывести на экран список развертываний
    deployments_after_deletion = mlp.list_deployments(
        deploy_server_name="mlflow-deploy-test",
@@ -1890,7 +1890,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
@@ -2004,7 +2004,7 @@ production-ортада жұмыс істегенде токендерді аш�
 
    ```python
    from mlplatform_client import MLPlatform
-  
+
    # Авторизоваться в библиотеке по токену доступа
    REFRESH_TOKEN = '<значение токена доступа>'
    mlp = MLPlatform(refresh_token=REFRESH_TOKEN)

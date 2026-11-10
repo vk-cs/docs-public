@@ -1,4 +1,6 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Spark кластерін құру)[id=terraform-spark-k8s]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Мақалада {var(cloud)} платформасында Terraform көмегімен Spark кластерін құру мысалы келтірілген.
 
@@ -12,27 +14,26 @@
 
 Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Кластерді құру алдында
+## {heading(Кластерді құрмас бұрын)[id=terraform-spark-k8s-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) кластерді құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын құруға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әр түрлі өңірлер үшін әр түрлі квоталар орнатылуы мүмкін.
 
-   Қажет болса, квоталарды [ұлғайтыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Бұл әлі жасалмаса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. Егер бұрын жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді теңшеңіз]}.
+1. `vkcs_provider.tf` файлында провайдердің нұсқасы 0.7.0 немесе одан жоғары көрсетілгеніне көз жеткізіңіз. Провайдердің нұсқасы төмен болса, оны {linkto(../../../quick-start#terraform-quick-start-update)[text=жаңартыңыз]}.
 
-1. `vkcs_provider.tf` файлында провайдердің 0.7.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
-
-## 1. Кластер сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-spark)}. Кластердің сипаттамасы бар файлды жасаңыз)[id=terraform-spark-k8s-cluster-file]}
 
 Төмендегі мысалда кластер келесі конфигурацияда құрылады:
 
-- әдепкі аймақ, қолжетімділік аймағы `ME1`;
-- worker-түйіндерінің ең аз саны — 2, worker-түйіндерінің ең көп саны — 100;
+- әдепкі өңір, `ME1` қолжетімділік аймағы;
+- worker-түйіндердің минималды саны — 2, worker-түйіндердің максималды саны — 100;
 - кластердің жұмыс режимі — `DEV`;
-- 120 минут әрекетсіздіктен кейін кластерді ұйқы режиміне көшіру;
-- 1440 минут әрекетсіздіктен кейін кластерді жою.
+- кластердің белсенділік жоқ кезеңнен 120 минут өткен соң ұйықтау режиміне өтуі;
+- кластердің белсенділік жоқ кезеңнен 1440 минут өткен соң жойылуы.
 
-Мазмұны келесі Terraform конфигурация файлын `main.tf` жасаңыз:
+Terraform конфигурация файлын `main.tf` мына мазмұнмен жасаңыз:
 
 ```hcl
 locals {
@@ -79,50 +80,49 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
-  - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
+  - `network_id = vkcs_networking_network.default.id`: кластер `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресур кейінірек құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: кластер бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: кластер бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестте көрсетуге немесе деректер көзінен алуға болады.
+- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестте жазуға немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор төменде құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) арқылы алынған идентификатор көрсетіледі.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор кейінірек құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
-- `registry_id` — Spark тапсырмаларын іске қосу кезінде пайдаланылатын образдар алынатын Docker тізілімінің идентификаторы. Жаңа тізілім жасауға немесе барын пайдалануға болады.
+- `registry_id` — Spark тапсырмаларын іске қосу кезінде пайдаланылатын бейнелері бар Docker реестрінің идентификаторы. Жаңа реестр жасауға немесе бар реестрді пайдалануға болады.
 
   {cut(Мысалдар)}
 
-  - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: жаңа Docker тізілімі жасалады және ол кластер құрамына кірмейтін әрі бөлек тарифтелетін бөлінген K8S Docker Registry виртуалды машинасына орналастырылады. Идентификатор `vkcs_mlplatform_k8s_registry` ресурсы құрылғаннан кейін алынады. Ресурс төменде құрылады.
-  - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар K8S Docker Registry тізілімінің идентификаторы көрсетіледі. K8S Docker Registry инстансының идентификаторын білу үшін:
+  - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: жаңа Docker реестрі жасалып, кластердің құрамына кірмейтін және бөлек тарификаланатын бөлінген K8S Docker Registry виртуалды машинасына орналастырылады. Идентификатор `vkcs_mlplatform_k8s_registry` ресурсын құрғаннан кейін алынады. Ресурс кейінірек құрылады.
+  - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар K8S Docker Registry реестрінің идентификаторы көрсетіледі. K8S Docker Registry инстансының идентификаторын білу үшін:
 
-    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app).
+    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app).
     1. Кластерді құру қажет жобаны таңдаңыз.
     1. **ML Platform** → **Spark в k8s** бөліміне өтіңіз.
-    1. **Инстансы** қойындысына өтіңіз.
-    1. Қажетті инстанс атауын басыңыз.
+    1. **Инстанстар** қойындысына өтіңіз.
+    1. Қажетті инстанстың атауын басыңыз.
 
   {/cut}
 
-- `ip_pool` — кластердің IP мекенжайлар пулы үшін сыртқы желі идентификаторы.
+- `ip_pool` — кластердің IP-адрестер пулы үшін сыртқы желінің идентификаторы.
 
   {cut(Мысалдар)}
 
-  - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымы сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
+  - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымының сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
 
   {/cut}
 
-- `spark_configuration` — [Spark конфигурациясына](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration) жауап беретін қасиеттер (properties) тізімі.
+- `spark_configuration` — [Spark конфигурациясына](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration) жауап беретін қасиеттердің (properties) тізімі.
+- `environment_variables` — {linkto(../../../../../ml/spark-to-k8s/instructions/create#mlspark-instructions-create)[text=Spark үшін орта айнымалыларының]} тізімі.
 
-- `environment_variables` — [Spark үшін орта айнымалыларының](/kz/ml/spark-to-k8s/instructions/create) тізімі.
-
-## 2. K8S Docker Registry инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-spark)}. K8S Docker Registry инстансының сипаттамасы бар файлды жасаңыз)[id=terraform-spark-k8s-instance-file]}
 
 K8S Docker Registry инстансының сипаттамасы бар Terraform конфигурация файлын `registry.tf` жасаңыз:
 
@@ -147,12 +147,12 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
 Мұнда:
 
-- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестте көрсетуге немесе деректер көзінен алуға болады.
+- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестте жазуға немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор төменде құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) арқылы алынған идентификатор көрсетіледі.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор кейінірек құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
@@ -160,22 +160,22 @@ resource "vkcs_mlplatform_k8s_registry" "k8s_registry" {
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс төменде құрылады.
-  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі төменде құрылады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. Оның идентификаторы {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған.
+  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы арқылы жасалатын жаңа желіде орналастырылады. Ресурс кейінірек құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-- `ip_pool` — кластердің IP мекенжайлар пулы үшін сыртқы желі идентификаторы.
+- `ip_pool` — кластердің IP-адрестер пулы үшін сыртқы желінің идентификаторы.
 
   {cut(Мысалдар)}
 
-  - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымы сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
+  - `ip_pool = data.vkcs_networking_network.extnet.id`: идентификатор кластердің желілік инфрақұрылымының сипаттамасында көрсетілетін `vkcs_networking_network` деректер көзінен алынады.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған сыртқы желінің идентификаторы көрсетіледі.
 
   {/cut}
 
-## 3. (Опционалды) ВМ түріне арналған деректер көзінің сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-spark)}. (Міндетті емес) ВМ түрі үшін деректер көзінің сипаттамасы бар файлды жасаңыз)[id=terraform-spark-k8s-vm-file]}
 
 Қажетті ВМ түрінің сипаттамасы бар Terraform конфигурация файлын `flavor.tf` жасаңыз:
 
@@ -185,17 +185,17 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Файлда көрсетілген ВМ түрі Terraform жобаңызда инстанстарды жасау үшін пайдаланылады.
+Файлда көрсетілген ВМ түрі Terraform жобасыңызда инстанстарды құру үшін пайдаланылады.
 
-## 4. (Опционалды) Кластер үшін желілік инфрақұрылым сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-spark)}. (Міндетті емес) Кластер үшін желілік инфрақұрылымның сипаттамасы бар файлды жасаңыз)[id=terraform-spark-k8s-infrastructure-file]}
 
-Кластерге арналған желілік инфрақұрылым сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
+Кластер үшін желілік инфрақұрылымның сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
 
 {tabs}
 
-{tab(Қолданыстағы желінің сипаттамасы)}
+{tab(Бар желінің сипаттамасы)}
 
-Жобада бар желіге арналған деректер көзі сипаттамасының мысалы:
+Жобада бар желі үшін деректер көзінің сипаттамасының мысалы:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -208,6 +208,7 @@ data "vkcs_networking_network" "default" {
 {tab(Жаңа желі құру)}
 
 ```hcl
+
 # Create networks
 resource "vkcs_networking_network" "app" {
   name        = "app-tf-example"
@@ -229,7 +230,8 @@ data "vkcs_networking_network" "extnet" {
 # Create a router to connect netwoks
 resource "vkcs_networking_router" "router" {
   name = "router-tf-example"
-  # Connect router to Internet
+
+# Connect router to Internet
   external_network_id = data.vkcs_networking_network.extnet.id
 }
 
@@ -244,18 +246,18 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 5. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading({counter(tf-spark)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-spark-k8s-create]}
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
    - `vkcs_provider.tf`;
    - `main.tf`;
    - `registry.tf`;
-   - `flavor.tf` (егер жасалса);
-   - `network.tf`(егер жасалса).
+   - `flavor.tf` (жасалған болса);
+   - `network.tf` (жасалған болса).
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Конфигурация файлдары дұрыс және қажетті өзгерістерді қамтитынына көз жеткізіңіз:
 
    ```console
    terraform validate && terraform plan
@@ -267,28 +269,28 @@ resource "vkcs_networking_router_interface" "app" {
    terraform apply
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 6. Конфигурацияның қолданылуын тексеріңіз
+## {heading({counter(tf-spark)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-spark-k8s-check]}
 
 Spark кластері сәтті құрылғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. **ML Platform** → **Инстансы** бөліміне өтіңіз. Spark кластері құрылғанына және белсенді екеніне көз жеткізіңіз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. Spark кластерінің құрылғаны және белсенді екеніне көз жеткізіңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-spark-k8s-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
 1. Terraform конфигурация файлдары бар директорияға өтіңіз.
-1. Келесі пәрменді орындаңыз:
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда, `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

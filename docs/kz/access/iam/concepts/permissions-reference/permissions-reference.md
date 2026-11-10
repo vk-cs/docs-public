@@ -1,5 +1,7 @@
 # {heading(Рұқсаттар анықтамалығы)[id=iam-permissions-reference]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 Алдын ала орнатылған [рөлдер](/kz/access/iam/concepts/roles-reference) жеткіліксіз болғанда немесе рөлдік модельді неғұрлым нәзік баптау қажет болғанда рұқсаттар қолданылады.  
 
 Жеке рұқсаттар барлық сервистерде қолжетімді емес. 

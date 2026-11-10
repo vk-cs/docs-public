@@ -1,14 +1,14 @@
 {
   "title": "Cloud Networks",
-  "metaDescription": "Cloud Networks VK Cloud сервисінің API спецификацияларын зерттеңіз: әдістердің сипаттамасы, параметрлер, сұраулар мен жауаптардың мысалдары. Бұлтты сервистерді интеграциялау және автоматтандыру үшін толық құжаттаманы алыңыз.",
-  "shortDescription": "Cloud Networks сервисінің OpenAPI спецификациялары",
+  "metaDescription": "VK Cloud Cloud Networks сервисінің API сипаттамаларын зерттеңіз: әдістер сипаттамасы, параметрлер, сұраулар мен жауаптар мысалдары. Бұлттық сервистерді интеграциялау және автоматтандыру үшін толық құжаттаманы алыңыз.",
+  "shortDescription": "Cloud Networks сервисінің OpenAPI-сипаттамалары",
   "sectionTitle": "Cloud Networks",
   "icon": "",
   "weight": 1,
+  "uuid": "42affd86-804c-4175-ab24-82fc9fa24d8d",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "d81f5f51-746a-42de-ac60-d26dc4df807f"
+  }
 }

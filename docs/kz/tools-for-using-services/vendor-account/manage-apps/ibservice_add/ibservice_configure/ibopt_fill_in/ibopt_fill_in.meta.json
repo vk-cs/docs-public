@@ -1,13 +1,13 @@
 {
-  "title": "YAML тарифтік опциялар файлдарын толтыру",
+  "title": "Тарифтік опциялардың YAML-файлдарын толтыру",
   "shortDescription": "",
-  "metaDescription": "YAML тарифтік опциялар файлдарын толтыру",
-  "sectionTitle": "YAML тарифтік опциялар файлдарын толтыру",
+  "metaDescription": "Тарифтік опциялардың YAML-файлдарын толтыру",
+  "sectionTitle": "Тарифтік опциялардың YAML-файлдарын толтыру",
   "weight": 5,
+  "uuid": "beb29a03-20e7-452c-ad1f-3619010fef3b",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "1aa41cc1-f22a-424b-8c77-59cd09f9682d"
+  }
 }

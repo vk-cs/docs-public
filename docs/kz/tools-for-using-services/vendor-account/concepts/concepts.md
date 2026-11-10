@@ -1,3 +1,4 @@
-{include(/kz/_includes/_translated_by_ai.md)}
 
-Жеткізуші кабинетімен жұмыс істеу ерекшеліктері.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+# Поставщик кабинетімен жұмыс істеу ерекшеліктері.

@@ -1,23 +1,14 @@
 {
-  "title": "Alfresco өрістету",
-  "shortDescription": "Корпоративтік контентті басқару және бизнес-процестерді автоматтандыру үшін Alfresco өрістету",
-  "metaDescription": "Marketplace VK Cloud: корпоративтік контентті басқару және бизнес-процестерді автоматтандыру үшін Alfresco жүйесін өрістету қадамдары",
-  "sectionTitle": "Alfresco өрістету",
+  "title": "Alfresco орнату",
+  "shortDescription": "Корпоративтік контентті басқару және бизнес-процесстерді автоматтандыру үшін Alfresco орнату",
+  "metaDescription": "VK Cloud Marketplace: корпоративтік контентті басқару және бизнес-процесстерді автоматтандыру үшін Alfresco жүйесін орнату қадамдары",
+  "sectionTitle": "Alfresco орнату",
   "icon": "",
-  "weight": 18,
+  "weight": 1,
+  "uuid": "7575bb07-b3e5-44bd-a883-0af28fa80e9d",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "93cf3d07-a79d-45e1-ada8-a6618bddbcef"
+  }
 }

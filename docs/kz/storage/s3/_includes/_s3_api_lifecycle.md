@@ -9,6 +9,7 @@
 
 ## {heading(Өмірлік цикл конфигурациясының XML-құрылымы)[id=api-spec-s3-lifecycle-request-body]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 {cut(Префикс пен тегтері бар конфигурацияның жалпы көрінісі)}
 
 ```XML

@@ -4,10 +4,10 @@
   "metaDescription": "Image-based қосымшаның инфрақұрылым конфигурациясы",
   "sectionTitle": "Image-based қосымшаның инфрақұрылым конфигурациясы",
   "weight": 5,
+  "uuid": "f8034592-6eb5-495b-bd9d-6a2fd03a1bf6",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "305aabf2-05a9-4d1c-90a0-c2e4c0394ca0"
+  }
 }

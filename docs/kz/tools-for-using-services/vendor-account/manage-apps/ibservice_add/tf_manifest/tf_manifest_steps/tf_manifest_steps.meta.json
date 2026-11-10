@@ -1,13 +1,13 @@
 {
-  "title": "Terraform манифесі",
+  "title": "Terraform манифесті",
   "shortDescription": "",
-  "metaDescription": "Terraform манифесі",
-  "sectionTitle": "Terraform манифесі",
+  "metaDescription": "Terraform манифесті",
+  "sectionTitle": "Terraform манифесті",
   "weight": 2,
+  "uuid": "3fb65faa-3266-4c6b-aff4-33862b3cd38e",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "391b65c9-eb6c-460d-901b-b2b75a16436d"
+  }
 }

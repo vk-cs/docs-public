@@ -1,0 +1,18 @@
+{
+  "title": "Ресурстарды жасау",
+  "shortDescription": "Terraform көмегімен ресурстарды қалай жасау",
+  "metaDescription": "VK Cloud Terraform-провайдерін қолданып ресурстарды қалай жасау. Terraformпен жұмыс: ресурстарды жасау және провайдерді жаңарту.",
+  "sectionTitle": "Ресурстарды жасау",
+  "icon": "",
+  "weight": 0,
+  "uuid": "77ef97c8-fe4a-4920-a652-9bee56c0eb48",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

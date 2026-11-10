@@ -1,10 +1,10 @@
 # {heading(VPN қосылымын жасау)[id=terraform-vpn]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Мақалада Terraform көмегімен VPN-қосылымын жасау және баптау мысалы келтірілген.
 
-Нұсқаулық қадамдарынан өткеннен кейін сіз:
+Нұсқаулықтың қадамдарын орындау арқылы сіз:
 
 1. {linkto(#terraform-vpn-create-file)[text=Жасайсыз]} конфигурация файлын.
 1. {linkto(#terraform-vpn-add-net)[text=Қосасыз]} виртуалды желі үшін ресурстар мен деректер көздерін.
@@ -15,12 +15,12 @@
 
 ## Дайындық қадамдары
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) желілерді жасауға жеткілікті ресурстар бар екеніне көз жеткізіңіз. Әртүрлі аймақтарда әртүрлі квоталар қолданылуы мүмкін.
+1. {linkto(/kz/tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(/kz/tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=аймақта]} желілерді жасауға жеткілікті ресурс бар екеніне көз жеткізіңіз. Әр түрлі аймақтарда әр түрлі квоталар қолданылуы мүмкін.
 
-   Қажет болса, квоталарды [арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер әлі жасалмаған болса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді баптаңыз]}.
-1. Провайдер баптаулары бар файлды жобамен жұмыс істейтін директорияға орналастырыңыз және осы директориядан команданы орындаңыз:
+1. Егер бұрын жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді баптаңыз]}.
+1. Провайдер баптаулары бар файлды жобамен жұмыс жасайтын каталогқа орналастырыңыз және осы каталогтан команда орындаңыз:
 
     ```console
     terraform init
@@ -29,11 +29,11 @@
 
 ## {heading({counter(terraform-vpn)}. Конфигурация файлын жасаңыз)[id=terraform-vpn-create-file]}
 
-Жобамен жұмыс істейтін директорияда `vpn.tf` файлын жасаңыз. Бұл файлда жасалатын қосылымның конфигурациясы сипатталады.
+Жобамен жұмыс жасайтын каталогта `vpn.tf` файлын жасаңыз. Бұл файлда жасалатын қосылымның конфигурациясы сипатталады.
 
 ## {heading({counter(terraform-vpn)}. Виртуалды желіні қосыңыз)[id=terraform-vpn-add-net]}
 
-1. Қолданылатын {linkto(/kz/networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]} түріне байланысты төмендегі қойындылардың бірінің мазмұнын `vpn.tf` файлына көшіріңіз.
+1. Қолданылатын {linkto(/kz/networks/vnet/concepts/sdn#vnet-sdn)[text=SDN-ге]} байланысты `vpn.tf` файлына төмендегі қойындылардың бірінің мазмұнын көшіріңіз.
 
     {tabs}
 
@@ -67,16 +67,16 @@
     }
     ```
 
-    Желіні жасау үшін келесі объектілер қажет болады:
+    Желіні жасау үшін келесі нысандар қажет:
 
     - Ресурстар (resource):
 
       - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) — ВМ жасалатын желі.
       - [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_subnet.md) — осы желідегі ішкі желі.
-      - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router.md) — жеке желіні сыртқы желілермен қосатын маршрутизатор.
+      - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router.md) — жеке желіні сыртқы желілермен байланыстыратын маршрутизатор.
       - [vkcs_networking_router_interface](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_router_interface.md) — маршрутизаторды ішкі желіге қосатын интерфейс.
 
-    - Деректер көзі (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — маршрутизатордың жария IP-адрес алуына, сондай-ақ жеке желі мәндеріне Floating IP-адрес бөлуге арналған сыртқы желі.
+    - Деректер көзі (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — маршрутизатордың публичный IP-мекенжайын алуы және жеке желінің нысандарына Floating IP-мекенжайын бөлу үшін сыртқы желі.
 
     {/tab}
 
@@ -118,16 +118,16 @@
     }
     ```
 
-    Желіні жасау үшін келесі объектілер қажет болады:
+    Желіні жасау үшін келесі нысандар қажет:
 
     - Ресурстар (resource):
 
       - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md) — ВМ жасалатын желі.
       - [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_subnet.md) — осы желідегі ішкі желі.
-      - [vkcs_dc_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dc_router.md) — жеке желіні сыртқы желілермен қосатын маршрутизатор.
+      - [vkcs_dc_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dc_router.md) — жеке желіні сыртқы желілермен байланыстыратын маршрутизатор.
       - [vkcs_dc_interface](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/dc_interface.md) — маршрутизаторды ішкі және сыртқы желіге қосатын интерфейс.
 
-    - Деректер көзі (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — жария IP-адрес алу үшін сыртқы желі.
+    - Деректер көзі (data source): [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) — публичный IP-мекенжай алу үшін сыртқы желі.
 
     {/tab}
 
@@ -135,7 +135,7 @@
 
 1. Қосылымыңыз үшін баптау мәндерін өңдеңіз.
 
-Terraform көмегімен виртуалды желілерді жасау туралы толығырақ — {linkto(/ru/tools-for-using-services/terraform/how-to-guides/vnet/network#terraform-network)[text=Желілерді жасау]} практикалық нұсқаулығында.
+Terraform көмегімен виртуалды желілерді жасау туралы толығырақ — {linkto(/kz/tools-for-using-services/terraform/how-to-guides/vnet/network#terraform-network)[text=Желілерді жасау]} тәжірибелік нұсқаулығында.
 
 ## {heading({counter(terraform-vpn)}. VPN-қосылымын қосыңыз)[id=terraform-vpn-add-vpn]}
 
@@ -182,9 +182,9 @@ Terraform көмегімен виртуалды желілерді жасау т
     }
     ```
 
-    VPN-қосылымын қосу үшін келесі ресурстар пайдаланылады:
+    VPN-қосылымын қосу үшін келесі ресурстар қолданылады:
 
-    - [vkcs_vpnaas_service](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_service.md) — VK Cloud ішіндегі VPN сервисін басқарады. `router_id` параметрін — маршрутизатордың ID мәнін қамтиды. Осы параметрдің мәнін өзгерту арқылы сіз жаңа сервис жасайсыз. Егер бар маршрутизаторды пайдалану қажет болса, деректер көзін пайдаланып оның ID мәнін (`data.vkcs_networking_router.router.id` немесе `data.vkcs_dc_router.router.id`) көрсетіңіз.
+    - [vkcs_vpnaas_service](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_service.md) — VK Cloud ішіндегі VPN сервисін басқарады. `router_id` — маршрутизатордың ID-сы параметрін қамтиды. Осы параметрдің мәнін өзгертсеңіз, жаңа сервис жасалады. Бар маршрутизаторды қолдану қажет болса, деректер көзін қолданып, оның ID-сын (`data.vkcs_networking_router.router.id` немесе `data.vkcs_dc_router.router.id`) көрсетіңіз.
 
       {cut(Мысал)}
 
@@ -195,31 +195,31 @@ Terraform көмегімен виртуалды желілерді жасау т
       ```
       {/cut}
 
-    - [vkcs_vpnaas_ipsec_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ipsec_policy.md) — VK Cloud ішіндегі ресурс үшін IPSec-саясатын басқарады. `name` параметрін — жасалатын саясаттың атауын қамтиды. Осы параметрдің мәнін өзгерту арқылы сіз бар саясаттың атауын өзгертесіз.
+    - [vkcs_vpnaas_ipsec_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ipsec_policy.md) — VK Cloud ішіндегі ресурс IPSec-саясатын басқарады. `name` — жасалатын саясаттың атауы параметрін қамтиды. Осы параметрдің мәнін өзгертсеңіз, бар саясаттың атауы өзгереді.
 
-    - [vkcs_vpnaas_ike_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ike_policy.md) — VK Cloud ішіндегі ресурс үшін IKE-саясатын басқарады. `name` параметрін — жасалатын саясаттың атауын қамтиды. Осы параметрдің мәнін өзгерту арқылы сіз бар саясаттың атауын өзгертесіз.
+    - [vkcs_vpnaas_ike_policy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_ike_policy.md) — VK Cloud ішіндегі ресурс IKE-саясатын басқарады. `name` — жасалатын саясаттың атауы параметрін қамтиды. Осы параметрдің мәнін өзгертсеңіз, бар саясаттың атауы өзгереді.
 
-    - [vkcs_vpnaas_endpoint_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_endpoint_group.md) — VK Cloud ішіндегі эндпоинттер тобын басқарады. Келесі параметрлерді қамтиды:
+    - [vkcs_vpnaas_endpoint_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_endpoint_group.md) — VK Cloud ішіндегі эндпоинттар тобын басқарады. Келесі параметрлерді қамтиды:
 
-      - `type` — топтағы эндпоинттердің түрі. `subnet`, `cidr`, `network`, `router` немесе `vlan` мәндерін қабылдай алады. Осы параметрдің мәндерін өзгерту арқылы сіз жаңа топ жасайсыз.
-      - `endpoints` — эндпоинттер тобына қосылатын бір типтегі эндпоинттер тізімі. Тізім элементтерінің типі `type` параметрімен анықталады. `endpoints` параметрінің мәнін өзгерту арқылы сіз жаңа топ жасайсыз.
+      - `type` — топтағы эндпоинттардың түрі. `subnet`, `cidr`, `network`, `router` немесе `vlan` мәндерін қабылдай алады. Осы параметрдің мәндерін өзгертсеңіз, жаңа топ жасалады.
+      - `endpoints` — эндпоинттар тобына қосылатын бірдей түрдегі эндпоинттар тізімі. Тізім элементтерінің түрі `type` параметрімен анықталады. `endpoints` параметрінің мәнін өзгертсеңіз, жаңа топ жасалады.
 
-    - [vkcs_vpnaas_site_connection](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_site_connection.md) — VK Cloud ішіндегі сайттың IPSec-қосылымы ресурсын басқарады. Келесі параметрлерді қамтиды:
+    - [vkcs_vpnaas_site_connection](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vpnaas_site_connection.md) — VK Cloud ішіндегі сайт IPSec-қосылымының ресурсын басқарады. Келесі параметрлерді қамтиды:
 
-      - `name` — қосылым атауы. Осы параметрдің мәнін өзгерту арқылы сіз бар қосылымның атауын өзгертесіз.
-      - `ikepolicy_id` — IKE-саясатының ID мәні. Осы параметрдің мәнін өзгерту арқылы сіз жаңа қосылым жасайсыз.
-      - `ipsecpolicy_id` — IPsec-саясатының ID мәні. Осы параметрдің мәнін өзгерту арқылы сіз жаңа қосылым жасайсыз.
-      - `vpnservice_id` — VPN сервисінің ID мәні. Осы параметрдің мәнін өзгерту арқылы сіз жаңа қосылым жасайсыз.
-      - `psk` — жария кілт. `string` типіндегі кез келген мәндерді қабылдайды.
-      - `peer_address` — peer-шлюздің FQDN немесе жария IP-адресі (IPv4 немесе IPv6).
-      - `peer_id` — аутентификациядан өту үшін peer-роутердің ID мәні. `<АДРЕС_IPv4>`, `<АДРЕС_IPv6>`, `<EMAIL>`, `<KEY_ID>`, `<FQDN>` типтерінің мәндерін қабылдай алады. Әдетте бұл параметрдің мәні `peer_address` параметрінің мәнімен сәйкес келеді. Осы параметрдің мәнін өзгерту арқылы сіз бар қосылымның саясатын өзгертесіз.
-      - `local_ep_group_id` — жергілікті қосылымның жеке ішкі желілерін қамтитын эндпоинттер тобының ID мәні. Кері үйлесімділік режимі қосылмаған болса, `peer_ep_group_id` параметрін көрсетуді талап етеді, онда `peer_cidrs` мәндері VPN сервисінің `subnet_id` мәнімен бірге беріледі. Осы параметрдің мәнін өзгерту арқылы сіз бар қосылымды өзгертесіз.
-      - `peer_ep_group_id` — `<IP-АДРЕС>/<ПРЕФИКС>` форматындағы peer-қосылымының жеке CIDR-адрестерін қамтитын эндпоинттер тобының ID мәні. Кері үйлесімділік режимі қосылмаған болса, `local_ep_group_id` параметрін көрсетуді талап етеді, онда `peer_cidrs` мәндері VPN сервисінің `subnet_id` мәнімен бірге беріледі.
-      - `dpd` — Dead Peer Detection (DPD) протоколы үшін баптаулар сөздігі. Келесі ресурстарды қамтиды:
+      - `name` — қосылымның атауы. Осы параметрдің мәнін өзгертсеңіз, бар қосылымның атауы өзгереді.
+      - `ikepolicy_id` — IKE-саясатының ID-сы. Осы параметрдің мәнін өзгертсеңіз, жаңа қосылым жасалады.
+      - `ipsecpolicy_id` — IPsec-саясатының ID-сы. Осы параметрдің мәнін өзгертсеңіз, жаңа қосылым жасалады.
+      - `vpnservice_id` — VPN-сервисінің ID-сы. Осы параметрдің мәнін өзгертсеңіз, жаңа қосылым жасалады.
+      - `psk` — публичный кілт. `string` түріндегі кез келген мәндерді қабылдайды.
+      - `peer_address` — peer-шлюзінің FQDN немесе публичный IP-мекенжайы (IPv4 немесе IPv6).
+      - `peer_id` — аутентификациядан өту үшін peer-роутерінің ID-сы. `<IPv4_МЕКЕНЖАЙ>`, `<IPv6_МЕКЕНЖАЙ>`, `<EMAIL>`, `<KEY_ID>`, `<FQDN>` түрлеріндегі мәндерді қабылдай алады. Әдетте бұл параметрдің мәні `peer_address` параметрінің мәнімен сәйкес келеді. Осы параметрдің мәнін өзгертсеңіз, бар қосылымның саясаты өзгереді.
+      - `local_ep_group_id` — жергілікті қосылымның жеке ішкі желілерін қамтитын эндпоинттар тобының ID-сы. `peer_cidrs` мәндері VPN-сервисінің `subnet_id` мәнімен бірге берілген кері үйлесімділік режимі қосылмаған болса, `peer_ep_group_id` параметрін көрсетуді талап етеді. Осы параметрдің мәнін өзгертсеңіз, бар қосылым өзгереді.
+      - `peer_ep_group_id` — peer-қосылымының жеке CIDR-мекенжайларын `<IP-МЕКЕНЖАЙ>/<ПРЕФИКС>` форматында қамтитын эндпоинттар тобының ID-сы. `peer_cidrs` мәндері VPN-сервисінің `subnet_id` мәнімен бірге берілген кері үйлесімділік режимі қосылмаған болса, `local_ep_group_id` параметрін көрсетуді талап етеді.
+      - `dpd` — Dead Peer Detection (DPD) хаттамасының баптаулары сөздігі. Келесі ресурстарды қамтиды:
 
         - `action` — DPD әрекеті. Мүмкін мәндер: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Әдепкі мәні: `hold`.
-        - `timeout` — секундтардағы DPD тайм-ауты. `positive integer` типіндегі деректер қабылданады, олардың мәндері `interval` мәнінен үлкен. Әдепкі мәні: `120`.
-        - `interval` — секундтардағы DPD интервалы. `positive integer` типіндегі деректер қабылданады. Әдепкі мәні: `30`.
+        - `timeout` — секундтағы DPD тайм-ауты. `interval` мәнінен үлкен `positive integer` түріндегі деректерді қабылдайды. Әдепкі мәні: `120`.
+        - `interval` — секундтағы DPD интервалы. `positive integer` түріндегі деректерді қабылдайды. Әдепкі мәні: `30`.
 
       - `depends_on` — VPN-қосылымы көрсетілген ресурстар жасалғаннан кейін іске қосылады.
 
@@ -227,41 +227,41 @@ Terraform көмегімен виртуалды желілерді жасау т
 
 ## {heading({counter(terraform-vpn)}. VPN-қосылымын жасаңыз)[id=terraform-vpn-create-connection]}
 
-1. `vpn.tf` файлы бар директорияға өтіңіз.
-1. Конфигурациялық файлдардың дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. `vpn.tf` файлы орналасқан каталогқа өтіңіз.
+1. Конфигурация файлдары дұрыс екеніне және қажетті өзгерістерді қамтитынына көз жеткізіңіз:
 
     ```console
     terraform validate && terraform plan
     ```
 
-1. Өзгерістерді қолданыңыз:
+1. Өзгерістерін қолданыңыз:
 
     ```console
     terraform apply
     ```
 
-    Растауды сұрағанда `yes` енгізіңіз.
+    Растау сұралғанда `yes` енгізіңіз.
 
-1. Операцияның аяқталуын күтіңіз.  
+1. Операцияның аяқталуын күтіңіз.
 
 ## {heading({counter(terraform-vpn)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-vpn-check]}
 
 Желі мен инфрақұрылымның сәтті жасалғанына көз жеткізіңіз:
 
-1. VK Cloud жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
+1. VK Cloud жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз. VPN-қосылымы жасалғанына және мысалда қосылған барлық ресурстарды қамтитынына көз жеткізіңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## Қолданылмайтын ресурстарды жойыңыз
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурация файлдары бар директорияға өтіңіз.
-1. Команданы орындаңыз:
+1. Terraform конфигурация файлдары орналасқан каталогқа өтіңіз.
+1. Команда орындаңыз:
 
     ```console
     terraform destroy
     ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

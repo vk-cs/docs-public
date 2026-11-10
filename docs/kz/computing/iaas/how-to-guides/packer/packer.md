@@ -1,28 +1,27 @@
-# {heading(Packer көмегімен образ жасау)[id=iaas-packer]}
+# {heading(Packer көмегімен бейне жасау)[id=iaas-packer]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Packer {var(cloud)} ішінде алдын ала орнатылған [конфигурация қалыптарының](../../concepts/vm/flavor) кез келгені мен қажетті қонақ ОС-ы бар базалық образ негізінде жаңа ВМ образын құрастыруға мүмкіндік береді. Жаңа образдың параметрлері Packer конфигурациялық файлының көмегімен беріледі. Мысал ретінде мыналар пайдаланылады:
+Packer қалаған госттік ОС бар базалық бейнеге және {var(cloud)} алдын ала орнатылған {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=конфигурация шаблондарының]} кез келгеніне негізделген жаңа ВМ бейнесін жасауға мүмкіндік береді. Жаңа бейненің параметрлері Packer конфигурациялық файлы арқылы орнатылады.
 
-- QCOW2 форматындағы Alt Linux 10 ОС образы;
-- `STD3-2-6` конфигурация қалыбы.
+Мысал ретінде QCOW2 форматындағы Альт Сервер 10 ОС бейнесі қолданылады.
 
-## {heading(Дайындық қадамдары)[id=iaas-packer-preparatory-steps]}
+## {heading(Дайындық қадамдар)[id=iaas-packer-preparatory-steps]}
 
-1. Packer-дің соңғы нұсқасын [орнатыңыз](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli).
+1. Packerдің соңғы нұсқасын [орнатыңыз](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli).
 
    {note:info}
-   Packer-ді {var(cloud)} [айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп ала аласыз.
+   Packerді {var(cloud)} [айнасынан](https://hashicorp-releases.mcs.mail.ru/packer/) жүктеп алуға болады.
    {/note}
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жобада [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
-1. Alt Linux 10 ОС образын [жергілікті түрде жүктеп алыңыз](http://ftp.altlinux.org/pub/distributions/ALTLinux/p10/images/cloud/x86_64/) (`alt-p10-cloud-x86_64.qcow2` файлы).
+1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанын]} тексеріп, жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Альт Сервер 10 ОС бейнесін [жүктеп алыңыз](http://ftp.altlinux.org/pub/distributions/ALTLinux/p10/images/cloud/x86_64/) локальды түрде (`alt-p10-cloud-x86_64.qcow2` файлы).
 
-## {heading(1. Образды RAW форматына түрлендіріңіз)[id=iaas-packer-convert-image]}
+## {heading(1. Бейнені RAW форматына түрлендіріңіз)[id=iaas-packer-convert-image]}
 
-`qemu-img` утилитасын пайдаланыңыз:
+`qemu-img` утилитасын қолданыңыз:
 
-1. Егер бұл бұрын жасалмаса, `qemu-img` орнатыңыз:
+1. Бұрын жасалмаса, `qemu-img` орнатыңыз:
 
    {tabs}
 
@@ -44,13 +43,13 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
 
    {/tabs}
 
-1. Команда арқылы файлды түрлендіруді іске қосыңыз:
+1. Файлды түрлендіруді мына командамен іске қосыңыз:
 
    ```console
    qemu-img convert -f qcow2 -O raw alt-p10-cloud-x86_64.qcow2 alt-p10-cloud-x86_64.raw
    ```
 
-   Түрлендіру командасының синтаксисі [QEMU ресми құжаттамасында](https://www.qemu.org/docs/master/tools/qemu-img.html) берілген.
+   Түрлендіру командасының синтаксисі [QEMU ресми құжаттамасында](https://www.qemu.org/docs/master/tools/qemu-img.html) келтірілген.
 
 ## {heading(2. Базалық образды бұлтқа жүктеңіз)[id=iaas-packer-download-base-image]}
 
@@ -58,13 +57,13 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
 
 ## {heading(3. Packer конфигурациялық файлын жасаңыз)[id=iaas-packer-create-config-file]}
 
-1. Желілерді іздеу командасын орындап, қажетті сыртқы желінің ID-сін көшіріп алыңыз:
+1. Желілерді іздеу командасын орындап, қажетті сыртқы желінің идентификаторын көшіріңіз:
 
    ```console
    openstack network list
    ```
 
-1. Образдарды іздеу командасын орындап, қажетті образдың ID-сін көшіріп алыңыз:
+1. Образдарды іздеу командасын орындап, қажетті образдың идентификаторын көшіріңіз:
 
    ```console
    openstack image list
@@ -80,15 +79,15 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
    Мұнда:
 
    - `<ID_СЕТИ>` — алдыңғы қадамда алынған сыртқы желінің идентификаторы.
-   - `<ID_ОБРАЗА>` — алдыңғы қадамда алынған образ идентификаторы.
+   - `<ID_ОБРАЗА>` — алдыңғы қадамда алынған образдың идентификаторы.
 
-1. Жаңа ВМ образы үшін қажетті конфигурация қалыбын таңдаңыз. Мысалда — `STD3-2-6`.
+1. Жаңа ВМ образды үшін қалаған конфигурация шаблонын таңдаңыз.
 
    {note:info}
-   Өзекті конфигурация қалыптары {var(cloud)} жеке кабинетінің **Виртуалды машина түрі** тізіміндегі [ВМ жасау бетінде](https://kz.cloud.vk.kz/app/services/infra/servers/add) берілген.
+   Өзекті конфигурация шаблондары {var(cloud)} жеке кабинетінің {ifdef(public)}[ВМ жасау бетінде](https://msk.cloud.vk.ru/app/services/infra/servers/add) **Виртуалды машина түрі** тізімінде{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]} бөлімінде{/ifdef} ұсынылған.
    {/note}
 
-1. `altlinux.pkr.hcl` файлын жасаңыз. Таңдалған конфигурация қалыбының атауын `flavor` параметрінде көрсетіңіз.
+1. `altlinux.pkr.hcl` файлын жасаңыз. `flavor` параметріне таңдалған конфигурация шаблонының атауын көрсетіңіз.
 
    {cut(altlinux.pkr.hcl)}
 
@@ -98,9 +97,9 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
      default = "${env("NETWORK_ID")}"
      validation {
        condition     = length(var.network_id) > 0
-       error_message = <<EOF2
+       error_message = <<EOF
    The NETWORK_ID environment variable must be set.
-   EOF2
+   EOF
      }
    }
 
@@ -109,14 +108,14 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
      default = "${env("SOURCE_IMAGE")}"
      validation {
        condition     = length(var.source_image) > 0
-       error_message = <<EOF2
+       error_message = <<EOF
    The SOURCE_IMAGE environment variable must be set.
-   EOF2
+   EOF
      }
    }
 
    source "openstack" "altlinux" {
-     flavor       = "STD3-2-6"
+     flavor       = "<ШАБЛОН_КОНФИГУРАЦИИ_ВМ>"
      image_name   = "Alt-Linux-P10"
      source_image = "${var.source_image}"
      config_drive            = "true"
@@ -141,12 +140,12 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
    ```
 
    {note:info}
-   ВМ жасаған кезде диск жасалуы тиіс қолжетімділік аймағын көрсетіңіз. Конфигурациялық файл синтаксисі туралы толық ақпарат [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
+   ВМ жасағанда диск жасалуы тиіс қолжетімділік аймағын көрсетіңіз. Конфигурациялық файл синтаксисі туралы толық ақпарат [Packer ресми құжаттамасында](https://developer.hashicorp.com/packer/docs/templates/hcl_templates) бар.
    {/note}
 
    {/cut}
 
-1. Жасалған конфигурацияны команда арқылы тексеріңіз:
+1. Жасалған конфигурацияны мына командамен тексеріңіз:
 
    ```console
    packer validate altlinux.pkr.hcl
@@ -169,9 +168,9 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
 
 1. `c6320138-035f-40d8-XXXX-e814edb2ce5f` идентификаторын жазып алыңыз — ол келесі қадамда қажет болады.
 
-## {heading(5. Образды баптауды аяқтаңыз)[id=iaas-packer-settings-end]}
+## {heading(5. Образты баптауды аяқтаңыз)[id=iaas-packer-settings-end]}
 
-1. Команданың көмегімен жасалған образға [метатегтерді](../../instructions/images/image-metadata) орнатыңыз:
+1. Жасалған образға келесі команданың көмегімен {ifdef(public)}{linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=метатегтерді]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}метатегтерді{/ifdef} орнатыңыз:
 
    ```console
    openstack image set \
@@ -180,16 +179,17 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
        --property mcs_name='Alt Linux 10' \
        c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
+   {linkto(#iaas-packer-download-prepare-image)[text=4-қадамда]} көшірілген идентификаторды пайдаланыңыз.
 
-1. Образдың дұрыс көрсетілетініне көз жеткізіңіз.
+1. Образтың дұрыс көрсетілетініне көз жеткізіңіз.
 
    {tabs}
 
    {tab(Жеке кабинет)}
 
-   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cer)}{linkto(../../../../intro/authorization/lk_entry#prerequisites_vkc_ui)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне өтіңіз.
-   1. **Бұлтты есептеулер → Образдар** бөліміне өтіңіз.
-   1. Тізімнен образды тауып, оны басыңыз. Образ беті ашылады.
+   1. {var(cloud)} жеке кабинетына {ifdef(public)}[өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=өтіңіз]}{/ifdef}.
+   1. **Бұлтты есептеулер** → **Образтар** бөліміне өтіңіз.
+   1. Образты тізімнен тауып, оны басыңыз. Образ беті ашылады.
 
    Образ ВМ жасаған кезде де қолжетімді болады.
 
@@ -201,6 +201,7 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
 
+   {ifdef(public)}
    Команданы орындау нәтижесі:
 
    ```console
@@ -227,6 +228,7 @@ Packer {var(cloud)} ішінде алдын ала орнатылған [кон�
    | visibility       | private                                              |
    +------------------+------------------------------------------------------+
    ```
+   {/ifdef}
 
    {/tab}
 

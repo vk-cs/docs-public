@@ -1,16 +1,16 @@
 {
-  "title": "Кросс-домендік сұраулар (CORS)",
-  "shortDescription": "Бакеттер мен объектілерге кросс-домендік сұрауларды басқару",
-  "metaDescription": "VK Object Storage CORS: бакетке арналған браузерлік сұраулардың кросс-домендік ережелері деген не, оларды қалай орнатуға болады (жеке кабинет, S3 API/SDK немесе AWS CLI арқылы), конфигурацияға қандай параметрлер кіреді (AllowedOrigins/Methods/Headers, ExposeHeaders, MaxAgeSeconds және т.б.) және CORS іс жүзінде қалай жұмыс істейді.",
-  "sectionTitle": "Кросс-домендік сұраулар (CORS)",
+  "title": "Домендер аралық сұраулар (CORS)",
+  "shortDescription": "Бакеттер мен объектілерге домендер аралық сұрауларды басқару",
+  "metaDescription": "VK Object Storage CORS: бакетке браузер сұрауларына арналған домендер аралық ережелер дегеніміз не, оларды қалай орнатуға болады (жеке кабинет, S3 API/SDK немесе AWS CLI арқылы), конфигурация қандай параметрлерді қамтиды (AllowedOrigins/Methods/Headers, ExposeHeaders, MaxAgeSeconds және т.б.) және CORS практика жүзінде қалай жұмыс істейді",
+  "sectionTitle": "Домендер аралық сұраулар (CORS)",
   "icon": "",
   "weight": 3,
+  "uuid": "38405507-7eaa-469d-a064-c74d471cb74b",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "f6277bda-9c37-47fd-937b-c488f4a60c5d"
+  }
 }

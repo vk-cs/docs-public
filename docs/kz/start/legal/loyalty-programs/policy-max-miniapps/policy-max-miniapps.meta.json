@@ -1,0 +1,16 @@
+{
+  "title": "«MAX мини-қосымшаларын VK Cloud платформасында орналастыру» акциясының ережелері",
+  "shortDescription": "",
+  "metaDescription": "«MAX мини-қосымшаларын VK Cloud платформасында орналастыру» акциясының ережелері",
+  "sectionTitle": "«MAX мини-қосымшаларын VK Cloud платформасында орналастыру» акциясының ережелері",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "9a614ce0-ccc0-458e-adbd-4c991c76169b"
+}

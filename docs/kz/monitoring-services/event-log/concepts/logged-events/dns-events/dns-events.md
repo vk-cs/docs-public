@@ -1,125 +1,125 @@
 # {heading(Public DNS оқиғалары)[id=event-log-dns]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Public DNS Cloud Audit-ке жіберетін оқиғалар:
+Public DNS Cloud Audit жүйесіне жіберетін оқиғалар:
 
 [cols="2,2,2", options="header"]
 |===
 |Әдіс және эндпоинт
-|Сипаттама
+|Сипаттамасы
 |Әрекет атауы
 
 3+|**DNS**
 
 |POST<br>`/v2/dns/`
-|Берілген параметрлермен жаңа DNS аймағын жасау
+|Берілген параметрлермен жаңа DNS зонасын жасау
 |`ACTION_DNS_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}`
-|DNS аймағының параметрлерін оның идентификаторы бойынша өзгерту
+|DNS зонасының параметрлерін оның идентификаторы бойынша өзгерту
 |`ACTION_DNS_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}`
-|DNS аймағын оның идентификаторы бойынша жою
+|DNS зонасын оның идентификаторы бойынша өшіру
 |`ACTION_DNS_DELETE`
 
 3+|**A Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/a/`
-|DNS аймағы үшін берілген параметрлермен A түріндегі жазбаны жасау
+|DNS зонасы үшін берілген параметрлермен A типті жазбаны жасау
 |`ACTION_ARECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/a/{ARecordUuid}`
-|A жазбасының параметрлерін өзгерту
+|A-жазбаның параметрлерін өзгерту
 |`ACTION_ARECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/a/{ARecordUuid}`
-|A түріндегі жазбаны оның идентификаторы бойынша жою
+|A типті жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_ARECORD_DELETE`
 
 3+|**AAAA Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/aaaa/`
-|DNS аймағы үшін берілген параметрлермен AAAA түріндегі жазбаны жасау
+|DNS зонасы үшін берілген параметрлермен AAAA типті жазбаны жасау
 |`ACTION_AAAA_RECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/aaaa/{AaaaRecordUuid}`
-|AAAA жазбасының параметрлерін өзгерту
+|AAAA-жазбаның параметрлерін өзгерту
 |`ACTION_AAAA_RECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/aaaa/{AaaaRecordUuid}`
-|AAAA түріндегі жазбаны оның идентификаторы бойынша жою
+|AAAA-жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_AAAA_RECORD_DELETE`
 
 3+|**CNAME Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/cname/`
-|DNS аймағы үшін берілген параметрлермен CNAME түріндегі жазбаны жасау
+|DNS зонасы үшін берілген параметрлермен CNAME типті жазбаны жасау
 |`ACTION_CNAME_RECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/cname/{CnameRecordUuid}`
-|CNAME жазбасының параметрлерін өзгерту
+|CNAME-жазбаның параметрлерін өзгерту
 |`ACTION_CNAME_RECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/cname/{CnameRecordUuid}`
-|CNAME түріндегі жазбаны оның идентификаторы бойынша жою
+|CNAME-жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_CNAME_RECORD_DELETE`
 
 3+|**NS Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/ns/`
-|DNS аймағы үшін берілген параметрлермен NS түріндегі жазбаны жасау
+|DNS зонасы үшін берілген параметрлермен NS типті жазбаны жасау
 |`ACTION_NS_RECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/ns/{NsRecordUuid}`
-|NS жазбасының параметрлерін өзгерту
+|NS-жазбаның параметрлерін өзгерту
 |`ACTION_NS_RECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/ns/{NsRecordUuid}`
-|NS түріндегі жазбаны оның идентификаторы бойынша жою
+|NS-жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_NS_RECORD_DELETE`
 
 3+|**SRV Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/srv/`
-|DNS аймағы үшін SRV түріндегі жазбаны жасау
+|DNS зонасы үшін SRV типті жазбаны жасау
 |`ACTION_SRV_RECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/srv/{SrvRecordUuid}`
-|SRV жазбасының параметрлерін өзгерту
+|SRV-жазбаның параметрлерін өзгерту
 |`ACTION_SRV_RECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/srv/{SrvRecordUuid}`
-|SRV түріндегі жазбаны оның идентификаторы бойынша жою
+|SRV-жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_SRV_RECORD_DELETE`
 
 3+|**TXT Record**
 
 |POST<br>`/v2/dns/{DnsUuid}/txt/`
-|DNS аймағы үшін берілген параметрлермен TXT түріндегі жазбаны жасау
+|DNS зонасы үшін берілген параметрлермен TXT типті жазбаны жасау
 |`ACTION_TXT_RECORD_CREATE`
 
 |PUT<br>`/v2/dns/{DnsUuid}/txt/{TxtRecordUuid}`
-|TXT жазбасының параметрлерін өзгерту
+|TXT-жазбаның параметрлерін өзгерту
 |`ACTION_TXT_RECORD_UPDATE`
 
 |DELETE<br>`/v2/dns/{DnsUuid}/txt/{TxtRecordUuid}`
-|TXT түріндегі жазбаны оның идентификаторы бойынша жою
+|TXT-жазбаны оның идентификаторы бойынша өшіру
 |`ACTION_TXT_RECORD_DELETE`
 
 3+|**Namespace**
 
 |POST<br>`/v2/namespaces/`
-|Атау кеңістігін жасау
+|Атаулар кеңістігін жасау
 |`ACTION_NAMESPACE_CREATE`
 
 |PUT<br>`/v2/namespaces/{NamespaceUuid}`
-|Атау кеңістігін өзгерту
+|Атаулар кеңістігін өзгерту
 |`ACTION_NAMESPACE_UPDATE`
 
 |DELETE<br>`/v2/namespaces/{NamespaceUuid}`
-|Атау кеңістігін идентификаторы бойынша жою
+|Атаулар кеңістігін идентификатор бойынша өшіру
 |`ACTION_NAMESPACE_DELETE`
 
 3+|**Purge DNS**
@@ -133,6 +133,6 @@ Public DNS Cloud Audit-ке жіберетін оқиғалар:
 |`ACTION_PURGE_DNS_UPDATE`
 
 |DELETE<br>`/v2/purge_dns/{PurgeDnsUuid}`
-|PurgeDns жою
+|PurgeDns өшіру
 |`ACTION_PURGE_DNS_DELETE`
 |===

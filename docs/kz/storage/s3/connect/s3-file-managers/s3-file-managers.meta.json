@@ -1,16 +1,16 @@
 {
   "title": "Файлдық менеджерлер",
-  "shortDescription": "VK Object Storage қоймасына Cyberduck, WinSCP, Диск-О:, S3FS арқылы қосылу",
-  "metaDescription": "VK Object Storage қоймасын файлдық менеджерлерде кезең-кезеңімен қосу: қатынауды баптау (Access/Secret Key), endpoint пен region көрсету, қосылымды тексеру және Cyberduck, WinSCP, Диск‑О: және S3FS үшін бөлек нұсқаулықтардағы типтік операциялар",
+  "shortDescription": "Cyberduck, WinSCP, Диск-О:, S3FS көмегімен VK Object Storage-қа қосу",
+  "metaDescription": "Файлдық менеджерлерде VK Object Storage-қа қадамдық қосу: рұқсат ету (Access/Secret Key) конфигурациясы, endpoint және регионды көрсету, байланысты тексеру және Cyberduck, WinSCP, Диск‑О: және S3FS үшін жеке нұсқаулықтардағы типтік операциялар",
   "sectionTitle": "Файлдық менеджерлер",
   "icon": "",
   "weight": 3,
+  "uuid": "298773d4-f51d-43d3-8a4a-9f915f54f35b",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "94d61112-7a96-4b9d-8eeb-2ce256c928d9"
+  }
 }

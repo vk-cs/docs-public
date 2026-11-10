@@ -3,11 +3,11 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_dns ресурсы",
   "sectionTitle": "ivkcs_dns ресурсы",
+  "uuid": "1945e626-9564-494b-8ff8-07867dca6fa6",
   "weight": 7,
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "aa201e3c-3d90-4a15-9162-2830675c6078"
+  }
 }

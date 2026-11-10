@@ -1,11 +1,11 @@
 {
   "title": "Lifecycle",
-  "shortDescription": "Тегтер мен префикстер бойынша ескірген объектілерді және олардың нұсқаларын автоматты түрде жою үшін бакетте өмірлік цикл ережелерін баптау",
-  "metaDescription": "VK Object Storage жүйесінде объектілердің өмірлік циклімен жұмыс істеуге арналған барлық қолжетімді әдістер: өмірлік цикл конфигурациясын қарау (GetBucketLifecycleConfiguration), өмірлік цикл ережелері бар конфигурацияны орнату (PutBucketLifecycle), өмірлік цикл конфигурациясын жою (DeleteBucketLifecycle)",
+  "shortDescription": "Бакетте объекттердің және олардың нұсқаларының ескіргенін автоматты түрде жою ережелерін тегтер мен префикстер бойынша баптау",
+  "metaDescription": "VK Object Storage-та объекттердің өмірлік циклімен жұмыс істеудің барлық қолжетімді әдістері: өмірлік цикл конфигурациясын көру (GetBucketLifecycleConfiguration), өмірлік цикл ережелері бар конфигурацияны орнату (PutBucketLifecycle), өмірлік цикл конфигурациясын жою (DeleteBucketLifecycle)",
   "sectionTitle": "Lifecycle",
   "icon": "",
   "weight": 5,
-  "uuid": "e752be32-db97-4f19-969b-d73afab63693",
+  "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676",
   "build": {
     "for": [
       "public"

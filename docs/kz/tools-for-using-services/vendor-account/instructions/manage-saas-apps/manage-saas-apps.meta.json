@@ -1,0 +1,14 @@
+{
+  "title": "SaaS-қосымшаларын басқару",
+  "shortDescription": "SaaS-қосымшасын Marketplace-ке қалай қосуға немесе жаңартуға болады",
+  "metaDescription": "VK Cloud бұлттық платформасынан алынған шаблон негізінде SaaS-брокерді әзірлеу жағдайына арналған SaaS-қосымшаларын Marketplace-ке қосу және оларды жаңарту бойынша нұсқаулық.",
+  "sectionTitle": "SaaS-қосымшаларын басқару",
+  "weight": 5,
+  "isBeta": true,
+  "uuid": "9d701d79-19f3-4865-aa8d-4dbc84d79887",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

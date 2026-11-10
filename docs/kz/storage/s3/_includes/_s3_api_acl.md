@@ -18,6 +18,7 @@ ACL-ді бакет жасағанда немесе объект жүктеге�
 
 ## {heading(ACL конфигурациясының XML-құрылымы)[id=api-spec-s3-acl-request-body]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 XML форматындағы ACL конфигурациясы келесі элементтерден тұрады:
 
 - `<Owner>` — бакет немесе объект орналасқан {linkto(#api-spec-s3-acl-project)[text=жобаның]} идентификаторын (`ID`) және атауын (`DisplayName`) қамтиды. `ID` және `DisplayName` мәндерін алу үшін бакеттің ACL-і туралы ақпаратты {ifdef(public)}{linkto(/kz/storage/s3/instructions/access-management/acl#s3-instructions-bucket-acl-view)[text=сұратыңыз]}{/ifdef}{ifdef(s3,s3-pdf)}{linkto(../../instructions/access-management/acl#s3-instructions-bucket-acl-view)[text=сұратыңыз]}{/ifdef}.

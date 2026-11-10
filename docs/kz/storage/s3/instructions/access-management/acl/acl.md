@@ -1,6 +1,6 @@
-# {heading(Қолжетімділікті басқару тізімдері)[id=s3-instructions-acl]}
+# {heading(Рұқсаттарды басқару тізімдері)[id=s3-instructions-acl]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Бакеттің ACL-ін алу)[id=s3-instructions-bucket-acl-view]} 
 
@@ -8,7 +8,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер бұған дейін бапталмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} баптаңыз.
+1. Бұрын орындалмаса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді баптаңыз.
 1. Консольде команданы орындаңыз:
 
    ```console
@@ -16,15 +16,15 @@
    ```
    Мұнда:
 
-   - `<ИМЯ_БАКЕТА>` — ACL-ін алу қажет бакеттің атауы.
+   - `<ИМЯ_БАКЕТА>` — ACL-і алу қажет бакеттің атауы.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
@@ -42,7 +42,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-get-bucket-acl)[text=Сервис REST API]} ішіндегі `GET /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-get-bucket-acl)[text=REST API]-нің} `GET /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -54,7 +54,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. Консольде команданы орындаңыз:
 
    ```console
@@ -63,21 +63,21 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
-   - `<КЛЮЧ_ОБЪЕКТА>` — объектінің толық атауы, оған дейінгі жолды қоса.
-   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
+   - `<КЛЮЧ_ОБЪЕКТА>` — жолын қоса алғанда объектінің толық атауы.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версиялауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа қолданылады.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
 
-   `kuber_backup` бакетіндегі `backups/keycloak/keycloak.tar.gz` объектісі үшін ACL-ді шығару командасының мысалы:
+   `kuber_backup` бакетіндегі `backups/keycloak/keycloak.tar.gz` объектісінің ACL-ін шығару командасының мысалы:
 
    ```console
    aws s3api get-object-acl --output text --no-cli-pager --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --endpoint-url https://hb.vkcloud-storage.ru
@@ -90,7 +90,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-get-object-acl)[text=Сервис REST API]} ішіндегі `GET /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-get-object-acl)[text=REST API]-нің} `GET /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -100,7 +100,7 @@
 
 {note:info}
 
-Бакет үшін ACL объектінің ACL-іне қолданылмайды.
+Бакетке орнатылған ACL объектінің ACL-іне таралмайды.
 
 {/note}
 
@@ -110,7 +110,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. {linkto(../../../api/acl#api-spec-s3-acl-request-body)[text=ACL конфигурациясы]} бар файлды дайындаңыз.
 1. Консольде команданы орындаңыз:
 
@@ -122,13 +122,13 @@
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
    - `<ИМЯ_ФАЙЛА>` — ACL конфигурациясы бар файлдың атауы.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
@@ -139,7 +139,7 @@
    aws s3api put-bucket-acl --output text --no-cli-pager --bucket kuber_backup --access-control-policy file://acl.json --endpoint-url https://hb.vkcloud-storage.ru
    ```
 
-   `AllUsers` метатобына оқу (`READ`) құқықтарын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
+   `AllUsers` метатобына оқу (`READ`) құқығын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
 
    ```json
    {
@@ -166,7 +166,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=Сервис REST API]} ішіндегі `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -178,7 +178,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. Команданы орындаңыз:
 
    ```console
@@ -191,34 +191,34 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
-   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — бакет үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]} атауы.
+   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — бакет үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]-дің} атауы.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
 {/tab}
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=Сервис REST API]} ішіндегі `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
 {/tabs}
 
-### {heading(Бакет үшін жекелеген ACL рұқсаттарын орнату)[id=s3-instructions-bucket-acl-add-permission]}
+### {heading(Бакет үшін жеке ACL рұқсаттарын орнату)[id=s3-instructions-bucket-acl-add-permission]}
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. Команданы орындаңыз:
 
    ```console
@@ -238,8 +238,8 @@
      - `grant-read-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ_ACP` орнатылады.
      - `grant-write-acp` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE_ACP` орнатылады.
      - `grant-full-control` — бакет үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `FULL_CONTROL` орнатылады.
-      
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — бакет үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
+
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — бакет үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=рұқсат алушы]}:
 
      - `id=<ID_ПРОЕКТА>` — жобаның ID-і;
      - `emailaddress=<PID_ПРОЕКТА>` — жобаның PID-і;
@@ -247,18 +247,18 @@
      - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — `AllUsers` метатобы.
 
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
 
-   `kuber_backup` бакеті үшін `AllUsers` метатобына оқу (`READ`) рұқсатын беру командасының мысалы:
+   `kuber_backup` бакеті үшін `AllUsers` метатобына оқу (`READ`) құқығын беру командасының мысалы:
 
    ```console
    aws s3api put-bucket-acl --bucket kuber_backup --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers --endpoint-url https://hb.vkcloud-storage.ru
@@ -269,7 +269,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=Сервис REST API]} ішіндегі `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -283,7 +283,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. {linkto(../../../api/acl#api-spec-s3-acl-request-body)[text=ACL конфигурациясы]} бар файлды дайындаңыз.
 1. Консольде команданы орындаңыз:
 
@@ -293,17 +293,17 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
-   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің, жолын қоса алғанда, толық атауы.
    - `<ИМЯ_ФАЙЛА>` — ACL конфигурациясы бар файлдың атауы.
-   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версиялауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа қолданылады.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
@@ -314,7 +314,7 @@
    aws s3api put-object-acl --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --access-control-policy file://acl.json --endpoint-url https://hb.vkcloud-storage.ru
    ```
 
-   Барлық {var(cloud)} жобаларындағы барлық авторизацияланған {var(s3)} пайдаланушыларына оқу (`READ`) құқығын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
+   {var(s3)} {ifdef(public)}{var(cloud)}-ның барлық жобаларындағы{/ifdef}{ifdef(s3,s3-pdf)}инсталляциясының{/ifdef} барлық авторизацияланған пайдаланушыларына оқу (`READ`) құқығын беру үшін JSON форматындағы ACL конфигурация файлының мысалы:
 
    ```json
    {
@@ -341,7 +341,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=Сервис REST API]} ішіндегі `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -353,7 +353,7 @@
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. Команданы орындаңыз:
 
    ```console
@@ -368,36 +368,36 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
-   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
-   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — объект үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]} атауы.
-   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
+   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің, жолын қоса алғанда, толық атауы.
+   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — объект үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]-дің} атауы.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версиялауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа қолданылады.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
 {/tab}
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=Сервис REST API]} ішіндегі `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
 {/tabs}
 
-### {heading(Объект үшін жекелеген ACL рұқсаттарын орнату)[id=s3-instructions-object-acl-add-permission]}
+### {heading(Объект үшін жеке ACL рұқсаттарын орнату)[id=s3-instructions-object-acl-add-permission]}
 
 {tabs}
 
 {tab(AWS CLI)}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
+1. Әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]}-ді орнатып, баптаңыз.
 1. Команданы орындаңыз:
 
    ```console
@@ -412,7 +412,7 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
-   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің толық атауы, оған дейінгі жолды қоса.
+   - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің, жолын қоса алғанда, толық атауы.
    - `<ВИД_РАЗРЕШЕНИЯ>` — келесі нұсқалар қолжетімді:
 
      - `grant-read` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `READ` орнатылады.
@@ -421,27 +421,27 @@
      - `grant-write-acp` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `WRITE_ACP` орнатылады.
      - `grant-full-control` — объект үшін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permissions)[text=рұқсат]} `FULL_CONTROL` орнатылады.
 
-   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=алушы]}:
+   - `<ПОЛУЧАТЕЛЬ_РАЗРЕШЕНИЯ>` — объект үшін рұқсат берілетін {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-permittees)[text=рұқсат алушы]}:
 
      - `id=<ID_ПРОЕКТА>` — жобаның ID-і;
      - `emailaddress=<PID_ПРОЕКТА>` — жобаның PID-і;
      - `uri=http://acs.amazonaws.com/groups/global/AuthenticatedUsers` — `AuthenticatedUsers` метатобы;
      - `uri=http://acs.amazonaws.com/groups/global/AllUsers` — `AllUsers` метатобы.
 
-   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=нұсқалау]} қосылған бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. `--version-id` параметрі көрсетілмесе, объектінің ағымдағы нұсқасы пайдаланылады.
+   - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версиялауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа қолданылады.
      {ifdef(public)}
-   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес келуі тиіс:
+   - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірі үшін;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірі үшін.
      {/ifdef}
      {ifdef(s3,s3-pdf)}
-   - `<ENDPOINT_URL>` — {var(s3)} инсталляцияңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің нақты форматын білу үшін әкімшіңізге жүгініңіз.
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме. Атау форматы өзгеше болуы мүмкін. Сілтеменің дәл форматын білу үшін әкімшіңізге хабарласыңыз.
      {/ifdef}
 
    {cut(Команда мысалы)}
 
-   `kuber_backup` бакетінің `keycloak.tar.gz` объектісі үшін `AllUsers` метатобына оқу (`READ`) рұқсатын беру командасының мысалы:
+   `kuber_backup` бакетінің `keycloak.tar.gz` объектісі үшін `AllUsers` метатобына оқу (`READ`) құқығын беру командасының мысалы:
 
    ```console
    aws s3api put-object-acl --endpoint-url https://hb.vkcloud-storage.ru --bucket kuber_backup --key backups/keycloak/keycloak.tar.gz --grant-read uri=http://acs.amazonaws.com/groups/global/AllUsers
@@ -452,7 +452,7 @@
 
 {tab(API)}
 
-{linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=Сервис REST API]} ішіндегі `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 

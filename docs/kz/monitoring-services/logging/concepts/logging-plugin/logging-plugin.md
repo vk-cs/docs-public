@@ -1,6 +1,6 @@
 # {heading(Логтау плагині)[id=logging-logging-plugin]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Пайдаланушы қолданбаларының логтарын Cloud Logging сервисіне жіберу `vkcloudlogs-fluent-bit-plugin` логтау плагині арқылы қосылып, бапталады. Ол [Fluent Bit](https://docs.fluentbit.io/manual) сервисі ұсынатын [Golang-плагиндеріне](https://docs.fluentbit.io/manual/development/golang-output-plugins) арналған интерфейспен жұмыс істейді.
 

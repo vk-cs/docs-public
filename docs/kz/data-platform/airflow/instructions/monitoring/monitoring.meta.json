@@ -1,0 +1,14 @@
+{
+  "title": "Мониторинг",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Airflow қызметінің орналастырылған даналарының жұмыс метрикаларын қалай көруді біліңіз",
+  "sectionTitle": "Мониторинг",
+  "weight": 6,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "f98d5bda-5033-40fd-9215-fe84474f37e9"
+}

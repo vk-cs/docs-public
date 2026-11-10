@@ -65,7 +65,7 @@ VK Cloud жобасында Alfresco сервисін өрістету үшін:
 
    {note:info}
 
-   Егер қол жеткізу деректері жоғалса, жаңаларын [жасап шығарыңыз](../../instructions/pr-instance-manage#update_access).
+   Егер қол жеткізу деректері жоғалса, жаңаларын [жасап шығарыңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

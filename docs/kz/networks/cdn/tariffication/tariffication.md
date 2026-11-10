@@ -1,6 +1,6 @@
 # {heading(Тарифтелуі)[id=cdn-tariffication]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Тарифтелуі туралы)[id=cdn-tariffication-about]}
 
@@ -8,7 +8,6 @@
 
 Қызмет құны [прайс-парақта](https://cloud.vk.kz/pricelist) көрсетілген. {var(cloud)} сервистерінің төлеміне қатысты құралдардың қалай жұмыс істейтіні туралы [Биллинг](../../../intro/billing) бөлімінен оқыңыз.
 
-## {heading(Тарифтеледі)[id=cdn-tariffication-charged]}
+## {heading(Тарификацияланады)[id=cdn-tariffication-charged]}
 
-Кэштейтін CDN серверлеріне кіріс және шығыс трафигі.
-
+CDN кэштеу серверлеріне кіретін және шығатын трафик.

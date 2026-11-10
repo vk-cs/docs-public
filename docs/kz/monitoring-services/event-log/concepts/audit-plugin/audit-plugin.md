@@ -1,25 +1,25 @@
 # {heading(Деректер қабатының аудит плагині)[id=event-log-audit-plugin]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Cloud Audit сервисіне деректер қабатының (data plane) логтарын жіберу `vkcloudaudit-fluent-bit-plugin` логтау плагині арқылы қосылады және бапталады. Ол [Golang-плагиндерге](https://docs.fluentbit.io/manual/development/golang-output-plugins) арналған интерфейспен жұмыс істейді, оны [Fluent Bit](https://docs.fluentbit.io/manual) сервисі ұсынады.
+Cloud Audit сервисінде деректер қабатының (data plane) логтарды жіберуі `vkcloudaudit-fluent-bit-plugin` журналдау плагині көмегімен қосылады және бапталады. Ол [Fluent Bit](https://docs.fluentbit.io/manual) сервисі ұсынатын [Golang-плагиндер интерфейсімен](https://docs.fluentbit.io/manual/development/golang-output-plugins) жұмыс істейді.
 
 Деректер қабаты үшін оқиға көздерінің мысалдары:
 
 - Kubernetes (Kubernetes auditing);
 - Операциялық жүйе (auditd қызметі).
 
-Kubernetes сияқты кейбір көздерден оқиғаларды жинау аудит сервисіне әлдеқашан біріктірілген.
-Плагинді қосымша баптау арқылы кез келген басқа көздерді қоса аласыз.
+Кейбір көздерден, мысалы Kubernetes, оқиғаларды жинау аудит сервисіне бұрыннан интеграцияланған.
+Басқа кез келген көздерді қоса аласыз, плагинді өз бетінше {linkto(../../instructions/connect-plugin#event-log-connect-plugin)[text=орнатып, баптау]} арқылы.
 
-## {heading(Плагинді авторизациялау параметрлері)[id=event-log-auth-parameters]}
+## {heading(Плагин авторизациясының параметрлері)[id=event-log-auth-parameters]}
 
 [cols="1,1,2,2", options="header"]
 |===
 | Параметр
 | Міндетті
 | Сипаттамасы
-| Қайдан табуға болады
+| Қай жерде табуға болады
 
 | `auth_type`
 | ![](../../../../assets/check.svg "inline")
@@ -28,57 +28,57 @@ Kubernetes сияқты кейбір көздерден оқиғаларды ж�
 - `keystone`;
 - `disabled`.
 
-Әдепкі бойынша: `keystone`
+Әдепкі: `keystone`
 |<!--- no ---!>
 
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Keystone сервисінің эндпоинті
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Auth URL параметрі
+| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Auth URL параметрі
 
 | `auth_timeout`
 | ![](../../../../assets/no.svg "inline")
-| Пайдаланушының есептік деректерін тексеру кезінде қолданба аутентификация сервисінен жауап күтетін ең ұзақ уақыт.
+| Қолданбаның пайдаланушы деректерін тексеру кезінде аутентификация сервисінен жауап күтетін максималды уақыты.
 
-Әдепкі бойынша: `5s`
+Әдепкі: `5s`
 |<!--- no ---!>
 
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Логтар жазылатын {var(cloud)} жобасының идентификаторы
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Project ID параметрі.
+| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Project ID параметрі.
 
 Мысал: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
-Оны `mcs1234567890` түріндегі Project Name атауымен шатастырмаңыз
+`mcs1234567890` түріндегі Project Name-мен шатастырмаңыз
 
 | `user_id`
 | ![](../../../../assets/no.svg "inline")
-| Логтар жазылатын пайдаланушының ID-і
+| Логтар жазылатын пайдаланушының ID-сы
 | <!--- no --->
 
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логтар жазылатын пайдаланушының логині
-| {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/any/project/keys) орналасқан Username параметрі
+| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Username параметрі
 
 | `password`
 | ![](../../../../assets/no.svg "inline")
 | Логтар жазылатын пайдаланушының құпиясөзі
-| `user_name` үшін {var(cloud)} жеке кабинетіне кіру құпиясөзі пайдаланылады
+| `user_name` үшін {var(cloud)} жеке кабинетіне кіру құпиясөзі қолданылады
 
 | `key_file`
 | ![](../../../../assets/no.svg "inline")
-| `user_id` және `password` мәндерін қамтитын JSON файлы
+| `user_id` және `password` мәндерін қамтитын JSON-файл
 | <!--- no --->
 
 |===
 
-Пайдаланушының есептік деректерін көрсетудің рұқсат етілген нұсқалары:
+Пайдаланушы деректемелерін көрсетудің рұқсат етілген нұсқалары:
 
 - `user_id` және `password`;
 - `key_file`;
-- `user_name` және `password` (мысалы, {var(cloud)} жеке кабинетіне кіруге арналған логиніңіз бен құпиясөзіңіз).
+- `user_name` және `password` (мысалы, {var(cloud)} жеке кабинетіне кіру үшін сіздің логиніңіз бен құпиясөзіңіз).
 
 ## {heading(Плагинді баптау параметрлері)[id=event-log-conf-parameters]}
 

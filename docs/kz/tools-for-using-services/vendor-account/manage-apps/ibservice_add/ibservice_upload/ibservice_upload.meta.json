@@ -1,13 +1,13 @@
 {
-  "title": "image-based қолданбасын дүкенге жүктеу",
+  "title": "Image-based қолданбаны дүкенге жүктеу",
   "shortDescription": "",
-  "metaDescription": "image-based қолданбасын дүкенге жүктеу",
-  "sectionTitle": "image-based қолданбасын дүкенге жүктеу",
+  "metaDescription": "Image-based қолданбаны дүкенге жүктеу",
+  "sectionTitle": "Image-based қолданбаны дүкенге жүктеу",
   "weight": 6,
+  "uuid": "562ef0d4-853d-4e63-8527-439643abbc10",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "f48d9b38-ce0a-4ae8-8151-59af7a0a9155"
+  }
 }

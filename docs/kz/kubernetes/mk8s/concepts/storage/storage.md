@@ -1,6 +1,6 @@
 # {heading(Кластердегі сақтау қоймасы)[id=mk8s-storage]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Kubernetes кластеріндегі деректер бірнеше тәсілмен сақталуы мүмкін: тікелей контейнерде немесе _томдарда_ (volumes). Деректерді контейнерде сақтау кезінде мынадай мәселелер туындайды:
 
@@ -38,30 +38,30 @@ PV-ні көшіруге немесе жоюға оны түйіндер тоб�
 
 - [Файлдық сақтау қоймалары](https://www.snia.org/education/what-is-nas), [NFS](https://www.ibm.com/docs/en/aix/7.1?topic=management-network-file-system) және [CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview) протоколдары арқылы қосылады.
 
-## {heading(Container Storage Interface (CSI) интерфейсімен жұмыс істеу)[id=mk8s-storage-csi]}
+## {heading(Container Storage Interface (CSI) деп жұмыс істеу)[id=mk8s-storage-csi]}
 
-VK Cloud-та Kubernetes кластерлері блоктық сақтау қоймаларымен интеграция үшін [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) пайдаланады.
+{var(cloud)} қызметіндегі Kubernetes кластерлері блоктық жадтармен интеграция үшін [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) қолданады.
 
-Kubernetes кластерінде Cinder CSI арқылы қолжетімді сақтау қоймаларының түрлері VK Cloud блоктық сақтау қоймаларымен мынадай түрде сәйкестенеді:
+Kubernetes кластерінде Cinder CSI арқылы қолжетімді жад түрлері {var(cloud)} блоктық жадтарымен мынадай түрде сәйкес келеді:
 
-- Ceph SSD Cinder-дегі `ceph-ssd` түріне сәйкес келеді.
-- High-IOPS SSD Cinder-дегі `high-iops` түріне сәйкес келеді.
-- High-IOPS HA SSD Cinder-дегі `high-iops-ha` түріне сәйкес келеді.
+- Ceph SSD — Cinder-де `ceph-ssd` сәйкес.
+- High-IOPS SSD — Cinder-де `high-iops` сәйкес.
+- High-IOPS HA SSD — Cinder-де `high-iops-ha` сәйкес.
 
-Cinder CSI қолдану мыналарға мүмкіндік береді:
+Cinder CSI қолдану мүмкіндік береді:
 
-- Блоктық сақтау қоймалары негізінде PV-лерді статикалық (static provisioning) және динамикалық (dynamic provisioning) түрде {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=дайындауға]}.
+- Блоктық жадтар негізінде PV-ді статикалық (static provisioning) және динамикалық (dynamic provisioning) түрде {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=дайындауға]}.
 
-  Томды динамикалық дайындау кезінде алдын ала бапталған сақтау кластарын пайдалануға болады.
+  Томды динамикалық дайындау кезінде алдын ала бапталған жад классарын қолдануға болады.
 
-- PV-лерді автоматты түрде қайта монтаждауға:
+- PV-ді автоматты түрде қайта тіркеу (перемонтирование):
 
-  - Томды пайдаланатын под немесе под орналасқан worker-түйін істен шыққанда (под осы немесе басқа түйінде қайта қалпына келтіріледі деген шартпен).
-  - Томды пайдаланатын под бір worker-түйіннен екіншісіне көшірілгенде.
+  - Томды қолданатын под сәтсіздікке ұшырағанда немесе под орналасқан worker-торабы істен шыққанда (под осы немесе басқа торапта қалпына келтірілетін жағдайда).
+  - Томды қолданатын под бір worker-торабынан екіншісіне көшірілгенде.
 
-- PV пайдаланатын VK Cloud сақтау қоймасын басқаруға:
-  - Томды динамикалық дайындау кезінде VK Cloud-та осы томға сәйкес келетін диск автоматты түрде жасалады.
-  - Егер том үшін `Delete` босату саясаты орнатылса, онда PVC жойылғаннан кейін онымен байланысты том және осы томға сәйкес VK Cloud-тағы диск жойылады.
+- PV қолданатын {var(cloud)} жадын басқару:
+  - Том динамикалық түрде дайындалғанда {var(cloud)} қызметінде оған сәйкес диск автоматты түрде жасалады.
+  - Том үшін `Delete` босату саясаты орнатылған болса, PVC жойылғаннан кейін онымен байланысты том және {var(cloud)} қызметіндегі сәйкес диск жойылады.
 
 ## {heading(Тұрақты томдарды босатудың қолжетімді саясаттары)[id=mk8s-storage-reclaim-policies]}
 
@@ -81,16 +81,16 @@ PV үшін осы томмен байланысты PVC жойылған кез
 
   {/note}
 
-## {heading(Алдын ала бапталған сақтау кластары)[id=mk8s-storage-storage-classes]}
+## {heading(Алдын ала бапталған сақтау сыныптары)[id=mk8s-storage-storage-classes]}
 
-Тұрақты томды {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=динамикалық дайындау]} кезінде сақтау класын көрсету қажет. Әдепкі сақтау класы Managed Containers кластерлерінде бапталмаған. Әдепкі класты өзіңіз таңдай аласыз немесе PVC жасау кезінде қажетті класты нақты көрсете аласыз.
+Тұрақты томның {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=динамалық дайындауын]}} пайдаланған кезде сақтау сыныбын көрсету қажет. Managed Containers қызметінде Kubernetes кластерлері үшін әдепкі сақтау сыныбы бапталмаған. Әдепкі сыныпты өз бетінше таңдауға болады немесе PVC жасаған кезде қажетті сыныпты анық көрсетуге болады.
 
-Managed Containers сервисінде блоктық сақтау қоймалары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау кластары бар. Олар тұрақты томды динамикалық дайындау кезінде пайдалануға болатын әртүрлі сақтау түрлерін ұсынады:
+Managed Containers қызметінде блоктық сақтау құрылғылары үшін Cinder CSI пайдаланатын алдын ала бапталған сақтау сыныптары бар. Олар тұрақты томды динамикалық дайындау кезінде пайдалануға болатын сақтау құрылғыларының әртүрлі түрлерін ұсынады:
 
-- Белгілі бір {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңір]} үшін қолжетімділік аймағын көрсете отырып. 
-- Кез келген өңір мен қолжетімділік аймағы үшін. Мұндай сақтау кластары мультиаймақтық деп аталады. Олармен жұмыс істеу туралы толығырақ {linkto(../../how-to-guides/multiaz-storage-class#mk8s-multiaz-storage-class)[text=Мультиаймақтық сақтау кластарын пайдалану]} бөлімінде берілген.
+- Белгілі бір {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңір]}} үшін қолжетімділік аймағын көрсетумен.
+- Кез келген өңір мен қолжетімділік аймағы үшін. Мұндай сақтау сыныптары көпаймақты деп аталады. Олармен жұмыс істеу туралы толығырақ {linkto(../../how-to-guides/multiaz-storage-class#mk8s-multiaz-storage-class)[text=Көпаймақты сақтау сыныптарын пайдалану]} бөлімінде.
 
-Әрбір сақтау класына тұрақты томдарды босатудың өз саясаты сәйкес келеді.
+Әр сақтау сыныбына тұрақты томдарды босату саясаты сәйкес келеді.
 
 {tabs}
 
@@ -99,8 +99,8 @@ Managed Containers сервисінде блоктық сақтау қоймал
 [cols="1,1,1,1", options="header"]
 |===
 
-| Сақтау класының атауы
-| Cinder CSI сақтау түрі
+| Сақтау сыныбының атауы
+| Cinder CSI сақтау құрылғысының түрі
 | Қолжетімділік аймағы
 | Reclaim Policy
 
@@ -125,7 +125,7 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | Retain
 
 | csi-ceph-ssd-pa2                
-|`ceph-ssd`
+| `ceph-ssd`
 | PA2                 
 | Delete
 
@@ -154,16 +154,6 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | ME1                 
 | Retain
 
-| csi-high-iops-pa2               
-| `high-iops`
-| PA2                 
-| Delete
-
-| csi-high-iops-pa2-retain        
-| `high-iops`
-| PA2              
-| Retain
-
 | csi-highops-ha-me1              
 | `high-iops-ha`
 | ME1                 
@@ -175,20 +165,20 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | Retain
 |===
 
-Жоғарыда аталған барлық сақтау кластары:
+Аталған барлық сақтау сыныптары:
 
-- Томды ұлғайтуға рұқсат береді (`allowVolumeExpansion: true`).
-- Томды дереу бөлу мен байланыстыруды пайдаланады (`volumeBindingMode: Immediate`).
+- Томның ұлғаюына рұқсат етеді (`allowVolumeExpansion: true`).
+- Томның бірден бөлінуі және байланыстырылуын пайдаланады (`volumeBindingMode: Immediate`).
 
 {/tab}
 
-{tab(Кез келген өңір мен қолжетімділік аймағы үшін)}
+{tab(Кез келген өңір және қолжетімділік аймағы үшін)}
 
 [cols="1,1,1",options="header"]
 |===
 
-| Сақтау класының атауы
-| Cinder CSI сақтау түрі
+| Сақтау сыныбының атауы
+| Cinder CSI сақтау құрылғысының түрі
 | Reclaim Policy
 
 | csi-ceph-ssd                    
@@ -216,10 +206,10 @@ Managed Containers сервисінде блоктық сақтау қоймал
 | Retain
 |===
 
-Жоғарыда аталған барлық сақтау кластары:
+Аталған барлық сақтау сыныптары:
 
-- Томды ұлғайтуға рұқсат береді (`allowVolumeExpansion: true`).
-- Тиісті {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=PersistentVolumeClaim]} пайдаланатын бірінші под жасалған сәтке дейін томды жасау мен байланыстыруды кейінге қалдырады (`volumeBindingMode: WaitForFirstConsumer`).
+- Томның ұлғаюына рұқсат етеді (`allowVolumeExpansion: true`).
+- Томды жасау және байланыстыруды сәйкес {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=PersistentVolumeClaim]} пайдаланатын алғашқы под жасалған сәтке дейін кейінге қалдырады (`volumeBindingMode: WaitForFirstConsumer`).
 
 {/tab}
 

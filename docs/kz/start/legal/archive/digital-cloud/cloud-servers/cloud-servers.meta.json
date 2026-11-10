@@ -1,0 +1,16 @@
+{
+  "title": "«Cloud Servers» сервисіне арналған пайдаланушы келісімі",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «Цифровое облако» ЖШС (бұдан әрі – «Компания») Сізбен пайдаланушы келісімін (бұдан әрі – «Келісім») жасасуға арналған ресми ұсыныс болып табылады",
+  "sectionTitle": "«Cloud Servers» сервисіне арналған пайдаланушы келісімі",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "ecbf43f4-8ceb-4519-97f7-c5b9942df6ab",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "title": "Әрекеттер тәртібі",
+  "title": "Әрекеттер реті",
   "shortDescription": "",
-  "metaDescription": "Әрекеттер тәртібі",
-  "sectionTitle": "Әрекеттер тәртібі",
+  "metaDescription": "Әрекеттер реті",
+  "sectionTitle": "Әрекеттер реті",
   "weight": 1,
+  "uuid": "c31b8e51-c724-437f-ae82-ec4aa5e52c9a",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "5e4c82cc-bf4a-40cd-8dec-a41c0fb1d788"
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "title": "Terraform-манифестін жергілікті тестілеу",
+  "sectionTitle": "Terraform-манифестін жергілікті тестілеу",
+  "shortDescription": "Image-based қосымшаның Terraform манифестін жергілікті тестілеу бойынша нұсқаулық",
+  "metaDescription": "Image-based қосымшаңыз үшін бұлттық инфрақұрылымды сипаттайтын Terraform манифестін жергілікті тестілеу және оны орналастыру реті бойынша нұсқаулық.",
+  "icon": "",
+  "weight": 3,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": "25710b49-fecb-47b7-9c85-ba9b0a366fb7"
+}

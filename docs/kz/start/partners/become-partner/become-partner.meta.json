@@ -1,11 +1,12 @@
 {
-  "title": "Серіктес қалай болуға болады",
-  "shortDescription": "Серіктестікке апаратын жолдағы қадамдар",
-  "metaDescription": "Бізбен бірге бизнесіңізді дамытып, табыс табыңыз!",
-  "sectionTitle": "Серіктес қалай болуға болады",
+  "title": "Партнёр болу қалай",
+  "shortDescription": "Партнёрлікке жету жолының қадамдары",
+  "metaDescription": "Бизнесті дамытып, бізбен бірге табыс табыңыз!",
+  "sectionTitle": "Партнёр болу қалай",
   "icon": "",
   "disableGithub": true,
   "weight": 2,
+  "uuid": "23fa7d00-bcca-4c80-af36-8080b477c623",
   "build": {
     "for": [
       "public",
@@ -19,6 +20,5 @@
       "data-p",
       "data-p-pdf"
     ]
-  },
-  "uuid": "bb10b2f6-8597-495b-aa2a-3bd715d3b185"
+  }
 }

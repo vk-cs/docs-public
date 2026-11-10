@@ -1,9 +1,5 @@
-# {heading(Логтау)[id=clickhouse-logs]}
+# {heading(Журналдау)[id=clickhouse-logs]}
 
-{ifdef(public)}
-{include(/kz/_includes/_dp-unavailable.md)}
-{/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {include(../../../_includes/_logs.md)[tags=logs_info]}

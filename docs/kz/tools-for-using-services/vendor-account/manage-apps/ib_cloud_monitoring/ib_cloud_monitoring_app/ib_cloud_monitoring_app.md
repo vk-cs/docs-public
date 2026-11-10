@@ -1,18 +1,18 @@
-# {heading(Image-based қолданбаның метрикалары)[id=ib_cloud_monitoring_app]}
+# {heading(Image-based қосымшаның метрикалары)[id=ib_cloud_monitoring_app]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Метрикаларды жинау)[id=collect_metrics]}
 
-ВМ-нің жүйелік метрикаларына қосымша image-based қолданбаның метрикаларын жинау үшін:
+ВМ жүйелік метрикаларына қоса image-based қосымшаның метрикаларын жинау үшін:
 
-1. ВМ-нің жүйелік метрикаларын жинауды баптаңыз (толығырақ — {linkto(../ib_cloud_monitoring_telegraf#ib_cloud_monitoring_telegraf)[text=%text]} бөлімінде).
-1. Image-based қолданбаның сервистік пакетінің құрамындағы `plans/<PLAN_NAME>/deployment/deploy.tf` манифестінде prometheus-плагинін баптаңыз:
+1. ВМ жүйелік метрикаларын жинауды баптаңыз (толығырақ — {linkto(../ib_cloud_monitoring_telegraf#ib_cloud_monitoring_telegraf)[text=%text]} бөлімінде).
+1. Image-based қосымшаның сервистік пакетінің құрамындағы `plans/<PLAN_NAME>/deployment/deploy.tf` манифестінде prometheus-плагинді баптаңыз:
 
-   1. `/etc/telegraf/telegraf.d` директориясында `metrics.conf` файлын жасап, prometheus-плагинінің баптауларын көрсетіңіз.
-   1. Егер `/etc/telegraf/telegraf.d/` директориясына (ондағы барлық файлдармен бірге) `telegraf` иесі мен `telegraf` тобы тағайындалмаған болса, оларды тағайындаңыз.
+   1. `/etc/telegraf/telegraf.d` каталогінде `metrics.conf` файлын жасап, prometheus-плагинінің баптауларын көрсетіңіз.
+   1. Егер `/etc/telegraf/telegraf.d/` каталогіне (барлық файлдарымен бірге) `telegraf` иесі мен `telegraf` тобы тағайындалмаса, оларды тағайындаңыз.
 
-      {caption(prometheus-плагинін баптау)[align=left;position=above]}
+      {caption(Prometheus-плагинді баптау)[align=left;position=above]}
       ```hcl
       resource "ivkcs_agent_exec" "monitoring" {
       ...
@@ -22,18 +22,19 @@
           content = <<-EOC
       #!/bin/bash
       ...
-      # Создание файла metrics.conf
+
+      # metrics.conf файлын жасау
       cat <<EOT > /etc/telegraf/telegraf.d/metrics.conf
 
-      # Prometheus-плагин
+      # Prometheus-плагині
       [[inputs.prometheus]]
         name_override = "<NAME>"
         urls = ["<METRICS_URL>"]
-        # Представление метрик через field key с сохранением тегов
+        # Метрикаларды тегтерді сақтай отырып field key арқылы көрсету
         metric_version = 2
       EOT
 
-      # Назначение владельца и группы на директорию telegraf.d и файлы в ней
+      # telegraf.d каталогіне және ондағы файлдарға ие мен топты тағайындау
       chown -R telegraf:telegraf /etc/telegraf/telegraf.d/
 
       EOC
@@ -46,12 +47,12 @@
 
    Мұнда:
 
-   * `<NAME>` — метрикалар префиксі. Мән бос болмауы тиіс. Егер `name_override` параметрі көрсетілмесе, әдепкі мән — `prometheus` қолданылады.
-   * `<METRICS_URL>` — image-based қолданба метрикаларды беретін URL-мекенжай. Мысалы, `http://localhost:8428/metrics`.
+   * `<NAME>` — метрикалардың префиксі. Мән бос болмауы керек. Егер `name_override` параметрі көрсетілмесе, әдепкі мән — `prometheus` қолданылады.
+   * `<METRICS_URL>` — image-based қосымша метрикаларды береді URL-мекенжайы. Мысалы, `http://localhost:8428/metrics`.
 
 ## {heading(Жиналған метрикалардың мысалы)[id=collected_metrics_example]}
 
-Мысалы, image-based қолданба `http://localhost:8428/metrics` мекенжайы бойынша метрикаларды мына форматта береді:
+Мысалы, image-based қосымша метрикаларды `http://localhost:8428/metrics` мекенжайы бойынша келесі форматта береді:
 
 ```txt
 go_gc_duration_seconds{quantile="0"} 0
@@ -63,17 +64,18 @@ vm_app_version{version="victoria-metrics-20240301-000115-tags-v1.93.13-0-g26266a
 vm_allowed_memory_bytes 4933135564
 ```
 
-`metrics.conf` файлында prometheus-плагині бапталған:
+`metrics.conf` файлында prometheus-плагіні бапталған:
 
 ```txt
 [[inputs.prometheus]]
   name_override = "victoria"
   urls = ["http://localhost:8428/metrics"]
-  # Представление метрик через field key с сохранением тегов
+
+# Метрикаларды тегтерді сақтай отырып field key арқылы көрсету
   metric_version = 2
 ```
 
-Бұл жағдайда мониторинг агенті метрикаларды Cloud Monitoring-ке мына форматта жібереді:
+Бұл жағдайда мониторинг агенті метрикаларды Cloud Monitoring-ке келесі форматта жібереді:
 
 ```txt
 victoria_go_gc_duration_seconds{quantile="0"} 0

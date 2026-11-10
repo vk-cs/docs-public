@@ -1,16 +1,16 @@
 {
-  "title": "AWS CLI v2-пен жұмыс істеу кезіндегі x-amz-content-sha256 қатесі",
+  "title": "AWS CLI v2-мен жұмыс істеу кезіндегі x-amz-content-sha256 қатесі",
   "shortDescription": "Объектілік қоймамен жұмыс істеу кезінде `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` хабарламасы пайда болады",
   "metaDescription": "Объектілік қоймамен жұмыс істеу кезінде `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` хабарламасы пайда болады",
-  "sectionTitle": "AWS CLI v2-пен жұмыс істеу кезіндегі x-amz-content-sha256 қатесі",
+  "sectionTitle": "AWS CLI v2-мен жұмыс істеу кезіндегі x-amz-content-sha256 қатесі",
   "icon": "",
   "weight": 5,
+  "uuid": "62741a81-bc29-4192-be1e-fcc6647b94fa",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "d7151be6-ade9-4087-97a5-74947162a509"
+  }
 }

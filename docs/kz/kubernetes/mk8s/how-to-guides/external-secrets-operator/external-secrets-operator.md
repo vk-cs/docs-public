@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-{linkto(../../concepts/addons-and-settings/addons#mk8s-addons-eso)[text=External Secrets Operator]} аддонын қолданып, VK Cloud [құпия менеджері](/ru/security/secret-manager/concepts/about#sm-about "change-lang") сақталған Kubernetes секреттерімен синхронизацияны баптаңыз.
+{linkto(../../concepts/addons-and-settings/addons#mk8s-addons-eso)[text=External Secrets Operator]} аддонын қолданып, VK Cloud [құпия менеджері](/kz/security/secret-manager/concepts/about#sm-about "change-lang") сақталған Kubernetes секреттерімен синхронизацияны баптаңыз.
 
 ## {heading(Дайындық қадамдары)[id=mk8s-eso-prepare]}
 
@@ -13,7 +13,7 @@
 
 ## {heading({counter(eso)}. Секрет менеджерінде секрет жасаңыз)[id=mk8s-eso-kms]}
 
-VK Cloud құпия менеджерінде құпия [жасаңыз](/ru/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") және оған ерікті кілттерді қосыңыз. Әрі қарай, мысал үшін `external-secret` идентификаторы бар құпия қолданылады.
+VK Cloud құпия менеджерінде құпия [жасаңыз](/kz/security/secret-manager/instructions/manage-secret#sm-manage-create "change-lang") және оған ерікті кілттерді қосыңыз. Әрі қарай, мысал үшін `external-secret` идентификаторы бар құпия қолданылады.
 
 ## {heading({counter(eso)}. Kubernetes секретін жасаңыз)[id=mk8s-eso-create]}
 

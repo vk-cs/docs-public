@@ -1,13 +1,13 @@
 {
-  "title": "Packer көмегімен жасау",
+  "title": "Packer арқылы жасау",
   "shortDescription": "",
-  "metaDescription": "Packer көмегімен жасау",
-  "sectionTitle": "Packer көмегімен жасау",
+  "metaDescription": "Packer арқылы жасау",
+  "sectionTitle": "Packer арқылы жасау",
   "weight": 3,
+  "uuid": "5d817899-60d8-4f9f-82b1-81e2c66c0cce",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "863ef62c-c5c6-428b-8474-5863f3f4a426"
+  }
 }

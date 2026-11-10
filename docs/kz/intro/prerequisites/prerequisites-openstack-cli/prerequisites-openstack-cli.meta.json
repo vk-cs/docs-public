@@ -1,0 +1,14 @@
+{
+  "title": "OpenStack CLI-ға қосу",
+  "shortDescription": "{var(cloud)} ресурстарын басқару үшін OpenStack клиентін орнату",
+  "metaDescription": "VK Cloud-ды командалық жолдан басқаруды бастаңыз. Бұл қадамдық нұсқаулық OpenStack CLI-ді Windows, macOS, Linux жүйелеріне орнатуға және аутентификациядан өтуге көмектеседі.",
+  "sectionTitle": "OpenStack CLI-ға қосу",
+  "weight": 1,
+  "uuid": "1a7bb3d0-6d0d-4b16-97dd-f749cad971f4",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

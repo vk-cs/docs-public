@@ -1,0 +1,14 @@
+{
+  "title": "Түсініктер",
+  "shortDescription": "OpenSearch қызметінің негізгі ұғымдары мен сипаттамалары",
+  "metaDescription": "VK Data Platform-тағы OpenSearch қызметінің негізгі ұғымдары мен сипаттамалары туралы біліңіз",
+  "sectionTitle": "Түсініктер",
+  "weight": 0,
+  "uuid": "bc8f4e69-6268-4c12-b353-d58a07f2260f",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

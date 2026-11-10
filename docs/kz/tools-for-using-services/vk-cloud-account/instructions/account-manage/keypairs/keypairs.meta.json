@@ -1,14 +1,21 @@
 {
   "title": "Кілттік жұптарды басқару",
-  "shortDescription": "Платформадағы SSH кілттерімен қолжетімді операциялар",
+  "shortDescription": "Платформадағы SSH-кілттермен қолжетімді операциялар",
   "metaDescription": "VK Cloud платформасындағы SSH кілттерімен қолжетімді операциялар.",
   "sectionTitle": "Кілттік жұптарды басқару",
   "icon": "",
   "weight": 3,
+  "additionalUuids": [
+    "e7b447ad-858b-4f35-bcbf-e64363907738",
+    "13df04e2-5257-4a29-91c2-348b7f72aedf",
+    "59c4033e-1dff-42bf-a840-d042f830f780",
+    "478f425d-94f6-490f-bb2e-12b705d3eba4",
+    "babf647d-74c4-4e2e-82fc-63e8ff8c0793"
+  ],
+  "uuid": "fb539bf2-64ba-499d-b8cb-e5389d1d63a1",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "d5e810e5-8d75-49eb-b2a6-d4e8cd0c4684"
+  }
 }

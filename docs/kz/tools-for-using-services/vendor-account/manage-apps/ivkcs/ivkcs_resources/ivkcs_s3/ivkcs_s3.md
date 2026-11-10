@@ -1,17 +1,17 @@
-# {heading(Ресурс ivkcs_s3)[id=ivkcs_s3]}
+# {heading(ivkcs_s3 ресурсы)[id=ivkcs_s3]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `ivkcs_s3` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 
 {caption({counter(table)[id=numb_tab_arguments]} кесте — ivkcs_s3 ресурсының аргументтері)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
-|Атауы
+|Аты
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Міндетті
-|Мән өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |
 `name`
@@ -20,12 +20,12 @@
 
 {note:info}
 
-Атау бірегей болуын қамтамасыз ету үшін сервис орналастыруының UUID идентификаторын атаудың бір бөлігі ретінде пайдаланыңыз.
+Атаудың бірегейлігін қамтамасыз ету үшін қызметтің UUID орналастыру идентификаторын атау бөлігі ретінде пайдаланыңыз.
 
 {/note}
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -34,18 +34,18 @@
 {caption({counter(table)[id=numb_tab_attributes]} кесте — ivkcs_s3 ресурсының атрибуттары)[align=right;position=above;id=tab_attributes;number={const(numb_tab_attributes)}]}
 [cols="2,5,2", options="header"]
 |===
-|Атауы
+|Аты
 |Сипаттамасы
-|Пішімі
+|Форматы
 
 |
 `access`
-|Бакетке қол жеткізуге арналған ашық кілт
+|Бакетке кіруге арналған ашық кілт
 |string
 
 |
 `secret`
-|Бакетке қол жеткізуге арналған жабық кілт
+|Бакетке кіруге арналған жабық кілт
 |string
 |===
 {/caption}

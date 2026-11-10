@@ -1,16 +1,14 @@
 {
   "title": "Виртуалды желілер",
-  "shortDescription": "Виртуалды желілер сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Networks виртуалды желілер сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
+  "shortDescription": "Виртуалды желілер қызметінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Networks виртуалды желілер қызметінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек",
   "sectionTitle": "Виртуалды желілер",
   "icon": "",
-  "weight": 20,
+  "weight": 30,
+  "uuid": "9336a564-a734-4519-ad39-081dfb11589f",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "483005c8-42a5-4a8e-953e-85e64bb64da2"
+  }
 }

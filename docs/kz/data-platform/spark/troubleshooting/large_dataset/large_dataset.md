@@ -1,10 +1,10 @@
-# {heading(100 ГБ-тан асатын датасетті өңдеу кезіндегі қате)[id=spark_large_dataset]}
+# {heading(100 ГБ-дан асатын датасетті өңдеу кезіндегі қате)[id=spark_large_dataset]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=large_dataset_problem]}
 
@@ -61,7 +61,6 @@ The API gave the following container statuses:
         `spark.sql.shuffle.partitions` параметрінің тым үлкен мәні жадтың (memoryOverhead) жетіспеуіне әкелуі мүмкін, өйткені деректер көп бөлікке бөлінеді.
         {/note}
 
-
    * `spark.sql.files.maxPartitionBytes` — файлдарды оқу кезінде бір партицияға арналған деректердің ең үлкен көлемі. 
 
    Мысал:
@@ -71,6 +70,7 @@ The API gave the following container statuses:
    spark_configs = {
        "spark.sql.shuffle.partitions": "600",
        "spark.sql.files.maxPartitionBytes": "128MB"
+
        # басқа параметрлер
    }
    manifest.set_spark_conf(spark_configs)

@@ -1,0 +1,11 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "NiFi сервисі туралы ақпарат",
+  "metaDescription": "VK Data Platform ішіндегі NiFi: сервис туралы ақпарат",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": ["data-p-pdf"]
+  },
+  "uuid": "d2a6a089-2ee9-404a-8900-68acd3593805"
+}

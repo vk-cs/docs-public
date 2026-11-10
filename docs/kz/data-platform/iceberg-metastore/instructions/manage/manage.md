@@ -1,48 +1,12 @@
-# {heading(Сервис данасымен жұмыс істеу)[id=iceberg_management]}
+# {heading(Сервис данысмымен жұмыс істеу)[id=iceberg_management]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-## {heading(Дана туралы ақпаратты қарау)[id=iceberg_view]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_view_info]}
-
-Беттің төменгі бөлігінде сервис параметрлерінде PostgresSQL дерекқорына қосылуға арналған сілтеме қолжетімді. Мысал:
-
-```http
-postgres://<ЛОГИН>:<ПАРОЛЬ>@212.243.93.51:8001/<ИМЯ_БД>
-```
-
-Мұнда:
-- `<ЛОГИН>` — Cloud Iceberg Metastore сервисіне қол жеткізуге арналған әкімші логині.
-- `<ПАРОЛЬ>` — Cloud Iceberg Metastore сервисіне қол жеткізуге арналған әкімші құпиясөзі.
-- `<ИМЯ_БД>` — PostgresSQL дерекқорының атауы.
-
-{/tab}
-
-{/tabs}
-
-## {heading(Дана атауы мен сипаттамасын өңдеу)[id=iceberg_edit]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_edit_name]}
-
-{/tab}
-
-{/tabs}
-
-{ifndef(public)}
-## {heading(IP және порттарды өзгерту)[id=iceberg_change-ip]}
+## {heading(IP мен порттарды өзгерту)[id=iceberg_change-ip]}
 
 {tabs}
 

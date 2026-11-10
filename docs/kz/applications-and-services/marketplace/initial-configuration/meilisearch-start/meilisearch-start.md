@@ -66,7 +66,7 @@ VK Cloud жобасындағы ВМ-де Meilisearch сервисін өріс�
 
    {note:info}
 
-   Егер қолжетімділік деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+   Егер қолжетімділік деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

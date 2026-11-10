@@ -1,6 +1,6 @@
 # {heading(Көпаймақты сақтау кластарын пайдалану)[id=mk8s-multiaz-storage-class]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Kubernetes подты жоспарлау кезінде оған сол подтың өзімен бірдей қолжетімділік аймағында орналасқан {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs)[text=тұрақты томды (PV)]} {linkto(../../reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-prepare)[text=динамикалық түрде дайындауы]} үшін алдын ала бапталған көпаймақты {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=сақтау кластарын]} пайдаланыңыз. Kubernetes-та подты мұндай жоспарлау үшін [Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/) механизмі жауап береді. Ол жұмыс жүктемесін ([workload](https://kubernetes.io/docs/concepts/workloads/)) әртүрлі {linkto(../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймақтары]} арасында бөлу есебінен кластердің істен шығуға төзімділігін арттыруға және жоғары қолжетімділігін (high availability) қамтамасыз етуге көмектеседі.
 
@@ -10,9 +10,9 @@ Kubernetes подты жоспарлау кезінде оған сол подт
 1. Егер әлі жасалмаған болса, `kubectl` құралын {linkto(../../connect/kubectl#mk8s-kubectl)[text=орнатып, баптаңыз]}.
 1. `kubectl` көмегімен кластерге {linkto(../../connect/kubectl#mk8s-kubectl-check-connection)[text=қосылыңыз]}.
 
-## {heading(1. PV үшін көпаймақты сақтау класын (StorageClass) қосыңыз)[id=maz-storageclass]}
+## {heading(1. PV үшін көпзоналық сақтау класын (StorageClass) қосыңыз)[id=maz-storageclass]}
 
-1. `StorageClass` үшін манифест файлын, мысалы `csi-ceph-ssd.yaml`, жасаңыз да, оған келесі мазмұнды қосыңыз:
+1. `StorageClass` үшін манифест файлын жасаңыз, мысалы `csi-ceph-ssd.yaml`, және оған мына мазмұнды қосыңыз:
 
    ```yaml
    apiVersion: storage.k8s.io/v1
@@ -26,27 +26,27 @@ Kubernetes подты жоспарлау кезінде оған сол подт
    volumeBindingMode: WaitForFirstConsumer
    allowVolumeExpansion: true
    ```
-   Мұнда:
-   - `type: ceph-ssd` PV үшін {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=диск түрін]} сипаттайды.
-   - `volumeBindingMode: WaitForFirstConsumer` тиісті PVC пайдаланатын алғашқы под жасалғанға дейін PV жасауды және оған байланыстыруды кейінге қалдырады. Осылайша, бұл под алдымен түйінге жоспарланады, содан кейін ғана Kubernetes ол үшін түйінмен бірдей қолжетімділік аймағындағы PV жасайды. Бұл под пен PV әртүрлі қолжетімділік аймақтарында болып қалатын жағдайды болдырмауға мүмкіндік береді.
+   Мұнда: 
+   - `type: ceph-ssd` PV үшін {linkto(../../concepts/storage#mk8s-storage-storage-classes)[text=диск түрін]} сипаттайды. 
+   - `volumeBindingMode: WaitForFirstConsumer` PV жасау мен байланыстыруды сәйкес PVC пайдаланатын алғашқы под жасалған сәтке дейін кейінге қалдырады. Осылайша бұл под алдымен узелге жоспарланады, және тек сонан кейін ғана Kubernetes оған узелмен бірдей қолжетімділік зонасында PV жасайды. Бұл под пен PV әр түрлі қолжетімділік зоналарында қалған жағдайды болдырмауға мүмкіндік береді.
 
-      Егер бірінші іске қосудан кейін осы подты басқа қолжетімділік аймағына көшіруге әрекеттенсеңіз, ұқсас мәтіні бар қатені аласыз:
+      Алғашқы іске қосудан кейін бұл подты басқа қолжетімділік зонасына көшіруге тырыссаңыз, ұқсас мәтіні бар қате аласыз:
 
       ```console
       3 node(s) had volume node affinity conflict
        ```
 
-      Томдарды байланыстыру баптаулары туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode).
+      Томдарды байланыстыру параметрлері туралы толығырақ [Kubernetes ресми құжаттамасында](https://kubernetes.io/docs/concepts/storage/storage-classes/#volume-binding-mode) оқи аласыз.
 
-1. Кластерде жасалған манифесті қолданыңыз:
+1. Жасалған манифестті кластерде қолданыңыз:
 
    ```console
    kubectl apply -f csi-ceph-ssd.yaml
    ```
 
-## {heading(2. Қолданбаны жасаңыз)[id=mk8s-multiaz-storage-class-app]}
+## {heading(2. Қолданба жасаңыз)[id=mk8s-multiaz-storage-class-app]}
 
-1. `test-statefulset` аттар кеңістігі үшін `StatefulSet` түріндегі жұмыс жүктемесі контроллері манифестінің файлын жасаңыз:
+1. `test-statefulset` аттар кеңістігі үшін `StatefulSet` түріндегі жұмыс жүктемесі контроллерінің манифест файлын жасаңыз:
 
    {cut(test-statefulset.yaml)}
    ```yaml
@@ -101,8 +101,8 @@ Kubernetes подты жоспарлау кезінде оған сол подт
 
    Мұнда:
 
-   - `replicas: 3` — под репликаларының саны.
-   - `maxSkew: 1` — түйіндер арасындағы подтар санының ең көп рұқсат етілген айырмашылығы. Бұл мысалда ол 1-ден аспауы керек.
+   - `replicas: 3` — подтар репликаларының саны.
+   - `maxSkew: 1` — узелдер арасындағы подтар санының рұқсат етілген максималды айырмашылығы. Бұл мысалда ол 1-ден аспауы тиіс.
 
 1. Манифест негізінде Kubernetes ресурсын жасаңыз:
 
@@ -110,13 +110,13 @@ Kubernetes подты жоспарлау кезінде оған сол подт
    kubectl apply -f test-statefulset.yaml
    ```
 
-1. Жасалған подтар туралы ақпаратты келесі команда арқылы қараңыз:
+1. Жасалған подтар туралы ақпаратты мына командамен көріңіз:
 
    ```console
    kubectl get pods -n test-statefulset -o wide
    ```
 
-   Шығыс мысалы:
+   Шығару мысалы:
 
    ```console
    NAME            READY   STATUS    RESTARTS   AGE     IP               NODE                            NOMINATED NODE   READINESS GATES
@@ -125,21 +125,21 @@ Kubernetes подты жоспарлау кезінде оған сол подт
    zone-spread-2   1/1     Running   0          2m18s   10.100.204.193   test-multiaz-node-group-ud1-1   <none>           <none>
    ```
 
-   Бұл 2 қолжетімділік аймағында 3 под жасалғанын білдіреді:
+   Бұл 2 қолжетімділік зонасында 3 под жасалғанын білдіреді: 
 
-   - `zone-spread-0` — `UD1` аймағындағы `test-multiaz-node-group-ud1-0` түйінінде;
-   - `zone-spread-1` — `UD2` аймағындағы `test-multiaz-node-group-ud2-2` түйінінде;
-   - `zone-spread-2` — `UD1` аймағындағы `test-multiaz-node-group-ud1-1` түйінінде.
+   - `zone-spread-0` — `UD1` зонасындағы `test-multiaz-node-group-ud1-0` узелінде;
+   - `zone-spread-1` — `UD2` зонасындағы `test-multiaz-node-group-ud2-2` узелінде;
+   - `zone-spread-2` — `UD1` зонасындағы `test-multiaz-node-group-ud1-1` узелінде.
 
-1. `StorageClass` үшін манифест негізінде әр под үшін оның қолжетімділік аймағында PV жасалғанына көз жеткізіңіз:
+1. `StorageClass` манифесті негізінде әр под үшін оның қолжетімділік зонасында PV жасалғанын тексеріңіз: 
 
-   1. Подтар үшін жасалған PV-лерді табыңыз:
+   1. Подтар үшін жасалған PV-ді табыңыз:
 
       ```console
       kubectl get pv -o wide
       ```
 
-   1. Шығарылған кестеде жасалған `csi-ceph-ssd` сақтау класы негізіндегі әрбір PVC үшін `NODE` бағанының мәндерін табыңыз. Шығыс мысалы:
+   1. Шығарылған кестеде жасалған `csi-ceph-ssd` сақтау класы негізінде жасалған әр PVC үшін `NODE` бағанының мәндерін табыңыз. Шығару мысалы: 
 
       ```text
       NAME                                       ...   STATUS    STORAGECLASS   ...   NODE

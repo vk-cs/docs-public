@@ -72,7 +72,7 @@ VK Cloud жобаңыздағы ВМ-де H2O LLM Studio сервисін өрі
 
    {note:info}
 
-   Егер қол жеткізу деректері жоғалса, жаңаларын [жасап шығарыңыз](../../instructions/pr-instance-manage#update_access).
+   Егер қол жеткізу деректері жоғалса, жаңаларын [жасап шығарыңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
    {/note}
 

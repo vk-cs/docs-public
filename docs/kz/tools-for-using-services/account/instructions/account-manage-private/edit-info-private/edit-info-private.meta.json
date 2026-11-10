@@ -1,0 +1,18 @@
+{
+  "title": "Профильді өзгерту",
+  "shortDescription": "Парольді және пайдаланушының жеке деректерін өзгерту",
+  "metaDescription": "VK Private Cloud аккаунтының пайдаланушы профиліндегі парольді және деректерді қалай өзгерту керек.",
+  "sectionTitle": "Профильді өзгерту",
+  "icon": "",
+  "weight": 1,
+  "uuid": "78c3991b-0470-433d-96f2-8ab2e9e20e4d",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

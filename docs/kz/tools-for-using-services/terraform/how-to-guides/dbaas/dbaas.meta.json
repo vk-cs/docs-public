@@ -1,16 +1,17 @@
 {
   "title": "Cloud Databases",
-  "shortDescription": "СУБД сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
-  "metaDescription": "СУБД сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "shortDescription": "Terraform көмегімен СУБД сервисінің нысандарын басқару",
+  "metaDescription": "Terraform көмегімен СУБД сервисінің нысандарын басқару",
   "sectionTitle": "Cloud Databases",
   "icon": "",
   "weight": 50,
+  "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8",
+  "additionalUuids": [
+    "3b96e92e-b2ab-484d-8da7-35e874ec6a98"
+  ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "36a5f73f-7f62-49c7-a8ed-8d886a7b7fa2"
+  }
 }

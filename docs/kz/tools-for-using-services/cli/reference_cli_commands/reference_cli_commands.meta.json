@@ -1,0 +1,17 @@
+{
+  "title": "Openstack CLI анықтамалығы",
+  "shortDescription": "Openstack CLI негізгі командалары",
+  "metaDescription": "VK Private Cloud: бұлтты ресурстарды пәрмен жолынан басқаруға арналған Openstack CLI командаларының анықтамалығы.",
+  "sectionTitle": "Openstack CLI анықтамалығы",
+  "weight": 2,
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  },
+  "uuid": "7df1d86b-c6d2-4eab-94fd-a9155d72aae6"
+}

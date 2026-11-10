@@ -1,16 +1,14 @@
 {
-  "title": "ВМ жасау",
+  "title": "ВМ құру",
   "shortDescription": "",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек. ВМ жасау",
-  "sectionTitle": "ВМ жасау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисінің нысандарын басқару үшін Terraform-ды қалай пайдалану керек. ВМ құру",
+  "sectionTitle": "ВМ құру",
   "icon": "",
   "weight": 1,
+  "uuid": "b943abf3-6c71-4b86-8420-de584342b59f",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "94faa831-4f85-45eb-aeea-8c9ea27990c4"
+  }
 }

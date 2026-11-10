@@ -20,6 +20,7 @@
 
 ## {heading(XML-конфигурация құрылымы)[id=api-spec-s3-webhooks-request-body]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 ```curl
 PUT /?notification HTTP/1.1
 Host: Bucket.hb.ru-msk.vkcloud-storage.ru

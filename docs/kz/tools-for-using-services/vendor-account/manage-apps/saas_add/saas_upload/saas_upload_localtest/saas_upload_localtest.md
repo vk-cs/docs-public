@@ -1,32 +1,32 @@
 # {heading(Брокерді жергілікті тестілеу)[id=saas_upload_localtest]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Брокерді жергілікті түрде тестілеңіз.
+Брокерді жергілікті тестілеңіз.
 
-Үлгі негізінде әзірленген брокерді жергілікті түрде тестілеу үшін келесі әрекеттерді орындаңыз:
+Үлгі негізінде әзірленген брокерді жергілікті тестілеу үшін мына әрекеттерді орындаңыз:
 
-1. Брокер директориясындағы `.env` файлында орта айнымалыларын сипаттаңыз:
+1. Брокер каталогындағы `.env` файлында орта айнымалыларын сипаттаңыз:
 
-   * `BROKER_PROVIDER_CLIENT_ID` — SaaS-қолданбаға қол жеткізуге арналған брокер атауы.
-   * `BROKER_PROVIDER_SECRET` — брокердің SaaS-қолданбаға қол жеткізу құпиясөзі.
-   * `BROKER_PROVIDER_URL` — SaaS-қолданбаның URL мекенжайы.
-   * `BROKER_USERNAME` — брокермен сервистераралық өзара әрекеттесуге арналған дүкен атауы.
-   * `BROKER_PASSWORD` — брокермен сервистераралық өзара әрекеттесуге арналған дүкен құпиясөзі.
+   * `BROKER_PROVIDER_CLIENT_ID` — SaaS-қосымшаға кіру үшін брокердің аты.
+   * `BROKER_PROVIDER_SECRET` — брокердің SaaS-қосымшаға кіру құпиясөзі.
+   * `BROKER_PROVIDER_URL` — SaaS-қосымшаның URL мекенжайы.
+   * `BROKER_USERNAME` — брокермен қызметаралық өзара әрекеттесу үшін дүкеннің аты.
+   * `BROKER_PASSWORD` — брокермен қызметаралық өзара әрекеттесу үшін дүкеннің құпиясөзі.
 
    {note:err}
 
-   `BROKER_USERNAME` айнымалысының мәні брокерді тіркеу өтінімінде көрсетілген `username` мәнімен, ал `BROKER_PASSWORD` айнымалысының мәні `password` мәнімен сәйкес келуі тиіс.
+   `BROKER_USERNAME` айнымалосының мәні `username` мәніне, ал `BROKER_PASSWORD` мәні — брокерді тіркеу туралы өтініште көрсетілген `password` мәніне сәйкес болуы тиіс.
 
    {/note}
-1. Брокер директориясындағы `.env` файлында брокердің ДБ-на қол жеткізуге арналған айнымалылар мәндерін көрсетіңіз.
-1. Python кітапханаларын орнату үшін келесі команданы орындаңыз:
+1. Брокер каталогындағы `.env` файлында брокердің БД-на кіру үшін айнымалылардың мәндерін көрсетіңіз.
+1. Python-жинақтарды орнату үшін команданы орындаңыз:
 
    ```console
    $ pip install -r requirements/prod.txt
    ```
 
-1. Брокерді іске қосу үшін келесі команданы орындаңыз:
+1. Брокерді іске қосу үшін команданы орындаңыз:
 
    ```console
    $ gunicorn app.main:app --log-file - --workers ${UVICORN_WORKERS:-1} --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:${BROKER_PORT:-8000} --timeout ${WORKER_TIMEOUT:-90}
@@ -41,19 +41,19 @@
    ```
    {/caption}
 
-   Брокерді орнатқаннан кейін `http://0.0.0.0:8000/docs` мекенжайында swagger UI редакторындағы API қолжетімді болады ({linkto(#pic_saas_swagger_broker)[text=сурет %number]}, {linkto(#pic_saas_swagger_resourceusage)[text=сурет %number]}).
+   Брокер орнатылғаннан кейін `http://0.0.0.0:8000/docs` мекенжайы бойынша swagger UI редакторында API қолжетімді болады ({linkto(#pic_saas_swagger_broker)[text=сурет %number]}, {linkto(#pic_saas_swagger_resourceusage)[text=сурет %number]}).
 
-   {caption(Рисунок {counter(pic)[id=numb_pic_saas_swagger_broker]} — API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_broker;number={const(numb_pic_saas_swagger_broker)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_saas_swagger_broker]} — swagger UI API мысалы)[align=center;position=under;id=pic_saas_swagger_broker;number={const(numb_pic_saas_swagger_broker)} ]}
    ![pic1](../../../assets/SaaS_swagger_broker.png)
    {/caption}
 
-   {caption(Рисунок {counter(pic)[id=numb_pic_saas_swagger_resourceusage]} — Кейін төленетін тарифтік опциялар үшін сұрауларды қамтитын API swagger UI мысалы)[align=center;position=under;id=pic_saas_swagger_resourceusage;number={const(numb_pic_saas_swagger_resourceusage)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_saas_swagger_resourceusage]} — постаплатtarifi опцияларына арналған сұраулары бар swagger UI API мысалы)[align=center;position=under;id=pic_saas_swagger_resourceusage;number={const(numb_pic_saas_swagger_resourceusage)} ]}
    ![pic1](../../../assets/SaaS_swagger_resourceusage.png)
    {/caption}
-1. Swagger UI API-де сипатталған сұрауларды орындаңыз.
+1. swagger UI API-нде сипатталған сұрауларды орындаңыз.
 
    Сұрауларда мыналарды пайдаланыңыз:
 
-   * `x-broker-api-version` VK OSB протоколы нұсқасының мәні (мысалы, `"0.1"`).
-   * `.env` файлындағы `BROKER_USERNAME` мәні.
-   * `.env` файлындағы `BROKER_PASSWORD` мәні.
+   * VK OSB хаттамасының `x-broker-api-version` нұсқасының мәні (мысалы, `"0.1"`).
+   * `.env` файлынан алынған `BROKER_USERNAME` мәні.
+   * `.env` файлынан алынған `BROKER_PASSWORD` мәні.

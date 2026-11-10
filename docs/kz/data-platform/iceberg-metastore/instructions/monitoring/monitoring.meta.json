@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "Метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform-тың Standalone нұсқасындағы Cloud Iceberg Metastore сервисінің жайылған даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform жүйесінде орналастырылған Cloud Iceberg Metastore сервісінің даналарының жұмыс метрикаларын қалай көруге болатынын біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -10,5 +10,5 @@
     ]
   },
   "weight": 4,
-  "uuid": "3fd7b134-6d88-4b12-8667-628c51d76646"
+  "uuid": "c2f3cbd6-541b-49a7-943c-4aaa94ea9caa"
 }

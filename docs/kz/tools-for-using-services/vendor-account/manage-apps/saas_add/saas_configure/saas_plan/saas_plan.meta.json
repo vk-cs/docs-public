@@ -1,12 +1,12 @@
 {
-  "title": "`Plans` секциясы",
+  "title": "plans бөлімі",
   "shortDescription": "",
-  "metaDescription": "`Plans` секциясы",
-  "sectionTitle": "`Plans` секциясы",
+  "metaDescription": "plans бөлімі",
+  "sectionTitle": "plans бөлімі",
+  "uuid": "274d1b7f-14c5-41c6-83ec-7fd5529693e0",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "04cfef4e-5b77-4c70-b568-eedfc951607b"
+  }
 }

@@ -1,14 +1,14 @@
-# {heading(Қызмет түрлері)[id=service]}
+# {heading(Сервистердің түрлері)[id=service]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Қызметтер орналастырылатын жүйенің толық атауы: {var(cloud)}.
+Сервистер орналастырылатын жүйенің толық атауы: {var(marketplace)}.
 
-Жүйенің қысқаша атаулары: Marketplace, қосымшалар дүкені, дүкен..
+Жүйенің қысқа атаулары: Marketplace, қосымшалар дүкені, дүкен.
 
-Marketplace қызметтердің келесі түрлерін орналастыруға мүмкіндік береді:
+Marketplace келесі сервистер түрлерін орналастыруға мүмкіндік береді:
 
-* SaaS-қосымшасы.
-* Image-based қосымшасы.
+* SaaS-қосымша.
+* Image-based қосымша.
 
-Қызмет түрлері туралы толығырақ ақпарат {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_vendor_index_type_services)[text=%text]} бөлімінде келтірілген. Қолданылатын терминдердің анықтамаларын (мысалы, қызмет инстансы, сервистік байланыстыру) {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/glossary#glossary)[text=%text]} бөлімінен табуға болады.
+Сервистер түрлері туралы толығырақ ақпарат {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_vendor_index_type_services)[text=%text]} бөлімінде берілген. Қолданылатын терминдердің анықтамаларын (мысалы, сервистің инстансы, сервистік байланыс) {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/glossary#glossary)[text=%text]} бөлімінен табуға болады.

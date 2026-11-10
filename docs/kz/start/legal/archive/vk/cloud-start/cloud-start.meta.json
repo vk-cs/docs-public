@@ -1,0 +1,16 @@
+{
+  "title": "«Бұлтты Старт» бағдарламасының ережелері",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud, VK WorkSpace және VK ID платформаларын пайдаланудың арнайы шарттарын қарастыратын бағдарлама",
+  "sectionTitle": "«Бұлтты Старт» бағдарламасының ережелері",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 19,
+  "uuid": "392a9552-837b-4540-8737-ea7c4f061d48",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,3 +1,7 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Практикалық нұсқаулықтар)[id=terraform-how-to]}
 
-{var(cloud)} жүйесінде Terraform пайдалану.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{ifdef(public)}
+Terraform-ды {var(cloud)} платформасында пайдалану.
+{/ifdef}

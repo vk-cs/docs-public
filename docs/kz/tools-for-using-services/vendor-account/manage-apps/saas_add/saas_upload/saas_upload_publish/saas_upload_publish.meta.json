@@ -3,10 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервисті жариялау",
   "sectionTitle": "Сервисті жариялау",
+  "uuid": "fe9c622f-9e0d-4e2e-88d4-fcb68eb31dcb",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "84ac296e-4f47-4374-b110-1cf921e9eb75"
+  }
 }

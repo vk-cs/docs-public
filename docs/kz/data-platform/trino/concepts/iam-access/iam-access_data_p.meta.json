@@ -1,0 +1,15 @@
+{
+  "title": "VK Private Cloud-тағы қолжетімділікті басқару",
+  "shortDescription": "Cloud Trino-да аутентификация және авторизация ішкі жүйелері арқылы жоба қатысушылары арасында қолжетімділік құқықтары қалай бөлінеді, рөлдік модельдер мысалдары",
+  "metaDescription": "",
+  "sectionTitle": "VK Private Cloud-тағы қолжетімділікті басқару",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

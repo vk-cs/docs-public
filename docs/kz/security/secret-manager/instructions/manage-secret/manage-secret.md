@@ -1,12 +1,6 @@
-# {heading(Құпияны басқару)[id=sm-manage-secret]}
+# {heading(Құпиясөзді басқару)[id=sm-manage-secret]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-{note:info}
-
-Сервиске қол жеткізу үшін [техникалық қолдауға](/kz/contacts) жүгініңіз.
-
-{/note}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ## {heading(Құпиялар тізімін қарау)[id=sm-manage-view]}
 

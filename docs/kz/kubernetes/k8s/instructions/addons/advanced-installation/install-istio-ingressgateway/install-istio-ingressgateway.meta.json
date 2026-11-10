@@ -1,0 +1,17 @@
+{
+  "title": "Istio-ingressgateway",
+  "shortDescription": "",
+  "metaDescription": "VK Cloud платформасындағы Managed Containers қызметі: Istio-ingressgateway аддонсын баптау және орнату.",
+  "sectionTitle": "Istio-ingressgateway",
+  "icon": "",
+  "weight": 14,
+  "uuid": "af40e598-a5e1-4639-8638-e3fce79ed2d0",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

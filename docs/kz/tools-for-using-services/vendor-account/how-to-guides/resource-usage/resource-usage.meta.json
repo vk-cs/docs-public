@@ -1,14 +1,14 @@
 {
   "title": "Ресурстарды пайдалануды есепке алу",
   "sectionTitle": "Ресурстарды пайдалануды есепке алу",
-  "shortDescription": "image-based қолданбалардың пайдаланушыларынан автоматты түрде ақы алу үшін Marketplace-ке ресурс тұтыну метрикаларын қалай жіберуге болады",
-  "metaDescription": "Marketplace VK Cloud: ресурстарды пайдалану метрикаларын жіберу",
+  "shortDescription": "Image-based қолданбалардың пайдаланушыларынан ақыны автоматты түрде алу үшін Marketplace-ке ресурстарды тұтыну метрикаларын жеткізу тәсілі",
+  "metaDescription": "Marketplace VK Cloud: ресурстарды пайдалану метрикаларын жеткізу",
   "icon": "",
   "weight": 0,
+  "uuid": "33ac4c7e-d65d-478d-be93-314d96a53b5b",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ebd49aba-b370-4192-821a-cf55da7c72f3"
+  }
 }

@@ -1,14 +1,14 @@
 {
   "title": "Маңызды деректерді қорғау",
-  "shortDescription": "Object Lock функциясын объектілерді жоюдан және қайта жазудан қорғау үшін пайдалану",
-  "metaDescription": "VK Object Storage үшін COMPLIANCE режиміндегі Object Lock: маңызды деректерді жоюдан және қайта жазудан (WORM) қорғауды кезең-кезеңімен баптау — бакетте Object Lock қосу.",
+  "shortDescription": "Объекттерді жою және қайта жазудан қорғау үшін Object Lock функциясын пайдалану",
+  "metaDescription": "VK Object Storage үшін COMPLIANCE режиміндегі Object Lock: маңызды деректерді жоюдан және қайта жазудан (WORM) қорғауды қадамдап баптау — бакетте Object Lock функциясын қосу.",
   "sectionTitle": "Маңызды деректерді қорғау",
   "icon": "",
   "weight": 3,
+  "uuid": "894838b8-dc0f-400d-ba3f-203cd227e8d8",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ef46f988-e473-4732-a303-48c5fbf671c3"
+  }
 }

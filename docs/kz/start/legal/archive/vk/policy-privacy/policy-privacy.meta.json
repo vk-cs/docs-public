@@ -1,0 +1,16 @@
+{
+  "title": "«VK Cloud» платформасының құпиялық саясаты",
+  "shortDescription": "",
+  "metaDescription": "1. Осы құпиялық саясатының (әрі қарай – «Саясат») реттеу пәні «ВК» жауапкершілігі шектеулі қоғамы мен арасындағы қатынастар болып табылады",
+  "sectionTitle": "«VK Cloud» платформасының құпиялық саясаты",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 5,
+  "uuid": "2dffd262-7661-4438-828f-d4134e29c461",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

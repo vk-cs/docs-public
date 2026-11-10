@@ -1,0 +1,14 @@
+{
+  "title": "Machine Learning (ML) және Data Science (DS) үшін GPU-ортасын дайындау",
+  "sectionTitle": "Machine Learning (ML) және Data Science (DS) үшін GPU-ортасын дайындау",
+  "shortDescription": "PyTorch машиналық оқыту құралдарымен жұмыс істеу үшін виртуалды машинаны қалай баптау керек",
+  "metaDescription": "conda-ортасында PyTorch машиналық оқыту құралдарымен жұмыс істеу және LoRA көмегімен LLM Llama-2-7B Fine-tuning жүргізу үшін GPU бар виртуалды машиналарды баптаудың қадамдық нұсқаулығы",
+  "icon": "",
+  "weight": 3,
+  "uuid": "8953bb28-bd88-4768-a3a4-22c8d2815928",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

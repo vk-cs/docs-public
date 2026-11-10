@@ -5,7 +5,7 @@
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 1,
-  "isBeta": true,
+  "isBeta": false,
   "relativeSections": [
     {
       "partialPath": "/kz/tools-for-using-services/api/api-spec/logging"
@@ -13,11 +13,7 @@
   ],
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf"
+      "public"
     ]
   },
   "uuid": "42c0be8f-7dba-47cd-92f1-34a2d9075741"

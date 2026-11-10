@@ -2,6 +2,7 @@
 
 ### {heading(dp_kafka_instances_list)[id=dp_kafka_instances_list]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 Өзіне-қызмет көрсету порталындағы атауы: `Просмотр списка инстансов Kafka`.
 
 Рұқсат етеді даналар тізімін қарауға Cloud Kafka сервисінің.

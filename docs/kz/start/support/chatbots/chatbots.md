@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Чат-боттар)[id=support-chatbots]}
 
-Техникалық қолдау чат-боттары туралы ақпарат
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+Сервистердің техникалық қолдауының чат-боттары туралы ақпарат

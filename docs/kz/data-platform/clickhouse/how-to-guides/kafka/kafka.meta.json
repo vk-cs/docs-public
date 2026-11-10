@@ -1,10 +1,10 @@
 {
-  "title": "Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу",
-  "shortDescription": "Kafka топигіндегі хабарларды мақсатты кестеге жүктеу жолы",
-  "metaDescription": "VK Data Platform жүйесінде Kafka қозғалтқышы бар кесте мен материалдандырылған көрініс арқылы Kafka-дан Cloud ClickHouse жүйесіне деректерді жүктеу жолын біліңіз",
+  "title": "Kafka-дан Cloud ClickHouse-қа деректерді жүктеу",
+  "shortDescription": "Kafka топигінен хабарламаларды мақсатты кестеге қалай жүктеу",
+  "metaDescription": "VK Data Platform-тағы Kafka қозғалтқышы бар кесте мен материалдандырылған көрініс арқылы Kafka-дан Cloud ClickHouse-қа деректерді жүктеуді қалай баптау керектігін біліңіз",
   "sectionTitle": "Kafka-дан деректерді жүктеу",
   "weight": 1,
-  "uuid": "d935ee56-a269-4614-bc80-261237abf7a7",
+  "uuid": "67ca0fda-5711-4aae-b01c-c65bf42848a7",
   "build": {
     "for": [
       "public",

@@ -1,14 +1,14 @@
 {
   "title": "Кластерге арналған DNS баптаулары",
-  "shortDescription": "Kubernetes-кластеріңіздің DNS конфигурациясын қалай баптау және басқару керек",
-  "metaDescription": "VK Cloud-тағы Kubernetes кластерінің DNS конфигурациясын қалай баптау және басқару керек. ExternalDNS құралын пайдалану",
+  "shortDescription": "Kubernetes-кластеріңіздің DNS-конфигурациясын қалай баптау және басқару",
+  "metaDescription": "VK Cloud жүйесіндегі Kubernetes кластерінің DNS-конфигурациясын қалай баптау және басқару. ExternalDNS құралын пайдалану",
   "sectionTitle": "Кластерге арналған DNS баптаулары",
   "icon": "",
   "weight": 4,
+  "uuid": "427b7bf2-671d-451b-bdb7-28b3e4404173",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "9d8fec75-bdb7-4ce1-9dd3-48cc0f9678d6"
+  }
 }

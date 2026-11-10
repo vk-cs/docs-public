@@ -1,0 +1,16 @@
+{
+  "title": "«Cloud Desktop» қызметіне арналған пайдаланушы келісімі",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «Цифровое облако» ЖШС (әрі қарай — «Компания») Сізбен пайдаланушы келісімін (әрі қарай — «Келісім») жасасуға арналған ресми ұсыныс болып табылады",
+  "sectionTitle": "«Cloud Desktop» қызметіне арналған пайдаланушы келісімі",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 17,
+  "uuid": "9e217617-4a8c-4572-95f0-1db06f1d5dc8",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

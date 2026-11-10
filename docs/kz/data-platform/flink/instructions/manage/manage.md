@@ -1,10 +1,10 @@
-# {heading(Сервис данасымен жұмыс)[id=flink_management]}
+# {heading(Сервис данісімен жұмыс істеу)[id=flink_management]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Дана туралы ақпаратты қарау)[id=flink_view]}
 

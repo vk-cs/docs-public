@@ -1,11 +1,11 @@
 {
-  "title": "Сервис данасын жасау",
-  "shortDescription": "Қажетті конфигурацияда MLflow данасын қалай жасауға болады",
-  "metaDescription": "VK Data Platform-та қажетті конфигурацияда MLflow сервис данасын қалай жасауға болады",
-  "sectionTitle": "Сервис данасын жасау",
+  "title": "Сервистің данасын жасау",
+  "shortDescription": "MLflow данасын қажетті конфигурацияда қалай жасау",
+  "metaDescription": "VK Data Platform платформасында MLflow сервистің данасын қажетті конфигурацияда қалай жасау",
+  "sectionTitle": "Сервистің данасын жасау",
   "weight": 1,
   "build": {
     "for": ["data-p-pdf"]
   },
-  "uuid": "4f581662-ea63-463b-8bff-700e949216fb"
+  "uuid": "957ec94e-928e-452c-84dd-c80f413fcc0f"
 }

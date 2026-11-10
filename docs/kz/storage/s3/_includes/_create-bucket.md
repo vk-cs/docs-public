@@ -1,6 +1,7 @@
 {includetag(not_bucket_onboarding)}
 ## {heading(Дайындық қадамдары)[id=preparation]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 1. {linkto(../../../tools-for-using-services/cli/aws-cli#tools-cli-aws)[text=AWS CLI]} орнатылғанына көз жеткізіңіз.
 1. VK Object Storage сервисі үшін аккаунт жасаңыз:
 {/includetag}

@@ -1,23 +1,14 @@
 {
-  "title": "Bitwarden орналастыру",
-  "shortDescription": "Тіркелгі деректері мен құпияларды қауіпсіз сақтау және оларды бірлесіп басқару мүмкіндігі бар Bitwarden орналастыру",
-  "metaDescription": "Тіркелгі деректері мен құпияларды қауіпсіз сақтау және оларды бірлесіп басқару үшін Bitwarden орналастыру",
-  "sectionTitle": "Bitwarden орналастыру",
+  "title": "Bitwarden орнату",
+  "shortDescription": "Тіркелгі деректері мен құпияларды қауіпсіз сақтау және оларды бірлесіп басқару мүмкіндігі бар Bitwarden орнату",
+  "metaDescription": "Тіркелгі деректері мен құпияларды қауіпсіз сақтау және бірлесіп басқару үшін Bitwarden орнату",
+  "sectionTitle": "Bitwarden орнату",
   "icon": "",
-  "weight": 21,
+  "weight": 3,
+  "uuid": "6fa28981-bc4c-4520-ac34-1665e0fbffb5",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "7085a8cf-c7a7-4df6-a029-47d1041b8fd0"
+  }
 }

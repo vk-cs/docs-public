@@ -1,41 +1,63 @@
-# {heading(Қолжетімділік саясаты)[id=s3-instructions-bucket-policy]}
+# {heading(Кіру саясаты)[id=s3-instructions-bucket-policy]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(s3)} {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy)[text=қолжетімділік саясаты]} көмегімен {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакетке]} және {linkto(../../../concepts/about#s3-concepts-about-object)[text=объектілерге]} қолжетімділікті баптауға мүмкіндік береді.
+{var(s3)} {linkto(../../../concepts/about#s3-concepts-about-bucket)[text=бакетке]} және {linkto(../../../concepts/about#s3-concepts-about-object)[text=объектілерге]} кіруді {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy)[text=кіру саясаты]} арқылы баптауға мүмкіндік береді.
 
 {note:info}
-Terraform көмегімен бакеттің қолжетімділік саясатын басқару үшін алдымен жеке кабинетте {linkto(#s3-instructions-bucket-policy-enable-and-disable)[text=қолжетімділік саясатын қосыңыз]}.
+Бакеттің кіру саясаттарын Terraform арқылы басқару үшін алдымен жеке кабинетте {linkto(#s3-instructions-bucket-policy-enable-and-disable)[text=кіру саясаттарын қосыңыз]}.
 {/note}
 
-## {heading(Қолжетімділік саясатын қосу және өшіру)[id=s3-instructions-bucket-policy-enable-and-disable]}
+## {heading(Кіру саясатын қосу және өшіру)[id=s3-instructions-bucket-policy-enable-and-disable]}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. Қажетті бакет орналасқан жобаны таңдаңыз.
+{ifdef(public)}
+
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. IAM Only жеке кабинетіне {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+
+{/ifdef}
+
+1. Қажетті орналасқан жобаны таңдаңыз.
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
-1. Қажетті бакет үшін ![more-icon](../../../assets/more-icon.svg "inline") түймесін басып, **Баптаулар** тармағын таңдаңыз.
-1. **Қолжетімділік саясаттары** қойындысына өтіңіз.
-1. **Bucket Policy өңдеу** түймесін басыңыз.
-1. Қол жетімділік саясаттарын қосыңыз немесе өшіріңіз.
+1. Қажетті бакет үшін ![more-icon](../../../assets/more-icon.svg "inline") басып, **Баптаулар** тармағын таңдаңыз.
+1. **Кіру саясаттары** қойындысына өтіңіз.
+1. **Редактировать Bucket Policy** түймесін басыңыз.
+1. Кіру саясаттарын қосыңыз немесе өшіріңіз.
 
 ## {heading(ACL қосу және өшіру)[id=s3-instructions-bucket-acl-enable-and-disable]}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. Қажетті бакет орналасқан жобаны таңдаңыз.
+{ifdef(public)}
+
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+
+{/ifdef}
+
+{ifdef(s3,s3-pdf)}
+
+1. IAM Only жеке кабинетіне {linkto(../../iamo/iamo-auth#s3-instructions-iamo-auth)[text=кіріңіз]}.
+
+{/ifdef}
+
+1. Қажетті орналасқан жобаны таңдаңыз.
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
-1. Қажетті бакет үшін ![more-icon](../../../assets/more-icon.svg "inline") түймесін басып, **Баптаулар** тармағын таңдаңыз.
-1. **Қолжетімділік саясаттары** қойындысына өтіңіз.
-1. **Ownership control ACL өңдеу** түймесін басыңыз.
-1. **Қолжетімділікті басқару тізімдері (ACL)** опциясын қосыңыз немесе өшіріңіз.
+1. Қажетті бакет үшін ![more-icon](../../../assets/more-icon.svg "inline") басып, **Баптаулар** тармағын таңдаңыз.
+1. **Кіру саясаттары** қойындысына өтіңіз.
+1. **Редактировать Ownership control ACL** түймесін басыңыз.
+1. **Кіруді басқару тізімдері (ACL)** опциясын қосыңыз немесе өшіріңіз.
 
-## {heading(Қолжетімділік саясатының ағымдағы конфигурациясын сұрату)[id=s3-instructions-bucket-policy-view]}
+## {heading(Кіру саясатының ағымдағы конфигурациясын сұрау)[id=s3-instructions-bucket-policy-view]}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
-1. Конфигурацияны келесі команда арқылы алыңыз:
+1. {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз, егер ол әлі орнатылмаған болса.
+1. Конфигурацияны команданың көмегімен алыңыз:
 
    ```console
    aws s3api get-bucket-policy \
-     --bucket <ИМЯ_БАКЕТА> \
+     --bucket <БАКЕТ_АТЫ> \
      --query Policy \
      --output text \
      --endpoint <ENDPOINT_URL>
@@ -48,23 +70,27 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме.
+     {/ifdef}
 
-## {heading(Қолжетімділік саясатының жаңа конфигурациясын орнату)[id=s3-instructions-bucket-policy-setup]}
+## {heading(Кіру саясатының жаңа конфигурациясын орнату)[id=s3-instructions-bucket-policy-setup]}
 
 {note:warn}
 
-Жаңа {linkto(../../../concepts/static-site-hosting#s3-concepts-static-site-hosting-config)[text=конфигурацияны]} орнату қолданыстағысын қайта жазады. Бұрыннан бар конфигурацияның параметрлерін өзгерту үшін оны {linkto(#s3-instructions-bucket-policy-edit)[text=өңдеңіз]}.
+Жаңа {linkto(../../../concepts/static-site-hosting#s3-concepts-static-site-hosting-config)[text=конфигурацияны]} орнату бар конфигурацияны қайта жазады. Бұрыннан бар конфигурацияның параметрлерін өзгерту үшін оны {linkto(#s3-instructions-bucket-policy-edit)[text=өңдеңіз]}.
 
 {/note}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
-1. `<КОНФИГУРАЦИЯ>.json` жаңа конфигурация файлын жасаңыз.
-1. Файлда қолжетімділік саясатының {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy-config)[text=конфигурациясын]} көрсетіңіз.
-1. Жаңа конфигурацияны келесі команда арқылы жүктеңіз:
+1. {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз, егер ол әлі орнатылмаған болса.
+1. Жаңа `<КОНФИГУРАЦИЯ>.json` конфигурация файлын жасаңыз.
+1. Файлда кіру саясатының {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy-config)[text=конфигурациясын]} көрсетіңіз.
+1. Жаңа конфигурацияны команданың көмегімен жүктеп салыңыз:
 
    ```console
    aws s3api put-bucket-policy \
-     --bucket <ИМЯ_БАКЕТА> \
+     --bucket <БАКЕТ_АТЫ> \
      --policy=file://<КОНФИГУРАЦИЯ>.json
      --endpoint <ENDPOINT_URL>
    ```
@@ -77,15 +103,19 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме.
+     {/ifdef}
 
-## {heading(Қолжетімділік саясаты конфигурациясын өңдеу)[id=s3-instructions-bucket-policy-edit]}
+## {heading(Кіру саясатының конфигурациясын өңдеу)[id=s3-instructions-bucket-policy-edit]}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
-1. Конфигурацияны келесі команда арқылы `<КОНФИГУРАЦИЯ>.json` файлына локалды түрде сақтаңыз:
+1. {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз, егер ол әлі орнатылмаған болса.
+1. Конфигурацияны команданың көмегімен `<КОНФИГУРАЦИЯ>.json` файлына жергілікті сақтаңыз:
 
    ```console
    aws s3api get-bucket-policy \
-     --bucket <ИМЯ_БАКЕТА> \
+     --bucket <БАКЕТ_АТЫ> \
      --query Policy \
      --output text \
      --endpoint <ENDPOINT_URL> \
@@ -99,14 +129,18 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
-   - `<КОНФИГУРАЦИЯ>` — JSON форматындағы қолжетімділік саясаты конфигурациясы файлының атауы.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме.
+     {/ifdef}
+   - `<КОНФИГУРАЦИЯ>` — JSON форматындағы кіру саясатының конфигурация файлының атауы.
 
-1. `<КОНФИГУРАЦИЯ>.json` файлына қажетті өзгерістерді енгізіңіз. Қажет болса, {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy-config)[text=конфигурацияның]} басқа параметрлерін орнатыңыз.
+1. `<КОНФИГУРАЦИЯ>.json` файлына қажетті өзгерістер енгізіңіз. Қажет болса, {linkto(../../../concepts/access/bucket-policy#s3-concepts-bucket-policy-config)[text=конфигурацияның]} басқа параметрлерін орнатыңыз.
 1. Жаңа конфигурацияны орнатыңыз:
 
    ```shell
    aws s3api put-bucket-policy \
-     --bucket <ИМЯ_БАКЕТА> \
+     --bucket <БАКЕТ_АТЫ> \
      --policy=file://<КОНФИГУРАЦИЯ>.json
      --endpoint <ENDPOINT_URL>
    ```
@@ -119,15 +153,19 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме.
+     {/ifdef}
 
-## {heading(Қолжетімділік саясаты конфигурациясын жою)[id=s3-instructions-bucket-policy-delete]}
+## {heading(Кіру саясатының конфигурациясын жою)[id=s3-instructions-bucket-policy-delete]}
 
-1. Егер әлі орнатылмаған болса, {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз.
-1. Конфигурацияны келесі команда арқылы жойыңыз:
+1. {linkto(../../../connect/s3-cli#s3-connect-cli)[text=AWS CLI]} орнатып, баптаңыз, егер ол әлі орнатылмаған болса.
+1. Конфигурацияны команданың көмегімен жойыңыз:
 
    ```shell
    aws s3api delete-bucket-policy \
-     --bucket <ИМЯ_БАКЕТА> \
+     --bucket <БАКЕТ_АТЫ> \
      --endpoint <ENDPOINT_URL>
    ```
 
@@ -138,3 +176,7 @@ Terraform көмегімен бакеттің қолжетімділік сая�
 
      - `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
      - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+     {/ifdef}
+     {ifdef(s3,s3-pdf)}
+   - `<ENDPOINT_URL>` — {var(s3)} инсталляциясыңызда қолданылатын домендік атауы бар сілтеме.
+     {/ifdef}

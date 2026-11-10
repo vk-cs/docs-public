@@ -1,83 +1,19 @@
-# {heading(Жылдам бастау)[id=terraform-qs]}
+# {heading(Жылдам бастау)[id=terraform-quick-start]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдар)[id=terraform-quick-start-prepare]}
 
-1. Terraform-ды {var(cloud)} ресми [айнасынан](https://hashicorp-releases.mcs.mail.ru/terraform) орнатыңыз.
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Егер бұл әлі жасалмаған болса, [екі факторлы аутентификацияны баптаңыз](/kz/access/iam/instructions/manage-2fa) және [API арқылы қолжетімділікті белсендіріңіз](/kz/tools-for-using-services/api/rest-api/enable-api).
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-prepare]}
 
-1. Беттің жоғарғы бөлігіндегі пайдаланушы атына басып, ашылмалы тізімнен **Жоба баптаулары** тармағын таңдаңыз.
+## {heading(Terraform-ды инициализациялау)[id=terraform-quick-start-init]}
 
-1. **Terraform** қойындысына өтіңіз. Аттас батырмаларды басып, негізгі [Terraform конфигурация файлын](../reference/configuration#fayl_konfiguracii_provaydera_terraform) және [Terraform айнасының конфигурация файлын](../reference/configuration#terraform-mirror-config) жүктеп алыңыз.
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-init]}
 
-    `vkcs_provider.tf` және `terraform.rc` атаулары бар файлдар жүктеледі.
+## {heading(Terraform көмегімен ресурстарды жасау)[id=terraform-quick-start-create]}
 
-1. Файлдармен келесі әрекеттерді орындаңыз:
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-create]}
 
-   {tabs}
+## {heading(Terraform-ды жаңарту)[id=terraform-quick-start-update]}
 
-   {tab(Windows)}
-
-    1. Windows Explorer мекенжай жолағына `%APPDATA%` енгізіп, ашылған директорияға `terraform.rc` файлын көшіріңіз.
-    1. `vkcs_provider.tf` файлын платформамен жұмыс істеуді жоспарлап отырған жұмыс директориясына көшіріңіз.
-
-        {var(cloud)} әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
-
-   {/tab}
-
-   {tab(Басқа ОС)}
-
-    1. Terraform айнасының конфигурация файлын `terraform.rc` атауынан `.terraformrc` атауына өзгертіңіз.
-    1. `.terraformrc` файлын пайдаланушының үй директориясының түбіріне көшіріңіз.
-    1. `vkcs_provider.tf` файлын платформамен жұмыс істеуді жоспарлап отырған жұмыс директориясына көшіріңіз.
-
-        {var(cloud)} әрбір жобасы үшін бөлек жұмыс директориясын жасау ұсынылады.
-
-   {/tab}
-
-   {/tabs}
-
-    {note:info}
-
-    Екі конфигурация файлын да өзіңіз жасай аласыз. Сондай-ақ жүктелген файлдарды өңдей аласыз — мысалы, қосымша Terraform-провайдерді қосу үшін. Файлдардың мазмұны [Конфигурация файлдары](../reference/configuration) мақаласында сипатталған.
-
-    {/note}
-
-## Terraform-ды инициализациялау
-
-Жобамен жұмыс істеуді жоспарлап отырған директорияда келесі команданы орындаңыз:
-
-```console
-terraform init
-```
-
-Terraform жұмыс істеуі үшін қажет қосымша файлдар жасалады.
-
-## Terraform көмегімен ресурстар жасау
-
-1. Жұмыс директориясында ресурс конфигурациясын жасаңыз — мысалы, [виртуалды машинаны жасауға](../how-to-guides/iaas/create) арналған конфигурацияны.
-
-1. Келесі команданы орындаңыз:
-
-    ```console
-    terraform apply
-    ```
-
-    Растауды сұрағанда `yes` енгізіңіз.
-
-1. Операцияның аяқталуын күтіңіз.
-
-Жасалған ресурстар жеке кабинетіңізде пайда болады.
-
-## Terraform-ды жаңарту
-
-Егер `vkcs_provider.tf` файлындағы провайдер нұсқасы ресурсты жасау үшін қажет нұсқадан төмен болса, конфигурацияны валидациялау кезінде қате пайда болады. Оны болдырмау үшін провайдерді [соңғы нұсқаға](https://github.com/vk-cs/terraform-provider-vkcs) немесе ресурс сипаттамасында көрсетілген нұсқаға дейін жаңартыңыз:
-
-1. `vkcs_provider.tf` файлын ашып, нұсқаны қажетті мәнге өзгертіңіз, мысалы: `version = "~> 0.8.0"`.
-1. Терминалда келесі команданы орындаңыз:
-
-  ```console
-  terraform init --upgrade
-  ```
+{include(../../../_includes/_terraform-install.md)[tags=terraform-install-update]}

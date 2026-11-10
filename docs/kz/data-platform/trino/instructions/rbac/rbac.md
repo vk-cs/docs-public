@@ -1,10 +1,12 @@
 # {heading(Пайдаланушылардың қолжетімділігін басқару)[id=trino_rbac]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+Cloud Trino-да пайдаланушылардың қолжетімділігін басқару объектілермен (каталогтар, схемалар және кестелер) жасалатын әрекеттерге ережелер қосу арқылы жүзеге асырылады. Бұл ережелер пайдаланушының қандай SQL-командаларды орындай алатынын анықтайды. Ережелердің жұмыс істеуі және SQL-командаларды орындау үкіметтері туралы толығырақ — {linkto(../../concepts/rbac_info#rbac_info)[text=%text]} мақаласында.
 
 ## {heading(Қолжетімділік ережесін қосу)[id=trino_add]}
 

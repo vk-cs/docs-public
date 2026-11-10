@@ -1,0 +1,14 @@
+{
+  "title": "VK Капча SDK орнату",
+  "shortDescription": "VK Капча SDK қосымшасын npm, yarn, pnpm немесе JS-скрипт арқылы веб-қосымшаға орнату және қосу",
+  "metaDescription": "VK Капча SDK қосымшасын веб-қосымшаларға npm, yarn, pnpm немесе JS-скрипт арқылы қалай орнату және жергілікті әзірлеуді баптау туралы біліңіз.",
+  "sectionTitle": "VK Капча SDK орнату",
+  "icon": "",
+  "weight": 1,
+  "uuid": "dc566e3f-46af-451c-a234-51492c6b6f5e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

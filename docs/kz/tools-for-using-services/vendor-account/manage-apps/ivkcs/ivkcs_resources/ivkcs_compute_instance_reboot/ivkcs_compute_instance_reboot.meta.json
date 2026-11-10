@@ -3,11 +3,11 @@
   "shortDescription": "",
   "metaDescription": "ivkcs_compute_instance_reboot ресурсы",
   "sectionTitle": "ivkcs_compute_instance_reboot ресурсы",
+  "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
   "weight": 6,
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "375b937c-a30d-477a-9d24-df9d15007a8f"
+  }
 }

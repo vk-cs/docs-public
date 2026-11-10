@@ -1,0 +1,14 @@
+{
+  "title": "Тұжырымдамалар",
+  "shortDescription": "Cloud PostgreSQL қызметінің негізгі ұғымдары мен сипаттамалары",
+  "metaDescription": "VK Data Platform ішіндегі Cloud PostgreSQL қызметінің негізгі ұғымдары мен сипаттамалары туралы біліңіз",
+  "sectionTitle": "Тұжырымдамалар",
+  "weight": 0,
+  "uuid": "41d5d07c-a1e3-45ca-a714-3d333826fb3e",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

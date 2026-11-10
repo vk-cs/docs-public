@@ -1,22 +1,22 @@
 # {heading(SDK)[id=s3-connect-sdk]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {var(s3)} қызметіне SDK көмегімен қосылу үшін:
 
-1. Қажетті құралдарды немесе SDK-ны орнатыңыз:
+1. Қажетті құралдарды немесе SDK орнатыңыз:
 
-   - [PowerShell үшін құралдар](https://docs.aws.amazon.com/powershell).
-   - [Java үшін SDK](https://docs.aws.amazon.com/sdk-for-java/index.html).
-   - [.NET үшін SDK](https://docs.aws.amazon.com/sdk-for-net/index.html).
-   - [JavaScript үшін SDK](https://docs.aws.amazon.com/sdk-for-javascript/index.html).
-   - [Ruby үшін SDK](https://docs.aws.amazon.com/sdk-for-ruby/index.html).
-   - [Python (Boto) үшін SDK](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
-   - [PHP үшін SDK](https://docs.aws.amazon.com/sdk-for-php/index.html).
-   - [Go үшін SDK](https://docs.aws.amazon.com/sdk-for-go).
+   - [PowerShell-ге арналған құралдар](https://docs.aws.amazon.com/powershell).
+   - [Java-ға арналған SDK](https://docs.aws.amazon.com/sdk-for-java/index.html).
+   - [.NET-ке арналған SDK](https://docs.aws.amazon.com/sdk-for-net/index.html).
+   - [JavaScript-ке арналған SDK](https://docs.aws.amazon.com/sdk-for-javascript/index.html).
+   - [Ruby-ге арналған SDK](https://docs.aws.amazon.com/sdk-for-ruby/index.html).
+   - [Python-ға арналған SDK (Boto)](http://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+   - [PHP-ге арналған SDK](https://docs.aws.amazon.com/sdk-for-php/index.html).
+   - [Go-ға арналған SDK](https://docs.aws.amazon.com/sdk-for-go).
    - [iOS және Android үшін Mobile SDK](https://docs.amplify.aws).
 
-1. Егер бұған дейін жасалмаған болса, {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=аккаунт]} және {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]} жасаңыз. Қосылуға арналған деректемелерді сақтап қойыңыз:
+1. Бұрын жасалмаса, {linkto(../../instructions/access-management/access-keys#s3-instructions-access-keys-new-account-access-key)[text=аккаунт]} және {linkto(../../instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=бакет]} жасаңыз. Қосылу деректерін сақтаңыз:
 
    {ifdef(public)}
 
@@ -25,8 +25,8 @@
    {tab(Мәскеу өңірі)}
 
    - Endpoint URL: `https://hb.vkcloud-storage.ru` немесе `https://hb.ru-msk.vkcloud-storage.ru`.
-   - Access Key ID: аккаунт жасалған кезде алынған қолжетімділік кілтінің идентификаторы.
-   - Secret Key: аккаунт жасалған кезде алынған құпия кілт.
+   - Access Key ID: аккаунт жасау кезінде алынған қатынау кілтінің идентификаторы.
+   - Secret Key: аккаунт жасау кезінде алынған құпия кілт.
    - Default region name: `ru-msk`.
 
    {/tab}
@@ -34,8 +34,8 @@
    {tab(Қазақстан өңірі)}
 
    - Endpoint URL: `https://hb.kz-ast.vkcloud-storage.ru`.
-   - Access Key ID: аккаунт жасалған кезде алынған қолжетімділік кілтінің идентификаторы.
-   - Secret Key: аккаунт жасалған кезде алынған құпия кілт.
+   - Access Key ID: аккаунт жасау кезінде алынған қатынау кілтінің идентификаторы.
+   - Secret Key: аккаунт жасау кезінде алынған құпия кілт.
    - Default region name: `kz-ast`.
 
    {/tab}
@@ -45,30 +45,30 @@
    {/ifdef}
 
    {ifdef(s3,s3-pdf)}
-   
-   - Endpoint URL: сервис орнатылған кезде көрсетілген домендік атауы бар сілтеме.
-   - Access Key ID: аккаунт жасалған кезде алынған қолжетімділік кілтінің идентификаторы.
-   - Secret Key: аккаунт жасалған кезде алынған құпия кілт.
-   - Default region name: сервис орнатылған кезде көрсетілген {var(s3)} сервисінің орналасу өңірі. Әдепкі бойынша `ru-msk` мәні қолданылады.
+
+   - Endpoint URL: қызметті орнату кезінде көрсетілген домендік атауы бар сілтеме.
+   - Access Key ID: аккаунт жасау кезінде алынған қатынау кілтінің идентификаторы.
+   - Secret Key: аккаунт жасау кезінде алынған құпия кілт.
+   - Default region name: {var(s3)} қызметі орналасқан өңір, қызметті орнату кезінде көрсетілген. Әдепкі бойынша `ru-msk` мәні қолданылады.
 
    {/ifdef}
 
-1. {var(s3)} қызметіне қосылу параметрлерін келесі тәсілдердің бірімен баптаңыз:
+1. {var(s3)} қызметіне қосылу параметрлерін келесі тәсілдердің бірімен конфигурациялаңыз:
 
-   - Деректемелерді `~/.aws/credentials` конфигурациялық файлына қосыңыз.
+   - Деректерді `~/.aws/credentials` конфигурациялық файлына қосыңыз.
 
-     Мұндай тәсілді қолдайтын құралдар мен SDK-лардың толық тізімі [AWS ресми құжаттамасында](https://docs.aws.amazon.com/sdkref/latest/guide/supported-sdks-tools.html) келтірілген.
+     Мұндай тәсілді қолдайтын құралдар мен SDK-ның толық тізімі [AWS ресми құжаттамасында](https://docs.aws.amazon.com/sdkref/latest/guide/supported-sdks-tools.html) келтірілген.
 
-   - Деректемелерді орта айнымалыларында көрсетіңіз:
+   - Деректерді орта айнымалыларында көрсетіңіз:
 
      {tabs}
 
      {tab(Linux (bash) / MacOS (zsh))}
 
      ```console
-     export AWS_ACCESS_KEY_ID=<ИДЕНТИФИКАТОР_КЛЮЧА>
-     export AWS_SECRET_ACCESS_KEY=<СЕКРЕТНЫЙ_КЛЮЧ>
-     export AWS_DEFAULT_REGION=<РЕГИОН>
+     export AWS_ACCESS_KEY_ID=<КІЛТ_ИДЕНТИФИКАТОРЫ>
+     export AWS_SECRET_ACCESS_KEY=<ҚҰПИЯ_КІЛТ>
+     export AWS_DEFAULT_REGION=<ӨҢІР>
      ```
 
      {/tab}
@@ -76,9 +76,9 @@
      {tab(Windows (PowerShell))}
 
      ```console
-     $Env:AWS_ACCESS_KEY_ID="<ИДЕНТИФИКАТОР_КЛЮЧА>"
-     $Env:AWS_SECRET_ACCESS_KEY="<СЕКРЕТНЫЙ_КЛЮЧ>"
-     $Env:AWS_DEFAULT_REGION="<РЕГИОН>"
+     $Env:AWS_ACCESS_KEY_ID="<КІЛТ_ИДЕНТИФИКАТОРЫ>"
+     $Env:AWS_SECRET_ACCESS_KEY="<ҚҰПИЯ_КІЛТ>"
+     $Env:AWS_DEFAULT_REGION="<ӨҢІР>"
      ```
 
      {/tab}
@@ -86,41 +86,41 @@
      {/tabs}
 
      {note:warn}
-     Кейбір құралдар мен SDK `AWS_DEFAULT_REGION` айнымалысын оқымауы мүмкін және өңірді басқа тәсілмен көрсетуді талап етеді — қажетті құралдың құжаттамасын тексеріңіз.
+     Кейбір құралдар мен SDK `AWS_DEFAULT_REGION` айнымалысын оқымай, өңірді басқа тәсілмен көрсетуді талап етуі мүмкін — қажетті құралдың құжаттамасын тексеріңіз.
      {/note}
 
-   - Деректемелерді тікелей бастапқы кодқа қосыңыз.
+   - Деректерді тікелей бастапқы кодқа қосыңыз.
 
 1. Орнатылған SDK арқылы {var(s3)} қызметіне қосылыңыз.
 
-   Төмендегі мысалдарда сәтті қосылған кезде қойма бакеттерінің тізімі шығарылады{ifdef(public)} (Мәскеу өңірі үшін){/ifdef}.
+   Төмендегі мысалдарда сәтті қосылған кезде{ifdef(public)} Мәскеу өңірі үшін{/ifdef} қойманың бакеттер тізімі шығарылады.
 
-   {cut(Python тіліндегі мысал)}
+   {cut(Python мысалы)}
 
-   Объектілік қоймаға қосылудың барлық параметрлері бастапқы кодта көрсетілген.
+   Объектілік қоймаға қосылу параметрлерінің барлығы бастапқы кодта көрсетілген.
 
    ```python
    import boto3
    session = boto3.session.Session()
    s3_client = session.client(
-       service_name = 's3',
-       endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru',
-       aws_access_key_id = '<YOUR_ACCESS_KEY>',
-       aws_secret_access_key = '<YOUR_SECRET_KEY>',
+       service_name = 's3',
+       endpoint_url = 'https://hb.ru-msk.vkcloud-storage.ru',
+       aws_access_key_id = '<YOUR_ACCESS_KEY>',
+       aws_secret_access_key = '<YOUR_SECRET_KEY>',
        region_name='ru-msk'
    )
 
    response = s3_client.list_buckets()
 
    for key in response['Buckets']:
-       print(key['Name'])
+       print(key['Name'])
    ```
 
    {/cut}
 
-   {cut(Go тіліндегі мысал)}
+   {cut(Go мысалы)}
 
-   Аккаунт кілтінің идентификаторы және құпия кілт тиісінше `AWS_ACCESS_KEY_ID` және `AWS_SECRET_ACCESS_KEY` орта айнымалыларына қосылған. Объектілік қоймаға қол жеткізуге арналған қалған деректемелер бастапқы кодта көрсетілген.
+   Аккаунт кілтінің идентификаторы мен құпия кілт сәйкесінше `AWS_ACCESS_KEY_ID` және `AWS_SECRET_ACCESS_KEY` орта айнымалыларына қосылған. Объектілік қоймаға қатынау үшін қалған деректер бастапқы кодта көрсетілген.
 
    ```go
    package main
@@ -143,12 +143,12 @@
        c := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
        if res, err := svc.ListBuckets(nil); err != nil {
-     	   log.Fatalf("Unable to list buckets, %v", err)
+           log.Fatalf("Unable to list buckets, %v", err)
        } else {
-     	   for _, b := range res.Buckets {
-     		   log.Printf("* %s created on %s \n", aws.StringValue(b.Name), aws.TimeValue(b.CreationDate))
-     	   }
-   	   }
+           for _, b := range res.Buckets {
+               log.Printf("* %s created on %s \n", aws.StringValue(b.Name), aws.TimeValue(b.CreationDate))
+           }
+       }
    }
    ```
 

@@ -1,23 +1,14 @@
 {
-  "title": "H2O LLM Studio өрістету",
-  "shortDescription": "Үлкен тілдік модельдерді оқыту және баптау үшін H2O LLM Studio өрістету",
-  "metaDescription": "Үлкен тілдік модельдерді оқыту және баптау үшін H2O LLM Studio өрістету",
-  "sectionTitle": "H2O LLM Studio өрістету",
+  "title": "H2O LLM Studio орнату",
+  "shortDescription": "Үлкен тілдік модельдерді оқыту және баптау үшін H2O LLM Studio орнату",
+  "metaDescription": "Үлкен тілдік модельдерді оқыту және баптау үшін H2O LLM Studio орнату",
+  "sectionTitle": "H2O LLM Studio орнату",
   "icon": "",
-  "weight": 20,
+  "weight": 7,
+  "uuid": "f5431ebe-e70d-4349-83cf-ba1bda4077d8",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "52063bad-4015-4c18-80cc-6ebc8c386c25"
+  }
 }

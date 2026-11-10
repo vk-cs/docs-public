@@ -1,31 +1,6 @@
 # {heading(Сервис туралы)[id=logging-about]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-### {heading(Сервистің сипаттамасы)[id=logging-description]}
-
-Cloud Logging — ВМ ішіндегі пайдаланушы қолданбаларының логтарымен және {var(cloud)} бұлтында жұмыс істеуге арналған сервис. Бұлттағы бірыңғай интерфейсте логтарды жинау, сақтау, оқу, көрсету және өңдеу.
-
-Сервис бүкіл өнімдік жүйенің логтарын бірыңғай басқару панелінде орталықтандырады, жазбаларды сақтайды және оларды ыңғайлы түрде іздеуге әрі олармен жұмыс істеуге мүмкіндік береді. Сондай-ақ, қажет болған жағдайда қолданбалардың жұмысын бақылауға және оларды жөндеуге көмектеседі.
-
-Cloud Logging жүйесінде басқару тақтасы немесе API арқылы басталған оқиғалар тіркеледі. Мысалы, нақты серверді кім өшіргенін білуге болады.
-
-Сервис келесі объектілердің оқиғалар журналын жүргізеді:
-
-* Fluent Bit аддоны орнатылған Kubernetes кластерлерінің.
-
-* Жасау кезінде {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасау]} кезінде логирование қосылған немесе кейінірек {linkto(../../instructions/connect-plugin#logging-connect-plugin)[text=орнатылған]} Fluent Bit агенты бар виртуалды машиналар.
-
-* Келесі түрлердегі дерекқорлардың:
-
-    * PostgreSQL.
-
-    {ifdef(private-pg,private-pg-pdf)}
-    * Postgres Pro Standard.
-    * Postgres Pro Enterprise.
-      {/ifdef}
-
-    * ClickHouse.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ### {heading(Артықшылықтары)[id=logging-advantage]}
 

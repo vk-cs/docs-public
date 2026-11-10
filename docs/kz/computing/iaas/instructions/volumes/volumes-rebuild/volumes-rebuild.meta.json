@@ -1,0 +1,18 @@
+{
+  "title": "Дискті қалпына келтіру",
+  "sectionTitle": "Дискті қалпына келтіру",
+  "shortDescription": "Резервтік көшірмеден дискті қалпына келтіру тәсілі",
+  "metaDescription": "Cloud Servers: VK Cloud-та ВМ дискісін резервтік көшірмеден қалпына келтіру.",
+  "icon": "",
+  "weight": 10,
+  "uuid": "11c06ec1-e7bf-48f1-9f1e-b67861ccccd5",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

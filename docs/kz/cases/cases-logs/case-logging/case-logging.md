@@ -444,7 +444,7 @@ filter {
    match => [ "timestamp" , "dd/MMM/YYYY:HH:mm:ss Z" ]
    remove_field => [ "timestamp" ]
   }
-  
+
   useragent {
    source => "user_agent"
   }

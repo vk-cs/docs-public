@@ -1,0 +1,16 @@
+{
+  "title": "VK Object Storage қызметін пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «VK Cloud» Платформасы аясында VK Object Storage қызметін пайдалану шарттары болып табылады. ",
+  "sectionTitle": "VK Object Storage қызметін пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 11,
+  "uuid": "47e3b7ca-e845-49a5-b56f-a6ea6714024a",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

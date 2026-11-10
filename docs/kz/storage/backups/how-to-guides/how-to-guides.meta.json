@@ -1,14 +1,14 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "Cloud Backup сервисін пайдалану мысалдары",
-  "metaDescription": "VK Cloud платформасындағы Cloud Backup сервисін пайдалану мысалдары.",
+  "shortDescription": "Cloud Backup қызметін пайдалану мысалдары",
+  "metaDescription": "VK Cloud платформасындағы Cloud Backup қызметін пайдалану мысалдары.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
   "weight": 2,
+  "uuid": "99c28c0c-d29d-4e01-a350-90d256467163",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "55c970b1-109f-4e56-a71f-55845c4bc68b"
+  }
 }

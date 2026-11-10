@@ -1,13 +1,13 @@
 {
-  "title": "Қызмет түрлері",
+  "title": "Сервистердің түрлері",
   "shortDescription": "",
-  "metaDescription": "Қызмет түрлері",
-  "sectionTitle": "Қызмет түрлері",
+  "metaDescription": "Сервистердің түрлері",
+  "sectionTitle": "Сервистердің түрлері",
   "weight": 1,
+  "uuid": "7eb88211-df70-45d7-a9e0-16cf9a8ee48b",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "82f74a61-13b7-43de-851b-59133412396a"
+  }
 }

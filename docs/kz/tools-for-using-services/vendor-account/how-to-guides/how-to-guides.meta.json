@@ -1,14 +1,14 @@
 {
-  "title": "Практикалық нұсқаулықтар",
-  "sectionTitle": "Практикалық нұсқаулықтар",
-  "shortDescription": "Қосымша сервистер мен интеграциялар, қолданбалар дүкені ұсынатын",
-  "metaDescription": "Marketplace VK Cloud: қосымша сервистер мен интеграциялар",
+  "title": "Тәжірибелік нұсқаулықтар",
+  "sectionTitle": "Тәжірибелік нұсқаулықтар",
+  "shortDescription": "Қолданбалар дүкені ұсынатын қосымша қызметтер мен интеграциялар",
+  "metaDescription": "VK Cloud Marketplace: қосымша қызметтер мен интеграциялар",
   "icon": "",
   "weight": 4,
+  "uuid": "fbb10aba-c96c-4264-abdd-b7fcca6e0e89",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "5ffc0103-0fc6-4bab-b700-92cb4633abf0"
+  }
 }

@@ -1,11 +1,11 @@
 {
   "title": "Encryption",
   "shortDescription": "Жүктелетін объектілерді шифрлау үшін бакетті баптау",
-  "metaDescription": "VK Object Storage бакеттерінде шифрлаумен жұмыс істеуге арналған барлық қолжетімді әдістер: бакет шифрлауын орнату (PutBucketEncryption), бакет шифрлауының конфигурациясын тексеру (GetBucketEncryption), бакет шифрлауын өшіру (DeleteBucketEncryption)",
+  "metaDescription": "VK Object Storage бакеттеріндегі шифрлаумен жұмыс істеудің барлық қолжетімді әдістері: Бакет шифрлауын орнату (PutBucketEncryption), бакет шифрлау конфигурациясын тексеру (GetBucketEncryption), бакет шифрлауын өшіру (DeleteBucketEncryption)",
   "sectionTitle": "Encryption",
   "icon": "",
   "weight": 4,
-  "uuid": "9ad83721-4a57-443a-996a-bfca1c06d48a",
+  "uuid": "a94df829-5cec-42e9-b63b-a9028f10427e",
   "build": {
     "for": [
       "s3",

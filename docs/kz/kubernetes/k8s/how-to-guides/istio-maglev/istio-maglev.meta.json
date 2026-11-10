@@ -1,0 +1,15 @@
+{
+  "title": "Istio аддоны көмегімен LEAST_REQUEST және MAGLEV алгоритмдері бойынша жүктемені теңгерімдеу",
+  "shortDescription": "Бір Kubernetes Service ішіндегі подтар арасындағы ішкі теңгерімдеу алгоритмдері қалай жұмыс істейді",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "LEAST_REQUEST және MAGLEV алгоритмдері бойынша жүктемені теңгерімдеу",
+  "icon": "",
+  "weight": 50,
+  "uuid": "ff97bcfb-322c-4fd2-82b9-556a92871b9d",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

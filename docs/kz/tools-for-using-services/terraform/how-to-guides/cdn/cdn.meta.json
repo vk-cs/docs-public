@@ -1,16 +1,14 @@
 {
   "title": "CDN",
-  "shortDescription": "CDN сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
-  "metaDescription": "CDN сервисі объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "shortDescription": "CDN қызметінің объектілерін басқару үшін Terraform-ды қалай пайдалану",
+  "metaDescription": "CDN қызметінің объектілерін басқару үшін Terraform-ды қалай пайдалану",
   "sectionTitle": "CDN",
   "icon": "",
-  "weight": 30,
+  "weight": 40,
+  "uuid": "c9ef334a-2a4b-4da7-b31e-863ae9047f1b",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "4b719b49-6d58-4411-8501-d6838821f506"
+  }
 }

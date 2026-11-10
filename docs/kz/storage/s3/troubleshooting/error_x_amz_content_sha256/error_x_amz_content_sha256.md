@@ -1,11 +1,11 @@
-# {heading(AWS CLI v2 арқылы жұмыс істегенде x-amz-content-sha256 қатесі)[id=s3-error-x-amz-content-sha256]}
+# {heading(AWS CLI v2 жұмысы кезіндегі x-amz-content-sha256 қатесі)[id=s3-error-x-amz-content-sha256]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Объектілік қоймамен жұмыс істеген кезде `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` хабарламасы пайда болады.
+Объектті сақтаумен жұмыс істеу кезінде `x-amz-content-sha256 must be UNSIGNED-PAYLOAD` хабарламасы пайда болады.
 
-Бұл AWS CLI 2-нұсқасы қолданылып жатқанынан болуы мүмкін.
+Бұл AWS CLI 2-нұсқасы қолданылатындығынан болуы мүмкін.
 
-### {heading(Шешімі)[id=s3-error-x-amz-content-sha256-resolve]}
+### {heading(Шешу)[id=s3-error-x-amz-content-sha256-resolve]}
 
-Командаңызға `--no-sign-request` жалаушасын қосыңыз немесе AWS CLI профилін 2-нұсқалы қолтаңбаны (SigV2) пайдалану үшін баптаңыз.
+Командаңызға `--no-sign-request` жалаушасын қосыңыз немесе AWS CLI профилін SigV2 (2-нұсқа) қолтаңбасын пайдалану үшін баптаңыз.

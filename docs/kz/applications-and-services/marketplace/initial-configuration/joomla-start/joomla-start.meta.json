@@ -1,23 +1,14 @@
 {
-  "title": "Joomla өрістету",
-  "shortDescription": "Веб-сайттарды жасау және басқару үшін Joomla өрістету",
-  "metaDescription": "Marketplace VK Cloud: веб-сайттарды жасау және басқару үшін Joomla сервисін өрістету қадамдары",
-  "sectionTitle": "Joomla өрістету",
+  "title": "Joomla орнату",
+  "shortDescription": "Веб-сайттарды құру және басқару үшін Joomla орнату",
+  "metaDescription": "Marketplace VK Cloud: веб-сайттарды құру және басқару үшін Joomla қызметін орнату қадамдары",
+  "sectionTitle": "Joomla орнату",
   "icon": "",
-  "weight": 17,
+  "weight": 9,
+  "uuid": "999ad2ff-7acb-49c5-8232-fa1f2cd6cf39",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "bf1ded58-bfdc-456c-9ede-335d78955497"
+  }
 }

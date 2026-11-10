@@ -1,9 +1,9 @@
-# {heading(VK Private Cloud-тағы аудит)[id=audit-private]}
+# {heading(VK Private Cloud-та аудит)[id=audit-private]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-{var(data-p)} Cloud Audit сервисінің көмегімен сервистерден, виртуалды машиналардан және пайдаланылатын басқа ресурстардан келіп түсетін қауіпсіздік оқиғаларын жинайды және көрсетеді. Cloud Audit-пен жұмыс істеу туралы толығырақ {var(cloud)} **Пайдаланушы нұсқаулығы** құжатындағы **Мониторинг және логтау** → [Аудит](https://cloud.vk.ru/docs/on-premises/private-cloud/kz/4_3/user-guide/mal_main/mal_audit) бөлімінен қараңыз.
+{var(data-p)} Cloud Audit қызметі арқылы қауіпсіздік оқиғаларын жинайды және көрсетеді, олар қызметтерден, виртуалды машиналардан және пайдаланылатын басқа ресурстардан түседі. Cloud Audit-пен жұмыс істеу туралы толығырақ — {var(cloud)} **Пайдаланушы нұсқаулығындағы** **Мониторинг және логирование** → [Аудит](https://cloud.vk.ru/docs/on-premises/private-cloud/ru/4_3/user-guide/mal_main/mal_audit) бөлімінде.

@@ -1,0 +1,10 @@
+{
+  "title": "VK Капча",
+  "shortDescription": "VK Капча сервисінің OpenAPI-спецификациясы",
+  "metaDescription": "VK Капча сервисінің API — createSession және validate әдістерінің толық спецификациясы: сұраулардың параметрлері, жауаптардың форматтары және мысалдар.",
+  "sectionTitle": "VK Капча",
+  "hidden": true,
+  "icon": "",
+  "weight": 19,
+  "uuid": "71f14b3f-cec1-4faf-9945-0a12eb999def"
+}

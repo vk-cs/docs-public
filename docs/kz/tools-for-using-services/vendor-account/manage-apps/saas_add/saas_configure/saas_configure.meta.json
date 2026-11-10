@@ -1,13 +1,13 @@
 {
-  "title": "SaaS-қосымшасын конфигурациялау",
+  "title": "SaaS-қосымшасының конфигурациясы",
   "shortDescription": "",
-  "metaDescription": "SaaS-қосымшасын конфигурациялау",
-  "sectionTitle": "SaaS-қосымшасын конфигурациялау",
+  "metaDescription": "SaaS-қосымшасының конфигурациясы",
+  "sectionTitle": "SaaS-қосымшасының конфигурациясы",
   "weight": 3,
+  "uuid": "8b62e75b-d413-45fd-82ec-b7df9dab2fab",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ad7f1299-16e2-4f09-8828-575bddea28cf"
+  }
 }

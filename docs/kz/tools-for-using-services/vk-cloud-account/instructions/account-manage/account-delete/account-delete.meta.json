@@ -1,14 +1,17 @@
 {
-  "title": "Есептік жазбаны жою",
-  "shortDescription": "Пайдаланушының есептік жазбасын жою",
-  "metaDescription": "VK Cloud пайдаланушысының есептік жазбасын жою.",
-  "sectionTitle": "Есептік жазбаны жою",
+  "title": "Тіркелгіні жою",
+  "shortDescription": "Пайдаланушы тіркелгісін жою",
+  "metaDescription": "VK Cloud пайдаланушы тіркелгісін жою.",
+  "sectionTitle": "Тіркелгіні жою",
   "icon": "",
   "weight": 6,
+  "additionalUuids": [
+    "b2af87a5-29a6-4a35-bb27-3ceb22d11532"
+  ],
+  "uuid": "3d563e56-4848-488f-af5d-9c42249b2628",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "3dd6825d-469e-4127-a4cb-60256a26728b"
+  }
 }

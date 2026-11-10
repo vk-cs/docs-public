@@ -1,0 +1,14 @@
+{
+  "title": "Сервис данысымен жұмыс істеу",
+  "shortDescription": "",
+  "metaDescription": "Lakekeeper VK Data Platform данысымен жұмыс істеу бойынша қадамдық нұсқаулық: ақпаратты көру, параметрлерді баптау, масштабтау және қызмет көрсету",
+  "sectionTitle": "Сервис данысымен жұмыс істеу",
+  "weight": 2,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "51e5c2fa-2463-4a4d-9dfe-c802ced3d3d8"
+}

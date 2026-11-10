@@ -1,0 +1,14 @@
+{
+  "title": "Тұжырымдамалар",
+  "shortDescription": "Jatoba қызметінің негізгі ұғымдары мен сипаттамалары",
+  "metaDescription": "VK Data Platform ішіндегі Jatoba қызметінің негізгі ұғымдары мен сипаттамалары туралы біліңіз",
+  "sectionTitle": "Тұжырымдамалар",
+  "weight": 0,
+  "uuid": "f66be912-58cc-49a2-9029-70a665d6129e",
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

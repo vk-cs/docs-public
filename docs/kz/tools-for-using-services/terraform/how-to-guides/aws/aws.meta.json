@@ -1,15 +1,14 @@
 {
   "title": "{var(s3)}",
-  "shortDescription": "{var(s3)} сервисінің бакеттері мен объектілерін басқару үшін Terraform қалай пайдаланылады",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. VK Object Storage сервисінің бакеттері мен объектілерін басқару үшін Terraform қалай пайдаланылады",
+  "shortDescription": "{var(s3)} қызметінің бакеттері мен объектілерін басқару үшін Terraform-ды қалай пайдалану",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. VK Object Storage қызметінің бакеттері мен объектілерін басқару үшін Terraform-ды қалай пайдалану",
   "sectionTitle": "{var(s3)}",
   "icon": "",
   "weight": 40,
+  "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1",
   "build": {
     "for": [
-      "public",
-      "s3"
+      "public"
     ]
-  },
-  "uuid": "f12f2621-2822-4a46-bf63-0c4656ecf65b"
+  }
 }

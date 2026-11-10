@@ -1,19 +1,21 @@
-# {heading(Қолжетімділікті басқару)[id=trino-concepts-iam]}
+# {heading(Рұқсаттарды басқару)[id=trino-concepts-iam]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=Шақырылған]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жоба]} қатысушыларының немесе {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервистік есептік жазбалардың]} құқықтарын шектеу үшін Cloud Trino жүйесінде сәйкестендіру және қолжетімділікті басқарудың бірыңғай сервисі — {linkto(../../../../access/iam#iam)[text=IAM]} қолданылады. Қолжетімділіктерді {var(cloud)} жеке кабинетінен орталықтандырылған түрде басқаруға болады.
+{linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=Шақырылған]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жоба]} қатысушыларына немесе {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервистік жазбаларға]} құқықтарды шектеу үшін Cloud Trino сервисінде идентификация және рұқсаттарды басқарудың бірыңғай сервисі — {linkto(../../../../access/iam#iam)[text=IAM]} қолданылады. Рұқсаттарды {var(cloud)} жеке кабинетінен орталықтандырылған түрде басқаруға болады.
 
-Cloud Trino сервисінде жоба қатысушысына қолжетімді әрекеттер тізімін мыналар анықтайды:
+Cloud Trino сервисінде жоба қатысушысына қолжетімді әрекеттер тізімін анықтайтын:
 
-- {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=Базалық рөл]} — әдепкі бойынша қолжетімді құқықтар жиынтығын береді.
-- Жеке {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=рұқсаттар]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындалады]} қосымша, егер {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базалық рөлге]} кіретіндері жеткіліксіз болса.
+- {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=Базалық рөл]} — әдепкі бойынша қолжетімді құқықтар жиынтығын анықтайды.
+- Жеке {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=рұқсаттар]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындалады]} қосымша, егер {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базалық рөлге]} кіретін құқықтар жеткіліксіз болса.
 
 Cloud Trino сервисі үшін {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=мамандандырылған рөлдер]} жоқ.
 
-Рөлдерді және рұқсаттарды тек `Жоба иесі`, `Суперадминистратор` және `Пайдаланушылар әкімшісі (IAM)` рөлдері бар жоба қатысушылары ғана {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындай]} алады. Рөлдер мен рұқсаттарды беру кезінде ең аз артықшылықтар қағидатын ұстаныңыз: пайдаланушы өз міндеттерін орындау үшін қажет құқықтарға ғана ие болуы тиіс.
+Рөлдер мен рұқсаттарды {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындау]} тек `Жоба иесі`, `Суперәкімші` және `Пайдаланушылар әкімшісі (IAM)` рөлдері бар жоба қатысушыларына ғана болады. Рөлдер мен рұқсаттарды беру кезінде ең аз артықшылықтар қағидатын ұстаныңыз: пайдаланушыда тек оның міндеттерін орындауға қажетті ғана құқықтар болуы тиіс.
 
 ## {heading(Рөлдік модель мысалы)[id=trino-concepts-iam-example]}
 

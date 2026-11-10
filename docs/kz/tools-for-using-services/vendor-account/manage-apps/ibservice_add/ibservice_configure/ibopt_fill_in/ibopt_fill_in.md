@@ -1,26 +1,26 @@
-# {heading(YAML тарифтік опциялар файлдарын толтыру)[id=IB_option_fill_in]}
+# {heading(Tariftiқ опциялардың YAML-файлдарын толтыру)[id=IB_option_fill_in]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-`parameters/<OPTION_NAME>.yaml` файлдарында кемінде бір тарифтік жоспарда қолданылатын барлық тарифтік опцияларды сипаттаңыз (толығырақ — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]} бөлімінде).
+`parameters/<OPTION_NAME>.yaml` файлдарында кем дегенде бір тарифтік жоспарда қолданылатын барлық тарифтік опцияларды сипаттаңыз (қосымша мәліметтер — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_option_types)[text=%text]} бөлімінде).
 
 Әрбір жеке YAML-файл бір тарифтік опцияға сәйкес келеді. Онда тарифтік опцияның баптаулары, ал ақылы опциялар үшін — құны сипатталады.
 
-Тарифтік опцияларды сипаттау үшін қолданылатын параметрлердің толық сипаттамасы [Тарифтік опцияның YAML-файлы](../iboption) бөлімінде берілген.
+Тарифтік опцияларды сипаттау үшін қолданылатын параметрлердің егжей-тегжейлі сипаттамасы [YAML-файл тарифной опции](../iboption) бөлімінде келтірілген.
 
-## {heading(integer типті тегін тарифтік опция-тұрақты)[id=option_int_const]}
+## {heading(integer түріндегі тегін тарифтік константа-опциясы)[id=option_int_const]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `integer` көрсетіңіз.
-    * `const` — тарифтік опцияның мәні.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `integer` мәнін көрсетіңіз.
+   * `const` — тарифтік опцияның мәні.
 
-{caption(`integer` типті опция-тұрақтыны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(`integer` түріндегі константа-опциясын сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -34,26 +34,26 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_int_const)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_int_const)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_int_const]} — integer типті тарифтік опция-тұрақты)[align=center;position=under;id=pic_option_int_const;number={const(numb_pic_option_int_const)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_int_const]} — integer түріндегі тарифтік константа-опциясы)[align=center;position=under;id=pic_option_int_const;number={const(numb_pic_option_int_const)} ]}
 ![pic1](../../../assets/Option_int_const_example.png){params[width=40%]}
 {/caption}
 
-## {heading(Тізімнен мәнді таңдауы бар integer типті тегін тарифтік опция)[id=option_int_enum]}
+## {heading(Тізімнен мән таңдау мүмкіндігі бар integer түріндегі тегін тарифтік опциясы)[id=option_int_enum]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `integer` көрсетіңіз.
-    * `enum` — тарифтік опцияның мүмкін мәндері.
-    * `default` — әдепкі мән.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `integer` мәнін көрсетіңіз.
+   * `enum` — тарифтік опцияның мүмкін мәндері.
+   * `default` — әдепкі мән.
 
-{caption(Тізімнен мәнді таңдауы бар `integer` типті опцияны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Тізімнен мән таңдау мүмкіндігі бар `integer` түріндегі опцияны сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -67,28 +67,28 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_int_enum)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_int_enum)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_int_enum]} — Тізімнен мәнді таңдауы бар integer типті тарифтік опция)[align=center;position=under;id=pic_option_int_enum;number={const(numb_pic_option_int_enum)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_int_enum]} — Тізімнен мән таңдау мүмкіндігі бар integer түріндегі тарифтік опциясы)[align=center;position=under;id=pic_option_int_enum;number={const(numb_pic_option_int_enum)} ]}
 ![pic1](../../../assets/Option_int_enum_example.png){params[width=60%]}
 {/caption}
 
-## {heading(Өзгерту қадамы 1 болатын integer типті тегін тарифтік опция)[id=option_int_step]}
+## {heading(1 өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы)[id=option_int_step]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `integer` көрсетіңіз.
-    * `default` — әдепкі мән (опционалды).
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `integer` мәнін көрсетіңіз.
+   * `default` — әдепкі мән (міндетті емес).
 
-      Егер параметр берілмесе, әдепкі мән `0` болады.
-    * `minimum` және `maximum` — тарифтік опцияның ең үлкен және ең кіші мәндері (опционалды).
+      Егер параметр орнатылмаса, әдепкі мән `0` тең болады.
+   * `minimum` және `maximum` — тарифтік опцияның ең үлкен және ең кіші мәндері (міндетті емес).
 
-{caption(Өзгерту қадамы 1 болатын `integer` типті тегін опцияны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(1 өзгеру қадамы бар `integer` түріндегі тегін опцияны сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -103,27 +103,27 @@ schema:
 ```
 {/caption}
 
-3, 4-суреттерде жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+3, 4 суреттерде жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_int_step]} — Өзгерту қадамы 1 болатын integer типті тегін тарифтік опция)[align=center;position=under;id=pic_option_int_step;number={const(numb_pic_option_int_step)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_int_step]} — 1 өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы)[align=center;position=under;id=pic_option_int_step;number={const(numb_pic_option_int_step)} ]}
 ![pic1](../../../assets/Option_int_with_step_standart.png)
 {/caption}
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_int_step_plus]} — Өзгерту қадамы 1 болатын integer типті тегін тарифтік опция, мән 1 қадамға ұлғайтылған)[align=center;position=under;id=pic_option_int_step_plus;number={const(numb_pic_option_int_step_plus)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_int_step_plus]} — 1 өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы, мән 1 қадамға ұлғайтылған)[align=center;position=under;id=pic_option_int_step_plus;number={const(numb_pic_option_int_step_plus)} ]}
 ![pic1](../../../assets/Option_int_with_step_standart1.png)
 {/caption}
 
-## {heading(Пайдаланушы анықтайтын өзгерту қадамы бар integer типті тегін тарифтік опция)[id=option_int_with_user_step_free]}
+## {heading(Пайдаланушылық өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы)[id=option_int_with_user_step_free]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `billing` секциясында келесі параметрлерді беріңіз:
+1. `billing` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `base` — стандартты мән.
-    * `cost` — өзгерту қадамының құны. `0` көрсетіңіз.
-    * `unit.size` — өзгерту қадамының өлшемі.
-    * `unit.measurement` — тарифтік опцияның өлшем бірліктері (опционалды).
+   * `base` — стандартты мән.
+   * `cost` — өзгеру қадамының құны. `0` мәнін көрсетіңіз.
+   * `unit.size` — өзгеру қадамының өлшемі.
+   * `unit.measurement` — тарифтік опцияның өлшем бірліктері (міндетті емес).
 
    {caption(`billing` секциясын толтыру мысалы)[align=left;position=above]}
    ```yaml
@@ -134,35 +134,35 @@ schema:
         size: 100
    ```
    {/caption}
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `integer` көрсетіңіз.
-    * `default` — әдепкі мән (опционалды). Опцияның стандартты мәніне қатысты беріледі:
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `integer` мәнін көрсетіңіз.
+   * `default` — әдепкі мән (міндетті емес). Опцияның стандартты мәніне қатысты орнатылады:
 
-        * Әдепкі мән стандартты мәнге тең болуы үшін `default` параметрін көрсетпеңіз немесе `0` көрсетіңіз ({linkto(#pic_option_int_with_user_step_free)[text=%number-сурет]}).
+      * Әдепкі мән стандартты мәнге тең болуы үшін `default` параметрін көрсетпеңіз немесе `0` мәнін көрсетіңіз ({linkto(#pic_option_int_with_user_step_free)[text=%number сурет]}).
 
-          {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free]} — integer типті тегін тарифтік опция, пайдаланушы анықтайтын өзгерту қадамымен (billing.base = 25, schema.default = 0, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free;number={const(numb_pic_option_int_with_user_step_free)} ]}
-          ![pic1](../../../assets/Option_int_with_user_step_free.png)
-          {/caption}
-        * Әдепкі мән `n` және стандартты мән негізінде формула бойынша есептелуі үшін `n` көрсетіңіз ({linkto(#pic_option_int_with_user_step_free1)[text=%number-сурет]}, {linkto(#pic_option_int_with_user_step_free2)[text=%number-сурет]}):
+         {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free]} — Пайдаланушылық өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы (billing.base = 25, schema.default = 0, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free;number={const(numb_pic_option_int_with_user_step_free)} ]}
+         ![pic1](../../../assets/Option_int_with_user_step_free.png)
+         {/caption}
+      * Әдепкі мән стандартты мән және `n` мәні негізінде формула бойынша есептелуі үшін `n` мәнін көрсетіңіз ({linkto(#pic_option_int_with_user_step_free1)[text=%number сурет]}, {linkto(#pic_option_int_with_user_step_free2)[text=%number сурет]}):
 
-           ```txt
-           billing.base + n * billing.unit.size
-           ```
+         ```txt
+         billing.base + n * billing.unit.size
+         ```
 
-          {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free1]} — integer типті тегін тарифтік опция, пайдаланушы анықтайтын өзгерту қадамымен (billing.base = 25, schema.default = 1, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free1;number={const(numb_pic_option_int_with_user_step_free1)} ]}
-          ![pic1](../../../assets/Option_int_with_user_step_free1.png)
-          {/caption}
+         {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free1]} — Пайдаланушылық өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы (billing.base = 25, schema.default = 1, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free1;number={const(numb_pic_option_int_with_user_step_free1)} ]}
+         ![pic1](../../../assets/Option_int_with_user_step_free1.png)
+         {/caption}
 
-          {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free2]} — integer типті тегін тарифтік опция, пайдаланушы анықтайтын өзгерту қадамымен (billing.base = 25, schema.default = 2, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free2;number={const(numb_pic_option_int_with_user_step_free2)} ]}
-          ![pic1](../../../assets/Option_int_with_user_step_free2.png)
-          {/caption}
+         {caption(Сурет {counter(pic)[id=numb_pic_option_int_with_user_step_free2]} — Пайдаланушылық өзгеру қадамы бар integer түріндегі тегін тарифтік опциясы (billing.base = 25, schema.default = 2, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_with_user_step_free2;number={const(numb_pic_option_int_with_user_step_free2)} ]}
+         ![pic1](../../../assets/Option_int_with_user_step_free2.png)
+         {/caption}
 
-    * `minimum` және `maximum` — тарифтік опцияның ең үлкен және ең кіші мәндері (опционалды). Әдепкі мән үшін қалай берілсе, дәл солай беріледі.
+   * `minimum` және `maximum` — тарифтік опцияның ең үлкен және ең кіші мәндері (міндетті емес). Әдепкі мән үшін жасалғандай орнатылады.
 
-{caption(Пайдаланушы анықтайтын өзгерту қадамы бар `integer` типті тегін опцияны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Пайдаланушылық өзгеру қадамы бар `integer` түріндегі тегін опцияны сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -184,83 +184,83 @@ schema:
 
 {note:info}
 
-`billing` және `schema` секцияларының параметрлерінің толық сипаттамасы тиісінше {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} және {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} бөлімдерінде берілген.
+`billing` және `schema` секцияларының параметрлерінің егжей-тегжейлі сипаттамасы {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} және {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} бөлімдерінде келтірілген.
 
 {/note}
 
-## {heading(Өзгерту қадамы бар integer типті алдын ала төленетін тарифтік опция)[id=option_int_step_prepayed]}
+## {heading(Өзгеру қадамы бар integer түріндегі алдын ала төлемді тарифтік опциясы)[id=option_int_step_prepayed]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `billing` секциясында келесі параметрлерді беріңіз ({linkto(#pic_option_int_step_prepayed)[text=%number-сурет]}, {linkto(#pic_option_int_step_prepayed1)[text=%number-сурет]}, {linkto(#pic_option_int_step_prepayed2)[text=%number-сурет]}):
+1. `billing` секциясында мынадай параметрлерді орнатыңыз ({linkto(#pic_option_int_step_prepayed)[text=%number сурет]}, {linkto(#pic_option_int_step_prepayed1)[text=%number сурет]}, {linkto(#pic_option_int_step_prepayed2)[text=%number сурет]}):
 
-    * `base` — стандартты мән. Стандартты мән тарифтік жоспар құнына кіреді.
-    * `cost` — өзгерту қадамының құны.
-    * `unit.size` — өзгерту қадамының өлшемі.
-    * `unit.measurement` — тарифтік опцияның өлшем бірліктері (опционалды).
+   * `base` — стандартты мән. Стандартты мән тарифтік жоспардың құнына кіреді.
+   * `cost` — өзгеру қадамының құны.
+   * `unit.size` — өзгеру қадамының өлшемі.
+   * `unit.measurement` — тарифтік опцияның өлшем бірліктері (міндетті емес).
 
       {caption(`billing` секциясын толтыру мысалы)[align=left;position=above]}
-       ```yaml
-       billing:
-         base: 25
-         cost: 150
-         unit:
-            size: 100
-       ```
+      ```yaml
+      billing:
+        base: 25
+        cost: 150
+        unit:
+           size: 100
+      ```
       {/caption}
 
-      Жоғарыдағы мысалда опцияның стандартты мәнінен асатын әрбір қосымша 100 бірлік 150 ақша бірлігі тұрады.
+      Жоғарыдағы мысалда стандартты мәннен тыс әрбір 100 опция бірлігінің құны 150 ақша бірлігі.
 
-   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed]} — Өзгерту қадамы бар integer типті ақылы тарифтік опция (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed;number={const(numb_pic_option_int_step_prepayed)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed]} — Өзгеру қадамы бар integer түріндегі ақылы тарифтік опциясы (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed;number={const(numb_pic_option_int_step_prepayed)} ]}
    ![pic1](../../../assets/Option_int_with_user_step_prepayed.png)
    {/caption}
 
-   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed1]} — Өзгерту қадамы бар integer типті ақылы тарифтік опция, мән 1 қадамға ұлғайтылған (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed1;number={const(numb_pic_option_int_step_prepayed1)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed1]} — Өзгеру қадамы бар integer түріндегі ақылы тарифтік опциясы, мән 1 қадамға ұлғайтылған (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed1;number={const(numb_pic_option_int_step_prepayed1)} ]}
    ![pic1](../../../assets/Option_int_with_user_step_prepayed1.png)
    {/caption}
 
-   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed2]} — Өзгерту қадамы бар integer типті ақылы тарифтік опция, мән 2 қадамға ұлғайтылған (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed2;number={const(numb_pic_option_int_step_prepayed2)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed2]} — Өзгеру қадамы бар integer түріндегі ақылы тарифтік опциясы, мән 2 қадамға ұлғайтылған (billing.base = 25, billing.cost = 150, billing.unit.size = 100))[align=center;position=under;id=pic_option_int_step_prepayed2;number={const(numb_pic_option_int_step_prepayed2)} ]}
    ![pic1](../../../assets/Option_int_with_user_step_prepayed2.png)
    {/caption}
-1. `schema` секциясын пайдаланушы анықтайтын өзгерту қадамы бар тегін тарифтік опциядағыдай толтырыңыз (толығырақ — {linkto(../ibopt_fill_in#option_int_with_user_step_free)[text=%text]} бөлімінде).
+1. `schema` секциясын пайдаланушылық өзгеру қадамы бар тегін тарифтік опция үшін жасалғандай толтырыңыз (қосымша мәліметтер — {linkto(../ibopt_fill_in#option_int_with_user_step_free)[text=%text]} бөлімінде).
 
-   Егер тарифтік опция үшін әдепкі мән стандартты мәнге тең болмаса (`schema.default ≠ 0`), онда пайдаланушы тарифтік жоспарды баптау шеберіне өткен кезде мұндай тарифтік опция үшін оның құны көрсетіледі ({linkto(#pic_option_int_step_prepayed3)[text=%number-сурет]}). Пайдаланушы опция мәнін тарифтік жоспар құнына кіретін стандартты мәнге дейін азайта алады.
+   Егер тарифтік опцияның әдепкі мәні стандартты мәнге тең болмаса (`schema.default ≠ 0`), пайдаланушы тарифтік жоспарды баптау шеберіне өткенде мұндай тарифтік опция үшін оның құны көрсетіледі ({linkto(#pic_option_int_step_prepayed3)[text=%number сурет]}). Пайдаланушы опцияның мәнін тарифтік жоспардың құнына кіретін стандартты мәнге дейін азайта алады.
 
-   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed3]} — Өзгерту қадамы бар integer типті ақылы тарифтік опция (billing.base = 25, billing.cost = 150, billing.unit.size = 100, schema.default = 1))[align=center;position=under;id=pic_option_int_step_prepayed3;number={const(numb_pic_option_int_step_prepayed3)} ]}
+   {caption(Сурет {counter(pic)[id=numb_pic_option_int_step_prepayed3]} — Өзгеру қадамы бар integer түріндегі ақылы тарифтік опциясы (billing.base = 25, billing.cost = 150, billing.unit.size = 100, schema.default = 1))[align=center;position=under;id=pic_option_int_step_prepayed3;number={const(numb_pic_option_int_step_prepayed3)} ]}
    ![pic1](../../../assets/Option_int_with_user_step_prepayed3.png)
    {/caption}
 
 {note:info}
 
-`billing` және `schema` секцияларының параметрлерінің толық сипаттамасы тиісінше {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} және {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} бөлімдерінде берілген.
+`billing` және `schema` секцияларының параметрлерінің егжей-тегжейлі сипаттамасы {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_billing)[text=%text]} және {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_schema)[text=%text]} бөлімдерінде келтірілген.
 
 {/note}
 
-## {heading(integer немесе number типті кейін төленетін тарифтік опция)[id=option_postpayed_ib]}
+## {heading(integer немесе number түріндегі кейін төлемді тарифтік опциясы)[id=option_postpayed_ib]}
 
 {note:warn}
 
-Кейін төленетін тарифтік опцияның YAML-файлының атауы метрикаларды жіберуге арналған API-сұраудағы `param` мәніне сәйкес келуі керек (толығырақ — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]} бөлімінде).
+Кейін төлемді тарифтік опциясының YAML-файлының атауы метрикаларды беру жөніндегі API-сұранымдағы `param` мәніне сәйкес болуы тиіс (қосымша мәліметтер — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#billing_push)[text=%text]} бөлімінде).
 
 {/note}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
-1. `actions` параметрінің мәнін `resource_usages` етіп орнатыңыз.
-1. `billing` секциясында келесі параметрлерді беріңіз:
+1. `actions` параметрінің мәнін — `resource_usages` деп орнатыңыз.
+1. `billing` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `cost` — тарифтік опция бірлігінің құны.
-    * `unit.size` — тарификация қадамы. `1` көрсетіңіз.
-    * `unit.measurement` — тарифтік опцияның өлшем бірліктері (опционалды).
+   * `cost` — тарифтік опция бірлігінің құны.
+   * `unit.size` — тарифтік қадам. `1` мәнін көрсетіңіз.
+   * `unit.measurement` — тарифтік опцияның өлшем бірліктері (міндетті емес).
 
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `integer` немесе `number` көрсетіңіз.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `integer` немесе `number` мәнін көрсетіңіз.
 
-{caption(Кейін төленетін сандық тарифтік опцияны сипаттау мысалы)[align=left;position=above]}
+{caption(Кейін төлемді сандық тарифтік опциясын сипаттау мысалы)[align=left;position=above]}
 ```yaml
 actions:
 - resource_usages
@@ -277,25 +277,25 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_postpayed_ib)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген. Тарифтік опцияның бірлігі 7 ақша бірлігі тұрады.
+{linkto(#pic_option_postpayed_ib)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген. Тарифтік опция бірлігінің құны 7 ақша бірлігі.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_postpayed_ib]} — Кейін төленетін тарифтік опция)[align=center;position=under;id=pic_option_postpayed_ib;number={const(numb_pic_option_postpayed_ib)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_postpayed_ib]} — Кейін төлемді тарифтік опциясы)[align=center;position=under;id=pic_option_postpayed_ib;number={const(numb_pic_option_postpayed_ib)} ]}
 ![pic1](../../../assets/option_postpayed_ib.png){params[width=75%]}
 {/caption}
 
-## {heading(string типті тегін тарифтік опция-тұрақты)[id=option_string]}
+## {heading(string түріндегі тегін тарифтік константа-опциясы)[id=option_string]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `const` — тарифтік опцияның мәні.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `const` — тарифтік опцияның мәні.
 
-{caption(`string` типті опция-тұрақтыны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(`string` түріндегі константа-опциясын сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -308,26 +308,26 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_string)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_string)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_string]} — string типті тарифтік опция-тұрақты)[align=center;position=under;id=pic_option_string;number={const(numb_pic_option_string)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_string]} — string түріндегі тарифтік константа-опциясы)[align=center;position=under;id=pic_option_string;number={const(numb_pic_option_string)} ]}
 ![pic1](../../../assets/Option_string_const_example.png){params[width=60%]}
 {/caption}
 
-## {heading(Мән енгізілетін string типті тегін тарифтік опция)[id=option_string_input]}
+## {heading(Мән енгізу мүмкіндігі бар string түріндегі тегін тарифтік опциясы)[id=option_string_input]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `default` — әдепкі мән.
-    * {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_string)[text=%text]} бөлімінде келтірілген қосымша параметрлер (опционалды).
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `default` — әдепкі мән.
+   * {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_string)[text=%text]} бөлімінде келтірілген қосымша параметрлер (міндетті емес).
 
-{caption(Мән енгізілетін `string` типті опцияны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Мән енгізу мүмкіндігі бар `string` түріндегі опцияны сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -340,26 +340,26 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_string_input)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_string_input)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_string_input]} — Мән енгізілетін string типті тарифтік опция)[align=center;position=under;id=pic_option_string_input;number={const(numb_pic_option_string_input)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_string_input]} — Мән енгізу мүмкіндігі бар string түріндегі тарифтік опциясы)[align=center;position=under;id=pic_option_string_input;number={const(numb_pic_option_string_input)} ]}
 ![pic1](../../../assets/Option_string_input.png){params[width=40%]}
 {/caption}
 
-## {heading(Тізімнен мәнді таңдауы бар string типті тегін тарифтік опция)[id=option_string_enum]}
+## {heading(Тізімнен мән таңдау мүмкіндігі бар string түріндегі тегін тарифтік опциясы)[id=option_string_enum]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `enum` — тарифтік опцияның мүмкін мәндері.
-    * `default` — әдепкі мән.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `enum` — тарифтік опцияның мүмкін мәндері.
+   * `default` — әдепкі мән.
 
-{caption(Тізімнен мәнді таңдауы бар `string` типті опцияны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Тізімнен мән таңдау мүмкіндігі бар `string` түріндегі опцияны сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -374,25 +374,25 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_string_enum)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_string_enum)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_string_enum]} — Тізімнен мәнді таңдауы бар string типті тарифтік опция)[align=center;position=under;id=pic_option_string_enum;number={const(numb_pic_option_string_enum)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_string_enum]} — Тізімнен мән таңдау мүмкіндігі бар string түріндегі тарифтік опциясы)[align=center;position=under;id=pic_option_string_enum;number={const(numb_pic_option_string_enum)} ]}
 ![pic1](../../../assets/Option_string_enum_example.png){params[width=55%]}
 {/caption}
 
-## {heading(boolean типті тегін тарифтік опция-тұрақты)[id=option_bool_const]}
+## {heading(boolean түріндегі тегін тарифтік константа-опциясы)[id=option_bool_const]}
 
-`parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
+`parameters/<OPTION_NAME>.yaml` файлын мынадай түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` секциясында мынадай параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `boolean` көрсетіңіз.
-    * `const` — тарифтік опцияның мәні.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `boolean` мәнін көрсетіңіз.
+   * `const` — тарифтік опцияның мәні.
 
-{caption(`boolean` типті опция-тұрақтыны сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(`boolean` түріндегі константа-опциясын сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
@@ -406,71 +406,71 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_bool_const)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_bool_const)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні келтірілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_bool_const]} — boolean типті тарифтік опция-тұрақты (const = false))[align=center;position=under;id=pic_option_bool_const;number={const(numb_pic_option_bool_const)} ]}
+{caption(Сурет {counter(pic)[id=numb_pic_option_bool_const]} — boolean түріндегі тарифтік константа-опциясы (const = false))[align=center;position=under;id=pic_option_bool_const;number={const(numb_pic_option_bool_const)} ]}
 ![pic1](../../../assets/Option_bool_const.png){params[width=40%]}
 {/caption}
 
-## {heading(boolean типті тегін тарифтік опция-қосқыш)[id=option_bool]}
+## {heading(Boolean қосқышы бар тегін тегін опциясы)[id=option_bool]}
 
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `boolean` көрсетіңіз.
-    * `default` — әдепкі мән (опционалды).
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `boolean` мәнін көрсетіңіз.
+   * `default` — әдепкі мән (міндетті емес).
 
-      Егер `default` параметрі берілмесе, әдепкі мән `false` болады.
+      Егер `default` параметрі орнатылмаса, әдепкі мән `false` болады.
 
-{caption(`boolean` типті тегін опция-қосқышты сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Тегін `boolean` қосқышы бар опцияның сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Уведомления об обновлениях
-  hint: Получать ли на почту уведомления о новых версиях сервиса.
+  description: Жаңартулар туралы хабарландырулар
+  hint: Жаңа нұсқалар туралы хабарландыруларды поштаға алу керек пе.
   type: boolean
   default: true
 ```
 {/caption}
 
-{linkto(#pic_option_bool)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_bool)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_bool]} — boolean типті тарифтік опция-қосқыш)[align=center;position=under;id=pic_option_bool;number={const(numb_pic_option_bool)} ]}
+{caption({counter(pic)[id=numb_pic_option_bool]} сурет — Boolean қосқышы бар тарифтік опция)[align=center;position=under;id=pic_option_bool;number={const(numb_pic_option_bool)} ]}
 ![pic1](../../../assets/Option_bool.png){params[width=50%]}
 {/caption}
 
-## {heading(boolean типті алдын ала төленетін тарифтік опция-қосқыш)[id=option_bool_paid]}
+## {heading(Алдын ала төлеммен boolean қосқышы бар тарифтік опция)[id=option_bool_paid]}
 
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `boolean` көрсетіңіз.
-    * `default` — әдепкі мән (опционалды).
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `boolean` мәнін көрсетіңіз.
+   * `default` — әдепкі мән (міндетті емес).
 
-      Егер `default` параметрі берілмесе, әдепкі мән `false` болады.
+      Егер `default` параметрі орнатылмаса, әдепкі мән `false` болады.
 
-1. `billing` секциясында `cost` параметрін беріңіз — қосқыш белсенді күйде болған кездегі опция құны.
+1. `billing` бөлімінде қосқыш белсенді күйде тұрғандағы опция құны болып табылатын `cost` параметрін орнатыңыз.
 
-{caption(`boolean` типті ақылы опция-қосқышты сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Ақылы `boolean` қосқышы бар опцияның сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Уведомления о новых отчетах
-  hint: Получать ли на почту уведомления о новых отчетах
+  description: Жаңа есептер туралы хабарландырулар
+  hint: Жаңа есептер туралы хабарландыруларды поштаға алу керек пе.
   type: boolean
   default: true
 
@@ -479,42 +479,42 @@ billing:
 ```
 {/caption}
 
-{linkto(#pic_option_bool_paid)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_bool_paid)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_bool_paid]} — boolean типті ақылы тарифтік опция-қосқыш)[align=center;position=under;id=pic_option_bool_paid;number={const(numb_pic_option_bool_paid)} ]}
+{caption({counter(pic)[id=numb_pic_option_bool_paid]} сурет — Ақылы boolean қосқышы бар тарифтік опция)[align=center;position=under;id=pic_option_bool_paid;number={const(numb_pic_option_bool_paid)} ]}
 ![pic1](../../../assets/option_bool_paid.png){params[width=90%]}
 {/caption}
 
-## {heading(datasource типті тарифтік опция (ВМ типі))[id=option_datasource_flavor]}
+## {heading(datasource типті тарифтік опция (ВМ түрі))[id=option_datasource_flavor]}
 
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `datasource.type` — бұлттық платформа нысанының типі. `flavor` көрсетіңіз.
-    * `datasource.filter` — сүзгілер (опционалды). Мүмкін сүзгілер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде келтірілген.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `datasource.type` — бұлттық платформа нысанының түрі. `flavor` мәнін көрсетіңіз.
+   * `datasource.filter` — фильтрлер (міндетті емес). Мүмкін фильтрлер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде берілген.
 
-{caption(ВМ типі үшін `datasource` опциясын сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(ВМ түрі үшін `datasource` опциясының сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Тип виртуальной машины
+  description: Виртуалды машинаның түрі
   type: string
   datasource:
     type: flavor
 ```
 {/caption}
 
-{linkto(#pic_option_datasource_flavor)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_datasource_flavor)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_datasource_flavor]} — datasource тарифтік опциясы (ВМ типі))[align=center;position=under;id=pic_option_datasource_flavor;number={const(numb_pic_option_datasource_flavor)} ]}
+{caption({counter(pic)[id=numb_pic_option_datasource_flavor]} сурет — datasource типті тарифтік опция (ВМ түрі))[align=center;position=under;id=pic_option_datasource_flavor;number={const(numb_pic_option_datasource_flavor)} ]}
 ![pic1](../../../assets/Option_datasource_flavor.png){params[width=45%]}
 {/caption}
 
@@ -523,22 +523,22 @@ schema:
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `default` — әдепкі мән (опционалды). Мүмкін мәндер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде келтірілген.
-    * `datasource.type` — бұлттық платформа нысанының типі. `az` көрсетіңіз.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `default` — әдепкі мән (міндетті емес). Мүмкін мәндер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде берілген.
+   * `datasource.type` — бұлттық платформа нысанының түрі. `az` мәнін көрсетіңіз.
 
-{caption(Қолжетімділік аймағы үшін `datasource` опциясын сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Қолжетімділік аймағы үшін `datasource` опциясының сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Зона доступности
+  description: Қолжетімділік аймағы
   type: string
   default: gz1
   datasource:
@@ -546,41 +546,41 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_datasource_az)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_datasource_az)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_datasource_az]} — datasource тарифтік опциясы (қолжетімділік аймағы))[align=center;position=under;id=pic_option_datasource_az;number={const(numb_pic_option_datasource_az)} ]}
+{caption({counter(pic)[id=numb_pic_option_datasource_az]} сурет — datasource типті тарифтік опция (қолжетімділік аймағы))[align=center;position=under;id=pic_option_datasource_az;number={const(numb_pic_option_datasource_az)} ]}
 ![pic1](../../../assets/Option_datasource_az.png){params[width=45%]}
 {/caption}
 
-## {heading(datasource типті тарифтік опция опциясы (ішкі желі))[id=option_datasource_subnet]}
+## {heading(datasource типті тарифтік опция (желі ішкі желісі))[id=option_datasource_subnet]}
 
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `datasource.type` — бұлттық платформа нысанының типі. `subnet` көрсетіңіз.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `datasource.type` — бұлттық платформа нысанының түрі. `subnet` мәнін көрсетіңіз.
 
-{caption(Ішкі желі үшін `datasource` опциясын сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Желі ішкі желісі үшін `datasource` опциясының сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Сеть
+  description: Желі
   type: string
   datasource:
     type: subnet
 ```
 {/caption}
 
-{linkto(#pic_option_datasource_subnet)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_datasource_subnet)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_datasource_subnet]} — datasource тарифтік опциясы (ішкі желі))[align=center;position=under;id=pic_option_datasource_subnet;number={const(numb_pic_option_datasource_subnet)} ]}
+{caption({counter(pic)[id=numb_pic_option_datasource_subnet]} сурет — datasource типті тарифтік опция (желі ішкі желісі))[align=center;position=under;id=pic_option_datasource_subnet;number={const(numb_pic_option_datasource_subnet)} ]}
 ![pic1](../../../assets/Option_datasource_subnet.png){params[width=40%]}
 {/caption}
 
@@ -589,26 +589,26 @@ schema:
 `parameters/<OPTION_NAME>.yaml` файлын келесі түрде толтырыңыз:
 
 1. `actions` параметрін көрсетіңіз.
-1. `schema` секциясында келесі параметрлерді беріңіз:
+1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-    * `description` — тарифтік опцияның атауы.
-    * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-    * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-    * `datasource.type` — бұлттық платформа нысанының типі. `network` көрсетіңіз.
-    * `datasource.value_is` — ақпаратты шығару типі. Қолжетімді мәндер:
-        * `uuid` — желінің UUID мәнін көрсету.
-        * `name` — желі атауын көрсету.
-    * `datasource.filter` — сүзгілер (опционалды). Мүмкін сүзгілер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде келтірілген.
+   * `description` — тарифтік опцияның атауы.
+   * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+   * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+   * `datasource.type` — бұлттық платформа нысанының түрі. `network` мәнін көрсетіңіз.
+   * `datasource.value_is` — ақпарат шығару түрі. Мәндер қолжетімді:
+      * `uuid` — желінің UUID-ін көрсету.
+      * `name` — желінің атауын көрсету.
+   * `datasource.filter` — фильтрлер (міндетті емес). Мүмкін фильтрлер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде берілген.
 
-{caption(Желі үшін `datasource` опциясын сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+{caption(Желі үшін `datasource` опциясының сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
 ```yaml
 actions:
 - create
 - update
 
 schema:
-  description: Внутренняя сеть
-  hint: Внутренняя сеть
+  description: Ішкі желі
+  hint: Ішкі желі
   type: string
   datasource:
     type: network
@@ -619,44 +619,44 @@ schema:
 ```
 {/caption}
 
-{linkto(#pic_option_datasource_net)[text=%number-суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_datasource_net)[text=%number суретте]} жоғарыда сипатталған опцияның тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_datasource_net]} — datasource тарифтік опциясы (желі))[align=center;position=under;id=pic_option_datasource_net;number={const(numb_pic_option_datasource_net)} ]}
+{caption({counter(pic)[id=numb_pic_option_datasource_net]} сурет — datasource типті тарифтік опция (желі))[align=center;position=under;id=pic_option_datasource_net;number={const(numb_pic_option_datasource_net)} ]}
 ![pic1](../../../assets/Option_datasource_net.png){params[width=55%]}
 {/caption}
 
-## {heading(Дискіні тарифтік опция файлдарының көмегімен сипаттау)[id=IBoption_fill_in_volume]}
+## {heading(Дискті тарифтік опциялар файлдары арқылы сипаттау)[id=IBoption_fill_in_volume]}
 
 Диск екі тарифтік опциямен (екі бөлек YAML-файлмен) сипатталады:
 
-* Диск типі — `datasource` типті тарифтік опцияның көмегімен.
-* Диск өлшемі — өзгерту қадамы 1 болатын `integer` типті тарифтік опцияның көмегімен.
+* Диск түрі — `datasource` типті тарифтік опция арқылы.
+* Диск өлшемі — өзгеру қадамы 1 болатын `integer` типті тарифтік опция арқылы.
 
-Дискіні сипаттау үшін:
+Дискті сипаттау үшін:
 
-1. `parameters/<OPTION_NAME>.yaml` файлында бұлттық платформадан диск типтері туралы деректерді алатын `datasource` типті тарифтік опцияны сипаттаңыз:
+1. Бұлттық платформаның диск түрлері туралы деректерін алатын `datasource` типті тарифтік опцияны `parameters/<OPTION_NAME>.yaml` файлында сипаттаңыз:
 
-    1. `actions` параметрін көрсетіңіз.
-    1. `schema` секциясында келесі параметрлерді беріңіз:
+   1. `actions` параметрін көрсетіңіз.
+   1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-        * `description` — тарифтік опцияның атауы.
-        * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-        * `type` — тарифтік опцияның типі. `string` көрсетіңіз.
-        * `default` — әдепкі мән (опционалды). Мүмкін мәндер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде келтірілген.
-        * `tag` — тег. Тег диск типін сипаттайтын опцияны диск өлшемін сипаттайтын опциямен байланыстырады.
-        * `datasource.type` — бұлттық платформа нысанының типі. `volume_type` көрсетіңіз.
-        * `datasource.filter` — сүзгілер (опционалды). Мүмкін сүзгілер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде келтірілген.
+      * `description` — тарифтік опцияның атауы.
+      * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+      * `type` — тарифтік опцияның түрі. `string` мәнін көрсетіңіз.
+      * `default` — әдепкі мән (міндетті емес). Мүмкін мәндер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде берілген.
+      * `tag` — тег. Тег диск түрін сипаттайтын опцияны диск өлшемін сипаттайтын опциямен байланыстырады.
+      * `datasource.type` — бұлттық платформа нысанының түрі. `volume_type` мәнін көрсетіңіз.
+      * `datasource.filter` — фильтрлер (міндетті емес). Мүмкін фильтрлер {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/ibservice_add/ibservice_configure/iboption#iboption_option_datasource)[text=%text]} бөлімінде берілген.
 
-          Егер сүзгілер көрсетілмесе, бұлттық платформа қолдайтын барлық диск типтері көрсетіледі.
+         Егер фильтрлер көрсетілмесе, бұлттық платформа қолдайтын барлық диск түрлері көрсетіледі.
 
-   {caption(Диск типі үшін `datasource` опциясын сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+   {caption(Диск түрі үшін `datasource` опциясының сипаттамасының мысалы, `YAML` форматы)[align=left;position=above]}
    ```yaml
    actions:
    - create
    - update
 
    schema:
-     description: Тип диска
+     description: Диск түрі
      type: string
      default: ceph-ssd
      tag: disk1
@@ -667,32 +667,32 @@ schema:
            enum: ["ssd", "hdd"]
    ```
    {/caption}
-1. Жеке `parameters/<OPTION_NAME>.yaml` файлында диск өлшемін өзгерту қадамы 1 болатын `integer` типті тарифтік опцияның көмегімен сипаттаңыз:
+1. Бөлек `parameters/<OPTION_NAME>.yaml` файлында диск өлшемін өзгеру қадамы 1 болатын `integer` типті тарифтік опция арқылы сипаттаңыз:
 
-    1. `actions` параметрін көрсетіңіз.
-    1. `schema` секциясында келесі параметрлерді беріңіз:
+   1. `actions` параметрін көрсетіңіз.
+   1. `schema` бөлімінде келесі параметрлерді орнатыңыз:
 
-        * `description` — тарифтік опцияның атауы.
-        * `hint` — тарифтік опцияның сипаттамасы (опционалды).
-        * `type` — тарифтік опцияның типі. `integer` көрсетіңіз.
-        * `default` — әдепкі мән (опционалды).
-        * `maximum` және `minimum` — ең үлкен және ең кіші мәндер (опционалды).
-        * `tag` — тег. Мәні диск типін сипаттайтын файлдағыдай болуы керек.
+      * `description` — тарифтік опцияның атауы.
+      * `hint` — тарифтік опцияның сипаттамасы (міндетті емес).
+      * `type` — тарифтік опцияның түрі. `integer` мәнін көрсетіңіз.
+      * `default` — әдепкі мән (міндетті емес).
+      * `maximum` және `minimum` — максималды және минималды мәндер (міндетті емес).
+      * `tag` — тег. Мән диск түрін сипаттайтын файлдағыдай болуы керек.
 
-       {note:info}
+      {note:info}
 
-       Диск өлшемі ГБ-мен өлшенеді.
+      Диск өлшемі ГБ-пен өлшенеді.
 
-       {/note}
+      {/note}
 
-   {caption(Өзгерту қадамы 1 болатын `integer` типті тарифтік опция арқылы диск өлшемін сипаттау мысалы, `YAML` пішімі)[align=left;position=above]}
+   {caption(Өзгеру қадамы 1 болатын `integer` типті тарифтік опция арқылы диск өлшемін сипаттау мысалы, `YAML` форматы)[align=left;position=above]}
    ```yaml
    actions:
    - create
    - update
 
    schema:
-     description: Размер диска
+     description: Диск өлшемі
      type: integer
      default: 100
      minimum: 100
@@ -702,12 +702,12 @@ schema:
 
 {note:warn}
 
-Диск құны бұлттық платформа тарифтерімен анықталады, сондықтан оны тарифтік опция сипаттамасында көрсетуге болмайды.
+Диск құны бұлттық платформаның тарифтерімен анықталады, сондықтан оны тарифтік опцияның сипаттамасында орнату мүмкін емес.
 
 {/note}
 
-{linkto(#pic_option_fill_in_volume)[text=%number-суретте]} жоғарыда сипатталған опциялардың (диск типі мен өлшемі) тарифтік жоспарды баптау шеберінде қалай көрсетілетіні берілген.
+{linkto(#pic_option_fill_in_volume)[text=%number суретте]} жоғарыда сипатталған опциялардың (диск түрі мен өлшемі) тарифтік жоспарды конфигурациялау шеберінде қалай көрсетілетіні берілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_option_fill_in_volume]} — Диск өлшемі мен типін баптауға мүмкіндік беретін integer және datasource типті тарифтік опциялар)[align=center;position=under;id=pic_option_fill_in_volume;number={const(numb_pic_option_fill_in_volume)} ]}
+{caption({counter(pic)[id=numb_pic_option_fill_in_volume]} сурет — Диск өлшемі мен түрін теңшеуге мүмкіндік беретін integer және datasource типті тарифтік опциялар)[align=center;position=under;id=pic_option_fill_in_volume;number={const(numb_pic_option_fill_in_volume)} ]}
 ![pic1](../../../assets/Option_datasource_volume.png){params[width=40%]}
 {/caption}

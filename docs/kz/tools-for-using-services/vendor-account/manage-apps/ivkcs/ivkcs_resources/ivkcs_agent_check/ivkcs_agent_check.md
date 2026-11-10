@@ -1,8 +1,8 @@
 # {heading(ivkcs_agent_check ресурсы)[id=ivkcs_agent_check]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-## Ресурстың аргументтері
+## Ресурс аргументтары
 
 [cols="2,5,2,2,2", options="header"]
 |===
@@ -10,34 +10,34 @@
 |Сипаттамасы
 |Форматы
 |Міндетті
-|Мәні өзгерген кезде ресурсты қайта жасау
+|Мәні өзгергенде ресурсты қайта жасау
 
 |
 `uuid`
 |Сервис инстансының идентификаторы
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `hosts`
 |Хост атауларының тізімі
 |list, тізім элементтері — string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
-Ресурста сервис инстанстарының күйін мониторингтеудің бір немесе бірнеше тәсілі көрсетіледі. Келесі мониторинг тәсілдері қолдау табады:
+Ресурста сервис инстанстарының күйін мониторингтеудің бір немесе бірнеше тәсілі көрсетіледі. Мына мониторингтеу тәсілдері қолдау көрсетіледі:
 
 * Порттың қолжетімділігін тексеру — [port_health блогында](#port_health) сипатталған.
 * Адрестің қолжетімділігін тексеру — [http_health блогында](#http_health) сипатталған.
-* Скрипттерді пайдаланып сервис инстанстарының қолжетімділігін тексеру — [script_health блогында](#script_health) сипатталған.
+* Скрипттерді қолдана отырып сервис инстанстарының қолжетімділігін тексеру — [script_health блогында](#script_health) сипатталған.
 
 ### {heading(port_health блогы)[id=port_health]}
 
-Әрбір порт жеке `port_health` блогымен сипатталады.
+Әрбір порт бөлек `port_health` блогында сипатталады.
 
-{cut(port_health блогына арналған аргументтер)}
+{cut(port_health блогының аргументтері)}
 
 [cols="2,5,2,2,2", options="header"]
 |===
@@ -45,45 +45,45 @@
 |Сипаттамасы
 |Форматы
 |Міндетті
-|Мәні өзгерген кезде ресурсты қайта жасау
+|Мәні өзгергенде ресурсты қайта жасау
 
 |
 `host`
 |
-Хосттың IP мекенжайы немесе DNS атауы
+Хосттың IP-адресі немесе DNS-атауы
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `period`
 |
-Порттың қолжетімділігін тексеру кезеңділігі. Мәндер мысалы:
+Порттың қолжетімділігін тексеру жиілігі. Мәндер мысалы:
 
 * `1m`.
 * `15s`.
 * `1h`
 
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `port`
 |
 Тексерілетін порт
 |integer
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
 {/cut}
 
 ### {heading(http_health блогы)[id=http_health]}
 
-Әрбір адрес тексеруі жеке `http_health` блогымен сипатталады.
+Әрбір адрес тексеруі бөлек `http_health` блогында сипатталады.
 
-{cut(http_health блогына арналған аргументтер)}
+{cut(http_health блогының аргументтері)}
 
 [cols="2,5,2,2,2", options="header"]
 |===
@@ -91,24 +91,24 @@
 |Сипаттамасы
 |Форматы
 |Міндетті
-|Мәні өзгерген кезде ресурсты қайта жасау
+|Мәні өзгергенде ресурсты қайта жасау
 
 |
 `protocol`
 |
-Сұрау протоколы. Мүмкін мәндер:
+Сұраныс протоколы. Мүмкін мәндер:
 
 * `http`.
 * `https`
 
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `method`
 |
-Сұрау әдісі. Мүмкін мәндер:
+Сұраныс әдісі. Мүмкін мәндер:
 
 * `GET`.
 * `POST`.
@@ -117,71 +117,71 @@
 * `OPTIONS`
 
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `host`
 |
-Хосттың IP мекенжайы немесе DNS атауы
+Хосттың IP-адресі немесе DNS-атауы
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `path`
 |
-Сұрау жолы (әдістің соңғы нүктесі (endpoint))
+Сұраныс жолы (әдістің соңғы нүктесі (endpoint))
 |string
-| ![](/en/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `period`
 |
-Адрестің қолжетімділігін тексеру кезеңділігі. Мәндер мысалы:
+Адрестің қолжетімділігін тексеру жиілігі. Мәндер мысалы:
 
 * `1m`.
 * `15s`.
 * `1h`
 
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `port`
 |
 Тексерілетін порт
 |integer
-| ![](/en/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `http_codes`
 |
 Күтілетін жауап кодтары
 |list, тізім элементтері — integer
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `url`
 |
-Келесілерді қамтитын толық адрес:
+Мыналарды қамтитын толық адрес:
 
-* Хосттың IP мекенжайы немесе DNS атауы.
+* Хосттың IP-адресі немесе DNS-атауы.
 * Порт.
-* Сұрау жолы (әдістің соңғы нүктесі (endpoint))
+* Сұраныс жолы (әдістің соңғы нүктесі (endpoint))
 
 |string
-| ![](/en/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 
 {note:warn}
 
-Егер `url` аргументі көрсетілсе, оның мәні `host`, `path` және `port` аргументтеріндегі мәндерден басымдыққа ие болады.
+Егер `url` аргументі көрсетілсе, оның мәні `host`, `path` және `port` аргументтеріндегі мәндерден басым болады.
 
 {/note}
 
@@ -189,9 +189,9 @@
 
 ### {heading(script_health блогы)[id=script_health]}
 
-Әрбір скрипт жеке `script_health` блогымен сипатталады.
+Әрбір скрипт бөлек `script_health` блогында сипатталады.
 
-{cut(script_health блогына арналған аргументтер)}
+{cut(script_health блогының аргументтері)}
 
 [cols="2,5,2,2,2", options="header"]
 |===
@@ -199,7 +199,7 @@
 |Сипаттамасы
 |Форматы
 |Міндетті
-|Мәні өзгерген кезде ресурсты қайта жасау
+|Мәні өзгергенде ресурсты қайта жасау
 
 |
 `type`
@@ -211,8 +211,8 @@
 
 |
 string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `options`
@@ -220,8 +220,8 @@ string
 Скриптті орындау параметрлері
 |
 set, тізім аргументтері — {linkto(../ivkcs_agent_exec/#tab_script_options)[text=Скрипт опциялары]} кестесінде
-| ![](/en/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `script`
@@ -229,8 +229,8 @@ set, тізім аргументтері — {linkto(../ivkcs_agent_exec/#tab_sc
 Скрипт денесі
 |
 string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/cut}
 
@@ -238,7 +238,7 @@ string
 
 `ivkcs_agent_check` ресурсы конфигурацияларды басқару сервисіне беру үшін мониторинг нәтижесінің хешін қамтитын `hash` атрибутын (string форматы) қайтарады.
 
-## Ресурсты сипаттау мысалы
+## Ресурс сипаттамасының мысалы
 
 ```hcl
 resource "ivkcs_agent_check" "check1" {
@@ -260,6 +260,6 @@ resource "ivkcs_agent_check" "check1" {
 Мұнда:
 
 * `<UUID>` — сервис инстансының идентификаторы.
-* `<СПИСОК_ИМЕН_ХОСТОВ>` — мониторинг орындалатын хост атауларының тізімі. Хост атаулары Terraform конфигурацияңызда анықталған ВМ атауларына дәл сәйкес келуі тиіс (әдетте `vkcs_compute_instance` ресурсында).
+* `<СПИСОК_ИМЕН_ХОСТОВ>` — мониторинг жүргізілетін хост атауларының тізімі. Хост атаулары Terraform конфигурацияңызда анықталған ВМ атауларына дәл сәйкес болуы керек (әдетте `vkcs_compute_instance` ресурсында).
 
-{include(/kz/_includes/_tf_hosts.md)}
+{include(../../../../../../_includes/_tf_hosts.md)}

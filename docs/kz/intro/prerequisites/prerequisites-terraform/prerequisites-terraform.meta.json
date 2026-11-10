@@ -1,0 +1,15 @@
+{
+  "title": "Terraform орнату және инициализациялау",
+  "shortDescription": "Terraform-ды конфигурациялық файл арқылы қалай орнату керек",
+  "metaDescription": "VK Cloud Terraform-провайдерін конфигурациялық файл арқылы қалай орнату керек. Terraform-мен жұмысты бастау: орнату және инициализациялау.",
+  "sectionTitle": "Terraform орнату және инициализациялау",
+  "icon": "",
+  "weight": 3,
+  "uuid": "4bf0e188-e7a5-487e-81ae-189ad9ff1cb0",
+  "build": {
+    "for": [
+      "private",
+      "private-pg"
+    ]
+  }
+}

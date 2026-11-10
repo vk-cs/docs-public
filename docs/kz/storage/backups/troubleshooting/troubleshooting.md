@@ -1,5 +1,5 @@
-# {heading(Ақауларды жою)[id=backup-troubleshooting]}
+# {heading(Резервтік көшірмелеудің типтік мәселелерін анықтау және шешу)[id=backup-troubleshooting]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Сақтық көшірмелеуге қатысты типтік мәселелерді диагностикалау және шешу тәсілдері.
+Резервтік көшірмелеуге қатысты типтік мәселелерді диагностикалау және шешу тәсілдері.

@@ -1,0 +1,16 @@
+{
+  "title": "CDN қызметін пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «VK Cloud» Платформасы аясындағы «CDN» қызметін пайдалану шарттарын білдіреді.",
+  "sectionTitle": "CDN қызметін пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 10,
+  "uuid": "cf908d02-d7ad-4300-8894-b3d3a327e27b",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

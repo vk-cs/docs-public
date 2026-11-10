@@ -1,13 +1,13 @@
 {
-  "title": "Дайындық операциялары",
+  "title": "Дайындық операциялар",
   "shortDescription": "",
-  "metaDescription": "Дайындық операциялары",
-  "sectionTitle": "Дайындық операциялары",
+  "metaDescription": "Дайындық операциялар",
+  "sectionTitle": "Дайындық операциялар",
   "weight": 1,
+  "uuid": "b063424e-824d-418d-8228-49b62ad01d2b",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "79c7154a-3149-4adc-a4df-352ba4b24a0c"
+  }
 }

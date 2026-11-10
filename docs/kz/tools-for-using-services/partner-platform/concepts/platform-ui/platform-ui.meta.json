@@ -1,17 +1,17 @@
 {
-  "title": "Серіктестің жеке кабинеті",
-  "shortDescription": "VK Cloud серіктес платформасының пайдаланушы интерфейсі",
-  "metaDescription": "VK Cloud серіктес платформасының пайдаланушы интерфейсі: VK Cloud серіктесінің жеке кабинеті деген не.",
-  "sectionTitle": "Серіктестің жеке кабинеті",
+  "title": "Партнердің жеке кабинеті",
+  "shortDescription": "{var(cloud)} партнёр платформасының пайдаланушылық интерфейсі",
+  "metaDescription": "VK Cloud партнёр платформасының пайдаланушылық интерфейсі: VK Cloud партнёрінің жеке кабинеті дегеніміз не.",
+  "sectionTitle": "Партнердің жеке кабинеті",
   "icon": "",
   "disableGithub": false,
   "isBeta": false,
   "hidden": false,
   "weight": 0,
+  "uuid": "43460807-7c7a-434f-b082-bf7db1aa9ed6",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "e763147b-fc84-4b6d-930f-faf4dcb59beb"
+  }
 }

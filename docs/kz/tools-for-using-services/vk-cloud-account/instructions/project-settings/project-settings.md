@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Жобаларды басқару)[id=vk-cloud-account-project-settings]}
 
-Платформадағы жобаларды басқару операциялары.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{var(cloud)} жобаларын басқару операциялары.

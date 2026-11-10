@@ -1,77 +1,81 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Spark кластерін жасау)[id=terraform-aws]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Мақалада Terraform көмегімен {var(s3)} бакеттері мен объектілерін жасау және баптау мысалдары келтірілген.
 
-Желілерді жасау кезінде келесі ресурстар (resource) пайдаланылады:
+Желілерді жасау кезінде ресурстар (resource) пайдаланылады:
 
-- **aws_s3_bucket** — бакетті жасау;
-- **aws_s3_object** — объектіні жасау;
+- **aws_s3_bucket** — бакет жасау;
+- **aws_s3_object** — объект жасау;
 - **aws_s3_bucket_lifecycle_configuration** — бакет объектілерінің өмірлік циклін басқару;
-- **aws_s3_bucket_acl** — басқа пайдаланушыларға немесе жобаларға бакетке қол жеткізуді басқару;
-- **aws_s3_bucket_cors_configuration** — ресурстарды доменаралық пайдалану ережелерін (CORS) басқару.
+- **aws_s3_bucket_acl** — бакетке басқа пайдаланушылардың немесе жобалардың қолжетімділігін басқару;
+- **aws_s3_bucket_cors_configuration** — ресурстарды кросс-домендік пайдалану ережелерін (CORS) басқару.
 
 Ресурстардың толық сипаттамасы — [провайдер құжаттамасында](https://docs.comcloud.xyz/modules/terraform-aws-modules/s3-bucket/aws/latest).
 
-## Дайындық қадамдары
+## {heading(Дайындық қадамдар)[id=terraform-aws-prepare]}
 
-1. Инстансты жасау жоспарланған [аймақ](/kz/tools-for-using-services/account/concepts/regions) үшін қолжетімді ресурстармен және [квоталармен](/kz/tools-for-using-services/account/concepts/quotasandlimits) танысыңыз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. Инстанс жасау жоспарланған {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=өңір]} үшін қолжетімді ресурстармен және {linkto(../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоталармен]} танысыңыз. Әртүрлі өңірлер үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, квоталарды [арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(../../../account/instructions/project-settings/manage#project-increase-quota)[text=ұлғайтыңыз]}.
 
-1. Егер әлі орнатылмаған болса, [Terraform орнатыңыз](../../quick-start).
+1. Егер бұрын жасалмаса, {linkto(../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз]}.
+1. (Қалауыңыз бойынша) Қолжетімділік ережелерін Terraform арқылы баптау үшін қолжетімділік саясаттарын {linkto(../../../../storage/s3/instructions/access-management/bucket-policy#s3-instructions-bucket-policy-enable-and-disable)[text=қосыңыз]}.
 1. Провайдерді баптаңыз:
 
-    1. Платформамен жұмыс істейтін директорияны жасаңыз және соған өтіңіз.
-    1. `aws_provider.tf` файлын жасаңыз және оған келесі мазмұнды қосыңыз:
+   1. Платформамен жұмыс істейтін директория жасап, оған өтіңіз.
+   1. `aws_provider.tf` файлын жасап, оған мына мазмұнды қосыңыз:
 
-        ```hcl
-        terraform {
-            required_providers {
-                aws = {
-            source = "hashicorp/aws"
-            version = "< 5.85.0"
-                }
-            }
-        }
-        provider "aws" {
-            region                      = "<РЕГИОН>"
-            access_key                  = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>"
-            secret_key                  = "<СЕКРЕТНЫЙ_КЛЮЧ>"
-            skip_credentials_validation = true
-            skip_metadata_api_check     = true
-            skip_requesting_account_id  = true
-            skip_region_validation      = true
-            endpoints {
-                s3 = "<ДОМЕН>"
-            }
-        }
-        ```
+      ```hcl
+      terraform {
+          required_providers {
+              aws = {
+          source = "hashicorp/aws"
+          version = "< 5.85.0"
+              }
+          }
+      }
+      provider "aws" {
+          region                      = "<РЕГИОН>"
+          access_key                  = "<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>"
+          secret_key                  = "<СЕКРЕТНЫЙ_КЛЮЧ>"
+          skip_credentials_validation = true
+          skip_metadata_api_check     = true
+          skip_requesting_account_id  = true
+          skip_region_validation      = true
+          endpoints {
+              s3 = "<ДОМЕН>"
+          }
+      }
+      ```
 
-       Мұнда:
+      Мұнда:
 
-        - `<РЕГИОН>` — {var(s3)} сервисін орналастыру аймағы. Баптау аккаунттың [аймағына](../../../../tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
+      - `<РЕГИОН>` — {var(s3)} сервисі орналасқан өңір. Баптау аккаунттың {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
-            - `ru-msk` — Мәскеу аймағы;
-            - `kz-ast` — Қазақстан аймағы.
-        - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — объектілік сақтау қоймасына қол жеткізуге арналған [кілт идентификаторы мен құпия кілт](/kz/storage/s3/instructions/access-management/access-keys).
-        - `<ДОМЕН>` — аккаунт аймағына байланысты сақтау қоймасына қол жеткізуге арналған URL. Мүмкін мәндер:
+        - `ru-msk` — Мәскеу өңірі;
+        - `kz-ast` — Қазақстан өңірі.
 
-            - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-            - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+      - `<ПУБЛИЧНЫЙ_КЛЮЧ_ДОСТУПА>`, `<СЕКРЕТНЫЙ_КЛЮЧ>` — объектілік қоймаға қолжетімділіктің {linkto(../../../../storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys)[text=кілт идентификаторы мен құпия кілті]}.
+      - `<ДОМЕН>` — қоймаға қолжетімділік URL-мекенжайы, ол аккаунттың өңіріне байланысты. Мүмкін мәндер:
+
+        - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
 1. Terraform инициализациялау үшін команданы орындаңыз:
 
-    ```console
-    terraform init
-    ```
+   ```console
+   terraform init
+   ```
 
-   Terraform жұмысына қажет қосымша файлдар жасалады.
+   Terraform жұмысы үшін қажетті қосымша файлдар жасалады.
 
-## 1. Бакет пен оның ішіндегі объектілер сипатталған файлды жасаңыз
+## {heading(1. Бакет пен оның ішіндегі объектілердің сипаттамасы бар файлды жасаңыз)[id=terraform-aws-file]}
 
 Төмендегі мысалда `example-bucket` бакеті жасалады, оған `object-one` және `object-two` объектілері қосылады.
 
-Келесі мазмұны бар `main.tf` Terraform конфигурация файлын жасаңыз:
+Тerraform конфигурация файлын `main.tf` мына мазмұнмен жасаңыз:
 
 ```hcl
 
@@ -103,38 +107,38 @@ resource "aws_s3_object" "object-two" {
 
 - `bucket` — бакет атауы:
 
-    - `bucket = "example-bucket"` — `example-bucket` атауымен бакет жасалады. Атауға қойылатын талаптар:
+  - `bucket = "example-bucket"` — бакет `example-bucket` атауымен жасалады. Атауға қойылатын талаптар:
 
-        - 4-тен 63-ке дейін таңбадан тұрады;
-        - әріптен немесе саннан басталып, солармен аяқталады;
-        - тек кіші латын әріптерінен, сандардан және келесі таңбалардан тұрады: `.`, `-`;
-        - барлық аймақтардағы {var(cloud)} платформасы шегінде бірегей болады.
+    - 4-тен 63-ке дейін таңбадан тұрады;
+    - әріп немесе цифрмен басталып, аяқталады;
+    - тек латын әліпбиінің кіші әріптерінен, цифрлардан және `.`, `-` таңбаларынан тұрады;
+    - {var(cloud)} платформасының барлық өңірлеріндегі аумағында бірегей.
 
-      Бакет атауы оның ішіндегі объектілердің URL мекенжайларында болады, сондықтан атауда құпия ақпаратты қолданбаңыз.
+    Бакет атауы оның ішіндегі объектілердің URL-мекенжайларында көрсетіледі, сондықтан атауға құпия ақпаратты пайдаланбаңыз.
 
-      Егер хостинг үшін бакет жасасаңыз, атауда мыналарды пайдалану ұсынылмайды:
+    Егер бакетті хостинг үшін жасасаңыз, атауда мыналарды пайдаланбау ұсынылады:
 
-        - IP мекенжайлар және соларға ұқсас пішімдер (мысалы, `192.168.5.4`), себебі бакет атауы мен сайттың IP мекенжайы шатастырылуы мүмкін.
-        - басындағы `xn--`: одан кейінгінің бәрін браузер [паникод](https://ru.wikipedia.org/wiki/Punycode) ретінде қабылдайды.
+    - IP-мекенжайлар және оларға ұқсас форматтау (мысалы, `192.168.5.4`), себебі бакет атауы мен сайттың IP-мекенжайы шатысуы мүмкін.
+    - Басында `xn--`: одан кейінгінің бәрін браузер [паникод](https://ru.wikipedia.org/wiki/Punycode) ретінде қабылдайды.
 
-      {note:warn}
-      Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
-      {/note}
+    {note:warn}
+    Бакет жасалғаннан кейін оның атауын өзгерту мүмкін болмайды.
+    {/note}
 
-    - `bucket = aws_s3_bucket.example-bucket.bucket` — объектіні жасау кезінде бакетті жасайтын ресурс көрсетіледі. Бұл мысалда объект `aws_s3_bucket` ресурсы жасайтын `example-bucket` бакетіне орналастырылады.
+  - `bucket = aws_s3_bucket.example-bucket.bucket` — объект жасау кезінде бакет жасайтын ресурс көрсетіледі. Бұл мысалда объект `aws_s3_bucket` ресурсы жасайтын `example-bucket` бакетіне орналастырылады.
 
-- (Опционалды) `force_destroy` — бұл параметр бакет ішінде объектілер болса да, оны жоюға рұқсат береді. Қолжетімді мәндер: `true` және `false`. Әдепкі мәні — `false`.
-- `key`— объект кілті. Объект бакетке жүктелгеннен кейінгі атауы.
-- `source` — бакетке жүктелетін файлға дейінгі құрылғыңыздағы жол.
-- `acl` — объект үшін [ACL баптаулары](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-pre-set). Қолжетімді мәндер: `private`, `public-read`, `auth-read`.
-- `etag` — объект нұсқасының идентификаторы. `filemd5("path/to/source")` көмегімен орнатылады. Бұл параметрді тек 16 МБ-тан кіші объектілер үшін пайдаланыңыз. 16 МБ-тан үлкен объектілер үшін `source_hash` пайдаланыңыз, себебі олар multipart құрауыш жүктеу әдісімен жүктеледі.
-- `source_hash` — объект нұсқасының идентификаторы. Бұл параметр `etag` параметріне ұқсас, бірақ объект өлшеміне шектеу жоқ. `filemd5("path/to/source")` көмегімен орнатылады.
+- (Қалауыңыз бойынша) `force_destroy` — параметр бакеттің ішінде объектілер болса да, оны жоюға рұқсат етеді. Қолжетімді мәндер `true` және `false`. Әдепкі бойынша — `false`.
+- `key` — объект кілті. Объект бакетке жүктелген кездегі атауы.
+- `source` — бакетке жүктелетін файлдың сіздің құрылғыңыздагы жолы.
+- `acl` — объект үшін {linkto(../../../../storage/s3/concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=ACL баптаулары]}. Қолжетімді мәндер: `private`, `public-read`, `auth-read`.
+- `etag` — объект нұсқасының идентификаторы. `filemd5("path/to/source")` көмегімен орнатылады. Бұл параметрді тек 16 МБ-ден кіші объектілер үшін пайдаланыңыз. 16 МБ-ден үлкен объектілер үшін `source_hash` пайдаланыңыз, себебі олар құрамдас жүктеу (multipart) әдісімен жүктеледі.
+- `source_hash` — объект нұсқасының идентификаторы. Параметр `etag` ұқсас, бірақ объект өлшеміне шектеусіз. `filemd5("path/to/source")` көмегімен орнатылады.
 
-## 2. Бакетті автоматты тазартуды баптаңыз
+## {heading(2. Бакеттің автоматты тазартуын баптаңыз)[id=terraform-aws-clean]}
 
-Төмендегі мысалда `tmp` префиксі бар объектілерді бір күннен кейін бакеттен жоятын [автоматты жою ережесі](/kz/storage/s3/instructions/manage-lifecycle) (lifecycle) қосылады.
+Төмендегі мысалда бакеттен `tmp` префиксі бар объектілерді бір күн өткен соң {linkto(../../../../storage/s3/instructions/manage-lifecycle#s3-instructions-manage-lifecycle)[text=автоматты жою ережесі]} (lifecycle) қосылады.
 
-`main.tf` файлына келесі мазмұнды қосыңыз:
+`main.tf` файлына мына мазмұнды қосыңыз:
 
 ```hcl
 resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
@@ -154,25 +158,23 @@ resource "aws_s3_bucket_lifecycle_configuration" "example-bucket-lifecyle" {
 ```
 Мұнда:
 
-- `id` — ереже идентификаторы. Тек сандар, латын әріптері және `-`, `_`, `.` таңбаларына рұқсат етіледі. Идентификатор бакет шегінде бірегей болуы керек.
-- `prefix` — объект кілтінің префиксі: ереже тек көрсетілген префикстік кілттері бар объектілерге қолданылады. Сүзгіде тек бір кілт болуы мүмкін. Префикстік кілттердің мысалдары: `image/`, `pre/`, `image/photo`.
+- `id` — ереже идентификаторы. Тек цифрлар, латын әріптері және `-`, `_`, `.` таңбалары рұқсат етіледі. Идентификатор бакет аумағында бірегей болуы тиіс.
+- `prefix` — объект кілтінің префиксі: ереже тек көрсетілген префиксті кілттері бар объектілерге қолданылады. Фильтрде тек бір кілт болуы мүмкін. Префиксті кілттердің мысалдары: `image/`, `pre/`, `image/photo`.
 - `expiration` — параметрде объектілер жойылатын күндер саны көрсетіледі.
 - `status` — ереже күйі:
 
-    - `"Enabled"` — ереже белсенді;
-    - `"Disabled"` — ереже белсенді емес.
+  - `"Enabled"` — ереже қолданылады;
+  - `"Disabled"` — ереже қолданылмайды.
 
-## 3. Бакетке басқа пайдаланушыларға немесе жобаларға қол жеткізу құқықтарын беріңіз
+## {heading(3. Бакетке қолжетімділік құқықтарын басқа пайдаланушыларға немесе жобаларға беріңіз)[id=terraform-aws-acl]}
 
-Төмендегі мысалда пайдаланушы ID-і және жоба ID-і бойынша бакеттің ACL-ын оқуға құқықтар беріледі.
+Төмендегі мысалда бакеттің ACL оқу құқықтары пайдаланушы ID және жоба ID бойынша беріледі.
 
 {note:info}
-
-Басқа жобадағы {var(s3)} жеке [аккаунты](/kz/storage/s3/instructions/access-management/access-keys) үшін ACL көрсету мүмкін емес.
-
+Басқа жобаданғы жеке {linkto(../../../../storage/s3/instructions/access-management/access-keys#s3-instructions-access-keys)[text=аккаунт]} үшін {var(s3)} ACL көрсету мүмкін емес.
 {/note}
 
-`main.tf` файлына келесі мазмұнды қосыңыз:
+`main.tf` файлына мына мазмұнды қосыңыз:
 
 ```hcl
 
@@ -182,7 +184,7 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
   bucket = aws_s3_bucket.example-bucket.id
   access_control_policy {
 
-    # Oбязательная часть: определяет полные права доступа для текущего пользователя (владельца бакета)
+# Oбязательная часть: определяет полные права доступа для текущего пользователя (владельца бакета)
     owner {
       id = data.aws_canonical_user_id.current.id
     }
@@ -194,7 +196,7 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
        permission = "FULL_CONTROL"
     }
 
-    # Права доступа к бакету выдаются по ID пользователя
+# Права доступа к бакету выдаются по ID пользователя
     grant {
       grantee {
         id   = "1f417590-xxxx-xxxx-xxxx-edacf23b1f96"
@@ -203,7 +205,7 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
       permission = "READ_ACP"
     }
 
-    # Права доступа к бакету выдаются по ID проекта
+# Права доступа к бакету выдаются по ID проекта
     grant {
       grantee {
         email_address = "mcs1234567890"
@@ -222,11 +224,11 @@ resource "aws_s3_bucket_acl" "example-bucket-acl" {
 - `email_address = "mcs1234567890"` — бакетке қол жеткізу құқықтары берілетін PID (жоба идентификаторы). [PID-ті қалай білуге болады](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
 - `permission` — [қол жеткізу құқықтарының түрі](/kz/storage/s3/concepts/access/s3-acl#s3-concepts-acl-permissions). Қолжетімді мәндер: `READ`, `WRITE`, `READ_ACP`, `WRITE_ACP`, `FULL_CONTROL`.
 
-## 4. Бакет үшін CORS ережелерін баптаңыз
+## {heading(4. Бакет үшін CORS ережелерін баптаңыз)[id=terraform-aws-cors]}
 
-Төмендегі мысалда [CORS](/kz/storage/s3/concepts/access/s3-cors) ережелері бапталады.
+Төмендегі мысалда {linkto(../../../../storage/s3/concepts/access/s3-cors#s3-concepts-cors)[text=CORS]} ережелері бапталады.
 
-`main.tf` файлына келесі мазмұнды қосыңыз:
+`main.tf` файлына мына мазмұнды қосыңыз:
 
 ```hcl
 resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
@@ -249,21 +251,21 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
 Мұнда:
 
-- (Опционалды) `allowed_headers` — бакет объектілеріне сұрауда рұқсат етілген тақырыптар тізімі. Үлгіні анықтау үшін `*` таңбасын пайдалануға болады.
-- `allowed_methods` — бакет объектілеріне сұрауда рұқсат етілген әдістер тізімі. Қолжетімді мәндер: `GET`, `PUT`, `HEAD`, `POST`, `DELETE`.
-- `allowed_origins` — бакетке қол жеткізуге рұқсат етілген URL тізімі. Үлгіні анықтау үшін `*` таңбасын пайдалануға болады.
-- (Опционалды) `expose_headers` — пайдаланушылар өз қолданбаларынан қол жеткізе алатын жауаптағы тақырыптар тізімі. Төменгі регистрде көрсетіледі.
-- (Опционалды) `max_age_seconds` — браузер көрсетілген URL үшін жауапты кэштейтін секундтар саны.
+- (Қалауыңыз бойынша) `allowed_headers` — бакет объектілеріне сұранымдағы рұқсат етілген тақырыптар тізімі. Үлгіні анықтау үшін `*` таңбасын пайдалануға болады.
+- `allowed_methods` — бакет объектілеріне сұранымдағы рұқсат етілген әдістер тізімі. Қолжетімді мәндер: `GET`, `PUT`, `HEAD`, `POST`, `DELETE`.
+- `allowed_origins` — бакетке қолжетімділік рұқсат етілген URL-дар тізімі. Үлгіні анықтау үшін `*` таңбасын пайдалануға болады.
+- (Қалауыңыз бойынша) `expose_headers` — пайдаланушылар өз қосымшаларынан қолжетімді болатын жауаптағы тақырыптар тізімі. Кіші әріптермен көрсетіледі.
+- (Қалауыңыз бойынша) `max_age_seconds` — браузеріңіз көрсетілген URL үшін жауапты кештейтін уақыт, секундпен.
 
-## 5. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading(5. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-aws-resource]}
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
 
-    - `aws_provider.tf`;
-    - `network.tf`.
+   - `aws_provider.tf`;
+   - `network.tf`.
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістер бар екенін тексеріңіз:
+1. Конфигурация файлдары дұрыс екенін және қажетті өзгерістер бар екенін тексеріңіз:
 
    ```console
    terraform validate && terraform plan
@@ -275,16 +277,16 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
    terraform apply
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 6. Конфигурацияның қолданылғанын тексеріңіз
+## {heading(6. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-aws-check]}
 
-Бакет пен объектілердің сәтті жасалғанына, конфигурацияның бапталғанына көз жеткізіңіз:
+Бакет пен объектілер сәтті жасалғанын, конфигурация бапталғанын тексеріңіз:
 
-1. AWS CLI арқылы {var(s3)} жүйесіне [қосылыңыз](/kz/storage/s3/connect/s3-cli).
-1. Бакет пен объектілердің жасалғанын тексеріңіз. Команданы орындаңыз:
+1. AWS CLI арқылы {var(s3)} сервисіне [қосылыңыз](/kz/storage/s3/connect/s3-cli).
+1. Бакет пен объектілер жасалғанын тексеріңіз. Команданы орындаңыз:
 
    ```console
    aws s3 ls s3://example-bucket/ --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
@@ -292,15 +294,15 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
 
    Мұнда:
 
-    - `example-bucket` — Terraform арқылы жасалған бакет атауы.
-    - `endpoint-url` — {var(s3)} сервисінің домені, ол аккаунттың [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы керек:
+   - `example-bucket` — Terraform арқылы жасалған бакеттің атауы.
+   - `endpoint-url` — {var(s3)} сервисінің домені, аккаунттың {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
-        - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
-        - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
+     - `https://hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
 
-   Жауапта жасалған бакет және оған қосылған объектілер тізімі қайтарылады.
+   Жауапта жасалған бакет және оған қосылған объектілердің тізімі қайтарады.
 
-1. Бакет үшін автоматты тазарту ережелерінің бапталғанын тексеріңіз. Команданы орындаңыз:
+1. Бакет үшін автоматты тазарту ережелері бапталғанын тексеріңіз. Команданы орындаңыз:
 
    ```console
    aws s3api get-bucket-lifecycle-configuration \
@@ -308,7 +310,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
     --bucket example-bucket
    ```
 
-1. Басқа пайдаланушылар үшін бакетке қол жеткізу құқықтарының бапталғанын тексеріңіз:
+1. Бакетке басқа пайдаланушыларға қолжетімділік құқықтары бапталғанын тексеріңіз:
 
    ```console
    aws s3api get-bucket-acl \
@@ -316,7 +318,7 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
     --bucket example-bucket
    ```
 
-1. Бакет үшін CORS ережелерінің бапталғанын тексеріңіз:
+1. Бакет үшін CORS ережелері бапталғанын тексеріңіз:
 
    ```console
    aws s3api get-bucket-cors \
@@ -324,9 +326,9 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
     --bucket example-bucket
    ```
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-aws-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Егер Terraform көмегімен жасалған ресурстар сізге қажет болмаса, оларды жойыңыз:
 
 1. Terraform конфигурация файлдары бар директорияға өтіңіз.
 1. Команданы орындаңыз:
@@ -335,6 +337,6 @@ resource "aws_s3_bucket_cors_configuration" "example-bucket-cors" {
    terraform destroy
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

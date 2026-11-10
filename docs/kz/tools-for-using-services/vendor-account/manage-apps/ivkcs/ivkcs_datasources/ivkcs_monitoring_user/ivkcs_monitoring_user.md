@@ -1,10 +1,10 @@
-# {heading(ivkcs_monitoring_user деректер көзі)[id=ivkcs_monitoring_user]}
+# {heading(ivkcs_monitoring_user дереккөзі)[id=ivkcs_monitoring_user]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-`ivkcs_monitoring_user` деректер көзі {linkto(#tab_attributes)[text=%number кестеде]} келтірілген атрибуттарды қайтарады. Атрибуттар метрикаларды Cloud Monitoring сервисіне жіберу үшін мониторинг агентінің output-плагинін (Telegraf) баптауға мүмкіндік береді (толығырақ — [Бұлтты платформаның Cloud Monitoring сервисімен интеграция](../../../ib_cloud_monitoring) бөлімінде).
+`ivkcs_monitoring_user` дереккөзі {linkto(#tab_attributes)[text=%number кестеде]} келтірілген атрибуттарды қайтарады. Атрибуттар мониторинг агентінің (Telegraf) output-плагинін бұлттық платформаның Cloud Monitoring жүйесіне метрикалар жіберу үшін баптауға мүмкіндік береді (толығырақ — [Бұлттық платформаның Cloud Monitoring жүйесімен интеграция](../../../ib_cloud_monitoring) бөлімінде).
 
-{caption({counter(table)[id=numb_tab_attributes]} кесте — ivkcs_monitoring_user деректер көзінің атрибуттары)[align=right;position=above;id=tab_attributes;number={const(numb_tab_attributes)}]}
+{caption({counter(table)[id=numb_tab_attributes]} кесте — ivkcs_monitoring_user дереккөзінің атрибуттары)[align=right;position=above;id=tab_attributes;number={const(numb_tab_attributes)}]}
 [cols="1,3,2", options="header"]
 |===
 |Атауы
@@ -13,43 +13,43 @@
 
 |
 `user_id`
-|Бұлтты платформаның Keycloak жүйесіндегі сервистік пайдаланушының идентификаторы
+|Бұлттық платформаның Keycloak жүйесіндегі сервистік пайдаланушы идентификаторы
 |
 Провайдерден
 
 |
 `password`
-|Бұлтты платформаның Keycloak жүйесіндегі сервистік пайдаланушының құпиясөзі. Сезімтал деректерді қамтиды
+|Бұлттық платформаның Keycloak жүйесіндегі сервистік пайдаланушының құпиясөзі. Сезімтал деректерді қамтиды
 |
 Мониторинг агентін орнату кезінде генерацияланады
 
 |
 `project_id`
-|Бұлтты платформаның жоба идентификаторы (OpenStack PID)
+|Бұлттық платформаның жобасының идентификаторы (OpenStack PID)
 |
 Провайдерден
 
 |
 `auth_url`
-|Бұлтты платформадағы авторизацияның URL мекенжайы
+|Бұлттық платформадағы авторизация URL-адресі
 |
 `https://infra.mail.ru/infra/identity/v3/`
 
 |
 `namespace`
-|Cloud Monitoring сервисіндегі Namespace
+|Cloud Monitoring сервисіндегі namespace
 |
 `mcs/vm`
 
 |
 `endpoint`
-|Cloud Monitoring сервисіне метрикаларды жіберуге арналған URL мекенжайы
+|Метрикаларды Cloud Monitoring жүйесіне жіберу үшін арналған URL-адрес
 |
 `monitoring.mcs.mail.ru:443`
 |===
 {/caption}
 
-{caption(`ivkcs_monitoring_user` деректер көзінің мысалы)[align=left;position=above]}
+{caption(`ivkcs_monitoring_user` дереккөзінің мысалы)[align=left;position=above]}
 ```hcl
 data "ivkcs_monitoring_user" "write" {}
 ```

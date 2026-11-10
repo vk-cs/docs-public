@@ -3,10 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Сервисті жүктеу кезеңдері",
   "sectionTitle": "Сервисті жүктеу кезеңдері",
+  "uuid": "b31d68ec-8acd-48a9-ad4c-4815af234ae6",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "241ae181-050e-4d52-8c26-37d519755fb4"
+  }
 }

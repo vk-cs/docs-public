@@ -1,0 +1,215 @@
+{
+  "local": {
+    "overviewLink": "https://docs.tech.vk.ru/",
+    "groups": [
+      {
+        "key": "services-components",
+        "title": "Сервистер мен компоненттер",
+        "items": [
+          {
+            "key": "ciam",
+            "absoluteLink": "https://docs.tech.vk.ru/ciam",
+            "title": "CIAM",
+            "description": "Пайдаланушыларды, олардың құқықтары мен рұқсаттарын басқару жүйесі"
+          },
+          {
+            "key": "partner-cabinet",
+            "absoluteLink": "https://docs.tech.vk.ru/partners",
+            "title": "VK Tech серіктес кабинеті",
+            "description": "Мәмілелерді, командаға рұқсаттарды және маркетинг базасын біртұтас жүйеде басқарыңыз"
+          }
+        ]
+      },
+      {
+        "key": "ai-products",
+        "title": "AI-өнімдер",
+        "items": [
+          {
+            "key": "vk-ai-space",
+            "absoluteLink": "https://docs.tech.vk.ru/ai-space",
+            "title": "VK AI Space",
+            "description": "AI-агенттерді жасау және іске қосуға арналған AI-платформа"
+          }
+        ]
+      },
+      {
+        "key": "cloud-platform",
+        "title": "Бұлттық платформа",
+        "items": [
+          {
+            "key": "vk-cloud",
+            "absoluteLink": "https://cloud.vk.ru/docs",
+            "title": "VK Cloud",
+            "description": "IT-инфрақұрылым құру, әзірлеу және деректермен жұмыс істеуге арналған бұлттық платформа"
+          },
+          {
+            "key": "private-cloud",
+            "absoluteLink": "https://cloud.vk.ru/docs/on-premises/private-cloud",
+            "title": "VK Private Cloud",
+            "description": "Тапсырыс берушінің ДК-да жеке бұлт құруға арналған платформа"
+          },
+          {
+            "key": "dev-platform",
+            "absoluteLink": "https://cloud.vk.ru/docs/on-premises/dev-platform",
+            "title": "VK Dev Platform",
+            "description": "Ішкі әзірлеу платформаларын құруға арналған дайын шешім"
+          },
+          {
+            "key": "registry",
+            "absoluteLink": "https://cloud.vk.ru/docs/on-premises/registry",
+            "title": "VK Registry",
+            "description": "Бинарлық артефактілерді басқаруға арналған мамандандырылған қойма"
+          },
+          {
+            "key": "security-gate",
+            "absoluteLink": "https://cloud.vk.ru/docs/on-premises/security-gate",
+            "title": "Security Gate",
+            "description": "ҚБ автоматтандырылған әзірлеу: CI/CD тексерулері және GitLab сканерлеу"
+          }
+        ]
+      },
+      {
+        "key": "data-services",
+        "title": "Деректер сервистері",
+        "items": [
+          {
+            "key": "data-platform",
+            "absoluteLink": "https://docs.tech.vk.ru/data-platform",
+            "title": "VK Data Platform",
+            "description": "Деректермен жұмыстың толық цикліне арналған дайын интеграцияланған құралдары бар платформа"
+          },
+          {
+            "key": "object-storage",
+            "absoluteLink": "https://docs.tech.vk.ru/s3",
+            "title": "VK Object Storage",
+            "description": "Деректерді сенімді сақтауға арналған S3-үйлесімді объектілік қойма"
+          },
+          {
+            "key": "tarantool-db",
+            "absoluteLink": "https://tarantool.io/docs/tdb/",
+            "title": "Tarantool DataBase",
+            "description": "NoSQL in-memory ДБЖ"
+          },
+          {
+            "key": "tarantool-column-store",
+            "absoluteLink": "https://tarantool.io/docs/tcs",
+            "title": "Tarantool Column Store",
+            "description": "Бағаналық in-memory ДБЖ"
+          },
+          {
+            "key": "tarantool-data-grid",
+            "absoluteLink": "https://tarantool.io/docs/tdg/",
+            "title": "Tarantool Data Grid",
+            "description": "Масштабталатын деректерді сақтау және интеграциялау жүйелерін құруға арналған фреймворк"
+          },
+          {
+            "key": "tarantool-cluster-federation",
+            "absoluteLink": "https://www.tarantool.io/docs/tcf/",
+            "title": "Tarantool Clusters Federation",
+            "description": "Ақауға төзімділік модулі"
+          },
+          {
+            "key": "tarantool-queue-enterprise",
+            "absoluteLink": "https://www.tarantool.io/docs/tqe/",
+            "title": "Tarantool Queue Enterprise",
+            "description": "Деректерді ағынды өңдеу модулі"
+          },
+          {
+            "key": "tarantool-cdc",
+            "absoluteLink": "https://www.tarantool.io/docs/cdc",
+            "title": "Tarantool Change Data Capture",
+            "description": "Деректерді real-time репликациялау құралы"
+          },
+          {
+            "key": "tarantool-cluster-manager",
+            "absoluteLink": "https://www.tarantool.io/en/doc/latest/tooling/tcm/",
+            "title": "Tarantool Clusters Manager",
+            "description": "Кластерді басқару құралы"
+          },
+          {
+            "key": "ansible-tarantool-enterprise",
+            "absoluteLink": "https://www.tarantool.io/docs/ate/",
+            "title": "Ansible Tarantool Enterprise",
+            "description": "Tarantool өнімдерін орнатуға арналған құрал"
+          },
+          {
+            "key": "tarantool-platform",
+            "absoluteLink": "https://www.tarantool.io/en/doc/latest/",
+            "title": "Tarantool Community/Enterprise Edition",
+            "description": "Жоғары жүктемелі ДБЖ құруға арналған платформа"
+          }
+        ]
+      },
+      {
+        "key": "productivity-services",
+        "title": "Өнімділік сервистері",
+        "items": [
+          {
+            "key": "workspace-oncloud-admin",
+            "absoluteLink": "https://biz.mail.ru/docs/saas/index.html",
+            "title": "VK WorkSpace (On-Cloud), әкімшілер",
+            "description": "Корпоративтік байланысқа арналған бұлттық сервистер бойынша әкімшілер нұсқаулықтары"
+          },
+          {
+            "key": "workspace-oncloud",
+            "absoluteLink": "https://biz.mail.ru/docs/saas/user-guides/index.html",
+            "title": "VK WorkSpace (On-Cloud), пайдаланушылар",
+            "description": "Корпоративтік байланысқа арналған бұлттық сервистер бойынша пайдаланушылар нұсқаулықтары"
+          },
+          {
+            "key": "workspace-onprem",
+            "absoluteLink": "https://biz.mail.ru/docs/on-premises/index.html",
+            "title": "VK WorkSpace (On-Premise)",
+            "description": "Тапсырыс берушінің ДК-дағы корпоративтік байланысқа арналған өнімдермен жұмыс істеу нұсқаулықтары"
+          }
+        ]
+      },
+      {
+        "key": "business-applications",
+        "title": "Бизнес-қосымшалар",
+        "items": [
+          {
+            "key": "tax-compliance",
+            "absoluteLink": "https://docs.tech.vk.ru/tax-compliance/",
+            "title": "VK Tax Compliance",
+            "description": "Бизнесті салық органдарымен өзара іс-қимылға арналған шешім"
+          },
+          {
+            "key": "budgeting",
+            "absoluteLink": "https://docs.tech.vk.ru/budgeting",
+            "title": "Budgeting",
+            "description": "Бюджеттеу және басқару есебін автоматтандыру жүйесі"
+          },
+          {
+            "key": "business-analytics",
+            "absoluteLink": "https://docs.tech.vk.ru/business-analytics",
+            "title": "VK Business Analytics",
+            "description": "Бизнес-процестерді талдау және оңтайландыруға арналған шешім"
+          },
+          {
+            "key": "grc",
+            "absoluteLink": "https://wiki.vkgrc.tech/",
+            "title": "GRC",
+            "description": "Тәуекелдерді және ішкі бақылауды басқаруға арналған шешім"
+          },
+          {
+            "key": "hrtek",
+            "absoluteLink": "https://help.hrtek.ru/",
+            "title": "VK HR Tek",
+            "description": "Дайын кадрлық сервистер жиынтығы бар модульдік платформа"
+          },
+          {
+            "key": "people-hub",
+            "absoluteLink": "https://people-hub.ru/documentation/",
+            "title": "VK People Hub",
+            "description": "Корпоративтік портал"
+          }
+        ]
+      }
+    ]
+  },
+  "default": {
+    "group": "cloud-platform",
+    "item": "vk-cloud"
+  }
+}

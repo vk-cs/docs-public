@@ -1,13 +1,13 @@
 {
-  "title": "ВМ жүйелік метрикалары",
+  "title": "ВМ-нің жүйелік метрикалары",
   "shortDescription": "",
-  "metaDescription": "ВМ жүйелік метрикалары",
-  "sectionTitle": "ВМ жүйелік метрикалары",
+  "metaDescription": "ВМ-нің жүйелік метрикалары",
+  "sectionTitle": "ВМ-нің жүйелік метрикалары",
   "weight": 2,
+  "uuid": "4eb8d52a-8689-44e8-be61-e3d4d7c660f2",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "e2379f98-0b69-46aa-8e51-dcf4efe66ebd"
+  }
 }

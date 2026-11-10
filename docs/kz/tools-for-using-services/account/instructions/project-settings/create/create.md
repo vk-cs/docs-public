@@ -1,33 +1,34 @@
-# {heading(Жоба құру)[id=tools-account-project-create]}
+# {heading(Жобаны құру)[id=tools-account-project-create]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{include(/kz/_includes/_project_create_header.md)}
+{include(../../../../../_includes/_project_create_header.md)}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-{include(/kz/_includes/_project_create_tab_lk.md)}
+{include(../../../../../_includes/_project_create_tab_lk.md)}
 
 {/tab}
 
 {tab({var(cloud)} Аккаунт)}
 
-{include(/kz/_includes/_project_create_tab_account.md)}
+{include(../../../../../_includes/_project_create_tab_account.md)}
 
 {/tab}
 
 {/tabs}
 
 {ifdef(public)}
-## Әрі қарай не істеу керек?
 
-1. Қызметтерді пайдалануды бастау үшін жоба балансын [толықтырыңыз](/kz/intro/billing/instructions/payment).
+## Одан кейін не істеу керек?
 
-    Пайдаланушылар жасаған жобалардың [балансы](/kz/intro/billing/concepts/balance) бастапқыда 0 рубльді құрайды. Мұндай жобаларға [қош келдіңіз бонустары](/kz/intro/billing/concepts/balance) есептелмейді.
+1. Сервистерді пайдалана бастау үшін жобаның {linkto(../../../../../intro/billing/instructions/payment#billing-payment)[text=теңгерімін толтырыңыз]}.
 
-   Қызметтердің құны туралы толығырақ [тарификация туралы мақалада](../../../tariffication) қараңыз.
+    Пайдаланушылар құрған жобалардың {linkto(../../../../../intro/billing/concepts/balance#billing-balance)[text=теңгерімі]} бастапқыда 0 теңге. Мұндай жобаларға {linkto(../../../../../intro/billing/concepts/balance#billing-balance-bonuses)[text=қош келдіңіз бонустары]} есептелмейді.
 
-1. Жобаға қолжетімділіктерді [баптаңыз](/kz/access/iam/instructions/access-manage).
+   Сервистердің құны туралы толығырақ {linkto(../../../tariffication#tools-account-tariffication)[text=тарифттеу туралы мақалада]}.
+
+1. Жоба үшін {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=қолжетімділіктерді баптаңыз]}.
 {/ifdef}

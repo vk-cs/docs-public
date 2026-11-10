@@ -1,0 +1,15 @@
+{
+  "title": "Сервис данысның данасына қосылу",
+  "shortDescription": "TLS арқылы Kafka CLI көмегімен Cloud Kafka данасына қалай қосылу",
+  "metaDescription": "VK Data Platform платформасында TLS арқылы Kafka CLI көмегімен Cloud Kafka данасына қосылу: қосылу жолын алу және клиентті баптау",
+  "sectionTitle": "Сервис данасына қосылу",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "weight": 4,
+  "uuid": ""
+}

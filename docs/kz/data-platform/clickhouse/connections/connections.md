@@ -1,4 +1,6 @@
-# {heading(Қосылу)[id=clickhouse_connections]}
+# {heading(Қосу)[id=clickhouse_connections]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}

@@ -1,14 +1,14 @@
 {
-  "title": "MLflow Deploy инстансын жасау",
+  "title": "MLflow Deploy инстансын құру",
   "shortDescription": "",
-  "metaDescription": "Terraform пайдаланып MLflow Deploy инстансын жасау мысалы",
-  "sectionTitle": "MLflow Deploy инстансын жасау",
+  "metaDescription": "Terraform қолдана отырып MLflow Deploy инстансын құру мысалы",
+  "sectionTitle": "MLflow Deploy инстансын құру",
   "icon": "",
   "weight": 3,
+  "uuid": "881ae303-17ab-436c-b3f3-0319b85e791f",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "97142270-3855-4578-9616-062ce541f9d3"
+  }
 }

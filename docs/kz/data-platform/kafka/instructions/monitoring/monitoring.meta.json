@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "Метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында Cloud Kafka сервисінің орналастырылған даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform платформасында орнатылған Cloud Kafka сервисінің даналарының жұмыс метрикаларын қалай көруге болатынын біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -9,6 +9,6 @@
       "data-p-pdf"
     ]
   },
-  "weight": 5,
-  "uuid": "2496f120-bf34-4027-9004-65ae6864664c"
+  "weight": 8,
+  "uuid": "6a2d1fe5-b465-452f-a213-03efe5c9efc0"
 }

@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Концепциялар)[id=partner-platform-concepts]}
 
-{var(cloud)} серіктес платформасының негізгі ұғымдары.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{var(cloud)} серіктестік платформасының негізгі ұғымдары.

@@ -1,13 +1,13 @@
 {
-  "title": "Сипаттама инфрақұрылымы",
+  "title": "Инфрақұрылым сипаттамасы",
   "shortDescription": "",
-  "metaDescription": "Сипаттама инфрақұрылымы",
-  "sectionTitle": "Сипаттама инфрақұрылымы",
+  "metaDescription": "Инфрақұрылым сипаттамасы",
+  "sectionTitle": "Инфрақұрылым сипаттамасы",
   "weight": 4,
+  "uuid": "a9fb21d6-44df-478a-8945-7c6c3a3c355d",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "11028cc6-0cae-478c-b2c4-aa501c5047d6"
+  }
 }

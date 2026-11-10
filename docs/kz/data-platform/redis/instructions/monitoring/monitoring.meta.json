@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform Standalone нұсқасындағы Redis сервисінің өрістетілген даналарының жұмыс метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform платформасында орнатылған Redis сервисінің даналарының жұмыс метрикаларын қалай көруге болатынын біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -10,5 +10,5 @@
     ]
   },
   "weight": 3,
-  "uuid": "aeb950c7-3a1e-4ad5-ba56-560b98901690"
+  "uuid": "a05cb8c5-5819-4576-9de4-19ea07df5e84"
 }

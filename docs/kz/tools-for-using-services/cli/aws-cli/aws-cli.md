@@ -1,21 +1,19 @@
-# {heading(AWS CLI)[id=tools-cli-aws]}
+# {heading(AWS CLI орнату)[id=tools-cli-aws]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 AWS пәрмен жолы интерфейсі (AWS CLI) {var(cloud)} сервистерімен консоль арқылы жұмыс істеуге мүмкіндік береді.
 
 AWS CLI екі нұсқада қолжетімді:
 
-- 2.X нұсқасы — қазіргі қолданыстағы жалпыға қолжетімді нұсқа, осы нұсқаны пайдаланған жөн.
-- 1.X нұсқасы — кері үйлесімділікті қамтамасыз ету үшін қолжетімді алдыңғы нұсқа.
+- 2.X нұсқасы — ағымдағы жалпыға қолжетімді нұсқа, осы нұсқаны пайдалану ұсынылады.
+- 1.X нұсқасы — кері үйлесімдікті қамтамасыз ету үшін қолжетімді алдыңғы нұсқа.
 
- {note:info}
-
-{var(s3)} сервисі AWS CLI келесі нұсқаларын қолдайды: 1.36.40 немесе төмен, 2.22.35 немесе төмен.
-
+{note:info}
+{var(s3)} сервисі келесі AWS CLI нұсқаларын қолдайды: 1.36.40 және одан төмен, 2.22.35 және одан төмен.
 {/note}
 
-AWS CLI пәрмендер жиынтығы және қосымша баптаулар туралы толық ақпарат [әзірлеушінің сайтында](https://docs.aws.amazon.com/cli/index.html) қолжетімді.
+AWS CLI пәрмендер жиыны мен қосымша баптаулар туралы толық ақпарат [әзірлеуші сайтында](https://docs.aws.amazon.com/cli/index.html) қолжетімді.
 
 ## {heading({counter(aws-cli)}. AWS клиентін орнатыңыз)[id=aws-install]}
 
@@ -24,25 +22,25 @@ AWS CLI пәрмендер жиынтығы және қосымша баптау
 {tab(Linux)}
 Талаптар:
 
-- CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 және Linux ARM жүйелерінің 64-биттік нұсқасы;
-- жүктелген пакетті архивтен шығару мүмкіндігі: `unzip` пәрмені немесе соған ұқсас құрал;
-- `glibc`, `groff` және `less` пакеттері орнатылған және қолжетімді болуы керек.
+- CentOS, Fedora, Ubuntu, Amazon Linux 1, Amazon Linux 2 and Linux ARM дистрибутивтерінің 64-разрядты нұсқалары;
+- жүктелген пакетті тарқату мүмкіндігі: `unzip` пәрмені немесе ұқсас;
+- `glibc`, `groff` және `less` пакеттері орнатылып, қолжетімді болуы тиіс.
 
 Linux x86 (64-бит) үшін орындаңыз:
 
-  ```console
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  unzip awscliv2.zip
-  sudo ./aws/install
-  ```
+```console
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
 
 Linux ARM үшін орындаңыз:
 
-  ```console
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
-  unzip awscliv2.zip
-  sudo ./aws/install
-  ```
+```console
+curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
 
 {/tab}
 
@@ -50,16 +48,16 @@ Linux ARM үшін орындаңыз:
 
 Талаптар:
 
-- macOS жүйесінің 64-биттік нұсқасы.
+- macOS жүйесінің 64-разрядты нұсқасы.
 
 Орнату:
 
 1. [AWS CLI MSI орнатқышын](https://awscli.amazonaws.com/AWSCLIV2.pkg) жүктеп алып, ашыңыз немесе консольде пәрменді орындаңыз:
 
-    ```console
-    curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o   "AWSCLIV2.pkg"
-    sudo installer -pkg AWSCLIV2.pkg -target /
-    ```
+   ```console
+   curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o   "AWSCLIV2.pkg"
+   sudo installer -pkg AWSCLIV2.pkg -target /
+   ```
 
 1. Орнату шеберінің нұсқауларын орындаңыз.
 
@@ -69,18 +67,18 @@ Linux ARM үшін орындаңыз:
 
 Талаптар:
 
-- Windows жүйесінің 64-биттік нұсқасы;
+- Windows жүйесінің 64-разрядты нұсқасы;
 - әкімші құқықтары.
 
 Орнату:
 
 1. [AWS CLI MSI орнатқышын](https://awscli.amazonaws.com/AWSCLIV2.msi) жүктеп алып, ашыңыз немесе консольде пәрменді орындаңыз:
 
-    ```console
+   ```console
    msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
    ```
 
-1. Орнату шеберінің нұсқауларын орындаңыз. Әдепкі бойынша AWS CLI `C:\\Program Files\\Amazon\\AWSCLIV2` ішіне орнатылады.
+1. Орнату шеберінің нұсқауларын орындаңыз. Әдепкі бойынша AWS CLI `C:\\Program Files\\Amazon\\AWSCLIV2` каталогына орнатылады.
 
 {/tab}
 
@@ -90,7 +88,8 @@ Linux ARM үшін орындаңыз:
 
 Консольде пәрменді орындаңыз:
 
-  ```console
-  aws --version
-  ```
-Егер AWS клиенті орнатылған болса, консоль шығысында оның нұсқасы көрсетіледі.
+```console
+aws --version
+```
+
+AWS клиенті орнатылған болса, консоль шығысында оның нұсқасы көрсетіледі.

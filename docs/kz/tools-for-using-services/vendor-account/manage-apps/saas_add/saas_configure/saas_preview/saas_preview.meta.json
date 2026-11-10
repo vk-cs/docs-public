@@ -1,12 +1,12 @@
 {
-  "title": "`Preview` секциясы",
+  "title": "preview бөлімі",
   "shortDescription": "",
-  "metaDescription": "`Preview` секциясы",
-  "sectionTitle": "`Preview` секциясы",
+  "metaDescription": "preview бөлімі",
+  "sectionTitle": "preview бөлімі",
+  "uuid": "bea8c21c-aa86-43be-a471-835797497a96",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "37de1d66-4e77-49c8-baca-de1aac36509e"
+  }
 }

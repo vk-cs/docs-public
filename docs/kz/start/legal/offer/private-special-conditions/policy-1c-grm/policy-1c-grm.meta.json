@@ -1,0 +1,16 @@
+{
+  "title": "«1С: Дайын Жұмыс Орны» сервисін пайдалану шарттары",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «VK Cloud» платформасы аясында «1С: Дайын жұмыс орны» сервисін пайдалану шарттары болып табылады.",
+  "sectionTitle": "«1С: Дайын Жұмыс Орны» сервисін пайдалану шарттары",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 8,
+  "uuid": "9f57d0dc-125f-4b82-ae22-2bf57cc94687",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

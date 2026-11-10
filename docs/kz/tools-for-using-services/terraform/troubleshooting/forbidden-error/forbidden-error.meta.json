@@ -1,8 +1,8 @@
 {
-  "title": "Серверді жасау кезіндегі 403 қатесі",
-  "shortDescription": "Егер Terraform арқылы серверді жасау кезінде 403 Working with SDN=NEUTRON is not allowed қатесі пайда болса, не істеу керек",
-  "metaDescription": "Егер Terraform арқылы серверді жасау кезінде 403 Working with SDN=NEUTRON is not allowed қатесі пайда болса, не істеу керек",
-  "sectionTitle": "Серверді жасау кезіндегі 403 қатесі",
+  "title": "Серверді құру кезіндегі 403 қатесі",
+  "shortDescription": "Terraform арқылы серверді құру кезінде 403 Working with SDN=NEUTRON is not allowed қатесі пайда болса, не істеу керек",
+  "metaDescription": "Terraform арқылы серверді құру кезінде 403 Working with SDN=NEUTRON is not allowed қатесі пайда болса, не істеу керек",
+  "sectionTitle": "Серверді құру кезіндегі 403 қатесі",
   "icon": "",
   "weight": 1,
   "build": {
@@ -10,5 +10,5 @@
       "public"
     ]
   },
-  "uuid": "bee0edb2-3f5d-4034-9fa6-15cb1fc4ec10"
+  "uuid": "5bb42916-457c-42da-8d7f-726fd14a69db"
 }

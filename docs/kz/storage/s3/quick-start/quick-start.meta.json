@@ -1,14 +1,14 @@
 {
   "title": "Жылдам бастау",
-  "shortDescription": "Сервисті қалай пайдалануды бастау керек",
-  "metaDescription": "VK Object Storage: сервисті қалай пайдалануды бастау керек.",
+  "shortDescription": "Сервисті қалай пайдалана бастау",
+  "metaDescription": "VK Object Storage: сервисті қалай пайдалана бастау.",
   "sectionTitle": "Жылдам бастау",
   "icon": "",
   "weight": 1,
+  "uuid": "cbd9851b-2dca-4ce7-8e70-206329780b0e",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "14ed422c-14b2-4ce6-9500-3cd1dfda6ce0"
+  }
 }

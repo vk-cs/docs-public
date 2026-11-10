@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "kms-managed-api",
-    "description": "KMS басқару сервисі\n"
+    "description": "Сервис управления KMS\n"
   },
   "servers": [
     {
@@ -34,8 +34,8 @@
         }
       ],
       "get": {
-        "summary": "Құпиялар тізімі",
-        "description": "Құпиялар тізімі\n",
+        "summary": "Список секретов",
+        "description": "Список секретов\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Scan"
@@ -58,8 +58,8 @@
         }
       },
       "delete": {
-        "summary": "Құпияны біржола жою",
-        "description": "Құпияны біржола жою\n",
+        "summary": "Перманентное удаление секрета",
+        "description": "Перманентное удаление секрета\n",
         "operationId": "S2SApiSecretDeleteMetadata",
         "tags": [
           "S2S-API"
@@ -87,8 +87,8 @@
         }
       ],
       "get": {
-        "summary": "Егжей-тегжейлі құпиялар тізімі немесе нұсқалары бар құпия",
-        "description": "Егжей-тегжейлі құпиялар тізімі немесе нұсқалары бар құпия\n",
+        "summary": "Список секретов c детализацией или секрета с его версиями",
+        "description": "Список секретов c детализацией или секрета с его версиями\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Scan"
@@ -124,8 +124,8 @@
         }
       ],
       "get": {
-        "summary": "Құпия нұсқасы бойынша деректерді алу",
-        "description": "Құпия нұсқасы бойынша деректер\n",
+        "summary": "Получение данных по версии секрета",
+        "description": "Данные по версии секрета\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Version"
@@ -145,8 +145,8 @@
         }
       },
       "post": {
-        "summary": "Құпияны немесе нұсқаны жасау",
-        "description": "Құпияны немесе нұсқаны жасау\n",
+        "summary": "Создание секрета или версии",
+        "description": "Создание секрета или версии\n",
         "operationId": "S2SApiSecretsCreateSecretVersion",
         "tags": [
           "S2S-API"
@@ -184,15 +184,15 @@
         }
       ],
       "get": {
-        "summary": "Құпияны жоюдан қорғау жалаушасын алу",
-        "description": "Құпияны жоюдан қорғау жалаушасын алу\n",
+        "summary": "Получение флага защиты от удаления секрета",
+        "description": "Получение флага защиты от удаления секрета\n",
         "operationId": "S2SApiSecretsGetDeletionProtection",
         "tags": [
           "S2S-API"
         ],
         "responses": {
           "200": {
-            "description": "Жоюдан қорғау жалаушасы",
+            "description": "Флаг защиты от удаления",
             "content": {
               "application/json": {
                 "schema": {
@@ -213,8 +213,8 @@
         }
       },
       "put": {
-        "summary": "Құпияны жоюдан қорғау жалаушасын орнату",
-        "description": "Құпияны жоюдан қорғау жалаушасын өзгерту\n",
+        "summary": "Установка флага защиты от удаления секрета",
+        "description": "Изменение флага защиты от удаления секрета\n",
         "operationId": "S2SApiSecretsSetDeletionProtection",
         "tags": [
           "S2S-API"
@@ -242,7 +242,7 @@
         },
         "responses": {
           "200": {
-            "description": "Жоюдан қорғау жалаушасы сәтті өзгертілді"
+            "description": "Флаг защиты от удаления успешно изменен"
           },
           "default": {
             "$ref": "#/components/responses/DefaultError"
@@ -256,7 +256,7 @@
       "XReqId": {
         "name": "X-Req-Id",
         "in": "header",
-        "description": "Пайдаланушы сұрауының Id мәні",
+        "description": "Id запроса пользователя",
         "required": false,
         "schema": {
           "type": "string",
@@ -266,7 +266,7 @@
       "XAuthToken": {
         "name": "X-Auth-Token",
         "in": "header",
-        "description": "Пайдаланушының авторизация токені",
+        "description": "Токен авторизации пользователя",
         "required": true,
         "schema": {
           "type": "string"
@@ -275,7 +275,7 @@
       "List": {
         "name": "list",
         "in": "query",
-        "description": "list операциясына сұрау, бұл сұрау үшін LIST әдісін пайдалануға болады",
+        "description": "запрос на операцию list, для этого запроса можно использовать метод LIST",
         "schema": {
           "type": "boolean"
         }
@@ -283,7 +283,7 @@
       "Scan": {
         "name": "scan",
         "in": "query",
-        "description": "scan операциясына сұрау, бұл сұрау үшін SCAN әдісін пайдалануға болады",
+        "description": "запрос на операцию scan, для этого запроса можно использовать метод SCAN",
         "schema": {
           "type": "boolean"
         }
@@ -291,7 +291,7 @@
       "Version": {
         "name": "version",
         "in": "query",
-        "description": "нұсқа нөмірі, әдепкі бойынша құпияның ағымдағы нұсқасы",
+        "description": "номер версии, по умолчанию текущая версия секрета",
         "schema": {
           "$ref": "#/components/schemas/SecretVersionNumber"
         }
@@ -306,7 +306,7 @@
       "SecretName": {
         "name": "secret_name",
         "in": "path",
-        "description": "Құпияның атауы",
+        "description": "Название секрета",
         "schema": {
           "type": "string"
         }
@@ -547,7 +547,7 @@
         "x-omitempty": false,
         "type": "integer",
         "nullable": false,
-        "description": "нұсқа нөмірі"
+        "description": "номер версии"
       }
     },
     "responses": {

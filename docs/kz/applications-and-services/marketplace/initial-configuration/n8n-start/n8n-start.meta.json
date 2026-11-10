@@ -1,23 +1,14 @@
 {
-  "title": "n8n өрістету",
-  "shortDescription": "Жұмыс процестерін автоматтандыру үшін n8n өрістету",
-  "metaDescription": "Marketplace VK Cloud: VK Cloud қолданбалар дүкенінен n8n жұмыс процестерін автоматтандыру платформасын өрістету қадамдары.",
-  "sectionTitle": "n8n өрістету",
+  "title": "n8n орнату",
+  "shortDescription": "Жұмыс процестерін автоматтандыру үшін n8n орнату",
+  "metaDescription": "Marketplace VK Cloud: VK Cloud қосымшалар дүкенінен n8n жұмыс процестерін автоматтандыру платформасын орнату қадамдары.",
+  "sectionTitle": "n8n орнату",
   "icon": "",
-  "weight": 20,
+  "weight": 12,
+  "uuid": "e5b83368-6322-4ad9-9e4d-1d12bd5fbc49",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "a1923ac5-0d9d-4975-86ec-6652b944ce7d"
+  }
 }

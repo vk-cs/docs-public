@@ -1,12 +1,12 @@
-# {heading(`preview` секциясы)[id=saas_preview]}
+# {heading(Preview бөлімі)[id=saas_preview]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-`preview` секциясы тарифтік жоспарлар матрицасында қандай тарифтік опциялар көрсетілетінін анықтайды (толығырақ {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix)[text=%text]} бөлімінде).
+`preview` бөлімі тарифтік жоспарлар матрицасында қандай тарифтік опциялар көрсетілетінін анықтайды (көбірек білу — {linkto(/kz/tools-for-using-services/vendor-account/manage-apps/concepts/about#xaas_tariff_matrix)[text=%text]} бөлімінде).
 
-Матрицада `plans` секциясында көрсетілген барлық тарифтік жоспарлар және `preview` секциясында көрсетілген тарифтік опциялар көрсетіледі.
+Матрицада `plans` бөлімінде көрсетілген барлық тарифтік жоспарлар және `preview` бөлімінде көрсетілген тарифтік опциялар көрсетіледі.
 
-`preview` секциясында тарифтік опцияларды келесі құрылым бойынша тізіп шығыңыз:
+`preview` бөлімінде тарифтік опцияларды келесі құрылым бойынша тізіңіз:
 
 ```json
 "preview": {
@@ -21,21 +21,21 @@
 
 Мұнда:
 
-* `parameters` секциясы — тарифтік жоспарлар матрицасына арналған тарифтік опцияларды анықтайды. Бос болуы мүмкін.
+* `parameters` бөлімі — тарифтік жоспарлар матрицасы үшін тарифтік опцияларды анықтайды. Бос болуы мүмкін.
 * `<OPTION>` — JSON-файлдағы тарифтік опцияның атауы.
 
 {note:warn}
 
-Матрицада тарифтік опциялар осы опциялардың `description` параметрінде берілген атаулармен көрсетіледі.
+Матрицада тарифтік опциялар осы опциялардың `description` параметріне берілген атаулармен көрсетіледі.
 
 {/note}
 
-{caption(`preview` секциясын толтыру мысалы)[align=left;position=above]}
+{caption(`preview` бөлімін толтыру мысалы)[align=left;position=above]}
 ```json
 "preview": {
         "parameters": [
           {
-            "name": "vms" // Имя тарифной опции в JSON-файле
+            "name": "vms" // JSON-файлдағы тарифтік опцияның атауы
           },
           {
             "name": "servers"

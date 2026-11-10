@@ -39,7 +39,7 @@ n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/mark
 
         - **Желі**: интернетке қолжетімді жаңа желіні жасаңыз немесе бар желіні және **Жекеменшік DNS** өшірілген ішкі желіні таңдаңыз.
         - **Қолжетімділік аймағы**: ВМ іске қосылатын [ДОД](/kz/start/concepts/architecture#architecture-az) таңдаңыз.
-        - **Виртуалды машина түрі**: [алдын ала орнатылған ВМ конфигурациясын](/kz/computing/iaas/concepts/vm/flavor) таңдаңыз. Пилоттық сценарийлер үшін әдепкі конфигурация үлгісі жеткілікті. Процестер саны мен іске қосу жиілігі артқан кезде ресурстарды [тарифті өңдеу](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-edit-tariff) арқылы көбейте аласыз.
+        - **Виртуалды машина түрі**: [алдын ала орнатылған ВМ конфигурациясын](/kz/computing/iaas/concepts/vm/flavor) таңдаңыз. Пилоттық сценарийлер үшін әдепкі конфигурация үлгісі жеткілікті. Процестер саны мен іске қосу жиілігі артқан кезде ресурстарды [тарифті өңдеу](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-edit) арқылы көбейте аласыз.
 
     1. Жүйелік диск пен деректер дискісінің параметрлерін көрсетіңіз:
 
@@ -67,7 +67,7 @@ n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/mark
 
     {note:info}
 
-    Егер қолжетімділік деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#update_access).
+    Егер қолжетімділік деректері жоғалса, жаңаларын [генерациялаңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access).
 
     {/note}
 
@@ -104,5 +104,5 @@ n8n пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/mark
 
 1. VK Cloud [жеке кабинетіне](https://kz.cloud.vk.kz/app) өтіңіз.
 1. **Виртуалды желілер → Firewall баптаулары** бөліміне өтіңіз.
-1. Сервисіңіздің инстансына арналған қауіпсіздік тобының атауын басыңыз. Атауы `8f9b4adf-n8n` түрінде болады, мұнда `8f9b4adf` — [сервис инстансы ID-сының](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#pr-instance-manage-view) бірінші бөлігі.
+1. Сервисіңіздің инстансына арналған қауіпсіздік тобының атауын басыңыз. Атауы `8f9b4adf-n8n` түрінде болады, мұнда `8f9b4adf` — [сервис инстансы ID-сының](/kz/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-view) бірінші бөлігі.
 1. Қауіпсіздік тобына [жаңа ережелерді қосыңыз](/kz/networks/vnet/instructions/secgroups#add_rule) немесе [өзектілігін жоғалтқан ережелерді жойыңыз](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-delete-rule). Егер вебхуктарды пайдалануды жоспарласаңыз, n8n-ге сұрау жіберетін сыртқы сервистердің IP-мекенжайлары немесе мекенжай ауқымдары үшін қолжетімділікке рұқсат беріңіз.

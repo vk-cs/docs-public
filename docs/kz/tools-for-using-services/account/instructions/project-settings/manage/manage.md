@@ -1,321 +1,336 @@
 # {heading(Жобаны басқару)[id=tools-account-project-manage]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+
 ## {heading(Жобаны таңдау)[id=tools-account-project-select]}
 
-1. {var(cloud)} {linkto(../../lk-entry#tools-account-lk-entry)[text=жеке кабинетіне өтіңіз]}.
-1. Жеке кабинеттің жоғарғы бөлігінде жоба атауын басыңыз.
+1. {var(cloud)} жеке кабинетына {linkto(../../lk-entry#tools-account-lk-entry)[text=өтіңіз]}.
+1. Жеке кабинеттің жоғарғы жағындағы жоба атауын басыңыз.
 
    Сіз қатысушы болып табылатын жобалардың тізімі ашылады.
 
-1. (Опционалды) Егер {var(cloud)} жүйесінде бес жобадан көп болса, мыналарды пайдаланыңыз:
+1. (Қалауыңыз бойынша) Егер {var(cloud)} ішінде бесден көп жоба болса, мыналарды пайдаланыңыз:
 
-   * жоба идентификаторы немесе атауы бойынша іздеуді;
-   * пайдаланушы рөлдері бойынша сүзгіні.
+   * жоба идентификаторы немесе атауы бойынша іздеу;
+   * пайдаланушы рөлдері бойынша сүзгі.
 
 1. Жобаны таңдаңыз.
 {/ifdef}
 
 ## {heading(Жоба идентификаторын алу)[id=project-pid-view]}
 
-{include(/kz/_includes/_project_pid_common.md)}
+{include(../../../../../_includes/_project_pid_common.md)}
 
 Жоба идентификаторын алу үшін:
 
+{ifdef(public)}
 {tabs}
 
 {tab(Жеке кабинет)}
-
-{include(/kz/_includes/_project_pid_tab_lk.md)}
-
-{/tab}
-
-{ifdef(public)}
-{tab({var(cloud)} Аккаунт)}
-
-{include(/kz/_includes/_project_pid_tab_account.md)}
-
-{/tab}
 {/ifdef}
 
+{include(../../../../../_includes/_project_pid_tab_lk.md)}
+
+{ifdef(public)}
+{/tab}
+
+{tab({var(cloud)} Аккаунт)}
+
+{include(../../../../../_includes/_project_pid_tab_account.md)}
+
+{/tab}
+
 {/tabs}
+{/ifdef}
 
 ## {heading(Жоба атауын өзгерту)[id=project-name-edit]}
 
 Жоба атауын жобаның өмірлік циклінің кез келген кезеңінде өзгертуге болады.
 
+{ifdef(public)}
+{tabs}
+
+{tab(Жеке кабинет)}
+{/ifdef}
+
+{include(../../../../../_includes/_project_rename_tab_lk.md)}
+
+{ifdef(public)}
+{/tab}
+
+{tab({var(cloud)} Аккаунт)}
+
+{include(../../../../../_includes/_project_rename_tab_account.md)}
+
+{/tab}
+
+{/tabs}
+{/ifdef}
+
+{include(../../../../../_includes/_project_rename_common.md)}
+
+{ifdef(public)}
+
+## {heading(Жоба иесін ауыстыру)[id=project-owner-edit]}
+
+Жобаның тек бір ғана иесі болуы мүмкін. Басқа пайдаланушыны ие етіп тағайындағаннан кейін сіз онымен {linkto(../../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөлдермен] ауысасыз}.
+
+{note:info}
+Иені ауыстыру жобаның балансының кез келген күйінде мүмкін.
+{/note}
+
 {tabs}
 
 {tab(Жеке кабинет)}
 
-{include(/kz/_includes/_project_rename_tab_lk.md)}
-
-{/tab}
-
-{ifdef(public)}
-{tab({var(cloud)} Аккаунт)}
-
-{include(/kz/_includes/_project_rename_tab_account.md)}
-
-{/tab}
-{/ifdef}
-
-{/tabs}
-
-{include(/kz/_includes/_project_rename_common.md)}
-
-{ifdef(public)}
-## {heading(Жоба иесін ауыстыру)[id=project-owner-edit]}
-
-Жобаның тек бір ғана иесі болуы мүмкін. Басқа пайдаланушыны иесі етіп тағайындағаннан кейін сіз онымен [рөлдеріңізді](/kz/access/iam/concepts/rolesandpermissions) ауыстырасыз.
-
-{note:info}
-
-Иесін ауыстыру жоба балансының кез келген күйінде мүмкін.
-
-{/note}
+1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
 
 1. Дайындық қадамдарын орындаңыз:
 
-    1. Қажет болса, жобаға байланған төлем картасын [техникалық қолдауға](/kz/contacts) жүгіну арқылы ажыратыңыз.
+   1. Қажет болса, жобадан төлем картасын ажыратыңыз, ол үшін [техникалық қолдауға](/kz/contacts) жүгініңіз.
+   1. Ие еткіңіз келетін пайдаланушы мыналарға сәйкес келетініне көз жеткізіңіз:
 
-    1. Иесі еткіңіз келетін пайдаланушы:
+      - {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=Қатысушылар тізіміне] қосылған} және жобаға шақыруды қабылдаған.
 
-        - [қатысушылар тізіміне](/kz/access/iam/instructions/access-manage) қосылғанына және жобаға шақыруды қабылдағанына көз жеткізіңіз.
+        Бұл жағдайда ол тізімде **Иә** белсендіру күйімен көрсетіледі.
 
-            Бұл жағдайда ол тізімде белсендіру мәртебесі **Иә** болып көрсетіледі.
+      - (Қалауыңыз бойынша) Жобада суперәкімші, жоба әкімшісі немесе пайдаланушылар әкімшісі (IAM) рөліне ие.
 
-        - (Опционалды) Жобада суперәкімші, жоба әкімшісі немесе пайдаланушылар әкімшісі (IAM) рөлі бар.
+        Бұл сіз ие болуды тоқтатқаннан кейін рөлдерді ауыстыруды бақылауға мүмкіндік береді.
 
-            Бұл сіз иесі болуды тоқтатқаннан кейін рөлдердің ауысуын бақылауға мүмкіндік береді.
+      - Жобаны қабылдауға келіскен.
 
-        - Жобаны қабылдауға келіседі.
+        Жобаны беру жаңа иенің келісімімен ғана мүмкін.
 
-            Жобаны беру тек жаңа иесінің келісімімен ғана мүмкін.
+1. Ағымдағы ие атынан [техникалық қолдауға](/kz/contacts) жүгініп, мына деректерді хабарлаңыз:
 
-1. Қолданыстағы иесінің атынан [техникалық қолдауға](/kz/contacts) жүгініп, келесі деректерді хабарлаңыз:
+   - жобаның {linkto(#project-pid-view)[text=идентификаторы]} (PID);
+   - жаңа иенің поштасы.
 
-    - жобаның [идентификаторын](#project-pid-view) (PID);
-    - жаңа иесінің поштасын.
-
-1. (Опционалды) Жобаның [қатысушылар тізімінде](/kz/access/iam/instructions/access-manage) рөлдердің ауысуын тексеріңіз.
+1. (Қалауыңыз бойынша) Жобаның {linkto(../../../../../access/iam/instructions/access-manage#iam-access-manage)[text=Қатысушылар тізімінде]} рөлдердің ауысуын тексеріңіз.
 
 {note:info}
-Егер жобаға карта байланбаған болса, жаңа иеге [төлем картасын байлау](/kz/intro/billing/instructions/add-card#privyazat_kartu) және [телефон нөмірін растау](/kz/intro/onboarding/account) қажет болуы мүмкін.
+Жаңа иеге, егер жобада байланыстырылған карта болмаса, {linkto(../../../../../intro/billing/instructions/add-card#billing-add-card-bind)[text=төлем картасын байланыстыру]} және {linkto(../../../../../intro/onboarding/account/create-account#onboarding-create-account-confirm-phone)[text=телефон нөмірін растау]} қажет болуы мүмкін.
 {/note}
+
+{/tab}
+
+{/tabs}
+
 {/ifdef}
 
 ## {heading(Жобаны консервациялау)[id=project-freeze]}
 
-Егер сіз жобадағы жұмысты уақытша тоқтатқыңыз келсе, қаражаттың есептен шығарылуын тоқтату үшін жобаны консервациялаңыз. Егер жоба теріс балансқа түссе, ол кейіннен объектілер мен деректерді жоюмен [мұздатылады](/kz/tools-for-using-services/account/concepts/projects#projects-auto-freeze).
+Егер жобадағы жұмысты тоқтатқыңыз келсе, қаражат есептен шығаруды тоқтату үшін жобаны консервациялаңыз.{ifdef(public)} Егер жоба минусқа кетсе, ол нысандар мен деректерді кейіннен жоюмен {linkto(../../../concepts/projects#projects-auto-freeze)[text=мұздатылады]}.{/ifdef}
 
 Жобаны консервациялау үшін:
 
-1. Жобадан қандай деректерді сақтағыңыз келетінін анықтаңыз:
-
-    1. Жеке кабинет бетінің жоғарғы бөлігіндегі пайдаланушының атын басып, **Баланс және төлемдер** тармағын таңдаңыз.
-    1. Деректер сақталатын объектілерді және олардың құнын көру үшін әр сервистің мазмұнын ашыңыз.
-
-1. Деректерін сақтағыңыз келетін барлық виртуалды машиналарды тоқтатыңыз.
-
-1. Барлық қажетті деректерді көшіріңіз немесе тасымалдаңыз.
-
-    Мысалы, алдыңғы қадамда тоқтатылған виртуалды машиналар диск образдарын [жасаңыз](/kz/computing/iaas/instructions/images/images-manage#sozdanie_obraza) және [экспорттаңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-export).
-
-1. Тарификацияланатын немесе дискілік кеңістікті алатын барлық объектілерді — Floating IP-адрестерді, дискілерді, бакеттерді, жүктеме теңгергіштерін және басқаларын жойыңыз.
-
-    Мұндай объектілердің толық тізімі **Баланс және төлемдер** бетінде де берілген.
-
-    Виртуалды машиналардың жүктеу дискілерін бөлек жою мүмкін болмағандықтан, виртуалды машиналарды [жойыңыз](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete).
-
-    Ресурстарды тұтынбайтын объектілерді — мысалы, желілер мен ішкі желілерді — жоба ішінде қалдыруға болады.
-
-Сіз кез келген уақыт өткен соң сақталған деректерді жобаға жүктеп, инфрақұрылымды қалпына келтіру арқылы жобаны консервациядан шығара аласыз.
-
 {ifdef(public)}
-## {heading(Объектілерді жобалар арасында тасымалдау)[id=project-object-transfer]}
-
-Сіз [дискілерді тасымалдай аласыз](/kz/computing/iaas/instructions/volumes/volumes-transfer) бір жобадан екіншісіне. Бұл жобалар арасында виртуалды машиналарды тасымалдауға мүмкіндік береді.
-
-Дискілерді тасымалдау тек бір аймақ шегінде ғана мүмкін. Егер жобалар әртүрлі аймақтарда орналасса, диск образын жергілікті түрде [жүктеп алыңыз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-export) және оны жаңа жобаға [жүктеңіз](/kz/computing/iaas/instructions/images/images-manage#iaas-images-manage-import).
-
-Қазіргі уақытта PaaS сервистерінің объектілерін жобалар арасында тасымалдауға қолдау көрсетілмейді. Мысалы, дерекқор орналастырылған виртуалды машинаны басқа жобаға тек кәдімгі виртуалды машина ретінде ғана тасымалдауға болады. Мұндай виртуалды машинаны дерекқор инстансы ретінде тасымалдау немесе басқа жобадан тасымалданған дискімен дерекқор инстансын жасау мүмкін емес.
-
-[Техникалық қолдауға](/kz/contacts) жүгінген кезде мына объектілерді тасымалдау мүмкін:
-
-- Floating IP-адрестерді;
-- [сыртқы желі](/kz/networks/vnet/concepts/net-types#vnet-net-types-external-net) адресін.
-{/ifdef}
-
-## {heading(Жоба квоталарын қарау)[id=project-view-quotas]}
-
 {tabs}
 
 {tab(Жеке кабинет)}
 
-Ең жиі пайдаланылатын ресурстарға арналған квоталар [жеке кабинеттің](https://kz.cloud.vk.kz/app/) басты бетінде көрсетіледі.
+1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+{/ifdef}
 
-Квоталардың неғұрлым толық тізімін көру және тізімдегі әр квота туралы толық ақпаратты білу үшін:
+1. Жобадан қандай деректерді сақтағыңыз келетінін анықтаңыз:
 
-{include(/kz/_includes/_project_quotas.md)[tags=viewquotas]}
+   1. Жеке кабинет бетінің жоғарғы жағындағы пайдаланушы атауын басып, **Баланс және төлемдер** тармағын таңдаңыз.
+   1. Деректер сақталатын нысандарды және олардың құнын көру үшін әр сервистің мазмұнын ашыңыз.
+
+1. Деректерін сақтағыңыз келетін барлық виртуалды машиналарды тоқтатыңыз.
+1. Барлық қажетті деректерді тасымалдаңыз немесе көшіріңіз.
+
+   Мысалы, алдыңғы қадамда тоқтатылған виртуалды машиналардың дискілерінің бейнелерін {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=жасаңыз]} және {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-export)[text=экспорттаңыз]}.
+
+1. Тарифтенетін немесе диск кеңістігін алатын барлық нысандарды жойыңыз — Floating IP-адрестер, дискілер, {ifdef(public)}бакеттер, {/ifdef}жүктеме балансирлеушілер және басқалары.
+
+   Мұндай нысандардың толық тізімі — сонымен қатар **Баланс және төлемдер** бетінде.
+
+   Виртуалды машиналардың жүктеме дискілерін бөлек жоюға болмайтындықтан, виртуалды машиналарды {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
+
+   Ресурстарды тұтынмайтын нысандарды — мысалы, желілер мен подсеттерді — жобада қалдыруға болады.
 
 {ifdef(public)}
-Жоба үшін кеңейтілген квоталар тізімін OpenStack CLI арқылы алуға болады. Барлық квоталар және оларды ұлғайту мүмкіндіктері туралы ақпарат [Квоталар және лимиттер](../../../concepts/quotasandlimits) бөлімінде берілген.
+{/tab}
+{/tabs} 
 {/ifdef}
+
+Сақталған деректерді жүктеп, инфрақұрылымды қалпына келтіру арқылы жобаны кез келген уақыт өткен соң қайта іске қоса аласыз.
+
+## {heading(Жоба квоталарын көру)[id=project-view-quotas]}
+
+{ifdef(public)}
+{tabs}
+
+{tab(Жеке кабинет)}
+{/ifdef}
+
+Ең жиі пайдаланылатын ресурстарға квоталар {ifdef(public)}[жеке кабинеттің](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=жеке кабинетінің]}{/ifndef} басты бетінде көрсетіледі.
+
+Квоталардың толығырақ тізімін көріп, тізімдегі әр квота туралы толық ақпарат алу үшін:
+
+{ifdef(public)}
+1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+{/ifdef}
+
+{include(../../../../../_includes/_project_quotas.md)[tags=manage]}
+
+{ifdef(public)}
+Жоба үшін квоталардың кеңейтілген тізімін OpenStack CLI арқылы алуға болады. Барлық квоталар және оларды арттыру мүмкіндіктері туралы ақпарат {linkto(../../../concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталар және лимиттер]} бөлімінде.
 
 {/tab}
 
-{ifdef(public)}
 {tab(OpenStack CLI)}
 
-Жоба үшін кеңейтілген квоталар тізімін алу үшін:
+Жоба үшін квоталардың кеңейтілген тізімін алу үшін:
 
-1. OpenStack клиенті [орнатылғанына](/kz/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack) көз жеткізіңіз және жоба ішінде [аутентификациядан өтіңіз](/kz/tools-for-using-services/cli/openstack-cli#openstack-authorize).
-1. Консольде келесі команданы енгізіңіз:
+1. OpenStack клиенті {linkto(../../../../cli/openstack-cli#openstack-install)[text=орнатылғанын]} тексеріп, жобада {linkto(../../../../cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
+1. Консольге команданы енгізіңіз:
 
-    ```console
-    openstack quota show
-    ```
+   ```console
+   openstack quota show
+   ```
 
-    {cut(Москва аймағына арналған команда шығысының мысалы)}
+   {cut(Мәскеу регионы үшін команданың шығару мысалы)}
 
-    ```console
-    +----------------------------+--------------------------------------------------+
-    | Field                      | Value                                            |
-    +----------------------------+--------------------------------------------------+
-    | backup-gigabytes           | -1                                               |
-    | backups                    | 400                                              |
-    | cores                      | 9                                                |
-    | fixed-ips                  | -1                                               |
-    | floating-ips               | 6                                                |
-    | gigabytes                  | 200                                              |
-    | gigabytes_ceph             | -1                                               |
-    | gigabytes_ceph-hdd         | -1                                               |
-    | gigabytes_ceph-ssd         | -1                                               |
-    | gigabytes_dev-ceph         | -1                                               |
-    | gigabytes_dp1              | -1                                               |
-    | gigabytes_dp1-high-iops    | 200                                              |
-    | gigabytes_dp1-local-ssd    | -1                                               |
-    | gigabytes_dp1-ssd          | -1                                               |
-    | gigabytes_ef-nvme          | -1                                               |
-    | gigabytes_high-iops        | 200                                              |
-    | gigabytes_ko1-high-iops    | 200                                              |
-    | gigabytes_ko1-local-ssd    | -1                                               |
-    | gigabytes_ko1-local-ssd-g2 | -1                                               |
-    | gigabytes_ko1-ssd          | -1                                               |
-    | gigabytes_local-ssd        | -1                                               |
-    | gigabytes_manila           | -1                                               |
-    | gigabytes_ms1              | -1                                               |
-    | gigabytes_octavia-hdd      | -1                                               |
-    | gigabytes_octavia-ssd      | -1                                               |
-    | gigabytes_perf-test        | -1                                               |
-    | gigabytes_ssd              | -1                                               |
-    | health_monitors            | -1                                               |
-    | injected-file-size         | 10240                                            |
-    | injected-files             | 5                                                |
-    | injected-path-size         | 255                                              |
-    | instances                  | 6                                                |
-    | key-pairs                  | 100                                              |
-    | l7_policies                | -1                                               |
-    | listeners                  | -1                                               |
-    | load_balancers             | 12                                               |
-    | location                   | ...                                              |
-    | networks                   | 10                                               |
-    | per-volume-gigabytes       | -1                                               |
-    | pools                      | 30                                               |
-    | ports                      | 120                                              |
-    | project                    | b5b7ffd4ef0547e5b222f44555dfXXXX                 |
-    | project_name               | mcsXXXXXXXXXX                                    |
-    | properties                 | 128                                              |
-    | ram                        | 10240                                            |
-    | rbac_policies              | 10                                               |
-    | routers                    | 12                                               |
-    | secgroup-rules             | 200                                              |
-    | secgroups                  | 12                                               |
-    | server-group-members       | 100                                              |
-    | server-groups              | 50                                               |
-    | snapshots                  | 200                                              |
-    | snapshots_ceph             | -1                                               |
-    | snapshots_ceph-hdd         | -1                                               |
-    | snapshots_ceph-ssd         | -1                                               |
-    | snapshots_dev-ceph         | -1                                               |
-    | snapshots_dp1              | -1                                               |
-    | snapshots_dp1-high-iops    | -1                                               |
-    | snapshots_dp1-local-ssd    | -1                                               |
-    | snapshots_dp1-ssd          | -1                                               |
-    | snapshots_ef-nvme          | -1                                               |
-    | snapshots_high-iops        | -1                                               |
-    | snapshots_ko1-high-iops    | -1                                               |
-    | snapshots_ko1-local-ssd    | -1                                               |
-    | snapshots_ko1-local-ssd-g2 | -1                                               |
-    | snapshots_ko1-ssd          | -1                                               |
-    | snapshots_local-ssd        | -1                                               |
-    | snapshots_manila           | -1                                               |
-    | snapshots_ms1              | -1                                               |
-    | snapshots_octavia-hdd      | -1                                               |
-    | snapshots_octavia-ssd      | -1                                               |
-    | snapshots_perf-test        | -1                                               |
-    | snapshots_ssd              | -1                                               |
-    | subnet_pools               | -1                                               |
-    | subnets                    | 10                                               |
-    | volumes                    | 10                                               |
-    | volumes_ceph               | -1                                               |
-    | volumes_ceph-hdd           | -1                                               |
-    | volumes_ceph-ssd           | -1                                               |
-    | volumes_dev-ceph           | -1                                               |
-    | volumes_dp1                | -1                                               |
-    | volumes_dp1-high-iops      | 10                                               |
-    | volumes_dp1-local-ssd      | -1                                               |
-    | volumes_dp1-ssd            | -1                                               |
-    | volumes_ef-nvme            | -1                                               |
-    | volumes_high-iops          | 10                                               |
-    | volumes_ko1-high-iops      | 10                                               |
-    | volumes_ko1-local-ssd      | -1                                               |
-    | volumes_ko1-local-ssd-g2   | -1                                               |
-    | volumes_ko1-ssd            | -1                                               |
-    | volumes_local-ssd          | -1                                               |
-    | volumes_manila             | -1                                               |
-    | volumes_ms1                | -1                                               |
-    | volumes_octavia-hdd        | -1                                               |
-    | volumes_octavia-ssd        | -1                                               |
-    | volumes_perf-test          | -1                                               |
-    | volumes_ssd                | -1                                               |
-    +----------------------------+--------------------------------------------------+
-    ```
-    {/cut}
+   ```console
+   +----------------------------+--------------------------------------------------+
+   | Field                      | Value                                            |
+   +----------------------------+--------------------------------------------------+
+   | backup-gigabytes           | -1                                               |
+   | backups                    | 400                                              |
+   | cores                      | 9                                                |
+   | fixed-ips                  | -1                                               |
+   | floating-ips               | 6                                                |
+   | gigabytes                  | 200                                              |
+   | gigabytes_ceph             | -1                                               |
+   | gigabytes_ceph-hdd         | -1                                               |
+   | gigabytes_ceph-ssd         | -1                                               |
+   | gigabytes_dev-ceph         | -1                                               |
+   | gigabytes_dp1              | -1                                               |
+   | gigabytes_dp1-high-iops    | 200                                              |
+   | gigabytes_dp1-local-ssd    | -1                                               |
+   | gigabytes_dp1-ssd          | -1                                               |
+   | gigabytes_ef-nvme          | -1                                               |
+   | gigabytes_high-iops        | 200                                              |
+   | gigabytes_ko1-high-iops    | 200                                              |
+   | gigabytes_ko1-local-ssd    | -1                                               |
+   | gigabytes_ko1-local-ssd-g2 | -1                                               |
+   | gigabytes_ko1-ssd          | -1                                               |
+   | gigabytes_local-ssd        | -1                                               |
+   | gigabytes_manila           | -1                                               |
+   | gigabytes_ms1              | -1                                               |
+   | gigabytes_octavia-hdd      | -1                                               |
+   | gigabytes_octavia-ssd      | -1                                               |
+   | gigabytes_perf-test        | -1                                               |
+   | gigabytes_ssd              | -1                                               |
+   | health_monitors            | -1                                               |
+   | injected-file-size         | 10240                                            |
+   | injected-files             | 5                                                |
+   | injected-path-size         | 255                                              |
+   | instances                  | 6                                                |
+   | key-pairs                  | 100                                              |
+   | l7_policies                | -1                                               |
+   | listeners                  | -1                                               |
+   | load_balancers             | 12                                               |
+   | location                   | ...                                              |
+   | networks                   | 10                                               |
+   | per-volume-gigabytes       | -1                                               |
+   | pools                      | 30                                               |
+   | ports                      | 120                                              |
+   | project                    | b5b7ffd4ef0547e5b222f44555dfXXXX                 |
+   | project_name               | mcsXXXXXXXXXX                                    |
+   | properties                 | 128                                              |
+   | ram                        | 10240                                            |
+   | rbac_policies              | 10                                               |
+   | routers                    | 12                                               |
+   | secgroup-rules             | 200                                              |
+   | secgroups                  | 12                                               |
+   | server-group-members       | 100                                              |
+   | server-groups              | 50                                               |
+   | snapshots                  | 200                                              |
+   | snapshots_ceph             | -1                                               |
+   | snapshots_ceph-hdd         | -1                                               |
+   | snapshots_ceph-ssd         | -1                                               |
+   | snapshots_dev-ceph         | -1                                               |
+   | snapshots_dp1              | -1                                               |
+   | snapshots_dp1-high-iops    | -1                                               |
+   | snapshots_dp1-local-ssd    | -1                                               |
+   | snapshots_dp1-ssd          | -1                                               |
+   | snapshots_ef-nvme          | -1                                               |
+   | snapshots_high-iops        | -1                                               |
+   | snapshots_ko1-high-iops    | -1                                               |
+   | snapshots_ko1-local-ssd    | -1                                               |
+   | snapshots_ko1-local-ssd-g2 | -1                                               |
+   | snapshots_ko1-ssd          | -1                                               |
+   | snapshots_local-ssd        | -1                                               |
+   | snapshots_manila           | -1                                               |
+   | snapshots_ms1              | -1                                               |
+   | snapshots_octavia-hdd      | -1                                               |
+   | snapshots_octavia-ssd      | -1                                               |
+   | snapshots_perf-test        | -1                                               |
+   | snapshots_ssd              | -1                                               |
+   | subnet_pools               | -1                                               |
+   | subnets                    | 10                                               |
+   | volumes                    | 10                                               |
+   | volumes_ceph               | -1                                               |
+   | volumes_ceph-hdd           | -1                                               |
+   | volumes_ceph-ssd           | -1                                               |
+   | volumes_dev-ceph           | -1                                               |
+   | volumes_dp1                | -1                                               |
+   | volumes_dp1-high-iops      | 10                                               |
+   | volumes_dp1-local-ssd      | -1                                               |
+   | volumes_dp1-ssd            | -1                                               |
+   | volumes_ef-nvme            | -1                                               |
+   | volumes_high-iops          | 10                                               |
+   | volumes_ko1-high-iops      | 10                                               |
+   | volumes_ko1-local-ssd      | -1                                               |
+   | volumes_ko1-local-ssd-g2   | -1                                               |
+   | volumes_ko1-ssd            | -1                                               |
+   | volumes_local-ssd          | -1                                               |
+   | volumes_manila             | -1                                               |
+   | volumes_ms1                | -1                                               |
+   | volumes_octavia-hdd        | -1                                               |
+   | volumes_octavia-ssd        | -1                                               |
+   | volumes_perf-test          | -1                                               |
+   | volumes_ssd                | -1                                               |
+   +----------------------------+--------------------------------------------------+
+   ```
+   {/cut}
 
-    `-1` квота мәні «шектелмеген» дегенді білдіреді. Тізімдегі квоталар қандай ресурстарға сәйкес келетінін [Квоталар және лимиттер](../../../concepts/quotasandlimits) бөлімінен оқыңыз.{/ifdef}
+   Квота үшін `-1` мәні «шектеусіз» дегенді білдіреді. Тізімдегі квоталар қандай ресурстарға сәйкес келетіні туралы {linkto(../../../concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталар және лимиттер]} бөлімінен оқыңыз.
 
-    Сіз квоталарды `nova` және `cinder` компоненттері үшін бөлек шығара аласыз:
+   `nova` және `cinder` компоненттері үшін квоталарды бөлек шығаруға болады:
 
-    {tabs}
+   {tabs}
 
-    {tab(nova)}
+   {tab(nova)}
 
-    ```console
-    nova quota-show
-    ```
+   ```console
+   nova quota-show
+   ```
 
-    {/tab}
+   {/tab}
 
-    {tab(cinder)}
+   {tab(cinder)}
 
-    ```console
-    cinder quota-show <project_id>
-    ```
+   ```console
+   cinder quota-show <project_id>
+   ```
 
-    {/tab}
+   {/tab}
 
-    {/tabs}
+   {/tabs}
 
-    OpenStack-тің басқа компоненттері бойынша квоталарды көру үшін сәйкес OpenStack клиент пакеттерін (`manila`, `neutron` және басқалары) [орнатыңыз](/kz/tools-for-using-services/cli/openstack-cli#openstack-install-package) және пакетке тән команданы пайдаланыңыз. Команда синтаксисін білу үшін тиісті пакетті орнатып, `<component> help quota-show` командасын орындаңыз, мысалы, `manila help quota-show`.
+   OpenStack-тің басқа компоненттері бойынша квоталарды көру үшін OpenStack клиентінің сәйкес пакеттерін (`manila`, `neutron` және т.б.) {linkto(../../../../cli/openstack-cli#openstack-install-package)[text=орнатыңыз]} және пакетке тән команданы пайдаланыңыз. Команда синтаксисін білу үшін сәйкес пакетті орнатыңыз да, `<component> help quota-show` командасын орындаңыз, мысалы, `manila help quota-show`.
 
 {/tab}
-{/ifdef}
 
 {/tabs}
+{/ifdef}
 
 {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
 {note:info}
@@ -324,55 +339,81 @@
 {/ifdef}
 
 {ifdef(public)}
-## {heading(Жоба квоталарын ұлғайту)[id=project-increase-quota]}
 
-Квоталарды ұлғайту жоба иесінің [рөлі](/kz/access/iam/concepts/rolesandpermissions) бар пайдаланушы атынан арнайы форма арқылы орындалады:
+## {heading(Жоба квоталарын арттыру)[id=project-increase-quota]}
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
-1. Жеке кабинеттің жоғарғы бөлігінде жоба атауын басып, **Квоталарды басқару** тармағын таңдаңыз.
-1. **Квоталар қосу** батырмасын басыңыз. Квоталарды ұлғайтуға арналған форма ашылады.
-1. Егер жоба үшін квоталарды автоматты түрде ұлғайтуға рұқсат берілсе, сұрау түрін таңдау қолжетімді болады. Соның бірін таңдаңыз:
+Квоталарды арттыру жоба иесінің {linkto(../../../../../access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=рөліне]} ие пайдаланушы атынан арнайы форма арқылы орындалады:
 
-    - **Квоталарды автоматты түрде ұлғайту** — квоталар техникалық қолдауға сұрау жібермей-ақ автоматты түрде кеңейтіледі. Әр квотаның мәнін ағымдағы мәннің 30%-ынан артық емес мөлшерде ұлғайтуға болады.
+{tabs}
 
-        {cut(Квоталарды автоматты түрде ұлғайту шарттары)}
+{tab(Жеке кабинет)}
 
-        {include(/kz/_includes/_quotas.md)[tags=autoquota-conditions]}
+1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+1. Жеке кабинеттің жоғарғы жағындағы жоба атауын басып, **Квоталарды басқару** тармағын таңдаңыз.
+1. **Квоталар қосу** түймесін басыңыз. Квоталарды арттыру формасы ашылады.
+1. Егер жоба үшін жедел немесе автоматты квота арттыруға рұқсат етілген болса, сұраныс түрін таңдау мүмкін болады. Олардың бірін таңдаңыз:
 
-        {/cut}
+   - **Квоталарды жедел арттыру** — менеджермен келіспей, бір басу арқылы квоталарды арттыру.
 
-    - **Қосымша ресурстар** — сұрау техникалық қолдауға жіберіледі. Егер квоталарды автоматты түрде ұлғайту жеткіліксіз болса, осыны пайдаланыңыз.
+     {cut(Квоталарды жедел арттыру шарттары)}
 
-    Егер сұрау түрін таңдау болмаса, квоталарды ұлғайтуға арналған сұрау техникалық қолдауға жіберіледі.
+     {include(/kz/_includes/_quotas.md)[tags=fastquota-conditions]}
 
-1. Квоталарын ұлғайту қажет ресурсты таңдаңыз. Бірнеше ресурс түрі үшін квоталарды ұлғайту керек болса, **Тағы қосу** батырмасын басыңыз.
+     {/cut}
 
-    Квоталарды ұлғайтуға арналған сұраудан ресурсты жою үшін ![delete-icon](/kz/assets/delete-icon.svg "inline") белгішесін басыңыз.
+   - **Квоталарды автоматты арттыру** — квоталар менеджермен келіспей автоматты түрде кеңейтіледі. Әр квотаның мәнін ағымдағы мәннен небәрі 30%-ға дейін арттыруға болады.
 
-1. Таңдауды қолжетімді тәсілдердің бірімен растаңыз:
+     {cut(Квоталарды автоматты арттыру шарттары)}
 
-    - **Жіберу** батырмасын басыңыз. Техникалық қолдауға сұрау қалыптасады. Өтініш мәртебесін [техникалық қолдау порталында](/kz/contacts) **Менің өтінімдерім** бөлімінде қадағалауға болады.
+     {include(/kz/_includes/_quotas.md)[tags=autoquota-conditions]}
 
-    - **Ұлғайту** батырмасын басыңыз. Квоталар автоматты түрде ұлғайтылады. Тек квоталарды автоматты түрде ұлғайту рұқсат етілген жобалар үшін қолжетімді.
+     {/cut}
+
+   - **Қосымша ресурстар** — сұраныс менеджермен келісіледі. Автоматты квота арттыру жеткіліксіз болса пайдаланыңыз.
+
+   Егер сұраныс түрін таңдау болмаса, квоталарды арттыру сұранысы менеджермен келісіледі.
+
+1. Квоталарды арттыру қажет ресурс таңдаңыз. Бірнеше ресурс түріне квоталарды арттыру үшін **Тағы қосу** түймесін басыңыз.
+
+   Квоталарды арттыру сұранысынан ресурс жою үшін ![delete-icon](../../../../../assets/delete-icon.svg "inline") белгішесін басыңыз.
+
+1. Қолжетімді тәсілдердің бірімен таңдауды растаңыз:
+
+   - **Жіберу** түймесін басыңыз. Менеджерге сұраныс құрылады.
+   - **Арттыру** түймесін басыңыз. Квоталар автоматты түрде арттырылады. Тек жедел немесе автоматты квота арттыруға рұқсат етілген жобалар үшін қолжетімді.
+
+{/tab}
+
+{/tabs}
 
 {note:info}
-
-GeekBrains бағдарламасының қатысушылары үшін квоталарды ұлғайту туралы ақпарат [Сұрақтар мен жауаптарда](../../../faq) берілген.
-
+GeekBrains бағдарламасының қатысушылары үшін квоталарды арттыру туралы ақпарат {linkto(../../../faq#tools-account-faq)[text=Сұрақтар мен жауаптарда]} берілген.
 {/note}
 
-## {heading(Жобаның SDN-ын қарау)[id=project-sdn-view]}
+## {heading(Жоба қызметтерінің бағаларын көру)[id=project-prices-view]}
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
-1. Жоба баптауларын мына тәсілдердің бірімен ашыңыз:
+{include(/kz/_includes/_project_prices.md)[tags=prices]}
 
-    - Жеке кабинеттің жоғарғы бөлігінде жоба атауын басыңыз. Қажетті жоба үшін ![more-icon](/kz/assets/more-icon.svg "inline") белгішесін басып, **Жоба баптаулары** тармағын таңдаңыз.
+## {heading(Жобаның SDN көрінісі)[id=project-sdn-view]}
 
-    - Жеке кабинеттің жоғарғы бөлігінде пайдаланушының атын басып, **Жоба баптаулары** тармағын таңдаңыз.
+{tabs}
 
-1. **Виртуалды желілер** қойындысына өтіңіз.
+{tab(Жеке кабинет)}
 
-Қойындыда әдепкі SDN және егер қосылған болса, жобаның қосымша [SDN](/kz/networks/vnet/concepts/sdn) желісі көрсетіледі. Егер жоба ішінде тек SDN Neutron пайдаланылса, SDN Sprut қосу үшін [техникалық қолдауға](/kz/contacts) жүгініңіз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. Жоба параметрлерін келесі тәсілдердің бірімен ашыңыз:
+
+   - Жеке кабинеттің жоғарғы жағындағы жоба атауын басыңыз. Қажетті жоба үшін ![more-icon](../../../../../assets/more-icon.svg "inline") басып, **Жоба параметрлері** тармағын таңдаңыз.
+   - Жеке кабинеттің жоғарғы жағындағы пайдаланушы атауын басып, **Жоба параметрлері** тармағын таңдаңыз.
+
+1. **Виртуалды желілер** қойыншасына өтіңіз.
+
+Қойыншада әдепкі SDN және қосылған болса, жобаның қосымша {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn)[text=SDN]} көрсетіледі. Жобада тек SDN Neutron қолданылса, SDN Sprut қосу үшін [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініңіз.
+
+{/tab}
+
+{/tabs}
+
 {/ifdef}
 
 ## {heading(Жобаны жою)[id=project-delete]}
@@ -382,22 +423,32 @@ GeekBrains бағдарламасының қатысушылары үшін кв
 
 Жобаны жою үшін:
 
-1. Жобадан барлық қажетті деректерді тасымалдағаныңызға көз жеткізіңіз.
-1. Жоба иесінің атынан [техникалық қолдауға](/kz/contacts) жүгініп, мыналарды көрсетіңіз:
+{tabs}
 
-   - жоба [идентификаторы](#project-pid-view) (PID);
-   - жойылатын жобаның [аймағы](../../../concepts/regions).
-1. (Заңды тұлғалар үшін) Қай кезеңге [есептік құжаттар](/kz/intro/billing/concepts/report#billing-report-legal-entities) қажет екенін көрсетіңіз.
+{tab(Жеке кабинет)}
 
-    Жоюды растау үшін сізбен байланысады.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. Жобадан барлық қажетті деректерді ауыстырғаныңызға көз жеткізіңіз.
+1. Жоба иесі атынан [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініп, көрсетіңіз:
+
+   - {linkto(#project-pid-view)[text=идентификатор]} (PID);
+   - жойылатын жобаның {linkto(../../../concepts/regions#tools-account-concepts-regions)[text=өңірі]}.
+1. (Заңды тұлғалар үшін) Қандай кезеңге {linkto(../../../../../intro/billing/concepts/report#billing-report-legal-entities)[text=есептік құжаттар]} қажет екенін көрсетіңіз.
+
+    Жоюды растау үшін сізбен байланысқа шығады.
+
+{/tab}
+
+{/tabs}
+
 {/ifdef}
 
-{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
-1. Байланған автоматты төлем тәсілдері жоқ екеніне көз жеткізіңіз.
-1. Жобадан барлық қажетті деректер экспортталғанын тексеріңіз.
-1. Жоба иесінің атынан {var(cloud)} әкімшісіне жобаны жою туралы өтінішпен жүгініңіз.
-{/ifdef}
+{ifndef(public)}
+1. Байланған автоматты төлем тәсілдерінің жоқтығына көз жеткізіңіз.
+1. Барлық қажетті деректер жобадан экспортталғанын тексеріңіз.
+1. Жобаны жою туралы өтінішпен жоба иесі атынан {var(cloud)} әкімшісіне жүгініңіз.
+{/ifndef}
 
 {note:err}
-Расталғаннан кейін жоба мен оның деректері қалпына келтіру мүмкіндігінсіз жойылады.
+Расталғаннан кейін жоба және оның деректері қалпына келтіру мүмкіндігі жоқ күйде жойылады.
 {/note}

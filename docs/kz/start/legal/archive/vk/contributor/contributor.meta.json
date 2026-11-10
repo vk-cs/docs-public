@@ -1,0 +1,16 @@
+{
+  "title": "Контрибьютормен лицензиялық келісім",
+  "shortDescription": "",
+  "metaDescription": "«VK Cloud» платформасының Контрибьюторымен лицензиялық келісім",
+  "sectionTitle": "Контрибьютормен лицензиялық келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 13,
+  "uuid": "9b8ba2c4-04ad-4935-97c8-e8c9ed14ee56",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

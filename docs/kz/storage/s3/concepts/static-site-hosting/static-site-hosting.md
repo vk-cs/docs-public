@@ -1,23 +1,23 @@
 # {heading(Статикалық сайттарды хостингтеу)[id=s3-concepts-static-site-hosting]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-*Статикалық сайттарды хостингтеу* (static site hosting) — {linkto(../about#s3-concepts-about-bucket)[text={var(s3)} бакеті]} үшін статикалық контентке қолжетімділік мүмкіндіктерін кеңейтетін қосымша опция. Бұл опциясыз {linkto(../about#s3-concepts-about-object)[text=объектінің]} мазмұнын алу үшін оның {linkto(../about#s3-concepts-about-object-key)[text=кілтiне]} сәйкес келетін URL қолданылады. Статикалық сайттарды хостингтеу статикалық контентті қайта бағыттау ережелерімен біріктіруге, сондай-ақ индекс бетін (мысалы, `index.html`) және сұрау қателері кезінде қайтарылатын қате бетін (мысалы, `404`) орнатуға мүмкіндік береді.
+*Статикалық сайттарды хостингтеу* (static site hosting) — {var(s3)} {linkto(../about#s3-concepts-about-bucket)[text=бакетінің]} статикалық контентке қолжетімділік мүмкіндіктерін кеңейтетін қосымша опция. Бұл опция болмаған жағдайда {linkto(../about#s3-concepts-about-object)[text=объектінің]} мазмұнын алу үшін оның {linkto(../about#s3-concepts-about-object-key)[text=кілтіне]} сәйкес URL қолданылады. Статикалық сайттарды хостингтеу статикалық контентті бағыттау ережелерімен үйлестіруге, сондай-ақ индекстік бетті (мысалы, `index.html`) және сұрау қатесі кезінде қайтарылатын қате бетін (мысалы, `404`) көрсетуге мүмкіндік береді.
 
 Қолдану мысалдары:
 
 - визитка-сайт,
 - жеке блог,
 - лендингтер,
-- сұрауларды қайта бағыттау,
+- сұрауларды бағыттау,
 - құжаттама.
 
-{var(s3)} негізіндегі статикалық сайт мыналардан тұруы мүмкін:
+{var(s3)} негізіндегі статикалық сайт келесіден тұруы мүмкін:
 
-- статикалық контент: HTML, CSS, медиафайлдар (суреттер, аудио, видео), құжаттар (PDF, TXT) және браузерде қарауға қолжетімді басқа форматтар.
-- серверлік өңдеуді қажет етпейтін JavaScript сценарий (скрипт) файлдары: ашылмалы мәзірлер, табтар, аккордеондар және т.б.
+- статикалық контенттен: HTML, CSS, медиа файлдары (суреттер, аудио, видео), құжаттар (PDF, TXT) және браузерде көруге қолжетімді басқа да форматтар.
+- серверлік өңдеуді қажет етпейтін JavaScript сценарий (скрипт) файлдарынан: ашылатын мәзірлер, табтар, аккордеондар т.б.
 
-Конфигурация {linkto(../../instructions/manage-static-site#s3-instructions-manage-static-site-setup)[text=орнатылғаннан]} кейін статикалық сайт мына мекенжай бойынша қолжетімді болады:
+{linkto(../../instructions/manage-static-site#s3-instructions-manage-static-site-setup)[text=Орнатудан]} кейін статикалық сайт мына мекенжай бойынша қолжетімді:
 
 ```text
 https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
@@ -27,7 +27,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 {note:info}
 
-Сілтеме форматы өзгеше болуы мүмкін. Нақтылау үшін әкімшіге жүгініңіз.
+Сілтеме форматы өзгеше болуы мүмкін. Нақтылау үшін әкімшіге хабарласыңыз.
 
 {/note}
 
@@ -37,15 +37,15 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 - `<ИМЯ_БАКЕТА>` — статикалық сайт конфигурациясы орнатылған бакеттің атауы;
 {ifdef(public)}
-- `<ENDPOINT_HOSTNAME>` — {var(s3)} сервисінің хост атауы, аккаунттың [өңіріне](/kz/tools-for-using-services/account/concepts/regions) сәйкес келуі тиіс:
+- `<ENDPOINT_HOSTNAME>` — {var(s3)} қызметінің хост атауы, аккаунттің [аймағына](/kz/tools-for-using-services/account/concepts/regions) сәйкес болуы тиіс:
 
-  - `hb.vkcloud-storage.ru` немесе `hb.ru-msk.vkcloud-storage.ru` — Мәскеу өңірінің домені;
-  - `hb.kz-ast.vkcloud-storage.ru` — Қазақстан өңірінің домені.
+  - `hb.vkcloud-storage.ru` немесе `hb.ru-msk.vkcloud-storage.ru` — Мәскеу аймағының домені;
+  - `hb.kz-ast.vkcloud-storage.ru` — Қазақстан аймағының домені.
   {/ifdef}
   {ifdef(s3,s3-pdf)}
-- `<ENDPOINT_HOSTNAME>` — {var(s3)} инсталляцияңызда қолданылатын хост атауы.
+- `<ENDPOINT_HOSTNAME>` — сіздің {var(s3)} инсталляциясыңызда қолданылатын хост атауы.
   {/ifdef}
-- `<PREFIX>` — индекс беті объектісі кілтінің префиксі. Бос болуы мүмкін.
+- `<PREFIX>` — индекстік бет объектісінің кілт префиксі. Бос болуы мүмкін.
 
 ## {heading(Статикалық сайттың JSON-конфигурациясы)[id=s3-concepts-static-site-hosting-config]}
 
@@ -84,23 +84,23 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 }
 ```
 
-### {heading(Индекс беті конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-indexdocument]}
+### {heading(Индексік бет конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-indexdocument]}
 
-`IndexDocument` — индекс бетін орнататын конфигурация элементі.
+`IndexDocument` — индекстік бетті анықтайтын конфигурация элементі.
 
 {ifdef(public)}
-`IndexDocument` элементінің басқа конфигурация элементтерімен үйлесімділігі:
+`IndexDocument` конфигурацияның басқа элементтерімен үйлесімділігі:
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — IndexDocument элементінің басқа конфигурация элементтерімен үйлесімділігі)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость IndexDocument с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 
 [cols="2,1,3", options="header"]
 |===
 |Конфигурация элементі
 |Үйлесімділік
-|Функционалдылық
+|Функционалдық
 
 |`ErrorDocument`
 |![](../../assets/check.svg "inline")
@@ -108,11 +108,11 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 |`RoutingRules`
 |![](../../assets/check.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Қайта бағыттау ережелері]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Бағыттау ережелері]}
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз қайта бағыттау]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз бағыттау]}
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
@@ -123,73 +123,73 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — IndexDocument параметрлері)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры IndexDocument)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="1,5", options="header"]
 |===
 |Атауы
-|Сипаттама
+|Сипаттамасы
 
 2+|`IndexDocument` — `object` форматындағы элемент
 
 |`Suffix`
-|Индекс беті объектісі үшін суффикс (атау).
+|Индексік бет объектісінің суффиксі (атауы).
 
-Форматы: `string`.
+Формат: `string`.
 
-Сайт бетін ашқанда көрсетілген мәні бар объектінің мазмұны жүктеледі.
+Сайт беті ашылғанда көрсетілген мәні бар объектінің мазмұны жүктеледі.
 
-`/` таңбасын қамтымауы тиіс.
+Ішінде `/` таңбасы болмауы тиіс.
 
-Толық жолы: `IndexDocument` → `Suffix`
+Толық жол: `IndexDocument` → `Suffix`
 
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
 {/ifdef}
 
-{cut(Индекс беті сұраулары қалай өңделеді)}
+{cut(Индексік бет сұраулары қалай өңделеді)}
 
-Мысалы, сіздің индекс бетіңіз — `index.html` атауы бар объект{ifdef(s3,s3-pdf)}, ал инсталляцияңыздың URL-і `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>` форматында{/ifdef}. Сұралған URL құрылымына байланысты {var(s3)} сұрауды әртүрлі өңдейді.
+Мысалы, сіздің индекстік бетіңіз — `index.html` атаулы объект{ifdef(s3,s3-pdf)}, ал сіздің инсталляцияңыздың URL форматы `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>` түрінде{/ifdef}. Сұралған URL құрылымына қарай {var(s3)} сұрауды әртүрлі өңдейді.
 
-- Басты бетке жүгінгенде, мысалы `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>` немесе `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/`, `index.html` кілті бар объектінің мазмұны жүктеледі.
-- Егер URL-дегі жол `/` таңбасымен аяқталса, `<СУФФИКС>index.html` кілті бар объектінің мазмұны жүктеледі. Мысалы, `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/images/photos/` мекенжайына жүгінгенде `<СУФФИКС>` мәні `images/photos/` болады. Нәтижесінде `images/photos/index.html` кілті бар объектінің мазмұны жүктеледі.
-- Егер URL-дегі жол `/` таңбасымен аяқталмаса, алдымен сілтеме нақты бір объектіге сұрау ретінде интерпретацияланады және {var(s3)} оның мазмұнын қайтаруға тырысады. Егер мұндай объект болмаса, соңында `/` бар жолға қайта бағыттау орындалады. Мысалы, `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing` мекенжайына жүгінгенде алдымен `docs/billing` объектісінің мазмұны сұралады. Егер мұндай объект болмаса, сұрау `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing/` мекенжайына қайта бағытталады.
-- Егер индекс бетін табу мүмкін болмаса немесе оған қолжетімділік болмаса, сәйкесінше `404` және `403` HTTP қате кодтары қайтарылады.
+- Басты бетке өту кезінде, мысалы `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>` немесе `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/`, `index.html` кілті бар объектінің мазмұны жүктеледі.
+- URL-дегі жол `/` таңбасымен аяқталса, `<СУФФИКС>index.html` кілті бар объектінің мазмұны жүктеледі. Мысалы, `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/images/photos/` мекенжайына өту кезінде `<СУФФИКС>` мәні `images/photos/` болады. Нәтижесінде `images/photos/index.html` кілті бар объектінің мазмұны жүктеледі.
+- URL-дегі жол `/` таңбасымен аяқталмаса, алдымен сілтеме нақты бір объектіге жасалған сұрау ретінде түсіндіріледі және {var(s3)} оның мазмұнын қайтаруға тырысады. Мұндай объект болмаса, соңында `/` бар жолға бағыттау орындалады. Мысалы, `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing` мекенжайына өту кезінде алдымен `docs/billing` объектісінің мазмұны сұралады. Мұндай объект болмаса, сұрау `https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/docs/billing/` мекенжайына бағытталады.
+- Индекстік бет табылмаса немесе оған қолжетімдік болмаса, сәйкесінше `404` және `403` HTTP қате кодтары қайтарылады.
 
 {/cut}
 
 ### {heading(Қате беті конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-errordocument]}
 
-`ErrorDocument` — қате бетін орнататын конфигурация элементі. {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индекс бетін]} орнататын `IndexDocument` конфигурация элементімен бірге қолданылады.
+`ErrorDocument` — қате бетін анықтайтын конфигурация элементі. {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бетті]} анықтайтын `IndexDocument` конфигурация элементімен бірге қолданылады.
 
-Мысалы, жоқ бетті ашқанда `404` қатесі пайда болады. Жоқ беттің орнына көрсетілген объектінің мазмұны жүктеледі, мысалы `errordoc/file.html`.
+Мысалы, жоқ бет ашылғанда `404` қатесі пайда болады. Жоқ беттің орнына көрсетілген объектінің мазмұны, мысалы `errordoc/file.html`, жүктеледі.
 
 {ifdef(public)}
-`ErrorDocument` элементінің басқа конфигурация элементтерімен үйлесімділігі:
+`ErrorDocument` конфигурацияның басқа элементтерімен үйлесімділігі:
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — ErrorDocument элементінің басқа конфигурация элементтерімен үйлесімділігі)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость ErrorDocument с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Конфигурация элементі
 |Үйлесімділік
-|Функционалдылық
+|Функционалдық
 
 |`IndexDocument`
 (міндетті)
 |![](../../assets/check.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]}
 
 |`RoutingRules`
 |![](../../assets/check.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Қайта бағыттау ережелері]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Бағыттау ережелері]}
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз қайта бағыттау]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз бағыттау]}
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
@@ -200,54 +200,54 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — ErrorDocument параметрлері)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры ErrorDocument)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="1,5", options="header"]
 |===
 |Атауы
-|Сипаттама
+|Сипаттамасы
 
 2+|`ErrorDocument` — `object` форматындағы элемент.
 
 |`Key`
-|Қате беті объектісінің толық кілті.
+|Қате бар бет объектісінің толық кілті.
 
-Форматы: `string`.
+Формат: `string`.
 
-`RoutingRules` ішінде {linkto(#s3-concepts-static-site-hosting-routingrules)[text=қайта бағыттау ережесі]} жоқ `4XX` HTTP-жауабы кезінде көрсетілген кілті бар объектіден мазмұн жүктеледі. Қайта бағыттау орындалмайды.
+`RoutingRules` ішінде {linkto(#s3-concepts-static-site-hosting-routingrules)[text=бағыттау ережесі]} жоқ `4XX` HTTP-жауабы кезінде көрсетілген кілті бар объектіден мазмұн жүктеледі. Бағыттау орындалмайды.
 
-Толық жолы: `ErrorDocument` → `Key`
+Толық жол: `ErrorDocument` → `Key`
 
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
 {/ifdef}
 
-### {heading(Қайта бағыттау ережелері конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-routingrules]}
+### {heading(Бағыттау ережелері конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-routingrules]}
 
-`RoutingRules` — қайта бағыттау ережелерін орнататын конфигурация элементі. {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индекс бетін]} орнататын `IndexDocument` конфигурация элементімен бірге қолданылады.
+`RoutingRules` — бағыттау ережелерін анықтайтын конфигурация элементі. {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бетті]} анықтайтын `IndexDocument` конфигурация элементімен бірге қолданылады.
 
 {note:warn}
-Конфигурацияны құрастырғанда шексіз қайта бағыттау циклін тудыруы мүмкін ережелерден аулақ болыңыз. Мысалы, `RoutingRules[1]` ережесі бойынша қайта бағыттаудан кейінгі жаңа сұрау `RoutingRules[2]` ішіндегі `Condition` шартын қанағаттандырады, ол бастапқы мекенжайға қайта бағыттайды, ал ол өз кезегінде `RoutingRules[1]` ішіндегі `Condition` шартына сәйкес келеді.
+Конфигурацияны құрастырғанда шексіз бағыттау циклін түзуі мүмкін ережелерден аулақ болыңыз. Мысалы, `RoutingRules[1]` ережесі бойынша бағыттаудан кейін жаңа сұрау `RoutingRules[2]` ішіндегі `Condition` шартына сәйкес келеді, ол бастапқы мекенжайға бағыттайды, ал ол `RoutingRules[1]` ішіндегі `Condition` шартына сәйкес келеді.
 {/note}
 
 {ifdef(public)}
-`RoutingRules` элементінің басқа конфигурация элементтерімен үйлесімділігі:
+`RoutingRules` конфигурацияның басқа элементтерімен үйлесімділігі:
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — RoutingRules элементінің басқа конфигурация элементтерімен үйлесімділігі)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость RoutingRules с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Конфигурация элементі
 |Үйлесімділік
-|Функционалдылық
+|Функционалдық
 
 |`IndexDocument`
 (міндетті)
 |![](../../assets/check.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]}
 
 |`ErrorDocument`
 |![](../../assets/check.svg "inline")
@@ -255,7 +255,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 |`RedirectAllRequestsTo`
 |![](../../assets/no.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз қайта бағыттау]}
+|{linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз бағыттау]}
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
@@ -266,142 +266,142 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — RoutingRules параметрлері)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры RoutingRules)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="3,8", options="header"]
 |===
 |Атауы
-|Сипаттама
+|Сипаттамасы
 
-2+|`RoutingRules` — `array` (массив) форматындағы қайта бағыттау ережелері:
-- `RoutingRules[i]` массивінің әр элементі — `object` форматындағы жеке ереже, онда `Condition` шарты және `Redirect` қайта бағыттау параметрлері беріледі.
+2+|`RoutingRules` — `array` (массив) форматындағы бағыттау ережелері:
+- `RoutingRules[i]` массивінің әрбір элементі — `object` форматындағы жеке ереже, онда `Condition` шарты және `Redirect` бағыттау параметрлері анықталады.
 - Ережелер `RoutingRules` массивінде көрсетілген ретпен қолданылады.
-- Ереже іске қосылса, жаңа сұрау қалыптасады, оған да `RoutingRules` ережелері қолданылады
+- Ереже жұмыс істесе, жаңа сұрау қалыптасады, оған да `RoutingRules` ережелері қолданылады
 
 |`Condition`
 |`object` форматындағы ереженің іске қосылу шарттары.
 
-Егер бірде-бір шарт көрсетілмесе, қайта бағыттау барлық сұраулар үшін іске қосылады. 
+Бірде-бір шарт көрсетілмесе, бағыттау барлық сұраулар үшін іске қеседі.
 
-Толық жолы: `RoutingRules[i]` → `Condition`
+Толық жол: `RoutingRules[i]` → `Condition`
 
 |`HttpErrorCodeReturnedEquals`
-|Ереже іске қосылатын `4XX` немесе `5XX` форматындағы қате коды.
+|Ереже іске қысатын `4XX` немесе `5XX` форматындағы қате коды.
 
-`KeyPrefixEquals` параметрімен бірге қолданылса, ереже екі шарт та орындалғанда ғана іске қосылады.
+`KeyPrefixEquals` пен бірге қолданылса, ереже екі шарт да сақталғанда ғана іске қеседі.
 
-Форматы: `string`.
+Формат: `string`.
 
-Көрсетілген қате коды бар HTTP-жауап алынғанда, `RoutingRules[i]` → `Redirect` ішінде көрсетілген ереже іске қосылады.
+Көрсетілген қате коды бар HTTP-жауабы алынғанда `RoutingRules[i]` → `Redirect` ішінде көрсетілген ереже іске қеседі.
 
-Толық жолы: `RoutingRules[i]` → `Condition` → `HttpErrorCodeReturnedEquals`
+Толық жол: `RoutingRules[i]` → `Condition` → `HttpErrorCodeReturnedEquals`
 
 |`KeyPrefixEquals`
-|Сұралған объект кілтінің префиксі. Толық кілтті көрсетсеңіз, ереже тек осы объектіге қолданылады.
+|Сұралған объектінің кілт префиксі. Толық кілт көрсетілсе, ереже осы объектіге ғана қолданылады.
 
-`HttpErrorCodeReturnedEquals` параметрімен бірге қолданылса, ереже екі шарт та орындалғанда ғана іске қосылады.
+`HttpErrorCodeReturnedEquals` пен бірге қолданылса, ереже екі шарт да сақталғанда ғана іске қеседі.
 
-Форматы: `string`.
+Формат: `string`.
 
-Көрсетілген кілті немесе префиксі бар бетті ашқанда, `RoutingRules[i]` → `Redirect` ішінде көрсетілген ереже іске қосылады.
+Көрсетілген кілті немесе префиксі бар бет ашылғанда `RoutingRules[i]` → `Redirect` ішінде көрсетілген ереже іске қеседі.
 
-Толық жолы: `RoutingRules[i]` → `Condition` → `KeyPrefixEquals`
+Толық жол: `RoutingRules[i]` → `Condition` → `KeyPrefixEquals`
 
 |`Redirect`
-|`object` форматында қайта бағыттау баптауларын орнатады.
+|`object` форматында бағыттау параметрлерін анықтайды.
 
-Толық жолы: `RoutingRules[i]` → `Redirect`
+Толық жол: `RoutingRules[i]` → `Redirect`
 
 |`HostName`
-|Қайта бағыттау орындалатын хост атауы.
+|Бағыттау орындалатын хосттың атауы.
 
-Форматы: `string`.
+Формат: `string`.
 
 `Redirect` параметрлерінің басқаларымен бірге қолданылуы мүмкін.
 
-Егер мәні көрсетілмесе, хост атауы өзгермейді.
+Мәні көрсетілмесе, хост атауы өзгертілмейді.
 
-Толық жолы: `RoutingRules[i]` → `Redirect` → `HostName`
+Толық жол: `RoutingRules[i]` → `Redirect` → `HostName`
 
 |`HttpRedirectCode`
-|Қайта бағыттау кезінде қайтарылатын `3XX` форматындағы HTTP-код.
+|Бағыттау кезінде қайтарылатын `3XX` форматындағы HTTP-код.
 
-Форматы: `string`.
+Формат: `string`.
 
-Егер мәні көрсетілмесе, әдепкі жауап коды — `301` қолданылады.
+Мәні көрсетілмесе, әдепкі жауап коды — `301` қолданылады.
 
 `Redirect` параметрлерінің басқаларымен бірге қолданылуы мүмкін.
 
-Толық жолы: `RoutingRules[i]` → `Redirect` → `HttpRedirectCode`
+Толық жол: `RoutingRules[i]` → `Redirect` → `HttpRedirectCode`
 
 |`Protocol`
 |Протоколды өзгерту қажет болғанда көрсетіледі.
 
-Форматы: `string`.
+Формат: `string`.
 
-Мүмкін мәндер: `http`, `https`.
+Мүмкін мәндері: `http`, `https`.
 
 `Redirect` параметрлерінің басқаларымен бірге қолданылуы мүмкін.
 
-Толық жолы: `RoutingRules[i]` → `Redirect` → `Protocol`
+Толық жол: `RoutingRules[i]` → `Redirect` → `Protocol`
 
 |`ReplaceKeyPrefixWith`
-|Сұралған объект префиксін ауыстыру қажет объект кілтінің префиксі.
+|Сұралған объектінің префиксі ауыстырылатын объектінің кілт префиксі.
 
-Форматы: `string`.
+Формат: `string`.
 
 Бос жол көрсетілсе, жаңа сұрау префикссіз болады.
 
-Әдетте объектілер тобын бір префикстен екіншісіне қайта бағыттау үшін `RoutingRules[i]` → `Condition` → `KeyPrefixEquals` параметрімен бірге қолданылады.
+Әдетте бір префикстен екіншісіне объектілер тобын бағыттау үшін `RoutingRules[i]` → `Condition` → `KeyPrefixEquals` ішімен бірге қолданылады.
 
 `HostName`, `HttpRedirectCode` және `Protocol` параметрлерімен бірге қолданылуы мүмкін.
 
-`ReplaceKeyWith` параметрімен үйлеспейді.
+`ReplaceKeyWith` параметрімен үйлесімді емес.
 
-Толық жолы: `RoutingRules[i]` → `Redirect` → `ReplaceKeyPrefixWith`
+Толық жол: `RoutingRules[i]` → `Redirect` → `ReplaceKeyPrefixWith`
 
 |`ReplaceKeyWith`
-|Қайта бағыттау қажет объект кілті.
+|Бағыттау қажет объектінің кілті.
 
-Форматы: `string`.
+Формат: `string`.
 
 `HostName`, `HttpRedirectCode` және `Protocol` параметрлерімен бірге қолданылуы мүмкін.
 
-`ReplaceKeyPrefixWith` параметрімен үйлеспейді.
+`ReplaceKeyPrefixWith` параметрімен үйлесімді емес.
 
-Толық жолы: `RoutingRules[i]` → `Redirect` → `ReplaceKeyWith`
+Толық жол: `RoutingRules[i]` → `Redirect` → `ReplaceKeyWith`
 
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
 {/ifdef}
 
-### {heading(Шартсыз қайта бағыттау конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-redirectallrequeststo]}
+### {heading(Шартсыз бағыттау конфигурациясының параметрлері)[id=s3-concepts-static-site-hosting-redirectallrequeststo]}
 
-`RedirectAllRequestsTo` — сайттың барлық сұраулары үшін шартсыз қайта бағыттау ережелерін орнататын конфигурация элементі.
+`RedirectAllRequestsTo` — сайттың барлық сұраулары үшін шартсыз бағыттау ережелерін анықтайтын конфигурация элементі.
 
 {note:info}
 
-Шартсыз қайта бағыттау бос бакетпен де жұмыс істей алады.
+Шартсыз бағыттау бос бакетпен де жұмыс істей алады.
 
 {/note}
 
 {ifdef(public)}
-`RedirectAllRequestsTo` элементінің басқа конфигурация элементтерімен үйлесімділігі:
+`RedirectAllRequestsTo` конфигурацияның басқа элементтерімен үйлесімділігі:
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — RedirectAllRequestsTo элементінің басқа конфигурация элементтерімен үйлесімділігі)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Совместимость RedirectAllRequestsTo с другими элементами конфигурации)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="2,1,3", options="header"]
 |===
 |Конфигурация элементі
 |Үйлесімділік
-|Функционалдылық
+|Функционалдық
 
 |`IndexDocument`
 |![](../../assets/no.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]}
+|{linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]}
 
 |`ErrorDocument`
 |![](../../assets/no.svg "inline")
@@ -409,7 +409,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 
 |`RoutingRules`
 |![](../../assets/no.svg "inline")
-|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Қайта бағыттау ережелері]}
+|{linkto(#s3-concepts-static-site-hosting-routingrules)[text=Бағыттау ережелері]}
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
@@ -420,45 +420,45 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
 {/ifdef}
 
 {ifdef(s3,s3-pdf)}
-{caption(Кесте {counter(table)[id=static-site-config-parameters]} — RedirectAllRequestsTo параметрлері)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
+{caption(Таблица {counter(table)[id=static-site-config-parameters]} — Параметры RedirectAllRequestsTo)[align=right;position=above;id=static-site-config-parameters;number={const(static-site-config-parameters)}]}
 {/ifdef}
 [cols="1,5", options="header"]
 |===
 |Атауы
-|Сипаттама
+|Сипаттамасы
 
-2+|`RedirectAllRequestsTo` — `object` форматындағы элемент, сайттың барлық сұраулары үшін шартсыз қайта бағыттау ережелерін орнатады
+2+|`RedirectAllRequestsTo` — `object` форматындағы элемент, сайттың барлық сұраулары үшін шартсыз бағыттау ережелерін анықтайды
 
 |`HostName`
-|Қайта бағыттау орындалатын хост атауы. Міндетті параметр.
+|Бағыттау орындалатын хосттың атауы. Міндетті параметр.
 
-Форматы: `string`.
+Формат: `string`.
 
-`Protocol` параметрімен бірге қолданылуы мүмкін.
+`Protocol` ішімен бірге қолданылуы мүмкін.
 
-Толық жолы: `RedirectAllRequestsTo` → `HostName`
+Толық жол: `RedirectAllRequestsTo` → `HostName`
 
 |`Protocol`
 |Протоколды өзгерту қажет болғанда көрсетіледі.
 
-Форматы: `string`.
+Формат: `string`.
 
-Мүмкін мәндер: `http`, `https`.
+Мүмкін мәндері: `http`, `https`.
 
-`HostName` параметрімен бірге қолданылуы мүмкін.
+`HostName` ішімен бірге қолданылуы мүмкін.
 
-Толық жолы: `RedirectAllRequestsTo` → `Protocol`
+Толық жол: `RedirectAllRequestsTo` → `Protocol`
 
 |===
 {ifdef(s3,s3-pdf)}
 {/caption}
 {/ifdef}
 
-## {heading(Конфигурация мысалдары)[id=s3-concepts-static-site-hosting-examples]}
+## {heading(Конфигурациялар мысалдары)[id=s3-concepts-static-site-hosting-examples]}
 
-Кейбір параметрлер бір-бірімен үйлеспейді, сондықтан олардың комбинацияларының саны шектеулі. 
+Кейбір параметрлер бір-бірімен үйлесімді емес, сондықтан олардың тіркесімдер саны шектеулі.
 
-- Тек {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индекс беті]} `IndexDocument`:
+- Тек {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=индекстік бет]} `IndexDocument`:
 
     ```json
     {
@@ -468,7 +468,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]} `IndexDocument` және {linkto(#s3-concepts-static-site-hosting-errordocument)[text=қате беті]} `ErrorDocument`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]} `IndexDocument` және {linkto(#s3-concepts-static-site-hosting-errordocument)[text=қате беті]} `ErrorDocument`:
 
     ```json
     {
@@ -481,7 +481,7 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]} `IndexDocument` және {linkto(#s3-concepts-static-site-hosting-routingrules)[text=қайта бағыттау ережелері]} `RoutingRules`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]} `IndexDocument` және {linkto(#s3-concepts-static-site-hosting-routingrules)[text=бағыттау ережелері]} `RoutingRules`:
 
     ```json
     {
@@ -502,9 +502,9 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-    Келтірілген мысалда `docs/` префиксі бар барлық сұраулар `documents/` мекенжайына қайта бағытталып, `301` HTTP жауап кодын қайтарады.
+    Келтірілген мысалда `docs/` префиксі бар барлық сұраулар `documents/` мекенжайына бағытталады және `301` HTTP жауап коды қайтарылады.
 
-- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индекс беті]} `IndexDocument`, {linkto(#s3-concepts-static-site-hosting-errordocument)[text=қате беті]} `ErrorDocument` және {linkto(#s3-concepts-static-site-hosting-routingrules)[text=қайта бағыттау ережелері]} `RoutingRules`:
+- {linkto(#s3-concepts-static-site-hosting-indexdocument)[text=Индексік бет]} `IndexDocument`, {linkto(#s3-concepts-static-site-hosting-errordocument)[text=қате беті]} `ErrorDocument` және {linkto(#s3-concepts-static-site-hosting-routingrules)[text=бағыттау ережелері]} `RoutingRules`:
 
     ```json
     {
@@ -528,9 +528,9 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-    Келтірілген мысалда `404` HTTP-қатесі кезінде сұрау `index.html` мекенжайына қайта бағытталады, ал басқа қателер кезінде `error.html` мазмұны қайтарылады.
+    Келтірілген мысалда `404` HTTP қатесі кезінде сұрау `index.html` мекенжайына бағытталады, өзге қателер кезінде `error.html` мазмұны қайтарылады.
 
-- {linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=Шартсыз қайта бағыттау]} `RedirectAllRequestsTo` барлық сұраулар үшін: 
+- Барлық сұраулар үшін {linkto(#s3-concepts-static-site-hosting-redirectallrequeststo)[text=шартсыз бағыттау]} `RedirectAllRequestsTo`:
 
     ```json
     {
@@ -541,4 +541,4 @@ https://<ИМЯ_БАКЕТА>.hb-website.<ENDPOINT_HOSTNAME>/<PREFIX>
     }
     ```
 
-    Келтірілген мысалда барлық сұраулар `https` протоколы бойынша `example.com` мекенжайына қайта бағытталады. Жауапта әрқашан `301` коды қайтарылады.
+    Келтірілген мысалда барлық сұраулар `https` протоколы бойынша `example.com` мекенжайына бағытталады. Жауабында әрқашан `301` коды қайтарылады.

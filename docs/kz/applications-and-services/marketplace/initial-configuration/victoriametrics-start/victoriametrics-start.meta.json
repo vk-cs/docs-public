@@ -1,23 +1,14 @@
 {
-  "title": "VictoriaMetrics-ті өрістету",
-  "shortDescription": "Деректерді мониторингтеу міндеттері үшін 1.93.8 нұсқасы мысалында жобада VictoriaMetrics сервисін өрістету",
-  "metaDescription": "VictoriaMetrics VK Cloud: жобада сервисті өрістету",
-  "sectionTitle": "VictoriaMetrics-ті өрістету",
+  "title": "VictoriaMetrics орнату",
+  "shortDescription": "Деректерді мониторингтеу міндеттері үшін 1.93.8 нұсқасын мысал ретінде пайдаланып, жобада VictoriaMetrics қызметін орнату",
+  "metaDescription": "VictoriaMetrics VK Cloud: жобада қызметті орнату",
+  "sectionTitle": "VictoriaMetrics орнату",
   "icon": "",
-  "weight": 9,
+  "weight": 20,
+  "uuid": "d5e790d0-921a-48fc-a665-7ac2d1d78ebf",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "4dcaee93-f966-4ebb-8dfd-bf11b9ce6290"
+  }
 }

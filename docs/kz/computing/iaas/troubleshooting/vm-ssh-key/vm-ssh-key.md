@@ -6,4 +6,4 @@ SSH протоколы арқылы ВМ-ге қол жеткізу үшін п�
 
 ### {heading(Шешім)[id=iaas-vm-ssh-key-decision]}
 
-Жаңа кілт жұбын жасап, жария кілтті ВМ-ге қолмен қосыңыз. Ол үшін [ВМ-ге қолжетімділікті қалпына келтіру жөніндегі нұсқаулықты](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-recovery-access) пайдаланыңыз.
+Жаңа кілт жұбын жасап, жария кілтті ВМ-ге қолмен қосыңыз. Ол үшін [ВМ-ге қолжетімділікті қалпына келтіру жөніндегі нұсқаулықты](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key) пайдаланыңыз.

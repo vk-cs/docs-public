@@ -1,25 +1,26 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Kubernetes кластерін құру)[id=terraform-k8s-create]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Төменде Terraform көмегімен әртүрлі Kubernetes кластерлерін құру мысалдары келтірілген.
-Кластерді құру рәсімі [Terraform көмегімен кластер құру](/kz/kubernetes/mk8s/instructions/create-cluster/create-terraform) бөлімінде егжей-тегжейлі сипатталған.
+Кластерді құру процедурасы толық сипатталған [Terraform көмегімен кластер құру](/kz/kubernetes/k8s/instructions/create-cluster/create-terraform) бөлімінде.
 
-Параметрлердің толық сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) берілген.
+Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Кластерді құру алдында
+## {heading(Кластерді құрмас бұрын)[id=terraform-k8s-create-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [өңірде](/kz/tools-for-using-services/account/concepts/regions) кластер құру үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі өңірлер үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=өңірде]} CDN-ресурсын құруға жеткілікті ресурс бар-жоғын тексеріңіз. Әртүрлі өңірлер үшін әртүрлі квоталар бапталуы мүмкін.
 
-   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болған жағдайда квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Managed Containers сервисіндегі [Terraform пайдалану ерекшеліктерімен](/kz/kubernetes/mk8s/instructions/helpers/terraform-howto) танысыңыз.
+1. Managed Containers қызметінде Terraform {linkto(../../../../../kubernetes/k8s/instructions/helpers/terraform-howto#k8s-terraform-howto)[text=пайдалану ерекшеліктерімен]} танысыңыз.
+1. Әлі жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform-ды орнатыңыз және провайдерді баптаңыз]}.
 
-1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+   Провайдер баптауларын Terraform конфигурация файлына `provider.tf` орналастырыңыз.
 
-   Провайдердің баптауларын Terraform конфигурациясының `provider.tf` файлына орналастырыңыз.
+## {heading({counter(tf-k8s)}. Кластер үшін желілік инфрақұрылым сипаттамасы бар файлды жасаңыз)[id=terraform-k8s-create-net-file]}
 
-## 1. Кластер үшін желілік инфрақұрылым сипаттамасы бар файл жасаңыз
-
-Кластер үшін желілік инфрақұрылым сипаттамасы бар `network.tf` Terraform конфигурация файлын жасаңыз:
+Кластер үшін желілік инфрақұрылым сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
 
 ```hcl
 data "vkcs_networking_network" "extnet" {
@@ -50,29 +51,28 @@ resource "vkcs_networking_router_interface" "k8s" {
 }
 ```
 
-## 2. Kubernetes кластерінің сипаттамасы бар файл жасаңыз
+## {heading({counter(tf-k8s)}. Kubernetes кластерінің сипаттамасы бар файлды жасаңыз)[id=terraform-k8s-create-cluster-file]}
 
-Төмендегі мысалдарда кластерлер келесі конфигурацияда жасалады:
+Төмендегі мысалдарда кластерлер келесі конфигурацияда құрылады:
 
-- `Москва` өңірі, `ME1` қолжетімділік аймағы.
+- Өңір `Москва`, қолжетімділік аймағы `ME1`.
 - Kubernetes нұсқасы `1.31`.
+- Бір master-түйін `STD3-4-8`.
+- Екі worker-түйін `STD2-2-4`:
 
-- Бір `STD3-4-8` master-түйіні.
-- Екі `STD2-2-4` worker-түйіні:
-
-  - Екі меткамен (labels):
+  - Екі белгісімен (labels):
 
     - `env:test`
     - `disktype:ssd`
 
-  - Екі шектеумен (taints):
+  - Екі шектеуімен (taints):
 
     - `taintkey1:taintvalue1`: `PreferNoSchedule`
     - `taintkey2:taintvalue2`: `PreferNoSchedule`
 
-  - Әр кластерге сыртқы IP мекенжайы тағайындалады.
+  - Әр кластерге сыртқы IP-мекенжай тағайындалады.
 
-Кластерді құру мысалдарының бірін таңдап, қажетті мазмұны бар `main.tf` Terraform конфигурация файлын жасаңыз:
+Кластерді құру мысалдарының бірін таңдап, қажетті мазмұны бар Terraform конфигурация файлын `main.tf` жасаңыз:
 
 {tabs}
 
@@ -116,7 +116,6 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
   node_count = 2
 
-
   labels {
         key = "env"
         value = "test"
@@ -143,7 +142,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {/tab}
 
-{tab(Под ішкі желісін қайта анықтаумен)}
+{tab(Под подсетін қайта анықтаумен)}
 
 Под желісін қайта анықтауға `vkcs_kubernetes_cluster` ресурсының `labels = { calico_ipv4pool }` баптауы жауап береді.
 
@@ -220,7 +219,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {tab(Docker Registry орнатумен)}
 
-[Сервисті](/kz/kubernetes/mk8s/concepts/addons-and-settings/addons) орнатуға `vkcs_kubernetes_cluster` ресурсының `labels = { docker_registry_enabled }` баптауы жауап береді.
+{linkto(../../../../../kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons)[text=Қызметті]} орнатуға `vkcs_kubernetes_cluster` ресурсының `labels = { docker_registry_enabled }` баптауы жауап береді.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -295,37 +294,37 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 {/tabs}
 
-## 3. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading({counter(tf-k8s)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-k8s-create-resource]}
 
-1. `provider.tf`, `network.tf` және `main.tf` Terraform конфигурация файлдарын бір директорияға орналастырыңыз.
-1. Осы директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдарын `provider.tf`, `network.tf` және `main.tf` бір каталогқа орналастырыңыз.
+1. Осы каталогқа өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform init
    ```
 
-1. Келесі команданы орындаңыз:
+1. Команданы орындаңыз:
 
    ```console
    terraform apply
    ```
 
-   Растауды сұраған кезде `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-k8s-create-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен құрылған ресурстар енді қажет болмаса, оларды жойыңыз:
 
-1. Terraform конфигурация файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары бар каталогқа өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұраған кезде `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

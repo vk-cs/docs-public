@@ -1,12 +1,12 @@
 {
-  "title": "JSON-файл құрылымы",
+  "title": "JSON файлының құрылымы",
   "shortDescription": "",
-  "metaDescription": "JSON-файл құрылымы",
-  "sectionTitle": "JSON-файл құрылымы",
+  "metaDescription": "JSON файлының құрылымы",
+  "sectionTitle": "JSON файлының құрылымы",
+  "uuid": "d7a5064e-d7df-435b-ab5f-7f955e0223eb",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "a29dce25-ad25-4858-a3ae-b7c4eb17b8cb"
+  }
 }

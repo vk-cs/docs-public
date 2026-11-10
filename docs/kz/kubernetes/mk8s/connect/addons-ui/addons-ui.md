@@ -1,6 +1,6 @@
 # {heading(Аддондардың веб-интерфейстеріне қосылу)[id=mk8s-addons-ui]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Кластерге {linkto(../../concepts/addons-and-settings/addons#mk8s-addons)[text=орнатуға болатын]} кейбір {linkto(../../concepts/addons-and-settings/addons#mk8s-addons)[text=аддондарда]} веб-интерфейс бар. Веб-интерфейске қосылу тәсілі кластердің IP-мекенжайына байланысты:
 
@@ -34,49 +34,48 @@
 
 {tab(Jaeger)}
 
-1. Кластерде `jaeger` аддоны {linkto(../../instructions/addons/advanced-installation/install-advanced-jaeger#mk8s-install-advanced-jaeger)[text=орнатылғанына]} {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=көз жеткізіңіз]}.
-1. Хостта терминалдың бөлек сессиясында команданы орындаңыз:
+1. {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=Көз жеткізіңіз]}, `jaeger` аддоны кластерде {linkto(../../instructions/addons/advanced-installation/install-advanced-jaeger#mk8s-install-advanced-jaeger)[text=орнатылған]}.
+1. Хостта бөлек терминал сессиясында мына команданы орындаңыз:
 
    ```console
    kauthproxy -n jaeger http://jaeger-query.svc
    ```
 
-   Егер аддонды қосу кезінде `jaeger` атауынан өзгеше сервис атауы немесе `jaeger` атауынан өзгеше атаулар кеңістігі таңдалса, команданы түзетіңіз.
+   Егер аддонды қосу кезінде `jaeger`-ден өзге сервис аты немесе `jaeger`-ден өзге атаулар кеңістігі таңдалған болса, команданы түзетіңіз.
 
-   Браузер ашылады, және сіз Query UI веб-интерфейсіне бағытталасыз. Веб-интерфейс тек HTTP арқылы қолжетімді.
+   Браузер ашылады және сіз Query UI веб-интерфейсіне бағытталасыз. Веб-интерфейс тек HTTP арқылы қолжетімді.
 
    {note:warn}
-
    Бұл терминал сессиясын жаппаңыз, әйтпесе веб-интерфейске қолжетімділік жоғалады.
-
    {/note}
 
 {/tab}
 
 {tab(Kube Prometheus Stack (Grafana))}
 
-Kube Prometheus Stack аддонының құрамына [Grafana](https://grafana.com/) кіреді — бұл метрикалар мен кластер күйін визуализациялауға арналған құрал. Оған қосылу үшін: 
+Kube Prometheus Stack аддонының құрамына кластер метрикалары мен күйін визуализациялау құралы — [Grafana](https://grafana.com/) кіреді. Оған қосылу үшін:
 
-1. Кластерде `kube-prometheus-stack` аддоны {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=орнатылғанына]} {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=көз жеткізіңіз]}.
-1. Хостта терминалдың бөлек сессиясында Grafana сервисінің атауын табу үшін команданы орындаңыз:
+1. {linkto(../../instructions/addons/manage-addons#mk8s-manage-addons-view)[text=Көз жеткізіңіз]}, `kube-prometheus-stack` аддоны кластерде {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring)[text=орнатылған]}.
+1. Хостта бөлек терминал сессиясында Grafana сервисінің атын білу үшін команданы орындаңыз:
 
    ```console
    kubectl -n <ПРОСТРАНСТВО_ИМЕН> get svc -l app.kubernetes.io/name=grafana
-   ``` 
+   ```
 
    Мұнда `<ПРОСТРАНСТВО_ИМЕН>` — аддон орнатылған атаулар кеңістігінің атауы.
 
-   Команда шығысында Grafana сервисінің `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana` форматындағы атауы көрсетіледі. Егер аддон жеке кабинет арқылы орнатылған болса және қолданбаның атауы автоматты түрде жасалған болса, сервис атауы `addon-<ХЕШ>-grafana` түрінде болады, мысалы, `addon-c01ea19419-grafana`.
+   Команда нәтижесінде Grafana сервисінің аты `<НАЗВАНИЕ_ПРИЛОЖЕНИЯ>-grafana` форматында болады. Егер қолданбаның атауы жеке кабинет арқылы орнату кезінде автоматты түрде жасалған болса, сервис аты `addon-<ХЕШ>-grafana` түрінде болады, мысалы, `addon-c01ea19419-grafana`.
 
    {note:info}
-   Аддонның басқа компоненттерінің сервис атаулары да қолданбаның атауы негізінде жасалады. Ерекшелік — Prometheus пен Alertmanager: олардың атаулары әрқашан `prometheus-prometheus` және `prometheus-alertmanager`. Толығырақ {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-additional)[text=аддонды орнату нұсқаулығында]}.
+   Аддонның басқа компоненттерінің сервис атаулары да қолданба атауы негізінде қалыптастырылады. Ерекшелік — Prometheus және Alertmanager: олардың атаулары әрқашан `prometheus-prometheus` және `prometheus-alertmanager`. Толығырақ {linkto(../../instructions/addons/advanced-installation/install-advanced-monitoring#mk8s-install-advanced-monitoring-additional)[text=аддонды орнату нұсқаулығында]}.
    {/note}
 
-1. Сервис атауын пайдаланып, Grafana-ға `port-forward` арқылы сыртқы қолжетімділікті қамтамасыз етіңіз:
+1. Сервис атын пайдаланып, `port-forward` арқылы Grafana-ға сырттан қолжетімділік ашыңыз:
 
    ```console
    kubectl -n <ПРОСТРАНСТВО_ИМЕН> port-forward service/<ИМЯ_СЕРВИСА_GRAFANA> 8001:80
-   ``` 
+   ```
+
 1. Браузерде http://127.0.0.1:8001 мекенжайын ашыңыз.
 
 {/tab}

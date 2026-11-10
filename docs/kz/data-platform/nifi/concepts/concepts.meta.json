@@ -1,0 +1,11 @@
+{
+  "title": "Түсініктер",
+  "shortDescription": "NiFi қызметінің негізгі ұғымдары мен сипаттамалары",
+  "metaDescription": "VK Data Platform жүйесіндегі NiFi қызметінің негізгі ұғымдары мен сипаттамалары туралы біліңіз",
+  "sectionTitle": "Түсініктер",
+  "weight": 0,
+  "uuid": "a0a00c02-02f1-47fa-aab8-df98d3473e7c",
+  "build": {
+    "for": ["data-p-pdf"]
+  }
+}

@@ -1,16 +1,14 @@
 {
   "title": "NFS жасау",
   "shortDescription": "",
-  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисі объектілерін басқару үшін VK Cloud Terraform-провайдерін қалай пайдалану керек. NFS жасау",
+  "metaDescription": "Платформаны басқару үшін VK Cloud Terraform-провайдерін пайдалану. Cloud Servers сервисінің объектілерін басқару үшін VK Cloud Terraform-провайдерін қалай пайдалану керек. NFS жасау",
   "sectionTitle": "NFS жасау",
   "icon": "",
   "weight": 5,
+  "uuid": "8fb1d2a6-4510-4f60-84e7-271b51e453f7",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "bccbfd46-3bef-4f35-a78e-370ed598a5d9"
+  }
 }

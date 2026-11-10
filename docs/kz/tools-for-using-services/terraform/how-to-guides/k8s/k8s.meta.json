@@ -1,16 +1,14 @@
 {
   "title": "Managed Containers",
-  "shortDescription": "Managed Containers сервисі объектілерін басқару үшін Terraform-ды қалай пайдалану керек",
-  "metaDescription": "Terraform пайдалана отырып Managed Containers сервисімен жұмыс істеу",
+  "shortDescription": "Managed Containers сервисінің нысандарын басқару үшін Terraform-ды қалай пайдалану",
+  "metaDescription": "Terraform-ды пайдалана отырып, Managed Containers сервисімен жұмыс істеу",
   "sectionTitle": "Managed Containers",
   "icon": "",
   "weight": 60,
+  "uuid": "eace3838-1ea1-44ea-8ff8-1b3020151771",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg"
+      "public"
     ]
-  },
-  "uuid": "848d03c8-abb6-4a67-bd8c-dcb77ff07a86"
+  }
 }

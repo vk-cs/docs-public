@@ -1,6 +1,6 @@
 # {heading(Қауіпсіздік топтары)[id=vnet-secgroups]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Қауіпсіздік тобы — бұл инстанстар порттарына тағайындауға болатын трафиктің өтуіне арналған теңшелетін рұқсат ету ережелерінің жиынтығы.
 
@@ -48,7 +48,6 @@
 
 {/tabs}
 
-
 ## {heading(Қауіпсіздік тобын жасау)[id=vnet-secgroups-add]}
 
 {note:warn}
@@ -95,24 +94,24 @@
 
 {/tabs}
 
-## {heading(Қауіпсіздік тобының атауы мен сипаттамасын өңдеу)[id=vnet-secgroups-edit]}
+## {heading(Қауіпсіздік тобының атауын және сипаттамасын өңдеу)[id=vnet-secgroups-edit]}
 
 {tabs}
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
 
-   Ол туралы толық ақпараты бар бет ашылады.
+   Оны туралы толық ақпарат бар бет ашылады.
 
-1. Қауіпсіздік тобы атауының жанындағы қарындаш белгішесін басыңыз.
+1. Қауіпсіздік тобының атауының жанындағы қалам белгішесін басыңыз.
 
-   Атауын және (қажет болса) қауіпсіздік тобының сипаттамасын өңдеңіз.
+   Қауіпсіздік тобының атауын және (қажет болса) сипаттамасын өңдеңіз.
 
-1. **Сақтау** батырмасын басыңыз.
+1. **Сақтау** түймесін басыңыз.
 
 {/tab}
 
@@ -120,10 +119,10 @@
 
 1. OpenStack клиенті {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобада {linkto(../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
 
-1. Қауіпсіздік тобының сипаттамасы мен атауын өзгерту үшін келесі команданы орындаңыз:
+1. Қауіпсіздік тобының сипаттамасы мен атауын өзгерту үшін команда орындаңыз:
 
    ```console
-   openstack security group set --description <ОПИСАНИЕ_ГРУППЫ_БЕЗОПАСНОСТИ> --name <ИМЯ_ГРУППЫ_БЕЗОПАСНОСТИ> <ID_ГРУППЫ_БЕЗОПАСНОСТИ>
+   openstack security group set --description <ҚАУІПСІЗДІК_ТОБЫНЫҢ_СИПАТТАМАСЫ> --name <ҚАУІПСІЗДІК_ТОБЫНЫҢ_АТАУЫ> <ҚАУІПСІЗДІК_ТОБЫНЫҢ_ID>
    ```
 
 {/tab}

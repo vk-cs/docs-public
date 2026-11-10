@@ -314,3 +314,5 @@ Kubernetes нұсқасын қолдау тоқтатылғанға дейін 3
 {/cut}
 
 {/includetag}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}

@@ -4,11 +4,11 @@
   "metaDescription": "VK Cloud аккаунтымен жұмыс.",
   "sectionTitle": "Қадамдық нұсқаулықтар",
   "icon": "",
-  "weight": 1,
+  "weight": 2,
+  "uuid": "e1ed624b-9991-4828-9a63-4d752802afe7",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "01419464-2c4a-4c5e-a8d8-829f4dcfbfc9"
+  }
 }

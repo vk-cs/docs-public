@@ -1,22 +1,20 @@
-# {heading(Виртуалды машиналарды басқару)[id=api-spec-nova]}
+# {heading(Виртуалдық машиналарды басқару)[id=api-spec-nova]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {cut(Эндпоинт пен аутентификация токенін алу)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) VK Cloud жеке кабинетіне.
-1. [Қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate), егер бұл әлі жасалмаса, API арқылы қолжетімділікті.
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба параметрлері** бөлімін таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. Егер бұрын жасалмаса, API арқылы қолжетімділікті {linkto(../../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack Service** блогынан **Nova** эндпоинтін табыңыз.
-1. `X-Auth-Token` [қолжетімділік токенін алыңыз](../../../rest-api/case-keystone-token).
+1. **OpenStack сервисі** блогындағы **Nova** эндпоинтін табыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификация [сілтеме](./assets/nova-api.json "download") бойынша қолжетімді.
-
+JSON форматындағы бастапқы спецификацияға [сілтеме](./assets/nova-api.json "download") арқылы қол жеткізуге болады.
 {/note}
 
 ![{swagger}](assets/nova-api.json)

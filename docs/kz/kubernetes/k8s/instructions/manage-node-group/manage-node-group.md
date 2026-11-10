@@ -1,6 +1,6 @@
 # {heading(worker-түйіндер тобын басқару)[id=k8s-manage-node-group]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {note:warn}
 
@@ -52,27 +52,25 @@ Terraform арқылы кластермен кез келген операция
     name = "<выбранный тип виртуальной машины>"
    }
 
-   # Новый ресурс — группа worker-узлов
+   # Новый ресурс — worker-тараптар тобы
    resource "vkcs_kubernetes_node_group" "k8s-node-group" {
      name = "k8s-node-group"
-     node_count = <количество узлов в группе>
+     node_count = <топтағы тараптар саны>
      cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
      flavor_id = data.vkcs_compute_flavor.k8s-node-group-flavor.id
      availability_zones = ["<қолжетімділік аймағы>"]
    }
    ```
 
-   Әдепкі бойынша түйіндер тобы кластердің аймағында жасалады. Басқа аймақты таңдау үшін `availability_zones` параметрін көрсетіңіз. `Москва` аймағы үшін `GZ1`, `ME1` және `PA2` аймақтары қолжетімді.
+   Әдепкі бойынша тараптар тобы кластер аймағында жасалады. Басқа аймақты таңдау үшін `availability_zones` параметрін көрсетіңіз. `Москва` регионы үшін `GZ1`, `ME1` және `PA2` аймақтары қолжетімді. Қажет болған жағдайда ресурс құжаттамасында келтірілген қосымша баптауларды да көрсетіңіз.
 
-   Қажет болса, ресурс құжаттамасында келтірілген қосымша баптауларды орнатыңыз.
-
-1. Terraform конфигурация файлының дұрыстығын тексеріңіз:
+1. Terraform конфигурациялық файлының дұрыстығын тексеріңіз:
 
    ```console
    terraform validate
    ```
 
-1. Жоспарланған өзгерістермен танысыңыз:
+1. Жоспарланған өзгерістерді оқып шығыңыз:
 
    ```console
    terraform plan
@@ -87,6 +85,9 @@ Terraform арқылы кластермен кез келген операция
 {/tab}
 
 {/tabs}
+{/ifdef}
+
+{ifdef(public)}
 
 ## {heading(Масштабтау параметрлерін баптау)[id=k8s-manage-node-group-scaling-options]}
 

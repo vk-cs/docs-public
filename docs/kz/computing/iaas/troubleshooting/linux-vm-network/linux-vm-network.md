@@ -1,6 +1,6 @@
 # {heading(Виртуалды машинаға қосылу мүмкін емес)[id=iaas-linux-vm-network]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Бұл нұсқаулықта виртуалды машиналардағы желі конфигурациясы мәселелерін диагностикалау және жою бойынша ұсынымдар берілген.
 
@@ -15,17 +15,17 @@
 
 1. Мәжбүрлі қайта жүктеуді орындаңыз.
 
-   Бұл операция виртуалды машина жауап бермесе немесе оның желілік интерфейсі қате инициализацияланса көмектесуі мүмкін:
+   Бұл операция виртуалды машина жауап бермегенде немесе оның желілік интерфейсі дұрыс емес инициализацияланғанда көмектесе алады:
 
-   1. [Тоқтатыңыз](../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) виртуалды машинаны.
-   1. Тоқтатылған виртуалды машина үшін [орындаңыз](../../instructions/vm/vm-manage#iaas-vm-manage-restart) мәжбүрлі қайта жүктеуді.
+   1. Виртуалды машинені {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]}.
+   1. Тоқтатылған виртуалды машина үшін мәжбүрлі қайта іске қосуды {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-restart)[text=орындаңыз]}.
 
-   Егер бұл мәселені шешпесе, қалған қадамдарды орындап, диагностикаға көшіңіз.
+   Егер бұл мәселені шешпесе, қалған қадамдарды орындаңыз және диагностикаға өтіңіз.
 
-1. [Көз жеткізіңіз](../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart), виртуалды машина іске қосылғанына.
-1. [Көз жеткізіңіз](../../instructions/vm/vm-console#vm-console-vnc), виртуалды машинаның VNC-консоліне қол жеткізіп, онда авторизациялана алатыныңызға.
+1. Виртуалды машина іске қосылғанына {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=көз жеткізіңіз]}.
+1. Виртуалды машинаның VNC-консольіне қолжетімділік ала алатыныңызға және онда авторизацияланатыныңызға {linkto(../../../../computing/iaas/instructions/vm/vm-console#iaas-vm-console-vnc)[text=көз жеткізіңіз]}.
 
-   Қажет болса, логин үшін [құпиясөзді өзгертіңіз](../../instructions/vm/vm-manage#iaas-vm-password).
+   Қажет болса, логин үшін құпиясөзді {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password)[text=өзгертіңіз]}.
 
 ## {heading(1. Желілік интерфейс баптауларын тексеріңіз)[id=iaas-linux-vm-network-settings-check]}
 

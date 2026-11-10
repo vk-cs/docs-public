@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Managed Containers)[id=terraform-k8s]}
 
-Terraform пайдалана отырып [Managed Containers сервисімен](/kz/kubernetes/mk8s) жұмыс істеу.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+Terraform қолдана отырып {linkto(../../../../kubernetes#kubernetes)[text=Managed Containers сервисімен]} жұмыс істеу.

@@ -1,6 +1,6 @@
-# {heading(Ресурс ivkcs_compute_instance_reboot)[id=ivkcs_compute_instance_reboot]}
+# {heading(ivkcs_compute_instance_reboot ресурсы)[id=ivkcs_compute_instance_reboot]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `ivkcs_compute_instance_reboot` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 
@@ -11,30 +11,31 @@
 |Сипаттамасы
 |Пішімі
 |Міндетті
-|Мән өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |
 `instance`
-|
-Қайта жүктелетін хосттың ID-і.
+|Қайта жүктелетін хосттың ID-ы.
 
-ID хостты жасайтын ресурс (`vkcs_compute_instance` VK CS провайдерінің ресурсы) арқылы есептеледі
+ID хостты жасайтын ресурс (VK CS провайдерінің `vkcs_compute_instance` ресурсы) арқылы есептеледі
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 
-Егер қайта жүктеу ВМ жасалғаннан кейін бірден орындалса, жасау мен қайта жүктеу арасында кідірісті пайдаланыңыз. Кідіріс ВМ жасау кезінде жүретін барлық процестердің аяқталуын қамтамасыз етеді.
+Егер қайта жүктеу ВМ жасалғаннан кейін бірден орындалса, жасау мен қайта жүктеу арасында кідірісті қолданыңыз. Кідіріс ВМ жасау кезінде жүріп жатқан барлық процестердің аяқталуын қамтамасыз етеді.
 
-{caption(Кідірісі бар `ivkcs_compute_instance_reboot` ресурсының мысалы)[align=left;position=above]}
+{caption(`ivkcs_compute_instance_reboot` ресурсының кідіріспен мысалы)[align=left;position=above]}
 ```hcl
-# Кідірісті жасау
+
+# Кідіріс жасау
 resource "time_sleep" "before_reboot" {
   create_duration = "30s"
 
   depends_on = [
-    # ВМ жасаудан және дискілерді қосудан тәуелділік
+
+# ВМ жасалуына және дискілердің қосылуына тәуелділік
     vkcs_compute_instance.compute,
     vkcs_compute_volume_attach.attached,
   ]
@@ -45,7 +46,8 @@ resource "ivkcs_compute_instance_reboot" "reboot" {
   instance = vkcs_compute_instance.compute.id
 
   depends_on = [
-    # Кідірістен тәуелділік
+
+# Кідіріске тәуелділік
     time_sleep.before_reboot,
   ]
 }
@@ -54,7 +56,8 @@ resource "ivkcs_compute_instance_reboot" "reboot" {
 resource "ivkcs_agent_exec" "start" {
   …
   depends_on = [
-    # ВМ қайта жүктелуінен тәуелділік
+
+# ВМ қайта жүктелуіне тәуелділік
     ivkcs_compute_instance_reboot.reboot,
   ]
   …

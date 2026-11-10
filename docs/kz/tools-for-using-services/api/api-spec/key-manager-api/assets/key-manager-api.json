@@ -1,0 +1,1302 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.0",
+    "title": "kms-managed-api",
+    "description": "Сервис управления KMS\n"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8083",
+      "variables": {
+        "basePath": {
+          "default": "v1"
+        }
+      }
+    }
+  ],
+  "tags": [
+    {
+      "name": "S2S-API-Keys"
+    }
+  ],
+  "paths": {
+    "/transit/keys": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        }
+      ],
+      "get": {
+        "summary": "Получение списка ключей",
+        "description": "Получение списка ключей.\nДля этого запроса можно использовать метод LIST",
+        "operationId": "S2SApiKeysList",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/List"
+          },
+          {
+            "$ref": "#/components/parameters/After"
+          },
+          {
+            "$ref": "#/components/parameters/Limit"
+          }
+        ],
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/keys/{name}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "get": {
+        "summary": "Получение информации о ключе",
+        "description": "Получение информации о ключе\n",
+        "operationId": "S2SApiKeysInfo",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      },
+      "post": {
+        "summary": "Создание ключа",
+        "description": "Создание ключа\n",
+        "operationId": "S2SApiKeysCreate",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удаление ключа",
+        "description": "Удаление ключа. Возможно только если для ключа выставлен deletion_allowed\nчерез /transit/keys/{name}/config. После удаления данные, зашифрованные\nэтим ключом, расшифровать невозможно.\n\nУдаление применяется асинхронно: ответ приходит после постановки операции,\nпоэтому сразу после него ключ еще может читаться и участвовать в\nкриптооперациях. Ход удаления виден в списке операций по ключу, который\nотдает UI-API: в этом API списка операций нет.\n\nПока операция по ключу не завершена, другие изменения этого ключа, включая\nповторное удаление, отклоняются",
+        "operationId": "S2SApiKeysDelete",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "responses": {
+          "204": {
+            "description": "ОК"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/keys/{name}/config": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Изменение конфигурации ключа",
+        "description": "Изменение конфигурации ключа: вывод из обращения старых версий после ротации\n(min_decryption_version, min_encryption_version), разрешение удаления\n(deletion_allowed), период автоматической ротации (auto_rotate_period), а также\nразрешение экспорта (exportable) и резервного копирования в открытом виде\n(allow_plaintext_backup).\n\nРазрешение экспорта и резервного копирования необратимо: выключить их\nобратно нельзя, запрос завершится успешно, но значение останется включённым.\n\nПереданные поля применяются асинхронно, поэтому в ответе состояние ключа может\nбыть ещё прежним. Ход применения виден в списке операций по ключу. Тело без\nполей (или пустой объект) допустимо: ничего не меняется, ответ отдаёт текущее\nсостояние ключа",
+        "operationId": "S2SApiKeysUpdateConfig",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyConfigRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/keys/{name}/rotate": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Ротация ключа",
+        "description": "Создание новой версии ключа. Новые операции шифрования будут выполняться\nновой версией. Для перешифрования ранее полученных ciphertext на новую\nверсию используется /transit/rewrap/{name}.\n\nПрименение асинхронно: пользовательский токен не может писать в transit,\nпоэтому ротация уходит асинхронно, а этот метод отдаёт 200 с\nсостоянием ключа до применения (latest_version ещё не увеличен). Прогресс\nвиден по списку операций и по info-методу после завершения",
+        "operationId": "S2SApiKeysRotate",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/encrypt/{name}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Шифрование данных ключом",
+        "description": "Шифрование данных ключом\n",
+        "operationId": "S2SApiKeysEncrypt",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyEncryptRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/decrypt/{name}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Дешифрование данных ключом",
+        "description": "Дешифрование данных ключом\n",
+        "operationId": "S2SApiKeysDecrypt",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyDecryptRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/rewrap/{name}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Перешифрование данных на актуальную версию ключа",
+        "description": "Перешифрование ранее полученного ciphertext на актуальную версию ключа.\nОткрытый текст при этом не возвращается, поэтому операцию можно делегировать\nсервису с ограниченными правами. Основной сценарий — массовое перешифрование\nключей шифрования данных (DEK) после ротации ключа шифрования ключей (KEK)",
+        "operationId": "S2SApiKeysRewrap",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyRewrapRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/DefaultResponse"
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    },
+    "/transit/datakey/{type}/{name}": {
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/XReqId"
+        },
+        {
+          "$ref": "#/components/parameters/XAuthToken"
+        },
+        {
+          "$ref": "#/components/parameters/XVaultToken"
+        },
+        {
+          "$ref": "#/components/parameters/DataKeyType"
+        },
+        {
+          "$ref": "#/components/parameters/KeyName"
+        }
+      ],
+      "post": {
+        "summary": "Генерация ключа шифрования данных",
+        "description": "Генерация нового высокоэнтропийного ключа шифрования данных (DEK),\nзашифрованного указанным ключом (KEK). Основа схемы envelope encryption:\nданные шифруются полученным DEK на стороне клиента, рядом с данными хранится\nтолько зашифрованный DEK (ciphertext), который разворачивается через\n/transit/decrypt/{name}.\n\nЕсли type=plaintext, в ответе возвращаются plaintext и ciphertext.\nЕсли type=wrapped, возвращается только ciphertext.\n\nВерсия KEK, которой зашифрован DEK, возвращается:\n- в поле key_version\n- в префиксе ciphertext, например: vault:v2:...",
+        "operationId": "S2SApiKeysGenerateDataKey",
+        "tags": [
+          "S2S-API-Keys"
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/KeyDataKeyRequest"
+              },
+              "examples": {
+                "empty": {
+                  "summary": "Без дополнительных параметров",
+                  "value": {}
+                },
+                "derived": {
+                  "summary": "Для derived-ключа",
+                  "value": {
+                    "context": "Ab3=="
+                  }
+                },
+                "full": {
+                  "summary": "Полный запрос",
+                  "value": {
+                    "context": "Ab3==",
+                    "associated_data": "YWJj",
+                    "bits": 256
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "ОК",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DefaultResponse"
+                },
+                "examples": {
+                  "plaintext": {
+                    "summary": "type=plaintext",
+                    "value": {
+                      "request_id": "e87f66ba-b6db-3078-e01d-ec37446d3d9d",
+                      "lease_id": "",
+                      "renewable": false,
+                      "lease_duration": 0,
+                      "data": {
+                        "ciphertext": "vault:v2:6aOuIpJRAB7HtrTSwe+eRioqbrq9AlX9Ml0JiT7F07iGCZq4/u9Q1r7DqBz5qicub9b/9HIY8r59bDFG",
+                        "key_version": 2,
+                        "plaintext": "2HGW4ol9StLWRLiykS8GgRo9QQlwwyLx6/jAYrDjWsY="
+                      },
+                      "wrap_info": null,
+                      "warnings": null,
+                      "auth": null
+                    }
+                  },
+                  "wrapped": {
+                    "summary": "type=wrapped",
+                    "value": {
+                      "request_id": "504e00b7-068a-9eae-1236-7d24d26e750e",
+                      "lease_id": "",
+                      "renewable": false,
+                      "lease_duration": 0,
+                      "data": {
+                        "ciphertext": "vault:v2:Ral4QzOEw/YzSf1kTzSpe5T3vjye68wWARdxbd/+h4BRUxM3VMAWcColnHhkd6fLnageA0T2FZOYnziS",
+                        "key_version": 2
+                      },
+                      "wrap_info": null,
+                      "warnings": null,
+                      "auth": null
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "$ref": "#/components/responses/DefaultError"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "XReqId": {
+        "name": "X-Req-Id",
+        "in": "header",
+        "description": "Id запроса пользователя",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "nullable": true
+        }
+      },
+      "XAuthToken": {
+        "name": "X-Auth-Token",
+        "in": "header",
+        "description": "Токен авторизации пользователя",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "XVaultToken": {
+        "name": "X-Vault-Token",
+        "in": "header",
+        "description": "Токен авторизации пользователя. Читается, только если X-Auth-Token\nне передан",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "List": {
+        "name": "list",
+        "in": "query",
+        "description": "Запрос на операцию list, для этого запроса можно использовать метод LIST",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "KeyName": {
+        "name": "name",
+        "in": "path",
+        "required": true,
+        "description": "Название ключа",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "DataKeyType": {
+        "name": "type",
+        "in": "path",
+        "required": true,
+        "description": "Тип генерируемого ключа шифрования данных:\nplaintext — вернуть DEK в открытом виде вместе с зашифрованным,\nwrapped — вернуть только зашифрованный DEK\n",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "plaintext",
+            "wrapped"
+          ]
+        }
+      },
+      "After": {
+        "name": "after",
+        "in": "query",
+        "description": "Фильтр по имени для пагинации",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Limit": {
+        "name": "limit",
+        "in": "query",
+        "description": "Количество элементов в ответе, по умолчанию возвращаются все",
+        "schema": {
+          "type": "integer"
+        }
+      }
+    },
+    "schemas": {
+      "KeysListResponse": {
+        "type": "object",
+        "properties": {
+          "keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "KeyCreateRequest": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Алгоритм шифрования. Если не указан, используется aes256-gcm96",
+            "enum": [
+              "aes128-gcm96",
+              "aes256-gcm96",
+              "chacha20-poly1305",
+              "xchacha20-poly1305"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание ключа"
+          },
+          "convergent_encryption": {
+            "type": "boolean",
+            "description": "Если включено, ключ будет поддерживать конвергентное шифрование. Требует derived=true"
+          },
+          "derived": {
+            "type": "boolean",
+            "description": "Использовать ли вывод ключа. Если true, все encrypt/decrypt должны предоставлять context"
+          },
+          "exportable": {
+            "type": "boolean",
+            "description": "Разрешить экспорт ключа"
+          },
+          "allow_plaintext_backup": {
+            "type": "boolean",
+            "description": "Разрешить резервное копирование ключа в открытом виде"
+          },
+          "key_size": {
+            "type": "integer",
+            "description": "Размер ключа в байтах для HMAC (32-512)"
+          },
+          "auto_rotate_period": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "description": "Период автоматической ротации. Принимается как целое число (секунды)\nили строка в формате Go duration (например '1h', '24h', '1h30m').\n'0' или \"0\" отключает. Не менее 1 часа\n"
+          }
+        }
+      },
+      "KeyEncryptRequest": {
+        "type": "object",
+        "description": "Должен быть задан либо plaintext, либо batch_input. Если задан batch_input,\nодиночные plaintext и context игнорируются",
+        "properties": {
+          "plaintext": {
+            "type": "string",
+            "format": "byte",
+            "description": "Открытый текст для шифрования (base64)"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа для шифрования. По умолчанию последняя"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Если не указан, генерируется случайно"
+          },
+          "associated_data": {
+            "type": "string",
+            "format": "byte",
+            "description": "Ассоциированные данные для AEAD (base64)"
+          },
+          "convergent_encryption": {
+            "type": "string",
+            "description": "Использовать ли конвергентное шифрование. Учитывается только при создании ключа"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Пользовательская метка элемента, возвращается в соответствующем элементе batch_results"
+          },
+          "batch_input": {
+            "type": "array",
+            "description": "Список элементов для шифрования одним запросом. Порядок ответа соответствует порядку запроса",
+            "items": {
+              "$ref": "#/components/schemas/KeyEncryptBatchItem"
+            }
+          },
+          "partial_failure_response_code": {
+            "type": "integer",
+            "description": "HTTP-код ответа, если часть элементов batch_input обработана с ошибкой,\nа часть успешно. По умолчанию 400\n"
+          }
+        }
+      },
+      "KeyEncryptBatchItem": {
+        "type": "object",
+        "required": [
+          "plaintext"
+        ],
+        "properties": {
+          "plaintext": {
+            "type": "string",
+            "format": "byte",
+            "description": "Открытый текст для шифрования (base64)"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа для шифрования. По умолчанию последняя"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Если не указан, генерируется случайно"
+          },
+          "associated_data": {
+            "type": "string",
+            "format": "byte",
+            "description": "Ассоциированные данные для AEAD (base64)"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Пользовательская метка элемента, возвращается в соответствующем элементе batch_results"
+          }
+        }
+      },
+      "KeyDecryptRequest": {
+        "type": "object",
+        "description": "Должен быть задан либо ciphertext, либо batch_input. Если задан batch_input,\nодиночные ciphertext и context игнорируются",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Необходим, если был указан при шифровании"
+          },
+          "associated_data": {
+            "type": "string",
+            "format": "byte",
+            "description": "Ассоциированные данные для AEAD (base64)"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Пользовательская метка элемента, возвращается в соответствующем элементе batch_results"
+          },
+          "batch_input": {
+            "type": "array",
+            "description": "Список элементов для дешифрования одним запросом. Порядок ответа соответствует порядку запроса",
+            "items": {
+              "$ref": "#/components/schemas/KeyDecryptBatchItem"
+            }
+          },
+          "partial_failure_response_code": {
+            "type": "integer",
+            "description": "HTTP-код ответа, если часть элементов batch_input обработана с ошибкой,\nа часть успешно. По умолчанию 400\n"
+          }
+        }
+      },
+      "KeyDecryptBatchItem": {
+        "type": "object",
+        "required": [
+          "ciphertext"
+        ],
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Необходим, если был указан при шифровании"
+          },
+          "associated_data": {
+            "type": "string",
+            "format": "byte",
+            "description": "Ассоциированные данные для AEAD (base64)"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Пользовательская метка элемента, возвращается в соответствующем элементе batch_results"
+          }
+        }
+      },
+      "KeyRewrapRequest": {
+        "type": "object",
+        "description": "Должен быть задан либо ciphertext, либо batch_input. Если задан batch_input,\nодиночные ciphertext и context игнорируются",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст для перешифрования"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, на которую перешифровать. По умолчанию последняя"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Необходим, если был указан при шифровании"
+          },
+          "batch_input": {
+            "type": "array",
+            "description": "Список элементов для перешифрования одним запросом. Порядок ответа соответствует порядку запроса",
+            "items": {
+              "$ref": "#/components/schemas/KeyRewrapBatchItem"
+            }
+          }
+        }
+      },
+      "KeyRewrapBatchItem": {
+        "type": "object",
+        "required": [
+          "ciphertext"
+        ],
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст для перешифрования"
+          },
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, на которую перешифровать. По умолчанию последняя"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64). Необходим, если был указан при шифровании"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Пользовательская метка элемента, возвращается в соответствующем элементе batch_results"
+          }
+        }
+      },
+      "KeyDataKeyRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "context": {
+            "type": "string",
+            "format": "byte",
+            "description": "Контекст для вывода ключа (base64). Обязателен если ключ создан с derived=true"
+          },
+          "nonce": {
+            "type": "string",
+            "format": "byte",
+            "description": "Nonce (base64), ровно 96 бит. Не должен повторяться для одного контекста"
+          },
+          "associated_data": {
+            "type": "string",
+            "format": "byte",
+            "description": "Ассоциированные данные для AEAD (base64)"
+          },
+          "bits": {
+            "type": "integer",
+            "description": "Длина генерируемого ключа в битах. По умолчанию 256",
+            "enum": [
+              128,
+              256,
+              512
+            ],
+            "default": 256
+          }
+        }
+      },
+      "KeyConfigRequest": {
+        "type": "object",
+        "properties": {
+          "min_decryption_version": {
+            "type": "integer",
+            "nullable": true,
+            "minimum": 0,
+            "description": "Минимальная версия ключа, которой разрешено дешифровать. Позволяет вывести\nиз обращения старые версии после ротации. Не больше latest_version и не меньше\nmin_available_version. null равнозначен 0: значение сбрасывается до минимально\nдопустимого (1)\n"
+          },
+          "min_encryption_version": {
+            "type": "integer",
+            "nullable": true,
+            "minimum": 0,
+            "description": "Минимальная версия ключа, которой разрешено шифровать. Должна быть 0\n(использовать последнюю версию) либо не меньше min_decryption_version, и не\nменьше min_available_version. null равнозначен 0\n"
+          },
+          "deletion_allowed": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "Разрешено ли удаление ключа. null равнозначен false"
+          },
+          "exportable": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "Разрешить экспорт ключа. После включения отключить нельзя: запрос завершится\nуспешно, значение останется включённым. null равнозначен false, то есть\nпопытке выключения\n"
+          },
+          "allow_plaintext_backup": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "Разрешить резервное копирование ключа в открытом виде. После включения отключить\nнельзя. null равнозначен false, то есть попытке выключения\n"
+          },
+          "auto_rotate_period": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "description": "Период автоматической ротации. Принимается как целое число (секунды)\nили строка в формате Go duration (например '1h', '24h', '1h30m').\n'0' или \"0\" отключает, не менее 1 часа.\nЕсли не передан либо передан null, период не изменяется\n"
+          }
+        }
+      },
+      "KeyEncryptResponse": {
+        "type": "object",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, использованная для шифрования. Присутствует только в одиночном режиме (не batch)"
+          },
+          "batch_results": {
+            "type": "array",
+            "description": "Результаты пакетной операции в порядке элементов batch_input",
+            "items": {
+              "$ref": "#/components/schemas/KeyEncryptBatchResult"
+            }
+          }
+        }
+      },
+      "KeyEncryptBatchResult": {
+        "type": "object",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Зашифрованный текст"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, использованная для шифрования"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Метка, переданная в соответствующем элементе batch_input"
+          },
+          "error": {
+            "type": "string",
+            "description": "Описание ошибки, если элемент обработать не удалось"
+          }
+        }
+      },
+      "KeyDecryptResponse": {
+        "type": "object",
+        "properties": {
+          "plaintext": {
+            "type": "string",
+            "format": "byte",
+            "description": "Расшифрованный текст"
+          },
+          "batch_results": {
+            "type": "array",
+            "description": "Результаты пакетной операции в порядке элементов batch_input",
+            "items": {
+              "$ref": "#/components/schemas/KeyDecryptBatchResult"
+            }
+          }
+        }
+      },
+      "KeyDecryptBatchResult": {
+        "type": "object",
+        "properties": {
+          "plaintext": {
+            "type": "string",
+            "format": "byte",
+            "description": "Расшифрованный текст"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Метка, переданная в соответствующем элементе batch_input"
+          },
+          "error": {
+            "type": "string",
+            "description": "Описание ошибки, если элемент обработать не удалось"
+          }
+        }
+      },
+      "KeyRewrapResponse": {
+        "type": "object",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Перешифрованный текст"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, на которую перешифрованы данные. Присутствует только в одиночном режиме (не batch)"
+          },
+          "batch_results": {
+            "type": "array",
+            "description": "Результаты пакетной операции в порядке элементов batch_input",
+            "items": {
+              "$ref": "#/components/schemas/KeyRewrapBatchResult"
+            }
+          }
+        }
+      },
+      "KeyRewrapBatchResult": {
+        "type": "object",
+        "properties": {
+          "ciphertext": {
+            "type": "string",
+            "description": "Перешифрованный текст"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия ключа, на которую перешифрованы данные"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Метка, переданная в соответствующем элементе batch_input"
+          },
+          "error": {
+            "type": "string",
+            "description": "Описание ошибки, если элемент обработать не удалось"
+          }
+        }
+      },
+      "KeyDataKeyResponse": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "ciphertext",
+          "key_version"
+        ],
+        "properties": {
+          "plaintext": {
+            "type": "string",
+            "format": "byte",
+            "description": "Сгенерированный ключ шифрования данных в открытом виде (base64). Возвращается только для type=plaintext"
+          },
+          "ciphertext": {
+            "type": "string",
+            "description": "Сгенерированный ключ шифрования данных, зашифрованный указанным ключом"
+          },
+          "key_version": {
+            "type": "integer",
+            "description": "Версия KEK, которой был зашифрован DEK; также продублирована в префиксе ciphertext, например vault:v2:..."
+          }
+        }
+      },
+      "KeyReadResponse": {
+        "type": "object",
+        "required": [
+          "type",
+          "name",
+          "latest_version",
+          "min_available_version",
+          "min_decryption_version",
+          "min_encryption_version",
+          "deletion_allowed",
+          "derived",
+          "exportable",
+          "allow_plaintext_backup",
+          "imported_key",
+          "soft_deleted",
+          "supports_encryption",
+          "supports_decryption",
+          "supports_derivation",
+          "supports_signing",
+          "auto_rotate_period"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Тип ключа"
+          },
+          "name": {
+            "type": "string",
+            "description": "Имя ключа"
+          },
+          "keys": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Версии ключа. Для симметричных ключей значение — время создания\n(unix timestamp), для асимметричных — объект AsymmetricKeyVersion,\nгде время создания указано строкой RFC3339"
+          },
+          "latest_version": {
+            "type": "integer",
+            "description": "Последняя версия ключа"
+          },
+          "min_available_version": {
+            "type": "integer",
+            "description": "Минимальная доступная версия (версии до нее удалены)"
+          },
+          "min_decryption_version": {
+            "type": "integer",
+            "description": "Минимальная версия для дешифрования"
+          },
+          "min_encryption_version": {
+            "type": "integer",
+            "description": "Минимальная версия для шифрования"
+          },
+          "deletion_allowed": {
+            "type": "boolean",
+            "description": "Разрешено ли удаление ключа"
+          },
+          "derived": {
+            "type": "boolean",
+            "description": "Используется ли вывод ключа"
+          },
+          "exportable": {
+            "type": "boolean",
+            "description": "Разрешен ли экспорт ключа"
+          },
+          "allow_plaintext_backup": {
+            "type": "boolean",
+            "description": "Разрешено ли резервное копирование в открытом виде"
+          },
+          "imported_key": {
+            "type": "boolean",
+            "description": "Был ли ключ импортирован"
+          },
+          "imported_key_allow_rotation": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "Разрешена ли ротация импортированного ключа. Возвращается только при imported_key=true"
+          },
+          "soft_deleted": {
+            "type": "boolean",
+            "description": "Помечен ли ключ мягко удаленным"
+          },
+          "supports_encryption": {
+            "type": "boolean",
+            "description": "Поддерживает ли ключ шифрование"
+          },
+          "supports_decryption": {
+            "type": "boolean",
+            "description": "Поддерживает ли ключ дешифрование"
+          },
+          "supports_derivation": {
+            "type": "boolean",
+            "description": "Поддерживает ли ключ вывод ключа"
+          },
+          "supports_signing": {
+            "type": "boolean",
+            "description": "Поддерживает ли ключ подпись"
+          },
+          "auto_rotate_period": {
+            "type": "integer",
+            "description": "Период автоматической ротации в секундах, 0 — отключена"
+          },
+          "key_size": {
+            "type": "integer",
+            "description": "Размер ключа в байтах. Присутствует только для HMAC-ключей с ненулевым key_size"
+          },
+          "backup_info": {
+            "$ref": "#/components/schemas/KeyBackupRestoreInfo"
+          },
+          "restore_info": {
+            "$ref": "#/components/schemas/KeyBackupRestoreInfo"
+          },
+          "kdf": {
+            "type": "string",
+            "description": "Алгоритм вывода ключа. Присутствует только при derived=true",
+            "enum": [
+              "hmac-sha256-counter",
+              "hkdf_sha256"
+            ]
+          },
+          "kdf_mode": {
+            "type": "string",
+            "description": "Режим KDF. Присутствует только при derived=true и KDF=hmac-sha256-counter",
+            "enum": [
+              "hmac-sha256-counter"
+            ]
+          },
+          "convergent_encryption": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "Включена ли конвергентная криптография. Присутствует только при derived=true"
+          },
+          "convergent_encryption_version": {
+            "type": "integer",
+            "description": "Версия конвергентной криптографии. Присутствует только при derived=true и convergent_encryption=true"
+          }
+        }
+      },
+      "KeyBackupRestoreInfo": {
+        "type": "object",
+        "required": [
+          "time",
+          "version"
+        ],
+        "properties": {
+          "time": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Время операции"
+          },
+          "version": {
+            "type": "integer",
+            "description": "Версия ключа"
+          }
+        }
+      },
+      "AsymmetricKeyVersion": {
+        "type": "object",
+        "description": "Версия асимметричного ключа в поле keys",
+        "required": [
+          "name",
+          "public_key",
+          "certificate_chain",
+          "creation_time"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Имя алгоритма версии, для эллиптических кривых — имя кривой"
+          },
+          "public_key": {
+            "type": "string",
+            "description": "Публичная часть ключа. Для ECDSA/RSA — в формате PEM, для ed25519 — base64-кодированный сырой ключ"
+          },
+          "certificate_chain": {
+            "type": "string",
+            "description": "Цепочка сертификатов, пустая строка если не задана"
+          },
+          "creation_time": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Время создания версии в формате RFC3339"
+          }
+        }
+      },
+      "DefaultError": {
+        "type": "object",
+        "required": [
+          "errors"
+        ],
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "DefaultResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/KeysListResponse"
+              },
+              {
+                "$ref": "#/components/schemas/KeyEncryptResponse"
+              },
+              {
+                "$ref": "#/components/schemas/KeyDecryptResponse"
+              },
+              {
+                "$ref": "#/components/schemas/KeyRewrapResponse"
+              },
+              {
+                "$ref": "#/components/schemas/KeyDataKeyResponse"
+              },
+              {
+                "$ref": "#/components/schemas/KeyReadResponse"
+              }
+            ]
+          },
+          "wrap_info": {
+            "nullable": true,
+            "description": "Информация о response wrapping",
+            "type": "object",
+            "additionalProperties": true
+          },
+          "warnings": {
+            "description": "Some warnings",
+            "nullable": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auth": {
+            "nullable": true,
+            "description": "Информация об аутентификации запроса",
+            "type": "object",
+            "additionalProperties": true
+          },
+          "lease_duration": {
+            "type": "integer",
+            "description": "Длительность аренды",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "lease_id": {
+            "type": "string",
+            "description": "ID аренды",
+            "x-omitempty": false,
+            "x-omitzero": false
+          },
+          "renewable": {
+            "type": "boolean",
+            "description": "Возможность продления",
+            "x-omitempty": false,
+            "x-omitzero": false
+          }
+        }
+      }
+    },
+    "responses": {
+      "DefaultError": {
+        "description": "Default error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/DefaultError"
+            }
+          }
+        }
+      },
+      "DefaultResponse": {
+        "description": "ОК",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/DefaultResponse"
+            }
+          }
+        }
+      }
+    }
+  }
+}

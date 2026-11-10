@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Бұлт туралы негізгі және құқықтық ақпарат)[id=start-support]}
 
-VK Cloud сервистеріне техникалық қолдау туралы ақпарат.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+Сервистерді техникалық қолдау туралы ақпарат.

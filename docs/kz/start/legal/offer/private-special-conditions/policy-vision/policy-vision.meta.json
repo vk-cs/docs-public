@@ -1,0 +1,16 @@
+{
+  "title": "«Vision» бағдарламасына арналған лицензиялық келісім",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «VK Cloud» Платформасы аясында «Vision» ЭЕМ бағдарламасын пайдалануға арналған лицензиялық келісім болып табылады. ",
+  "sectionTitle": "«Vision» бағдарламасына арналған лицензиялық келісім",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 7,
+  "uuid": "d4270297-4419-4371-a203-9f7fa1e15539",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "title": "Бұлттық платформаның Cloud Monitoring сервисімен интеграция",
+  "title": "Бұлт платформасының Cloud Monitoring қызметімен интеграция",
   "shortDescription": "",
-  "metaDescription": "Бұлттық платформаның Cloud Monitoring сервисімен интеграция",
-  "sectionTitle": "Бұлттық платформаның Cloud Monitoring сервисімен интеграция",
+  "metaDescription": "Бұлт платформасының Cloud Monitoring қызметімен интеграция",
+  "sectionTitle": "Бұлт платформасының Cloud Monitoring қызметімен интеграция",
   "weight": 4,
+  "uuid": "4d8744c8-8814-4c58-9b5d-e971ac52c8b2",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "3bebd234-4830-4ca4-b308-22465951bd70"
+  }
 }

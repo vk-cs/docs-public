@@ -1,0 +1,14 @@
+{
+  "title": "Standalone-тағы скрипттерден Spark кластеріне қосылу",
+  "shortDescription": "Сервис пайдаланушысын қалай жасау және Standalone-тағы скрипттерден Spark кластеріне қосылу",
+  "metaDescription": "VK Data Platform Cloud Spark кластеріне Standalone-тағы скрипттерден сервис пайдаланушыларын жасау және қосудың қадамдық нұсқаулығы",
+  "sectionTitle": "Standalone-тағы скрипттерден Spark кластеріне қосылу",
+  "weight": 8,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "a21269b3-2eb5-44ed-81fb-e89512704951"
+}

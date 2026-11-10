@@ -1,15 +1,15 @@
 {
   "title": "Cloud Logging",
-  "shortDescription": "Cloud Logging сервисінің API көмегімен логтарды қарау",
-  "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыруға және VK Cloud-пен жұмыс істеуге арналған жеке құралдарды әзірлеуге арналған жария API спецификациялары. Cloud Logging сервисінің API-і",
+  "shortDescription": "Cloud Logging қызметінің API көмегімен логтарды қарау",
+  "metaDescription": "Бұлттық қызметтерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарыңызды әзірлеуге арналған публичті API спецификациялары. Cloud Logging қызметінің API",
   "sectionTitle": "Cloud Logging",
   "icon": "",
   "weight": 8,
   "isBeta": true,
+  "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ac103665-1ef2-40e5-ac95-8d947789c6d2"
+  }
 }

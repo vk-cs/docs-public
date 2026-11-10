@@ -1,0 +1,18 @@
+{
+  "title": "Жобаның балансын көру",
+  "shortDescription": "Жобаның балансын қалай көруге болады",
+  "metaDescription": "VK Cloud: жобаның балансын қалай көруге болады",
+  "sectionTitle": "Жобаның балансын көру",
+  "icon": "",
+  "weight": 7,
+  "uuid": "3973ff36-d87e-45bc-9c76-8b4aaa084415",
+  "build": {
+    "for": [
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
+    ]
+  }
+}

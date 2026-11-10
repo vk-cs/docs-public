@@ -1,17 +1,15 @@
-# {heading(Terraform көмегімен кластерді құру)[id=mk8s-create-terraform]}
+# {heading(Terraform көмегімен кластер құру)[id=mk8s-create-terraform]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Kubernetes кластерін Terraform арқылы ғана емес, {linkto(../create-webui-gen-2#mk8s-create-webui-gen-2)[text={var(cloud)} жеке кабинеті]} арқылы да құруға болады.
+Kubernetes кластерін тек Terraform арқылы ғана емес, сонымен қатар {linkto(../create-webui-gen-2#mk8s-create-webui-gen-2)[text={var(cloud)} жеке кабинеті]} арқылы да құруға болады.
 
-Әртүрлі кластерлерді құруға арналған дайын конфигурациялық файлдар мысалдары Terraform бөлімінде [келтірілген](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create).
+Әртүрлі кластерлерді құруға арналған дайын конфигурациялық файл мысалдары Terraform бөлімінде [келтірілген](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create).
 
 {note:warn}
+Кластерді құру кезінде оған {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервистік жүктеме балансирі]} құрылады. NGINX Ingress Controller {linkto(../../../concepts/addons-and-settings/addons#mk8s-addons)[text=аддоны]} таңдалған жағдайда оған {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартты жүктеме балансирі]} құрылады.
 
-Кластерді құру кезінде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгергіші]} құрылады. NGINX Ingress Controller {linkto(../../../concepts/addons-and-settings/addons#mk8s-addons)[text=аддонын]} таңдаған кезде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме теңгергіші]} құрылады.
-
-Теңгергіштерді пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
-
+Балансирлерді пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=төлемақыға негізделеді]}.
 {/note}
 
 ## {heading(Кластерді құру алдында)[id=mk8s-create-terraform-prepare]}
@@ -97,136 +95,6 @@ Kubernetes кластерін Terraform арқылы ғана емес, {linkto(
       ```
 
       Нұсқа ретінде бұрын алынған нұсқа нөмірін көрсетіңіз.
-
-## {heading(2. Кластер конфигурациясын сипаттаңыз)[id=mk8s-create-terraform-describe-conf]}
-
-Конфигурациялық файлға кластер ресурсін қосыңыз:
-
-```hcl
-resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-  name                     = "k8s-cluster"
-  cluster_type             = "<ТИП_КЛАСТЕРА>"
-  cluster_template_id      = data.vkcs_kubernetes_clustertemplate.k8s-template.id
-  master_flavor            = data.vkcs_compute_flavor.k8s-master-flavor.id
-  master_count             = <КОЛИЧЕСТВО_MASTER_УЗЛОВ>
-  labels = {
-    cluster_node_volume_type = "<ТИП_ДИСКА>"
-  }
-  network_id               = "<ИДЕНТИФИКАТОР_СЕТИ>"
-  subnet_id                = "<ИДЕНТИФИКАТОР_ПОДСЕТИ>"
-  availability_zone        = "<ЗОНА_ДОСТУПНОСТИ>"
-  floating_ip_enabled      = true
-}
-```
-
-Мұнда:
-
-- `cluster_type` — кластер түрі:
-
-  - `standard` (әдепкі бойынша) — кластердің барлық master-түйіндері бір {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағында]} орналасады. Істен шығуға төзімділік аймақ деңгейінде қамтамасыз етіледі.
-  - `regional` — кластердің master-түйіндері үш қолжетімділік аймағының әрқайсысында орналасады, бұл аймақтардың бірі істен шыққан жағдайда да басқаруды сақтауға мүмкіндік береді. Master-түйіндердің жалпы саны — 3 немесе одан көп.
-
-- `master_count` — master-түйіндер саны. Тақ сан болуы керек. Стандартты кластер үшін master-түйіндер саны `1`, `3` немесе `5` болуы керек. Аймақтық кластер үшін — `3` немесе `5`. Толығырақ {linkto(../../../concepts/architecture#mk8s-architecture)[text=Сервис архитектурасы]} бөлімінде.
-- `labels.cluster_node_volume_type` — master-түйіндердің {linkto(../../../concepts/storage#mk8s-storage-supported-storage-types)[text=деректерді сақтау]} үшін диск түрі. Таңдалған диск түрі кластердің өнімділігіне әсер етеді. Қолжетімді мәндер: `ceph-ssd` (әдепкі бойынша) және `high-iops`.
-- `availability_zone` — кластердің қолжетімділік аймағы. Егер кластер түрі стандартты болса, параметрді пайдаланыңыз. `Москва` аймағы үшін үш қолжетімділік аймағының бірін көрсетіңіз: `GZ1`, `ME1` немесе `PA2`.
-
-   {note:info}
-
-   `PA2` қолжетімділік аймағын тек {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} пайдаланатын жобалар үшін таңдауға болады.
-
-   {/note}
-
-- `availability_zones` — кластердің қолжетімділік аймақтары. Егер кластер түрі аймақтық болса, параметрді пайдаланыңыз. `Москва` аймағы үшін үш қолжетімділік аймағын көрсетіңіз: `["GZ1", "ME1", "PA2"]`. Егер кластер аймақтық болса және `availability_zones` параметрі көрсетілмесе, қолжетімділік аймақтары автоматты түрде қойылады.
-- `network_id` және `subnet_id` — тиісінше желі мен ішкі желінің идентификаторлары. Оларды әртүрлі тәсілдермен көрсетуге болады:
-
-  {tabs}
-
-  {tab(Идентификаторларды көрсету)}
-
-  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса және олардың идентификаторлары сізге белгілі болса, идентификаторларды нақты көрсетіңіз.
-
-  Мысал:
-
-  ```hcl
-  resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-    name                = "k8s-cluster"
-    ...
-    network_id          = "sample-id-4212-a090-9f30519275e5"
-    subnet_id           = "sample-id-4bd6-bda4-f66dc7fbaa4f"
-    ...
-  }
-  ```
-
-  {/tab}
-
-  {tab(Дереккөздерді пайдалану)}
-
-  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса, бірақ олардың идентификаторлары сізге белгісіз болса, тиісті дереккөздерді көрсетіп, идентификаторларды алыңыз.
-
-  Мысал:
-
-  ```hcl
-  ...
-  data "vkcs_networking_network" "k8s-network" {
-      name = "default"
-  }
-  data "vkcs_networking_subnet" "k8s-subnet" {
-      name = "default_subnet"
-      network_id = data.vkcs_networking_network.k8s-network.id
-  }
-  ...
-  resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-    name                = "k8s-cluster"
-    ...
-    network_id          = data.vkcs_networking_network.k8s-network.id
-    subnet_id           = data.vkcs_networking_subnet.k8s-subnet.id
-    ...
-  }
-  ```
-
-  {/tab}
-
-  {tab(Құрылған ресурстарды пайдалану)}
-
-  Егер қажетті желілер мен ішкі желілер әлі жоқ болса, оларды құрып, идентификаторларын алыңыз:
-
-  ```hcl
-  ...
-  resource "vkcs_networking_network" "k8s-network" {
-  name           = "default"
-  admin_state_up = "true"
-  }
-  resource "vkcs_networking_subnet" "k8s-subnet" {
-      name       = "default_subnet"
-      network_id = vkcs_networking_network.k8s-network.id
-      cidr       = "<Адрес подсети вида 192.168.0.0/24>"
-  }
-  ...
-  resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-    name                = "k8s-cluster"
-    ...
-    network_id          = vkcs_networking_network.k8s-network.id
-    subnet_id           = vkcs_networking_subnet.k8s-subnet.id
-    ...
-  }
-  ```
-
-  {/tab}
-
-  {/tabs}
-
-    {note:info}
-
-    Интернетке қолжетімсіз кластер құру үшін қосылған {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-shadow-port)[text=Shadow port]} бар желіні көрсетіңіз.
-
-    {/note}
-
-- `floating_ip_enabled` — API-кластерге жария IP мекенжайын тағайындау:
-
-  - `true` — кластерді құру кезінде оған интернеттен кластерге қол жеткізу үшін {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP мекенжайы]} тағайындалады. Мұндай IP мекенжайын тағайындау үшін `subnet_id` идентификаторы бар кластердің ішкі желісі сыртқы желіге қолжетімді маршрутизаторға {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-internet-access)[text=қосылған]} болуы керек.
-  - `false` — кластерге Floating IP мекенжайы тағайындалмайды.
-
-Terraform көмегімен кластерге аддондарды орнату үшін {linkto(../../addons/manage-addons#mk8s-manage-addons-available)[text=қолжетімді аддондар тізімін алыңыз]} және қажеттілерін {linkto(../../addons/advanced-installation#mk8s-advanced-installation)[text=орнатыңыз]}.
 
 ## {heading(3. Бір немесе бірнеше worker-түйіндер тобының конфигурациясын сипаттаңыз)[id=mk8s-create-terraform-describe-workers]}
 

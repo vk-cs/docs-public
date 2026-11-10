@@ -1,35 +1,33 @@
 # {heading(Cloud Monitoring)[id=api-spec-monitoring2]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-[Cloud Monitoring](/kz/monitoring-services/monitoring) сервисінің REST API-ы мониторинг агенті жинаған метрикаларды оқуды қолдайды:
+{linkto(../../../../monitoring-services/monitoring#monitoring)[text=Cloud Monitoring]} сервисінің REST API мониторинг агентімен жиналған метрикактерді оқуға қолдау көрсетеді:
 
-- берілген уақыт сәті үшін метрикаларды алу;
-- берілген уақыт аралығы үшін метрикаларды алу;
-- метрикаларды олардың белгілері бойынша іздеу.
+- берілген уақыт мезеті үшін метрикактерді алу;
+- берілген уақыт диапазоны үшін метрикактерді алу;
+- метрикактерді олардың белгілері бойынша іздеу.
 
-Метрикаларды оқу сұраулары [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/) тілінде құрастырылады.
+Метрикактерді оқу сұраулары [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/) тілінде қалыптастырылады.
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. Жобада Cloud Monitoring сервисі қосылғанына көз жеткізіңіз, қажет болса оны [техникалық қолдау](/kz/contacts) арқылы қосыңыз.
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, API арқылы қолжетімділікті [қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
+1. Жобада Cloud Monitoring сервисі қосылғанына көз жеткізіңіз, қажет болса оны [техникалық қолдау көрсету](/kz/contacts) арқылы қосыңыз.
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+1. Егер әлі жасалмаса, API бойынша қолжетімділікті {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Настройки проекта** (Жоба баптаулары) тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. Cloud Monitoring сервисі үшін эндпоинтті табыңыз. Егер ол тізімде болмаса, мынаны пайдаланыңыз:
+1. Cloud Monitoring сервисі үшін эндпоинтті табыңыз. Егер ол тізімде болмаса, мыналарды пайдаланыңыз:
 
-   - Мәскеу өңірі үшін — `https://cloud.vk.ru/monitoring/query/v2`;
-   - Қазақстан өңірі үшін — `https://kz.cloud.vk.kz/monitoring/query/v2`.
+   - Москва өңірі үшін — `https://cloud.vk.ru/monitoring/query/v2`;
+   - Казахстан өңірі үшін — `https://kz.cloud.vk.kz/monitoring/query/v2`.
 
-1. `X-Auth-Token` қолжетімділік токенін [алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token).
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/monitoring-api.json "download") арқылы жүктеп ала аласыз.
-
+JSON пішіміндегі бастапқы спецификацияны [сілтеме](assets/monitoring-api.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/monitoring-api.json)

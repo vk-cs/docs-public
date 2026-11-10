@@ -1,40 +1,38 @@
 # {heading(CDN)[id=api-spec-cdn]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-REST API [CDN](/kz/networks/cdn) CDN ресурстарының жұмысын басқару мен мониторингтеуді қолдайды:
+{linkto(../../../../networks/cdn#cdn)[text=CDN]} REST API CDN-ресурстарының жұмысын басқаруды және мониторингті қолдайды:
 
-- ағымдағы аккаунттың канондық домендік жазбасын (CNAME) қарау;
-- бастау көздері топтарын жасау және басқару;
-- CDN ресурстарын жасау және басқару;
-- [Let's Encrypt](https://letsencrypt.org) сертификатын алу және кері қайтарып алу;
-- SSL сертификаттарын қарау, қосу, өзгерту, жою;
-- файлдарды CDN серверіне алдын ала жүктеу;
-- CDN серверінің кэшін тазалау;
-- CDN ресурстарының жұмысқа қабілеттілігін мониторингтеу.
+- ағымдағы аккаунттың канондық домендік жазбасын (CNAME) көру;
+- дереккөздер топтарын жасау және басқару;
+- CDN-ресурстарды жасау және басқару;
+- [Let's Encrypt](https://letsencrypt.org/ru/) сертификатын алу және қайтару;
+- SSL-сертификаттарды көру, қосу, өзгерту, жою;
+- файлдарды CDN-серверге алдын ала жүктеу;
+- CDN-сервердің кешін тазарту;
+- CDN-ресурстардың жұмыс қабілеттілігін мониторингтеу.
 
-{cut(Endpoint алу, авторизация және аутентификация)}
+{cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, [API арқылы қолжетімділікті қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api).
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. API арқылы қолжетімділік әлі қосылмаған болса, оны {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Бет тақырыбындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API арқылы қолжетімділік** қойындысына өтіңіз.
-1. `X-Auth-Token` [қолжетімділік токенін алыңыз](/kz/tools-for-using-services/api/rest-api/case-keystone-token). Сұрауларды жіберу кезінде токенді тақырыпта пайдаланыңыз.
-1. Сұрау жолында `https://kz.cloud.vk.kz/api/cdn/api/v1/` endpoint-ін пайдаланыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}. Сұрауларды жіберген кезде токенді тақырыпта пайдаланыңыз.
+1. Сұрау жолында `https://msk.cloud.vk.ru/api/cdn/api/v1/` эндпоинтін пайдаланыңыз.
 
 Сұрау мысалы:
 
 ```curl
-curl --location "https://kz.cloud.vk.kz/api/cdn/api/v1/projects/example4ef0547e5b222f/resources" \
+curl --location "https://msk.cloud.vk.ru/api/cdn/api/v1/projects/example4ef0547e5b222f/resources" \
 --header "X-Auth-Token: gAAAAABlcqk9GAzdp-XXXX"
 ```
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/api-cdn.json "download"). арқылы жүктеп ала аласыз.
-
+JSON форматындағы бастапқы спецификацияны [сілтеме](assets/api-cdn.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/api-cdn.json)

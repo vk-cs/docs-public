@@ -1,0 +1,14 @@
+{
+  "title": "Тұжырымдамалар",
+  "shortDescription": "Lakekeeper қызметінің негізгі ұғымдары мен сипаттамалары",
+  "metaDescription": "Тұжырымдамалар",
+  "sectionTitle": "Тұжырымдамалар",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "d0ef11a6-d6fb-4bb2-9972-1e03294b1687"
+}

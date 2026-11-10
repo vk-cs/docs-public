@@ -1,0 +1,14 @@
+{
+  "title": "Сервис туралы",
+  "shortDescription": "Cloud PostgreSQL сервисі туралы ақпарат",
+  "metaDescription": "VK Data Platform-тағы Cloud PostgreSQL: сервис туралы ақпарат",
+  "sectionTitle": "Сервис туралы",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "48b93406-acc8-4021-94e4-287a4bef2670"
+}

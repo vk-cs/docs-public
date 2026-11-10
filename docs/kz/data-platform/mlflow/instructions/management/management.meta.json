@@ -1,11 +1,11 @@
 {
-  "title": "Сервис данасымен жұмыс істеу",
-  "shortDescription": "Жобада сервис данасын қалай басқаруға болады",
-  "metaDescription": "VK Data Platform-та MLflow сервис даналарын қалай басқаруға болатынын біліңіз",
-  "sectionTitle": "Сервис данасымен жұмыс істеу",
+  "title": "Сервис дан Pickergesімен жұмыс істеу",
+  "shortDescription": "Жобада сервис дан Pickergesін басқару жолы",
+  "metaDescription": "VK Data Platform-та MLflow сервисінің дан Pickergesін қалай басқаруды біліңіз",
+  "sectionTitle": "Сервис дан Pickergesімен жұмыс істеу",
   "weight": 2,
   "build": {
     "for": ["data-p-pdf"]
   },
-  "uuid": "1dd20105-262d-4f80-99bd-686db0fe67ca"
+  "uuid": "7528f37f-d878-4be2-b848-64753d8b89ac"
 }

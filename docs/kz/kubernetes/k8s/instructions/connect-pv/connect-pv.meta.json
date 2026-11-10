@@ -1,0 +1,17 @@
+{
+  "title": "Тұрақты жадты қосу",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Тұрақты жадты қосу",
+  "icon": "",
+  "weight": 14,
+  "uuid": "402cfa6c-de9c-4083-a3ed-c675e28243d9",
+  "build": {
+    "for": [
+      "private",
+      "private-pdf",
+      "private-pg",
+      "private-pg-pdf"
+    ]
+  }
+}

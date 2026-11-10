@@ -1,13 +1,13 @@
 {
-  "title": "Schemas секциясы",
-  "shortDescription": "SaaS-қосымшасын қосу шеберіндегі тарифтік жоспар опцияларының параметрлері",
-  "metaDescription": "SaaS-қосымшасы конфигурациясының JSON-файлындағы schemas секциясы: Marketplace-те SaaS-қосымшасын қосу шеберіндегі тарифтік жоспар опцияларының параметрлері.",
-  "sectionTitle": "Schemas секциясы",
+  "title": "schemas бөлімі",
+  "shortDescription": "SaaS-қосымшаны қосу шеберіндегі тарифтік жоспар опцияларының параметрлері",
+  "metaDescription": "SaaS-қосымша конфигурациясының JSON-файлындағы schemas бөлімі: Marketplace-тегі SaaS-қосымшаны қосу шеберіндегі тарифтік жоспар опцияларының параметрлері.",
+  "sectionTitle": "schemas бөлімі",
   "weight": 5,
+  "uuid": "4bdde308-3854-41d5-b242-131983dc0245",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "25a49353-f2b9-46f4-a210-09b5bd253687"
+  }
 }

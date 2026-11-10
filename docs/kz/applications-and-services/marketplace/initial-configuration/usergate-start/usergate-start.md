@@ -1,28 +1,28 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(UserGate NGFW орнату)[id=marketplace-usergate-start]}
 
-UserGate NGFW сервисінің көмегімен инфрақұрылымды желілік шабуылдардан қорғау үшін келесі буын файрволын баптай аласыз. Сервистің мүмкіндіктері:
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+UserGate NGFW сервисінің көмегімен инфрақұрылымды желілік шабуылдардан қорғау үшін жаңа буын файерволын теңшеуге болады. Сервис мүмкіндіктері:
 
 - шабуылдардан қорғау;
 - трафикті басқару;
 - пайдаланушыларды аутентификациялау;
-- интернеттің сыртқы ресурстарын қарау кезінде зиянды мазмұнды бұғаттау.
+- интернеттің сыртқы ресурстарын қараған кезде зиянды мазмұнды блоктау.
 
-{cut(Сервиске арналған сервердің ұсынылатын техникалық сипаттамалары)}
+{cut(Сервиске арналған ұсынылатын сервердің техникалық сипаттамалары)}
 
 ![Сервиске арналған ұсынылатын техникалық сипаттамалар](./assets/usergate_vm_recommendation_table.png){params[noBorder=true]}
 
-24 CPU-дан артық ВМ жасау үшін [техникалық қолдауға](/kz/contacts) хабарласыңыз.
+24 CPU-дан көп процессоры бар ВМ жасау үшін [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініңіз.
 
 {/cut}
 
-Бұл нұсқаулық VK Cloud-тағы ВМ-ге UserGate NGFW сервисін өрістетуге, UserGate NGFW консоліне қосылуға және сервис консолі арқылы жаңа желі қосуға көмектеседі.
+Бұл нұсқаулық {var(cloud)} өнімінде ВМ-де UserGate NGFW сервисін орнатуға, UserGate NGFW консоліне қосылуға және сервис консолі арқылы жаңа желі қосуға көмектеседі.
 
-UserGate NGFW сервисін пайдалану арқылы сіз [Marketplace](/kz/start/legal/vk/marketplace) және [UserGate](https://www.usergate.com/kz/usergate-eula) сервистерінің лицензиялық келісімдерімен келісесіз.
+UserGate NGFW сервисін пайдалана отырып, сіз [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) және [UserGate](https://www.usergate.com/ru/usergate-eula) сервистерінің лицензиялық келісімдерімен келісесіз.
 
 {note:warn}
-
-UserGate NGFW BYOL (Bring Your Own Licence) моделі бойынша ұсынылады: сервисті пайдалану үшін [лицензияны](https://www.usergate.com/kz/purchase) өзіңіз сатып алыңыз.
-
+UserGate NGFW BYOL (Bring Your Own Licence) моделі бойынша ұсынылады: сервисті пайдалануға [лицензияны](https://www.usergate.com/ru/purchase) өз бетінше сатып алыңыз.
 {/note}
 
 ## Дайындық қадамдары
@@ -85,6 +85,6 @@ UserGate NGFW BYOL (Bring Your Own Licence) моделі бойынша ұсын
 
 Сервис инфрақұрылымы жұмыс істеп тұрған кезде есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса:
 
-- UserGate NGFW сервисінің инстансын [жойыңыз](../../instructions/pr-instance-manage#pr-instance-manage-delete).
+- UserGate NGFW сервисінің инстансын [жойыңыз](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-delete).
 - Сервис үшін пайдаланылған желіні [жойыңыз](/kz/networks/vnet/instructions/net#vnet-net-delete).
 - Өрістету кезінде жасалған Floating IP-мекенжайын [жойыңыз](/kz/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete).

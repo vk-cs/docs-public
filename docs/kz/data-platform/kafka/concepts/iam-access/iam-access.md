@@ -1,23 +1,25 @@
-# {heading(Қолжетімділікті басқару)[id=kafka-concepts-iam]}
+# {heading(Рұқсаттарды басқару)[id=kafka-concepts-iam]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=Шақырылған]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жоба]} қатысушыларының немесе {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервистік есептік жазбалардың]} құқықтарын шектеу үшін Cloud Kafka жүйесінде сәйкестендіру және қолжетімділікті басқарудың бірыңғай сервисі — {linkto(../../../../access/iam#iam)[text=IAM]} қолданылады. Қолжетімділіктерді {var(cloud)} жеке кабинетінен орталықтандырылған түрде басқаруға болады.
+{linkto(../../../../tools-for-using-services/account/instructions/project-invitation#tools-account-project-invitation)[text=шақырылған]} {linkto(../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жоба]} қатысушыларына немесе {linkto(../../../../access/iam/concepts/service-accounts#iam-concepts-service-accounts)[text=сервистік есеп жазбаларына]} құқықтарын шектеу үшін Cloud Kafka-да идентификация мен рұқсаттарды басқарудың бірыңғай қызметі — {linkto(../../../../access/iam#iam)[text=IAM]} пайдаланылады. Рұқсаттарды {var(cloud)} жеке кабинетінен орталықтандырылған түрде басқаруға болады.
 
-Cloud Kafka сервисінде жоба қатысушысына қолжетімді әрекеттер тізімін мыналар анықтайды:
+Cloud Kafka қызметінде жобаның қатысушысына қолжетімді әрекеттер тізімін анықтайтын:
 
-- {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=Базалық рөл]} — әдепкі бойынша қолжетімді құқықтар жиынтығын береді.
-- Жеке {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=рұқсаттар]} — {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындалады]} қосымша, егер {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базалық рөлге]} кіретіндері жеткіліксіз болса.
+- {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=Базалық рөл]} — әдепкі бойынша қолжетімді құқықтар жиынтығын анықтайды.
+- Жеке {linkto(../../../../access/iam/concepts/permissions-reference#iam-permissions-reference)[text=рұқсаттар]} — {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=базалық рөлге]} кіретіндер жеткіліксіз болған жағдайда қосымша {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындалады]}.
 
     {note:info}
-    15.01.2026 дейін жасалған Cloud Kafka сервисінің даналары үшін атауы `dp_kafka_` деп басталатын рұқсаттар қолданылады. Жеке кабинетте олар атауына `(legacy)` қосымшасымен көрсетіледі.
+    15.01.2026 дейін жасалған Cloud Kafka қызметінің даналары үшін атаулары `dp_kafka_` деп басталатын рұқсаттар пайдаланылады. Жеке кабинетте олар атауында `(legacy)` қосымшасымен көрсетіледі.
     {/note}
 
-Cloud Kafka сервисі үшін {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=мамандандырылған рөлдер]} жоқ.
+Cloud Kafka қызметі үшін {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-special)[text=мамандандырылған рөлдер]} жоқ.
 
-Рөлдерді және рұқсаттарды тек `Жоба иесі`, `Суперадминистратор` және `Пайдаланушылар әкімшісі (IAM)` рөлдері бар жоба қатысушылары ғана {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындай]} алады. Рөлдер мен рұқсаттарды беру кезінде ең аз артықшылықтар қағидатын ұстаныңыз: пайдаланушы өз міндеттерін орындау үшін қажет құқықтарға ғана ие болуы тиіс.
+Рөлдер мен рұқсаттарды {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-user-role-edit)[text=тағайындау]} `Жоба иесі`, `Суперәкімші` және `Пайдаланушылар әкімшісі (IAM)` рөлдері бар жобаның қатысушыларына ғана болады. Рөлдер мен рұқсаттарды беру кезінде ең аз артықшылықтар қағидасын ұстаныңыз: пайдаланушыда оның міндеттерін орындау мүмкін болмайтын құқықтардан басқа құқықтар болмауы тиіс.
 
 ## {heading(Рөлдік модель мысалы)[id=kafka-concepts-iam-example]}
 

@@ -1,3 +1,4 @@
-# {heading(ВМ дискінің резервтік көшірмесін жүктеп алу)[id=backup-download]}
+# {heading(ВМ дискінің резервтік көшірмесін жүктеу)[id=backup-download]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+

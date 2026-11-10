@@ -1,23 +1,14 @@
 {
   "title": "WordPress сервисі үшін доменді өзгерту",
-  "shortDescription": "WordPress үшін доменді өзгерту және SSL сертификаттарын баптау",
-  "metaDescription": "WordPress үшін доменді өзгерту және SSL сертификаттарын баптау",
+  "shortDescription": "WordPress үшін доменді өзгерту және SSL-сертификаттарын баптау",
+  "metaDescription": "WordPress үшін доменді өзгерту және SSL-сертификаттарын баптау",
   "sectionTitle": "WordPress сервисі үшін доменді өзгерту",
   "icon": "",
-  "weight": 16,
+  "weight": 23,
+  "uuid": "2d022a37-6df2-4776-b20f-ff4fa7773caa",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "a0f9c04c-3b97-4b89-afe1-cbf25922da72"
+  }
 }

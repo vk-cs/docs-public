@@ -1,29 +1,29 @@
-# {heading(Тарифтелу)[id=s3-tariffication]}
+# {heading(Тарификация)[id=s3-tariffication]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-## {heading(Тарифтелу туралы)[id=s3-tariffication-about]}
+## {heading(Тарификация туралы)[id=s3-tariffication-about]}
 
-Сервистің жекелеген компоненттерінің құны [прайс-парақта](https://cloud.vk.kz/pricelist) көрсетілген. Сервистің жалпы құнын есептеу үшін [калькуляторды](https://cloud.vk.kz/pricing) пайдаланыңыз.
+{include(/kz/_includes/_tariffication.md)[tags=pay]}
 
-Тарифтелу «pay as you go» қағидаты бойынша жүзеге асырылады: төлем секундтық дәлдікпен тек тұтынылатын ресурстар үшін ғана алынады.
+{include(/kz/_includes/_tariffication.md)[tags=prices]}
 
-Сервисті қалай төлеу керектігі туралы {linkto(../../../intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз.
+{include(/kz/_includes/_tariffication.md)[tags=calculator]}
 
-## {heading(Тарифтеледі)[id=s3-tariffication-list]}
+## {heading(Тарификацияланады)[id=s3-tariffication-list]}
 
-{var(s3)} қызметтерінің тарифтелуі деректердің {linkto(../concepts/about#s3-concepts-about-storage-class)[text=сақтау класына]} байланысты.
+{var(s3)} қызметтерінің тарификациясы деректердің {linkto(../concepts/about#s3-concepts-about-storage-class)[text=сақтау класына]} байланысты.
 
-Hotbox және Icebox-та тарифтеледі:
+Hotbox және Icebox ішінде тарификацияланады:
 
-- Сақталатын деректер көлемі (ГБ).
-- Шығыс трафик (ГБ).
+- Сақталатын деректердің көлемі (ГБ).
+- Шығатын трафик (ГБ).
 
-  Шығыс трафик деп бакеттен ақпаратты кез келген жүктеп алу саналады: {var(cloud)} ішіндегі сұрау бойынша, мысалы ВМ-нан, сондай-ақ {var(cloud)} сыртынан, мысалы пайдаланушының ПК-нан. Екі жағдайда да бакетке жүгіну сыртқы IP-адрес арқылы жүзеге асады.
+  Шығатын трафикке бакеттен ақпаратты жүктеп алудың кез келген түрі жатады: {var(cloud)} ішінен жасалған сұраулар да (мысалы, ВМ-ден), сонымен қатар {var(cloud)} сыртынан да (мысалы, пайдаланушының ПК-ден). Екі жағдайда да бакетке өту сыртқы IP-мекенжайы арқылы жүзеге асады.
 
-Backup-та тек сақталатын деректер көлемі (ГБ) тарифтеледі.
+Backup ішінде тек сақталатын деректердің көлемі (ГБ) ғана тарификацияланады.
 
-## {heading(Тарифтелмейді)[id=s3-tariffication-not-list]}
+## {heading(Тарификацияланбайды)[id=s3-tariffication-not-list]}
 
-- Кіріс трафик.
-- {linkto(../concepts/features#s3-concepts-features-s3-api)[text=API]} пайдалану.
+- Кіретін трафик.
+- {linkto(../concepts/features#s3-concepts-features-s3-api)[text=API]}. пайдалану

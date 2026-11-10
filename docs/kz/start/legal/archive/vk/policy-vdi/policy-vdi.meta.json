@@ -1,0 +1,16 @@
+{
+  "title": "«Cloud Desktop» қызметіне арналған пайдаланушы келісімі",
+  "shortDescription": "",
+  "metaDescription": "Осы құжат «ВК» ЖШС (әрі қарай — «Компания») Сізбен пайдаланушы келісімін (әрі қарай — «Келісім») жасасуға арналған ресми ұсыныс болып табылады",
+  "sectionTitle": "«Cloud Desktop» қызметіне арналған пайдаланушы келісімі",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 17,
+  "uuid": "cae807a6-e74f-4f86-9851-f8a2cd4f68c9",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

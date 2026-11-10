@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Сервис құны және оны тарификациялау ерекшеліктері",
+  "metaDescription": "Cloud Monitoring сервисінің құны және оны тарификациялау ерекшеліктері.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 4,
+  "uuid": "1edce488-a8ae-4ec9-aa2f-9abaecac796e",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

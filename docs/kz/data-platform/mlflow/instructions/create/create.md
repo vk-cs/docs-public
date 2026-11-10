@@ -1,20 +1,20 @@
-# {heading(Сервис данасын жасау)[id=mlflow_create]}
+# {heading(Сервис даналығын жасау)[id=mlflow_create]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+1. **Data Platform** → **Сервис даналықтары** бөліміне өтіңіз.
+1. **Даналық жасау** түймесін басыңыз.
+1. Қадамдарды орындаңыз:
 
-1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
-1. **Дана жасау** түймесін басыңыз.
-1. Келесі қадамдарды орындаңыз:
-
-    1. {linkto(#mlflow_create_configuration)[text=Конфигурация]}.
-    1. {linkto(#mlflow_create_parameters)[text=Параметрлер]}.
-    1. {linkto(#mlflow_create_service)[text=Қызмет көрсету]}.
-    1. {linkto(#mlflow_create_connect)[text=Қосылу]}.
-    1. {linkto(#mlflow_create_user)[text=Тіркелгі деректері]}.
+   1. {linkto(#mlflow_create_configuration)[text=Конфигурация]}.
+   1. {linkto(#mlflow_create_parameters)[text=Параметрлер]}.
+   1. {linkto(#mlflow_create_service)[text=Қызмет көрсету]}.
+   1. {linkto(#mlflow_create_connect)[text=Қосу]}.
+   1. {linkto(#mlflow_create_user)[text=Тіркелгі деректері]}.
 
 ## {heading(1-қадам. Конфигурация)[id=mlflow_create_configuration]}
 

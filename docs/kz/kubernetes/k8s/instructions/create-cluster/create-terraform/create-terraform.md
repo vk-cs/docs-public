@@ -1,17 +1,15 @@
-# {heading(Terraform көмегімен кластерді құру)[id=k8s-create-terraform]}
+# {heading(Terraform көмегімен кластер құру)[id=k8s-create-terraform]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Kubernetes кластерін Terraform арқылы ғана емес, {linkto(../create-webui#k8s-create-webui)[text={var(cloud)} жеке кабинеті]} арқылы да құруға болады.
+Kubernetes кластерін тек Terraform арқылы ғана емес, сонымен қатар {linkto(../create-webui#k8s-create-webui)[text={var(cloud)} жеке кабинеті]} арқылы да құруға болады.
 
 Әртүрлі кластерлерді құруға арналған дайын конфигурациялық файлдар мысалдары Terraform бөлімінде [келтірілген](../../../../../tools-for-using-services/terraform/how-to-guides/k8s/create).
 
 {note:warn}
+Кластерді құру кезінде оған {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=сервистік жүктемелік балансировщик]} құрылады. NGINX Ingress Controller {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддоны]} таңдалған жағдайда оған {linkto(../../../../../networks/balancing/concepts/about#balancing-load-balancer-types)[text=стандартты жүктемелік балансировщик]} құрылады.
 
-Кластерді құру кезінде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=сервистік жүктеме теңгергіші]} құрылады. NGINX Ingress Controller {linkto(../../../concepts/addons-and-settings/addons#k8s-addons)[text=аддонын]} таңдаған кезде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=стандартты жүктеме теңгергіші]} құрылады.
-
-Теңгергіштерді пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеледі]}.
-
+Балансировщиктерді пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication)[text=тарифтеленеді]}.
 {/note}
 
 ## {heading(Кластерді құру алдында)[id=k8s-create-terraform-prepare]}
@@ -100,21 +98,21 @@ Kubernetes кластерін Terraform арқылы ғана емес, {linkto(
 
 ## {heading(2. Кластер конфигурациясын сипаттаңыз)[id=k8s-create-terraform-describe-conf]}
 
-Конфигурациялық файлға кластер ресурсін қосыңыз:
+Кластер ресурсын конфигурациялық файлға қосыңыз:
 
 ```hcl
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   name                     = "k8s-cluster"
-  cluster_type             = "<ТИП_КЛАСТЕРА>"
+  cluster_type             = "<КЛАСТЕР_ТҮРІ>"
   cluster_template_id      = data.vkcs_kubernetes_clustertemplate.k8s-template.id
   master_flavor            = data.vkcs_compute_flavor.k8s-master-flavor.id
-  master_count             = <КОЛИЧЕСТВО_MASTER_УЗЛОВ>
+  master_count             = <MASTER_ТОБТАРЫНЫҢ_САНЫ>
   labels = {
-    cluster_node_volume_type = "<ТИП_ДИСКА>"
+    cluster_node_volume_type = "<ДИСК_ТҮРІ>"
   }
-  network_id               = "<ИДЕНТИФИКАТОР_СЕТИ>"
-  subnet_id                = "<ИДЕНТИФИКАТОР_ПОДСЕТИ>"
-  availability_zone        = "<ЗОНА_ДОСТУПНОСТИ>"
+  network_id               = "<ЖЕЛІ_ИДЕНТИФИКАТОРЫ>"
+  subnet_id                = "<ІШКИ_ЖЕЛІ_ИДЕНТИФИКАТОРЫ>"
+  availability_zone        = "<ҚОЛЖЕТІМДІЛІК_ЗОНАСЫ>"
   floating_ip_enabled      = true
 }
 ```
@@ -123,27 +121,25 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - `cluster_type` — кластер түрі:
 
-  - `standard` (әдепкі бойынша) — кластердің барлық master-түйіндері бір {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік аймағында]} орналасады. Істен шығуға төзімділік аймақ деңгейінде қамтамасыз етіледі.
-  - `regional` — кластердің master-түйіндері үш қолжетімділік аймағының әрқайсысында орналасады, бұл аймақтардың бірі істен шыққан жағдайда да басқаруды сақтауға мүмкіндік береді. Master-түйіндердің жалпы саны — 3 немесе одан көп.
+  - `standard` (әдепкі бойынша) — кластердің барлық master-тобтары бір {linkto(../../../../../start/concepts/architecture#architecture-az)[text=қолжетімділік зонасында]} орналасады. Ақауға төзімділік зона деңгейінде қамтамасыз етіледі.
+  - `regional` — кластердің master-тобтары үш қолжетімділік зонасының әрқайсысында орналасады, бұл зоналардың бірі істен шыққанда да басқаруды сақтауға мүмкіндік береді. Master-тобтардың жалпы саны — 3 немесе одан көп.
 
-- `master_count` — master-түйіндер саны. Тақ сан болуы керек. Стандартты кластер үшін master-түйіндер саны `1`, `3` немесе `5` болуы керек. Аймақтық кластер үшін — `3` немесе `5`. Толығырақ {linkto(../../../concepts/architecture#k8s-architecture)[text=Сервис архитектурасы]} бөлімінде.
-- `labels.cluster_node_volume_type` — master-түйіндердің {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=деректерді сақтау]} үшін диск түрі. Таңдалған диск түрі кластердің өнімділігіне әсер етеді. Қолжетімді мәндер: `ceph-ssd` (әдепкі бойынша) және `high-iops`.
-- `availability_zone` — кластердің қолжетімділік аймағы. Егер кластер түрі стандартты болса, параметрді пайдаланыңыз. `Москва` аймағы үшін үш қолжетімділік аймағының бірін көрсетіңіз: `GZ1`, `ME1` немесе `PA2`.
+- `master_count` — master-тобтардың саны. Тақ сан болуы тиіс. Стандартты кластер үшін master-тобтардың саны `1`, `3` немесе `5` болуы керек. Өңірлік кластер үшін — `3` немесе `5`. Толығырақ {linkto(../../../concepts/architecture#k8s-architecture)[text=Сервистің архитектурасы]} бөлімінде.
+- `labels.cluster_node_volume_type` — {linkto(../../../concepts/storage#k8s-storage-supported-storage-types)[text=деректерді сақтау]} үшін master-тобының дискінің түрі. Таңдалған диск түрі кластердің өнімділігіне әсер етеді. Қолжетімді мәндер: `ceph-ssd` (әдепкі бойынша) және `high-iops`.
+- `availability_zone` — кластердің қолжетімділік зонасы. Параметрді кластер түрі стандартты болғанда қолданыңыз. `Мәскеу` өңірі үшін үш қолжетімділік зонасының бірін көрсетіңіз: `GZ1`, `ME1` немесе `PA2`.
 
    {note:info}
-
-   `PA2` қолжетімділік аймағын тек {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} пайдаланатын жобалар үшін таңдауға болады.
-
+   `PA2` қолжетімділік зонасын {linkto(../../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} қолданатын жобалар үшін ғана таңдауға болады.
    {/note}
 
-- `availability_zones` — кластердің қолжетімділік аймақтары. Егер кластер түрі аймақтық болса, параметрді пайдаланыңыз. `Москва` аймағы үшін үш қолжетімділік аймағын көрсетіңіз: `["GZ1", "ME1", "PA2"]`. Егер кластер аймақтық болса және `availability_zones` параметрі көрсетілмесе, қолжетімділік аймақтары автоматты түрде қойылады.
-- `network_id` және `subnet_id` — тиісінше желі мен ішкі желінің идентификаторлары. Оларды әртүрлі тәсілдермен көрсетуге болады:
+- `availability_zones` — кластердің қолжетімділік зоналары. Параметрді кластер түрі өңірлік болғанда қолданыңыз. `Мәскеу` өңірі үшін үш қолжетімділік зонасын көрсетіңіз: `["GZ1", "ME1", "PA2"]`. Егер кластер өңірлік болса және `availability_zones` параметрі көрсетілмесе, қолжетімділік зоналары автоматты түрде орнатылады.
+- `network_id` және `subnet_id` — сәйкесінше желі мен ішкі желінің идентификаторлары. Оларды әртүрлі тәсілдермен көрсетуге болады:
 
   {tabs}
 
   {tab(Идентификаторларды көрсету)}
 
-  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса және олардың идентификаторлары сізге белгілі болса, идентификаторларды нақты көрсетіңіз.
+  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса және олардың идентификаторларын білсеңіз, идентификаторларды тікелей көрсетіңіз.
 
   Мысал:
 
@@ -159,9 +155,9 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
   {/tab}
 
-  {tab(Дереккөздерді пайдалану)}
+  {tab(Деректер көздерін қолдану)}
 
-  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса, бірақ олардың идентификаторлары сізге белгісіз болса, тиісті дереккөздерді көрсетіп, идентификаторларды алыңыз.
+  Егер қажетті желілер мен ішкі желілер бұрыннан бар болса, бірақ олардың идентификаторларын білмесеңіз, сәйкес деректер көздерін көрсетіп, идентификаторларды алыңыз.
 
   Мысал:
 
@@ -186,9 +182,9 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
   {/tab}
 
-  {tab(Құрылған ресурстарды пайдалану)}
+  {tab(Жасалған ресурстарды қолдану)}
 
-  Егер қажетті желілер мен ішкі желілер әлі жоқ болса, оларды құрып, идентификаторларын алыңыз:
+  Егер қажетті желілер мен ішкі желілер әлі жоқ болса, оларды жасап, идентификаторларын алыңыз:
 
   ```hcl
   ...
@@ -199,7 +195,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   resource "vkcs_networking_subnet" "k8s-subnet" {
       name       = "default_subnet"
       network_id = vkcs_networking_network.k8s-network.id
-      cidr       = "<Адрес подсети вида 192.168.0.0/24>"
+      cidr       = "<192.168.0.0/24 түріндегі ішкі желі адресі>"
   }
   ...
   resource "vkcs_kubernetes_cluster" "k8s-cluster" {
@@ -216,17 +212,15 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   {/tabs}
 
     {note:info}
-
-    Интернетке қолжетімсіз кластер құру үшін қосылған {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-shadow-port)[text=Shadow port]} бар желіні көрсетіңіз.
-
+    Интернетке шығу мүмкіндігі жоқ кластерді жасау үшін {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-shadow-port)[text=Shadow port]} қосылған желіні көрсетіңіз.
     {/note}
 
-- `floating_ip_enabled` — API-кластерге жария IP мекенжайын тағайындау:
+- `floating_ip_enabled` — кластер API-сі үшін публичный IP-адрес тағайындау:
 
-  - `true` — кластерді құру кезінде оған интернеттен кластерге қол жеткізу үшін {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP мекенжайы]} тағайындалады. Мұндай IP мекенжайын тағайындау үшін `subnet_id` идентификаторы бар кластердің ішкі желісі сыртқы желіге қолжетімді маршрутизаторға {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-internet-access)[text=қосылған]} болуы керек.
-  - `false` — кластерге Floating IP мекенжайы тағайындалмайды.
+  - `true` — кластер жасалғанда оған интернеттен кластерге қолжетімділік үшін {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP-адрес]} тағайындалады. Мұндай IP-адресті тағайындау үшін `subnet_id` идентификаторы бар кластердің ішкі желісі сыртқы желіге қолжетімділігі бар маршрутизаторға {linkto(../../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-internet-access)[text=қосылған]} болуы қажет.
+  - `false` — кластерге Floating IP-адрес тағайындалмайды.
 
-Terraform көмегімен кластерге аддондарды орнату үшін {linkto(../../addons/manage-addons#k8s-manage-addons-available)[text=қолжетімді аддондар тізімін алыңыз]} және қажеттілерін {linkto(../../addons/advanced-installation#k8s-advanced-installation)[text=орнатыңыз]}.
+Terraform көмегімен кластерге аддондарды орнату үшін {linkto(../../addons/manage-addons#k8s-manage-addons-available)[text=қолжетімді аддондар тізімін алыңыз]} және {linkto(../../addons/advanced-installation#k8s-advanced-installation)[text=қажеттілерін орнатыңыз]}.
 
 ## {heading(3. Бір немесе бірнеше worker-түйіндер тобының конфигурациясын сипаттаңыз)[id=k8s-create-terraform-describe-workers]}
 

@@ -1,16 +1,16 @@
 {
-  "title": "VK Object Storage-пен интеграция кезіндегі қате",
-  "shortDescription": "MinIO-ны VK Object Storage-пен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
-  "metaDescription": "MinIO-ны VK Object Storage-пен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
-  "sectionTitle": "VK Object Storage-пен интеграция кезіндегі қате",
+  "title": "VK Object Storage-мен интеграция кезіндегі қате",
+  "shortDescription": "MinIO-ны VK Object Storage-мен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
+  "metaDescription": "MinIO-ны VK Object Storage-мен интеграциялау кезінде Tier is already in use хабарламасы пайда болады",
+  "sectionTitle": "VK Object Storage-мен интеграция кезіндегі қате",
   "icon": "",
   "weight": 4,
+  "uuid": "ac789f88-ce8f-431a-9337-3bce60ea48e4",
   "build": {
     "for": [
       "public",
       "s3",
       "s3-pdf"
     ]
-  },
-  "uuid": "77dfa334-4e6c-4e39-b721-13b9327ef4ab"
+  }
 }

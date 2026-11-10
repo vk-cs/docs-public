@@ -1,6 +1,6 @@
-# {heading(Ресурс ivkcs_ssh_keypair)[id=ivkcs_ssh_keypair]}
+# {heading(ivkcs_ssh_keypair ресурсы)[id=ivkcs_ssh_keypair]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `ivkcs_ssh_keypair` ресурсының аргументі {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 
@@ -12,22 +12,22 @@
 |Пішімі
 |Міндетті
 |Әдепкі мәні
-|Мән өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |
 `bit_size`
 |
-Жабық және ашық SSH кілттерінің өлшемі.
+Жабық және ашық SSH-кілттердің өлшемі.
 
 {note:info}
 
-ОЖ-де SSH кілттерінің ең аз өлшеміне шектеу бар-жоғын тексеріңіз.
+ОЖ-де SSH-кілттердің ең аз өлшеміне шектеу бар-жоғын тексеріңіз.
 
 {/note}
 |integer
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |2048
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 |===
 {/caption}
 
@@ -42,12 +42,12 @@
 |
 `public_key`
 |
-`RSA` пішіміндегі ашық SSH кілті. {linkto(../ivkcs_user_data/#ivkcs_user_data)[text=%text]} ресурсының `ssh_authorized_keys` аргументінде пайдаланылады
+`RSA` пішіміндегі ашық SSH-кілт. {linkto(../ivkcs_user_data/#ivkcs_user_data)[text=%text]} ресурсының `ssh_authorized_keys` аргументінде қолданылады
 
 |
 `private_key`
 |
-ВМ-мен қосылым орнату үшін `RSA` пішіміндегі жабық SSH кілті
+ВМ-мен байланыс орнатуға арналған `RSA` пішіміндегі жабық SSH-кілт
 |===
 {/caption}
 

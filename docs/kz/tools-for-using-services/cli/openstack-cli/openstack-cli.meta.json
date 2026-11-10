@@ -1,9 +1,16 @@
 {
-  "title": "OpenStack CLI",
-  "shortDescription": "{var(cloud)} платформасындағы ресурстарды басқару үшін OpenStack клиентін орнату",
-  "metaDescription": "VK Cloud-ты пәрмен жолынан басқаруды бастаңыз. Бұл қадамдық нұсқаулық Windows, macOS, Linux жүйелерінде OpenStack CLI орнатуға және аутентификациядан өтуге көмектеседі.",
-  "sectionTitle": "OpenStack CLI",
+  "title": "OpenStack CLI-ға қосылу",
+  "shortDescription": "{var(cloud)} платформасында ресурстарды басқару үшін OpenStack клиентін орнату",
+  "metaDescription": "VK Cloud-ды команданың жолынан басқаруды бастаңыз. Бұл қадамдық нұсқаулық OpenStack CLI-ды Windows, macOS, Linux жүйелеріне орнатуға және аутентификациядан өтуге көмектеседі.",
+  "sectionTitle": "OpenStack CLI-ға қосылу",
   "weight": 1,
+  "uuid": "c70f3615-8330-4f68-bba1-db3582b00d1d",
+  "additionalUuids": [
+    "ce08224c-e4b1-4252-bd3e-2e5abbd9b351",
+    "52ba88c1-88d1-4025-97d1-00d530d78aba",
+    "dcd37fe5-79a3-4321-a260-b7f1b24b0b2d",
+    "ddaef719-a522-4427-b2e4-34e295fe479d"
+  ],
   "build": {
     "for": [
       "public",
@@ -13,6 +20,5 @@
       "private-pg-pdf",
       "private-cert"
     ]
-  },
-  "uuid": "ca90662f-293c-4aec-a9e0-7630bc583d76"
+  }
 }

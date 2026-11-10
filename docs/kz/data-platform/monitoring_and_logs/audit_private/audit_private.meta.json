@@ -1,7 +1,7 @@
 {
   "title": "VK Private Cloud-тағы аудит",
-  "shortDescription": "VK Private Cloud-та пайдаланушының SIEM жүйесімен біріктірілген қауіпсіздік оқиғаларын жинау",
-  "metaDescription": "VK Private Cloud-тағы VK Data Platform-да Audit сервисінің қалай жұмыс істейтінін біліңіз",
+  "shortDescription": "Пайдаланушының SIEM-жүйесімен интеграцияланған қауіпсіздік оқиғаларын жинау VK Private Cloud-та",
+  "metaDescription": "VK Private Cloud құрамындағы VK Data Platform-та Cloud Audit аудит қызметі қалай жұмыс істейтінін біліңіз",
   "sectionTitle": "VK Private Cloud-тағы аудит",
   "weight": 1,
   "build": {
@@ -10,5 +10,5 @@
       "data-p-pdf"
     ]
   },
-  "uuid": "d2520940-7509-433c-b061-4e9911db1ac3"
+  "uuid": "817df73f-fa6a-46d5-ad36-4a5d9af7bf6e"
 }

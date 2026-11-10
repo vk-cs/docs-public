@@ -1,53 +1,53 @@
-# {heading(Жеке кабинет пайдаланушыларының рөлдері мен құқықтары)[id=iam-concepts-service-accounts]}
+# {heading(Сервистік тіркелгілер)[id=iam-concepts-service-accounts]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Сервистік тіркелгі жазбалары (СТЖ) — бағдарламаларға арналған арнайы тіркелгі жазбалары. СТЖ атынан бағдарламалар {var(cloud)} ресурстарын басқара алады және адам қатысуынсыз бір-бірімен өзара әрекеттесе алады. СТЖ мұндай өзара әрекеттесуді автоматтандыруға көмектеседі.
+Сервистік тіркелгілер (СТЗ) — программаларға арналған арнайы тіркелгілер. СТЗ атынан программалар {var(cloud)} ресурстарын басқара алады және адамның қатысуынсыз бір-бірімен өзара әрекеттесе алады. СТЗ мұндай өзара әрекеттестікті автоматтандыруға көмектеседі.
 
-СТЖ логин мен пароль арқылы API және CLI-де авторизациядан өтуге мүмкіндік береді. {var(cloud)} жеке кабинетінде СТЖ арқылы авторизациялануға болмайды.
+СТЗ логин мен құпиясөз арқылы API және CLI-де авторизациядан өтуге мүмкіндік береді. СТЗ көмегімен {var(cloud)} жеке кабинетінде авторизациялануға болмайды.
 
-Бағдарламалардың {var(cloud)} ресурстарына қол жеткізуі СТЖ-қа тағайындалған рөл аясымен шектеледі. СТЖ үшін `Владелец проекта` рөлінен басқа, {linkto(/kz/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions)[text=кез келген пайдаланушы рөлін]} тағайындауға болады.
+Программалардың {var(cloud)} ресурстарына қол жеткізуі СТЗ-ге тағайындалған рөл шегімен шектеледі. СТЗ-ге `Жоба иесі` рөлінен басқа {linkto(../rolesandpermissions#iam-concepts-rolesandpermissions)[text=кез келген пайдаланушы рөлін]} тағайындауға болады.
 
 Жобадағы рөліне байланысты пайдаланушы жеке кабинетте мыналарды орындай алады:
 
-- {linkto(../../instructions/service-account-manage#service-account-create)[text=құру]} СТЖ;
-- {linkto(../../instructions/service-account-manage#service-account-view-list)[text=көру]} жоба СТЖ тізімін;
-- {linkto(../../instructions/service-account-manage#service-account-view-card)[text=көру]} СТЖ карточкасын;
-- {linkto(../../instructions/service-account-manage#service-account-download-rc-file)[text=жүктеп алу]} өз құрылғысына API пайдалану үшін қажетті OpenStack RC-файлын;
-- {linkto(../../instructions/service-account-manage#service-account-authorize)[text=баптау]} СТЖ атынан API-ге қол жеткізу ортасын;
-- {linkto(../../instructions/service-account-manage#service-account-delete)[text=жою]} СТЖ.
+- СТЗ {linkto(../../instructions/service-account-manage#service-account-create)[text=жасау]};
+- жобаның СТЗ тізімін {linkto(../../instructions/service-account-manage#service-account-view-list)[text=қарау]};
+- СТЗ карточкасын {linkto(../../instructions/service-account-manage#service-account-view-card)[text=қарау]};
+- API пайдалану үшін қажетті OpenStack RC-файлды өз құрылғысына {linkto(../../instructions/service-account-manage#service-account-download-rc-file)[text=жүктеп алу]};
+- СТЗ атынан API-ге қол жеткізу үшін ортаны {linkto(../../instructions/service-account-manage#service-account-authorize)[text=баптау]};
+- СТЗ {linkto(../../instructions/service-account-manage#service-account-delete)[text=жою]}.
 
-Осы әрекеттерді [API арқылы](/kz/tools-for-using-services/api/api-spec/api-service-users) да орындауға болады.
+Осындай әрекеттерді {linkto(../../../../tools-for-using-services/api/api-spec/api-service-users#api-spec-service-users)[text=API арқылы]} да орындауға болады.
 
-Жобадағы рөлге байланысты СТЖ басқару құқықтары:
+Жобадағы рөлге байланысты СТЗ басқару құқықтары:
 
 [cols="1,1,1", options="header"]
 |===
 |Рөлдер
-|СТЖ құру және жою
-|СТЖ тізімі мен карточкаларын көру, OpenStack RC-файлын жүктеп алу
+|СТЗ жасау және жою
+|СТЗ тізімін және карточкаларын қарау, OpenStack RC-файлды жүктеп алу
 
-|Владелец проекта
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+|Жоба иесі
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
-|Суперадминистратор
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+|Суперәкімші
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Пайдаланушылар әкімшісі (IAM)
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Жоба әкімшісі
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 
 |Бақылаушы
-| ![](/kz/assets/no.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../assets/no.svg "inline")
+| ![](../../../../assets/check.svg "inline")
 |===
 
-Жобадағы барлық СТЖ тізімі жеке кабинеттегі **Қолжетімділікті басқару** бөлімінде, **Сервистік пайдаланушылар** қойындысында қолжетімді. Бұл қойынды тек жоғарыдағы кестедегі рөлі бар және поштасы мен телефон нөмірі верификацияланған пайдаланушылар үшін ғана көрсетіледі.
+Жобадағы барлық СТЗ тізімі жеке кабинеттің **Қол жеткізулерді басқару** бөлімінде **Сервистік пайдаланушылар** қойындысында қолжетімді. Бұл қойынды жоғарыдағы кестедегі рөлі бар пайдаланушылар үшін ғана және поштасы мен телефон нөмірі расталған пайдаланушылар үшін ғана көрсетіледі.
 
-Жобада 300-ге дейін СТЖ құруға болады.
+Жобада 300-ге дейін СТЗ жасауға болады.

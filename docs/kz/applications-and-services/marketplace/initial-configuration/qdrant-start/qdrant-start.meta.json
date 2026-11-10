@@ -1,23 +1,14 @@
 {
-  "title": "Qdrant өрістету",
-  "shortDescription": "Жоғары өлшемді векторлармен жұмыс істеуге арналған Qdrant өрістету",
-  "metaDescription": "Marketplace VK Cloud: жоғары өлшемді векторлармен жұмыс істеуге арналған Qdrant сервисін өрістету қадамдары.",
-  "sectionTitle": "Qdrant өрістету",
+  "title": "Qdrant орнату",
+  "shortDescription": "Жоғары өлшемді векторлармен жұмыс істеу үшін Qdrant орнату",
+  "metaDescription": "Marketplace VK Cloud: жоғары өлшемді векторлармен жұмыс істеуге арналған Qdrant қызметін орнату қадамдары.",
+  "sectionTitle": "Qdrant орнату",
   "icon": "",
-  "weight": 14,
+  "weight": 16,
+  "uuid": "29b1eacd-1629-4b14-8750-416818a76195",
   "build": {
     "for": [
-      "public",
-      "private",
-      "private-pg",
-      "private-pdf",
-      "private-pg-pdf",
-      "private-cert",
-      "s3",
-      "s3-pdf",
-      "data-p",
-      "data-p-pdf"
+      "public"
     ]
-  },
-  "uuid": "683350ab-1f72-4ec4-ba82-2b69b4dec6ed"
+  }
 }

@@ -1,13 +1,13 @@
 {
-  "title": "SaaS-қолданбаны жаңарту",
+  "title": "SaaS-қолданбасын жаңарту",
   "shortDescription": "",
-  "metaDescription": "SaaS-қолданбаны жаңарту",
-  "sectionTitle": "SaaS-қолданбаны жаңарту",
+  "metaDescription": "SaaS-қолданбасын жаңарту",
+  "sectionTitle": "SaaS-қолданбасын жаңарту",
   "weight": 7,
+  "uuid": "af3ffa0f-86a5-412e-8ff9-de6552c66ccc",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "7e1754ae-6dec-4761-9fbf-b180cd23d111"
+  }
 }

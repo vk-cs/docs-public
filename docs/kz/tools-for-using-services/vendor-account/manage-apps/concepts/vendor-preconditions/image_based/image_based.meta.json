@@ -1,13 +1,16 @@
 {
-  "title": "Талаптар image-based қосымшаларына",
+  "title": "Image-based қосымшаларға қойылатын талаптар",
   "shortDescription": "",
-  "metaDescription": "Талаптар image-based қосымшаларына",
-  "sectionTitle": "Талаптар image-based қосымшаларына",
+  "metaDescription": "Image-based қосымшаларға қойылатын талаптар",
+  "sectionTitle": "Image-based қосымшаларға қойылатын талаптар",
   "weight": 4,
-  "build": {
+  "uuid": "0aebaab2-038c-41aa-884b-1be9ea680185",
+  "additionalUuids": [
+    "eb584126-1304-4f45-8440-38e814c6d662" 
+  ],
+    "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "e3eb947b-4359-490c-9fb1-43e77f94065b"
+  }
 }

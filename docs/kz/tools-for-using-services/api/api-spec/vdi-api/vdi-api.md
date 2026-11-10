@@ -1,24 +1,22 @@
 # {heading(Cloud Desktop)[id=api-spec-vdi]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-[Cloud Desktop](/kz/computing/cloud-desktops) сервисінің API-ы жұмыс үстелдері пулдарын және олардың ішіндегі жұмыс үстелдерін басқаруға мүмкіндік береді.
+{linkto(../../../../computing/cloud-desktops#cloud-desktops)[text=Cloud Desktop]} сервисінің API жұмыс үстелдерінің пулдарын және олардағы жұмыс үстелдерін басқаруға мүмкіндік береді.
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. [Өтіңіз](https://kz.cloud.vk.kz/app) {var(cloud)} жеке кабинетіне.
-1. Егер бұл әлі жасалмаса, API арқылы қолжетімділікті [қосыңыз](/kz/tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate).
-1. Бет тақырыбындағы пайдаланушы атына басып, **Жоба баптаулары** тармағын таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. API арқылы қолжетімділік әлі қосылмаса, оны {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
+1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.
-1. Cloud Desktop сервисі үшін эндпоинтті табыңыз. Егер ол тізімде болмаса, `https://kz.cloud.vk.kz/vdi/v1/` пайдаланыңыз.
-1. `X-Auth-Token` қолжетімділік токенін [алыңыз](../../rest-api/case-keystone-token).
+1. Cloud Desktop сервисі үшін эндпоинтті табыңыз. Егер ол тізімде болмаса, `https://msk.cloud.vk.ru/vdi/v1/` мекенжайын пайдаланыңыз.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
 
 {/cut}
 
 {note:info}
-
-JSON форматындағы бастапқы спецификацияны [сілтеме](assets/vdiapi-swagger.json "download") арқылы жүктеп ала аласыз.
-
+JSON форматындағы бастапқы спецификацияны [сілтеме](assets/vdiapi-swagger.json "download") арқылы жүктеп алуға болады.
 {/note}
 
 ![{swagger}](assets/vdiapi-swagger.json)

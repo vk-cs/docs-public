@@ -1,49 +1,49 @@
-# {heading(Ресурс ivkcs_dns)[id=ivkcs_dns]}
+# {heading(ivkcs_dns ресурсы)[id=ivkcs_dns]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 `ivkcs_dns` ресурсының аргументтері {linkto(#tab_arguments)[text=%number кестеде]} келтірілген.
 
-{caption({counter(table)[id=numb_tab_arguments]} кесте — ivkcs_dns ресурсының аргументтері)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
+{caption(Кесте {counter(table)[id=numb_tab_arguments]} — ivkcs_dns ресурсының аргументтері)[align=right;position=above;id=tab_arguments;number={const(numb_tab_arguments)}]}
 [cols="2,5,2,2,2", options="header"]
 |===
 |Атауы
 |Сипаттамасы
-|Пішімі
+|Форматы
 |Міндетті
-|Мән өзгерген кезде ресурсты қайта жасау
+|Мән өзгергенде ресурсты қайта жасау
 
 |
 `name`
 |
-5-деңгейдегі немесе одан кейінгі деңгейдегі бірегей домен атауы.
+5-ші немесе одан кейінгі деңгейдің бірегей домен атауы.
 
 {note:info}
 
-Атау бірегей болуын қамтамасыз ету үшін сервис орналастыруының UUID идентификаторын атаудың бір бөлігі ретінде пайдаланыңыз.
+Атаудың бірегейлігін қамтамасыз ету үшін қызметті орналастыру UUID идентификаторын атау бөлігі ретінде пайдаланыңыз.
 
 {/note}
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `domain`
 |
 Бұлтты платформа қолдайтын домен.
 
-Мәні `xaas.msk.vkcs.cloud` болуы керек
+Мән `xaas.msk.vkcs.cloud` болуы тиіс
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/kz/assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
 
 |
 `ip`
 |
-Хосттың IP мекенжайы
+Хосттың IP-адресі
 |string
-| ![](/kz/assets/check.svg "inline")
-| ![](/en/assets/no.svg "inline")
+| ![](../../../../../../assets/check.svg "inline")
+| ![](../../../../../../assets/no.svg "inline")
 |===
 {/caption}
 

@@ -1,14 +1,15 @@
 {
   "title": "Практикалық нұсқаулықтар",
-  "shortDescription": "VK Object Storage сервисін пайдалану сценарийлері",
-  "metaDescription": "VK Cloud платформасындағы VK Object Storage сервисін пайдалану сценарийлері.",
+  "shortDescription": "VK Object Storage қызметін пайдалану сценарийлері",
+  "metaDescription": "VK Cloud платформасындағы VK Object Storage қызметін пайдалану сценарийлері.",
   "sectionTitle": "Практикалық нұсқаулықтар",
   "icon": "",
   "weight": 5,
+  "uuid": "1454e639-7e25-4332-87d3-bbe1e947ebf5",
+  "additionalUuids": ["763b5a3c-d793-4459-a965-cac83a627e4c"],
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "b73594b6-4406-49d2-b6aa-855a905f2f8d"
+  }
 }

@@ -1,14 +1,22 @@
 {
-  "title": "API арқылы қосылу",
-  "shortDescription": "{var(cloud)} сервистерінің API-на қосылуға арналған эндпоинттер және аутентификация токенін генерациялау",
-  "metaDescription": "VK Cloud API-мен өзара әрекеттесу эндпоинттер арқылы орындалады. Кейбір жағдайларда аутентификация үшін токен қажет болады.",
-  "sectionTitle": "API арқылы қосылу",
+  "title": "API арқылы қосу",
+  "shortDescription": "{var(cloud)} қызметтерінің API-ына қосу үшін эндпоинттер және аутентификация токенін генерациялау",
+  "metaDescription": "VK Cloud API-мен өзара әрекеттесу эндпоинттер арқылы жүзеге асырылады. Кейбір жағдайларда аутентификация үшін токен қажет болады.",
+  "sectionTitle": "API арқылы қосу",
   "icon": "",
   "weight": 1,
+  "uuid": "e82794cd-bc84-4228-a998-849ce05fc10c",
+  "additionalUuids": [
+    "1db3249e-e258-4eb3-affb-72c7d732a872"
+  ],
   "build": {
     "for": [
-      "public"
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf",
+      "private-cert"
     ]
-  },
-  "uuid": "097701f8-af13-4bb3-b832-3ba14db0c4d8"
+  }
 }

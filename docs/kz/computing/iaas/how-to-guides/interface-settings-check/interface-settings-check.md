@@ -1,6 +1,6 @@
 # {heading(ВМ желілік интерфейсін баптау)[id=iaas-interface-settings-check]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 ВМ-ге желілік интерфейс қосылғаннан кейін оны тексеріп, қажет болса ВМ операциялық жүйесінде оның баптауларын түзетіңіз.
 
@@ -37,16 +37,16 @@
    | Firewall баптаулары                                 | `default`             |
    <!-- prettier-ignore-end -->
 
-## {heading(1. Желілік интерфейс баптауының дұрыстығын тексеріңіз)[id=iaas-interface-correction-settings-check]}
+## {heading(1. Желі интерфейсін дұрыс баптауын тексеріңіз)[id=iaas-interface-settings-check-correction]}
 
-1. Виртуалды машинаның консоліне қосылып, авторизациядан өтіңіз.
+1. Виртуалды машиинаның консоліне қосылыңыз және авторизациядан өтіңіз.
 1. Команданы орындаңыз:
 
    ```console
     ip link show
    ```
 
-   {caption(Шығыс мысалы)[align=left;position=above]}
+   {caption(Шығудың мысалы)[align=left;position=above]}
     ```text
     1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT                   group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -56,10 +56,10 @@
    ```
    {/caption}
 
-   Команда шығысынан `link/ether` параметрі бұрын алынған MAC-адреспен сәйкес келетін интерфейс атауын табыңыз. Бұл мысалда — `ens3`.
+   Команда шығысынан `link/ether` параметрі бұрын алынған MAC-мекенжайымен сәйкес келетін интерфейс атауын табыңыз. Бұл мысалда — `ens3`.
 
    {note:info}
-   Linux-тың әртүрлі дистрибутивтері үшін интерфейс атауы әртүрлі болады.
+   Әртүрлі Linux дистрибутивтері үшін интерфейс атауы әртүрлі.
    {/note}
 
 1. Алдыңғы қадамда алынған интерфейс атауын қойып, команданы орындаңыз:
@@ -68,7 +68,7 @@
    ip address show ens3
    ```
 
-   {caption(Шығыс мысалы)[align=left;position=above]}
+   {caption(Шығудың мысалы)[align=left;position=above]}
    ```text
    2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
         link/ether fa:16:3e:aa:bb:cc brd ff:ff:ff:ff:ff:ff
@@ -82,8 +82,8 @@
 
    Шығыста мыналар болуы керек:
 
-   - Интерфейс күйі туралы мәлімет: `state UP`.
-   - Виртуалды машинаның private IP-адресі, ішкі желінің CIDR-індегі `/24` префиксімен біріктірілген. Шығыс мысалында бұл IP-адрес (`10.0.0.5/24`) `inet` параметрінде көрсетілген.
+   - Интерфейс күйі туралы мәліметтер: `state UP`.
+   - Виртуалды машиинаның жеке IP-мекенжайы, подсеть CIDR-інен алынған `/24` префиксімен біріктірілген. Шығу мысалында бұл IP-мекенжай (`10.0.0.5/24`) `inet` параметрінде көрсетілген.
 
 1. Команданы орындаңыз:
 
@@ -91,21 +91,21 @@
    ip route show default
    ```
 
-   {caption(Шығыс мысалы)[align=left;position=above]}
+   {caption(Шығудың мысалы)[align=left;position=above]}
    ```text
    default via 10.0.0.1 dev ens3 proto dhcp src 10.0.0.5 metric 100
    ```
    {/caption}
 
-   Шығыста мыналардың бар екеніне көз жеткізіңіз:
+   Шығыста мыналар бар екенін тексеріңіз:
 
-   - Шлюздің IP-адресі (`via 10.0.0.1`).
+   - Шлюздің IP-мекенжайы (`via 10.0.0.1`).
    - Бұрын алынған интерфейс атауы (`dev ens3`).
-   - Виртуалды машинаның private IP-адресі (`src 10.0.0.5`).
+   - Виртуалды машиинаның жеке IP-мекенжайы (`src 10.0.0.5`).
 
-   Егер `ip address show` және `ip route show` командаларының шығысында келтірілген мәліметтер болса, онда желілік интерфейс баптаулары дұрыс. Нұсқаулықтың қалған қадамдарын өткізіп жіберіңіз. 
+   Егер `ip address show` және `ip route show` командаларының шығысында келтірілген мәліметтер болса, онда желі интерфейсінің баптаулары дұрыс. Нұсқаулықтың қалған қадамдарын өткізіп жіберіңіз.
 
-   Егер `ip address show` және `ip route show` командаларының шығысында келтірілген мәліметтер болмаса, онда желілік интерфейс баптаулары дұрыс емес. Желілік интерфейсті баптаңыз.
+   Егер `ip address show` және `ip route show` командаларының шығысында келтірілген мәліметтер болмаса, онда желі интерфейсінің баптаулары дұрыс емес. Желі интерфейсін баптаңыз.
 
 ## {heading(2. ВМ желілік интерфейсін баптаңыз)[id=iaas-interface-settings-check-vm]}
 
@@ -161,10 +161,15 @@
 1. `/etc/network/interfaces.d/50-cloud-init` файлын келесі түрге келтіріңіз:
 
    ```ini
+
    # This file is generated from information provided by the datasource.  Changes
+
    # to it will not persist across an instance reboot.  To disable cloud-init's
+
    # network configuration capabilities, write a file
+
    # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+
    # network: {config: disabled}
    auto lo
    iface lo inet loopback
@@ -196,6 +201,7 @@
 1. `/etc/sysconfig/network-scripts/ifcfg-<ИМЯ_ИНТЕРФЕЙСА>` файлын келесі түрге келтіріңіз:
 
    ```ini
+
    # Created by cloud-init on instance boot automatically, do not edit.
    #
    BOOTPROTO=none

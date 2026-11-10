@@ -1,11 +1,11 @@
 # {heading(SDK көмегімен файлды жүктеу жұмыс істемейді)[id=s3-install-boto-problem]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Python үшін SDK көмегімен файлды жүктеу жұмыс істемейді.
+SDK для Python көмегімен файлды жүктеу жұмыс істемейді.
 
-Мәселе boto3 кітапханасының ағымдағы нұсқасымен үйлесімсіздікке байланысты болуы мүмкін.
+Мәселе boto3 кітапханасының өзекті нұсқасымен үйлесімсіздіктен туындауы мүмкін.
 
-### {heading(Шешімі)[id=s3-install-boto-problem-resolve]}
+### {heading(Шешім)[id=s3-install-boto-problem-resolve]}
 
-boto3 кітапханасының ескілеу нұсқасын орнатыңыз, мысалы 1.35.77.
+boto3 кітапханасының ескі нұсқасын орнатыңыз, мысалы 1.35.77.

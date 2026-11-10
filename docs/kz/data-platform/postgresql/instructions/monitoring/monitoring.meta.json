@@ -1,7 +1,7 @@
 {
   "title": "Мониторинг",
-  "shortDescription": "метрикаларды жинау және қарау",
-  "metaDescription": "VK Data Platform жүйесінің Standalone нұсқасында жайылған Cloud PostgreSQL қызметі экземплярлары жұмысының метрикаларын қалай қарауға болатынын біліңіз",
+  "shortDescription": "Метрикаларды жинау және көру",
+  "metaDescription": "VK Data Platform платформасында орнатылған Cloud PostgreSQL сервисінің даналарының жұмыс метрикаларын қалай көруге болатынын біліңіз",
   "sectionTitle": "Мониторинг",
   "build": {
     "for": [
@@ -10,5 +10,5 @@
     ]
   },
   "weight": 4,
-  "uuid": "2f826d7b-37d4-4841-a5fa-6f08c733b16b"
+  "uuid": "2d4bb462-bda3-416c-8d59-bb00259eb69b"
 }

@@ -3,10 +3,10 @@
   "shortDescription": "",
   "metaDescription": "Брокерді тіркеу",
   "sectionTitle": "Брокерді тіркеу",
+  "uuid": "8f5a8bfc-592c-4b70-9095-ab7270e129ea",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "f6458554-a4f8-4ed5-8cc7-2a5ca544c013"
+  }
 }

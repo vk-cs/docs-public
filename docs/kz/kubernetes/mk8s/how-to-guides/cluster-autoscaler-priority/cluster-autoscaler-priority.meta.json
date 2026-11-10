@@ -1,0 +1,15 @@
+{
+  "title": "Топтарды масштабтау басымдықтарын баптау",
+  "shortDescription": "",
+  "metaDescription": "",
+  "hidden": true,
+  "sectionTitle": "Топтарды масштабтау басымдықтарын баптау",
+  "icon": "",
+  "weight": 60,
+  "uuid": "ff0a0ff3-b68f-4c10-b919-18bd327f18fe",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

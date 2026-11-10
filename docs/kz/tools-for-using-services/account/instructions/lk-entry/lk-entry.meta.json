@@ -1,10 +1,10 @@
 {
   "title": "Жеке кабинетке кіру",
-  "shortDescription": "{var(cloud)} жеке кабинетіне қалай қол жеткізуге болады",
-  "metaDescription": "VK Private Cloud жеке кабинетіне қалай қол жеткізуге болады",
+  "shortDescription": "{var(cloud)} жеке кабинетіне қалай кіруге болады",
+  "metaDescription": "VK Private Cloud жеке кабинетіне қалай кіруге болады",
   "sectionTitle": "Жеке кабинетке кіру",
   "weight": 0,
-  "uuid": "b5c5c370-98aa-4f63-9b8f-8da748ff234f",
+  "uuid": "7dc30fae-c1de-40c3-b79d-49ddcf2635d4",
   "build": {
     "for": [
       "private",

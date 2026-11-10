@@ -1,5 +1,7 @@
-# {heading(Қолжетімділікті басқару)[id=s3-concepts-access]}
+# {heading(Қолжетімді басқару)[id=s3-concepts-access]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(s3)} сервисі пайдаланушылардың бакеттер мен объектілерге қолжетімділігін басқарудың әртүрлі тәсілдерін қолдайды.
+{ifdef(public)}
+{var(s3)} қызметі пайдаланушылардың бакеттер мен объектілерге қолжетімін басқарудың әртүрлі тәсілдерін қолдайды.
+{/ifdef}

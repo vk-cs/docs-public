@@ -1,14 +1,14 @@
 {
   "title": "Spark кластерін құру",
   "shortDescription": "",
-  "metaDescription": "Docker Registry образын пайдаланып, VK Cloud платформасында Terraform көмегімен Spark-ты қалай өрістетуге болады. Конфигурация мысалы бар қадамдық нұсқаулық.",
+  "metaDescription": "Terraform көмегімен Docker Registry-ден алынған бейнені пайдаланып, VK Cloud платформасында Spark қалай орнатуға болады. Конфигурация мысалымен толықтай нұсқаулық.",
   "sectionTitle": "Spark кластерін құру",
   "icon": "",
   "weight": 4,
+  "uuid": "331c85e4-68d6-4184-a972-9a3bdf6b46e4",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ba6790d4-b70d-4dcd-bda3-055fc117c4ee"
+  }
 }

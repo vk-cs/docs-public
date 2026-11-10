@@ -1,0 +1,3 @@
+- ![ ](/kz/assets/protected-icon.svg "inline") — әрекет ететін блоктау.
+- ![ ](/kz/assets/protected-expiring-icon.svg "inline") — мерзімі жақында аяқталатын әрекет ететін блоктау.
+- ![ ](/kz/assets/protected-expired-icon.svg "inline") — мерзімі аяқталған блоктау. Көшірмені {linkto(/kz/storage/backups/instructions/manage-backup-copy#backup-copy-delete)[text=жоюға]} болады.

@@ -1,0 +1,14 @@
+{
+  "title": "Apache Kafka орнату",
+  "shortDescription": "VK Cloud қосымшалар дүкенінен Apache Kafka орнату, қосылымды баптау және топиктермен алғашқы әрекеттерді орындау",
+  "metaDescription": "VK Cloud қосымшалар дүкенінен Apache Kafka орнату, қосылымды баптау, топиктермен алғашқы әрекеттерді орындау және мониторингті баптау",
+  "sectionTitle": "Apache Kafka орнату",
+  "icon": "",
+  "weight": 2,
+  "uuid": "64cfa636-6c48-4966-b6f2-adac9bd3fc36",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,14 +1,17 @@
 {
   "title": "Point-in-time recovery (PITR)",
-  "shortDescription": "PostgreSQL жүйесінде резервтік көшіру кестесімен (PITR) жұмыс істеу",
+  "shortDescription": "PostgreSQL-дегі резервтік көшіру кестесімен (PITR) жұмыс істеу",
   "metaDescription": "Point-in-time recovery (PITR) механизмі PostgreSQL кестесінің деректерін үздіксіз резервтік көшіруді қамтамасыз етеді.",
   "sectionTitle": "Point-in-time recovery (PITR)",
   "icon": "",
   "weight": 5,
+  "uuid": "57a7a27b-b563-4924-8591-391c18f561f2",
+  "additionalUuids": [
+    "14165165-68a1-41ee-a430-675b4593cdb3"
+  ],
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "ed83d5f1-b621-4211-9b0d-f7deca53b5d8"
+  }
 }

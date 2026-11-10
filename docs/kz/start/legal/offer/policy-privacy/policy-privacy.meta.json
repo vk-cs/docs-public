@@ -1,0 +1,14 @@
+{
+  "title": "Құпиялық саясаты",
+  "shortDescription": "",
+  "metaDescription": "",
+  "sectionTitle": "Құпиялық саясаты",
+  "icon": "",
+  "weight": 7,
+  "uuid": "e7aefb70-2913-4dbb-86a4-450403d51fea",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

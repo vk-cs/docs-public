@@ -1,13 +1,13 @@
 {
-  "title": "Қызмет образын жариялау",
+  "title": "Сервис бейнесін жариялау",
   "shortDescription": "",
-  "metaDescription": "Қызмет образын жариялау",
-  "sectionTitle": "Қызмет образын жариялау",
+  "metaDescription": "Сервис бейнесін жариялау",
+  "sectionTitle": "Сервис бейнесін жариялау",
   "weight": 6,
+  "uuid": "c41ffb2b-c571-4a5f-8be5-9782153d0417",
   "build": {
     "for": [
       "public"
     ]
-  },
-  "uuid": "d7a1779b-4985-42e8-bc88-291c1d561d46"
+  }
 }

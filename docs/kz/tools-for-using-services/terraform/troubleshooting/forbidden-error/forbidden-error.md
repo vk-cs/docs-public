@@ -1,10 +1,12 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Серверді жасау кезіндегі 403 қатесі)[id=terraform-forbidden-error]}
 
-Terraform арқылы серверді жасау кезінде `Working with SDN=NEUTRON is not allowed` қатесі жобаңыз [SDN Sprut](/kz/networks/vnet/concepts/sdn#vnet-sdn-sprut) желілік архитектурасын пайдаланатынын, ал Terraform конфигурациясы [SDN Neutron](/kz/networks/vnet/concepts/sdn#vnet-sdn-neutron) ресурстарына жүгінуге тырысатынын білдіреді.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-### Шешім
+Terraform арқылы серверді жасау кезіндегі `Working with SDN=NEUTRON is not allowed` қатесі сіздің жобаңыз {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-sprut)[text=SDN Sprut]} желілік архитектурасын пайдаланатынын, ал Terraform конфигурациясы {linkto(../../../../networks/vnet/concepts/sdn#vnet-sdn-neutron)[text=SDN Neutron]} ресурстарына жүгінуге тырысатынын көрсетеді.
 
-1. {var(cloud)} провайдерінің өзекті нұсқасын пайдаланып жатқаныңызға көз жеткізіңіз. Нұсқаны `vkcs_provider.tf` файлынан тексеріңіз:
+### {heading(Шешім)[id=terraform-forbidden-error-solution]}
+
+1. {var(cloud)} провайдерінің өзекті нұсқасын пайдаланып жүргеніңізге көз жеткізіңіз. Нұсқаны `vkcs_provider.tf` файлынан тексеріңіз:
 
    ```hcl
    terraform {
@@ -33,4 +35,4 @@ Terraform арқылы серверді жасау кезінде `Working with 
    terraform apply
    ```
 
-Егер мәселе сақталса, [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts) және `terraform plan` командасының нәтижесі мен провайдер нұсқасын қосыңыз.
+Егер мәселе сақталса, [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініп, `terraform plan` командасының нәтижесін және провайдердің нұсқасын тіркеп жіберіңіз.

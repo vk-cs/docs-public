@@ -1,8 +1,10 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(MLflow Deploy инстансын жасау)[id=terraform-deploymlflow]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Мақалада Terraform көмегімен MLflow инстансының deploy-нұсқасын жасау мысалдары келтірілген.
 
-Инстансты жасау кезінде мыналар пайдаланылады:
+Инстансты жасағанда пайдаланылады:
 
 - [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md) ресурсы;
 - [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md) ресурсы;
@@ -10,26 +12,26 @@
 - [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) деректер көзі;
 - [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) деректер көзі.
 
-Параметрлердің толық сипаттамасы [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) берілген.
+Параметрлердің толық сипаттамасы — [Terraform провайдерінің құжаттамасында](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).
 
-## Инстансты жасамас бұрын
+## {heading(Инстансты жасамас бұрын)[id=terraform-deploymlflow-prepare]}
 
-1. [Квоталарды](/kz/tools-for-using-services/account/concepts/quotasandlimits) тексеріңіз. Таңдалған [аймақта](/kz/tools-for-using-services/account/concepts/regions) инстансты жасау үшін ресурстар жеткілікті екеніне көз жеткізіңіз. Әртүрлі аймақтар үшін әртүрлі квоталар бапталуы мүмкін.
+1. {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=Квоталарды]} тексеріңіз. Таңдалған {linkto(../../../../account/concepts/regions#tools-account-concepts-regions)[text=аймақта]} CDN-ресурсын жасауға жеткілікті ресурс бар-жоғын тексеріңіз. Әртүрлі аймақтар үшін әртүрлі квоталар орнатылуы мүмкін.
 
-   Қажет болса, [квоталарды арттырыңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
+   Қажет болса, квоталарды {linkto(../../../../account/instructions/project-settings/manage#project-increase-quota)[text=арттырыңыз]}.
 
-1. Егер бұл әлі жасалмаған болса, [Terraform орнатып, ортаны баптаңыз](/kz/tools-for-using-services/terraform/quick-start).
+1. Әлі жасалмаса, {linkto(../../../quick-start#terraform-quick-start)[text=Terraform орнатыңыз және провайдерді конфигурациялаңыз]}.
 
-1. `vkcs_provider.tf` файлында провайдердің 0.6.0 немесе одан жоғары нұсқасы көрсетілгеніне көз жеткізіңіз. Егер провайдер нұсқасы төмен болса, [провайдерді жаңартыңыз](../../../quick-start).
+1. `vkcs_provider.tf` файлында провайдердің нұсқасы 0.6.0 немесе одан жоғары көрсетілгенін тексеріңіз. Провайдердің нұсқасы төмен болса, оны {linkto(../../../quick-start#terraform-quick-start-update)[text=жаңартыңыз]}.
 
-## 1. MLflow Deploy инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-deploymlflow)}. MLflow Deploy инстансының сипаттамасы бар файлды жасаңыз)[id=terraform-deploymlflow-instance-file]}
 
 Төмендегі мысалда инстанс келесі конфигурацияда жасалады:
 
-- әдепкі аймақ, `ME1` қолжетімділік аймағы;
-- `SSD` диск түрі, көлемі — 50 ГБ;
-- деректер дискісінің түрі `SSD`, көлемі — 60 ГБ.
-Келесі мазмұндағы `main.tf` Terraform конфигурация файлын жасаңыз:
+- әдепкі аймақ, `ME1` қолжетімділік зонасы;
+- диск түрі `SSD`, өлшемі — 50 ГБ;
+- деректер дискінің түрі `SSD`, өлшемі — 60 ГБ.
+Келесі мазмұнмен Terraform конфигурация файлын `main.tf` жасаңыз:
 
 ```hcl
 resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
@@ -58,12 +60,12 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
 
 Мұнда:
 
-- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифесте көрсетуге немесе оны деректер көзінен алуға болады.
+- `flavor_id` — ВМ түрінің идентификаторы. Идентификаторды манифестке жазуға немесе деректер көзінен алуға болады.
 
   {cut(Мысалдар)}
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор кейінірек жасалатын `vkcs_compute_flavor` деректер көзінен алынады.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: [OpenStack CLI](/kz/tools-for-using-services/cli/openstack-cli) арқылы алынған идентификатор көрсетіледі.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор кейінірек құрылатын `vkcs_compute_flavor` деректер көзінен алынады.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: {linkto(../../../../cli/openstack-cli#tools-cli-openstack)[text=OpenStack CLI]} арқылы алынған идентификатор көрсетіледі.
 
   {/cut}
 
@@ -71,24 +73,24 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
 
   {cut(Мысалдар)}
 
-  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: жаңа MLflow инстансы жасалады, инстанс идентификаторы `vkcs_mlplatform_mlflow` ресурсы жасалғаннан кейін алынады. Ресурс кейінірек жасалады.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор [{var(cloud)} жеке кабинетінде](https://cloud.vk.kz/app) MLflow инстансы бетінде қолжетімді.
+  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: жаңа MLflow инстансы жасалады, инстанстың идентификаторы `vkcs_mlplatform_mlflow` ресурсы жасалғаннан кейін алынады. Ресурс кейінірек құрылады.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://cloud.vk.ru/app) MLflow инстансының бетінде қолжетімді.
 
   {/cut}
 
-- `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстансты бар желіде де, жаңа желіде де орналастыруға болады. Идентификаторды манифесте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
+- `network_id` — инстанс орналастырылатын желінің идентификаторы. Инстанс бар желіде немесе жаңа желіде орналасуы мүмкін. Идентификаторды манифестте көрсетуге, деректер көзінен немесе ресурстан алуға болады.
 
   {cut(Мысалдар)}
 
-  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсы жасайтын жаңа желіде орналастырылады. Ресурс кейінірек жасалады.
-  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналастырылады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек жасалады.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналастырылады. {var(cloud)} жеке кабинетіндегі [желілер тізімінен](/kz/networks/vnet/instructions/net#vnet-net-view) немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
+  - `network_id = vkcs_networking_network.default.id`: инстанс `vkcs_networking_network` ресурсымен жасалатын жаңа желіде орналасады. Ресурс кейінірек құрылады.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс бар желіде орналасады, оның идентификаторы `vkcs_networking_network` деректер көзінен алынады. Деректер көзі кейінірек құрылады.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс бар желіде орналасады. {var(cloud)} жеке кабинетіндегі {linkto(../../../../../networks/vnet/instructions/net#vnet-net-view)[text=желілер тізімінен]} немесе Openstack CLI арқылы алынған оның идентификаторы көрсетіледі.
 
   {/cut}
 
-## 2. (Опционалды) ВМ түріне арналған деректер көзінің сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-deploymlflow)}. (Міндетті емес) ВМ түріне арналған деректер көзінің сипаттамасы бар файлды жасаңыз)[id=terraform-deploymlflow-vm-file]}
 
-Қажетті ВМ түрінің сипаттамасы бар `flavor.tf` Terraform конфигурация файлын жасаңыз:
+Қажетті ВМ түрінің сипаттамасы бар Terraform конфигурация файлын `flavor.tf` жасаңыз:
 
 ```hcl
 data "vkcs_compute_flavor" "basic" {
@@ -96,21 +98,21 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Файлда көрсетілген ВМ түрі сіздің Terraform жобаңызда MLflow Deploy инстансын жасау үшін пайдаланылады.
+Файлда көрсетілген ВМ түрі Terraform жобасында MLflow Deploy инстансын жасау үшін пайдаланылады.
 
-## 3. (Опционалды) Байланыстырылған MLflow инстансының сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-deploymlflow)}. (Міндетті емес) Байланысты MLflow инстансының сипаттамасы бар файлды жасаңыз)[id=terraform-deploymlflow-mlflow-file]}
 
-[MLflow инстансының сипаттамасы](../mlflow) бар `mlflow_instance.tf` Terraform конфигурация файлын жасаңыз.
+{linkto(../mlflow#terraform-mlflow)[text=MLflow инстансының сипаттамасы]} бар Terraform конфигурация файлын `mlflow_instance.tf` жасаңыз.
 
-## 4. (Опционалды) Инстансқа арналған желілік инфрақұрылымның сипаттамасы бар файлды жасаңыз
+## {heading({counter(tf-deploymlflow)}. (Міндетті емес) Инстансқа арналған желілік инфрақұрылымның сипаттамасы бар файлды жасаңыз)[id=terraform-deploymlflow-net-file]}
 
-Инстансқа арналған желілік инфрақұрылым сипаттамасы бар `network.tf` Terraform конфигурация файлын жасаңыз:
+Инстансқа арналған желілік инфрақұрылымның сипаттамасы бар Terraform конфигурация файлын `network.tf` жасаңыз:
 
 {tabs}
 
 {tab(Бар желінің сипаттамасы)}
 
-Жобада бар желіге арналған деректер көзі сипаттамасының мысалы:
+Жобада бар желіге арналған деректер көзінің сипаттамасының мысалы:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -120,9 +122,10 @@ data "vkcs_networking_network" "default" {
 ```
 {/tab}
 
-{tab(Жаңа желіні жасау)}
+{tab(Жаңа желі жасау)}
 
 ```hcl
+
 # Create networks
 resource "vkcs_networking_network" "app" {
   name        = "app-tf-example"
@@ -144,7 +147,8 @@ data "vkcs_networking_network" "extnet" {
 # Create a router to connect netwoks
 resource "vkcs_networking_router" "router" {
   name = "router-tf-example"
-  # Connect router to Internet
+
+# Connect router to Internet
   external_network_id = data.vkcs_networking_network.extnet.id
 }
 
@@ -159,19 +163,19 @@ resource "vkcs_networking_router_interface" "app" {
 
 {/tabs}
 
-## 5. Terraform көмегімен қажетті ресурстарды жасаңыз
+## {heading({counter(tf-deploymlflow)}. Қажетті ресурстарды Terraform көмегімен жасаңыз)[id=terraform-deploymlflow-create]}
 
 1. Terraform конфигурация файлдарын бір директорияға орналастырыңыз:
-  
+
    - `vkcs_provider.tf`;
    - `main.tf`;
-   - `flavor.tf` (егер жасалған болса);
-   - `mlflow_instance.tf`(егер жасалған болса);
-   - `jh_instance.tf`(егер жасалған болса);
-   - `network.tf`(егер жасалған болса).
+   - `flavor.tf` (жасалған болса);
+   - `mlflow_instance.tf` (жасалған болса);
+   - `jh_instance.tf` (жасалған болса);
+   - `network.tf` (жасалған болса).
 
 1. Осы директорияға өтіңіз.
-1. Конфигурация файлдарының дұрыс екенін және қажетті өзгерістерді қамтитынын тексеріңіз:
+1. Конфигурация файлдары дұрыс және қажетті өзгерістерді қамтитынын тексеріңіз:
 
    ```console
    terraform validate && terraform plan
@@ -183,28 +187,28 @@ resource "vkcs_networking_router_interface" "app" {
    terraform apply
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.
 
-## 6. Конфигурацияның қолданылуын тексеріңіз
+## {heading({counter(tf-deploymlflow)}. Конфигурацияның қолданылуын тексеріңіз)[id=terraform-deploymlflow-check]}
 
-MLflow Deploy инстансының сәтті жасалғанына көз жеткізіңіз:
+MLflow Deploy инстансы сәтті жасалғанын тексеріңіз:
 
-1. {var(cloud)} [жеке кабинетіне](https://cloud.vk.kz/app/) өтіңіз.
-1. **ML Platform** → **Инстансы** бөліміне өтіңіз. MLflow Deploy инстансының жасалғанына және белсенді екеніне көз жеткізіңіз.
+1. {var(cloud)} [жеке кабинетына өтіңіз](https://cloud.vk.ru/app/).
+1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. MLflow Deploy инстансы жасалғанын және белсенді екенін тексеріңіз.
 
-## Пайдаланылмайтын ресурстарды жойыңыз
+## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-deploymlflow-delete]}
 
-Егер Terraform көмегімен жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
+Terraform көмегімен жасалған ресурстар қажет болмаса, оларды жойыңыз:
 
-1. Конфигурация файлдары бар директорияға өтіңіз.
-1. Келесі команданы орындаңыз:
+1. Terraform конфигурация файлдары бар директорияға өтіңіз.
+1. Команданы орындаңыз:
 
    ```console
    terraform destroy
    ```
 
-   Растауды сұрағанда `yes` енгізіңіз.
+   Растау сұралғанда `yes` енгізіңіз.
 
 1. Операцияның аяқталуын күтіңіз.

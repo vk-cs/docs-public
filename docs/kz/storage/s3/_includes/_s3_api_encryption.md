@@ -6,6 +6,7 @@
 
 ## {heading(GetBucketEncryption)[id=api-spec-s3-get-bucket-encryption]}
 
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 `GetBucketEncryption` әдісі бакетте орнатылған шифрлау конфигурациясын қайтарады.
 
 Сұрау мысалы:

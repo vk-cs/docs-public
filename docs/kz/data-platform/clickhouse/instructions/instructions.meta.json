@@ -1,10 +1,10 @@
 {
   "title": "Қадамдық нұсқаулар",
-  "shortDescription": "Сервис данасын жасау және дана мен оның компоненттерін басқару",
-  "metaDescription": "VK Data Platform жүйесінде Cloud ClickHouse сервис даналарын қалай жасауға және басқаруға болатынын біліңіз",
+  "shortDescription": "Сервис данасын жасау және дананы мен оның құрамдастарын басқару",
+  "metaDescription": "VK Data Platform платформасында Cloud ClickHouse сервис даналарын қалай жасау және басқару туралы біліңіз: қосу, мониторинг, журналдау",
   "sectionTitle": "Қадамдық нұсқаулар",
   "weight": 3,
-  "uuid": "6f4d8a35-bd52-43be-9d49-97dd918abdef",
+  "uuid": "b7a8822c-0eb9-4397-a3fa-2f7be6080455",
   "build": {
     "for": [
       "public",

@@ -1,0 +1,14 @@
+{
+  "title": "Cloud Airflow",
+  "shortDescription": "",
+  "metaDescription": "VK Data Platform платформасындағы Cloud Airflow даналарын мониторингтеу үшін Prometheus форматындағы қандай Cloud Airflow метрикалары жиналып, дашбордтарда көрсетілетінін біліңіз.",
+  "sectionTitle": "Cloud Airflow",
+  "weight": 4,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "e8cb880c-251a-41df-944c-09f57cb1d470"
+}

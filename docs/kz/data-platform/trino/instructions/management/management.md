@@ -1,52 +1,12 @@
-# {heading(Сервис данасымен жұмыс істеу)[id=trino_management]}
+# {heading(Сервис данаўлґымымен жұмыс істеу)[id=trino_management]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
 
-{include(/kz/_includes/_translated_by_ai.md)}
-
-## {heading(Дана туралы ақпаратты қарау)[id=trino_view]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_view_info]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Дана атауын өзгерту)[id=trino_rename]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_edit_name]}
-
-{/tab}
-
-{/tabs}
-
-{ifndef(public)}
-## {heading(TLS сертификатын қарау және ауыстыру)[id=trino_certificate]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_tls_certificate]}
-
-{/tab}
-
-{/tabs}
-
-{/ifndef}
-
-{ifndef(public)}
-## {heading(IP және порттарды өзгерту)[id=trino_change-ip]}
+## {heading(IP мен порттарды өзгерту)[id=trino_change-ip]}
 
 {tabs}
 
@@ -60,58 +20,7 @@
 
 {/ifndef}
 
-## {heading(Компоненттер күйін қарау)[id=trino_status]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_view_status]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Дананы көлденеңінен масштабтау)[id=trino_horizontal_scaling]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_horizontal_scaling]}
-
-{/tab}
-
-{/tabs}
-
-{ifndef(public)}
-## {heading(Дананы тік масштабтау)[id=trino_vertical_scaling]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_vertical_scaling]}
-
-{/tab}
-
-{/tabs}
-
-{/ifndef}
-
-## {heading(Баптауларды қарау және өңдеу)[id=trino_edit_settings]}
-
-{tabs}
-
-{tab(Жеке кабинет)}
-
-{include(../../../_includes/_data_p.md)[tags=instance_edit_settings_new]}
-
-{/tab}
-
-{/tabs}
-
-## {heading(Тіркелгіні қарау)[id=trino_admin_view]}
+## {heading(Тіркесілгені қарау)[id=trino_admin_view]}
 
 {ifndef(public)}
 {note:warn}
@@ -153,20 +62,18 @@
    {include(../../../_includes/_trino.md)[tags=password]}
 
    {note:info}
-
    Жоғалған құпиясөзді қалпына келтіру мүмкін емес, бірақ оны жаңасына ауыстыруға болады.
-
    {/note}
 
-   Жаңа құпиясөз жасау үшін **Генерациялау** батырмасын басыңыз.
+   Жаңа құпиясөз жасау үшін **Генерациялау** түймесін басыңыз.
 
-1. **Өзгерістерді сақтау** батырмасын басыңыз.
+1. **Өзгерістерді сақтау** түймесін басыңыз.
 
 {/tab}
 
 {/tabs}
 
-## {heading(Тіркелгіні жасау)[id=trino_add_admin]}
+## {heading(Тіркелгі жасау)[id=trino_add_admin]}
 
 {ifndef(public)}
 {note:info}
@@ -181,19 +88,17 @@
 {include(../../../_includes/_trino.md)[tags=open]}
 
 1. Дана бетінде **Тіркелгі деректері** қойындысына өтіңіз.
-1. **Тіркелгі қосу** батырмасын басыңыз.
-1. Ашылған терезеде Cloud Trino-ға қол жеткізу үшін пайдаланушы логинін орнатыңыз.
-1. Құпиясөзді ойлап табыңыз немесе жасаңыз.
+1. **Тіркелгі қосу** түймесін басыңыз.
+1. Ашылған терезеде Cloud Trino-ға кіру үшін пайдаланушының логинын белгілеңіз.
+1. Пайдаланушының құпиясөзін ойлап табыңыз немесе генерациялаңыз.
 
    {include(../../../_includes/_trino.md)[tags=password]}
 
    {note:info}
-
    Жоғалған құпиясөзді қалпына келтіру мүмкін емес, бірақ оны жаңасына ауыстыруға болады.
-
    {/note}
 
-1. **Қосу** батырмасын басыңыз.
+1. **Қосу** түймесін басыңыз.
 
 {/tab}
 

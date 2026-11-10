@@ -1,10 +1,10 @@
 # {heading(jq орнату)[id=rest-api-jq]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-JSON форматындағы деректер шығысын сүзгілеу үшін [jq](https://jqlang.github.io/jq/) утилитасын пайдаланыңыз. Ол платформадан алынатын API және OpenStack деректеріне қолданылады.
+JSON пішіндегі деректерді шығаруды сүзгілеу үшін [jq](https://jqlang.github.io/jq/) утилитасын пайдаланыңыз. Ол платформадан алынатын API және OpenStack деректеріне қолданылады.
 
-jq жүйеңізде алдын ала орнатылған болуы керек.
+jq жүйеңізде алдын ала орнатылуы керек.
 
 {cut(Пішімделмеген JSON мысалы)}
 
@@ -14,7 +14,7 @@ jq жүйеңізде алдын ала орнатылған болуы кере
 
 {/cut}
 
-{cut(jq пайдаланылған JSON мысалы)}
+{cut(jq пайдаланған JSON мысалы)}
 
   ```json
       {
@@ -131,8 +131,8 @@ yum install jq -y
 
 {tab(Windows)}
 
-1. Егер әлі орнатылмаған болса, [Chocolatey](https://chocolatey.org) пакет менеджерін [орнатыңыз](https://community.chocolatey.org/courses/installation/installing).
-1. PowerShell ашып, команданы орындаңыз:
+1. Ол әлі орнатылмаған болса, [Chocolatey](https://chocolatey.org) пакеттер менеджерін [орнатыңыз](https://community.chocolatey.org/courses/installation/installing).
+1. PowerShell ашып, мына команданы орындаңыз:
 
    ```console
    choco install jq -y
@@ -142,7 +142,7 @@ yum install jq -y
 
 {tab(Mac OS)}
 
-Өзіңізге ыңғайлы пакет менеджерін пайдаланыңыз:
+Өзіңізге ыңғайлы пакеттер менеджерін пайдаланыңыз:
 
 - Fink:
 
@@ -168,7 +168,7 @@ yum install jq -y
 
 ## {heading(Пайдалану мысалы)[id=rest-api-jq-example]}
 
-Karboii API арқылы [жоспарлар тізімін алу](/kz/storage/backups/how-to-guides/api-examples#backup-api-examples-get-plan) және оны пішімделген JSON түрінде шығару.
+Karboii API арқылы пішімделген JSON түрінде жоспарлардың {linkto(../../../../storage/backups/how-to-guides/api-examples#backup-api-examples-get-plan)[text=тізімін алу]}.
 
 Команда:
 
@@ -236,7 +236,5 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mc
 {/cut}
 
 {note:info}
-
-Утилитаның синтаксисі мен қолданылуы туралы толық ақпарат [ресми құжаттамада](https://jqlang.github.io/jq/manual/) берілген.
-
+Утилитаның синтаксисі мен пайдаланылуы туралы толық ақпарат [ресми құжаттамада](https://jqlang.github.io/jq/manual/) берілген.
 {/note}

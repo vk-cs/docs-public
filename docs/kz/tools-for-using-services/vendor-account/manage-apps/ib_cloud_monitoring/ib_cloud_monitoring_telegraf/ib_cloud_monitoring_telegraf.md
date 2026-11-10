@@ -1,10 +1,10 @@
 # {heading(Мониторинг агенті)[id=ib_cloud_monitoring_telegraf]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Marketplace image-based қолданбалар үшін метрикаларды жинауға мүмкіндік беретін бұлттық платформаның [Cloud Monitoring](/kz/monitoring-services/monitoring) сервисімен интеграцияланған. Метрикаларды жинау мониторинг агенті (Telegraf) арқылы орындалады. Мониторинг агентін пайдалану сызбасы {linkto(#pic_use_agent)[text=%number-суретте]} келтірілген.
+Marketplace [Cloud Monitoring](/kz/monitoring-services/monitoring) бұлттық платформасының сервисімен интеграцияланған, ол image-based қосымшалар үшін метрикаларды жинауға мүмкіндік береді. Метрикаларды жинау мониторинг агенті (Telegraf) көмегімен орындалады. Мониторинг агентін пайдалану схемасы {linkto(#pic_use_agent)[text=%number-суретте]} көрсетілген.
 
-{caption(Сурет {counter(pic)[id=numb_pic_use_agent]} — Мониторинг агентін пайдалану)[align=center;position=under;id=pic_use_agent;number={const(numb_pic_use_agent)} ]}
+{caption(Рисунок {counter(pic)[id=numb_pic_use_agent]} — Мониторинг агентін пайдалану)[align=center;position=under;id=pic_use_agent;number={const(numb_pic_use_agent)} ]}
 ![pic1](../../assets/cloud_monitoring_telegraf.png){params[noBorder=true]}
 {/caption}
 

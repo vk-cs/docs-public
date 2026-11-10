@@ -1,11 +1,11 @@
 {
   "title": "Notification",
   "shortDescription": "Бакет үшін хабарландырулар конфигурациясын басқару",
-  "metaDescription": "VK Object Storage жүйесінде бакет үшін хабарландырулар конфигурациясын алу (GetBucketNotificationConfiguration) және орнату (PutBucketNotificationConfiguration) әдістерінің сипаттамасы, сондай-ақ бақылауға қолжетімді операциялардың сипаттамасы",
+  "metaDescription": "VK Object Storage-та бакет үшін хабарландырулар конфигурациясын алу (GetBucketNotificationConfiguration) және орнату (PutBucketNotificationConfiguration) әдістерінің сипаттамасы, сонымен қатар бақылауға қолжетімді операциялардың сипаттамасы",
   "sectionTitle": "Notification",
   "icon": "",
   "weight": 6,
-  "uuid": "ec705b74-8cdf-4cd6-9947-28e701fd7cd4",
+  "uuid": "2301e9f4-f084-4f74-8949-1fd098024c9c",
   "build": {
     "for": [
       "s3",

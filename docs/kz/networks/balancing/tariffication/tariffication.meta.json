@@ -1,0 +1,14 @@
+{
+  "title": "Тарификация",
+  "shortDescription": "Қызметтің құны және оны тарификациялау ерекшеліктері",
+  "metaDescription": "Load Balancing қызметінің құны және оны тарификациялау ерекшеліктері.",
+  "sectionTitle": "Тарификация",
+  "icon": "",
+  "weight": 4,
+  "uuid": "390f0a8e-971c-4882-8039-ef8c307cfe16",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

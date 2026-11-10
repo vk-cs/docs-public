@@ -1,3 +1,5 @@
-{include(/kz/_includes/_translated_by_ai.md)}
+# {heading(Клиенттерді және олардың жобаларын басқару)[id=partner-platform-client-management]}
 
-VK Cloud серіктесінің платформасында клиенттерді және олардың жобаларын басқару операциялары.
+{include(/kz/_includes/_translated_by_ai_kz.md)}
+
+{var(cloud)} серіктестік платформасында клиенттерді және олардың жобаларын басқару операциялары.

@@ -1,6 +1,6 @@
 # {heading(Ішкі желіні жою мүмкін емес)[id=vnet-subnet-delete-problem]}
 
-{include(/kz/_includes/_translated_by_ai.md)}
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Ішкі желіні жою кезінде қате пайда болады:
 
@@ -14,21 +14,21 @@ Unable to complete operation on subnet: One or more ports have an IP allocation 
 
 ### {heading(Шешім)[id=vnet-subnet-delete-problem-resolve]}
 
-1. Портты жойылған ВМ-ден ажыратыңыз, ол үшін оны жоқ ресурсқа байланыстырыңыз: 
+1. Портты өшірілген ВМ-ден ажыратыңыз, ол үшін оны жоқ ресурсқа байланыстырыңыз:
 
    ```console
-   openstack port set --device-owner <ПРОИЗВОЛЬНЫЙ_ТЕКСТ> <ИМЯ_ИЛИ_ID_ПОРТА>
+   openstack port set --device-owner <КЕЗКЕЛГЕН_МӘТІН> <ПОРТ_АТЫ_НЕМЕСЕ_ID_СІ>
    ```
    Мұнда:
 
-   - `<ПРОИЗВОЛЬНЫЙ_ТЕКСТ>` — жоқ ресурстың кез келген атауы немесе идентификаторы.
-   - `<ИМЯ_ИЛИ_ID_ПОРТА>` — жойылған ВМ-ден қалған порттың атауы немесе идентификаторы. Ішкі желінің порттарын көру: `openstack port list --network <ИМЯ_ИЛИ_ID_СЕТИ>`.
+   - `<КЕЗКЕЛГЕН_МӘТІН>` — жоқ ресурстың кез келген аты немесе идентификаторы.
+   - `<ПОРТ_АТЫ_НЕМЕСЕ_ID_СІ>` — өшірілген ВМ-ден қалған порттың аты немесе идентификаторы. Поджелі порттарын көру: `openstack port list --network <ЖЕЛІ_АТЫ_НЕМЕСЕ_ID_СІ>`.
 
-1. Ішкі желіні жойып көріңіз:
+1. Поджелі жойып көріңіз:
 
    ```console
-   openstack subnet delete <ID_ПОДСЕТИ>
+   openstack subnet delete <ПОДЖЕЛІ_ID_СІ>
    ```
-   Мұнда `<ID_ПОДСЕТИ>` — жою қажет {linkto(../../../../networks/vnet/instructions/net#vnet-net-view)[text=ішкі желінің идентификаторы]}.
+   Мұнда `<ПОДЖЕЛІ_ID_СІ>` — {linkto(../../../../networks/vnet/instructions/net#vnet-net-view)[text=поджель идентификаторы]}, оны жою қажет.
 
-1. Егер мәселе сақталса, [техникалық қолдау қызметіне хабарласыңыз](/kz/contacts).
+1. Егер мәселе сақталса, {ifdef(public)}[техникалық қолдау көрсету қызметіне](/kz/contacts){/ifdef}{ifdef(private,private-pg)}{var(cloud)} әкімшісіне өтініңіз{/ifdef}.

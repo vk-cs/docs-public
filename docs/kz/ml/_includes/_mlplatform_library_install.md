@@ -49,3 +49,5 @@ Python үшін Cloud ML Platform кітапханасын орнату үшін
    {/tabs}
 
    Көрсетілген сілтеме бойынша кітапхананың өзекті нұсқасы қолжетімді.
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}

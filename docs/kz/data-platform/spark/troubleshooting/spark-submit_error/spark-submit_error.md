@@ -1,10 +1,10 @@
-# {heading(spark-submit скриптімен жұмыс істеу кезіндегі қате)[id=spark-submit_error]}
+# {heading(spark-submit скриптін пайдалану кезіндегі қате)[id=spark-submit_error]}
+
+{include(/kz/_includes/_translated_by_ai_kz.md)}
 
 {ifdef(public)}
 {include(/kz/_includes/_dp-unavailable.md)}
 {/ifdef}
-
-{include(/kz/_includes/_translated_by_ai.md)}
 
 ## {heading(Мәселе)[id=spark-submit_error_problem]}
 
