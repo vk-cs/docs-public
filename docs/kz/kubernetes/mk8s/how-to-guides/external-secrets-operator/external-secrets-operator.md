@@ -66,7 +66,7 @@ VK Cloud құпия менеджерінде құпия [жасаңыз](/kz/sec
      provider:
        vk:
          projectID: <PROJECT_ID>
-         url: <AUTH_URL>
+         url: <BASE_URL>
          auth:
            domain: <USER_DOMAIN_NAME>
            username: <USERNAME>
@@ -78,7 +78,7 @@ VK Cloud құпия менеджерінде құпия [жасаңыз](/kz/sec
    Мұнда:
 
     - `<PROJECT_ID>`, `<USER_DOMAIN_NAME>` және `<USERNAME>` — жоба параметрлерінен көшіріп алған мәндеріңіз.
-    - `<AUTH_URL>` — аймаққа байланысты {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=мекенжай]}:
+    - `<BASE_URL>` — аймаққа байланысты {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=мекенжай]}:
         - `https://msk.cloud.vk.ru` Мәскеу аймағы үшін;
         - `https://kz.cloud.vk.kz` Қазақстан аймағы үшін.
 

@@ -64,7 +64,7 @@
      provider:
        vk:
          projectID: <PROJECT_ID>
-         url: <AUTH_URL>
+         url: <BASE_URL>
          auth:
            domain: <USER_DOMAIN_NAME>
            username: <USERNAME>
@@ -76,7 +76,7 @@
    Здесь:
 
    - `<PROJECT_ID>`, `<USER_DOMAIN_NAME>` и `<USERNAME>` — значения, которые вы скопировали из настроек проекта. 
-   - `<AUTH_URL>` — адрес в зависимости от {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]}:
+   - `<BASE_URL>` — адрес в зависимости от {linkto(../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=региона]}:
       - `https://msk.cloud.vk.ru` для региона Москва;
       - `https://kz.cloud.vk.kz` для региона Казахстан.
 
