@@ -1,0 +1,14 @@
+{
+  "title": "Configuring an S3 gateway for the Cyber Backup Cloud service",
+  "shortDescription": "Deploying an S3 gateway for the Cyber Backup Cloud service and getting started with it",
+  "metaDescription": "S3 gateway for the Cyber Backup Cloud service in VK Cloud: deploying and the initial configuration of the service",
+  "sectionTitle": "Configuring the S3 gateway",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

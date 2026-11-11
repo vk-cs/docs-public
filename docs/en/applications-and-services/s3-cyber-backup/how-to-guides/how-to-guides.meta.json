@@ -1,0 +1,14 @@
+{
+  "title": "How-to guides",
+  "sectionTitle": "How-to guides",
+  "shortDescription": "How to connect an S3 gateway for the Cyber Backup Cloud service and configure its operation",
+  "metaDescription": "A gateway to cloud storage for creating backups: how to connect an S3 gateway for the Cyber Backup Cloud service and configure its operation",
+  "icon": "",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
