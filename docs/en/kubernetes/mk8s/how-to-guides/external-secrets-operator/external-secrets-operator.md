@@ -62,7 +62,7 @@ In the VK Cloud Secret Manager, [create](/ru/security/secret-manager/instruction
      provider:
        vk:
          projectID: <PROJECT_ID>
-         url: <AUTH_URL>
+         url: <BASE_URL>
          auth:
            domain: <USER_DOMAIN_NAME>
            username: <USERNAME>
@@ -74,7 +74,7 @@ In the VK Cloud Secret Manager, [create](/ru/security/secret-manager/instruction
    Here:
 
    - `<PROJECT_ID>`, `<USER_DOMAIN_NAME>`, and `<USERNAME>` are the values from the project settings. 
-   - `<AUTH_URL>` is an address depending on your [region](https://cloud.vk.com/docs/en/tools-for-using-services/account/concepts/regions):
+   - `<BASE_URL>` is an address depending on your [region](https://cloud.vk.com/docs/en/tools-for-using-services/account/concepts/regions):
       - `https://msk.cloud.vk.com` for the Moscow region
       - `https://kz.cloud.vk.com` for the Kazakhstan region
 
