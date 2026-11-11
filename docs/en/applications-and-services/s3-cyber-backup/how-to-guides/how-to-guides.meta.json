@@ -5,7 +5,7 @@
   "metaDescription": "A gateway to cloud storage for creating backups: how to connect an S3 gateway for the Cyber Backup Cloud service and configure its operation",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "990bb701-056d-407a-af38-a5de9e2f8dc2",
   "build": {
     "for": [
       "public"

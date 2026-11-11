@@ -5,7 +5,7 @@
   "sectionTitle": "Настройка шлюза S3",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "0d61dd56-958d-4112-9328-3e104c019c6d",
   "build": {
     "for": [
       "public"

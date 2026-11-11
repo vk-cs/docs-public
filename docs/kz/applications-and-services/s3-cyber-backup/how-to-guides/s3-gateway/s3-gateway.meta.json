@@ -5,7 +5,7 @@
   "sectionTitle": "S3 шлюзін баптау",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "1f072982-afe8-406b-8c65-8b40ddf4d513",
   "build": {
     "for": [
       "public"
