@@ -52,8 +52,12 @@ The table shows the minimum VM configurations for creating a storage cluster.
 
 The number of servers for configuring the gateway directly affects the performance of transferring backups to the cloud. For large projects with a large amount of data and infrastructure, it is recommended to create a fault-tolerant cluster.
 
-To connect and configure the S3 Gateway for Cyber Backup Cloud, contact [technical support](/en/contacts). To calculate the cost, provide information about the volume of infrastructure (VMs) and data (GB) for which backups need to be performed. A request for gateway deployment is processed within one working week.
+To connect and configure the S3 Gateway for Cyber Backup Cloud, use the {linkto(../../how-to-guides/s3-gateway#s3-cyber-backup-s3-gateway)[text=practical guide]}: it creates a storage cluster in a fault-tolerant configuration of three nodes, where one of the nodes acts as the management server. You can also set up a cluster of a single node that is used both for management and for storage. In this case, skip the guide steps related to creating subordinate nodes and configuring high availability.
 
-During the gateway deployment process in your VK Cloud project, the necessary cloud resources will be created, as well as accounts, tenants, and {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=quotas]} configured.
+If you are unable to configure the gateway, contact [technical support](mailto:support@mcs.mail.ru). In your request, provide information about the volume of infrastructure (VMs) and data (GB) for which backups need to be performed. A request for gateway deployment is reviewed within one working week.
+
+Before deploying the gateway, make sure the project has enough {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=quotas]}.
+
+During the gateway deployment process in your VK Cloud project, the necessary cloud resources will be created, as well as accounts and tenants configured.
 
 After deployment, the Cyber Backup Cloud service panel is used for management.
