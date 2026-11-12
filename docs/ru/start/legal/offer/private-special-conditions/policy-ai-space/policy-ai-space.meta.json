@@ -1,0 +1,16 @@
+{
+  "title": "Условия использования Услуги «AI Space»",
+  "shortDescription": "",
+  "metaDescription": "Условия использования Услуги «AI Space» в рамках Платформы «VK Cloud»: обращение к внутренним и внешним LLM-моделям, единицы тарификации (Токены), порядок расчетов и ограничения использования Сервиса.",
+  "sectionTitle": "Условия использования Услуги «AI Space»",
+  "icon": "",
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 13,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}
