@@ -5,7 +5,7 @@
   "sectionTitle": "Просмотр статистики потребления",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "d1e44f00-e9ce-4743-ad77-c4904ab2730f",
   "build": {
     "for": [
       "public"

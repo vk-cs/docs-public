@@ -5,7 +5,7 @@
   "sectionTitle": "Управление лимитами расходов",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "a0ef393a-6bdc-49d4-9e3a-7f000ccb2274",
   "build": {
     "for": [
       "public"

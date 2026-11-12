@@ -5,7 +5,7 @@
   "sectionTitle": "Управление ключом виртуального пользователя",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "ec4dcc7b-0d13-4eb5-b30e-5fcebb0b7627",
   "build": {
     "for": [
       "public"

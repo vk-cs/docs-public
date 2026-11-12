@@ -5,7 +5,7 @@
   "sectionTitle": "Изменение роли пользователя в организации",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "9f46f15c-ced2-4168-a9b0-17a20cf4ba25",
   "build": {
     "for": [
       "public"

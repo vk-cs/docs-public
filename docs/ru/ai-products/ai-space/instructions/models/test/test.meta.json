@@ -5,7 +5,7 @@
   "sectionTitle": "Проверка работы модели",
   "icon": "",
   "weight": 2,
-  "uuid": "",
+  "uuid": "3184c582-772f-40e9-9adb-7fafc78da128",
   "build": {
     "for": [
       "public"

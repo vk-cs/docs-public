@@ -5,7 +5,7 @@
   "sectionTitle": "Управление лицевым счетом",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "03619c83-c5b8-4dea-8128-4dd3f29bfe4d",
   "build": {
     "for": [
       "public"

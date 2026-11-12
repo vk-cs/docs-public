@@ -5,7 +5,7 @@
   "sectionTitle": "Управление пользователями",
   "icon": "",
   "weight": 3,
-  "uuid": "",
+  "uuid": "e80e1fcf-c9f4-461e-9ffb-b2b8704b1fb1",
   "build": {
     "for": [
       "public"

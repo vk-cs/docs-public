@@ -5,7 +5,7 @@
   "sectionTitle": "Управление пользователями организации",
   "icon": "",
   "weight": 1,
-  "uuid": "",
+  "uuid": "a088303f-6e4a-483d-a274-91d1d443eaf3",
   "build": {
     "for": [
       "public"

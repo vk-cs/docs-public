@@ -5,7 +5,7 @@
   "sectionTitle": "Отправка запроса к модели через API",
   "icon": "",
   "weight": 4,
-  "uuid": "",
+  "uuid": "66dea4e3-34e5-4eff-b0e4-1f477d14e769",
   "build": {
     "for": [
       "public"
