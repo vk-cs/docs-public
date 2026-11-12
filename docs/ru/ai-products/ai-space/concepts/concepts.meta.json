@@ -1,0 +1,14 @@
+{
+  "title": "Концепции",
+  "shortDescription": "Принципы функционирования и устройство сервиса VK AI Space",
+  "metaDescription": "Узнайте концепции VK AI Space в VK Cloud: задачи сервиса, типы моделей, доступ, API-ключи, оплата моделей и контроль расходов.",
+  "sectionTitle": "Концепции",
+  "icon": "",
+  "weight": 2,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

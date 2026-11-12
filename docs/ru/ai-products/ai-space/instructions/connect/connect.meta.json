@@ -1,0 +1,14 @@
+{
+  "title": "Вход в VK AI Space",
+  "shortDescription": "Как войти в VK AI Space по приглашению администратора и как входить повторно",
+  "metaDescription": "Узнайте, как впервые войти в VK AI Space по приглашению администратора организации и как входить в сервис повторно: через личный кабинет VK Cloud или по ссылке.",
+  "sectionTitle": "Вход в VK AI Space",
+  "icon": "",
+  "weight": 1,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "AI-продукты",
+  "sectionTitle": "AI-продукты",
+  "metaDescription": "Узнайте об AI-продуктах VK Cloud: VK AI Space дает доступ к генеративным моделям через API с оплатой по факту потребления токенов.",
+  "weight": 10,
+  "icon": "",
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
