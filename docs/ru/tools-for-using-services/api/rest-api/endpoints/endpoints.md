@@ -164,21 +164,6 @@
 
 |===
 
-### {heading(AI API)[id=rest-api-endpoints-ai]}
-
-[cols="1,2,2", options="header"]
-|===
-
-|Эндпоинт
-|Адрес
-|Назначение
-
-|Vision для распознавания изображений и видео
-|https://smarty.mail.ru/
-|{linkto(../../api-spec/vision-api#api-spec-vision)[text=Распознавание объектов]}
-
-|===
-
 ### {heading(Эндпоинты, не привязанные к сервисам)[id=rest-api-endpoints-other]}
 
 [cols="1,2,2", options="header"]

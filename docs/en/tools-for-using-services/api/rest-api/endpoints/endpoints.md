@@ -59,18 +59,12 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 |---------------------------|---------------------------------------|------------------------------------------|
 | S3 domain                 | https://hb.ru-msk.vkcloud-storage.ru/ | Managing [VK Object Storage](/en/storage/s3) |
 
-
 ### Cloud ML Platform
 
 | Endpoint   | Address                                   | Purpose                                         |
 |------------|-------------------------------------------|-------------------------------------------------|
 | Mlplatform | https://msk.cloud.vk.com/infra/mlplatform | Managing [Cloud ML Platform](/en/ml/mlplatform) |
 
-### AI API
-
-| Endpoint                               | Address                   | Purpose                              |
-|----------------------------------------|---------------------------|--------------------------------------|
-| Vision for image and video recognition | https://smarty.mail.ru/   | [Objects recognition](/en/ml/vision) |
 
 ### Endpoints not associated with a service
 

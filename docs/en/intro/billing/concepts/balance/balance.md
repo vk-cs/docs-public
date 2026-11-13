@@ -96,8 +96,6 @@ Parameters of the following services:
 - CDN
 - Cloud Monitoring
 - DNS
-- Cloud Voice
-- Vision
 
 Other parameters:
 

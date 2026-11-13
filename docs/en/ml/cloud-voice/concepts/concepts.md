@@ -1,1 +1,0 @@
-The operating and design description of the Cloud Voice service.

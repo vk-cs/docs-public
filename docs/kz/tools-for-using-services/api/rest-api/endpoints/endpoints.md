@@ -166,21 +166,6 @@
 
 |===
 
-### {heading(AI API)[id=rest-api-endpoints-ai]}
-
-[cols="1,2,2", options="header"]
-|===
-
-|Эндпоинт
-|Мекенжай
-|Мақсаты
-
-|Суреттер мен видеоларды тануға арналған Vision
-|https://smarty.mail.ru/
-|{linkto(../../api-spec/vision-api#api-spec-vision)[text=Объекттерді тану]}
-
-|===
-
 ### {heading(Қызметтермен байланыстырылмаған эндпоинттер)[id=rest-api-endpoints-other]}
 
 [cols="1,2,2", options="header"]
