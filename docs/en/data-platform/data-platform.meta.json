@@ -2,6 +2,7 @@
   "title": "VK Data Platform (unavailable for new customers)",
   "sectionTitle": "VK Data Platform (unavailable for new customers)",
   "metaDescription": "VK Data Platform",
+  "accessRoles": ["data-platform.doc_guest"],
   "weight": 7,
   "icon": "",
   "additionalUuids": [
