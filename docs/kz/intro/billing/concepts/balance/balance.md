@@ -75,9 +75,7 @@ VK Cloud-та сіз {linkto(/kz/intro/billing/instructions/detail#includes-deta
 
 - CDN;
 - Cloud Monitoring;
-- DNS;
-- Cloud Voice;
-- Vision.
+- DNS.
 
 Басқа параметрлер:
 

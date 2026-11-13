@@ -72,9 +72,7 @@
 
 - CDN;
 - Cloud Monitoring;
-- DNS;
-- Cloud Voice;
-- Vision.
+- DNS.
 
 Прочие параметры:
 

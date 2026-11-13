@@ -81,8 +81,6 @@ VK Cloud-та виртуализация, мониторинг, контейне
   - [Cloud Databases](/kz/dbs/dbaas) — ауқымдалатын СУБД ұсынады: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Greenplum негізіндегі Arenadata DB.
   - [Cloud Spark](/kz/ml/spark-to-k8s) — деректерді үлестірілген пакеттік және ағындық өңдеуді, Machine Learning-пен және аналитикамен жұмысты қамтамасыз етеді.
   - [Cloud ML Platform](/kz/ml/mlplatform) — ML-әзірлеудің толық цикліне арналған сервистерді қолдайды.
-  - [Cloud Voice](/kz/ml/cloud-voice) — машиналық оқыту негізінде сөйлеуді тану және синтездеу үшін REST API ұсынады.
-  - [Vision](/kz/ml/vision) — машиналық оқыту негізінде беттер мен объектілерді тану үшін REST API ұсынады.
   - [Cloud Alerting](/kz/monitoring-services/alerting) —  VK Cloud сервистерінің негізгі метрикалары өзгергені туралы хабарландыруларды баптайды.
   - [Cloud Logging](/kz/monitoring-services/logging) — VK Cloud-тағы сервистер журналдарын агрегаттайды және талдайды.
   - [Cloud Monitoring](/kz/monitoring-services/monitoring) — PaaS-сервистеріне тән метрикалардың мониторингін қамтамасыз етеді, мысалы, K8s-контейнерлерінің подтары бойынша аналитика, PostgreSQL СУБД транзакцияларының статистикасы.

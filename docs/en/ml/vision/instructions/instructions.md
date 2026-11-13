@@ -1,1 +1,0 @@
-Methods and tools for recognizing objects, faces, videos and other objects using Vision.

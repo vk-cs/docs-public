@@ -77,8 +77,6 @@ You can use VK Cloud to deploy virtualization, monitoring, container, and data s
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMSs: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB powered by Greenplum.
   - [Cloud Spark](/en/ml/spark-to-k8s) — supports distributed batch and stream data processing, machine learning and analytics.
   - [Cloud ML Platform](/en/ml/mlplatform) — supports services for full-cycle ML development.
-  - [Cloud Voice](/en/ml/cloud-voice) — provides REST API for speech recognition and synthesis based on machine learning.
-  - [Vision](/en/ml/vision) — provides REST API for face and object recognition based on machine learning. 
   - [Cloud Alerting](/en/monitoring-services/alerting) — configures notifications about changes in key metrics of VK Cloud services.
   - [Cloud Logging](/en/monitoring-services/logging) — aggregates and analyzes logs of services in VK Cloud. 
   - [Cloud Monitoring](/en/monitoring-services/monitoring) — provides monitoring of metrics specific to PaaS services, such as analytics on K8s-container pods, and statistics of PostgreSQL DBMS transactions.

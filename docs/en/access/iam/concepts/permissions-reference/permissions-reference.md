@@ -98,24 +98,6 @@ Hotbox component view.
 
 Provides access to view the contents and structure of the Hotbox hot data storage.
 
-### vision_modify
-
-Computer Vision (Vision) management.
-
-Allows configuring computer vision service parameters and launching processing tasks.
-
-### vision_delete
-
-Computer Vision (Vision) component deletion.
-
-Grants the right to stop services and delete computer vision data.
-
-### vision_view
-
-Computer Vision (Vision) component view.
-
-Grants the right to view analytics results and the operation history of computer vision services.
-
 ### marketplace_modify
 
 Application Marketplace (Marketplace) management.

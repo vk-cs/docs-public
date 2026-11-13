@@ -79,8 +79,6 @@
   - {linkto(../../../dbs/dbaas#dbaas-dbaas)[text=Cloud Databases]} — предоставляет масштабируемые СУБД: MySQL, PostgreSQL, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB на базе Greenplum.
   - {linkto(../../../ml/spark-to-k8s#mlspark)[text=Cloud Spark]} — обладает распределенной пакетной и потоковой обработки данных, работы с Machine Learning и аналитикой.
   - {linkto(../../../ml/mlplatform#mlplatform)[text=Cloud ML Platform]} — поддерживает сервисы для полного цикла ML-разработки.
-  - {linkto(../../../ml/cloud-voice#cloud_voice)[text=Cloud Voice]} — предоставляет REST API для распознавания и синтеза речи на базе машинного обучения.
-  - {linkto(../../../ml/vision#vision)[text=Vision]} — предоставляет REST API для распознавания лиц и объектов на базе машинного обучения.
   - {linkto(../../../monitoring-services/alerting#alerting)[text=Cloud Alerting]} —  настраивает уведомления об изменении ключевых метрик сервисов {var(cloud)}.
   - {linkto(../../../monitoring-services/logging#logging)[text=Cloud Logging]} — агрегирует и анализирует логи сервисов в {var(cloud)}.
   - {linkto(../../../monitoring-services/monitoring#monitoring)[text=Cloud Monitoring]} — обеспечивает мониторинг метрик, специфичных для PaaS-сервисов, например, аналитика по подам K8s-контейнеров, статистика транзакций СУБД PostgreSQL.
