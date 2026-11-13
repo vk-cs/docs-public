@@ -1,8 +1,11 @@
 # {heading(Создание диска)[id=iaas-volumes-create]}
 
-{ifndef(private-cert)}
-Чтобы создать диск типа Low Latency NVMe, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts) и запросите доступ к {linkto(../../../../../computing/iaas/concepts/vm/cpu-generation#iaas-cpu-generation)[text=высокопроизводительным конфигурациям]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}к администратору {var(cloud)} и запросите доступ к высокопроизводительным конфигурациям{/ifdef} и дискам. Создание остальных {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типов диска]} доступно по умолчанию во всех конфигурациях.
-{/ifndef}
+{ifdef(public)}
+Чтобы создать диск типа Low Latency NVMe, обратитесь в [техническую поддержку](/ru/contacts) и запросите доступ к {linkto(../../../../../computing/iaas/concepts/vm/cpu-generation#iaas-cpu-generation)[text=высокопроизводительным конфигурациям]} и дискам. Создание остальных {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типов диска]} доступно по умолчанию во всех конфигурациях.
+{/ifdef}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Тип диска LLD (`ef-nvme`) по умолчанию недоступен в проекте. Чтобы получить к нему доступ, обратитесь к администратору {var(cloud)}. Создание остальных {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типов диска]} доступно по умолчанию во всех конфигурациях.
+{/ifdef}
 
 {note:info}
 Создание диска для конкретной ВМ описано в разделе {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-mount-disk)[text=Управление ВМ]}.

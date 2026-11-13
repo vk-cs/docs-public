@@ -3,6 +3,7 @@
   "sectionTitle": "VK Data Platform (жаңа клиенттерге қолжетімсіз)",
   "metaDescription": "VK Data Platform | Деректер платформасы: VK Cloud ұсынатын үлкен көлемдегі деректермен және машиналық оқытумен жұмыс істеуге арналған әмбебап платформа",
   "weight": 7,
+  "accessRoles": ["data-platform.doc_guest"],
   "icon": "",
   "additionalUuids": [
     "a935ce7a-2877-4b43-9b03-b85b07d35c27",

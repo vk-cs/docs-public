@@ -8,12 +8,18 @@
 ## {heading(Увеличение размера диска с перезагрузкой ВМ)[id=iaas-volumes-manage-disk-size]}
 {/ifdef}
 
-{ifdef(public,private,private-pg,private-pdf,private-pg-pdf)}
+{ifdef(public)}
 {note:warn}
 - Размер диска нельзя уменьшить.
 - Если у дисков с типом High IOPS SSD и Low Latency NVMe есть снимки, увеличить размер этих дисков нельзя.
 {/note}
 {/ifdef}
+{ifndef(public,private-cert)}
+{note:warn}
+- Размер диска нельзя уменьшить.
+- Если у дисков с типом High IOPS SSD и LLD есть снимки, увеличить размер этих дисков нельзя.
+{/note}
+{/ifndef}
 
 {ifdef(private-cert)}
 {note:warn}
@@ -72,7 +78,7 @@
    ```console
    openstack volume set --size <РАЗМЕР> <ID_ДИСКА>
    ```
-   
+
 1. Отключите диск от инстанса или {linkto(../../../../../computing/iaas/instructions/vm/vm-root-replace#iaas-vm-root-replace)[text=замените root-диск]}.
 
    {note:warn}
@@ -284,9 +290,12 @@
 
 ## {heading(Изменение типа диска)[id=iaas-volumes-manage-chance-disk-type]}
 
-{ifndef(private-cert)}
-Чтобы изменить тип диска на Low Latency NVMe, обратитесь {ifdef(public)}в [техническую поддержку](/ru/contacts) и запросите доступ к {linkto(../../../../../computing/iaas/concepts/vm/cpu-generation#iaas-cpu-generation)[text=высокопроизводительным конфигурациям]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}к администратору {var(cloud)} и запросите доступ к высокопроизводительным конфигурациям{/ifdef} и дискам. Остальные {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типы диска]} доступны по умолчанию во всех конфигурациях.
-{/ifndef}
+{ifdef(public)}
+Чтобы изменить тип диска на Low Latency NVMe, обратитесь в [техническую поддержку](/ru/contacts) и запросите доступ к {linkto(../../../../../computing/iaas/concepts/vm/cpu-generation#iaas-cpu-generation)[text=высокопроизводительным конфигурациям]} и дискам. Остальные {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типы диска]} доступны по умолчанию во всех конфигурациях.
+{/ifdef}
+{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+Тип диска LLD (`ef-nvme`) по умолчанию недоступен в проекте. Чтобы получить к нему доступ, обратитесь к администратору {var(cloud)}. Остальные {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=типы диска]} доступны по умолчанию во всех конфигурациях.
+{/ifdef}
 
 {tabs}
 
