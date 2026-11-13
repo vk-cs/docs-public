@@ -349,43 +349,43 @@
   },
   {
     "source": "/en/ml/ml/cloud-voice",
-    "destination": "/en/ml/cloud-voice",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/about-cloud-voice",
-    "destination": "/en/ml/cloud-voice/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/get-voice-token",
-    "destination": "/en/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/pricing",
-    "destination": "/en/ml/cloud-voice/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/speech-recognition",
-    "destination": "/en/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/text-to-speech",
-    "destination": "/en/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/ml/cloud-voice/text-to-speech/pronunciation-quality",
-    "destination": "/en/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -979,13 +979,13 @@
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-api-docs",
-    "destination": "/en/ml/vision/instructions/docs-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-api-docs",
-    "destination": "/ru/ml/vision/instructions/docs-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -1555,7 +1555,7 @@
   },
   {
     "source": "/ru/ml/vision/vision-video",
-    "destination": "/ru/ml/vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -4495,7 +4495,7 @@
   },
   {
     "source": "/ru/additionals/api/cloud-voice-api/speech-recognition",
-    "destination": "/ru/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -7483,73 +7483,73 @@
   },
   {
     "source": "/en/ml/vision/vision-start/vision-process",
-    "destination": "/en/ml/vision",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-video",
-    "destination": "/en/ml/vision",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-video/vision-api-video",
-    "destination": "/en/ml/vision",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/about-vision",
-    "destination": "/en/ml/vision/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/vision-requests",
-    "destination": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/vision-limits",
-    "destination": "/en/ml/vision/concepts/vision-limits",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/vision-rates",
-    "destination": "/en/ml/vision/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/vision-process",
-    "destination": "/ru/ml/vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/about-vision",
-    "destination": "/ru/ml/vision/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/vision-requests",
-    "destination": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/vision-limits",
-    "destination": "/ru/ml/vision/concepts/vision-limits",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/vision-rates",
-    "destination": "/ru/ml/vision/tariffication",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -13273,7 +13273,7 @@
   },
   {
     "source": "/en/ml/cloud-voice/text-to-speech/pronunciation-quality",
-    "destination": "/en/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -13285,7 +13285,7 @@
   },
   {
     "source": "/ru/ml/cloud-voice/text-to-speech/pronunciation-quality",
-    "destination": "/ru/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -16879,13 +16879,13 @@
   },
   {
     "source": "/ru/additionals/start/legal/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/start/legal/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -19753,7 +19753,7 @@
   },
   {
     "source": "/ru/additionals/api/vision-api",
-    "destination": "/ru/tools-for-using-services/api/api-spec/vision-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -20527,43 +20527,43 @@
   },
   {
     "source": "/en/ml/cloud-voice/about-cloud-voice",
-    "destination": "/en/ml/cloud-voice/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/pricing",
-    "destination": "/en/ml/cloud-voice/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/about-vision",
-    "destination": "/en/ml/vision/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start",
-    "destination": "/en/ml/vision/quick-start",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/auth-vision",
-    "destination": "/en/ml/vision/quick-start/auth-vision",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-start/start-vision",
-    "destination": "/en/ml/vision/quick-start/start-vision",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-rates",
-    "destination": "/en/ml/vision/tariffication",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -21589,43 +21589,43 @@
   },
   {
     "source": "/ru/ml/cloud-voice/about-cloud-voice",
-    "destination": "/ru/ml/cloud-voice/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/pricing",
-    "destination": "/ru/ml/cloud-voice/tariffication",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/about-vision",
-    "destination": "/ru/ml/vision/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start",
-    "destination": "/ru/ml/vision/quick-start",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/start-vision",
-    "destination": "/ru/ml/vision/quick-start/connect",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-start/auth-vision",
-    "destination": "/ru/ml/vision/quick-start/auth-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-rates",
-    "destination": "/ru/ml/vision/tariffication",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -23449,133 +23449,133 @@
   },
   {
     "source": "/en/ml/cloud-voice/about",
-    "destination": "/en/ml/cloud-voice/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/get-voice-token",
-    "destination": "/en/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/speech-recognition",
-    "destination": "/en/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/text-to-speech",
-    "destination": "/en/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/pronunciation-quality",
-    "destination": "/en/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/about",
-    "destination": "/en/ml/vision/concepts/about",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-limits",
-    "destination": "/en/ml/vision/concepts/vision-limits",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision",
-    "destination": "/en/ml/vision/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/face-recognition",
-    "destination": "/en/ml/vision/instructions/face-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-api-doctypes",
-    "destination": "/en/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-api-obj",
-    "destination": "/en/ml/vision/instructions/vision-api-obj",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-api-txt",
-    "destination": "/en/ml/vision/instructions/vision-api-txt",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-image-api",
-    "destination": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/vision-image-api",
-    "destination": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/docs-recognition",
-    "destination": "/en/ml/vision/instructions/docs-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/plate-recognition",
-    "destination": "/en/ml/vision/instructions/plate-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/scene-text-recognition",
-    "destination": "/en/ml/vision/instructions/scene-text-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/manage-vision/nsfw-recognition",
-    "destination": "/en/ml/vision/instructions/nsfw-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-integrations",
-    "destination": "/en/ml/vision/how-to-guides",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-integrations/vision-py",
-    "destination": "/en/ml/vision/how-to-guides/vision-py",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-integrations/vision-php",
-    "destination": "/en/ml/vision/how-to-guides/vision-php",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/vision-integrations/vision-curl",
-    "destination": "/en/ml/vision/how-to-guides/vision-curl",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -24157,133 +24157,133 @@
   },
   {
     "source": "/ru/ml/cloud-voice/about",
-    "destination": "/ru/ml/cloud-voice/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/get-voice-token",
-    "destination": "/ru/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/speech-recognition",
-    "destination": "/ru/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/text-to-speech",
-    "destination": "/ru/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/pronunciation-quality",
-    "destination": "/ru/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/about",
-    "destination": "/ru/ml/vision/concepts/about",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-limits",
-    "destination": "/ru/ml/vision/concepts/vision-limits",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision",
-    "destination": "/ru/ml/vision/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/face-recognition",
-    "destination": "/ru/ml/vision/instructions/face-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-api-obj",
-    "destination": "/ru/ml/vision/instructions/vision-api-obj",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/docs-recognition",
-    "destination": "/ru/ml/vision/instructions/docs-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-api-doctypes",
-    "destination": "/ru/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-api-txt",
-    "destination": "/ru/ml/vision/instructions/vision-api-txt",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/plate-recognition",
-    "destination": "/ru/ml/vision/instructions/plate-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/scene-text-recognition",
-    "destination": "/ru/ml/vision/instructions/scene-text-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-image-api",
-    "destination": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/vision-image-api",
-    "destination": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/manage-vision/nsfw-recognition",
-    "destination": "/ru/ml/vision/instructions/nsfw-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-integrations",
-    "destination": "/ru/ml/vision/how-to-guides",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-integrations/vision-py",
-    "destination": "/ru/ml/vision/how-to-guides/vision-py",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-integrations/vision-php",
-    "destination": "/ru/ml/vision/how-to-guides/vision-php",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/vision-integrations/vision-curl",
-    "destination": "/ru/ml/vision/how-to-guides/vision-curl",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -27427,13 +27427,13 @@
   },
   {
     "source": "/ru/intro/start/legal/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -29491,97 +29491,97 @@
   },
   {
     "source": "/ru/ml/cloud-voice/service-management",
-    "destination": "/ru/ml/cloud-voice/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/service-management/get-voice-token",
-    "destination": "/ru/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/service-management/speech-recognition",
-    "destination": "/ru/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/service-management/text-to-speech",
-    "destination": "/ru/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/cloud-voice/service-management/pronunciation-quality",
-    "destination": "/ru/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management",
-    "destination": "/ru/ml/vision/instructions",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/face-recognition",
-    "destination": "/ru/ml/vision/instructions/face-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/vision-api-obj",
-    "destination": "/ru/ml/vision/instructions/vision-api-obj",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/docs-recognition",
-    "destination": "/ru/ml/vision/instructions/docs-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/vision-api-doctypes",
-    "destination": "/ru/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/vision-api-txt",
-    "destination": "/ru/ml/vision/instructions/vision-api-txt",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/plate-recognition",
-    "destination": "/ru/ml/vision/instructions/plate-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/scene-text-recognition",
-    "destination": "/ru/ml/vision/instructions/scene-text-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/vision-image-api",
-    "destination": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/vision-image-api",
-    "destination": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/vision/service-management/nsfw-recognition",
-    "destination": "/ru/ml/vision/instructions/nsfw-recognition",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -30091,13 +30091,13 @@
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/digital-cloud/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -30199,13 +30199,13 @@
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/intro/start/legal/vk/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -32137,97 +32137,97 @@
   },
   {
     "source": "/en/ml/cloud-voice/service-management",
-    "destination": "/en/ml/cloud-voice/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/service-management/get-voice-token",
-    "destination": "/en/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/service-management/speech-recognition",
-    "destination": "/en/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/service-management/text-to-speech",
-    "destination": "/en/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/cloud-voice/service-management/pronunciation-quality",
-    "destination": "/en/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management",
-    "destination": "/en/ml/vision/instructions",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/face-recognition",
-    "destination": "/en/ml/vision/instructions/face-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/vision-api-doctypes",
-    "destination": "/en/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/vision-api-obj",
-    "destination": "/en/ml/vision/instructions/vision-api-obj",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/vision-api-txt",
-    "destination": "/en/ml/vision/instructions/vision-api-txt",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/vision-image-api",
-    "destination": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/vision-image-api",
-    "destination": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/docs-recognition",
-    "destination": "/en/ml/vision/instructions/docs-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/plate-recognition",
-    "destination": "/en/ml/vision/instructions/plate-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/scene-text-recognition",
-    "destination": "/en/ml/vision/instructions/scene-text-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/vision/service-management/nsfw-recognition",
-    "destination": "/en/ml/vision/instructions/nsfw-recognition",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   },
@@ -33913,13 +33913,13 @@
   },
   {
     "source": "/ru/start/legal/digital-cloud/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/start/legal/digital-cloud/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -34003,13 +34003,13 @@
   },
   {
     "source": "/ru/start/legal/vk/policy-vision",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/start/legal/vk/policy-voice",
-    "destination": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
     "permanent": false,
     "locale": false
   },
@@ -34346,6 +34346,516 @@
   {
     "source": "/en/dbs/dbaas/how-to-guides/case-mongo-update",
     "destination": "/en/dbs/dbaas/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/concepts",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/concepts/about",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/cloud-voice/tariffication",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/quick-start",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/quick-start/connect",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/quick-start/auth-vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/concepts",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/concepts/about",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/concepts/vision-limits",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/face-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/vision-api-obj",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/docs-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/vision-api-txt",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/plate-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/scene-text-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/vision-image-api",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/instructions/nsfw-recognition",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/how-to-guides",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/how-to-guides/vision-py",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/how-to-guides/vision-php",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/how-to-guides/vision-curl",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/tariffication",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/vision/changelog",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/api/api-spec/vision-api",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/archive/digital-cloud/policy-vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/archive/digital-cloud/policy-voice",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/archive/vk/policy-voice",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/start/legal/archive/vk/policy-vision",
+    "destination": "/ru",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/concepts/about",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/concepts",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/instructions/get-voice-token",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/instructions",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/instructions/pronunciation-quality",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/instructions/speech-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/instructions/text-to-speech",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/cloud-voice/tariffication",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/changelog",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/concepts/about",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/concepts",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/concepts/vision-limits",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/how-to-guides",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/how-to-guides/vision-curl",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/how-to-guides/vision-php",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/how-to-guides/vision-py",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/docs-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/face-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/nsfw-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/plate-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/scene-text-recognition",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/vision-api-doctypes",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/vision-api-obj",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/vision-api-txt",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/instructions/vision-image-api",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/quick-start/auth-vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/quick-start/connect",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/quick-start",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/quick-start/start-vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision/tariffication",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/offer/private-special-conditions/policy-vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/api/api-spec/vision-api",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/offer/private-special-conditions/policy-voice",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/archive/digital-cloud/policy-vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/archive/digital-cloud/policy-voice",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/archive/vk/policy-vision",
+    "destination": "/en",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/start/legal/archive/vk/policy-voice",
+    "destination": "/en",
     "permanent": false,
     "locale": false
   }
