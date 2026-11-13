@@ -12,13 +12,10 @@ The AI assistant works only with the public documentation and has no access to {
 
 1.	Ask the bot a question as if you were talking to a human. The more detailed you describe what interests you, the more accurate the bot's answer will be.
 
-      {note:info}
-      The bot needs a few minutes to prepare an answer.
-      {/note}
+      The bot keeps the conversation context and saves the chat history. You can ask follow-up questions without repeating previous messages, and you can search the chat history for the information you need.
 
       To get the most useful and complete answer, follow these recommendations:
 
-      * Ask questions one at a time. If you ask several questions in one message, the bot may fail to find answers to all of them in the documentation at once.
       * If possible, specify which {var(cloud)} service your question relates to. This gives the bot additional context and makes its answer more accurate.
       * The bot uses the terminology adopted in the {var(cloud)} public documentation. If possible, use the same terminology in your questions.
 
@@ -70,10 +67,9 @@ If the AI assistant could not help you, contact technical support using the cont
 ## {heading(What the AI assistant can do)[id=support-ai-bot-what-can-do]}
 
 * Search for information in the {var(cloud)} documentation taking into account the context of the question. The AI assistant provides detailed answers and links to the source sections.
-* Write Terraform scripts to solve various tasks, for example, to create a Kubernetes cluster.
 * Advise on problems when using {var(cloud)} services. For example, the bot will help you deal with errors when connecting to virtual machines.
 * Explain how to build and implement solutions based on the {var(cloud)} platform. For example, the bot can tell you how to build a Lakehouse solution or how to make an application fault-tolerant.
-* Provide instructions on how to place applications in the {var(cloud)} store.
+* Create a technical support request right from the chat with the bot.
 
 ## {heading(How the AI assistant works)[id=support-ai-bot-how-works]}
 
