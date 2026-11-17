@@ -4,7 +4,7 @@
   "metaDescription": "This section describes how to configure and install the Fluent Bit add-on for Cloud Logging (logaas-integration) in the Managed Containers service",
   "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
   "icon": "",
-  "weight": 7,
+  "weight": 90,
   "build": {
     "for": [
       "public"

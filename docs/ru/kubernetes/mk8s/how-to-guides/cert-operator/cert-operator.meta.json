@@ -1,0 +1,14 @@
+{
+  "title": "Использование cert-operator",
+  "shortDescription": "Как использовать cert-operator для переноса CA-сертификата реестра на worker-узлы",
+  "metaDescription": "Как использовать аддон cert-operator в Managed Containers: создание объекта RegistryCertificate, перенос CA-сертификата реестра на worker-узлы и проверка статуса",
+  "sectionTitle": "Использование cert-operator",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

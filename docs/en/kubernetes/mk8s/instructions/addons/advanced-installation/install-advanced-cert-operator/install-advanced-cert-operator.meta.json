@@ -1,0 +1,14 @@
+{
+  "title": "Cert-operator",
+  "shortDescription": "",
+  "metaDescription": "Installing and using the cert-operator add-on in Managed Containers: transferring registry CA certificates to worker nodes",
+  "sectionTitle": "Cert-operator",
+  "icon": "",
+  "weight": 30,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

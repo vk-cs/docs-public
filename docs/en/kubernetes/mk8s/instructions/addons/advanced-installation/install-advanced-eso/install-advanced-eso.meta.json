@@ -4,7 +4,7 @@
   "metaDescription": "Installing the External Secrets Operator add-on in Kubernetes: step-by-step instructions for VK Cloud, dedicated worker nodes and quick installation",
   "sectionTitle": "External Secrets Operator",
   "icon": "",
-  "weight": 6,
+  "weight": 70,
   "build": {
     "for": [
       "public"

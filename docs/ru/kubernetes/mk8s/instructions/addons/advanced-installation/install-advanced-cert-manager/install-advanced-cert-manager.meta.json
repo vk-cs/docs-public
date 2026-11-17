@@ -4,7 +4,7 @@
   "metaDescription": "Здесь описана настройка и установка аддона cert-manager.",
   "sectionTitle": "Cert-manager",
   "icon": "",
-  "weight": 2,
+  "weight": 20,
   "uuid": "fc8ee914-5dc9-4417-9bc3-22f5e3d8e0b6",
   "build": {
     "for": [

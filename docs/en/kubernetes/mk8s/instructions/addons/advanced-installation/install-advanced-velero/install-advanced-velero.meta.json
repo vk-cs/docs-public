@@ -4,7 +4,7 @@
   "metaDescription": "Installing the Velero add-on in Kubernetes: step-by-step instructions for VK Cloud, dedicated worker nodes, and quick installation",
   "sectionTitle": "Velero",
   "icon": "",
-  "weight": 20,
+  "weight": 170,
   "uuid": "8cb0491e-5a88-4583-9cbc-88bca3b75f5d",
   "build": {
     "for": [

@@ -4,7 +4,7 @@
   "metaDescription": "Velero аддонын Kubernetes-ке орнату: VK Cloud үшін қадамдық нұсқаулық, арнайы worker-түйіндер және жылдам орнату",
   "sectionTitle": "Velero",
   "icon": "",
-  "weight": 20,
+  "weight": 170,
   "uuid": "8cb0491e-5a88-4583-9cbc-88bca3b75f5d",
   "build": {
     "for": [

@@ -4,7 +4,7 @@
   "metaDescription": "This section describes how to configure and install the Fluent Bit add-on.",
   "sectionTitle": "Fluent Bit",
   "icon": "",
-  "weight": 7,
+  "weight": 80,
   "uuid": "bb36a817-b2a9-4aac-a4de-37ade96c0f70",
   "build": {
     "for": [

@@ -16,6 +16,10 @@
 
 {include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=cert-manager]}
 
+### {heading(cert-operator)[id=mk8s-addons-cert-operator]}
+
+{include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=cert-operator]}
+
 ### {heading(Container Storage Interface (CSI) for S3)[id=s3]}
 
 {include(/en/kubernetes/mk8s/_includes/_addons.md)[tags=s3]}

@@ -4,7 +4,7 @@
   "metaDescription": "Docker тізілімі аддонын баптау және орнату.",
   "sectionTitle": "Docker Registry",
   "icon": "",
-  "weight": 4,
+  "weight": 50,
   "build": {
     "for": [
       "public"

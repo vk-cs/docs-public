@@ -20,6 +20,10 @@
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=cert-manager]}
 
+### {heading(cert-operator)[id=mk8s-addons-cert-operator]}
+
+{include(/kz/kubernetes/_includes/_addons.md)[tags=cert-operator]}
+
 ### {heading(Container Storage Interface (CSI) S3 үшін)[id=mk8s-addons-s3]}
 
 {include(/kz/kubernetes/_includes/_addons.md)[tags=s3]}

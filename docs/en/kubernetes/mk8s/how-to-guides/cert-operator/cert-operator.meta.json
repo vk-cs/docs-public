@@ -1,0 +1,14 @@
+{
+  "title": "Using cert-operator",
+  "shortDescription": "How to use cert-operator to transfer a registry CA certificate to worker nodes",
+  "metaDescription": "How to use the cert-operator add-on in Managed Containers: create a RegistryCertificate object, transfer the registry CA certificate to worker nodes, and check the status",
+  "sectionTitle": "Using cert-operator",
+  "icon": "",
+  "weight": 16,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
