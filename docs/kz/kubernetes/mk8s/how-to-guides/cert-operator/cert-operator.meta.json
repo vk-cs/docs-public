@@ -5,7 +5,7 @@
   "sectionTitle": "cert-operator пайдалану",
   "icon": "",
   "weight": 15,
-  "uuid": "",
+  "uuid": "a7e51ea0-0206-47c3-befe-6fc738e4035b",
   "build": {
     "for": [
       "public"

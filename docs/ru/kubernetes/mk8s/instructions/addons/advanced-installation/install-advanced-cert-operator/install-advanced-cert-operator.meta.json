@@ -5,7 +5,7 @@
   "sectionTitle": "Cert-operator",
   "icon": "",
   "weight": 30,
-  "uuid": "",
+  "uuid": "613b2cce-00d6-44ef-91a8-df7813d44d7f",
   "build": {
     "for": [
       "public"

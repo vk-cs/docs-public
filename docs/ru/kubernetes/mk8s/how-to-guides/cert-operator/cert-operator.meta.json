@@ -5,7 +5,7 @@
   "sectionTitle": "Использование cert-operator",
   "icon": "",
   "weight": 16,
-  "uuid": "",
+  "uuid": "1808c396-e304-4053-a2ce-c9679881e9d5",
   "build": {
     "for": [
       "public"

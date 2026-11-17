@@ -4,7 +4,7 @@
   "metaDescription": "Hardware GPU partitioning with MIG (Multi-Instance GPU): MIG profiles distribute video memory (VRAM) and compute slices between pods in VK Cloud Cloud Containers through the GPU Operator addon. Scenarios for LLM, RAG, online inference, batch processing, and production/staging/development isolation, as well as limitations and examples for H200.",
   "sectionTitle": "Hardware GPU partitioning with MIG",
   "weight": 3,
-  "uuid": "",
+  "uuid": "056f72c2-d2c0-4e7f-b5e9-b7f29c06d966",
   "build": {
     "for": [
       "public",
