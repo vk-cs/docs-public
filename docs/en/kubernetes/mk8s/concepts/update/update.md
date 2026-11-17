@@ -8,7 +8,7 @@ During the cluster update, the following entities also are updated:
 
     When CoreDNS is updating, the current [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
 
-    If the cluster uses a modified Corefile, back it up prior to updating the cluster.
+    If the Corefile has been modified (including at your request to [technical support](/en/contacts)), back it up before updating the cluster.
 
   - Gatekeeper.
   - Shell Operator.

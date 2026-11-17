@@ -4,6 +4,10 @@ The [CoreDNS](https://coredns.io/) intra-cluster server is used as a replacement
 
 CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheus, which allows you to monitor its performance through cluster monitoring tools.
 
+{note:warn}
+Configuring domain zones in CoreDNS is not supported. If you need to change the configuration, contact [technical support](/en/contacts).
+{/note}
+
 ## {heading(Working with Container Network Interface (CNI))[id=supported-cni]}
 
 To organize intra-cluster networks, Managed Containers supports two CNIs:

@@ -6,7 +6,7 @@ If the cluster uses not the latest [supported](/en/kubernetes/mk8s/concepts/vers
 
 - When the cluster is updating, the current CoreDNS [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
 
-  If the cluster uses a modified Corefile, then back it up prior to updating the cluster.
+  If the Corefile has been modified (including at your request to [technical support](/en/contacts)), back it up before updating the cluster.
 
 {/note}
 
