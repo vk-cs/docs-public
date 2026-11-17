@@ -1,0 +1,17 @@
+{
+  "title": "Аппаратное разделение GPU с помощью MIG",
+  "shortDescription": "Как устроено разделение вычислительного ресурса GPU (MIG), типовые сценарии H200",
+  "metaDescription": "Аппаратное разделение GPU с MIG (Multi‑Instance GPU): MIG‑профили распределяют видеопамять (VRAM) и вычислительные слайсы между подами в Cloud Containers от VK Cloud через аддон GPU Operator. Сценарии для LLM, RAG, онлайн‑инференса, пакетной обработки и изоляции production/staging/development, а также ограничения и примеры для H200.",
+  "sectionTitle": "Аппаратное разделение GPU с помощью MIG",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}
