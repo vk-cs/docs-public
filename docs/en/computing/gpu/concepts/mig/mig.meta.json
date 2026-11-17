@@ -1,0 +1,17 @@
+{
+  "title": "Hardware GPU partitioning with MIG",
+  "shortDescription": "How GPU compute resource partitioning (MIG) works, typical H200 scenarios",
+  "metaDescription": "Hardware GPU partitioning with MIG (Multi-Instance GPU): MIG profiles distribute video memory (VRAM) and compute slices between pods in VK Cloud Cloud Containers through the GPU Operator addon. Scenarios for LLM, RAG, online inference, batch processing, and production/staging/development isolation, as well as limitations and examples for H200.",
+  "sectionTitle": "Hardware GPU partitioning with MIG",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}

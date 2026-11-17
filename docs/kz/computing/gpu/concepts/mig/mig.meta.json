@@ -1,0 +1,17 @@
+{
+  "title": "MIG көмегімен GPU-ды аппараттық бөлу",
+  "shortDescription": "GPU есептеу ресурсын бөлу (MIG) қалай жұмыс істейді, H200 үшін типтік сценарийлер",
+  "metaDescription": "MIG (Multi-Instance GPU) көмегімен GPU-ды аппараттық бөлу: MIG-профильдер GPU Operator аддоны арқылы VK Cloud Cloud Containers ішіндегі подтар арасында бейнежадты (VRAM) және есептеу слайстарын бөледі. LLM, RAG, онлайн-инференс, пакеттік өңдеу және production/staging/development оқшаулау сценарийлері, сондай-ақ H200 үшін шектеулер мен мысалдар.",
+  "sectionTitle": "MIG көмегімен GPU-ды аппараттық бөлу",
+  "weight": 3,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "private",
+      "private-pg",
+      "private-pdf",
+      "private-pg-pdf"
+    ]
+  }
+}
