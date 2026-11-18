@@ -4,4 +4,4 @@
 
 In this video, you will learn how to create a Redis instance via the {var(cloud)} management console.
 
-{video(../assets/Redis.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/Redis.mp4)}

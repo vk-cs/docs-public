@@ -173,8 +173,9 @@ export const config = {
         connectSrc: [
             'https://cloud.vk.ru',
             'https://mcstest.mail.ru',
-            'https://satori.devint.vkc.devmail.ru',
+            'https://satori.devint.vkc.devmail.ru'
         ],
+        mediaSrc: ['https://video-docs.hb.ru-msk.vkcloud-storage.ru']
     },
     enablers: {
         auth: true,

@@ -4,4 +4,4 @@
 
 Бұл бейнеде сіз VK Cloud жеке кабинеті арқылы PostgreSQL инстансын қалай құру керектігін білесіз.
 
-{video(../assets/PostgreSQL.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/PostgreSQL.mp4)}

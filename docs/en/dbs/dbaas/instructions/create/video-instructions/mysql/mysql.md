@@ -4,4 +4,4 @@
 
 In this video, you will learn how to create a MySQL instance via the {var(cloud)} management console.
 
-{video(../assets/MySQL.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/MySQL.mp4)}

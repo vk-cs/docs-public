@@ -4,4 +4,4 @@
 
 In this video, you will learn how to create a PostgreSQL instance via the {var(cloud)} management console.
 
-{video(../assets/PostgreSQL.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/PostgreSQL.mp4)}

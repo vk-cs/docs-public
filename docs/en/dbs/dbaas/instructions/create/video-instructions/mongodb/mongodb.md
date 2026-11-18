@@ -4,4 +4,4 @@
 
 In this video, you will learn how to create a MongoDB instance via the {var(cloud)} management console.
 
-{video(../assets/MongoDB.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/MongoDB.mp4)}
