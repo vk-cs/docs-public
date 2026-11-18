@@ -24,6 +24,8 @@
 
 Көрсетілген поштаға шақыру жіберіледі. Серіктестік жобамен байланысу үшін клиент {linkto(../accept-invitation#partner-platform-accept-invitation)[text=шақыруды қабылдауы]} қажет.
 
+Клиент үшін құрылған жобада базалық {linkto(../../../account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=квоталар]} қолданылады, оларды {linkto(../client-management/manage-project#pp-manage-project-quota)[text=арттыруға]} болады.
+
 ## {heading(Шақыруларды басқару)[id=pp-invite-client-control]}
 
 ### {heading(Шақыруды қайта жіберу)[id=pp-invite-client-again]}

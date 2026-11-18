@@ -41,3 +41,7 @@ If the project is unblocked within three days from the moment of blocking, all r
 {note:warn}
 If the project is unblocked after three days, the client will gain access to the project, but the resources on it will be deleted.
 {/note}
+
+## {heading(Increasing project quotas)[id=pp-manage-project-quota]}
+
+To increase the project {linkto(../../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=quotas]} for a client, contact [technical support](/en/contacts) or your personal manager. In your request, provide the {linkto(../client-information#pp-client-information-view-projects)[text=project identifier]} (PID) for which you want to increase the quotas.

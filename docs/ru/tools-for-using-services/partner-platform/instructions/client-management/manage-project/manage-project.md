@@ -39,3 +39,7 @@
 {note:warn}
 Если проект будет разблокирован по прошествии трех дней, клиент получит доступ к проекту, но ресурсы на нем будут удалены.
 {/note}
+
+## {heading(Увеличение квот проекта)[id=pp-manage-project-quota]}
+
+Чтобы увеличить для клиента {linkto(../../../../account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=квоты]} проекта, обратитесь в [техническую поддержку](/ru/contacts) или к вашему персональному менеджеру. В обращении предоставьте {linkto(../client-information#pp-client-information-view-projects)[text=идентификатор проекта]} (PID), для которого вы хотите увеличить квоты.
