@@ -41,3 +41,7 @@
 {note:warn}
 Егер жоба үш күн өткеннен кейін блоктан шығарылса, клиент жобаға қолжетімділік алады, бірақ ондағы ресурстар жойылады.
 {/note}
+
+## {heading(Жоба квоталарын арттыру)[id=pp-manage-project-quota]}
+
+Клиент үшін жобаның {linkto(../../../../account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=квоталарын]} арттыру үшін [техникалық қолдау көрсету қызметіне](/kz/contacts) немесе жеке менеджеріңізге жүгініңіз. Өтініште квоталарын арттырғыңыз келетін {linkto(../client-information#pp-client-information-view-projects)[text=жоба идентификаторын]} (PID) көрсетіңіз.

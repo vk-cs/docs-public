@@ -24,6 +24,8 @@
 
 An invitation will be sent to the specified email address. The client must {linkto(../accept-invitation#partner-platform-accept-invitation)[text=accept the invitation]} to join the partner project.
 
+The basic {linkto(../../../account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=quotas]} apply to the project created for the client, and you can {linkto(../client-management/manage-project#pp-manage-project-quota)[text=increase them]}.
+
 ## {heading(Managing invitations)[id=pp-invite-client-control]}
 
 ### {heading(Resending an invitation)[id=pp-invite-client-again]}

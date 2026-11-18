@@ -22,6 +22,8 @@
 
 На указанную почту будет выслано приглашение. Клиент должен будет {linkto(../accept-invitation#partner-platform-accept-invitation)[text=принять приглашение]}, чтобы подключиться партнерскому проекту.
 
+В созданном для клиента проекте действуют базовые {linkto(../../../account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=квоты]}, которые вы можете {linkto(../client-management/manage-project#pp-manage-project-quota)[text=увеличить]}.
+
 ## {heading(Управление приглашениями)[id=pp-invite-client-control]}
 
 ### {heading(Повторная отправка приглашения)[id=pp-invite-client-again]}
