@@ -20,9 +20,9 @@
 - Кластер {linkto(#mk8s-storage-supported-storage-types)[text=поддерживает]} хранилища, предоставляемые платформой {var(cloud)}. Поддержка блочных хранилищ реализована с помощью {linkto(#mk8s-storage-csi)[text=Cinder CSI]}.
 - В кластере доступны {linkto(#mk8s-storage-storage-classes)[text=преднастроенные классы хранения]} (storage class) для блочного хранилища, которые реализуют различные {linkto(#mk8s-storage-reclaim-policies)[text=политики освобождения постоянных томов]}.
 
-## {heading(Управление постоянными томами (PV))[id=k8s-storage-pv-disks]}
+## {heading(Управление постоянными томами (PV))[id=mk8s-storage-pv-disks]}
 
-В сервисе Managed Containers можно {linkto(../../instructions/manage-pvs#mk8s-manage-pvs)[text=управлять]} PV, созданными для кластеров Kubernetes. Такие PV находятся в {linkto(../cluster-generations#k8s-cluster-generations-service-projects)[text=сервисном проекте]}, которым управляет платформа {var(cloud)}. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
+В сервисе Managed Containers можно {linkto(../../instructions/manage-pvs#mk8s-manage-pvs)[text=управлять]} PV, созданными для кластеров Kubernetes. Такие PV находятся в {linkto(../cluster-generations#mk8s-cluster-generations-service-projects)[text=сервисном проекте]}, которым управляет платформа {var(cloud)}. Чтобы при удалении или перемещении кластера не потерять доступ к данным, расположенным на таких PV, вы можете переместить их в свой проект из сервисного.
 
 ## {heading(Поддерживаемые типы хранилищ {var(cloud)})[id=mk8s-storage-supported-storage-types]}
 

@@ -4,9 +4,9 @@
 
 {include(/ru/_includes/_addon-prep.md)}
 
-1. Подключите сервис {linkto(../../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+1. Подключите сервис {linkto(../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]} в проект, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
-1. {linkto(../../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Cоздайте]} сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в  {linkto(../../../../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=справочнике ролей]}. Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
+1. {linkto(../../../../../../access/iam/instructions/service-account-manage#service-account-create)[text=Cоздайте]} сервисную учетную запись (СУЗ) с правами на запись логов в сервис Cloud Logging. Роли, для которых доступны эти права, перечислены в  {linkto(../../../../../../access/iam/concepts/roles-reference#iam-roles-reference)[text=справочнике ролей]}. Рекомендуемая роль для этой СУЗ — `Аудитор Kubernetes`.
 
    Используйте логин и пароль для доступа к СУЗ, полученные после ее создания, при установке аддона.  
 
@@ -57,7 +57,7 @@
 
 {/tabs}
 
-1. (Опционально) {linkto(../../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 ## {heading(Редактирование кода настройки аддона при установке)[id=mk8s-install-gen-2-advanced-logaas-integration-edit-code]}
 

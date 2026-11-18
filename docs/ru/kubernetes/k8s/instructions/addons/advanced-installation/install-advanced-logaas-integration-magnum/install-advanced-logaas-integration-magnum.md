@@ -3,11 +3,11 @@
 ## {heading(Подготовительные шаги)[id=k8s-install-advanced-logaas-integration-prepare]}
 
 {include(/ru/_includes/_addon-prep.md)}
-1. Подключите в проект сервис {linkto(../../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]}, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
+1. Подключите в проект сервис {linkto(../../../../../../monitoring-services/logging#logging)[text=Cloud Logging]}, если это еще не сделано. Для этого [обратитесь в техническую поддержку](/ru/contacts).
 
 ## {heading(Установка аддона)[id=k8s-install-advanced-logaas-integration-install]}
 
-Для аддона доступно {linkto(../../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}:
+Для аддона доступно {linkto(../../../../concepts/addons-and-settings/addons#k8s-addons-install-features)[text=несколько вариантов установки]}:
 
 - стандартная установка;
 - быстрая установка.
@@ -49,7 +49,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. {linkto(../../../../../../tools-for-using-services/terraform/quick-start#terraform-quick-start)[text=Установите Terraform и настройте окружение]}, если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -78,7 +78,7 @@
    
    {/tabs}
 
-1. (Опционально) {linkto(../../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 {/tab}
 
@@ -116,7 +116,7 @@
    
    {tab(Terraform)}
    
-   1. [Установите Terraform и настройте окружение](../../../../../../tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. {linkto(../../../../../../tools-for-using-services/terraform/quick-start#terraform-quick-start)[text=Установите Terraform и настройте окружение]}, если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -141,7 +141,7 @@
    
    {/tabs}
 
-1. (Опционально) {linkto(../../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) {linkto(../../../../../../monitoring-services/logging/instructions/view-logs#logging-view-logs)[text=Просмотрите логи]} в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 {/tab}
 
@@ -204,7 +204,7 @@
        my-cluster-node-0.kubelet.service
        ```
 
-     - Для {linkto(../../../../../reference/pods#k8s-pods)[text=пода]} (pod): `<имя пространства имен (namespace)>.<имя>`.
+     - Для {linkto(../../../../reference/pods#k8s-pods)[text=пода]} (pod): `<имя пространства имен (namespace)>.<имя>`.
 
        Сначала имя ищется в следующих метках (labels):
 

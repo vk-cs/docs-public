@@ -74,4 +74,4 @@
    tar -xvf bmaas-bundle.tar.gz
    ```
 
-1. Проверьте необходимые файлы. Подробная информация о содержании отчета — в разделе {linkto(../../concepts/hw-bundle-util#bare-metal-concepts-hw-bundle-util-result)[text=%text]}.
+1. Проверьте необходимые файлы. Подробная информация о содержании отчета — в разделе {linkto(../../concepts/hw-bundle-util#bare-metal-concepts-hw-bundle-util-report)[text=%text]}.

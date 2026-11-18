@@ -344,8 +344,8 @@
 
 Работающая инфраструктура сервиса потребляет вычислительные ресурсы. Если шлюз S3 и кластер хранения вам больше не нужны, удалите их:
 
-1. {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Удалите]} виртуальные машины.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Удалите]} виртуальные машины.
 1. Убедитесь, что вместе с ВМ были удалены все диски, если это не так, {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=удалите]} их.
-1. {linkto(../../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Удалите]} маршрутизатор.
+1. {linkto(../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Удалите]} маршрутизатор.
 1. {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-delete)[text=Удалите ]} балансировщик нагрузки.
 1. {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Удалите]} публичные IP-адреса.
