@@ -4,4 +4,4 @@
 
 Бұл бейнеде сіз VK Cloud жеке кабинеті арқылы ClickHouse инстансын қалай құру керектігін білесіз.
 
-{video(../assets/ClickHouse.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/ClickHouse.mp4)}

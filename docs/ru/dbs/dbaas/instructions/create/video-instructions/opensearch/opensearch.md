@@ -2,4 +2,4 @@
 
 В этом видео вы узнаете, как создать инстанс OpenSearch через личный кабинет {var(cloud)}.
 
-{video(../assets/OpenSearch.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/OpenSearch.mp4)}

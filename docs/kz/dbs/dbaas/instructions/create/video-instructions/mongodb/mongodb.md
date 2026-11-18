@@ -4,4 +4,4 @@
 
 Бұл бейнеде сіз VK Cloud жеке кабинеті арқылы MongoDB инстансын қалай құру керектігін білесіз.
 
-{video(../assets/MongoDB.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/MongoDB.mp4)}

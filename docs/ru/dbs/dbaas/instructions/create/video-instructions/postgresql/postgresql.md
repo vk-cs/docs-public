@@ -2,4 +2,4 @@
 
 В этом видео вы узнаете, как создать инстанс PostgreSQL через личный кабинет {var(cloud)}.
 
-{video(../assets/PostgreSQL.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/PostgreSQL.mp4)}

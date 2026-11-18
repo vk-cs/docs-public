@@ -2,4 +2,4 @@
 
 В этом видео вы узнаете, как создать инстанс MongoDB через личный кабинет {var(cloud)}.
 
-{video(../assets/MongoDB.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/MongoDB.mp4)}

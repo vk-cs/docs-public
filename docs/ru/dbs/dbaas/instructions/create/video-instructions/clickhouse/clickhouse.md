@@ -2,4 +2,4 @@
 
 В этом видео вы узнаете, как создать инстанс ClickHouse через личный кабинет {var(cloud)}.
 
-{video(../assets/ClickHouse.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/ClickHouse.mp4)}

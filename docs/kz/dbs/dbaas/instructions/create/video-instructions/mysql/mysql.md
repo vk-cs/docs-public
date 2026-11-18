@@ -4,4 +4,4 @@
 
 Бұл бейнеде сіз VK Cloud жеке кабинеті арқылы MySQL инстансын қалай құру керектігін білесіз.
 
-{video(../assets/MySQL.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/MySQL.mp4)}

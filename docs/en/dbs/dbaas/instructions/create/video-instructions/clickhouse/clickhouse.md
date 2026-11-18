@@ -4,4 +4,4 @@
 
 In this video, you will learn how to create a ClickHouse instance via the {var(cloud)} management console.
 
-{video(../assets/ClickHouse.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/ClickHouse.mp4)}

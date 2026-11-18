@@ -4,4 +4,4 @@
 
 Бұл бейнеде сіз VK Cloud жеке кабинеті арқылы OpenSearch инстансын қалай құру керектігін білесіз.
 
-{video(../assets/OpenSearch.mp4)}
+{video(https://video-docs.hb.ru-msk.vkcloud-storage.ru/public-docs/OpenSearch.mp4)}
