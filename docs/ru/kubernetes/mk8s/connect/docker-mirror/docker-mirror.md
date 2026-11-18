@@ -12,7 +12,7 @@
 
 {tab(Приватный реестр с аддоном Docker Registry)}
 
-  1. {linkto(../../../k8s/instructions/addons/advanced-installation/install-advanced-registry#mk8s-install-advanced-registry)[text=Установите аддон]} Docker Registry, если этого еще не сделано.
+  1. {linkto(../../../mk8s/instructions/addons/advanced-installation/install-advanced-registry#mk8s-install-advanced-registry)[text=Установите аддон]} Docker Registry, если этого еще не сделано.
   1. Скачайте нужный образ на локальный компьютер. Для этого выполните команду:
 
       ```console

@@ -137,7 +137,7 @@
 
 ## {heading(3. Подключите узлы кластера к Prometheus)[id=marketplace-adb-monitoring-nodes]}
 
-1. Установите агент Node Exporter на все узлы кластера. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/start/support/support-info). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/prometheus/node_exporter/blob/master/README.md).
+1. Установите агент Node Exporter на все узлы кластера. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/contacts). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/prometheus/node_exporter/blob/master/README.md).
 1. В группе безопасности для узлов кластера {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=добавьте]} правило для входящего трафика со следующими параметрами:
 
    - Протокол: `TCP`.
@@ -208,7 +208,7 @@
 
 Пока метрики не подключены, дашборд **Docker Containers** остается пустым.
 
-1. Установите агент cAdvisor на узлы кластера, где работают контейнеры Docker. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/start/supp). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/google/cadvisor/blob/master/README.md).
+1. Установите агент cAdvisor на узлы кластера, где работают контейнеры Docker. Чтобы установить агент в кластере Arenadata DB, развернутом в {var(cloud)}, обратитесь в [техническую поддержку](/ru/contacts). Если Arenadata DB развернута на ваших ВМ, установите агент самостоятельно согласно [инструкции](https://github.com/google/cadvisor/blob/master/README.md).
 1. В группе безопасности для узлов кластера {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=добавьте]} правило для входящего трафика:
 
    - Протокол: `TCP`.
