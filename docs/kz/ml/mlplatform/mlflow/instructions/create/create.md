@@ -9,7 +9,7 @@
 - [Terraform](/kz/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow);
 - Cloud ML Platform кітапханасы, [create_mlflow](../../../mlplatform-lib/lib-reference#mllib-lib-reference-create_mlflow) әдісі.
 
-MLflow инстансы екі режимде жұмыс істей алады: [JupyterHub-пен бірге](../../../concepts/mlflow-modes#with_jh) немесе бөлек, [Standalone режимінде](../../../concepts/mlflow-modes#mlplatform-standalone).
+MLflow инстансы екі режимде жұмыс істей алады: [JupyterHub-пен бірге](../../../concepts/mlflow-modes#mlplatform-with_jh) немесе бөлек, [Standalone режимінде](../../../concepts/mlflow-modes#mlplatform-standalone).
 
 Егер сізге JupyterHub-пен бірге жұмыс істейтін MLflow инстансы қажет болса және JupyterHub инстансы әлі құрылмаса, оны [құрыңыз](../../../jupyterhub/instructions/create).
 

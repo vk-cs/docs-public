@@ -58,7 +58,7 @@ NVIDIA® Tesla® процессорлары бар виртуалды жұмыс
 
 1. **Cloud Desktop** → **Жұмыс үстелдері пулдары** бөліміне өтіңіз.
 1. **Қосу** түймесін басыңыз.
-1. **Конфигурация** қадамында {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#setup_pool_configuration)[text=пул параметрлерін]} орнатыңыз:
+1. **Конфигурация** қадамында {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-setup-configuration)[text=пул параметрлерін]} орнатыңыз:
 
     * **Пул атауы**: мысалы, `vk-cloud-desktops-pool-gpu`.
     * **Пул түрі**: мысалы, `Сессиялық`.
@@ -68,7 +68,7 @@ NVIDIA® Tesla® процессорлары бар виртуалды жұмыс
     Қалған параметрлерді өз қалауыңыз бойынша таңдаңыз.
 
 1. **Келесі қадам** түймесін басыңыз.
-1. **Виртуалды машиналар баптаулары** қадамында {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#configure_pool_vms)[text=пул ВМ конфигурациясын]} орнатыңыз:
+1. **Виртуалды машиналар баптаулары** қадамында {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/add#desktops-pool-configure-vms)[text=пул ВМ конфигурациясын]} орнатыңыз:
 
    * **Инстанс түрі**: техникалық қолдаудан алынған ВМ конфигурациясы шаблонының атауы — `GPU2-24-96-T4-1`.
    * **Образ**: мысалы, `Windows Server 2019 Standard (ru)`.
@@ -114,4 +114,4 @@ NVIDIA® Tesla® процессорлары бар виртуалды жұмыс
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=vdi-with-gpu-delete]}
 
-Жұмыс істеп тұрған сервис есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса, {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/manage#delete_pool)[text=жұмыс үстелдері пулын жойыңыз]}.
+Жұмыс істеп тұрған сервис есептеу ресурстарын тұтынады. Егер ол енді қажет болмаса, {linkto(../../../../computing/cloud-desktops/instructions/desktops-pool/manage#desktops-pool-delete)[text=жұмыс үстелдері пулын жойыңыз]}.

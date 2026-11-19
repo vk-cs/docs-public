@@ -12,8 +12,8 @@ Bare Metal сервисін пайдалану кезіндегі тарифик
 
   Жалға алудың келесі сағатын төлеуге баланс жеткіліксіз болған жағдайда, сервердің жұмысы тоқтатылады.
 
-- {linkto(../../../computing/iaas/tariffication#tariffication)[text=Виртуальная машина]}: аралық хост ретінде (егер пайдаланылса).
-- {linkto(../../../networks/vnet/tariffication#tariffication)[text=Публичный IP-адрес]}: аралық хост үшін (егер пайдаланылса).
+- {linkto(../../../computing/iaas/tariffication#iaas-tariffication)[text=Виртуальная машина]}: аралық хост ретінде (егер пайдаланылса).
+- {linkto(../../../networks/vnet/tariffication#vnet-tariffication)[text=Публичный IP-адрес]}: аралық хост үшін (егер пайдаланылса).
 
 ## {heading(Не тарифицируется)[id=bare-metal-non-tariffed-resources]}
 

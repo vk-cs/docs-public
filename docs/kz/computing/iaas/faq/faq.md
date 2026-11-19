@@ -313,7 +313,7 @@ ISO-бейнелер тек Bare Metal үшін арналған және ВМ �
 
 {cut(Виртуалды машинаны жеке тұлға пайдалана ала ма?)}
 
-Иә, жеке тұлғалар {var(cloud)} жүйесінде виртуалды машиналарды және басқа ресурстарды пайдалана алады. Ол үшін жеке кабинетте {linkto(../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліп]} және жобаның балансын {linkto(../../../intro/onboarding/account/billing-settings#onboarding-billing-settings)[толтыру]} қажет.
+Иә, жеке тұлғалар {var(cloud)} жүйесінде виртуалды машиналарды және басқа ресурстарды пайдалана алады. Ол үшін жеке кабинетте {linkto(../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліп]} және жобаның балансын {linkto(../../../intro/onboarding/account/billing-settings#onboarding-billing-settings)[text=толтыру]} қажет.
 
 {/cut}
 

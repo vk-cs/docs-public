@@ -6,7 +6,7 @@ Cloud Logging сервисіне логтарды жазу үшін келесі
 
 - `user_id` — логтар оның атынан жазылатын пайдаланушы идентификаторы;
 - `password` — көрсетілген пайдаланушының құпиясөзі;
-- `project_id` — OpenStack жүйесіндегі {var(cloud)} жобасының {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id )[text=идентификаторы]}.
+- `project_id` — OpenStack жүйесіндегі {var(cloud)} жобасының {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id)[text=идентификаторы]}.
 
 Тіркелгі деректерін жасау үшін:
 

@@ -160,8 +160,7 @@ Prometheus сервері, ДҚБЖ және Grafana бөлек ВМ-дерде 
     - `http://87.239.239.239:9090/consoles/index.html.example` мекенжайы бойынша [үлгі графиктер жиындарын](https://prometheus.io/docs/visualization/consoles/) ашыңыз.
 
 1. (Опционалды) `Centos_8_5_Prometheus` ВМ-нен Floating
-   IP-мекенжайын {linkto(
-   ../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate)[text=ажыратыңыз]}.
+   IP-мекенжайын {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate)[text=ажыратыңыз]}.
 
 ## {heading(3. Grafana жүйесінде деректерді визуализациялауды баптаңыз)[id=dbaas-case-node-exporter-grafana]}
 

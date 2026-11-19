@@ -89,7 +89,7 @@ Cloud Alerting сервисі кластер түйіндерін масштаб
 
 ## {heading(Қолданыстағы шектеулер)[id=mk8s-scale-limitations]}
 
-- Тік масштабтау мүмкіндіктері {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-quotas)[text=қолданыстағы квоталармен]} және қолжетімді {linkto(../flavors#mk8s-flavors-vm-flavor)[text=виртуалды машина қалыптарымен]} шектеледі.
+- Тік масштабтау мүмкіндіктері {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#account-quotasandlimits-quotas)[text=қолданыстағы квоталармен]} және қолжетімді {linkto(../flavors#mk8s-flavors-vm-flavor)[text=виртуалды машина қалыптарымен]} шектеледі.
 - Көлденең масштабтау мүмкіндіктері қолданыстағы квоталармен және жекелеген түйіндер тобындағы worker-түйіндер санының шегімен шектеледі: 1-ден 500 түйінге дейін.
 - Егер автоматты масштабтау бапталған болса, көлденең масштабтауды қолмен орындау мүмкін емес. Масштабтауды қолмен орындау үшін {linkto(../../instructions/scale#mk8s-instructions-scale-horizontal-worker-nodes)[text=автоматты масштабтауды өшіріңіз]}.
 

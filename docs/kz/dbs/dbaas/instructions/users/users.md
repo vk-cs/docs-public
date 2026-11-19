@@ -8,8 +8,7 @@
 
 {note:warn}
 
-Redis 6 инстанстарында пайдаланушыларды тек {linkto(#dbaas-users-add)[text=құру]} және {linkto(
-#dbaas-users-delete)[text=жою]} қолжетімді. Redis 5 үшін пайдаланушыларды басқару бойынша ешбір операция
+Redis 6 инстанстарында пайдаланушыларды тек {linkto(#dbaas-users-add)[text=құру]} және {linkto(#dbaas-users-delete)[text=жою]} қолжетімді. Redis 5 үшін пайдаланушыларды басқару бойынша ешбір операция
 қолжетімді емес.
 
 {/note}

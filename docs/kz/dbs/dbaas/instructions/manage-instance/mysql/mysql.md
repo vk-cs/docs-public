@@ -123,8 +123,7 @@
 
 ## {heading(Резервтік көшірме жасау)[id=dbaas-mysql-create-backup]}
 
-Операция {linkto(
-../../../../../storage/backups/instructions/create-backup-copy#backup-copy-create)[text=Резервтік көшірмені қолмен жасау]} бөлімінде егжей-тегжейлі сипатталған.
+Операция {linkto(../../../../../storage/backups/instructions/create-backup-copy#backup-copy-create)[text=Резервтік көшірмені қолмен жасау]} бөлімінде егжей-тегжейлі сипатталған.
 
 ## {heading(БД инстансын кеңейту)[id=dbaas-mysql-scaling]}
 
@@ -132,15 +131,13 @@
 
 {tab(Single конфигурациясы)}
 
-Инстансты кеңейту үшін оған реплика қосыңыз. Операция {linkto(
-../../../instructions/replication#dbaas-replication)[text=Репликациялар]} бөлімінде егжей-тегжейлі сипатталған.
+Инстансты кеңейту үшін оған реплика қосыңыз. Операция {linkto(../../../instructions/replication#dbaas-replication)[text=Репликациялар]} бөлімінде егжей-тегжейлі сипатталған.
 
 {/tab}
 
 {tab(Master-Replica конфигурациясы)}
 
-Инстансты кеңейту үшін оған реплика қосыңыз. Операция {linkto(
-../../../instructions/replication#dbaas-replication)[text=Репликациялар]} бөлімінде егжей-тегжейлі сипатталған.
+Инстансты кеңейту үшін оған реплика қосыңыз. Операция {linkto(../../../instructions/replication#dbaas-replication)[text=Репликациялар]} бөлімінде егжей-тегжейлі сипатталған.
 
 {/tab}
 

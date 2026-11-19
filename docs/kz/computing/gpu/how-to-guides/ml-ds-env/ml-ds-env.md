@@ -9,7 +9,7 @@
 1. Бұрын жасалмаса, жаңа {linkto(../../../../computing/gpu/concepts/about#gpu-about-flavors-model)[text=GPU бар виртуалды машинаны]} дайындаңыз.
 
    1. Бұрын жасалмаса, {linkto(../../../../computing/gpu/connect#gpu-connect)[text=Cloud GPU қызметін қосыңыз]}.
-   1. {linkto(../../../../intro/onboarding/contact_support#onboarding-contact-support)[text=Техникалық қолдау көрсету]] қызметінен GPU негізіндегі ВМ конфигурациясының шаблонына квота сұраңыз.
+   1. {linkto(../../../../intro/onboarding/contact_support#onboarding-contact-support)[text=Техникалық қолдау көрсету]} қызметінен GPU негізіндегі ВМ конфигурациясының шаблонына квота сұраңыз.
    1. Келесі параметрлерімен виртуалды машинаны {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жасаңыз]}:
 
       - GPU бар {linkto(../../../../computing/gpu/concepts/about#gpu-about-flavors-model)[text=конфигурация шаблоны]}.

@@ -20,15 +20,15 @@ Windows ОЖ қолдау көрсетілмейді.
 
 ## {heading(Дайындық қадамдары)[id=bare-metal-quick-start-preparings]}
 
-1. {linkto(../../../intro/onboarding/account#account)[text={var(cloud)} платформасында тіркеліңіз]}.
+1. {linkto(../../../intro/onboarding/account#onboarding-account)[text={var(cloud)} платформасында тіркеліңіз]}.
 1. Жеке шот балансы мыналар үшін жеткілікті екеніне көз жеткізіңіз:
 
    - Қажетті конфигурациядағы Bare Metal серверін жалға алу.
-   - 1 vCPU, 1 ГБ RAM, 10 ГБ HDD дискісі және Sprut жария IP-мекенжайы бар конфигурациядағы Linux жүйесіндегі {linkto(../../../computing/iaas/concepts/vm#vm)[text=виртуалды машинаны]} төлеу.
+   - 1 vCPU, 1 ГБ RAM, 10 ГБ HDD дискісі және Sprut жария IP-мекенжайы бар конфигурациядағы Linux жүйесіндегі {linkto(../../../computing/iaas/concepts/vm#iaas-concepts-vm)[text=виртуалды машинаны]} төлеу.
 
      Көрсетілген ресурстардың бағасы [прайс-парақта](https://cloud.vk.kz/pricelist/) қолжетімді.
 
-1. Мыналар үшін {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits)[text=квоталардың]} жеткілікті екенін тексеріңіз:
+1. Мыналар үшін {linkto(../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоталардың]} жеткілікті екенін тексеріңіз:
 
    - бір Bare Metal серверін жалға алу;
    - ең төменгі конфигурациядағы виртуалды машинаны жасау: 1 vCPU, 1 ГБ RAM, 1 диск;
@@ -160,7 +160,7 @@ Windows ОЖ қолдау көрсетілмейді.
 
    Мұнда:
 
-   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылады]}.
+   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text={var(cloud)} образдарында пайдаланылады]}.
    - `<АРАЛЫҚ_ХОСТТЫҢ_IP-МЕКЕНЖАЙЫ>` — аралық хосттың сыртқы IP-мекенжайы.
 
    SSH арқылы алғаш қосылғанда растау сұранысы пайда болады:
@@ -237,7 +237,7 @@ Windows ОЖ қолдау көрсетілмейді.
    Мұнда:
 
    - `<КІЛТ_ФАЙЛЫ>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылады]}. Аралық хост үшін де, Bare Metal сервері үшін де, оларда қолданылатын ОЖ образына сәйкес келетін пайдаланушы атын енгізу керек.
+   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text={var(cloud)} образдарында пайдаланылады]}. Аралық хост үшін де, Bare Metal сервері үшін де, оларда қолданылатын ОЖ образына сәйкес келетін пайдаланушы атын енгізу керек.
    - `<АРАЛЫҚ_ХОСТТЫҢ_IP-МЕКЕНЖАЙЫ>` — аралық хосттың сыртқы IP-мекенжайы.
    - `<СЕРВЕРДІҢ_ІШКІ_IP-МЕКЕНЖАЙЫ>` — сіздің Bare Metal серверіңіздің ішкі IP-мекенжайы.
 
@@ -277,7 +277,7 @@ Windows ОЖ қолдау көрсетілмейді.
    Мұнда:
 
    - `<КІЛТ_ФАЙЛЫ>` — жеке кілті бар `*.pem` файлына дейінгі жол.
-   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#default-account)[text={var(cloud)} образдарында пайдаланылады]}. Аралық хост үшін де, Bare Metal сервері үшін де, оларда қолданылатын ОЖ образына сәйкес келетін пайдаланушы атын енгізу керек.
+   - `<ПАЙДАЛАНУШЫ_АТЫ>` — әдепкі бойынша қолданылатын есептік жазба атауы, ол {linkto(../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text={var(cloud)} образдарында пайдаланылады]}. Аралық хост үшін де, Bare Metal сервері үшін де, оларда қолданылатын ОЖ образына сәйкес келетін пайдаланушы атын енгізу керек.
    - `<АРАЛЫҚ_ХОСТТЫҢ_IP-МЕКЕНЖАЙЫ>` — аралық хосттың сыртқы IP-мекенжайы.
    - `<СЕРВЕРДІҢ_ІШКІ_IP-МЕКЕНЖАЙЫ>` — сіздің Bare Metal серверіңіздің ішкі IP-мекенжайы.
 
@@ -299,6 +299,6 @@ Windows ОЖ қолдау көрсетілмейді.
 
 Жасалған ресурстар тарификацияланады және есептеу ресурстарын тұтынады. Егер олар енді қажет болмаса:
 
-- кейін пайдалану үшін аралық хостты {linkto(../../../computing/iaas/instructions/vm/vm-manage#start-stop-restart-vm)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../computing/iaas/instructions/vm/vm-manage#delete-vm)[text=жойыңыз]}.
+- кейін пайдалану үшін аралық хостты {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
 - Bare Metal серверін жалға алудан {linkto(../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-delete)[text=басы тартыңыз]}.
-- Аралық хостқа тағайындалған {linkto(../../../networks/vnet/instructions/ip/floating-ip#delete)[text=Floating IP-мекенжайын жойыңыз]}. Жобадағы Floating IP-мекенжайлары қандай да бір сервиске байланыстырылмаған болса да, тарификацияланады.
+- Аралық хостқа тағайындалған {linkto(../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Floating IP-мекенжайын жойыңыз]}. Жобадағы Floating IP-мекенжайлары қандай да бір сервиске байланыстырылмаған болса да, тарификацияланады.

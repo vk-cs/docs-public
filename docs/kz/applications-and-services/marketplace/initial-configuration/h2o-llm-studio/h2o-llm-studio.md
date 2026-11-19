@@ -84,6 +84,6 @@ VK Cloud жобаңыздағы ВМ-де H2O LLM Studio сервисін өрі
      - Егер IP-мекенжайлар сәйкес келмесе, сервис үшін қауіпсіздік топтары баптауларында қажетті IP-мекенжайды көрсетіңіз:
 
        1. Атауы `ХХХХ-h2o-llm-studio` болатын [қауіпсіздік тобын](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-view) ашыңыз, мұнда `XXXX` — сервис инстансы ID-сының бірінші бөлігі.
-       1. Қажетсіз IP-мекенжайлар үшін кіріс трафигі [ережелерін жойыңыз](/kz/networks/vnet/instructions/secgroups#delete_rule) және керектілері үшін жаңа [ережелерді қосыңыз](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-add-rule).
+       1. Қажетсіз IP-мекенжайлар үшін кіріс трафигі [ережелерін жойыңыз](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-delete-rule) және керектілері үшін жаңа [ережелерді қосыңыз](/kz/networks/vnet/instructions/secgroups#vnet-secgroups-add-rule).
 
 1. (Қосымша) Сервисті пайдалануды бастау үшін [H2O LLM Studio іске қосу жөніндегі нұсқаулықты](https://github.com/h2oai/h2o-llmstudio#quickstart) пайдаланыңыз. Қажет болса, [модельдер мен пайплайндарды баптау жөніндегі нұсқаулықты](https://github.com/h2oai/h2o-llmstudio/blob/main/documentation/docs/get-started/llm-studio-flow.md) оқып шығыңыз.

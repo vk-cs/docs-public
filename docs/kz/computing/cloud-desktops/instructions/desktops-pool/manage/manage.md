@@ -22,7 +22,7 @@
 
 Пул құрылғаннан кейін оның атауынан, түрінен және қолжетімділік аймағынан басқа кез келген параметрін өзгерте аласыз.
 
-Пулдың қауіпсіздік тобының ережелерін өзгерту үшін, жеке кабинетте немесе Openstack CLI көмегімен топқа жаңа ережелерді {linkto(../../../../../networks/vnet/instructions/secgroups#add_rule)[text=қосыңыз]} және қажетсіздерін {linkto(../../../../../networks/vnet/instructions/secgroups#delete_rule)[text=жойыңыз]}.
+Пулдың қауіпсіздік тобының ережелерін өзгерту үшін, жеке кабинетте немесе Openstack CLI көмегімен топқа жаңа ережелерді {linkto(../../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=қосыңыз]} және қажетсіздерін {linkto(../../../../../networks/vnet/instructions/secgroups#vnet-secgroups-delete-rule)[text=жойыңыз]}.
 
 Қалған параметрлерді өзгерту үшін:
 

@@ -83,7 +83,7 @@ PTR-жазба көмегімен кері DNS-сұранысты теңшеу �
 
 Әдепкі бойынша жобада сыртқы IP-мекенжайларға қолжетімді квоталар жоқ және оларды [техникалық қолдау көрсету қызметі](/kz/contacts) арқылы арттыруға болмайды.
 
-Шектеуді алу үшін [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru) поштасы арқылы менеджерге жүгініңіз. Мәліметтерді келіскеннен кейін менеджер сыртқы IP-мекенжайлар квотасын арттыру бойынша сұраныс жасайды. Кейін квоталарды өз бетіңізше {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[арттыра]} аласыз.
+Шектеуді алу үшін [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru) поштасы арқылы менеджерге жүгініңіз. Мәліметтерді келіскеннен кейін менеджер сыртқы IP-мекенжайлар квотасын арттыру бойынша сұраныс жасайды. Кейін квоталарды өз бетіңізше {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota)[text=арттыра]} аласыз.
 
 {/cut}
 

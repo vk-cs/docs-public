@@ -11,8 +11,7 @@
 
 {cut(Бұлтта қандай СУБД қолжетімді?)}
 
-Қолдау көрсетілетін СУБД-лардың толық {linkto(../concepts/types#dbaas-types)[text=тізімі]} және олардың {linkto(
-../concepts/work-configs#dbaas-work-configs)[text=конфигурациялары]}.
+Қолдау көрсетілетін СУБД-лардың толық {linkto(../concepts/types#dbaas-types)[text=тізімі]} және олардың {linkto(../concepts/work-configs#dbaas-work-configs)[text=конфигурациялары]}.
 
 {/cut}
 
@@ -20,15 +19,13 @@
 
 Қажетті конфигурация түрін {linkto(../instructions/create#dbaas-create)[text=ДБ инстансын құру]} кезінде таңдай аласыз.
 Инстанс жасалғаннан кейін конфигурация түрін өзгертуге болмайды, бірақ сіз әрқашан репликаны қоса аласыз. Конфигурация
-түрлері туралы толығырақ {linkto(
-../concepts/work-configs#dbaas-work-configs)[text=ДБ инстанстары конфигурацияларының түрлері]} бөлімінен оқыңыз.
+түрлері туралы толығырақ {linkto(../concepts/work-configs#dbaas-work-configs)[text=ДБ инстанстары конфигурацияларының түрлері]} бөлімінен оқыңыз.
 
 {/cut}
 
 {cut(ДБ инстансының конфигурациялық файлын өзім өзгерте аламын ба?)}
 
-Конфигурациялық файлға тікелей қолжетімділік қарастырылмаған, бірақ кейбір параметрлерді {linkto(
-../instructions/db-config#dbaas-db-config)[text=өзгертуге]} болады жеке кабинет арқылы.
+Конфигурациялық файлға тікелей қолжетімділік қарастырылмаған, бірақ кейбір параметрлерді {linkto(../instructions/db-config#dbaas-db-config)[text=өзгертуге]} болады жеке кабинет арқылы.
 
 Егер қажетті параметр жоқ болса, конфигурациядағы түзетулерді келісу үшін [техникалық қолдауға](/kz/contacts) хабарласыңыз.
 Параметрлердің бір бөлігі дерекқор инстансының жұмысы үшін аса маңызды және өзгертіле алмайды.
@@ -38,8 +35,7 @@
 {cut(Сервис құны неге байланысты?)}
 
 Сервис құны таңдалған {linkto(../concepts/work-configs#dbaas-work-configs)[text=конфигурацияға]} байланысты. Төлем
-тек пайдаланылған ресурстар үшін есептеледі, толығырақ {linkto(
-../tariffication#dbaas-tariffication)[text=Тарификация]} мақаласында.
+тек пайдаланылған ресурстар үшін есептеледі, толығырақ {linkto(../tariffication#dbaas-tariffication)[text=Тарификация]} мақаласында.
 
 {/cut}
 
@@ -51,8 +47,7 @@
 
 {cut(Әдепкі бойынша резервтік көшіру қосылған ба?)}
 
-Әдепкі бойынша резервтік көшіру қосылмаған. Оны {linkto(
-../instructions/create#dbaas-create)[text=инстансты құру]} кезінде қосуға немесе
+Әдепкі бойынша резервтік көшіру қосылмаған. Оны {linkto(../instructions/create#dbaas-create)[text=инстансты құру]} кезінде қосуға немесе
 [Резервтік көшіру](https://kz.cloud.vk.kz/app/services/databases/backups/) бөлімінде баптауға болады.
 
 {/cut}
@@ -62,8 +57,7 @@
 Резервтік көшіру қосылғанын тексеру үшін:
 
 1. VK Cloud жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Қажетті ДБ инстансы орналасқан {linkto(
-   ../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобаны]} таңдаңыз.
+1. Қажетті ДБ инстансы орналасқан {linkto(../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобаны]} таңдаңыз.
 1. **Базы данных** → **Резервное копирование** бөліміне өтіңіз.
 1. **Автоматическое** немесе **Point-in-time recovery** қойындысына өтіңіз.
 
@@ -71,8 +65,7 @@
    резервтік көшіру тоқтатылған.
 
 Резервтік көшіруді {linkto(../instructions/create#dbaas-create)[text=ДБ инстансын құру]} кезінде қосуға немесе
-оны бөлек баптауға болады, ол үшін {linkto(
-../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=резервтік көшіру жоспарын құру]} қажет.
+оны бөлек баптауға болады, ол үшін {linkto(../../../storage/backups/instructions/create-backup-plan#backup-plan-create-db)[text=резервтік көшіру жоспарын құру]} қажет.
 
 {/cut}
 
@@ -88,10 +81,8 @@
 
 Иә, болады.
 
-{linkto(
-../../../storage/backups/instructions/restore-from-backup#backup-restore)[text=Резервтік көшірмеден қалпына келтіру]} кезінде —
-автоматты, қолмен немесе {linkto(
-../../../storage/backups/instructions/point-in-time-recovery-pitr#backup-pitr)[text=белгілі бір уақыт сәтінде жасалған (PITR)]} —
+{linkto(../../../storage/backups/instructions/restore-from-backup#backup-restore)[text=Резервтік көшірмеден қалпына келтіру]} кезінде —
+автоматты, қолмен немесе {linkto(../../../storage/backups/instructions/point-in-time-recovery-pitr#backup-pitr)[text=белгілі бір уақыт сәтінде жасалған (PITR)]} —
 жаңа нұсқаны таңдау интерфейсте қолжетімді болады, егер инстанстың ағымдағы нұсқасы үшін жаңарту бар болса.
 
 {/cut}
@@ -110,8 +101,7 @@
 Сондай-ақ дерекқор дискісінің өлшемін автомасштабтауды қосуға болады. Бұл жағдайда деректер көлемі ұлғайған сайын
 диск өлшемі автоматты түрде артады.
 
-ДБ инстансын масштабтау жөніндегі нұсқаулықтар {linkto(
-../instructions/manage-instance#dbaas-manage-instance)[text=ДБ инстансын басқару]} бөлімінде берілген.
+ДБ инстансын масштабтау жөніндегі нұсқаулықтар {linkto(../instructions/manage-instance#dbaas-manage-instance)[text=ДБ инстансын басқару]} бөлімінде берілген.
 
 {/cut}
 
@@ -137,8 +127,7 @@
 
 {cut(ДБ үшін мониторинг кеңейтімдерін қалай орнатуға болады?)}
 
-Кеңейтімдерді орнату {linkto(
-../instructions/managing-extensions#dbaas-managing-extensions)[text=Кеңейтімдерді басқару]} бөлімінде толық сипатталған.
+Кеңейтімдерді орнату {linkto(../instructions/managing-extensions#dbaas-managing-extensions)[text=Кеңейтімдерді басқару]} бөлімінде толық сипатталған.
 
 PostgreSQL үшін мониторинг әдепкі бойынша қосылған.
 {/cut}

@@ -2,12 +2,12 @@
 
 {include(/kz/_includes/_translated_by_ai.md)}
 
-Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-types#external-net)[text=сыртқы желінің IP]} арқылы қолжетімділікті {linkto(../../../../networks/vnet/concepts/router#advanced)[text=жетілдірілген маршрутизаторлардың]} көмегімен баптауға болады.
+Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желінің IP]} арқылы қолжетімділікті {linkto(../../../../networks/vnet/concepts/router#vnet-router-advanced)[text=жетілдірілген маршрутизаторлардың]} көмегімен баптауға болады.
 
 ## {heading(Дайындық қадамдары)[id=bare-metal-router-preparatory-steps]}
 
 1. Егер сізде Bare Metal сервері болмаса, оны {linkto(../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-order)[text=тапсырыс беріңіз]}.
-1. Жетілдірілген маршрутизаторды {linkto(../../../../networks/vnet/instructions/advanced-router/manage-advanced-routers#add)[text=жасаңыз]}.
+1. Жетілдірілген маршрутизаторды {linkto(../../../../networks/vnet/instructions/advanced-router/manage-advanced-routers#vnet-manage-advanced-routers-add)[text=жасаңыз]}.
 
 ## {heading({counter(TOC)}. Сервер желісі туралы ақпарат алыңыз)[id=bare-metal-router-get-info]}
 
@@ -43,7 +43,7 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
    1. **Интерфейс қосу** түймесін басыңыз.
    1. Интерфейс атауын енгізіңіз.
-   1. `internet` {linkto(../../../../networks/vnet/concepts/net-types#external-net)[text=сыртқы желісінен]} кез келген ішкі желіні таңдаңыз.
+   1. `internet` {linkto(../../../../networks/vnet/concepts/net-types#vnet-net-types-external-net)[text=сыртқы желісінен]} кез келген ішкі желіні таңдаңыз.
    1. **Қосу** түймесін басыңыз.
    1. Қосылған интерфейстің сыртқы IP мекенжайын жазып алыңыз.
 
@@ -63,9 +63,9 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
 Егер бұл әлі жасалмаса, құпиясөз арқылы қолжетімділікті баптаңыз:
 
-1. Bare Metal серверіне ішкі IP мекенжайы арқылы SSH көмегімен {linkto(../../../../computing/bare-metal/connect/connect-nix#connect-nix)[text=қосылыңыз]}.
+1. Bare Metal серверіне ішкі IP мекенжайы арқылы SSH көмегімен {linkto(../../../../computing/bare-metal/connect/connect-nix#bare-metal-connect-nix)[text=қосылыңыз]}.
 
-   Бұл қадамды орындау үшін {linkto(../../../../computing/iaas/concepts/vm#vm)[text=виртуалды машина]} түріндегі аралық хостты {linkto(../../../../networks/vnet/concepts/ips-and-inet#floating-ip)[text=Floating IP мекенжайымен]} жасау қажет болады.
+   Бұл қадамды орындау үшін {linkto(../../../../computing/iaas/concepts/vm#iaas-concepts-vm)[text=виртуалды машина]} түріндегі аралық хостты {linkto(../../../../networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-floating-ip)[text=Floating IP мекенжайымен]} жасау қажет болады.
 
 1. Егер сіз `root` есептік жазбасын пайдалансаңыз, `sudo` тобымен жеке пайдаланушы жасаңыз:
 
@@ -95,7 +95,7 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
    sudo passwd <ИМЯ_ПОЛЬЗОВАТЕЛЯ>
    ```
 
-   Мұнда `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — есептік жазбаңыздың атауы. Егер ОЖ {var(cloud)} образдарынан орнатылған болса, {linkto(../../../../computing/iaas/concepts/oper-system#default_account)[text=әдепкі есептік жазба атауын]} пайдалануға болады.
+   Мұнда `<ИМЯ_ПОЛЬЗОВАТЕЛЯ>` — есептік жазбаңыздың атауы. Егер ОЖ {var(cloud)} образдарынан орнатылған болса, {linkto(../../../../computing/iaas/concepts/oper-system#iaas-oper-system-default-account)[text=әдепкі есептік жазба атауын]} пайдалануға болады.
 
    {note:info}
 
@@ -160,16 +160,16 @@ Bare Metal серверіне {linkto(../../../../networks/vnet/concepts/net-typ
 
    Өзгертілген маршрут сервер қайта жүктелгенге дейін сақталады. Қайта жүктегеннен кейін желі баптауын қайта орындау қажет болады.
 
-   Маршрут түсіп қалмауы үшін, бірінші қадамда алынған желі параметрлерін пайдаланып, ОЖ-дегі желі интерфейсінің конфигурациясын {linkto(../../../../computing/iaas/how-to-guides/interface-settings-check#nterface-settings-check)[text=баптаңыз]}. Шлюз ретінде ішкі интерфейске тағайындалған IP мекенжайын көрсетіңіз.
+   Маршрут түсіп қалмауы үшін, бірінші қадамда алынған желі параметрлерін пайдаланып, ОЖ-дегі желі интерфейсінің конфигурациясын {linkto(../../../../computing/iaas/how-to-guides/interface-settings-check#iaas-interface-settings-check)[text=баптаңыз]}. Шлюз ретінде ішкі интерфейске тағайындалған IP мекенжайын көрсетіңіз.
 
    {/note}
 
-1. Серверге сыртқы мекенжай бойынша SSH арқылы {linkto(../../../../computing/bare-metal/connect/connect-nix#connect-nix)[text=қосылыңыз]}.
+1. Серверге сыртқы мекенжай бойынша SSH арқылы {linkto(../../../../computing/bare-metal/connect/connect-nix#bare-metal-connect-nix)[text=қосылыңыз]}.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=bare-metal-router-clean-up]}
 
 Жасалған ресурстар тарифке сәйкес есептеледі және есептеу ресурстарын тұтынады. Егер олар сізге енді қажет болмаса:
 
-- Кейінірек пайдалану үшін аралық хостты {linkto(../../../../computing/iaas/instructions/vm/vm-manage#start-stop-restart-vm)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
+- Кейінірек пайдалану үшін аралық хостты {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=тоқтатыңыз]} немесе оны біржола {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
 - Bare Metal серверін жалға алудан {linkto(../../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-delete)[text=басы тартыңыз]}.
-- Аралық хостқа тағайындалған {linkto(../../../../networks/vnet/instructions/ip/floating-ip#delete)[text=Floating IP мекенжайын жойыңыз]}. Жобада бар Floating IP мекенжайлары қандай да бір сервиске байланыстырылмаса да тарифтеледі.
+- Аралық хостқа тағайындалған {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Floating IP мекенжайын жойыңыз]}. Жобада бар Floating IP мекенжайлары қандай да бір сервиске байланыстырылмаса да тарифтеледі.
