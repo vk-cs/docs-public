@@ -18,7 +18,7 @@
    - **Phone**: the client's phone number. Filled in if necessary.
    - **Identifier**: the client's unique identifier. You can take it, for example, from your CRM system where you register clients.
 
-1. Select a payment model from the list: prepayment or postpayment. Later, you can {linkto(../client-management/payment-method#pp-payment-method)[text=change the payment model]} in the partner management console.
+1. Select a {linkto(../../../../start/partners/cooperation-models#partners-cooperation-models-payment-methods)[text=payment model]} from the list: prepayment or postpayment. Later, you can {linkto(../client-management/payment-method#pp-payment-method)[text=change the payment model]} in the partner management console.
 1. (For White Label partners) Enable the **Cloud Computing** service if you want the client to be able to use services without confirming a phone number.
 1. Click the **Add** button.
 
