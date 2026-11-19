@@ -62,7 +62,7 @@ UserGate NGFW BYOL (Bring Your Own Licence) моделі бойынша ұсын
 1. Тізімдегі атауын басып, сервис ВМ-інің бетін ашыңыз (әдетте `<идентификатор>usergate`).
 1. **Сети** қойындысына өтіңіз.
 1. Қажетті желіні ВМ-ге [қосыңыз](/kz/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect).
-1. ВМ-ді [VK Cloud құралдарымен](/kz/computing/iaas/instructions/vm/vm-manage#start_stop_restart_vm) немесе [UserGate консолі](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером) арқылы қайта жүктеңіз.
+1. ВМ-ді [VK Cloud құралдарымен](/kz/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) немесе [UserGate консолі](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером) арқылы қайта жүктеңіз.
 
 ## 2. Қосылған желінің бар-жоғын тексеріңіз
 

@@ -42,8 +42,7 @@ PostgreSQL ДБ инстансын жаңарту үшін:
 
 1. API-ге сұрауларды авторизациялау үшін [токен алыңыз](../../../../tools-for-using-services/api/rest-api/case-keystone-token).
 
-1. Жаңартуды орындаңыз. Жаңарту рәсімі {linkto(
-   ../../concepts/work-configs#dbaas-work-configs)[text=конфигурацияға]} байланысты:
+1. Жаңартуды орындаңыз. Жаңарту рәсімі {linkto(../../concepts/work-configs#dbaas-work-configs)[text=конфигурацияға]} байланысты:
 
    {tabs}
 

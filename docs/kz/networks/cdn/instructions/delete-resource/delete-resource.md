@@ -8,7 +8,7 @@ CDN-ресурсын екі тәсілмен жоюға болады:
 
 - [VK Object Storage](/kz/storage/s3) сервисіндегі {linkto(#cdn-delete-resource-bucket-interface)[text=бакет интерфейсі арқылы]}.
 
-  Бұл тәсіл, егер CDN-ресурсы {linkto(../../../../networks/cdn/instructions/create-resource#cdn-create-resource-bucket-interface)[text=бакет интерфейсі арқылы құрылған болса]}, қолданылады.
+  Бұл тәсіл, егер CDN-ресурсы {linkto(../../../../networks/cdn/instructions/create-resource#cdn-create-resource-bucket-ui)[text=бакет интерфейсі арқылы құрылған болса]}, қолданылады.
 
 ## {heading(CDN сервисінің интерфейсі арқылы жою)[id=cdn-delete-resource-cdn-interface]}
 

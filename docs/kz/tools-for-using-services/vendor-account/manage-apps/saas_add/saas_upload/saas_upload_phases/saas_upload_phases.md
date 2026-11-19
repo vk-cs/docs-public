@@ -4,7 +4,7 @@
 
 Сервисті дүкенге жүктеп отырған пайдаланушының бұлтты платформада есептік жазбасы (жеке кабинеті) болуы тиіс. Тіркелу нұсқаулығы [Регистрация в {var(cloud)}](/kz/intro/onboarding/account) бөлімінде берілген.
 
-SaaS-қосымшасын дүкенге жүктеу кезеңдері ({linkto(#pic_saas_upload)[text=%number] сурет}):
+SaaS-қосымшасын дүкенге жүктеу кезеңдері ({linkto(#pic_saas_upload)[text=%number сурет]}):
 
 1. {linkto(../saas_upload_localtest#saas_upload_localtest)[text=%text]}.
 1. {linkto(../saas_upload_env#saas_upload_env)[text=%text]}.

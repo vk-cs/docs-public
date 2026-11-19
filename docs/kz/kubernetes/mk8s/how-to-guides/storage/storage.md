@@ -38,7 +38,7 @@ PV қосудың қандай тәсілдерімен танысу қажет 
 
 ### {heading(Блоктық жадтарды қосу)[id=mk8s-storage-connect-block-storage]}
 
-Блоктық жадтар кластерге {linkto(../../concepts/storage#mk8s-storage)[text=Cinder CSI көмегімен] қосылады}.
+Блоктық жадтар кластерге {linkto(../../concepts/storage#mk8s-storage)[text=Cinder CSI көмегімен қосылады]}.
 
 Осындай типтегі жадтарды пайдаланған кезде:
 

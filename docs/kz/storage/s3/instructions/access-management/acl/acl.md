@@ -42,7 +42,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-get-bucket-acl)[text=REST API]-нің} `GET /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-get-bucket-acl)[text=REST API-нің]} `GET /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -90,7 +90,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-get-object-acl)[text=REST API]-нің} `GET /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-get-object-acl)[text=REST API-нің]} `GET /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -166,7 +166,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API-нің]} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -191,7 +191,7 @@
    Мұнда:
 
    - `<ИМЯ_БАКЕТА>` — ACL орнату қажет бакеттің атауы.
-   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — бакет үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]-дің} атауы.
+   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — бакет үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL-дің]} атауы.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
 
@@ -206,7 +206,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API-нің]} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -269,7 +269,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API]-нің} `PUT /?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-bucket-acl)[text=REST API-нің]} `PUT /?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -341,7 +341,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API-нің]} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -369,7 +369,7 @@
 
    - `<ИМЯ_БАКЕТА>` — объект орналасқан бакеттің атауы.
    - `<КЛЮЧ_ОБЪЕКТА>` — ACL орнату қажет объектінің, жолын қоса алғанда, толық атауы.
-   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — объект үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL]-дің} атауы.
+   - `<ПРЕДОПРЕДЕЛЕННЫЙ_ACL>` — объект үшін орнату қажет {linkto(../../../concepts/access/s3-acl#s3-concepts-acl-pre-set)[text=стандартты ACL-дің]} атауы.
    - (Міндетті емес) `<ID_ВЕРСИИ>` — {linkto(../../../concepts/versioning#s3-concepts-versioning)[text=версиялауы]} бар бакеттегі объектінің {linkto(../../../concepts/versioning#s3-concepts-versioning-version-id)[text=нұсқа идентификаторы]}. Егер `--version-id` параметрі көрсетілмесе, ағымдағы нұсқа қолданылады.
      {ifdef(public)}
    - `<ENDPOINT_URL>` — аккаунттың {linkto(../../../../../tools-for-using-services/account/concepts/regions#tools-account-concepts-regions)[text=өңіріне]} сәйкес болуы тиіс:
@@ -385,7 +385,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API-нің]} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 
@@ -452,7 +452,7 @@
 
 {tab(API)}
 
-Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API]-нің} `PUT /{object}?acl` әдісін пайдаланыңыз.
+Сервистің {linkto(../../../api/acl#api-spec-s3-put-object-acl)[text=REST API-нің]} `PUT /{object}?acl` әдісін пайдаланыңыз.
 
 {/tab}
 

@@ -496,11 +496,9 @@
 
 {note:warn}
 
-Кластерді құру кезінде ол үшін {linkto(
-../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=қызметтік жүктеме теңгергіші]} жасалады.
+Кластерді құру кезінде ол үшін {linkto(../../../../../networks/balancing/concepts/load-balancer#balancing-load-balancer-types)[text=қызметтік жүктеме теңгергіші]} жасалады.
 
-Теңгергішті пайдалану {linkto(
-../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифтеледі]}.
+Теңгергішті пайдалану {linkto(../../../../../networks/vnet/tariffication#vnet-tariffication-charged)[text=тарифтеледі]}.
 
 {/note}
 

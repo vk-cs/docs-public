@@ -118,8 +118,7 @@
 
 ## {heading(Резервтік көшірме жасау)[id=dbaas-clickhouse-create-backup]}
 
-Операция {linkto(
-../../../../../storage/backups/instructions/create-backup-copy)[text=Резервтік көшірмені қолмен жасау]} бөлімінде егжей-тегжейлі сипатталған.
+Операция {linkto(../../../../../storage/backups/instructions/create-backup-copy)[text=Резервтік көшірмені қолмен жасау]} бөлімінде егжей-тегжейлі сипатталған.
 
 ## {heading(Тік масштабтау)[id=dbaas-clickhouse-vertical-autoscaling]}
 

@@ -6,7 +6,7 @@
 
 ## {heading(Файлдық қойманы қосу)[id=iaas-fs-connect-mount]}
 
-Файлдық қойманы қосу тәсілі виртуалды машинаның операциялық жүйесіне, [Windows](#mount-fs-windows) немесе [Linux](#iaas-fs-connect-mount-linux), сондай-ақ қойманы жасау кезінде таңдалған протоколға байланысты.
+Файлдық қойманы қосу тәсілі виртуалды машинаның операциялық жүйесіне, [Windows](#iaas-fs-connect-mount-windows) немесе [Linux](#iaas-fs-connect-mount-linux), сондай-ақ қойманы жасау кезінде таңдалған протоколға байланысты.
 
 ### {heading(Windows)[id=iaas-fs-connect-mount-windows]}
 

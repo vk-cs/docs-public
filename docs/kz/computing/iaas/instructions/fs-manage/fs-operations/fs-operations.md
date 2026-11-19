@@ -96,7 +96,7 @@
 
 ## {heading(Файлдық сақтау орнын және оның желісін жою)[id=iaas-fs-operations-delete]}
 
-Файлдық сақтау орнын жою үшін алдымен оны виртуалды машиналарда [ажырату](/kz/computing/iaas/instructions/fs-manage/fs-connect#unmount_file_storage) және оның барлық снимоктарын [жою](../fs-snapshots#iaas-fs-snapshots-deleting) қажет.
+Файлдық сақтау орнын жою үшін алдымен оны виртуалды машиналарда [ажырату](/kz/computing/iaas/instructions/fs-manage/fs-connect#iaas-fs-connect-unmount) және оның барлық снимоктарын [жою](../fs-snapshots#iaas-fs-snapshots-deleting) қажет.
 
 {tabs}
 

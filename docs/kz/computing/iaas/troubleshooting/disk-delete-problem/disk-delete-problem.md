@@ -8,6 +8,6 @@
 
 ### {heading(Шешім)[id=iaas-disk-delete-problem-decision]}
 
-1. Диск ВМ-нан [ажыратылғанына](../../instructions/volumes/volumes-connect#dismount_disk) және оның snapshot-тары [жойылғанына](../../instructions/volumes/volumes-snapshots) көз жеткізіңіз.
+1. Диск ВМ-нан [ажыратылғанына](../../instructions/volumes/volumes-connect#iaas-volumes-connect-dismount-disk) және оның snapshot-тары [жойылғанына](../../instructions/volumes/volumes-snapshots) көз жеткізіңіз.
 1. Дискіні [жойып](../../instructions/volumes/volumes-manage) көріңіз.
 1. Егер мәселе сақталса, [техникалық қолдауға хабарласыңыз](/kz/contacts).

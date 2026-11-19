@@ -127,7 +127,7 @@ Cloud Direct Connect ішкі желісінде бұл параметр `null` 
 
 ## {heading(3. Стандартты маршрутизатор қосыңыз)[id=directconnect-dc-standard-router-add-standart-router]}
 
-{linkto(../../../../networks/vnet/instructions/router#vnen-router-add)[text=Келесі параметрлермен]} стандартты маршрутизаторды жасаңыз:
+{linkto(../../../../networks/vnet/instructions/router#vnet-router-add)[text=Келесі параметрлермен]} стандартты маршрутизаторды жасаңыз:
 
 - **SDN**: `Sprut`. Өріс жобаға SDN Sprut пен Neutron қосылған болса көрсетіледі.
 - **Атауы**: бұл мысалда `Standard router`.
@@ -390,5 +390,5 @@ IP мекенжайы пингке жауап беруі тиіс.
 Егер жасалған ресурстар енді қажет болмаса, оларды жойыңыз:
 
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Виртуалды машинаны жойыңыз]}.
-1. {linkto(../../../../networks/vnet/instructions/router#vner-router-delete)[text=Маршрутизаторларды жойыңыз]}.
+1. {linkto(../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Маршрутизаторларды жойыңыз]}.
 1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-delete)[text=ішкі желілерді]} және {linkto(../../../../networks/vnet/instructions/net#vnet-net-delete)[text=желілерді]} жойыңыз: транзиттік желіні және виртуалды машиналарды орналастыруға арналған желіні.

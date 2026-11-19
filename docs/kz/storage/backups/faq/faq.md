@@ -63,7 +63,7 @@
 
 {cut(Резервтік көшірмелеу жоспары жоқ ВМ тізімін қалай көруге болады?)}
 
-Мұндай виртуалды машиналарды іздеу үшін {linkto(../../../computing/iaas/instructions/vm/vm-filter#iaas-vm-filter)[text=]**Бэкап** фильтрін пайдаланыңыз}.
+Мұндай виртуалды машиналарды іздеу үшін {linkto(../../../computing/iaas/instructions/vm/vm-filter#iaas-vm-filter)[text=**Бэкап** фильтрін пайдаланыңыз]}.
 
 {/cut}
 
