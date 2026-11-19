@@ -25,7 +25,7 @@ When choosing this cooperation model, {var(cloud)} resources can be resold under
 
 - Customization of the customer interface and documentation to match your brand.
 - Management of customer plans and the prices they see in their management console.
-- Changing the customer payment model, shortening the customer's path to start using {var(cloud)} services.
+- Changing the customer {linkto(#partners-cooperation-models-payment-methods)[text=payment model]}, shortening the customer's path to start using {var(cloud)} services.
 
 To become a White Label partner, contact the manager handling your partnership application, or write to [partner@mcs.mail.ru](mailto:partner@mcs.mail.ru).
 
@@ -37,6 +37,15 @@ The partner discount consists of two parts:
 - The deal registration discount is up to 20%.
 
 The total discount can reach up to 30% of the price listed in the {var(cloud)} [price list](https://cloud.vk.ru/pricelist).
+
+### {heading(Payment models)[id=partners-cooperation-models-payment-methods]}
+
+For each customer you invite to the platform, you can choose one of the payment models:
+
+- Prepayment: the customer tops up the balance and then consumes resources using the funds on it. If the balance becomes negative, consumption is not possible: the project resources are stopped and then deleted after three days.
+- Postpayment: the customer consumes resources without waiting for a top-up. Consumption is not limited when the balance is negative, and the customer pays the invoice based on resource usage.
+
+You choose the payment model when {linkto(../../../tools-for-using-services/partner-platform/instructions/invite-client#pp-invite-client-invite)[text=inviting]} the customer, and can later {linkto(../../../tools-for-using-services/partner-platform/instructions/client-management/payment-method#pp-payment-method)[text=change]} the selected model in the partner platform. The model changes for all existing customer projects, and the customer creates new projects with the model you set.
 
 ## {heading(Agent)[id=partners-cooperation-models-agent]}
 
