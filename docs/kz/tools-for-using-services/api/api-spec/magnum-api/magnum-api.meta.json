@@ -1,10 +1,10 @@
 {
-  "title": "Managed Containers",
-  "shortDescription": "Managed Containers қызметінің K8s кластерлерін басқаруға арналған OpenAPI-спецификациясы",
-  "metaDescription": "Бұлттық қызметтерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарыңызды әзірлеу үшін жариялы API спецификациялары. Managed Containers қызметінің API",
-  "sectionTitle": "Managed Containers",
+  "title": "Managed Containers (бірінші буын)",
+  "shortDescription": "Бірінші буынның Kubernetes кластерлерін басқаруға арналған Managed Containers қызметінің OpenAPI-спецификациясы",
+  "metaDescription": "Бұлттық қызметтерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарыңызды әзірлеу үшін жариялы API спецификациялары. Бірінші буынның Kubernetes кластерлеріне арналған Managed Containers қызметінің API",
+  "sectionTitle": "Managed Containers (бірінші буын)",
   "icon": "",
-  "weight": 8,
+  "weight": 9,
   "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e",
   "build": {
     "for": [

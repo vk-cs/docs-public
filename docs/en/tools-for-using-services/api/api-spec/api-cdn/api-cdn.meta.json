@@ -4,7 +4,7 @@
   "metaDescription": "OpenAPI specification of the  CDN service: use Swagger descriptions and schemas or get OpenAPI specification in JSON format.",
   "sectionTitle": "CDN",
   "icon": "",
-  "weight": 3,
+  "weight": 0,
   "uuid": "00f1b627-45e3-4cf3-b00f-9d570ab0fd5d",
   "build": {
     "for": [

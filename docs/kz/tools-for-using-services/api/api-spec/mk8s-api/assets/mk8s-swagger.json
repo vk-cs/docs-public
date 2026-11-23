@@ -1,0 +1,4567 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Managed Containers (second generation)",
+    "description": "API specification for Managed Containers (second generation): clusters, node groups, Bare Metal groups, addons, security policies, applications, quotas and PVC volumes",
+    "version": "1.0.0"
+  },
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "keystone": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-Auth-Token",
+      "description": "Authorization token"
+    }
+  },
+  "security": [
+    {
+      "keystone": []
+    }
+  ],
+  "paths": {
+    "/managed-kubernetes/v1/clusters": {
+      "get": {
+        "summary": "List clusters",
+        "operationId": "ClusterService_ListClusters",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListClustersResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>"
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "page_token",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "all_tenants",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      },
+      "post": {
+        "summary": "Create a cluster",
+        "operationId": "ClusterService_CreateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1CreateClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1CreateClusterRequest"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}": {
+      "get": {
+        "summary": "Get a cluster",
+        "operationId": "ClusterService_GetCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1Cluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "description": "name or uuid or ksuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a cluster",
+        "operationId": "ClusterService_DeleteCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "description": "name or uuid or ksuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}:update": {
+      "patch": {
+        "summary": "Update a cluster",
+        "operationId": "ClusterService_UpdateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceUpdateClusterBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}:upgrade": {
+      "patch": {
+        "summary": "Upgrade a cluster",
+        "operationId": "ClusterService_UpgradeCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpgradeClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceUpgradeClusterBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}:scaleControlPlane": {
+      "post": {
+        "summary": "Scale the control plane",
+        "operationId": "ClusterService_ScaleControlPlane",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ScaleControlPlaneResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceScaleControlPlaneBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/target_flavor": {
+      "get": {
+        "summary": "Get the target master flavor",
+        "operationId": "ClusterService_GetTargetMasterFlavor",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetTargetMasterFlavorResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/listener": {
+      "patch": {
+        "summary": "Update the listener",
+        "operationId": "ClusterService_UpdateListener",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateListenerResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceUpdateListenerBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/turn_on": {
+      "post": {
+        "summary": "Turn on a cluster",
+        "operationId": "ClusterService_TurnOnCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1TurnOnClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceTurnOnClusterBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/turn_off": {
+      "post": {
+        "summary": "Turn off a cluster",
+        "operationId": "ClusterService_TurnOffCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1TurnOffClusterResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterServiceTurnOffClusterBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/kube_config": {
+      "post": {
+        "summary": "Get a kubeconfig",
+        "operationId": "GetKubeConfig",
+        "responses": {
+          "200": {
+            "description": "A successful response",
+            "schema": {
+              "type": "file"
+            }
+          },
+          "404": {
+            "description": "Cluster not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "KubeconfigService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/k8s_versions": {
+      "get": {
+        "summary": "List Kubernetes versions",
+        "operationId": "ClusterService_ListK8SVersions",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListK8SVersionsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "deprecated",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/available-resources/storage-classes": {
+      "get": {
+        "summary": "List storage classes",
+        "operationId": "AvailableResourcesService_ListStorageClass",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListStorageClassResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "AvailableResourcesService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/node-groups": {
+      "get": {
+        "summary": "List node groups",
+        "operationId": "ClusterService_ListNodeGroups",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListNodeGroupsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "page_token",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/node-groups": {
+      "get": {
+        "summary": "List node groups by project ID",
+        "operationId": "NodeGroupService_ListNodeGroupByProjectID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListNodeGroupsByProjectIDResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>"
+          },
+          {
+            "name": "cluster_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "page_token",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      },
+      "post": {
+        "summary": "Create a node group",
+        "operationId": "NodeGroupService_CreateNodeGroup",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1CreateNodeGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1CreateNodeGroupRequest"
+            }
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/node-groups/{node_group_id}": {
+      "patch": {
+        "summary": "Update a node group",
+        "operationId": "NodeGroupService_UpdateNodeGroup",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateNodeGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "node_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "node_group",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "zones": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "[DEPRECATED] Node group's nodes can be deployed in the following zones."
+                },
+                "scale_spec": {
+                  "$ref": "#/definitions/v1ScaleSpec",
+                  "title": "ScaleSpec can be one of two types:\nFixedScale if user don't want to scale node group\nAutoScale if user wants to scale node group"
+                },
+                "labels": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "k8s node's labels we want to set on nodes in this node group"
+                },
+                "taints": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/k8sv1Taint"
+                  },
+                  "title": "k8s node's taints we want to set on nodes in this node group"
+                },
+                "vm_engine": {
+                  "$ref": "#/definitions/v1VmEngine"
+                },
+                "parallel_upgrade_chunk": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "extra_security_groups": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "node_group"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      },
+      "get": {
+        "summary": "Get a node group",
+        "operationId": "NodeGroupService_GetNodeGroup",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetNodeGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "node_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a node group",
+        "operationId": "NodeGroupService_DeleteNodeGroup",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteNodeGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "node_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/node-groups/{node_group_name}": {
+      "get": {
+        "summary": "Get a node group by name",
+        "operationId": "NodeGroupService_GetNodeGroupByName",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetNodeGroupByNameResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "node_group_name",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/node-groups/{node_group_id}/nodes": {
+      "get": {
+        "summary": "Get nodes of a node group",
+        "operationId": "NodeGroupService_GetNodesByNodeGroup",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetNodesByNodeGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "node_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/node-groups/{node_group_id}/nodes:batchDelete": {
+      "post": {
+        "summary": "Delete nodes",
+        "operationId": "NodeGroupService_DeleteNodes",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteNodesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "node_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NodeGroupServiceDeleteNodesBody"
+            }
+          }
+        ],
+        "tags": [
+          "NodeGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/addons": {
+      "get": {
+        "summary": "List addons",
+        "operationId": "AddonService_ListAddons",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListAddonsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "versions_supported_kube_version",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "versions_is_deprecated",
+            "in": "query",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "tags": [
+          "AddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/addons/{addon_id}": {
+      "get": {
+        "summary": "Get an addon",
+        "operationId": "AddonService_GetAddon",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1Addon"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "k8s_version",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "AddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/addons/{addon_id}/versions/{addon_version_id}": {
+      "get": {
+        "summary": "Get an addon version",
+        "operationId": "AddonService_GetAddonVersion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1AddonVersion"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "addon_version_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "AddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/addon_versions/{addon_version_id}": {
+      "get": {
+        "summary": "Get an addon version by global ID",
+        "operationId": "AddonService_GetAddonVersionByGlobalID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1AddonVersion"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "addon_version_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "AddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/addons": {
+      "get": {
+        "summary": "List cluster addons",
+        "operationId": "ClusterAddonService_ListClusterAddons",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListClusterAddonsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      },
+      "post": {
+        "summary": "Create a cluster addon",
+        "operationId": "ClusterAddonService_CreateClusterAddon",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1CreateClusterAddonResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterAddonServiceCreateClusterAddonBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/addons/{cluster_addon_id}": {
+      "get": {
+        "summary": "Get a cluster addon",
+        "operationId": "ClusterAddonService_GetClusterAddon",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ClusterAddon"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a cluster addon",
+        "operationId": "ClusterAddonService_DeleteClusterAddon",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteClusterAddonResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      },
+      "patch": {
+        "summary": "Update a cluster addon",
+        "operationId": "ClusterAddonService_UpdateClusterAddon",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateClusterAddonResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterAddonServiceUpdateClusterAddonBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/cluster_addons/{cluster_addon_id}": {
+      "get": {
+        "summary": "Get a cluster addon by global ID",
+        "operationId": "ClusterAddonService_GetClusterAddonByGlobalID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ClusterAddon"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_addon_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterAddonService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/security_policy": {
+      "get": {
+        "summary": "List security policies",
+        "operationId": "SecurityPolicyService_ListSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "SecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/security_policy/{security_policy_id}": {
+      "get": {
+        "summary": "Get a security policy",
+        "operationId": "SecurityPolicyService_GetSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1SecurityPolicy"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "SecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/security_policy/{security_policy_name}/versions/{version}": {
+      "get": {
+        "summary": "Get a security policy by name and version",
+        "operationId": "SecurityPolicyService_GetSecurityPolicyByNameAndVersion",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1SecurityPolicy"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "security_policy_name",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "version",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "SecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/security_policy": {
+      "get": {
+        "summary": "List cluster security policies",
+        "operationId": "ClusterSecurityPolicyService_ListClusterSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "page_size",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "page_token",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      },
+      "post": {
+        "summary": "Create a cluster security policy",
+        "operationId": "ClusterSecurityPolicyService_CreateClusterSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1CreateClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterSecurityPolicyServiceCreateClusterSecurityPolicyBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/security_policy/{cluster_security_policy_id}": {
+      "get": {
+        "summary": "Get a cluster security policy by ID",
+        "operationId": "ClusterSecurityPolicyService_GetClusterSecurityPolicyByID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a cluster security policy",
+        "operationId": "ClusterSecurityPolicyService_DeleteClusterSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      },
+      "patch": {
+        "summary": "Update a cluster security policy",
+        "operationId": "ClusterSecurityPolicyService_UpdateClusterSecurityPolicy",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterSecurityPolicyServiceUpdateClusterSecurityPolicyBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/security_policy/{cluster_security_policy_id}/constraint": {
+      "get": {
+        "summary": "Get the constraint of a cluster security policy by ID",
+        "operationId": "ClusterSecurityPolicyService_GetClusterSecurityPolicyConstraintByID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterSecurityPolicyConstraintResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster_security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/cluster_security_policy/{cluster_security_policy_id}": {
+      "get": {
+        "summary": "Get a cluster security policy by global ID",
+        "operationId": "ClusterSecurityPolicyService_GetClusterSecurityPolicyByGlobalID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterSecurityPolicyResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_security_policy_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterSecurityPolicyService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_support": {
+      "get": {
+        "summary": "Get applications support of a cluster",
+        "operationId": "ClusterApplicationSpecService_GetClusterApplicationsSupport",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterApplicationsSupportResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_specs": {
+      "get": {
+        "summary": "List cluster application specs",
+        "operationId": "ClusterApplicationSpecService_ListClusterApplicationsSpecs",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListClusterApplicationsSpecsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_specs/{application_spec_identifier}": {
+      "get": {
+        "summary": "Get a cluster application spec",
+        "operationId": "ClusterApplicationSpecService_GetClusterApplicationSpec",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ClusterApplicationSpec"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "application_spec_identifier",
+            "description": "Name or uuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      },
+      "patch": {
+        "summary": "Update a cluster application spec",
+        "operationId": "ClusterApplicationSpecService_UpdateClusterApplicationSpec",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ClusterApplicationSpec"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "application_spec_identifier",
+            "description": "Name or uuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterApplicationSpecServiceUpdateClusterApplicationSpecBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_specs/{application_spec_identifier}/default_values": {
+      "get": {
+        "summary": "Get default values of a cluster application spec",
+        "operationId": "ClusterApplicationSpecService_GetClusterApplicationSpecDefaultValues",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterApplicationSpecDefaultValuesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "application_spec_identifier",
+            "description": "Name or uuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_specs/{application_spec_identifier}/schema": {
+      "get": {
+        "summary": "Get the schema of a cluster application spec",
+        "operationId": "ClusterApplicationSpecService_GetClusterApplicationSpecSchema",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetClusterApplicationSpecSchemaResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "application_spec_identifier",
+            "description": "Name or uuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/applications_specs/{application_spec_identifier}/values:reset": {
+      "post": {
+        "summary": "Reset values of a cluster application spec",
+        "operationId": "ClusterApplicationSpecService_ResetClusterApplicationSpecValues",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ClusterApplicationSpec"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "application_spec_identifier",
+            "description": "Name or uuid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ClusterApplicationSpecServiceResetClusterApplicationSpecValuesBody"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApplicationSpecService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/baremetal-groups": {
+      "get": {
+        "summary": "List baremetal groups",
+        "operationId": "BaremetalGroupService_ListBaremetalGroups",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/v1ListBaremetalGroupsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      },
+      "post": {
+        "summary": "Create a baremetal group",
+        "operationId": "BaremetalGroupService_CreateBaremetalGroup",
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/v1CreateBaremetalGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BaremetalGroupServiceCreateBaremetalGroupBody"
+            }
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/baremetal-groups/{baremetal_group_id}": {
+      "patch": {
+        "summary": "Update a baremetal group",
+        "operationId": "BaremetalGroupService_UpdateBaremetalGroup",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateBaremetalGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "labels": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "taints": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/v1Taint"
+                  }
+                },
+                "parallel_upgrade_chunk": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "key_pair": {
+                  "type": "string",
+                  "description": "The name of the SSH key pair whose public part is injected into the group's nodes via cloud-init.\nUpdating it does not recreate existing nodes."
+                },
+                "nodes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/v1DesiredBaremetalNode"
+                  },
+                  "description": "Desired list of the group's nodes. If the field is not present in update_mask,\nthe node list is left unchanged. An empty array detaches all nodes from the group.\nEach node is identified by node id, baremetal server id or server name;\npost_cloud_init is applied to newly added nodes only."
+                }
+              },
+              "required": [
+                "baremetal_group"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      },
+      "get": {
+        "summary": "Get a baremetal group",
+        "operationId": "BaremetalGroupService_GetBaremetalGroup",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/v1GetBaremetalGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a baremetal group",
+        "operationId": "BaremetalGroupService_DeleteBaremetalGroup",
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteBaremetalGroupResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/baremetal-groups/{baremetal_group_id}/nodes": {
+      "get": {
+        "summary": "List nodes of a baremetal group",
+        "operationId": "BaremetalGroupService_ListBaremetalGroupNodes",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/v1ListBaremetalGroupNodesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      },
+      "post": {
+        "summary": "Add a baremetal node",
+        "operationId": "BaremetalGroupService_AddBaremetalNode",
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/v1AddBaremetalNodeResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BaremetalGroupServiceAddBaremetalNodeBody"
+            }
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/clusters/{cluster_id}/baremetal-groups/{baremetal_group_id}/nodes/{baremetal_node_id}": {
+      "patch": {
+        "summary": "Update a baremetal node",
+        "operationId": "BaremetalGroupService_UpdateBaremetalNode",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/v1UpdateBaremetalNodeResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_node_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_node",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "post_cloud_init": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "baremetal_node"
+              ]
+            }
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a baremetal node",
+        "operationId": "BaremetalGroupService_DeleteBaremetalNode",
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "schema": {
+              "$ref": "#/definitions/v1DeleteBaremetalNodeResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_group_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baremetal_node_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "BaremetalGroupService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/quota-sets/{project_id}": {
+      "get": {
+        "summary": "Get the quota set of a project",
+        "operationId": "QuotaService_GetQuotaSetByProject",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetQuotaSetByProjectResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "description": "Unique project identifier.",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "resources",
+            "description": "List of resource names to get quotas for. If empty, returns all available quotas. List of available resource names: instances, instance_groups, clusters, vcpu, ram, disk_gigabytes, disk_count.",
+            "in": "query",
+            "required": false,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(instances|instance_groups|clusters|vcpu|ram|disk_gigabytes|disk_count)$"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "tags": [
+          "QuotaService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/pvc-volumes/{project_id}": {
+      "get": {
+        "summary": "List PVC volumes by project ID",
+        "operationId": "PVCVolumeService_ListPVCVolumesByProjectID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ListPVCVolumesByProjectIDResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>"
+          }
+        ],
+        "tags": [
+          "PVCVolumeService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/pvc-volumes/{project_id}/{volume_id}": {
+      "get": {
+        "summary": "Get a PVC volume by ID",
+        "operationId": "PVCVolumeService_GetPVCVolumesByID",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1GetPVCVolumesByIDResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>"
+          },
+          {
+            "name": "volume_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "PVCVolumeService"
+        ]
+      },
+      "delete": {
+        "summary": "Delete a PVC volume",
+        "operationId": "PVCVolumeService_DeletePVCVolumes",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1DeletePVCVolumesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "<a href='https://cloud.vk.ru/docs/ru/tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints-get-project-id'>ID of the project</a>"
+          },
+          {
+            "name": "volume_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "PVCVolumeService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/volumes-transfers/{volume_id}": {
+      "post": {
+        "summary": "Schedule a volume transfer",
+        "operationId": "VolumeTransferService_ScheduleVolumeTransfer",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ScheduleVolumeTransferResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "volume_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/VolumeTransferServiceScheduleVolumeTransferBody"
+            }
+          }
+        ],
+        "tags": [
+          "VolumeTransferService"
+        ]
+      }
+    },
+    "/managed-kubernetes/v1/volumes-reverse-transfers": {
+      "post": {
+        "summary": "Schedule a reverse volume transfer",
+        "operationId": "VolumeTransferService_ScheduleReverseVolumeTransfer",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/v1ScheduleReverseVolumeTransferResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/googlerpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/v1ScheduleReverseVolumeTransferRequest"
+            }
+          }
+        ],
+        "tags": [
+          "VolumeTransferService"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "BaremetalGroupServiceAddBaremetalNodeBody": {
+      "type": "object",
+      "properties": {
+        "node": {
+          "$ref": "#/definitions/v1BaremetalNode"
+        }
+      },
+      "required": [
+        "node"
+      ]
+    },
+    "BaremetalGroupServiceCreateBaremetalGroupBody": {
+      "type": "object",
+      "properties": {
+        "baremetal_group_spec": {
+          "$ref": "#/definitions/v1BaremetalGroupSpec"
+        }
+      },
+      "required": [
+        "baremetal_group_spec"
+      ]
+    },
+    "ClusterAddonDiagnosticSeverity": {
+      "type": "string",
+      "enum": [
+        "SEVERITY_UNSPECIFIED",
+        "INFO",
+        "WARNING",
+        "ERROR"
+      ],
+      "default": "SEVERITY_UNSPECIFIED"
+    },
+    "ClusterAddonServiceCreateClusterAddonBody": {
+      "type": "object",
+      "properties": {
+        "addon_id": {
+          "type": "string"
+        },
+        "addon_version_id": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "values": {
+          "type": "string"
+        },
+        "addon_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "addon_id",
+        "addon_version_id",
+        "namespace",
+        "values"
+      ]
+    },
+    "ClusterAddonServiceUpdateClusterAddonBody": {
+      "type": "object",
+      "properties": {
+        "addon_version_id": {
+          "type": "string"
+        },
+        "values": {
+          "type": "string"
+        }
+      }
+    },
+    "ClusterApplicationSpecServiceResetClusterApplicationSpecValuesBody": {
+      "type": "object",
+      "properties": {
+        "resource_version": {
+          "type": "string",
+          "format": "int64"
+        }
+      }
+    },
+    "ClusterApplicationSpecServiceUpdateClusterApplicationSpecBody": {
+      "type": "object",
+      "properties": {
+        "resource_version": {
+          "type": "string",
+          "format": "int64"
+        },
+        "user_values": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "user_values"
+      ]
+    },
+    "ClusterSecurityPolicyServiceCreateClusterSecurityPolicyBody": {
+      "type": "object",
+      "properties": {
+        "security_policy_id": {
+          "type": "string"
+        },
+        "policy_settings": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "security_policy_id",
+        "policy_settings",
+        "namespace",
+        "enabled"
+      ]
+    },
+    "ClusterSecurityPolicyServiceUpdateClusterSecurityPolicyBody": {
+      "type": "object",
+      "properties": {
+        "policy_settings": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ClusterServiceScaleControlPlaneBody": {
+      "type": "object",
+      "properties": {
+        "master_spec": {
+          "$ref": "#/definitions/v1MasterSpec"
+        }
+      },
+      "required": [
+        "master_spec"
+      ]
+    },
+    "ClusterServiceTurnOffClusterBody": {
+      "type": "object"
+    },
+    "ClusterServiceTurnOnClusterBody": {
+      "type": "object"
+    },
+    "ClusterServiceUpdateClusterBody": {
+      "type": "object",
+      "properties": {
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ClusterServiceUpdateListenerBody": {
+      "type": "object",
+      "properties": {
+        "allowed_cidrs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ClusterServiceUpgradeClusterBody": {
+      "type": "object",
+      "properties": {
+        "target_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "target_version"
+      ]
+    },
+    "DeploymentTypeMultiZonalDeployment": {
+      "type": "object",
+      "properties": {
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "DeploymentTypeZonalDeployment": {
+      "type": "object",
+      "properties": {
+        "zone": {
+          "type": "string"
+        }
+      }
+    },
+    "DiskTypeCinderVolumeType": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "type",
+        "size"
+      ]
+    },
+    "LoadBalancerConfigOctaviaEngine": {
+      "type": "object",
+      "properties": {
+        "loadbalancer_subnet_id": {
+          "type": "string"
+        },
+        "enable_public_ip": {
+          "type": "boolean"
+        },
+        "allowed_cidrs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "loadbalancer_subnet_id"
+      ]
+    },
+    "MasterEndpoint": {
+      "type": "object",
+      "properties": {
+        "internal_ipv4_endpoint": {
+          "type": "string"
+        },
+        "external_ipv4_endpoint": {
+          "type": "string"
+        }
+      }
+    },
+    "NetworkConfigNetworkEngine": {
+      "type": "object",
+      "properties": {
+        "sprut_engine": {
+          "$ref": "#/definitions/NetworkEngineSprutEngine"
+        }
+      }
+    },
+    "NetworkConfigNetworkPlugin": {
+      "type": "object",
+      "properties": {
+        "calico": {
+          "$ref": "#/definitions/NetworkPluginCalico"
+        },
+        "cilium": {
+          "$ref": "#/definitions/NetworkPluginCilium"
+        }
+      }
+    },
+    "NetworkEngineSprutEngine": {
+      "type": "object",
+      "properties": {
+        "network_id": {
+          "type": "string"
+        },
+        "subnet_id": {
+          "type": "string"
+        },
+        "external_network_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "network_id",
+        "subnet_id"
+      ]
+    },
+    "NetworkPluginCalico": {
+      "type": "object",
+      "properties": {
+        "pods_ipv4_cidr": {
+          "type": "string"
+        }
+      }
+    },
+    "NetworkPluginCilium": {
+      "type": "object",
+      "properties": {
+        "pods_ipv4_cidr": {
+          "type": "string"
+        }
+      }
+    },
+    "NodeGroupServiceDeleteNodesBody": {
+      "type": "object",
+      "properties": {
+        "node_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ScaleSpecAutoScale": {
+      "type": "object",
+      "properties": {
+        "min_size": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "max_size": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "ScaleSpecFixedScale": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "VmEngineBareMetalEngine": {
+      "type": "object",
+      "properties": {
+        "flavor_id": {
+          "type": "string"
+        }
+      }
+    },
+    "VolumeTransferServiceScheduleVolumeTransferBody": {
+      "type": "object"
+    },
+    "googlerpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    },
+    "k8sv1Node": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1NodeStatus"
+        },
+        "zone": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        }
+      }
+    },
+    "k8sv1NodeGroup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Output only. The node group's id.",
+          "readOnly": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Output only. The node group's name.",
+          "readOnly": true
+        },
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Node group's nodes can be deployed in the following zones."
+        },
+        "scale_spec": {
+          "$ref": "#/definitions/v1ScaleSpec",
+          "title": "ScaleSpec can be one of two types:\nFixedScale if user don't want to scale node group\nAutoScale if user wants to scale node group"
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "k8s node's labels we want to set on nodes in this node group"
+        },
+        "taints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1Taint"
+          },
+          "title": "k8s node's taints we want to set on nodes in this node group"
+        },
+        "vm_engine": {
+          "$ref": "#/definitions/v1VmEngine",
+          "description": "Output only. The node group's vm engine.",
+          "readOnly": true
+        },
+        "parallel_upgrade_chunk": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "cluster_id": {
+          "type": "string",
+          "readOnly": true
+        },
+        "disk_type": {
+          "$ref": "#/definitions/v1DiskType"
+        },
+        "uuid": {
+          "type": "string",
+          "readOnly": true
+        },
+        "extra_security_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "parallel_upgrade_chunk",
+        "disk_type"
+      ]
+    },
+    "k8sv1Taint": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string"
+        }
+      }
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "v1AddBaremetalNodeResponse": {
+      "type": "object"
+    },
+    "v1Addon": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "versions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1AddonVersionShort"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "versions"
+      ]
+    },
+    "v1AddonVersion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "addon_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "values_template": {
+          "type": "string"
+        },
+        "supported_kube_versions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1AddonVersionDependency"
+          }
+        },
+        "is_deprecated": {
+          "type": "boolean"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "addon_id",
+        "version",
+        "values_template",
+        "supported_kube_versions",
+        "dependencies",
+        "is_deprecated",
+        "name"
+      ]
+    },
+    "v1AddonVersionDependency": {
+      "type": "object",
+      "properties": {
+        "addon_id": {
+          "type": "string"
+        },
+        "addon_version_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "addon_id",
+        "addon_version_id"
+      ]
+    },
+    "v1AddonVersionShort": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "is_deprecated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "is_deprecated"
+      ]
+    },
+    "v1ApplicationType": {
+      "type": "string",
+      "enum": [
+        "CLUSTER_APP_UNSPECIFIED",
+        "SYSTEM_CLUSTER_APP",
+        "USER_CLUSTER_APP"
+      ],
+      "default": "CLUSTER_APP_UNSPECIFIED"
+    },
+    "v1BaremetalGroup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "readOnly": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Output only. The node group's name.",
+          "readOnly": true
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "taints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1Taint"
+          }
+        },
+        "parallel_upgrade_chunk": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1BaremetalNode"
+          }
+        },
+        "uuid": {
+          "type": "string",
+          "readOnly": true
+        },
+        "key_pair": {
+          "type": "string",
+          "description": "The name of the SSH key pair whose public part is injected into the group's nodes via cloud-init."
+        }
+      },
+      "required": [
+        "name",
+        "parallel_upgrade_chunk",
+        "nodes"
+      ]
+    },
+    "v1BaremetalGroupSpec": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Output only. The node group's name.",
+          "readOnly": true
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "taints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1Taint"
+          }
+        },
+        "parallel_upgrade_chunk": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1BaremetalNode"
+          }
+        },
+        "key_pair": {
+          "type": "string",
+          "description": "The name of the SSH key pair whose public part is injected into the group's nodes via cloud-init."
+        }
+      },
+      "required": [
+        "name",
+        "parallel_upgrade_chunk",
+        "nodes"
+      ]
+    },
+    "v1BaremetalNode": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "post_cloud_init": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1BaremetalNodeStatus",
+          "readOnly": true
+        },
+        "server_id": {
+          "type": "string",
+          "readOnly": true
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "v1BaremetalNodeStatus": {
+      "type": "string",
+      "enum": [
+        "STATUS_UNSPECIFIED",
+        "PENDING",
+        "PROVISIONING",
+        "DEPROVISIONING",
+        "BOOTING",
+        "RUNNING"
+      ],
+      "default": "STATUS_UNSPECIFIED"
+    },
+    "v1Cluster": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "string",
+          "title": "UUID from external services like Extension Manager in Core Platform"
+        },
+        "name": {
+          "type": "string",
+          "title": "Kubernetes cluster's name"
+        },
+        "version": {
+          "type": "string",
+          "description": "Kubernetes cluster's version."
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "$ref": "#/definitions/v1ClusterStatus",
+          "title": "Cluster's status"
+        },
+        "network_config": {
+          "$ref": "#/definitions/v1NetworkConfig"
+        },
+        "load_balancer_config": {
+          "$ref": "#/definitions/v1LoadBalancerConfig"
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Cluster's labels"
+        },
+        "node_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1NodeGroup"
+          }
+        },
+        "master": {
+          "$ref": "#/definitions/v1Master"
+        },
+        "deployment_type": {
+          "$ref": "#/definitions/v1DeploymentType"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "external_ip": {
+          "type": "string"
+        },
+        "internal_ip": {
+          "type": "string"
+        },
+        "api_address": {
+          "type": "string"
+        },
+        "insecure_registries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string",
+          "title": "necessary for compatibility API and tfstate"
+        },
+        "baremetal_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1BaremetalGroup"
+          }
+        }
+      }
+    },
+    "v1ClusterAddon": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "cluster_id": {
+          "type": "string"
+        },
+        "addon_id": {
+          "type": "string"
+        },
+        "addon_version_id": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "values": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1ClusterAddonStatus"
+        },
+        "diagnostics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1ClusterAddonDiagnostic"
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "addon_name": {
+          "type": "string"
+        },
+        "last_success_values": {
+          "type": "string"
+        },
+        "base_addon_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "cluster_id",
+        "addon_id",
+        "addon_version_id",
+        "namespace",
+        "values",
+        "status",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "v1ClusterAddonDiagnostic": {
+      "type": "object",
+      "properties": {
+        "severity": {
+          "$ref": "#/definitions/ClusterAddonDiagnosticSeverity"
+        },
+        "message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "severity",
+        "message"
+      ]
+    },
+    "v1ClusterAddonShort": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "addon_id": {
+          "type": "string"
+        },
+        "addon_version_id": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1ClusterAddonStatus"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "addon_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "addon_id",
+        "addon_version_id",
+        "status",
+        "namespace",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "v1ClusterAddonStatus": {
+      "type": "string",
+      "enum": [
+        "STATUS_UNSPECIFIED",
+        "INSTALLING",
+        "INSTALLED",
+        "UPDATING",
+        "DELETING",
+        "DELETED",
+        "ERROR"
+      ],
+      "default": "STATUS_UNSPECIFIED"
+    },
+    "v1ClusterApplicationSpec": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "cluster_id": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1ClusterApplicationSpecStatus"
+        },
+        "resource_version": {
+          "type": "string",
+          "format": "int64",
+          "readOnly": true
+        },
+        "app_template_id": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/v1ApplicationType"
+        },
+        "user_values": {
+          "type": "object"
+        },
+        "creation_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "readOnly": true
+        },
+        "update_timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "status_message": {
+          "type": "string",
+          "readOnly": true
+        },
+        "status_message_code": {
+          "type": "string",
+          "format": "int64",
+          "readOnly": true
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "cluster_id",
+        "status",
+        "app_template_id",
+        "type",
+        "user_values",
+        "update_timestamp",
+        "labels"
+      ]
+    },
+    "v1ClusterApplicationSpecShort": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/v1ClusterApplicationSpecStatus"
+        },
+        "resource_version": {
+          "type": "string",
+          "format": "int64",
+          "readOnly": true
+        },
+        "update_timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status_message": {
+          "type": "string",
+          "readOnly": true
+        },
+        "status_message_code": {
+          "type": "string",
+          "format": "int64",
+          "readOnly": true
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "status",
+        "update_timestamp"
+      ]
+    },
+    "v1ClusterApplicationSpecStatus": {
+      "type": "string",
+      "enum": [
+        "APP_SPEC_UNSPECIFIED",
+        "PENDING",
+        "APPLIED",
+        "RUNNING",
+        "FAILED"
+      ],
+      "default": "APP_SPEC_UNSPECIFIED"
+    },
+    "v1ClusterSecurityPolicy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "cluster_id": {
+          "type": "string"
+        },
+        "security_policy_id": {
+          "type": "string"
+        },
+        "policy_settings": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "policy": {
+          "$ref": "#/definitions/v1SecurityPolicy"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "cluster_id",
+        "security_policy_id",
+        "namespace",
+        "enabled",
+        "policy",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "v1ClusterSecurityPolicyConstraint": {
+      "type": "object",
+      "properties": {
+        "constraint_template": {
+          "type": "string",
+          "format": "byte"
+        },
+        "constraint": {
+          "type": "string",
+          "format": "byte"
+        }
+      },
+      "required": [
+        "constraint_template"
+      ]
+    },
+    "v1ClusterStatus": {
+      "type": "string",
+      "enum": [
+        "STATUS_UNSPECIFIED",
+        "PROVISIONING",
+        "RUNNING",
+        "RECONCILING",
+        "DELETING",
+        "TURNING_ON",
+        "TURNING_OFF",
+        "SHUTOFF"
+      ],
+      "default": "STATUS_UNSPECIFIED",
+      "description": " - PROVISIONING: Cluster is waiting for resource allocation.\n - RUNNING: Cluster is running.\n - RECONCILING: Cluster is being reconciled.\n - DELETING: Cluster is being deleted.\n - TURNING_ON: Cluster is turning on.\n - TURNING_OFF: Cluster is turning off.\n - SHUTOFF: Cluster is turned off."
+    },
+    "v1CreateBaremetalGroupResponse": {
+      "type": "object",
+      "properties": {
+        "baremetal_group_id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1CreateClusterAddonResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1CreateClusterRequest": {
+      "type": "object",
+      "properties": {
+        "uuid": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "master_spec": {
+          "$ref": "#/definitions/v1MasterSpec"
+        },
+        "deployment_type": {
+          "$ref": "#/definitions/v1DeploymentType"
+        },
+        "network_config": {
+          "$ref": "#/definitions/v1NetworkConfig"
+        },
+        "load_balancer_config": {
+          "$ref": "#/definitions/v1LoadBalancerConfig"
+        },
+        "node_group_specs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1NodeGroupSpec"
+          }
+        },
+        "insecure_registries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "project_id",
+        "name",
+        "version",
+        "master_spec",
+        "deployment_type",
+        "network_config"
+      ]
+    },
+    "v1CreateClusterResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1CreateClusterSecurityPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1CreateNodeGroupRequest": {
+      "type": "object",
+      "properties": {
+        "cluster_id": {
+          "type": "string"
+        },
+        "node_group_spec": {
+          "$ref": "#/definitions/v1NodeGroupSpec"
+        }
+      },
+      "required": [
+        "cluster_id",
+        "node_group_spec"
+      ]
+    },
+    "v1CreateNodeGroupResponse": {
+      "type": "object",
+      "properties": {
+        "node_group_id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1DeleteBaremetalGroupResponse": {
+      "type": "object"
+    },
+    "v1DeleteBaremetalNodeResponse": {
+      "type": "object"
+    },
+    "v1DeleteClusterAddonResponse": {
+      "type": "object"
+    },
+    "v1DeleteClusterResponse": {
+      "type": "object"
+    },
+    "v1DeleteClusterSecurityPolicyResponse": {
+      "type": "object"
+    },
+    "v1DeleteNodeGroupResponse": {
+      "type": "object"
+    },
+    "v1DeleteNodesResponse": {
+      "type": "object"
+    },
+    "v1DeletePVCVolumesResponse": {
+      "type": "object"
+    },
+    "v1DeploymentType": {
+      "type": "object",
+      "properties": {
+        "zonal_deployment": {
+          "$ref": "#/definitions/DeploymentTypeZonalDeployment"
+        },
+        "multi_zonal_deployment": {
+          "$ref": "#/definitions/DeploymentTypeMultiZonalDeployment"
+        }
+      }
+    },
+    "v1DesiredBaremetalNode": {
+      "type": "object",
+      "properties": {
+        "server_id": {
+          "type": "string"
+        },
+        "post_cloud_init": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "server_id"
+      ]
+    },
+    "v1DiskInfo": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "type",
+        "size"
+      ]
+    },
+    "v1DiskType": {
+      "type": "object",
+      "properties": {
+        "cinder_volume_type": {
+          "$ref": "#/definitions/DiskTypeCinderVolumeType"
+        }
+      }
+    },
+    "v1GetBaremetalGroupResponse": {
+      "type": "object",
+      "properties": {
+        "baremetal_group": {
+          "$ref": "#/definitions/v1BaremetalGroup"
+        }
+      }
+    },
+    "v1GetClusterApplicationSpecDefaultValuesResponse": {
+      "type": "object",
+      "properties": {
+        "default_user_values": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "default_user_values"
+      ]
+    },
+    "v1GetClusterApplicationSpecSchemaResponse": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema"
+      ]
+    },
+    "v1GetClusterApplicationsSupportResponse": {
+      "type": "object",
+      "properties": {
+        "applications_supported": {
+          "type": "boolean"
+        }
+      }
+    },
+    "v1GetClusterSecurityPolicyConstraintResponse": {
+      "type": "object",
+      "properties": {
+        "cluster_security_policy_constraint": {
+          "$ref": "#/definitions/v1ClusterSecurityPolicyConstraint"
+        }
+      }
+    },
+    "v1GetClusterSecurityPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "cluster_security_policy": {
+          "$ref": "#/definitions/v1ClusterSecurityPolicy"
+        }
+      }
+    },
+    "v1GetNodeGroupByNameResponse": {
+      "type": "object",
+      "properties": {
+        "node_group": {
+          "$ref": "#/definitions/k8sv1NodeGroup"
+        }
+      }
+    },
+    "v1GetNodeGroupResponse": {
+      "type": "object",
+      "properties": {
+        "node_group": {
+          "$ref": "#/definitions/k8sv1NodeGroup"
+        }
+      }
+    },
+    "v1GetNodesByNodeGroupResponse": {
+      "type": "object",
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1Node"
+          }
+        }
+      }
+    },
+    "v1GetPVCVolumesByIDResponse": {
+      "type": "object",
+      "properties": {
+        "pvc_volume": {
+          "$ref": "#/definitions/v1PVCVolumeBrief"
+        }
+      }
+    },
+    "v1GetQuotaSetByProjectResponse": {
+      "type": "object",
+      "example": {
+        "project_id": "8d82db11502e4d878ba5a407260eb12b",
+        "quota": {
+          "ram": {
+            "limit": 400,
+            "in_use": 36
+          },
+          "vcpu": {
+            "limit": 200,
+            "in_use": 24
+          },
+          "instances": {
+            "limit": 50,
+            "in_use": 3
+          },
+          "instance_groups": {
+            "limit": 10,
+            "in_use": 1
+          },
+          "clusters": {
+            "limit": 10,
+            "in_use": 1
+          },
+          "disk_gigabytes": {
+            "limit": 2000,
+            "in_use": 30
+          },
+          "disk_count": {
+            "limit": 100,
+            "in_use": 1
+          }
+        }
+      },
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "description": "Unique project identifier."
+        },
+        "quota": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/v1ProjectQuota"
+          },
+          "description": "Dictionary of quota entries for the project."
+        }
+      },
+      "required": [
+        "project_id",
+        "quota"
+      ]
+    },
+    "v1GetTargetMasterFlavorResponse": {
+      "type": "object",
+      "properties": {
+        "flavor_id": {
+          "type": "string"
+        },
+        "flavor_ids_by_zone": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/v1ZoneFlavorIds"
+          },
+          "description": "Mapping of availability zone to master flavor IDs available in that zone."
+        }
+      },
+      "required": [
+        "flavor_id"
+      ]
+    },
+    "v1K8SVersion": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListAddonsResponse": {
+      "type": "object",
+      "properties": {
+        "addons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1Addon"
+          }
+        }
+      }
+    },
+    "v1ListBaremetalGroupNodesResponse": {
+      "type": "object",
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1BaremetalNode"
+          }
+        }
+      }
+    },
+    "v1ListBaremetalGroupsResponse": {
+      "type": "object",
+      "properties": {
+        "baremetal_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1BaremetalGroup"
+          }
+        },
+        "next_page_token": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListClusterAddonsResponse": {
+      "type": "object",
+      "properties": {
+        "cluster_addons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1ClusterAddonShort"
+          }
+        }
+      }
+    },
+    "v1ListClusterApplicationsSpecsResponse": {
+      "type": "object",
+      "properties": {
+        "application_specs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1ClusterApplicationSpecShort"
+          }
+        }
+      }
+    },
+    "v1ListClusterSecurityPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "cluster_security_policies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1ClusterSecurityPolicy"
+          }
+        },
+        "next_page_token": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListClustersResponse": {
+      "type": "object",
+      "properties": {
+        "clusters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1Cluster"
+          }
+        },
+        "next_page_token": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListK8SVersionsResponse": {
+      "type": "object",
+      "properties": {
+        "k8s_versions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1K8SVersion"
+          }
+        }
+      }
+    },
+    "v1ListNodeGroupsByProjectIDResponse": {
+      "type": "object",
+      "properties": {
+        "node_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1NodeGroup"
+          }
+        },
+        "next_page_token": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListNodeGroupsResponse": {
+      "type": "object",
+      "properties": {
+        "node_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1NodeGroup"
+          }
+        },
+        "next_page_token": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ListPVCVolumesByProjectIDResponse": {
+      "type": "object",
+      "properties": {
+        "pvc_volumes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1PVCVolume"
+          }
+        }
+      }
+    },
+    "v1ListSecurityPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "security_policies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1SecurityPolicy"
+          }
+        }
+      }
+    },
+    "v1ListStorageClassResponse": {
+      "type": "object",
+      "properties": {
+        "storage_classes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1StorageClass"
+          }
+        }
+      }
+    },
+    "v1LoadBalancerConfig": {
+      "type": "object",
+      "properties": {
+        "octavia_engine": {
+          "$ref": "#/definitions/LoadBalancerConfigOctaviaEngine"
+        }
+      }
+    },
+    "v1Master": {
+      "type": "object",
+      "properties": {
+        "replicas": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "endpoint": {
+          "$ref": "#/definitions/MasterEndpoint",
+          "description": "Endpoint can be used if cluster doesn't have load balancer. Otherwise it will be empty."
+        },
+        "vm_engine": {
+          "$ref": "#/definitions/v1VmEngine"
+        },
+        "disks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1DiskInfo"
+          }
+        }
+      },
+      "required": [
+        "disks"
+      ]
+    },
+    "v1MasterSpec": {
+      "type": "object",
+      "properties": {
+        "engine": {
+          "$ref": "#/definitions/v1VmEngine"
+        },
+        "replicas": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "required": [
+        "engine"
+      ]
+    },
+    "v1NetworkConfig": {
+      "type": "object",
+      "properties": {
+        "plugin": {
+          "$ref": "#/definitions/NetworkConfigNetworkPlugin"
+        },
+        "engine": {
+          "$ref": "#/definitions/NetworkConfigNetworkEngine"
+        }
+      },
+      "required": [
+        "plugin",
+        "engine"
+      ]
+    },
+    "v1NodeGroupSpec": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "vm_engine": {
+          "$ref": "#/definitions/v1VmEngine"
+        },
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scale_spec": {
+          "$ref": "#/definitions/v1ScaleSpec"
+        },
+        "labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "taints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/k8sv1Taint"
+          }
+        },
+        "parallel_upgrade_chunk": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "disk_type": {
+          "$ref": "#/definitions/v1DiskType"
+        },
+        "extra_security_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "zones",
+        "scale_spec",
+        "parallel_upgrade_chunk",
+        "disk_type"
+      ]
+    },
+    "v1NodeStatus": {
+      "type": "string",
+      "enum": [
+        "STATUS_UNSPECIFIED",
+        "ACTIVE",
+        "ERROR",
+        "BOOTING",
+        "UNKNOWN"
+      ],
+      "default": "STATUS_UNSPECIFIED"
+    },
+    "v1PVCVolume": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "cluster_id": {
+          "type": "string"
+        },
+        "pv_name": {
+          "type": "string"
+        },
+        "pvc_name": {
+          "type": "string"
+        },
+        "namespace": {
+          "type": "string"
+        },
+        "size": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "status": {
+          "type": "string"
+        },
+        "disk_type": {
+          "type": "string"
+        },
+        "availability_zone": {
+          "type": "string"
+        },
+        "attachments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/v1VolumeAttachment"
+          }
+        },
+        "cluster_name": {
+          "type": "string"
+        },
+        "cluster_labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "cluster_id",
+        "pv_name",
+        "pvc_name",
+        "namespace",
+        "size",
+        "status",
+        "disk_type",
+        "availability_zone",
+        "attachments"
+      ]
+    },
+    "v1PVCVolumeBrief": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ProjectQuota": {
+      "type": "object",
+      "example": {
+        "limit": 400,
+        "in_use": 36
+      },
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Maximum allowed resource limit. Exceeding it will result in denial of service."
+        },
+        "in_use": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Current resource consumption."
+        }
+      },
+      "required": [
+        "limit",
+        "in_use"
+      ]
+    },
+    "v1ScaleControlPlaneResponse": {
+      "type": "object"
+    },
+    "v1ScaleSpec": {
+      "type": "object",
+      "properties": {
+        "fixed_scale": {
+          "$ref": "#/definitions/ScaleSpecFixedScale"
+        },
+        "auto_scale": {
+          "$ref": "#/definitions/ScaleSpecAutoScale"
+        }
+      }
+    },
+    "v1ScheduleReverseVolumeTransferRequest": {
+      "type": "object",
+      "properties": {
+        "volume_id": {
+          "type": "string"
+        },
+        "cluster_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "volume_id",
+        "cluster_id"
+      ]
+    },
+    "v1ScheduleReverseVolumeTransferResponse": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "v1ScheduleVolumeTransferResponse": {
+      "type": "object"
+    },
+    "v1SecurityPolicy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "settings_description": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "settings_description",
+        "version"
+      ]
+    },
+    "v1StorageClass": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "zones"
+      ]
+    },
+    "v1Taint": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "effect": {
+          "type": "string"
+        }
+      }
+    },
+    "v1TurnOffClusterResponse": {
+      "type": "object"
+    },
+    "v1TurnOnClusterResponse": {
+      "type": "object"
+    },
+    "v1UpdateBaremetalGroupResponse": {
+      "type": "object"
+    },
+    "v1UpdateBaremetalNodeResponse": {
+      "type": "object"
+    },
+    "v1UpdateClusterAddonResponse": {
+      "type": "object"
+    },
+    "v1UpdateClusterResponse": {
+      "type": "object"
+    },
+    "v1UpdateClusterSecurityPolicyResponse": {
+      "type": "object",
+      "properties": {
+        "cluster_security_policy": {
+          "$ref": "#/definitions/v1ClusterSecurityPolicy"
+        }
+      }
+    },
+    "v1UpdateListenerResponse": {
+      "type": "object"
+    },
+    "v1UpdateNodeGroupResponse": {
+      "type": "object"
+    },
+    "v1UpgradeClusterResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1VmEngine": {
+      "type": "object",
+      "properties": {
+        "nova_engine": {
+          "$ref": "#/definitions/v1VmEngineNovaEngine"
+        },
+        "bare_metal_engine": {
+          "$ref": "#/definitions/VmEngineBareMetalEngine"
+        }
+      }
+    },
+    "v1VmEngineNovaEngine": {
+      "type": "object",
+      "properties": {
+        "flavor_id": {
+          "type": "string"
+        }
+      }
+    },
+    "v1VolumeAttachment": {
+      "type": "object",
+      "properties": {
+        "server_id": {
+          "type": "string"
+        },
+        "server_name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "server_id",
+        "server_name"
+      ]
+    },
+    "v1ZoneFlavorIds": {
+      "type": "object",
+      "properties": {
+        "flavor_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "flavor_ids"
+      ]
+    }
+  }
+}

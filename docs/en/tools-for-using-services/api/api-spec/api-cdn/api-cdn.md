@@ -1,6 +1,6 @@
 # {heading(CDN)[id=api-spec-cdn]}
 
-The [CDN](../../../../networks/cdn)  REST API supports managing and monitoring CDN resources:
+The [CDN](../../../../networks/cdn) REST API supports managing and monitoring CDN resources:
 
 - viewing the canonical domain record (CNAME) of the current account;
 - creating and managing origin groups;
@@ -11,14 +11,14 @@ The [CDN](../../../../networks/cdn)  REST API supports managing and monitoring C
 - purging the CDN server cache;
 - monitoring the health of CDN resources.
 
-{cut(Obtaining an endpoint, authorization, and authentication)}
+{cut(Getting the endpoint, authorization, and authentication)}
 
-1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. [Enable](../../rest-api/enable-api) API access if it has not been done yet.
+1. [Go to](https://msk.cloud.vk.com/app) your {var(cloud)} management console.
+1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Enable]} API access if it has not been done yet.
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API access** tab.
-1. [Get](../../rest-api/case-keystone-token) the `X-Auth-Token` access token. Use the token in the header when sending requests.
-1. Use the endpoint `https://msk.cloud.vk.com/api/cdn/api/v1/` in the request URL.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
+1. In the query string, use the endpoint `https://msk.cloud.vk.com/api/cdn/api/v1/`.
 
 Request example:
 
@@ -30,7 +30,7 @@ curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547
 {/cut}
 
 {note:info}
-You can download the original specification in JSON format using this [link](assets/api-cdn.json "download").
+You can download the source JSON specification via the [link](assets/api-cdn.json "download").
 {/note}
 
 ![{swagger}](assets/api-cdn.json)

@@ -12,15 +12,15 @@ The REST API of {linkto(../../../../../networks/dns/instructions/publicdns#dns-p
 
 {cut(Getting the endpoint, authorization, and authentication)}
 
-1. [Go to](https://msk.cloud.vk.ru/app) the {var(cloud)} management console.
-1. {linkto(../../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Enable]} two-factor authentication if you have not done so yet.
-1. {linkto(../../../rest-api/enable-api#rest-api-enable-activate)[text=Enable]} API access if you have not done so yet.
+1. [Go to](https://msk.cloud.vk.ru/app) your {var(cloud)} management console.
+1. {linkto(../../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Enable]} two-factor authentication if it has not been done yet.
+1. {linkto(../../../rest-api/enable-api#rest-api-enable-activate)[text=Enable]} API access if it has not been done yet.
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.
 1. In the **OpenStack service** block, find the **Publicdns** endpoint.
 1. {linkto(../../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
 
-Example request:
+Request example:
 
 ```curl
 curl --location "https://mcs.mail.ru/public-dns/v2/dns/" \
@@ -30,7 +30,7 @@ curl --location "https://mcs.mail.ru/public-dns/v2/dns/" \
 {/cut}
 
 {note:info}
-You can download the original JSON specification using this [link](assets/public-dns-api.json "download").
+You can download the source JSON specification via the [link](assets/public-dns-api.json "download").
 {/note}
 
 ![{swagger}](assets/public-dns-api.json)

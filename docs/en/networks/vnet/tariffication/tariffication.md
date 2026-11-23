@@ -11,7 +11,7 @@ The cost of these resources is displayed in your personal VK Cloud account as pa
 Charged:
 
 - Public IP addresses:
-  - The public IP address assigned to the port if the port is connected to the `ext-net' network.
+  - The public IP address assigned to the port if the port is connected to the `ext-net` or `internet` network.
   - Existing floating public IP addresses (even if not assigned to any port).
 
 - [Standard and service](../../balancing/concepts/load-balancer#types_of_load_balancers) load balancers.

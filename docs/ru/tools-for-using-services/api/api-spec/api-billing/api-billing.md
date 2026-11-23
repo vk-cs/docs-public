@@ -7,9 +7,9 @@
 1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Включите]} доступ по API, если это еще не сделано.
 1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Получите]} токен доступа `X-Auth-Token`. Используйте токен в заголовке при отправке запросов.
-1. В строке запроса используйте эндпоинт `https://msk.cloud.vk.ru/billing/public/v1/projects/<PID_ПРОЕКТА>/balances/amount` с указанием {linkto(/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid)[text=идентификатора]} (PID) своего проекта.
+1. Используйте эндпоинт `https://msk.cloud.vk.ru/billing/public/v1/projects/<PID_ПРОЕКТА>/balances/amount` в строке запроса с указанием {linkto(/ru/tools-for-using-services/vk-cloud-account/instructions/project-settings/manage#vk-cloud-account-project-pid)[text=идентификатора]} (PID) своего проекта.
 
-Пример запроса: 
+Пример запроса:
 
 ```console
 curl -X GET "https://msk.cloud.vk.ru/billing/public/v1/projects/mcs1234567890/balances/amount" \

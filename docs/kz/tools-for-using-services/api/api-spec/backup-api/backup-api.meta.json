@@ -4,7 +4,7 @@
   "metaDescription": "Бұлттық сервистерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарын әзірлеу үшін жалпыға қолжетімді API-сипаттамалар. Cloud Backup сервисінің OpenAPI-сипаттамасы",
   "sectionTitle": "Cloud Backup",
   "icon": "",
-  "weight": 2,
+  "weight": 1,
   "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
   "build": {
     "for": [

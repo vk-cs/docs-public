@@ -5,22 +5,22 @@
 - binding and unbinding a port to an Anycast IP address
 - adding health checks for bound ports
 
-{cut(Obtaining an endpoint, authorization, and authentication)}
+{cut(Getting the endpoint, authorization, and authentication)}
 
-1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. [Enable](/en/access/iam/instructions/manage-2fa#enabling_2fa) two-factor authentication if it hasn't been done yet.
-1. Enable API access if it hasn't been done yet:
+1. [Go to](https://msk.cloud.vk.com/app) your {var(cloud)} management console.
+1. {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=Enable]} two-factor authentication if it has not been done yet.
+1. Enable API access if it has not been done yet:
 
    1. Click the username in the page header and select **Security**.
    1. Turn on API access.
 
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.
-1. In the **OpenStack Service** block, find the **Neutron** endpoint.
-1. [Obtain](/en/tools-for-using-services/api/rest-api/case-keystone-token) the `X-Auth-Token` access token. Use the token in the header when sending requests.
-1. Use the URL `<OS_NEUTRON_URL>/v2.0/` in the request line. Here, `<OS_NEUTRON_URL>` is the **Neutron** endpoint.
+1. In the **OpenStack service** block, find the **Neutron** endpoint.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
+1. In the query string, use the URL `<OS_NEUTRON_URL>/v2.0/`, where `<OS_NEUTRON_URL>` is the **Neutron** endpoint.
 
-Example request:
+Request example:
 
 ```curl
 curl --location "https://infra.mail.ru:9696/v2.0/anycastips" \
@@ -31,9 +31,7 @@ curl --location "https://infra.mail.ru:9696/v2.0/anycastips" \
 {/cut}
 
 {note:info}
-
-You can download the original JSON specification via this [link](assets/api-anycast.json "download").
-
+You can download the source JSON specification via the [link](assets/api-anycast.json "download").
 {/note}
 
 ![{swagger}](assets/api-anycast.json)

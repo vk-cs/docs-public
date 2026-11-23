@@ -34,10 +34,11 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 ### Managed Containers
 
-| Endpoint          | Address                                    | Purpose                                                                     |
-|-------------------|--------------------------------------------|-----------------------------------------------------------------------------|
-| Magnum            | https://infra.mail.ru:9511/v1              | Managing [Managed Containers](/en/kubernetes/k8s)                             |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons | Managing Managed Containers [add-ons](/en/kubernetes/k8s/instructions/addons) |
+| Endpoint           | Address                                                       | Purpose                                                                                                 |
+|--------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Magnum             | https://msk.cloud.vk.ru/infra/kubernetes/v1                   | Managing [first-generation](/en/kubernetes/k8s) Kubernetes clusters in the Managed Containers service   |
+| Managed Kubernetes | https://msk.cloud.vk.ru/infra/container/managed-kubernetes/v1 | Managing [second-generation](/en/kubernetes/mk8s) Kubernetes clusters in the Managed Containers service |
+| Magnum-addons      | https://mcs.mail.ru/infra/container/addons                    | Managing Managed Containers [add-ons](/en/kubernetes/k8s/instructions/addons)                           |
 
 ### Cloud Networks
 

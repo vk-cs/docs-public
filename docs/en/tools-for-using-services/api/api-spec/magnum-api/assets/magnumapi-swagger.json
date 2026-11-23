@@ -7,17 +7,67 @@
   },
   "servers": [
     {
-      "url": "https://infra.mail.ru:9511/v1",
+      "url": "https://msk.cloud.vk.ru/infra/kubernetes/v1",
       "description": "prod"
     }
   ],
   "paths": {
+    "/clusters/{cluster_id}/image_id/{image_id}": {
+      "patch": {
+        "summary": "Update an existing cluster image_id",
+        "operationId": "patchClusterImageId",
+        "tags": [
+          "clusters"
+        ],
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "UUID or logical name of a cluster.",
+            "required": true
+          },
+          {
+            "name": "image_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "UUID Glance image",
+            "required": true
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/postClusterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
     "/clusters": {
       "post": {
         "tags": [
           "clusters"
         ],
-        "summary": "Create cluster",
+        "summary": "Create a cluster",
         "operationId": "createCluster",
         "requestBody": {
           "content": {
@@ -54,7 +104,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get list of clusters",
+        "summary": "Get a list of clusters",
         "operationId": "getClusterList",
         "parameters": [
           {
@@ -131,7 +181,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Update an existing Cluster.",
+        "summary": "Update an existing cluster",
         "operationId": "patchCluster",
         "parameters": [
           {
@@ -188,7 +238,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Delete cluster",
+        "summary": "Delete a cluster",
         "operationId": "deleteCluster",
         "parameters": [
           {
@@ -213,7 +263,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get list of clusters with details",
+        "summary": "Get a list of clusters with details",
         "operationId": "getDetailedClusterList",
         "parameters": [
           {
@@ -281,7 +331,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get docker registry secret for cluster.",
+        "summary": "Get the Docker registry secret for a cluster",
         "operationId": "getRegistryParams",
         "parameters": [
           {
@@ -363,7 +413,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get available update versions for cluster.",
+        "summary": "Get available update versions for a cluster",
         "operationId": "getUpgradeParams",
         "parameters": [
           {
@@ -404,7 +454,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get cluster",
+        "summary": "Get a cluster",
         "operationId": "getCluster",
         "parameters": [
           {
@@ -423,7 +473,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/full_cluster"
+                  "$ref": "#/components/schemas/getCluster"
                 }
               }
             }
@@ -445,7 +495,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Generate kubeconfig for cluster",
+        "summary": "Generate a kubeconfig for a cluster",
         "parameters": [
           {
             "name": "cluster_id",
@@ -479,7 +529,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Update cluster job.",
+        "summary": "Update a cluster job",
         "operationId": "updateJob",
         "parameters": [
           {
@@ -539,7 +589,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get job for specified cluster.",
+        "summary": "Get a job for the specified cluster",
         "operationId": "getJob",
         "parameters": [
           {
@@ -592,7 +642,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get tasks for specified cluster.",
+        "summary": "Get tasks for the specified cluster",
         "operationId": "getTasks",
         "parameters": [
           {
@@ -636,7 +686,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Upgrade cluster to new version.",
+        "summary": "Upgrade a cluster to a new version",
         "operationId": "upgradeCluster",
         "parameters": [
           {
@@ -689,7 +739,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Apply an action to the cluster.",
+        "summary": "Apply an action to the cluster",
         "operationId": "applyClusterAction",
         "requestBody": {
           "content": {
@@ -770,7 +820,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get desired labels and taints for a node.",
+        "summary": "Get desired labels and taints for a node",
         "operationId": "getNodeLabels",
         "parameters": [
           {
@@ -821,7 +871,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Report that node labels and taints are actually synced (at the current moment).",
+        "summary": "Report that node labels and taints are actually synced (at the current moment)",
         "operationId": "reportLabelsSynced",
         "requestBody": {
           "content": {
@@ -873,7 +923,7 @@
         "tags": [
           "cluster_migration"
         ],
-        "summary": "Get list of cluster migrations",
+        "summary": "Get a list of cluster migrations",
         "operationId": "getClusterMigrations",
         "parameters": [
           {
@@ -948,7 +998,7 @@
         "tags": [
           "cluster_migration"
         ],
-        "summary": "Create a new ClusterMigration.",
+        "summary": "Create a new cluster migration",
         "operationId": "postClusterMigration",
         "requestBody": {
           "content": {
@@ -984,7 +1034,7 @@
         "tags": [
           "cluster_migration"
         ],
-        "summary": "Delete a ClusterMigration.",
+        "summary": "Delete a cluster migration",
         "operationId": "deleteClusterMigration",
         "parameters": [
           {
@@ -1017,7 +1067,7 @@
         "tags": [
           "health_status"
         ],
-        "summary": "Check for health status of API and Conductor",
+        "summary": "Check the health status of the API and Conductor",
         "operationId": "healthStatus",
         "responses": {
           "204": {
@@ -1034,7 +1084,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Retrieve a list of ClusterTemplates.",
+        "summary": "Retrieve a list of cluster templates",
         "operationId": "getClusterTemplates",
         "parameters": [
           {
@@ -1125,7 +1175,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Create a new ClusterTemplate.",
+        "summary": "Create a new cluster template",
         "operationId": "postClusterTemplate",
         "requestBody": {
           "content": {
@@ -1172,7 +1222,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Update an existing ClusterTemplate.",
+        "summary": "Update an existing cluster template",
         "operationId": "patchClusterTemplate",
         "parameters": [
           {
@@ -1228,7 +1278,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Delete a ClusterTemplate.",
+        "summary": "Delete a cluster template",
         "operationId": "deleteClusterTemplate",
         "parameters": [
           {
@@ -1263,7 +1313,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Retrieve a single ClusterTemplate.",
+        "summary": "Retrieve a single cluster template",
         "operationId": "getClusterTemplate",
         "parameters": [
           {
@@ -1315,7 +1365,7 @@
         "tags": [
           "cluster_template"
         ],
-        "summary": "Retrieve a list of ClusterTemplates with details.",
+        "summary": "Retrieve a list of cluster templates with details",
         "operationId": "getClusterTemplatesDetails",
         "parameters": [
           {
@@ -1399,7 +1449,7 @@
         "tags": [
           "kubeconfig"
         ],
-        "summary": "Sign a new certificate by the CA.",
+        "summary": "Sign a new certificate by the CA",
         "operationId": "kubeConfig",
         "requestBody": {
           "content": {
@@ -1447,7 +1497,7 @@
         "tags": [
           "stats"
         ],
-        "summary": "Retrieve magnum stats.",
+        "summary": "Retrieve Magnum stats",
         "operationId": "getStats",
         "parameters": [
           {
@@ -1508,7 +1558,7 @@
         "tags": [
           "secrets"
         ],
-        "summary": "Get k8s dashboard secret",
+        "summary": "Get the Kubernetes dashboard secret",
         "operationId": "getSecret",
         "parameters": [
           {
@@ -1554,7 +1604,7 @@
         "tags": [
           "secrets"
         ],
-        "summary": "Update dashboard token",
+        "summary": "Update the dashboard token",
         "operationId": "patchSecret",
         "parameters": [
           {
@@ -1604,7 +1654,7 @@
         "tags": [
           "CA"
         ],
-        "summary": "Sign a new certificate by the CA.",
+        "summary": "Sign a new certificate by the CA",
         "operationId": "postCert",
         "requestBody": {
           "content": {
@@ -1646,7 +1696,7 @@
         "tags": [
           "CA"
         ],
-        "summary": "Retrieve CA information about the given cluster.",
+        "summary": "Retrieve CA information about the given cluster",
         "operationId": "getCert",
         "parameters": [
           {
@@ -1687,7 +1737,7 @@
         "tags": [
           "CA"
         ],
-        "summary": "Rotate certificate by the CA",
+        "summary": "Rotate the certificate by the CA",
         "operationId": "patchCert",
         "parameters": [
           {
@@ -1723,7 +1773,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Lists nodegroups.",
+        "summary": "List node groups",
         "operationId": "getNodegroupList",
         "parameters": [
           {
@@ -1733,7 +1783,7 @@
               "type": "boolean"
             },
             "required": false,
-            "description": "Return nodegroups with additional fields"
+            "description": "Return node groups with additional fields"
           },
           {
             "name": "marker",
@@ -1787,7 +1837,7 @@
               "type": "boolean"
             },
             "required": false,
-            "description": "If enabled, return nodegroups which are managed by autoscaler."
+            "description": "If enabled, return node groups which are managed by autoscaler."
           }
         ],
         "responses": {
@@ -1807,7 +1857,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Add nodegroup to existing cluster",
+        "summary": "Add a node group to an existing cluster",
         "operationId": "addNodegroup",
         "requestBody": {
           "content": {
@@ -1843,7 +1893,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Shows details for a nodegroup.",
+        "summary": "Show details for a node group",
         "operationId": "getNodegroupById",
         "parameters": [
           {
@@ -1854,7 +1904,7 @@
               "format": "uuid"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           }
         ],
         "responses": {
@@ -1877,7 +1927,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Scale nodegroup.",
+        "summary": "Scale a node group",
         "operationId": "scaleNodegroup",
         "parameters": [
           {
@@ -1888,7 +1938,7 @@
               "format": "uuid"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           }
         ],
         "requestBody": {
@@ -1924,7 +1974,7 @@
             "description": "Not Found."
           },
           "409": {
-            "description": "Node Group is in inappropriate state for this operation."
+            "description": "Node group is in inappropriate state for this operation."
           }
         }
       },
@@ -1932,7 +1982,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Delete nodegroup.",
+        "summary": "Delete a node group",
         "operationId": "deleteNodeGroupById",
         "parameters": [
           {
@@ -1943,7 +1993,7 @@
               "format": "uuid"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           }
         ],
         "responses": {
@@ -1961,7 +2011,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Apply an action to the node group.",
+        "summary": "Apply an action to the node group",
         "operationId": "applyNogeGroupAction",
         "requestBody": {
           "content": {
@@ -2027,7 +2077,7 @@
         "tags": [
           "nodegroups"
         ],
-        "summary": "Scale nodegroup.",
+        "summary": "Scale a node group",
         "operationId": "scaleNodegroupById",
         "requestBody": {
           "content": {
@@ -2046,7 +2096,7 @@
               "type": "string"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           }
         ],
         "responses": {
@@ -2072,12 +2122,67 @@
         }
       }
     },
+    "/nodegroups/{nodegroup}/actions/resize": {
+      "patch": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Change the node group flavor",
+        "operationId": "resizeNodegroupById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/resizeRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node group ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "uuid": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unable to find flavor."
+          },
+          "404": {
+            "description": "Node group not found."
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    },
     "/nodegroups/{nodegroup}/node/{nodeid}": {
       "delete": {
         "tags": [
           "nodes"
         ],
-        "summary": "Delete node from nodegroup.",
+        "summary": "Delete a node from a node group",
         "operationId": "deleteNodeFromNodegroupById",
         "parameters": [
           {
@@ -2087,7 +2192,7 @@
               "type": "string"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           },
           {
             "name": "nodeid",
@@ -2120,7 +2225,7 @@
         "tags": [
           "nodes"
         ],
-        "summary": "Recreate selected node.",
+        "summary": "Recreate the selected node",
         "operationId": "recreateNodeFromNodegroupById",
         "requestBody": {
           "content": {
@@ -2144,7 +2249,7 @@
               "type": "string"
             },
             "required": true,
-            "description": "Nodegroup ID"
+            "description": "Node group ID"
           },
           {
             "name": "nodeid",
@@ -2174,7 +2279,7 @@
         "tags": [
           "journal"
         ],
-        "summary": "Get event's list for clusters",
+        "summary": "Get a list of events for clusters",
         "operationId": "getEventsList",
         "parameters": [
           {
@@ -2267,7 +2372,7 @@
         "tags": [
           "journal"
         ],
-        "summary": "Add new event to cluster's journal",
+        "summary": "Add a new event to the cluster's journal",
         "operationId": "addClusterEvent",
         "requestBody": {
           "content": {
@@ -2303,7 +2408,7 @@
         "tags": [
           "journal"
         ],
-        "summary": "Get event's list for specific cluster",
+        "summary": "Get a list of events for a specific cluster",
         "operationId": "getClusterEventsList",
         "parameters": [
           {
@@ -2407,7 +2512,7 @@
         "tags": [
           "clusters"
         ],
-        "summary": "Get cluster params.",
+        "summary": "Get the cluster params",
         "operationId": "getClusterParams",
         "parameters": [
           {
@@ -2448,7 +2553,7 @@
         "tags": [
           "security_policy"
         ],
-        "summary": "Get list of security policies",
+        "summary": "Get a list of security policies",
         "operationId": "getSecurityPolicyList",
         "parameters": [
           {
@@ -2505,7 +2610,7 @@
         "tags": [
           "security_policy"
         ],
-        "summary": "Create security policy",
+        "summary": "Create a security policy",
         "operationId": "postSecurityPolicy",
         "requestBody": {
           "content": {
@@ -2544,7 +2649,7 @@
         "tags": [
           "security_policy"
         ],
-        "summary": "Get security policy",
+        "summary": "Get a security policy",
         "operationId": "getSecurityPolicy",
         "parameters": [
           {
@@ -2583,7 +2688,7 @@
         "tags": [
           "security_policy"
         ],
-        "summary": "Patch security policy",
+        "summary": "Patch a security policy",
         "operationId": "patchSecurityPolicy",
         "parameters": [
           {
@@ -2633,7 +2738,7 @@
         "tags": [
           "ct_security_policy"
         ],
-        "summary": "Get list of cluster template security policies",
+        "summary": "Get a list of cluster template security policies",
         "operationId": "getCTSecurityPolicyList",
         "parameters": [
           {
@@ -2690,7 +2795,7 @@
         "tags": [
           "ct_security_policy"
         ],
-        "summary": "Create cluster template security policy",
+        "summary": "Create a cluster template security policy",
         "operationId": "postCTSecurityPolicy",
         "requestBody": {
           "content": {
@@ -2729,7 +2834,7 @@
         "tags": [
           "ct_security_policy"
         ],
-        "summary": "Get cluster template security policy",
+        "summary": "Get a cluster template security policy",
         "operationId": "getCTSecurityPolicy",
         "parameters": [
           {
@@ -2768,7 +2873,7 @@
         "tags": [
           "ct_security_policy"
         ],
-        "summary": "Patch cluster template security policy",
+        "summary": "Patch a cluster template security policy",
         "operationId": "patchCTSecurityPolicy",
         "parameters": [
           {
@@ -2818,7 +2923,7 @@
         "tags": [
           "cluster_security_policy"
         ],
-        "summary": "Get list of cluster security policies",
+        "summary": "Get a list of cluster security policies",
         "operationId": "getClusterSecurityPolicyList",
         "parameters": [
           {
@@ -2875,7 +2980,7 @@
         "tags": [
           "cluster_security_policy"
         ],
-        "summary": "Create cluster security policy",
+        "summary": "Create a cluster security policy",
         "operationId": "postClusterSecurityPolicy",
         "requestBody": {
           "content": {
@@ -2914,7 +3019,7 @@
         "tags": [
           "cluster_security_policy"
         ],
-        "summary": "Get cluster security policy",
+        "summary": "Get a cluster security policy",
         "operationId": "getClusterSecurityPolicy",
         "parameters": [
           {
@@ -2953,7 +3058,7 @@
         "tags": [
           "cluster_security_policy"
         ],
-        "summary": "Patch cluster security policy",
+        "summary": "Patch a cluster security policy",
         "operationId": "patchClusterSecurityPolicy",
         "parameters": [
           {
@@ -3001,7 +3106,7 @@
         "tags": [
           "cluster_security_policy"
         ],
-        "summary": "Delete cluster security policy",
+        "summary": "Delete a cluster security policy",
         "operationId": "deleteClusterSecurityPolicy",
         "parameters": [
           {
@@ -3026,6 +3131,186 @@
           }
         }
       }
+    },
+    "/available_resources/storage_classes": {
+      "get": {
+        "tags": [
+          "available_resource"
+        ],
+        "summary": "Get available storage classes",
+        "operationId": "getAvailableResourcesStorageClasses",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "storage_classes": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "description": "Name of the storage class"
+                          },
+                          "zones": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "List of availability zones where this storage class is supported"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "zones"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "storage_classes"
+                  ]
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/container/k8sapi/{cluster_id}": {
+      "get": {
+        "tags": [
+          "kubeapi"
+        ],
+        "summary": "Access the Kubernetes API via the reverse proxy",
+        "description": "Available paths for Kubernetes 1.26 [swagger.json](https://github.com/kubernetes/kubernetes/blob/release-1.26/api/openapi-spec/swagger.json)\n\nReverse-proxy does not support working with threads, i.e. \"kubectl logs -f\", \"kubectl exec -it\" will not work.\n",
+        "operationId": "accessKubeApiViaReverseProxy",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK, returns some available paths",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accessKubeApiViaReverseProxySomeAvailablePaths"
+                }
+              }
+            }
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accessKubeApiViaReverseProxyResponseUnauthorized"
+                }
+              }
+            },
+            "description": "Unauthorized."
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accessKubeApiViaReverseProxyResponseClusterNotFound"
+                }
+              }
+            },
+            "description": "Cluster by UUID not found."
+          }
+        }
+      }
+    },
+    "/container/k8sapi/{cluster_id}/manifests": {
+      "patch": {
+        "tags": [
+          "kubeapi"
+        ],
+        "summary": "Apply multiple manifests",
+        "description": "Apply configurations to resources. Resources will be created if they do not already exist.\n\nAnalog of \"kubectl apply -f\"\n",
+        "operationId": "applyMultipleManifestsViaReverseProxy",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/applyMultipleManifestsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/applyMultipleManifestsResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accessKubeApiViaReverseProxyResponseUnauthorized"
+                }
+              }
+            },
+            "description": "Unauthorized."
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/accessKubeApiViaReverseProxyResponseClusterNotFound"
+                }
+              }
+            },
+            "description": "Cluster by UUID not found."
+          },
+          "412": {
+            "description": "Error applying at least one manifest",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/applyMultipleManifestsResponseError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -3043,7 +3328,7 @@
       },
       "nodegroup_label": {
         "type": "object",
-        "description": "Nodegroup label",
+        "description": "Node group label",
         "properties": {
           "key": {
             "type": "string"
@@ -3073,7 +3358,7 @@
       },
       "nodegroup_taint": {
         "type": "object",
-        "description": "Nodegroup taint",
+        "description": "Node group taint",
         "properties": {
           "key": {
             "type": "string"
@@ -3112,7 +3397,7 @@
       },
       "short_nodegroup": {
         "type": "object",
-        "description": "Nodegroup object",
+        "description": "Node group object",
         "properties": {
           "uuid": {
             "type": "string"
@@ -3367,7 +3652,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
+            "type": "integer"
           },
           "uuid": {
             "type": "string"
@@ -3415,6 +3700,14 @@
           },
           "rollback": {
             "type": "boolean"
+          }
+        }
+      },
+      "resizeRequest": {
+        "type": "object",
+        "properties": {
+          "flavor_id": {
+            "type": "string"
           }
         }
       },
@@ -3637,7 +3930,7 @@
             "type": "boolean"
           },
           "labels": {
-            "type": "object",
+            "type": "array",
             "items": {
               "type": "string"
             }
@@ -3652,6 +3945,9 @@
             "type": "string"
           },
           "subnet_id": {
+            "type": "string"
+          },
+          "external_network_id": {
             "type": "string"
           },
           "node_groups": {
@@ -3729,13 +4025,19 @@
           },
           "availability_zone": {
             "type": "string"
+          },
+          "cluster_type": {
+            "type": "string",
+            "enum": [
+              "standard",
+              "regional"
+            ]
           }
         },
         "required": [
           "name",
           "floating_ip_enabled",
           "cluster_template_id",
-          "availability_zone",
           "network_id",
           "subnet_id",
           "labels"
@@ -3946,11 +4248,27 @@
               "availability_zone": {
                 "type": "string"
               },
+              "availability_zones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cluster_type": {
+                "type": "string",
+                "enum": [
+                  "standard",
+                  "regional"
+                ]
+              },
               "events": {
                 "type": "array",
                 "items": {
                   "type": "object"
                 }
+              },
+              "security_policy_sync_enabled": {
+                "type": "boolean"
               }
             }
           }
@@ -4038,8 +4356,17 @@
           },
           "container_infra_prefix": {
             "type": "string"
+          },
+          "managed_by": {
+            "$ref": "#/components/schemas/managed_by"
           }
         }
+      },
+      "managed_by": {
+        "type": "string",
+        "enum": [
+          "data-platform"
+        ]
       },
       "new_status": {
         "type": "string",
@@ -4872,6 +5199,12 @@
       },
       "securityPolicy": {
         "type": "object",
+        "required": [
+          "uuid",
+          "name",
+          "description",
+          "version"
+        ],
         "properties": {
           "uuid": {
             "type": "string"
@@ -4971,6 +5304,14 @@
       },
       "clusterSecurityPolicy": {
         "type": "object",
+        "required": [
+          "uuid",
+          "cluster_uuid",
+          "security_policy_uuid",
+          "policy",
+          "namespace",
+          "enabled"
+        ],
         "properties": {
           "uuid": {
             "type": "string"
@@ -5046,7 +5387,10 @@
         },
         "required": [
           "cluster_uuid",
-          "security_policy_uuid"
+          "security_policy_uuid",
+          "policy_settings",
+          "namespace",
+          "enabled"
         ]
       },
       "clusterSecurityPolicyPatch": {
@@ -5064,6 +5408,274 @@
           "enabled": {
             "type": "boolean",
             "default": true
+          }
+        },
+        "required": [
+          "policy_settings",
+          "namespace",
+          "enabled"
+        ]
+      },
+      "accessKubeApiViaReverseProxySomeAvailablePaths": {
+        "type": "object",
+        "properties": {
+          "paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "/.well-known/openid-configuration",
+              "/api",
+              "/api/v1",
+              "/apis",
+              "/apis/",
+              "/apis/admissionregistration.k8s.io",
+              "/apis/admissionregistration.k8s.io/v1",
+              "/apis/admissionregistration.k8s.io/v1alpha1",
+              "/apis/apiextensions.k8s.io",
+              "/apis/apiextensions.k8s.io/v1",
+              "/apis/apiregistration.k8s.io",
+              "/apis/apiregistration.k8s.io/v1",
+              "/apis/apps",
+              "/apis/apps/v1",
+              "/apis/authentication.k8s.io",
+              "/apis/authentication.k8s.io/v1",
+              "/apis/authorization.k8s.io",
+              "/apis/authorization.k8s.io/v1",
+              "/apis/autoscaling",
+              "/apis/autoscaling/v1",
+              "/apis/autoscaling/v2",
+              "/apis/batch",
+              "/apis/batch/v1",
+              "/apis/certificates.k8s.io",
+              "/apis/certificates.k8s.io/v1",
+              "/apis/config.gatekeeper.sh",
+              "/apis/config.gatekeeper.sh/v1alpha1",
+              "/apis/constraints.gatekeeper.sh",
+              "/apis/constraints.gatekeeper.sh/v1alpha1",
+              "/apis/constraints.gatekeeper.sh/v1beta1",
+              "/apis/coordination.k8s.io",
+              "/apis/coordination.k8s.io/v1",
+              "/apis/crd.projectcalico.org",
+              "/apis/crd.projectcalico.org/v1",
+              "/apis/discovery.k8s.io",
+              "/apis/discovery.k8s.io/v1",
+              "/apis/events.k8s.io",
+              "/apis/events.k8s.io/v1",
+              "/apis/expansion.gatekeeper.sh",
+              "/apis/expansion.gatekeeper.sh/v1alpha1",
+              "/apis/externaldata.gatekeeper.sh",
+              "/apis/externaldata.gatekeeper.sh/v1alpha1",
+              "/apis/externaldata.gatekeeper.sh/v1beta1",
+              "/apis/flowcontrol.apiserver.k8s.io",
+              "/apis/flowcontrol.apiserver.k8s.io/v1beta2",
+              "/apis/flowcontrol.apiserver.k8s.io/v1beta3",
+              "/apis/internal.apiserver.k8s.io",
+              "/apis/internal.apiserver.k8s.io/v1alpha1",
+              "/apis/metrics.k8s.io",
+              "/apis/metrics.k8s.io/v1beta1",
+              "/apis/mutations.gatekeeper.sh",
+              "/apis/mutations.gatekeeper.sh/v1",
+              "/apis/mutations.gatekeeper.sh/v1alpha1",
+              "/apis/mutations.gatekeeper.sh/v1beta1",
+              "/apis/networking.k8s.io",
+              "/apis/networking.k8s.io/v1",
+              "/apis/networking.k8s.io/v1alpha1",
+              "/apis/node.k8s.io",
+              "/apis/node.k8s.io/v1",
+              "/apis/policy",
+              "/apis/policy/v1",
+              "/apis/rbac.authorization.k8s.io",
+              "/apis/rbac.authorization.k8s.io/v1",
+              "/apis/resource.k8s.io",
+              "/apis/resource.k8s.io/v1alpha1",
+              "/apis/scheduling.k8s.io",
+              "/apis/scheduling.k8s.io/v1",
+              "/apis/status.gatekeeper.sh",
+              "/apis/status.gatekeeper.sh/v1beta1",
+              "/apis/storage.k8s.io",
+              "/apis/storage.k8s.io/v1",
+              "/apis/storage.k8s.io/v1beta1",
+              "/apis/templates.gatekeeper.sh",
+              "/apis/templates.gatekeeper.sh/v1",
+              "/apis/templates.gatekeeper.sh/v1alpha1",
+              "/apis/templates.gatekeeper.sh/v1beta1",
+              "/healthz",
+              "/healthz/autoregister-completion",
+              "/healthz/etcd",
+              "/healthz/log",
+              "/healthz/ping",
+              "/healthz/poststarthook/aggregator-reload-proxy-client-cert",
+              "/healthz/poststarthook/apiservice-openapi-controller",
+              "/healthz/poststarthook/apiservice-openapiv3-controller",
+              "/healthz/poststarthook/apiservice-registration-controller",
+              "/healthz/poststarthook/apiservice-status-available-controller",
+              "/healthz/poststarthook/bootstrap-controller",
+              "/healthz/poststarthook/crd-informer-synced",
+              "/healthz/poststarthook/generic-apiserver-start-informers",
+              "/healthz/poststarthook/kube-apiserver-autoregistration",
+              "/healthz/poststarthook/priority-and-fairness-config-consumer",
+              "/healthz/poststarthook/priority-and-fairness-config-producer",
+              "/healthz/poststarthook/priority-and-fairness-filter",
+              "/healthz/poststarthook/rbac/bootstrap-roles",
+              "/healthz/poststarthook/scheduling/bootstrap-system-priority-classes",
+              "/healthz/poststarthook/start-apiextensions-controllers",
+              "/healthz/poststarthook/start-apiextensions-informers",
+              "/healthz/poststarthook/start-cluster-authentication-info-controller",
+              "/healthz/poststarthook/start-kube-aggregator-informers",
+              "/healthz/poststarthook/start-kube-apiserver-admission-initializer",
+              "/healthz/poststarthook/start-kube-apiserver-identity-lease-controller",
+              "/healthz/poststarthook/start-kube-apiserver-identity-lease-garbage-collector",
+              "/healthz/poststarthook/start-legacy-token-tracking-controller",
+              "/healthz/poststarthook/storage-object-count-tracker-hook",
+              "/livez",
+              "/livez/autoregister-completion",
+              "/livez/etcd",
+              "/livez/log",
+              "/livez/ping",
+              "/livez/poststarthook/aggregator-reload-proxy-client-cert",
+              "/livez/poststarthook/apiservice-openapi-controller",
+              "/livez/poststarthook/apiservice-openapiv3-controller",
+              "/livez/poststarthook/apiservice-registration-controller",
+              "/livez/poststarthook/apiservice-status-available-controller",
+              "/livez/poststarthook/bootstrap-controller",
+              "/livez/poststarthook/crd-informer-synced",
+              "/livez/poststarthook/generic-apiserver-start-informers",
+              "/livez/poststarthook/kube-apiserver-autoregistration",
+              "/livez/poststarthook/priority-and-fairness-config-consumer",
+              "/livez/poststarthook/priority-and-fairness-config-producer",
+              "/livez/poststarthook/priority-and-fairness-filter",
+              "/livez/poststarthook/rbac/bootstrap-roles",
+              "/livez/poststarthook/scheduling/bootstrap-system-priority-classes",
+              "/livez/poststarthook/start-apiextensions-controllers",
+              "/livez/poststarthook/start-apiextensions-informers",
+              "/livez/poststarthook/start-cluster-authentication-info-controller",
+              "/livez/poststarthook/start-kube-aggregator-informers",
+              "/livez/poststarthook/start-kube-apiserver-admission-initializer",
+              "/livez/poststarthook/start-kube-apiserver-identity-lease-controller",
+              "/livez/poststarthook/start-kube-apiserver-identity-lease-garbage-collector",
+              "/livez/poststarthook/start-legacy-token-tracking-controller",
+              "/livez/poststarthook/storage-object-count-tracker-hook",
+              "/logs",
+              "/metrics",
+              "/openapi/v2",
+              "/openapi/v3",
+              "/openapi/v3/",
+              "/openid/v1/jwks",
+              "/readyz",
+              "/readyz/autoregister-completion",
+              "/readyz/etcd",
+              "/readyz/etcd-readiness",
+              "/readyz/informer-sync",
+              "/readyz/log",
+              "/readyz/ping",
+              "/readyz/poststarthook/aggregator-reload-proxy-client-cert",
+              "/readyz/poststarthook/apiservice-openapi-controller",
+              "/readyz/poststarthook/apiservice-openapiv3-controller",
+              "/readyz/poststarthook/apiservice-registration-controller",
+              "/readyz/poststarthook/apiservice-status-available-controller",
+              "/readyz/poststarthook/bootstrap-controller",
+              "/readyz/poststarthook/crd-informer-synced",
+              "/readyz/poststarthook/generic-apiserver-start-informers",
+              "/readyz/poststarthook/kube-apiserver-autoregistration",
+              "/readyz/poststarthook/priority-and-fairness-config-consumer",
+              "/readyz/poststarthook/priority-and-fairness-config-producer",
+              "/readyz/poststarthook/priority-and-fairness-filter",
+              "/readyz/poststarthook/rbac/bootstrap-roles",
+              "/readyz/poststarthook/scheduling/bootstrap-system-priority-classes",
+              "/readyz/poststarthook/start-apiextensions-controllers",
+              "/readyz/poststarthook/start-apiextensions-informers",
+              "/readyz/poststarthook/start-cluster-authentication-info-controller",
+              "/readyz/poststarthook/start-kube-aggregator-informers",
+              "/readyz/poststarthook/start-kube-apiserver-admission-initializer",
+              "/readyz/poststarthook/start-kube-apiserver-identity-lease-controller",
+              "/readyz/poststarthook/start-kube-apiserver-identity-lease-garbage-collector",
+              "/readyz/poststarthook/start-legacy-token-tracking-controller",
+              "/readyz/poststarthook/storage-object-count-tracker-hook",
+              "/readyz/shutdown",
+              "/version"
+            ]
+          }
+        }
+      },
+      "applyMultipleManifestsRequest": {
+        "type": "string",
+        "example": "---\napiVersion: v1\nkind: Namespace\nmetadata:\n  name: my-ns\n\n---\n\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: my-cm\n  namespace: my-ns\n"
+      },
+      "applyMultipleManifestsResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "Success"
+          },
+          "code": {
+            "type": "integer",
+            "example": 200
+          }
+        }
+      },
+      "applyMultipleManifestsResponseError": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "Failure"
+          },
+          "code": {
+            "type": "integer",
+            "example": 412
+          },
+          "message": {
+            "type": "string",
+            "example": "failed to get dynamic resource: failed to map to REST: no matches for kind \"UnknownResourceKind\" in version \"v1\""
+          },
+          "reason": {
+            "type": "string",
+            "example": "failed to apply at least one manifest"
+          }
+        }
+      },
+      "accessKubeApiViaReverseProxyResponseUnauthorized": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "Failure"
+          },
+          "code": {
+            "type": "integer",
+            "example": 401
+          },
+          "message": {
+            "type": "string",
+            "example": "unauthorized request"
+          },
+          "reason": {
+            "type": "string",
+            "example": "unauthorized request"
+          }
+        }
+      },
+      "accessKubeApiViaReverseProxyResponseClusterNotFound": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "Failure"
+          },
+          "code": {
+            "type": "integer",
+            "example": 404
+          },
+          "message": {
+            "type": "string",
+            "example": "cluster not found"
+          },
+          "reason": {
+            "type": "string",
+            "example": "cluster not found"
           }
         }
       }
