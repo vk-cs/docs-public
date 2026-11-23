@@ -5,7 +5,7 @@
   "sectionTitle": "Managed Containers (екінші буын)",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "d45cad81-51fd-4f0d-a59f-2bf7a39686ee",
   "build": {
     "for": [
       "public"

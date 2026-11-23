@@ -5,7 +5,7 @@
   "sectionTitle": "Managed Containers (second generation)",
   "icon": "",
   "weight": 8,
-  "uuid": "",
+  "uuid": "755058e2-f34b-46ae-b6b9-80c350c68083",
   "build": {
     "for": [
       "public"
