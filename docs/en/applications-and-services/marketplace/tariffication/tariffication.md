@@ -1,4 +1,4 @@
-## About tariffication
+## {heading(About tariffication)[id=marketplace-tariffication-about]}
 
 The cost of using the service instance depends on the selected tariff plan and options. It is reflected in the [service configuration wizard](../instructions/pr-instance-add) and consists of two parts:
 
@@ -33,7 +33,7 @@ If there are not enough funds when debiting, the instance status changes:
 1. Soft Limit. The beginning of the period is considered the first unsuccessful attempt to write off funds. The maximum duration of the period is up to 10 days, the balance is checked daily. If there were no successful write-offs during this period, the Hard Limit period begins.
 1. Hard Limit. Compulsory cancellation of all debts on the service. The instance of the service is blocked until the full payment of the debt for 10 days:
 
-   - If the balance remains positive after debiting, the period is reset to zero, a notification is received about the need for [manual activation](../instructions/pr-instance-manage#updating_access_to_a_service_instance) for the service instance.
+   - If the balance remains positive after debiting, the period is reset to zero, a notification is received about the need for [manual activation](../instructions/pr-instance-manage#marketplace-pr-instance-manage-active) for the service instance.
    - If there are not enough funds, after the expiration of the period, the service instance is deleted without the possibility of recovery.
 
 {/tab}
@@ -46,7 +46,7 @@ For information on how to pay for the use of the service instance, see the secti
 
 {/note}
 
-## Charged
+## {heading(Charged)[id=marketplace-tariffication-yes]}
 
 For SaaS and image-based services:
 
@@ -56,7 +56,7 @@ For SaaS and image-based services:
 
 For image-based services, VK Cloud virtual resources deployed to maintain the service infrastructure are charged: VMs, disks, networks, routers. The full list of required resources is available when [connecting](../instructions/pr-instance-add) the service instance.
 
-## Not charged
+## {heading(Not charged)[id=marketplace-tariffication-no]}
 
 - Use of the management console of any of the vendor's services.
 - Performing basic operations with the service instance: restart, delete.

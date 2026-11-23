@@ -15,7 +15,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
 - Allow access only from specific IP addresses.
 
-## Before you begin
+## {heading(Before you begin)[id=mk8s-load-balancer-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -23,7 +23,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
 1. Make sure you can connect to the cluster with `kubectl`.
 
-## {counter(lb)}. Create application
+## {heading({counter(lb)}. Create application)[id=mk8s-load-balancer-create-app]}
 
 Requests to this application will be served by the load balancer. To demonstrate the behavior of the load balancer, the application will be deployed as a StatefulSet of two replicas. In this case, all the sub-applications will be numbered, and it will be easy to determine which replica the load balancer will send the request to.
 
@@ -64,7 +64,7 @@ To create such an application:
    kubectl apply -f coffee.yaml
    ```
 
-## {counter(lb)}. Create load balancers
+## {heading({counter(lb)}. Create load balancers)[id=mk8s-load-balancer-create-balancer]}
 
 Create several load balancers with different behaviors that serve the deployed `coffee` application.
 
@@ -253,7 +253,7 @@ The tabs below describe different scenarios for creating load balancers:
 
 Read more about services and load balancers in [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/).
 
-## {counter(lb)}. Check the operation of the load balancers
+## {heading({counter(lb)}. Check the operation of the load balancers)[id=mk8s-load-balancer-check]}
 
 The tabs below describe different scenarios for testing load balancers:
 
@@ -352,7 +352,7 @@ The tabs below describe different scenarios for testing load balancers:
 
 {/tabs}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-load-balancer-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} load balancers, delete them:
 

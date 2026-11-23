@@ -12,7 +12,7 @@ If you cannot contact the project owner or they refuse to remove you, please con
 
 {cut(How can an owner or administrator remove a user from a project?)}
 
-To remove a user from a project, use the {linkto(../instructions/access-manage#deleting_member)[text=instruction]}.
+To remove a user from a project, use the {linkto(../instructions/access-manage#iam-access-manage-delete-user)[text=instruction]}.
 
 {/cut}
 

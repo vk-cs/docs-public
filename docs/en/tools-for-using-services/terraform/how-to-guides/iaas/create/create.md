@@ -2,7 +2,7 @@ Using Terraform you can create virtual machines. As an example, a VM will be cre
 
 Two options for VM configuration will be considered: without additional settings and with an additional disk connected.
 
-## Before you start
+## {heading(Before you start)[id=terraform-iaas-create-prepare]}
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you plan to create a VM. Different regions may have different quotas configured.
 
@@ -88,7 +88,7 @@ Two options for VM configuration will be considered: without additional settings
 
    {/tabs}
 
-## 1. Create file describing basic network infrastructure
+## {heading(1. Create file describing basic network infrastructure)[id=terraform-iaas-create-net-file]}
 
 1. [Create a `network.tf` file](../../vnet/network).
 
@@ -111,7 +111,7 @@ To connect to the VM via SSH, assign the `ssh` [preset security group](/ru/netwo
 
 If the project does not have the `ssh` security group, describe it in the configuration file: [create](../../vnet/secgroups) the `secgroup.tf` file and add the description of the `ssh` security group with rules to it.
 
-## 3. Create file with VM description
+## {heading(3. Create file with VM description)[id=terraform-iaas-create-vm-file]}
 
 Create a `main.tf` file.
 
@@ -393,7 +393,7 @@ Monitoring cannot be enabled for VMs that are not accessible from the external n
 
 The parameters for connecting to the Cloud Monitoring service are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/compute_instance.md).
 
-## 6. Create resources using Terraform
+## {heading(6. Create resources using Terraform)[id=terraform-iaas-create-resource]}
 
 1. Place all Terraform configuration files in the same directory:
 
@@ -424,7 +424,7 @@ The parameters for connecting to the Cloud Monitoring service are described in t
 
 Once resource creation is complete, the Terraform `instance_fip` output will show the floating IP address assigned to the VM.
 
-## 7. Check if example works
+## {heading(7. Check if example works)[id=terraform-iaas-create-check]}
 
 [Connect via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
 
@@ -451,7 +451,7 @@ Swap usage: 0%
 ...
 ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=terraform-iaas-create-delete]}
 
 Some of the objects created in this scenario consume resources. If you no longer need them, delete them:
 

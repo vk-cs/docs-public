@@ -1,6 +1,6 @@
 The recommended way to connect to a Linux VM is via SSH using a key pair.
 
-## 1. Check ability to connect via SSH
+## {heading(1. Check ability to connect via SSH)[id=iaas-vm-connect-nix-ssh]}
 
 To connect via SSH, an SSH server must be running on the virtual machine. On Linux virtual machines created in VK Cloud, the OpenSSH server is installed and started by default.
 
@@ -28,11 +28,11 @@ The virtual machines that were created from the FreeBSD and Bitrix images offere
 
 If SSH connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the_vnc_console).
 
-## 2. Prepare credentials
+## {heading(2. Prepare credentials)[id=iaas-vm-connect-nix-credentials]}
 
 To connect to the VM via SSH, [find out](../../../../concepts/about#default_account) the name of the default OS user. Write it down.
 
-## 3. Check for key pair
+## {heading(3. Check for key pair)[id=iaas-vm-connect-nix-key-pared]}
 
 To connect to a VM over SSH using a key pair, it is necessary that the public key is stored on the virtual machine in the file `~/.ssh/authorized_keys`, and the file with the private key is located on the computer from which the connection is being made.
 
@@ -43,7 +43,7 @@ If the VM was created on the VK Cloud platform:
 
 If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#restoring_vm_access_by_key).
 
-## 4. Connect to VM
+## {heading(4. Connect to VM)[id=iaas-vm-connect-nix-os]}
 
 {tabs}
 

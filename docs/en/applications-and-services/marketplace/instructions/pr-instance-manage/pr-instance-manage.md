@@ -1,4 +1,4 @@
-## Viewing information about a service instance
+## {heading(Viewing information about a service instance)[id=marketplace-pr-instance-manage-view]}
 
 {tabs}
 
@@ -23,9 +23,9 @@ Possible service instance statuses:
 - **Suspending** — the service instance is in the process of deactivation due to insufficient amount to pay for the use of the service.
 - **Suspension error** — the service instance could not be deactivated due to an error.
 - **Inactive** — the service instance has been deactivated. The deactivated instance of the service is unavailable for use.
-- **Resuming** — service instance in the process of [activation](#activating_a_service_instance).
+- **Resuming** — service instance in the process of [activation](#marketplace-pr-instance-manage-active).
 
-## Activating a service instance
+## {heading(Activating a service instance)[id=marketplace-pr-instance-manage-active]}
 
 Activation will be required:
 
@@ -46,7 +46,7 @@ Activation will be required:
 
 {/tabs}
 
-## Editing the tariff plan
+## {heading(Editing the tariff plan)[id=marketplace-pr-instance-manage-edit]}
 
 {tabs}
 
@@ -63,7 +63,7 @@ Activation will be required:
 
 {/tabs}
 
-## Changing the tariff plan
+## {heading(Changing the tariff plan)[id=marketplace-pr-instance-manage-change]}
 
 {tabs}
 
@@ -80,9 +80,9 @@ Activation will be required:
 
 {/tabs}
 
-The update of the service instance will begin, the process may take a long time. If the update has completed with the status **Update error**, [updating access](#updating_access_to_a_service_instance) to a service instance.
+The update of the service instance will begin, the process may take a long time. If the update has completed with the status **Update error**, [updating access](#marketplace-pr-instance-manage-active) to a service instance.
 
-## Updating access to a service instance
+## {heading(Updating access to a service instance)[id=marketplace-pr-instance-manage-update-access]}
 
 {tabs}
 
@@ -101,7 +101,7 @@ The update of the service instance will begin, the process may take a long time.
 
 {/tabs}
 
-## Recreating or re-updating a service instance
+## {heading(Recreating or re-updating a service instance)[id=marketplace-pr-instance-manage-update-service]}
 
 The operation is available if the service instance is in the status **Creation error** or **Update error**.
 

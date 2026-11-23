@@ -1,6 +1,6 @@
 In Cloud Servers, you can create virtual machines through your management console, OpenStack CLI or Terraform. To create a VM using Terraform, follow the [instructions in the Terraform section](/en/tools-for-using-services/terraform/how-to-guides/iaas/create).
 
-The VK Cloud team has prepared images of several operating systems. A list of prepared images is available in the management console [when creating a new VM](https://msk.cloud.vk.com/app/en/services/infra/servers/add). You can also [import](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) your own OS image.
+The VK Cloud team has prepared images of several operating systems. A list of prepared images is available in the management console [when creating a new VM](https://msk.cloud.vk.com/app/en/services/infra/servers/add). You can also [import](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) your own OS image.
 
 {note:info}
 
@@ -20,7 +20,7 @@ To create VM:
 1. Click the **Create Instance** or **Add** button.
 1. Set the VM parameters in the **Configuration** box:
 
-     - **Operating system**: select the [operating system](/en/computing/iaas/concepts/about#operating_system) or the image that you previously [created](../../images/images-manage#creating_an_image) or [imported](../../images/images-manage#iaas-images-manage-import) in VK Cloud.
+     - **Operating system**: select the [operating system](/en/computing/iaas/concepts/about#operating_system) or the image that you previously [created](../../images/images-manage#iaas-images-manage-import) or [imported](../../images/images-manage#iaas-images-manage-import) in VK Cloud.
      - **Category of virtual machine**: select the [category](../../../concepts/about#flavors) of the VM.
      - **Type of virtual machine**: select the flavor VM configuration.
      - **Availability zone**: select the [availability zone](/en/computing/iaas/concepts/about#availability_zone) where the VM will be deployed.
@@ -55,7 +55,7 @@ To create VM:
 
       - **Subnet address**: specify CIDR using the pattern `XXX.XXX.XXX.XXX/XX`. For example `10.0.0.0/24`.
 
-   - **Use config drive**: enable the option if you need to automatically configure a network on a virtual machine when there is no DHCP server on the network. The option is enabled automatically if a network with [DHCP](/en/networks/vnet/concepts/ips-and-inet#network_addressing) disabled is selected, including the [external network](/en/networks/vnet/concepts/net-types#external_net) (`ext-net`).
+   - **Use config drive**: enable the option if you need to automatically configure a network on a virtual machine when there is no DHCP server on the network. The option is enabled automatically if a network with [DHCP](/en/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-network-addressing) disabled is selected, including the [external network](/en/networks/vnet/concepts/net-types#external_net) (`ext-net`).
    - **DNS-name**: specify the [private DNS](/en/networks/dns/private-dns) name for the VM. This domain name can be used to access instances on the internal network.
    - **Virtual machine key**: select a key for SSH connection or create a new one.
 

@@ -221,7 +221,7 @@ The `Action` parameter defines which actions with buckets and objects will be {l
 All {linkto(#s3-concepts-bucket-policy-actions)[text=actions]} can be allowed (`Allow`) or denied (`Deny`) both implicitly and explicitly.
 - Implicit allow: set automatically by {var(s3)} and applied by default to all internal {linkto(#s3-concepts-bucket-policy-principal)[text=principals]}.
 - Implicit deny: set automatically by {var(s3)} and applied by default to all external {linkto(#s3-concepts-bucket-policy-principal)[text=principals]}.
-- Explicit allow: {linkto(../../../instructions/access-management/bucket-policy#s3-concepts-bucket-policy-principal)[text=set]} by the user using access policies via the `Effect` parameter:
+- Explicit allow: {linkto(../../../instructions/access-management/bucket-policy#s3-instructions-bucket-acl-enable-and-disable)[text=set]} by the user using access policies via the `Effect` parameter:
 
     ```json
     ...

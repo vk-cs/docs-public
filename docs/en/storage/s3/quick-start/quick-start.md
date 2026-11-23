@@ -53,7 +53,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 1. Select the default ACL setting `private`.
 1. Click the **Add bucket** button.
 
-## 2. Add object with private ACL settings and grant access to it
+## {heading(2. Add object with private ACL settings and grant access to it)[id=2_add_object_with_private_acl_settings_and_grant_access_to_it]}
 
 1. Add an object:
 
@@ -97,7 +97,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
    {/note}
 
-## 3. Add object with public ACL settings and grant access to it
+## {heading(3. Add object with public ACL settings and grant access to it)[id=3_add_object_with_public_acl_settings_and_grant_access_to_it]}
 
 1. Add an object:
 
@@ -125,7 +125,7 @@ Objects uploaded to the bucket [are subject to tariffication](../tariffication).
 
 1. Go to the generated direct link in the browser. The object [added earlier with public ACL settings](#3_add_object_with_public_acl_settings_and_grant_access_to_it) should load.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=delete_unused_resources]}
 
 1. You have to [pay](../tariffication) for uploaded objects. If you no longer need them, [delete them](../instructions/objects/manage-object).
 1. If you no longer need a bucket, [delete it](../instructions/buckets/bucket#removing_a_bucket).

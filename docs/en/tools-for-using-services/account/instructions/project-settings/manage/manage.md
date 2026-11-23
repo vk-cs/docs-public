@@ -85,7 +85,7 @@ The new owner may need to [link a payment card](/en/intro/billing/instructions/a
 
 ## Project conservation
 
-If you want to suspend work on a project, mothball the project to stop debiting funds. If the project goes into negative territory, it will be [frozen](../../../concepts/projects#automatic_freezing_of_the_project) with subsequent deletion of objects and data.
+If you want to suspend work on a project, mothball the project to stop debiting funds. If the project goes into negative territory, it will be [frozen](../../../concepts/projects#projects-auto-freeze) with subsequent deletion of objects and data.
 
 To preserve the project:
 
@@ -97,7 +97,7 @@ To preserve the project:
 1. Stop all the VMs that you want to save data from.
 1. Transfer or copy all the necessary data.
 
-    For example, [create](/en/computing/iaas/instructions/images/images-manage#creating_an_image) and [export](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) disk images of the virtual machines stopped in the previous step.
+    For example, [create](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) and [export](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) disk images of the virtual machines stopped in the previous step.
 
 1. Delete all objects that are charged or occupy disk space — floating IP addresses, disks, buckets, load balancers, and others.
 
@@ -344,7 +344,7 @@ Deleting a project is also possible with a negative balance.
 To delete a project:
 
 1. Make sure that you have transferred all the necessary data from the project.
-1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner, provide in the request the [project ID](#getting-the-project-id) (PID) and [region](../../../concepts/regions) of the project being deleted.
+1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner, provide in the request the [project ID](#getting_project_id) (PID) and [region](../../../concepts/regions) of the project being deleted.
 
 1. (For legal entities) Specify for what period you need [closing documents](/en/intro/billing/concepts/report).
 

@@ -6,7 +6,7 @@ A virtual machine can be connected to the network using a port. Port — VM virt
 
 Learn more about networks and ports in the sections [Managing networks and subnets](/en/networks/vnet/instructions/net) and [Managing ports](/en/networks/vnet/instructions/ports).
 
-## Connecting the network to the VM
+## {heading(Connecting the network to the VM)[id=iaas-vm-add-net-connect]}
 
 {tabs}
 
@@ -41,7 +41,7 @@ Learn more about networks and ports in the sections [Managing networks and subne
 
 Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-### Connecting to an existing port
+### {heading(Connecting to an existing port)[id=iaas-vm-add-net-connect-port]}
 
 1. Get the ID of the virtual machine that you plan to connect to the network:
 
@@ -73,7 +73,7 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
    openstack port list --server <virtual machine ID>
    ```
 
-### Creating a new port
+### {heading(Creating a new port)[id=iaas-vm-add-net-create-port]}
 
 1. Get a list of networks and their subnets:
 
@@ -144,7 +144,7 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 {/tabs}
 
-## Deleting a VM network
+## {heading(Deleting a VM network)[id=iaas-vm-add-net-delete]}
 
 {tabs}
 

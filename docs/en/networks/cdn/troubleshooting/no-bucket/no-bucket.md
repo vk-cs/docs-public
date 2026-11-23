@@ -12,7 +12,7 @@ The problem occurs because, by default, the CDN resource settings use the Host h
 
 ## Solution
 
-[Change the Host header](/en/networks/cdn/instructions/manage-cdn/origin-settings#changing_host_header): set a custom header in the format `<BUCKET_NAME>.<SERVICE_DOMAIN>`.
+[Change the Host header](/en/networks/cdn/instructions/manage-cdn/origin-settings#cdn-origin-settings-host-header): set a custom header in the format `<BUCKET_NAME>.<SERVICE_DOMAIN>`.
 
 Here:
 

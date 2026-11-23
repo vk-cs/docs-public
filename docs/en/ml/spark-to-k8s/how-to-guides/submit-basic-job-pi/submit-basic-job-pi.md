@@ -5,7 +5,7 @@ Spark jobs can be submitted to the cluster in different ways:
 
 As an example, an application will be used to calculate an approximate value of the number π.
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=mlspark-htg-basic-prerequirements]}
 
 1. Prepare the environment for working with Python in any convenient way:
 
@@ -88,7 +88,7 @@ As an example, an application will be used to calculate an approximate value of 
 
 1. Find and write down the ID of the created cluster (contained in the `id` field).
 
-## 1. Create a file with the Spark application code
+## {heading(1. Create a file with the Spark application code)[id=mlspark-htg-basic-create-spark-file]}
 
 This application calculates a Monte Carlo approximation of the number π by distributing the computation across the nodes of the Spark cluster.
 
@@ -121,7 +121,7 @@ spark.stop()
 
 {/cut}
 
-## 2. Send the Spark job to the cluster
+## {heading(2. Send the Spark job to the cluster)[id=mlspark-htg-basic-send-to-cluster]}
 
 Submit a job to the cluster by executing the script:
 
@@ -150,7 +150,7 @@ Job: pi-spark-job, status: SUBMITTED, created_at: ...
 
 By default, the Spark manifest job does not contain a location of the files needed to run the Spark application.
 
-The application that calculates the number π requires [only one executable file](#1_create_a_file_with_the_spark_application_code), no additional artifacts are used.
+The application that calculates the number π requires [only one executable file](#mlspark-htg-basic-create-spark-file), no additional artifacts are used.
 
 In this simple case, you don't need to host the Spark application executable in an VK Object Storage bucket and then edit the default manifest to add the required information to it.
 
@@ -162,7 +162,7 @@ spark_job_info = mlp.spark_submit_job(CLUSTER_ID, spark_job_manifest, PY_FILE)
 
 The Cloud ML Platform library itself will adjust the manifest so that the code from the specified file can be executed.
 
-## 3. Track the status of the Spark job
+## {heading(3. Track the status of the Spark job)[id=mlspark-htg-basic-check-jobs]}
 
 1. Make sure that the result of calculating the number π appears in the task logs. If the result does not appear, run the script to obtain the logs again: intermediate logs of the work can be displayed at the time when the task has not completed yet.
 
@@ -201,7 +201,7 @@ The Cloud ML Platform library itself will adjust the manifest so that the code f
    print(events)
    ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mlspark-htg-basic-delete-unused-resources]}
 
 If you no longer need the created resources, delete them:
 

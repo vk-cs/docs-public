@@ -1,4 +1,4 @@
-## Virtual machines
+## {heading(Virtual machines)[id=iaas-faq-vm]}
 
 {cut(Where are the servers located?)}
 
@@ -220,7 +220,7 @@ Yes. To transfer a VM, use the {linkto(../../../computing/iaas/instructions/vm/v
 
 {/cut}
 
-## Disks and images
+## {heading(Disks and images)[id=iaas-faq-disks-and-images]}
 
 {cut(How do I increase the disk?)}
 
@@ -292,13 +292,13 @@ Replacement of the root disk is possible only if another disk has already been c
 
 {cut(Is it possible to create a disk snapshot?)}
 
-Creating a disk snapshot is available from [VK Cloud management console or OpenStack CLI](../instructions/volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
+Creating a disk snapshot is available from [VK Cloud management console or OpenStack CLI](../instructions/volumes#iaas-volumes-snapshots-use). The created snapshot will be stored until the disk itself is deleted.
 
 {/cut}
 
 {cut(How do I restore a disk from a snapshot?)}
 
-Use the [instructions](../instructions/volumes#disk_snapshots).
+Use the [instructions](../instructions/volumes#iaas-volumes-snapshots-use).
 
 {/cut}
 
@@ -349,7 +349,7 @@ where `<IMAGE_NAME>` is the name of the image whose ID should be displayed.
 
 {/cut}
 
-## File storage
+## {heading(File storage)[id=iaas-faq-file-storage]}
 
 {cut(What is file storage intended for?)}
 
@@ -426,7 +426,7 @@ Yes, you can, for more information, see the article [File Storage management](..
 
 {/cut}
 
-## Licensing
+## {heading(Licensing)[id=iaas-faq-licensing]}
 
 {cut(How do I get a Windows Server license?)}
 

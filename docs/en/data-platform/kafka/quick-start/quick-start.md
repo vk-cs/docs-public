@@ -11,7 +11,7 @@ After completing all the steps of a quick start, you will:
 
 {note:warn}
 
-The instance of Cloud Kafka is [charged](../tariffication) and consumes computing resources. After passing the quick start [delete the service instance](#delete_unused_resources) if you don't need it anymore.
+The instance of Cloud Kafka is [charged](../tariffication) and consumes computing resources. After passing the quick start [delete the service instance](#kafka-quick-start-delete) if you don't need it anymore.
 
 {/note}
 
@@ -181,7 +181,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
 {/tabs}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=kafka-quick-start-delete]}
 
 The instance of Cloud Kafka is [charged](../tariffication) and consumes computing resources. If you don't need it anymore, delete it.
 

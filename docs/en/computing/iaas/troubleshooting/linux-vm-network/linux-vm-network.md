@@ -18,7 +18,7 @@ The described approaches can also be used when access is lost to another applica
 
    This operation can help if the VM is not responding or its network interface is initialized incorrectly:
    1. [Stop](../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) VM.
-   1. For a stopped VM [run](../../instructions/vm/vm-manage#forced_vm_reboot) forced reboot.
+   1. For a stopped VM [run](../../instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) forced reboot.
 
    If this does not solve the problem, follow the remaining steps and proceed to diagnostics.
 
@@ -291,7 +291,7 @@ Check that the network interface is configured correctly:
 
 7. Check for SSH access to the VM. If access does not appear, [go to the application check](#2_make_sure_that_the_necessary_applications_are_running_on_the_vm).
 
-## 2. Make sure that the necessary applications are running on the VM
+## {heading(2. Make sure that the necessary applications are running on the VM)[id=2_make_sure_that_the_necessary_applications_are_running_on_the_vm]}
 
 The network interface may be fine, but applications and services may not be running or running on a non-standard port.
 
@@ -458,7 +458,7 @@ Check the SSH operation:
 
     {/tabs}
 
-## 3. Check the settings of the virtual machine firewall
+## {heading(3. Check the settings of the virtual machine firewall)[id=3_check_the_settings_of_the_virtual_machine_firewall]}
 
 If a firewall is configured on a virtual machine (for example, `iptables`, `ufw`, `firewalld`), it may prevent connection, even if the IP address of the virtual machine is correct, and the SSH service is configured and running.
 
@@ -559,7 +559,7 @@ To turn on the firewall again:
     
     {/tabs}
 
-## 4. Check the settings of the VK Cloud security groups
+## {heading(4. Check the settings of the VK Cloud security groups)[id=4_check_the_settings_of_the_vk_cloud_security_groups]}
 
 Incorrectly configured security groups can prevent SSH connection, even if there are no obstacles at the VM level.
 
@@ -615,6 +615,6 @@ To configure security group rules again:
 
     {/note}
 
-## 5. Contact technical support
+## {heading(5. Contact technical support)[id=5_contact_technical_support]}
 
 If the diagnostics did not help in solving the problem, [contact technical support](mailto:support@mcs.mail.ru), by providing the information obtained during the diagnosis.

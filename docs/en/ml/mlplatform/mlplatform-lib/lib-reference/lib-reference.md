@@ -5,17 +5,17 @@ These methods allow you to perform the following operations:
 - Deploy ML models on MLflow Deploy instances and verify that they work.
 - Get ML model predictions.
 
-## get_flavors
+## {heading(get_flavors)[id=mllib-lib-reference-get_flavors]}
 
 Get a list of all [VM configuration templates](/en/computing/iaas/concepts/about#flavors) available for creating JupyterHub, MLflow, MLflow Deploy instances.
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_flavors-arguments]}
 
 No arguments.
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_flavors-payloads]}
 
 A list of available VM configuration templates. Each item in the list contains the following information:
 
@@ -25,7 +25,7 @@ A list of available VM configuration templates. Each item in the list contains t
 - number of CPU cores
 - additional specifications
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-get_flavors-signature]}
 
 {cut(Method signature)}
 
@@ -99,21 +99,21 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## get_internal_networks
+## {heading(get_internal_networks)[id=mllib-lib-reference-get_internal_networks]}
 
-Get a list of all [standard networks](/en/networks/vnet/concepts/net-types#standard_network) available in the project.
+Get a list of all [standard networks](/en/networks/vnet/concepts/net-types#vnet-net-types-standard-net) available in the project.
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_internal_networks-arguments]}
 
 No arguments.
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_internal_networks-payloads]}
 
 List of standard networks of the project. Each item in the list contains the ID, name, [SDN](/ru/networks/vnet/concepts/sdn "change-lang") and other network parameters.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-get_internal_networks-signature]}
 
 {cut(Method signature)}
 
@@ -179,21 +179,21 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## get_external_networks
+## {heading(get_external_networks)[id=mllib-lib-reference-get_external_networks]}
 
 Get a list of all [external networks](/en/networks/vnet/concepts/net-types#external_net) available in the project.
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_external_networks-arguments]}
 
 No arguments.
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_external_networks-payloads]}
 
 A list of the project's external networks. Each list item contains ID, name, [SDN](/ru/networks/vnet/concepts/sdn "change-lang"), and other network parameters.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-get_external_networks-signature]}
 
 {cut(Method signature)}
 
@@ -248,7 +248,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## create_jupyter_hub
+## {heading(create_jupyter_hub)[id=mllib-lib-reference-create_jupyter_hub]}
 
 Create a JupyterHub instance.
 
@@ -260,7 +260,7 @@ As part of the Cloud ML Platform, the JupyterHub instance is used to develop and
 
 Required token role: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-create_jupyter_hub-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -309,7 +309,7 @@ Password requirements:
 |`str`
 |The identifier of the configuration template to create the VM instance.
 
-The list of configuration templates and their identifiers can be obtained using the [get_flavors](#get_flavors) method
+The list of configuration templates and their identifiers can be obtained using the [get_flavors](#mllib-lib-reference-get_flavors) method
 
 |`volumes`
 
@@ -344,7 +344,7 @@ MLPlatformVolumeIn(
 |`MLPlatformNetworkIn`
 |The network to which the instance will be connected.
 
-A network is described by an object of the `MLPlatformVolumeIn` class with the `network_id` field containing the network identifier. The lists of standard and external networks of the project and their identifiers can be obtained using the methods of the [get_internal_networks](#get_internal_networks) and [get_external_networks](#get_external_networks) methods.
+A network is described by an object of the `MLPlatformVolumeIn` class with the `network_id` field containing the network identifier. The lists of standard and external networks of the project and their identifiers can be obtained using the methods of the [get_internal_networks](#mllib-lib-reference-get_flavors) and [get_external_networks](#mllib-lib-reference-get_flavors) methods.
 
 Example of network description:
 
@@ -368,11 +368,11 @@ Requirements for the new bucket name:
 - Must begin and end with lowercase Latin letters or numbers only
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-create_jupyter_hub-payloads]}
 
 An object of class `VmDetailInfo` with information about the created JupyterHub instance.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-create_jupyter_hub-signature]}
 
 {cut(Method signature)}
 
@@ -475,7 +475,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## attach_s3_bucket_to_jh
+## {heading(attach_s3_bucket_to_jh)[id=mllib-lib-reference-attach_s3_bucket_to_jh]}
 
 Connect the bucket to the JupyterHub instance.
 
@@ -487,7 +487,7 @@ Only one bucket can be connected to one instance.
 
 Required role of the token: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-attach_s3_bucket_to_jh-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -501,7 +501,7 @@ Required role of the token: `Administrator`. [Read more about token roles](../li
 |`str`
 |JupyterHub instance identifier.
 
-A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_flavors) method
 
 |`s3fs_bucket`
 
@@ -519,11 +519,11 @@ Requirements for the new bucket name:
 - Must begin and end with lowercase Latin letters or numbers only
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-attach_s3_bucket_to_jh-payloads]}
 
 There is no return value.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-attach_s3_bucket_to_jh-signatures]}
 
 {cut(Method signature)}
 
@@ -567,7 +567,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## create_mlflow
+## {heading(create_mlflow)[id=mllib-lib-reference-create_mlflow]}
 
 Create an MLflow instance connected to an existing JupyterHub instance.
 
@@ -579,7 +579,7 @@ Within Cloud ML Platform, the MLflow instance is used to store ML models and the
 
 Required role of the token: `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-create_mlflow-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -599,7 +599,7 @@ Required role of the token: `Administrator`. [Read more about token roles](../li
 |`str`
 |The identifier of an existing JupyterHub instance to which the MLflow instance will be connected.
 
-A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`domain_name`
 
@@ -619,7 +619,7 @@ Domain name requirements:
 |`str`
 |The identifier of the configuration template to create the VM instance.
 
-The list of configuration templates and their identifiers can be obtained using the [get_flavors](#get_flavors) method
+The list of configuration templates and their identifiers can be obtained using the [get_flavors](#mllib-lib-reference-get_flavors) method
 
 |`volumes`
 
@@ -654,7 +654,7 @@ MLPlatformVolumeIn(
 |`MLPlatformNetworkIn`
 |The network to which the instance will be connected. Must match the network of the JupyterHub instance to which the MLflow instance will be connected.
 
-The network is described by an object of the `MLPlatformVolumeIn` class with the `network_id` field containing the network identifier. Lists of the project's standard and external networks and their identifiers can be obtained using the [get_internal_networks](#get_internal_networks) and [get_external_networks](#get_external_networks) methods.
+The network is described by an object of the `MLPlatformVolumeIn` class with the `network_id` field containing the network identifier. Lists of the project's standard and external networks and their identifiers can be obtained using the [get_internal_networks](#mllib-lib-reference-get_internal_networks) and [get_external_networks](#mllib-lib-reference-get_external_networks) methods.
 
 Example of network description:
 
@@ -679,11 +679,11 @@ To preserve ML models and their results, it is recommended to use the demo mode 
 {/note}
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-create_mlflow-payloads]}
 
 An object of the `VmDetailInfo` class with information about the created MLflow instance.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-create_mlflow-signature]}
 
 {cut(Method signature)}
 
@@ -795,7 +795,7 @@ Within Cloud ML Platform, the MLflow Deploy instance is used to deploy MLflow mo
 
 Required token role: `Administrator`. [Learn more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-create_deploy-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -815,7 +815,7 @@ Required token role: `Administrator`. [Learn more about token roles](../lib-auth
 |`str`
 |The identifier of an existing MLflow or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance to which the MLflow Deploy instance will be connected.
 
-A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their identifiers can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`username`
 
@@ -847,7 +847,7 @@ Domain name requirements:
 |`str`
 |The identifier of the configuration template to create the VM instance.
 
-The list of configuration templates and their identifiers can be obtained using the [get_flavors](#get_flavors) method
+The list of configuration templates and their identifiers can be obtained using the [get_flavors](#mllib-lib-reference-get_flavors) method
 
 |`volumes`
 
@@ -882,7 +882,7 @@ MLPlatformVolumeIn(
 |`MLPlatformNetworkIn`
 |The network to which the instance will be connected. Must match the network of the JupyterHub or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance to which the MLflow Deploy instance will be connected.
 
-A network is described by an object of `MLPlatformVolumeIn` class with `network_id` field containing the network identifier. The lists of standard and external networks of the project and their identifiers can be obtained using the methods [get_internal_networks](#get_internal_networks) and [get_external_networks](#get_external_networks).
+A network is described by an object of `MLPlatformVolumeIn` class with `network_id` field containing the network identifier. The lists of standard and external networks of the project and their identifiers can be obtained using the methods [get_internal_networks](#mllib-lib-reference-get_internal_networks) and [get_external_networks](#mllib-lib-reference-get_external_networks).
 
 Example of network description:
 
@@ -907,11 +907,11 @@ The operating mode of the MLflow Deploy instance must match the operating mode o
 {/note}
 |===
 
-### Returning value
+### {heading(Returning value)[id=mllib-lib-reference-create_deploy-arguments-payloads]}
 
 An object of class `VmDetailInfo` with information about the created MLflow Deploy instance.
 
-### Method signature and usage example
+### {heading(Method signature and usage example)[id=mllib-lib-reference-create_deploy-arguments-signature]}
 
 {cut(Method signature)}
 
@@ -1015,21 +1015,21 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## get_all_instances_info
+## {heading(get_all_instances_info)[id=mllib-lib-reference-get_all_instances_info]}
 
 Get a list of all Cloud ML Platform instances: JupyterHub, MLflow, and MLflow Deploy.
 
 Required token role: `Administrator`. [Learn more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_all_instances_info-arguments]}
 
 There are no arguments.
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_all_instances_info-payloads]}
 
 A list of objects of class `VmDetailInfo` with information about all available JupyterHub, MLflow and MLflow Deploy instances in the project.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-get_all_instances_info-signature]}
 
 {cut(Method signature)}
 
@@ -1105,13 +1105,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## get_instance_info
+## {heading(get_instance_info)[id=mllib-lib-reference-get_instance_info]}
 
 Get information about a Cloud ML Platform instance (JupyterHub, MLflow, MLflow Deploy) by its ID.
 
 Required role of the token: `Administrator`. [Learn more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_instance_info-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1125,14 +1125,14 @@ Required role of the token: `Administrator`. [Learn more about token roles](../l
 |`str`
 |Cloud ML Platform instance identifier.
 
-A list of all Cloud ML Platform instances and their IDs can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their IDs can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_instance_info-payloads]}
 
 An object of class `VmDetailInfo` with information about the Cloud ML Platform instance with the specified identifier.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-get_instance_info-signature]}
 
 {cut(Method signature)}
 
@@ -1218,7 +1218,7 @@ Remove the Cloud ML Platform instance (JupyterHub, MLflow, or MLflow Deploy).
 
 Required token role: `Administrator`. [Learn more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-delete_instance-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1232,14 +1232,14 @@ Required token role: `Administrator`. [Learn more about token roles](../lib-auth
 |`str`
 |Cloud ML Platform instance identifier.
 
-A list of all Cloud ML Platform instances and their IDs can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their IDs can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-delete_instance-payloads]}
 
 There is no return value.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-delete_instance-signature]}
 
 {cut(Method signature)}
 
@@ -1293,7 +1293,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## create_deployment
+## {heading(create_deployment)[id=mllib-lib-reference-create_deployment]}
 
 Create a deployment of the remote ML model.
 
@@ -1305,7 +1305,7 @@ The deployment is created as a Docker container with the ML model packed in it, 
 
 Required role of the token: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-create_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1319,7 +1319,7 @@ Required role of the token: `User` or `Administrator`. [Read more about token ro
 |`str`
 |MLflow Deploy instance name on which the remote ML model will be deployed.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`deployment_name`
 
@@ -1349,7 +1349,7 @@ A list of all Cloud ML Platform instances and their names can be obtained using 
 
 (mandatory)
 |`str`
-|User login to access the methods of the remote ML model, i.e. the [predict_model](#predict_model) and [ping_model](#ping_model) methods
+|User login to access the methods of the remote ML model, i.e. the [predict_model](#mllib-lib-reference-get_flavors) and [ping_model](#mllib-lib-reference-get_flavors) methods
 
 |`model_password`
 
@@ -1366,11 +1366,11 @@ A list of all Cloud ML Platform instances and their names can be obtained using 
 If `None` is specified, the first free port in the range 62000-65000 will be selected
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-create_deployment-payloads]}
 
 An object of the `DeployOut` class with information about the created ML model deployment: its name, status and other parameters.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-create_deployment-signature]}
 
 {cut(Method signature)}
 
@@ -1459,7 +1459,7 @@ Get a list of all ML model deployments available on the MLflow Deploy instance.
 
 Required token role: `User` or `Administrator`. [Learn more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-list_deployments-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1473,7 +1473,7 @@ Required token role: `User` or `Administrator`. [Learn more about token roles](.
 |`str`
 |MLflow Deploy instance name.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`username`
 
@@ -1488,11 +1488,11 @@ A list of all Cloud ML Platform instances and their names can be obtained using 
 |The administrator password for the JupyterHub or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance that the MLflow Deploy instance is associated with
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-list_deployments-payloads]}
 
 A list of objects of the `DeployOut` class with information about ML model deployments available on the specified instance: their names, statuses and other parameters.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-list_deployments-signature]}
 
 {cut(Method signature)}
 
@@ -1563,13 +1563,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## get_deployment
+## {heading(get_deployment)[id=mllib-lib-reference-get_deployment]}
 
 Get information about the ML model deployment by its name.
 
 Required role of the token: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-get_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1583,7 +1583,7 @@ Required role of the token: `User` or `Administrator`. [Read more about token ro
 |`str`
 |MLflow Deploy instance name.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`deployment_name`
 
@@ -1606,11 +1606,11 @@ A list of all deployments and their names can be obtained using the [list_deploy
 |The administrator password for the JupyterHub or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance that the MLflow Deploy instance is associated with
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-get_deployment-payloads]}
 
 An object of the `DeployOut` class with information about the specified MLmodel deployment: its name, status and other parameters.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-get_deployment-signature]}
 
 {cut(Method signature)}
 
@@ -1683,13 +1683,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## delete_deployment
+## {heading(delete_deployment)[id=mllib-lib-reference-delete_deployment]}
 
 Remove the ML model deployment.
 
 Required token role: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-delete_deployment-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1703,7 +1703,7 @@ Required token role: `User` or `Administrator`. [Read more about token roles](..
 |`str`
 |MLflow Deploy instance name.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`deployment_name`
 
@@ -1726,11 +1726,11 @@ A list of all deployments and their names can be obtained using the [list_deploy
 |The administrator password for the JupyterHub or [MLflow Standalone](../../concepts/mlflow-modes#standalone) instance that the MLflow Deploy instance is associated with
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-delete_deployment-payloads]}
 
 There is no return value.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-delete_deployment-signature]}
 
 {cut(Method signature)}
 
@@ -1804,13 +1804,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## ping_model
+## {heading(ping_model)[id=mllib-lib-reference-ping_model]}
 
 Verify that the remote ML model is ready for operation.
 
 Required token role: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-ping_model-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1824,7 +1824,7 @@ Required token role: `User` or `Administrator`. [Read more about token roles](..
 |`str`
 |MLflow Deploy instance name, on which the ML model is deployed.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`deployment_name`
 
@@ -1838,20 +1838,20 @@ A list of all deployments and their names can be obtained using the [list_deploy
 
 (mandatory)
 |`str`
-|User login for access to methods of the remote ML-model, which was specified in the method call  [create_deployment](#create_deployment)
+|User login for access to methods of the remote ML-model, which was specified in the method call  [create_deployment](#mllib-lib-reference-get_flavors)
 
 |`model_password`
 
 (mandatory)
 |`str`
-|User password for access to the remote ML-model methods, which was specified in the method call  [create_deployment](#create_deployment)
+|User password for access to the remote ML-model methods, which was specified in the method call  [create_deployment](#mllib-lib-reference-create_deployment)
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-ping_model-payloads]}
 
 New line character `\n` if the model is ready for operation.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-ping_model-signatures]}
 
 {cut(Method signature)}
 
@@ -1892,7 +1892,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. [Create](../../mlflow/instructions/create) an MLflow instance, if you have not already done it.
 1. Create and train an ML model, if you have not already done it.
 1. [Create](/ru/ml/mlplatform/deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
-1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#create_deployment) method.
+1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#mllib-lib-reference-create_deployment) method.
 1. Run the Python script:
 
    ```python
@@ -1911,13 +1911,13 @@ When working in a production environment, do not operate tokens in the clear. Us
 
 {/cut}
 
-## predict_model
+## {heading(predict_model)[id=mllib-lib-reference-predict_model]}
 
 Obtain ML model prediction for given input data.
 
 Required token role: `User` or `Administrator`. [Read more about token roles](../lib-authz).
 
-### Method arguments
+### {heading(Method arguments)[id=mllib-lib-reference-predict_model-arguments]}
 
 [cols="1,1,4", options="header", width=100%]
 |===
@@ -1937,7 +1937,7 @@ Required token role: `User` or `Administrator`. [Read more about token roles](..
 |`str`
 |MLflow Deploy instance name, on which the ML model is deployed.
 
-A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#get_all_instances_info) method
+A list of all Cloud ML Platform instances and their names can be obtained using the [get_all_instances_info](#mllib-lib-reference-get_all_instances_info) method
 
 |`deployment_name`
 
@@ -1951,20 +1951,20 @@ A list of all deployments and their names can be obtained using the [list_deploy
 
 (mandatory)
 |`str`
-|User login for access to methods of the remote ML-model, which was specified in the [create_deployment](#create_deployment) method call
+|User login for access to methods of the remote ML-model, which was specified in the [create_deployment](#mllib-lib-reference-create_deployment) method call
 
 |`model_password`
 
 (mandatory)
 |`str`
-|The user password for accessing the remote ML model methods, which was specified in the [create_deployment](#create_deployment) method call
+|The user password for accessing the remote ML model methods, which was specified in the [create_deployment](#mllib-lib-reference-create_deployment) method call
 |===
 
-### Return value
+### {heading(Return value)[id=mllib-lib-reference-predict_model-payloads]}
 
 ML model prediction for given input data in the `Dict[str, Any]` format.
 
-### Method signature and example of use
+### {heading(Method signature and example of use)[id=mllib-lib-reference-predict_model-signature]}
 
 {cut(Method signature)}
 
@@ -2006,7 +2006,7 @@ When working in a production environment, do not operate tokens in the clear. Us
 1. [Create](../../mlflow/instructions/create) an MLflow instance, if you have not already done it.
 1. Create and train an ML model, if you have not already done it.
 1. [Create](/ru/ml/mlplatform/deploymlflow/instructions/create "change-lang") instance of MLflow Deploy, if you have not already done it.
-1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#create_deployment) method.
+1. Deploy the ML model on the MLflow Deploy instance using the [create_deployment](#mllib-lib-reference-create_deployment) method.
 1. Run the Python script:
 
    ```python

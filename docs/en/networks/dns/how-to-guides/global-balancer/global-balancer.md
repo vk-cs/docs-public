@@ -151,4 +151,4 @@ If you no longer need the added resources, delete them:
 
 1. {linkto(../../../../networks/dns/instructions/publicdns/global-balancer#dns-global-balancer-delete)[text=Delete]} the load balancing group.
 1. {linkto(../../../../networks/dns/instructions/publicdns/dns-zone#dns-dns-zone-delete)[text=Delete]} the DNS zone.
-1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Delete]} the VMs.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Delete]} the VMs.

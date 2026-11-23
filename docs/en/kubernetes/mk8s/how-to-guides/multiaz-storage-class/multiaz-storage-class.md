@@ -1,12 +1,12 @@
-Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes) so that Kubernetes, when scheduling a pod, could [dynamically provide](/en/kubernetes/mk8s/reference/pvs-and-pvcs#dynamic-provisioning) a [persistent volume (PV)](/en/kubernetes/mk8s/reference/pvs-and-pvcs) located in the same availability zone as the pod. In Kubernetes, this scheduling is controlled by the [Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/) policy. This policy helps to increase fault tolerance and ensure high availability of the cluster by distributing the [workload](https://kubernetes.io/docs/concepts/workloads/) between different availability zones.
+Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-storage-classes) so that Kubernetes, when scheduling a pod, could [dynamically provide](/en/kubernetes/mk8s/reference/pvs-and-pvcs#dynamic-provisioning) a [persistent volume (PV)](/en/kubernetes/mk8s/reference/pvs-and-pvcs) located in the same availability zone as the pod. In Kubernetes, this scheduling is controlled by the [Topology Spread Constraints](https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/) policy. This policy helps to increase fault tolerance and ensure high availability of the cluster by distributing the [workload](https://kubernetes.io/docs/concepts/workloads/) between different availability zones.
 
-## Before you begin
+## {heading(Before you begin)[id=mk8s-multiaz-storage-class-prepare]}
 
 1. [Create](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster of the latest version, if not done so already.
 1. [Install and configure](/en/kubernetes/mk8s/connect/kubectl) `kubectl`, if not done so already.
 1. [Connect](/en/kubernetes/mk8s/connect/kubectl#connect) to the cluster via `kubectl`.
 
-## {counter(storageclass)}. Add a multi-zone StorageClass for PV
+## {heading({counter(storageclass)}. Add a multi-zone StorageClass for PV)[id=maz-storageclass]}
 
 1. Create a manifest file for `StorageClass`, for example `csi-ceph-ssd.yaml`, and add the following content to the file:
 
@@ -24,7 +24,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
    ```
    Here: 
 
-   - `type: ceph-ssd` specifies the [disk type](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes) for the PV. 
+   - `type: ceph-ssd` specifies the [disk type](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-storage-classes) for the PV. 
    - `volumeBindingMode: WaitForFirstConsumer` delays creating and binding the PV until the first pod that uses the respective PVC is created. This way, this pod will be scheduled for the node first, and then Kubernetes will create a PV in the same availability zone as the node. This helps to avoid situations when the pod and the PV end up in different availability zones.
 
      If you try to move this pod to another availability zone after its first run, you will receive an error containing similar text:
@@ -41,7 +41,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
    kubectl apply -f csi-ceph-ssd.yaml
    ```
 
-## {counter(storageclass)}. Create an application
+## {heading({counter(storageclass)}. Create an application)[id=mk8s-multiaz-storage-class-app]}
 
 1. Create a manifest for the workload controller of the `StatefulSet` type for the `test-statefulset` namespace:
 
@@ -146,7 +146,7 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
       pvc-f32f486e-75e9-4ba5-b553-ffbbad180b91   ...   Bound     csi-ceph-ssd   ...   test-multiaz-node-group-ud1-1
       ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-multiaz-storage-class-delete-resources]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} multi-zone storage classes, delete them:
 
@@ -166,6 +166,6 @@ Use multi-zone [storage classes](/en/kubernetes/mk8s/concepts/storage#pre_config
    {/tab}
    {/tabs}
 
-1. [Delete](/en/kubernetes/mk8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the created PVs.
+1. [Delete](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-storage-classes) the created PVs.
 
 {include(/en/_includes/_delete-test-cluster-short.md)}

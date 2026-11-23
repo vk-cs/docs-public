@@ -18,7 +18,7 @@ Several [counters and graphs](#available_monitoring_metrics) will be displayed:
   On the ruler at the top, you can select the time period of interest for which you want to display data on the charts.
   The default period is 12 hours.
 
-## Available monitoring metrics
+## {heading(Available monitoring metrics)[id=available_monitoring_metrics]}
 
 ### Counters
 

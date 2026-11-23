@@ -11,7 +11,7 @@ Tariffication specifics:
 - When the cluster is stopped, the tariffication process for each node ceases once the node is stopped.
 - The tariffication for a cluster ends when its deletion process begins.
 
-## What is charged
+## {heading(What is charged)[id=mk8s-tariffication-yes]}
 
 - CPU (vCPU) — for each core. 1 vCPU corresponds to 1 physical core of the virtualization server.
 - Random access memory (RAM) — for each 1 GB of RAM.
@@ -20,7 +20,7 @@ Tariffication specifics:
 - [Service load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers).
 - [Floating IP addresses](/en/networks/vnet/concepts/ips-and-inet#floating-ip).
 
-## What is not charged
+## {heading(What is not charged)[id=mk8s-tariffication-no]}
 
 - Incoming and outgoing traffic.
 - Monitoring.

@@ -11,7 +11,7 @@ Managed Containers ensures the proper functioning of Kubernetes clusters, while:
 
 {/cut}
 
-## Cluster topologies
+## {heading(Cluster topologies)[id=k8s-architecture-topology]}
 
 A Kubernetes cluster in Managed Containers consists of two types of nodes, master nodes and worker nodes:
 
@@ -57,7 +57,7 @@ Regardless of the cluster topology chosen, the master nodes use distributed key-
 
 For high availability at the worker node level, it is recommended to create several groups of worker nodes in different availability zones and place application replicas on these nodes so that the replicas are also in different availability zones.
 
-## Cluster environment
+## {heading(Cluster environment)[id=k8s-architecture-cluster-environment]}
 
 Master and worker nodes use the AlmaLinux OS (starting with Kubernetes 1.31).
 
@@ -71,7 +71,7 @@ All interaction with the cluster is through the [Kubernetes API](https://kuberne
 
 The cluster API endpoint in the Managed Containers service is placed behind [dedicated load balancer](/en/kubernetes/k8s/concepts/network), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
 
-## Integration with VK Cloud platform
+## {heading(Integration with VK Cloud platform)[id=k8s-architecture-platform-integration]}
 
 Integration with the VK Cloud platform is achieved through standard Kubernetes interfaces:
 
@@ -93,13 +93,13 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
   Calico integrates with VK Cloud platform using SDN Sprut. See [Network in cluster](/en/kubernetes/k8s/concepts/network) for details.
 
-## Built-in support for the Open Policy Agent
+## {heading(Built-in support for the Open Policy Agent)[id=k8s-architecture-opa-gatekeeper]}
 
 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) can access various information and components of a Kubernetes cluster. With certain settings, pods themselves and the Kubernetes cluster in which they run can be vulnerable to attacks.
 
 [Open Policy Agent Gatekeeper](/en/kubernetes/k8s/reference/gatekeeper) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
-## Cluster scaling options
+## {heading(Cluster scaling options)[id=k8s-architecture-scaling-features]}
 
 Managed Containers has built-in [scaling capabilities for master nodes and worker nodes](/en/kubernetes/k8s/concepts/scale) that automatically adjusts the number of nodes depending on the workload requirements:
 

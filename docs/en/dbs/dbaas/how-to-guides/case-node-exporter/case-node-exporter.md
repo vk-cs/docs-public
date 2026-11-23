@@ -8,9 +8,9 @@ This instruction will help:
 
 Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=dbaas-case-node-exporter-prepare]}
 
-1. [Create](/en/networks/vnet/instructions/net#creating_network) a virtual network, for example, `monitoring-net`.
+1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a virtual network, for example, `monitoring-net`.
 1. [Create](/en/computing/iaas/instructions/vm/vm-create) VM for Prometheus server:
 
    - name: `Centos_8_5_Prometheus`;
@@ -32,7 +32,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. [Deploy](/en/applications-and-services/marketplace/initial-configuration/grafana-start) Grafana 10 is on the `monitoring-net` network.
 
-## 2. Install and configure Prometheus
+## {heading(2. Install and configure Prometheus)[id=dbaas-case-node-exporter-install-prometheus]}
 
 1. [Install](/en/dbs/dbaas/instructions/managing-extensions#installing_the_extension) the **Node exporter** extension for the `Redis-5` DB instance. When installing, specify the parameter `listen_port` = `9100`.
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
@@ -155,7 +155,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. (Optional) [Unbind](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-disassociate) floating address from VM `Centos_8_5_Prometheus`.
 
-## 3. Set up data visualization in Grafana
+## {heading(3. Set up data visualization in Grafana)[id=dbaas-case-node-exporter-grafana]}
 
 1. Go to the Grafana web interface.
 1. [Add](https://grafana.com/docs/grafana/v10.0/administration/data-source-management/) new data source: to **Prometheus server URL** specify `http://10.0.3.7:9090`.
@@ -185,7 +185,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 1. Make sure to change the indicators of the Grafana charts.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=dbaas-case-node-exporter-delete-resources]}
 
 The created resources are charged and quotas are spent. If you don't need them anymore:
 

@@ -1,4 +1,4 @@
-## Before you begin
+## {heading(Before you begin)[id=k8s-install-advanced-registry-prepare]}
 
 {include(/en/_includes/_addon-prep.md)}
 
@@ -41,7 +41,7 @@
 
    Write down the output of the command (in the format `<login>:<encrypted password>`).
 
-1. [Add](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) floating IP or [find](/en/networks/vnet/instructions/ip/floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
+1. [Add](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) floating IP or [find](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-add) an existing unbound floating IP address.
 
    Write down this IP address. It is used to access the Docker registry.
 
@@ -139,7 +139,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {/tabs}
 
-1. [Get the data to access the registry](#connecting_to_registry).
+1. [Get the data to access the registry](#k8s-install-advanced-registry-connect).
 
 {/tab}
 
@@ -239,7 +239,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {/tabs}
 
-1. [Get the data to access the registry](#connecting_to_registry).
+1. [Get the data to access the registry](#k8s-install-advanced-registry-connect).
 
 {/tab}
 
@@ -249,7 +249,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
 
 {note:info}
 
-- When editing the add-on settings code, use the information [obtained earlier](#before_you_begin).
+- When editing the add-on settings code, use the information [obtained earlier](#k8s-install-advanced-registry-prepare).
 - You can find the full add-on settings code along with the description of the fields on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
 
 {/note}
@@ -289,7 +289,7 @@ Specify:
 
 Once done with editing the add-on code, continue with the installation process.
 
-## Connecting to registry
+## {heading(Connecting to registry)[id=k8s-install-advanced-registry-connect]}
 
 1. Write down the data that was used in the add-on settings code when installing it:
 

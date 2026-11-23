@@ -172,7 +172,7 @@ The DB instance is charged and consumes computational resources. After completin
 
    {/tabs}
 
-## 1. Create PostgreSQL DB instance
+## {heading(1. Create PostgreSQL DB instance)[id=1_create_postgresql_db_instance]}
 
 1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the instance will be placed.
@@ -247,7 +247,7 @@ The DB instance is charged and consumes computational resources. After completin
 
     Wait until the installation of the extension is completed: its status should change from `Creating` to `Active`.
 
-## 4. Connect to the database
+## {heading(4. Connect to the database)[id=4_connect_to_the_database]}
 
 Connect to the `tsdb1` database via the `psql` utility:
 
@@ -506,7 +506,7 @@ The monitoring service is enabled for PostgreSQL. Look through the gathered moni
 1. Navigate to the **Monitoring** tab.
 1. Select the required time interval and look at the collected data.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=delete_unused_resources]}
 
 The DB instance [is charged](../tariffication) and consumes computational resources. If you no longer need it, then:
 

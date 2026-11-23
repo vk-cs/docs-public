@@ -14,7 +14,7 @@ The following will be used:
   - the [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) utility is installed;
   - there is an OS image file named `image.raw` that is at least 500 GB in size.
 
-## 1. Preparatory steps
+## {heading(1. Preparatory steps)[id=s3-load-large-image-prepare]}
 
 1. Create an [account](/en/storage/s3/instructions/account-management) and a [bucket](/en/storage/s3/instructions/buckets/create-bucket) with the `uc_bucket` name.
 1. Make sure you have the AWS CLI [installed and configured](/ru/tools-for-using-services/cli/aws-cli "change-lang"). Specify the credentials for connecting to the bucket in it (`Access key ID` and `Secret key`). Open the `~/.aws/config` configuration file and make changes to it:
@@ -35,7 +35,7 @@ The following will be used:
 1. Install the [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) utility on the VM.
 1. [Create](/en/computing/iaas/instructions/volumes#create_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/instructions/volumes#mount_disk) it to the VM.
 
-## 2. Upload the image from the local machine to the object storage
+## {heading(2. Upload the image from the local machine to the object storage)[id=s3-load-large-image-download]}
 
 1. On the local machine, run the command:
 
@@ -114,7 +114,7 @@ The following will be used:
 
 1. Wait for the uploading to complete. The output of the `aws s3api list-multipart-uploads` command should not contain any data in the `Uploads` block.
 
-## 3. Upload the image to the VK Cloud disk
+## {heading(3. Upload the image to the VK Cloud disk)[id=s3-load-large-image-download-on-volume]}
 
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the VM via SSH.
 1. Check for a mounted disk using the `lsblk` command.
@@ -142,7 +142,7 @@ The following will be used:
 
 You can also [disconnect](/en/computing/iaas/instructions/volumes#mount_disk) the disk with the OS image placed on it from the current VM and use it as a [replacement for the root disk](/en/computing/iaas/instructions/volumes#replacing_root_disk) for another VM.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=s3-load-large-image-delete]}
 
 The created resources are charged and consume computing resources. If you don't need them anymore:
 

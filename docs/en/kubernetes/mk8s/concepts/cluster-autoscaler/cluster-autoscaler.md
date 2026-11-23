@@ -7,7 +7,7 @@ In worker node groups, Cluster Autoscaler:
 
 Cluster Autoscaler is pre-installed in all Kubernetes clusters that you create in the Managed Containers service, but it is not enabled by default. You need to enable automatic scaling manually for each group of worker nodes when [configuring its settings](/en/kubernetes/mk8s/instructions/helpers/node-group-settings).
 
-## Increasing the number of worker nodes
+## {heading(Increasing the number of worker nodes)[id=mk8s-cluster-autoscaler-increase-workers]}
 
 Cluster Autoscaler increases the number of worker nodes in a group when there are not enough resources on existing nodes to place pods on them.
 
@@ -15,7 +15,7 @@ When creating a new pod, it requests [resources](/en/kubernetes/mk8s/reference/r
 
 The number of nodes can only be increased to the maximum value that you set in its group settings. If automatic scaling is enabled, but worker nodes are not added, try the solutions described in [Cluster Autoscaler is enabled, but no new nodes are added](/en/kubernetes/mk8s/troubleshooting/cluster-does-not-scale-up).
 
-## Decreasing the number of worker nodes
+## {heading(Decreasing the number of worker nodes)[id=mk8s-cluster-autoscaler-decrease-workers]}
 
 Cluster Autoscaler checks the load of nodes in the cluster and decreases their number if the load is low and the nodes are underloaded, meaning all the pods can be placed on fewer nodes. To delete an underloaded worker node, Cluster Autoscaler:
 

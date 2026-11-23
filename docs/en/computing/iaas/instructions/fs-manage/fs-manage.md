@@ -264,7 +264,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 {/tabs}
 
-## Viewing a list of file storages
+## {heading(Viewing a list of file storages)[id=viewing_a_list_of_file_storages]}
 
 {tabs}
 
@@ -472,7 +472,7 @@ The size of the file storage cannot be reduced.
 
 {/tabs}
 
-## Deleting a snapshot
+## {heading(Deleting a snapshot)[id=deleting_a_snapshot]}
 
 {tabs}
 

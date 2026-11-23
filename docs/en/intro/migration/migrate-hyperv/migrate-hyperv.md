@@ -1,4 +1,4 @@
-## 1. Check the possibility of migration
+## {heading(1. Check the possibility of migration)[id=migration-migrate-hyperv-check]}
 
 The Hyper-V virtual machine must meet the following requirements:
 
@@ -7,7 +7,7 @@ The Hyper-V virtual machine must meet the following requirements:
 - The current user has administrator rights.
 - At least one disk is connected to the VM.
 
-## 2. Prepare the VM for migration
+## {heading(2. Prepare the VM for migration)[id=migration-migrate-hyperv-vm-prepare]}
 
 {tabs}
 
@@ -37,7 +37,7 @@ The Hyper-V virtual machine must meet the following requirements:
 
 {/tabs}
 
-## 3. Export the virtual machine
+## {heading(3. Export the virtual machine)[id=migration-migrate-hyperv-export]}
 
 {tabs}
 
@@ -64,12 +64,12 @@ The Hyper-V virtual machine must meet the following requirements:
 
 {/tabs}
 
-## 4. Import the VM image to VK Cloud
+## {heading(4. Import the VM image to VK Cloud)[id=migration-migrate-hyperv-image-import]}
 
 To load a VM image, use the OpenStack CLI to avoid possible errors when processing large files by the web interface.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
-2. [Convert](/en/computing/iaas/how-to-guides/packer#1_convert_image_to_raw_format) the resulting export file `.vhdx` to RAW format.
+2. [Convert](/en/computing/iaas/how-to-guides/packer#iaas-packer-convert-image) the resulting export file `.vhdx` to RAW format.
 3. Upload the file to an existing VK Cloud project:
 
    ```console

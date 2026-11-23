@@ -2,13 +2,13 @@ You can connect to the Docker registry if the appropriate [add-on](/en/kubernete
 
 When [installing](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry) an add-on, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
 
-## Before you begin
+## {heading(Before you begin)[id=k8s-docker-registry-before-work]}
 
 1. [Make sure](/en/kubernetes/k8s/instructions/addons/manage-addons#viewing_addons) that the Docker registry add-on (`docker-registry`) is installed in the cluster.
 1. [Make sure](/en/kubernetes/k8s/connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.
-1. [Get the data](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry#connecting_to_registry) to access the Docker registry.
+1. [Get the data](/en/kubernetes/k8s/instructions/addons/advanced-installation/install-advanced-registry#k8s-install-advanced-registry-connect) to access the Docker registry.
 
-## Connecting to the Docker Registry
+## {heading(Connecting to the Docker Registry)[id=k8s-docker-registry-connect]}
 
 On the host from which you plan to connect to the registry:
 
@@ -82,7 +82,7 @@ Now you can do any operations with the registry, for example, to push Docker ima
 
 Read more about registry operations in [official Docker documentation](https://docs.docker.com/desktop/).
 
-## Using Docker registry in Kubernetes cluster
+## {heading(Using Docker registry in Kubernetes cluster)[id=k8s-docker-registry-using]}
 
 In order to deploy workloads in a cluster using images from the Docker registry:
 

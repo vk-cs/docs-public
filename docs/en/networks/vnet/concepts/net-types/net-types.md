@@ -1,6 +1,6 @@
 Cloud Networks service allows to work with several network types.
 
-## Standard network
+## {heading(Standard network)[id=vnet-net-types-standard-net]}
 
 _Standard network_ provides access to the subnets with the private IP addresses and exists within a single project.
 

@@ -738,7 +738,7 @@ This result demonstrates that:
 
 A running cluster consumes computing resources. If you no longer need it:
 
-- [stop](/en/kubernetes/mk8s/instructions/manage-cluster#start_or_stop_cluster) it to use it later;
+- [stop](/en/kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-start-stop) it to use it later;
 - [delete](/en/kubernetes/mk8s/instructions/manage-cluster#k8s-manage-cluster-delete) it permanently.
 - [Delete](/en/networks/balancing/instructions/manage-lb#balancing-manage-lb-delete) the load balancers.
 

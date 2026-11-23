@@ -23,11 +23,11 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 
 {/note}
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=marketplace-usergate-start-prepare-step]}
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with the Internet access, if one has not already been created.
-1. In the [settings of the subnet](/en/networks/vnet/instructions/net#editing_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a network with the Internet access, if one has not already been created.
+1. In the [settings of the subnet](/en/networks/vnet/instructions/net#vnet-net-add) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add) the UserGate NGFW service:
 
    - Select the previously created network with Internet access and subnet.
@@ -37,7 +37,7 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 
 1. (Optional) Configure an intermediate server (jump host) for the service VM to increase operational security.
 
-## 1. Add a network to the service
+## {heading(1. Add a network to the service)[id=marketplace-usergate-start-add-check]}
 
 {note:info}
 
@@ -59,10 +59,10 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
 1. Go to **Cloud Servers** → **Virtual**.
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the required network to the VM.
 1. Reboot the VM [using VK Cloud](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
 
-## 2. Check for the added network
+## {heading(2. Check for the added network)[id=marketplace-usergate-start-check-net]}
 
 1. Go to the UserGate console directly via the IP of the virtual machine or through the intermediate server.
 1. Go to **Settings** → **Network** → **Interfaces**.
@@ -79,7 +79,7 @@ Recommendations for working with the service:
 
 {/note}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=marketplace-usergate-start-delete]}
 
 The running service infrastructure consumes computing resources. If you no longer need it:
 

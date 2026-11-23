@@ -26,12 +26,12 @@ Requirements for the computer used to prepare the image:
 |At least 50 GB of free disk space to store Windows images and temporary files. SSD is recommended for faster file processing and image creation
 |===
 
-## Before you start
+## {heading(Before you start)[id=iaas-win-image-preparatory-steps]}
 
 1. Download the installation ISO image of the Windows OS that you plan to migrate to VK Cloud. It is recommended to use the en-US version of the image.
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-## 1. Prepare tools
+## {heading(1. Prepare tools)[id=iaas-win-image-toolkit-prepare]}
 
 1. Enable the Hyper-V virtualization engine.
 
@@ -62,7 +62,7 @@ Requirements for the computer used to prepare the image:
 1. [Download](https://github.com/cloudbase/windows-imaging-tools/archive/refs/heads/master.zip) the archive of the Windows Imaging Tools repository — a tool for automating the creation of Windows images.
 1. [Download](https://github.com/cloudbase/WindowsUpdateCLI/archive/refs/heads/master.zip) the archive of the WindowsUpdateCLI repository — a module for managing Windows updates.
 
-## 2. Create external virtual switch in Hyper-V
+## {heading(2. Create external virtual switch in Hyper-V)[id=iaas-win-image-switch-create]}
 
 This will allow your virtual machines created from the prepared image to connect to internet via a physical network adapter.
 
@@ -78,7 +78,7 @@ This will allow your virtual machines created from the prepared image to connect
 1. If you receive a warning that these changes may disrupt your current network connection, agree to continue.
 1. Complete the virtual switch creation by clicking the **OK** button.
 
-## 3. Configure Windows Imaging Tools
+## {heading(3. Configure Windows Imaging Tools)[id=iaas-win-image-config-prepare]}
 
 1. Unzip the Windows Imaging Tools repository archive to the root directory of the `C:` drive. This will create the `C:\windows-imaging-tools-master` directory.
 1. Create `ISO` and `IMG` directories in `C:\windows-imaging-tools-master`. The `ISO` directory will be used for ISO files, `IMG` — for the Windows image that will be created as a result of executing the instruction.
@@ -87,7 +87,7 @@ This will allow your virtual machines created from the prepared image to connect
 
     The ISO file will be mounted as a virtual drive. A new drive, for example `E:`, will appear in Windows Explorer.
 
-## 4. Prepare OS installation WIM file
+## {heading(4. Prepare OS installation WIM file)[id=iaas-win-image-file-prepare]}
 
 The Windows installation ISO image may contain several editions of the operating system. Since the installation is automatic, select the required edition in advance and export it to a separate WIM file. To do this:
 
@@ -132,7 +132,7 @@ The Windows installation ISO image may contain several editions of the operating
     * `SourceIndex` is the index number of the exported edition.
     * `DestinationImageFile` is the full path where to save the exported edition.
 
-## 5. Build image locally
+## {heading(5. Build image locally)[id=iaas-win-image-locally-assemble]}
 
 1. Go to the `C:\windows-imaging-tools-master` directory and import modules with scripts to automate image creation:
 
@@ -196,7 +196,7 @@ The Windows installation ISO image may contain several editions of the operating
 
 1. Wait for the operation to complete and make sure that the `C:\windows-imaging-tools-master\IMG\Win_Server_2016_img.raw` file is created.
 
-## 6. Import image to VK Cloud
+## {heading(6. Import image to VK Cloud)[id=iaas-win-image-import]}
 
 [Use OpenStack CLI](../../instructions/images/images-manage#iaas-images-manage-import) to import the image:
 
@@ -220,6 +220,6 @@ Replace <IMAGE_NAME> with the actual one. Arguments of the form `--property <key
 
 Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../instructions/vm/vm-create) by standard means of the VK Cloud platform.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=iaas-win-image-delete]}
 
-If you no longer need the imported image, [delete it](../../instructions/images/images-manage#deleting_an_image).
+If you no longer need the imported image, [delete it](../../instructions/images/images-manage#iaas-images-manage-import).

@@ -14,7 +14,7 @@ You cannot downgrade to a lower version of Kubernetes when upgrading.
 
 Add-ons do not get updated with cluster updates. If necessary, you can [update](/en/kubernetes/mk8s/instructions/addons/manage-addons#updating_addon_version) them separately after the cluster update.
 
-## Before updating
+## {heading(Before updating)[id=mk8s-update-prepare]}
 
 1. Examine [the update process](/en/kubernetes/mk8s/concepts/update).
 1. Back up the cluster you plan to update, for example, using Velero.
@@ -22,7 +22,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 1. In the cluster you are planning to update, ensure there are [enough spare nodes available](/en/kubernetes/mk8s/concepts/update#unavailable-nodes) for Managed Containers to redirect the workload to. Otherwise, applications that run on the nodes that are being updated may not have enough resources.
 1. [Set threshold](/en/kubernetes/mk8s/instructions/manage-node-group#configure_node_update) of the number of unavailable worker nodes in the node groups.
 
-## {counter(update)}. Perform update
+## {heading({counter(update)}. Perform update)[id=mk8s-update-update]}
 
 {tabs}
 

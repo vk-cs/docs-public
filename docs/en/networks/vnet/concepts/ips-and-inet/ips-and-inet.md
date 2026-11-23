@@ -1,4 +1,4 @@
-## Network addressing
+## {heading(Network addressing)[id=vnet-ips-and-inet-network-addressing]}
 
 When you create a subnet, you specify:
 
@@ -15,7 +15,7 @@ The following rules apply:
 
 1. If a router with a public IP address is connected to the subnet, the `SNAT` port of the router will be assigned a random address from the remaining DHCP IP address pool.
 
-## Internet access
+## {heading(Internet access)[id=vnet-ips-and-inet-internet-access]}
 
 In order for objects in the subnet to have access to the Internet, you need to connect a [router](../router) to the subnet with access to [external network](../net-types#external_net).
 
@@ -107,7 +107,7 @@ If the anycast IP addresses quota in your project is higher than 0, the maximum 
 
 If the anycast IP addresses quota in your project is higher than 0, the maximum number of anycast IP addresses not attached to virtual machines is 1.
 
-## Public IP address pool of the internet external network
+## {heading(Public IP address pool of the internet external network)[id=vnet-ips-and-inet-internet-address-pool]}
 
 All projects in SDN Sprut are connected to an external network `internet`.
 
@@ -162,7 +162,7 @@ In all subnets of the external network `internet`:
 | ext-sub40   | 95.163.182.0/23  | 95.163.182.1–95.163.183.253   | 95.163.183.254  |
 <!-- prettier-ignore-end -->
 
-## Public IP address pool of the ext-net external network
+## {heading(Public IP address pool of the ext-net external network)[id=vnet-ips-and-inet-extnet-address-pool]}
 
 All projects in SDN Neutron are connected to an external network `ext-net`.
 
@@ -223,5 +223,5 @@ The _Shadow port_ technology allows you to launch Kubernetes clusters in private
 To use the technology for creating a Kubernetes cluster:
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) to connect Shadow port to your project.
-1. [Enable](../../instructions/net#creating_network) the **Access to VK Cloud services** option for a network without internet access.
+1. [Enable](../../instructions/net#vnet-net-add) the **Access to VK Cloud services** option for a network without internet access.
 1. [Locate](/en/kubernetes/mk8s/instructions/create-cluster) the cluster on this network.

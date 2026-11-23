@@ -197,6 +197,6 @@ To remove the add-on:
 Persistent volumes (PVs) created for add-ons are not removed automatically, as they can still contain important data. If necessary, remove them using one of the options:
 
 - [via your management console](/en/kubernetes/mk8s/instructions/manage-pvs)
-- by using a required [reclaim policy](/en/kubernetes/mk8s/concepts/storage#available_reclaim_policies_for_persistent_volumes)
+- by using a required [reclaim policy](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-reclaim-policies)
   {/note}
 

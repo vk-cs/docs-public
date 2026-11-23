@@ -5,7 +5,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 - Sprut SDN: management console interface, API, Terraform.
 - Neutron SDN: management console interface, API, [Terraform](/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn), [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
-## Viewing a list of VPN tunnels and information about them
+## {heading(Viewing a list of VPN tunnels and information about them)[id=vnet-vpn-view]}
 
 {tabs}
 
@@ -517,7 +517,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {/tabs}
 
-## Editing a VPN Tunnel
+## {heading(Editing a VPN Tunnel)[id=vnet-vpn-edit]}
 
 {tabs}
 
@@ -772,7 +772,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 {/tabs}
 
-## Restarting a VPN tunnel
+## {heading(Restarting a VPN tunnel)[id=vnet-vpn-restart]}
 
 {note:info}
 

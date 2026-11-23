@@ -1,4 +1,4 @@
-## Changing origin interaction protocol
+## {heading(Changing origin interaction protocol)[id=cdn-origin-settings-protocol]}
 
 {tabs}
 
@@ -41,7 +41,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Changing origin
+## {heading(Changing origin)[id=cdn-origin-settings-data-source]}
 
 The option allows you to change the origin that the CDN resource will fetch content from.
 
@@ -117,7 +117,7 @@ To edit or to add an origin group use methods that work with origin groups.
 
 {/tabs}
 
-## Changing host header
+## {heading(Changing host header)[id=cdn-origin-settings-host-header]}
 
 CDN servers specify the mandatory [Host](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host) header in HTTP requests when requesting content from origins. This header allows addressing the appropriate virtual host at the origin.
 
@@ -199,7 +199,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {note:warn}
 
-After making changes to the option, [clear the CDN resource cache](../content-settings#clearing_cache).
+After making changes to the option, [clear the CDN resource cache](../content-settings#cdn-content-settings-cache-clearing).
 
 {/note}
 

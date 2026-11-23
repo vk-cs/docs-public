@@ -15,7 +15,7 @@ A certificate issued with `cert-manager` will be available to other Kubernetes r
 
 It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kubernetes clusters. A self-signed certificate will also be issued to confirm `cert-manager` operability.
 
-## Before you begin
+## {heading(Before you begin)[id=mk8s-case-certmanager-helm3-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -31,7 +31,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    Select the version of Helm that is [compatible](https://helm.sh/docs/topics/version_skew/) with the cluster.
 
-## {counter(cert)}. Add the repository and select the version to install
+## {heading({counter(cert)}. Add the repository and select the version to install)[id=mk8s-case-certmanager-helm3-add-repo]}
 
 1. Add the `cert-manager` repository:
 
@@ -57,13 +57,13 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    {note:info}
 
-   Next, the `1.11.3` version of `cert-manager` will be installed to additionally demonstrate the [upgrade](#5_upgrade_cert_manager) to `1.12.3` version.
+   Next, the `1.11.3` version of `cert-manager` will be installed to additionally demonstrate the [upgrade](#mk8s-case-certmanager-helm3-upd-cm) to `1.12.3` version.
 
    You could select any version that suits your needs. Adjust the commands listed below to match the selected version.
 
    {/note}
 
-## {counter(cert)}. Install cert-manager
+## {heading({counter(cert)}. Install cert-manager)[id=mk8s-case-certmanager-helm3-install-cm]}
 
 1. Install the Custom Resource Definitions (CRDs) required by `cert-manager` to operate.
 
@@ -139,7 +139,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    {/cut}
 
-## {counter(cert)}. Confirm cert-manager operability
+## {heading({counter(cert)}. Confirm cert-manager operability)[id=mk8s-case-certmanager-helm3-check-cm]}
 
 1. Verify that all the necessary pods have been successfully created in the `cert-manager` namespace. The pods should be in the `Running` state:
 
@@ -281,7 +281,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
 {note:info}
 
-Due to security reasons, it is [advised](https://cert-manager.io/docs/tutorials/backup) to create a backup before [upgrading](#5_upgrade_cert_manager) `cert-manager`
+Due to security reasons, it is [advised](https://cert-manager.io/docs/tutorials/backup) to create a backup before [upgrading](#mk8s-case-certmanager-helm3-upd-cm) `cert-manager`
 
 {/note}
 
@@ -327,7 +327,7 @@ kubectl get -o yaml `
 
 Read about advanced backups and restoring from backup [in the official cert-manager documentation](https://cert-manager.io/docs/tutorials/backup).
 
-## {counter(cert)}. Upgrade cert-manager
+## {heading({counter(cert)}. Upgrade cert-manager)[id=mk8s-case-certmanager-helm3-upd-cm]}
 
 1. Check the version of the installed `cert-manager` release:
 
@@ -365,7 +365,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
 1. Upgrade the CRDs installed in the cluster.
 
-   Since these CRDs have been [installed manually](#2_install_cert_manager), upgrade them manually as well before upgrading the `cert-manager` itself.
+   Since these CRDs have been [installed manually](#mk8s-case-certmanager-helm3-upd-cm), upgrade them manually as well before upgrading the `cert-manager` itself.
 
    ```console
    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.12.3/cert-manager.crds.yaml
@@ -432,7 +432,7 @@ Read about advanced backups and restoring from backup [in the official cert-mana
 
    {/cut}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-case-certmanager-helm3-delete]}
 
 A running cluster consumes computing resources and is charged accordingly. If you no longer need the `cert-manager` tool and the Kubernetes resources you created to test it, delete them:
 

@@ -10,12 +10,12 @@ When changing your Active Directory domain, remove the existing federation and s
 
 {/note}
 
-## Before you start
+## {heading(Before you start)[id=iam-ad-fim-prepare]}
 
 1. [Set up AD FS](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) and [create](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) users and groups.
 1. [Export](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-endpoints#federation-metadata-test) the XML metadata file of your AD FS.
 
-## 1. Create identity federation in VK Cloud
+## {heading(1. Create identity federation in VK Cloud)[id=iam-ad-fim-create]}
 
 Creating an Identity Federation in VK Cloud is available only to a Project owner [role](/en/access/iam/concepts/rolesandpermissions) user.
 
@@ -31,7 +31,7 @@ The following credentials will appear on the **Federations** tab:
 - URL for federated users to sign in to VK Cloud. Example: `https://cloud.vk.com/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
 - Federation ID. Example: `54f0267b-31f6-XXXX-XXX-2a24c5f436fb`.
 
-## 2. Set up AD FS
+## {heading(2. Set up AD FS)[id=iam-ad-fim-set]}
 
 1. Create a relying party trust using federation metadata. Use the XML metadata file. [Instructions here](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata).
 1. Configure the mapping between user attributes and AD FS outgoing claim types (Claims Mapping). Add the following rules:
@@ -63,7 +63,7 @@ The following credentials will appear on the **Federations** tab:
       - **Outgoing claim type**: `Group`.
       - **Outgoing claim value**: `<NAME_OF_GROUP>`.
 
-## 3. Configure role and group mapping in VK Cloud
+## {heading(3. Configure role and group mapping in VK Cloud)[id=iam-ad-fim-connect]}
 
 Configuring a relationship between AD FS groups and VK Cloud roles is available only for the following [roles](/en/access/iam/concepts/rolesandpermissions): Project owner, Superadministrator, and User access administrator. Viewing the relationships is also available for the Project administrator and Viewer roles.
 
@@ -83,14 +83,14 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 
    1. Click the **Add** button.
 
-## 4. Check the possibility of logging in via federation
+## {heading(4. Check the possibility of logging in via federation)[id=iam-ad-fim-check]}
 
 1. Enter the URL for federated user login in the browser address bar. You will be redirected to the AD FS authentication page.
 2. Enter your corporate authentication credentials. After successful authorization, you will be redirected to the main VK Cloud management console page.
-3. Verify that the automatically assigned VK Cloud user role matches the one selected during [group configuration](#3_configure_role_and_group_mapping_in_vk_cloud).
+3. Verify that the automatically assigned VK Cloud user role matches the one selected during [group configuration](#iam-ad-fim-connect).
 
 {note:warn}
 
-Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/access/iam/instructions/access-manage#deleting_member) them from projects in the VK Cloud management console.
+Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/access/iam/instructions/access-manage#iam-access-manage-delete-user) them from projects in the VK Cloud management console.
 
 {/note}

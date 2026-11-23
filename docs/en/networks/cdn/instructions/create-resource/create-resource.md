@@ -1,6 +1,6 @@
 You can create a CDN resource in two ways:
 
-- [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/origin-groups) or configure SSL certificates manually.
+- [Through the CDN service interface](#cdn-create-resource-cdn-ui). Use this option if you need to specify third-party [content origins](../../concepts/origin-groups) or configure SSL certificates manually.
 
 - [Through the bucket interface](#cdn-create-resource-bucket-ui) in the VK Object Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
 
@@ -55,7 +55,7 @@ You can create a CDN resource in two ways:
 
     1. Save the original domain name that needs to be set in the CNAME record for the specified domains.
 
-    1. Select whether to [change the Host HTTP header](/en/networks/cdn/instructions/manage-cdn/origin-settings#changing_host_header) value when accessing the previously configured origins.
+    1. Select whether to [change the Host HTTP header](/en/networks/cdn/instructions/manage-cdn/origin-settings#cdn-origin-settings-host-header) value when accessing the previously configured origins.
 
         CDN servers specify the mandatory [Host](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host) header in HTTP when request content from origins. This header allows you to address the appropriate virtual host on the origins.
 
@@ -164,4 +164,4 @@ The creation of the origin group and CDN resource will start for the bucket. The
 
 1. Replace the original domain in the path to static files with the personal domain.
 
-1. [Upload content](../manage-cdn/content-settings#preloading_cache) in the VK Cloud interface (if the CDN resource was not created from a bucket).
+1. [Upload content](../manage-cdn/content-settings#cdn-content-settings-cache-filling) in the VK Cloud interface (if the CDN resource was not created from a bucket).

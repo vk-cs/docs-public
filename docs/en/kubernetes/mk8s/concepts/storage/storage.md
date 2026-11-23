@@ -15,8 +15,8 @@ To share data between pods on different nodes, [deploy an NFS server](/en/comput
 
 Kubernetes clusters in the Managed Containers service are tightly integrated with the VK Cloud platform to handle PVs:
 
-- The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
-- [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](/en/kubernetes/mk8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
+- The cluster [supports](#storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
+- [Pre-configured storage classes](#mk8s-storage-storage-classes) that implement different [persistent volume reclaim policies](/en/kubernetes/mk8s/reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-release) are available for block storage in the cluster.
 
 ## {heading(Managing persistent volumes (PVs))[id=pv-disks]}
 
@@ -34,7 +34,7 @@ You can only move or delete a PV if it is not connected to a node group.
 
 - [File Storage](https://www.snia.org/education/what-is-nas) connected via [NFS](https://www.ibm.com/docs/en/aix/7.1?topic=management-network-file-system) and [CIFS](https://learn.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview).
 
-## Working with Container Storage Interface (CSI)
+## {heading(Working with Container Storage Interface (CSI))[id=working_with_container_storage_interface_csi]}
 
 Kubernetes clusters use [OpenStack Cinder](https://docs.openstack.org/cinder/latest/) to integrate with block storage in VK Cloud.
 
@@ -56,9 +56,9 @@ Using Cinder CSI allows you to:
   - When a volume is dynamically provisioned, the disk corresponding to that volume in VK Cloud will be automatically created.
   - If the `Delete` reclaim policy is set for a volume, the associated volume and the corresponding disk in VK Cloud will be deleted after the PVC is deleted.
 
-## Available reclaim policies for persistent volumes
+## {heading(Available reclaim policies for persistent volumes)[id=mk8s-storage-reclaim-policies]}
 
-A [reclaim policy](/en/kubernetes/mk8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
+A [reclaim policy](/en/kubernetes/mk8s/reference/pvs-and-pvcs#mk8s-pvs-and-pvcs-release) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
 
 - Keep the volume (`Retain`). The PV and its associated storage will not be deleted.
 
@@ -74,7 +74,7 @@ A [reclaim policy](/en/kubernetes/mk8s/reference/pvs-and-pvcs#4_reclaiming_83058
 
   {/note}
 
-## Pre-configured storage classes
+## {heading(Pre-configured storage classes)[id=mk8s-storage-storage-classes]}
 
 When using [dynamic provisioning](/en/kubernetes/mk8s/reference/pvs-and-pvcs#dynamic-provisioning) of a persistent volume, a storage class must be specified. The default storage class is not configured in Kubernetes clusters you create in the Managed Containers service. You can either set the default class manually, or explicitly specify the required class when creating a PVC.
 
@@ -218,7 +218,7 @@ All the storage classes listed:
 
 {/tabs}
 
-## See also
+## {heading(See also)[id=mk8s-storage-see-also]}
 
 - [Container service overview](/en/kubernetes/mk8s/concepts/about).
 - [Container service architecture](/en/kubernetes/mk8s/concepts/architecture).

@@ -1,4 +1,4 @@
-## Terms of return
+## {heading(Terms of return)[id=billing-refund-return-terms]}
 
 - The request for a refund must be issued by the project owner.
 - The money can only be refunded from the [payment account balance](../../concepts/balance) of the project. The refund amount cannot exceed the amount of unspent funds on the payment account balance.
@@ -15,7 +15,7 @@ The refund is available regardless of how long ago the payment account balance o
 
 {/note}
 
-## Making a refund for individuals
+## {heading(Making a refund for individuals)[id=billing-refund-individuals]}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console as the project owner.
 1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) the project if you want to suspend the services. This will stop debiting funds.
@@ -59,7 +59,7 @@ The response to the request will be sent to the email linked to your account.
 
 The refund request is processed within 48 hours. The time of receipt of funds depends on the payment method. When credited to the card, it can take up to 30 days, depending on the bank.
 
-## Making a refund for legal entities and sole proprietors
+## {heading(Making a refund for legal entities and sole proprietors)[id=billing-refund-legal-entities]}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console as the project owner.
 1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) the project if you want to suspend the services. This will stop debiting funds.

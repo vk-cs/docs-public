@@ -58,9 +58,9 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
 
    {/cut}
 
-1. (Optional) [Create](/en/networks/vnet/instructions/net#creating_network) a network with Internet access if it has not been created before.
+1. (Optional) [Create](/en/networks/vnet/instructions/net#vnet-net-add) a network with Internet access if it has not been created before.
 
-## 1. Deploy Check Point CloudGuard Network service
+## {heading(1. Deploy Check Point CloudGuard Network service)[id=marketplace-checkpoint-start-install-service]}
 
 1. Deploy the **Security Gateway BYOL**:
 
@@ -150,7 +150,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
    - `<SUBNET_MASK>` — the subnet mask specified in the management server configuration instructions.
    - `<GATEWAY_DEFAULT_IP>` — default static route to the management server specified in the management server configuration instructions.
 
-## 4. Increase logical volume sizes of gateway and management server VMs
+## {heading(4. Increase logical volume sizes of gateway and management server VMs)[id=marketplace-checkpoint-start-resize-volumes]}
 
 If you deploy the gateway and the management server on virtual machines with a disk larger than 100 GB, increase the size of the `lv_current` or the `lv_log` logical volumes for these VMs:
 
@@ -304,7 +304,7 @@ Now, you can connect to the gateway VM using the GAiA Portal web interface at `h
 
 Now, you can connect to the management server VM using the GAiA Portal web interface at `https://<EXTERNAL_IP_ADDRESS>` (or via SSH `<EXTERNAL_IP_ADDRESS>:22`), where `<EXTERNAL_IP_ADDRESS>` is the external IP address of the management server specified in the management server configuration instructions.
 
-## 7. Add network interfaces
+## {heading(7. Add network interfaces)[id=marketplace-checkpoint-start-add-interface]}
 
 By default, one network interface is created for a VM. To add a network interface to the gateway:
 
@@ -312,7 +312,7 @@ By default, one network interface is created for a VM. To add a network interfac
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#add-rule) rules to the security group for that network.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#add-rule) rules to the security group for that network.
 
    {note:info}
 
@@ -322,7 +322,7 @@ By default, one network interface is created for a VM. To add a network interfac
 
 1. [Configure](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Gaia_AdminGuide/Content/Topics-GAG/Physical-Interfaces.htm?tocpath=Network%20Management%7CNetwork%20Interfaces%7C_____1) the network interface in the GAiA OS using the GAiA Portal web interface or SSH.
 
-## 8. Customize security policy
+## {heading(8. Customize security policy)[id=marketplace-checkpoint-start-settings-policy]}
 
 1. Install the SmartConsole application for managing the Check Point CloudGuard Network service by the [link](https://sc1.checkpoint.com/documents/Jumbo_HFA/R81.20_SC/R81.20/R81.20_Downloads.htm) or through the GAiA Portal web interface of the gateway or the management server:
 
@@ -350,7 +350,7 @@ By default, one network interface is created for a VM. To add a network interfac
 1. [Install](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Managing-Server-and-Gateway-Licenses.htm?tocpath=Managing%20Gateways%7CManaging%20%20Licenses%7C_____1) licenses for the gateway and the management server.
 1.  Set the [Access Control Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-the-Access-Control-Policy.htm?tocpath=Creating%20an%20Access%20Control%20Policy%7C_____10) and the [Threat Prevention Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-Threat-Prevention-Policy.htm) on the gateway.
 
-## 9. Consider backup
+## {heading(9. Consider backup)[id=marketplace-checkpoint-start-backup]}
 
 {note:warn}
 
@@ -374,7 +374,7 @@ Backup options are described in the [sk108902 article](https://support.checkpoin
 
   The snapshot size is several gigabytes. Used mainly before upgrading the GAiA operating system to a new version or before installing the Jumbo Hotfix software package.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=marketplace-checkpoint-start-delete]}
 
 Running service infrastructure consumes computing resources. If you no longer need it:
 

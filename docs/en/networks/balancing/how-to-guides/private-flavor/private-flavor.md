@@ -199,7 +199,7 @@ Here:
 {/tab}
 {/tabs}
 
-After the load balancer is successfully created, you can {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb)[text=manage]} it.
+After the load balancer is successfully created, you can {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-edit)[text=manage]} it.
 
 ## {heading(Delete unused resources)[id=balancing-private-flavor-delete]}
 

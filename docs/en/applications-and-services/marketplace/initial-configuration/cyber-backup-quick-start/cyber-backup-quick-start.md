@@ -45,7 +45,7 @@ It is assumed that the project already contains a virtual machine (VM) whose dat
    If you increase the size of the VM boot disk or add new disks, these changes are automatically reflected in the service console.
    {/note}
 
-1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Connect]} to the VM.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix-key-pared)[text=Connect]} to the VM.
 1. Place an arbitrary non-empty file in your home directory. For example, run the following in the console:
 
    ```console

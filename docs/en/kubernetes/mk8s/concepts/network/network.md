@@ -1,4 +1,4 @@
-## Intra-cluster DNS server
+## {heading(Intra-cluster DNS server)[id=mk8s-network-dns-server]}
 
 The [CoreDNS](https://coredns.io/) intra-cluster server is used as a replacement for `kube-dns`. This server provides [discovery of services](https://coredns.io/plugins/kubernetes/) in the cluster and allows them to be addressed by their DNS names.
 
@@ -17,7 +17,7 @@ To organize intra-cluster networks, Managed Containers supports two CNIs:
 
 Both CNIs communicate with the VK Cloud platform using its own [software-defined network](/en/networks/vnet/concepts/architecture#sdns_used), Sprut. To get access to the Sprut SDN, contact [technical support](mailto:support@mcs.mail.ru).
 
-## Integration with load balancers
+## {heading(Integration with load balancers)[id=mk8s-network-loadbalancer-integration]}
 
 Kubernetes clusters in the Managed Containers service integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons).
 
@@ -31,7 +31,7 @@ The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs
 
 For high availability, two instances of the balancer are deployed, one in active mode and one in standby mode. State synchronization and traffic switching between these balancers takes place using the [VRRP](https://www.rfc-editor.org/rfc/rfc5798) protocol. The cluster treats such a high-available configuration as a single load balancer.
 
-## Ingress controller and real user IP address detection
+## {heading(Ingress controller and real user IP address detection)[id=mk8s-network-ingress-real-ip]}
 
 Sometimes when using the Ingress controller, the pod in the cluster needs to see the real IP address of the user who sent the original request to the balancer, not the IP address of the balancer itself. This can be important for some kinds of network applications.
 
@@ -50,15 +50,15 @@ To allow a pod that is placed behind the Ingress controller to see the user's re
 
   In this case only HTTP traffic will flow to the Ingress controller, which will show all headers, including the sender's IP address (if any).
 
-## Default network objects
+## {heading(Default network objects)[id=mk8s-network-default-objects]}
 
 When a Kubernetes cluster is created, several network objects are created for it.
 
-### Load balancer for Kubernetes API
+### {heading(Load balancer for Kubernetes API)[id=mk8s-network-api-loadbalancer]}
 
 A dedicated TCP load balancer is created for each cluster, which handles incoming requests to the Kubernetes API for all master nodes. This load balancer is used to connect to and manage the cluster.
 
-### Security group rules
+### {heading(Security group rules)[id=mk8s-network-sg-rules]}
 
 Three groups of rules are created for each cluster:
 
@@ -72,7 +72,7 @@ Changing these rule groups may render the cluster inoperable.
 
 {/note}
 
-## See also
+## {heading(See also)[id=mk8s-network-see-also]}
 
 - [Container service overview](/en/kubernetes/mk8s/concepts/about).
 - [Container service architecture](/en/kubernetes/mk8s/concepts/architecture).

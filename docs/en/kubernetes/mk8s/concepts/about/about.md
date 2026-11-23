@@ -1,4 +1,4 @@
-## What the service can do
+## {heading(What the service can do)[id=mk8s-about-purpose]}
 
 The container service allows you to create Kubernetes clusters and run various services and applications in them. All the usual Kubernetes tools are available, e.g:
 
@@ -21,7 +21,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 {/note}
 
-## Service features
+## {heading(Service features)[id=mk8s-about-features]}
 
 - Managing [clusters](/en/kubernetes/mk8s/instructions/manage-cluster) and [groups of nodes](/en/kubernetes/mk8s/instructions/manage-node-group) using the VK Cloud management console and VK Cloud own Terraform provider.
 
@@ -60,7 +60,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
   - dashboards showing current resource consumption forecasts on cluster nodes
   - alerts that send notifications if the add-on forecasts that specific resources will run out within a given time
 
-## What's next
+## {heading(What's next)[id=mk8s-about-next-steps]}
 
 - [Get to know the service architecture](/en/kubernetes/mk8s/concepts/architecture).
 - [Get to know the network structure in the cluster](/en/kubernetes/mk8s/concepts/network).

@@ -1,6 +1,6 @@
 As part of the [add-on](/en/kubernetes/k8s/concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
-## Before you begin
+## {heading(Before you begin)[id=k8s-install-advanced-jaeger-prep]}
 
 1. Review the [system requirements](/en/kubernetes/k8s/concepts/addons-and-settings/addons#available_addons) of the add-on to make sure you have enough resources to install it.
 
@@ -233,11 +233,11 @@ Make sure that the number of worker nodes in the cluster is not less than the se
 
 {/note}
 
-### Changing Elasticsearch storage settings
+### {heading(Changing Elasticsearch storage settings)[id=k8s-install-advanced-jaeger-edit-elasticsearch]}
 
 Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](/en/kubernetes/k8s/reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/concepts/architecture#architecture-az) in which the cluster's worker nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes cannot work with volumes.
 
-To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes), the availability zone of which coincides with the availability zone of worker nodes:
+To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes), the availability zone of which coincides with the availability zone of worker nodes:
 
 ```yaml
 elasticsearch:

@@ -225,7 +225,7 @@ The extension requires the [pg_stat_statements](#pg_stat_statements) extension t
 
 {/tabs}
 
-## pg_stat_statements
+## {heading(pg_stat_statements)[id=pg_stat_statements]}
 
 {tabs}
 
@@ -243,7 +243,7 @@ The extension [pg_stat_statements](https://www.postgresql.org/docs/current/pgsta
 
 {/tabs}
 
-## PostGIS
+## {heading(PostGIS)[id=postgis]}
 
 {tabs}
 

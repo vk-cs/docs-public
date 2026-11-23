@@ -1,6 +1,6 @@
 A local CoreDNS-based caching DNS server can be configured on each cluster node. This is also known as NodeLocal DNS. This will improve the stability and performance of the DNS service in the cluster, without changing existing applications.
 
-## Overview of the DNS architecture in a cluster
+## {heading(Overview of the DNS architecture in a cluster)[id=k8s-local-dns-cache-architecture]}
 
 Let some [pod](/en/kubernetes/k8s/reference/pods) initiate a DNS query.
 
@@ -27,7 +27,7 @@ Let some [pod](/en/kubernetes/k8s/reference/pods) initiate a DNS query.
 
 See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/) for more details.
 
-## Before you start
+## {heading(Before you start)[id=k8s-local-dns-cache-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -35,7 +35,7 @@ See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/adminis
 
 1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-## {counter(cache)}. Deploy a caching DNS server on each node
+## {heading({counter(cache)}. Deploy a caching DNS server on each node)[id=k8s-local-dns-cache-deploy]}
 
 The DNS server will be deployed in the following configuration:
 
@@ -292,7 +292,7 @@ To deploy a DNS server:
    service/node-local-dns created
    ```
 
-## {counter(cache)}. Check the operation of the caching DNS server
+## {heading({counter(cache)}. Check the operation of the caching DNS server)[id=k8s-local-dns-cache-check]}
 
 1. Create [pod that includes utilities to work with DNS](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/):
 
@@ -391,7 +391,7 @@ To deploy a DNS server:
    exit
    ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=k8s-local-dns-cache-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} a local DNS cache configuration, delete them:
 

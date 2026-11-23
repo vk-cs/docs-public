@@ -165,7 +165,7 @@ There might be several possible reasons for this behavior. Follow the instructio
 
    - The PVC is not bound to the PV because the PV does not exist or meet the requirements.
    - There are no appropriate PVs, or the `Provisioner` component cannot create an appropriate PV.
-   - A [storage class](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes) is not configured, or it does not meet the requirements of the PVC.
+   - A [storage class](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes) is not configured, or it does not meet the requirements of the PVC.
 
 1. Solve the issue using one of the following approaches:
 
@@ -309,7 +309,7 @@ There might be several possible reasons for this behavior. Follow the instructio
    
    {tab(Private Docker registries)}
       
-   In the manifest, [change or specify](/en/kubernetes/k8s/connect/docker-registry#using_docker_registry_in_kubernetes_cluster) the secret for accessing the registry. 
+   In the manifest, [change or specify](/en/kubernetes/k8s/connect/docker-registry#k8s-docker-registry-using) the secret for accessing the registry. 
    
    {/tab}
    {/tabs}
@@ -326,7 +326,7 @@ There might be several possible reasons for this behavior. Follow the instructio
    kubectl get pods -n kube-system 
    ```
   
-   If any of these pods are stuck in the `Pending` state, this might be caused by issues in integration with the [container network interface (CNI) or the container storage interface (CSI)](/en/kubernetes/k8s/concepts/architecture#integration_with_vk_cloud_platform).
+   If any of these pods are stuck in the `Pending` state, this might be caused by issues in integration with the [container network interface (CNI) or the container storage interface (CSI)](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-platform-integration).
 
 1. View information about the nodes whose pods are stuck the `Pending` state using the command:
 

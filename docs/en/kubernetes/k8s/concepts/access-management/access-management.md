@@ -23,7 +23,7 @@ To get the same capabilities for older clusters, [upgrade](/en/kubernetes/k8s/in
 
 {/note}
 
-## How does the authentication process work
+## {heading(How does the authentication process work)[id=how_does_the_authentication_process_work]}
 
 When using [kubectl](/en/kubernetes/k8s/connect/kubectl), the `keystone-auth` utility is responsible for authentication.
 

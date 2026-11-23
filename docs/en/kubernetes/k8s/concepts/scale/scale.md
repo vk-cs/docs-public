@@ -1,12 +1,12 @@
 Scaling allows you to adapt the cluster to the changing needs of workloads ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
-## Types of scaling
+## {heading(Types of scaling)[id=k8s-scale-types]}
 
 Two types of scaling are supported:
 
 - _Vertical scaling_: The [virtual machine templates](/en/kubernetes/k8s/concepts/flavors) that are used by the master and worker nodes of the cluster are being changed. In this way, you can manage the computing resources of the cluster without affecting the number of nodes.
 
-  Scaling of worker nodes is performed within the framework of the [worker node group](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler).
+  Scaling of worker nodes is performed within the framework of the [worker node group](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler).
 
 - _Horizontal scaling_: The number of worker nodes within a separate node group is changed. In this way, you can manage the computing resources of the cluster without affecting the virtual machine templates that are used by the nodes.
 
@@ -14,7 +14,7 @@ Both types of scaling are performed manually. [Autoscaling](#autoscaling) also w
 
 ## {heading(Autoscaling)[id=autoscaling]}
 
-### Vertical autoscaling
+### {heading(Vertical autoscaling)[id=k8s-scale-vertical-autoscaling]}
 
 _Vertical autoscaling_ of master nodes works for all clusters, you cannot disable it.
 
@@ -69,7 +69,7 @@ If at least one of the thresholds is exceeded, a request will be sent to the [Ma
 
 {/cut}
 
-### Horizontal autoscaling
+### {heading(Horizontal autoscaling)[id=k8s-scale-horizontal-autoscaling]}
 
 You can [configure](/en/kubernetes/k8s/instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes via [Cluster Autoscaler](/en/kubernetes/k8s/concepts/cluster-autoscaler). The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
@@ -85,17 +85,17 @@ To receive timely notifications about cluster scaling, specify the trigger condi
 
 When a trigger occurs, you will receive a notification on the selected channel.
 
-## Current restrictions
+## {heading(Current restrictions)[id=k8s-scale-limitations]}
 
 - Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](/en/kubernetes/k8s/concepts/flavors#configuration_templates).
 - Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 500 nodes.
-- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](/en/kubernetes/k8s/instructions/scale#scaling_groups_of_worker_nodes_c172481b).
+- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](/en/kubernetes/k8s/instructions/scale#k8s-instructions-scale-horizontal-worker-nodes).
 
-## Ensuring accessibility with vertical scaling
+## {heading(Ensuring accessibility with vertical scaling)[id=k8s-scale-availability-with-scaling]}
 
 When vertically scaling any cluster nodes, the virtual machines that are used by the nodes are sequentially restarted. This is necessary to apply the new virtual machine template. Therefore, the scaling process affects the availability of both the cluster API and the workloads hosted in the cluster:
 
-- If the cluster is not [fault-tolerant](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) and contains a single master node, then the Kubernetes API will be unavailable until scaling is completed.
+- If the cluster is not [fault-tolerant](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-cluster-environment) and contains a single master node, then the Kubernetes API will be unavailable until scaling is completed.
 - If a node group contains only one worker node, then the workload hosted on it will be unavailable until scaling is completed.
 - If a node group contains multiple worker nodes, the workload hosted on them will not be available until scaling is complete if replication for the load is not configured or configured incorrectly.
 

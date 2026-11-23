@@ -7,7 +7,7 @@ It is recommended to create a separate working directory for each VK Cloud proje
 
 For correct Terraform operation, an additional file is required — the Terraform mirror config file.
 
-## The Terraform provider config file
+## {heading(The Terraform provider config file)[id=terraform-provider-config]}
 
 The file contains the settings of Terraform providers and user authentication details for the current project.
 
@@ -15,7 +15,7 @@ The file can have any name. It is recommended to name it `provider.tf` to highli
 
 The file must be present in all Terraform working directories.
 
-The file is available for [download](../../quick-start#preparatory_steps) in your management console, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` argument.
+The file is available for [download](../../quick-start#terraform-quick-start-prepare) in your management console, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` argument.
 
 An example of the file contents:
 
@@ -66,7 +66,7 @@ The file consists of the following sections:
     - for Moscow region: `https://infra.mail.ru/infra/identity/v3/`;
     - for Kazakhstan region: `https://kz.infra.mail.ru/infra/identity/v3/`.
 
-## Resources configuration files
+## {heading(Resources configuration files)[id=terraform-resource-config]}
 
 Resource configuration files describe the resources created via Terraform, their settings and dependencies.
 
@@ -97,7 +97,7 @@ depends_on = [
 
 First, the resource set by the meta-argument is created, then the resource for which the dependency is specified is created.
 
-## The Terraform mirror config file
+## {heading(The Terraform mirror config file)[id=terraform-mirror-config]}
 
 The file is required for Terraform startup, it contains the address of the VK Cloud Terraform mirror. The file must be named `terraform.rc` for Windows and `.terraformrc` for other OS. The file content is the same for all projects and regions.
 

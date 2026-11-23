@@ -295,6 +295,6 @@ After completing all the quick start steps, you will:
 
 The created resources are billed and consume computing resources. If you no longer need them:
 
-- {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Stop]} the intermediate host to use it later, or {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=delete]} it permanently.
+- {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=Stop]} the intermediate host to use it later, or {linkto(../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=delete]} it permanently.
 - {linkto(../../../computing/bare-metal/instructions/manage-service#bare-metal-manage-service-delete)[text=Cancel]} the Bare Metal server rental.
 - {linkto(../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Delete the Floating IP address]} assigned to the intermediate host. Floating IP addresses present in the project are billed even if they are not bound to any service.

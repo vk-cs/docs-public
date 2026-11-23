@@ -8,8 +8,8 @@ To use the manual setup mode, prepare a network to host the service infrastructu
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Networks** → **Networks**.
-1. Click the name of the required network. If there is no suitable network, [create](/en/networks/vnet/instructions/net#creating_network) it.
-1. Click the name of the required subnet. If there is no suitable subnet, [create](/en/networks/vnet/instructions/net#creating_subnet) it taking into account the [requirements for the number of ports](../../../concepts/about#ports_number).
+1. Click the name of the required network. If there is no suitable network, [create](/en/networks/vnet/instructions/net#vnet-net-add) it.
+1. Click the name of the required subnet. If there is no suitable subnet, [create](/en/networks/vnet/instructions/net#vnet-net-add) it taking into account the [requirements for the number of ports](../../../concepts/about#ports_number).
 1. On the **Ports** tab, copy port IP addresses depending on the SDN of the network:
 
    - for `Neutron` — the IP addresses of the DHCP ports
@@ -76,7 +76,7 @@ To use the manual setup mode, prepare a network to host the service infrastructu
 
 1. CLick the **Save** button.
 
-## 2. Check network settings
+## {heading(2. Check network settings)[id=desktops-net-step-check]}
 
 To check the network settings, it is not necessary to save the changes in the settings.
 

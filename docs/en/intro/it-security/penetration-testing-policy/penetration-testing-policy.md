@@ -12,7 +12,7 @@ This policy may be updated. Check for policy updates before you conduct testing.
 
 {/note}
 
-## Scope
+## {heading(Scope)[id=it-security-penetration-testing-policy-application-scope]}
 
 This policy applies to all public VK Cloud services and infrastructure. It is intended for customers (consumers of cloud services) who wish to conduct security testing of their applications and resources hosted in VK Cloud.
 

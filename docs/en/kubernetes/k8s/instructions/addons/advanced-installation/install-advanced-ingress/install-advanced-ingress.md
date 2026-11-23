@@ -92,7 +92,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {/tabs}
 
-1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
+1. [Get the IP address of the load balancer](#k8s-install-advanced-ingress-change-balancer).
 
 {/tab}
 
@@ -197,7 +197,7 @@ When installing the add-on, [standard load balancers](/en/networks/balancing/con
    
    {/tabs}
 
-1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
+1. [Get the IP address of the load balancer](#k8s-install-advanced-ingress-change-balancer).
 
 {/tab}
 
@@ -242,7 +242,7 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {/tabs}
 
-1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
+1. [Get the IP address of the load balancer](#k8s-install-advanced-ingress-change-balancer).
 
 {/tab}
 
@@ -257,7 +257,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
 {/note}
 
-### Changing the load balancer type for the Ingress controller
+### {heading(Changing the load balancer type for the Ingress controller)[id=k8s-install-advanced-ingress-change-balancer]}
 
 When installing an add-on with default parameters, a load balancer with a floating IP address is created, and the Ingress controller is accessible from the Internet.
 
@@ -275,7 +275,7 @@ service:
 
 Once done with editing the add-on code, continue with the installation process.
 
-### Prohibition of deleting an Ingress controller node by the Autoscaler module
+### {heading(Prohibition of deleting an Ingress controller node by the Autoscaler module)[id=k8s-install-advanced-ingress-delete-prohibition]}
 
 The Autoscaler module automatically scales the cluster: it adds nodes when the load increases, and removes when it decreases. To prevent a module from deleting the node on which the add-on is running, you need to specify a ban on deletion in the pod annotation:
 
@@ -287,7 +287,7 @@ controller:
 
 Once done with editing the add-on code, continue with the installation process.
 
-## Getting the IP address of the load balancer
+## {heading(Getting the IP address of the load balancer)[id=k8s-install-advanced-ingress-get-ip]}
 
 {note:info}
 

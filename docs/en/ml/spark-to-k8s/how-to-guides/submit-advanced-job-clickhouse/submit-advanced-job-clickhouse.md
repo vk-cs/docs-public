@@ -5,7 +5,7 @@ Spark jobs can be submitted to the cluster in a variety of ways:
 
 As an example, an application that executes an SQL query against a ClickHouse deployed as a [Cloud Databases](/en/dbs/dbaas) instance will be used.
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=mlspark-htg-advanced-prerequirements]}
 
 1. Prepare the environment for working with Python in any convenient way:
 
@@ -104,7 +104,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
    1. Click the name of the instance and then click the **Information** tab.
    1. Make a note of the external IP address of the instance.
 
-## 1. Create a file with the Spark application code
+## {heading(1. Create a file with the Spark application code)[id=mlspark-htg-advanced-create-spark-file]}
 
 Create a `query-clickhouse.py` file with the following contents:
 
@@ -148,9 +148,9 @@ To simplify the use of this application, some connection parameters are set usin
 - The connection to ClickHouse is made to the `CH_IP` IP address using a driver that is stored in the `CH_DRIVER_JAR` JAR file. The driver file will be uploaded later.
 - Authentication in ClickHouse is performed using the `CH_USER` and `CH_PASSWORD` credentials. This approach helps to avoid placing sensitive data directly in the code.
 
-All mentioned environment variables [will be set up later](#3_send_the_spark_job_to_the_cluster) when submitting a Spark job to the cluster.
+All mentioned environment variables [will be set up later](#mlspark-htg-advanced-send-to-cluster) when submitting a Spark job to the cluster.
 
-## 2. Upload the necessary files to the bucket
+## {heading(2. Upload the necessary files to the bucket)[id=mlspark-htg-advanced-upload-to-bucket]}
 
 1. Find out the name of the VK Object Storage bucket used by the cluster:
 
@@ -189,7 +189,7 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
 
 When submitting a Spark job, the paths to the files uploaded to the bucket will be specified. The Cloud Spark cluster already has access to objects from this bucket, no additional configuration is needed.
 
-## 3. Send the Spark job to the cluster
+## {heading(3. Send the Spark job to the cluster)[id=mlspark-htg-advanced-send-to-cluster]}
 
 1. Create a `clickhouse-secret.yaml` file with the following contents:
 
@@ -258,9 +258,9 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
    - The path to the Spark application executable file in `spark_job_manifest.main_app_file`;
    - A list of paths to the JAR files needed by the application (in this particular case, only one JDBC driver file is needed). The `spark_job_manifest.add_jars()` function is used to add the paths to these files.
 
-   Also, the values of [required environment variables](#1_create_a_file_with_the_spark_application_code) are added to the manifest. The variables `CH_USER` and `CH_PASSWORD` are used for authentication in ClickHouse, so their values are extracted from the Kubernetes `clickhouse-secret` secret. This secret was previously created from the `clickhouse-secret.yaml` file.
+   Also, the values of [required environment variables](#mlspark-htg-advanced-send-to-cluster) are added to the manifest. The variables `CH_USER` and `CH_PASSWORD` are used for authentication in ClickHouse, so their values are extracted from the Kubernetes `clickhouse-secret` secret. This secret was previously created from the `clickhouse-secret.yaml` file.
 
-## 4. Track the status of the Spark job
+## {heading(4. Track the status of the Spark job)[id=mlspark-htg-advanced-check-jobs]}
 
 1. Make sure that the result of executing the SQL query to ClickHouse appears in the job logs. If the result does not appear, run the script to retrieve the logs again: intermediate job logs may be displayed at the time when the job has not yet completed.
 
@@ -330,7 +330,7 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
    print(events)
    ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mlspark-htg-advanced-delete-unused-resources]}
 
 If you no longer need the created resources, delete them:
 

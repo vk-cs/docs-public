@@ -26,7 +26,7 @@ The principle of operation of the PostgreSQL cluster is described.
 
 A group of virtual machines with installed DBMS servers of the selected type that support synchronous and asynchronous data replication, with a load balancer. If the master instance is unavailable, automatic switching will work: one of the replicas will be converted to the master, and another replica will be created instead.
 
-To increase the fault tolerance of a PostgreSQL cluster, synchronous and asynchronous replicas can be deployed across different zones using a [multizone cluster](#multi-az) configuration. High availability of the PostgreSQL cluster is provided by the [Patroni](https://patroni.readthedocs.io/en/latest/index.html). service.
+To increase the fault tolerance of a PostgreSQL cluster, synchronous and asynchronous replicas can be deployed across different zones using a [multizone cluster](#dbaas-work-configs-multi-az) configuration. High availability of the PostgreSQL cluster is provided by the [Patroni](https://patroni.readthedocs.io/en/latest/index.html). service.
 
 When increasing the disk size or scaling vertically, the changes are applied to all instances of the cluster.
 

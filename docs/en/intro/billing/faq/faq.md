@@ -1,8 +1,8 @@
-## Payment, refund, bonuses
+## {heading(Payment, refund, bonuses)[id=billing-faq-payment-refunds-bonuses]}
 
 {cut(How do I get bonuses for registering in my management console?)}
 
-[Bonuses](../concepts/balance#bonuses) are credited when registering a new user account. Bonuses are accrued after all [registration](/en/intro/start/account-registration) steps are completed.
+[Bonuses](../concepts/balance#billing-balance-bonuses) are credited when registering a new user account. Bonuses are accrued after all [registration](/en/intro/start/account-registration) steps are completed.
 
 Bonuses are not awarded when new projects are created by existing users and when a new user enters a project by invitation.
 
@@ -16,13 +16,13 @@ In some cases, previously accrued bonuses may be canceled or denied. See more in
 
 {cut(What do I do if I haven't received bonuses for migrating to the VK Cloud platform, testing its performance, or participating in other promotional activities?)}
 
-If you haven't received your [bonuses](../concepts/balance#bonuses), contact your personal manager or send a request via the [feedback form](https://cloud.vk.com/form/).
+If you haven't received your [bonuses](../concepts/balance#billing-balance-bonuses), contact your personal manager or send a request via the [feedback form](https://cloud.vk.com/form/).
 
 {/cut}
 
 {cut(In what order are the bonuses charged, why could they have expired?)}
 
-[Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. There are different types of bonuses, each type of bonus can be spent only on VK Cloud services corresponding to it. One bonus is equal to one ruble.
+[Bonuses](../concepts/balance#billing-balance-bonuses) in VK Cloud are spent on using cloud services and resources. There are different types of bonuses, each type of bonus can be spent only on VK Cloud services corresponding to it. One bonus is equal to one ruble.
 
 Bonuses are given for 60 days, after that they burn off. You can see the details of your expenses on the **Balance** page in your management console.
 
@@ -36,7 +36,7 @@ You cannot withdraw bonuses from the project.
 
 {cut(Are funds being charged after the end of the test period?)}
 
-After the test period has expired or bonuses have been burned off, the payment account balance is used to pay for resources. If the payment account balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
+After the test period has expired or bonuses have been burned off, the payment account balance is used to pay for resources. If the payment account balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze).
 
 {/cut}
 
@@ -126,7 +126,7 @@ Up to 3 banking days.
 
 {cut(Why should I link a card if I am a legal entity and pay according to the details?)}
 
-You may need the card if you work on a prepaid basis and need to make an emergency top-up, for example, to avoid [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) a project.
+You may need the card if you work on a prepaid basis and need to make an emergency top-up, for example, to avoid [freezing](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze) a project.
 
 {note:warn}
 
@@ -179,17 +179,17 @@ If the payment is not received on time, write to VK Cloud document management de
 
 Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../instructions/refund).
 
-You can refund only funds that you have previously credited to your payment account. [Bonuses](../concepts/balance#bonuses) cannot be refunded.
+You can refund only funds that you have previously credited to your payment account. [Bonuses](../concepts/balance#billing-balance-bonuses) cannot be refunded.
 
 For individuals, the funds will be returned to the account from which the payment has been made.
 
 {/cut}
 
-## Freezing the project
+## {heading(Freezing the project)[id=billing-faq-freeze]}
 
 {cut(The balance has become negative, how can the services be restored?)}
 
-When working on prepayment with a negative payment account balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
+When working on prepayment with a negative payment account balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze). Its objects are placed in the queue for deletion for a period:
 
 - 3 days if you have never replenished the payment account of the project.
 - 30 days if you have topped up the payment account of the project at least once.
@@ -260,7 +260,7 @@ Charges for bank card payments are not included in [accounting documents for leg
 
 {/cut}
 
-## Working with legal entities
+## {heading(Working with legal entities)[id=billing-faq-legal-entities]}
 
 {cut(We are a company not from the Russian Federation, how to start working with VK Cloud?)}
 

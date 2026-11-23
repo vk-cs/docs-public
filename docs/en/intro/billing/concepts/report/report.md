@@ -1,6 +1,6 @@
 Users receive financial documents from VK Cloud for all payments made. The composition of such documents differs for individuals and legal entities.
 
-## Individuals
+## {heading(Individuals)[id=billing-report-individuals]}
 
 When replenishing a payment account, individuals receive a payment receipt in accordance with [Federal Law 54](https://base.garant.ru/12130951/) «О применении контрольно-кассовой техники». The receipt is sent to the VK Cloud project owner's email address. The original payment receipt is not provided.
 
@@ -43,7 +43,7 @@ The invoice and the Certificate of work performed are not provided, as the unive
 
 {tab(Work under an individual contract)}
 
-The composition of the accounting documents depends on the specific terms of the contract. In particular, there are differences for organizations working [on prepayment and on post-payment](../physical-corporate#payment_scheme).
+The composition of the accounting documents depends on the specific terms of the contract. In particular, there are differences for organizations working [on prepayment and on post-payment](../physical-corporate#billing-physical-corporate-payment-scheme).
 
 {tabs}
 
@@ -121,10 +121,10 @@ To set up paper workflow, contact the document management department of VK Cloud
    - Full name of the recipient.
    - Recipient's address. If the address matches the legal address of the organization, specify it explicitly in the request.
 
-#### Scanned copies of documents
+#### {heading(Scanned copies of documents)[id=billing-report-scans]}
 
 VK Cloud can provide scanned copies of accounting documents in PDF format by e-mail — every month or on a one-time basis, upon request. To get scanned copies, write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
-## Tax accounting
+## {heading(Tax accounting)[id=billing-report-tax-accounting]}
 
 For tax residents of the Russian Federation, the amount of VAT is indicated in payment and accounting documents.

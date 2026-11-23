@@ -2,7 +2,7 @@ Tariffication is based on the “pay as you go” principle: you are charged onl
 
 The cost of platform services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of services. See [Billing](/en/intro/billing) for how the tools related to paying for services work.
 
-## What is charged
+## {heading(What is charged)[id=iaas-tariffication-list]}
 
 - CPU (vCPU) — for each core. 1 vCPU corresponds to 1 physical core of the virtualization server.
 - Random access memory (RAM) — for each 1 GB of RAM.
@@ -10,7 +10,7 @@ The cost of platform services is given in [price list](https://cloud.vk.com/pric
 - Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVMe).
 - File storages (NFS/CIFS) — for each 1 GB of disk space.
 - Disk snapshots — for each 1 GB of snapshot size.
-- [Public IP addresses](/en/networks/vnet/tariffication#what_is_charged).
+- [Public IP addresses](/en/networks/vnet/tariffication#vnet-tariffication-charged).
 - [Disk images](../concepts/about#image) that you created or imported to VK Cloud. The price depends on the storage location:
 
   - Storing in [VK Object Storage](/en/storage/s3) (by default) — at the [Icebox](/en/storage/s3/instructions/change-storage-class) rate for each 1 GB of the image volume and for each 1 GB of the downloaded image, for example, when creating a VM. For more details on how data storage classes are charged, refer to the [Tariffication](/en/storage/s3/tariffication) section of the VK Cloud Storage service.
@@ -23,13 +23,13 @@ CPU (vCPU) and RAM are charged only when the virtual machine is running. When th
 - For storing backups.
 - For public IP addresses.
 
-## What is not charged
+## {heading(What is not charged)[id=iaas-tariffication-not-list]}
 
 - Incoming and outgoing traffic.
 - Monitoring.
 - Public disk images pre-configured in VK Cloud.
 
-## Example of price calculation
+## {heading(Example of price calculation)[id=iaas-tariffication-prices]}
 
 For example, the price of a virtual machine with Ubuntu Linux OS, 4 CPU, 16 GB RAM, 100 GB SSD disk and public IP address will be calculated as follows:
 
