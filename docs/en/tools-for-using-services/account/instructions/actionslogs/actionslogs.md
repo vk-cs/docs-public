@@ -11,7 +11,7 @@ The activity log stores the history of operations performed by VK Cloud componen
 
 Log data can be useful both for internal analysis of incidents and when contacting technical support.
 
-## Downloading the action log
+## {heading(Downloading the action log)[id=account-actionslogs-download]}
 
 {tabs}
 
@@ -28,7 +28,7 @@ The generated report will be uploaded with the extension `.xlsx`.
 
 {/tabs}
 
-## Viewing log
+## {heading(Viewing log)[id=account-actionslogs-view]}
 
 {tabs}
 
@@ -57,7 +57,7 @@ To open detailed information about an individual record, click on the icon ![Inf
    curl -X GET "<Audit endpoint>/logs" -H "X-Auth-Token: <token>"
    ```
 
-   More information about formulating a request in the section [Examples of API requests to the action log](#examples_of_api_requests_to_the_action_log).
+   More information about formulating a request in the section [Examples of API requests to the action log](#account-actionslogs-example).
 
    Additional parameters can be specified in the request (header):
 
@@ -86,7 +86,7 @@ Each action log record provides the information:
 - `request_body` — request body (if any).
 - `response_body` — response body (if any).
 
-## Examples of API requests to the action log
+## {heading(Examples of API requests to the action log)[id=account-actionslogs-example]}
 
 To split the output of records to the console or file into lines, the requests use [the jq utility](/en/tools-for-using-services/api/rest-api/install-jq).
 

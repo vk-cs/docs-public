@@ -1,4 +1,4 @@
-In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4_connect_to_the_vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm_message_logs).
+In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#iaas-vm-connect-nix-os) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm_message_logs).
 
 {note:info}
 
@@ -78,7 +78,7 @@ VNC console control buttons are available in the VK Cloud management console int
 - **Send CtrAltDel** — the action of the button depends on the VM's operating system (reboot, opening the lock window, etc.).
 - **Update Session** — use it to reconnect to the VNC console.
 
-## VM message logs
+## {heading(VM message logs)[id=vm_message_logs]}
 
 OpenStack provides support for a console running through a VM serial port. This allows you to view the boot logs and other diagnostic information, regardless of the state of the operating system and access to the VM over the network.
 

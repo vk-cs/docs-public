@@ -43,7 +43,7 @@
 
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
 
-      - **Network**: the network where the DB instance will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#creating_network).
+      - **Network**: the network where the DB instance will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/instructions/net#vnet-net-add).
 
       - **Assign an external IP:** select this option to assign a floating IP address to the DB instance.
 

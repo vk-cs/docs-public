@@ -23,7 +23,7 @@ Access to PVC in RWX mode is not implemented in Managed Containers. To organize 
 
 {/note}
 
-## PV and PVC lifecycle
+## {heading(PV and PVC lifecycle)[id=k8s-pvs-and-pvcs-life-cycle]}
 
 The PV and PVC life cycle is independent of the pod life cycle and [consists of](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#lifecycle-of-a-volume-and-claim) four consecutive stages:
 
@@ -41,7 +41,7 @@ A PV must be prepared prior to requesting the PV via PVC. It can be done in one 
 
 For dynamic provisioning, two conditions must be met:
 
-- Storage classes must be configured in the Kubernetes cluster. Kubernetes clusters in the Managed Containers service already contain [pre-configured storage classes](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes).
+- Storage classes must be configured in the Kubernetes cluster. Kubernetes clusters in the Managed Containers service already contain [pre-configured storage classes](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes).
 
 - For PVCs, no suitable PVs shall be found that already exist.
 
@@ -50,9 +50,9 @@ During dynamic provisioning Kubernetes will try to create a PV matching the para
 - A storage class explicitly defined in the PVC.
 - A default storage class if the class is not explicitly specified in the PVC.
 
-In VK Cloud Kubernetes clusters, the default storage class [is not configured](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes). If you do not plan to explicitly set the storage class in the PVC, then [manually set the default storage class](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/) before creating the PVC.
+In VK Cloud Kubernetes clusters, the default storage class [is not configured](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes). If you do not plan to explicitly set the storage class in the PVC, then [manually set the default storage class](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/) before creating the PVC.
 
-### {counter(pv)}. Binding
+### {heading({counter(pv)}. Binding)[id=k8s-pvs-and-pvcs-bound]}
 
 PV and PVC are bound on a one-to-one basis for use in workloads. An already bound PV cannot be used with other PVCs.
 
@@ -85,11 +85,11 @@ When a new PVC is created in a Kubernetes cluster:
 
 1. If no PV is bound to a PVC, then the PVC remains in the `Unbound` state. Workloads cannot use such PVC as a volume. Kubernetes will periodically try to bind such PVC to new PVs if they appear in the cluster.
 
-### {counter(pv)}. Using
+### {heading({counter(pv)}. Using)[id=k8s-pvs-and-pvcs-using]}
 
 Once Kubernetes has bound a PVC to a PV, that PVC can be used by a workload as a normal volume.
 
-### {counter(pv)}. Reclaiming
+### {heading({counter(pv)}. Reclaiming)[id=k8s-pvs-and-pvcs-release]}
 
 When a PVC is no longer needed and is deleted, a specified reclaim policy is applied to the PV associated with that PVC.
 
@@ -115,11 +115,11 @@ Available policies:
 
   {/note}
 
-In VK Cloud Kubernetes clusters, the storage type selected affects [available reclaim policies](/en/kubernetes/k8s/concepts/storage#available_reclaim_policies_for_persistent_volumes).
+In VK Cloud Kubernetes clusters, the storage type selected affects [available reclaim policies](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes).
 
-## See also
+## {heading(See also)[id=k8s-pvs-and-pvcs-see-also]}
 
 - [How storage is organized in Managed Containers](/en/kubernetes/k8s/concepts/storage).
-- [List of pre-configured storage classes](/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes).
+- [List of pre-configured storage classes](/en/kubernetes/k8s/concepts/storage#k8s-storage-storage-classes).
 - [Use-case](/en/kubernetes/k8s/how-to-guides/storage) that demonstrates using of various PVCs.
 - [Official Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes) for more information about PVCs and PVs.

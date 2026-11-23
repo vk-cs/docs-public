@@ -1,4 +1,4 @@
-## 1. Check the possibility of migration
+## {heading(1. Check the possibility of migration)[id=migration-migrate-vmware-check]}
 
 The VMware virtual machine must meet the following requirements:
 
@@ -7,7 +7,7 @@ The VMware virtual machine must meet the following requirements:
 - The current user has administrator rights.
 - At least one disk is connected to the VM.
 
-## 2. Prepare the VM for migration
+## {heading(2. Prepare the VM for migration)[id=migration-migrate-vmware-vm-prepare]}
 
 {tabs}
 
@@ -60,7 +60,7 @@ The VMware virtual machine must meet the following requirements:
 
 {/tabs}
 
-## 3. Export the virtual machine
+## {heading(3. Export the virtual machine)[id=migration-migrate-vmware-export]}
 
 1. Stop the VM.
 
@@ -74,7 +74,7 @@ The VMware virtual machine must meet the following requirements:
 
 Several `.ovf` and `.vmdk` files will be created — a second file will be needed for further work.
 
-## 4. Import the VM image to VK Cloud
+## {heading(4. Import the VM image to VK Cloud)[id=migration-migrate-vmware-image-import]}
 
 To load a VM image, use the OpenStack CLI to avoid possible errors when processing large files by the web interface.
 
@@ -123,7 +123,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    The image should appear in the list and have the status `ACTIVE`.
 
-## 5. Create a virtual machine
+## {heading(5. Create a virtual machine)[id=migration-migrate-vmware-create-vm]}
 
 {tabs}
 
@@ -146,7 +146,7 @@ Use the imported image to [create a Linux VM](/en/computing/iaas/instructions/vm
    3. Run the VirtIO installer in `repair` mode.
    4. [Stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the virtual machine.
 
-3. [Create a image](/en/computing/iaas/instructions/images/images-manage#creating_an_image) from the VM's boot disk.
+3. [Create a image](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) from the VM's boot disk.
 4. Change the disk bus type of the new image:
 
    ```console

@@ -7,7 +7,7 @@ When registering a new user account in VK Cloud, a project is automatically crea
 
 Each VK Cloud project has a separate [balance](/en/intro/billing/concepts/balance) which can be replenished using the [card](/en/intro/billing/instructions/add-card) linked to the project or other [payment methods](/en/intro/billing/concepts/payment-methods).
 
-## Automatic freezing of the project
+## {heading(Automatic freezing of the project)[id=projects-auto-freeze]}
 
 {note:info}
 

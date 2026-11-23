@@ -48,7 +48,7 @@
    1. (Optional) Specify an IP address for the service instance from the subnet. To do this, disable **Automatic IP assignment**. By default, the instance is assigned an IP address automatically.
    {/ifndef}
    {ifdef(public)}
-   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host the Cloud Kafka instance.
+   1. Select a Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) will be added to this cluster in the [Managed Containers](/en/kubernetes/k8s) service to host the Cloud Kafka instance.
 
       If the required cluster is not listed:
 

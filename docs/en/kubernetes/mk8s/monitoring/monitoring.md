@@ -6,11 +6,11 @@ You can use the following tools to monitor the status of a Kubernetes cluster:
 
   With the add-on, you can view metrics of Kubernetes resources, down to individual pods. You can also use alerts that warn you when a metric exceeds its threshold, and [forecast](#forecasting_cluster_resource_consumption) cluster resource consumption. Forecasting is available in the add-on [version](/en/kubernetes/mk8s/concepts/versions/components) `68.3.3`.
 
-## Cluster status dashboard
+## {heading(Cluster status dashboard)[id=cluster_status_dashboard]}
 
 VK Cloud creates a dashboard for each cluster automatically. The dashboard is based on [Cloud Monitoring](/en/monitoring-services/monitoring). It shows the status of cluster resources, how their usage changes, and the main resource consumers. The data comes from the metrics of nodes, containers, and the network. VK Cloud collects these metrics automatically.
 
-The dashboard is [available](/en/kubernetes/mk8s/instructions/manage-cluster#view_cluster_status_dashboard) in the management console on the cluster page. Use its indicators to [configure](/en/monitoring-services/alerting/instructions/triggers#alerting-triggers-add) alerts in Cloud Monitoring.
+The dashboard is [available](/en/kubernetes/mk8s/instructions/manage-cluster#mk8s-manage-cluster-view-state) in the management console on the cluster page. Use its indicators to [configure](/en/monitoring-services/alerting/instructions/triggers#alerting-triggers-add) alerts in Cloud Monitoring.
 
 The dashboard indicators fall into three groups:
 
@@ -30,7 +30,7 @@ The dashboard indicators fall into three groups:
    - Containers with the highest resource consumption. For such containers, [check](/en/kubernetes/mk8s/concepts/addons-and-settings/settings#limits_settings_for_pods) that resource requests and limits match the actual load. If you do not set them, the cluster uses default values.
    - Containers close to the memory limit. If a container exceeds the limit, the Linux kernel stops its process because of lack of memory, and the container may restart. The list does not include containers without a limit.
 
-## Using Grafana
+## {heading(Using Grafana)[id=using_grafana]}
 
 1. [Make sure](/en/kubernetes/mk8s/instructions/addons/manage-addons#viewing_addons) that the monitoring add-on (`kube-prometheus-stack`) [is installed](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-monitoring) in a cluster.
 1. [Make sure](/en/kubernetes/mk8s/connect/kubectl#check_connection) that you can connect to the cluster using `kubectl`.

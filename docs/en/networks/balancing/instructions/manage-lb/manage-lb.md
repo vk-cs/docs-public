@@ -1,6 +1,6 @@
 You can manage load balancers: view, edit and delete them, add and modify balancing rules, manipulate public IP addresses.
 
-## Viewing a list of load balancers and information about them
+## {heading(Viewing a list of load balancers and information about them)[id=balancing-manage-lb-list]}
 
 {tabs}
 
@@ -14,7 +14,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Click on the name of the necessary balancer.
 
-   A page will open with detailed information about the balancer. In this page you can also [edit](#editing_a_load_balancer_name) the balancer parameters.
+   A page will open with detailed information about the balancer. In this page you can also [edit](#balancing-manage-lb-edit) the balancer parameters.
 
 {/tab}
 
@@ -130,7 +130,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) from the list. To optimize and speed up the
      balancer connection to VMs, place them in the same zone.
    - **DNS-name**: (Optional) DNS name for the balancer.
-   - **Assign external IP**: if this option is selected, the balancer will be assigned a public IP address through which it will be accessible from the Internet. Otherwise the balancer will act as an internal load balancer. Such IP address can be [assigned later](#managing_public_ip_addresses).
+   - **Assign external IP**: if this option is selected, the balancer will be assigned a public IP address through which it will be accessible from the Internet. Otherwise the balancer will act as an internal load balancer. Such IP address can be [assigned later](#balancing-manage-lb-edit).
 
      Select this option if you plan to place services behind the load balancer that must be accessible from the Internet.
      The option can only be selected if the network selected earlier is behind a router that has access to the Internet.
@@ -147,7 +147,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) of the subnet.
+1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/instructions/net#vnet-net-view) of the subnet.
 
 1. Select the [availability zone](/en/intro/start/concepts/architecture#architecture-az) to place the balancer. To get the list of availability zones, run the command:
 
@@ -163,7 +163,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    openstack loadbalancer create --name <load-balancer-name> --vip-subnet-id <subnet-ID> --availability-zone <availability-zone>
    ```
 
-1. (Optional) [Assign the balancer an external IP address](#managing_public_ip_addresses). Through this address, it
+1. (Optional) [Assign the balancer an external IP address](#balancing-manage-lb-ip). Through this address, it
    will be accessible from the Internet. Otherwise the load balancer will act as an internal load balancer.
 
    The address must be assigned if you plan to place services behind the load balancer which must be accessible from the Internet. You can assign an address only if the network for the selected subnet earlier is behind a router that has access to the Internet.
@@ -172,7 +172,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {/tabs}
 
-## Editing a load balancer name
+## {heading(Editing a load balancer name)[id=balancing-manage-lb-edit]}
 
 {tabs}
 
@@ -203,7 +203,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-1. [Get ID](#viewing_a_list_of_load_balancers_and_information_about_them) of the necessary load balancer.
+1. [Get ID](#balancing-manage-lb-edit) of the necessary load balancer.
 
 1. Change the name of the load balancer:
 
@@ -233,9 +233,9 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 {/tabs}
 
-## Managing public IP addresses
+## {heading(Managing public IP addresses)[id=balancing-manage-lb-ip]}
 
-### Assign a public IP address
+### {heading(Assign a public IP address)[id=balancing-manage-lb-assign-ip]}
 
 If the balancer network is connected to a router with Internet access, you can assign a public (external) IP address to the balancer.
 
@@ -273,7 +273,7 @@ If the balancer network is connected to a router with Internet access, you can a
 
 {/tabs}
 
-### Unassign the public IP address
+### {heading(Unassign the public IP address)[id=balancing-manage-lb-unlink-ip]}
 
 If the balancer network is connected to a router with Internet access, and a public (external) IP address is assigned to the balancer, this address can be unassigned.
 
@@ -341,7 +341,7 @@ To remove a load balancer:
    1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-1. [Get ID](#viewing_a_list_of_load_balancers_and_information_about_them) of the load balancer.
+1. [Get ID](#balancing-manage-lb-list) of the load balancer.
 
 1. Remove the load balancer:
 

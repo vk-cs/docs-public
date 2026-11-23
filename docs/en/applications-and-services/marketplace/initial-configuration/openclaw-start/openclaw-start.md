@@ -13,7 +13,7 @@ OpenClaw features include:
 
 By using the OpenClaw service, you agree to the license agreements of [Marketplace VK Cloud](/ru/start/legal/offer/private-special-conditions/policy-marketplace) and [OpenClaw](https://github.com/openclaw/openclaw/blob/main/LICENSE).
 
-## Prerequisites
+## {heading(Prerequisites)[id=marketplace-openclaw-prep]}
 
 To deploy the OpenClaw service on a VM in your VK Cloud project:
 
@@ -26,10 +26,10 @@ To deploy the OpenClaw service on a VM in your VK Cloud project:
 
 1. If you want to have access to the service from the internet, additionally configure the network:
 
-    1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with internet access, if not already done.
-    1. In the [subnet settings](/en/networks/vnet/instructions/net#creating_subnet) where the VM will be hosted, disable the **Private DNS** option.
+    1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a network with internet access, if not already done.
+    1. In the [subnet settings](/en/networks/vnet/instructions/net#vnet-net-add) where the VM will be hosted, disable the **Private DNS** option.
 
-## {counter(openclaw)}. Connect the service
+## {heading({counter(openclaw)}. Connect the service)[id=marketplace-openclaw-enable]}
 
 1. In your VK Cloud [management console](https://msk.cloud.vk.com/app/en), go to the **Marketplace** section.
 1. On the **OpenClaw** service card, click the **Details** button.
@@ -78,10 +78,10 @@ To deploy the OpenClaw service on a VM in your VK Cloud project:
     - `keypair` — the private key for SSH connection to the virtual machine where the service is deployed.
 
    {note:info}
-   If the access credentials are lost, [generate](/en/applications-and-services/marketplace/instructions/pr-instance-manage#updating_access_to_a_service_instance) new ones.
+   If the access credentials are lost, [generate](/en/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access) new ones.
    {/note}
 
-## {counter(openclaw)}. Verify the service functionality
+## {heading({counter(openclaw)}. Verify the service functionality)[id=marketplace-openclaw-check]}
 
 1. Access the OpenClaw service web interface using one of the following methods:
 

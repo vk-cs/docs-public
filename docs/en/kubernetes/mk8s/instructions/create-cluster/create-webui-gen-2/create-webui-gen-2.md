@@ -6,7 +6,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
 {/note}
 
-## Before you create a cluster
+## {heading(Before you create a cluster)[id=mk8s-create-webui-gen-2-prepare]}
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#k8s) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the cluster. Different quotas may be configured for different regions.
 
@@ -22,7 +22,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
    1. Select the **New generation** option and click the **Continue** button.
 
-## Configure the cluster
+## {heading(Configure the cluster)[id=mk8s-create-webui-gen-2-config]}
 
 1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/mk8s/concepts/versions/version-support).
 
@@ -43,13 +43,13 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
 1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
-   - **Network**: select the network and subnet that host the load balancer and worker nodes of the cluster. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
+   - **Network**: select the network and subnet that host the load balancer and worker nodes of the cluster. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#vnet-net-add) them.
    
    - **CNI**: select a [Container Network Interface (CNI)](/en/kubernetes/mk8s/concepts/network#supported-cni).
 
    - **CNI**: select a [Container Network Interface (CNI)](/en/kubernetes/mk8s/concepts/network#supported-cni).
 
-   - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
+   - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#vnet-net-add) it. 
      
       By default, the option is disabled, and the load balancers use the same subnet as the cluster nodes.
 
@@ -87,7 +87,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
    Once the cluster is created, its [configuration file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) (kubeconfig) is automatically downloaded to your machine with the name in the following format: `<CLUSTER NAME>_kubeconfig.yaml`. You need this file to [connect](/en/kubernetes/mk8s/connect) to the cluster.
 
-## What's next?
+## {heading(What's next?)[id=mk8s-create-webui-gen-2-what-next]}
 
 - [Set up the environment](/en/kubernetes/mk8s/connect) on the host from which you plan to connect to the cluster.
 - [Familiarize yourself with the usage scenarios](/en/kubernetes/mk8s/how-to-guides) of the cluster.

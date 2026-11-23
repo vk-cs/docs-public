@@ -2,7 +2,7 @@
 You cannot manage [VK Data Platform](/en/data-platform) clusters via the Managed Containers service. To do that, use the VK Data Platform section of the VK Cloud management console.
 {/note}
 
-## Start or stop cluster
+## {heading(Start or stop cluster)[id=mk8s-manage-cluster-start-stop]}
 
 ### {heading(Start cluster)[id=start]}
 
@@ -46,7 +46,7 @@ To stop a cluster:
 
 {/tabs}
 
-## Get cluster information
+## {heading(Get cluster information)[id=mk8s-manage-cluster-get-info]}
 
 Different information is available for running and stopped clusters.
 
@@ -65,7 +65,7 @@ Different information is available for running and stopped clusters.
 
 {/tabs}
 
-## View cluster status dashboard
+## {heading(View cluster status dashboard)[id=mk8s-manage-cluster-view-state]}
 
 {tabs}
 
@@ -94,7 +94,7 @@ For more information about charts and alerts in Cloud Monitoring, see:
 
 {/tabs}
 
-## Get props for connecting to the cluster
+## {heading(Get props for connecting to the cluster)[id=mk8s-manage-cluster-get-requisites]}
 
 Available props:
 
@@ -103,7 +103,7 @@ Available props:
 
 The operations to get these props are described in detail in [Connecting](/en/kubernetes/mk8s/connect) section.
 
-## Change virtual machine type for master nodes
+## {heading(Change virtual machine type for master nodes)[id=mk8s-manage-cluster-change-master-type]}
 
 This operation is described in detail in [Cluster node scaling](/en/kubernetes/mk8s/instructions/scale). You can only perform it when the cluster is running.
 

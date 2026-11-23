@@ -25,5 +25,5 @@ After completing all the steps in this guide, you will create a block disk and a
 
 Running VMs and disks consume computing resources. If you no longer need them:
 
-- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=stop]} the created VM to use it later, or {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=delete]} it permanently;
+- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=stop]} the created VM to use it later, or {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=delete]} it permanently;
 - {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=delete]} the created disk.

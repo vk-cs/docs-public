@@ -1,10 +1,10 @@
-## About tariffication
+## {heading(About tariffication)[id=vnet-tariffication-about]}
 
 Tariffication is based on the "pay as you go" principle: you are charged only for the resources you consume to the nearest second.
 
 The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of other platform services that use network services. See [Billing](/en/intro/billing) for how the tools related to paying for platform services work.
 
-## What is charged
+## {heading(What is charged)[id=vnet-tariffication-charged]}
 
 The cost of these resources is displayed in your personal VK Cloud account as part of the total cost of the services that use them.
 
@@ -16,7 +16,7 @@ Charged:
 
 - [Standard and service](../../balancing/concepts/load-balancer#types_of_load_balancers) load balancers.
 
-## What is not charged
+## {heading(What is not charged)[id=vnet-tariffication-not-charged]}
 
 - The public IP address assigned to the router when you select the **External network connection** option.
 

@@ -1,6 +1,6 @@
 Velero is a client-server utility for backing up and restoring Kubernetes cluster resources.
 
-## Installation
+## {heading(Installation)[id=k8s-velero-install]}
 
 1. Make sure that:
 
@@ -193,7 +193,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    velero snapshot-location create default --provider openstack --config region=ru-msk
    ```
 
-## Checking Velero operation
+## {heading(Checking Velero operation)[id=k8s-velero-check]}
 
 1. Run the command to check the configured plugins:
 
@@ -236,7 +236,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    default   openstack
    ```
 
-## Deletion
+## {heading(Deletion)[id=k8s-velero-delete]}
 
 Run the command:
 

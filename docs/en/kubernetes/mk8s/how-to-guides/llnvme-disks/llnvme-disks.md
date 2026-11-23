@@ -173,7 +173,7 @@ To learn how to connect LL NVMe disks to worker nodes, deploy the `coffee` test 
       <persistent volume ID>                     ...   Bound    example-app/coffee-pvc   csi-ef-nvme    ...
       ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-llnvme-disks-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} LL NVMe disks, delete them:
 
@@ -193,6 +193,6 @@ To learn how to connect LL NVMe disks to worker nodes, deploy the `coffee` test 
    {/tab}
    {/tabs}
 
-1. [Delete](/en/kubernetes/mk8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) the persistent volume that was created.
+1. [Delete](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-reclaim-policies) the persistent volume that was created.
 
 {include(/en/_includes/_delete-test-cluster-short.md)}

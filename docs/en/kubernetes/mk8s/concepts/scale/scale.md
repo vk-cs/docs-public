@@ -1,6 +1,6 @@
 Scaling allows you to adapt the cluster to the changing needs of workloads ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
-## Types of scaling
+## {heading(Types of scaling)[id=mk8s-scale-types]}
 
 Two types of scaling are supported:
 
@@ -14,7 +14,7 @@ Both types of scaling are performed manually. [Autoscaling](#autoscaling) also w
 
 ## {heading(Autoscaling)[id=autoscaling]}
 
-### Vertical autoscaling
+### {heading(Vertical autoscaling)[id=mk8s-scale-vertical-autoscaling]}
 
 _Vertical autoscaling_ of master nodes works for all clusters, you cannot disable it.
 
@@ -69,7 +69,7 @@ If at least one of the thresholds is exceeded, a request will be sent to the [Ma
 
 {/cut}
 
-### Horizontal autoscaling
+### {heading(Horizontal autoscaling)[id=mk8s-scale-horizontal-autoscaling]}
 
 You can [configure](/en/kubernetes/mk8s/instructions/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes via [Cluster Autoscaler](/en/kubernetes/mk8s/concepts/cluster-autoscaler). The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
@@ -85,13 +85,13 @@ To receive timely notifications about cluster scaling, specify the trigger condi
 
 When a trigger occurs, you will receive a notification on the selected channel.
 
-## Current restrictions
+## {heading(Current restrictions)[id=mk8s-scale-limitations]}
 
 - Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](/en/kubernetes/mk8s/concepts/flavors#configuration_templates).
 - Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 500 nodes.
-- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](/en/kubernetes/mk8s/instructions/scale#scaling_groups_of_worker_nodes_c172481b).
+- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](/en/kubernetes/mk8s/instructions/scale#mk8s-instructions-scale-horizontal-worker-nodes).
 
-## Ensuring accessibility with vertical scaling
+## {heading(Ensuring accessibility with vertical scaling)[id=mk8s-scale-availability-with-scaling]}
 
 When vertically scaling any cluster nodes, the virtual machines that are used by the nodes are sequentially restarted. This is necessary to apply the new virtual machine template. Therefore, the scaling process affects the availability of both the cluster API and the workloads hosted in the cluster:
 

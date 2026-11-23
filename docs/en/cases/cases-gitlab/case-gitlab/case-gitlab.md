@@ -5,7 +5,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 ## Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/instructions/net#creating_network) a network `network1` with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a network `network1` with internet access and a subnet with the address `10.0.0.0/24`.
 1. [Create](/en/networks/vnet/instructions/secgroups) a security group `gitlab` and add inbound permissions to it for the ports:
 
    - `80` (HTTP),

@@ -155,7 +155,7 @@ Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API docume
 
 {/tabs}
 
-## Adding resource records
+## {heading(Adding resource records)[id=adding_resource_records]}
 
 A resource record is a DNS record of a domain in the domain name system. With their help, you determine where to send requests that come to domain names, as well as provide additional information about the domain.
 

@@ -1,6 +1,6 @@
 VK Cloud provides special features for [legal entities and sole proprietors](../../concepts/physical-corporate). Contractors-legal entities can receive accounting [accounting documents](../../concepts/report) from the platform. They have the opportunity to conclude an individual contract with VK Cloud.
 
-## Setting up the workflow
+## {heading(Setting up the workflow)[id=billing-corporate-setup]}
 
 A contractor who works with VK Cloud as a legal entity receives a package of [accounting documents](../../concepts/report) on their projects from the platform on a monthly basis. The document flow is carried out in electronic form (according to [EDM](../../concepts/report)) or, if work on EDM is impossible, in paper form.
 
@@ -40,7 +40,7 @@ Filling in the details in the management console is only available in [region](/
 
 {/note}
 
-If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [generate and download](../bill-generation) advance invoices from your management console.
+If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#billing-physical-corporate-agreement-type), after additional registration, you will be able to [generate and download](../bill-generation) advance invoices from your management console.
 
 To complete additional registration:
 

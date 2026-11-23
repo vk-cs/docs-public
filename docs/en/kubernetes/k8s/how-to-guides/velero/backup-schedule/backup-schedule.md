@@ -1,12 +1,12 @@
 Use [Velero](https://velero.io/docs/main/) to configure cluster backups based on a schedule you set in the [cron](https://crontab.guru/every-1-minute) format, and then restore the cluster using this schedule.
 
-## Before you begin
+## {heading(Before you begin)[id=k8s-backup-schedule-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 1. [Make sure](/en/kubernetes/k8s/connect/kubectl) that you can connect to the cluster via `kubectl`.
 1. [Install and configure](/en/kubernetes/k8s/install-tools/velero) Velero, if not done so already.
 
-## {counter(schedule)}. Create a schedule for backups
+## {heading({counter(schedule)}. Create a schedule for backups)[id=k8s-backup-schedule-create-schedule]}
 
 Create a schedule for backups for the required namespace:
 
@@ -54,7 +54,7 @@ As a result of this schedule, backups will be created daily at 07:00. The name o
 The default backup lifetime is 720 hours. After that time, the backup will be deleted.
 {/note}
 
-## {counter(schedule)}. Review the created schedule
+## {heading({counter(schedule)}. Review the created schedule)[id=k8s-backup-schedule-view-schedule]}
 
 1. Make sure that the created schedule appears in the list of backup schedules available for the selected namespace:
 
@@ -93,7 +93,7 @@ The default backup lifetime is 720 hours. After that time, the backup will be de
    Paused:  false
    ```
 
-## {counter(schedule)}. Restore data
+## {heading({counter(schedule)}. Restore data)[id=k8s-backup-schedule-perform-backup]}
 
 Restore data from the backup that was created according to the schedule you configured.
 
@@ -101,7 +101,7 @@ Restore data from the backup that was created according to the schedule you conf
 velero restore create --namespace <NAMESPACE> --from-schedule <SCHEDULE_NAME>
 ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=k8s-backup-schedule-delete]}
 
 A running cluster consumes computing resources and is charged accordingly. If you no longer need the Velero tool and the Kubernetes resources you created to test the backup process, delete them:
 

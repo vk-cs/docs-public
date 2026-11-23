@@ -10,7 +10,7 @@ If you configure a connection to the service network via Direct Connect, access 
 
 {/note}
 
-## Before you start
+## {heading(Before you start)[id=vnet-s3-service-net-prep]}
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) to add the service network to your project.
 
@@ -28,7 +28,7 @@ If you configure a connection to the service network via Direct Connect, access 
       - **Assign external IP**: enable the option.
       - **Use Backup**: disable the option to save money.
       - Choose other settings as you wish.
-   1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the service network to the VM. Select the service network that was added to your project. In this example, `s3-ephn`. Leave other parameters by default.
+   1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the service network to the VM. Select the service network that was added to your project. In this example, `s3-ephn`. Leave other parameters by default.
    1. Find the IP and MAC addresses of the service network connection on the **Networks** tab. Write them down. In this example, `198.18.14.1` and `fa:16:3e:d8:86:43`.
    1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the VM via SSH.
    1. Update packages to the latest version and reboot the VM using the commands:
@@ -41,7 +41,7 @@ If you configure a connection to the service network via Direct Connect, access 
    1. (Optional) Install the [Netplan](https://www.altlinux.org/Netplan) utility to work with network settings. In virtual machines with Ubuntu 18 and above, this utility is installed by default.
    1. [Configure AWS CLI](/en/storage/s3/connect/s3-cli) to work with VK Object Storage.
 
-## 1. Configure connection to service network
+## {heading(1. Configure connection to service network)[id=vnet-s3-service-net-service-network-connection]}
 
 After connecting the service network to the VM, it will have a new network interface. There is no DHCP in the service network, so the interface must be configured manually.
 
@@ -129,9 +129,9 @@ To configure the VM network interface directed to the service network:
 
 ## 2. (Optional) Disable public network
 
-If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/instructions/vm/vm-add-net#deleting_a_vm_network) the network with Internet access that was added when creating the VM.
+If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the network with Internet access that was added when creating the VM.
 
-## 3. Check connection to VK Object Storage
+## {heading(3. Check connection to VK Object Storage)[id=vnet-s3-service-net-check]}
 
 1. Connect to the VM:
 
@@ -151,7 +151,7 @@ If you no longer need access to the VM via SSH, [disable](/en/computing/iaas/ins
 
 The response should return a list of the VK Object Storage buckets.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=vnet-s3-service-net-delete]}
 
 If you no longer need the created resources, delete them:
 

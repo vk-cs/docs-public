@@ -1,10 +1,10 @@
 You can delete a CDN resource in two ways:
 
-- [Through the CDN service interface](#deleting_resource_via_cdn_service_interface).
+- [Through the CDN service interface](#cdn-delete-resource-cdn-interface).
 
-- [Through the bucket interface](#deleting_resource_via_bucket_interface) in the [VK Object Storage](/en/storage/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#cdn-create-resource-bucket-ui).
+- [Through the bucket interface](#cdn-delete-resource-cdn-interface) in the [VK Object Storage](/en/storage/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#cdn-create-resource-bucket-ui).
 
-## Deleting resource via CDN service interface
+## {heading(Deleting resource via CDN service interface)[id=cdn-delete-resource-cdn-interface]}
 
 {tabs}
 
@@ -27,7 +27,7 @@ To delete a CDN resource:
 
 {/tabs}
 
-## Deleting resource via bucket interface
+## {heading(Deleting resource via bucket interface)[id=cdn-delete-resource-bucket-interface]}
 
 {tabs}
 

@@ -12,11 +12,11 @@ If you plan to work with VK Cloud as a legal entity or sole proprietor, go throu
 
 {/note}
 
-## Payment scheme
+## {heading(Payment scheme)[id=billing-physical-corporate-payment-scheme]}
 
 ### {heading(Prepayment)[id=prepayment]}
 
-The user [deposits](../../instructions/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the payment account of the project, from where they are then spent on paying for services. If a project becomes negative, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the payment account balance becomes positive.
+The user [deposits](../../instructions/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the payment account of the project, from where they are then spent on paying for services. If a project becomes negative, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze) until the payment account balance becomes positive.
 
 {tabs}
 
@@ -30,15 +30,15 @@ Individuals work with VK Cloud only on prepayment.
 
 By default, legal entities and sole proprietors work on prepayment, but they can also work on post-payment.
 
-When working on prepayment, only a universal transfer document is provided to a legal entity from [accounting documents](../report#individuals). Other documents are optional.
+When working on prepayment, only a universal transfer document is provided to a legal entity from [accounting documents](../report#billing-report-individuals). Other documents are optional.
 
 {/tab}
 
 {/tabs}
 
-### Post-payment
+### {heading(Post-payment)[id=billing-physical-corporate-postpay]}
 
-The user is billed once a month for using the services. The payment account balance of the project is always negative under this scheme, but the project is not [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
+The user is billed once a month for using the services. The payment account balance of the project is always negative under this scheme, but the project is not [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze).
 
 {tabs}
 
@@ -50,15 +50,15 @@ Individuals cannot work on a post-payment.
 
 {tab(Legal entities and SP)}
 
-Post-payment work is available if you conclude an [individual contract](#type_of_contract) with VK Cloud, in which this scheme is fixed. By default, legal entities and sole proprietors work on prepayment.
+Post-payment work is available if you conclude an [individual contract](#billing-physical-corporate-agreement-type) with VK Cloud, in which this scheme is fixed. By default, legal entities and sole proprietors work on prepayment.
 
-When working on post-payment, only a universal transfer document is provided to legal entities and sole proprietors from [accounting documents](../report#individuals). Other documents are optional.
+When working on post-payment, only a universal transfer document is provided to legal entities and sole proprietors from [accounting documents](../report#billing-report-individuals). Other documents are optional.
 
 {/tab}
 
 {/tabs}
 
-## Type of contract
+## {heading(Type of contract)[id=billing-physical-corporate-agreement-type]}
 
 {tabs}
 
@@ -77,22 +77,22 @@ Legal entities and sole proprietors work with VK Cloud either on the basis of co
 
 If you have any questions related to contracts, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
-### Public offer agreements
+### {heading(Public offer agreements)[id=billing-physical-corporate-offer]}
 
 By default, all users work under public offer contracts. On the part of VK Cloud, public offer agreements are concluded:
 
 - For projects in region Moscow — on behalf of “VK” LLC, registered in the Russian Federation.
 - For projects in the region of Kazakhstan — on behalf of “QazCloud” LLP, registered in Kazakhstan.
 
-### Individual agreement
+### {heading(Individual agreement)[id=billing-physical-corporate-individual]}
 
-If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../instructions/corporate#individual_contract) with VK Cloud.
+If a legal entity or a sole proprietor is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#billing-physical-corporate-payment-scheme) settlement scheme — [enter into an individual agreement](../../instructions/corporate#individual_contract) with VK Cloud.
 
 {/tab}
 
 {/tabs}
 
-## Recommended payment methods
+## {heading(Recommended payment methods)[id=billing-physical-corporate-payment-methods]}
 
 Both individuals and legal entities, including sole proprietors, have access to all [payment methods](../payment-methods) in the relevant region, but some of them are more convenient for individuals, others for legal entities.
 
@@ -125,9 +125,9 @@ Legal entities and sole proprietors can also top up the payment account balance 
 
 [Additional registration](../../instructions/corporate) means saving the details of a legal entity or a sole proprietor in the project settings in the management console. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
 
-After additional registration, those organizations and sole proprietors that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../instructions/bill-generation) with full details from the management console. Organizations and sole proprietors that work on post-payment receive invoices for payment from VK Cloud and cannot generate them in the management console.
+After additional registration, those organizations and sole proprietors that work on [prepayment](#billing-physical-corporate-payment-scheme) can upload [invoices for payment](../../instructions/bill-generation) with full details from the management console. Organizations and sole proprietors that work on post-payment receive invoices for payment from VK Cloud and cannot generate them in the management console.
 
-## EDM
+## {heading(EDM)[id=billing-physical-corporate-edm]}
 
 {tabs}
 
@@ -155,7 +155,7 @@ EDM work is available only to organizations-residents of the Russian Federation 
 
 {/tabs}
 
-## Differences for individuals and legal entities: results
+## {heading(Differences for individuals and legal entities: results)[id=billing-physical-corporate-differences]}
 
 | | Individuals | Legal entities and sole proprietors |
 | -- | -- | -- |

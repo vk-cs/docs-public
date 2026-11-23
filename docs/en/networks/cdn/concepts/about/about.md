@@ -1,8 +1,8 @@
-## How CDN works
+## {heading(How CDN works)[id=cdn-about-principle]}
 
 CDN (Content Delivery Network) is a network of geographically distributed caching servers for content distribution.
 
-When using a CDN, content is delivered from the CDN server closest to the user. If the necessary content is not on this server, CDN requests it from the origin servers or neighboring CDN servers. When the CDN server gets the data, the server caches it for a while. The CDN service of VK Cloud also provides the option of [preloading content](../../instructions/manage-cdn/content-settings#preloading_cache) onto CDN servers, which further reduces the load of origin servers.
+When using a CDN, content is delivered from the CDN server closest to the user. If the necessary content is not on this server, CDN requests it from the origin servers or neighboring CDN servers. When the CDN server gets the data, the server caches it for a while. The CDN service of VK Cloud also provides the option of [preloading content](../../instructions/manage-cdn/content-settings#cdn-content-settings-cache-filling) onto CDN servers, which further reduces the load of origin servers.
 
 The CDN service helps:
 
@@ -16,7 +16,7 @@ The CDN service helps:
 
 ![CDN Operation Diagram](./assets/cdn-scheme.png){params[noBorder=true]}
 
-## CDN VK Cloud opportunities
+## {heading(CDN VK Cloud opportunities)[id=cdn-about-scope]}
 
 - Over 46 points of presence in Europe, CIS, North and South America.
 - More than 200 caching CDN servers.

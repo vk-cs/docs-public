@@ -2,7 +2,7 @@ You can manage [advanced routers](../../../concepts/router#advanced): view, edit
 
 Advanced routers are only available with [SDN Sprut](../../../concepts/architecture#sdns_used). To find out which SDN is used in your project or to connect another, contact [technical support](mailto:support@mcs.mail.ru).
 
-## View a list of advanced routers
+## {heading(View a list of advanced routers)[id=vnet-manage-advanced-routers-list]}
 
 {tabs}
 
@@ -10,13 +10,13 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**. A list of routers will be displayed. For advanced routers, the **Router Type** column indicates `Advanced`.
-1. Click the name of the router you need. A page will open with detailed information about it. You can [edit](#editing_an_advanced_router) router parameters on this page .
+1. Click the name of the router you need. A page will open with detailed information about it. You can [edit](#vnet-manage-advanced-routers-edit) router parameters on this page .
 
 {/tab}
 
 {/tabs}
 
-## Adding an advanced router
+## {heading(Adding an advanced router)[id=vnet-manage-advanced-routers-add]}
 
 {tabs}
 
@@ -43,7 +43,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 {/tabs}
 
-## Editing an advanced router
+## {heading(Editing an advanced router)[id=vnet-manage-advanced-routers-edit]}
 
 {tabs}
 
@@ -72,7 +72,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 {/tabs}
 
-## Viewing an advanced router statistics
+## {heading(Viewing an advanced router statistics)[id=vnet-manage-advanced-routers-statistic]}
 
 {tabs}
 
@@ -96,7 +96,7 @@ The tab provides statistical information on the advanced router:
 
 {/tabs}
 
-## Viewing a VPN information
+## {heading(Viewing a VPN information)[id=vnet-manage-advanced-routers-vpn-info]}
 
 You can find out information about VPN tunnels that use the advanced router.
 
@@ -116,6 +116,6 @@ To find out the detailed information about a VPN tunnel, click its name. The [VP
 
 {/tabs}
 
-## Deleting an advanced router
+## {heading(Deleting an advanced router)[id=vnet-manage-advanced-routers-delete]}
 
 You can delete an advanced router in the same way as [a standard router](../../router#vnet-router-delete).

@@ -901,7 +901,7 @@ To delete an object:
 
 ## Deleting parts of an uploaded object
 
-If a [multipart upload](/en/storage/s3/concepts/features#object_uploading) is not completed, the object is not created and cannot be used, but storage of the uploaded parts is [charged](../../../tariffication). To avoid being charged, delete multipart uploads that will not be completed.
+If a [multipart upload](/en/storage/s3/concepts/features#s3-concepts-features-object-uploading) is not completed, the object is not created and cannot be used, but storage of the uploaded parts is [charged](../../../tariffication). To avoid being charged, delete multipart uploads that will not be completed.
 
 You can configure automatic deletion of incomplete uploads via the object lifecycle, or delete the upload manually.
 

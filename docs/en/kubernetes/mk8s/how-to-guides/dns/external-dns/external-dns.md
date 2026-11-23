@@ -2,7 +2,7 @@
 
 ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdns) via a plugin. Below is an example of installing ExternalDNS to a cluster and using this tool with the `Ingress` and `Service` resources.
 
-## Before you start
+## {heading(Before you start)[id=mk8s-external-dns-prepare]}
 
 1. [Create](/en/networks/dns/publicdns#setting_up_a_role_model) a DNS zone for ExternalDNS to work with, if not already done.
 
@@ -44,18 +44,18 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    {/tabs}
 
-## {counter(extdns)}. Prepare a user for ExternalDNS
+## {heading({counter(extdns)}. Prepare a user for ExternalDNS)[id=mk8s-external-dns-prepare-user]}
 
 ExternalDNS will use this VK Cloud user's credentials to cooperate with the VK Cloud API and manage DNS resource records.
 
 Prepare the user and get all the necessary credentials:
 
-1. [Select](/access/iam/instructions/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/access/iam/instructions/access-manage#inviting_a_new_member_to_the_project).
+1. [Select](/en/access/iam/instructions/access-manage#iam-access-manage-view-user) an existing user or [invite a new user to the project](/en/access/iam/instructions/access-manage#iam-access-manage-view-user).
 
    User Requirements:
 
    - API access must be [enabled](/en/tools-for-using-services/api/rest-api/enable-api).
-   - One of the following roles must be [assigned](/en/access/iam/instructions/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
+   - One of the following roles must be [assigned](/en/access/iam/instructions/access-manage#iam-access-manage-view-user) in order for ExternalDNS to operate resource records within the DNS zone:
 
      - Network Administrator (a minimum required [role](/en/access/iam/concepts/roles-reference)).
      - Project Administrator.
@@ -82,7 +82,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Write down the password for this user: it is also required to access the API.
 
-## {counter(extdns)}. Install ExternalDNS
+## {heading({counter(extdns)}. Install ExternalDNS)[id=mk8s-external-dns-install]}
 
 1. Create a namespace where ExternalDNS will be installed:
 
@@ -90,7 +90,7 @@ Prepare the user and get all the necessary credentials:
    kubectl create ns external-dns
    ```
 
-1. In this namespace, create a secret that contains the VK Cloud API access credentials [obtained during user preparation](#1_prepare_a_user_for_externaldns):
+1. In this namespace, create a secret that contains the VK Cloud API access credentials [obtained during user preparation](#mk8s-external-dns-prepare-user):
 
    {tabs}
 
@@ -310,11 +310,11 @@ Prepare the user and get all the necessary credentials:
 
    {/cut}
 
-## {counter(extdns)}. Verify that External DNS is working
+## {heading({counter(extdns)}. Verify that External DNS is working)[id=mk8s-external-dns-check]}
 
 Next, several demo applications based on [NGINX's Cafe example](https://github.com/nginxinc/kubernetes-ingress/tree/v2.4.0/examples/ingress-resources/complete-example) will be deployed. These applications will be published (made available from the Internet) using `Service` and `Ingress` configured to work with ExternalDNS.
 
-### 3.1. Publish the application using a service like LoadBalancer
+### {heading(3.1. Publish the application using a service like LoadBalancer)[id=mk8s-external-dns-publish-loadbalancer]}
 
 1. Create a manifest for the `tea` application:
 
@@ -463,7 +463,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
         Such records are easily distinguished by the `externaldns-` prefix in their name. Their values have the standard structure of the form `heritage=.../owner=.../resource=...`.
 
-        If you specified a different prefix value when [installing ExternalDNS](#2_install_externaldns), the names of the service TXT records will be different.
+        If you specified a different prefix value when [installing ExternalDNS](#mk8s-external-dns-prepare-user), the names of the service TXT records will be different.
 
         {/note}
 
@@ -483,7 +483,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    Successful interaction with the application at this address indicates that ExternalDNS works correctly with a service like `LoadBalancer`.
 
-### 3.2. Publish the application using Ingress
+### {heading(3.2. Publish the application using Ingress)[id=mk8s-external-dns-publish-ingress]}
 
 1. [Install](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX add-on of the latest version to the cluster.
 
@@ -570,7 +570,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    {/cut}
 
-   Here, the service type is set to [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), which is sufficient since the application will be published using Ingress. Such a service is accessible only from within the cluster and does not have a dedicated load balancer, unlike the service [created earlier](#31_publish_the_application_using_a_service_like_loadbalancer_8907e782).
+   Here, the service type is set to [ClusterIP](https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip), which is sufficient since the application will be published using Ingress. Such a service is accessible only from within the cluster and does not have a dedicated load balancer, unlike the service [created earlier](#mk8s-external-dns-prepare-user).
 
 1. Apply these manifests to the cluster to create all necessary resources:
 
@@ -694,7 +694,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
    Successful interaction with the application at this address indicates that ExternalDNS works correctly with the Ingress resource.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-external-dns-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} ExternalDNS, delete them:
 
@@ -718,7 +718,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 1. [Delete the resource records](/en/networks/dns/publicdns#deleting_resource_records) created by ExternalDNS.
 
-   This must be done if you did not modify the `external-dns-vkcs-values.yaml` file when [installing ExternalDNS](#2_install_externaldns): in this case ExternalDNS uses the `upsert-only` policy and does not delete resource records from the DNS zone when removing Kubernetes resources. If you modified this file and selected the `sync` policy, then these records will be deleted automatically.
+   This must be done if you did not modify the `external-dns-vkcs-values.yaml` file when [installing ExternalDNS](#mk8s-external-dns-install): in this case ExternalDNS uses the `upsert-only` policy and does not delete resource records from the DNS zone when removing Kubernetes resources. If you modified this file and selected the `sync` policy, then these records will be deleted automatically.
 
    List of resource records:
 

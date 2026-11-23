@@ -14,7 +14,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
-1. [Create](/en/networks/vnet/instructions/net#creating_network) networks.
+1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) networks.
 
    {note:info}
 
@@ -113,7 +113,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 ![Example Infrastructure](./assets/vpn-tunnel.png){params[noBorder=true]}
 
-## 1. Set up a VPN tunnel on the cloud side
+## {heading(1. Set up a VPN tunnel on the cloud side)[id=1_set_up_a_vpn_tunnel_on_the_cloud_side]}
 
 [Create a VPN](/en/networks/vnet/instructions/vpn) with the following settings:
 

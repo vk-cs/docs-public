@@ -84,7 +84,7 @@ Crediting of funds can take up to three banking days.
 
 {/tabs}
 
-Funds will be debited from the payment account as the paid resources are used. If the project becomes negative, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
+Funds will be debited from the payment account as the paid resources are used. If the project becomes negative, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze).
 
 ## What's next?
 

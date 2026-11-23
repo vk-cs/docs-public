@@ -5,7 +5,7 @@ The library supports two types of tokens:
 - Access tokens (refresh tokens). They are used to interact with Spark clusters.
 - Registration tokens (register tokens). They are used to create access tokens using the library (without using your management console).
 
-## Getting a list of access tokens
+## {heading(Getting a list of access tokens)[id=getting_a_list_of_access_tokens]}
 
 {tabs}
 
@@ -27,7 +27,7 @@ There are no registration tokens in this list.
 
 {/note}
 
-## Creating an access token
+## {heading(Creating an access token)[id=creating_an_access_token]}
 
 {tabs}
 
@@ -142,7 +142,7 @@ When working in a production environment, do not operate tokens in clear text. U
 
 {/tabs}
 
-## Creating a registration token
+## {heading(Creating a registration token)[id=creating_a_registration_token]}
 
 {tabs}
 

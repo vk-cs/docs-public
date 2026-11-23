@@ -115,7 +115,7 @@ Below are detailed expected performance characteristics for local Low Latency NV
 
 Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) parameters.
 
-## Disk performance testing
+## {heading(Disk performance testing)[id=disk_performance_testing]}
 
 1. Before testing, make sure that the following conditions are met:
 

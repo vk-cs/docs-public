@@ -10,7 +10,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 {/note}
 
-## Before you start
+## {heading(Before you start)[id=mk8s-update-monitoring-addon-prepare]}
 
 1. If you already have an existing Kubernetes cluster with the Kube Prometheus Stack add-on that needs to be upgraded in the Managed Containers service, skip this step.
 
@@ -130,7 +130,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 ## {heading({counter(addon)}. Prepare add-on environment for update)[id=2_prepare_addon_environment_for_update]}
 
-Volumes for the add-on are created by default using the `Retain` [reclaim policy](/en/kubernetes/mk8s/concepts/storage#available_reclaim_policies_for_persistent_volumes) if no changes related to the storage class have been made to the add-on configuration code. So, deleting the add-on will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the add-on operation, as well as other data necessary for the add-on to work.
+Volumes for the add-on are created by default using the `Retain` [reclaim policy](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-reclaim-policies) if no changes related to the storage class have been made to the add-on configuration code. So, deleting the add-on will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the add-on operation, as well as other data necessary for the add-on to work.
 
 In addition, the following Kubernetes resources, which are also used by the add-on, may prevent you from installing a new version of the add-on:
 
@@ -616,6 +616,6 @@ Before you update the add-on, protect the persistent volumes used by this add-on
 
 A successful connection to Grafana indicates a successful add-on update.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-update-monitoring-addon-delete]}
 
 {include(/en/_includes/_delete-test-cluster.md)}

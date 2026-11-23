@@ -1,8 +1,8 @@
 In Managed Containers, you can [scale](/en/kubernetes/k8s/concepts/scale) a Kubernetes cluster manually or set up automatic scaling to adapt the cluster to the changing needs of [workloads](https://kubernetes.io/docs/concepts/workloads/).
 
-## Vertical scaling
+## {heading(Vertical scaling)[id=k8s-instructions-scale-vertical]}
 
-This type of scaling is applicable for master nodes and groups of worker nodes. During the scaling process, [virtual machine templates](/en/kubernetes/k8s/concepts/flavors) are changed for cluster nodes, the number of nodes remains the same. If you need to change the number of worker nodes in a group, [perform horizontal scaling](#horizontal_scaling)
+This type of scaling is applicable for master nodes and groups of worker nodes. During the scaling process, [virtual machine templates](/en/kubernetes/k8s/concepts/flavors) are changed for cluster nodes, the number of nodes remains the same. If you need to change the number of worker nodes in a group, [perform horizontal scaling](#k8s-instructions-scale-horizontal)
 
 ### {heading(Scaling of master nodes)[id=scale_master_nodes]}
 
@@ -16,7 +16,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    During the scaling process, the virtual machines hosting the master nodes are restarted sequentially.
 
-   If the cluster [contains one master node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies), then the Kubernetes API is unavailable during scaling.
+   If the cluster [contains one master node](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology), then the Kubernetes API is unavailable during scaling.
 
    {/note}
 
@@ -112,7 +112,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. If you plan to reduce the amount of computing resources, then make sure that the total amount of resources in the worker node group is enough to accommodate the workload.
    1. Make sure that replication is configured for the workload and replicas are distributed across multiple worker nodes from the node group.
 
-      If there is only one worker node in the node group, [increase the number of nodes in the group](#horizontal_scaling) and configure replication if possible.
+      If there is only one worker node in the node group, [increase the number of nodes in the group](#k8s-instructions-scale-horizontal) and configure replication if possible.
 
 1. Perform the scaling.
 
@@ -208,11 +208,11 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    {/tabs}
 
-## Horizontal scaling
+## {heading(Horizontal scaling)[id=k8s-instructions-scale-horizontal]}
 
-This type of scaling is applicable for groups of worker nodes. During the scaling process, the number of worker nodes in the group changes, [virtual machine templates](/en/kubernetes/k8s/concepts/flavors) for worker nodes remain the same. If you need to change these templates for master nodes or worker nodes, [perform vertical scaling](#vertical_scaling).
+This type of scaling is applicable for groups of worker nodes. During the scaling process, the number of worker nodes in the group changes, [virtual machine templates](/en/kubernetes/k8s/concepts/flavors) for worker nodes remain the same. If you need to change these templates for master nodes or worker nodes, [perform vertical scaling](#k8s-instructions-scale-vertical).
 
-### Scaling groups of worker nodes
+### {heading(Scaling groups of worker nodes)[id=k8s-instructions-scale-horizontal-worker-nodes]}
 
 1. [Learn how the horizontal scaling mechanism works](/en/kubernetes/k8s/concepts/scale).
 

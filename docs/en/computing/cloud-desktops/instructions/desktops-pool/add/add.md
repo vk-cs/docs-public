@@ -18,8 +18,8 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
     1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
     1. Go to **Cloud Networks** → **Networks**.
-    1. Click the name of the required network. If there is no suitable network, [create](/en/networks/vnet/instructions/net#creating_network) it.
-    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required subnet and select **Edit subnet**. If there is no suitable subnet, [create](/en/networks/vnet/instructions/net#creating_subnet) it taking into account the [requirements for the number of ports](../../../concepts/about#ports_number).
+    1. Click the name of the required network. If there is no suitable network, [create](/en/networks/vnet/instructions/net#vnet-net-add) it.
+    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required subnet and select **Edit subnet**. If there is no suitable subnet, [create](/en/networks/vnet/instructions/net#vnet-net-add) it taking into account the [requirements for the number of ports](../../../concepts/about#ports_number).
     1. Disable the **Private DNS** option.
     1. In the **DNS servers** field, in the first positions in the list, specify the IP addresses of your DNS servers, each address on a new line.
     1. Save changes.

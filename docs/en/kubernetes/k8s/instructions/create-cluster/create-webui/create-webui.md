@@ -7,7 +7,7 @@ Creating [first-generation](/en/kubernetes/k8s/concepts/cluster-generations) clu
 When installing a cluster, VK Cloud creates a [service load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers). Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 {/note}
 
-## Before you create a cluster
+## {heading(Before you create a cluster)[id=k8s-create-webui-prepare]}
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#k8s) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the cluster. Different quotas may be configured for different regions.
 
@@ -21,7 +21,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
    1. Click the **Add** button or **Create cluster** button, if there are no clusters in the selected project.
    1. Select the **Previous generation** option and click the **Continue** button.
 
-## Configure the cluster
+## {heading(Configure the cluster)[id=k8s-create-webui-config]}
 
 1. In the **Configuration** block, select one of the [supported Kubernetes versions](/en/kubernetes/k8s/concepts/versions/version-support).
 
@@ -36,7 +36,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
      
    - **Number of Master nodes**: select `1`, `3`, or `5` depending on how highly available you want the cluster to be. We recommend creating clusters with 3 or 5 master nodes, as one master node does not provide cluster high availability at the master node level. The number of master nodes for fault-tolerant clusters is automatically set to `3`, but you can change it to `5`.
 
-      For more information about cluster topologies and possible configurations, see [Service architecture](/en/kubernetes/k8s/concepts/architecture#cluster_topologies).
+      For more information about cluster topologies and possible configurations, see [Service architecture](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology).
 
    - **Availability zone**: select the [availability zone(s)](/en/intro/start/concepts/architecture#architecture-az) for nodes. All three availability zones are automatically selected for fault-tolerant clusters and cannot be changed.
 
@@ -58,7 +58,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
 1. In the **Network and settings** block, click the **Set up** button and specify the network settings:
 
-   - **Network**: select the network and subnet that host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#creating_network) them.
+   - **Network**: select the network and subnet that host the cluster master and worker nodes. If the required network and subnet are not in the list, [create](/en/networks/vnet/instructions/net#vnet-net-add) them.
 
       {note:info}
 
@@ -66,7 +66,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
       {/note}
 
-   - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#creating_network) it. 
+   - **Use load balancer network**: enable this option to use a separate subnet in the selected network for load balancers created by the cluster. If the required subnet is not in the list, [create](/en/networks/vnet/instructions/net#vnet-net-add) it. 
      
       By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 
@@ -108,7 +108,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
    Once the cluster is created, its [configuration file](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/) (kubeconfig) is automatically downloaded to your machine with the name in the following format: `<CLUSTER NAME>_kubeconfig.yaml`. You need this file to [connect](/en/kubernetes/k8s/connect) to the cluster.
 
-## What's next?
+## {heading(What's next?)[id=k8s-create-webui-what-next]}
 
 - [Set up the environment](/en/kubernetes/k8s/connect) on the host from which you plan to connect to the cluster.
 - [Familiarize yourself with the usage scenarios](/en/kubernetes/k8s/how-to-guides) of the cluster.

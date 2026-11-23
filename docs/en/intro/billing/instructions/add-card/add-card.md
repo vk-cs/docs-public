@@ -107,7 +107,7 @@ To configure autopayment of the project balance from a bank card or a linked FPS
 Wait for the card to be unlinked. After that, it will no longer display on the balance page.
 
 {note:info}
-If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. This will help you avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) in case of late payment. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
+If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. This will help you avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze) in case of late payment. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 {/note}
 
 {/tab}

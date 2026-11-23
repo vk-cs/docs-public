@@ -1,4 +1,4 @@
-## Clearing cache
+## {heading(Clearing cache)[id=cdn-content-settings-cache-clearing]}
 
 When a CDN resource is not functioning correctly or if origin data has been updated, it may be necessary to partially or fully clear a cache.
 
@@ -62,13 +62,13 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {/tabs}
 
-## Preloading cache
+## {heading(Preloading cache)[id=cdn-content-settings-cache-filling]}
 
 You can upload content in a cache of a CDN resource in advance, before end users request it. It can help [reduce the load](../../../concepts/about) of origin servers. Preloading is relevant for files larger than 200 MB.
 
 {note:warn}
 
-To update files on a CDN, first [clear a cache](#clearing_cache) of the CDN resource, and then upload new.
+To update files on a CDN, first [clear a cache](#cdn-content-settings-cache-clearing) of the CDN resource, and then upload new.
 
 {/note}
 
@@ -114,7 +114,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 {/tabs}
 
-## Configuring HTTP response codes
+## {heading(Configuring HTTP response codes)[id=cdn-content-settings-http-response]}
 
 The **Enable returning HTTP response code** option allows you to set the HTTP response code for content hosted on a CDN resource. For example, you can configure a redirection to another URL or send the 403 code to end-users when requesting certain files.
 
@@ -169,11 +169,11 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## GZip compression
+## {heading(GZip compression)[id=cdn-content-settings-gzip-compression]}
 
 Files arriving at the CDN resource can be compressed using the GZip method. The average compression ratio if this method is 70%, sometimes it can reach 90%. The minimum file size for compression is 128 bytes.
 
-When you use the GZip compression method, uncompressed files are requested from the origin, so the option does not work in conjunction with [origin compression](#origin_compression) and [large file delivery optimization](#large_file_delivery_optimization).
+When you use the GZip compression method, uncompressed files are requested from the origin, so the option does not work in conjunction with [origin compression](#cdn-content-settings-cache-clearing) and [large file delivery optimization](#cdn-content-settings-cache-clearing).
 
 To enable GZip compression:
 
@@ -219,13 +219,13 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Brotli compression
+## {heading(Brotli compression)[id=cdn-content-settings-brotli-compression]}
 
 Files arriving at a CDN resource can be compressed using the Brotli method. This method provides stronger compression than GZip. For instance, for text files, Brotli compression exceeds GZip by an average of 20%. The minimum file size for compression is 128 bytes.
 
 When using the Brotli compression method, uncompressed files are requested from the origin, and compression occurs on a special pre-cache server. The pre-cache server stands between the origin server and the CDN servers, protecting the origin server from high load. Origin server protection using a pre-cache server (shielding) is a paid option. To enable it, contact [technical support](mailto:support@mcs.mail.ru).
 
-The option does not work in conjunction with [origin compression](#origin_compression) and [large file delivery optimization](#large_file_delivery_optimization).
+The option does not work in conjunction with [origin compression](#cdn-content-settings-source-compression) and [large file delivery optimization](#cdn-content-settings-large-files-optimizing).
 
 To enable Brotli compression:
 
@@ -276,11 +276,11 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Origin compression
+## {heading(Origin compression)[id=cdn-content-settings-source-compression]}
 
 Content compression at the origin accelerates content delivery: the content is transferred to the CDN server in compressed form, reducing data transmission time. For the option to work correctly, the origin must support compression.
 
-The option does not work in conjunction with [GZip compression](#gzip_compression), [Brotli compression](#brotli_compression) and [large file delivery optimization](#large_file_delivery_optimization).
+The option does not work in conjunction with [GZip compression](#cdn-content-settings-cache-clearing), [Brotli compression](#cdn-content-settings-cache-clearing) and [large file delivery optimization](#cdn-content-settings-large-files-optimizing).
 
 To have a CDN resource request compressed content from an origin:
 
@@ -326,7 +326,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 {/tabs}
 
-## Large file delivery optimization
+## {heading(Large file delivery optimization)[id=cdn-content-settings-large-files-optimizing]}
 
 To optimize delivery, large files are transferred from an origin to a CDN resource and stored in a cache not in full, but in parts of 10 MB each. The CDN resource will start transferring the file to users sooner and will also be able to transfer the file in parts to multiple users simultaneously.
 
@@ -340,7 +340,7 @@ To reduce the load on the origin, manage the option during off-peak hours and co
 
 {/note}
 
-The option does not work in conjunction with [GZip compression](#gzip_compression), [Brotli compression](#brotli_compression) and  [origin compression](#origin_compression).
+The option does not work in conjunction with [GZip compression](#cdn-content-settings-gzip-compression), [Brotli compression](#cdn-content-settings-brotli-compression) and  [origin compression](#cdn-content-settings-source-compression).
 
 To enable the optimization of large file delivery:
 

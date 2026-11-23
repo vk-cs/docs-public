@@ -2,7 +2,7 @@
 
 Examples of IP Source Guard usage can be found in how-to guides for setting up a [virtual IP address](/en/networks/vnet/how-to-guides/vip-keepalived) and [VPN tunnel](/en/networks/vnet/how-to-guides/vpn-tunnel).
 
-## Adding allowed addresses
+## {heading(Adding allowed addresses)[id=vnet-source-guard-allowed-ip-add]}
 
 {note:warn}
 
@@ -40,7 +40,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {/tabs}
 
-## Removing addresses from the allowed
+## {heading(Removing addresses from the allowed)[id=vnet-source-guard-allowed-ip-delete]}
 
 {tabs}
 
@@ -62,7 +62,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {/tabs}
 
-## Clearing existing allowed-address list associated with the port
+## {heading(Clearing existing allowed-address list associated with the port)[id=vnet-source-guard-port-no-allowed]}
 
 {tabs}
 
@@ -82,7 +82,7 @@ Then, if you add port `port-vm-2` in the `network` and assign the `default` grou
 
 {/tabs}
 
-## Retrieving Supported Parameter Information
+## {heading(Retrieving Supported Parameter Information)[id=vnet-source-guard-port-set-help]}
 
 For detailed information about supported parameters, use one of the following commands:
 

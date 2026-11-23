@@ -15,8 +15,8 @@ To share data between pods on different nodes, [deploy an NFS server](/en/comput
 
 Kubernetes clusters in the Managed Containers service are tightly integrated with the VK Cloud platform to handle PVs:
 
-- The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#k8s-storage-csi).
-- [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](/en/kubernetes/k8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
+- The cluster [supports](#storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#k8s-storage-csi).
+- [Pre-configured storage classes](#k8s-storage-storage-classes) that implement different [persistent volume reclaim policies](/en/kubernetes/k8s/reference/pvs-and-pvcs#k8s-pvs-and-pvcs-release) are available for block storage in the cluster.
 
 ## {heading(Supported VK Cloud storage types)[id=storage_types]}
 
@@ -50,9 +50,9 @@ Using Cinder CSI allows you to:
   - When a volume is dynamically provisioned, the disk corresponding to that volume in VK Cloud will be automatically created.
   - If the `Delete` reclaim policy is set for a volume, the associated volume and the corresponding disk in VK Cloud will be deleted after the PVC is deleted.
 
-## Available reclaim policies for persistent volumes
+## {heading(Available reclaim policies for persistent volumes)[id=k8s-storage-reclaim-policies]}
 
-A [reclaim policy](/en/kubernetes/k8s/reference/pvs-and-pvcs#4_reclaiming_830589dc) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
+A [reclaim policy](/en/kubernetes/k8s/reference/pvs-and-pvcs#k8s-pvs-and-pvcs-release) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
 
 - Keep the volume (`Retain`). The PV and its associated storage will not be deleted.
 
@@ -68,7 +68,7 @@ A [reclaim policy](/en/kubernetes/k8s/reference/pvs-and-pvcs#4_reclaiming_830589
 
   {/note}
 
-## Pre-configured storage classes
+## {heading(Pre-configured storage classes)[id=k8s-storage-storage-classes]}
 
 When using [dynamic provisioning](/en/kubernetes/k8s/reference/pvs-and-pvcs#dynamic-provisioning) of a persistent volume, a storage class must be specified. The default storage class is not configured in Kubernetes clusters you create in the Managed Containers service. You can either set the default class manually, or explicitly specify the required class when creating a PVC.
 
@@ -172,7 +172,7 @@ All the storage classes listed:
 
 {/tabs}
 
-## See also
+## {heading(See also)[id=k8s-storage-see-also]}
 
 - [Container service overview](/en/kubernetes/k8s/concepts/about).
 - [Container service architecture](/en/kubernetes/k8s/concepts/architecture).

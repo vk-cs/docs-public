@@ -18,7 +18,7 @@ When creating and setting security groups the following is used:
   - [vkcs_networking_secgroup](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_secgroup.md)
   - [vkcs_networking_port](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_port.md)
 
-## Preperation steps
+## {heading(Preperation steps)[id=terraform-secgroups-prepare]}
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create security groups and rules. Different regions may have different quotas configured.
 
@@ -26,14 +26,14 @@ When creating and setting security groups the following is used:
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-## 1. Create a net manifest file
+## {heading(1. Create a net manifest file)[id=terraform-secgroups-net-file]}
 
 [Create](../network) a Terraform configuration file `network.tf` to descride network infrasructure:
 
 - Create a net with the Internet access if you need to set restrictions for all ports.
 - Create a net with the Internet access and a port if you need to set restrictions for several ports.
 
-## 2. Create a security manifest file
+## {heading(2. Create a security manifest file)[id=terraform-secgroups-file]}
 
 Create a Terraform configuration file `secgroup.tf`.  The content depends on the security groups you need.
 
@@ -128,7 +128,7 @@ Here:
 
 - `security_group_ids` — the array of the security group IDs.
 
-## 3. Create the necessary resources using Terraform
+## {heading(3. Create the necessary resources using Terraform)[id=terraform-secgroups-create-resource]}
 
 1. Put the Terraform configuration files in one directory:
 
@@ -153,14 +153,14 @@ Here:
 
 1. Wait for the operation to complete.
 
-## 4. Check configuration application
+## {heading(4. Check configuration application)[id=terraform-secgroups-check]}
 
 Verify that the security rules and groups were successfully created:
 
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Virtual networks** → **Firewall settings**. Make sure the security group is created and includes all rules added in the example.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=terraform-secgroups-delete]}
 
 If you no longer need the Terraform resources, delete them:
 

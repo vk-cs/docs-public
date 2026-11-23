@@ -17,8 +17,8 @@ To deploy the Alfresco service in a VK Cloud project:
 1. [Register](/en/intro/start/account-registration) and [go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
 1. To have access to the VM with deployed service and to the Alfresco web interface from the internet:
 
-    1. [Create](/en/networks/vnet/instructions/net#creating_network) a network with internet access, if it has not been created earlier.
-    1. In [subnet settings](/en/networks/vnet/instructions/net#editing_network) where the VM with deployed service will be located, disable the **Private DNS** option.
+    1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a network with internet access, if it has not been created earlier.
+    1. In [subnet settings](/en/networks/vnet/instructions/net#vnet-net-add) where the VM with deployed service will be located, disable the **Private DNS** option.
 
 1. Go to the **Marketplace** section, on the section page, click **All Solutions** button.
 1. On the **Alfresco** service card, click the **Details** button.
@@ -63,7 +63,7 @@ To deploy the Alfresco service in a VK Cloud project:
 
    {note:info}
 
-   If the access data is lost, [generate](../../instructions/pr-instance-manage#updating_access_to_a_service_instance) new one.
+   If the access data is lost, [generate](../../instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access) new one.
 
    {/note}
 

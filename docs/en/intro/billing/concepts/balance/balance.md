@@ -11,7 +11,7 @@ For each new [project](/en/tools-for-using-services/account/concepts/projects), 
   - You cannot replenish this account, funds can be credited to it by the platform only.
   - Funds on it cannot be refunded.
   - Funds on it can sometimes expire.
-  - There can be several bonus accounts. Bonuses are divided into several types, and a corresponding bonus account is created for each type. See [Bonuses](#bonuses) for details.
+  - There can be several bonus accounts. Bonuses are divided into several types, and a corresponding bonus account is created for each type. See [Bonuses](#billing-balance-bonuses) for details.
 
 Payment account status and balance of all bonus accounts are [available](../../instructions/payment) in the header of the [management console](https://msk.cloud.vk.com/app/). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
 
@@ -21,11 +21,11 @@ Balance is not displayed in your management console if you have not completed th
 
 {/note}
 
-## Expenses and negative payment account balance
+## {heading(Expenses and negative payment account balance)[id=billing-balance-expenditure]}
 
 The balance starts to be spent after the first chargeable objects are created, such as virtual machines and floating IP addresses.
 
-The bonus account corresponding to the type of created object is debited first. When this bonus account runs out of funds, the money is deducted from the payment account balance, even if there are funds in other bonus accounts. If the payment account balance runs out of funds, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
+The bonus account corresponding to the type of created object is debited first. When this bonus account runs out of funds, the money is deducted from the payment account balance, even if there are funds in other bonus accounts. If the payment account balance runs out of funds, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#projects-auto-freeze). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
 
 {note:info}
 
@@ -35,7 +35,7 @@ For legal entities that work on a post-payment, a negative payment account balan
 
 To resume the services and avoid deleting objects, [top up](../../instructions/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 15 minutes. After defrosting, all objects that have been stopped must be started manually.
 
-## Bonuses
+## {heading(Bonuses)[id=billing-balance-bonuses]}
 
 *Bonuses*, or *bonus points*, are virtual funds credited by the VK Cloud platform to the bonus balance of the project. When paying for services, one bonus point for the Moscow [region](/en/tools-for-using-services/account/concepts/regions) equals one ruble, for the Kazakhstan region — one tenge.
 

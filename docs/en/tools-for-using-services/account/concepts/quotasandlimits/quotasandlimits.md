@@ -18,7 +18,7 @@ Quotas can be [viewed](../../instructions/project-settings/manage#viewing_projec
 
 There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#quotasandlimits-general), which can be created by a single user.
 
-Quotas are closely related to [technical limits](#quotas_and_technical_limits).
+Quotas are closely related to [technical limits](#quotasandlimits-general).
 
 ## Quotas and technical limits
 

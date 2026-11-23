@@ -103,7 +103,7 @@ jq must be pre-installed on your system.
 
 {/cut}
 
-## Installation
+## {heading(Installation)[id=rest-api-jq-install]}
 
 {tabs}
 
@@ -162,7 +162,7 @@ Use the package manager that is convenient for you:
 
 {/tabs}
 
-## Usage example
+## {heading(Usage example)[id=rest-api-jq-example]}
 
 [Get the list](/en/storage/backups/how-to-guides/api-examples#get_list_of_created_backup_plans) plans via Karboii API in formatted JSON.
 

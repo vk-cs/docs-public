@@ -9,13 +9,13 @@ To show how to configure a secure connection with virtual desktops:
 - A transit network will be created that will connect the Debian 11-based VPN gateway to the platform router, behind which VDI networks will be formed.
 - To simulate VDI, a network with a VM will be added. The VM will ping the LDAP server to check network connectivity.
 
-## Before you start
+## {heading(Before you start)[id=desktops-ipsec-preparatory-steps]}
 
 1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Create an LDAP environment:
 
-    1. Select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
+    1. Select or [create](/en/networks/vnet/instructions/net#vnet-net-add) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
 
         Write down the following:
 
@@ -28,7 +28,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create a VDI environment:
 
-    1. In VK Cloud, select or [create](/en/networks/vnet/instructions/net#creating_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
+    1. In VK Cloud, select or [create](/en/networks/vnet/instructions/net#vnet-net-add) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/instructions/router#vnet-router-add) a new one.
 
         Write down the following:
 
@@ -82,7 +82,7 @@ Scheme of preliminary preparation of networks:
 
 ![Scheme of preliminary preparation of networks](assets/IPsec_scheme-Before.png){params[noBorder=true]}
 
-## 1. Set up a VPN tunnel on the AD/LDAP side
+## {heading(1. Set up a VPN tunnel on the AD/LDAP side)[id=desktops-ipsec-vpn-setting]}
 
 In your management console [create a VPN](/en/networks/vnet/instructions/vpn) with the following parameters:
 
@@ -128,7 +128,7 @@ In your management console [create a VPN](/en/networks/vnet/instructions/vpn) wi
     - **Peer unreachable detection interval**: 15 seconds;
     - **Time to detect peer unavailability**: 60 seconds.
 
-## 2. Connect an additional network interface to the Debian VM
+## {heading(2. Connect an additional network interface to the Debian VM)[id=desktops-ipsec-net-interface-connect]}
 
 To configure a VPN tunnel on the side of the VDI environment, add an extra network interface for the Debian server to the `vdi-transit-vsubnet` subnet and assign the `10.56.0.4` address to it:
 
@@ -145,7 +145,7 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
     - **Firewall settings**: clear all the rules.
 1. Click the **Save** button.
 
-## 3. Configure an additional network interface in a Debian VM
+## {heading(3. Configure an additional network interface in a Debian VM)[id=desktops-ipsec-net-interface-settings]}
 
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
 1. Create the `eth1` file using the command:
@@ -200,7 +200,7 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
    10.55.4.0/22 via 10.56.0.1 dev eth1
    ```
 
-## 4. Disable Port Security on the port towards the transit network
+## {heading(4. Disable Port Security on the port towards the transit network)[id=desktops-ipsec-port-security-off]}
 
 Disable IP Source Guard on the VPN gateway port so it can forward any traffic:
 
@@ -227,7 +227,7 @@ Disable IP Source Guard on the VPN gateway port so it can forward any traffic:
     openstack port set --disable-port-security f00c7678-47c0-4d88-9be2-b5592de9112f
     ```
 
-## 5. Enable packet forwarding to the VM
+## {heading(5. Enable packet forwarding to the VM)[id=desktops-ipsec-enable-packet-forwarding]}
 
 Enable IP Forwarding so that the virtual machine can route traffic from the transit network to the VPN tunnel:
 
@@ -253,7 +253,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
 
     If the response returns `1`, packet forwarding is enabled.
 
-## 6. Install packages to configure a VPN tunnel on the Debian VM side
+## {heading(6. Install packages to configure a VPN tunnel on the Debian VM side)[id=desktops-ipsec-vpn-packages-install]}
 
 1. Run the command:
 
@@ -271,7 +271,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
     systemctl enable netfilter-persistent
     ```
 
-## 7. Add IPsec configuration and automate its launch
+## {heading(7. Add IPsec configuration and automate its launch)[id=desktops-ipsec-config-add]}
 
 1. Create a `swanctl` configuration file to configure the VPN connection:
 
@@ -338,7 +338,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
         }
         ```
 
-## 8. Start IPsec and check the status of the VPN tunnel
+## {heading(8. Start IPsec and check the status of the VPN tunnel)[id=desktops-ipsec-run]}
 
 1. Run the command to apply the new configuration settings and start the VPN connection:
 
@@ -389,7 +389,7 @@ Enable IP Forwarding so that the virtual machine can route traffic from the tran
         remote 10.10.2.0/24
     ```
 
-## 9. Set up iptables rules
+## {heading(9. Set up iptables rules)[id=desktops-ipsec-iptables-settings]}
 
 To ensure traffic passes correctly through the VPN tunnel, add a number of settings to the `iptables` chains:
 
@@ -416,7 +416,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
     service netfilter-persistent save
     ```
 
-## 10. Configure a static route from a VDI environment to AD/LDAP
+## {heading(10. Configure a static route from a VDI environment to AD/LDAP)[id=desktops-ipsec-route-settings]}
 
 1. In [your management console](https://cloud.vk.com/app/en) go to the **Virtual networks** section → **Routers**.
 1. Select the `vdi-router` router and go to the **Static routes** tab.
@@ -434,9 +434,9 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 1. Click the **Add route** button.
 
-## 11. Check if VDI is able to connect to LDAP
+## {heading(11. Check if VDI is able to connect to LDAP)[id=desktops-ipsec-functionality-check]}
 
-1. [Create](/en/networks/vnet/instructions/net#creating_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
+1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
 
 1. Create a test [virtual machine](/en/computing/iaas/instructions/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
 
@@ -452,7 +452,7 @@ Scheme of the built interaction between networks and machines within networks:
 
 ![Scheme of the built interaction between networks and machines within networks:](assets/IPsec_scheme-After.png){params[noBorder=true]}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=desktops-ipsec-delete]}
 
 If you no longer need the created resources, delete them:
 

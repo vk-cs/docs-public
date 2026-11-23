@@ -9,11 +9,11 @@ The infrastructure of the example:
 - The routers have the configured static routes that lead to another subnet through the virtual machine port.
 - A virtual machine is created in each subnet. The virtual machine on the public network has a floating IP address.
 
-  These machines are used to [test the routing settings between networks](#5_check_the_performance_of_the_example): a successful ping between them will indicate the correct configuration.
+  These machines are used to [test the routing settings between networks](#terraform-networks-routing-check): a successful ping between them will indicate the correct configuration.
 
 ![Example Infrastructure Scheme](assets/infrastructure-scheme.png){params[noBorder=true]}
 
-## Before you start
+## {heading(Before you start)[id=terraform-networks-routing-prepare]}
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
@@ -98,7 +98,7 @@ The infrastructure of the example:
 
    {/tabs}
 
-## 1. Create files describing the basic network infrastructure
+## {heading(1. Create files describing the basic network infrastructure)[id=terraform-networks-routing-net-files]}
 
 1. Create a Terraform configuration file `common-public.tf`. It describes:
 
@@ -161,7 +161,7 @@ The infrastructure of the example:
    }
    ```
 
-## 2. Create a file describing the infrastructure for the virtual machine as a router
+## {heading(2. Create a file describing the infrastructure for the virtual machine as a router)[id=terraform-networks-routing-infrastructure-file]}
 
 Create a Terraform configuration file `main.tf`. It describes:
 
@@ -276,7 +276,7 @@ resource "vkcs_compute_floatingip_associate" "fip-router" {
 }
 ```
 
-## 3. Create a file with a description of the test VMs
+## {heading(3. Create a file with a description of the test VMs)[id=terraform-networks-routing-vm-file]}
 
 Create a Terraform configuration file `test-vms.tf`. It describes:
 
@@ -285,7 +285,7 @@ Create a Terraform configuration file `test-vms.tf`. It describes:
   - `common-instance-public` in a public subnet with a floating address. You can connect to such a virtual machine via SSH from the Internet.
   - `common-instance-private` in a private subnet. You can connect to such a virtual machine via SSH from another virtual machine.
 
-  These virtual machines will be used for [verifying the health of routing between two networks](#5_check_the_performance_of_the_example).
+  These virtual machines will be used for [verifying the health of routing between two networks](#terraform-networks-routing-check).
 
 - Terraform ([output](https://developer.hashicorp.com/terraform/language/values/outputs)) with VMs IP addresses.
 
@@ -377,7 +377,7 @@ output "common-instance-private-ip" {
 }
 ```
 
-## 4. Create the necessary resources using Terraform
+## {heading(4. Create the necessary resources using Terraform)[id=terraform-networks-routing-create]}
 
 1. Place the created Terraform configuration files in one directory:
 
@@ -412,9 +412,9 @@ output "common-instance-private-ip" {
    - `common-instance-public-ip`: the IP address of the virtual machine in the public subnet.
    - `common-instance-public-floating-ip`: floating IP address of the virtual machine in the public subnet.
 
-   Use these IP addresses when [checking the health of the example](#5_check_the_performance_of_the_example).
+   Use these IP addresses when [checking the health of the example](#terraform-networks-routing-check).
 
-## 5. Check the performance of the example
+## {heading(5. Check the performance of the example)[id=terraform-networks-routing-check]}
 
 1. [Connect via SSH](/en/computing/iaas/instructions/vm/vm-connect/vm-connect-nix) to the virtual machine `common-instance-public`.
 
@@ -443,7 +443,7 @@ output "common-instance-private-ip" {
    rtt min/avg/max/mdev = 0.875/1.139/1.815/0.391 ms
    ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=terraform-networks-routing-delete]}
 
 If you no longer need the resources created with Terraform, delete them:
 

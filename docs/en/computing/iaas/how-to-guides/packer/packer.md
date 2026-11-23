@@ -1,6 +1,6 @@
 Packer allows you to create virtual machine images with the necessary parameters using a configuration file. The Alt Linux 10 OS image in QCOW format will be used as an example.
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=iaas-packer-preparatory-steps]}
 
 1. [Install](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) the latest version of Packer.
 
@@ -13,7 +13,7 @@ Packer allows you to create virtual machine images with the necessary parameters
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p10/images/cloud/x86_64/) OS Alt Linux 10 to your computer (file `alt-p10-cloud-x86_64.qcow2`).
 
-## 1. Convert image to RAW format
+## {heading(1. Convert image to RAW format)[id=iaas-packer-convert-image]}
 
 Use the utility `qemu-img`:
 
@@ -47,11 +47,11 @@ Use the utility `qemu-img`:
 
     The syntax of the conversion command is given in the [official QEMU documentation](https://www.qemu.org/docs/master/tools/qemu-img.html).
 
-## 2. Upload the base image to the cloud
+## {heading(2. Upload the base image to the cloud)[id=iaas-packer-download-base-image]}
 
 Import the image according to the [instructions](../../instructions/images/images-manage#iaas-images-manage-import).
 
-## 3. Create a Packer configuration file
+## {heading(3. Create a Packer configuration file)[id=iaas-packer-create-config-file]}
 
 1. Run the command to search for networks and copy the ID of the required external network:
 
@@ -150,7 +150,7 @@ Import the image according to the [instructions](../../instructions/images/image
     packer validate altlinux.pkr.hcl
     ```
 
-## 4. Upload the prepared image to the cloud
+## {heading(4. Upload the prepared image to the cloud)[id=iaas-packer-download-prepare-image]}
 
 1. Run the image creation using the command:
 
@@ -167,7 +167,7 @@ Import the image according to the [instructions](../../instructions/images/image
 
 1. Write down the ID `c6320138-035f-40d8-XXXX-e814edb2ce5f` — you will need it in the next step.
 
-## 5. Complete the image setup
+## {heading(5. Complete the image setup)[id=iaas-packer-settings-end]}
 
 1. Set [meta tags](../../instructions/images/image-metadata) to the created image using the command:
 
@@ -239,6 +239,6 @@ Import the image according to the [instructions](../../instructions/images/image
 
     {/tabs}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=iaas-packer-image-delete]}
 
-If you no longer need the image, [delete it](../../instructions/images/images-manage#deleting_an_image).
+If you no longer need the image, [delete it](../../instructions/images/images-manage#iaas-images-manage-import).

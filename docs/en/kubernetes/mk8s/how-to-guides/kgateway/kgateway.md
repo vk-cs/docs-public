@@ -1,13 +1,13 @@
 Use the [Kgateway](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kgateway) addon to configure traffic routing in a Kubernetes cluster via the [Gateway API](https://gateway-api.sigs.k8s.io/) and send requests to the test application.
 
-## Before you begin
+## {heading(Before you begin)[id=mk8s-kgateway-prepare]}
 
 1. [Create](/en/kubernetes/mk8s/instructions/create-cluster/create-webui-gen-2) a Kubernetes cluster of the latest version, if not done so already.
 1. [Install and configure](/en/kubernetes/mk8s/connect/kubectl#before_you_start) `kubectl`, if not done so already.
 1. [Connect](/en/kubernetes/mk8s/connect/kubectl#connect) to the cluster via `kubectl`.
 1. [Install the Kgateway add-on](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-kgateway), if not done so already.
 
-## {counter(kgateway)}. Create a test application
+## {heading({counter(kgateway)}. Create a test application)[id=mk8s-kgateway-app]}
    
 1. Create the `httpbin.yaml` manifest for the `httpbin` test application:
 
@@ -59,7 +59,7 @@ Use the [Kgateway](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kgate
 
 As a result of applying the manifest, the `httpbin` test application is launched as a `Deployment`, and a service for internal access to this application is created. Further, Kgateway will accept external HTTP traffic, route it, and redirect it to this service.
 
-## {counter(kgateway)}. Create a Gateway object
+## {heading({counter(kgateway)}. Create a Gateway object)[id=mk8s-kgateway-gateway]}
 
 {note:warn}
 For the Gateway object, a [standard load balancer](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) and a [Floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating-ip) are created. You get [charged](/en/networks/vnet/tariffication) for using them.
@@ -89,7 +89,7 @@ For the Gateway object, a [standard load balancer](/en/networks/balancing/concep
 
 As a result of applying the manifest, Kgateway creates a `LoadBalancer` type service. VK Cloud then automatically creates a standard load balancer and assigns it with a public Floating IP address for receiving traffic.
 
-## {counter(kgateway)}. Create an HTTPRoute object
+## {heading({counter(kgateway)}. Create an HTTPRoute object)[id=mk8s-kgateway-route]}
 
 1. Create the `my-route.yaml` manifest for the Gateway API resource of the `HTTPRoute` [type](https://gateway-api.sigs.k8s.io/reference/api-types/httproute/), which specifies the HTTP traffic routing rule for Kgateway:
 
@@ -116,7 +116,7 @@ As a result of applying the manifest, Kgateway creates a `LoadBalancer` type ser
 
 As a result of applying the manifest, HTTP requests will be sent to the `httpbin` service.
 
-## {counter(kgateway)}. Test Kgateway
+## {heading({counter(kgateway)}. Test Kgateway)[id=mk8s-kgateway-check]}
 
 1. Wait a few minutes for the load balancer to receive an external IP address, and run the command to get it:
 
@@ -160,7 +160,7 @@ As a result of applying the manifest, HTTP requests will be sent to the `httpbin
    ```
    {/cut}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-kgateway-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} the Kgateway add-on, delete them: 
 

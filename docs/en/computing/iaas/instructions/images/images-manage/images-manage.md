@@ -1,6 +1,6 @@
 An image is a file that contains a virtual disk with an installed operating system or other data. Images are used to create virtual machines in the cloud.
 
-## Creating an image
+## {heading(Creating an image)[id=iaas-images-manage-create]}
 
 The VK Cloud service allows you to create an image from the disk of an existing virtual machine.
 
@@ -59,7 +59,7 @@ The VK Cloud service supports uploading your own virtual machine images with [so
 
 {note:warn}
 
-Only RAW images are supported. If your image is in a different format, [convert it](../../../how-to-guides/packer#1_convert_image_to_raw_format).
+Only RAW images are supported. If your image is in a different format, [convert it](../../../how-to-guides/packer#iaas-packer-convert-image).
 
 {/note}
 
@@ -99,7 +99,7 @@ The parameters of the image import command depend on the need for backup support
 
 {/tabs}
 
-## Exporting an image
+## {heading(Exporting an image)[id=iaas-images-manage-export]}
 
 {tabs}
 
@@ -117,7 +117,7 @@ The parameters of the image import command depend on the need for backup support
    openstack image save --file <FILE_NAME>.<DISK_FORMAT> <IMAGE_ID>
    ```
 
-If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#1_convert_image_to_raw_format).
+If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#iaas-packer-convert-image).
 
 {/tab}
 
@@ -136,13 +136,13 @@ If the exported image is not in RAW format and you plan to use it to create a VM
    curl -H "X-Auth-Token:<TOKEN>" "https://infra.mail.ru:9292/v2/images/<IMAGE_ID>/file" --output <FILE_NAME>.<DISK_FORMAT>
    ```
 
-If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#1_convert_image_to_raw_format).
+If the exported image is not in RAW format and you plan to use it to create a VM on the VK Cloud platform, [convert the image](../../../how-to-guides/packer#iaas-packer-convert-image).
 
 {/tab}
 
 {/tabs}
 
-## Changing the visibility status of an image
+## {heading(Changing the visibility status of an image)[id=iaas-images-manage-status-edit]}
 
 Changing the visibility status of an image allows you to access an image from multiple projects. Sharing an image across multiple projects allows you to speed up the deployment of virtual machines.
 
@@ -220,7 +220,7 @@ openstack image member list <IMAGE_ID>
 
 {/tabs}
 
-## Deleting an image
+## {heading(Deleting an image)[id=iaas-images-manage-delete]}
 
 {tabs}
 

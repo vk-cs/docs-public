@@ -14,7 +14,7 @@ A list of origin groups will be displayed.
 
 {/tabs}
 
-## Creating group
+## {heading(Creating group)[id=cdn-manage-origin-groups-add-group]}
 
 {tabs}
 
@@ -25,8 +25,8 @@ A list of origin groups will be displayed.
 1. Go to the **CDN → Source groups** section.
 1. Click ![ ](/en/assets/plus-icon.svg "inline") **Create source group**.
 1. Enter the origin group name.
-1. [Add](#adding_origin_to_group) one or several origins to group.
-1. (Optional) [Edit](#editing_origins_in_group) the list of origins in the group.
+1. [Add](#cdn-manage-origin-groups-add-origin) one or several origins to group.
+1. (Optional) [Edit](#cdn-manage-origin-groups-add-origin) the list of origins in the group.
 1. Make sure, that DNS records are configured for the domains of all added sources (including disabled ones).
 
    {note:warn}
@@ -43,7 +43,7 @@ A list of origin groups will be displayed.
 
 {/tabs}
 
-## Adding origin to group
+## {heading(Adding origin to group)[id=cdn-manage-origin-groups-add-origin]}
 
 {tabs}
 
@@ -65,7 +65,7 @@ A list of origin groups will be displayed.
 
 {/tabs}
 
-## Editing origins in group
+## {heading(Editing origins in group)[id=cdn-manage-origin-groups-edit-origin]}
 
 {tabs}
 
@@ -103,7 +103,7 @@ A list of origin groups will be displayed.
 
 {/tabs}
 
-## Editing group
+## {heading(Editing group)[id=cdn-manage-origin-groups-edit-group]}
 
 {tabs}
 
@@ -118,8 +118,8 @@ A list of origin groups will be displayed.
    - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Group settings**.
 
 1. (Optional) Edit the group name.
-1. (Optional) [Add](#adding_origin_to_group) one or more origins.
-1. (Optional) [Edit](#editing_origins_in_group) origins in the group.
+1. (Optional) [Add](#cdn-manage-origin-groups-add-origin) one or more origins.
+1. (Optional) [Edit](#cdn-manage-origin-groups-edit-origin) origins in the group.
 1. Make sure, that DNS records are configured for the domains of all added sources (including disabled ones).
 
    {note:warn}
@@ -136,7 +136,7 @@ A list of origin groups will be displayed.
 
 {/tabs}
 
-## Deleting group
+## {heading(Deleting group)[id=cdn-manage-origin-groups-delete]}
 
 {note:warn}
 

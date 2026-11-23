@@ -4,7 +4,7 @@
 
 Configure virtual machine disk encryption using [cryptsetup](https://manpages.ubuntu.com/manpages/trusty/man8/cryptsetup.8.html) for Linux.
 
-## Preparatory steps
+## {heading(Preparatory steps)[id=iaas-disk-encrypt-preparatory-steps]}
 
 Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as well as an additional disk that will be encrypted.
 
@@ -70,7 +70,7 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
    lsblk
    ```
 
-## 1. Install cryptsetup
+## {heading(1. Install cryptsetup)[id=iaas-disk-encrypt_install]}
 
 Run the command to install:
 
@@ -78,11 +78,11 @@ Run the command to install:
 sudo yum install -y cryptsetup cryptsetup-reencrypt
 ```
 
-## 2. Encrypt the disk
+## {heading(2. Encrypt the disk)[id=iaas-disk-encrypt_it]}
 
 {note:err}
 
-Restarting the VM before [bootloader configuration](#3_change_the_loader_parameters) is completed will result in loss of access to the VM.
+Restarting the VM before [bootloader configuration](#iaas-disk-encrypt-param-edit) is completed will result in loss of access to the VM.
 
 {/note}
 
@@ -201,7 +201,7 @@ Restarting the VM before [bootloader configuration](#3_change_the_loader_paramet
          exit
          ```
 
-## 3. Change the loader parameters
+## {heading(3. Change the loader parameters)[id=iaas-disk-encrypt-param-edit]}
 
 {note:err}
 
@@ -231,7 +231,7 @@ Configure the bootloader so that the passphrase for decrypting the disk is reque
 
 4. Restart the VM.
 
-## 4. Get access to the VM
+## {heading(4. Get access to the VM)[id=iaas-disk-encrypt-access]}
 
 1. Go to the [VNC Console](../../instructions/vm/vm-console#the_vnc_console) virtual machine. In the console output, when the operating system boots, you will be prompted to enter a keyword:
 

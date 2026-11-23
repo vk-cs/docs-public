@@ -1,6 +1,6 @@
 To provide access to a private network from the Internet, configure _DNAT_— destination network address translation for an advanced router. DNAT forwards incoming packets from an external IP address or port to an IP address or port inside the private network. At the same time, from one public IP address, you can configure data transfer to many internal addresses of private networks using unique ports (TCP or UDP).
 
-## Adding DNAT rule
+## {heading(Adding DNAT rule)[id=vnet-manage-dnat-rule-add]}
 
 {tabs}
 
@@ -28,7 +28,7 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 {/tabs}
 
-## Editing DNAT rule
+## {heading(Editing DNAT rule)[id=vnet-manage-dnat-rule-edit]}
 
 {tabs}
 
@@ -60,7 +60,7 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 {/tabs}
 
-## Deleting DNAT rule
+## {heading(Deleting DNAT rule)[id=vnet-manage-dnat-rule-delete]}
 
 {tabs}
 

@@ -44,7 +44,7 @@ Up to 300 service accounts can be created in a project.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Make sure your [project role](/en/access/iam/concepts/rolesandpermissions#general_project_management_roles) has the [permissions to manage service accounts](/en/access/iam/concepts//service-accounts).
+1. Make sure your [project role](/en/access/iam/concepts/rolesandpermissions#iam-concepts-rolesandpermissions) has the [permissions to manage service accounts](/en/access/iam/concepts//service-accounts).
 1. Go to **Manage access**, then go to the **Service users** tab.
 
    The list of all service accounts in the project is displayed, sorted by name.

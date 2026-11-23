@@ -1,4 +1,4 @@
-## What the service can do
+## {heading(What the service can do)[id=k8s-about-purpose]}
 
 The container service allows you to create Kubernetes clusters and run various services and applications in them. All the usual Kubernetes tools are available, e.g:
 
@@ -21,7 +21,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 {/note}
 
-## Service features
+## {heading(Service features)[id=k8s-about-features]}
 
 - Management of [cluster](/en/kubernetes/k8s/instructions/manage-cluster) and [groups of nodes](/en/kubernetes/k8s/instructions/manage-node-group) using the VK Cloud management console and VK Cloud own Terraform provider.
 
@@ -33,7 +33,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
   This approach saves up to 60% of computing resources.
 
-- Creating distributed installations within [VK Cloud regions](/en/tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/k8s/concepts/architecture#cluster_topologies): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
+- Creating distributed installations within [VK Cloud regions](/en/tools-for-using-services/account/concepts/regions) via creating [regional clusters](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.
 
 - Integration with the [storage subsystem](/en/kubernetes/k8s/concepts/storage) and [networking subsystem](/en/kubernetes/k8s/concepts/network) of the VK Cloud platform.
 
@@ -43,7 +43,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
   - During network communication in the cluster, all connections are encrypted and certificates are used.
   - You can [apply](/en/kubernetes/k8s/concepts/network#supported-cni) network policies: Calico or Cilium. For more details on network policies, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
-  - You can [apply](/en/kubernetes/k8s/concepts/architecture#built_in_support_for_the_open_policy_agent) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
+  - You can [apply](/en/kubernetes/k8s/concepts/architecture#k8s-architecture-topology) Gatekeeper constraint policies. For more details, refer to the [official Gatekeeper documentation](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
   - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](/en/kubernetes/k8s/concepts/access-management).
 
 - [Backup](/en/kubernetes/k8s/how-to-guides/velero/velero-backup) Kubernetes clusters in the Managed Containers service with Velero.
@@ -55,7 +55,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 - Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](/en/kubernetes/k8s/monitoring).
 
-## What's next
+## {heading(What's next)[id=k8s-about-next-steps]}
 
 - [Get to know the service architecture](/en/kubernetes/k8s/concepts/architecture).
 - [Get to know the network structure in the cluster](/en/kubernetes/k8s/concepts/network).

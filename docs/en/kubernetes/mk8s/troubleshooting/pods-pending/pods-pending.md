@@ -165,7 +165,7 @@ There might be several possible reasons for this behavior. Follow the instructio
 
    - The PVC is not bound to the PV because the PV does not exist or meet the requirements.
    - There are no appropriate PVs, or the `Provisioner` component cannot create an appropriate PV.
-   - A [storage class](/en/kubernetes/mk8s/concepts/storage#pre_configured_storage_classes) is not configured, or it does not meet the requirements of the PVC.
+   - A [storage class](/en/kubernetes/mk8s/concepts/storage#mk8s-storage-storage-classes) is not configured, or it does not meet the requirements of the PVC.
 
 1. Solve the issue using one of the following approaches:
 
@@ -309,7 +309,7 @@ There might be several possible reasons for this behavior. Follow the instructio
    
    {tab(Private Docker registries)}
       
-   In the manifest, [change or specify](/en/kubernetes/mk8s/connect/docker-registry#using_docker_registry_in_kubernetes_cluster) the secret for accessing the registry. 
+   In the manifest, [change or specify](/en/kubernetes/mk8s/connect/docker-registry#mk8s-docker-registry-using) the secret for accessing the registry. 
    
    {/tab}
    {/tabs}

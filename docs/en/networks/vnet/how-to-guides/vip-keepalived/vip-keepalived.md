@@ -9,13 +9,13 @@ To show the virtual IP address setting:
 
 ![Scenario Diagram](./assets/vip-keepalived.png){params[noBorder=true]}
 
-## 1. Before you start
+## {heading(1. Before you start)[id=vnet-vip-keepalived-prep]}
 
 1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can sign in the OpenStack CLI.
 
 1. Select the subnet where the virtual machines and virtual IP address will be placed. They must be on the same subnet.
 
-    If the required subnet does not exist, [create it](../../instructions/net#creating_subnet).
+    If the required subnet does not exist, [create it](../../instructions/net#vnet-net-subnet-add).
 
     Write down the following information:
     - subnet name;
@@ -160,7 +160,7 @@ Write down all received data. Result for the given example:
 | Virtual IP address                                        | `192.168.0.254/24`                        |
 <!-- prettier-ignore -->
 
-## 2. Install and configure keepalived
+## {heading(2. Install and configure keepalived)[id=vnet-vip-keepalived-install-configure-keepalived]}
 
 1. Install `keepalived`:
 
@@ -301,7 +301,7 @@ Write down all received data. Result for the given example:
 
     1. Follow the same steps on the `kld-vm-2` virtual machine.
 
-## 3. Configure IP Source Guard
+## {heading(3. Configure IP Source Guard)[id=vnet-vip-keepalived-configure-ipsourceguard]}
 
 The `keepalived` installed on virtual machines should be able to send traffic not only from the IP addresses `192.168.0.11` and `192.168.0.22`, but also from the virtual IP address `192.168.0.254`. Since OpenStack ports in VK Cloud use the [IP Source Guard mechanism](../../concepts/traffic-limiting#source_guard), allow traffic from the virtual IP address for virtual machine ports:
 
@@ -317,7 +317,7 @@ The `keepalived` installed on virtual machines should be able to send traffic no
    openstack port set 74268d00-xxxx-yyyy-zzzz-cf9f93536d5c --allowed-address ip-address=192.168.0.254/24
    ```
 
-## 4. Check if the virtual IP address is working
+## {heading(4. Check if the virtual IP address is working)[id=vnet-vip-keepalived-check]}
 
 Open two terminal sessions:
 
@@ -370,7 +370,7 @@ Open two terminal sessions:
              valid_lft forever preferred_lft forever
       ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=vnet-vip-keepalived-delete]}
 
 If you no longer need the created resources, delete them:
 

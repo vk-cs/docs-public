@@ -440,7 +440,7 @@ In VK Cloud, Prometheus is deployed via the Kube Prometheus Stack add-on.
      http://prometheus-prometheus.monitoring.svc.cluster.local:9090/-/ready
    ```
 
-Prometheus requests noticeable CPU/RAM and mounts a PVC. On a cluster with a single small worker node (or when replicas already scaled by HPA are running), it may remain in the `Pending` state (`Insufficient cpu` or `unbound PersistentVolumeClaims`). {linkto(../../instructions/scale#mk8s-instructions-scale-horizontal-autoscaling-worker-nodes)[text=Enable]} autoscaling of the worker node group — {linkto(../../concepts/cluster-autoscaler#mk8s-cluster-autoscaler)[text=Cluster Autoscaler]} will add a node automatically.
+Prometheus requests noticeable CPU/RAM and mounts a PVC. On a cluster with a single small worker node (or when replicas already scaled by HPA are running), it may remain in the `Pending` state (`Insufficient cpu` or `unbound PersistentVolumeClaims`). {linkto(../../instructions/scale#mk8s-instructions-scale-horizontal-worker-nodes)[text=Enable]} autoscaling of the worker node group — {linkto(../../concepts/cluster-autoscaler#mk8s-cluster-autoscaler)[text=Cluster Autoscaler]} will add a node automatically.
 
 ## {heading({counter(hpa)}. Connect application metrics to Prometheus)[id=mk8s-hpa-enable]}
 

@@ -88,8 +88,8 @@
    
    {/tabs}
 
-1. If necessary, [change the Prometheus disk size](#changing_prometheus_disk_size).
-1. If necessary, [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
+1. If necessary, [change the Prometheus disk size](#k8s-install-advanced-monitoring-disk-change).
+1. If necessary, [get the password for Grafana from the Kubernetes secret](#k8s-install-advanced-monitoring-get-password).
 1. If necessary, in your browser, [connect to the Grafana web interface](/en/kubernetes/k8s/connect/addons-ui#web-ui) included in the Kube Prometheus Stack addon.
 
 {/tab}
@@ -203,8 +203,8 @@
    
    {/tabs}
 
-1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
+1. If necessary [change the Prometheus disk size](#k8s-install-advanced-monitoring-disk-change).
+1. If necessary [get the password for Grafana from the Kubernetes secret](#k8s-install-advanced-monitoring-get-password).
 
 {/tab}
 
@@ -249,8 +249,8 @@ If this does not suit you, perform a **standard installation** or **installation
    
    {/tabs}
 
-1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
-1. [Get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
+1. If necessary [change the Prometheus disk size](#k8s-install-advanced-monitoring-disk-change).
+1. [Get the password for Grafana from the Kubernetes secret](#k8s-install-advanced-monitoring-get-password).
 
 {/tab}
 
@@ -265,7 +265,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
 {/note}
 
-### Setting temporary password for Grafana web interface
+### {heading(Setting temporary password for Grafana web interface)[id=k8s-install-advanced-monitoring-temp-password]}
 
 When installing an add-on with default parameters, a Kubernetes secret is created containing a permanent password to sign in to the Grafana web interface.
 
@@ -278,7 +278,7 @@ grafana:
 
 Once done with editing the add-on code, continue with the installation process.
 
-## Changing Prometheus disk size
+## {heading(Changing Prometheus disk size)[id=k8s-install-advanced-monitoring-disk-change]}
 
 This operation is [available](#installing_addon) if the monitoring add-on `kube-prometheus-stack` is installed in the cluster.
 
@@ -301,7 +301,7 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 {/tabs}
 
-## Getting Grafana password from Kubernetes secret
+## {heading(Getting Grafana password from Kubernetes secret)[id=k8s-install-advanced-monitoring-get-password]}
 
 If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret.
 
@@ -356,7 +356,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 {/tabs}
 
-## Resetting Grafana password
+## {heading(Resetting Grafana password)[id=k8s-install-advanced-monitoring-reset-password]}
 
 If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret. If this secret has been lost, you can reset the password to access Grafana again.
 

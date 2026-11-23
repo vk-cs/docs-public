@@ -1,6 +1,6 @@
 Access control operations are available only to the following [roles](/en/access/iam/concepts/rolesandpermissions) of management console: owner, superadministrator and user Administrator (IAM). Viewing of project members is also available to the project administrator and viewer.
 
-## Viewing project members
+## {heading(Viewing project members)[id=iam-access-manage-view-user]}
 
 {tabs}
 
@@ -16,7 +16,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 {/tabs}
 
-## Viewing the roles involved in the project
+## {heading(Viewing the roles involved in the project)[id=iam-access-manage-view-role]}
 
 {tabs}
 
@@ -36,7 +36,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 {/tabs}
 
-## Inclusion of mandatory 2FA in the project
+## {heading(Inclusion of mandatory 2FA in the project)[id=iam-access-manage-2fa]}
 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
@@ -47,7 +47,7 @@ For security reasons, you can make two-factor authentication (2FA) mandatory for
 
 The option can be turned on and off at any stage of the project's life.
 
-## Inviting a new member to the project
+## {heading(Inviting a new member to the project)[id=iam-access-manage-invite-user]}
 
 You can invite both a user who already has an account in VK Cloud, and an unregistered user.
 
@@ -78,11 +78,11 @@ After [logging in to the project](/en/tools-for-using-services/account/instructi
 
 {note:info}
 
-The member's email is not editable, and the invitation cannot be resent to it. If you have entered an incorrect email address or the invitation has expired, [delete](#deleting_member) the member and invite him again.
+The member's email is not editable, and the invitation cannot be resent to it. If you have entered an incorrect email address or the invitation has expired, [delete](#iam-access-manage-delete-user) the member and invite him again.
 
 {/note}
 
-## Changing member role
+## {heading(Changing member role)[id=iam-access-manage-user-role-edit]}
 
 A project member cannot change the role for:
 
@@ -109,7 +109,7 @@ Only the project owner can assign another role to the superadministrator.
 
 {/tabs}
 
-## Deleting member
+## {heading(Deleting member)[id=iam-access-manage-delete-user]}
 
 The member cannot delete:
 

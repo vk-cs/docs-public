@@ -143,4 +143,4 @@
 A running VM consumes computing resources. If you no longer need it:
 
 - {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=stop]} it to use it later;
-- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=delete]} it permanently.
+- {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart)[text=delete]} it permanently.

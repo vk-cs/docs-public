@@ -1,4 +1,4 @@
-## Preparatory steps
+## {heading(Preparatory steps)[id=terraform-quick-start-prepare]}
 
 1. Install Terraform from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
 1. Open your VK CLoud [management console](https://msk.cloud.vk.com/app/en/).
@@ -7,7 +7,7 @@
 
 1. Click on your login at the top of the page, select **Project settings** from the drop-down menu.
 
-1. Go to the **Terraform** tab. Download the main [Terraform configuration](../reference/configuration#the_terraform_provider_config_file) and the [Terraform mirror configuration](../reference/configuration#the_terraform_mirror_config_file) files by clicking the corresponding buttons.
+1. Go to the **Terraform** tab. Download the main [Terraform configuration](../reference/configuration#the_terraform_provider_config_file) and the [Terraform mirror configuration](../reference/configuration#terraform-mirror-config) files by clicking the corresponding buttons.
 
     Files named `vkcs_provider.tf` and `terraform.rc` will be downloaded.
 
@@ -43,7 +43,7 @@
 
     {/note}
 
-## Terraform initialization
+## {heading(Terraform initialization)[id=terraform-quick-start-init]}
 
 In the directory from which you are going to work with the project, run the command:
 
@@ -53,7 +53,7 @@ terraform init
 
 This will create supplementary files needed for Terraform to work.
 
-## Creating resources via Terraform
+## {heading(Creating resources via Terraform)[id=terraform-quick-start-create]}
 
 1. Create a configuration of resources in the working directory — for example, a configuration for [creating a virtual machine](../how-to-guides/iaas/create).
 
@@ -69,7 +69,7 @@ This will create supplementary files needed for Terraform to work.
 
 The created resources will be available in your management console.
 
-## Update Terraform
+## {heading(Update Terraform)[id=terraform-quick-start-update]}
 
 If the provider version in the `vkcs_provider.tf` file is lower than the one needed to create the resource, an error will occur when checking the configuration. To avoid this, update your provider to the [latest version](https://github.com/vk-cs/terraform-provider-vkcs) or to the version specified in the resource description:
 

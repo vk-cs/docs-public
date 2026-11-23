@@ -10,7 +10,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
 {/note}
 
-## Before creating cluster
+## {heading(Before creating cluster)[id=mk8s-create-terraform-prepare]}
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create the cluster. Different quotas may be configured for different regions.
 
@@ -30,7 +30,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
    {/note}
 
-## {counter(terraform)}. Prepare the necessary data sources
+## {heading({counter(terraform)}. Prepare the necessary data sources)[id=mk8s-create-terraform-prepare-data-sources]}
 
 1. Determine what type of virtual machine to use for the cluster master nodes:
 
@@ -94,7 +94,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffication).
 
       As a version, specify the version number obtained earlier.
 
-## {counter(terraform)}. Describe the cluster configuration
+## {heading({counter(terraform)}. Describe the cluster configuration)[id=mk8s-create-terraform-describe-conf]}
 
 Add the cluster resource to the configuration file:
 
@@ -217,12 +217,12 @@ Here:
 
 - `floating_ip_enabled` — assign a public IP address to the API cluster:
 
-  - `true` — VK Cloud assigns a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) to access the cluster from the Internet when the cluster is created. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
+  - `true` — VK Cloud assigns a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating-ip) to access the cluster from the Internet when the cluster is created. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#vnet-ips-and-inet-internet-access) to a router with access to the external network.
   - `false` — VK Cloud does not assign a floating IP address to the cluster.
 
 To install add-ons in the cluster via Terraform, [get the list of availible add-ons](/en/kubernetes/mk8s/instructions/addons/manage-addons#348-tabpanel-1) and [install that you need](/en/kubernetes/mk8s/instructions/addons/advanced-installation).
 
-## {counter(terraform)}. Describe the configuration of one or more worker node groups
+## {heading({counter(terraform)}. Describe the configuration of one or more worker node groups)[id=mk8s-create-terraform-describe-workers]}
 
 {note:info}
 
@@ -233,7 +233,7 @@ You can use Terraform to create a cluster of master nodes only, and add worker n
 
 This operation is described in detail in [Worker node group management](/en/kubernetes/mk8s/instructions/manage-node-group).
 
-## {counter(terraform)}. Run the cluster creation procedure
+## {heading({counter(terraform)}. Run the cluster creation procedure)[id=mk8s-create-terraform-apply]}
 
 1. Check the Terraform configuration file for correctness:
 
@@ -255,7 +255,7 @@ This operation is described in detail in [Worker node group management](/en/kube
 
    This starts creating the Kubernetes cluster. This process can take a long time, depending on the size of the cluster.
 
-## What's next?
+## {heading(What's next?)[id=mk8s-create-terraform-what-next]}
 
 - [Set up the environment](/en/kubernetes/mk8s/connect) on the host from which you plan to connect to the cluster.
 - [Familiarize yourself with the usage scenarios](/en/kubernetes/mk8s/how-to-guides) of the cluster.

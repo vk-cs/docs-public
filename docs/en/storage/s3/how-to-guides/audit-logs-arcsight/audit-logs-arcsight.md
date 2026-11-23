@@ -63,7 +63,7 @@ The following data is used as an example below:
 1. Wait for the connection check to complete and click the **Activate** button.
 
    {note:info}
-   Only one SIEM connection can be active. If you activate a new connection, the previous one will be stopped. You will be able to {linkto(#event-log-activate-siem-connection)[text=activate]} the stopped connection later.
+   Only one SIEM connection can be active. If you activate a new connection, the previous one will be stopped. You will be able to {linkto(#audit-logs-arcsight-create-connection)[text=activate]} the stopped connection later.
    {/note}
 
 ## {heading(2. Configure event reception in ArcSight)[id=audit-logs-arcsight-configure-arcsight]}

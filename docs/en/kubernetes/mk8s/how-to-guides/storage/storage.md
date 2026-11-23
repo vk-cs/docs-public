@@ -1,6 +1,6 @@
 [Persistent volumes (PVs)](/en/kubernetes/mk8s/reference/pvs-and-pvcs) can be connected to simple demo applications in various ways. Next, Persistent Volume Claims (PVCs) will be used to connect them. An Ingress resource will be created to test the functionality of the applications and the volumes connected to them.
 
-## Before you begin
+## {heading(Before you begin)[id=mk8s-storage-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -27,14 +27,14 @@
 
 1. Install [curl](https://curl.se/docs/) if the utility is not already installed.
 
-## {counter(storage)}. Create demo applications and connect PVs to them
+## {heading({counter(storage)}. Create demo applications and connect PVs to them)[id=mk8s-storage-create-demo]}
 
 The following will demonstrate how to create several NGINX-based web applications to display web pages written to the PVs connected to those applications.
 The NGINX `nginxdemos/nginx-hello` image is used, which displays web pages from the `/usr/share/nginx/html` directory, so all PVs will be mounted in the application pods via this path.
 
 You can create one or more demo applications, depending on which way you want to connect the PVs.
 
-### Connecting block storages
+### {heading(Connecting block storages)[id=mk8s-storage-connect-block-storage]}
 
 Block stores are connected to the cluster [with Cinder CSI](/en/kubernetes/mk8s/concepts/storage).
 
@@ -282,7 +282,7 @@ To connect a PV to multiple pods using dynamic PVC:
 
 {/tabs}
 
-### Connecting file storages
+### {heading(Connecting file storages)[id=mk8s-storage-connect-file-storage]}
 
 File storages are connected to the cluster using a PV that is configured to use the existing storage via the required protocol, such as NFS.
 
@@ -487,7 +487,7 @@ To connect an NFS PV using a static PVC:
 
 {/tabs}
 
-## {counter(storage)}. Check the functionality of demo applications and PVs
+## {heading({counter(storage)}. Check the functionality of demo applications and PVs)[id=mk8s-storage-check]}
 
 1. Create a manifest for the Ingress resource through which application requests will go.
 
@@ -571,7 +571,7 @@ To connect an NFS PV using a static PVC:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Define](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
+1. [Define](/en/kubernetes/mk8s/instructions/addons/advanced-installation/install-advanced-ingress#mk8s-install-advanced-ingress-change-balancer) the public IP address of the Ingress controller.
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 
@@ -653,7 +653,7 @@ To connect an NFS PV using a static PVC:
 
    {/tabs}
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=mk8s-storage-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} persistent volumes, delete them:
 

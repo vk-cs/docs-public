@@ -7,7 +7,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 {/note}
 
-## Viewing a list of ports and port information
+## {heading(Viewing a list of ports and port information)[id=viewing_a_list_of_ports_and_port_information]}
 
 {tabs}
 

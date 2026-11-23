@@ -2,7 +2,7 @@ When [connecting using kubectl](/en/kubernetes/k8s/connect/kubectl) to a Kuberne
 
 This authentication process is inconvenient when working with automated tools that need access to the cluster. To work with them, it is more convenient to use the kubeconfig file for the service account. This kubeconfig allows you to authenticate with a token with an infinite lifetime, without entering a password.
 
-## Before you begin
+## {heading(Before you begin)[id=k8s-sa-kubeconfig-prepare]}
 
 {include(/en/_includes/_create-test-cluster.md)}
 
@@ -57,11 +57,11 @@ This authentication process is inconvenient when working with automated tools th
 
    The answer `yes` should be output for each of the commands.
 
-   If you do not have the rights to create any of these resources (the answer is `no`), [adjust the VK Cloud user role](/en/access/iam/instructions/access-manage#changing_member_role) on behalf of which the connection to the cluster is being performed.
+   If you do not have the rights to create any of these resources (the answer is `no`), [adjust the VK Cloud user role](/en/access/iam/instructions/access-manage#iam-access-manage-user-role-edit) on behalf of which the connection to the cluster is being performed.
 
    For more information about the role model and available roles, see [Access management](/en/kubernetes/k8s/concepts/access-management).
 
-## {counter(sa)}. Create a service account and link it to the role
+## {heading({counter(sa)}. Create a service account and link it to the role)[id=k8s-sa-kubeconfig-create-sa]}
 
 1. Create an `example-sa` service account in the `kube-system` namespace:
 
@@ -144,7 +144,7 @@ This authentication process is inconvenient when working with automated tools th
    clusterrolebinding.rbac.authorization.k8s.io/example-binding created
    ```
 
-## {counter(sa)}. Get a token for a service account
+## {heading({counter(sa)}. Get a token for a service account)[id=k8s-sa-kubeconfig-get-token]}
 
 1. Create an 'example-token` secret containing a token for the service account:
 
@@ -263,11 +263,11 @@ This authentication process is inconvenient when working with automated tools th
 
    {note:err}
 
-   The value of the token is confidential information. If it is compromised, [revoke the token](#revoke_the_compromised_token).
+   The value of the token is confidential information. If it is compromised, [revoke the token](#k8s-sa-kubeconfig-revoke-token).
 
    {/note}
 
-## {counter(sa)}. Create a kubeconfig for a service account
+## {heading({counter(sa)}. Create a kubeconfig for a service account)[id=k8s-sa-kubeconfig-create]}
 
 1. Create the basis for this kubeconfig by copying the kubeconfig downloaded from the VK Cloud management console.
 
@@ -487,7 +487,7 @@ This authentication process is inconvenient when working with automated tools th
 
    {/cut}
 
-## {counter(sa)}. Check the operation of the created kubeconfig
+## {heading({counter(sa)}. Check the operation of the created kubeconfig)[id=k8s-sa-kubeconfig-check]}
 
 Use the `kubectl` commands and the previously created kubeconfig for the service account to get information about the cluster and its resources, for example:
 
@@ -527,11 +527,11 @@ If the password was not requested when executing the commands, then the resultin
 
 Provide the necessary measures to protect the kubeconfig file. It contains confidential information: the value of the token in plain text.
 
-If kubeconfig is compromised [revoke the token](#revoke_the_compromised_token).
+If kubeconfig is compromised [revoke the token](#k8s-sa-kubeconfig-revoke-token).
 
 {/note}
 
-## Revoke the compromised token
+## {heading(Revoke the compromised token)[id=k8s-sa-kubeconfig-revoke-token]}
 
 If a previously created token or a kubeconfig containing it has been compromised, revoke the token to prevent unauthorized access to the cluster.
 
@@ -541,7 +541,7 @@ To do this, delete the secret that is used to store the token:
 kubectl --kubeconfig $VKCLOUD_KUBECONFIG delete secret example-token -n kube-system
 ```
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=k8s-sa-kubeconfig-revoke-delete]}
 
 {include(/en/_includes/_remove-k8s-resources.md)} kubeconfig, delete them:
 

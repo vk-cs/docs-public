@@ -22,7 +22,7 @@ When creating the net the following is used:
   - [vkcs_networking_router](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_router.md)
   - [vkcs_networking_port](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_port.md)
 
-## Preperation steps
+## {heading(Preperation steps)[id=terraform-network-prepare]}
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the network. Different regions may have different quotas configured.
 
@@ -30,7 +30,7 @@ When creating the net the following is used:
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
-## 1. Create a net manifest file
+## {heading(1. Create a net manifest file)[id=terraform-network-net-file]}
 
 Create a Terraform configuration file named `network.tf`. The content depends on the net type you need.
 
@@ -90,7 +90,7 @@ Here:
   {cut(Examples)}
 
   - `external_network_id = data.vkcs_networking_network.extnet.id`: the ID is taken from the `vkcs_networking_network` data source.
-  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `external_network_id = "bb76507d-dddd-dddd-dddd-2bca1a4c4cfc"`: the ID is taken from the [network list](/en/networks/vnet/instructions/net#vnet-net-view) in the VK Cloud account or via the Openstack CLI.
 
   {/cut}
 
@@ -105,7 +105,7 @@ Here:
 
   - `network_id = vkcs_networking_network.example.id`: the subnet will be hosted on a new network, which will be created by the `vkcs_networking_network` resource.
   - `network_id = data.vkcs_networking_network.example.id`: the subnet will be hosted on the existed network, the ID is taken from the `vkcs_networking_network` data source.
-  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `network_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the subnet will be hosted on the existed network. The ID is taken from the [network list](/en/networks/vnet/instructions/net#vnet-net-view) in the VK Cloud account or via the Openstack CLI.
 
   {/cut}
 
@@ -139,11 +139,11 @@ Here:
 
   - `subnet_id = vkcs_networking_subnet.example.id`: the subnet ID will be taken after creating the `vkcs_networking_subnet` resource.
   - `subnet_id = data.vkcs_networking_subnet.example.id`: the subnet ID is taken from the `vkcs_networking_subnet` data source.
-  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/instructions/net#viewing_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud account or via the Openstack CLI.
+  - `subnet_id = "bb76507d-bbbb-bbbb-bbbb-2bca1a4c4cfc"`: the port ID is taken from the [network list](/en/networks/vnet/instructions/net#vnet-net-view) in the VK Cloud account or via the Openstack CLI.
 
   {/cut}
 
-## 2. Create the necessary resources using Terraform
+## {heading(2. Create the necessary resources using Terraform)[id=terraform-network-create]}
 
 1. Put the Terraform configuration files in one directory:
 
@@ -167,14 +167,14 @@ Here:
 
 1. Wait for the operation to complete.
 
-## 3. Check configuration application
+## {heading(3. Check configuration application)[id=terraform-network-check]}
 
 Verify that the net and infrastructure were successfully created:
 
 1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Virtual networks** → **Networks**. Make sure the net is created and has all subnets, routers and ports added in the example.
 
-## Delete unused resources
+## {heading(Delete unused resources)[id=terraform-network-delete]}
 
 If you no longer need the Terraform resources, delete them:
 
