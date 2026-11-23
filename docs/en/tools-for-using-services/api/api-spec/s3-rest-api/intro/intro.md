@@ -4,7 +4,7 @@
 
 ## {heading(Getting the endpoint)[id=api-spec-s3-intro-endpoint]}
 
-In the [personal dashboard](https://msk.cloud.vk.ru/app/project/endpoints), find the required endpoint in the **S3 Object Storage** block.
+In the [management console](https://msk.cloud.vk.ru/app/project/endpoints), find the required endpoint in the **S3 Object Storage** block.
 
 ## {heading(Authorization and authentication)[id=api-spec-s3-intro-auth]}
 
@@ -29,7 +29,7 @@ Here:
 - `<ЗАГОЛОВКИ>` — the list of headers used to compute the signature. Headers must be lowercase and arranged in alphabetical order.
 - `<ПОДПИСЬ>` — the [computed signature](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-header-based-auth.html) of the request.
 
-Example request with authorization:
+Request example with authorization:
 
 ```console
 PUT / HTTP/1.1

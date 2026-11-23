@@ -87,8 +87,12 @@
 |Назначение
 
 |Magnum
-|https://infra.mail.ru:9511/v1
-|Управление контейнерами {linkto(../../../../kubernetes#kubernetes)[text=Managed Containers]}
+|https://msk.cloud.vk.ru/infra/kubernetes/v1
+|Управление кластерами Kubernetes {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=первого поколения]} в сервисе Managed Containers
+
+|Managed Kubernetes
+|https://msk.cloud.vk.ru/infra/container/managed-kubernetes/v1
+|Управление кластерами Kubernetes {linkto(../../../../kubernetes/mk8s#mk8s-k8s)[text=второго поколения]} в сервисе Managed Containers
 
 |Magnum-addons
 |https://mcs.mail.ru/infra/container/addons

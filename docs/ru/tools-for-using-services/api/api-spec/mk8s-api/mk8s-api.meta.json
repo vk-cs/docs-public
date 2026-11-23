@@ -1,0 +1,14 @@
+{
+  "title": "Managed Containers (второе поколение)",
+  "shortDescription": "OpenAPI-спецификация сервиса Managed Containers для управления кластерами Kubernetes второго поколения",
+  "metaDescription": "Спецификации публичных API для автоматизации управления облачными сервисами и разработки собственных инструментов для работы с VK Cloud. API сервиса Managed Containers для кластеров Kubernetes второго поколения",
+  "sectionTitle": "Managed Containers (второе поколение)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

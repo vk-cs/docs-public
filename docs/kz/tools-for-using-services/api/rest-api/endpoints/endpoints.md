@@ -89,8 +89,12 @@
 |Мақсаты
 
 |Magnum
-|https://infra.mail.ru:9511/v1
-|{linkto(../../../../kubernetes#kubernetes)[text=Managed Containers]} контейнерлерін басқару
+|https://msk.cloud.vk.ru/infra/kubernetes/v1
+|Managed Containers қызметіндегі {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=бірінші буын]} Kubernetes кластерлерін басқару
+
+|Managed Kubernetes
+|https://msk.cloud.vk.ru/infra/container/managed-kubernetes/v1
+|Managed Containers қызметіндегі {linkto(../../../../kubernetes/mk8s#mk8s-k8s)[text=екінші буын]} Kubernetes кластерлерін басқару
 
 |Magnum-addons
 |https://mcs.mail.ru/infra/container/addons

@@ -4,7 +4,7 @@
   "shortDescription": "Cloud Networks сервисінің OpenAPI-сипаттамалары",
   "sectionTitle": "Cloud Networks",
   "icon": "",
-  "weight": 1,
+  "weight": 6,
   "uuid": "42affd86-804c-4175-ab24-82fc9fa24d8d",
   "build": {
     "for": [

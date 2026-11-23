@@ -1,15 +1,22 @@
-# {heading(Managed Containers)[id=api-spec-magnum]}
+# {heading(Managed Containers (бірінші буын))[id=api-spec-magnum]}
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
+
+**Managed Containers** қызметінің API көмегімен {linkto(../../../../kubernetes/k8s#k8s-k8s)[text=бірінші буын]} Kubernetes кластерлерін басқара аласыз: кластерлерді жасау және жою, олардың параметрлерін өзгерту, кластер шаблондары мен түйіндер топтарын басқару.
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
 1. Әзірге жасалмаса, API арқылы қолжетімділікті {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
-1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
-1. **API Endpoints** қойындысына өтіңіз.
-1. **OpenStack қызметі** блокінен **Magnum** эндпоинтін тауып алыңыз.
-1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}.
+1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}. Сұрауларды жіберген кезде токенді заголовкта пайдаланыңыз.
+1. Сұрау жолында `https://msk.cloud.vk.ru/infra/kubernetes/v1/clusters` эндпоинтін қолданыңыз.
+
+Сұрау мысалы:
+
+```console
+curl -X GET "https://msk.cloud.vk.ru/infra/kubernetes/v1/clusters" \
+-H "X-Auth-Token: abcdef1234567890"
+```
 
 {/cut}
 

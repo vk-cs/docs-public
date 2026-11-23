@@ -4,7 +4,7 @@
   "metaDescription": "Public API specifications for automating the management of cloud services and developing your own tools for working with VK Cloud. API of the Cloud Monitoring service",
   "sectionTitle": "Cloud Monitoring",
   "icon": "",
-  "weight": 16,
+  "weight": 5,
   "uuid": "173c5989-2b7a-4675-b08d-d6c112a8670e",
   "build": {
     "for": [

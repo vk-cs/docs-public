@@ -1,0 +1,14 @@
+{
+  "title": "Managed Containers (екінші буын)",
+  "shortDescription": "Екінші буынның Kubernetes кластерлерін басқаруға арналған Managed Containers қызметінің OpenAPI-спецификациясы",
+  "metaDescription": "Бұлттық қызметтерді басқаруды автоматтандыру және VK Cloudпен жұмыс істеуге арналған өз құралдарыңызды әзірлеу үшін жариялы API спецификациялары. Екінші буынның Kubernetes кластерлеріне арналған Managed Containers қызметінің API",
+  "sectionTitle": "Managed Containers (екінші буын)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

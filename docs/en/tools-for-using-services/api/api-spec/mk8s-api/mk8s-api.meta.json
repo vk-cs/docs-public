@@ -1,0 +1,14 @@
+{
+  "title": "Managed Containers (second generation)",
+  "shortDescription": "OpenAPI specification of the Managed Containers service for managing second-generation Kubernetes clusters",
+  "metaDescription": "Public API specifications for automating cloud service management and developing your own tools for working with VK Cloud. Managed Containers service API for second-generation Kubernetes clusters",
+  "sectionTitle": "Managed Containers (second generation)",
+  "icon": "",
+  "weight": 8,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

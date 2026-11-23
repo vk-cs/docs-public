@@ -4,7 +4,7 @@
   "metaDescription": "Операции API, структуры запросов и ответов, коды ошибок.",
   "sectionTitle": "{var(s3)}",
   "icon": "",
-  "weight": 5,
+  "weight": 11,
   "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f",
   "build": {
     "for": [
