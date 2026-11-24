@@ -14,7 +14,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 
    Будет отображен список VPN-туннелей.
@@ -87,7 +87,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 1. Нажмите кнопку **Добавить VPN** или **Добавить**. Откроется мастер создания нового VPN-туннеля.
 1. Выберите SDN, в которой будет создан VPN:
@@ -522,7 +522,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Редактировать VPN**.
 1. При необходимости отредактируйте локальную или удаленную endpoint-группу:
@@ -777,7 +777,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Перезапустить VPN**.
 1. Прочитайте предупреждение.
@@ -826,7 +826,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **VPN**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного VPN-туннеля и выберите пункт **Удалить VPN**.
 1. Ознакомьтесь со списком удаляемых объектов.

@@ -34,7 +34,7 @@ Apache Kafka сервисін пайдалана отырып, сіз [Marketpla
 
 ## {heading(Дайындық қадамдары)[id=marketplace-kafka-prep]}
 
-1. {var(cloud)} бұлтында {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және [жеке кабинетке](https://msk.cloud.vk.com/app) өтіңіз.
+1. {var(cloud)} бұлтында {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және [жеке кабинетке](https://kz.cloud.vk.kz/app) өтіңіз.
 1. Интернеттен сервиске қолжетімділік алу үшін желіні баптаңыз:
 
    1. Мұны бұрын жасамаған болсаңыз, интернетке қолжетімділігі бар {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=желі құрыңыз]}.
@@ -42,7 +42,7 @@ Apache Kafka сервисін пайдалана отырып, сіз [Marketpla
 
 ## {heading(1. Apache Kafka сервисін қосыңыз)[id=kafka-start-install-service]}
 
-1. {var(cloud)} бұлтының [жеке кабинетінде](https://msk.cloud.vk.com/app/) **Қосымшалар дүкені** бөліміне өтіңіз.
+1. {var(cloud)} бұлтының [жеке кабинетінде](https://kz.cloud.vk.kz/app/) **Қосымшалар дүкені** бөліміне өтіңіз.
 1. **Apache Kafka** сервис карточкасын басыңыз.
 
    Егер бетте **Apache Kafka** сервис карточкасы болмаса, **Барлық шешімдер** түймесін басып, каталогтан карточканы тауып алыңыз.

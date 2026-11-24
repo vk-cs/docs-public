@@ -32,8 +32,8 @@
 ## {heading(Дайындық әрекеттері)[id=vnet-site-to-site-vpn-prep]}
 
 1. OpenStack клиенті {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=орнатылғанына]} көз жеткізіңіз және жобаға {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=аутентификациядан өтіңіз]}.
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Келесі параметрлері бар желіні {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}:
 
     - **Желі атауы**: `priv_net_demo`.

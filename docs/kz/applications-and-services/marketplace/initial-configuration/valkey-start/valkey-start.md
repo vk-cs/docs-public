@@ -28,7 +28,7 @@ Valkey қызметін пайдалана отырып, сіз [Marketplace VK 
 
 ## {heading(Дайындық қадамдар)[id=marketplace-valkey-prep]}
 
-1. {var(cloud)} ішінде {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және [жеке кабинетке](https://msk.cloud.vk.com/app) өтіңіз.
+1. {var(cloud)} ішінде {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және [жеке кабинетке](https://kz.cloud.vk.kz/app) өтіңіз.
 1. Интернеттен қызметке қолжетімділік болу үшін желіні баптаңыз:
 
    1. Әлі жасалмаса, интернетке қолжетімділігі бар желіні {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=жасаңыз]}.
@@ -36,7 +36,7 @@ Valkey қызметін пайдалана отырып, сіз [Marketplace VK 
 
 ## {heading(1. Valkey қызметін қосыңыз)[id=valkey-start-install]}
 
-1. {var(cloud)} [жеке кабинетінде](https://msk.cloud.vk.com/app/) **Қосымшалар дүкені** бөліміне өтіңіз.
+1. {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/) **Қосымшалар дүкені** бөліміне өтіңіз.
 1. **Valkey** қызметінің карточкасын басыңыз.
 
    Егер бетте **Valkey** қызметінің карточкасы болмаса, **Барлық шешімдер** түймесін басып, каталогтан карточканы тауып алыңыз.

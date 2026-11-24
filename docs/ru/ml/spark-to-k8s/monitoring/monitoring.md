@@ -18,7 +18,7 @@
 1. [Установите плагин логирования](/ru/monitoring-services/logging/instructions/connect-plugin) на ВМ кластера.
 1. Подождите несколько минут, чтобы накопились данные.
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Мониторинг** → **Логирование**.
 1. [Настройте](/ru/monitoring-services/logging/instructions/view-logs) фильтрацию логов в таблице.
 
@@ -44,7 +44,7 @@
 Чтобы просмотреть журнал событий:
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
 1. Нажмите на имя нужного кластера.
 1. Перейдите на вкладку **Журнал событий**.
@@ -58,7 +58,7 @@
 Чтобы посмотреть логи в Spark History Server:
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **ML Platform → Spark в k8s**.
 1. Нажмите на имя нужного кластера.
 1. На вкладке **Общие данные** перейдите по ссылке в строке **Spark History Server**.

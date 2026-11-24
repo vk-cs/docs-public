@@ -4,7 +4,7 @@
 
 ## {heading(Резервтік көшірмелерді жасау статистикасын көру)[id=backup-copy-stats]}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 
    Сіздің жобадағы резервтік көшірмелеу статистикасы көрсетілетін бет ашылады:
@@ -22,7 +22,7 @@
 
 {tab(Жоспар бойынша жасалған көшірмелер тізімі)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. **Автоматты** қойындысына өтіңіз.
 
@@ -48,7 +48,7 @@
 
 {tab(Қолмен жасалған көшірмелер тізімі)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. **Қолмен** қойындысына өтіңіз.
 
@@ -83,7 +83,7 @@
    `Compliance` режиміндегі уақытша блоктауды мерзімінен бұрын алу немесе қысқарту мүмкін емес, оның ішінде техникалық қолдау арқылы да.
    {/note}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. **Автоматты** қойындысына өтіңіз.
    Сіздің жобаңыздағы резервтік көшірмелеу жоспарларының толық тізімі ашылады.
@@ -145,7 +145,7 @@
 
 Инстанстің жеке резервтік көшірмелерін жою үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. **Автоматты** қойындысына өтіңіз.
 
@@ -186,7 +186,7 @@
 
 {tab(Қолмен жасалған көшірмелерді жою)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. **Қолмен** қойындысына өтіңіз.
 1. Қажетті инстанстарды тізімде оңай табу үшін:

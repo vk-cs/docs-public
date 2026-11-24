@@ -16,8 +16,7 @@
 
 {ifdef(public)}
 1. [Go to](https://msk.cloud.vk.com/app/) the VK Cloud management console.
-1. Select the project where you want to create a service instance.
-{/ifdef}
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create a service instance.
 1. Go to **Data Platform** → **Service instances**.
 1. Click **Add Instance** or **Create Instance**.
 1. At the **Configuration** step:

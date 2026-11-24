@@ -22,7 +22,7 @@ To grant someone access to the objects in a bucket, add {linkto(../../../concept
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click the name of the desired bucket.
 1. Go to the **Keys** tab and click the **Add key** button.
@@ -66,7 +66,7 @@ This is a group operation: if necessary, you can delete multiple keys at once by
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click the name of the desired bucket and go to the **Keys** tab.
 1. Delete the key in one of the following ways:

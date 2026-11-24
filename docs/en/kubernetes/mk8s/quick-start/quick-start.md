@@ -133,7 +133,7 @@ Install the following tools on the host:
 1. Add the **Administrator Kubernetes** role in management console for the user on whose behalf the connection to the cluster will be performed:
 
    1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/).
-   1. Select the project where the previously created cluster is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the previously created cluster is located.
    1. Go to **Manage access**.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required user and select **Edit**.
    1. Select the **Kubernetes Administrator** role from the drop-down list.

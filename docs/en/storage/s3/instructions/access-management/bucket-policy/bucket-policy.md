@@ -18,7 +18,7 @@
 
 {/ifdef}
 
-1. Select the project where the desired bucket is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired bucket is located.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click ![more-icon](../../../assets/more-icon.svg "inline") for the desired bucket and select **Settings**.
 1. Go to the **Access Policies** tab.
@@ -39,7 +39,7 @@
 
 {/ifdef}
 
-1. Select the project where the desired bucket is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired bucket is located.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click ![more-icon](../../../assets/more-icon.svg "inline") for the desired bucket and select **Settings**.
 1. Go to the **Access Policies** tab.

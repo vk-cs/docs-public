@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-[OpenClaw](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/546d0a61-00dd-4ce9-b662-d7eeb4be3149/v0.12/info) — LLM негізінде AI-агенттер мен қосымшаларды жасауға арналған ашық бастапқы кодты құрал. Ол сондай-ақ мұндай агенттер мен қосымшаларды тиімді басқаруға мүмкіндік береді. OpenClaw агенттерді баптау, сыртқы құралдарды интеграциялау және тапсырмаларды автоматтандыру үшін интерфейс ұсынады.
+[OpenClaw](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/546d0a61-00dd-4ce9-b662-d7eeb4be3149/v0.12/info) — LLM негізінде AI-агенттер мен қосымшаларды жасауға арналған ашық бастапқы кодты құрал. Ол сондай-ақ мұндай агенттер мен қосымшаларды тиімді басқаруға мүмкіндік береді. OpenClaw агенттерді баптау, сыртқы құралдарды интеграциялау және тапсырмаларды автоматтандыру үшін интерфейс ұсынады.
 
 OpenClaw мүмкіндіктері:
 
@@ -19,7 +19,7 @@ OpenClaw сервисін пайдалана отырып, сіз [Marketplace V
 
 OpenClaw сервисін сіздің {var(cloud)} жобасыңыздағы ВМ орналастыру үшін:
 
-1. {var(cloud)} платформасында {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және жеке кабинетке [өтіңіз](https://msk.cloud.vk.com/app).
+1. {var(cloud)} платформасында {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=тіркеліңіз]} және жеке кабинетке [өтіңіз](https://kz.cloud.vk.kz/app).
 
 1. Сервиске қандай қол жетімділік болуы керектігін анықтаңыз:
 
@@ -33,7 +33,7 @@ OpenClaw сервисін сіздің {var(cloud)} жобасыңыздағы �
 
 ## {heading({counter(openclaw)}. Сервісті қосыңыз)[id=marketplace-openclaw-enable]}
 
-1. {var(cloud)} [жеке кабинетінде](https://msk.cloud.vk.com/app/) **Қолданбалар дүкені** бөліміне өтіңіз.
+1. {var(cloud)} [жеке кабинетінде](https://kz.cloud.vk.kz/app/) **Қолданбалар дүкені** бөліміне өтіңіз.
 1. **OpenClaw** сервис картасында **Толығырақ** түймесін басыңыз.
 1. Сервис сипаттамасы бар бетте **Қосылу** түймесін басыңыз.
 1. **Сервер параметрлері** бетінде OpenClaw сервисіне қосылу баптауларын көрсетіңіз.

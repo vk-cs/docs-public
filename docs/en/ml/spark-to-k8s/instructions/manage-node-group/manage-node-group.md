@@ -5,7 +5,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired cluster and select **Add Node Group**.
 1. Set the [settings](/en/kubernetes/mk8s/instructions/helpers/node-group-settings) for the node group.

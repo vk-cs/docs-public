@@ -47,7 +47,7 @@ Backup is not enabled by default. You can enable it when [creating an instance](
 To check if backup is enabled:
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Automatic** or **Point-in-time recovery** tab.
 

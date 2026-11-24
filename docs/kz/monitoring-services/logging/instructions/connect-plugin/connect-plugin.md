@@ -85,4 +85,4 @@
    ```
 
 1. Деректер жиналу үшін бірнеше минут күтіңіз.
-1. {var(cloud)} **Мониторинг** → **Логирование** бөлімінде {ifdef(public)}[жеке кабинетте](https://msk.cloud.vk.ru/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=жеке кабинетте]}{/ifndef} логтердің бар екенін тексеріңіз.
+1. {var(cloud)} **Мониторинг** → **Логирование** бөлімінде {ifdef(public)}[жеке кабинетте](https://kz.cloud.vk.kz/app/services/monitoring/logging){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=жеке кабинетте]}{/ifndef} логтердің бар екенін тексеріңіз.

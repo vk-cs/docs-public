@@ -74,7 +74,7 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   {cut(Мысалдар)}
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: жаңа JupyterHub инстансі жасалады, инстанстің идентификаторы `vkcs_mlplatform_jupyterhub` ресурсы жасалғаннан кейін алынады. Ресурс әрі қарай құрылады.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстің идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://cloud.vk.ru/app) JupyterHub инстансі бетінде қолжетімді.
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстің идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://kz.cloud.vk.kz/app) JupyterHub инстансі бетінде қолжетімді.
 
   {/cut}
 
@@ -196,7 +196,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow инстансі сәтті жасалғанын тексеріңіз:
 
-1. {var(cloud)} [жеке кабинетіне өтіңіз](https://cloud.vk.ru/app/).
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. MLflow инстансі жасалғанын және белсенді екенін тексеріңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-mlflow-delete]}

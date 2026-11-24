@@ -1,6 +1,6 @@
 ## Подготовительные шаги
 
-1. Выберите проект для миграции.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]} для миграции.
 1. [Посмотрите](/ru/tools-for-using-services/account/instructions/project-settings/manage#project-sdn-view), какие SDN подключены в вашем проекте. Если SDN Sprut не подключена, обратитесь в [техническую поддержку](/ru/contacts).
 1. Подготовьте рабочее место администратора для выполнения миграции:
 
@@ -75,7 +75,7 @@
 1. Группы по умолчанию `all`, `default`, `ssh+www` имеют одинаковые названия в SDN Sprut и Neutron. Узнайте и сохраните идентификаторы этих групп:
 
     1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет VK Cloud.
-    1. Выберите проект.
+    1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
     1. Перейдите в раздел **Виртуальные сети** → **Настройки firewall**.
     1. Найдите и сохраните ID групп `all`, `default`, `ssh+www` в SDN Sprut и Neutron.
 

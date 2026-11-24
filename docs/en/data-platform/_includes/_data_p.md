@@ -143,7 +143,7 @@
 
 {includetag(public_select_project)}
 1. [Go to](https://msk.cloud.vk.ru/app/) the management console {var(cloud)}.
-1. Select the project where you need to create a service instance.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you need to create a service instance.
 {/includetag}
 
 <!-- Deleting an instance -->

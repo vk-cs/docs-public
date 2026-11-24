@@ -13,7 +13,7 @@ A DB instance in the **Cluster** configuration cannot be started, restarted, or 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -67,7 +67,7 @@ Different information is available for active and stopped DB instances.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -90,7 +90,7 @@ You can assign an external IP address or unbind it at the level of an individual
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -140,7 +140,7 @@ To expand an instance, add a replica to it. The operation is described in detail
 {tab(Cluster configuration)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../../assets/more-icon.svg "inline") for the desired DB instance and select **Expand cluster**.
 1. Set for the replica being added:
@@ -164,7 +164,7 @@ You can change the virtual machine type used by the hosts of a DB instance:
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. To perform vertical scaling:
 
@@ -218,7 +218,7 @@ For DB instances in the **Master-Replica** configuration, a replica can be separ
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../../assets/more-icon.svg "inline") for the desired DB instance host with the `Replica` role and select **Promote to master**.
 1. Read the warning and click **Confirm**.
@@ -236,7 +236,7 @@ For DB instances in the **Cluster** configuration, you can switch the `Master` r
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../../assets/more-icon.svg "inline") for the DB instance host with the `Sync replica` role and select **Assign as master**.
 1. Read the warning and click **Assign**.
@@ -252,7 +252,7 @@ For DB instances in the **Cluster** configuration, you can switch the `Master` r
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Configure autoscaling for the disk where data is stored:
 
@@ -317,7 +317,7 @@ For DB instances in the **Cluster** configuration, you can switch the `Master` r
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Depending on the configuration, you can delete either the entire instance or its individual replicas:
 

@@ -103,7 +103,7 @@ Here:
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing K8S Docker Registry is specified. To find out the ID of the K8S Docker Registry instance:
   
     1. [Go to](https://cloud.vk.ru/app) the {var(cloud)} management console.
-    1. Select the project where you need to create the cluster.
+    1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you need to create the cluster.
     1. Go to the **ML Platform** → **Spark in k8s** section.
     1. Go to the **Instances** tab.
     1. Click the name of the desired instance.

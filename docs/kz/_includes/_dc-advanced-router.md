@@ -53,8 +53,8 @@ Cloud Direct Connect сіздің жергілікті инфрақұрылым�
 1. Егер әлі жасалмаса, Cloud Direct Connect сервисіне {linkto(/kz/networks/directconnect/connect#directconnect-connect)[text=қосылыңыз]}.
 1. Қосылған желінің UUID мәнін біліңіз:
 
-    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-    1. Жобаны таңдаңыз.
+    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+    1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
     1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
     1. Желілер тізімінен `external-vni-10XXX` атауы бар желіні табыңыз. Мұнда `XXX` — қосылымыңыздың жеке реттік нөмірі.
     1. Осы желінің UUID мәнін сақтаңыз. Бұл мысалда желілік түйіспенің UUID мәні — `b2b8468e-aaaa-bbbb-cccc-327c8c2670d4`.

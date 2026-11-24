@@ -4,7 +4,7 @@
 
 Cloud Servers қызметінде виртуалды машиналарды жеке кабинет арқылы, OpenStack CLI немесе Terraform арқылы құруға болады. Виртуалды машинаны Terraform көмегімен құру үшін {ifdef(public)}{linkto(../../../../../tools-for-using-services/terraform/how-to-guides/iaas/create#terraform-iaas-create)[text=Terraform бөліміндегі нұсқаулықты]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/terraform/how-to-guides/iaas/create-private#terraform-iaas-create-private)[text=Terraform бөліміндегі нұсқаулықты]}{/ifdef} пайдаланыңыз.
 
-{var(cloud)} командасы кейбір ОС-ның бейнелерін дайындаған. Дайын бейнелер тізімі жеке кабинетте {ifdef(public)}[жаңа виртуалды машинаны құру терезесінде](https://msk.cloud.vk.ru/app/services/infra/servers/add){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}жаңа виртуалды машинаны құру терезесінде{/ifdef} қолжетімді. Сонымен қатар, ОС бейнесін өз бетінше {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импорттауға]} болады.
+{var(cloud)} командасы кейбір ОС-ның бейнелерін дайындаған. Дайын бейнелер тізімі жеке кабинетте {ifdef(public)}[жаңа виртуалды машинаны құру терезесінде](https://kz.cloud.vk.kz/app/services/infra/servers/add){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}жаңа виртуалды машинаны құру терезесінде{/ifdef} қолжетімді. Сонымен қатар, ОС бейнесін өз бетінше {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=импорттауға]} болады.
 
 {note:info}
 ВМ параметрлерін баптау мүмкіндігі әр түрлі операциялық жүйелер үшін өзгеше болуы мүмкін.
@@ -16,7 +16,7 @@ Cloud Servers қызметінде виртуалды машиналарды ж�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. Шоттың балансы оң екенін және қалаған конфигурациядағы виртуалды машинаны құруға {ifdef(public)}{linkto(../../../../../tools-for-using-services/account/concepts/quotasandlimits#tools-account-concepts-quotasandlimits)[text=квоталар]}{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=квоталар]}{/ifdef} жеткілікті екенін тексеріңіз.
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. **Создать инстанс** немесе **Добавить** түймесін басыңыз.

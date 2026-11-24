@@ -14,8 +14,8 @@ CDN қолданғанда бұл қатенің пайда болуының н�
 
 CDN-ресурстың баптауларын тексеріңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
-1. Жобаны таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **CDN** → **CDN-ресурстар** бөліміне өтіңіз.
 1. Проблемалы CDN-ресурсты ашып, мынаны тексеріңіз:
    1. Origin (көзі) дұрыс көрсетілген.

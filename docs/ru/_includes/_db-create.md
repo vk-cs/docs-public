@@ -204,7 +204,7 @@
 ## {heading({counter(db)}. Получите внешний IP-адрес инстанса БД)[id=instance_ip]}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится инстанс БД.
+1. {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите на имя инстанса БД. Откроется страница с информацией.
 1. Перейдите на вкладку **Информация**.
@@ -214,7 +214,7 @@
 ## {heading({counter(db)}. Установите расширение TimescaleDB)[id=install_timescaledb]}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится инстанс БД.
+1. {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите на имя инстанса БД. Откроется страница с информацией.
 1. Перейдите на вкладку **Расширения**.
@@ -611,7 +611,7 @@
 Для PostgreSQL доступен мониторинг. Познакомьтесь с собранными данными мониторинга:
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится инстанс БД.
+1. {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите на имя инстанса БД. Откроется страница с информацией.
 1. Перейдите на вкладку **Мониторинг**.

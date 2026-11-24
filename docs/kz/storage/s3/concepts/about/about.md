@@ -155,7 +155,7 @@
 {var(s3)} объектілік қоймасымен жұмыс істеу үшін мына құралдар қолжетімді:
 
 {ifdef(public)}
-- [Жеке кабинет](https://msk.cloud.vk.ru/app/) {var(cloud)}.
+- [Жеке кабинет](https://kz.cloud.vk.kz/app/) {var(cloud)}.
 {/ifdef}
 {ifdef(s3,s3-pdf)}
 - {linkto(../../instructions/iamo/iamo-auth#s3-instructions-iamo-auth)[text=IAM Only]} веб-интерфейсі.

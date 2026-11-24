@@ -1,19 +1,17 @@
 # {heading(Управление проектом)[id=tools-account-project-manage]}
 
-{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
+{ifdef(public,private,private-pg,private-pdf,private-pg-pdf)}
 ## {heading(Выбор проекта)[id=tools-account-project-select]}
 
-1. {linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
-1. В шапке личного кабинета нажмите на имя проекта.
+1. {ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} {ifndef(private,private-pg,private-pdf,private-pg-pdf)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifndef} в личный кабинет {var(cloud)}.
+1. В шапке личного кабинета нажмите на имя {linkto(../../../concepts/projects#tools-account-concepts-projects)[text=проекта]}.
 
    Откроется список проектов, в которых вы являетесь участником.
 
-1. (Опционально) Если в {var(cloud)} больше пяти проектов, воспользуйтесь:
+1. Выберите проект. Если в {var(cloud)} больше пяти проектов, воспользуйтесь:
 
    * поиском по идентификатору или названию проекта;
    * фильтром по ролям пользователя.
-
-1. Выберите проект.
 {/ifdef}
 
 ## {heading(Получение идентификатора проекта)[id=project-pid-view]}

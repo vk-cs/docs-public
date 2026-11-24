@@ -26,7 +26,7 @@ Notifications are usually delivered within seconds, but sometimes it may take a 
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -76,7 +76,7 @@ You can study the webhook exchange mechanism in {var(s3)} in detail using the [e
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -112,7 +112,7 @@ This is a group operation: if necessary, you can delete multiple webhooks by sel
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 

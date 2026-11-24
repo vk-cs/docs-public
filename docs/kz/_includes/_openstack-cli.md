@@ -220,7 +220,7 @@ $ pip install python-cinderclient
 {/includetag}
 
 {includetag(openstack-authorize)}
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
    {ifdef(public)}
 1. Екі факторлы аутентификацияның {linkto(../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=қосылғанына]} және API арқылы қолжетімділіктің {linkto(../../api/rest-api/enable-api#rest-api-enable-activate)[text=белсендірілгеніне]} көз жеткізіңіз.
 

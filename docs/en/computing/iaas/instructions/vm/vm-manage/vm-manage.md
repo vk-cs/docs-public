@@ -595,7 +595,7 @@ Creating a disk without connecting a VM is described in the [Disks](/en/computin
 Transferring a virtual machine between projects is performed by creating a copy of its disk and launching a new VM from this copy.
 
 1. [Create](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) a copy of the VM disk as an image.
-1. [Export](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-create) the created image for further use.
-1. Select the project to which you want to transfer the VM.
+1. [Export](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-export) the created image for further use.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) to which you want to transfer the VM.
 1. [Import](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) the image into the desired project.
 1. [Deploy](/en/computing/iaas/instructions/vm/vm-create) a new VM from the image.

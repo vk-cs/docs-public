@@ -14,7 +14,7 @@
 
 {ifdef(public)}
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где нужно создать экземпляр сервиса.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать экземпляр сервиса.
 {/ifdef}
 
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.

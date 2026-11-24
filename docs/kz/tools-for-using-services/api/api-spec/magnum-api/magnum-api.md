@@ -6,7 +6,7 @@
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Әзірге жасалмаса, API арқылы қолжетімділікті {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
 1. `X-Auth-Token` қолжетімділік токенін {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=алыңыз]}. Сұрауларды жіберген кезде токенді заголовкта пайдаланыңыз.
 1. Сұрау жолында `https://msk.cloud.vk.ru/infra/kubernetes/v1/clusters` эндпоинтін қолданыңыз.

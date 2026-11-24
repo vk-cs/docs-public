@@ -194,7 +194,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 JupyterHub инстансі сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. JupyterHub инстансі жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-jupyterhub-delete]}

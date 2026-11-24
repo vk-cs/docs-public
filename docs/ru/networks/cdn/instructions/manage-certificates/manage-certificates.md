@@ -11,7 +11,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **CDN** → **SSL-сертификаты**.
 1. Нажмите кнопку **Создать SSL-сертификат** или **Добавить**.
 1. В открывшемся окне укажите:
@@ -37,7 +37,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **CDN** → **SSL-сертификаты**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного сертификата и выберите пункт **Настройки сертификата**.
 1. В поле **Имя SSL-сертификата** скорректируйте название сертификата.
@@ -54,7 +54,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **CDN** → **SSL-сертификаты**.
 1. Нажмите ![ ](../../../../assets/more-icon.svg "inline") для нужного сертификата и выберите пункт **Удалить сертификат**.
 1. Подтвердите удаление.

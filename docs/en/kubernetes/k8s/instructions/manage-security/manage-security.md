@@ -7,7 +7,7 @@ In the Managed Containers service, you can manage the {linkto(../../concepts/sec
 ## {heading(Viewing security policies)[id=k8s-manage-security-view-policies]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} personal dashboard.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Cluster Security** tab.
@@ -23,7 +23,7 @@ A cluster may contain several identical policies with different settings for dif
 ## {heading(Adding a security policy)[id=k8s-manage-security-add-policy]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} personal dashboard.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Cluster Security** tab.
@@ -50,7 +50,7 @@ This is a group operation: if necessary, you can enable or disable several polic
 You can manage the operation of individual policies in the cluster by enabling and disabling them:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} personal dashboard.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Cluster Security** tab.
@@ -64,7 +64,7 @@ You can manage the operation of individual policies in the cluster by enabling a
 ## {heading(Editing a security policy)[id=k8s-manage-security-edit-policy]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} personal dashboard.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Cluster Security** tab.
@@ -88,7 +88,7 @@ This is a group operation: if necessary, you can delete several policies at once
 To delete a policy:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} personal dashboard.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Cluster Security** tab.

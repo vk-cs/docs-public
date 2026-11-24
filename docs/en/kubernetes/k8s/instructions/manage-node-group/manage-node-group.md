@@ -11,7 +11,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
 1. Set [settings](/en/kubernetes/k8s/instructions/helpers/node-group-settings) for the node group.
@@ -106,7 +106,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the required cluster and node group.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Labels and Taints**.
@@ -210,7 +210,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the required cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the cluster with the node group that you want to change the update settings for.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Node update**.
@@ -274,7 +274,7 @@ The single cluster node group cannot be deleted from the management console. How
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Locate the required cluster and node group.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Delete**.

@@ -18,7 +18,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 ## 1. Create an instance of the Cloud Kafka service
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
-1. Select the project where you want to create an instance of the service.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create an instance of the service.
 1. Go to **Data Platform → Service instances**.
 1. Click the **Create instance** button.
 1. At the **Configuration** step:
@@ -117,7 +117,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 1. Get the address of the bootstrap server to connect to the service instance:
 
    1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
-   1. Select the project where the service instance is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the service instance is located.
    1. Go to **Data Platform → Service instances**.
    1. Open the `vkcloud-demo-kafka` cluster page by clicking on its name.
    1. Go to the **General information** tab.

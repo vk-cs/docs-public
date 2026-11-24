@@ -136,7 +136,7 @@ openstack loadbalancer create     --flavor <ИМЯ_ИЛИ_ИДЕНТИФИКАТ
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жүйесінің [жеке кабинетіне](https://kz.cloud.vk.kz/app/) өтіңіз.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Жүктеме балансировщиктері** бөліміне өтіңіз.
 
    Балансировщиктер тізімі көрсетіледі.

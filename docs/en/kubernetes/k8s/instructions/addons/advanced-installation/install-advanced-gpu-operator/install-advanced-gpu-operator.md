@@ -13,7 +13,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
    {tab(Management console)}
       
    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-   1. Select the project where the required cluster is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the cluster.
    1. Make sure that the cluster has a dedicated group of worker nodes with GPUs on which addons are hosted. 
@@ -37,7 +37,7 @@ The [GPU Operator](/en/kubernetes/k8s/concepts/addons-and-settings/addons#gpu_op
    {tab(Management console)}
       
    1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-   1. Select the project where the required cluster is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Click the name of the cluster.
    1. Go to the **Addons** tab.

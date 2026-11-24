@@ -12,7 +12,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) you need.
 1. Go to **Virtual networks** → **VPN**.
 
    A list of VPN tunnels will appear.
@@ -85,7 +85,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click the **Add VPN** or **Add** button. The New VPN Tunnel Wizard opens.
 1. Select the SDN in which the VPN will be created:
@@ -524,7 +524,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Edit VPN**.
 1. If necessary, edit the local or remote endpoint group:
@@ -785,7 +785,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Restart VPN**.
 1. Read the warning.
@@ -835,7 +835,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Remove VPN**.
 1. Review the list of objects to be deleted.

@@ -7,10 +7,10 @@
 1. [Go](https://msk.cloud.vk.ru/app) to the {var(cloud)} management console.
 {/includetag}
 {includetag(s3_create_cdn_s3)}
-1. Select the project that contains the bucket you need. If you don't have a bucket yet, {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=create one]}.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need. If you don't have a bucket yet, {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=create one]}.
 {/includetag}
 {includetag(s3_create_cdn_net)}
-1. Select the project that contains the bucket you need. If you don't have a bucket yet, {linkto(../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=create one]}.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need. If you don't have a bucket yet, {linkto(../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=create one]}.
 {/includetag}
 {includetag(s3_create_cdn_all)}
 1. Go to the **Object Storage** → **Buckets** section.

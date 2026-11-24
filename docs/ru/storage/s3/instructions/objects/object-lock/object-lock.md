@@ -28,7 +28,7 @@
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Включите]} версионирование, если этого не было сделано ранее.
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Перейдите в настройки бакета одним из способов:
 
@@ -235,7 +235,7 @@
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Включите]} версионирование, если этого не было сделано ранее.
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Нажмите на имя объекта.
@@ -482,7 +482,7 @@
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Включите]} версионирование, если этого не было сделано ранее.
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Нажмите на имя объекта.

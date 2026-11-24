@@ -1,3 +1,15 @@
+## {heading(Selecting a project)[id=tools-account-project-select]}
+
+1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
+1. In the page header, click the [project](../../../concepts/projects) name.
+
+   A list of projects where you are a member will open.
+
+1. Select a project. If there are more than five projects in {var(cloud)}, use:
+
+   * search by project ID or name;
+   * filter by user roles.
+
 ## {heading(Getting project ID)[id=getting_project_id]}
 
 {include(/en/_includes/_project_pid_common.md)}
@@ -113,7 +125,7 @@ You will be able to reactivate the project after any period of time by uploading
 
 You can [transfer disks](/en/computing/iaas/instructions/volumes#move_disk_to_another_project) between projects. This allows you to transfer virtual machines between projects.
 
-Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/instructions/images/images-manage#exporting_an_image) locally the disk image and [download](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) it to the new project.
+Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-export) locally the disk image and [download](/en/computing/iaas/instructions/images/images-manage#iaas-images-manage-import) it to the new project.
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 

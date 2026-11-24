@@ -31,7 +31,7 @@
 
 1. Убедитесь, что клиент OpenStack {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=установлен]}, и {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=пройдите аутентификацию]} в проекте.
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=Создайте]} сеть со следующими параметрами:
 
    - **Название сети**: `priv_net_demo`.

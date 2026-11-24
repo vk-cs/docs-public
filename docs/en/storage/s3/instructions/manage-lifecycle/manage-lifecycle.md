@@ -22,7 +22,7 @@
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -82,7 +82,7 @@ Use the `GET /lifecycle` method of the {linkto(../../api/lifecycle#api-spec-s3-g
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -122,7 +122,7 @@ Use the `GET /lifecycle` method of the {linkto(../../api/lifecycle#api-spec-s3-g
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -158,7 +158,7 @@ To prevent objects from being deleted according to a specified rule, disable it:
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 
@@ -190,7 +190,7 @@ To prevent objects from being deleted according to a specified rule, disable it:
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Open the bucket settings in one of the following ways:
 

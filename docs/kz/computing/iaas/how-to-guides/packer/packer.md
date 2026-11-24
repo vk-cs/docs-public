@@ -84,7 +84,7 @@ Packer қалаған госттік ОС бар базалық бейнеге �
 1. Жаңа ВМ образды үшін қалаған конфигурация шаблонын таңдаңыз.
 
    {note:info}
-   Өзекті конфигурация шаблондары {var(cloud)} жеке кабинетінің {ifdef(public)}[ВМ жасау бетінде](https://msk.cloud.vk.ru/app/services/infra/servers/add) **Виртуалды машина түрі** тізімінде{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]} бөлімінде{/ifdef} ұсынылған.
+   Өзекті конфигурация шаблондары {var(cloud)} жеке кабинетінің {ifdef(public)}[ВМ жасау бетінде](https://kz.cloud.vk.kz/app/services/infra/servers/add) **Виртуалды машина түрі** тізімінде{/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=%text]} бөлімінде{/ifdef} ұсынылған.
    {/note}
 
 1. `altlinux.pkr.hcl` файлын жасаңыз. `flavor` параметріне таңдалған конфигурация шаблонының атауын көрсетіңіз.
@@ -187,7 +187,7 @@ Packer қалаған госттік ОС бар базалық бейнеге �
 
    {tab(Жеке кабинет)}
 
-   1. {var(cloud)} жеке кабинетына {ifdef(public)}[өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=өтіңіз]}{/ifdef}.
+   1. {var(cloud)} жеке кабинетына {ifdef(public)}[өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=өтіңіз]}{/ifdef}.
    1. **Бұлтты есептеулер** → **Образтар** бөліміне өтіңіз.
    1. Образты тізімнен тауып, оны басыңыз. Образ беті ашылады.
 

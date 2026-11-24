@@ -11,7 +11,7 @@
 
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
 {includetag(not_bucket_onboarding)}
-   1. Выберите проект.
+   1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 {/includetag}
    1. Перейдите в раздел **Object Storage** → **Аккаунты**.
    1. Нажмите кнопку **Добавить аккаунт** или **Добавить**.
@@ -69,7 +69,7 @@
 1. Добавьте объект:
 
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
-   1. Выберите проект, в котором находится созданный бакет.
+   1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
    1. Нажмите на имя созданного бакета.
    1. Нажмите кнопку **Добавить файл**.
@@ -120,7 +120,7 @@
 
 {includetag(not_bucket_onboarding)}
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
-   1. Выберите проект, в котором находится созданный бакет.
+   1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
 {/includetag}
    1. Нажмите на имя созданного бакета.
@@ -132,7 +132,7 @@
 
 {includetag(not_bucket_onboarding)}
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет VK Cloud.
-   1. Выберите проект, в котором находится созданный бакет.
+   1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится созданный бакет.
    1. Перейдите в раздел **Object Storage** → **Бакеты**.
    1. Нажмите на имя созданного бакета.
 {/includetag}

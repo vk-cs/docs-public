@@ -101,7 +101,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего реестра K8S Docker Registry. Чтобы узнать идентификатор инстанса K8S Docker Registry:
   
     1. [Перейдите](https://cloud.vk.ru/app) в личный кабинет {var(cloud)}.
-    1. Выберите проект, где нужно создать кластер.
+    1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать кластер.
     1. Перейдите в раздел **ML Platform** → **Spark в k8s**.
     1. Перейдите на вкладку **Инстансы**.
     1. Нажмите на название нужного инстанса.

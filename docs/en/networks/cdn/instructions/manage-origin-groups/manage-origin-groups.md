@@ -5,7 +5,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 
 A list of origin groups will be displayed.
@@ -21,7 +21,7 @@ A list of origin groups will be displayed.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 1. Click ![ ](/en/assets/plus-icon.svg "inline") **Create source group**.
 1. Enter the origin group name.
@@ -50,7 +50,7 @@ A list of origin groups will be displayed.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
 
@@ -72,7 +72,7 @@ A list of origin groups will be displayed.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
 
@@ -110,7 +110,7 @@ A list of origin groups will be displayed.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
 
@@ -151,7 +151,7 @@ You cannot delete the origin group if CDN servers use it. To delete such group, 
 This is a group operation: you can delete several groups at once by setting the checkboxes.
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN → Source groups** section.
 1. Delete the orgin group with one of the following ways:
 

@@ -7,7 +7,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 
    A list of floating IP addresses will be displayed (**External IP** column).
@@ -41,7 +41,7 @@ A floating IP address is randomly assigned from a shared pool.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click the **Add IP to project** button.
 1. (Optional) Add a description.
@@ -70,7 +70,7 @@ A floating IP address is randomly assigned from a shared pool.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required floating IP address and select **Edit description**.
 1. Set the description.
@@ -101,7 +101,7 @@ A floating IP address is randomly assigned from a shared pool.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address, for which the **Internal IP** column shows `Unbinded', and select **Bind IP**.
 
@@ -145,7 +145,7 @@ Existing floating IP addresses are billed even if they are not assigned to any p
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address that is bound to the internal IP and select **Unbind IP**.
 1. Click the **Confirm** button.
@@ -175,7 +175,7 @@ Existing floating IP addresses are billed even if they are not assigned to any p
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the necessary IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required floating IP address and select **Remove IP from the project**. To remove multiple IPs at once, select them using the checkboxes and click **Remove IP from project**.
 1. Click the **Confirm** button.

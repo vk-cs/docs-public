@@ -17,7 +17,7 @@ A DB instance in the **Cluster** configuration cannot be started, restarted or s
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -69,7 +69,7 @@ Different information is available for an active and a stopped DB instance.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -100,7 +100,7 @@ In the **Single** configuration, you can change the virtual machine type used by
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../../assets/more-icon.svg "inline") for the DB instance host and select **Vertical scaling**.
 1. Select the desired virtual machine category and type.
@@ -125,7 +125,7 @@ The disk size cannot be reduced.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Increase the size of the disk where the data is stored:
    
@@ -174,7 +174,7 @@ The disk size cannot be reduced.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Configure autoscaling for the disk where the data is stored:
 
@@ -214,7 +214,7 @@ The disk size cannot be reduced.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. To delete a DB instance:
 

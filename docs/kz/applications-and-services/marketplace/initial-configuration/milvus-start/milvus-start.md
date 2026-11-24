@@ -18,7 +18,7 @@ Milvus пайдалану арқылы сіз [Marketplace](../../../../start/le
 
 {var(cloud)} жобасында Milvus қызметін орнату үшін:
 
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Орнатылған қызметі бар ВМ-ға және Milvus веб-интерфейсіне интернеттен қолжетімділік болуы үшін:
 
    1. Бұрын жасалмаса, интернетке қолжетімділігі бар {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=желі жасаңыз]}.

@@ -19,7 +19,7 @@
 Для удаления CDN-ресурса:
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный CDN-ресурс.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный CDN-ресурс.
 1. Перейдите в раздел **CDN → CDN-ресурсы**.
 1. Выполните одно из действий для нужного CDN-ресурса:
 
@@ -39,7 +39,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Объектное хранилище → Бакеты**.
 1. Нажмите на имя нужного бакета.
 1. Перейдите на вкладку **CDN**.

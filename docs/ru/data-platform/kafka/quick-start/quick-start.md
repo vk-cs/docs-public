@@ -16,7 +16,7 @@
 ## 1. Создайте экземпляр сервиса Cloud Kafka
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где нужно создать экземпляр сервиса.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать экземпляр сервиса.
 1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
 1. Нажмите кнопку **Создать экземпляр**.
 1. На шаге **Конфигурация**:
@@ -113,7 +113,7 @@
 1. Получите адрес bootstrap-сервера для подключения к экземпляру сервиса:
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект, где находится экземпляр сервиса.
+   1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится экземпляр сервиса.
    1. Перейдите в раздел **Data Platform → Экземпляры сервисов**.
    1. Откройте страницу кластера `vkcloud-demo-kafka`, нажав на его имя.
    1. Перейдите на вкладку **Общая информация**.

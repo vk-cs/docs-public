@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Бұлт ресурстарына қолжетімділікті [OpenVPN](https://msk.cloud.vk.ru/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info) сервисі арқылы басқаруға болады. Бұл нұсқаулық {var(cloud)} құрамындағы ВМ-де OpenVPN сервисін орнатуға, сервис консоліне кіруге және жаңа пайдаланушы жасауға көмектеседі.
+Бұлт ресурстарына қолжетімділікті [OpenVPN](https://kz.cloud.vk.kz/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info) сервисі арқылы басқаруға болады. Бұл нұсқаулық {var(cloud)} құрамындағы ВМ-де OpenVPN сервисін орнатуға, сервис консоліне кіруге және жаңа пайдаланушы жасауға көмектеседі.
 
 OpenVPN сервисін пайдалана отырып, сіз [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace) және [OpenVPN](https://openvpn.net/legal) сервистерінің лицензиялық келісімдерімен келісесіз.
 

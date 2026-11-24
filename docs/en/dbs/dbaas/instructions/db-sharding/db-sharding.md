@@ -15,7 +15,7 @@ Shard management is available only in the **Cluster** {linkto(../../concepts/wor
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../assets/more-icon.svg "inline") for the desired DB instance and select **Add shard**.
 1. Set for the shard being added:
@@ -49,7 +49,7 @@ Shard management is available only in the **Cluster** {linkto(../../concepts/wor
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../assets/more-icon.svg "inline") for the desired shard of the DB instance and select **Scale shard**.
 1. Set the number of hosts in the shard in the **Number of nodes** parameter.
@@ -76,7 +76,7 @@ The only host of a shard cannot be deleted.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../assets/more-icon.svg "inline") for the desired host of the DB instance shard and select **Delete instance**.
 1. Click **Confirm**.
@@ -102,7 +102,7 @@ The shard will be deleted together with all the hosts included in it.
 {/ifdef}
 
 1. {ifdef(public)}[Go to](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]}{/ifndef} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../assets/more-icon.svg "inline") for the desired shard of the DB instance and select **Delete shard**.
 1. Click **Confirm**.

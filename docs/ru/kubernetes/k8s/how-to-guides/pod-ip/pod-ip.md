@@ -120,7 +120,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для Floating IP-адреса, у которого в столбце **Внутренний IP** указано `Не привязан`, и выберите пункт **Привязать IP**.

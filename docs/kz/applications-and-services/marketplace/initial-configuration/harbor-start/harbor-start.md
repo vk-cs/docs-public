@@ -28,7 +28,7 @@ Harbor қызметін пайдалана отырып, сіз [Marketplace VK 
 
 Harbor қызметін VK Cloud жобасында орналастыру үшін:
 
-1. {var(cloud)} жүйесінде {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және [жеке кабинетке](https://msk.cloud.vk.com/app) өтіңіз.
+1. {var(cloud)} жүйесінде {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және [жеке кабинетке](https://kz.cloud.vk.kz/app) өтіңіз.
 1. Harbor ВМ-сі үшін желіні конфигурациялаңыз:
 
    1. Әлі жасалмаса, интернетке қолжетімділігі бар желіні {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Жасаңыз]}.

@@ -11,7 +11,7 @@
 {/note}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Диски PV**.
 1. Переместите PV в свой проект одним из способов: 
 
@@ -25,7 +25,7 @@
 ## {heading(Удаление PV)[id=mk8s-manage-pvs-delete]}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Диски PV**.
 1. Выполните одно из действий:
    

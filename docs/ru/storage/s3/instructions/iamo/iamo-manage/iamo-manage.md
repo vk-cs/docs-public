@@ -26,7 +26,7 @@
    - поиск проекта по идентификатору или названию;
    - фильтр по ролям пользователя;
 
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 
 ### {heading(Настройки проекта)[id=s3-instructions-iamo-manage-project-settings]}
 

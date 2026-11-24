@@ -2,7 +2,7 @@
 1. Terraform-ды {var(cloud)} ресми [айнасынан](https://hashicorp-releases.mcs.mail.ru/terraform) орнатыңыз.
    {/includetag}
    {includetag(prerequisites-terraform-install-prepare)}
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../prerequisites-lk-entry#prerequisites-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../prerequisites-lk-entry#prerequisites-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
    {/includetag}
    {includetag(tools-terraform-install-prepare)}
    {/includetag}

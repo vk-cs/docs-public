@@ -71,8 +71,8 @@ curl -X POST ${OS_NET_URL}/subnets \
 
 Ішкі желінің құрылғанын тексеріңіз:
 
-1. {ifdef(public)}[Өтіңіз](https://cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_cert,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_cert,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Тізімде берілген `N_NAME` атауы бар ішкі желі бар екеніне көз жеткізіңіз. Бұл мысалда — `my_subnet`.
 1. Ішкі желінің атауын басып, оның баптауларын қараңыз. Ішкі желі `/30` маскасы бар мекенжайға ие болып, шлюзі болмауы тиіс.

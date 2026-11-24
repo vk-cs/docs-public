@@ -31,7 +31,7 @@ The described approaches can also be used when access is lost to another applica
 1. Get information about the configuration of the virtual machine network interface:
 
    1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
-   1. Select the project where the necessary VM is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary VM is located.
    1. Go to **Cloud Servers → Virtual machines**.
    1. Click on the name of the required VM.
    1. Go to the tab **Networks**.
@@ -574,7 +574,7 @@ After the SSH connection problem is localized, re-configure the security group r
 To check the security group settings:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
-1. Select the project where the necessary VM is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary VM is located.
 1. Go to **Cloud Servers → Virtual machines**.
 1. Click on the name of the required VM.
 1. Go to the tab **Networks**.
@@ -597,7 +597,7 @@ To check the security group settings:
 To configure security group rules again:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
-1. Select the project where the necessary VM is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the necessary VM is located.
 1. Go to **Cloud Servers → Virtual machines**.
 1. Click on the name of the required VM.
 1. Go to the tab **Networks**.

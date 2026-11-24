@@ -445,7 +445,7 @@ The disk in use has already been migrated to the new availability zone, but its 
    {tab(Addons)}
 
    1. [Go to](https://msk.cloud.vk.ru/app/) the VK Cloud management console.
-   1. Select the project the desired cluster is located in.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) the desired cluster is located in.
    1. Go to **Kubernetes clusters → Kubernetes clusters**.
    1. Click the name of the desired cluster.
    1. Go to the **Addons** tab.

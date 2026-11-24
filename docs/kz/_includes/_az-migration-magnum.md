@@ -68,7 +68,7 @@
 
 {tab(Диск снимогі (жеке кабинет))}
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. PVC-мен байланысты дискінің {linkto(../../../../../computing/iaas/instructions/volumes/volumes-snapshots#iaas-volumes-snapshots-create)[text=снимогін жасаңыз]}.
 1. Осы снимок негізінде мына параметрлерді көрсетіп, {linkto(../../../../../computing/iaas/instructions/volumes/volumes-create#iaas-volumes-create)[text=жаңа диск жасаңыз]}:
     - **Көз**: алдыңғы қадамда жасалған диск снимогі;
@@ -452,7 +452,7 @@
 
    {tab(Аддондар)}
 
-   1. [Өтіңіз](https://msk.cloud.vk.ru/app/) VK Cloud жеке кабинетіне.
+   1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетіне.
    1. Қажетті кластер орналасқан жобаны таңдаңыз.
    1. **Kubernetes кластерлері → Kubernetes кластерлері** бөліміне өтіңіз.
    1. Қажетті кластердің атауын басыңыз.

@@ -649,6 +649,6 @@ systemctl status qemu-guest-agent
 
 1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-create)[text=Создайте]} копию диска ВМ в виде образа.
 1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-export)[text=Экспортируйте]} созданный образ для дальнейшего использования.
-1. Выберите проект, в который нужно перенести ВМ.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в который нужно перенести ВМ.
 1. {linkto(../../../../../computing/iaas/instructions/images/images-manage#iaas-images-manage-import)[text=Импортируйте]} образ в нужный проект.
 1. {linkto(../../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=Разверните]} новую ВМ из образа.

@@ -2,21 +2,18 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{ifdef(private,private-pg,private-pdf,private-pg-pdf)}
-
+{ifdef(public,private,private-pg,private-pdf,private-pg-pdf)}
 ## {heading(Жобаны таңдау)[id=tools-account-project-select]}
 
-1. {var(cloud)} жеке кабинетына {linkto(../../lk-entry#tools-account-lk-entry)[text=өтіңіз]}.
-1. Жеке кабинеттің жоғарғы жағындағы жоба атауын басыңыз.
+1. {ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {ifndef(private,private-pg,private-pdf,private-pg-pdf)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifndef} {var(cloud)} жеке кабинетіне.
+1. Жеке кабинеттің жоғарғы жағындағы {linkto(../../../concepts/projects#tools-account-concepts-projects)[text=жоба]} атауын басыңыз.
 
    Сіз қатысушы болып табылатын жобалардың тізімі ашылады.
 
-1. (Қалауыңыз бойынша) Егер {var(cloud)} ішінде бесден көп жоба болса, мыналарды пайдаланыңыз:
+1. Жобаны таңдаңыз. Егер {var(cloud)} ішінде бесден көп жоба болса, мыналарды пайдаланыңыз:
 
    * жоба идентификаторы немесе атауы бойынша іздеу;
    * пайдаланушы рөлдері бойынша сүзгі.
-
-1. Жобаны таңдаңыз.
 {/ifdef}
 
 ## {heading(Жоба идентификаторын алу)[id=project-pid-view]}
@@ -85,7 +82,7 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетына.
 
 1. Дайындық қадамдарын орындаңыз:
 
@@ -132,7 +129,7 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетына.
 {/ifdef}
 
 1. Жобадан қандай деректерді сақтағыңыз келетінін анықтаңыз:
@@ -168,12 +165,12 @@
 {tab(Жеке кабинет)}
 {/ifdef}
 
-Ең жиі пайдаланылатын ресурстарға квоталар {ifdef(public)}[жеке кабинеттің](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=жеке кабинетінің]}{/ifndef} басты бетінде көрсетіледі.
+Ең жиі пайдаланылатын ресурстарға квоталар {ifdef(public)}[жеке кабинеттің](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../lk-entry#tools-account-lk-entry)[text=жеке кабинетінің]}{/ifndef} басты бетінде көрсетіледі.
 
 Квоталардың толығырақ тізімін көріп, тізімдегі әр квота туралы толық ақпарат алу үшін:
 
 {ifdef(public)}
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетына.
 {/ifdef}
 
 {include(../../../../../_includes/_project_quotas.md)[tags=manage]}
@@ -348,7 +345,7 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетына.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетына.
 1. Жеке кабинеттің жоғарғы жағындағы жоба атауын басып, **Квоталарды басқару** тармағын таңдаңыз.
 1. **Квоталар қосу** түймесін басыңыз. Квоталарды арттыру формасы ашылады.
 1. Егер жоба үшін жедел немесе автоматты квота арттыруға рұқсат етілген болса, сұраныс түрін таңдау мүмкін болады. Олардың бірін таңдаңыз:
@@ -400,7 +397,7 @@ GeekBrains бағдарламасының қатысушылары үшін кв
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Жоба параметрлерін келесі тәсілдердің бірімен ашыңыз:
 
    - Жеке кабинеттің жоғарғы жағындағы жоба атауын басыңыз. Қажетті жоба үшін ![more-icon](../../../../../assets/more-icon.svg "inline") басып, **Жоба параметрлері** тармағын таңдаңыз.
@@ -427,7 +424,7 @@ GeekBrains бағдарламасының қатысушылары үшін кв
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Жобадан барлық қажетті деректерді ауыстырғаныңызға көз жеткізіңіз.
 1. Жоба иесі атынан [техникалық қолдау көрсету қызметіне](/kz/contacts) жүгініп, көрсетіңіз:
 

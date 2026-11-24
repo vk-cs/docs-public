@@ -41,7 +41,7 @@
    {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект, где находится нужный кластер.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
@@ -142,7 +142,7 @@
    {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект, где находится нужный кластер.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.
@@ -262,7 +262,7 @@
    {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект, где находится нужный кластер.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.
@@ -338,7 +338,7 @@
    {tab(Личный кабинет)}
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект, где находится нужный кластер.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
    1. {linkto(../manage-cluster#k8s-manage-cluster-start)[text=Убедитесь]}, что нужный кластер запущен.
    1. Найдите нужную группу узлов в этом кластере.

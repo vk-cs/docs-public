@@ -10,7 +10,7 @@
 
 ## {heading({counter(backup-download-lk)}. Көшірме файлдарын жүктеп алыңыз)[id=backup-download-lk-download]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. Қажетті резервтік көшірмелер тізімін ашыңыз және жүктеп алу үшін көшірмелерді анықтаңыз.
 

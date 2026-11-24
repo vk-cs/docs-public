@@ -21,7 +21,7 @@
 Если у пользователя есть доступ к личному кабинету VK Cloud, он самостоятельно может создать токен доступа и выбрать одну из двух ролей. Такой токен имеет неограниченное время действия.
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, в котором нужно создать токен.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором нужно создать токен.
 1. Перейдите в раздел **ML Platform → Токены**.
 1. Нажмите кнопку **Создать токен доступа**.
 1. В открывшемся окне укажите параметры токена:
@@ -180,7 +180,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, в котором находятся токены.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находятся токены.
 1. Перейдите в раздел **ML Platform → Токены**.
 
 {/tab}
@@ -263,7 +263,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный токен.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный токен.
 1. Перейдите в раздел **ML Platform → Токены**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного токена и выберите пункт **Удалить**.
 1. Нажмите кнопку **Подтвердить**.

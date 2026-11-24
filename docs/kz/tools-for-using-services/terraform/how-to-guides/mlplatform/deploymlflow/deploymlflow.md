@@ -74,7 +74,7 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
   {cut(Мысалдар)}
 
   - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: жаңа MLflow инстансы жасалады, инстанстың идентификаторы `vkcs_mlplatform_mlflow` ресурсы жасалғаннан кейін алынады. Ресурс кейінірек құрылады.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://cloud.vk.ru/app) MLflow инстансының бетінде қолжетімді.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар инстанстың идентификаторы көрсетіледі. Идентификатор {var(cloud)} [жеке кабинетіндегі](https://kz.cloud.vk.kz/app) MLflow инстансының бетінде қолжетімді.
 
   {/cut}
 
@@ -195,7 +195,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 MLflow Deploy инстансы сәтті жасалғанын тексеріңіз:
 
-1. {var(cloud)} [жеке кабинетына өтіңіз](https://cloud.vk.ru/app/).
+1. {var(cloud)} [жеке кабинетына өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. MLflow Deploy инстансы жасалғанын және белсенді екенін тексеріңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-deploymlflow-delete]}

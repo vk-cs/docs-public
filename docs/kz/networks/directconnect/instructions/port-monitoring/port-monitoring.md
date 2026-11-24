@@ -12,7 +12,7 @@ Cloud Direct Connect қызметіне қосылу жүзеге асатын �
 {tab(Жеке кабинет)}
 
 1. [Өз кабинетіңізге өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)}.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Direct Connect** бөліміне өтіңіз.
 
    Direct Connect коммутатор порттарының тізімі, олардың жағдайы және ақпараттары көрсетіледі.
@@ -165,7 +165,7 @@ Cloud Direct Connect қызметіне қосылу жүзеге асатын �
 {tab(Жеке кабинет)}
 
 1. [Өз кабинетіңізге өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)}.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Direct Connect** бөліміне өтіңіз.
 
    Direct Connect коммутатор порттарының тізімі, олардың жағдайы және ақпараттары көрсетіледі.

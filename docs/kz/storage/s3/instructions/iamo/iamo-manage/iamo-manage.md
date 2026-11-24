@@ -28,7 +28,7 @@
    - идентификатор немесе атау бойынша жобаны іздеу;
    - пайдаланушы рөлдері бойынша сүзгі;
 
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 
 ### {heading(Жоба баптаулары)[id=s3-instructions-iamo-manage-project-settings]}
 

@@ -13,7 +13,7 @@ CDN-ресурста SSL-сертификатты пайдалануды бап�
 {tab(Жеке кабинет)}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **CDN** → **SSL-сертификаттар** бөліміне өтіңіз.
 1. **SSL-сертификат құру** немесе **Қосу** батырмасын басыңыз.
 1. Ашылған терезеде мыналарды көрсетіңіз:
@@ -39,7 +39,7 @@ CDN-ресурста SSL-сертификатты пайдалануды бап�
 {tab(Жеке кабинет)}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **CDN** → **SSL-сертификаттар** бөліміне өтіңіз.
 1. Қажетті сертификат үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **Сертификат баптаулары** тармағын таңдаңыз.
 1. **SSL-сертификат атауы** өрісінде сертификат атауын түзетіңіз.
@@ -56,7 +56,7 @@ CDN-ресурста SSL-сертификатты пайдалануды бап�
 {tab(Жеке кабинет)}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **CDN** → **SSL-сертификаттар** бөліміне өтіңіз.
 1. Қажетті сертификат үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **Сертификатты жою** тармағын таңдаңыз.
 1. Жоюды растаңыз.

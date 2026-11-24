@@ -15,7 +15,7 @@ This is a group operation: if necessary, you can start several stopped clusters 
 To start a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Use the checkbox to select the required cluster.
 1. Click the **Launch** button.
@@ -36,7 +36,7 @@ This is a group operation: if necessary, you can stop several started clusters a
 To stop a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Use the checkbox to select the required cluster.
 1. Click the **Stop** button.
@@ -55,7 +55,7 @@ Different information is available for running and stopped clusters. Terraform a
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click on the name of the required cluster. A page with information opens.
 
@@ -101,7 +101,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 To delete a cluster:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Perform one of the actions for the required cluster:
    - Select the cluster using the checkbox, then click **Delete**.

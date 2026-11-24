@@ -114,7 +114,7 @@ The same principle applies when {linkto(../../concepts/report#billing-report)[te
      {/includetag}
      {includetag(detail-all)}
    - **Report type**: the type of report to download — `docx`, `xlsx`, `For accounting`.
-   - **Select the projects for which you want to get reports**: one or more projects.
+   - **[Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)s for which you want to get reports**: one or more projects.
 
      The list displays projects in which your role is owner or super administrator. By default, the data is filtered by the current project.
 
@@ -129,7 +129,7 @@ The same principle applies when {linkto(../../concepts/report#billing-report)[te
 
    - **Period**: the time period for which you want to export the report.
    - **File format**: the format of the report to download — `CSV`, `xlsx`.
-   - **Select the projects for which you want to get reports**: one or more projects.
+   - **[Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)s for which you want to get reports**: one or more projects.
 
      The list displays projects in which your role is owner or super administrator. By default, the data is filtered by the current project.
    

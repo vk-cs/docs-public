@@ -14,7 +14,7 @@ File storages are created in your VK Cloud management console or in the OpenStac
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where you want to create a file storage.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create a file storage.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the **Create** button.
 1. Set the file storage parameters:
@@ -271,7 +271,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**. A list of file storages will be displayed.
 
 {/tab}
@@ -299,7 +299,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage. Information about it will be displayed.
 
@@ -330,7 +330,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Change size**.
 1. Enter a new value and click **Confirm**.
@@ -371,7 +371,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Create snapshot**.
 1. (Optional) Change the name of the snapshot and add a description.
@@ -407,7 +407,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**. Information about the snapshots will be displayed.
 
@@ -438,7 +438,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Restore file storage**.
@@ -479,7 +479,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Delete snapshot**.
@@ -512,7 +512,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage.
 1. Go to the **Access rules** tab.
@@ -559,7 +559,7 @@ The size of the file storage cannot be reduced.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage.
 1. Go to the **Access rules** tab.
@@ -606,7 +606,7 @@ To delete a file storage, you must first disconnect it from virtual machines and
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required file storage is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Delete**.
 1. Click **Confirm**.

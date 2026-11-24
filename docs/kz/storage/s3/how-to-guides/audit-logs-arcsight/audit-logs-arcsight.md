@@ -18,7 +18,7 @@
 1. {linkto(../../../../access/iam/instructions/access-manage#iam-access-manage-view-user)[text=Көріңіз]}, сізде {var(cloud)} жеке кабинетіне {linkto(../../../../access/iam/concepts/roles-reference#iam-roles-reference-basic)[text=негізгі рөлдердің]} бірі бар доступ бар ма: `Жоба иесі`, `Суперәкімші`, `Жоба әкімшісі` немесе `Бақылаушы`.
 
 1. {var(s3)} қызметіне аккаунт жасаңыз, егер бұрын жасалмаса:
-   1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+   1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app).
    1. Жобаны таңдаңыз.
    1. **Object Storage** → **Аккаунтар** бөліміне өтіңіз.
    1. **Аккаунт қосу** немесе **Қосу** түймесін басыңыз.
@@ -41,7 +41,7 @@
 
 ## {heading(1. Жеке кабинетте SIEM-байланысын жасаңыз)[id=audit-logs-arcsight-create-connection]}
 
-1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Мониторинг → Оқиғалар журналы** бөліміне өтіңіз.
 1. **Баптаулар** түймесін басып, **SIEM** қойындысына өтіңіз.
 1. **Байланыс жасау** түймесін басыңыз.

@@ -20,7 +20,7 @@ The {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-dra)[tex
    {tab(Management console)}
 
     1. [Navigate](https://msk.cloud.vk.ru/app/) to the {var(cloud)} management console.
-    1. Select the project where the desired cluster is located.
+    1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
     1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
     1. Find the desired cluster in the list.
 
@@ -43,7 +43,7 @@ The {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-dra)[tex
    {tab(Management console)}
 
     1. [Navigate](https://msk.cloud.vk.ru/app/) to the {var(cloud)} management console.
-    1. Select the project where the desired cluster is located.
+    1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
     1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
     1. Click the name of the desired cluster.
     1. Go to the **Add-ons** tab.

@@ -5,7 +5,7 @@
 ## {heading(Viewing monitoring data)[id=dbaas-monitoring-clickhouse-monitoring-data]}
 
 1. {linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Click the name of the DB instance node.
 1. Go to the **Monitoring** tab.
@@ -20,7 +20,7 @@ Counters and charts display data for the specified period. By default, it is 12 
 ## {heading(Adding DB monitoring data to your charts)[id=dbaas-monitoring-clickhouse-add-monitoring-data]}
 
 1. {linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]} the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Click the name of the DB instance node.
 1. Go to the **Monitoring** tab.

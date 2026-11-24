@@ -11,7 +11,7 @@ To upload content to the CDN:
 {tab(Management console)}
 
 1. [Navigate](https://msk.cloud.vk.ru/app/) to the {var(cloud)} management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **CDN** → **CDN resources** section.
 1. Upload the content using one of the following methods:
 

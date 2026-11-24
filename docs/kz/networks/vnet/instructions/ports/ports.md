@@ -16,7 +16,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.
@@ -84,7 +84,7 @@ openstack port show --help
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.
@@ -130,7 +130,7 @@ openstack port create --help
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше өшірілген портты бірден қоса аласыз.
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.
@@ -182,7 +182,7 @@ openstack port set --help
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше қосылған портты бірден өшіре аласыз.
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.
@@ -230,7 +230,7 @@ openstack port set --help
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін — қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.
@@ -350,7 +350,7 @@ openstack port unset --help
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірнеше портты бірден жоя аласыз.
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті желінің атауын, содан кейін қажетті ішкі желінің атауын басыңыз.
 1. **Порттар** қойындысына өтіңіз.

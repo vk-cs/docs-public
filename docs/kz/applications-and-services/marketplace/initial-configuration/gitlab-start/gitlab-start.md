@@ -28,7 +28,7 @@ GitLab CE пайдалану арқылы сіз [Marketplace](https://cloud.vk.
 
 VK Cloud жобасында GitLab CE қызметін орнату үшін:
 
-1. [Тіркеліңіз](https://cloud.vk.ru/docs/ru/intro/onboarding/account/create-account) және VK Cloud жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+1. [Тіркеліңіз](https://cloud.vk.ru/docs/ru/intro/onboarding/account/create-account) және VK Cloud жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Интернеттен қызметке қолжетімділік алу үшін желіні баптаңыз:
 
    1. Әлі жасалмаса, интернетке қолжетімділігі бар {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=желі жасаңыз]}.

@@ -20,7 +20,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите ![Меню](../../assets/more-icon.svg "inline") для нужного бакета и выберите пункт **Настройки**.
 1. Перейдите на вкладку **CORS**.

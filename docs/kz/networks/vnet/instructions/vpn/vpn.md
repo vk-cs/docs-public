@@ -15,8 +15,8 @@ VPN сервисі Neutron және Sprut {linkto(../../concepts/sdn#vnet-sdn)[t
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз.
 
    VPN-туннельдерінің тізімі көрсетіледі.
@@ -88,8 +88,8 @@ VPN сервисі Neutron және Sprut {linkto(../../concepts/sdn#vnet-sdn)[t
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз.
 1. **VPN қосу** немесе **Қосу** батырмасын басыңыз. Жаңа VPN-туннелін жасау шебері ашылады.
 1. VPN қай SDN ішінде жасалатынын таңдаңыз:
@@ -521,8 +521,8 @@ VPN сервисі Neutron және Sprut {linkto(../../concepts/sdn#vnet-sdn)[t
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз.
 1. Қажетті VPN-туннелі үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **VPN өңдеу** тармағын таңдаңыз.
 1. Қажет болса, жергілікті немесе қашықтағы endpoint-тобын өңдеңіз:
@@ -774,8 +774,8 @@ VPN-туннелін қайта іске қосу тек SDN Neutron-тағы VP
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз.
 1. Қажетті VPN-туннелі үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **VPN қайта іске қосу** тармағын таңдаңыз.
 1. Ескертуді оқыңыз.
@@ -824,8 +824,8 @@ VPN-туннелін қайта іске қосу тек SDN Neutron-тағы VP
 
 {tab(Жеке кабинет)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **VPN** бөліміне өтіңіз.
 1. Қажетті VPN-туннелі үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **VPN жою** тармағын таңдаңыз.
 1. Жойылатын объектілер тізімімен танысыңыз.

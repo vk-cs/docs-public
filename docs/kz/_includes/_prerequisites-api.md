@@ -9,7 +9,7 @@ HTTP және HTTPS сұраулары REST API-ға әдепкі бойынша
 {/includetag}
 
 {includetag(api-token-prerequisites)}
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 {ifdef(public)}
 1. API арқылы қолжетімділіктің {linkto(../../../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=белсендірілгеніне]} көз жеткізіңіз.
 {/ifdef}
@@ -223,7 +223,7 @@ x-subject-token: <ТОКЕН_МӘНІ>
 {includetag(api-token-example)}
 Міндет: REST API арқылы желілер тізімін алу (Neutron сервисі).
 
-1. Жеке кабинетте [қараңыз](https://msk.cloud.vk.ru/app/project/endpoints) Neutron сервисіне сұраныс жасалатын эндпоинтті. Бұл мысалда: `https://infra.mail.ru:9696`.
+1. Жеке кабинетте [қараңыз](https://kz.cloud.vk.kz/app/project/endpoints) Neutron сервисіне сұраныс жасалатын эндпоинтті. Бұл мысалда: `https://infra.mail.ru:9696`.
 1. {linkto(#rest-api-keystone-token-gen)[text=Токенді алыңыз]}: жаңа токен жасаңыз немесе қолданыстағы токеннің мәнін көшіріңіз.
 1. cURL утилитасы көмегімен команданы орындаңыз:
 

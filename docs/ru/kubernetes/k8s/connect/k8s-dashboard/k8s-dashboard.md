@@ -58,7 +58,7 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 1. Получите секрет:
 
    1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)} под аккаунтом пользователя, который будет подключаться к кластеру.
-   1. Выберите проект, где находится нужный кластер.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
    1. Перейдите в раздел **Кластеры Kubernetes → Кластеры Kubernetes**.
    1. Нажмите ![](../../../../assets/more-icon.svg "inline") для нужного кластера и выберите пункт **Получить Secret для входа в Kubernetes Dashboard**.
    1. Нажмите кнопку **Скопировать**.
