@@ -1,0 +1,14 @@
+{
+  "title": "Справочник событий аудита",
+  "shortDescription": "События аудита сервисов VK Data Platform",
+  "metaDescription": "Узнайте, какие события аудита доступны для Cloud ClickHouse, Cloud PostgreSQL и Jatoba в VK Data Platform и какие действия вызывают эти события.",
+  "sectionTitle": "Справочник событий аудита",
+  "weight": 7,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "4efd5ce1-747d-4149-a8bb-628584db6c7a"
+}
