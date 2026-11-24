@@ -115,7 +115,7 @@ To preserve the project:
 
     The full list of such objects is also on the page **Balance and payments**.
 
-    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) VMs.
+    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) VMs.
 
     Objects that do not consume resources — for example, networks and subnets — can be left in the project.
 
@@ -154,7 +154,7 @@ An extended list of quotas for the project can be obtained through the OpenStack
 
 To get an extended list of quotas for a project:
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
     ```console
@@ -292,7 +292,7 @@ To get an extended list of quotas for a project:
     
     {/tabs}
 
-    To view quotas for other OpenStack components, [install](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages) appropriate OpenStack client packages (`manila`, `neutron` and others) and use a package-specific command. To find out the syntax of the command, install the appropriate package and run `<component> help quota-show`, for example, `manila help quota-show`.
+    To view quotas for other OpenStack components, [install](/en/tools-for-using-services/cli/openstack-cli#openstack-install-package) appropriate OpenStack client packages (`manila`, `neutron` and others) and use a package-specific command. To find out the syntax of the command, install the appropriate package and run `<component> help quota-show`, for example, `manila help quota-show`.
 
 {/tab}
 

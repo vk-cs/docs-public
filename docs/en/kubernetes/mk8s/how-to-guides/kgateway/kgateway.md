@@ -1,4 +1,4 @@
-Use the [Kgateway](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kgateway) addon to configure traffic routing in a Kubernetes cluster via the [Gateway API](https://gateway-api.sigs.k8s.io/) and send requests to the test application.
+Use the [Kgateway](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-kgateway) addon to configure traffic routing in a Kubernetes cluster via the [Gateway API](https://gateway-api.sigs.k8s.io/) and send requests to the test application.
 
 ## {heading(Before you begin)[id=mk8s-kgateway-prepare]}
 

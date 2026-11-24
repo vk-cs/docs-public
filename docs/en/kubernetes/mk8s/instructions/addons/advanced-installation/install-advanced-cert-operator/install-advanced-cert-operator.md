@@ -8,7 +8,7 @@
 
 ## {heading(Installing the add-on)[id=mk8s-install-advanced-cert-operator-install]}
 
-The {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-cert-operator)[text=cert-operator]} add-on runs one pod on each worker node of the cluster. The pods synchronize CA certificates on the nodes. {linkto(../../../../concepts/addons-and-settings/addons#features_of_installing_addons)[text=Standard and quick installation]} are available.
+The {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-cert-operator)[text=cert-operator]} add-on runs one pod on each worker node of the cluster. The pods synchronize CA certificates on the nodes. {linkto(../../../../concepts/addons-and-settings/addons#mk8s-addons-install-features)[text=Standard and quick installation]} are available.
 
 {tabs}
 

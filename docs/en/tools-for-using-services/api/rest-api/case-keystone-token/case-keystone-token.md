@@ -32,7 +32,7 @@ Get a token:
 
 {tab(OpenStack CLI)}
 
-1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
+1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Execute the command:
 

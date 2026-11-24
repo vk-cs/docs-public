@@ -117,7 +117,7 @@ Here:
 
   - `port_id = vkcs_networking_port.example.id`: the port ID will be taken after creating the `vkcs_networking_port` resource.
   - `port_id = data.vkcs_networking_port.example.id`: the port ID is taken from the `vkcs_networking_port` data source.
-  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the port ID is taken from the [list of ports](/en/networks/vnet/instructions/ports#viewing_a_list_of_ports_and_port_information) in the VK Cloud account or via the Openstack CLI.
+  - `port_id = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the port ID is taken from the [list of ports](/en/networks/vnet/instructions/ports#vnet-ports-view) in the VK Cloud account or via the Openstack CLI.
 
   {/cut}
 

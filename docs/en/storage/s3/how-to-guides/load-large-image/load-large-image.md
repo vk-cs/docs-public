@@ -146,6 +146,6 @@ You can also [disconnect](/en/computing/iaas/instructions/volumes#mount_disk) th
 
 The created resources are charged and consume computing resources. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) or [stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) the VM.
 - [Delete](../../instructions/buckets/bucket#removing_a_bucket) the `uc_bucket` bucket.
 - [Delete](/en/computing/iaas/instructions/volumes#deleting_disk) the disk.

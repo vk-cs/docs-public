@@ -1,6 +1,10 @@
+# {heading(Managing VMs)[id=iaas-vm-manage]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 You can change the parameters and status of a virtual machine on the VK Cloud platform in [management console](https://msk.cloud.vk.com/app/en) or using the OpenStack command line interface.
 
-## Getting a virtual machine ID
+## {heading(Getting a virtual machine ID)[id=iaas-vm-manage-id-get]}
 
 To manage a VM using the OpenStack CLI, you need a vm ID.
 
@@ -18,7 +22,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Do one of the following.
 
@@ -70,7 +74,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Run the appropriate command.
 
@@ -96,7 +100,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 {/tabs}
 
-## Forced VM reboot
+## {heading(Forced VM reboot)[id=iaas-vm-manage-restart]}
 
 If the VM is not responding, use a forced reboot.
 
@@ -130,7 +134,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Force a VM reboot:
 
@@ -142,7 +146,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 {/tabs}
 
-## VM block and unblock
+## {heading(VM block and unblock)[id=iaas-vm-manage-block_unblock]}
 
 Block the VM if you need to prohibit changing its state and parameters.
 
@@ -172,7 +176,7 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 
 {/tabs}
 
-## {heading(Deleting a VM)[id=delete_vm]}
+## {heading(Deleting a VM)[id=iaas-vm-manage-delete]}
 
 On the VK Cloud platform, the virtual machine is deleted by default along with the main disk (root disk). Deleting additional disks depends on the settings of the corresponding policy.
 
@@ -192,7 +196,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
       {cut(Check the disk deletion policy — OpenStack CLI)}
 
-      1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+      1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
       2. Run the command:
 
@@ -236,7 +240,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
    {tab(OpenStack CLI)}
    
-   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
    2. Delete the VM:
 
       ```console
@@ -247,7 +251,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
    
    {/tabs}
 
-## Renaming and changing the VM type
+## {heading(Renaming and changing the VM type)[id=iaas-vm-manage-rename]}
 
 On the VK Cloud platform, you can rename a virtual machine, as well as change the type of VM — the number of processors (vCPU) and the amount of RAM.
 
@@ -283,7 +287,7 @@ If the VM type changes, the VM will be rebooted.
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Perform the required action.
 
@@ -311,7 +315,7 @@ If the VM type changes, the VM will be rebooted.
 
 {/tabs}
 
-## Assigning tags
+## {heading(Assigning tags)[id=iaas-vm-manage-tags]}
 
 Tags allow you to filter the list of virtual machines and find the right VM faster. Use existing tags or create a new one. The tag name and color must match the [requirements](../../../concepts/vm/tags).
 
@@ -329,7 +333,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Run the appropriate command.
 
@@ -361,7 +365,56 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 {/tabs}
 
-## {heading(Setting and changing a password)[id=password]}
+## {heading(Managing VM metadata)[id=iaas-vm-manage-metadata]}
+
+You can add metadata in the `key=value` format to a VM.
+
+{tabs}
+
+{tab(Management console)}
+
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
+2. Go to **Cloud Servers → Virtual machines**.
+3. Click the name of the VM.
+4. Open the **Metadata** tab.
+5. Perform the required action:
+
+   - Add VM metadata:
+
+     1. Click the **Add** button.
+
+        If there are no created metadata in VK Cloud, the button name is **Add metadata**.
+
+     2. Fill in the metadata name and value.
+     3. Click the **Add metadata** button.
+
+   - Change the metadata value:
+
+     1. Click ![ ](/en/assets/more-icon.svg "inline") for the metadata you need.
+     2. Enter the new value and click the **Save changes** button.
+
+   - Delete the metadata:
+
+     1. Select the metadata with checkboxes.
+     2. Click the **Delete** button.
+     3. Confirm the action.
+
+{/tab}
+
+{tab(OpenStack CLI)}
+
+1. [Install](/en/tools-for-using-services/cli/openstack-cli) the OpenStack client and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project if you haven't done so already.
+2. Add the VM metadata:
+
+   ```console
+   openstack server set --property <KEY>=<VALUE> <VM_ID>
+   ```
+
+{/tab}
+
+{/tabs}
+
+## {heading(Setting and changing a password)[id=iaas-vm-manage-password]}
 
 You need to set the [default account](../../../concepts/about#default_account) password by yourself during your first authorization in the OS. The set password can be changed.
 
@@ -427,7 +480,7 @@ To set the password:
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Run the command:
 
@@ -445,7 +498,7 @@ The password must be at least 8 characters long and contain letters of the Latin
 
 {/note}
 
-## Restoring VM access by key
+## {heading(Restoring VM access by key)[id=iaas-vm-manage-recovery-access-key]}
 
 To restore access to a Linux virtual machine via SSH using a key pair, you need to know the password of the OS user.
 
@@ -503,7 +556,7 @@ The event log contains information about changes in the VM state and user action
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Run the appropriate command.
 
@@ -537,7 +590,7 @@ Examples of events:
 
 {/tabs}
 
-## {heading(Connecting disk to VM)[id=mount_disk]}
+## {heading(Connecting disk to VM)[id=iaas-vm-manage-mount-disk]}
 
 {tabs}
 
@@ -574,7 +627,7 @@ Examples of events:
 
 {tab(OpenStack CLI)}
 
-1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. [Create a disk](/en/computing/iaas/instructions/volumes#create_disk), if it has not been created yet. Save its ID.
 

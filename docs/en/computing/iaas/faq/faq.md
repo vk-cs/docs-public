@@ -8,7 +8,7 @@ The servers are located in [several VK Cloud data centers](../concepts/about#ava
 
 {cut(How do I set a new password for a VM?)}
 
-Use the [instructions](../instructions/vm/vm-manage#password).
+Use the [instructions](../instructions/vm/vm-manage#iaas-vm-manage-password).
 
 {/cut}
 
@@ -72,7 +72,7 @@ In the virtualization system, CPU resources are used for graphics processing, wh
 
 {cut(How do I recover my private key?)}
 
-If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../instructions/vm/vm-manage#restoring_vm_access_by_key).
+If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key).
 
 {/cut}
 
@@ -122,7 +122,7 @@ The usual keyboard shortcuts, audio transmission and clipboard are not available
 
 {cut(Is it possible to increase CPU or RAM?)}
 
-Yes. If the machine has already been created, [change its type](../instructions/vm/vm-manage#renaming_and_changing_the_vm_type).
+Yes. If the machine has already been created, [change its type](../instructions/vm/vm-manage#iaas-vm-manage-rename).
 
 {/cut}
 

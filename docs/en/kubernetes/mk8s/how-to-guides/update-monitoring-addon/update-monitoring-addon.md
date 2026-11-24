@@ -1,4 +1,4 @@
-There are [multiple versions](/en/kubernetes/mk8s/concepts/versions/components) of the [Kube Prometheus Stack](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Kubernetes clusters you create in the Managed Containers service. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
+There are [multiple versions](/en/kubernetes/mk8s/concepts/versions/components) of the [Kube Prometheus Stack](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack) add-on available in the Kubernetes clusters you create in the Managed Containers service. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
 
 To upgrade the Kube Prometheus Stack add-on from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the add-on and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the add-on for saving and further re-using it with the new version.
 

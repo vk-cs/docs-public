@@ -112,7 +112,7 @@ openstack loadbalancer <COMMAND> --help
 
 1. Make sure that:
 
-   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
+   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. To create a load balancing rule:
@@ -299,7 +299,7 @@ openstack loadbalancer <COMMAND> --help
 
 1. Make sure that:
 
-   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
+   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. Determine the load balancer ID. To do this, list the load balancers:
@@ -502,7 +502,7 @@ openstack loadbalancer <COMMAND> --help
 
 1. Make sure that:
 
-   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) together with the `python-octaviaclient` additional package.
+   1. OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) together with the `python-octaviaclient` additional package.
    1. You can [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. Determine the load balancer ID. To do this, list the load balancers:

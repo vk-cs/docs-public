@@ -16,7 +16,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. Run the command:
 
@@ -51,7 +51,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. Run the command:
 
@@ -80,7 +80,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#vnet-floating-ip-view). Find in the list the ID of the floating IP address for which you want to edit the description.
 
@@ -120,7 +120,7 @@ A floating IP address is randomly assigned from a shared pool.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#vnet-floating-ip-view). Find in the list the ID of the floating IP address that you want to bind to the port.
 1. Get the list of ports. Find in the list the port ID of the port to which you want to bind the floating IP address.
@@ -154,7 +154,7 @@ Existing floating IP addresses are billed even if they are not assigned to any p
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#vnet-floating-ip-view). Find in the list the ID of the floating IP address that you want to unbind from the port.
 
@@ -184,7 +184,7 @@ Existing floating IP addresses are billed even if they are not assigned to any p
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. [Get list of floating IP addresses](#vnet-floating-ip-view). Find in the list the ID of the floating IP address that you want to remove from the project.
 

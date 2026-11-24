@@ -189,8 +189,8 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
 The created resources are charged and quotas are spent. If you don't need them anymore:
 
-1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) deployed virtual machines.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) deployed virtual machines.
 1. [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-delete) a virtual machine with Grafana.
 1. [Remove](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address assigned to the `Centos_8_5_Prometheus` VM.
-1. [Delete](/en/networks/vnet/instructions/ports#deleting_a_port) the port to which the virtual IP address is assigned.
+1. [Delete](/en/networks/vnet/instructions/ports#vnet-ports-delete) the port to which the virtual IP address is assigned.
 1. [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) a `monitoring-net` network.

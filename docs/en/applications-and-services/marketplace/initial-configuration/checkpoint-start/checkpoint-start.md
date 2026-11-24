@@ -312,7 +312,7 @@ By default, one network interface is created for a VM. To add a network interfac
 1. Go to **Cloud Servers → Virtual machines**.
 1. In the list of virtual machines, click the name of the VM that was created as a gateway.
 1. Go to the **Networks** tab.
-1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#add-rule) rules to the security group for that network.
+1. [Connect](/en/computing/iaas/instructions/vm/vm-add-net#iaas-vm-add-net-connect) the required network to the gateway VM and [add](/en/networks/vnet/instructions/secgroups#vnet-secgroups-add-rule) rules to the security group for that network.
 
    {note:info}
 
@@ -379,6 +379,6 @@ Backup options are described in the [sk108902 article](https://support.checkpoin
 Running service infrastructure consumes computing resources. If you no longer need it:
 
 - [Delete](/en/applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-delete) the instance of the Check Point CloudGuard Network service.
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) VMs created as a gateway and a management server.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) VMs created as a gateway and a management server.
 - Make sure that all disks are deleted along with the VMs.
 - [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the network used for the service.

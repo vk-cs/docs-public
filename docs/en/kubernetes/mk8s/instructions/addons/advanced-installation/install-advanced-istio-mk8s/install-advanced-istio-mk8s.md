@@ -4,7 +4,7 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for [Istio](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#istio).
+[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) are available for [Istio](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-istio).
 
 {tabs}
 

@@ -2,7 +2,7 @@ You can use the following tools to monitor the status of a Kubernetes cluster:
 
 - [Preinstalled dashboard](#cluster_status_dashboard) in the management console. VK Cloud creates it for each cluster automatically. It shows the status of cluster resources.
 
-- [Kube Prometheus Stack monitoring add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#kube_prometheus_stack).
+- [Kube Prometheus Stack monitoring add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-kube-prometheus-stack).
 
   With the add-on, you can view metrics of Kubernetes resources, down to individual pods. You can also use alerts that warn you when a metric exceeds its threshold, and [forecast](#forecasting_cluster_resource_consumption) cluster resource consumption. Forecasting is available in the add-on [version](/en/kubernetes/mk8s/concepts/versions/components) `68.3.3`.
 

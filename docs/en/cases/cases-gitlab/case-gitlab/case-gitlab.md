@@ -280,5 +280,5 @@ If the VM on which GitLab is installed has a domain name, you can issue a public
 
 Deployed virtual resources are charged. If you do not need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the `OA-Ubuntu-docker` VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) the `OA-Ubuntu-docker` VM.
 - If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) the floating IP address `185.185.185.185`.

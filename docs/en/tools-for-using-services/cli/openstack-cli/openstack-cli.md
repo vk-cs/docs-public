@@ -1,6 +1,10 @@
+# {heading(Connecting to OpenStack CLI)[id=tools-cli-openstack]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#openstack-authorize).
 
-## Before you start
+## {heading(Before you start)[id=openstack-prepare]}
 
 {tabs}
 
@@ -78,7 +82,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
 {/tabs}
 
-## 1. Install the OpenStack client
+## {heading(1. Install the OpenStack client)[id=openstack-install]}
 
 1. Install Openstack CLI:
 
@@ -110,7 +114,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    If the OpenStack CLI is installed correctly, the response will return the version number.
 
-## 2. (Optional) Install additional packages
+## {heading(2. (Optional) Install additional packages)[id=openstack-install-package]}
 
 1. Install packages to work with specific OpenStack services:
 
@@ -215,7 +219,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    {/tabs}
 
-## 4. Check if OpenStack CLI is ready to work
+## {heading(4. Check if OpenStack CLI is ready to work)[id=openstack-check]}
 
 1. Check the availability of the OpenStack client:
 
@@ -264,7 +268,7 @@ The instructions are written using the example of Python 3.10.11 and Microsoft C
 
    The console output should display a list of available projects.
 
-## Examples of OpenStack CLI commands
+## {heading(Examples of OpenStack CLI commands)[id=openstack-example]}
 
 - View the list of available flavors:
 

@@ -4,7 +4,7 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-Only [standard installation](/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for the add-on.
+Only [standard installation](/en/kubernetes/k8s/concepts/addons-and-settings/addons#k8s-addons-install-features) is available for the add-on.
 
 The add-on is installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) controller on all nodes in the cluster, including master nodes.
 

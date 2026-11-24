@@ -11,7 +11,7 @@ To show how to configure a secure connection with virtual desktops:
 
 ## {heading(Before you start)[id=desktops-ipsec-preparatory-steps]}
 
-1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
+1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the project.
 
 1. Create an LDAP environment:
 
@@ -456,7 +456,7 @@ Scheme of the built interaction between networks and machines within networks:
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machines.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) the virtual machines.
 1. [Delete](/en/networks/vnet/instructions/vpn#vnet-vpn-delete) the VPN tunnel.
 1. [Delete](/en/networks/vnet/instructions/router#vnet-router-delete) the routers.
 1. Delete the [subnet](/en/networks/vnet/instructions/net#vnet-net-subnet-delete) and the [network](/en/networks/vnet/instructions/net#vnet-net-delete) in which the VM is located.

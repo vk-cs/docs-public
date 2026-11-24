@@ -4,7 +4,7 @@
 
 A tag is a string used to classify virtual machines in {var(cloud)}. Tags allow you to group VMs, for example by environment, team, or purpose, and find the needed ones faster during {ifndef(private-cert)}[filtering](../../../instructions/vm/vm-filter){/ifndef}{ifdef(private-cert)}filtering{/ifdef}.
 
-You can [assign](../../../instructions/vm/vm-manage#assigning_tags) a tag to a virtual machine by specifying its name and color. In the OpenStack CLI, a tag has the format `<NAME>^<COLOR>`, for example `env:prod^positive`. The color is specified by one of the following values:
+You can [assign](../../../instructions/vm/vm-manage#iaas-vm-manage-tags) a tag to a virtual machine by specifying its name and color. In the OpenStack CLI, a tag has the format `<NAME>^<COLOR>`, for example `env:prod^positive`. The color is specified by one of the following values:
 
 - `validation` — purple;
 - `negative` — red;

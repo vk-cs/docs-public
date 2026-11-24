@@ -98,4 +98,4 @@ If you manage {var(cloud)} resources via Terraform, after migrating the VM, sync
 
 ## {heading(Delete unused resources)[id=iaas-vm-az-migration-delete]}
 
-A running virtual machine, its disks, and their snapshots are billed. If you no longer need the source VM, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#delete_vm)[text=delete]} it. Its disks and their snapshots will be deleted along with it.
+A running virtual machine, its disks, and their snapshots are billed. If you no longer need the source VM, {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=delete]} it. Its disks and their snapshots will be deleted along with it.

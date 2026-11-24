@@ -29,7 +29,7 @@ To create VM:
 1. Fill in the fields in the **General Information** box:
 
      - **Name of virtual machine**: use only Latin letters, numbers, or special characters `-`, `_`, and `.`.
-     - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
+     - **Tags**: if necessary, [specify the tag](../vm-manage#iaas-vm-manage-tags) for the VM or create a new one.
      - **Configure scripts on VM startup**: enable this option to add a bash or cloud-config script that will be executed when the VM first starts.
 
 1. Specify the disk parameters in the **Disk size and speed** box.
@@ -125,7 +125,7 @@ To create VM:
 1. Get ready to work with the OpenStack CLI:
 
    1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
-   2. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+   2. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 2. Collect the data:
 

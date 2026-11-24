@@ -110,5 +110,5 @@ For the performance comparison to be objective, use the same testing methodology
 
 The created resources are billed. If you no longer need them, delete them:
 
-1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the test VM.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) the test VM.
 1. Delete the [subnet](/en/networks/vnet/instructions/net#vnet-net-subnet-delete) and the [network](/en/networks/vnet/instructions/net#vnet-net-delete) in which the VM was hosted.

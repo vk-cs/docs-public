@@ -336,6 +336,6 @@ If you no longer need the created resources, delete them:
 
 1. Delete the Spark cluster.
 1. Delete the Docker registry for this Spark cluster.
-1. Delete [objects from the bucket](/en/storage/s3/instructions/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket) that was used by this cluster.
+1. Delete [objects from the bucket](/en/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete) and [the bucket itself](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket) that was used by this cluster.
 1. [Delete the access token](../../instructions/tokens#deleting_an_access_token).
 1. [Delete the ClickHouse instance](/en/dbs/dbaas/instructions/delete).

@@ -36,7 +36,7 @@ To create a bucket in the VK Cloud panel:
 2.  Press the **Add** button.
 3.  Select the type of bucket to create and enter a DNS-compatible name.
 
-## Removing a bucket
+## {heading(Removing a bucket)[id=removing_a_bucket]}
 
 Deleting a bucket after cleaning it is possible in the general list of buckets of the VK Object Storage service. To delete one bucket, you can use the delete button against the bucket, and to delete several elements, you can select using the checkbox to the left of the buckets.
 

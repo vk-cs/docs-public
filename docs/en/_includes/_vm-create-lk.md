@@ -44,7 +44,7 @@
    - **Tags**: if necessary, [specify a tag](../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) for the VM or create a new one.
      {/includetag}
      {includetag(create-from-disk)}
-   - **Tags**: if necessary, [specify a tag](../../instructions/vm/vm-manage#assigning_tags) for the VM or create a new one.
+   - **Tags**: if necessary, [specify a tag](../../instructions/vm/vm-manage#iaas-vm-manage-tags) for the VM or create a new one.
      {/includetag}
      {includetag(create,create-from-disk)}
    - **Configure scripts on VM launch**: enable the option to add a bash script or a [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) script that will be executed on the first VM launch. {ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}Enter the script code manually or upload a script file with the `.txt` or `.sh` extension.{/ifdef}

@@ -40,7 +40,7 @@ It is recommended to test the service before publishing it in the store and make
     * [curl](https://curl.se) — allows initializing the agent download.
     * [systemd](https://systemd.io) — allows running the agent and monitoring its health.
 
-  * [QEMU Guest Agent](https://www.qemu.org/docs/master/interop/qemu-ga.html) — allows [setting a password](/en/computing/iaas/instructions/vm/vm-manage#password) for the VM via the cloud platform dashboard.
+  * [QEMU Guest Agent](https://www.qemu.org/docs/master/interop/qemu-ga.html) — allows [setting a password](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-password) for the VM via the cloud platform dashboard.
 
 * The service image must not contain:
 

@@ -14,7 +14,7 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/instructions/
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
    ```console
@@ -48,7 +48,7 @@ To display data only about the public key, add the `--public-key` option to the 
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
    ```console
@@ -83,7 +83,7 @@ To display data only about the public key, add the `--public-key` option to the 
 {tab(OpenStack CLI)}
 
 1. Use the GitLab [official documentation](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) for local generation of a key pair.
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
    ```console
@@ -102,7 +102,7 @@ The private key cannot be restored. Create a new key pair and upload the public 
 
 {/note}
 
-To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/computing/iaas/instructions/vm/vm-manage#restoring_vm_access_by_key).
+To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-recovery-access-key).
 
 ## Deleting key pair
 
@@ -121,7 +121,7 @@ This is a group operation: if necessary, you can delete several key pairs at onc
 
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 1. Run the command:
 
    ```console
