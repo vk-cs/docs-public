@@ -1,0 +1,14 @@
+{
+  "title": "Управление архивацией WAL",
+  "shortDescription": "Как временно отключить и возобновить архивацию WAL в Cloud PostgreSQL",
+  "metaDescription": "Узнайте, как отключить и снова включить архивацию WAL в настройках экземпляра Cloud PostgreSQL VK Data Platform и когда создать полную резервную копию.",
+  "sectionTitle": "Управление архивацией WAL",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "919cbea9-22d1-4cc4-b332-387f5be6c857"
+}
