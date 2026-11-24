@@ -1,0 +1,14 @@
+{
+  "title": "Управление архивацией WAL",
+  "shortDescription": "Как временно отключить и возобновить архивацию WAL в Jatoba",
+  "metaDescription": "Узнайте, как отключить и снова включить архивацию WAL в настройках экземпляра Jatoba VK Data Platform и когда создать полную резервную копию.",
+  "sectionTitle": "Управление архивацией WAL",
+  "weight": 3,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "fe74259f-7653-41ed-9e0c-48896b4ed312"
+}
