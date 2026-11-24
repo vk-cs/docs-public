@@ -16,7 +16,7 @@ You can create a Cloud Flink instance in one of two configurations:
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. Select the project where you want to create a service instance.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create a service instance.
 1. Go to **Data Platform → Service instances**.
 1. Click the **Add instance** or **Create an instance** button.
 1. On the **Configuration** step:
@@ -78,7 +78,7 @@ You can create a Cloud Flink instance in one of two configurations:
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project where you want to create a service instance.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create a service instance.
 1. Go to **Data Platform → Service instances**.
 1. Click the **Add instance** or **Create an instance** button.
 1. On the **Configuration** step:

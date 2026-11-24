@@ -4,7 +4,7 @@
 
 ## {heading(ДҚ жасау)[id=dbaas-manage-databases-create]}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Дерекқорлар** → **Дерекқор инстанстары** бөліміне өтіңіз.
 1. ДҚ инстансының атауын басыңыз.
 1. **Дерекқорлар тізімі** қойындысына өтіңіз.
@@ -14,7 +14,7 @@
 
 ## {heading(ДҚ жою)[id=dbaas-manage-databases-delete]}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Дерекқорлар** → **Дерекқор инстанстары** бөліміне өтіңіз.
 1. ДҚ инстансының атауын басыңыз.
 1. **Дерекқорлар тізімі** қойындысына өтіңіз.

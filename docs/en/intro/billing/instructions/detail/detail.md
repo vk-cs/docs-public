@@ -73,7 +73,7 @@ The same principle applies to [the formation of accounting documents](../../conc
    - **Period** — the time period to download the report for.
    - **Details** — how detailed the data in the report must be (by day, week, month, or year).
    - **Report format** — the format to download the report in. The options are: **docx**, **xlsx**, **For accounting**.
-   - **Select the projects for which you want to get reports** — one or more projects.
+   - **[Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)s for which you want to get reports** — one or more projects.
 
    The list shows the projects in which your role is owner or superadministrator. By default, the data is filtered by the current project.
 
@@ -87,7 +87,7 @@ The same principle applies to [the formation of accounting documents](../../conc
 
    - **Period** — the time period to download the report for.
    - **Report format** — the format to download the report in. The options are: `CSV`, `xlsx`.
-   - **Select the projects for which you want to get reports** — one or more projects.
+   - **[Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)s for which you want to get reports** — one or more projects.
 
    The list shows the projects in which your role is owner or superadministrator. By default, the data is filtered by the current project.
 

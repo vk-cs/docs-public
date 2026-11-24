@@ -102,7 +102,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: жаңа Docker реестрі жасалып, кластердің құрамына кірмейтін және бөлек тарификаланатын бөлінген K8S Docker Registry виртуалды машинасына орналастырылады. Идентификатор `vkcs_mlplatform_k8s_registry` ресурсын құрғаннан кейін алынады. Ресурс кейінірек құрылады.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: бар K8S Docker Registry реестрінің идентификаторы көрсетіледі. K8S Docker Registry инстансының идентификаторын білу үшін:
 
-    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app).
+    1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
     1. Кластерді құру қажет жобаны таңдаңыз.
     1. **ML Platform** → **Spark в k8s** бөліміне өтіңіз.
     1. **Инстанстар** қойындысына өтіңіз.
@@ -277,7 +277,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Spark кластері сәтті құрылғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **ML Platform** → **Инстанстар** бөліміне өтіңіз. Spark кластерінің құрылғаны және белсенді екеніне көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-spark-k8s-delete]}

@@ -78,7 +78,7 @@ Assess the project's network infrastructure and identify the entities that need 
 1. The default groups `all`, `default`, `ssh+www` have the same names in SDN Sprut and Neutron. Find and save the IDs of these groups:
 
     1. [Go](https://cloud.vk.com/app/) to your VK Cloud account.
-    1. Select the project.
+    1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
     1. Navigate to the **Virtual Networks** → **Firewall settings** section.
     1. Find and save the IDs of the `all`, `default`, `ssh+www` groups in SDN Sprut and Neutron.
 

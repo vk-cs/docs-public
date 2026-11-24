@@ -9,7 +9,7 @@ After adding a network interface to a VM, check and, if necessary, adjust its se
 Get information about the VM network interface configuration:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the virtual machine is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the virtual machine is located.
 1. Go to the **Cloud Computing** → **Virtual Machines** section.
 1. Click the name of the desired virtual machine.
 1. Go to the **Networks** tab.

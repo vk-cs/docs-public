@@ -95,7 +95,7 @@ If you use Helm, Kustomize or other configuration managers, the sequence of acti
 ## {heading({counter(placeholder)}. Check settings are applied)[id=check]}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project where the cluster you need is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the cluster you need is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the cluster you need.
 1. Go to the **Cluster resources** tab.

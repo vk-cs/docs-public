@@ -22,7 +22,7 @@ Check and fix the {linkto(../../concepts/access/s3-cors#s3-concepts-cors)[text=C
 
 {/ifdef}
 
-1. Select the project that contains the target bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the target bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click ![Menu](../../assets/more-icon.svg "inline") for the target bucket and select **Settings**.
 1. Go to the **CORS** tab.

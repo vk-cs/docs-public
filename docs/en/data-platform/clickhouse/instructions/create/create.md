@@ -16,7 +16,7 @@
 
 {ifdef(public)}
 1. Go to the {var(cloud)} [management console](https://msk.cloud.vk.ru/app/).
-1. Select the project where you need to create a service instance.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you need to create a service instance.
 {/ifdef}
 
 1. Navigate to **Data Platform** → **Service instances**.

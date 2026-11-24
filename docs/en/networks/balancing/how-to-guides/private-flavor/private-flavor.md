@@ -141,7 +141,7 @@ Here:
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to **Virtual networks** → **Load balancers**.
 
    A list of load balancers will be displayed.

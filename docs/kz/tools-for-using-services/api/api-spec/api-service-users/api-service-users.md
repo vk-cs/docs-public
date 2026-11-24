@@ -10,7 +10,7 @@ REST API Service Users {linkto(../../../../access/iam/concepts/service-accounts#
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. API арқылы қолжетімділік әлі қосылмаған болса, оны {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]}.
 1. Беттің жоғарғы жағындағы пайдаланушы атауын басып, **Жобаның баптаулары** тармағын таңдаңыз.
 1. **API Endpoints** қойындысына өтіңіз.

@@ -70,7 +70,7 @@ curl -X POST ${OS_NET_URL}/subnets \
 Проверьте, что подсеть создана:
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Убедитесь, что в списке есть подсеть с заданным `N_NAME`. В этом примере — `my_subnet`.
 1. Нажмите на имя подсети и просмотрите ее настройки. Подсеть должна иметь адрес с маской `/30` и не иметь шлюза.

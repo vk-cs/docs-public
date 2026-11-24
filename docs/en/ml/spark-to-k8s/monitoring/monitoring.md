@@ -20,7 +20,7 @@ To be able to view cluster logs:
 1. [Install the logging plugin](/en/monitoring-services/logging/instructions/connect-plugin) on the cluster VM.
 1. Wait a few minutes for the data to accumulate.
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Monitoring** → **Logging** section.
 1. [Configure](/en/monitoring-services/logging/instructions/view-logs) log filtering in the table.
 
@@ -46,7 +46,7 @@ The event log contains messages about critical errors in cluster operation.
 To view the event log:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters → Kubernetes Clusters** section.
 1. Click the name of the desired cluster.
 1. Go to the **Event log** tab.
@@ -60,7 +60,7 @@ The Spark History Server service collects information about the job execution hi
 To view logs in Spark History Server:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **ML Platform → Spark in k8s** section.
 1. Click the name of the desired cluster.
 1. On the **General data** tab, follow the link in the **Spark History Server** row.

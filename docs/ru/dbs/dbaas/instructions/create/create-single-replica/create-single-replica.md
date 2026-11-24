@@ -10,7 +10,7 @@
 {ifndef(public)}
 1. Убедитесь, что {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas)[text=квот]} достаточно для создания инстанса БД.
 {/ifndef}
-1. Выберите проект, где нужно создать инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Нажмите кнопку **Создать базу данных** или **Добавить**.
 1. На шаге **Конфигурация**:

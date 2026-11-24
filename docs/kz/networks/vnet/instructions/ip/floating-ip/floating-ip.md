@@ -144,7 +144,7 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Қажетті IP-мекенжай орналасқан жобаны таңдаңыз.
 1. **Виртуалды желілер** → {ifndef(public)}**Жылжымалы IP**.{/ifndef}{ifdef(public)}**IP-мекенжайлар** бөліміне өтіңіз.
 1. **Floating IP** қойындысына өтіңіз.{/ifdef}

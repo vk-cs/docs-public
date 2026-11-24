@@ -18,7 +18,7 @@
 
 {/ifdef}
 
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Object Storage** → **Бакеты**. Откроется список бакетов в проекте.
 1. (Опционально) Отсортируйте список по имени бакета, используя стрелки в заголовке соответствующего столбца.
 
@@ -203,7 +203,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Перейдите в настройки бакета одним из способов:
 
@@ -375,7 +375,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Перейдите в настройки бакета одним из способов:
 
@@ -502,7 +502,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. {linkto(../../objects/manage-object#s3-instructions-manage-object-delete)[text=Удалите объекты]} из бакета, который нужно удалить, если этого не было сделано ранее.
 1. Удалите бакет одним из способов:

@@ -9,7 +9,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Нажмите на имя балансировщика.
 1. В секции **Правила балансировки** нажмите кнопку **Добавить правило**.
@@ -278,7 +278,7 @@ openstack loadbalancer <КОМАНДА> --help
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Нажмите на имя балансировщика.
 1. В секции **Правила балансировки** в строке с нужным правилом нажмите на значок карандаша.
@@ -482,7 +482,7 @@ openstack loadbalancer <КОМАНДА> --help
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Нажмите на имя балансировщика.
 1. В секции **Правила балансировки** в строке с нужным правилом нажмите на значок корзины и подтвердите удаление.

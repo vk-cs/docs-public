@@ -7,7 +7,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 
 {/tab}
@@ -59,7 +59,7 @@ DNS-зона — логическое объединение доменных и
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите кнопку **Добавить зону**.
 1. Задайте параметры DNS-зоны:
@@ -140,7 +140,7 @@ content-length: 319
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 
@@ -191,7 +191,7 @@ content-length: 321
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Редактировать**.
 1. Внесите изменения и нажмите кнопку **Сохранить изменения**.
@@ -269,7 +269,7 @@ content-length: 330
 Это групповая операция: при необходимости можно удалить сразу несколько зон, выбрав их с помощью флажков.
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **DNS** → **DNS-зоны**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужной зоны и выберите пункт **Удалить**.
 1. Подтвердите действие.

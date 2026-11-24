@@ -3,7 +3,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where you want to create a cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to create a cluster.
 1. Go to **ML Platform → Spark in k8s**.
 1. Go to **Clusters** tab.
 1. Click the **Add cluster** or **Add** button.

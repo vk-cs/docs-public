@@ -12,8 +12,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Жеке кабинетке](https://cloud.vk.kz/app/) {var(cloud)} өтіңіз.
-1. Жобаны таңдаңыз.
+1. [Жеке кабинетке](https://kz.cloud.vk.kz/app/) {var(cloud)} өтіңіз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Маршрутизаторлар** бөліміне өтіңіз.
 
    Маршрутизаторлар тізімі көрсетіледі. Жетілдірілген маршрутизаторлар үшін **Роутер түрі** бағанында `Продвинутый` деп көрсетіледі.
@@ -32,8 +32,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Жеке кабинетке](https://cloud.vk.kz/app/) {var(cloud)} өтіңіз.
-1. Жобаны таңдаңыз.
+1. [Жеке кабинетке](https://kz.cloud.vk.kz/app/) {var(cloud)} өтіңіз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Маршрутизаторлар** бөліміне өтіңіз.
 1. **Маршрутизатор қосу** батырмасын басыңыз.
 1. **Маршрутизатор түрі** өрісінде `Продвинутый` таңдаңыз. Егер бұл өріс болмаса, жобаңызға SDN Sprut қосылмаған. Жетілдірілген маршрутизаторларды қосу мүмкіндігі бар SDN Sprut қосу үшін [қолдау](/kz/contacts) қызметіне хабарласыңыз.
@@ -60,8 +60,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Жеке кабинетке](https://cloud.vk.kz/app/) {var(cloud)} өтіңіз.
-1. Жобаны таңдаңыз.
+1. [Жеке кабинетке](https://kz.cloud.vk.kz/app/) {var(cloud)} өтіңіз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Маршрутизаторлар** бөліміне өтіңіз.
 1. Маршрутизаторды өңдеу терезесін келесі тәсілдердің бірімен ашыңыз:
 

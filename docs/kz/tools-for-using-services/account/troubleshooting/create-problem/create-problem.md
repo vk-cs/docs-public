@@ -5,7 +5,7 @@
 
 ### Шешу
 
-1. [Өтіңіз](https://cloud.vk.ru/app/) VK Cloud жеке кабинетына.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) VK Cloud жеке кабинетына.
 1. Барлық жобалардың тізімін тексеріңіз.
 1. Егер лимитке жетілген болса, жобаны [өшіріңіз](/kz/tools-for-using-services/account/instructions/project-settings/manage#project-delete).
 

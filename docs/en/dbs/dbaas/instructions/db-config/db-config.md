@@ -7,7 +7,7 @@ To add, change, or delete parameters:
 {tab(Management console)}
 
 1. [Go](https://msk.cloud.vk.com/app/) to the VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Make sure the required database instance is running.
 1. Click the instance name.

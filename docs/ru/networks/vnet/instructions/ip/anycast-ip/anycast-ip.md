@@ -9,7 +9,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, в который нужно добавить маршрутизацию Anycast.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в который нужно добавить маршрутизацию Anycast.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Нажмите кнопку **Добавить IP в проект** или **Добавить IP-адрес**, если в проект еще не добавлен ни один Anycast IP-адрес.
@@ -28,7 +28,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный Anycast IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный Anycast IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Откройте окно выбора IP-адресов одним из способов:
@@ -63,7 +63,7 @@
 Это групповая операция: при необходимости можно отвязать сразу несколько IP-адресов, выбрав их с помощью флажков.
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный Anycast IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный Anycast IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Нажмите на название Anycast IP-адреса и перейдите на вкладку **Привязанные IP-адреса**.
@@ -93,7 +93,7 @@
 Чтобы добавить правило проверки работоспособности:
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный Anycast IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный Anycast IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Добавьте правило одним из способов:
@@ -132,7 +132,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный Anycast IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный Anycast IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Нажмите на название Anycast IP-адреса и перейдите на вкладку **Правило**.
@@ -166,7 +166,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Переименуйте Anycast IP-адрес одним из способов:
@@ -190,7 +190,7 @@
 Это групповая операция: при необходимости можно удалить сразу несколько Anycast IP-адресов, выбрав их с помощью флажков.
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный Anycast IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный Anycast IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → **IP-адреса**.
 1. Перейдите на вкладку **Anycast IP**.
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужного Anycast IP-адреса и выберите пункт **Удалить**.

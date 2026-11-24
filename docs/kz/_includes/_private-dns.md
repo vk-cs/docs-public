@@ -11,7 +11,7 @@
 ## {heading(Желі үшін аймақ атауын өңдеу)[id=dns-private-dns-zone]}
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Жалпы тізімде оның атауын басып, желі карточкасын ашыңыз.
 1. **Желіні баптау** қойындысына өтіңіз.
@@ -33,13 +33,13 @@ DNS атауын баптаудың бірнеше тәсілі бар:
 ВМ арқылы:
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=жаңа виртуалды машинаны құруды]}. **Желі баптаулары** қадамында **DNS атауы** өрісінде атауды көрсетіңіз.
 
 Порт баптаулары арқылы:
 
 1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Жалпы тізімде оның атауын басып, желі карточкасын ашыңыз.
 1. Жалпы тізімде оның атауын басып, ішкі желі карточкасын ашыңыз.

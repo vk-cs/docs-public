@@ -4,7 +4,7 @@
 
 Егер сіз {linkto(/kz/intro/billing/concepts/physical-corporate#billing-physical-corporate-postpay)[text=кейін төлеу]} шартымен жұмыс істесеңіз, жабу құжаттарын — төлем шоттарын және әмбебап беру құжаттарын (ӘБҚ) — {var(cloud)} жеке кабинетінен жүктеп ала аласыз.
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 
 {include(/kz/_includes/_balance_page.md)}
 

@@ -39,7 +39,7 @@ VK Security Gate — бұл VK Cloud жобасындағы бөлек вирт�
 
 VK Security Gate сервистін VK Cloud жобасында орнату үшін:
 
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Интернеттен сервиске қолжетімділік болу үшін желіні баптаңыз:
 
    1. Бұрыннан жасалмаған болса, интернетке қолжетімділігі бар {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=желі жасаңыз]}.

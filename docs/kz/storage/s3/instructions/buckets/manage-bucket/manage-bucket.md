@@ -10,7 +10,7 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 
@@ -20,7 +20,7 @@
 
 {/ifdef}
 
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Object Storage** → **Бакеттер** бөліміне өтіңіз. Жобадағы бакеттер тізімі ашылады.
 1. (Қалауыңыз бойынша) Тізімді бакет аты бойынша сұрыптаңыз, сәйкес бағанның тақырыбындағы жебелерді пайдаланып.
 
@@ -195,7 +195,7 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 
@@ -367,7 +367,7 @@
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 
@@ -494,7 +494,7 @@ Backup сақтау класы бар бакетті өшіруге болмай
 
 {ifdef(public)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 
 {/ifdef}
 

@@ -9,7 +9,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 
    Будет отображен список балансировщиков.
@@ -76,7 +76,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 
    Отобразится список балансировщиков со {linkto(../../concepts/lb-statuses#balancing-lb-statuses-provisioning)[text=статусами развертывания]} и {linkto(../../concepts/lb-statuses#balancing-lb-statuses-operating-common)[text=основными статусами состояния]}.
@@ -117,7 +117,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Нажмите кнопку **Добавить балансировщик** или **Добавить**.
 1. Задайте параметры балансировщика:
@@ -180,7 +180,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Выполните одно из действий для балансировщика, который нужно отредактировать:
 
@@ -244,7 +244,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Выполните одно из действий:
 
@@ -282,7 +282,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Выполните одно из действий:
 
@@ -321,7 +321,7 @@
 Для удаления балансировщика:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный балансировщик.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный балансировщик.
 1. Перейдите в раздел **Виртуальные сети** → **Балансировщики нагрузки**.
 1. Выполните одно из действий для нужного балансировщика:
 

@@ -126,7 +126,7 @@ Find the OpenStack port of the node by its internal IP and attach the Floating I
 {tab(Management console)}
 
 1. [Go](https://msk.cloud.vk.ru/app/) to the {var(cloud)} management console.
-1. Select the project where the desired IP address is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired IP address is located.
 1. Go to **Virtual networks** → **IP addresses**.
 1. Go to the **Floating IP** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the Floating IP address whose **Internal IP** column shows `Not attached`, and select **Attach IP**.

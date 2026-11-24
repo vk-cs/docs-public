@@ -29,7 +29,7 @@ Add-ons do not get updated with cluster updates. If necessary, you can [update](
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project that contains the required cluster.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
 1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Update version**.
 1. In the window that appears, select the required version.

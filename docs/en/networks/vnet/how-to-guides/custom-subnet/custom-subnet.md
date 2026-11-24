@@ -73,7 +73,7 @@ Here:
 Verify that the subnet has been created:
 
 1. [Go to](https://cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to the **Virtual Networks** → **Networks** section.
 1. Make sure that the list contains a subnet with the specified `N_NAME`. In this example, it is `my_subnet`.
 1. Click on the subnet name and view its settings. The subnet must have an address with a `/30` mask and no gateway.

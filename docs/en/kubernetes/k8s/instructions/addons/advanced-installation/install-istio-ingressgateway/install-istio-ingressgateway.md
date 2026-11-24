@@ -15,7 +15,7 @@ Capabilities:
 ## {heading(Installing the addon)[id=k8s-install-istio-ingressgateway-install]}
 
 1. {linkto(../../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Go to]} your {var(cloud)} management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **Kubernetes Clusters** → **Kubernetes Clusters** section.
 1. Click on the name of the desired cluster.
 1. Go to the **Addons** tab.

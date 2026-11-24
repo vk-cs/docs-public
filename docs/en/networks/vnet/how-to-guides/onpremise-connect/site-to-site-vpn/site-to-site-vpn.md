@@ -33,7 +33,7 @@ The network topology is as follows:
 
 1. Make sure the OpenStack CLI {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=is installed]}, and {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=authenticate]} in the project.
 1. [Go to](https://cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. {linkto(../../../../../networks/vnet/instructions/net#vnet-net-add)[text=Create]} a network with the following parameters:
 
    - **Network name**: `priv_net_demo`.

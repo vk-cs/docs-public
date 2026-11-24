@@ -9,7 +9,7 @@
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 
@@ -41,7 +41,7 @@ Floating IP-адрес назначается из общего пула слу�
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 1. Нажмите кнопку **Добавить IP в проект**.
@@ -74,7 +74,7 @@ Floating IP-адрес назначается из общего пула слу�
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужного Floating IP-адреса и выберите пункт **Редактировать описание**.
@@ -104,7 +104,7 @@ Floating IP-адрес назначается из общего пула слу�
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для Floating IP-адреса, у которого в столбце **Внутренний IP** указано `Не привязан`, и выберите пункт **Привязать IP**.
@@ -149,7 +149,7 @@ Floating IP-адрес назначается из общего пула слу�
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для Floating IP-адреса, который привязан к внутреннему IP-адресу, и выберите пункт **Отвязать IP**.
@@ -178,7 +178,7 @@ Floating IP-адрес назначается из общего пула слу�
 {tab(Личный кабинет)}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный IP-адрес.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный IP-адрес.
 1. Перейдите в раздел **Виртуальные сети** → {ifndef(public)}**Плавающие IP**.{/ifndef}{ifdef(public)}**IP-адреса**.
 1. Перейдите на вкладку **Floating IP**.{/ifdef}
 1. Нажмите ![ ](../../../../../assets/more-icon.svg "inline") для нужного Floating IP-адреса и выберите пункт **Убрать IP из проекта**. Чтобы отвязать сразу несколько IP-адресов, выберите их с помощью флажков и нажмите кнопку **Убрать IP из проекта**.

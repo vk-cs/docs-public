@@ -25,7 +25,7 @@ Terraform-ның дұрыс жұмыс істеуі үшін қосымша фа
 
 Файл барлық Terraform жұмыс каталогтарында орналасуы тиіс.
 
-Файл жеке кабинетте, **Terraform** қойындысындағы {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=жүктеп алу]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=жүктеп алу]}{/ifndef} мүмкін болатын {ifdef(public)}[Жоба баптаулары](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде қолжетімді. Жүктеп алынған файлдың атауы `vkcs_provider.tf` және ол бір провайдердің (`vkcs`) деректерін қамтиды. Жүктеп алғаннан кейін файлды өңдеңіз — `password` параметріне сіздің тіркелгіңіздің құпиясөзін көрсетіңіз.
+Файл жеке кабинетте, **Terraform** қойындысындағы {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=жүктеп алу]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=жүктеп алу]}{/ifndef} мүмкін болатын {ifdef(public)}[Жоба баптаулары](https://kz.cloud.vk.kz/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде қолжетімді. Жүктеп алынған файлдың атауы `vkcs_provider.tf` және ол бір провайдердің (`vkcs`) деректерін қамтиды. Жүктеп алғаннан кейін файлды өңдеңіз — `password` параметріне сіздің тіркелгіңіздің құпиясөзін көрсетіңіз.
 
 Файл мазмұнының мысалы:
 
@@ -64,7 +64,7 @@ provider "vkcs" {
 - `provider "vkcs" {}` — жобадағы аутентификация баптаулары:
 
   - `password`: сіздің тіркелгіңіздің құпиясөзін көрсетіңіз;
-  - `username`, `project_id`, `region`: жеке кабинет арқылы жүктеп алынған файлда көрсетілген мәндер ағымдағы жобамен жұмыс істеу үшін жарамды. Бұл мәндер **Terraform** қойындысындағы {ifdef(public)}[Жоба баптаулары](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде де көрсетілген.
+  - `username`, `project_id`, `region`: жеке кабинет арқылы жүктеп алынған файлда көрсетілген мәндер ағымдағы жобамен жұмыс істеу үшін жарамды. Бұл мәндер **Terraform** қойындысындағы {ifdef(public)}[Жоба баптаулары](https://kz.cloud.vk.kz/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде де көрсетілген.
 
 {ifdef(public)}
 Кейбір параметрлердің мәндері {linkto(../../../account/concepts/regions#tools-account-concepts-regions)[text=аймаққа]} байланысты:
@@ -115,7 +115,7 @@ depends_on = [
 
 Бұл файл Terraform-ды іске қосу үшін қажет, ол {var(cloud)} ұсынатын Terraform айнасының мекенжайын қамтиды. Файлдың атауы Windows үшін `terraform.rc`, басқа ОС үшін `.terraformrc` болуы тиіс. Файлдың мазмұны барлық жобалар мен аймақтар үшін бірдей.
 
-Файл жеке кабинеттің **Terraform** қойындысындағы {ifdef(public)}[Жоба баптаулары](https://msk.cloud.vk.ru/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=жүктеп алу]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=жүктеп алу]}{/ifndef} мүмкін. Жүктеп алғаннан кейін файлға қандай да бір өзгерістер енгізудің қажеті жоқ.
+Файл жеке кабинеттің **Terraform** қойындысындағы {ifdef(public)}[Жоба баптаулары](https://kz.cloud.vk.kz/app/project/terraform){/ifdef}{ifndef(public)}**Жоба баптаулары**{/ifndef} бетінде {ifdef(public)}{linkto(../../quick-start#terraform-quick-start-prepare)[text=жүктеп алу]}{/ifdef}{ifndef(public)}{linkto(../../install#terraform-install-prepare)[text=жүктеп алу]}{/ifndef} мүмкін. Жүктеп алғаннан кейін файлға қандай да бір өзгерістер енгізудің қажеті жоқ.
 
 Файл орналасуы тиіс:
 

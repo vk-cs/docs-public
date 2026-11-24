@@ -17,7 +17,7 @@ IP-адреса серверов пересылки запросов прива�
 ## {heading(Редактирование имени зоны для сети)[id=dns-private-dns-zone]}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Откройте карточку сети, нажав на ее имя в общем списке.
 1. Перейдите на вкладку **Настройка сети**.
@@ -39,13 +39,13 @@ IP-адреса серверов пересылки запросов прива�
 Через ВМ:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Начните {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создавать новую виртуальную машину]}. На шаге **Настройки сети** укажите имя в поле **DNS-имя**.
 
 Через настройки порта:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Откройте карточку сети, нажав на ее имя в общем списке.
 1. Откройте карточку подсети, нажав на ее имя в общем списке.

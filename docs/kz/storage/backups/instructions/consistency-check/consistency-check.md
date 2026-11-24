@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-1. {ifdef(public)}[{var(cloud)} жеке кабинетіне өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[{var(cloud)} жеке кабинетіне өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервтік көшірмелеу** бөліміне өтіңіз.
 1. Қажетті резервтік көшірмелер тізімін ашыңыз.
 

@@ -10,7 +10,7 @@
 Чтобы посмотреть топологию сети отдельного проекта:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-cert,private-pdf,private-pg-pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifdef} в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Топология сети**.
 
 {ifdef(private-cert,private-pdf,private-pg-pdf)}

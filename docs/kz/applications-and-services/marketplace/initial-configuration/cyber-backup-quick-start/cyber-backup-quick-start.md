@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-Виртуалды машиналарыңыздың резервтік көшірмесін жасау және қалпына келтіруді [Кибер Бэкап Облачный](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/630008e7-a649-4111-a21f-6d8461cd5f7a/latest/info) сервисі арқылы теңшеуге болады.
+Виртуалды машиналарыңыздың резервтік көшірмесін жасау және қалпына келтіруді [Кибер Бэкап Облачный](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/630008e7-a649-4111-a21f-6d8461cd5f7a/latest/info) сервисі арқылы теңшеуге болады.
 
 {cut(Сервис жұмысының принципі)}
 

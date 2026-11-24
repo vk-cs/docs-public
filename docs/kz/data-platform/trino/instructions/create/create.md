@@ -15,7 +15,7 @@
 {tab(Жеке кабинет)}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетына [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетына [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Сервис данысымын қажет жасау керек жобаны таңдаңыз.
 {/ifdef}
 

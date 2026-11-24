@@ -21,7 +21,7 @@
 Для запуска кластера:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Выберите с помощью флажка нужный кластер.
 1. Нажмите кнопку **Запустить**.
@@ -46,7 +46,7 @@
 Для остановки кластера:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Выберите с помощью флажка нужный кластер.
 1. Нажмите кнопку **Остановить**.
@@ -70,7 +70,7 @@ Terraform позволяет получить только часть инфор
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Нажмите на имя нужного кластера. Откроется страница с информацией.
 
@@ -120,7 +120,7 @@ Terraform позволяет получить только часть инфор
 Для удаления кластера:
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный кластер.
 1. Перейдите в раздел **Кластеры Kubernetes** → **Кластеры Kubernetes**.
 1. Выполните одно из действий для нужного кластера:
    - Выберите с помощью флажка кластер, затем нажмите кнопку **Удалить**.

@@ -204,7 +204,7 @@
 ## {heading({counter(db)}. Get the external IP address of the DB instance)[id=instance_ip]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
-1. Select the project where the DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Click the DB instance name. The information page will open.
 1. Go to the **Information** tab.
@@ -214,7 +214,7 @@
 ## {heading({counter(db)}. Install the TimescaleDB extension)[id=install_timescaledb]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
-1. Select the project where the DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Click the DB instance name. The information page will open.
 1. Go to the **Extensions** tab.
@@ -611,7 +611,7 @@ Output of query results similar to those shown indicates that PostgreSQL and the
 Monitoring is available for PostgreSQL. Explore the collected monitoring data:
 
 1. [Go to](https://msk.cloud.vk.ru/app/) your VK Cloud management console.
-1. Select the project where the DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the DB instance is located.
 1. Go to the **Databases → Database instances** section.
 1. Click the DB instance name. The information page will open.
 1. Go to the **Monitoring** tab.

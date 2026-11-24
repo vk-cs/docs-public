@@ -32,7 +32,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите ![more-icon](../../../../assets/more-icon.svg "inline") для сети и выберите пункт ![sharing-icon](../../../../assets/sharing-icon.svg "inline") **Поделиться сетью**.
 1. В открывшемся окне выберите тип проекта, с которым нужно поделиться сетью:
@@ -60,7 +60,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите на имя нужной общей сети.
 1. Перейдите на вкладку **Информация**.
@@ -86,7 +86,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Перейдите в раздел **Виртуальные сети** → **Сети**.
 1. Нажмите наименование общей сети.
 1. Перейдите на вкладку **Информация**.

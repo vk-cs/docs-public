@@ -34,7 +34,7 @@ Cloud Audit сервисінде деректер қабатының (data plane
 | `auth_url`
 | ![](../../../../assets/check.svg "inline")
 | Keystone сервисінің эндпоинті
-| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Auth URL параметрі
+| [{var(cloud)} жеке кабинетіндегі](https://kz.cloud.vk.kz/app/any/project/keys) Auth URL параметрі
 
 | `auth_timeout`
 | ![](../../../../assets/no.svg "inline")
@@ -46,7 +46,7 @@ Cloud Audit сервисінде деректер қабатының (data plane
 | `project_id`
 | ![](../../../../assets/check.svg "inline")
 | Логтар жазылатын {var(cloud)} жобасының идентификаторы
-| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Project ID параметрі.
+| [{var(cloud)} жеке кабинетіндегі](https://kz.cloud.vk.kz/app/any/project/keys) Project ID параметрі.
 
 Мысал: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`
 
@@ -60,7 +60,7 @@ Cloud Audit сервисінде деректер қабатының (data plane
 | `user_name`
 | ![](../../../../assets/no.svg "inline")
 | Логтар жазылатын пайдаланушының логині
-| [{var(cloud)} жеке кабинетіндегі](https://msk.cloud.vk.ru/app/any/project/keys) Username параметрі
+| [{var(cloud)} жеке кабинетіндегі](https://kz.cloud.vk.kz/app/any/project/keys) Username параметрі
 
 | `password`
 | ![](../../../../assets/no.svg "inline")

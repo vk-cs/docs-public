@@ -11,7 +11,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 
    Қауіпсіздік топтарының тізімі көрсетіледі.
@@ -59,7 +59,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. **Қосу** батырмасын басыңыз.
 1. Қауіпсіздік тобының атауын енгізіңіз.
@@ -100,7 +100,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Жобаны таңдаңыз.
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
@@ -138,7 +138,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
 1. **Кіріс трафик** және **Шығыс трафик** блоктарында **+ Ереже қосу** түймесін басыңыз.
@@ -220,7 +220,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
 1. Қажетті ереже тағайындалған ВМ бар жолдағы қоқыс жәшігі белгішесін басыңыз.
@@ -257,7 +257,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
 1. **Ережелер тобы бар виртуалды машиналар** бөлімінде **Виртуалды машинаны қосу** батырмасын басыңыз.
@@ -291,7 +291,7 @@
 {tab(Жеке кабинет)}
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Қауіпсіздік тобының атауын басыңыз.
 1. **Ережелер тобы бар виртуалды машиналар** бөлімінде инстанс жолының үстіне меңзерді апарыңыз.
@@ -331,7 +331,7 @@
 Бұл топтық операция: қажет болса, бірнеше қауіпсіздік тобын бірден жалаушалар арқылы таңдап, жоюға болады.
 
 1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private_pg,private_pdf,private_pg_pdf)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Firewall баптаулары** бөліміне өтіңіз.
 1. Жойылуы керек қауіпсіздік тобы үшін ![ ](../../../../assets/more-icon.svg "inline") батырмасын басып, **Жою** тармағын таңдаңыз.
 

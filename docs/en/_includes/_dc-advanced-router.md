@@ -54,7 +54,7 @@ Configuration limitations:
 1. Find out the UUID of the connected network:
 
    1. [Go to](https://cloud.vk.ru/app/) the {var(cloud)} management console.
-   1. Select the project.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
    1. Go to the **Virtual networks** → **Networks** section.
    1. In the list of networks, find the network named `external-vni-10XXX`. Here `XXX` is the individual sequence number of your connection.
    1. Save the UUID of this network. In this example, the network interconnect UUID is `b2b8468e-aaaa-bbbb-cccc-327c8c2670d4`.

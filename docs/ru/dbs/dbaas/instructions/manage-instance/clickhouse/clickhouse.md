@@ -13,7 +13,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Выполните нужную операцию:
 
@@ -65,7 +65,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Выполните нужную операцию:
 
@@ -91,7 +91,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Выполните нужную операцию:
 
@@ -136,7 +136,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Чтобы выполнить вертикальное масштабирование:
 
@@ -179,7 +179,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Увеличьте размер диска, на котором хранятся данные:
 
@@ -226,7 +226,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Настройте автомасштабирование размера диска, на котором хранятся данные:
 
@@ -275,7 +275,7 @@
 {/ifdef}
 
 1. {ifdef(public)}[Перейдите](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]}{/ifndef} в личный кабинет {var(cloud)}.
-1. Выберите проект, где находится нужный инстанс БД.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где находится нужный инстанс БД.
 1. Перейдите в раздел **Базы данных** → **Инстансы баз данных**.
 1. Чтобы удалить инстанс БД:
 

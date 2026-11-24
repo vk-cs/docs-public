@@ -487,7 +487,7 @@
 {includetag(instance_vertical_scaling)}
 
 {ifdef(public)}
-1. {var(cloud)} [жеке кабинетіне өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.
@@ -500,7 +500,7 @@
 {includetag(instance_tls_certificate)}
 
 {ifdef(public)}
-1. {var(cloud)} [жеке кабинетіне өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} [жеке кабинетіне өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.

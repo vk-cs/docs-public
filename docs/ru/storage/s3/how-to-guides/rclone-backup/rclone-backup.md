@@ -12,7 +12,7 @@
 
 1. Создайте аккаунт для сервиса {var(s3)}, если это еще не сделано:
    1. [Перейдите](https://msk.cloud.vk.ru/app) в личный кабинет {var(cloud)}.
-   1. Выберите проект.
+   1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
    1. Перейдите в раздел **Object Storage** → **Аккаунты**.
    1. Нажмите кнопку **Добавить аккаунт** или **Добавить**.
    1. Задайте имя аккаунта.

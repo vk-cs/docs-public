@@ -203,7 +203,7 @@ Binding a domain to a bucket will allow you to access the bucket objects through
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Go to the bucket settings in one of the following ways:
 
@@ -330,7 +330,7 @@ This is a group operation: if necessary, you can delete several buckets at once 
 
 {/ifdef}
 
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. {linkto(../../objects/manage-object#s3-instructions-manage-object-delete)[text=Delete the objects]} from the bucket you want to delete if this has not been done previously.
 1. Delete the bucket in one of the following ways:

@@ -18,7 +18,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API endpoints** қойындысына өтіңіз.
 
@@ -215,7 +215,7 @@ Project ID жеке кабинеттегі {linkto(../../../account/instructions
 
 Жоба үшін Project ID мәнін алу үшін:
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Қажетті жобаны жеке кабинет бетінің жоғарғы жағындағы тізімнен таңдап ашыңыз.
 1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.
 1. **API бойынша қолжетімділік** қойындысын немесе **Terraform** қойындысын ашыңыз.

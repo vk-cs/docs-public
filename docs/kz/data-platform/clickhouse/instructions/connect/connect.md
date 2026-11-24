@@ -17,7 +17,7 @@ Cloud ClickHouse екі протокол бойынша қосылымдарды
 ## {heading(Қосылуға дайындық)[id=clickhouse_connect_instructions-prepare]}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз. Қажетті Cloud ClickHouse данасы `Активно` статусында екеніне көз жеткізіңіз.

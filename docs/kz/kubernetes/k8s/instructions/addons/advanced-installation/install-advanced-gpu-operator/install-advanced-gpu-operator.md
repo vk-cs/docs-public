@@ -30,7 +30,7 @@ NVIDIA GPU Operator аддоны Kubernetes кластеріне NVIDIA драй
 
    {tab(Жеке кабинет)}
 
-   1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+   1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
    {ifndef(public)}
    1. {var(cloud)} жеке кабинетіне {linkto(../../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=өтіңіз]}.
@@ -67,7 +67,7 @@ NVIDIA GPU Operator аддоны Kubernetes кластеріне NVIDIA драй
 
    {tab(Жеке кабинет)}
 
-   1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+   1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
    {/ifdef}
    {ifndef(public)}
    1. {var(cloud)} жеке кабинетіне {linkto(../../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=өтіңіз]}.

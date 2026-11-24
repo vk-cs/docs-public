@@ -9,7 +9,7 @@ Once you move a PV to your project, you cannot move it back to the [service](/en
 {/note}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the required cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
 1. Go to **Kubernetes clusters** → **PV disks**.
 1. Move a PV to your project using one of the following options: 
 
@@ -23,7 +23,7 @@ Once you move the PV, it is no longer available in the **Kubernetes clusters** �
 ## Deleting PVs
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the required cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
 1. Go to **Kubernetes clusters** → **PV disks**.
 1. Delete a PV using one of the following options:
 

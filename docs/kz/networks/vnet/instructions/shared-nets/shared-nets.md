@@ -33,8 +33,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Желі үшін ![more-icon](../../../../assets/more-icon.svg "inline") басып, ![sharing-icon](../../../../assets/sharing-icon.svg "inline") **Желімен бөлісу** тармағын таңдаңыз.
 1. Ашылған терезеде желімен бөлісу қажет жоба түрін таңдаңыз:
@@ -60,8 +60,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Қажетті ортақ желінің атауын басыңыз.
 1. **Ақпарат** қойындысына өтіңіз.
@@ -86,8 +86,8 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
-1. Жобаны таңдаңыз.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **Виртуалды желілер** → **Желілер** бөліміне өтіңіз.
 1. Ортақ желінің атауын басыңыз.
 1. **Ақпарат** қойындысына өтіңіз.

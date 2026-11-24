@@ -30,7 +30,7 @@ To manage the default temporary lock:
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Enable]} versioning, if this has not been done before.
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Go to the bucket settings in one of the following ways:
 
@@ -241,7 +241,7 @@ To manage a permanent lock:
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Enable]} versioning, if this has not been done before.
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click the name of the bucket.
 1. Click the name of the object.
@@ -488,7 +488,7 @@ To manage a retention period:
 {/ifdef}
 
 1. {linkto(../../buckets/manage-bucket#s3-instructions-manage-bucket-versioning)[text=Enable]} versioning, if this has not been done before.
-1. Select the project that contains the desired bucket.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the desired bucket.
 1. Go to the **Object Storage** → **Buckets** section.
 1. Click the name of the bucket.
 1. Click the name of the object.

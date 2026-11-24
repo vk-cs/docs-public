@@ -25,7 +25,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project that contains the required cluster.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
@@ -129,7 +129,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project that contains the required cluster.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Locate the required cluster and node group.
@@ -225,7 +225,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    {tab(Management console)}
 
    1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-   1. Select the project that contains the required cluster.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
@@ -301,7 +301,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    {tab(Management console)}
 
    1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en).
-   1. Select the project that contains the required cluster.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the required cluster.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. [Make sure](/en/kubernetes/k8s/instructions/manage-cluster) that cluster needed is running.
    1. Find the appropriate node group in this cluster.

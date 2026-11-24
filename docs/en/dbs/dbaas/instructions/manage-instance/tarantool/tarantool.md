@@ -13,7 +13,7 @@ A DB instance in the **Cluster** configuration cannot be started, restarted or s
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -61,7 +61,7 @@ Different information is available for an active and a stopped DB instance.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -84,7 +84,7 @@ You can assign an external IP address or unbind it at the level of an individual
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Perform the desired operation:
 
@@ -120,7 +120,7 @@ In the **Single** configuration, you can change the virtual machine type used by
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Click ![](../../../../../assets/more-icon.svg "inline") for the DB instance host and select **Vertical scaling**.
 1. Select the desired category and virtual machine type.
@@ -137,7 +137,7 @@ In the **Single** configuration, you can change the virtual machine type used by
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. Configure auto-scaling of the disk where data is stored:
 
@@ -182,7 +182,7 @@ In the **Single** configuration, you can change the virtual machine type used by
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
-1. Select the project where the desired DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired DB instance is located.
 1. Go to **Databases** → **Database instances**.
 1. To delete a DB instance:
 

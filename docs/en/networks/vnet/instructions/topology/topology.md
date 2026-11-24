@@ -8,7 +8,7 @@ A network topology is a diagram of the network connectivity of virtual machines.
 To view the network topology of an individual project:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to **Virtual networks** → **Network topology**.
 
 ![](./assets/view-topology.png)

@@ -50,7 +50,7 @@ For more details on resources, refer to the [Resource limiting](/en/kubernetes/m
    {tabs}
    {tab(Management console)}
    1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
-   1. Select the project where the required cluster is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required cluster is located.
    1. Go to **Kubernetes Clusters → Kubernetes Clusters**.
    1. Go to the required cluster and locate the affected node group.
    1. Click ![ ](/ru/assets/more-icon.svg "inline") for the node group, select **Scaling settings**, and activate the **Enable autoscaling** option.

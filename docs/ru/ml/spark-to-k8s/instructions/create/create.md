@@ -5,7 +5,7 @@
 {tab(Личный кабинет)}
 
 1. [Перейдите](https://msk.cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-1. Выберите проект, где нужно создать кластер.
+1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать кластер.
 1. Перейдите в раздел **ML Platform → Spark в k8s**.
 1. Перейдите на вкладку **Кластеры**.
 1. Нажмите кнопку **Добавить кластер** или **Добавить**.

@@ -69,7 +69,7 @@
 1. Add an object:
 
    1. [Go](https://msk.cloud.vk.ru/app) to the VK Cloud management console.
-   1. Select the project that contains the created bucket.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the created bucket.
    1. Go to the **Object Storage** → **Buckets** section.
    1. Click the name of the created bucket.
    1. Click **Add file**.
@@ -120,7 +120,7 @@
 
 {includetag(not_bucket_onboarding)}
    1. [Go](https://msk.cloud.vk.ru/app) to the VK Cloud management console.
-   1. Select the project that contains the created bucket.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the created bucket.
    1. Go to the **Object Storage** → **Buckets** section.
 {/includetag}
    1. Click the name of the created bucket.
@@ -132,7 +132,7 @@
 
 {includetag(not_bucket_onboarding)}
    1. [Go](https://msk.cloud.vk.ru/app) to the VK Cloud management console.
-   1. Select the project that contains the created bucket.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the created bucket.
    1. Go to the **Object Storage** → **Buckets** section.
    1. Click the name of the created bucket.
 {/includetag}

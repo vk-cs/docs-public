@@ -3,7 +3,7 @@
 {/includetag}
 
 {includetag(prices)}
-Бағалар [жобаның баптауларында](https://msk.cloud.vk.ru/app/project/prices) [бағалар тізіміне](https://cloud.vk.ru/pricelist) немесе шарттың өзекті шарттарына сәйкес ұсынылған. {var(cloud)} сервистерін төлеумен байланысты құралдардың қалай жұмыс істейтіні туралы {linkto(/kz/intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз.
+Бағалар [жобаның баптауларында](https://kz.cloud.vk.kz/app/project/prices) [бағалар тізіміне](https://cloud.vk.ru/pricelist) немесе шарттың өзекті шарттарына сәйкес ұсынылған. {var(cloud)} сервистерін төлеумен байланысты құралдардың қалай жұмыс істейтіні туралы {linkto(/kz/intro/billing#billing)[text=Биллинг]} бөлімінен оқыңыз.
 
 {/includetag}
 

@@ -54,7 +54,7 @@ Cloud Direct Connect позволяет организовать разные {l
 1. Узнайте UUID подключенной сети:
 
    1. [Перейдите](https://cloud.vk.ru/app/) в личный кабинет {var(cloud)}.
-   1. Выберите проект.
+   1. {linkto(/ru/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
    1. Перейдите в раздел **Виртуальные сети** → **Сети**.
    1. В списке сетей найдите сеть с именем `external-vni-10XXX`. Здесь `XXX` — индивидуальный порядковый номер вашего подключения.
    1. Сохраните UUID этой сети. В этом примере UUID сетевого стыка `b2b8468e-aaaa-bbbb-cccc-327c8c2670d4`.

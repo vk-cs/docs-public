@@ -99,7 +99,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 1. Find out the IP address assigned to the created ClickHouse instance:
 
    1. [Go](https://msk.cloud.vk.com/app/en/) to your VK Cloud account.
-   1. Select the project where the database instance is located.
+   1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the database instance is located.
    1. Go to **Databases** → **Database instances**.
    1. Click the name of the instance and then click the **Information** tab.
    1. Make a note of the external IP address of the instance.

@@ -9,7 +9,7 @@
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **DNS** → **DNS-аймақтар** бөліміне өтіңіз.
 
 {/tab}
@@ -61,7 +61,7 @@ DNS-аймақ — бұл ресурстарыңыздың домендік ат
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **DNS** → **DNS-аймақтар** бөліміне өтіңіз.
 1. **Аймақ қосу** батырмасын басыңыз.
 1. DNS-аймақ параметрлерін орнатыңыз:
@@ -142,7 +142,7 @@ content-length: 319
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **DNS** → **DNS-аймақтар** бөліміне өтіңіз.
 1. Қажетті аймақ үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Редактировать** тармағын таңдаңыз.
 
@@ -193,7 +193,7 @@ content-length: 321
 {tab(Жеке кабинет)}
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **DNS** → **DNS-аймақтар** бөліміне өтіңіз.
 1. Қажетті аймақ үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Редактировать** тармағын таңдаңыз.
 1. Өзгерістер енгізіп, **Өзгерістерді сақтау** батырмасын басыңыз.
@@ -271,7 +271,7 @@ NS-жазбаларды құрғаннан кейін делегирленген
 Бұл топтық операция: қажет болса, жалаушалар арқылы бірден бірнеше аймақты жоюға болады.
 
 1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
-1. Жобаны таңдаңыз.
+1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. **DNS** → **DNS-аймақтар** бөліміне өтіңіз.
 1. Қажетті аймақ үшін ![ ](../../../../../assets/more-icon.svg "inline") батырмасын басып, **Удалить** тармағын таңдаңыз.
 1. Әрекетті растаңыз.

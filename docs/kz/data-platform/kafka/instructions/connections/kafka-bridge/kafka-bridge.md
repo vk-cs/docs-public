@@ -25,7 +25,7 @@ Kafka Bridge — Cloud Kafka компоненті. Ол HTTP арқылы топ
 ## {heading(Қосылу)[id=kafka_connect-bridge-connect]}
 
 {ifdef(public)}
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 {/ifdef}
 
 1. **Data Platform** → **Сервис даналары** бөліміне өтіңіз.

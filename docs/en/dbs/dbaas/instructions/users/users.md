@@ -13,7 +13,7 @@ On Redis 6 instances, only user [creation](#add_user) and [deletion](#delete_use
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the required DB instance.
 1. On the instance page, go to the **Users** tab.
@@ -33,7 +33,7 @@ When a user is added, the databases available to him are assigned. In these data
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the required DB instance.
 1. On the instance page, go to the **Users** tab.
@@ -83,7 +83,7 @@ You can change the list of instance databases available to a user.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the required DB instance.
 1. On the instance page, go to the **Users** tab.
@@ -104,7 +104,7 @@ Once a new database is assigned, the user has full permissions on it.
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required instance.
 
@@ -160,7 +160,7 @@ Once a new database is assigned, the user has full permissions on it.
 This is a group operation: if necessary, you can delete several users at once by selecting them with checkboxes.
 
 1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the required DB instance.
 1. On the instance page, go to the **Users** tab.

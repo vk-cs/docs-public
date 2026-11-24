@@ -7,7 +7,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project where you want to add anycast routing.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where you want to add anycast routing.
 1. Go to **Cloud Networks** → **IP addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click **Add IP to Project** or **Add IP Address** if no anycast IP addresses have been added to the project yet.
@@ -26,7 +26,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired anycast IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to **Anycast IP** tab.
 1. Open the IP address selection window in one of the following ways:
@@ -56,7 +56,7 @@ Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is av
 This is a group operation: multiple IP addresses can be unbound at once by selecting them with checkboxes.
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired anycast IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click the name of the anycast IP address and go to the **Linked IP Addresses** tab.
@@ -88,7 +88,7 @@ Without health checks enabled, traffic may be routed to an inactive node, leadin
 To add a health check rule:
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired anycast IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click the name of the anycast IP address and go to the **Rule** tab, then click **Add Rule**.
@@ -125,7 +125,7 @@ For the virtual machines specified in the check, [allow](../../secgroups) incomi
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired anycast IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click the name of the anycast IP address and go to the **Rule** tab.
@@ -161,7 +161,7 @@ You cannot modify the rule for anycast IP addresses that are bound to load balan
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Edit the address in one of the following ways:
@@ -183,7 +183,7 @@ You cannot modify the rule for anycast IP addresses that are bound to load balan
 This is a group operation: multiple anycast IP addresses can be deleted at once by selecting them with checkboxes.
 
 1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
-1. Select the project containing the desired anycast IP address.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) containing the desired anycast IP address.
 1. Go to **Cloud Networks** → **IP Addresses**.
 1. Go to the **Anycast IP** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the desired IP address and select **Delete**.

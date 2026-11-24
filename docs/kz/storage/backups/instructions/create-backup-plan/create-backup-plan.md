@@ -25,7 +25,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** түймесін басыңыз.
 1. Резервтік көшірмелеудің **Жоспар атауын** енгізіңіз.
@@ -62,7 +62,7 @@
 
 {tab(Жеке кабинет)}
 {/ifndef}
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public,private-cert)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
    {ifndef(private-cert)}
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** түймесін басыңыз.
@@ -86,7 +86,7 @@
 
 {tab(Жеке кабинет)}
 
-1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup** бөліміне өтіңіз.
 1. **Кесте жасау** түймесін басыңыз.
 1. Резервтік көшірмелеудің **Жоспар атауын** енгізіңіз.

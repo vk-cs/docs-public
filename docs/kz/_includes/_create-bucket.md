@@ -11,7 +11,7 @@
 
    1. [Өтіңіз](https://kz.cloud.vk.kz/app) VK Cloud жеке кабинетіне.
 {includetag(not_bucket_onboarding)}
-   1. Жобаны таңдаңыз.
+   1. [Жобаны таңдаңыз](/kz/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 {/includetag}
    1. **Object Storage → Аккаунттар** бөліміне өтіңіз.
    1. **Аккаунт қосу** немесе **Қосу** батырмасын басыңыз.

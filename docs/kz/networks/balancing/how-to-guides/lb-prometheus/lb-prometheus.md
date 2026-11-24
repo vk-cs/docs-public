@@ -13,7 +13,7 @@ Prometheus көмегімен мониторинг 2026 жылдың 20 маус
 ## {heading(Дайындық қадамдар)[id=balancing-lb-prometheus-prep]}
 
 1. `octavia` және `neutron` пакеттері бар OpenStack клиентін {linkto(../../../../tools-for-using-services/cli/openstack-cli#tools-cli-openstack)[text=орнатыңыз]} және жобада аутентификациядан өтіңіз.
-1. Қосымшалар дүкенінен [Grafana](https://msk.cloud.vk.ru/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info) сервисін {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=орналастырыңыз]}. Егер сіз жеке желідегі балансировщик үшін мониторинг баптасаңыз, сервис орналастырылатын ВМ осы балансировщикпен бір подсетьте болуы тиіс. Қосымшалар дүкенінен алынған сервистерде VK Cloud-та жұмыс істеуге арналған базалық баптаулар бұрыннан бар. Қолжетімді баптаулар туралы толығырақ — [Grafana ресми құжаттамасында](https://archive.grafana.com/docs/grafana/v10.0/setup-grafana/configure-grafana/).
+1. Қосымшалар дүкенінен [Grafana](https://kz.cloud.vk.kz/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info) сервисін {linkto(../../../../applications-and-services/marketplace/initial-configuration/grafana-start#marketplace-grafana-start)[text=орналастырыңыз]}. Егер сіз жеке желідегі балансировщик үшін мониторинг баптасаңыз, сервис орналастырылатын ВМ осы балансировщикпен бір подсетьте болуы тиіс. Қосымшалар дүкенінен алынған сервистерде VK Cloud-та жұмыс істеуге арналған базалық баптаулар бұрыннан бар. Қолжетімді баптаулар туралы толығырақ — [Grafana ресми құжаттамасында](https://archive.grafana.com/docs/grafana/v10.0/setup-grafana/configure-grafana/).
 1. Grafana сервисі орнатылған ВМ-ге {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=қосылыңыз]} және оған [Prometheus](https://prometheus.io/) орнатыңыз:
 
    ```console
@@ -25,7 +25,7 @@ Prometheus көмегімен мониторинг 2026 жылдың 20 маус
 
 ## {heading(1. Балансировщик туралы мәліметтерді алыңыз)[id=balancing-lb-prometheus-info]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. Жобаны таңдаңыз.
 1. **Виртуальные сети** → **Балансировщики нагрузки** бөліміне өтіңіз.
 

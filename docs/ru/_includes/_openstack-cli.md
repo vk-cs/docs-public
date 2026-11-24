@@ -229,7 +229,7 @@ $ pip install python-cinderclient
    {/note}
    {/ifdef}
 
-1. Выберите проект.
+1. {linkto(../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}.
 1. Нажмите на имя пользователя в шапке страницы и выберите пункт **Настройки проекта**.
 1. Перейдите на вкладку **Доступ по API**.
 1. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<НАЗВАНИЕ_ПРОЕКТА>-openrc.sh`.

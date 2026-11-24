@@ -9,7 +9,7 @@ After completing all the quick start steps, you will:
 ## Step 1: Create networks and subnets
 
 1. [Go to](https://msk.cloud.vk.com/app) your VK Cloud management console.
-1. Select the project.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select).
 1. Go to **Virtual networks** → **Networks**.
 1. Create a network with internet access:
 

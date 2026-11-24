@@ -14,7 +14,7 @@ PITR кестесін жасағанда СУБД журналдары көші�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервное копирование** бөліміне өтіңіз.
 1. **Point-in-time recovery** қойындысына өтіңіз.
 1. **Добавить** түймесін басыңыз.
@@ -38,7 +38,7 @@ PITR кестесін жасағанда СУБД журналдары көші�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервное копирование** бөліміне өтіңіз.
 1. **Point-in-time recovery** қойындысына өтіңіз.
 1. Қажетті кесте үшін ![ ](../../../../assets/more-icon.svg "inline") түймесін басып, **Кестені өңдеу** тармағын таңдаңыз.
@@ -54,7 +54,7 @@ PITR кестесін жасағанда СУБД журналдары көші�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервное копирование** бөліміне өтіңіз.
 1. **Point-in-time recovery** қойындысына өтіңіз.
 1. Қажетті кестенің атауын басыңыз.
@@ -71,7 +71,7 @@ PITR кестесін жасағанда СУБД журналдары көші�
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Cloud Backup → Резервное копирование** бөліміне өтіңіз.
 1. **Point-in-time recovery** қойындысына өтіңіз.
 1. Қажетті кестенің атауын басыңыз.

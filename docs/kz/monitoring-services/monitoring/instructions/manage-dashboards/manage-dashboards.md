@@ -6,7 +6,7 @@
 
 Ресурстардың метрикаларын параметрлер конструкторын немесе PromQL тілінде тікелей сұрауларды қолданып график жасау арқылы визуализациялауға болады.
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетына.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетына.
 1. **Мониторинг** → **Дашбордтар** бөліміне өтіңіз.
 1. **Менің графиктерім** қойындысына өтіңіз.
 1. **График жасау** түймесін басыңыз.

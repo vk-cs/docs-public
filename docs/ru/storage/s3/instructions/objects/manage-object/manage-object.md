@@ -18,7 +18,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета. Откроется список объектов в бакете.
 1. (Опционально) Отсортируйте список по имени объекта, используя стрелки в заголовке соответствующего столбца.
@@ -190,7 +190,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Включите опцию **Показать версии объектов**.
@@ -290,7 +290,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Нажмите на имя объекта. Откроется страница его свойств:
@@ -385,7 +385,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Выполните одно из действий:
@@ -594,7 +594,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Выполните одно из действий:
@@ -1192,7 +1192,7 @@
 
 {/ifdef}
 
-1. Выберите проект, в котором находится нужный бакет.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, в котором находится нужный бакет.
 1. Перейдите в раздел **Object Storage** → **Бакеты**.
 1. Нажмите на имя бакета.
 1. Выполните одно из действий:

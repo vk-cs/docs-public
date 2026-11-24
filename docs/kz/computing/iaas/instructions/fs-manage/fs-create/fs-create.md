@@ -8,7 +8,7 @@ Cloud Servers платформасында файлдық сақтауыштар
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетына.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетына.
 1. Файлдық сақтауыш құру қажет {linkto(../../../../../tools-for-using-services/account/concepts/projects#tools-account-concepts-projects)[text=жобаны]} таңдаңыз.
 1. **Бұлттық есептеулер** → **Файлдық сақтауыш** бөліміне өтіңіз.
 1. **Сақтауыш құру** немесе **Құру** түймесін басыңыз.

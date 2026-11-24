@@ -6,7 +6,7 @@
 
 {cut(Эндпоинтті алу, авторизация және аутентификация)}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app).
 1. Егер бұрын жасалмаса, {linkto(../../../../access/iam/instructions/manage-2fa#iam-manage-2fa-on)[text=қосыңыз]} екі факторлы аутентификацияны.
 1. Егер бұрын жасалмаса, {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=қосыңыз]} API арқылы қолжетімділікті.
 1. Беттің жоғарғы жағындағы пайдаланушы атын басып, **Жоба баптаулары** тармағын таңдаңыз.

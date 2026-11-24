@@ -2,7 +2,7 @@
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
-{var(cloud)} жүйесінде виртуалды машинаның параметрлері мен күйін {ifdef(public)}[жеке кабинетте](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}жеке кабинетте{/ifdef} немесе OpenStack CLI пәрмен жолы интерфейсінің көмегімен өзгертуге болады.
+{var(cloud)} жүйесінде виртуалды машинаның параметрлері мен күйін {ifdef(public)}[жеке кабинетте](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}жеке кабинетте{/ifdef} немесе OpenStack CLI пәрмен жолы интерфейсінің көмегімен өзгертуге болады.
 
 ## {heading(Виртуалды машинаның ID мәнін алу)[id=iaas-vm-manage-id-get]}
 
@@ -12,7 +12,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ тізімінде идентификаторын білу қажет виртуалды машинаның атауын басыңыз.
 1. **Жалпы ақпарат** қойындысында кестеден **Виртуалды машинаның ID мәні** жолын табыңыз.
@@ -46,7 +46,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ күйін тәсілдердің бірімен өзгертіңіз.
 
@@ -109,7 +109,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ-ді мәжбүрлі қайта іске қосуды тәсілдердің бірімен орындаңыз.
 
@@ -151,7 +151,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ-ді тәсілдердің бірімен бұғаттаңыз немесе бұғаттан шығарыңыз.
 
@@ -205,7 +205,7 @@
 
    {tab(Жеке кабинет)}
 
-   1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+   1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
    1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
    1. ВМ-ді тәсілдердің бірімен жойыңыз.
 
@@ -254,7 +254,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. ВМ атауын немесе түрін тәсілдердің бірімен өзгертіңіз.
 
@@ -311,7 +311,7 @@
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. Қажетті ВМ үшін ![ ](../../../../../assets/more-icon.svg "inline") басыңыз.
 1. Қажетті тегтерді жалаушалармен белгілеңіз.
@@ -447,7 +447,7 @@ systemctl status qemu-guest-agent
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. Мына тәсілдердің бірін қолданыңыз:
 
@@ -513,7 +513,7 @@ systemctl status qemu-guest-agent
    {ifdef(public)}
 1. Публикалық кілт файлына сілтеме жасаңыз.
 
-   1. [Өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+   1. [Өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
    1. **Object Storage** → **Бакеттер** бөліміне өтіңіз.
    1. Бар бакетті пайдаланыңыз немесе {linkto(../../../../../storage/s3/instructions/buckets/create-bucket#s3-instructions-create-bucket)[text=жаңасын жасаңыз]}.
    1. Бакетке публикалық кілті бар файлды {linkto(../../../../../storage/s3/instructions/objects/upload-object#s3-instructions-upload-object)[text=қосыңыз]}.
@@ -561,7 +561,7 @@ systemctl status qemu-guest-agent
 
 {tab(Жеке кабинет)}
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifdef(private,private-pg,private-pdf,private-pg-pdf,private-cert)}{linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifdef} {var(cloud)} жеке кабинетіне.
 1. **Бұлттық есептеулер** → **Виртуалды машиналар** бөліміне өтіңіз.
 1. Диск қосу қажет ВМ атауын басыңыз.
 1. **Дискілер** қойындысына өтіңіз.

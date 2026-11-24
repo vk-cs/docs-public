@@ -4,7 +4,7 @@
 
 ## {heading(Сервер туралы ақпарат алу)[id=bare-metal-server-get-info]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Cloud Computing** → **Bare Metal** бөліміне өтіңіз.
 1. Bare Metal серверлерінің тізімінде қажетті сервердің атауын басыңыз.
 1. Қажетті ақпарат бар қойындыны таңдаңыз:
@@ -15,7 +15,7 @@
 
 ## {heading(Сервер үшін тег жасау)[id=bare-metal-server-tag-create]}
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://msk.cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Cloud Computing** → **Bare Metal** бөліміне өтіңіз.
 1. Сервер мәзірін келесі тәсілдердің бірімен ашыңыз:
 

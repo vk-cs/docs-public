@@ -7,7 +7,7 @@ You can install extensions for DB instances and change extension parameters. Dep
 {tab(OpenSearch)}
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the instance name and go to the **Plugins** tab.
 
@@ -16,7 +16,7 @@ You can install extensions for DB instances and change extension parameters. Dep
 {tab(Other DBMS)}
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the instance name and go to the **Extensions** tab.
 
@@ -37,7 +37,7 @@ Deleting extensions is not available in the VK Cloud platform. Deleting them usi
 {tab(OpenSearch)}
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Plugins** tab.
@@ -52,7 +52,7 @@ Deleting extensions is not available in the VK Cloud platform. Deleting them usi
 {tab(Other DBMS)}
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Extensions** tab.
@@ -89,7 +89,7 @@ Changing extension parameters is not available for OpenSearch.
 To change the extension settings:
 
 1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
-1. Select the project where the required DB instance is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Extensions** tab.

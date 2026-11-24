@@ -17,7 +17,7 @@ Joomla пайдалана отырып, сіз [Marketplace](../../../../start/l
 
 Joomla сервисін {var(cloud)} жобасында орнату үшін:
 
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және [өтіңіз](https://msk.cloud.vk.ru/app/) {var(cloud)} жеке кабинетіне.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Тіркеліңіз]} және [өтіңіз](https://kz.cloud.vk.kz/app/) {var(cloud)} жеке кабинетіне.
 1. Интернеттен орнатылған сервисі бар ВМ-ге және Joomla веб-интерфейсіне қолжетімділік алу үшін:
 
    1. Интернетке қолжетімділігі бар желі жасаңыз, егер ол бұрын жасалмаған болса.

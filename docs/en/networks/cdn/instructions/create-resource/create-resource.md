@@ -115,13 +115,13 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/instructions/buckets/create-bucket "change-lang").
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the bucket you need is located. If you do not have the bucket, [create it](/en/storage/s3/instructions/buckets/create-bucket).
 1. Go to the **Cloud storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Go to the **CDN** tab.
 1. Enable the **Use CDN for this bucket** option.
 
-   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](/ru/storage/s3/instructions/objects/upload-object "change-lang").
+   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](/en/storage/s3/instructions/objects/upload-object).
 
 1. In the **Personal domain** field enter the personal domain, what should be used for CDN. When requesting this domain, content will be delivered via CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
 

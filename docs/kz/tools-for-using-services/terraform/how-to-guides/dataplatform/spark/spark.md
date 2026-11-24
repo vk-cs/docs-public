@@ -285,7 +285,7 @@ resource "vkcs_db_user" "postgres_user" {
 
 Spark кластері сәтті жасалғанына көз жеткізіңіз:
 
-1. {var(cloud)} жеке кабинетіне [өтіңіз](https://cloud.vk.ru/app/).
+1. {var(cloud)} жеке кабинетіне [өтіңіз](https://kz.cloud.vk.kz/app/).
 1. **Data Platform** → **Сервис инстанстары** бөліміне өтіңіз. Spark кластері жасалғанына және белсенді екеніне көз жеткізіңіз.
 
 ## {heading(Пайдаланылмайтын ресурстарды жойыңыз)[id=terraform-spark-delete]}

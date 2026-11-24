@@ -5,7 +5,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
-1. Select the project that contains the bucket you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need.
 1. Go to the **Object Storage → Buckets** section.
 1. Click the name of the bucket you need.
 
@@ -150,7 +150,7 @@ The `list_object` command is described in detail in the [official documentation 
 {tab(Management console)}
 
 1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
-1. Select the project that contains the bucket you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need.
 1. Go to the **Object Storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Do one of the following for the object you need:
@@ -319,7 +319,7 @@ To change an object's access level:
 This is a bulk operation: if needed, you can change access settings for several objects at once by selecting them with the checkboxes.
 
 1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
-1. Select the project that contains the bucket you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need.
 1. Go to the **Object Storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Expand the menu of the object you need and select **File access**.
@@ -735,7 +735,7 @@ This is a bulk operation: if needed, you can delete several objects at once by s
 To delete an object:
 
 1. [Go](https://msk.cloud.vk.com/app/en) to the VK Cloud management console.
-1. Select the project that contains the bucket you need.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) that contains the bucket you need.
 1. Go to the **Object Storage → Buckets** section.
 1. Click the name of the bucket you need. A page with information about the bucket will open on the **Folders and files** tab.
 1. Do one of the following for the object you need:

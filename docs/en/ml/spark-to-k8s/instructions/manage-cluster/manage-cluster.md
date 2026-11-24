@@ -5,7 +5,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:
    - Select the desired cluster using the checkbox, then click the **Launch** button. This is a group operation: you can start multiple stopped clusters at once by selecting them with checkboxes.
@@ -23,7 +23,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:
    - Select the desired cluster using the checkbox, then click the **Stop** button. This is a group operation: you can stop multiple active clusters at once by selecting them with checkboxes.
@@ -41,7 +41,7 @@
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Click the name of the desired cluster.
 
@@ -68,7 +68,7 @@ To connect to the cluster, use access tokens in the VK Cloud management console 
 {tab(Management console)}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
-1. Select the project where the desired cluster is located.
+1. [Select the project](/en/tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select) where the desired cluster is located.
 1. Go to the **ML Platform** → **Spark in k8s** section.
 1. Perform one of the following actions:
    - Select the desired cluster using the checkbox, then click the **Delete** button. This is a group operation: you can delete multiple clusters at once by selecting them with checkboxes.

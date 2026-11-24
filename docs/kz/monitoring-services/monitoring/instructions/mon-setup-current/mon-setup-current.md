@@ -4,7 +4,7 @@
 
 Бар виртуалды машина мониторингін баптау үшін:
 
-1. {ifdef(public)}[Өтіңіз](https://msk.cloud.vk.ru/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
+1. {ifdef(public)}[Өтіңіз](https://kz.cloud.vk.kz/app/){/ifdef}{ifndef(public)}{linkto(../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Өтіңіз]}{/ifndef} {var(cloud)} жеке кабинетіне.
 1. **Облачные вычисления** → **Виртуальные машины** бөліміне өтіңіз.
 1. Жалпы тізімде оның атауын басу арқылы ВМ бетін ашыңыз.
 1. **Общая информация** қойындысында ВМ туралы негізгі ақпараттың астында **Настройка мониторинга** қойындысына өтіңіз.
