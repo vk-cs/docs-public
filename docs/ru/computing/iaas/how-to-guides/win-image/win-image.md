@@ -216,6 +216,10 @@ openstack image create \
 ```
 Замените <ИМЯ_ОБРАЗА> на актуальное. Аргументы вида `--property <КЛЮЧ>=<ЗНАЧЕНИЕ>` используются для присвоения образу {linkto(../../../../computing/iaas/instructions/images/image-metadata#iaas-image-metadata)[text=метатегов]}.
 
+{note:warn}
+Если образ предназначен для ВМ с vGPU, добавьте в команду аргумент с метатегом `--property hw_video_model=none`. Иначе гипервизор эмулирует дополнительный видеоадаптер, который конфликтует с vGPU.
+{/note}
+
 Дождитесь завершения операции. После загрузки образа появится возможность {linkto(../../../../computing/iaas/instructions/vm/vm-create#iaas-vm-create)[text=создавать ВМ]} стандартными средствами {var(cloud)}.
 
 ## {heading(Удалите неиспользуемые ресурсы)[id=iaas-win-image-delete]}

@@ -1,0 +1,14 @@
+{
+  "title": "Video adapter error code 12 on a VM with vGPU",
+  "shortDescription": "What to do if error 12 occurs in Windows Device Manager on a VM with vGPU created from a custom image",
+  "metaDescription": "How to fix the Code 12 error shown by the video card on a VM with vGPU and Windows created from a custom image: cause and solution",
+  "sectionTitle": "Video adapter error code 12 on a VM with vGPU",
+  "icon": "",
+  "weight": 31,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
