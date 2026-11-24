@@ -1,0 +1,14 @@
+{
+  "title": "Аудит",
+  "shortDescription": "Просмотр и фильтрация событий аудита экземпляров сервисов",
+  "metaDescription": "Узнайте, как просматривать и фильтровать события аудита экземпляров сервисов VK Data Platform в составе VK Private Cloud и в конфигурации Standalone.",
+  "sectionTitle": "Аудит",
+  "weight": 1,
+  "build": {
+    "for": [
+      "data-p",
+      "data-p-pdf"
+    ]
+  },
+  "uuid": "817df73f-fa6a-46d5-ad36-4a5d9af7bf6e"
+}
