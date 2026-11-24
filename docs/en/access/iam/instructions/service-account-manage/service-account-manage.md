@@ -108,7 +108,7 @@ Information in a service account's card is not editable.
 {tabs}
 {tab(OpenStack CLI)}
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
 1. Go to the `<PATH_TO_FILE>` directory with the previously [downloaded OpenStack RC file](#download_rc_file):
 
    ```console

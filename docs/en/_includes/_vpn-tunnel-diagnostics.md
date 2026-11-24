@@ -18,7 +18,7 @@
    - Diffie-Hellman group — `group14`.
    {/includetag}
    {includetag(vpn-tunnel-diagnostics-secgroup)}
-1. Check the rules of the security groups assigned to the ports through which VPN traffic passes and, if necessary, {linkto(../../instructions/secgroups#add-rule)[text=add rules]} that allow UDP ports 500 and 4500.
+1. Check the rules of the security groups assigned to the ports through which VPN traffic passes and, if necessary, {linkto(../../instructions/secgroups#vnet-secgroups-add-rule)[text=add rules]} that allow UDP ports 500 and 4500.
 
    For the IPsec connection to be established, incoming and outgoing traffic over UDP ports 500 and 4500 between the cloud side and the remote side must be allowed.
    {/includetag}

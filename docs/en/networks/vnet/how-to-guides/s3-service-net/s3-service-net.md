@@ -155,5 +155,5 @@ The response should return a list of the VK Object Storage buckets.
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) the virtual machine.
+1. [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) the virtual machine.
 1. [Delete](/en/networks/vnet/instructions/net#vnet-net-delete) the networks in which the VM was placed.

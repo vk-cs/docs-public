@@ -24,7 +24,7 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+   1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
 1. To see a list of routers and their IDs, run the command:
@@ -77,7 +77,7 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
 1. Create a router of the necessary type:
@@ -147,7 +147,7 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 1. [Get the ID](#vnet-router-view) of the necessary router.
 1. Perform one of the available actions:
@@ -267,14 +267,14 @@ Router interface management is an alternative to [managing subnets](#vnet-router
 
 1. Make sure that:
 
-    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
 1. [Get the ID](#vnet-router-view) of the necessary router.
 
 1. To add an interface:
 
-    1. [Get the ID of the OpenStack port](../ports#viewing_a_list_of_ports_and_port_information) located on the subnet you want to connect to the router. This port should not be used by any objects (load balancers, virtual machines, etc.) If there is no such port, [create it](../ports#adding_a_port).
+    1. [Get the ID of the OpenStack port](../ports#vnet-ports-view) located on the subnet you want to connect to the router. This port should not be used by any objects (load balancers, virtual machines, etc.) If there is no such port, [create it](../ports#vnet-ports-add).
     1. Run the command:
 
        ```console
@@ -336,7 +336,7 @@ Router interface management is an alternative to [managing subnets](#vnet-router
 
 1. Make sure that:
 
-    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
 1. [Get the ID](#vnet-router-view) of the necessary router.
@@ -399,7 +399,7 @@ To remove a router:
 
 1. Make sure that:
 
-    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in the OpenStack CLI.
 
 1. [Get the ID](#vnet-router-view) of the necessary router.

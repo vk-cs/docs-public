@@ -64,7 +64,7 @@ For Argo CD to work correctly, it needs stable access to Git repositories that c
 
 - **CPU**: 512m
 - **RAM**: 1024Mi
-- **Standard load balancer**: one piece (when configuring external access to the cluster, for example using the [Ingress Controller](#ingress))
+- **Standard load balancer**: one piece (when configuring external access to the cluster, for example using the [Ingress Controller](#mk8s-addons-ingress-controller-nginx))
 
 {/tab}
 
@@ -253,6 +253,69 @@ See [Connecting to the Docker registry](/en/kubernetes/mk8s/connect/docker-regis
 - **S3 object storage capacity**: depends on the size and number of images that are planned to be placed in the registry
 - **Standard load balancer**: one piece
 - **Floating IP**: one piece
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
+{includetag(dra)}
+
+<!--DRA Driver for NVIDIA GPUs -->
+
+{tabs}
+
+{tab(Description)}
+
+[Dynamic Resource Allocation (DRA)](https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/) is a Kubernetes mechanism for flexibly requesting, configuring, and sharing specialized devices, such as GPUs, between pods. Unlike the standard [Device Plugin](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/) mechanism, which allocates a GPU as an indivisible resource, DRA allows requesting only a portion of GPU memory or computing resources for an individual workload.
+
+Benefits of the DRA Driver for NVIDIA GPUs add-on:
+
+- It allows running multiple workloads on a single GPU card, limiting memory and computing resource consumption for each of them.
+- It increases the utilization of GPU worker nodes and reduces the total cost of owning GPU infrastructure.
+- It lowers the entry barrier for machine learning and AI teams that do not need a whole GPU card for tasks such as inference, RAG, or image processing.
+- It provides a supported and standardized approach to managing GPU sharing in a cluster instead of custom development via Helm charts, access policies, and workload placement rules.
+
+The add-on includes:
+
+- [DRA Kubelet Plugin](https://pkg.go.dev/k8s.io/dynamic-resource-allocation/kubeletplugin) for preparing and attaching GPUs to pods on worker nodes.
+- [Node Feature Discovery](https://kubernetes-sigs.github.io/node-feature-discovery) for detecting and registering features available on cluster nodes. The component includes the following services:
+  - NFD-Master is responsible for connecting to the Kubernetes API server and updating node objects.
+  - NFD-Worker connects to the NFD-Master service to advertise hardware features.
+  - NFD Garbage-Collector ensures that all Node Feature Discovery objects have corresponding nodes and deletes stale objects for non-existent nodes.
+
+{note:warn}
+The DRA Driver for NVIDIA GPUs add-on is only suitable for clusters with GPU worker nodes. The add-on requires Kubernetes [version 1.34](/en/kubernetes/mk8s/concepts/versions/version-support) or higher.
+{/note}
+
+{/tab}
+
+{tab(System requirements)}
+
+Requirements of the individual add-on components:
+
+- DRA Kubelet Plugin (on each GPU worker node):
+
+  - **CPU**: 200m — 500m;
+  - **RAM**: 64Mi — 512Mi;
+
+- NFD-Master:
+
+  - **CPU**: 100m — 500m;
+  - **RAM**: 128Mi — 4Gi;
+
+- NFD Garbage-Collector:
+
+  - **CPU**: 10m — 500m;
+  - **RAM**: 128Mi — 1Gi;
+
+- NFD-Worker (on each GPU worker node):
+
+  - **CPU**: 205m — 2000m;
+  - **RAM**: 192Mi — 2Gi.
+  
+If the add-on is installed on multiple worker nodes, NFD-Worker and DRA Kubelet Plugin will be installed on each of these nodes and will require the specified amount of RAM per node. The remaining components are installed on a single node only.
 
 {/tab}
 
@@ -605,7 +668,7 @@ If a Gateway resource that accepts external traffic is also created:
 
 {tab(Description)}
 
-[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
+[Kiali](https://kiali.io/) is a web interface for working with [Istio](#k8s-addons-istio). It allows to manage, monitor and visualize a service mesh.
 
 {/tab}
 
@@ -642,6 +705,73 @@ Add-on version `68.3.3` includes built-in [cluster resource consumption forecast
 - **RAM**: 968Mi — 3804Mi
 - **HDD**: 2GB
 - **SSD**: 10GB
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
+{includetag(velero)}
+
+<!--Velero -->
+
+{tabs}
+
+{tab(Description)}
+
+[Velero](https://velero.io/docs/main/) is an open source tool for backing up and restoring Kubernetes clusters.
+
+With the Velero add-on, you can easily configure and automate backup of Kubernetes workloads, namespaces, and resources, perform cluster migration, and recover from failures, misconfigurations, bad releases, and data incidents. Backups created by the add-on are stored in buckets with the `Hotbox` storage class in the [{var(s3)}](/en/storage/s3/concepts/about) service.
+
+The Velero add-on does not support backing up [persistent volumes](/en/kubernetes/mk8s/reference/pvs-and-pvcs) (Persistent Volumes, PV).
+
+For more information about working with the add-on, see [Using Velero](/en/kubernetes/mk8s/how-to-guides/managed-velero#mk8s-how-to-velero-managed).
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 20m — 1000m;
+- **RAM**: 64Mi — 512Mi.
+
+{/tab}
+
+{/tabs}
+
+{/includetag}
+
+{includetag(vpa)}
+
+<!--Vertical Pod Autoscaler (VPA) -->
+
+{tabs}
+
+{tab(Description)}
+
+[Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler#readme) (VPA) is a tool for automatically configuring resources (CPU and RAM) for Kubernetes containers. VPA tasks:
+
+1. Analyze the workload and resource usage data.
+1. Provide recommendations and, if configured, automatically apply them to the [resource requests](/en/kubernetes/k8s/reference/resource-limiting) of new and running pods.
+
+VPA consists of three components:
+
+- Recommender: analyzes the current and past resource consumption and, based on this, recommends how to change the resource requests of a pod for maximum efficiency. Recommender is the only component enabled by default when using VPA.
+
+- Updater: receives recommendations, updates VPA objects, and makes sure the recommended resources are available for new and existing pods. Depending on its operating mode, the Updater sends a request to the Admission Controller component to create or update an existing pod. Updater operating modes:
+
+    - `Off` — disabled, only the Recommender component is running. Recommendations are created but are applied neither to new nor to existing pods.
+    - `Recreate` — fully operational. In the `Recreate` mode, the Updater deletes a pod if the resources requested by that pod do not match those computed for it by the Recommender. Then it sends a request to the Admission Controller to recreate the pod with the recommended values. New pods are created immediately with the recommended values. For more information about the `Recreate` mode, see [Vertical Pod Autoscaler](/en/kubernetes/k8s/how-to-guides/vertical-pod-autoscaler#k8s-vertical-pod-autoscaler).
+    - `Initial` — works only for new pods. The Admission Controller component updates resource requests according to VPA recommendations only for new pods, without initiating deletion, recreation, or update of already running pods.
+
+- Admission Controller: operates at the pod creation or update stage depending on the Updater component mode. The Admission Controller applies VPA recommendations to new pods at their creation, as well as to already running pods, ignoring manually set values.
+
+{/tab}
+
+{tab(System requirements)}
+
+- **CPU**: 50m;
+- **RAM**: 500Mi.
 
 {/tab}
 

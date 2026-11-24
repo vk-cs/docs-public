@@ -120,7 +120,7 @@ The WordPress CMS admin panel opens.
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Almalinux_9_WP` VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) `Almalinux_9_WP` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-9341` instance.
 - If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) `212.233.95.135` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-wp.example.vk.cloud` DNS record.

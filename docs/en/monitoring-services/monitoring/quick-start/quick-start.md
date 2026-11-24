@@ -46,4 +46,4 @@ If configured correctly, values for the created VM will appear on the graph.
 A running VM consumes computing resources. If you no longer need it:
 
 - [stop](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-start-stop-restart) it to use it later;
-- [delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) it permanently.
+- [delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) it permanently.

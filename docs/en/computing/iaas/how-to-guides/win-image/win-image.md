@@ -29,7 +29,7 @@ Requirements for the computer used to prepare the image:
 ## {heading(Before you start)[id=iaas-win-image-preparatory-steps]}
 
 1. Download the installation ISO image of the Windows OS that you plan to migrate to VK Cloud. It is recommended to use the en-US version of the image.
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 ## {heading(1. Prepare tools)[id=iaas-win-image-toolkit-prepare]}
 

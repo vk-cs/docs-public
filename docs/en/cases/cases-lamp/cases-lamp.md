@@ -90,7 +90,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Ubuntu_22_04_LAMP` VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) `Ubuntu_22_04_LAMP` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-5864` instance.
 - If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) `211.243.95.137` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-lamp.example.vk.cloud` DNS record.

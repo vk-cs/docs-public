@@ -1,6 +1,10 @@
+# {heading(Security groups)[id=vnet-secgroups]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 A security group is a set of custom traffic rules that can be assigned to instances ports.
 
-## {heading(Viewing list of security groups and information about them)[id=view-secgroups]}
+## {heading(Viewing list of security groups and information about them)[id=vnet-secgroups-view]}
 
 {tabs}
 
@@ -44,7 +48,7 @@ openstack security group rule list --long <security group ID>
 
 {/tabs}
 
-## {heading(Creating security group)[id=create-group]}
+## {heading(Creating security group)[id=vnet-secgroups-add]}
 
 {note:warn}
 
@@ -92,7 +96,7 @@ openstack security group create --description <group description> <new group nam
 
 {/tabs}
 
-## {heading(Editing name and description of security group)[id=edit-group]}
+## {heading(Editing name and description of security group)[id=vnet-secgroups-edit]}
 
 {tabs}
 
@@ -127,7 +131,7 @@ openstack security group set --description <description> --name <name> <group ID
 
 {/tabs}
 
-## {heading(Adding rule)[id=add-rule]}
+## {heading(Adding rule)[id=vnet-secgroups-add-rule]}
 
 A security group rule is a set of parameters that define the conditions for traffic to pass through. Rules are combined into groups, which in turn apply to instance ports.
 
@@ -210,7 +214,7 @@ Available arguments for the rule creation command:
 
 {/tabs}
 
-## {heading(Deleting rule)[id=delete-rule]}
+## {heading(Deleting rule)[id=vnet-secgroups-delete-rule]}
 
 {tabs}
 
@@ -246,7 +250,7 @@ openstack security group rule delete <rule ID>
 
 {/tabs}
 
-## {heading(Assigning rule group to instance)[id=assign-rule]}
+## {heading(Assigning rule group to instance)[id=vnet-secgroups-instance-add-sg]}
 
 To apply a rule set to a virtual machine, the security group that contains the rule set must be applied to the virtual machine.
 
@@ -278,7 +282,11 @@ openstack server add security group <instance ID> <security group ID>
 
 {/tabs}
 
-## {heading(Detaching group from instance)[id=detach-rule]}
+## {heading(Assigning a security group to a port)[id=vnet-secgroups-port-set-sg]}
+
+{include(/en/_includes/_sg-port-set.md)}
+
+## {heading(Detaching group from instance)[id=vnet-secgroups-instance-remove-sg]}
 
 {tabs}
 
@@ -308,7 +316,11 @@ openstack server remove security group <instance ID> <security group ID>
 
 {/tabs}
 
-## {heading(Deleting security group)[id=delete-group]}
+## {heading(Unassigning a security group from a port)[id=vnet-secgroups-port-unset-sg]}
+
+{include(/en/_includes/_sg-port-unset.md)}
+
+## {heading(Deleting security group)[id=vnet-secgroups-delete]}
 
 {tabs}
 

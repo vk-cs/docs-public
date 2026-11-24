@@ -42,7 +42,7 @@ Create a VM with internet access and 3 VMs without internet access.
 1. In the **General information** box specify:
 
     - **Name of virtual machine**: `test-vm1`.
-    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#assigning_tags) or create a new one.
+    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) or create a new one.
     - **Configure scripts on VM startup**: enable the option to add a  bash script or a [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) which will be executed at VM startup.
 1. In the **Disk size and speed** box select the appropriate disk type and specify its size.
 1. In the **Network and firewall settings** box specify:
@@ -65,7 +65,7 @@ Create a VM with internet access and 3 VMs without internet access.
 1. In the **General information** box specify:
 
     - **Name of virtual machine**: `test-vm2`.
-    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#assigning_tags) or create a new one.
+    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) or create a new one.
     - **Configure scripts on VM startup**: enable the option to add a  bash script or a [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) which will be executed at VM startup.
 1. In the **Disk size and speed** box select the appropriate disk type and specify its size.
 1. In the **Network and firewall settings** box specify:
@@ -89,7 +89,7 @@ Create a VM with internet access and 3 VMs without internet access.
 1. In the **General information** box specify:
 
     - **Name of virtual machine**: `test-vm3`.
-    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#assigning_tags) or create a new one.
+    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) or create a new one.
     - **Configure scripts on VM startup**: enable the option to add a  bash script or a [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) which will be executed at VM startup.
 1. In the **Disk size and speed** box select the appropriate disk type and specify its size.
 1. In the **Network and firewall settings** box specify:
@@ -113,7 +113,7 @@ Create a VM with internet access and 3 VMs without internet access.
 1. In the **General information** box specify:
 
     - **Name of virtual machine**: `test-vm4`.
-    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#assigning_tags) or create a new one.
+    - **Tags**: if needed, [assign a tag](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-tags) or create a new one.
     - **Configure scripts on VM startup**: enable the option to add a  bash script or a [cloud-config](https://cloudinit.readthedocs.io/en/latest/reference/examples.html) which will be executed at VM startup.
 1. In the **Disk size and speed** box select the appropriate disk type and specify its size.
 1. In the **Network and firewall settings** box specify:

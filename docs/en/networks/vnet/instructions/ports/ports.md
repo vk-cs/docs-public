@@ -1,3 +1,7 @@
+# {heading(Ports)[id=vnet-ports]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 You can manage OpenStack ports: view ports, add, edit and delete them.
 
 {note:warn}
@@ -7,7 +11,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 {/note}
 
-## {heading(Viewing a list of ports and port information)[id=viewing_a_list_of_ports_and_port_information]}
+## {heading(Viewing a list of ports and port information)[id=vnet-ports-view]}
 
 {tabs}
 
@@ -29,7 +33,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. To see a list of all ports, run the command:
 
@@ -75,7 +79,7 @@ openstack port show --help
 
 {/tabs}
 
-## Adding a port
+## {heading(Adding a port)[id=vnet-ports-add]}
 
 {tabs}
 
@@ -99,7 +103,7 @@ openstack port show --help
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
 1. Run the command:
 
@@ -117,9 +121,9 @@ openstack port create --help
 
 {/tabs}
 
-## Enabling and disabling a port
+## {heading(Enabling and disabling a port)[id=vnet-ports-on-off]}
 
-### Enabling a port
+### {heading(Enabling a port)[id=vnet-ports-on]}
 
 {tabs}
 
@@ -149,9 +153,9 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
-1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
+1. [Get the name or ID](#vnet-ports-view) of the necessary port.
 
 1. Run the command:
 
@@ -169,7 +173,7 @@ openstack port set --help
 
 {/tabs}
 
-### Disabling a port
+### {heading(Disabling a port)[id=vnet-ports-off]}
 
 A disabled port does not allow any traffic to pass through.
 
@@ -201,9 +205,9 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
-1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
+1. [Get the name or ID](#vnet-ports-view) of the necessary port.
 
 1. Run the command:
 
@@ -221,7 +225,7 @@ openstack port set --help
 
 {/tabs}
 
-## Editing a port
+## {heading(Editing a port)[id=vnet-ports-edit]}
 
 {tabs}
 
@@ -245,9 +249,9 @@ openstack port set --help
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
-1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
+1. [Get the name or ID](#vnet-ports-view) of the necessary port.
 
 1. Change the parameters of the port:
 
@@ -279,7 +283,17 @@ openstack port set --help
 
 {/tabs}
 
-## Configuring IP Source Guard for a port
+## {heading(Configuring security groups for a port)[id=vnet-ports-sg-manage]}
+
+### {heading(Assigning a security group to a port)[id=vnet-ports-sg-set]}
+
+{include(/en/_includes/_sg-port-set.md)}
+
+### {heading(Unassigning a security group from a port)[id=vnet-ports-sg-unset]}
+
+{include(/en/_includes/_sg-port-unset.md)}
+
+## {heading(Configuring IP Source Guard for a port)[id=vnet-ports-ip-source-guard-manage]}
 
 This mechanism allows only traffic for which the source IP address is in the `allowed-address` list to be allowed to leave the port.
 
@@ -287,9 +301,9 @@ This mechanism allows only traffic for which the source IP address is in the `al
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
-1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
+1. [Get the name or ID](#vnet-ports-view) of the necessary port.
 
 1. To add a single source IP address, run the command:
 
@@ -321,7 +335,7 @@ openstack port unset --help
 
 {/tabs}
 
-## Deleting a port
+## {heading(Deleting a port)[id=vnet-ports-delete]}
 
 {note:info}
 
@@ -357,9 +371,9 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
 
 {tab(OpenStack CLI)}
 
-1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) in it.
 
-1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
+1. [Get the name or ID](#vnet-ports-view) of the necessary port.
 
 1. Run the command:
 

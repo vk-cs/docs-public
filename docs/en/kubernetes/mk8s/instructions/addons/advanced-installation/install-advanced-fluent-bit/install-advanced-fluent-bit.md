@@ -4,7 +4,7 @@
 
 ## {heading(Install the add-on)[id=installing_addon]}
 
-For the [Fluent Bit](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#fluent_bit) add-on, only the [standard installation option](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available.
+For the [Fluent Bit](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-fluent-bit) add-on, only the [standard installation option](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) is available.
 
 The add-on is installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
 

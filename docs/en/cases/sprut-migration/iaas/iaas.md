@@ -393,6 +393,6 @@ Check the availability of all VMs after migration.
 If you no longer need SDN Neutron resources, delete them:
 
 1. [Remove](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) Floating IP addresses from the project.
-1. [Delete](/en/networks/vnet/instructions/secgroups#delete-group) security groups.
+1. [Delete](/en/networks/vnet/instructions/secgroups#vnet-secgroups-delete) security groups.
 1. Delete [networks](/en/networks/vnet/instructions/net#vnet-net-delete) and [subnets](/en/networks/vnet/instructions/net#vnet-net-subnet-delete).
 1. [Delete](/en/networks/vnet/instructions/router#vnet-router-delete) routers.

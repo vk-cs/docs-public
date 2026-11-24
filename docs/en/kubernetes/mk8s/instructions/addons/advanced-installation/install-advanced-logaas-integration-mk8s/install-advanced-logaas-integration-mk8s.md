@@ -10,7 +10,7 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-For this add-on, only the [standard installation option](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) via the VK Cloud management console is available.
+For this add-on, only the [standard installation option](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) via the VK Cloud management console is available.
 
 The add-on is installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
 

@@ -8,7 +8,7 @@ The add-on requires Kubernetes of [version 1.33](/en/kubernetes/mk8s/concepts/ve
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-The [HAMi](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#hami) add-on only works on [worker nodes with GPU](/en/kubernetes/mk8s/concepts/flavors#gpu), so you can only install it on [dedicated worker nodes](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons). To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service first.
+The [HAMi](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-hami) add-on only works on [worker nodes with GPU](/en/kubernetes/mk8s/concepts/flavors#gpu), so you can only install it on [dedicated worker nodes](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features). To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service first.
 
 1. Prepare a dedicated group of worker nodes for installing the add-on, if not done so already:
 

@@ -134,7 +134,7 @@ After [specifying the administrator credentials](https://dev.1c-bitrix.ru/learni
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/computing/iaas/instructions/vm/vm-manage#delete_vm) `Ubuntu_22_04_Bitrix` VM.
+- [Delete](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete) `Ubuntu_22_04_Bitrix` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-1111` instance.
 - If necessary, [delete](/en/networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete) `87.239.105.191` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-bitrix.example.vk.cloud` DNS record.

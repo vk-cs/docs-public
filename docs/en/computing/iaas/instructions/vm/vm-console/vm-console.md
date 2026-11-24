@@ -37,7 +37,7 @@ To connect VM via VNC console:
 
     {tab(OpenStack CLI)}
     
-    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
     1. Get a link to the VNC console page.
 
@@ -69,7 +69,7 @@ To connect VM via VNC console:
     {/tabs}
 
 1. If the virtual machine is not running, click the start button on the tab.
-1. [Set a password](../vm-manage#password) to log into the OS if you haven't done it already. Write down the account name and password.
+1. [Set a password](../vm-manage#iaas-vm-manage-password) to log into the OS if you haven't done it already. Write down the account name and password.
 1. (Optional) Click the **Open in new window** button to open the console in a separate browser window.
 1. Enter the login and password in the console.
 
@@ -92,7 +92,7 @@ console=tty0 console=ttyS0,115200n8
 
 {tab(OpenStack CLI)}
 
-Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 - Output all log entries:
 

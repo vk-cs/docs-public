@@ -4,7 +4,7 @@
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-The [GPU Operator](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#gpu_operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
+The [GPU Operator](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-gpu-operator) addon works on worker nodes with GPU, so only [installation on dedicated nodes](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) is available for it. To be able to add worker nodes with GPU to the cluster, [connect](https://cloud.vk.com/cloud-gpu/) the Cloud GPU service.
 
 1. Prepare a dedicated group of worker nodes for installing the add-on, if not done so already:
 

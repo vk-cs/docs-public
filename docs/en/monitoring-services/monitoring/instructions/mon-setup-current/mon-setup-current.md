@@ -15,7 +15,7 @@ If the **Configuring monitoring** tab is missing:
 1. Make sure API access is [activated](/en/tools-for-using-services/api/rest-api/enable-api).
 1. [Get an access token](/en/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") `X-Subject-Token`.
 1. [Get the Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id), a special identifier for working with services. Example: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
-1. [Get the virtual machine ID](/en/computing/iaas/instructions/vm/vm-manage#getting_a_virtual_machine_id).
+1. [Get the virtual machine ID](/en/computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-id-get).
 1. [Connect](/en/computing/iaas/instructions/vm/vm-connect) to the virtual machine.
 1. Run the command:
 

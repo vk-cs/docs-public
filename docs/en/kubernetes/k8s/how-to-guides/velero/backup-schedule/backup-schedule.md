@@ -118,7 +118,7 @@ A running cluster consumes computing resources and is charged accordingly. If yo
    velero uninstall
    ```
 
-1. [Delete](/ru/storage/s3/instructions/objects/manage-object#udalenie_obektov "change-lang") the backups from the bucket that Velero used.
+1. [Delete](/en/storage/s3/instructions/objects/manage-object#s3-instructions-manage-object-delete) the backups from the bucket that Velero used.
 
    If necessary, also [delete](/en/storage/s3/instructions/buckets/bucket#removing_a_bucket) the bucket itself.
 

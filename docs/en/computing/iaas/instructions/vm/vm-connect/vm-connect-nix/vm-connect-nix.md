@@ -7,7 +7,7 @@ To connect via SSH, an SSH server must be running on the virtual machine. On Lin
 Before connecting, make sure that the following conditions are met:
 
 - the virtual machine is running and the OS boot process has finished;
-- remote access via SSH protocol (TCP port `22`) is allowed in the VM network settings — [add](/en/networks/vnet/instructions/secgroups#assign-rule) `ssh` security group;
+- remote access via SSH protocol (TCP port `22`) is allowed in the VM network settings — [add](/en/networks/vnet/instructions/secgroups#vnet-secgroups-instance-add-sg) `ssh` security group;
 - the VM has an external (“floating”) IP address available for connection.
 
    {note:info}
@@ -41,7 +41,7 @@ If the VM was created on the VK Cloud platform:
 - the public key was saved on the VM automatically;
 - when selecting the option **Create a new key**, the private key in the file with the extension `.pem` was downloaded to the computer from which the VM was created.
 
-If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#restoring_vm_access_by_key).
+If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#iaas-vm-manage-recovery-access-key).
 
 ## {heading(4. Connect to VM)[id=iaas-vm-connect-nix-os]}
 

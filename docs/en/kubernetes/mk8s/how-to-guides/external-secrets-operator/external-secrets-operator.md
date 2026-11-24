@@ -1,4 +1,4 @@
-Use the [External Secrets Operator](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#eso) add-on to set up synchronization with Kubernetes secrets that are stored in the [VK Cloud Secret Manager](/ru/security/secret-manager/concepts/about#sm-about "change-lang").
+Use the [External Secrets Operator](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-eso) add-on to set up synchronization with Kubernetes secrets that are stored in the [VK Cloud Secret Manager](/ru/security/secret-manager/concepts/about#sm-about "change-lang").
 
 ## {heading(Before you begin)[id=prep]}
 

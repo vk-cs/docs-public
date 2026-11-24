@@ -27,8 +27,8 @@ If RDP connection to the VM is not possible or unavailable, use the [VNC console
 ## {heading(2. Prepare credentials)[id=iaas-vm-connect-win-credentials]}
 
 1. [Find out](../../../../concepts/about#default_account) the name of the default OS user.
-1. [Set](../../vm-manage#password) password to log in to the OS. Write down the username and password.
-1. If the password has been lost, [reset](../../vm-manage#password) it.
+1. [Set](../../vm-manage#iaas-vm-manage-password) password to log in to the OS. Write down the username and password.
+1. If the password has been lost, [reset](../../vm-manage#iaas-vm-manage-password) it.
 
 ## {heading(3. Connect to VM)[id=iaas-vm-connect-win-vm]}
 

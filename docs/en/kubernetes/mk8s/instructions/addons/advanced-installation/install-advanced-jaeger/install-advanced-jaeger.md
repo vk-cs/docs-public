@@ -1,8 +1,8 @@
-As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
+As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
 ## {heading(Before you begin)[id=mk8s-install-advanced-jaeger-prep]}
 
-1. Review the [system requirements](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#available_addons) of the add-on to make sure you have enough resources to install it.
+1. Review the [system requirements](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-available) of the add-on to make sure you have enough resources to install it.
 
    Jaeger add-on system requirements depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
 
@@ -10,7 +10,7 @@ As part of the [add-on](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#
 
 ## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) are available for the add-on.
 
 {tabs}
 

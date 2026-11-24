@@ -8,7 +8,7 @@
 When installing the add-on, [standard load balancers](/en/networks/balancing/concepts/load-balancer#types_of_load_balancers) are created for them. You get charged for using them according to the [tariffs](/en/networks/vnet/tariffication) of the Cloud Networks service.
 {/note}
 
-[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
+[Several installation options](/en/kubernetes/mk8s/concepts/addons-and-settings/addons#mk8s-addons-install-features) are available for the add-on.
 
 {tabs}
 

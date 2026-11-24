@@ -1,4 +1,8 @@
-## Viewing the list of objects
+# {heading(Managing objects in a bucket)[id=s3-instructions-manage-object]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
+## {heading(Viewing the list of objects)[id=s3-instructions-manage-object-list]}
 
 {tabs}
 
@@ -143,7 +147,172 @@ The `list_object` command is described in detail in the [official documentation 
 
 {/tabs}
 
-## Downloading an object
+## {heading(Viewing object versions)[id=s3-instructions-manage-object-list-versions]}
+
+If [versioning](../../../concepts/versioning) is enabled for the bucket, you can view all versions of objects, including [delete markers](../../../concepts/versioning).
+
+{tabs}
+
+{tab(Management console)}
+
+1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need.
+1. Enable the **Show object versions** option.
+
+   The list of objects will display all object versions, and the **Version ID** column will show the version identifier.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket <BUCKET_NAME> \
+      --prefix <PREFIX> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<BUCKET_NAME>` — the name of the bucket whose object versions you want to view.
+   - (Optional) `--prefix` — the key prefix to filter objects by. For example: `image/`, `pre/`, `image/photo`.
+   - `<ENDPOINT_URL>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+   {cut(Example command and response)}
+
+   Command example:
+
+   ```console
+   aws s3api list-object-versions \
+      --bucket my-bucket \
+      --prefix folder/ \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Response example:
+
+   ```json
+   {
+       "Versions": [
+           {
+               "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+               "Size": 13204976,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+               "IsLatest": true,
+               "LastModified": "2023-10-05T14:38:16+00:00"
+           },
+           {
+               "ETag": "\"1efbf0a935e6f74ba1ca884a53194b46\"",
+               "Size": 12984512,
+               "StorageClass": "STANDARD",
+               "Key": "folder/my-object.exe",
+               "VersionId": "QUpfdndhfd8438MNFDNvssklpaTBGxxE",
+               "IsLatest": false,
+               "LastModified": "2023-09-27T11:48:56+00:00"
+           }
+       ],
+       "DeleteMarkers": []
+   }
+   ```
+
+   {/cut}
+
+A full description of the `list-object-versions` command parameters is available in the [official AWS CLI documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-object-versions.html).
+
+{/tab}
+
+{/tabs}
+
+## {heading(Viewing object properties)[id=s3-instructions-manage-object-view]}
+
+{tabs}
+
+{tab(Management console)}
+
+1. [Go to](https://msk.cloud.vk.com/app/en) the VK Cloud management console.
+1. Select the project that contains the bucket you need.
+1. Go to the **Object Storage → Buckets** section.
+1. Click the name of the bucket you need.
+1. Click the name of the object. Its properties page will open:
+
+   - **Name** — the object name.
+   - **Size** — the object size.
+   - **Object owner** — the [project ID](/en/tools-for-using-services/account/instructions/project-settings/manage) the object belongs to.
+   - **Storage class** — the [storage class](../../../concepts/about) of the object.
+   - **Creation date** — the date and time the object was added to the bucket.
+   - **Last modified** — the date and time of the last modification of the object.
+   - **Object link** — the object download link. You can copy the link by clicking the icon ![Copy](assets/copy-icon.svg "inline") to the right of it.
+   - **ETag** — the object checksum used to verify its integrity during [multipart upload](../../../concepts/features). You can copy the checksum by clicking the icon ![Copy](assets/copy-icon.svg "inline") to the right of it.
+   - **File access** — the [access control list (ACL)](../../../concepts/access/s3-acl) assigned to the object.
+
+{/tab}
+
+{tab(AWS CLI)}
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api head-object \
+      --bucket <BUCKET_NAME> \
+      --key <OBJECT_KEY> \
+      --version-id <VERSION_ID> \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<BUCKET_NAME>` — the name of the bucket where the object is located.
+   - `<OBJECT_KEY>` — the full object name, including its path.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `--version-id` parameter is not specified, the current version will be used.
+   - `<ENDPOINT_URL>` — the VK Object Storage domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+   {cut(Example command and response)}
+
+   Command example:
+
+   ```console
+   aws s3api head-object \
+      --bucket my-bucket \
+      --key folder/my-object.exe \
+      --endpoint-url https://hb.ru-msk.vkcloud-storage.ru
+   ```
+
+   Response example:
+
+   ```json
+   {
+     "LastModified": "2023-10-05T14:38:16+00:00",
+     "ContentLength": 13204976,
+     "ETag": "\"ab5083fd8cd77246da821f42f90a5761\"",
+     "VersionId": "e6JxeTPO0MDl2VZOaWDHmveXbxxIkGic",
+     "ContentType": "application/x-msdownload",
+     "Metadata": {}
+   }
+   ```
+
+   {/cut}
+
+A full description of the `head-object` command parameters is available in the [official AWS CLI documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html).
+
+{/tab}
+
+{/tabs}
+
+## {heading(Downloading an object)[id=s3-instructions-manage-object-download]}
 
 {tabs}
 
@@ -297,7 +466,7 @@ The `list_object` command is described in detail in the [official documentation 
 
 {/tabs}
 
-## Granting access to an object
+## {heading(Granting access to an object)[id=s3-instructions-manage-object-access]}
 
 Objects uploaded to a bucket have the `private` access level by default, which means they can only be downloaded:
 
@@ -531,7 +700,7 @@ To generate a presigned URL:
 
 {/tabs}
 
-## Copying an object
+## {heading(Copying an object)[id=s3-instructions-manage-object-copy]}
 
 This guide is suitable for copying an object within a single bucket or between buckets of the same project.
 
@@ -724,7 +893,266 @@ This guide is suitable for copying an object within a single bucket or between b
 
 {/tabs}
 
-## Deleting an object
+## {heading(Tagging objects)[id=s3-instructions-manage-object-tagging]}
+
+### {heading(View object tags)[id=s3-instructions-manage-object-tagging-view]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To check the tags of an object, run the `get-object-tagging` command.
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api get-object-tagging \
+      --bucket <BUCKET_NAME> \
+      --key <OBJECT_KEY> \
+      --version-id <VERSION_ID> \
+      --endpoint-url=<ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<BUCKET_NAME>` — the name of the bucket assigned to it at creation.
+   - `<OBJECT_KEY>` — the full object name, including its path.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `--version-id` parameter is not specified, the current version will be used.
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+   Response example:
+
+   ```console
+   {
+       "TagSet": [
+           {
+               "Key": "key-object1",
+               "Value": "value-object1"
+           },
+           {
+               "Key": "key-object2",
+               "Value": "value-object2"
+           }
+       ]
+   }
+   ```
+
+{/tab}
+
+{/tabs}
+
+### {heading(Copy an object keeping its tags)[id=s3-instructions-manage-object-tagging-copy]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To keep the tags when copying an object, run the `copy-object` command with the `--tagging-directive COPY` option.
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api copy-object \
+      --copy-source <SOURCE_BUCKET_NAME>/<SOURCE_OBJECT_KEY>?versionId=<VERSION_ID> \
+      --bucket <DESTINATION_BUCKET_NAME> \
+      --key <DESTINATION_OBJECT_KEY> \
+      --tagging-directive COPY \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<SOURCE_BUCKET_NAME>` — the name of the bucket to copy the object from.
+   - `<SOURCE_OBJECT_KEY>` — the full name of the copied object, including its path.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `?versionId=<VERSION_ID>` parameter is not specified, the current version will be used.
+   - `<DESTINATION_BUCKET_NAME>` — the name of the bucket to copy the object to.
+   - `<DESTINATION_OBJECT_KEY>` — the full name for the object copy, including its path. Follow the [recommendations](../../../concepts/about) when choosing names.
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+{/tab}
+
+{/tabs}
+
+### {heading(Copy an object replacing its tags)[id=s3-instructions-manage-object-tagging-replace]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To replace the tags when copying an object, run the `copy-object` command with the `--tagging-directive REPLACE` option.
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api copy-object \
+      --copy-source <SOURCE_BUCKET_NAME>/<SOURCE_OBJECT_KEY>?versionId=<VERSION_ID> \
+      --bucket <DESTINATION_BUCKET_NAME> \
+      --key <DESTINATION_OBJECT_KEY> \
+      --tagging-directive REPLACE \
+      --tagging "<TAGS>" \
+      --endpoint-url <ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<SOURCE_BUCKET_NAME>` — the name of the bucket to copy the object from.
+   - `<SOURCE_OBJECT_KEY>` — the full name of the copied object, including its path.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `?versionId=<VERSION_ID>` parameter is not specified, the current version will be used.
+   - `<DESTINATION_BUCKET_NAME>` — the name of the bucket to copy the object to.
+   - `<DESTINATION_OBJECT_KEY>` — the full name for the object copy, including its path. Follow the [recommendations](../../../concepts/about) when choosing names.
+   - `<TAGS>` — tags in the format `<KEY_1>=<VALUE_1>&...<KEY_N>=<VALUE_N>`. For example: `Key1=Value1&Key2=Value2`.
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+{/tab}
+
+{/tabs}
+
+### {heading(Add a tag when uploading)[id=s3-instructions-manage-object-upload-tagging]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To add a tag to a new object when uploading it, run the `put-object` command with the `--tagging` option.
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api put-object --endpoint-url <ENDPOINT_URL> --bucket <BUCKET_NAME> --key <OBJECT_KEY> --body <FILE_PATH> --tagging "<TAGS>"
+   ```
+
+   Here:
+
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+   - `<BUCKET_NAME>` — the name of the bucket assigned to it at creation.
+   - `<OBJECT_KEY>` — the full object name, including its path. Follow the [recommendations](../../../concepts/about) when choosing names.
+   - `<FILE_PATH>` — the path to the local file.
+   - `<TAGS>` — tags in the format `<KEY_1>=<VALUE_1>&...<KEY_N>=<VALUE_N>`. For example: `Key1=Value1&Key2=Value2`.
+
+{/tab}
+
+{/tabs}
+
+### {heading(Add a tag to an existing object)[id=s3-instructions-manage-object-existing-tagging]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To add a tag to an existing object, run the `put-object-tagging` command with the `--tagging` option and a list of key/value pairs in JSON format.
+
+{note:warn}
+The `put-object-tagging` operation overwrites the current tags of the object if they were set earlier. To keep the existing tags, [request](#s3-instructions-manage-object-tagging-view) the current tag configuration and add it to the `put-object-tagging` command.
+{/note}
+
+{cut(Tag enumeration structure)}
+
+```txt
+{
+  "TagSet": [
+    {
+      "Key": "<TAG_KEY_1>",
+      "Value": "<TAG_VALUE_1>"
+    },
+    ...
+    {
+      "Key": "<TAG_KEY_N>",
+      "Value": "<TAG_VALUE_N>"
+    }
+  ]
+}
+```
+
+{/cut}
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. In the console, set, for example, two tags by running the command:
+
+   ```console
+   aws s3api put-object-tagging \
+      --bucket <BUCKET_NAME> \
+      --key <OBJECT_KEY> \
+      --tagging '{
+         "TagSet": [
+            {
+              "Key": "<TAG_KEY_1>",
+              "Value": "<TAG_VALUE_1>"
+            },
+            {
+               "Key": "<TAG_KEY_2>",
+               "Value": "<TAG_VALUE_2>"
+            }
+         ]
+      }' \
+      --version-id <VERSION_ID> \
+      --endpoint-url=<ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<BUCKET_NAME>` — the name of the bucket assigned to it at creation.
+   - `<OBJECT_KEY>` — the full object name, including its path.
+   - `<TAG_KEY_1>`, `<TAG_VALUE_1>` and `<TAG_KEY_2>`, `<TAG_VALUE_2>` — key/value pairs for the object tags.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `--version-id` parameter is not specified, the current version will be used.
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+{/tab}
+
+{/tabs}
+
+### {heading(Delete object tags)[id=s3-instructions-manage-object-tagging-delete]}
+
+{tabs}
+
+{tab(AWS CLI)}
+
+To delete the tags of an object, run the `delete-object-tagging` command.
+
+1. Install and configure [AWS CLI](../../../connect/s3-cli) if you haven't done so already.
+1. Open the console and run the command:
+
+   ```console
+   aws s3api delete-object-tagging \
+      --bucket <BUCKET_NAME> \
+      --key <OBJECT_KEY> \
+      --version-id <VERSION_ID> \
+      --endpoint-url=<ENDPOINT_URL>
+   ```
+
+   Here:
+
+   - `<BUCKET_NAME>` — the name of the bucket assigned to it at creation.
+   - `<OBJECT_KEY>` — the full object name, including its path.
+   - (Optional) `<VERSION_ID>` — the version identifier of the object in a bucket with [versioning](../../../concepts/versioning). If the `--version-id` parameter is not specified, the current version will be used.
+   - `<ENDPOINT_URL>` — the {var(s3)} service domain, which must match the account's [region](/en/tools-for-using-services/account/concepts/regions):
+
+     - `https://hb.vkcloud-storage.ru` or `https://hb.ru-msk.vkcloud-storage.ru` — the Moscow region domain;
+     - `https://hb.kz-ast.vkcloud-storage.ru` — the Kazakhstan region domain.
+
+{/tab}
+
+{/tabs}
+
+## {heading(Deleting an object)[id=s3-instructions-manage-object-delete]}
 
 {tabs}
 
@@ -899,7 +1327,7 @@ To delete an object:
 
 {/tabs}
 
-## Deleting parts of an uploaded object
+## {heading(Deleting parts of an uploaded object)[id=s3-instructions-manage-object-parts-delete]}
 
 If a [multipart upload](/en/storage/s3/concepts/features#s3-concepts-features-object-uploading) is not completed, the object is not created and cannot be used, but storage of the uploaded parts is [charged](../../../tariffication). To avoid being charged, delete multipart uploads that will not be completed.
 

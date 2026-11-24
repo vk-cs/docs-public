@@ -12,7 +12,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 
 ## Before you start
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 
 1. [Create](/en/networks/vnet/instructions/net#vnet-net-add) networks.
 
