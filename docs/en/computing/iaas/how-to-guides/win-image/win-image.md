@@ -218,6 +218,10 @@ openstack image create \
 ```
 Replace <IMAGE_NAME> with the actual one. Arguments of the form `--property <key>=<value>` are used to assign [meta tags](/en/computing/iaas/instructions/images/image-metadata) to the image.
 
+{note:warn}
+If the image is intended for VMs with vGPU, add the argument with the meta tag `--property hw_video_model=none` to the command. Otherwise, the hypervisor emulates an additional video adapter that conflicts with vGPU.
+{/note}
+
 Wait for the operation to complete. After uploading the image, you will be able to [create a VM](../../instructions/vm/vm-create) by standard means of the VK Cloud platform.
 
 ## {heading(Delete unused resources)[id=iaas-win-image-delete]}

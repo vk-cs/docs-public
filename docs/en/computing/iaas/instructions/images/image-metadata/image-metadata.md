@@ -20,6 +20,7 @@ VM image tags are divided into:
 | `os_admin_user` | The user is inside the guest OS with administrator rights; the password can be set via [management console](../../vm/vm-manage#iaas-vm-manage-password) | |
 | `os_require_quiesce` | The flag responsible for freezing the file system before taking snapshots of attached disks. If `yes`, then if the file system freezes unsuccessfully, the snapshot creation operation will be canceled | `no` |
 | `hw_qemu_guest_agent` | A sign of the presence of a QEMU agent inside the guest OS. If `True`, it makes available the possibility of changing the user's password and freezing the file system for backup | `False` |
+| `hw_video_model` | The model of the video adapter emulated for the guest OS. For Windows images on VMs with vGPU, the value `none` is required because the emulated video adapter conflicts with vGPU | Depends on the hypervisor |
 | `mcs_name` | The name of the image that is displayed to the user of the management console | |
 
 ### {heading(Filling os_distro and os_version tags)[id=find_os_distro_and_os_version]}
