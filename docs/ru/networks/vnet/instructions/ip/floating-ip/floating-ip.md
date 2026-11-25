@@ -99,6 +99,12 @@ Floating IP-адрес назначается из общего пула слу�
 
 ## {heading(Привязка Floating IP-адреса)[id=vnet-floating-ip-associate]}
 
+{note:warn}
+Floating IP-адрес можно привязать только к порту, который находится в подсети, подключенной к маршрутизатору с доступом к той же {linkto(../../../concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}, к которой относится Floating IP-адрес.
+
+Если маршрутизатор не имеет доступа к внешней сети, привязать Floating IP-адрес не удастся.
+{/note}
+
 {tabs}
 
 {tab(Личный кабинет)}

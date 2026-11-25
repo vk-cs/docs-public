@@ -96,6 +96,12 @@ A floating IP address is randomly assigned from a shared pool.
 
 ## {heading(Bindind a floating IP address)[id=vnet-floating-ip-associate]}
 
+{note:warn}
+You can bind a floating IP address only to a port that is located in a subnet connected to a router with access to the same {linkto(../../../concepts/net-types#external_net)[text=external network]} to which the floating IP address belongs.
+
+If the router has no access to an external network, you cannot bind the floating IP address.
+{/note}
+
 {tabs}
 
 {tab(Management console)}

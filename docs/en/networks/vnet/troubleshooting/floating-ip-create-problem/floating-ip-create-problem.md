@@ -1,15 +1,15 @@
-# {heading(Cannot add a Floating IP address)[id=vnet-floating-ip-create-problem]}
+# {heading(Cannot add a floating IP address to a project)[id=vnet-floating-ip-create-problem]}
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-An error occurs when adding a Floating IP address.
+An error occurs when adding a floating IP address.
 
 Possible causes:
 
 - the project {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#nets)[text=quota]} for the number of external IP addresses is exhausted;
 - the {linkto(../../concepts/net-types#external_net)[text=external network]} from which addresses are allocated has no free addresses.
 
-### {heading(Solution)[id=vnet-floating-ip-create-problem-resolve]}
+## {heading(Solution)[id=vnet-floating-ip-create-problem-resolve]}
 
 1. Check the project quotas for the number of addresses.
 

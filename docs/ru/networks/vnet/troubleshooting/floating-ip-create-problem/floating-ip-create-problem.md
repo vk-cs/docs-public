@@ -1,4 +1,4 @@
-# {heading(Не удается добавить Floating IP-адрес)[id=vnet-floating-ip-create-problem]}
+# {heading(Не удается добавить Floating IP-адрес в проект)[id=vnet-floating-ip-create-problem]}
 
 При добавлении Floating IP-адреса возникает ошибка.
 
@@ -7,7 +7,7 @@
 - исчерпана {linkto(../../../../tools-for-using-services/account/concepts/quotasandlimits#quotasandlimits-nets-subnets-ips)[text=квота]} проекта на количество внешних IP-адресов;
 - во {linkto(../../concepts/net-types#vnet-net-types-external-net)[text=внешней сети]}, из которой выделяются адреса, нет свободных адресов.
 
-### {heading(Решение)[id=vnet-floating-ip-create-problem-resolve]}
+## {heading(Решение)[id=vnet-floating-ip-create-problem-resolve]}
 
 1. Проверьте квоты проекта на количество адресов.
 
@@ -20,4 +20,3 @@
    ```
 
    Если адрес не выделяется, команда завершится ошибкой. Обратитесь в [техническую поддержку](/ru/contacts) и укажите имя внешней сети и текст ошибки.
-

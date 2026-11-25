@@ -1,0 +1,14 @@
+{
+  "title": "Cannot bind a floating IP address to a port",
+  "shortDescription": "What to do if an error occurs when binding a floating IP address to an instance port",
+  "metaDescription": "What to do if an error occurs when binding a floating IP address to a port: the floating IP address is not bound, how to fix the error when binding a floating IP address.",
+  "sectionTitle": "Cannot bind a floating IP address to a port",
+  "icon": "",
+  "weight": 5,
+  "build": {
+    "for": [
+      "public"
+    ]
+  },
+  "uuid": ""
+}

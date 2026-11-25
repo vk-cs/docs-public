@@ -1,8 +1,8 @@
 {
-  "title": "Cannot add a Floating IP address",
-  "shortDescription": "What to do if you cannot add a Floating IP address",
-  "metaDescription": "What to do if you cannot add a Floating IP address: checking the project quota for external IP addresses and free addresses in the external network",
-  "sectionTitle": "Cannot add a Floating IP address",
+  "title": "Cannot add a floating IP address to a project",
+  "shortDescription": "What to do if you cannot add a floating IP address",
+  "metaDescription": "What to do if an error occurs when adding a floating IP address to a project: how to fix errors when adding a floating IP address.",
+  "sectionTitle": "Cannot add a floating IP address",
   "icon": "",
   "weight": 5,
   "build": {
