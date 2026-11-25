@@ -1,8 +1,8 @@
 {
-  "title": "Не удается добавить Floating IP-адрес",
+  "title": "Не удается добавить Floating IP-адрес в проект",
   "shortDescription": "Что делать, если при добавлении Floating IP-адреса возникает ошибка",
-  "metaDescription": "Что делать, если при добавлении Floating IP-адреса возникает ошибка",
-  "sectionTitle": "Не удается добавить Floating IP-адрес",
+  "metaDescription": "Что делать, если при добавлении Floating IP-адреса к проекту возникает ошибка: как исправить ошибки при добавлении плавающего IP-адреса.",
+  "sectionTitle": "Не удается добавить Floating IP-адрес в проект",
   "icon": "",
   "weight": 5,
   "build": {

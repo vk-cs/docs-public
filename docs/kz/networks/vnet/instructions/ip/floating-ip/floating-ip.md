@@ -1,10 +1,10 @@
-# {heading(Floating IP-адреса)[id=vnet-floating-ip]}
+# {heading(Floating IP-мекенжайлары)[id=vnet-floating-ip]}
 
 {include(/kz/_includes/_translated_by_ai_kz.md)}
 
 Сіз Floating IP-адрестерін басқара аласыз: оларды қарау, жобаға қосу және жобадан шығару, сондай-ақ осы IP-адрестерін байланыстыру және ажырату.
 
-## {heading(Просмотр списка Floating IP-адресов)[id=vnet-floating-ip-view]}
+## {heading(Floating IP-мекенжайларының тізімін қарау)[id=vnet-floating-ip-view]}
 
 {tabs}
 
@@ -33,7 +33,7 @@
 
 {/tabs}
 
-## {heading(Добавление Floating IP-адреса в проект)[id=vnet-floating-ip-add]}
+## {heading(Floating IP-мекенжайын жобаға қосу)[id=vnet-floating-ip-add]}
 
 {note:warn}
 Floating IP-адрес ортақ пулдан кездейсоқ түрде тағайындалады.
@@ -67,7 +67,7 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 
 {/tabs}
 
-## {heading(Редактирование описания Floating IP-адреса)[id=vnet-floating-ip-edit]}
+## {heading(Floating IP-мекенжайының сипаттамасын өңдеу)[id=vnet-floating-ip-edit]}
 
 {tabs}
 
@@ -92,14 +92,20 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 1. Келесі пәрменді орындаңыз:
 
    ```console
-   openstack floating ip set <ID_FLOATING_IP-АДРЕСА> --description "<ОПИСАНИЕ>"
+   openstack floating ip set <ID_FLOATING_IP-МЕКЕНЖАЙЫ> --description "<СИПАТТАМА>"
    ```
 
 {/tab}
 
 {/tabs}
 
-## {heading(Привязка Floating IP-адреса)[id=vnet-floating-ip-associate]}
+## {heading(Floating IP-мекенжайын байланыстыру)[id=vnet-floating-ip-associate]}
+
+{note:warn}
+Floating IP-адресті тек Floating IP-адрес тиесілі сол {linkto(../../../concepts/net-types#vnet-net-types-external-net)[text=сыртқы желіге]} қолжетімділігі бар маршрутизаторға қосылған ішкі желідегі портқа ғана байланыстыруға болады.
+
+Егер маршрутизатордың сыртқы желіге қолжетімділігі болмаса, Floating IP-адресті байланыстыру мүмкін болмайды.
+{/note}
 
 {tabs}
 
@@ -127,7 +133,7 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 1. Келесі пәрменді орындаңыз:
 
    ```console
-   openstack floating ip set <ID_FLOATING_IP-АДРЕСА> --port <ID_ПОРТА>
+   openstack floating ip set <ID_FLOATING_IP-МЕКЕНЖАЙЫ> --port <ПОРТ_ID>
    ```
 
 {/tab}
@@ -167,7 +173,7 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 
 {/tabs}
 
-## {heading(Удаление Floating IP-адреса из проекта)[id=vnet-floating-ip-delete]}
+## {heading(Floating IP-мекенжайын жобадан шығару)[id=vnet-floating-ip-delete]}
 
 {tabs}
 
@@ -191,7 +197,7 @@ Floating IP-адрес ортақ пулдан кездейсоқ түрде т�
 1. Келесі пәрменді орындаңыз:
 
    ```console
-   openstack floating ip delete <ID_FLOATING_IP-АДРЕСА>
+   openstack floating ip delete <ID_FLOATING_IP-МЕКЕНЖАЙЫ>
    ```
 
 {/tab}

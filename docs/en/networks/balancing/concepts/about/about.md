@@ -5,7 +5,7 @@
 The load balancer distributes incoming traffic across multiple virtual backend servers, thereby providing high availability for the services provided by these servers. If one or more servers fail, traffic will be redirected to the remaining servers. {ifdef(public)}A {linkto(#balancing-load-balancer-types)[text=separate type]} of balancer is also used to ensure the operation of other {var(cloud)} services.
 
 {note:warn}
- It is recommended to use load balancers from {var(cloud)} in projects. The operability of third-party solutions is not guaranteed. In particular, Windows Server Network Load Balancer (NLB) and Software Load Balancer (SLB) are not supported.
+It is recommended to use load balancers from {var(cloud)} in projects. The operability of third-party solutions is not guaranteed. In particular, Windows Server Network Load Balancer (NLB) and Software Load Balancer (SLB) are not supported.
 {/note}
 {/ifdef}
 
@@ -63,7 +63,7 @@ Such a balancer is created automatically to ensure the operation of services and
 {/tabs}
 {/ifdef}
 
-## {heading(Balancing methods)[id=balancing-load-balancer-types]}
+## {heading(Balancing methods)[id=balancing-load-balancer-methods]}
 
 {include(../../../../_includes/_load_balancer.md)[tags=concepts]}
 

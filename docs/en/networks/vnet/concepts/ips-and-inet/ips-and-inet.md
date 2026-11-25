@@ -47,6 +47,8 @@ Floating IP addresses are used for:
 
 - Flexible network reconfiguration — in environments with frequently changing requirements, floating IP addresses allow you to quickly redistribute resources without the need to change IP addressing and associated settings.
 
+Floating IP addresses belong to the `ext-net` or `internet` {linkto(../../../../networks/vnet/concepts/net-types#external_net)[text=external networks]}. To {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-associate)[text=bind]} a floating IP address to an instance port, the port must be located in a subnet that is connected to a router. This router must be connected to the same external network to which the floating IP address belongs. If the router has no access to an external network, you cannot bind a floating IP address to objects in its subnets.
+
 The number of floating IP addresses per project is limited by [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#nets).
 
 If the floating IP addresses quota in your project is higher than 0, the maximum number of floating IP addresses not attached to virtual machines is 1.
