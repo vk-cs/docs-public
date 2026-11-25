@@ -1568,17 +1568,116 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/createAnycastip"
+              },
+              "examples": {
+                "withHealthcheckTCP": {
+                  "summary": "Создание с healthcheck (TCP)",
+                  "value": {
+                    "anycastip": {
+                      "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                      "name": "my-anycast",
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 8080
+                      }
+                    }
+                  }
+                },
+                "fullHealthcheck": {
+                  "summary": "Создание с полным healthcheck",
+                  "value": {
+                    "anycastip": {
+                      "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                      "name": "my-anycast",
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 8080,
+                        "period_seconds": 30,
+                        "timeout_seconds": 5,
+                        "failure_threshold": 3,
+                        "success_threshold": 2
+                      }
+                    }
+                  }
+                },
+                "emptyHealthcheck": {
+                  "summary": "Создание с пустым healthcheck",
+                  "value": {
+                    "anycastip": {
+                      "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                      "name": "my-anycast",
+                      "healthcheck": {}
+                    }
+                  }
+                },
+                "withoutHealthcheck": {
+                  "summary": "Создание без healthcheck",
+                  "value": {
+                    "anycastip": {
+                      "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                      "name": "my-anycast"
+                    }
+                  }
+                }
               }
             }
           }
         },
         "responses": {
-          "201": {
+          "200": {
             "description": "ОК",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/createAnycastipResponse"
+                },
+                "examples": {
+                  "createdWithTCP": {
+                    "summary": "Ответ при создании с healthcheck (TCP)",
+                    "value": {
+                      "anycastip": {
+                        "id": "0fdf9f3a-d278-46c5-aba5-08e9f97434ae",
+                        "name": "my-anycast",
+                        "description": "",
+                        "tenant_id": "b7176b3933b34dfeaa1aea707fbdfd3b",
+                        "project_id": "b7176b3933b34dfeaa1aea707fbdfd3b",
+                        "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                        "subnet_id": "1cb62073-6ad8-4eae-a278-a359983fcb2e",
+                        "ip_address": "100.70.145.88",
+                        "associations": [],
+                        "healthcheck": {
+                          "type": "TCP",
+                          "port": 8080,
+                          "period_seconds": null,
+                          "timeout_seconds": null,
+                          "failure_threshold": null,
+                          "success_threshold": null,
+                          "property": null
+                        },
+                        "created_at": "2026-09-30T09:44:18",
+                        "updated_at": "2026-09-30T09:44:18"
+                      }
+                    }
+                  },
+                  "createdWithoutHealthcheck": {
+                    "summary": "Ответ при создании без healthcheck",
+                    "value": {
+                      "anycastip": {
+                        "id": "3a0565b9-b99b-4610-a252-d1a5aed8593e",
+                        "name": "my-anycast",
+                        "description": "",
+                        "tenant_id": "b7176b3933b34dfeaa1aea707fbdfd3b",
+                        "project_id": "b7176b3933b34dfeaa1aea707fbdfd3b",
+                        "network_id": "3c74db4f-eaa8-4fcb-b834-3f875bd19254",
+                        "subnet_id": "1cb62073-6ad8-4eae-a278-a359983fcb2e",
+                        "ip_address": "100.70.145.90",
+                        "associations": [],
+                        "healthcheck": {},
+                        "created_at": "2026-09-30T09:48:06",
+                        "updated_at": "2026-09-30T09:48:06"
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -1614,10 +1713,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/getAnycastipsResponse"
-                  }
+                  "$ref": "#/components/schemas/createAnycastipResponse"
                 }
               }
             }
@@ -1648,6 +1744,100 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/createAnycastip"
+              },
+              "examples": {
+                "updateType": {
+                  "summary": "Смена типа TCP -> ICMP",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "ICMP"
+                      }
+                    }
+                  }
+                },
+                "updatePort": {
+                  "summary": "Обновление port",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090
+                      }
+                    }
+                  }
+                },
+                "updatePeriod": {
+                  "summary": "Обновление period_seconds",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090,
+                        "period_seconds": 60
+                      }
+                    }
+                  }
+                },
+                "updateTimeout": {
+                  "summary": "Обновление timeout_seconds",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090,
+                        "timeout_seconds": 10
+                      }
+                    }
+                  }
+                },
+                "updateFailureThreshold": {
+                  "summary": "Обновление failure_threshold",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090,
+                        "failure_threshold": 5
+                      }
+                    }
+                  }
+                },
+                "updateSuccessThreshold": {
+                  "summary": "Обновление success_threshold",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090,
+                        "success_threshold": 3
+                      }
+                    }
+                  }
+                },
+                "updateMultiple": {
+                  "summary": "Обновление нескольких полей сразу (полный healthcheck)",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {
+                        "type": "TCP",
+                        "port": 9090,
+                        "period_seconds": 60,
+                        "timeout_seconds": 10,
+                        "failure_threshold": 5,
+                        "success_threshold": 3
+                      }
+                    }
+                  }
+                },
+                "removeHealthcheck": {
+                  "summary": "Удаление healthcheck",
+                  "value": {
+                    "anycastip": {
+                      "healthcheck": {}
+                    }
+                  }
+                }
               }
             }
           }
@@ -1658,13 +1848,55 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/createAnycastipResponse"
+                  "$ref": "#/components/schemas/createAnycastipResponse"
+                },
+                "examples": {
+                  "updatedType": {
+                    "summary": "Ответ после смены типа на ICMP",
+                    "value": {
+                      "anycastip": {
+                        "healthcheck": {
+                          "type": "ICMP",
+                          "port": null,
+                          "period_seconds": null,
+                          "timeout_seconds": null,
+                          "failure_threshold": null,
+                          "success_threshold": null,
+                          "property": null
+                        }
+                      }
+                    }
+                  },
+                  "updatedMultiple": {
+                    "summary": "Ответ после полного обновления",
+                    "value": {
+                      "anycastip": {
+                        "healthcheck": {
+                          "type": "TCP",
+                          "port": 9090,
+                          "period_seconds": 60,
+                          "timeout_seconds": 10,
+                          "failure_threshold": 5,
+                          "success_threshold": 3,
+                          "property": null
+                        }
+                      }
+                    }
+                  },
+                  "removedHealthcheck": {
+                    "summary": "Ответ после удаления healthcheck",
+                    "value": {
+                      "anycastip": {
+                        "healthcheck": {}
+                      }
+                    }
                   }
                 }
               }
             }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
           },
           "500": {
             "description": "Внутренняя ошибка сервера"
@@ -1687,8 +1919,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "ОК"
+          "204": {
+            "description": "Успешное удаление"
           },
           "500": {
             "description": "Внутренняя ошибка сервера"
@@ -1724,17 +1956,20 @@
         },
         "responses": {
           "200": {
-            "description": "ОК",
+            "description": "ОК. Возвращает объект Anycast IP-адреса без обёртки",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/createAnycastipResponse"
-                  }
+                  "$ref": "#/components/schemas/Anycast_IP"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "Порт не найден"
           },
           "500": {
             "description": "Внутренняя ошибка сервера"
@@ -1770,17 +2005,20 @@
         },
         "responses": {
           "200": {
-            "description": "ОК",
+            "description": "ОК. Возвращает объект Anycast IP-адреса без обёртки",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/createAnycastipResponse"
-                  }
+                  "$ref": "#/components/schemas/Anycast_IP"
                 }
               }
             }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "Порт не найден"
           },
           "500": {
             "description": "Внутренняя ошибка сервера"
@@ -7612,6 +7850,11 @@
       "Anycast_IP": {
         "type": "object",
         "properties": {
+          "id": {
+            "description": "Идентификатор Anycast IP-адреса",
+            "type": "string",
+            "readOnly": true
+          },
           "name": {
             "description": "Название Anycast IP-адреса",
             "type": "string"
@@ -7622,88 +7865,137 @@
           },
           "tenant_id": {
             "description": "Идентификатор тенанта",
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "project_id": {
             "description": "Идентификатор проекта",
-            "type": "string"
+            "type": "string",
+            "readOnly": true
           },
           "network_id": {
             "description": "Уникальный идентификатор внешней сети (UUID), из которой будет выбран IP-адрес для Anycast",
             "type": "string"
           },
+          "subnet_id": {
+            "description": "Идентификатор подсети. Только администратор",
+            "type": "string"
+          },
+          "ip_address": {
+            "description": "Явный IP-адрес. Только администратор",
+            "type": "string"
+          },
           "associations": {
             "description": "Список связанных IP-адресов. Может быть пустым. К одному Anycast IP-адресу можно привязать IP-адреса только одного типа",
-            "type": "object",
-            "properties": {
-              "id": {
-                "description": "Уникальный идентификатор IP-адреса (UUID), который нужно привязать к Anycast IP-адресу",
-                "type": "string"
-              },
-              "type": {
-                "description": "Тип IP-адреса: `port` — публичный IP-адрес ВМ, `dc_interface` — IP-адрес интерфейса продвинутого маршрутизатора, `octavia` — IP-адрес балансировщика",
-                "type": "string"
-              }
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Association"
             }
           },
           "healthcheck": {
-            "description": "Проверка работоспособности",
             "type": "object",
+            "description": "Проверка работоспособности. При обновлении заменяется целиком: поля, не указанные в запросе, сбрасываются в `null`",
             "properties": {
               "type": {
-                "description": "Тип порта: `TCP` или `ICMP`",
-                "type": "string"
+                "description": "Тип проверки: `TCP` или `ICMP`. Обязателен в непустом healthcheck",
+                "type": "string",
+                "enum": [
+                  "TCP",
+                  "ICMP"
+                ]
               },
               "port": {
-                "description": "Порт для проверки работоспособности. Допустимо значение `NULL`. Для указанных в проверке ВМ добавьте правило безопасности, разрешающее входящий трафик на указанный порт с IP-адреса `169.254.169.100/32`",
-                "type": "integer"
+                "description": "Порт для проверки работоспособности (для `TCP`). Допустимо значение `NULL`. Для указанных в проверке ВМ добавьте правило безопасности, разрешающее входящий трафик на указанный порт с IP-адреса `169.254.169.100/32`",
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 65535
               },
               "period_seconds": {
                 "description": "Задержка между проверками в секундах",
-                "type": "integer"
+                "type": "integer",
+                "minimum": 5,
+                "maximum": 300
+              },
+              "timeout_seconds": {
+                "description": "Тайм-аут подключения к ресурсу",
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 120
               },
               "failure_threshold": {
                 "description": "Количество последовательно выполненных неудачных проверок для снятия ресурса с анонса",
-                "type": "integer"
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 30
               },
               "success_threshold": {
                 "description": "Количество последовательно выполненных успешных проверок для возврата ресурса в анонс",
-                "type": "integer"
-              },
-              "timeout": {
-                "description": "Тайм-аут подключения к ресурсу",
-                "type": "integer"
-              },
-              "property": {
-                "description": "Опции для определенных типов проверок. Сейчас опции не реализованы",
-                "type": "object"
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 30
               }
             }
+          },
+          "created_at": {
+            "description": "Время создания",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          },
+          "updated_at": {
+            "description": "Время последнего изменения",
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          }
+        }
+      },
+      "Association": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Уникальный идентификатор IP-адреса (UUID), который нужно привязать к Anycast IP-адресу",
+            "type": "string"
+          },
+          "type": {
+            "description": "Тип IP-адреса: `port` — публичный IP-адрес ВМ, `dc_interface` — IP-адрес интерфейса продвинутого маршрутизатора, `octavia` — IP-адрес балансировщика",
+            "type": "string",
+            "enum": [
+              "port",
+              "dc_interface",
+              "octavia"
+            ]
           }
         }
       },
       "getAnycastipsResponse": {
         "type": "object",
         "properties": {
-          "anycastip": {
-            "$ref": "#/components/schemas/Anycast_IP"
+          "anycastips": {
+            "description": "Список Anycast IP-адресов",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Anycast_IP"
+            }
           }
         },
         "example": {
-          "anycastips": {
-            "associations": [],
-            "name": "test1234567",
-            "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
-            "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
-            "created_at": "2025-01-24T09:11:16",
-            "updated_at": "2025-01-28T14:26:05",
-            "subnet_id": "4675a124-dddd-eeee-ffff-82dc7d53c820",
-            "healthcheck": {},
-            "project_id": "bbb2222c2c174a0bb128cd33cf0b7878",
-            "ip_address": "212.233.94.233",
-            "id": "5a3fd388-gggg-hhhh-iiii-98557b07cc7d",
-            "description": ""
-          }
+          "anycastips": [
+            {
+              "id": "5a3fd388-gggg-hhhh-iiii-98557b07cc7d",
+              "name": "test1234567",
+              "description": "",
+              "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
+              "project_id": "bbb2222c2c174a0bb128cd33cf0b7878",
+              "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
+              "subnet_id": "4675a124-dddd-eeee-ffff-82dc7d53c820",
+              "ip_address": "212.233.94.233",
+              "associations": [],
+              "healthcheck": {},
+              "created_at": "2025-01-24T09:11:16",
+              "updated_at": "2025-01-28T14:26:05"
+            }
+          ]
         }
       },
       "createAnycastip": {
@@ -7714,21 +8006,22 @@
           }
         },
         "example": {
-          "name": "Example Anycast IP",
           "anycastip": {
+            "name": "Example Anycast IP",
             "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
-            "associations": {
-              "id": "d9735126-dddd-eeee-ffff-eb28cf64c809",
-              "type": "port"
-            },
+            "associations": [
+              {
+                "id": "d9735126-dddd-eeee-ffff-eb28cf64c809",
+                "type": "port"
+              }
+            ],
             "healthcheck": {
-              "type": "TCP,",
-              "port": "80,",
-              "property": {},
-              "success_threshold": 1,
+              "type": "TCP",
+              "port": 80,
+              "period_seconds": 5,
               "timeout_seconds": 2,
               "failure_threshold": 1,
-              "period_seconds": 5
+              "success_threshold": 1
             }
           }
         }
@@ -7742,36 +8035,39 @@
         },
         "example": {
           "anycastip": {
+            "id": "b3a72e00-pppp-rrrr-ssss-20422135cc64",
+            "name": "Example Anycast IP",
+            "description": "",
+            "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
+            "project_id": "bbb222c2c174a0bb128cd33cf0b7878",
+            "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
+            "subnet_id": "4675a124-xxxx-yyyy-zzzz-82dc7d53c820",
+            "ip_address": "212.233.95.21",
             "associations": [
               {
                 "type": "port",
                 "id": "d9735126-dddd-eeee-ffff-eb28cf64c809"
               }
             ],
-            "name": "Example Anycast IP",
-            "network_id": "ec8c610e-aaaa-bbbb-cccc-d2c541e88164",
-            "tenant_id": "aaa1111c2c174a0bb128cd33cf0b7878",
+            "healthcheck": {
+              "type": "TCP",
+              "port": 80,
+              "period_seconds": 5,
+              "timeout_seconds": 2,
+              "failure_threshold": 1,
+              "success_threshold": 1
+            },
             "created_at": "2025-01-30T09:04:24",
-            "updated_at": "2025-01-30T09:04:24",
-            "subnet_id": "4675a124-xxxx-yyyy-zzzz-82dc7d53c820"
-          },
-          "healthcheck": {
-            "property": {},
-            "type": "TCP",
-            "port": 80,
-            "success_threshold": 1,
-            "timeout_seconds": 2,
-            "failure_threshold": 1,
-            "period_seconds": 5
-          },
-          "project_id": "bbb222c2c174a0bb128cd33cf0b7878",
-          "ip_address": "212.233.95.21",
-          "id": "b3a72e00-pppp-rrrr-ssss-20422135cc64",
-          "description": ""
+            "updated_at": "2025-01-30T09:04:24"
+          }
         }
       },
       "putAssociateAnycastips": {
         "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
         "properties": {
           "id": {
             "description": "Уникальный идентификатор IP-адреса (UUID), который нужно привязать к Anycast IP-адресу",
@@ -7779,7 +8075,12 @@
           },
           "type": {
             "description": "Тип IP-адреса: `port` — публичный IP-адрес ВМ, `dc_interface` — IP-адрес интерфейса продвинутого маршрутизатора, `octavia` — IP-адрес балансировщика",
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "port",
+              "dc_interface",
+              "octavia"
+            ]
           }
         },
         "example": {
@@ -7789,9 +8090,12 @@
       },
       "putDisAssociateAnycastips": {
         "type": "object",
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
-            "description": "Уникальный идентификатор IP-адреса (UUID), который нужно привязать к Anycast IP-адресу",
+            "description": "Уникальный идентификатор IP-адреса (UUID), который нужно отвязать от Anycast IP-адреса",
             "type": "string"
           }
         },

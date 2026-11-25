@@ -1,4 +1,4 @@
-Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is available in the VK Cloud management console and via the [API](/en/tools-for-using-services/api/api-spec/api-anycast).
+Managing [anycast IP addresses](../../../concepts/ips-and-inet#anycast-ip) is available in the VK Cloud management console and via the {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/neutron-sprut-api#api-spec-neutron-sprut)[text=API]}.
 
 ## {heading(Adding an anycast IP address)[id=add]}
 
@@ -73,7 +73,7 @@ This is a group operation: multiple IP addresses can be unbound at once by selec
 
 When health checks are enabled, the anycast IP address regularly verifies the availability and functionality of servers and load balancers on the specified port.
 
-In the management console, you can only add a TCP port check. Adding checks for ICMP or TCP ports is available via the [Anycast IP API](/en/tools-for-using-services/api/api-spec/api-anycast).
+In the management console, you can only add a TCP port check. Adding checks for ICMP or TCP ports is available via the {linkto(../../../../../tools-for-using-services/api/api-spec/network-api/neutron-sprut-api#api-spec-neutron-sprut)[text=Anycast IP API]}.
 
 {note:warn}
 
