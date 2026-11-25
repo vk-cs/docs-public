@@ -1,10 +1,10 @@
 {
-  "title": "Installing and Configuring the WordPress Service",
+  "title": "Deployment of WordPress",
   "shortDescription": "Connecting and configuring the WordPress system for website content management",
   "metaDescription": "Connecting and configuring the WordPress system for website content management",
-  "sectionTitle": "Installing and Configuring the WordPress Service",
+  "sectionTitle": "Deployment of WordPress",
   "icon": "",
-  "weight": 5,
+  "weight": 22,
   "uuid": "6dd9f4ba-fc8e-4d75-881a-2f7dc9dfdc93",
   "build": {
     "for": [

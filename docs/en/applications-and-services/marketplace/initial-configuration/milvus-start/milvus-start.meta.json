@@ -1,10 +1,10 @@
 {
-  "title": "Milvus Deployment",
+  "title": "Deployment of Milvus",
   "shortDescription": "Deploy Milvus for fast search and analysis of unstructured data",
   "metaDescription": "VK Cloud Marketplace: steps to deploy the Milvus service for fast search and analysis of unstructured data",
-  "sectionTitle": "Milvus Deployment",
+  "sectionTitle": "Deployment of Milvus",
   "icon": "",
-  "weight": 17,
+  "weight": 11,
   "uuid": "9478781f-896c-4b5e-ad73-844a4d5af1aa",
   "build": {
     "for": [

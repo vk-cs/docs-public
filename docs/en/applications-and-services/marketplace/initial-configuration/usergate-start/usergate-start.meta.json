@@ -1,10 +1,10 @@
 {
-  "title": "Infrastructure protection with UserGate NGFW",
+  "title": "Deployment of UserGate NGFW",
   "shortDescription": "Deployment of the UserGate NGFW service, connecting a new network",
   "metaDescription": "UserGate NGFW VK Cloud: deploying the service in your project, connecting a network",
-  "sectionTitle": "Infrastructure protection with UserGate NGFW",
+  "sectionTitle": "Deployment of UserGate NGFW",
   "icon": "",
-  "weight": 5,
+  "weight": 18,
   "uuid": "75df804b-853a-4947-ae4e-5f8096f60506",
   "build": {
     "for": [

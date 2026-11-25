@@ -1,10 +1,10 @@
 {
-  "title": "Grafana deployment",
+  "title": "Deployment of Grafana",
   "shortDescription": "Deployment of Grafana 10 service in the project",
   "metaDescription": "Marketplace VK Cloud: steps to deploy the Grafana 10 service to the target project",
-  "sectionTitle": "Grafana deployment",
+  "sectionTitle": "Deployment of Grafana",
   "icon": "",
-  "weight": 7,
+  "weight": 6,
   "additionalUuids": [
     "384aff1e-83b5-4275-81e6-e3c6530c5777"
   ],

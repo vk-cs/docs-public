@@ -1,0 +1,14 @@
+{
+  "title": "Deployment of GitLab CE",
+  "shortDescription": "Deploying the GitLab CE service in a project",
+  "metaDescription": "Marketplace VK Cloud: steps for deploying the GitLab CE service in a target project",
+  "sectionTitle": "Deployment of GitLab CE",
+  "icon": "",
+  "weight": 5,
+  "uuid": "78289511-01f4-4758-9e4d-5367f277234f",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

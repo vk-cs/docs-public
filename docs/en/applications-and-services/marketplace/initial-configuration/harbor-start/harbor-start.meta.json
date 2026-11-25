@@ -1,0 +1,14 @@
+{
+  "title": "Deployment of Harbor",
+  "shortDescription": "Deploying Harbor to store container images, manage access to them, and scan them for vulnerabilities",
+  "metaDescription": "Harbor in VK Cloud: steps for deploying the Harbor service to store container images, manage access to them, and scan them for vulnerabilities",
+  "sectionTitle": "Deployment of Harbor",
+  "icon": "",
+  "weight": 8,
+  "uuid": "27eeeeaf-ab5d-42a1-aff8-a35aeac5b731",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

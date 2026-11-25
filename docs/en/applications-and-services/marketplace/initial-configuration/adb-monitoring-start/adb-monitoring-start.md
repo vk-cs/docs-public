@@ -1,370 +1,249 @@
-# {heading(Installing and configuring the Monitoring service for Arenadata DB)[id=marketplace-adb-monitoring-start]}
+# {heading(Deployment of Monitoring for Arenadata DB)[id=marketplace-adb-monitoring-start]}
 
 {include(/en/_includes/_translated_by_ai_en.md)}
 
-Monitoring for Arenadata DB is a ready-made solution for monitoring Arenadata databases in the {var(cloud)} infrastructure. It includes a set of pre-installed tools for collecting metrics, visualization, and timely alerting on issues.
+Monitoring for Arenadata DB combines Prometheus capabilities for collecting metrics from all cluster nodes with Grafana for visualizing them. The service lets you monitor the system state in real time through ready-made dashboards and configure automatic alerts in Telegram and MAX when critical events occur.
 
-By completing all the steps of this guide, you will:
+Grafana dashboards are available by domain name with a trusted certificate. If you do not need a public address, Grafana works only on the internal network at the address of the VM with the deployed service. For more information about dashboards, see the [official Grafana documentation](https://grafana.com/docs/grafana/latest/).
 
-1. Enable the Monitoring for Arenadata DB service in your {var(cloud)} management console.
+This guide will help you deploy Monitoring for Arenadata DB on a VM in {var(cloud)} and connect an Arenadata DB cluster to it.
 
-   Upon activation, a virtual machine will be automatically created with the following installed on it:
+{cut(Minimum VM specifications for the service)}
 
-   - [Grafana](https://grafana.com/docs/grafana/latest/) — a service for visualizing and analyzing monitoring data;
-   - [Prometheus](https://prometheus.io/) — a monitoring and alerting service;
-   - ADB Exporter — a service for collecting metrics from Arenadata DB;
-   - [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) — an alert handler for alerts coming from Prometheus.
+- **vCPU**: 4.
+- **RAM**: 16 GB.
+- Disk size:
 
-1. Prepare the Arenadata database to work with the Monitoring for Arenadata DB service.
-1. Configure the ADB Exporter service.
-1. Install and configure Node Exporter — an agent for collecting operating system state metrics.
-1. Install and configure cAdvisor — an agent for collecting Docker container metrics.
-1. Log in to the Grafana service and view dashboards with data coming from Prometheus.
+  - **System disk**: at least 10 GB.
+  - **Data disk**: at least 100 GB.
 
-## {heading(Preparation steps)[id=marketplace-adb-monitoring-start-prepare-step]}
+- **Network**:
 
-1. Create a Telegram chat to which alerts from the Monitoring for Arenadata DB service will be sent, and save the chat ID.
-1. Create a Telegram bot that will be used for sending alerts, and save the bot token.
-1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Register]} in {var(cloud)} if you have not done so earlier.
-1. {linkto(../../../../dbs/adb/quick-start/create-adb#adb-create-adb)[text=Create]} an Arenadata DB instance. Save the data specified when creating the instance:
+  - The VM must have Internet access.
+  - Private DNS must be disabled.
 
-   - The Arenadata DB cluster name. It is also the instance name.
-   - The Arenadata database name.
-   - The name and password of the Arenadata database user.
+{/cut}
 
-   This data will be needed when connecting to and configuring the Monitoring for Arenadata DB service.
+By using Monitoring for Arenadata DB, you agree to the license agreements of [Marketplace](../../../../start/legal/offer/private-special-conditions/policy-marketplace), [Grafana](https://github.com/grafana/grafana/blob/main/LICENSE), [Prometheus](https://github.com/prometheus/prometheus/blob/main/LICENSE), [Alertmanager](https://github.com/prometheus/alertmanager/blob/main/LICENSE), and [ADB Exporter](https://mit-license.org/).
 
-1. Go to the **Analytical DBs** → **ADB Instances** section.
-1. Click the name of the desired instance.
-1. On the **Information** tab, in the **Connecting settings** row, find and save the following data:
+## {heading(Preparation steps)[id=marketplace-adb-monitoring-prep]}
 
-   - The IP address of the Arenadata DB host — the value of the `-h` argument in the psql command.
-   - The port for connecting to Arenadata DB — the value of the `-p` argument in the psql command.
+1. {linkto(../../../../intro/onboarding/account/create-account#onboarding-create-account)[text=Register]} in {var(cloud)} and [go to](https://msk.cloud.vk.ru/app) your account.
+1. Configure the network so that the service is accessible from the Internet:
 
-   This data will be needed when connecting to and configuring the Monitoring for Arenadata DB service.
+   1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Create]} a network with Internet access if it has not been created earlier.
+   1. In the {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=subnet settings]} where the VM with the deployed service will be located, disable the **Private DNS** option.
 
-## {heading(1. Enable the Monitoring for Arenadata DB service)[id=marketplace-adb-monitoring-start-connect]}
+## {heading(1. Connect the Monitoring for Arenadata DB service)[id=marketplace-adb-monitoring-connect]}
 
-1. [Go to](https://msk.cloud.vk.ru/app) the {var(cloud)} management console.
-1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-add)[text=Create]} a network with Internet access if it has not been created earlier.
-1. In the {linkto(../../../../networks/vnet/instructions/net#vnet-net-subnet-edit)[text=subnet settings]}, where the VM of the Monitoring for Arenadata DB service will be located, disable the **Private DNS** option.
-1. Go to the **Application Store** section and click the **All solutions** button on the section page.
-1. On the **Monitoring for Arenadata DB** service card, click the **Learn more** button.
-1. On the service description page, click the **Activate** button.
-1. Enter the data on the **Server parameters** page.
+1. In your {var(cloud)} [account](https://msk.cloud.vk.com/app/), go to the **Application Store** section.
+1. Click the **Monitoring for Arenadata DB** service card.
 
-   1. Specify the parameters of the virtual machine where the service instance will be deployed:
+   If the **Monitoring for Arenadata DB** service card is not shown on the page, click **All solutions** and find the card in the catalog.
 
-      - **Availability zone**: select the {linkto(../../../../start/concepts/architecture#architecture-az)[text=data center]} where the VM will run.
-      - **Virtual machine type**: select a pre-installed {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=VM configuration]}.
-      - **Network**: select a network with Internet access and a subnet for which the **Private DNS** option is disabled.
+1. Click **Connect**.
+1. Specify the parameters of the VM on which the service will be deployed:
 
-   1. Specify the parameters of the system disk and the data disk:
+   - **Availability zone**: select the {linkto(../../../../start/concepts/architecture#architecture-az)[text=availability zone]} where the VM will run.
+   - **Virtual machine type**: select a {linkto(../../../../computing/iaas/concepts/vm/flavor#iaas-flavor)[text=preconfigured VM flavor]} from the list, from `2-8` to `16-64`, where the first number is the number of CPU cores and the second is the RAM size in gigabytes.
+   - **Network**: select the previously created network with Internet access and a subnet with **Private DNS** disabled.
 
-      - **Disk size**: specify the desired VM disk size in gigabytes.
-      - **Disk type**: select {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=one of the disk types]} — `HDD`, `SSD`, or `High-IOPS SSD`.
+1. Specify the system disk and data disk parameters:
 
-1. Click the **Next step** button.
-1. Enter the data on the **Monitoring parameters** page.
+   - **Data disk size**: specify the required VM disk size in gigabytes. For testing, keep the value `100`. For a production workload, specify a larger size if the Grafana metric history is shorter than 30 days.
+   - **Disk type**: select {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=one of the disk types]}. For intensive writes, choose `High-IOPS SSD`.
 
-   1. Specify the previously saved data for connecting to the Arenadata database:
+1. Click **Next step**.
+1. At the **Network access** step, specify the following:
 
-      - the name of the Arenadata DB cluster (instance) to be monitored;
-      - the IP address of the Arenadata DB cluster host to which the Monitoring for Arenadata DB service will connect;
-      - the port for connecting to Arenadata DB;
-      - the login and password of the Arenadata database user;
-      - the name of the database in the Arenadata DB cluster.
+   - **Domain, certificate, and public address**: enable this option to access the service from the Internet. If you disable it, the service is available only on the internal network by the VM IP address with a self-signed certificate.
+   - **Client network**: keep the value `subnet` if Grafana users work in the same subnet as the VM with the deployed service. If users are in a different subnet, specify its address, for example `10.0.2.0/24`. You can {linkto(../../../../computing/iaas/concepts/data-storage/disk-types#iaas-disk-types-list)[text=view]} the subnet address in your account. If **Domain, certificate, and public address** is disabled, Grafana charts and monitoring data, as well as SSH access, are available only from this network.
 
-   1. Set the login and password of the user for logging in to Grafana. This user will have Grafana administrator rights.
-   1. Specify the previously saved Telegram bot parameters for alerts.
+1. Click **Next step**.
+1. At the **Monitoring parameters** step, specify the cluster connection settings:
 
-1. Click the **Next step** button.
-1. Review the tariff terms and infrastructure costs for deploying the service and click the **Activate plan** button.
+   - **Arenadata DB cluster name**: enter the Arenadata DB cluster name, for example `adb-prod`. The cluster is displayed under this name on dashboards and in alerts. For an Arenadata DB cluster deployed in {var(cloud)}, the cluster name is available in **Analytical DBs** → **ADB instances**, on the **Information** tab of the cluster page. Allowed characters are Latin letters, digits, `.`, `-`, and `_`. Maximum length is 64 characters.
+   - **Arenadata DB node IP address**: enter the internal address of the master server in the cluster, for example `10.0.0.5`. Addresses in the `172.31.X.X` range are not suitable. For an Arenadata DB cluster deployed in {var(cloud)}, the master server address is shown in **Cloud Computing** → **Virtual Machines** on the page of the VM named `<PREFIX>-Master-0`, where `<PREFIX>` is the alphanumeric prefix shared by all VMs in the cluster, for example `ADB207d0a3b`.
 
-   After successful deployment, messages will be sent to the email registered in {var(cloud)}:
+      Save this value. You will need it later when configuring the account for collecting metrics.
 
-   - a notification with a link to the service instance in the {var(cloud)} management console;
-   - an email with a one-time link.
+   - **Arenadata DB port**: enter the port used to connect to the Arenadata DB cluster. For an Arenadata DB cluster deployed in {var(cloud)}, the connection port number is shown in **Analytical DBs** → **ADB instances** on the **Information** tab of the cluster page, in the **Connecting settings** row after the `-p` parameter. The default value is `5432`.
 
-1. Follow the one-time link from the email and save the data for accessing the service:
+      Save this value. You will need it later when configuring the account for collecting metrics.
 
-   - `grafanaUser` and `grafanaPassword` — the login and password of the Grafana administrator;
-   - `productURL` — the link to the Grafana web interface;
-   - `sshUser` — the name of the administrator of the Monitoring for Arenadata DB service VM;
-   - `sshKey` — the private key for connecting to the VM via SSH.
+   - **Database user**: enter the login for the monitoring account.
+
+      Save this value. You will need it later when configuring the account for collecting metrics. The examples later in this guide use the value `vkc_monitoring`.
+
+   - **Database user password**: create a password. The `vkc_monitoring` account in the cluster will receive the same password. The maximum length is 128 characters. Spaces, quotation marks, and the `\`, `$`, and `!` characters are not allowed. Save this value. You will need it later when configuring the account for collecting metrics.
+   - **Database name**: enter the database name, for example `analytics`. For an Arenadata DB cluster deployed in {var(cloud)}, specify the value from the **Database name** row on the **Information** tab in **Analytical DBs** → **ADB instances**.
+
+1. Click **Next step**.
+1. At the **Alerts** step, specify:
+
+   - **Telegram alerts**: enable this option if you need alerts in Telegram, and specify the following parameters:
+
+      - **Telegram chat ID**: enter the identifier of the chat to which alerts are connected, for example `-1001234567890`. The identifier is the part of the chat address after the `#` sign in the Telegram web version at `web.telegram.org/a/`.
+      - **Telegram bot token**: enter the token of the bot that sends the alerts. Any bot that has already been added to this chat can be used.
+
+   - **MAX alerts**: enable this option if you need alerts in MAX, and specify the following parameters:
+
+      - **MAX chat ID**: enter the channel or chat identifier, for example `-71234567890123`. To find the identifier, see the [official MAX documentation](https://dev.max.ru/docs-api/use-cases/getting-chat-id).
+      - **MAX bot token**: enter the token of the bot that sends the alerts. Any bot already added to this chat or channel can be used.
+
+1. Click **Next step**.
+1. Review the infrastructure cost for deploying the service and click **Connect tariff**.
+
+   Cloud infrastructure deployment will start, and the service properties page will open. The process status is also displayed in **Application Store** → **My services**.
+
+   After successful deployment, messages will be sent to the email address associated with your {var(cloud)} account:
+
+   - a notification with a link to the service instance in your {var(cloud)} account;
+   - an email with a one-time link to the access data.
+
+1. Follow the one-time link from the email and save the service access data:
+
+   - `productURL`: Grafana address.
+   - `grafanaUser` and `grafanaPassword`: Grafana administrator username and password.
+   - `externalIP`: public address of the VM with the service, if **Domain, certificate, and public address** is enabled.
+   - `internalIP`: internal address of the VM with the service.
+   - `sshUser` and `sshKey`: username and private key for connecting to the VM with the service over SSH.
 
    {note:info}
-   If the access data is lost, {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access)[text=generate]} new ones.
+   If the access data is lost, {linkto(../../../../applications-and-services/marketplace/instructions/pr-instance-manage#marketplace-pr-instance-manage-update-access)[text=generate]} new credentials.
    {/note}
 
-## {heading(2. Connect to the VM of the Monitoring for Arenadata DB service)[id=marketplace-adb-monitoring-start-connect-service]}
+## {heading(2. Create an account for collecting metrics in the cluster)[id=marketplace-adb-monitoring-db-user]}
 
-1. [Go to](https://msk.cloud.vk.ru/app) the {var(cloud)} management console.
-1. Go to the **Cloud Computing** → **Virtual Machines** section.
-1. Click the name of the VM starting with `adb-monitoring-`.
-1. On the VM page, copy and save the external IP address. It will be needed to connect to the Monitoring for Arenadata DB service VM.
-1. Create a `vkc_monitoring.pem` file on your computer and copy the SSH key received in the email into it.
-1. Set access to the `vkc_monitoring.pem` file so that only the owner has read and write permissions. To do this, run the command:
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-connect/vm-connect-nix#iaas-vm-connect-nix)[text=Connect]} over SSH to the VM with the deployed service using the `sshUser` login and `sshKey` key from the email. Use the `externalIP` address from the email to connect to the VM, or `internalIP` if **Domain, certificate, and public address** is disabled.
+
+1. Configure the database connection:
 
    ```console
-   chmod 600 vkc_monitoring.pem
+   psql -h <NODE_IP> -p <PORT> -U <LOGIN> -d <DB_NAME> \
+     -f /home/almalinux/init.sql \
+     -c "ALTER USER vkc_monitoring PASSWORD '<PASSWORD>'"
    ```
 
-1. Connect to the Monitoring for Arenadata DB service VM by running the command:
+   Here:
+
+   - `<NODE_IP>` is the value of the **Arenadata DB node IP address** field specified when deploying the service.
+   - `<PORT>` is the value of the **Arenadata DB port** field specified when deploying the service.
+   - `<LOGIN>` is the database user name. The value is shown in **Analytical DBs** → **ADB instances** on the **Information** tab of the cluster page in the **User** row.
+   - `<DB_NAME>` is the value of the **Database name** field specified when deploying the service.
+   - `<PASSWORD>` is the value of the **Database user password** field specified when deploying the service.
+
+   As a result, the `init.sql` script on the VM with the deployed service automatically creates the `vkc_monitoring` account with read-only permissions for monitoring data.
+
+   Expected result: the output contains no lines with `ERROR`, and the last line is `ALTER ROLE`.
+
+## {heading(3. Connect the cluster nodes to Prometheus)[id=marketplace-adb-monitoring-nodes]}
+
+1. Install the Node Exporter agent on all cluster nodes. To install the agent in an Arenadata DB cluster deployed in {var(cloud)}, contact [technical support](/en/contacts). If Arenadata DB is deployed on your own VMs, install the agent yourself according to the [instructions](https://github.com/prometheus/node_exporter/blob/master/README.md).
+1. In the security group for the cluster nodes, {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=add]} a rule for inbound traffic with the following parameters:
+
+   - Protocol: `TCP`.
+   - Port: `9100`.
+   - Remote address: the `internalIP` value from the email, or the subnet that contains this address, for example `10.0.0.0/24`.
+
+   For an Arenadata DB cluster deployed in {var(cloud)}, this security group is named `adb-main-ext`.
+
+1. Connect over SSH to the VM with the deployed service and find out the cluster node names by querying the database:
 
    ```console
-   ssh -i <KEY_PATH>/vkc_monitoring.pem <LOGIN>@<VM_IP_ADDRESS>
+   psql -h <NODE_IP> -p <PORT> -U vkc_monitoring -d <DB_NAME> \
+     -c "SELECT DISTINCT hostname FROM gp_segment_configuration ORDER BY hostname"
    ```
 
-   Where:
+   Here:
 
-   - `<KEY_PATH>` — the path to the directory with the `vkc_monitoring.pem` file.
-   - `<LOGIN>` — the VM administrator name received in the email (`sshUser`).
-   - `<VM_IP_ADDRESS>` — the external IP address of the Monitoring for Arenadata DB service VM saved earlier.
+   - `<NODE_IP>` is the value of the **Arenadata DB node IP address** field specified when deploying the service.
+   - `<PORT>` is the value of the **Arenadata DB port** field specified when deploying the service.
+   - `<DB_NAME>` is the value of the **Database name** field specified when deploying the service.
 
-## {heading(3. Prepare Arenadata DB to work with the Monitoring for Arenadata DB service)[id=marketplace-adb-monitoring-start-arenadata-db]}
+   When prompted for a password, enter the value of the **Database user password** field specified when deploying the service.
 
-1. On the Monitoring for Arenadata DB service VM, connect to the Arenadata database. To do this, run the command, substituting the previously saved data:
+   Expected result: the names of the cluster nodes are displayed, including the master servers, standby master server, and segment servers, for example `<PREFIX>-Master-0`, `<PREFIX>-Standby-0`, and `<PREFIX>-Segments-0`. Service nodes are not shown in the output.
+
+   Save these names. You will need them later.
+
+   Here:
+
+   - `<PREFIX>` is the alphanumeric prefix shared by all VMs in a single cluster. The examples below use the prefix `ADB207d0a3b`.
+   - `Master`, `Standby`, and `Segments` are the cluster node types.
+
+1. Determine the names of the service nodes. Go to **Cloud Computing** → **Virtual Machines** and find the VMs with the `ADB207d0a3b` prefix that were not listed in the output of the previous step. Save these names. You will need them later.
+1. Find out the internal address of each cluster node. In **Cloud Computing** → **Virtual Machines**, for the VMs with the `ADB207d0a3b` prefix, open the **Networks** tab and find the value in the **IP address** field, for example `10.0.0.5`.
+1. On the VM with the deployed service, open the Prometheus configuration file:
+
+   ```bash
+   sudo vim /opt/monitoring_data/prometheus/prometheus.yml
+   ```
+
+1. In the configuration file, in the `node_exporter` job, replace the `static_configs: []` line with a block containing the cluster nodes. For each cluster VM, add its own `- targets` block:
+
+   ```yaml
+       static_configs:
+         - targets: ["<VM_ADDRESS>:9100"]
+           labels:
+             instance: "<VM_NAME>"
+             adb_cluster: "<CLUSTER_NAME>"
+   ```
+
+   Here:
+
+   - `<VM_ADDRESS>` is the internal address of the node found earlier.
+   - `<VM_NAME>` is the node name from the database query output, for example `ADB207d0a3b-Segments-0`. The **Segments** dashboard uses this name to associate the node with cluster segments.
+   - `<CLUSTER_NAME>` is the value of the **Arenadata DB cluster name** field specified when deploying the service.
+
+1. Save the file, validate it, and apply the configuration:
+
+   ```bash
+   sudo /usr/local/bin/promtool check config \
+     /opt/monitoring_data/prometheus/prometheus.yml
+   sudo systemctl reload prometheus
+   ```
+
+   Expected result: the first command output contains the line `SUCCESS: /opt/monitoring_data/prometheus/prometheus.yml is valid prometheus config file syntax`.
+
+## {heading(4. Connect Docker container metrics to Prometheus)[id=marketplace-adb-monitoring-docker]}
+
+Until metrics are connected, the **Docker Containers** dashboard remains empty.
+
+1. Install the cAdvisor agent on the cluster nodes where Docker containers run. To install the agent in an Arenadata DB cluster deployed in {var(cloud)}, contact [technical support](/en/contacts). If Arenadata DB is deployed on your own VMs, install the agent yourself according to the [instructions](https://github.com/google/cadvisor/blob/master/README.md).
+1. In the security group for the cluster nodes, {linkto(../../../../networks/vnet/instructions/secgroups#vnet-secgroups-add-rule)[text=add]} a rule for inbound traffic:
+
+   - Protocol: `TCP`.
+   - Port: `8080`.
+   - Remote address: the `internalIP` value from the email, or the subnet that contains this address, for example `10.0.0.0/24`.
+
+1. On the VM with the deployed service, open the Prometheus configuration file as in the previous step and add the `docker-exporter` job to the end of the file. For each node with cAdvisor, add its own `- targets` block:
+
+   ```yaml
+     - job_name: 'docker-exporter'
+       static_configs:
+         - targets: ["<VM_ADDRESS>:8080"]
+           labels:
+             instance: "<VM_NAME>"
+   ```
+
+   - `<VM_ADDRESS>` is the internal address of the node found earlier.
+   - `<VM_NAME>` is the node name from the database query output, for example `ADB207d0a3b-Segments-0`.
+
+1. Save the file, validate it, and apply the configuration:
 
    ```console
-   psql -h <DB_IP_ADDRESS> -p <PORT> -U <LOGIN> <DB_NAME>
+   sudo /usr/local/bin/promtool check config \
+     /opt/monitoring_data/prometheus/prometheus.yml
+   sudo systemctl reload prometheus
    ```
 
-   Where:
+   Expected result: the first command output contains the line `SUCCESS: /opt/monitoring_data/prometheus/prometheus.yml is valid prometheus config file syntax`.
 
-   - `<DB_IP_ADDRESS>` — the IP address of the Arenadata DB cluster host.
-   - `<PORT>` — the port for connecting to Arenadata DB.
-   - `<LOGIN>` — the login of the Arenadata DB user.
-   - `<DB_NAME>` — the name of the database in the Arenadata DB cluster.
+## {heading(5. Check metric display in Grafana)[id=marketplace-adb-monitoring-grafana]}
 
-1. Open the database initialization script `/home/almalinux/init.sql` for editing.
+1. Open the web interface of the monitoring service using the address from the `productURL` parameter in the email. If **Domain, certificate, and public address** is disabled, open the address from the client network and confirm the transition when the browser warns about a self-signed certificate.
 
-   {cut(Database initialization script)}
+1. Sign in using the `grafanaUser` login and `grafanaPassword` password from the email.
 
-   ```console
-   -- client database
-   -- 1. create
-   CREATE RESOURCE GROUP monitoring_group
-   WITH (
-   concurrency=15,
-   cpu_rate_limit=1,
-   memory_limit=0
-   )
-   ;
-   CREATE USER vkc_monitoring WITH login password '<ПАРОЛЬ>' RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
-   CREATE SCHEMA IF NOT EXISTS vkcloud_toolkit;
-   CREATE EXTENSION gp_internal_tools;  -- crates session_state schema
-
-   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_replication() RETURNS SETOF pg_stat_replication AS
-   $$ SELECT * FROM pg_catalog.pg_stat_replication; $$
-   LANGUAGE sql SECURITY definer
-   ;
-
-   CREATE OR REPLACE FUNCTION vkcloud_toolkit.pg_stat_activity() RETURNS SETOF pg_stat_activity AS
-   $$ SELECT * FROM pg_catalog.pg_stat_activity; $$
-   LANGUAGE sql SECURITY definer
-   ;
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_replication_delay
-   AS SELECT pg_current_xlog_location() - ( SELECT pg_stat_replication.replay_location
-            FROM vkcloud_toolkit.pg_stat_replication()) AS replication_delay_bytes
-   ;
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_locked_pids
-   AS SELECT COALESCE(blockingl.relation::regclass::text, blockingl.locktype) AS locked_item,
-      now() - blockeda.query_start AS waiting_duration,
-      blockeda.pid AS blocked_pid,
-      blockeda.query AS blocked_query,
-      blockedl.mode AS blocked_mode,
-      blockinga.pid AS blocking_pid,
-      blockinga.query AS blocking_query,
-      blockingl.mode AS blocking_mode
-      FROM pg_locks blockedl
-      JOIN vkcloud_toolkit.pg_stat_activity() blockeda ON blockedl.pid = blockeda.pid
-      JOIN pg_locks blockingl ON (blockingl.transactionid = blockedl.transactionid OR (blockingl.relation = blockedl.relation AND blockingl.locktype = blockedl.locktype)) AND blockedl.pid <> blockingl.pid
-      JOIN vkcloud_toolkit.pg_stat_activity() blockinga ON blockingl.pid = blockinga.pid AND blockinga.datid = blockeda.datid
-   WHERE NOT blockedl.granted AND blockinga.datname = current_database()
-   ;
-
-   CREATE OR REPLACE VIEW vkcloud_toolkit.v_resgroup_slots
-   AS SELECT tt.groupname,
-      tt.slots_for_queries,
-      tt.active_queries,
-      tt.slots_for_queries - tt.active_queries AS free_slots,
-      tt.waiting_queries,
-      tt.max_wait_sec
-      FROM ( SELECT grc.groupname,
-               grc.concurrency::bigint AS slots_for_queries,
-               COALESCE(act.active_queries, 0::bigint) AS active_queries,
-               COALESCE(act.waiting_queries, 0::bigint) AS waiting_queries,
-               date_part('epoch'::text, COALESCE(act.max_wait_time, '00:00:00'::interval)) AS max_wait_sec
-            FROM gp_toolkit.gp_resgroup_config grc
-               LEFT JOIN ( SELECT pg_stat_activity.rsgid,
-                     count(1) AS active_queries,
-                     count(pg_stat_activity.rsgqueueduration) AS waiting_queries,
-                     max(pg_stat_activity.rsgqueueduration) AS max_wait_time
-                     FROM vkcloud_toolkit.pg_stat_activity()
-                     WHERE pg_stat_activity.rsgname IS NOT NULL AND pg_stat_activity.rsgname <> 'unknown'::text
-                     GROUP BY pg_stat_activity.rsgid) act ON grc.groupid = act.rsgid) tt
-   ;
-
-   -- 2. grant
-   GRANT USAGE ON SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
-   GRANT SELECT ON ALL tables IN SCHEMA pg_catalog, gp_toolkit, arenadata_toolkit, vkcloud_toolkit, session_state TO vkc_monitoring;
-   GRANT EXECUTE ON ALL functions IN SCHEMA vkcloud_toolkit TO vkc_monitoring;
-   GRANT SELECT ON session_state.session_level_memory_consumption TO vkc_monitoring;
-   ```
-
-   {/cut}
-
-1. Generate or come up with a password for the `vkc_monitoring` user of the Arenadata database, on whose behalf the Monitoring for Arenadata DB service will run.
-1. Insert this password into the `/home/almalinux/init.sql` script on the line:
-
-   ```console
-   CREATE USER vkc_monitoring WITH login password `<ПАРОЛЬ>` RESOURCE GROUP monitoring_group CONNECTION LIMIT 5;
-   ```
-
-1. Save the changes.
-1. Inside the `psql` terminal, run the database initialization script:
-
-   ```console
-   \i /home/almalinux/init.sql
-   ```
-
-1. Exit the `psql` terminal using the `\q` command.
-
-## {heading(4. Configure the ADB Exporter service)[id=marketplace-adb-monitoring-start-adb-exporter]}
-
-The ADB Exporter service is designed to export metrics from Arenadata databases to Prometheus. The service generates metrics based on descriptions in the configuration file and automatically updates their values according to a specified schedule by executing SQL queries against the database.
-
-ADB Exporter is automatically installed and configured on the instance VM when the Monitoring for Arenadata DB service is deployed. To make ADB Exporter receive metrics from your Arenadata DB, specify the database access parameters in its configuration file:
-
-1. On the Monitoring for Arenadata DB service VM, open the ADB Exporter service configuration file:
-
-   ```console
-   sudo nano /etc/adb_exporter/config.yml
-   ```
-
-1. Add the Arenadata database connection parameters using the previously created `vkc_monitoring` user to the configuration file:
-
-   ```txt
-   datasource:
-      dsn: "postgresql://vkc_monitoring:<ПАРОЛЬ>@<IP-АДРЕС_БД>:<ПОРТ>/<ИМЯ_БД>?sslmode=disable"
-
-   ```
-   Where:
-
-   - `<ПАРОЛЬ>` — the previously set password of the `vkc_monitoring` user.
-   - `<IP-АДРЕС_БД>` — the IP address of the Arenadata DB cluster host.
-   - `<ПОРТ>` — the port for connecting to Arenadata DB.
-   - `<ИМЯ_БД>` — the name of the database in the Arenadata DB cluster.
-
-1. Restart ADB Exporter:
-
-   ```console
-   sudo systemctl restart adb_exporter
-   ```
-
-1. Check the ADB Exporter status:
-
-   ```console
-   sudo systemctl status adb_exporter
-   ```
-
-   If the service has started successfully and is running, the command output will contain the line:
-
-   ```txt
-   Active: active (running)
-   ```
-
-## {heading(5. Install and configure the Node Exporter agent)[id=marketplace-adb-monitoring-start-node-exporter]}
-
-The Node Exporter agent collects system metrics from servers, including CPU, memory, disk, file system, and network interface usage. Without installing this agent, some Grafana dashboards and Prometheus alerts will not work.
-
-1. Install the Node Exporter agent on all nodes of the Arenadata DB cluster as described on the [product page on GitHub](https://github.com/prometheus/node_exporter/blob/master/README.md).
-1. On the Monitoring for Arenadata DB service VM, open the Prometheus service configuration file:
-
-   ```console
-   sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-   ```
-
-1. Add information about the metric sources to the configuration file: the cluster node IP addresses (`targets`) and metric labels (`labels`).
-
-   Example of a Prometheus configuration:
-
-   ```yml
-   - job_name: 'node_exporter'
-     static_configs:
-       - targets: ['localhost:9100']
-         labels:
-           instance: segment-1
-           adb_cluster: staging
-   ```
-1. Restart Prometheus.
-
-   ```console
-   sudo systemctl restart prometheus
-   ```
-
-1. Check the Prometheus status:
-
-   ```console
-   sudo systemctl status prometheus
-   ```
-
-   If the service has started successfully and is running, the command output will contain the line:
-
-   ```txt
-   Active: active (running)
-   ```
-
-## {heading(6. Install and configure the cAdvisor agent)[id=marketplace-adb-monitoring-start-cadvisor]}
-
-The cAdvisor agent collects metrics on Docker container operation, including CPU, memory, disk I/O, and network traffic usage. Without installing this agent, some Grafana dashboards and Prometheus alerts will not work.
-
-1. Install the cAdvisor agent on all nodes of the Arenadata DB cluster where containerized applications are running. The installation procedure is described on the [product page on GitHub](https://github.com/google/cadvisor/blob/master/README.md).
-1. On the Monitoring for Arenadata DB service VM, open the Prometheus service configuration file:
-
-   ```console
-   sudo nano /opt/monitoring_data/prometheus/prometheus.yml
-   ```
-
-1. Add information about the metric sources to the configuration file: the cluster node IP addresses (`targets`) and metric labels (`labels`).
-
-   Example of a Prometheus configuration:
-
-   ```yml
-   - job_name: 'docker_exporter'
-     metrics_path: /metrics
-     static_configs:
-       - targets: ['localhost:8080']
-         labels:
-           instance: adcc-node-1
-   ```
-1. Restart Prometheus.
-
-   ```console
-   sudo systemctl restart prometheus
-   ```
-
-1. Check the Prometheus status:
-
-   ```console
-   sudo systemctl status prometheus
-   ```
-
-   If the service has started successfully and is running, the command output will contain the line:
-
-   ```txt
-   Active: active (running)
-   ```
-
-## {heading(7. Log in to the Grafana web interface)[id=marketplace-adb-monitoring-start-connect-grafana]}
-
-1. Follow the `productURL` link saved earlier from the email. The Grafana web interface will open.
-1. Log in using the Grafana administrator login and password received in the email (`grafanaUser` and `grafanaPassword`).
-1. Review the contents of the dashboards displaying metrics collected by Prometheus.
-
-   {note:info}
-   Changing the password on the first login is optional.
-   {/note}
+The main page of the Grafana monitoring service opens. On the dashboards, you will see the status of all connected cluster nodes.
