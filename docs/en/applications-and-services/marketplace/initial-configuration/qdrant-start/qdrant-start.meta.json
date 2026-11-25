@@ -1,10 +1,10 @@
 {
-  "title": "Qdrant Deployment",
+  "title": "Deployment of Qdrant",
   "shortDescription": "Deploying Qdrant for working with high-dimensional vectors",
   "metaDescription": "VK Cloud Marketplace: steps to deploy the Qdrant service for working with high-dimensional vectors.",
-  "sectionTitle": "Qdrant Deployment",
+  "sectionTitle": "Deployment of Qdrant",
   "icon": "",
-  "weight": 20,
+  "weight": 16,
   "uuid": "29b1eacd-1629-4b14-8750-416818a76195",
   "build": {
     "for": [

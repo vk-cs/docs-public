@@ -1,10 +1,10 @@
 {
-  "title": "Joomla deployment",
+  "title": "Deployment of Joomla",
   "shortDescription": "Deploying the Joomla service to create and manage websites",
   "metaDescription": "Marketplace VK Cloud: steps to deploy Joomla service for creating and managing websites",
-  "sectionTitle": "Joomla deployment",
+  "sectionTitle": "Deployment of Joomla",
   "icon": "",
-  "weight": 10,
+  "weight": 9,
   "uuid": "6acde0fd-d1b7-49bb-81f4-fdf6187c169d",
   "build": {
     "for": [

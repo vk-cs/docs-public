@@ -1,10 +1,10 @@
 {
-  "title": "Alfresco deployment",
+  "title": "Deployment of Alfresco",
   "shortDescription": "Deployment of Alfresco for enterprise content management and business process automation",
   "metaDescription": "Marketplace VK Cloud: steps to deploy the Alfresco system for enterprise content management and business process automation",
-  "sectionTitle": "Alfresco deployment",
+  "sectionTitle": "Deployment of Alfresco",
   "icon": "",
-  "weight": 11,
+  "weight": 1,
   "uuid": "657e3447-613d-418f-a33a-48b1b9d2a292",
   "build": {
     "for": [

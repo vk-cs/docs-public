@@ -1,0 +1,14 @@
+{
+  "title": "Deployment of VK Security Gate",
+  "shortDescription": "Deploying the VK Security Gate service and configuring additional services: CodeQL, AI triage based on LLMs, and Jira integration",
+  "metaDescription": "A practical guide to the initial setup of VK Security Gate after deployment: downloading and configuring CodeQL, connecting an LLM for AI triage of findings, and integrating with Jira",
+  "sectionTitle": "Deployment of VK Security Gate",
+  "icon": "",
+  "weight": 21,
+  "uuid": "b88c28d7-1adc-4ea9-a561-8ecab6343715",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

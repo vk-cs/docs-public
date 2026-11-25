@@ -1,10 +1,10 @@
 {
-  "title": "n8n deployment",
+  "title": "Deployment of n8n",
   "shortDescription": "Deploying n8n for workflow automation",
   "metaDescription": "VK Cloud Marketplace: steps to deploy the n8n workflow automation platform from the VK Cloud application store.",
-  "sectionTitle": "n8n deployment",
+  "sectionTitle": "Deployment of n8n",
   "icon": "",
-  "weight": 18,
+  "weight": 12,
   "uuid": "e5b83368-6322-4ad9-9e4d-1d12bd5fbc49",
   "build": {
     "for": [

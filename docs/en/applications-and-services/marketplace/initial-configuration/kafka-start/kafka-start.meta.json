@@ -1,0 +1,14 @@
+{
+  "title": "Deployment of Apache Kafka",
+  "shortDescription": "How to deploy Apache Kafka from the VK Cloud Application Store, configure connectivity, and perform the first operations with topics",
+  "metaDescription": "Deploy Apache Kafka from the VK Cloud Application Store, configure connectivity, perform the first operations with topics, and set up monitoring",
+  "sectionTitle": "Deployment of Apache Kafka",
+  "icon": "",
+  "weight": 2,
+  "uuid": "64cfa636-6c48-4966-b6f2-adac9bd3fc36",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}

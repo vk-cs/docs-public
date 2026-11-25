@@ -1,0 +1,14 @@
+{
+  "title": "Deployment of Valkey",
+  "shortDescription": "Deploying the Valkey service in VK Cloud, changing service parameters, and monitoring.",
+  "metaDescription": "A practical guide to deploying the Valkey service in VK Cloud: choosing a tariff plan, creating the service in your account, obtaining access credentials, configuring TLS client connectivity, changing parameters, accessing the VMs, and monitoring.",
+  "sectionTitle": "Deployment of Valkey",
+  "icon": "",
+  "weight": 19,
+  "uuid": "5f643059-ca1c-49af-abf2-6e04c412c780",
+  "build": {
+    "for": [
+      "public"
+    ]
+  }
+}
