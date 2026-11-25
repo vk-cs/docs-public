@@ -34858,5 +34858,11 @@
     "destination": "/en",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/api/api-spec/api-anycast",
+    "destination": "/en/tools-for-using-services/api/api-spec/network-api/neutron-sprut-api",
+    "permanent": false,
+    "locale": false
   }
 ]

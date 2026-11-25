@@ -5,7 +5,7 @@
   "sectionTitle": "vGPU бар ВМ-дегі 12 кодымен бейнеадаптер қатесі",
   "icon": "",
   "weight": 31,
-  "uuid": "",
+  "uuid": "1e01d99e-df6e-4d65-9544-4cffe28a0c39",
   "build": {
     "for": [
       "public"

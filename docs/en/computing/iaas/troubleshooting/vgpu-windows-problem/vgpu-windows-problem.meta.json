@@ -5,7 +5,7 @@
   "sectionTitle": "Video adapter error code 12 on a VM with vGPU",
   "icon": "",
   "weight": 31,
-  "uuid": "",
+  "uuid": "cc7374c3-6f24-4a57-b74a-95ea40f1b43e",
   "build": {
     "for": [
       "public"
