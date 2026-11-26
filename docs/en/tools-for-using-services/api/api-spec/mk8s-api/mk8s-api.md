@@ -6,7 +6,7 @@ Use the **Managed Containers** service API to manage [second-generation](/en/kub
 
 1. [Go to](https://msk.cloud.vk.ru/app) your {var(cloud)} management console.
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Enable]} API access if it has not been done yet.
-1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
 1. In the query string, use the endpoint `https://msk.cloud.vk.ru/infra/container/managed-kubernetes/v1/clusters`, and specify the [Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id) of your project.
 
 Request example:

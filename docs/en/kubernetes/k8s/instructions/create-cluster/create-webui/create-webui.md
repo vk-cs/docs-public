@@ -11,7 +11,7 @@ When installing a cluster, VK Cloud creates a [service load balancer](/en/networ
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits#k8s) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the cluster. Different quotas may be configured for different regions.
 
-   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas if necessary.
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas if necessary.
 
 1. Run the cluster creation wizard:
 

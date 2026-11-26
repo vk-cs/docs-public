@@ -11,9 +11,9 @@ Quotas are not shared between several projects of the same owner and are not inh
 
 After activating the services, basic quotas become available to the project. They have default values that apply to all new projects in the region.
 
-Quotas can be [viewed](../../instructions/project-settings/manage#viewing_project_quotas):
+Quotas can be [viewed](../../instructions/project-settings/manage#project-view-quotas):
 
-- short list — [in the management console](../../instructions/project-settings/manage#viewing_project_quotas)
+- short list — [in the management console](../../instructions/project-settings/manage#project-view-quotas)
 - extended list — via the OpenStack CLI
 
 There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#quotasandlimits-general), which can be created by a single user.
@@ -28,7 +28,7 @@ Other limits are not related to physical limitations and are based on the operat
 
 There are no corresponding quotas for some technical limits.
 
-Quotas can be [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) within the technical limits. By default, confirmation for increasing quotas is requested from technical support, but you can automatically add up to 30% of the current quota value if the following conditions are met:
+Quotas can be [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) within the technical limits. By default, confirmation for increasing quotas is requested from technical support, but you can automatically add up to 30% of the current quota value if the following conditions are met:
 
 {include(/en/_includes/_quotas.md)[tags=autoquota-conditions]}
 
@@ -101,7 +101,7 @@ The following is a list of quotas and limits for the Moscow region.
 
 |===
 
-The limit on the number of instances in the project can be exceeded if the corresponding quota is [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota).
+The limit on the number of instances in the project can be exceeded if the corresponding quota is [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota).
 
 {note:info}
 
@@ -301,7 +301,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 
 For Low Latency NVMe disks, there are no quotas or limits on the total disk size.
 
-Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
+Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
 #### Number of disks
 
@@ -347,7 +347,7 @@ Quotas for the total volume of disks in the project take into account all types 
 
 For Low Latency NVMe disks, there are no quotas or limits on the total number of disks.
 
-Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
+Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) the quota included in another quota, the higher-level quota will be increased proportionally.
 
 #### Limits without quotas
 
@@ -492,7 +492,7 @@ Quota for the number of file storage networks (**NFS / CIFS file storage network
 
 ### {heading(Cloud networks)[id=nets]}
 
-The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas exceeding the corresponding limits.
+The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to [increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas exceeding the corresponding limits.
 
 #### Networks, subnets and IP addresses
 
@@ -572,7 +572,7 @@ The limits in this section are determined by the requirements of operation, they
 
 {/tabs}
 
-Even if the quota for the total number of subnets in the project has been [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota), it is not recommended to create more than 20 subnets in one network.
+Even if the quota for the total number of subnets in the project has been [increased](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota), it is not recommended to create more than 20 subnets in one network.
 
 #### Other parameters
 
@@ -739,7 +739,7 @@ The quota **Neutron balancers**, which is displayed in the VK Cloud management c
 | Parameter                                     | Quota in CLI | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
 | Number of backups                             | `backup`| ![](/en/assets/no.svg "inline") | not limited | ![](/en/assets/no.svg "inline") |
-| Number of snapshots                           | [quota](../../instructions/project-settings/manage#viewing_project_quotas)  `snapshot` in the extended list | 600 pcs. | not limited | ![](/en/assets/no.svg "inline") |
+| Number of snapshots                           | [quota](../../instructions/project-settings/manage#project-view-quotas)  `snapshot` in the extended list | 600 pcs. | not limited | ![](/en/assets/no.svg "inline") |
 | Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
 | Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 

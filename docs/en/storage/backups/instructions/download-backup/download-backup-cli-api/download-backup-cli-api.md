@@ -10,7 +10,7 @@ Do not delete the copy from Cloud Backup after you download it.
 1. [Install the OpenStack client and authenticate](/en/tools-for-using-services/cli/openstack-cli) in the project that stores the backups. For authentication, use the [OpenStack RC file](/en/access/iam/instructions/service-account-manage#download_rc_file) or another way to get a token.
 1. Make note of the Project ID of the project. You will need it when you work via API and when you download files from VK Object Storage.
 
-   The Project ID differs from the [project ID](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) in the management console. If you authenticated with the OpenStack RC file, the value is stored in the `OS_PROJECT_ID` variable:
+   The Project ID differs from the [project ID](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) in the management console. If you authenticated with the OpenStack RC file, the value is stored in the `OS_PROJECT_ID` variable:
 
    ```console
    echo $OS_PROJECT_ID

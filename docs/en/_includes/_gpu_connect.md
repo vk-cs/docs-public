@@ -3,7 +3,7 @@
 
 Write to [technical support](mailto:support@mcs.mail.ru). In your message specify:
 
-- Your [project unique ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id).
+- Your [project unique ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view).
 - GPU flavor parameters: the required number of CPUs and amount of RAM. Only standard configuration parameters are available, calculated based on the amount of physical resources of the NVIDIA Tesla GPU.
 
     {cut(Example of flavor description)}
@@ -24,7 +24,7 @@ Write to [technical support](mailto:support@mcs.mail.ru). In your message specif
 
     {/cut}
 
-- (Optional) Whether [quotas](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) should be increased on the project along with adding a GPU flavor.
+- (Optional) Whether [quotas](/en/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas) should be increased on the project along with adding a GPU flavor.
 
 {/tab}
 {tab(VK Cloud website)}

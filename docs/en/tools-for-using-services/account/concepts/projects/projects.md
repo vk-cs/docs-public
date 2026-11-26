@@ -30,7 +30,7 @@ The project owner's mail receives consecutive notifications: about the project f
 
 {note:err}
 
-After the project is frozen, the funds continue to be deducted from the payment account balance. You can [conserve the project](../../instructions/project-settings/manage#project_conservation) to stop debiting funds.
+After the project is frozen, the funds continue to be deducted from the payment account balance. You can [conserve the project](../../instructions/project-settings/manage#project-freeze) to stop debiting funds.
 
 {/note}
 

@@ -26,7 +26,7 @@ When creating the net the following is used:
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the network. Different regions may have different quotas configured.
 
-   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project if necessary.
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas for your project if necessary.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
@@ -131,7 +131,7 @@ Here:
 
   {/cut}
 
-- `sdn` — [SDN](/en/networks/vnet/concepts/architecture#sdns_used), where the resource will be created (nets, subnets, routers, etc.). Possible values: `neutron`, `sprut`. If SDN is not specified, the default SDN is used. You can find out SDNs available to your project in the [project settings](/en/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
+- `sdn` — [SDN](/en/networks/vnet/concepts/architecture#sdns_used), where the resource will be created (nets, subnets, routers, etc.). Possible values: `neutron`, `sprut`. If SDN is not specified, the default SDN is used. You can find out SDNs available to your project in the [project settings](/en/tools-for-using-services/account/instructions/project-settings/manage#project-sdn-view).
 
 - `subnet_id` — the ID of the subnet. You can specify ID in the manifest or get it from the data source or resource.
 

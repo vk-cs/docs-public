@@ -12,7 +12,7 @@ The API of the {linkto(../../../../security/secret-manager#security-secret-manag
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.
 1. Find the endpoint for the Secrets Manager. If it is not in the list, use `https://msk.cloud.vk.ru/kms/user/v1/`.
-1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token.
 
 {/cut}
 

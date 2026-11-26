@@ -169,7 +169,7 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 
 If the payment is not received on time, write to VK Cloud document management department at [docs_vktech@vk.company](mailto:docs_vktech@vk.company). The following details will be required to trace the payment:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
 - Receipt of payment
 
@@ -216,7 +216,7 @@ To restore the services:
 
 To find out how long resources are in the queue for deletion, contact [technical support](mailto:support@mcs.mail.ru) and specify:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)
 - [Region](/en/tools-for-using-services/account/concepts/regions)
 
 {/note}
@@ -254,7 +254,7 @@ Charges for bank card payments are not included in [accounting documents for leg
 1. Contact [technical support](mailto:support@mcs.mail.ru).
 1. Specify:
 
-   - [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id)
+   - [Project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view)
    - Project [region](/en/tools-for-using-services/account/concepts/regions)
    - Payment confirmation
 
@@ -442,7 +442,7 @@ Additional registration is only available in [region](/en/tools-for-using-servic
 
 {note:info}
 
-You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/instructions/project-settings/manage#changing_project_owner).
+You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/instructions/project-settings/manage#project-owner-edit).
 
 {/note}
 

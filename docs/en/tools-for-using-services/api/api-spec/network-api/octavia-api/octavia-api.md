@@ -10,7 +10,7 @@
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.
 1. In the **OpenStack service** block, find the **Octavia** endpoint.
-1. {linkto(../../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token.
+1. {linkto(../../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token.
 
 {/cut}
 

@@ -28,3 +28,26 @@
 1. Less than 50 [Floating IP-addresses](/en/networks/vnet/concepts/ips-and-inet#floating-ip) have been allocated to the project.
 
 {/includetag}
+{includetag(fastquota-conditions)}
+
+1. A condition of topping up the balance with a certain amount is met. The condition differs for different [regions](/en/tools-for-using-services/account/concepts/regions):
+
+   {tabs}
+
+   {tab(Moscow)}
+
+   - The project payments exceed 5000 rubles.
+
+   {/tab}
+
+   {tab(Kazakhstan)}
+
+   - The project payments exceed 10000 tenge.
+
+   {/tab}
+
+   {/tabs}
+
+1. The project is at the basic level with minimal quotas.
+
+{/includetag}

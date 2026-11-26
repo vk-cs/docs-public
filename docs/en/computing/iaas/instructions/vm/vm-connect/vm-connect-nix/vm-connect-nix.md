@@ -1,3 +1,7 @@
+# {heading(Connecting to Linux VM)[id=iaas-vm-connect-nix]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 The recommended way to connect to a Linux VM is via SSH using a key pair.
 
 ## {heading(1. Check ability to connect via SSH)[id=iaas-vm-connect-nix-ssh]}

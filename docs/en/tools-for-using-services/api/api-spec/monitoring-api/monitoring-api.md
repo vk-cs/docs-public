@@ -23,7 +23,7 @@ Requests for reading metrics are formulated in the [PromQL](https://prometheus.i
    - for the Moscow region — `https://cloud.vk.ru/monitoring/query/v2`;
    - for the Kazakhstan region — `https://kz.cloud.vk.kz/monitoring/query/v2`.
 
-1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token.
 
 {/cut}
 

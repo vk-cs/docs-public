@@ -1,8 +1,12 @@
+# {heading(2FA management)[id=iam-manage-2fa]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 You can enable two-factor authentication (2FA) in VK Cloud to enhance [account](/en/tools-for-using-services/vk-cloud-account) security.
 
 After enabling 2FA, each time you sign in to VK Cloud account, you will need to enter a one-time 6-digit code from the authentication application.
 
-## Enabling 2FA
+## {heading(Enabling 2FA)[id=iam-manage-2fa-on]}
 
 1. Install any application for generating one-time codes.
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
@@ -22,7 +26,7 @@ After enabling 2FA, each time you sign in to VK Cloud account, you will need to 
 
 Two-factor authentication will be enabled for your account. A list of backup codes will be displayed with which you can sign in to your management console if the authentication application is unavailable.
 
-## Disabling 2FA
+## {heading(Disabling 2FA)[id=iam-manage-2fa-off]}
 
 1. [Go to](https://cloud.vk.com/account) VK Cloud Account.
 1. Go to **Security**.

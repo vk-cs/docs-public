@@ -4,7 +4,7 @@
 
 The floating IP address is added to the project, but it cannot be bound to an instance port.
 
-Floating IP addresses belong to {linkto(../../concepts/net-types#external_net)[text=external networks]}, for example, `ext-net` or `internet`. To bind a floating IP address to a port, the port must be located in a subnet that is connected to a {linkto(../../concepts/router#vnet-router)[text=router]}, and the router must be connected to the same external network to which the floating IP address belongs.
+Floating IP addresses belong to {linkto(../../concepts/net-types#external_net)[text=external networks]}, for example, `ext-net` or `internet`. To bind a floating IP address to a port, the port must be located in a subnet that is connected to a {linkto(../../concepts/router#vnet-router-standard)[text=router]}, and the router must be connected to the same external network to which the floating IP address belongs.
 
 If the router to which the subnets are connected has no access to an external network, floating IP addresses cannot be bound to objects in these subnets.
 

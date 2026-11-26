@@ -331,8 +331,8 @@
 
 Қызметтің жұмыс істеп тұрған инфрақұрылымы есептеу ресурстарын тұтынады. Егер S3 шлюзі мен сақтау кластері сізге енді қажет болмаса, оларды жойыңыз:
 
-1. Виртуалды машиналарды {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
+1. Виртуалды машиналарды {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=жойыңыз]}.
 1. ВМ-мен бірге барлық дискілердің жойылғанына көз жеткізіңіз, олай болмаса, оларды {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=жойыңыз]}.
-1. Маршрутизаторды {linkto(../../../../../networks/vnet/instructions/router#vnet-router-delete)[text=жойыңыз]}.
+1. Маршрутизаторды {linkto(../../../../networks/vnet/instructions/router#vnet-router-delete)[text=жойыңыз]}.
 1. Жүктеме теңгергішін {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-delete)[text=жойыңыз]}.
 1. Жария IP-мекенжайларды {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=жойыңыз]}.
