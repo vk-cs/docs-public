@@ -17,7 +17,7 @@ The [CDN](../../../../networks/cdn) REST API supports managing and monitoring CD
 1. {linkto(../../rest-api/enable-api#rest-api-enable-activate)[text=Enable]} API access if it has not been done yet.
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API access** tab.
-1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
 1. In the query string, use the endpoint `https://msk.cloud.vk.com/api/cdn/api/v1/`.
 
 Request example:

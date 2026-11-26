@@ -22,8 +22,8 @@ The VPN service in VK Cloud is implemented on the basis of [StrongSwan](https://
 
 The VPN service is available in both [SDN](../architecture) (Software Defined Network) used in VK Cloud:
 
-- SDN Neutron: VPN can only be connected to a [standard router](../router#standard).
-- SDN Sprut: VPN can only be connected to an [advanced router](../router#advanced).
+- SDN Neutron: VPN can only be connected to a [standard router](../router#vnet-router-standard).
+- SDN Sprut: VPN can only be connected to an [advanced router](../router#vnet-router-advanced).
 
 In the Sprut SDN, a VPN can be built between the cloud and the remote infrastructure over an Internet connection or over [Direct Connect](/ru/networks/directconnect). VPN over Direct Connect does not require Internet access from the remote infrastructure and provides the most stable connection.
 

@@ -8,7 +8,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
 1. [Learn how the vertical scaling mechanism works](/en/kubernetes/mk8s/concepts/scale).
 
-1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas) that there are enough quotas for scaling.
 
 1. Perform the scaling.
 
@@ -53,7 +53,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
 1. Prepare to scale:
 
-   1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+   1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas) that there are enough quotas for scaling.
    1. If you plan to reduce the amount of computing resources, then make sure that the total amount of resources in the worker node group is enough to accommodate the workload.
    1. Make sure that replication is configured for the workload and replicas are distributed across multiple worker nodes from the node group.
 
@@ -105,7 +105,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
 1. [Learn how the horizontal scaling mechanism works](/en/kubernetes/mk8s/concepts/scale).
 
-1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas) that there are enough quotas for scaling.
 
 1. Perform the scaling.
 
@@ -135,7 +135,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
 1. [Learn how the horizontal scaling mechanism works](/en/kubernetes/mk8s/concepts/scale).
 
-1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+1. [Make sure](/en/tools-for-using-services/account/instructions/project-settings/manage#project-view-quotas) that there are enough quotas for scaling.
 
 1. Set up automatic scaling:
 

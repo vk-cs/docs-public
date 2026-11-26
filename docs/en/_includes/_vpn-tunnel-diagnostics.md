@@ -38,7 +38,7 @@
 1. Check the routes and peer addresses. Make sure that:
 
    - The connection settings specify the correct peer addresses (Peer IP and Peer ID).
-   - The VPN tunnel is connected to a {linkto(../../concepts/router#standard)[text=standard]} or {linkto(../../concepts/router#advanced)[text=advanced]} router that has Internet access and an assigned external IP address.
+   - The VPN tunnel is connected to a {linkto(../../concepts/router#vnet-router-standard)[text=standard]} or {linkto(../../concepts/router#vnet-router-advanced)[text=advanced]} router that has Internet access and an assigned external IP address.
    - {linkto(../../instructions/router#vnet-router-static-routs-manage)[text=Static routes]} to the remote subnet via the VPN tunnel are configured on the cloud network router.
    - A route to the {var(cloud)} subnet is configured on the remote side.
 {/includetag}

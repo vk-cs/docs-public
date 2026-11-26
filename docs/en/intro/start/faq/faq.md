@@ -69,7 +69,7 @@ Bonus points are awarded when the first project is created in VK Cloud; this opt
 
 {cut(I do not have enough quotas)}
 
-[Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project.
+[Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas for your project.
 
 {/cut}
 

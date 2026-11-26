@@ -332,8 +332,8 @@ As a configuration example, an S3 gateway will be created for the Cyber Backup C
 
 A running service infrastructure consumes compute resources. If you no longer need the S3 gateway and the storage cluster, delete them:
 
-1. {linkto(../../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Delete]} the virtual machines.
+1. {linkto(../../../../computing/iaas/instructions/vm/vm-manage#iaas-vm-manage-delete)[text=Delete]} the virtual machines.
 1. Make sure that all disks were deleted together with the VMs; if not, {linkto(../../../../computing/iaas/instructions/volumes/volumes-manage#iaas-volumes-manage-delete)[text=delete]} them.
-1. {linkto(../../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Delete]} the router.
+1. {linkto(../../../../networks/vnet/instructions/router#vnet-router-delete)[text=Delete]} the router.
 1. {linkto(../../../../networks/balancing/instructions/manage-lb#balancing-manage-lb-delete)[text=Delete]} the load balancer.
 1. {linkto(../../../../networks/vnet/instructions/ip/floating-ip#vnet-floating-ip-delete)[text=Delete]} the public IP addresses.

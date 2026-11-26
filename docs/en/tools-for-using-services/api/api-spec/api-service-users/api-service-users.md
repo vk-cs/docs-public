@@ -15,7 +15,7 @@ Use Service Users REST API to manage [service accounts](/en/access/iam/concepts/
 1. Click the username in the page header and select **Project settings**.
 1. Go to the **API Endpoints** tab.
 1. In the **OpenStack service** block, find the **Service Users** endpoint. If it is not in the list, use `https://msk.cloud.vk.com/service-users/`.
-1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
+1. {linkto(../../rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain]} the `X-Auth-Token` access token. Use the token in the header when sending requests.
 
 {/cut}
 

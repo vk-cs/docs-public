@@ -93,7 +93,7 @@
 
    {ifdef(private,private-pg,private-pdf,private-pg-pdf)} 
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
-1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**.
 1. Нажмите на имя файлового хранилища.
 1. На вкладке **Общая информация** запомните значение поля **Точка подключения**.
@@ -142,7 +142,7 @@
 
    {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
-1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**.
 1. Нажмите на имя файлового хранилища.
 1. На вкладке **Общая информация** запомните значение поля **Точка подключения**.
@@ -252,7 +252,7 @@
 {ifdef(private,private-pg,private-pdf,private-pg-pdf)}
 
 1. {linkto(../../../../../tools-for-using-services/account/instructions/lk-entry#tools-account-lk-entry)[text=Перейдите]} в личный кабинет {var(cloud)}.
-1. {linkto(../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
+1. {linkto(../../../../../tools-for-using-services/account/instructions/project-settings/manage#tools-account-project-select)[text=Выберите проект]}, где нужно создать файловое хранилище.
 1. Перейдите в раздел **Облачные вычисления** → **Файловое хранилище**.
 1. Нажмите на имя файлового хранилища.
 1. На вкладке **Общая информация** запомните значение поля **Точка подключения**.

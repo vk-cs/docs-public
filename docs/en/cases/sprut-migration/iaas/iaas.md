@@ -99,8 +99,8 @@ Assess the project's network infrastructure and identify the entities that need 
    - `<ROUTER_1>`, `<ROUTER_2>` — router IDs.
    - `<COPY_TYPE>` — type of the router copy in SDN Sprut:
 
-      - `std` — the copy will be created as a [standard](/en/networks/vnet/concepts/router#standard) router.
-      - `adv` — the copy will be created as an [advanced](/en/networks/vnet/concepts/router#advanced) router. Specify this parameter if the router in your project is used to build an IPsec tunnel.
+      - `std` — the copy will be created as a [standard](/en/networks/vnet/concepts/router#vnet-router-standard)) router.
+      - `adv` — the copy will be created as an [advanced](/en/networks/vnet/concepts/router#vnet-router-advanced)) router. Specify this parameter if the router in your project is used to build an IPsec tunnel.
 
     Example of a configuration file for copying routers:
 

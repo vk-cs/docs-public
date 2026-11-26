@@ -99,7 +99,7 @@ An anycast IP address can be bound to the following IP addresses:
 
 - Public IP addresses of virtual machines in [external networks](/en/networks/vnet/concepts/net-types#external_net).
 - Load balancer IP addresses. The load balancer must be placed in a network with internet access and must not be bound to a [Floating IP address](#floating-ip).
-- Interface of an [advanced router](../../concepts/router#advanced) with a public IP address in an external network (the **SNAT** option must be enabled).
+- Interface of an [advanced router](../../concepts/router#vnet-router-advanced)) with a public IP address in an external network (the **SNAT** option must be enabled).
 
 Up to 8 IP addresses can be bound to a single anycast IP address, and all IP addresses must be of the same type.
 

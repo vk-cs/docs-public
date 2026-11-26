@@ -48,7 +48,7 @@ The new {linkto(../../../../../computing/iaas/concepts/data-storage/disk-types#i
 {tab(OpenStack CLI)}
 
 1. Make sure the OpenStack client is {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-install)[text=installed]} and {linkto(../../../../../tools-for-using-services/cli/openstack-cli#openstack-authorize)[text=authenticate]} in the project.
-1. Obtain an {linkto(../../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=access token]}.
+1. Obtain an {linkto(../../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=access token]}.
 1. View the list of virtual machines and copy the ID of the virtual machine whose root disk needs to be replaced:
 
    ```console

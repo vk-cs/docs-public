@@ -17,7 +17,7 @@ The infrastructure of the example:
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
-   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project if necessary.
+   [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas for your project if necessary.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#openstack-install) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#openstack-authorize) to the project.
 

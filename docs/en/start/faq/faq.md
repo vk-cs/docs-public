@@ -204,7 +204,7 @@ Yes. For more information about the partner program, see the {linkto(../partners
 {cut(How do I get access to the API and use it?)}
 
 1. {linkto(../../tools-for-using-services/api/rest-api/enable-api#rest-api-enable-activate)[text=Activate API access]}.
-1. {linkto(../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Obtain an access token]}.
+1. {linkto(../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Obtain an access token]}.
 1. {linkto(../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=Find the API endpoint]} of the desired service.
 1. Make a request. Available API methods, request and response structures are described in the {linkto(../../tools-for-using-services/api/api-spec#tools-api-spec)[text=API Specification]} section.
 

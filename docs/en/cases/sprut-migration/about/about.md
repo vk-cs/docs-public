@@ -15,7 +15,7 @@ SDN Sprut is fully compatible with Openstack Neutron API and has a number of adv
 - has services unavailable in SDN Neutron;
 - is independent of OpenStack.
 
-Currently, Sprut is the primary SDN for all new projects, but legacy projects use SDN Neutron. You can migrate your projects to SDN Sprut on your own. In the management console, you can [find out which SDN your project is connected to](/en/tools-for-using-services/account/instructions/project-settings/manage#sdn_view).
+Currently, Sprut is the primary SDN for all new projects, but legacy projects use SDN Neutron. You can migrate your projects to SDN Sprut on your own. In the management console, you can [find out which SDN your project is connected to](/en/tools-for-using-services/account/instructions/project-settings/manage#project-sdn-view).
 
 {note:warn}
 Support for SDN Neutron will be discontinued by the end of 2025. After that, SDN Neutron users may face security issues and lack of updates.
@@ -25,7 +25,7 @@ You can migrate your projects to SDN Sprut on your own.
 
 Functional benefits of migration:
 
-- [Advanced router](/en/networks/vnet/concepts/router#advanced) with BGP dynamic routing support for building fault-tolerant routing schemes.
+- [Advanced router](/en/networks/vnet/concepts/router#vnet-router-advanced)) with BGP dynamic routing support for building fault-tolerant routing schemes.
 - [Cloud Direct Connect](https://cloud.vk.com/direct-connect) — dedicated connections between a company's local network and VK Cloud.
 - [Shared networks](/en/networks/vnet/concepts/net-types#shared_net) for combining projects within the same region.
 - Decentralized DHCP service for improved fault tolerance.

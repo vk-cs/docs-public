@@ -93,7 +93,7 @@ For more details, refer to the [Managing worker node group](/en/kubernetes/mk8s/
 1. If there are no more quotas available, and the project needs additional ones, select one of the approaches:
 
    - Delete unused resources to free up quotas.
-   - [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#increase-quota) quotas for your project. 
+   - [Increase](/en/tools-for-using-services/account/instructions/project-settings/manage#project-increase-quota) quotas for your project. 
 
 For more details on quotas, refer to the [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits) section.
 

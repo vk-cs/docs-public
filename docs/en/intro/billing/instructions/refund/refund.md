@@ -18,8 +18,8 @@ The refund is available regardless of how long ago the payment account balance o
 ## {heading(Making a refund for individuals)[id=billing-refund-individuals]}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console as the project owner.
-1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) the project if you want to suspend the services. This will stop debiting funds.
-1. Copy the [project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) from the VK Cloud website URL.
+1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project-freeze) the project if you want to suspend the services. This will stop debiting funds.
+1. Copy the [project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 
@@ -62,8 +62,8 @@ The refund request is processed within 48 hours. The time of receipt of funds de
 ## {heading(Making a refund for legal entities and sole proprietors)[id=billing-refund-legal-entities]}
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console as the project owner.
-1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project_conservation) the project if you want to suspend the services. This will stop debiting funds.
-1. Copy the [project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#getting_project_id) from the VK Cloud website URL.
+1. (Optional) [Preserve](/en/tools-for-using-services/account/instructions/project-settings/manage#project-freeze) the project if you want to suspend the services. This will stop debiting funds.
+1. Copy the [project ID (PID)](/en/tools-for-using-services/account/instructions/project-settings/manage#project-pid-view) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 

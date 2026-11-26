@@ -1,3 +1,7 @@
+# {heading(Project management)[id=tools-account-project-manage]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 ## {heading(Selecting a project)[id=tools-account-project-select]}
 
 1. [Go to](https://msk.cloud.vk.ru/app/) the {var(cloud)} management console.
@@ -10,7 +14,7 @@
    * search by project ID or name;
    * filter by user roles.
 
-## {heading(Getting project ID)[id=getting_project_id]}
+## {heading(Getting project ID)[id=project-pid-view]}
 
 {include(/en/_includes/_project_pid_common.md)}
 
@@ -32,7 +36,7 @@ To get the PID:
 
 {/tabs}
 
-## Changing project name
+## {heading(Changing project name)[id=project-name-edit]}
 
 The project name can be changed at any stage of the project life.
 
@@ -54,7 +58,7 @@ The project name can be changed at any stage of the project life.
 
 {include(/en/_includes/_project_rename_common.md)}
 
-## Changing project owner
+## {heading(Changing project owner)[id=project-owner-edit]}
 
 A project can have only one owner. After appointing another user as the owner, you will switch with him [roles](/en/access/iam/concepts/rolesandpermissions).
 
@@ -84,7 +88,7 @@ A change of ownership is possible in any state of the project balance.
 
 1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the current owner, provide the following information:
 
-    - [project](#getting_project_id) id (PID);
+    - [project](#project-pid-view) id (PID);
     - the new owner's email address.
 
 1. (Optional) Check the role change in the [list of project members](/en/access/iam/instructions/access-manage).
@@ -95,7 +99,7 @@ The new owner may need to [link a payment card](/en/intro/billing/instructions/a
 
 {/note}
 
-## Project conservation
+## {heading(Project conservation)[id=project-freeze]}
 
 If you want to suspend work on a project, mothball the project to stop debiting funds. If the project goes into negative territory, it will be [frozen](../../../concepts/projects#projects-auto-freeze) with subsequent deletion of objects and data.
 
@@ -134,7 +138,7 @@ By contacting [technical support](mailto:support@mcs.mail.ru), it is possible to
 - floating IP addresses;
 - addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_net).
 
-## {heading(Viewing project quotas)[id=viewing_project_quotas]}
+## {heading(Viewing project quotas)[id=project-view-quotas]}
 
 {tabs}
 
@@ -298,7 +302,7 @@ To get an extended list of quotas for a project:
 
 {/tabs}
 
-## {heading(Increasing project quotas)[id=increase-quota]}
+## {heading(Increasing project quotas)[id=project-increase-quota]}
 
 Increasing quotas must be performed on behalf of a user with the project owner [role](/en/access/iam/concepts/rolesandpermissions) using a special web form in the management console:
 
@@ -306,6 +310,14 @@ Increasing quotas must be performed on behalf of a user with the project owner [
 1. Click on the user name in the header of the management console and select **Quotas management**.
 1. Click the **Add Quotas** button. The quota increase window will appear.
 1. If automatic quota increase is available for a project, you will be able to select a request type. Choose one of them:
+
+    - **Quick quota increase** — quota increase in one click, without approval from the manager.
+
+        {cut(Conditions for quick quota increase)}
+
+        {include(/en/_includes/_quotas.md)[tags=fastquota-conditions]}
+
+        {/cut}
 
     - **Automatic quota increase** — quotas will be expanded automatically, without requesting technical support. The value of each quota can be increased by no more than 30% of the current value.
 
@@ -336,7 +348,11 @@ Information about increasing quotas for GeekBrains program participants you can 
 
 {/note}
 
-## {heading(Viewing project SDN)[id=sdn_view]}
+## {heading(Viewing project service prices)[id=project-prices-view]}
+
+{include(/en/_includes/_project_prices.md)}
+
+## {heading(Viewing project SDN)[id=project-sdn-view]}
 
 1. [Go to](https://cloud.vk.com/app/en) your personal VK Cloud account.
 1. Open the project settings with one of the following ways:
@@ -356,7 +372,7 @@ Deleting a project is also possible with a negative balance.
 To delete a project:
 
 1. Make sure that you have transferred all the necessary data from the project.
-1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner, provide in the request the [project ID](#getting_project_id) (PID) and [region](../../../concepts/regions) of the project being deleted.
+1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner, provide in the request the [project ID](#project-pid-view) (PID) and [region](../../../concepts/regions) of the project being deleted.
 
 1. (For legal entities) Specify for what period you need [closing documents](/en/intro/billing/concepts/report).
 

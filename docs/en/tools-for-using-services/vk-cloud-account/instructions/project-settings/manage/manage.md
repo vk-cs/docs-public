@@ -1,10 +1,14 @@
+# {heading(Project settings)[id=vk-cloud-account-project-manage]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 {note:info}
 
 Additional project settings are available in [VK Cloud  Management Console](/en/tools-for-using-services/account/instructions/project-settings/manage).
 
 {/note}
 
-## Getting project ID
+## {heading(Getting project ID)[id=vk-cloud-account-project-pid]}
 
 {include(/en/_includes/_project_pid_common.md)}
 
@@ -26,7 +30,7 @@ To get the PID::
 
 {/tabs}
 
-## Changing project name
+## {heading(Changing project name)[id=vk-cloud-account-project-name]}
 
 The project name can be changed at any stage of the project life.
 

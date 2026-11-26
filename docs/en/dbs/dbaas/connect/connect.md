@@ -1,6 +1,16 @@
+# {heading(Connecting to databases)[id=dbaas-connect]}
+
+{include(/en/_includes/_translated_by_ai_en.md)}
+
 You can connect to the database of instances deployed in VK Cloud using the SDK.
 
-## PostgreSQL
+{ifndef(private-pg, private-pg-pdf)}
+## {heading(PostgreSQL)[id=dbaas-connect-postgresql]}
+{/ifndef}
+
+{ifdef(private-pg, private-pg-pdf)}
+## {heading(PostgreSQL, Postgres Pro Standard, Postgres Pro Enterprise)[id=dbaas-connect-postgresql]}
+{/ifdef}
 
 {tabs}
 
@@ -126,9 +136,25 @@ Read more about connecting to PostgreSQL in PHP in [documentation](https://www.p
 
 {/tab}
 
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+psql -h <IP-ADDRESS> -p 5432 -d <DATABASE> -U <USERNAME> -W
+```
+
+Here:
+
+- `<IP-ADDRESS>` — internal IP address;
+- `<DATABASE>` — database name;
+- `<USERNAME>` — DB user name.
+
+{/tab}
+{/ifndef}
+
 {/tabs}
 
-## MySQL
+## {heading(MySQL)[id=dbaas-connect-mysql]}
 
 {tabs}
 
@@ -270,7 +296,7 @@ Read more about connecting to MySQL in PHP in [documentation](https://www.php.ne
 
 {/tabs}
 
-## Tarantool
+## {heading(Tarantool)[id=dbaas-connect-tarantool]}
 
 {note:info}
 
@@ -394,7 +420,7 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
 
 {/tabs}
 
-## ClickHouse
+## {heading(ClickHouse)[id=dbaas-connect-clickhouse]}
 
 {tabs}
 
@@ -543,9 +569,25 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
 
 {/tab}
 
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+clickhouse-client --host <IP-ADDRESS> --database <DATABASE> --port 9000 --user <USERNAME> --ask-password
+```
+
+Here:
+
+- `<IP-ADDRESS>` — internal IP address;
+- `<DATABASE>` — database name;
+- `<USERNAME>` — DB user name.
+
+{/tab}
+{/ifndef}
+
 {/tabs}
 
-## MongoDB
+## {heading(MongoDB)[id=dbaas-connect-mongodb]}
 
 {tabs}
 
@@ -641,7 +683,7 @@ Read more about connecting to Tarantool in Go in [documentation](https://www.tar
 
 {/tabs}
 
-## Redis
+## {heading(Redis)[id=dbaas-connect-redis]}
 
 {tabs}
 
@@ -746,5 +788,17 @@ Read more about connecting to Redis in Python in [documentation](https://redis.i
 Learn more about connecting to Redis in Node.js read in [documentation](https://redis.io/docs/clients/nodejs/).
 
 {/tab}
+
+{ifndef(public)}
+{tab(Shell)}
+
+```shell
+redis-cli -h <IP-ADDRESS> -p 6379
+```
+
+Here `<IP-ADDRESS>` — internal IP address.
+
+{/tab}
+{/ifndef}
 
 {/tabs}

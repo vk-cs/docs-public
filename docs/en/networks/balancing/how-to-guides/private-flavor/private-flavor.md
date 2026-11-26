@@ -18,7 +18,7 @@ A more powerful configuration template is created by {var(cloud)} specialists af
 
 1. Install the [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md) utility, if it is not installed yet.
 1. {linkto(../../../../tools-for-using-services/api/rest-api/endpoints#rest-api-endpoints)[text=Get]} the Octavia service endpoint. In this example: `https://public.infra.mail.ru:9876`.
-1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token)[text=Get]} the `X-Auth-Token` API access token.
+1. {linkto(../../../../tools-for-using-services/api/rest-api/case-keystone-token#rest-api-keystone-token-gen)[text=Get]} the `X-Auth-Token` API access token.
 1. {linkto(../../../../networks/vnet/instructions/net#vnet-net-view)[text=Find out]} the IDs of the network and subnet in which you want to create the load balancer.
 
 ## {heading(1. Get information about flavors)[id=balancing-private-flavor-get-info]}
