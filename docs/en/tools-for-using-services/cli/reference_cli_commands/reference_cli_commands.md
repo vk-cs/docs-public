@@ -1593,6 +1593,38 @@ Here:
 - `--allowed-cidr <ALLOWED_CIDR>` — allowed IP address or network mask in CIDR notation. Multiple values must be specified with a separate `--allowed-cidr` option. Example: `--allowed-cidr <ALLOWED_CIDR_1> --allowed-cidr <ALLOWED_CIDR_2>`.
 - `<LOADBALANCER>` — name or ID of the load balancer.
 
+#### {heading(Updating a listener)[id=cli_openstack_loadbalancer_listener_set]}
+
+```console
+openstack loadbalancer listener set
+      [--name <NAME>]
+      [--description <DESCRIPTION>]
+      [--connection-limit <LIMIT>]
+      [--default-pool <POOL>]
+      [--timeout-client-data <TIMEOUT>]
+      [--timeout-member-connect <TIMEOUT>]
+      [--timeout-member-data <TIMEOUT>]
+      [--timeout-tcp-inspect <TIMEOUT>]
+      [--enable | --disable]
+      [--allowed-cidr <ALLOWED_CIDR>]
+      <LISTENER>
+```
+
+Here:
+
+- `--name <NAME>` — name of the load balancing rule.
+- `--description <DESCRIPTION>` — description of the load balancing rule.
+- `--connection-limit <LIMIT>` — maximum number of connections allowed for the load balancing rule.
+- `--default-pool <POOL>` — ID of the server pool to be used by the load balancing rule if no L7 policy matches.
+- `--timeout-client-data <TIMEOUT>` — frontend idle timeout in milliseconds. Default value: `50000`.
+- `--timeout-member-connect <TIMEOUT>` — connection timeout to the server in milliseconds. Default value: `5000`.
+- `--timeout-member-data <TIMEOUT>` — server idle timeout in milliseconds. Default value: `50000`.
+- `--timeout-tcp-inspect <TIMEOUT>` — waiting for extra TCP packets for content inspection in milliseconds. Default value: `0`.
+- `--enable` — enable the load balancing rule.
+- `--disable` — disable the load balancing rule.
+- `--allowed-cidr <ALLOWED_CIDR>` — allowed IP address or network mask in CIDR notation. Multiple values must be specified with a separate `--allowed-cidr` option. Example: `--allowed-cidr <ALLOWED_CIDR_1> --allowed-cidr <ALLOWED_CIDR_2>`.
+- `<LISTENER>` — name or ID of the load balancer listener.
+
 #### {heading(Deleting a listener)[id=cli_loadbalancer_listener_delete]}
 
 ```console
