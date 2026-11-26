@@ -322,14 +322,11 @@ openstack loadbalancer <COMMAND> --help
       ```console
       openstack loadbalancer listener set \
           --name <LISTENER_NAME> \
-          --protocol <PROTOCOL> \
-          --default-pool <POOL_ID> \
-          --protocol-port <PORT_NUMBER> \
           --timeout-member-data <TIMEOUT_1> \
           --timeout-member-connect <TIMEOUT_2> \
           --timeout-client-data <TIMEOUT_3> \
           --timeout-tcp-inspect <TIMEOUT_4> \
-          <LOAD_BALANCER_ID> 
+          <LISTENER_NAME_OR_ID>
       ```
 
       {/tab}
@@ -338,14 +335,11 @@ openstack loadbalancer <COMMAND> --help
       ```console
       openstack loadbalancer listener set `
           --name <LISTENER_NAME> `
-          --protocol <PROTOCOL> `
-          --default-pool <POOL_ID> `
-          --protocol-port <PORT_NUMBER> `
           --timeout-member-data <TIMEOUT_1> `
           --timeout-member-connect <TIMEOUT_2> `
           --timeout-client-data <TIMEOUT_3> `
           --timeout-tcp-inspect <TIMEOUT_4> `
-          <LOAD_BALANCER_ID>
+          <LISTENER_NAME_OR_ID>
       ```
 
       {/tab}
@@ -353,15 +347,12 @@ openstack loadbalancer <COMMAND> --help
 
       Here:
 
-      - `<LOAD_BALANCER_ID>` — the load balancer ID.
       - `<LISTENER_NAME>` — the listener name.
-      - `<PROTOCOL>` — the load balancing protocol. Possible values: `TCP`, `HTTP`, `HTTPS`.
-      - `<POOL_ID>` — the pool ID.
-      - `<PORT_NUMBER>` — the load balancing protocol port.
       - `<TIMEOUT_1>` — server idle timeout. Default: `50000`.
       - `<TIMEOUT_2>` — timeout for establishing a connection between the load balancer and the server. Default: `5000`.
       - `<TIMEOUT_3>` — client idle timeout. Default: `50000`.
       - `<TIMEOUT_4>` — wait time for additional TCP packets for content inspection. Default: `0`.
+      - `<LISTENER_NAME_OR_ID>` — the listener name or ID.
 
 1. Get information about the load balancing pool:
 
