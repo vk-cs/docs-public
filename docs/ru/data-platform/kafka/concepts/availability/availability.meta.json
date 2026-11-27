@@ -1,0 +1,16 @@
+{
+  "title": "Высокая доступность",
+  "shortDescription": "Защита от потери сообщений и отказов",
+  "metaDescription": "Узнайте, как обеспечивается высокая доступность Cloud Kafka в VK Data Platform: подтверждение записи, защита от потери сообщений и отказов",
+  "sectionTitle": "Высокая доступность",
+  "icon": "",
+  "weight": 4,
+  "uuid": "",
+  "build": {
+    "for": [
+      "public",
+      "data-p",
+      "data-p-pdf"
+    ]
+  }
+}

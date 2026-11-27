@@ -1,7 +1,7 @@
 {
   "title": "Вывод экземпляра из режима только для чтения",
   "shortDescription": "Как вывести экземпляр Cloud Kafka из режима только для чтения",
-  "metaDescription": "Узнайте как в VK Data Platform вывести экземпляр Cloud Kafka из режима только для чтения (read-only)",
+  "metaDescription": "Узнайте, как в VK Data Platform вывести экземпляр Cloud Kafka из режима только для чтения (read-only)",
   "sectionTitle": "Вывод экземпляра из режима только для чтения",
   "icon": "",
   "build": {
