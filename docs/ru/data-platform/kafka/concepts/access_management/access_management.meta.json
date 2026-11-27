@@ -4,7 +4,7 @@
   "metaDescription": "Узнайте, как в сервисе Cloud Kafka VK Data Platform распределяются права доступа между участниками проекта: влияние базовых ролей и примеры ролевых моделей с отдельными разрешениями.",
   "sectionTitle": "Управление доступом в VK Private Cloud",
   "icon": "",
-  "weight": 4,
+  "weight": 5,
   "uuid": "cc0e5745-a225-404d-bbf6-23a0275d22dd",
   "build": {
     "for": [

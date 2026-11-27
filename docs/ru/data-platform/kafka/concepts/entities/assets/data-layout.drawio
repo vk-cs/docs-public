@@ -1,0 +1,81 @@
+<mxfile host="Electron" agent="docs">
+  <diagram name="Брокеры, топик и партиции" id="kafka-data-layout">
+    <mxGraphModel dx="1175" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="820" pageHeight="567" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="background" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="559" width="570" x="125" y="4" as="geometry" />
+        </mxCell>
+        <mxCell id="cluster" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#252629;strokeWidth=2;fillColor=none;dashed=1;fontFamily=VK Sans Display;verticalAlign=top;spacing=0;spacingBottom=12;spacingLeft=6;spacingRight=6;fontStyle=1;fontColor=#252629;fontSize=12;arcSize=12;absoluteArcSize=1;spacingTop=7;" value="Кластер Cloud Kafka" vertex="1">
+          <mxGeometry height="340" width="524" x="148" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;verticalAlign=top;spacing=0;spacingTop=10;fontStyle=1;fontColor=#252629;fontSize=12;" value="Брокер 1" vertex="1">
+          <mxGeometry height="278" width="148" x="168" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="topic1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;strokeWidth=2;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;verticalAlign=top;spacing=0;spacingTop=8;fontStyle=1;fontColor=#252629;fontSize=12;" value="Топик 1" vertex="1">
+          <mxGeometry height="226" width="124" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;verticalAlign=top;spacing=0;spacingTop=10;fontStyle=1;fontColor=#252629;fontSize=12;" value="Брокер 2" vertex="1">
+          <mxGeometry height="278" width="148" x="336" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="topic2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;strokeWidth=2;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;verticalAlign=top;spacing=0;spacingTop=8;fontStyle=1;fontColor=#252629;fontSize=12;" value="Топик 1" vertex="1">
+          <mxGeometry height="226" width="124" x="348" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;verticalAlign=top;spacing=0;spacingTop=10;fontStyle=1;fontColor=#252629;fontSize=12;" value="Брокер 3" vertex="1">
+          <mxGeometry height="278" width="148" x="504" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="topic3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;strokeWidth=2;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;verticalAlign=top;spacing=0;spacingTop=8;fontStyle=1;fontColor=#252629;fontSize=12;" value="Топик 1" vertex="1">
+          <mxGeometry height="226" width="124" x="516" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="producer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=0;fontSize=12;" value="Поставщик" vertex="1">
+          <mxGeometry height="42" width="148" x="336" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="consumer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=0;fontSize=12;" value="Потребитель" vertex="1">
+          <mxGeometry height="42" width="148" x="336" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="producer-cluster" edge="1" parent="1" style="endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0.5;exitY=1;exitDx=0;exitDy=4;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;labelBackgroundColor=#FFFFFF;textOpacity=70;verticalAlign=middle;spacing=8;" value="&lt;font&gt;Запись&lt;/font&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-22.5" as="offset" />
+            <mxPoint x="410" y="90" as="sourcePoint" />
+            <mxPoint x="410" y="113" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cluster-consumer" edge="1" parent="1" style="endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0.5;exitY=0;exitDx=0;exitDy=-4;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=4;entryPerimeter=0;labelBackgroundColor=#FFFFFF;textOpacity=70;verticalAlign=middle;spacing=8;" value="&lt;font&gt;Чтение&lt;/font&gt;">
+          <mxGeometry relative="1" x="-1" y="-8" as="geometry">
+            <mxPoint x="-8" y="8" as="offset" />
+            <mxPoint x="410" y="484" as="sourcePoint" />
+            <mxPoint x="410" y="461" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p0-b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#FFFFFF;fontStyle=0;fontSize=12;strokeWidth=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;Партиция 0&lt;/b&gt;&lt;br&gt;ведущая&lt;/span&gt;" vertex="1">
+          <mxGeometry height="48" width="100" x="192" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 1&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="192" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 2&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="192" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#FFFFFF;fontStyle=0;fontSize=12;strokeWidth=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;Партиция 1&lt;/b&gt;&lt;br&gt;ведущая&lt;/span&gt;" vertex="1">
+          <mxGeometry height="48" width="100" x="360" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 2&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="360" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="p0-b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 0&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="360" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=#7876FF;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#FFFFFF;fontStyle=0;fontSize=12;strokeWidth=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;Партиция 2&lt;/b&gt;&lt;br&gt;ведущая&lt;/span&gt;" vertex="1">
+          <mxGeometry height="48" width="100" x="528" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p0-b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 0&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="528" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=6;spacingBottom=6;fontColor=#252629;fontStyle=0;fontSize=12;" value="&lt;b&gt;Партиция 1&lt;/b&gt;&lt;br&gt;ведомая" vertex="1">
+          <mxGeometry height="48" width="100" x="528" y="368" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

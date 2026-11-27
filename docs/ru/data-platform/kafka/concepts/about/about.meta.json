@@ -1,7 +1,7 @@
 {
   "title": "О сервисе",
-  "shortDescription": "Информация о сервисе Cloud Kafka",
-  "metaDescription": "Cloud Kafka в VK Data Platform: информация о сервисе",
+  "shortDescription": "Что такое Cloud Kafka и как работает сервис",
+  "metaDescription": "Узнайте, для чего нужен Cloud Kafka в VK Data Platform: сценарии использования, управление экземпляром, мониторинг, разграничение доступа и обмен сообщениями",
   "sectionTitle": "О сервисе",
   "icon": "",
   "weight": 1,

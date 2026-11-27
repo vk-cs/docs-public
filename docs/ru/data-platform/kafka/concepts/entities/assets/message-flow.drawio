@@ -1,0 +1,67 @@
+<mxfile host="Electron" agent="docs">
+  <diagram name="Обмен сообщениями через Cloud Kafka" id="kafka-message-flow">
+    <mxGraphModel dx="979" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="650" pageHeight="484" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="background" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="424" width="590" x="30" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="cluster" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#252629;strokeWidth=2;fillColor=none;dashed=1;fontFamily=VK Sans Display;verticalAlign=top;spacing=0;spacingBottom=12;spacingLeft=6;spacingRight=6;fontStyle=1;fontColor=#252629;fontSize=12;arcSize=12;absoluteArcSize=1;" value="&lt;div style=&quot;padding-top: 7px;&quot;&gt;Кластер Cloud Kafka&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="530" x="60" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="topic" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;strokeWidth=2;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;verticalAlign=top;spacing=0;spacingTop=8;spacingLeft=6;spacingRight=6;fontStyle=1;fontColor=#252629;fontSize=12;" value="Топик `applications`" vertex="1">
+          <mxGeometry height="120" width="245" x="202.5" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="messages" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#FFFFFF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=0;fontSize=12;" value="Сообщения о заявках" vertex="1">
+          <mxGeometry height="60" width="199" x="225.5" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="producer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=1;fontSize=12;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Система регистрации&amp;nbsp;заявок&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="245" x="202.5" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="notifications" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=1;fontSize=12;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Сервис&lt;br&gt;уведомлений&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="60" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=1;fontSize=12;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Система&lt;br&gt;аналитики&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="200" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="processing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=1;fontSize=12;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Система обработки&lt;br&gt;заявок&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="340" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="ml" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=VK Sans Display;strokeColor=none;arcSize=12;absoluteArcSize=1;fillColor=#E4E8FF;spacing=0;spacingTop=12;spacingBottom=12;spacingLeft=12;spacingRight=12;fontColor=#252629;fontStyle=1;fontSize=12;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;Приложение&lt;br&gt;с ML-моделью&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="480" y="374" as="geometry" />
+        </mxCell>
+        <mxCell id="write" edge="1" parent="1" style="endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0.5;exitY=1;exitDx=0;exitDy=4;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="115" as="sourcePoint" />
+            <mxPoint x="325" y="149" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="read-notifications" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="335" as="sourcePoint" />
+            <mxPoint x="115" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="read-analytics" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0.5;exitY=1;exitDx=0;exitDy=4;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="335" as="sourcePoint" />
+            <mxPoint x="255" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="read-processing" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=0.5;exitY=1;exitDx=0;exitDy=4;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="395" y="335" as="sourcePoint" />
+            <mxPoint x="395" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="read-ml" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;startArrow=none;endSize=4;startSize=4;html=1;fontFamily=VK Sans Display;fontColor=#252629;rounded=1;strokeColor=#252629;endFill=0;strokeWidth=2;arcSize=8;fontSize=12;sourcePerimeterSpacing=4;targetPerimeterSpacing=4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=-4;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="335" as="sourcePoint" />
+            <mxPoint x="535" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
